@@ -265,6 +265,104 @@
             </div>
         </div>
     </section>
+    <section class="tutoring-features-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center mb-50">
+                        <h2 class="mt-0 mb-10 font-40">Our Tutoring Features</h2>
+                        <p class="font-19 text-gray">
+                            Discover the benefits that make our online tutoring the <br> perfect choice for your learning journey.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="tutoring-features-holder">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="img-holder">
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/student-user.svg" alt="Flexible Scheduling" height="50" width="50">
+                                        </span>
+                                    </div>
+                                    <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                                        <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">Flexible Scheduling</a>
+                                    </h3>
+                                    <p itemprop="description">Choose tutoring sessions that fit your schedule, including evenings and weekends</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="img-holder">
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/student-user.svg" alt="Personalized Learning Plans" height="50" width="50">
+                                        </span>
+                                    </div>
+                                    <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                                        <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">Personalized Learning Plans</a>
+                                    </h3>
+                                    <p itemprop="description">Tailored lessons based on individual student needs and goals.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="img-holder">
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/student-user.svg" alt="Progress Tracking" height="50" width="50">
+                                        </span>
+                                    </div>
+                                    <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                                        <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">Progress Tracking</a>
+                                    </h3>
+                                    <p itemprop="description">Regular updates on student performance and progress toward goals.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="img-holder">
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/student-user.svg" alt="One-on-One Sessions" height="50" width="50">
+                                        </span>
+                                    </div>
+                                    <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                                        <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">One-on-One Sessions</a>
+                                    </h3>
+                                    <p itemprop="description">Individual sessions to enhance each child's specific growth and learning.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="img-holder">
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/student-user.svg" alt="Parent Involvement" height="50" width="50">
+                                        </span>
+                                    </div>
+                                    <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                                        <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">Parent Involvement</a>
+                                    </h3>
+                                    <p itemprop="description">Regular reports and feedback for parents to stay informed about their child’s progress.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-md-6">
+                                <div class="feature-card">
+                                    <div class="img-holder">
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/student-user.svg" alt="Learning Resources" height="50" width="50">
+                                        </span>
+                                    </div>
+                                    <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                                        <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">Learning Resources</a>
+                                    </h3>
+                                    <p itemprop="description">Access to additional notes, practice materials and exercises to reinforce learning.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="lms-search-services mb-0 mt-0 pt-80 pb-60">
         <div class="container">
             <div class="row">
@@ -800,9 +898,6 @@
             </div>
         </div>
     </section>
-
-
-
     <section class="pt-80">
         <div class="container">
             <div class="row">
@@ -949,8 +1044,6 @@
             </div>
         </div>
     </section>
-
-
     <section class="lms-column-section lms-accordion-section w-100 pb-60 pt-60" style="background-color: #f6f0ea; max-width: 100%;">
         <div class="container">
             <div class="row">
