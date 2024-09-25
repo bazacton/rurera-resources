@@ -3260,11 +3260,13 @@ Parent Account Style End
 /*********************************
 Tutoring Features Style Start
 **********************************/
-.feature-card {
+.tutoring-features-section {
   background-color: #f7f7f7;
-  text-align: center;
-  padding: 30px 30px 0;
-  min-height: 212px;
+}
+.feature-card {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 0 30px 30px;
 }
 .tutoring-features-holder .row {
   margin: 0;
