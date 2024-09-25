@@ -265,7 +265,7 @@
             </div>
         </div>
     </section>
-    <section class="tutoring-features-section pb-70">
+    <section class="tutoring-features-section pb-40 pt-70">
         <div class="container">
             <div class="row">
                 <div class="col-12">
