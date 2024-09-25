@@ -1044,7 +1044,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-column-section lms-accordion-section tutoring-works w-100 pb-60 pt-60" style="background-color: #f6f0ea; max-width: 100%;">
+    <section class="lms-column-section lms-accordion-section tutoring-works w-100 pb-60 pt-60" style="background-color: #f5f9ff; max-width: 100%;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
