@@ -1,3 +1,4 @@
+.test{color:###}
 .section-title~p {margin-top: 15px;}
 .section-title.after-line {display: flex;  flex: 1; align-items: center;}
 .section-title.after-line:after {content: ""; flex: 1 0 20px; height: 2px; background-color: #f1f1f1; margin-left: 10px;}
