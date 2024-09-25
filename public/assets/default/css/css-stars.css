@@ -1,0 +1,102 @@
+.br-theme-css-stars .br-widget {
+    height: 28px;
+    white-space: nowrap;
+}
+.br-theme-css-stars .br-widget a {
+    text-decoration: none;
+    height: 18px;
+    width: 18px;
+    float: left;
+    font-size: 23px;
+    margin-right: 5px;
+}
+.br-theme-css-stars .br-widget a:after {
+    content: "\2605";
+    color: #d2d2d2;
+}
+.br-theme-css-stars .br-widget a.br-active:after {
+    color: #ffc600;
+}
+.br-theme-css-stars .br-widget a.br-selected:after {
+    color: #ffc600;
+}
+.br-theme-css-stars .br-widget .br-current-rating {
+    display: none;
+}
+.br-theme-css-stars .br-readonly a {
+    cursor: default;
+}
+@media print {
+    .br-theme-css-stars .br-widget a:after {
+        content: "\2606";
+        color: black;
+    }
+    .br-theme-css-stars .br-widget a.br-active:after,
+    .br-theme-css-stars .br-widget a.br-selected:after {
+        content: "\2605";
+        color: black;
+    }
+}
+
+
+
+/* Lms Chapter Holder Style Start */
+
+/* .lms-chapter-area .lms-chapter-ul {
+    column-count: 3;
+} */
+.lms-chapter-area .lms-chapter-ul >li{margin-bottom:45px; break-inside: avoid;}
+.lms-chapter-area .lms-chapter-ul >li ul li {
+    width: 100%;
+    margin-bottom: 8px;
+    list-style: inside decimal;
+    position: relative;
+}
+.lms-chapter-area .lms-chapter-ul >li .element-title {
+    margin-bottom: 10px !important;
+}
+.lms-chapter-area .lms-chapter-ul >li ul li a {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 100px;
+    color: #999;
+}
+.lms-chapter-area .lms-chapter-ul .lms-chapter-title{margin-bottom: 10px;}
+.lms-chapter-area .lms-chapter-ul .lms-chapter-title strong{
+    position: relative;
+    color: var(--primary);
+}
+.lms-chapter-area .lms-chapter-ul .lms-chapter-title strong::before {
+  /* Increment "my-sec-counter" by 1 */
+  counter-increment: my-sec-counter;
+  content: counter(my-sec-counter, upper-alpha ) ". ";
+}
+/* .lms-chapter-area{counter-reset: my-sec-counter;} */
+
+@media (max-width: 992px) {
+    /* .lms-chapter-area .lms-chapter-ul {
+        column-count: 2;
+    } */
+}
+@media (max-width: 767px) {
+    .lms-side-menu-left{z-index: 1;}
+    .learning-page .learning-page-tabs{top:0;}
+}
+@media (max-width: 640px) {
+    /* .lms-chapter-area .lms-chapter-ul {
+        column-count: 1;
+    } */
+}
+@media (max-width: 575px) {
+    .lms-side-menu-left{width:100%;height: 50px;position: absolute;margin-bottom: 50px;left: 0;z-index: 1;}
+    .lms-side-menu-left ul{flex-direction: inherit;padding: 10px 20px;align-items: center;}
+    .lms-side-menu-left ul li{margin:0 5px 0 0;align-items: center;display: flex;}
+    .lms-side-menu-left ul li a{padding: 0 8px;display: inline-flex;}
+    .lms-side-menu-left ~ .learning-page-content {margin-top: 50px;}
+}
+
+/* Lms Chapter Holder Style End */
+
