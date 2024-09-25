@@ -157,7 +157,6 @@ nav li {list-style: none;}
 .home-courses-block .topic-list li {margin-bottom: 8px;}
 .home-courses-block .topic-list li a {font-weight: 500;}
 /*Mega Menu style End*/
-.navbar-brand {width: 170px; height: 50px;}
 .menu-category>ul>li {position: relative; border-radius: 10px; font-weight: 500; color: var(--secondary)}
 .menu-category>ul>li a {font-size: 14px; color: #171347; font-weight: 500; transition: all .3s;}
 .menu-category>ul>li a:hover {color: var(--primary);}
