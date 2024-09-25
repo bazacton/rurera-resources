@@ -33,7 +33,7 @@
                         Don't leave your SAT performance to chance! Join us to unlock your full potential and excel on the SATs. Transform your test preparation with our expert guidance and resources—achieve the scores you’ve always dreamed of!
 
                     </p>
-                    <ul class="mb-0 p-0">
+                    <ul class="mb-30 p-0">
                         <li class="mb-10 font-19">
                             <img src="../assets/default/svgs/mobile.svg" width="25" height="25" alt="#">Covers the National Curriculum ( Math, English, Science)
                         </li>
@@ -44,10 +44,10 @@
                         <li class="mb-10 font-19">
                             <img src="../assets/default/svgs/graphic-design.svg" width="25" height="25" alt="#">SATs (KS1, KS2) Preparation
                         </li>
-                        <li class="font-19">
+                        <li class="mb-10 font-19">
                             <img src="../assets/default/svgs/book-opend.svg" width="25" height="25" alt="#">ISEB Exams Preparation
                         </li>
-                        <li class="font-19">
+                        <li class="mb-10 font-19">
                             <img src="../assets/default/svgs/book-opend.svg" width="25" height="25" alt="#">Independent Schools Entrance Preparation
                         </li>
                         <li class="font-19">
@@ -55,10 +55,6 @@
                         </li>
                     </ul>
                     <a href="/pricing" class="mt-0 bg-primary justify-content-center register-btn text-white try-rurera-btn">Try Rurera for free</a>
-                    <!-- <div class="d-flex align-items-center">
-                        <a href="{{url('/')}}/register" class="btn-primary rounded-pill">KS1-year2 SATs</a>
-                        <a href="{{url('/')}}/register" class="btn-primary rounded-pill ml-15">KS2-year6 SATs</a>
-                    </div> -->
                 </div>
             </div>
         </div>
