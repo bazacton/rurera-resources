@@ -2,6 +2,12 @@
     font-family: 'main-font-family';
     font-style: normal;
     font-weight: 400;
+
+
+
+
+
+
     font-display: swap;
     src: url(/store/1/fonts/CeraRoundPro-Regular.woff2) format('woff2');
   }@font-face {
