@@ -1349,8 +1349,13 @@
                             <div class="subscribe-plan current-plan position-relative d-flex flex-column mb-30">
                                 <span class="plan-top-title">1:1 Session</span>
                                 <div class="subscribe-title text-left">
-                                    <h3 itemprop="title" class="font-weight-500 text-left">Home learning</h3>
-                                    <p itemprop="description">Boost child's home learning with times tables practice and book reading sessions.</p>
+                                    <h3 itemprop="title" class="font-weight-500 text-left">School Entrance Exams</h3>
+                                    <ul class="plan-feature">
+                                        <li class="mt-10">Grammar Schools</li>
+                                        <li class="mt-10">Independent Schools</li>
+                                        <li class="mt-10">ISEB</li>
+                                        <li class="mt-10">CAT-4</li>
+                                    </ul>
                                 </div>
                                 <div class="d-flex align-items-start mb-10 subscribe-price">
                                     <input type="radio" id="one">
@@ -1364,6 +1369,68 @@
                                     <label for="two">
                                         <span class="best-option">Best Value</span>
                                         <span class="plan-price">1 session per week</span>
+                                        <span itemprop="price" class="font-30 line-height-1 plan-prices">£29.99<small>/month</small></span>
+                                    </label>
+                                </div>
+                                <div class="plan-btn-holder">
+                                    <button itemprop="button" type="submit" class="subscription-modal btn w-100">Get Started</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="subscribe-plan position-relative d-flex flex-column mb-30">
+                                <span class="plan-top-title">1:1 Session</span>
+                                <div class="subscribe-title text-left">
+                                    <h3 itemprop="title" class="font-weight-500 text-left">SATs Exam Preparation</h3>
+                                    <ul class="plan-feature">
+                                        <li class="mt-10">Key Stage 1(year-2)</li>
+                                        <li class="mt-10">Key Stage 2(year-6)</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex align-items-start mb-10 subscribe-price">
+                                    <input type="radio" id="three">
+                                    <label for="three">
+                                        <span class="plan-price">1 session per week</span>
+                                        <span itemprop="price" class="font-30 line-height-1 plan-prices">£29.99<small>/month</small></span>
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-start mb-50 subscribe-price best-price">
+                                    <input type="checkbox" id="four" checked="">
+                                    <label for="four">
+                                        <span class="best-option">Best Value</span>
+                                        <span class="plan-price">2 sessions per week</span>
+                                        <span itemprop="price" class="font-30 line-height-1 plan-prices">£29.99<small>/month</small></span>
+                                    </label>
+                                </div>
+                                <div class="plan-btn-holder">
+                                    <button itemprop="button" type="submit" class="subscription-modal btn w-100">Get Started</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="subscribe-plan position-relative d-flex flex-column mb-30">
+                                <span class="plan-top-title">1:1 Session</span>
+                                <div class="subscribe-title text-left">
+                                    <h3 itemprop="title" class="font-weight-500 text-left">Maths and English Tuition</h3>
+                                    <ul class="plan-feature">
+                                        <li class="mt-10">Math Arithmetic</li>
+                                        <li class="mt-10">Math Reasoning</li>
+                                        <li class="mt-10">English Reading</li>
+                                        <li class="mt-10">English SPaG</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex align-items-start mb-10 subscribe-price">
+                                    <input type="radio" id="five">
+                                    <label for="five">
+                                        <span class="plan-price">1 session per week</span>
+                                        <span itemprop="price" class="font-30 line-height-1 plan-prices">£29.99<small>/month</small></span>
+                                    </label>
+                                </div>
+                                <div class="d-flex align-items-start mb-50 subscribe-price best-price">
+                                    <input type="checkbox" id="six" checked="">
+                                    <label for="six">
+                                        <span class="best-option">Best Value</span>
+                                        <span class="plan-price">2 sessions per week</span>
                                         <span itemprop="price" class="font-30 line-height-1 plan-prices">£29.99<small>/month</small></span>
                                     </label>
                                 </div>
