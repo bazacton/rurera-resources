@@ -1365,12 +1365,12 @@
                                 </div>
                                 <div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
                                     <span class="yearly-price">1 session per week</span>
-                                    <span itemprop="price" class="font-36 line-height-1 packages-prices" data-package_id="6" data-package_price="29.99">£29.99/mo</span>
+                                    <span itemprop="price" class="font-36 line-height-1 packages-prices">£29.99/mo</span>
                                 </div>
                                 <div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
                                     <span class="best-option">Best Value</span>
                                     <span class="yearly-price">1 session per week</span>
-                                    <span itemprop="price" class="font-36 line-height-1 packages-prices" data-package_id="6" data-package_price="29.99">£29.99/mo</span>
+                                    <span itemprop="price" class="font-36 line-height-1 packages-prices">£29.99/mo</span>
                                 </div>
                                 <button itemprop="button" type="submit" data-user_id="0" data-type="package_selection" data-id="6" class="subscription-modal btn w-100 ">Get Started</button>
                             </div>
