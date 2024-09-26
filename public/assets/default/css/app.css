@@ -3369,6 +3369,7 @@ Tutoring Features Style Start
   padding: 15px 15px 15px 60px;
   position: relative;
   margin-bottom: 0;
+  width: 100%;
 }
 .tutoring-plans .subscribe-price label:before {
   position: absolute;
@@ -3380,6 +3381,13 @@ Tutoring Features Style Start
   border: 1px solid #999;
   content: "";
   border-radius: 100%;
+}
+.tutoring-plans .subscribe-price label .plan-price {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  display: block;
 }
 /*Tutoring Plans Style End*/
 /*********************************
