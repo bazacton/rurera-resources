@@ -68,14 +68,7 @@
 				<div class="col-12">
 					<div class="footer-nav-holder pt-50">
 						<div class="row">
-							<div class="col-12 col-md-6 col-lg-6">
-								<div class="footer-text">
-									<span class="icon-box">
-										<img src="/assets/default/img/linktree.png" width="34" height="38" alt="linktree icon">
-									</span>
-									<p>Glide's mission is not put the power, beauty, and magic of software <br> development ito the hands of a billion new creators. <a href="#">Join Us</a></p>
-								</div>
-							</div>
+							
 							<div class="col-12 col-md-6 col-lg-6">
 								<div class="footer-nav-box">
 									<div class="footer-navs">
@@ -90,7 +83,7 @@
 
 										</ul>
 									</div>
-									<div class="footer-social-links">
+									<div class="footer-social-links ">
 										<ul>
 											<li><a href="#"><img src="/assets/default/svgs/footer-youtube.svg" alt="youtube icon" width="50" height="50"></a></li>
 											<li><a href="#"><img src="/assets/default/svgs/footer-x.svg" alt="X icon" width="50" height="50"></a></li>
