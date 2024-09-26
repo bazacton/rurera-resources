@@ -3534,9 +3534,6 @@ footer.footer-home {padding-top: 70px;}
 .footer.footer-home .footer-logo {width: 150px;}
 .footer.footer-home .footer-copyright {border-top: 1px solid #f1f1f1; padding-bottom: 20px; margin-top: 30px;}
 /* Footer Home Style End */
-.footer-bottom {
-  padding: 70px 0 0;
-}
 .footer-bottom .footer-text {
   display: flex;
   align-items: center;
@@ -3590,7 +3587,6 @@ footer.footer-home {padding-top: 70px;}
 }
 .footer-bottom .footer-nav-holder {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  padding-top: 50px;
 }
 /*********************************
 Lms Footer Style End
