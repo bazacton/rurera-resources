@@ -1347,7 +1347,10 @@
                         <div class="plan-switch-option">
                             <span class="switch-label">Monthly</span>
                             <div class="plan-switch">
-                                <div class="custom-control custom-switch"><input type="checkbox" name="disabled" class="custom-control-input subscribed_for-field" value="12" id="iNotAvailable"><label class="custom-control-label" for="iNotAvailable"></label></div>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" name="disabled" class="custom-control-input subscribed_for-field" id="iNotAvailable">
+                                    <label class="custom-control-label" for="iNotAvailable"></label>
+                                </div>
                             </div>
                             <span class="switch-label">Session</span>
                         </div>
@@ -1363,16 +1366,16 @@
                                     <h3 itemprop="title" class="font-24 font-weight-500 text-left">Home learning</h3>
                                     <p itemprop="description">Boost child's home learning with times tables practice and book reading sessions.</p>
                                 </div>
-                                <div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
+                                <div class="d-flex align-items-start mb-20 subscribe-price">
                                     <span class="yearly-price">1 session per week</span>
                                     <span itemprop="price" class="font-36 line-height-1 packages-prices">£29.99/mo</span>
                                 </div>
-                                <div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
+                                <div class="d-flex align-items-start mb-20 subscribe-price">
                                     <span class="best-option">Best Value</span>
                                     <span class="yearly-price">1 session per week</span>
                                     <span itemprop="price" class="font-36 line-height-1 packages-prices">£29.99/mo</span>
                                 </div>
-                                <button itemprop="button" type="submit" data-user_id="0" data-type="package_selection" data-id="6" class="subscription-modal btn w-100 ">Get Started</button>
+                                <button itemprop="button" type="submit" class="subscription-modal btn w-100">Get Started</button>
                             </div>
                         </div>
                     </div>
