@@ -3447,6 +3447,9 @@ Tutoring Features Style Start
 .tutoring-plans .subscribe-plan .subscribe-price .plan-prices {
   color: var(--secondary);
 }
+.tutoring-plans .plan-feature {
+  min-height: 113px;
+}
 /*Tutoring Plans Style End*/
 /*********************************
 Tutoring Features Style End
