@@ -661,7 +661,18 @@
                         <p class="font-16 pt-10" itemprop="description">For Exceptional Value: Choose Our Pre-Selected Package for Maximum Savings! </p>
                     </div>
                 </div>
-                
+                <div class="col-12 col-lg-12 text-center">
+                    <div class="plan-switch-holder">
+                        <div class="plan-switch-option">
+                            <span class="switch-label">Monthly</span>
+                            <div class="plan-switch">
+                                <div class="custom-control custom-switch"><input type="checkbox" name="disabled" class="custom-control-input subscribed_for-field" value="12" id="iNotAvailable"><label class="custom-control-label" for="iNotAvailable"></label></div>
+                            </div>
+                            <span class="switch-label">Session</span>
+                        </div>
+                        <div class="save-plan"><span class="font-18 font-weight-500">Save 25%</span></div>
+                    </div>
+                </div>
                 <div class="col-lg-12 col-md-12 col-12 mx-auto">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-12">
