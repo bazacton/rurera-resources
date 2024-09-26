@@ -3343,7 +3343,7 @@ Tutoring Features Style Start
   padding: 8px 10px;
 }
 .tutoring-plans .subscribe-plan {
-  border-radius: 5px;
+  border-radius: 10px !important;
   overflow: hidden;
   border: 0;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
