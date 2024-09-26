@@ -1349,7 +1349,7 @@
                             <div class="subscribe-plan current-plan position-relative d-flex flex-column mb-30">
                                 <span class="plan-top-title">1:1 Session</span>
                                 <div class="subscribe-title text-left">
-                                    <h3 itemprop="title" class="font-24 font-weight-500 text-left">Home learning</h3>
+                                    <h3 itemprop="title" class="font-weight-500 text-left">Home learning</h3>
                                     <p itemprop="description">Boost child's home learning with times tables practice and book reading sessions.</p>
                                 </div>
                                 <div class="d-flex align-items-start mb-20 subscribe-price">
