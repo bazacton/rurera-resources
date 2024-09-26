@@ -1357,7 +1357,7 @@
                                         <li class="mt-10">CAT-4</li>
                                     </ul>
                                 </div>
-                                <div class="d-flex align-items-start mb-10 subscribe-price">
+                                <div class="d-flex align-items-start mb-15 subscribe-price">
                                     <input type="radio" id="one">
                                     <label for="one">
                                         <span class="plan-price">1 session per week</span>
@@ -1387,7 +1387,7 @@
                                         <li class="mt-10">Key Stage 2(year-6)</li>
                                     </ul>
                                 </div>
-                                <div class="d-flex align-items-start mb-10 subscribe-price">
+                                <div class="d-flex align-items-start mb-15 subscribe-price">
                                     <input type="radio" id="three">
                                     <label for="three">
                                         <span class="plan-price">1 session per week</span>
@@ -1419,7 +1419,7 @@
                                         <li class="mt-10">English SPaG</li>
                                     </ul>
                                 </div>
-                                <div class="d-flex align-items-start mb-10 subscribe-price">
+                                <div class="d-flex align-items-start mb-15 subscribe-price">
                                     <input type="radio" id="five">
                                     <label for="five">
                                         <span class="plan-price">1 session per week</span>
