@@ -70,12 +70,7 @@
 						<div class="footer-nav-box">
 						<div class="row">
 							
-<<<<<<< HEAD
 							<div class="col-12 col-md-6 col-lg-6">
-=======
-							<div class="col-12 col-md-12 col-lg-12">
-								<div class="footer-nav-box">
->>>>>>> 36a6592578c8a195b50d4a6fdb2c4a5d9ca796dd
 									<div class="footer-navs">
 										<ul>
 											<li><a href="/privacy" class="active">Privacy</a></li>
@@ -87,7 +82,6 @@
 
 										</ul>
 									</div>
-<<<<<<< HEAD
 								</div>
 									<div class="col-12 col-md-6 col-lg-6">
 										<div class="footer-social-links ">
@@ -95,13 +89,6 @@
 												<li><a href="https://www.facebook.com/profile.php?id=61564277975339"><img src="/assets/default/svgs/facebook-svgrepo-com.svg" alt="facebook icon" width="50" height="50"></a></li>
 												<li><a href="https://www.instagram.com/rurera.official/gi"><img src="/assets/default/svgs/instagram-svgrepo-com.svg" alt="facebook icon" width="50" height="50"></a></li>
 											</ul>
-=======
-									<div class="footer-social-links ">
-										<ul>
-											<li><a href="https://www.facebook.com/profile.php?id=61564277975339"><img src="/assets/default/svgs/facebook-svgrepo-com.svg" alt="facebook icon" width="50" height="50"></a></li>
-											<li><a href="https://www.instagram.com/rurera.official/gi"><img src="/assets/default/svgs/instagram-svgrepo-com.svg" alt="facebook icon" width="50" height="50"></a></li>
-										</ul>
->>>>>>> 36a6592578c8a195b50d4a6fdb2c4a5d9ca796dd
 									</div>
 								</div>
 							</div>
