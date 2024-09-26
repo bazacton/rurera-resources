@@ -1359,7 +1359,7 @@
                                         <span itemprop="price" class="font-36 line-height-1 plan-prices">£29.99/mo</span>
                                     </label>
                                 </div>
-                                <div class="d-flex align-items-start mb-10 subscribe-price">
+                                <div class="d-flex align-items-start mb-10 subscribe-price best-price">
                                     <input type="checkbox" id="two">
                                     <label for="two">
                                         <span class="best-option">Best Value</span>
