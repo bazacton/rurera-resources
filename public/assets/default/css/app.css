@@ -3347,6 +3347,7 @@ Tutoring Features Style Start
   overflow: hidden;
   border: 0;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  height: 100%;
 }
 .tutoring-plans .subscribe-title {
   padding: 25px 20px 10px;
@@ -3446,6 +3447,9 @@ Tutoring Features Style Start
 }
 .tutoring-plans .subscribe-plan .subscribe-price .plan-prices {
   color: var(--secondary);
+}
+.tutoring-plans .plan-feature {
+  min-height: 113px;
 }
 /*Tutoring Plans Style End*/
 /*********************************
