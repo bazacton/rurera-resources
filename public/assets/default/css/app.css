@@ -3368,6 +3368,7 @@ Tutoring Features Style Start
   border-radius: 5px;
   padding: 15px 15px 15px 60px;
   position: relative;
+  margin-bottom: 0;
 }
 .tutoring-plans .subscribe-price label:before {
   position: absolute;
