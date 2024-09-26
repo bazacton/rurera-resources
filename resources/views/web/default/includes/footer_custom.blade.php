@@ -68,6 +68,7 @@
 				<div class="col-12">
 					<div class="footer-nav-holder pt-50">
 						<div class="row">
+<<<<<<< HEAD
 							<div class="col-12 col-md-12 col-lg-12">
 								<div class="footer-text">
 									<span class="icon-box">
@@ -76,6 +77,9 @@
 									<p>Glide's mission is not put the power, beauty, and magic of software <br> development ito the hands of a billion new creators. <a href="#">Join Us</a></p>
 								</div>
 							</div>
+=======
+							
+>>>>>>> 33ad1905958ff121b70bc3b2c10d530a67433bd5
 							<div class="col-12 col-md-6 col-lg-6">
 								<div class="footer-nav-box">
 									<div class="footer-navs">
@@ -85,20 +89,17 @@
 											<li><a href="/terms-and-conditions">Terms & Condition</a></li>
 											<li><a href="/terms-of-policy">Terms of Policy</a></li>
 											<li><a href="/acceptable-use">Acceptable Use Policy</a></li>
-											<li><a href="#">Site Map</a></li>
 											<li><a href="/contact-us">Contact us</a></li>
 
 										</ul>
 									</div>
-									<div class="footer-social-links">
-										<ul>
-											<li><a href="#"><img src="/assets/default/svgs/footer-youtube.svg" alt="youtube icon" width="50" height="50"></a></li>
-											<li><a href="#"><img src="/assets/default/svgs/footer-x.svg" alt="X icon" width="50" height="50"></a></li>
-											<li><a href="#"><img src="/assets/default/svgs/footer-linkedin.svg" alt="linkedin icon" width="50" height="50"></a></li>
-											<li><a href="#"><img src="/assets/default/svgs/github.svg" alt="github icon" width="50" height="50"></a></li>
-											<li><a href="https://www.facebook.com/profile.php?id=61564277975339"><img src="/assets/default/svgs/facebook-svgrepo-com.svg" alt="facebook icon" width="50" height="50"></a></li>
-											<li><a href="https://www.instagram.com/rurera.official/gi"><img src="/assets/default/svgs/instagram-svgrepo-com.svg" alt="facebook icon" width="50" height="50"></a></li>
-										</ul>
+									<div class="col-12 col-md-6 col-lg-6">
+										<div class="footer-social-links ">
+											<ul>
+												<li><a href="https://www.facebook.com/profile.php?id=61564277975339"><img src="/assets/default/svgs/facebook-svgrepo-com.svg" alt="facebook icon" width="50" height="50"></a></li>
+												<li><a href="https://www.instagram.com/rurera.official/gi"><img src="/assets/default/svgs/instagram-svgrepo-com.svg" alt="facebook icon" width="50" height="50"></a></li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</div>
