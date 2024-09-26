@@ -1136,10 +1136,6 @@ Lms Responsive Style Start
     .parent-account-section .imb-box {
         margin-top: 50px;
     }
-    div:has(.try-rurera-btn) {
-        justify-content: center;
-        text-align: center;
-    }
 }
 
 @media screen and (max-width: 640px) {
