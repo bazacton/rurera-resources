@@ -1346,7 +1346,7 @@
                 <div class="col-lg-12 col-md-12 col-12 mx-auto">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="subscribe-plan current-plan position-relative d-flex flex-column rounded-lg pb-25 pt-40 px-20 mb-30">
+                            <div class="subscribe-plan current-plan position-relative d-flex flex-column mb-30">
                                 <span class="plan-top-title">1:1 Session</span>
                                 <div class="subscribe-title text-left">
                                     <h3 itemprop="title" class="font-24 font-weight-500 text-left">Home learning</h3>
