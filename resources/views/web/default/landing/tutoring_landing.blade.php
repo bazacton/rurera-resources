@@ -1333,7 +1333,53 @@
             </div>
         </div>
     </section>
-
+    <section class="lms-setup-progress-section tutoring-plans lms-membership-section mb-0 pt-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="element-title text-center mb-40">
+                        <h2 itemprop="title" class="font-40 text-dark-charcoal mb-0">Ideal Tuition for Your Child</h2>
+                        <p class="font-16 pt-10" itemprop="description">For Exceptional Value: Choose Our Pre-Selected Package for Maximum Savings! </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-12 text-center">
+                    <div class="plan-switch-holder">
+                        <div class="plan-switch-option">
+                            <span class="switch-label">Monthly</span>
+                            <div class="plan-switch">
+                                <div class="custom-control custom-switch"><input type="checkbox" name="disabled" class="custom-control-input subscribed_for-field" value="12" id="iNotAvailable"><label class="custom-control-label" for="iNotAvailable"></label></div>
+                            </div>
+                            <span class="switch-label">Session</span>
+                        </div>
+                        <div class="save-plan"><span class="font-18 font-weight-500">Save 25%</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12 mx-auto">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="subscribe-plan current-plan position-relative d-flex flex-column rounded-lg pb-25 pt-40 px-20 mb-30">
+                                <span class="plan-top-title">1:1 Session</span>
+                                <div class="subscribe-title text-left">
+                                    <h3 itemprop="title" class="font-24 font-weight-500 text-left">Home learning</h3>
+                                    <p itemprop="description">Boost child's home learning with times tables practice and book reading sessions.</p>
+                                </div>
+                                <div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
+                                    <span class="yearly-price">1 session per week</span>
+                                    <span itemprop="price" class="font-36 line-height-1 packages-prices" data-package_id="6" data-package_price="29.99">£29.99/mo</span>
+                                </div>
+                                <div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
+                                    <span class="best-option">Best Value</span>
+                                    <span class="yearly-price">1 session per week</span>
+                                    <span itemprop="price" class="font-36 line-height-1 packages-prices" data-package_id="6" data-package_price="29.99">£29.99/mo</span>
+                                </div>
+                                <button itemprop="button" type="submit" data-user_id="0" data-type="package_selection" data-id="6" class="subscription-modal btn w-100 ">Get Started</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     @php
     $packages_only = isset( $packages )? $packages : array();
     $show_details = isset( $show_details )? $show_details : true;
