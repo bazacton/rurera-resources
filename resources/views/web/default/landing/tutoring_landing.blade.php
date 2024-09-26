@@ -1145,6 +1145,24 @@
             <a href="/pricing" class="btn-primary font-16 text-dark-blue register-btn py-15 px-30">Try Rurera for free</a>
         </div>
     </section>
+    <section class="why-choose-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 col-md-6">
+                    <div class="position-relative">
+                        <img alt="#" height="350" src="../assets/default/img/assessments-educators.png" width="390">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-6">
+                    <h2 itemprop="title" class="font-40 text-dark-charcoal mb-15">Why choose us?</h2>
+                    <p class="mb-15">We make your child's educational journey easier by handling the hard work of finding the right tutor.</p>
+                    <p class="mb-30">Whether your child needs extra support in math and English, help with exam prep, or is ready for new challenges, you can rely on us to meet their unique learning needs.</p>
+                    <h2 itemprop="title" class="font-40 text-dark-charcoal mb-15">Expert Guidance</h2>
+                    <p>Our tutors are backed by a team of experts who provide ongoing training and development, ensuring they stay up-to-date with the latest teaching methods and curriculum changes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     @php $faq_items = isset( $faq_items )? $faq_items : array();@endphp
     <section class="py-100" style="background-color: #fff">
         <div class="container">
