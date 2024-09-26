@@ -62,11 +62,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="footer-bottom">
+	<div class="footer-bottom pt-50">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="footer-nav-holder">
+					<div class="footer-nav-holder pt-50">
 						<div class="row">
 							<div class="col-12 col-md-6 col-lg-6">
 								<div class="footer-text">
