@@ -80,12 +80,14 @@
 								<div class="footer-nav-box">
 									<div class="footer-navs">
 										<ul>
-											<li><a href="#" class="active">Status</a></li>
-											<li><a href="#">Terms</a></li>
-											<li><a href="#">Privacy</a></li>
-											<li><a href="#">OSS</a></li>
-											<li><a href="#">Sitemap</a></li>
-											<li><a href="#">Contact Us</a></li>
+											<li><a href="/privacy" class="active">Privacy</a></li>
+											<li><a href="/cookies">Cookie Policy</a></li>
+											<li><a href="/terms-and-conditions">Terms & Condition</a></li>
+											<li><a href="/terms-of-policy">Terms of Policy</a></li>
+											<li><a href="/acceptable-use">Acceptable Use Policy</a></li>
+											<li><a href="#">Site Map</a></li>
+											<li><a href="/contact-us">Contact us</a></li>
+
 										</ul>
 									</div>
 									<div class="footer-social-links">
@@ -94,6 +96,7 @@
 											<li><a href="#"><img src="/assets/default/svgs/footer-x.svg" alt="X icon" width="50" height="50"></a></li>
 											<li><a href="#"><img src="/assets/default/svgs/footer-linkedin.svg" alt="linkedin icon" width="50" height="50"></a></li>
 											<li><a href="#"><img src="/assets/default/svgs/github.svg" alt="github icon" width="50" height="50"></a></li>
+											<li><a href="#"><img src="/assets/default/svgs/facebook-svgpo-com.svg" alt="facebook icon" width="50" height="50"></a></li>
 										</ul>
 									</div>
 								</div>
