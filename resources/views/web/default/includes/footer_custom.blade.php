@@ -71,7 +71,7 @@
 							<div class="col-12 col-md-6 col-lg-6">
 								<div class="footer-text">
 									<span class="icon-box">
-										<img src="/assets/default/img/linktree.png" width="77" height="88" alt="">
+										<img src="/assets/default/img/linktree.png" width="34" height="38" alt="linktree icon">
 									</span>
 									<p>Glide's mission is not put the power, beauty, and magic of software <br> development ito the hands of a billion new creators. <a href="#">Join Us</a></p>
 								</div>
