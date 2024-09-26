@@ -798,7 +798,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-setup-progress-section tutoring-plans lms-membership-section mb-0 pt-70 pb-50">
+    <section class="lms-setup-progress-section tutoring-plans lms-membership-section mb-0 pt-70 pb-70">
         <div class="container">
             <div class="row">
                 <div class="col-12">
