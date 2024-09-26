@@ -63,12 +63,12 @@
 		</div>
 	</div>
 	<div class="footer-bottom">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<div class="footer-nav-holder">
 						<div class="row">
-							<div class="col-12 col-md-5 col-lg-5">
+							<div class="col-12 col-md-6 col-lg-6">
 								<div class="footer-text">
 									<span class="icon-box">
 										<img src="/assets/default/img/linktree.png" width="77" height="88" alt="">
@@ -76,8 +76,8 @@
 									<p>Glide's mission is not put the power, beauty, and magic of software <br> development ito the hands of a billion new creators. <a href="#">Join Us</a></p>
 								</div>
 							</div>
-							<div class="col-12 col-md-7 col-lg-7">
-								<div class="footer-nav-holder">
+							<div class="col-12 col-md-6 col-lg-6">
+								<div class="footer-nav-box">
 									<div class="footer-navs">
 										<ul>
 											<li><a href="#" class="active">Status</a></li>
