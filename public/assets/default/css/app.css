@@ -3386,6 +3386,11 @@ Tutoring Features Style Start
   background-color: var(--primary);
   border-color: var(--primary);
 }
+.tutoring-plans .subscribe-price input[type="radio"]:checked ~ label:before {
+  background-color: inherit;
+  box-shadow: 0 0 0 5px inset var(--primary);
+  border-color: transparent;
+}
 .tutoring-plans .subscribe-price:has(input[type="checkbox"]) label:after {
   content: "\2713";
   position: absolute;
