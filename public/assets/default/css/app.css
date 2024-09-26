@@ -3301,6 +3301,9 @@ Tutoring Features Style Start
   background-color: #fff;
   border: 0 !important;;
 }
+.tutoring-works .lms-accordion-modern.accordion .card.active {
+  max-width: 450px;
+}
 .tutoring-works .lms-accordion-modern.accordion .btn span {
   height: 30px;
   width: 30px;
