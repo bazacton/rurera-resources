@@ -3386,7 +3386,7 @@ Tutoring Features Style Start
   background-color: var(--primary);
   border-color: var(--primary);
 }
-.tutoring-plans .subscribe-price label:has(input[type="checkbox"]):after {
+.tutoring-plans .subscribe-price:has(input[type="checkbox"]) label:after {
   content: "\2713";
   position: absolute;
   left: 0;
@@ -3399,7 +3399,7 @@ Tutoring Features Style Start
   color: #fff;
   opacity: 0;
 }
-.tutoring-plans .subscribe-price input:checked ~ label:has(input[type="checkbox"]):after {
+.tutoring-plans .subscribe-price:has(input[type="checkbox"]) input:checked ~ label:after {
   opacity: 1;
 }
 .tutoring-plans .subscribe-price label .plan-price {
