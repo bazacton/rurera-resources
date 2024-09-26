@@ -3584,6 +3584,7 @@ footer.footer-home {padding-top: 70px;}
 .footer-navs {
   display: flex;
   align-items: center;
+  padding-right: 15px;
 }
 .footer-bottom .footer-nav-holder {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
