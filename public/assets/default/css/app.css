@@ -3400,6 +3400,11 @@ Tutoring Features Style Start
   font-size: 14px;
   font-weight: 400;
 }
+.tutoring-plans .subscribe-price.best-price label {
+  background-color: #eff7fa;
+  box-shadow: 0 0 0 2px var(--primary);
+  border: 0;
+}
 /*Tutoring Plans Style End*/
 /*********************************
 Tutoring Features Style End
