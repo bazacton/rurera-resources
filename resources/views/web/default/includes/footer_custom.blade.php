@@ -62,5 +62,40 @@
 			</div>
 		</div>
 	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="footer-nav-holder">
+						<div class="row">
+							<div class="col-12 col-md-5 col-lg-5">
+								<div class="footer-text">
+									<span class="icon-box">
+										<img src="" alt="">
+									</span>
+									<p>Glide's mission is not put the power, beauty, and magic of software <br> development ito the hands of a billion new creators. <a href="#">Join Us</a></p>
+								</div>
+							</div>
+							<div class="col-12 col-md-7 col-lg-7">
+								<div class="footer-nav-holder">
+									<div class="footer-navs">
+										<ul>
+											<li><a href="#" class="active">Status</a></li>
+											<li><a href="#">Terms</a></li>
+											<li><a href="#">Privacy</a></li>
+											<li><a href="#">OSS</a></li>
+											<li><a href="#">Sitemap</a></li>
+											<li><a href="#">Contact Us</a></li>
+										</ul>
+									</div>
+									<div class="footer-social-links"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
