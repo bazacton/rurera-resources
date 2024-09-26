@@ -1353,13 +1353,19 @@
                                     <p itemprop="description">Boost child's home learning with times tables practice and book reading sessions.</p>
                                 </div>
                                 <div class="d-flex align-items-start mb-20 subscribe-price">
-                                    <span class="plan-price">1 session per week</span>
-                                    <span itemprop="price" class="font-36 line-height-1 plan-prices">£29.99/mo</span>
+                                    <input type="radio" id="one">
+                                    <label for="one">
+                                        <span class="plan-price">1 session per week</span>
+                                        <span itemprop="price" class="font-36 line-height-1 plan-prices">£29.99/mo</span>
+                                    </label>
                                 </div>
                                 <div class="d-flex align-items-start mb-20 subscribe-price">
-                                    <span class="best-option">Best Value</span>
-                                    <span class="plan-price">1 session per week</span>
-                                    <span itemprop="price" class="font-36 line-height-1 plan-prices">£29.99/mo</span>
+                                    <input type="checkbox" id="two">
+                                    <label for="two">
+                                        <span class="best-option">Best Value</span>
+                                        <span class="plan-price">1 session per week</span>
+                                        <span itemprop="price" class="font-36 line-height-1 plan-prices">£29.99/mo</span>
+                                    </label>
                                 </div>
                                 <button itemprop="button" type="submit" class="subscription-modal btn w-100">Get Started</button>
                             </div>
