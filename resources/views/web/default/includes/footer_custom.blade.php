@@ -63,7 +63,7 @@
 		</div>
 	</div>
 	<div class="footer-bottom">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12">
 					<div class="footer-nav-holder">
