@@ -96,7 +96,8 @@
 											<li><a href="#"><img src="/assets/default/svgs/footer-x.svg" alt="X icon" width="50" height="50"></a></li>
 											<li><a href="#"><img src="/assets/default/svgs/footer-linkedin.svg" alt="linkedin icon" width="50" height="50"></a></li>
 											<li><a href="#"><img src="/assets/default/svgs/github.svg" alt="github icon" width="50" height="50"></a></li>
-											<li><a href="#"><img src="/assets/default/svgs/facebook-svgrepo-com.svg" alt="facebook icon" width="50" height="50"></a></li>
+											<li><a href="https://www.facebook.com/profile.php?id=61564277975339"><img src="/assets/default/svgs/facebook-svgrepo-com.svg" alt="facebook icon" width="50" height="50"></a></li>
+											<li><a href="https://www.instagram.com/rurera.official/gi"><img src="/assets/default/svgs/instagram-svgrepo-com.svg" alt="facebook icon" width="50" height="50"></a></li>
 										</ul>
 									</div>
 								</div>
