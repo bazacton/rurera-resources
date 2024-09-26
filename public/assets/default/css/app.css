@@ -3450,6 +3450,9 @@ Tutoring Features Style Start
 .tutoring-plans .plan-feature {
   min-height: 113px;
 }
+.tutoring-plans .subscribe-plan:hover:not(.current-plan) button.btn {
+  background-color: var(--primary);
+}
 /*Tutoring Plans Style End*/
 /*********************************
 Tutoring Features Style End
