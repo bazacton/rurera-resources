@@ -3414,6 +3414,13 @@ Tutoring Features Style Start
   font-weight: 400;
   border-radius: 50px;
 }
+.tutoring-plans .subscribe-plan .subscribe-price small {
+  vertical-align: bottom;
+  font-size: 16px;
+}
+.tutoring-plans .subscribe-plan .subscribe-price .plan-prices {
+  color: var(--secondary);
+}
 /*Tutoring Plans Style End*/
 /*********************************
 Tutoring Features Style End
