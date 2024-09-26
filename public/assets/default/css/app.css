@@ -3398,6 +3398,7 @@ Tutoring Features Style Start
   line-height: 20px;
   color: #fff;
   opacity: 0;
+  font-size: 14px;
 }
 .tutoring-plans .subscribe-price:has(input[type="checkbox"]) input:checked ~ label:after {
   opacity: 1;
