@@ -3405,6 +3405,15 @@ Tutoring Features Style Start
   box-shadow: 0 0 0 2px var(--primary);
   border: 0;
 }
+.plan-btn-holder {
+  padding: 0 20px 30px;
+}
+.tutoring-plans .subscribe-plan button.btn {
+  padding: 15px 10px;
+  height: auto;
+  font-weight: 400;
+  border-radius: 50px;
+}
 /*Tutoring Plans Style End*/
 /*********************************
 Tutoring Features Style End
