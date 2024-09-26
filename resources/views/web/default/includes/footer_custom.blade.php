@@ -68,7 +68,7 @@
 				<div class="col-12">
 					<div class="footer-nav-holder pt-50">
 						<div class="row">
-							<div class="col-12 col-md-6 col-lg-6">
+							<div class="col-12 col-md-12 col-lg-12">
 								<div class="footer-text">
 									<span class="icon-box">
 										<img src="/assets/default/img/linktree.png" width="34" height="38" alt="linktree icon">
