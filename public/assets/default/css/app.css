@@ -3552,7 +3552,6 @@ footer.footer-home {padding-top: 70px;}
 }
 .footer-bottom .footer-nav-box {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 .footer-bottom .footer-nav-box ul {
