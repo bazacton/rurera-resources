@@ -162,13 +162,13 @@ Lms Responsive Style Start
     .navbar .navbar-toggle-content.show {top: 0;}
     .navbar .navbar-nav>li {width: 100%; padding: 8px 0;}
     .navbar .navbar-nav>li .nav-link {text-align: left;}
-    .navbar1, .navbar {padding: 15px; box-shadow: 0 1px 0 1px rgba(0,0,0,0.04);}
+    .navbar1, .navbar {padding: 15px 20px; box-shadow: 0 1px 0 1px rgba(0,0,0,0.04);}
     .navbar1 .navbar-order,
     .navbar .navbar-order {order: 3}
     .navbar1 .navbar-order:first-child,
     .navbar .navbar-order:first-child {order: 1; margin-left: 0 !important;}
     .navbar1 .navbar-order:nth-child(2),
-    .navbar .navbar-order:nth-child(2) {order: 1; margin-left: auto; margin-right: 10px;}
+    .navbar .navbar-order:nth-child(2) {order: 1; margin-left: auto;}
     .navbar1 .dropdown,
     .navbar .dropdown {order: 3;}
     .navbar1 .navbar-order .nav-notify-cart-dropdown svg {width: 14px !important; height: 14px !important}
