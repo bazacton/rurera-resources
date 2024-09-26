@@ -3389,6 +3389,17 @@ Tutoring Features Style Start
   margin-bottom: 5px;
   display: block;
 }
+.subscribe-plan .subscribe-price .best-option {
+  display: block;
+  text-align: center;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin: 0 0 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
 /*Tutoring Plans Style End*/
 /*********************************
 Tutoring Features Style End
