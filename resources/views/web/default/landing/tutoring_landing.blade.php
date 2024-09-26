@@ -1180,13 +1180,13 @@
                                 <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingonsix">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">What are SATs in UK?</button>
+                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">What subjects do you offer in Rurera tutoring?</button>
                                         </h3>
                                     </div>
                                     <div id="collapsesix" class="collapse" aria-labelledby="headingsix"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>SATs (Standard Assessment Tests) are exams administered to primary school children in England to evaluate their academic progress and the quality of education at their schools. These tests are taken at the end of Key Stage 1 (Years 1–2) and Key Stage 2 (Years 3–6). <br>In Key Stage 2, SATs focus on English and mathematics, but do not include science. </p>
+                                            <p>Rurera offers tutoring in a variety of subjects, including Math, English, Science, and Humanities, tailored to suit different age groups and academic levels.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1194,98 +1194,76 @@
                                     <div class="card-header" id="headingTwo">
                                         <h3 class="mb-0"><button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse"
                                                 data-target="#collapseTwo" aria-expanded="false"
-                                                aria-controls="collapseTwo"> When do students take their SATs?</button></h3>
+                                                aria-controls="collapseTwo">How do I choose the right tutor for my child?</button></h3>
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                         data-parent="#accordion">
                                         <div class="card-body">
                                             <p>
-                                                The Year 6 SATs in 2025 will take place between <strong>12th May-15th May:</strong>
-
+                                                Our team collaborates with you to understand your child’s learning needs and preferences, matching them with a tutor who best fits the child’s needs.
                                             </p>
-                                            <ul>
-                                                <li> <strong>Monday:</strong> English paper 1 and English paper 2</li>
-                                                <li><strong>Tuesday: </strong> English paper 3</li>
-                                                <li><strong>Wednesday: </strong> Maths paper 1 and maths paper 2</li>
-                                                <li> <strong>Thursday:</strong> Maths paper 3</li>
-                                            </ul>
-
-
-
-
-
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingseven">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven"> Which subjects are assessed during the SATs exams?</button>
+                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">Can I book a trial session before committing?</button>
                                         </h3>
                                     </div>
                                     <div id="collapseseven" class="collapse" aria-labelledby="headingseven" data-parent="#accordion">
                                         <div class="card-body">
-                                            <p> Year 6 SATs assess the topics taught on the Key Stage 2 national curriculum for English and maths.
-
-                                            </p>
-                                            <ul>
-                                                <li><strong>English:</strong> Reading, spelling, vocabulary, grammar and punctuation</li>
-                                                <li><strong>Maths:</strong> Number, data, geometry, algebra, measurement, ratio and proportion</li>
-                                            </ul>
-                                            <p>There are 6 papers in total – 3 for English (grammar and punctuation, spelling, and reading), and 3 for maths (2 reasoning papers and an arithmetic paper)</p>
+                                            <p>Yes, we offer a free trial session so you can evaluate the tutor’s compatibility with your child and their teaching style before making a commitment.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading8">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">Is it compulsory for students to take the SATs exams?</button>
+                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">How do online tutoring sessions work?</button>
                                         </h3>
                                     </div>
                                     <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>SATs play a crucial role in providing teachers and parents with an understanding of children's strengths and areas that need improvement. The results help teachers identify which students may require additional support as they transition from primary to secondary school. <br> Additionally, the government uses these results to assess the quality of education in schools nationwide.
-                                            </p>
+                                            <p>Our online sessions utilize a secure platform with interactive tools, allowing tutors to provide real-time feedback and support to engage your child effectively.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading9">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">What is the process for scoring SATs, and how are student results determined?
+                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">What qualifications do your tutors have?
                                             </button>
                                         </h3>
                                     </div>
                                     <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>SATs are scored using scaled scores: A score of 100 represents the expected standard. Scores above 100 indicate higher performance, and below 100 indicate a need for improvement.</p>
-                                            <p><strong>Total score:120</strong></p>
+                                            <p>All Rurera tutors are highly qualified, with extensive teaching experience and a strong understanding of the UK curriculum.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading10">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">Does Rurera align with the national curriculum and standards?</button>
+                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">How is my child’s progress tracked by Rurera?</button>
                                         </h3>
                                     </div>
                                     <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>Yes. Our content is created by teachers and grounded in the Key Stage 2 national curriculum in England. Rurera covers all the core topics in English, maths and science for Years 3–6 (ages 7–11).
-                                            </p>
+                                            <p>You will receive regular progress reports that highlight your child’s achievements, areas for improvement, and suggested next steps in their learning journey.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading11">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">How does Rurera boost and sustain my child's motivation?</button>
+                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">Can tutoring help my child prepare for exams?</button>
                                         </h3>
                                     </div>
                                     <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
                                         <div class="card-body">
                                             <p>
-                                                Along with exciting features like coins to collect and worlds to explore, our algorithm is busy working in the background. Rurera constantly adjusts the difficulty level to match your child's learning style and pace, ensuring they stay challenged without losing motivation. <br>There are plenty of interactive resources to help your child deepen their understanding of each topic, such as helpsheets.
+                                                Absolutely! Our tutors are experienced in preparing students for various exams, including SATs, 11 plus, and entrance exams for independent schools.
                                             </p>
                                         </div>
                                     </div>
@@ -1293,33 +1271,17 @@
                                 <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading12">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">What support and resources does Rurera offer for my child's learning?</button>
+                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">What support is available beyond tutoring sessions?</button>
                                         </h3>
                                     </div>
                                     <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion">
                                         <div class="card-body">
                                             <p>
-                                                No other platform combines adaptive learning, teacher-crafted content, and expert guidance all in one package! We're available to assist you by phone or email whenever you need support.
+                                                The Rurera team is always available to provide additional support, whether it’s answering questions, offering school admissions advice, or helping with exam preparation.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="heading13">
-                                        <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">Will my child need my help to use Rurera, or can they manage it independently?
-                                            </button>
-                                        </h3>
-                                    </div>
-                                    <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <p>Not at all – we've crafted Rurera to be enjoyable and simple for your child to use independently. With helpsheets, they can build new knowledge and gain confidence in learning on their own.
-
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
                                 @endif
 
                             </div>
