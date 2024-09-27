@@ -136,6 +136,10 @@ Rurera Col Style
 /************************ 
 Lms Form Fields Style 
 ************************/
+.rurera-question-block .rureraform-form-input-medium .rureraform-element .rureraform-input {
+  height: auto;
+  line-height: normal;
+}
 .rurera-hide {display: none;}
 .question-step {position: relative; }
 .question-step:has(.prev-next-controls){padding-bottom: 80px;}
@@ -153,7 +157,6 @@ Lms Form Fields Style
 .form-field input[type="checkbox"] ~ label {min-height: 52px; text-align: left;}
 .image-right .form-field input[type="checkbox"] ~ label {padding-right: 60px;}
 .form-field label
-
 .field-holder.correct, 
 .form-field.correct, 
 .form-field.correct label, 
