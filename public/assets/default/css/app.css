@@ -3551,6 +3551,16 @@ Page Elements Style Start
   opacity: 0;
   visibility:hidden;
 }
+.lms-btn-group.custom-btn,
+section:has(.trial-steps) .lms-btn-group {
+  justify-content: center;
+}
+section:has(.trial-steps) .lms-btn-group a {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
 /*********************************
 Page Elements Style End
 **********************************/
