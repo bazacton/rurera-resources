@@ -3613,6 +3613,17 @@ section:has(.trial-steps) .lms-btn-group a small {
     font-weight: 500;
     text-decoration: underline;
 }
+.form-submit-field {
+  text-align: center;
+}
+.lms-custom-form button[type=submit] {
+  border: 0;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-size: 14px;
+}
 .team-section {
   padding: 70px 0;
 }
