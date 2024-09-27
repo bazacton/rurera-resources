@@ -3473,18 +3473,14 @@ Tutoring Features Style End
 Page Elements Style Start
 **********************************/
 .has-curve-shape {
-  background-color: var(--primary);
-  min-height: 350px;
-  padding-top: 70px;
+  padding-top: 70px 0 150px;
   position: relative;
 }
-
 .custom-btn a {
   padding: 10px 15px;
   border-radius: 5px;
   border: 1px solid rgba(255,255,255,0.2);
 }
-
 .has-curve-shape:after {
   content: "";
   position: absolute;
