@@ -3577,6 +3577,15 @@ section:has(.trial-steps) .lms-btn-group a {
     padding-top: 12px;
     resize: none;
 }
+.custom-form-section h2 {
+  margin-bottom: 20px !important;
+}
+.custom-form-section p a {
+    color: var(--primary);
+    margin: 0 5px;
+    font-weight: 500;
+    text-decoration: underline;
+}
 /*********************************
 Page Elements Style End
 **********************************/
