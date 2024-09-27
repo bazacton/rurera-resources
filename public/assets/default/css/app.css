@@ -3473,8 +3473,18 @@ Tutoring Features Style End
 Page Elements Style Start
 **********************************/
 .has-curve-shape {
+  background-color: var(--primary);
+  min-height: 350px;
+  padding-top: 70px;
   position: relative;
 }
+
+.custom-btn a {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
 .has-curve-shape:after {
   content: "";
   position: absolute;
@@ -3485,6 +3495,61 @@ Page Elements Style Start
   border-radius: 50% 50% 0 0 / 100% 100% 0 0;
   z-index: 2;
   height: 70px;
+}
+
+.trial-steps li {
+  list-style: none;
+  flex: 0 0 33%;
+  max-width: 33%;
+  text-align: center;
+  position: relative;
+}
+
+.trial-steps ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.trial-box {
+  text-align: center;
+}
+
+.trial-steps li .icon-box {
+  height: 40px;
+  width: 40px;
+  display: inline-flex;
+  justify-content: center;
+  border: 2px solid #27325e;
+  border-radius: 100%;
+  align-items: center;
+  background-color: #fff;
+  position: relative;
+}
+
+.trial-steps li .icon-box img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+  filter: invert(19%) sepia(11%) saturate(3046%) hue-rotate(191deg) brightness(96%) contrast(95%);
+}
+
+.trial-steps li:before {
+  content: "";
+  height: 6px;
+  width: 100%;
+  position: absolute;
+  background-color: var(--primary);
+  top: 50%;
+  margin-top: -3px;
+  z-index: -1;
+  left: -50%;
+}
+.trial-steps li:first-child:before {
+  opacity: 0;
+  visibility:hidden;
 }
 /*********************************
 Page Elements Style End
