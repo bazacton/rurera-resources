@@ -3564,6 +3564,19 @@ section:has(.trial-steps) .lms-btn-group a {
 .trial-steps {
   margin-bottom: 50px;
 }
+.lms-custom-form input[type="text"], .lms-custom-form input[type="email"], 
+.lms-custom-form textarea, .lms-custom-form select {
+    width: 100%;
+    height: 35px;
+    border-radius: 6px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+}
+.lms-custom-form textarea {
+    height: 110px;
+    padding-top: 12px;
+    resize: none;
+}
 /*********************************
 Page Elements Style End
 **********************************/
