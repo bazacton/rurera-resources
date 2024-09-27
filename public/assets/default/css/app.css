@@ -2906,7 +2906,7 @@ Choose Plan Style End
 
 .lms-jobs-form .input-field input[type="text"],
 .lms-jobs-form .input-field input[type="email"],
-.lms-jobs-form .input-field input[type="password"],
+.lms-jobs-form .input-field input[type="password"], 
 .lms-jobs-form .input-field .lms-jobs-select { box-sizing: border-box; width: 100%; padding:11px 20px 11px 20px; border: 1px solid #eeeeee; border-radius: 4px; outline: 0; height: 48px; font-size: 14px; font-weight: 500; color: #444; background-color: #fcfcfc; }
 .lms-jobs-form .input-field input[type="submit"] { height: 58px; width: 225px; text-align: center; border: 0; border-radius: 4px; background: var(--primary); color: #fff; font-size: 16px; font-weight: 500; outline: none; cursor: pointer; }
 .lms-jobs-form .input-field input[type="text"] {
