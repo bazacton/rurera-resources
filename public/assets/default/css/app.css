@@ -3561,6 +3561,9 @@ section:has(.trial-steps) .lms-btn-group a {
   padding: 10px 20px;
   border-radius: 5px;
 }
+.trial-steps {
+  margin-bottom: 50px;
+}
 /*********************************
 Page Elements Style End
 **********************************/
