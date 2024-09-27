@@ -2603,6 +2603,9 @@ Lms Contact Form Pages Style Start
 .lms-contact-form-section .svg-container:before{top: 0;bottom: auto;-webkit-transform: scaleY(-1); -moz-transform: scaleY(-1); transform: scaleY(-1);}
 .lms-jobsform-content {padding: 0 30px;}
 .lms-jobsform-content h2.font-56 {font-size: 56px;}
+.lms-jobsform-content li {
+  list-style: none;
+}
 .content-list {display: flex; flex-direction: column; gap: 10px;}
 .lms-jobsform-partners ul {display: flex; align-items: center; flex-wrap: wrap; gap: 15px;}
 .lms-jobsform-partners li img {bottom: 0; height: 48px; left: 0; position: absolute; right: 0; top: 0; width: 100%; object-fit: contain;}
