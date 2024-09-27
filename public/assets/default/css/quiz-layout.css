@@ -148,10 +148,11 @@ Lms Form Fields Style
 .form-box { width: calc(100% - 120px); position: relative;}
 .rureraform-form-editor .form-box {width: 100%;}
 .form-field input[type="checkbox"] {position: absolute; left: 0; top: 0; opacity: 0;}
-.form-field label {background-color: #fff; border: 2px solid #ddd; border-bottom-width: 4px; border-radius: 8px; position: relative; cursor: pointer; padding: 15px; width: 100%; margin-bottom: 0; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out;}
+.form-field label {background-color: #fff; border: 2px solid #ddd; border-bottom-width: 4px; border-radius: 8px; position: relative; cursor: pointer; padding: 15px; width: 100%; margin-bottom: 0; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; line-height: normal;}
 .lms-checkbox-img .form-field label {height: 100%;}
 .form-field input[type="checkbox"] ~ label {min-height: 52px; text-align: left;}
 .image-right .form-field input[type="checkbox"] ~ label {padding-right: 60px;}
+.form-field label
 
 .field-holder.correct, 
 .form-field.correct, 
