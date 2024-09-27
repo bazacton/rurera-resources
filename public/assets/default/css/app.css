@@ -3566,6 +3566,10 @@ section:has(.trial-steps) .lms-btn-group a {
   padding: 10px 20px;
   border-radius: 5px;
 }
+section:has(.trial-steps) .lms-btn-group a small {
+  font-size: 14px;
+  margin: 0 4px;
+}
 .trial-steps {
   margin-bottom: 50px;
 }
