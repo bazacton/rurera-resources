@@ -811,9 +811,11 @@ Lms Quiz Wf Style End
 .question-layout-block .prev-next-controls {
   position: fixed;
   width: 848px;
-  bottom: -25px;
+  bottom: -50px;
   background-color: #fff;
-  min-height: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  min-height: 100px;
 }
 .question-layout-block .rurera-question-block {
   padding-bottom: 80px;
