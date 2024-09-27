@@ -3470,6 +3470,27 @@ Tutoring Features Style End
 **********************************/
 
 /*********************************
+Page Elements Style Start
+**********************************/
+.has-curve-shape {
+  position: relative;
+}
+.has-curve-shape:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  z-index: 2;
+  height: 70px;
+}
+/*********************************
+Page Elements Style End
+**********************************/
+
+/*********************************
 Lms Footer Style Start
 **********************************/
 .footer {position: relative; padding-top: 30px;}
