@@ -807,7 +807,7 @@ Lms Quiz Wf Style End
 .lms-quiz-section .question-area {position: relative;}
 .prev-next-controls {display: flex; align-items: center; justify-content: center; margin-top: 20px; position: relative; padding-left: 100px;}
 .prev-next-controls a {margin: 0 7px 0 0;}
-.prev-next-controls .review-btn {position: absolute; /*left: 100px;*/}
+.prev-next-controls .review-btn {position: absolute; /*left: 100px;*/ left: 0;}
 .review-btn,
 .prev-btn,
 .next-btn{display: inline-flex; align-items: center; border: 1px solid #eee; min-width: 135px; min-height: 45px; border-radius: 5px; justify-content: center; color: #000; text-transform: uppercase;}
