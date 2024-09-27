@@ -3587,6 +3587,13 @@ section:has(.trial-steps) .lms-btn-group a {
     font-weight: 500;
     text-decoration: underline;
 }
+.team-section {
+  padding: 70px 0 0;
+}
+.team-section .section-title h2 span {
+  color: var(--primary);
+  margin-left: 8px;
+}
 /*********************************
 Page Elements Style End
 **********************************/
