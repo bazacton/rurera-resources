@@ -140,6 +140,7 @@ Lms Form Fields Style
   height: auto;
   line-height: normal;
 }
+.rurera-question-block .rureraform-col {padding-left: 0 !important; padding-right: 0 !important;}
 .rurera-hide {display: none;}
 .question-step {position: relative; }
 .question-step:has(.prev-next-controls){padding-bottom: 80px;}
