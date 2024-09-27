@@ -3473,7 +3473,7 @@ Tutoring Features Style End
 Page Elements Style Start
 **********************************/
 .has-curve-shape {
-  padding-top: 70px 0 150px;
+  padding: 70px 0 150px;
   position: relative;
 }
 .custom-btn a {
