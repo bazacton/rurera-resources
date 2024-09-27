@@ -3600,7 +3600,7 @@ section:has(.trial-steps) .lms-btn-group a {
   justify-content: center;
   gap: 15px;
 }
-.team-slider .swiper-slide:nth-child(even) {
+.team-slider .swiper-slide:nth-child(odd) {
   margin-top: 30px;
 }
 .team-slider img {
