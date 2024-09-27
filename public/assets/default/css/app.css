@@ -3606,12 +3606,14 @@ section:has(.trial-steps) .lms-btn-group a small {
   gap: 15px;
 }
 .team-slider .swiper-slide:nth-child(odd) {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .team-slider img {
   max-width: 100%;
   width: 100%;
   border-radius: 8px;
+  height: 340px;
+  object-fit: cover;
 }
 .team-slider figure {
   position: relative;
