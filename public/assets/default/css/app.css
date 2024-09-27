@@ -2609,7 +2609,7 @@ Lms Contact Form Pages Style Start
 .content-list {display: flex; flex-direction: column; gap: 10px;}
 .lms-jobsform-partners ul {display: flex; align-items: center; flex-wrap: wrap; gap: 15px;}
 .lms-jobsform-partners li img {bottom: 0; height: 48px; left: 0; position: absolute; right: 0; top: 0; width: 100%; object-fit: contain;}
-.lms-jobsform-partners ul li {width: 23.333%; text-align: center; height: 48px; max-width: 200px; position: relative;}
+.lms-jobsform-partners ul li {width: 23.333%; text-align: center; height: 48px; max-width: 200px; position: relative; list-style: none;}
 .lms-jobsform-partners ul li a {display: block; position: relative;}
 .qoute-box {border: 1px solid #fff;border-radius: 8px;padding: 72px 60px;text-align: center;}
 .jobsform-qoute {position: relative;}
