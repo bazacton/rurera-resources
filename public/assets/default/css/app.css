@@ -3571,6 +3571,7 @@ section:has(.trial-steps) .lms-btn-group a {
     border-radius: 6px;
     padding: 0 12px;
     border: 1px solid #ccc;
+    color: #666;
 }
 .lms-custom-form textarea {
     height: 110px;
