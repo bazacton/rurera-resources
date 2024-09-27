@@ -3578,6 +3578,22 @@ section:has(.trial-steps) .lms-btn-group a small {
     border: 1px solid #ccc;
     color: #666;
 }
+.lms-custom-form select {
+  appearance: none;
+}
+.lms-custom-form .select-field {
+  position: relative;
+}
+.lms-custom-form .select-field:after {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  height: 12px;
+  width: 12px;
+  border: 1px solid #666;
+  content: "";
+  margin-top: -6px;
+}
 .lms-custom-form textarea {
     height: 110px;
     padding-top: 12px;
