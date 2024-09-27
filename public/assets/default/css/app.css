@@ -2868,7 +2868,7 @@ Choose Plan Style End
 *************************************/
 /*Lms Jobs Form Style Start*/
 .lms-jobs-form-body {border-radius: 6px; }
-.lms-jobs-form .form-element-title { margin: 0 -20px; background-color:var(--primary); padding: 16px 20px; margin-bottom: 24px; }
+.lms-jobs-form .form-element-title { padding: 16px 20px; margin-bottom: 24px; }
 .lms-jobs-form .row:nth-child(1) > .col-12 > .form-element-title { border-radius:6px 6px 0 0; }
 .lms-jobs-form .form-element-title h2 { color: #fff; font-size: 1.3rem; margin-top: 0;}
 .lms-jobs-form .checkbox-field input[type=checkbox] { transform: scale(1.5); }
