@@ -773,6 +773,19 @@ Lms Quiz Wf Style End
 /************************************ 
  Quiz Read Info Style Start
 *************************************/
+/* Lms Font End Display Style */
+.lms-quiz-section .quiz-topbar {background-color: inherit; border-bottom: 1px solid #999;}
+.lms-quiz-section .quiz-topbar .quiz-pagination li a,
+.lms-quiz-section .quiz-topbar .timer-number,
+.timer-number, .lms-quiz-section .quiz-topbar p,
+.learning-page .quiz-topbar p{color: #333;}
+.question-layout-block form.question-fields .questions-nav-controls {border-top: 2px dashed #ddd; padding: 15px}
+.type-sats .question-layout-block form.question-fields {background-color: inherit; border: 0; padding: 0; border-radius: 0; margin-bottom: 0;}
+.question-layout-block form.question-fields .questions-nav-controls .review-btn {left: 0;}
+.flipbook-quiz .difficulty-level {padding-left: 80px;}
+body.quiz-open .flipbook-quiz {transform: translateX(-10%) translateZ(0);}
+body .lms-quiz-section .flipbook-quiz {width: 800px;}
+/* Lms Font End Display End */
 .quiz-show .read-quiz-info {left: 0;}
 .read-quiz-content {transition: all 0.2s ease-in-out;}
 .container-fluid.read-quiz-content {padding: 0; max-width: 100%; overflow-x: hidden;}
