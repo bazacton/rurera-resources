@@ -1,4 +1,4 @@
-
+/*
 .lms-quiz-create .rureraform, .rureraform-admin {
 	font-size: 14px;
 	font-family: arial;
@@ -43,7 +43,7 @@
 	text-align: right;
 }
 
-/* Dialog Popup - begin */
+/* Dialog Popup - begin 
 .lms-quiz-create .rureraform-dialog-overlay {
 	position: fixed !important;
 	z-index: 99988;
@@ -272,7 +272,7 @@
 }
 /* Dialog Popup - end */
 
-/* Properies Popup begin */
+/* Properies Popup begin 
 .lms-quiz-create .rureraform-admin-popup-overlay {
 	position: fixed !important;
 	z-index: 99980;
@@ -638,7 +638,7 @@
 	box-sizing: border-box;
 	box-shadow: none;
 	margin: 0;
-	/* background: #FFF; */
+	/* background: #FFF; 
 	height: 40px;
 	min-width: 0px;
 	max-width: 100%;
@@ -1607,7 +1607,7 @@
 }
 /* Properies Popup - end */
 
-/* Tabs - begin */
+/* Tabs - begin 
 .rureraform-tabs {
 	border-bottom: 1px solid #ccc;
 	margin: 0;
@@ -1671,9 +1671,9 @@
 	display: none;
 	position: relative;
 }
-/* Tabs - end */
+/* Tabs - end 
 
-/* Sections - begin */
+/* Sections - begin 
 .rureraform-sections {
 	margin: 0;
 	margin-top: 20px;
@@ -1753,9 +1753,9 @@
 .rureraform-section-content {
 	display: none;
 }
-/* Sections - end */
+/* Sections - end 
 
-/* Buttons - begin */
+/* Buttons - begin 
 .rureraform-admin-button-container {
 	text-align: right;
 	margin: 10px 0;
@@ -1860,7 +1860,7 @@
 }
 /* Buttons - end */
 
-/* FA begin */
+/* FA begin 
 .rureraform-fa-selector-overlay {
 	position: fixed !important;
 	z-index: 99988;
@@ -1985,7 +1985,7 @@
 	transition-duration: 300ms;
 }
 /* FA - end */
-/* Bulk Options - begin */
+/* Bulk Options - begin
 #rureraform-bulk-options-overlay {
 	z-index: 99988;
 }
@@ -2056,7 +2056,7 @@
 	font-size: 15px;
 }
 /* Bulk Options - end */
-/* Context Menu - begin */
+/* Context Menu - begin 
 .rureraform-context-menu {
 	position: absolute;
 	z-index: 999;
@@ -2137,12 +2137,11 @@
 .rureraform-context-menu ul li ul li {
 	overflow: hidden;
 }
-/* Context Menu end */
+/* Context Menu end 
 .rureraform-admin {
 	font-family: arial;
 	margin: 10px 20px 20px 0px;
 	position: relative;
-	/* border: 1px solid #c0c0c0; */
 }
 .rureraform-admin>h2, .rureraform-admin>h1 {
 	font-size: 23px;
@@ -3429,7 +3428,7 @@ a.rureraform-integrations-custom-remove:active {
 	background-size: contain;
 	height: 26px !important;
 }
-/* Table List - begin */
+/* Table List - begin
 .rureraform-table-list-buttons {
 	text-align: right;
 	margin-bottom: 10px;
@@ -3729,7 +3728,7 @@ a.rureraform-integrations-custom-remove:active {
 	width: 1em;
 	margin-right: 0.5em;
 }
-/* Table List - end */
+/* Table List - end
 
 .rureraform-badge {
 	display: inline-block;
@@ -3803,7 +3802,7 @@ a.rureraform-integrations-custom-remove:active {
 	animation-iteration-count: 100;
 	animation-timing-function: ease-out;
 }
-/* Gutenberg Blocks - begin */
+/* Gutenberg Blocks - begin
 .editor-block-list-item-rureraform-form .block-editor-block-icon {
 	background: url(images/icon.png) 0 0 no-repeat;
 	background-size: contain;
@@ -3844,12 +3843,10 @@ select.rureraform-block-form-value {
 }
 /* Gutenberg Blocks - end */
 
-/* Field Analytics - begin */
+/* Field Analytics - begin
 .rureraform-field-analytics-noform {
 	text-align: center;
 	margin-top: 60px;
-}
-.rureraform-field-analytics-columns {
 }
 .rureraform-field-analytics-columns>div {
 	float: left;
@@ -3862,7 +3859,7 @@ select.rureraform-block-form-value {
 }
 /* Field Analytics - end */
 
-/* Get Started - begin */
+/* Get Started - begin 
 .rureraform-gettingstarted-overlay {
 	position: fixed;
 	z-index: 1000000;
@@ -4116,7 +4113,7 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {
 }
 /****************************
 STYLE
-****************************/
+***************************
 .lms-root-block,
 .lms-root-block .lms-root-block {
   display: -moz-inline-box;
@@ -4170,7 +4167,6 @@ STYLE
   margin-right: .1em;
   padding-top: 1px;
   display: inline-block;
-  /* font-size: 15px; */
 }
 .lms-root-block .lms-sqrt-stem:after {
     content: "c";
@@ -4179,3 +4175,4 @@ STYLE
 .lms-scaled.lms-sqrt-prefix {
     transform: scale(1, 1.2);
 }
+	*/
