@@ -605,7 +605,6 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .input-holder .input-label ~ input.input_line {min-height: auto; width: 100%;}
 .input-holder .input-label ~ input[type="number"].input-simple  {padding: 0 0 0 36px; text-align: left;}
 .input-holder .input-label.right ~ input[type="number"].input-simple {padding: 0 10px;}
- .input-holder .input-label.left ~ input[type="number"].input-simple {/*text-align: right;*/} 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {-webkit-appearance: none;}
 input[type=number] {-moz-appearance:textfield;}
@@ -1232,6 +1231,9 @@ label.lms-question-label.wrong span {
 .rureraform-properties-content .input-group-prepend ~ input[type="text"] {height: 42px; background-color: #fff; outline: none; padding: 0 50px;}
 .rureraform-properties-content .input-group-prepend ~ input[type="text"]:focus {border-color: #ddd;}
 /*quiz style from app.css end*/
+body .learning-page .learning-content .learning-content-box {position: relative; z-index: 1;}
+body .learning-page.type-sats .learning-content .learning-content-box {border-color: transparent;}
+body .learning-page .learning-title {border-color: #ccc;}
 
 /*********************************
 Quiz Front end file all css Start

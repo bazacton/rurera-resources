@@ -1878,16 +1878,11 @@ body .range-slider_thumb {background-color: #fff;}
 .non-use strong {color: #787b84;}
 .non-use span {color: #787b84;}
 /*Alphabet List Style End*/
-
-body .learning-page .learning-content .learning-content-box {position: relative; z-index: 1;}
-body .learning-page.type-sats .learning-content .learning-content-box {border-color: transparent;}
-body .learning-page .learning-title {border-color: #ccc;}
 .lms-data-table h3 {margin: 0 0 15px; font-size: 20px;}
 .field_extra_small{width: 22% !important;}
 .field_small{width: 40% !important;}
 .field_medium {width: 75% !important;}
 .field_large {width: 100% !important;}
-/* .question-area-block {text-align: center; color: #fff; font-size: 24px;} */
 
 /* Learning New Style Start */
 .learning-start {background: url(/assets/default/img/learning-bg.png) no-repeat #f6fcff bottom; border: 1px solid var(--primary); background-size: contain; border-top-width: 9px; border-radius: 10px; padding: 50px 60px 0; text-align: center; overflow: hidden;}
