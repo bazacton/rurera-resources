@@ -538,7 +538,6 @@ Lms Quiz Wf Style Start
 .quiz-wf-radio-img.lms-radio-img .field-holder label span {position: absolute; margin: 5px 0 0 0; font-weight: 600; font-size: 16px; color: #000; top: 50%; transform: translateY(-50%);}
 .quiz-wf-radio-img.lms-radio-img .field-holder label span em {font-style: normal;}
 .quiz-wf-radio-img .lms-radio-select label:after {content: "\2713"; width: 20px; height: 20px; top: 20px; right: 5px; background-color: var(--secondary); border-color: var(--secondary); z-index: 1; border-radius: 100%; text-align: center; font-size: 12px; line-height: 20px; font-weight: 600; left: auto;}
-.mt-100 {margin-top: 100px !important;}
 .br-none .input-field,
 .br-none .field-holder {padding: 0; border: 0; height: auto;}
 .input-field, .field-holder {box-sizing: border-box; width: 100%; padding: 4px 16px; border: solid 1px #d1d1d1; border-radius: 6px; background-color: #fff; outline: 0;}
