@@ -2,8 +2,6 @@
 @php
 $i = 0; $j = 1;
 $rand_id = rand(99,9999);
-
-
 @endphp
 
 <style>
@@ -162,7 +160,6 @@ $practice_time = 0;
 
                             </div>
                         </div>
-
                         <div class="quiz-status-bar">
                             <div class="quiz-questions-bar-holder">
 
@@ -182,7 +179,6 @@ $practice_time = 0;
                                 <span class="quiz-incorrects">0</span>
                             </div>
                         </div>
-
                         <div class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
                         @php $total_questions = 10; @endphp
                         <div class="question-area dis-arrows1" data-total_questions="{{$total_questions}}">
@@ -209,9 +205,6 @@ $practice_time = 0;
                             @php $question_no++; @endphp
                             @endforeach
                             @else
-
-
-
                             @if( !empty( $questions_layout  ) )
                                 @php $question_counter  = 1; @endphp
                                 @foreach( $questions_layout as $result_question_id => $questionLayout)
@@ -307,7 +300,7 @@ $practice_time = 0;
 
 
 </div>
-{{--vocabulary--}}
+{{--vocabulary ( personaly think its need to be removed--}}
 @if($quiz->quiz_type == 'vocabulary')
 <div class="question-status-modal">
   <div class="modal fade question_status_modal" id="question_status_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -333,93 +326,122 @@ $practice_time = 0;
 
 {{-- Test--}}
 @endif
+
+<!-- Modal for submitting a review when the user has been inactive -->
 <div class="modal fade review_submit1" id="review_submit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
-   <div class="modal-dialog modal-dialog-centered">
-       <div class="modal-content">
-           <button type="button" class="close unpause-quiz" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-           <div class="modal-body">
-			  <div class="modal-box">
-				<span class="icon-box d-block mb-15">
-					<img src="../assets/default/img/clock-modal-img.png" alt="">
-				</span>
-				<h3 class="font-24 font-weight-normal mb-10">Are you sure?</h3>
-				<p class="mb-15 font-16">
-					You've  been gone a while, we have paused you, you still can continue learning by using following&nbsp;links.
-				</p>
-				<div class="inactivity-controls flex-column d-flex">
-					<a href="javascript:;" class="review-btn submit_quiz_final">Finish Test</a>
-				</div>
-			  </div>
-			</div>
-       </div>
-   </div>
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Button to close the modal -->
+            <button type="button" class="close unpause-quiz" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+            <div class="modal-body">
+                <div class="modal-box">
+                    <!-- Icon indicating inactivity -->
+                    <span class="icon-box d-block mb-15">
+                    <img src="../assets/default/img/clock-modal-img.png" alt="">
+                </span>
+                    <!-- Title of the modal -->
+                    <h3 class="font-24 font-weight-normal mb-10">Are you sure?</h3>
+                    <p class="mb-15 font-16">
+                        You've been gone a while, we have paused you; you still can continue learning by using the following links.
+                    </p>
+                    <div class="inactivity-controls flex-column d-flex">
+                        <!-- Button to finish the test -->
+                        <a href="javascript:;" class="review-btn submit_quiz_final">Finish Test</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<!-- Modal for pausing the quiz activity -->
 <div class="modal fade pause_quiz quiz-activity-pause" id="pause_quiz" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
-   <div class="modal-dialog">
-       <div class="modal-content">
-		   <div class="modal-body">
-			  <div class="modal-box">
-				<span class="icon-box d-block mb-15">
-					<img src="../assets/default/img/clock-modal-img.png" alt="">
-				</span>
-				<h3 class="font-24 font-weight-normal mb-10 pause-title">Need a Break?</h3>
-				<p class="mb-15 font-16 pause-description">
-					Practice tests do not let you go over time, though you can pause them and come back to them later.
-				</p>
-				<ul class="activity-info">
-					<li>Total Answered: <strong class="total-questions">10</strong></li>
-					<li><span class="icon-box"></span> Correct: <strong class="correct-questions">1</strong></li>
-					<li>Incorrect: <strong class="incorrect-questions">2</strong></li>
-				</ul>
-				<div class="inactivity-controls">
-					<a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">Continue Test</a>
-					<a href="javascript:;" class="review-btn" data-dismiss="modal" data-toggle="modal" data-target="#review_submit">Finish Test</a>
-					<a href="/panel" class="exit-btn"> Need a break! </a>
-				</div>
-			  </div>
-			</div>
-       </div>
-   </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-box">
+                    <!-- Icon indicating the need for a break -->
+                    <span class="icon-box d-block mb-15">
+                    <img src="../assets/default/img/clock-modal-img.png" alt="">
+                </span>
+                    <h3 class="font-24 font-weight-normal mb-10 pause-title">Need a Break?</h3>
+                    <p class="mb-15 font-16 pause-description">
+                        Practice tests do not let you go over time; though you can pause them and come back to them later.
+                    </p>
+                    <!-- Displaying quiz statistics -->
+                    <ul class="activity-info">
+                        <li>Total Answered: <strong class="total-questions">10</strong></li>
+                        <li><span class="icon-box"></span> Correct: <strong class="correct-questions">1</strong></li>
+                        <li>Incorrect: <strong class="incorrect-questions">2</strong></li>
+                    </ul>
+                    <div class="inactivity-controls">
+                        <!-- Button to continue the test -->
+                        <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">Continue Test</a>
+                        <!-- Button to finish the test -->
+                        <a href="javascript:;" class="review-btn" data-dismiss="modal" data-toggle="modal" data-target="#review_submit">Finish Test</a>
+                        <!-- Button to exit -->
+                        <a href="/panel" class="exit-btn">Need a break!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<!-- Modal for validation error when required fields are not filled -->
 <div class="modal fade validation_error" id="validation_error" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-   <div class="modal-dialog">
-       <div class="modal-content">
-           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-           <div class="modal-body">
-               <p>Please fill all the required fields before submitting.</p>
-           </div>
-       </div>
-   </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Button to close the modal -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+            <div class="modal-body">
+                <!-- Error message for validation -->
+                <p>Please fill all the required fields before submitting.</p>
+            </div>
+        </div>
+    </div>
 </div>
+
+<!-- Modal for question inactivity notification -->
 <div class="modal fade question_inactivity_modal" id="question_inactivity_modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered" role="document">
-  <div class="modal-content">
-    <div class="modal-body">
-      <div class="modal-box">
-        <span class="icon-box d-block mb-15">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-box">
+                    <!-- Icon indicating inactivity -->
+                    <span class="icon-box d-block mb-15">
             <img src="../assets/default/img/clock-modal-img.png" alt="">
         </span>
-        <h3 class="font-24 font-weight-normal mb-10">Are you still there?</h3>
-        <p class="mb-15 font-16">
-            You've been inactive for a while, and your session was paused. You can continue learning by using the following links
-        </p>
-		<ul class="activity-info">
-			<li>Total Answered: <strong class="total-questions">10</strong></li>
-			<li><span class="icon-box"></span> Correct: <strong class="correct-questions">1</strong></li>
-			<li>Incorrect: <strong class="incorrect-questions">2</strong></li>
-		</ul>
-        <div class="inactivity-controls">
-            <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">Continue Test</a>
-            <a href="javascript:;" class="review-btn" data-dismiss="modal" data-toggle="modal" data-target="#review_submit">Finish Test</a>
-			<a href="/panel" class="exit-btn"> Need a break! </a>
+                    <h3 class="font-24 font-weight-normal mb-10">Are you still there?</h3>
+                    <p class="mb-15 font-16">
+                        You've been inactive for a while, and your session was paused. You can continue learning by using the following links.
+                    </p>
+                    <!-- Displaying quiz statistics -->
+                    <ul class="activity-info">
+                        <li>Total Answered: <strong class="total-questions">10</strong></li>
+                        <li><span class="icon-box"></span> Correct: <strong class="correct-questions">1</strong></li>
+                        <li>Incorrect: <strong class="incorrect-questions">2</strong></li>
+                    </ul>
+                    <div class="inactivity-controls">
+                        <!-- Button to continue the test -->
+                        <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">Continue Test</a>
+                        <!-- Button to finish the test -->
+                        <a href="javascript:;" class="review-btn" data-dismiss="modal" data-toggle="modal" data-target="#review_submit">Finish Test</a>
+                        <!-- Button to exit -->
+                        <a href="/panel" class="exit-btn">Need a break!</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
-</div>
-<a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
 
+<!-- Trigger button for the review submit modal -->
+<a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
 
 
 <script>
