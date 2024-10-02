@@ -308,8 +308,13 @@ $practice_time = 0;
 				</span>
 				<h3 class="font-24 font-weight-normal mb-10">Are you sure?</h3>
 				<p class="mb-15 font-16">
-					You've  been gone a while, we have paused you, you still can continue learning by using following&nbsp;links.
+					You've been gone a while, we have paused you, you still can continue learning by using following&nbsp;links.
 				</p>
+                <ul class="activity-info">
+					<li>Total Answered: <strong class="total-questions">10</strong></li>
+					<li><span class="icon-box"></span> Correct: <strong class="correct-questions">1</strong></li>
+					<li>Incorrect: <strong class="incorrect-questions">2</strong></li>
+				</ul>
 				<div class="inactivity-controls flex-column d-flex">
 					<a href="javascript:;" class="review-btn submit_quiz_final">Finish Test</a>
 				</div>
@@ -549,7 +554,7 @@ $practice_time = 0;
         /*Comments*/
        $("body").on("click", ".review-btn", function (e) {
 			var attempted_questions = $('.quiz-pagination li.correct, .quiz-pagination li.incorrect').length;
-			$(".review_submit1 .modal-body p").html('You have attempted ' + attempted_questions + ' questions. are you sure you want to submit your test? you will not able to access this test again.');
+			$(".review_submit1 .modal-body p").html('By proceeding, your quiz attempt will not be recorded, and no rewards (including coins) will be granted. Are you sure you want to continue?');
             $(".pause_quiz").modal('hide');
         });
         /*Comments*/
