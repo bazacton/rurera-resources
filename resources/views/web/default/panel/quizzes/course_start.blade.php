@@ -38,6 +38,7 @@ $target_score = isset( $quiz->target_score)? $quiz->target_score : 0;
 $target_score = ($target_score > 0)? $target_score : 100;
 $practice_time = 0;
 @endphp
+{{----}}
 <div class="content-section quiz-settings dis-arrows">
 
     <section class="lms-quiz-section">
@@ -90,7 +91,7 @@ $practice_time = 0;
 
         </script>
         @endif
-
+{{----}}
         <div class="container questions-data-block read-quiz-content"
              data-total_questions="{{$quizQuestions->count()}}">
             @php $top_bar_class = ''; @endphp
@@ -314,7 +315,7 @@ $practice_time = 0;
 
 
 </div>
-
+{{----}}
 @if($quiz->quiz_type == 'vocabulary')
 <div class="question-status-modal">
   <div class="modal fade question_status_modal" id="question_status_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -337,8 +338,9 @@ $practice_time = 0;
     </div>
   </div>
 </div>
-@endif
 
+{{----}}
+@endif
 <div class="modal fade review_submit1" id="review_submit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
    <div class="modal-dialog modal-dialog-centered">
        <div class="modal-content">
@@ -397,8 +399,6 @@ $practice_time = 0;
        </div>
    </div>
 </div>
-
-
 <div class="modal fade question_inactivity_modal" id="question_inactivity_modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered" role="document">
   <div class="modal-content">
@@ -426,8 +426,6 @@ $practice_time = 0;
   </div>
 </div>
 </div>
-
-
 <a href="#" data-toggle="modal" class="hide review_submit_btn" data-target="#review_submit">modal button</a>
 
 
@@ -446,16 +444,8 @@ $practice_time = 0;
     var focusIntervalCount = 180;
 	var TimerActive = true;
     var duration_type = '{{$duration_type}}';
-	
-	
-	
-	
-	
-	
 
     function quiz_default_functions() {
-		
-		
 		var total_questions = $('.quiz-pagination li').length;
 		var attempted_questions = $('.quiz-pagination li.correct, .quiz-pagination li.incorrect').length;
 		var correct_questions = $('.quiz-pagination li.correct').length;
@@ -504,26 +494,19 @@ $practice_time = 0;
 
             }
         });
-
-
         window.addEventListener('focus', function () {
             focusIntervalCount = 180;
             clearInterval(focusInterval);
             focusInterval = null;
         });
-
         $(document).on('click', '.continue-btn', function (e) {
             TimerActive = true;
             focusIntervalCount = 180;
             focusInterval = null;
         });
-		
 		$(document).on('click', '.finish-btn', function (e) {
             $(".pause_quiz").modal('hide');
         });
-		
-
-		
 		if (jQuery('.quiz-pagination .swiper-container').length > 0) {
         const swiper = new Swiper('.quiz-pagination .swiper-container', {
             slidesPerView: ($(".quiz-pagination ul li").length > 15) ? 15 : $(".quiz-pagination ul li").length,
@@ -553,15 +536,6 @@ $practice_time = 0;
             }
         })
     }
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		var quiz_result_id = $(".question-area .question-step").attr('data-quiz_result_id');
 		var timeUpdateRequest = null;
 		timeUpdateRequestInterval = setInterval(function () {
@@ -612,18 +586,17 @@ $practice_time = 0;
 			$(".pause_quiz .modal-body .incorrect-questions").html(incorrect_questions);
             TimerActive = false;
         });
-		$("body").on("click", ".unpause-quiz", function (e) {
+       /*Comments*/
+       $("body").on("click", ".unpause-quiz", function (e) {
             TimerActive = true;
         });
-		
-		$("body").on("click", ".review-btn", function (e) {
+        /*Comments*/
+       $("body").on("click", ".review-btn", function (e) {
 			var attempted_questions = $('.quiz-pagination li.correct, .quiz-pagination li.incorrect').length;
 			$(".review_submit1 .modal-body p").html('You have attempted ' + attempted_questions + ' questions. are you sure you want to submit your test? you will not able to access this test again.');
             $(".pause_quiz").modal('hide');
         });
-		
-		
-		
+        /*Comments*/
 
         Quizintervals = setInterval(function () {
 			if( TimerActive == true){
@@ -674,7 +647,6 @@ $practice_time = 0;
             $('.learning-page').css('font-size', curSize);
         });
 		
-
 
     }
 
