@@ -10,7 +10,7 @@
                           <div class="sats-summary">
                               <div class="row">
                                   <div class="col-12 col-md-4 col-lg-3 bitcoin-box">
-                                      <div class="sats-summary-icon" style="background-color: #8cc811;">
+                                      <div class="sats-summary-icon p-30" style="background-color: #8cc811;">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" style="fill: #fff;">
                                               <g id="Group_1264" transform="translate(-188.102 -869.102)">
                                                   <g id="Group_1262">
@@ -38,7 +38,7 @@
                                       </div>
                                   </div>
                                   <div class="col-12 col-md-4 col-lg-3">
-                                      <div class="sats-summary-icon" style="background-color: #dc160b;">
+                                      <div class="sats-summary-icon p-30" style="background-color: #dc160b;">
                                           <img src="/assets/default/svgs/cross-white.svg" alt="" width="100px" height="100px">
                                       </div>
                                       <div class="summary-text">
@@ -48,7 +48,7 @@
                                   </div>
   
                                   <div class="col-12 col-md-4 col-lg-3">
-                                      <div class="sats-summary-icon" style="background-color: #e67035;">
+                                      <div class="sats-summary-icon p-30" style="background-color: #e67035;">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 24 24" fill="none" style="color:#fff">
                                               <path style="fill: #fff;" fill-rule="evenodd" clip-rule="evenodd"
                                                     d="M5.01112 11.5747L6.29288 10.2929C6.68341 9.90236 7.31657 9.90236 7.7071 10.2929C8.09762 10.6834 8.09762 11.3166 7.7071 11.7071L4.7071 14.7071C4.51956 14.8946 4.26521 15 3.99999 15C3.73477 15 3.48042 14.8946 3.29288 14.7071L0.292884 11.7071C-0.0976406 11.3166 -0.0976406 10.6834 0.292884 10.2929C0.683408 9.90236 1.31657 9.90236 1.7071 10.2929L3.0081 11.5939C3.22117 6.25933 7.61317 2 13 2C18.5229 2 23 6.47715 23 12C23 17.5228 18.5229 22 13 22C9.85817 22 7.05429 20.5499 5.22263 18.2864C4.87522 17.8571 4.94163 17.2274 5.37096 16.88C5.80028 16.5326 6.42996 16.599 6.77737 17.0283C8.24562 18.8427 10.4873 20 13 20C17.4183 20 21 16.4183 21 12C21 7.58172 17.4183 4 13 4C8.72441 4 5.23221 7.35412 5.01112 11.5747ZM13 5C13.5523 5 14 5.44772 14 6V11.5858L16.7071 14.2929C17.0976 14.6834 17.0976 15.3166 16.7071 15.7071C16.3166 16.0976 15.6834 16.0976 15.2929 15.7071L12.2929 12.7071C12.1054 12.5196 12 12.2652 12 12V6C12 5.44772 12.4477 5 13 5Z"
@@ -61,7 +61,7 @@
                                       </div>
                                   </div>
                                   <div class="col-12 col-md-4 col-lg-3">
-                                      <div class="sats-summary-icon" style="background-color: #0272b6;">
+                                      <div class="sats-summary-icon p-30" style="background-color: #0272b6;">
                                           <svg width="100px" height="100px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" version="1.1" id="Capa_1" width="800px" height="800px"
                                                viewBox="0 0 185.872 185.871" xml:space="preserve">
                                                                                       <g>
@@ -105,7 +105,7 @@
                                   </div>
                               </div>
                           </div>
-                          <div class="summary-btns ">
+                          <div class="summary-btns">
                               <a href="/panel/analytics/timestables/result/{{$QuizzesResult->id}}" class="summary-btn">Summary of Attempt</a>
                               <a href="javascript:;" class="re-attempt-btn" data-attempt_type="{{$QuizzesResult->attempt_mode}}">Re-attempt</a>
                               <a href="/panel" class="back-btn">Back</a>
