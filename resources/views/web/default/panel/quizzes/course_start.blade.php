@@ -6,7 +6,6 @@ $rand_id = rand(99,9999);
 
 @endphp
 
-
 <style>
     .ui-state-highlight {
         margin: 0px 10px;
