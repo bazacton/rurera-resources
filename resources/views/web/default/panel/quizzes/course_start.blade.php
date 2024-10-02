@@ -535,7 +535,7 @@ $practice_time = 0;
 			var correct_percentage = parseInt(correct_questions) * 100 / parseInt(total_percentage_questions);
 			var correct_percentage = ( correct_percentage > 0)? correct_percentage : 0;
 			var remaining_time = $('.quiz-timer-counter').attr('data-time_counter');
-			$(".pause-title").html('Need a Break?');
+			$(".pause-title").html('Are you sure?');
 			$(".pause-description").html('Practice tests do not let you go over time, though you can pause them and come back to them later.');
 			$(".pause_quiz .modal-body .total-questions").html(attempted_questions);
 			$(".pause_quiz .modal-body .correct-questions").html(correct_questions);
