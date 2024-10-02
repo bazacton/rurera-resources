@@ -951,7 +951,7 @@ span.Selectable:hover {text-decoration: underline;}
 .question-result-layout .lms-sorting-fields .field-holder,
 .question-result-layout .form-field label {border-color: #999;}
 .chart-summary-fields.result-layout-summary {padding: 0; text-align: center;}
-.chart-summary-fields.result-layout-summary .icon-box {height: 100px;}
+.chart-summary-fields.result-layout-summary span .icon-box {height: 100px;}
 .result-layout-summary .sats-summary {border-radius: 0;}
 .result-layout-summary .
  [class*="col-"] {padding: 15px;}
