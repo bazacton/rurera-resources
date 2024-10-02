@@ -951,8 +951,10 @@ span.Selectable:hover {text-decoration: underline;}
 .question-result-layout .lms-sorting-fields .field-holder,
 .question-result-layout .form-field label {border-color: #999;}
 .chart-summary-fields.result-layout-summary {padding: 0; text-align: center;}
+.chart-summary-fields.result-layout-summary .icon-box {height: 100px;}
 .result-layout-summary .sats-summary {border-radius: 0;}
-.result-layout-summary .sats-summary [class*="col-"] {padding: 15px;}
+.result-layout-summary .
+ [class*="col-"] {padding: 15px;}
 .question-result-layout .earn-coins-icon {position: absolute; right: 20px; top: 20px; text-align: center; border-radius: 100%;}
 .question-result-layout .earn-coins-icon img {width: 45px; height: 45px; object-fit: contain;}
 .question-result-layout .droppable-characters {padding-top: 15px;}
