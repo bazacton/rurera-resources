@@ -1102,7 +1102,7 @@ function init_question_functions() {
 		var total_questions = $(".question-area").attr('data-total_questions');
 		var finish_title = $(".questions-nav-controls").attr('data-finish_title');
 		var attempted_questions = $('.quiz-pagination li.correct, .quiz-pagination li.incorrect').length;
-		finish_title = ( rurera_is_valid_field(finish_title) == true)? finish_title : 'are you sure you want to submit your test? you will not able to access this test again.';
+		finish_title = ( rurera_is_valid_field(finish_title) == true)? finish_title : 'By proceeding, your quiz attempt will not be recorded, and no rewards (including coins) will be granted.';
 
         $(".review_submit .modal-body p").html('You have attempted ' + attempted_questions + ' questions. Are you sure you want to submit?');
 		$(".review_submit1 .modal-body p").html('You have attempted ' + attempted_questions + ' questions. '+finish_title);
