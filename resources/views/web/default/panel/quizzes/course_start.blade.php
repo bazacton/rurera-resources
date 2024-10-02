@@ -23,9 +23,10 @@ $rand_id = rand(99,9999);
 	.rurera-question-block.active{display:block;}
 
 </style>
+{{-- $duration_type manage the quiz-time --}}
 @php $quiz_type = isset( $quiz->quiz_type )? $quiz->quiz_type : '';
 $duration_type = isset( $duration_type )? $duration_type : 'no_time_limit';
-
+// $timer_counter sets the time for each queston
 $timer_counter = 0;
 if( $duration_type == 'per_question'){
 $timer_counter = $time_interval;
@@ -33,6 +34,7 @@ $timer_counter = $time_interval;
 if( $duration_type == 'total_practice'){
 $timer_counter = $practice_time;
 }
+// If $target_score is greater than 0, it retains its value; otherwise, it's set to 100
 $target_score = isset( $quiz->target_score)? $quiz->target_score : 0;
 $target_score = ($target_score > 0)? $target_score : 100;
 $practice_time = 0;
