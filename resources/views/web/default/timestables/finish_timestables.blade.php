@@ -9,7 +9,7 @@
                         </h3>
                         <div class="sats-summary">
                             <div class="row">
-                                <div class="col-12 col-md-4 col-lg-3 bitcoin-box">
+                                <div class="col-12 col-md-4 col-lg-3">
                                     <div class="sats-summary-icon" style="background-color: #8cc811;">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #fff;">
                                             <g id="Group_1264" transform="translate(-188.102 -869.102)">
@@ -46,7 +46,6 @@
                                         <div class="score incorrect-questions">{{(countSubItemsOnly((array) $results) -$QuizzesResult->total_correct)}}</div>
                                     </div>
                                 </div>
-
                                 <div class="col-12 col-md-4 col-lg-3">
                                     <div class="sats-summary-icon" style="background-color: #e67035;">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none" style="color:#fff">
