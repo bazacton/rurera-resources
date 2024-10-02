@@ -308,7 +308,7 @@ $practice_time = 0;
 				</span>
 				<h3 class="font-24 font-weight-normal mb-10">Are you sure?</h3>
 				<p class="mb-15 font-16">
-					You've been gone a while, we have paused you, you still can continue learning by using following&nbsp;links.
+					By proceeding, your quiz attempt will not be recorded, and no rewards (including coins) will be granted. Are you sure you want to continue?
 				</p>
                 <ul class="activity-info">
 					<li>Total Answered: <strong class="total-questions">10</strong></li>
