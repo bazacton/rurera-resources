@@ -236,8 +236,7 @@ $practice_time = 0;
                    {{--Button to navigate to the next question--}}
                                 <div class="prev-next-controls text-center mb-50 questions-nav-controls">
                                     <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
-                                        Finish
-                                        <img src="/public/assets/default/svgs/finish.svg" width="20px" alt="finish-flag">
+                                        Finish <img src="/public/assets/default/svgs/finish.svg" width="20px" alt="finish-flag">
                                     </a>
                                     <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
                                         Next

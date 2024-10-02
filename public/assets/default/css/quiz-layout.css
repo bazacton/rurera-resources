@@ -810,7 +810,7 @@ body .lms-quiz-section .flipbook-quiz {width: 800px;}
 .lms-quiz-section .question-area {position: relative;}
 .prev-next-controls {display: flex; align-items: center; justify-content: center; margin-top: 20px; position: relative; padding-left: 100px;}
 .prev-next-controls a {margin: 0 7px 0 0;}
-.prev-next-controls .review-btn {position: absolute; left: 0;}
+.prev-next-controls .review-btn {position: absolute; left: 0; gap: 10px;}
 .question-layout-block .prev-next-controls {position: fixed; width: 848px; bottom: -50px; background-color: #fff; padding-bottom: 30px; padding-top: 30px; min-height: 100px;}
 .question-layout-block .rurera-question-block {padding-bottom: 80px;}
 .review-btn,
