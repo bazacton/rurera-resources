@@ -988,7 +988,7 @@ span.Selectable:hover {text-decoration: underline;}
 .activity-actions .continue-btn {color: #fff;}
 .activity-actions .finish-btn,
 .inactivity-controls .review-btn {background-color: var(--primary); color: #fff !important;}
-.inactivity-controls .exit-btn {color: var(--primary);}
+.inactivity-controls .exit-btn {color: var(--primary); display: none;}
 .inactivity-controls .continue-btn {background-color: #58d150; color: #fff; margin-right: 0;}
 .learning-page .quiz-activity-pause .close {right: 5px; top: 0;}
 .review_submit1 .modal-dialog,
