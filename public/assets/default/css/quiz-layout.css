@@ -954,7 +954,7 @@ span.Selectable:hover {text-decoration: underline;}
 .icon-box {height: 100px;}
 .result-layout-summary .sats-summary {border-radius: 0;}
 .sats-summary-icon {padding: 30pxco;}
-
+.summary-btns{ display: flex; justify-content: center; align-items: center; gap: 5rem; margin-top: 5rem;}
 .result-layout-summary .
  [class*="col-"] {padding: 15px;}
 .question-result-layout .earn-coins-icon {position: absolute; right: 20px; top: 20px; text-align: center; border-radius: 100%;}

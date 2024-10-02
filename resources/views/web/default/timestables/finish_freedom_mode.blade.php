@@ -105,7 +105,7 @@
                                   </div>
                               </div>
                           </div>
-                          <div class="summary-btns d-flex justify-content-center g-5 align-items-center mt-5">
+                          <div class="summary-btns ">
                               <a href="/panel/analytics/timestables/result/{{$QuizzesResult->id}}" class="summary-btn">Summary of Attempt</a>
                               <a href="javascript:;" class="re-attempt-btn" data-attempt_type="{{$QuizzesResult->attempt_mode}}">Re-attempt</a>
                               <a href="/panel" class="back-btn">Back</a>
