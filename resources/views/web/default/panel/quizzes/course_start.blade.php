@@ -306,7 +306,7 @@ $practice_time = 0;
 				<span class="icon-box d-block mb-15">
 					<img src="../assets/default/img/clock-modal-img.png" alt="">
 				</span>
-				<h3 class="font-24 font-weight-normal mb-10">Are you sure?</h3>
+				<h3 class="font-24 font-weight-normal mb-10">Are you?</h3>
 				<p class="mb-15 font-16">
 					You've  been gone a while, we have paused you, you still can continue learning by using following&nbsp;links.
 				</p>
