@@ -951,9 +951,9 @@ span.Selectable:hover {text-decoration: underline;}
 .question-result-layout .lms-sorting-fields .field-holder,
 .question-result-layout .form-field label {border-color: #999;}
 .chart-summary-fields.result-layout-summary {padding: 0; text-align: center;}
-.chart-summary-fields.result-layout-summary span img.icon-box {height: 100px;}
+.chart-summary-fields.result-layout-summary span.icon-box img{height: 100px;}
 .result-layout-summary .sats-summary {border-radius: 0;}
-.sats-summary-icon {padding: 30pxco;}
+.sats-summary-icon {padding: 30px;}
 .summary-btns{ display: flex; justify-content: center; align-items: center; gap: 5rem; margin-top: 5rem;}
 .result-layout-summary .
  [class*="col-"] {padding: 15px;}
