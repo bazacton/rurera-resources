@@ -1,4 +1,12 @@
 /* Questions Builder style start */
+
+/* Questions Builder Column Style Start */
+.rureraform-row.rureraform-element [class*="rureraform-col-"] {float: none; display: inline-block; margin-right: -4px; vertical-align: middle;}
+.rureraform-form-editor .table {margin: 0;}
+.rureraform-form-editor .table tr td {padding-top: 10px !important; padding-bottom: 10px !important;}
+.rureraform-form-editor .table tr td p {text-align: center;}
+/* Questions Builder Column Style End */
+
 .rureraform-form-editor .rureraform-form {max-width: 740px;}
 .rureraform-builder {background-color: #fff;padding: 20px 20px 60px 20px;border-bottom: 1px solid #d4d4d4;border-left: 1px solid #d4d4d4;border-right: 1px solid #d4d4d4;min-height: -webkit-fill-available;border-radius: 3px;padding-top: 118px !important;}
 .rureraform-form-editor {position: relative; margin-left: 0;}
@@ -41,13 +49,7 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 .rureraform-toolbar-list>li[data-title]:before {content: ""; top: 100%; left: 10px; position: absolute; height: 10px; width: 10px; background-color: #000; transform: rotate(45deg); margin-top: -4px; opacity: 0; visibility: hidden;}
 .rureraform-toolbar-list>li[data-title]:hover:after,
 .rureraform-toolbar-list>li[data-title]:hover:before {opacity: 1; visibility: visible;}
-/* Editor Column Style Start */
-.rureraform-row.rureraform-element [class*="rureraform-col-"] {float: none; display: inline-block; margin-right: -4px; vertical-align: middle;}
-.rureraform-form-editor .table {margin: 0;}
-.rureraform-form-editor .table tr td {padding-top: 10px !important; padding-bottom: 10px !important;}
-.rureraform-form-editor .table tr td p {text-align: center;}
 
-/* Editor Column Style End */
 
 /* Questions Templates Style Start */
 .rureraform-admin-editor * {box-sizing: border-box;}
