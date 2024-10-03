@@ -954,10 +954,11 @@ span.Selectable:hover {text-decoration: underline;}
 .chart-summary-fields.result-layout-summary span.icon-box img{height: 100px;}
 .result-layout-summary .sats-summary {border-radius: 0;}
 .sats-summary-icon {padding: 30px;}
+.summary-text .score-label {font-weight: bold; margin-top: 20px;}
 .summary-btns{ display: flex; justify-content: center; align-items: center; gap: 5rem; margin-top: 5rem;}
-.summary-btns .summary-btn {background-color: #8cc811; padding: 10px; border-radius: 6px; color: white;}
-.summary-btns .re-attempt-btn{background-color: #0272b6; padding: 10px; border-radius: 6px; color: white;}
-.summary-btns .back-btn { background-color: #dc160b; padding: 10px; border-radius: 6px; color: white;}
+.summary-btns .summary-btn {background-color: #596bfd; padding: 10px; border-radius: 6px; color: white;}
+.summary-btns .re-attempt-btn{background-color: #596bfd; padding: 10px; border-radius: 6px; color: white;}
+.summary-btns .back-btn { background-color: #596bfd; padding: 10px; border-radius: 6px; color: white;}
 .result-layout-summary .
  [class*="col-"] {padding: 15px;}
 .question-result-layout .earn-coins-icon {position: absolute; right: 20px; top: 20px; text-align: center; border-radius: 100%;}

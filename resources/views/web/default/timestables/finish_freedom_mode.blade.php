@@ -33,7 +33,7 @@
                                           </svg>
                                       </div>
                                       <div class="summary-text">
-                                          <label>Questions Answered</label>
+                                          <label class="score-label">Questions Answered</label>
                                           <div class="score">{{$QuizzesResult->total_attempted}}</div>
                                       </div>
                                   </div>
@@ -42,7 +42,7 @@
                                           <img src="/assets/default/svgs/cross-white.svg" alt="" width="100px" height="100px">
                                       </div>
                                       <div class="summary-text">
-                                          <label>Questions Incorrect</label>
+                                          <label class="score-label">Questions Incorrect</label>
                                           <div class="score incorrect-questions">{{$QuizzesResult->total_incorrect}}</div>
                                       </div>
                                   </div>
@@ -56,7 +56,7 @@
                                           </svg>
                                       </div>
                                       <div class="summary-text">
-                                          <label>Time Spent</label>
+                                          <label class="score-label">Time Spent</label>
                                           <div class="score summary-time-spend">{{getTimeWithText($QuizzesResult->total_time_consumed)}}</div>
                                       </div>
                                   </div>
@@ -99,7 +99,7 @@
                                                                                   </svg>
                                       </div>
                                       <div class="summary-text">
-                                          <label>Coin earned</label>
+                                          <label class="score-label">Coin earned</label>
                                           <div class="score summary-coins-earned">{{$QuizzesResult->total_coins_earned}}</div>
                                       </div>
                                   </div>
