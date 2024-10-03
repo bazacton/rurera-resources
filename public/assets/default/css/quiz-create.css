@@ -12,6 +12,7 @@ html.rureraform-toolbars-fixed .rureraform-toolbars {position: sticky;z-index: 1
 html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 32px;}
 html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: -32px;}
 html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margin-top: 0;}
+.rureraform-form-editor .form-box {width: 100%;}
 @media screen and (max-width: 782px) {
 	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 46px;}
 	html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: -46px;	}
@@ -40,14 +41,48 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 .rureraform-toolbar-list>li[data-title]:before {content: ""; top: 100%; left: 10px; position: absolute; height: 10px; width: 10px; background-color: #000; transform: rotate(45deg); margin-top: -4px; opacity: 0; visibility: hidden;}
 .rureraform-toolbar-list>li[data-title]:hover:after,
 .rureraform-toolbar-list>li[data-title]:hover:before {opacity: 1; visibility: visible;}
-
+/* Editor Column Style Start */
+.rureraform-row.rureraform-element [class*="rureraform-col-"] {float: none; display: inline-block; margin-right: -4px; vertical-align: middle;}
 .rureraform-form-editor .table {margin: 0;}
 .rureraform-form-editor .table tr td {padding-top: 10px !important; padding-bottom: 10px !important;}
 .rureraform-form-editor .table tr td p {text-align: center;}
 .rureraform-form-editor .input-group-prepend ~ input[type="text"] {margin-bottom: 0; border: 1px solid #ccc; height: 42px; padding: 0 10px;}
 .rureraform-form-editor .input-group-append .input-group-text,
 .rureraform-form-editor .input-group-prepend .input-group-text{border-color: #ccc;} 
-.rureraform-row.rureraform-element [class*="rureraform-col-"] {float: none; display: inline-block; margin-right: -4px; vertical-align: middle;}
+/* Editor Column Style End */
+
+/* Questions Templates Style Start */
+.rureraform-admin-editor * {box-sizing: border-box;}
+.rureraform-form {position: relative;max-width: 960px;width: 96%;margin: 0px auto;display: none;}
+.rureraform-elements {min-height: 60px;}
+.rureraform-element {width: 100%;outline: 1px dashed #f3f1f1 !important;height: auto !important;margin-top: 10px;margin-bottom: 10px;padding: 10px;display: block !important;visibility: visible !important;opacity: 1 !important;}
+.rureraform-element:hover {outline: 2px solid #26B99A !important;}
+.rureraform-element::before {display: table;content: ' ';}
+.rureraform-element::after {clear: both;display: table;	content: ' ';}
+.rureraform-element-cover {position: absolute;top: 0;bottom: 0;left: 0;right: 0;width: 100%;height: 100%;transition-duration: .3s;-webkit-transition-duration: .3s;display: none;}
+div.rureraform-element-checkbox-container div.rureraform-element-cover {display: none !important;}
+.rureraform-element-placeholder {background: transparent;border-radius: 3px;border: 1px dashed #26B99A;background-color: #26B99A;	opacity: 0.2;height: 40px;}
+.rureraform-element-helper {height: 40px !important;width: 160px !important;overflow: hidden !important;}
+.rureraform-element-helper.ui-sortable-helper {width: 100% !important; height: auto !important; outline: 1px dashed #f3f1f1 !important;}
+.ui-sortable .rureraform-element-placeholder {background-color: transparent; border-color: transparent;}
+.rureraform-element-helper .rureraform-element-cover {display: block;background: white;}
+.rureraform-col {padding: 10px 10px !important;float: left;	outline: 1px dashed #ccc;}
+.rureraform-col .rureraform-element:first-of-type {	margin-top: 0;}
+.rureraform-col .rureraform-element:last-of-type {margin-bottom: 0;}
+.rureraform-col-1 {width: 8.33333333%;}
+.rureraform-col-2 {width: 16.66666666%;}
+.rureraform-col-3 {width: 25%;}
+.rureraform-col-4 {width: 33.33333333%;}
+.rureraform-col-5 {width: 41.66666666%;}
+.rureraform-col-6 {width: 50%;}
+.rureraform-col-7 {width: 58.33333333%;}
+.rureraform-col-8 {width: 66.66666666%;}
+.rureraform-col-9 {width: 75%;}
+.rureraform-col-10 {width: 83.33333333%;}
+.rureraform-col-11 {width: 91.66666666%;}
+.rureraform-col-12 {width: 100%;}
+/* Questions Templates style End */
+
 /* form-editor style end */
 
 /* rurera form admin Buttons style start */
@@ -171,6 +206,8 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 .lms-quiz-create .rureraform-red {color: #c00000;}
 .lms-quiz-create .rureraform-number {width: 100px !important; text-align: right;}
 .lms-quiz-create .rureraform-number input[type="text"]{text-align: right;}
+
+
 /* Dialog Popup - begin */
 .lms-quiz-create .rureraform-dialog-overlay {position: fixed !important; z-index: 99988; top: 0px; left: 0px; height: 100%;	width: 100%; background-position: center center; background: rgba(0,0,0,0.8); display: none;}
 .lms-quiz-create .rureraform-dialog {position: fixed !important; box-sizing: border-box; z-index: 99989; top: -3000px; left: 50%; width: 90%; height: 600px; background: #ffffff; transform:translate(-50%, -50%) scale(0); -webkit-transform:translate(-50%, -50%) scale(0); box-shadow: 3px 3px 20px -5px #000000; overflow: hidden; transition-property: transform; transition-timing-function: ease-in-out; transition-duration: 300ms;}
@@ -829,7 +866,7 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 .rureraform-admin>h2, .rureraform-admin>h1 {font-size: 23px;font-weight: 400;margin: 0;	padding: 9px 0 4px;	line-height: 29px;margin-bottom: 20px !important;}
 #uap-body .rureraform-admin>h2, #uap-body .rureraform-admin>h1 {padding: 0;}
 #uap-body .wp-picker-container+em {display: block;}
-.rureraform-admin-editor * {box-sizing: border-box;}
+
 .rureraform-header {background: #444;height: 56px;	line-height: 56px;}
 .rureraform-header:empty {   display: none;}
 .rureraform-header-settings,
@@ -898,34 +935,7 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 .rureraform-pages-bar-items>li span a:hover i.fa-trash, .rureraform-pages-bar-items>li span a:active i.fa-trash {color: #E04000;}
 .rureraform-pages-bar-items>li span a i.fa-trash{font-size: 16px;}
 .rureraform-pages-bar-item-delete-disabled i {color: #ccc !important;cursor: default !important;}
-.rureraform-form {position: relative;max-width: 960px;width: 96%;margin: 0px auto;display: none;}
-.rureraform-elements {min-height: 60px;}
-.rureraform-element {width: 100%;outline: 1px dashed #f3f1f1 !important;height: auto !important;margin-top: 10px;margin-bottom: 10px;padding: 10px;display: block !important;visibility: visible !important;opacity: 1 !important;}
-.rureraform-element:hover {outline: 2px solid #26B99A !important;}
-.rureraform-element::before {display: table;content: ' ';}
-.rureraform-element::after {clear: both;display: table;	content: ' ';}
-.rureraform-element-cover {position: absolute;top: 0;bottom: 0;left: 0;right: 0;width: 100%;height: 100%;transition-duration: .3s;-webkit-transition-duration: .3s;display: none;}
-div.rureraform-element-checkbox-container div.rureraform-element-cover {display: none !important;}
-.rureraform-element-placeholder {background: transparent;border-radius: 3px;border: 1px dashed #26B99A;background-color: #26B99A;	opacity: 0.2;height: 40px;}
-.rureraform-element-helper {height: 40px !important;width: 160px !important;overflow: hidden !important;}
-.rureraform-element-helper.ui-sortable-helper {width: 100% !important; height: auto !important; outline: 1px dashed #f3f1f1 !important;}
-.ui-sortable .rureraform-element-placeholder {background-color: transparent; border-color: transparent;}
-.rureraform-element-helper .rureraform-element-cover {display: block;background: white;}
-.rureraform-col {padding: 10px 10px !important;float: left;	outline: 1px dashed #ccc;}
-.rureraform-col .rureraform-element:first-of-type {	margin-top: 0;}
-.rureraform-col .rureraform-element:last-of-type {margin-bottom: 0;}
-.rureraform-col-1 {width: 8.33333333%;}
-.rureraform-col-2 {width: 16.66666666%;}
-.rureraform-col-3 {width: 25%;}
-.rureraform-col-4 {width: 33.33333333%;}
-.rureraform-col-5 {width: 41.66666666%;}
-.rureraform-col-6 {width: 50%;}
-.rureraform-col-7 {width: 58.33333333%;}
-.rureraform-col-8 {width: 66.66666666%;}
-.rureraform-col-9 {width: 75%;}
-.rureraform-col-10 {width: 83.33333333%;}
-.rureraform-col-11 {width: 91.66666666%;}
-.rureraform-col-12 {width: 100%;}
+
 #rureraform-global-message {position: fixed; top: 50px;	right: 10px;display: none;z-index: 9999999;	padding: 1em 1.5em;	border-radius: 3px;	font-size: 15px;line-height: 1.4;vertical-align: middle;font-weight: 400;box-shadow: 2px 2px 10px -6px #000000;}
 #uap-body #rureraform-global-message {top: 16px !important;}
 .rureraform-global-message-info {color: #fff;background: #5bc0de;}

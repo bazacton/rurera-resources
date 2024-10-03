@@ -151,7 +151,6 @@ Lms Form Fields Style
 .lms-content-holder form {margin: 0; display: flex; align-items: center; width: 520px;}
 .lms-content-holder form.question-fields {width: 100%; display: inline-flex; background-color: #fff; height: 100%; padding: 0 0 30px; min-height: 680px; align-items: flex-start;}
 .form-box { width: calc(100% - 120px); position: relative;}
-.rureraform-form-editor .form-box {width: 100%;}
 .form-field input[type="checkbox"] {position: absolute; left: 0; top: 0; opacity: 0;}
 .form-field label {background-color: #fff; border: 2px solid #ddd; border-bottom-width: 4px; border-radius: 8px; position: relative; cursor: pointer; padding: 15px; width: 100%; margin-bottom: 0; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; line-height: normal;}
 .lms-checkbox-img .form-field label {height: 100%;}
