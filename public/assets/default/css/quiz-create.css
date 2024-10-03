@@ -74,9 +74,6 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 .rureraform-col-11 {width: 91.66666666%;}
 .rureraform-col-12 {width: 100%;}
 .rureraform-row.rureraform-element [class*="rureraform-col-"] {float: none; display: inline-block; margin-right: -4px; vertical-align: middle;}
-.rureraform-form-editor .table {margin: 0;}
-.rureraform-form-editor .table tr td {padding-top: 10px !important; padding-bottom: 10px !important;}
-.rureraform-form-editor .table tr td p {text-align: center;}
 /* Columns Selection Style End */
 
 /* Questions Builder Label Style Start */
