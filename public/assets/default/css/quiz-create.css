@@ -53,6 +53,11 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 .rureraform-form-editor .table tr td p {text-align: center;}
 /* Columns Style End */
 
+/* Attachment icons style start */
+.lms-quiz-create .fa, .far, .fas {font-family: "Font Awesome 5 Free" !important;}
+.lms-quiz-create .fa, .fas {font-weight: 900 !important;}
+/* Attachment icons style end */
+
 
 
 /* Questions Templates Style Start */
