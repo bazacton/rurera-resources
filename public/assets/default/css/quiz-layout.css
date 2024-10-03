@@ -554,7 +554,7 @@ Lms Quiz Wf Style Start
     .input-holder:has(.divide-numbers) {border: 0 !important;}
 }
 .lms-quiz-section .rureraform-col-4 .input-holder {width: 90% !important;}
-.input-holder textarea {padding: 10px; border: 0; border-radius: 8px; color: #000; outline: none; width: 100%;}
+/* .input-holder textarea {padding: 10px; border: 0; border-radius: 8px; color: #000; outline: none; width: 100%;} */
 .input-holder textarea::-webkit-input-placeholder {color: #000; }
 .input-holder textarea:-moz-placeholder {color: #000;}
 .input-holder textarea::-moz-placeholder {color: #000;}
@@ -677,7 +677,7 @@ input[type=number] {-moz-appearance:textfield;}
 .fieldsLinker li.selected {-webkit-filter: invert(100%); filter: invert(100%);}
 .fieldsLinker li[data-mandatory='true'] {background-color: #D7504C; background: linear-gradient(#D7504C, #C12F2B); color: white;}
 .fieldsLinker li.inactive {opacity: 0.5;}
-.fieldsLinker li.linkOver {border: solid 2px transparent; /*plus 1px*/ padding: 4px 1px 4px 7px; /* minus 1px*/}
+.fieldsLinker li.linkOver {border: solid 2px transparent; padding: 4px 1px 4px 7px;}
 .fieldsLinker li:after {content: ""; height: 16px; width: 16px; position: absolute; right: -11px; top: 50%; border: 1px solid #000; border-radius: 100%; margin-top: -8px; background-color: #fff; pointer-events: none;}
 .fieldsLinker li:before {content: ""; height: 10px; width: 10px; position: absolute; right: -8px; top: 50%; border: 1px solid #000; border-radius: 100%; margin-top: -5px; z-index: 1; pointer-events: none; background-color: #000;}
 .fieldsLinker .FL-right li:before {left: -8px; right: auto;}
