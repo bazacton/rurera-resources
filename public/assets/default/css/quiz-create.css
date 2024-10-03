@@ -1,4 +1,4 @@
-/* form-editor style start */
+/* Questions Builder style start */
 .rureraform-form-editor .rureraform-form {max-width: 740px;}
 .rureraform-builder {background-color: #fff;padding: 20px 20px 60px 20px;border-bottom: 1px solid #d4d4d4;border-left: 1px solid #d4d4d4;border-right: 1px solid #d4d4d4;min-height: -webkit-fill-available;border-radius: 3px;padding-top: 118px !important;}
 .rureraform-form-editor {position: relative; margin-left: 0;}
@@ -91,7 +91,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .rureraform-form-editor .input-group-prepend .input-group-text{border-color: #ccc;} 
 /* Attachment Style End */
 
-/* form-editor style end */
+/* Questions Builder Style end */
 
 /* rurera form admin Buttons style start */
 .rureraform-admin-button-container {
