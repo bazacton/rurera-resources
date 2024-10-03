@@ -959,8 +959,7 @@ span.Selectable:hover {text-decoration: underline;}
 .summary-btns .summary-btn {background-color: #596bfd; padding: 10px; border-radius: 6px; color: white;}
 .summary-btns .re-attempt-btn{background-color: #596bfd; padding: 10px; border-radius: 6px; color: white;}
 .summary-btns .back-btn { background-color: #596bfd; padding: 10px; border-radius: 6px; color: white;}
-.result-layout-summary .
- [class*="col-"] {padding: 15px;}
+.result-layout-summary [class*="col-"] {padding: 15px;}
 .question-result-layout .earn-coins-icon {position: absolute; right: 20px; top: 20px; text-align: center; border-radius: 100%;}
 .question-result-layout .earn-coins-icon img {width: 45px; height: 45px; object-fit: contain;}
 .question-result-layout .droppable-characters {padding-top: 15px;}
