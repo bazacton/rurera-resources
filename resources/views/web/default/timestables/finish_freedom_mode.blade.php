@@ -4,7 +4,7 @@
                           <h3 class="text-center font-30 mb-50">
                               Congratulation
                               <span class="icon-box">
-                                  <img src="/assets/default/svgs/event-gift.svg" >
+                                  <img src="/assets/default/svgs/event-gift.svg">
                               </span>
                           </h3>
                           <div class="sats-summary">
