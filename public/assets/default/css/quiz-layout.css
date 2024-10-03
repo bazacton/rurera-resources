@@ -505,11 +505,11 @@ Lms Quiz Wf Style Start
 .graph-holder {text-align: center;}
 .lms-quiz-section .img-holder img {border-radius: 0; width: auto;}
 .solve-quiz.question-textarea {line-height: normal;}
-.question-label {position: relative; padding-bottom: 10px;}
+/* .question-label {position: relative; padding-bottom: 10px;}
 .question-label span,
 .lms-quiz-section .question-label span {margin: 0;padding: 0;border-radius: 6px;line-height: normal;text-align: left;border: 0;display: inline-block;vertical-align: middle;width: 100%;position: relative; overflow: hidden; border-left: 0; color: #5e5c5c;font-weight: 700;font-size: 25px;}
 .spells-quiz-from .question-label {margin-bottom: 20px;padding: 0 15px 10px;}
-.spells-quiz-from .question-label span {text-align: center; line-height: 31px;}
+.spells-quiz-from .question-label span {text-align: center; line-height: 31px;} */
 .divide-numbers .divider, .lms-quiz-section .divider {height: 2px; background-color: #000; display: block; line-height: normal; margin: 2px 0; border: 0;}
 .quiz-group.text-center {margin: 0; display: flex; align-items: center; justify-content: center; position: relative;}
 .lms-quiz-section .quiz-group.mt-50 {margin-bottom: 0;}

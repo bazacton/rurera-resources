@@ -79,6 +79,14 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 .rureraform-form-editor .table tr td p {text-align: center;}
 /* Columns Selection Style End */
 
+/* Questions Builder Label Style Start */
+.question-label {position: relative; padding-bottom: 10px;}
+.question-label span,
+.lms-quiz-section .question-label span {margin: 0;padding: 0;border-radius: 6px;line-height: normal;text-align: left;border: 0;display: inline-block;vertical-align: middle;width: 100%;position: relative; overflow: hidden; border-left: 0; color: #5e5c5c;font-weight: 700;font-size: 25px;}
+.spells-quiz-from .question-label {margin-bottom: 20px;padding: 0 15px 10px;}
+.spells-quiz-from .question-label span {text-align: center; line-height: 31px;}
+/* Questions Builder Label Style End */
+
 /***************************** 
 Questions Builder style End 
 ******************************/
