@@ -352,7 +352,6 @@ Lms Question List Style
 .input-holder input[type="text"],
 .input-holder input.input-simple {border: 0; background-color: #fcfcfc;}
 .question-result-layout .input-holder .input-simple {width: 100%; }
-.rureraform-row.rureraform-element [class*="rureraform-col-"] {float: none; display: inline-block; margin-right: -4px; vertical-align: middle;}
 .input-holder.input_line,
 .lms-quiz-section .input-holder.input_line {border: 0; vertical-align: middle;}
 .input-holder input.input_line,
