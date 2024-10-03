@@ -17,13 +17,15 @@
             <div class="col-12">
                 <div class="section-title mb-30 text-center"><h2>Select Arithmetic Operations </h2></div>
             </div>
-            <div class="col-12">
-                <div class="mb-20"><h4>Arithmetic Operations</h4></div>
-            </div>
+          
             <div class="col-12 col-lg-12 mx-auto">
+               
                 <form action="/timestables-practice/freedom-mode/play" method="post">
                     {{ csrf_field() }}
                     <div class="questions-select-option">
+                        <div class="col-12">
+                            <div class="mb-20"><h4>Arithmetic Operations</h4></div>
+                        </div>
                         <ul class="mb-20 d-flex align-items-center">
                             <li>
                                 <input  type="radio" value="multiplication_division" id="multi-divi" name="question_type" />
