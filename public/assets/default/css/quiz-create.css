@@ -1,101 +1,9 @@
-/* Questions Builder style start */
 
-/* Column Style Start */
-.rureraform-row.rureraform-element [class*="rureraform-col-"] {float: none; display: inline-block; margin-right: -4px; vertical-align: middle;}
-.rureraform-form-editor .table {margin: 0;}
-.rureraform-form-editor .table tr td {padding-top: 10px !important; padding-bottom: 10px !important;}
-.rureraform-form-editor .table tr td p {text-align: center;}
-/* Column Style End */
+/***************************** 
+Questions Builder style start 
+******************************/
 
-.rureraform-form-editor .rureraform-form {max-width: 740px;}
-.rureraform-builder {background-color: #fff;padding: 20px 20px 60px 20px;border-bottom: 1px solid #d4d4d4;border-left: 1px solid #d4d4d4;border-right: 1px solid #d4d4d4;min-height: -webkit-fill-available;border-radius: 3px;padding-top: 118px !important;}
-.rureraform-form-editor {position: relative; margin-left: 0;}
-.rureraform-form-editor input[type=checkbox] {margin-right: 5px;}
-.rureraform-form-editor input[type="text"] {margin-bottom: 5px;}
-.rureraform-admin-editor .input-holder:not(input.input_line) input.editor-field {height: 32px; margin-bottom: 0;}
-.rureraform-form-editor p {margin-bottom: 0;}
-.rureraform-builder .rureraform-element-html h2 {font-weight: 700; font-size: 2rem; margin: 0;}
-.rureraform-toolbars {position: absolute;top: 0; left: 0;right: 0;width: 100% !important;} 
-html.rureraform-toolbars-fixed .rureraform-toolbars {position: sticky;z-index: 1000;}
-html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 32px;}
-html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: -32px;}
-html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margin-top: 0;}
-.rureraform-form-editor .form-box {width: 100%;}
-@media screen and (max-width: 782px) {
-	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 46px;}
-	html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: -46px;	}
-	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margin-top: 0;}
-}
-@media screen and (max-width: 600px) {
-	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 0px;}
-	html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: 0px;}
-}
-.rureraform-toolbar {background: #fff;	border-bottom: 1px solid #d4d4d4;border-left: 1px solid #d4d4d4;border-right: 1px solid #d4d4d4;}
-.rureraform-toolbar-list {white-space: nowrap;height: auto;margin: 0;	padding: 0;	list-style-type: none;}
-.rureraform-toolbar-list::after {display: table;content: ' ';clear: both;}
-.rureraform-toolbar-list>li {position: relative; height: 38px; width: 31px; line-height: 38px; margin: 0; padding: 0; float: left;}
-.rureraform-toolbar-list>li>a {text-align: center; height: 38px; width: 31px; line-height: 38px; cursor: pointer; font-size: 15px; letter-spacing: normal; background-color: transparent; color: #2f353b; margin: 0; padding: 0; text-decoration: none; box-shadow: none; outline: none; border: none; transition-duration: .3s; -webkit-transition-duration: .3s; display: inline-flex; justify-content: center; align-items: center;}
-.rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .ion, .rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fas, 
-.rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .far, .rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fal, 
-.rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {margin-left: 0;}
-.rureraform-toolbar-list>li>a:hover {color: #169F85;background: #f8f8f8;}
-.rureraform-toolbar-list>li>ul {position: absolute;z-index: 99;top: 38px;left: 0px;display: none;background: #fff;border: 1px solid #ccc;	box-sizing: border-box;	width: 120px;box-shadow: 2px 2px 10px -5px rgba(0,0,0,0.9);white-space: nowrap;overflow: hidden;height: auto;margin: 0;padding: 0;}
-.rureraform-toolbar-list>li:hover>ul {display: block;}
-.rureraform-toolbar-list>li>ul>li {text-align: left;position: relative;	height: 32px;display: block;line-height: 32px;margin: 0;padding: 0;}
-.rureraform-toolbar-list>li>ul>li>a {text-align: left;height: 32px;	display: block;	line-height: 32px;letter-spacing: normal;background-color: transparent;font-family: arial;color: #2f353b;font-size: 13px;margin: 0;padding: 0 10px;text-decoration: none !important;box-shadow: none !important;outline: none !important;border: none !important;transition-duration: .3s;-webkit-transition-duration: .3s;}
-.rureraform-toolbar-list>li>ul>li>a:hover {color: #169F85;	background: #f8f8f8;}
-.rureraform-toolbar-tooltip {font-size: 14px !important;z-index: 99999 !important;}
-.rureraform-toolbar-list>li[data-title]:after {content: attr(data-title); position: absolute; top: 100%; left: 0; background-color: #000; color: #fff; font-size:12px; line-height: normal; padding: 10px 8px; border-radius: 5px; opacity: 0; visibility: hidden;}
-.rureraform-toolbar-list>li[data-title]:before {content: ""; top: 100%; left: 10px; position: absolute; height: 10px; width: 10px; background-color: #000; transform: rotate(45deg); margin-top: -4px; opacity: 0; visibility: hidden;}
-.rureraform-toolbar-list>li[data-title]:hover:after,
-.rureraform-toolbar-list>li[data-title]:hover:before {opacity: 1; visibility: visible;}
-
-
-/* Questions Templates Style Start */
-.rureraform-admin-editor * {box-sizing: border-box;}
-.rureraform-form {position: relative;max-width: 960px;width: 96%;margin: 0px auto;display: none;}
-.rureraform-elements {min-height: 60px;}
-.rureraform-element {width: 100%;outline: 1px dashed #f3f1f1 !important;height: auto !important;margin-top: 10px;margin-bottom: 10px;padding: 10px;display: block !important;visibility: visible !important;opacity: 1 !important;}
-.rureraform-element:hover {outline: 2px solid #26B99A !important;}
-.rureraform-element::before {display: table;content: ' ';}
-.rureraform-element::after {clear: both;display: table;	content: ' ';}
-.rureraform-element-placeholder {background: transparent;border-radius: 3px;border: 1px dashed #26B99A;background-color: #26B99A;	opacity: 0.2;height: 40px;}
-.rureraform-element-helper {height: 40px !important;width: 160px !important;overflow: hidden !important;}
-.rureraform-element-helper.ui-sortable-helper {width: 100% !important; height: auto !important; outline: 1px dashed #f3f1f1 !important;}
-.ui-sortable .rureraform-element-placeholder {background-color: transparent; border-color: transparent;}
-.rureraform-element-helper .rureraform-element-cover {display: block;background: white;}
-.rureraform-col {padding: 10px 10px !important;float: left;	outline: 1px dashed #ccc;}
-.rureraform-col .rureraform-element:first-of-type {	margin-top: 0;}
-.rureraform-col .rureraform-element:last-of-type {margin-bottom: 0;}
-.rureraform-col-1 {width: 8.33333333%;}
-.rureraform-col-2 {width: 16.66666666%;}
-.rureraform-col-3 {width: 25%;}
-.rureraform-col-4 {width: 33.33333333%;}
-.rureraform-col-5 {width: 41.66666666%;}
-.rureraform-col-6 {width: 50%;}
-.rureraform-col-7 {width: 58.33333333%;}
-.rureraform-col-8 {width: 66.66666666%;}
-.rureraform-col-9 {width: 75%;}
-.rureraform-col-10 {width: 83.33333333%;}
-.rureraform-col-11 {width: 91.66666666%;}
-.rureraform-col-12 {width: 100%;}
-/* Questions Templates style End */
-
-/* Draggable Image Style Start */
-.rureraform-element-cover {position: absolute;top: 0;bottom: 0;left: 0;right: 0;width: 100%;height: 100%;transition-duration: .3s;-webkit-transition-duration: .3s;display: none;}
-div.rureraform-element-checkbox-container div.rureraform-element-cover {display: none !important;}
-.rureraform-element-html img {object-fit: cover;}
-/* Draggable Image Style End */
-
-/* Attachment Style Start */
-.rureraform-form-editor .input-group-prepend ~ input[type="text"] {margin-bottom: 0; border: 1px solid #ccc; height: 42px; padding: 0 10px;}
-.rureraform-form-editor .input-group-append .input-group-text,
-.rureraform-form-editor .input-group-prepend .input-group-text{border-color: #ccc;} 
-/* Attachment Style End */
-
-/* Questions Builder Style end */
-
-/* rurera form admin Buttons style start */
+/* Topbar Buttons style start */
 .rureraform-admin-button-container {
 	text-align: right;
 	margin: 10px 0;
@@ -198,4 +106,101 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 	padding: 0 1.6em;
 	line-height: 50px;
 }
-/* rurera form admin Buttons style end */
+/* Topbar Buttons style end */
+
+/* Columns Style Start */
+.rureraform-row.rureraform-element [class*="rureraform-col-"] {float: none; display: inline-block; margin-right: -4px; vertical-align: middle;}
+.rureraform-form-editor .table {margin: 0;}
+.rureraform-form-editor .table tr td {padding-top: 10px !important; padding-bottom: 10px !important;}
+.rureraform-form-editor .table tr td p {text-align: center;}
+/* Columns Style End */
+
+.rureraform-form-editor .rureraform-form {max-width: 740px;}
+.rureraform-builder {background-color: #fff;padding: 20px 20px 60px 20px;border-bottom: 1px solid #d4d4d4;border-left: 1px solid #d4d4d4;border-right: 1px solid #d4d4d4;min-height: -webkit-fill-available;border-radius: 3px;padding-top: 118px !important;}
+.rureraform-form-editor {position: relative; margin-left: 0;}
+.rureraform-form-editor input[type=checkbox] {margin-right: 5px;}
+.rureraform-form-editor input[type="text"] {margin-bottom: 5px;}
+.rureraform-admin-editor .input-holder:not(input.input_line) input.editor-field {height: 32px; margin-bottom: 0;}
+.rureraform-form-editor p {margin-bottom: 0;}
+.rureraform-builder .rureraform-element-html h2 {font-weight: 700; font-size: 2rem; margin: 0;}
+.rureraform-toolbars {position: absolute;top: 0; left: 0;right: 0;width: 100% !important;} 
+html.rureraform-toolbars-fixed .rureraform-toolbars {position: sticky;z-index: 1000;}
+html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 32px;}
+html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: -32px;}
+html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margin-top: 0;}
+.rureraform-form-editor .form-box {width: 100%;}
+@media screen and (max-width: 782px) {
+	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 46px;}
+	html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: -46px;	}
+	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margin-top: 0;}
+}
+@media screen and (max-width: 600px) {
+	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 0px;}
+	html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: 0px;}
+}
+.rureraform-toolbar {background: #fff;	border-bottom: 1px solid #d4d4d4;border-left: 1px solid #d4d4d4;border-right: 1px solid #d4d4d4;}
+.rureraform-toolbar-list {white-space: nowrap;height: auto;margin: 0;	padding: 0;	list-style-type: none;}
+.rureraform-toolbar-list::after {display: table;content: ' ';clear: both;}
+.rureraform-toolbar-list>li {position: relative; height: 38px; width: 31px; line-height: 38px; margin: 0; padding: 0; float: left;}
+.rureraform-toolbar-list>li>a {text-align: center; height: 38px; width: 31px; line-height: 38px; cursor: pointer; font-size: 15px; letter-spacing: normal; background-color: transparent; color: #2f353b; margin: 0; padding: 0; text-decoration: none; box-shadow: none; outline: none; border: none; transition-duration: .3s; -webkit-transition-duration: .3s; display: inline-flex; justify-content: center; align-items: center;}
+.rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .ion, .rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fas, 
+.rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .far, .rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fal, 
+.rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {margin-left: 0;}
+.rureraform-toolbar-list>li>a:hover {color: #169F85;background: #f8f8f8;}
+.rureraform-toolbar-list>li>ul {position: absolute;z-index: 99;top: 38px;left: 0px;display: none;background: #fff;border: 1px solid #ccc;	box-sizing: border-box;	width: 120px;box-shadow: 2px 2px 10px -5px rgba(0,0,0,0.9);white-space: nowrap;overflow: hidden;height: auto;margin: 0;padding: 0;}
+.rureraform-toolbar-list>li:hover>ul {display: block;}
+.rureraform-toolbar-list>li>ul>li {text-align: left;position: relative;	height: 32px;display: block;line-height: 32px;margin: 0;padding: 0;}
+.rureraform-toolbar-list>li>ul>li>a {text-align: left;height: 32px;	display: block;	line-height: 32px;letter-spacing: normal;background-color: transparent;font-family: arial;color: #2f353b;font-size: 13px;margin: 0;padding: 0 10px;text-decoration: none !important;box-shadow: none !important;outline: none !important;border: none !important;transition-duration: .3s;-webkit-transition-duration: .3s;}
+.rureraform-toolbar-list>li>ul>li>a:hover {color: #169F85;	background: #f8f8f8;}
+.rureraform-toolbar-tooltip {font-size: 14px !important;z-index: 99999 !important;}
+.rureraform-toolbar-list>li[data-title]:after {content: attr(data-title); position: absolute; top: 100%; left: 0; background-color: #000; color: #fff; font-size:12px; line-height: normal; padding: 10px 8px; border-radius: 5px; opacity: 0; visibility: hidden;}
+.rureraform-toolbar-list>li[data-title]:before {content: ""; top: 100%; left: 10px; position: absolute; height: 10px; width: 10px; background-color: #000; transform: rotate(45deg); margin-top: -4px; opacity: 0; visibility: hidden;}
+.rureraform-toolbar-list>li[data-title]:hover:after,
+.rureraform-toolbar-list>li[data-title]:hover:before {opacity: 1; visibility: visible;}
+
+
+/* Questions Templates Style Start */
+.rureraform-admin-editor * {box-sizing: border-box;}
+.rureraform-form {position: relative;max-width: 960px;width: 96%;margin: 0px auto;display: none;}
+.rureraform-elements {min-height: 60px;}
+.rureraform-element {width: 100%;outline: 1px dashed #f3f1f1 !important;height: auto !important;margin-top: 10px;margin-bottom: 10px;padding: 10px;display: block !important;visibility: visible !important;opacity: 1 !important;}
+.rureraform-element:hover {outline: 2px solid #26B99A !important;}
+.rureraform-element::before {display: table;content: ' ';}
+.rureraform-element::after {clear: both;display: table;	content: ' ';}
+.rureraform-element-placeholder {background: transparent;border-radius: 3px;border: 1px dashed #26B99A;background-color: #26B99A;	opacity: 0.2;height: 40px;}
+.rureraform-element-helper {height: 40px !important;width: 160px !important;overflow: hidden !important;}
+.rureraform-element-helper.ui-sortable-helper {width: 100% !important; height: auto !important; outline: 1px dashed #f3f1f1 !important;}
+.ui-sortable .rureraform-element-placeholder {background-color: transparent; border-color: transparent;}
+.rureraform-element-helper .rureraform-element-cover {display: block;background: white;}
+.rureraform-col {padding: 10px 10px !important;float: left;	outline: 1px dashed #ccc;}
+.rureraform-col .rureraform-element:first-of-type {	margin-top: 0;}
+.rureraform-col .rureraform-element:last-of-type {margin-bottom: 0;}
+.rureraform-col-1 {width: 8.33333333%;}
+.rureraform-col-2 {width: 16.66666666%;}
+.rureraform-col-3 {width: 25%;}
+.rureraform-col-4 {width: 33.33333333%;}
+.rureraform-col-5 {width: 41.66666666%;}
+.rureraform-col-6 {width: 50%;}
+.rureraform-col-7 {width: 58.33333333%;}
+.rureraform-col-8 {width: 66.66666666%;}
+.rureraform-col-9 {width: 75%;}
+.rureraform-col-10 {width: 83.33333333%;}
+.rureraform-col-11 {width: 91.66666666%;}
+.rureraform-col-12 {width: 100%;}
+/* Questions Templates style End */
+
+/* Draggable Image Style Start */
+.rureraform-element-cover {position: absolute;top: 0;bottom: 0;left: 0;right: 0;width: 100%;height: 100%;transition-duration: .3s;-webkit-transition-duration: .3s;display: none;}
+div.rureraform-element-checkbox-container div.rureraform-element-cover {display: none !important;}
+.rureraform-element-html img {object-fit: cover;}
+/* Draggable Image Style End */
+
+/* Attachment Style Start */
+.rureraform-form-editor .input-group-prepend ~ input[type="text"] {margin-bottom: 0; border: 1px solid #ccc; height: 42px; padding: 0 10px;}
+.rureraform-form-editor .input-group-append .input-group-text,
+.rureraform-form-editor .input-group-prepend .input-group-text{border-color: #ccc;} 
+/* Attachment Style End */
+
+/***************************** 
+Questions Builder style End 
+******************************/
