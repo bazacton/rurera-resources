@@ -59,8 +59,6 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 .rureraform-element:hover {outline: 2px solid #26B99A !important;}
 .rureraform-element::before {display: table;content: ' ';}
 .rureraform-element::after {clear: both;display: table;	content: ' ';}
-.rureraform-element-cover {position: absolute;top: 0;bottom: 0;left: 0;right: 0;width: 100%;height: 100%;transition-duration: .3s;-webkit-transition-duration: .3s;display: none;}
-div.rureraform-element-checkbox-container div.rureraform-element-cover {display: none !important;}
 .rureraform-element-placeholder {background: transparent;border-radius: 3px;border: 1px dashed #26B99A;background-color: #26B99A;	opacity: 0.2;height: 40px;}
 .rureraform-element-helper {height: 40px !important;width: 160px !important;overflow: hidden !important;}
 .rureraform-element-helper.ui-sortable-helper {width: 100% !important; height: auto !important; outline: 1px dashed #f3f1f1 !important;}
@@ -82,6 +80,12 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .rureraform-col-11 {width: 91.66666666%;}
 .rureraform-col-12 {width: 100%;}
 /* Questions Templates style End */
+
+/* Draggable Image Style Start */
+.rureraform-element-cover {position: absolute;top: 0;bottom: 0;left: 0;right: 0;width: 100%;height: 100%;transition-duration: .3s;-webkit-transition-duration: .3s;display: none;}
+div.rureraform-element-checkbox-container div.rureraform-element-cover {display: none !important;}
+.rureraform-element-html img {object-fit: cover;}
+/* Draggable Image Style End */
 
 /* form-editor style end */
 
