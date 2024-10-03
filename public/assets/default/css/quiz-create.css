@@ -49,7 +49,7 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 
 .rureraform-form-editor .rureraform-form {max-width: 740px;}
 .rureraform-builder {background-color: #fff;padding: 20px 20px 60px 20px;border-bottom: 1px solid #d4d4d4;border-left: 1px solid #d4d4d4;border-right: 1px solid #d4d4d4;min-height: -webkit-fill-available;border-radius: 3px;padding-top: 118px !important;}
-.rureraform-form-editor {position: relative; margin-left: 0;}
+.rureraform-form-editor {margin-left: 0;}
 .rureraform-form-editor input[type=checkbox] {margin-right: 5px;}
 .rureraform-form-editor input[type="text"] {margin-bottom: 5px;}
 .rureraform-admin-editor .input-holder:not(input.input_line) input.editor-field {height: 32px; margin-bottom: 0;}
