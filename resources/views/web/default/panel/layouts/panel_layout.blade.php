@@ -437,6 +437,7 @@
                                 </div>
                             @endif	
 							@endif	
+
 							
                         @if(!request()->is('panel') && !request()->is('panel/setting') && !request()->is('panel/rewards') && !request()->is('panel/marketing/affiliates') && !request()->is('panel/store/purchases') && !request()->is('panel/notifications') && !request()->is('panel/support/tickets'))
 							
