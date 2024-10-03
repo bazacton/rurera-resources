@@ -12,7 +12,7 @@ body:has(.quiz-topbar) {
 /**********************************
 Lms Sorting Fields Style
 **********************************/
-.lms-sub-heading {margin: 0 0 20px; color: #000; font-weight: 500; font-size: 15px;}
+/* .lms-sub-heading {margin: 0 0 20px; color: #000; font-weight: 500; font-size: 15px;}
 .lms-sub-heading .lms-numbers {display: block; padding-top: 10px; margin-left: 20px; font-weight: 700; letter-spacing: 1px;}
 .option-row-1.option-small .lms-sorting-fields {gap: 10px;}
 .lms-sorting-fields span {line-height: normal; display: block; font-size: 15px;}
@@ -38,7 +38,7 @@ Lms Sorting Fields Style
 .lms-sorting-fields .field-holder .sort-icon ~ label {padding-right: 40px;}
 .lms-sorting-fields {display: inline-block; width: 100%; overflow-x: auto;}
 .question-textarea .table {overflow: hidden;}
-.lms-sorting-fields::-webkit-scrollbar {height: 5px}
+.lms-sorting-fields::-webkit-scrollbar {height: 5px} */
 /**********************************
 Lms Signs Style 
 **********************************/
