@@ -435,8 +435,8 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-12 mt-20">
-                                    <div class="font-19 font-weight-bold p-20  border-black rounded-sm">Sir Kaizer</div>
+                                <div class="col-12 col-lg-12">
+                                    <div class="font-19 font-weight-bold p-20  panel-border  rounded-sm">Sir Kaizer</div>
                                 </div>
                             @endif	
 							@endif	
