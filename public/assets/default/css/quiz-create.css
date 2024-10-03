@@ -5,6 +5,20 @@
 .rureraform-admin-editor .input-holder:not(input.input_line) input.editor-field {height: 32px; margin-bottom: 0;}
 .rureraform-form-editor p {margin-bottom: 0;}
 .rureraform-builder .rureraform-element-html h2 {font-weight: 700; font-size: 2rem; margin: 0;}
+.rureraform-toolbars {position: absolute;top: 0; left: 0;right: 0;width: 100% !important;} 
+html.rureraform-toolbars-fixed .rureraform-toolbars {position: sticky;z-index: 1000;}
+html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 32px;}
+html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: -32px;}
+html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margin-top: 0;}
+@media screen and (max-width: 782px) {
+	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 46px;}
+	html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: -46px;	}
+	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margin-top: 0;}
+}
+@media screen and (max-width: 600px) {
+	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 0px;}
+	html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: 0px;}
+}
 /* form-editor style end */
 
 /* rurera form admin Buttons style start */
@@ -1758,21 +1772,6 @@ select.rureraform-block-form-value {vertical-align: top;line-height: 36px !impor
 .rureraform-numspinner-plus:before {font-size: 12px;}
 .rureraform-tile-icon:before {display: inline-block;content: "tile";font-size: 70%;font-family: verdana;border: 1px solid #444;border-radius: 3px;line-height: 1;padding: 0.1em 0.3em;vertical-align: middle;box-shadow: 0 0 1px 1px rgba(0,0,0,0.05);}
 .rureraform-email-validator-options {display: none;}
-.rureraform-toolbars {position: absolute;top: 0; left: 0;right: 0;width: 100% !important;} 
-
-html.rureraform-toolbars-fixed .rureraform-toolbars {position: sticky;z-index: 1000;}
-html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 32px;}
-html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: -32px;}
-html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margin-top: 0;}
-@media screen and (max-width: 782px) {
-	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 46px;}
-	html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: -46px;	}
-	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margin-top: 0;}
-}
-@media screen and (max-width: 600px) {
-	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 0px;}
-	html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: 0px;}
-}
 .jqte{margin-bottom:0px;}
 .field-options {background: #d4e9da; padding: 10px; width: 100%; float: left;}
 .lms-quiz-create .rureraform-properties-item .field-options {padding: 0;}
