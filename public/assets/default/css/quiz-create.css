@@ -10,8 +10,8 @@ Questions Builder style start
 /* Questions Builder Stage style End */
 
 /* Toolbar Buttons style start */
-.rureraform-toolbars {position: absolute;top: 0; left: 0;right: 0;width: 100% !important;} 
-html.rureraform-toolbars-fixed .rureraform-toolbars {position: sticky;z-index: 1000;}
+/* .rureraform-toolbars {position: absolute;top: 0; left: 0;right: 0;width: 100% !important;} 
+html.rureraform-toolbars-fixed .rureraform-toolbars {position: sticky;z-index: 1000;}Toolbar Buttons style start
 html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 32px;}
 html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: -32px;}
 html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margin-top: 0;}
@@ -43,7 +43,7 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 @media screen and (max-width: 600px) {
 	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 0px;}
 	html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: 0px;}
-}
+} */
 /* Toolbar Buttons style end */
 
 /* Columns Style Start */
