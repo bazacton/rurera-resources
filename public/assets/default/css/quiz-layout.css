@@ -362,7 +362,7 @@ Lms Question List Style
 .question-layout .input-group .admin-file-view {background-color: #fff !important; border: 1px solid #eee !important;}
 .question-layout .input-group .admin-file-manager i,
 .question-layout .input-group .admin-file-view i {font-size: 16px; font-style: normal; font-weight: 900 !important; font-family: "Font Awesome 5 Free" !important;}
-.question-layout .input-group .admin-file-manager .fa-chevron-up:before {content: ""; border-style: solid; border-width: 1px 0 0 1px; border-color: #ccc; display: inline-block; height: 10px; width: 10px; transform: rotate(45deg); vertical-align: middle;}
+.question-layout .input-group .admin-file-manager .fa-chevron-up:before {content: ""; border-style: solid; border-width: 1px 0 0 1px; border-color: #ccc; display: inline-block; height: 10px; width: 10px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); vertical-align: middle;}
 .question-step:has(.question-number-holder .flag-question) .rureraform-form,
 .question-step:has(.question-number-holder .flag-question) .questions-total-holder {padding-left: 70px; margin-left: 0 !important;}
 
@@ -373,7 +373,7 @@ Lms Question List Style
 .lms-content-header~.user-question-panel {padding-left: 50px;}
 .question-list {display: flex; align-items: center; flex-wrap: wrap; margin: 0;}
 .question-list li {background-color: #989898; height: 7px; width: 25px; margin: 0 5px 0 0; border-radius: 20px; text-indent: -99999px; position: relative; cursor: pointer;}
-.question-list .canceld:before {background-color: #996f70; border-radius: 3px; content: ""; position: absolute; left: 50%; top: 50%; height: 22px; width: 2px; margin: -11px 0 0 -1px; transform: rotate(24deg);}
+.question-list .canceld:before {background-color: #996f70; border-radius: 3px; content: ""; position: absolute; left: 50%; top: 50%; height: 22px; width: 2px; margin: -11px 0 0 -1px; -webkit-transform: rotate(24deg); -ms-transform: rotate(24deg); transform: rotate(24deg);}
 .question-list .active {background-color: #565c90;}
 .question-list .canceld {cursor: no-drop;}
 .hide {display: none !important;}
