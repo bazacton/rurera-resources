@@ -42,6 +42,10 @@
                                 </label>
                             </li>
                         </ul>
+                        <div class="col-12">
+                            <div class="section-title mb-30 text-center"><h2>No of Questions </h2></div>
+                        </div>
+
                         <ul class="mb-20 d-flex align-items-center">
                             <li>
                                 <input checked type="radio" id="ten-questions" value="10" name="no_of_questions" />
@@ -62,6 +66,9 @@
                                 </label>
                             </li>
                         </ul>
+                    </div>
+                    <div class="col-12">
+                        <div class="section-title mb-30 text-center"><h2>Select Tables</h2></div>
                     </div>
                     <div class="questions-select-number">
                         <ul class="d-flex justify-content-center flex-wrap mb-30">
