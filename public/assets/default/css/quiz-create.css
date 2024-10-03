@@ -859,6 +859,7 @@
 .rureraform-toolbar-list>li[data-title]:hover:after,
 .rureraform-toolbar-list>li[data-title]:hover:before {opacity: 1; visibility: visible;}
 .rureraform-pages-bar {height: auto; line-height: 48px;	background: #f4f4f4;border-left: 1px solid #d4d4d4;border-right: 1px solid #d4d4d4;border-bottom: 1px solid #d4d4d4;overflow: hidden;}
+.rureraform-admin .rureraform-pages-bar {left: 0; top: 0; width: 100%; position: relative;}
 .rureraform-pages-bar-items {height: auto;margin: -1px 0 0 0;padding: 0;list-style-type: none;}
 .rureraform-pages-bar-items::after {display: table;	content: ' ';clear: both;}
 .rureraform-pages-bar-items>li {position: relative;	height: 48px;line-height: 48px;	margin: 1px 0 0 0;padding: 0;outline: 1px solid #d4d4d4;outline-offset: 0px;background: #f4f4f4;float: left;cursor: default;transition-property: background;-webkit-transition-property: background;transition-duration: .3s;-webkit-transition-duration: .3s;white-space: nowrap;min-width: 80px;}
@@ -1748,7 +1749,7 @@ select.rureraform-block-form-value {vertical-align: top;line-height: 36px !impor
 .rureraform-tile-icon:before {display: inline-block;content: "tile";font-size: 70%;font-family: verdana;border: 1px solid #444;border-radius: 3px;line-height: 1;padding: 0.1em 0.3em;vertical-align: middle;box-shadow: 0 0 1px 1px rgba(0,0,0,0.05);}
 .rureraform-email-validator-options {display: none;}
 .rureraform-toolbars {position: absolute;top: 0; left: 0;right: 0;width: 100% !important;} 
-.rureraform-form-editor {position: relative;}
+.rureraform-form-editor {position: relative; margin-left: 0;}
 html.rureraform-toolbars-fixed .rureraform-toolbars {position: sticky;z-index: 1000;}
 html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 32px;}
 html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: -32px;}
