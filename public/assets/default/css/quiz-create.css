@@ -142,62 +142,6 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .form-field input[type="checkbox"]:checked ~ label:after {opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 .form-field input[type="checkbox"]:checked ~ label,
 .form-field label:hover {background-color: rgba(0,0,0,0.06);}
-
-/*Multi Response images style start*/
-.row-fields.lms-checkbox-img label {padding: 5px;}
-.lms-checkbox-img .form-field label:before {width: 30px; height: 30px; right: 15px; border-radius: 100%; margin-top: -15px;}
-.lms-checkbox-img .form-field label:after {right: 24px; font-size: 14px; height: auto; width: auto; line-height: normal; top: 50%; margin-top: -10px;}
-.lms-checkbox-img .form-field input[type="checkbox"]:checked ~ label:after {-webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); }
-.lms-checkbox-img label img {border-radius: 3px; width: 35px;  height: 35px; object-fit: contain; margin-right: 10px; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;}
-.lms-checkbox-img label {border-radius: 5px; display: flex; align-items: center;}
-.lms-checkbox-img .form-field.wrong label {background: none; border-color: #ff4a4a; color: #000;}
-.lms-checkbox-img .form-field.wrong label:before {border-color: #ff4a4a;}
-
-/*option medium style*/
-.lms-checkbox-img.option-medium .form-field label {font-size: 24px;}
-.lms-checkbox-img.option-medium label img {width: 80px; height: 80px;}
-.lms-checkbox-img.image-top.option-medium .form-field label {min-height: 180px;}
-.lms-checkbox-img.option-medium .form-field label:before {height: 50px; width: 50px; margin-top: -25px;}
-.lms-checkbox-img.option-medium .form-field label:after {right: 30px;     font-size: 24px; margin-top: -18px;}
-
-/*option large style*/
-.lms-checkbox-img.option-large .form-field label {font-size: 30px;}
-.lms-checkbox-img.option-large label img {width: 110px; height: 110px;}
-.lms-checkbox-img.image-top.option-large .form-field label {min-height: 230px;}
-.lms-checkbox-img.option-large .form-field label:before {height: 70px; width: 70px; margin-top: -35px;}
-.lms-checkbox-img.option-large .form-field label:after {right: 38px; font-size: 30px; margin-top: -20px;}
-
-/*image top style*/
-.lms-checkbox-img.image-top .form-field label,
-.numeric-list-style.image-top .form-field input[type="checkbox"] ~ label {flex-direction: column; justify-content: flex-start; align-items: flex-start; padding-right: 15px; padding-left: 15px; color: #838383;}
-.lms-checkbox-img.image-top .form-field label:before {border-radius: 0; height: 20px; width: 20px; top:10px; margin: 0; right: 10px;}
-.lms-checkbox-img.image-top .form-field label:after {right: 13px; top: 9px; margin-top: 0; width: 15px; height: 15px; font-size: 14px; }
-.lms-checkbox-img.image-top label img {margin: 0px 0px 10px; width: auto; max-width: 100%; height: auto;}
-.lms-checkbox-img.image-top .form-field input[type="checkbox"]:checked ~ label img {margin-right: 0;}
-.numeric-list-style.image-top > .form-field {padding-left: 0;}
-.numeric-list-style.image-top > .form-field:before {left: auto;right: 20px;top: auto;bottom: 12px;margin: 0;color: #999;border: 1px solid #ddd;z-index: 1;background-color: inherit;}
-
-/*image right style*/
-.image-right .form-field input[type="checkbox"] ~ label {padding-right: 60px;}
-.lms-checkbox-img.image-right .form-field label img,
-.lms-radio-select.image-right .field-holder label img {position: absolute; right: 10px; margin: 0; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);}
-.lms-checkbox-img.image-right .form-field input[type="checkbox"]:checked ~ label img,
-.lms-radio-select.image-right .field-holder input[type="radio"]:checked ~ label img {margin-right: 0;}
-.lms-checkbox-img.image-right .form-field input[type="checkbox"] ~ label,
-.lms-radio-select.image-right .field-holder input[type="radio"] ~ label {padding-left: 12px;}
-.lms-checkbox-img.image-right .form-field label:before,
-.lms-radio-select.image-right .field-holder label:before {left: 12px; right: auto; top: 50%; transform:translateY(-50%); margin: 0; border-radius:3px; opacity: 0;}
-.lms-radio-select.image-right .field-holder label:before {border-radius: 100%; visibility: hidden !important;}
-.lms-checkbox-img.image-right .form-field label:after,
-.lms-radio-select.image-right .field-holder label:after {font-size: 18px; top: 50%; margin: 2px 0 0 0; height: 30px; width: 30px; text-align:center; transform:translateY(-50%); left: 12px; right: auto;}
-.lms-checkbox-img.image-right .form-field input[type="checkbox"]:checked ~ label:before,
-.lms-radio-select.image-right .field-holder input[type="radio"]:checked ~ label:before {opacity: 1;}
-.lms-checkbox-img.image-right .form-field input[type="checkbox"]:checked ~ label:after,
-.lms-radio-select.image-right .field-holder input[type="radio"]:checked ~ label:after {transform:translateY(-50%);}
-.numeric-list-style .form-field input[type="checkbox"] ~ label,
-.image-right.numeric-list-style .form-field input[type="checkbox"] ~ label {padding-left: 40px;}
-
-/*Multi Response images style End*/
 /* Multi Response List Style End */
 
 /* Sortable List Style Start */
