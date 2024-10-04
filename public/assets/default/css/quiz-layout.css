@@ -145,7 +145,7 @@ body:has(.quiz-topbar) {
 *************************************/
 
 /************************************ 
- Tool Dropdown Style Start
+ Toolbar Dropdown Style Start
 *************************************/
 .rureraform-toolbar-list .question_templates {max-width: 480px; min-width: 480px; background-color: #fff; position: absolute; left: 10px; top: 100%; border: 1px solid #c7c7c7; z-index: 2; visibility: hidden; opacity: 0; display: flex; flex-wrap: wrap; padding: 0; margin: 0; transform: translateY(10px); box-shadow: 3px 3px 3px rgba(0,0,0,0.4); -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all; -moz-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all; -o-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all; transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;}
 .rureraform-toolbar-list>li:hover .question_templates {visibility: visible; opacity: 1; transform: translateY(0); display: flex;}
@@ -169,7 +169,7 @@ body:has(.quiz-topbar) {
     }
 }
 /************************************ 
- Tool Dropdown Style End
+ Toolbar Dropdown Style End
 *************************************/
 
 .read-quiz-content > .row > [class*="col-"] {max-width: 800px;}
