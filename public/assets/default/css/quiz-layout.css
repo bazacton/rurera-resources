@@ -16,6 +16,31 @@ body:has(.quiz-topbar) {
 .quiz-top-info p,
 .read-quiz-info ~ .read-quiz-content .quiz-top-info p {font-size: 18px; color: #fff; margin: 0;}
 .topbar-right {display: flex; align-items: center; justify-content: flex-end;}
+
+.assignment-questions-preview .rureraform-elements,
+.single-question-preview .rureraform-elements {padding-left: 100px;}
+.assignment-questions-preview .rureraform-element[data-type="question_label"], .assignment-questions-preview .rureraform-element[data-type="checkbox"], 
+.assignment-questions-preview .rureraform-element[data-type="radio"], .assignment-questions-preview .rureraform-element[data-type="sortable_quiz"], 
+.assignment-questions-preview .rureraform-element[data-type="html"], .assignment-questions-preview .rureraform-element[data-type="match_quiz"],
+.single-question-preview .rureraform-element[data-type="question_label"], .single-question-preview .rureraform-element[data-type="checkbox"], 
+.single-question-preview .rureraform-element[data-type="radio"], .single-question-preview .rureraform-element[data-type="sortable_quiz"], 
+.single-question-preview .rureraform-element[data-type="html"], .single-question-preview .rureraform-element[data-type="match_quiz"] {padding-left: 0;}
+.block-holder .lms-root-block {overflow: visible;}
+.match-question .stems ol {padding: 0; margin: 0;}
+.assignment-questions-preview .table:not(.table-sm):not(.table-md):not(.dataTable) th,
+.single-question-preview .table:not(.table-sm):not(.table-md):not(.dataTable) th {padding: 10px;}
+.assignment-questions-preview .form-box,
+.single-question-preview .form-box {width: 100%;}
+.assignment-questions-preview .topbar-right {display: inline-flex;}
+.assignment-questions-preview .quiz-pagination {max-width: 100%; padding: 0;}
+.assignment-questions-preview .quiz-top-info {display: inline-block; margin-right: 15px;}
+/************************************ 
+ Quiz Top-Bar Style End
+*************************************/
+
+/************************************ 
+ pagination Learn Practice Style Start
+*************************************/
 .quiz-pagination {position: relative; padding: 0 30px; margin: 0; max-width: 600px; }
 .quiz-pagination .swiper-container {margin-top: -8px; padding: 8px 2px 4px;}
 .quiz-pagination .swiper-button-next,
@@ -47,25 +72,8 @@ body:has(.quiz-topbar) {
 .quiz-pagination .has-flag a:before {content: ""; position: absolute; top: -20px; height: 25px; width: 25px; left: 50%; transform: translateX(-50%); background: url(../../default/svgs/pagination-flag.svg) no-repeat; background-size: contain; margin-left: 3px; filter: invert(32%) sepia(11%) saturate(2395%) hue-rotate(195deg) brightness(92%) contrast(84%);}
 .assignment-questions-preview .quiz-pagination .swiper-container ul {flex-wrap: wrap;}
 .assignment-questions-preview .quiz-pagination .swiper-container li {margin: 6px 6px 0 0; width: 25px; max-width: 25px;}
-.assignment-questions-preview .rureraform-elements,
-.single-question-preview .rureraform-elements {padding-left: 100px;}
-.assignment-questions-preview .rureraform-element[data-type="question_label"], .assignment-questions-preview .rureraform-element[data-type="checkbox"], 
-.assignment-questions-preview .rureraform-element[data-type="radio"], .assignment-questions-preview .rureraform-element[data-type="sortable_quiz"], 
-.assignment-questions-preview .rureraform-element[data-type="html"], .assignment-questions-preview .rureraform-element[data-type="match_quiz"],
-.single-question-preview .rureraform-element[data-type="question_label"], .single-question-preview .rureraform-element[data-type="checkbox"], 
-.single-question-preview .rureraform-element[data-type="radio"], .single-question-preview .rureraform-element[data-type="sortable_quiz"], 
-.single-question-preview .rureraform-element[data-type="html"], .single-question-preview .rureraform-element[data-type="match_quiz"] {padding-left: 0;}
-.block-holder .lms-root-block {overflow: visible;}
-.match-question .stems ol {padding: 0; margin: 0;}
-.assignment-questions-preview .table:not(.table-sm):not(.table-md):not(.dataTable) th,
-.single-question-preview .table:not(.table-sm):not(.table-md):not(.dataTable) th {padding: 10px;}
-.assignment-questions-preview .form-box,
-.single-question-preview .form-box {width: 100%;}
-.assignment-questions-preview .topbar-right {display: inline-flex;}
-.assignment-questions-preview .quiz-pagination {max-width: 100%; padding: 0;}
-.assignment-questions-preview .quiz-top-info {display: inline-block; margin-right: 15px;}
 /************************************ 
- Quiz Top-Bar Style End
+ pagination Learn Practice Style End
 *************************************/
 
 /************************************ 
@@ -153,25 +161,7 @@ body .lms-quiz-section .flipbook-quiz {width: 800px;}
 /************************************ 
  Quiz Read Info Style End
 *************************************/
-/**********************************
-Lms Table Style 
-**********************************/
-.lms-table {margin-bottom: 50px; margin-left: 20px; box-sizing: border-box;}
-.lms-table table {border-collapse: collapse; width: 100%;}
-.lms-table tr th {background-color: #82a724; color: #fff; font-weight: 400; border-left: 1px solid; padding: 5px 10px; min-width: 60px;}
-.lms-table input[type="text"] {width: 40px; border: 1px solid #b7b6b9; height: 25px; text-align: center; font-size: 13px;}
-.lms-table tr td {border: 1px solid #ccc; text-align: center; padding: 5px 10px;}
-.rureraform-element table.table {margin: 0; border-color: #000; overflow: hidden;}
-.rureraform-element table.table td {line-height: normal; text-align: center; vertical-align: middle; padding: 5px; height: 50px; border-color: #000;}
-.rureraform-element table.table td .field-holder {border: 0;}
-.rureraform-element table.table td:first-child,
-.rureraform-element table.table th:first-child {width: 220px;}
-.question-layout table.table td p {margin: 0;}
-.rureraform-element table.table td .input-holder {width: 100%; border-width: 0;}
-.rureraform-element table.table td .input-holder input {text-align: center; background-color: initial; border: 1px solid #ddd; height: 38px; min-height: 38px; background-color: #fcfcfc;}
-.rureraform-element table.table td .input_line {width: 100% !important; margin: 0;}
-.rureraform-element table.table th {background-color: #c8d2ec; border-top: 1px solid !important; border-color: #000;}
-.rureraform-element table.table th b {font-weight: 500;}
+
 /************************************ 
  Tool Dropdown Style Start
 *************************************/

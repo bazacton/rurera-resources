@@ -226,6 +226,28 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 /* Audio Record Style Start */
 /* Audio Record Style End */
 
+/**********************************
+Lms Table Style 
+**********************************/
+.lms-table {margin-bottom: 50px; margin-left: 20px; box-sizing: border-box;}
+.lms-table table {border-collapse: collapse; width: 100%;}
+.lms-table tr th {background-color: #82a724; color: #fff; font-weight: 400; border-left: 1px solid; padding: 5px 10px; min-width: 60px;}
+.lms-table input[type="text"] {width: 40px; border: 1px solid #b7b6b9; height: 25px; text-align: center; font-size: 13px;}
+.lms-table tr td {border: 1px solid #ccc; text-align: center; padding: 5px 10px;}
+.rureraform-element table.table {margin: 0; border-color: #000; overflow: hidden;}
+.rureraform-element table.table td {line-height: normal; text-align: center; vertical-align: middle; padding: 5px; height: 50px; border-color: #000;}
+.rureraform-element table.table td .field-holder {border: 0;}
+.rureraform-element table.table td:first-child,
+.rureraform-element table.table th:first-child {width: 220px;}
+.question-layout table.table td p {margin: 0;}
+.rureraform-element table.table td .input-holder {width: 100%; border-width: 0;}
+.rureraform-element table.table td .input-holder input {text-align: center; background-color: initial; border: 1px solid #ddd; height: 38px; min-height: 38px; background-color: #fcfcfc;}
+.rureraform-element table.table td .input_line {width: 100% !important; margin: 0;}
+.rureraform-element table.table th {background-color: #c8d2ec; border-top: 1px solid !important; border-color: #000;}
+.rureraform-element table.table th b {font-weight: 500;}
+/**********************************
+Lms Table Style End
+**********************************/
 /*Field row style start*/
 .rurera-in-row {display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start;}
 .rurera-in-row .rurera-in-row {width: 100%;}
