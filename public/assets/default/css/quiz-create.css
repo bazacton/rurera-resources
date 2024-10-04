@@ -3,7 +3,7 @@ Questions Builder style start
 ******************************/
 
 /* Questions Builder Stage style start */
-.rureraform-builder {background-color: #fff;padding: 20px 20px 60px 20px;border-bottom: 1px solid #d4d4d4;border-left: 1px solid #d4d4d4;border-right: 1px solid #d4d4d4;min-height: -webkit-fill-available;border-radius: 3px;padding-top: 118px !important;}
+.rureraform-builder {background-color: #fff;padding: 20px 20px 60px 20px; min-height: -webkit-fill-available;border-radius: 3px;padding-top: 118px !important; border: 1px solid #d4d4d4; border-top-color: transparent;}
 .rureraform-form-editor .rureraform-form {max-width: 740px;}
 .rureraform-form-editor {margin-left: 0;}
 /* Questions Builder Stage style End */
@@ -85,6 +85,10 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 .quiz-group .rureraform-column-label {margin-bottom: 15px;}
 .quiz-group .rureraform-column-label:has(label:empty) {display: none;}
 /* Questions Builder Label Style End */
+
+/* Question Templates Style Start */
+
+/* Question Templates Style End */
 
 /***************************** 
 Questions Builder style End 
