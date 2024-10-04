@@ -181,6 +181,15 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .sort-icon span,
 .lms-quiz-section .sort-icon span {height: 3px; background-color: #999; margin-bottom: 4px; display: block; }
 .lms-sorting-fields .sort-icon {position: absolute; right: 15px; top: 50%; transform: translateY(-50%); }
+.lms-sorting-fields .field-holder label {margin: 0; pointer-events: none;}
+.lms-sorting-fields .field-holder img {max-width: 100%;}
+.lms-sortable-img.lms-sorting-fields .field-holder img {max-width: 60px; height: 55px; object-fit: cover;}
+.lms-sorting-fields .match-question {position: initial !important; display: inline-block; width: 100% !important; height: auto !important;}
+.lms-sorting-fields .match-question.ui-sortable-placeholder {position: absolute !important;}
+.lms-sorting-fields .field-holder .sort-icon ~ label {padding-right: 40px;}
+.lms-sorting-fields {display: inline-block; width: 100%; overflow-x: auto;}
+.question-textarea .table {overflow: hidden;}
+.lms-sorting-fields::-webkit-scrollbar {height: 5px}
 /* Sortable List Style End */
 
 /* Question Label Style Start */
