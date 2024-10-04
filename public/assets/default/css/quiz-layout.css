@@ -72,13 +72,43 @@ body:has(.quiz-topbar) {
  pagination Learn Practice Style End
 *************************************/
 
+/* Quiz Prev and Next Controls Style */
+.question-layout-block form.question-fields .questions-nav-controls {border-top: 2px dashed #ddd; padding: 15px}
+.question-layout-block form.question-fields .questions-nav-controls .review-btn {left: 0;}
+.prev-next-controls {display: flex; align-items: center; justify-content: center; margin-top: 20px; position: relative; padding-left: 100px;}
+.prev-next-controls a {margin: 0 7px 0 0;}
+.prev-next-controls .review-btn {position: absolute; left: 0; gap: 10px;}
+.question-layout-block .prev-next-controls {position: fixed; width: 848px; bottom: -50px; background-color: #fff; padding-bottom: 30px; padding-top: 30px; min-height: 100px;}
+.review-btn,
+.prev-btn,
+.next-btn{display: inline-flex; align-items: center; border: 1px solid #eee; min-width: 135px; min-height: 45px; border-radius: 5px; justify-content: center; color: #000; text-transform: uppercase;}
+.prev-btn,
+.next-btn {min-width: auto; padding: 0 18px; position: relative;}
+.review-btn svg,
+.prev-btn svg,
+.next-btn svg {height: 22px; width: 22px; margin-left: 10px;}
+.prev-btn svg,
+.next-btn svg {margin-left: 0;}
+.review-btn svg g,
+.prev-btn svg g,
+.next-btn svg g{fill: #929198;}
+.next-btn svg {position: absolute; right: 10px;}
+.next-btn {padding-right: 50px;}
+.review-btn:hover,
+.prev-btn:hover,
+.next-btn:hover {background-color: #eee; color: #000;}
+.review-btn:hover svg g,
+.prev-btn:hover svg g,
+.next-btn:hover svg g {fill: #000;}
+/* Quiz Prev and Next Controls Style End */
+
 /************************************ 
  Quiz Read Info Style Start
 *************************************/
 /* Lms Font End Display Style */
-.question-layout-block form.question-fields .questions-nav-controls {border-top: 2px dashed #ddd; padding: 15px}
+
 .type-sats .question-layout-block form.question-fields {background-color: inherit; border: 0; padding: 0; border-radius: 0; margin-bottom: 0;}
-.question-layout-block form.question-fields .questions-nav-controls .review-btn {left: 0;}
+
 /* Lms Font End Display End */
 .quiz-show .read-quiz-info {left: 0;}
 .read-quiz-content {transition: all 0.2s ease-in-out;}
@@ -104,36 +134,11 @@ body:has(.quiz-topbar) {
 .quiz-toggle-btn {width: 25px; height: 35px; position: absolute; right: -22px; top: 90%; z-index: 1; display: inline-flex; justify-content: space-around; padding: 5px 10px 5px 0;}
 .quiz-toggle-btn span {height:100%; width: 3px; background-color: #535480;}
 .lms-quiz-section .question-area {position: relative;}
-.prev-next-controls {display: flex; align-items: center; justify-content: center; margin-top: 20px; position: relative; padding-left: 100px;}
-.prev-next-controls a {margin: 0 7px 0 0;}
-.prev-next-controls .review-btn {position: absolute; left: 0; gap: 10px;}
-.question-layout-block .prev-next-controls {position: fixed; width: 848px; bottom: -50px; background-color: #fff; padding-bottom: 30px; padding-top: 30px; min-height: 100px;}
 .question-layout-block .rurera-question-block {padding-bottom: 80px;}
-.review-btn,
-.prev-btn,
-.next-btn{display: inline-flex; align-items: center; border: 1px solid #eee; min-width: 135px; min-height: 45px; border-radius: 5px; justify-content: center; color: #000; text-transform: uppercase;}
 .inactivity-controls {justify-content: space-between; padding: 15px 0 10px; gap: 15px;}
 .question_inactivity_modal .inactivity-controls .continue-btn,
 .activity-actions .continue-btn {background-color: #29a746; min-width: auto; border-radius: 3px; margin-right: 0;}
 .inactivity-controls .pause-quiz {background-color: var(--primary); color: #fff; display: inline-flex; align-items: center; justify-content: center; border-radius: 3px; padding: 8px 0; flex: 0 0 46%; max-width: 46%;}
-.prev-btn,
-.next-btn {min-width: auto; padding: 0 18px; position: relative;}
-.review-btn svg,
-.prev-btn svg,
-.next-btn svg {height: 22px; width: 22px; margin-left: 10px;}
-.prev-btn svg,
-.next-btn svg {margin-left: 0;}
-.review-btn svg g,
-.prev-btn svg g,
-.next-btn svg g{fill: #929198;}
-.next-btn svg {position: absolute; right: 10px;}
-.next-btn {padding-right: 50px;}
-.review-btn:hover,
-.prev-btn:hover,
-.next-btn:hover {background-color: #eee; color: #000;}
-.review-btn:hover svg g,
-.prev-btn:hover svg g,
-.next-btn:hover svg g {fill: #000;}
 .read-quiz-info .flipbook-nav .flipbook-menu-btn {padding: 0 !important; line-height: 60px; font-size: 44px !important; box-shadow: 0 0 0 2px rgba(255,255,255,0.8) inset;}
 .read-quiz-info .flipbook-nav .fa-angle-right:before {margin-left: 5px; line-height: normal;}
 .read-quiz-info .flipbook-nav .fa-angle-left:before {margin-right: 5px;}
