@@ -105,11 +105,7 @@ body:has(.quiz-topbar) {
 /************************************ 
  Quiz Read Info Style Start
 *************************************/
-/* Lms Font End Display Style */
-
 .type-sats .question-layout-block form.question-fields {background-color: inherit; border: 0; padding: 0; border-radius: 0; margin-bottom: 0;}
-
-/* Lms Font End Display End */
 .quiz-show .read-quiz-info {left: 0;}
 .read-quiz-content {transition: all 0.2s ease-in-out;}
 .container-fluid.read-quiz-content {padding: 0; max-width: 100%; overflow-x: hidden;}
@@ -135,10 +131,12 @@ body:has(.quiz-topbar) {
 .quiz-toggle-btn span {height:100%; width: 3px; background-color: #535480;}
 .lms-quiz-section .question-area {position: relative;}
 .question-layout-block .rurera-question-block {padding-bottom: 80px;}
+
 .inactivity-controls {justify-content: space-between; padding: 15px 0 10px; gap: 15px;}
 .question_inactivity_modal .inactivity-controls .continue-btn,
 .activity-actions .continue-btn {background-color: #29a746; min-width: auto; border-radius: 3px; margin-right: 0;}
 .inactivity-controls .pause-quiz {background-color: var(--primary); color: #fff; display: inline-flex; align-items: center; justify-content: center; border-radius: 3px; padding: 8px 0; flex: 0 0 46%; max-width: 46%;}
+
 .read-quiz-info .flipbook-nav .flipbook-menu-btn {padding: 0 !important; line-height: 60px; font-size: 44px !important; box-shadow: 0 0 0 2px rgba(255,255,255,0.8) inset;}
 .read-quiz-info .flipbook-nav .fa-angle-right:before {margin-left: 5px; line-height: normal;}
 .read-quiz-info .flipbook-nav .fa-angle-left:before {margin-right: 5px;}
