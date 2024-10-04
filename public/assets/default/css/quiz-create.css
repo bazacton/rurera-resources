@@ -107,6 +107,11 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /* Image Static Style End */
 
 /* Essay Textarea Field Style Start */
+.input-holder textarea {padding: 10px; border: 0; border-radius: 8px; color: #000; outline: none; width: 100%;}
+.input-holder textarea::-webkit-input-placeholder {color: #000; }
+.input-holder textarea:-moz-placeholder {color: #000;}
+.input-holder textarea::-moz-placeholder {color: #000;}
+.input-holder textarea:-ms-input-placeholder {color: #000;}
 /* Essay Textarea Field Style End */
 
 /* Input Text Field Style Start */

@@ -554,11 +554,11 @@ Lms Quiz Wf Style Start
     .input-holder:has(.divide-numbers) {border: 0 !important;}
 }
 .lms-quiz-section .rureraform-col-4 .input-holder {width: 90% !important;}
-/* .input-holder textarea {padding: 10px; border: 0; border-radius: 8px; color: #000; outline: none; width: 100%;} */
+/* .input-holder textarea {padding: 10px; border: 0; border-radius: 8px; color: #000; outline: none; width: 100%;}
 .input-holder textarea::-webkit-input-placeholder {color: #000; }
 .input-holder textarea:-moz-placeholder {color: #000;}
 .input-holder textarea::-moz-placeholder {color: #000;}
-.input-holder textarea:-ms-input-placeholder {color: #000;}
+.input-holder textarea:-ms-input-placeholder {color: #000;} */
 /* Textarea Style with lines */
 .rureraform-element[data-type="textareafield_quiz"] .input-holder {width: 100% !important; padding: 0;}
 .rureraform-element[data-type="textareafield_quiz"] .input-holder.field_medium {width: 75% !important;}
