@@ -200,11 +200,6 @@ Lms Quiz Wf Style Start
     .input-holder:has(.divide-numbers) {border: 0 !important;}
 }
 .lms-quiz-section .rureraform-col-4 .input-holder {width: 90% !important;}
-/* .input-holder textarea {padding: 10px; border: 0; border-radius: 8px; color: #000; outline: none; width: 100%;}
-.input-holder textarea::-webkit-input-placeholder {color: #000; }
-.input-holder textarea:-moz-placeholder {color: #000;}
-.input-holder textarea::-moz-placeholder {color: #000;}
-.input-holder textarea:-ms-input-placeholder {color: #000;} */
 /* Textarea Style with lines */
 .rureraform-element[data-type="textareafield_quiz"] .input-holder {width: 100% !important; padding: 0;}
 .rureraform-element[data-type="textareafield_quiz"] .input-holder.field_medium {width: 75% !important;}
@@ -218,9 +213,6 @@ Lms Quiz Wf Style Start
 .textarea_lines textarea:-moz-placeholder {color: #999;}
 .textarea_lines textarea::-moz-placeholder {color: #999;}
 .textarea_lines textarea:-ms-input-placeholder {color: #999;}
-/* draggable-handle style */
-/* .ui-draggable.ui-draggable-handle {cursor: all-scroll;border: 2px solid #ddd;border-bottom-width: 4px;line-height: normal;text-align: center;border-radius: 8px;margin: 3px 6px 0 0;color: #333;background-color: #fdfdfd;padding: 4px 25px 8px;width: auto;}
-.draggable-items .ui-draggable:hover {background-color: #f8f8f8;} */
 .ui-icon-close {cursor: pointer;}
 .image-field-box{position:absolute !important;}
 .input-holder:empty {display: none;}
@@ -527,18 +519,7 @@ Lms Table Style
 /************************************ 
  Tool Dropdown Style End
 *************************************/
-/* .match-question{width:100%;}
-.match-question .stems li,
-.match-question .options li {list-style: none; padding: 0.8rem 1rem; margin: 0 0 1rem; text-align: left;}
-.match-question .stems,
-.match-question .options {width: 40%; margin-right: 10%; float: left;}
-.match-question .stems li,
-.match-question .options li {background: transparent; cursor: pointer; border: 1px solid #999; border-radius: 4px; &.selected,  &.selected:hover {font-weight: bold; border-color: #70c17c;}}
-.match-question .stems li > img,
-.match-question .options li > img {margin-bottom: 10px;}
-.match-question .line {width: 100%; height: 2px; background-color: #e5e5e5; z-index: 99; &.highlighted {background-color: green; box-shadow: none; height: 3px; z-index: 99; .point {border-left: 16px solid green;}}
-  .point {width: 0; height: 0; margin: -6px -3px 0 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-left: 16px solid #e5e5e5; float: right;}
-} */
+
 .read-quiz-content > .row > [class*="col-"] {max-width: 800px;}
 .question-number-holder .flag-question:hover svg g {fill: var(--primary);}
 .disable-div:before {content: ""; background: #efefef; width: 100%; height: 100%; left: 0; top: 0; position: absolute; z-index: 9999999999; opacity: 0.1;}
@@ -547,11 +528,6 @@ Lms Table Style
 .form-field:has(.frontend-field-error), .input-holder:has(.frontend-field-error) {border: 1px solid #dd4343;}
 .question-review-required {position: absolute; top: -35px; right: 0; font-size: 12px; background-color: #fff0f0; line-height: normal; color: crimson; box-shadow: 0 0 0 1px rgba(240,38,38,0.2) inset; padding: 6px 15px; border-radius: 3px;}
 span.seperator_line {border:3px solid; border-color:#000; width: 50px; display: grid;}
-/* .draggable-items {display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; margin-top: 40px;}
-.draggable-items .ui-draggable {color: #666; height: auto; margin: 0;}
-.draggable-items .ui-draggable span {color: #999; vertical-align: middle;} */
-/* .droppable_area, .lms-quiz-section .droppable_area {display:inline-flex; height: auto; padding: 0; margin: 0; border-radius: 0; border-bottom: 2px dotted #ddd; vertical-align: text-bottom; justify-content: center; align-items: center; min-width: 190px; text-align: center; min-height: 40px; }
-span.Selectable.marking-selected {background: #fff716; cursor: pointer;} */
 .marking-quiz-data span {display: inline; line-height: 30px; font-weight: 400;}
 span.Selectable:hover {text-decoration: underline;}
 .review_submit .modal-dialog {max-width: 350px; margin-left: auto; margin-right: auto;}
