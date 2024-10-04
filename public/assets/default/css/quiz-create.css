@@ -3,7 +3,7 @@ Questions Builder style start @
 ******************************/
 
 /* Questions Builder Stage style start */
-.rureraform-builder {background-color: #fff;padding: 20px 20px 60px 20px; min-height: -webkit-fill-available;border-radius: 3px;padding-top: 118px !important; border: 1px solid #d4d4d4; border-top-color: transparent;}
+.rureraform-builder {background-color: #fff;padding: 20px 20px 60px 20px; min-height: auto;border-radius: 3px;padding-top: 118px !important; border: 1px solid #d4d4d4; border-top-color: transparent;}
 .rureraform-form-editor .rureraform-form {max-width: 740px;}
 .rureraform-form-editor {margin-left: 0;}
 /* Questions Builder Stage style End */
