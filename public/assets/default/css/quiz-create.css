@@ -24,7 +24,7 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 .rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .far, .rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fal, 
 .rureraform-toolbar-list a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {margin-left: 0;}
 .rureraform-toolbar-list>li>a:hover {color: #169F85;background: #f8f8f8;}
-.rureraform-toolbar-list>li>ul {position: absolute;z-index: 99;top: 38px;left: 0px;display: none;background: #fff;border: 1px solid #ccc;	box-sizing: border-box;	width: 120px;box-shadow: 2px 2px 10px -5px rgba(0,0,0,0.9);white-space: nowrap;overflow: hidden;height: auto;margin: 0;padding: 0;}
+.rureraform-toolbar-list>li>ul {position: absolute;z-index: 99;top: 38px;left: 0;display: none;background: #fff;border: 1px solid #ccc;	box-sizing: border-box;	width: 120px;box-shadow: 2px 2px 10px -5px rgba(0,0,0,0.9);white-space: nowrap;overflow: hidden;height: auto;margin: 0;padding: 0;}
 .rureraform-toolbar-list>li:hover>ul {display: block;}
 .rureraform-toolbar-list>li>ul>li {text-align: left;position: relative;	height: 32px;display: block;line-height: 32px;margin: 0;padding: 0;}
 .rureraform-toolbar-list>li>ul>li>a {text-align: left;height: 32px;	display: block;	line-height: 32px;letter-spacing: normal;background-color: transparent;color: #2f353b;font-size: 13px;margin: 0;padding: 0 10px;text-decoration: none;box-shadow: none;outline: none;border: none;transition-duration: .3s;-webkit-transition-duration: .3s;}
@@ -40,14 +40,14 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margin-top: 0;}
 }
 @media screen and (max-width: 600px) {
-	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 0px;}
-	html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: 0px;}
+	html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 0;}
+	html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: 0;}
 }
 /* Toolbar Buttons style end */
 
 /* Columns Selection Style Start */
 .rureraform-admin-editor * {box-sizing: border-box;}
-.rureraform-form {position: relative;max-width: 960px;width: 96%;margin: 0px auto;display: none;}
+.rureraform-form {position: relative;max-width: 960px;width: 96%;margin: 0 auto;display: none;}
 .rureraform-elements {min-height: 60px;}
 .rureraform-element {width: 100%;outline: 1px dashed #f3f1f1 !important;height: auto !important;margin-top: 10px;margin-bottom: 10px;padding: 10px;display: block !important;visibility: visible !important;opacity: 1 !important;}
 .rureraform-element:hover {outline: 2px solid #26B99A !important;}
@@ -257,7 +257,7 @@ Questions Builder style End
 .lms-quiz-create .rureraform-dialog-content-html {padding: 30px 50px;}
 .lms-quiz-create .rureraform-dialog-message {text-align: center;}
 .lms-quiz-create .rureraform-dialog-buttons {box-sizing: border-box; position: absolute; left: 0; right: 0; bottom: 0; height: auto; line-height: 48px; text-align: center; border-top: 1px solid #f0f0f0; padding: 12px 0;}
-.lms-quiz-create .rureraform-dialog-button {display: inline-block; line-height: 40px; height: 40px; min-width: 140px; margin: 0 5px 0px 5px; font-size: 15px; font-weight: 400; text-align: center;	white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;	user-select: none; background-image: none; border: 1px solid transparent; border-radius: 3px; transition-duration: .3s; -webkit-transition-duration: .3s; color: #fff; background: #26B99A; border: 1px solid #169F85; text-decoration: none; outline: none;	box-shadow: none; box-sizing: border-box; padding: 0 1em;}
+.lms-quiz-create .rureraform-dialog-button {display: inline-block; line-height: 40px; height: 40px; min-width: 140px; margin: 0 5px 0 5px; font-size: 15px; font-weight: 400; text-align: center;	white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;	user-select: none; background-image: none; border: 1px solid transparent; border-radius: 3px; transition-duration: .3s; -webkit-transition-duration: .3s; color: #fff; background: #26B99A; border: 1px solid #169F85; text-decoration: none; outline: none;	box-shadow: none; box-sizing: border-box; padding: 0 1em;}
 .lms-quiz-create .rureraform-dialog-button-cancel {color: #222; background: #d0d0d0; border: 1px solid #c0c0c0;}
 .lms-quiz-create .rureraform-dialog-button-disabled {opacity: 0.3; cursor: default !important;}
 .lms-quiz-create .rureraform-dialog-button:active {background-image: none; outline: 0; -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125); box-shadow: inset 0 3px 5px rgba(0,0,0,.125); text-decoration: none; color: #fff; background: #169F85; background-image: none; outline: none; box-shadow: none; transform:translateY(2px);	-webkit-transform:translateY(2px);}
@@ -274,7 +274,7 @@ Questions Builder style End
 .lms-quiz-create .rureraform-admin-create {position: fixed !important; box-sizing: border-box; z-index: 99981; top: 50%; left: 50%;	width: 480px; height: 190px; background: #ffffff; transform:translate(-50%, -50%);	-webkit-transform:translate(-50%, -50%); box-shadow: 3px 3px 20px -5px #000000; overflow: hidden; transition-property: transform; transition-timing-function: ease-in-out;	transition-duration: 300ms;}
 .lms-quiz-create .rureraform-admin-create-content {height: 200px; padding: 32px 32px; overflow-x: hidden; overflow-y: hidden; background: #ffffff;	position: relative;}
 .lms-quiz-create .rureraform-admin-create-content input, .rureraform-admin-create-content input:focus, 
-.rureraform-admin-create-content input:active {font-size: 16px;	font-weight: normal; border-radius: 3px; padding: 0 1.6em; line-height: 52px; border: 1px solid #CCC; border-spacing: 0; font-family: arial, verdana; box-sizing: border-box; box-shadow: none; margin: 0;	background: #FFF; height: 52px; min-width: 0px; max-width: 100%; outline: none; width: 100%; text-align: center;}
+.rureraform-admin-create-content input:active {font-size: 16px;	font-weight: normal; border-radius: 3px; padding: 0 1.6em; line-height: 52px; border: 1px solid #CCC; border-spacing: 0; font-family: arial, verdana; box-sizing: border-box; box-shadow: none; margin: 0;	background: #FFF; height: 52px; min-width: 0; max-width: 100%; outline: none; width: 100%; text-align: center;}
 .lms-quiz-create .rureraform-admin-popup {box-sizing: border-box; z-index: 99981; width: 100%; height: auto; background: #ffffff; display: none; overflow: hidden;}
 .lms-quiz-create #rureraform-stylemanager {z-index: 99983;}
 .lms-quiz-create .rureraform-admin-popup * {box-sizing: border-box;}
