@@ -904,8 +904,8 @@ span.seperator_line {border:3px solid; border-color:#000; width: 50px; display: 
 /* .draggable-items {display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; margin-top: 40px;}
 .draggable-items .ui-draggable {color: #666; height: auto; margin: 0;}
 .draggable-items .ui-draggable span {color: #999; vertical-align: middle;} */
-.droppable_area, .lms-quiz-section .droppable_area {display:inline-flex; height: auto; padding: 0; margin: 0; border-radius: 0; border-bottom: 2px dotted #ddd; vertical-align: text-bottom; justify-content: center; align-items: center; min-width: 190px; text-align: center; min-height: 40px; }
-span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
+/* .droppable_area, .lms-quiz-section .droppable_area {display:inline-flex; height: auto; padding: 0; margin: 0; border-radius: 0; border-bottom: 2px dotted #ddd; vertical-align: text-bottom; justify-content: center; align-items: center; min-width: 190px; text-align: center; min-height: 40px; }
+span.Selectable.marking-selected {background: #fff716; cursor: pointer;} */
 .marking-quiz-data span {display: inline; line-height: 30px; font-weight: 400;}
 span.Selectable:hover {text-decoration: underline;}
 .review_submit .modal-dialog {max-width: 350px; margin-left: auto; margin-right: auto;}
