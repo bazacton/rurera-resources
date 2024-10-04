@@ -1,17 +1,16 @@
-html:has(.quiz-topbar) {
-    margin-left: calc(100vw - 100%);
-	margin-right: 0;
-    overflow: hidden;
-}
-body:has(.quiz-topbar) {
-    overflow: hidden;
-    overflow-y: auto;
-    scrollbar-gutter: stable both-edges;
-}
-
 /************************************ 
  Quiz Top-Bar Style Start
 *************************************/
+html:has(.quiz-topbar) {
+  margin-left: calc(100vw - 100%);
+margin-right: 0;
+  overflow: hidden;
+}
+body:has(.quiz-topbar) {
+  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-gutter: stable both-edges;
+}
 .quiz-topbar, .read-quiz-info ~ .read-quiz-content .quiz-topbar {background-color: #4c5387; padding: 15px 0 15px; position: relative; z-index: 1; width: 100%; }
 .quiz-topbar .row {align-items: center;}
 .quiz-top-info p,
@@ -68,6 +67,7 @@ body:has(.quiz-topbar) {
 /************************************ 
  Quiz Top-Bar Style End
 *************************************/
+
 /************************************ 
  Quiz Read Info Style Start
 *************************************/
