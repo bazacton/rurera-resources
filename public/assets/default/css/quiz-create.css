@@ -126,7 +126,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .rurera-in-row {display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start;}
 .rurera-in-row .rurera-in-row {width: 100%;}
 .rurera-in-row .field-holder,
-.rurera-in-row .form-field {width: 31.888%;}
+.rurera-in-row .form-field {width: 31.555%;}
 .spells-quiz-from .lms-radio-select.rurera-in-row {align-items: center; justify-content: center; padding: 15px 15px 0;}
 .spells-quiz-from .rurera-in-row .field-holder,
 .spells-quiz-from .rurera-in-row .form-field {width: 20%;}
@@ -172,6 +172,15 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /* Multi Response List Style End */
 
 /* Sortable List Style Start */
+.lms-sorting-fields span {line-height: normal; display: block; font-size: 15px;}
+.lms-sorting-fields .field-holder {border: 2px solid #ddd; border-radius: 8px; border-bottom-width: 4px; padding:16px 15px; cursor: all-scroll; position: relative; height: auto; min-width: 130px; text-align: left;}
+.lms-sorting-fields.multi-lines {flex-direction: column; align-items: flex-start; margin-left: 0; margin-right: 0;}
+.lms-sorting-fields.multi-lines .field-holder {margin: 0 0 10px; width: 100%; visibility: visible !important;}
+.lms-sorting-fields.multi-lines .field-holder:last-child {margin-bottom: 0;}
+.sort-icon {height: 20px; width: 25px; display: inline-block; vertical-align: middle; }
+.sort-icon span,
+.lms-quiz-section .sort-icon span {height: 3px; background-color: #999; margin-bottom: 4px; display: block; }
+.lms-sorting-fields .sort-icon {position: absolute; right: 15px; top: 50%; transform: translateY(-50%); }
 /* Sortable List Style End */
 
 /* Question Label Style Start */
