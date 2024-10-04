@@ -29,6 +29,7 @@ body:has(.quiz-topbar) {
 .quiz-topbar .quiz-type-icon {margin-right: 15px; max-width: 100%; width: 60px; object-fit: contain;}
 .lms-quiz-section .quiz-topbar p,
 .learning-page .quiz-topbar p {font-weight: 600; font-size: 1.25rem; text-transform: uppercase;}
+.quiz-topbar .close-btn {min-width: 45px; min-height: 45px;}
 /************************************ 
  Quiz Top-Bar Style End
 *************************************/
@@ -115,7 +116,6 @@ body:has(.quiz-topbar) {
 .question_inactivity_modal .inactivity-controls .continue-btn,
 .activity-actions .continue-btn {background-color: #29a746; min-width: auto; border-radius: 3px; margin-right: 0;}
 .inactivity-controls .pause-quiz {background-color: var(--primary); color: #fff; display: inline-flex; align-items: center; justify-content: center; border-radius: 3px; padding: 8px 0; flex: 0 0 46%; max-width: 46%;}
-.quiz-topbar .close-btn {min-width: 45px; min-height: 45px;}
 .prev-btn,
 .next-btn {min-width: auto; padding: 0 18px; position: relative;}
 .review-btn svg,
