@@ -1,18 +1,18 @@
-@import url('panel-pages/left-menu.css');
-@import url('panel-pages/analytics.css');
-@import url('panel-pages/books_pages.css');
-@import url('panel-pages/gamepage.css');
-@import url('panel-pages/learn1.css');
-@import url('panel-pages/profile.css');
-@import url('panel-pages/quest_list.css');
-@import url('panel-pages/refferals.css');
-@import url('panel-pages/schoolzone.css');
-@import url('panel-pages/shop.css');
-@import url('panel-pages/textpages.css');
-@import url('panel-pages/timestable.css');
-@import url('panel-pages/wordlist.css');
+/*@import url('panel-pages/left-menu.css');*/
+/*@import url('panel-pages/analytics.css');*/
+/*@import url('panel-pages/books_pages.css');*/
+/*@import url('panel-pages/gamepage.css');*/
+/*@import url('panel-pages/learn1.css');*/
+/*@import url('panel-pages/profile.css');*/
+/*@import url('panel-pages/quest_list.css');*/
+/*@import url('panel-pages/refferals.css');*/
+/*@import url('panel-pages/schoolzone.css');*/
+/*@import url('panel-pages/shop.css');*/
+/*@import url('panel-pages/textpages.css');*/
+/*@import url('panel-pages/timestable.css');*/
+/*@import url('panel-pages/wordlist.css');*/
 /**/
-
+.table-responsive .rewards-table
 html:has(.panel-sidebar) {
     margin-left: calc(100vw - 100%);
     margin-right: 0;
