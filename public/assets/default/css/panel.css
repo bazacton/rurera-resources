@@ -11,7 +11,7 @@
 @import url('panel-pages/textpages.css');
 @import url('panel-pages/timestable.css');
 @import url('panel-pages/wordlist.css');
-/**/
+
 
 html:has(.panel-sidebar) {
     margin-left: calc(100vw - 100%);
