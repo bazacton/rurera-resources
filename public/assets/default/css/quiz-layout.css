@@ -573,8 +573,8 @@ Lms Quiz Wf Style Start
 .textarea_lines textarea::-moz-placeholder {color: #999;}
 .textarea_lines textarea:-ms-input-placeholder {color: #999;}
 /* draggable-handle style */
-.ui-draggable.ui-draggable-handle {cursor: all-scroll;border: 2px solid #ddd;border-bottom-width: 4px;line-height: normal;text-align: center;border-radius: 8px;margin: 3px 6px 0 0;color: #333;background-color: #fdfdfd;padding: 4px 25px 8px;width: auto;}
-.draggable-items .ui-draggable:hover {background-color: #f8f8f8;}
+/* .ui-draggable.ui-draggable-handle {cursor: all-scroll;border: 2px solid #ddd;border-bottom-width: 4px;line-height: normal;text-align: center;border-radius: 8px;margin: 3px 6px 0 0;color: #333;background-color: #fdfdfd;padding: 4px 25px 8px;width: auto;}
+.draggable-items .ui-draggable:hover {background-color: #f8f8f8;} */
 .ui-icon-close {cursor: pointer;}
 .image-field-box{position:absolute !important;}
 .input-holder:empty {display: none;}
