@@ -157,3 +157,19 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /***************************** 
 Questions Builder style End 
 ******************************/
+
+.lms-element-properties{width:100%;}
+.lms-quiz-create .rureraform, .rureraform-admin {font-size: 14px; font-family: arial;}
+.lms-quiz-create #uap-body .rureraform-admin {margin: 0;}
+.lms-quiz-create .fa, .far, .fas {font-family: "Font Awesome 5 Free" !important;}
+.lms-quiz-create .fa, .fas {font-weight: 900 !important;}
+.lms-quiz-create .rureraform-static {position: static !important; margin: 0; height: 100%; overflow: hidden}
+.lms-quiz-create .rureraform-tooltip-content {display: none;}
+.lms-quiz-create .rureraform-fa-noicon:before {content: "-";}
+.lms-quiz-create .rureraform-half {width: 50%;}
+.lms-quiz-create .rureraform-third {width: 33.3333% !important;}
+.lms-quiz-create .lms-element-properties .rureraform-third {width: 100% !important;}
+.lms-quiz-create .rureraform-240 {width: 240px;	min-width: 240px;}
+.lms-quiz-create .rureraform-red {color: #c00000;}
+.lms-quiz-create .rureraform-number {width: 100px !important; text-align: right;}
+.lms-quiz-create .rureraform-number input[type="text"]{text-align: right;}
