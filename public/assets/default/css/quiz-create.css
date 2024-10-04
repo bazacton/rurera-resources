@@ -179,6 +179,9 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /* Separator Style End */
 
 /* Draggable Style Start */
+.draggable-items {display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; margin-top: 40px;}
+.draggable-items .ui-draggable {color: #666; height: auto; margin: 0;}
+.draggable-items .ui-draggable span {color: #999; vertical-align: middle;}
 /* Draggable Style End */
 
 /* Highlight Word/Sentence Style Start */
