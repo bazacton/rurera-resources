@@ -160,7 +160,6 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .lms-checkbox-img.image-right .form-field label:after {font-size: 18px; top: 50%; margin: 2px 0 0 0; height: 30px; width: 30px; text-align:center; transform:translateY(-50%); left: 12px; right: auto;}
 .lms-checkbox-img.image-right .form-field input[type="checkbox"]:checked ~ label:before {opacity: 1;}
 .lms-checkbox-img.image-right .form-field input[type="checkbox"]:checked ~ label:after {transform:translateY(-50%);}
-/*Multi Response images style End*/
 /* Image Static Style End  */
 
 /* Sortable List Style Start */
