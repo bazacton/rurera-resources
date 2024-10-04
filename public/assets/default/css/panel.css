@@ -12,7 +12,6 @@
 /*@import url('panel-pages/timestable.css');*/
 /*@import url('panel-pages/wordlist.css');*/
 /**/
-.table-responsive .rewards-table
 html:has(.panel-sidebar) {
     margin-left: calc(100vw - 100%);
     margin-right: 0;
