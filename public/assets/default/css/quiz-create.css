@@ -76,21 +76,8 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 .rureraform-row.rureraform-element [class*="rureraform-col-"] {float: none; display: inline-block; margin-right: -4px; vertical-align: middle;}
 /* Columns Selection Style End */
 
-/* Questions Builder Label Style Start */
-.question-label {position: relative; padding-bottom: 10px;}
-.question-label span,
-.lms-quiz-section .question-label span {margin: 0;padding: 0;border-radius: 6px;line-height: normal;text-align: left;border: 0;display: inline-block;vertical-align: middle;width: 100%;position: relative; overflow: hidden; border-left: 0; color: #5e5c5c;font-weight: 700;font-size: 25px;}
-.spells-quiz-from .question-label {margin-bottom: 20px;padding: 0 15px 10px;}
-.spells-quiz-from .question-label span {text-align: center; line-height: 31px;}
-.quiz-group .rureraform-column-label {margin-bottom: 15px;}
-.quiz-group .rureraform-column-label:has(label:empty) {display: none;}
-/* Questions Builder Label Style End */
-
 /* Question Templates Style Start */
-
 /* Question Templates Style End */ 
-/* Question Templates Style End */
-
 
 /* Dropdowns/input Style Start */
 /* Dropdowns/input Style End */
@@ -179,6 +166,13 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /* Sortable List Style End */
 
 /* Question Label Style Start */
+.question-label {position: relative; padding-bottom: 10px;}
+.question-label span,
+.lms-quiz-section .question-label span {margin: 0;padding: 0;border-radius: 6px;line-height: normal;text-align: left;border: 0;display: inline-block;vertical-align: middle;width: 100%;position: relative; overflow: hidden; border-left: 0; color: #5e5c5c;font-weight: 700;font-size: 25px;}
+.spells-quiz-from .question-label {margin-bottom: 20px;padding: 0 15px 10px;}
+.spells-quiz-from .question-label span {text-align: center; line-height: 31px;}
+.quiz-group .rureraform-column-label {margin-bottom: 15px;}
+.quiz-group .rureraform-column-label:has(label:empty) {display: none;}
 /* Question Label Style End */
 
 /* Separator Style Start */
@@ -336,7 +330,7 @@ Questions Builder style End
 .lms-quiz-create .rureraform-style-save-row input[type="text"], .rureraform-style-save-row input[type="number"], .rureraform-style-save-row select,
 .lms-quiz-create .rureraform-properties-content input[type="text"],.rureraform-properties-content input[type="number"], 
 .rureraform-properties-content select, .rureraform-properties-content input[type="email"], .rureraform-properties-content input[type="password"], 
-.rureraform-properties-content textarea, .rureraform-bulk-editor textarea {font-size: 14px; font-weight: normal; border-radius: 3px; padding: 0 0.8em; line-height: 40px; border: 1px solid #CCC; border-spacing: 0; font-family: arial, verdana; box-sizing: border-box; box-shadow: none; margin: 0;	/* background: #FFF; */ height: 40px; min-width: 0; max-width: 100%; outline: none; width: 100%;}
+.rureraform-properties-content textarea, .rureraform-bulk-editor textarea {font-size: 14px; font-weight: normal; border-radius: 3px; padding: 0 0.8em; line-height: 40px; border: 1px solid #CCC; border-spacing: 0; font-family: arial, verdana; box-sizing: border-box; box-shadow: none; margin: 0;	height: 40px; min-width: 0; max-width: 100%; outline: none; width: 100%;}
 .lms-quiz-create .rureraform-properties-content select {height: auto !important; padding: 0.5em 0.8em;}
 .lms-quiz-create .rureraform-properties-content .rureraform-properties-options-item select {height: 40px !important; line-height: normal;}
 .lms-quiz-create .rureraform-properties-content textarea {height: 10em !important; line-height: 1.4; padding: 0.4em 0.8em;}
