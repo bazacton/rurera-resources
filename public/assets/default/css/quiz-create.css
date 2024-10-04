@@ -148,6 +148,8 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .row-fields .lms-radio-select label:after {width: 0; transform: none;}
 .lms-radio-select input[type=radio] ~ label {padding-right: 50px;}
 .spells-quiz-from .lms-radio-select label {max-height: 50px; padding-right: 15px !important; justify-content: center;}
+.lms-sorting-fields.inline-fields {margin: 0 -8px;}
+.lms-radio-select .field-holder {border: 0; padding: 0; height: auto;}
 /* True False Style End */
 
 /* File Attachment Style Start */
