@@ -19,20 +19,9 @@ Left SideBar-menu Start
 .key-item .key-progress {width: calc(100% - 76px); padding: 0 0 0 10px;}
 .key-item .horizontal .progress-box {height: 6px; max-width: 100%; min-width: 100%;}
 .key-item .levels-progress.horizontal {margin-top: 0; gap: 0;}
-.key-date-select {
-    text-align: right;
-    margin: 0 0 10px;
-}
-.key-date-select button {
-    height: auto;
-    padding: 0;
-    border: 0;
-}
-.key-statistics .swiper-slide .key-item:last-child {
-    border: 0;
-    padding: 0;
-    margin: 0;
-}
+.key-date-select {text-align: right; margin: 0 0 10px;}
+.key-date-select button {height: auto; padding: 0; border: 0;}
+.key-statistics .swiper-slide .key-item:last-child {border: 0; padding: 0; margin: 0;}
 .key-statistics .swiper {
     overflow: hidden;
     position: relative;
