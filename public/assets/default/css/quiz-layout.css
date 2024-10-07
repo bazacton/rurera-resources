@@ -781,3 +781,6 @@ form .marks,
     padding: 12px;
 }
 /*Lms Top Content Style End*/
+.hide {
+  display: none !important;
+}
