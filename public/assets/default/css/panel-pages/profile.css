@@ -167,7 +167,7 @@ address .info-list-label {color: #64748b;}
 .dropdown-menu.user-profile-dropdown .user-nav-list .user-list-email {display: block; color: #aeb3b9; font-size: 12px !important; font-weight: 500;}
 .dropdown-menu.user-profile-dropdown .user-nav-detail {display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 5px 0;}
 .dropdown-menu.user-profile-dropdown .user-nav-detail img {width: 100px;height: 100px;object-fit: contain; margin-bottom: 10px;}
-.user-profile-dropdown .nav-logout {display: inline-flex;align-items: center; gap: 10px;flex-wrap: wrap;border: 0; min-width: 175px;width: auto;padding: 0 0 0 20px; margin-bottom: 10px; justify-content: center;}
+.user-profile-dropdown .nav-logout {display: inline-flex;align-items: center; gap: 10px;flex-wrap: wrap;border: 0; min-width: 175px;width: auto;padding: 0; margin-bottom: 10px; justify-content: center; width: 100%;}
 .user-profile-dropdown .nav-logout span {font-weight: 500;color: var(--primary);}
 .user-profile-dropdown .nav-logout img,
 .dropdown-menu.user-profile-dropdown .user-nav-list img {
