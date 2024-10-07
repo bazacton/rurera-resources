@@ -564,7 +564,9 @@ a.db-back-btn {
 .panel-content .school-zone-data.leaderboard-data .leaderboard>li.lms-performace-des .sr-no { width: 25%; }
 .panel-content .school-zone-data.leaderboard-data .leaderboard>li.lms-performace-des .sr-no span { font-size: 16px; font-weight: 400; }
 /* Timestable Showdown Mode style End */
-
+.hide {
+    display: none !important;
+}
 /*****************************
 TimesTable Page | Student Panel Style End
 *****************************/
