@@ -124,15 +124,6 @@ body .range-slider_thumb {background-color: #fff;}
 .panel-content .webinar-card .image-box:after {border-radius: 10px 0 0 10px;}
 
 .filter-mobile-btn {display: none;}
-
-.chart-filters .form-group:has(select) {margin-left: auto; display: inline-flex; align-items: center; gap: 10px; margin-bottom: 0; }
-.chart-filters .form-group:has(select) .input-label {margin-bottom: 0;}
-.filters-list {width: 100%;}
-.chart-wraper .sats-summary {border-radius: 0; border: 0; margin: 0 0 25px; padding: 0 0 25px; border-bottom: 1px solid #ededed;}
-.chart-wraper .chart-holder {background-color: #fff; padding: 0;}
-.chart-summary-fields {background-color: #fff; padding: 30px;}
-.chart-summary-fields h3 span {display: block; padding-top: 10px; line-height: normal;}
-.chart-summary-fields h3 img {width: 50px; height: 50px; object-fit: contain;}
 .lms-element-nav .planner-sub-links {margin: 0; position: absolute; top: 100%; left: 0; background-color: var(--primary); padding: 5px 10px; border-radius: 50px; text-align: center; z-index: 1; min-width: 90px; transition: all .5s ease; opacity: 0; visibility: hidden;}
 .lms-element-nav .planner-sub-links ul {display: flex; gap: 8px; margin: 0; padding: 0;}
 .planner-sub-links a {color: #fff;}
