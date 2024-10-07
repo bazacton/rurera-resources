@@ -63,6 +63,7 @@ Lms Products Top Header Style End
 /*************************************
 Product Tabs Slider Style Start
 *************************************/
+.product-tabs-section.panel-border {border-radius: 10px;}
 .product-tabs {background-color: #fff; padding: 0; border-radius: 8px; box-shadow: 0 12px 23px 0 rgba(62,73,84,.04);}
 .product-tabs .nav-tabs {border: 0; margin: 0 0 30px; border-bottom: 1px solid #ddd; padding: 0 30px;}
 .product-tabs .nav-tabs .nav-link {background-color: inherit; border: 0; padding: 22px 0; margin-right: 25px; font-weight: 500; position: relative; border-bottom: 2px solid transparent;}

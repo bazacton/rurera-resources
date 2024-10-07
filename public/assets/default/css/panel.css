@@ -139,8 +139,6 @@ body .range-slider_thumb {background-color: #fff;}
 .output input:focus {outline: none; border: 0px;}
 .output ::-webkit-input-placeholder {color: white; text-align: center; font-size: 1em;}
 /* Vertical Keyboard Style End */
-.product-tabs-section.panel-border {border-radius: 10px;}
-
 .graph-data-ul li,
 .analytics-data-ul li {position: relative;}
 .graph-data-ul li .sub-dropdown,
