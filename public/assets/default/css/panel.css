@@ -1773,3 +1773,6 @@ User Verticle Tabs Style Start
 .spells-quiz-from .word-cloud-box {max-height: 130px; min-height: 130px; width: 130px; list-style: none;}
 .learning-page.type-vocabulary:has(.spells-quiz-sound) .word-cloud-box {margin: -25px auto 35px;}
 
+.hide {
+    display: none;
+}
