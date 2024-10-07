@@ -66,96 +66,31 @@ Left SideBar-menu Start
 .panel-content .alert-warning {margin-top: 10px !important;font-weight: 500 !important;color: #343434;background-color: rgba(255, 171, 0, .44) !important;border-color: #ffab00 !important;}
 .panel-content .alert {position: relative; padding: 1rem !important;margin-bottom: 0; border: 1px solid transparent; border-radius: 10px; margin-top: 10px; font-weight: 500; display: flex; align-items: center; justify-content: space-between;}
 .panel-content .section-title ~ .alert {margin-top: 10px;}
-.mobile-app-card h3 {
-    font-size: 24px;
-    font-weight: 400;
-}
-.mobile-app-card h3 span {
-    font-weight: 600;
-}
-.mobile-app-card .button-controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-.mobile-app-card .button-controls a {
-    color: #fff;
-}
-.mobile-app-card .button-controls .btn-light {
-    color: #343434;
-}
-.mobile-app-card .card {
-    padding: 30px 30px;
-    border-radius: .625rem;
-}
-.panel-right-sidebar .card-body {
-    padding: 0;
-}
-.dashboard .account-balance .account-balance-icon {
-    width: 65px;
-    height: 65px
-}
+.mobile-app-card h3 {font-size: 24px; font-weight: 400;}
+.mobile-app-card h3 span {font-weight: 600;}
+.mobile-app-card .button-controls {display: flex; align-items: center; justify-content: center; gap: 10px;}
+.mobile-app-card .button-controls a {color: #fff;}
+.mobile-app-card .button-controls .btn-light {color: #343434;}
+.mobile-app-card .card {padding: 30px 30px; border-radius: .625rem;}
+.panel-right-sidebar .card-body {padding: 0;}
+.dashboard .account-balance .account-balance-icon {width: 65px; height: 65px;}
 .dashboard-stats,
-.dashboard-stats:hover {
-    background-color: #fff !important;
-    transition: .5s
-}
-.shboard-stats:hover {
-    box-shadow: 0 8px 23px 0 rgba(62, 73, 84, .15)
-}
-.dashboard-stats .stat-icon {
-    width: 90px;
-    min-width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-.dashboard-stats .stat-icon img {
-    width: 42px;
-    height: 42px
-}
-.dashboard-stats .stat-icon.requests {
-    background-image: linear-gradient(135deg, #11c99c, #00e31d);
-    box-shadow: 0 3px 10px 0 rgba(91, 255, 113, .4)
-}
-.dashboard-stats .stat-icon.monthly-sales {
-    background-image: linear-gradient(135deg, #f761a1 10%, #8c1bab);
-    box-shadow: 0 3px 10px 0 rgba(236, 108, 224, .4)
-}
-.dashboard-stats .stat-icon.support-messages {
-    background-image: linear-gradient(135deg, #ff0844, #ffb199);
-    box-shadow: 0 3px 10px 0 rgba(255, 85, 85, .26)
-}
-.dashboard-stats .stat-icon.comments {
-    background-image: linear-gradient(135deg, #3c8ce7 10%, #00eaff);
-    box-shadow: 0 3px 10px 0 rgba(68, 198, 206, .4)
-}
-.dashboard-stats .stat-icon.stat-icon-chapters {
-    background-image: linear-gradient(180deg, #11c99c, #00e31d)
-}
-.dashboard-stats .stat-icon.stat-icon-sessions {
-    background-image: linear-gradient(180deg, #ffb199, #ff0844)
-}
-.dashboard-stats .stat-icon.stat-icon-pending-quizzes {
-    background-image: linear-gradient(180deg, #f761a1, #8c1bab)
-}
-.dashboard-stats .stat-icon.stat-icon-pending-assignments {
-    background-image: linear-gradient(180deg, #3c8ce7, #00eaff)
-}
-.noticeboard .noticeboard-item {
-    border-bottom: 1px solid #ececec
-}
+.dashboard-stats:hover {background-color: #fff !important; transition: .5s;}
+.shboard-stats:hover {box-shadow: 0 8px 23px 0 rgba(62, 73, 84, .15);}
+.dashboard-stats .stat-icon {width: 90px; min-width: 90px; height: 90px; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
+.dashboard-stats .stat-icon img {width: 42px; height: 42px;}
+.dashboard-stats .stat-icon.requests {background-image: linear-gradient(135deg, #11c99c, #00e31d); box-shadow: 0 3px 10px 0 rgba(91, 255, 113, .4);}
+.dashboard-stats .stat-icon.monthly-sales {background-image: linear-gradient(135deg, #f761a1 10%, #8c1bab); box-shadow: 0 3px 10px 0 rgba(236, 108, 224, .4);}
+.dashboard-stats .stat-icon.support-messages {background-image: linear-gradient(135deg, #ff0844, #ffb199); box-shadow: 0 3px 10px 0 rgba(255, 85, 85, .26);}
+.dashboard-stats .stat-icon.comments {background-image: linear-gradient(135deg, #3c8ce7 10%, #00eaff); box-shadow: 0 3px 10px 0 rgba(68, 198, 206, .4);}
+.dashboard-stats .stat-icon.stat-icon-chapters {background-image: linear-gradient(180deg, #11c99c, #00e31d);}
+.dashboard-stats .stat-icon.stat-icon-sessions {background-image: linear-gradient(180deg, #ffb199, #ff0844);}
+.dashboard-stats .stat-icon.stat-icon-pending-quizzes {background-image: linear-gradient(180deg, #f761a1, #8c1bab);}
+.dashboard-stats .stat-icon.stat-icon-pending-assignments {background-image: linear-gradient(180deg, #3c8ce7, #00eaff);}
+.noticeboard .noticeboard-item {border-bottom: 1px solid #ececec;}
 .noticeboard .noticeboard-item:last-child,
-.panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse li:last-child {
-    border-bottom: 0
-}
-.noticeboard-item button {
-    padding-left: 10px;
-    padding-right: 10px;
-}
+.panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse li:last-child {border-bottom: 0;}
+.noticeboard-item button {padding-left: 10px; padding-right: 10px;}
 .monthly-sales-card .monthly-sales-chart {
     height: -webkit-max-content;
     height: -moz-max-content;
