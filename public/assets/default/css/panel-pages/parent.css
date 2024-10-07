@@ -30,7 +30,7 @@ Dashboard Right Sidebar Pages Style Start
 .top-navbar .dropdown-menu.user-profile-dropdown .user-nav-list .user-list-email,
 .panel-right-sidebar .dropdown-menu.user-profile-dropdown {min-width: 250px; top: 100% !important; bottom: auto; left: auto !important; right: -10px !important; text-align: center; transform: none !important;}
 .panel-right-sidebar .dropdown-menu.user-profile-dropdown .user-nav-list {padding: 0 !important; border: 0;}
-.panel-right-sidebar .dropdown-menu.user-profile-dropdown .user-nav-list .dropdown-item {padding: 0 0 0 20px !important; margin-bottom: 10px; display: flex; align-items: center;}
+.panel-right-sidebar .dropdown-menu.user-profile-dropdown .user-nav-list .dropdown-item {padding: 0 20px !important; margin-bottom: 10px; display: flex; align-items: center; flex-direction: column;}
 .panel-right-sidebar .dropdown-menu.user-profile-dropdown .user-nav-list .dropdown-item .user-list-name {
     color: var(--primary);
     font-weight: 500;
