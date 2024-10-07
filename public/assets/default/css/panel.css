@@ -1774,5 +1774,5 @@ User Verticle Tabs Style Start
 .learning-page.type-vocabulary:has(.spells-quiz-sound) .word-cloud-box {margin: -25px auto 35px;}
 
 .hide {
-    display: none;
+    display: none !important;
 }
