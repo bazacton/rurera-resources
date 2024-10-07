@@ -404,6 +404,12 @@ label.lms-question-label.wrong span {
 }
 
 /*Question Block Style*/
+.question-area-block.quiz-first-question {
+  height: calc(100vh - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .spells-quiz-info ul {border: 1px solid #bac3ca; border-left: 0; border-right: 0; border-top: 0; display: flex; gap: 15px; justify-content: space-between;}
 .spells-quiz-info ul li {border-left: 1px solid #bac3ca;text-align: center;width: 32%;padding: 15px 0;font-size: 20px;color: #343434;text-transform: uppercase;display: inline-flex;align-items: center;justify-content: center;gap: 5px;}
 .spells-quiz-info ul li:first-child {border-left: 0;}
