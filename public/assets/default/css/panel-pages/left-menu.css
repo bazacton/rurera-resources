@@ -8,72 +8,17 @@ Left SideBar-menu Start
 .key-statistics {padding: 30px; border-radius: 10px; margin: 0 0 35px;}
 .key-header {display: flex;align-items: center;justify-content: space-between;margin: 0 0 20px;}
 .key-statistics .card-title {margin: 0;}
-.card-toolbar button {
-    color: #99a1b7;
-    background-color: #dddddd;
-    border: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    height: 22px;
-    width: 22px;
-    border-radius: 5px;
-}
-.card-toolbar button span {
-    width: 3px;
-    height: 3px;
-    background-color: #99a1b7;
-    border-radius: 100%;
-    margin: 0 1px;
-}
-.card-title span {
-    display: block;
-    font-weight: 400;
-    line-height: normal;
-    font-size: 16px;
-    color: #99a1b7;
-}
-.card-title .card-label {
-    font-weight: 600;
-    color: #343434;
-    font-size: 20px;
-}
-.key-item {
-    border-bottom: 1px dashed #dbdfe9;
-    padding: 0 0 20px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 0 15px;
-}
-.key-social-info {
-    display: inline-flex;
-    flex-direction: column;
-}
-.key-social-info strong {
-    font-size: 28px;
-    padding: 0 0 5px;
-    color: #252f4a;
-}
-.key-social-info span {
-    font-size: 15px;
-    color: #99a1b7;
-    font-weight: 5;
-    line-height: normal;
-}
-.key-item .key-progress {
-    width: calc(100% - 76px);
-    padding: 0 0 0 10px;
-}
-.key-item .horizontal .progress-box {
-    height: 6px;
-    max-width: 100%;
-    min-width: 100%;
-}
-.key-item .levels-progress.horizontal {
-    margin-top: 0;
-    gap: 0;
-}
+.card-toolbar button {color: #99a1b7; background-color: #dddddd; border: 0; padding: 0; align-items: center; justify-content: center;height: 22px; width: 22px;border-radius: 5px;}
+.card-toolbar button span {width: 3px; height: 3px; background-color: #99a1b7; border-radius: 100%; margin: 0 1px;}
+.card-title span {display: block; font-weight: 400; line-height: normal; font-size: 16px; color: #99a1b7;}
+.card-title .card-label {font-weight: 600; color: #343434; font-size: 20px;}
+.key-item {border-bottom: 1px dashed #dbdfe9; padding: 0 0 20px; display: flex; align-items: center; flex-wrap: wrap;margin: 0 0 15px;}
+.key-social-info {display: inline-flex;flex-direction: column;}
+.key-social-info strong {font-size: 28px; padding: 0 0 5px; color: #252f4a;}
+.key-social-info span {font-size: 15px; color: #99a1b7; font-weight: 5; line-height: normal;}
+.key-item .key-progress {width: calc(100% - 76px); padding: 0 0 0 10px;}
+.key-item .horizontal .progress-box {height: 6px; max-width: 100%; min-width: 100%;}
+.key-item .levels-progress.horizontal {margin-top: 0; gap: 0;}
 .key-date-select {
     text-align: right;
     margin: 0 0 10px;
