@@ -269,66 +269,28 @@ Sub Pages Style
 .panel-content .spells-page .listing-search .inline-filters a {min-height: auto; min-width: auto; border: 0; padding: 0 0 20px; border-radius: 0;}
 .panel-content .spells-page  .listing-search .inline-filters:before {height: 6px; width: 100%; position: absolute; left: 0; bottom: -6px; content: ""; background: linear-gradient(to bottom,  rgba(0,0,0,0.05) 0%,rgba(0,0,0,0) 100%);}
 .panel-content .spells-page  .listing-search .inline-filters .active a {box-shadow: 0 -3px 0 0 #1b85fd inset;}
-.spell-levels ul {display: none;flex-wrap: wrap;gap: 30px;justify-content: center;flex-direction: column; padding: 0 20px 20px 30px;}
-.spell-levels li > a {display: inline-flex; height: 62px; width: 68px; text-align: center; background-color: #ddd; border-radius: 100%; align-items: center; justify-content: center; box-shadow: 0 6px 0 1px #b0b0b0; color: #b0b0b0; font-size: 28px; font-weight: 600; position: relative;}
-.spell-levels li > a:before {content: ""; height: 70%; width: 4px; position: absolute; left: 50%; top: 100%; margin-left: -2px; background-color: #b0b0b0; margin-top: 10px;}
-.spell-levels li:last-child a:before{display: none;}
-.spell-levels .treasure > a {background-color: inherit; border-radius: 0; box-shadow: none;}
-.spell-levels {background-color: #fff; border: 2px solid #e5e5e5; border-bottom-width: 4px; border-radius: 8px; padding: 0; margin: 0 0 30px; position: relative;}
 .treasure-mission-layout .spell-levels {background-color: initial;}
-.spell-completed {overflow: hidden;}
-.spell-completed:before {content: "\2713";position: absolute;right: -6px;top: 24px;width: 35px;height: 35px;text-align: center;border-radius: 100%;background-color: #5acb01;color: #fff;line-height: 35px;font-weight: 700;box-shadow: 0 -2px 0 1px rgba(0,0,0,0.2) inset;}
-.spell-levels .completed a {background-color: #8ad1ef; color: #fff; box-shadow: 0 6px 0 1px #2397d2;}
-.spell-levels-top {display: flex; align-items: center;justify-content: space-between;margin: 0;flex-wrap: wrap;padding: 20px; cursor: pointer;}
 .words-count {background-color: #fff; border: 1px solid #e5e5e5; border-radius: 8px; min-width: 160px; text-align: center; min-height: 46px; display: inline-flex; align-items: center; justify-content: center; line-height: normal; border-bottom-width: 4px; color: #9b9b9b; font-weight: 700;}
 .words-count span {margin-right: 5px;}
 .words-count img {margin-right: 8px; width: 15px; object-fit: contain;}
-.spell-levels-top .spell-top-left h3 {margin-bottom: 0; position: relative;}
-.spell-levels.levels-grouping ul li:has(.levels-progress) a:before {margin-top: 10px;}
-.spell-levels.levels-grouping ul li a:before {background-color: #0ebe73;}
-.spell-levels.levels-grouping li.treasure {margin-top: -10px;}
-.spell-levels.levels-grouping li.treasure a:before {height: 40%; margin-top: 5px;}
 .spell-links {display: flex; gap: 15px 40px; align-items: center; margin-top: 20px; margin-bottom: 10px;}
 .spell-links a {color: var(--primary);}
 .levels-progress.circle {font-size: 100px; width: 1em; height: 1em; position: absolute; top: -15px; left: -16px; background: #e5e5e5; border-radius: 50%; overflow: hidden;}
 .levels-progress.circle .progress-box {position: absolute; left: 0; top: 0; width: 1em; height: 1em; clip: rect(0 1em 1em 0.5em);}
 .levels-progress.circle .progress-count {position: absolute; left: 0; top: 0; width: 1em; height: 1em; background: #2397d2; clip: rect(0 1em 1em 0.5em); transform: rotate(180deg); transition: 1.05s;}
-.spell-levels li:has(.levels-progress) {margin-bottom: 80px;}
-.spell-levels li:first-child:has(.levels-progress) {margin-top: 20px;}
-.spell-levels li:has(.levels-progress) a:before {margin-top: 30px;}
 .levels-progress.circle.percent_more .progress-box {clip: rect(0 0.5em 1em 0em);}
 .percent_more:after {position: absolute; left: 0.5em; top: 0em; right: 0; bottom: 0; background: #57cc02; content: "";}
 .circle_inbox {position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; background: #fff; z-index: 3; border-radius: 50%;}
 .percent_text {position: absolute; font-size: 36px; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 3; display: none;}
-.spell-levels-top .spell-top-left {flex-direction: column;display: flex;align-items: flex-start;padding-right: 10px; width: calc(100% - 160px);}
 .words-count.simple {margin-top: 10px; padding: 0; min-height: auto; border: 0; background-color: inherit; min-width: auto; text-transform: uppercase;}
 .levels-progress.horizontal .progress-box {background-color: #e5e5e5; height: 18px; border-radius: 50px; display: block; position: relative; overflow: hidden; min-width: 270px; max-width: 270px;}
 .levels-progress.horizontal {margin-top: 15px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; width: 100%; }
 .horizontal .progress-count {display: block; position: absolute; left: 0; top: 0; height: 100%; border-radius: 50px; background-color: gray; }
 .levels-progress .progress-numbers {color: #cacaca; font-weight: 600;}
-.spell-tooltip-text strong {display: block; color: #b0b0b0; margin: 0 0 10px; }
-.spell-tooltip-text span {color: #666;display: block; }
-.spell-tooltip-text .locked-btn {background-color: #e5e5e5; display: block; text-align: center; padding: 13px 0; line-height: normal; border-radius: 12px; font-size: 15px; font-weight: 600; color: #ababab; text-transform: uppercase; min-height: 46px;}
-.spell-levels li > a:active {box-shadow: 0 4px 0 1px #b0b0b0;}
-.spell-levels li.easy > a:active {box-shadow: 0 4px 0 1px #0f6c9b;}
-.spell-levels .treasure > a:active {box-shadow: none;}
-.spell-levels.levels-grouping li > a {background-color: inherit; height: 80px; width: 80px; box-shadow: none; padding: 0; }
-.spell-levels.levels-grouping {background-color: inherit;}
-.spell-levels.levels-grouping ul {justify-content: flex-start; flex-direction: column; align-items: flex-start;}
-.spell-levels li {display: flex; flex-wrap: wrap; padding: 0; margin: 0 0 58px; position: relative; width: 100%;}
-.spell-levels li:last-child {margin-bottom: 15px;}
-.spell-levels li .spell-tooltip {position: relative; width: calc(100% - 80px); padding: 0 0 0 25px;}
 .levels-grouping li > a .thumb-box {display: inline-block;width: 100%; height: 100%; border-radius: 100%; background-color: #ddd; position: relative; z-index: 3;}
 .levels-grouping li > a .thumb-box img {max-width: 100%;height: 100%; width: 100%; border-radius: 100%; object-fit: fill;}
 .levels-grouping .treasure > a .thumb-box img {object-fit: contain; height: auto; border-radius: 0; }
-.spell-tooltip-text h4 {margin-bottom: 5px;}
 .levels-grouping .spell-tooltip:before {display: none;}
-.spell-levels.levels-grouping li > a:after {content: "\2713"; position: absolute; bottom: -15px; left: 50%; height: 24px; width: 24px; background-color: #15bc76; border-radius: 100%; margin-left: -12px; color: #fff; font-size: 14px; line-height: 24px; box-shadow: 0 0 0 3px #fff; text-align: center; z-index: 3; }
-.spell-levels.levels-grouping li:last-child a:before,
-.spell-levels.levels-grouping li:last-child a:after {display: none;}
-.spell-levels.levels-grouping li.treasure a {box-shadow: none; padding: 0;}
-.spell-levels.levels-grouping li.treasure a .thumb-box {background-color: inherit; }
-.spell-levels.levels-grouping li.treasure a:after {display: none;}
 .levels-grouping .levels-progress.circle {left: -10px;top: -10px;}
 .levels-grouping .circle_inbox {border-radius: 100%; width: 90%; height: 90%; left: 5px; top: 5px;}
 .levels-grouping .percent_more:after,
@@ -375,8 +337,6 @@ Sub Pages Style
 .panel-breadcrumbs li:first-child a:before {display: none;}
 .panel-subheader .info-modal-btn {height: 20px; width: 20px; display: inline-block; cursor: pointer; line-height: 20px; margin-left: 5px; vertical-align: middle;}
 .panel-subheader .info-modal-btn img {max-width: 100%; vertical-align: top; }
-.spell-levels .panel-subheader h2 {display: inline-block; vertical-align: middle; margin-bottom: 0;}
-.treasure-mission-layout .spell-levels .horizontal-list {margin: 0 -15px 220px 0; position: relative;}
 .treasure-stage {width: 100%; display: inline-block; padding-left: 20px; }
 .panel-content .spell-levels .treasure-stage:last-child .horizontal-list {margin-bottom: 100px;}
 .treasure-mission-layout .spell-levels .horizontal-list li {display: inline-flex; width: auto; margin: 0 0 0 7.444%; width: 13.222%; box-sizing: border-box; vertical-align: middle;}
@@ -404,7 +364,6 @@ Sub Pages Style
 .lms-tooltip span {display: block;}
 .lms-tooltip.show,
 .rurera-tooltip:focus .lms-tooltip {visibility: visible; opacity: 1; margin-bottom: 20px;}
-.spell-levels li:has(.rurera-stars) .lms-tooltip {margin-bottom: 50px;}
 .lms-tooltip .tooltip-button {width: 100%; border: 0; background-color: #fff; color: var(--primary); font-size: 16px; text-transform: uppercase; font-weight: 600; height: 48px; border-radius: 10px; margin-top: 15px; box-shadow: 0 -4px 0 rgba(89, 107, 253, 0.1) inset;}
 .treasure-mission-layout .spell-levels .lms-tooltip .tooltip-box img {height: 22px; width: 22px; margin-right: 8px; }
 .rurera-tooltip.dropup .dropdown-menu {opacity: 1; visibility: visible; display: none; transform: none; margin: 0 0 15px; transform: translateX(-50%) !important; left: 50% !important; top: auto !important; bottom: 100%;}

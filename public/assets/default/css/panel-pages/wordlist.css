@@ -42,6 +42,48 @@ Sub Pages Style
 .spell-levels .progress-star.success {background-color: #7aaf77;}
 .spell-levels .progress-star.danger {background-color: #eb4343;}
 .spell-levels .progress-star.improvement {background-color: #ffcc21;}
+.spell-levels ul {display: none;flex-wrap: wrap;gap: 30px;justify-content: center;flex-direction: column; padding: 0 20px 20px 30px;}
+.spell-levels li > a {display: inline-flex; height: 62px; width: 68px; text-align: center; background-color: #ddd; border-radius: 100%; align-items: center; justify-content: center; box-shadow: 0 6px 0 1px #b0b0b0; color: #b0b0b0; font-size: 28px; font-weight: 600; position: relative;}
+.spell-levels li > a:before {content: ""; height: 70%; width: 4px; position: absolute; left: 50%; top: 100%; margin-left: -2px; background-color: #b0b0b0; margin-top: 10px;}
+.spell-levels li:last-child a:before{display: none;}
+.spell-levels .treasure > a {background-color: inherit; border-radius: 0; box-shadow: none;}
+.spell-levels {background-color: #fff; border: 2px solid #e5e5e5; border-bottom-width: 4px; border-radius: 8px; padding: 0; margin: 0 0 30px; position: relative;}
+.spell-completed {overflow: hidden;} 
+.spell-completed:before {content: "\2713";position: absolute;right: -6px;top: 24px;width: 35px;height: 35px;text-align: center;border-radius: 100%;background-color: #5acb01;color: #fff;line-height: 35px;font-weight: 700;box-shadow: 0 -2px 0 1px rgba(0,0,0,0.2) inset;}
+.spell-levels .completed a {background-color: #8ad1ef; color: #fff; box-shadow: 0 6px 0 1px #2397d2;}
+.spell-levels-top {display: flex; align-items: center;justify-content: space-between;margin: 0;flex-wrap: wrap;padding: 20px; cursor: pointer;}
+.spell-levels-top .spell-top-left h3 {margin-bottom: 0; position: relative;}
+.spell-levels.levels-grouping ul li:has(.levels-progress) a:before {margin-top: 10px;}
+.spell-levels.levels-grouping ul li a:before {background-color: #0ebe73;}
+.spell-levels.levels-grouping li.treasure {margin-top: -10px;}
+.spell-levels.levels-grouping li.treasure a:before {height: 40%; margin-top: 5px;}
+.spell-levels li:has(.levels-progress) {margin-bottom: 80px;}
+.spell-levels li:first-child:has(.levels-progress) {margin-top: 20px;}
+.spell-levels li:has(.levels-progress) a:before {margin-top: 30px;}
+.spell-levels-top .spell-top-left {flex-direction: column;display: flex;align-items: flex-start;padding-right: 10px; width: calc(100% - 160px);}
+.spell-tooltip-text strong {display: block; color: #b0b0b0; margin: 0 0 10px; }
+.spell-tooltip-text span {color: #666;display: block; }
+.spell-tooltip-text .locked-btn {background-color: #e5e5e5; display: block; text-align: center; padding: 13px 0; line-height: normal; border-radius: 12px; font-size: 15px; font-weight: 600; color: #ababab; text-transform: uppercase; min-height: 46px;}
+.spell-levels li > a:active {box-shadow: 0 4px 0 1px #b0b0b0;}
+.spell-levels li.easy > a:active {box-shadow: 0 4px 0 1px #0f6c9b;}
+.spell-levels .treasure > a:active {box-shadow: none;}
+.spell-levels.levels-grouping li > a {background-color: inherit; height: 80px; width: 80px; box-shadow: none; padding: 0; }
+.spell-levels.levels-grouping {background-color: inherit;}
+.spell-levels.levels-grouping ul {justify-content: flex-start; flex-direction: column; align-items: flex-start;}
+.spell-levels li {display: flex; flex-wrap: wrap; padding: 0; margin: 0 0 58px; position: relative; width: 100%;}
+.spell-levels li:last-child {margin-bottom: 15px;}
+.spell-levels li .spell-tooltip {position: relative; width: calc(100% - 80px); padding: 0 0 0 25px;}
+.spell-levels.levels-grouping li > a:after {content: "\2713"; position: absolute; bottom: -15px; left: 50%; height: 24px; width: 24px; background-color: #15bc76; border-radius: 100%; margin-left: -12px; color: #fff; font-size: 14px; line-height: 24px; box-shadow: 0 0 0 3px #fff; text-align: center; z-index: 3; }
+.spell-levels.levels-grouping li:last-child a:before,
+.spell-levels.levels-grouping li:last-child a:after {display: none;}
+.spell-levels.levels-grouping li.treasure a {box-shadow: none; padding: 0;}
+.spell-levels.levels-grouping li.treasure a .thumb-box {background-color: inherit; }
+.spell-levels.levels-grouping li.treasure a:after {display: none;}
+.spell-levels .panel-subheader h2 {display: inline-block; vertical-align: middle; margin-bottom: 0;}
+.spell-levels li:has(.rurera-stars) .lms-tooltip {margin-bottom: 50px;}
+.treasure-mission-layout .spell-levels .horizontal-list {margin: 0 -15px 220px 0; position: relative;}
+
+.spell-tooltip-text h4 {margin-bottom: 5px;}
 .spell-quiz-page .quiz-questions-bar-holder {margin-left: 0;}
 .spell-quiz-page .quiz-questions-bar-holder .quiz-questions-bar {width: 100%;}
 .spell-quiz-page .quiz-questions-bar-holder .bar-fill:after {right: -12px;}
