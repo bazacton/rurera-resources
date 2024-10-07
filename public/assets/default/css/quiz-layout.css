@@ -405,7 +405,7 @@ label.lms-question-label.wrong span {
 
 /*Question Block Style*/
 .question-area-block.quiz-first-question {
-  height: calc(100vh - 30px);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
