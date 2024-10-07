@@ -125,20 +125,6 @@ body .range-slider_thumb {background-color: #fff;}
 
 .filter-mobile-btn {display: none;}
 
-.graph-data-ul li,
-.analytics-data-ul li {position: relative;}
-.graph-data-ul li .sub-dropdown,
-.analytics-data-ul li .sub-dropdown {flex-direction: column; position: absolute; top: 100%; right: 0; z-index: 1; background-color: #fff; min-width: 170px; align-items: flex-end; margin-top: -15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 20px 15px 5px; gap: 0; border-radius: 0 0 5px 5px; transition: all .5s ease; visibility: hidden; opacity: 0; text-align: right;}
-.graph-data-ul li.has-child:hover .sub-dropdown,
-.analytics-data-ul li.has-child:hover .sub-dropdown {visibility: visible; opacity: 1; margin-top: 5px;}
-.graph-data-ul li .sub-dropdown a,
-.analytics-data-ul li .sub-dropdown a {padding-bottom: 15px;}
-.graph-data-ul li.has-child > a,
-.analytics-data-ul li.has-child > a {position: relative; padding-right: 14px;}
-.graph-data-ul li.has-child > a:after,
-.analytics-data-ul li.has-child > a:after {content: ""; height: 7px; width: 7px; border: 1px solid #0f1338; position: absolute; top: 50%; margin-top: -11px; right: 0; border-top-color: transparent; border-left-color: transparent; transform: rotate(45deg);}
-.chart-filters .analytics-data-ul a {padding-top: 0;}
-.form-control.child-analytics {background-color: inherit; border: 0; border-radius: 0; height: auto; padding: 0 5px; font-size: 15px; width: auto; display: inline-block;}
 .chart-filters .form-group:has(select) {margin-left: auto; display: inline-flex; align-items: center; gap: 10px; margin-bottom: 0; }
 .chart-filters .form-group:has(select) .input-label {margin-bottom: 0;}
 .filters-list {width: 100%;}
