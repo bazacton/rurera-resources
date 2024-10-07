@@ -1,7 +1,6 @@
 /**********************
 Left SideBar-menu Start
 *************************/
-
 .facebook-card .counted {width: 47%; border: 1px dashed rgba(255, 255, 255, 0.2); flex-direction: column; padding: 15px; border-radius: 5px;}
 .facebook-card .card-body>.d-flex {gap: 15px; margin: 0 0 15px;}
 .facebook-card .counted strong {font-size: 22px; display: block; margin: 0 0 5px;}
@@ -267,26 +266,21 @@ Left SideBar-menu Start
 .panel-border {
     border: 1px solid #ddd;
 }
-
 .border-bottom-4 {
     border-bottom-width: 4px;
 }
-
 .border-radius-10 {
     border-radius: 10px;
 }
-
 .notification-card:hover button,
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse li.active:before {
     background-color: var(--primary)
 }
-
 #nextBadgeChart path {
     stroke-width: 10px;
     stroke-dasharray: 10, 20;
     stroke-linecap: round
 }
-
 .not-verified-alert {
     background-color: #d4efff
 }
@@ -307,50 +301,40 @@ Left SideBar-menu Start
     font-size: 24px;
     font-weight: 400;
 }
-
 .mobile-app-card h3 span {
     font-weight: 600;
 }
-
 .mobile-app-card .button-controls {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-
 .mobile-app-card .button-controls a {
     color: #fff;
 }
-
 .mobile-app-card .button-controls .btn-light {
     color: #343434;
 }
-
 .mobile-app-card .card {
     padding: 30px 30px;
     border-radius: .625rem;
 }
-
 .panel-right-sidebar .card-body {
     padding: 0;
 }
-
 .dashboard .account-balance .account-balance-icon {
     width: 65px;
     height: 65px
 }
-
 .dashboard-stats,
 .dashboard-stats:hover {
     background-color: #fff !important;
     transition: .5s
 }
-
 .shboard-stats:hover {
     box-shadow: 0 8px 23px 0 rgba(62, 73, 84, .15)
 }
-
 .dashboard-stats .stat-icon {
     width: 90px;
     min-width: 90px;
@@ -360,127 +344,102 @@ Left SideBar-menu Start
     align-items: center;
     justify-content: center
 }
-
 .dashboard-stats .stat-icon img {
     width: 42px;
     height: 42px
 }
-
 .dashboard-stats .stat-icon.requests {
     background-image: linear-gradient(135deg, #11c99c, #00e31d);
     box-shadow: 0 3px 10px 0 rgba(91, 255, 113, .4)
 }
-
 .dashboard-stats .stat-icon.monthly-sales {
     background-image: linear-gradient(135deg, #f761a1 10%, #8c1bab);
     box-shadow: 0 3px 10px 0 rgba(236, 108, 224, .4)
 }
-
 .dashboard-stats .stat-icon.support-messages {
     background-image: linear-gradient(135deg, #ff0844, #ffb199);
     box-shadow: 0 3px 10px 0 rgba(255, 85, 85, .26)
 }
-
 .dashboard-stats .stat-icon.comments {
     background-image: linear-gradient(135deg, #3c8ce7 10%, #00eaff);
     box-shadow: 0 3px 10px 0 rgba(68, 198, 206, .4)
 }
-
 .dashboard-stats .stat-icon.stat-icon-chapters {
     background-image: linear-gradient(180deg, #11c99c, #00e31d)
 }
-
 .dashboard-stats .stat-icon.stat-icon-sessions {
     background-image: linear-gradient(180deg, #ffb199, #ff0844)
 }
-
 .dashboard-stats .stat-icon.stat-icon-pending-quizzes {
     background-image: linear-gradient(180deg, #f761a1, #8c1bab)
 }
-
 .dashboard-stats .stat-icon.stat-icon-pending-assignments {
     background-image: linear-gradient(180deg, #3c8ce7, #00eaff)
 }
-
 .noticeboard .noticeboard-item {
     border-bottom: 1px solid #ececec
 }
-
 .noticeboard .noticeboard-item:last-child,
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse li:last-child {
     border-bottom: 0
 }
-
 .noticeboard-item button {
     padding-left: 10px;
     padding-right: 10px;
 }
-
 .monthly-sales-card .monthly-sales-chart {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content
 }
-
 .panel-shadow {
     box-shadow: 0 12px 23px 0 rgba(62, 73, 84, .04)
 }
-
 .conversation-box {
     border-radius: 10px;
     border: 1px solid #ececec
 }
-
 .conversation-box,
 .selected-row {
     background-color: #f7fafd
 }
-
 .panel-sidebar,
 .xs-panel-nav {
     position: fixed;
     background-color: #fff
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title {
     text-transform: uppercase;
     font-weight: 600;
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item a .crown-icon {
     width: 18px;
     vertical-align: middle;
     margin-left: 8px;
 }
-
 .panel-sidebar .sidebar-menu .dropdown-menu li a {
     display: block;
     padding: 5px 15px;
     font-weight: 400;
     text-transform: capitalize;
 }
-
 .conversations-list {
     max-height: 710px;
     overflow: auto
 }
-
 .col-lg-5.conversations-list .table-responsive {
     min-width: 660px;
 }
-
 .conversations-card {
     max-height: 405px;
     overflow: auto
 }
-
 .notification-card {
     border: 1px solid #ddd;
     transition: .3s;
     box-shadow: none;
     padding: 25px 20px !important;
 }
-
 .notification-card .badge {
     display: block;
     width: 16px;
@@ -495,7 +454,6 @@ Left SideBar-menu Start
 .notification-card .notification-title {
     text-transform: capitalize;
 }
-
 .notification-card:hover button {
     color: #fff;
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -508,11 +466,9 @@ Left SideBar-menu Start
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
-
 .panel-sidebar .container {
     padding: 0;
 }
-
 .sidebar-logo {
     display: flex;
     flex-direction: column;
@@ -520,19 +476,16 @@ Left SideBar-menu Start
     align-items: center;
     gap: 8px;
 }
-
 .sidebar-logo img {
     max-width: 50px;
     object-fit: contain;
 }
-
 .sidebar-logo-text {
     font-size: 14px;
     font-weight: 700;
     color: #989898;
     text-transform: uppercase;
 }
-
 .panel-sidebar {
     position: fixed !important;
     top: 55px;
@@ -542,47 +495,39 @@ Left SideBar-menu Start
     height: 100%;
     border-right: 1px solid #dcdcdc;
 }
-
 .rtl .panel-sidebar,
 .rtl .panel-sidebar .sidebar-create-class .sidebar-create-class-btn img {
     left: auto;
     right: 0
 }
-
 .panel-sidebar .panel-sidebar-close {
     position: absolute;
     top: 10px;
     right: 20px;
     display: none
 }
-
 .rtl .panel-sidebar .panel-sidebar-close {
     left: 20px;
     right: auto
 }
-
 .panel-sidebar .user-info .user-avatar {
     width: 100px;
     height: 100px;
     border-radius: 50px
 }
-
 .panel-sidebar .navbar-toggler {
     display: none;
 }
-
 .panel-sidebar .user-info .user-avatar img,
 .xs-panel-nav .user-avatar img {
     border-radius: 50px
 }
-
 .panel-sidebar .user-info .user-name {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
     color: #171347
 }
-
 .panel-sidebar .user-info .create-new-user {
     border-radius: 5px;
     background-color: #f1f1f1;
@@ -593,7 +538,6 @@ Left SideBar-menu Start
     color: #818894;
     pointer-events: none
 }
-
 .panel-sidebar .sidebar-user-stats .sidebar-user-stat-item strong {
     font-size: 16px;
     font-weight: 700;
@@ -601,7 +545,6 @@ Left SideBar-menu Start
     color: #171347;
     pointer-events: none
 }
-
 .panel-sidebar .sidebar-user-stats .sidebar-user-stat-item .stat-name {
     font-size: 14px;
     font-weight: 500;
@@ -609,14 +552,12 @@ Left SideBar-menu Start
     color: #818894;
     pointer-events: none
 }
-
 .panel-sidebar .sidebar-menu {
     height: calc(100% - 100px);
     padding-bottom: 35px;
     overflow: hidden;
     overflow-y: auto;
 }
-
 .panel-sidebar .sidebar-menu .dropdown-menu {
     margin: 10px 0 0;
     width: 100%;
@@ -627,17 +568,14 @@ Left SideBar-menu Start
     padding: 5px 0;
     display: none;
 }
-
 .panel-sidebar .dropdown-toggle:after {
     margin-left: 10px;
 }
-
 .panel-sidebar .sidebar-menu .dropdown-menu.show {
     display: block;
     opacity: 1;
     visibility: visible;
 }
-
 .panel-sidebar .sidebar-menu .dropdown-menu:before {
     background-color: #fff;
     position: absolute;
@@ -650,24 +588,19 @@ Left SideBar-menu Start
     border-left: 1px solid #ddd;
     transform: rotate(45deg);
 }
-
 .panel-sidebar .sidebar-menu.has-user-group {
     height: calc(100% - 455px)
 }
-
 .panel-sidebar .sidebar-menu.without-bottom-image {
     height: calc(100% - 298px)
 }
-
 @media (max-width:991px) {
     .dashboard-banner-container {
         margin-top: 25px;
     }
-
     .conversations-list {
         height: 275px
     }
-
     .panel-sidebar {
         width: 100%;
         background-color: #fff;
@@ -675,28 +608,22 @@ Left SideBar-menu Start
         padding: 40px 20px 0 !important;
         transition: top .4s cubic-bezier(.43, .83, .54, 1.02), opacity .4s linear
     }
-
     .panel-sidebar .panel-sidebar-close {
         display: block
     }
-
     .panel-sidebar.nav-show {
         top: 0
     }
-
     .panel-sidebar .user-info .user-name h3 {
         font-size: 14px
     }
-
     .panel-sidebar .user-info .user-avatar {
         width: 70px;
         height: 70px
     }
-
     .panel-sidebar .user-info .user-name {
         margin-top: 0 !important
     }
-
     .panel-sidebar .sidebar-menu {
         height: calc(100% - 70px) !important;
         padding-left: 20px;
@@ -704,7 +631,6 @@ Left SideBar-menu Start
         padding-bottom: 0;
     }
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item {
     padding: 12px 0;
     display: flex;
@@ -712,28 +638,23 @@ Left SideBar-menu Start
     align-items: center;
     position: relative;
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active>a,
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active>a * {
     color: #ffab00 !important;
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active svg {
     color: var(--primary) !important
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .assign-strock svg,
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .assign-strock svg *,
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active circle,
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active polyline {
     stroke: #ffab00 !important
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .assign-fill svg,
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .assign-fill svg * {
     fill: #ffab00 !important
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .cls-1,
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .cls-3 {
     fill: #ffab00 !important;
@@ -754,7 +675,6 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon.assign-fill svg * {
     fill: #fff
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon.sidenav-notification-icon .cls-1 {
     fill: none;
     stroke: #fff;
@@ -762,11 +682,9 @@ Left SideBar-menu Start
     stroke-linejoin: round;
     stroke-width: 1.5px
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon svg path {
     stroke: #000;
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon svg {
     min-width: 100%;
     width: 100%;
@@ -776,35 +694,28 @@ Left SideBar-menu Start
     max-height: 100%;
     color: var(--secondary)
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon.assign-strock svg,
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon.assign-strock svg * {
     stroke: #fff
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon img {
     height: 25px;
     width: 25px;
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon .img-circle {
     border-radius: 100%;
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .sidenav-item-icon svg path {
     stroke: #ffab00;
     fill: #ffab00;
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse {
     position: relative;
     padding: 10px 0 10px 34px
 }
-
 .rtl .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse {
     padding: 10px 34px 10px 0
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse:before {
     content: "";
     position: absolute;
@@ -814,12 +725,10 @@ Left SideBar-menu Start
     width: 1px;
     background-color: var(--secondary)
 }
-
 .rtl .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse:before {
     left: auto;
     right: 11px
 }
-
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse li {
     position: relative;
     padding: 0 20px;
@@ -928,28 +837,23 @@ Left SideBar-menu Start
 .reward-gift-img {
     width: 180px
 }
-
 @media (max-width:767px) {
     .course-statistic-stat-icons .dashboard-stats .stat-icon {
         width: 40px;
         min-width: 40px;
         height: 40px
     }
-
     .course-statistic-stat-icons .dashboard-stats .stat-icon img {
         width: 22px;
         height: 22px
     }
-
     .region-map {
         height: 360px
     }
-
     .reward-gift-img {
         width: 120px
     }
 }
-
 .leaderboard-avatar {
     width: 82px;
     height: 82px;
