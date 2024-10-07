@@ -97,6 +97,9 @@ Sub Pages Style
         opacity: 1;
     }
 }
+.learning-page {position: relative;}
+.learning-page .close {position: absolute; right: 10px; top: 15px; z-index: 1;}
+.learning-page.type-vocabulary:has(.spells-quiz-sound) .word-cloud-box {margin: -25px auto 35px;}
 /* Learning New Style End */
 /* sorting-filter on Learn page Subjects style */
 .sorting-filter {display: inline-flex; align-items: center; flex-wrap: wrap; gap: 15px; float: right;}

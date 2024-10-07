@@ -191,6 +191,7 @@ body .spell-question-area .question-label span {text-align: center;}
 .learning-page.type-vocabulary .spell-quiz-page .left-content:has(table[id*='word-search-']) {height: auto;}
 .spell-quiz-page table[id*='word-search-'] {margin: 0 auto;}
 .spell-quiz-page table[id*='word-search-'] td {border-color: #d9d9d9;}
+.spells-quiz-from .word-cloud-box {max-height: 130px; min-height: 130px; width: 130px; list-style: none;}
 /* Sentences Screens Style Start */
 body:has(.sentences-block) .top-navbar,
 body:has(.sentences-block) footer.footer.footer-home {display: none;}

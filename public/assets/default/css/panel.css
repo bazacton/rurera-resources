@@ -1406,11 +1406,6 @@ User Verticle Tabs Style Start
 .verticle-tabs .count-number-icon {width: 20px;}
 .verticle-tabs .tab-content .tab-pane {width: 100%;}
 
-.learning-page {position: relative;}
-.learning-page .close {position: absolute; right: 10px; top: 15px; z-index: 1;}
-.spells-quiz-from .word-cloud-box {max-height: 130px; min-height: 130px; width: 130px; list-style: none;}
-.learning-page.type-vocabulary:has(.spells-quiz-sound) .word-cloud-box {margin: -25px auto 35px;}
-
 .hide {
     display: none !important;
 }
