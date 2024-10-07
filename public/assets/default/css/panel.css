@@ -457,7 +457,6 @@ Assignments Table Style Start
 .db-form-tabs .list-group-item .remove-btn img,
 .action-activity .remove-btn img {max-height: 18px;max-width: 18px;min-height: 18px;min-width: 18px;filter: invert(46%) sepia(74%) saturate(4289%) hue-rotate(328deg) brightness(89%) contrast(90%);}
 .db-members .card .list-group-item [class*="col-"]:has(small) {flex-direction: column; align-items: flex-start;}
-/* .db-members .card .list-group-item:nth-child(odd) {background-color: inherit;} */
 .lms-choose-plan-selected .lms-jobs-form .input-field {margin: 0 0 15px;}
 .db-form-tabs .list-group-item .connect-user-btn {border: 1px solid var(--primary); border-radius: 30px; padding: 8px 15px; line-height: normal; display: inline-block; color: var(--primary);font-weight: 500;}
 .list-group-item span {color: #999; line-height: normal;}
@@ -481,7 +480,6 @@ Assignments Table Style Start
 .no-record-found-head li:after {display: none;}
 .db-members:has(.no-record-found) .list-group .rurera-tables-list {background-color: inherit; border: 0; }
 .no-record-found .rurera-no-records {background-color: #fff; border: 1px solid #ddd; border-radius: 10px; display: block; padding: 15px;}
-
 .db-members .rurera-button-loader {background-color: initial; z-index: 3; height: auto; min-height: 125px; border-radius: 10px;}
 .db-members:has(.rurera-button-loader) .rurera-pagination {display: none;}
 /*Dashboard Form-Tabs Style End*/
@@ -1019,9 +1017,6 @@ Dashboard Home Pages Style Start
 Dashboard Home Pages Style End
 *********************************/
 
-
-
-
 /*********************************
 Lms Quiz Result Logs Style Start
 **********************************/
@@ -1072,7 +1067,6 @@ Lms Activity-Timeline Style Start
 .timeline-list {margin: 0; padding: 0;}
 .timeline-list li {display: flex; flex-wrap: wrap; margin: 0 0 35px; position: relative;}
 .timeline-list li:before {content: ""; background-color: #dddddd; position: absolute; left: 12px; top: 30px; height: 100%; width: 1px; z-index: 1;}
-
 .timeline-list li:last-child:after {content: ""; background-color: #b2b2b2; border-radius: 100%; position: absolute; left: 9px; top: 100%; height: 6px; width: 6px; margin-top: 25px; z-index: 2;}
 .timeline-icon {width: 26px;}
 .timeline-icon svg,
@@ -1098,12 +1092,6 @@ Lms Activity-Timeline Style Start
 /*****************************
 Lms Activity-Timeline Style End
 ******************************/
-
-
-
-
-
-
 
 .panel-right-sidebar.full-width-sidebar {display: none;}
 .info-card input[type=checkbox] {position: absolute; left: 0; top: 0; opacity: 0; }
@@ -1496,7 +1484,6 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 .challenge-box th {color: #fff; font-size: 18px; font-weight: 500;}
 .challenge-box td {padding: 15px 20px; border: 0; border: 0;}
 .challenge-box .simple-table thead {border: 0;}
-
 .challenge-box td p {color: #333; width: calc(100% - 42px); display: inline-block; vertical-align: middle; padding: 0 0 0 5px;}
 .challenge-box td strong {display: block; line-height: normal; padding: 0 0 5px; }
 .challenge-box td .bg-warning {background-color: #fff2bd !important; padding: 2px 10px; display: inline-block; line-height: normal; border-radius: 3px;}
@@ -1720,8 +1707,6 @@ User Verticle Tabs Style Start
 .verticle-tabs .nav-pills .nav-link.active {background-color: inherit; color: #203769; border-bottom-color: #3e97fb;}
 .verticle-tabs .count-number-icon {width: 20px;}
 .verticle-tabs .tab-content .tab-pane {width: 100%;}
-
-
 
 .learning-page {position: relative;}
 .learning-page .close {position: absolute; right: 10px; top: 15px; z-index: 1;}
