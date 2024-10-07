@@ -51,65 +51,20 @@ Left SideBar-menu Start
 .panel-rightside-menu li a {display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 15px 18px; font-weight: 600; line-height: normal; border-radius: 10px; width: 100%; transition: none;}
 .panel-rightside-menu .nav-icon {width: 25px; height: 25px; display: inline-block;}
 .panel-rightside-menu .nav-icon img {max-width: 100%;}
-.panel-rightside-menu li a:hover {
-    background-color: #e5e5e5;
-}
-.panel-rightside-menu .user-info>a img {
-    height: 42px;
-    width: 42px;
-    border-radius: 100%;
-    background-color: #ddd;
-}
-.panel-rightside-menu .user-info>a>span {
-    width: calc(100% - 52px);
-    display: inline-flex;
-    flex-direction: column;
-    gap: 3px;
-}
-.panel-rightside-menu .user-info strong {
-    font-size: 20px;
-    line-height: normal;
-}
-.panel-rightside-menu .user-info span span {
-    text-transform: uppercase;
-    color: #5d9bd6;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: normal;
-}
-.panel-border {
-    border: 1px solid #ddd;
-}
-.border-bottom-4 {
-    border-bottom-width: 4px;
-}
-.border-radius-10 {
-    border-radius: 10px;
-}
+.panel-rightside-menu li a:hover {background-color: #e5e5e5;}
+.panel-rightside-menu .user-info>a img {height: 42px; width: 42px; border-radius: 100%; background-color: #ddd;}
+.panel-rightside-menu .user-info>a>span {width: calc(100% - 52px); display: inline-flex; flex-direction: column; gap: 3px;}
+.panel-rightside-menu .user-info strong {font-size: 20px; line-height: normal;}
+.panel-rightside-menu .user-info span span {text-transform: uppercase; color: #5d9bd6; font-size: 14px; font-weight: 600; line-height: normal;}
+.panel-border {border: 1px solid #ddd;}
+.border-bottom-4 {border-bottom-width: 4px;}
+.border-radius-10 {border-radius: 10px;}
 .notification-card:hover button,
-.panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse li.active:before {
-    background-color: var(--primary)
-}
-#nextBadgeChart path {
-    stroke-width: 10px;
-    stroke-dasharray: 10, 20;
-    stroke-linecap: round
-}
-.not-verified-alert {
-    background-color: #d4efff
-}
+.panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse li.active:before {background-color: var(--primary)}
+#nextBadgeChart path {stroke-width: 10px; stroke-dasharray: 10, 20; stroke-linecap: round;}
+.not-verified-alert {background-color: #d4efff;}
 .panel-content .alert-warning {margin-top: 10px !important;font-weight: 500 !important;color: #343434;background-color: rgba(255, 171, 0, .44) !important;border-color: #ffab00 !important;}
-.panel-content .alert {position: relative;
-    padding: 1rem !important;
-    margin-bottom: 0;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    margin-top: 10px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+.panel-content .alert {position: relative; padding: 1rem !important;margin-bottom: 0; border: 1px solid transparent; border-radius: 10px; margin-top: 10px; font-weight: 500; display: flex; align-items: center; justify-content: space-between;}
 .panel-content .section-title ~ .alert {margin-top: 10px;}
 .mobile-app-card h3 {
     font-size: 24px;
