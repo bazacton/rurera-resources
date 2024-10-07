@@ -184,6 +184,19 @@ address .info-list-label {color: #64748b;}
 .user-profile-icons img {width: 28px; height: 28px; object-fit: contain; }
 .user-profile-icons li strong {display: inline-flex; align-items: center; gap: 5px; position: relative;}
 /* user-profile-dropdown style End */
+/* Profile master-card style start */
+.master-list {background-color: #fff; border: 1px solid #eee; padding: 0; border-radius: 8px;}
+.master-card {border-right: 1px solid #eee; display: flex; flex-wrap: wrap; flex-direction: column; align-items: center; gap: 10px; padding: 20px 0; line-height: normal;}
+.master-list [class*="col-"]:last-child .master-card {border-right: 0;}
+.master-card strong {font-size: 20px;}
+.master-card span {font-weight: 600; font-size: 18px;}
+.master strong {color: #468cc0;}
+.master span {color: #468cc0;}
+.non-master strong {color: #d24124;}
+.non-master span {color: #d24124;}
+.non-use strong {color: #787b84;}
+.non-use span {color: #787b84;}
+/* Profile master-card style End */
 /*************************************
 Dashboard Account Settings Pages Style End
 **************************************/

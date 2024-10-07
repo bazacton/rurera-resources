@@ -679,18 +679,6 @@ body .range-slider_thumb {background-color: #fff;}
 .alphabet-list .add-btn.collapsed:before {width: 0;}
 .alphabet-list .add-btn:before {content: ""; position: absolute; left: 50%; top: 50%; height: 2px; width: 18px; border-bottom: 2px solid #ddd; margin: -1px 0 0 -9px; transition: all .3s; -webkit-transition: all .3s; -o-transition: all .3s;}
 .alphabet-list .card-body {padding: 20px 0 0 0; color: #666; font-size: 16px;}
-
-.master-list {background-color: #fff; border: 1px solid #eee; padding: 0; border-radius: 8px;}
-.master-card {border-right: 1px solid #eee; display: flex; flex-wrap: wrap; flex-direction: column; align-items: center; gap: 10px; padding: 20px 0; line-height: normal;}
-.master-list [class*="col-"]:last-child .master-card {border-right: 0;}
-.master-card strong {font-size: 20px;}
-.master-card span {font-weight: 600; font-size: 18px;}
-.master strong {color: #468cc0;}
-.master span {color: #468cc0;}
-.non-master strong {color: #d24124;}
-.non-master span {color: #d24124;}
-.non-use strong {color: #787b84;}
-.non-use span {color: #787b84;}
 /*Alphabet List Style End*/
 .lms-data-table h3 {margin: 0 0 15px; font-size: 20px;}
 .field_extra_small{width: 22% !important;}
