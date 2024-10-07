@@ -81,8 +81,6 @@ Sub Pages Style
 .spell-levels.levels-grouping li.treasure a:after {display: none;}
 .spell-levels .panel-subheader h2 {display: inline-block; vertical-align: middle; margin-bottom: 0;}
 .spell-levels li:has(.rurera-stars) .lms-tooltip {margin-bottom: 50px;}
-.treasure-mission-layout .spell-levels .horizontal-list {margin: 0 -15px 220px 0; position: relative;}
-
 .spell-tooltip-text h4 {margin-bottom: 5px;}
 .spell-quiz-page .quiz-questions-bar-holder {margin-left: 0;}
 .spell-quiz-page .quiz-questions-bar-holder .quiz-questions-bar {width: 100%;}

@@ -357,6 +357,7 @@ Sub Pages Style
 .dropup.rurera-tooltip .dropdown-toggle:after {display: none;}
 .treasure-mission-layout .spell-levels .treasure-stage:last-child ul {margin-bottom: 60px;}
 .treasure-mission-layout .spell-levels li:not(.treasure) a img {width: 30px; height: 30px;}
+.treasure-mission-layout .spell-levels .horizontal-list {margin: 0 -15px 220px 0; position: relative;}
 .rurera-tooltip {position: relative;}
 .lms-tooltip {background-color: var(--primary); border: 1px solid var(--primary); border-radius: 10px; position: absolute; padding: 20px; max-width: 295px; min-width: 295px; z-index: 2; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; text-align: left; opacity:0;}
 .lms-tooltip:before {background-color: var(--primary); content: ""; position: absolute; left: 50%; bottom: -7px; height: 15px; width: 15px; transform: translateX(-50%) rotate(45deg); }
