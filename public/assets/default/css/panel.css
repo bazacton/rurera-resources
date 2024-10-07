@@ -1414,17 +1414,3 @@ User Verticle Tabs Style Start
 .hide {
     display: none !important;
 }
-/* sorting-filter on Learn page Subjects style */
-.sorting-filter {display: inline-flex; align-items: center; flex-wrap: wrap; gap: 15px; float: right;}
-.sorting-filter a img {height: 20px; width: 20px; border-radius: 0; filter: invert(90%) sepia(8%) saturate(76%) hue-rotate(8deg) brightness(86%) contrast(85%);}
-.sorting-filter a.active img {filter: invert(44%) sepia(42%) saturate(6111%) hue-rotate(221deg) brightness(100%) contrast(98%);}
-/* sorting-filter on Learn page Subjects style */
-
-/* sidebar-nav on Learn page Subjects style */
-.sidebar-nav {margin-bottom: 20px;}
-.sidebar-nav ul {margin: 0; padding: 0; display: flex; align-items: center; flex-wrap: wrap;overflow: hidden;}
-.sidebar-nav ul li {line-height: normal; margin: 0;}
-.sidebar-nav ul li a {font-size: 15px; font-weight: 600; color: var(--primary); padding: 0 25px 12px 0; display: block; transition: all 0.3s ease-in-out; position: relative;}
-.sidebar-nav ul li a:hover {color: #333;}
-.sidebar-nav ul li a:before {background-color: #ccc; border-radius: 100%; position: absolute; left: -15px; top: 50%; content: ""; height: 6px; width: 6px; margin-top: -9px;}
-/* sidebar-nav on Learn page Subjects style end */
