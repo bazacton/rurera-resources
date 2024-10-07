@@ -3,7 +3,6 @@
 Analytics Page | Student Panel Style Start
 Sub Pages Style
 ************************/
-
 .analytics-header .header-text {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 0 1.25rem .75rem;}
 .analytics-header .header-text > span {width: 33.333%; text-align: right;}
 .analytics-header .header-text > span:first-child {text-align: left;}
@@ -52,7 +51,6 @@ Sub Pages Style
 .chart-filters .analytics-type li {width: 15.888%;}
 .analytics-type li a img {margin: 0 auto 10px; display: block; object-fit: contain; max-width: 100%; width: 30px;height: 30px;}
 .chart-filters > ul > li > a.active {background-color: rgba(0,0,0,0.1);color: #2c4a7e;}
-
 /***************************
 Analytics Page | Student Panel Style End
   ***************************/
