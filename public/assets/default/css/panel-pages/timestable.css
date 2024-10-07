@@ -492,25 +492,16 @@ a.db-back-btn {
 .lms-performace-section .element-title h5 {text-transform: uppercase;color: #183152;font-size: 18px;font-weight: bold;}
 .lms-performace-table>li.lms-performace-des:last-child {border-bottom: 1px dashed #c0c0c0;}
 .lms-performace-table>li.lms-performace-head div span.coin-icon svg {width: 24px;height: 24px;}
-/* .lms-performace-table>li.lms-performace-head div:last-child {width: 7%;} */
 .lms-performace-table figure img {width: 50px;height: 50px;border-radius: 100%;}
 .lms-performace-table figure {margin-right: 15px;}
 .leaderboard>li.lms-performace-head div:nth-child(2) {width: 55%;text-align: left;}
-/* .leaderboard>li.lms-performace-des .sr-no, */
 .leaderboard>li.lms-performace-head div:first-child {width: 8%;}
 .leaderboard>li.lms-performace-des .score-des {padding-left: 20px;flex-wrap: wrap; width: 55%;}
 .leaderboard>li.lms-performace-des .score-des span {width: calc(100% - 65px);}
-/* .leaderboard>li.lms-performace-head.leaderboard-title div:first-child {width: 12%;} */
 .leaderboard>li.lms-performace-head.leaderboard-title div:nth-child(3),
 .leaderboard>li.lms-performace-des.leaderboard-des div:nth-child(3){width:25%;}
-/* .leaderboard>li.lms-performace-head.leaderboard-title div:nth-child(4),
-.leaderboard>li.lms-performace-des.leaderboard-des div:nth-child(4){width: 20%;} */
 .leaderboard>li.lms-performace-head.leaderboard-title div:first-child h5{color: #878787;}
-/*.leaderboard>li.lms-performace-head.leaderboard-title div:nth-child(2) {width: 30%;text-align: left;}
- .leaderboard>li.lms-performace-des.leaderboard-des .sr-no {width: 12%;} */
-.leaderboard>li.lms-performace-des.leaderboard-des .score-des {padding-left: 20px;flex-wrap: wrap;/*width: 30%;*/}
-/* .leaderboard>li.lms-performace-des.leaderboard-des .coin-earn,
-.lms-performace-table>li.lms-performace-head.leaderboard-title div:last-child{width: 16%;text-align: left;} */
+.leaderboard>li.lms-performace-des.leaderboard-des .score-des {padding-left: 20px;flex-wrap: wrap;}
 .leaderboard>li.lms-performace-des.leaderboard-des .coin-earn > .badge-btn{width: auto; padding: 0;}
 .school-table .simple-table thead {background-color: #fff; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
 .school-table .simple-table td {padding: 15px 20px; font-size: 15px; font-weight: 500; color: #878787; border-top: 1px solid #ddd;}
@@ -544,15 +535,10 @@ a.db-back-btn {
 .leaderboard-sub-header .btn-primary{ background-color: var(--primary);border-color: var(--primary); box-shadow: none;}
 .leaderboard-sub-header .btn-outline-primary {color: var(--primary);border-color:var(--primary);}
 .leaderboard-sub-header .btn-outline-primary:hover{color:#fff; border-color: transparent;background-color: var(--primary);}
-/* .panel-content .leaderboard>li.lms-performace-des .sr-no,
-.panel-content .leaderboard>li.lms-performace-head div:first-child,
-.panel-content .leaderboard>li.lms-performace-head div:first-child{width: 10%;} */
 .panel-content .lms-performace-table>li.lms-performace-head div,
 .panel-content .lms-performace-table>li.lms-performace-des .level-up,
 .panel-content .lms-performace-table>li.lms-performace-des .practised,
 .panel-content .lms-performace-table>li.lms-performace-des .time-sepen{width: 25%;}
-/* .panel-content .lms-performace-table>li.lms-performace-head div:last-child,
-.panel-content .lms-performace-table>li.lms-performace-des .coin-earn {width: 20%;} */
 .panel-content .lms-performace-table>li.lms-performace-head {border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
 .panel-content .lms-performace-table>li.lms-performace-des .sr-no {border-right: 0;}
 .panel-content .lms-performace-table>li.lms-performace-des {border: 0; border-bottom: 1px solid #ddd;}
