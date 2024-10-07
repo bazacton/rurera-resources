@@ -21,6 +21,15 @@ body:has(.quiz-topbar) {
 .lms-quiz-section .quiz-topbar .timer-number,
 .timer-number, .lms-quiz-section .quiz-topbar p,
 .learning-page .quiz-topbar p{color: #333;}
+.read-quiz-content .quiz-topbar {background-color: #fff; border-bottom: 2px solid #ECE9F2; padding: 8px 0; margin-bottom: 50px; position: fixed; top: 0; left: 0; z-index: 3; width: 100%;}
+.quiz-topbar .quiz-top-info {display: inline-block; vertical-align: middle; position: relative; padding: 0 0 0 25px; margin-bottom: 0;}
+.quiz-topbar .quiz-top-info:before,
+.quiz-topbar .quiz-top-info:after {content: ""; display: block; box-sizing: border-box; position: absolute; width: 8px; height: 8px; border-right: 2px solid #999; border-top: 2px solid #999; transform: rotate(45deg); top: 50%; left: 0; margin-top: -4px;}
+.quiz-topbar .quiz-top-info:after {left: 5px; }
+.quiz-topbar .quiz-type-icon {margin-right: 15px; max-width: 100%; width: 60px; object-fit: contain;}
+.lms-quiz-section .quiz-topbar p,
+.learning-page .quiz-topbar p {font-weight: 600; font-size: 1.25rem; text-transform: uppercase;}
+.quiz-topbar .close-btn {min-width: 45px; min-height: 45px;}
 /************************************ 
  Quiz Top-Bar Style End
 *************************************/
@@ -70,21 +79,10 @@ body:has(.quiz-topbar) {
 .question-layout-block form.question-fields .questions-nav-controls {border-top: 2px dashed #ddd; padding: 15px}
 .type-sats .question-layout-block form.question-fields {background-color: inherit; border: 0; padding: 0; border-radius: 0; margin-bottom: 0;}
 .question-layout-block form.question-fields .questions-nav-controls .review-btn {left: 0;}
-.flipbook-quiz .difficulty-level {padding-left: 80px;}
-body.quiz-open .flipbook-quiz {transform: translateX(-10%) translateZ(0);}
-body .lms-quiz-section .flipbook-quiz {width: 800px;}
 /* Lms Font End Display End */
 .quiz-show .read-quiz-info {left: 0;}
 .read-quiz-content {transition: all 0.2s ease-in-out;}
 .container-fluid.read-quiz-content {padding: 0; max-width: 100%; overflow-x: hidden;}
-.read-quiz-content .quiz-topbar {background-color: #fff; border-bottom: 2px solid #ECE9F2; padding: 8px 0; margin-bottom: 50px; position: fixed; top: 0; left: 0; z-index: 3; width: 100%;}
-.quiz-topbar .quiz-top-info {display: inline-block; vertical-align: middle; position: relative; padding: 0 0 0 25px; margin-bottom: 0;}
-.quiz-topbar .quiz-top-info:before,
-.quiz-topbar .quiz-top-info:after {content: ""; display: block; box-sizing: border-box; position: absolute; width: 8px; height: 8px; border-right: 2px solid #999; border-top: 2px solid #999; transform: rotate(45deg); top: 50%; left: 0; margin-top: -4px;}
-.quiz-topbar .quiz-top-info:after {left: 5px; }
-.quiz-topbar .quiz-type-icon {margin-right: 15px; max-width: 100%; width: 60px; object-fit: contain;}
-.lms-quiz-section .quiz-topbar p,
-.learning-page .quiz-topbar p {font-weight: 600; font-size: 1.25rem; text-transform: uppercase;}
 .read-quiz-content.pr-300 {max-width: 1000px;}
 .pr-300 {padding-right: 300px;}
 .read-quiz-info {position: fixed; left: -630px; height: 100%; background-color: #eeeeee; top: 0; transition: all 0.2s ease-in-out; width: 33.333%; z-index: 1;}
@@ -118,7 +116,6 @@ body .lms-quiz-section .flipbook-quiz {width: 800px;}
 .question_inactivity_modal .inactivity-controls .continue-btn,
 .activity-actions .continue-btn {background-color: #29a746; min-width: auto; border-radius: 3px; margin-right: 0;}
 .inactivity-controls .pause-quiz {background-color: var(--primary); color: #fff; display: inline-flex; align-items: center; justify-content: center; border-radius: 3px; padding: 8px 0; flex: 0 0 46%; max-width: 46%;}
-.quiz-topbar .close-btn {min-width: 45px; min-height: 45px;}
 .prev-btn,
 .next-btn {min-width: auto; padding: 0 18px; position: relative;}
 .review-btn svg,
