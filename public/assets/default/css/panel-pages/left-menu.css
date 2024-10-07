@@ -22,62 +22,17 @@ Left SideBar-menu Start
 .key-date-select {text-align: right; margin: 0 0 10px;}
 .key-date-select button {height: auto; padding: 0; border: 0;}
 .key-statistics .swiper-slide .key-item:last-child {border: 0; padding: 0; margin: 0;}
-.key-statistics .swiper {
-    overflow: hidden;
-    position: relative;
-}
-.key-statistics .swiper-pagination {
-    position: initial;
-    transform: none !important;
-    padding-top: 20px;
-}
-.key-statistics .swiper-pagination-bullet {
-    border: 0;
-    background-color: #f1f1f4 !important;
-    padding: 0;
-    height: 10px;
-    border-radius: 10px;
-    margin: 0 4px !important;
-    width: 17px;
-}
-.key-statistics .swiper-pagination-bullet.swiper-pagination-bullet-active:after {
-    width: 100%;
-    height: 100%;
-}
-.panel-right-sidebar .card-header .card-title {
-    margin: 0;
-}
-.notable-card {
-    padding: 30px;
-    border-radius: 0.625rem;
-}
-.notable-card .card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: inherit;
-    padding: 0;
-    margin: 0 0 20px;
-}
-.notable-card .card-header .card-title span {
-    display: block;
-}
-.notable-card .social-list li {
-    border-bottom: 1px dashed #dbdfe9;
-    padding: 0 0 20px;
-    margin: 0 0 20px;
-}
-.notable-card .social-list li img {
-    width: 30px;
-    height: 30px;
-}
-.notable-card .social-item {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+.key-statistics .swiper {overflow: hidden; position: relative;}
+.key-statistics .swiper-pagination {position: initial; transform: none !important; padding-top: 20px;}
+.key-statistics .swiper-pagination-bullet {border: 0;background-color: #f1f1f4 !important;padding: 0;height: 10px;border-radius: 10px;margin: 0 4px !important; width: 17px;}
+.key-statistics .swiper-pagination-bullet.swiper-pagination-bullet-active:after {width: 100%; height: 100%;}
+.panel-right-sidebar .card-header .card-title {margin: 0;}
+.notable-card {padding: 30px; border-radius: 0.625rem;}
+.notable-card .card-header {display: flex;align-items: center; justify-content: space-between; flex-wrap: wrap; background-color: inherit; padding: 0; margin: 0 0 20px;}
+.notable-card .card-header .card-title span {display: block;}
+.notable-card .social-list li {border-bottom: 1px dashed #dbdfe9; padding: 0 0 20px; margin: 0 0 20px;}
+.notable-card .social-list li img {width: 30px; height: 30px;}
+.notable-card .social-item {display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between;}
 .notable-card .social-item .item-left {
     display: inline-flex;
     align-items: center;
