@@ -198,6 +198,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .quiz-group .rureraform-column-label {margin-bottom: 15px;}
 .quiz-group .rureraform-column-label .rureraform-label {
     margin: 0;
+	font-weight: 600;
 }
 .quiz-group .rureraform-column-label:has(label:empty) {display: none;}
 /* Question Label Style End */
@@ -1030,7 +1031,6 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .rureraform-element[data-type="textareafield_quiz"] .input-holder {width: 100% !important; padding: 0;}
 .rureraform-element[data-type="textareafield_quiz"] .input-holder.field_medium {width: 75% !important;}
 .rureraform-element[data-type="textareafield_quiz"] .input-holder.field_small {width: 50% !important;}
-.rureraform-element label.rureraform-label {margin-bottom: 0;}
 .rureraform-admin-editor .input-holder.textarea_lines {padding: 0;}
 .input-holder.textarea_lines,
 .lms-quiz-section .input-holder.textarea_lines {border: 0;border-radius: 0;margin-left: -10px;line-height: 31px;}
