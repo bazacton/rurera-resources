@@ -17,6 +17,7 @@ Dashboard Account Settings Pages Style Start
 }
 .svga-col-right .svga-elements svg g{
     transform: none;
+    width: 35px;
 }
 .svga-col-right .svga-elements {
     padding: 9%;
