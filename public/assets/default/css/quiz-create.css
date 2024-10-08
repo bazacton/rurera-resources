@@ -907,27 +907,54 @@ pagination Learn Practice Style End
 .prev-next-controls .review-btn {position: absolute; left: 0; gap: 10px;}
 .question-layout-block .prev-next-controls {position: fixed; width: 848px; bottom: -50px; background-color: #fff; min-height: 100px; padding: 30px; justify-content: space-between; z-index: 1;}
 .question-layout-block .prev-next-controls .review-btn {position: relative;}
+
 .review-btn,
 .prev-btn,
 .next-btn{display: inline-flex; align-items: center; border: 1px solid #eee; min-width: 135px; min-height: 45px; border-radius: 5px; justify-content: center; color: #000; text-transform: uppercase;}
+
 .prev-btn,
 .next-btn {min-width: auto; padding: 0 18px; position: relative;}
+
 .review-btn svg,
 .prev-btn svg,
 .next-btn svg {height: 22px; width: 22px; margin-left: 10px;}
+
 .prev-btn svg,
 .next-btn svg {margin-left: 0;}
+
 .review-btn svg g,
 .prev-btn svg g,
 .next-btn svg g{fill: #929198;}
+
 .next-btn svg {position: absolute; right: 10px;}
 .next-btn {padding-right: 50px;}
+
 .review-btn:hover,
 .prev-btn:hover,
 .next-btn:hover {background-color: #eee; color: #000;}
+
 .review-btn:hover svg g,
 .prev-btn:hover svg g,
 .next-btn:hover svg g {fill: #000;}
+
+.submit-btn,
+.question-submit-btn,
+.question-next-btn {border: 1px solid #8fc963; border-radius: 5px; padding: 0 40px; height: 55px; color: #8fc963; text-transform: uppercase;}
+.question-submit-btn.submit-btn,
+.question-next-btn.submit-btn,
+.question-submit-btn,
+.question-next-btn {border-color: #8fc963; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; display: inline-flex; align-items: center; justify-content: center; height: auto; min-height: 45px; padding-left: 20px; padding-right: 35px;}
+.prev-next-controls .question-submit-btn:after,
+.question-next-btn:after {content: ""; position: absolute; right: 15px; top: 50%; height: 7px; width: 14px; border: 2px solid; border-top: 0; border-right: 0; transform: rotate(-50deg); margin: -5px 0 0 0;}
+.prev-next-controls .question-submit-btn,
+.prev-next-controls .question-next-btn {margin-right: 0; position: absolute; right: 0; min-width: 160px;}
+.prev-next-controls .question-submit-btn svg,
+.prev-next-controls .question-next-btn svg {display: none;}
+.question-submit-btn.submit-btn:hover,
+.question-next-btn.submit-btn:hover,
+.question-submit-btn:hover,
+.spells-quiz-from .question-submit-btn:hover,
+.question-next-btn:hover {background-color: #8fc963;  color: #f5ffec;}
 /*Quiz prev-next-controls Style End*/
 
 /*Quiz Page start-counter style start*/
