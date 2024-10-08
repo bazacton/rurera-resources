@@ -827,6 +827,9 @@ scrollbar-gutter: stable both-edges;
 	outline: 0 !important;
 	padding-top: 0;
 }
+.quiz-group ol li {
+    margin-top: 15px;
+}
 /*Quiz Read Content Style End*/
 /*Inactivity Modal on quiz layout page start*/
 .question_inactivity_modal .modal-dialog {min-height: calc(100vh - 60px); display: flex; flex-direction: column; justify-content: center; overflow: auto;}
