@@ -880,7 +880,6 @@ pagination Learn Practice Style End
 /*Quistion Number Style Start*/
 .question-number {display: inline-block; background-color: #1e1e1b; color: #fff; margin: 12px 30px 0 0; padding: 5px 15px; border-radius: 6px; min-width: 48px; text-align: center;}
 .question-number-holder {width: 45px; text-align: center; float: left; margin-right: 20px; position: absolute; margin-top: 0; cursor: pointer; z-index: 1 !important;}
-.question-number-holder ~ .rureraform-elements {padding-left: 0;}
 .question-number-holder ~ .show-notifications { margin-bottom: 30px;}
 .question-number-holder .question-number {margin: 0 0 10px; }
 .question-number-holder ~ span {padding-left: 65px; font-size: 20px;}
