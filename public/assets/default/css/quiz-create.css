@@ -910,3 +910,7 @@ html:has(.quiz-topbar) {
 .prev-btn:hover svg g,
 .next-btn:hover svg g {fill: #000;}
 /*Quiz prev-next-controls Style End*/
+
+/*Quiz Page start-counter style start*/
+.start-counter {background-color: #fff; position: fixed; height: 100%; width: 100%; left: 0; top: 0; display: flex; align-items: center; justify-content: center; font-size: 50px; color: var(--primary);}
+/*Quiz Page start-counter style end*/
