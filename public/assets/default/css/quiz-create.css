@@ -957,6 +957,64 @@ pagination Learn Practice Style End
 .question-next-btn:hover {background-color: #8fc963;  color: #f5ffec;}
 /*Quiz prev-next-controls Style End*/
 
+/*Quiz Layout Input Holder Style Start*/
+.input-holder:empty {display: none;}
+.input-holder input.input-simple::-moz-placeholder,
+.rureraform-element input.input-simple::-moz-placeholder {color: #d1d1d1; opacity: 1;}
+.input-holder input.input-simple::-webkit-input-placeholder,
+.rureraform-element input.input-simple::-webkit-input-placeholder {color: #d1d1d1; opacity: 1;}
+.input-holder input.input-simple:focus::-moz-placeholder,
+.rureraform-element input.input-simple:focus::-moz-placeholder {color: transparent;}
+.input-holder input.input-simple:focus::-webkit-input-placeholder,
+.rureraform-element input.input-simple:focus::-webkit-input-placeholder {color: transparent;}
+.input-holder .input-label {position: absolute; left: 10px; top: 50%; transform: translateY(-50%);}
+.input_line {border-right: 0 !important; border-top: 0 !important; border-left: 0 !important; border-color: #000; border-radius: 0;}
+.input-holder .input-label.right,
+.input-holder input ~ .input-label {right: 10px;left: auto;}
+.input-holder input[type=number]::-webkit-inner-spin-button, 
+.input-holder input[type=number]::-webkit-outer-spin-button {opacity: 1;}
+table.table td .input-holder input[type=number]::-webkit-inner-spin-button, 
+table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
+.input-holder input.input_line[type=number]::-webkit-inner-spin-button, 
+.input-holder input.input_line[type=number]::-webkit-outer-spin-button{opacity: 0;}
+.note-editable .input-holder input[type="number"],
+.input-holder .input-label ~ input[type="number"] {text-align: right;}
+.input-holder .input-label ~ input.input-simple {padding: 0 5px 0 25px; min-height: 38px;}
+.input-holder .input-label ~ input.input_line {min-height: auto; width: 100%;}
+.input-holder .input-label ~ input[type="number"].input-simple  {padding: 0 0 0 36px; text-align: left;}
+.input-holder .input-label.right ~ input[type="number"].input-simple {padding: 0 10px;}
+.column-4 .input-holder, 
+.column-3 .input-holder {width: 23.333%; padding: 0; margin: 0 10px 0 0; box-sizing: border-box; display: inline-block;}
+.column-4 .input-holder:last-child,
+.column-3 .input-holder:last-child {margin-right: 0;}
+.question-textarea .column-3 .input-holder {width: 33.333%;}
+.input-holder,
+.lms-quiz-section .input-holder {border: 1px solid #ddd; display: inline-block; line-height: normal; position: relative; border-radius: 8px; vertical-align: middle; margin: 0 3px;}
+.input-holder:has(textarea), .lms-quiz-section .input-holder:has(textarea) {margin: 0;}
+@supports (selector(.quiz-group:has(.input-holder))) {
+    .input-holder:has(.divide-numbers) {border: 0 !important;}
+}
+.lms-quiz-section .rureraform-col-4 .input-holder {width: 90% !important;}
+.input-holder textarea {padding: 10px; border: 0; border-radius: 8px; color: #000; outline: none; width: 100%;}
+.input-holder textarea::-webkit-input-placeholder {color: #000; }
+.input-holder textarea:-moz-placeholder {color: #000;}
+.input-holder textarea::-moz-placeholder {color: #000;}
+.input-holder textarea:-ms-input-placeholder {color: #000;}
+/* Textarea Style with lines */
+.rureraform-element[data-type="textareafield_quiz"] .input-holder {width: 100% !important; padding: 0;}
+.rureraform-element[data-type="textareafield_quiz"] .input-holder.field_medium {width: 75% !important;}
+.rureraform-element[data-type="textareafield_quiz"] .input-holder.field_small {width: 50% !important;}
+.rureraform-element label.rureraform-label {margin-bottom: 0;}
+.rureraform-admin-editor .input-holder.textarea_lines {padding: 0;}
+.input-holder.textarea_lines,
+.lms-quiz-section .input-holder.textarea_lines {border: 0;border-radius: 0;margin-left: -10px;line-height: 31px;}
+.textarea_lines textarea {background-attachment: local; padding: 0 10px; outline: none; width: 100%; resize: none; color: #999; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 6 6"><circle cx="3" cy="3" r="2" fill="LightGray" /></svg>') 0 0.7em/3px 1.9em white;}
+.textarea_lines textarea::-webkit-input-placeholder {color: #999; }
+.textarea_lines textarea:-moz-placeholder {color: #999;}
+.textarea_lines textarea::-moz-placeholder {color: #999;}
+.textarea_lines textarea:-ms-input-placeholder {color: #999;}
+/*Quiz Layout Input Holder Style End*/
+
 /*Quiz Page start-counter style start*/
 .start-counter {background-color: #fff; position: fixed; height: 100%; width: 100%; left: 0; top: 0; display: flex; align-items: center; justify-content: center; font-size: 50px; color: var(--primary);}
 /*Quiz Page start-counter style end*/
