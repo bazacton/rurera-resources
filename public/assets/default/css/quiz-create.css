@@ -1001,6 +1001,9 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
     border: 0;
     height: auto;
 }
+.rurera-question-block .rureraform-column-input .rureraform-description {
+    margin: 15px 0 0;
+}
 .lms-quiz-section .rureraform-col-4 .input-holder {width: 90% !important;}
 .input-holder textarea {padding: 10px; border: 0; border-radius: 8px; color: #000; outline: none; width: 100%;}
 .input-holder textarea::-webkit-input-placeholder {color: #000; }
