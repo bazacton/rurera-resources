@@ -823,7 +823,7 @@ scrollbar-gutter: stable both-edges;
 	padding-bottom: 110px;
 }
 .question-layout .rureraform-element {
-	outline: 0;
+	outline: 0 !important;
 }
 /*Quiz Read Content Style End*/
 
