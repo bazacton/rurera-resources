@@ -8,16 +8,10 @@ Dashboard Account Settings Pages Style Start
 .svga-light #svga-start-overlay {background-color: #fff;}
 .svga-light #svga-gender {background-color: #fff;}
 .svga-col-right .svga-elements svg {
-    height: 50px;
-    width: 50px;
-    left: 50%;
-    top: 50%;
     transform: translate(-50%, -50%);
 }
 .svga-col-right .svga-elements svg g{
-    transform: none;
-    height: 100%;
-    width: 100%;
+    transform: 1px;
 }
 .rurera-button-loader .preloader {position: absolute; top: 50%; left: 50%; z-index: 1; transform: translate(-50%, -50%); text-align: center;}
 .rurera-button-loader .preloader img {width: 300px; object-fit: contain; height: 300px;}
