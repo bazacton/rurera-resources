@@ -7,8 +7,8 @@ Dashboard Account Settings Pages Style Start
 .profile-image-holder img#profileImagePreview {border-radius: 5px;border: 3px solid #fff;box-shadow: 0 0 8px rgba(0,0,0,0.2);}
 .svga-light #svga-start-overlay {background-color: #fff;}
 .svga-light #svga-gender {background-color: #fff;}
-.svga-col-right .svga-elements{
-    
+.svga-col-right .svga-elements svg g{
+    transform: none;
 }
 .rurera-button-loader .preloader {position: absolute; top: 50%; left: 50%; z-index: 1; transform: translate(-50%, -50%); text-align: center;}
 .rurera-button-loader .preloader img {width: 300px; object-fit: contain; height: 300px;}
