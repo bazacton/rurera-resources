@@ -1028,7 +1028,9 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
     .input-holder:has(.divide-numbers) {border: 0 !important;}
 }
 .rurera-question-block select {
-    border: 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 4px 8px;
     height: auto;
 }
 .rurera-question-block .rureraform-column-input .rureraform-description {
