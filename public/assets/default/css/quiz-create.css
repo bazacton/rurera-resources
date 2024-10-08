@@ -825,6 +825,7 @@ scrollbar-gutter: stable both-edges;
 }
 .question-layout .rureraform-element {
 	outline: 0 !important;
+	padding-top: 0;
 }
 /*Quiz Read Content Style End*/
 
