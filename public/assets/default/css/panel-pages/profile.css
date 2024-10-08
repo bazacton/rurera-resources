@@ -18,6 +18,9 @@ Dashboard Account Settings Pages Style Start
 .svga-col-right .svga-elements svg {
     height: 44px;
     width: 35px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .rurera-button-loader .preloader {position: absolute; top: 50%; left: 50%; z-index: 1; transform: translate(-50%, -50%); text-align: center;}
 .rurera-button-loader .preloader img {width: 300px; object-fit: contain; height: 300px;}
