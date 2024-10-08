@@ -832,7 +832,7 @@ scrollbar-gutter: stable both-edges;
 .rurera-question-block:has(.question-number-holder) .question-layout {
     display: inline-block;
     width: 100%;
-	padding-bottom: 80px;
+	padding-bottom: 110px;
 }
 .question-layout .rureraform-element {
 	outline: 0 !important;
