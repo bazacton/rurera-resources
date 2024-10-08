@@ -567,9 +567,6 @@ Left SideBar-menu Start
     border-radius: 50%
 }
 .exchange-points-modal-img {min-width: 114px; width: 114px; max-width: 114px; height: 114px;}
-.product-images-input-group input {border-radius: 0 !important;}
-.product-images-input-group .add-btn,
-.product-images-input-group .remove-btn {height: 40px;max-height: 40px; border-radius: 0 5px 5px 0;}
 .panel-sidebar-store-sales-circle-badge {width: 20px;height: 20px; font-size: .7rem; border-radius: 50%;padding: 0;line-height: 1.58;color: #fff;background-color: #f63c3c;}
 .panel-remove-bookmark-btn {width: 32px; height: 32px; border: 0; background-color: rgba(246, 60, 60, .3);}
 #panel_app .nav-icons-or-start-live .nav-notify-cart-dropdown {display: flex !important;}

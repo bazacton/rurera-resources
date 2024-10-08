@@ -194,6 +194,9 @@ Lms Product Card Style Start
 .product-card .favorite-btn {position: absolute; opacity: 0; right: -5px; top: -5px; transform: scale(0); height: 30px; width: 30px; }
 .product-card .favorite-btn img {border-radius: 0; position: absolute; left: 0; top: 0;}
 .product-card:hover .favorite-btn {opacity: 1; transform: scale(1);}
+.product-images-input-group input {border-radius: 0 !important;}
+.product-images-input-group .add-btn,
+.product-images-input-group .remove-btn {height: 40px;max-height: 40px; border-radius: 0 5px 5px 0;}
 /* Product Card Style End */
 
 /* Product Medium Card Style Start */
