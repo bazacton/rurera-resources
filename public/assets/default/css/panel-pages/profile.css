@@ -15,6 +15,10 @@ Dashboard Account Settings Pages Style Start
     justify-content: center;
     align-items: center;
 }
+.svga-col-right .svga-elements svg {
+    height: 44px;
+    width: 35px;
+}
 .rurera-button-loader .preloader {position: absolute; top: 50%; left: 50%; z-index: 1; transform: translate(-50%, -50%); text-align: center;}
 .rurera-button-loader .preloader img {width: 300px; object-fit: contain; height: 300px;}
 span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 auto;}
