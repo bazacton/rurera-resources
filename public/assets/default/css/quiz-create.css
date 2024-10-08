@@ -821,6 +821,9 @@ scrollbar-gutter: stable both-edges;
     margin-left: 10px;
     margin-bottom: 20px;
 }
+.questions-total-holder .question-dev-details {
+    color: #adabab;
+}
 .rurera-question-block:has(.question-number-holder) .rureraform-elements {padding-left: 50px;}
 .question-layout .rureraform-col {padding:0 0 10px !important;}
 .rurera-question-block:has(.question-number-holder) .question-layout {
