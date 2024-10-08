@@ -828,6 +828,11 @@ scrollbar-gutter: stable both-edges;
 	padding-top: 0;
 }
 /*Quiz Read Content Style End*/
+/*Inactivity Modal on quiz layout page start*/
+.question_inactivity_modal .modal-dialog {min-height: calc(100vh - 60px); display: flex; flex-direction: column; justify-content: center; overflow: auto;}
+.question_inactivity_modal .inactivity-controls .continue-btn,
+.activity-actions .continue-btn {background-color: #29a746; min-width: auto; border-radius: 3px; margin-right: 0;}
+/*Inactivity Modal on quiz layout page end*/
 
 /************************************ 
 pagination Learn Practice Style Start
