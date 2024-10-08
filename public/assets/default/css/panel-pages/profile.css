@@ -8,7 +8,9 @@ Dashboard Account Settings Pages Style Start
 .svga-light #svga-start-overlay {background-color: #fff;}
 .svga-light #svga-gender {background-color: #fff;}
 .svga-col-right .svga-elements svg {
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
     display: flex;
@@ -17,7 +19,6 @@ Dashboard Account Settings Pages Style Start
 }
 .svga-col-right .svga-elements svg g{
     transform: none;
-    width: 35px;
 }
 .svga-col-right .svga-elements {
     padding: 9%;
