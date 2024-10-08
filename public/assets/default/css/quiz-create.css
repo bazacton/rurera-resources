@@ -832,6 +832,22 @@ scrollbar-gutter: stable both-edges;
 }
 /*Quiz Read Content Style End*/
 /*Inactivity Modal on quiz layout page start*/
+.activity-scores {margin: 0 0 30px;}
+.activity-scores li,
+.activity-info li {border-bottom: 1px solid #ddd; padding: 0 0 12px; margin-bottom: 12px; display: flex; justify-content: space-between;}
+.activity-info {display: flex; font-size: 14px; margin-bottom: 30px; flex-direction: column;}
+.activity-info .icon-box:empty {display: none;}
+.activity-actions,
+.inactivity-controls {display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; padding: 0;}
+.questions-block .inactivity-controls {margin-bottom: 25px;}
+.activity-actions a,
+.inactivity-controls a {padding: 6px 10px; border-radius: 3px; font-size: 14px; text-align: center; max-width: 30%; flex: 0 0 30%; text-transform: capitalize;}
+.activity-actions .exit-btn {padding: 0; color: var(--primary);}
+.activity-actions .continue-btn {color: #fff;}
+.activity-actions .finish-btn,
+.inactivity-controls .review-btn {background-color: var(--primary); color: #fff !important;}
+.inactivity-controls .exit-btn {color: var(--primary); display: none;}
+.inactivity-controls .continue-btn {background-color: #58d150; color: #fff; margin-right: 0;}
 .question_inactivity_modal .modal-dialog {min-height: calc(100vh - 60px); display: flex; flex-direction: column; justify-content: center; overflow: auto;}
 .question_inactivity_modal .inactivity-controls .continue-btn,
 .activity-actions .continue-btn {background-color: #29a746; min-width: auto; border-radius: 3px; margin-right: 0;}
