@@ -875,7 +875,7 @@ pagination Learn Practice Style Start
 pagination Learn Practice Style End
 *************************************/
 /* Quiz Status Bar Style */
-.quiz-status-bar {margin: 0 0 50px;}
+.quiz-status-bar {margin: 0 0 50px; padding-top: 30px;}
 .container-fluid.read-quiz-content .quiz-status-bar {margin-top: 18px;}
 .read-quiz-content .spell-quiz-page .quiz-status-bar {margin-top: 38px;}
 .correct-in-row {color: #51cd00; font-weight: 500; text-transform: uppercase; }
