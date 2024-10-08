@@ -822,6 +822,9 @@ scrollbar-gutter: stable both-edges;
     width: 100%;
 	padding-bottom: 110px;
 }
+.question-layout .rureraform-element {
+	border: 0;
+}
 /*Quiz Read Content Style End*/
 
 /************************************ 
