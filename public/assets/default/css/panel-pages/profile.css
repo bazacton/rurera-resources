@@ -13,7 +13,7 @@ Dashboard Account Settings Pages Style Start
     top: 50%;
 }
 .svga-col-right .svga-elements svg g{
-    transform: 1px;
+    transform: none;
 }
 .rurera-button-loader .preloader {position: absolute; top: 50%; left: 50%; z-index: 1; transform: translate(-50%, -50%); text-align: center;}
 .rurera-button-loader .preloader img {width: 300px; object-fit: contain; height: 300px;}
