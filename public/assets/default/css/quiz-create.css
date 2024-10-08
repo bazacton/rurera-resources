@@ -841,6 +841,9 @@ scrollbar-gutter: stable both-edges;
 .quiz-group ol li {
     margin-top: 15px;
 }
+.learning-page .learning-content {
+	height: calc(100vh - 105px);
+}
 /*Quiz Read Content Style End*/
 /*Inactivity Modal on quiz layout page start*/
 .activity-scores {margin: 0 0 30px;}
