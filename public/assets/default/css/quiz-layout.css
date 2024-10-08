@@ -211,6 +211,7 @@ span.Selectable:hover {text-decoration: underline;}
 .question-result-layout .form-field label{background-color: inherit;}
 .question-result-layout .lms-sorting-fields .field-holder,
 .question-result-layout .form-field label {border-color: #999;}
+.question-result-layout .rureraform-form-input-medium .rureraform-element .rureraform-input{height: auto; line-height: normal;}
 .chart-summary-fields.result-layout-summary {padding: 0; text-align: center;}
 .chart-summary-fields.result-layout-summary span.icon-box img{height: 100px;}
 .result-layout-summary .sats-summary {border-radius: 0;}
