@@ -810,7 +810,7 @@ html:has(.quiz-topbar) {
   .quiz-topbar .quiz-type-icon {margin-right: 15px; max-width: 100%; width: 60px; object-fit: contain;}
   .lms-quiz-section .quiz-topbar p,
   .learning-page .quiz-topbar p {font-weight: 600; font-size: 1.25rem; text-transform: uppercase;}
-  .quiz-topbar .close-btn {min-width: 45px; min-height: 45px;}
+  .quiz-topbar .close-btn {min-width: 45px; min-height: 45px; border: 0;}
   /************************************ 
    Quiz Top-Bar Style End
   *************************************/
