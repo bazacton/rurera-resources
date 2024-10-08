@@ -290,7 +290,7 @@ div.dataTables_wrapper div.dataTables_filter input[type="search"] {color: #49505
 .chart-summary-fields .sats-summary .sats-summary-icon {margin-right: 15px; width: 35px; height: 35px; text-align: center; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; padding: 0;}
 .chart-summary-fields .sats-summary .sats-summary-icon img {width: 19px; height: 19px;}
 .chart-summary-fields .sats-summary .sats-summary-icon svg {width: 20px; height: 20px;}
-.chart-summary-fields .sats-summary .summary-text {width: calc(100% - 50px);}
+.chart-summary-fields .sats-summary .summary-text {width: calc(100% - 50px); text-align: left;}
 .chart-summary-fields .sats-summary [class*="col-"].bitcoin-box {background-color: initial;}
 .chart-summary-fields .sats-summary .score {color: #0d173b; font-size: 16px;}
 .chart-summary-fields .sats-summary [class*="col-"].bg-none {background-color: inherit; padding: 20px 0;}
