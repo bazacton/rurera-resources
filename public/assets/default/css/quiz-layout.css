@@ -140,6 +140,12 @@ body:has(.quiz-topbar) {
 /************************************ 
  Quiz Read Info Style End
 *************************************/
+
+.question_inactivity_modal .modal-dialog {min-height: calc(100vh - 60px); display: flex; flex-direction: column; justify-content: center; overflow: auto;}
+.inactivity-controls {justify-content: space-between; padding: 15px 0 10px; gap: 15px;}
+.question_inactivity_modal .inactivity-controls .continue-btn,
+.activity-actions .continue-btn {background-color: #29a746; min-width: auto; border-radius: 3px; margin-right: 0;}
+.inactivity-controls .pause-quiz {background-color: var(--primary); color: #fff; display: inline-flex; align-items: center; justify-content: center; border-radius: 3px; padding: 8px 0; flex: 0 0 46%; max-width: 46%;}
 .hide {
   display: none !important;
 }
