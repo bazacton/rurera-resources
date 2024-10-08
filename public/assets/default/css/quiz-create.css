@@ -196,6 +196,9 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .spells-quiz-from .question-label {margin-bottom: 20px;padding: 0 15px 10px;}
 .spells-quiz-from .question-label span {text-align: center; line-height: 31px;}
 .quiz-group .rureraform-column-label {margin-bottom: 15px;}
+.quiz-group .rureraform-column-label .rureraform-label {
+    margin: 0;
+}
 .quiz-group .rureraform-column-label:has(label:empty) {display: none;}
 /* Question Label Style End */
 
