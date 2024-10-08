@@ -781,6 +781,9 @@ select.rureraform-block-form-value {vertical-align: top;line-height: 36px !impor
 .rureraform-properties-content .note-editable input[type="text"],
 .note-editing-area .note-editable input.editor-field {height: 32px; box-shadow: none; border-color: transparent; border-radius: 8px; width: auto;}
 
+/**********************************
+Question Type Style Start 
+**********************************/
 
 /*Quiz Top-Bar Style Start*/
 html:has(.quiz-topbar) {
@@ -1051,3 +1054,7 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 /*Quiz Page start-counter style start*/
 .start-counter {background-color: #fff; position: fixed; height: 100%; width: 100%; left: 0; top: 0; display: flex; align-items: center; justify-content: center; font-size: 50px; color: var(--primary);}
 /*Quiz Page start-counter style end*/
+
+/**********************************
+Question Type Style End 
+**********************************/
