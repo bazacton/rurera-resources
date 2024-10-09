@@ -231,7 +231,6 @@ span.Selectable:hover {text-decoration: underline;}
 .form-box.inline-fields .lms-radio-select {margin-bottom: 0;}
 .lms-radio-select label {margin: 0; border: 2px solid #ddd; border-bottom-width: 4px; min-height: 50px; display: inline-flex; align-items: center; border-radius: 8px; cursor: pointer; overflow: hidden; position: relative; z-index: 1; padding: 0 15px; -webkit-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;width: 100%;}
 .lms-radio-select.inline-fields .field-holder label {width: 100%;}
-.lms-radio-select label:hover {background-color: rgba(0,0,0,0.05);}
 .lms-radio-select .field-holder.wrong label {border-color: #ff4a4a;}
 .lms-radio-select input[type=radio] {position: absolute; width: 0; height: 0;}
 .lms-radio-select input[type=radio]:checked~label:after {width: 100%; transition: 0.4s; }
