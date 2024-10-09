@@ -160,6 +160,19 @@
     <source src="" type="audio/mpeg">
   </audio>
 </div>
+<!-- Audio Quiz Recording Html -->
+<div class="rureraform-element-13 rureraform-element quiz-group rureraform-element-html" data-type="audio_recording">
+  <div id="button-container">
+    <button id="startRecord" class="btn-icon">
+      <i class="fas fa-play"></i>
+    </button>
+    <button id="stopRecord" class="btn-icon" disabled="">
+      <i class="fas fa-stop"></i>
+    </button>
+    <span id="timer" class="time-left">Time remaining: <span id="timeLeft">30</span> seconds </span>
+    <audio id="audioPlayer" data-id="50262" type="audio_record" data-field_type="audio_record" controls="" class="audio-control rurera-hide editor-field"></audio>
+  </div>
+</div>
 
 @if( $questionObj->review_required == 1 || $questionObj->developer_review_required == 1)
 <div class="question-review-required">
