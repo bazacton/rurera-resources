@@ -97,6 +97,10 @@
 <span class="input-holder">
   <textarea class="editor-field input-simple"></textarea>
 </span>
+<!-- Question Seperator Html -->
+<span class="question-seperator">
+  <hr>
+</span>
 
 @if( $questionObj->review_required == 1 || $questionObj->developer_review_required == 1)
 <div class="question-review-required">
