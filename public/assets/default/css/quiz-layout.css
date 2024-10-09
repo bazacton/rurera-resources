@@ -561,6 +561,9 @@ label.lms-question-label.wrong span {
 }
 
 /*Question Block Style*/
+.question-number-holder ~ .rureraform-elements {
+  padding-left: 60px;
+}
 .question-area-block.quiz-first-question {
   height: 100vh;
   display: flex;
