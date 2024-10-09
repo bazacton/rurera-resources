@@ -316,6 +316,7 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
     padding: 4px 8px;
     height: auto;
 }
+.question-result-layout ol li {margin-top: 1rem;}
 .rurera-question-block .rureraform-column-input .rureraform-description {
     margin: 15px 0 0;
 }
