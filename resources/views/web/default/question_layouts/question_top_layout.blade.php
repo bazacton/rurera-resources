@@ -170,7 +170,7 @@
       <i class="fas fa-stop"></i>
     </button>
     <span id="timer" class="time-left">Time remaining: <span id="timeLeft">30</span> seconds </span>
-    <audio id="audioPlayer" data-id="50262" type="audio_record" data-field_type="audio_record" controls="" class="audio-control rurera-hide editor-field"></audio>
+    <audio id="audioPlayer" data-id="50262" type="audio_record" data-field_type="audio_record" class="audio-control rurera-hide editor-field"></audio>
   </div>
 </div>
 
