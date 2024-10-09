@@ -119,6 +119,13 @@
   <span class="Selectable">Option 2</span>
   <span class="Simple">Option 3</span>
 </div>
+<!-- Insert Into Sentense Html -->
+<span class="insert-into-sentense-holder" data-into_type="words">
+  <div class="insert-options">
+    <span class="given">,</span>
+  </div>
+  <p type="paragraph" class="editor-field given" correct_answere="4">Discover a growing collection of resources delivered through Rurera.</p>
+</span>
 
 @if( $questionObj->review_required == 1 || $questionObj->developer_review_required == 1)
 <div class="question-review-required">
