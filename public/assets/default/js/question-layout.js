@@ -63,6 +63,11 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
             thisObj.closest('.spells-quiz-from').find('.question-submit-btn').click();
         }
     }
+	
+	var thisObj = $(this);
+	
+	var thisBlock = $(".rurera-question-block.active");
+    var thisForm = thisBlock.find('form');
 
 
     var bypass_validation = $(".question-submit-btn").attr('data-bypass_validation');
@@ -70,7 +75,9 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
         return false;
     }
     question_submit_process = true;
-    returnType = rurera_validation_process($(this).closest('form'));
+    returnType = rurera_validation_process(thisForm);
+	
+	returnType = false;
 
     if( rurera_is_field(bypass_validation) && bypass_validation == 'yes' ){
         returnType = true;
@@ -107,9 +114,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
     var appricate_word = appricate_words_array[Math.floor(Math.random() * appricate_words_array.length)];
     var appricate_colors_array = ['red', 'orange', 'blue', 'green'];
     var appricate_color = appricate_colors_array[Math.floor(Math.random() * appricate_colors_array.length)];
-    var thisObj = $(this);
-	
-	var thisBlock = $(".rurera-question-block.active");
+   
 	
     var attempt_id = thisBlock.attr('data-qattempt');
     var quiz_result_id = thisBlock.attr('data-quiz_result_id');
@@ -123,7 +128,6 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 
     var question_no = $(this).attr('data-question_no');
     var total_questions = thisObj.closest('.questions-data-block').attr('data-total_questions');
-    var thisForm = thisBlock.find('form');
     var question_id = thisForm.data('question_id');
     var defination_text = thisForm.data('defination');
     var user_question_layout = thisForm.find('.question-layout').html();
@@ -156,6 +160,14 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 
             question_data[0][field_identifier] = field_value;
             $('#checkbox_id:checked').val();
+
+        }  else if (field_type == 'inner_dropdown') {
+            var field_identifier = field_name.replace(/field-/g, '');
+            var field_identifier = field_name.replace(/field-/g, '');
+            identifier
+            var identifier = $(this).attr('data-identifier');
+            question_data[0][identifier] = {};
+            question_data[0][identifier][field_identifier] = field_value;
 
         } else {
             question_data[0][field_identifier] = field_value;
@@ -1102,10 +1114,10 @@ function init_question_functions() {
 		var total_questions = $(".question-area").attr('data-total_questions');
 		var finish_title = $(".questions-nav-controls").attr('data-finish_title');
 		var attempted_questions = $('.quiz-pagination li.correct, .quiz-pagination li.incorrect').length;
-		finish_title = ( rurera_is_valid_field(finish_title) == true)? finish_title : 'By proceeding, your quiz attempt will not be recorded, and no rewards (including coins) will be granted.';
+		finish_title = ( rurera_is_valid_field(finish_title) == true)? finish_title : 'are you sure you want to submit your test? you will not able to access this test again.';
 
-        // $(".review_submit .modal-body p").html('You have attempted ' + attempted_questions + ' questions. Are you sure you want to submit?');
-		// $(".review_submit1 .modal-body p").html('You have attempted ' + attempted_questions + ' questions. '+finish_title);
+        $(".review_submit .modal-body p").html('You have attempted ' + attempted_questions + ' questions. Are you sure you want to submit?');
+		$(".review_submit1 .modal-body p").html('You have attempted ' + attempted_questions + ' questions. '+finish_title);
 
 
         /*var thisObj = $(this);
@@ -1573,11 +1585,19 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
     form_name.find('.rurera-req-field:not(img), .editor-field:not(img), .editor-fields:not(img)').each(function (index_no) {
         is_visible = true;
         var thisObj = jQuery(this);
+		console.log('validation-start');
         index_no = rurera_is_field(index_no) ? index_no : 0;
         error_objects[index_no] = new Array();
         var visible_id = thisObj.data('visible');
         has_empty[index_no] = false;
-        checkbox_fields[index_no] = false;
+		
+		thisObj.next('.chosen-container').removeClass('frontend-field-error');
+		thisObj.next('.rurera-req-field').next('.pbwp-box').removeClass('frontend-field-error');
+		thisObj.removeClass('frontend-field-error');
+		thisObj.closest('.jqte').removeClass('frontend-field-error');
+		
+		
+        //checkbox_fields[index_no] = false;
 		
 		
         if (rurera_is_field(visible_id) == true) {
@@ -1605,10 +1625,18 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
         }
         if (thisObj.attr('type') == 'checkbox') {
             var field_name = thisObj.attr('name');
+            var minimum_selection = thisObj.attr('data-min');
+			var selectedCount = jQuery('input[name="' + field_name + '"]:checked').length;
             var is_field_checked = jQuery('input[name="' + field_name + '"]').is(':checked');
-            if (is_field_checked == false) {
-                checkbox_fields[index_no] = thisObj;
+			console.log('selectedCount=='+selectedCount);
+			console.log('minimum_selection=='+minimum_selection);
+            if (is_field_checked == false || selectedCount < minimum_selection) {
+                checkbox_fields[index_no] = thisObj;				
+				error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisObj, alert_messages, '');
+				error_objects[index_no]['error_obj'] = thisObj;
+				
             }
+			console.log(index_no);
             //has_empty[index_no] = true;
             is_visible = false;
         }
@@ -1631,6 +1659,7 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
             }
         }
         if (has_empty[index_no] == false) {
+			console.log('everythingFine');
             thisObj.next('.chosen-container').removeClass('frontend-field-error');
             thisObj.next('.rurera-req-field').next('.pbwp-box').removeClass('frontend-field-error');
             thisObj.removeClass('frontend-field-error');
@@ -1654,14 +1683,15 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
                 array_length = alert_messages.length;
                 alert_messages[array_length] = rurera_insert_error_message(thisnewObj, alert_messages, '', 'checkbox');
                 has_empty[i] = true;
-                error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisnewObj, alert_messages, '', 'checkbox');
-                error_objects[index_no]['error_obj'] = thisObj;
+                //error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisnewObj, alert_messages, '', 'checkbox');
+                //error_objects[index_no]['error_obj'] = thisObj;
             }
         }
     }
     var error_messages = ' <br><br>';
     if (has_empty.length > 0 && jQuery.inArray(true, has_empty) != -1) {
         array_length = alert_messages.length;
+		console.log(alert_messages);
         for (i = 0; i < array_length; i++) {
             if (i > 0) {
                 error_messages = error_messages + '<br>';
