@@ -95,7 +95,7 @@
 </div>
 <!-- Textarea Html -->
 <span class="input-holder">
-  <textarea data-field_type="textarea" class="editor-field input-simple" data-id="77680" id="field-77680"></textarea>
+  <textarea class="editor-field input-simple"></textarea>
 </span>
 
 @if( $questionObj->review_required == 1 || $questionObj->developer_review_required == 1)
