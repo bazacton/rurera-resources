@@ -199,6 +199,54 @@
     <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
   </div>
 </div>
+<!--col group 3-->
+<div class="quiz-group rureraform-row" data-type="columns">
+  <div class="rureraform-col rureraform-col-4">
+    <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
+  </div>
+  <div class="rureraform-col rureraform-col-4">
+    <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
+  </div>
+  <div class="rureraform-col rureraform-col-4">
+    <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
+  </div>
+</div>
+<!--col group 4-->
+<div class="quiz-group rureraform-row" data-type="columns">
+  <div class="rureraform-col rureraform-col-3">
+    <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
+  </div>
+  <div class="rureraform-col rureraform-col-3">
+    <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
+  </div>
+  <div class="rureraform-col rureraform-col-3">
+    <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
+  </div>
+  <div class="rureraform-col rureraform-col-3">
+    <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
+  </div>
+</div>
+<!--col group 6-->
+<div class="quiz-group rureraform-row" data-type="columns">
+  <div class="rureraform-col rureraform-col-2">
+    <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
+  </div>
+  <div class="rureraform-col rureraform-col-2">
+    <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
+  </div>
+  <div class="rureraform-col rureraform-col-2">
+    <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
+  </div>
+  <div class="rureraform-col rureraform-col-2">
+    <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
+  </div>
+  <div class="rureraform-col rureraform-col-2">
+    <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
+  </div>
+  <div class="rureraform-col rureraform-col-2">
+    <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
+  </div>
+</div>
 
 @if( $questionObj->review_required == 1 || $questionObj->developer_review_required == 1)
 <div class="question-review-required">
