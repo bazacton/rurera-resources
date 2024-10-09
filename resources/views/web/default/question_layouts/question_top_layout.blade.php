@@ -3,7 +3,7 @@
     <span>Question Lbael HTML</span>
 </div>
 <!-- Select Option Html -->
-<div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="inner_dropdown"></div>
+<div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group ui-sortable-handle" data-type="inner_dropdown"></div>
 	<select id="dropdown-1">
     <option value="Option 1">Option 1</option>
     <option value="Option 2">Option 2</option>
@@ -11,20 +11,20 @@
   </select>
 </div>
 <!-- Input Text Html -->
-<div id="rureraform-element-2" class="rureraform-element-2 rureraform-element quiz-group rureraform-element-html" data-type="textfield_quiz">
-  <span class="input-holder ">
-    <input type="" data-field_type="text" class="editor-field input-simple">
+<div class="rureraform-element-2 rureraform-element quiz-group" data-type="textfield_quiz">
+  <span class="input-holder">
+    <input type="text" class="editor-field input-simple">
   </span>
 </div>
 <!-- True/False Option Html -->
 <div class="lms-radio-select">
 			
-  <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+  <div class="form-field rureraform-cr-container-medium">
     <input class="editor-field" type="radio" name="field-0" id="field-0-0" value="True">
     <label for="field-0-0">
     <span class="inner-label">True</span></label>
   </div>
-  <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+  <div class="form-field rureraform-cr-container-medium">
     <input class="editor-field" type="radio" name="field-0" id="field-0-1" value="False">
     <label for="field-0-1">
     <span class="inner-label">False</span></label>
@@ -154,14 +154,14 @@
   </div>
 </div>
 <!-- Audio Quiz Html -->
-<div class="rureraform-element-12 rureraform-element quiz-group rureraform-element-html" data-type="audio_file">
+<div class="rureraform-element-12 rureraform-element quiz-group" data-type="audio_file">
   <audio controls="">
     <source src="" type="audio/ogg">
     <source src="" type="audio/mpeg">
   </audio>
 </div>
 <!-- Audio Quiz Recording Html -->
-<div class="rureraform-element-13 rureraform-element quiz-group rureraform-element-html" data-type="audio_recording">
+<div class="rureraform-element-13 rureraform-element quiz-group" data-type="audio_recording">
   <div id="button-container">
     <button id="startRecord" class="btn-icon">
       <i class="fas fa-play"></i>
@@ -172,6 +172,12 @@
     <span id="timer" class="time-left">Time remaining: <span id="timeLeft">30</span> seconds </span>
     <audio id="audioPlayer" data-id="50262" type="audio_record" data-field_type="audio_record" class="audio-control rurera-hide editor-field"></audio>
   </div>
+</div>
+<!-- Static Image Html -->
+<div class="image-left image-small image-element-box quiz-group" data-type="image_quiz">
+  <span classname="block-holder image-field">
+    <img class="image-editor-field" src="/assets/default/img/quiz/placeholder-image.png">
+  </span>
 </div>
 
 @if( $questionObj->review_required == 1 || $questionObj->developer_review_required == 1)
