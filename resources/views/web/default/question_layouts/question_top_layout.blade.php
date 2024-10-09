@@ -179,6 +179,12 @@
     <img class="image-editor-field" src="/assets/default/img/quiz/placeholder-image.png">
   </span>
 </div>
+<!-- Draggable Image Html -->
+<div class="image-field-box quiz-group" data-type="image_quiz_draggable">
+  <span classname="block-holder image-field">
+    <img class="editor-field" src="/assets/default/img/quiz/placeholder-image.png" heigh="50" width="50">
+  </span>
+</div>
 
 @if( $questionObj->review_required == 1 || $questionObj->developer_review_required == 1)
 <div class="question-review-required">
