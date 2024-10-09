@@ -153,6 +153,13 @@
     </div>
   </div>
 </div>
+<!-- Audio Quiz Html -->
+<div class="rureraform-element-12 rureraform-element quiz-group rureraform-element-html" data-type="audio_file">
+  <audio controls="">
+    <source src="" type="audio/ogg">
+    <source src="" type="audio/mpeg">
+  </audio>
+</div>
 
 @if( $questionObj->review_required == 1 || $questionObj->developer_review_required == 1)
 <div class="question-review-required">
