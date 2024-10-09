@@ -101,6 +101,18 @@
 <span class="question-seperator">
   <hr>
 </span>
+<!-- Draggable Quiz Html -->
+<ul class="draggable-items">
+  <li>
+    <span class="draggable-option">Option 1</span>
+  </li>
+  <li>
+    <span class="draggable-option">Option 2</span>
+  </li>
+  <li>
+    <span class="draggable-option">Option 3</span>
+  </li>
+</ul>
 
 @if( $questionObj->review_required == 1 || $questionObj->developer_review_required == 1)
 <div class="question-review-required">
