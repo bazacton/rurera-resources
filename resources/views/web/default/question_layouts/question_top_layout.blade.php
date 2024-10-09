@@ -59,6 +59,40 @@
         </div>
     </div>
 </div>
+<!-- SortAble Quiz Html -->
+<div class="rureraform-column-label">
+  <label class="rureraform-label rureraform-ta-undefined">Arrange the following</label>
+</div>
+<div class="rureraform-column-input">
+  <div class="rureraform-input">
+    <div class="form-box lms-sorting-fields rurera-in-row undefined image-right none">
+      <div class="field-holder ui-sortable-handle">
+        <span class="sort-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <label for="field-60965-0">Option 1</label>
+      </div>
+      <div class="field-holder ui-sortable-handle">
+        <span class="sort-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <label for="field-60965-1">Option 2</label>
+      </div>
+      <div class="field-holder ui-sortable-handle">
+        <span class="sort-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <label for="field-60965-2">Option 3</label>
+      </div>
+    </div>
+  </div>
+</div>
 
 @if( $questionObj->review_required == 1 || $questionObj->developer_review_required == 1)
 <div class="question-review-required">
