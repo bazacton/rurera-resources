@@ -113,6 +113,12 @@
     <span class="draggable-option">Option 3</span>
   </li>
 </ul>
+<!-- Marking Quiz Html -->
+<div class="marking-quiz-data editor-field">
+  <span class="Simple">Option 1</span>
+  <span class="Selectable">Option 2</span>
+  <span class="Simple">Option 3</span>
+</div>
 
 @if( $questionObj->review_required == 1 || $questionObj->developer_review_required == 1)
 <div class="question-review-required">
