@@ -126,6 +126,33 @@
   </div>
   <p type="paragraph" class="editor-field given" correct_answere="4">Discover a growing collection of resources delivered through Rurera.</p>
 </span>
+<!-- Match Quiz Html -->
+<div class="form-box rurera-in-row undefined image-right none">
+  <div class="lms-sorting-fields" id="lmssort11727">
+    <div class="match-question">
+      <div class="stems">
+        <ol>
+          <li id="Option 1" scope="col" data-id="field-23838-0">Option 1</li>
+          <li id="Option 2" scope="col" data-id="field-23838-1">Option 2</li>
+          <li id="Option 3" scope="col" data-id="field-23838-2">Option 3</li>
+        </ol>
+      </div>
+      <div class="options">
+        <ol start="a">
+          <li data-id="field-23838-0" id="Option 1">Option 1 
+            <input type="text" data-field_type="match_quiz" class="hide editor-field" id="field-23838-0">
+          </li>
+          <li data-id="field-23838-1" id="Option 2">Option 2 
+            <input type="text" data-field_type="match_quiz" class="hide editor-field" id="field-23838-1">
+          </li>
+          <li data-id="field-23838-2" id="Option 3">Option 3 
+            <input type="text" data-field_type="match_quiz" class="hide editor-field" id="field-23838-2">
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
 
 @if( $questionObj->review_required == 1 || $questionObj->developer_review_required == 1)
 <div class="question-review-required">
