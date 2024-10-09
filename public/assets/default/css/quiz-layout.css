@@ -76,7 +76,7 @@ body:has(.quiz-topbar) {
  Quiz Read Info Style Start
 *************************************/
 /* Lms Font End Display Style */
-.question-layout-block form.question-fields .questions-nav-controls {border-top: 2px dashed #ddd; padding: 15px}
+.question-layout-block form.question-fields .questions-nav-controls {border-top: 2px dashed #ddd; padding: 15px 0;}
 .type-sats .question-layout-block form.question-fields {background-color: inherit; border: 0; padding: 0; border-radius: 0; margin-bottom: 0;}
 /* Lms Font End Display End */
 .quiz-show .read-quiz-info {left: 0;}
