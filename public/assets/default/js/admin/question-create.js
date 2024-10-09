@@ -1603,6 +1603,7 @@ function _rureraform_properties_prepare(_object) {
 
                 case 'image-options':
                     options = "";
+                    var image_position = rureraform_form_elements[i]['image_position'];
                     var is_selected = "";
                     for (var j = 0; j < properties[key].length; j++) {
 
@@ -5633,6 +5634,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                     var random_id = Math.floor((Math.random() * 99999) + 1);
                     rureraform_form_elements[i]['field_id'] = random_id;
                     var image_size = rureraform_form_elements[i]['image_size'];
+                    var image_position = !DataIsEmpty(rureraform_form_elements[i]["image_position"])? rureraform_form_elements[i]["image_position"] : 'left';
                     var template_style = rureraform_form_elements[i]['template_style'];
                     var template_size = rureraform_form_elements[i]['template_size'];
                     var template_alignment = rureraform_form_elements[i]['template_alignment'];
@@ -5659,18 +5661,26 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         var image_url = rureraform_form_elements[i]["options"][j]["image"];
 
                         var label_data = '';
+                        var image_data = '';
 						
 						
                         if (!DataIsEmpty(image_url)) {
-                            label_data += '<img src="' + rureraform_form_elements[i]["options"][j]["image"] + '" alt=""> ';
+                            image_data += '<img src="' + rureraform_form_elements[i]["options"][j]["image"] + '" alt=""> ';
                             var is_image = true;
                         }
 						//console.log('label++++'+rureraform_form_elements[i]["options"][j]["label"]);
 						if(DataIsEmpty(rureraform_form_elements[i]["options"][j]["label"])){
 							continue;
 						}
-						console.log('label++++'+rureraform_form_elements[i]["options"][j]["label"]);
+						
+						if( image_position == 'left' ){
+							label_data += image_data;
+						}
+						
                         label_data += rureraform_form_elements[i]["options"][j]["label"];
+						if( image_position == 'right' ){
+							label_data += image_data;
+						}
                         option = "<input class='editor-field rureraform-checkbox-" + properties["checkbox-size"] + "'  type='checkbox' data-field_id='" + random_id + "' name='field-" + random_id + "' id='field-" + random_id + "-" + j + "' value='" + rureraform_escape_html(rureraform_form_elements[i]["options"][j]["value"]) + "'" + selected + " /><label for='field-" + random_id + "-" + j + "'>" + label_data + "</label>";
                         options += "<div class='form-field rureraform-cr-container-" + properties["checkbox-size"] + " rureraform-cr-container-" + properties["checkbox-position"] + "'>\n\
 					" + option + "</div>";
