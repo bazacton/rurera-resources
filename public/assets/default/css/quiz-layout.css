@@ -277,7 +277,8 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 @supports (selector(.quiz-group:has(.input-holder))) {
     .input-holder:has(.divide-numbers) {border: 0 !important;}
 }
-.question-result-layout select {
+.question-result-layout select,
+.question-layout-block select {
     border: 1px solid #ddd;
     border-radius: 3px;
     padding: 4px 8px;
