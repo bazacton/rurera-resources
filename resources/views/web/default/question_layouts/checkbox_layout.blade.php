@@ -3,6 +3,7 @@ $options = isset( $elementObj->options )? $elementObj->options : array();
 $correctCount = count(array_filter($options, function ($option) {
     return isset($option->default) && $option->default === 'on';
 }));
+$element_unique_id = isset( $element_unique_id )? $element_unique_id : $element_id; 
 @endphp
 <div id="rureraform-element-{{$element_unique_id}}" class="quiz-group rureraform-element-{{$element_unique_id}} rureraform-element rureraform-element-label-undefined ui-sortable-handle" data-type="checkbox">
     <div class="rureraform-column-label"><label class="rureraform-label rureraform-ta-undefined">{{$elementObj->label}}</label></div>
