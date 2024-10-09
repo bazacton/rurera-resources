@@ -602,6 +602,7 @@ Lms Responsive Style Start
         transform: translateY(-50%);
     }
     .home-banner #change {white-space: inherit;}
+    .learning-page .learning-content {height: auto;}
 }
 
 @media screen and (min-width: 767px) and (max-width: 1600px) {
