@@ -185,6 +185,20 @@
     <img class="editor-field" src="/assets/default/img/quiz/placeholder-image.png" heigh="50" width="50">
   </span>
 </div>
+<!-- Quiz Column Html -->
+<!--col group 1-->
+<div class="rureraform-col rureraform-col-12">
+    <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
+</div>
+<!--col group 2-->
+<div class="quiz-group rureraform-row " data-type="columns">
+  <div class="rureraform-col rureraform-col-6">
+    <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
+  </div>
+  <div class="rureraform-col rureraform-col-6">
+    <div class="rureraform-elements ui-sortable" style="min-height: 60px;"></div>
+  </div>
+</div>
 
 @if( $questionObj->review_required == 1 || $questionObj->developer_review_required == 1)
 <div class="question-review-required">
