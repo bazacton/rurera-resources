@@ -10,6 +10,12 @@
     <option value="Option 3">Option 3</option>
   </select>
 </div>
+<!-- Input Text Html -->
+<div id="rureraform-element-2" class="rureraform-element-2 rureraform-element quiz-group rureraform-element-html" data-type="textfield_quiz">
+  <span class="input-holder ">
+    <input type="" data-field_type="text" class="editor-field input-simple">
+  </span>
+</div>
 
 @if( $questionObj->review_required == 1 || $questionObj->developer_review_required == 1)
 <div class="question-review-required">
