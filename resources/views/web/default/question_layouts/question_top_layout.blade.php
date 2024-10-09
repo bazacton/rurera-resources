@@ -42,6 +42,23 @@
       <label for="field-0-11-4579">Option 2</label>
     </div>
   </div>
+  <!-- Attachment Field Html -->
+  <div class="form-group mt-15">
+    <label class="input-label">Attachment</label>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <button type="button" class="input-group-text admin-file-manager" data-input="field-86380" data-preview="holder">
+                <i class="fa fa-upload"></i>
+            </button>
+        </div>
+        <input type="text" data-field_type="file" class="editor-field input-simple" data-id="86380" id="field-86380" name="field-86380" value="">
+        <div class="input-group-append">
+            <button type="button" class="input-group-text admin-file-view" data-input="field-86380">
+                <i class="fa fa-eye"></i>
+            </button>
+        </div>
+    </div>
+</div>
 
 @if( $questionObj->review_required == 1 || $questionObj->developer_review_required == 1)
 <div class="question-review-required">
