@@ -31,6 +31,17 @@
   </div>
   
   </div>
+  <!-- Select Check Box Field Html -->
+  <div class="form-box">
+    <div class="form-field rureraform-cr-container-medium">
+      <input class="editor-field rureraform-checkbox-medium" type="checkbox" name="field-0" value="Option 1" id="field-0-00-4579">
+      <label for="field-0-00-4579">Option 1</label>
+    </div>
+    <div class="form-field rureraform-cr-container-medium">
+      <input class="editor-field rureraform-checkbox-medium" type="checkbox" name="field-0" id="field-0-11-4579" value="Option 2">
+      <label for="field-0-11-4579">Option 2</label>
+    </div>
+  </div>
 
 @if( $questionObj->review_required == 1 || $questionObj->developer_review_required == 1)
 <div class="question-review-required">
