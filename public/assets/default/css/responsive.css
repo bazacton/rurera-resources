@@ -924,7 +924,8 @@ Lms Responsive Style Start
     .read-quiz-content .treasure-stage .horizontal-list {flex-wrap: wrap; gap: 25px; justify-content: center !important;}
     .read-quiz-content .treasure-stage .horizontal-list li {width: auto;}
     .rurera-list-btn {min-width: 120px;}
-    .input-holder, .lms-quiz-section .input-holder{width: 100% !important; margin-top: 5px; margin-bottom: 5px;}
+    .input-holder, .lms-quiz-section .input-holder{width: 100% !important; margin-top: 15px; margin-bottom: 15px;}
+    .question-result-layout .rureraform-element {padding-bottom: 15px;}
     .learning-page.type-vocabulary .question-layout-block {padding-top: 0;}
     body .learning-page.type-vocabulary .left-content {height: auto; min-height: auto;}
     body .radio-buttons .card-radio {width: 31%;}
