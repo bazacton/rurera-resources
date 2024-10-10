@@ -125,7 +125,7 @@
     gap: 10px;
     margin-bottom: 20px;
 }
-.editor-zone .prev-page, .editor-zone .next-page {
+.book-pages-navs .prev-page, .book-pages-navs .next-page {
     border: 1px solid #ddd;
     padding: 10px 20px;
     display: inline-block;
