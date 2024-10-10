@@ -155,7 +155,7 @@
                             </div>
                             <div class="col-12 col-lg-12">
                                 <div class="preferences panel-border bg-white rounded-sm p-20">
-                                    <h5>Preferences</h5>
+                                    <h5 class="font-19 font-weight-bold">Preferences</h5>
                                     <h6>Lesson experience</h6>
                                     <div class="preferences-switch-list">
                                         <div class="preferences-switch-box mb-15">
