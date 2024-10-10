@@ -127,9 +127,6 @@
     border-radius: 5px;
     margin: 0 10px 25px 0;
 }
-.editor-zone .prev-page svg, .editor-zone .next-page svg {
-    transform: scale(-1);
-}
 .book-pages-navs {
     display: flex;
     justify-content: flex-end;
