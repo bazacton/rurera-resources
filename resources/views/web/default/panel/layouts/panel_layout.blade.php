@@ -154,7 +154,7 @@
                                 @endif
                             </div>
                             <div class="col-12 col-lg-12">
-                                <div class="preferences panel-border bg-white rounded-sm p-20">
+                                <div class="preferences panel-border bg-white rounded-sm p-20 mb-30">
                                     <h5 class="font-19 font-weight-bold">Preferences</h5>
                                     <h6 class="font-14 font-weight-500 mb-20">Lesson experience</h6>
                                     <div class="preferences-switch-list">
