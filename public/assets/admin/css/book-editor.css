@@ -124,6 +124,8 @@
     flex-direction: row-reverse;
     gap: 10px;
     margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: center;
 }
 .book-pages-navs .prev-page, .book-pages-navs .next-page {
     border: 1px solid #ddd;
@@ -131,6 +133,9 @@
     display: inline-block;
     line-height: normal;
     border-radius: 5px;
+}
+.book-pages-navs .generate {
+    margin-right: auto;
 }
 body .editor-zone:has(.editor-controls-holder),
 body .editor-zone:has(.field-options.hide) {
