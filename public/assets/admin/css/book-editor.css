@@ -12,30 +12,24 @@
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
-
-
 .open .drag-controls {
     right: 1px;
     opacity: 1;
     visibility: visible;
 }
-
 .controls-box {
     height: 100%;
     width: 100%;
 }
-
 .controls-dropdown {
     padding: 5px;
     margin: 0;
     height: 100%;
     display: inline-block;
 }
-
 .controls-dropdown li {
     margin: 0;
 }
-
 .drag-controls li a {
     font-size: 12px;
     color: #ccc;
@@ -46,12 +40,10 @@
     display: block;
     text-transform: lowercase;
 }
-
 .drag-controls li a span {
     display: block;
     font-weight: 400;
 }
-
 /*.drag-controls svg g {
     fill: #ccc;
 }*/
@@ -120,7 +112,12 @@
     border-radius: 100%;
 }
 
-
+.editor-zone:has(.editor-controls-holder) {
+    padding-left: 0;
+}
+.book-dropzone img {
+    max-width: 100%;
+}
 .book-dropzone {
     background-size: cover !important;
     position: relative;
