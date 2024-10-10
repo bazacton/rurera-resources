@@ -135,7 +135,6 @@
 body .editor-zone:has(.editor-controls-holder) {
     padding-left: 0;
 }
-
 .book-dropzone img {
     max-width: 100%;
 }
@@ -144,14 +143,20 @@ body .editor-zone:has(.editor-controls-holder) {
     border: 1px solid #ccc;
     border-radius: 5px;
     /*width: 760px;*/
-	height:800px;
+	height:100%;
     box-sizing: border-box;
     background-size: cover !important;
-    position: relative;
-    border-radius: 5px;
     overflow: hidden;
 }
-
+body .editor-controls-holder {
+    height: calc(100% - 60px);
+}
+.editor-zone .generate {
+    margin-top: 30px;
+}
+.editor-zone > br {
+    display: none;
+}
 .book-dropzone .stage-shapes{
     height:30px;
     width:140px;
