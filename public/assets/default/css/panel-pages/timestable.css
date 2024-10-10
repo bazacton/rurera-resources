@@ -532,7 +532,7 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
     width: 35px;
 }
 .preferences-switch-box .custom-control-label:after {
-    top: calc(-.4rem + 4px);
+    top: calc(-.4rem + 3px);
     border-radius: 3px;
     background-color: #fff;
     box-shadow: 0 0 0 1px var(--primary);
