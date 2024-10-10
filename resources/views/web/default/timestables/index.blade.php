@@ -26,7 +26,7 @@
                             </ul>
                         </div>
 
-                        <div class="col-12 col-lg-6 col-md-6">
+                        <div class="col-12 col-lg-12 col-md-12">
                             <div class="preferences panel-border bg-white rounded-sm p-20 mb-30">
                                 <h5>Preferences</h5>
                                 <h6 class="font-14 font-weight-500 mb-20">Lesson experience</h6>
