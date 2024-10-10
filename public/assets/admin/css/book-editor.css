@@ -135,6 +135,9 @@
 body .editor-zone:has(.editor-controls-holder) {
     padding-left: 0;
 }
+body .editor-zone:has(.field-options) {
+    padding-left: 369px;
+}
 .book-dropzone img {
     max-width: 100%;
 }
@@ -202,7 +205,7 @@ body .editor-controls-holder {
     right: auto;
     min-width: 340px;
     max-width: 340px;
-    height: calc(100% - 30px);
+    height: calc(100% - 130px);
     background-color: #f2f2f2;
     padding: 30px 30px;
     border-radius: 5px;
