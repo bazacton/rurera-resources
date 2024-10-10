@@ -112,7 +112,7 @@
     border-radius: 100%;
 }
 
-.editor-zone:has(.editor-controls-holder) {
+body .editor-zone:has(.editor-controls-holder) {
     padding-left: 0;
 }
 .book-dropzone img {
