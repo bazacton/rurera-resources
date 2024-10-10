@@ -78,76 +78,6 @@
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-4 panel-right-sidebar">
                         <div class="row">
-                        <div class="col-12 col-lg-12">
-                            <div class="preferences panel-border bg-white rounded-sm p-20">
-                                <h5>Preferences</h5>
-                                <h6>Lesson experience</h6>
-                                <div class="preferences-switch-list">
-                                    <div class="preferences-switch-box mb-15">
-                                        <span class="switch-lable">Sound effect</span>
-                                        <div class="custom-control custom-switch">
-                                            <input type="checkbox" name="disabled" class="custom-control-input" id="sound">
-                                            <label class="custom-control-label" for="sound"></label>
-                                        </div>
-                                    </div>
-                                    <div class="preferences-switch-box mb-15">
-                                        <span class="switch-lable">Animation</span>
-                                        <div class="custom-control custom-switch">
-                                            <input type="checkbox" name="disabled" class="custom-control-input" id="animation">
-                                            <label class="custom-control-label" for="animation"></label>
-                                        </div>
-                                    </div>
-                                    <div class="preferences-switch-box mb-15">
-                                        <span class="switch-lable">Motivational message</span>
-                                        <div class="custom-control custom-switch">
-                                            <input type="checkbox" name="disabled" class="custom-control-input" id="motivational">
-                                            <label class="custom-control-label" for="motivational"></label>
-                                        </div>
-                                    </div>
-                                    <div class="preferences-switch-box mb-15">
-                                        <span class="switch-lable">Listing exercises</span>
-                                        <div class="custom-control custom-switch">
-                                            <input type="checkbox" name="disabled" class="custom-control-input" id="listing">
-                                            <label class="custom-control-label" for="listing"></label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h6>Appearance</h6>
-                                <div class="preferences-select">
-                                    <span>Dark mode</span>
-                                    <select>
-                                        <option value="System Default">System Default</option>
-                                        <option value="System Default">System Default</option>
-                                        <option value="System Default">System Default</option>
-                                        <option value="System Default">System Default</option>
-                                    </select>
-                                </div>
-                                <h6>Japanese</h6>
-                                <div class="preferences-switch-box mb-10">
-                                    <span class="switch-lable">Show pronunciation</span>
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" name="disabled" class="custom-control-input" id="pronunciation">
-                                        <label class="custom-control-label" for="pronunciation"></label>
-                                    </div>
-                                </div>
-                                <div class="select-language">
-                                    <div class="language-box">
-                                        <input type="radio" name="language" id="one">
-                                        <label for="one">
-                                            <span class="icon-box"></span>
-                                            <span class="country-lable">Romanized</span>
-                                        </label>
-                                    </div>
-                                    <div class="language-box">
-                                        <input type="radio" name="language" id="two">
-                                        <label for="two">
-                                            <span class="icon-box"></span>
-                                            <span class="country-lable">Japanese</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                             <div class="col-12 col-lg-12">
 
                                 @include(getTemplate(). '.panel.includes.user_top_bar')
@@ -223,7 +153,76 @@
                                 </div>
                                 @endif
                             </div>
-                            
+                            <div class="col-12 col-lg-12">
+                                <div class="preferences panel-border bg-white rounded-sm p-20">
+                                    <h5>Preferences</h5>
+                                    <h6>Lesson experience</h6>
+                                    <div class="preferences-switch-list">
+                                        <div class="preferences-switch-box mb-15">
+                                            <span class="switch-lable">Sound effect</span>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" name="disabled" class="custom-control-input" id="sound">
+                                                <label class="custom-control-label" for="sound"></label>
+                                            </div>
+                                        </div>
+                                        <div class="preferences-switch-box mb-15">
+                                            <span class="switch-lable">Animation</span>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" name="disabled" class="custom-control-input" id="animation">
+                                                <label class="custom-control-label" for="animation"></label>
+                                            </div>
+                                        </div>
+                                        <div class="preferences-switch-box mb-15">
+                                            <span class="switch-lable">Motivational message</span>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" name="disabled" class="custom-control-input" id="motivational">
+                                                <label class="custom-control-label" for="motivational"></label>
+                                            </div>
+                                        </div>
+                                        <div class="preferences-switch-box mb-15">
+                                            <span class="switch-lable">Listing exercises</span>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" name="disabled" class="custom-control-input" id="listing">
+                                                <label class="custom-control-label" for="listing"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h6>Appearance</h6>
+                                    <div class="preferences-select">
+                                        <span>Dark mode</span>
+                                        <select>
+                                            <option value="System Default">System Default</option>
+                                            <option value="System Default">System Default</option>
+                                            <option value="System Default">System Default</option>
+                                            <option value="System Default">System Default</option>
+                                        </select>
+                                    </div>
+                                    <h6>Japanese</h6>
+                                    <div class="preferences-switch-box mb-10">
+                                        <span class="switch-lable">Show pronunciation</span>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" name="disabled" class="custom-control-input" id="pronunciation">
+                                            <label class="custom-control-label" for="pronunciation"></label>
+                                        </div>
+                                    </div>
+                                    <div class="select-language">
+                                        <div class="language-box">
+                                            <input type="radio" name="language" id="one">
+                                            <label for="one">
+                                                <span class="icon-box"></span>
+                                                <span class="country-lable">Romanized</span>
+                                            </label>
+                                        </div>
+                                        <div class="language-box">
+                                            <input type="radio" name="language" id="two">
+                                            <label for="two">
+                                                <span class="icon-box"></span>
+                                                <span class="country-lable">Japanese</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 							
 							@if(auth()->user()->isUser())
 							<div class="col-12 col-lg-12 mb-30">
