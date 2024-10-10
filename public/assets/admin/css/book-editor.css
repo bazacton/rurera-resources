@@ -122,14 +122,15 @@
 body .editor-zone:has(.editor-controls-holder) {
     padding-left: 0;
 }
-.book-dropzone img {
-    max-width: 100%;
-}
 .book-dropzone {
     background-size: cover !important;
     position: relative;
+    border-radius: 5px;
+    overflow: hidden;
 }
-
+.book-dropzone img {
+    max-width: 100%;
+}
 .book-dropzone .stage-shapes{
     height:30px;
     width:140px;
