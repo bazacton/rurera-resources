@@ -223,6 +223,32 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-12 col-lg-12">
+                                <div class="sound-card">
+                                    <span class="selective-sound">very</span>
+                                    <div class="sound-box">
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/sound.svg" alt="sound svg image" height="800" width="800">
+                                        </span>
+                                        <span class="current-sound">very</span>
+                                    </div>
+                                    <div class="sound-list">
+                                        <h5>adjective</h5>
+                                        <ol>
+                                            <li>being actual or real</li>
+                                            <li>exact, precise</li>
+                                            <li>exactly suitable or necessary</li>
+                                        </ol>
+                                    </div>
+                                    <div class="sound-list">
+                                        <h5>adverb</h5>
+                                        <ol>
+                                            <li>in actual fact: truly</li>
+                                            <li>to a great degree: extremely</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
 							
 							@if(auth()->user()->isUser())
 							<div class="col-12 col-lg-12 mb-30">
