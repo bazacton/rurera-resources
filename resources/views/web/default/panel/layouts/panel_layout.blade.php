@@ -154,7 +154,7 @@
                                 @endif
                             </div>
                             <div class="col-12 col-lg-12">
-                                <div class="sound-card mb-30 panel-border bg-white rounded-sm p-20">
+                                <div class="sound-card mb-30 mt-15 panel-border bg-white rounded-sm p-20">
                                     <span class="selective-sound">very</span>
                                     <div class="sound-box">
                                         <span class="icon-box">
