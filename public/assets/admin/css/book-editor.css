@@ -139,9 +139,6 @@ body .editor-zone:has(.field-options.hide) {
 body .editor-zone:has(.field-options) {
     padding-left: 369px;
 }
-.book-dropzone img {
-    max-width: 100%;
-}
 .book-dropzone {
     position: relative;
     border: 1px solid #ccc;
