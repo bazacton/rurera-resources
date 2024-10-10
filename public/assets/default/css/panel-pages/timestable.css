@@ -520,12 +520,6 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
     justify-content: space-between;
     margin-bottom: 15px;
 }
-.preferences {
-    background-color: #fff;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-}
 .switch-lable {
     font-size: 14px;
     font-weight: 500;
