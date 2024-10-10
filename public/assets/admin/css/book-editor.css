@@ -111,7 +111,14 @@
     background-color: #ccc;
     border-radius: 100%;
 }
-
+.editor-zone .prev-page, .editor-zone .next-page {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    display: inline-block;
+    line-height: normal;
+    border-radius: 5px;
+    margin: 0 10px 25px 0;
+}
 body .editor-zone:has(.editor-controls-holder) {
     padding-left: 0;
 }
