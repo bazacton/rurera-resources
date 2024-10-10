@@ -127,6 +127,9 @@
     border-radius: 5px;
     margin: 0 10px 25px 0;
 }
+.editor-zone .prev-page svg, .editor-zone .next-page svg {
+    transform: scale(-1);
+}
 body .editor-zone:has(.editor-controls-holder) {
     padding-left: 0;
 }
