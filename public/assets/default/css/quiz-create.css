@@ -227,6 +227,9 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 /* Highlight Word/Sentence Style End */
 
 /* Insert Into Sentence Style Start */
+.insert-into-sentense-holder p {
+	word-wrap: break-word;
+}
 .insert-options {
     width: 100%;
     display: inline-block;
