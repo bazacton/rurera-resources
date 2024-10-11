@@ -184,7 +184,6 @@ body .editor-controls-holder {
 .book-dropzone .drop-item {
     position: absolute;
     width: fit-content;
-    margin: 0 15px;
 }
 
 .drop-item span.field-handle {
