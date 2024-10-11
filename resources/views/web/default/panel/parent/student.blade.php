@@ -15,7 +15,7 @@
 </style>
 
 <style>
-.rurera-hide{display:  !important;}
+.rurera-hide{display:none !important;}
     .profile-container {max-width: 1000px; margin: 0 auto; padding-top: 50px;}
     .student-profile-holder {width: 100%; display: inline-block; margin-right: -4px; padding: 0 8px 15px; box-sizing: border-box;}
     .profile-inner {border: 1px dashed #ddd; border-radius: 5px; padding: 20px;}
