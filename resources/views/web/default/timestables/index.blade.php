@@ -28,8 +28,8 @@
 
                         <div class="col-12 col-lg-12 col-md-12">
                             <div class="preferences panel-border bg-white rounded-sm p-20 mb-30">
-                                <h5>Preferences</h5>
-                                <h6 class="font-14 font-weight-500 mb-20">Lesson experience</h6>
+                                <h5 class="font-19 font-weight-bold">Preferences</h5>
+                                <h6 class="font-weight-500 mb-20">Lesson experience</h6>
                                 <div class="preferences-switch-list">
                                     <div class="preferences-switch-box mb-15">
                                         <span class="switch-lable">Sound effect</span>
@@ -60,7 +60,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <h6 class="font-14 font-weight-500 mb-20">Appearance</h6>
+                                <h6 class="font-weight-500 mb-20">Appearance</h6>
                                 <div class="preferences-select">
                                     <span>Dark mode</span>
                                     <select>
@@ -70,7 +70,7 @@
                                         <option value="System Default">System Default</option>
                                     </select>
                                 </div>
-                                <h6 class="font-14 font-weight-500 mb-20">Japanese</h6>
+                                <h6 class="font-weight-500 mb-20">Japanese</h6>
                                 <div class="preferences-switch-box mb-10">
                                     <span class="switch-lable">Show pronunciation</span>
                                     <div class="custom-control custom-switch">
