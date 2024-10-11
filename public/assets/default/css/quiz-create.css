@@ -942,6 +942,11 @@ Questions Edit Page Fields style start
 .lms-quiz-create .rureraform-properties-item .quiz-form-control input[type=radio]:checked + label input[type="text"] {border-color: green;}
 /*Fields Layout Options Style End*/
 
+/*Iframe Style Start*/
+#rureraform-import-style-iframe {display: none;}
+#rureraform-preview-iframe {width: 100%;border: none;margin: 0;	display: block !important;}
+/*Iframe Style End*/
+
 /**************************************
 Questions Edit Page Fields style start
 **************************************/
