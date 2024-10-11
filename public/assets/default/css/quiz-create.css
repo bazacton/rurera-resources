@@ -833,7 +833,7 @@ scrollbar-gutter: stable both-edges;
     color: #adabab;
 }
 .rurera-question-block:has(.question-number-holder) .rureraform-elements {padding-left: 50px;}
-.question-layout .rureraform-col {padding:0 0 10px !important;}
+.question-layout .rureraform-col {padding:0 0 20px !important;}
 .rurera-question-block:has(.question-number-holder) .question-layout {
     display: inline-block;
     width: 100%;
