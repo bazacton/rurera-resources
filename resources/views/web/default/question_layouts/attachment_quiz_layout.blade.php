@@ -1,4 +1,4 @@
 <div id="rureraform-element-{{$element_id}}" class="rureraform-element-{{$element_id}} rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="{{$elementObj->type}}">
-	<input type="file" class="editor-field input-simple" data-id="{{$element_unique_id}}" id="field-{{$element_unique_id}}" name="">
-	<label for="field-{{$element_unique_id}}" class="choose-file-btn">choose file</label>
+	<input type="file" class="editor-field input-simple" data-id="{{$element_unique_id}}" id="file" name="field-{{$element_unique_id}}">
+	<label for="file" class="choose-file-btn">choose file</label>
 </div>
