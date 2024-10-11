@@ -611,6 +611,8 @@ Questions Edit Page Fields style start
 .lms-quiz-create .rureraform-properties-item .field-options .text-field-options {padding: 10px;}
 .lms-quiz-create .rureraform-properties-item .quiz-form-control {margin-bottom: 10px;}
 .lms-quiz-create .rureraform-properties-item .quiz-form-control input[type=radio] {margin: 0 0 10px;}
+.lms-quiz-create .rureraform-properties-item .quiz-form-control label {width: 100%;}
+.lms-quiz-create .rureraform-properties-item .quiz-form-control input[type=radio]:checked + label input[type="text"] {border-color: green;}
 /*Fields Layout Options Style End*/
 
 /**************************************
