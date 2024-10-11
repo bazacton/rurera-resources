@@ -322,6 +322,15 @@ Questions Builder Right Sidebar Style Start
 .rureraform-tab-active, .rureraform-tab:focus:active {box-shadow: none;}
 .rureraform-tab-content {display: none;position: relative;}
 /* Admin Popup Tabs Style End */
+/* Admin Popup properties Style Start */
+.lms-quiz-create .rureraform-properties-item {display: block; margin: 20px 0; width: 100%;}
+.lms-quiz-create .rureraform-properties-item .field-options {padding: 0;}
+.lms-quiz-create .rureraform-properties-item .field-options .text-field-options {padding: 10px;}
+.lms-quiz-create .rureraform-properties-item .quiz-form-control {margin-bottom: 10px;}
+.lms-quiz-create .rureraform-properties-item .quiz-form-control input[type=radio] {margin: 0 0 10px;}
+.lms-quiz-create .rureraform-properties-item .quiz-form-control label {width: 100%;}
+.lms-quiz-create .rureraform-properties-item .quiz-form-control input[type=radio]:checked + label input[type="text"] {border-color: green;}
+/* Admin Popup properties Style End */
 /****************************************** 
 Questions Builder Right Sidebar Style End
 ******************************************/
