@@ -91,6 +91,44 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /* Image Draggable Style End */
 
 /* Image Static Style Start */
+/*Images Sizes Style Start*/
+.image-large img {
+    max-width: 300px;
+	min-width: 300px;
+    background-color: #fcfcfc;
+}
+.image-medium img {
+    max-width: 200px;
+	min-width: 200px;
+	background-color: #fcfcfc;
+}
+.image-small img {
+    max-width: 100px;
+	min-width: 100px;
+    background-color: #fcfcfc;
+}
+/*Images Sizes Style End*/
+
+/*Images Alignments Style Start*/
+.image-left {
+	text-align: left;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.image-right {
+	text-align: right;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+.image-center {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*Images Alignments Style End*/
 /* Image Static Style End */
 
 /* Essay Textarea Field Style Start */
@@ -196,10 +234,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .spells-quiz-from .question-label {margin-bottom: 20px;padding: 0 15px 10px;}
 .spells-quiz-from .question-label span {text-align: center; line-height: 31px;}
 .quiz-group .rureraform-column-label {margin-bottom: 15px;}
-.quiz-group .rureraform-column-label .rureraform-label {
-    margin: 0;
-	font-weight: 600;
-}
+.quiz-group .rureraform-column-label .rureraform-label {margin: 0; font-weight: 600;}
 .quiz-group .rureraform-column-label:has(label:empty) {display: none;}
 /* Question Label Style End */
 
@@ -884,45 +919,6 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 /*Quiz Page start-counter style start*/
 .start-counter {background-color: #fff; position: fixed; height: 100%; width: 100%; left: 0; top: 0; display: flex; align-items: center; justify-content: center; font-size: 50px; color: var(--primary);}
 /*Quiz Page start-counter style end*/
-
-/*Quiz Images Sizes Style Start*/
-.image-large img {
-    max-width: 300px;
-	min-width: 300px;
-    background-color: #fcfcfc;
-}
-.image-medium img {
-    max-width: 200px;
-	min-width: 200px;
-	background-color: #fcfcfc;
-}
-.image-small img {
-    max-width: 100px;
-	min-width: 100px;
-    background-color: #fcfcfc;
-}
-/*Quiz Images Sizes Style End*/
-
-/*Quiz Images Alignments Style Start*/
-.image-left {
-	text-align: left;
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-}
-.image-right {
-	text-align: right;
-	display: flex;
-	align-items: flex-end;
-	justify-content: flex-end;
-}
-.image-center {
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-/*Quiz Images Alignments Style End*/
 
 /**********************************
 Question Type Style End 
