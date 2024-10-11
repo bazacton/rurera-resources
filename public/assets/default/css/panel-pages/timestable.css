@@ -521,31 +521,6 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
     font-size: 14px;
     font-weight: 500;
 }
-.preferences-switch-box .custom-control-label:after, 
-.preferences-switch-box .custom-control-label:before {
-    height: 0.8rem;
-}
-.preferences-switch-box .custom-control-label:before {
-    border: 0;
-    background-color: var(--primary);
-    border-radius: 3px;
-    width: 35px;
-}
-.preferences-switch-box .custom-control-label:after {
-    top: calc(-.4rem + 3px);
-    border-radius: 3px;
-    background-color: #fff;
-    box-shadow: 0 0 0 1px var(--primary);
-    height: 15px;
-    width: 15px;
-    left: calc(-3.125rem + 0px);
-}
-.preferences-switch-box .custom-switch .custom-control-input:checked~.custom-control-label:after {
-    transform: translateX(1.20rem);
-}
-.preferences-switch-box .custom-control-input:checked~.custom-control-label:before {
-    background-color: var(--secondary);
-}
 .preferences-select select {
     width: 100%;
     border: 1px solid #ddd;
