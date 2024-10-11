@@ -843,6 +843,9 @@ scrollbar-gutter: stable both-edges;
 	outline: 0 !important;
 	padding-top: 0;
 }
+.question-layout .rureraform-element:has(select) {
+	line-height: 56px;
+}
 .quiz-group ol li {
     margin-top: 15px;
 }
