@@ -92,42 +92,15 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 
 /* Image Static Style Start */
 /*Image Sizes Style Start*/
-.image-large img {
-    max-width: 300px;
-	min-width: 300px;
-    background-color: #fcfcfc;
-}
-.image-medium img {
-    max-width: 200px;
-	min-width: 200px;
-	background-color: #fcfcfc;
-}
-.image-small img {
-    max-width: 100px;
-	min-width: 100px;
-    background-color: #fcfcfc;
-}
+.image-large img {max-width: 300px;	min-width: 300px; background-color: #fcfcfc;}
+.image-medium img {max-width: 200px;min-width: 200px;background-color: #fcfcfc;}
+.image-small img {max-width: 100px;	min-width: 100px; background-color: #fcfcfc;}
 /*Image Sizes Style End*/
 
 /*Image Alignments Style Start*/
-.image-left {
-	text-align: left;
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-}
-.image-right {
-	text-align: right;
-	display: flex;
-	align-items: flex-end;
-	justify-content: flex-end;
-}
-.image-center {
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+.image-left {text-align: left;display: flex;align-items: flex-start;justify-content: flex-start;}
+.image-right {text-align: right;display: flex;align-items: flex-end;justify-content: flex-end;}
+.image-center {text-align: center;display: flex;align-items: center;justify-content: center;}
 /*Image Alignments Style End*/
 /* Image Static Style End */
 
