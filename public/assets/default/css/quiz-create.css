@@ -219,6 +219,11 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 /* Highlight Word/Sentence Style End */
 
 /* Insert Into Sentence Style Start */
+.insert-options {
+    width: 100%;
+    display: inline-block;
+    margin: 0 0 30px;
+}
 /* Insert Into Sentence Style End */
 
 /* Match Style Start */
