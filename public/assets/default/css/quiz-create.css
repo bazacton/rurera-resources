@@ -943,7 +943,8 @@ Questions Edit Page Fields style start
 /*Fields Layout Options Style End*/
 
 /*Iframe Style Start*/
-#rureraform-import-form, #rureraform-import-style-form {display: none;}
+#rureraform-import-form, #rureraform-import-style-form,
+#rureraform-import-style-iframe {display: none;}
 #rureraform-preview-iframe {width: 100%;border: none;margin: 0;	display: block !important;}
 /*Iframe Style End*/
 
