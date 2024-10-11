@@ -896,6 +896,17 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .start-counter {background-color: #fff; position: fixed; height: 100%; width: 100%; left: 0; top: 0; display: flex; align-items: center; justify-content: center; font-size: 50px; color: var(--primary);}
 /*Quiz Page start-counter style end*/
 
+/* Quiz File Attachment Style End*/
+.rureraform-element input[type="file"] {position: absolute;width: 0;height: 0;opacity: 0;}
+.choose-file-btn {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+/* Quiz File Attachment Style End */
+
 /**********************************
 Question Type Style End 
 **********************************/
