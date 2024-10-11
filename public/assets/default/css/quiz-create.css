@@ -606,17 +606,11 @@ Questions Edit Page Fields style start
 **************************************/
 
 /*Fields Layout Options Style Start*/
-.fields-layout-options {
-    display: none;
-}
-.quiz-form-control {
-    width: 100%;
-    float: left;
-    position: relative;
-}
-.lms-quiz-create .rureraform-properties-item .field-options .text-field-options {
-	padding: 10px;
-}
+.fields-layout-options {display: none;}
+.quiz-form-control {width: 100%; float: left; position: relative;}
+.lms-quiz-create .rureraform-properties-item .field-options .text-field-options {padding: 10px;}
+.lms-quiz-create .rureraform-properties-item .quiz-form-control {margin-bottom: 10px;}
+.lms-quiz-create .rureraform-properties-item .quiz-form-control input[type=radio] {margin: 0 0 10px;}
 /*Fields Layout Options Style End*/
 
 /**************************************
