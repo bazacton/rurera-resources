@@ -330,6 +330,10 @@ Questions Builder Right Sidebar Style Start
 .lms-quiz-create .rureraform-properties-item .quiz-form-control input[type=radio] {margin: 0 0 10px;}
 .lms-quiz-create .rureraform-properties-item .quiz-form-control label {width: 100%;}
 .lms-quiz-create .rureraform-properties-item .quiz-form-control input[type=radio]:checked + label input[type="text"] {border-color: green;}
+.lms-quiz-create .rureraform-properties-label {display: inline-block; font-size: 15px; /* vertical-align: top; */ padding: 0 8px 8px 0; min-width: auto;}
+.lms-quiz-create #rureraform-tab-style .rureraform-properties-label {min-width: auto;}
+.lms-quiz-create .rureraform-properties-label label {font-weight: 400; margin-bottom: 0;}
+.lms-quiz-create .rureraform-properties-tooltip {display: inline-block;	font-size: 18px;width: 2em;	min-width: 2em;	text-align: left; vertical-align: middle;}
 /* Admin Popup properties Item Style End */
 /* Admin Popup properties Content Style Start */
 .lms-quiz-create .rureraform-properties-content>div.rureraform-properties-line:last-of-type {margin-bottom: 0;}
