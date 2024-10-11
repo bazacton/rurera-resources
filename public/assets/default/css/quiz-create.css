@@ -181,7 +181,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 
 /* Sortable List Style Start */
 .lms-sorting-fields span {line-height: normal; display: block; font-size: 15px;}
-.lms-sorting-fields .field-holder {border: 2px solid #ddd; border-radius: 8px; border-bottom-width: 4px; padding:16px 15px; cursor: all-scroll; position: relative; height: auto; min-width: 130px; text-align: left;}
+.lms-sorting-fields .field-holder {background-color: #fff; border: 2px solid #ddd; border-radius: 8px; border-bottom-width: 4px; padding:16px 15px; cursor: all-scroll; position: relative; height: auto; min-width: 130px; text-align: left;}
 .lms-sorting-fields.multi-lines {flex-direction: column; align-items: flex-start; margin-left: 0; margin-right: 0;}
 .lms-sorting-fields.multi-lines .field-holder {margin: 0 0 10px; width: 100%; visibility: visible !important;}
 .lms-sorting-fields.multi-lines .field-holder:last-child {margin-bottom: 0;}
