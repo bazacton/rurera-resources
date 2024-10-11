@@ -898,14 +898,7 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 
 /* Quiz File Attachment Style End*/
 .rureraform-element input[type="file"] {position: absolute;width: 0;height: 0;opacity: 0;}
-.choose-file-btn {
-    background-color: var(--primary);
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-transform: capitalize;
-	cursor: pointer;
-}
+.choose-file-btn {background-color: var(--primary); color: #fff; padding: 12px 25px; border-radius: 5px; text-transform: capitalize; cursor: pointer;}
 /* Quiz File Attachment Style End */
 
 /**********************************
