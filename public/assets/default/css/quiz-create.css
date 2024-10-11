@@ -91,7 +91,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /* Image Draggable Style End */
 
 /* Image Static Style Start */
-/*Images Sizes Style Start*/
+/*Image Sizes Style Start*/
 .image-large img {
     max-width: 300px;
 	min-width: 300px;
@@ -107,9 +107,9 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 	min-width: 100px;
     background-color: #fcfcfc;
 }
-/*Images Sizes Style End*/
+/*Image Sizes Style End*/
 
-/*Images Alignments Style Start*/
+/*Image Alignments Style Start*/
 .image-left {
 	text-align: left;
 	display: flex;
@@ -128,7 +128,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 	align-items: center;
 	justify-content: center;
 }
-/*Images Alignments Style End*/
+/*Image Alignments Style End*/
 /* Image Static Style End */
 
 /* Essay Textarea Field Style Start */
