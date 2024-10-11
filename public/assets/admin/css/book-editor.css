@@ -210,7 +210,7 @@ body .editor-controls-holder {
     right: auto;
     min-width: 340px;
     max-width: 340px;
-    height: calc(100% - 130px);
+    height: calc(100% - 60px);
     background-color: #f2f2f2;
     padding: 30px 30px;
     border-radius: 5px;
