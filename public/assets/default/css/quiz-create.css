@@ -958,46 +958,12 @@ Questions Edit Page Fields style start
 .rureraform-fa-selector-header input[type="text"]:focus {border-bottom: 2px solid #26B99A;}
 .rureraform-fa-selector-header a {display: block;float: right;font-size: 20px;width: 52px;height: 52px;line-height: 52px;color: #202020;text-align: center;text-shadow: none !important;box-shadow: none !important;outline: none !important;border: none !important;margin: 0 !important;padding: 0 !important;transition-property: all;transition-timing-function: ease-in-out;transition-duration: 300ms;}
 .rureraform-fa-selector-header a:hover {color: #26B99A;}
-.rureraform-fa-selector-content {
-	height: 528px;
-	padding: 10px 20px;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	background: #ffffff;
-}
-.rureraform-fa-selector-content::-webkit-scrollbar {
-	width: 5px;
-}
-.rureraform-fa-selector-content::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
-}
-.rureraform-fa-selector-content::-webkit-scrollbar-thumb {
-	background-color: #26B99A;
-}
-
-.rureraform-fa-selector-content span {
-	float: left;
-	width: 40px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	color: #000;
-	opacity: 0.5;
-	font-size: 20px;
-	cursor: pointer;
-}
-.rureraform-fa-selector-content span:hover {
-	transform: scale(1);
-	-webkit-transform: scale(1.3);
-	opacity: 1;
-	border-radius: 3px;
-	background: #444444;
-	color: #ffffff;
-	overflow: hidden;
-	transition-property: transform;
-	transition-timing-function: ease-in-out;
-	transition-duration: 300ms;
-}
+.rureraform-fa-selector-content {height: 528px;padding: 10px 20px;overflow-x: hidden;overflow-y: scroll;background: #ffffff;}
+.rureraform-fa-selector-content::-webkit-scrollbar {width: 5px;}
+.rureraform-fa-selector-content::-webkit-scrollbar-track {box-shadow: inset 0 0 6px rgba(0,0,0,0.1);}
+.rureraform-fa-selector-content::-webkit-scrollbar-thumb {background-color: #26B99A;}
+.rureraform-fa-selector-content span {float: left;width: 40px;text-align: center;height: 40px;line-height: 40px;color: #000;opacity: 0.5;font-size: 20px;cursor: pointer;}
+.rureraform-fa-selector-content span:hover {transform: scale(1);-webkit-transform: scale(1.3);opacity: 1;border-radius: 3px;background: #444444;color: #ffffff;overflow: hidden;transition-property: transform;transition-timing-function: ease-in-out;transition-duration: 300ms;}
 /* Form Fa-Selector Style End */
 
 /* Dialog Fields Style Start*/
