@@ -154,6 +154,9 @@ body .editor-zone:has(.field-options) {
     background-size: cover !important;
     overflow: hidden;
 }
+.book-dropzone img {
+    max-width: 100%;
+}
 body .editor-controls-holder {
     height: calc(100% - 60px);
 }
