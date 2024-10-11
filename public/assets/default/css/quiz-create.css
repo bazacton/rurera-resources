@@ -322,7 +322,7 @@ Questions Builder Right Sidebar Style Start
 .rureraform-tab-active, .rureraform-tab:focus:active {box-shadow: none;}
 .rureraform-tab-content {display: none;position: relative;}
 /* Admin Popup Tabs Style End */
-/* Admin Popup properties Style Start */
+/* Admin Popup properties Item Style Start */
 .lms-quiz-create .rureraform-properties-item {display: block; margin: 20px 0; width: 100%;}
 .lms-quiz-create .rureraform-properties-item .field-options {padding: 0;}
 .lms-quiz-create .rureraform-properties-item .field-options .text-field-options {padding: 10px;}
@@ -330,7 +330,33 @@ Questions Builder Right Sidebar Style Start
 .lms-quiz-create .rureraform-properties-item .quiz-form-control input[type=radio] {margin: 0 0 10px;}
 .lms-quiz-create .rureraform-properties-item .quiz-form-control label {width: 100%;}
 .lms-quiz-create .rureraform-properties-item .quiz-form-control input[type=radio]:checked + label input[type="text"] {border-color: green;}
-/* Admin Popup properties Style End */
+/* Admin Popup properties Item Style End */
+/* Admin Popup properties Content Style Start */
+.lms-quiz-create .rureraform-properties-content>div.rureraform-properties-line:last-of-type {margin-bottom: 0;}
+.lms-quiz-create .rureraform-properties-content,
+.lms-quiz-create .rureraform-properties-group {width: 100%; vertical-align: top; font-size: 14px;}
+.lms-quiz-create .rureraform-properties-content {padding-right: 0; display: inline-block; position: relative;}
+.lms-quiz-create .rureraform-properties-group {display: table;}
+.lms-quiz-create .rureraform-properties-content>div,
+.lms-quiz-create .rureraform-properties-group>div,
+.lms-quiz-create .rureraform-properties-line>div {padding-left: 10px; vertical-align: top; position: relative;}
+.lms-quiz-create .rureraform-properties-content>div:first-of-type,
+.lms-quiz-create .rureraform-properties-group>div:first-of-type,
+.lms-quiz-create .rureraform-properties-line>div:first-of-type {padding-left: 0;}
+.lms-quiz-create .rureraform-properties-content-two-third {display: table-cell;	width: 67%;}
+.lms-quiz-create .rureraform-properties-content-half {display: table-cell;width: 50%;}
+.lms-quiz-create .rureraform-properties-content-quarter {display: table-cell;width: 25%;}
+.lms-quiz-create .rureraform-properties-content-third {display: table-cell;	width: 33%;}
+.lms-quiz-create .rureraform-properties-content-dime {display: table-cell;width: 10%;}
+.lms-quiz-create .rureraform-properties-content-9dimes {display: table-cell;width: 90%;}
+.lms-quiz-create .rureraform-properties-content-third>label,
+.lms-quiz-create .rureraform-properties-content-two-third>label,
+.lms-quiz-create .rureraform-properties-content-half>label,
+.lms-quiz-create .rureraform-properties-content-quarter>label,
+.lms-quiz-create .rureraform-properties-content-dime>label,
+.lms-quiz-create .rureraform-properties-content-9dimes>label {color: #ccc; font-size: 14px; font-style: italic; cursor: default; display: block;}
+/* Admin Popup properties Content Style End */
+
 /****************************************** 
 Questions Builder Right Sidebar Style End
 ******************************************/
