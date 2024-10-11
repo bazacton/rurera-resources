@@ -62,7 +62,7 @@
                                 </div>
                                 <h6 class="font-weight-500 mb-20">Appearance</h6>
                                 <div class="preferences-select">
-                                    <span>Dark mode</span>
+                                    <span class="font-weight-500 mb-5 d-block">Dark mode</span>
                                     <select>
                                         <option value="System Default">System Default</option>
                                         <option value="System Default">System Default</option>
