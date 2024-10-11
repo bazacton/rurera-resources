@@ -276,6 +276,39 @@ Lms Table Style End
 Questions Builder style End 
 ******************************/
 
+/****************************************** 
+Questions Builder Right Sidebar Style Start
+******************************************/
+/*Admin Popup Style Start*/
+.lms-quiz-create .rureraform-admin-popup-overlay {position: fixed !important; z-index: 99980; top: 0;	left: 0; height: 100%; width: 100%; background-position: center center; background: rgba(0,0,0,0.8);display: none;}
+.lms-quiz-create .rureraform-admin-popup {box-sizing: border-box; z-index: 99981; width: 100%; height: auto; background: #ffffff; display: none; overflow: hidden;}
+.lms-quiz-create .rureraform-admin-popup * {box-sizing: border-box;}
+.lms-quiz-create .rureraform-admin-popup-inner {height: auto; position: relative; box-sizing: border-box; border: 1px solid #ccc;}
+.lms-quiz-create .rureraform-admin-popup-title {box-sizing: border-box;	height: 52px; line-height: 52px; padding: 0 0 0 20px; text-align: left;	border-bottom: 1px solid #f0f0f0; background: #f8f8f8;}
+.lms-quiz-create .rureraform-admin-popup-title>span {float: right; display: block; width: 52px;	height: 52px; line-height: 52px; text-align: center; font-size: 20px; color: #555;	transition-property: color;	transition-timing-function: ease-in-out; transition-duration: 300ms; cursor: pointer;}
+.lms-quiz-create .rureraform-admin-popup-title>span.rureraform-preview-size-mobile {font-size: 20px; width: 40px;}
+.lms-quiz-create .rureraform-admin-popup-title>span:hover,
+.lms-quiz-create .rureraform-admin-popup-title>span.rureraform-preview-size-active {color: #26B99A;}
+.lms-quiz-create .rureraform-admin-popup-title h3 {font-weight: normal; font-size: 20px; font-family: arial; color: #202020; letter-spacing: 0; text-transform: none; margin: 0 !important; padding: 0 !important;	line-height: inherit;}
+.lms-quiz-create .rureraform-admin-popup-title h3 span {font-size: 16px; color: #a0a0a0; display: inline-block; margin-left: 20px;	padding-left: 20px;	border-left: 1px dashed #e0e0e0; line-height: 25px; height: 25px; vertical-align: middle;}
+.lms-quiz-create .rureraform-admin-popup-title a {display: block; float: right;	font-size: 20px; width: 52px; height: 52px;	color: #202020; text-align: center; text-shadow: none !important; box-shadow: none !important; outline: none !important; border: none !important; margin: 0 0 0 20px !important; padding: 0 !important; transition-property: all; transition-timing-function: ease-in-out;	transition-duration: 300ms;}
+.lms-quiz-create .rureraform-admin-popup-title a i {line-height: 50px;}
+.lms-quiz-create .rureraform-admin-popup-title a:hover {color: #26B99A;}
+.lms-quiz-create .rureraform-admin-popup-content {height: auto; overflow-x: hidden; overflow-y: hidden; background: #ffffff; position: relative; padding: 15px 20px 0;}
+.lms-quiz-create .rureraform-admin-popup-content::-webkit-scrollbar {width: 5px; height: 5px;}
+.lms-quiz-create .rureraform-admin-popup-content::-webkit-scrollbar-track {box-shadow: inset 0 0 6px rgba(0,0,0,0.1);}
+.lms-quiz-create .rureraform-admin-popup-content::-webkit-scrollbar-thumb {background-color: #26B99A;}
+.lms-quiz-create .rureraform-admin-popup-content hr {margin: 0 30px;}
+.lms-quiz-create .rureraform-admin-popup-loading {position: absolute; background: #fff; top: 52px;	left: 0; z-index: 99982; width: 100%; bottom: 0; right: 0;}
+.lms-quiz-create .rureraform-admin-popup-loading i {position: absolute;	z-index: 99983;	top: 50%; left: 50%; font-size: 24px; margin-top: -12px; margin-left: -12px;}
+.lms-quiz-create .rureraform-admin-popup-buttons {box-sizing: border-box; position: relative; left: 0; right: 0; bottom: 0; height: auto; line-height: 48px; padding-right: 8px; text-align: center; border-top: 1px solid #ccc; padding-top: 15px; background-color: #f7f7f7; padding-bottom: 15px;}
+.lms-quiz-create .rureraform-admin-popup-buttons .rureraform-admin-button label {margin-left: 0;}
+.lms-quiz-create .rureraform-admin-popup-content .rureraform-tabs {margin-left: -20px; margin-right: -20px;}
+/*Admin Popup Style Start*/
+/****************************************** 
+Questions Builder Right Sidebar Style End
+******************************************/
+
 /**********************************
 Question Type Style Start 
 **********************************/
