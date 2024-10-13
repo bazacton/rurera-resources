@@ -36,9 +36,9 @@ $(document).on('click', '.book-dropzone', function (e) {
     var attribute_type = $('.control-tool-item.active').attr('data-attribute_type');
     var attribute_value = $('.control-tool-item.active').attr('data-attribute_value');
     var item_title = $('.control-tool-item.active').attr('title');
-	var is_resize = $('.editor-objects li[data-type="'+drag_object+'"]').attr('data-resize');
-	var is_drag = $('.editor-objects li[data-type="'+drag_object+'"]').attr('data-drag');
-	var is_rotate = $('.editor-objects li[data-type="'+drag_object+'"]').attr('data-rotate');
+	var is_resize = $('.editor-ul li[data-type="'+drag_object+'"]').attr('data-resize');
+	var is_drag = $('.editor-ul li[data-type="'+drag_object+'"]').attr('data-drag');
+	var is_rotate = $('.editor-ul li[data-type="'+drag_object+'"]').attr('data-rotate');
 	
 	var elementWidth = $(this).width();
     var elementHeight = $(this).height();
@@ -581,9 +581,9 @@ jQuery(document).ready(function () {
         var dropZonObj = $(this).closest('.book-dropzone');
         var field_id = $(this).attr('data-id');
 		var item_type = $(this).attr('data-item_type');
-		var is_resize = $('.editor-objects li[data-type="'+item_type+'"]').attr('data-resize');
-		var is_drag = $('.editor-objects li[data-type="'+item_type+'"]').attr('data-drag');
-		var is_rotate = $('.editor-objects li[data-type="'+item_type+'"]').attr('data-rotate');
+		var is_resize = $('.editor-ul li[data-type="'+item_type+'"]').attr('data-resize');
+		var is_drag = $('.editor-ul li[data-type="'+item_type+'"]').attr('data-drag');
+		var is_rotate = $('.editor-ul li[data-type="'+item_type+'"]').attr('data-rotate');
 		
 		
 		$(document).on('keydown', function(event) {
