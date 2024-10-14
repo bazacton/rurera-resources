@@ -44,7 +44,7 @@ Sub Pages Style
 .spell-tooltip-text .locked-btn {background-color: #e5e5e5; display: block; text-align: center; padding: 13px 0; line-height: normal; border-radius: 12px; font-size: 15px; font-weight: 600; color: #ababab; text-transform: uppercase; min-height: 46px;}
 /*Spell Listing page Style Start*/
 .spells .dataTable thead {background-color: inherit; border-bottom: 2px solid #ddd;}
-.spells .dataTable thead tr th{color: #333; padding-left: 0; }
+.spells .dataTable thead tr th{color: #333;}
 .spells .dataTable thead tr th {padding-bottom: 20px; padding-top: 20px;}
 .spells .dataTable thead tr th:first-child {padding-left: 15px;}
 /*Spell Listing page Style End*/
