@@ -628,6 +628,74 @@ Left SideBar-menu End
 .login-options .coming-soon {font-weight: 500; position: relative; background-color: #f3f1f1; font-size: 15px; padding: 6px 8px; border-radius: 4px; margin-left: 10px; margin-bottom: 5px; display: inline-block; line-height: normal;}
 .login-options .coming-soon {margin: 0;}
 /*Grid Card Default Style For Timestables Practice Page End*/
+/* Preferences Form Style Start */
+.preferences h5 {
+    margin-bottom: 15px;
+}
+.preferences h6 {
+    color: #999;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 8px;
+}
+.preferences-switch-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.switch-lable {
+    font-size: 14px;
+    font-weight: 500;
+}
+.preferences-select select {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #999;
+    height: 35px;
+    padding: 6px 10px;
+    text-transform: uppercase;
+    border-bottom-width: 3px;
+}
+.preferences-select {
+    margin: 0 0 15px;
+}
+.preferences-select select option {
+    color: #333;
+}
+.select-language {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.language-box {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.language-box input[type=radio] {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.language-box label {
+    margin: 0;
+    box-shadow: 0 0 0 1px #ddd;
+    min-height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.language-box input[type=radio]:checked + label {
+    box-shadow: 0 0 0 1px var(--primary);
+    background-color: rgb(39 50 94 / 2%);
+    color: var(--primary);
+}
+/* Preferences Form Style End */
 
 /************************
 Right SideBar Style Start
