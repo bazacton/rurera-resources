@@ -2,25 +2,13 @@
 Word Lists Page | Student Panel Style Start
 Sub Pages Style
 *****************************/
-.spells.elevenplus-block {box-shadow: none;}
-.spells .table-bordered,
-.simple-table.table-bordered {border: 0; margin-bottom: 0;}
-.spells.elevenplus-block .table tbody,
-.elevenplus-block .simple-table.table tbody {border-width: 0;}
+
 .spells-option select {border: 0; padding-right: 5px; color: #999; min-width: 150px;}
 .spells-option select option {padding: 5px 0 5px; margin: 10px;}
 .spells-topbar {background-color: #f5f5f5; margin: 0 0 30px; display: flex; align-items: center; justify-content: space-between; padding: 10px 25px;}
 .spells-topbar .view-btn {border-radius: 50pc; padding: 10px 25px; box-shadow: 0 0 0; border-bottom: 4px solid rgba(0,0,0,0.5);}
 .panel-content .spells-topbar .view-btn {min-width: 130px; text-align: center;}
-.spells .play-btn {display: inline-block; position: relative; width: 20px; height: 20px; vertical-align: middle; }
-.play-btn img {position: absolute; left: 0; top: 50%; margin-top: -10px; width: 20px; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out;}
-.play-btn .pause-icon {filter: invert(20%) sepia(5%) saturate(18%) hue-rotate(348deg) brightness(89%) contrast(94%); opacity: 0;}
-.play-btn.pause .pause-icon {opacity: 1;}
-.play-btn.pause .play-icon {opacity: 0;}
-.spells td span {font-size: 12px; font-weight: 600; color: #999;}
-.spells .table tbody td {position: relative;}
-.spells .table tbody td:first-child {padding-right: 0;}
-.player-box {position: absolute; top: 100%; left: 0; background-color: #fff; z-index: 1; padding: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1); opacity: 0;}
+
 .spells-modal .modal {padding-right: 0 !important; padding-top: 70px; }
 .spells-modal .modal-dialog {max-width: 100%; margin: 0;}
 .spells-modal .modal-content {border-radius: 0; height: 100%;}
@@ -43,6 +31,21 @@ Sub Pages Style
 .spell-tooltip-text span {color: #666;display: block; }
 .spell-tooltip-text .locked-btn {background-color: #e5e5e5; display: block; text-align: center; padding: 13px 0; line-height: normal; border-radius: 12px; font-size: 15px; font-weight: 600; color: #ababab; text-transform: uppercase; min-height: 46px;}
 /*Spell Listing page Style Start*/
+.spells.elevenplus-block {box-shadow: none;}
+.spells .table-bordered,
+.simple-table.table-bordered {border: 0; margin-bottom: 0;}
+.spells.elevenplus-block .table tbody,
+.elevenplus-block .simple-table.table tbody {border-width: 0;}
+.spells .play-btn {display: inline-block; position: relative; width: 20px; height: 20px; vertical-align: middle; }
+.play-btn img {position: absolute; left: 0; top: 50%; margin-top: -10px; width: 20px; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out;}
+.play-btn .pause-icon {filter: invert(20%) sepia(5%) saturate(18%) hue-rotate(348deg) brightness(89%) contrast(94%); opacity: 0;}
+.play-btn.pause .pause-icon {opacity: 1;}
+.play-btn.pause .play-icon {opacity: 0;}
+.spells td span {font-size: 12px; font-weight: 600; color: #999;}
+.spells .table tbody td {position: relative;}
+.spells .table tbody td:first-child {padding-right: 0;}
+.player-box {position: absolute; top: 100%; left: 0; background-color: #fff; z-index: 1; padding: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1); opacity: 0;}
+.spells .dataTable td a {font-weight: 600; font-size: 18px; text-decoration: none; }
 .spells .dataTable thead {background-color: inherit; border-bottom: 2px solid #ddd;}
 .spells .dataTable thead tr th{color: #333;}
 .spells .dataTable thead tr th {padding-bottom: 20px; padding-top: 20px;}

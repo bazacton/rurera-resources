@@ -66,7 +66,6 @@ Sub Pages Style
 .simple-table.text-left thead tr th {text-align: left; padding-left: 20px; }
 .simple-table thead tr th:first-child {padding-left: 0;}
 .panel-section-card .simple-table thead tr th:first-child {padding-left: .75rem;}
-.spells .dataTable td a {font-weight: 600; font-size: 18px; text-decoration: none; }
 /* Timestable Freedom Mode End */
 
 /* Timestable Heatmap Table style Start */
