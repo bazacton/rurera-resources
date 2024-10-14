@@ -97,6 +97,12 @@ Sub Pages Style
 .spell-levels.levels-grouping li.treasure a:after {display: none;}
 .spell-levels .panel-subheader h2 {display: inline-block; vertical-align: middle; margin-bottom: 0;}
 .spell-levels li:has(.rurera-stars) .lms-tooltip {margin-bottom: 50px;}
+.words-count {background-color: #fff; border: 1px solid #e5e5e5; border-radius: 8px; min-width: 160px; text-align: center; min-height: 46px; display: inline-flex; align-items: center; justify-content: center; line-height: normal; border-bottom-width: 4px; color: #9b9b9b; font-weight: 700;}
+.words-count span {margin-right: 5px;}
+.words-count img {margin-right: 8px; width: 15px; object-fit: contain;}
+.spell-links {display: flex; gap: 15px 40px; align-items: center; margin-top: 20px; margin-bottom: 10px;}
+.spell-links a {color: var(--primary);}
+.spell-links .rurera-tooltip.dropup .dropdown-menu[x-placement^=bottom] {margin-top: 15px;}
 /*Spellings Landing page Style End*/
 
 .spell-tooltip-text h4 {margin-bottom: 5px;}
@@ -176,7 +182,6 @@ ul.quiz-result-logs li {list-style: disc !important; margin: 6px 0 0 0;}
 .spell-words-filters .play-again:after {content: ""; position: absolute; right: 12px; top: 50%; width: 15px; height: 15px; background: url(/assets/default/svgs/play-fill-white.svg) no-repeat; background-size: contain; margin-top: -6px;}
 .word-block .play-btn {position: relative;}
 .word-details > .play-btn {padding: 0 10px; margin-right: 4px; position: relative;}
-.spell-links .rurera-tooltip.dropup .dropdown-menu[x-placement^=bottom] {margin-top: 15px;}
 .droppable-characters {display: flex; align-items: center; justify-content: center; margin-bottom: 25px; gap: 5px; padding-top: 40px; flex-wrap: wrap;}
 .droppable-characters li {background-color: var(--primary); color: #fff; text-transform: uppercase; font-weight: 600; padding: 20px; min-width: 35px; border-radius: 5px;}
 .spells-quiz-from button {min-width: 150px; background-color: inherit; padding: 12px 15px; text-transform: uppercase; border-radius: 5px; color: #000; border: 1px solid #e7e7e7; margin: 0 5px;}
