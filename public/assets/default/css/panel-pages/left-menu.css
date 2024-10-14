@@ -579,3 +579,9 @@ tbody tr:hover {background-color: var(--panel-bg) !important;}
 /**********************
 Left SideBar-menu End
 *************************/
+
+/*Filter For Mobile Button Style*/
+.filter-mobile-btn {
+    display: none;
+}
+/*Filter For Mobile Button Style End*/
