@@ -172,10 +172,9 @@ Left SideBar-menu Start
 }
 .sidebar-logo {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 20px;
 }
 .sidebar-logo img {
     max-width: 50px;
