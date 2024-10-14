@@ -100,7 +100,7 @@
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                 <div class="modal-body">
-                                <div class="col-12 col-lg-12 pt-30">
+                                <div class="col-12 col-lg-12 pt-15">
                                 <div class="sound-card panel-border bg-white rounded-sm p-20">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">×</span>

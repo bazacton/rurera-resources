@@ -110,7 +110,7 @@ Sub Pages Style
 .sound-list ol li {list-style: decimal;}
 .sound-list {margin-bottom: 25px;}
 .current-sound {font-weight: 600; font-size: 18px;}
-.sound-card .close {position: absolute;right: -10px;top: -40px;}
+.sound-card .close {position: absolute; right: -12px; top: -30px;}
 /*Books Sound Card Style End*/
 
 /*****************************
