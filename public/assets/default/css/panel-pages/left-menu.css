@@ -840,6 +840,8 @@ content: "- View Less";
 .referral-payment .icon-box img {max-width: 100%;}
 .referral-payment strong {font-size: 36px; line-height: normal; width: calc(100% - 80px);}
 .referral-payment strong em {display: block; font-weight: 500; font-style: normal; font-size: 20px;}
+.referrals .heading {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; margin: 0 0 10px;}
+.referrals .heading a {color: #1d64e0; font-weight: 500;}
 .referral-card p br {display: none;}
 /*Referrals Style End*/
 

@@ -3,8 +3,6 @@ Referrals Page | Student Panel Style Start
 Sub Pages Style
 **************************************/
 /* Referrals Style Start */
-.referrals .heading {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; margin: 0 0 10px;}
-.referrals .heading a {color: #1d64e0; font-weight: 500;}
 .referral-price-lists .row {margin-left: -10px; margin-right: -10px; }
 .referral-price-lists .row [class*="col-"] {padding-left: 10px; padding-right: 10px;}
 .referral-price-card span {line-height: normal;}
