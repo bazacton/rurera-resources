@@ -105,8 +105,9 @@ Left SideBar-menu Start
 }
 .panel-sidebar,
 .xs-panel-nav {
-    position: fixed;
-    background-color: #fff
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 15px;
 }
 .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title {
     text-transform: uppercase;
