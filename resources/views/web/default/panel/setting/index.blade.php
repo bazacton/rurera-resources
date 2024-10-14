@@ -1,4 +1,4 @@
-@extends(getTemplate() .'.panel.layouts.panel_layout')
+@extends(getTemplate() .'.panel.layouts.panel_layout_full')
 
 @push('styles_top')
     <link rel="stylesheet" href="/assets/default/vendors/select2/select2.min.css">
