@@ -32,7 +32,7 @@ Sub Pages Style
 .member-card-header .db-members .profile-dropdown > a {position: relative; padding-right: 35px;}
 .member-card-header .db-members .profile-dropdown > a:before {content: ""; position: absolute; border: 2px solid #fff; height: 8px; width: 8px; border-top: 0; border-left: 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); top: 50%; margin-top: -5px; right: 18px;}
 .activities-container {padding: 40px !important; background: #fff; border: #ddd solid 1px}
-.chart-filters .filters-list {margin-bottom: 20px;}
+.chart-filters .filters-list {margin-bottom: 20px; width: 100%;}
 .activities-container .chart-filters {padding: 15px 20px 0; border: 0;}
 .db-form-tabs .list-group-item h6 a {color: #334155; line-height: 22px; display: block;}
 .db-members .card .list-group-item small {display: block; line-height: normal;}
