@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="/assets/default/vendors/toast/jquery.toast.min.css">
     <link rel="stylesheet" href="/assets/default/vendors/simplebar/simplebar.css">
+	<link rel="stylesheet" href="/assets/default/css/panel-pages/left-menu.css?ver={{$rand_no}}">
 	<link rel="stylesheet" href="/assets/default/css/common.css?ver={{$rand_no}}">
-    <link rel="stylesheet" href="/assets/default/css/panel.css?ver={{$rand_no}}">
     <link rel="stylesheet" href="/assets/vendors/jquerygrowl/jquery.growl.css">
     <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
 
