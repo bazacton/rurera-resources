@@ -35,7 +35,7 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">×</span>
                                     </button>
-                                    <span class="selective-sound">very</span>
+                                    <span class="selective-sound font-22">very</span>
                                         <div class="sound-box">
                                             <span class="icon-box">
                                                 <img src="/assets/default/svgs/sound.svg" alt="sound svg image" height="800" width="800">
