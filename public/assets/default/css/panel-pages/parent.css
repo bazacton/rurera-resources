@@ -741,7 +741,7 @@ Assignments Table Style Start
 .db-form-tabs .lms-faqs .card:last-child {margin-bottom: 0;}
 .db-members .card {background-color: inherit; box-shadow: none; border: 0; }
 .db-members .card .card-header {padding: 15px 20px !important; margin: 0; align-items: center; border-radius: 0; border-bottom: 1px solid #e2e8f0;}
-.db-members .card .card-body {padding: 0;}
+.db-members .card .card-body {padding: 0; overflow: visible;}
 .db-members .card .list-group-item {background-color: inherit; border: 0; border-bottom: 1px solid #ddd; margin: 0; border-radius: 10px 10px 0 0; padding: 0; position: inherit;}
 .db-members .card .list-group-item .col-auto:first-child {padding-right: 0; padding-left: 40px; width: auto; min-width: auto;}
 .db-members .card .list-group-item .col-auto:first-child.col-lg-2 {flex: 0 0 25%; max-width: 25%;}
@@ -798,7 +798,7 @@ Assignments Table Style Start
 .db-members .list-group-item .profile-dropdown > a:before {border: 1px solid #ddd; border-radius: 100%; content: ""; height: 42px; width: 42px; position: absolute; left: 50%; top: 50%; margin: -21px 0 0 -21px; transition-duration: .3s; transition-property: all; transition-timing-function: cubic-bezier(.4,0,.2,1); -webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0);}
 .db-members .profile-dropdown:hover > a:before {-webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1);}
 .db-members .list-group-item .row {flex-wrap: nowrap;}
-.db-members .card .list-group-item [class*="col-"] {position: inherit; flex: auto; width: 100%; min-width: 100px; padding-top: 20px; padding-bottom: 20px; min-height: 90px; max-height: 90px; display: inline-flex; align-items: center; justify-content: center;}
+.db-members .card .list-group-item [class*="col-"] {position: inherit; flex: auto; width: 100%; min-width: 100px; padding-top: 20px; padding-bottom: 20px; min-height: 90px; max-height: 90px; display: inline-flex; align-items: center;}
 .db-members .card .list-group-item [class*="col-"].activity-date {width: 50%; }
 .db-members .card .list-group-item .profile-dropdown,
 .db-members .card .list-group-item .action-activity {width: auto; min-width: auto;}
