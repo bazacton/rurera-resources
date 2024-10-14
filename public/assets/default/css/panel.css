@@ -55,10 +55,6 @@ html:has(.panel-sidebar) {
     overflow: initial;
 }
 .table-actions.dropdown .dropdown-toggle:after {display: none;}
-.action-activity .remove-btn {background-color: #ffdfe3; height: 40px; width: 40px; text-align: center; border: 1px solid #d84356; display: inline-flex; align-items: center; justify-content: center; border-radius: 3px; margin-left: 10px;}
-.db-form-tabs .list-group-item .remove-btn img,
-.action-activity .remove-btn img {max-height: 18px;max-width: 18px;min-height: 18px;min-width: 18px;filter: invert(46%) sepia(74%) saturate(4289%) hue-rotate(328deg) brightness(89%) contrast(90%);}
-
 .lms-choose-plan-selected .lms-jobs-form .input-field {margin: 0 0 15px;}
 .db-form-tabs .list-group-item .connect-user-btn {border: 1px solid var(--primary); border-radius: 30px; padding: 8px 15px; line-height: normal; display: inline-block; color: var(--primary);font-weight: 500;}
 .list-group-item span {color: #999; line-height: normal;}
