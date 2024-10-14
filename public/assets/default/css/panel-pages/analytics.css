@@ -68,7 +68,7 @@ Sub Pages Style
 .timeline-list li {display: flex; flex-wrap: wrap; margin: 0 0 35px; position: relative;}
 .timeline-list li:before {content: ""; background-color: #dddddd; position: absolute; left: 12px; top: 30px; height: 100%; width: 1px; z-index: 1;}
 .timeline-list li:last-child:after {content: ""; background-color: #b2b2b2; border-radius: 100%; position: absolute; left: 9px; top: 100%; height: 6px; width: 6px; margin-top: 25px; z-index: 2;}
-.timeline-icon {width: 26px;}
+.timeline-icon {width: 45px;}
 .timeline-icon svg,
 .timeline-icon img {height: 26px; width: 26px;}
 .timeline-text {width: calc(100% - 26px); padding: 0 0 0 12px; transform: none; }
