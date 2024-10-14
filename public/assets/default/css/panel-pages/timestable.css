@@ -3,23 +3,6 @@ TimesTable Page | Student Panel Style Start
 Sub Pages Style
 *****************************/
 
-.panel-content > .container > .row > [class*="col-"]:first-child {padding-right: 25px;}
-.panel-content > .container > .row > [class*="col-"]:last-child {padding-left: 25px;}
-.template-grid .row .row [class*="col"] {padding: 0 5px;}
-.template-grid .row .row {margin-left: -5px; margin-right: -5px;}
-.type-list-data {width: 100%;}
-.panel-content .grid-card {background-color: #fff; border: 2px solid #e4e4e4;border-bottom-width: 4px;border-radius: 10px;margin-bottom: 15px;display: flex;flex-wrap: wrap;align-items: flex-start;width: 100%;padding: 20px 95px 20px 15px;gap: 5px;transition: all .5s ease;position: relative;overflow: hidden;min-height: 100px;flex-direction: column;}
-.panel-content .grid-card .img-holder {margin-left: auto; position: absolute; right: -22px; bottom: -15px; transform: rotate(-20deg); height: 90px; width: 90px;}
-.panel-content .grid-card .img-holder img {border-radius: 0; object-fit: contain;}
-.panel-content .grid-card .img-holder img[src*="shuttlecock.svg"] {transform: scale(-1) rotate(110deg); position: relative; bottom: -5px;}
-.panel-content .template-grid .text-holder {background-color: inherit; border: 0; padding: 0; min-height: auto; line-height: normal; flex-direction: row; align-items: center; gap: 12px;}
-.panel-content .template-grid .coin-counts img {max-width: 20px; max-height: 20px; margin-top: 0;}
-.panel-content .template-grid .text-holder a {word-wrap: break-word;}
-.panel-content .grid-card:hover {border-color: #cecece;}
-.panel-content .grid-card .title-label,
-.login-options .coming-soon {font-weight: 500; position: relative; background-color: #f3f1f1; font-size: 15px; padding: 6px 8px; border-radius: 4px; margin-left: 10px; margin-bottom: 5px; display: inline-block; line-height: normal;}
-.login-options .coming-soon {margin: 0;}
-
 /* Timestable Freedom Mode Start */
 .questions-select-option ul {overflow: hidden;}
 .questions-select-option li {position:relative; flex: 1 1 0px;}
