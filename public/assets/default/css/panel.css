@@ -221,16 +221,7 @@ li.disable-timetable label {background: #efefef; cursor: unset; user-select: non
 .profile-dropdown ul {position: absolute; top: 100%; left: 0; background-color: #fff; min-width: 180px; padding: 15px; box-shadow: 0 0 3px rgba(0,0,0,0.1); border-radius: 8px; z-index: 1; opacity: 0; visibility: hidden; margin-top: -10px; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out;}
 .profile-dropdown:hover ul {opacity: 1; visibility: visible; margin: 0;}
 .member-card-header:hover .db-members .profile-dropdown ul {margin-top: 15px;}
-.profile-menu > ul > li .user-menu-text > a {font-weight: 600; font-size: 18px; display: block;}
-.profile-dropdown ul li {margin: 0 0 15px; padding-left: 0; }
-.profile-dropdown ul li:after {display: none;}
-.profile-dropdown ul li:last-child {margin-bottom: 0;}
-.profile-dropdown > a {font-weight: 600; color: var(--primary); position: relative;}
-.profile-dropdown > a:after {content: ""; position: absolute; right: -18px; top: 4px; height: 0; width: 0; border: 5px solid var(--primary); border-right-color: transparent; border-bottom-color: transparent; transform: rotate(-135deg); }
-.profile-dropdown ul li a {color: var(--primary); font-size: 15px; font-weight: 500; }
-.profile-dropdown .icon-box {height: 20px; width: 20px; display: inline-block; margin-right: 5px; }
-.profile-dropdown .icon-box img {max-width: 100%; border-radius: 0; border: 0; max-height: none; margin: 0; padding: 0; background-color: inherit; height: 20px; width: 20px; min-width: auto; min-height: auto; filter: invert(32%) sepia(96%) saturate(583%) hue-rotate(201deg) brightness(114%) contrast(110%);}
-.db-form-tabs .profile-dropdown ul li .connect-user-btn {padding: 0; border: 0; }
+
 .profile-dropdown .icon-box img[src$='.png'] {filter: none;}
 /*Year Tabs Style Start*/
 .Filter-lable {margin-right: 10px;}
