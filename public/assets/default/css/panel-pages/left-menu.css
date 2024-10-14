@@ -275,6 +275,14 @@ content: "- View Less";
 .referral-card p br {display: none;}
 /*Referrals Style End*/
 
+/*Getting Start Widget Style Start*/
+.getting-start li .start-item {display: flex; align-items: center; flex-wrap: wrap; gap: 10px;}
+.getting-start ul {display: flex; flex-direction: column; gap: 12px;}
+.getting-start .start-item h5 {font-weight: 500;}
+.panel-right-sidebar .getting-start .icon-box img {max-width: 20px;}
+.panel-right-sidebar .getting-start .levels-progress.horizontal {height: 4px; overflow: hidden; position: relative;}
+/*Getting Start Widget Style End*/
+
 /************************
 Right SideBar Style End
 *************************/
