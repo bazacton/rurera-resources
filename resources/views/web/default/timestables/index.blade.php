@@ -117,7 +117,7 @@
                                                 <li>exactly suitable or necessary</li>
                                             </ol>
                                         </div>
-                                        <div class="sound-list">
+                                        <div class="sound-list mb-0">
                                             <h5>adverb</h5>
                                             <ol>
                                                 <li>in actual fact: truly</li>
