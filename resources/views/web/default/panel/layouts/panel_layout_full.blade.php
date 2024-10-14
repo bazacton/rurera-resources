@@ -22,6 +22,10 @@
     <link rel="stylesheet" href="/assets/vendors/jquerygrowl/jquery.growl.css">
     <link rel="stylesheet" href="/assets/default/css/responsive.css">
 
+	@if(auth()->check() && auth()->user()->isParent())
+		<link rel="stylesheet" href="/assets/default/css/panel-pages/parent.css?ver={{$rand_no}}">
+	@endif
+	
 	@if (isset( $cssFiles ) && !empty($cssFiles))
         @foreach ($cssFiles as $cssFile)
             <link rel="stylesheet" href="{{ asset($cssFile) }}">
