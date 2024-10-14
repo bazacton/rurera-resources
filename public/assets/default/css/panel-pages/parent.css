@@ -301,18 +301,6 @@ Assignments Table Style Start
 @media (max-width:991px) {
     .panel-content {padding: 30px 15px 30px;}
 }
-/* dashboard-banner Start */
-.dashboard-banner-container {margin-top: 80px;}
-.dashboard-banner-container h2 {position: relative; z-index: 1;}
-.dashboard-banner-container .dashboard-banner {position: absolute; right: 0; bottom: 0; height: 340px;}
-.rtl .dashboard-banner-container .dashboard-banner {left: 0; right: auto}
-.unread-notification-lists {min-height: 120px}
-@media(max-width:1650px) {
-    .dashboard-banner-container .dashboard-banner {height: auto; width: 40%;}
-    .dashboard-banner-container {margin-top: 30px;}
-    .unread-notification-lists {min-height: auto;}
-}
-/* dashboard-banner End */
 
 /* Wizard-Steps Style Start */
 .lms-choose-membership .panel-header {background-color: #fff; border-bottom: 4px solid #e2e8f0; position: relative; padding: 10px 20px; display: flex; align-items: center;}
