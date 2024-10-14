@@ -597,3 +597,31 @@ Left SideBar-menu End
     display: none;
 }
 /*Panel Right-Sidebar Hide Style End*/
+
+/************************
+Right SideBar Style Start
+*************************/
+
+/* user-profile-dropdown style start */
+.dropdown-menu.user-profile-dropdown .user-nav-list .user-list-email {display: block; color: #aeb3b9; font-size: 12px !important; font-weight: 500;}
+.dropdown-menu.user-profile-dropdown .user-nav-detail {display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 5px 0;}
+.dropdown-menu.user-profile-dropdown .user-nav-detail img {width: 100px;height: 100px;object-fit: contain; margin-bottom: 10px;}
+.user-profile-dropdown .nav-logout {display: inline-flex;align-items: center; gap: 10px;flex-wrap: wrap;border: 0; min-width: 175px;width: auto;padding: 0; margin-bottom: 10px; justify-content: center; width: 100%;}
+.user-profile-dropdown .nav-logout span {font-weight: 500;color: var(--primary);}
+.user-profile-dropdown .nav-logout img,
+.dropdown-menu.user-profile-dropdown .user-nav-list img {display: none;}
+.user-profile-dropdown .dropdown-item:hover {background-color: inherit;}
+.user-manage-btn {border: 1px solid #d3d4d6; padding: 10px 30px; border-radius: 10px;color: #343e47; font-weight: 500; display: block; text-align: center; margin: 0 0 10px;}
+.user-profile-dropdown .sub-dropdown {position: relative; z-index: 1; margin-left: -20px; padding-left: 20px;}
+.user-profile-dropdown .sidenav-item-collapse {position: absolute; top: 0; right: 100%; background-color: #fff; visibility: hidden; opacity: 0; width: 170px; padding: 15px; text-align: right; border-radius: 10px; box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .16); transition: all .3s; transform: translate3d(0, 54px, 0);}
+.user-profile-dropdown .sub-dropdown:hover .sidenav-item-collapse {opacity: 1; visibility: visible; transform: translate3d(0, 0, 0);}
+.user-profile-icons {margin-bottom: 30px;}
+.user-profile-icons ul {display: flex; align-items: center; flex-wrap: wrap; gap: 12px; justify-content: space-between; width: 100%;}
+.user-profile-icons .dropdown > a > img,
+.user-profile-icons img {width: 28px; height: 28px; object-fit: contain; }
+.user-profile-icons li strong {display: inline-flex; align-items: center; gap: 5px; position: relative;}
+/* user-profile-dropdown style End */
+
+/************************
+Right SideBar Style End
+*************************/
