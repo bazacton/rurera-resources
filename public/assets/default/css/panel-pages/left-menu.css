@@ -585,3 +585,10 @@ Left SideBar-menu End
     display: none;
 }
 /*Filter For Mobile Button Style End*/
+/*Panel Content Default Style*/
+.panel-content {
+    padding: 30px 15px 30px 254px;
+    width: calc(100% - 254px);
+    width: 100%;
+}
+/*Panel Content Default Style End*/
