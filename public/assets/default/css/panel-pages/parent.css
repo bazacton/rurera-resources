@@ -779,6 +779,16 @@ Assignments Table Style Start
 .db-members .profile-dropdown > a .icon-box img {filter: invert(68%) sepia(19%) saturate(290%) hue-rotate(175deg) brightness(89%) contrast(101%);}
 .db-members .list-group-item .profile-dropdown > a:after {display: none;}
 .db-members .profile-dropdown ul {right: -5px; left: auto;}
+.profile-menu > ul > li .user-menu-text > a {font-weight: 600; font-size: 18px; display: block;}
+.profile-dropdown ul li {margin: 0 0 15px; padding-left: 0; }
+.profile-dropdown ul li:after {display: none;}
+.profile-dropdown ul li:last-child {margin-bottom: 0;}
+.profile-dropdown > a {font-weight: 600; color: var(--primary); position: relative;}
+.profile-dropdown > a:after {content: ""; position: absolute; right: -18px; top: 4px; height: 0; width: 0; border: 5px solid var(--primary); border-right-color: transparent; border-bottom-color: transparent; transform: rotate(-135deg); }
+.profile-dropdown ul li a {color: var(--primary); font-size: 15px; font-weight: 500; }
+.profile-dropdown .icon-box {height: 20px; width: 20px; display: inline-block; margin-right: 5px; }
+.profile-dropdown .icon-box img {max-width: 100%; border-radius: 0; border: 0; max-height: none; margin: 0; padding: 0; background-color: inherit; height: 20px; width: 20px; min-width: auto; min-height: auto; filter: invert(32%) sepia(96%) saturate(583%) hue-rotate(201deg) brightness(114%) contrast(110%);}
+.db-form-tabs .profile-dropdown ul li .connect-user-btn {padding: 0; border: 0; }
 .db-members .profile-dropdown:hover ul {margin-top: -12px;}
 .db-members .list-group-item .profile-dropdown > a:before {border: 1px solid #ddd; border-radius: 100%; content: ""; height: 42px; width: 42px; position: absolute; left: 50%; top: 50%; margin: -21px 0 0 -21px; transition-duration: .3s; transition-property: all; transition-timing-function: cubic-bezier(.4,0,.2,1); -webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0);}
 .db-members .profile-dropdown:hover > a:before {-webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1);}
