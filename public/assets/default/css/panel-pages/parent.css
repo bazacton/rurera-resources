@@ -196,6 +196,7 @@ Left SideBar-menu Start
 .panel-sidebar > .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .nav-icons-or-start-live.navbar-order {
     display: none;
@@ -322,7 +323,6 @@ Left SideBar-menu Start
     }
 }
 .panel-sidebar .sidebar-menu .sidenav-item {
-    padding: 12px 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
