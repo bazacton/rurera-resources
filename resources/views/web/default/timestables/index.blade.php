@@ -81,7 +81,7 @@
                                 <div class="select-language">
                                     <div class="language-box">
                                         <input type="radio" name="language" id="one">
-                                        <label for="one">
+                                        <label for="one" data-toggle="modal" data-target="#exampleModalCenter">
                                             <span class="icon-box"></span>
                                             <span class="country-lable">Romanized</span>
                                         </label>
@@ -96,6 +96,41 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-body">
+                                <div class="col-12 col-lg-4">
+                                <div class="sound-card panel-border bg-white rounded-sm p-20">
+                                    <span class="selective-sound">very</span>
+                                        <div class="sound-box">
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/sound.svg" alt="sound svg image" height="800" width="800">
+                                            </span>
+                                            <span class="current-sound">very</span>
+                                        </div>
+                                        <div class="sound-list">
+                                            <h5>adjective</h5>
+                                            <ol>
+                                                <li>being actual or real</li>
+                                                <li>exact, precise</li>
+                                                <li>exactly suitable or necessary</li>
+                                            </ol>
+                                        </div>
+                                        <div class="sound-list">
+                                            <h5>adverb</h5>
+                                            <ol>
+                                                <li>in actual fact: truly</li>
+                                                <li>to a great degree: extremely</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                                </div>
+                            </div>
+                            </div>
                         <div class="type-list-data single-player-data">
                             <div class="col-12 col-md-12 col-lg-12">
                                 <a itemprop="url" href="/timestables-practice/freedom-mode">
