@@ -278,10 +278,6 @@ Sub Pages Style
 .circle_inbox {position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; background: #fff; z-index: 3; border-radius: 50%;}
 .percent_text {position: absolute; font-size: 36px; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 3; display: none;}
 .words-count.simple {margin-top: 10px; padding: 0; min-height: auto; border: 0; background-color: inherit; min-width: auto; text-transform: uppercase;}
-.levels-progress.horizontal .progress-box {background-color: #e5e5e5; height: 18px; border-radius: 50px; display: block; position: relative; overflow: hidden; min-width: 270px; max-width: 270px;}
-.levels-progress.horizontal {margin-top: 15px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; width: 100%; }
-.horizontal .progress-count {display: block; position: absolute; left: 0; top: 0; height: 100%; border-radius: 50px; background-color: gray; }
-.levels-progress .progress-numbers {color: #cacaca; font-weight: 600;}
 .levels-grouping li > a .thumb-box {display: inline-block;width: 100%; height: 100%; border-radius: 100%; background-color: #ddd; position: relative; z-index: 3;}
 .levels-grouping li > a .thumb-box img {max-width: 100%;height: 100%; width: 100%; border-radius: 100%; object-fit: fill;}
 .levels-grouping .treasure > a .thumb-box img {object-fit: contain; height: auto; border-radius: 0; }

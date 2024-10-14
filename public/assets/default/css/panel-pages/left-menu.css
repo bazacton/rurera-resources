@@ -673,6 +673,10 @@ Right SideBar Style Start
 .quests-control a {background-color: var(--primary); color: #fff; padding: 8px 35px; border-radius: 5px; font-weight: 500;}
 .panel-content-holder .quests-learning .progress-icon {width: auto; margin-left: -2px;}
 .panel-content-holder .quests-learning .progress-icon.circle {border-radius: 100%; height: 45px; width: 45px;}
+.levels-progress.horizontal .progress-box {background-color: #e5e5e5; height: 18px; border-radius: 50px; display: block; position: relative; overflow: hidden; min-width: 270px; max-width: 270px;}
+.levels-progress.horizontal {margin-top: 15px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; width: 100%; }
+.horizontal .progress-count {display: block; position: absolute; left: 0; top: 0; height: 100%; border-radius: 50px; background-color: gray; }
+.levels-progress .progress-numbers {color: #cacaca; font-weight: 600;}
 .quests-item .icon-box {margin-right: 10px; text-align: center; width: 52px;}
 .quests-item .icon-box img {max-width: 100%;}
 .quests-item .progress-numbers {position: absolute; top: 0; left: 50%; transform: translateX(-50%); font-size: 14px; }
