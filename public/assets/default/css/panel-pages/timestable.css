@@ -248,11 +248,6 @@ Sub Pages Style
 .panel-content .spells-page  .listing-search .inline-filters:before {height: 6px; width: 100%; position: absolute; left: 0; bottom: -6px; content: ""; background: linear-gradient(to bottom,  rgba(0,0,0,0.05) 0%,rgba(0,0,0,0) 100%);}
 .panel-content .spells-page  .listing-search .inline-filters .active a {box-shadow: 0 -3px 0 0 #1b85fd inset;}
 .treasure-mission-layout .spell-levels {background-color: initial;}
-.words-count {background-color: #fff; border: 1px solid #e5e5e5; border-radius: 8px; min-width: 160px; text-align: center; min-height: 46px; display: inline-flex; align-items: center; justify-content: center; line-height: normal; border-bottom-width: 4px; color: #9b9b9b; font-weight: 700;}
-.words-count span {margin-right: 5px;}
-.words-count img {margin-right: 8px; width: 15px; object-fit: contain;}
-.spell-links {display: flex; gap: 15px 40px; align-items: center; margin-top: 20px; margin-bottom: 10px;}
-.spell-links a {color: var(--primary);}
 .levels-progress.circle {font-size: 100px; width: 1em; height: 1em; position: absolute; top: -15px; left: -16px; background: #e5e5e5; border-radius: 50%; overflow: hidden;}
 .levels-progress.circle .progress-box {position: absolute; left: 0; top: 0; width: 1em; height: 1em; clip: rect(0 1em 1em 0.5em);}
 .levels-progress.circle .progress-count {position: absolute; left: 0; top: 0; width: 1em; height: 1em; background: #2397d2; clip: rect(0 1em 1em 0.5em); transform: rotate(180deg); transition: 1.05s;}
