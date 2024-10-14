@@ -319,6 +319,9 @@ Left SideBar-menu Start
         padding-left: 20px;
         padding-right: 15px;
         padding-bottom: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 }
 .panel-sidebar .sidebar-menu .sidenav-item {
