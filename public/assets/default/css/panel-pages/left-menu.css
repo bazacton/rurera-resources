@@ -653,6 +653,23 @@ Right SideBar Style Start
 .panel-right-sidebar .store-stats li .store-item {gap: 0;}
 /* Store Stats Style End */
 
+/* Quests-List Style Start */
+.quests-item {display: flex; align-items: center; flex-wrap: wrap; gap: 5px; width: 100%; }
+.quests-item .item-text {width: calc(100% - 85px); text-align: left;}
+.quests-item .item-text .levels-progress.horizontal {margin-top: 0; margin-right: -6px; display: inline-block; width: calc(100% - 68px); vertical-align: middle; position: relative;}
+.quests-item .item-text .levels-progress.horizontal .progress-box {min-width: auto; max-width: none; border-radius: 50px 0 0 50px;}
+.quests-item .icon-box {margin-right: 10px; text-align: center; width: 52px;}
+.quests-item .icon-box img {max-width: 100%;}
+.quests-item .progress-numbers {position: absolute; top: 0; left: 50%; transform: translateX(-50%); font-size: 14px; }
+.quests-item .item-text h5 {margin-bottom: 2px; }
+.quests-item .horizontal .progress-count {border-radius: 50px 0 0 50px;}
+.panel-content-holder .quests-item .item-text .levels-progress.horizontal {width: calc(100% - 65px);}
+.panel-content-holder .quests-item .progress-numbers {font-size: 16px; line-height: 16px;}
+.quests-list.quests-learning li:has(.quests-control) .quests-item {width: 65%; gap: 20px; }
+.quests-learning .quests-item .item-text .levels-progress.horizontal .progress-box {border-radius: 3px;}
+.panel-content-holder .quests-item:has(.progress-icon.circle) .item-text .levels-progress.horizontal {width: calc(100% - 50px);}
+/* Quests-List Style End */
+
 /************************
 Right SideBar Style End
 *************************/
