@@ -40,7 +40,7 @@
                                             <span class="icon-box">
                                                 <img src="/assets/default/svgs/sound.svg" alt="sound svg image" height="800" width="800">
                                             </span>
-                                            <span class="current-sound">very</span>
+                                            <span class="current-sound font-22">very</span>
                                         </div>
                                         <div class="sound-list">
                                             <h5>adjective</h5>
