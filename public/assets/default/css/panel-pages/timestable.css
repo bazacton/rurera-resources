@@ -308,33 +308,10 @@ Sub Pages Style
 .treasure-mission-layout .spell-levels .horizontal-list li.vertical-li a:before {display: block; width: 4px; height: 62px; left: 50%; margin-left: -2px; top: auto; bottom: 100%; margin-bottom: 5px;}
 .treasure-mission-layout .spell-levels .horizontal-list li.vertical-li a:after {content: ""; width: 4px; height: 62px; left: 50%; margin-left: -2px; bottom: -100%; margin-bottom: -8px; position: absolute; background-color: #e9e9e9; border: 0;}
 .treasure-mission-layout .spell-levels li > a img {max-width: 100%; object-fit: contain; }
-.spell-levels li .dropdown-toggle:after,
-.dropup.rurera-tooltip .dropdown-toggle:after {display: none;}
 .treasure-mission-layout .spell-levels .treasure-stage:last-child ul {margin-bottom: 60px;}
 .treasure-mission-layout .spell-levels li:not(.treasure) a img {width: 30px; height: 30px;}
 .treasure-mission-layout .spell-levels .horizontal-list {margin: 0 -15px 220px 0; position: relative;}
-.rurera-tooltip {position: relative;}
-.lms-tooltip {background-color: var(--primary); border: 1px solid var(--primary); border-radius: 10px; position: absolute; padding: 20px; max-width: 295px; min-width: 295px; z-index: 2; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; text-align: left; opacity:0;}
-.lms-tooltip:before {background-color: var(--primary); content: ""; position: absolute; left: 50%; bottom: -7px; height: 15px; width: 15px; transform: translateX(-50%) rotate(45deg); }
-.lms-tooltip:after {background-color: var(--primary); content: ""; position: absolute; left: 50%; bottom: -8px; height: 15px; width: 15px; transform: translateX(-50%) rotate(45deg); z-index: -1;}
-.lms-tooltip span {display: block;}
-.lms-tooltip.show,
-.rurera-tooltip:focus .lms-tooltip {visibility: visible; opacity: 1; margin-bottom: 20px;}
-.lms-tooltip .tooltip-button {width: 100%; border: 0; background-color: #fff; color: var(--primary); font-size: 16px; text-transform: uppercase; font-weight: 600; height: 48px; border-radius: 10px; margin-top: 15px; box-shadow: 0 -4px 0 rgba(89, 107, 253, 0.1) inset;}
 .treasure-mission-layout .spell-levels .lms-tooltip .tooltip-box img {height: 22px; width: 22px; margin-right: 8px; }
-.rurera-tooltip.dropup .dropdown-menu {opacity: 1; visibility: visible; display: none; transform: none; margin: 0 0 15px; transform: translateX(-50%) !important; left: 50% !important; top: auto !important; bottom: 100%;}
-.rurera-tooltip.dropup .lms-tooltip.dropdown-menu.show {display: block;}
-.rurera-tooltip.dropup .dropdown-menu[x-placement^=bottom] {top: 100% !important; bottom: auto; margin-top: 25px;}
-.rurera-tooltip.dropup .dropdown-menu[x-placement^=bottom]:before,
-.rurera-tooltip.dropup .dropdown-menu[x-placement^=bottom]:after {bottom: auto; top: -8px; }
-.tooltip-box {direction: ltr;}
-.tooltip-box h5 {font-weight: 400 !important; font-size: 16px !important;}
-.tooltip-box h5 .topic-title {font-weight: 700; font-size: 18px; display: block; margin: 0 0 5px;}
-.tooltip-btn {border-radius: 6px; font-weight: 500; min-height: 44px; line-height: 44px; text-transform: uppercase; border: 0; width: 100%; }
-.tooltip-btn.practice {background-color: #fff; box-shadow: 0 4px 0 #ccf2b7; color: #58c700; }
-.tooltip-btn.spell-test-btn {background-color: #58c700; box-shadow: 0 4px 0 #7adb44; color: #fff;}
-.tooltip-btn.legendary {background-color: #ffd800; box-shadow: 0 4px 0 #e7a506; color: #a96804;}
-.tooltip-hover {position: relative;}
 .referral-price-card {border: 1px dashed #dbdadf; border-radius: 5px; padding: 22px 12px; }
 .read-quiz-content .treasure-stage .horizontal-list {display: flex !important; flex-direction: row; flex-wrap: nowrap;}
 .read-quiz-content .treasure-stage .horizontal-list li {margin: 0; display: inline-flex;}
