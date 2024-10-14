@@ -100,8 +100,8 @@
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                 <div class="modal-body">
-                                <div class="col-12 col-lg-12">
-                                <div class="sound-card panel-border bg-white rounded-sm p-30">
+                                <div class="col-12 col-lg-12 pt-30">
+                                <div class="sound-card panel-border bg-white rounded-sm p-20">
                                     <span class="selective-sound">very</span>
                                         <div class="sound-box">
                                             <span class="icon-box">
