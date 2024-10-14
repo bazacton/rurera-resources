@@ -83,11 +83,6 @@ Sub Pages Style
 .sats-listing-card.medium table .total-tests {padding-bottom: 10px;}
 .sats-listing-card.medium .simple-table tbody:has(.total-tests) tr:nth-child(even) {background-color: inherit !important;}
 .sats-listing-card.medium .simple-table tbody:has(.total-tests) tr:nth-child(odd) {background-color: #fff !important;}
-.tests-list {width: 100%; display: flex; gap: 10px; padding: 0; flex-wrap: wrap;}
-.tests-list li {font-size: 15px; cursor: pointer; border: 1px dashed #ddd; margin-bottom: -1px; display: inline-flex; flex-direction: column; gap: 5px; justify-content: center; align-items: center; padding: 0 5px; min-height: 100px; border-radius: 5px; min-width: 110px;}
-.tests-list li.active {background-color: #fff; border-color: var(--primary); color: var(--primary); border-style: solid; box-shadow: 0 -4px 0 0 #1b85fd inset;}
-.tests-list.school-zone-list li {min-height: 60px;}
-.tests-list img {width: 30px; height: 30px; object-fit: contain; }
 
 .dataTables_wrapper .dataTables_paginate {display: -ms-flexbox; display: inline-flex; padding-left: 0; list-style: none; border-radius: 0.25rem; float: right;}
 .dataTables_wrapper .paginate_button {position: relative; display: block; padding: 0.5rem 0.75rem; margin-left: -1px; line-height: 1.25; color: #007bff !important; background-color: #fff; border: 1px solid #dee2e6; font-weight: 500;}
