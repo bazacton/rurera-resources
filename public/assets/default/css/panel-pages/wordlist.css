@@ -42,6 +42,13 @@ Sub Pages Style
 .spell-tooltip-text strong {display: block; color: #b0b0b0; margin: 0 0 10px; }
 .spell-tooltip-text span {color: #666;display: block; }
 .spell-tooltip-text .locked-btn {background-color: #e5e5e5; display: block; text-align: center; padding: 13px 0; line-height: normal; border-radius: 12px; font-size: 15px; font-weight: 600; color: #ababab; text-transform: uppercase; min-height: 46px;}
+/*Spell Listing page Style Start*/
+.spells .dataTable thead {background-color: inherit; border-bottom: 2px solid #ddd;}
+.spells .dataTable thead tr th{color: #333; padding-left: 0; }
+.spells .dataTable thead tr th {padding-bottom: 20px; padding-top: 20px;}
+.spells .dataTable thead tr th:first-child {padding-left: 15px;}
+/*Spell Listing page Style End*/
+
 /*Spellings Landing page Style Start*/
 .spell-levels .progress-star {height: 20px; width: 20px; border-radius: 100%; text-align: center; display: inline-flex; align-items: center; justify-content: center; position: absolute; padding: 0; margin: 4px 0 0 8px;}
 .progress-star img {max-width: 100%; width: 10px; height: 10px; object-fit: contain;}
@@ -83,6 +90,7 @@ Sub Pages Style
 .spell-levels .panel-subheader h2 {display: inline-block; vertical-align: middle; margin-bottom: 0;}
 .spell-levels li:has(.rurera-stars) .lms-tooltip {margin-bottom: 50px;}
 /*Spellings Landing page Style End*/
+
 .spell-tooltip-text h4 {margin-bottom: 5px;}
 .spell-quiz-page .quiz-questions-bar-holder {margin-left: 0;}
 .spell-quiz-page .quiz-questions-bar-holder .quiz-questions-bar {width: 100%;}
