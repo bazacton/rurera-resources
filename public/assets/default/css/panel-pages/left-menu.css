@@ -640,6 +640,18 @@ Right SideBar Style Start
 .user-profile-icons ul .menu-button-mobile,
 .user-profile-icons ul .sidebar-logo-mobile{display: none;}
 /* user-profile-dropdown style End */
+/* Store Stats Style Start */
+.store-stats ul {margin: 0; padding: 0; display: flex; flex-wrap: wrap; flex-direction: column; gap: 15px;}
+.store-stats ul li {margin-bottom: 5px;}
+.store-stats li .store-item {display: flex; align-items: center; flex-wrap: wrap; gap: 12px;}
+.store-stats li .store-item img {width: 35px;object-fit: contain;}
+.store-stats .item-label {font-weight: 700;}
+.store-stats .iteme-numbers {display: inline-flex; align-items: center; padding-top: 5px; width: 100%; color: #999; line-height: normal;}
+.store-stats .iteme-numbers em {font-style: normal; font-size: 14px;}
+.panel-right-sidebar .store-stats {position: relative; overflow: hidden;}
+.panel-right-sidebar .store-stats li .store-item img {position: absolute; right: -10px; bottom: -10px; width: 70px;}
+.panel-right-sidebar .store-stats li .store-item {gap: 0;}
+/* Store Stats Style End */
 
 /************************
 Right SideBar Style End

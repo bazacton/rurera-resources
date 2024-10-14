@@ -34,18 +34,7 @@ Dashboard Right Sidebar Pages Style Start
 .getting-start .start-item h5 {font-weight: 500;}
 .panel-right-sidebar .getting-start .icon-box img {max-width: 20px;}
 .panel-right-sidebar .getting-start .levels-progress.horizontal {height: 4px; overflow: hidden; position: relative;}
-/* Store Stats Style Start */
-.store-stats ul {margin: 0; padding: 0; display: flex; flex-wrap: wrap; flex-direction: column; gap: 15px;}
-.store-stats ul li {margin-bottom: 5px;}
-.store-stats li .store-item {display: flex; align-items: center; flex-wrap: wrap; gap: 12px;}
-.store-stats li .store-item img {width: 35px;object-fit: contain;}
-.store-stats .item-label {font-weight: 700;}
-.store-stats .iteme-numbers {display: inline-flex; align-items: center; padding-top: 5px; width: 100%; color: #999; line-height: normal;}
-.store-stats .iteme-numbers em {font-style: normal; font-size: 14px;}
-.panel-right-sidebar .store-stats {position: relative; overflow: hidden;}
-.panel-right-sidebar .store-stats li .store-item img {position: absolute; right: -10px; bottom: -10px; width: 70px;}
-.panel-right-sidebar .store-stats li .store-item {gap: 0;}
-/* Store Stats Style End */
+
 
 /*Sidebar Student-list Style Start*/
 .parent-panel .sidebar-students-list .card {
