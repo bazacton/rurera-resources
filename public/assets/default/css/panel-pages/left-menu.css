@@ -592,3 +592,8 @@ Left SideBar-menu End
     width: 100%;
 }
 /*Panel Content Default Style End*/
+/*Panel Right-Sidebar Hide Style*/
+.panel-right-sidebar.full-width-sidebar {
+    display: none;
+}
+/*Panel Right-Sidebar Hide Style End*/
