@@ -602,11 +602,6 @@ Dashboard Right Sidebar Pages Style Start
 .user-coins-menu .coins-text {width: calc(100% - 75px); font-weight: 700; color: #343434; font-size: 18px; line-height: normal; text-align: left;}
 .user-coins-menu .coins-text span {display: flex; font-weight: 400; font-size: 15px; color: #999; position: relative; align-items: flex-start; line-height: normal; gap: 5px; padding-top: 5px; flex-direction: column;}
 .user-coins-menu .coins-text span a {font-weight: 500; color: var(--primary); text-decoration: underline;}
-.getting-start li .start-item {display: flex; align-items: center; flex-wrap: wrap; gap: 10px;}
-.getting-start ul {display: flex; flex-direction: column; gap: 12px;}
-.getting-start .start-item h5 {font-weight: 500;}
-.panel-right-sidebar .getting-start .icon-box img {max-width: 20px;}
-.panel-right-sidebar .getting-start .levels-progress.horizontal {height: 4px; overflow: hidden; position: relative;}
 
 /*************************************
 Dashboard Right Sidebar Page Style End
