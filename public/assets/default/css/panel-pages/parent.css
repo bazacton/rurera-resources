@@ -186,29 +186,18 @@ Left SideBar-menu Start
     color: #989898;
     text-transform: uppercase;
 }
-.panel-sidebar {
-    position: fixed !important;
-    top: 55px;
-    left: 0;
-    bottom: 0;
-    width: 254px;
-    height: 100%;
-    border-right: 1px solid #dcdcdc;
-}
-.rtl .panel-sidebar,
-.rtl .panel-sidebar .sidebar-create-class .sidebar-create-class-btn img {
-    left: auto;
-    right: 0
-}
 .panel-sidebar .panel-sidebar-close {
     position: absolute;
     top: 10px;
     right: 20px;
     display: none
 }
-.rtl .panel-sidebar .panel-sidebar-close {
-    left: 20px;
-    right: auto
+.panel-sidebar > .container {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-icons-or-start-live.navbar-order {
+    display: none;
 }
 .panel-sidebar .user-info .user-avatar {
     width: 100px;
@@ -253,10 +242,10 @@ Left SideBar-menu Start
     pointer-events: none
 }
 .panel-sidebar .sidebar-menu {
-    height: calc(100% - 100px);
-    padding-bottom: 35px;
-    overflow: hidden;
-    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 0 !important;
 }
 .panel-sidebar .sidebar-menu .dropdown-menu {
     margin: 10px 0 0;
