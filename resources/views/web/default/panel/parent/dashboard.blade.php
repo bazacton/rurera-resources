@@ -146,7 +146,7 @@
 
 										<a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="col-auto last-activity">
                                             <h6 class="listing-title font-16 font-weight-500">Last Activity</h6>
-                                            <span class="font-16 d-block"><strong class="font-weight-normal d-block">{{ ($childObj->getLastActivity() != '')? dateTimeFormat($childObj->getLastActivity(), 'j M Y') : '' }}</strong>
+                                            <span class="font-16 d-block"><strong class="d-block">{{ ($childObj->getLastActivity() != '')? dateTimeFormat($childObj->getLastActivity(), 'j M Y') : '' }}</strong>
                                                 {{ ($childObj->getLastActivity() != '')? 'Last Activity' : '' }}
                                             </span>
                                         </a>
