@@ -8,7 +8,6 @@ Sub Pages Style
 .spells-topbar {background-color: #f5f5f5; margin: 0 0 30px; display: flex; align-items: center; justify-content: space-between; padding: 10px 25px;}
 .spells-topbar .view-btn {border-radius: 50pc; padding: 10px 25px; box-shadow: 0 0 0; border-bottom: 4px solid rgba(0,0,0,0.5);}
 .panel-content .spells-topbar .view-btn {min-width: 130px; text-align: center;}
-
 .spells-modal .modal {padding-right: 0 !important; padding-top: 70px; }
 .spells-modal .modal-dialog {max-width: 100%; margin: 0;}
 .spells-modal .modal-content {border-radius: 0; height: 100%;}
@@ -105,6 +104,20 @@ Sub Pages Style
 .spell-links .rurera-tooltip.dropup .dropdown-menu[x-placement^=bottom] {margin-top: 15px;}
 /*Spellings Landing page Style End*/
 
+/* Spells Inline Filters Style Start */
+.panel-content .lms-jobs-form {box-shadow: none; padding: 0; border: 0; position: relative;}
+.panel-content .inline-filters {display: flex; flex-wrap: wrap; gap: 20px; align-items: center;}
+.panel-content .inline-filters a {border: 1px dashed #ddd; min-height: 100px; display: inline-flex; min-width: 130px; text-align: center; align-items: center; justify-content: center; border-radius: 5px; font-weight: 500; flex-direction: column; gap: 10px; padding: 0 10px;}
+.panel-content .inline-filters .active a {background-color: #fff; border-style: solid; box-shadow: 0 -4px 0 0 #1b85fd inset; }
+.panel-content .inline-filters a .icon-box {width: 25px; height: 25px;}
+.panel-content .inline-filters a .icon-box svg,
+.panel-content .inline-filters a .icon-box img {max-width: 100%; max-height: 100%;}
+.panel-content .inline-filters .active a svg g {stroke: #1b85fd; }
+.panel-content .spells-page .listing-search .inline-filters {position: relative; margin-bottom: 35px; }
+.panel-content .spells-page .listing-search .inline-filters a {min-height: auto; min-width: auto; border: 0; padding: 0 0 20px; border-radius: 0;}
+.panel-content .spells-page  .listing-search .inline-filters:before {height: 6px; width: 100%; position: absolute; left: 0; bottom: -6px; content: ""; background: linear-gradient(to bottom,  rgba(0,0,0,0.05) 0%,rgba(0,0,0,0) 100%);}
+.panel-content .spells-page  .listing-search .inline-filters .active a {box-shadow: 0 -3px 0 0 #1b85fd inset;}
+/* Spells Inline Filters Style End */
 .spell-tooltip-text h4 {margin-bottom: 5px;}
 .spell-quiz-page .quiz-questions-bar-holder {margin-left: 0;}
 .spell-quiz-page .quiz-questions-bar-holder .quiz-questions-bar {width: 100%;}
