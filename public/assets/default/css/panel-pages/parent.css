@@ -628,6 +628,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 }
 .parent-panel .panel-sidebar .sidebar-menu {
     flex-direction: column;
+    gap: 0;
 }
 .parent-panel .panel-content {
     padding: 30px 15px 30px 254px;
