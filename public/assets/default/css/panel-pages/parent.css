@@ -199,6 +199,7 @@ Assignments Table Style Start
     color: var(--primary);
     height: auto;
     font-weight: 600;
+    font-size: 16px;
 }
 .member-card-header .dropdown .btn img {
     filter: invert(44%) sepia(99%) saturate(269%) hue-rotate(190deg) brightness(90%) contrast(93%);
