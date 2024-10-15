@@ -2658,8 +2658,8 @@ function rureraform_properties_save() {
         });
     }
 	
-	if (properties.hasOwnProperty("inner_options1")) {
-        properties["inner_options1"] = new Array();
+	if (properties.hasOwnProperty("dropdown1_options")) {
+        properties["dropdown1_options"] = new Array();
         jQuery('.rurera-dropdown-options[data-option_id="1"] .rureraform-properties-options-container .rureraform-properties-options-item').each(function () {
 			if( $(this).closest('.rurera-dropdown-options').hasClass('rurera-hide')){
 				return;
@@ -2669,7 +2669,7 @@ function rureraform_properties_save() {
             var selected = "off";
             if (jQuery(this).hasClass("rureraform-properties-options-item-default"))
                 selected = "on";
-            (properties["inner_options1"]).push({
+            (properties["dropdown1_options"]).push({
                 "default": selected,
                 "label": jQuery(this).find(".rureraform-properties-options-label").val(),
                 "value": jQuery(this).find(".rureraform-properties-options-label").val(),
@@ -2677,8 +2677,8 @@ function rureraform_properties_save() {
         });
     }
 	
-	if (properties.hasOwnProperty("inner_options2")) {
-        properties["inner_options2"] = new Array();
+	if (properties.hasOwnProperty("dropdown2_options")) {
+        properties["dropdown2_options"] = new Array();
         jQuery('.rurera-dropdown-options[data-option_id="2"] .rureraform-properties-options-container .rureraform-properties-options-item').each(function () {
 			if( $(this).closest('.rurera-dropdown-options').hasClass('rurera-hide')){
 				return;
@@ -2688,7 +2688,7 @@ function rureraform_properties_save() {
             var selected = "off";
             if (jQuery(this).hasClass("rureraform-properties-options-item-default"))
                 selected = "on";
-            (properties["inner_options2"]).push({
+            (properties["dropdown2_options"]).push({
                 "default": selected,
                 "label": jQuery(this).find(".rureraform-properties-options-label").val(),
                 "value": jQuery(this).find(".rureraform-properties-options-label").val(),
@@ -2696,8 +2696,8 @@ function rureraform_properties_save() {
         });
     }
 	
-	if (properties.hasOwnProperty("inner_options3")) {
-        properties["inner_options3"] = new Array();
+	if (properties.hasOwnProperty("dropdown3_options")) {
+        properties["dropdown3_options"] = new Array();
         jQuery('.rurera-dropdown-options[data-option_id="3"] .rureraform-properties-options-container .rureraform-properties-options-item').each(function () {
 			if( $(this).closest('.rurera-dropdown-options').hasClass('rurera-hide')){
 				return;
@@ -2707,7 +2707,7 @@ function rureraform_properties_save() {
             var selected = "off";
             if (jQuery(this).hasClass("rureraform-properties-options-item-default"))
                 selected = "on";
-            (properties["inner_options3"]).push({
+            (properties["dropdown3_options"]).push({
                 "default": selected,
                 "label": jQuery(this).find(".rureraform-properties-options-label").val(),
                 "value": jQuery(this).find(".rureraform-properties-options-label").val(),
@@ -2715,8 +2715,8 @@ function rureraform_properties_save() {
         });
     }
 	
-	if (properties.hasOwnProperty("inner_options4")) {
-        properties["inner_options4"] = new Array();
+	if (properties.hasOwnProperty("dropdown4_options")) {
+        properties["dropdown4_options"] = new Array();
         jQuery('.rurera-dropdown-options[data-option_id="4"] .rureraform-properties-options-container .rureraform-properties-options-item').each(function () {
 			if( $(this).closest('.rurera-dropdown-options').hasClass('rurera-hide')){
 				return;
@@ -2726,7 +2726,7 @@ function rureraform_properties_save() {
             var selected = "off";
             if (jQuery(this).hasClass("rureraform-properties-options-item-default"))
                 selected = "on";
-            (properties["inner_options4"]).push({
+            (properties["dropdown4_options"]).push({
                 "default": selected,
                 "label": jQuery(this).find(".rureraform-properties-options-label").val(),
                 "value": jQuery(this).find(".rureraform-properties-options-label").val(),
@@ -2734,8 +2734,8 @@ function rureraform_properties_save() {
         });
     }
 	
-	if (properties.hasOwnProperty("inner_options5")) {
-        properties["inner_options5"] = new Array();
+	if (properties.hasOwnProperty("dropdown5_options")) {
+        properties["dropdown5_options"] = new Array();
         jQuery('.rurera-dropdown-options[data-option_id="5"] .rureraform-properties-options-container .rureraform-properties-options-item').each(function () {
 			if( $(this).closest('.rurera-dropdown-options').hasClass('rurera-hide')){
 				return;
@@ -2745,7 +2745,7 @@ function rureraform_properties_save() {
             var selected = "off";
             if (jQuery(this).hasClass("rureraform-properties-options-item-default"))
                 selected = "on";
-            (properties["inner_options5"]).push({
+            (properties["dropdown5_options"]).push({
                 "default": selected,
                 "label": jQuery(this).find(".rureraform-properties-options-label").val(),
                 "value": jQuery(this).find(".rureraform-properties-options-label").val(),
@@ -6068,9 +6068,9 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                     break;
 					
 					
-				case "inner_dropdown":
+				case "drop_and_text":
 				
-					console.log(rureraform_form_elements[i]["inner_options1"]);
+					console.log(rureraform_form_elements[i]["dropdown1_options"]);
                     var random_id = Math.floor((Math.random() * 99999) + 1);
                     var sort_id = Math.floor((Math.random() * 99999) + 1);
                     rureraform_form_elements[i]['field_id'] = random_id;
