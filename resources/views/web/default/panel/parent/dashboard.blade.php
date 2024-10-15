@@ -102,59 +102,6 @@
 								
 
                                 <div class="list-group-item {{$is_cancelled}}">
-								
-								
-									<div class="package-data rurera-hide">
-									@if( isset( $subscribe->id))
-									<div class="col-lg-12 col-md-12 col-sm-12">
-										<div class="subscribe-plan active current-plan position-relative d-flex flex-column rounded-lg pb-25 pt-60 px-20 mb-30">
-											<span class="subscribe-icon mb-20"><img src="{{ $subscribe->icon }}" height="auto" width="auto" alt="Box image"/></span>
-											<div class="subscribe-title">
-												<h3 itemprop="title" class="font-24 font-weight-500">{{ $subscribe->title }}</h3>
-											</div>
-											<div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
-												<span itemprop="price" class="font-36 line-height-1 packages-prices" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($subscribe->price) }}</span><span
-														class="yearly-price">{{ addCurrencyToPrice($subscribe->price) }} / month</span>
-											</div>
-											<button itemprop="button" type="submit" 
-													class="package-selection btn w-100 disabled-style disabled-div">Subscribed
-											</button>
-											<span class="plan-label d-block font-weight-500 pt-20">
-																				Suitable for:
-																			</span>
-											<ul class="mt-10 plan-feature">
-												<li class="mt-10">Grammar school entrance</li>
-												<li class="mt-10">Independent school entrance</li>
-											</ul>
-											<span class="plan-label d-block font-weight-500 pt-20">
-																				Subjects:
-																			</span>
-											<ul class="mt-10 plan-feature">
-												@php $is_available = ($subscribe->is_courses > 0)? '' : 'subscribe-no'; @endphp
-												<li class="mt-10 {{$is_available}}">English, Maths, Science , Computer</li>
-												<li class="mt-10 {{$is_available}}">Verbal reasoning, non-verbal reasoning</li>
-												@php $is_available = ($subscribe->is_timestables > 0)? '' : 'subscribe-no'; @endphp
-												<li class="mt-10 {{$is_available}}">Times Tables Practice</li>
-												@php $is_available = ($subscribe->is_vocabulary > 0)? '' : 'subscribe-no'; @endphp
-												<li class="mt-10 {{$is_available}}">Vocabulary</li>
-												@php $is_available = ($subscribe->is_bookshelf > 0)? '' : 'subscribe-no'; @endphp
-												<li class="mt-10 {{$is_available}}">Bookshelf</li>
-											</ul>
-											<span class="plan-label d-block font-weight-500 pt-20">
-																				Mock Tests Prep:
-																			</span>
-											<ul class="mt-10 plan-feature">
-												@php $is_available = ($subscribe->is_sats > 0)? '' : 'subscribe-no'; @endphp
-												<li class="mt-10 {{$is_available}}">SATs</li>
-												@php $is_available = ($subscribe->is_elevenplus > 0)? '' : 'subscribe-no'; @endphp
-												<li class="mt-10 {{$is_available}}">ISEB Common Pre-Tests</li>
-												<li class="mt-10 {{$is_available}}">GL 11+</li>
-												<li class="mt-10 {{$is_available}}">CAT4</li>
-											</ul>
-										</div>
-									</div>
-									@endif
-								</div>
 								<span class="emojis-response rurera-hide">{!! $emoji_response !!}</span>
 								<span class="pin-response rurera-hide">{{$childObj->login_pin}}</span>
 								
@@ -196,12 +143,6 @@
                                                 @endif
                                             </span>
                                         </div>
-										<a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="col-auto last-activity">
-                                            <h6 class="listing-title font-16 font-weight-500">School</h6>
-                                            <span class="font-16 d-block">
-                                                {{isset($childObj->userSchool->title)? $childObj->userSchool->title : '-'}}
-                                            </span>
-                                        </a>
 
 										<a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="col-auto last-activity">
                                             <h6 class="listing-title font-16 font-weight-500">Last Activity</h6>
