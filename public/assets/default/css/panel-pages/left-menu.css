@@ -112,6 +112,7 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title {
     text-transform: uppercase;
     font-weight: 600;
+    display: none;
 }
 .panel-sidebar .sidebar-menu .sidenav-item a .crown-icon {
     width: 18px;
