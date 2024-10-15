@@ -628,12 +628,18 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 .parent-panel .panel-sidebar .sidebar-menu {
     flex-direction: column;
 }
+.parent-panel .panel-content {
+    padding: 30px 15px 30px 254px;
+}
 @media screen and (min-width: 992px) and (max-width: 1600px) {
-    .panel-page-section .panel-sidebar {
+    .parent-panel .panel-page-section .panel-sidebar {
         width: 100px; 
         z-index: 1;
         padding-left: 10px !important;
         padding-right: 10px !important;     
+    }
+    .parent-panel .panel-content {
+        padding-left: 110px;
     }
 }
 /* Left Menu For Parent Style End */
