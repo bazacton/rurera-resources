@@ -22,7 +22,7 @@
 <div class="dashboard-students-holder">
 <section class="member-card-header pb-50">
     <div class="d-flex align-items-center justify-content-between flex-md-row">
-        <h2 class="section-title font-22">Students</h2>
+        <h2 class="section-title font-36">Students</h2>
         <div class="dropdown">
         <button type="button" class="btn subscription-modal p-0 {{($childs->count() == 0)? 'add-child-btn' : ''}}" data-type="child_register" data-id="0">
             <img src="/assets/default/img/student.png" width="64" height="64"> Add Student
