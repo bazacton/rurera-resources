@@ -186,7 +186,7 @@ Assignments Table Style Start
 .panel-content .dashboard .lms-jobs-form .input-field:before {display: none;}
 .member-card-header {padding: 30px !important; border-bottom: 1px solid #ddd; margin-bottom: 60px; background-color: #fff; border-radius: 10px;}
 .member-card-header .dropdown {margin-left: auto;}
-.member-card-header .btn, .member-card-header .db-members .profile-dropdown > a {background-color: var(--primary); box-shadow: none; border: 0; padding: 10px 20px; color: #fff; font-weight: 400; height: auto; border-radius: 20px;}
+.member-card-header .db-members .profile-dropdown > a {background-color: var(--primary); box-shadow: none; border: 0; padding: 10px 20px; color: #fff; font-weight: 400; height: auto; border-radius: 20px;}
 .member-card-header .db-members .profile-dropdown a:after {display: none;}
 .member-card-header .db-members .profile-dropdown > a {position: relative; padding-right: 35px;}
 .member-card-header .db-members .profile-dropdown > a:before {content: ""; position: absolute; border: 2px solid #fff; height: 8px; width: 8px; border-top: 0; border-left: 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); top: 50%; margin-top: -5px; right: 18px;}
