@@ -322,10 +322,6 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .timestables-retry-stage:before {background: url(/assets/default/svgs/retry.svg) left center no-repeat; position: absolute; left: 15px; top: 50%; content: ""; height: 12px; width: 12px; background-size: 100%; margin-top: -6px;}
 .timestables-retry-stage:hover {background-color: var(--primary); color: #fff; }
 .timestables-retry-stage:hover:before {filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg) brightness(106%) contrast(106%);}
-.rurera-list-controls {gap: 10px;}
-.rurera-list-btn {border: 2px solid #ddd; border-bottom-width: 4px; border-radius: 8px; display: inline-block; line-height: normal; padding: 10px 25px;white-space: nowrap;}
-.rurera-list-btn:hover {background-color: #f5f5f5;}
-.resume-test .rurera-list-btn:hover {color: var(--primary);}
 .mock-test-assign-btn.active,
 .vocabulary-assign-btn.active {border-color: var(--primary); color: var(--primary);}
 .rurera-stars {position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%) rotate(2deg); margin-left: -15px; display: flex; gap: 0; margin-bottom: -8px;}
