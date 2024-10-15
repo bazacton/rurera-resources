@@ -19,6 +19,7 @@
 @php $schools = array(); $user = auth()->user();@endphp
 
 @section('content')
+<div class="dashboard-students-holder">
 <section class="member-card-header pb-50">
     <div class="d-flex align-items-center justify-content-between flex-md-row">
         <h2 class="section-title font-22">Students</h2>
@@ -275,7 +276,7 @@
     </div>
 
 </section>
-
+</div>
 <div class="modal fade" id="addChildModal" tabindex="-1" aria-labelledby="addChildModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -513,7 +514,6 @@
     </div>
 </div>
 
-
 <div class="child-hidden-block hide">
     <div class="child-item lms-choose-plan-selected">
         <div class="lms-jobs-form">
@@ -535,7 +535,6 @@
         </div>
     </div>
 </div>
-
 
 <div class="modal fade choose-plan-modal update-plan-model" id="update-plan-modal" tabindex="-1"
      aria-labelledby="update-plan-modalLabel" aria-hidden="true">
@@ -792,7 +791,6 @@
             </div>
     </div>
 </div>
-
 
 <div class="modal fade lms-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
     <div class="modal-dialog">
