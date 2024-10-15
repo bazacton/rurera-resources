@@ -19,15 +19,16 @@
 @php $schools = array(); $user = auth()->user();@endphp
 
 @section('content')
+<div class="dashboard-students-holder">
 <section class="member-card-header pb-50">
     <div class="d-flex align-items-center justify-content-between flex-md-row">
         <h2 class="section-title font-22">Students</h2>
         <div class="dropdown">
         <button type="button" class="btn subscription-modal p-0 {{($childs->count() == 0)? 'add-child-btn' : ''}}" data-type="child_register" data-id="0">
-            <img src="/assets/default/svgs/add-con.svg"> Add Student
+            <img src="/assets/default/img/student.png" width="64" height="64"> Add Student
         </button>
 		<button type="button" class="btn link-student-modal p-0" data-type="child_register" data-id="0">
-            <img src="/assets/default/svgs/add-con.svg"> Link Student
+            <img src="/assets/default/img/student.png" width="64" height="64"> Link Student
         </button>
 
     </div>
@@ -275,7 +276,7 @@
     </div>
 
 </section>
-
+</div>
 <div class="modal fade" id="addChildModal" tabindex="-1" aria-labelledby="addChildModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -513,7 +514,6 @@
     </div>
 </div>
 
-
 <div class="child-hidden-block hide">
     <div class="child-item lms-choose-plan-selected">
         <div class="lms-jobs-form">
@@ -535,7 +535,6 @@
         </div>
     </div>
 </div>
-
 
 <div class="modal fade choose-plan-modal update-plan-model" id="update-plan-modal" tabindex="-1"
      aria-labelledby="update-plan-modalLabel" aria-hidden="true">
@@ -792,7 +791,6 @@
             </div>
     </div>
 </div>
-
 
 <div class="modal fade lms-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
     <div class="modal-dialog">

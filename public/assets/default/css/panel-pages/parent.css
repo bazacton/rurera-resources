@@ -161,10 +161,11 @@ Assignments Table Style Start
 .db-form-tabs .lms-faqs {border: 1px solid #e2e8f0;background-color: #fff;border-radius: 10px;padding: 30px;max-width: 700px;margin: 0;}
 .db-form-tabs .lms-faqs .card {padding: 0; background-color: inherit; box-shadow: none; border: 0;}
 .db-form-tabs .lms-faqs .card:last-child {margin-bottom: 0;}
-.db-members .card {background-color: inherit; box-shadow: none; border: 0; }
+.db-members .card {background-color: inherit; box-shadow: none; border: 0; margin: 0;
+    padding: 0;}
 .db-members .card .card-header {padding: 15px 20px !important; margin: 0; align-items: center; border-radius: 0; border-bottom: 1px solid #e2e8f0;}
 .db-members .card .card-body {padding: 0; overflow: visible;}
-.db-members .card .list-group-item {background-color: inherit; border: 0; border-bottom: 1px solid #ddd; margin: 0; border-radius: 10px 10px 0 0; padding: 0; position: inherit;}
+.db-members .card .list-group-item {background-color: inherit; border: 0; border-top: 1px solid #ddd; margin: 0; padding: 0; position: inherit;}
 .db-members .card .list-group-item .col-auto:first-child {padding-right: 0; padding-left: 40px; width: auto; min-width: auto;}
 .db-members .card .list-group-item .col-auto:first-child.col-lg-2 {flex: 0 0 25%; max-width: 25%;}
 .db-members .card .list-group-item .col-auto:last-child {padding-right: 40px;}
@@ -173,7 +174,7 @@ Assignments Table Style Start
 .db-members .card .list-group-item small {display: block; line-height: normal;}
 .db-members .card .list-group-item .profile-dropdown {padding-top: 0; min-height: 38px; display: inline-flex; align-items: center; flex-direction: column;}
 .db-members .card .card-header button img {width: 18px; height: 18px; filter: invert(100%) sepia(0%) saturate(7472%) hue-rotate(114deg) brightness(109%) contrast(97%); margin-right: 6px;}
-.member-card-header .btn img {width: 18px; height: 18px;}
+.member-card-header .btn img {width: 22px; height: 22px;}
 .db-members .card .list-group-item:nth-child(even) {background-color: #fff;}
 .billing-card .list-group-item {padding: 0;}
 .db-notifications {max-width: 700px;}
@@ -184,17 +185,36 @@ Assignments Table Style Start
 .db-members .card .column-2 .list-group-item {max-width: 47.5%; width: 47.5%; margin-left: 15px;}
 .dashboard .lms-jobs-form {border: 0; }
 .panel-content .dashboard .lms-jobs-form .input-field:before {display: none;}
-.member-card-header {padding: 30px !important; border-bottom: 1px solid #ddd; margin-bottom: 60px; background-color: #fff; border-radius: 10px;}
+.member-card-header {padding:30px !important; border-bottom: 1px solid #ddd; margin-bottom: 60px; background-color: #fff; border-radius: 10px 10px 0 0;}
 .member-card-header .dropdown {margin-left: auto;}
 .member-card-header .db-members .profile-dropdown > a {background-color: var(--primary); box-shadow: none; border: 0; padding: 10px 20px; color: #fff; font-weight: 400; height: auto; border-radius: 20px;}
 .member-card-header .db-members .profile-dropdown a:after {display: none;}
 .member-card-header .db-members .profile-dropdown > a {position: relative; padding-right: 35px;}
 .member-card-header .db-members .profile-dropdown > a:before {content: ""; position: absolute; border: 2px solid #fff; height: 8px; width: 8px; border-top: 0; border-left: 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); top: 50%; margin-top: -5px; right: 18px;}
+.member-card-header h2 {
+    color: var(--primary);
+}
+.member-card-header .dropdown .btn {
+    margin-left: 15px;
+    color: var(--primary);
+    height: auto;
+    font-weight: 600;
+}
+.member-card-header .dropdown .btn img {
+    filter: invert(17%) sepia(11%) saturate(4544%) hue-rotate(196deg) brightness(93%) contrast(90%);
+    margin-right: 8px;
+}
 /*Dashboard members list style start*/
+.dashboard-students-holder {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.dashboard-students-holder .db-form-tabs {margin-bottom: 0;}
 .db-members .card .card-header button,
 .db-members .list-group .rurera-tables-list,
 .db-members .list-group {gap: 0; background-color: #fff; border: 1px solid #ddd; border-radius: 10px; position: relative;}
-.db-members .list-group {width: 100%;}
+.db-members .list-group {width: 100%; border: 0; border-radius: 0;}
 .db-members .list-group:has(.rurera-tables-list) {background-color: inherit; border: 0;}
 .db-members .card .list-group-item .detail-btn {background-color: #e2e8f0; border: 0; padding: 10px 30px 10px 15px; border-radius: 3px; color: #64748b;}
 .db-members .list-group-item .profile-dropdown > a {border: 1px solid #ddd; border-radius: 100%; height: 36px; width: 36px; display: inline-flex; align-items: center; justify-content: center;}
