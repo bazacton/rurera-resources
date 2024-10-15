@@ -215,6 +215,7 @@ Assignments Table Style Start
 .db-members .card .card-header button,
 .db-members .list-group .rurera-tables-list,
 .db-members .list-group {gap: 0; background-color: #fff; border: 1px solid #ddd; border-radius: 10px; position: relative;}
+.db-members .list-group .rurera-tables-list {width: 100%;}
 .db-members .list-group {width: 100%; border: 0; border-radius: 0;}
 .db-members .list-group:has(.rurera-tables-list) {background-color: inherit; border: 0;}
 .db-members .card .list-group-item .detail-btn {background-color: #e2e8f0; border: 0; padding: 10px 30px 10px 15px; border-radius: 3px; color: #64748b;}
