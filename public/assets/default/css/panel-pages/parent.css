@@ -184,7 +184,7 @@ Assignments Table Style Start
 .db-members .card .column-2 .list-group-item {max-width: 47.5%; width: 47.5%; margin-left: 15px;}
 .dashboard .lms-jobs-form {border: 0; }
 .panel-content .dashboard .lms-jobs-form .input-field:before {display: none;}
-.member-card-header {padding: 0 0 30px !important; border-bottom: 1px solid #ddd; margin-bottom: 60px;}
+.member-card-header {padding: 30px !important; border-bottom: 1px solid #ddd; margin-bottom: 60px; background-color: #fff; border-radius: 10px;}
 .member-card-header .dropdown {margin-left: auto;}
 .member-card-header .btn, .member-card-header .db-members .profile-dropdown > a {background-color: var(--primary); box-shadow: none; border: 0; padding: 10px 20px; color: #fff; font-weight: 400; height: auto; border-radius: 20px;}
 .member-card-header .db-members .profile-dropdown a:after {display: none;}
