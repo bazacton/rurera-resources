@@ -401,33 +401,6 @@ Assignments Table Style Start
 .book-form .tests-list li img {height: 18px; width: 18px;}
 .book-form .tests-list li img.google-icon,
 .lms-choose-membership .social-login img.google-icon {height: 30px; width: 30px; margin-bottom: -10px; }
-.listing-card .read-btn, .book-btn, .try-rurera-btn {color: var(--primary); font-weight: 600; font-size: 16px; border: 1px solid var(--primary); padding: 15px 25px; border-radius: 8px; border-bottom-width: 5px; background-color: #fff; display: inline-flex; align-items: center; min-width: 206px; vertical-align: middle; position: relative; transform: translate3d(0px, 0%, 0px); overflow: hidden; transition: background 0.4s linear; text-align: center;}
-.listing-card .read-btn.bg-light-green{border-bottom-color: var(--light-green);}
-.listing-card .read-btn.bg-light-green::before{content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 50% 50% 0 0; transform: translateY(100%) scaleY(0.5); transition: all 0.6s ease; z-index: -1; background-color: #fff !important; color: var(--light-green);}
-.listing-card .read-btn.bg-light-green:hover::before,
-.listing-card .read-btn.bg-light-green:hover{color: var(--light-green);}
-.listing-card .read-btn:before,
-.book-btn:before,
-.try-rurera-btn:before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--primary); border-radius: 50% 50% 0 0; transform: translateY(100%) scaleY(0.5); transition: all 0.6s ease; z-index:-1;}
-.listing-card .read-btn:hover{color:#fff;background-color: var(--primary);border-color: rgba(0,0,0,0.4);}
-.book-btn:hover{color:#fff;}
-.listing-card .read-btn:hover:before,
-.book-btn:hover:before,
-.try-rurera-btn:hover:before {border-radius: 0; transform: translateY(0) scaleY(1);}
-.listing-card .read-btn:hover .btn-icon svg g {fill:#fff;}
-.listing-card .read-btn .btn-icon {display: inline-block; width: 22px; height: 18px; line-height: normal; margin-right: 12px; margin-top: 0;}
-.listing-card .read-btn .btn-icon svg {max-width: 100%;}
-.listing-card .read-btn .btn-icon svg g {fill: var(--primary);}
-.listing-card .read-btn.continue,
-.book-btn.bg-primary, .try-rurera-btn {color: #fff; border-color: rgba(0,0,0,0.4); background-color: var(--primary);}
-.listing-card .read-btn.continue:hover::before, .listing-card .read-btn.continue:hover{color: var(--primary);}
-.listing-card .read-btn.continue:hover .btn-icon svg g{fill:#fff;}
-.listing-card .read-btn.continue::before{background-color: #fff;}
-.listing-card .read-btn.continue .btn-icon svg g{fill: #fff;}
-.listing-card .read-btn.continue .btn-icon {display: none;}
-.listing-card .read-btn.read-again {background-color: #7e9500; color: #fff;}
-.listing-card .read-btn.read-again svg g {fill: #fff;}
-.listing-card .remove-btn {font-size: 18px; color: #ffbfbf; font-weight: 600; display: inline-block; vertical-align: middle; margin-right: 15px; position: absolute; left: -100px; top: 50%; transform: translateY(-50%);}
 .action-activity .remove-btn {background-color: #ffdfe3; height: 40px; width: 40px; text-align: center; border: 1px solid #d84356; display: inline-flex; align-items: center; justify-content: center; border-radius: 3px; margin-left: 10px;}
 .db-form-tabs .list-group-item .remove-btn img,
 .action-activity .remove-btn img {max-height: 18px;max-width: 18px;min-height: 18px;min-width: 18px;filter: invert(46%) sepia(74%) saturate(4289%) hue-rotate(328deg) brightness(89%) contrast(90%);}
