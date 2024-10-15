@@ -25,10 +25,10 @@
         <h2 class="section-title font-22">Students</h2>
         <div class="dropdown">
         <button type="button" class="btn subscription-modal p-0 {{($childs->count() == 0)? 'add-child-btn' : ''}}" data-type="child_register" data-id="0">
-            <img src="/assets/default/imgstudent.png" width="64" height="64"> Add Student
+            <img src="/assets/default/img/student.png" width="64" height="64"> Add Student
         </button>
 		<button type="button" class="btn link-student-modal p-0" data-type="child_register" data-id="0">
-            <img src="/assets/default/imgstudent.png" width="64" height="64"> Link Student
+            <img src="/assets/default/img/student.png" width="64" height="64"> Link Student
         </button>
 
     </div>
