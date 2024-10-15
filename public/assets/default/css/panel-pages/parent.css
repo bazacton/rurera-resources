@@ -621,6 +621,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 .parent-panel .sidebar-logo {
     flex-direction: column;
     justify-content: center;
+    gap: 8px;
 }
 .parent-panel .panel-sidebar > .container {
     flex-direction: column;
@@ -630,6 +631,9 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 }
 .parent-panel .panel-content {
     padding: 30px 15px 30px 254px;
+}
+.parent-panel .panel-sidebar .sidebar-menu .sidenav-item {
+    padding: 12px 0;
 }
 @media screen and (min-width: 992px) and (max-width: 1600px) {
     .parent-panel .panel-page-section .panel-sidebar {
@@ -644,6 +648,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
     .parent-panel .panel-sidebar .sidebar-menu {
         padding-bottom: 15px;
         padding-left: 10px;
+        padding-right: 10px;
     }
 }
 /* Left Menu For Parent Style End */
