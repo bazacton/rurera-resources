@@ -24,10 +24,10 @@
     <div class="d-flex align-items-center justify-content-between flex-md-row">
         <h2 class="section-title font-36">Students</h2>
         <div class="dropdown">
-        <button type="button" class="btn subscription-modal p-0 {{($childs->count() == 0)? 'add-child-btn' : ''}}" data-type="child_register" data-id="0">
+        <button type="button" class="btn subscription-modal p-0 font-18 {{($childs->count() == 0)? 'add-child-btn' : ''}}" data-type="child_register" data-id="0">
             <img src="/assets/default/img/student.png" width="64" height="64"> Add Student
         </button>
-		<button type="button" class="btn link-student-modal p-0" data-type="child_register" data-id="0">
+		<button type="button" class="btn link-student-modal p-0 font-18" data-type="child_register" data-id="0">
             <img src="/assets/default/img/student.png" width="64" height="64"> Link Student
         </button>
 
