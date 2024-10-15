@@ -17,7 +17,7 @@
 <div class="dashboard-students-holder">
 <section class="member-card-header pb-20 mb-30">
     <div class="d-flex align-items-center justify-content-between flex-md-row">
-        <h1 class="section-title font-22">Set Work</h1>
+        <h2 class="section-title font-36">Set Work</h2>
         <div class="dropdown">
         <a class="btn subscription-modal font-18" href="/panel/set-work/create" data-type="child_register"><img src="/assets/default/svgs/add-con.svg"> Add Work
         </a>
