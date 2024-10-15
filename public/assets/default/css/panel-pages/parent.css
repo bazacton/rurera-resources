@@ -190,6 +190,10 @@ Assignments Table Style Start
 .member-card-header .db-members .profile-dropdown a:after {display: none;}
 .member-card-header .db-members .profile-dropdown > a {position: relative; padding-right: 35px;}
 .member-card-header .db-members .profile-dropdown > a:before {content: ""; position: absolute; border: 2px solid #fff; height: 8px; width: 8px; border-top: 0; border-left: 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); top: 50%; margin-top: -5px; right: 18px;}
+.panel-content:has(.db-members),
+.panel-content:has(.edit-profile) {
+    background-color: #f9fafe;
+}
 /*Dashboard members list style start*/
 .db-members .card .card-header button,
 .db-members .list-group .rurera-tables-list,
