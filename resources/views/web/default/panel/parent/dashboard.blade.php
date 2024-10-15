@@ -21,7 +21,7 @@
 @section('content')
 <section class="member-card-header pb-50">
     <div class="d-flex align-items-center justify-content-between flex-md-row">
-        <h1 class="section-title font-22">Students</h1>
+        <h2 class="section-title font-22">Students</h2>
         <div class="dropdown">
         <button type="button" class="btn btn-sm btn-primary subscription-modal {{($childs->count() == 0)? 'add-child-btn' : ''}}" data-type="child_register" data-id="0">
             <img src="/assets/default/svgs/add-con.svg"> Add Student
