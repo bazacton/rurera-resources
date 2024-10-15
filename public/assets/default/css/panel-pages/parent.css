@@ -165,7 +165,7 @@ Assignments Table Style Start
     padding: 0;}
 .db-members .card .card-header {padding: 15px 20px !important; margin: 0; align-items: center; border-radius: 0; border-bottom: 1px solid #e2e8f0;}
 .db-members .card .card-body {padding: 0; overflow: visible;}
-.db-members .card .list-group-item {background-color: inherit; border: 0; border-top: 1px solid #ddd; margin: 0; padding: 0; position: inherit;}
+.db-members .card .list-group-item {background-color: inherit; border: 0; border-top: 1px solid #ddd; margin: 0; padding: 0; position: inherit; border-radius: 0;}
 .db-members .card .list-group-item .col-auto:first-child {padding-right: 0; padding-left: 40px; width: auto; min-width: auto;}
 .db-members .card .list-group-item .col-auto:first-child.col-lg-2 {flex: 0 0 25%; max-width: 25%;}
 .db-members .card .list-group-item .col-auto:last-child {padding-right: 45px; justify-content: center;}
@@ -215,7 +215,7 @@ Assignments Table Style Start
 .db-members .card .card-header button,
 .db-members .list-group .rurera-tables-list,
 .db-members .list-group {gap: 0; background-color: #fff; border: 1px solid #ddd; border-radius: 10px; position: relative;}
-.db-members .list-group .rurera-tables-list {width: 100%;}
+.db-members .list-group .rurera-tables-list {width: 100%; border: 0;}
 .db-members .list-group {width: 100%; border: 0; border-radius: 0;}
 .db-members .list-group:has(.rurera-tables-list) {background-color: inherit; border: 0;}
 .db-members .card .list-group-item .detail-btn {background-color: #e2e8f0; border: 0; padding: 10px 30px 10px 15px; border-radius: 3px; color: #64748b;}
