@@ -87,7 +87,7 @@ if( !empty( $emojisArray ) ){
 
 
         <div class="col-12 user-profile-block rurera-hide">
-            <div class="user-detail mb-50 panel-border bg-white rounded-sm p-25">
+            <div class="user-detail mb-50">
                 <div class="detail-header mb-25 pb-25">
                     <div class="info-media d-flex align-items-center flex-wrap">
                         <span class="media-box">
