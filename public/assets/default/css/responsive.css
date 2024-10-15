@@ -70,7 +70,7 @@ Lms Responsive Style Start
     .panel-sidebar .sidebar-menu .sidenav-item:hover .nav-sub-title{
         visibility: visible;
         opacity: 1;
-        margin-top: 5px;
+        margin-top: 7px;
     }
     .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title:before {
         position: absolute;
