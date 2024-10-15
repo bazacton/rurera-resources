@@ -5410,3 +5410,10 @@ p {line-height: 1.5;}
 .tooltip-btn.legendary {background-color: #ffd800; box-shadow: 0 4px 0 #e7a506; color: #a96804;}
 .tooltip-hover {position: relative;}
 /*Rurera Tooltip Style End*/
+
+/* Rurera List Button Style Start */
+.rurera-list-controls {gap: 10px;}
+.rurera-list-btn {border: 2px solid #ddd; border-bottom-width: 4px; border-radius: 8px; display: inline-block; line-height: normal; padding: 10px 25px;white-space: nowrap;}
+.rurera-list-btn:hover {background-color: #f5f5f5;}
+.resume-test .rurera-list-btn:hover {color: var(--primary);}
+/* Rurera List Button Style End */
