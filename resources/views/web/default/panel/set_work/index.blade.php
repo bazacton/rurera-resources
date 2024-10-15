@@ -15,7 +15,7 @@
 
 @section('content')
 <div class="dashboard-students-holder">
-<section class="member-card-header pb-20 mb-30">
+<section class="member-card-header pb-20 mb-15">
     <div class="d-flex align-items-center justify-content-between flex-md-row">
         <h2 class="section-title font-36">Set Work</h2>
         <div class="dropdown">
