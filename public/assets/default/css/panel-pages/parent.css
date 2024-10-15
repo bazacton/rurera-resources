@@ -641,5 +641,9 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
     .parent-panel .panel-content {
         padding-left: 110px;
     }
+    .parent-panel .panel-sidebar .sidebar-menu {
+        padding-bottom: 15px;
+        padding-left: 10px;
+    }
 }
 /* Left Menu For Parent Style End */
