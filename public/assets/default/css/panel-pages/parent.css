@@ -198,7 +198,7 @@ Assignments Table Style Start
     color: var(--primary);
 }
 .member-card-header .dropdown .btn img {
-    filter: invert(15%) sepia(39%) saturate(1644%) hue-rotate(200deg) brightness(96%) contrast(88%);
+    filter: invert(23%) sepia(78%) saturate(2847%) hue-rotate(186deg) brightness(95%) contrast(98%);
     margin-right: 8px;
 }
 /*Dashboard members list style start*/
