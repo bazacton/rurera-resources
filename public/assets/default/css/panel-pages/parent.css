@@ -197,9 +197,10 @@ Assignments Table Style Start
 .member-card-header .dropdown .btn {
     margin-left: 15px;
     color: var(--primary);
+    height: auto;
 }
 .member-card-header .dropdown .btn img {
-    filter: invert(23%) sepia(78%) saturate(2847%) hue-rotate(186deg) brightness(95%) contrast(98%);
+    filter: invert(17%) sepia(11%) saturate(4544%) hue-rotate(196deg) brightness(93%) contrast(90%);
     margin-right: 8px;
 }
 /*Dashboard members list style start*/
