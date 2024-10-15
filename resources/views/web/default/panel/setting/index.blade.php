@@ -1,5 +1,8 @@
-@extends(getTemplate() .'.panel.layouts.panel_layout_full')
-
+@if(auth()->user()->isParent())
+	@extends(getTemplate() .'.panel.layouts.panel_layout_full')
+@else
+	@extends(getTemplate() .'.panel.layouts.panel_layout')
+@endif
 @push('styles_top')
     <link rel="stylesheet" href="/assets/default/vendors/select2/select2.min.css">
 
