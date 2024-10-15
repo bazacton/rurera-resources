@@ -1266,6 +1266,29 @@ function _rureraform_properties_prepare(_object) {
                     var wrapper_class = (rureraform_meta[type][key]['wrapper_class'] != undefined)? rureraform_meta[type][key]['wrapper_class'] : '';
                     html += "<div class='rureraform-properties-item "+wrapper_class+"' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-third'><select name='rureraform-" + key + "' id='rureraform-" + key + "' class='"+field_class+"'>" + options + "</select></div></div></div>";
                     break;
+					
+				case 'inner_select_field':
+                    options = "";
+                    for (var option_key in rureraform_meta[type][key]['options']) {
+                        if (rureraform_meta[type][key]['options'].hasOwnProperty(option_key)) {
+                            selected = "";
+                            if (option_key == properties[key])
+                                selected = " selected='selected'";
+                            options += "<option" + selected + " value='" + rureraform_escape_html(option_key) + "'>" + rureraform_escape_html(rureraform_meta[type][key]['options'][option_key]) + "</option>";
+                        }
+                    }
+                    var field_class = (rureraform_meta[type][key]['class'] != undefined)? rureraform_meta[type][key]['class'] : '';
+                    var wrapper_class = (rureraform_meta[type][key]['wrapper_class'] != undefined)? rureraform_meta[type][key]['wrapper_class'] : '';
+					var field_option_id = rureraform_meta[type][key]['field_option_id'];
+					
+					
+					var element_class = 'rurera-hide';
+					if( field_option_id == 1){
+						element_class = '';
+					}
+					
+                    html += "<div class='rureraform-properties-item rurera-inner-fields "+element_class+" "+wrapper_class+"' data-field_option_id='"+field_option_id+"' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-third'><select name='rureraform-" + key + "' id='rureraform-" + key + "' class='"+field_class+"'>" + options + "</select></div></div></div>";
+                    break;
                     
                 case 'ajax_select_new':
                     options = "";
@@ -1516,6 +1539,20 @@ function _rureraform_properties_prepare(_object) {
                         options += rureraform_properties_options_label_item_get(properties[key][j]["label"], selected);
                     }
                     html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-properties-options-table-header'><div>Label</div><div></div></div><div class='rureraform-properties-options-box'><div class='rureraform-properties-options-container' data-multi='" + rureraform_escape_html(rureraform_meta[type][key]['multi-select']) + "'>" + options + "</div></div><div class='rureraform-properties-options-table-footer'><a class='rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small' href='#' onclick='return rureraform_properties_options_new(null, $(this), \"only_label\");'><i class='fas fa-plus'></i><label>Add option</label></a></div></div></div>";
+                    break;
+					
+                case 'draggable_options_label':
+                    options = "";
+                    for (var j = 0; j < properties[key].length; j++) {
+                        selected = false;
+						if(DataIsEmpty(properties[key][j]["label"])){
+								continue;
+							}
+                        if (properties[key][j].hasOwnProperty("default") && properties[key][j]["default"] == "on")
+                            selected = true;
+                        options += rureraform_properties_repeater_field_item_get(properties[key][j]["label"], selected);
+                    }
+                    html += "<div class='rureraform-properties-item draggable_options_label' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-properties-options-table-header'><div>Label</div><div></div></div><div class='rureraform-properties-options-box'><div class='rureraform-properties-options-container' data-multi='" + rureraform_escape_html(rureraform_meta[type][key]['multi-select']) + "'>" + options + "</div></div><div class='rureraform-properties-options-table-footer'><a class='rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small' href='#' onclick='return rureraform_properties_options_new(null, $(this), \"only_repeater\");'><i class='fas fa-plus'></i><label>Add option</label></a></div></div></div>";
                     break;
 					
 				case 'options_label_minimal':
@@ -2210,6 +2247,15 @@ function _rureraform_properties_prepare(_object) {
     });
     rureraform_init_tinymce();
     rureraform_properties_visible_conditions(_object);
+	
+	
+	
+	
+	console.log('draggable_count  '+$('.draggable_options_label .rureraform-properties-options-label').length);
+	if($('.draggable_options_label .rureraform-properties-options-label').length > 0){
+		$('.draggable_options_label .rureraform-properties-options-label').change();
+	}
+	
     // Prepare editor state - end
     return false;
 }
@@ -2230,6 +2276,7 @@ function rureraform_properties_open(_object) {
     jQuery("#rureraform-element-properties .rureraform-admin-popup-loading").show();
     jQuery("#rureraform-element-properties").attr('data-element_id', element_id);
     console.log(_object);
+	
 
     /*var sidebar = new StickySidebar('.lms-element-properties', {
         containerSelector: false,
@@ -5890,6 +5937,9 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                     for (var j = 0; j < rureraform_form_elements[i]["options"].length; j++) {
                         selected = "";
                         var label_data = rureraform_form_elements[i]["options"][j]["label"];
+						if(DataIsEmpty(rureraform_form_elements[i]["options"][j]["label"])){
+							continue;
+						}
                         draggable_options += '<li><span class="draggable-option">' + label_data + '</span></li>';
                     }
 
@@ -9814,11 +9864,25 @@ $(document).on('keyup focus blur change', '.note-editable', function () {
     update_content_data();
 });
 
+
+$(document).on('keyup focus blur change', '.draggable_options_label .rureraform-properties-options-label', function () {
+	var options_response = '';
+    $(this).closest('.draggable_options_label').find('.rureraform-properties-options-label').each(function (index) {
+		var option_value = $(this).val();
+		options_response = options_response+'<option value="'+option_value+'">'+option_value+'</option>';
+	});
+	console.log('draggable-run');
+	$(this).closest('.rureraform-admin-popup-inner').find('.inner_select_fields').find('select').html(options_response);
+});
+
 $(document).on('click', '.generate-question-code', function () {
     update_content_data();
     var thisParentObj = $(this).closest('.rureraform-admin-popup-inner');
     var editorObj = thisParentObj.find(".note-editable");
     var editorObj2 = thisParentObj.find(".rureraform-admin-popup-content");
+	var editorForm = thisParentObj.find('.rureraform-admin-popup-content-form');
+	//rureraform-properties-options-container
+	console.log(editorForm);
     var question_fields_obj = [];
     question_fields_obj[0] = {};
     editorObj.find('.editor-field').each(function (index) {
@@ -9980,6 +10044,7 @@ $(document).on('click', '.question_glossary_submit_btn', function () {
 });
 $(document).on('click', '.quiz-group', function () {
 	$(".topic-parts-block").addClass('rurera-hide');
+	
     rureraform_properties_open($(this));
 });
 $(document).on('click', '.duplicate-element', function () {
