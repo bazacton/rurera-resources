@@ -618,6 +618,16 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
     height: 100%;
     border-right: 1px solid #dcdcdc;
 }
+.parent-panel .sidebar-logo {
+    flex-direction: column;
+    justify-content: center;
+}
+.parent-panel .panel-sidebar > .container {
+    flex-direction: column;
+}
+.parent-panel .panel-sidebar .sidebar-menu {
+    flex-direction: column;
+}
 @media screen and (min-width: 992px) and (max-width: 1600px) {
     .panel-page-section .panel-sidebar {
         width: 100px; 
