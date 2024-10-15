@@ -35,9 +35,9 @@
                         <div class="card-body">
 
                             <ul class="rurera-tabs-frontend set-work-ajax d-flex flex-wrap align-items-center">
-                                <li class="active font-weight-bold pb-10" data-type="active">Inprogress</li>
-                                <li class="font-weight-bold pb-10" data-type="completed">Completed</li>
-                                <li class="font-weight-bold pb-10" data-type="expired">Overdue</li>
+                                <li class="active font-weight-bold font-18 pb-10" data-type="active">Inprogress</li>
+                                <li class="font-weight-bold font-18 pb-10" data-type="completed">Completed</li>
+                                <li class="font-weight-bold font-18 pb-10" data-type="expired">Overdue</li>
                             </ul>	
 
                             <div class="list-group list-group-custom set-work-content list-group-flush totalChilds"
