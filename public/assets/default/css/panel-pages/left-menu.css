@@ -589,7 +589,7 @@ Left SideBar-menu End
     background-color: #f9fafe;
 }
 /*Dashboard-banner For Parent Page Style Start*/
-.dashboard-banner-container {margin-top: 80px; min-height: 350px;}
+.dashboard-banner-container {margin-top: 80px; min-height: 250px;}
 .dashboard-banner-container h2 {position: relative; z-index: 1;}
 .dashboard-banner-container .dashboard-banner {position: absolute; right: 0; bottom: 0; height: 340px;}
 .rtl .dashboard-banner-container .dashboard-banner {left: 0; right: auto}
