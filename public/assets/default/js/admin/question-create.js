@@ -10042,6 +10042,32 @@ $(document).on('click', '.question_glossary_submit_btn', function () {
         }
     });
 });
+
+$(document).on('click', '.question_topic_part_submit_btn', function () {
+    var formData = new FormData($(this).closest('.question_part_modal').find('form')[0]);
+	var category_id = $(".ajax-category-courses").val();
+	var subject_id = $(".ajax-courses-dropdown").val();
+	var chapter_id = $(".ajax-chapter-dropdown").val();
+	var sub_chapter_id = $(".ajax-subchapter-dropdown").val();
+	formData.append('category_id', category_id);
+	formData.append('subject_id', subject_id);
+	formData.append('chapter_id', chapter_id);
+	formData.append('sub_chapter_id', sub_chapter_id);
+    $.ajax({
+        type: "POST",
+        url: '/admin/topics_parts/store_question_parts',
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function (return_data) {
+            if (return_data.code == 200) {
+				$(".topic-parts-options").append(return_data.response);
+                $("#add-part-modal-box").modal('hide');
+            }
+        }
+    });
+});
+
 $(document).on('click', '.quiz-group', function () {
 	$(".topic-parts-block").addClass('rurera-hide');
 	
