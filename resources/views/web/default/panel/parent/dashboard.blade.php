@@ -115,7 +115,7 @@
 										</a>
 
 										<a href="/{{panelRoute()}}/students/{{$childObj->username}}" class="col-auto  ms-2">
-												<h6 class="font-16 font-weight-normal">{{$childObj->get_full_name()}}</h6>
+												<h6 class="font-16 font-weight-bold">{{$childObj->get_full_name()}}</h6>
 												
 												<small class="text-muted">
 													{{isset($childObj->userYear->id )? $childObj->userYear->getTitleAttribute() : ''}} {{isset($childObj->userClass->title)? $childObj->userClass->title : ''}} {{isset( $childObj->userSection->title )? $childObj->userSection->title : ''}}
