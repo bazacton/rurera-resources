@@ -583,6 +583,10 @@ Left SideBar-menu End
     width: calc(100% - 254px);
     width: 100%;
 }
+.panel-content:has(.db-members),
+.panel-content:has(.edit-profile) {
+    background-color: #f9fafe;
+}
 /*Dashboard-banner For Parent Page Style Start*/
 .dashboard-banner-container {margin-top: 80px;}
 .dashboard-banner-container h2 {position: relative; z-index: 1;}
