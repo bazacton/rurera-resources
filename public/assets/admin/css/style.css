@@ -1481,7 +1481,6 @@ body .question-step:has(.prev-next-controls) {padding-bottom: 0; }
 
 /*Topics Parts Create Output Table Start*/
 #outputTable textarea {
-    min-height: 150px;
     overflow: hidden;
     width: 100%;
     padding: 15px 10px;
@@ -1489,6 +1488,8 @@ body .question-step:has(.prev-next-controls) {padding-bottom: 0; }
     resize: none;
     border-radius: 3px;
     outline: none;
+    height: auto;
+    field-sizing: content;
 }
 table#outputTable {
     width: 100%;
