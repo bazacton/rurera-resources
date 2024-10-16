@@ -144,7 +144,7 @@ body:has(.quiz-topbar) {
 .finish-steps .summary-text .score {display: inline-block; vertical-align: middle; padding-left: 5px;}
 .finish-steps .sats-summary .sats-summary-icon {margin-right: 10px; width: 30px; height: 30px;}
 .finish-steps .chart-summary-fields .sats-summary .summary-text {width: calc(100% - 40px); text-align: left;}
-/*sats-summary style end*/
+/*sats-summary style end*/ 
 /************************************ 
  Quiz Read Info Style End
 *************************************/
@@ -237,6 +237,15 @@ span.Selectable:hover {text-decoration: underline;}
 .question-result-layout .droppable-characters {padding-top: 15px;}
 .finish-steps p {background-color: #e8fde8; display: inline-block; vertical-align: middle; line-height: normal; color: #45d745; padding: 5px 8px; border: 1px solid; border-radius: 3px; margin-right: 10px;}
 .finish-steps .prev-next-controls {margin-top: 50px;}
+.status-in-words span,
+.lms-quiz-section .status-in-words span {font-size: 16px;position: relative;display: inline-flex;align-items: center;}
+.status-nub span {font-size: 16px;}
+.status-in-words {display: flex;align-items: center;gap: 50px;margin-bottom: 30px;}
+.status-in-words span:before {content: "";display: inline-block;vertical-align: middle;height: 18px;width: 18px;margin-right: 8px; box-shadow: 0 0 4px rgba(0,0,0,0.4) inset;}
+.status-in-words .st-wrong:before {background-color: #dc160b;}
+.status-in-words .st-slow:before {background-color: #e29312;}
+.status-in-words .st-ok:before {background-color: #c8d022;}
+.status-in-words .st-fast:before {background-color: #43d21d;}
 /* True False Style Start */
 .form-box.inline-fields .lms-radio-select {margin-bottom: 0;}
 .lms-radio-select label {margin: 0; border: 2px solid #ddd; border-bottom-width: 4px; min-height: 50px; display: inline-flex; align-items: center; border-radius: 8px; cursor: pointer; overflow: hidden; position: relative; z-index: 1; padding: 0 15px; -webkit-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;width: 100%;}
