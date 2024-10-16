@@ -11,7 +11,7 @@
 @endpush
 
 @section('content')
-<section class="member-card-header pb-20">
+<section class="member-card-header activities-header pb-20 mb-0">
     <div class="d-flex align-items-start align-items-md-center justify-content-between flex-md-row">
         <h1 class="section-title font-22">Analytics</h1>
         <div class="dropdown db-members">
@@ -37,7 +37,7 @@
 <section>
 
 
-    <div class="activities-container mt-10 p-20 p-lg-35 ">
+    <div class="activities-container p-20 p-lg-35 ">
         <div class="chart-filters p-0">
             <div class="filters-list">
                 <a href="#" class="filter-mobile-btn">Filters Dropdown</a>
