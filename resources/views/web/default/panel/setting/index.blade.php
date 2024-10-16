@@ -22,7 +22,7 @@
 @section('content')
 
     <div class="row">
-        <div class="col-lg6 col-md-6 col-12 mx-auto">
+        <div class="col-lg-8 col-md-8 col-12 mx-auto">
             <form method="post" id="userSettingForm" class="mt-10 userSettingForm" action="{{ (!empty($new_user)) ? '/panel/manage/'. $user_type .'/new' : '/panel/setting' }}">
                 {{ csrf_field() }}
                 <input type="hidden" name="step" value="{{ !empty($currentStep) ? $currentStep : 1 }}">
