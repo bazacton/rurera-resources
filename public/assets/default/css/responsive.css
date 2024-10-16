@@ -53,7 +53,7 @@ Lms Responsive Style Start
     .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon {margin-right: 0 !important;}
     .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title {
         position: absolute;
-        top: 100%;
+        bottom: 100%;
         left: 50%;
         background-color: #000;
         font-size: 12px !important;
@@ -75,7 +75,7 @@ Lms Responsive Style Start
     .panel-sidebar .sidebar-menu .sidenav-item:hover .nav-sub-title{
         visibility: visible;
         opacity: 1;
-        margin-top: 7px;
+        margin-top: 0;
     }
     .sidebar-menu-holder {
         height: 100vh;
