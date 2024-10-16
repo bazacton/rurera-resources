@@ -1478,3 +1478,33 @@ body .question-step:has(.prev-next-controls) {padding-bottom: 0; }
     border-radius: 3px;
 }
 /*pages Book List Style End*/
+
+/*Topics Parts Create Output Table Start*/
+#outputTable textarea {
+    min-height: 150px;
+    overflow: hidden;
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid #ddd;
+    resize: none;
+    border-radius: 3px;
+    outline: none;
+}
+table#outputTable {
+    width: 100%;
+}
+table#outputTable thead th {
+    padding-bottom: 15px;
+}
+#outputTable td {
+    padding-bottom: 15px;
+}
+.remove-btn {
+    background-color: #ffe1e1;
+    border: 1px solid #e60909;
+    color: #e60909;
+    padding: 6px 18px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+/*Topics Parts Create Output Table End*/
