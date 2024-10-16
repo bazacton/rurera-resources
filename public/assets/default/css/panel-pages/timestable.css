@@ -245,21 +245,7 @@ Sub Pages Style
 .levels-grouping .circle_inbox {border-radius: 100%; width: 90%; height: 90%; left: 5px; top: 5px;}
 .levels-grouping .percent_more:after,
 .levels-grouping .levels-progress.circle .progress-count {background: #0ebe73;}
-.panel-content .search-top-banner {padding: 25px 25px 0 !important; min-height: auto;}
-.panel-content .education-icon-box li:nth-child(1) {left: -38px; top: 15px; }
-.panel-content .education-icon-box li:nth-child(2) {left: 10px; top: -25px; }
-.panel-content .education-icon-box li:nth-child(3) {left: 0px; top: 50px;}
-.panel-content .education-icon-box li:nth-child(4) {left: 125px; top: 30px; }
-.panel-content .education-icon-box li:nth-child(5) {left: 70px; top: 30px;}
-.panel-content .education-icon-box li:nth-child(6) {left: 85px; top: -40px;}
-.panel-content .lms-call-to-action button {min-width: auto; padding: 0 30px;}
-.panel-content .lms-call-to-action input[type="text"] {width: 100%;}
-.panel-content .lms-setup-progress ul {flex-wrap: wrap; gap: 10px;}
-.panel-content .education-icon-box li figure {width: 70px; height: 70px;}
-.panel-content .education-icon-box li:nth-child(1) figure {width: 50px; height: 50px;}
-.panel-content .education-icon-box li:nth-child(5) figure {width: 50px; height: 50px;}
-.panel-content .lms-setup-progress {width: 100%; }
-.panel-content .products-top-header .banner-holder {margin-top: 0;}
+
 .panel-content .lms-text-section {padding: 25px !important;}
 .panel-content .spell-levels .panel-subheader {padding-right: 155px; margin-bottom: 100px;}
 .panel-subheader {background: url(/assets/default/img/subheader-bg1.png) no-repeat right bottom #ebf3fe; background-position: 95% 100%; padding: 20px 20px; border-radius: 5px; margin: 0 0 25px; position: relative;}
