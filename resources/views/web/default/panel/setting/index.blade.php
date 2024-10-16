@@ -1,8 +1,9 @@
-@if(auth()->user()->isParent())
-	@extends(getTemplate() .'.panel.layouts.panel_layout_full')
-@else
-	@extends(getTemplate() .'.panel.layouts.panel_layout')
-@endif
+@php
+    $layout = auth()->check() && auth()->user()->isParent() 
+        ? getTemplate() . '.panel.layouts.panel_layout_full' 
+        : getTemplate() . '.panel.layouts.panel_layout';
+@endphp
+@extends($layout)
 @push('styles_top')
     <link rel="stylesheet" href="/assets/default/vendors/select2/select2.min.css">
 
