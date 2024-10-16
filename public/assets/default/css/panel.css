@@ -377,26 +377,6 @@ Lms Quiz Result Logs Style End
 /* need help page style End */
 
 /**********************************
-Lms Setup Progress Style Start
-**********************************/
-.lms-setup-progress ul {margin: 0; padding: 0; }
-.lms-setup-progress ul li {list-style: none; line-height: normal;}
-.lms-setup-progress .step-number {justify-content: center; flex: 0 0 auto; box-sizing: border-box; width: 30px; height: 30px; border-radius: 100%; font-size: 15px;}
-.lms-subscription-step .step-number {background-color: #00aeef; color: #fff;}
-.lms-subscription-step .step-name {color: #fff;}
-.lms-setup-progress .step-name {margin-left: 10px; font-size: 14px;}
-.lms-setup-progress .separator {flex: 1 0 20px; margin-left: 8px; margin-right: 8px; height: 1px; background-color: #ddd;}
-.lms-account-setup .step-number {border: 1px solid #fff; color: #fdb532;}
-.lms-confirmation-step .step-number {border: 2px solid #1eb7bd; color: #1eb7bd;}
-.lms-account-setup .step-name {color: #fff;}
-.lms-confirmation-step .step-name {color: #fff;}
-@media (min-width: 975px) {
-    .lms-setup-progress {margin-left: auto; margin-right: auto; width: 810px;}
-}
-/**********************************
-Lms Setup Progress Style End
-**********************************/
-/**********************************
 Lms Subscription Form Style Start
 **********************************/
 .lms-setup-progress span {margin-top: 0;}
