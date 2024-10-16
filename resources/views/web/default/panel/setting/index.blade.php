@@ -47,11 +47,6 @@
             </form>
         </div>
     </div>
-
-    <div class="create-webinar-footer d-flex align-items-center justify-content-between mt-20 pt-15 border-top">
-
-
-    </div>
 @endsection
 
 @push('scripts_bottom')
