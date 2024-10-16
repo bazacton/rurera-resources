@@ -187,16 +187,20 @@ Left SideBar-menu Start
     color: #989898;
     text-transform: uppercase;
 }
+.panel-sidebar {
+    position: fixed !important;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    width: 254px;
+    height: 100%;
+    border-right: 1px solid #dcdcdc;
+}
 .panel-sidebar .panel-sidebar-close {
     position: absolute;
     top: 10px;
     right: 20px;
     display: none
-}
-.panel-sidebar > .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .nav-icons-or-start-live.navbar-order {
     display: none;
@@ -244,10 +248,10 @@ Left SideBar-menu Start
     pointer-events: none
 }
 .panel-sidebar .sidebar-menu {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding-top: 0 !important;
+    height: calc(100% - 100px);
+    padding-bottom: 35px;
+    overflow: hidden;
+    overflow-y: auto;
 }
 .panel-sidebar .sidebar-menu .dropdown-menu {
     margin: 10px 0 0;
