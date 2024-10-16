@@ -90,7 +90,7 @@
 
 </section>
 @if(!auth()->user()->isUser())
-<div class="dashboard-students-holder">
+<div class="dashboard-students-holder mt-30">
     <div class="section-title text-left mt-30">
 		<h2 class="font-22">Set Work</h2>
 	</div>
