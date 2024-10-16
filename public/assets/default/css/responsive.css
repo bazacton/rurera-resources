@@ -127,7 +127,7 @@ Lms Responsive Style Start
     .panel-content > .container > .row > [class*="col-"]:last-child {padding-left: 15px;}
     .panel-content .panel-content-holder {max-width: calc(100% - 370px);}
     .panel-content .panel-right-sidebar {flex: 0 0 370px;max-width: 370px;}
-    .panel-sidebar .sidebar-menu .sidenav-item {justify-content: center;}
+    .parent-panel .panel-sidebar .sidebar-menu .sidenav-item {justify-content: center;}
     body .topbar-right {justify-content: space-between; }
     .question-number-holder {z-index: 1 !important;}
     .close-btn-holder {margin-left: auto;}
