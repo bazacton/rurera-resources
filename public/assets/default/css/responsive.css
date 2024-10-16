@@ -50,6 +50,9 @@ Lms Responsive Style Start
     .panel-content {
         padding-left: 110px;
     }
+    .panel-sidebar .sidebar-menu .sidenav-item {
+        justify-content: center;
+    }
     .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon {margin-right: 0 !important;}
     .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title {
         position: absolute;
