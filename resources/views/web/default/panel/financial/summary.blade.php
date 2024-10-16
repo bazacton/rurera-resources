@@ -8,8 +8,8 @@
                             <table class="table text-center custom-table">
                                 <thead>
                                 <tr>
-                                    <th class="font-16 font-weight-500">{{ trans('public.title') }}</th>
-                                    <th class="font-16 font-weight-500">Student</th>
+                                    <th class="font-16 font-weight-500 text-left">{{ trans('public.title') }}</th>
+                                    <th class="font-16 font-weight-500 text-left">Student</th>
                                     <th class="text-center font-16 font-weight-500">{{ trans('panel.amount') }} ({{ $currency }})</th>
                                     <th class="text-center font-16 font-weight-500">{{ trans('public.date') }}</th>
                                 </tr>
