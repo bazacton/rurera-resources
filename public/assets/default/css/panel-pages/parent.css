@@ -349,7 +349,7 @@ a.last-activity span strong {color: #343434;}
 .subscribe-plan .subscribe-title {text-align: center; margin: 0 0 10px;}
 .subscribe-plan .subscribe-title span {color: #807f85;}
 /*Dashboard Packages Style End*/
-.panel-content {padding: 30px 15px 30px 0; width: calc(100% - 254px); width: 100%;}
+.panel-content {padding: 30px 15px 30px 15px; width: calc(100% - 254px); width: 100%;}
 @media (max-width:991px) {
     .panel-content {padding: 30px 15px 30px;}
 }
