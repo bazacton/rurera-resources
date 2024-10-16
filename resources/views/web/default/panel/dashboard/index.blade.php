@@ -91,9 +91,11 @@
 </section>
 @if(!auth()->user()->isUser())
 <div class="dashboard-students-holder mt-30">
-    <div class="section-title text-left mt-30">
-		<h2 class="font-22">Set Work</h2>
-	</div>
+    <div class="member-card-header">
+        <div class="section-title text-left mt-30">
+            <h2 class="font-36">Set Work</h2>
+        </div>
+    </div>
 	@include('web.default.flash_message')
 	@include('web.default.panel.set_work.set_work_listing',['assignments' => $assignments])
 </div>
