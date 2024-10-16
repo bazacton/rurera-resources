@@ -186,7 +186,7 @@ span.Selectable:hover {text-decoration: underline;}
 .chart-summary-fields.result-layout-summary span.icon-box img{height: 100px;}
 .result-layout-summary .sats-summary {border-radius: 0;}
 .sats-summary-icon {padding: 30px;}
-.sats-summary-icon svg {height: 24px; width: 24px;}
+.sats-summary-icon svg, .sats-summary-icon img {height: 24px; width: 24px;}
 .summary-text .score-label {font-weight: bold; margin-top: 20px;}
 .summary-btns{ display: flex; justify-content: center; align-items: center; gap: 5rem; margin-top: 5rem;}
 .summary-btns .summary-btn {background-color: #596bfd; padding: 10px; border-radius: 6px; color: white;}
