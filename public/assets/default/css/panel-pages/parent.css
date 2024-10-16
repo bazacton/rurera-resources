@@ -515,7 +515,7 @@ a.last-activity span strong {color: #343434;}
 .lms-choose-membership:not(.heatmap-select-option .select-field input[type=radio]:checked ~ label:before) .select-field input[type=radio]:checked ~ label:before {box-shadow: 0 0 0 5px #ddd inset; }
 .lms-choose-membership .form-group input[type="password"] {background-color: #fff; height: 48px; border: 1px solid #ddd; width: 100%; padding: 11px; border-radius: 6px;}
 .lms-choose-membership .form-group .btn-field {margin: 0; text-align: right; }
-.lms-choose-membership .form-group .btn-field button {background-color: var(--primary); width: auto; padding: 12px 30px; height: auto; margin: 0; line-height: normal; display: inline-block;}
+.lms-choose-membership .form-group .btn-field button {background-color: var(--primary); width: auto; padding: 12px 30px; height: auto; margin: 0; line-height: normal; display: inline-block; color: #fff; border: 0;}
 .lms-choose-membership .plan-switch {margin-top: -2px;}
 .regenerate-emoji, .regenerate-pin {line-height: 48px; box-shadow: none; border-radius: 5px;}
 .child-register-form input:-webkit-autofill,
