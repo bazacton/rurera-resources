@@ -1,5 +1,5 @@
         <section>
-            <h2 class="section-title">{{ trans('financial.financial_documents') }}</h2>
+            <h2 class="section-title mb-30">{{ trans('financial.financial_documents') }}</h2>
 
             <div class="panel-section-card bg-white panel-border rounded-sm p-25">
                 <div class="row">
