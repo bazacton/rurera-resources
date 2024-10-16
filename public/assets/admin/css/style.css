@@ -1498,8 +1498,11 @@ table#outputTable thead th {
     padding-bottom: 15px;
 }
 #outputTable td {
-    padding-bottom: 15px;
+    padding: 0 15px 15px;
     vertical-align: top;
+}
+#outputTable td:first-child {
+    padding-left: 0;
 }
 .remove-btn {
     background-color: #ffe1e1;
