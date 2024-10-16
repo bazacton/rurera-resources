@@ -7,10 +7,10 @@ $avatar_settings = json_encode($avatar_settings);
 $avatar_color_settings = json_encode($avatar_color_settings);
 @endphp
 
-<section>
+<section class="bg-white panel-border rounded-sm p-25">
     <h2 class="section-title">{{ trans('financial.account') }}</h2>
 
-    <div class="row mt-30 test">
+    <div class="row mt-30">
 
 
         <div class="col-12 user-profile-block">
