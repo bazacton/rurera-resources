@@ -50,6 +50,9 @@ Lms Responsive Style Start
     .panel-content {
         padding-left: 110px;
     }
+    .parent-panel .panel-content {
+        padding-left: 0;
+    }
     .panel-sidebar .sidebar-menu .sidenav-item {
         justify-content: center;
     }
