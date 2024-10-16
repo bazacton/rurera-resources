@@ -58,12 +58,12 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .edit-profile-image .profile-image-btn {gap: 10px;}
 .edit-profile .form-group .icon-box img {position: absolute; top: 50%;left: 10px; margin-top: -9px; height: 18px; width: 18px;filter: invert(73%) sepia(10%) saturate(638%) hue-rotate(175deg) brightness(88%) contrast(82%);}
 .edit-profile .form-group .input-field input[type="text"],
-.edit-profile .select-field select{border: 1px solid #ddd; font-size: 16px; height: 40px; padding: 0 0 0 35px; border-radius: 5px; width: 100%; max-width: 380px;}
+.edit-profile .select-field select{border: 1px solid #ddd; font-size: 16px; height: 40px; padding: 0 0 0 35px; border-radius: 5px; width: 100%;}
 .edit-profile .form-group [class*="col-"] {padding-left: 8px; padding-right: 8px;}
 .edit-profile .form-group .row {margin: 0 -8px;}
 .edit-profile .form-group .input-field { margin-bottom: 16px; border: 0; padding: 0; height: auto; border-radius: 0; position: relative;}
 .edit-profile .form-group .input-field textarea {border: 1px solid #ddd; border-radius: 5px; padding: 10px 10px; height: 98px; width: 100%;}
-.edit-profile .select-field select {padding: 0 10px; width: 100%; color: #888; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+.edit-profile .select-field select {padding: 0 10px; color: #888; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 .lms-choose-membership .edit-profile .form-group {margin-bottom: 0;}
 .edit-profile .select-field {margin-bottom: 16px; position: relative;}
 .edit-profile .select-field:after {content: "\203A"; position: absolute; right: 0; top: 0; height: 40px; width: 40px; text-align: center; line-height: 40px; font-size: 24px; color: #94a3b8; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); pointer-events: none;}
