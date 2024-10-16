@@ -639,6 +639,9 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
     align-items: center;
     gap: 30px;
     padding-top: 0 !important;
+    padding: 0;
+    height: auto;
+    overflow: visible;
 }
 .parent-panel .panel-sidebar .sidebar-menu .sidenav-item {
     display: flex;
