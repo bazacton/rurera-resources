@@ -95,6 +95,15 @@ Lms Responsive Style Start
         margin: 0;
         transform: rotate(45deg) translateX(-50%);
     }
+    .panel-sidebar .sidebar-menu .sidenav-item:first-child .nav-sub-title {
+        bottom: auto;
+        top: 100%;
+        z-index: 1;
+    }
+    .panel-sidebar .sidebar-menu .sidenav-item:first-child .nav-sub-title:before {
+        top: -1px;
+        bottom: auto;
+    }
     }
     /* body .panel-sidebar .sidebar-menu {
         overflow: visible;
