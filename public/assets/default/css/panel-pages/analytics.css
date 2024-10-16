@@ -29,7 +29,7 @@ Sub Pages Style
   border: 1px solid #ddd;
   border-bottom: 0;
 }
-.activities-container {padding: 40px !important; background: #fff; border: #ddd solid 1px}
+.activities-container {padding: 40px !important; background: #fff; border: #ddd solid 1px; border-radius: 0 0 10px 10px;}
 .chart-filters .filters-list {margin-bottom: 20px; width: 100%;}
 .activities-container .chart-filters {padding: 15px 20px 0; border: 0;}
 .chart-filters {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; border-bottom: 2px solid #a2bad2; margin: 0 0 30px;}
