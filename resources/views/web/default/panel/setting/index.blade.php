@@ -21,29 +21,32 @@
 
 @section('content')
 
+    <div class="row">
+        <div class="col-lg6 col-md-6 col-12 mx-auto">
+            <form method="post" id="userSettingForm" class="mt-10 userSettingForm" action="{{ (!empty($new_user)) ? '/panel/manage/'. $user_type .'/new' : '/panel/setting' }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="step" value="{{ !empty($currentStep) ? $currentStep : 1 }}">
+                <input type="hidden" name="next_step" value="0">
 
-    <form method="post" id="userSettingForm" class="mt-10 userSettingForm" action="{{ (!empty($new_user)) ? '/panel/manage/'. $user_type .'/new' : '/panel/setting' }}">
-        {{ csrf_field() }}
-        <input type="hidden" name="step" value="{{ !empty($currentStep) ? $currentStep : 1 }}">
-        <input type="hidden" name="next_step" value="0">
+                @if(!empty($organization_id))
+                    <input type="hidden" name="organization_id" value="{{ $organization_id }}">
+                    <input type="hidden" id="userId" name="user_id" value="{{ $user->id }}">
+                @endif
 
-        @if(!empty($organization_id))
-            <input type="hidden" name="organization_id" value="{{ $organization_id }}">
-            <input type="hidden" id="userId" name="user_id" value="{{ $user->id }}">
-        @endif
+                @if(!empty($new_user) or (!empty($currentStep) and $currentStep == 1))
+                    @if(auth()->user()->isUser())
+                        @include('web.default.panel.setting.setting_includes.basic_information')
+                    @else
+                        @include('web.default.panel.setting.setting_includes.parent_profile')
+                    @endif
+                @endif
+                @if(!auth()->user()->isUser())
+                    @include('web.default.panel.financial.summary')
+                @endif
 
-        @if(!empty($new_user) or (!empty($currentStep) and $currentStep == 1))
-			@if(auth()->user()->isUser())
-				@include('web.default.panel.setting.setting_includes.basic_information')
-			@else
-				@include('web.default.panel.setting.setting_includes.parent_profile')
-			@endif
-        @endif
-		@if(!auth()->user()->isUser())
-			@include('web.default.panel.financial.summary')
-		@endif
-
-    </form>
+            </form>
+        </div>
+    </div>
 
     <div class="create-webinar-footer d-flex align-items-center justify-content-between mt-20 pt-15 border-top">
 
