@@ -87,13 +87,14 @@ Lms Responsive Style Start
     .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title:before {
         position: absolute;
         left: 50%;
-        top: 0;
+        bottom: -7px;
         height: 8px;
         width: 8px;
         content: "";
         background-color: #000;
         margin: 0;
         transform: rotate(45deg) translateX(-50%);
+    }
     }
     /* body .panel-sidebar .sidebar-menu {
         overflow: visible;
