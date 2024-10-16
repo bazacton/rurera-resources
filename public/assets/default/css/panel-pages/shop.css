@@ -224,6 +224,7 @@ Lms Product Card Style Start
 .product-card.medium .image-box .image-box__a {height: auto; width: 100%;}
 .product-card.medium .image-box img {border-radius: 0;}
 /* Product Medium Card Style End */
+.field-holder {position: relative;}
 .products-top-header.lms-call-to-action button {height: 50px;}
 .products-top-header.lms-call-to-action input[type="text"] {height: 50px; padding-right: 85px !important; width: 100%; border: 0;}
 .products-top-header.lms-call-to-action button[type="submit"] {position: absolute; right: 0; border: 0; color: #fff; padding: 0 15px; top: 0; background-color: var(--primary); border-radius: 0; margin-top: 0;}
