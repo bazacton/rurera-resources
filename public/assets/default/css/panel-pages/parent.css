@@ -619,7 +619,8 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     padding: 0 0 15px;
-    width: 100%;
+    width: 100% !important;
+    position: relative !important;
 }
 .parent-panel .panel-sidebar > .container {
     display: flex;
