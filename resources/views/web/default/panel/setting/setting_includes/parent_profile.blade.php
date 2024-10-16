@@ -157,7 +157,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-12 mx-auto">
+                    <div class="col-lg-6 col-md-12 col-12">
                         <div class="edit-profile-content-holder tab-content" id="myTabContent">
                             <div class="edit-profile-content panel-border bg-white rounded-sm p-25 tab-pane fade show active" id="edit-profile" role="tabpanel" aria-labelledby="edit-profile-tab">
                                 <!-- <div class="edit-profile-top d-flex align-items-center flex-wrap justify-content-between mb-50">
