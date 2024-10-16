@@ -90,11 +90,13 @@
 
 </section>
 @if(!auth()->user()->isUser())
-	<div class="section-title text-left mt-30">
+<div class="dashboard-students-holder">
+    <div class="section-title text-left mt-30">
 		<h2 class="font-22">Set Work</h2>
 	</div>
 	@include('web.default.flash_message')
 	@include('web.default.panel.set_work.set_work_listing',['assignments' => $assignments])
+</div>
 @endif
 @if(auth()->user()->isUser())
 	
