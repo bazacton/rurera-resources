@@ -1498,6 +1498,7 @@ table#outputTable thead th {
 }
 #outputTable td {
     padding-bottom: 15px;
+    vertical-align: top;
 }
 .remove-btn {
     background-color: #ffe1e1;
