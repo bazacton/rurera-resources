@@ -1,7 +1,7 @@
         <section>
             <h2 class="section-title">{{ trans('financial.financial_documents') }}</h2>
 
-            <div class="panel-section-card py-20">
+            <div class="panel-section-card bg-white panel-border rounded-sm p-25">
                 <div class="row">
                     <div class="col-12">
                         <div class="table-responsive transactions-table">
