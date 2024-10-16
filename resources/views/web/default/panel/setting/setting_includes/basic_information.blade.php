@@ -80,7 +80,7 @@ if( !empty( $emojisArray ) ){
         margin: 0 0 50px;
     }
 </style>
-<section>
+<section class="panel-border rounded-sm bg-white p-25">
     <h2 class="section-title">{{ trans('financial.account') }}</h2>
 
     <div class="row mt-30">
