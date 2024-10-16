@@ -68,6 +68,21 @@ Lms Products Top Header Style Start
 .education-icon-box li:nth-child(5) figure {width: 50px;height: 50px;}
 .education-icon-box li:nth-child(4) figure {width: 100px;height: 100px;}
 .education-icon-box li:nth-child(6) {left: 120px;top: -70px;}
+.panel-content .search-top-banner {padding: 25px 25px 0 !important; min-height: auto;}
+.panel-content .education-icon-box li:nth-child(1) {left: -38px; top: 15px; }
+.panel-content .education-icon-box li:nth-child(2) {left: 10px; top: -25px; }
+.panel-content .education-icon-box li:nth-child(3) {left: 0px; top: 50px;}
+.panel-content .education-icon-box li:nth-child(4) {left: 125px; top: 30px; }
+.panel-content .education-icon-box li:nth-child(5) {left: 70px; top: 30px;}
+.panel-content .education-icon-box li:nth-child(6) {left: 85px; top: -40px;}
+.panel-content .lms-call-to-action button {min-width: auto; padding: 0 30px;}
+.panel-content .lms-call-to-action input[type="text"] {width: 100%;}
+.panel-content .lms-setup-progress ul {flex-wrap: wrap; gap: 10px;}
+.panel-content .education-icon-box li figure {width: 70px; height: 70px;}
+.panel-content .education-icon-box li:nth-child(1) figure {width: 50px; height: 50px;}
+.panel-content .education-icon-box li:nth-child(5) figure {width: 50px; height: 50px;}
+.panel-content .lms-setup-progress {width: 100%; }
+.panel-content .products-top-header .banner-holder {margin-top: 0;}
 /*********
 Lms Products Top Header Style End
 *******/
