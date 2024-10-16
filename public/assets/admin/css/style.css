@@ -1507,4 +1507,8 @@ table#outputTable thead th {
     font-size: 14px;
     border-radius: 3px;
 }
+.card-body:has(#outputTable) .text-right:has(button) {
+    margin-bottom: 30px;
+    text-align: left !important;
+}
 /*Topics Parts Create Output Table End*/
