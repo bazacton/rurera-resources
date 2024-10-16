@@ -77,6 +77,10 @@ Lms Responsive Style Start
     .sidebar-menu-holder {
         height: 100vh;
     }
+    .panel-sidebar .sidebar-menu {
+        padding-bottom: 15px;
+        padding-left: 10px;
+    }
     .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title:before {
         position: absolute;
         left: 50%;
