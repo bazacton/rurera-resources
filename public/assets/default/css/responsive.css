@@ -110,20 +110,14 @@ Lms Responsive Style Start
         top: -1px;
         bottom: auto;
     }
-
-    /* body .panel-sidebar .sidebar-menu {
-        overflow: visible;
-    } */
     /* ===== Scrollbar CSS ===== */
 
     .panel-sidebar .sidebar-menu::-webkit-scrollbar {
         width: 10px;
     }
-
     .panel-sidebar .sidebar-menu::-webkit-scrollbar-track {
         background: #fff;
     }
-
     .panel-sidebar .sidebar-menu::-webkit-scrollbar-thumb {
         background-color: #f4f4f4;
         border-radius: 0;
@@ -144,6 +138,7 @@ Lms Responsive Style Start
     .job-singup-sub-header h1 {font-size: 3rem !important;}
     .job-singup-sub-header h2 {font-size: 1.5rem !important;}
     .navbar1 {padding-left: 0; padding-right: 0;}
+    .db-members .rurera-tabs-frontend {margin-bottom: 30px;}
 }
 @media screen and (min-width: 992px) and (max-width: 1300px) {
     .stats-list ul li {border-left: 0;width: 100%;padding: 0 0 15px;margin: 0 0 15px;text-align: left;border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
