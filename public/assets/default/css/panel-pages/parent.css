@@ -619,6 +619,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     padding: 0 0 15px;
+    width: 100%;
 }
 .parent-panel .panel-sidebar > .container {
     display: flex;
@@ -630,6 +631,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-direction: row;
 }
 .parent-panel .panel-sidebar .sidebar-menu {
     display: flex;
@@ -643,6 +645,11 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
     align-items: center;
     position: relative;
     padding: 0;
+}
+@media screen and (min-width: 992px) and (max-width: 1600px) {
+    .parent-panel .sidebar-menu-holder {
+        height: auto;
+    }
 }
 /* Full  Menu For Parent Style End */
 
