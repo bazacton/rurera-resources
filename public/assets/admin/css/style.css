@@ -1340,7 +1340,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .populated-data .questions-select-number input:checked ~ label {background-color: #f3f3f3; color: #000;}
 .populated-data .ui-widget.ui-widget-content {margin-top: 15px;}
 .select2-container--default .select2-selection--single {background-color: #fdfdff; border-color: #e4e6fc;}
-.populated-data .form-control {background-color: inherit; border-color: #ced4da; border-radius: 4px !important; -webkit-appearance: none; -moz-appearance: none; text-indent: 1px; text-overflow: ''; }
+.populated-data .form-control {background-color: inherit; border-color: #ced4da; border-radius: 4px !important; appearance: none; -webkit-appearance: none; -moz-appearance: none; text-indent: 1px; text-overflow: ''; }
 .populated-data .select2-selection--single,
 .populated-data .select2-container--default .select2-selection--multiple {background-color: #fff; border-color: #ced4da;}
 .populated-data .select2-container--default .select2-selection--single .select2-selection__arrow b {border: 0; }
