@@ -1516,4 +1516,7 @@ table#outputTable thead th {
     margin-bottom: 30px;
     text-align: left !important;
 }
+.modal-open .modal{
+    padding-right: 0 !important;
+}
 /*Topics Parts Create Output Table End*/
