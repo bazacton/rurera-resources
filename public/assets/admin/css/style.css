@@ -1519,4 +1519,11 @@ table#outputTable thead th {
 .modal-open .modal{
     padding-right: 0 !important;
 }
+.modal-footer {
+    justify-content: flex-start;
+    align-items: center;
+}
+.card-body .modal-footer .text-right:has(button) {
+    margin-bottom: 0;
+}
 /*Topics Parts Create Output Table End*/
