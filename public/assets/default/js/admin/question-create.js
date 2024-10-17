@@ -1244,6 +1244,9 @@ function _rureraform_properties_prepare(_object) {
                 case 'text-number':
                     html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-number'><input type='text' name='rureraform-" + key + "' id='rureraform-" + key + "' value='" + rureraform_escape_html(properties[key]) + "' placeholder='' /></div></div></div>";
                     break;
+					
+					
+					
 
                 case 'checkbox':
                     selected = "";
@@ -1251,6 +1254,9 @@ function _rureraform_properties_prepare(_object) {
                         selected = " checked='checked'";
                     html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><input class='rureraform-checkbox-toggle' type='checkbox' value='off' name='rureraform-" + key + "' id='rureraform-" + key + "'" + selected + "' /><label for='rureraform-" + key + "'></label></div></div>";
                     break;
+					
+					
+					
 
                 case 'select':
                     options = "";
@@ -1663,9 +1669,9 @@ function _rureraform_properties_prepare(_object) {
 						if(DataIsEmpty(properties[key][j]["label"])){
 							continue;
 						}
-                        options += "<div class='rureraform-properties-options-item" + selected + "'><div class='rureraform-properties-options-table'><div><input class='rureraform-properties-options-label' type='text' value='" + rureraform_escape_html(properties[key][j]["label"]) + "' placeholder='Label'></div><div class='rureraform-image-url rurera-image-depend'><div class='input-group-prepend'><button type='button' class='input-group-text admin-file-manager' data-input='image-" + key + "-" + j + "' data-preview='holder'><i class='fa fa-upload'></i></button></div><input class='rureraform-properties-options-image' type='text' id='image-" + key + "-" + j + "' value='" + rureraform_escape_html(image_url) + "' placeholder='Upload Image'><span><i class='far fa-image'></i></span></div><div class='lms-hide'><input class='rureraform-properties-options-value' type='text' value='" + rureraform_escape_html(properties[key][j]["value"]) + "' placeholder='Value'></div><div><span onclick='return rureraform_properties_options_default(this);' title='Set the option as correct value'><i class='fas fa-check'></i></span><span onclick='return rureraform_properties_options_new(this);' title='Add the option after this one'><i class='fas fa-plus'></i></span><span onclick='return rureraform_properties_options_copy(this);' title='Duplicate the option'><i class='far fa-copy'></i></span><span onclick='return rureraform_properties_options_delete(this);' title='Delete the option'><i class='fas fa-trash-alt'></i></span><span title='Move the option'><i class='fas fa-arrows-alt rureraform-properties-options-item-handler'></i></span></div></div></div>";
+                        options += "<div class='rureraform-properties-options-item" + selected + "'><div class='rureraform-properties-options-table'><div><input class='rureraform-properties-options-label' type='text' value='" + rureraform_escape_html(properties[key][j]["label"]) + "' placeholder='Label'></div><div class='rureraform-image-url rurera-image-depend'><div class='input-group-prepend'><button type='button' class='input-group-text admin-file-manager' data-input='image-" + key + "-" + j + "' data-preview='holder'><i class='fa fa-upload'></i></button></div><input class='rureraform-properties-options-image' type='text' id='image-" + key + "-" + j + "' value='" + rureraform_escape_html(image_url) + "' placeholder='Upload Image'><span><i class='far fa-image'></i></span></div><div class='rurera-hide'><input class='rureraform-properties-options-value' type='text' value='" + rureraform_escape_html(properties[key][j]["value"]) + "' placeholder='Value'></div><div><span onclick='return rureraform_properties_options_default(this);' title='Set the option as correct value'><i class='fas fa-check'></i></span><span onclick='return rureraform_properties_options_copy(this);' title='Duplicate the option'><i class='far fa-copy'></i></span><span onclick='return rureraform_properties_options_delete(this);' title='Delete the option'><i class='fas fa-trash-alt'></i></span><span title='Move the option'><i class='fas fa-arrows-alt rureraform-properties-options-item-handler'></i></span></div></div></div>";
                     }
-                    html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content rureraform-properties-image-options-table'><div class='rureraform-properties-options-table-header'><div>Label</div><div class='rurera-image-depend'>Image</div><div class='lms-hide'>Value</div><div></div></div><div class='rureraform-properties-options-box'><div class='rureraform-properties-options-container' data-multi='" + (properties.type == "radio" ? "off" : "on") + "'>" + options + "</div></div><div class='rureraform-properties-options-table-footer'><a class='rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small' href='#' onclick='return rureraform_properties_options_new(null);'><i class='fas fa-plus'></i><label>Add option</label></a></div></div></div>";
+                    html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content rureraform-properties-image-options-table'><div class='rureraform-properties-options-table-header'><div>Label</div><div class='rurera-image-depend'>Image</div><div class='rurera-hide'>Value</div><div></div></div><div class='rureraform-properties-options-box'><div class='rureraform-properties-options-container' data-multi='" + (properties.type == "radio" ? "off" : "on") + "'>" + options + "</div></div><div class='rureraform-properties-options-table-footer'><a class='rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small' href='#' onclick='return rureraform_properties_options_new(null);'><i class='fas fa-plus'></i><label>Add option</label></a></div></div></div>";
                     break;
 
                 case 'sortable-options':
@@ -1944,9 +1950,23 @@ function _rureraform_properties_prepare(_object) {
             },
             callbacks: {
                 onPaste: function (e) {
-                    var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
                     e.preventDefault();
-                    document.execCommand('insertText', false, bufferText);
+
+                    var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
+                    var pastedData = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
+
+                    // Create a temporary DOM element to parse the HTML
+                    var tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = pastedData;
+
+                    // Remove all inline styles from elements
+                    var elements = tempDiv.querySelectorAll('[style]');
+                    elements.forEach(function (element) {
+                        element.removeAttribute('style');
+                    });
+
+                    // Insert the cleaned content
+                    document.execCommand('insertHTML', false, tempDiv.innerHTML);
                 }
             }
         });
@@ -3250,14 +3270,17 @@ function rureraform_properties_options_new(_object, thisObj = null, options_type
         media_frame.open();
     });
     rureraform_element_properties_data_changed = true;
+		have_images_function();
     return false;
 }
 
 function rureraform_properties_options_item_get(_label, _value, _selected) {
     var html, selected = "";
+	var key = Math.floor((Math.random() * 99999) + 1);
+	var j = Math.floor((Math.random() * 99999) + 1);
     if (_selected)
         selected = " rureraform-properties-options-item-default";
-    html = "<div class='rureraform-properties-options-item" + selected + "'><div class='rureraform-properties-options-table'><div><input class='rureraform-properties-options-label' type='text' value='" + rureraform_escape_html(_label) + "' placeholder='Label'></div><div><input class='rureraform-properties-options-value' type='text' value='" + rureraform_escape_html(_value) + "' placeholder='Value'></div><div><span onclick='return rureraform_properties_options_default(this);' title='Set the option as a default value'><i class='fas fa-check'></i></span><span onclick='return rureraform_properties_options_new(this);' title='Add the option after this one'><i class='fas fa-plus'></i></span><span onclick='return rureraform_properties_options_copy(this);' title='Duplicate the option'><i class='far fa-copy'></i></span><span onclick='return rureraform_properties_options_delete(this);' title='Delete the option'><i class='fas fa-trash-alt'></i></span><span title='Move the option'><i class='fas fa-arrows-alt rureraform-properties-options-item-handler'></i></span></div></div></div>";
+    html = "<div class='rureraform-properties-options-item" + selected + "'><div class='rureraform-properties-options-table'><div><input class='rureraform-properties-options-label' type='text' value='" + rureraform_escape_html(_label) + "' placeholder='Label'></div><div class='rureraform-image-url rurera-image-depend'><div class='input-group-prepend'><button type='button' class='input-group-text admin-file-manager' data-input='image-" + key + "-" + j + "' data-preview='holder'><i class='fa fa-upload'></i></button></div><input class='rureraform-properties-options-image' id='image-" + key + "-" + j + "' type='text' value='' placeholder='Upload Image'><span><i class='far fa-image'></i></span></div><div><input class='rureraform-properties-options-value rurera-hide' type='text' value='" + rureraform_escape_html(_value) + "' placeholder='Value'></div><div><span onclick='return rureraform_properties_options_default(this);' title='Set the option as a default value'><i class='fas fa-check'></i></span><span onclick='return rureraform_properties_options_copy(this);' title='Duplicate the option'><i class='far fa-copy'></i></span><span onclick='return rureraform_properties_options_delete(this);' title='Delete the option'><i class='fas fa-trash-alt'></i></span><span title='Move the option'><i class='fas fa-arrows-alt rureraform-properties-options-item-handler'></i></span></div></div></div>";
     return html;
 }
 function rureraform_properties_options_markings_item_get(_label, _value, _selected) {
@@ -3285,7 +3308,7 @@ function rureraform_properties_options_label_item_get(_label, _selected) {
     var html, selected = "";
     if (_selected)
         selected = " rureraform-properties-options-item-default";
-    html = "<div class='rureraform-properties-options-item" + selected + "'><div class='rureraform-properties-options-table'><div><input class='rureraform-properties-options-label' type='text' value='" + rureraform_escape_html(_label) + "' placeholder='Label'></div><div><span onclick='return rureraform_properties_options_default(this);' title='Set the option as a default value'><i class='fas fa-check'></i></span><span onclick='return rureraform_properties_options_new(this);' title='Add the option after this one'><i class='fas fa-plus'></i></span><span onclick='return rureraform_properties_options_copy(this);' title='Duplicate the option'><i class='far fa-copy'></i></span><span onclick='return rureraform_properties_options_delete(this);' title='Delete the option'><i class='fas fa-trash-alt'></i></span><span title='Move the option'><i class='fas fa-arrows-alt rureraform-properties-options-item-handler'></i></span></div></div></div>";
+    html = "<div class='rureraform-properties-options-item" + selected + "'><div class='rureraform-properties-options-table'><div><input class='rureraform-properties-options-label' type='text' value='" + rureraform_escape_html(_label) + "' placeholder='Label'></div><div><span onclick='return rureraform_properties_options_default(this);' title='Set the option as a default value'><i class='fas fa-check'></i></span><span onclick='return rureraform_properties_options_copy(this);' title='Duplicate the option'><i class='far fa-copy'></i></span><span onclick='return rureraform_properties_options_delete(this);' title='Delete the option'><i class='fas fa-trash-alt'></i></span><span title='Move the option'><i class='fas fa-arrows-alt rureraform-properties-options-item-handler'></i></span></div></div></div>";
     return html;
 }
 
@@ -5200,6 +5223,7 @@ function rureraform_bulk_options_add() {
         }
         jQuery(rureraform_bulk_options_object).find(".rureraform-properties-options-container").append(html);
     }
+	have_images_function();
     rureraform_element_properties_data_changed = true;
     rureraform_bulk_options_close();
 }
@@ -9874,8 +9898,9 @@ $(document).on('keyup focus blur change', '.draggable_options_label .rureraform-
 	console.log('draggable-run');
 	$(this).closest('.rureraform-admin-popup-inner').find('.inner_select_fields').find('select').html(options_response);
 });
-
+$(document).ready(function() {
 $(document).on('click', '.generate-question-code', function () {
+	console.log('generated-question-code-function');
     update_content_data();
     var thisParentObj = $(this).closest('.rureraform-admin-popup-inner');
     var editorObj = thisParentObj.find(".note-editable");
@@ -9932,6 +9957,10 @@ $(document).on('click', '.generate-question-code', function () {
     //console.log(question_fields_obj);
     //console.log(editorObj.html());
 });
+});
+
+	
+	
 
 function pasteHtmlAtCaret(html) {
     var sel, range;
