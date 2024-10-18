@@ -225,6 +225,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 				return_data.attempted_questions = attempted_questions;
 				return_data.correct_questions = correct_questions;
 				return_data.incorrect_questions = incorrect_questions;
+
 				afterQuestionValidation(return_data, thisForm, question_id, thisBlock);
 			}
 			
@@ -878,14 +879,27 @@ function init_question_functions() {
 	
 	
 	$("body").on('click', '.questions-nav-controls .next-btn', function (e) {
-		$(".question-area-block").find('.show-notifications').html('');
-		$('.rurera-question-block.active').removeClass('active').next().addClass('active');
-		$(this).addClass('rurera-hide');
-		$('.question-next-btn').addClass('rurera-hide');
-		$('.question-submit-btn').removeClass('rurera-hide');
+		console.log('next=========='+$('.rurera-question-block.active').next('.rurera-question-block').length);
+		if( $('.rurera-question-block.active').next('.rurera-question-block').length > 0){
+			$(".question-area-block").find('.show-notifications').html('');
+			$('.rurera-question-block.active').removeClass('active').next().addClass('active');
+			$(this).addClass('rurera-hide');
+			$('.question-next-btn').addClass('rurera-hide');
+			$('.question-submit-btn').removeClass('rurera-hide');
+		}
 	});
 	
-    $("body").on('click', '.quiz-pagination ul li, .questions-nav-controls .prev-btn, .questions-nav-controls .next-btn1', function (e) {
+	$("body").on('click', '.questions-nav-controls .prev-btn', function (e) {
+		console.log('prev=========='+$('.rurera-question-block.active').prev('.rurera-question-block').length);
+		if( $('.rurera-question-block.active').prev('.rurera-question-block').length > 0){
+			$(".question-area-block").find('.show-notifications').html('');
+			$('.rurera-question-block.active').removeClass('active').prev().addClass('active');
+			$(this).addClass('rurera-hide');
+			$('.question-submit-btn').removeClass('rurera-hide');
+		}
+	});
+	
+    $("body").on('click', '.quiz-pagination ul li, .questions-nav-controls .prev-btn1, .questions-nav-controls .next-btn1', function (e) {
 
         if ($(this).hasClass('disable-btn')) {
             return;
