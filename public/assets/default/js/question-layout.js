@@ -77,7 +77,6 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
     question_submit_process = true;
     returnType = rurera_validation_process(thisForm);
 	
-	returnType = false;
 
     if( rurera_is_field(bypass_validation) && bypass_validation == 'yes' ){
         returnType = true;
@@ -100,8 +99,8 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
         clearInterval(Questioninterval);
     }
 
-    //rurera_loader($(this), 'div');
-	question_submit_process = false;
+    rurera_loader($(this), 'div');
+	//question_submit_process = false;
 
     var quiz_type = $(".question-area-block").attr('data-type');
     if (!rurera_is_field(quiz_type)) {
@@ -544,6 +543,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 
             }
         }
+		rurera_remove_loader(thisObj);
 		question_submit_process = false;
         }
     });
