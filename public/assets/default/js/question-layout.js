@@ -543,7 +543,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 
             }
         }
-		rurera_remove_loader(thisObj);
+		rurera_remove_loader(thisObj, 'div');
 		question_submit_process = false;
         }
     });
