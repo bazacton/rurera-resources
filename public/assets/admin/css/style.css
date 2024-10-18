@@ -633,7 +633,7 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
 .btn-success.disabled:focus, .btn-success.disabled:active {background-color: #3bb557 !important; color: #fff !important;}
 .btn-outline-success:hover, .btn-outline-success:focus, .btn-outline-success:active, .btn-outline-success.disabled:hover, 
 .btn-outline-success.disabled:focus, .btn-outline-success.disabled:active {background-color: #47c363 !important; color: #fff !important;}
-/* .btn-danger, .btn-danger.disabled {box-shadow: 0 2px 6px #fd9b96; background-color: #fc544b; border-color: #fc544b; color: #fff;} */
+.btn-danger, .btn-danger.disabled {box-shadow: 0 2px 6px #fd9b96; background-color: #fc544b; border-color: #fc544b; color: #fff;}
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled:active {background-color: #fb160a !important;}
 .btn-outline-danger:hover, .btn-outline-danger:focus, .btn-outline-danger:active, .btn-outline-danger.disabled:hover, 
 .btn-outline-danger.disabled:focus, .btn-outline-danger.disabled:active {background-color: #fb160a !important; color: #fff !important; }
