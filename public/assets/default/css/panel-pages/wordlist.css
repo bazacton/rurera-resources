@@ -282,6 +282,35 @@ body:has(.sentences-block) footer.footer.footer-home {display: none;}
 .output ::-webkit-input-placeholder {color: white; text-align: center; font-size: 1em;}
 /* Vertical Keyboard Style End */
 
+/* Spell Words popup Style Start */
+.modal.lms-choose-membership {padding-left: 0 !important; padding-right: 0 !important;}
+.modal.lms-choose-membership:has(.wizard-steps) {overflow: hidden;}
+.modal.lms-choose-membership:has(.wizard-steps) .modal-body {padding-left: 0; padding-right: 0; padding-top: 30px; overflow: hidden; overflow-y: auto;}
+.lms-choose-membership .modal-dialog {max-width: 100%; margin: 0;}
+.lms-choose-membership .modal-header{border-bottom: 0;}
+.lms-choose-membership .book-detail {text-align: center;}
+.lms-choose-membership .modal-dialog {height: 100%;}
+.lms-choose-membership .modal-content {background-color: #fafafa; border: 0; position: relative; box-shadow: none; border-radius: 0; /*height: 100%;*/}
+.lms-choose-membership:has(.form-login-reading) .modal-content,
+.lms-choose-membership .modal-content:has(.subscription-content) {height: 100%;}
+.lms-choose-membership .modal-body{background-color: #fafafa; padding: 0 25px 0;}
+.lms-choose-membership .modal-body .nav-link {width: 300px; margin: 25px auto;height: 60px;line-height: 44px; font-size: 18px;font-weight: bold; text-transform: capitalize;}
+.lms-choose-membership .book-form {margin: 0 auto;}
+.lms-choose-membership .form-group{margin-bottom: 15px; position: relative;}
+.lms-choose-membership .input-field {border: 0;border-radius: 0;background: none;padding: 0;height: auto;width: 100%;position: relative;}
+.lms-choose-membership .input-field input[type="text"],
+.lms-choose-membership .select-box select,
+.lms-choose-membership .payment-options-holder {max-width: 80%; margin: 0 auto;}
+.lms-choose-membership .discount-code-block input[type="text"] {background-color: #fff; border: 1px solid #ddd;}
+.lms-choose-membership .discount-code-block .nav-link {width: auto; background-color: inherit; border-radius: 5px !important; box-shadow: none; color: var(--primary); border: 1px solid var(--primary); text-align: center; height: 52px; line-height: 30px; position: relative; margin-top: 30px; font-weight: 500; margin-bottom: 0; }
+.lms-choose-membership .discount-code-block .nav-link:after {content: "\2192"; display: inline-block; font-weight: 500; font-size: 24px; vertical-align: middle; margin-left: 10px;}
+.lms-choose-membership .discount-code-block p {margin: 0 0 10px; color: var(--primary); font-weight: 500;}
+.lms-choose-membership .book-form > .row,
+.lms-choose-membership .book-form > .row > [class*="col-"] .row {margin-left: -8px; margin-right: -8px;}
+.lms-choose-membership .book-form > .row > [class*="col-"],
+.lms-choose-membership .book-form > .row > [class*="col-"] .row [class*="col-"] {padding-left: 8px; padding-right: 8px;}
+/* Spell Words popup Style End */
+
 /*****************************
  Word Lists Page | Student Panel Style End
 *****************************/
