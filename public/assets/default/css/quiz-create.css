@@ -662,7 +662,7 @@ scrollbar-gutter: stable both-edges;
 .quiz-topbar .close-btn {min-width: 45px; min-height: 45px; border: 0;}
 /*Quiz Top-Bar Style End*/
 
-/*Quiz Read Content Style Start*/
+/*Quistions Type Content Default Style Start*/
 .learning-page .learning-page-content {background-color: #fff;}
 .question-review-required {font-size: 12px; background-color: #fff0f0; line-height: normal; color: crimson; box-shadow: 0 0 0 1px rgba(240,38,38,0.2) inset; padding: 6px 15px; border-radius: 3px; display: inline-flex; white-space: nowrap; gap: 15px; margin-bottom: 10px;}
 .question-layout .question-review-required {
@@ -693,7 +693,7 @@ scrollbar-gutter: stable both-edges;
 	height: calc(100vh - 105px);
     padding-top: 50px;
 }
-/*Quiz Read Content Style End*/
+/*Quistions Type Content Default Style End*/
 /*Inactivity Modal on quiz layout page start*/
 .activity-scores {margin: 0 0 30px;}
 .activity-scores li,
@@ -716,9 +716,7 @@ scrollbar-gutter: stable both-edges;
 .activity-actions .continue-btn {background-color: #29a746; min-width: auto; border-radius: 3px; margin-right: 0;}
 /*Inactivity Modal on quiz layout page end*/
 
-/************************************ 
-pagination Learn Practice Style Start
-*************************************/
+/*pagination Learn Practice Style Start*/
 .quiz-pagination {position: relative; padding: 0 30px; margin: 0; max-width: 600px; }
 .quiz-pagination .swiper-container {margin-top: -8px; padding: 8px 2px 4px;}
 .quiz-pagination .swiper-button-next,
@@ -750,9 +748,7 @@ pagination Learn Practice Style Start
 .quiz-pagination .has-flag a:before {content: ""; position: absolute; top: -20px; height: 25px; width: 25px; left: 50%; transform: translateX(-50%); background: url(../../default/svgs/pagination-flag.svg) no-repeat; background-size: contain; margin-left: 3px; filter: invert(32%) sepia(11%) saturate(2395%) hue-rotate(195deg) brightness(92%) contrast(84%);}
 .assignment-questions-preview .quiz-pagination .swiper-container ul {flex-wrap: wrap;}
 .assignment-questions-preview .quiz-pagination .swiper-container li {margin: 6px 6px 0 0; width: 25px; max-width: 25px;}
-/************************************ 
-pagination Learn Practice Style End
-*************************************/
+/* pagination Learn Practice Style End */
 /* Quiz Status Bar Style */
 .quiz-status-bar {margin: 0 0 50px; padding-top: 30px;}
 .container-fluid.read-quiz-content .quiz-status-bar {margin-top: 18px;}
