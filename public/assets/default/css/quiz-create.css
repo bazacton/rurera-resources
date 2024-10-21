@@ -678,6 +678,7 @@ scrollbar-gutter: stable both-edges;
 }
 .learning-page .learning-content {
 	height: calc(100vh - 105px);
+    padding-top: 50px;
 }
 /*Quiz Read Content Style End*/
 /*Inactivity Modal on quiz layout page start*/
