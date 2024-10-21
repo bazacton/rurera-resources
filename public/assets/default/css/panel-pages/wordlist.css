@@ -294,7 +294,7 @@ body:has(.sentences-block) footer.footer.footer-home {display: none;}
 .spell_words_popup .modal-logo {padding: 20px 25px 0; }
 .spell_words_popup .modal-logo img {height: 50px; width: 50px; object-fit: contain;}
 .spell_words_popup .modal-dialog {height: 100%;}
-.spell_words_popup .modal-content {background-color: #fafafa; border: 0; position: relative; box-shadow: none; border-radius: 0; /*height: 100%;*/}
+.spell_words_popup .modal-content {background-color: #fafafa; border: 0; position: relative; box-shadow: none; border-radius: 0; height: 100%;}
 .spell_words_popup:has(.form-login-reading) .modal-content,
 .spell_words_popup .modal-content:has(.subscription-content) {height: 100%;}
 .spell_words_popup .modal-body .nav-link {width: 300px; margin: 25px auto;height: 60px;line-height: 44px; font-size: 18px;font-weight: bold; text-transform: capitalize;}
