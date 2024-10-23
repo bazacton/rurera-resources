@@ -18,13 +18,23 @@
     <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="/assets/default/vendors/toast/jquery.toast.min.css">
     <link rel="stylesheet" href="/assets/default/vendors/simplebar/simplebar.css">
+	<link rel="stylesheet" href="/assets/default/css/panel-pages/left-menu.css?ver={{$rand_no}}">
 	<link rel="stylesheet" href="/assets/default/css/common.css?ver={{$rand_no}}">
-    <link rel="stylesheet" href="/assets/default/css/panel.css?ver={{$rand_no}}">
     <link rel="stylesheet" href="/assets/vendors/jquerygrowl/jquery.growl.css">
     <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/assets/default/css/responsive.css">
 
+	@if(auth()->check() && auth()->user()->isParent())
+		<link rel="stylesheet" href="/assets/default/css/panel-pages/parent.css?ver={{$rand_no}}">
+	@endif
+	
+	@if (isset( $cssFiles ) && !empty($cssFiles))
+        @foreach ($cssFiles as $cssFile)
+            <link rel="stylesheet" href="{{ asset($cssFile) }}">
+        @endforeach
+    @endif
+	
     @stack('styles_top')
+    <link rel="stylesheet" href="/assets/default/css/responsive.css">
     @stack('scripts_top')
 
     <style>
@@ -72,7 +82,6 @@
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-4 panel-right-sidebar">
                         <div class="row">
-                            
                             <div class="col-12 col-lg-12">
 
                                 @include(getTemplate(). '.panel.includes.user_top_bar')
@@ -148,7 +157,6 @@
                                 </div>
                                 @endif
                             </div>
-                            
 							
 							@if(auth()->user()->isUser())
 							<div class="col-12 col-lg-12 mb-30">
