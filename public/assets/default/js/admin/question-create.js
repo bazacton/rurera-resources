@@ -6575,7 +6575,9 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 				case "question_label_sequence_template":
 				case "question_label_select_template":
 				case "question_label_matching_template":
-                    html += "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'><div class='question-label'><span>" + rureraform_form_elements[i]["content"] + "</span></div></div>";
+				
+					var label_type = rureraform_form_elements[i]["label_type"];
+                    html += "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'><div class='question-label " + label_type + "'><span>" + rureraform_form_elements[i]["content"] + "</span></div></div>";
                     console.log(html);
                     break;
 
