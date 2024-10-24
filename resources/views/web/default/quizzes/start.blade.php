@@ -12,7 +12,6 @@ $is_new = isset( $is_new )? $is_new : 'no';
 <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
 <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="/assets/default/css/quiz-layout.css?ver={{$rand_id}}">
 <link rel="stylesheet" href="/assets/default/css/quiz-create-frontend.css?var={{$rand_id}}">
 
 <style>

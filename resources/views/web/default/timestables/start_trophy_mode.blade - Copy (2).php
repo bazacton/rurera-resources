@@ -7,7 +7,6 @@ $rand_id = rand(99,9999);
 @endphp
 
 @push('styles_top')
-<link rel="stylesheet" href="/assets/default/css/quiz-layout.css?ver={{$rand_id}}">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width">

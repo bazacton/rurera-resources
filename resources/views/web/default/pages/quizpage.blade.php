@@ -7,7 +7,6 @@
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/slide-menu.css">
 <script src="/assets/vendors/flipbook/js/flipbook.min.js"></script>
 <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
-<link rel="stylesheet" href="/assets/default/css/quiz-layout.css">
 <style>nav.navbar, nav.navbar1, footer {
                 display: none;
         }</style>

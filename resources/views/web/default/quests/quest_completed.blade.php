@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="/assets/default/css/quiz-layout.css">
 <div class="finish-steps">
 	<div class="col-12 question-layout-block">
 		<div class="chart-summary-fields result-layout-summary">

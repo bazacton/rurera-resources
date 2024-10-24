@@ -11,7 +11,6 @@
         <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/slide-menu.css">
         <script src="/assets/vendors/flipbook/js/flipbook.min.js"></script>
-        <link rel="stylesheet" href="/assets/default/css/quiz-layout.css">
 
     @endif
 @if($page->id == 121 || $page->id == 145)

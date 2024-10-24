@@ -7,7 +7,6 @@ $rand_id = rand(99,9999);
 @endphp
 
 @push('styles_top')
-<link rel="stylesheet" href="/assets/default/css/quiz-layout.css?ver={{$rand_id}}">
 <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
 
 
