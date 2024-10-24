@@ -145,6 +145,25 @@ $practice_time = 0;
                     </div>
                 </section>
                 <div class="justify-content-center">
+                    <div class="quiz-status-bar">
+                        <div class="quiz-questions-bar-holder">
+
+                            <div class="quiz-questions-bar">
+                                @if( $target_score > 0)
+                                    <span class="value-lable" data-title="Target" style="left:{{$target_score}}%"><span>{{$target_score}}%</span></span>
+                                @endif
+                                <span class="bar-fill" title="" style="width: 0%;"></span>
+                            </div>
+                            <span class="coin-numbers">
+                                <img src="/assets/default/img/quests-coin.png" alt="">
+                                <span class="total-earned-coins">0</span>
+                            </span>
+                        </div>
+                        <div class="quiz-corrects-incorrects">
+                            <span class="quiz-corrects">0</span>
+                            <span class="quiz-incorrects">0</span>
+                        </div>
+                    </div>
                     <div class="col-lg-7 col-md-12 col-sm-12 mt-100 mx-auto">
                         <div class="question-step quiz-complete" style="display:none">
                             <div class="question-layout-block">
@@ -163,7 +182,7 @@ $practice_time = 0;
                             </div>
                         </div>
 
-                        <div class="quiz-status-bar">
+                        {{-- <div class="quiz-status-bar">
                             <div class="quiz-questions-bar-holder">
 
                                 <div class="quiz-questions-bar">
@@ -181,7 +200,7 @@ $practice_time = 0;
                                 <span class="quiz-corrects">0</span>
                                 <span class="quiz-incorrects">0</span>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
                         @php $total_questions = 10; @endphp
