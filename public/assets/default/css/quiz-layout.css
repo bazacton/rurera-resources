@@ -192,7 +192,7 @@ span.Selectable:hover {text-decoration: underline;}
 .review_submit .modal-content .close {position: absolute; top: 10px; right: 15px; z-index: 1;}
 .review_submit .modal-body {display: flex; flex-direction: column; flex-wrap: wrap; align-items: center; justify-content: center;}
 .review_submit .submit_quiz_final {padding: 15px 50px; font-weight: 500;}
-.question-layout p {line-height: 50px;}
+.question-layout p {line-height: 35px;}
 .lms-quiz-section .droppable_area .draggable-option {border: 2px solid #ddd; line-height: normal; padding: 4px 20px 8px; border-radius: 5px; border-bottom-width: 4px; margin-top: 20px;}
 .question-layout .ui-state-highlight {border: 0; padding: 0 5px 0 0;min-width: 50px;text-align: center;min-height: 30px;line-height: 30px;}
 
