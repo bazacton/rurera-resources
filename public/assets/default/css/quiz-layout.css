@@ -678,7 +678,7 @@ Quiz Front end file all css Start
 /* Default Style*/
 .learning-page .learning-page-content {background-color: #fff; padding-left: 0 !important; padding-top: 0 !important; transition: all .3s ease;}
 .learning-page-tabs .tab-content .tab-pane {background-color: #fff; border: 1px solid #e1e2e4; border-radius: 10px;}
-.learning-page {overflow: hidden; padding-top: 100px;}
+.learning-page { padding-top: 100px;}
 .learning-page.type-practice.type-sats {background-color: #fff; padding-top: 10px;}
 .learning-page .learning-page {padding-top: 0;}
 .menu-closed .panel-sidebar ~ .learning-page-content {margin-left: 15px;}
