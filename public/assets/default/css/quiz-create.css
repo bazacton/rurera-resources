@@ -653,7 +653,7 @@ scrollbar-gutter: stable both-edges;
 .lms-quiz-section .quiz-topbar .timer-number,
 .timer-number, .lms-quiz-section .quiz-topbar p,
 .learning-page .quiz-topbar p{color: #333;}
-.read-quiz-content .quiz-topbar {background-color: #fff; border-bottom: 2px solid #ECE9F2; padding: 8px 0; margin-bottom: 50px !important; position: fixed; top: 0; left: 0; z-index: 3; width: 100%;}
+.read-quiz-content .quiz-topbar {background-color: #fff; border-bottom: 2px solid #ECE9F2; padding: 8px 0; margin-bottom: 50px; position: fixed; top: 0; left: 0; z-index: 3; width: 100%;}
 .quiz-topbar .quiz-top-info {display: inline-block; vertical-align: middle; position: relative; padding: 0 0 0 25px; margin-bottom: 0;}
 .quiz-topbar .quiz-top-info:before,
 .quiz-topbar .quiz-top-info:after {content: ""; display: block; box-sizing: border-box; position: absolute; width: 8px; height: 8px; border-right: 2px solid #999; border-top: 2px solid #999; transform: rotate(45deg); top: 50%; left: 0; margin-top: -4px;}
@@ -752,7 +752,7 @@ scrollbar-gutter: stable both-edges;
 .assignment-questions-preview .quiz-pagination .swiper-container li {margin: 6px 6px 0 0; width: 25px; max-width: 25px;}
 /* pagination Learn Practice Style End */
 /* Quiz Status Bar Style */
-.quiz-status-bar {margin: 0 0 50px; padding-top: 30px;}
+.quiz-status-bar {margin: -50px 0 50px 0; padding-top: 30px;}
 .container-fluid.read-quiz-content .quiz-status-bar {margin-top: 18px;}
 .read-quiz-content .spell-quiz-page .quiz-status-bar {margin-top: 38px;}
 .correct-in-row {color: #51cd00; font-weight: 500; text-transform: uppercase; }
