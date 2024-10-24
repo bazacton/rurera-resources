@@ -49,12 +49,13 @@ $total_questions = count(json_decode($quizAttempt->questions_list));
                         @endif
                     </div>
                     @endif
-                    <span class="questions-total-holder d-block mb-30"><span class="question-dev-details">({{ $question->id }}) ({{ $question->question_difficulty_level }}) ({{ $question->question_type }})</span></span>
-
-                        @if($layout_type != 'results')
-                        <span class="question-number-holder" style="z-index: 999999999;"> <span class="question-number">{{$question_no}}</span>
-                            </span>
+                    <span class="questions-total-holder d-block mb-15">
+                        @if($layout_type != 'results') <span class="question-number-holder" style="z-index: 999999999;"> <span class="question-number">{{$question_no}}</span></span>
                         @endif
+                        <span class="question-dev-details">({{ $question->id }}) ({{ $question->question_difficulty_level }}) ({{ $question->question_type }})</span>
+                    </span>
+
+
 
                     @php $classes = isset( $class )? $class : ''; @endphp
                     <div id="rureraform-form-1"
