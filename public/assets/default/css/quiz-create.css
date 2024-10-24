@@ -831,7 +831,7 @@ scrollbar-gutter: stable both-edges;
 .question-next-btn:after {content: ""; position: absolute; right: 15px; top: 50%; height: 7px; width: 14px; border: 2px solid; border-top: 0; border-right: 0; transform: rotate(-50deg); margin: -5px 0 0 0;}
 .prev-next-controls .question-submit-btn,
 .prev-next-controls .question-next-btn { position: absolute; right: 0; min-width: 160px;}
-.prev-next-controls .question-submit-btn{margin-right: 34px;}
+.prev-next-controls .question-submit-btn{margin-right: 15px;}
 .prev-next-controls .question-submit-btn svg,
 .prev-next-controls .question-next-btn svg {display: none;}
 .question-submit-btn.submit-btn:hover,
