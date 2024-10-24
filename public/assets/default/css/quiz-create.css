@@ -788,8 +788,8 @@ scrollbar-gutter: stable both-edges;
 .prev-next-controls {display: flex; align-items: center; justify-content: center; margin-top: 20px; position: relative; padding-left: 100px;}
 .prev-next-controls a {margin: 0 7px 0 0;}
 .prev-next-controls .review-btn {position: absolute; left: 0; gap: 10px;}
-.question-layout-block .prev-next-controls {position: fixed; width: 660px; bottom: -50px; background-color: #fff; min-height: 100px; padding: 30px; justify-content: space-between; z-index: 1; margin: 0;}
-.question-layout-block .prev-next-controls .review-btn {position: relative; font-weight: 500;}
+.question-layout-block .prev-next-controls {position: fixed; width: 653px; bottom: -50px; background-color: #fff; min-height: 100px; padding: 30px; justify-content: space-between; z-index: 1; margin: 0;}
+.question-layout-block .prev-next-controls .review-btn {position: relative; font-weight: 500;   margin-left: -15px;}
 
 .review-btn,
 .prev-btn,
@@ -831,7 +831,7 @@ scrollbar-gutter: stable both-edges;
 .question-next-btn:after {content: ""; position: absolute; right: 15px; top: 50%; height: 7px; width: 14px; border: 2px solid; border-top: 0; border-right: 0; transform: rotate(-50deg); margin: -5px 0 0 0;}
 .prev-next-controls .question-submit-btn,
 .prev-next-controls .question-next-btn { position: absolute; right: 0; min-width: 160px;}
-.prev-next-controls .question-submit-btn{margin-right: 30px;}
+.prev-next-controls .question-submit-btn{margin-right: 34px;}
 .prev-next-controls .question-submit-btn svg,
 .prev-next-controls .question-next-btn svg {display: none;}
 .question-submit-btn.submit-btn:hover,
