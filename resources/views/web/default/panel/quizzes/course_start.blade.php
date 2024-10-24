@@ -145,7 +145,7 @@ $practice_time = 0;
                     </div>
                 </section>
                 <div class="justify-content-center">
-                    <div class="col-lg-9 col-md-12 col-sm-12 mt-100 mx-auto">
+                    <div class="col-lg-7 col-md-12 col-sm-12 mt-100 mx-auto">
                         <div class="question-step quiz-complete" style="display:none">
                             <div class="question-layout-block">
                                 <div class="left-content has-bg">
