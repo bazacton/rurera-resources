@@ -782,7 +782,7 @@ scrollbar-gutter: stable both-edges;
 .question-number-holder {width: 45px; text-align: center; float: left; margin-right: 20px; position: absolute; margin-top: 0; cursor: pointer; z-index: 1 !important;}
 .question-number-holder ~ .show-notifications { margin-bottom: 30px;}
 .question-number-holder .question-number {margin: 0 0 0 -95px; }
-.question-number-holder ~ span {padding-left: 65px; font-size: 20px;}
+.question-number-holder ~ span {padding-left: 65px;}
 /*Quistion Number Style End*/
 /*Quiz prev-next-controls Style Start*/
 .prev-next-controls {display: flex; align-items: center; justify-content: center; margin-top: 20px; position: relative; padding-left: 100px;}
