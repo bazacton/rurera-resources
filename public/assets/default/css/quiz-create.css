@@ -755,7 +755,7 @@ scrollbar-gutter: stable both-edges;
 .assignment-questions-preview .quiz-pagination .swiper-container li {margin: 6px 6px 0 0; width: 25px; max-width: 25px;}
 /* pagination Learn Practice Style End */
 /* Quiz Status Bar Style */
-.quiz-status-bar {margin: -25px 0 40px 0; padding-top: 30px;}
+.quiz-status-bar {margin: -25px 0 40px 0; padding-top: 30px 20px 0 20px;}
 .container-fluid.read-quiz-content .quiz-status-bar {margin-top: 18px;}
 .read-quiz-content .spell-quiz-page .quiz-status-bar {margin-top: 38px;}
 .correct-in-row {color: #51cd00; font-weight: 500; text-transform: uppercase; }
