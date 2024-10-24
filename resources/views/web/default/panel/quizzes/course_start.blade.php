@@ -106,7 +106,7 @@ $practice_time = 0;
                                 </div>
                             </div>
                             <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
-                                <div class="topbar-right">
+                                <div class="topbar-right rurera-hide">
                                        <div class="quiz-pagination rurera-hide">
                                            <div class="swiper-container">
                                            <ul class="swiper-wrapper disabled-div">
