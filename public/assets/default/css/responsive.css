@@ -672,7 +672,7 @@ Lms Responsive Style Start
     .lms-counter-section {text-align: center;}
     .read-quiz-content {padding-top: 0 !important;}
     .read-quiz-content {max-width: 100%;}
-    body .quiz-topbar {position: relative; z-index: 3; display: none;}
+    body .quiz-topbar {position: relative; z-index: 3;}
     .topbar-right .quiz-timer {position: initial; padding-top: 10px;}
     .topbar-right .timer-number {margin-right: 20px; margin-left: 0;}
     .quiz-pagination .swiper-container ul {justify-content: center;}
