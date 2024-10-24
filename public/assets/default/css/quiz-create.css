@@ -788,7 +788,7 @@ scrollbar-gutter: stable both-edges;
 .prev-next-controls {display: flex; align-items: center; justify-content: center; margin-top: 20px; position: relative; padding-left: 100px;}
 .prev-next-controls a {margin: 0 7px 0 0;}
 .prev-next-controls .review-btn {position: absolute; left: 0; gap: 10px;}
-.question-layout-block .prev-next-controls {position: fixed; width: 848px; bottom: -50px; background-color: #fff; min-height: 100px; padding: 30px; justify-content: space-between; z-index: 1; margin: 0;}
+.question-layout-block .prev-next-controls {position: fixed; width: 660px; bottom: -50px; background-color: #fff; min-height: 100px; padding: 30px; justify-content: space-between; z-index: 1; margin: 0;}
 .question-layout-block .prev-next-controls .review-btn {position: relative; font-weight: 500;}
 
 .review-btn,
