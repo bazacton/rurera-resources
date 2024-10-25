@@ -67,8 +67,7 @@ $rand_id = rand(99,9999);
 	<section class="lms-quiz-section">
         <div class="container questions-data-block read-quiz-content" data-total_questions="0">
             <div class="justify-content-center">
-                <div class="col-lg-9 col-md-12 col-sm-12 mt-100 mx-auto">
-					<div class="quiz-status-bar">
+				<div class="quiz-status-bar">
 						<div class="quiz-questions-bar-holder">
 							<div class="quiz-questions-bar">
 								<span class="value-lable" data-title="Target" style="left:80%"><span>80%</span></span>
@@ -83,7 +82,9 @@ $rand_id = rand(99,9999);
 							<span class="quiz-corrects">0</span>
 							<span class="quiz-incorrects">0</span>
 						</div>
-					</div>
+				</div>
+                <div class="col-lg-7 col-md-12 col-sm-12 mt-50 mx-auto">
+					
 					
 					
 					
