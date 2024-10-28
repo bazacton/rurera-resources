@@ -8,10 +8,8 @@ $rand_id = rand(99,9999);
 
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
-<link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver={{$rand_id}}">
 @endpush
 
-<link rel="stylesheet" href="/assets/default/css/quiz-create-frontend.css?var={{$rand_id}}">
 <link rel="stylesheet" href="/assets/admin/css/quiz-css.css?var={{$rand_id}}">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <style>
@@ -110,7 +108,9 @@ $rand_id = rand(99,9999);
 													 <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
 													<span class="question-dev-details">({{$questionObj->id}}) ({{$questionObj->question_difficulty_level}}) ({{$questionObj->question_type}})</span>
 												</span>
-												{!! $question_layout !!}
+												<div class="question-layout">
+													{!! $question_layout !!}
+												</div>
 												</div>
 
 											@endforeach
