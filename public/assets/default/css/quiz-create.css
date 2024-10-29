@@ -697,6 +697,7 @@ scrollbar-gutter: stable both-edges;
 }
 .questions-total-holder .question-dev-details {
     color: #adabab;
+	margin-left: 15px;
 }
 .rurera-question-block:has(.question-number-holder) .rureraform-elements {padding-left: 0;}
 .question-layout .rureraform-col {padding:0 0 20px !important;}
