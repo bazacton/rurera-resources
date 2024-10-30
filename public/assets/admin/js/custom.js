@@ -30,8 +30,22 @@
 
     $('body').on('click', '.admin-file-manager', function (e) {
         e.preventDefault();
-        $(this).filemanager('file', {prefix: '/laravel-filemanager'});
-        $(this).trigger('click');  // Manually trigger click after initialization
+		var upload_path = $(this).closest('.upload-path-rurera').attr('data-location');
+		var thisObj = $(this);
+		//$(this).filemanager('file', {prefix: '/laravel-filemanager'});
+		//$(this).trigger('click');  // Manually trigger click after initialization
+		$.ajax({
+			type: "POST",
+			url: '/admin/users/upload_path',
+			data: {'upload_path': upload_path},
+			success: function (return_data) {
+				console.log(return_data);
+				thisObj.filemanager('file', {prefix: '/laravel-filemanager'});
+				thisObj.trigger('click');  // Manually trigger click after initialization
+			}
+		});
+		
+        
     });
 
     $('body').on('click', '.admin-file-view', function (e) {
@@ -1130,6 +1144,87 @@ $(document).on('click', '.unpin-search', function () {
 		data: {'seach_type': search_type},
 		success: function (return_data) {
 			location.reload();
+		}
+	});
+});
+
+$(document).on('click', '.save-template', function () {
+	// Select all form fields inside the div with id "question_properties"
+	$(".template_save_modal").modal('show');
+	
+	var form_id = $(this).attr('data-form_id');
+	var template_type = $(this).attr('data-template_type');
+	var form_data = new FormData($('#' + form_id)[0]);
+
+	// Create an object to store the name-value pairs
+	var jsonFormData = {};
+
+	form_data.forEach((value, key) => {
+		jsonFormData[key] = value;
+	});
+	
+	console.log(jsonFormData);
+
+	jsonFormData = JSON.stringify(jsonFormData);
+	console.log(jsonFormData);
+	$(".form_data_encoded").val(jsonFormData);
+	$(".template_type").val(template_type);
+	
+});
+
+$(document).on('click', '.save-template-btn', function () {
+	$(".template_save_modal").modal('hide');
+	var template_name = $('.template_name').val();
+	var template_type = $('.template_type').val();
+	var form_data_encoded  = $('.form_data_encoded').val();
+	$.ajax({
+		type: "POST",
+		url: '/admin/users/save_templates',
+		data: {'template_type': template_type, 'template_name': template_name, 'form_data_encoded': form_data_encoded},
+		success: function (return_data) {
+			console.log(return_data);
+		}
+	});
+});
+
+$(document).on('click', '.apply-template-field span', function () {
+	var formDatajson = $(this).closest('.apply-template-field').attr('data-template_data');
+	var formDataObj = JSON.parse(formDatajson);
+	var form_id = $(this).closest('.apply-template-field').attr('data-form_id');
+	var template_type = $(this).closest('.apply-template-field').attr('data-template_type');
+	
+	is_template_active = true;
+	var formFields = $('#'+form_id).find('input, select, textarea');
+	var parentForm = $('#'+form_id);
+	
+	
+	var form_data = new FormData($('#' + form_id)[0]);
+
+	var jsonFormData = {};
+
+	form_data.forEach((value, key) => {
+		var name = key;
+		var value = parentForm.find('[name="'+name+'"]').val(formDataObj[name]);
+		jsonFormData[key] = value;
+		if (parentForm.find('[name="'+name+'"]').is('select')) {
+			var next_index = parentForm.find('[name="'+name+'"]').attr('data-next_index');
+			var next_value = formDataObj[next_index];
+			parentForm.find('[name="'+name+'"]').attr('data-next_value', next_value);
+			parentForm.find('[name="'+name+'"]').change();
+		}
+	});
+});
+
+$(document).on('click', '.remove-template', function () {
+	var template_name = $(this).attr('data-template_name');
+	var template_type = $(this).closest('span').attr('data-template_type');
+	$(this).closest('span').remove();
+	$.ajax({
+		type: "POST",
+		url: '/admin/users/remove_template',
+		data: {'template_type': template_type, 'template_name': template_name},
+		success: function (return_data) {
+			console.log(return_data);
 		}
 	});
 });
