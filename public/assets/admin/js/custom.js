@@ -1158,11 +1158,13 @@ $(document).on('click', '.save-template', function () {
 
 	// Create an object to store the name-value pairs
 	var jsonFormData = {};
-
 	form_data.forEach((value, key) => {
 		jsonFormData[key] = value;
 	});
 	
+	jsonFormData['url_params'] = Object.entries(jsonFormData)
+    .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
+    .join('&');
 	console.log(jsonFormData);
 
 	jsonFormData = JSON.stringify(jsonFormData);
