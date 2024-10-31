@@ -1168,9 +1168,10 @@ $(document).on('click', '.save-template', function () {
 	console.log(jsonFormData);
 
 	jsonFormData = JSON.stringify(jsonFormData);
-	console.log(jsonFormData);
 	$(".form_data_encoded").val(jsonFormData);
 	$(".template_type").val(template_type);
+	$(".form_id").val(form_id);
+	
 	
 });
 
@@ -1178,12 +1179,14 @@ $(document).on('click', '.save-template-btn', function () {
 	$(".template_save_modal").modal('hide');
 	var template_name = $('.template_name').val();
 	var template_type = $('.template_type').val();
+	var form_id = $('.form_id').val();
 	var form_data_encoded  = $('.form_data_encoded').val();
 	$.ajax({
 		type: "POST",
 		url: '/admin/users/save_templates',
 		data: {'template_type': template_type, 'template_name': template_name, 'form_data_encoded': form_data_encoded},
 		success: function (return_data) {
+			$("#"+form_id).submit();
 			console.log(return_data);
 		}
 	});
