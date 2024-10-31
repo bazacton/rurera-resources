@@ -32,19 +32,18 @@
         e.preventDefault();
 		var upload_path = $(this).closest('.upload-path-rurera').attr('data-location');
 		var thisObj = $(this);
-		//$(this).filemanager('file', {prefix: '/laravel-filemanager'});
-		//$(this).trigger('click');  // Manually trigger click after initialization
-		$.ajax({
+		thisObj.filemanager('file', {prefix: '/laravel-filemanager'});
+		thisObj.trigger('click');
+		/*$.ajax({
 			type: "POST",
 			url: '/admin/users/upload_path',
 			data: {'upload_path': upload_path},
 			success: function (return_data) {
-				console.log(return_data);
 				thisObj.filemanager('file', {prefix: '/laravel-filemanager'});
 				thisObj.trigger('click');  // Manually trigger click after initialization
+				
 			}
-		});
-		
+		});*/
         
     });
 
