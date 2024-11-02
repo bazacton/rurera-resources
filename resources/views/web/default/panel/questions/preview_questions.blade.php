@@ -88,7 +88,7 @@ $rand_id = rand(99,9999);
 							<span class="quiz-incorrects">0</span>
 						</div>
 				</div>
-                <div class="col-lg-7 col-md-12 col-sm-12 mt-50 mx-auto">
+                <div class="col-lg-9 col-md-12 col-sm-12 mt-50 mx-auto">
 					
 					
 					
