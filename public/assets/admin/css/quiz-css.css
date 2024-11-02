@@ -525,6 +525,10 @@
 	font-style: inherit;
 	text-shadow: none;
 }
+
+.rureraform-element-html p:first-line {
+	line-height:100% !important;
+}
 .rureraform-element-html .aligncenter {
 	display: block;
 	margin-left: auto;
