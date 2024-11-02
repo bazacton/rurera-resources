@@ -1,5 +1,5 @@
 /***************************** 
-Questions Builder style start @
+Questions Builder style start
 ******************************/
 
 /* Questions Builder Stage style start */
@@ -176,7 +176,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .form-field input[type="checkbox"] ~ label {min-height: 52px; text-align: left;}
 .form-field input[type="checkbox"]:checked ~ label:after {opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 .form-field input[type="checkbox"]:checked ~ label,
-.form-field label:hover {background-color: rgba(0,0,0,0.06);}
+.form-field label:hover {border: 2px solid #5a5a5a;border-bottom-width: 4px;border-radius: 8px;}
 .row-fields.lms-checkbox-img label {padding: 5px;}
 .lms-checkbox-img .form-field label:before {width: 30px; height: 30px; right: 15px; border-radius: 100%; margin-top: -15px;}
 .lms-checkbox-img .form-field label:after {right: 24px; font-size: 14px; height: auto; width: auto; line-height: normal; top: 50%; margin-top: -10px;}
