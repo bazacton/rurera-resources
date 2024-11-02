@@ -1,5 +1,5 @@
 /***************************** 
-Questions Builder style start
+Questions Builder style start @
 ******************************/
 
 /* Questions Builder Stage style start */
@@ -424,7 +424,7 @@ Questions Builder Right Sidebar Style Start
 .rureraform-properties-content textarea:focus, .rureraform-bulk-editor textarea:focus {border-color: #169F85; box-shadow: 0 0 16px -10px #169F85;}
 .lms-quiz-create .rureraform-properties-content input::-webkit-input-placeholder, .rureraform-properties-content textare::-webkit-input-placeholder {color: inherit !important;opacity: 0.3;}
 .lms-quiz-create .rureraform-properties-content input::-moz-placeholder, .rureraform-properties-content textare::-moz-placeholder {color: inherit !important; opacity: 0.3;}
-/*.lms-quiz-create .rureraform-properties-content input:-moz-placeholder, .rureraform-properties-content textare:-mox-placeholder {color: inherit !important; opacity: 0.3;}*/
+.lms-quiz-create .rureraform-properties-content input:-moz-placeholder, .rureraform-properties-content textare:-mox-placeholder {color: inherit !important; opacity: 0.3;}
 .lms-quiz-create .rureraform-properties-content input:-ms-input-placeholder, .rureraform-properties-content textare::-ms-input-placeholder {opacity: 0.3;color: inherit !important;}
 .lms-quiz-create .rureraform-properties-content .rureraform-input-units {position: relative; min-width: 100px;}
 .lms-quiz-create .rureraform-properties-content .rureraform-100px {min-width: 100px; width: 100px; max-width: 100px;}
