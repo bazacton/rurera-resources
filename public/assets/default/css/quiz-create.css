@@ -175,9 +175,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .form-field label {background-color: #fff; border: 2px solid #ddd; border-bottom-width: 4px; border-radius: 8px; position: relative; cursor: auto; padding: 15px; width: 100%; margin-bottom: 0; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; line-height: normal;}
 .form-field input[type="checkbox"] ~ label {min-height: 52px; text-align: left;}
 .form-field input[type="checkbox"]:checked ~ label:after {opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
-.form-field input[type="checkbox"]:checked ~ label{
-	background-color: #000;
-}
+.form-field input[type="checkbox"]:checked ~ label{background-color: #cdcdcd;}
 .form-field label:hover {border: 2px solid #cdcdcd;border-bottom-width: 4px;border-radius: 8px;}
 .row-fields.lms-checkbox-img label {padding: 5px;}
 .lms-checkbox-img .form-field label:before {width: 30px; height: 30px; right: 15px; border-radius: 100%; margin-top: -15px;}
