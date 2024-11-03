@@ -826,7 +826,7 @@ scrollbar-gutter: stable both-edges;
 
 .review-btn svg,
 .prev-btn svg,
-.next-btn svg {height: 22px; width: 22px; margin-left: 10px;}
+.next-btn svg {height: 15px; width: 15px; margin-left: 5px;}
 
 .prev-btn svg,
 .next-btn svg {margin-left: 0;}
@@ -840,7 +840,7 @@ scrollbar-gutter: stable both-edges;
 
 .review-btn:hover,
 .prev-btn:hover,
-.next-btn:hover {background-color: #eee; color:#818894;}
+.next-btn:hover {background-color: #eee; color:#818894;border-color: #dae1ef;}
 
 .review-btn:hover svg g,
 .prev-btn:hover svg g,
