@@ -848,11 +848,11 @@ scrollbar-gutter: stable both-edges;
 
 .submit-btn,
 .question-submit-btn,
-.question-next-btn {border: 1px solid #8fc963; border-radius: 5px; padding: 0 40px; height: 55px; color: #8fc963; text-transform: uppercase;}
+.question-next-btn {border: 1px solid #8fc963; border-radius: 5px; padding: 0 40px; height: 55px; color: #ffff;font-weight: 500; text-transform: uppercase;}
 .question-submit-btn.submit-btn,
 .question-next-btn.submit-btn,
 .question-submit-btn,
-.question-next-btn {border-color: #8fc963; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; display: inline-flex; align-items: center; justify-content: center; height: auto; min-height: 45px; padding-left: 20px; padding-right: 35px;}
+.question-next-btn { background-color: #8fc963; border-color: #8fc963; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; display: inline-flex; align-items: center; justify-content: center; height: auto; min-height: 45px; padding-left: 20px; padding-right: 35px;}
 .prev-next-controls .question-submit-btn:after,
 .question-next-btn:after {content: ""; position: absolute; right: 15px; top: 50%; height: 7px; width: 14px; border: 2px solid; border-top: 0; border-right: 0; transform: rotate(-50deg); margin: -5px 0 0 0;}
 .prev-next-controls .question-submit-btn,
@@ -864,7 +864,7 @@ scrollbar-gutter: stable both-edges;
 .question-next-btn.submit-btn:hover,
 .question-submit-btn:hover,
 .spells-quiz-from .question-submit-btn:hover,
-.question-next-btn:hover {background-color: #8fc963;  color: #f5ffec;}
+.question-next-btn:hover {background-color: #bae798;  color: #f5ffec;}
 /*Quiz prev-next-controls Style End*/
 
 /*Quiz Layout Input Holder Style Start*/
