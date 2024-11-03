@@ -819,7 +819,7 @@ scrollbar-gutter: stable both-edges;
 
 .review-btn,
 .prev-btn,
-.next-btn{display: inline-flex; align-items: center; border: 1px solid #eee; min-width: 135px; min-height: 45px; border-radius: 5px; justify-content: center; color: #000; text-transform: uppercase;}
+.next-btn{display: inline-flex; align-items: center; border: 1px solid #eee; min-width: 135px; min-height: 45px; border-radius: 5px; justify-content: center; color:#818894; text-transform: uppercase;}
 
 .prev-btn,
 .next-btn {min-width: auto; padding: 0 18px; position: relative;}
@@ -840,11 +840,11 @@ scrollbar-gutter: stable both-edges;
 
 .review-btn:hover,
 .prev-btn:hover,
-.next-btn:hover {background-color: #eee; color: #000;}
+.next-btn:hover {background-color: #eee; color:#818894;}
 
 .review-btn:hover svg g,
 .prev-btn:hover svg g,
-.next-btn:hover svg g {fill: #000;}
+.next-btn:hover svg g {fill:#818894;}
 
 .submit-btn,
 .question-submit-btn,
