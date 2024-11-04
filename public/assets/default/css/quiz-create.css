@@ -338,6 +338,14 @@ Questions Builder Right Sidebar Style Start
 .lms-quiz-create .rureraform-admin-popup-overlay {position: fixed !important; z-index: 99980; top: 0;	left: 0; height: 100%; width: 100%; background-position: center center; background: rgba(0,0,0,0.8);display: none;}
 .lms-quiz-create .rureraform-admin-popup {box-sizing: border-box; z-index: 99981; width: 100%; height: auto; background: #ffffff; display: none; overflow: hidden;}
 .lms-quiz-create .rureraform-admin-popup * {box-sizing: border-box;}
+.note-dropdown-menu h1, 
+.note-dropdown-menu h2, 
+.note-dropdown-menu h3,
+.note-dropdown-menu h4,
+.note-dropdown-menu h5,
+.note-dropdown-menu h6 {
+    font-size: 14px;
+}
 .lms-quiz-create .rureraform-admin-popup-inner {height: auto; position: relative; box-sizing: border-box; border: 1px solid #ccc;}
 .lms-quiz-create .rureraform-admin-popup-title {box-sizing: border-box;	height: 52px; line-height: 52px; padding: 0 0 0 20px; text-align: left;	border-bottom: 1px solid #f0f0f0; background: #f8f8f8;}
 .lms-quiz-create .rureraform-admin-popup-title>span {float: right; display: block; width: 52px;	height: 52px; line-height: 52px; text-align: center; font-size: 20px; color: #555;	transition-property: color;	transition-timing-function: ease-in-out; transition-duration: 300ms; cursor: pointer;}
