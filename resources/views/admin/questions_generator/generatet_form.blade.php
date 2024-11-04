@@ -285,7 +285,7 @@
 				<label for="include_passage">Include Passage</label>
 			</div>
 		</div>
-		<div class="col-md-6 col-lg-6">
+		<div class="col-md-12 col-lg-12">
 			<!-- Rewording Level -->
 			<label for="rewording_level">Rewording Level (0 - 100%):</label>
 			<div class="range-output">
@@ -293,7 +293,7 @@
 				<output>50</output>
 			</div>
 		</div>
-		<div class="col-md-6 col-lg-6">
+		<div class="col-md-12 col-lg-12">
 			<!-- Content Text Length -->
 			<label for="content_text_length">Content Text Length (Max 50 Words):</label>
 			<div class="range-output">
@@ -301,7 +301,7 @@
 				<output>50</output>
 			</div>
 		</div>
-		<div class="col-md-6 col-lg-6">
+		<div class="col-md-12 col-lg-12">
 			<!-- Number of Questions -->
 			<label for="num_questions">Number of Questions (Max 20):</label>
 			<div class="range-output">
@@ -309,7 +309,7 @@
 				<output>2</output>
 			</div>
 		</div>
-		<div class="col-md-6 col-lg-6">
+		<div class="col-md-12 col-lg-12">
 			<!-- Difficulty Level -->
 		
 			<label>Select Difficulty Level:</label>
@@ -324,20 +324,14 @@
 				<label for="level_2">Hard</label>
 			</div>
 		</div>
-		<div class="col-md-6 col-lg-6">
+		<div class="col-md-12 col-lg-12">
 			<div class="list-group">
 				<input type="checkbox" name="example_question_switch" value="yes" class="example_question_switch" id="example_question_switch">
 				<label for="example_question_switch">Include Example</label>
 			</div>
 		</div>
 	</div>
-		
-		
-		
-		
-		
 		<!-- Example Form -->
-	
 		
 		<div class="example-question-block rurera-hide">
 			<div class="form-group intro-field">
