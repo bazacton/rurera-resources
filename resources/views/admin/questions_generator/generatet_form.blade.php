@@ -324,7 +324,12 @@
 				<label for="level_2">Hard</label>
 			</div>
 		</div>
-		
+		<div class="col-md-6 col-lg-6">
+			<div class="list-group">
+				<input type="checkbox" name="example_question_switch" value="yes" class="example_question_switch" id="example_question_switch">
+				<label for="example_question_switch">Include Example</label>
+			</div>
+		</div>
 	</div>
 		
 		
@@ -333,12 +338,7 @@
 		
 		<!-- Example Form -->
 	
-		<div class="col-md-6 col-lg-6">
-			<div class="list-group">
-				<input type="checkbox" name="example_question_switch" value="yes" class="example_question_switch" id="example_question_switch">
-				<label for="example_question_switch">Include Example</label>
-			</div>
-		</div>
+		
 		<div class="example-question-block rurera-hide">
 			<div class="form-group intro-field">
 				<label for="intro_text_0">Intro Text:</label>
