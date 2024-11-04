@@ -1514,13 +1514,15 @@ table#outputTable thead th {
     font-size: 14px;
     border-radius: 3px;
 }
-.card-body .text-right:has(button) {
+.card-body .text-right:has(button),
+.card-body .text-left:has(button) {
     text-align: left !important;
     display: inline-block;
     vertical-align: middle;
     margin-bottom: 20px;
 }
-.card-body .text-right:has(.add-item-modal) {
+.card-body .text-right:has(.add-item-modal),
+.card-body .text-right:has(.add-part-modal) {
     float: inline-end;
     margin-bottom: 20px;
 }
