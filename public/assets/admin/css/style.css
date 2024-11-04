@@ -1515,8 +1515,14 @@ table#outputTable thead th {
     border-radius: 3px;
 }
 .card-body .text-right:has(button) {
-    margin-bottom: 30px;
     text-align: left !important;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+.card-body .text-right:has(.add-item-modal) {
+    float: inline-end;
+    margin-bottom: 20px;
 }
 .modal-open .modal{
     padding-right: 0 !important;
