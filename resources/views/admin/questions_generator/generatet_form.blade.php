@@ -145,9 +145,11 @@
 
 	<div class="row">
 		<div class="col-md-12 col-lg-12">
-			<!-- Content Text Area -->
-			<label for="content">Enter Content (Max 400 Words):</label>
-			<textarea name="content" id="content" rows="4" maxlength="400" required></textarea>
+			<div class="form-group">
+				<!-- Content Text Area -->
+				<label for="content">Enter Content (Max 400 Words):</label>
+				<textarea name="content" id="content" rows="4" maxlength="400" required></textarea>
+			</div>
 		</div>
 		<div class="col-md-12 col-lg-12">
 			<div class="form-group">
