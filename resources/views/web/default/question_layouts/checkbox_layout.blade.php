@@ -5,10 +5,10 @@ $correctCount = count(array_filter($options, function ($option) {
 }));
 $element_unique_id = isset( $element_unique_id )? $element_unique_id : $element_id; 
 @endphp
-<div id="rureraform-element-{{$element_unique_id}}" class="quiz-group rureraform-element-{{$element_unique_id}} rureraform-element rureraform-element-label-undefined ui-sortable-handle" data-type="checkbox">
-    <div class="rureraform-column-label"><label class="rureraform-label rureraform-ta-undefined">{{$elementObj->label}}</label></div>
+<div id="rureraform-element-{{$element_unique_id}}" class="quiz-group rureraform-element-{{$element_unique_id}} rureraform-element ui-sortable-handle" data-type="checkbox">
+    <div class="rureraform-column-label"><label class="rureraform-label">{{$elementObj->label}}</label></div>
     <div class="rureraform-column-input">
-        <div class="rureraform-input rureraform-cr-layout-undefined rureraform-cr-layout-undefined">
+        <div class="rureraform-input">
             <div class="form-box {{$elementObj->template_style}} {{isset( $elementObj->list_style )? $elementObj->list_style : ''}} {{isset( $elementObj->template_alignment )? $elementObj->template_alignment : ''}} {{isset( $elementObj->image_size )? $elementObj->image_size : ''}}">
 			
 			
@@ -22,7 +22,7 @@ $element_unique_id = isset( $element_unique_id )? $element_unique_id : $element_
 						@if( isset( $optionObj->image ) && $optionObj->image != '')
 							@php $image_path = '<img src="'.$optionObj->image.'" alt="">'; @endphp
 						@endif
-						<div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+						<div class="form-field rureraform-cr-container-medium">
 							<input class="editor-field rureraform-checkbox-medium" data-min="{{$correctCount}}" type="checkbox" name="field-{{$element_unique_id}}" id="field-{{$element_unique_id}}-{{$option_index}}" value="{{$optionObj->value}}" /><label for="field-{{$element_unique_id}}-{{$option_index}}">
 							@if( $image_position == 'left' ){!! $image_path !!} @endif
 							{{$optionObj->label}}
