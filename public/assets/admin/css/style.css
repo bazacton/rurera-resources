@@ -1533,3 +1533,9 @@ table#outputTable thead th {
     border-radius: 0;
 }
 /*Topics Parts Create Output Table End*/
+
+/*Glossary Question_Edit_Part Modal Style Start*/
+.modal.question_edit_part_modal {
+    background-color: #fff;
+}
+/*Glossary Question_Edit_Part Modal Style End*/
