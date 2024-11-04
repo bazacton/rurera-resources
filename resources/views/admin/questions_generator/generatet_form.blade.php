@@ -144,8 +144,7 @@
 		@csrf
 		
         <!-- Content Text Area -->
-<<<<<<< HEAD
-		 <div class="col-md-3 col-lg-12">
+		 <div class="col-md-12 col-lg-12">
 			<label for="content">Enter Content (Max 400 Words):</label>
 			<textarea name="content" id="content" rows="4" maxlength="400" required></textarea>
 		 </div>
@@ -160,35 +159,12 @@
 				<optgroup label="{{  $category->title }}">
 					@foreach($category->subCategories as $subCategory)
 					<option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
-=======
-        <label for="content">Enter Content (Max 400 Words):</label>
-        <textarea name="content" id="content" rows="4" maxlength="400" required></textarea>
-
-		
-		
-		<div class="col-md-3">
-			<div class="form-group">
-				<label class="input-label">{{trans('admin/main.category')}}</label>
-				<select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="">
-					<option value="">{{trans('admin/main.all_categories')}}</option>
-					@foreach($categories as $category)
-					@if(!empty($category->subCategories) and count($category->subCategories))
-					<optgroup label="{{  $category->title }}">
-						@foreach($category->subCategories as $subCategory)
-						<option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
-						@endforeach
-					</optgroup>
-					@else
-					<option value="{{ $category->id }}">{{ $category->title }}</option>
-					@endif
->>>>>>> 7cc98396920dbfab3889bd80150010a63bace631
 					@endforeach
 				</select>
 			</div>
 		</div>
 	
-<<<<<<< HEAD
-	<div class="col-md-3 col-md-12 col-lg-12">
+	<div class="col-md-12 col-md-12 col-lg-12">
 	<div class="form-group">
 		<label>Subjects</label>
 		<select data-return_type="option"
@@ -200,26 +176,6 @@
 		@error('subject_id')
 		<div class="invalid-feedback">
 			{{ $message }}
-=======
-	
-	
-	
-
-	<div class="col-md-3">
-		<div class="form-group">
-			<label>Subjects</label>
-			<select data-return_type="option"
-					data-default_id="{{request()->get('subject_id')}}" data-chapter_id=""
-					class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
-					id="subject_id" name="subject_id">
-				<option disabled selected>Subject</option>
-			</select>
-			@error('subject_id')
-			<div class="invalid-feedback">
-				{{ $message }}
-			</div>
-			@enderror
->>>>>>> 7cc98396920dbfab3889bd80150010a63bace631
 		</div>
 	</div>
 	
