@@ -719,9 +719,6 @@ scrollbar-gutter: stable both-edges;
     width: 100%;
 	padding-bottom: 110px;
 }
-.question-number-holder ~ .rureraform-elements {
-    padding-left: 60px;
-}
 .question-layout {
     padding: 0 0 80px;
     display: inline-block;
