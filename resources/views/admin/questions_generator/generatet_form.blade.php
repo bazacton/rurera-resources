@@ -94,12 +94,53 @@
         font-weight: bold;
         color: #333;
     }
+	.option-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+            align-items: center;
+        }
+        .option-group input[type="text"] {
+            flex: 1;
+        }
+        .option-buttons button {
+            cursor: pointer;
+            padding: 5px 8px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+        }
+        .add-option-btn, .submit-btn {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+        }
+        .remove-option-btn {
+            background-color: #f44336;
+            color: white;
+        }
+        .move-up-btn, .move-down-btn {
+            background-color: #2196F3;
+            color: white;
+        }
     </style>
 @endpush
 
 @section('content')
 <section class="section">
-	<form action="/admin/testt" method="POST">
+	<div class="row">
+		<div class="col-12 col-md-12">
+			<div class="card">
+				<div class="card-body">
+
+	<form action="/admin/questions-generator/generate-questions" method="POST">
 		@csrf
 		
         <!-- Content Text Area -->
@@ -109,44 +150,44 @@
 		
 		
 		<div class="col-md-3">
-		<div class="form-group">
-			<label class="input-label">{{trans('admin/main.category')}}</label>
-			<select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="">
-				<option value="">{{trans('admin/main.all_categories')}}</option>
-				@foreach($categories as $category)
-				@if(!empty($category->subCategories) and count($category->subCategories))
-				<optgroup label="{{  $category->title }}">
-					@foreach($category->subCategories as $subCategory)
-					<option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
+			<div class="form-group">
+				<label class="input-label">{{trans('admin/main.category')}}</label>
+				<select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="">
+					<option value="">{{trans('admin/main.all_categories')}}</option>
+					@foreach($categories as $category)
+					@if(!empty($category->subCategories) and count($category->subCategories))
+					<optgroup label="{{  $category->title }}">
+						@foreach($category->subCategories as $subCategory)
+						<option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
+						@endforeach
+					</optgroup>
+					@else
+					<option value="{{ $category->id }}">{{ $category->title }}</option>
+					@endif
 					@endforeach
-				</optgroup>
-				@else
-				<option value="{{ $category->id }}">{{ $category->title }}</option>
-				@endif
-				@endforeach
-			</select>
+				</select>
+			</div>
 		</div>
-	</div>
 	
 	
 	
 	
 
 	<div class="col-md-3">
-	<div class="form-group">
-		<label>Subjects</label>
-		<select data-return_type="option"
-				data-default_id="{{request()->get('subject_id')}}" data-chapter_id=""
-				class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
-				id="subject_id" name="subject_id">
-			<option disabled selected>Subject</option>
-		</select>
-		@error('subject_id')
-		<div class="invalid-feedback">
-			{{ $message }}
+		<div class="form-group">
+			<label>Subjects</label>
+			<select data-return_type="option"
+					data-default_id="{{request()->get('subject_id')}}" data-chapter_id=""
+					class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
+					id="subject_id" name="subject_id">
+				<option disabled selected>Subject</option>
+			</select>
+			@error('subject_id')
+			<div class="invalid-feedback">
+				{{ $message }}
+			</div>
+			@enderror
 		</div>
-		@enderror
-	</div>
 	</div>
 	
 	
@@ -185,7 +226,8 @@
 
 	</div>
 	</div>
-		
+		<div class="col-md-12">
+			<div class="form-group">
         <!-- Grade Selection -->
 		<input type="hidden" name="grade" id="grade1" value="7">
         <!-- Question Type -->
@@ -202,6 +244,8 @@
             <input type="radio" name="question_type" id="type_match" value="matching">
             <label for="type_match">Matching</label>
         </div>
+	</div>
+	</div>
 
         <!-- Number of Options -->
         <label>Number of Options (0-6):</label>
@@ -283,46 +327,61 @@
             <label for="example_question_switch">Include Example</label>
         </div>
 		<div class="example-question-block rurera-hide">
-			<div class="form-control">
-				<label for="main_question">Main Question:</label>
-				<input type="text" class="form-control" name="main_question" id="main_question" >
+			<div class="form-group intro-field">
+				<label for="intro_text_0">Intro Text:</label>
+				<textarea name="intro_text" id="intro_text_0" rows="2"></textarea>
 			</div>
-			
-			<div class="form-control">
+			<div class="form-group passage-field">
+				<label for="passage_0">Passage:</label>
+				<textarea name="passage" id="passage_0" rows="4"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="main_question_0">Main Question:</label>
+				<input type="text" name="main_question" id="main_question_0" value="">
+			</div>
+			<div class="form-group">
 				<label for="fact_integration">Fact Integration:</label>
-				<input type="text" class="form-control" name="fact_integration" id="fact_integration" >
+				<input type="text" name="fact_integration" id="fact_integration" value="">
 			</div>
-			<div class="form-control">
-				<label for="instruction">Instruction:</label>
-				<input type="text" class="form-control" name="instruction" id="instruction" >
+			<div class="form-group">
+				<label for="instruction_0">Instruction:</label>
+				<input type="text" name="instruction" id="instruction_0" value="">
 			</div>
-			<div class="form-control intro-field">
-				<label for="intro_text">Intro Text:</label>
-				<textarea class="form-control" rows="5" name="intro_text" id="intro_text" ></textarea>
+            <label>Options:</label>
+            <div class="options-container" data-options-container="0" >
+					<div class="option-group" data-option-index="0">
+                        <input type="text" name="options[]" value="Option 1">
+                        <input type="checkbox" name="correct_answers[]" value="0">
+                        <div class="option-buttons">
+                            <button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
+                            <button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
+                            <button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
+                        </div>
+                    </div>
+					<div class="option-group" data-option-index="1">
+                        <input type="text" name="options[]" value="Option 2">
+                        <input type="checkbox" name="correct_answers[]" value="1">
+                        <div class="option-buttons">
+                            <button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
+                            <button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
+                            <button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
+                        </div>
+                    </div>
 			</div>
-			<div class="form-control passage-field">
-				<label for="passage">Passage:</label>
-				<textarea class="form-control" rows="5" name="passage" id="passage" ></textarea>
-			</div>
-			<div class="form-control">
-				<label for="options">Options:</label>
-				<textarea class="form-control" rows="5" name="options" id="options" ></textarea>
-			</div>
-			<div class="form-control">
-				<label for="correct_answers">Correct Answers:</label>
-				<input type="text" class="form-control" name="correct_answers" id="correct_answers" >
-			</div>
-			<div class="form-control">
-				<label for="explanation">Explanation:</label>
-				<textarea class="form-control" rows="5" name="explanation" id="explanation" ></textarea>
-			</div>
+            <button type="button" class="add-option-btn" onclick="addOption(0)">Add Option</button>
+
+            <label for="explanation_0">Explanation:</label>
+            <textarea name="explanation" id="explanation_0" rows="3"></textarea>
 		</div>
-			
 
         <!-- Other fields (ranges, difficulty, language) are the same as before -->
 
         <button type="submit" class="submit-btn">Generate Questions</button>
     </form>
+	</div>
+	</div>
+	</div>
+	</div>
 </section>
 
 @endsection
@@ -405,6 +464,46 @@
 		
 		
     });
+	function addOption(questionIndex) {
+        const container = document.querySelector(`[data-options-container="${questionIndex}"]`);
+        const optionIndex = container.children.length;
+
+        const optionGroup = document.createElement('div');
+        optionGroup.classList.add('option-group');
+        optionGroup.setAttribute('data-option-index', optionIndex);
+
+        optionGroup.innerHTML = `
+            <input type="text" name="options[]" value="">
+            <input type="checkbox" name="correct_answers[]" value="${optionIndex}">
+            <div class="option-buttons">
+                <button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
+                <button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
+                <button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
+            </div>
+        `;
+        container.appendChild(optionGroup);
+    }
+
+    function removeOption(button) {
+        const optionGroup = button.closest('.option-group');
+        optionGroup.remove();
+    }
+
+    function moveOptionUp(button) {
+        const optionGroup = button.closest('.option-group');
+        const prevSibling = optionGroup.previousElementSibling;
+        if (prevSibling) {
+            optionGroup.parentNode.insertBefore(optionGroup, prevSibling);
+        }
+    }
+
+    function moveOptionDown(button) {
+        const optionGroup = button.closest('.option-group');
+        const nextSibling = optionGroup.nextElementSibling;
+        if (nextSibling) {
+            optionGroup.parentNode.insertBefore(nextSibling, optionGroup);
+        }
+    }
 	
 </script>
 
