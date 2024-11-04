@@ -273,7 +273,7 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 /* Match Style Start */
 .match-question{width:100%;}
 .match-question .stems li,
-.match-question .options li {list-style: none; padding: 0.8rem 1rem; margin: 0 0 1rem; text-align: left;}
+.match-question .options li {list-style: none; padding: 0.8rem 1rem; margin: 0 0 1rem; text-align: left; line-height: normal;}
 .match-question .stems,
 .match-question .options {width: 40%; margin-right: 10%; float: left;}
 .match-question .stems li,
