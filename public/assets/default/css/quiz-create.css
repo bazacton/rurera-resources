@@ -732,6 +732,29 @@ scrollbar-gutter: stable both-edges;
     padding-top: 50px;
 }
 /*Quistions Type Content Default Style End*/
+
+/*Quistions Type numeric-list style Start*/
+.numeric-list-style {counter-reset: listStyle;}
+.numeric-list-style > .field-holder,
+.numeric-list-style > .form-field {counter-increment: listStyle; position: relative;}
+.lms-sorting-fields.numeric-list-style > .field-holder {padding-left: 45px;}
+.numeric-list-style > .field-holder:before,
+.numeric-list-style > .form-field:before {content: counter(listStyle); position:absolute; top: 50%; left: 10px; font-weight: 700; text-transform: uppercase; border: 1px solid #ddd; width: 24px; height: 24px; text-align: center; line-height: 24px; border-radius: 0; color: #999; margin-top: -12px; z-index: 1;}
+/*Quistions Type numeric-list style End*/
+
+/*Quistions Type Alphabet-list style Start*/
+.alphabet-list-style .lms-radio-select.image-right .field-holder input[type="radio"] ~ label,
+.numeric-list-style .lms-radio-select .field-holder label,
+.alphabet-list-style .lms-radio-select.image-right .field-holder input[type="radio"] ~ label,
+.alphabet-list-style .lms-checkbox-img.image-right .form-field input[type="checkbox"] ~ label,
+.numeric-list-style .lms-radio-select.image-right .field-holder input[type="radio"] ~ label,
+.numeric-list-style .lms-checkbox-img.image-right .form-field input[type="checkbox"] ~ label{padding-left: 45px;}
+.numeric-list-style .lms-radio-select.image-right .field-holder input[type="radio"]:checked ~ label,
+.alphabet-list-style .lms-radio-select.image-right .field-holder input[type="radio"]:checked ~ label  {padding-left: 45px;}
+.numeric-list-style .lms-radio-select.image-right .field-holder label:before,
+.alphabet-list-style .lms-radio-select.image-right .field-holder label:before {left: 40px;}
+/*Quistions Type Alphabet-list style End*/
+
 /*Inactivity Modal on quiz layout page start*/
 .activity-scores {margin: 0 0 30px;}
 .activity-scores li,
