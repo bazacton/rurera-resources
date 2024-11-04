@@ -744,6 +744,14 @@ scrollbar-gutter: stable both-edges;
 /*Quistions Type numeric-list style End*/
 
 /*Quistions Type Alphabet-list style Start*/
+.alphabet-list-style {counter-reset: listStyle;}
+.alphabet-list-style .field-holder,
+.alphabet-list-style .form-field {counter-increment: listStyle; position: relative; padding-left: 45px;}
+.alphabet-list-style .field-holder:has(input),
+.alphabet-list-style .form-field:has(input){padding-left: 0;}
+.alphabet-list-style .field-holder:before,
+.alphabet-list-style .form-field:before {content: counter(listStyle, lower-alpha); position: absolute; top: 50%; left: 10px; font-weight: 700; text-transform: uppercase; border: 1px solid #ddd; width: 24px; height: 24px; text-align: center; line-height: 24px; border-radius: 2px; color: #999; margin-top: -12px; z-index: 2; }
+.alphabet-list-style .form-field input[type="checkbox"] ~ label {padding-left: 45px;}
 .alphabet-list-style .lms-radio-select.image-right .field-holder input[type="radio"] ~ label,
 .numeric-list-style .lms-radio-select .field-holder label,
 .alphabet-list-style .lms-radio-select.image-right .field-holder input[type="radio"] ~ label,
