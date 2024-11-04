@@ -286,7 +286,7 @@
 	
 	<div class="row">
 		
-		<div class="col-md-12 col-lg-12 mt-3">
+		<div class="col-md-6 col-lg-4 mt-3">
 			<!-- Rewording Level -->
 			<label for="rewording_level">Rewording Level (0 - 100%):</label>
 			<div class="range-output">
@@ -294,7 +294,7 @@
 				<output>50</output>
 			</div>
 		</div>
-		<div class="col-md-12 col-lg-12">
+		<div class="col-md-6 col-lg-4">
 			<!-- Content Text Length -->
 			<label for="content_text_length">Content Text Length (Max 50 Words):</label>
 			<div class="range-output">
@@ -302,7 +302,7 @@
 				<output>50</output>
 			</div>
 		</div>
-		<div class="col-md-12 col-lg-12">
+		<div class="col-md-6 col-lg-4">
 			<!-- Number of Questions -->
 			<label for="num_questions">Number of Questions (Max 20):</label>
 			<div class="range-output">
