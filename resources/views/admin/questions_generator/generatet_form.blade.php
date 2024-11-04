@@ -335,22 +335,35 @@
 		<!-- Example Form -->
 		
 		<div class="example-question-block rurera-hide">
-			<div class="form-group intro-field">
-				<label for="intro_text_0">Intro Text:</label>
-				<textarea name="intro_text" id="intro_text_0" rows="2"></textarea>
+			<div class="row">
+				<div class="col-md-6 col-lg-3">
+					<div class="form-group intro-field">
+						<label for="intro_text_0">Intro Text:</label>
+						<textarea name="intro_text" id="intro_text_0" rows="2" class="w-100"></textarea>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="form-group passage-field">
+						<label for="passage_0">Passage:</label>
+						<textarea name="passage" id="passage_0" rows="4" class="w-100"></textarea>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="form-group">
+						<label for="main_question_0">Main Question:</label>
+						<input type="text" name="main_question" id="main_question_0" value="">
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="form-group">
+						<label for="fact_integration">Fact Integration:</label>
+						<input type="text" name="fact_integration" id="fact_integration" value="">
+					</div>
+				</div>
 			</div>
-			<div class="form-group passage-field">
-				<label for="passage_0">Passage:</label>
-				<textarea name="passage" id="passage_0" rows="4"></textarea>
-			</div>
-			<div class="form-group">
-				<label for="main_question_0">Main Question:</label>
-				<input type="text" name="main_question" id="main_question_0" value="">
-			</div>
-			<div class="form-group">
-				<label for="fact_integration">Fact Integration:</label>
-				<input type="text" name="fact_integration" id="fact_integration" value="">
-			</div>
+			
+			
+			
 			<div class="form-group">
 				<label for="instruction_0">Instruction:</label>
 				<input type="text" name="instruction" id="instruction_0" value="">
