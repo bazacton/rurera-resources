@@ -223,7 +223,7 @@
 
 			</div>
 		</div>
-		<div class="col-md-12 col-lg-12">
+		<div class="col-md-6 col-lg-6">
 			<div class="form-group">
 				<!-- Grade Selection -->
 				<input type="hidden" name="grade" id="grade1" value="7">
@@ -285,7 +285,7 @@
 				<label for="include_passage">Include Passage</label>
 			</div>
 		</div>
-		<div class="col-md-12 col-lg-12">
+		<div class="col-md-12 col-lg-12 mt-3">
 			<!-- Rewording Level -->
 			<label for="rewording_level">Rewording Level (0 - 100%):</label>
 			<div class="range-output">
