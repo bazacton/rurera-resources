@@ -343,7 +343,8 @@ Questions Builder Right Sidebar Style Start
 .note-dropdown-menu h3,
 .note-dropdown-menu h4,
 .note-dropdown-menu h5,
-.note-dropdown-menu h6 {
+.note-dropdown-menu h6,
+.card .card-header .note-dropdown-menu h4 {
     font-size: 14px;
 }
 .lms-quiz-create .rureraform-admin-popup-inner {height: auto; position: relative; box-sizing: border-box; border: 1px solid #ccc;}
