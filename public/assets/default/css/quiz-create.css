@@ -949,6 +949,9 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .column-4 .input-holder:last-child,
 .column-3 .input-holder:last-child {margin-right: 0;}
 .question-textarea .column-3 .input-holder {width: 33.333%;}
+.rureraform-properties-label {
+    display: inline-block;
+}
 .input-holder,
 .lms-quiz-section .input-holder {border: 1px solid #ddd; display: inline-block; line-height: normal; position: relative; border-radius: 8px; vertical-align: middle; margin: 0 3px;}
 .input-holder:has(textarea), .lms-quiz-section .input-holder:has(textarea) {margin: 0;}
