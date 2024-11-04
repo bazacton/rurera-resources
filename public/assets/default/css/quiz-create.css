@@ -48,7 +48,7 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 
 /* Columns Selection Style Start */
 .rureraform-admin-editor * {box-sizing: border-box;}
-.rureraform-form {position: relative;max-width: 960px;width: 96%;margin: 0 auto;display: none;}
+.rureraform-form {position: relative;}
 .rureraform-elements {min-height: 60px;}
 .rureraform-element {width: 100%;outline: 1px dashed #f3f1f1 !important;height: auto !important;margin-top: 10px;margin-bottom: 10px;padding: 10px;display: block !important;visibility: visible !important;opacity: 1 !important;}
 .rureraform-element:hover {outline: 2px solid #26B99A !important;}
@@ -856,10 +856,8 @@ scrollbar-gutter: stable both-edges;
 /* Quiz Status Bar Style End */
 /*Question Number Style Start*/
 .question-number {display: inline-block; background-color: #1e1e1b; color: #fff; margin-left:10px; padding: 5px 15px; border-radius: 6px; min-width: 48px; text-align: center;}
-/*.question-number-holder {width: 45px; text-align: center; float: left; margin-right: 20px; position: absolute; margin-top: 0; cursor: pointer; z-index: 1 !important;}*/
+.question-number-holder { margin-bottom: 20px; position: relative; z-index: 1;}
 .question-number-holder ~ .show-notifications { margin-bottom: 30px;}
-/*.question-number-holder .question-number {margin: 0 0 0 -95px; }*/
-/*.question-number-holder ~ span {padding-left: 65px;}*/
 /*Question Number Style End*/
 /*Quiz prev-next-controls Style Start*/
 .prev-next-controls {display: flex; align-items: center; justify-content: center; margin-top: 20px; position: relative; padding-left: 100px;}
