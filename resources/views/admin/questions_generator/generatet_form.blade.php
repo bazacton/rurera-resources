@@ -141,15 +141,15 @@
 				<div class="card-body">
 
 	<form action="/admin/questions-generator/generate-questions" method="POST">
-		@csrf
-		
-        <!-- Content Text Area -->
-        <label for="content">Enter Content (Max 400 Words):</label>
-        <textarea name="content" id="content" rows="4" maxlength="400" required></textarea>
+	@csrf
 
-		
-		
-		<div class="col-md-3">
+	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			<!-- Content Text Area -->
+			<label for="content">Enter Content (Max 400 Words):</label>
+			<textarea name="content" id="content" rows="4" maxlength="400" required></textarea>
+		</div>
+		<div class="col-md-12 col-lg-12">
 			<div class="form-group">
 				<label class="input-label">{{trans('admin/main.category')}}</label>
 				<select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="">
@@ -168,84 +168,81 @@
 				</select>
 			</div>
 		</div>
-	
-	
-	
-	
+		
+		<div class="col-md-12 col-lg-12">
+			<div class="form-group">
+				<label>Subjects</label>
+				<select data-return_type="option"
+						data-default_id="{{request()->get('subject_id')}}" data-chapter_id=""
+						class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
+						id="subject_id" name="subject_id">
+					<option disabled selected>Subject</option>
+				</select>
+				@error('subject_id')
+				<div class="invalid-feedback">
+					{{ $message }}
+				</div>
+				@enderror
+			</div>
+		</div>
+		
+		
+		<div class="col-md-12 col-lg-12">
+			<div class="form-group">
+				<label class="input-label">Topic</label>
+				<select data-sub_chapter_id="" id="chapter_id"
+						class="form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
+						name="chapter_id">
+					<option value="">Please select year, subject</option>
+				</select>
+				@error('chapter_id')
+				<div class="invalid-feedback">
+					{{ $message }}
+				</div>
+				@enderror
 
-	<div class="col-md-3">
-		<div class="form-group">
-			<label>Subjects</label>
-			<select data-return_type="option"
-					data-default_id="{{request()->get('subject_id')}}" data-chapter_id=""
-					class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
-					id="subject_id" name="subject_id">
-				<option disabled selected>Subject</option>
+			</div>
+		</div>
+		
+		
+		<div class="col-md-12 col-lg-12">
+			<div class="form-group">
+				<label class="input-label">Sub Topic</label>
+				<select id="chapter_id"
+					class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+					name="sub_chapter_id">
+				<option value="">Please select year, subject, Topic</option>
 			</select>
-			@error('subject_id')
+			@error('sub_chapter_id')
 			<div class="invalid-feedback">
 				{{ $message }}
 			</div>
 			@enderror
-		</div>
-	</div>
-	
-	
-	<div class="col-md-2">
-	<div class="form-group">
-		<label class="input-label">Topic</label>
-		<select data-sub_chapter_id="" id="chapter_id"
-				class="form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
-				name="chapter_id">
-			<option value="">Please select year, subject</option>
-		</select>
-		@error('chapter_id')
-		<div class="invalid-feedback">
-			{{ $message }}
-		</div>
-		@enderror
 
-	</div>
-	</div>
-	
-	
-	<div class="col-md-2">
-	<div class="form-group">
-		<label class="input-label">Sub Topic</label>
-		<select id="chapter_id"
-			class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
-			name="sub_chapter_id">
-		<option value="">Please select year, subject, Topic</option>
-	</select>
-	@error('sub_chapter_id')
-	<div class="invalid-feedback">
-		{{ $message }}
-	</div>
-	@enderror
-	
-
-	</div>
-	</div>
-		<div class="col-md-12">
+			</div>
+		</div>
+		<div class="col-md-12 col-lg-12">
 			<div class="form-group">
-        <!-- Grade Selection -->
-		<input type="hidden" name="grade" id="grade1" value="7">
-        <!-- Question Type -->
-        <label>Question Type (optional):</label>
-        <div class="list-group">
-            <input type="radio" name="question_type" id="type_mc" value="multiple_choice">
-            <label for="type_mc">Multiple Choice</label>
-            <input type="radio" name="question_type" id="type_tf" value="true_false">
-            <label for="type_tf">True or False</label>
-            <input type="radio" name="question_type" id="type_oq" value="open_question">
-            <label for="type_oq">Open Question</label>
-            <input type="radio" name="question_type" id="type_fill" value="fill_in_the_blank">
-            <label for="type_fill">Fill in the Blank</label>
-            <input type="radio" name="question_type" id="type_match" value="matching">
-            <label for="type_match">Matching</label>
-        </div>
+				<!-- Grade Selection -->
+				<input type="hidden" name="grade" id="grade1" value="7">
+				<!-- Question Type -->
+				<label>Question Type (optional):</label>
+				<div class="list-group">
+					<input type="radio" name="question_type" id="type_mc" value="multiple_choice">
+					<label for="type_mc">Multiple Choice</label>
+					<input type="radio" name="question_type" id="type_tf" value="true_false">
+					<label for="type_tf">True or False</label>
+					<input type="radio" name="question_type" id="type_oq" value="open_question">
+					<label for="type_oq">Open Question</label>
+					<input type="radio" name="question_type" id="type_fill" value="fill_in_the_blank">
+					<label for="type_fill">Fill in the Blank</label>
+					<input type="radio" name="question_type" id="type_match" value="matching">
+					<label for="type_match">Matching</label>
+				</div>
+			</div>
+		</div>
 	</div>
-	</div>
+	
 
         <!-- Number of Options -->
         <label>Number of Options (0-6):</label>
