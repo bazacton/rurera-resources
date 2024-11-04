@@ -856,7 +856,7 @@ scrollbar-gutter: stable both-edges;
 /* Quiz Status Bar Style End */
 /*Question Number Style Start*/
 .question-number {display: inline-block; background-color: #1e1e1b; color: #fff; margin-left:10px; padding: 5px 15px; border-radius: 6px; min-width: 48px; text-align: center;}
-.question-number-holder { margin-bottom: 20px; position: relative; z-index: 1;}
+.question-number-holder { margin-bottom: 20px; display: inline-block;}
 .question-number-holder ~ .show-notifications { margin-bottom: 30px;}
 /*Question Number Style End*/
 /*Quiz prev-next-controls Style Start*/
