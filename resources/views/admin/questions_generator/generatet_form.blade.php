@@ -310,7 +310,7 @@
 				<output>2</output>
 			</div>
 		</div>
-		<div class="col-md-12 col-lg-12">
+		<div class="col-md-12 col-lg-12 mt-3">
 			<!-- Difficulty Level -->
 		
 			<label>Select Difficulty Level:</label>
