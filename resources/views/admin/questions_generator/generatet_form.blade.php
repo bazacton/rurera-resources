@@ -360,14 +360,17 @@
 						<input type="text" name="fact_integration" id="fact_integration" value="">
 					</div>
 				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="form-group">
+						<label for="instruction_0">Instruction:</label>
+						<input type="text" name="instruction" id="instruction_0" value="">
+					</div>
+				</div>
 			</div>
 			
 			
 			
-			<div class="form-group">
-				<label for="instruction_0">Instruction:</label>
-				<input type="text" name="instruction" id="instruction_0" value="">
-			</div>
+			
             <label>Options:</label>
             <div class="options-container" data-options-container="0" >
 					<div class="option-group" data-option-index="0">
