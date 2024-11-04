@@ -245,77 +245,89 @@
 		</div>
 	</div>
 	
-
-        <!-- Number of Options -->
-        <label>Number of Options (0-6):</label>
-        <div class="list-group">
-            <input type="radio" name="num_options" id="options1" value="1">
-            <label for="options1">1</label>
-            <input type="radio" name="num_options" id="options2" value="2">
-            <label for="options2">2</label>
-            <input type="radio" name="num_options" id="options3" value="3">
-            <label for="options3">3</label>
-            <input type="radio" name="num_options" id="options4" value="4">
-            <label for="options4">4</label>
-            <input type="radio" name="num_options" id="options5" value="5">
-            <label for="options5">5</label>
-            <input type="radio" name="num_options" id="options6" value="6">
-            <label for="options6">6</label>
-        </div>
-
-        <!-- Correct Answers -->
-        <label>Select Correct Answers (2-3):</label>
-        <div class="list-group">
-			<input type="checkbox" name="num_correct_answers[]" id="correct1" value="1">
-            <label for="correct1">1</label>
-            <input type="checkbox" name="num_correct_answers[]" id="correct2" value="2">
-            <label for="correct2">2</label>
-            <input type="checkbox" name="num_correct_answers[]" id="correct3" value="3">
-            <label for="correct3">3</label>
-        </div>
-
-        <!-- Include Intro Text and Passage Checkboxes -->
-        <div class="list-group">
-            <input type="checkbox" name="include_intro_text" class="include_intro_text" id="include_intro_text">
-            <label for="include_intro_text">Include Intro Text</label>
-            <input type="checkbox" name="include_passage" class="include_passage" id="include_passage">
-            <label for="include_passage">Include Passage</label>
-        </div>
-		
-		<!-- Rewording Level -->
-		<label for="rewording_level">Rewording Level (0 - 100%):</label>
-		<div class="range-output">
-			<input type="range" name="rewording_level" id="rewording_level" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
-			<output>50</output>
+	<div class="row">
+		<div class="col-md-6 col-lg-6">
+			<!-- Number of Options -->
+			<label>Number of Options (0-6):</label>
+			<div class="list-group">
+				<input type="radio" name="num_options" id="options1" value="1">
+				<label for="options1">1</label>
+				<input type="radio" name="num_options" id="options2" value="2">
+				<label for="options2">2</label>
+				<input type="radio" name="num_options" id="options3" value="3">
+				<label for="options3">3</label>
+				<input type="radio" name="num_options" id="options4" value="4">
+				<label for="options4">4</label>
+				<input type="radio" name="num_options" id="options5" value="5">
+				<label for="options5">5</label>
+				<input type="radio" name="num_options" id="options6" value="6">
+				<label for="options6">6</label>
+			</div>
 		</div>
-
-		<!-- Content Text Length -->
-		<label for="content_text_length">Content Text Length (Max 50 Words):</label>
-		<div class="range-output">
-			<input type="range" name="content_text_length" id="content_text_length" min="1" max="50" value="50" oninput="this.nextElementSibling.value = this.value">
-			<output>50</output>
+		<div class="col-md-6 col-lg-6">
+			<!-- Correct Answers -->
+			<label>Select Correct Answers (2-3):</label>
+			<div class="list-group">
+				<input type="checkbox" name="num_correct_answers[]" id="correct1" value="1">
+				<label for="correct1">1</label>
+				<input type="checkbox" name="num_correct_answers[]" id="correct2" value="2">
+				<label for="correct2">2</label>
+				<input type="checkbox" name="num_correct_answers[]" id="correct3" value="3">
+				<label for="correct3">3</label>
+			</div>
 		</div>
-
-		<!-- Number of Questions -->
-		<label for="num_questions">Number of Questions (Max 20):</label>
-		<div class="range-output">
-			<input type="range" name="num_questions" id="num_questions" min="1" max="20" value="2" oninput="this.nextElementSibling.value = this.value">
-			<output>2</output>
+		<div class="col-md-6 col-lg-6">
+			<!-- Include Intro Text and Passage Checkboxes -->
+			<div class="list-group">
+				<input type="checkbox" name="include_intro_text" class="include_intro_text" id="include_intro_text">
+				<label for="include_intro_text">Include Intro Text</label>
+				<input type="checkbox" name="include_passage" class="include_passage" id="include_passage">
+				<label for="include_passage">Include Passage</label>
+			</div>
+		</div>
+		<div class="col-md-6 col-lg-6">
+			<!-- Rewording Level -->
+			<label for="rewording_level">Rewording Level (0 - 100%):</label>
+			<div class="range-output">
+				<input type="range" name="rewording_level" id="rewording_level" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+				<output>50</output>
+			</div>
+		</div>
+		<div class="col-md-6 col-lg-6">
+			<!-- Content Text Length -->
+			<label for="content_text_length">Content Text Length (Max 50 Words):</label>
+			<div class="range-output">
+				<input type="range" name="content_text_length" id="content_text_length" min="1" max="50" value="50" oninput="this.nextElementSibling.value = this.value">
+				<output>50</output>
+			</div>
+		</div>
+		<div class="col-md-6 col-lg-6">
+			<!-- Number of Questions -->
+			<label for="num_questions">Number of Questions (Max 20):</label>
+			<div class="range-output">
+				<input type="range" name="num_questions" id="num_questions" min="1" max="20" value="2" oninput="this.nextElementSibling.value = this.value">
+				<output>2</output>
+			</div>
+		</div>
+		<div class="col-md-6 col-lg-6">
+			<!-- Difficulty Level -->
+		
+			<label>Select Difficulty Level:</label>
+			<div class="list-group">
+				<input type="radio" name="difficulty" id="level_0" value="Easy" checked>
+				<label for="level_0">Easy</label>
+				
+				<input type="radio" name="difficulty" id="level_1" value="Moderate">
+				<label for="level_1">Moderate</label>
+				
+				<input type="radio" name="difficulty" id="level_2" value="Hard">
+				<label for="level_2">Hard</label>
+			</div>
 		</div>
 		
-		<!-- Difficulty Level -->
+	</div>
 		
-		<label>Select Difficulty Level:</label>
-        <div class="list-group">
-            <input type="radio" name="difficulty" id="level_0" value="Easy" checked>
-            <label for="level_0">Easy</label>
-			
-            <input type="radio" name="difficulty" id="level_1" value="Moderate">
-            <label for="level_1">Moderate</label>
-			
-            <input type="radio" name="difficulty" id="level_2" value="Hard">
-            <label for="level_2">Hard</label>
-        </div>
+		
 		
 		
 		
