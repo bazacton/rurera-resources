@@ -351,19 +351,19 @@
 				<div class="col-md-6 col-lg-3">
 					<div class="form-group">
 						<label for="main_question_0">Main Question:</label>
-						<input type="text" name="main_question" id="main_question_0" value="">
+						<input type="text" name="main_question" id="main_question_0" class="w-100" value="">
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3">
 					<div class="form-group">
 						<label for="fact_integration">Fact Integration:</label>
-						<input type="text" name="fact_integration" id="fact_integration" value="">
+						<input type="text" name="fact_integration" id="fact_integration" class="w-100" value="">
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3">
 					<div class="form-group">
 						<label for="instruction_0">Instruction:</label>
-						<input type="text" name="instruction" id="instruction_0" value="">
+						<input type="text" name="instruction" id="instruction_0" class="w-100" value="">
 					</div>
 				</div>
 			</div>
