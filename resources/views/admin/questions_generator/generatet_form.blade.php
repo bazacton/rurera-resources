@@ -284,9 +284,9 @@
 		</div>
 	</div>
 	
-	<div class="row">
+	<div class="row mt-3">
 		
-		<div class="col-md-6 col-lg-4 mt-3">
+		<div class="col-md-6 col-lg-4">
 			<!-- Rewording Level -->
 			<label for="rewording_level">Rewording Level (0 - 100%):</label>
 			<div class="range-output">
