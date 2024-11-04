@@ -10,7 +10,7 @@ Questions Builder style start
 
 /* Toolbar Buttons style start */
 .rureraform-pages-bar {display: none;}
-.rureraform-toolbars {position: sticky;top: 0; left: 0;right: 0;width: 100% !important; border-top: 1px solid #d4d4d4;} 
+.rureraform-toolbars {position: sticky;top: 0; left: 0;right: 0;width: 100% !important; border-top: 1px solid #d4d4d4; z-index: 1;} 
 html.rureraform-toolbars-fixed .rureraform-toolbars {position: sticky;z-index: 1000;}/* Toolbar Buttons style start */
 html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbars {top: 32px;}
 html.wp-toolbar .rureraform-toolbar-tooltipster {margin-top: -32px;}
