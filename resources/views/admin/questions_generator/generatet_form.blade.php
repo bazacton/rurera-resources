@@ -148,10 +148,10 @@
 			<div class="form-group">
 				<!-- Content Text Area -->
 				<label for="content">Enter Content (Max 400 Words):</label>
-				<textarea name="content" id="content" rows="4" maxlength="400" required></textarea>
+				<textarea class="w-100" name="content" id="content" rows="4" maxlength="400" required></textarea>
 			</div>
 		</div>
-		<div class="col-md-12 col-lg-12">
+		<div class="col-md-6 col-lg-3">
 			<div class="form-group">
 				<label class="input-label">{{trans('admin/main.category')}}</label>
 				<select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="">
@@ -171,7 +171,7 @@
 			</div>
 		</div>
 		
-		<div class="col-md-12 col-lg-12">
+		<div class="col-md-6 col-lg-3">
 			<div class="form-group">
 				<label>Subjects</label>
 				<select data-return_type="option"
@@ -189,7 +189,7 @@
 		</div>
 		
 		
-		<div class="col-md-12 col-lg-12">
+		<div class="col-md-6 col-lg-3">
 			<div class="form-group">
 				<label class="input-label">Topic</label>
 				<select data-sub_chapter_id="" id="chapter_id"
@@ -207,7 +207,7 @@
 		</div>
 		
 		
-		<div class="col-md-12 col-lg-12">
+		<div class="col-md-6 col-lg-3">
 			<div class="form-group">
 				<label class="input-label">Sub Topic</label>
 				<select id="chapter_id"
@@ -223,7 +223,7 @@
 
 			</div>
 		</div>
-		<div class="col-md-12 col-lg-12">
+		<div class="col-md-6 col-lg-3">
 			<div class="form-group">
 				<!-- Grade Selection -->
 				<input type="hidden" name="grade" id="grade1" value="7">
