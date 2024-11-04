@@ -744,7 +744,9 @@ scrollbar-gutter: stable both-edges;
 .numeric-list-style > .form-field {counter-increment: listStyle; position: relative;}
 .lms-sorting-fields.numeric-list-style > .field-holder {padding-left: 45px;}
 .numeric-list-style > .field-holder:before,
-.numeric-list-style > .form-field:before {content: counter(listStyle); position:absolute; top: 50%; left: 10px; font-weight: 700; text-transform: uppercase; border: 1px solid #ddd; width: 24px; height: 24px; text-align: center; line-height: 24px; border-radius: 0; color: #999; margin-top: -12px; z-index: 1;}
+.numeric-list-style > .form-field:before {content: counter(listStyle); position:absolute; top: 50%; left: 10px; font-weight: 700; text-transform: uppercase; border: 1px solid #ddd; width: 24px; height: 24px; text-align: center; line-height: 24px; border-radius: 0; color: #999; margin-top: -12px; z-index: 1; display: inline-flex;
+    justify-content: center;
+    align-items: center;}
 .numeric-list-style .form-field label {padding-left: 45px;}
 /*Quistions Type numeric-list style End*/
 
@@ -755,7 +757,9 @@ scrollbar-gutter: stable both-edges;
 .alphabet-list-style .field-holder:has(input),
 .alphabet-list-style .form-field:has(input){padding-left: 0;}
 .alphabet-list-style .field-holder:before,
-.alphabet-list-style .form-field:before {content: counter(listStyle, lower-alpha); position: absolute; top: 50%; left: 10px; font-weight: 700; text-transform: uppercase; border: 1px solid #ddd; width: 24px; height: 24px; text-align: center; line-height: 24px; border-radius: 2px; color: #999; margin-top: -12px; z-index: 2; }
+.alphabet-list-style .form-field:before {content: counter(listStyle, lower-alpha); position: absolute; top: 50%; left: 10px; font-weight: 700; text-transform: uppercase; border: 1px solid #ddd; width: 24px; height: 24px; text-align: center; line-height: 24px; border-radius: 2px; color: #999; margin-top: -12px; z-index: 2; display: inline-flex;
+    justify-content: center;
+    align-items: center;}
 .alphabet-list-style .form-field input[type="checkbox"] ~ label {padding-left: 45px;}
 .alphabet-list-style .lms-radio-select.image-right .field-holder input[type="radio"] ~ label,
 .numeric-list-style .lms-radio-select .field-holder label,
