@@ -1424,7 +1424,6 @@ body .question-step:has(.prev-next-controls) {padding-bottom: 0; }
 #question_preview .question-layout .rureraform-element {margin: 0 0 15px; padding: 0; font-size: 18px; color: #5e5c5c; font-weight: 500;}
 #question_preview .question-layout .rureraform-element:has(select),
 #question_preview .question-layout .rureraform-element:has(input) {line-height: 40px;}
-#question_preview .question-fields .left-content:has(.question-number-holder) .quiz-status-bar {margin-bottom: 90px;}
 #question_preview .question-layout .rureraform-element p {line-height: normal; color: #5e5c5c; font-weight: 700; font-size: 16px;}
 #question_preview .question-layout .rureraform-element .question-example p {margin-bottom: 0;}
 #question_preview .question-label {padding-bottom: 10px;}
