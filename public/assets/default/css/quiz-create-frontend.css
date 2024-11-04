@@ -2458,9 +2458,12 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {
 	background: white;
 }
 .rureraform-col {
-	padding: 10px 10px !important;
-	float: left;
+	padding: 10px !important;
 	outline: 1px dashed #ccc;
+	display: inline-block;
+    vertical-align: middle;
+    float: none;
+    margin-right: -4px;
 }
 .rureraform-col .rureraform-element:first-of-type {
 	margin-top: 0;
