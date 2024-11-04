@@ -1432,9 +1432,7 @@ body .question-step:has(.prev-next-controls) {padding-bottom: 0; }
 #question_preview .question-layout {padding-left: 10px;}
 #question_preview .marks {right: 30px; top: 20px; bottom: auto;}
 #question_preview .question-layout-block .prev-next-controls {position: absolute;}
-
-
-
+.topic-parts-options .form-field {margin-bottom: 15px;}
 .lms-quiz-create .lms-dashboard-card {box-shadow: none;}
 
 /*pages Book List Style Start*/
