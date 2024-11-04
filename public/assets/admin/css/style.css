@@ -1431,6 +1431,7 @@ body .question-step:has(.prev-next-controls) {padding-bottom: 0; }
 #question_preview .question-label {padding-bottom: 10px;}
 #question_preview .question-fields {overflow: inherit;}
 #question_preview .left-content {position: relative; width: 100%; max-width: 875px; overflow: inherit; margin: 0 auto; min-height: 150px;}
+#question_preview .question-layout {padding-left: 10px;}
 #question_preview .marks {right: 30px; top: 20px; bottom: auto;}
 
 
