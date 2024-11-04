@@ -243,10 +243,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-md-6 col-lg-6">
+		<div class="col-md-6 col-lg-3">
 			<!-- Number of Options -->
 			<label>Number of Options (0-6):</label>
 			<div class="list-group">
@@ -264,7 +261,7 @@
 				<label for="options6">6</label>
 			</div>
 		</div>
-		<div class="col-md-6 col-lg-6">
+		<div class="col-md-6 col-lg-3">
 			<!-- Correct Answers -->
 			<label>Select Correct Answers (2-3):</label>
 			<div class="list-group">
@@ -276,7 +273,7 @@
 				<label for="correct3">3</label>
 			</div>
 		</div>
-		<div class="col-md-6 col-lg-6">
+		<div class="col-md-6 col-lg-3">
 			<!-- Include Intro Text and Passage Checkboxes -->
 			<div class="list-group">
 				<input type="checkbox" name="include_intro_text" class="include_intro_text" id="include_intro_text">
@@ -285,6 +282,10 @@
 				<label for="include_passage">Include Passage</label>
 			</div>
 		</div>
+	</div>
+	
+	<div class="row">
+		
 		<div class="col-md-12 col-lg-12 mt-3">
 			<!-- Rewording Level -->
 			<label for="rewording_level">Rewording Level (0 - 100%):</label>
