@@ -324,7 +324,7 @@ Lms Table Style End
 
 /*Field col style start*/
 .rurera-in-cols {gap: 14px; display: flex; flex-wrap: wrap; flex-direction: column; }
-.rureraform-element .rureraform-col .rureraform-element {padding: 0;}
+.rureraform-element .rureraform-col .rureraform-element {padding: 0; outline: none !important;}
 /*Field col style end*/
 
 /***************************** 
