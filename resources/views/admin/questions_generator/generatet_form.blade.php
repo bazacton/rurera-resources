@@ -99,7 +99,7 @@
 
 @section('content')
 <section class="section">
-	<form action="/admin/questions-generator/generate-questions" method="POST">
+	<form action="/admin/testt" method="POST">
 		@csrf
 		
         <!-- Content Text Area -->
