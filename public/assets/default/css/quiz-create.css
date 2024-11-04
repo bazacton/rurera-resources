@@ -303,8 +303,8 @@ Lms Table Style
 .rureraform-element table.table {margin: 0; border-color: #000; overflow: hidden;}
 .rureraform-element table.table td {line-height: normal; text-align: center; vertical-align: middle; padding: 5px; height: 50px; border-color: #000;}
 .rureraform-element table.table td .field-holder {border: 0;}
-.rureraform-element table.table td:first-child,
-.rureraform-element table.table th:first-child {width: 220px;}
+.rureraform-element table.table td,
+.rureraform-element table.table th {max-width: 220px;}
 .question-layout table.table td p {margin: 0;}
 .rureraform-element table.table td .input-holder {width: 100%; border-width: 0;}
 .rureraform-element table.table td .input-holder input {text-align: center; background-color: initial; border: 1px solid #ddd; height: 38px; min-height: 38px; background-color: #fcfcfc;}
