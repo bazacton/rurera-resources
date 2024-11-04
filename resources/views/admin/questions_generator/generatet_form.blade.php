@@ -223,7 +223,7 @@
 
 			</div>
 		</div>
-		<div class="col-md-6 col-lg-3">
+		<div class="col-md-12 col-lg-12">
 			<div class="form-group">
 				<!-- Grade Selection -->
 				<input type="hidden" name="grade" id="grade1" value="7">
