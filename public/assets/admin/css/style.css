@@ -558,6 +558,7 @@ table tr:hover .table-links {opacity: 1;}
 /* fullscreen-modal */
 .modal-fullscreen.modal-dialog{margin: 0 !important;}
 .modal-fullscreen .modal-content{ height: 100%;}
+.question_edit_part_modal .modal-fullscreen .modal-content {height: auto;}
 
 /* 3.9 Nav */
 .nav-tabs .nav-item .nav-link {color: var(--primary);}
