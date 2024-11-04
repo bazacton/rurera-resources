@@ -1525,6 +1525,7 @@ table#outputTable thead th {
 .card-body .text-right:has(.add-part-modal) {
     float: inline-end;
     margin-bottom: 20px;
+    margin-top: 0 !important;
 }
 .modal-open .modal{
     padding-right: 0 !important;
