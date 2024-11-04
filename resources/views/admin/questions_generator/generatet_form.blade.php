@@ -288,7 +288,7 @@
 		
 		<div class="col-md-6 col-lg-4">
 			<!-- Rewording Level -->
-			<label for="rewording_level">Rewording Level (0 - 100%):</label>
+			<label for="rewording_level" class="mb-0">Rewording Level (0 - 100%):</label>
 			<div class="range-output">
 				<input type="range" name="rewording_level" id="rewording_level" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
 				<output>50</output>
@@ -296,7 +296,7 @@
 		</div>
 		<div class="col-md-6 col-lg-4">
 			<!-- Content Text Length -->
-			<label for="content_text_length">Content Text Length (Max 50 Words):</label>
+			<label for="content_text_length" class="mb-0">Content Text Length (Max 50 Words):</label>
 			<div class="range-output">
 				<input type="range" name="content_text_length" id="content_text_length" min="1" max="50" value="50" oninput="this.nextElementSibling.value = this.value">
 				<output>50</output>
@@ -304,7 +304,7 @@
 		</div>
 		<div class="col-md-6 col-lg-4">
 			<!-- Number of Questions -->
-			<label for="num_questions">Number of Questions (Max 20):</label>
+			<label for="num_questions" class="mb-0">Number of Questions (Max 20):</label>
 			<div class="range-output">
 				<input type="range" name="num_questions" id="num_questions" min="1" max="20" value="2" oninput="this.nextElementSibling.value = this.value">
 				<output>2</output>
