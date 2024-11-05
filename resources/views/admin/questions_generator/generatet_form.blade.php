@@ -420,16 +420,34 @@
 						<!-- Include Intro Text and Passage Checkboxes -->
 						<div class="list-group list-in-row">
 							<div class="row-field">
-								<input type="checkbox" name="include_intro_text" class="include_intro_text" id="include_intro_text" checked>
-								<label for="include_intro_text">Include Intro Text</label>
+							
+								<label class="custom-switch pl-0">
+									<input type="checkbox" name="include_intro_text" id="include_intro_text" value="1" class="custom-switch-input include_intro_text" checked>
+										<span class="custom-switch-indicator"></span>
+										<label class="custom-switch-description mb-0 cursor-pointer" for="include_intro_text">Include Intro Text</label>
+								</label>
 							</div>
 							<div class="row-field">
-								<input type="checkbox" name="include_passage" class="include_passage" id="include_passage" checked>
-								<label for="include_passage">Include Passage</label>
+							
+								<label class="custom-switch pl-0">
+									<input type="checkbox" name="include_passage" id="include_passage" value="1" class="custom-switch-input include_passage" checked>
+										<span class="custom-switch-indicator"></span>
+										<label class="custom-switch-description mb-0 cursor-pointer" for="include_passage">Include Passage</label>
+								</label>
 							</div>
 							<div class="row-field">
-								<input type="checkbox" name="include_fact_integration" class="include_fact_integration" id="include_fact_integration" checked>
-								<label for="include_fact_integration">Include Fact Integration</label>
+								<label class="custom-switch pl-0">
+									<input type="checkbox" name="include_fact_integration" id="include_fact_integration" value="1" class="custom-switch-input include_fact_integration" checked>
+										<span class="custom-switch-indicator"></span>
+										<label class="custom-switch-description mb-0 cursor-pointer" for="include_fact_integration">Include Fact Integration</label>
+								</label>
+							</div>
+							<div class="row-field">
+								<label class="custom-switch pl-0">
+									<input type="checkbox" name="example_question_switch" id="example_question_switch" value="1" class="custom-switch-input example_question_switch" checked>
+										<span class="custom-switch-indicator"></span>
+										<label class="custom-switch-description mb-0 cursor-pointer" for="example_question_switch">Include Example</label>
+								</label>
 							</div>
 						</div>
 					</div>
@@ -497,12 +515,6 @@
 								<label for="level_2">Hard</label>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-12 col-lg-12">
-					<div class="list-group">
-						<input type="checkbox" name="example_question_switch" value="yes" class="example_question_switch" id="example_question_switch" checked>
-						<label for="example_question_switch">Include Example</label>
 					</div>
 				</div>
 				</div>
@@ -623,16 +635,29 @@
 			$(".template_save_modal").modal('show');
 			var form_id = $(this).attr('data-form_id');
 			
-			var formFields = $('#'+form_id).find('input, select, textarea');
+			var formFields = $('#' + form_id).find('input, select, textarea');
 			// Create an object to store the name-value pairs
 			var formData = {};
 			// Iterate over each form field
 			formFields.each(function() {
 				var name = $(this).attr('name');
-				var value = $(this).val();
+				var value;
+
+				if ($(this).is(':checkbox')) {
+					// Get all checked checkboxes with the same name and collect their values
+					value = formFields.filter('[name="' + name + '"]:checked').map(function() {
+						return $(this).val();
+					}).get();
+				} else if ($(this).is(':radio')) {
+					// Get the value of the selected radio button
+					value = formFields.filter('[name="' + name + '"]:checked').val();
+				} else {
+					// For other input types, just get the value
+					value = $(this).val();
+				}
 
 				if (name) {
-					formData[name] = value;	
+					formData[name] = value;
 				}
 			});
 			
