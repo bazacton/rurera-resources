@@ -315,7 +315,7 @@
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-12">
-					<div class="form-group">
+					<div class="form-group mb-0">
 						<label>Setting</label>
 						<!-- Include Intro Text and Passage Checkboxes -->
 						<div class="list-group list-in-row">
