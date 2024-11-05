@@ -244,33 +244,37 @@
 			</div>
 		</div>
 		<div class="col-md-6 col-lg-3">
-			<!-- Number of Options -->
-			<label>Number of Options (0-6):</label>
-			<div class="list-group">
-				<input type="radio" name="num_options" id="options1" value="1">
-				<label for="options1">1</label>
-				<input type="radio" name="num_options" id="options2" value="2">
-				<label for="options2">2</label>
-				<input type="radio" name="num_options" id="options3" value="3">
-				<label for="options3">3</label>
-				<input type="radio" name="num_options" id="options4" value="4">
-				<label for="options4">4</label>
-				<input type="radio" name="num_options" id="options5" value="5">
-				<label for="options5">5</label>
-				<input type="radio" name="num_options" id="options6" value="6">
-				<label for="options6">6</label>
+			<div class="form-group">
+				<!-- Number of Options -->
+				<label>Number of Options (0-6):</label>
+				<div class="list-group">
+					<input type="radio" name="num_options" id="options1" value="1">
+					<label for="options1">1</label>
+					<input type="radio" name="num_options" id="options2" value="2">
+					<label for="options2">2</label>
+					<input type="radio" name="num_options" id="options3" value="3">
+					<label for="options3">3</label>
+					<input type="radio" name="num_options" id="options4" value="4">
+					<label for="options4">4</label>
+					<input type="radio" name="num_options" id="options5" value="5">
+					<label for="options5">5</label>
+					<input type="radio" name="num_options" id="options6" value="6">
+					<label for="options6">6</label>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-6 col-lg-3">
-			<!-- Correct Answers -->
-			<label>Select Correct Answers (2-3):</label>
-			<div class="list-group">
-				<input type="checkbox" name="num_correct_answers[]" id="correct1" value="1">
-				<label for="correct1">1</label>
-				<input type="checkbox" name="num_correct_answers[]" id="correct2" value="2">
-				<label for="correct2">2</label>
-				<input type="checkbox" name="num_correct_answers[]" id="correct3" value="3">
-				<label for="correct3">3</label>
+			<div class="form-group">
+				<!-- Correct Answers -->
+				<label>Select Correct Answers (2-3):</label>
+				<div class="list-group">
+					<input type="checkbox" name="num_correct_answers[]" id="correct1" value="1">
+					<label for="correct1">1</label>
+					<input type="checkbox" name="num_correct_answers[]" id="correct2" value="2">
+					<label for="correct2">2</label>
+					<input type="checkbox" name="num_correct_answers[]" id="correct3" value="3">
+					<label for="correct3">3</label>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-6 col-lg-3">
