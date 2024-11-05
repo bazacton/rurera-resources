@@ -1207,32 +1207,67 @@ $(document).on('click', '.apply-template-field span', function () {
 	var jsonFormData = {};
 
 	form_data.forEach((value, key) => {
-		var name = key;
-		var selected_value = formDataObj[name];
-		
-		
-		if (parentForm.find('[name="'+name+'"]').attr('type') == 'radio' || parentForm.find('[name="'+name+'"]').attr('type') == 'checkbox') {
+    var name = key;
+    var selected_value = formDataObj[name];
+    
+    // Handle radio and checkbox inputs
+    if (parentForm.find('[name="'+name+'"]').attr('type') == 'checkbox') {
+        if (Array.isArray(selected_value)) {
+            // For checkboxes with multiple values
+			parentForm.find('[name="'+name+'"]').prop('checked', false);
+            selected_value.forEach(val => {
+                parentForm.find('[name="'+name+'"][value="'+val+'"]').prop('checked', true);
+            });
+        } else {
+            // For single radio or checkbox
+            parentForm.find('[name="'+name+'"][value="'+selected_value+'"]').prop('checked', true);
+        }
+    } else if (parentForm.find('[name="'+name+'"]').attr('type') == 'radio') {
+		parentForm.find('[name="'+name+'"]').prop('checked', false);
+		if(selected_value == 1){
 			parentForm.find('[name="'+name+'"][value="'+selected_value+'"]').prop('checked', true);
-		}else{
-			parentForm.find('[name="'+name+'"]').val(formDataObj[name]);
 		}
-		
-		jsonFormData[key] = value;
-		if (parentForm.find('[name="'+name+'"]').is('select')) {
-			var next_index = parentForm.find('[name="'+name+'"]').attr('data-next_index');
-			var next_value = formDataObj[next_index];
-			parentForm.find('[name="'+name+'"]').attr('data-next_value', next_value);
-			parentForm.find('[name="'+name+'"]').change();
-		}
-		if (parentForm.find('[name="'+name+'"]').is('textarea')) {
-			if(parentForm.find('[name="'+name+'"]').hasClass('summernote')){
-				parentForm.find('[name="'+name+'"]').summernote('code', formDataObj[name]);
-			}
-		}
-		if(parentForm.find('[name="'+name+'"]').attr('type') == 'range'){
-			parentForm.find('[name="'+name+'"]').change();
-		}
-	});
+    } else if (name.endsWith('[]')) {
+        // Remove the "[]" from the field name for consistency
+        name = name.slice(0, -2);
+		var selected_value = formDataObj[name];
+console.log(selected_value);
+        if (Array.isArray(selected_value)) {
+            // Handle array of values for inputs with the same base name
+			
+            selected_value.forEach((val, idx) => {
+                // Find and set values for inputs with the modified name
+				console.log(val);
+                parentForm.find('[name="'+name+'[]"]').eq(idx).val(val);
+            });
+        }
+    } else {
+        // Handle other input types like text, select, and textarea
+        parentForm.find('[name="'+name+'"]').val(selected_value);
+    }
+
+    // Additional handling for specific input types
+    if (parentForm.find('[name="'+name+'"]').is('select')) {
+        var next_index = parentForm.find('[name="'+name+'"]').attr('data-next_index');
+        var next_value = formDataObj[next_index];
+        parentForm.find('[name="'+name+'"]').attr('data-next_value', next_value);
+        parentForm.find('[name="'+name+'"]').change();
+    }
+
+    if (parentForm.find('[name="'+name+'"]').is('textarea')) {
+        if (parentForm.find('[name="'+name+'"]').hasClass('summernote')) {
+            parentForm.find('[name="'+name+'"]').summernote('code', selected_value);
+        }
+    }
+
+    if (parentForm.find('[name="'+name+'"]').attr('type') == 'range') {
+        parentForm.find('[name="'+name+'"]').change();
+    }
+
+    // Store the form data in the JSON object
+    jsonFormData[key] = value;
+});
+
 });
 
 $(document).on('click', '.remove-template', function () {

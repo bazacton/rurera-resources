@@ -28,7 +28,8 @@
 	}
 	.list-group input[type="radio"]:checked + label,
 	.list-group input[type="checkbox"]:checked + label {
-		border: 2px solid var(--blue);
+		background-color: #4CAF50;
+		color: white;
 	}
 	.range-output {
 		display: flex;
@@ -517,6 +518,11 @@
 					</div>
 				</div>
 				</div>
+				<div class="row">
+					<div class="col-md-12 col-lg-12">
+						<button type="submit" class="submit-btn mt-0">Generate Questions</button>
+					</div>
+				</div>
 			</div>
 			<div class="col-lg-6 col-12">
 				<div class="example-question-block rurera-hide">
@@ -610,11 +616,7 @@
 		</div>
 
         <!-- Other fields (ranges, difficulty, language) are the same as before -->
-		<div class="row">
-			<div class="col-md-6 col-lg-6">
-				<button type="submit" class="submit-btn mt-0">Generate Questions</button>
-			</div>
-		</div>
+		
     </form>
 	</div>
 	</div>
@@ -630,7 +632,24 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-		
+		$('#options-container').on('paste', function(event) {
+			const pasteData = event.originalEvent.clipboardData.getData('text');
+			const items = pasteData.split('\n').filter(item => item.trim() !== '');
+
+			console.log('sdfjsdflsjdlfjsdlfjlsdjfl');
+
+			// Ensure enough fields are available
+			while ($('[name="options[]"]').length < items.length) {
+				addOption();
+			}
+
+			// Distribute items into fields
+			$('[name="options[]"]').each(function(index) {
+				$(this).val(items[index] || ''); // Fill available items or leave empty
+			});
+
+			event.preventDefault();
+		});
 		
 		$(document).on('click', '.save-template-btn', function () {
 			$(".template_save_modal").modal('hide');
@@ -648,39 +667,61 @@
 		});
 		
 		$(document).on('click', '.save-template', function () {
-			// Select all form fields inside the div with id "question_properties"
+			// Show the modal
 			$(".template_save_modal").modal('show');
+
+			// Get the form ID
 			var form_id = $(this).attr('data-form_id');
-			
 			var formFields = $('#' + form_id).find('input, select, textarea');
-			// Create an object to store the name-value pairs
+			
+			// Initialize an object to store the form data
 			var formData = {};
+
 			// Iterate over each form field
 			formFields.each(function() {
 				var name = $(this).attr('name');
 				var value;
 
 				if ($(this).is(':checkbox')) {
-					// Get all checked checkboxes with the same name and collect their values
+					// Handle checkboxes with the same name (multiple values)
 					value = formFields.filter('[name="' + name + '"]:checked').map(function() {
 						return $(this).val();
 					}).get();
 				} else if ($(this).is(':radio')) {
-					// Get the value of the selected radio button
+					// Handle radio buttons (single selected value)
 					value = formFields.filter('[name="' + name + '"]:checked').val();
 				} else {
-					// For other input types, just get the value
+					// Handle other inputs (text, select, textarea)
 					value = $(this).val();
 				}
 
 				if (name) {
-					formData[name] = value;
+					// If the field name ends with "[]", store values in an array
+					if (name.endsWith('[]')) {
+						// Remove the "[]" from the field name for consistency
+						name = name.slice(0, -2);
+
+						// Initialize as an array if it doesn’t already exist
+						if (!formData[name]) {
+							formData[name] = [];
+						}
+						
+						// Concatenate value(s) for this field
+						formData[name] = formData[name].concat(value);
+					} else {
+						// Store single value fields directly
+						formData[name] = value;
+					}
 				}
 			});
+
 			console.log(formData);
+			
+			// Encode the form data as JSON and store it in a hidden input
 			var jsonFormData = JSON.stringify(formData);
 			$(".form_data_encoded").val(jsonFormData);
 		});
+
 	
 	
 		
@@ -772,6 +813,9 @@
 		
 		
     });
+	
+	
+
 	function addOption(questionIndex) {
         const container = document.querySelector(`[data-options-container="${questionIndex}"]`);
         const optionIndex = container.children.length;
