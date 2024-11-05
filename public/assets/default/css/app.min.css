@@ -915,11 +915,16 @@ Sats Preparation Page Style End
 .clockpicker-popover .clockpicker-canvas line {stroke: var(--primary) !important;}
 .clockpicker-popover .clockpicker-am-pm-block {visibility: hidden; opacity: 0; position: absolute;}
 .clockpicker-popover .popover-content {background-color: #fff !important;}
-.pulsate {-webkit-animation: pulsate .5s ease-out; -webkit-animation-iteration-count: infinite; opacity: .4;}
+.pulsate {-webkit-animation: pulsate .5s ease-out; -webkit-animation-iteration-count: infinite;animation: pulsate .5s ease-out; animation-iteration-count: infinite; opacity: .4;}
 @-webkit-keyframes pulsate {
     0% {opacity: .4;}
     50% {opacity: 1;}
     to { opacity: .4;}
+}
+@keyframes pulsate {
+  0% {opacity: .4;}
+  50% {opacity: 1;}
+  to { opacity: .4;}
 }
 .plan-switch-holder {text-align: center; margin: 0 0 50px; display: inline-flex; align-items: flex-start; justify-content: center; flex-wrap: wrap; position: relative;}
 .plan-switch-option {display: flex; align-items: center; justify-content: center; gap: 0;}
@@ -1368,7 +1373,7 @@ Lms Diagram Style
 .lms-diagram .diagram-field {margin: 0 25px;}
 .lms-diagram .diagram-field label {display: flex; flex-direction: column; align-items: center; justify-content: center;}
 .lms-diagram .diagram-field label img {margin: 0 0 28px;}
-.lms-diagram .diagram-field input[type=checkbox] {border: 1px solid #000; position: relative; -moz-appearance: none; -webkit-appearance: none; -o-appearance: none; height: 19px; width: 19px;}
+.lms-diagram .diagram-field input[type=checkbox] {border: 1px solid #000; position: relative; -moz-appearance: none; -webkit-appearance: none; appearance: button; -o-appearance: none; height: 19px; width: 19px;}
 .lms-diagram .diagram-field input[type=checkbox]:checked:before {content: '?'; transform: scale(2.5); position: absolute; right: 0px; top: -5px; font-size: 12px; color: #70c17c;}
 /**********************************
 Lms Describe Sentences Style
