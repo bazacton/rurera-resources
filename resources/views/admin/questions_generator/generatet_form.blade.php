@@ -28,8 +28,7 @@
 	}
 	.list-group input[type="radio"]:checked + label,
 	.list-group input[type="checkbox"]:checked + label {
-		background-color: #4CAF50;
-		color: white;
+		border: 2px solid var(--blue);
 	}
 	.range-output {
 		display: flex;
