@@ -175,6 +175,18 @@
 			padding-left: 30px;
 			height: 100%;
 		}
+		
+		/* Questions Defined Searches style Start */
+		.defined-searches {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			margin-bottom: 25px;
+		}
+		.defined-searches .save-template {
+			margin-left: auto;
+		}
+	/* Questions Defined Searches style end */
     </style>
 <link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
 @endpush
@@ -402,6 +414,10 @@
 								<input type="checkbox" name="include_passage" class="include_passage" id="include_passage" checked>
 								<label for="include_passage">Include Passage</label>
 							</div>
+							<div class="row-field">
+								<input type="checkbox" name="include_fact_integration" class="include_fact_integration" id="include_fact_integration" checked>
+								<label for="include_fact_integration">Include Fact Integration</label>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -502,7 +518,7 @@
 								<input type="text" name="main_question" id="main_question_0" class="w-100 form-control" value="">
 							</div>
 						</div>
-						<div class="col-md-6 col-lg-12">
+						<div class="col-md-6 col-lg-12 fact-integration-field">
 							<div class="form-group">
 								<label for="fact_integration">Fact Integration:</label>
 								<textarea class="note-codable summernote w-100 form-control" id="fact_integration" name="fact_integration"></textarea>
@@ -618,6 +634,16 @@
 			}
 		});
 		
+		
+		
+		$(document).on('change', '.include_fact_integration', function () {
+			var is_checked = $(this).is(':checked');
+			$(".fact-integration-field").removeClass('rurera-hide');
+			if(is_checked == false){
+				$(".fact-integration-field").addClass('rurera-hide');
+			}
+		});
+		
 		$(document).on('change', '.include_passage', function () {
 			var is_checked = $(this).is(':checked');
 			$(".passage-field").removeClass('rurera-hide');
@@ -632,6 +658,7 @@
 				$(".intro-field").addClass('rurera-hide');
 			}
 		});
+		$(".include_fact_integration").change();
 		$(".include_passage").change();
 		$(".include_intro_text").change();
 		$(".example_question_switch").change();
