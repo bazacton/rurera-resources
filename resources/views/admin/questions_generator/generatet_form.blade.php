@@ -344,7 +344,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-4">
+				<div class="col-md-12 col-lg-12">
 					<div class="form-group">
 						<!-- Number of Questions -->
 						<label for="num_questions" class="mb-0">Number of Questions (Max 20):</label>
