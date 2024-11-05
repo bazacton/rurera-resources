@@ -149,6 +149,7 @@
 			height: 100%;
 		}
     </style>
+<link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
 @endpush
 
 @section('content')
@@ -246,19 +247,19 @@
 						<label>Question Type (optional):</label>
 						<div class="list-group list-in-row">
 							<div class="row-field">
-								<input type="radio" name="question_type" id="type_mc" value="multiple_choice">
+								<input type="radio" name="question_type" id="type_mc" value="multiple-choice" checked>
 								<label for="type_mc">Multiple Choice</label>
 							</div>
 							<div class="row-field">
-								<input type="radio" name="question_type" id="type_tf" value="true_false">
+								<input type="radio" name="question_type" id="type_tf" value="true-false">
 								<label for="type_tf">True or False</label>
 							</div>
 							<div class="row-field">
-								<input type="radio" name="question_type" id="type_oq" value="open_question">
+								<input type="radio" name="question_type" id="type_oq" value="open-question">
 								<label for="type_oq">Open Question</label>
 							</div>
 							<div class="row-field">
-								<input type="radio" name="question_type" id="type_fill" value="fill_in_the_blank">
+								<input type="radio" name="question_type" id="type_fill" value="fill-in-the-blank">
 								<label for="type_fill">Fill in the Blank</label>
 							</div>
 							<div class="row-field">
@@ -282,7 +283,7 @@
 								<label for="options2">2</label>
 							</div>
 							<div class="row-field">
-								<input type="radio" name="num_options" id="options3" value="3">
+								<input type="radio" name="num_options" id="options3" value="3" checked>
 								<label for="options3">3</label>
 							</div>
 							<div class="row-field">
@@ -306,11 +307,11 @@
 						<label>Select Correct Answers (2-3):</label>
 						<div class="list-group list-in-row">
 							<div class="row-field">
-								<input type="checkbox" name="num_correct_answers[]" id="correct1" value="1">
+								<input type="checkbox" name="num_correct_answers[]" id="correct1" value="1" checked>
 								<label for="correct1">1</label>
 							</div>
 							<div class="row-field">
-								<input type="checkbox" name="num_correct_answers[]" id="correct2" value="2">
+								<input type="checkbox" name="num_correct_answers[]" id="correct2" value="2" checked>
 								<label for="correct2">2</label>
 							</div>
 							<div class="row-field">
@@ -326,11 +327,11 @@
 						<!-- Include Intro Text and Passage Checkboxes -->
 						<div class="list-group list-in-row">
 							<div class="row-field">
-								<input type="checkbox" name="include_intro_text" class="include_intro_text" id="include_intro_text">
+								<input type="checkbox" name="include_intro_text" class="include_intro_text" id="include_intro_text" checked>
 								<label for="include_intro_text">Include Intro Text</label>
 							</div>
 							<div class="row-field">
-								<input type="checkbox" name="include_passage" class="include_passage" id="include_passage">
+								<input type="checkbox" name="include_passage" class="include_passage" id="include_passage" checked>
 								<label for="include_passage">Include Passage</label>
 							</div>
 						</div>
@@ -339,8 +340,14 @@
 				<div class="col-md-12 col-lg-12 mt-4">
 					<div class="passage-field">
 						<div class="form-group">
-							<label for="original_passage" class="mb-0">Original Passage:</label>
+							<label for="original_passage">Original Passage:</label>
 							<textarea name="original_passage" id="original_passage" class="form-control w-100" rows="4"></textarea>
+						</div>
+					</div>
+					<div class="intro-field">
+						<div class="form-group">
+							<label for="intro_text_main">Intro Text:</label>
+							<textarea name="intro_text_main" id="intro_text_main" class="form-control w-100" rows="4"></textarea>
 						</div>
 					</div>
 					<div class="row">
@@ -397,7 +404,7 @@
 				</div>
 				<div class="col-md-12 col-lg-12">
 					<div class="list-group">
-						<input type="checkbox" name="example_question_switch" value="yes" class="example_question_switch" id="example_question_switch">
+						<input type="checkbox" name="example_question_switch" value="yes" class="example_question_switch" id="example_question_switch" checked>
 						<label for="example_question_switch">Include Example</label>
 					</div>
 				</div>
@@ -430,7 +437,7 @@
 						<div class="col-md-6 col-lg-12">
 							<div class="form-group">
 								<label for="fact_integration">Fact Integration:</label>
-								<input type="text" name="fact_integration" id="fact_integration" class="w-100 form-control" value="">
+								<textarea class="note-codable summernote w-100 form-control" id="fact_integration" name="fact_integration"></textarea>
 							</div>
 						</div>
 						<div class="col-md-6 col-lg-12">
@@ -468,7 +475,7 @@
 						<div class="col-md-12 col-lg-12">
 							<div class="form-group">
 								<label for="explanation_0">Explanation:</label>
-								<textarea name="explanation" id="explanation_0" rows="3" class="w-100 form-control"></textarea>
+								<textarea class="note-codable summernote w-100 form-control" id="explanation" name="explanation"></textarea>
 							</div>
 						</div>
 					</div>
@@ -489,7 +496,8 @@
 @endsection
 
 @push('scripts_bottom')
-<script src="/assets/default/js/admin/jquery.min.js"></script>
+<script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
+<script src="/assets/vendors/summernote/summernote-table-headers.js"></script>
 <script type="text/javascript">
 
     $(document).ready(function () {
@@ -518,6 +526,8 @@
 		});
 		$(".include_passage").change();
 		$(".include_intro_text").change();
+		$(".example_question_switch").change();
+		
 		
 		
 		$(document).on('change', '.ajax-category-courses', function () {
