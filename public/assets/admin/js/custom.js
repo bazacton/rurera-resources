@@ -1210,14 +1210,11 @@ $(document).on('click', '.apply-template-field span', function () {
 		var name = key;
 		var selected_value = formDataObj[name];
 		
-		if(parentForm.find('[name="'+name+'"]').attr('type') == 'range'){
-			parentForm.find('[name="'+name+'"]').change();
-		}
+		
 		if (parentForm.find('[name="'+name+'"]').attr('type') == 'radio' || parentForm.find('[name="'+name+'"]').attr('type') == 'checkbox') {
 			parentForm.find('[name="'+name+'"][value="'+selected_value+'"]').prop('checked', true);
 		}else{
 			parentForm.find('[name="'+name+'"]').val(formDataObj[name]);
-			parentForm.find('[name="'+name+'"]').change();
 		}
 		
 		jsonFormData[key] = value;
@@ -1231,6 +1228,9 @@ $(document).on('click', '.apply-template-field span', function () {
 			if(parentForm.find('[name="'+name+'"]').hasClass('summernote')){
 				parentForm.find('[name="'+name+'"]').summernote('code', formDataObj[name]);
 			}
+		}
+		if(parentForm.find('[name="'+name+'"]').attr('type') == 'range'){
+			parentForm.find('[name="'+name+'"]').change();
 		}
 	});
 });
