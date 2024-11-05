@@ -23,7 +23,7 @@
 .filters-list {width: 100%;}
 .chart-wraper .sats-summary {border-radius: 0; border: 0; margin: 0 0 25px; padding: 0 0 25px; border-bottom: 1px solid #ededed;}
 .chart-wraper .chart-holder {background-color: #fff; padding: 0;}
-.chart-summary-fields {background-color: #fff; padding: 30px;}
+.chart-summary-fields {background-color: #fff; padding: 0;}
 .chart-summary-fields h3 span {display: block; padding-top: 10px; line-height: normal;}
 .chart-summary-fields h3 img {width: 50px; height: 50px; object-fit: contain;}
 .finish-steps .row {justify-content: center;}
