@@ -1211,7 +1211,7 @@ $(document).on('click', '.apply-template-field span', function () {
     var selected_value = formDataObj[name];
     
     // Handle radio and checkbox inputs
-    if (parentForm.find('[name="'+name+'"]').attr('type') == 'checkbox') {
+    if (parentForm.find('[name="'+name+'"]').attr('type') == 'radio' || parentForm.find('[name="'+name+'"]').attr('type') == 'checkbox') {
         if (Array.isArray(selected_value)) {
             // For checkboxes with multiple values
 			parentForm.find('[name="'+name+'"]').prop('checked', false);
@@ -1222,16 +1222,10 @@ $(document).on('click', '.apply-template-field span', function () {
             // For single radio or checkbox
             parentForm.find('[name="'+name+'"][value="'+selected_value+'"]').prop('checked', true);
         }
-    } else if (parentForm.find('[name="'+name+'"]').attr('type') == 'radio') {
-		parentForm.find('[name="'+name+'"]').prop('checked', false);
-		if(selected_value == 1){
-			parentForm.find('[name="'+name+'"][value="'+selected_value+'"]').prop('checked', true);
-		}
     } else if (name.endsWith('[]')) {
         // Remove the "[]" from the field name for consistency
         name = name.slice(0, -2);
 		var selected_value = formDataObj[name];
-console.log(selected_value);
         if (Array.isArray(selected_value)) {
             // Handle array of values for inputs with the same base name
 			
