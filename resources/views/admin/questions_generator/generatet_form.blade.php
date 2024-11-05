@@ -325,7 +325,7 @@
 							<textarea name="original_passage" id="original_passage" rows="4"></textarea>
 						</div>
 					</div>
-					<div class="col-md-12 col-lg-12 mt-4">
+					<div class="col-md-12 col-lg-4">
 						<div class="form-group">
 							<label for="rewording_level" class="mb-0">Rewording Level (0 - 100%):</label>
 							<div class="range-output">
@@ -334,7 +334,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-12 col-lg-12 mt-4">
+					<div class="col-md-12 col-lg-4">
 						<div class="form-group">
 							<label for="content_text_length" class="mb-0">Content Text Length (Max 50 Words):</label>
 							<div class="range-output">
@@ -343,8 +343,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-12 col-lg-12">
+					<div class="col-md-12 col-lg-4">
 					<div class="form-group">
 						<!-- Number of Questions -->
 						<label for="num_questions" class="mb-0">Number of Questions (Max 20):</label>
@@ -354,6 +353,8 @@
 						</div>
 					</div>
 				</div>
+				</div>
+				
 				<div class="col-md-12 col-lg-12">
 					<div class="form-group mb-0">
 						<!-- Difficulty Level -->
