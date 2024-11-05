@@ -4,7 +4,6 @@
  * because it will make it harder for you to update.
  *
  */
- 
 (function ($) {
     "use strict";
 
@@ -1210,12 +1209,21 @@ $(document).on('click', '.apply-template-field span', function () {
 	form_data.forEach((value, key) => {
 		var name = key;
 		var value = parentForm.find('[name="'+name+'"]').val(formDataObj[name]);
+		if(parentForm.find('[name="'+name+'"]').attr('type') == 'range'){
+			parentForm.find('[name="'+name+'"]').change();
+		}
+		
 		jsonFormData[key] = value;
 		if (parentForm.find('[name="'+name+'"]').is('select')) {
 			var next_index = parentForm.find('[name="'+name+'"]').attr('data-next_index');
 			var next_value = formDataObj[next_index];
 			parentForm.find('[name="'+name+'"]').attr('data-next_value', next_value);
 			parentForm.find('[name="'+name+'"]').change();
+		}
+		if (parentForm.find('[name="'+name+'"]').is('textarea')) {
+			if(parentForm.find('[name="'+name+'"]').hasClass('summernote')){
+				parentForm.find('[name="'+name+'"]').summernote('code', formDataObj[name]);
+			}
 		}
 	});
 });

@@ -153,13 +153,54 @@
 @endpush
 
 @section('content')
+<div id="template_save_modal" class="template_save_modal modal fade" role="dialog" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content edit-quest-modal-div">
+            <div class="modal-body">
+			  <div class="modal-box">
+				<h3 class="font-24 font-weight-normal mb-10">Save the Template</h3>
+				<p class="mb-15 font-16">
+					<input type="text" name="template_name" class="template_name form-control">
+				</p>
+				<input type="hidden" name="form_data_encoded" class="form_data_encoded">
+				
+				<div class="inactivity-controls">
+					<a href="javascript:;" class="continue-btn save-template-btn">Save Template</a>
+					<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a>
+				</div>
+			  </div>
+			</div>
+        </div>
+    </div>
+</div>
 <section class="section">
 	<div class="row">
 		<div class="col-12 col-md-12">
 			<div class="card">
 				<div class="card-body">
+				
+					
+					@php $saved_templates = $user->saved_templates;
+					$saved_templates = json_decode( $saved_templates );
+					$saved_templates = isset( $saved_templates->question_ai_genearte_form )? $saved_templates->question_ai_genearte_form : array();
+					@endphp
+					<div class="defined-searches mt-20">
+					<span><strong>Defined Searches:</strong></span>
+						@if( !empty( $saved_templates ) )
+							@foreach( $saved_templates  as $template_name => $template_data)
+								@php $template_array = json_decode($template_data); 
+								$url_params = '<span>'.$template_name.'</span>'; 
+								if( isset( $template_array->url_params )){
+									$url_params = '<a href="'.(string) url("").'/admin/questions_bank/?'.$template_array->url_params.'">'.$template_name.'</a>';
+								}
+								@endphp
+								<span class="apply-template-field" data-form_id="question-generator-form" data-template_type="question_ai_genearte_form" data-template_data="{{$template_data}}"> {!! $url_params !!} <a href="javascript:;" data-template_name="{{$template_name}}" class="remove-template"><i class="fas fa-times"></i></a></span>
+							@endforeach
+						@endif
+						<button type="button" class="btn btn-success save-template" data-form_id="question-generator-form" data-template_type="question_ai_genearte_form" ><i class="fas fa-save"></i> Save Template</button>
+					</div>
 
-	<form action="/admin/questions-generator/generate-questions" method="POST">
+	<form action="/admin/questions-generator/generate-questions" method="POST" id="question-generator-form">
 	@csrf
 
 	<div class="row">
@@ -175,7 +216,7 @@
 				<div class="col-md-6 col-lg-6">
 					<div class="form-group">
 						<label class="input-label">{{trans('admin/main.category')}}</label>
-						<select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="">
+						<select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
 							<option value="">{{trans('admin/main.all_categories')}}</option>
 							@foreach($categories as $category)
 							@if(!empty($category->subCategories) and count($category->subCategories))
@@ -193,18 +234,18 @@
 				</div>
 				<div class="col-md-6 col-lg-6">
 					<div class="form-group">
-						<label>Subjects</label>
-						<select data-return_type="option"
-								data-default_id="{{request()->get('subject_id')}}" data-chapter_id=""
-								class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
-								id="subject_id" name="subject_id">
-							<option disabled selected>Subject</option>
+						<label class="input-label">Subjects</label>
+						<select data-chapter_id="" id="subject_id"
+								class="form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
+								name="subject_id" data-next_index="chapter_id" data-next_value="">
+							<option value="">Please select year, subject</option>
 						</select>
 						@error('subject_id')
 						<div class="invalid-feedback">
 							{{ $message }}
 						</div>
 						@enderror
+
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-6">
@@ -212,7 +253,7 @@
 						<label class="input-label">Topic</label>
 						<select data-sub_chapter_id="" id="chapter_id"
 								class="form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
-								name="chapter_id">
+								name="chapter_id" data-next_index="sub_chapter_id" data-next_value="">
 							<option value="">Please select year, subject</option>
 						</select>
 						@error('chapter_id')
@@ -226,9 +267,9 @@
 				<div class="col-md-6 col-lg-6">
 					<div class="form-group">
 						<label class="input-label">Sub Topic</label>
-						<select id="chapter_id"
+						<select id="sub_chapter_id"
 							class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
-							name="sub_chapter_id">
+							name="sub_chapter_id" data-next_value="">
 						<option value="">Please select year, subject, Topic</option>
 					</select>
 					@error('sub_chapter_id')
@@ -355,7 +396,7 @@
 						<div class="form-group">
 							<label for="rewording_level" class="mb-0">Rewording Level (0 - 100%):</label>
 							<div class="range-output">
-								<input type="range" name="rewording_level" id="rewording_level" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+								<input type="range" name="rewording_level" id="rewording_level" min="0" max="100" value="50" onchange="this.nextElementSibling.value = this.value" oninput="this.nextElementSibling.value = this.value">
 								<output>50</output>
 							</div>
 						</div>
@@ -364,7 +405,7 @@
 						<div class="form-group">
 							<label for="content_text_length" class="mb-0">Content Text Length (Max 50 Words):</label>
 							<div class="range-output">
-								<input type="range" name="content_text_length" id="content_text_length" min="1" max="50" value="50" oninput="this.nextElementSibling.value = this.value">
+								<input type="range" name="content_text_length" id="content_text_length" min="1" max="50" value="50" onchange="this.nextElementSibling.value = this.value" oninput="this.nextElementSibling.value = this.value">
 								<output>50</output>
 							</div>
 						</div>
@@ -374,7 +415,7 @@
 						<!-- Number of Questions -->
 						<label for="num_questions" class="mb-0">Number of Questions (Max 20):</label>
 						<div class="range-output">
-							<input type="range" name="num_questions" id="num_questions" min="1" max="20" value="2" oninput="this.nextElementSibling.value = this.value">
+							<input type="range" name="num_questions" id="num_questions" min="1" max="20" value="2" onchange="this.nextElementSibling.value = this.value" oninput="this.nextElementSibling.value = this.value">
 							<output>2</output>
 						</div>
 					</div>
@@ -502,6 +543,46 @@
 
     $(document).ready(function () {
 		
+		
+		$(document).on('click', '.save-template-btn', function () {
+			$(".template_save_modal").modal('hide');
+			var template_name = $('.template_name').val();
+			var form_data_encoded  = $('.form_data_encoded').val();
+			var course_id = $(this).val();
+			$.ajax({
+				type: "POST",
+				url: '/admin/users/save_templates',
+				data: {'template_type': 'question_ai_genearte_form', 'template_name': template_name, 'form_data_encoded': form_data_encoded},
+				success: function (return_data) {
+					console.log(return_data);
+				}
+			});
+		});
+		
+		$(document).on('click', '.save-template', function () {
+			// Select all form fields inside the div with id "question_properties"
+			$(".template_save_modal").modal('show');
+			var form_id = $(this).attr('data-form_id');
+			
+			var formFields = $('#'+form_id).find('input, select, textarea');
+			// Create an object to store the name-value pairs
+			var formData = {};
+			// Iterate over each form field
+			formFields.each(function() {
+				var name = $(this).attr('name');
+				var value = $(this).val();
+
+				if (name) {
+					formData[name] = value;	
+				}
+			});
+			
+			var jsonFormData = JSON.stringify(formData);
+			$(".form_data_encoded").val(jsonFormData);
+		});
+	
+	
+		
 		$(document).on('change', '.example_question_switch', function () {
 			var is_checked = $(this).is(':checked');
 			$(".example-question-block").removeClass('rurera-hide');
@@ -533,6 +614,7 @@
 		$(document).on('change', '.ajax-category-courses', function () {
 			var category_id = $(this).val();
 			var course_id = $(this).attr('data-course_id');
+			var course_id = $(this).attr('data-next_value');
 			$.ajax({
 				type: "GET",
 				url: '/admin/webinars/courses_by_categories',
@@ -548,6 +630,7 @@
 		$(document).on('change', '.ajax-courses-dropdown', function () {
 			var course_id = $(this).val();
 			var chapter_id = $(this).attr('data-chapter_id');
+			var chapter_id = $(this).attr('data-next_value');
 
 			$.ajax({
 				type: "GET",
@@ -563,6 +646,7 @@
 		$(document).on('change', '.ajax-chapter-dropdown', function () {
 			var chapter_id = $(this).val();
 			var sub_chapter_id = $(this).attr('data-sub_chapter_id');
+			var sub_chapter_id = $(this).attr('data-next_value');
 			$.ajax({
 				type: "GET",
 				url: '/admin/webinars/sub_chapters_by_chapter',
