@@ -261,19 +261,31 @@
 					<div class="form-group">
 						<!-- Number of Options -->
 						<label>Number of Options (0-6):</label>
-						<div class="list-group">
-							<input type="radio" name="num_options" id="options1" value="1">
-							<label for="options1">1</label>
-							<input type="radio" name="num_options" id="options2" value="2">
-							<label for="options2">2</label>
-							<input type="radio" name="num_options" id="options3" value="3">
-							<label for="options3">3</label>
-							<input type="radio" name="num_options" id="options4" value="4">
-							<label for="options4">4</label>
-							<input type="radio" name="num_options" id="options5" value="5">
-							<label for="options5">5</label>
-							<input type="radio" name="num_options" id="options6" value="6">
-							<label for="options6">6</label>
+						<div class="list-group list-in-row">
+							<div class="row-field">
+								<input type="radio" name="num_options" id="options1" value="1">
+								<label for="options1">1</label>
+							</div>
+							<div class="row-field">
+								<input type="radio" name="num_options" id="options2" value="2">
+								<label for="options2">2</label>
+							</div>
+							<div class="row-field">
+								<input type="radio" name="num_options" id="options3" value="3">
+								<label for="options3">3</label>
+							</div>
+							<div class="row-field">
+								<input type="radio" name="num_options" id="options4" value="4">
+								<label for="options4">4</label>
+							</div>
+							<div class="row-field">
+								<input type="radio" name="num_options" id="options5" value="5">
+								<label for="options5">5</label>
+							</div>
+							<div class="row-field">
+								<input type="radio" name="num_options" id="options6" value="6">
+								<label for="options6">6</label>
+							</div>
 						</div>
 					</div>
 				</div>
