@@ -153,6 +153,7 @@
 		table, th, td {
 			border: 1px solid #f6f6f6;
 			border-collapse: collapse;
+			padding: 5px;
 		}
 		/* Note-Editable Table Default Style End */
 		.example-question-block {
