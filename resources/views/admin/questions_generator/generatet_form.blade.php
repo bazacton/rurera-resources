@@ -193,6 +193,8 @@
 			padding: 5px 10px;
 			border-radius: 3px;
 			color: var(--primary);
+			text-decoration: underline;
+			cursor: pointer;
 		}
 	/* Questions Defined Searches style end */
     </style>
