@@ -1209,7 +1209,7 @@ $(document).on('click', '.apply-template-field span', function () {
 	form_data.forEach((value, key) => {
     var name = key;
 	if(name == '_token'){
-		continue;
+		return true;
 	}
     var selected_value = formDataObj[name];
     
