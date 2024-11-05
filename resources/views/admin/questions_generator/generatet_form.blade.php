@@ -110,7 +110,11 @@
             border: none;
             border-radius: 4px;
         }
-        .add-option-btn, .submit-btn {
+		.add-option-btn {
+			color: var(--primary);
+			text-decoration: underline;
+		}
+        .submit-btn {
             padding: 10px;
             background-color: #4CAF50;
             color: white;
