@@ -486,7 +486,7 @@
 						<div class="form-group">
 							<label for="content_text_length" class="mb-0">Content Text Length (Max 50 Words):</label>
 							<div class="range-output">
-								<input type="range" name="content_text_length" id="content_text_length" min="1" max="50" value="50" onchange="this.nextElementSibling.value = this.value" oninput="this.nextElementSibling.value = this.value">
+								<input type="range" name="content_text_length" id="content_text_length" min="10" max="50" value="50" onchange="this.nextElementSibling.value = this.value" oninput="this.nextElementSibling.value = this.value">
 								<output>50</output>
 							</div>
 						</div>
