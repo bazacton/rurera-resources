@@ -359,71 +359,69 @@
 					</div>
 				</div>
 				</div>
-				<div class="col-md-6 col-lg-6">
-					<div class="example-question-block rurera-hide">
-						<div class="row">
-							<div class="col-md-6 col-lg-6">
-								<div class="form-group intro-field">
-									<label for="intro_text_0">Intro Text:</label>
-									<textarea name="intro_text" id="intro_text_0" rows="2" class="w-100 form-control"></textarea>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-6">
-								<div class="form-group passage-field">
-									<label for="passage_0">Passage:</label>
-									<textarea name="passage" id="passage_0" rows="4" class="w-100 form-control"></textarea>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-6">
-								<div class="form-group">
-									<label for="main_question_0">Main Question:</label>
-									<input type="text" name="main_question" id="main_question_0" class="w-100 form-control" value="">
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-6">
-								<div class="form-group">
-									<label for="fact_integration">Fact Integration:</label>
-									<input type="text" name="fact_integration" id="fact_integration" class="w-100 form-control" value="">
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-6">
-								<div class="form-group">
-									<label for="options_label">Options Label:</label>
-									<input type="text" name="options_label" id="options_label" class="w-100 form-control" value="">
-								</div>
+				<div class="example-question-block rurera-hide">
+					<div class="row">
+						<div class="col-md-6 col-lg-6">
+							<div class="form-group intro-field">
+								<label for="intro_text_0">Intro Text:</label>
+								<textarea name="intro_text" id="intro_text_0" rows="2" class="w-100 form-control"></textarea>
 							</div>
 						</div>
-						
-						
-						
-						
-						<label>Options:</label>
-						<div class="options-container" data-options-container="0" >
-								<div class="option-group" data-option-index="0">
-									<input type="text" name="options[]" value="Option 1">
-									<input type="checkbox" name="correct_answers[]" value="0">
-									<div class="option-buttons">
-										<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
-										<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
-										<button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
-									</div>
-								</div>
-								<div class="option-group" data-option-index="1">
-									<input type="text" name="options[]" value="Option 2">
-									<input type="checkbox" name="correct_answers[]" value="1">
-									<div class="option-buttons">
-										<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
-										<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
-										<button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
-									</div>
-								</div>
-						</div>
-						<button type="button" class="add-option-btn" onclick="addOption(0)">Add Option</button>
-						<div class="row mt-3">
-							<div class="col-md-12 col-lg-12">
-								<label for="explanation_0">Explanation:</label>
-								<textarea name="explanation" id="explanation_0" rows="3" class="w-100"></textarea>
+						<div class="col-md-6 col-lg-6">
+							<div class="form-group passage-field">
+								<label for="passage_0">Passage:</label>
+								<textarea name="passage" id="passage_0" rows="4" class="w-100 form-control"></textarea>
 							</div>
+						</div>
+						<div class="col-md-6 col-lg-6">
+							<div class="form-group">
+								<label for="main_question_0">Main Question:</label>
+								<input type="text" name="main_question" id="main_question_0" class="w-100 form-control" value="">
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-6">
+							<div class="form-group">
+								<label for="fact_integration">Fact Integration:</label>
+								<input type="text" name="fact_integration" id="fact_integration" class="w-100 form-control" value="">
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-6">
+							<div class="form-group">
+								<label for="options_label">Options Label:</label>
+								<input type="text" name="options_label" id="options_label" class="w-100 form-control" value="">
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					
+					<label>Options:</label>
+					<div class="options-container" data-options-container="0" >
+							<div class="option-group" data-option-index="0">
+								<input type="text" name="options[]" value="Option 1">
+								<input type="checkbox" name="correct_answers[]" value="0">
+								<div class="option-buttons">
+									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
+									<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
+									<button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
+								</div>
+							</div>
+							<div class="option-group" data-option-index="1">
+								<input type="text" name="options[]" value="Option 2">
+								<input type="checkbox" name="correct_answers[]" value="1">
+								<div class="option-buttons">
+									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
+									<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
+									<button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
+								</div>
+							</div>
+					</div>
+					<button type="button" class="add-option-btn" onclick="addOption(0)">Add Option</button>
+					<div class="row mt-3">
+						<div class="col-md-12 col-lg-12">
+							<label for="explanation_0">Explanation:</label>
+							<textarea name="explanation" id="explanation_0" rows="3" class="w-100"></textarea>
 						</div>
 					</div>
 				</div>
