@@ -182,6 +182,8 @@
 			align-items: center;
 			gap: 10px;
 			margin-bottom: 25px;
+			background-color: #efefef;
+    		padding: 10px;
 		}
 		.defined-searches .save-template {
 			margin-left: auto;
@@ -216,14 +218,14 @@
 	<div class="row">
 		<div class="col-12 col-md-12">
 			<div class="card">
-				<div class="card-body">
+				<div class="card-body px-0 pt-0">
 				
 					
 					@php $saved_templates = $user->saved_templates;
 					$saved_templates = json_decode( $saved_templates );
 					$saved_templates = isset( $saved_templates->question_ai_genearte_form )? $saved_templates->question_ai_genearte_form : array();
 					@endphp
-					<div class="defined-searches mt-20">
+					<div class="defined-searches">
 					<span><strong>Save Forms:</strong></span>
 						@if( !empty( $saved_templates ) )
 							@foreach( $saved_templates  as $template_name => $template_data)
@@ -239,7 +241,7 @@
 						<button type="button" class="btn btn-success save-template" data-form_id="question-generator-form" data-template_type="question_ai_genearte_form" ><i class="fas fa-save"></i> Save Template</button>
 					</div>
 
-	<form action="/admin/questions-generator/generate-questions" method="POST" id="question-generator-form">
+	<form action="/admin/questions-generator/generate-questions" method="POST" id="question-generator-form" class="px-25">
 	@csrf
 
 	<div class="row">
