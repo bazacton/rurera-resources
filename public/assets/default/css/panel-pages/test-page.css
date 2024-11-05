@@ -263,6 +263,45 @@ div.dataTables_wrapper div.dataTables_filter input[type="search"] {color: #49505
 .finish-steps .sats-summary .sats-summary-icon {margin-right: 10px; width: 30px; height: 30px;}
 .finish-steps .chart-summary-fields .sats-summary .summary-text {width: calc(100% - 40px); text-align: left;}
 /*sats-summary style end*/
+/* Question-Result-Layout Style Start */
+.question-result-layout {background-color: #fff; margin-bottom: 30px; padding: 30px 30px 20px; border: 2px solid #eee; border-left-width: 4px; position: relative;}
+.question-result-layout:before {height: 30px; width: 30px; text-align: center; border-radius: 100%; font-size: 14px; line-height: 30px; color: #fff; display: inline-block; margin-bottom: 10px;}
+.question-result-layout.question-status-correct:before {content: "\2713"; background-color: #70c17c;}
+.question-result-layout.question-status-incorrect:before {content: "\00D7"; background-color: #ff4f4f; font-size: 22px;}
+.question-result-layout.question-status-correct {border-left-color: #70c17c;}
+.question-result-layout.question-status-incorrect {border-left-color: #ff4f4f;}
+.question-result-layout form.question-fields {background-color: inherit; border: 0; border-radius: 0; padding: 0; min-height: auto; margin: 0;}
+.question-result-layout .disable-div:before {background-color: inherit;}
+.question-result-layout .question-area {min-height: auto !important;}
+.question-result-layout .prev-next-controls {display: none;}
+.question-result-layout .left-content {min-height: auto;}
+.question-result-layout .question-layout-block form.question-fields .questions-total-holder {margin: 0 !important; padding: 0 0 20px; font-size: 16px; color: #333;}
+.question-result-layout .rureraform-element {padding: 0 0 25px; margin: 0;}
+.question-result-layout .lms-radio-btn-group {align-items: flex-start; justify-content: flex-start; margin-bottom: 15px;}
+.question-result-layout .lms-radio-btn-group .lms-question-label {background-color: #ededed; height: auto; border-color: #92aec4; border-width: 1px; border-radius: 0; padding: 8px 10px;}
+.question-result-layout .lms-radio-btn-group li {min-width: auto;}
+.question-result-layout .lms-radio-lists .list-title {margin-bottom: 10px; padding-top: 0; color: #333;}
+.question-result-layout hr {display: none;}
+.question-result-layout .field-holder,
+.question-result-layout .form-field label{background-color: inherit;}
+.question-result-layout .lms-sorting-fields .field-holder,
+.question-result-layout .form-field label {border-color: #999;}
+.chart-summary-fields.result-layout-summary {padding: 0; text-align: center;}
+.chart-summary-fields.result-layout-summary span.icon-box img{height: 100px;}
+.result-layout-summary .sats-summary {border-radius: 0;}
+.sats-summary-icon {padding: 30px;}
+.summary-text .score-label {font-weight: bold; margin-top: 20px;}
+.summary-btns{ display: flex; justify-content: center; align-items: center; gap: 5rem; margin-top: 5rem;}
+.summary-btns .summary-btn {background-color: #596bfd; padding: 10px; border-radius: 6px; color: white;}
+.summary-btns .re-attempt-btn{background-color: #596bfd; padding: 10px; border-radius: 6px; color: white;}
+.summary-btns .back-btn { background-color: #596bfd; padding: 10px; border-radius: 6px; color: white;}
+.result-layout-summary [class*="col-"] {padding: 15px;}
+.question-result-layout .earn-coins-icon {position: absolute; right: 20px; top: 20px; text-align: center; border-radius: 100%;}
+.question-result-layout .earn-coins-icon img {width: 45px; height: 45px; object-fit: contain;}
+.question-result-layout .droppable-characters {padding-top: 15px;}
+.finish-steps p {background-color: #e8fde8; display: inline-block; vertical-align: middle; line-height: normal; color: #45d745; padding: 5px 8px; border: 1px solid; border-radius: 3px; margin-right: 10px;}
+.finish-steps .prev-next-controls {margin-top: 50px;}
+/* Question-Result-Layout Style End */
 
 /******************
 Test Page | Student Panel Style End
