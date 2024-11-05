@@ -431,25 +431,26 @@
 							</div>
 						</div>
 					</div>
-					
-					<label>Options:</label>
-					<div class="options-container" data-options-container="0" >
-						<div class="option-group" data-option-index="0">
-							<input type="text" class="form-control" name="options[]" value="Option 1">
-							<input type="checkbox" name="correct_answers[]" value="0">
-							<div class="option-buttons">
-								<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
-								<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
-								<button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
+					<div class="form-group">
+						<label>Options:</label>
+						<div class="options-container" data-options-container="0" >
+							<div class="option-group" data-option-index="0">
+								<input type="text" class="form-control" name="options[]" value="Option 1">
+								<input type="checkbox" name="correct_answers[]" value="0">
+								<div class="option-buttons">
+									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
+									<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
+									<button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
+								</div>
 							</div>
-						</div>
-						<div class="option-group" data-option-index="1">
-							<input type="text" class="form-control" name="options[]" value="Option 2">
-							<input type="checkbox" name="correct_answers[]" value="1">
-							<div class="option-buttons">
-								<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
-								<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
-								<button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
+							<div class="option-group" data-option-index="1">
+								<input type="text" class="form-control" name="options[]" value="Option 2">
+								<input type="checkbox" name="correct_answers[]" value="1">
+								<div class="option-buttons">
+									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
+									<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
+									<button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
+								</div>
 							</div>
 						</div>
 					</div>
