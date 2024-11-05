@@ -323,7 +323,7 @@
 					<div class="passage-field">
 						<div class="form-group">
 							<label for="original_passage" class="mb-0">Original Passage:</label>
-							<textarea name="original_passage" id="original_passage" rows="4"></textarea>
+							<textarea name="original_passage" id="original_passage" class="form-control w-100" rows="4"></textarea>
 						</div>
 					</div>
 					<div class="row">
