@@ -412,19 +412,19 @@
 								<textarea name="passage" id="passage_0" rows="4" class="w-100 form-control"></textarea>
 							</div>
 						</div>
-						<div class="col-md-6 col-lg-6">
+						<div class="col-md-6 col-lg-4">
 							<div class="form-group">
 								<label for="main_question_0">Main Question:</label>
 								<input type="text" name="main_question" id="main_question_0" class="w-100 form-control" value="">
 							</div>
 						</div>
-						<div class="col-md-6 col-lg-6">
+						<div class="col-md-6 col-lg-4">
 							<div class="form-group">
 								<label for="fact_integration">Fact Integration:</label>
 								<input type="text" name="fact_integration" id="fact_integration" class="w-100 form-control" value="">
 							</div>
 						</div>
-						<div class="col-md-6 col-lg-6">
+						<div class="col-md-6 col-lg-4">
 							<div class="form-group">
 								<label for="options_label">Options Label:</label>
 								<input type="text" name="options_label" id="options_label" class="w-100 form-control" value="">
