@@ -358,15 +358,19 @@
 					<div class="form-group mb-0">
 						<!-- Difficulty Level -->
 						<label>Select Difficulty Level:</label>
-						<div class="list-group">
-							<input type="radio" name="difficulty" id="level_0" value="Easy" checked>
-							<label for="level_0">Easy</label>
-							
-							<input type="radio" name="difficulty" id="level_1" value="Moderate">
-							<label for="level_1">Moderate</label>
-							
-							<input type="radio" name="difficulty" id="level_2" value="Hard">
-							<label for="level_2">Hard</label>
+						<div class="list-group list-in-row">
+							<div class="row-field">
+								<input type="radio" name="difficulty" id="level_0" value="Easy" checked>
+								<label for="level_0">Easy</label>
+							</div>
+							<div class="row-field">
+								<input type="radio" name="difficulty" id="level_1" value="Moderate">
+								<label for="level_1">Moderate</label>
+							</div>
+							<div class="row-field">
+								<input type="radio" name="difficulty" id="level_2" value="Hard">
+								<label for="level_2">Hard</label>
+							</div>
 						</div>
 					</div>
 				</div>
