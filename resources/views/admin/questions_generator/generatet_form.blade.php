@@ -312,11 +312,15 @@
 				<div class="col-md-12 col-lg-12">
 					<label>Setting</label>
 					<!-- Include Intro Text and Passage Checkboxes -->
-					<div class="list-group">
-						<input type="checkbox" name="include_intro_text" class="include_intro_text" id="include_intro_text">
-						<label for="include_intro_text">Include Intro Text</label>
-						<input type="checkbox" name="include_passage" class="include_passage" id="include_passage">
-						<label for="include_passage">Include Passage</label>
+					<div class="list-group list-in-row">
+						<div class="row-field">
+							<input type="checkbox" name="include_intro_text" class="include_intro_text" id="include_intro_text">
+							<label for="include_intro_text">Include Intro Text</label>
+						</div>
+						<div class="row-field">
+							<input type="checkbox" name="include_passage" class="include_passage" id="include_passage">
+							<label for="include_passage">Include Passage</label>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-12 mt-4">
