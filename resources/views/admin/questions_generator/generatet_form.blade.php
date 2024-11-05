@@ -113,6 +113,8 @@
 		.add-option-btn {
 			color: var(--primary);
 			text-decoration: underline;
+			border: 0;
+			background: none;
 		}
         .submit-btn {
             padding: 10px;
