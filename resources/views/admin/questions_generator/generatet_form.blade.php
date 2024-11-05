@@ -449,6 +449,13 @@
 									<span class="custom-switch-indicator"></span>	
 								</label>
 							</div>
+							<div class="row-field">
+								<label class="custom-switch pl-0">
+									<label class="custom-switch-description mb-0 cursor-pointer" for="include_keywords">keywords</label>
+									<input type="checkbox" name="include_keywords" id="include_keywords" value="1" class="custom-switch-input include_keywords" checked>
+									<span class="custom-switch-indicator"></span>	
+								</label>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -732,7 +739,6 @@
 				$(".example-question-block").addClass('rurera-hide');
 			}
 		});
-		
 		
 		
 		$(document).on('change', '.include_fact_integration', function () {
