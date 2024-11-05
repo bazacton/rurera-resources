@@ -149,7 +149,12 @@
 			padding-left: 25px;
 		}
 		/* Note-Editable Order List Style End */
-
+		/* Note-Editable Table Default Style Start */
+		table, th, td {
+			border: 1px solid #f6f6f6;
+			border-collapse: collapse;
+		}
+		/* Note-Editable Table Default Style End */
 		.example-question-block {
 			border-left: 1px solid #e4e6fc;
 			padding-left: 30px;
