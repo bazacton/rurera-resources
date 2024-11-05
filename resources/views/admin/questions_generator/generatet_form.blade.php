@@ -566,7 +566,7 @@
         optionGroup.setAttribute('data-option-index', optionIndex);
 
         optionGroup.innerHTML = `
-            <input type="text" name="options[]" value="">
+            <input type="text" name="options[]" value="" class="form-control">
             <input type="checkbox" name="correct_answers[]" value="${optionIndex}">
             <div class="option-buttons">
                 <button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
