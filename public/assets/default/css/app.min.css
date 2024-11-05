@@ -11681,6 +11681,9 @@ body input[type="text"]:focus::-webkit-input-placeholder {
     max-width: 180px;
     z-index: -1;
 }
+/* Timestable Subheader style Start */
+.time-tables-sub-header h1 {word-wrap: break-word;} 
+/* Timestable Subheader style End */
 .time-tables-sub-header .icon-box {
     border-top: 2px solid rgb(255 255 255 / 0.4);
     padding-top: 25px;
