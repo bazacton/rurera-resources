@@ -370,7 +370,7 @@
 				</div>
 				
 				<div class="col-md-12 col-lg-12">
-					<div class="form-group mb-0">
+					<div class="form-group">
 						<!-- Difficulty Level -->
 						<label>Select Difficulty Level:</label>
 						<div class="list-group list-in-row">
