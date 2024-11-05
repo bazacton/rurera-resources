@@ -224,7 +224,7 @@
 					$saved_templates = isset( $saved_templates->question_ai_genearte_form )? $saved_templates->question_ai_genearte_form : array();
 					@endphp
 					<div class="defined-searches mt-20">
-					<span><strong>Defined Searches:</strong></span>
+					<span><strong>Save Forms:</strong></span>
 						@if( !empty( $saved_templates ) )
 							@foreach( $saved_templates  as $template_name => $template_data)
 								@php $template_array = json_decode($template_data); 
@@ -245,6 +245,9 @@
 	<div class="row">
 		<div class="col-md-6 col-lg-6">
 			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<h2 class="font-20 font-weight-bold mb-15">Questions Generator</h2>
+				</div>
 				<div class="col-md-12 col-lg-12">
 					<div class="form-group">
 						<!-- Content Text Area -->
