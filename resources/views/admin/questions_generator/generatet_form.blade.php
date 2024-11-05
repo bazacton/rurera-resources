@@ -229,28 +229,26 @@
 				<input type="hidden" name="grade" id="grade1" value="7">
 				<!-- Question Type -->
 				<label>Question Type (optional):</label>
-				<div class="list-group">
-					<div class="row">
-						<div class="col-md-4 col-lg-2">
-							<input type="radio" name="question_type" id="type_mc" value="multiple_choice">
-							<label for="type_mc">Multiple Choice</label>
-						</div>
-						<div class="col-md-4 col-lg-2">
-							<input type="radio" name="question_type" id="type_tf" value="true_false">
-							<label for="type_tf">True or False</label>
-						</div>
-						<div class="col-md-4 col-lg-2">
-							<input type="radio" name="question_type" id="type_oq" value="open_question">
-							<label for="type_oq">Open Question</label>
-						</div>
-						<div class="col-md-4 col-lg-2">
-							<input type="radio" name="question_type" id="type_fill" value="fill_in_the_blank">
-							<label for="type_fill">Fill in the Blank</label>
-						</div>
-						<div class="col-md-4 col-lg-2">
-							<input type="radio" name="question_type" id="type_match" value="matching">
-							<label for="type_match">Matching</label>
-						</div>
+				<div class="list-group list-in-row">
+					<div class="row-field">
+						<input type="radio" name="question_type" id="type_mc" value="multiple_choice">
+						<label for="type_mc">Multiple Choice</label>
+					</div>
+					<div class="row-field">
+						<input type="radio" name="question_type" id="type_tf" value="true_false">
+						<label for="type_tf">True or False</label>
+					</div>
+					<div class="row-field">
+						<input type="radio" name="question_type" id="type_oq" value="open_question">
+						<label for="type_oq">Open Question</label>
+					</div>
+					<div class="row-field">
+						<input type="radio" name="question_type" id="type_fill" value="fill_in_the_blank">
+						<label for="type_fill">Fill in the Blank</label>
+					</div>
+					<div class="row-field">
+						<input type="radio" name="question_type" id="type_match" value="matching">
+						<label for="type_match">Matching</label>
 					</div>
 				</div>
 			</div>
