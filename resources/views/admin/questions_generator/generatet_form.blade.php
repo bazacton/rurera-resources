@@ -398,8 +398,11 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-12">
-			<div class="example-question-block rurera-hide">
+				<div class="example-question-block rurera-hide">
 					<div class="row">
+						<div class="col-md-12 col-lg-12">
+							<h2>Example Questions</h2>
+						</div>
 						<div class="col-md-12 col-lg-12">
 							<div class="form-group intro-field">
 								<label for="intro_text_0">Intro Text:</label>
