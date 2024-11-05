@@ -228,7 +228,7 @@ div.dataTables_wrapper div.dataTables_filter input[type="search"] {color: #49505
 .lms-contact-form-tabs .nav-tabs .nav-link {position: relative;background-color: inherit;border: 0;border-radius: 0;padding: 0;margin-right: 30px;font-size: 22px;font-weight: 500;}
 /*Lms Jobs Form Style End*/
 
-/*sats-summary style start*/
+/*Sats Summary style start*/
 .sats-summary {margin: 0 0 50px; background-color: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #e2e8f0;}
 .chart-summary-fields .sats-summary {margin-bottom: 30px;}
 .sats-summary label {display: block; margin: 0 0 6px; line-height: normal; text-transform: uppercase; font-size: 14px;}
@@ -262,7 +262,7 @@ div.dataTables_wrapper div.dataTables_filter input[type="search"] {color: #49505
 .finish-steps .summary-text .score {display: inline-block; vertical-align: middle; padding-left: 5px;}
 .finish-steps .sats-summary .sats-summary-icon {margin-right: 10px; width: 30px; height: 30px;}
 .finish-steps .chart-summary-fields .sats-summary .summary-text {width: calc(100% - 40px); text-align: left;}
-/*sats-summary style end*/
+/*Sats Summary style end*/
 
 /******************
 Test Page | Student Panel Style End
