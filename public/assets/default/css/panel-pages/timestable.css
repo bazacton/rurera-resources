@@ -2,6 +2,9 @@
 TimesTable Page | Student Panel Style Start
 Sub Pages Style
 *****************************/
+/* Timestable Subheader style Start */
+.time-tables-sub-header h1 {word-wrap: break-word;}
+/* Timestable Subheader style End */
 
 /* Timestable Freedom Mode Start */
 .questions-select-option ul {overflow: hidden;}
