@@ -3,63 +3,63 @@
 
 @push('libraries_top')
 <style>
-        /* Basic styling */
-		.rurera-hide{
-			display:none;
-		}
-        
-        .list-group {
-            display: flex;
-            gap: 10px;
-            margin-top: 5px;
-            flex-wrap: wrap;
-        }
-        .list-group input[type="radio"],
-        .list-group input[type="checkbox"] {
-            display: none;
-        }
-        .list-group label {
-            padding: 8px 12px;
-            border-radius: 4px;
-            cursor: pointer;
-            background-color: #f1f1f1;
-            color: #333;
-            font-size: 14px;
-        }
-        .list-group input[type="radio"]:checked + label,
-        .list-group input[type="checkbox"]:checked + label {
-            background-color: #4CAF50;
-            color: white;
-        }
-        .range-output {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        input[type="range"], input[type="number"] {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        button.submit-btn {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-        button.submit-btn:hover {
-            background-color: #45a049;
-        }
-		
-		/* Add this CSS for the range slider styling */
+	/* Basic styling */
+	.rurera-hide{
+		display:none;
+	}
+	
+	.list-group {
+		display: flex;
+		gap: 10px;
+		margin-top: 5px;
+		flex-wrap: wrap;
+	}
+	.list-group input[type="radio"],
+	.list-group input[type="checkbox"] {
+		display: none;
+	}
+	.list-group label {
+		padding: 8px 12px;
+		border-radius: 4px;
+		cursor: pointer;
+		background-color: #f1f1f1;
+		color: #333;
+		font-size: 14px;
+	}
+	.list-group input[type="radio"]:checked + label,
+	.list-group input[type="checkbox"]:checked + label {
+		background-color: #4CAF50;
+		color: white;
+	}
+	.range-output {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	input[type="range"], input[type="number"] {
+		width: 100%;
+		padding: 8px;
+		margin-top: 5px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	button.submit-btn {
+		width: 100%;
+		padding: 10px;
+		background-color: #4CAF50;
+		color: white;
+		border: none;
+		border-radius: 4px;
+		font-size: 16px;
+		cursor: pointer;
+		margin-top: 20px;
+	}
+	button.submit-btn:hover {
+		background-color: #45a049;
+	}
+	
+	/* Add this CSS for the range slider styling */
     .range-output {
         display: flex;
         align-items: center;
@@ -130,6 +130,13 @@
             background-color: #2196F3;
             color: white;
         }
+		/* Question Type List In A Row Style Start */
+		.list-group.list-in-row {
+			display: flex;
+			flex-direction: row;
+			gap: 3px;
+		}
+		/* Question Type List In A Row Style End */
     </style>
 @endpush
 
