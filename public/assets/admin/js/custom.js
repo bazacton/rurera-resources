@@ -1208,6 +1208,9 @@ $(document).on('click', '.apply-template-field span', function () {
 
 	form_data.forEach((value, key) => {
     var name = key;
+	if(name == '_token'){
+		continue;
+	}
     var selected_value = formDataObj[name];
     
     // Handle radio and checkbox inputs
