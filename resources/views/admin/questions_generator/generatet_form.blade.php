@@ -401,7 +401,7 @@
 				<div class="example-question-block rurera-hide">
 					<div class="row">
 						<div class="col-md-12 col-lg-12">
-							<h2>Example Questions</h2>
+							<h2 class="font-20 font-weight-bold mb-15">Example Questions</h2>
 						</div>
 						<div class="col-md-12 col-lg-12">
 							<div class="form-group intro-field">
