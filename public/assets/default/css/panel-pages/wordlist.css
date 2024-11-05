@@ -2,7 +2,14 @@
 Word Lists Page | Student Panel Style Start
 Sub Pages Style
 *****************************/
-
+/*Spells-Quiz-Info Style Start*/
+.spells-quiz-info ul {border: 1px solid #bac3ca; border-left: 0; border-right: 0; border-top: 0; display: flex; gap: 15px; justify-content: space-between;}
+.spells-quiz-info ul li {border-left: 1px solid #bac3ca;text-align: center;width: 32%;padding: 15px 0;font-size: 20px;color: #343434;text-transform: uppercase;display: inline-flex;align-items: center;justify-content: center;gap: 5px;}
+.spells-quiz-info ul li:first-child {border-left: 0;}
+.spells-quiz-info ul li span {display: inline-block; font-weight: 600; font-size: 20px;}
+.spells-quiz-info ul li .nub-of-sec {color: #7caf40; }
+.spells-quiz-info ul li img {max-width: 100%; width: 20px; height: 20px; display: inline-block; vertical-align: middle; object-fit: contain;}
+/*Spells-Quiz-Info Style End*/
 .spells-option select {border: 0; padding-right: 5px; color: #999; min-width: 150px;}
 .spells-option select option {padding: 5px 0 5px; margin: 10px;}
 .spells-topbar {background-color: #f5f5f5; margin: 0 0 30px; display: flex; align-items: center; justify-content: space-between; padding: 10px 25px;}
