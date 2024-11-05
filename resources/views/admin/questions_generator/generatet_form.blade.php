@@ -159,6 +159,17 @@
 			padding: 5px;
 		}
 		/* Note-Editable Table Default Style End */
+		/* Note-Dropdown-Menu Style Start */
+		.note-dropdown-menu h1,
+		.note-dropdown-menu h2,
+		.note-dropdown-menu h3,
+		.note-dropdown-menu h4,
+		.note-dropdown-menu h5,
+		.note-dropdown-menu h6 {
+			font-size: 14px;
+		}
+		/* Note-Dropdown-Menu Style End */
+		
 		.example-question-block {
 			border-left: 1px solid #e4e6fc;
 			padding-left: 30px;
