@@ -581,8 +581,11 @@
 		</div>
 
         <!-- Other fields (ranges, difficulty, language) are the same as before -->
-
-        <button type="submit" class="submit-btn">Generate Questions</button>
+		<div class="row">
+			<div class="col-md-6 col-lg-6">
+				<button type="submit" class="submit-btn">Generate Questions</button>
+			</div>
+		</div>
     </form>
 	</div>
 	</div>
