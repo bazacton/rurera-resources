@@ -215,7 +215,7 @@
 				
 				<div class="inactivity-controls">
 					<a href="javascript:;" class="continue-btn save-template-btn btn btn-primary">Save Template</a>
-					<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a>
+					<a href="javascript:;" class="btn btn-danger" data-dismiss="modal" aria-label="Continue">Close</a>
 				</div>
 			  </div>
 			</div>
