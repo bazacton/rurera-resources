@@ -337,7 +337,7 @@
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-12 mt-4">
-					<div class="form-group">
+					<div class="form-group mb-0">
 						<!-- Difficulty Level -->
 						<label>Select Difficulty Level:</label>
 						<div class="list-group">
