@@ -395,7 +395,7 @@
             <button type="button" class="add-option-btn" onclick="addOption(0)">Add Option</button>
 
             <label for="explanation_0">Explanation:</label>
-            <textarea name="explanation" id="explanation_0" rows="3"></textarea>
+            <textarea name="explanation" id="explanation_0" rows="3" class="w-100"></textarea>
 		</div>
 
         <!-- Other fields (ranges, difficulty, language) are the same as before -->
