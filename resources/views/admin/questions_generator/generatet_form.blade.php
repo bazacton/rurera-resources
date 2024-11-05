@@ -137,6 +137,11 @@
 			gap: 3px;
 		}
 		/* Question Type List In A Row Style End */
+		.example-question-block {
+			border-left: 1px solid #e4e6fc;
+			padding-left: 30px;
+			height: 100%;
+		}
     </style>
 @endpush
 
