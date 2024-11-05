@@ -150,6 +150,9 @@
 		}
 		/* Note-Editable Order List Style End */
 		/* Note-Editable Table Default Style Start */
+		table {
+			width: 100%;
+		}
 		table, th, td {
 			border: 1px solid #f6f6f6;
 			border-collapse: collapse;
