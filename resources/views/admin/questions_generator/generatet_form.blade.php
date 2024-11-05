@@ -325,6 +325,7 @@
 							<textarea name="original_passage" id="original_passage" rows="4"></textarea>
 						</div>
 					</div>
+					<div class="row">
 					<div class="col-md-12 col-lg-4">
 						<div class="form-group">
 							<label for="rewording_level" class="mb-0">Rewording Level (0 - 100%):</label>
@@ -344,13 +345,14 @@
 						</div>
 					</div>
 					<div class="col-md-12 col-lg-4">
-					<div class="form-group">
+						<div class="form-group">
 						<!-- Number of Questions -->
 						<label for="num_questions" class="mb-0">Number of Questions (Max 20):</label>
 						<div class="range-output">
 							<input type="range" name="num_questions" id="num_questions" min="1" max="20" value="2" oninput="this.nextElementSibling.value = this.value">
 							<output>2</output>
 						</div>
+					</div>
 					</div>
 				</div>
 				</div>
