@@ -1214,10 +1214,10 @@ $(document).on('click', '.apply-template-field span', function () {
 			parentForm.find('[name="'+name+'"]').change();
 		}
 		if (parentForm.find('[name="'+name+'"]').attr('type') == 'radio' || parentForm.find('[name="'+name+'"]').attr('type') == 'checkbox') {
-			console.log('[name="'+name+'"][value="'+selected_value+'"]');
 			parentForm.find('[name="'+name+'"][value="'+selected_value+'"]').prop('checked', true);
 		}else{
 			parentForm.find('[name="'+name+'"]').val(formDataObj[name]);
+			parentForm.find('[name="'+name+'"]').change();
 		}
 		
 		jsonFormData[key] = value;
