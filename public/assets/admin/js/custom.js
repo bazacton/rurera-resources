@@ -1208,9 +1208,16 @@ $(document).on('click', '.apply-template-field span', function () {
 
 	form_data.forEach((value, key) => {
 		var name = key;
-		var value = parentForm.find('[name="'+name+'"]').val(formDataObj[name]);
+		var selected_value = formDataObj[name];
+		
 		if(parentForm.find('[name="'+name+'"]').attr('type') == 'range'){
 			parentForm.find('[name="'+name+'"]').change();
+		}
+		if (parentForm.find('[name="'+name+'"]').attr('type') == 'radio' || parentForm.find('[name="'+name+'"]').attr('type') == 'checkbox') {
+			console.log('[name="'+name+'"][value="'+selected_value+'"]');
+			parentForm.find('[name="'+name+'"][value="'+selected_value+'"]').prop('checked', true);
+		}else{
+			parentForm.find('[name="'+name+'"]').val(formDataObj[name]);
 		}
 		
 		jsonFormData[key] = value;

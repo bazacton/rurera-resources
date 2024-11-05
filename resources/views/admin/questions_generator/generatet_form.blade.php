@@ -422,31 +422,31 @@
 							<div class="row-field">
 							
 								<label class="custom-switch pl-0">
+								<label class="custom-switch-description mb-0 cursor-pointer" for="include_intro_text">Intro Text</label>
 									<input type="checkbox" name="include_intro_text" id="include_intro_text" value="1" class="custom-switch-input include_intro_text" checked>
-										<span class="custom-switch-indicator"></span>
-										<label class="custom-switch-description mb-0 cursor-pointer" for="include_intro_text">Include Intro Text</label>
+									<span class="custom-switch-indicator"></span>
 								</label>
 							</div>
 							<div class="row-field">
 							
 								<label class="custom-switch pl-0">
+									<label class="custom-switch-description mb-0 cursor-pointer" for="include_passage">Passage</label>
 									<input type="checkbox" name="include_passage" id="include_passage" value="1" class="custom-switch-input include_passage" checked>
-										<span class="custom-switch-indicator"></span>
-										<label class="custom-switch-description mb-0 cursor-pointer" for="include_passage">Include Passage</label>
+									<span class="custom-switch-indicator"></span>
 								</label>
 							</div>
 							<div class="row-field">
 								<label class="custom-switch pl-0">
+									<label class="custom-switch-description mb-0 cursor-pointer" for="include_fact_integration">Fact Integration</label>
 									<input type="checkbox" name="include_fact_integration" id="include_fact_integration" value="1" class="custom-switch-input include_fact_integration" checked>
-										<span class="custom-switch-indicator"></span>
-										<label class="custom-switch-description mb-0 cursor-pointer" for="include_fact_integration">Include Fact Integration</label>
+									<span class="custom-switch-indicator"></span>
 								</label>
 							</div>
 							<div class="row-field">
 								<label class="custom-switch pl-0">
+									<label class="custom-switch-description mb-0 cursor-pointer" for="example_question_switch">Example</label>
 									<input type="checkbox" name="example_question_switch" id="example_question_switch" value="1" class="custom-switch-input example_question_switch" checked>
-										<span class="custom-switch-indicator"></span>
-										<label class="custom-switch-description mb-0 cursor-pointer" for="example_question_switch">Include Example</label>
+									<span class="custom-switch-indicator"></span>	
 								</label>
 							</div>
 						</div>
@@ -571,6 +571,24 @@
 							<div class="option-group" data-option-index="1">
 								<input type="text" class="form-control" name="options[]" value="Option 2">
 								<input type="checkbox" name="correct_answers[]" value="1">
+								<div class="option-buttons">
+									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
+									<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
+									<button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
+								</div>
+							</div>
+							<div class="option-group" data-option-index="3">
+								<input type="text" class="form-control" name="options[]" value="Option 3">
+								<input type="checkbox" name="correct_answers[]" value="3">
+								<div class="option-buttons">
+									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
+									<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
+									<button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
+								</div>
+							</div>
+							<div class="option-group" data-option-index="4">
+								<input type="text" class="form-control" name="options[]" value="Option 4">
+								<input type="checkbox" name="correct_answers[]" value="4">
 								<div class="option-buttons">
 									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
 									<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
