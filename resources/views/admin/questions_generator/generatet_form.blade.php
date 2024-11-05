@@ -154,8 +154,8 @@
 		<div class="col-md-12 col-lg-12">
 			<div class="form-group">
 				<!-- Content Text Area -->
-				<label for="content">Enter Content (Max 400 Words):</label>
-				<textarea class="w-100" name="content" id="content" rows="4" maxlength="400" required></textarea>
+				<label for="instructions_ai">Instructions for AI:</label>
+				<textarea class="w-100" name="instructions_ai" id="instructions_ai" rows="4" maxlength="400"></textarea>
 			</div>
 		</div>
 		<div class="col-md-6 col-lg-3">
@@ -306,24 +306,33 @@
 	</div>
 	
 	<div class="row mt-3">
-		
-		<div class="col-md-6 col-lg-4">
-			<div class="form-group">
-				<!-- Rewording Level -->
-				<label for="rewording_level" class="mb-0">Rewording Level (0 - 100%):</label>
-				<div class="range-output">
-					<input type="range" name="rewording_level" id="rewording_level" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
-					<output>50</output>
+	
+		<div class="passage-field">
+			<div class="col-md-12 col-lg-12 mt-4">
+				<div class="form-group">
+					<!-- Rewording Level -->
+					<label for="original_passage" class="mb-0">Original Passage:</label>
+					<textarea name="original_passage" id="original_passage" rows="4"></textarea>
 				</div>
 			</div>
-		</div>
-		<div class="col-md-6 col-lg-4">
-			<div class="form-group">
-				<!-- Content Text Length -->
-				<label for="content_text_length" class="mb-0">Content Text Length (Max 50 Words):</label>
-				<div class="range-output">
-					<input type="range" name="content_text_length" id="content_text_length" min="1" max="50" value="50" oninput="this.nextElementSibling.value = this.value">
-					<output>50</output>
+			<div class="col-md-12 col-lg-12 mt-4">
+				<div class="form-group">
+					<!-- Rewording Level -->
+					<label for="rewording_level" class="mb-0">Rewording Level (0 - 100%):</label>
+					<div class="range-output">
+						<input type="range" name="rewording_level" id="rewording_level" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+						<output>50</output>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 col-lg-12 mt-4">
+				<div class="form-group">
+					<!-- Content Text Length -->
+					<label for="content_text_length" class="mb-0">Content Text Length (Max 50 Words):</label>
+					<div class="range-output">
+						<input type="range" name="content_text_length" id="content_text_length" min="1" max="50" value="50" oninput="this.nextElementSibling.value = this.value">
+						<output>50</output>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -353,15 +362,17 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-12 col-lg-12">
+	</div>
+		<!-- Example Form -->
+		
+	<div class="row mt-3">
+		<div class="col-md-3 col-lg-3">
 			<div class="list-group">
 				<input type="checkbox" name="example_question_switch" value="yes" class="example_question_switch" id="example_question_switch">
 				<label for="example_question_switch">Include Example</label>
 			</div>
 		</div>
-	</div>
-		<!-- Example Form -->
-		
+		<div class="col-md-9 col-lg-9">
 		<div class="example-question-block rurera-hide">
 			<div class="row">
 				<div class="col-md-6 col-lg-3">
@@ -390,8 +401,8 @@
 				</div>
 				<div class="col-md-6 col-lg-3">
 					<div class="form-group">
-						<label for="instruction_0">Instruction:</label>
-						<input type="text" name="instruction" id="instruction_0" class="w-100" value="">
+						<label for="options_label">Options Label:</label>
+						<input type="text" name="options_label" id="options_label" class="w-100" value="">
 					</div>
 				</div>
 			</div>
@@ -427,6 +438,8 @@
 					<textarea name="explanation" id="explanation_0" rows="3" class="w-100"></textarea>
 				</div>
 			</div>
+		</div>
+		</div>
 		</div>
 
         <!-- Other fields (ranges, difficulty, language) are the same as before -->
