@@ -188,6 +188,12 @@
 		.defined-searches .save-template {
 			margin-left: auto;
 		}
+		.apply-template-field span {
+			background-color: #fff;
+			padding: 5px 10px;
+			border-radius: 3px;
+			color: var(--primary);
+		}
 	/* Questions Defined Searches style end */
     </style>
 <link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
@@ -230,7 +236,7 @@
 						@if( !empty( $saved_templates ) )
 							@foreach( $saved_templates  as $template_name => $template_data)
 								@php $template_array = json_decode($template_data); 
-								$url_params = '<span>'.$template_name.'</span>'; 
+								$url_params = '<span class="">'.$template_name.'</span>'; 
 								if( isset( $template_array->url_params )){
 									$url_params = '<a href="'.(string) url("").'/admin/questions_bank/?'.$template_array->url_params.'">'.$template_name.'</a>';
 								}
