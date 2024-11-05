@@ -310,6 +310,7 @@
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-12">
+					<label>Setting</label>
 					<!-- Include Intro Text and Passage Checkboxes -->
 					<div class="list-group">
 						<input type="checkbox" name="include_intro_text" class="include_intro_text" id="include_intro_text">
