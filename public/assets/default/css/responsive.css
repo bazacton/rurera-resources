@@ -326,7 +326,7 @@ Lms Responsive Style Start
     .scroll-btn {z-index: 8;}
     .rurera-home-categories>.row>[class*="col-"] {margin-bottom: 15px; width: auto; flex: auto;}
     .topbar-right {flex-wrap: wrap; width: 100%;}
-    body .lms-quiz-section {/*height: auto;*/}
+    /*body .lms-quiz-section {height: auto;}*/
     .panel-sidebar .sidebar-logo {display: none;}
     .question-number-holder {z-index: 1 !important;}
     .dataTables_wrapper {max-width: 100%; width: 100%; overflow: hidden; overflow-x: auto;}
