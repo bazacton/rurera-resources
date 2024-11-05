@@ -307,7 +307,7 @@ Lms Table Style
 /**********************************
 Lms Table Style End
 **********************************/
-/*Field row style start*/
+/*Field row style start*/ 
 .rurera-in-row {display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start; justify-content: flex-start;}
 .rurera-in-row .rurera-in-row {width: 100%;}
 /*.rurera-in-row .field-holder,*/
