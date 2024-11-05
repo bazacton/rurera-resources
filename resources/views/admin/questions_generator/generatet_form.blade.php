@@ -293,13 +293,19 @@
 					<div class="form-group">
 						<!-- Correct Answers -->
 						<label>Select Correct Answers (2-3):</label>
-						<div class="list-group">
-							<input type="checkbox" name="num_correct_answers[]" id="correct1" value="1">
-							<label for="correct1">1</label>
-							<input type="checkbox" name="num_correct_answers[]" id="correct2" value="2">
-							<label for="correct2">2</label>
-							<input type="checkbox" name="num_correct_answers[]" id="correct3" value="3">
-							<label for="correct3">3</label>
+						<div class="list-group list-in-row">
+							<div class="row-field">
+								<input type="checkbox" name="num_correct_answers[]" id="correct1" value="1">
+								<label for="correct1">1</label>
+							</div>
+							<div class="row-field">
+								<input type="checkbox" name="num_correct_answers[]" id="correct2" value="2">
+								<label for="correct2">2</label>
+							</div>
+							<div class="row-field">
+								<input type="checkbox" name="num_correct_answers[]" id="correct3" value="3">
+								<label for="correct3">3</label>
+							</div>
 						</div>
 					</div>
 				</div>
