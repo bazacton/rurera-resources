@@ -287,42 +287,49 @@
 	<div class="row mt-3">
 		
 		<div class="col-md-6 col-lg-4">
-			<!-- Rewording Level -->
-			<label for="rewording_level" class="mb-0">Rewording Level (0 - 100%):</label>
-			<div class="range-output">
-				<input type="range" name="rewording_level" id="rewording_level" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
-				<output>50</output>
+			<div class="form-group">
+				<!-- Rewording Level -->
+				<label for="rewording_level" class="mb-0">Rewording Level (0 - 100%):</label>
+				<div class="range-output">
+					<input type="range" name="rewording_level" id="rewording_level" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+					<output>50</output>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-6 col-lg-4">
-			<!-- Content Text Length -->
-			<label for="content_text_length" class="mb-0">Content Text Length (Max 50 Words):</label>
-			<div class="range-output">
-				<input type="range" name="content_text_length" id="content_text_length" min="1" max="50" value="50" oninput="this.nextElementSibling.value = this.value">
-				<output>50</output>
+			<div class="form-group">
+				<!-- Content Text Length -->
+				<label for="content_text_length" class="mb-0">Content Text Length (Max 50 Words):</label>
+				<div class="range-output">
+					<input type="range" name="content_text_length" id="content_text_length" min="1" max="50" value="50" oninput="this.nextElementSibling.value = this.value">
+					<output>50</output>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-6 col-lg-4">
-			<!-- Number of Questions -->
-			<label for="num_questions" class="mb-0">Number of Questions (Max 20):</label>
-			<div class="range-output">
-				<input type="range" name="num_questions" id="num_questions" min="1" max="20" value="2" oninput="this.nextElementSibling.value = this.value">
-				<output>2</output>
+			<div class="form-group">
+				<!-- Number of Questions -->
+				<label for="num_questions" class="mb-0">Number of Questions (Max 20):</label>
+				<div class="range-output">
+					<input type="range" name="num_questions" id="num_questions" min="1" max="20" value="2" oninput="this.nextElementSibling.value = this.value">
+					<output>2</output>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-12 col-lg-12 mt-4">
-			<!-- Difficulty Level -->
-		
-			<label>Select Difficulty Level:</label>
-			<div class="list-group">
-				<input type="radio" name="difficulty" id="level_0" value="Easy" checked>
-				<label for="level_0">Easy</label>
-				
-				<input type="radio" name="difficulty" id="level_1" value="Moderate">
-				<label for="level_1">Moderate</label>
-				
-				<input type="radio" name="difficulty" id="level_2" value="Hard">
-				<label for="level_2">Hard</label>
+			<div class="form-group">
+				<!-- Difficulty Level -->
+				<label>Select Difficulty Level:</label>
+				<div class="list-group">
+					<input type="radio" name="difficulty" id="level_0" value="Easy" checked>
+					<label for="level_0">Easy</label>
+					
+					<input type="radio" name="difficulty" id="level_1" value="Moderate">
+					<label for="level_1">Moderate</label>
+					
+					<input type="radio" name="difficulty" id="level_2" value="Hard">
+					<label for="level_2">Hard</label>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-12 col-lg-12">
