@@ -159,7 +159,7 @@
 				<textarea class="w-100" name="instructions_ai" id="instructions_ai" rows="4" maxlength="400"></textarea>
 			</div>
 		</div>
-		<div class="col-md-12 col-lg-12">
+		<div class="col-md-6 col-lg-6">
 			<div class="form-group">
 				<label class="input-label">{{trans('admin/main.category')}}</label>
 				<select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="">
@@ -179,7 +179,7 @@
 			</div>
 		</div>
 		
-		<div class="col-md-12 col-lg-12">
+		<div class="col-md-6 col-lg-6">
 			<div class="form-group">
 				<label>Subjects</label>
 				<select data-return_type="option"
@@ -197,7 +197,7 @@
 		</div>
 		
 		
-		<div class="col-md-12 col-lg-12">
+		<div class="col-md-6 col-lg-6">
 			<div class="form-group">
 				<label class="input-label">Topic</label>
 				<select data-sub_chapter_id="" id="chapter_id"
@@ -215,7 +215,7 @@
 		</div>
 		
 		
-		<div class="col-md-12 col-lg-12">
+		<div class="col-md-6 col-lg-6">
 			<div class="form-group">
 				<label class="input-label">Sub Topic</label>
 				<select id="chapter_id"
