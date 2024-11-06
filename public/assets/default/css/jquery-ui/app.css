@@ -245,7 +245,7 @@ select {word-wrap: normal;}
 [type=button],
 [type=reset],
 [type=submit],
-button {-webkit-appearance: button;}
+button {-webkit-appearance: button;appearance: button;}
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
 [type=submit]:not(:disabled),
@@ -262,7 +262,7 @@ legend {display: block; width: 100%; max-width: 100%; padding: 0; margin-bottom:
 progress {vertical-align: baseline;}
 [type=number]::-webkit-inner-spin-button,
 [type=number]::-webkit-outer-spin-button {height: auto; }
-[type=search] {outline-offset: -2px; -webkit-appearance: none;}
+[type=search] {outline-offset: -2px; -webkit-appearance: none;appearance: button;}
 [type=search]::-webkit-search-decoration {-webkit-appearance: none;}
 ::-webkit-file-upload-button {font: inherit; -webkit-appearance: button;}
 output {display: inline-block;}
@@ -5061,6 +5061,11 @@ textarea {-webkit-appearance: none; -moz-appearance: none; appearance: none; out
         background: transparent;
     }
 }
+@keyframes autofill {
+    to {
+        background: transparent;
+    }
+}
 input:-webkit-autofill,
 select:-webkit-autofill,
 textarea:-webkit-autofill {-webkit-animation-name: autofill; -webkit-animation-fill-mode: both;}
@@ -6321,8 +6326,19 @@ p {line-height: 1.5;}
 .clockpicker-popover .clockpicker-canvas line {stroke: var(--primary) !important;}
 .clockpicker-popover .clockpicker-am-pm-block {visibility: hidden; opacity: 0; position: absolute;}
 .clockpicker-popover .popover-content {background-color: #fff !important;}
-.pulsate {-webkit-animation: pulsate .5s ease-out; -webkit-animation-iteration-count: infinite; opacity: .4;}
+.pulsate {-webkit-animation: pulsate .5s ease-out; -webkit-animation-iteration-count: infinite;animation: pulsate .5s ease-out; animation-iteration-count: infinite; opacity: .4;}
 @-webkit-keyframes pulsate {
+    0% {
+        opacity: .4;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: .4;
+    }
+}
+@keyframes pulsate {
     0% {
         opacity: .4;
     }
@@ -6917,7 +6933,7 @@ Lms Diagram Style
 .lms-diagram .diagram-field {margin: 0 25px;}
 .lms-diagram .diagram-field label {display: flex; flex-direction: column; align-items: center; justify-content: center;}
 .lms-diagram .diagram-field label img {margin: 0 0 28px;}
-.lms-diagram .diagram-field input[type=checkbox] {border: 1px solid #000; position: relative; -moz-appearance: none; -webkit-appearance: none; -o-appearance: none; height: 19px; width: 19px;}
+.lms-diagram .diagram-field input[type=checkbox] {border: 1px solid #000; position: relative; -moz-appearance: none; -webkit-appearance: none;appearance: none; -o-appearance: none; height: 19px; width: 19px;}
 .lms-diagram .diagram-field input[type=checkbox]:checked:before {content: '?'; transform: scale(2.5); position: absolute; right: 0px; top: -5px; font-size: 12px; color: #70c17c;}
 /**********************************
 Lms Describe Sentences Style
@@ -9965,7 +9981,7 @@ Lms Responsive Style Start
     .scroll-btn {z-index: 8;}
     .rurera-home-categories>.row>[class*="col-"] {margin-bottom: 15px; width: auto; flex: auto;}
     .topbar-right {flex-wrap: wrap; width: 100%;}
-    body .lms-quiz-section {/*height: auto;*/}
+    /* body .lms-quiz-section {height: auto;} */
     .panel-sidebar .sidebar-logo {display: none;}
     .question-number-holder {z-index: 1 !important;}
     .dataTables_wrapper {max-width: 100%; width: 100%; overflow: hidden; overflow-x: auto;}

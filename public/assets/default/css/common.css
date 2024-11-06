@@ -245,7 +245,7 @@ select {word-wrap: normal;}
 [type=button],
 [type=reset],
 [type=submit],
-button {-webkit-appearance: button;}
+button {-webkit-appearance: button; appearance: button;}
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
 [type=submit]:not(:disabled),
@@ -262,7 +262,7 @@ legend {display: block; width: 100%; max-width: 100%; padding: 0; margin-bottom:
 progress {vertical-align: baseline;}
 [type=number]::-webkit-inner-spin-button,
 [type=number]::-webkit-outer-spin-button {height: auto; }
-[type=search] {outline-offset: -2px; -webkit-appearance: none;}
+[type=search] {outline-offset: -2px; -webkit-appearance: none; appearance: button;}
 [type=search]::-webkit-search-decoration {-webkit-appearance: none;}
 ::-webkit-file-upload-button {font: inherit; -webkit-appearance: button;}
 output {display: inline-block;}
@@ -5056,11 +5056,12 @@ input[type=tel],
 input[type=text],
 textarea {-webkit-appearance: none; -moz-appearance: none; appearance: none; outline: none;}
 .gm-style {font-family: main-font-family !important;}
-@-webkit-keyframes autofill {
+@keyframes autofill {
     to {
         background: transparent;
     }
 }
+
 input:-webkit-autofill,
 select:-webkit-autofill,
 textarea:-webkit-autofill {-webkit-animation-name: autofill; -webkit-animation-fill-mode: both;}

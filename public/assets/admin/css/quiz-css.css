@@ -592,7 +592,7 @@ img.note-float-right {
 /* Tiles - begin */
 .rureraform-tile-layout-inline div.rureraform-tile-container {
 	width: auto;
-	display: inline-block;
+	/* display: inline-block; */
 	float: left;
 }
 div.rureraform-tile-container, div.rureraform-tile-box {
@@ -664,7 +664,7 @@ input[type="radio"].rureraform-tile+label {
 	color: #444;
 	cursor: pointer;
 	display: block;
-	vertical-align: top;
+	/* vertical-align: top; */
 	position: relative;
 	transition-property: border, background, color, transform;
 	-webkit-transition-property: border, background, color, transform;
@@ -736,7 +736,7 @@ input[type="radio"].rureraform-tile:checked+label {
 /* Checkboxes and Radio Buttons - begin */
 .rureraform-cr-layout-inline div.rureraform-cr-container {
 	width: auto;
-	display: inline-block;
+	/* display: inline-block; */
 	float: left;
 }
 .rureraform-cr-layout-2 div.rureraform-cr-container,
@@ -1237,7 +1237,7 @@ input[type="radio"].rureraform-radio-dot.rureraform-radio-small:checked+label:af
 }
 .rureraform-imageselect+label span.rureraform-imageselect-image {
 	display: block;
-	vertical-align: middle;
+	/* vertical-align: middle; */
 	margin: 0;
 	cursor: pointer;
 	background-repeat: no-repeat;
@@ -1607,7 +1607,7 @@ div.rureraform-uploader-file>div.rureraform-uploader-progress>div.rureraform-upl
 }
 .rureraform-multiselect>label {
 	display: block !important;
-	vertical-align: middle;
+	/* vertical-align: middle; */
 	margin: 0;
 	padding: 0.5em 0.7em;
 	color: inherit;
@@ -1904,9 +1904,9 @@ ul.rureraform-progress-t2>li.rureraform-progress-t2-passed>span {
 /* Global message - end */
 
 /* Required symbol - start */
-span.rureraform-required-symbol {
+/* span.rureraform-required-symbol {
 
-}
+} */
 span.rureraform-required-symbol-label-left {
 	margin-right: 0.2em;
 }

@@ -54,7 +54,7 @@ Quiz Check Answers Page Style Start
 .question-result-layout .lms-radio-btn-group {align-items: flex-start; justify-content: flex-start; margin-bottom: 15px;}
 .question-result-layout .lms-radio-btn-group .lms-question-label {background-color: #ededed; height: auto; border-color: #92aec4; border-width: 1px; border-radius: 0; padding: 8px 10px;}
 .question-result-layout .lms-radio-btn-group li {min-width: auto;}
-.question-result-layout .lms-radio-lists .list-title {margin-bottom: 10px; padding-top: 0; color: #333;}
+.question-result-layout .lms-radio-lists .list-title {margin-bottom: 10px; padding-top: 0; color: #333; display: block;}
 .question-result-layout hr {display: none;}
 .question-result-layout .field-holder,
 .question-result-layout .form-field label{background-color: inherit;}
@@ -75,7 +75,10 @@ Quiz Check Answers Page Style Start
 .question-result-layout .droppable-characters {padding-top: 15px;}
 .finish-steps p {background-color: #e8fde8; display: inline-block; vertical-align: middle; line-height: normal; color: #45d745; padding: 5px 8px; border: 1px solid; border-radius: 3px; margin-right: 10px;}
 .finish-steps .prev-next-controls {margin-top: 50px;}
-.question-result-layout .rureraform-form-input-medium .rureraform-input {height: auto;}
+.question-result-layout .rureraform-form-input-medium .rureraform-element .rureraform-input {height: auto;}
+.question-result-layout .form-field.correct,
+.question-result-layout .form-field.wrong {border-radius: 10px;}
+.question-result-layout .form-field.correct input[type="checkbox"]:checked ~ label {background-color: inherit;}
 /* Question-Result-Layout Style End */
 /*Field row style start*/ 
 .rurera-in-row {display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start; justify-content: flex-start;}

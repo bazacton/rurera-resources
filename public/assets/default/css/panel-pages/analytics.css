@@ -10,7 +10,7 @@ Sub Pages Style
 #analyticsAccordion .card {border-radius: 0; border-left: 0; border-right: 0;}
 #analyticsAccordion .card .card-header {border-radius: 0; border-bottom: 0; font-weight: 600; display: flex; flex-wrap: wrap; justify-content: space-between;}
 #analyticsAccordion .card:nth-child(even) > .card-header {background-color: #fff;}
-#analyticsAccordion .card:nth-child(odd) .card-header {}
+/* #analyticsAccordion .card:nth-child(odd) .card-header {} */
 #analyticsAccordion .card-body {border-top: 1px solid rgba(52, 52, 52, .125); padding-top: 30px;}
 #analyticsAccordion .card > .card-header {color: var(--primary); }
 #analyticsAccordion .card .card-body .card-footer {background-color: rgba(255,255,255,0.5); margin-bottom: 25px !important;}
@@ -28,6 +28,9 @@ Sub Pages Style
 .member-card-header.activities-header {
   border: 1px solid #ddd;
   border-bottom: 0;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 .activities-container {padding: 40px !important; background: #fff; border: #ddd solid 1px; border-radius: 0 0 10px 10px;}
 .chart-filters .filters-list {margin-bottom: 20px; width: 100%;}
