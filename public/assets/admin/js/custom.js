@@ -1175,7 +1175,8 @@ $(document).on('click', '.save-template', function () {
 });
 
 $(document).on('click', '.save-template-btn', function () {
-	$(".template_save_modal").modal('hide');
+	//$(".template_save_modal").modal('hide');
+	$(this).attr('disabled','disabled');
 	var template_name = $('.template_name').val();
 	var template_type = $('.template_type').val();
 	var form_id = $('.form_id').val();
