@@ -188,7 +188,7 @@
 		.defined-searches .save-template {
 			margin-left: auto;
 		}
-		.apply-template-field span {
+		.apply-template-field {
 			background-color: #fff;
 			padding: 5px 10px;
 			border-radius: 3px;
