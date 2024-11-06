@@ -77,6 +77,7 @@ Quiz Check Answers Page Style Start
 .finish-steps .prev-next-controls {margin-top: 50px;}
 .question-result-layout .rureraform-form-input-medium .rureraform-element .rureraform-input {height: auto;}
 .question-result-layout .form-field.correct {border-radius: 10px;}
+.question-result-layout .form-field.correct input[type="checkbox"]:checked ~ label {background-color: inherit;}
 /* Question-Result-Layout Style End */
 /*Field row style start*/ 
 .rurera-in-row {display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start; justify-content: flex-start;}
