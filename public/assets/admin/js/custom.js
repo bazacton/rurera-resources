@@ -606,7 +606,7 @@
             });
 
             // Insert the cleaned HTML into the editor
-            $(".summernote-editor").summernote('pasteHTML', tempDiv.innerHTML);
+			document.execCommand('insertHTML', false, tempDiv.innerHTML);
         }
     }
 });
