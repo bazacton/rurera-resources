@@ -449,7 +449,7 @@ Lms Responsive Style Start
     .user-profile-icons li.dropdown:hover strong:before, 
     .user-profile-icons li.dropdown:hover strong:after {visibility: visible;opacity: 1;}
     body .question-layout-block form.question-fields .questions-nav-controls {background-color: #fff; left: 0; width: 100%; margin-bottom: 0 !important;}
-    .member-card-header {/*padding-top: 50px;*/ padding-bottom: 20px !important;}
+    .member-card-header {padding: 20px !important; margin: 0;}
     body #progbar {margin-top: 0;}
     .container-fluid.read-quiz-content .quiz-status-bar {padding-top: 30px;}
     .read-quiz-content .spell-quiz-page .quiz-status-bar {margin-top: 10px;}
