@@ -1798,6 +1798,7 @@
     z-index: -1;
     cursor: default;
     -webkit-user-select: none;
+    user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;
 }
