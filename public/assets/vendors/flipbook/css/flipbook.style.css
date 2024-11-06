@@ -1288,16 +1288,16 @@
     padding-left: 6px
 }
 
-.flipbook-share .social {
-    /* opacity: 0; */
-    /* transition: all .4s ease; */
-    /* margin-left: -15px; */
-    /* visibility: hidden; */
-}
+/* .flipbook-share .social {
+    opacity: 0;
+    transition: all .4s ease;
+    margin-left: -15px;
+    visibility: hidden;
+} */
 
 .flipbook-share .social.top {
-    -ms-transform-origin: 0 0;
-    /* transform-origin: 0 0; */
+    /* -ms-transform-origin: 0 0; */
+    transform-origin: 0 0;
     /* margin-top:-80px
  */
     /* bottom: 34px; */
@@ -1355,9 +1355,9 @@
     width: 120px
 }
 
-.flipbook-share .social.networks-2.center {
-    /*margin-left: -13px*/
-}
+/* .flipbook-share .social.networks-2.center {
+    margin-left: -13px
+} */
 
 .flipbook-share .social.networks-2.left {
     margin-left: -44px
@@ -1372,9 +1372,9 @@
     width: 180px
 }
 
-.flipbook-share .social.networks-3.center {
-    /*margin-left: -45px*/
-}
+/* .flipbook-share .social.networks-3.center {
+    margin-left: -45px
+} */
 
 .flipbook-share .social.networks-3.left {
     margin-left: -102px
@@ -1389,9 +1389,9 @@
     width: 240px
 }
 
-.flipbook-share .social.networks-4.center {
-    /*margin-left: -75px*/
-}
+/* .flipbook-share .social.networks-4.center {
+    margin-left: -75px
+} */
 
 .flipbook-share .social.networks-4.left {
     margin-left: 162px
@@ -1401,10 +1401,10 @@
     margin-left: -250px
 }
 
-.flipbook-share .social.networks-5,
+/* .flipbook-share .social.networks-5,
 .flipbook-share .social.networks-5 ul {
-    /* width: 40px; */
-}
+    width: 40px;
+} */
 
 .flipbook-share .social.networks-5.center {
     /* margin-left:-105px
