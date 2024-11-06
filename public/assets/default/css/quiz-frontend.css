@@ -76,6 +76,7 @@ Quiz Check Answers Page Style Start
 .finish-steps p {background-color: #e8fde8; display: inline-block; vertical-align: middle; line-height: normal; color: #45d745; padding: 5px 8px; border: 1px solid; border-radius: 3px; margin-right: 10px;}
 .finish-steps .prev-next-controls {margin-top: 50px;}
 .question-result-layout .rureraform-form-input-medium .rureraform-element .rureraform-input {height: auto;}
+.question-result-layout .form-field.correct {border-radius: 10px;}
 /* Question-Result-Layout Style End */
 /*Field row style start*/ 
 .rurera-in-row {display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start; justify-content: flex-start;}
