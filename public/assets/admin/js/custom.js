@@ -1186,6 +1186,7 @@ $(document).on('click', '.save-template-btn', function () {
 		data: {'template_type': template_type, 'template_name': template_name, 'form_data_encoded': form_data_encoded},
 		success: function (return_data) {
 			$("#"+form_id).submit();
+			location.reload();
 			console.log(return_data);
 		}
 	});
