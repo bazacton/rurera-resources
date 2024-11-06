@@ -497,6 +497,7 @@ a.last-activity span strong {color: #343434;}
 .lms-choose-membership .form-separator span:before { content: "";position: absolute;left: 100%;width: 999px;height: 1px;background: #b5b8bf;top: 50%; margin-top: 1px;}
 .lms-choose-membership .form-separator span:after {content: "";position: absolute;right: 100%;width: 999px;height: 1px;background: #b5b8bf;top: 50%; margin-top: 1px;}
 .lms-choose-membership .social-login {border-radius: 5px; border: 1px solid var(--primary); font-size: 20px; font-weight: bold; color: var(--primary); background-color: #fff; gap: 10px; text-align: left; margin-bottom: 10px; min-height: 52px;}
+.lms-choose-membership .form-login-reading {margin-bottom: 30px;}
 .lms-choose-membership .form-login-reading .input-field input[type="text"] {height: 48px;border: 1px solid #ddd;}
 .lms-choose-membership .social-login img {width: 18px; height: 18px;}
 .lms-choose-membership .subscription-content {height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
