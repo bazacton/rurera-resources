@@ -187,6 +187,7 @@
 		}
 		.defined-searches .save-template {
 			margin-left: auto;
+			min-width: 110px;
 		}
 		.apply-template-field {
 			background-color: #fff;
@@ -195,6 +196,10 @@
 			color: var(--primary);
 			text-decoration: underline;
 			cursor: pointer;
+		}
+		.defined-searches span strong {
+			min-width: 100px;
+    		display: block;
 		}
 	/* Questions Defined Searches style end */
     </style>
