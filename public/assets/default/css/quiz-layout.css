@@ -544,8 +544,16 @@ body .question-result-layout ol li {margin-top: 1.5rem; margin-left: 0;}
   background: url(../img/quiz/coin-img.jpg) no-repeat center;
   border:1px dotted #333;
   -webkit-animation:1s animateOpacity;
+  animation: 1s animateOpacity;
 }
 @-webkit-keyframes animateOpacity {
+  from {opacity: 0;}
+  5% {opacity: 0.6;}
+  50% {opacity: 1;}
+  95% {opacity: 0.6;}
+  to {opacity: 0;}
+}
+@keyframes animateOpacity {
   from {opacity: 0;}
   5% {opacity: 0.6;}
   50% {opacity: 1;}
@@ -773,6 +781,7 @@ Quiz Front end file all css Start
 .range-container input[type='range'] {
 	background-color: transparent;
     -webkit-appearance: none;
+    appearance: none;
 	position: relative;
 	width: 350px;
 }

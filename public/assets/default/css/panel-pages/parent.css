@@ -155,7 +155,7 @@ Assignments Table Style Start
 .db-security ul.small li {list-style-type: circle; margin-bottom: 5px; }
 .form-switch .form-check-input {width: 2em; border-radius: 2em; background: url(/assets/default/svgs/switch-circle.svg); transition: background-position .15s ease-in-out; background-position: left center; background-repeat: no-repeat; background-size: contain; background-color: #e9ecef;}
 .form-switch .form-check-input:checked {background: url(/assets/default/svgs/switch-circle-white.svg); background-position: right center; background-repeat: no-repeat; background-size: contain; background-color: #287eff; }
-.form-check-input {border-color: #e9ecef; -webkit-appearance: none; border: 1px solid rgba(0,0,0,.25); width: 1em; height: 1em;}
+.form-check-input {border-color: #e9ecef; -webkit-appearance: none; appearance: none; border: 1px solid rgba(0,0,0,.25); width: 1em; height: 1em;}
 .db-notifications .list-group-custom li:after {display: none;}
 .db-notifications small {font-size: .875em; color: #9399a1!important; display: block; padding-top: 5px; }
 .db-form-tabs .lms-faqs {border: 1px solid #e2e8f0;background-color: #fff;border-radius: 10px;padding: 30px;max-width: 700px;margin: 0;}

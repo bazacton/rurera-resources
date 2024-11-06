@@ -491,8 +491,8 @@
 	margin-top: -12px;
 	margin-left: -12px;
 }
-.lms-quiz-create .rureraform-admin-popup-content-form {
-}
+/* .lms-quiz-create .rureraform-admin-popup-content-form {
+} */
 .lms-quiz-create .rureraform-admin-popup-buttons {
 	box-sizing: border-box;
 	position: absolute;
@@ -2169,7 +2169,7 @@
 .rureraform-header-settings,
 .rureraform-header-using,
 .rureraform-header-preview {
-	display: inline-block;
+	/* display: inline-block; */
 	float: left;
 	width: 56px;
 	height: 56px;
@@ -2197,6 +2197,7 @@
 	background: #169F85;
 }
 .rureraform-header-save {
+	/* display: inline-block; */
 	float: right;
 	height: 56px;
 }
@@ -2269,7 +2270,7 @@
 .rureraform-pages-bar-items>li label {
 	line-height: inherit;
 	display: block;
-	vertical-align: top;
+	/* vertical-align: top; */
 	overflow: hidden;
 	max-width: 160px;
 	cursor: pointer;
@@ -2741,8 +2742,8 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {
 	height: 34px;
 	padding-top: 2px;
 }
-.rureraform-stats-radio-container {
-}
+/* .rureraform-stats-radio-container { */
+/* } */
 .rureraform-stats-select-container label, .rureraform-stats-input-container label, .rureraform-stats-radio-container label {
 	font-style: italic;
 	font-size: 13px;

@@ -514,6 +514,7 @@ select {
 [type=submit],
 button {
     -webkit-appearance: button;
+    appearance: button;
 }
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -564,6 +565,7 @@ progress {
 [type=search] {
     outline-offset: -2px;
     -webkit-appearance: none;
+    appearance: none;
 }
 [type=search]::-webkit-search-decoration {
     -webkit-appearance: none;
@@ -3072,7 +3074,7 @@ a.badge-gray200:focus {
     justify-content: space-between;
 }
 #analyticsAccordion .card:nth-child(even) > .card-header {background-color: #fff;}
-#analyticsAccordion .card:nth-child(odd) .card-header {}
+/* #analyticsAccordion .card:nth-child(odd) .card-header {} */
 #analyticsAccordion .card-body {
     border-top: 1px solid rgba(52, 52, 52, .125);
     padding-top: 30px;
@@ -12520,6 +12522,11 @@ textarea {
 }
 .gm-style {
     font-family: main-font-family !important;
+}
+@-webkit-keyframes autofill {
+    to {
+        background: transparent;
+    }
 }
 @-webkit-keyframes autofill {
     to {

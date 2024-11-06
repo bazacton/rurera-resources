@@ -1186,6 +1186,7 @@ $(document).on('click', '.save-template-btn', function () {
 		data: {'template_type': template_type, 'template_name': template_name, 'form_data_encoded': form_data_encoded},
 		success: function (return_data) {
 			$("#"+form_id).submit();
+			location.reload();
 			console.log(return_data);
 		}
 	});
@@ -1203,7 +1204,9 @@ $(document).on('click', '.apply-template-field span', function () {
 	
 	
 	var form_data = new FormData($('#' + form_id)[0]);
-
+	$('#' + form_id).find('input[type="checkbox"]:not(:checked)').each(function() {
+		form_data.append($(this).attr('name'), ''); // Set value as empty or 'false' as needed
+	});
 	var jsonFormData = {};
 
 	form_data.forEach((value, key) => {
@@ -1212,9 +1215,9 @@ $(document).on('click', '.apply-template-field span', function () {
 		return true;
 	}
     var selected_value = formDataObj[name];
-    
     // Handle radio and checkbox inputs
     if (parentForm.find('[name="'+name+'"]').attr('type') == 'radio' || parentForm.find('[name="'+name+'"]').attr('type') == 'checkbox') {
+			
         if (Array.isArray(selected_value)) {
             // For checkboxes with multiple values
 			parentForm.find('[name="'+name+'"]').prop('checked', false);
@@ -1225,6 +1228,7 @@ $(document).on('click', '.apply-template-field span', function () {
             // For single radio or checkbox
             parentForm.find('[name="'+name+'"][value="'+selected_value+'"]').prop('checked', true);
         }
+		parentForm.find('[name="'+name+'"]').change();
     } else if (name.endsWith('[]')) {
         // Remove the "[]" from the field name for consistency
         name = name.slice(0, -2);
@@ -1234,7 +1238,6 @@ $(document).on('click', '.apply-template-field span', function () {
 			
             selected_value.forEach((val, idx) => {
                 // Find and set values for inputs with the modified name
-				console.log(val);
                 parentForm.find('[name="'+name+'[]"]').eq(idx).val(val);
             });
         }
