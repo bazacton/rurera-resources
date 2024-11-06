@@ -229,22 +229,27 @@
 				<div class="card-body px-0 pt-0">
 				
 					
-					@php $saved_templates = $user->saved_templates;
-					$saved_templates = json_decode( $saved_templates );
-					$saved_templates = isset( $saved_templates->question_ai_genearte_form )? $saved_templates->question_ai_genearte_form : array();
-					@endphp
+					
 					<div class="defined-searches">
 					<span><strong>Save Forms:</strong></span>
-						@if( !empty( $saved_templates ) )
-							@foreach( $saved_templates  as $template_name => $template_data)
-								@php $template_array = json_decode($template_data); 
-								$url_params = '<span class="">'.$template_name.'</span>'; 
-								if( isset( $template_array->url_params )){
-									$url_params = '<a href="'.(string) url("").'/admin/questions_bank/?'.$template_array->url_params.'">'.$template_name.'</a>';
-								}
+						@if( !empty( $saved_templates_array ) )
+							@foreach( $saved_templates_array  as $saved_templates_data)
+								@php $saved_templates = $saved_templates_data;
+								$saved_templates = json_decode( $saved_templates );
+								$saved_templates = isset( $saved_templates->question_ai_genearte_form )? $saved_templates->question_ai_genearte_form : array();
 								@endphp
-								<span class="apply-template-field" data-form_id="question-generator-form" data-template_type="question_ai_genearte_form" data-template_data="{{$template_data}}"> {!! $url_params !!} <a href="javascript:;" data-template_name="{{$template_name}}" class="remove-template"><i class="fas fa-times"></i></a></span>
-							@endforeach
+								@if( !empty( $saved_templates ) )
+									@foreach( $saved_templates  as $template_name => $template_data)
+										@php $template_array = json_decode($template_data); 
+										$url_params = '<span class="">'.$template_name.'</span>'; 
+										if( isset( $template_array->url_params )){
+											$url_params = '<a href="'.(string) url("").'/admin/questions_bank/?'.$template_array->url_params.'">'.$template_name.'</a>';
+										}
+										@endphp
+										<span class="apply-template-field" data-form_id="question-generator-form" data-template_type="question_ai_genearte_form" data-template_data="{{$template_data}}"> {!! $url_params !!} <a href="javascript:;" data-template_name="{{$template_name}}" class="remove-template"><i class="fas fa-times"></i></a></span>
+									@endforeach
+								@endif
+						@endforeach
 						@endif
 						<button type="button" class="btn btn-success save-template" data-form_id="question-generator-form" data-template_type="question_ai_genearte_form" ><i class="fas fa-save"></i> Save Form</button>
 					</div>
