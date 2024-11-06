@@ -196,6 +196,8 @@
 			color: var(--primary);
 			text-decoration: underline;
 			cursor: pointer;
+			display: inline-flex;
+    		align-items: center;
 		}
 		.defined-searches span strong {
 			min-width: 100px;
