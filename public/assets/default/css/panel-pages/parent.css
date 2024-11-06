@@ -643,7 +643,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 }
 .parent-panel .panel-sidebar .sidebar-menu {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 30px;
     padding-top: 0 !important;
     padding: 0;
