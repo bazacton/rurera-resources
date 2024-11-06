@@ -9,10 +9,10 @@
 
 @section('content')
 <section class="content-section">
-    <section class="page-section template-grid mx-w-100 p-0 news-section mb-30">
+    <section class="page-section template-grid mx-w-100 p-0 news-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-12 mb-30">
+                <div class="col-12 col-lg-12">
                         <div class="timestables-modes row">
                             <div class="col-12 col-lg-12 col-md-12">
                                 <div class="section-title mb-30">
