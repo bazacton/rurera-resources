@@ -787,9 +787,9 @@
     font-size: 14px;
 }
 
-.flipbook-findbar input:focus {
-    /*    outline:2px solid #bfbfbf; */
-}
+/* .flipbook-findbar input:focus {
+       outline:2px solid #bfbfbf;
+} */
 
 .flipbook-find-info {
     padding-left: 15px;
@@ -919,12 +919,12 @@
 
 /* ui */
 
-.flipbook-skin-color {
-    /*     -webkit-transition: all .3s ease-out;
+/* .flipbook-skin-color {
+        -webkit-transition: all .3s ease-out;
     -moz-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
-    transition: all .3s ease-out; */
-}
+    transition: all .3s ease-out;
+} */
 
 .flipbook-font {
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -1039,9 +1039,9 @@
     color: #616161;
 }
 
-.flipbook-lightbox-toolbar {
-    /* opacity:.6; */
-}
+/* .flipbook-lightbox-toolbar {
+    opacity:.6;
+} */
 
 .flipbook-lightbox-close {
     position: absolute !important;
