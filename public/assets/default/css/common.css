@@ -782,7 +782,7 @@ mark {padding: .2em;background-color: #fcf8e3;}
 }
 a.badge:focus,
 a.badge:hover {text-decoration: none;}
-.badge:empty {display: none;}
+.badge:empty {display: none !important;}
 .btn .badge {position: relative;top: -1px;}
 .badge-pill {padding-right: .6em; padding-left: .6em; border-radius: 10rem;}
 .badge-primary {color: #fff;background-color: #27325e;}
