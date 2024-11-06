@@ -84,7 +84,7 @@ Sub Pages Style
 .heatmap-table-text .text-label {font-weight: 400;}
 .heatmap-table-text li {font-weight: 700;}
 .range-play-btn {height: 34px; width: 34px; display: inline-flex; align-items: center; justify-content: center; background-color: rgba(0,0,0,0.1); border-radius: 100%; font-size: 20px; margin-right: 10px; flex-basis: 34px;}
-.heatmap-range-slider {display: flex; align-items: center; margin: 0 0 30px; flex-wrap: wrap;}
+.heatmap-range-slider {display: flex; align-items: center; margin: 0 0 30px;}
 .heatmap-range-slider .ui-slider.ui-widget-content {background-color: var(--primary); margin-right: 20px; flex-basis: 72%;width: 72%; border: 0; height: 2px; position: relative;}
 .heatmap-range-slider .ui-slider .ui-slider-range {background-color: #e9e9e9;}
 .heatmap-range-slider .ui-slider-horizontal .ui-slider-handle {background-color: var(--primary); border-radius: 100%; border: 0; top: 50%; position: absolute; margin-top: -8px; margin-left: -1px;height: 16px; width: 16px; cursor: pointer; transition: all .4s ease;}
