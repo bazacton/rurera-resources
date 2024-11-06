@@ -1406,10 +1406,10 @@
     width: 40px;
 } */
 
-.flipbook-share .social.networks-5.center {
-    /* margin-left:-105px
- */
-}
+/* .flipbook-share .social.networks-5.center {
+    margin-left:-105px
+
+} */
 
 .flipbook-share .social.networks-5.left {
     margin-left: -225px
@@ -1419,13 +1419,13 @@
     margin-left: -320px
 }
 
-.flipbook-share .social.active {
-    /* opacity: 1; */
-    /* transition: all .4s ease; */
-    /* visibility: visible; */
-}
+/* .flipbook-share .social.active {
+    opacity: 1;
+    transition: all .4s ease;
+    visibility: visible;
+} */
 
-.flipbook-share .social.active.top {}
+/* .flipbook-share .social.active.top {} */
 
 .flipbook-share .social.active.bottom {
     -webkit-transform: scale(1)translateY(15px);
