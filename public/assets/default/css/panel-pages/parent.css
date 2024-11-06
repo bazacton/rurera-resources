@@ -661,6 +661,10 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
     bottom: 100%;
     top: auto;
 }
+.panel-sidebar .sidebar-menu .sidenav-item:first-child .nav-sub-title:before {
+    top: auto;
+    bottom: -1px;
+}
 .parent-panel .sidebar-menu-holder .sidebar-logo {
     display: none;
 }
