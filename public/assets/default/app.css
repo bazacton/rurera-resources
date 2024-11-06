@@ -504,6 +504,7 @@ select {
 [type=submit],
 button {
     -webkit-appearance: button;
+    appearance: button;
 }
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -554,6 +555,7 @@ progress {
 [type=search] {
     outline-offset: -2px;
     -webkit-appearance: none;
+    appearance: none;
 }
 [type=search]::-webkit-search-decoration {
     -webkit-appearance: none;
@@ -3057,7 +3059,7 @@ a.badge-gray200:focus {
     font-weight: 600;
 }
 #analyticsAccordion .card:nth-child(even) > .card-header {background-color: #fff;}
-#analyticsAccordion .card:nth-child(odd) .card-header {}
+/* #analyticsAccordion .card:nth-child(odd) .card-header {} */
 #analyticsAccordion .card-body {
     border-top: 1px solid rgba(52, 52, 52, .125);
     padding-top: 30px;
@@ -12450,6 +12452,11 @@ textarea {
         background: transparent
     }
 }
+@keyframes autofill {
+    to {
+        background: transparent
+    }
+}
 input:-webkit-autofill,
 select:-webkit-autofill,
 textarea:-webkit-autofill {
@@ -14425,8 +14432,19 @@ p {line-height: 1.5;}
 .clockpicker-popover .clockpicker-canvas line {stroke: var(--primary) !important;}
 .clockpicker-popover .clockpicker-am-pm-block {visibility: hidden; opacity: 0; position: absolute;}
 .clockpicker-popover .popover-content {background-color: #fff !important;}
-.pulsate {-webkit-animation: pulsate .5s ease-out; -webkit-animation-iteration-count: infinite; opacity: .4;}
+.pulsate {-webkit-animation: pulsate .5s ease-out; -webkit-animation-iteration-count: infinite;animation: pulsate .5s ease-out; animation-iteration-count: infinite; opacity: .4;}
 @-webkit-keyframes pulsate {
+    0% {
+        opacity: .4;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: .4;
+    }
+}
+@keyframes pulsate {
     0% {
         opacity: .4;
     }
@@ -14999,7 +15017,7 @@ Lms Diagram Style
 .lms-diagram .diagram-field {margin: 0 25px;}
 .lms-diagram .diagram-field label {display: flex; flex-direction: column; align-items: center; justify-content: center;}
 .lms-diagram .diagram-field label img {margin: 0 0 28px;}
-.lms-diagram .diagram-field input[type=checkbox] {border: 1px solid #000; position: relative; -moz-appearance: none; -webkit-appearance: none; -o-appearance: none; height: 19px; width: 19px;}
+.lms-diagram .diagram-field input[type=checkbox] {border: 1px solid #000; position: relative; -moz-appearance: none; appearance: none; -webkit-appearance: none; -o-appearance: none; height: 19px; width: 19px;}
 .lms-diagram .diagram-field input[type=checkbox]:checked:before {content: '?'; transform: scale(2.5); position: absolute; right: 0px; top: -5px; font-size: 12px; color: #70c17c;}
 /**********************************
 Lms Describe Sentences Style
@@ -15822,7 +15840,7 @@ Custom Pagination Style End
 /* Panel Sidebar And Panel Content Style Start */
 /* .panel-page-section .panel-sidebar .sidebar-menu .sidenav-item .sidenav-dropdown {position: absolute; left: 0; top: 100%; width: 200px; background: #fff; padding: 5px 0 15px; box-shadow: 0 5px 5px 1px rgba(0, 0, 0, .1); border-radius: 4px; transition: all 0.6s cubic-bezier(0.68, -0.90, 0.265, 2.90) 0s; z-index: 99; opacity: 0; visibility: hidden; margin-top: 30px;}
 .panel-page-section .panel-sidebar .sidebar-menu .sidenav-item:hover .sidenav-dropdown {opacity: 1; visibility: visible; margin-top: 14px; } */
-.panel-page-section .panel-sidebar {/*background-color: var(--primary); border-top: 0; width: 100%; position: relative; display: flex; align-items: center; padding-bottom: 15px; z-index: 2; box-shadow: none;*/}
+/* .panel-page-section .panel-sidebar {background-color: var(--primary); border-top: 0; width: 100%; position: relative; display: flex; align-items: center; padding-bottom: 15px; z-index: 2; box-shadow: none;} */
 /* .panel-page-section .panel-sidebar .user-info .img-cover {-o-object-fit: contain; object-fit: contain; height: auto; }
 .panel-page-section .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse {padding: 0;}
 .panel-page-section .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse:before,
@@ -15838,7 +15856,7 @@ Custom Pagination Style End
 .panel-page-section .panel-sidebar .simplebar-wrapper,
 .panel-page-section .panel-sidebar .sidebar-menu {overflow: inherit;}
 .panel-page-section {background-color: #fafafc; padding-bottom: 50px;} */
-.panel-page-section .panel-content {/*width: 100%; padding: 0; margin-top: 40px;*/}
+/* .panel-page-section .panel-content {width: 100%; padding: 0; margin-top: 40px;} */
 /* .panel-page-section .panel-sidebar .sidebar-menu.pt-10 {margin-top: -10px;} */
 /* Panel Sidebar And Panel Content Style End */
 /****************************************
@@ -17779,7 +17797,7 @@ Dashboard Form-Tabs Style Start
 .db-security ul.small li {list-style-type: circle; margin-bottom: 5px; }
 .form-switch .form-check-input {width: 2em; border-radius: 2em; background: url(/assets/default/svgs/switch-circle.svg); transition: background-position .15s ease-in-out; background-position: left center; background-repeat: no-repeat; background-size: contain; background-color: #e9ecef;}
 .form-switch .form-check-input:checked {background: url(/assets/default/svgs/switch-circle-white.svg); background-position: right center; background-repeat: no-repeat; background-size: contain; background-color: #287eff; }
-.form-check-input {border-color: #e9ecef; -webkit-appearance: none; border: 1px solid rgba(0,0,0,.25); width: 1em; height: 1em;}
+.form-check-input {border-color: #e9ecef; -webkit-appearance: none;appearance: none; border: 1px solid rgba(0,0,0,.25); width: 1em; height: 1em;}
 .db-notifications .list-group-custom li:after {display: none;}
 .db-form-tabs .list-group-item h6 {font-weight: 500;}
 .db-notifications small {font-size: .875em; color: #9399a1!important; display: block; padding-top: 5px; }
@@ -18137,7 +18155,7 @@ Product Tabs Slider Style Start
 .keyboard-cell {width: 70px; display: inline-flex; flex-direction: column; gap: 5px;}
 .keyboard-cell span {padding: 10px 10px; border-radius: 10px; border: 3px solid #202C2B; background: var(--primary); color: #fff; text-transform: uppercase; height: 70px; transform: rotate(45deg); margin-bottom: 20px; width: 100%;}
 .keyboard-cell:nth-child(even) {margin-top: -45px;}
-.keyboard-cell:nth-child(odd) {}
+/* .keyboard-cell:nth-child(odd) {} */
 .keyboard-delete input.delete,
 .spacebar input[type="button"]{padding: 18px 150px; border-radius: 10px; border: 3px solid #202C2B; background: var(--primary); color: #fff; text-transform: uppercase;}
 .question-status-modal .modal-dialog {max-width: 465px;}
@@ -19112,7 +19130,7 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 
 /* need help page style */
 .help-search {text-align: center;margin: 0 0 30px;}
-.help-title .title-num {height: 40px; width: 40px; display: inline-block; box-shadow: 0 0 5px rgba(0,0,0,0.2); border-radius: 100%; line-height: 40px; font-weight: 600; ont-size: 30px; background: linear-gradient(0deg, var(--color-1) 19%, transparent 19%,transparent 20%, var(--color-2) 20%, var(--color-2)  39%,transparent 39%,transparent 40%, var(--color-3) 40%,var(--color-3) 59% ,transparent 59%,transparent 60%, var(--color-4) 60%, var(--color-4) 79%,transparent 79%, transparent 80%, var(--color-5) 80%);background-clip: text;-webkit-background-clip: text;color: transparent;margin: 0 0 15px;}
+.help-title .title-num {height: 40px; width: 40px; display: inline-block; box-shadow: 0 0 5px rgba(0,0,0,0.2); border-radius: 100%; line-height: 40px; font-weight: 600; font-size: 30px; background: linear-gradient(0deg, var(--color-1) 19%, transparent 19%,transparent 20%, var(--color-2) 20%, var(--color-2)  39%,transparent 39%,transparent 40%, var(--color-3) 40%,var(--color-3) 59% ,transparent 59%,transparent 60%, var(--color-4) 60%, var(--color-4) 79%,transparent 79%, transparent 80%, var(--color-5) 80%);background-clip: text;-webkit-background-clip: text;color: transparent;margin: 0 0 15px;}
 :root {--color-1: #186cb8; --color-2: #2a9a9f; --color-3: #f1b211; --color-4: #e83611; --color-5: #f9002f;}
 .help-title h2 {color: var(--primary); margin: 0 0 15px;}
 .help-search .search-input {position: relative; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.3); border-radius: 5px;}
@@ -19396,7 +19414,7 @@ Lms Responsive Style Start
     .rurera-home-categories>.row>[class*="col-"] {margin-bottom: 15px;}
     .rurera-home-categories>.row>[class*="col-"]:last-child {margin-bottom: 0;}
     .topbar-right {flex-wrap: wrap; width: 100%;}
-    body .lms-quiz-section {/*height: auto;*/}
+    /* body .lms-quiz-section {height: auto;} */
     .dataTables_wrapper {max-width: 100%; width: 100%; overflow: hidden; overflow-x: auto;}
     .sats-listing-card table, .lms-data-table .table { overflow: hidden;}
     .sats-listing-card tbody tr td:nth-child(2) {text-align: left;}
