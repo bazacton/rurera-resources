@@ -20,7 +20,6 @@
 	<link rel="stylesheet" href="/assets/default/css/panel-pages/left-menu.css?ver={{$rand_no}}">
 	<link rel="stylesheet" href="/assets/default/css/common.css?ver={{$rand_no}}">
     <link rel="stylesheet" href="/assets/vendors/jquerygrowl/jquery.growl.css">
-    <link rel="stylesheet" href="/assets/default/css/responsive.css">
 
 	@if(auth()->check() && auth()->user()->isParent())
 		<link rel="stylesheet" href="/assets/default/css/panel-pages/parent.css?ver={{$rand_no}}">
@@ -32,6 +31,7 @@
         @endforeach
     @endif
 	
+    <link rel="stylesheet" href="/assets/default/css/responsive.css">
     @stack('styles_top')
     @stack('scripts_top')
 
