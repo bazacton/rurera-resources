@@ -1233,7 +1233,7 @@ Lms Responsive Style Start
     .rurera-stars span {height: 18px; width: 18px; margin-right: -2px;}
     .rurera-stars .second-star {margin-top: -10px; height: 20px; width: 20px; margin-right: 2px;}
     .rurera-stars span img {height: 100% !important;}
-    .panel-content .sats-listing-card.medium {height: auto; overflow-y: hidden;}
+    .panel-content .sats-listing-card.medium {height: auto; overflow-y: hidden; margin-bottom: 0;}
     body ul.lms-performace-table.leaderboard {width: auto; white-space: nowrap; overflow: hidden; overflow-x: auto; margin-top: 20px;}
     body .panel-content .lms-performace-table>li {display: table-row;}
     body .panel-content .lms-performace-table.leaderboard>li.lms-performace-head div,
