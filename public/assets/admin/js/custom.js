@@ -563,28 +563,74 @@
     };
 
     if (jQuery().summernote) {
-        $(".summernote").summernote({
-            dialogsInBody: true,
-            tabsize: 2,
-            height: $(".summernote").attr('data-height') ?? 250,
-            fontNames: [],
-            toolbar: [
-                ['style', ['style']],
-                ['font', ['bold', 'underline']],
-                //['fontname', ['fontname']],
-                //['color', ['color']],
-                ['para', ['paragraph', 'ul', 'ol']],
-                ['table', ['table']],
-                //['insert', ['link', 'picture', 'video']],
-                ['insert', ['link']],
+		
+		$(".summernote-editor").summernote({
+    dialogsInBody: true,
+    tabsize: 2,
+    height: $(".summernote-editor").attr('data-height') ?? 250,
+    fontNames: [],
+    toolbar: [
+        ['style', ['style']],
+        ['font', ['bold', 'underline']],
+        ['para', ['paragraph', 'ul', 'ol']],
+        ['table', ['table']],
+        ['insert', ['link']],
+        ['history', ['undo']],
+    ],
+    buttons: {
+        lfm: LFMButton
+    },
+    callbacks: {
+        onPaste: function (e) {
+            e.preventDefault();
+
+            var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
+            var pastedData = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
+
+            // Create a temporary DOM element to parse the HTML
+            var tempDiv = document.createElement('div');
+            tempDiv.innerHTML = pastedData;
+
+            // Remove all tags except <strong> and <table> with children, but retain the text content
+            tempDiv.querySelectorAll("*:not(p):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(ul):not(ol):not(li):not(strong):not(table):not(tbody):not(tr):not(td):not(th)").forEach(node => {
+                // Replace each disallowed element with its text content
+                const textNode = document.createTextNode(node.textContent);
+                node.replaceWith(textNode);
+            });
+
+            // Remove attributes from <table> and its child tags
+            tempDiv.querySelectorAll("table, td, th, tr").forEach(node => {
+                for (let attr of node.attributes) {
+                    node.removeAttribute(attr.name);
+                }
+            });
+
+            // Insert the cleaned HTML into the editor
+            $(".summernote-editor").summernote('pasteHTML', tempDiv.innerHTML);
+        }
+    }
+});
+
+		
+		
+		$(".summernote").summernote({
+			dialogsInBody: true,
+			tabsize: 2,
+			height: $(".summernote").attr('data-height') ?? 250,
+			fontNames: [],
+			toolbar: [
+				['style', ['style']],
+				['font', ['bold', 'underline']],
+				['para', ['paragraph', 'ul', 'ol']],
+				['table', ['table']],
+				['insert', ['link']],
 				['history', ['undo']],
-              //['view', ['fullscreen', 'codeview']],
-            ],
-            buttons: {
-                lfm: LFMButton
-            },
+			],
+			buttons: {
+				lfm: LFMButton
+			},
 			callbacks: {
-                onPaste: function (e) {
+				onPaste: function (e) {
 					e.preventDefault();
 
 					var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
@@ -594,53 +640,68 @@
 					var tempDiv = document.createElement('div');
 					tempDiv.innerHTML = pastedData;
 
-					// Decode HTML entities and remove &nbsp;
-					function decodeHTMLEntitiesAndClean(node) {
-						// Loop through all child nodes recursively
-						node.childNodes.forEach(function(child) {
-							if (child.nodeType === 3) { // NodeType 3 is Text Node
-								// Replace &nbsp; with regular space and other entities
-								child.nodeValue = child.nodeValue
-									.replace(/\u00A0/g, ' ') // Replace non-breaking spaces with a regular space
-									.replace(/&amp;/g, '&')
-									.replace(/&lt;/g, '<')
-									.replace(/&gt;/g, '>')
-									.replace(/&quot;/g, '"');
-							} else if (child.nodeType === 1) { // NodeType 1 is Element Node
-								decodeHTMLEntitiesAndClean(child); // Recurse for element nodes
+					// Remove all tags except p, li, ol, ul, strong, u, headings, and table tags
+					function cleanTags(node) {
+						var allowedTags = ['P', 'LI', 'OL', 'UL', 'STRONG', 'U', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'TABLE', 'TR', 'TD', 'TH'];
+						var childNodes = Array.from(node.childNodes);
+						childNodes.forEach(function(child) {
+							if (child.nodeType === 1) { // Element Node
+								if (!allowedTags.includes(child.nodeName)) {
+									// Replace disallowed tags with their inner content
+									while (child.firstChild) {
+										node.insertBefore(child.firstChild, child);
+									}
+									node.removeChild(child);
+								} else {
+									// Allowed tag: Clean recursively
+									cleanTags(child);
+
+									// Remove all attributes from tables and their children
+									if (['TABLE', 'TR', 'TD', 'TH'].includes(child.nodeName)) {
+										while (child.attributes.length > 0) {
+											child.removeAttribute(child.attributes[0].name);
+										}
+									}
+								}
+							} else if (child.nodeType === 3) { // Text Node
+								// Do nothing for text nodes
+							} else {
+								// Remove any other type of node
+								node.removeChild(child);
 							}
 						});
 					}
 
-					// Remove all inline styles from elements
+					// Remove all inline styles
 					var elementsWithStyles = tempDiv.querySelectorAll('[style]');
 					elementsWithStyles.forEach(function (element) {
 						element.removeAttribute('style');
 					});
 
-					// Remove all HTML comments
+					// Remove HTML comments
 					function removeComments(node) {
-						var childNodes = node.childNodes;
-						for (var i = childNodes.length - 1; i >= 0; i--) {
-							var child = childNodes[i];
-							if (child.nodeType === 8) { // NodeType 8 is Comment
+						var childNodes = Array.from(node.childNodes);
+						childNodes.forEach(function(child) {
+							if (child.nodeType === 8) { // Comment Node
 								node.removeChild(child);
 							} else if (child.nodeType === 1) {
-								removeComments(child); // Recurse for element nodes
+								removeComments(child);
 							}
-						}
+						});
 					}
 					removeComments(tempDiv);
 
-					// Clean all text nodes from unwanted entities
-					decodeHTMLEntitiesAndClean(tempDiv);
+					// Clean unwanted tags
+					cleanTags(tempDiv);
 
 					// Insert the cleaned content into the editor
 					document.execCommand('insertHTML', false, tempDiv.innerHTML);
 				}
-            }
-        });
-    }
+			}
+		});
+	}
+
+
 
 
     $('body').on('change', '.js-edit-content-locale', function (e) {

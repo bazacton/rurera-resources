@@ -373,7 +373,7 @@
 						<div class="col-md-6 col-lg-12 fact-integration-field">
 							<div class="form-group">
 								<label for="fact_integration">Fact Integration:</label>
-								<textarea class="note-codable summernote w-100 form-control" id="fact_integration" name="fact_integration"></textarea>
+								<textarea class="note-codable summernote-editor w-100 form-control" id="fact_integration" name="fact_integration"></textarea>
 							</div>
 						</div>
 						<div class="col-md-6 col-lg-12">
@@ -429,7 +429,7 @@
 						<div class="col-md-12 col-lg-12">
 							<div class="form-group">
 								<label for="explanation_0">Explanation:</label>
-								<textarea class="note-codable summernote w-100 form-control" id="explanation" name="explanation"></textarea>
+								<textarea class="note-codable summernote-editor w-100 form-control" id="explanation" name="explanation"></textarea>
 							</div>
 						</div>
 					</div>
@@ -454,6 +454,9 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
+		
+		
+		
 		
 		$(document).on('click', '.topic_sub_parts', function () {
 			var pId = $(this).attr("id");
