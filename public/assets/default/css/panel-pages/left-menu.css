@@ -327,7 +327,7 @@ Left SideBar-menu Start
         justify-content: flex-start;
         align-items: flex-start;
     }
-    .parent-panel .panel-sidebar .sidebar-menu {
+    body.parent-panel .panel-sidebar .sidebar-menu {
         padding-left: 20px;
         padding-right: 20px;
     }
