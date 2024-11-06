@@ -328,7 +328,7 @@ a.last-activity span strong {color: #343434;}
 .plan-switch .custom-switch .custom-control-label:before {width: 4rem; border-radius: 20px; }
 .plan-switch .custom-switch .custom-control-label:after {top: calc(-0.1rem + 3px); left: calc(-3.125rem + 4px); width: 1.8rem; height: 1.8rem; border-radius: 100%;}
 .plan-switch .custom-switch .custom-control-input:checked~.custom-control-label:after {left: calc(-3.125rem + 14px);}
-.subscribe-plan {border: 1px solid #ddd; transition: all .4s ease; top: 0; border-radius: 5px !important; min-height: 392px;}
+.subscribe-plan {border: 1px solid #ddd; transition: all .4s ease; top: 0; border-radius: 5px !important;}
 .subscribe-plan .badge-popular {position: absolute; top: 10px; left: 10px; border-radius: 10px 0 10px 0; background-color:#fdb532; color: #fff;}
 .subscribe-plan p {color: #555;}
 .subscribe-plan:hover {top: -15px;}
