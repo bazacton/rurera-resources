@@ -17,7 +17,17 @@ Sub Pages Style
 .student-rank span img {width: 18px; height: 18px; vertical-align: middle; margin-left: 5px;}
 .student-block-text .student-rank {margin-top: 10px;}
 .student-block-text .student-rank span:last-child {margin-bottom: 0;}
-
+/* Leaderboard Style Start */
+.leaderboard>li.lms-performace-head div:nth-child(2) {width: 55%;text-align: left;}
+.leaderboard>li.lms-performace-head div:first-child {width: 8%;}
+.leaderboard>li.lms-performace-des .score-des {padding-left: 20px;flex-wrap: wrap; width: 55%;}
+.leaderboard>li.lms-performace-des .score-des span {width: calc(100% - 65px);}
+.leaderboard>li.lms-performace-head.leaderboard-title div:nth-child(3),
+.leaderboard>li.lms-performace-des.leaderboard-des div:nth-child(3){width:25%;}
+.leaderboard>li.lms-performace-head.leaderboard-title div:first-child h5{color: #878787;}
+.leaderboard>li.lms-performace-des.leaderboard-des .score-des {padding-left: 20px;flex-wrap: wrap;}
+.leaderboard>li.lms-performace-des.leaderboard-des .coin-earn > .badge-btn{width: auto; padding: 0;}
+/* Leaderboard Style End */
 /********************
 School Zone Page | Student Panel Style End
 ********************/
