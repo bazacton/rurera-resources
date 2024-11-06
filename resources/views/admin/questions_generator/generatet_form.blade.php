@@ -680,6 +680,31 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
+		
+		$(document).on('click', '.topic_sub_parts', function () {
+			var pId = $(this).attr("id");
+			if($('.'+pId).is(":visible")) {
+				$('.'+pId).hide(150);
+				$(this).find('.fas').removeClass('fa-chevron-down').addClass('fa-chevron-right')
+			} else {
+				$('.'+pId).show(150);
+				$(this).find('.fas').removeClass('fa-chevron-right').addClass('fa-chevron-down')
+			}
+		});
+
+		$(document).on('click', '.topic_parts', function () {
+		  var practiceId = $(this).parent('tbody').attr("id") + "_subpart";
+		  var providerId = $(this).parent('tbody').attr("id") + "_provider";
+		  if($('.'+practiceId).is(":visible")) {
+			$('.'+practiceId).hide(150);
+			$('.'+providerId).hide(150);
+			$(this).find('.fas').removeClass('fa-chevron-down').addClass('fa-chevron-right')
+		  } else {
+			$('.'+practiceId).show(300);
+			$(this).find('.fas').removeClass('fa-chevron-right').addClass('fa-chevron-down')
+		  }
+		});
+		
 		$('#options-container').on('paste', function(event) {
 			const pasteData = event.originalEvent.clipboardData.getData('text');
 			const items = pasteData.split('\n').filter(item => item.trim() !== '');
