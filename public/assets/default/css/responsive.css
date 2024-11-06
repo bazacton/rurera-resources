@@ -1410,6 +1410,9 @@ Lms Responsive Style Start
         color: #000 !important;
     }
     .reward-program-section .btn-outline-primary {color: #000; border-color: #000;}
+    .categories-card.medium .categories-text .categories-title {margin-bottom: 5px;}
+    .categories-card.medium .categories-text {text-align: left;}
+    .categories-card.medium .learning-btn {display: block; position: initial; transform: none; margin: 0 0 6px;}
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
