@@ -1,6 +1,7 @@
 /*************************************
 Dashboard Account Settings Pages Style Start
 **************************************/
+section:has(.edit-profile-content) {overflow: hidden;}
 .profile-image-holder {background-color: #fff;border: 1px solid #ddd;padding: 0;border-radius: 5px;}
 .profile-image-holder .form-control {height: 45px;background-color: #f9f9f9;border: 0;}
 .profile-image-holder .input-label {margin: 0 0 10px;}
