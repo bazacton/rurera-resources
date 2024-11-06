@@ -12528,7 +12528,7 @@ textarea {
         background: transparent;
     }
 }
-@-webkit-keyframes autofill {
+@keyframes autofill {
     to {
         background: transparent;
     }
@@ -14034,8 +14034,19 @@ p {line-height: 1.5;}
 .clockpicker-popover .clockpicker-canvas line {stroke: var(--primary) !important;}
 .clockpicker-popover .clockpicker-am-pm-block {visibility: hidden; opacity: 0; position: absolute;}
 .clockpicker-popover .popover-content {background-color: #fff !important;}
-.pulsate {-webkit-animation: pulsate .5s ease-out; -webkit-animation-iteration-count: infinite; opacity: .4;}
+.pulsate {-webkit-animation: pulsate .5s ease-out; -webkit-animation-iteration-count: infinite; animation: pulsate .5s ease-out; animation-iteration-count: infinite; opacity: .4;}
 @-webkit-keyframes pulsate {
+    0% {
+        opacity: .4;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: .4;
+    }
+}
+@keyframes pulsate {
     0% {
         opacity: .4;
     }
@@ -14647,7 +14658,7 @@ Lms Diagram Style
 .lms-diagram .diagram-field {margin: 0 25px;}
 .lms-diagram .diagram-field label {display: flex; flex-direction: column; align-items: center; justify-content: center;}
 .lms-diagram .diagram-field label img {margin: 0 0 28px;}
-.lms-diagram .diagram-field input[type=checkbox] {border: 1px solid #000; position: relative; -moz-appearance: none; -webkit-appearance: none; -o-appearance: none; height: 19px; width: 19px;}
+.lms-diagram .diagram-field input[type=checkbox] {border: 1px solid #000; position: relative; -moz-appearance: none;appearance: none; -webkit-appearance: none; -o-appearance: none; height: 19px; width: 19px;}
 .lms-diagram .diagram-field input[type=checkbox]:checked:before {content: '?'; transform: scale(2.5); position: absolute; right: 0px; top: -5px; font-size: 12px; color: #70c17c;}
 /**********************************
 Lms Describe Sentences Style
@@ -15541,7 +15552,7 @@ Custom Pagination Style End
 /* Panel Sidebar And Panel Content Style Start */
 /* .panel-page-section .panel-sidebar .sidebar-menu .sidenav-item .sidenav-dropdown {position: absolute; left: 0; top: 100%; width: 200px; background: #fff; padding: 5px 0 15px; box-shadow: 0 5px 5px 1px rgba(0, 0, 0, .1); border-radius: 4px; transition: all 0.6s cubic-bezier(0.68, -0.90, 0.265, 2.90) 0s; z-index: 99; opacity: 0; visibility: hidden; margin-top: 30px;}
 .panel-page-section .panel-sidebar .sidebar-menu .sidenav-item:hover .sidenav-dropdown {opacity: 1; visibility: visible; margin-top: 14px; } */
-.panel-page-section .panel-sidebar {/*background-color: var(--primary); border-top: 0; width: 100%; position: relative; display: flex; align-items: center; padding-bottom: 15px; z-index: 2; box-shadow: none;*/}
+/* .panel-page-section .panel-sidebar {background-color: var(--primary); border-top: 0; width: 100%; position: relative; display: flex; align-items: center; padding-bottom: 15px; z-index: 2; box-shadow: none;} */
 /* .panel-page-section .panel-sidebar .user-info .img-cover {-o-object-fit: contain; object-fit: contain; height: auto; }
 .panel-page-section .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse {padding: 0;}
 .panel-page-section .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse:before,
@@ -17681,7 +17692,7 @@ Dashboard Form-Tabs Style Start
 .db-security ul.small li {list-style-type: circle; margin-bottom: 5px; }
 .form-switch .form-check-input {width: 2em; border-radius: 2em; background: url(/assets/default/svgs/switch-circle.svg); transition: background-position .15s ease-in-out; background-position: left center; background-repeat: no-repeat; background-size: contain; background-color: #e9ecef;}
 .form-switch .form-check-input:checked {background: url(/assets/default/svgs/switch-circle-white.svg); background-position: right center; background-repeat: no-repeat; background-size: contain; background-color: #287eff; }
-.form-check-input {border-color: #e9ecef; -webkit-appearance: none; border: 1px solid rgba(0,0,0,.25); width: 1em; height: 1em;}
+.form-check-input {border-color: #e9ecef; -webkit-appearance: none;appearance: none; border: 1px solid rgba(0,0,0,.25); width: 1em; height: 1em;}
 .db-notifications .list-group-custom li:after {display: none;}
 .db-notifications small {font-size: .875em; color: #9399a1!important; display: block; padding-top: 5px; }
 .db-form-tabs .lms-faqs {border: 1px solid #e2e8f0;background-color: #fff;border-radius: 10px;padding: 30px;max-width: 700px;margin: 0;}
@@ -18062,7 +18073,7 @@ body .lms-quiz-section .flipbook-quiz {
 .keyboard-cell {width: 70px; display: inline-flex; flex-direction: column; gap: 5px;}
 .keyboard-cell span {padding: 10px 10px; border-radius: 10px; border: 3px solid #202C2B; background: var(--primary); color: #fff; text-transform: uppercase; height: 70px; transform: rotate(45deg); margin-bottom: 20px; width: 100%;}
 .keyboard-cell:nth-child(even) {margin-top: -45px;}
-.keyboard-cell:nth-child(odd) {}
+/* .keyboard-cell:nth-child(odd) {} */
 .keyboard-delete input.delete,
 .spacebar input[type="button"]{padding: 18px 150px; border-radius: 10px; border: 3px solid #202C2B; background: var(--primary); color: #fff; text-transform: uppercase;}
 .question-status-modal .modal-dialog {max-width: 465px;}
@@ -20122,7 +20133,7 @@ Lms Responsive Style Start
     .rurera-home-categories>.row>[class*="col-"] {margin-bottom: 15px;}
     .rurera-home-categories>.row>[class*="col-"]:last-child {margin-bottom: 0;}
     .topbar-right {flex-wrap: wrap; width: 100%;}
-    body .lms-quiz-section {/*height: auto;*/}
+    /* body .lms-quiz-section {height: auto;} */
     .panel-sidebar .sidebar-logo {
         display: none;
     }
