@@ -14658,7 +14658,7 @@ Lms Diagram Style
 .lms-diagram .diagram-field {margin: 0 25px;}
 .lms-diagram .diagram-field label {display: flex; flex-direction: column; align-items: center; justify-content: center;}
 .lms-diagram .diagram-field label img {margin: 0 0 28px;}
-.lms-diagram .diagram-field input[type=checkbox] {border: 1px solid #000; position: relative; -moz-appearance: none; -webkit-appearance: none; -o-appearance: none; height: 19px; width: 19px;}
+.lms-diagram .diagram-field input[type=checkbox] {border: 1px solid #000; position: relative; -moz-appearance: none;appearance: none; -webkit-appearance: none; -o-appearance: none; height: 19px; width: 19px;}
 .lms-diagram .diagram-field input[type=checkbox]:checked:before {content: '?'; transform: scale(2.5); position: absolute; right: 0px; top: -5px; font-size: 12px; color: #70c17c;}
 /**********************************
 Lms Describe Sentences Style
