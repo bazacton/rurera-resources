@@ -237,7 +237,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 
 .custom-switch-indicator:before {content: ''; position: absolute; height: calc(1.25rem - 4px); width: calc(1.25rem - 4px); top: 1px; left: 1px; background: #fff; border-radius: 50%; transition: .3s left;}
 
-.custom-switch-input:checked ~ .custom-switch-indicator {background: var(--primary);}
+.custom-switch-input:checked ~ .custom-switch-indicator {background: var(--blue);}
 
 .custom-switch-input:checked ~ .custom-switch-indicator:before {left: calc(1rem + 1px); }
 
@@ -1614,16 +1614,13 @@ input[type="range"], input[type="number"] {
 button.submit-btn {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: var(--blue);
     color: white;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
     margin-top: 20px;
-}
-button.submit-btn:hover {
-    background-color: #45a049;
 }
 
 /* Add this CSS for the range slider styling */
@@ -1646,14 +1643,14 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 15px;
     height: 15px;
-    background: #4CAF50;
+    background: var(--blue);
     cursor: pointer;
     border-radius: 50%;
 }
 input[type="range"]::-moz-range-thumb {
     width: 15px;
     height: 15px;
-    background: #4CAF50;
+    background: var(--blue);
     cursor: pointer;
     border-radius: 50%;
 }
