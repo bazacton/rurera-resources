@@ -1808,6 +1808,9 @@ output {
         left: 0;
         transform: translateY(-50%);
     }
+    .topic-parts-data table tr td:has(.topic-part-title) {
+        min-width: 100px;
+    }
     /* Topic-parts-data style End */
 
 /*****************************************
