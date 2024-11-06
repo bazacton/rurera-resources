@@ -333,6 +333,11 @@
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-12">
+					<div id="accordion" class="topic-parts-data">
+						
+					</div>
+				</div>
+				<div class="col-md-12 col-lg-12">
 					<div class="form-group">
 						<!-- Grade Selection -->
 						<input type="hidden" name="grade" id="grade1" value="7">
@@ -460,16 +465,16 @@
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-12 mt-4">
-					<div class="passage-field">
-						<div class="form-group">
-							<label for="original_passage">Original Passage:</label>
-							<textarea name="original_passage" id="original_passage" class="form-control w-100" rows="4"></textarea>
-						</div>
-					</div>
 					<div class="intro-field">
 						<div class="form-group">
 							<label for="intro_text_main">Intro Text:</label>
 							<textarea name="intro_text_main" id="intro_text_main" class="form-control w-100" rows="4"></textarea>
+						</div>
+					</div>
+					<div class="passage-field">
+						<div class="form-group">
+							<label for="original_passage">Original Passage:</label>
+							<textarea name="original_passage" id="original_passage" class="form-control w-100" rows="4"></textarea>
 						</div>
 					</div>
 					<div class="row">
@@ -693,6 +698,8 @@
 					value = formFields.filter('[name="' + name + '"]:checked').map(function() {
 						return $(this).val();
 					}).get();
+					console.log(name);
+					console.log(value);
 				} else if ($(this).is(':radio')) {
 					// Handle radio buttons (single selected value)
 					value = formFields.filter('[name="' + name + '"]:checked').val();
@@ -812,6 +819,19 @@
 				data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id},
 				success: function (return_data) {
 					$(".ajax-subchapter-dropdown").html(return_data);
+				}
+			});
+		});
+		
+		
+		$(document).on('change', '.ajax-subchapter-dropdown', function () {
+			var sub_chapter_id = $(this).val();
+			$.ajax({
+				type: "GET",
+				url: '/admin/webinars/topic_parts_by_sub_chapter_generation_form',
+				data: {'sub_chapter_id': sub_chapter_id},
+				success: function (return_data) {
+					$(".topic-parts-data").html(return_data);
 				}
 			});
 		});
