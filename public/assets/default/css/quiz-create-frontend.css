@@ -2197,7 +2197,7 @@
 	background: #169F85;
 }
 .rureraform-header-save {
-	display: inline-block;
+	/* display: inline-block; */
 	float: right;
 	height: 56px;
 }
