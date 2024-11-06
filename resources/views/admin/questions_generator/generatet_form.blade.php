@@ -675,7 +675,6 @@
 		
 		$(document).on('click', '.save-template', function () {
 			// Show the modal
-			$(".template_save_modal").modal('show');
 
 			// Get the form ID
 			var form_id = $(this).attr('data-form_id');
@@ -727,6 +726,7 @@
 			// Encode the form data as JSON and store it in a hidden input
 			var jsonFormData = JSON.stringify(formData);
 			$(".form_data_encoded").val(jsonFormData);
+			$(".template_save_modal").modal('show');
 		});
 
 	
