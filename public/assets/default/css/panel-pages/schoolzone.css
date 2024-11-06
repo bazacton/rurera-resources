@@ -78,7 +78,6 @@ Sub Pages Style
 .lms-performace-table>li.lms-performace-des .icon-table-2 {color: #c7c7c7;}
 .leaderboard-tab .nav-tabs {border-bottom: 0;justify-content: end;}
 .lms-performace-head.leaderboard-title h2, .lms-performace-head.leaderboard-title h5{color: #878787; font-weight: 500;}
-.lms-performace-head.leaderboard-title h2 {text-align: left !important;}
 .leaderboard-tab .nav-tabs .nav-link{border:0;border-radius: 0;background: transparent;border-bottom: 2px solid transparent;padding:0; font-size: 14px;color: #878787;}
 .leaderboard-tab .nav-tabs .nav-link.active {background: transparent;border-color: var(--primary);color:var(--primary);}
 .leaderboard-tab .nav-tabs .nav-item{margin:0 0 10px 20px;}
