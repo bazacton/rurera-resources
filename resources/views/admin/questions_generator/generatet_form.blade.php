@@ -203,7 +203,24 @@
 			min-width: 100px;
     		display: block;
 		}
-	/* Questions Defined Searches style end */
+		/* Questions Defined Searches style end */
+
+		/* Topic-parts-data style Start */
+		.topic-parts-data .card {
+			padding: 10px;
+		}
+		.topic-parts-data .card .card-header {
+			padding: 0;
+		}
+		.topic-parts-data .card .card-header .btn {
+			padding: 0;
+		}
+		.topic-parts-data .card table {
+			margin: 0;
+			width: 100%;
+			border: 0;
+		}
+		/* Topic-parts-data style End */
     </style>
 <link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
 @endpush
