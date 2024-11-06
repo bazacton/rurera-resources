@@ -20,7 +20,6 @@ Sub Pages Style
 /* Leaderboard Style Start */
 .lms-performace-table>li {display: flex;align-items: center;padding: 0;}
 .lms-performace-table>li.lms-performace-head {padding: 0;}
-.lms-performace-table>li.lms-performace-head div {padding: 22px 15px;}
 .lms-performace-table>li.lms-performace-head div:first-child {width: 48%;text-align: left;}
 .lms-performace-table>li.lms-performace-head div {padding: 22px 15px;width: 15%;text-align: center;}
 .lms-performace-table>li.lms-performace-head div span {text-transform: uppercase;font-size: 15px;font-weight: 700;color: #878787;}
