@@ -312,7 +312,8 @@
     height: 100%;
     transform: translateZ(0px);
     -webkit-transform: translateZ(0px);
-    -backface-visibility: hidden;
+    /* -backface-visibility: hidden; */
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -322,7 +323,8 @@
     height: 100%;
     transform: translateZ(0px);
     -webkit-transform: translateZ(0px);
-    -backface-visibility: hidden;
+    /* -backface-visibility: hidden; */
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
