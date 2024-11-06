@@ -321,7 +321,7 @@
 						<label class="input-label">Sub Topic</label>
 						<select id="sub_chapter_id"
 							class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
-							name="sub_chapter_id" data-next_value="">
+							name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
 						<option value="">Please select year, subject, Topic</option>
 					</select>
 					@error('sub_chapter_id')
@@ -819,6 +819,7 @@
 				data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id},
 				success: function (return_data) {
 					$(".ajax-subchapter-dropdown").html(return_data);
+					$('.ajax-subchapter-dropdown').change();
 				}
 			});
 		});
@@ -826,10 +827,11 @@
 		
 		$(document).on('change', '.ajax-subchapter-dropdown', function () {
 			var sub_chapter_id = $(this).val();
+			var topic_part = $(this).attr('data-next_value');
 			$.ajax({
 				type: "GET",
 				url: '/admin/webinars/topic_parts_by_sub_chapter_generation_form',
-				data: {'sub_chapter_id': sub_chapter_id},
+				data: {'sub_chapter_id': sub_chapter_id, 'topic_part': topic_part},
 				success: function (return_data) {
 					$(".topic-parts-data").html(return_data);
 				}
