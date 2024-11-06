@@ -76,6 +76,23 @@ Quiz Check Answers Page Style Start
 .finish-steps p {background-color: #e8fde8; display: inline-block; vertical-align: middle; line-height: normal; color: #45d745; padding: 5px 8px; border: 1px solid; border-radius: 3px; margin-right: 10px;}
 .finish-steps .prev-next-controls {margin-top: 50px;}
 /* Question-Result-Layout Style End */
+/*Field row style start*/ 
+.rurera-in-row {display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start; justify-content: flex-start;}
+.rurera-in-row .rurera-in-row {width: 100%;}
+.spells-quiz-from .lms-radio-select.rurera-in-row {align-items: center; justify-content: center; padding: 15px 15px 0;}
+.spells-quiz-from .rurera-in-row .field-holder,
+.spells-quiz-from .rurera-in-row .form-field {width: 20%;}
+/*Field row style end*/
+
+/*Field row with image style start*/
+.lms-checkbox-img.rurera-in-row .field-holder,
+.lms-checkbox-img.rurera-in-row .form-field {width: 31.555%;}
+/*Field row with image style End*/
+
+/*Field col style start*/
+.rurera-in-cols {gap: 14px; display: flex; flex-wrap: wrap; flex-direction: column; }
+.rureraform-element .rureraform-col .rureraform-element {padding: 0; outline: none !important;}
+/*Field col style end*/
 /* Multi Response List Style Start */
 .form-box {position: relative;}
 .form-field input[type="checkbox"] {position: absolute; left: 0; top: 0; opacity: 0;}
