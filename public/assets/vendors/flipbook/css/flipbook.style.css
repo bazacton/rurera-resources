@@ -151,15 +151,16 @@
 .flipbook-center-container {
     transform: translateZ(0px);
     -webkit-transform: translateZ(0px);
-    -backface-visibility: hidden;
+    /* -backface-visibility: hidden; */
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
 }
 
-.flipbook-center-container-wrapper {}
+/* .flipbook-center-container-wrapper {} */
 
-.flipbook-center-wrapper {}
+/* .flipbook-center-wrapper {} */
 
 .flipbook-book {
     display: block;
@@ -278,7 +279,8 @@
     background-color: #DDD;
     transform: translateZ(0px);
     -webkit-transform: translateZ(0px);
-    -backface-visibility: hidden;
+    /* -backface-visibility: hidden; */
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
