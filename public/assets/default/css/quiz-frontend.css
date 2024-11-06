@@ -1,3 +1,6 @@
+/*****************************
+Quiz Check Answers Page Style Start
+*****************************/
 /*Sats Summary style start*/
 .sats-summary {margin: 0 0 50px; background-color: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #e2e8f0;}
 .chart-summary-fields .sats-summary {margin-bottom: 30px;}
@@ -33,3 +36,7 @@
 .finish-steps .sats-summary .sats-summary-icon {margin-right: 10px; width: 30px; height: 30px;}
 .finish-steps .chart-summary-fields .sats-summary .summary-text {width: calc(100% - 40px); text-align: left;}
 /*Sats Summary style end*/
+
+/*****************************
+Quiz Check Answers Page Style End
+*****************************/
