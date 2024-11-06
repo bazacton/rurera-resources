@@ -220,6 +220,9 @@
 			width: 100%;
 			border: 0;
 		}
+		.topic-parts-data .form-group {
+			margin: 0;
+		}
 		/* Topic-parts-data style End */
     </style>
 <link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
