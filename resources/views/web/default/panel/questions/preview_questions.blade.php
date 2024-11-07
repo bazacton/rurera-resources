@@ -10,7 +10,6 @@ $rand_id = rand(99,9999);
 <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
 @endpush
 
-<link rel="stylesheet" href="/assets/admin/css/quiz-css.css?var={{$rand_id}}">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <style>
     .image-field img{

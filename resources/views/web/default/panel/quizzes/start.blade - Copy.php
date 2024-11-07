@@ -11,9 +11,6 @@ $rand_id = rand(99,9999);
 <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 <link href="/assets/default/vendors/sortable/jquery-ui.min.css"/>
 
-<link rel="stylesheet" href="/assets/default/css/quiz-frontend.css?var={{$rand_id}}">
-<link rel="stylesheet" href="/assets/default/css/quiz-create-frontend.css?var={{$rand_id}}">
-<link rel="stylesheet" href="/assets/admin/css/quiz-css.css?var={{$rand_id}}">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/flipbook.style.css">

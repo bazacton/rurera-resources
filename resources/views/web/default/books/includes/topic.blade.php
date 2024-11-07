@@ -1,6 +1,4 @@
 @php $rand_id = rand(999,99999); @endphp
-<link rel="stylesheet" href="/assets/default/css/quiz-frontend.css?var={{$rand_id}}">
-<link rel="stylesheet" href="/assets/admin/css/quiz-css.css?var={{$rand_id}}">
 <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 <style>
     .rurera-hide{
