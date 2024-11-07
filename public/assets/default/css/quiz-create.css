@@ -760,7 +760,7 @@ scrollbar-gutter: stable both-edges;
 .numeric-list-style .form-field label {padding-left: 45px;}
 .numeric-list-style.image-top .field-holder:before {top: 20px; margin-top: 0;}
 .lms-sorting-fields.image-top .sort-icon {top: 20px; transform: none;}
-.numeric-list-style.image-top > .field-holder {padding-top: 60px;}
+.numeric-list-style.image-top > .field-holder {padding-top: 60px; padding-left: 10px; padding-right: 10px;}
 .lms-sorting-fields.image-top .field-holder .sort-icon ~ label {padding: 0;}
 /*Quistions Type numeric-list style End*/
 
