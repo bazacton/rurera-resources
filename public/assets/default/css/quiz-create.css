@@ -186,7 +186,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /* Multi Response List Style End */
 /*Quiz Radio-Image Style Start*/
 .lms-radio-img .field-holder label {padding: 5px; border-radius: 5px;}
-.lms-radio-img .field-holder label img {object-fit: contain}
+.lms-radio-img .field-holder label img {object-fit: cover}
 
 /*Quiz Radio-Image Style End*/
 /* Image Static Style Start */
@@ -205,6 +205,8 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .lms-checkbox-img.image-right .form-field label:after {font-size: 18px; top: 50%; margin: 2px 0 0 0; height: 30px; width: 30px; text-align:center; transform:translateY(-50%); left: 12px; right: auto;}
 .lms-checkbox-img.image-right .form-field input[type="checkbox"]:checked ~ label:before {opacity: 1;}
 .lms-checkbox-img.image-right .form-field input[type="checkbox"]:checked ~ label:after {transform:translateY(-50%);}
+.image-right .field-holder label {display: flex; align-items: center; flex-direction: row-reverse; justify-content: flex-start; gap: 10px;}
+.image-right .field-holder label img {max-width: 100px; max-height: 100px; min-width: 100px; min-height: 100px;}
 /* Image Static Style End  */
 
 /* Sortable List Style Start */
