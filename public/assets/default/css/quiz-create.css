@@ -120,9 +120,9 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /*Image Sizes Style End*/
 
 /*Image Alignments Style Start*/
-.image-left {text-align: left !important;display: flex;align-items: flex-start;justify-content: flex-start;}
-.image-right {text-align: right !important;display: flex;align-items: flex-end;justify-content: flex-end;}
-.image-center {text-align: center !important;display: flex;align-items: center;justify-content: center;}
+.image-left {text-align: left !important;}
+.image-right {text-align: right !important;}
+.image-center {text-align: center !important;}
 /*Image Alignments Style End*/
 
 /* Image Static Style End */
