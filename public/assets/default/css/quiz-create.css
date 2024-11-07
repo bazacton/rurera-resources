@@ -185,6 +185,22 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .lms-checkbox-img .form-field.wrong label {background: none; border-color: #ff4a4a; color: #000;}
 .lms-checkbox-img .form-field.wrong label:before {border-color: #ff4a4a;}
 /* Multi Response List Style End */
+/*Quiz Radio-Image Style Start*/
+.lms-radio-img .field-holder label {padding: 5px; border-radius: 5px; min-height: 170px; }
+.lms-radio-img .field-holder label img {object-fit: contain; max-width: 100%;}
+.lms-radio-img .inline-fields .field-holder label {width: 100%;}
+.lms-radio-img .inline-fields{flex-direction: row; align-items: flex-start; width: 100%;}
+.lms-radio-img .inline-fields .field-holder{max-width: 31.777%; margin: 0 14px 10px 0; width: 31.777%;}
+.lms-radio-img .lms-radio-select label {flex-direction: column; padding-bottom: 20px; padding-top: 20px;}
+.lms-radio-img.alphabet-list-style .field-holder:before {margin-top: 0; top: 10px;}
+.lms-radio-img .lms-radio-select label img {margin: 0; width: 120px; height: 120px;}
+.lms-radio-img .lms-radio-select label .inner-label {border-top: 1px solid #ddd;padding: 10px 0 0;width: 100%;text-align: center; margin-top: 10px;}
+.lms-radio-img.rurera-in-row .lms-radio-select .field-holder {max-width: 31.8%; flex: 0 0 31.8%;}
+.lms-radio-img .lms-radio-select input[type=radio] ~ label {padding-right: 30px; padding-left: 30px;}
+.lms-radio-img .lms-radio-select input[type=radio] ~ label:hover {background-color: inherit;}
+.lms-radio-img .lms-radio-select input[type=radio]:checked ~ label {background-color: initial; border-color: var(--primary);}
+.lms-radio-img .lms-radio-select label:before {visibility: hidden !important;}
+/*Quiz Radio-Image Style End*/
 /* Image Static Style Start */
 /*image top style*/
 .lms-checkbox-img.image-top .form-field label {flex-direction: column; justify-content: flex-start; align-items: flex-start; padding-right: 15px; padding-left: 15px; color: #838383;}
