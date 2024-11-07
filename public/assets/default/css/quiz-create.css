@@ -331,7 +331,8 @@ Lms Table Style End
 /*Field row with image style start*/
 .lms-checkbox-img.rurera-in-row .field-holder,
 .lms-checkbox-img.rurera-in-row .form-field,
-.lms-radio-img.rurera-in-row .field-holder {width: 31.555%;}
+.lms-radio-img.rurera-in-row .field-holder,
+.lms-radio-img .field-holder {width: 31.555%;}
 /*Field row with image style End*/
 
 /*Field col style start*/
