@@ -29,7 +29,6 @@ $rand_no = rand(99,9999);
     <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="/assets/vendors/jquerygrowl/jquery.growl.css">
     <link rel="stylesheet" href="/assets/default/css/responsive.min.css">
-	<link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver={{$rand_no}}">
 
 
     @if($isRtl)
