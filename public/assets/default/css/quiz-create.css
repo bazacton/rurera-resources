@@ -186,7 +186,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .lms-checkbox-img .form-field.wrong label:before {border-color: #ff4a4a;}
 /* Multi Response List Style End */
 /*Quiz Radio-Image Style Start*/
-.lms-radio-img .field-holder label {padding: 5px; border-radius: 5px; }
+.lms-radio-img .field-holder label {padding: 5px; border-radius: 5px;}
 .lms-radio-img .field-holder label img {object-fit: contain}
 
 /*Quiz Radio-Image Style End*/
