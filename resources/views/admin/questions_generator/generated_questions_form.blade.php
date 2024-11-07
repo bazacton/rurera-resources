@@ -80,7 +80,7 @@
 </head>
 <body>
 
-<h2>Edit Questions  &nbsp;&nbsp;&nbsp;&nbsp;<a href="/admin/questions-generator">Generate Again</a></h2>
+<h2>Edit Questions </h2>
 
 <?php foreach ($questions_array as $index => $question): ?>
     <div class="container" data-question-index="<?= $index ?>">
@@ -106,8 +106,10 @@
             <label for="main_question_<?= $index ?>">Main Question:</label>
             <input type="text" name="main_question" id="main_question_<?= $index ?>" value="<?= htmlspecialchars($question['main_question']) ?>">
 
+			<?php if(isset( $question['instruction'] )){ ?>
             <label for="instruction_<?= $index ?>">Instruction:</label>
             <input type="text" name="instruction" id="instruction_<?= $index ?>" value="<?= htmlspecialchars($question['instruction']) ?>">
+			<?php } ?>
 
             <label>Options:</label>
             <div class="options-container" data-options-container="<?= $index ?>">
@@ -135,7 +137,7 @@
 <?php endforeach; ?>
 <script src="/assets/default/js/admin/jquery.min.js"></script>
 <script>
-	$(document).on('click', '.submit-btn', function () {
+	$(document).on('click', '.submit-btn1', function () {
 		var form_data = new FormData($(this).closest('form')[0]);
 		var thisObj = $(this);
 		$.ajax({
