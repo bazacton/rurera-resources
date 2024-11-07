@@ -4,12 +4,15 @@ $correctCount = count(array_filter($options, function ($option) {
     return isset($option->default) && $option->default === 'on';
 }));
 $element_unique_id = isset( $element_unique_id )? $element_unique_id : $element_id; 
+$have_images = isset( $elementObj->have_images )? $elementObj->have_images : 'no';
+$image_position = isset( $elementObj->image_position )? $elementObj->image_position : 'left';
+$have_images_class = ($have_images == 'yes')? 'lms-checkbox-img'.' image-'.$image_position : '';
 @endphp
 <div id="rureraform-element-{{$element_unique_id}}" class="quiz-group rureraform-element-{{$element_unique_id}} rureraform-element ui-sortable-handle" data-type="checkbox">
     <div class="rureraform-column-label"><label class="rureraform-label">{{$elementObj->label}}</label></div>
     <div class="rureraform-column-input">
         <div class="rureraform-input">
-            <div class="form-box {{$elementObj->template_style}} {{isset( $elementObj->list_style )? $elementObj->list_style : ''}} {{isset( $elementObj->template_alignment )? $elementObj->template_alignment : ''}} {{isset( $elementObj->image_size )? $elementObj->image_size : ''}}">
+            <div class="form-box {{$have_images_class}} {{$elementObj->template_style}} {{isset( $elementObj->list_style )? $elementObj->list_style : ''}} {{isset( $elementObj->template_alignment )? $elementObj->template_alignment : ''}} {{isset( $elementObj->image_size )? $elementObj->image_size : ''}}">
 			
 			
 				@if( !empty( $elementObj->options ))

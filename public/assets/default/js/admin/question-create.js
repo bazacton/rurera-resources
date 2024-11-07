@@ -5795,7 +5795,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 							continue;
 						}
 						
-						if( image_position == 'left' ){
+						if( image_position == 'top' || image_position == 'left' ){
 							label_data += image_data;
 						}
 						
@@ -5807,8 +5807,9 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         options += "<div class='form-field rureraform-cr-container-" + properties["checkbox-size"] + " rureraform-cr-container-" + properties["checkbox-position"] + "'>\n\
 					" + option + "</div>";
                     }
-                    console.log('checkbox-fields');
-                    var image_class = (is_image == true) ? "lms-checkbox-img" : "";
+					
+					var image_position_class = 'image-'+image_position;
+                    var image_class = (is_image == true) ? "lms-checkbox-img "+image_position_class : "";
                     html += "<div id='rureraform-element-" + i + "' class='quiz-group rureraform-element-" + i + " rureraform-element" + (properties["label-style-position"] != "" ? " rureraform-element-label-" + properties["label-style-position"] : "") + (rureraform_form_elements[i]['description-style-position'] != "" ? " rureraform-element-description-" + rureraform_form_elements[i]['description-style-position'] : "") + "' data-type='" + rureraform_form_elements[i]["type"] + "'><div class='rureraform-column-label" + column_label_class + "'><label class='rureraform-label" + (rureraform_form_elements[i]['label-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['label-style-align'] : "") + "'>" + properties["required-label-left"] + rureraform_escape_html(rureraform_form_elements[i]["label"]) + properties["required-label-right"] + properties["tooltip-label"] + "</label></div><div class='rureraform-column-input" + column_input_class + "'><div class='rureraform-input" + extra_class + "'" + properties["tooltip-input"] + "><div class='form-box " + template_style + " " + image_class + "'>" + options + "</div></div><label class='rureraform-description" + (rureraform_form_elements[i]['description-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['description-style-align'] : "") + "'>" + properties["required-description-left"] + rureraform_escape_html(rureraform_form_elements[i]["description"]) + properties["required-description-right"] + properties["tooltip-description"] + "</label></div><div class='rureraform-element-cover'></div></div>";
                     break;
 
