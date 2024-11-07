@@ -25,7 +25,10 @@ $has_image_class = ($hasImage == 1)? 'lms-radio-img' : '';
 							@if( isset( $optionObj->image ) && $optionObj->image != '')
 								<img src="{{$optionObj->image}}" alt="">
 							@endif
-							{{$optionObj->label}}</label>
+							<span class="lable-info">
+								{{$optionObj->label}}
+							</span>
+							</label>
 						</div>
 						
 					@endforeach
