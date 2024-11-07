@@ -130,6 +130,12 @@
 
             <label for="explanation_<?= $index ?>">Explanation:</label>
             <textarea name="explanation" id="explanation_<?= $index ?>" rows="3"><?= htmlspecialchars($question['explanation']) ?></textarea>
+			
+			<?php if(isset( $question['fact_integration'] )){ ?>
+				<label for="fact_integration_<?= $index ?>">Fact Integration:</label>
+				<textarea name="fact_integration" id="fact_integration_<?= $index ?>" rows="4"><?= isset( $question['fact_integration'] )? htmlspecialchars($question['fact_integration']) : ''; ?></textarea>
+			<?php } ?>
+			
 
             <button type="button" class="submit-btn">Save Question</button>
         </form>
