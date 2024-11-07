@@ -10,15 +10,13 @@ $rand_id = rand(99,9999);
 <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
 
 
-<link rel="stylesheet" href="/assets/default/css/quiz-frontend.css?var={{$rand_id}}">
-<link rel="stylesheet" href="/assets/default/css/quiz-create-frontend.css?var={{$rand_id}}">
-<link rel="stylesheet" href="/assets/admin/css/quiz-css.css?var={{$rand_id}}">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/flipbook.style.css">
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/slide-menu.css">
 <script src="/assets/vendors/flipbook/js/flipbook.min.js"></script>
+
 <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
 <style>
     .ui-state-highlight {
