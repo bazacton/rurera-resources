@@ -768,8 +768,8 @@ scrollbar-gutter: stable both-edges;
 .numeric-list-style > .form-field:before {content: counter(listStyle); position:absolute; top: 50%; left: 10px; font-weight: 700; text-transform: uppercase; border: 1px solid #ddd; width: 24px; height: 24px; text-align: center; line-height: 24px; border-radius: 0; color: #999; margin-top: -12px; z-index: 1; display: inline-flex; justify-content: center; align-items: center;}
 .numeric-list-style .form-field label {padding-left: 45px;}
 .numeric-list-style.image-top .field-holder:before {top: 20px; margin-top: 0;}
-.lms-sorting-fields.image-top .sort-icon {top: auto; transform: none; bottom: 14px;}
-.numeric-list-style.image-top > .field-holder {padding: 0;}
+.lms-sorting-fields.image-top .sort-icon {top: auto; transform: none; bottom: 12px; right: 10px;}
+.numeric-list-style.image-top > .field-holder {padding: 0 0 15px;}
 .lms-sorting-fields.image-top .field-holder .sort-icon ~ label {padding: 0;}
 .lms-sorting-fields.image-top .field-holder label img {margin-bottom: 10px;}
 /*Quistions Type numeric-list style End*/
