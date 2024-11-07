@@ -339,6 +339,7 @@ Lms Table Style End
 .rureraform-element .rureraform-col .rureraform-element {padding: 0; outline: none !important;}
 .rurera-in-cols .field-holder,
 .rurera-in-cols .form-field {width: 100%;}
+.rurera-in-cols:has(label img) {flex-direction: row;}
 /*Field col style end*/
 
 /***************************** 
