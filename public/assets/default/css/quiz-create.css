@@ -773,6 +773,7 @@ scrollbar-gutter: stable both-edges;
 .numeric-list-style.image-top > .field-holder {padding: 0 0 15px;} 
 .lms-sorting-fields.image-top .field-holder .sort-icon ~ label {padding: 0;}
 .lms-sorting-fields.image-top .field-holder label img {margin-bottom: 10px;}
+.image-top .field-holder label .lable-info {padding-left: 10px;}
 /*Quistions Type numeric-list style End*/
 
 /*Quistions Type Alphabet-list style Start*/
