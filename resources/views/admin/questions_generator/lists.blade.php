@@ -30,7 +30,7 @@
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
             </div>
-            <div class="breadcrumb-item">Topics Parts</div>
+            <div class="breadcrumb-item">API Requests</div>
         </div>
     </div>
 
@@ -147,7 +147,7 @@
 				$saved_templates = json_decode( $saved_templates );
 				$saved_templates = isset( $saved_templates->topics_search )? $saved_templates->topics_search : array();
 				@endphp
-				<div class="defined-searches mt-20">
+				<div class="defined-searches mt-20" style="display:none">
 				<span><strong>Defined Searches:</strong></span>
 					@if( !empty( $saved_templates ) )
 						@foreach( $saved_templates  as $template_name => $template_data)
@@ -170,7 +170,7 @@
                     @can('admin_topic_parts_create')
                     <div class="card-header">
                         <div class="text-right">
-                            <a href="/admin/topics_parts/create" class="btn btn-primary">New Topic Part</a>
+                            <a href="/admin/questions-generator/prompt" class="btn btn-primary">New API Request</a>
                         </div>
                     </div>
                     @endcan
