@@ -769,7 +769,7 @@ scrollbar-gutter: stable both-edges;
 .numeric-list-style .form-field label {padding-left: 45px;}
 .numeric-list-style.image-top .field-holder:before {top: 20px; margin-top: 0;}
 .lms-sorting-fields.image-top .sort-icon {top: auto; transform: none; bottom: 12px; right: 10px;}
-.numeric-list-style.image-top > .field-holder {padding: 0 0 15px;}
+.numeric-list-style.image-top > .field-holder {padding: 0 0 15px;} 
 .lms-sorting-fields.image-top .field-holder .sort-icon ~ label {padding: 0;}
 .lms-sorting-fields.image-top .field-holder label img {margin-bottom: 10px;}
 /*Quistions Type numeric-list style End*/
