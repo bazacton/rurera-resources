@@ -233,7 +233,6 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .lms-sorting-fields {display: inline-block; width: 100%;}
 .question-textarea .table {overflow: hidden;}
 .lms-sorting-fields::-webkit-scrollbar {height: 5px}
-.rurera-in-row.lms-sorting-fields .field-holder:has(.sort-icon) {padding-right: 50px;}
 /* Sortable List Style End */
 
 /* Question Label Style Start */
