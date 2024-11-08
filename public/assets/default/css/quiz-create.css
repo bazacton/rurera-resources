@@ -1145,9 +1145,7 @@ body:has(.api-questions-form) .container {
     color: #333;
 }
 .api-questions-form label {
-    margin-top: 10px;
     display: block;
-    font-size: 15px;
 }
 .api-questions-form textarea, .api-questions-form input[type="text"] {
     width: 100%;
