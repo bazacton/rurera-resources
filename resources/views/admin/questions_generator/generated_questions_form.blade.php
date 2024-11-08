@@ -71,7 +71,6 @@
             width: 100%;
             border: 0;
             background-color: inherit;
-            text-align: right;
             text-decoration: underline;
         }
         .remove-option-btn {
