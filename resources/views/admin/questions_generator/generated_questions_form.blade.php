@@ -79,7 +79,6 @@
     </style>
 </head>
 <body>
-<pre>{!! $api_response !!}</pre>
 <h2>Edit Questions </h2>
 
 <?php foreach ($questions_array as $index => $question): ?>
