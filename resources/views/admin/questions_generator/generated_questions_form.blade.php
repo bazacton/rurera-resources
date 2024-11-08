@@ -14,11 +14,11 @@
 <div class="container">
 <h2>Edit Questions </h2>
 </div>
-
+<?php $counter = 1; ?>
 <?php foreach ($questions_array as $index => $question): ?>
-
 	<?php $keywords = isset( $question['keywords'] )? $question['keywords'] : array(); ?>
     <div class="api-questions-form container" data-question-index="<?= $index ?>">
+		<span class="question-number"><?php echo $counter; ?></span>
 		<?php if($AiApiCallObj->api_type != 'chatgpt'){ ?>
 		<h5>Cost: ${{$cost_per_question}}</h5>
 		<?php } ?>
@@ -50,9 +50,9 @@
 				<input type="text" name="instruction" id="instruction_<?= $index ?>" value="<?= htmlspecialchars($question['instruction']) ?>">
 				<?php } ?>
 				<?php if(isset( $question['options_label'] )){ ?>
-				<input type="text" name="options_label" id="options_label<?= $index ?>" value="<?= htmlspecialchars($question['options_label']) ?>">
+				<input type="text" class="rureraform-label" name="options_label" id="options_label<?= $index ?>" value="<?= htmlspecialchars($question['options_label']) ?>">
 				<?php } ?>
-				<div class="options-container" data-options-container="<?= $index ?>">
+				<div class="options-container numeric-list-style" data-options-container="<?= $index ?>">
 					<?php shuffle($question['options']); ?>
 					<?php foreach ($question['options'] as $option_index => $option): ?>
 						<div class="option-group" data-option-index="<?= $option_index ?>">
@@ -70,6 +70,7 @@
 				<button type="button" class="add-option-btn" onclick="addOption(<?= $index ?>)">Add Option</button>
 			</div>
 			<div class="question-explain-block">
+			<h3>Explanation</h3>
             <textarea name="explanation" id="explanation_<?= $index ?>" rows="3"><?= htmlspecialchars($question['explanation']) ?></textarea>
 			
 			<?php if(isset( $question['fact_integration'] )){ ?>
@@ -99,7 +100,7 @@
             <button type="button" class="submit-btn">Save Question</button>
         </form>
     </div>
-<?php endforeach; ?>
+<?php $counter++; endforeach; ?>
 <script src="/assets/default/js/admin/jquery.min.js"></script>
 <script>
 	$(document).on('click', '.submit-btn', function () {
