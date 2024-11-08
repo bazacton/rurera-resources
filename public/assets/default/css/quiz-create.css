@@ -1216,6 +1216,49 @@ body:has(.api-questions-form) .container {
     background-color: #2196F3;
     color: white;
 }
+/* Styling for keyword buttons */
+.keyword-buttons {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+.keyword-buttons button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Up button style */
+.move-up-keyword {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.move-up-keyword:hover {
+    background-color: #45a049;
+}
+
+/* Down button style */
+.move-down-keyword {
+    background-color: #2196F3; /* Blue */
+    color: white;
+    transition: background-color 0.2s ease;
+}
+.move-down-keyword:hover {
+    background-color: #1976D2;
+}
+/* Delete button style */
+.remove-keyword {
+    background-color: #f44336; /* Red */
+    color: white;
+    transition: background-color 0.2s ease;
+}
+.remove-keyword:hover {
+    background-color: #d32f2f;
+}
 /**************************************
 API Questions Form Page Style Start
 **************************************/
