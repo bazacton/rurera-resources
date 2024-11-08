@@ -1017,10 +1017,10 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .textarea_lines textarea::-moz-placeholder {color: #999;}
 .textarea_lines textarea:-ms-input-placeholder {color: #999;}
 
-.textarea_lines textarea:focus:-webkit-input-placeholder {color: transparent; }
-.textarea_lines textarea:focus:-moz-placeholder {color: transparent;}
-.textarea_lines textarea:focus::-moz-placeholder {color: transparent;}
-.textarea_lines textarea:focus:-ms-input-placeholder {color: transparent;}
+.textarea_lines textarea:focus:-webkit-input-placeholder {color: transparent; opacity: 0; }
+.textarea_lines textarea:focus:-moz-placeholder {color: transparent; opacity: 0;}
+.textarea_lines textarea:focus::-moz-placeholder {color: transparent; opacity: 0;}
+.textarea_lines textarea:focus:-ms-input-placeholder {color: transparent; opacity: 0;}
 /*Quiz Layout Input Holder Style End*/
 
 /*Quiz Page start-counter style start*/
