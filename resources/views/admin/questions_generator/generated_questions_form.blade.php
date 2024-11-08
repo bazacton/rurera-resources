@@ -65,9 +65,8 @@
             border-radius: 4px;
         }
         .submit-btn {
-            width: 100%;
-            padding: 10px;
-            background-color: var(--blue);
+            padding: 10px 30px;
+            background-color: #4CAF50;
             color: white;
             border: none;
             border-radius: 4px;
