@@ -1017,18 +1017,15 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .textarea_lines textarea::-moz-placeholder {color: #999;}
 .textarea_lines textarea:-ms-input-placeholder {color: #999;}
 
-.textarea_lines textarea.input-simple:focus-within::-webkit-textarea-placeholder {
-    color: red !important;
-}
-.textarea_lines textarea.input-simple:focus-within:-moz-placeholder {
-    color: red !important;
-}
-.textarea_lines textarea.input-simple:focus-within::-moz-placeholder {
-    color: red !important;
-}
-.textarea_lines textarea.input-simple:focus-within:-ms-textarea-placeholder {
-    color: red !important;
-}
+ textarea:focus {
+    color: #476481;
+  }
+textarea:focus::-moz-placeholder {
+    color: #476481;
+  }
+textarea:focus:-webkit-input-placeholder {
+    color: #476481;
+  }
 /*Quiz Layout Input Holder Style End*/
 
 /*Quiz Page start-counter style start*/
