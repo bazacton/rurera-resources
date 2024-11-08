@@ -1018,16 +1018,16 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .textarea_lines textarea:-ms-input-placeholder {color: #999;}
 
 .textarea_lines textarea:focus::-webkit-textarea-placeholder {
-    color: transparent !important;
+    color: red !important;
 }
 .textarea_lines textarea:focus:-moz-placeholder {
-    color: transparent !important;
+    color: red !important;
 }
 .textarea_lines textarea:focus::-moz-placeholder {
-    color: transparent !important;
+    color: red !important;
 }
 .textarea_lines textarea:focus:-ms-textarea-placeholder {
-    color: transparent !important;
+    color: red !important;
 }
 /*Quiz Layout Input Holder Style End*/
 
