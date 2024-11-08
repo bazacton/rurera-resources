@@ -79,8 +79,8 @@
 			<?php } ?>
 			
 			<!-- Keywords Section -->
+			<h3>Keywords</h3>
 			<div class="keywords-section">
-				<h3>Keywords</h3>
 				<?php foreach ($keywords as $keyword_index => $keyword): ?>
 					<div class="keyword-block" data-keyword-index="<?= $keyword_index ?>">
 						<label>Term:</label>
