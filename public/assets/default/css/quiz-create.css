@@ -128,11 +128,16 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /* Image Static Style End */
 
 /* Essay Textarea Field Style Start */
-.input-holder textarea {padding: 10px; border: 0; border-radius: 8px; color: #000; outline: none; width: 100%;}
+.input-holder textarea {padding: 10px; border: 0; border-radius: 8px; color: #000; outline: none; width: 100%; overflow: hidden; resize: none;}
 .input-holder textarea::-webkit-input-placeholder {color: #000; }
 .input-holder textarea:-moz-placeholder {color: #000;}
 .input-holder textarea::-moz-placeholder {color: #000;}
 .input-holder textarea:-ms-input-placeholder {color: #000;}
+.input-holder textarea:focus::placeholder {color: transparent;}
+.input-holder textarea:focus:-webkit-input-placeholder {color: transparent; }
+.input-holder textarea:focus:-moz-placeholder {color: transparent;}
+.input-holder textarea:focus::-moz-placeholder {color: transparent;}
+.input-holder textarea:focus:-ms-input-placeholder {color: transparent;}
 /* Essay Textarea Field Style End */
 
 /* Input Text Field Style Start */
@@ -994,16 +999,6 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
     margin: 15px 0 0;
 }
 .lms-quiz-section .rureraform-col-4 .input-holder {width: 90% !important;}
-.input-holder textarea {padding: 10px; border: 0; border-radius: 8px; color: #000; outline: none; width: 100%;}
-.input-holder textarea::-webkit-input-placeholder {color: #000; }
-.input-holder textarea:-moz-placeholder {color: #000;}
-.input-holder textarea::-moz-placeholder {color: #000;}
-.input-holder textarea:-ms-input-placeholder {color: #000;}
-.input-holder textarea:focus::placeholder {color: transparent;}
-.input-holder textarea:focus:-webkit-input-placeholder {color: transparent; }
-.input-holder textarea:focus:-moz-placeholder {color: transparent;}
-.input-holder textarea:focus::-moz-placeholder {color: transparent;}
-.input-holder textarea:focus:-ms-input-placeholder {color: transparent;}
 /* Textarea Style with lines */
 .rureraform-element[data-type="textareafield_quiz"] .input-holder {width: 100% !important; padding: 0;}
 .rureraform-element[data-type="textareafield_quiz"] .input-holder.field_medium {width: 75% !important;}
