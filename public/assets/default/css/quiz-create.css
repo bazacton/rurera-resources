@@ -1017,7 +1017,7 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .textarea_lines textarea::-moz-placeholder {color: #999;}
 .textarea_lines textarea:-ms-input-placeholder {color: #999;}
 .textarea_lines textarea:focus::placeholder {
-    color: red; /* Placeholder color when textarea is focused */
+    color: transparent; /* Placeholder color when textarea is focused */
 }
 /*Quiz Layout Input Holder Style End*/
 
