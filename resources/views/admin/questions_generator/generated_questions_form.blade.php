@@ -8,7 +8,9 @@
 	<link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver=<?php echo $random_id; ?>">
 </head>
 <body>
+<div class="container">
 <h2>Edit Questions </h2>
+</div>
 
 <?php foreach ($questions_array as $index => $question): ?>
     <div class="api-questions-form container" data-question-index="<?= $index ?>">
