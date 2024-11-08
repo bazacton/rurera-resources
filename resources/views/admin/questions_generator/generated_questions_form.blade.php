@@ -66,7 +66,7 @@
         }
         .submit-btn {
             padding: 10px 30px;
-            background-color: #4CAF50;
+            background-color: blue;
             color: white;
             border: none;
             border-radius: 4px;
@@ -80,7 +80,8 @@
             display: block;
             width: 100%;
             border: 0;
-            text-align:right;
+            text-align:left;
+            color: blue;
             background-color: inherit;
             text-decoration: underline;
         }
