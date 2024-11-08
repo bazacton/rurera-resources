@@ -1180,7 +1180,7 @@ body:has(.api-questions-form) {
     border-radius: 4px;
 }
 .api-questions-form .submit-btn {
-    padding: 10px 30px;
+    padding: 15px 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -1188,6 +1188,8 @@ body:has(.api-questions-form) {
     font-size: 16px;
     cursor: pointer;
     margin-top: 20px;
+    height: auto;
+    text-transform: capitalize;
 }
 .api-questions-form .add-option-btn {
     cursor: pointer;
