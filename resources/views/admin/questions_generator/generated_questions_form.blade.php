@@ -4,95 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question Generator</title>
-    <style>
-        /* Basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            width: 100%;
-            max-width: 800px;
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            margin-bottom: 20px;
-            font-size: 24px;
-            color: #333;
-        }
-        label {
-            margin-top: 10px;
-            display: block;
-            font-size: 15px;
-        }
-        textarea, input[type="text"] {
-            width: 100%;
-            padding: 8px 0;
-            margin-top: 5px;
-            border: 1px solid transparent;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 15px;
-            appearance: none;
-            resize: none;
-        }
-        textarea:focus, input[type="text"]:focus {
-            border-color: #ddd;
-            padding-left: 8px;
-            padding-right: 8px;
-        }
-        .option-group {
-            display: flex;
-            gap: 10px;
-            margin-top: 5px;
-            align-items: center;
-        }
-        .option-group input[type="text"] {
-            flex: 1;
-        }
-        .option-buttons button {
-            cursor: pointer;
-            padding: 5px 8px;
-            font-size: 14px;
-            border: none;
-            border-radius: 4px;
-        }
-        .submit-btn {
-            padding: 10px 30px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-        .add-option-btn {
-            cursor: pointer;
-            margin-top: 20px;
-            display: block;
-            width: 100%;
-            border: 0;
-            text-align:left;
-            color: blue;
-            background-color: inherit;
-            text-decoration: underline;
-        }
-        .remove-option-btn {
-            background-color: #f44336;
-            color: white;
-        }
-        .move-up-btn, .move-down-btn {
-            background-color: #2196F3;
-            color: white;
-        }
-    </style>
+	<?php $random_id = rand(111,9999); ?>
+	<link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver=<?php echo $random_id; ?>">
 </head>
 <body>
 <h2>Edit Questions </h2>
@@ -128,7 +41,11 @@
             <input type="text" name="instruction" id="instruction_<?= $index ?>" value="<?= htmlspecialchars($question['instruction']) ?>">
 			<?php } ?>
 
-            <label>Options:</label>
+            <?php if(isset( $question['options_label'] )){ ?>
+            <label for="instruction_<?= $index ?>">Options Label:</label>
+            <input type="text" name="options_label" id="options_label<?= $index ?>" value="<?= htmlspecialchars($question['options_label']) ?>">
+			<?php } ?>
+			<label>Options:</label>
             <div class="options-container" data-options-container="<?= $index ?>">
 				<?php shuffle($question['options']); ?>
                 <?php foreach ($question['options'] as $option_index => $option): ?>
