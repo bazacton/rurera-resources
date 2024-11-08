@@ -66,7 +66,7 @@
         }
         .submit-btn {
             padding: 10px 30px;
-            background-color: blue;
+            background-color: #4CAF50;
             color: white;
             border: none;
             border-radius: 4px;
