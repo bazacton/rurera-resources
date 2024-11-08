@@ -71,6 +71,13 @@
 				<div class="col-md-12 col-lg-12">
 					<div class="form-group">
 						<!-- Content Text Area -->
+						<label for="example_question_id">Example Question:</label>
+						<input type="number" name="example_question_id" id="example_question_id" class="w-100 form-control" value="">
+					</div>
+				</div>
+				<div class="col-md-12 col-lg-12">
+					<div class="form-group">
+						<!-- Content Text Area -->
 						<label for="instructions_ai">Instructions for AI:</label>
 						<textarea class="w-100 form-control" name="instructions_ai" id="instructions_ai" rows="4" maxlength="400"></textarea>
 					</div>
