@@ -68,7 +68,7 @@
 				<div class="col-md-12 col-lg-12">
 					<h2 class="font-20 font-weight-bold mb-15">Questions Generator</h2>
 				</div>
-				<div class="col-md-12 col-lg-12">
+				<div class="col-md-12 col-lg-12" style="display:none">
 					<div class="form-group">
 						<!-- Content Text Area -->
 						<label for="example_question_id">Example Question:</label>
