@@ -7,7 +7,7 @@
 	<?php $random_id = rand(111,9999); ?>
 	<link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver=<?php echo $random_id; ?>">
 	<style>
-		.rurera-hide1{display:none;}
+		.rurera-hide{display:none;}
 	</style>
 </head>
 <body>
