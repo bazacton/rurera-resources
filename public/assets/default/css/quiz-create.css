@@ -999,6 +999,11 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .input-holder textarea:-moz-placeholder {color: #000;}
 .input-holder textarea::-moz-placeholder {color: #000;}
 .input-holder textarea:-ms-input-placeholder {color: #000;}
+
+.input-holder textarea:focus:-webkit-input-placeholder {color: transparent; }
+.input-holder textarea:focus:-moz-placeholder {color: transparent;}
+.input-holder textarea:focus::-moz-placeholder {color: transparent;}
+.input-holder textarea:focus:-ms-input-placeholder {color: transparent;}
 /* Textarea Style with lines */
 .rureraform-element[data-type="textareafield_quiz"] .input-holder {width: 100% !important; padding: 0;}
 .rureraform-element[data-type="textareafield_quiz"] .input-holder.field_medium {width: 75% !important;}
@@ -1011,6 +1016,11 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .textarea_lines textarea:-moz-placeholder {color: #999;}
 .textarea_lines textarea::-moz-placeholder {color: #999;}
 .textarea_lines textarea:-ms-input-placeholder {color: #999;}
+
+.textarea_lines textarea:focus:-webkit-input-placeholder {color: transparent; }
+.textarea_lines textarea:focus:-moz-placeholder {color: transparent;}
+.textarea_lines textarea:focus::-moz-placeholder {color: transparent;}
+.textarea_lines textarea:focus:-ms-input-placeholder {color: transparent;}
 /*Quiz Layout Input Holder Style End*/
 
 /*Quiz Page start-counter style start*/
