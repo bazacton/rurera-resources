@@ -100,8 +100,7 @@ Quiz Check Answers Page Style Start
 /* Multi Response List Style Start */
 .form-box {position: relative;}
 .form-field input[type="checkbox"] {position: absolute; left: 0; top: 0; opacity: 0;}
-.form-field label {background-color: #fff; border: 2px solid #ddd; border-bottom-width: 4px; border-radius: 8px; position: relative; cursor: auto; padding: 15px; width: 100%; margin-bottom: 0; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; line-height: normal;}
-.form-field label {-webkit-user-select: none; -ms-user-select: none; user-select: none;}
+.form-field label {background-color: #fff; border: 2px solid #ddd; border-bottom-width: 4px; border-radius: 8px; position: relative; cursor: auto; padding: 15px; width: 100%; margin-bottom: 0; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; line-height: normal; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
 .form-field input[type="checkbox"] ~ label {min-height: 52px; text-align: left;}
 .form-field input[type="checkbox"]:checked ~ label:after {opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 .form-field input[type="checkbox"]:checked ~ label{background-color: #ddd;}
