@@ -1117,3 +1117,96 @@ Questions Edit Page Fields style start
 /**************************************
 Questions Edit Page Fields style start
 **************************************/
+
+/**************************************
+API Questions Form Page Style Start
+**************************************/
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+.api-questions-form .container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.api-questions-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.api-questions-form label {
+    margin-top: 10px;
+    display: block;
+    font-size: 15px;
+}
+.api-questions-form textarea, .api-questions-form input[type="text"] {
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 5px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+    appearance: none;
+    resize: none;
+}
+.api-questions-form textarea:focus, .api-questions-form input[type="text"]:focus {
+    border-color: #ddd;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.api-questions-form .option-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    align-items: center;
+}
+.api-questions-form .option-group input[type="text"] {
+    flex: 1;
+}
+.api-questions-form .option-buttons button {
+    cursor: pointer;
+    padding: 5px 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+}
+.api-questions-form .submit-btn {
+    padding: 10px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.api-questions-form .add-option-btn {
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    border: 0;
+    text-align:left;
+    color: blue;
+    background-color: inherit;
+    text-decoration: underline;
+}
+.api-questions-form .remove-option-btn {
+    background-color: #f44336;
+    color: white;
+}
+.api-questions-form .move-up-btn, .api-questions-form .move-down-btn {
+    background-color: #2196F3;
+    color: white;
+}
+/**************************************
+API Questions Form Page Style Start
+**************************************/
