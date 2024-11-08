@@ -1715,10 +1715,10 @@ output {
     }
     /* Note-Editable Order List Style End */
     /* Note-Editable Table Default Style Start */
-    .note-editable table {
+    .example-question-block table {
         width: 100%;
     }
-    .note-editable table, .note-editable th, .note-editable td {
+    .example-question-block table, .example-question-block th, .example-question-block td {
         border: 1px solid #f6f6f6;
         border-collapse: collapse;
         padding: 5px;
