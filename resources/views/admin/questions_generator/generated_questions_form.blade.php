@@ -70,6 +70,7 @@
 				<button type="button" class="add-option-btn" onclick="addOption(<?= $index ?>)">Add Option</button>
 			</div>
 			<div class="question-explain-block">
+			<h3>Explanation</h3>
             <textarea name="explanation" id="explanation_<?= $index ?>" rows="3"><?= htmlspecialchars($question['explanation']) ?></textarea>
 			
 			<?php if(isset( $question['fact_integration'] )){ ?>
