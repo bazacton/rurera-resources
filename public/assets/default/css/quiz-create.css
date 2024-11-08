@@ -1156,6 +1156,7 @@ body:has(.api-questions-form) {
     font-size: 15px;
     appearance: none;
     resize: none;
+    outline-color: #ddd;
 }
 .api-questions-form textarea:focus, .api-questions-form input[type="text"]:focus {
     border-color: #ddd;
