@@ -68,11 +68,11 @@
 				<div class="col-md-12 col-lg-12">
 					<h2 class="font-20 font-weight-bold mb-15">Questions Generator</h2>
 				</div>
-				<div class="col-md-12 col-lg-12">
+				<div class="col-md-12 col-lg-12" style="display:none">
 					<div class="form-group">
 						<!-- Content Text Area -->
 						<label for="example_question_id">Example Question:</label>
-						<input type="number" name="example_question_id" id="example_question_id" class="w-100 form-control" value="">
+						<input type="number" name="example_question_id" id="example_question_id" class="w-100 form-control" value="13061">
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-12">
