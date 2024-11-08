@@ -1119,8 +1119,13 @@ Questions Edit Page Fields style start
 **************************************/
 
 /**************************************
-API Questions Form Page Style Start
+Admin API Questions Form Page Style Start
 **************************************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body:has(.api-questions-form) {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -1218,6 +1223,9 @@ body:has(.api-questions-form) .container {
     color: white;
 }
 /* Styling for keyword */
+.question-keywors-block h3 {
+    margin-bottom: 10px;
+}
 .keyword-block {
     background-color: #f9f9f9;
     padding: 15px;
@@ -1269,5 +1277,5 @@ body:has(.api-questions-form) .container {
     background-color: #d32f2f;
 }
 /**************************************
-API Questions Form Page Style Start
+Admin API Questions Form Page Style Start
 **************************************/
