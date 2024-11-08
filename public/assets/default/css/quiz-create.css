@@ -1202,6 +1202,7 @@ body:has(.api-questions-form) {
     background-color: inherit;
     text-decoration: underline;
     padding: 0;
+    font-size: 16px;
 }
 .api-questions-form .remove-option-btn {
     background-color: #f44336;
