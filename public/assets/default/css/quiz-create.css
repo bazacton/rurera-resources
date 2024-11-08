@@ -1012,15 +1012,15 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .input-holder.textarea_lines,
 .lms-quiz-section .input-holder.textarea_lines {border: 0;border-radius: 0;margin-left: -10px;line-height: 31px;}
 .textarea_lines textarea {background-attachment: local; padding: 0; outline: none; width: 100%; resize: none; color: #999; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 6 6"><circle cx="3" cy="3" r="2" fill="LightGray" /></svg>') 0 0.7em/3px 1.9em white;}
-.textarea_lines textarea::-webkit-input-placeholder {color: red; }
-.textarea_lines textarea:-moz-placeholder {color: red;}
-.textarea_lines textarea::-moz-placeholder {color: red;}
-.textarea_lines textarea:-ms-input-placeholder {color: red;}
+.textarea_lines textarea::-webkit-input-placeholder {color: #999; }
+.textarea_lines textarea:-moz-placeholder {color: #999;}
+.textarea_lines textarea::-moz-placeholder {color: #999;}
+.textarea_lines textarea:-ms-input-placeholder {color: #999;}
 
-.textarea_lines textarea:focus:-webkit-input-placeholder {color: transparent; opacity: 0; }
-.textarea_lines textarea:focus:-moz-placeholder {color: transparent; opacity: 0;}
-.textarea_lines textarea:focus::-moz-placeholder {color: transparent; opacity: 0;}
-.textarea_lines textarea:focus:-ms-input-placeholder {color: transparent; opacity: 0;}
+.textarea_lines textarea:focus:-webkit-input-placeholder {color: transparent; opacity: 0 !important; }
+.textarea_lines textarea:focus:-moz-placeholder {color: transparent; opacity: 0 !important;}
+.textarea_lines textarea:focus::-moz-placeholder {color: transparent; opacity: 0 !important;}
+.textarea_lines textarea:focus:-ms-input-placeholder {color: transparent; opacity: 0 !important;}
 /*Quiz Layout Input Holder Style End*/
 
 /*Quiz Page start-counter style start*/
