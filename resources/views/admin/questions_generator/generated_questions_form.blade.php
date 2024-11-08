@@ -64,12 +64,24 @@
             border: none;
             border-radius: 4px;
         }
-        .add-option-btn, .submit-btn {
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: var(--blue);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .add-option-btn {
             cursor: pointer;
             margin-top: 20px;
             display: block;
             width: 100%;
             border: 0;
+            text-align:right;
             background-color: inherit;
             text-decoration: underline;
         }
