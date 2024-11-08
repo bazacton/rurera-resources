@@ -957,6 +957,7 @@ scrollbar-gutter: stable both-edges;
 .input_line {border-right: 0 !important; border-top: 0 !important; border-left: 0 !important; border-color: #000; border-radius: 0;}
 .input-holder .input-label.right,
 .input-holder input ~ .input-label {right: 10px;left: auto;}
+.input-holder input[type="number"] ~ .input-label {right: 35px;}
 .input-holder input[type=number]::-webkit-inner-spin-button, 
 .input-holder input[type=number]::-webkit-outer-spin-button {opacity: 1;}
 table.table td .input-holder input[type=number]::-webkit-inner-spin-button, 
