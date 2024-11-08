@@ -1121,13 +1121,7 @@ Questions Edit Page Fields style start
 /**************************************
 API Questions Form Page Style Start
 **************************************/
- body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 20px;
-}
-.api-questions-form .container {
+.api-questions-form.container {
     width: 100%;
     max-width: 800px;
     background-color: #fff;
