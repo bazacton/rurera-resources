@@ -1223,6 +1223,7 @@ body:has(.api-questions-form) .container {
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 5px;
+    position: relative;
 }
 /* Styling for keyword buttons */
 .keyword-buttons {
