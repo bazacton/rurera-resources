@@ -50,7 +50,7 @@
 				<input type="text" name="instruction" id="instruction_<?= $index ?>" value="<?= htmlspecialchars($question['instruction']) ?>">
 				<?php } ?>
 				<?php if(isset( $question['options_label'] )){ ?>
-				<input type="text" name="options_label" id="options_label<?= $index ?>" value="<?= htmlspecialchars($question['options_label']) ?>">
+				<input type="text" class="rureraform-label" name="options_label" id="options_label<?= $index ?>" value="<?= htmlspecialchars($question['options_label']) ?>">
 				<?php } ?>
 				<div class="options-container numeric-list-style" data-options-container="<?= $index ?>">
 					<?php shuffle($question['options']); ?>
