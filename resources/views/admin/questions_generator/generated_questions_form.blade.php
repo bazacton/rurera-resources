@@ -52,7 +52,7 @@
 				<?php if(isset( $question['options_label'] )){ ?>
 				<input type="text" name="options_label" id="options_label<?= $index ?>" value="<?= htmlspecialchars($question['options_label']) ?>">
 				<?php } ?>
-				<div class="options-container" data-options-container="<?= $index ?>">
+				<div class="options-container numeric-list-style" data-options-container="<?= $index ?>">
 					<?php shuffle($question['options']); ?>
 					<?php foreach ($question['options'] as $option_index => $option): ?>
 						<div class="option-group" data-option-index="<?= $option_index ?>">
