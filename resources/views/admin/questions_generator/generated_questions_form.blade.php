@@ -8,11 +8,10 @@
 	<link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver=<?php echo $random_id; ?>">
 </head>
 <body>
-<div class="container">
 <h2>Edit Questions </h2>
 
 <?php foreach ($questions_array as $index => $question): ?>
-    <div class="api-questions-form" data-question-index="<?= $index ?>">
+    <div class="api-questions-form container" data-question-index="<?= $index ?>">
 		<h5>Cost: ${{$cost_per_question}}</h5>
         <form action="/admin/questions-generator/update-question" method="POST">
 			@csrf
@@ -77,7 +76,6 @@
         </form>
     </div>
 <?php endforeach; ?>
-    </div>
 <script src="/assets/default/js/admin/jquery.min.js"></script>
 <script>
 	$(document).on('click', '.submit-btn', function () {
