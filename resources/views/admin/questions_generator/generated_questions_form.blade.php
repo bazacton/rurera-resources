@@ -27,10 +27,9 @@
             color: #333;
         }
         label {
-            font-weight: bold;
             margin-top: 10px;
             display: block;
-            color: #555;
+            font-size: 15px;
         }
         textarea, input[type="text"] {
             width: 100%;
