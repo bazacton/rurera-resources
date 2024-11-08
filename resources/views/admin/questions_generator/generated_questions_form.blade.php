@@ -32,72 +32,68 @@
 			<input type="hidden" name="example_question_id" value="{{$AiApiCallObj->example_question_id}}">
             <input type="hidden" name="question_id" value="<?= $index ?>">
             <input type="hidden" name="question_type" value="multiple_choice">
-            
-			<?php if(isset( $question['intro_text'] )){ ?>
-				<div class="question-label question_heading"><span class="editable-content" data-edit_field="intro_text" contenteditable="true"><?= isset( $question['intro_text'] )? htmlspecialchars($question['intro_text']): ''; ?></span></div>
-				<textarea class="rurera-hide" name="intro_text" id="intro_text_<?= $index ?>" rows="2"><?= isset( $question['intro_text'] )? htmlspecialchars($question['intro_text']): ''; ?></textarea>
+            <div class="question-general-block">
+				<?php if(isset( $question['intro_text'] )){ ?>
+					<div class="question-label question_heading"><span class="editable-content" data-edit_field="intro_text" contenteditable="true"><?= isset( $question['intro_text'] )? htmlspecialchars($question['intro_text']): ''; ?></span></div>
+					<textarea class="rurera-hide" name="intro_text" id="intro_text_<?= $index ?>" rows="2"><?= isset( $question['intro_text'] )? htmlspecialchars($question['intro_text']): ''; ?></textarea>
+					
+				<?php } ?>
+				<?php if(isset( $question['passage'] )){ ?>
+					<span><textarea name="passage" id="passage_<?= $index ?>" rows="4"><?= isset( $question['passage'] )? htmlspecialchars($question['passage']) : ''; ?></textarea></span>
+				<?php } ?>
 				
-			<?php } ?>
-            <?php if(isset( $question['passage'] )){ ?>
-				<span><textarea name="passage" id="passage_<?= $index ?>" rows="4"><?= isset( $question['passage'] )? htmlspecialchars($question['passage']) : ''; ?></textarea></span>
-			<?php } ?>
-			
-			<div class="question-label question_label"><span class="editable-content" data-edit_field="main_question" contenteditable="true"><?= isset( $question['main_question'] )? htmlspecialchars($question['main_question']): ''; ?></span></div>
-			<input type="text" class="rurera-hide" name="main_question" id="main_question_<?= $index ?>" value="<?= htmlspecialchars($question['main_question']) ?>">
+				<div class="question-label question_label"><span class="editable-content" data-edit_field="main_question" contenteditable="true"><?= isset( $question['main_question'] )? htmlspecialchars($question['main_question']): ''; ?></span></div>
+				<input type="text" class="rurera-hide" name="main_question" id="main_question_<?= $index ?>" value="<?= htmlspecialchars($question['main_question']) ?>">
 
-			<?php if(isset( $question['instruction'] )){ ?>
-            <label for="instruction_<?= $index ?>">Instruction:</label>
-            <input type="text" name="instruction" id="instruction_<?= $index ?>" value="<?= htmlspecialchars($question['instruction']) ?>">
-			<?php } ?>
-
-            <?php if(isset( $question['options_label'] )){ ?>
-            <input type="text" name="options_label" id="options_label<?= $index ?>" value="<?= htmlspecialchars($question['options_label']) ?>">
-			<?php } ?>
-            <div class="options-container" data-options-container="<?= $index ?>">
-				<?php shuffle($question['options']); ?>
-                <?php foreach ($question['options'] as $option_index => $option): ?>
-                    <div class="option-group" data-option-index="<?= $option_index ?>">
-                        <input type="text" name="options[]" value="<?= htmlspecialchars($option) ?>">
-                        <input type="checkbox" name="correct_answers[]" value="<?= $option_index ?>"
-                            <?php if (in_array($option, $question['correct_answers'])) echo 'checked'; ?>>
-                        <div class="option-buttons">
-                            <button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
-                            <button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
-                            <button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-            <button type="button" class="add-option-btn" onclick="addOption(<?= $index ?>)">Add Option</button>
-
-            <label for="explanation_<?= $index ?>">Explanation:</label>
+				<?php if(isset( $question['instruction'] )){ ?>
+				<label for="instruction_<?= $index ?>">Instruction:</label>
+				<input type="text" name="instruction" id="instruction_<?= $index ?>" value="<?= htmlspecialchars($question['instruction']) ?>">
+				<?php } ?>
+				<?php if(isset( $question['options_label'] )){ ?>
+				<input type="text" name="options_label" id="options_label<?= $index ?>" value="<?= htmlspecialchars($question['options_label']) ?>">
+				<?php } ?>
+				<div class="options-container" data-options-container="<?= $index ?>">
+					<?php shuffle($question['options']); ?>
+					<?php foreach ($question['options'] as $option_index => $option): ?>
+						<div class="option-group" data-option-index="<?= $option_index ?>">
+							<input type="text" name="options[]" value="<?= htmlspecialchars($option) ?>">
+							<input type="checkbox" name="correct_answers[]" value="<?= $option_index ?>"
+								<?php if (in_array($option, $question['correct_answers'])) echo 'checked'; ?>>
+							<div class="option-buttons">
+								<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
+								<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
+								<button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
+							</div>
+						</div>
+					<?php endforeach; ?>
+				</div>
+				<button type="button" class="add-option-btn" onclick="addOption(<?= $index ?>)">Add Option</button>
+			</div>
+			<div class="question-explain-block">
             <textarea name="explanation" id="explanation_<?= $index ?>" rows="3"><?= htmlspecialchars($question['explanation']) ?></textarea>
 			
 			<?php if(isset( $question['fact_integration'] )){ ?>
-				<label for="fact_integration_<?= $index ?>">Fact Integration:</label>
 				<textarea name="fact_integration" id="fact_integration_<?= $index ?>" rows="4"><?= isset( $question['fact_integration'] )? htmlspecialchars($question['fact_integration']) : ''; ?></textarea>
 			<?php } ?>
-			
-			<!-- Keywords Section -->
-			<h3>Keywords</h3>
-			<div class="keywords-section">
-				<?php foreach ($keywords as $keyword_index => $keyword): ?>
-					<div class="keyword-block" data-keyword-index="<?= $keyword_index ?>">
-						<label>Term:</label>
-						<input type="text" name="keywords[<?= $keyword_index ?>][term]" value="<?= htmlspecialchars($keyword['term']) ?>">
-
-						<label>Description:</label>
-						<textarea name="keywords[<?= $keyword_index ?>][description]" rows="2"><?= htmlspecialchars($keyword['description']) ?></textarea>
-						
-						<div class="keyword-buttons">
-							<?php if(count($keywords) > 1){ ?>
-							<button type="button" class="move-up-keyword" onclick="moveKeywordUp(this)">↑</button>
-							<button type="button" class="move-down-keyword" onclick="moveKeywordDown(this)">↓</button>
-							<?php } ?>
-							<button type="button" class="remove-keyword" onclick="removeKeyword(this)">✖</button>
+			</div>
+			<div class="question-keywors-block">
+				<!-- Keywords Section -->
+				<h3>Keywords</h3>
+				<div class="keywords-section">
+					<?php foreach ($keywords as $keyword_index => $keyword): ?>
+						<div class="keyword-block" data-keyword-index="<?= $keyword_index ?>">
+							<input type="text" name="keywords[<?= $keyword_index ?>][term]" value="<?= htmlspecialchars($keyword['term']) ?>">
+							<textarea name="keywords[<?= $keyword_index ?>][description]" rows="2"><?= htmlspecialchars($keyword['description']) ?></textarea>
+							<div class="keyword-buttons">
+								<?php if(count($keywords) > 1){ ?>
+								<button type="button" class="move-up-keyword" onclick="moveKeywordUp(this)">↑</button>
+								<button type="button" class="move-down-keyword" onclick="moveKeywordDown(this)">↓</button>
+								<?php } ?>
+								<button type="button" class="remove-keyword" onclick="removeKeyword(this)">✖</button>
+							</div>
 						</div>
-					</div>
-				<?php endforeach; ?>
+					<?php endforeach; ?>
+				</div>
 			</div>
 
             <button type="button" class="submit-btn">Save Question</button>
