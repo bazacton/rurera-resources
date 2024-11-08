@@ -90,6 +90,8 @@
 			<input type="hidden" name="subject_id" value="{{$subject_id}}">
 			<input type="hidden" name="chapter_id" value="{{$chapter_id}}">
 			<input type="hidden" name="sub_chapter_id" value="{{$sub_chapter_id}}">
+			<input type="hidden" name="difficulty_level" value="{{$AiApiCallObj->difficulty_level}}">
+			<input type="hidden" name="example_question_id" value="{{$AiApiCallObj->example_question_id}}">
             <input type="hidden" name="question_id" value="<?= $index ?>">
             <input type="hidden" name="question_type" value="multiple_choice">
             
