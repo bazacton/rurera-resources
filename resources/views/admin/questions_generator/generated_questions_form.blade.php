@@ -19,7 +19,9 @@
 
 	<?php $keywords = isset( $question['keywords'] )? $question['keywords'] : array(); ?>
     <div class="api-questions-form container" data-question-index="<?= $index ?>">
+		<?php if($AiApiCallObj->api_type != 'chatgpt'){ ?>
 		<h5>Cost: ${{$cost_per_question}}</h5>
+		<?php } ?>
         <form action="/admin/questions-generator/update-question" method="POST">
 			@csrf
 			<input type="hidden" name="category_id" value="{{$category_id}}">
@@ -37,7 +39,6 @@
 				
 			<?php } ?>
             <?php if(isset( $question['passage'] )){ ?>
-				<label for="passage_<?= $index ?>">Passage:</label>
 				<span><textarea name="passage" id="passage_<?= $index ?>" rows="4"><?= isset( $question['passage'] )? htmlspecialchars($question['passage']) : ''; ?></textarea></span>
 			<?php } ?>
 			
@@ -50,10 +51,8 @@
 			<?php } ?>
 
             <?php if(isset( $question['options_label'] )){ ?>
-            <label for="instruction_<?= $index ?>">Options Label:</label>
             <input type="text" name="options_label" id="options_label<?= $index ?>" value="<?= htmlspecialchars($question['options_label']) ?>">
 			<?php } ?>
-			<label>Options:</label>
             <div class="options-container" data-options-container="<?= $index ?>">
 				<?php shuffle($question['options']); ?>
                 <?php foreach ($question['options'] as $option_index => $option): ?>
