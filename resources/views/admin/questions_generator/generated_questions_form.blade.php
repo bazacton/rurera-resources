@@ -17,8 +17,8 @@
 <?php $counter = 1; ?>
 <?php foreach ($questions_array as $index => $question): ?>
 	<?php $keywords = isset( $question['keywords'] )? $question['keywords'] : array(); ?>
-	<span class="question-number"><?php $counter; ?></span>
     <div class="api-questions-form container" data-question-index="<?= $index ?>">
+		<span class="question-number"><?php echo $counter; ?></span>
 		<?php if($AiApiCallObj->api_type != 'chatgpt'){ ?>
 		<h5>Cost: ${{$cost_per_question}}</h5>
 		<?php } ?>
