@@ -36,9 +36,13 @@
             width: 100%;
             padding: 8px;
             margin-top: 5px;
-            border: 1px solid #ddd;
+            border: 1px solid transparent;
             border-radius: 4px;
             box-sizing: border-box;
+            font-size: 15px;
+        }
+        textarea:focus, input[type="text"]:focus {
+            border-color: #ddd;
         }
         .option-group {
             display: flex;
