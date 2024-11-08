@@ -32,7 +32,6 @@
             <input type="hidden" name="question_type" value="multiple_choice">
             
 			<?php if(isset( $question['intro_text'] )){ ?>
-				<label for="intro_text_<?= $index ?>">Intro Text:</label>
 				<div class="question-label question_heading"><span class="editable-content" data-edit_field="intro_text" contenteditable="true"><?= isset( $question['intro_text'] )? htmlspecialchars($question['intro_text']): ''; ?></span></div>
 				<textarea class="rurera-hide" name="intro_text" id="intro_text_<?= $index ?>" rows="2"><?= isset( $question['intro_text'] )? htmlspecialchars($question['intro_text']): ''; ?></textarea>
 				
@@ -42,7 +41,6 @@
 				<span><textarea name="passage" id="passage_<?= $index ?>" rows="4"><?= isset( $question['passage'] )? htmlspecialchars($question['passage']) : ''; ?></textarea></span>
 			<?php } ?>
 			
-			<label for="main_question_<?= $index ?>">Main Question:</label>
 			<div class="question-label question_label"><span class="editable-content" data-edit_field="main_question" contenteditable="true"><?= isset( $question['main_question'] )? htmlspecialchars($question['main_question']): ''; ?></span></div>
 			<input type="text" class="rurera-hide" name="main_question" id="main_question_<?= $index ?>" value="<?= htmlspecialchars($question['main_question']) ?>">
 
