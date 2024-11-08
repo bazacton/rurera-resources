@@ -146,7 +146,11 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .input-holder input.input-simple {border: 0; background-color: #fcfcfc;}
 .question-result-layout .input-holder .input-simple {width: 100%; }
 /* Input Text Field Style End */
-
+/* Input Number Arrows Hide Style Start */
+.input-holder input[type="number"]::-webkit-outer-spin-button,
+.input-holder input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
+.input-holder input[type="number"] {-moz-appearance:textfield;}
+/* Input Number Arrows Hide Style End */
 /* True False Style Start */
 .form-box.inline-fields .lms-radio-select {margin-bottom: 0;}
 .lms-radio-select label {margin: 0; border: 2px solid #ddd; border-bottom-width: 4px; min-height: 50px; display: inline-flex; align-items: center; border-radius: 8px; cursor: pointer; overflow: hidden; position: relative; z-index: 1; padding: 0 15px; -webkit-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;width: 100%;}
