@@ -34,15 +34,19 @@
         }
         textarea, input[type="text"] {
             width: 100%;
-            padding: 8px;
+            padding: 8px 0;
             margin-top: 5px;
             border: 1px solid transparent;
             border-radius: 4px;
             box-sizing: border-box;
             font-size: 15px;
+            appearance: none;
+            resize: none;
         }
         textarea:focus, input[type="text"]:focus {
             border-color: #ddd;
+            padding-left: 8px;
+            padding-right: 8px;
         }
         .option-group {
             display: flex;
