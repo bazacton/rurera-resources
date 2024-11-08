@@ -210,6 +210,11 @@
                                     <td>
                                         @can('admin_topic_parts_edit')
 										@if($AiApiCallObj->status == 'active')
+											@if($AiApiCallObj->api_response == '')
+											<a href="/admin/questions-generator/add-response/{{ $AiApiCallObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
+												Add Response
+											</a>
+										@endif
                                         <a href="/admin/questions-generator/view-api-response/{{ $AiApiCallObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
                                             Generate Questions
                                         </a>
