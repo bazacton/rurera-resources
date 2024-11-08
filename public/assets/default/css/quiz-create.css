@@ -999,7 +999,7 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .input-holder textarea:-moz-placeholder {color: #000;}
 .input-holder textarea::-moz-placeholder {color: #000;}
 .input-holder textarea:-ms-input-placeholder {color: #000;}
-
+.input-holder textarea:focus::placeholder {color: transparent;}
 .input-holder textarea:focus:-webkit-input-placeholder {color: transparent; }
 .input-holder textarea:focus:-moz-placeholder {color: transparent;}
 .input-holder textarea:focus::-moz-placeholder {color: transparent;}
