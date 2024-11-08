@@ -79,7 +79,6 @@
     </style>
 </head>
 <body>
-<pre>{!! $api_response !!}</pre>
 <h2>Edit Questions </h2>
 
 <?php foreach ($questions_array as $index => $question): ?>
@@ -143,7 +142,7 @@
 <?php endforeach; ?>
 <script src="/assets/default/js/admin/jquery.min.js"></script>
 <script>
-	$(document).on('click', '.submit-btn1', function () {
+	$(document).on('click', '.submit-btn', function () {
 		var form_data = new FormData($(this).closest('form')[0]);
 		var thisObj = $(this);
 		$.ajax({
