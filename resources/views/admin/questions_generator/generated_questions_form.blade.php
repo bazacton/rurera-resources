@@ -13,6 +13,8 @@
 </div>
 
 <?php foreach ($questions_array as $index => $question): ?>
+
+	<?php $keywords = isset( $question['keywords'] )? $question['keywords'] : array(); ?>
     <div class="api-questions-form container" data-question-index="<?= $index ?>">
 		<h5>Cost: ${{$cost_per_question}}</h5>
         <form action="/admin/questions-generator/update-question" method="POST">
@@ -27,16 +29,19 @@
             <input type="hidden" name="question_type" value="multiple_choice">
             
 			<?php if(isset( $question['intro_text'] )){ ?>
-				<label for="intro_text_<?= $index ?>">Intro Text:</label>
-				<textarea name="intro_text" id="intro_text_<?= $index ?>" rows="2"><?= isset( $question['intro_text'] )? htmlspecialchars($question['intro_text']): ''; ?></textarea>
+				<div class="question-label">
+					<label for="intro_text_<?= $index ?>">Intro Text:</label>
+					<textarea name="intro_text" id="intro_text_<?= $index ?>" rows="2"><?= isset( $question['intro_text'] )? htmlspecialchars($question['intro_text']): ''; ?></textarea>
+				</div>
 			<?php } ?>
             <?php if(isset( $question['passage'] )){ ?>
 				<label for="passage_<?= $index ?>">Passage:</label>
-				<textarea name="passage" id="passage_<?= $index ?>" rows="4"><?= isset( $question['passage'] )? htmlspecialchars($question['passage']) : ''; ?></textarea>
+				<span><textarea name="passage" id="passage_<?= $index ?>" rows="4"><?= isset( $question['passage'] )? htmlspecialchars($question['passage']) : ''; ?></textarea></span>
 			<?php } ?>
-
-            <label for="main_question_<?= $index ?>">Main Question:</label>
-            <input type="text" name="main_question" id="main_question_<?= $index ?>" value="<?= htmlspecialchars($question['main_question']) ?>">
+			<div class="question-heading">
+				<label for="main_question_<?= $index ?>">Main Question:</label>
+				<span><input type="text" name="main_question" id="main_question_<?= $index ?>" value="<?= htmlspecialchars($question['main_question']) ?>"></span>
+			</div>
 
 			<?php if(isset( $question['instruction'] )){ ?>
             <label for="instruction_<?= $index ?>">Instruction:</label>
@@ -73,6 +78,25 @@
 				<textarea name="fact_integration" id="fact_integration_<?= $index ?>" rows="4"><?= isset( $question['fact_integration'] )? htmlspecialchars($question['fact_integration']) : ''; ?></textarea>
 			<?php } ?>
 			
+			<!-- Keywords Section -->
+			<h3>Keywords</h3>
+			<div class="keywords-section">
+				<?php foreach ($keywords as $keyword_index => $keyword): ?>
+					<div class="keyword-block" data-keyword-index="<?= $keyword_index ?>">
+						<label>Term:</label>
+						<input type="text" name="keywords[<?= $keyword_index ?>][term]" value="<?= htmlspecialchars($keyword['term']) ?>">
+
+						<label>Description:</label>
+						<textarea name="keywords[<?= $keyword_index ?>][description]" rows="2"><?= htmlspecialchars($keyword['description']) ?></textarea>
+						
+						<div class="keyword-buttons">
+							<button type="button" class="move-up-keyword" onclick="moveKeywordUp(this)">↑</button>
+							<button type="button" class="move-down-keyword" onclick="moveKeywordDown(this)">↓</button>
+							<button type="button" class="remove-keyword" onclick="removeKeyword(this)">✖</button>
+						</div>
+					</div>
+				<?php endforeach; ?>
+			</div>
 
             <button type="button" class="submit-btn">Save Question</button>
         </form>
@@ -94,6 +118,24 @@
 			}
 		});
 	});
+	
+	
+	function moveKeywordUp(button) {
+		let block = button.closest('.keyword-block');
+		let prev = block.previousElementSibling;
+		if (prev) block.parentNode.insertBefore(block, prev);
+	}
+
+	function moveKeywordDown(button) {
+		let block = button.closest('.keyword-block');
+		let next = block.nextElementSibling;
+		if (next) block.parentNode.insertBefore(next, block);
+	}
+
+	function removeKeyword(button) {
+		let block = button.closest('.keyword-block');
+		block.remove();
+	}
 		
     function addOption(questionIndex) {
         const container = document.querySelector(`[data-options-container="${questionIndex}"]`);
