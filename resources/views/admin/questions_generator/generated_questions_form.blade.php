@@ -82,12 +82,8 @@
 				<div class="keywords-section">
 					<?php foreach ($keywords as $keyword_index => $keyword): ?>
 						<div class="keyword-block" data-keyword-index="<?= $keyword_index ?>">
-							<label>Term:</label>
 							<input type="text" name="keywords[<?= $keyword_index ?>][term]" value="<?= htmlspecialchars($keyword['term']) ?>">
-
-							<label>Description:</label>
 							<textarea name="keywords[<?= $keyword_index ?>][description]" rows="2"><?= htmlspecialchars($keyword['description']) ?></textarea>
-							
 							<div class="keyword-buttons">
 								<?php if(count($keywords) > 1){ ?>
 								<button type="button" class="move-up-keyword" onclick="moveKeywordUp(this)">↑</button>
