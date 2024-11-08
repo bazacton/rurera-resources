@@ -57,16 +57,14 @@
             border-radius: 4px;
         }
         .add-option-btn, .submit-btn {
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
             cursor: pointer;
             margin-top: 20px;
             display: block;
             width: 100%;
+            border: 0;
+            background-color: inherit;
+            text-align: right;
+            text-decoration: underline;
         }
         .remove-option-btn {
             background-color: #f44336;
