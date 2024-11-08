@@ -112,6 +112,7 @@
 
             <label>Options:</label>
             <div class="options-container" data-options-container="<?= $index ?>">
+				<?php shuffle($question['options']); ?>
                 <?php foreach ($question['options'] as $option_index => $option): ?>
                     <div class="option-group" data-option-index="<?= $option_index ?>">
                         <input type="text" name="options[]" value="<?= htmlspecialchars($option) ?>">
