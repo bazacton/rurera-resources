@@ -1161,6 +1161,7 @@ body:has(.api-questions-form) .container {
     resize: none;
     outline-color: #ddd;
     font-family: Arial, sans-serif;
+    background-color: inherit;
 }
 .api-questions-form textarea:focus, .api-questions-form input[type="text"]:focus {
     border-color: #ddd;
@@ -1216,6 +1217,13 @@ body:has(.api-questions-form) .container {
     background-color: #2196F3;
     color: white;
 }
+/* Styling for keyword */
+.keyword-block {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
 /* Styling for keyword buttons */
 .keyword-buttons {
     display: flex;
@@ -1229,18 +1237,15 @@ body:has(.api-questions-form) .container {
     cursor: pointer;
     font-size: 12px;
 }
-
 /* Up button style */
 .move-up-keyword {
     background-color: #4CAF50; /* Green */
     color: white;
     transition: background-color 0.2s ease;
 }
-
 .move-up-keyword:hover {
     background-color: #45a049;
 }
-
 /* Down button style */
 .move-down-keyword {
     background-color: #2196F3; /* Blue */
