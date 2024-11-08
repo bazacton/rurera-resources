@@ -6,6 +6,9 @@
     <title>Question Generator</title>
 	<?php $random_id = rand(111,9999); ?>
 	<link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver=<?php echo $random_id; ?>">
+	<style>
+		.rurera-hide1{display:none;}
+	</style>
 </head>
 <body>
 <div class="container">
@@ -29,19 +32,19 @@
             <input type="hidden" name="question_type" value="multiple_choice">
             
 			<?php if(isset( $question['intro_text'] )){ ?>
-				<div class="question-label">
-					<label for="intro_text_<?= $index ?>">Intro Text:</label>
-					<textarea name="intro_text" id="intro_text_<?= $index ?>" rows="2"><?= isset( $question['intro_text'] )? htmlspecialchars($question['intro_text']): ''; ?></textarea>
-				</div>
+				<label for="intro_text_<?= $index ?>">Intro Text:</label>
+				<div class="question-label question_heading"><span class="editable-content" data-edit_field="intro_text" contenteditable="true"><?= isset( $question['intro_text'] )? htmlspecialchars($question['intro_text']): ''; ?></span></div>
+				<textarea class="rurera-hide" name="intro_text" id="intro_text_<?= $index ?>" rows="2"><?= isset( $question['intro_text'] )? htmlspecialchars($question['intro_text']): ''; ?></textarea>
+				
 			<?php } ?>
             <?php if(isset( $question['passage'] )){ ?>
 				<label for="passage_<?= $index ?>">Passage:</label>
 				<span><textarea name="passage" id="passage_<?= $index ?>" rows="4"><?= isset( $question['passage'] )? htmlspecialchars($question['passage']) : ''; ?></textarea></span>
 			<?php } ?>
-			<div class="question-heading">
-				<label for="main_question_<?= $index ?>">Main Question:</label>
-				<span><input type="text" name="main_question" id="main_question_<?= $index ?>" value="<?= htmlspecialchars($question['main_question']) ?>"></span>
-			</div>
+			
+			<label for="main_question_<?= $index ?>">Main Question:</label>
+			<div class="question-label question_label"><span class="editable-content" data-edit_field="main_question" contenteditable="true"><?= isset( $question['main_question'] )? htmlspecialchars($question['main_question']): ''; ?></span></div>
+			<input type="text" class="rurera-hide" name="main_question" id="main_question_<?= $index ?>" value="<?= htmlspecialchars($question['main_question']) ?>">
 
 			<?php if(isset( $question['instruction'] )){ ?>
             <label for="instruction_<?= $index ?>">Instruction:</label>
@@ -90,8 +93,10 @@
 						<textarea name="keywords[<?= $keyword_index ?>][description]" rows="2"><?= htmlspecialchars($keyword['description']) ?></textarea>
 						
 						<div class="keyword-buttons">
+							<?php if(count($keywords) > 1){ ?>
 							<button type="button" class="move-up-keyword" onclick="moveKeywordUp(this)">↑</button>
 							<button type="button" class="move-down-keyword" onclick="moveKeywordDown(this)">↓</button>
+							<?php } ?>
 							<button type="button" class="remove-keyword" onclick="removeKeyword(this)">✖</button>
 						</div>
 					</div>
@@ -119,6 +124,14 @@
 		});
 	});
 	
+	$(document).on('click change keyup keydown keypress', '.editable-content', function () {
+		var editable_field_name = $(this).attr('data-edit_field');
+		var new_value = $(this).html();
+		$('[name="'+editable_field_name+'"]').val(new_value);
+	});
+	
+	
+	
 	
 	function moveKeywordUp(button) {
 		let block = button.closest('.keyword-block');
@@ -131,10 +144,20 @@
 		let next = block.nextElementSibling;
 		if (next) block.parentNode.insertBefore(next, block);
 	}
+	
+	$(document).on('click', '.remove-keyword', function () {
+		$(this).closest('.keyword-block').remove();
+		console.log($(this).closest('.keywords-section').find(".keyword-block").length);
+		if($(this).closest('.keywords-section').find(".keyword-block").length == 1){
+			$(this).closest('.keywords-section').find(".move-up-keyword").remove();
+			$(this).closest('.keywords-section').find(".move-down-keyword").remove();
+		}
+	});
 
 	function removeKeyword(button) {
 		let block = button.closest('.keyword-block');
 		block.remove();
+		
 	}
 		
     function addOption(questionIndex) {
