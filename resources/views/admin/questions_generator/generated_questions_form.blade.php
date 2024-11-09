@@ -103,15 +103,17 @@
 					<div class="keywords-section">
 						<?php foreach ($keywords as $keyword_index => $keyword): ?>
 							<div class="keyword-block" data-keyword-index="<?= $keyword_index ?>">
-								<input type="text" name="keywords[<?= $keyword_index ?>][term]" value="<?= htmlspecialchars($keyword['term']) ?>">
-								<textarea name="keywords[<?= $keyword_index ?>][description]" rows="2"><?= htmlspecialchars($keyword['description']) ?></textarea>
-								<div class="keyword-buttons">
-									<?php if(count($keywords) > 1){ ?>
-									<button type="button" class="move-up-keyword" onclick="moveKeywordUp(this)">↑</button>
-									<button type="button" class="move-down-keyword" onclick="moveKeywordDown(this)">↓</button>
-									<?php } ?>
-									<button type="button" class="remove-keyword" onclick="removeKeyword(this)">✖</button>
+								<div class="keyword-item">
+									<input type="text" name="keywords[<?= $keyword_index ?>][term]" value="<?= htmlspecialchars($keyword['term']) ?>">
+									<div class="keyword-buttons">
+										<?php if(count($keywords) > 1){ ?>
+										<button type="button" class="move-up-keyword" onclick="moveKeywordUp(this)">↑</button>
+										<button type="button" class="move-down-keyword" onclick="moveKeywordDown(this)">↓</button>
+										<?php } ?>
+										<button type="button" class="remove-keyword" onclick="removeKeyword(this)">✖</button>
+									</div>
 								</div>
+								<textarea name="keywords[<?= $keyword_index ?>][description]" rows="2"><?= htmlspecialchars($keyword['description']) ?></textarea>
 							</div>
 						<?php endforeach; ?>
 					</div>
