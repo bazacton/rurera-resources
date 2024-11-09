@@ -76,6 +76,7 @@
 					<?php shuffle($question['options']); ?>
 					<?php foreach ($question['options'] as $option_index => $option): ?>
 						<div class="option-group" data-option-index="<?= $option_index ?>">
+							
 							<input type="text" name="options[]" value="<?= htmlspecialchars($option) ?>">
 							<input type="checkbox" name="correct_answers[]" value="<?= $option_index ?>"
 								<?php if (in_array($option, $question['correct_answers'])) echo 'checked'; ?>>
@@ -104,7 +105,8 @@
 						<?php foreach ($keywords as $keyword_index => $keyword): ?>
 							<div class="keyword-block" data-keyword-index="<?= $keyword_index ?>">
 								<div class="keyword-item">
-									<input type="text" name="keywords[<?= $keyword_index ?>][term]" value="<?= htmlspecialchars($keyword['term']) ?>">
+									<span class="editable-content keyword-title-field" data-edit_field="keywords[<?= $keyword_index ?>][term]" contenteditable="true"><?= htmlspecialchars($keyword['term']) ?></span>
+									<input type="text" class="rurera-hide" name="keywords[<?= $keyword_index ?>][term]" value="<?= htmlspecialchars($keyword['term']) ?>">
 									<div class="keyword-buttons">
 										<?php if(count($keywords) > 1){ ?>
 										<button type="button" class="move-up-keyword" onclick="moveKeywordUp(this)">↑</button>
@@ -118,7 +120,7 @@
 						<?php endforeach; ?>
 					</div>
 				</div>
-				<a href="https://chat.openai.com" target="_blank">
+				<a href="https://chat.openai.com" class="ask-ai-btn" target="_blank">
 				  <button>Let's ask an AI Friend!</button>
 				  <img src="/assets/default/img/ai-svg.svg">
 				</a>
