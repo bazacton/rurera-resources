@@ -1231,7 +1231,7 @@ body:has(.api-questions-form) .container {
 .question-general-block {
     border-bottom: 1px solid #ddd;
     padding-bottom: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .question-explain-block {
     border-bottom: 1px solid #ddd;
