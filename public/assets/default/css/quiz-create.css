@@ -1279,6 +1279,7 @@ body:has(.api-questions-form) .container {
 .keyword-item {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 /* Styling for keyword buttons */
 .keyword-buttons button {
