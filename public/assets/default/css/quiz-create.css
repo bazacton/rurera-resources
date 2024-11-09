@@ -1263,6 +1263,7 @@ body:has(.api-questions-form) .container {
     padding: 15px;
     margin-bottom: 5px;
     position: relative;
+    border-radius: 5px;
 }
 .keyword-block input[type="text"] {
     font-weight: bold;
