@@ -15,7 +15,7 @@
 				
 					
 
-	<form action="/admin/questions-generator/submit-response" method="POST" id="question-generator-form" class="px-25">
+	<form action="/admin/questions-generator/submit-response" method="POST" id="question-generator-form" class="px-25" onsubmit="return validateJSON()">
 	@csrf
 
 	<input type="hidden" name="api_id" value="{{$AiApiCallObj->id}}">
@@ -58,6 +58,17 @@
 
 @push('scripts_bottom')
 <script type="text/javascript">
+function validateJSON() {
+        const text = document.getElementById("chatgpt_response").value;
+        try {
+            JSON.parse(text);
+            return true; // Submission proceeds if JSON is valid
+        } catch (e) {
+            alert("Please enter valid JSON.");
+            return false; // Prevents form submission if JSON is invalid
+        }
+    }
+	
 document.querySelector('.copy-prompt').addEventListener('click', function() {
         // Get the content inside the <pre> tag
         const promptText = document.querySelector('.prompt-text').innerText;
