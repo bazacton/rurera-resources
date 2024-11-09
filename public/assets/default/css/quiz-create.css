@@ -1187,6 +1187,9 @@ body:has(.api-questions-form) .container {
     margin-top: 5px;
     align-items: center;
 }
+.api-questions-form .numeric-list-style .option-group {
+    padding-left: 50px;
+}
 .api-questions-form .option-group input[type="text"] {
     flex: 1;
 }
