@@ -1193,6 +1193,10 @@ body:has(.api-questions-form) .container {
 }
 .api-questions-form .option-group input[type="text"] {
     flex: 1;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: none;
 }
 .api-questions-form .option-buttons button {
     cursor: pointer;
