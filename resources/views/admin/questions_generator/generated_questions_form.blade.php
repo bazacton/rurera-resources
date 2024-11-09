@@ -118,6 +118,10 @@
 						<?php endforeach; ?>
 					</div>
 				</div>
+				<a href="https://chat.openai.com" target="_blank">
+				  <button>Let's ask an AI Friend!</button>
+				  <img src="/assets/default/img/ai-svg.svg">
+				</a>
 			</div>
 			
 
