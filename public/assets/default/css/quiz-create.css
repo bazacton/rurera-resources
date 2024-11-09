@@ -1140,7 +1140,7 @@ body:has(.api-questions-form) .container {
 }
 .api-questions-form.container {
     background-color: #fff;
-    padding: 20px 75px;
+    padding: 75px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -1148,6 +1148,9 @@ body:has(.api-questions-form) .container {
     margin-bottom: 20px;
     font-size: 24px;
     color: #333;
+}
+.api-questions-form .question-number {
+    margin: 0 0 15px;
 }
 .api-questions-form label {
     margin-top: 10px;
