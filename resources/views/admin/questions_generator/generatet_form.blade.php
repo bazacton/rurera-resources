@@ -59,7 +59,7 @@
 						<button type="button" class="btn btn-success save-template" data-form_id="question-generator-form" data-template_type="question_ai_genearte_form" ><i class="fas fa-save"></i> Save Form</button>
 					</div>
 
-	<form action="/admin/questions-generator/generate-questions" method="POST" id="question-generator-form" class="px-25">
+	<form action="/admin/questions-generator/generate-questions" method="POST" id="question-generator-form" class="px-25 question-generator-form">
 	@csrf
 
 	<div class="row">
@@ -79,13 +79,13 @@
 					<div class="form-group">
 						<!-- Content Text Area -->
 						<label for="instructions_ai">Instructions for AI:</label>
-						<textarea class="w-100 form-control" name="instructions_ai" id="instructions_ai" rows="4" maxlength="400"></textarea>
+						<textarea class="w-100 form-control unicode-rm" name="instructions_ai" id="instructions_ai" rows="4" maxlength="400"></textarea>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-6">
 					<div class="form-group">
 						<label class="input-label">{{trans('admin/main.category')}}</label>
-						<select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
+						<select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
 							<option value="">{{trans('admin/main.all_categories')}}</option>
 							@foreach($categories as $category)
 							@if(!empty($category->subCategories) and count($category->subCategories))
@@ -105,7 +105,7 @@
 					<div class="form-group">
 						<label class="input-label">Subjects</label>
 						<select data-chapter_id="" id="subject_id"
-								class="form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
+								class="rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
 								name="subject_id" data-next_index="chapter_id" data-next_value="">
 							<option value="">Please select year, subject</option>
 						</select>
@@ -121,7 +121,7 @@
 					<div class="form-group">
 						<label class="input-label">Topic</label>
 						<select data-sub_chapter_id="" id="chapter_id"
-								class="form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
+								class="rurera-req-field form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
 								name="chapter_id" data-next_index="sub_chapter_id" data-next_value="">
 							<option value="">Please select year, subject</option>
 						</select>
@@ -137,7 +137,7 @@
 					<div class="form-group">
 						<label class="input-label">Sub Topic</label>
 						<select id="sub_chapter_id"
-							class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+							class="rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
 							name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
 						<option value="">Please select year, subject, Topic</option>
 					</select>
@@ -285,13 +285,13 @@
 					<div class="intro-field">
 						<div class="form-group">
 							<label for="intro_text_main">Intro Text:</label>
-							<textarea name="intro_text_main" id="intro_text_main" class="form-control w-100" rows="4"></textarea>
+							<textarea name="intro_text_main" id="intro_text_main" class="form-control w-100 unicode-rm" rows="4"></textarea>
 						</div>
 					</div>
 					<div class="passage-field">
 						<div class="form-group">
 							<label for="original_passage">Original Passage:</label>
-							<textarea name="original_passage" id="original_passage" class="form-control w-100" rows="4"></textarea>
+							<textarea name="original_passage" id="original_passage" class="form-control w-100 unicode-rm" rows="4"></textarea>
 						</div>
 					</div>
 					<div class="row">
@@ -362,31 +362,31 @@
 						<div class="col-md-12 col-lg-12">
 							<div class="form-group intro-field">
 								<label for="intro_text_0">Intro Text:</label>
-								<textarea name="intro_text" id="intro_text_0" rows="2" class="w-100 form-control"></textarea>
+								<textarea name="intro_text" id="intro_text_0" rows="2" class="w-100 form-control unicode-rm"></textarea>
 							</div>
 						</div>
 						<div class="col-md-12 col-lg-12">
 							<div class="form-group passage-field">
 								<label for="passage_0">Passage:</label>
-								<textarea name="passage" id="passage_0" rows="4" class="w-100 form-control"></textarea>
+								<textarea name="passage" id="passage_0" rows="4" class="w-100 form-control unicode-rm"></textarea>
 							</div>
 						</div>
 						<div class="col-md-12 col-lg-12">
 							<div class="form-group">
 								<label for="main_question_0">Main Question:</label>
-								<input type="text" name="main_question" id="main_question_0" class="w-100 form-control" value="">
+								<input type="text" name="main_question" id="main_question_0" class="w-100 form-control unicode-rm" value="">
 							</div>
 						</div>
 						<div class="col-md-6 col-lg-12 fact-integration-field">
 							<div class="form-group">
 								<label for="fact_integration">Fact Integration:</label>
-								<textarea class="note-codable summernote-editor1 w-100 form-control" id="fact_integration" name="fact_integration"></textarea>
+								<textarea class="note-codable summernote-editor1 w-100 form-control unicode-rm" id="fact_integration unicode-rm" name="fact_integration"></textarea>
 							</div>
 						</div>
 						<div class="col-md-6 col-lg-12">
 							<div class="form-group">
 								<label for="options_label">Options Label:</label>
-								<input type="text" name="options_label" id="options_label" class="w-100 form-control" value="">
+								<input type="text" name="options_label" id="options_label" class="w-100 form-control unicode-rm" value="">
 							</div>
 						</div>
 					</div>
@@ -394,7 +394,7 @@
 						<label>Options:</label>
 						<div class="options-container" data-options-container="0" >
 							<div class="option-group" data-option-index="0">
-								<input type="text" class="form-control" name="options[]" value="Option 1">
+								<input type="text" class="form-control unicode-rm" name="options[]" value="Option 1">
 								<input type="checkbox" name="correct_answers[]" value="0">
 								<div class="option-buttons">
 									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
@@ -403,8 +403,8 @@
 								</div>
 							</div>
 							<div class="option-group" data-option-index="1">
-								<input type="text" class="form-control" name="options[]" value="Option 2">
-								<input type="checkbox" name="correct_answers[]" value="1">
+								<input type="text" class="form-control unicode-rm" name="options[]" value="Option 2">
+								<input type="checkbox" name="correct_answers[]" value="1" checked>
 								<div class="option-buttons">
 									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
 									<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
@@ -412,7 +412,7 @@
 								</div>
 							</div>
 							<div class="option-group" data-option-index="3">
-								<input type="text" class="form-control" name="options[]" value="Option 3">
+								<input type="text" class="form-control unicode-rm" name="options[]" value="Option 3">
 								<input type="checkbox" name="correct_answers[]" value="3">
 								<div class="option-buttons">
 									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
@@ -421,7 +421,7 @@
 								</div>
 							</div>
 							<div class="option-group" data-option-index="4">
-								<input type="text" class="form-control" name="options[]" value="Option 4">
+								<input type="text" class="form-control unicode-rm" name="options[]" value="Option 4">
 								<input type="checkbox" name="correct_answers[]" value="4">
 								<div class="option-buttons">
 									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
@@ -436,7 +436,7 @@
 						<div class="col-md-12 col-lg-12">
 							<div class="form-group">
 								<label for="explanation_0">Explanation:</label>
-								<textarea class="note-codable summernote-editor1 w-100 form-control" id="explanation" name="explanation"></textarea>
+								<textarea class="note-codable summernote-editor1 unicode-rm w-100 form-control" id="explanation" name="explanation"></textarea>
 							</div>
 						</div>
 					</div>
@@ -462,8 +462,29 @@
 
     $(document).ready(function () {
 		
+		$(document).on('submit', '.question-generator-form', function() {
+			var thisForm = $(this);
+			returnType = rurera_validation_process(thisForm);
+			if (returnType == false) {
+				return false;
+			}
+			return true;
+			
+		});
 		
-		
+		$(document).on('input', '.unicode-rm', function() {
+			// Convert Unicode representations
+			$(this).val(function(_, val) {
+				// Decode Unicode escape sequences like \u2019 to their characters
+				val = val.replace(/\\u([\dA-F]{4})/gi, function(match, grp) {
+					return String.fromCharCode(parseInt(grp, 16));
+				});
+
+				// Decode HTML entities like &nbsp;, &amp;, etc.
+				var txt = $('<textarea>').html(val).text();
+				return txt;
+			});
+		});
 		
 		$(document).on('click', '.topic_sub_parts', function () {
 			var pId = $(this).attr("id");
