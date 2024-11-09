@@ -1145,7 +1145,7 @@ body:has(.api-questions-form) .container {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .api-questions-form .question-label {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 .api-questions-form h2 {
     margin-bottom: 20px;
