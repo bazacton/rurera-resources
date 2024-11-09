@@ -1268,7 +1268,7 @@ body:has(.api-questions-form) .container {
     position: relative;
     border-radius: 5px;
 }
-.keyword-block input[type="text"] {
+.keyword-item span {
     font-weight: bold;
     margin-top: 0;
     font-size: 14px;
