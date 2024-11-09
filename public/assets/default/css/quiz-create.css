@@ -1287,6 +1287,7 @@ body:has(.api-questions-form) .container {
     cursor: pointer;
     font-size: 16px;
     background: none;
+    line-height: 16px;
 }
 /* Up button style */
 .move-up-keyword {
