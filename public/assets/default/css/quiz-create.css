@@ -772,7 +772,8 @@ scrollbar-gutter: stable both-edges;
 /*Quistions Type numeric-list style Start*/
 .numeric-list-style {counter-reset: listStyle;}
 .numeric-list-style > .field-holder,
-.numeric-list-style > .form-field {counter-increment: listStyle; position: relative;}
+.numeric-list-style > .form-field,
+.numeric-list-style > .option-group {counter-increment: listStyle; position: relative;}
 .lms-sorting-fields.numeric-list-style > .field-holder {padding-left: 45px;}
 .numeric-list-style > .field-holder:before,
 .numeric-list-style > .form-field:before,
