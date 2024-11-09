@@ -18,13 +18,33 @@
 <?php foreach ($questions_array as $index => $question): ?>
 	<?php $keywords = isset( $question['keywords'] )? $question['keywords'] : array(); ?>
     <div class="api-questions-form container" data-question-index="<?= $index ?>">
+	
+		
+	
 		<span class="question-number"><?php echo $counter; ?></span>
+		@php $counter++; @endphp
+		@if(isset( $question['status'] ) && $question['status'] == 'rejected')
+			<br><br>
+				Question Already Rejected
+			</div>
+			@php continue; @endphp
+		@endif
+		
+		@if(isset( $question['status'] ) && $question['status'] == 'generated')
+			@php $question_id = isset( $question['question_id'] )? $question['question_id'] : 0; @endphp
+			<a target="_blank" href="/admin/questions_bank/{{$question_id}}/edit">({{$question_id}}) View Generated Question</a>
+			</div>
+			@php continue; @endphp
+		@endif
 		<?php if($AiApiCallObj->api_type != 'chatgpt'){ ?>
+		
 		<h5>Cost: ${{$cost_per_question}}</h5>
 		<?php } ?>
         <form action="/admin/questions-generator/update-question" method="POST">
 			@csrf
+			<input type="hidden" name="index_no" value="{{$index}}">
 			<input type="hidden" name="category_id" value="{{$category_id}}">
+			<input type="hidden" name="api_id" value="{{$AiApiCallObj->id}}">
 			<input type="hidden" name="subject_id" value="{{$subject_id}}">
 			<input type="hidden" name="chapter_id" value="{{$chapter_id}}">
 			<input type="hidden" name="sub_chapter_id" value="{{$sub_chapter_id}}">
@@ -70,37 +90,40 @@
 				<button type="button" class="add-option-btn" onclick="addOption(<?= $index ?>)">Add Option</button>
 			</div>
 			<div class="question-explain-block">
-			<h3>Explanation</h3>
-            <textarea name="explanation" id="explanation_<?= $index ?>" rows="3"><?= htmlspecialchars($question['explanation']) ?></textarea>
+				<h3>Explanation</h3>
+				<textarea name="explanation" id="explanation_<?= $index ?>" rows="3"><?= htmlspecialchars($question['explanation']) ?></textarea>
+				
+				<?php if(isset( $question['fact_integration'] )){ ?>
+					<textarea name="fact_integration" id="fact_integration_<?= $index ?>" rows="4"><?= isset( $question['fact_integration'] )? htmlspecialchars($question['fact_integration']) : ''; ?></textarea>
+				<?php } ?>
 			
-			<?php if(isset( $question['fact_integration'] )){ ?>
-				<textarea name="fact_integration" id="fact_integration_<?= $index ?>" rows="4"><?= isset( $question['fact_integration'] )? htmlspecialchars($question['fact_integration']) : ''; ?></textarea>
-			<?php } ?>
-			</div>
-			<div class="question-keywors-block">
-				<!-- Keywords Section -->
-				<h3>Keywords</h3>
-				<div class="keywords-section">
-					<?php foreach ($keywords as $keyword_index => $keyword): ?>
-						<div class="keyword-block" data-keyword-index="<?= $keyword_index ?>">
-							<input type="text" name="keywords[<?= $keyword_index ?>][term]" value="<?= htmlspecialchars($keyword['term']) ?>">
-							<textarea name="keywords[<?= $keyword_index ?>][description]" rows="2"><?= htmlspecialchars($keyword['description']) ?></textarea>
-							<div class="keyword-buttons">
-								<?php if(count($keywords) > 1){ ?>
-								<button type="button" class="move-up-keyword" onclick="moveKeywordUp(this)">↑</button>
-								<button type="button" class="move-down-keyword" onclick="moveKeywordDown(this)">↓</button>
-								<?php } ?>
-								<button type="button" class="remove-keyword" onclick="removeKeyword(this)">✖</button>
+				<div class="question-keywors-block">
+					<!-- Keywords Section -->
+					<h3>Keywords</h3>
+					<div class="keywords-section">
+						<?php foreach ($keywords as $keyword_index => $keyword): ?>
+							<div class="keyword-block" data-keyword-index="<?= $keyword_index ?>">
+								<input type="text" name="keywords[<?= $keyword_index ?>][term]" value="<?= htmlspecialchars($keyword['term']) ?>">
+								<textarea name="keywords[<?= $keyword_index ?>][description]" rows="2"><?= htmlspecialchars($keyword['description']) ?></textarea>
+								<div class="keyword-buttons">
+									<?php if(count($keywords) > 1){ ?>
+									<button type="button" class="move-up-keyword" onclick="moveKeywordUp(this)">↑</button>
+									<button type="button" class="move-down-keyword" onclick="moveKeywordDown(this)">↓</button>
+									<?php } ?>
+									<button type="button" class="remove-keyword" onclick="removeKeyword(this)">✖</button>
+								</div>
 							</div>
-						</div>
-					<?php endforeach; ?>
+						<?php endforeach; ?>
+					</div>
 				</div>
 			</div>
+			
 
             <button type="button" class="submit-btn">Save Question</button>
+            <button type="button" class="btn btn-danger reject-btn">Reject Question</button>
         </form>
     </div>
-<?php $counter++; endforeach; ?>
+<?php  endforeach; ?>
 <script src="/assets/default/js/admin/jquery.min.js"></script>
 <script>
 	$(document).on('click', '.submit-btn', function () {
@@ -109,6 +132,21 @@
 		$.ajax({
 			type: "POST",
 			url: '/admin/questions-generator/update-question',
+			data: form_data,
+			contentType: false, // Important: Don't set content type for FormData
+			processData: false, // Important: Don't process data for FormData
+			success: function (return_data) {
+				thisObj.closest('.container').html(return_data);
+			}
+		});
+	});
+	
+	$(document).on('click', '.reject-btn', function () {
+		var form_data = new FormData($(this).closest('form')[0]);
+		var thisObj = $(this);
+		$.ajax({
+			type: "POST",
+			url: '/admin/questions-generator/reject-question',
 			data: form_data,
 			contentType: false, // Important: Don't set content type for FormData
 			processData: false, // Important: Don't process data for FormData
