@@ -1134,13 +1134,13 @@ body:has(.api-questions-form) {
 }
 body:has(.api-questions-form) .container {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto 20px;
     box-sizing: border-box;
 }
 .api-questions-form.container {
     background-color: #fff;
-    padding: 20px;
+    padding: 20px 75px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
