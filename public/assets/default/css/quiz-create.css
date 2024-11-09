@@ -1311,6 +1311,21 @@ body:has(.api-questions-form) .container {
     color: #f44336;
     transition: background-color 0.2s ease;
 }
+.ask-ai-btn img {
+    height: 15px;
+    width: 15px;
+}
+.ask-ai-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+.ask-ai-btn button {
+    border: 0;
+    background: none;
+    color: blue;
+}
 /**************************************
 Admin API Questions Form Page Style Start
 **************************************/
