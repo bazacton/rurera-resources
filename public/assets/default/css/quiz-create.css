@@ -1205,7 +1205,8 @@ body:has(.api-questions-form) .container {
     border: none;
     border-radius: 4px;
 }
-.api-questions-form .submit-btn {
+.api-questions-form .submit-btn,
+.reject-btn {
     padding: 15px 20px;
     background-color: #4CAF50;
     color: white;
@@ -1216,6 +1217,9 @@ body:has(.api-questions-form) .container {
     margin-top: 20px;
     height: auto;
     text-transform: capitalize;
+}
+.reject-btn {
+    background-color: #ff6565;
 }
 .api-questions-form .add-option-btn {
     cursor: pointer;
