@@ -1140,7 +1140,7 @@ body:has(.api-questions-form) .container {
 }
 .api-questions-form.container {
     background-color: #fff;
-    padding: 75px;
+    padding: 50px 75px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
