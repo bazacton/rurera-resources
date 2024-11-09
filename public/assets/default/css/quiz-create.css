@@ -1219,7 +1219,8 @@ body:has(.api-questions-form) .container {
     text-transform: capitalize;
 }
 .reject-btn {
-    background-color: #ff6565;
+    background-color: #dedede;
+    color: #333;
 }
 .api-questions-form .add-option-btn {
     cursor: pointer;
