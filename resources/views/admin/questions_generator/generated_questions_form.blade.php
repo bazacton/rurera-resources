@@ -21,7 +21,7 @@
 	
 		
 	
-		<span class="question-number"><?php echo $counter; ?></span>
+		<span class="question-counts"><?php echo $counter; ?> / {{count($questions_array)}}</span>
 		@php $counter++; @endphp
 		@if(isset( $question['status'] ) && $question['status'] == 'rejected')
 			<br><br>
