@@ -1267,6 +1267,7 @@ body:has(.api-questions-form) .container {
 }
 .keyword-block input[type="text"] {
     font-weight: bold;
+    margin-top: 0;
 }
 /* Styling for keyword buttons */
 .keyword-buttons {
