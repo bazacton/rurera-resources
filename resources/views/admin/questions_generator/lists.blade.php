@@ -183,6 +183,8 @@
                                     <th class="text-left">Category</th>
                                     <th class="text-left">Questions Type</th>
                                     <th class="text-left">Cost</th>
+									<th class="text-left">Total Questions</th>
+									<th class="text-left">Generated / Waiting / Rejected</th>
 									<th class="text-left">Status</th>
                                     <th class="text-left">Added by</th>
                                     <th class="text-left">Added Date</th>
@@ -204,6 +206,8 @@
 									</td>
 									<td class="text-left">{{ $AiApiCallObj->question_type }}</td>
 									<td class="text-left">{{ number_format($AiApiCallObj->total_cost) }}</td>
+									<td class="text-left">{{ $AiApiCallObj->total_questions }}</td>
+									<td class="text-left">{{ $AiApiCallObj->generated_questions }} / {{ $AiApiCallObj->waiting_questions }} / {{ $AiApiCallObj->rejected_questions }}</td>
 									<td class="text-left">{{ $AiApiCallObj->status }}</td>
                                     <td class="text-left">{{ $AiApiCallObj->user->get_full_name() }}</td>
                                     <td class="text-left">{{ dateTimeFormat($AiApiCallObj->created_at, 'j M y | H:i') }}</td>
