@@ -1349,6 +1349,7 @@ body:has(.api-questions-form) .container {
     border: 0;
     background-color: inherit;
     text-decoration: underline;
+    cursor: pointer;
 }
 .question-ai-block .check-icon {
     height: 18px;
