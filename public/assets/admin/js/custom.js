@@ -1345,3 +1345,10 @@ $(document).on('click', '.remove-template', function () {
 		}
 	});
 });
+
+
+function pre(output_var, output_label = ''){
+	console.log(output_label+'-start');
+	console.log(output_var);
+	console.log(output_label+'-ends');
+}

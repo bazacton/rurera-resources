@@ -311,6 +311,84 @@ function rureraform_save(_object, question_status) {
     return false;
 }
 
+
+
+function rureraform_builder_save(_object, question_status) {
+    if (rureraform_sending)
+        return false;
+    rureraform_sending = true;
+    //jQuery(_object).find("i").attr("class", "fas fa-spinner fa-spin");
+    var post_pages = new Array();
+    jQuery(".rureraform-pages-bar-item, .rureraform-pages-bar-item-confirmation").each(function () {
+        var page_id = jQuery(this).attr("data-id");
+        for (var i = 0; i < rureraform_form_pages.length; i++) {
+            if (rureraform_form_pages[i] != null && rureraform_form_pages[i]['id'] == page_id) {
+                post_pages.push(rureraform_encode64(JSON.stringify(rureraform_form_pages[i])));
+                break;
+            }
+        }
+    });
+    var post_elements = new Array();
+    for (var i = 0; i < rureraform_form_elements.length; i++) {
+        if (jQuery("#rureraform-element-" + i).length && rureraform_form_elements[i] != null) {
+            post_elements.push(rureraform_encode64(JSON.stringify(rureraform_form_elements[i])));
+        }
+    }
+
+    var question_title = $("[name=question_title]").val();
+    var question_id = $("[name=question_id]").val();
+
+
+
+    var question_layout = $(".rureraform-form");
+
+    question_layout.find('.editor-field').each(function () {
+        $.each($(this).data(), function (i) {
+            if (i != 'style') {
+                question_layout.find('.editor-field').removeAttr("data-" + i);
+            }
+        });
+
+
+    });
+
+    question_layout.find('.editor-field').removeAttr("correct_answere");
+    var question_layout = rureraform_encode64(JSON.stringify(question_layout.html()));
+
+    var post_data = {
+        //"question_solve": question_solve,
+        
+        "question_title": question_title,
+        "question_id": question_id,
+        "action": "rureraform-form-save",
+        "form-id": jQuery("#rureraform-id").val(),
+        "form-options": rureraform_encode64(JSON.stringify(rureraform_form_options)),
+        "form-pages": post_pages,
+        "form-elements": post_elements,
+        "question_layout": question_layout,
+    };
+    var form_submit_url = $(".form-class").attr('data-question_save_type');
+    jQuery.ajax({
+        type: "POST",
+        url: form_submit_url,//'update_builder_question',
+        data: post_data,
+        success: function (return_data) {
+			rureraform_sending = false;
+            Swal.fire({
+				icon: "success",
+				html: '<h3 class="font-20 text-center text-dark-blue">' + saveSuccessLang + "</h3>",
+				showConfirmButton: !1
+			});
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            jQuery(_object).find("i").attr("class", "far fa-save");
+            rureraform_global_message_show("danger", rureraform_esc_html__("Something went wrong. We got unexpected server response."));
+            rureraform_sending = false;
+        }
+    });
+    return false;
+}
+
 function rureraform_preview(_object) {
     if (rureraform_sending)
         return false;
@@ -10062,6 +10140,14 @@ $(document).on('click', '.quiz-stage-generate', function () {
     }
 
 });
+
+$(document).on('click', '.quiz-stage-builder-generate', function () {
+
+    var question_status = $(this).attr('data-status');
+	rureraform_builder_save(this, question_status);
+
+});
+
 
 
 window.addEventListener('beforeunload', function (event) {
