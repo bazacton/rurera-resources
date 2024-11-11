@@ -1350,8 +1350,11 @@ body:has(.api-questions-form) .container {
     background-color: inherit;
     text-decoration: underline;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
 }
-.question-ai-block .check-icon {
+.question-ai-block .check-icon,
+.question-ai-block .info-icon {
     height: 18px;
     width: 18px;
     font-size: 12px;
@@ -1362,6 +1365,9 @@ body:has(.api-questions-form) .container {
     border-radius: 100%;
     text-align: center;
     margin-right: 10px;
+}
+.question-ai-block .info-icon {
+    margin: 0 0 0 10px;
 }
 /**************************************
 Admin API Questions Form Page Style Start
