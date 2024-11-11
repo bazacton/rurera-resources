@@ -1820,6 +1820,17 @@ output {
         min-width: 100px;
     }
     /* Topic-parts-data style End */
+    /* Questions Generator Column Setting Dropdown Style Start*/
+    .columns-settings .dropdown-menu {width: 300px;}
+    .columns-settings h5 {font-size: 16px; font-weight: 500; color: #999;}
+    .columns-settings .column-list {margin-bottom: 20px;}
+    .columns-settings .toggle-switch {justify-content: flex-start; border-bottom: 1px solid #ccc;}
+    .columns-settings input[type="checkbox"] {margin-left: auto;}
+    .columns-settings:not(.drag-handle) span {font-size: 14px; color: #212529;}
+    .columns-settings .dropdown .btn {display: inline-block; width: auto !important; vertical-align: middle; margin-top: 0 !important; box-shadow: none; padding: .2rem 1rem;}
+    .columns-settings .dropdown .btn.btn-primary {background-color: #b9b9b9; border-color: #b9b9b9;}
+    .columns-settings .dropdown-menu .search-input {height: 32px; font-size: 14px; margin-bottom: 5px;}
+    /* Questions Generator Column Setting Dropdown Style End*/
 
 /*****************************************
 Admin Questions Generator Page Style End
