@@ -1342,6 +1342,11 @@ body:has(.api-questions-form) .container {
 .question-ai-block p {
     margin-bottom: 15px;
 }
+.question-ai-block a button {
+    border: 0;
+    background-color: inherit;
+    text-decoration: underline;
+}
 /**************************************
 Admin API Questions Form Page Style Start
 **************************************/
