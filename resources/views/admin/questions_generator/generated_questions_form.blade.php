@@ -120,10 +120,6 @@
 						<?php endforeach; ?>
 					</div>
 				</div>
-				<a href="https://chat.openai.com" class="ask-ai-btn" target="_blank">
-				  <button>Let's ask an AI Friend!</button>
-				  <img src="/assets/default/img/ai-svg.svg">
-				</a>
 
 				<div class="question-ai-block">
 					<h3 class="mb-10"><span class="check-icon">&#10003;</span> Need More Help with Your Question?</h3>
