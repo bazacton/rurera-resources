@@ -1122,7 +1122,8 @@ Questions Edit Page Fields style start
 /* Questions Generator Column Setting Dropdown Style Start*/
 .columns-settings .dropdown-menu {width: 300px;}
 .columns-settings h5 {font-size: 16px; font-weight: 500; color: #999;}
-.columns-settings .toggle-switch {justify-content: flex-start;}
+.columns-settings .column-list {margin-bottom: 20px;}
+.columns-settings .toggle-switch {justify-content: flex-start; border-bottom: 1px solid #ddd;}
 .columns-settings input[type="checkbox"] {margin-left: auto;}
 .columns-settings:not(.drag-handle) span {font-size: 14px;}
 /* Questions Generator Column Setting Dropdown Style End*/
