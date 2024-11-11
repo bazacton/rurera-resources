@@ -1330,6 +1330,7 @@ body:has(.api-questions-form) .container {
 }
 .api-questions-form .question-counts {
     margin-bottom: 10px;
+    display: block;
 }
 /**************************************
 Admin API Questions Form Page Style Start
