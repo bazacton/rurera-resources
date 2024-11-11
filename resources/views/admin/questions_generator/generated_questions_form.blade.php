@@ -97,6 +97,12 @@
 				<?php if(isset( $question['fact_integration'] )){ ?>
 					<textarea name="fact_integration" id="fact_integration_<?= $index ?>" rows="4"><?= isset( $question['fact_integration'] )? htmlspecialchars($question['fact_integration']) : ''; ?></textarea>
 				<?php } ?>
+				<div class="question-ai-block">
+					<h3 class="mb-10"><span class="check-icon">&#10003;</span> Need More Help with Your Question?</h3>
+					<p class="mb-15">Sometimes, even after thinking hard, it's okay to still feel unsure. If you're looking for more clarity or need a little extra help, why not ask an AI Friend? They can help explain things in a fun and easy way!
+					If you’re ready, click the button below to start your conversation!</p>
+					<a href="https://chat.openai.com" target="_blank"> <button>Let’s Ask to an AI Friend! <span class="info-icon">&#8505;</span></button> </a>
+				</div>
 			
 				<div class="question-keywors-block">
 					<!-- Keywords Section -->
@@ -124,12 +130,6 @@
 				  <button>Let's ask an AI Friend!</button>
 				  <img src="/assets/default/img/ai-svg.svg">
 				</a>
-			</div>
-			<div class="question-ai-block">
-				<h3 class="mb-10"><span class="check-icon">&#10003;</span> Need More Help with Your Question?</h3>
-				<p class="mb-15">Sometimes, even after thinking hard, it's okay to still feel unsure. If you're looking for more clarity or need a little extra help, why not ask an AI Friend? They can help explain things in a fun and easy way!
-				If you’re ready, click the button below to start your conversation!</p>
-				<a href="https://chat.openai.com" target="_blank"> <button>Let’s Ask to an AI Friend! <span class="info-icon">&#8505;</span></button> </a>
 			</div>
 
             <button type="button" class="submit-btn">Save Question</button>
