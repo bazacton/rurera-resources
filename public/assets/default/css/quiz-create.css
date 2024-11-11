@@ -1250,7 +1250,8 @@ body:has(.api-questions-form) .container {
     padding-bottom: 30px;
     margin-bottom: 30px;
 }
-.question-explain-block {
+.question-explain-block,
+.question-ai-block {
     border-bottom: 1px solid #ddd;
     margin-bottom: 25px;
 }
@@ -1263,7 +1264,8 @@ body:has(.api-questions-form) .container {
     color: #000;
     font-size: 16px;
 }
-.question-explain-block {
+.question-explain-block,
+.question-ai-block {
     background-color: #f9f9f9;
     padding: 35px;
     margin-bottom: 5px;
