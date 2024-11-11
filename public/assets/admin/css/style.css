@@ -800,7 +800,7 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
 
 /* 3.19 Dropdown */
 .dropdown-item.has-icon i {margin-top: -1px; font-size: 13px;}
-.dropdown-menu {box-shadow: 0 10px 40px 0 rgba(51, 73, 94, 0.15); border: none; width: 200px; display: none !important;}
+.dropdown-menu {box-shadow: 0 10px 40px 0 rgba(51, 73, 94, 0.15); border: none; width: 200px;}
 .dropdown-menu.show {display: block !important;}
 .dropdown-menu a {font-size: 13px; }
 .dropdown-menu .dropdown-title {text-transform: uppercase; font-size: 10px; letter-spacing: 1.5px; font-weight: 700; color: #191d21 !important; padding: 10px 20px; line-height: 20px; color: #98a6ad;}
