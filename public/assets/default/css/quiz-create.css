@@ -1182,8 +1182,7 @@ body:has(.api-questions-form) .container {
 }
 .api-questions-form textarea:focus, .api-questions-form input[type="text"]:focus,
 .api-questions-form .question_heading span:focus {
-    outline: none;
-    text-decoration: underline;
+    border-bottom-color: #ccc;
 }
 .api-questions-form .option-group {
     display: flex;
