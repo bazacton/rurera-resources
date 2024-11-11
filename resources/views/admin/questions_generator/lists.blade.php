@@ -178,33 +178,33 @@
             <div class="col-12 col-md-12">
                 <div class="card">
 				
-					<div class="columns-settings">
-						<div class="dropdown">
-							<button class="dropdown-toggle" type="button" data-toggle="dropdown">
-								Configure Columns
-							</button>
-							<div class="dropdown-menu">
-								<input type="text" class="search-input" id="searchInput" placeholder="Search by item..." onkeyup="filterColumns()">
-								
-								<h5>Shown Attributes</h5>
-								<ul id="shownAttributes" class="column-list"></ul>
+					<div class="card-header">
+						<div class="columns-settings">
+							<div class="dropdown">
+								<button class="dropdown-toggle" type="button" data-toggle="dropdown">
+									<img src="/assets/default/svgs/grid-plus.svg">
+								</button>
+								<div class="dropdown-menu">
+									<input type="text" class="search-input" id="searchInput" placeholder="Search by item..." onkeyup="filterColumns()">
+									
+									<h5>Shown Attributes</h5>
+									<ul id="shownAttributes" class="column-list"></ul>
 
-								<h5>Hidden Attributes</h5>
-								<ul id="hiddenAttributes" class="column-list"></ul>
+									<h5>Hidden Attributes</h5>
+									<ul id="hiddenAttributes" class="column-list"></ul>
 
-								<button class="btn btn-secondary w-100 mt-3" onclick="restoreDefault()">Restore Default</button>
-								<button class="btn btn-primary w-100 mt-2" onclick="saveChanges()">Save Changes</button>
+									<button class="btn btn-secondary w-100 mt-3" onclick="restoreDefault()">Restore Default</button>
+									<button class="btn btn-primary w-100 mt-2" onclick="saveChanges()">Save Changes</button>
+								</div>
 							</div>
-						</div>
 
-					</div>
+						</div>
                     @can('admin_topic_parts_create')
-                    <div class="card-header">
                         <div class="text-right">
                             <a href="/admin/questions-generator/prompt" class="btn btn-primary">New API Request</a>
                         </div>
-                    </div>
                     @endcan
+                    </div>
 
                     <div class="card-body">
                         <div class="table-responsive">
