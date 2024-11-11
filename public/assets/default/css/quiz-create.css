@@ -791,6 +791,7 @@ scrollbar-gutter: stable both-edges;
 .lms-sorting-fields.image-top .field-holder .sort-icon ~ label:has(img) {padding: 0;}
 .lms-sorting-fields.image-top .field-holder label img {margin-bottom: 10px; max-width: 100%; height: auto;}
 .image-top .field-holder label .lable-info {padding-left: 10px;}
+.rureraform-builder .lms-sorting-fields.image-top .field-holder label:has(img) {display: flex; flex-direction: column-reverse;}
 /*Quistions Type numeric-list with image-top style End*/
 
 /*Quistions Type Alphabet-list style Start*/
