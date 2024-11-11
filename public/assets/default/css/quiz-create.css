@@ -1336,6 +1336,12 @@ body:has(.api-questions-form) .container {
     margin-bottom: 10px;
     display: block;
 }
+.question-ai-block h3 {
+    margin-bottom: 10px;
+}
+.question-ai-block p {
+    margin-bottom: 15px;
+}
 /**************************************
 Admin API Questions Form Page Style Start
 **************************************/
