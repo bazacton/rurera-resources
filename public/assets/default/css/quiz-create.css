@@ -1345,7 +1345,7 @@ body:has(.api-questions-form) .container {
 }
 .question-ai-block p {
     margin-bottom: 15px;
-    line-height: 24px;
+    font-size: 15px;
 }
 .question-ai-block a button {
     border: 0;
