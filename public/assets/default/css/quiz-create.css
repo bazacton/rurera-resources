@@ -1328,6 +1328,9 @@ body:has(.api-questions-form) .container {
     background: none;
     color: blue;
 }
+.api-questions-form .question-counts {
+    margin-bottom: 10px;
+}
 /**************************************
 Admin API Questions Form Page Style Start
 **************************************/
