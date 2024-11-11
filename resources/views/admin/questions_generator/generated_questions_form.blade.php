@@ -126,7 +126,7 @@
 				</a>
 			</div>
 			<div class="question-ai-block">
-				<h3>Need More Help with Your Question?</h3>
+				<h3 class="mb-10">Need More Help with Your Question?</h3>
 				<p>Sometimes, even after thinking hard, it's okay to still feel unsure. If you're looking for more clarity or need a little extra help, why not ask an AI Friend? They can help explain things in a fun and easy way!
 				If you’re ready, click the button below to start your conversation!</p>
 				<a href="https://chat.openai.com" target="_blank"> <button>Let’s Ask to an AI Friend!</button> </a>
