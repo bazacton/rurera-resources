@@ -100,7 +100,7 @@
 			
 				<div class="question-keywors-block">
 					<!-- Keywords Section -->
-					<h3>Need More Help with Your Question?</h3>
+					<h3>Keywords</h3>
 					<div class="keywords-section">
 						<?php foreach ($keywords as $keyword_index => $keyword): ?>
 							<div class="keyword-block" data-keyword-index="<?= $keyword_index ?>">
