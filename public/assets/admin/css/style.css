@@ -1819,6 +1819,12 @@ output {
     .topic-parts-data table tr td:has(.topic-part-title) {
         min-width: 100px;
     }
+    .topic-parts-data table tr td {
+        border: 1px solid #ddd;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        height: auto !important;
+    }
     /* Topic-parts-data style End */
     /* Questions Generator Column Setting Dropdown Style Start*/
     .columns-settings .dropdown-menu {width: 300px; right: 0; left: auto !important; transform: none !important; top: 100% !important;}
