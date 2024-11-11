@@ -1827,7 +1827,7 @@ output {
     .columns-settings .toggle-switch {justify-content: flex-start; border-bottom: 1px solid #ccc; padding-bottom: 5px;}
     .columns-settings input[type="checkbox"] {margin-left: auto;}
     .columns-settings:not(.drag-handle) span {font-size: 14px; color: #212529;}
-    .columns-settings .dropdown .btn {display: inline-block; width: auto !important; vertical-align: middle; margin-top: 0 !important; box-shadow: none; padding: .2rem 1rem;}
+    .card .card-header .columns-settings .dropdown .btn {display: inline-block; width: auto !important; vertical-align: middle; margin-top: 0 !important; box-shadow: none; padding: .2rem 1rem; border-radius: 5px;}
     .columns-settings .dropdown .btn.btn-primary {background-color: #b9b9b9; border-color: #b9b9b9;}
     .columns-settings .dropdown-menu .search-input {height: 32px; font-size: 14px; margin-bottom: 5px;}
     .card .card-header:has(.columns-settings) {flex-direction: row-reverse;}
