@@ -1180,7 +1180,8 @@ body:has(.api-questions-form) .container {
     font-family: Arial, sans-serif;
     background-color: inherit;
 }
-.api-questions-form textarea:focus, .api-questions-form input[type="text"]:focus {
+.api-questions-form textarea:focus, .api-questions-form input[type="text"]:focus,
+.api-questions-form .question_heading span:focus {
     outline: none;
     text-decoration: underline;
 }
