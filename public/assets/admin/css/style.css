@@ -1830,6 +1830,11 @@ output {
     .columns-settings .dropdown .btn {display: inline-block; width: auto !important; vertical-align: middle; margin-top: 0 !important; box-shadow: none; padding: .2rem 1rem;}
     .columns-settings .dropdown .btn.btn-primary {background-color: #b9b9b9; border-color: #b9b9b9;}
     .columns-settings .dropdown-menu .search-input {height: 32px; font-size: 14px; margin-bottom: 5px;}
+    .card .card-header:has(.columns-settings) {flex-direction: row-reverse;}
+    .columns-settings {margin-left: auto;}
+    .columns-settings .dropdown-toggle img {height: 30px; width: 30px; filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(71deg) brightness(108%) contrast(96%);}
+    .columns-settings .dropdown-toggle::after {display: none;}
+    .columns-settings .dropdown-toggle {padding: 8px 10px;}
     /* Questions Generator Column Setting Dropdown Style End*/
 
 /*****************************************
