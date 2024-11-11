@@ -128,11 +128,11 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /* Image Static Style End */
 
 /* Essay Textarea Field Style Start */
-.input-holder textarea {padding: 10px; border: 0; border-radius: 8px; color: #000; outline: none; width: 100%; overflow: hidden; resize: none;}
-.input-holder textarea::-webkit-input-placeholder {color: #000; }
-.input-holder textarea:-moz-placeholder {color: #000;}
-.input-holder textarea::-moz-placeholder {color: #000;}
-.input-holder textarea:-ms-input-placeholder {color: #000;}
+.input-holder textarea {padding: 10px; border: 0; border-radius: 8px; color: #999; outline: none; width: 100%; overflow: hidden; resize: none;}
+.input-holder textarea::-webkit-input-placeholder {color: #999; }
+.input-holder textarea:-moz-placeholder {color: #999;}
+.input-holder textarea::-moz-placeholder {color: #999;}
+.input-holder textarea:-ms-input-placeholder {color: #999;}
 .input-holder textarea:focus::placeholder {color: transparent;}
 .input-holder textarea:focus:-webkit-input-placeholder {color: transparent; }
 .input-holder textarea:focus:-moz-placeholder {color: transparent;}
