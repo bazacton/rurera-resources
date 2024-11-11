@@ -1250,11 +1250,6 @@ body:has(.api-questions-form) .container {
     padding-bottom: 30px;
     margin-bottom: 30px;
 }
-.question-explain-block,
-.question-ai-block {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 25px;
-}
 .question-explain-block h3 {
     color: blue;
 }
@@ -1268,9 +1263,13 @@ body:has(.api-questions-form) .container {
 .question-ai-block {
     background-color: #f9f9f9;
     padding: 35px;
-    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
     position: relative;
     border-radius: 5px;
+}
+.question-ai-block {
+    margin-bottom: 0;
 }
 .keyword-item span {
     font-weight: bold;
