@@ -1170,6 +1170,7 @@ body:has(.api-questions-form) .container {
     width: 100%;
     padding: 8px 0 0;
     margin-top: 5px;
+    border: 0;
     border-bottom: 1px solid transparent;
     border-radius: 0;
     box-sizing: border-box;
