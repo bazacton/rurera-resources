@@ -752,7 +752,7 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
 .navbar .form-inline .search-result .search-item .search-icon {width: 35px; height: 35px; line-height: 35px; text-align: center; border-radius: 50%;}
 .navbar .active .nav-link {color: #fff; font-weight: 700;}
 .navbar .navbar-text {color: #fff;}
-.navbar .nav-link {color: #333; padding-left: 15px !important; padding-right: 15px !important; padding-top: 0 !important; padding-bottom: 0 !important; height: 100%;}
+.navbar .nav-link {background-color: inherit; color: #333; padding-left: 15px !important; padding-right: 15px !important; padding-top: 0 !important; padding-bottom: 0 !important; height: 100%;}
 .navbar .nav-link.nav-link-lg div {margin-top: 3px;}
 .navbar .nav-link.nav-link-lg i {margin-left: 0 !important; font-size: 18px; line-height: 32px;}
 .navbar .nav-link.nav-link-user {color: #333; padding-top: 4px; padding-bottom: 4px; font-weight: 600;}
