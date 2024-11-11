@@ -1149,10 +1149,6 @@ body:has(.api-questions-form) .container {
     padding: 50px 75px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid transparent;
-}
-.api-questions-form.container:focus-within {
-    border-color: #333;
 }
 .api-questions-form .question-label {
     margin-bottom: 20px;
@@ -1186,6 +1182,7 @@ body:has(.api-questions-form) .container {
 }
 .api-questions-form textarea:focus, .api-questions-form input[type="text"]:focus {
     outline: none;
+    text-decoration: underline;
 }
 .api-questions-form .option-group {
     display: flex;
