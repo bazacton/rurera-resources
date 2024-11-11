@@ -1352,8 +1352,8 @@ body:has(.api-questions-form) .container {
     display: inline-flex;
     align-items: center;
     border-bottom: 1px solid;
-    line-height: normal;
-    padding: 0 0 5px;
+    line-height: 18px;
+    padding: 0 0 2px;
     font-weight: 600;
     justify-content: center;
 }
