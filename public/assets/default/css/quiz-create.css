@@ -1333,7 +1333,10 @@ body:has(.api-questions-form) .container {
     display: block;
 }
 .question-ai-block {
-    margin-bottom: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+    background-color: #f0f0f0;
+    padding: 30px;
 }
 .question-ai-block h3 {
     margin-bottom: 10px;
