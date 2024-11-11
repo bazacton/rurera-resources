@@ -1168,7 +1168,7 @@ body:has(.api-questions-form) .container {
 }
 .api-questions-form textarea, .api-questions-form input[type="text"] {
     width: 100%;
-    padding: 8px 0;
+    padding: 8px 0 0;
     margin-top: 5px;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -1181,7 +1181,6 @@ body:has(.api-questions-form) .container {
     background-color: inherit;
 }
 .api-questions-form textarea:focus, .api-questions-form input[type="text"]:focus {
-    border-bottom-color: #ddd;
     outline: none;
 }
 .api-questions-form .option-group {
