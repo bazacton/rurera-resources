@@ -1126,6 +1126,8 @@ Questions Edit Page Fields style start
 .columns-settings .toggle-switch {justify-content: flex-start; border-bottom: 1px solid #ddd;}
 .columns-settings input[type="checkbox"] {margin-left: auto;}
 .columns-settings:not(.drag-handle) span {font-size: 14px;}
+.columns-settings .dropdown .btn {display: inline-block; width: auto !important; vertical-align: middle; margin-top: 0 !important; box-shadow: none;}
+.columns-settings .dropdown .btn.btn-primary {background-color: #b9b9b9; border-color: #b9b9b9;}
 /* Questions Generator Column Setting Dropdown Style End*/
 
 /**************************************
