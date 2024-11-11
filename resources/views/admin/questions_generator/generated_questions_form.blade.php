@@ -70,7 +70,7 @@ iframe{
 	@foreach( $questions_array as $questionData)
 		@php $question_id = isset( $questionData['question_id'] ) ? $questionData['question_id'] : 0; @endphp
 		
-		<iframe style="width:100%; height:1000px;" src="http://192.168.43.227:9000/admin/questions-generator/builder/{{$question_id}}">
+		<iframe style="width:100%; height:1000px;" src="/admin/questions-generator/builder/{{$question_id}}">
 		</iframe>
 		
 	@endforeach
