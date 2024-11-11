@@ -1348,10 +1348,14 @@ body:has(.api-questions-form) .container {
 .question-ai-block a button {
     border: 0;
     background-color: inherit;
-    text-decoration: underline;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
+    border-bottom: 1px solid;
+    line-height: normal;
+    padding: 0 0 5px;
+    font-weight: 600;
+    justify-content: center;
 }
 .question-ai-block .check-icon,
 .question-ai-block .info-icon {
