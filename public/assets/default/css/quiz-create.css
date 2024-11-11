@@ -788,7 +788,7 @@ scrollbar-gutter: stable both-edges;
 .numeric-list-style.image-top .field-holder:has(label img):before {top: 10px; margin-top: 0; background-color: #fff;}
 .lms-sorting-fields.image-top .sort-icon {top: auto; transform: none; bottom: 12px; right: 10px;}
 .numeric-list-style.image-top > .field-holder:has(label img) {padding: 0 0 15px;} 
-.lms-sorting-fields.image-top .field-holder .sort-icon ~ label:has(img) {padding: 0; display: flex; flex-direction: column-reverse;}
+.lms-sorting-fields.image-top .field-holder .sort-icon ~ label:has(img) {padding: 0;}
 .lms-sorting-fields.image-top .field-holder label img {margin-bottom: 10px; max-width: 100%; height: auto;}
 .image-top .field-holder label .lable-info {padding-left: 10px;}
 /*Quistions Type numeric-list with image-top style End*/
