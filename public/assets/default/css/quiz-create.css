@@ -1259,17 +1259,13 @@ body:has(.api-questions-form) .container {
     color: #000;
     font-size: 16px;
 }
-.question-explain-block,
-.question-ai-block {
+.question-explain-block {
     background-color: #f9f9f9;
     padding: 35px;
     border-bottom: 1px solid #ddd;
     margin-bottom: 20px;
     position: relative;
     border-radius: 8px;
-}
-.question-ai-block {
-    margin-bottom: 0;
 }
 .keyword-item span {
     font-weight: bold;
