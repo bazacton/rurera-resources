@@ -345,8 +345,8 @@ Lms Table Style End
 .lms-radio-img.rurera-in-row .field-holder,
 .lms-radio-img .field-holder,
 .lms-radio-img.rurera-in-cols .field-holder,
-.rurera-in-cols.image-top .field-holder,
-.rurera-in-row.image-top .field-holder {width: 31.555%;}
+.rurera-in-cols.image-top .field-holder:has(label img),
+.rurera-in-row.image-top .field-holder:has(label img) {width: 31.555%;}
 /*Field row with image style End*/
 
 /*Field col style start*/
