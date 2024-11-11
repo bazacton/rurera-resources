@@ -789,7 +789,7 @@ scrollbar-gutter: stable both-edges;
 .lms-sorting-fields.image-top .sort-icon {top: auto; transform: none; bottom: 12px; right: 10px;}
 .numeric-list-style.image-top > .field-holder:has(label img) {padding: 0 0 15px;} 
 .lms-sorting-fields.image-top .field-holder .sort-icon ~ label:has(img) {padding: 0;}
-.lms-sorting-fields.image-top .field-holder label img {margin-bottom: 10px;}
+.lms-sorting-fields.image-top .field-holder label img {margin-bottom: 10px; max-width: 100%; height: 100%;}
 .image-top .field-holder label .lable-info {padding-left: 10px;}
 /*Quistions Type numeric-list with image-top style End*/
 
