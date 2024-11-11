@@ -1149,6 +1149,10 @@ body:has(.api-questions-form) .container {
     padding: 50px 75px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: 1px solid transparent;
+}
+.api-questions-form.container:focus {
+    outline-color: #333;
 }
 .api-questions-form .question-label {
     margin-bottom: 20px;
