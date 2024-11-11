@@ -1119,6 +1119,13 @@ Questions Edit Page Fields style start
 .lms-quiz-create .rureraform-dialog-button label {line-height: 38px; display: inline-block;	margin-left: 8px; vertical-align: top; margin-bottom: 0; font-weight: 400;}
 .lms-quiz-create .rureraform-dialog-button i {line-height: 38px; vertical-align: top;}
 /* Dialog Fields Style End*/
+/* Questions Generator Column Setting Dropdown Style Start*/
+.columns-settings .dropdown-menu {width: 300px;}
+.columns-settings h5 {font-size: 16px; font-weight: 500; color: #999;}
+.columns-settings .toggle-switch {justify-content: flex-start;}
+.columns-settings input[type="checkbox"] {margin-left: auto;}
+.columns-settings:not(.drag-handle) span {font-size: 14px;}
+/* Questions Generator Column Setting Dropdown Style End*/
 
 /**************************************
 Questions Edit Page Fields style start
