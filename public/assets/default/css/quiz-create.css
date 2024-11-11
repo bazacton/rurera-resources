@@ -1266,7 +1266,7 @@ body:has(.api-questions-form) .container {
     border-bottom: 1px solid #ddd;
     margin-bottom: 20px;
     position: relative;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 .question-ai-block {
     margin-bottom: 0;
