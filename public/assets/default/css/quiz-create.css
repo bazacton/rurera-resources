@@ -197,7 +197,6 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /*Quiz Radio-Image Style Start*/
 .lms-radio-img .field-holder label {padding: 5px; border-radius: 5px;}
 .lms-radio-img .field-holder label img {object-fit: cover}
-
 /*Quiz Radio-Image Style End*/
 /* Image Static Style Start */
 /*image top style*/
@@ -304,8 +303,32 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 /* Audio Input Style Start */
 /* Audio Input Style End */
 
-/* Audio Record Style Start */
-/* Audio Record Style End */
+/* Audio Recording Style Start */
+.audio-box {margin-bottom: 30px;}
+.audio-box .media {margin-bottom: 20px;}
+.audio-box img {width: 100%; object-fit: contain; border-radius: 8px;}
+.audio-controls {display: flex; align-items: center; justify-content: center; gap: 10px;}
+.audio-box button {padding: 8px 30px; height: auto; line-height: normal; border-radius: 30px; border: 1px solid blue; background-color: inherit; color: blue;}
+.audio-box button:hover {background-color: blue; color: #fff;}
+/* Audio Recording Style End */
+/* Video Recording Style Start */
+.video-box {margin-bottom: 30px;}
+.video-box .media {margin-bottom: 20px;}
+.video-box img {width: 100%; object-fit: contain; border-radius: 8px;}
+.video-controls {display: flex; align-items: center; justify-content: center; gap: 10px;}
+.video-box button {padding: 8px 30px; height: auto; line-height: normal; border-radius: 30px; border: 1px solid blue; background-color: inherit; color: blue;}
+.video-box button:hover {background-color: blue; color: #fff;}
+/* Video Recording Style End */
+/* Image Attachment Style Start */
+.image-element-dragdropbox {border: 2px dashed #ccc; text-align: center; max-width: 350px; margin: 0 auto 30px; padding: 25px; border-radius: 5px;}
+.image-element-dragdropbox .image-drag img {height: 80px; width: 80px; object-fit: cover; background-color: #fcfcfc;}
+.image-element-dragdropbox .image-drag {display: block; margin: 0 0 15px;}
+.image-dragdropbox {position: relative;}
+.image-dragdropbox input[type="file"] {position: absolute; height: 100%; width: 100%; opacity: 0;}
+.image-dragdropbox span {display: block; margin: 0 0 10px;}
+.image-dragdropbox em {display: block; font-style: normal; margin: 0 0 10px;}
+.image-dragdropbox a {background-color: #e6e6e6; color: #555; font-weight: 500; text-decoration: none; padding: 10px 20px; display: inline-block; line-height: normal; border-radius: 3px;}
+/* Image Attachment Style End */
 
 /**********************************
 Lms Table Style 
