@@ -849,6 +849,7 @@ a.dropdown-item:focus, a.dropdown-item:active, a.dropdown-item.active {backgroun
 }
 /* Dropdown-Menu In Courses Table Style Start */
 .table-actions.dropdown .dropdown-menu {display: none; right: 0; left: auto;}
+.table-actions.dropdown .dropdown-toggle {outline: none;}
 /* Dropdown-Menu In Courses Table Style End */
 
 
