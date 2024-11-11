@@ -1338,6 +1338,8 @@ body:has(.api-questions-form) .container {
 }
 .question-ai-block h3 {
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
 }
 .question-ai-block p {
     margin-bottom: 15px;
