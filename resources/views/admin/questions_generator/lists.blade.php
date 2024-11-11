@@ -21,6 +21,16 @@
 		float: right;
 	}
 </style>
+<style>
+        .table-container { margin-top: 20px; }
+        .dropdown-menu { padding: 15px; width: 300px; max-height: 400px; overflow-y: auto; }
+        .dropdown-menu h5 { margin-top: 10px; font-weight: bold; }
+        .search-input { width: 100%; margin-bottom: 10px; padding: 5px; border: 1px solid #ccc; border-radius: 4px; }
+        .toggle-switch { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+        .drag-handle { cursor: move; padding: 0 5px; color: #007bff; font-weight: bold; margin-right: 10px; }
+        .dropdown-toggle { background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        .hidden-column { display: none; }
+    </style>
 @endpush
 
 @section('content')
@@ -167,6 +177,27 @@
         <div class="row">
             <div class="col-12 col-md-12">
                 <div class="card">
+				
+					<div class="columns-settings">
+						<div class="dropdown">
+							<button class="dropdown-toggle" type="button" data-toggle="dropdown">
+								Configure Columns
+							</button>
+							<div class="dropdown-menu">
+								<input type="text" class="search-input" id="searchInput" placeholder="Search by item..." onkeyup="filterColumns()">
+								
+								<h5>Shown Attributes</h5>
+								<ul id="shownAttributes" class="column-list"></ul>
+
+								<h5>Hidden Attributes</h5>
+								<ul id="hiddenAttributes" class="column-list"></ul>
+
+								<button class="btn btn-secondary w-100 mt-3" onclick="restoreDefault()">Restore Default</button>
+								<button class="btn btn-primary w-100 mt-2" onclick="saveChanges()">Save Changes</button>
+							</div>
+						</div>
+
+					</div>
                     @can('admin_topic_parts_create')
                     <div class="card-header">
                         <div class="text-right">
@@ -177,26 +208,26 @@
 
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table table-striped font-14">
-                                <tr>
+                            <table class="table table-striped font-14" id="myTable">
+                                <tr id="tableHeader">
                                     <th class="text-left">API Type</th>
                                     <th class="text-left">Category</th>
                                     <th class="text-left">Questions Type</th>
-                                    <th class="text-left">Cost</th>
 									<th class="text-left">Total Questions</th>
 									<th class="text-left">Generated / Waiting / Rejected</th>
-									<th class="text-left">Status</th>
                                     <th class="text-left">Added by</th>
                                     <th class="text-left">Added Date</th>
                                     <th>{{ trans('admin/main.actions') }}</th>
                                 </tr>
 
                                 @foreach($AiApiCalls as $AiApiCallObj)
+								
+								
                                 <tr>
-                                    <td>
+                                    <td data-id="api_type">
                                         <span>{{ $AiApiCallObj->api_type }}</span>
                                     </td>
-									<td class="text-left">{{ (isset($AiApiCallObj->category->id))? $AiApiCallObj->category->getTitleAttribute() : '-' }}
+									<td data-id="category" class="text-left">{{ (isset($AiApiCallObj->category->id))? $AiApiCallObj->category->getTitleAttribute() : '-' }}
 									<br>
 										<small>
 										{{ (isset($AiApiCallObj->subject->id))? $AiApiCallObj->subject->getTitleAttribute() : '-' }} / 
@@ -204,14 +235,12 @@
 										{{ (isset($AiApiCallObj->subChapter->id))? $AiApiCallObj->subChapter->sub_chapter_title : '-' }}
 										</small>
 									</td>
-									<td class="text-left">{{ $AiApiCallObj->question_type }}</td>
-									<td class="text-left">{{ number_format($AiApiCallObj->total_cost) }}</td>
-									<td class="text-left">{{ $AiApiCallObj->total_questions }}</td>
-									<td class="text-left">{{ $AiApiCallObj->generated_questions }} / {{ $AiApiCallObj->waiting_questions }} / {{ $AiApiCallObj->rejected_questions }}</td>
-									<td class="text-left">{{ $AiApiCallObj->status }}</td>
-                                    <td class="text-left">{{ $AiApiCallObj->user->get_full_name() }}</td>
-                                    <td class="text-left">{{ dateTimeFormat($AiApiCallObj->created_at, 'j M y | H:i') }}</td>
-                                    <td>
+									<td class="text-left" data-id="question_type">{{ $AiApiCallObj->question_type }}</td>
+									<td class="text-left" data-id="total_questions">{{ $AiApiCallObj->total_questions }}</td>
+									<td class="text-left" data-id="generated_questions">{{ $AiApiCallObj->generated_questions }} / {{ $AiApiCallObj->waiting_questions }} / {{ $AiApiCallObj->rejected_questions }}</td>
+                                    <td class="text-left" data-id="user">{{ $AiApiCallObj->user->get_full_name() }}</td>
+                                    <td class="text-left" data-id="created_at">{{ dateTimeFormat($AiApiCallObj->created_at, 'j M y | H:i') }}</td>
+                                    <td data-id="action">
                                         @can('admin_topic_parts_edit')
 										@if($AiApiCallObj->status == 'active')
 											@if($AiApiCallObj->api_response == '')
@@ -269,6 +298,158 @@
 @push('scripts_bottom')
 
 
+<script>
+	$(document).ready(function () {
+		const defaultColumns = [
+			{ id: 'api_type', text: 'API Type', visible: true },
+			{ id: 'category', text: 'Category', visible: true },
+			{ id: 'question_type', text: 'Questions Type', visible: true },
+			{ id: 'total_questions', text: 'Total Questions', visible: true },
+			{ id: 'generated_questions', text: 'Generated', visible: true },
+			{ id: 'user', text: 'Added by', visible: true },
+			{ id: 'created_at', text: 'Added Date', visible: true },
+			{ id: 'action', text: 'Action', visible: true }
+		];
+
+		let columns = $.extend(true, [], defaultColumns); // Deep copy of default columns
+		const $shownAttributes = $('#shownAttributes');
+		const $hiddenAttributes = $('#hiddenAttributes');
+		const $tableHeader = $('#tableHeader');
+		const $searchInput = $('#searchInput');
+		let currentOrder = columns.map(col => col.id);
+
+		function renderTableHeaders() {
+			$tableHeader.empty();
+			columns.forEach(col => {
+				const $th = $('<th>').text(col.text).data('id', col.id);
+				$th.toggleClass('hidden-column', !col.visible);
+				$tableHeader.append($th);
+			});
+
+			$('#myTable tbody tr').each(function () {
+				$(this).children().each(function (index) {
+					$(this).toggleClass('hidden-column', !columns[index].visible);
+				});
+			});
+		}
+
+		function renderColumnLists() {
+			$shownAttributes.empty();
+			$hiddenAttributes.empty();
+
+			columns.forEach(col => {
+				const $li = $('<li>').addClass('toggle-switch').data('id', col.id).attr('draggable', true);
+				const $label = $('<span>').text(col.text);
+				const $toggle = $('<input>').attr('type', 'checkbox').prop('checked', col.visible);
+				const $dragHandle = $('<span>').text('☰').addClass('drag-handle');
+
+				$toggle.change(() => toggleColumnVisibility(col.id));
+				$li.append($dragHandle, $label, $toggle);
+
+				if (col.visible) {
+					$shownAttributes.append($li);
+				} else {
+					$hiddenAttributes.append($li);
+				}
+
+				$li.on('dragstart', handleDragStart)
+					.on('dragover', handleDragOver)
+					.on('drop', handleDrop)
+					.on('dragend', handleDragEnd);
+			});
+		}
+
+		let draggedItem = null;
+
+		function handleDragStart(event) {
+			draggedItem = $(event.target);
+			event.originalEvent.dataTransfer.effectAllowed = 'move';
+			setTimeout(() => draggedItem.addClass('dragging'), 0);
+		}
+
+		function handleDragOver(event) {
+			event.preventDefault();
+			const $target = $(event.target).closest('li');
+			if ($target.length && $target[0] !== draggedItem[0]) {
+				const bounding = $target[0].getBoundingClientRect();
+				const offset = event.originalEvent.clientY - bounding.top;
+				if (offset > bounding.height / 2) {
+					$target.after(draggedItem);
+				} else {
+					$target.before(draggedItem);
+				}
+			}
+		}
+
+		function handleDrop(event) {
+			event.preventDefault();
+			draggedItem.removeClass('dragging');
+			updateCurrentOrder();
+			renderTableHeaders();
+		}
+
+		function handleDragEnd() {
+			draggedItem = null;
+		}
+
+		function toggleColumnVisibility(id) {
+			const col = columns.find(col => col.id === id);
+			col.visible = !col.visible;
+			renderTableHeaders();
+			renderColumnLists();
+		}
+
+		function updateCurrentOrder() {
+			currentOrder = $shownAttributes.children('li').map((_, li) => $(li).data('id')).get();
+			columns.sort((a, b) => currentOrder.indexOf(a.id) - currentOrder.indexOf(b.id));
+		}
+
+		function filterColumns() {
+			const filter = $searchInput.val().toLowerCase();
+			columns.forEach(col => {
+				const $li = $(`li[data-id="${col.id}"]`);
+				if (col.text.toLowerCase().includes(filter)) {
+					$li.show();
+				} else {
+					$li.hide();
+				}
+			});
+		}
+
+		function restoreDefault() {
+			columns = $.extend(true, [], defaultColumns); // Reset to default columns
+			currentOrder = defaultColumns.map(col => col.id); // Reset to default order
+			renderTableHeaders();
+			renderColumnLists();
+			
+			const visibleColumns = columns.filter(col => col.visible).map(col => col.id);
+			const hiddenColumns = columns.filter(col => !col.visible).map(col => col.id);
+			$('#output').html(`
+				<p>Visible Columns (Default): ${visibleColumns.join(', ')}</p>
+				<p>Hidden Columns (Default): ${hiddenColumns.join(', ')}</p>
+				<p>Current Order (Default): ${currentOrder.join(', ')}</p>
+			`);
+		}
+
+		function saveChanges() {
+			const visibleColumns = columns.filter(col => col.visible).map(col => col.id);
+			const hiddenColumns = columns.filter(col => !col.visible).map(col => col.id);
+			$('#output').html(`
+				<p>Visible Columns: ${visibleColumns.join(', ')}</p>
+				<p>Hidden Columns: ${hiddenColumns.join(', ')}</p>
+				<p>Current Order: ${currentOrder.join(', ')}</p>
+			`);
+		}
+
+		$searchInput.on('input', filterColumns);
+		$('#restoreDefault').on('click', restoreDefault);
+		$('#saveChanges').on('click', saveChanges);
+
+		renderTableHeaders();
+		renderColumnLists();
+	});
+
+</script>
 <script type="text/javascript">
 
     $(document).ready(function () {
