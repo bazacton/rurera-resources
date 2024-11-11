@@ -785,7 +785,7 @@ scrollbar-gutter: stable both-edges;
 /*Quistions Type numeric-list with image-top style Start*/
 .numeric-list-style.image-top .field-holder:before {top: 10px; margin-top: 0; background-color: #fff;}
 .lms-sorting-fields.image-top .sort-icon {top: auto; transform: none; bottom: 12px; right: 10px;}
-.numeric-list-style.image-top > .field-holder {padding: 0 0 15px;} 
+.numeric-list-style.image-top > .field-holder:has(label img) {padding: 0 0 15px;} 
 .lms-sorting-fields.image-top .field-holder .sort-icon ~ label:has(img) {padding: 0;}
 .lms-sorting-fields.image-top .field-holder label img {margin-bottom: 10px;}
 .image-top .field-holder label .lable-info {padding-left: 10px;}
