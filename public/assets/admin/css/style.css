@@ -1567,6 +1567,10 @@ table#outputTable thead th {
     border-radius: 0;
 }
 /*Topics Parts Create Output Table End*/
+/*Topics Parts Form Table Style Start*/
+.topic-parts-form .table:not(.table-sm):not(.table-md):not(.dataTable) td, 
+.topic-parts-form .table:not(.table-sm):not(.table-md):not(.dataTable) th {padding: 15px; height: auto;}
+/*Topics Parts Form Table Style End*/
 
 /*Glossary Question_Edit_Part Modal Style Start*/
 .modal.question_edit_part_modal {
