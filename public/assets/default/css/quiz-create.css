@@ -1181,10 +1181,11 @@ Questions Edit Page Fields style start
 .edit-questions-tabs .nav .nav-link {border: 0; background-color: inherit; padding: 0 0 10px; font-weight: 600; font-size: 16px; border-bottom: 2px solid transparent; outline: none;}
 .edit-questions-tabs .nav .nav-link.active {color: var(--blue); border-bottom-color: var(--blue);}
 .edit-questions-tabs .tab-content {padding: 0;}
-.edit-questions-tabs .form-group {background-color: #fff; padding: 25px; border: 1px solid #ddd;}
+.edit-questions-tabs .form-group {background-color: #fff; padding: 25px; border: 1px solid #ddd; border-radius: 5px;}
+.edit-questions-tabs .question-explain-block {background-color: #fff; border: 1px solid #ddd; border-radius: 5px; padding: 25px;}
 .edit-questions-tabs .question-explain-block textarea {width: 100%; border: 1px solid #ddd; padding: 10px; margin-bottom: 15px;}
 .edit-questions-tabs .hap-container {padding: 0 15px;}
-.question-keywords-block h3 {color: #333; font-size: 18px;}
+.edit-questions-tabs .question-keywords-block h3 {color: #333; font-size: 18px; margin: 0;}
 /*Edit Questions Tabs style End*/
 
 /**************************************
