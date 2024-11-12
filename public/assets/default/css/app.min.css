@@ -114,7 +114,7 @@ nav li {list-style: none;}
 .top-navbar .dropdown-menu.user-profile-dropdown .dropdown-item img {max-width: inherit; margin-right: 5px; object-fit: contain; height: 80px; width: 80px;}
 .top-navbar .dropdown-menu.user-profile-dropdown:after,
 .top-navbar .dropdown-menu.user-profile-dropdown:before {display: none;}
-.top-navbar .dropdown-menu.user-profile-dropdown .nav-logout {border: 1px solid #d2d3d7; border-radius: 10px; width: 80%; margin: 15px auto; padding: 10px 6px !important;font-weight: 500;color: #5a5961;}
+.top-navbar .dropdown-menu.user-profile-dropdown .nav-logout {border: 1px solid #d2d3d7; border-radius: 10px; width: 80%; margin: 15px auto; padding: 10px 6px !important;font-weight: 500;color: #5a5961; float: none;}
 .top-navbar .dropdown-menu.user-profile-dropdown .nav-logout img {display: none; }
 .top-navbar .dropdown-menu.user-profile-dropdown .nav-logout span {font-weight: 500; color: #5a5961;}
 .top-navbar .dropdown-menu.user-profile-dropdown .user-nav-list .dropdown-item,
