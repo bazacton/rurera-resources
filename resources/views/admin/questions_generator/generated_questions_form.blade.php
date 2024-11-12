@@ -81,7 +81,8 @@ iframe{
 	@if(!empty( $questions_array) )
 		@php $counter = 1; @endphp
 		@foreach( $questions_array as $questionData)
-		@php $active_class = ($counter == 1)? 'show active' : ''; $question_id = isset( $questionData->id )? $questionData->id : 0; @endphp
+		@php $active_class = ($counter == 1)? 'show active' : ''; @endphp
+		@php $question_id = isset( $questionData['question_id'] ) ? $questionData['question_id'] : 0; @endphp
 		<div class="tab-pane fade {{$active_class}}" id="nav-q{{$counter}}" role="tabpanel" aria-labelledby="nav-q{{$counter}}-tab">
 			<iframe style="width:100%; height:1000px;" src="/admin/questions-generator/builder/{{$question_id}}">
 		</iframe>
