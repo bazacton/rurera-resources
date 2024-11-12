@@ -1576,6 +1576,16 @@ table#outputTable thead th {
     field-sizing: content;
 }
 /*Glossary Question_Edit_Part Modal Style End*/
+/*Template_save_modal Style Start*/
+.template_save_modal .inactivity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.template_save_modal .save-template-btn {
+    padding: 8px 30px;
+}
+/*Template_save_modal Style End*/
 
 /*****************************************
 Admin Questions Generator Page Style Start
