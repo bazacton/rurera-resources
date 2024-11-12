@@ -1572,6 +1572,10 @@ table#outputTable thead th {
 .modal.question_edit_part_modal {
     background-color: #fff;
 }
+.question_edit_part_modal textarea.form-control {
+    height: auto;
+    overflow-y: hidden;
+}
 /*Glossary Question_Edit_Part Modal Style End*/
 
 /*****************************************
