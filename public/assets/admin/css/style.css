@@ -1843,6 +1843,11 @@ output {
     .columns-settings .dropdown-toggle {padding: 8px 10px; background-color: var(--primary);}
     /* Questions Generator Column Setting Dropdown Style End*/
 
+    /* Questions Generator Table Style Start*/
+    .card:has(.columns-settings) .table-striped tr th {text-align: left !important;}
+    .card:has(.columns-settings) .table-striped tr th:last-child {text-align: center !important;}
+    /* Questions Generator Table Style End*/
+
 /*****************************************
 Admin Questions Generator Page Style End
 *********************/
