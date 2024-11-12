@@ -6,6 +6,7 @@
     <title>Question Generator</title>
 	<?php $random_id = rand(111,9999); ?>
 	<link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver=<?php echo $random_id; ?>">
+	<link rel="stylesheet" href="/assets/admin/vendor/bootstrap/bootstrap.min.css"/>
 	<style>
     .droppable_area {
         width: 150px;
@@ -95,6 +96,6 @@ iframe{
 <!-- Edit-questions Tabs End -->
 
 </div>
-
+<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>
