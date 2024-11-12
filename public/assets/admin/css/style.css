@@ -1570,6 +1570,7 @@ table#outputTable thead th {
 /*Topics Parts Form Table Style Start*/
 .topic-parts-form .table:not(.table-sm):not(.table-md):not(.dataTable) td, 
 .topic-parts-form .table:not(.table-sm):not(.table-md):not(.dataTable) th {padding: 15px; height: auto;}
+.topic-parts-form .part_text {line-height: 24px;}
 /*Topics Parts Form Table Style End*/
 
 /*Glossary Question_Edit_Part Modal Style Start*/
