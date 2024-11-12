@@ -313,11 +313,13 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 }
 .btn-icon .fas:before {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 50%;
+    top: 50%;
     height: 15px;
     width: 15px;
     content: "";
+    margin-top: -7px;
+    margin-left: -7px;
 }
 .btn-icon .fa-play:before {
     background: url(/assets/default/svgs/play-button.svg) no-repeat center;
