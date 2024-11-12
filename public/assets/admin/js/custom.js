@@ -535,6 +535,15 @@
                 sidebar_nicescroll.doScrollPos(0, ($active.position().top - 100));
             }
         }*/
+
+            function replaceTextarea() {
+                var textarea = document.getElementsByClassName('.question_edit_part_modal textarea.form-control');
+                var content = textarea.value;
+                
+                var span = document.createElement('span');
+                span.textContent = content;
+                textarea.style.display = 'none';
+            }
     });
 
     var lfm = function (options, cb) {
