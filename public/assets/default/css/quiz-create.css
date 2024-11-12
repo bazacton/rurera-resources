@@ -301,6 +301,21 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
 /* Match Style End */
 
 /* Audio Input Style Start */
+.btn-icon .fas {
+    position: relative;
+}
+.btn-icon .fas:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+}
+.btn-icon .fa-play:before {
+    background: url(assets/default/svgs/play-button.svg) no-repeat center;
+    background-size: 100%;
+}
 /* Audio Input Style End */
 
 /* Audio Recording Style Start */
