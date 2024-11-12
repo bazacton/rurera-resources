@@ -243,7 +243,7 @@
                         <h2 itemprop="title" class="mb-10 font-40">Open Positions</h2>
                         <p itemprop="description">We are always seeking talented individuals to join our team and contribute <br /> to our success. Explore some new positions:</p>
                     </div>
-                    <div class="lms-accordion-job accordion lms-faqs" id="accordionExample">
+                    <div class="lms-accordion-job accordion" id="accordionExample">
                         <div class="card">
                             <div class="card-header" id="heading_1">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse_1" aria-expanded="false" aria-controls="collapse_1">Senior Software Developer
