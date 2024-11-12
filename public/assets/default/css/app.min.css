@@ -107,6 +107,7 @@ nav ul {margin-left: 0;}
 nav li {list-style: none;}
 /*Nav bar 1 style End*/
 /*Top Navbar User-Profile-Dropdown Style Start*/
+.top-navbar .navbar-order {margin-left: 10px;}
 .top-navbar .dropdown-menu.user-profile-dropdown {min-width: 250px; border: 1px solid #e1e1e1; border-radius: 10px; padding: 15px 0 10px; visibility: hidden;opacity: 0;display: block !important;transition: all .5s ease;margin-top: 0;text-align: center; top: 100%;}
 .top-navbar .dropdown-menu.user-profile-dropdown .user-nav-detail img {margin: 0 0 15px;}
 .top-navbar .dropdown:hover .user-profile-dropdown {opacity: 1;  visibility: visible; margin-top: -5px;}
