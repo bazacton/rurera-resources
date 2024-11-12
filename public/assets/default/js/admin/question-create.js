@@ -341,6 +341,23 @@ function rureraform_builder_save(_object, question_status) {
 
 
     var question_layout = $(".rureraform-form");
+	var keywordsArray = [];
+
+	var keywordsArray = {}; // Initialize the object to store keyword data
+	$('[name^="keywords["]').each(function() {
+		var matches = $(this).attr('name').match(/keywords\[(\d+)\]\[(\w+)\]/);
+		if (matches) {
+			var id = matches[1];
+			var field = matches[2];
+			
+			if (!keywordsArray[id]) {
+				keywordsArray[id] = {}; // Initialize each id in the array if it doesn't exist
+			}
+			
+			keywordsArray[id][field] = $(this).val(); // Store the value
+		}
+	});
+	keywordsArray = JSON.stringify(keywordsArray);
 
     question_layout.find('.editor-field').each(function () {
         $.each($(this).data(), function (i) {
@@ -351,16 +368,18 @@ function rureraform_builder_save(_object, question_status) {
 
 
     });
+    //var question_solve = $('#question_solve').summernote('code');
+	var question_solve = $('#question_solve').val();
 
     question_layout.find('.editor-field').removeAttr("correct_answere");
     var question_layout = rureraform_encode64(JSON.stringify(question_layout.html()));
 
     var post_data = {
-        //"question_solve": question_solve,
-        
+        "question_solve": question_solve,
         "question_title": question_title,
         "question_id": question_id,
         "action": "rureraform-form-save",
+        "keywords": keywordsArray,
         "form-id": jQuery("#rureraform-id").val(),
         "form-options": rureraform_encode64(JSON.stringify(rureraform_form_options)),
         "form-pages": post_pages,
