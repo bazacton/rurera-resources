@@ -266,8 +266,8 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .draggable-items .ui-draggable span {color: #999; vertical-align: middle;}
 .droppable_area, .lms-quiz-section .droppable_area {display:inline-flex; height: auto; padding: 0; margin: 0; border-radius: 0; border-bottom: 2px dotted #ddd; vertical-align: text-bottom; justify-content: center; align-items: center; min-width: 190px; text-align: center; min-height: 40px; }
 span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
-.lms-quiz-section .droppable_area .draggable-option,
-.lms-quiz-section .draggable-items .draggable-option {border: 2px solid #ddd; line-height: normal; padding: 4px 20px 8px; border-radius: 5px; border-bottom-width: 4px; margin-top: 20px;}
+.droppable_area .draggable-option,
+.draggable-items .draggable-option {border: 2px solid #ddd; line-height: normal; padding: 4px 20px 8px; border-radius: 5px; border-bottom-width: 4px; margin-top: 20px;}
 /* Draggable Style End */
 
 /* Highlight Word/Sentence Style Start */
