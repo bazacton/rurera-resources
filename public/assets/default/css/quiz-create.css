@@ -323,7 +323,7 @@ span.Selectable.marking-selected {background: #fff716; cursor: pointer;}
     background: url(/assets/default/svgs/play-button.svg) no-repeat center;
     background-size: 100%;
 }
-.btn-icon .fa-play:before {
+.btn-icon .fa-stop:before {
     background: url(/assets/default/svgs/pause-button.svg) no-repeat center;
     background-size: 100%;
 }
