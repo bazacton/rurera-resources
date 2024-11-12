@@ -1586,7 +1586,7 @@ table#outputTable thead th {
     padding: 8px 30px;
 }
 /*Topics_Parts Template_save_modal Style End*/
-/*topic parts search-form select2 style End*/
+/*topic parts search-form select2 style Start*/
 #topic_parts_search_form .select2-container {z-index: auto !important;}
 #topic_parts_search_form .select2-container--default .select2-selection--single {
     border-color: #e4e6fc;
