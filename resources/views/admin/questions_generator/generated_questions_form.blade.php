@@ -70,23 +70,23 @@ iframe{
 <div class="edit-questions-tabs">
   <div class="nav" id="nav-tab" role="tablist">
 	@if(!empty( $questions_array) )
-		$php $counter = 1; @endphp
+		@php $counter = 1; @endphp
 		@foreach( $questions_array as $questionData)
 			<button class="nav-link active" id="nav-q{{$counter}}-tab" data-toggle="tab" data-target="#nav-q{{$counter}}" type="button" role="tab" aria-controls="nav-q{{$counter}}" aria-selected="true">Question {{$counter}}</button>
-		$php $counter++; @endphp
+		@php $counter++; @endphp
 		@endforeach
 	@endif
   </div>
   <div class="tab-content" id="nav-tabContent">
 	@if(!empty( $questions_array) )
-		$php $counter = 1; @endphp
+		@php $counter = 1; @endphp
 		@foreach( $questions_array as $questionData)
 		@php $active_class = ($counter == 1)? 'show active' : ''; @endphp
 		<div class="tab-pane fade {{$active_class}}" id="nav-q{{$counter}}" role="tabpanel" aria-labelledby="nav-q{{$counter}}-tab">
 			<iframe style="width:100%; height:1000px;" src="/admin/questions-generator/builder/{{$question_id}}">
 		</iframe>
 		</div>
-		$php $counter++; @endphp
+		@php $counter++; @endphp
 		@endforeach
 	@endif
   </div>
