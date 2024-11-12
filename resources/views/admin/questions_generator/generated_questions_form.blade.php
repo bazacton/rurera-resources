@@ -73,7 +73,8 @@ iframe{
 	@if(!empty( $questions_array) )
 		@php $counter = 1; @endphp
 		@foreach( $questions_array as $questionData)
-			<button class="nav-link active" id="nav-q{{$counter}}-tab" data-toggle="tab" data-target="#nav-q{{$counter}}" type="button" role="tab" aria-controls="nav-q{{$counter}}" aria-selected="true">Question {{$counter}}</button>
+			@php $active_class = ($counter == 1)? 'active' : ''; @endphp
+			<button class="nav-link {{$active_class}}" id="nav-q{{$counter}}-tab" data-toggle="tab" data-target="#nav-q{{$counter}}" type="button" role="tab" aria-controls="nav-q{{$counter}}" aria-selected="true">Question {{$counter}}</button>
 		@php $counter++; @endphp
 		@endforeach
 	@endif
