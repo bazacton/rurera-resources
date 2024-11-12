@@ -1171,6 +1171,14 @@ Questions Edit Page Fields style start
 .lms-quiz-create .rureraform-dialog-button i {line-height: 38px; vertical-align: top;}
 /* Dialog Fields Style End*/
 
+/*Edit Questions Tabs style Start*/
+.edit-questions-tabs {margin: 0 0 20px;}
+.edit-questions-tabs .nav {border-bottom: 1px solid #ddd; gap: 0 25px; display: inline-flex;}
+.edit-questions-tabs .nav .nav-link {border: 0; background-color: inherit; padding: 0 0 10px; font-weight: 600; font-size: 16px; border-bottom: 2px solid transparent; outline: none;}
+.edit-questions-tabs .nav .nav-link.active {color: var(--blue); border-bottom-color: var(--blue);}
+.edit-questions-tabs .tab-content {padding: 0;}
+/*Edit Questions Tabs style End*/
+
 /**************************************
 Questions Edit Page Fields style start
 **************************************/
