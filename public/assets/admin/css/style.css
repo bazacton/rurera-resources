@@ -1587,6 +1587,8 @@ table#outputTable thead th {
 }
 /*Topics_Parts Template_save_modal Style End*/
 
+#topic_parts_search_form .select2-container {z-index: auto !important;} /*topic parts search-form select2 style*/
+
 /*****************************************
 Admin Questions Generator Page Style Start
 *********************/
