@@ -6,6 +6,7 @@
     <title>Question Generator</title>
 	<?php $random_id = rand(111,9999); ?>
 	<link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver=<?php echo $random_id; ?>">
+	<link rel="stylesheet" href="/assets/admin/vendor/bootstrap/bootstrap.min.css"/>
 	<style>
     .droppable_area {
         width: 150px;
@@ -72,7 +73,8 @@ iframe{
 	@if(!empty( $questions_array) )
 		@php $counter = 1; @endphp
 		@foreach( $questions_array as $questionData)
-			<button class="nav-link active" id="nav-q{{$counter}}-tab" data-toggle="tab" data-target="#nav-q{{$counter}}" type="button" role="tab" aria-controls="nav-q{{$counter}}" aria-selected="true">Question {{$counter}}</button>
+			@php $active_class = ($counter == 1)? 'active' : ''; @endphp
+			<button class="nav-link {{$active_class}}" id="nav-q{{$counter}}-tab" data-toggle="tab" data-target="#nav-q{{$counter}}" type="button" role="tab" aria-controls="nav-q{{$counter}}" aria-selected="true">Question {{$counter}}</button>
 		@php $counter++; @endphp
 		@endforeach
 	@endif
@@ -95,6 +97,6 @@ iframe{
 <!-- Edit-questions Tabs End -->
 
 </div>
-
+<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>
