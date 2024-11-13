@@ -29,9 +29,9 @@ $rand_id = rand(99,9999);
 
 
 
-                    <div class="learning-content-box d-flex align-items-center justify-content-center flex-column p-15 p-lg-30 rounded-lg">
+                    <div class="learning-content-box d-flex align-items-center justify-content-center flex-column">
                         <div class="learning-content-box-icon">
-                            <img src="/assets/default/img/learning/quiz.svg" alt="downloadable icon">
+                            <img src="/assets/default/img/quiz-start.webp" alt="downloadable icon">
                         </div>
 
                         <p>You are not subscribed for this</p>
