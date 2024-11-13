@@ -1410,6 +1410,14 @@ Lms Responsive Style Start
         color: #000 !important;
     }
     .reward-program-section .btn-outline-primary {color: #000; border-color: #000;}
+    .lms-checkbox-img.rurera-in-row .field-holder, 
+    .lms-checkbox-img.rurera-in-row .form-field, 
+    .lms-radio-img.rurera-in-row .field-holder, 
+    .lms-radio-img .field-holder, .lms-radio-img.rurera-in-cols .field-holder, 
+    .rurera-in-cols.image-top .field-holder:has(label img), 
+    .rurera-in-row.image-top .field-holder:has(label img) {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
