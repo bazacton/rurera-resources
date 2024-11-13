@@ -2,6 +2,11 @@ html{overflow:hidden}@media (max-width:991px){html{overflow-y:auto;overflow-x:hi
 .learning-content-box-icon .btn-primary {
     border-radius: 30px;
 }
+.learning-content-box-icon img {
+    max-width: 250px;
+    min-width: 250px;
+    object-fit: contain;
+}
 
 /* Lms Side Menu Left Style Start */
 .lms-side-menu-left {
