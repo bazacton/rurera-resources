@@ -1797,6 +1797,10 @@ output {
         display: inline-flex;
         align-items: center;
     }
+    .apply-template-field:hover {
+        color: var(--blue);
+        text-decoration: underline;
+    }
     .defined-searches span strong {
         min-width: 100px;
         display: block;
