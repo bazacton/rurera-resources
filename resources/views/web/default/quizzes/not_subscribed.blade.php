@@ -33,7 +33,7 @@ $rand_id = rand(99,9999);
                         <div class="learning-content-box-icon">
                             <img src="/assets/default/img/quiz-start.webp" alt="downloadable icon">
                         </div>
-
+                        <h3 class="mb-10">Access Denied</h3>
                         <p>You are not subscribed for this</p>
 
                         <a href="/panel" class="btn btn-primary btn-sm mt-15">Return to Dashboard</a>
