@@ -248,6 +248,9 @@
 													Add Response
 												</a>
 											@else
+												<a href="/admin/questions-generator/add-response/{{ $AiApiCallObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
+													Add More Response
+												</a><br>
 												<a href="/admin/questions-generator/view-api-response/{{ $AiApiCallObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
 													Generate Questions
 												</a>

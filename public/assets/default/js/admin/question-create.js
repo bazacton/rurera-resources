@@ -393,9 +393,12 @@ function rureraform_builder_save(_object, question_status) {
         url: form_submit_url,//'update_builder_question',
         data: post_data,
         success: function (return_data) {
-			$('.question-builder-area[data-question_id="'+question_id+'"]').html('Question Generated Successfully! ('+question_id+')');
-			$('.question-builder-area[data-question_id="'+question_id+'"]').removeClass('question-builder-area');
-			$('.question-builder-layout[data-question_id="'+question_id+'"]').removeClass('question-builder-layout');
+			rureraform_sending = false;
+            Swal.fire({
+				icon: "success",
+				html: '<h3 class="font-20 text-center text-dark-blue">Updated Successfully!ss</h3>',
+				showConfirmButton: !1
+			});
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             jQuery(_object).find("i").attr("class", "far fa-save");
