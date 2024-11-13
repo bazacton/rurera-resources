@@ -606,6 +606,7 @@ Lms Responsive Style Start
     }
     .home-banner #change {white-space: inherit;}
     .learning-page .learning-content {height: auto;}
+    .question-layout-block .prev-next-controls {width: 100%; left: 0;}
 }
 
 @media screen and (min-width: 767px) and (max-width: 1600px) {
