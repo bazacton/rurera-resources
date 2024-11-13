@@ -819,7 +819,6 @@ scrollbar-gutter: stable both-edges;
 }
 .learning-page .learning-content {
 	height: calc(100vh - 105px);
-    padding-top: 50px;
 }
 /*Quistions Type Content Default Style End*/
 
