@@ -21,10 +21,10 @@ $rand_id = rand(99,9999);
 
         <div class="learning-page-content flex-grow-1 bg-info-light p-15">
             <div class="learning-content" id="learningPageContent">
-                <div class="learning-title">
+                <!-- <div class="learning-title">
                     <h3 class="mb-5"></h3>
                     <span class="font-12 font-weight-400 text-gray">Go to the quiz page for more information</span>
-                </div>
+                </div> -->
                 <div class="d-flex align-items-center justify-content-center w-100">
 
 
