@@ -62,9 +62,9 @@ if( $duration_type == 'total_practice'){
                             <div class="start-counter"></div>
 
                             <div class="learning-content start-btn-container hide" id="learningPageContent">
-                                <!-- <div class="learning-title">
+                                <div class="learning-title">
                                     <h3 class="mb-5"></h3>
-                                </div> -->
+                                </div>
                                 <div class="d-flex align-items-center justify-content-center w-100">
 
 
