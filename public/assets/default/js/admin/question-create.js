@@ -209,6 +209,7 @@ function rureraform_save(_object, question_status) {
     var topics_parts = $("[name='topics_parts[]']:checked").map(function() {
 		return $(this).val();
 	}).get();
+	var topic_part_item_id = $("[name='topic_part_item_id']:checked").val();
     var course_id = $("[name=course_id]").val();
     var chapter_id = $("[name=chapter_id]").val();
     var sub_chapter_id = $("[name=sub_chapter_id]").val();
@@ -259,7 +260,7 @@ function rureraform_save(_object, question_status) {
         "question_title": question_title,
         "search_tags": search_tags,
         "category_id": category_id,
-		"topics_parts" : topics_parts,
+		"topic_part_item_id" : topic_part_item_id,
         "course_id": course_id,
         "chapter_id": chapter_id,
         "sub_chapter_id": sub_chapter_id,
@@ -392,12 +393,9 @@ function rureraform_builder_save(_object, question_status) {
         url: form_submit_url,//'update_builder_question',
         data: post_data,
         success: function (return_data) {
-			rureraform_sending = false;
-            Swal.fire({
-				icon: "success",
-				html: '<h3 class="font-20 text-center text-dark-blue">' + saveSuccessLang + "</h3>",
-				showConfirmButton: !1
-			});
+			$('.question-builder-area[data-question_id="'+question_id+'"]').html('Question Generated Successfully! ('+question_id+')');
+			$('.question-builder-area[data-question_id="'+question_id+'"]').removeClass('question-builder-area');
+			$('.question-builder-layout[data-question_id="'+question_id+'"]').removeClass('question-builder-layout');
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             jQuery(_object).find("i").attr("class", "far fa-save");
