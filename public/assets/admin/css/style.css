@@ -1793,10 +1793,12 @@ output {
         padding: 5px 10px;
         border-radius: 3px;
         color: var(--primary);
-        text-decoration: underline;
         cursor: pointer;
         display: inline-flex;
         align-items: center;
+    }
+    .apply-template-field:hover {
+        text-decoration: underline;
     }
     .defined-searches span strong {
         min-width: 100px;
