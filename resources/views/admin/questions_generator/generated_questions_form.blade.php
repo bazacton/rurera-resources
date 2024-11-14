@@ -209,17 +209,18 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
 
 
  $("body").on("click", ".question-builder-layout", function (t) {
+	 var thisObj = $(this);
 	 var question_id = $(this).attr('data-question_id');
 	 $('.question-builder-area-default').html('');
 	 var loaderDiv = $('.edit-questions-tabs');
 	 var loaderDiv = $('.main-content');
-	 rurera_loader(loaderDiv, 'div');
+	 rurera_loader(thisObj, 'button');
 	 $.ajax({
 		type: "GET",
 		url: '/admin/questions-generator/generate_question_builder_layout',
 		data: {'question_id': question_id},
 		success: function (return_data) {
-			rurera_remove_loader(loaderDiv, 'button');
+			rurera_remove_loader(thisObj, 'button');
 			$('.question-builder-area').html('');
 			$('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
 		}
@@ -227,7 +228,35 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
  });
  
  $(".question-builder-layout.active").click();
+ 
+ $(document).on('click', '.move-up-keyword', function () {
+    var $block = $(this).closest('.keyword-item');
+    let $prev = $block.prev();
 
+    if ($prev.length) {
+        $block.insertBefore($prev);
+    }
+});
+function moveKeywordUp(button) {
+		let block = button.closest('.keyword-block');
+		let prev = block.previousElementSibling;
+		if (prev) block.parentNode.insertBefore(block, prev);
+	}
+
+	function moveKeywordDown(button) {
+		let block = button.closest('.keyword-block');
+		let next = block.nextElementSibling;
+		if (next) block.parentNode.insertBefore(next, block);
+	}
+	
+	$(document).on('click', '.remove-keyword', function () {
+		$(this).closest('.keyword-block').remove();
+		console.log($(this).closest('.keywords-section').find(".keyword-block").length);
+		if($(this).closest('.keywords-section').find(".keyword-block").length == 1){
+			$(this).closest('.keywords-section').find(".move-up-keyword").remove();
+			$(this).closest('.keywords-section').find(".move-down-keyword").remove();
+		}
+	});
 </script>
 
 @endpush
