@@ -543,7 +543,9 @@
         </div>
         <div class="modal-body">
             <div class="leave-option-content">
-            <span class="img-box"></span>
+            <span class="img-box">
+                <img src="/assets/default/img/leave-img.png" alt="">
+            </span>
             <h2>Are you sure you want to leave?</h2>
             <p>If you leave now, you won't get your free access to Atom.</p>
             <div class="leave-option-control">
