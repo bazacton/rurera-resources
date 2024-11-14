@@ -1754,7 +1754,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 /*Lms Choose Membership Model Style End*/
 
 /*Price-Packages Leave-Option Modal Style Start*/
-.leave-option-content .img-box {width: 100px; display: inline-block; margin: 0 auto 15px;}
+.leave-option-content .img-box {width: 100px; display: inline-block; margin: 0 auto 20px;}
 .leave-option-content .img-box img {max-width: 100%; object-fit: contain; max-height: max-content;}
 .leave-option-content {text-align: center;}
 .leave-option-control {gap: 10px;}

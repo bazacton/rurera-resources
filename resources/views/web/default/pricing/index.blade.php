@@ -543,11 +543,11 @@
                     <span class="img-box">
                         <img src="/assets/default/img/leave-img.png" height="556" width="213" alt="leave-image">
                     </span>
-                    <h2 class="mb-10">Are you sure you want to leave?</h2>
-                    <p class="mb-30">If you leave now, you won't get your free access to Atom.</p>
+                    <h2 class="mb-10">Wait! Don’t Miss Out on Your Free Access!</h2>
+                    <p class="mb-30">Leaving now means losing your complimentary access . Are you sure you want to continue?</p>
                     <div class="leave-option-control d-flex align-items-center justify-content-center">
-                        <button type="button" data-toggle="modal" data-target="#subscriptionModal" data-dismiss="modal">Leave</button>
-                        <button type="button">Stay</button>
+                        <button type="button" data-toggle="modal" data-target="#subscriptionModal" data-dismiss="modal">Leave Anyway</button>
+                        <button type="button">Keep My Free Access</button>
                     </div>
                 </div>
             </div>
