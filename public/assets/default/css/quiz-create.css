@@ -1187,7 +1187,8 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .question-explain-block textarea {width: 100%; border: 1px solid #ddd; padding: 10px; margin-bottom: 15px;}
 .edit-questions-tabs .question-keywords-block h3 {color: #333; font-size: 18px; margin: 0;}
 .edit-questions-tabs .rureraform-builder {border-radius: 0;}
-.edit-questions-tabs .rureraform-toolbars {border-radius: 5px 5px 0 0;}
+.edit-questions-tabs .rureraform-toolbars,
+.edit-questions-tabs .rureraform-toolbar {border-radius: 5px 5px 0 0;}
 /*Edit Questions Tabs style End admin/questions-generator/view-api-response*/
 
 /**************************************
