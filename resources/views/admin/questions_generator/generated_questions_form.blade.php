@@ -97,7 +97,7 @@ $rand_id = rand(999,99999);
 		@foreach( $questions_array as $questionData)
 		@php $status = isset( $questionData['status'] ) ? $questionData['status'] : 'waiting'; 
 		$class = 'question-builder-area';
-		if($status == 'deleted'){ $class = ''; }
+		if($status == 'deleted'){ $class = 'question-builder-area'; }
 		@endphp
 		@php $active_class = ($counter == 1)? 'show active' : ''; @endphp
 		
