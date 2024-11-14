@@ -1799,7 +1799,6 @@ output {
     }
     .apply-template-field:hover {
         color: var(--blue);
-        text-decoration: underline;
     }
     .defined-searches span strong {
         min-width: 100px;
