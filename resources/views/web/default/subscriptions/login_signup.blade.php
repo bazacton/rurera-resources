@@ -38,26 +38,26 @@
                     <div class="col-12 col-lg-6 col-md-6 col-sm-12">
 						<span class="form-label">First Name</span>
                         <div class="form-group">
-                            <div class="input-field"><input type="text" name="first_name" class="rurera-req-field" placeholder="First Name"/></div>
+                            <div class="input-field"><input type="text" name="first_name" disabled class="rurera-req-field" placeholder="First Name"/></div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 col-md-6 col-sm-12">
 						<span class="form-label">Last Name</span>
                         <div class="form-group">
-                            <div class="input-field"><input type="text" name="last_name" class="rurera-req-field" placeholder="Last Name"/></div>
+                            <div class="input-field"><input type="text" name="last_name" disabled class="rurera-req-field" placeholder="Last Name"/></div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 col-md-6 col-sm-12">
 						<span class="form-label">Email Address</span>
                         <div class="form-group">
-                            <div class="input-field"><input type="text" autocomplete="new-password" name="email" class="rurera-req-field rurera-email-field" placeholder="Email Address"/></div>
+                            <div class="input-field"><input type="text" autocomplete="new-password" name="email" disabled class="rurera-req-field rurera-email-field" placeholder="Email Address"/></div>
                         </div>
                     </div>
 
                     <div class="col-12 col-lg-6 col-md-6 col-sm-12">
 						<span class="form-label">Password</span>
                         <div class="form-group">
-                            <div class="input-field mb-15"><input type="password" name="password" placeholder="password" class="rurera-req-field password-field"/></div>
+                            <div class="input-field mb-15"><input type="password" name="password" disabled placeholder="password" class="rurera-req-field password-field"/></div>
                             <button id="generateBtn" class="rurera-hide">Generate Password</button>
                         </div>
                     </div>
