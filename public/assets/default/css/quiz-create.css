@@ -1191,6 +1191,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .rureraform-builder {border-radius: 0;}
 .edit-questions-tabs .rureraform-toolbars,
 .edit-questions-tabs .rureraform-toolbar {border-radius: 5px 5px 0 0;}
+.edit-questions-tabs .rureraform-form-editor .rureraform-form {padding: 0 10px;}
 /*Edit Questions Tabs style End admin/questions-generator/view-api-response*/
 
 /**************************************
