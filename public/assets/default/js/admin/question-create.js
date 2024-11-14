@@ -10333,3 +10333,22 @@ function have_images_function(){
         }
     });
 }
+
+$(document).on('click', '.reject-api-question', function () {
+    var question_id = $(this).attr('data-question_id');
+    jQuery.ajax({
+        type: "GET",
+        url: '/admin/questions-generator/'+question_id+'reject_api_question',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        data: {"question_id": question_id},
+        success: function (return_data) {
+            Swal.fire({
+				icon: "success",
+				html: '<h3 class="font-20 text-center text-dark-blue">Question Rejected successfully!</h3>',
+				showConfirmButton: !1
+			});
+        }
+    });
+});
