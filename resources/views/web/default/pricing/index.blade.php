@@ -542,13 +542,13 @@
             </button>
         </div>
         <div class="modal-body">
-            <div class="leave-option-content">
+            <div class="leave-option-content d-flex align-items-center justify-content-center">
             <span class="img-box">
-                <img src="/assets/default/img/leave-img.png" alt="">
+                <img src="/assets/default/img/leave-img.png" height="556" width="213" alt="leave-image">
             </span>
-            <h2>Are you sure you want to leave?</h2>
-            <p>If you leave now, you won't get your free access to Atom.</p>
-            <div class="leave-option-control">
+            <h2 class="mb-10">Are you sure you want to leave?</h2>
+            <p class="mb-30">If you leave now, you won't get your free access to Atom.</p>
+            <div class="leave-option-control d-flex align-items-center justify-content-center">
                 <a href="#">Leave</a>
                 <a href="#">Stay</a>
             </div>
