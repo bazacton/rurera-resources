@@ -11,20 +11,20 @@ $rand_id = rand(999,99999);
     <div class="section-body lms-quiz-create">
 		<input type="hidden" name="question_id" value="{{isset( $questionObj->id )? $questionObj->id : 0 }}">
 		<div class="row">
-									@php $question_status = ($questionObj->question_status != 'api_pending')? 'Generated' : ''; @endphp
-									@php $question_status = ($questionObj->question_status != 'Hard reject')? 'Rejected' : $question_status; @endphp
-									@if($question_status != '')
-									<div class="col-12 col-md-12 api-question-status">
-										<div class="alert alert-success" role="alert">
-										  <strong>{{$question_status}}</strong>
-										</div>
-									</div>		
-									@endif
+									
 									
                                     <div class="col-7 col-md-7">
 									
 										<div class="row">
-										
+										@php $question_status = ($questionObj->question_status != 'api_pending')? 'Generated' : ''; @endphp
+										@php $question_status = ($questionObj->question_status != 'Hard reject')? 'Rejected' : $question_status; @endphp
+										@if($question_status != '')
+										<div class="col-12 col-md-12 api-question-status">
+											<div class="alert alert-success" role="alert">
+											  <strong>{{$question_status}}</strong>
+											</div>
+										</div>		
+										@endif
 										<div class="col-lg-12 col-md-12 col-12">
 											<div class="form-group">
 												<label class="input-label">Question Title</label>
@@ -424,9 +424,9 @@ $rand_id = rand(999,99999);
                                                                         <span class="editable-content keyword-title-field" data-edit_field="keywords[{{$keywordObj->id}}][title]" contenteditable="true">{{$keywordObj->title}}</span>
                                                                         <input type="text" class="rurera-hide" name="keywords[{{$keywordObj->id}}][title]" value="{{$keywordObj->title}}">
                                                                         <div class="keyword-buttons">
-                                                                            <button type="button" class="move-up-keyword" onclick="moveKeywordUp(this)">↑</button>
-                                                                            <button type="button" class="move-down-keyword" onclick="moveKeywordDown(this)">↓</button>
-                                                                            <button type="button" class="remove-keyword" onclick="removeKeyword(this)">✖</button>
+                                                                            <button type="button" class="move-up-keyword" >↑</button>
+                                                                            <button type="button" class="move-down-keyword" >↓</button>
+                                                                            <button type="button" class="remove-keyword" >✖</button>
                                                                         </div>
                                                                     </div>
                                                                     <textarea cols="100" name="keywords[{{$keywordObj->id}}][description]" rows="5">{{$keywordObj->description}}</textarea>
@@ -690,25 +690,3 @@ $rand_id = rand(999,99999);
         </div>
     </div>
 </div>
-<script style="text/javascript">
-function moveKeywordUp(button) {
-		let block = button.closest('.keyword-block');
-		let prev = block.previousElementSibling;
-		if (prev) block.parentNode.insertBefore(block, prev);
-	}
-
-	function moveKeywordDown(button) {
-		let block = button.closest('.keyword-block');
-		let next = block.nextElementSibling;
-		if (next) block.parentNode.insertBefore(next, block);
-	}
-	
-	$(document).on('click', '.remove-keyword', function () {
-		$(this).closest('.keyword-block').remove();
-		console.log($(this).closest('.keywords-section').find(".keyword-block").length);
-		if($(this).closest('.keywords-section').find(".keyword-block").length == 1){
-			$(this).closest('.keywords-section').find(".move-up-keyword").remove();
-			$(this).closest('.keywords-section').find(".move-down-keyword").remove();
-		}
-	});
-</script>
