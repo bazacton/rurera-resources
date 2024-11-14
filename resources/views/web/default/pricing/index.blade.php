@@ -1,6 +1,7 @@
 @extends(getTemplate().'.layouts.app')
 
 @push('styles_top')
+    <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 @endpush
 
 @section('content')
