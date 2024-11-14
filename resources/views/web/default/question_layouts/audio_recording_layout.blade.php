@@ -1,5 +1,5 @@
 <div id="rureraform-element-{{$element_id}}" class="rureraform-element-{{$element_id}} rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="{{$elementObj->type}}">
-	<div id="button-container">
+	<div id="button-container" class="d-flex align-items-center">
 		<button id="startRecord" class="btn-icon">
 			<i class="fas fa-play"></i>
 		</button>
