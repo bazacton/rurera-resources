@@ -542,7 +542,7 @@
             </button>
         </div>
         <div class="modal-body">
-            <div class="leave-option-content d-flex align-items-center justify-content-center">
+            <div class="leave-option-content d-flex align-items-center justify-content-center flex-column">
             <span class="img-box">
                 <img src="/assets/default/img/leave-img.png" height="556" width="213" alt="leave-image">
             </span>
