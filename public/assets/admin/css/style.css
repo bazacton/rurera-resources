@@ -1775,7 +1775,7 @@ output {
     .defined-searches {
         display: flex;
         align-items: center;
-        margin-right: 10px;
+        gap: 10px;
         margin-bottom: 25px;
         background-color: #efefef;
         padding: 10px 130px 10px 10px;
