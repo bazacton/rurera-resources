@@ -81,11 +81,12 @@ $rand_id = rand(999,99999);
 		@php $counter = 1; @endphp
 		@foreach( $questions_array as $questionData)
 			@php $status = isset( $questionData['status'] ) ? $questionData['status'] : 'waiting'; 
-			if($status == 'deleted'){ continue; }
+			$class = 'question-builder-layout';
+			if($status == 'deleted'){ $class = '' }
 			@endphp
 			@php $question_id = isset( $questionData['question_id'] ) ? $questionData['question_id'] : 0; @endphp
 			@php $active_class = ($counter == 1)? 'active' : ''; @endphp
-			<button data-question_id="{{$question_id}}" class="question-builder-layout nav-link {{$active_class}}" id="nav-q{{$counter}}-tab" data-toggle="tab" data-target="#nav-q{{$counter}}" type="button" role="tab" aria-controls="nav-q{{$counter}}" aria-selected="true">Question {{$counter}}</button>
+			<button data-question_id="{{$question_id}}" class="{{$class}} nav-link {{$active_class}}" id="nav-q{{$counter}}-tab" data-toggle="tab" data-target="#nav-q{{$counter}}" type="button" role="tab" aria-controls="nav-q{{$counter}}" aria-selected="true">Question {{$counter}}</button>
 		@php $counter++; @endphp
 		@endforeach
 	@endif
@@ -95,13 +96,14 @@ $rand_id = rand(999,99999);
 		@php $counter = 1; @endphp
 		@foreach( $questions_array as $questionData)
 		@php $status = isset( $questionData['status'] ) ? $questionData['status'] : 'waiting'; 
-		if($status == 'deleted'){ continue; }
+		$class = 'question-builder-area';
+		if($status == 'deleted'){ $class = '' }
 		@endphp
 		@php $active_class = ($counter == 1)? 'show active' : ''; @endphp
 		
 		@php $question_id = isset( $questionData['question_id'] ) ? $questionData['question_id'] : 0; @endphp
-		<div data-question_id="{{$question_id}}" class="tab-pane fade {{$active_class}} question-builder-area" id="nav-q{{$counter}}" role="tabpanel" aria-labelledby="nav-q{{$counter}}-tab">
-			
+		<div data-question_id="{{$question_id}}" class="tab-pane fade {{$active_class}} {{$class}}" id="nav-q{{$counter}}" role="tabpanel" aria-labelledby="nav-q{{$counter}}-tab">
+			{{$question_id}} Deleted
 		</div>
 		@php $counter++; @endphp
 		@endforeach
