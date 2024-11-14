@@ -103,11 +103,13 @@ $rand_id = rand(999,99999);
 		@php $active_class = ($counter == 1)? 'show active' : ''; @endphp
 		
 		@php $question_id = isset( $questionData['question_id'] ) ? $questionData['question_id'] : 0; @endphp
+		@if($status == 'deleted')
 		<div data-question_id="{{$question_id}}" class="tab-pane fade {{$active_class}} {{$class}}" id="nav-q{{$counter}}" role="tabpanel" aria-labelledby="nav-q{{$counter}}-tab">
 				<div class="alert alert-danger" role="alert">
 				  <strong>{{$question_id}} Deleted</strong>
 				</div>	
 		</div>
+		@endif
 		@php $counter++; @endphp
 		@endforeach
 	@endif
@@ -229,19 +231,25 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
  
  $(".question-builder-layout.active").click();
  
- $(document).on('click', '.move-up-keyword', function () {
+$(document).on('click', '.move-up-keyword', function () {
     var $block = $(this).closest('.keyword-item');
-    let $prev = $block.prev();
-
+    var $prev = $block.prev('.keyword-item'); // Ensures you are moving only within keyword items
     if ($prev.length) {
         $block.insertBefore($prev);
     }
 });
-function moveKeywordUp(button) {
-		let block = button.closest('.keyword-block');
-		let prev = block.previousElementSibling;
-		if (prev) block.parentNode.insertBefore(block, prev);
-	}
+
+$(document).on('click', '.move-down-keyword', function () {
+    var $block = $(this).closest('.keyword-item');
+    var $next = $block.next('.keyword-item'); // Ensures you are moving only within keyword items
+    if ($next.length) {
+        $block.insertAfter($next);
+    }
+});
+
+$(document).on('click', '.remove-keyword', function () {
+	$(this).closest('.keyword-item').remove();
+});
 
 	function moveKeywordDown(button) {
 		let block = button.closest('.keyword-block');
@@ -249,14 +257,7 @@ function moveKeywordUp(button) {
 		if (next) block.parentNode.insertBefore(next, block);
 	}
 	
-	$(document).on('click', '.remove-keyword', function () {
-		$(this).closest('.keyword-block').remove();
-		console.log($(this).closest('.keywords-section').find(".keyword-block").length);
-		if($(this).closest('.keywords-section').find(".keyword-block").length == 1){
-			$(this).closest('.keywords-section').find(".move-up-keyword").remove();
-			$(this).closest('.keywords-section').find(".move-down-keyword").remove();
-		}
-	});
+	
 </script>
 
 @endpush
