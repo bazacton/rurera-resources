@@ -12,6 +12,8 @@
 		padding: 10px;
 	}
 	.defined-searches .apply-template-field {
+		margin-right: 10px;
+		padding-top: 9px;
 		display: inline-block;
 	}
 
@@ -155,7 +157,7 @@
 				$saved_templates = json_decode( $saved_templates );
 				$saved_templates = isset( $saved_templates->topics_search )? $saved_templates->topics_search : array();
 				@endphp
-				<div class="defined-searches mt-20 mb-0" style="display:none">
+				<div class="defined-searches mt-20" style="display:none">
 				<span><strong>Defined Searches:</strong></span>
 					@if( !empty( $saved_templates ) )
 						@foreach( $saved_templates  as $template_name => $template_data)
