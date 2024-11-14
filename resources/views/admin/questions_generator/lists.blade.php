@@ -158,7 +158,7 @@
 				$saved_templates = isset( $saved_templates->topics_search )? $saved_templates->topics_search : array();
 				@endphp
 				<div class="defined-searches mt-20" style="display:none">
-				<span><strong>Defined Searches:</strong></span>
+				<span><strong>Defined Searches:2222</strong></span>
 					@if( !empty( $saved_templates ) )
 						@foreach( $saved_templates  as $template_name => $template_data)
 							@php $template_array = json_decode($template_data); 
