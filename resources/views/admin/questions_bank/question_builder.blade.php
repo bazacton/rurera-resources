@@ -485,7 +485,7 @@ $rand_id = rand(999,99999);
             @include('admin.questions_bank.question_editor_fields_controls')
 
 
-            <div class="mt-5 mb-5 create-question-fields-block">
+            <div class="create-question-fields-block">
                 <button type="button" data-status="Submit for review" class="quiz-stage-builder-generate btn btn-primary">
                     Approve
                 </button>
