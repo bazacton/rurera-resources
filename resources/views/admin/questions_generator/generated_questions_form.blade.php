@@ -72,7 +72,7 @@ $rand_id = rand(999,99999);
 @php $save_type = isset( $questionObj->id )? 'update_question' : 'store_question'; @endphp
 
 @section('content')
-<h2>Edit Questions </h2>
+<h2>{{$AiApiCallObj->category->getTitleAttribute()}} / {{$AiApiCallObj->subject->getTitleAttribute()}} / {{$AiApiCallObj->chapter->getTitleAttribute()}} / {{$AiApiCallObj->subChapter->sub_chapter_title}}</h2>
 
 <!-- Edit-questions Tabs Start -->
 <div class="edit-questions-tabs">
