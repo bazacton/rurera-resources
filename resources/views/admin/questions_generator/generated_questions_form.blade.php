@@ -97,14 +97,14 @@ $rand_id = rand(999,99999);
 		@foreach( $questions_array as $questionData)
 		@php $status = isset( $questionData['status'] ) ? $questionData['status'] : 'waiting'; 
 		$class = 'question-builder-area';
-		if($status == 'deleted'){ $class = 'question-builder-area'; }
+		if($status == 'deleted'){ $class = 'question-builder-area-default'; }
 		@endphp
 		@php $active_class = ($counter == 1)? 'show active' : ''; @endphp
 		
 		@php $question_id = isset( $questionData['question_id'] ) ? $questionData['question_id'] : 0; @endphp
 		<div data-question_id="{{$question_id}}" class="tab-pane fade {{$active_class}} {{$class}}" id="nav-q{{$counter}}" role="tabpanel" aria-labelledby="nav-q{{$counter}}-tab">
-				<div class="alert alert-success" role="alert">
-				  <strong>{{$question_id}} Deleted
+				<div class="alert alert-danger" role="alert">
+				  <strong>{{$question_id}} Deleted</strong>
 				</div>	
 		</div>
 		@php $counter++; @endphp
@@ -209,6 +209,7 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
 
  $("body").on("click", ".question-builder-layout", function (t) {
 	 var question_id = $(this).attr('data-question_id');
+	 $('.question-builder-area-default').html('');
 	 var loaderDiv = $('.edit-questions-tabs');
 	 var loaderDiv = $('.main-content');
 	 rurera_loader(loaderDiv, 'div');
