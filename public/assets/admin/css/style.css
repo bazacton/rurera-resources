@@ -165,7 +165,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 }
 
 .form-group .control-label,
-.form-group > label {font-weight: 600; color: #cbcbcb; font-size: 14px; letter-spacing: .5px;}
+.form-group > label {font-weight: 600; color: #cbcbcb; font-size: 14px; letter-spacing: .5px; line-height: normal;}
 
 .form-group.floating-addon {position: relative;}
 
