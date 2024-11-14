@@ -546,7 +546,7 @@
                     <h2 class="mb-10">Are you sure you want to leave?</h2>
                     <p class="mb-30">If you leave now, you won't get your free access to Atom.</p>
                     <div class="leave-option-control d-flex align-items-center justify-content-center">
-                        <button type="button" data-toggle="modal" data-target="#demo-2" data-dismiss="modal">Leave</button>
+                        <button type="button" data-toggle="modal" data-target="#subscriptionModal" data-dismiss="modal">Leave</button>
                         <button type="button">Stay</button>
                     </div>
                 </div>
