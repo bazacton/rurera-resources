@@ -1775,7 +1775,7 @@ output {
     .defined-searches {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 0;
         margin-bottom: 25px;
         background-color: #efefef;
         padding: 10px 130px 10px 10px;
@@ -1806,6 +1806,7 @@ output {
     .defined-searches span strong {
         min-width: 100px;
         display: block;
+        margin-right: 10px;
     }
     /* Questions Defined Searches style end */
 
