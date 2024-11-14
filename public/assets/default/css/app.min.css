@@ -1591,6 +1591,7 @@ Lms Books Listing Style End
 .lms-choose-membership .book-form p a {font-weight: 600; padding: 0 5px;color: var(--primary);}
 .lms-choose-membership .subscription span {font-size: 16px;font-weight: 600;}
 .lms-choose-membership .subscription span a { font-weight: bold;color: var(--primary-hover);padding-left: 6px;text-transform: capitalize;}
+.lms-choose-membership .subscription span a:hover {text-decoration: underline;}
 .lms-choose-membership .book-form .secure-server {display: flex;justify-content: center;align-items: center;}
 .lms-choose-membership .book-form .secure-server figure svg {width: 26px;height: 36px;display: flex;fill: #7c7d7f;margin-right: 5px;}
 .lms-choose-membership .book-form .secure-server span {font-size: 12px;line-height: 14px;color: #7c7d7f;}
