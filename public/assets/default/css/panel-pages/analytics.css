@@ -3,7 +3,7 @@
 Analytics Page | Student Panel Style Start
 Sub Pages Style
 ************************/
-/*Sats Summary style start*/
+/*Analytics/Timestables/Result Sats Summary style start*/
 .sats-summary {margin: 0 0 50px; background-color: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #e2e8f0;}
 .chart-summary-fields .sats-summary {margin-bottom: 30px;}
 .sats-summary label {display: block; margin: 0 0 6px; line-height: normal; text-transform: uppercase; font-size: 14px;}
@@ -22,7 +22,7 @@ Sub Pages Style
 .chart-summary-fields .sats-summary [class*="col-"].bitcoin-box {background-color: initial;}
 .chart-summary-fields .sats-summary .score {color: #0d173b; font-size: 16px;}
 .chart-summary-fields .sats-summary [class*="col-"].bg-none {background-color: inherit; padding: 20px 0;}
-/*Sats Summary style End*/
+/*Analytics/Timestables/Result Sats Summary style End*/
 .analytics-header .header-text {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 0 1.25rem .75rem;}
 .analytics-header .header-text > span {width: 33.333%; text-align: right;}
 .analytics-header .header-text > span:first-child {text-align: left;}
