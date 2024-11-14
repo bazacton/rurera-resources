@@ -1175,6 +1175,7 @@ Questions Edit Page Fields style start
     --blue: #007bff;
 }
 body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
+.main-content:has(.edit-questions-tabs) {padding-top: 50px;}
 .edit-questions-tabs {margin: 30px 0 0;}
 .edit-questions-tabs .main-content {padding: 30px 0 0; margin: 0 -15px;}
 .edit-questions-tabs .nav {border-bottom: 1px solid #ddd; gap: 0 25px; display: flex; align-items: center;}
