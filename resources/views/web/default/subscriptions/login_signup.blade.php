@@ -5,11 +5,11 @@
         border: 1px solid #dd4343 !important;
     }
 </style>
-<div class="form-login-reading">
+<div class="form-login-reading pt-30">
     <div class="container">
         <form class="signup-form" method="post" action="/signup-submit" autoComplete='off'>
             {{ csrf_field() }}
-            <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center mb-30"><h1>Parent or guardian details</h1>
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center mb-30"><h1 class="font-40">Parent or guardian details</h1>
             <p>Please  set up your account</p></div>
             <div class="bg-white panel-border p-25 rounded-sm mt-30 mx-auto w-80">
             <div class="row">
