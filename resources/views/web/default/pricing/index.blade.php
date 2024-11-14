@@ -538,7 +538,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
-            <div class="modal-body">
+            <div class="modal-body p-30">
                 <div class="leave-option-content d-flex align-items-center justify-content-center flex-column">
                     <span class="img-box">
                         <img src="/assets/default/img/leave-img.png" height="556" width="213" alt="leave-image">
