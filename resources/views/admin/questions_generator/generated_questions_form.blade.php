@@ -103,11 +103,9 @@ $rand_id = rand(999,99999);
 		
 		@php $question_id = isset( $questionData['question_id'] ) ? $questionData['question_id'] : 0; @endphp
 		<div data-question_id="{{$question_id}}" class="tab-pane fade {{$active_class}} {{$class}}" id="nav-q{{$counter}}" role="tabpanel" aria-labelledby="nav-q{{$counter}}-tab">
-			<div class="col-12 col-md-12 api-question-status">
-				<div class="alert alert-danger" role="alert">
+				<div class="alert alert-success" role="alert">
 				  <strong>{{$question_id}} Deleted
-				</div>
-			</div>		
+				</div>	
 		</div>
 		@php $counter++; @endphp
 		@endforeach
