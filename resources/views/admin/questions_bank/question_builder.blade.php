@@ -38,7 +38,7 @@ $rand_id = rand(999,99999);
 												@enderror
 											</div>
 										</div>
-                                        <div class="col-lg-12 col-md-12 col-12">
+                                        <div class="col-lg-12 col-md-12 col-12 mb-30">
                                             <div class="hap-container">
                                                 <div class="hap-content">
                                                     <div class="hap-content-area">
