@@ -80,6 +80,9 @@ $rand_id = rand(999,99999);
 	@if(!empty( $questions_array) )
 		@php $counter = 1; @endphp
 		@foreach( $questions_array as $questionData)
+			@php $status = isset( $questionData['status'] ) ? $questionData['status'] : 'waiting'; 
+			if($status == 'deleted'){ continue; }
+			@endphp
 			@php $question_id = isset( $questionData['question_id'] ) ? $questionData['question_id'] : 0; @endphp
 			@php $active_class = ($counter == 1)? 'active' : ''; @endphp
 			<button data-question_id="{{$question_id}}" class="question-builder-layout nav-link {{$active_class}}" id="nav-q{{$counter}}-tab" data-toggle="tab" data-target="#nav-q{{$counter}}" type="button" role="tab" aria-controls="nav-q{{$counter}}" aria-selected="true">Question {{$counter}}</button>
@@ -91,6 +94,9 @@ $rand_id = rand(999,99999);
 	@if(!empty( $questions_array) )
 		@php $counter = 1; @endphp
 		@foreach( $questions_array as $questionData)
+		@php $status = isset( $questionData['status'] ) ? $questionData['status'] : 'waiting'; 
+		if($status == 'deleted'){ continue; }
+		@endphp
 		@php $active_class = ($counter == 1)? 'show active' : ''; @endphp
 		
 		@php $question_id = isset( $questionData['question_id'] ) ? $questionData['question_id'] : 0; @endphp
