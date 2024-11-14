@@ -12,6 +12,7 @@ $rand_id = rand(999,99999);
 		<input type="hidden" name="question_id" value="{{isset( $questionObj->id )? $questionObj->id : 0 }}">
 		<div class="row">
 									@php $question_status = ($questionObj->question_status != 'api_pending')? 'Generated' : ''; @endphp
+									@php $question_status = ($questionObj->question_status != 'Hard reject')? 'Rejected' : $question_status; @endphp
 									@if($question_status != '')
 									<div class="col-12 col-md-12 api-question-status">
 										<div class="alert alert-success" role="alert">
@@ -689,3 +690,25 @@ $rand_id = rand(999,99999);
         </div>
     </div>
 </div>
+<script style="text/javascript">
+function moveKeywordUp(button) {
+		let block = button.closest('.keyword-block');
+		let prev = block.previousElementSibling;
+		if (prev) block.parentNode.insertBefore(block, prev);
+	}
+
+	function moveKeywordDown(button) {
+		let block = button.closest('.keyword-block');
+		let next = block.nextElementSibling;
+		if (next) block.parentNode.insertBefore(next, block);
+	}
+	
+	$(document).on('click', '.remove-keyword', function () {
+		$(this).closest('.keyword-block').remove();
+		console.log($(this).closest('.keywords-section').find(".keyword-block").length);
+		if($(this).closest('.keywords-section').find(".keyword-block").length == 1){
+			$(this).closest('.keywords-section').find(".move-up-keyword").remove();
+			$(this).closest('.keywords-section').find(".move-down-keyword").remove();
+		}
+	});
+</script>
