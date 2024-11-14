@@ -1179,7 +1179,7 @@ Questions Edit Page Fields style start
 .edit-questions-tabs .nav {border-bottom: 1px solid #ddd; gap: 0 25px; display: flex; align-items: center; justify-content: center;}
 .edit-questions-tabs .nav .nav-link {border: 0; background-color: inherit; padding: 0 0 10px; font-weight: 600; font-size: 16px; border-bottom: 2px solid transparent; outline: none;}
 .edit-questions-tabs .nav .nav-link.active {color: var(--blue); border-bottom-color: var(--blue);}
-.edit-questions-tabs .tab-content {padding: 0;}
+.edit-questions-tabs .tab-content {padding: 30px 0 0;}
 .edit-questions-tabs .form-group {background-color: #fff; padding: 25px; border: 1px solid #ddd; border-radius: 5px;}
 .edit-questions-tabs .question-explain-block {background-color: #fff; border: 1px solid #ddd; border-radius: 5px; padding: 25px;}
 .edit-questions-tabs .question-explain-block textarea,
