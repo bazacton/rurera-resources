@@ -1800,6 +1800,9 @@ output {
     .apply-template-field:hover {
         color: var(--blue);
     }
+    .apply-template-field:hover a {
+        text-decoration: none;
+    }
     .defined-searches span strong {
         min-width: 100px;
         display: block;
