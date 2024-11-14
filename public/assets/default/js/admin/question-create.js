@@ -347,10 +347,10 @@ function rureraform_builder_save(_object, question_status) {
 	var keywordsArray = {}; // Initialize the object to store keyword data
 	$('[name^="keywords["]').each(function() {
 		var matches = $(this).attr('name').match(/keywords\[(\d+)\]\[(\w+)\]/);
+		pre(matches, 'matchesmatchesmatchesmatches');
 		if (matches) {
 			var id = matches[1];
 			var field = matches[2];
-			
 			if (!keywordsArray[id]) {
 				keywordsArray[id] = {}; // Initialize each id in the array if it doesn't exist
 			}
@@ -359,6 +359,7 @@ function rureraform_builder_save(_object, question_status) {
 		}
 	});
 	keywordsArray = JSON.stringify(keywordsArray);
+	pre(keywordsArray, 'keywordsArray');
 
     question_layout.find('.editor-field').each(function () {
         $.each($(this).data(), function (i) {

@@ -137,7 +137,7 @@ $rand_id = rand(999,99999);
                                                                 </div>
                                                                 <iframe data-loading="false" id="rureraform-import-style-iframe"
                                                                         name="rureraform-import-style-iframe" src="about:blank"
-                                                                        onload="rureraform_stylemanager_imported(this);"></iframe>
+                                                                        ></iframe>
                                                                 <form id="rureraform-import-style-form"
                                                                     enctype="multipart/form-data"
                                                                     method="post" target="rureraform-import-style-iframe"
@@ -428,11 +428,12 @@ $rand_id = rand(999,99999);
                                                                             <button type="button" class="move-down-keyword" >↓</button>
                                                                             <button type="button" class="remove-keyword" >✖</button>
                                                                         </div>
+																		<textarea cols="100" name="keywords[{{$keywordObj->id}}][description]" rows="5">{{$keywordObj->description}}</textarea>
                                                                     </div>
-                                                                    <textarea cols="100" name="keywords[{{$keywordObj->id}}][description]" rows="5">{{$keywordObj->description}}</textarea>
                                                                 @endforeach
                                                             @endif
                                                         </div>
+														<button type="button" class="btn btn-primary add-keyword-btn">Add keyword</button>
                                                 </div>
                                             </div>
 										</div>
