@@ -72,7 +72,8 @@ $rand_id = rand(999,99999);
 @php $save_type = isset( $questionObj->id )? 'update_question' : 'store_question'; @endphp
 
 @section('content')
-<h2>{{$AiApiCallObj->category->getTitleAttribute()}} / {{$AiApiCallObj->subject->getTitleAttribute()}} / {{$AiApiCallObj->chapter->getTitleAttribute()}} / {{$AiApiCallObj->subChapter->sub_chapter_title}}</h2>
+<span>{{$AiApiCallObj->category->getTitleAttribute()}} / {{$AiApiCallObj->subject->getTitleAttribute()}} / {{$AiApiCallObj->chapter->getTitleAttribute()}}</span>
+<h2>{{$AiApiCallObj->subChapter->sub_chapter_title}}</h2>
 
 <!-- Edit-questions Tabs Start -->
 <div class="edit-questions-tabs">
@@ -82,7 +83,7 @@ $rand_id = rand(999,99999);
 		@foreach( $questions_array as $questionData)
 			@php $status = isset( $questionData['status'] ) ? $questionData['status'] : 'waiting'; 
 			$class = 'question-builder-layout';
-			if($status == 'deleted'){ $class = ''; }
+			if($status == 'deleted'){ $class = 'question-builder-layout-default'; }
 			@endphp
 			@php $question_id = isset( $questionData['question_id'] ) ? $questionData['question_id'] : 0; @endphp
 			@php $active_class = ($counter == 1)? 'active' : ''; @endphp
