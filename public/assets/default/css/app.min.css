@@ -100,7 +100,7 @@ Main Header Style Start
 .navbar1 .navbar-categories-dropdown .dropdown-toggle:after {display: none;}
 .navbar1 .navbar-categories-dropdown .dropdown-menu {top: 10px;}
 .navbar1 .nav-item .nav-link,
-.navbar1 li .nav-link {font-size: 17px; text-align: center; color: #1328cb; padding: 10px 20px; transition: all 0.3s;}
+.navbar1 li .nav-link {font-size: 17px; text-align: center; color: #343434; padding: 10px 20px; transition: all 0.3s;}
 .register-btn {background: var(--primary); color: #fff; border-radius: 4px;}
 .register-btn:hover {color: #fff;}
 nav ul {margin-left: 0;}
