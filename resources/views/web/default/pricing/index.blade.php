@@ -535,25 +535,22 @@
 <div class="modal fade leave-option-modal" id="leave-option-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+                <span aria-hidden="true">&times;</span>
             </button>
-        </div>
-        <div class="modal-body">
-            <div class="leave-option-content d-flex align-items-center justify-content-center flex-column">
-            <span class="img-box">
-                <img src="/assets/default/img/leave-img.png" height="556" width="213" alt="leave-image">
-            </span>
-            <h2 class="mb-10">Are you sure you want to leave?</h2>
-            <p class="mb-30">If you leave now, you won't get your free access to Atom.</p>
-            <div class="leave-option-control d-flex align-items-center justify-content-center">
-                <a href="#">Leave</a>
-                <a href="#">Stay</a>
+            <div class="modal-body">
+                <div class="leave-option-content d-flex align-items-center justify-content-center flex-column">
+                    <span class="img-box">
+                        <img src="/assets/default/img/leave-img.png" height="556" width="213" alt="leave-image">
+                    </span>
+                    <h2 class="mb-10">Are you sure you want to leave?</h2>
+                    <p class="mb-30">If you leave now, you won't get your free access to Atom.</p>
+                    <div class="leave-option-control d-flex align-items-center justify-content-center">
+                        <a href="#">Leave</a>
+                        <a href="#">Stay</a>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
         </div>
     </div>
 </div>
