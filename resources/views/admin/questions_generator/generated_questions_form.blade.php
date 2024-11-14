@@ -253,12 +253,24 @@ $(document).on('click', '.remove-keyword', function () {
 	$(this).closest('.keyword-item').remove();
 });
 
-	function moveKeywordDown(button) {
-		let block = button.closest('.keyword-block');
-		let next = block.nextElementSibling;
-		if (next) block.parentNode.insertBefore(next, block);
-	}
-	
+$(document).on('click', '.add-keyword-btn', function () {
+    // Define the new keyword item HTML structure
+    var newKeywordItem = `
+        <div class="keyword-item">
+            <span class="editable-content keyword-title-field" data-edit_field="keywords[][title]" contenteditable="true">New Keyword</span>
+            <input type="text" class="rurera-hide" name="keywords[][title]" value="New Keyword">
+            <div class="keyword-buttons">
+                <button type="button" class="move-up-keyword">↑</button>
+                <button type="button" class="move-down-keyword">↓</button>
+                <button type="button" class="remove-keyword">✖</button>
+            </div>
+			<textarea cols="100" name="keywords[][description]" rows="5"></textarea>
+        </div>
+    `;
+
+    // Append the new keyword item to the keyword block
+    $('.keyword-block').append(newKeywordItem);
+});
 	
 </script>
 
