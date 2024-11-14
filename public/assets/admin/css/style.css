@@ -1782,6 +1782,9 @@ output {
         flex-wrap: wrap;
         position: relative;
     }
+    .card-body ~ .defined-searches {
+        margin-bottom: 0;
+    }
     .defined-searches .save-template {
         margin-left: auto;
         min-width: 110px;
