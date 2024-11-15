@@ -1367,7 +1367,8 @@ function pre(output_var, output_label = ''){
 
 $(document).on('click', '.copyable-text', function () {
 	// Get the content inside the <pre> tag
-	const promptText = document.querySelector('.copyable-text').innerText;
+	
+	const promptText = $(this).text();
 
 	// Create a temporary <textarea> element to copy text from
 	const tempTextarea = document.createElement('textarea');
