@@ -1197,6 +1197,8 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .rureraform-form-editor .rureraform-form {padding: 0 10px;}
 .edit-questions-tabs .nav .nav-link.generated {color: #47c363;}
 .edit-questions-tabs .nav .nav-link.rejected {color: #fc544b;}
+.edit-questions-tabs .nav .nav-link.active.generated {border-bottom-color: #47c363;}
+.edit-questions-tabs .nav .nav-link.active.rejected {border-bottom-color: #fc544b;}
 /*Edit Questions Tabs style End admin/questions-generator/view-api-response*/
 
 /**************************************
