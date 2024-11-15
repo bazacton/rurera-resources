@@ -1858,7 +1858,7 @@ output {
         min-width: 100px;
     }
     .topic-parts-data table tr td {
-        border: 2px dashed #ddd;
+        border: 2px dotted #ddd;
         padding-top: 10px !important;
         padding-bottom: 10px !important;
         height: auto !important;
