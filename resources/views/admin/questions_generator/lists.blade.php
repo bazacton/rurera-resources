@@ -36,11 +36,11 @@
 @section('content')
 <section class="section">
     <div class="section-header">
-        <h1>API Requests</h1>
+        <h1>AI prompt</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
             </div>
-            <div class="breadcrumb-item">API Requests</div>
+            <div class="breadcrumb-item">AI prompt</div>
         </div>
     </div>
 
@@ -264,6 +264,10 @@
 												<a href="/admin/questions-generator/view-api-response/{{ $AiApiCallObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
 													Generate Questions
 												</a>
+											@endif
+											@if( $AiApiCallObj->generated_questions == 0 && auth()->user()->isAdminRole())
+												<br>
+												@include('admin.includes.delete_button',['url' => '/admin/questions-generator/'.$AiApiCallObj->id.'/delete' , 'btnClass' => 'btn-sm'])
 											@endif
 										@endif
                                         @endcan
