@@ -28,8 +28,6 @@ $rand_id = rand(999,99999);
 												<strong>Question Rejected</strong>
 												<p>This question did not meet the required quality standards and was rejected.</p>
 											@endif
-											  <strong>{{$question_status}}</strong>
-											  
 											  
 											</div>
 										</div>		
