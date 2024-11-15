@@ -501,11 +501,11 @@ $rand_id = rand(999,99999);
 
 
             <div class="create-question-fields-block d-flex align-items-center">
-                <button type="button" data-status="Submit for review" class="quiz-stage-builder-generate btn btn-primary">
+                <button type="button" data-status="Submit for review" class="quiz-stage-builder-generate btn btn-primary font-16">
                     Approve
                 </button>
 				
-				 <button type="button" data-status="" data-question_id="{{isset( $questionObj->id )? $questionObj->id : 0 }}" class="reject-api-question btn btn-danger">
+				 <button type="button" data-status="" data-question_id="{{isset( $questionObj->id )? $questionObj->id : 0 }}" class="reject-api-question btn btn-danger font-16">
                     Reject
                 </button>
             </div>
