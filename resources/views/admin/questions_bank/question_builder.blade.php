@@ -706,3 +706,88 @@ $rand_id = rand(999,99999);
 </div>
 <script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
 <script src="/assets/vendors/summernote/summernote-table-headers.js"></script>
+<script>
+$(".summernote").summernote({
+			dialogsInBody: true,
+			tabsize: 2,
+			height: $(".summernote").attr('data-height') ?? 250,
+			fontNames: [],
+			toolbar: [
+				['style', ['style']],
+				['font', ['bold', 'underline']],
+				['para', ['paragraph', 'ul', 'ol']],
+				['table', ['table']],
+				['insert', ['link']],
+				['history', ['undo']],
+			],
+			callbacks: {
+				onPaste: function (e) {
+					e.preventDefault();
+
+					var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
+					var pastedData = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
+
+					// Create a temporary DOM element to parse the HTML
+					var tempDiv = document.createElement('div');
+					tempDiv.innerHTML = pastedData;
+
+					// Remove all tags except p, li, ol, ul, strong, u, headings, and table tags
+					function cleanTags(node) {
+						var allowedTags = ['P', 'LI', 'OL', 'UL', 'STRONG', 'U', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'TABLE', 'TR', 'TD', 'TH'];
+						var childNodes = Array.from(node.childNodes);
+						childNodes.forEach(function(child) {
+							if (child.nodeType === 1) { // Element Node
+								if (!allowedTags.includes(child.nodeName)) {
+									// Replace disallowed tags with their inner content
+									while (child.firstChild) {
+										node.insertBefore(child.firstChild, child);
+									}
+									node.removeChild(child);
+								} else {
+									// Allowed tag: Clean recursively
+									cleanTags(child);
+
+									// Remove all attributes from tables and their children
+									if (['TABLE', 'TR', 'TD', 'TH'].includes(child.nodeName)) {
+										while (child.attributes.length > 0) {
+											child.removeAttribute(child.attributes[0].name);
+										}
+									}
+								}
+							} else if (child.nodeType === 3) { // Text Node
+								// Do nothing for text nodes
+							} else {
+								// Remove any other type of node
+								node.removeChild(child);
+							}
+						});
+					}
+
+					// Remove all inline styles
+					var elementsWithStyles = tempDiv.querySelectorAll('[style]');
+					elementsWithStyles.forEach(function (element) {
+						element.removeAttribute('style');
+					});
+
+					// Remove HTML comments
+					function removeComments(node) {
+						var childNodes = Array.from(node.childNodes);
+						childNodes.forEach(function(child) {
+							if (child.nodeType === 8) { // Comment Node
+								node.removeChild(child);
+							} else if (child.nodeType === 1) {
+								removeComments(child);
+							}
+						});
+					}
+					removeComments(tempDiv);
+
+					// Clean unwanted tags
+					cleanTags(tempDiv);
+
+					// Insert the cleaned content into the editor
+					document.execCommand('insertHTML', false, tempDiv.innerHTML);
+				}
+			}
+		});
+</script>
