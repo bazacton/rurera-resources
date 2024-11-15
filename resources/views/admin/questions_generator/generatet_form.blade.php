@@ -564,8 +564,6 @@
 					value = formFields.filter('[name="' + name + '"]:checked').map(function() {
 						return $(this).val();
 					}).get();
-					console.log(name);
-					console.log(value);
 				} else if ($(this).is(':radio')) {
 					// Handle radio buttons (single selected value)
 					value = formFields.filter('[name="' + name + '"]:checked').val();
@@ -584,7 +582,7 @@
 						if (!formData[name]) {
 							formData[name] = [];
 						}
-						
+						formData[name] = [];
 						// Concatenate value(s) for this field
 						formData[name] = formData[name].concat(value);
 					} else {
