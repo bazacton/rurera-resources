@@ -20,16 +20,19 @@ $rand_id = rand(999,99999);
 										@php $question_status = ($questionObj->question_status == 'Hard reject')? 'Rejected' : $question_status; @endphp
 										@if($question_status != '')
 										<div class="col-12 col-md-12 api-question-status">
-											<div class="alert alert-success" role="alert">
+											
 											@if($questionObj->question_status == 'Submit for review')
+												<div class="alert alert-success" role="alert">
 												<strong>Successful Question</strong>
 												<p>Question has been successfully imported into the question bank, with question Id #{{$questionObj->id}}.</p>
+												</div>
 											@elseif($questionObj->question_status == 'Hard reject')
+												<div class="alert alert-danger" role="alert">
 												<strong>Question Rejected</strong>
 												<p>This question did not meet the required quality standards and was rejected.</p>
+												</div>
 											@endif
 											  
-											</div>
 										</div>		
 										@endif
 										<div class="col-lg-12 col-md-12 col-12">
@@ -418,7 +421,9 @@ $rand_id = rand(999,99999);
 										    <div class="question-explain-block">
 										
 										        <h3>Explanation</h3>
-										        <textarea name="question_solve" cols="100" id="question_solve" rows="5">{{ isset( $questionObj->question_solve )? $questionObj->question_solve : '' }}</textarea>
+												<textarea class="note-codable summernote" id="question_solve"
+                                                          name="question_solve"
+                                                          aria-multiline="true">{{ isset( $questionObj->question_solve )? $questionObj->question_solve : '' }}</textarea>
 				
                                             <div class="question-keywords-block">
                                                 <!-- Keywords Section -->

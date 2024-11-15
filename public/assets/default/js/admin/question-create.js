@@ -371,7 +371,8 @@ function rureraform_builder_save(_object, question_status) {
 
     });
     //var question_solve = $('#question_solve').summernote('code');
-	var question_solve = $('#question_solve').val();
+	//var question_solve = $('#question_solve').val();
+	var question_solve = $('#question_solve').summernote('code');
 
     question_layout.find('.editor-field').removeAttr("correct_answere");
     var question_layout = rureraform_encode64(JSON.stringify(question_layout.html()));
@@ -10339,7 +10340,7 @@ $(document).on('click', '.reject-api-question', function () {
     var question_id = $(this).attr('data-question_id');
     jQuery.ajax({
         type: "GET",
-        url: '/admin/questions-generator/'+question_id+'reject_api_question',
+        url: '/admin/questions-generator/'+question_id+'/reject_api_question',
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
