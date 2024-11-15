@@ -1760,6 +1760,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 .leave-option-control {gap: 10px;}
 .leave-option-control button {background-color: inherit; border: 1px solid var(--blue); color: var(--blue); padding: 8px 20px; border-radius: 5px; font-weight: 500;}
 .leave-option-control button:hover {background-color: var(--blue); color: var(--white);}
+.leave-option-control button.stay-btn {background-color: var(--blue); color: var(--white);}
 .leave-option-modal .close {position: absolute; right: 12px; top: 10px; z-index: 1;}
 /*Price-Packages Leave-Option Modal Style End*/
 
