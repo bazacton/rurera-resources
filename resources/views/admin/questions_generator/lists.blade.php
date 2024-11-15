@@ -201,7 +201,7 @@
 						</div>
                     @can('admin_topic_parts_create')
                         <div class="text-right">
-                            <a href="/admin/questions-generator/prompt" class="btn btn-primary">New API Request</a>
+                            <a href="/admin/questions-generator/prompt" class="btn btn-primary">Create Prompt</a>
                         </div>
                     @endcan
                     </div>
