@@ -1751,7 +1751,8 @@ output {
     /* Question Type List In A Row Style End */
 
     /* Note-Editable Order List Style Start */
-    .note-editable ul {
+    .note-editable ul,
+    .note-editable ol {
         padding-left: 25px;
     }
     /* Note-Editable Order List Style End */
