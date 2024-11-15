@@ -151,7 +151,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /* Input Number Arrows Hide Style Start */
 .input-holder input[type="number"]::-webkit-outer-spin-button,
 .input-holder input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
-.input-holder input[type="number"] {-moz-appearance:textfield;}
+.input-holder input[type="number"] {-moz-appearance:textfield; min-width: 100px;}
 /* Input Number Arrows Hide Style End */
 /* True False Style Start */
 .form-box.inline-fields .lms-radio-select {margin-bottom: 0;}
@@ -1037,7 +1037,7 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .note-editable .input-holder input[type="number"],
 .input-holder .input-label ~ input[type="number"] {text-align: right;}
 .input-holder .input-label ~ input.input-simple {padding: 0 5px 0 55px; min-height: 38px;}
-.input-holder .input-label:empty ~ input.input-simple {padding-left: 5px;}
+.input-holder .input-label:empty ~ input.input-simple {padding-left: 5px; min-height: auto;}
 .input-holder .input-label ~ input.input_line {min-height: auto; width: 100%;}
 .input-holder .input-label ~ input[type="number"].input-simple  {padding: 0 0 0 36px; text-align: left;}
 .input-holder .input-label.right ~ input[type="number"].input-simple {padding: 0 10px;}
