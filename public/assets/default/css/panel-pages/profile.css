@@ -129,7 +129,7 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .profile-view-data {margin: 0 -5px;}
 .profile-view-data > li {width: 50%; display: inline-block; margin-right: -4px; padding: 0 5px;}
 .edit-info-list li > a {border-bottom: 1px solid #ddd; flex-wrap: wrap;}
-.info-list-label {color: #94a3b8;}
+.info-list-label {color: #94a3b8; max-width: calc(100% - 70px); word-wrap: break-word;}
 .info-list-label strong {color: #475569; line-height: normal; padding-top: 2px;}
 .edit-icon {gap: 15px;}
 .edit-icon em {font-style: normal; color: var(--primary); visibility: hidden; opacity: 0; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out;}
