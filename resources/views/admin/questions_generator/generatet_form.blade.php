@@ -66,7 +66,7 @@
 		<div class="col-md-6 col-lg-6">
 			<div class="row">
 				<div class="col-md-12 col-lg-12">
-					<h2 class="font-20 font-weight-bold mb-15">Questions Generator</h2>
+					<h2 class="font-20 font-weight-bold mb-15 copyable-text">Questions Generator</h2>
 				</div>
 				<div class="col-md-12 col-lg-12 rurera-hide">
 					<div class="form-group">
