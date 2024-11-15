@@ -1037,6 +1037,7 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .note-editable .input-holder input[type="number"],
 .input-holder .input-label ~ input[type="number"] {text-align: right;}
 .input-holder .input-label ~ input.input-simple {padding: 0 5px 0 55px; min-height: 38px;}
+.input-holder .input-label:empty ~ input.input-simple {padding-left: 5px;}
 .input-holder .input-label ~ input.input_line {min-height: auto; width: 100%;}
 .input-holder .input-label ~ input[type="number"].input-simple  {padding: 0 0 0 36px; text-align: left;}
 .input-holder .input-label.right ~ input[type="number"].input-simple {padding: 0 10px;}
