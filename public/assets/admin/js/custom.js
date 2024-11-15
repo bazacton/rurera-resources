@@ -1280,6 +1280,8 @@ $(document).on('click', '.apply-template-field span', function () {
     // Handle radio and checkbox inputs
     if (parentForm.find('[name="'+name+'"]').attr('type') == 'radio' || parentForm.find('[name="'+name+'"]').attr('type') == 'checkbox') {
 			
+		pre(name, 'name');	
+		pre(selected_value, 'selected_value');
         if (Array.isArray(selected_value)) {
             // For checkboxes with multiple values
 			parentForm.find('[name="'+name+'"]').prop('checked', false);
@@ -1352,3 +1354,12 @@ function pre(output_var, output_label = ''){
 	console.log(output_var);
 	console.log(output_label+'-ends');
 }
+
+$(document).on('click', '.copyable-text', function () {
+    const text = $(this).text(); // Get the text content of the <p> element
+    navigator.clipboard.writeText(text).then(() => {
+        console.log('Text copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
+    });
+});
