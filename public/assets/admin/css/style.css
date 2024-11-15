@@ -1628,10 +1628,11 @@ Admin Questions Generator Page Style Start
     background-color: #f1f1f1;
     color: #333;
     font-size: 14px;
+    border: 2px solid transparent;
 }
 .list-group input[type="radio"]:checked + label,
 .list-group input[type="checkbox"]:checked + label {
-    border: 2px solid var(--blue);
+    border-color: var(--blue);
 }
 .range-output {
     display: flex;
