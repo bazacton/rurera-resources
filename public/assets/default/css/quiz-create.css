@@ -146,12 +146,12 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .input-holder input.input-simple {border: 0; background-color: #fcfcfc;}
 .question-result-layout .input-holder .input-simple {width: 100%; }
 [data-type="draggable_quiz"] .input-holder input[type="text"],
-[data-type="draggable_quiz"] .input-holder input.input-simple {field-sizing: content;}
+[data-type="draggable_quiz"] .input-holder input.input-simple {field-sizing: content; min-width: 80px;}
 /* Input Text Field Style End */
 /* Input Number Arrows Hide Style Start */
 .input-holder input[type="number"]::-webkit-outer-spin-button,
 .input-holder input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
-.input-holder input[type="number"] {-moz-appearance:textfield; min-width: 100px;}
+.input-holder input[type="number"] {-moz-appearance:textfield;}
 /* Input Number Arrows Hide Style End */
 /* True False Style Start */
 .form-box.inline-fields .lms-radio-select {margin-bottom: 0;}
