@@ -21,7 +21,16 @@ $rand_id = rand(999,99999);
 										@if($question_status != '')
 										<div class="col-12 col-md-12 api-question-status">
 											<div class="alert alert-success" role="alert">
+											@if($questionObj->question_status == 'Submit for review')
+												<strong>Successful Question</strong>
+												<p>Question has been successfully imported into the question bank, with question Id #{{$questionObj->id}}.</p>
+											@elseif($questionObj->question_status == 'Hard reject')
+												<strong>Question Rejected</strong>
+												<p>This question did not meet the required quality standards and was rejected.</p>
+											@endif
 											  <strong>{{$question_status}}</strong>
+											  
+											  
 											</div>
 										</div>		
 										@endif
