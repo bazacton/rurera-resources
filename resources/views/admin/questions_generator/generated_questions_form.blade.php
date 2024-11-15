@@ -70,7 +70,6 @@ $rand_id = rand(999,99999);
 @endpush
 
 @php $save_type = isset( $questionObj->id )? 'update_question' : 'store_question'; @endphp
-
 @section('content')
 <span>{{$AiApiCallObj->category->getTitleAttribute()}} / {{$AiApiCallObj->subject->getTitleAttribute()}} / {{$AiApiCallObj->chapter->getTitleAttribute()}}</span>
 <h2>{{$AiApiCallObj->subChapter->sub_chapter_title}}</h2>
@@ -87,7 +86,7 @@ $rand_id = rand(999,99999);
 			@endphp
 			@php $question_id = isset( $questionData['question_id'] ) ? $questionData['question_id'] : 0; @endphp
 			@php $active_class = ($counter == 1)? 'active' : ''; @endphp
-			<button data-question_id="{{$question_id}}" class="{{$class}} nav-link {{$active_class}}" id="nav-q{{$counter}}-tab" data-toggle="tab" data-target="#nav-q{{$counter}}" type="button" role="tab" aria-controls="nav-q{{$counter}}" aria-selected="true">{{$counter}}</button>
+			<button data-question_id="{{$question_id}}" class="{{$status}} {{$class}} nav-link {{$active_class}}" id="nav-q{{$counter}}-tab" data-toggle="tab" data-target="#nav-q{{$counter}}" type="button" role="tab" aria-controls="nav-q{{$counter}}" aria-selected="true">{{$counter}}</button>
 		@php $counter++; @endphp
 		@endforeach
 	@endif
@@ -109,7 +108,6 @@ $rand_id = rand(999,99999);
 				<div class="alert alert-danger" role="alert">
 				  <strong>{{$question_id}} Deleted</strong>
 				</div>	
-				
 			@endif
 		</div>
 		@php $counter++; @endphp

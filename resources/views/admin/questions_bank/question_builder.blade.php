@@ -17,11 +17,18 @@ $rand_id = rand(999,99999);
 									
 										<div class="row">
 										@php $question_status = ($questionObj->question_status != 'api_pending')? 'Generated' : ''; @endphp
-										@php $question_status = ($questionObj->question_status != 'Hard reject')? 'Rejected' : $question_status; @endphp
+										@php $question_status = ($questionObj->question_status == 'Hard reject')? 'Rejected' : $question_status; @endphp
 										@if($question_status != '')
 										<div class="col-12 col-md-12 api-question-status">
 											<div class="alert alert-success" role="alert">
-											  <strong>{{$question_status}}</strong>
+											@if($questionObj->question_status == 'Submit for review')
+												<strong>Successful Question</strong>
+												<p>Question has been successfully imported into the question bank, with question Id #{{$questionObj->id}}.</p>
+											@elseif($questionObj->question_status == 'Hard reject')
+												<strong>Question Rejected</strong>
+												<p>This question did not meet the required quality standards and was rejected.</p>
+											@endif
+											  
 											</div>
 										</div>		
 										@endif
