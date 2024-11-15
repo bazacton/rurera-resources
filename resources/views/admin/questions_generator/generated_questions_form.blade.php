@@ -210,19 +210,18 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
 	 var question_id = $(this).attr('data-question_id');
 	 var is_deleted = $(this).attr('data-is_deleted');
 	 $('.question-builder-area').html('');
-	 var loaderDiv = $('.edit-questions-tabs');
-	 var loaderDiv = $('.main-content');
+	 var loaderDiv = $('.tab-content');
 	 if(is_deleted == 'yes'){
 		 var return_data = '<div class="col-12 col-md-12 api-question-status"><div class="alert alert-danger" role="alert"><strong>Question Deleted</strong><p>Question was initially imported but has since been removed from the question bank.</p></div></div>';
 		 $('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
 	 }else{
-		 rurera_loader(thisObj, 'button');
+		 rurera_loader(loaderDiv, 'button');
 		 $.ajax({
 			type: "GET",
 			url: '/admin/questions-generator/generate_question_builder_layout',
 			data: {'question_id': question_id},
 			success: function (return_data) {
-				rurera_remove_loader(thisObj, 'button');
+				rurera_remove_loader(loaderDiv, 'button');
 				$('.question-builder-area').html('');
 				$('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
 			}
