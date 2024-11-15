@@ -109,7 +109,6 @@ $rand_id = rand(999,99999);
 				<div class="alert alert-danger" role="alert">
 				  <strong>{{$question_id}} Deleted</strong>
 				</div>	
-				
 			@endif
 		</div>
 		@php $counter++; @endphp

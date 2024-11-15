@@ -17,7 +17,7 @@ $rand_id = rand(999,99999);
 									
 										<div class="row">
 										@php $question_status = ($questionObj->question_status != 'api_pending')? 'Generated' : ''; @endphp
-										@php $question_status = ($questionObj->question_status != 'Hard reject')? 'Rejected' : $question_status; @endphp
+										@php $question_status = ($questionObj->question_status == 'Hard reject')? 'Rejected' : $question_status; @endphp
 										@if($question_status != '')
 										<div class="col-12 col-md-12 api-question-status">
 											<div class="alert alert-success" role="alert">
