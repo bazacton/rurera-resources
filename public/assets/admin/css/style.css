@@ -1622,7 +1622,7 @@ Admin Questions Generator Page Style Start
     display: none;
 }
 .list-group label {
-    padding: 8px 12px;
+    padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
     background-color: #f1f1f1;
