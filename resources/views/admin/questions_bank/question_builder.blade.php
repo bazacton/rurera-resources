@@ -456,10 +456,11 @@ $rand_id = rand(999,99999);
                                     <div class="col-5 col-md-5">
                                         <div class="lms-element-properties">
 										
-											<div class="topic-parts-block">
-												
+											<div class="row">
+												<div class="topic-parts-block" style="display:contents;">
+														
+												</div>
 											</div>
-										
 	
 										
                                             <div class="rureraform-admin-popup" id="rureraform-element-properties">

@@ -66,6 +66,33 @@ $rand_id = rand(999,99999);
 	margin: 5px 0px;
 	border:1px solid #ccc;
 }
+.similiarity-status {
+  display: inline-block; 
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px white;	
+}
+.rurera-danger{background-color:#fd2929 !important;}
+.rurera-warning{background-color:#ff973f !important;}
+.similiarity-status.danger{
+	background-color:#fd2929;
+}
+.similiarity-status.warning{
+	background-color:#ff973f;
+}
+.similiarity-item span{
+	padding: 5px;
+}
+.similiarity-question-index {
+    background: #27325e;
+    margin-right: 10px;
+    color: #fff;
+}
+.similiarity-item {
+    margin-bottom: 5px;
+}
 </style>
 @endpush
 
@@ -75,19 +102,26 @@ $rand_id = rand(999,99999);
 <h2>{{$AiApiCallObj->subChapter->sub_chapter_title}}</h2>
 
 <!-- Edit-questions Tabs Start -->
-<div class="edit-questions-tabs">
+<div class="edit-questions-tabs" data-similarities_array="{{$similarities_array}}">	
   <div class="nav" id="nav-tab" role="tablist">
 	@if(!empty( $questions_array) )
 		@php $counter = 1; @endphp
-		@foreach( $questions_array as $questionData)
+		@foreach( $questions_array as $question_index => $questionData)
 			@php $status = isset( $questionData['status'] ) ? $questionData['status'] : 'waiting'; 
 			$class = 'question-builder-layout';
 			$is_deleted = 'no';
 			if($status == 'deleted'){ $is_deleted = 'yes'; }
 			@endphp
 			@php $question_id = isset( $questionData['question_id'] ) ? $questionData['question_id'] : 0; @endphp
-			@php $active_class = ($counter == 1)? 'active' : ''; @endphp
-			<button data-question_id="{{$question_id}}" data-is_deleted="{{$is_deleted}}" class="{{$status}} {{$class}} nav-link {{$active_class}}" id="nav-q{{$counter}}-tab" data-toggle="tab" data-target="#nav-q{{$counter}}" type="button" role="tab" aria-controls="nav-q{{$counter}}" aria-selected="true">{{$counter}}</button>
+			@php $active_class = ($counter == 1)? 'active' : ''; 
+			$current_status = isset( $similarity_status[$counter] )? $similarity_status[$counter] : '';
+			$status_html = '';
+			if($current_status != ''){	
+				$status_html = '<span class="similiarity-status '.$current_status.'"></span><br>';
+			}
+			
+			@endphp
+			<button data-question_index="{{$counter}}" data-question_id="{{$question_id}}" data-is_deleted="{{$is_deleted}}" class="{{$status}} {{$class}} nav-link {{$active_class}}" id="nav-q{{$counter}}-tab" data-toggle="tab" data-target="#nav-q{{$counter}}" type="button" role="tab" aria-controls="nav-q{{$counter}}" aria-selected="true">{!!$status_html!!}{{$counter}}</button>
 		@php $counter++; @endphp
 		@endforeach
 	@endif
@@ -208,7 +242,23 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
  $("body").on("click", ".question-builder-layout", function (t) {
 	 var thisObj = $(this);
 	 var question_id = $(this).attr('data-question_id');
+	 var question_index = $(this).attr('data-question_index');
 	 var is_deleted = $(this).attr('data-is_deleted');
+	 var similarities_array = $('.edit-questions-tabs').attr('data-similarities_array');
+	 similarities_array = JSON.parse(similarities_array);
+	 current_similarities_array = [];
+	 if (similarities_array.hasOwnProperty(question_index)) {
+		 var current_similarities_array = similarities_array[question_index];
+	 }
+	 var similiarity_html = '';
+	 $.each(current_similarities_array, function (question_index, similiarity_value) {
+		 var status_class = '';
+		 status_class = (similiarity_value > 20)? 'rurera-warning' : status_class;
+		 status_class = (similiarity_value > 65)? 'rurera-danger' : status_class;
+		 similiarity_html	+= '<div class="col-4 col-md-4 similiarity-item"><span class="similiarity-question-index '+status_class+'">'+question_index+'</span><span class="similiarity-value">'+similiarity_value+'%</span></div>';
+	 });
+	 
+	 
 	 $('.question-builder-area').html('');
 	 var loaderDiv = $('.tab-content');
 	 if(is_deleted == 'yes'){
@@ -224,6 +274,9 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
 				rurera_remove_loader(loaderDiv, 'button');
 				$('.question-builder-area').html('');
 				$('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
+				$('.question-builder-area[data-question_id="'+question_id+'"]').find('.topic-parts-block').html(
+					similiarity_html
+				)
 			}
 		});
 	 }
