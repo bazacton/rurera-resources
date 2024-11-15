@@ -1270,17 +1270,27 @@ $(document).on('click', '.apply-template-field span', function () {
 		form_data.append($(this).attr('name'), ''); // Set value as empty or 'false' as needed
 	});
 	var jsonFormData = {};
+	pre(formDataObj['num_correct_answers'], 'formDataObj');	
 
 	form_data.forEach((value, key) => {
     var name = key;
 	if(name == '_token'){
 		return true;
 	}
+	
     var selected_value = formDataObj[name];
+	
     // Handle radio and checkbox inputs
     if (parentForm.find('[name="'+name+'"]').attr('type') == 'radio' || parentForm.find('[name="'+name+'"]').attr('type') == 'checkbox') {
-			
+		
+		if (name.endsWith('[]')) {
+			// Remove the "[]" from the field name for consistency
+			key_name = name.slice(0, -2);
+			var selected_value = formDataObj[key_name];
+		}			
+		
 		pre(name, 'name');	
+
 		pre(selected_value, 'selected_value');
         if (Array.isArray(selected_value)) {
             // For checkboxes with multiple values
@@ -1356,10 +1366,23 @@ function pre(output_var, output_label = ''){
 }
 
 $(document).on('click', '.copyable-text', function () {
-    const text = $(this).text(); // Get the text content of the <p> element
-    navigator.clipboard.writeText(text).then(() => {
-        console.log('Text copied to clipboard!');
-    }).catch(err => {
-        console.error('Failed to copy text: ', err);
-    });
+	// Get the content inside the <pre> tag
+	const promptText = document.querySelector('.copyable-text').innerText;
+
+	// Create a temporary <textarea> element to copy text from
+	const tempTextarea = document.createElement('textarea');
+	tempTextarea.value = promptText;
+	document.body.appendChild(tempTextarea);
+	
+	// Select the text and copy it
+	tempTextarea.select();
+	tempTextarea.setSelectionRange(0, 99999); // For mobile devices
+
+	try {
+		document.execCommand('copy');
+	} catch (error) {
+	}
+
+	// Remove the temporary <textarea> element
+	document.body.removeChild(tempTextarea);
 });
