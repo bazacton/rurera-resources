@@ -92,7 +92,7 @@ $rand_id = rand(999,99999);
 		@endforeach
 	@endif
   </div>
-  <div class="tab-content" id="nav-tabContent">
+  <div class="tab-content" id="nav-tabContent" style="min-height:500px;">
 	@if(!empty( $questions_array) )
 		@php $counter = 1; @endphp
 		@foreach( $questions_array as $questionData)
