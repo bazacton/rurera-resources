@@ -260,14 +260,14 @@
 							<div class="row-field">
 								<label class="custom-switch pl-0">
 									<label class="custom-switch-description mb-0 cursor-pointer" for="include_fact_integration">Fact Integration</label>
-									<input type="checkbox" name="include_fact_integration" id="include_fact_integration" value="1" class="custom-switch-input include_fact_integration" checked>
+									<input type="checkbox" name="include_fact_integration" id="include_fact_integration" value="1" class="custom-switch-input include_fact_integration">
 									<span class="custom-switch-indicator"></span>
 								</label>
 							</div>
 							<div class="row-field">
 								<label class="custom-switch pl-0">
 									<label class="custom-switch-description mb-0 cursor-pointer" for="example_question_switch">Example</label>
-									<input type="checkbox" name="example_question_switch" id="example_question_switch" value="1" class="custom-switch-input example_question_switch" checked>
+									<input type="checkbox" name="example_question_switch" id="example_question_switch" value="1" class="custom-switch-input example_question_switch">
 									<span class="custom-switch-indicator"></span>	
 								</label>
 							</div>
