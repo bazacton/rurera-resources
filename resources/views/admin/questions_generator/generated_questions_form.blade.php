@@ -82,11 +82,12 @@ $rand_id = rand(999,99999);
 		@foreach( $questions_array as $questionData)
 			@php $status = isset( $questionData['status'] ) ? $questionData['status'] : 'waiting'; 
 			$class = 'question-builder-layout';
-			if($status == 'deleted'){ $class = 'question-builder-layout-default'; }
+			$is_deleted = 'no';
+			if($status == 'deleted'){ $is_deleted = 'yes'; }
 			@endphp
 			@php $question_id = isset( $questionData['question_id'] ) ? $questionData['question_id'] : 0; @endphp
 			@php $active_class = ($counter == 1)? 'active' : ''; @endphp
-			<button data-question_id="{{$question_id}}" class="{{$status}} {{$class}} nav-link {{$active_class}}" id="nav-q{{$counter}}-tab" data-toggle="tab" data-target="#nav-q{{$counter}}" type="button" role="tab" aria-controls="nav-q{{$counter}}" aria-selected="true">{{$counter}}</button>
+			<button data-question_id="{{$question_id}}" data-is_deleted="{{$is_deleted}}" class="{{$status}} {{$class}} nav-link {{$active_class}}" id="nav-q{{$counter}}-tab" data-toggle="tab" data-target="#nav-q{{$counter}}" type="button" role="tab" aria-controls="nav-q{{$counter}}" aria-selected="true">{{$counter}}</button>
 		@php $counter++; @endphp
 		@endforeach
 	@endif
@@ -97,18 +98,12 @@ $rand_id = rand(999,99999);
 		@foreach( $questions_array as $questionData)
 		@php $status = isset( $questionData['status'] ) ? $questionData['status'] : 'waiting'; 
 		$class = 'question-builder-area';
-		if($status == 'deleted'){ $class = 'question-builder-area-default'; }
 		@endphp
 		@php $active_class = ($counter == 1)? 'show active' : ''; @endphp
 		
 		@php $question_id = isset( $questionData['question_id'] ) ? $questionData['question_id'] : 0; @endphp
 		<div data-question_id="{{$question_id}}" class="tab-pane fade {{$active_class}} {{$class}}" id="nav-q{{$counter}}" role="tabpanel" aria-labelledby="nav-q{{$counter}}-tab">
 		
-			@if($status == 'deleted')
-				<div class="alert alert-danger" role="alert">
-				  <strong>{{$question_id}} Deleted</strong>
-				</div>	
-			@endif
 		</div>
 		@php $counter++; @endphp
 		@endforeach
@@ -213,20 +208,26 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
  $("body").on("click", ".question-builder-layout", function (t) {
 	 var thisObj = $(this);
 	 var question_id = $(this).attr('data-question_id');
-	 $('.question-builder-area-default').html('');
+	 var is_deleted = $(this).attr('data-is_deleted');
+	 $('.question-builder-area').html('');
 	 var loaderDiv = $('.edit-questions-tabs');
 	 var loaderDiv = $('.main-content');
-	 rurera_loader(thisObj, 'button');
-	 $.ajax({
-		type: "GET",
-		url: '/admin/questions-generator/generate_question_builder_layout',
-		data: {'question_id': question_id},
-		success: function (return_data) {
-			rurera_remove_loader(thisObj, 'button');
-			$('.question-builder-area').html('');
-			$('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
-		}
-	});
+	 if(is_deleted == 'yes'){
+		 var return_data = '<div class="col-12 col-md-12 api-question-status"><div class="alert alert-danger" role="alert"><strong>Question Deleted</strong><p>Question was initially imported but has since been removed from the question bank.</p></div></div>';
+		 $('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
+	 }else{
+		 rurera_loader(thisObj, 'button');
+		 $.ajax({
+			type: "GET",
+			url: '/admin/questions-generator/generate_question_builder_layout',
+			data: {'question_id': question_id},
+			success: function (return_data) {
+				rurera_remove_loader(thisObj, 'button');
+				$('.question-builder-area').html('');
+				$('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
+			}
+		});
+	 }
  });
  
  $(".question-builder-layout.active").click();
