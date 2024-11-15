@@ -1416,6 +1416,8 @@ Lms Responsive Style Start
     .lms-radio-img .field-holder, .lms-radio-img.rurera-in-cols .field-holder, 
     .rurera-in-cols.image-top .field-holder:has(label img), 
     .rurera-in-row.image-top .field-holder:has(label img) {width: 100% !important;}
+    .activities-container {padding: 15px !important;}
+    .activities-container .filters-list {padding-right: 0;}
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
