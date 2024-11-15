@@ -541,7 +541,7 @@
             <div class="modal-body p-30">
                 <div class="leave-option-content d-flex align-items-center justify-content-center flex-column">
                     <span class="img-box">
-                        <img src="/assets/default/img/leave-img.png" height="556" width="213" alt="leave-image">
+                        <img src="/assets/default/img/leave-img.png" height="128" width="128" alt="leave-image">
                     </span>
                     <h2 class="mb-10">Wait! Don’t Miss Out on Your Free Access!</h2>
                     <p class="mb-30">Leaving now means losing your complimentary access . Are you sure you want to continue?</p>
