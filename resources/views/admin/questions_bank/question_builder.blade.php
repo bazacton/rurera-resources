@@ -7,6 +7,7 @@ $rand_id = rand(999,99999);
 @endphp
 
 <script src="/assets/default/js/admin/question-create.js?ver={{$rand_id}}"></script>
+<link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
 <section class="section form-class upload-path-rurera" data-question_save_type="update_builder_question" data-location="{{isset( $questionObj->id )? $questionObj->id : 0}}">
     <div class="section-body lms-quiz-create">
 		<input type="hidden" name="question_id" value="{{isset( $questionObj->id )? $questionObj->id : 0 }}">
@@ -20,16 +21,19 @@ $rand_id = rand(999,99999);
 										@php $question_status = ($questionObj->question_status == 'Hard reject')? 'Rejected' : $question_status; @endphp
 										@if($question_status != '')
 										<div class="col-12 col-md-12 api-question-status">
-											<div class="alert alert-success" role="alert">
+											
 											@if($questionObj->question_status == 'Submit for review')
+												<div class="alert alert-success" role="alert">
 												<strong>Successful Question</strong>
 												<p>Question has been successfully imported into the question bank, with question Id #{{$questionObj->id}}.</p>
+												</div>
 											@elseif($questionObj->question_status == 'Hard reject')
+												<div class="alert alert-danger" role="alert">
 												<strong>Question Rejected</strong>
 												<p>This question did not meet the required quality standards and was rejected.</p>
+												</div>
 											@endif
 											  
-											</div>
 										</div>		
 										@endif
 										<div class="col-lg-12 col-md-12 col-12">
@@ -418,7 +422,9 @@ $rand_id = rand(999,99999);
 										    <div class="question-explain-block">
 										
 										        <h3>Explanation</h3>
-										        <textarea name="question_solve" cols="100" id="question_solve" rows="5">{{ isset( $questionObj->question_solve )? $questionObj->question_solve : '' }}</textarea>
+												<textarea class="note-codable summernote" id="question_solve"
+                                                          name="question_solve"
+                                                          aria-multiline="true">{{ isset( $questionObj->question_solve )? $questionObj->question_solve : '' }}</textarea>
 				
                                             <div class="question-keywords-block">
                                                 <!-- Keywords Section -->
@@ -698,3 +704,90 @@ $rand_id = rand(999,99999);
         </div>
     </div>
 </div>
+<script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
+<script src="/assets/vendors/summernote/summernote-table-headers.js"></script>
+<script>
+$(".summernote").summernote({
+			dialogsInBody: true,
+			tabsize: 2,
+			height: $(".summernote").attr('data-height') ?? 250,
+			fontNames: [],
+			toolbar: [
+				['style', ['style']],
+				['font', ['bold', 'underline']],
+				['para', ['paragraph', 'ul', 'ol']],
+				['table', ['table']],
+				['insert', ['link']],
+				['history', ['undo']],
+			],
+			callbacks: {
+				onPaste: function (e) {
+					e.preventDefault();
+
+					var clipboardData = (e.originalEvent || e).clipboardData || window.clipboardData;
+					var pastedData = clipboardData.getData('text/html') || clipboardData.getData('text/plain');
+
+					// Create a temporary DOM element to parse the HTML
+					var tempDiv = document.createElement('div');
+					tempDiv.innerHTML = pastedData;
+
+					// Remove all tags except p, li, ol, ul, strong, u, headings, and table tags
+					function cleanTags(node) {
+						var allowedTags = ['P', 'LI', 'OL', 'UL', 'STRONG', 'U', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'TABLE', 'TR', 'TD', 'TH'];
+						var childNodes = Array.from(node.childNodes);
+						childNodes.forEach(function(child) {
+							if (child.nodeType === 1) { // Element Node
+								if (!allowedTags.includes(child.nodeName)) {
+									// Replace disallowed tags with their inner content
+									while (child.firstChild) {
+										node.insertBefore(child.firstChild, child);
+									}
+									node.removeChild(child);
+								} else {
+									// Allowed tag: Clean recursively
+									cleanTags(child);
+
+									// Remove all attributes from tables and their children
+									if (['TABLE', 'TR', 'TD', 'TH'].includes(child.nodeName)) {
+										while (child.attributes.length > 0) {
+											child.removeAttribute(child.attributes[0].name);
+										}
+									}
+								}
+							} else if (child.nodeType === 3) { // Text Node
+								// Do nothing for text nodes
+							} else {
+								// Remove any other type of node
+								node.removeChild(child);
+							}
+						});
+					}
+
+					// Remove all inline styles
+					var elementsWithStyles = tempDiv.querySelectorAll('[style]');
+					elementsWithStyles.forEach(function (element) {
+						element.removeAttribute('style');
+					});
+
+					// Remove HTML comments
+					function removeComments(node) {
+						var childNodes = Array.from(node.childNodes);
+						childNodes.forEach(function(child) {
+							if (child.nodeType === 8) { // Comment Node
+								node.removeChild(child);
+							} else if (child.nodeType === 1) {
+								removeComments(child);
+							}
+						});
+					}
+					removeComments(tempDiv);
+
+					// Clean unwanted tags
+					cleanTags(tempDiv);
+
+					// Insert the cleaned content into the editor
+					document.execCommand('insertHTML', false, tempDiv.innerHTML);
+				}
+			}
+		});
+</script>
