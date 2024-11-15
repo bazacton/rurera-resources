@@ -253,7 +253,7 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
 	 var similiarity_html = '';
 	 $.each(current_similarities_array, function (question_index, similiarity_value) {
 		 var status_class = '';
-		 status_class = (similiarity_value > 20)? 'rurera-warning' : status_class;
+		 status_class = (similiarity_value > 40)? 'rurera-warning' : status_class;
 		 status_class = (similiarity_value > 65)? 'rurera-danger' : status_class;
 		 similiarity_html	+= '<div class="col-4 col-md-4 similiarity-item"><span class="similiarity-question-index '+status_class+'">'+question_index+'</span><span class="similiarity-value">'+similiarity_value+'%</span></div>';
 	 });
