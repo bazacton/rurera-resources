@@ -1209,6 +1209,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .move-down-keyword:hover {background-color: inherit; outline: none;}
 .edit-questions-tabs .keywords-section .add-keyword-btn {border: 0; background-color: inherit; height: auto; color: var(--primary); text-decoration: underline;}
 .edit-questions-tabs .create-question-fields-block button {border: 1px solid var(--blue); color: var(--blue); background-color: inherit; box-shadow: none;}
+.edit-questions-tabs .create-question-fields-block button:focus {color: #fff;}
 /*Edit Questions Tabs style End admin/questions-generator/view-api-response*/
 
 /**************************************
