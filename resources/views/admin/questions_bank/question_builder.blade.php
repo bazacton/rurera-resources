@@ -484,7 +484,6 @@ $rand_id = rand(999,99999);
                                                     <div class="tab-pane fade py-0" id="topic-parts" role="tabpanel" aria-labelledby="topic-parts-tab">
                                                         <div class="lms-element-properties">
                                                             <div class="topic-parts-block">
-                                                            <h4> Topics Parts </h4>
                                                             <a href="javascript:;" class="add-part-modal">Add New Part</a>
                                                             <div class="topic-parts-options">
                                                                 <div class="form-field rureraform-cr-container-medium"> How Cells Get What They Need <input class="rureraform-checkbox-medium" type="checkbox" name="topic_part_item_id" id="topics_parts-875" value="875">
@@ -542,9 +541,6 @@ $rand_id = rand(999,99999);
                                                     <div class="tab-pane fade py-0" id="activity" role="tabpanel" aria-labelledby="activity-tab">
                                                         <div class="lms-dashboard-card">
                                                             <div class="lms-card-body">
-                                                                <div class="lms-card-title mb-15">
-                                                                    <h4 style="text-transform: capitalize;">Activity</h4>
-                                                                </div>
                                                                 <ul class="lms-card-timeline">
                                                                 <li class="lms-card-list active">
                                                                     <div class="lms-card-icons">
@@ -615,7 +611,6 @@ $rand_id = rand(999,99999);
 
                                                     <div class="tab-pane fade py-0" id="review" role="tabpanel" aria-labelledby="review-tab">
                                                         <div class="review-form">
-                                                            <h4>Review</h4>
                                                             <form>
                                                                 <div class="row">
                                                                     <div class="col-12">
