@@ -2005,6 +2005,9 @@ Admin Questions Generator Page Style End
     background-color: #fff;
     padding: 15px;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .similarity-content-block .similarity-content-tabs .lms-card-body {
     padding: 0;
@@ -2020,6 +2023,7 @@ Admin Questions Generator Page Style End
     position: relative;
     left: 0;
     top: 0;
+    overflow: visible;
 }
 .similarity-content-block .lms-dashboard-card .lms-card-icons img {
     height: 30px;
