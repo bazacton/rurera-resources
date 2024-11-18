@@ -455,65 +455,67 @@ $rand_id = rand(999,99999);
                                     </div>
                                     <div class="col-5 col-md-5">
 
-
-                                    <div id="accordion">
-                                        <h2 class="mb-20">Content Similarity</h2>
-                                        <div class="card">
-                                        <div class="card-header" id="headingOne">
-                                            <h5 class="mb-0">
-                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                <div class="d-flex justify-content-between w-100">
-                                                    <div class="similarity-serial blue">1</div>
-                                                    <div class="similarity-percentage blue">75%</div>
+                                        <div class="similarity-content-block">
+                                            <div id="accordion">
+                                                <h2 class="mb-20">Content Similarity</h2>
+                                                <div class="card">
+                                                <div class="card-header" id="headingOne">
+                                                    <h5 class="mb-0">
+                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <div class="d-flex justify-content-between w-100">
+                                                            <div class="similarity-serial blue">1</div>
+                                                            <div class="similarity-percentage blue">75%</div>
+                                                        </div>
+                                                    </button>
+                                                    </h5>
                                                 </div>
-                                            </button>
-                                            </h5>
+                                            
+                                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <h5>Title: This is the Title of Item 1</h5>
+                                                        <p>
+                                                            Description: This is the description of item 1. This section will contain more than 150 words of explanation about the first item, giving the user enough context about it. The content can go here, elaborating on what the item represents, how it works, or any other details that are necessary to fully understand the context. This is an extended explanation, providing all relevant details and information about item 1, so that users will know exactly what it is and why it matters.
+                                                        </p>
+                                                        <ul>
+                                                            <li>Option 1</li>
+                                                            <li>Option 2</li>
+                                                            <li>Option 3</li>
+                                                            <li>Option 4</li>
+                                                            <li>Option 5</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="card">
+                                                <div class="card-header" id="headingTwo">
+                                                    <h5 class="mb-0">
+                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <div class="d-flex justify-content-between w-100">
+                                                            <div class="similarity-serial red">2</div>
+                                                            <div class="similarity-percentage red">65%</div>
+                                                        </div>
+                                                    </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <h5>Title: This is the Title of Item 1</h5>
+                                                        <p>
+                                                            Description: This is the description of item 1. This section will contain more than 150 words of explanation about the first item, giving the user enough context about it. The content can go here, elaborating on what the item represents, how it works, or any other details that are necessary to fully understand the context. This is an extended explanation, providing all relevant details and information about item 1, so that users will know exactly what it is and why it matters.
+                                                        </p>
+                                                        <ul>
+                                                            <li>Option 1</li>
+                                                            <li>Option 2</li>
+                                                            <li>Option 3</li>
+                                                            <li>Option 4</li>
+                                                            <li>Option 5</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     
-                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                            <div class="card-body">
-                                                <h5>Title: This is the Title of Item 1</h5>
-                                                <p>
-                                                    Description: This is the description of item 1. This section will contain more than 150 words of explanation about the first item, giving the user enough context about it. The content can go here, elaborating on what the item represents, how it works, or any other details that are necessary to fully understand the context. This is an extended explanation, providing all relevant details and information about item 1, so that users will know exactly what it is and why it matters.
-                                                </p>
-                                                <ul>
-                                                    <li>Option 1</li>
-                                                    <li>Option 2</li>
-                                                    <li>Option 3</li>
-                                                    <li>Option 4</li>
-                                                    <li>Option 5</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        </div>
-                                        <div class="card">
-                                        <div class="card-header" id="headingTwo">
-                                            <h5 class="mb-0">
-                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                <div class="d-flex justify-content-between w-100">
-                                                    <div class="similarity-serial red">2</div>
-                                                    <div class="similarity-percentage red">65%</div>
-                                                </div>
-                                            </button>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                            <div class="card-body">
-                                                <h5>Title: This is the Title of Item 1</h5>
-                                                <p>
-                                                    Description: This is the description of item 1. This section will contain more than 150 words of explanation about the first item, giving the user enough context about it. The content can go here, elaborating on what the item represents, how it works, or any other details that are necessary to fully understand the context. This is an extended explanation, providing all relevant details and information about item 1, so that users will know exactly what it is and why it matters.
-                                                </p>
-                                                <ul>
-                                                    <li>Option 1</li>
-                                                    <li>Option 2</li>
-                                                    <li>Option 3</li>
-                                                    <li>Option 4</li>
-                                                    <li>Option 5</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
                                         <div class="lms-element-properties">
 										
 											<div class="row">
