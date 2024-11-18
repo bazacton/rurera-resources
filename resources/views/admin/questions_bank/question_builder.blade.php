@@ -659,6 +659,15 @@ $rand_id = rand(999,99999);
                                                                             </label>
                                                                         </div>
                                                                     </div>
+                                                                    <div class="col-12">
+                                                                        <div class="form-group">
+                                                                            <label class="custom-switch pl-0">
+                                                                                <input type="checkbox" name="publish" id="publish" value="1" class="custom-switch-input">
+                                                                                <span class="custom-switch-indicator"></span>
+                                                                                <label class="custom-switch-description mb-0 cursor-pointer" for="publish">Publish</label>
+                                                                            </label>
+                                                                        </div> 
+                                                                    </div>
                                                                 </div>
                                                             </form>
                                                         </div>
