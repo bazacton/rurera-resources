@@ -2006,7 +2006,6 @@ Admin Questions Generator Page Style End
     padding: 15px;
     border-radius: 20px;
     display: flex;
-    align-items: center;
     gap: 10px;
     width: 100%;
 }
