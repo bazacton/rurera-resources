@@ -1970,7 +1970,7 @@ Admin Questions Generator Page Style End
 .similarity-content-block ul {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 .similarity-content-block ul li {
