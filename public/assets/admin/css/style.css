@@ -1964,6 +1964,10 @@ Admin Questions Generator Page Style End
     color: var(--red);
 }
 .similarity-serial {
+    display: inline-flex;
+    align-items: center;
+}
+.similarity-serial span {
     height: 30px;
     width: 30px;
     color: #fff;
@@ -1973,11 +1977,11 @@ Admin Questions Generator Page Style End
     border-radius: 100%;
     margin-right: 15px;
 }
-.similarity-serial.blue {
+.similarity-serial.blue span {
     background-color: var(--blue);
 }
 
-.similarity-serial.red {
+.similarity-serial.red span {
     background-color: var(--red);
 }
 .heading-info {
