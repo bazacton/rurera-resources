@@ -629,9 +629,9 @@ $rand_id = rand(999,99999);
                                                                     <div class="col-12">
                                                                         <div class="form-group">
                                                                             <label class="custom-switch pl-0">
-                                                                                <label class="custom-switch-description mb-0 cursor-pointer" for="include_intro_text">Image Question</label>
-                                                                                <input type="checkbox" name="include_intro_text" id="include_intro_text" value="1" class="custom-switch-input include_intro_text" checked="">
+                                                                                <input type="checkbox" name="image-question" id="image-question" value="1" class="custom-switch-input">
                                                                                 <span class="custom-switch-indicator"></span>
+                                                                                <label class="custom-switch-description mb-0 cursor-pointer" for="image-question">Image Question</label>
                                                                             </label>
                                                                         </div>
                                                                     </div>
