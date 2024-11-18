@@ -1963,6 +1963,8 @@ Admin Questions Generator Page Style End
     display: inline-flex;
     align-items: center;
     text-align: left;
+    font-size: 14px;
+    letter-spacing: -0.2px;
 } 
 .similarity-serial.red span {
     background-color: var(--red);
