@@ -1984,6 +1984,14 @@ Admin Questions Generator Page Style End
     color: #bbb;
     font-weight: 600;
 }
+.similarity-content-block .similarity-content-tabs .lms-card-body {
+    padding: 0;
+    background-color: inherit;
+}
+.similarity-content-block .lms-dashboard-card .lms-card-timeline {
+    border-left: 0;
+    margin-left: 0;
+}
 .similarity-content-block .lms-dashboard-card .lms-card-list {
     padding-bottom: 10px;
 }
