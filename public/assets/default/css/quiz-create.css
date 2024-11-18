@@ -812,6 +812,7 @@ scrollbar-gutter: stable both-edges;
 .question-layout .rureraform-element {
 	outline: 0 !important;
 	padding-top: 0;
+    padding-left: 0;
 }
 .question-layout .rureraform-element:has(select) {
 	line-height: 56px;
