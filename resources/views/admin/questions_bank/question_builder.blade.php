@@ -668,6 +668,12 @@ $rand_id = rand(999,99999);
                                                                             </label>
                                                                         </div> 
                                                                     </div>
+                                                                    <div class="col-12">
+                                                                        <div class="form-group">
+                                                                            <label>Details</label>
+                                                                            <textarea class="form-control w-100" rows="4"></textarea>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </form>
                                                         </div>
