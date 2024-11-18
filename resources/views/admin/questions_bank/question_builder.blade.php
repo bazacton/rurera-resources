@@ -551,7 +551,7 @@ $rand_id = rand(999,99999);
                                                                         <img src="/assets/default/svgs/calendar.svg" alt="calendar icon" height="65" width="65">
                                                                     </div>
                                                                     <div class="lms-card-info">
-                                                                    <h5>Reviewer Demo @ <b>18 Nov 24 | 13:08 <span>
+                                                                    <h5>Reviewer Demo @ 18 Nov 24 | 13:08 <span>
                                                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
                                                                             <line x1="5" y1="12" x2="19" y2="12"></line>
                                                                             <polyline points="12 5 19 12 12 19"></polyline>
@@ -567,7 +567,7 @@ $rand_id = rand(999,99999);
                                                                         <img src="/assets/default/svgs/calendar.svg" alt="calendar icon" height="65" width="65">
                                                                     </div>
                                                                     <div class="lms-card-info">
-                                                                        <h5>Javy @ <b>18 Nov 24 | 13:02 <span>
+                                                                        <h5>Javy @ 18 Nov 24 | 13:02 <span>
                                                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
                                                                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                                                                 <polyline points="12 5 19 12 12 19"></polyline>
