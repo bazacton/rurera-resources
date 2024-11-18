@@ -456,10 +456,38 @@ $rand_id = rand(999,99999);
                                     <div class="col-5 col-md-5">
 
                                         <div class="similarity-content-block mb-30">
-                                            <div id="accordion">
-                                                <h3 class="font-20 font-weight-bold mb-20 text-dark">Content Similarity</h3>
-												<div class="similarity-content-block-data">
-												</div>
+                                            <h3 class="font-20 font-weight-bold mb-20 text-dark">Content Similarity</h3>
+                                            <div class="similarity-content-tabs">
+                                                <ul class="nav" id="myTab" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active" id="Similarity-tab" data-toggle="tab" data-target="#Similarity" type="button" role="tab" aria-controls="Similarity" aria-selected="false">Similarity content</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="review-tab" data-toggle="tab" data-target="#review" type="button" role="tab" aria-controls="review" aria-selected="true">Review</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="topic-parts-tab" data-toggle="tab" data-target="#topic-parts" type="button" role="tab" aria-controls="topic-parts" aria-selected="false">Topic Parts</button>
+                                                    </li>
+                                                    
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="activity-tab" data-toggle="tab" data-target="#activity" type="button" role="tab" aria-controls="activity" aria-selected="false">Activity content</button>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content" id="myTabContent">
+
+                                                    <div class="tab-pane fade show active" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
+                                                        <div id="accordion">
+                                                            <div class="similarity-content-block-data"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="topic-parts" role="tabpanel" aria-labelledby="topic-parts-tab"></div>
+                                                    
+                                                    <div class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="activity-tab"></div>
+
+                                                    <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab"></div>
+
+                                                </div>
                                             </div>
                                         </div>
                                     
