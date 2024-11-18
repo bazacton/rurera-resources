@@ -1984,11 +1984,6 @@ Admin Questions Generator Page Style End
     color: #bbb;
     font-weight: 600;
 }
-.similarity-content-block .lms-dashboard-card .lms-card-list {
-    padding-bottom: 15px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 5px;
-}
 .edit-questions-tabs .similarity-content-tabs .form-group {
     padding: 0;
     border: 0;
@@ -2004,6 +1999,12 @@ Admin Questions Generator Page Style End
 .topic-parts-block .form-field label:hover {
     border-width: 1px;
     border-radius: 5px;
+}
+.similarity-content-block .lms-dashboard-card .lms-card-list {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
 }
 .similarity-content-block .similarity-content-tabs .lms-card-body {
     padding: 0;
