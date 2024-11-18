@@ -1936,7 +1936,7 @@ Admin Questions Generator Page Style End
 }
 .upload-path-rurera .lms-quiz-create .card .card-body {
     border: 0;
-    padding: 20px 0 15px;
+    padding: 10px 0 15px;
 }
 .upload-path-rurera .card .card-header .btn-link:after {
     position: absolute;
@@ -1978,9 +1978,6 @@ Admin Questions Generator Page Style End
 
 .similarity-serial.red {
     background-color: var(--red);
-}
-.upload-path-rurera .collapse {
-    border-top: 1px solid #ddd;
 }
 .heading-info {
     display: inline-flex;
