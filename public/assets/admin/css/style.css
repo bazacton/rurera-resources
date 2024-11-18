@@ -1904,23 +1904,23 @@ Admin Questions Generator Page Style End
 *********************/
 
 /* topic-parts accordions style start */
-.upload-path-rurera .similiarity-item {
+.similarity-content-block .similiarity-item {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
 }
-.upload-path-rurera .card {
+.similarity-content-block .card {
     box-shadow: 0 2px 5px 2px rgba(0,0,0,0.1);
     padding: 10px 20px 0 20px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
-.upload-path-rurera .card .card-header {
+.similarity-content-block .card .card-header {
     width: 100%;
     padding: 5px 0 15px;
     min-height: auto;
 }
-.upload-path-rurera .card .card-header .btn-link {
+.similarity-content-block .card .card-header .btn-link {
     padding: 0;
     width: 100%;
     position: relative;
@@ -1931,14 +1931,14 @@ Admin Questions Generator Page Style End
     text-decoration: none;
     outline: none;
 }
-.upload-path-rurera .card .card-header h5 {
+.similarity-content-block .card .card-header h5 {
     width: 100%;
 }
-.upload-path-rurera .lms-quiz-create .card .card-body {
+.similarity-content-block .lms-quiz-create .card .card-body {
     border: 0;
     padding: 10px 0 15px;
 }
-.upload-path-rurera .card .card-header .btn-link:after {
+.similarity-content-block .card .card-header .btn-link:after {
     position: absolute;
     right: -20px;
     top: 50%;
@@ -1952,10 +1952,10 @@ Admin Questions Generator Page Style End
     margin-top: -4px;
     opacity: 0;
 }
-.upload-path-rurera .card .card-header .btn-link.collapsed:after {
+.similarity-content-block .card .card-header .btn-link.collapsed:after {
     transform: rotate(-135deg);
 }
-.upload-path-rurera .similarity-percentage {margin-left: auto;}
+.similarity-content-block .similarity-percentage {margin-left: auto;}
 .similarity-percentage.blue {
     color: var(--blue);
 }
