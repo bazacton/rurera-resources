@@ -463,7 +463,7 @@ $rand_id = rand(999,99999);
                                                     <h5 class="mb-0">
                                                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                         <div class="d-flex justify-content-between w-100">
-                                                            <div class="similarity-serial blue">
+                                                            <div class="similarity-serial blue font-16">
                                                                 <span>1</span>
                                                                 Title: This is the Title of Item 1
                                                             </div>
@@ -493,7 +493,7 @@ $rand_id = rand(999,99999);
                                                     <h5 class="mb-0">
                                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                         <div class="d-flex justify-content-between w-100">
-                                                            <div class="similarity-serial red">
+                                                            <div class="similarity-serial red font-16">
                                                                 <span>2</span>
                                                                 Title: This is the Title of Item 1
                                                             </div>
