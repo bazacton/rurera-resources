@@ -2017,5 +2017,12 @@ Admin Questions Generator Page Style End
 .similarity-content-block .lms-dashboard-card .lms-card-list.active .lms-card-icons {
     -webkit-animation: none;
     animation: none;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.similarity-content-block .lms-dashboard-card .lms-card-icons img {
+    height: 30px;
+    width: 30px;
 }
 /* Similarity Content Tabs style start */
