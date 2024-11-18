@@ -2037,6 +2037,13 @@ Admin Questions Generator Page Style End
     left: 0;
     top: 0;
     overflow: visible;
+    border: 1px solid #8af68a;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
 }
 .similarity-content-block .lms-dashboard-card .lms-card-icons img {
     height: 30px;
