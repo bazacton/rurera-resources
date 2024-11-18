@@ -552,7 +552,7 @@ $rand_id = rand(999,99999);
                                                                         </div>
                                                                         <div class="lms-card-info">
                                                                         <h5>Reviewer Demo @ <span class="activity-date">18 Nov 24 | 13:08</span></h5>
-                                                                        <p>Status Updated - <span class="activity-status">Improvement required</span></p>
+                                                                        <p>Status Updated : <span class="activity-status">Improvement required</span></p>
                                                                         <p>Please improve&nbsp;</p>
                                                                         </div>
                                                                     </li>
