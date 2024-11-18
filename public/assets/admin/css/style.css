@@ -1944,17 +1944,14 @@ Admin Questions Generator Page Style End
 }
 .similarity-content-block .similarity-percentage {
     margin-right: 15px;
-    padding: 5px 8px;
     line-height: normal;
     border-radius: 3px;
 }
 .similarity-percentage.blue {
-    color: #fff;
-    background-color: var(--blue);
+    color: var(--blue);
 }
 .similarity-percentage.red {
-    background-color: var(--red);
-    color: #fff;
+    color: var(--red);
 }
 .similarity-serial {
     display: inline-flex;
