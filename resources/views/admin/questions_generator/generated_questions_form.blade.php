@@ -98,8 +98,12 @@ $rand_id = rand(999,99999);
 
 @php $save_type = isset( $questionObj->id )? 'update_question' : 'store_question'; @endphp
 @section('content')
+@if($QuestionsBulkListObj->quiz_id > 0)
+	<h2>{{$QuestionsBulkListObj->quizData->getTitleAttribute()}}</h2>
+@else
 <span>{{$QuestionsBulkListObj->category->getTitleAttribute()}} / {{$QuestionsBulkListObj->subject->getTitleAttribute()}} / {{$QuestionsBulkListObj->chapter->getTitleAttribute()}}</span>
 <h2>{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</h2>
+@endif
 <!-- Edit-questions Tabs Start -->
 <div class="edit-questions-tabs" data-similarities_array="{{$similarities_array}}" data-similiarity_responses="{{$similiarity_responses}}">	
   <div class="nav" id="nav-tab" role="tablist">
