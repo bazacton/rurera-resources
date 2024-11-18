@@ -1903,7 +1903,7 @@ output {
 Admin Questions Generator Page Style End
 *********************/
 
-/* topic-parts accordions style start */
+/* Similarity Content Tabs style start */
 .similarity-content-block .similiarity-item {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -1981,4 +1981,8 @@ Admin Questions Generator Page Style End
     color: #bbb;
     font-weight: 600;
 }
-/* topic-parts accordions style start */
+.similarity-content-tabs .lms-card-body {
+    padding: 0;
+    background-color: inherit;
+}
+/* Similarity Content Tabs style start */
