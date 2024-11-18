@@ -1954,6 +1954,7 @@ Admin Questions Generator Page Style End
 .similarity-serial {
     display: inline-flex;
     align-items: center;
+    text-align: left;
 }
 .similarity-serial span {
     height: 30px;
