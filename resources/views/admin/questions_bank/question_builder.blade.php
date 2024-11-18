@@ -613,7 +613,23 @@ $rand_id = rand(999,99999);
                                                         </div>
                                                     </div>
 
-                                                    <div class="tab-pane fade py-0" id="review" role="tabpanel" aria-labelledby="review-tab">review</div>
+                                                    <div class="tab-pane fade py-0" id="review" role="tabpanel" aria-labelledby="review-tab">
+                                                        <div class="review-form">
+                                                            <form>
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="form-group">
+                                                                            <select class="form-control">
+                                                                                <option value="Accepted">Accepted</option>
+                                                                                <option value="Rejected">Rejected</option>
+                                                                                <option value="Deleted">Deleted</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
 
                                                 </div>
                                             </div>
