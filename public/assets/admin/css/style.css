@@ -1913,6 +1913,7 @@ Admin Questions Generator Page Style End
     padding: 10px 15px 0 20px;
     border-radius: 5px;
     margin-bottom: 10px;
+    border: 1px solid #ddd;
 }
 .similarity-content-block .card .card-header {
     width: 100%;
