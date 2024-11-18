@@ -484,7 +484,7 @@ $rand_id = rand(999,99999);
                                                     <div class="tab-pane fade" id="topic-parts" role="tabpanel" aria-labelledby="topic-parts-tab">
                                                         <div class="lms-element-properties">
                                                             <div class="topic-parts-block">
-                                                            <h3> Topics Parts </h3>
+                                                            <h4> Topics Parts </h4>
                                                             <a href="javascript:;" class="add-part-modal">Add New Part</a>
                                                             <div class="topic-parts-options">
                                                                 <div class="form-field rureraform-cr-container-medium"> How Cells Get What They Need <input class="rureraform-checkbox-medium" type="checkbox" name="topic_part_item_id" id="topics_parts-875" value="875">
