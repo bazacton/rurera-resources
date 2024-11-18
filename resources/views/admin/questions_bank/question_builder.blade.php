@@ -640,6 +640,9 @@ $rand_id = rand(999,99999);
                                                                             <textarea class="form-control w-100" rows="4"></textarea>
                                                                         </div>
                                                                     </div>
+                                                                    <div class="col-12">
+                                                                        <button type="submit" class="form-submit-btn">Submit</button>
+                                                                    </div>
                                                                 </div>
                                                             </form>
                                                         </div>
