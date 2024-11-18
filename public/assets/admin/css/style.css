@@ -1989,4 +1989,7 @@ Admin Questions Generator Page Style End
     border-left: 0;
     margin-left: 0;
 }
+.similarity-content-block .lms-dashboard-card .lms-card-list {
+    padding-bottom: 10px;
+}
 /* Similarity Content Tabs style start */
