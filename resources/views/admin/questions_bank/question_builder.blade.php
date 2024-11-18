@@ -558,10 +558,8 @@ $rand_id = rand(999,99999);
                                                                             </svg>
                                                                         </span>
                                                                     </h5>
-                                                                    <b>
-                                                                        <p>Status Updated - Improvement required</p>
-                                                                        <p>Please improve&nbsp;</p>
-                                                                    </b>
+                                                                    <p>Status Updated - Improvement required</p>
+                                                                    <p>Please improve&nbsp;</p>
                                                                     </div>
                                                                 </li>
                                                                 <li class="lms-card-list active">
