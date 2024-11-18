@@ -1992,4 +1992,9 @@ Admin Questions Generator Page Style End
 .similarity-content-block .lms-dashboard-card .lms-card-list {
     padding-bottom: 10px;
 }
+.edit-questions-tabs .similarity-content-tabs .form-group {
+    padding: 0;
+    border: 0;
+    background-color: inherit;
+}
 /* Similarity Content Tabs style start */
