@@ -1991,4 +1991,17 @@ Admin Questions Generator Page Style End
     color: #999;
     font-weight: 400;
 }
+.similarity-content-block ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.similarity-content-block ul li {
+    line-height: normal;
+    text-decoration: underline;
+    color: var(--blue);
+    font-weight: 600;
+    cursor: pointer;
+}
 /* topic-parts accordions style start */
