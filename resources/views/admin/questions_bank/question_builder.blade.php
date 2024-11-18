@@ -475,13 +475,13 @@ $rand_id = rand(999,99999);
                                                 </ul>
                                                 <div class="tab-content" id="myTabContent">
 
-                                                    <div class="tab-pane fade show active" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
+                                                    <div class="tab-pane fade show active py-0" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
                                                         <div id="accordion">
                                                             <div class="similarity-content-block-data"></div>
                                                         </div>
                                                     </div>
 
-                                                    <div class="tab-pane fade" id="topic-parts" role="tabpanel" aria-labelledby="topic-parts-tab">
+                                                    <div class="tab-pane fade py-0" id="topic-parts" role="tabpanel" aria-labelledby="topic-parts-tab">
                                                         <div class="lms-element-properties">
                                                             <div class="topic-parts-block">
                                                             <h4> Topics Parts </h4>
@@ -539,7 +539,7 @@ $rand_id = rand(999,99999);
                                                         </div>
                                                     </div>
                                                     
-                                                    <div class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="activity-tab">
+                                                    <div class="tab-pane fade py-0" id="activity" role="tabpanel" aria-labelledby="activity-tab">
                                                         <div class="lms-dashboard-card">
                                                             <div class="lms-card-body">
                                                                 <div class="lms-card-title mb-15">
@@ -613,7 +613,7 @@ $rand_id = rand(999,99999);
                                                         </div>
                                                     </div>
 
-                                                    <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">review</div>
+                                                    <div class="tab-pane fade py-0" id="review" role="tabpanel" aria-labelledby="review-tab">review</div>
 
                                                 </div>
                                             </div>
