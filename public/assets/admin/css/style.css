@@ -1939,6 +1939,9 @@ Admin Questions Generator Page Style End
     border: 0;
     padding: 5px 0 20px;
 }
+.similarity-content-block .card .card-header .d-flex {
+    align-items: center;
+}
 .similarity-content-block .similarity-percentage {
     margin-right: 15px;
     padding: 5px 8px;
