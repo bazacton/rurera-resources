@@ -1984,16 +1984,6 @@ Admin Questions Generator Page Style End
     color: #bbb;
     font-weight: 600;
 }
-.similarity-content-block .similarity-content-tabs .lms-card-body {
-    padding: 20px 15px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    border-radius: 5px;
-}
-.similarity-content-block .lms-dashboard-card .lms-card-timeline {
-    border-left: 0;
-    margin-left: 0;
-}
 .similarity-content-block .lms-dashboard-card .lms-card-list {
     padding-bottom: 15px;
     border-bottom: 1px solid #ddd;
@@ -2014,5 +2004,17 @@ Admin Questions Generator Page Style End
 .topic-parts-block .form-field label:hover {
     border-width: 1px;
     border-radius: 5px;
+}
+.similarity-content-block .similarity-content-tabs .lms-card-body {
+    padding: 0;
+    background-color: inherit;
+}
+.similarity-content-block .lms-dashboard-card .lms-card-timeline {
+    border-left: 0;
+    margin-left: 0;
+}
+.topic-parts-block .lms-dashboard-card .lms-card-list.active .lms-card-icons {
+    -webkit-animation: none;
+    animation: none;
 }
 /* Similarity Content Tabs style start */
