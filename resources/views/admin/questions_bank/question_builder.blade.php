@@ -462,8 +462,8 @@ $rand_id = rand(999,99999);
         <h5 class="mb-0">
           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             <div class="d-flex justify-content-between w-100">
-                <div class="similarity-serial">1</div>
-                <div class="similarity-percentage">75%</div>
+                <div class="similarity-serial blue">1</div>
+                <div class="similarity-percentage blue">75%</div>
             </div>
           </button>
         </h5>
@@ -490,8 +490,8 @@ $rand_id = rand(999,99999);
         <h5 class="mb-0">
           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             <div class="d-flex justify-content-between w-100">
-                <div class="similarity-serial">2</div>
-                <div class="similarity-percentage">65%</div>
+                <div class="similarity-serial red">2</div>
+                <div class="similarity-percentage red">65%</div>
             </div>
           </button>
         </h5>
