@@ -2038,4 +2038,7 @@ Admin Questions Generator Page Style End
     font-weight: 500;
     width: auto;
 }
+.similarity-content-block .lms-dashboard-card .lms-card-info p {
+    padding-top: 5px;
+}
 /* Similarity Content Tabs style start */
