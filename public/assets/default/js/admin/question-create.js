@@ -10219,6 +10219,8 @@ function EditorIsEmpty(dataValue) {
 
 $(document).on('click', '.question_glossary_submit_btn', function () {
     var formData = new FormData($(this).closest('.question_glossary_modal').find('form')[0]);
+	
+	
     $.ajax({
         type: "POST",
         url: '/admin/glossary/store_question_glossary',
@@ -10351,6 +10353,26 @@ $(document).on('click', '.reject-api-question', function () {
 				html: '<h3 class="font-20 text-center text-dark-blue">Question Rejected successfully!</h3>',
 				showConfirmButton: !1
 			});
+        }
+    });
+});
+
+
+$(document).on('click', '.question_status_submit_btn', function () {
+	var formData = new FormData($('#question_reviewer_status_action_form')[0]);
+    $.ajax({
+        type: "POST",
+        url: '/admin/questions_bank/question_status_submit',
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function (return_data) {
+            Swal.fire({
+				icon: "success",
+				html: '<h3 class="font-20 text-center text-dark-blue">Successfully Submitted</h3>',
+				showConfirmButton: !1
+			});
+			 window.location.reload();
         }
     });
 });
