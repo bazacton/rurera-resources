@@ -634,6 +634,30 @@ $rand_id = rand(999,99999);
                                                                                 <label class="custom-switch-description mb-0 cursor-pointer" for="image-question">Image Question</label>
                                                                             </label>
                                                                         </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="custom-switch pl-0">
+                                                                                <input type="checkbox" name="word-problem" id="word-problem" value="1" class="custom-switch-input">
+                                                                                <span class="custom-switch-indicator"></span>
+                                                                                <label class="custom-switch-description mb-0 cursor-pointer" for="word-problem">Word Problem</label>
+                                                                            </label>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="custom-switch pl-0">
+                                                                                <input type="checkbox" name="new-glossary" id="new-glossary" value="1" class="custom-switch-input">
+                                                                                <span class="custom-switch-indicator"></span>
+                                                                                <label class="custom-switch-description mb-0 cursor-pointer" for="new-glossary">New Glossary</label>
+                                                                            </label>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="custom-switch pl-0">
+                                                                                <input type="checkbox" name="glossary-with-illustration" id="glossary-with-illustration" value="1" class="custom-switch-input">
+                                                                                <span class="custom-switch-indicator"></span>
+                                                                                <label class="custom-switch-description mb-0 cursor-pointer" for="glossary-with-illustration">Glossary With Illustration</label>
+                                                                            </label>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </form>
