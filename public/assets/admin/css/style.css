@@ -1972,12 +1972,10 @@ Admin Questions Generator Page Style End
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
-    padding-left: 15px;
 }
 .similarity-content-block ul li {
     line-height: normal;
-    color: #000;
+    color: #999;
     font-weight: 600;
-    list-style: disc;
 }
 /* topic-parts accordions style start */
