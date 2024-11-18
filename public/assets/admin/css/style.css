@@ -1914,6 +1914,7 @@ Admin Questions Generator Page Style End
     border-radius: 5px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
+    background-color: #f7f7f7;
 }
 .similarity-content-block .card .card-header {
     width: 100%;
@@ -1938,6 +1939,7 @@ Admin Questions Generator Page Style End
 .similarity-content-block .card .card-body {
     border: 0;
     padding: 5px 0 20px;
+    background-color: inherit;
 }
 .similarity-content-block .card .card-header .d-flex {
     align-items: center;
