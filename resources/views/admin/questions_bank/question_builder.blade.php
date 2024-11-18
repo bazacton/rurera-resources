@@ -463,14 +463,14 @@ $rand_id = rand(999,99999);
                                                         <button class="nav-link active" id="Similarity-tab" data-toggle="tab" data-target="#Similarity" type="button" role="tab" aria-controls="Similarity" aria-selected="false">Similarity content</button>
                                                     </li>
                                                     <li class="nav-item" role="presentation">
-                                                        <button class="nav-link" id="review-tab" data-toggle="tab" data-target="#review" type="button" role="tab" aria-controls="review" aria-selected="true">Review</button>
-                                                    </li>
-                                                    <li class="nav-item" role="presentation">
                                                         <button class="nav-link" id="topic-parts-tab" data-toggle="tab" data-target="#topic-parts" type="button" role="tab" aria-controls="topic-parts" aria-selected="false">Topic Parts</button>
                                                     </li>
                                                     
                                                     <li class="nav-item" role="presentation">
                                                         <button class="nav-link" id="activity-tab" data-toggle="tab" data-target="#activity" type="button" role="tab" aria-controls="activity" aria-selected="false">Activity content</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="review-tab" data-toggle="tab" data-target="#review" type="button" role="tab" aria-controls="review" aria-selected="true">Review</button>
                                                     </li>
                                                 </ul>
                                                 <div class="tab-content" id="myTabContent">
