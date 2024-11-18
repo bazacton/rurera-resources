@@ -1955,7 +1955,7 @@ Admin Questions Generator Page Style End
     display: inline-flex;
     align-items: center;
     text-align: left;
-}
+} 
 .similarity-serial.red span {
     background-color: var(--red);
 }
