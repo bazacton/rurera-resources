@@ -542,8 +542,8 @@ $rand_id = rand(999,99999);
                                                     <div class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="activity-tab">
                                                         <div class="lms-dashboard-card">
                                                             <div class="lms-card-body">
-                                                                <div class="lms-card-title">
-                                                                <h4 style="text-transform: capitalize;">Activity</h4>
+                                                                <div class="lms-card-title mb-15">
+                                                                    <h4 style="text-transform: capitalize;">Activity</h4>
                                                                 </div>
                                                                 <ul class="lms-card-timeline">
                                                                 <li class="lms-card-list active">
