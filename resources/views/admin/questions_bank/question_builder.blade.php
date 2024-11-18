@@ -466,7 +466,7 @@ $rand_id = rand(999,99999);
                                                     </li>
                                                     
                                                     <li class="nav-item" role="presentation">
-                                                        <button class="nav-link" id="activity-tab" data-toggle="tab" data-target="#activity" type="button" role="tab" aria-controls="activity" aria-selected="false">Activity content</button>
+                                                        <button class="nav-link" id="activity-tab" data-toggle="tab" data-target="#activity" type="button" role="tab" aria-controls="activity" aria-selected="false">Activity</button>
                                                     </li>
                                                     <li class="nav-item" role="presentation">
                                                         <button class="nav-link" id="review-tab" data-toggle="tab" data-target="#review" type="button" role="tab" aria-controls="review" aria-selected="true">Review</button>
@@ -546,37 +546,25 @@ $rand_id = rand(999,99999);
                                                         <div class="lms-dashboard-card">
                                                             <div class="lms-card-body">
                                                                 <ul class="lms-card-timeline">
-                                                                <li class="lms-card-list active">
-                                                                    <div class="lms-card-icons">
-                                                                        <img src="/assets/default/svgs/calendar.svg" alt="calendar icon" height="65" width="65">
-                                                                    </div>
-                                                                    <div class="lms-card-info">
-                                                                    <h5>Reviewer Demo @ 18 Nov 24 | 13:08 <span>
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-                                                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                                            <polyline points="12 5 19 12 12 19"></polyline>
-                                                                            </svg>
-                                                                        </span>
-                                                                    </h5>
-                                                                    <p>Status Updated - Improvement required</p>
-                                                                    <p>Please improve&nbsp;</p>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="lms-card-list active">
-                                                                    <div class="lms-card-icons">
-                                                                        <img src="/assets/default/svgs/calendar.svg" alt="calendar icon" height="65" width="65">
-                                                                    </div>
-                                                                    <div class="lms-card-info">
-                                                                        <h5>Javy @ 18 Nov 24 | 13:02 <span>
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-                                                                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                                                <polyline points="12 5 19 12 12 19"></polyline>
-                                                                            </svg>
-                                                                            </span>
-                                                                        </h5>
-                                                                        <p>Updated = Submit for review</p>
-                                                                    </div>
-                                                                </li>
+                                                                    <li class="lms-card-list active">
+                                                                        <div class="lms-card-icons">
+                                                                            <img src="/assets/default/svgs/calendar.svg" alt="calendar icon" height="65" width="65">
+                                                                        </div>
+                                                                        <div class="lms-card-info">
+                                                                        <h5>Reviewer Demo @ <span class="activity-date">18 Nov 24 | 13:08</span></h5>
+                                                                        <p>Status Updated - Improvement required</p>
+                                                                        <p>Please improve&nbsp;</p>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="lms-card-list active">
+                                                                        <div class="lms-card-icons">
+                                                                            <img src="/assets/default/svgs/calendar.svg" alt="calendar icon" height="65" width="65">
+                                                                        </div>
+                                                                        <div class="lms-card-info">
+                                                                            <h5>Javy @<span class="activity-date">18 Nov 24 | 13:02</span></h5>
+                                                                            <p>Updated = Submit for review</p>
+                                                                        </div>
+                                                                    </li>
                                                                 </ul>
                                                                 
                                                                 <div class="text-center mt-4">
