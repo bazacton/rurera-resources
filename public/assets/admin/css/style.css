@@ -1955,7 +1955,30 @@ Admin Questions Generator Page Style End
 .upload-path-rurera .card .card-header .btn-link.collapsed:after {
     transform: rotate(-135deg);
 }
-.upload-path-rurera .similarity-percentage {margin-left: auto;color: var(--blue);}
+.upload-path-rurera .similarity-percentage {margin-left: auto;}
+.similarity-percentage.blue {
+    color: var(--blue);
+}
+.similarity-percentage.red {
+    color: var(--red);
+}
+.similarity-serial {
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+.similarity-serial.blue {
+    background-color: var(--blue);
+}
+
+.similarity-serial.red {
+    background-color: var(--red);
+}
 .upload-path-rurera .collapse {
     border-top: 1px solid #ddd;
 }
@@ -1965,17 +1988,6 @@ Admin Questions Generator Page Style End
     align-items: flex-start;
     line-height: normal;
     font-weight: bold;
-}
-.similarity-serial {
-    height: 30px;
-    width: 30px;
-    background-color: var(--blue);
-    color: #fff;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
-    margin-right: 15px;
 }
 .heading-info span {
     color: #999;
