@@ -100,9 +100,8 @@ $rand_id = rand(999,99999);
 @section('content')
 <span>{{$AiApiCallObj->category->getTitleAttribute()}} / {{$AiApiCallObj->subject->getTitleAttribute()}} / {{$AiApiCallObj->chapter->getTitleAttribute()}}</span>
 <h2>{{$AiApiCallObj->subChapter->sub_chapter_title}}</h2>
-
 <!-- Edit-questions Tabs Start -->
-<div class="edit-questions-tabs" data-similarities_array="{{$similarities_array}}">	
+<div class="edit-questions-tabs" data-similarities_array="{{$similarities_array}}" data-similiarity_responses="{{$similiarity_responses}}">	
   <div class="nav" id="nav-tab" role="tablist">
 	@if(!empty( $questions_array) )
 		@php $counter = 1; @endphp
@@ -244,19 +243,19 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
 	 var question_id = $(this).attr('data-question_id');
 	 var question_index = $(this).attr('data-question_index');
 	 var is_deleted = $(this).attr('data-is_deleted');
-	 var similarities_array = $('.edit-questions-tabs').attr('data-similarities_array');
-	 similarities_array = JSON.parse(similarities_array);
+	 var similiarity_responses = $('.edit-questions-tabs').attr('data-similiarity_responses');
+	 similiarity_responses = JSON.parse(similiarity_responses);
 	 current_similarities_array = [];
-	 if (similarities_array.hasOwnProperty(question_index)) {
-		 var current_similarities_array = similarities_array[question_index];
+	 if (similiarity_responses.hasOwnProperty(question_index)) {
+		 var current_similarities_array = similiarity_responses[question_index];
 	 }
 	 var similiarity_html = '';
-	 $.each(current_similarities_array, function (question_index, similiarity_value) {
-		 var status_class = '';
-		 status_class = (similiarity_value > 40)? 'rurera-warning' : status_class;
-		 status_class = (similiarity_value > 65)? 'rurera-danger' : status_class;
-		 similiarity_html	+= '<div class="col-4 col-md-4 similiarity-item"><span class="similiarity-question-index '+status_class+'">'+question_index+'</span><span class="similiarity-value">'+similiarity_value+'%</span></div>';
-	 });
+	 $.each(current_similarities_array, function(index, entry) {
+		var status_class = '';
+		//status_class = (similiarity_value > 65) ? 'rurera-danger' : status_class;
+		//status_class = (similiarity_value > 40) ? 'rurera-warning' : status_class;
+		similiarity_html += entry;
+	});
 	 
 	 
 	 $('.question-builder-area').html('');
@@ -274,7 +273,7 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
 				rurera_remove_loader(loaderDiv, 'button');
 				$('.question-builder-area').html('');
 				$('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
-				$('.question-builder-area[data-question_id="'+question_id+'"]').find('.topic-parts-block').html(
+				$('.question-builder-area[data-question_id="'+question_id+'"]').find('.similarity-content-block-data').html(
 					similiarity_html
 				)
 			}
