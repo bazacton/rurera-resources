@@ -1981,7 +1981,7 @@ Admin Questions Generator Page Style End
     color: #bbb;
     font-weight: 600;
 }
-.similarity-content-tabs .lms-card-body {
+.similarity-content-block .similarity-content-tabs .lms-card-body {
     padding: 0;
     background-color: inherit;
 }
