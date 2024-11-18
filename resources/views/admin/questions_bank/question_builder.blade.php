@@ -495,7 +495,7 @@ $rand_id = rand(999,99999);
                                                         <div class="d-flex justify-content-between w-100">
                                                             <div class="similarity-serial red font-16 font-weight-bold">
                                                                 <span class="font-15">2</span>
-                                                                Title: This is the Title of Item 1
+                                                                Title: This is the Title of Item 2
                                                             </div>
                                                             <div class="similarity-percentage red">65%</div>
                                                         </div>
