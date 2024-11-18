@@ -2045,10 +2045,13 @@ Admin Questions Generator Page Style End
 .similarity-content-block .lms-dashboard-card .lms-card-info {
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 .similarity-content-block .lms-dashboard-card .lms-card-info h5 {
-    font-weight: 500;
+    font-weight: bold;
     width: auto;
+    color: #000;
+    margin-bottom: 5px;
 }
 .similarity-content-block .lms-dashboard-card .lms-card-info p {
     padding-top: 5px;
@@ -2056,5 +2059,11 @@ Admin Questions Generator Page Style End
 }
 .similarity-content-block .lms-dashboard-card .lms-card-list:last-child {
     padding-bottom: 15px;
+}
+.lms-dashboard-card .lms-card-info h5 .activity-date {
+    margin-left: auto;
+    color: #999;
+    font-weight: 500;
+    font-size: 12px;
 }
 /* Similarity Content Tabs style start */
