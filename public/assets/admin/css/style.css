@@ -2002,4 +2002,10 @@ Admin Questions Generator Page Style End
     border: 0;
     background-color: inherit;
 }
+.edit-questions-tabs .review-form {
+    padding: 20px 15px 0;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
 /* Similarity Content Tabs style start */
