@@ -548,11 +548,7 @@ $rand_id = rand(999,99999);
                                                                 <ul class="lms-card-timeline">
                                                                 <li class="lms-card-list active">
                                                                     <div class="lms-card-icons">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle">
-                                                                        <circle cx="12" cy="12" r="10"></circle>
-                                                                        <polyline points="12 16 16 12 12 8"></polyline>
-                                                                        <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                                    </svg>
+                                                                        <img src="/assets/default/svgs/calendar.svg" alt="calendar icon">
                                                                     </div>
                                                                     <div class="lms-card-info">
                                                                     <h5>Reviewer Demo @ <b>18 Nov 24 | 13:08 <span>
@@ -570,11 +566,7 @@ $rand_id = rand(999,99999);
                                                                 </li>
                                                                 <li class="lms-card-list active">
                                                                     <div class="lms-card-icons">
-                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle">
-                                                                        <circle cx="12" cy="12" r="10"></circle>
-                                                                        <polyline points="12 16 16 12 12 8"></polyline>
-                                                                        <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                                        </svg>
+                                                                        <img src="/assets/default/svgs/calendar.svg" alt="calendar icon">
                                                                     </div>
                                                                     <div class="lms-card-info">
                                                                         <h5>Javy @ <b>18 Nov 24 | 13:02 <span>
