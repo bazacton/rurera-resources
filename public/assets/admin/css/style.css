@@ -1910,7 +1910,7 @@ Admin Questions Generator Page Style End
     max-width: 100%;
 }
 .similarity-content-block .card {
-    padding: 10px 15px 0 20px;
+    padding: 10px 15px 0 15px;
     border-radius: 5px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
