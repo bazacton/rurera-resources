@@ -1946,10 +1946,10 @@ Admin Questions Generator Page Style End
     align-items: center;
 }
 .similarity-content-block .similarity-percentage {
-    margin-right: 15px;
+    margin-right: 10px;
     line-height: normal;
     border-radius: 3px;
-    padding: 4px 8px;
+    padding: 4px 5px;
 }
 .similarity-percentage.blue {
     color: #fff;
