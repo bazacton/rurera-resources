@@ -809,6 +809,10 @@ scrollbar-gutter: stable both-edges;
     display: inline-block;
     width: 100%;
 }
+.question-layout.row {
+    margin-left: 0;
+    margin-right: 0;
+}
 .question-layout .rureraform-element {
 	outline: 0 !important;
 	padding-top: 0;
