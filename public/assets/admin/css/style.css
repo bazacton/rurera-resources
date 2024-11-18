@@ -1914,7 +1914,7 @@ Admin Questions Generator Page Style End
     border-radius: 5px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
-    background-color: #f9f9f9;
+    background-color: #fff;
 }
 .similarity-content-block .card .card-header {
     width: 100%;
@@ -2009,5 +2009,8 @@ Admin Questions Generator Page Style End
     border: 1px solid #ddd;
     background-color: #f9f9f9;
     border-radius: 5px;
+}
+.topic-parts-block .form-field label {
+    border-width: 1px;
 }
 /* Similarity Content Tabs style start */
