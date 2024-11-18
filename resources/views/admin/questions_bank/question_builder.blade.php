@@ -562,17 +562,14 @@ $rand_id = rand(999,99999);
                                                                             <polyline points="12 5 19 12 12 19"></polyline>
                                                                             </svg>
                                                                         </span>
-                                                                        </b>
                                                                     </h5>
                                                                     <b>
                                                                         <p>Status Updated - Improvement required</p>
                                                                         <p>Please improve&nbsp;</p>
                                                                     </b>
                                                                     </div>
-                                                                    <b></b>
                                                                 </li>
-                                                                <b>
-                                                                    <li class="lms-card-list active">
+                                                                <li class="lms-card-list active">
                                                                     <div class="lms-card-icons">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle">
                                                                         <circle cx="12" cy="12" r="10"></circle>
@@ -587,29 +584,20 @@ $rand_id = rand(999,99999);
                                                                                 <polyline points="12 5 19 12 12 19"></polyline>
                                                                             </svg>
                                                                             </span>
-                                                                        </b>
                                                                         </h5>
-                                                                        <b>
                                                                         <p>Updated = Submit for review</p>
-                                                                        <p></p>
-                                                                        </b>
                                                                     </div>
-                                                                    <b></b>
-                                                                    </li>
-                                                                    <b></b>
-                                                                </b>
+                                                                </li>
                                                                 </ul>
-                                                                <b>
-                                                                <b>
-                                                                    <div class="text-center mt-4">
+                                                                
+                                                                <div class="text-center mt-4">
                                                                     <a class="lms-card-btn" href="#">View More <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
                                                                         <line x1="5" y1="12" x2="19" y2="12"></line>
                                                                         <polyline points="12 5 19 12 12 19"></polyline>
                                                                         </svg>
                                                                     </a>
-                                                                    </div>
-                                                                </b>
-                                                                </b>
+                                                                </div>
+                                                                
                                                             </div>
                                                         </div>
                                                     </div>
