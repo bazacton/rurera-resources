@@ -2008,6 +2008,7 @@ Admin Questions Generator Page Style End
     display: flex;
     align-items: center;
     gap: 10px;
+    width: 100%;
 }
 .similarity-content-block .similarity-content-tabs .lms-card-body {
     padding: 0;
