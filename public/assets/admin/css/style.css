@@ -1985,4 +1985,8 @@ Admin Questions Generator Page Style End
     padding: 0;
     background-color: inherit;
 }
+.similarity-content-block .lms-dashboard-card .lms-card-timeline {
+    border-left: 0;
+    margin-left: 0;
+}
 /* Similarity Content Tabs style start */
