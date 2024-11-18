@@ -457,7 +457,7 @@ $rand_id = rand(999,99999);
 
                                         <div class="similarity-content-block mb-30">
                                             <div id="accordion">
-                                                <h3 class="font-24 mb-20">Content Similarity</h3>
+                                                <h3 class="font-20 font-weight-bold mb-20 text-dark">Content Similarity</h3>
                                                 <div class="card">
                                                 <div class="card-header" id="headingOne">
                                                     <h5 class="mb-0">
