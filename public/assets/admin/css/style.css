@@ -2030,6 +2030,9 @@ Admin Questions Generator Page Style End
     height: 30px;
     width: 30px;
 }
+.similarity-content-block .lms-dashboard-card .lms-card-info {
+    align-items: center;
+}
 .similarity-content-block .lms-dashboard-card .lms-card-info h5 {
     font-weight: 500;
     width: auto;
