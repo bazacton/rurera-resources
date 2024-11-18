@@ -1999,8 +1999,7 @@ Admin Questions Generator Page Style End
 }
 .similarity-content-block ul li {
     line-height: normal;
-    text-decoration: underline;
-    color: var(--blue);
+    color: #000;
     font-weight: 600;
     cursor: pointer;
 }
