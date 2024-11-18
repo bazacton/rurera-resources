@@ -71,8 +71,7 @@ $rand_id = rand(999,99999);
   width: 10px;
   height: 10px;
   padding: 5px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 5px white;	
+  border-radius: 50%;	
 }
 .rurera-danger{background-color:#fd2929 !important;}
 .rurera-warning{background-color:#ff973f !important;}
