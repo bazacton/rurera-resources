@@ -1995,7 +1995,9 @@ Admin Questions Generator Page Style End
     margin-left: 0;
 }
 .similarity-content-block .lms-dashboard-card .lms-card-list {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
 }
 .edit-questions-tabs .similarity-content-tabs .form-group {
     padding: 0;
