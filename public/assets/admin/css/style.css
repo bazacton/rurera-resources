@@ -1932,6 +1932,7 @@ Admin Questions Generator Page Style End
     border: 0;
     text-decoration: none;
     outline: none;
+    background: none;
 }
 .similarity-content-block .card .card-header h5 {
     width: 100%;
