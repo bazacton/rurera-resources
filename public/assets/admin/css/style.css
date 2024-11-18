@@ -2041,4 +2041,7 @@ Admin Questions Generator Page Style End
 .similarity-content-block .lms-dashboard-card .lms-card-info p {
     padding-top: 5px;
 }
+.similarity-content-block .lms-dashboard-card .lms-card-list:last-child {
+    padding-bottom: 15px;
+}
 /* Similarity Content Tabs style start */
