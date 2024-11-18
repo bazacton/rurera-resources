@@ -2032,5 +2032,6 @@ Admin Questions Generator Page Style End
 }
 .similarity-content-block .lms-dashboard-card .lms-card-info h5 {
     font-weight: 500;
+    width: auto;
 }
 /* Similarity Content Tabs style start */
