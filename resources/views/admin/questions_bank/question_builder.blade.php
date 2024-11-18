@@ -580,7 +580,7 @@ $rand_id = rand(999,99999);
                                                     </div>
 
                                                     <div class="tab-pane fade py-0" id="review" role="tabpanel" aria-labelledby="review-tab">
-                                                        <div class="review-form mt-20">
+                                                        <div class="review-form">
                                                             <form>
                                                                 <div class="row">
                                                                     <div class="col-12">
