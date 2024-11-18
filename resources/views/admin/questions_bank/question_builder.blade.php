@@ -481,11 +481,11 @@ $rand_id = rand(999,99999);
                                                         </div>
                                                     </div>
 
-                                                    <div class="tab-pane fade" id="topic-parts" role="tabpanel" aria-labelledby="topic-parts-tab"></div>
+                                                    <div class="tab-pane fade" id="topic-parts" role="tabpanel" aria-labelledby="topic-parts-tab">topic-parts</div>
                                                     
-                                                    <div class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="activity-tab"></div>
+                                                    <div class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="activity-tab">activity</div>
 
-                                                    <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab"></div>
+                                                    <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">review</div>
 
                                                 </div>
                                             </div>
