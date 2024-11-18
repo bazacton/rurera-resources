@@ -1946,10 +1946,12 @@ Admin Questions Generator Page Style End
     border-radius: 3px;
 }
 .similarity-percentage.blue {
-    color: var(--blue);
+    color: #fff;
+    background-color: var(--blue);
 }
 .similarity-percentage.red {
-    color: var(--red);
+    background-color: var(--red);
+    color: #fff;
 }
 .similarity-serial {
     display: inline-flex;
