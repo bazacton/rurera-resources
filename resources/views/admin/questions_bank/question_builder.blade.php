@@ -459,14 +459,14 @@ $rand_id = rand(999,99999);
                                     <div id="accordion">
     <div class="card">
       <div class="card-header" id="headingOne">
-        <h2 class="mb-0">
+        <h5 class="mb-0">
           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             <div class="d-flex justify-content-between w-100">
                 <div class="similarity-serial">1</div>
                 <div class="similarity-percentage">75%</div>
             </div>
           </button>
-        </h2>
+        </h5>
       </div>
   
       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
