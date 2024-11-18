@@ -2046,8 +2046,9 @@ Admin Questions Generator Page Style End
     padding: 0 5px;
 }
 .similarity-content-block .lms-dashboard-card .lms-card-icons img {
-    height: 30px;
     width: 30px;
+    height: 30px;
+    object-fit: contain;
 }
 .similarity-content-block .lms-dashboard-card .lms-card-info {
     align-items: center;
