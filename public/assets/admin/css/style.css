@@ -1950,6 +1950,7 @@ Admin Questions Generator Page Style End
     line-height: normal;
     border-radius: 3px;
     padding: 4px 5px;
+    font-size: 14px;
 }
 .similarity-percentage.blue {
     color: #fff;
