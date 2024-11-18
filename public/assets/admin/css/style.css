@@ -1955,7 +1955,7 @@ Admin Questions Generator Page Style End
 .upload-path-rurera .card .card-header .btn-link.collapsed:after {
     transform: rotate(-135deg);
 }
-.upload-path-rurera .percentage {margin-left: auto;color: var(--blue);}
+.upload-path-rurera .similarity-percentage {margin-left: auto;color: var(--blue);}
 .upload-path-rurera .collapse {
     border-top: 1px solid #ddd;
 }
@@ -1966,7 +1966,7 @@ Admin Questions Generator Page Style End
     line-height: normal;
     font-weight: bold;
 }
-.serial-no {
+.similarity-serial {
     height: 30px;
     width: 30px;
     background-color: var(--blue);
