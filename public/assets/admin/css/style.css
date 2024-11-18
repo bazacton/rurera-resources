@@ -2013,5 +2013,6 @@ Admin Questions Generator Page Style End
 .topic-parts-block .form-field label,
 .topic-parts-block .form-field label:hover {
     border-width: 1px;
+    border-radius: 5px;
 }
 /* Similarity Content Tabs style start */
