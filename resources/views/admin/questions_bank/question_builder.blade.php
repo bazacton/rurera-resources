@@ -456,7 +456,6 @@ $rand_id = rand(999,99999);
                                     <div class="col-5 col-md-5">
 
                                         <div class="similarity-content-block mb-30">
-                                            <h3 class="font-20 font-weight-bold mb-20 text-dark">Content Similarity</h3>
                                             <div class="similarity-content-tabs">
                                                 <ul class="nav" id="myTab" role="tablist">
                                                     <li class="nav-item" role="presentation">
