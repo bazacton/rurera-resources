@@ -71,7 +71,8 @@ $rand_id = rand(999,99999);
   width: 10px;
   height: 10px;
   padding: 5px;
-  border-radius: 50%;	
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px white;	
 }
 .rurera-danger{background-color:#fd2929 !important;}
 .rurera-warning{background-color:#ff973f !important;}
@@ -97,8 +98,8 @@ $rand_id = rand(999,99999);
 
 @php $save_type = isset( $questionObj->id )? 'update_question' : 'store_question'; @endphp
 @section('content')
-<span>{{$AiApiCallObj->category->getTitleAttribute()}} / {{$AiApiCallObj->subject->getTitleAttribute()}} / {{$AiApiCallObj->chapter->getTitleAttribute()}}</span>
-<h2>{{$AiApiCallObj->subChapter->sub_chapter_title}}</h2>
+<span>{{$QuestionsBulkListObj->category->getTitleAttribute()}} / {{$QuestionsBulkListObj->subject->getTitleAttribute()}} / {{$QuestionsBulkListObj->chapter->getTitleAttribute()}}</span>
+<h2>{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</h2>
 <!-- Edit-questions Tabs Start -->
 <div class="edit-questions-tabs" data-similarities_array="{{$similarities_array}}" data-similiarity_responses="{{$similiarity_responses}}">	
   <div class="nav" id="nav-tab" role="tablist">

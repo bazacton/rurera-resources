@@ -59,7 +59,7 @@
 						<button type="button" class="btn btn-success save-template" data-form_id="question-generator-form" data-template_type="question_ai_genearte_form" ><i class="fas fa-save"></i> Save Form</button>
 					</div>
 
-	<form action="/admin/questions-generator/generate-questions" method="POST" id="question-generator-form" class="px-25 question-generator-form">
+	<form action="/admin/questions-generator/generate-questions/{{$questionsBulkListObj->id}}" method="POST" id="question-generator-form" class="px-25 question-generator-form">
 	@csrf
 
 	<div class="row">
@@ -67,6 +67,12 @@
 			<div class="row">
 				<div class="col-md-12 col-lg-12">
 					<h2 class="font-20 font-weight-bold mb-15 copyable-text">Questions Generator</h2>
+				</div>
+				<div class="col-md-12 col-lg-12">
+					<div class="form-group">
+						<label for="prompt_title">Prompt Title:</label>
+						<input type="text" name="prompt_title" id="prompt_title" class="w-100 form-control" value="">
+					</div>
 				</div>
 				<div class="col-md-12 col-lg-12 rurera-hide">
 					<div class="form-group">
@@ -82,73 +88,7 @@
 						<textarea class="w-100 form-control unicode-rm" name="instructions_ai" id="instructions_ai" rows="4" maxlength="400"></textarea>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-6">
-					<div class="form-group">
-						<label class="input-label">{{trans('admin/main.category')}}</label>
-						<select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
-							<option value="">{{trans('admin/main.all_categories')}}</option>
-							@foreach($categories as $category)
-							@if(!empty($category->subCategories) and count($category->subCategories))
-							<optgroup label="{{  $category->title }}">
-								@foreach($category->subCategories as $subCategory)
-								<option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
-								@endforeach
-							</optgroup>
-							@else
-							<option value="{{ $category->id }}">{{ $category->title }}</option>
-							@endif
-							@endforeach
-						</select>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6">
-					<div class="form-group">
-						<label class="input-label">Subjects</label>
-						<select data-chapter_id="" id="subject_id"
-								class="rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
-								name="subject_id" data-next_index="chapter_id" data-next_value="">
-							<option value="">Please select year, subject</option>
-						</select>
-						@error('subject_id')
-						<div class="invalid-feedback">
-							{{ $message }}
-						</div>
-						@enderror
-
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6">
-					<div class="form-group">
-						<label class="input-label">Topic</label>
-						<select data-sub_chapter_id="" id="chapter_id"
-								class="rurera-req-field form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
-								name="chapter_id" data-next_index="sub_chapter_id" data-next_value="">
-							<option value="">Please select year, subject</option>
-						</select>
-						@error('chapter_id')
-						<div class="invalid-feedback">
-							{{ $message }}
-						</div>
-						@enderror
-
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6">
-					<div class="form-group">
-						<label class="input-label">Sub Topic</label>
-						<select id="sub_chapter_id"
-							class="rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
-							name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
-						<option value="">Please select year, subject, Topic</option>
-					</select>
-					@error('sub_chapter_id')
-					<div class="invalid-feedback">
-						{{ $message }}
-					</div>
-					@enderror
-
-					</div>
-				</div>
+				
 				<div class="col-md-12 col-lg-12">
 					<div id="accordion" class="topic-parts-data">
 						
@@ -700,6 +640,16 @@
 					$(".topic-parts-data").html(return_data);
 				}
 			});
+		});
+		
+		var sub_chapter_id = '{{$questionsBulkListObj->sub_chapter_id}}';
+		$.ajax({
+			type: "GET",
+			url: '/admin/webinars/topic_parts_by_sub_chapter_generation_form',
+			data: {'sub_chapter_id': sub_chapter_id},
+			success: function (return_data) {
+				$(".topic-parts-data").html(return_data);
+			}
 		});
 		
 		
