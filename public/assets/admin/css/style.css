@@ -1909,20 +1909,20 @@ Admin Questions Generator Page Style End
     flex: 0 0 100%;
     max-width: 100%;
 }
-.similarity-content-block .card {
+.similarity-content-tabs .card {
     padding: 10px 15px 0 15px;
     border-radius: 5px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     background-color: #fff;
 }
-.similarity-content-block .card .card-header {
+.similarity-content-tabs .card .card-header {
     width: 100%;
     padding: 5px 0 15px;
     min-height: auto;
     border: 0;
 }
-.similarity-content-block .card .card-header .btn-link {
+.similarity-content-tabs .card .card-header .btn-link {
     padding: 0;
     width: 100%;
     position: relative;
@@ -1934,15 +1934,15 @@ Admin Questions Generator Page Style End
     outline: none;
     background: none;
 }
-.similarity-content-block .card .card-header h5 {
+.similarity-content-tabs .card .card-header h5 {
     width: 100%;
 }
-.similarity-content-block .card .card-body {
+.similarity-content-tabs .card .card-body {
     border: 0;
     padding: 5px 0 20px;
     background-color: inherit;
 }
-.similarity-content-block .card .card-header .d-flex {
+.similarity-content-tabs .card .card-header .d-flex {
     align-items: center;
 }
 .similarity-content-block .similarity-percentage {
