@@ -188,7 +188,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .api-questions-form .option-group {background-color: #fff; border: 2px solid #ddd; border-bottom-width: 4px; border-radius: 8px; position: relative; cursor: auto; padding: 15px; width: 100%; margin-bottom: 0; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; line-height: normal; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
 .form-field input[type="checkbox"] ~ label {min-height: 52px; text-align: left;}
 .form-field input[type="checkbox"]:checked ~ label:after {opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
-.form-field input[type="checkbox"]:checked ~ label{background-color: #ddd;}
+.form-field input[type="checkbox"]:checked ~ label{background-color: #fcfbfb;}
 .form-field label:hover {border: 2px solid #c4c3c3;border-bottom-width: 4px;border-radius: 8px;}
 .row-fields.lms-checkbox-img label {padding: 5px;}
 .lms-checkbox-img .form-field label:before {width: 30px; height: 30px; right: 15px; border-radius: 100%; margin-top: -15px;}
@@ -198,6 +198,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .lms-checkbox-img label {border-radius: 5px; display: flex; align-items: center;}
 .lms-checkbox-img .form-field.wrong label {background: none; border-color: #ff4a4a; color: #000;}
 .lms-checkbox-img .form-field.wrong label:before {border-color: #ff4a4a;}
+.form-field input[type="checkbox"]:checked ~ label:has(img) {background-color: inherit; border-color: rgb(113 150 251);}
 /* Multi Response List Style End */
 /*Quiz Radio-Image Style Start*/
 .lms-radio-img .field-holder label {padding: 5px; border-radius: 5px;}
