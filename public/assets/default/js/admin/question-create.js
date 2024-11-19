@@ -7092,7 +7092,7 @@ function rureraform_build(image_styles = []) {
     if (text_style["webfont"] != "" && webfonts.indexOf(text_style["webfont"]) == -1)
         webfonts.push(text_style["webfont"]);
     style_attr = text_style["style"];
-    style += ".rureraform-form *, .rureraform-progress {" + style_attr + "}";
+    //style += ".rureraform-form *, .rureraform-progress {" + style_attr + "}";
     style_attr += rureraform_build_style_background(rureraform_form_options, "inline-background-style");
     style_attr += rureraform_build_style_border(rureraform_form_options, "inline-border-style");
     style_attr += rureraform_build_shadow(rureraform_form_options, "inline-shadow");
