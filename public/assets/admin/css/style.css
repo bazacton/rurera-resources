@@ -1933,6 +1933,7 @@ Admin Questions Generator Page Style End
     text-decoration: none;
     outline: none;
     background: none;
+    cursor: pointer;
 }
 .similarity-content-tabs .card .card-header h5 {
     width: 100%;
