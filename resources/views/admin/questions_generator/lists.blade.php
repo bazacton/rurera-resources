@@ -307,7 +307,7 @@
 						<div class="col-md-12 col-lg-12">
 							<div class="form-group">
 								<label class="input-label">Examination Quiz</label>
-								<select name="quiz_id" data-plugin-selectTwo class="rurera-req-field form-control populate quiz_id">
+								<select name="quiz_id" data-plugin-selectTwo class="form-control populate quiz_id">
 									<option value="">Select Quiz</option>
 									@foreach($quiz_list as $quiz_id => $quiz_title)
 									<option value="{{$quiz_id}}">{{$quiz_title}}</option>
