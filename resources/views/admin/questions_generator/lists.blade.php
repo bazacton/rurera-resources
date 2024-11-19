@@ -200,8 +200,8 @@
 
 						</div>
                     @can('admin_topic_parts_create')
-                        <div class="text-right">
-                            <a href="/admin/questions-generator/prompt" class="btn btn-primary">Create Prompt</a>
+						<div class="text-right">
+                            <a href="javascript:;" class="create-questions-bulk-list-btn btn btn-primary">Create Question Bulk List</a>
                         </div>
                     @endcan
                     </div>
@@ -210,64 +210,42 @@
                         <div class="table-responsive">
                             <table class="table table-striped font-14" id="myTable">
                                 <tr id="tableHeader">
-                                    <th class="text-left">API Type</th>
                                     <th class="text-left">Category</th>
-                                    <th class="text-left">Questions Type</th>
-									<th class="text-left">Total Questions</th>
-                                    <th class="text-left">Part Item</th>
-									<th class="text-left">Difficulty Level</th>
-									<th class="text-left">Expected Questions</th>
-									<th class="text-left">Part Questions</th>
 									<th class="text-left">Generated / Waiting / Rejected</th>
                                     <th class="text-left">Added by</th>
                                     <th class="text-left">Added Date</th>
                                     <th>{{ trans('admin/main.actions') }}</th>
                                 </tr>
 
-                                @foreach($AiApiCalls as $AiApiCallObj)
-								@php $TopicPartsItemObj = $AiApiCallObj->TopicPartsItem; @endphp
+                                @foreach($QuestionsBulkLists as $QuestionsBulkListObj)
 								
                                 <tr>
-                                    <td data-id="api_type">
-                                        <span>{{ $AiApiCallObj->api_type }}</span>
-                                    </td>
-									<td data-id="category" class="text-left">{{ (isset($AiApiCallObj->category->id))? $AiApiCallObj->category->getTitleAttribute() : '-' }}
+									<td data-id="category" class="text-left">{{ (isset($QuestionsBulkListObj->category->id))? $QuestionsBulkListObj->category->getTitleAttribute() : '-' }}
 									<br>
 										<small>
-										{{ (isset($AiApiCallObj->subject->id))? $AiApiCallObj->subject->getTitleAttribute() : '-' }} / 
-										{{ (isset($AiApiCallObj->chapter->id))? $AiApiCallObj->chapter->getTitleAttribute() : '-' }} / 
-										{{ (isset($AiApiCallObj->subChapter->id))? $AiApiCallObj->subChapter->sub_chapter_title : '-' }}
+										{{ (isset($QuestionsBulkListObj->subject->id))? $QuestionsBulkListObj->subject->getTitleAttribute() : '-' }} / 
+										{{ (isset($QuestionsBulkListObj->chapter->id))? $QuestionsBulkListObj->chapter->getTitleAttribute() : '-' }} / 
+										{{ (isset($QuestionsBulkListObj->subChapter->id))? $QuestionsBulkListObj->subChapter->sub_chapter_title : '-' }}
 										</small>
 									</td>
-									<td class="text-left" data-id="question_type">{{ $AiApiCallObj->question_type }}</td>
-									<td class="text-left" data-id="total_questions">{{ $AiApiCallObj->total_questions }}</td>
-									
-									<td class="text-left" data-id="part_item">{{ isset($TopicPartsItemObj->title)? $TopicPartsItemObj->title : '' }}</td>
-									<td class="text-left" data-id="difficulty_level">{{ isset($TopicPartsItemObj->id)? $TopicPartsItemObj->difficulty_level : '' }}</td>
-									<td class="text-left" data-id="expected_questions">{{ isset($TopicPartsItemObj->id)? getPartQuestions($TopicPartsItemObj->difficulty_level) : 0 }}</td>
-									<td class="text-left" data-id="part_questions">{{ isset($TopicPartsItemObj->id)? $TopicPartsItemObj->topicPartItemQuestions->count() : 0 }}</td>
-									
-									<td class="text-left" data-id="generated_questions">{{ $AiApiCallObj->generated_questions }} / {{ $AiApiCallObj->waiting_questions }} / {{ $AiApiCallObj->rejected_questions }}</td>
-                                    <td class="text-left" data-id="user">{{ $AiApiCallObj->user->get_full_name() }}</td>
-                                    <td class="text-left" data-id="created_at">{{ dateTimeFormat($AiApiCallObj->created_at, 'j M y | H:i') }}</td>
+									<td class="text-left" data-id="generated_questions">{{ $QuestionsBulkListObj->generated_questions }} / {{ $QuestionsBulkListObj->waiting_questions }} / {{ $QuestionsBulkListObj->rejected_questions }}</td>
+                                    <td class="text-left" data-id="user">{{ $QuestionsBulkListObj->user->get_full_name() }}</td>
+                                    <td class="text-left" data-id="created_at">{{ dateTimeFormat($QuestionsBulkListObj->created_at, 'j M y | H:i') }}</td>
                                     <td data-id="action">
                                         @can('admin_topic_parts_edit')
-										@if($AiApiCallObj->status == 'active')
-											@if($AiApiCallObj->api_response == '')
-												<a href="/admin/questions-generator/add-response/{{ $AiApiCallObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
-													Add Response
-												</a>
-											@else
-												<a href="/admin/questions-generator/add-response/{{ $AiApiCallObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
-													Add More Response
-												</a><br>
-												<a href="/admin/questions-generator/view-api-response/{{ $AiApiCallObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
+										@if($QuestionsBulkListObj->status == 'active')
+											
+											<a href="/admin/questions-generator/add-prompt/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Add Prompt">
+												Add Prompt
+											</a><br>	
+											<a href="/admin/questions-generator/add-response/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Add Response">
+												Import Questions
+											</a><br>
+											
+											@if($QuestionsBulkListObj->total_questions > 0)
+												<a href="/admin/questions-generator/view-api-response/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
 													Generate Questions
 												</a>
-											@endif
-											@if( $AiApiCallObj->generated_questions == 0 && auth()->user()->isAdminRole())
-												<br>
-												@include('admin.includes.delete_button',['url' => '/admin/questions-generator/'.$AiApiCallObj->id.'/delete' , 'btnClass' => 'btn-sm'])
 											@endif
 										@endif
                                         @endcan
@@ -280,7 +258,7 @@
                     </div>
 
                     <div class="card-footer text-center">
-                        {{ $AiApiCalls->links() }}
+                        {{ $QuestionsBulkLists->links() }}
                     </div>
                 </div>
             </div>
@@ -310,6 +288,113 @@
         </div>
     </div>
 </div>
+
+
+<div id="questions_bulk_list" class="questions_bulk_list modal fade" role="dialog" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content edit-quest-modal-div">
+            <div class="modal-body">
+			  <div class="modal-box">
+			  <form action="/admin/questions-generator/generate-bulk-list" method="POST" id="generate-bulk-list-form" class="px-25 generate-bulk-list-form">
+				@csrf
+				
+				<div class="row">
+					<div class="col-md-12 col-lg-12">
+					<div class="row">
+						<div class="col-md-12 col-lg-12">
+							<h2 class="font-20 font-weight-bold mb-15 copyable-text">Generate Bulk Questions List</h2>
+						</div>
+						<div class="col-md-12 col-lg-12">
+							<div class="form-group">
+								<label class="input-label">Examination Quiz</label>
+								<select name="quiz_id" data-plugin-selectTwo class="rurera-req-field form-control populate quiz_id">
+									<option value="">Select Quiz</option>
+									@foreach($quiz_list as $quiz_id => $quiz_title)
+									<option value="{{$quiz_id}}">{{$quiz_title}}</option>
+									@endforeach
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-12">
+							<div class="form-group">
+								<label class="input-label">{{trans('admin/main.category')}}</label>
+								<select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
+									<option value="">{{trans('admin/main.all_categories')}}</option>
+									@foreach($categories as $category)
+									@if(!empty($category->subCategories) and count($category->subCategories))
+									<optgroup label="{{  $category->title }}">
+										@foreach($category->subCategories as $subCategory)
+										<option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
+										@endforeach
+									</optgroup>
+									@else
+									<option value="{{ $category->id }}">{{ $category->title }}</option>
+									@endif
+									@endforeach
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-12">
+							<div class="form-group">
+								<label class="input-label">Subjects</label>
+								<select data-chapter_id="" id="subject_id"
+										class="rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
+										name="subject_id" data-next_index="chapter_id" data-next_value="">
+									<option value="">Please select year, subject</option>
+								</select>
+								@error('subject_id')
+								<div class="invalid-feedback">
+									{{ $message }}
+								</div>
+								@enderror
+
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-12">
+							<div class="form-group">
+								<label class="input-label">Topic</label>
+								<select data-sub_chapter_id="" id="chapter_id"
+										class="rurera-req-field form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
+										name="chapter_id" data-disabled="{{isset($already_created_bulk_lists)? json_encode($already_created_bulk_lists) : ''}}" data-next_index="sub_chapter_id" data-next_value="">
+									<option value="">Please select year, subject</option>
+								</select>
+								@error('chapter_id')
+								<div class="invalid-feedback">
+									{{ $message }}
+								</div>
+								@enderror
+
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-12">
+							<div class="form-group">
+								<label class="input-label">Sub Topic</label>
+								<select id="sub_chapter_id"
+									class="rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+									name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
+								<option value="">Please select year, subject, Topic</option>
+							</select>
+							@error('sub_chapter_id')
+							<div class="invalid-feedback">
+								{{ $message }}
+							</div>
+							@enderror
+
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+				<div class="inactivity-controls">
+					<button type="submit" class="submit-btn mt-0">Generate List</button>
+					<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a>
+				</div>
+				<form>
+			  </div>
+			</div>
+        </div>
+    </div>
+</div>
 @endsection
 
 @push('scripts_bottom')
@@ -317,16 +402,26 @@
 
 <script>
 	$(document).ready(function () {
+		
+		$(document).on('submit', '.generate-bulk-list-form', function() {
+			var thisForm = $(this);
+			var quiz_id = $(".quiz_id").val();
+			console.log(quiz_id);
+			if(quiz_id > 0){
+				return true;
+			}else{
+				returnType = rurera_validation_process(thisForm);
+				if (returnType == false) {
+					return false;
+				}
+			}
+			return true;
+			
+		});
+		
 		const defaultColumns = [
-			{ id: 'api_type', text: 'API Type', visible: true },
 			{ id: 'category', text: 'Category', visible: true },
-			{ id: 'question_type', text: 'Questions Type', visible: true },
-			{ id: 'total_questions', text: 'Total Questions', visible: true },
-			{ id: 'part_item', text: 'Part Item', visible: true },
-			{ id: 'difficulty_level', text: 'Difficulty Level', visible: true },
-			{ id: 'expected_questions', text: 'Expected Questions', visible: true },
-			{ id: 'part_questions', text: 'Part Questions', visible: true },
-			{ id: 'generated_questions', text: 'Generated', visible: true },
+			{ id: 'generated_questions', text: 'Generated / Waiting / Rejected', visible: true },
 			{ id: 'user', text: 'Added by', visible: true },
 			{ id: 'created_at', text: 'Added Date', visible: true },
 			{ id: 'action', text: 'Action', visible: true }
@@ -476,6 +571,11 @@
     $(document).ready(function () {
 		
 		
+		
+		$(document).on('click', '.create-questions-bulk-list-btn', function () {
+			$(".questions_bulk_list").modal('show');
+		});
+		
 		$(document).on('change', '.ajax-category-courses', function () {
 			var category_id = $(this).val();
 			var course_id = $(this).attr('data-course_id');
@@ -509,10 +609,11 @@
 		$(document).on('change', '.ajax-chapter-dropdown', function () {
 			var chapter_id = $(this).val();
 			var sub_chapter_id = $(this).attr('data-sub_chapter_id');
+			var disabled_items = $(this).attr('data-disabled');
 			$.ajax({
 				type: "GET",
 				url: '/admin/webinars/sub_chapters_by_chapter',
-				data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id},
+				data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id,  'disabled_items': disabled_items},
 				success: function (return_data) {
 					$(".ajax-subchapter-dropdown").html(return_data);
 				}
