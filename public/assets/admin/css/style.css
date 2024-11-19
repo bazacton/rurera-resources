@@ -1366,6 +1366,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .populated-data .radio-btn {background-color: #fff; border: 2px solid transparent; border-radius: 10px; display: flex; position: relative; text-align: center; box-shadow: 0 0 10px #c3c3c367; cursor: pointer; padding: 15px 12px; min-height: 111px; align-items: center; justify-content: center;}
 .card-radio input {display: none;}
 .card-radio input:checked + .radio-btn {border-color: var(--primary);}
+.years-group .card-icon img {max-width: 100%;}
 .radio-btn .card-icon h3 {color: #555; font-size: 14px; font-weight: 500; margin-bottom: 0;}
 .populated-data .input-label {font-size: 14px; color: #666; font-weight: 400;}
 .populated-data .questions-select-number input:checked ~ label {background-color: #f3f3f3; color: #000;}
