@@ -101,7 +101,7 @@
 														<h5 class="mb-0">
 														<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapse{{$promptObj->id}}" aria-expanded="true" aria-controls="collapse{{$promptObj->id}}">
 															<div class="d-flex w-100">
-																<div class="similarity-serial blue font-14 font-weight-bold">
+																<div class="similarity-serial blue font-16 font-weight-bold">
 																	<label for="api_id_{{$promptObj->id}}">
 																	{{isset( $promptObj->TopicPartsItem->id)? $promptObj->TopicPartsItem->title : ''}}
 																	@if(isset($promptObj->TopicPartsItem->id))
