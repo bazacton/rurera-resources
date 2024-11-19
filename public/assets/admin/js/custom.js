@@ -1381,8 +1381,19 @@ $(document).on('click', '.copyable-text', function () {
 
 	try {
 		document.execCommand('copy');
+		
 	} catch (error) {
 	}
+	
+	$.toast({
+            heading: 'Success!',
+            text: 'Text Copied',
+            bgColor: 'green',
+            textColor: 'white',
+            hideAfter: 10000,
+            position: 'bottom-right',
+            icon: 'success'
+          });
 
 	// Remove the temporary <textarea> element
 	document.body.removeChild(tempTextarea);

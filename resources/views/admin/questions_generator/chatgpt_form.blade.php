@@ -85,49 +85,61 @@
 					<div class="similarity-content-tabs">
 						<ul class="nav" id="myTab" role="tablist">
 							<li class="nav-item" role="presentation">
-								<button class="nav-link active" id="prompts-tab" data-toggle="tab" data-target="#prompts" type="button" role="tab" aria-controls="prompts" aria-selected="false">Prompts</button>
+								<button class="nav-link active rurera-hide" id="prompts-tab" data-toggle="tab" data-target="#prompts" type="button" role="tab" aria-controls="prompts" aria-selected="false">Prompts</button>
 							</li>
 							
 						</ul>
 						<div class="tab-content" id="myTabContent">
 
 							<div class="tab-pane fade show active py-0" id="prompts" role="tabpanel" aria-labelledby="prompts-tab">
-								<div id="accordion">
-									<div class="similarity-content-block-data">
-										@if($QuestionsBulkListObj->prompts->count() > 0 )
-											@foreach($QuestionsBulkListObj->prompts as $promptObj)
-												<div class="card">
-													<div class="card-header" id="heading{{$promptObj->id}}">
-														<h5 class="mb-0">
-														<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapse{{$promptObj->id}}" aria-expanded="true" aria-controls="collapse{{$promptObj->id}}">
-															<div class="d-flex w-100">
-																<div class="similarity-serial blue font-16 font-weight-bold">
-																	<label for="api_id_{{$promptObj->id}}">
-																	{{isset( $promptObj->TopicPartsItem->id)? $promptObj->TopicPartsItem->title : ''}}
-																	@if(isset($promptObj->TopicPartsItem->id))
-																		<br>Prompt: {{$promptObj->prompt_title}} -- {{$promptObj->TopicPartsItem->id}}<br>
-																		<br>Generated: {{$promptObj->TopicPartsItem->topicPartItemQuestions->count()}}
-																		<br>Expected: {{getPartQuestions($promptObj->TopicPartsItem->difficulty_level)}}
-																	@endif
-																	</label>
-																</div>
-																<input type="radio" class="rurera-hide" name="api_id" id="api_id_{{$promptObj->id}}" value="{{$promptObj->id}}">
-																
-															</div>
-														</button>
-														</h5>
-													</div>
-													<div id="collapse{{$promptObj->id}}" class="collapse" aria-labelledby="heading{{$promptObj->id}}" data-parent="#accordion">
-														<div class="card-body">
-															<button type="button" class="copy-prompt btn btn-primary">Copy</button>
-															<pre class="prompt-text">{!! $promptObj->prompt_text !!}</pre>
-														</div>
-													</div>
-												</div>
-											@endforeach
-										@endif
+							
+								<div id="accordion" class="topic-parts-data">
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Topic Part Item</th>
+													<th>Expected Questions</th>
+													<th>No of Questions</th>
+												</tr>
+											 </thead>
+											  <tbody id="topic_part_1">
+													@if($sub_topic_parts->count() > 0 )
+														@foreach($sub_topic_parts as $subTopicObj)											  
+															<tr class="topic_parts accordion-parent" data-child_class="subtopic_prompts_{{$subTopicObj->id}}">
+															  <td><span class="topic-part-title"><i class="fas fa-chevron-right"></i>&nbsp;{{$subTopicObj->title}}</span></td>
+															  <td>{{$subTopicObj->difficulty_level}} ({{getPartQuestions($subTopicObj->difficulty_level)}})</td>
+															  <td>{{$subTopicObj->topicPartItemQuestions->count()}}</td>
+															</tr>
+															@if($subTopicObj->topicPartItemPrompts->count() > 0 )
+																@foreach($subTopicObj->topicPartItemPrompts as $promptObj)			
+																	@php $prompt_title = $promptObj->title;
+																	$prompt_title = ($prompt_title == '')? 'Prompt' : $prompt_title;
+																	@endphp
+																	<tr style="display:none;" class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
+																	  <td>
+																		<span class="list-group">
+																			<input type="radio" name="api_id" id="topic_subpart_{{$promptObj->id}}" value="{{$promptObj->id}}">
+																			<label class="copyable-text" for="topic_subpart_{{$promptObj->id}}">{{$prompt_title}}</label>
+																		</span>
+																	  </td>
+																	  <td colspan="2"><pre class="copyable-text">{!! $promptObj->prompt_text !!}</pre></td>
+																	</tr>
+																@endforeach
+															@else
+																<tr style="display:none;" class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
+																  <td colspan="3">
+																	No Prompt Found!
+																  </td>
+																</tr>
+															@endif
+														@endforeach
+													@endif
+												</tbody>
+											</table>
+										</div>
 									</div>
-								</div>
+							
 							</div>
 						</div>
 					</div>
@@ -183,8 +195,21 @@ function validateJSON() {
 	});
     $(document).ready(function () {
 		
-		
-		
+		$(document).on('click', '.accordion-parent', function () {
+			var child_class = $(this).attr('data-child_class');
+			if($('.'+child_class).is(":visible")) {
+				$(this).find('.fas').removeClass('fa-chevron-down').addClass('fa-chevron-right');
+				if ($('.' + child_class).hasClass('accordion-parent')) {
+					var sub_child_class = $('.'+child_class).attr('data-child_class');
+					$('.'+sub_child_class).hide(300);
+					$('.'+child_class).find('.fas').removeClass('fa-chevron-down').addClass('fa-chevron-right');
+				}
+			}else{
+				$(this).find('.fas').removeClass('fa-chevron-right').addClass('fa-chevron-down');
+			}
+			$('.'+child_class).toggle(300);
+			
+		});
 		
     });
 	
