@@ -1939,7 +1939,7 @@ Admin Questions Generator Page Style End
 .similarity-content-tabs .card .card-header h5 {
     width: 100%;
 }
-.btn-link .similarity-serial { color: #999;}
+.btn-link .similarity-serial { color: #999; font-size: 14px;}
 .similarity-content-tabs .card .card-body {
     border: 0;
     padding: 5px 0 20px;
