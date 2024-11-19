@@ -116,9 +116,9 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /* Image Static Style Start */
 
 /*Image Sizes Style Start*/
-.image-large img {max-width: 400px;	min-width: 400px;}
-.image-medium img {max-width: 300px;min-width: 300px;}
-.image-small img {max-width: 200px;	min-width: 200px;}
+.image-large img {max-width: 400px;}
+.image-medium img {max-width: 250px;}
+.image-small img {max-width: 200px;}
 /*Image Sizes Style End*/
 
 /*Image Alignments Style Start*/
