@@ -446,7 +446,7 @@ $rand_id = rand(999,99999);
                                                                 @endforeach
                                                             @endif
                                                         </div>
-														<button type="button" class="add-keyword-btn"><img src="/assets/default/img/keyword.png" height="64" width="64" alt="keyword image"> Add keyword</button>
+														<button type="button" class="add-keyword-btn"><i class="fas fa-plus"></i> Add keyword</button>
                                                 </div>
                                             </div>
 										</div>
@@ -456,7 +456,11 @@ $rand_id = rand(999,99999);
 										<div class="col-12 col-md-12">
 											<div class="create-question-fields-block d-flex align-items-center mb-30">
 												<button type="button" data-status="Submit for review" class="quiz-stage-builder-generate btn btn-primary font-16">
+												@if($questionObj->status == 'api_pending')
 													Approve
+												@else
+													Update
+												@endif
 												</button>
 												
 												 <button type="button" data-status="" data-question_id="{{isset( $questionObj->id )? $questionObj->id : 0 }}" class="reject-api-question btn btn-danger font-16">
