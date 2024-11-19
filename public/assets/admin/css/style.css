@@ -1968,7 +1968,7 @@ Admin Questions Generator Page Style End
 }
 .similarity-percentage.red {
     color: #fff;
-    background-color: var(--red);
+    background-color: #ffacb4;
 }
 .similarity-serial {
     display: inline-flex;
