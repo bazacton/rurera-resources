@@ -1378,6 +1378,7 @@ body:has(.api-questions-form) .container {
     width: auto;
     max-width: inherit;
     display: inline-block;
+    outline: none;
 }
 .keyword-item {
     display: flex;
