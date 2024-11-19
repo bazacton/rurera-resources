@@ -1213,7 +1213,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
     border-bottom-color: #bbb;
 }
 .edit-questions-tabs .move-up-keyword {color: #4CAF50;}
-.edit-questions-tabs .move-down-keyword {color: #2196F3;}
+.edit-questions-tabs .move-down-keyword {color: #2196F3; outline: none;}
 .edit-questions-tabs .move-up-keyword:hover,
 .edit-questions-tabs .move-down-keyword:hover {background-color: inherit; outline: none;}
 .edit-questions-tabs .keywords-section .add-keyword-btn {border: 0; background-color: inherit; height: auto; color: var(--primary); text-decoration: underline; outline: none;}
@@ -1393,6 +1393,7 @@ body:has(.api-questions-form) .container {
     font-size: 16px;
     background: none;
     line-height: 16px;
+    outline: none;
 }
 /* Up button style */
 .move-up-keyword {
