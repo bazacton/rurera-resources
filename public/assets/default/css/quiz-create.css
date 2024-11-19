@@ -1202,6 +1202,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .nav .rurera-loader-holder .rurera-button-loader {margin-top: -5px; margin-left: -5px;}
 .edit-questions-tabs .nav .rurera-processing .nav-link {display: none;}
 .edit-questions-tabs .nav .nav-link.generated {color: #000;}
+.edit-questions-tabs .nav .nav-link.active.generated {border-bottom-color: #000;}
 .edit-questions-tabs .nav .nav-link.waiting {
     color: #bbb;
 }
