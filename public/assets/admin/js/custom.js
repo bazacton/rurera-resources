@@ -1390,7 +1390,7 @@ $(document).on('click', '.copyable-text', function () {
             text: 'Text Copied',
             bgColor: 'green',
             textColor: 'white',
-            hideAfter: 10000,
+            hideAfter: 3000,
             position: 'bottom-right',
             icon: 'success'
           });
