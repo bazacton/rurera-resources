@@ -105,7 +105,7 @@
 																	<label for="api_id_{{$promptObj->id}}">
 																	{{isset( $promptObj->TopicPartsItem->id)? $promptObj->TopicPartsItem->title : ''}}
 																	@if(isset($promptObj->TopicPartsItem->id))
-																		<br>Prompt: {{$promptObj->prompt_title}}<br>
+																		<br>Prompt: {{$promptObj->prompt_title}} -- {{$promptObj->TopicPartsItem->id}}<br>
 																		<br>Generated: {{$promptObj->TopicPartsItem->topicPartItemQuestions->count()}}
 																		<br>Expected: {{getPartQuestions($promptObj->TopicPartsItem->difficulty_level)}}
 																	@endif
