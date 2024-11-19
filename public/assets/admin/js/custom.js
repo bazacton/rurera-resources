@@ -1398,3 +1398,37 @@ $(document).on('click', '.copyable-text', function () {
 	// Remove the temporary <textarea> element
 	document.body.removeChild(tempTextarea);
 });
+
+$(document).on('click', '.copy-to-text', function () {
+	// Get the content inside the <pre> tag
+	var copyable_div = $(this).attr('data-copy_to');
+	const promptText = copyable_div.text();
+
+	// Create a temporary <textarea> element to copy text from
+	const tempTextarea = document.createElement('textarea');
+	tempTextarea.value = promptText;
+	document.body.appendChild(tempTextarea);
+	
+	// Select the text and copy it
+	tempTextarea.select();
+	tempTextarea.setSelectionRange(0, 99999); // For mobile devices
+
+	try {
+		document.execCommand('copy');
+		
+	} catch (error) {
+	}
+	
+	$.toast({
+            heading: 'Success!',
+            text: 'Text Copied',
+            bgColor: 'green',
+            textColor: 'white',
+            hideAfter: 3000,
+            position: 'bottom-right',
+            icon: 'success'
+          });
+
+	// Remove the temporary <textarea> element
+	document.body.removeChild(tempTextarea);
+});

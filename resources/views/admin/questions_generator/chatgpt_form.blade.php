@@ -123,7 +123,7 @@
 																			<label for="topic_subpart_{{$promptObj->id}}">{{$prompt_title}}</label>
 																		</span>
 																	  </td>
-																	  <td colspan="2"><pre class="copyable-text">{!! $promptObj->prompt_text !!}</pre></td>
+																	  <td colspan="2"><span class="copy-to-text" data-copy_to="prompt-text">Click to Copy Prompt</span><pre class="rurera-hide prompt-text">{!! $promptObj->prompt_text !!}</pre></td>
 																	</tr>
 																@endforeach
 															@else
