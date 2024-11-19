@@ -15,7 +15,7 @@
 				
 					
 
-	<form action="/admin/questions-generator/submit-response" method="POST" id="question-generator-form" class="px-25" onsubmit="return validateJSON()">
+	<form action="/admin/questions-generator/submit-response" method="POST" id="question-generator-form" class="px-25 pt-30" onsubmit="return validateJSON()">
 	@csrf
 
 	<input type="hidden" name="bulk_id" value="{{$QuestionsBulkListObj->id}}">
