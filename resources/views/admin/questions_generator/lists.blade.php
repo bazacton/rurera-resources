@@ -298,7 +298,7 @@
 				<span aria-hidden="true">&times;</span>
 			</button>
 			  <div class="modal-box">
-			  <form action="/admin/questions-generator/generate-bulk-list" method="POST" id="generate-bulk-list-form" class="px-25 generate-bulk-list-form">
+			  <form action="/admin/questions-generator/generate-bulk-list" method="POST" id="generate-bulk-list-form" class="generate-bulk-list-form">
 				@csrf
 				
 				<div class="row">
