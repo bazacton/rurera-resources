@@ -238,11 +238,11 @@
 											<a href="/admin/questions-generator/add-prompt/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Add Prompt">
 												<i class="fas fa-plus-circle"></i>
 											</a>&nbsp;&nbsp;&nbsp;
-											<a href="/admin/questions-generator/add-response/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Add Response">
+											<a href="/admin/questions-generator/add-response/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Import Questions">
 												<i class="fas fa-download"></i>
 											</a>&nbsp;&nbsp;&nbsp;
 											@if($QuestionsBulkListObj->total_questions > 0)
-												<a href="/admin/questions-generator/view-api-response/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
+												<a href="/admin/questions-generator/view-api-response/{{ $QuestionsBulkListObj->id }}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Questions List">
 													<i class="fas fa-sitemap"></i>
 												</a>
 											@endif
