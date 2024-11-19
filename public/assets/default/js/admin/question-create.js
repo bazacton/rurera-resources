@@ -10354,7 +10354,7 @@ $(document).on('click', '.reject-api-question', function () {
         success: function (return_data) {
             Swal.fire({
 				icon: "success",
-				html: '<h3 class="font-20 text-center text-dark-blue">Question Rejected successfully!</h3>',
+				html: '<h3 class="font-20 text-center text-dark-blue">Question Deleted successfully!</h3>',
 				showConfirmButton: !1
 			});
         }
