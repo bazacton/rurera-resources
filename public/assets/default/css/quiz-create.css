@@ -1356,7 +1356,7 @@ body:has(.api-questions-form) .container {
     margin-bottom: 30px;
 }
 .question-explain-block h3 {
-    color: blue;
+    color: #000;
 }
 /* Styling for keyword */
 .question-keywors-block h3 {
