@@ -451,7 +451,32 @@ $rand_id = rand(999,99999);
                                             </div>
 										</div>
 										</div>
+										
+										
+										<div class="col-12 col-md-12">
+											<div class="create-question-fields-block d-flex align-items-center mb-30">
+												<button type="button" data-status="Submit for review" class="quiz-stage-builder-generate btn btn-primary font-16">
+													Approve
+												</button>
+												
+												 <button type="button" data-status="" data-question_id="{{isset( $questionObj->id )? $questionObj->id : 0 }}" class="reject-api-question btn btn-danger font-16">
+													Reject
+												</button>
+											</div>
+										</div>
                                         </div>
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
                                     </div>
                                     <div class="col-5 col-md-5">
 
@@ -690,26 +715,8 @@ $rand_id = rand(999,99999);
                                 </div>
 	
     </div>
+@include('admin.questions_bank.question_editor_fields_controls')
 
-
-    <div class="row">
-        <div class="col-12 col-md-12">
-
-
-            @include('admin.questions_bank.question_editor_fields_controls')
-
-
-            <div class="create-question-fields-block d-flex align-items-center mb-30">
-                <button type="button" data-status="Submit for review" class="quiz-stage-builder-generate btn btn-primary font-16">
-                    Approve
-                </button>
-				
-				 <button type="button" data-status="" data-question_id="{{isset( $questionObj->id )? $questionObj->id : 0 }}" class="reject-api-question btn btn-danger font-16">
-                    Reject
-                </button>
-            </div>
-        </div>
-    </div>
     </div>
     </div>
     </div>

@@ -294,11 +294,8 @@
     <div class="modal-dialog">
         <div class="modal-content edit-quest-modal-div">
             <div class="modal-body">
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			</button>
 			  <div class="modal-box">
-			  <form action="/admin/questions-generator/generate-bulk-list" method="POST" id="generate-bulk-list-form" class="generate-bulk-list-form">
+			  <form action="/admin/questions-generator/generate-bulk-list" method="POST" id="generate-bulk-list-form" class="px-25 generate-bulk-list-form">
 				@csrf
 				
 				<div class="row">
@@ -385,12 +382,13 @@
 
 							</div>
 						</div>
+						
 						</div>
 					</div>
 				</div>
 				<div class="inactivity-controls">
 					<button type="submit" class="submit-btn mt-0">Generate List</button>
-					<!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
+					<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a>
 				</div>
 				<form>
 			  </div>

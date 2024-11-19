@@ -102,50 +102,22 @@ $rand_id = rand(999,99999);
 	<h2>{{$QuestionsBulkListObj->quizData->getTitleAttribute()}}</h2>
 @else
 <span>{{$QuestionsBulkListObj->category->getTitleAttribute()}} / {{$QuestionsBulkListObj->subject->getTitleAttribute()}} / {{$QuestionsBulkListObj->chapter->getTitleAttribute()}}</span>
-<h2>{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</h2>
-@endif
-<!-- Edit-questions Tabs Start -->
-<div class="edit-questions-tabs" data-similarities_array="{{$similarities_array}}" data-similiarity_responses="{{$similiarity_responses}}">	
-  <div class="nav" id="nav-tab" role="tablist">
-	@if(!empty( $questions_array) )
-		@php $counter = 1; @endphp
-		@foreach( $questions_array as $question_index => $questionData)
-			@php $status = isset( $questionData['status'] ) ? $questionData['status'] : 'waiting'; 
-			$class = 'question-builder-layout';
-			$is_deleted = 'no';
-			if($status == 'deleted'){ $is_deleted = 'yes'; }
-			@endphp
-			@php $question_id = isset( $questionData['question_id'] ) ? $questionData['question_id'] : 0; @endphp
-			@php $active_class = ($counter == 1)? 'active' : ''; 
-			$current_status = isset( $similarity_status[$counter] )? $similarity_status[$counter] : '';
-			$status_html = '';
-			if($current_status != ''){	
-				$status_html = '<span class="similiarity-status '.$current_status.'"></span><br>';
-			}
-			
-			@endphp
-			<button data-question_index="{{$counter}}" data-question_id="{{$question_id}}" data-is_deleted="{{$is_deleted}}" class="{{$status}} {{$class}} nav-link {{$active_class}}" id="nav-q{{$counter}}-tab" data-toggle="tab" data-target="#nav-q{{$counter}}" type="button" role="tab" aria-controls="nav-q{{$counter}}" aria-selected="true">{!!$status_html!!}{{$counter}}</button>
-		@php $counter++; @endphp
-		@endforeach
-	@endif
-  </div>
-  <div class="tab-content" id="nav-tabContent" style="min-height:500px;">
-	@if(!empty( $questions_array) )
-		@php $counter = 1; @endphp
-		@foreach( $questions_array as $questionData)
-		@php $status = isset( $questionData['status'] ) ? $questionData['status'] : 'waiting'; 
-		$class = 'question-builder-area';
-		@endphp
-		@php $active_class = ($counter == 1)? 'show active' : ''; @endphp
-		
-		@php $question_id = isset( $questionData['question_id'] ) ? $questionData['question_id'] : 0; @endphp
-		<div data-question_id="{{$question_id}}" class="tab-pane fade {{$active_class}} {{$class}}" id="nav-q{{$counter}}" role="tabpanel" aria-labelledby="nav-q{{$counter}}-tab">
-		
+<div class="title-search-field">
+<h2>{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</h2> <select name="part_item_id" data-bulk_list_id="{{$QuestionsBulkListObj->id}}" class="part_item_selection form-control populate">
+			@php $topic_counter = 1; @endphp
+			@if($topic_parts_items->count() > 0)
+				@foreach($topic_parts_items as $topicPartItemObj)
+					<option value="{{$topicPartItemObj->id}}" {{($topic_counter == 1)? 'selected' : ''}}>{{$topicPartItemObj->title}}</option>
+					@php $topic_counter++; @endphp
+				@endforeach
+			@endif
+		</select>
 		</div>
-		@php $counter++; @endphp
-		@endforeach
-	@endif
-  </div>
+@endif
+
+
+<!-- Edit-questions Tabs Start -->
+<div class="edit-questions-tabs">	
 </div>
 <!-- Edit-questions Tabs End -->
 
@@ -241,13 +213,34 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
 });
 
 
-
+$("body").on("change", ".part_item_selection", function (t) {
+	var part_item_id = $(this).val();
+	var bulk_list_id = $(this).attr('data-bulk_list_id');
+	var loaderDiv = $('.edit-questions-tabs');
+	rurera_loader(loaderDiv, 'button');
+	$.ajax({
+		type: "GET",
+		url: '/admin/questions-generator/get_questions_list_layout',
+		data: {'part_item_id': part_item_id, 'bulk_list_id': bulk_list_id},
+		success: function (return_data) {
+			rurera_remove_loader(loaderDiv, 'button');
+			$(".edit-questions-tabs").html(return_data);
+			$(".question-builder-layout.active").click();
+		}
+	});
+});
+$(".part_item_selection").change();
+function decodeHtml(html) {
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
  $("body").on("click", ".question-builder-layout", function (t) {
 	 var thisObj = $(this);
 	 var question_id = $(this).attr('data-question_id');
 	 var question_index = $(this).attr('data-question_index');
 	 var is_deleted = $(this).attr('data-is_deleted');
-	 var similiarity_responses = $('.edit-questions-tabs').attr('data-similiarity_responses');
+	 var similiarity_responses = $('.nav').attr('data-similiarity_responses');
 	 similiarity_responses = JSON.parse(similiarity_responses);
 	 current_similarities_array = [];
 	 if (similiarity_responses.hasOwnProperty(question_index)) {
@@ -255,10 +248,7 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
 	 }
 	 var similiarity_html = '';
 	 $.each(current_similarities_array, function(index, entry) {
-		var status_class = '';
-		//status_class = (similiarity_value > 65) ? 'rurera-danger' : status_class;
-		//status_class = (similiarity_value > 40) ? 'rurera-warning' : status_class;
-		similiarity_html += entry;
+		similiarity_html += decodeHtml(entry);
 	});
 	 
 	 
