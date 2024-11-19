@@ -77,7 +77,7 @@ shuffle($characters_list);
 				   <audio  class="player-box-audio" id="audio_file_{{ $question->id }}-word" src="{{isset($word_data['word_audio'])? $word_data['word_audio'] : ''}}"> </audio>
 				   <audio  class="player-box-audio" id="audio_file_{{ $question->id }}" src="{{isset($word_data['audio_file'])? $word_data['audio_file'] : ''}}"> </audio>
                 </div>
-                <div class="spells-quiz-from question-layout row d-flex align-items-center ">
+                <div class="spells-quiz-from question-layout row d-flex align-items-start ">
                     <div class="form-field">
 					
 					
