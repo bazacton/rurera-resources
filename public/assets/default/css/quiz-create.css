@@ -1231,6 +1231,8 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
     background-color: #f44336;
     border-radius: 3px;
     padding: 4px 8px;
+    font-weight: 400;
+    font-size: 12px;
 }
 .edit-questions-tabs .move-up-keyword:hover,
 .edit-questions-tabs .move-down-keyword:hover {background-color: inherit; outline: none;}
@@ -1416,6 +1418,9 @@ body:has(.api-questions-form) .container {
 }
 .question-keywords-block .keyword-buttons {
     margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
 }
 /* Up button questions-generator/view-api style */
 .move-up-keyword {
