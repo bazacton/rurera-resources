@@ -241,8 +241,6 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 
 .custom-switch-input:checked ~ .custom-switch-indicator:before {left: calc(1rem + 1px); }
 
-.custom-switch-input:focus ~ .custom-switch-indicator {border-color: var(--primary);}
-
 .custom-switch-description {margin-left: .5rem; color: #6e7687; transition: .3s color;}
 
 .custom-switch-input:checked ~ .custom-switch-description {color: #495057; }
