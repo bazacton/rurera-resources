@@ -209,7 +209,6 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .lms-checkbox-img.image-top .form-field label:before {border-radius: 0; height: 20px; width: 20px; top:10px; margin: 0; right: 10px;}
 .lms-checkbox-img.image-top .form-field label:after {right: 13px; top: 9px; margin-top: 0; width: 15px; height: 15px; font-size: 14px; }
 .lms-checkbox-img.image-top label img {margin: 0 auto 10px; width: auto; max-width: 100%; height: auto;}
-.lms-checkbox-img.image-top .form-field input[type="checkbox"]:checked ~ label img {margin-right: 0;}
 /*image right style*/
 .image-right .form-field input[type="checkbox"] ~ label {padding-right: 60px;}
 .lms-checkbox-img.image-right .form-field label img {position: absolute; right: 10px; margin: 0; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);}
