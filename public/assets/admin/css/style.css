@@ -2122,4 +2122,7 @@ Admin Questions Generator Page Style End
     -webkit-transition: all .5s;
     -o-transition: all .5s;
 }
+.similarity-content-tabs:has(#prompts-tab) .tab-content {
+    padding-top: 25px;
+}
 /* Prompts Tab style End */
