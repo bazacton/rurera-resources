@@ -120,7 +120,7 @@
 																	  <td>
 																		<span class="list-group">
 																			<input type="radio" name="api_id" id="topic_subpart_{{$promptObj->id}}" value="{{$promptObj->id}}">
-																			<label class="copyable-text" for="topic_subpart_{{$promptObj->id}}">{{$prompt_title}}</label>
+																			<label for="topic_subpart_{{$promptObj->id}}">{{$prompt_title}}</label>
 																		</span>
 																	  </td>
 																	  <td colspan="2"><pre class="copyable-text">{!! $promptObj->prompt_text !!}</pre></td>
