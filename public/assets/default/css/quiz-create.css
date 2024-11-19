@@ -9,8 +9,10 @@ Questions Builder style start
 .col-7 .rureraform-builder .rureraform-col-4 img, 
 .col-7 .rureraform-builder .rureraform-col-5 img, 
 .col-7 .rureraform-builder .rureraform-col-5 img {max-width: 100%; min-width: 100%;}
-.rureraform-builder {max-width: 896px; margin: 0 auto;}
 .rureraform-builder .rureraform-elements {max-width: 100%; padding: 0;}
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+    .rureraform-builder {min-width: 896px; max-width: 896px; margin: 0 auto;}
+}
 /* Questions Builder Stage style End */
 
 /* Toolbar Buttons style start */
