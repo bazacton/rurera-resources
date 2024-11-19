@@ -102,8 +102,8 @@ $rand_id = rand(999,99999);
 	<h2>{{$QuestionsBulkListObj->quizData->getTitleAttribute()}}</h2>
 @else
 <span>{{$QuestionsBulkListObj->category->getTitleAttribute()}} / {{$QuestionsBulkListObj->subject->getTitleAttribute()}} / {{$QuestionsBulkListObj->chapter->getTitleAttribute()}}</span>
-<div class="title-search-field">
-<h2>{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</h2> <select name="part_item_id" data-bulk_list_id="{{$QuestionsBulkListObj->id}}" class="part_item_selection form-control populate">
+<div class="title-search-field d-flex align-items-center justify-content-between">
+<h2>{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</h2> <select name="part_item_id" data-bulk_list_id="{{$QuestionsBulkListObj->id}}" class="part_item_selection form-control populate w-auto">
 			@php $topic_counter = 1; @endphp
 			@if($topic_parts_items->count() > 0)
 				@foreach($topic_parts_items as $topicPartItemObj)
