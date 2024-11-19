@@ -1707,200 +1707,201 @@ output {
     border-radius: .25rem;
     padding-right: 5px;
 }
-    .option-group input[type="text"] {
-        flex: 1;
-         border: 0;
-    }
-    .option-buttons button {
-        cursor: pointer;
-        padding: 5px 8px;
-        font-size: 14px;
-        border: none;
-        border-radius: 4px;
-    }
-    .add-option-btn {
-        color: var(--primary);
-        text-decoration: underline;
+.option-group input[type="text"] {
+    flex: 1;
         border: 0;
-        background: none;
-    }
-    .submit-btn {
-        padding: 10px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        font-size: 16px;
-        cursor: pointer;
-        margin-top: 20px;
-        display: block;
-        width: 100%;
-    }
-    .remove-option-btn {
-        background-color: #f44336;
-        color: white;
-    }
-    .move-up-btn, .move-down-btn {
-        background-color: #2196F3;
-        color: white;
-    }
-    /* Question Type List In A Row Style Start */
-    .list-group.list-in-row {
-        display: flex;
-        flex-direction: row;
-        gap: 3px;
-    }
-    /* Question Type List In A Row Style End */
+}
+.option-buttons button {
+    cursor: pointer;
+    padding: 5px 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+}
+.add-option-btn {
+    color: var(--primary);
+    text-decoration: underline;
+    border: 0;
+    background: none;
+}
+.submit-btn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+.remove-option-btn {
+    background-color: #f44336;
+    color: white;
+}
+.move-up-btn, .move-down-btn {
+    background-color: #2196F3;
+    color: white;
+}
+/* Question Type List In A Row Style Start */
+.list-group.list-in-row {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+/* Question Type List In A Row Style End */
 
-    /* Note-Editable Order List Style Start */
-    .note-editable ul,
-    .note-editable ol {
-        padding-left: 25px;
-    }
-    /* Note-Editable Order List Style End */
-    /* Note-Editable Table Default Style Start */
-    .example-question-block table {
-        width: 100%;
-    }
-    .example-question-block table, .example-question-block th, .example-question-block td {
-        border: 1px solid #f6f6f6;
-        border-collapse: collapse;
-        padding: 5px;
-    }
-    /* Note-Editable Table Default Style End */
-    /* Note-Dropdown-Menu Style Start */
-    .note-dropdown-menu h1,
-    .note-dropdown-menu h2,
-    .note-dropdown-menu h3,
-    .note-dropdown-menu h4,
-    .note-dropdown-menu h5,
-    .note-dropdown-menu h6 {
-        font-size: 14px;
-    }
-    /* Note-Dropdown-Menu Style End */
-    
-    .example-question-block {
-        border-left: 1px solid #e4e6fc;
-        padding-left: 30px;
-        height: 100%;
-    }
-    
-    /* Questions Defined Searches style Start */
-    .defined-searches {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 25px;
-        background-color: #efefef;
-        padding: 10px 130px 10px 10px;
-        flex-wrap: wrap;
-        position: relative;
-    }
-    .card-body ~ .defined-searches {
-        margin-bottom: 0;
-    }
-    .defined-searches .save-template {
-        margin-left: auto;
-        min-width: 110px;
-        position: absolute;
-        right: 10px;
-    }
-    .apply-template-field {
-        background-color: #fff;
-        padding: 5px 10px;
-        border-radius: 3px;
-        color: var(--primary);
-        cursor: pointer;
-        display: inline-flex;
-        align-items: center;
-    }
-    .apply-template-field:hover {
-        color: var(--blue);
-    }
-    .apply-template-field:hover a {
-        text-decoration: none;
-    }
-    .defined-searches span strong {
-        min-width: 100px;
-        display: block;
-    }
-    /* Questions Defined Searches style end */
+/* Note-Editable Order List Style Start */
+.note-editable ul,
+.note-editable ol {
+    padding-left: 25px;
+}
+/* Note-Editable Order List Style End */
+/* Note-Editable Table Default Style Start */
+.example-question-block table {
+    width: 100%;
+}
+.example-question-block table, .example-question-block th, .example-question-block td {
+    border: 1px solid #f6f6f6;
+    border-collapse: collapse;
+    padding: 5px;
+}
+/* Note-Editable Table Default Style End */
+/* Note-Dropdown-Menu Style Start */
+.note-dropdown-menu h1,
+.note-dropdown-menu h2,
+.note-dropdown-menu h3,
+.note-dropdown-menu h4,
+.note-dropdown-menu h5,
+.note-dropdown-menu h6 {
+    font-size: 14px;
+}
+/* Note-Dropdown-Menu Style End */
 
-    /* Topic-parts-data style Start */
-    .topic-parts-data .card {
-        padding: 10px;
-    }
-    .topic-parts-data .card .card-header {
-        padding: 0;
-    }
-    .topic-parts-data .card .card-header .btn {
-        padding: 0;
-    }
-    .topic-parts-data .card table {
-        margin: 0;
-        width: 100%;
-        border: 0;
-    }
-    .topic-parts-data .form-group {
-        margin: 0;
-    }
-    .topic-parts-data .card .card-body {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .topic-parts-data table tr td .topic-part-title {
-        color: var(--blue);
-        position: relative;
-        display: block;
-        padding-left: 15px;
-        font-size: 14px;
-        font-weight: 600;
-        cursor: pointer;
-    }
-    .topic-parts-data table tr td .topic-part-title i {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-    }
-    .topic-parts-data table tr td:has(.topic-part-title) {
-        min-width: 100px;
-    }
-    .topic-parts-data table tr td {
-        border: 2px dotted #ddd;
-        padding-top: 10px !important;
-        padding-bottom: 10px !important;
-        height: auto !important;
-    }
-    /* Topic-parts-data style End */
-    /* Questions Generator Column Setting Dropdown Style Start*/
-    .columns-settings .dropdown-menu {width: 300px; right: 0; left: auto !important; transform: none !important; top: 100% !important;}
-    .columns-settings h5 {font-size: 16px; font-weight: 500; color: #999;}
-    .columns-settings .column-list {margin-bottom: 20px;}
-    .columns-settings .toggle-switch {justify-content: flex-start; border-bottom: 1px solid #ccc; padding-bottom: 5px;}
-    .columns-settings input[type="checkbox"] {margin-left: auto;}
-    .columns-settings:not(.drag-handle) span {font-size: 14px; color: #212529;}
-    .card .card-header .columns-settings .dropdown .btn {display: inline-block; width: auto !important; vertical-align: middle; margin-top: 0 !important; box-shadow: none; padding: .2rem 1rem; border-radius: 5px; background-color: #f8f8f8; border-color: #f8f8f8; color: gray; font-weight: bold;}
-    .card .card-header .columns-settings .dropdown .btn-primary {background-color: #d6d6d6 !important; border-color: #d6d6d6 !important; color: #333;}
-    .columns-settings .dropdown-menu .search-input {font-size: 14px; margin-bottom: 5px; padding-left: 10px;}
-    .card .card-header:has(.columns-settings) {flex-direction: row-reverse;}
-    .columns-settings {margin-left: auto;}
-    .columns-settings .dropdown-toggle img {height: 25px; width: 25px; filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(71deg) brightness(108%) contrast(96%);}
-    .columns-settings .dropdown-toggle::after {display: none;}
-    .columns-settings .dropdown-toggle {padding: 8px 10px; background-color: var(--primary);}
-    /* Questions Generator Column Setting Dropdown Style End*/
+.example-question-block {
+    border-left: 1px solid #e4e6fc;
+    padding-left: 30px;
+    height: 100%;
+}
 
-    /* Questions Generator Table Style Start*/
-    .card:has(.columns-settings) .table-striped tr th {text-align: left !important;}
-    .card:has(.columns-settings) .table-striped tr th:last-child {text-align: center !important;}
-    /* Questions Generator Table Style End*/
-    .copyable-text {
-        cursor: pointer;
-        user-select: text; /* Allows text selection */
-    }
-    .copyable-text:hover {
-        text-decoration: underline;
-    }
+/* Questions Defined Searches style Start */
+.defined-searches {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    background-color: #efefef;
+    padding: 10px 130px 10px 10px;
+    flex-wrap: wrap;
+    position: relative;
+}
+.card-body ~ .defined-searches {
+    margin-bottom: 0;
+}
+.defined-searches .save-template {
+    margin-left: auto;
+    min-width: 110px;
+    position: absolute;
+    right: 10px;
+}
+.apply-template-field {
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: var(--primary);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+.apply-template-field:hover {
+    color: var(--blue);
+}
+.apply-template-field:hover a {
+    text-decoration: none;
+}
+.defined-searches span strong {
+    min-width: 100px;
+    display: block;
+}
+/* Questions Defined Searches style end */
+
+/* Topic-parts-data style Start */
+.topic-parts-data .card {
+    padding: 10px;
+}
+.topic-parts-data .card .card-header {
+    padding: 0;
+}
+.topic-parts-data .card .card-header .btn {
+    padding: 0;
+}
+.topic-parts-data .card table {
+    margin: 0;
+    width: 100%;
+    border: 0;
+}
+.topic-parts-data .form-group {
+    margin: 0;
+}
+.topic-parts-data .card .card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+.topic-parts-data table tr td .topic-part-title {
+    color: var(--blue);
+    position: relative;
+    display: block;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.topic-parts-data table tr td .topic-part-title i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.topic-parts-data table tr td:has(.topic-part-title) {
+    min-width: 100px;
+}
+.topic-parts-data table tr td {
+    border: 2px dotted #ddd;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    height: auto !important;
+}
+/* Topic-parts-data style End */
+/* Questions Generator Column Setting Dropdown Style Start*/
+.columns-settings .dropdown-menu {width: 300px; right: 0; left: auto !important; transform: none !important; top: 100% !important;}
+.columns-settings h5 {font-size: 16px; font-weight: 500; color: #999;}
+.columns-settings .column-list {margin-bottom: 20px;}
+.columns-settings .toggle-switch {justify-content: flex-start; border-bottom: 1px solid #ccc; padding-bottom: 5px;}
+.columns-settings input[type="checkbox"] {margin-left: auto;}
+.columns-settings:not(.drag-handle) span {font-size: 14px; color: #212529;}
+.card .card-header .columns-settings .dropdown .btn {display: inline-block; width: auto !important; vertical-align: middle; margin-top: 0 !important; box-shadow: none; padding: .2rem 1rem; border-radius: 5px; background-color: #f8f8f8; border-color: #f8f8f8; color: gray; font-weight: bold;}
+.card .card-header .columns-settings .dropdown .btn-primary {background-color: #d6d6d6 !important; border-color: #d6d6d6 !important; color: #333;}
+.columns-settings .dropdown-menu .search-input {font-size: 14px; margin-bottom: 5px; padding-left: 10px;}
+.card .card-header:has(.columns-settings) {flex-direction: row-reverse;}
+.columns-settings {margin-left: auto;}
+.columns-settings .dropdown-toggle img {height: 25px; width: 25px; filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(71deg) brightness(108%) contrast(96%);}
+.columns-settings .dropdown-toggle::after {display: none;}
+.columns-settings .dropdown-toggle {padding: 8px 10px; background-color: var(--primary);}
+/* Questions Generator Column Setting Dropdown Style End*/
+
+/* Questions Generator Table Style Start*/
+.card:has(.columns-settings) .table-striped tr th {text-align: left !important;}
+.card:has(.columns-settings) .table-striped tr th:last-child {text-align: center !important;}
+/* Questions Generator Table Style End*/
+.copyable-text {
+    cursor: pointer;
+    user-select: text; /* Allows text selection */
+}
+.copyable-text:hover {
+    text-decoration: underline;
+}
+#question-generator-form .prompt-text:empty {display: none;}
 /*****************************************
 Admin Questions Generator Page Style End
 *********************/
