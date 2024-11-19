@@ -1216,6 +1216,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .create-question-fields-block button {border: 1px solid var(--blue); color: var(--blue); background-color: inherit; box-shadow: none; line-height: normal;}
 .edit-questions-tabs .create-question-fields-block button:focus,
 .edit-questions-tabs .create-question-fields-block button:hover {color: #fff;}
+.edit-questions-tabs .rureraform-form-editor .rureraform-form {max-width: 100%;}
 /*Edit Questions Tabs style End admin/questions-generator/view-api-response*/
 
 /**************************************
