@@ -396,7 +396,6 @@ function rureraform_builder_save(_object, question_status) {
         data: post_data,
         success: function (return_data) {
 			return_data = jQuery.parseJSON(return_data);
-			console.log(return_data.question_id);
 			rureraform_sending = false;
             Swal.fire({
 				icon: "success",
@@ -10352,11 +10351,13 @@ $(document).on('click', '.reject-api-question', function () {
         },
         data: {"question_id": question_id},
         success: function (return_data) {
+			return_data = jQuery.parseJSON(return_data);
             Swal.fire({
 				icon: "success",
 				html: '<h3 class="font-20 text-center text-dark-blue">Question Deleted successfully!</h3>',
 				showConfirmButton: !1
 			});
+			window.location.href = '/admin/questions-generator/view-api-response/'+return_data.questions_bulk_list_id;
         }
     });
 });
