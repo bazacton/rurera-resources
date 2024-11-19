@@ -1402,7 +1402,7 @@ $(document).on('click', '.copyable-text', function () {
 $(document).on('click', '.copy-to-text', function () {
 	// Get the content inside the <pre> tag
 	var copyable_div = $(this).attr('data-copy_to');
-	const promptText = copyable_div.text();
+	const promptText = $('.'+copyable_div).text();
 
 	// Create a temporary <textarea> element to copy text from
 	const tempTextarea = document.createElement('textarea');
