@@ -32,7 +32,7 @@
 				</div>
 				<div class="col-md-12 col-lg-12">
 				
-				<div class="years-group populated-data">
+				<div class="years-group populated-data mb-30">
 					<div class="radio-buttons">
 						<label class="card-radio">
 							<input type="radio" name="example_question_id" id="example_question_id_13061" class="example_question_id" value="13061" checked>
