@@ -104,9 +104,8 @@
 																<div class="similarity-serial blue font-16 font-weight-bold">
 																	<label for="api_id_{{$promptObj->id}}">
 																	{{isset( $promptObj->TopicPartsItem->id)? $promptObj->TopicPartsItem->title : ''}}
-																	-- {{isset( $promptObj->TopicPartsItem->id)? $promptObj->TopicPartsItem->id : ''}}
 																	@if(isset($promptObj->TopicPartsItem->id))
-																		Prompt: {{$promptObj->prompt_title}}<br>
+																		<br>Prompt: {{$promptObj->prompt_title}}<br>
 																		<br>Generated: {{$promptObj->TopicPartsItem->topicPartItemQuestions->count()}}
 																		<br>Expected: {{getPartQuestions($promptObj->TopicPartsItem->difficulty_level)}}
 																	@endif
