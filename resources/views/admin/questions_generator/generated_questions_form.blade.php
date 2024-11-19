@@ -103,11 +103,14 @@ $rand_id = rand(999,99999);
 @else
 <span>{{$QuestionsBulkListObj->category->getTitleAttribute()}} / {{$QuestionsBulkListObj->subject->getTitleAttribute()}} / {{$QuestionsBulkListObj->chapter->getTitleAttribute()}}</span>
 <div class="title-search-field d-flex align-items-center justify-content-between">
-<h2>{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</h2> <select name="part_item_id" data-bulk_list_id="{{$QuestionsBulkListObj->id}}" class="part_item_selection form-control populate w-auto">
+<h2>{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</h2> <select data-default_question_id="{{$default_question_id}}" name="part_item_id" data-bulk_list_id="{{$QuestionsBulkListObj->id}}" class="part_item_selection form-control populate w-auto">
 			@php $topic_counter = 1; @endphp
 			@if($topic_parts_items->count() > 0)
 				@foreach($topic_parts_items as $topicPartItemObj)
-					<option value="{{$topicPartItemObj->id}}" {{($topic_counter == 1)? 'selected' : ''}}>{{$topicPartItemObj->title}}</option>
+					@php $selected = ($default_topic_part_id == 0 && $topic_counter == 1)? 'selected' : ''; 
+					$selected = ($default_topic_part_id == $topicPartItemObj->id)? 'selected' : $selected;
+					@endphp
+					<option value="{{$topicPartItemObj->id}}" {{$selected}}>{{$topicPartItemObj->title}}</option>
 					@php $topic_counter++; @endphp
 				@endforeach
 			@endif
@@ -216,12 +219,13 @@ $(document).off('click', 'body').on('click', 'body', function (event) {
 $("body").on("change", ".part_item_selection", function (t) {
 	var part_item_id = $(this).val();
 	var bulk_list_id = $(this).attr('data-bulk_list_id');
+	var default_question_id = $(this).attr('data-default_question_id');
 	var loaderDiv = $('.edit-questions-tabs');
 	rurera_loader(loaderDiv, 'button');
 	$.ajax({
 		type: "GET",
 		url: '/admin/questions-generator/get_questions_list_layout',
-		data: {'part_item_id': part_item_id, 'bulk_list_id': bulk_list_id},
+		data: {'part_item_id': part_item_id, 'bulk_list_id': bulk_list_id, 'default_question_id': default_question_id},
 		success: function (return_data) {
 			rurera_remove_loader(loaderDiv, 'button');
 			$(".edit-questions-tabs").html(return_data);

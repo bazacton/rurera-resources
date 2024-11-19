@@ -392,15 +392,18 @@ function rureraform_builder_save(_object, question_status) {
     var form_submit_url = $(".form-class").attr('data-question_save_type');
     jQuery.ajax({
         type: "POST",
-        url: form_submit_url,//'update_builder_question',
+        url: '/admin/questions-generator/view-api-response/update_builder_question',//'update_builder_question',
         data: post_data,
         success: function (return_data) {
+			return_data = jQuery.parseJSON(return_data);
+			console.log(return_data.question_id);
 			rureraform_sending = false;
             Swal.fire({
 				icon: "success",
 				html: '<h3 class="font-20 text-center text-dark-blue">Updated Successfully!ss</h3>',
 				showConfirmButton: !1
 			});
+			window.location.href = '/admin/questions-generator/view-api-response/'+return_data.questions_bulk_list_id+'/'+return_data.topic_part_id+'/'+return_data.question_id;
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             jQuery(_object).find("i").attr("class", "far fa-save");
@@ -10166,6 +10169,7 @@ $(document).on('click', '.quiz-stage-generate', function () {
 $(document).on('click', '.quiz-stage-builder-generate', function () {
 
     var question_status = $(this).attr('data-status');
+	
 	rureraform_builder_save(this, question_status);
 
 });
