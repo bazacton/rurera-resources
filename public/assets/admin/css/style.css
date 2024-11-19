@@ -2091,4 +2091,7 @@ Admin Questions Generator Page Style End
     font-weight: 500;
     font-size: 12px;
 }
+.edit-questions-tabs .similarity-content-tabs .nav {
+    gap: 25px;
+}
 /* Similarity Content Tabs style start */
