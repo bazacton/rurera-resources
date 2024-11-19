@@ -1957,11 +1957,11 @@ Admin Questions Generator Page Style End
 }
 .similarity-percentage.blue {
     color: #fff;
-    background-color: var(--blue);
+    background-color: #56a7ff;
 }
 .similarity-percentage.orange {
     color: #fff;
-    background-color: #ff973f;
+    background-color: #ffb97e;
 }
 .similarity-percentage.yellow {
     color: #fff;
