@@ -15,7 +15,7 @@
 				
 					
 
-	<form action="/admin/questions-generator/submit-response" method="POST" id="question-generator-form" class="px-25 pt-25" onsubmit="return validateJSON()">
+	<form action="/admin/questions-generator/submit-response" method="POST" id="question-generator-form" class="px-25" onsubmit="return validateJSON()">
 	@csrf
 
 	<input type="hidden" name="bulk_id" value="{{$QuestionsBulkListObj->id}}">
@@ -32,14 +32,14 @@
 				</div>
 				<div class="col-md-12 col-lg-12">
 				
-				<div class="years-group populated-data mb-30">
+				<div class="years-group populated-data">
 					<div class="radio-buttons">
 						<label class="card-radio">
 							<input type="radio" name="example_question_id" id="example_question_id_13061" class="example_question_id" value="13061" checked>
 							<span class="radio-btn"><i class="las la-check"></i>
 								<div class="card-icon">
 								 <img src="/assets/default/img/assignment-logo/practice.png">
-									<h3 class="mt-10">13061</h3>
+									<h3>13061</h3>
 							   </div>
 						  </span>
 						</label>
