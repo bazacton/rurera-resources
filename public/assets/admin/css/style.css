@@ -1458,7 +1458,7 @@ body .question-step:has(.prev-next-controls) {padding-bottom: 0; }
 #question_preview .marks {right: 30px; top: 20px; bottom: auto;}
 #question_preview .question-layout-block .prev-next-controls {position: absolute;}
 .topic-parts-options .form-field {margin-bottom: 15px;}
-.topic-parts-options label h5 {color: #999;}
+.topic-parts-options label h5 {color: #999 !important;}
 .lms-quiz-create .lms-dashboard-card {box-shadow: none;}
 
 /*pages Book List Style Start*/
