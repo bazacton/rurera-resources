@@ -1035,7 +1035,7 @@ scrollbar-gutter: stable both-edges;
 .input-holder input ~ .input-label {right: 10px;left: auto;}
 .input-holder input[type="number"] ~ .input-label {right: 10px;}
 .input-holder:has(input[type="number"] ~ .input-label) input[type="number"],
-.input-holder:has(input[type="text"] ~ .input-label) input[type="text"] {padding-right: 55px;}
+.input-holder:has(input[type="text"] ~ .input-label) input[type="text"] {padding-right: 60px;}
 .input-holder input[type=number]::-webkit-inner-spin-button, 
 .input-holder input[type=number]::-webkit-outer-spin-button {opacity: 1;}
 table.table td .input-holder input[type=number]::-webkit-inner-spin-button, 
