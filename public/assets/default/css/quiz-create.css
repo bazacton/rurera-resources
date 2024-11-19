@@ -1197,7 +1197,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .question-explain-block {background-color: #fff; border: 1px solid #ddd; border-radius: 5px; padding: 25px; margin-bottom: 30px;}
 .edit-questions-tabs .question-explain-block textarea,
 .question-explain-block textarea {width: 100%; border: 1px solid #ddd; padding: 10px; margin-bottom: 25px;}
-.edit-questions-tabs .question-keywords-block h3 {color: #333; font-size: 18px; margin: 0 0 10px;}
+.edit-questions-tabs .question-keywords-block h3 {color: #000; font-size: 20px; margin: 0 0 10px;}
 .edit-questions-tabs .rureraform-builder {border-radius: 0;}
 .edit-questions-tabs .rureraform-toolbars,
 .edit-questions-tabs .rureraform-toolbar {border-radius: 5px 5px 0 0;}
