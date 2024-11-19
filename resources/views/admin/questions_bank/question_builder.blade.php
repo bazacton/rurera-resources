@@ -446,7 +446,7 @@ $rand_id = rand(999,99999);
                                                                 @endforeach
                                                             @endif
                                                         </div>
-														<button type="button" class="add-keyword-btn">Add keyword</button>
+														<button type="button" class="add-keyword-btn"><img src="/assets/default/img/keyword.png" height="64" width="64" alt="keyword image"> Add keyword</button>
                                                 </div>
                                             </div>
 										</div>
