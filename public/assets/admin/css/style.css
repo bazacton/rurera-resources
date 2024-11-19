@@ -1960,6 +1960,10 @@ Admin Questions Generator Page Style End
     color: #fff;
     background-color: var(--blue);
 }
+.similarity-percentage.yellow {
+    color: #fff;
+    background-color: #ff973f;
+}
 .similarity-percentage.red {
     color: #fff;
     background-color: var(--red);
