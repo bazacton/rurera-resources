@@ -1400,6 +1400,11 @@ body:has(.api-questions-form) .container {
     display: inline-block;
     outline: none;
 }
+.editable-content {
+    line-height: normal;
+    border-bottom: 1px solid #2196F3;
+    color: #2196F3;
+}
 .keyword-item {
     display: flex;
     align-items: center;
