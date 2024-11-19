@@ -72,7 +72,7 @@ $rand_id = rand(99,9999);
 											<span class="question-number-holder" style="z-index: 999999999;"> <span class="question-number">1</span></span>
 												
 											<div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
-												<div class="question-layout row d-flex align-items-center">
+												<div class="question-layout row d-flex align-items-start">
 												@php $question_layout = $QuestionsAttemptController->get_question_layout($question); @endphp
 													{!! $question_layout !!}
 												</div>
