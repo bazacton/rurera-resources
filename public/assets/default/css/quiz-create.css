@@ -1395,7 +1395,7 @@ body:has(.api-questions-form) .container {
     line-height: 16px;
     outline: none;
 }
-/* Up button style */
+/* Up button questions-generator/view-api style */
 .move-up-keyword {
     background-color: #4CAF50; /* Green */
     color: white;
@@ -1404,7 +1404,7 @@ body:has(.api-questions-form) .container {
 .move-up-keyword:hover {
     background-color: #45a049;
 }
-/* Down button style */
+/* Down button questions-generator/view-api style */
 .move-down-keyword {
     background-color: #2196F3; /* Blue */
     color: white;
@@ -1413,7 +1413,7 @@ body:has(.api-questions-form) .container {
 .move-down-keyword:hover {
     background-color: #1976D2;
 }
-/* Delete button style */
+/* Delete button questions-generator/view-api style */
 .remove-keyword {
     color: #f44336;
     transition: background-color 0.2s ease;
