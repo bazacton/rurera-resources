@@ -93,10 +93,33 @@
 								</button>
 							</div>
 							<div class="modal-body">
-								<div class="row">
+							<div class="row">
 								<div class="col-12">
 									<div class="form-group">
-									<input type="text" placeholder="Search Templates" class="form-control">
+										<input type="text" placeholder="Search Templates" class="form-control">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="choose-types">
+										<label>Choose Type</label>
+										<div class="choose-fields">
+											<div class="choose-box">
+												<input type="checkbox" id="choose1">
+												<label for="choose1">Reset all</label>
+											</div>
+											<div class="choose-box">
+												<input type="checkbox" id="choose2">
+												<label for="choose2">Max price 1300</label>
+											</div>
+											<div class="choose-box">
+												<input type="checkbox" id="choose3">
+												<label for="choose3">Apple</label>
+											</div>
+											<div class="choose-box">
+												<input type="checkbox" id="choose4">
+												<label for="choose4">64 GB</label>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="col-12 col-lg-3 col-md-6">
