@@ -1723,9 +1723,10 @@ body:has(.multi-choice-template-modal.show) .modal {
 .template-btn {
     background-color: inherit;
     border: 1px solid var(--blue);
-    padding: 8px 15px;
+    padding: 6px 10px;
     border-radius: 5px;
     color: var(--blue);
+    outline: none;
 }
 .multi-choice-template-modal .form-control {
     width: auto;
