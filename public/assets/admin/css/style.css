@@ -1682,6 +1682,13 @@ table#outputTable thead th {
     text-align: left;
     margin-bottom: 0;
 }
+.template-btn {
+    background-color: inherit;
+    border: 1px solid var(--blue);
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: var(--blue);
+}
 .multi-choice-template-modal .form-control {
     width: auto;
     max-width: 350px;
