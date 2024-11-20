@@ -1677,7 +1677,7 @@ table#outputTable thead th {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/default/svgs/zoom.svg);
+    background-image: url(/assets/default/svgs/zoom2.svg);
     transition: all .5s;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
