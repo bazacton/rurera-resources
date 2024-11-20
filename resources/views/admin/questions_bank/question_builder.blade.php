@@ -753,7 +753,7 @@ $rand_id = rand(999,99999);
 				<input type="hidden" name="form_data_encoded" class="form_data_encoded">
 				
 				<div class="inactivity-controls">
-					<a href="javascript:;" class="continue-btn save-template-btn">Save Template</a>
+					<a href="javascript:;" class="continue-btn save-template-btn">Save Form</a>
 					<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a>
 				</div>
 			  </div>

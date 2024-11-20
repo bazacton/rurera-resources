@@ -19,7 +19,7 @@
 				<input type="hidden" name="form_data_encoded" class="form_data_encoded">
 				
 				<div class="inactivity-controls">
-					<a href="javascript:;" class="continue-btn save-template-btn btn btn-primary">Save Template</a>
+					<a href="javascript:;" class="continue-btn save-template-btn btn btn-primary">Save Form</a>
 					<a href="javascript:;" class="btn btn-danger" data-dismiss="modal" aria-label="Continue">Close</a>
 				</div>
 			  </div>

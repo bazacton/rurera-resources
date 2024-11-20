@@ -279,7 +279,7 @@
 				<input type="hidden" name="form_id" class="form_id">
 				
 				<div class="inactivity-controls">
-					<a href="javascript:;" class="continue-btn save-template-btn button btn btn-primary">Save Template</a>
+					<a href="javascript:;" class="continue-btn save-template-btn button btn btn-primary">Save Form</a>
 					<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a>
 				</div>
 			  </div>
