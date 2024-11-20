@@ -104,19 +104,19 @@
 										<label>Choose Type</label>
 										<div class="choose-fields">
 											<div class="choose-box">
-												<input type="checkbox" id="choose1">
+												<input type="radio" name="choose-type" id="choose1">
 												<label for="choose1">Reset all</label>
 											</div>
 											<div class="choose-box">
-												<input type="checkbox" id="choose2">
+												<input type="radio" name="choose-type" id="choose2">
 												<label for="choose2">Max price 1300</label>
 											</div>
 											<div class="choose-box">
-												<input type="checkbox" id="choose3">
+												<input type="radio" name="choose-type" id="choose3">
 												<label for="choose3">Apple</label>
 											</div>
 											<div class="choose-box">
-												<input type="checkbox" id="choose4">
+												<input type="radio" name="choose-type" id="choose4">
 												<label for="choose4">64 GB</label>
 											</div>
 										</div>
