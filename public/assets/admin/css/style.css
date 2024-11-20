@@ -1656,13 +1656,14 @@ table#outputTable thead th {
     flex-direction: column;
 }
 .template-box .card-icon {
-    height: calc(100% - 100px);
+    height: calc(100% - 50px);
     display: flex;
     flex-direction: column;
     position: relative;
     margin-bottom: 15px;
     border-radius: 5px;
     overflow: hidden;
+    cursor: pointer;
 }
 .template-box .card-icon:before {
     content: "";
