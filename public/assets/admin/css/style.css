@@ -1659,6 +1659,8 @@ table#outputTable thead th {
     flex-direction: column;
     position: relative;
     margin-bottom: 15px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 .template-box .card-icon:before {
     content: "";
