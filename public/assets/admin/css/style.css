@@ -1652,6 +1652,8 @@ table#outputTable thead th {
     overflow: hidden;
     padding: 25px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .template-box .card-icon {
     height: calc(100% - 100px);
