@@ -1684,6 +1684,14 @@ table#outputTable thead th {
     background-size: 10%;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: -10px;
+}
+.template-box .card-icon:hover:before {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
 }
 .template-box h3 {
     font-size: 16px;
