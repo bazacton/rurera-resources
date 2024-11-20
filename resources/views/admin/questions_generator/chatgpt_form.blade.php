@@ -102,7 +102,7 @@
 								<div class="col-12">
 									<div class="choose-types">
 										<label>Choose Type</label>
-										<div class="choose-fields">
+										<div class="choose-fields d-flex align-items-center">
 											<div class="choose-box">
 												<input type="radio" name="choose-type" id="choose1">
 												<label for="choose1">Reset all</label>
