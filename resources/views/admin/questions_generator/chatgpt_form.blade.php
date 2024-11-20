@@ -98,6 +98,7 @@
 									<div class="row">
 										<div class="col-12">
 											<div class="form-group">
+												<i class="fas fa-search"></i>
 												<input type="text" placeholder="Search Templates" class="form-control">
 											</div>
 										</div>
