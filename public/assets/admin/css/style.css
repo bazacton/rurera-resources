@@ -1733,6 +1733,10 @@ body:has(.multi-choice-template-modal.show) .modal {
     max-width: 350px;
     min-width: 350px;
 }
+.search-filed {
+    display: inline-block;
+    position: relative;
+}
 .search-filed i {
     position: absolute;
     right: 15px;
