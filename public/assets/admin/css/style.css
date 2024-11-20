@@ -1731,6 +1731,12 @@ table#outputTable thead th {
 }
 .choose-types {
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.choose-types label {
+    margin-bottom: 0;
 }
 .choose-types .choose-box input[type=radio]:checked ~ label {
     background-color: var(--blue);
