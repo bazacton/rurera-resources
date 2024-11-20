@@ -1779,6 +1779,13 @@ body:has(.multi-choice-template-modal.show) .modal {
 .multi-choice-template-modal #imagemodal .modal-body {
     border-radius: 8px;
 }
+.template-data-info span {
+    font-size: 13px;
+    color: #bbb;
+}
+.template-data-info {
+    margin-top: 15px;
+}
 /*Import Question Page questions-generator/add-response/ Style End*/
 
 /*****************************************
