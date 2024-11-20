@@ -1661,9 +1661,10 @@ table#outputTable thead th {
     flex-direction: column;
     position: relative;
     margin-bottom: 25px;
-    border-radius: 5px;
     overflow: hidden;
     cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
 }
 .template-box .card-icon:before {
     content: "";
