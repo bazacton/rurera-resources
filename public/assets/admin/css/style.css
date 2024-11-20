@@ -1723,7 +1723,7 @@ body:has(.multi-choice-template-modal.show) .modal {
     outline: none;
 }
 .template-controls .preview-template-btn {
-    color: var(--blue);
+    color: var(--purple);
     outline: none;
     padding: 0;
     background-color: inherit;
