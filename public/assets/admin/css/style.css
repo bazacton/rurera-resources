@@ -1620,6 +1620,10 @@ table#outputTable thead th {
 #question-generator-form .populated-data .radio-btn {
     min-height: 185px;
 }
+.template-box img {
+    max-width: 100%;
+}
+
 /*Import Question Page questions-generator/add-response/ Style End*/
 
 /*****************************************
