@@ -178,14 +178,6 @@
 											</div>
 										</div>
 									</div>
-									<script>
-										$(function() {
-											$('.pop').on('click', function() {
-												$('.imagepreview').attr('src', $(this).find('img').attr('src'));
-												$('#imagemodal').modal('show');   
-											});		
-										});
-									</script>
 								</div>
 							</div>
 						</div>
@@ -359,6 +351,14 @@ function validateJSON() {
     });
 	
 	
+</script>
+<script>
+	$(function() {
+		$('.pop').on('click', function() {
+			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+			$('#imagemodal').modal('show');   
+		});		
+	});
 </script>
 
 @endpush
