@@ -1671,6 +1671,9 @@ table#outputTable thead th {
     justify-content: center;
     align-items: center;
     background-image: url(/assets/default/svgs/zoom-img.png);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
 }
 .template-box h3 {
     margin-top: auto;
