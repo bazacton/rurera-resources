@@ -1630,6 +1630,9 @@ table#outputTable thead th {
 #question-generator-form .radio-btn .card-icon h3 {
     margin-top: auto;
 }
+.multi-choice-template-modal {
+    padding-right: 0 !important;
+}
 .multi-choice-template-modal .modal-dialog.modal-xl {
     max-width: 100%;
     margin: 0;
@@ -1727,6 +1730,12 @@ table#outputTable thead th {
     align-items: center;
     justify-content: space-between;
     margin-top: auto;
+}
+.multi-choice-template-modal #imagemodal .modal-content {
+    height: auto;
+}
+.multi-choice-template-modal #imagemodal .modal-body {
+    border-radius: 8px;
 }
 /*Import Question Page questions-generator/add-response/ Style End*/
 
