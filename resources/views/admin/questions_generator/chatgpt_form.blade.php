@@ -21,7 +21,7 @@
 	<div class="row">
 		<div class="col-12 col-md-12">
 			<div class="card">
-				<div class="card-body px-0 pt-10">
+				<div class="card-body px-0 pt-30">
 				
 					
 
@@ -49,7 +49,7 @@
 							<span class="radio-btn"><i class="las la-check"></i>
 								<div class="card-icon">
 								 <img src="/assets/default/img/assignment-logo/practice.png">
-									<h3>13061</h3>
+									<h3 class="pt-10">13061</h3>
 							   </div>
 						  </span>
 						</label>
