@@ -159,7 +159,6 @@
 											<div class="template-box">
 												<div class="card-icon pop">
 													<img src="/assets/default/img/multiple-choice4.jfif">
-													<h3>Multiple Choice</h3>
 												</div>
 												<div class="template-controls">
 													<h3>Multiple Choice</h3>
