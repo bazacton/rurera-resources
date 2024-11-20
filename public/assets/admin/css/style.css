@@ -1782,6 +1782,9 @@ body:has(.multi-choice-template-modal.show) .modal {
 .multi-choice-template-modal .modal-body {
     background-color: #fcfcfc;
 }
+.multi-choice-template-modal #imagemodal .modal-body {
+    background-color: #fff;
+}
 .template-controls {
     display: flex;
     align-items: center;
