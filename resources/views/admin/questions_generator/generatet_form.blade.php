@@ -66,7 +66,7 @@
 		<div class="col-md-6 col-lg-6">
 			<div class="row">
 				<div class="col-md-12 col-lg-12">
-					<h2 class="font-20 font-weight-bold mb-15 copyable-text">Questions Generator</h2>
+					<h2 class="font-20 font-weight-bold mb-15">Questions Generator</h2>
 				</div>
 				<div class="col-md-12 col-lg-12">
 					<div class="form-group">
@@ -483,11 +483,12 @@
 		$(document).on('click', '.save-template-btn', function () {
 			$(".template_save_modal").modal('hide');
 			var template_name = $('.template_name').val();
+			console.log(template_name);
 			var form_data_encoded  = $('.form_data_encoded').val();
 			var course_id = $(this).val();
 			$.ajax({
 				type: "POST",
-				url: '/admin/users/save_templates',
+				url: '/admin/users/save_templates1',
 				data: {'template_type': 'question_ai_genearte_form', 'template_name': template_name, 'form_data_encoded': form_data_encoded},
 				success: function (return_data) {
 					console.log(return_data);

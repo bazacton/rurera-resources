@@ -30,6 +30,7 @@
         .drag-handle { cursor: move; padding: 0 5px; color: #007bff; font-weight: bold; margin-right: 10px; }
         .dropdown-toggle { background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
         .hidden-column { display: none; }
+		.conditional-child-fields{display:none;}
     </style>
 @endpush
 
@@ -211,6 +212,7 @@
                             <table class="table table-striped font-14" id="myTable">
                                 <tr id="tableHeader">
                                     <th class="text-left">Category</th>
+                                    <th class="text-left">Type</th>
 									<th class="text-left">Generated / Waiting / Rejected</th>
                                     <th class="text-left">Added by</th>
                                     <th class="text-left">Added Date</th>
@@ -228,6 +230,7 @@
 										{{ (isset($QuestionsBulkListObj->subChapter->id))? $QuestionsBulkListObj->subChapter->sub_chapter_title : '-' }}
 										</small>
 									</td>
+									<td class="text-left" data-id="list_type">{{ $QuestionsBulkListObj->list_type }}</td>
 									<td class="text-left" data-id="generated_questions">{{ $QuestionsBulkListObj->generated_questions }} / {{ $QuestionsBulkListObj->waiting_questions }} / {{ $QuestionsBulkListObj->rejected_questions }}</td>
                                     <td class="text-left" data-id="user">{{ $QuestionsBulkListObj->user->get_full_name() }}</td>
                                     <td class="text-left" data-id="created_at">{{ dateTimeFormat($QuestionsBulkListObj->created_at, 'j M y | H:i') }}</td>
@@ -270,7 +273,7 @@
         <div class="modal-content edit-quest-modal-div">
             <div class="modal-body">
 			  <div class="modal-box">
-				<h3 class="font-20 font-weight-bold text-dark mb-10">Save the Form</h3>
+				<h3 class="font-20 font-weight-bold text-dark mb-10">Save the Template</h3>
 				<p class="mb-15 font-16">
 					<input type="text" name="template_name" class="template_name form-control">
 				</p>
@@ -279,7 +282,7 @@
 				<input type="hidden" name="form_id" class="form_id">
 				
 				<div class="inactivity-controls">
-					<a href="javascript:;" class="continue-btn save-template-btn button btn btn-primary">Save Form</a>
+					<a href="javascript:;" class="continue-btn save-template-btn button btn btn-primary">Save Template</a>
 					<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a>
 				</div>
 			  </div>
@@ -301,9 +304,30 @@
 					<div class="col-md-12 col-lg-12">
 					<div class="row">
 						<div class="col-md-12 col-lg-12">
-							<h2 class="font-20 font-weight-bold mb-15 copyable-text">Generate Bulk Questions List</h2>
+							<h2 class="font-20 font-weight-bold mb-15">Generate Bulk Questions List</h2>
 						</div>
 						<div class="col-md-12 col-lg-12">
+							<div class="form-group">
+								<label class="input-label">Type</label>
+								<select name="list_type" data-plugin-selectTwo class="form-control populate list_type conditional-field">
+									<option value="Course" data-child="Course-fields">Course</option>
+									<option value="Mock Exam" data-child="mock-exam-fields">Mock Exam</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-12 conditional-child-fields mock-exam-fields">
+							<div class="form-group">
+								<label class="input-label">Exam Type</label>
+								<select name="list_sub_type" data-plugin-selectTwo class="form-control populate list_sub_type ">
+									<option value="sats">Sats</option>
+									<option value="11plus">11plus</option>
+									<option value="independent_exams">Independent Exams</option>
+									<option value="iseb">Iseb</option>
+									<option value="cat4">Cat 4</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-12 conditional-child-fields mock-exam-fields quiz-list">
 							<div class="form-group">
 								<label class="input-label">Examination Quiz</label>
 								<select name="quiz_id" data-plugin-selectTwo class="form-control populate quiz_id">
@@ -314,7 +338,7 @@
 								</select>
 							</div>
 						</div>
-						<div class="col-md-12 col-lg-12">
+						<div class="col-md-12 col-lg-12 conditional-child-fields Course-fields">
 							<div class="form-group">
 								<label class="input-label">{{trans('admin/main.category')}}</label>
 								<select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
@@ -333,7 +357,7 @@
 								</select>
 							</div>
 						</div>
-						<div class="col-md-12 col-lg-12">
+						<div class="col-md-12 col-lg-12 conditional-child-fields Course-fields">
 							<div class="form-group">
 								<label class="input-label">Subjects</label>
 								<select data-chapter_id="" id="subject_id"
@@ -349,7 +373,7 @@
 
 							</div>
 						</div>
-						<div class="col-md-12 col-lg-12">
+						<div class="col-md-12 col-lg-12 conditional-child-fields course-fields">
 							<div class="form-group">
 								<label class="input-label">Topic</label>
 								<select data-sub_chapter_id="" id="chapter_id"
@@ -365,7 +389,7 @@
 
 							</div>
 						</div>
-						<div class="col-md-12 col-lg-12">
+						<div class="col-md-12 col-lg-12 conditional-child-fields course-fields">
 							<div class="form-group">
 								<label class="input-label">Sub Topic</label>
 								<select id="sub_chapter_id"
@@ -421,6 +445,7 @@
 		
 		const defaultColumns = [
 			{ id: 'category', text: 'Category', visible: true },
+			{ id: 'list_type', text: 'Type', visible: true },
 			{ id: 'generated_questions', text: 'Generated / Waiting / Rejected', visible: true },
 			{ id: 'user', text: 'Added by', visible: true },
 			{ id: 'created_at', text: 'Added Date', visible: true },
@@ -620,6 +645,31 @@
 			});
 		});
         $(".ajax-category-courses").change();
+		
+		$(document).on('change', '.conditional-field', function () {
+			$(".conditional-child-fields").hide();
+			var child_value = $(this).val();
+			var selectedOption = $(this).find('option:selected');
+			var child_class = selectedOption.attr('data-child');
+			$('.'+child_class).show();
+		});
+		
+        $(".list_type").change();
+		$(document).on('change', '.list_sub_type', function () {
+			var quiz_type = $(this).val();
+			var list_type = $(".list_type").val();
+			$.ajax({
+				type: "GET",
+				url: '/admin/webinars/get_quiz_by_type',
+				data: {'quiz_type': quiz_type, 'list_type': list_type},
+				success: function (return_data) {
+					$(".quiz-list").html(return_data);
+				}
+			});
+		});
+        $(".list_sub_type").change();
+		
+		
 		
     });
 	

@@ -220,9 +220,11 @@ function rureraform_save(_object, question_status) {
     var example_question = $("[name=example_question]").val();
     var difficulty_level = $("[name=difficulty_level]").val();
     var reference_type = $("[name=reference_type]").val();
+	var example_thumbnail = $("[name=example_thumbnail]").val();
     var review_required = ($('[name=review_required]').prop('checked')) ? 1 : 0;
     var developer_review_required = ($('[name=developer_review_required]').prop('checked')) ? 1 : 0;
     var hide_question = ($('[name=hide_question]').prop('checked')) ? 1 : 0;
+    var is_example_question = ($('[name=is_example_question]').prop('checked')) ? 1 : 0;
     var glossary_ids = $("#glossary_ids").val();
 
     var new_glossaries = $(".new_glossaries")
@@ -271,9 +273,11 @@ function rureraform_save(_object, question_status) {
         "glossary_ids": glossary_ids,
         "difficulty_level": difficulty_level,
         "reference_type" : reference_type,
+		"example_thumbnail" : example_thumbnail,
         "review_required": review_required,
         "developer_review_required": developer_review_required,
         "hide_question": hide_question,
+        "is_example_question": is_example_question,
         "action": "rureraform-form-save",
         "form-id": jQuery("#rureraform-id").val(),
         "form-options": rureraform_encode64(JSON.stringify(rureraform_form_options)),
@@ -10357,7 +10361,7 @@ $(document).on('click', '.reject-api-question', function () {
 				html: '<h3 class="font-20 text-center text-dark-blue">Question Deleted successfully!</h3>',
 				showConfirmButton: !1
 			});
-			window.location.href = '/admin/questions-generator/view-api-response/'+return_data.questions_bulk_list_id;
+			window.location.href = return_data.redirect_url;
         }
     });
 });

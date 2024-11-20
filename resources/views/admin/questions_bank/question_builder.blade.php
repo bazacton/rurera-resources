@@ -453,6 +453,62 @@ $rand_id = rand(999,99999);
 										</div>
 										
 										
+										<div class="col-lg-6 col-md-6 col-12">
+											<div class="form-group custom-switches-stacked">
+												<label class="custom-switch pl-0">
+													<input type="hidden" name="review_required_field" value="disable">
+													<input type="checkbox"
+															   name="review_required"
+															   id="review_required" value="1" {{ (isset( $questionObj->review_required ) && $questionObj->review_required
+														== '1') ?
+														'checked="checked"' : ''
+														}} class="custom-switch-input"/>
+														<span class="custom-switch-indicator"></span>
+														<label class="custom-switch-description mb-0 cursor-pointer"
+															   for="review_required">Teacher Review Required</label>
+												</label>
+											</div>
+										</div>
+										
+										
+										<div class="col-lg-6 col-md-6 col-12">
+											<div class="form-group custom-switches-stacked">
+												<label class="custom-switch pl-0">
+													<input type="hidden" name="developer_review_required_field" value="disable">
+													<input type="checkbox"
+															   name="developer_review_required"
+															   id="developer_review_required" value="1" {{ (isset( $questionObj->developer_review_required ) && $questionObj->developer_review_required
+														== '1') ?
+														'checked="checked"' : ''
+														}} class="custom-switch-input"/>
+														<span class="custom-switch-indicator"></span>
+														<label class="custom-switch-description mb-0 cursor-pointer"
+															   for="developer_review_required">Developer Review Required</label>
+												</label>
+											</div>
+										</div>
+										
+										
+										<div class="col-lg-6 col-md-6 col-12">
+											<div class="form-group custom-switches-stacked">
+												<label class="custom-switch pl-0">
+													<input type="hidden" name="hide_question_field" value="disable">
+													<input type="checkbox"
+															   name="hide_question"
+															   id="hide_question" value="1" {{ (isset( $questionObj->hide_question ) && $questionObj->hide_question
+														== '1') ?
+														'checked="checked"' : ''
+														}} class="custom-switch-input"/>
+														<span class="custom-switch-indicator"></span>
+														<label class="custom-switch-description mb-0 cursor-pointer"
+															   for="hide_question">Hide Question</label>
+												</label>
+											</div>
+										</div>
+										
+										
+										
+										
 										<div class="col-12 col-md-12">
 											<div class="create-question-fields-block d-flex align-items-center mb-30">
 												<button type="button" data-status="Submit for review" class="quiz-stage-builder-generate btn btn-primary font-16">
@@ -510,7 +566,6 @@ $rand_id = rand(999,99999);
                                                     </div>
 
                                                     <div class="tab-pane fade py-0" id="topic-parts" role="tabpanel" aria-labelledby="topic-parts-tab">
-                                                        <div class="lms-element-properties">
                                                             <div class="topic-parts-block">
 															
 															@if(isset( $questionObj->topicPartItem->id))
@@ -525,36 +580,6 @@ $rand_id = rand(999,99999);
 															@endif
                                                             
                                                             </div>
-                                                            <div class="rureraform-admin-popup" id="rureraform-element-properties">
-                                                            <div class="rureraform-admin-popup-inner">
-                                                                <div class="rureraform-admin-popup-title">
-                                                                <a href="#" title="Close" onclick="return rureraform_properties_close();">
-                                                                    <i class="fas fa-times"></i>
-                                                                </a>
-                                                                <h3>
-                                                                    <i class="fas fa-cog element-properties-label"></i> Element Properties
-                                                                </h3>
-                                                                </div>
-                                                                <div class="rureraform-admin-popup-content">
-                                                                <div class="rureraform-admin-popup-content-form"></div>
-                                                                </div>
-                                                                <div class="rureraform-admin-popup-buttons">
-                                                                <a class="rureraform-admin-button duplicate-element btn btn-primary" href="#">
-                                                                    <label>Duplicate</label>
-                                                                </a>
-                                                                <a class="rureraform-admin-button remove-element btn btn-danger" href="#">
-                                                                    <label>Remove</label>
-                                                                </a>
-                                                                <a class="rureraform-admin-button generate-question-code rurera-hide" href="#">
-                                                                    <label>Apply Changes</label>
-                                                                </a>
-                                                                </div>
-                                                                <div class="rureraform-admin-popup-loading">
-                                                                <i class="fas fa-spinner fa-spin"></i>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                     
                                                     <div class="tab-pane fade py-0" id="activity" role="tabpanel" aria-labelledby="activity-tab">
@@ -692,7 +717,7 @@ $rand_id = rand(999,99999);
                                                         <a class="rureraform-admin-button duplicate-element btn btn-primary"
                                                            href="#"><label>Duplicate</label></a>
                                                         <a class="rureraform-admin-button remove-element btn btn-danger" href="#"><label>Remove</label></a>
-                                                        <a class="rureraform-admin-button generate-question-code rurera-hide1"
+                                                        <a class="rureraform-admin-button generate-question-code rurera-hide"
                                                            href="#"><label>Apply Changes</label></a>
                                                     </div>
                                                     <div class="rureraform-admin-popup-loading"><i
