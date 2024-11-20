@@ -1581,7 +1581,8 @@ table#outputTable thead th {
 .modal.question_edit_part_modal {
     background-color: #fff;
 }
-.question_edit_part_modal #dynamicContainer textarea.form-control {
+.question_edit_part_modal #dynamicContainer textarea.form-control,
+.question-generator-form .form-group textarea {
     field-sizing: content;
 }
 /*Glossary Question_Edit_Part Modal Style End*/
@@ -1604,6 +1605,10 @@ table#outputTable thead th {
     background-color: #fdfdff;
 }
 /*topic parts search-form select2 style End*/
+.question-generator-form .form-group textarea {
+    min-height: 100px;
+    overflow: hidden;
+}
 
 /*****************************************
 Admin Questions Generator Page Style Start
