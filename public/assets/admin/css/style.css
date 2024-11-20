@@ -1654,7 +1654,7 @@ table#outputTable thead th {
     height: 100%;
 }
 .template-box .card-icon {
-    height: 100%;
+    height: calc(100% - 100px);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -1678,7 +1678,6 @@ table#outputTable thead th {
     -o-transition: all .5s;
 }
 .template-box h3 {
-    margin-top: auto;
     font-size: 16px;
     color: #333;
     text-align: left;
