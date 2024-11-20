@@ -29,12 +29,15 @@
 </div>
 <section class="section">
 	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			<div class="section-header">
+				<h1 class="copyable-text">Questions Generator</h1>
+			</div>
+		</div>
 		<div class="col-12 col-md-12">
 			<div class="card">
 				<div class="card-body px-0 pt-0">
 				
-					
-					
 					<div class="defined-searches">
 					<span><strong>Save Forms:</strong></span>
 						@if( !empty( $saved_templates_array ) )
@@ -65,9 +68,6 @@
 	<div class="row">
 		<div class="col-md-6 col-lg-6">
 			<div class="row">
-				<div class="col-md-12 col-lg-12">
-					<h2 class="font-20 font-weight-bold mb-15 copyable-text">Questions Generator</h2>
-				</div>
 				<div class="col-md-12 col-lg-12">
 					<div class="form-group">
 						<label for="prompt_title">Prompt Title:</label>
