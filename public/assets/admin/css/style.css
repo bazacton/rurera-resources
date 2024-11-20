@@ -1640,9 +1640,8 @@ table#outputTable thead th {
 }
 .template-box img {
     max-width: 100%;
-}
-.template-box img {
-    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .template-box {
     border: 1px solid #ddd;
