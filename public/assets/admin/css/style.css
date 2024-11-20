@@ -1685,7 +1685,7 @@ table#outputTable thead th {
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden; 
     margin-top: -10px;
 }
 .template-box .card-icon:hover:before {
