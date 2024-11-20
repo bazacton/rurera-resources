@@ -96,7 +96,7 @@
 								<div class="row">
 								<div class="col-12">
 									<div class="form-group">
-									<input type="text" placeholder="Search Templates" class="form-controle">
+									<input type="text" placeholder="Search Templates" class="form-control">
 									</div>
 								</div>
 								<div class="col-12 col-lg-3 col-md-6">
