@@ -12,14 +12,14 @@
         <div class="modal-content edit-quest-modal-div">
             <div class="modal-body">
 			  <div class="modal-box">
-				<h3 class="font-20 font-weight-bold text-dark mb-10">Save the Form</h3>
+				<h3 class="font-24 font-weight-normal mb-10">Save the Template</h3>
 				<p class="mb-15 font-16">
 					<input type="text" name="template_name" class="template_name form-control">
 				</p>
 				<input type="hidden" name="form_data_encoded" class="form_data_encoded">
 				
 				<div class="inactivity-controls">
-					<a href="javascript:;" class="continue-btn save-template-btn btn btn-primary">Save Form</a>
+					<a href="javascript:;" class="continue-btn save-template-btn btn btn-primary">Save Template</a>
 					<a href="javascript:;" class="btn btn-danger" data-dismiss="modal" aria-label="Continue">Close</a>
 				</div>
 			  </div>
@@ -29,20 +29,12 @@
 </div>
 <section class="section">
 	<div class="row">
-		<div class="col-md-12 col-lg-12">
-			<div class="section-header">
-				<h1 class="copyable-text">Questions Generator</h1>
-				<div class="section-header-breadcrumb">
-					<div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
-					</div>
-					<div class="breadcrumb-item">Questions Generator</div>
-				</div>
-			</div>
-		</div>
 		<div class="col-12 col-md-12">
 			<div class="card">
 				<div class="card-body px-0 pt-0">
 				
+					
+					
 					<div class="defined-searches">
 					<span><strong>Save Forms:</strong></span>
 						@if( !empty( $saved_templates_array ) )
@@ -74,9 +66,12 @@
 		<div class="col-md-6 col-lg-6">
 			<div class="row">
 				<div class="col-md-12 col-lg-12">
+					<h2 class="font-20 font-weight-bold mb-15 copyable-text">Questions Generator</h2>
+				</div>
+				<div class="col-md-12 col-lg-12">
 					<div class="form-group">
 						<label for="prompt_title">Prompt Title:</label>
-						<input type="text" name="prompt_title" id="prompt_title" class="w-100 form-control" value="">
+						<input type="text" name="prompt_title" id="prompt_title" class="w-100 form-control rurera-req-field" value="">
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-12 rurera-hide">
@@ -84,13 +79,6 @@
 						<!-- Content Text Area -->
 						<label for="example_question_id">Question Layout ID:</label>
 						<input type="number" name="example_question_id" id="example_question_id" class="w-100 form-control" value="13061">
-					</div>
-				</div>
-				<div class="col-md-12 col-lg-12">
-					<div class="form-group">
-						<!-- Content Text Area -->
-						<label for="instructions_ai">Instructions for AI:</label>
-						<textarea class="w-100 form-control unicode-rm" name="instructions_ai" id="instructions_ai" rows="4" maxlength="400"></textarea>
 					</div>
 				</div>
 				
@@ -104,7 +92,7 @@
 						<!-- Grade Selection -->
 						<input type="hidden" name="grade" id="grade1" value="7">
 						<!-- Question Type -->
-						<label>Question Type</label>
+						<label>Question Type (optional):</label>
 						<div class="list-group list-in-row">
 							<div class="row-field">
 								<input type="radio" name="question_type" id="type_mc" value="multiple-choice" checked>
@@ -143,11 +131,11 @@
 								<label for="options2">2</label>
 							</div>
 							<div class="row-field">
-								<input type="radio" name="num_options" id="options3" value="3" checked>
+								<input type="radio" name="num_options" id="options3" value="3">
 								<label for="options3">3</label>
 							</div>
 							<div class="row-field">
-								<input type="radio" name="num_options" id="options4" value="4">
+								<input type="radio" name="num_options" id="options4" value="4" checked>
 								<label for="options4">4</label>
 							</div>
 							<div class="row-field">
@@ -171,7 +159,7 @@
 								<label for="correct1">1</label>
 							</div>
 							<div class="row-field">
-								<input type="checkbox" name="num_correct_answers[]" id="correct2" value="2" checked>
+								<input type="checkbox" name="num_correct_answers[]" id="correct2" value="2">
 								<label for="correct2">2</label>
 							</div>
 							<div class="row-field">
@@ -186,6 +174,14 @@
 						<label>Setting</label>
 						<!-- Include Intro Text and Passage Checkboxes -->
 						<div class="list-group list-in-row">
+							<div class="row-field">
+							
+								<label class="custom-switch pl-0">
+								<label class="custom-switch-description mb-0 cursor-pointer" for="include_instruction_ai">Instructions for AI</label>
+									<input type="checkbox" name="include_instruction_ai" id="include_instruction_ai" value="1" class="custom-switch-input include_instruction_ai">
+									<span class="custom-switch-indicator"></span>
+								</label>
+							</div>
 							<div class="row-field">
 							
 								<label class="custom-switch pl-0">
@@ -227,6 +223,16 @@
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-12 mt-4">
+				
+				
+					<div class="instructions-field">
+						<div class="form-group">
+							<!-- Content Text Area -->
+							<label for="instructions_ai">Instructions for AI:</label>
+							<textarea class="w-100 form-control unicode-rm" name="instructions_ai" id="instructions_ai" rows="4" maxlength="400"></textarea>
+						</div>
+					</div>
+				
 					<div class="intro-field">
 						<div class="form-group">
 							<label for="intro_text_main">Intro Text:</label>
@@ -244,14 +250,14 @@
 						<div class="form-group">
 							<label for="rewording_level" class="mb-0">Rewording Level (0 - 100%):</label>
 							<div class="range-output">
-								<input type="range" name="rewording_level" id="rewording_level" min="0" max="100" value="50" onchange="this.nextElementSibling.value = this.value" oninput="this.nextElementSibling.value = this.value">
-								<output>50</output>
+								<input type="range" name="rewording_level" id="rewording_level" min="0" max="100" value="70" onchange="this.nextElementSibling.value = this.value" oninput="this.nextElementSibling.value = this.value">
+								<output>70</output>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-12 col-lg-4">
 						<div class="form-group">
-							<label for="content_text_length" class="mb-0">Content Length (Max 50 Words):</label>
+							<label for="content_text_length" class="mb-0">Content Text Length (Max 50 Words):</label>
 							<div class="range-output">
 								<input type="range" name="content_text_length" id="content_text_length" min="10" max="50" value="50" onchange="this.nextElementSibling.value = this.value" oninput="this.nextElementSibling.value = this.value">
 								<output>50</output>
@@ -263,8 +269,8 @@
 						<!-- Number of Questions -->
 						<label for="num_questions" class="mb-0">Number of Questions (Max 20):</label>
 						<div class="range-output">
-							<input type="range" name="num_questions" id="num_questions" min="1" max="20" value="2" onchange="this.nextElementSibling.value = this.value" oninput="this.nextElementSibling.value = this.value">
-							<output>2</output>
+							<input type="range" name="num_questions" id="num_questions" min="1" max="20" value="5" onchange="this.nextElementSibling.value = this.value" oninput="this.nextElementSibling.value = this.value">
+							<output>5</output>
 						</div>
 					</div>
 					</div>
@@ -376,7 +382,7 @@
 							</div>
 						</div>
 					</div>
-					<button type="button" class="add-option-btn" onclick="addOption(0)"><i class="fas fa-plus"></i> Add Option</button>
+					<button type="button" class="add-option-btn" onclick="addOption(0)">Add Option</button>
 					<div class="row mt-3">
 						<div class="col-md-12 col-lg-12">
 							<div class="form-group">
@@ -579,6 +585,15 @@
 				$(".intro-field").addClass('rurera-hide');
 			}
 		});
+		$(document).on('change', '.include_instruction_ai', function () {
+			var is_checked = $(this).is(':checked');
+			$(".instructions-field").removeClass('rurera-hide');
+			if(is_checked == false){
+				$(".instructions-field").addClass('rurera-hide');
+			}
+		});
+		
+		$(".include_instruction_ai").change();
 		$(".include_fact_integration").change();
 		$(".include_passage").change();
 		$(".include_intro_text").change();
