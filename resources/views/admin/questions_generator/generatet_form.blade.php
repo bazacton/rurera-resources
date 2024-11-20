@@ -376,7 +376,7 @@
 							</div>
 						</div>
 					</div>
-					<button type="button" class="add-option-btn" onclick="addOption(0)">Add Option</button>
+					<button type="button" class="add-option-btn" onclick="addOption(0)"><i class="fas fa-plus"></i> Add Option</button>
 					<div class="row mt-3">
 						<div class="col-md-12 col-lg-12">
 							<div class="form-group">
