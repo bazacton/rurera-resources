@@ -1615,6 +1615,9 @@ table#outputTable thead th {
 }
 
 /*Import Question Page questions-generator/add-response/ Style Start*/
+body:has(.multi-choice-template-modal.show) {
+    overflow: hidden;
+}
 #question-generator-form .radio-buttons .card-radio {
     width: 23%;
 }
