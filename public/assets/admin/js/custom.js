@@ -1288,10 +1288,6 @@ $(document).on('click', '.apply-template-field span', function () {
 			key_name = name.slice(0, -2);
 			var selected_value = formDataObj[key_name];
 		}			
-		
-		pre(name, 'name');	
-
-		pre(selected_value, 'selected_value');
         if (Array.isArray(selected_value)) {
             // For checkboxes with multiple values
 			parentForm.find('[name="'+name+'"]').prop('checked', false);
@@ -1304,6 +1300,10 @@ $(document).on('click', '.apply-template-field span', function () {
         }
 		parentForm.find('[name="'+name+'"]').change();
     } else if (name.endsWith('[]')) {
+		key_name = name.slice(0, -2);
+		var selected_value = formDataObj[key_name];
+		pre(name, 'name');	
+		pre(selected_value, 'selected_value');
         // Remove the "[]" from the field name for consistency
         name = name.slice(0, -2);
 		var selected_value = formDataObj[name];

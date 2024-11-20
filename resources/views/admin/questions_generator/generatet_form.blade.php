@@ -345,7 +345,7 @@
 						<label>Options:</label>
 						<div class="options-container" data-options-container="0" >
 							<div class="option-group" data-option-index="0">
-								<input type="text" class="form-control unicode-rm" name="options[]" value="Option 1">
+								<input type="text" class="form-control unicode-rm" name="options[0]" value="Option 1">
 								<input type="checkbox" name="correct_answers[]" value="0">
 								<div class="option-buttons">
 									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
@@ -354,7 +354,7 @@
 								</div>
 							</div>
 							<div class="option-group" data-option-index="1">
-								<input type="text" class="form-control unicode-rm" name="options[]" value="Option 2">
+								<input type="text" class="form-control unicode-rm" name="options[1]" value="Option 2">
 								<input type="checkbox" name="correct_answers[]" value="1" checked>
 								<div class="option-buttons">
 									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
@@ -363,7 +363,7 @@
 								</div>
 							</div>
 							<div class="option-group" data-option-index="3">
-								<input type="text" class="form-control unicode-rm" name="options[]" value="Option 3">
+								<input type="text" class="form-control unicode-rm" name="options[2]" value="Option 3">
 								<input type="checkbox" name="correct_answers[]" value="3">
 								<div class="option-buttons">
 									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
@@ -372,7 +372,7 @@
 								</div>
 							</div>
 							<div class="option-group" data-option-index="4">
-								<input type="text" class="form-control unicode-rm" name="options[]" value="Option 4">
+								<input type="text" class="form-control unicode-rm" name="options[3]" value="Option 4">
 								<input type="checkbox" name="correct_answers[]" value="4">
 								<div class="option-buttons">
 									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
@@ -483,7 +483,10 @@
 		$(document).on('click', '.save-template-btn', function () {
 			$(".template_save_modal").modal('hide');
 			var template_name = $('.template_name').val();
-			console.log(template_name);
+			if(template_name == ''){
+				alert('Please provide template name');
+				return false;
+			}
 			var form_data_encoded  = $('.form_data_encoded').val();
 			var course_id = $(this).val();
 			$.ajax({

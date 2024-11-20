@@ -70,7 +70,7 @@
 					<div class="years-group populated-data mb-30 selected-template">
 						
 					</div>
-					<input type="hidden" name="example_question_id" class="example_question_id">
+					<input type="hidden" name="example_question_id" class="example_question_id" value="0">
 					<div class="multi-choice-template-modal modal fade" id="multi-choice-template-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 						<div class="modal-dialog modal-xl">
 							<div class="modal-content">
@@ -249,6 +249,16 @@
 @push('scripts_bottom')
 <script type="text/javascript">
 function validateJSON() {
+		var prompt_id = $('input[name="api_id"]:checked').val();
+		console.log(prompt_id);
+		if(prompt_id == 0 || prompt_id == 'undefined' || prompt_id == undefined){
+			alert('Please Choose Prompt');
+			return false; // Prevents form submission if JSON is invalid
+		}
+		if($(".example_question_id").val() == 0){
+			alert('Please Choose Example Question');
+			return false; // Prevents form submission if JSON is invalid
+		}
         const text = document.getElementById("chatgpt_response").value;
         try {
             JSON.parse(text);
