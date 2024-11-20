@@ -48,37 +48,38 @@
 							<input type="radio" name="example_question_id" id="example_question_id_13061" class="example_question_id" value="13061" checked>
 							<span class="radio-btn"><i class="las la-check"></i>
 								<div class="card-icon">
-								 <img src="/assets/default/img/multiple-choice.jfif">
-									<h3 class="pt-10">Multiple Choice</h3>
+								 <img src="/assets/default/img/assignment-logo/practice.png">
+									<h3 class="pt-10">13061</h3>
 							   </div>
 						  </span>
 						</label>
+
 						<label class="card-radio">
-							<input type="radio" name="example_question_id" id="multiple2" class="example_question_id" value="13061">
+							<input type="radio" name="example_question_id" id="example_question_id_13061" class="example_question_id" value="13061" checked>
 							<span class="radio-btn"><i class="las la-check"></i>
 								<div class="card-icon">
-								 <img src="/assets/default/img/multiple-choice2.jfif">
+									<img src="/assets/default/img/multiple-choice.jfif">
 									<h3 class="pt-10">Multiple Choice</h3>
-							   </div>
-						  </span>
+								</div>
+							</span>
 						</label>
 						<label class="card-radio">
-							<input type="radio" name="example_question_id" id="multiple3" class="example_question_id" value="13061">
+							<input type="radio" name="example_question_id" id="example_question_id_13061" class="example_question_id" value="13061" checked>
 							<span class="radio-btn"><i class="las la-check"></i>
 								<div class="card-icon">
-								 <img src="/assets/default/img/multiple-choice3.jfif">
+									<img src="/assets/default/img/multiple-choice2.jfif">
 									<h3 class="pt-10">Multiple Choice</h3>
-							   </div>
-						  </span>
+								</div>
+							</span>
 						</label>
 						<label class="card-radio">
-							<input type="radio" name="example_question_id" id="multiple4" class="example_question_id" value="13061">
+							<input type="radio" name="example_question_id" id="example_question_id_13061" class="example_question_id" value="13061" checked>
 							<span class="radio-btn"><i class="las la-check"></i>
 								<div class="card-icon">
-								 <img src="/assets/default/img/multiple-choice4.jfif">
+									<img src="/assets/default/img/multiple-choice3.jfif">
 									<h3 class="pt-10">Multiple Choice</h3>
-							   </div>
-						  </span>
+								</div>
+							</span>
 						</label>
 					</div>
 				</div>
