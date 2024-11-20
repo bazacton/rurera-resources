@@ -53,6 +53,15 @@
 							   </div>
 						  </span>
 						</label>
+						<label class="card-radio">
+							<input type="radio" name="example_question_id" id="example_question_id_13061" class="example_question_id" value="13061" checked>
+							<span class="radio-btn"><i class="las la-check"></i>
+								<div class="card-icon">
+								 <img src="/assets/default/img/multiple-choice.jfif">
+									<h3 class="pt-10">multiple-choice</h3>
+							   </div>
+						  </span>
+						</label>
 					</div>
 				</div>
 				</div>
