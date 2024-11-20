@@ -124,7 +124,7 @@
 										</div>
 										<div class="col-12 col-lg-3 col-md-6">
 											<div class="template-box">
-												<div class="card-icon">
+												<div class="card-icon pop">
 													<img src="/assets/default/img/multiple-choice.jfif">
 												</div>
 												<div class="template-controls">
@@ -135,7 +135,7 @@
 										</div>
 										<div class="col-12 col-lg-3 col-md-6">
 											<div class="template-box">
-												<div class="card-icon">
+												<div class="card-icon pop">
 													<img src="/assets/default/img/multiple-choice2.jfif">
 												</div>
 												<div class="template-controls">
@@ -146,7 +146,7 @@
 										</div>
 										<div class="col-12 col-lg-3 col-md-6">
 											<div class="template-box">
-												<div class="card-icon">
+												<div class="card-icon pop">
 													<img src="/assets/default/img/multiple-choice3.jfif">
 												</div>
 												<div class="template-controls">
