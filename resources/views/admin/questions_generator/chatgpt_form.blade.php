@@ -133,7 +133,7 @@
 													<img src="/assets/default/img/multiple-choice.jfif">
 												</div>
 												<div class="template-controls">
-													<h3>Multiple Choice</h3>
+													<button type="button" class="preview-template-btn">Preview template</button>
 													<button type="button" class="template-btn">Select Template</button>
 												</div>
 												<div class="template-data-info">
@@ -147,7 +147,7 @@
 													<img src="/assets/default/img/multiple-choice2.jfif">
 												</div>
 												<div class="template-controls">
-													<h3>Multiple Choice</h3>
+													<button type="button" class="preview-template-btn">Preview template</button>
 													<button type="button" class="template-btn">Select Template</button>
 												</div>
 												<div class="template-data-info">
@@ -161,7 +161,7 @@
 													<img src="/assets/default/img/multiple-choice3.jfif">
 												</div>
 												<div class="template-controls">
-													<h3>Multiple Choice</h3>
+													<button type="button" class="preview-template-btn">Preview template</button>
 													<button type="button" class="template-btn">Select Template</button>
 												</div>
 												<div class="template-data-info">
@@ -175,7 +175,7 @@
 													<img src="/assets/default/img/multiple-choice4.jfif">
 												</div>
 												<div class="template-controls">
-													<h3>Multiple Choice</h3>
+													<button type="button" class="preview-template-btn">Preview template</button>
 													<button type="button" class="template-btn">Select Template</button>
 												</div>
 												<div class="template-data-info">
