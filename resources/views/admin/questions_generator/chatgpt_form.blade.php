@@ -86,89 +86,107 @@
 					<div class="multi-choice-template-modal modal fade" id="multi-choice-template-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 						<div class="modal-dialog modal-xl">
 							<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Questions Template</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body">
-							<div class="row">
-								<div class="col-12">
-									<div class="form-group">
-										<input type="text" placeholder="Search Templates" class="form-control">
-									</div>
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Questions Template</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
 								</div>
-								<div class="col-12">
-									<div class="choose-types">
-										<label>Choose Type</label>
-										<div class="choose-fields d-flex align-items-center">
-											<div class="choose-box">
-												<input type="radio" name="choose-type" id="choose1">
-												<label for="choose1">Reset all</label>
-											</div>
-											<div class="choose-box">
-												<input type="radio" name="choose-type" id="choose2">
-												<label for="choose2">Max price 1300</label>
-											</div>
-											<div class="choose-box">
-												<input type="radio" name="choose-type" id="choose3">
-												<label for="choose3">Apple</label>
-											</div>
-											<div class="choose-box">
-												<input type="radio" name="choose-type" id="choose4">
-												<label for="choose4">64 GB</label>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-12">
+											<div class="form-group">
+												<input type="text" placeholder="Search Templates" class="form-control">
 											</div>
 										</div>
+										<div class="col-12">
+											<div class="choose-types">
+												<label>Choose Type</label>
+												<div class="choose-fields d-flex align-items-center">
+													<div class="choose-box">
+														<input type="radio" name="choose-type" id="choose1">
+														<label for="choose1">Reset all</label>
+													</div>
+													<div class="choose-box">
+														<input type="radio" name="choose-type" id="choose2">
+														<label for="choose2">Max price 1300</label>
+													</div>
+													<div class="choose-box">
+														<input type="radio" name="choose-type" id="choose3">
+														<label for="choose3">Apple</label>
+													</div>
+													<div class="choose-box">
+														<input type="radio" name="choose-type" id="choose4">
+														<label for="choose4">64 GB</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-3 col-md-6">
+											<div class="template-box">
+												<div class="card-icon">
+													<img src="/assets/default/img/multiple-choice.jfif">
+												</div>
+												<div class="template-controls">
+													<h3>Multiple Choice</h3>
+													<button type="button" class="template-btn">Select Template</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-3 col-md-6">
+											<div class="template-box">
+												<div class="card-icon">
+													<img src="/assets/default/img/multiple-choice2.jfif">
+												</div>
+												<div class="template-controls">
+													<h3>Multiple Choice</h3>
+													<button type="button" class="template-btn">Select Template</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-3 col-md-6">
+											<div class="template-box">
+												<div class="card-icon">
+													<img src="/assets/default/img/multiple-choice3.jfif">
+												</div>
+												<div class="template-controls">
+													<h3>Multiple Choice</h3>
+													<button type="button" class="template-btn">Select Template</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-3 col-md-6">
+											<div class="template-box">
+												<div class="card-icon pop">
+													<img src="/assets/default/img/multiple-choice4.jfif">
+													<h3>Multiple Choice</h3>
+												</div>
+												<div class="template-controls">
+													<h3>Multiple Choice</h3>
+													<button type="button" class="template-btn">Select Template</button>
+												</div>
+											</div>
+										</div>
 									</div>
-								</div>
-								<div class="col-12 col-lg-3 col-md-6">
-									<div class="template-box">
-										<div class="card-icon">
-											<img src="/assets/default/img/multiple-choice.jfif">
-										</div>
-										<div class="template-controls">
-											<h3>Multiple Choice</h3>
-											<button type="button" class="template-btn">Select Template</button>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-lg-3 col-md-6">
-									<div class="template-box">
-										<div class="card-icon">
-											<img src="/assets/default/img/multiple-choice2.jfif">
-										</div>
-										<div class="template-controls">
-											<h3>Multiple Choice</h3>
-											<button type="button" class="template-btn">Select Template</button>
+									<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">              
+												<div class="modal-body">
+													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+													<img src="" class="imagepreview" style="width: 100%;" >
+												</div>
+											</div>
 										</div>
 									</div>
+									<script>
+										$(function() {
+											$('.pop').on('click', function() {
+												$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+												$('#imagemodal').modal('show');   
+											});		
+										});
+									</script>
 								</div>
-								<div class="col-12 col-lg-3 col-md-6">
-									<div class="template-box">
-										<div class="card-icon">
-											<img src="/assets/default/img/multiple-choice3.jfif">
-										</div>
-										<div class="template-controls">
-											<h3>Multiple Choice</h3>
-											<button type="button" class="template-btn">Select Template</button>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-lg-3 col-md-6">
-									<div class="template-box">
-										<div class="card-icon">
-											<img src="/assets/default/img/multiple-choice4.jfif">
-											<h3>Multiple Choice</h3>
-										</div>
-										<div class="template-controls">
-											<h3>Multiple Choice</h3>
-											<button type="button" class="template-btn">Select Template</button>
-										</div>
-									</div>
-								</div>
-								</div>
-							</div>
 							</div>
 						</div>
 					</div>
