@@ -1590,8 +1590,10 @@ table#outputTable thead th {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
-.template_save_modal .save-template-btn {
+.template_save_modal .save-template-btn,
+.template_save_modal .inactivity-controls .btn-danger {
     padding: 8px 30px;
 }
 /*Topics_Parts Template_save_modal Style End*/
