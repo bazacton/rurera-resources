@@ -1616,6 +1616,9 @@ table#outputTable thead th {
 #question-generator-form .radio-buttons .card-radio {
     width: 23%;
 }
+#question-generator-form .populated-data .radio-btn {
+    min-height: 150px;
+}
 /*Import Question Page questions-generator/add-response/ Style End*/
 
 /*****************************************
