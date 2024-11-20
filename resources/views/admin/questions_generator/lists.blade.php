@@ -270,7 +270,7 @@
         <div class="modal-content edit-quest-modal-div">
             <div class="modal-body">
 			  <div class="modal-box">
-				<h3 class="font-20 font-weight-bold text-dark mb-10">Save the Template</h3>
+				<h3 class="font-20 font-weight-bold text-dark mb-10">Save the Form</h3>
 				<p class="mb-15 font-16">
 					<input type="text" name="template_name" class="template_name form-control">
 				</p>
