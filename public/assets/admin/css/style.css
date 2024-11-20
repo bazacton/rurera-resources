@@ -547,7 +547,7 @@ table tr:hover .table-links {opacity: 1;}
 .modal-body,
 .modal-footer {padding: 25px;}
 .modal-body {padding-top: 15px;}
-.modal-body .close {outline: none;}
+.modal .close {outline: none;}
 .modal-footer {padding-top: 15px; padding-bottom: 15px;}
 .modal-header {border-bottom: none; padding-bottom: 5px;}
 .modal-header h5 {font-size: 18px;}
