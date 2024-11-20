@@ -1626,7 +1626,7 @@ body:has(.multi-choice-template-modal.show) .modal {
     width: 23%;
 }
 #imagemodal .modal-dialog {
-    max-width: 100%;
+    max-width: inherit;
 }
 #question-generator-form .populated-data .radio-btn {
     min-height: 185px;
