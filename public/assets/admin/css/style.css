@@ -1660,7 +1660,7 @@ table#outputTable thead th {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     border-radius: 5px;
     overflow: hidden;
     cursor: pointer;
@@ -1672,15 +1672,18 @@ table#outputTable thead th {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     pointer-events: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/default/svgs/zoom-img.png);
+    background-image: url(/assets/default/svgs/zoom-img.svg);
     transition: all .5s;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .template-box h3 {
     font-size: 16px;
