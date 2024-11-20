@@ -32,6 +32,11 @@
 		<div class="col-md-12 col-lg-12">
 			<div class="section-header">
 				<h1 class="copyable-text">Questions Generator</h1>
+				<div class="section-header-breadcrumb">
+					<div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
+					</div>
+					<div class="breadcrumb-item">Questions Generator</div>
+				</div>
 			</div>
 		</div>
 		<div class="col-12 col-md-12">
