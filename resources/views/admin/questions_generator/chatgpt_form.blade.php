@@ -133,6 +133,9 @@
 													<h3>Multiple Choice</h3>
 													<button type="button" class="template-btn">Select Template</button>
 												</div>
+												<div class="template-data-info">
+													<span>[passage] ,[intro_text],[main_question],[options]</span>
+												</div>
 											</div>
 										</div>
 										<div class="col-12 col-lg-3 col-md-6">
@@ -143,6 +146,9 @@
 												<div class="template-controls">
 													<h3>Multiple Choice</h3>
 													<button type="button" class="template-btn">Select Template</button>
+												</div>
+												<div class="template-data-info">
+													<span>[passage] ,[intro_text],[main_question],[options]</span>
 												</div>
 											</div>
 										</div>
@@ -155,6 +161,9 @@
 													<h3>Multiple Choice</h3>
 													<button type="button" class="template-btn">Select Template</button>
 												</div>
+												<div class="template-data-info">
+													<span>[passage] ,[intro_text],[main_question],[options]</span>
+												</div>
 											</div>
 										</div>
 										<div class="col-12 col-lg-3 col-md-6">
@@ -165,6 +174,9 @@
 												<div class="template-controls">
 													<h3>Multiple Choice</h3>
 													<button type="button" class="template-btn">Select Template</button>
+												</div>
+												<div class="template-data-info">
+													<span>[passage] ,[intro_text],[main_question],[options]</span>
 												</div>
 											</div>
 										</div>
