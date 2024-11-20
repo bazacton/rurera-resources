@@ -1632,6 +1632,12 @@ body:has(.multi-choice-template-modal.show) .modal {
     max-width: inherit;
     display: inline-flex;
 }
+.multi-choice-template-modal > .modal-dialog > .modal-content {
+    background-color: #fcfcfc;
+}
+.section .multi-choice-template-modal .section-header {
+    background-color: inherit;
+}
 #question-generator-form .populated-data .radio-btn {
     min-height: 185px;
 }
