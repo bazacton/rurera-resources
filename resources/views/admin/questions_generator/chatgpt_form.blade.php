@@ -124,34 +124,47 @@
 								</div>
 								<div class="col-12 col-lg-3 col-md-6">
 									<div class="template-box">
-									<div class="card-icon">
-										<img src="/assets/default/img/multiple-choice.jfif">
-										<h3 class="pt-10">Multiple Choice</h3>
-									</div>
-									</div>
-								</div>
-								<div class="col-12 col-lg-3 col-md-6">
-									<div class="template-box">
-									<div class="card-icon">
-										<img src="/assets/default/img/multiple-choice2.jfif">
-										<h3 class="pt-10">Multiple Choice</h3>
-									</div>
+										<div class="card-icon">
+											<img src="/assets/default/img/multiple-choice.jfif">
+										</div>
+										<div class="template-controls">
+											<h3>Multiple Choice</h3>
+											<button type="button" class="template-btn">Select Template</button>
+										</div>
 									</div>
 								</div>
 								<div class="col-12 col-lg-3 col-md-6">
 									<div class="template-box">
-									<div class="card-icon">
-										<img src="/assets/default/img/multiple-choice3.jfif">
-										<h3 class="pt-10">Multiple Choice</h3>
-									</div>
+										<div class="card-icon">
+											<img src="/assets/default/img/multiple-choice2.jfif">
+										</div>
+										<div class="template-controls">
+											<h3>Multiple Choice</h3>
+											<button type="button" class="template-btn">Select Template</button>
+										</div>
 									</div>
 								</div>
 								<div class="col-12 col-lg-3 col-md-6">
 									<div class="template-box">
-									<div class="card-icon">
-										<img src="/assets/default/img/multiple-choice4.jfif">
-										<h3 class="pt-10">Multiple Choice</h3>
+										<div class="card-icon">
+											<img src="/assets/default/img/multiple-choice3.jfif">
+										</div>
+										<div class="template-controls">
+											<h3>Multiple Choice</h3>
+											<button type="button" class="template-btn">Select Template</button>
+										</div>
 									</div>
+								</div>
+								<div class="col-12 col-lg-3 col-md-6">
+									<div class="template-box">
+										<div class="card-icon">
+											<img src="/assets/default/img/multiple-choice4.jfif">
+											<h3>Multiple Choice</h3>
+										</div>
+										<div class="template-controls">
+											<h3>Multiple Choice</h3>
+											<button type="button" class="template-btn">Select Template</button>
+										</div>
 									</div>
 								</div>
 								</div>
