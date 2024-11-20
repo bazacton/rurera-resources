@@ -1655,8 +1655,9 @@ table#outputTable thead th {
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
-.template-box .card-icon h3 {
+.template-box h3 {
     margin-top: auto;
     font-size: 16px;
     color: #333;
@@ -1693,6 +1694,33 @@ table#outputTable thead th {
     background-color: var(--blue);
     border-color: var(--blue);
     color: #fff;
+}
+.multi-choice-template-modal .modal-body {
+    background-color: #fff;
+}
+.template-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+.template-controls h3 {
+    font-size: 16px;
+    margin: 0;
+}
+.template-box .card-icon:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/default/svgs/zoom-img.png);
 }
 /*Import Question Page questions-generator/add-response/ Style End*/
 
