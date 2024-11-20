@@ -10,7 +10,7 @@
 <section class="section">
 	<div class="col-md-12 col-lg-12">
 		<div class="section-header">
-			<h1 class="copyable-text">Import Questions</h1>
+			<h1>Import Questions</h1>
 			<div class="section-header-breadcrumb">
 				<div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
 				</div>
