@@ -58,7 +58,7 @@
 							<span class="radio-btn"><i class="las la-check"></i>
 								<div class="card-icon">
 								 <img src="/assets/default/img/multiple-choice.jfif">
-									<h3 class="pt-10">multiple-choice</h3>
+									<h3 class="pt-10">Multiple Choice</h3>
 							   </div>
 						  </span>
 						</label>
