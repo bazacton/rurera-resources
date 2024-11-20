@@ -1612,6 +1612,12 @@ table#outputTable thead th {
     overflow: hidden;
 }
 
+/*Import Question Page questions-generator/add-response/ Style Start*/
+#question-generator-form .radio-buttons .card-radio {
+    width: 25%;
+}
+/*Import Question Page questions-generator/add-response/ Style End*/
+
 /*****************************************
 Admin Questions Generator Page Style Start
 *********************/
