@@ -41,18 +41,17 @@
 
 				</div>
 				<div class="col-md-12 col-lg-12">
-				
-				<div class="years-group populated-data mb-30">
-					<label class="group-lable mb-15">Multi Response:</label>
-					<div class="radio-buttons">
+					<div class="years-group populated-data mb-30">
+						<label class="group-lable mb-15">Multi Response:</label>
+						<div class="radio-buttons">
 						<label class="card-radio">
 							<input type="radio" name="example_question_id" id="example_question_id_13061" class="example_question_id" value="13061" checked>
 							<span class="radio-btn"><i class="las la-check"></i>
 								<div class="card-icon">
-								 <img src="/assets/default/img/assignment-logo/practice.png">
+									<img src="/assets/default/img/assignment-logo/practice.png">
 									<h3 class="pt-10">13061</h3>
-							   </div>
-						  </span>
+								</div>
+							</span>
 						</label>
 
 						<label class="card-radio">
@@ -60,7 +59,7 @@
 							<span class="radio-btn"><i class="las la-check"></i>
 								<div class="card-icon">
 									<img src="/assets/default/img/multiple-choice.jfif">
-									<h3 class="pt-10">Multiple Choice</h3>
+									<h3 class="pt-10" data-toggle="modal" data-target="#multi-choice-template-modal">Multiple Choice</h3>
 								</div>
 							</span>
 						</label>
@@ -69,7 +68,7 @@
 							<span class="radio-btn"><i class="las la-check"></i>
 								<div class="card-icon">
 									<img src="/assets/default/img/multiple-choice2.jfif">
-									<h3 class="pt-10">Multiple Choice</h3>
+									<h3 class="pt-10" data-toggle="modal" data-target="#multi-choice-template-modal">Multiple Choice</h3>
 								</div>
 							</span>
 						</label>
@@ -78,12 +77,65 @@
 							<span class="radio-btn"><i class="las la-check"></i>
 								<div class="card-icon">
 									<img src="/assets/default/img/multiple-choice3.jfif">
-									<h3 class="pt-10">Multiple Choice</h3>
+									<h3 class="pt-10" data-toggle="modal" data-target="#multi-choice-template-modal">Multiple Choice</h3>
 								</div>
 							</span>
 						</label>
+						</div>
 					</div>
-				</div>
+					<div class="multi-choice-template-modal modal fade" id="multi-choice-template-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Questions Template</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+								<div class="col-12">
+									<div class="form-group">
+									<input type="text" placeholder="Search Templates" class="form-controle">
+									</div>
+								</div>
+								<div class="col-12 col-lg-3 col-md-6">
+									<div class="template-box">
+									<div class="card-icon">
+										<img src="/assets/default/img/multiple-choice.jfif">
+										<h3 class="pt-10">Multiple Choice</h3>
+									</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3 col-md-6">
+									<div class="template-box">
+									<div class="card-icon">
+										<img src="/assets/default/img/multiple-choice2.jfif">
+										<h3 class="pt-10">Multiple Choice</h3>
+									</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3 col-md-6">
+									<div class="template-box">
+									<div class="card-icon">
+										<img src="/assets/default/img/multiple-choice3.jfif">
+										<h3 class="pt-10">Multiple Choice</h3>
+									</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-3 col-md-6">
+									<div class="template-box">
+									<div class="card-icon">
+										<img src="/assets/default/img/multiple-choice4.jfif">
+										<h3 class="pt-10">Multiple Choice</h3>
+									</div>
+									</div>
+								</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="col-md-12 col-lg-12">
 					<div class="form-group">
