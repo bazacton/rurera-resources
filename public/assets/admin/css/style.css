@@ -1620,6 +1620,14 @@ table#outputTable thead th {
 #question-generator-form .populated-data .radio-btn {
     min-height: 185px;
 }
+.multi-choice-template-modal .modal-dialog.modal-xl {
+    max-width: 100%;
+    margin: 0;
+    height: 100%;
+}
+.multi-choice-template-modal .modal-content {
+    height: 100%;
+}
 .template-box img {
     max-width: 100%;
 }
@@ -1644,6 +1652,11 @@ table#outputTable thead th {
     color: #333;
     text-align: left;
     margin-bottom: 0;
+}
+.multi-choice-template-modal .form-control {
+    width: auto;
+    max-width: 350px;
+    min-width: 350px;
 }
 /*Import Question Page questions-generator/add-response/ Style End*/
 
