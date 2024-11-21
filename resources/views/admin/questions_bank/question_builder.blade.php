@@ -561,7 +561,16 @@ $rand_id = rand(999,99999);
 
                                                     <div class="tab-pane fade show active py-0" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
                                                         <div id="accordion">
-                                                            <div class="similarity-content-block-data"></div>
+                                                            <div class="similarity-content-block-data">
+															
+															@php
+															
+															$similiarity_responses	=	rurera_decode($similiarity_responses);
+															$similiarity_responses = json_decode($similiarity_responses, true);
+															pre($similiarity_responses[$question_index], false);
+															@endphp
+															
+															</div>
                                                         </div>
                                                     </div>
 
