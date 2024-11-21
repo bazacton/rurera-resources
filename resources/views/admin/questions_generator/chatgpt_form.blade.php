@@ -160,7 +160,7 @@
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-12">
-					<div class="upload-msg success alert fade show" role="alert">
+					<div class="upload-msg success alert-dismissible alert fade show" role="alert">
 						<div class="msg-box">
 							<span class="msg-icon">
 								<i class="fas fa-check"></i>
