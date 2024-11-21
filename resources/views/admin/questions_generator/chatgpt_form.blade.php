@@ -175,7 +175,7 @@
 					<div class="form-group">
 						<!-- Content Text Area -->
 						<label for="chatgpt_response">Chatgpt Response:</label>
-						<textarea class="w-100 form-control" name="chatgpt_response" id="chatgpt_response" rows="20" style="background-color:#999;"></textarea>
+						<textarea class="w-100 form-control" name="chatgpt_response" id="chatgpt_response" rows="20" style="background-color:#ddd;"></textarea>
 					</div>
 				</div>
 					<div class="col-md-12 col-lg-12">
