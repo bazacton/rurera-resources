@@ -1666,6 +1666,9 @@ body:has(.multi-choice-template-modal.show) .modal {
     height: 100%;
     object-fit: contain;
 }
+.template-item {
+    margin: 0 0 30px;
+}
 .template-box {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -1675,7 +1678,6 @@ body:has(.multi-choice-template-modal.show) .modal {
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
 }
 .template-box .card-icon {
     height: calc(100% - 50px);
