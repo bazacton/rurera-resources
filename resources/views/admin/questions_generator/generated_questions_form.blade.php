@@ -250,6 +250,7 @@ function decodeHtml(html) {
 	 console.log(question_index);
 	 current_similarities_array = [];
 	 if (similiarity_responses.hasOwnProperty(question_index)) {
+		 console.log('444444');
 		 var current_similarities_array = similiarity_responses[question_index];
 	 }
 	 var similiarity_html = '';
