@@ -246,7 +246,7 @@ function decodeHtml(html) {
 	 var is_deleted = $(this).attr('data-is_deleted');
 	 var similiarity_responses = $('.nav').attr('data-similiarity_responses');
 	 console.log(rureraform_decode64(similiarity_responses));
-	 similiarity_responses = JSON.parse(similiarity_responses);
+	 similiarity_responses = JSON.parse(rureraform_decode64(similiarity_responses));
 	 current_similarities_array = [];
 	 if (similiarity_responses.hasOwnProperty(question_index)) {
 		 var current_similarities_array = similiarity_responses[question_index];
