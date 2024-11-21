@@ -2299,6 +2299,9 @@ Admin Questions Generator Page Style End
     gap: 10px;
     flex-wrap: wrap;
 }
+.similarity-content-block ul:has(li .rurera-hide) {
+    display: none;
+}
 .similarity-content-block ul li {
     line-height: normal;
     color: #bbb;
