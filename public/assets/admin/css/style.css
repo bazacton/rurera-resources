@@ -1677,6 +1677,7 @@ body:has(.multi-choice-template-modal.show) .modal {
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .template-box .card-icon {
     height: calc(100% - 50px);
@@ -1815,6 +1816,12 @@ body:has(.multi-choice-template-modal.show) .modal {
 }
 .template-data-info {
     margin-top: 15px;
+}
+.template-box .rating-stars {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    z-index: 1;
 }
 .rating-stars input[type=checkbox] {
     position: absolute;
