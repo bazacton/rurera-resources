@@ -160,7 +160,7 @@
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-12">
-					<div class="upload-msg success alert-dismissible fade show" role="alert">
+					<div class="upload-msg success alert fade show" role="alert">
 						<div class="msg-box">
 							<span class="msg-icon">
 								<i class="fas fa-check"></i>
@@ -170,7 +170,7 @@
 								<a href="#">Got to Online store - Pages</a>
 							</p>
 						</div>
-						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button>
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					</div>
 					<div class="form-group">
 						<!-- Content Text Area -->
