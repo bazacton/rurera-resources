@@ -12,15 +12,15 @@
         <div class="modal-content edit-quest-modal-div">
             <div class="modal-body">
 			  <div class="modal-box">
-				<h3 class="font-24 font-weight-normal mb-10">Save the Template</h3>
+				<h3 class="font-24 font-weight-normal mb-10">Save Form</h3>
 				<p class="mb-15 font-16">
 					<input type="text" name="template_name" class="template_name form-control">
 				</p>
 				<input type="hidden" name="form_data_encoded" class="form_data_encoded">
 				
 				<div class="inactivity-controls">
-					<a href="javascript:;" class="continue-btn save-template-btn btn btn-primary">Save Template</a>
-					<a href="javascript:;" class="btn btn-danger" data-dismiss="modal" aria-label="Continue">Close</a>
+					<a href="javascript:;" class="continue-btn save-template-btn btn btn-primary">Save Form</a>
+					<!-- <a href="javascript:;" class="btn btn-danger" data-dismiss="modal" aria-label="Continue">Close</a> -->
 				</div>
 			  </div>
 			</div>
