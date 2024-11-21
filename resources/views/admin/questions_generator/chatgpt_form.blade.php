@@ -188,14 +188,14 @@
 			<div class="col-5 col-md-5">
 
 				<div class="similarity-content-block mb-30">
-					<div class="similarity-content-tabs pt-0">
+					<div class="similarity-content-tabs">
 						<ul class="nav" id="myTab" role="tablist">
 							<li class="nav-item" role="presentation">
 								<button class="nav-link active rurera-hide" id="prompts-tab" data-toggle="tab" data-target="#prompts" type="button" role="tab" aria-controls="prompts" aria-selected="false">Prompts</button>
 							</li>
 							
 						</ul>
-						<div class="tab-content" id="myTabContent">
+						<div class="tab-content pt-0" id="myTabContent">
 
 							<div class="tab-pane fade show active py-0" id="prompts" role="tabpanel" aria-labelledby="prompts-tab">
 							
