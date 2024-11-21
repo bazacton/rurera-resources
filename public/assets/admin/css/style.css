@@ -1605,7 +1605,8 @@ table#outputTable thead th {
 }
 /*Topics_Parts Template_save_modal Style End*/
 /*topic parts search-form select2 style Start*/
-#topic_parts_search_form .select2-container {z-index: auto !important;}
+#topic_parts_search_form .select2-container,
+#sub_parts_questions_report_search_form .select2-container {z-index: auto !important;}
 #topic_parts_search_form .select2-container--default .select2-selection--single {
     border-color: #e4e6fc;
     background-color: #fdfdff;
