@@ -569,8 +569,8 @@ $rand_id = rand(999,99999);
 															$similiarity_responses = json_decode($similiarity_responses, true);
 															$similiarity_response = isset( $similiarity_responses[$question_index] )? $similiarity_responses[$question_index] : array();
 															@endphp
-															@if(!empty($similiarity_responses))
-																@foreach($similiarity_responses as $similiarity_html))
+															@if(!empty($similiarity_response))
+																@foreach($similiarity_response as $similiarity_html))
 																	{!! $similiarity_html !!}
 																@endforeach
 															@endif
