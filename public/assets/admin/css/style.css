@@ -1843,6 +1843,57 @@ body:has(.multi-choice-template-modal.show) .modal {
 .rating-stars input[type=checkbox]:checked ~ label i {
     color: #f8ce06;
 }
+.upload-msg {
+    position: relative;
+    margin-bottom: 15px;
+    background-color: #f0f9f6;
+    padding: 20px 20px;
+    border-radius: 5px;
+    border: 1px solid #d4ded9;
+}
+.upload-msg .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.msg-icon {
+    background-color: #357c62;
+    color: #fff;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+    border-radius: 100%;
+}
+.msg-icon i {
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 20px;
+    font-size: 12px;
+}
+.msg-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.msg-box p {
+    margin: 0;
+    display: inline-flex;
+    flex-direction: column;
+    line-height: normal;
+}
+.msg-box p span {
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 5px;
+    line-height: normal;
+    display: block;
+}
+.msg-box p a {
+    text-decoration: underline;
+}
 /*Import Question Page questions-generator/add-response/ Style End*/
 
 /*****************************************
