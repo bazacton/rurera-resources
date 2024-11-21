@@ -244,16 +244,20 @@ function decodeHtml(html) {
 	 var question_id = $(this).attr('data-question_id');
 	 var question_index = $(this).attr('data-question_index');
 	 var is_deleted = $(this).attr('data-is_deleted');
+	 var similiarity_responses1 = $('.nav').attr('data-similiarity_responses');
 	 var similiarity_responses = $('.nav').attr('data-similiarity_responses');
-	 similiarity_responses = JSON.parse(similiarity_responses);
+	 /*similiarity_responses = JSON.parse(rureraform_decode64(similiarity_responses));
+	 console.log(question_index);
 	 current_similarities_array = [];
 	 if (similiarity_responses.hasOwnProperty(question_index)) {
+		 console.log(similiarity_responses[question_index]);
 		 var current_similarities_array = similiarity_responses[question_index];
 	 }
 	 var similiarity_html = '';
+	 console.log(current_similarities_array);
 	 $.each(current_similarities_array, function(index, entry) {
 		similiarity_html += decodeHtml(entry);
-	});
+	});*/
 	 
 	 
 	 $('.question-builder-area').html('');
@@ -264,16 +268,19 @@ function decodeHtml(html) {
 	 }else{
 		 rurera_loader(loaderDiv, 'button');
 		 $.ajax({
-			type: "GET",
+			type: "POST",
+			headers: {
+				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			},
 			url: '/admin/questions-generator/generate_question_builder_layout',
-			data: {'question_id': question_id},
+			data: {'question_id': question_id, 'similiarity_responses': similiarity_responses, 'question_index': question_index},
 			success: function (return_data) {
 				rurera_remove_loader(loaderDiv, 'button');
 				$('.question-builder-area').html('');
 				$('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
-				$('.question-builder-area[data-question_id="'+question_id+'"]').find('.similarity-content-block-data').html(
+				/*$('.question-builder-area[data-question_id="'+question_id+'"]').find('.similarity-content-block-data').html(
 					similiarity_html
-				)
+				)*/
 			}
 		});
 	 }
