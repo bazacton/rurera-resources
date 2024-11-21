@@ -219,7 +219,7 @@
 															</tr>
 															@if($subTopicObj->topicPartItemPrompts->count() > 0 )
 																@foreach($subTopicObj->topicPartItemPrompts as $promptObj)			
-																	@php $prompt_title = $promptObj->title;
+																	@php $prompt_title = isset($promptObj->prompt_title )? $promptObj->prompt_title : '';
 																	$prompt_title = ($prompt_title == '')? 'Prompt' : $prompt_title;
 																	@endphp
 																	<tr style="display:none;" class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
