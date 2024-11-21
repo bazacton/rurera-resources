@@ -1853,8 +1853,8 @@ body:has(.multi-choice-template-modal.show) .modal {
 }
 .upload-msg .close {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 10px;
+    top: 10px;
 }
 .msg-icon {
     background-color: #357c62;
