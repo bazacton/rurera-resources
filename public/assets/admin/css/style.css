@@ -2142,6 +2142,9 @@ output {
 .topic-parts-data .form-group {
     margin: 0;
 }
+.topic-parts-data table thead {
+    border: 2px dotted #ddd;
+}
 .topic-parts-data .card .card-body {
     padding-left: 0;
     padding-right: 0;
