@@ -1858,6 +1858,9 @@ body:has(.multi-choice-template-modal.show) .modal {
     outline: none;
     padding: 0;
 }
+.upload-msg .close span {
+    color: #999;
+}
 .msg-icon {
     background-color: #357c62;
     color: #fff;
@@ -1895,6 +1898,9 @@ body:has(.multi-choice-template-modal.show) .modal {
 }
 .msg-box p a {
     text-decoration: underline;
+}
+.upload-msg.alert:not(.alert-light) a {
+    color: #666;
 }
 /*Import Question Page questions-generator/add-response/ Style End*/
 
