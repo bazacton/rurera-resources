@@ -1856,6 +1856,7 @@ body:has(.multi-choice-template-modal.show) .modal {
     right: 10px;
     top: 10px;
     outline: none;
+    padding: 0;
 }
 .msg-icon {
     background-color: #357c62;
