@@ -55,7 +55,7 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label class="input-label">{{trans('admin/main.category')}}</label>
-                            <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="{{get_filter_request('subject_id', 'bulk_list_search')}}">
+                            <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control" data-course_id="{{get_filter_request('subject_id', 'bulk_list_search')}}">
                                 <option value="">{{trans('admin/main.all_categories')}}</option>
                                 @foreach($categories as $category)
                                 @if(!empty($category->subCategories) and count($category->subCategories))
