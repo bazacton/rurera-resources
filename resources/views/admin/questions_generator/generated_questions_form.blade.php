@@ -247,6 +247,7 @@ function decodeHtml(html) {
 	 var similiarity_responses = $('.nav').attr('data-similiarity_responses');
 	 similiarity_responses = JSON.parse(rureraform_decode64(similiarity_responses));
 	 console.log(similiarity_responses);
+	 console.log(question_index);
 	 current_similarities_array = [];
 	 if (similiarity_responses.hasOwnProperty(question_index)) {
 		 var current_similarities_array = similiarity_responses[question_index];
