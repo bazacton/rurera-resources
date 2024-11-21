@@ -2179,7 +2179,8 @@ output {
     height: auto !important;
     color: #999;
 }
-.topic-parts-data .table-responsive {
+.topic-parts-data .table-responsive,
+.section .table-responsive {
     max-height: 100%;
 }
 /* Topic-parts-data style End */
