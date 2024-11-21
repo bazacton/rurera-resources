@@ -3,7 +3,7 @@ Word Lists Page | Student Panel Style Start
 Sub Pages Style
 *****************************/
 /*Spells-Quiz-Info Style Start*/
-.spells-quiz-info ul {border: 1px solid #bac3ca; border-left: 0; border-right: 0; border-top: 0; display: flex; gap: 15px; justify-content: space-between;}
+.spells-quiz-info ul {border: 1px solid #bac3ca; display: flex; gap: 15px; justify-content: space-between;}
 .spells-quiz-info ul li {border-left: 1px solid #bac3ca;text-align: center;width: 32%;padding: 15px 0;font-size: 20px;color: #343434;text-transform: uppercase;display: inline-flex;align-items: center;justify-content: center;gap: 5px;}
 .spells-quiz-info ul li:first-child {border-left: 0;}
 .spells-quiz-info ul li span {display: inline-block; font-weight: 600; font-size: 20px;}
