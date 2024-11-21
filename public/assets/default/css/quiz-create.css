@@ -123,6 +123,17 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .image-small img {max-width: 200px;}
 /*Image Sizes Style End*/
 
+/*Image Sizes, When Image Size Greater Then Column Size Style Start*/
+.rureraform-col-5 .image-large img,
+.rureraform-col-4 .image-large img,
+.rureraform-col-3 .image-large img,
+.rureraform-col-2 .image-large img,
+.rureraform-col-3 .image-medium img,
+.rureraform-col-2 .image-medium img,
+.rureraform-col-3 .image-small img,
+.rureraform-col-2 .image-small img {max-width: 100%;}
+/*Image Sizes, When Image Size Greater Then Column Size Style End*/
+
 /*Image Alignments Style Start*/
 .image-left {text-align: left !important;}
 .image-right {text-align: right !important;}
