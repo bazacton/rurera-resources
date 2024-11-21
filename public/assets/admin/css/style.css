@@ -1827,6 +1827,7 @@ body:has(.multi-choice-template-modal.show) .modal {
 }
 .rating-stars label {
     margin: 0;
+    cursor: pointer;
 }
 .rating-stars label i {
     font-size: 16px;
