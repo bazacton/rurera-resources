@@ -50,22 +50,22 @@
 
         <section class="card">
             <div class="card-body">
-                <form action="/admin/topics_parts" id="topic_parts_search_form" method="get" class="row mb-0">
+                <form action="/admin/questions-generator" id="topic_parts_search_form" method="get" class="row mb-0">
 
                     <div class="col-md-4">
                         <div class="form-group">
                             <label class="input-label">{{trans('admin/main.category')}}</label>
-                            <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="{{get_filter_request('subject_id', 'topics_search')}}">
+                            <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="{{get_filter_request('subject_id', 'bulk_list_search')}}">
                                 <option value="">{{trans('admin/main.all_categories')}}</option>
                                 @foreach($categories as $category)
                                 @if(!empty($category->subCategories) and count($category->subCategories))
                                 <optgroup label="{{  $category->title }}">
                                     @foreach($category->subCategories as $subCategory)
-                                    <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'topics_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                    <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'bulk_list_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
                                     @endforeach
                                 </optgroup>
                                 @else
-                                <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'topics_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+                                <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'bulk_list_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
                                 @endif
                                 @endforeach
                             </select>
@@ -80,7 +80,7 @@
 					<div class="form-group">
 						<label>Subjects</label>
 						<select data-return_type="option"
-								data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'topics_search')}}"
+								data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'bulk_list_search')}}"
 								class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
 								id="subject_id" name="subject_id">
 							<option disabled selected>Subject</option>
@@ -97,7 +97,7 @@
 					<div class="col-md-4">
 					<div class="form-group">
 						<label class="input-label">Topic</label>
-						<select data-sub_chapter_id="{{get_filter_request('sub_chapter_id', 'topics_search')}}" id="chapter_id"
+						<select data-sub_chapter_id="{{get_filter_request('sub_chapter_id', 'bulk_list_search')}}" id="chapter_id"
 								class="form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
 								name="chapter_id">
 							<option value="">Please select year, subject</option>
@@ -139,7 +139,7 @@
 									<option value="">Select Author</option>
 								@if(!empty($users_list) and $users_list->count() > 0)
 									@foreach($users_list as $userObj)
-										@php $checked = (get_filter_request('user_id', 'topics_search') == $userObj->id)? 'selected' : ''; @endphp
+										@php $checked = (get_filter_request('user_id', 'bulk_list_search') == $userObj->id)? 'selected' : ''; @endphp
 										<option value="{{ $userObj->id }}" {{$checked}}>{{ $userObj->get_full_name() }}</option>
 									@endforeach
 								@endif
@@ -156,7 +156,7 @@
             </div>
 				@php $saved_templates = $user->saved_templates;
 				$saved_templates = json_decode( $saved_templates );
-				$saved_templates = isset( $saved_templates->topics_search )? $saved_templates->topics_search : array();
+				$saved_templates = isset( $saved_templates->bulk_list_search )? $saved_templates->bulk_list_search : array();
 				@endphp
 				<div class="defined-searches mt-20" style="display:none">
 				<span><strong>Defined Searches:</strong></span>
@@ -168,10 +168,10 @@
 								$url_params = '<a href="'.(string) url("").'/admin/topics_parts/?'.$template_array->url_params.'">'.$template_name.'</a>';
 							}
 							@endphp
-							<span class="apply-template-field" data-form_id="topic_parts_search_form" data-template_type="topics_search" data-template_data="{{$template_data}}"> {!! $url_params !!} <a href="javascript:;" data-template_name="{{$template_name}}" class="remove-template"><i class="fas fa-times"></i></a></span>
+							<span class="apply-template-field" data-form_id="topic_parts_search_form" data-template_type="bulk_list_search" data-template_data="{{$template_data}}"> {!! $url_params !!} <a href="javascript:;" data-template_name="{{$template_name}}" class="remove-template"><i class="fas fa-times"></i></a></span>
 						@endforeach
 					@endif
-					<button type="button" class="btn btn-success save-template" data-form_id="topic_parts_search_form" data-template_type="topics_search" ><i class="fas fa-save"></i> Save Template</button>
+					<button type="button" class="btn btn-success save-template" data-form_id="topic_parts_search_form" data-template_type="bulk_list_search" ><i class="fas fa-save"></i> Save Template</button>
 				</div>
         </section>
 
