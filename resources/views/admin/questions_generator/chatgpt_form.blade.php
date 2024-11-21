@@ -160,10 +160,22 @@
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-12">
+					<div class="upload-msg success">
+						<div class="msg-box">
+							<span class="msg-icon">
+								<i class="fas fa-check"></i>
+							</span>
+							<p>
+								<span>Import completed</span>
+								<a href="#">Got to Online store - Pages</a>
+							</p>
+						</div>
+						<button type="button" class="close"><span>&times;</span></button>
+					</div>
 					<div class="form-group">
 						<!-- Content Text Area -->
 						<label for="chatgpt_response">Chatgpt Response:</label>
-						<textarea class="w-100 form-control" name="chatgpt_response" id="chatgpt_response" rows="20" ></textarea>
+						<textarea class="w-100 form-control" name="chatgpt_response" id="chatgpt_response" rows="20" style="background-color:#999;"></textarea>
 					</div>
 				</div>
 					<div class="col-md-12 col-lg-12">
