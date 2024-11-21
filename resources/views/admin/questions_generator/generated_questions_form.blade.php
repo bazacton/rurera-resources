@@ -268,7 +268,10 @@ function decodeHtml(html) {
 	 }else{
 		 rurera_loader(loaderDiv, 'button');
 		 $.ajax({
-			type: "GET",
+			type: "POST",
+			headers: {
+				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			},
 			url: '/admin/questions-generator/generate_question_builder_layout',
 			data: {'question_id': question_id, 'similiarity_responses': similiarity_responses, 'question_index': question_index},
 			success: function (return_data) {
