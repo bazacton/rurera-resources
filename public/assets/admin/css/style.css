@@ -1755,6 +1755,10 @@ body:has(.multi-choice-template-modal.show) .modal {
     display: flex;
     align-items: center;
     gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 .choose-types input[type=radio] {
     position: absolute;
@@ -1768,6 +1772,7 @@ body:has(.multi-choice-template-modal.show) .modal {
     border-radius: 30px;
     padding: 5px 15px;
     color: #333;
+    cursor: pointer;
 }
 .choose-types {
     margin-bottom: 30px;
