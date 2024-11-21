@@ -251,7 +251,7 @@ function decodeHtml(html) {
 	 current_similarities_array = [];
 	 if (similiarity_responses.hasOwnProperty(question_index)) {
 		 console.log('444444');
-		 var current_similarities_array = similiarity_responses[question_index];
+		 var current_similarities_array = JSON.parse(rureraform_decode64(similiarity_responses[question_index]));;
 	 }
 	 var similiarity_html = '';
 	 console.log(current_similarities_array);
