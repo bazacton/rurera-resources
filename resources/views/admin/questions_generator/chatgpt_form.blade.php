@@ -167,7 +167,7 @@
 							</span>
 							<p>
 								<span>Import completed</span>
-								<a href="#">Got to Online store - Pages</a>
+								<a href="#">Go to Questions Listing Page</a>
 							</p>
 						</div>
 						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
