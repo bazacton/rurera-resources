@@ -99,20 +99,20 @@
 														@foreach($exampleQuestions as $exampleQuestionObj)		
 															<div class="col-12 col-lg-3 col-md-6 template-item templates-list-{{$example_type}}">
 																<div class="template-box">
+																	<div class="rating-stars">
+																		<div class="rating-box">
+																			<input type="checkbox" id="star-one">
+																			<label for="star-one">
+																				<i class="fas fa-star"></i>
+																			</label>
+																		</div>
+																	</div>
 																	<div class="card-icon pop">
 																		<img src="{{$exampleQuestionObj->example_thumbnail}}">
 																	</div>
 																	<div class="template-controls">
 																		<button type="button" class="preview-template-btn">Preview template</button>
 																		<button type="button" class="template-btn" data-template_image="{{$exampleQuestionObj->example_thumbnail}}" data-template_name="{{$exampleQuestionObj->getTitleAttribute()}}" data-template_id="{{$exampleQuestionObj->id}}">Select Template</button>
-																		<div class="rating-stars">
-																			<div class="rating-box">
-																				<input type="checkbox" id="star-one">
-																				<label for="star-one">
-																					<i class="fas fa-star"></i>
-																				</label>
-																			</div>
-																		</div>
 																	</div>
 																	<div class="template-data-info">
 																		<span>{{$exampleQuestionObj->search_tags}}</span>
