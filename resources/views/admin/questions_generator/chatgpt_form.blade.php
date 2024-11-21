@@ -188,7 +188,7 @@
 			<div class="col-5 col-md-5">
 
 				<div class="similarity-content-block mb-30">
-					<div class="similarity-content-tabs">
+					<div class="similarity-content-tabs pt-0">
 						<ul class="nav" id="myTab" role="tablist">
 							<li class="nav-item" role="presentation">
 								<button class="nav-link active rurera-hide" id="prompts-tab" data-toggle="tab" data-target="#prompts" type="button" role="tab" aria-controls="prompts" aria-selected="false">Prompts</button>
