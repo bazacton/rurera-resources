@@ -1816,6 +1816,25 @@ body:has(.multi-choice-template-modal.show) .modal {
 .template-data-info {
     margin-top: 15px;
 }
+.rating-stars input[type=checkbox] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.rating-box {
+    position: relative;
+}
+.rating-stars label {
+    margin: 0;
+}
+.rating-stars label i {
+    font-size: 16px;
+    color: #bbb;
+}
+.rating-stars input[type=checkbox]:checked ~ label i {
+    color: #f8ce06;
+}
 /*Import Question Page questions-generator/add-response/ Style End*/
 
 /*****************************************
