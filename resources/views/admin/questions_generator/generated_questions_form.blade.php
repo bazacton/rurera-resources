@@ -246,7 +246,7 @@ function decodeHtml(html) {
 	 var is_deleted = $(this).attr('data-is_deleted');
 	 var similiarity_responses1 = $('.nav').attr('data-similiarity_responses');
 	 var similiarity_responses = $('.nav').attr('data-similiarity_responses');
-	 similiarity_responses = JSON.parse(rureraform_decode64(similiarity_responses));
+	 /*similiarity_responses = JSON.parse(rureraform_decode64(similiarity_responses));
 	 console.log(question_index);
 	 current_similarities_array = [];
 	 if (similiarity_responses.hasOwnProperty(question_index)) {
@@ -257,7 +257,7 @@ function decodeHtml(html) {
 	 console.log(current_similarities_array);
 	 $.each(current_similarities_array, function(index, entry) {
 		similiarity_html += decodeHtml(entry);
-	});
+	});*/
 	 
 	 
 	 $('.question-builder-area').html('');
@@ -270,7 +270,7 @@ function decodeHtml(html) {
 		 $.ajax({
 			type: "GET",
 			url: '/admin/questions-generator/generate_question_builder_layout',
-			data: {'question_id': question_id, 'similiarity_responses': similiarity_responses1, 'question_index': question_index},
+			data: {'question_id': question_id, 'similiarity_responses': similiarity_responses, 'question_index': question_index},
 			success: function (return_data) {
 				rurera_remove_loader(loaderDiv, 'button');
 				$('.question-builder-area').html('');
