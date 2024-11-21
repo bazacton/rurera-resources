@@ -9,7 +9,7 @@ Questions Builder style start
 .col-7 .rureraform-builder .rureraform-col-3 img, 
 .col-7 .rureraform-builder .rureraform-col-4 img, 
 .col-7 .rureraform-builder .rureraform-col-5 img {max-width: 100%; min-width: 100%;}
-.col-7 .image-full img {max-width: 100%;}
+.col-7 .rureraform-builder .image-full img {max-width: 100%;}
 .rureraform-builder .rureraform-elements {max-width: 100%; padding: 0;}
 @media screen and (min-width: 1600px) and (max-width: 1920px) {
     .rureraform-builder {min-width: 896px; max-width: 896px; margin: 0 auto;}
