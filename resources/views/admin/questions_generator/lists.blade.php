@@ -273,7 +273,7 @@
         <div class="modal-content edit-quest-modal-div">
             <div class="modal-body">
 			  <div class="modal-box">
-				<h3 class="font-20 font-weight-bold text-dark mb-10">Save the Template</h3>
+				<h3 class="font-20 font-weight-bold text-dark mb-10">Save Form</h3>
 				<p class="mb-15 font-16">
 					<input type="text" name="template_name" class="template_name form-control">
 				</p>
@@ -282,7 +282,7 @@
 				<input type="hidden" name="form_id" class="form_id">
 				
 				<div class="inactivity-controls">
-					<a href="javascript:;" class="continue-btn save-template-btn button btn btn-primary">Save Template</a>
+					<a href="javascript:;" class="continue-btn save-template-btn button btn btn-primary">Save Form</a>
 					<a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a>
 				</div>
 			  </div>
