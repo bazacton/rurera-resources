@@ -804,7 +804,7 @@ scrollbar-gutter: stable both-edges;
     color: #adabab;
 }
 .rurera-question-block:has(.question-number-holder) .rureraform-elements {padding-left: 0;}
-.question-layout .rureraform-col {padding:0 0 20px !important;}
+.question-layout .rureraform-col {padding:0 15px 20px !important;}
 .rurera-question-block:has(.question-number-holder) .question-layout {
     display: inline-block;
     width: 100%;
@@ -814,10 +814,6 @@ scrollbar-gutter: stable both-edges;
     padding: 0 0 80px;
     display: inline-block;
     width: 100%;
-}
-.question-layout.row {
-    margin-left: 0;
-    margin-right: 0;
 }
 .question-layout .rureraform-element {
 	outline: 0 !important;
