@@ -1657,8 +1657,6 @@ body:has(.multi-choice-template-modal.show) .modal {
     padding-right: 0 !important;
 }
 .multi-choice-template-modal .modal-dialog.modal-xl {
-    max-width: 100%;
-    margin: 0;
     height: 100%;
 }
 .multi-choice-template-modal .modal-content {
