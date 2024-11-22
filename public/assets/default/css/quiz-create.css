@@ -1116,6 +1116,10 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
     min-width: 150px;
     padding: 10px 5px;
     border-radius: 5px;
+    line-height: normal;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
 }
 /* Quiz Select Option Style End*/
 
