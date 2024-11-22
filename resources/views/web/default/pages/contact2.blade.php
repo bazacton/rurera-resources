@@ -288,7 +288,7 @@
 		
 		@foreach($homeSections as $homeSection)
 		@if($homeSection->name == \App\Models\HomeSection::$blog and !empty($blog) and !$blog->isEmpty())
-			   <section class="home-sections container">
+			   <section class="home-sections container pb-50">
 				   <div class="d-flex justify-content-between">
 					   <div class="section-title">
 						   <h2 class="mt-0 mb-10 font-40">Resources</h2>
