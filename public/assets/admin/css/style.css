@@ -2186,6 +2186,9 @@ output {
 .section .table-responsive {
     max-height: 100%;
 }
+.topic-parts-data .topic-tr {
+    background: #e7e2e2;
+}
 /* Topic-parts-data style End */
 /* Questions Generator Column Setting Dropdown Style Start*/
 .columns-settings .dropdown-menu {width: 300px; right: 0; left: auto !important; transform: none !important; top: 100% !important;}
