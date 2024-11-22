@@ -456,7 +456,7 @@
     </section>
 
     @php $faq_items = isset( $faq_items )? $faq_items : array();@endphp
-    <section class="py-100" style="background-color: #fff">
+    <section class="py-80" style="background-color: #fff">
         <div class="container">
             <div class="row">
                 <div class="col-12">
