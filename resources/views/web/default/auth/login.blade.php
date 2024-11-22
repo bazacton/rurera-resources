@@ -186,7 +186,7 @@
                         <div class="login-password">
                             <form>
                                 <div class="form-group">
-                                    <label class="input-label" for="username">Please enter your emojis</label>
+                                    <label class="input-label d-block text-center" for="username">Please enter your emojis</label>
                                     <div class="emoji-passwords">
                                         <span class="is_empty active"></span>
                                         <span class="is_empty"></span>
