@@ -2503,7 +2503,7 @@ body{overflow-x: hidden;}
 .lms-accordion-modern.accordion .btn span {font-size: 18px; color: #fff; font-weight: 400; width: 40px; background-color: rgba(0, 0, 0, 0.2); height: 40px; text-align: center; line-height: 40px; border-radius: 100%; margin-right: 15px; display: inline-block; max-width: calc(100% - 85%);}
 .lms-accordion-modern.accordion .card-body p {font-size: 20px; color: #fff;}
 .lms-accordion-modern.accordion .card-body p.font-16{font-size: 16px;}
-.lms-accordion-modern.accordion .card-body {padding: 10px 32px 25px 45px;}
+.lms-accordion-modern.accordion .card-body {padding: 10px 15px 30px 15px;}
 .lms-accordion-modern.accordion .card {padding: 0; margin-bottom: 0; position: static; max-width: 430px; margin-left: -120px; background-color: var(--primary); border-bottom: 2px solid rgba(0, 0, 0, 0.2) !important; box-shadow: 0 0 5px rgba(0, 0, 0, 0.080);}
 .lms-accordion-section .lms-img-holder {padding-top: 45px; padding-left: 35px; padding-right: 30px;}
 .lms-accordion-modern.accordion .card:first-child {border-radius: 10px 10px 0 0;}
