@@ -343,93 +343,104 @@
       </div>
     </div>
   </section>
-  <div class="lms-faqs" itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <div class="section-title text-center mb-30">
-				<h2 class="mt-0 mb-10 font-40">Frequently asked questions</h2>
-		</div>
-    <div id="accordion">
-      <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <div class="card-header active" id="heading">
-          <button class="btn font-18 font-weight-bold btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">How does Rurera’s bookshelf work?</button>
-        </div>
-        <div id="collapseOne" class="collapse show" aria-labelledby="heading" data-parent="#accordion">
-          <div class="card-body">
-            <p>Rurera is a digital reading service that makes reading interactive, motivating and engaging for children aged 4-11. With eBooks and comprehension quizzes to suit all, teachers and parents can also monitor and support each child's personal reading and comprehension progress.</p>
+  <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-12">
+            <div class="section-title text-center mb-30">
+              <h2 class="mt-0 mb-10 font-40">Frequently asked questions</h2>
           </div>
-        </div>
-      </div>
-      <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <div class="card-header" id="headingTwo">
-          <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I read books offline?</button>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="card-body">
-            <p>Currently, Rurera requires an internet connection to access and read books. However, you can bookmark books for quick access and view them when you’re online.</p>
-          </div>
-        </div>
-      </div>
-      <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <div class="card-header" id="headingThree">
-          <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How can I find books that match my reading level?</button>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-            <p>Rurera provides personalized recommendations based on your reading preferences and level. You can use the search and filter options to find books that match your reading ability and interests.</p>
-          </div>
-        </div>
-      </div>
-      <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <div class="card-header" id="headingfour">
-          <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">How do book chapter quizzes work?</button>
-        </div>
-        <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordion">
-          <div class="card-body">
-            <p>Book chapter quizzes test your understanding of each chapter. They are designed to reinforce key concepts and ensure comprehension. You can take these quizzes after reading each chapter to check your knowledge.</p>
-          </div>
-        </div>
-      </div>
-      <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <div class="card-header" id="headingfive">
-          <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">How do I earn Coin Points through reading?</button>
-        </div>
-        <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordion">
-          <div class="card-body">
-            <p>You earn Coin Points by completing reading milestones and participating in activities. The more books you read and engage with, the more Coin Points you accumulate, which can be exchanged for rewards.</p>
-          </div>
-        </div>
-      </div>
-      <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <div class="card-header" id="headingsix">
-          <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">How does reading benefit a child's development?</button>
-        </div>
-        <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
-          <div class="card-body">
-            <p>Reading enhances a child’s cognitive skills, including vocabulary, comprehension, and critical thinking. It also fosters imagination, creativity, and empathy by exposing them to diverse perspectives and experiences.</p>
-          </div>
-        </div>
-      </div>
-      <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <div class="card-header" id="heading7">
-          <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">Can reading help with academic performance?</button>
-        </div>
-        <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
-          <div class="card-body">
-            <p>Yes, regular reading improves comprehension and analytical skills, which can boost overall academic performance. Children who read often tend to perform better in subjects like reading, writing, and even math.</p>
-          </div>
-        </div>
-      </div>
-      <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <div class="card-header" id="heading8">
-          <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">How does reading improve a child's language skills?</button>
-        </div>
-        <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
-          <div class="card-body">
-            <p>Reading helps expand a child’s vocabulary and grammar by exposing them to new words and sentence structures. It also improves their understanding of language through context and usage, aiding in better communication skills.</p>
+          <div class="col-12 col-lg-12 col-md-12 mx-auto">
+            <div class="lms-faqs mx-w-100" itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <div id="accordion">
+                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="card-header active" id="heading">
+                    <button class="btn font-18 font-weight-bold btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">How does Rurera’s bookshelf work?</button>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="heading" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Rurera is a digital reading service that makes reading interactive, motivating and engaging for children aged 4-11. With eBooks and comprehension quizzes to suit all, teachers and parents can also monitor and support each child's personal reading and comprehension progress.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="card-header" id="headingTwo">
+                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I read books offline?</button>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Currently, Rurera requires an internet connection to access and read books. However, you can bookmark books for quick access and view them when you’re online.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="card-header" id="headingThree">
+                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How can I find books that match my reading level?</button>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Rurera provides personalized recommendations based on your reading preferences and level. You can use the search and filter options to find books that match your reading ability and interests.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="card-header" id="headingfour">
+                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">How do book chapter quizzes work?</button>
+                  </div>
+                  <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Book chapter quizzes test your understanding of each chapter. They are designed to reinforce key concepts and ensure comprehension. You can take these quizzes after reading each chapter to check your knowledge.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="card-header" id="headingfive">
+                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">How do I earn Coin Points through reading?</button>
+                  </div>
+                  <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>You earn Coin Points by completing reading milestones and participating in activities. The more books you read and engage with, the more Coin Points you accumulate, which can be exchanged for rewards.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="card-header" id="headingsix">
+                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">How does reading benefit a child's development?</button>
+                  </div>
+                  <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Reading enhances a child’s cognitive skills, including vocabulary, comprehension, and critical thinking. It also fosters imagination, creativity, and empathy by exposing them to diverse perspectives and experiences.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="card-header" id="heading7">
+                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">Can reading help with academic performance?</button>
+                  </div>
+                  <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Yes, regular reading improves comprehension and analytical skills, which can boost overall academic performance. Children who read often tend to perform better in subjects like reading, writing, and even math.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="card-header" id="heading8">
+                    <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">How does reading improve a child's language skills?</button>
+                  </div>
+                  <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Reading helps expand a child’s vocabulary and grammar by exposing them to new words and sentence structures. It also improves their understanding of language through context and usage, aiding in better communication skills.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  
   
   @foreach($homeSections as $homeSection)
     @if($homeSection->name == \App\Models\HomeSection::$blog and !empty($blog) and !$blog->isEmpty())
