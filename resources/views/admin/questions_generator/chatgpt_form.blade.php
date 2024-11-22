@@ -146,7 +146,7 @@
 																			<img src="{{$exampleQuestionObj->example_thumbnail}}">
 																		</div>
 																		<div class="template-controls">
-																			<button type="button" class="preview-template-btn">Preview template</button>
+																			<button type="button" class="preview-template-btn">Preview template (#{{$exampleQuestionObj->id}})</button>
 																			<button type="button" class="template-btn" data-template_image="{{$exampleQuestionObj->example_thumbnail}}" data-template_name="{{$exampleQuestionObj->getTitleAttribute()}}" data-template_id="{{$exampleQuestionObj->id}}">Select Template</button>
 																		</div>
 																		<div class="template-data-info">
