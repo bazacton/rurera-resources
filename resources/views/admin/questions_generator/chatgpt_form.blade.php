@@ -43,27 +43,54 @@
 										<tr>
 											<th>Topic Part Item</th>
 											<th>Created Date</th>
-											<th>Expected Questions</th>
-											<th>No of Questions</th>
-											<th>Pending Questions</th>
+											@if(!empty($difficulty_levels))
+												@foreach($difficulty_levels as $difficulty_level)
+													<th colspan="3">{{$difficulty_level}}</th>
+												@endforeach
+											@endif
+											<th>Total Pending Questions</th>
 											<th>Action</th>
+										</tr>
+										<tr>
+											<th>&nbsp;</th>
+											<th>&nbsp;</th>
+											@if(!empty($difficulty_levels))
+												@foreach($difficulty_levels as $difficulty_level)
+													<th>Expected</th>
+													<th>Total</th>
+													<th>Pending</th>
+												@endforeach
+											@endif
+											<th>&nbsp;</th>
+											<th>&nbsp;</th>
 										</tr>
 									 </thead>
 									  <tbody id="topic_part_1">
 											@if($sub_topic_parts->count() > 0 )
 												@foreach($sub_topic_parts as $subTopicObj)
 													@php 
+													$total_pending_questions = 0;
 													$expected_part_questions = getPartQuestions($subTopicObj->difficulty_level);
 													$total_part_questions = $subTopicObj->topicPartItemQuestions->count();
 													$pending_part_questions = $expected_part_questions-$total_part_questions;
 													$pending_part_questions = ( $pending_part_questions < 0 )? 0 : $pending_part_questions;
 													@endphp
 													<tr class="topic_parts accordion-parent" data-child_class="subtopic_prompts_{{$subTopicObj->id}}">
-														<td><span class="topic-part-title"><i class="fas fa-chevron-right"></i>&nbsp;{{$subTopicObj->title}}</span></td>
-														<td>{{ dateTimeFormat($subTopicObj->created_at, 'j M y | H:i') }}</td>
-														<td>{{$subTopicObj->difficulty_level}} ({{$expected_part_questions}})</td>
-														<td>{{$total_part_questions}}</td>
-														<td>{{$pending_part_questions}}</td>
+														<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>&nbsp;{{$subTopicObj->title}}</span></td>
+														<td>-</td>
+														@if(!empty($difficulty_levels))
+															@foreach($difficulty_levels as $difficulty_level)
+																@php $total_questions = $subTopicObj->topicPartItemQuestions->where('question_difficulty_level', $difficulty_level)->count();
+																$pending_questions = $expected_part_questions-$total_questions;
+																$pending_questions = ($pending_questions < 0)? 0 : $pending_questions;
+																$total_pending_questions += $pending_questions;
+																@endphp
+																<td>{{$expected_part_questions}}</td>
+																<td>{{$total_questions}}</td>
+																<td>{{$pending_questions}}</td>
+															@endforeach
+														@endif
+														<td>{{$total_pending_questions}}</td>
 														<td>&nbsp;</td>
 													</tr>
 													@if($subTopicObj->topicPartItemPrompts->count() > 0 )
@@ -71,11 +98,18 @@
 															@php $prompt_title = isset($promptObj->prompt_title )? $promptObj->prompt_title : '';
 															$prompt_title = ($prompt_title == '')? 'Prompt' : $prompt_title;
 															@endphp
-															<tr style="display:none;" class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
+															
+															<tr class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
 															  <td>{{$prompt_title}}</td>
 															  <td>{{ dateTimeFormat($promptObj->created_at, 'j M y | H:i') }}</td>
-															  <td>-</td>
-															  <td>{{$promptObj->topicPartQuestions->count()}}</td>
+															  @if(!empty($difficulty_levels))
+																@foreach($difficulty_levels as $difficulty_level)
+																	@php $total_questions = $promptObj->topicPartQuestions->where('question_difficulty_level', $difficulty_level)->count();@endphp
+																	<td>-</td>
+																	<td>{{$total_questions}}</td>
+																	<td>-</td>
+																@endforeach
+															  @endif
 															  <td>-</td>
 															  <td><a href="javascript:;" class="btn-transparent btn-sm text-primary copy-to-text" data-copy_to="prompt-text-{{$promptObj->id}}" title="" data-original-title="Copy Prompt"><i class="fas fa-copy"></i></a> 
 															  <a href="javascript:;" class="btn-transparent btn-sm text-primary" title="" data-original-title="Search"><i class="fas fa-search"></i></a>
@@ -84,8 +118,8 @@
 															</tr>
 														@endforeach
 													@else
-														<tr style="display:none;" class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
-														  <td colspan="6">
+														<tr class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
+														  <td colspan="{{(count($difficulty_levels)*3)+4}}">
 															No Prompt Found!
 														  </td>
 														</tr>
@@ -209,7 +243,7 @@
 										</div>
 										<div class="col-12">
 											<div class="form-group">
-												<textarea name="chatgpt_response" id="chatgpt_response" class="form-control chatgpt_response" rows="20" placeholder="Input JSON"></textarea>
+												<textarea name="chatgpt_response" id="chatgpt_response" class="form-control chatgpt_response" rows="20" placeholder="Input Response (JSON Only)"></textarea>
 											</div>
 										</div>
 										<div class="col-md-12 col-lg-12">
