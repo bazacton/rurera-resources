@@ -132,7 +132,7 @@
                 </div>
             </div>
             <div class="col-12 login-opt-type rurera-hide login-with-smartbadge">
-                <a href="javascript:;" class="login-back-btn">Back</a>
+                <a href="javascript:;" class="login-back-btn"><span>&#8592;</span> Back</a>
                 <div class="login-holder">
                     <div class="col-12">
                         <div class="login-magic-code">
