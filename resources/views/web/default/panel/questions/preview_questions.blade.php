@@ -115,7 +115,7 @@ $rand_id = rand(99,9999);
 													 <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$counter}}</span>
 													<span class="question-dev-details">({{$questionObj->id}}) ({{$questionObj->question_difficulty_level}}) ({{$questionObj->question_type}})</span>
 												</span>
-												<div class="question-layout sss">
+												<div class="question-layout">
 													{!! $question_layout !!}
 												</div>
 												</div>
