@@ -405,7 +405,6 @@ Home Blogs Style Start
 .blog-grid-card .blog-grid-detail,
 .list-card .text-holder {padding: 0 20px 0 0; width: 100%;}
 .blog-grid-card .blog-grid-detail .blog-grid-title {font-size: 1.5rem; font-weight: 700; line-height: 1.5; color: var(--dark-charcoal);}
-.blog-grid-card.rurera-grid .blog-grid-title {min-height: 108px;}
 .blog-grid-card .blog-grid-detail .blog-grid-desc {font-weight: 400; line-height: 1.7; color: #6c6c6c; overflow: hidden;}
 .blog-grid-card .blog-grid-detail .blog-grid-footer {font-size: 16px; font-weight: 500; line-height: 1.19; color: #6c6c6c; pointer-events: none;}
 .blog-grid-card .blog-tags {padding: 0; margin: 15px 0 0 0; display: flex; flex-wrap: wrap; }
