@@ -444,7 +444,7 @@
   
   @foreach($homeSections as $homeSection)
     @if($homeSection->name == \App\Models\HomeSection::$blog and !empty($blog) and !$blog->isEmpty())
-           <section class="home-sections container pb-60">
+           <section class="home-sections container pb-60 mt-60">
                <div class="d-flex justify-content-between">
                    <div class="section-title">
                        <h2 class="mt-0 mb-10 font-40">{{ trans('home.blog') }}</h2>
