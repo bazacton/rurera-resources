@@ -155,7 +155,7 @@
             </div>
 
             <div class="col-12 login-opt-type login-with-pin mx-auto rurera-hide">
-                <a href="javascript:;" class="login-back-btn">Back</a>
+                <a href="javascript:;" class="login-back-btn d-inline-block mb-10"><span>&#8592;</span> Back</a>
                 <div class="login-holder d-flex flex-column justify-content-center align-items-center">
                     <div class="col-12">
                         <div class="login-password">
@@ -180,7 +180,7 @@
             </div>
 
             <div class="col-12 login-opt-type rurera-hide login-with-emoji">
-                <a href="javascript:;" class="login-back-btn">Back</a>
+                <a href="javascript:;" class="login-back-btn d-inline-block mb-10"><span>&#8592;</span> Back</a>
                 <div class="login-holder">
                     <div class="col-12">
                         <div class="login-password">
