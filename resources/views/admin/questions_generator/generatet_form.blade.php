@@ -11,19 +11,16 @@
     <div class="modal-dialog">
         <div class="modal-content edit-quest-modal-div">
             <div class="modal-body">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
 			  <div class="modal-box">
-				<h3 class="font-20 font-weight-normal mb-10 text-dark">Save Form</h3>
+				<h3 class="font-24 font-weight-normal mb-10">Save the Template</h3>
 				<p class="mb-15 font-16">
 					<input type="text" name="template_name" class="template_name form-control">
 				</p>
 				<input type="hidden" name="form_data_encoded" class="form_data_encoded">
 				
 				<div class="inactivity-controls">
-					<a href="javascript:;" class="continue-btn save-template-btn btn btn-primary">Save Form</a>
-					<!-- <a href="javascript:;" class="btn btn-danger" data-dismiss="modal" aria-label="Continue">Close</a> -->
+					<a href="javascript:;" class="continue-btn save-template-btn btn btn-primary">Save Template</a>
+					<a href="javascript:;" class="btn btn-danger" data-dismiss="modal" aria-label="Continue">Close</a>
 				</div>
 			  </div>
 			</div>
@@ -84,7 +81,6 @@
 						<input type="number" name="example_question_id" id="example_question_id" class="w-100 form-control" value="13061">
 					</div>
 				</div>
-				
 				<div class="col-md-12 col-lg-12">
 					<div id="accordion" class="topic-parts-data">
 						
