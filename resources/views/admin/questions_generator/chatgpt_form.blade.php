@@ -76,7 +76,7 @@
 							<div class="modal-content">
 								<div class="modal-header">
 									<div class="section-header p-0 ml-0">
-										<h1>Questions Template</h1>
+										<h1>Choose Questions Template</h1>
 									</div>
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
