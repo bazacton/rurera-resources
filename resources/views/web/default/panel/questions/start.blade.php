@@ -68,7 +68,7 @@ $rand_id = rand(99,9999);
 								<div class="question-layout-block">
 									<form class="question-fields" action="javascript:;" data-question_id="10180">
 										<div class="left-content has-bg">
-											<span class="questions-total-holder d-block mb-30"><span class="question-dev-details">({{$question->id}}) ({{ $question->question_difficulty_level }}) ({{ $question->question_type }})</span></span>
+											<span class="questions-total-holder d-block mb-10"><span class="question-dev-details">({{$question->id}}) ({{ $question->question_difficulty_level }}) ({{ $question->question_type }})</span></span>
 											<span class="question-number-holder" style="z-index: 999999999;"> <span class="question-number">1</span></span>
 												
 											<div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
