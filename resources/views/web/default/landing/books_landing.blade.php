@@ -230,7 +230,7 @@
     </div>
   </section>
 
-  <section class="lms-blog lms-blog-grid books-blog mx-w-100 pt-80 pb-50 mb-100" style="background-color:#7679ee;">
+  <section class="lms-blog lms-blog-grid books-blog mx-w-100 pt-80 pb-50 mb-80" style="background-color:#7679ee;">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-12">
