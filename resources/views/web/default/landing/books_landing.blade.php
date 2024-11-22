@@ -449,7 +449,7 @@
                    @endforeach
 
                </div>
-               <div class="d-flex align-items-center justify-content-center pt-50">
+               <div class="d-flex align-items-center justify-content-center pt-30">
                     <a href="/pricing" class="try-rurera-btn btn-primary font-16 text-dark-blue register-btn py-15 px-30">Try Rurera for free</a>
                 </div>
            </section>
