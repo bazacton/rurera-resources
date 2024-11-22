@@ -255,6 +255,11 @@ Front-end Login Style Start
 .login-password .form-group {margin-bottom: 0;}
 .emoji-passwords .is_empty {background-color: #ddd; height: 25px; width: 25px; border-radius: 100%;}
 .login-password form {margin-bottom: 50px;}
+.login-with-emoji form {
+  border-bottom: 1px solid #ddd;
+  padding: 0 0 30px;
+  margin-bottom: 30px;
+}
 .login-password input[type="password"],
 .login-password input[type="text"] {border: 0; padding: 0; color: #eeeeee; letter-spacing: 18px; text-align: center; height: 40px; min-height: auto; -webkit-text-security: none; font-size: 80px;}
 .login-password input[type="password"],
