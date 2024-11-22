@@ -348,7 +348,8 @@
       <div class="row">
           <div class="col-12">
             <div class="section-title text-center mb-30">
-              <h2 class="mt-0 mb-10 font-40">Frequently asked questions</h2>
+                <h2 class="mt-0 mb-10 font-40">Frequently asked questions</h2>
+            </div>
           </div>
           <div class="col-12 col-lg-12 col-md-12 mx-auto">
             <div class="lms-faqs mx-w-100" itemprop="mainEntity" itemtype="https://schema.org/Question">
