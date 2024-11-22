@@ -1112,14 +1112,18 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 /* Quiz File Attachment Style End */
 /* Quiz Select Option Style Start*/
 .question-fields select {
+    background-image: url(/assets/default/svgs/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 94% center;
     border: 1px solid #eee;
     min-width: 150px;
-    padding: 10px 5px;
+    padding: 10px 22px 10px 10px;
     border-radius: 5px;
     line-height: normal;
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 /* Quiz Select Option Style End*/
 
