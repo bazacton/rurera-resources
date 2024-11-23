@@ -104,7 +104,7 @@
 															  <td>{{ dateTimeFormat($promptObj->created_at, 'j M y | H:i') }}</td>
 															  @if(!empty($difficulty_levels))
 																@foreach($difficulty_levels as $difficulty_level)
-																	@php $total_questions = $promptObj->topicPartQuestions->where('question_difficulty_level', $difficulty_level)->count();@endphp
+																	@php $total_questions = $promptObj->promptQuestions->where('question_difficulty_level', $difficulty_level)->count();@endphp
 																	<td>-</td>
 																	<td>{{$total_questions}}</td>
 																	<td>-</td>
