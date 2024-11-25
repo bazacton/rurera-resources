@@ -211,6 +211,9 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .lms-checkbox-img .form-field.wrong label {background: none; border-color: #ff4a4a; color: #000;}
 .lms-checkbox-img .form-field.wrong label:before {border-color: #ff4a4a;}
 .form-field input[type="checkbox"]:checked ~ label:has(img) {background-color: inherit; border-color: rgb(113 150 251);}
+.active-option label {
+    background-color: #fcfbfb;
+}
 /* Multi Response List Style End */
 /*Quiz Radio-Image Style Start*/
 .lms-radio-img .field-holder label {padding: 5px; border-radius: 5px;}
