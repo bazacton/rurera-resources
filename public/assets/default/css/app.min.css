@@ -244,7 +244,7 @@ Front-end Login Style Start
 .login-magic-code .error-msg {background-color: #f7d7da; border: 1px solid #e3cfd1; border-radius: 5px; margin-top: 20px; margin-bottom: 15px; padding: 16px 18px;}
 .login-magic-code .error-msg span {display: block; line-height: normal;}
 .login-magic-code .qr-code-box {border: 2px dashed #d4d4d4; border-radius: 5px; display: inline-block; padding: 30px; width: 100%;}
-.login-magic-code {min-height: 500px; display: flex; flex-direction: column; }
+.login-magic-code {min-height: 380px; display: flex; flex-direction: column; }
 .login-help-box {margin-top: auto;}
 .login-magic-code .qr-code-box a {display: flex; align-items: center; gap: 35px;}
 .social-login span {font-size: 18px; font-weight: 500; line-height: normal;}
