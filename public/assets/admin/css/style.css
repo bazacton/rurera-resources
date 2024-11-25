@@ -2191,6 +2191,9 @@ output {
 .topic-parts-data .subtopic-tr {
     background: #ededed;
 }
+.table:not(.table-sm) thead th.warning {
+    background-color: #fff3cd;
+}
 /* Topic-parts-data style End */
 /* Questions Generator Column Setting Dropdown Style Start*/
 .columns-settings .dropdown-menu {width: 300px; right: 0; left: auto !important; transform: none !important; top: 100% !important;}
