@@ -45,7 +45,12 @@
 											<th class="warning font-14">Created Date</th>
 											@if(!empty($difficulty_levels))
 												@foreach($difficulty_levels as $difficulty_level)
-													<th colspan="3">{{$difficulty_level}}</th>
+													@php $difficulty_level_class = '';
+													$difficulty_level_class = ($difficulty_level == 'Emerging')? 'table-col-red' : $difficulty_level_class;
+													$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
+													$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
+													@endphp
+													<th colspan="3" class="{{$difficulty_level_class}}">{{$difficulty_level}}</th>
 												@endforeach
 											@endif
 											<th class="font-14">Total Pending Questions</th>
@@ -56,9 +61,14 @@
 											<th>&nbsp;</th>
 											@if(!empty($difficulty_levels))
 												@foreach($difficulty_levels as $difficulty_level)
-													<th>Expected</th>
-													<th>Total</th>
-													<th>Pending</th>
+													@php $difficulty_level_class = '';
+														$difficulty_level_class = ($difficulty_level == 'Emerging')? 'table-col-red' : $difficulty_level_class;
+														$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
+														$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
+													@endphp
+													<th class="{{$difficulty_level_class}}">Expected</th>
+													<th class="{{$difficulty_level_class}}">Total</th>
+													<th class="{{$difficulty_level_class}}">Pending</th>
 												@endforeach
 											@endif
 											<th>&nbsp;</th>
@@ -80,14 +90,19 @@
 														<td>-</td>
 														@if(!empty($difficulty_levels))
 															@foreach($difficulty_levels as $difficulty_level)
+																@php $difficulty_level_class = '';
+																$difficulty_level_class = ($difficulty_level == 'Emerging')? 'table-col-red' : $difficulty_level_class;
+																$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
+																$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
+																@endphp
 																@php $total_questions = $subTopicObj->topicPartItemQuestions->where('question_difficulty_level', $difficulty_level)->count();
 																$pending_questions = $expected_part_questions-$total_questions;
 																$pending_questions = ($pending_questions < 0)? 0 : $pending_questions;
 																$total_pending_questions += $pending_questions;
 																@endphp
-																<td>{{$expected_part_questions}}</td>
-																<td>{{$total_questions}}</td>
-																<td>{{$pending_questions}}</td>
+																<td class="{{$difficulty_level_class}}">{{$expected_part_questions}}</td>
+																<td class="{{$difficulty_level_class}}">{{$total_questions}}</td>
+																<td class="{{$difficulty_level_class}}">{{$pending_questions}}</td>
 															@endforeach
 														@endif
 														<td>{{$total_pending_questions}}</td>
@@ -105,9 +120,14 @@
 															  @if(!empty($difficulty_levels))
 																@foreach($difficulty_levels as $difficulty_level)
 																	@php $total_questions = $promptObj->promptQuestions->where('question_difficulty_level', $difficulty_level)->count();@endphp
-																	<td>-</td>
-																	<td>{{$total_questions}}</td>
-																	<td>-</td>
+																	@php $difficulty_level_class = '';
+																	$difficulty_level_class = ($difficulty_level == 'Emerging')? 'table-col-red' : $difficulty_level_class;
+																	$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
+																	$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
+																	@endphp
+																	<td class="{{$difficulty_level_class}}">-</td>
+																	<td class="{{$difficulty_level_class}}">{{$total_questions}}</td>
+																	<td class="{{$difficulty_level_class}}">-</td>
 																@endforeach
 															  @endif
 															  <td>-</td>
