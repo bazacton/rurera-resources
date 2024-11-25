@@ -40,7 +40,7 @@
 							<div class="table-responsive">
 								<table class="table">
 									<thead>
-										<tr>
+										<tr class="topic-heading-top">
 											<th class="font-14">&nbsp;</th>
 											<th class="warning font-14">&nbsp;</th>
 											@if(!empty($difficulty_levels))
