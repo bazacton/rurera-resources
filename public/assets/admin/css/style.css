@@ -2194,6 +2194,7 @@ output {
 .topic-parts-data .table:not(.table-sm) thead th {
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 14px;
 }
 .topic-parts-data .table:not(.table-sm) thead th.table-col-orange {
     background-color: #fff3cd;
