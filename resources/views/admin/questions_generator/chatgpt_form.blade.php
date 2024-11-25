@@ -53,11 +53,11 @@
 													<th colspan="3" class="{{$difficulty_level_class}}">{{$difficulty_level}}</th>
 												@endforeach
 											@endif
-											<th class="font-14">Total Pending Questions</th>
-											<th class="font-14">Action</th>
+											<th class="font-14">&nbsp;</th>
+											<th class="font-14">&nbsp;</th>
 										</tr>
 										<tr>
-											<th> Topic Part Item</th>
+											<th>Topic Part Item</th>
 											<th>Created Date</th>
 											@if(!empty($difficulty_levels))
 												@foreach($difficulty_levels as $difficulty_level)
@@ -71,8 +71,8 @@
 													<th class="{{$difficulty_level_class}}">Pending</th>
 												@endforeach
 											@endif
-											<th>&nbsp;</th>
-											<th>&nbsp;</th>
+											<th>Total Pending Questions</th>
+											<th>Action</th>
 										</tr>
 									 </thead>
 									  <tbody id="topic_part_1">
