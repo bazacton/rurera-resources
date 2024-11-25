@@ -139,7 +139,7 @@
                                 <div class="icon-box">
                                     <i data-feather="share-2" class="" width="20" height="20"></i>
                                 </div>
-                                <div class="ml-5">
+                                <div class="ml-10">
                                     <span class="d-block font-16 font-weight-bold text-dark">{{ trans('public.share') }}</span>
                                     <span class="d-block font-12 text-gray">{{ trans('update.product_share_text') }}</span>
                                 </div>
