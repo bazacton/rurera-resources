@@ -5906,11 +5906,14 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 						}
 						
                         label_data += rureraform_form_elements[i]["options"][j]["label"];
+					
 						if( image_position == 'right' ){
 							label_data += image_data;
 						}
+						var is_checked = rureraform_form_elements[i]["options"][j]["default"];
+						var is_checked_class = (is_checked == "on")? "active-option" : "";
                         option = "<input class='editor-field rureraform-checkbox-" + properties["checkbox-size"] + "'  type='checkbox' data-field_id='" + random_id + "' name='field-" + random_id + "' id='field-" + random_id + "-" + j + "' value='" + rureraform_escape_html(rureraform_form_elements[i]["options"][j]["value"]) + "'" + selected + " /><label for='field-" + random_id + "-" + j + "'>" + label_data + "</label>";
-                        options += "<div class='form-field rureraform-cr-container-" + properties["checkbox-size"] + " rureraform-cr-container-" + properties["checkbox-position"] + "'>\n\
+                        options += "<div class='form-field "+is_checked_class+" rureraform-cr-container-" + properties["checkbox-size"] + " rureraform-cr-container-" + properties["checkbox-position"] + "'>\n\
 					" + option + "</div>";
                     }
 					
