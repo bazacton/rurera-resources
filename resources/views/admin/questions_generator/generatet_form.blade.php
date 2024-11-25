@@ -94,29 +94,29 @@
 						<label>Question Type (optional):</label>
 						<div class="list-group list-in-row">
 							<div class="row-field">
-								<input type="radio" name="question_type" id="type_mc" value="multiple-choice" checked>
+								<input type="radio" name="question_type" data-condition_key="question_type" class="conditional-parent" id="type_mc" value="multiple-choice" checked>
 								<label for="type_mc">Multiple Choice</label>
 							</div>
 							<div class="row-field">
-								<input type="radio" name="question_type" id="type_tf" value="true-false">
+								<input type="radio" name="question_type" data-condition_key="question_type" class="conditional-parent" id="type_tf" value="true-false">
 								<label for="type_tf">True or False</label>
 							</div>
 							<div class="row-field">
-								<input type="radio" name="question_type" id="type_oq" value="open-question">
+								<input type="radio" name="question_type" data-condition_key="question_type" class="conditional-parent" id="type_oq" value="open-question">
 								<label for="type_oq">Open Question</label>
 							</div>
 							<div class="row-field">
-								<input type="radio" name="question_type" id="type_fill" value="fill-in-the-blank">
+								<input type="radio" name="question_type" data-condition_key="question_type" class="conditional-parent" id="type_fill" value="fill-in-the-blank">
 								<label for="type_fill">Fill in the Blank</label>
 							</div>
 							<div class="row-field">
-								<input type="radio" name="question_type" id="type_match" value="matching">
+								<input type="radio" name="question_type" data-condition_key="question_type" class="conditional-parent" id="type_match" value="matching">
 								<label for="type_match">Matching</label>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-12 col-lg-12">
+				<div class="col-md-12 col-lg-12" data-condition_parent="question_type" data-condition_value="[multiple-choice, true-false]">
 					<div class="form-group">
 						<!-- Number of Options -->
 						<label>Number of Options (0-6):</label>
@@ -148,7 +148,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-12 col-lg-12">
+				<div class="col-md-12 col-lg-12" data-condition_parent="question_type" data-condition_value="[multiple-choice]">
 					<div class="form-group">
 						<!-- Correct Answers -->
 						<label>Select Correct Answers (2-3):</label>
@@ -411,6 +411,25 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
+		
+		
+		$(document).on('change', '.conditional-parent', function() {
+			var condition_key = $(this).attr('data-condition_key');
+			var current_value = $('[name="'+condition_key+'"]:checked').val();
+			$('[data-condition_parent="'+condition_key+'"]').addClass('rurera-hide');
+			
+			$('[data-condition_parent="'+condition_key+'"][data-condition_value]').each(function () {
+				// Get the `data-condition_value` as a list
+				var conditionValues = $(this).data('condition_value').replace(/[\[\]\s]/g, '').split(',');
+				
+				// Check if the current_value exists in the list
+				if (conditionValues.includes(current_value)) {
+					$(this).removeClass('rurera-hide');
+				}
+			});
+			//$('[data-condition_parent="'+condition_key+'"][data-condition_value="'+current_value+'"]').removeClass('rurera-hide');
+		});
+		
 		
 		$(document).on('submit', '.question-generator-form', function() {
 			var thisForm = $(this);
