@@ -2218,6 +2218,9 @@ output {
     padding-top: 15px;
     color: #333;
 }
+.prompt-text:empty{
+    display: none;
+}
 /* Topic-parts-data style End */
 /* Questions Generator Column Setting Dropdown Style Start*/
 .columns-settings .dropdown-menu {width: 300px; right: 0; left: auto !important; transform: none !important; top: 100% !important;}
