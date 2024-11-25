@@ -9,19 +9,21 @@
 
 <section class="section">
 	<div class="col-md-12 col-lg-12">
-		<div class="section-header">
-			<h1>Import Questions</h1>
-			<div class="section-header-breadcrumb">
-				<div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
+		<div class="progress-wrapper">
+			<div class="section-header">
+				<h1>Import Questions</h1>
+				<div class="section-header-breadcrumb">
+					<div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
+					</div>
+					<div class="breadcrumb-item">Import Questions</div>
 				</div>
-				<div class="breadcrumb-item">Import Questions</div>
 			</div>
-		</div>
-		<div class="progress-holder">
-			<div class="progress-box">
-				<div class="circle_percent" data-percent="75">
-					<div class="circle_inner">
-						<div class="round_per"></div>
+			<div class="progress-holder">
+				<div class="progress-box">
+					<div class="circle_percent" data-percent="75">
+						<div class="circle_inner">
+							<div class="round_per"></div>
+						</div>
 					</div>
 				</div>
 			</div>
