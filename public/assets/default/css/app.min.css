@@ -278,7 +278,7 @@ Front-end Login Style Start
 .emoji-passwords img {max-width: 100%; width: 30px; height: 30px; object-fit: contain;}
 .login-with-smartbadge .login-holder,
 .login-with-emoji .login-holder,
-.login-with-pin .login-holder{max-width: 1120px; min-width: 1120px; min-height: 450px;}
+.login-with-pin .login-holder{max-width: 1120px; min-width: 1120px; min-height: 450px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
 .login-password .form-group input.login_pin {margin-bottom: 5px !important; padding: 0 5px; text-align: center;}
 .login-card {padding: 0;}
 .login-card select.form-control {padding: 0 10px;}
