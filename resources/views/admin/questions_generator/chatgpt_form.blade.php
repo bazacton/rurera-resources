@@ -17,6 +17,15 @@
 				<div class="breadcrumb-item">Import Questions</div>
 			</div>
 		</div>
+		<div class="progress-holder">
+			<div class="progress-box">
+				<div class="circle_percent" data-percent="75">
+					<div class="circle_inner">
+						<div class="round_per"></div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="row">
 		<div class="col-12 col-md-12">
