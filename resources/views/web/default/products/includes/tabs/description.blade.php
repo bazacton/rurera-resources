@@ -1,6 +1,6 @@
 <div class="product-show-description-tab mt-20">
     @if($product->description)
-        <div class="course-description">
+        <div class="course-description test">
             {!! clean($product->description) !!}
         </div>
     @endif
