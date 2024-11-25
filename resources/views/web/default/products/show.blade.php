@@ -5,13 +5,13 @@
 @endpush
 
 @section('content')
-    <div class="container product-show-special-offer position-relative mt-30">
+    <div class="container product-show-special-offer position-relative mt-0">
         @if(!empty($activeSpecialOffer))
             @include('web.default.course.special_offer')
         @endif
     </div>
 
-    <div class="container {{ !empty($activeSpecialOffer) ? 'mt-50' : 'mt-30' }}">
+    <div class="container {{ !empty($activeSpecialOffer) ? 'mt-0' : 'mt-0' }}">
         <div class="row">
             <div class="col-12 col-lg-6">
                 <div class="lazyImage product-show-image-card position-relative">
