@@ -42,7 +42,7 @@
 									<thead>
 										<tr>
 											<th>Topic Part Item</th>
-											<th>Created Date</th>
+											<th class="warning">Created Date</th>
 											@if(!empty($difficulty_levels))
 												@foreach($difficulty_levels as $difficulty_level)
 													<th colspan="3">{{$difficulty_level}}</th>
