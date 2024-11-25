@@ -2191,7 +2191,7 @@ output {
 .topic-parts-data .subtopic-tr {
     background: #ededed;
 }
-.table:not(.table-sm) thead th.warning {
+.topic-parts-data .table:not(.table-sm) thead th.warning {
     background-color: #fff3cd;
 }
 /* Topic-parts-data style End */
