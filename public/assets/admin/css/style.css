@@ -2193,6 +2193,7 @@ output {
 }
 .topic-parts-data .table:not(.table-sm) thead th {
     text-transform: uppercase;
+    font-weight: 600;
 }
 .topic-parts-data .table:not(.table-sm) thead th.warning {
     background-color: #fff3cd;
