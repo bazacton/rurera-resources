@@ -105,7 +105,7 @@
                                 @if($product->getAvailability() > 0 and !empty($product->point) and $product->point > 0)
                                     <input type="hidden" class="js-product-points" value="{{ $product->point }}">
 
-                                    <a href="{{ !(auth()->check()) ? '/login' : '#!' }}" class="{{ (auth()->check()) ? 'js-buy-with-point' : '' }} js-buy-with-point-show-btn btn btn-outline-warning mt-10 mt-md-0 ml-0 ml-md-10" rel="nofollow">
+                                    <a href="{{ !(auth()->check()) ? '/login' : '#!' }}" class="{{ (auth()->check()) ? 'js-buy-with-point' : '' }} js-buy-with-point-show-btn btn btn-outline-warning mt-10 mt-md-0 ml-0 ml-md-0" rel="nofollow">
                                         {!! trans('update.buy_with_n_points',['points' => $product->point]) !!}
                                     </a>
                                 @endif
