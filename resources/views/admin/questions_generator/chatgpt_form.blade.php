@@ -21,7 +21,7 @@
 	<div class="row">
 		<div class="col-12 col-md-12">
 			<div class="card">
-				<div class="card-body px-0 pt-30">
+				<div class="card-body px-0 pt-0">
 				
 					
 
