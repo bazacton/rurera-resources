@@ -34,6 +34,7 @@
 								<div class="round_per"></div>
 							</div>
 						</div>
+						<span class="progress-lable">Uptodate</span>
 					</div>
 				</div>
 			</div>
