@@ -118,7 +118,7 @@
                                     <div class="icon-box">
                                         <i data-feather="package" class="" width="20" height="20"></i>
                                     </div>
-                                    <div class="ml-5">
+                                    <div class="ml-10">
                                         <span class="d-block font-16 font-weight-bold text-dark">{{ trans('update.physical_product') }}</span>
                                         <span class="d-block font-12 text-gray">{{ trans('update.delivery_estimated_time_days_alert',['days' => $product->delivery_estimated_time]) }}</span>
                                     </div>
@@ -128,7 +128,7 @@
                                     <div class="icon-box">
                                         <i data-feather="package" class="" width="20" height="20"></i>
                                     </div>
-                                    <div class="ml-5">
+                                    <div class="ml-10">
                                         <span class="d-block font-16 font-weight-bold text-dark">{{ trans('update.virtual_product') }}</span>
                                         <span class="d-block font-12 text-gray">{{ trans('update.download_all_files_after_payment') }}</span>
                                     </div>
