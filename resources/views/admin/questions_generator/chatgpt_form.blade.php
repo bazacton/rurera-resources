@@ -26,6 +26,7 @@
 								<div class="round_per"></div>
 							</div>
 						</div>
+						<span class="progress-lable">Overdued</span>
 					</div>
 					<div class="progress-box">
 						<div class="circle_percent circle-orange" data-percent="50">
