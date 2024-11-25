@@ -2191,6 +2191,9 @@ output {
 .topic-parts-data .subtopic-tr {
     background: #ededed;
 }
+.topic-parts-data .table:not(.table-sm) thead th {
+    text-transform: uppercase;
+}
 .topic-parts-data .table:not(.table-sm) thead th.warning {
     background-color: #fff3cd;
 }
