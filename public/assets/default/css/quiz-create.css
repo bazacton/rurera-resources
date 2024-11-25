@@ -828,6 +828,13 @@ scrollbar-gutter: stable both-edges;
     display: inline-block;
     width: 100%;
 }
+.question-layout.row {
+    align-items: center !important;
+}
+.question-layout.row:has(.rureraform-col:has(.image-field)) {
+    align-items: flex-start !important;
+}
+
 .question-layout .rureraform-element {
 	outline: 0 !important;
 	padding-top: 0;
