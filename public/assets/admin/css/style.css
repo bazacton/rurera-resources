@@ -2213,6 +2213,10 @@ output {
     font-weight: bold;
     font-size: 15px;
     border-bottom: 0;
+    height: auto;
+    padding-bottom: 0;
+    padding-top: 15px;
+    color: #333;
 }
 /* Topic-parts-data style End */
 /* Questions Generator Column Setting Dropdown Style Start*/
