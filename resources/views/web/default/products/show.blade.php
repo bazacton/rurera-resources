@@ -53,7 +53,7 @@
                     <input type="hidden" name="item_id" value="{{ $product->id }}">
                     <input type="hidden" name="item_name" value="product_id">
 
-                    <div class="product-show-info-card p-15 p-md-25 rounded-lg">
+                    <div class="product-show-info-card p-15 p-md-15 rounded-lg">
                         <h1 class="font-30">
                             {{ $product->title }}
                         </h1>
