@@ -42,7 +42,7 @@
 									<thead>
 										<tr>
 											<th class="font-14">&nbsp;</th>
-											<th class="warning font-14">Created Date</th>
+											<th class="warning font-14">&nbsp;</th>
 											@if(!empty($difficulty_levels))
 												@foreach($difficulty_levels as $difficulty_level)
 													@php $difficulty_level_class = '';
@@ -58,7 +58,7 @@
 										</tr>
 										<tr>
 											<th> Topic Part Item</th>
-											<th>&nbsp;</th>
+											<th>Created Date</th>
 											@if(!empty($difficulty_levels))
 												@foreach($difficulty_levels as $difficulty_level)
 													@php $difficulty_level_class = '';
