@@ -184,7 +184,7 @@ Product Tabs Slider Style Start
 .product-show-special-offer .special-offer-card {box-shadow: none !important; border: 1px solid #f1f1f1;}
 .product-show-special-offer .special-offer-card .special-offer-title {font-size: 20px !important;}
 .product-online-viewer-modal-body {height: calc(100vh - 15rem);}
-.product-show-description-tab .course-description {gap: 20px;}
+.product-show-description-tab .course-description {gap: 15px;}
 @media (max-width:767px) {
     .product-show__nav-tabs {flex-wrap: nowrap !important; overflow-x: auto;}
 }
