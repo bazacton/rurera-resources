@@ -2237,8 +2237,6 @@ output {
     display: inline-flex;
     align-items: center;
     gap: 15px;
-    border-left: 2px solid #ddd;
-    padding-left: 25px;
 }
 .progress-holder .progress-box:first-child {
     padding-left: 0;
