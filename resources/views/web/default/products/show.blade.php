@@ -39,7 +39,7 @@
 
                     @if(!empty($product->images) and count($product->images))
                         @foreach($product->images as $image)
-                            <div class="thumbnail-card cursor-pointer ml-20 ml-lg-35">
+                            <div class="thumbnail-card cursor-pointer ml-20 ml-lg-35 p-10">
                                 <img src="{{ $image->path }}" alt="{{ $product->title }}" class="img-cover rounded-sm" loading="lazy" width="100%" height="auto" itemprop="image">
                             </div>
                         @endforeach
