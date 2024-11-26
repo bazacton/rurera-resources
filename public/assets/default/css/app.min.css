@@ -3756,7 +3756,7 @@ Lms Footer Style Start
 .custom-footer .footer-newsletter .form-field {margin-bottom: 15px;}
 .custom-footer .form-check-field {display: flex; align-items: flex-start; gap: 5px; margin: 0 0 20px;}
 .custom-footer .form-check-field input[type=checkbox] {margin: 5px 0 0; }
-.custom-footer .form-check-field label {margin: 0; font-size: 14px; color: #fff;}
+.custom-footer .form-check-field label {margin: 0; font-size: 14px; color: #f5f5f1b3;}
 .footer .footer-subscribe strong {font-size: 30px; font-weight: 700; line-height: 1.22; color: #fff; pointer-events: none}
 .footer .footer-subscribe .subscribe-input {border-radius: 38px; box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .1);}
 .footer ul li {font-size: 14px}
