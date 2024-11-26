@@ -2250,7 +2250,8 @@ output {
 .circle_inbox {position: absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; background: #fff; z-index:3; border-radius: 50%;}
 .percent_text {position: absolute; font-size: 14px; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 3; color: #000;
     font-weight: bold;}
-.circle-orange .round_per {
+.circle-orange .round_per,
+.circle-orange.percent_more:after {
     background: #f6b700;
 }
 .circle-yellow .round_per,
