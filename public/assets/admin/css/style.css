@@ -2181,6 +2181,12 @@ output {
     height: auto !important;
     color: #999;
 }
+.topic-parts-data table tr td:has(.btn-sm) {
+    min-width: 100px;
+    text-align: left !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
 .topic-parts-data .table-responsive,
 .section .table-responsive {
     max-height: 100%;
