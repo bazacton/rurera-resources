@@ -214,7 +214,7 @@
 												@foreach($example_questions as $example_type => $exampleQuestions)	
 														@if($exampleQuestions->count() > 0)
 															@foreach($exampleQuestions as $exampleQuestionObj)		
-																<div class="col-12 col-lg-3 col-md-6 template-item templates-list-{{$example_type}}">
+																<div class="col-12 col-lg-4 col-md-6 template-item templates-list-{{$example_type}}">
 																	<div class="template-box">
 																		<div class="rating-stars">
 																			<div class="rating-box">
