@@ -6323,10 +6323,9 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 						return inputField;
 					});
 	
-					console.log(updatedContent2);
 					content = updatedContent2;
 
-					var html_data = "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'  data-type='" + rureraform_form_elements[i]["type"] + "'>" + content + "<div class='rureraform-element-cover'></div></div>";
+					var html_data = "<div id='rureraform-element-" + i + "' class='question-fields rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'  data-type='" + rureraform_form_elements[i]["type"] + "'>" + content + "<div class='rureraform-element-cover'></div></div>";
                     html += html_data;
 					
                     break;	
