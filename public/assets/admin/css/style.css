@@ -2213,7 +2213,7 @@ output {
     background-color: #f3f374;
     border-bottom: 2px solid #74741e;
 }
-.topic-parts-data .table:not(.table-sm) thead th.table-col-pending {
+.topic-parts-data table tr td.table-col-pending {
     background-color: #fcfcfc;
 }
 .topic-parts-data .table:not(.table-sm) thead .topic-heading-top th {
