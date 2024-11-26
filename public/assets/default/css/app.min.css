@@ -3749,7 +3749,7 @@ Lms Footer Style Start
 .custom-footer h2 {color: #fff; margin: 0 0 20px;}
 .custom-footer .widget {margin: 0 0 30px;}
 .custom-footer .widget-links a,
-.custom-footer .widget-location a {color: #f5f5f1b3; font-size: 18px;}
+.custom-footer .widget-location a {color: #f5f5f1b3; font-size: 16px;}
 .custom-footer .widget-links li,
 .custom-footer .widget-location li {margin-bottom: 15px; width: 50%; display: inline-block; vertical-align: middle;}
 .custom-footer .footer-newsletter input[type="text"] {background-color: inherit; border: 1px solid #5f6567; border-radius: 3px; color: #f5f5f1b3; width: 100%; padding: 0 15px; height: 44px;}
@@ -3841,7 +3841,7 @@ footer.footer-home {padding-top: 70px;}
   line-height: normal;
 }
 .footer-navs a {
-  color: #fff;
+  color: #f5f5f1b3;
 }
 .footer-bottom .footer-social-links ul {
   gap: 10px;
