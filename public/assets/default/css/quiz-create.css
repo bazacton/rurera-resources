@@ -1551,3 +1551,10 @@ body:has(.api-questions-form) .container {
 /**************************************
 Admin API Questions Form Page Style Start
 **************************************/
+
+/*Hide Classes Style Start*/
+.rurera-hide,
+.hide {
+    display: none !important;
+}
+/*Hide Classes Style Start*/
