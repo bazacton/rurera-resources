@@ -96,7 +96,7 @@
 													@endphp
 													<th class="{{$difficulty_level_class}}">Expected</th>
 													<th class="{{$difficulty_level_class}}">Total</th>
-													<th class="{{$difficulty_level_class}}">Pending</th>
+													<th class="{{$difficulty_level_class}} table-col-pending">Pending</th>
 												@endforeach
 											@endif
 											<th>Total Pending Questions</th>
