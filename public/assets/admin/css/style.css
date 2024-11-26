@@ -2256,7 +2256,7 @@ output {
     left: 0;
     top: 50%;
     height: calc(100% - 20px);
-    width: 2px;
+    width: 1px;
     background-color: #ddd;
     transform: translateY(-50%);
 }
