@@ -1135,7 +1135,7 @@ Lms Responsive Style Start
         height: 100%;
     }
     .parent-account-section {
-        padding: 50px 25px;
+        padding: 50px 25px 0;
     }
     .parent-account-section .imb-box {
         margin-top: 50px;
