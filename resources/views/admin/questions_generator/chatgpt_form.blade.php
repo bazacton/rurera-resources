@@ -37,7 +37,7 @@
 						<span class="progress-lable">Expected</span>
 					</div>
 					<div class="progress-box">
-						<div class="circle_percent circle-orange" data-percent="70">
+						<div class="circle_percent circle-yellow" data-percent="70">
 							<div class="circle_inner">
 								<div class="round_per"></div>
 							</div>
