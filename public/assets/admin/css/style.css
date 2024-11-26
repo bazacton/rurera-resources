@@ -2187,7 +2187,7 @@ output {
     color: #999;
 }
 .topic-parts-data table tr td:has(.btn-sm) {
-    min-width: 100px;
+    min-width: 115px;
     padding-left: 10px !important;
     padding-right: 10px !important;
 }
