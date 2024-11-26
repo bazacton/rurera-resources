@@ -2250,9 +2250,10 @@ output {
     position: absolute;
     left: 0;
     top: 50%;
-    height: calc(100% - 30px);
+    height: calc(100% - 20px);
     width: 2px;
     background-color: #ddd;
+    transform: translateY(-50%);
 }
 .progress-holder .progress-box:first-child {
     padding-left: 0;
