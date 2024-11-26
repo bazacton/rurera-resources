@@ -1798,7 +1798,8 @@ body:has(.multi-choice-template-modal.show) .modal {
     border-color: var(--blue);
     color: #fff;
 }
-.multi-choice-template-modal .modal-body {
+.multi-choice-template-modal .modal-body,
+.multi-choice-template-modal .modal-content {
     background-color: #fcfcfc;
 }
 .multi-choice-template-modal #imagemodal .modal-body {
