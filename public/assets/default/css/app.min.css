@@ -3754,9 +3754,9 @@ Lms Footer Style Start
 .custom-footer .widget-location li {margin-bottom: 15px; width: 50%; display: inline-block; vertical-align: middle;}
 .custom-footer .footer-newsletter input[type="text"] {background-color: inherit; border: 1px solid #5f6567; border-radius: 3px; color: #f5f5f1b3; width: 100%; padding: 0 15px; height: 44px;}
 .custom-footer .footer-newsletter .form-field {margin-bottom: 15px;}
-.custom-footer .form-check-field {display: flex; align-items: flex-start; gap: 5px; margin: 0 0 20px;}
-.custom-footer .form-check-field input[type=checkbox] {margin: 5px 0 0; }
-.custom-footer .form-check-field label {margin: 0; font-size: 14px; color: #f5f5f1b3;}
+.custom-footer .form-check-field {display: flex; align-items: flex-start; gap: 5px; margin: 0 0 20px; flex-wrap: wrap;}
+.custom-footer .form-check-field input[type=checkbox] {margin: 4px 0 0; height: 18px; width: 18px;}
+.custom-footer .form-check-field label {margin: 0; font-size: 13px; color: #f5f5f1b3; width: calc(100% - 25px);}
 .footer .footer-subscribe strong {font-size: 30px; font-weight: 700; line-height: 1.22; color: #fff; pointer-events: none}
 .footer .footer-subscribe .subscribe-input {border-radius: 38px; box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .1);}
 .footer ul li {font-size: 14px}
