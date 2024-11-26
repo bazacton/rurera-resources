@@ -2406,6 +2406,9 @@ Admin Questions Generator Page Style End
     gap: 10px;
     flex-wrap: wrap;
 }
+.similarity-content-block-data .card .card-body ul {
+    margin-bottom: 10px;
+}
 .similarity-content-block ul:has(li .rurera-hide),
 .similarity-content-tabs:has(#prompts-tab) .nav:has(li .rurera-hide) {
     display: none;
