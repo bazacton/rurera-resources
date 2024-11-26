@@ -273,7 +273,7 @@
 												@endif
 												
 												<tr class="topic_parts_parent accordion-parent" data-child_class="topic_parts_{{$WebinarChapterObj->id}}">
-													<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>Chapter---&nbsp;{{$WebinarChapterObj->getTitleAttribute()}}</span></td>
+													<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>&nbsp;{{$WebinarChapterObj->getTitleAttribute()}}</span></td>
 													<td>-</td>
 													@if(!empty($difficulty_levels))
 														@foreach($difficulty_levels as $difficulty_level)
@@ -303,7 +303,7 @@
 												@endphp
 												
 												<tr class="topic_parts accordion-parent topic_parts_{{$WebinarChapterObj->id}}" data-child_class="subtopics_{{$TopicPartObj->id}}">
-													<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>Topic---&nbsp;{{$TopicPartObj->title}}</span></td>
+													<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>{{$TopicPartObj->title}}</span></td>
 													<td>-</td>
 													@if(!empty($difficulty_levels))
 														@foreach($difficulty_levels as $difficulty_level)
