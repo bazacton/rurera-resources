@@ -3234,7 +3234,7 @@ span.review-label {line-height: normal;}
 .reviews-holder .reviews-score em,
 .reviews-holder .reviews-number em {font-style: normal; margin-left: 5px;}
 .reviews-holder .reviews-number em {margin: 0 5px 0 0;}
-.footer-newsletter button {background-color: #fff; border: 0; padding: 10px 35px; border-radius: 5px;}
+.footer-newsletter button {background-color: var(--primary); border: 0; padding: 8px 35px; border-radius: 5px; color: #fff; font-weight: 500;}
 
 .listing-card .read-btn, .book-btn, .try-rurera-btn {color: var(--primary); font-weight: 600; font-size: 16px; border: 1px solid var(--primary); padding: 15px 25px; border-radius: 8px; border-bottom-width: 5px; background-color: #fff; display: inline-flex; align-items: center; min-width: 206px; vertical-align: middle; position: relative; transform: translate3d(0px, 0%, 0px); overflow: hidden; transition: background 0.4s linear; text-align: center;}
 .try-rurera-btn {min-width: auto; justify-content: center;}
