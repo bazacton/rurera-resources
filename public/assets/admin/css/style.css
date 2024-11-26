@@ -2199,6 +2199,9 @@ output {
 .topic-parts-data .part-tr {
     background: #fff;
 }
+.topic-parts-data .subtopic-tr td:first-child {padding-left: 10px !important;}
+.topic-parts-data .part-tr td:first-child {padding-left: 15px !important;}
+.topic-parts-data .levels-tr td:first-child {padding-left: 20px !important;}
 .topic-parts-data .table:not(.table-sm) thead th {
     text-transform: uppercase;
     font-weight: 600;
