@@ -2201,7 +2201,7 @@ output {
 }
 .topic-parts-data .subtopic-tr td:first-child {padding-left: 35px !important;}
 .topic-parts-data .part-tr td:first-child {padding-left: 35px !important;}
-.topic-parts-data .levels-tr td:first-child {padding-left: 50px !important;}
+.topic-parts-data .levels-tr td:first-child {padding-left: 55px !important;}
 .topic-parts-data .table:not(.table-sm) thead th {
     text-transform: uppercase;
     font-weight: 600;
