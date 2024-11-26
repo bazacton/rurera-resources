@@ -2191,10 +2191,10 @@ output {
     max-height: 100%;
 }
 .topic-parts-data .topic-tr {
-    background: #e7e2e2;
+    background: #fff;
 }
 .topic-parts-data .subtopic-tr {
-    background: #ededed;
+    background: #fff;
 }
 .topic-parts-data .table:not(.table-sm) thead th {
     text-transform: uppercase;
