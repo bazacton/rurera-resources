@@ -2229,7 +2229,8 @@ output {
 .percent_more .circle_inner {clip:rect(0 .5em 1em 0em);}
 .percent_more:after {position: absolute; left: .5em; top:0em; right: 0; bottom: 0; background: #e4a6d2; content:'';}
 .circle_inbox {position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; background: #fff; z-index:3; border-radius: 50%;}
-.percent_text {position: absolute; font-size: 16px; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 3;}
+.percent_text {position: absolute; font-size: 14px; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 3; color: #000;
+    font-weight: bold;}
 .circle-orange .round_per {
     background: #f6b700;
 }
