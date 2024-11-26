@@ -83,6 +83,7 @@
 											@endif
 											<th class="font-14">&nbsp;</th>
 											<th class="font-14">&nbsp;</th>
+											<th class="font-14">&nbsp;</th>
 										</tr>
 										<tr>
 											<th>Topic Part Item</th>
@@ -100,6 +101,7 @@
 												@endforeach
 											@endif
 											<th>Total Pending Questions</th>
+											<th>Total unreviewed Questions</th>
 											<th>Action</th>
 										</tr>
 									 </thead>
@@ -107,11 +109,12 @@
 											@if($sub_topic_parts->count() > 0 )
 												@foreach($sub_topic_parts as $subTopicObj)
 													@php 
-													$total_pending_questions = 0;
+													$total_pending_questions = $total_unreviewed_questions = 0;
 													$expected_part_questions = getPartQuestions($subTopicObj->difficulty_level);
 													$total_part_questions = $subTopicObj->topicPartItemQuestions->count();
 													$pending_part_questions = $expected_part_questions-$total_part_questions;
 													$pending_part_questions = ( $pending_part_questions < 0 )? 0 : $pending_part_questions;
+													$total_unreviewed_questions = $subTopicObj->topicPartItemQuestions->where('question_status', 'api_pending')->count();
 													@endphp
 													<tr class="topic_parts accordion-parent" data-child_class="subtopic_prompts_{{$subTopicObj->id}}">
 														<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>&nbsp;{{$subTopicObj->title}}</span></td>
@@ -134,12 +137,14 @@
 															@endforeach
 														@endif
 														<td>{{$total_pending_questions}}</td>
+														<td>{{$total_unreviewed_questions}}</td>
 														<td>&nbsp;</td>
 													</tr>
 													@if($subTopicObj->topicPartItemPrompts->count() > 0 )
 														@foreach($subTopicObj->topicPartItemPrompts as $promptObj)			
 															@php $prompt_title = isset($promptObj->prompt_title )? $promptObj->prompt_title : '';
 															$prompt_title = ($prompt_title == '')? 'Prompt' : $prompt_title;
+															$unreviewed_questions = $promptObj->promptQuestions->where('question_status', 'api_pending')->count();
 															@endphp
 															
 															<tr class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
@@ -159,15 +164,17 @@
 																@endforeach
 															  @endif
 															  <td>-</td>
+															  <td>{{$unreviewed_questions}}</td>
 															  <td><a title="Copy Prompt" href="javascript:;" class="btn-transparent btn-sm text-primary copy-to-text" data-copy_to="prompt-text-{{$promptObj->id}}" title="" data-original-title="Copy Prompt"><i class="fas fa-copy"></i></a> 
 															  <a title="Search on ChatGPT" href="https://chat.openai.com/?model=gpt-4&q={{ urlencode($promptObj->prompt_text) }}" target="_blank" class="btn-transparent btn-sm text-primary" title="" data-original-title="Search"><i class="fas fa-search"></i></a>
 															  <a title="Import Questions" href="javascript:;" class="btn-transparent btn-sm text-primary import-questions" data-prompt_id="{{$promptObj->id}}" title="" data-original-title="Import Questions" data-toggle="modal" data-target="#multi-choice-template-modal"><i class="fas fa-download"></i></a>
+															  <a target="_blank" href="/admin/questions-generator/view-api-response/{{$promptObj->questions_bulk_list_id}}/{{$promptObj->topic_part}}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Questions List"><i class="fas fa-sitemap"></i></a>
 															  <pre class="rurera-hide prompt-text-{{$promptObj->id}}">{!! $promptObj->prompt_text !!}</pre></td>
 															</tr>
 														@endforeach
 													@else
 														<tr class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
-														  <td colspan="{{(count($difficulty_levels)*3)+4}}">
+														  <td colspan="{{(count($difficulty_levels)*3)+5}}">
 															No Prompt Found!
 														  </td>
 														</tr>
