@@ -2233,7 +2233,8 @@ output {
 .circle-orange .round_per {
     background: #f6b700;
 }
-.circle-yellow .round_per {
+.circle-yellow .round_per,
+.circle-yellow.percent_more:after {
     background: #f3f374;
 }
 .progress-box {
