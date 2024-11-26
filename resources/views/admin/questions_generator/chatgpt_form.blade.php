@@ -26,7 +26,7 @@
 								<div class="round_per"></div>
 							</div>
 						</div>
-						<span class="progress-lable">Overdued</span>
+						<span class="progress-lable">Emerging</span>
 					</div>
 					<div class="progress-box">
 						<div class="circle_percent circle-orange" data-percent="50">
@@ -34,7 +34,7 @@
 								<div class="round_per"></div>
 							</div>
 						</div>
-						<span class="progress-lable">Uptodate</span>
+						<span class="progress-lable">Expected</span>
 					</div>
 				</div>
 			</div>
