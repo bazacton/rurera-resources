@@ -2415,6 +2415,9 @@ Admin Questions Generator Page Style End
     color: #bbb;
     font-weight: 600;
 }
+.similarity-content-block ul li.active-option {
+    text-decoration: underline;
+}
 .edit-questions-tabs .similarity-content-tabs .form-group {
     padding: 0;
     border: 0;
