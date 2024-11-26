@@ -6277,8 +6277,56 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                     var label_options = '';
                     var label_values = '';
 
+					var content = rureraform_form_elements[i]["content"];
+					let element_unique_id = "unique-id-123"; // Example unique ID
+					
+					var elementObj = rureraform_form_elements[i];
+					let updatedContent = content.replace(/\[DROPDOWN id="(\d+)"\]/g, function(match, id) {
+						let property = `dropdown${id}_options`;
+						let inner_options = elementObj[property] || [];
+						
+						if (inner_options.length > 0) {
+							let dropdown = `<select type="inner_dropdown" class="editor-field" id="dropdown-${id}" data-identifier="${element_unique_id}" name="field-${property}">`;
+							inner_options.forEach(option => {
+								dropdown += `<option value="${option.label}">${option.label}</option>`;
+							});
+							dropdown += `</select>`;
+							return dropdown;
+						}
+						return ""; // If no options, replace with empty string
+					});
+					
+					content = updatedContent;
+					
+					let updatedContent2 = content.replace(/\[INPUTFIELD id="(\d+)"\]/g, function(match, id) {
+						let property = `inner_field${id}`;
+						let label_before = elementObj[`${property}_label_before`] || "";
+						let label_after = elementObj[`${property}_label_after`] || "";
+						let placeholder = elementObj[`${property}_placeholder`] || "";
+						let style_format = elementObj[`${property}_style_format`] || "input_box";
+						let text_format = elementObj[`${property}_text_format`] || "text";
+						let maxlength = elementObj[`${property}_maxlength`] || "";
 
-					var html_data = "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'  data-type='" + rureraform_form_elements[i]["type"] + "'>" + rureraform_form_elements[i]["content"] + "<div class='rureraform-element-cover'></div></div>";
+						// Build the HTML for the input field
+						let labelBeforeHtml = label_before ? `<span class="input-label" contenteditable="false">${label_before}</span>` : "";
+						let labelAfterHtml = label_after ? `<span class="input-label" contenteditable="false">${label_after}</span>` : "";
+						let fieldAttributes = maxlength ? `max="${maxlength}"` : "";
+
+						let inputField = `
+							<span class="input-holder ${style_format}">
+								${labelBeforeHtml}
+								<input type="${text_format}" placeholder="${placeholder}" ${fieldAttributes} 
+									data-field_type="text" class="editor-field input-simple" data-id="${id}" id="field-${id}">
+								${labelAfterHtml}
+							</span>
+						`;
+						return inputField;
+					});
+	
+					console.log(updatedContent2);
+					content = updatedContent2;
+
+					var html_data = "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'  data-type='" + rureraform_form_elements[i]["type"] + "'>" + content + "<div class='rureraform-element-cover'></div></div>";
                     html += html_data;
 					
                     break;	
@@ -6634,6 +6682,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                    var attributes_data = '';
                    var classes = '';
                     rureraform_form_elements[i]['field_id'] = random_id;
+				
                    var field_data = '<span class="truefalse_quiz rureraform-input rureraform-cr-layout-undefined rureraform-cr-layout-undefined">\n' +
                        '<div class="form-box rurera-in-row undefined image-right none">\n' +
                        '<div class="lms-radio-select rurera-in-row undefined image-right none">\n' +
