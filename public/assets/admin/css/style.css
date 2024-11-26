@@ -2242,6 +2242,17 @@ output {
     display: inline-flex;
     align-items: center;
     gap: 15px;
+    position: relative;
+    padding-left: 25px;
+}
+.progress-box:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: calc(100% - 30px);
+    width: 2px;
+    background-color: #ddd;
 }
 .progress-holder .progress-box:first-child {
     padding-left: 0;
@@ -2250,6 +2261,9 @@ output {
 .progress-box .progress-lable {
     color: #999;
     font-weight: 600;
+}
+.progress-holder .progress-box:first-child:before {
+    display: none;
 }
 /* Topic-parts-data style End */
 /* Questions Generator Column Setting Dropdown Style Start*/
