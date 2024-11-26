@@ -1591,6 +1591,10 @@ table#outputTable thead th {
 .question-generator-form .form-group textarea {
     field-sizing: content;
 }
+.multi-choice-template-modal .question-generator-form .form-group textarea {
+    max-width: 100%;
+    width: 100%;
+}
 /*Glossary Question_Edit_Part Modal Style End*/
 /*Topics_Parts Template_save_modal Style Start*/
 .template_save_modal .inactivity-controls {
