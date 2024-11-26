@@ -155,7 +155,7 @@
 																	@endphp
 																	<td class="{{$difficulty_level_class}}">-</td>
 																	<td class="{{$difficulty_level_class}}">{{$total_questions}}</td>
-																	<td class="{{$difficulty_level_class}}">-</td>
+																	<td class="{{$difficulty_level_class}} table-col-pending">-</td>
 																@endforeach
 															  @endif
 															  <td>-</td>
