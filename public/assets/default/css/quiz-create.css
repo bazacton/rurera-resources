@@ -1285,8 +1285,8 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
         max-width: 872px;
     }
     .lms-quiz-create .col-md-5 {
-        flex: 0 0 26.5%;
-        max-width: 26.5%;
+        flex: 0 0 calc(100% - 872px);
+        max-width: calc(100% - 872px);
     }
 }
 /* Quiz Backend Columns Width Style End*/
