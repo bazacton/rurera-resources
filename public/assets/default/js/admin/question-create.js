@@ -10467,3 +10467,12 @@ $(document).on('click', '.question_status_submit_btn', function () {
         }
     });
 });
+
+
+$(document).on('click', '.gallery-images img', function () {
+	$(this).closest('ul').find('li').removeClass('active');
+	$(this).closest('li').addClass('active');
+	var image_src = $(this).attr('src');
+	var element_id = $(this).closest('.rureraform-admin-popup').attr('data-element_id');
+	$(this).closest('.rureraform-admin-popup').find('input[name="rureraform-content"]').val(image_src);
+});
