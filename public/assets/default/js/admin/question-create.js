@@ -1283,6 +1283,25 @@ function _rureraform_properties_prepare(_object) {
                     html += "<input type='hidden' name='rureraform-" + key + "' id='rureraform-" + key + "' value='" + rureraform_escape_html(properties[key]) + "' placeholder='' />";
                     break;
 
+                case 'gallery_images':
+					var random_id = Math.floor((Math.random() * 99999) + 1);
+					var gallery_directory = rureraform_meta[type][key]['gallery_directory'];
+					html += '<div class="gallery-images gallery-images-id-'+random_id+'"></div>';
+					jQuery.ajax({
+                        type: "GET",
+                        url: '/admin/common/get_gallery_images',
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        },
+                        data: {"gallery_directory": gallery_directory},
+                        success: function (return_data) {
+							console.log('sdfsdfsgallery0---images');
+                            jQuery('.gallery-images-id-'+random_id).html(return_data);
+                        }
+                    });
+					html += 'gallery_End';
+                    break;
+
                 case 'elements_fetcher':
                     html += "<input type='hidden'  class='editor-field elements_fetcher' data-field_type='elements_fetcher' name='rureraform-" + key + "' id='rureraform-" + key + "' value='' placeholder='' />";
                     break;
@@ -6619,6 +6638,15 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 
                     html += "<div style='" + imageStyle + "' id='rureraform-element-" + i + "' class='"+image_position+" "+image_size+" image-element-box rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'  data-type='" + rureraform_form_elements[i]["type"] + "'>" + image_layout + "<div class='rureraform-element-cover'></div></div>";
                     break;
+					
+				case "vocabulary_quiz":
+                    var random_id = Math.floor((Math.random() * 99999) + 1);
+
+                    var vocabulary_quiz_layout = '<div class="left-content has-bg"><div class="question-label"><span>Fill in the Blank(s) to Complete the Hidden Word.</span></div><div class="spells-quiz-sound"><strong>Word <a href="javascript:;" id="sound-icon-3278-word" data-id="audio_file_3278-word" class="play-btn sound-icon"><img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="" height="20" width="20"><img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="" height="20" width="20"></a>Sentence <a href="javascript:;" id="sound-icon-3278" data-id="audio_file_3278" class="play-btn sound-icon play-sentence-sound"><img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="" height="20" width="20"><img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="" height="20" width="20"></a></strong></div><div class="player-box hide"><audio class="player-box-audio" id="audio_file_3278-word" src="/speech-audio/disembark.mp3"></audio><audio class="player-box-audio" id="audio_file_3278" src="/speech-audio/disembark-as-in-passengers-can-now-disembark.mp3"></audio></div><div class="spells-quiz-from question-layout"><div class="form-field"><input type="text" value="D" maxlength="1" data-counter_id="0" class="rurera-req-field editor-field-inputs drop-target3278 " style="width: 1ch;background: repeating-linear-gradient(90deg, #747474 0, #747474 1ch, transparent 0, transparent 1.5ch) 0 100%/ 1ch 2px no-repeat;font: 1.2rem Ubuntu Mono, monospace;letter-spacing: 0.5ch;" readonly=""><input type="text" value="" maxlength="1" data-counter_id="1" class="rurera-req-field editor-field-inputs drop-target3278 empty-field" style="width: 1ch;background: repeating-linear-gradient(90deg, #747474 0, #747474 1ch, transparent 0, transparent 1.5ch) 0 100%/ 1ch 2px no-repeat;font: 1.2rem Ubuntu Mono, monospace;letter-spacing: 0.5ch;" readonly=""><input type="text" value="s" maxlength="1" data-counter_id="2" class="rurera-req-field editor-field-inputs drop-target3278 " style="width: 1ch;background: repeating-linear-gradient(90deg, #747474 0, #747474 1ch, transparent 0, transparent 1.5ch) 0 100%/ 1ch 2px no-repeat;font: 1.2rem Ubuntu Mono, monospace;letter-spacing: 0.5ch;" readonly=""><input type="text" value="" maxlength="1" data-counter_id="3" class="rurera-req-field editor-field-inputs drop-target3278 empty-field" style="width: 1ch;background: repeating-linear-gradient(90deg, #747474 0, #747474 1ch, transparent 0, transparent 1.5ch) 0 100%/ 1ch 2px no-repeat;font: 1.2rem Ubuntu Mono, monospace;letter-spacing: 0.5ch;" readonly=""><input type="text" value="m" maxlength="1" data-counter_id="4" class="rurera-req-field editor-field-inputs drop-target3278 " style="width: 1ch;background: repeating-linear-gradient(90deg, #747474 0, #747474 1ch, transparent 0, transparent 1.5ch) 0 100%/ 1ch 2px no-repeat;font: 1.2rem Ubuntu Mono, monospace;letter-spacing: 0.5ch;" readonly=""><input type="text" value="b" maxlength="1" data-counter_id="5" class="rurera-req-field editor-field-inputs drop-target3278 " style="width: 1ch;background: repeating-linear-gradient(90deg, #747474 0, #747474 1ch, transparent 0, transparent 1.5ch) 0 100%/ 1ch 2px no-repeat;font: 1.2rem Ubuntu Mono, monospace;letter-spacing: 0.5ch;" readonly=""><input type="text" value="a" maxlength="1" data-counter_id="6" class="rurera-req-field editor-field-inputs drop-target3278 " style="width: 1ch;background: repeating-linear-gradient(90deg, #747474 0, #747474 1ch, transparent 0, transparent 1.5ch) 0 100%/ 1ch 2px no-repeat;font: 1.2rem Ubuntu Mono, monospace;letter-spacing: 0.5ch;" readonly=""><input type="text" value="" maxlength="1" data-counter_id="7" class="rurera-req-field editor-field-inputs drop-target3278 empty-field" style="width: 1ch;background: repeating-linear-gradient(90deg, #747474 0, #747474 1ch, transparent 0, transparent 1.5ch) 0 100%/ 1ch 2px no-repeat;font: 1.2rem Ubuntu Mono, monospace;letter-spacing: 0.5ch;" readonly=""><input type="text" value="k" maxlength="1" data-counter_id="8" class="rurera-req-field editor-field-inputs drop-target3278 " style="width: 1.5ch;background: repeating-linear-gradient(90deg, #747474 0, #747474 1ch, transparent 0, transparent 1.5ch) 0 100%/ 1ch 2px no-repeat;font: 1.2rem Ubuntu Mono, monospace;letter-spacing: 0.5ch;" readonly=""><ul class="spell-characters-list droppable-characters rurera-selectable-options mt-20"><li class="draggable" id="item-10" draggable="true">J</li><li class="draggable" id="item-11" draggable="true">E</li><li class="draggable" id="item-12" draggable="true">e</li><li class="draggable" id="item-13" draggable="true">i</li><li class="draggable" id="item-14" draggable="true">r</li></ul><input type="text" data-min="9" class="editor-field rurera-min-char hide" data-field_id="19183" data-id="19183" id="field-19183"></div><div class="question-correct-answere rurera-hide">Disembark - 3278 </div></div></div>';
+
+
+                    html += "<div style='" + imageStyle + "' id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'>" + vocabulary_quiz_layout + "<div class='rureraform-element-cover'></div></div>";
+                    break;	
 
                 case "heading_quiz":
                     var html_data = "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'  data-type='" + rureraform_form_elements[i]["type"] + "'>" + rureraform_form_elements[i]["content"] + "<div class='rureraform-element-cover'></div></div>";
