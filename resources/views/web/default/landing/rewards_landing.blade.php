@@ -367,7 +367,7 @@
             <div class="col-12">
                 <div class="section-title text-center mb-50">
                     <h2 itemprop="title" class="text-white font-40">Rewards Categories</h2>
-                    <p itemprop="description" class="mt-10 text-white">
+                    <p itemprop="description" class="mt-10 text-white font-19">
                         Earn these amazing rewards as you embark on your learning journey with Rurera! The more you learn, the more you can win!
                     </p>
                 </div>
