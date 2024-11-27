@@ -1564,7 +1564,7 @@
                 <div class="col-12 col-lg-12 text-center">
                     <div class="element-title text-center mb-40">
                         <h2 itemprop="title" class="font-40 text-dark-charcoal mb-0">Choose the right plan for you</h2>
-                        <p class="font-16 pt-10">Save more with annual pricing</p>
+                        <p class="font-19 pt-10">Save more with annual pricing</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-12 text-center">
