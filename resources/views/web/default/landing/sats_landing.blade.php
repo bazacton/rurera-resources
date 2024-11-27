@@ -1086,7 +1086,7 @@
             </div>
         </div>
         <div class="d-flex align-items-center justify-content-center pt-50">
-            <a href="/pricing" class="btn-primary font-16 text-dark-blue register-btn py-15 px-30">Try Rurera for free</a>
+            <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
         </div>
     </section>
     @php $faq_items = isset( $faq_items )? $faq_items : array();@endphp
