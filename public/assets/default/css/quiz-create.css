@@ -1145,12 +1145,12 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 /* Quiz Backend Columns Width Style Start*/
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
     .lms-quiz-create .col-md-7 {
-        flex: 0 0 72%;
-        max-width: 72%;
+        flex: 0 0 872px;
+        max-width: 872px;
     }
     .lms-quiz-create .col-md-5 {
-        flex: 0 0 28%;
-        max-width: 28%;
+        flex: 0 0 26.5%;
+        max-width: 26.5%;
     }
 }
 /* Quiz Backend Columns Width Style End*/
