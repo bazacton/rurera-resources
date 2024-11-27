@@ -6,6 +6,7 @@ Questions Builder style start
 .rureraform-builder {background-color: #fff;padding: 20px !important; min-height: auto;border-radius: 3px; border: 1px solid #d4d4d4; border-top-color: transparent;}
 /* .rureraform-form-editor .rureraform-form {max-width: 740px;} */
 .rureraform-form-editor {margin-left: 0;}
+.lms-quiz-create .rureraform-form {font-size: 16px;}
 .col-7 .rureraform-builder .rureraform-col-3 img, 
 .col-7 .rureraform-builder .rureraform-col-4 img, 
 .col-7 .rureraform-builder .rureraform-col-5 img {max-width: 100%; min-width: 100%;}
