@@ -482,8 +482,7 @@ Lms Responsive Style Start
     .find-instructor-section .btn-holder {justify-content: center;}
     .job-singup-sub-header h1,
     .page-sub-header h1 {text-align: center; font-size: 36px !important; line-height: 46px !important;}
-    .job-singup-sub-header strong,
-    .job-singup-sub-header p{text-align: center;}
+    .job-singup-sub-header {text-align: center;}
     .gallery-sub-header .masonry-grid-gallery {display: none;}
     .footer-dots-img {transform: none !important; margin-top: 30px;}
     .footer-dots-img img {width: 70%; object-fit: contain; display: block; margin: 0 auto;}
