@@ -3251,7 +3251,8 @@ span.review-label {line-height: normal;}
 .book-btn:hover:before,
 .try-rurera-btn:hover:before {border-radius: 0; transform: translateY(0) scaleY(1);}
 
-.home-banner .try-rurera-btn {    color: var(--primary);
+.home-banner .try-rurera-btn,
+.exploring-curriculum .try-rurera-btn {    color: var(--primary);
   border-color: rgb(0 0 0 / .2);
   background-color: #fff;
 }
