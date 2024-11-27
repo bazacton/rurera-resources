@@ -1286,7 +1286,12 @@ function _rureraform_properties_prepare(_object) {
                 case 'gallery_images':
 					var random_id = Math.floor((Math.random() * 99999) + 1);
 					var gallery_directory = rureraform_meta[type][key]['gallery_directory'];
-					html += '<div class="gallery-images gallery-images-id-'+random_id+'"></div>';
+					html += '<div class="gallery-images gallery-images-id-'+random_id+' p-20"><div class="rurera-button-loader" style="display: block;">\n\
+                   <div class="spinner">\n\
+                       <div class="double-bounce1"></div>\n\
+                       <div class="double-bounce2"></div>\n\
+                   </div>\n\
+               </div></div>';
 					jQuery.ajax({
                         type: "GET",
                         url: '/admin/common/get_gallery_images',
@@ -1295,11 +1300,9 @@ function _rureraform_properties_prepare(_object) {
                         },
                         data: {"gallery_directory": gallery_directory},
                         success: function (return_data) {
-							console.log('sdfsdfsgallery0---images');
                             jQuery('.gallery-images-id-'+random_id).html(return_data);
                         }
                     });
-					html += 'gallery_End';
                     break;
 
                 case 'elements_fetcher':
