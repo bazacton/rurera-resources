@@ -36,7 +36,7 @@ Sub Pages Style
 .spell-tooltip-text strong {display: block; color: #b0b0b0; margin: 0 0 10px; }
 .spell-tooltip-text span {color: #666;display: block; }
 .spell-tooltip-text .locked-btn {background-color: #e5e5e5; display: block; text-align: center; padding: 13px 0; line-height: normal; border-radius: 12px; font-size: 15px; font-weight: 600; color: #ababab; text-transform: uppercase; min-height: 46px;}
-/*Spells Subscription-Modal Style Start*/
+/*Spells, rurera.com/spells/ Subscription-Modal Style Start*/
 .spell-words-filters {padding-top: 30px; }
 .spell-words-filters .row {align-items: center;}
 .spell-words-filters .form-group {margin-bottom: 0; display: inline-block; vertical-align: middle; margin-left: 10px;}
@@ -86,8 +86,7 @@ body .spell-question-area .question-label span {text-align: center;}
 .spell-quiz-page table[id*='word-search-'] {margin: 0 auto;}
 .spell-quiz-page table[id*='word-search-'] td {border-color: #d9d9d9;}
 .spells-quiz-from .word-cloud-box {max-height: 130px; min-height: 130px; width: 130px; list-style: none;}
-
-/*Spells Subscription-Modal Style End*/
+/*Spells, rurera.com/spells/ Subscription-Modal Style End*/
 
 /*Spellings Landing page Style Start*/
 .spell-levels .progress-star {height: 20px; width: 20px; border-radius: 100%; text-align: center; display: inline-flex; align-items: center; justify-content: center; position: absolute; padding: 0; margin: 4px 0 0 8px;}
