@@ -844,7 +844,8 @@ scrollbar-gutter: stable both-edges;
 .question-layout .rureraform-element p {
     line-height: 30px;
 }
-.question-layout .rureraform-element:has(select) {
+.question-layout .rureraform-element:has(select),
+.rureraform-element:has(select) {
 	line-height: 56px;
 }
 .quiz-group ol li {
