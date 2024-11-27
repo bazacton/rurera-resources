@@ -233,7 +233,7 @@ $target_score = 90;
             </section>
 
 
-            <div class="justify-content-center spell-quiz-page">
+            <div class="justify-content-center spell-quiz-page pt-50">
                 <div class="container">
                     <div class="row">
 					@if( isset( $test_type ) &&  $test_type == '')
