@@ -36,7 +36,12 @@ Sub Pages Style
 .spell-tooltip-text strong {display: block; color: #b0b0b0; margin: 0 0 10px; }
 .spell-tooltip-text span {color: #666;display: block; }
 .spell-tooltip-text .locked-btn {background-color: #e5e5e5; display: block; text-align: center; padding: 13px 0; line-height: normal; border-radius: 12px; font-size: 15px; font-weight: 600; color: #ababab; text-transform: uppercase; min-height: 46px;}
-/*Spells-Words-Data Style Start*/
+/*Spells Subscription-Modal Style Start*/
+.spell-words-filters {padding-top: 30px; }
+.spell-words-filters .row {align-items: center;}
+.spell-words-filters .form-group {margin-bottom: 0; display: inline-block; vertical-align: middle; margin-left: 10px;}
+.spell-words-filters .form-group select {border: 1px solid #ddd; padding: 7px 25px 7px 10px; border-radius: 6px; appearance: none;}
+.spell-words-filters .form-group:has(select):before,
 .spell-words-data .word-block label .down-arrow {content: ""; position: absolute; right: 10px; top: 50%; height: 6px; width: 6px; border: 1px solid #666; border-left: transparent; border-top: transparent; transform: rotate(45deg); margin-top: -5px; pointer-events: none;}
 .spell_words_popup .spell-words-filters input.search-word {height: 36px; padding: 5px 10px; }
 .spell-words-data {padding-top: 30px; display: flex; flex-wrap: wrap; gap: 0 15px; align-items: flex-start; position: relative;}
@@ -48,7 +53,41 @@ Sub Pages Style
 .spell-words-data .word-block label.collapsed .down-arrow {transform: rotate(45deg); border: 1px solid #666; border-top: transparent; border-left: transparent;}
 .spell-words-data .word-block input[type="checkbox"] {position: absolute; opacity: 0; width: 0; height: 0;}
 .spell-words-data .word-details {color: #999; font-weight: 400; position: relative; background-color: #fff; width: 100%; border-top: 1px solid #ececec; border-bottom: 1px solid #ececec; padding: 20px 0; z-index: 1;}
-/*Spells-Words-Data Style End*/
+.word-details .close-btn {position: absolute; right: 0; border: 0; background-color: inherit; font-weight: 600;}
+.spell-words-filters .play-again {color: #fff; padding: 8px 35px 8px 15px; background-color: var(--primary); text-transform: uppercase; border-radius: 2px; box-shadow: 0px 4px 0 1px rgba(0, 0, 0, 0.8); font-weight: 500; position: relative;}
+.spell-words-filters .play-again:after {content: ""; position: absolute; right: 12px; top: 50%; width: 15px; height: 15px; background: url(/assets/default/svgs/play-fill-white.svg) no-repeat; background-size: contain; margin-top: -6px;}
+.word-block .play-btn {position: relative;}
+.word-details > .play-btn {padding: 0 10px; margin-right: 4px; position: relative;}
+.droppable-characters {display: flex; align-items: center; justify-content: center; margin-bottom: 25px; gap: 5px; padding-top: 40px; flex-wrap: wrap;}
+.droppable-characters li {background-color: var(--primary); color: #fff; text-transform: uppercase; font-weight: 600; padding: 20px; min-width: 35px; border-radius: 5px; line-height: normal;}
+.spells-quiz-from button {min-width: 150px; background-color: inherit; padding: 12px 15px; text-transform: uppercase; border-radius: 5px; color: #000; border: 1px solid #e7e7e7; margin: 0 5px;}
+.spells-quiz-from button:hover {background-color: #46484a; color: #fff;}
+.spells-quiz-from .form-btn-field {padding-top: 30px; margin-top: auto;}
+.spells-quiz-sound strong .sound-icon,
+.question-status-modal .modal-title h3 .sound-icon {background-color: #fff; display: inline-block; vertical-align: middle; color: #9c0e28; font-size: 22px; height: 26px; width: 26px; box-shadow: 0 0 4px rgba(0,0,0,0.4); line-height: 26px; border-radius: 100%; cursor: pointer;}
+.spells-quiz-sound strong .sound-icon {margin-right: 10px;}
+.spells-quiz-from button svg {vertical-align: middle; height: 18px !important; width: 18px !important; margin-left: 5px;}
+.spells-quiz-from button svg g {fill: #929198;}
+.spells-quiz-from button:hover svg g {fill: #fff;}
+.spells-quiz-from .question-submit-btn {border-color: #8fc963; color: #8fc963; position: relative; padding-right: 38px;}
+.spells-quiz-from .question-submit-btn:after{content: ""; position: absolute; right: 15px; top: 50%; height: 7px; width: 14px; border: 2px solid; border-top: 0; border-right: 0; transform: rotate(-50deg); margin: -5px 0 0 0;}
+.spells-quiz-from .question-submit-btn:hover {border-color: transparent;}
+.lms-quiz-section .questions-data-block {border: 0;}
+.spells-quiz-from .form-field:has(.frontend-field-error) { display: inline-block; position: relative; border: 0;}
+.spells-quiz-from .form-field:has(.frontend-field-error):before {content: ""; position: absolute; bottom: 0px; left: 0; width: 96%; height: 3px; border-bottom: 3px solid #dd4343;}
+.spell-question-area .question-label {text-align: center; padding: 60px 0 30px;}
+.spells-table-inner .table tbody td:has(.word-char) {min-width: 380px;}
+.spells-quiz-from .keyboard-btn,
+.keyboard-btn {background-color: #fff; border: 1px solid #ccc;padding: 8px 25px;text-transform: capitalize;font-weight: 500;display: inline-flex;align-items: center;justify-content: center;margin-bottom: 25px;min-width: auto;color: #ccc;}
+.keyboard-btn .icon-box {margin-left: 10px;}
+.keyboard-btn img {max-width: 100%; display: inline-block; width: 25px; height: 25px;}
+body .spell-question-area .question-label span {text-align: center;}
+.learning-page.type-vocabulary .spell-quiz-page .left-content:has(table[id*='word-search-']) {height: auto;}
+.spell-quiz-page table[id*='word-search-'] {margin: 0 auto;}
+.spell-quiz-page table[id*='word-search-'] td {border-color: #d9d9d9;}
+.spells-quiz-from .word-cloud-box {max-height: 130px; min-height: 130px; width: 130px; list-style: none;}
+
+/*Spells Subscription-Modal Style End*/
 
 /*Spellings Landing page Style Start*/
 .spell-levels .progress-star {height: 20px; width: 20px; border-radius: 100%; text-align: center; display: inline-flex; align-items: center; justify-content: center; position: absolute; padding: 0; margin: 4px 0 0 8px;}
