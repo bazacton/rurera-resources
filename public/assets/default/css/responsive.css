@@ -471,6 +471,7 @@ Lms Responsive Style Start
     .page-sub-header .btn-primary,
     .top-navbar .nav-icons-or-start-live,
     .page-sub-header h1 br {display: none;}
+    .page-sub-header .subscribe-plan p {text-align: left;}
     .section-title {text-align: center !important;}
     .panel-content .section-title.text-left,
     .newsletter-inner .section-title,
