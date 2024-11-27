@@ -49,7 +49,7 @@
                             <img src="../assets/default/svgs/book-opend.svg" width="25" height="25" alt="#">Proven Resources: 100% Success Results
                         </li>
                     </ul>
-                    <a href="/pricing" class="py-15 px-30 text-dark-blue font-16 register-btn">Try Rurera for free</a>
+                    <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
                     <!-- <div class="d-flex align-items-center">
                         <a href="{{url('/')}}/register" class="btn-primary rounded-pill">KS1-year2 SATs</a>
                         <a href="{{url('/')}}/register" class="btn-primary rounded-pill ml-15">KS2-year6 SATs</a>
@@ -566,7 +566,7 @@
                             <p class="font-16 text-white"> Let us help you achieve the score you deserve and unlock <br>doors to your future academic success.</p>
                         </div>
                         <div class="lms-btn-group justify-content-center">
-                            <a href="{{url('/')}}/register-as" class="lms-btn rounded-pill bg-white border-white">Try Rurera for free</a>
+                            <a href="{{url('/')}}/register-as" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
                         </div>
                     </div>
                 </div>
@@ -715,7 +715,7 @@
             </div>
             <div class="col-12">
                 <div class="d-flex align-items-center justify-content-center mt-90">
-                    <a href="/pricing" class="btn-primary text-dark-blue font-16 register-btn py-15 px-30">Try Rurera for free</a>
+                    <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
                 </div>
             </div>
         </div>
