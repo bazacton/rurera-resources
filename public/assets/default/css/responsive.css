@@ -598,15 +598,11 @@ Lms Responsive Style Start
     .page-sub-header.find-instructor-section ul {margin-bottom: 30px;}
     .blog-grid-card.rurera-grid {margin-bottom: 30px;}
     .notification-card .row {position: relative;}
-    .notification-card button {
-        position: absolute;
-        right: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
+    .notification-card button {position: absolute; right: 15px; top: 50%; transform: translateY(-50%);}
     .home-banner #change {white-space: inherit;}
     .learning-page .learning-content {height: auto;}
     .question-layout-block .prev-next-controls {width: 100%; left: 0;}
+    .reward-shapes .col-8 {flex: 0 0 100%; max-width: 100%;}
 }
 
 @media screen and (min-width: 767px) and (max-width: 1600px) {
@@ -1018,6 +1014,7 @@ Lms Responsive Style Start
     .banner-holder .text-holder h2 br {display: none;}
     .exploring-curriculum .lms-text-holder {text-align: center; gap: 15px;}
     .exploring-curriculum .lms-text-holder h4 {text-align: left;}
+    .lms-text-holder:has(.icon-svg) p {padding-left: 40px; text-align: left;}
     .banner-holder .text-holder h2 {text-align: center;}
     .lms-accordion-modern.accordion .card-body p.font-16 {font-size: 16px !important;}
     .results-revenue-card {justify-content: center; text-align: center;}
