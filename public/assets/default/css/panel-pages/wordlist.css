@@ -36,6 +36,19 @@ Sub Pages Style
 .spell-tooltip-text strong {display: block; color: #b0b0b0; margin: 0 0 10px; }
 .spell-tooltip-text span {color: #666;display: block; }
 .spell-tooltip-text .locked-btn {background-color: #e5e5e5; display: block; text-align: center; padding: 13px 0; line-height: normal; border-radius: 12px; font-size: 15px; font-weight: 600; color: #ababab; text-transform: uppercase; min-height: 46px;}
+/*Spells-Words-Data Style Start*/
+.spell-words-data .word-block label .down-arrow {content: ""; position: absolute; right: 10px; top: 50%; height: 6px; width: 6px; border: 1px solid #666; border-left: transparent; border-top: transparent; transform: rotate(45deg); margin-top: -5px; pointer-events: none;}
+.spell_words_popup .spell-words-filters input.search-word {height: 36px; padding: 5px 10px; }
+.spell-words-data {padding-top: 30px; display: flex; flex-wrap: wrap; gap: 0 15px; align-items: flex-start; position: relative;}
+.spell-words-data .word-block {display: inline-block; width: 32.3%; }
+.spell-words-data .word-block:has(label.collapsed){border-bottom: 1px solid #ececec;}
+.spell-words-data .word-block label {margin-bottom: 0; font-weight: 400; position: relative; background-color: #e8f0fd; padding: 15px 0; width: 100%;}
+.spell-words-data .word-block label.collapsed {background-color: inherit;}
+.spell-words-data .word-block label .down-arrow {border: 1px solid #666; border-bottom: transparent; border-right: transparent; pointer-events: visible; cursor: pointer; z-index: 1;}
+.spell-words-data .word-block label.collapsed .down-arrow {transform: rotate(45deg); border: 1px solid #666; border-top: transparent; border-left: transparent;}
+.spell-words-data .word-block input[type="checkbox"] {position: absolute; opacity: 0; width: 0; height: 0;}
+.spell-words-data .word-details {color: #999; font-weight: 400; position: relative; background-color: #fff; width: 100%; border-top: 1px solid #ececec; border-bottom: 1px solid #ececec; padding: 20px 0; z-index: 1;}
+/*Spells-Words-Data Style End*/
 
 /*Spellings Landing page Style Start*/
 .spell-levels .progress-star {height: 20px; width: 20px; border-radius: 100%; text-align: center; display: inline-flex; align-items: center; justify-content: center; position: absolute; padding: 0; margin: 4px 0 0 8px;}
