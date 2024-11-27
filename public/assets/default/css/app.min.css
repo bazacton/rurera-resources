@@ -2757,7 +2757,7 @@ Lms FAQS New Elements Style End
 .categories-list .categories-box {display: flex; flex-direction: column; align-items: center;}
 .categories-box .img-holder {display: flex; align-items: center; justify-content: center; width: 100%;}
 .categories-box .img-holder figure {background: #f0eeef; border-radius: 100%; margin: 0 0 20px 0;}
-.categories-box .img-holder figure img {object-fit: contain; padding: 10px; border-radius: 100%;}
+.categories-box .img-holder figure img {object-fit: contain; padding: 10px; border-radius: 100%;width: 100%; height: 100%;}
 .categories-list .categories-box .post-title a,
 .categories-list .categories-box .post-title {font-size: 16px; text-decoration: none; color: var(--dark-charcoal); font-weight: 400;}
 .categories-list .categories-box .post-title{margin-bottom: 0;}
