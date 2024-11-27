@@ -1131,6 +1131,8 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
     background-position: 94% center;
     border: 1px solid #eee;
     min-width: 150px;
+    max-height: 40px;
+    min-height: 40px;
     padding: 10px 22px 10px 10px;
     border-radius: 5px;
     line-height: normal;
