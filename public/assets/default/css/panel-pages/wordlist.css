@@ -198,7 +198,7 @@ ul.quiz-result-logs li {list-style: disc !important; margin: 6px 0 0 0;}
 .spells-quiz-from .question-submit-btn:after{content: ""; position: absolute; right: 15px; top: 50%; height: 7px; width: 14px; border: 2px solid; border-top: 0; border-right: 0; transform: rotate(-50deg); margin: -5px 0 0 0;}
 .spells-quiz-from .question-submit-btn:hover {border-color: transparent;}
 .lms-quiz-section .questions-data-block {border: 0;}
-.spells-quiz-from .form-field:has(.frontend-field-error) {width: auto; display: inline-block; position: relative; border: 0;}
+.spells-quiz-from .form-field:has(.frontend-field-error) { display: inline-block; position: relative; border: 0;}
 .spells-quiz-from .form-field:has(.frontend-field-error):before {content: ""; position: absolute; bottom: 0px; left: 0; width: 96%; height: 3px; border-bottom: 3px solid #dd4343;}
 .spell-question-area .question-label {text-align: center; padding: 60px 0 30px;}
 .spells-table-inner .table tbody td:has(.word-char) {min-width: 380px;}
