@@ -377,7 +377,7 @@
                     <li class="col-12 col-sm-6 col-md-4 col-lg-2">
                         <div class="categories-box mb-30">
                             <div class="img-holder">
-                                <figure><img src="../assets/default/img/design-tool-1.png" alt="category image" title="category image" width="100%" height="auto" itemprop="image" loading="eager" /></figure>
+                                <figure><img src="../assets/default/img/design-tool-1.png" alt="category image" title="category image" width="315" height="315" itemprop="image" loading="eager" /></figure>
                             </div>
                             <div class="text-holder">
                                 <h3 itemprop="title" class="post-title text-white"><a href="/pricing" class="text-white">Design Tools</a></h3>
@@ -387,7 +387,7 @@
                     <li class="col-12 col-sm-6 col-md-4 col-lg-2">
                         <div class="categories-box mb-30">
                             <div class="img-holder">
-                                <figure><img src="../assets/default/img/science-tool.png" alt="category image" title="category image" width="100%" height="auto" itemprop="image" loading="eager" /></figure>
+                                <figure><img src="../assets/default/img/science-tool.png" alt="category image" title="category image" width="315" height="315" itemprop="image" loading="eager" /></figure>
                             </div>
                             <div class="text-holder">
                                 <h3 itemprop="title" class="post-title text-white"><a href="/pricing" class="text-white">Science Tools</a></h3>
@@ -397,7 +397,7 @@
                     <li class="col-12 col-sm-6 col-md-4 col-lg-2">
                         <div class="categories-box mb-30">
                             <div class="img-holder">
-                                <figure><img src="../assets/default/img/ebook.png" alt="category image" title="category image" width="100%" height="auto" itemprop="image" loading="eager" /></figure>
+                                <figure><img src="../assets/default/img/ebook.png" alt="category image" title="category image" width="315" height="315" itemprop="image" loading="eager" /></figure>
                             </div>
                             <div class="text-holder">
                                 <h3 itemprop="title" class="post-title text-white"><a href="/pricing" class="text-white">e-book</a></h3>
@@ -407,7 +407,7 @@
                     <li class="col-12 col-sm-6 col-md-4 col-lg-2">
                         <div class="categories-box mb-30">
                             <div class="img-holder">
-                                <figure><img src="../assets/default/img/music.png" alt="category image" title="category image" width="100%" height="auto" itemprop="image" loading="eager" /></figure>
+                                <figure><img src="../assets/default/img/music.png" alt="category image" title="category image" width="315" height="315" itemprop="image" loading="eager" /></figure>
                             </div>
                             <div class="text-holder">
                                 <h3 itemprop="title" class="post-title text-white"><a href="/pricing" class="text-white">Musical Instruments</a></h3>
@@ -417,7 +417,7 @@
                     <li class="col-12 col-sm-6 col-md-4 col-lg-2">
                         <div class="categories-box mb-30">
                             <div class="img-holder">
-                                <figure><img src="../assets/default/img/book.png" alt="category image" title="category image" width="100%" height="auto" itemprop="image" loading="eager" /></figure>
+                                <figure><img src="../assets/default/img/book.png" alt="category image" title="category image" width="315" height="315" itemprop="image" loading="eager" /></figure>
                             </div>
                             <div class="text-holder">
                                 <h3 itemprop="title" class="post-title text-white"><a href="/pricing" class="text-white">Books</a></h3>
@@ -427,7 +427,7 @@
                     <li class="col-12 col-sm-6 col-md-4 col-lg-2">
                         <div class="categories-box mb-30">
                             <div class="img-holder">
-                                <figure><img src="../assets/default/img/toddler.png" alt="category image" title="category image" width="100%" height="auto" itemprop="image" loading="eager" /></figure>
+                                <figure><img src="../assets/default/img/toddler.png" alt="category image" title="category image" width="315" height="315" itemprop="image" loading="eager" /></figure>
                             </div>
                             <div class="text-holder">
                                 <h3 itemprop="title" class="post-title text-white"><a href="/pricing" class="text-white">Baby and Toddler</a></h3>
