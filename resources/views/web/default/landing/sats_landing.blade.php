@@ -566,7 +566,7 @@
                             <p class="font-16 text-white"> Let us help you achieve the score you deserve and unlock <br>doors to your future academic success.</p>
                         </div>
                         <div class="lms-btn-group justify-content-center">
-                            <a href="{{url('/')}}/register-as" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
+                            <a href="{{url('/')}}/register-as" class="try-rurera-btn btn-primary text-dark-blue font-16 register-btn py-15 px-30">Try Rurera for free</a>
                         </div>
                     </div>
                 </div>
