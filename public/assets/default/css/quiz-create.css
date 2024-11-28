@@ -567,10 +567,14 @@ Questions Builder style End
 Questions Builder Right Sidebar Style Start
 ******************************************/
 /*Admin Popup Style Start*/
+.topic-parts-block {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    height: 100%;
+    padding: 15px;
+}
 .lms-element-properties {
     position: relative;
-    border-left: 1px solid #ddd;
-    padding-left: 25px;
     background-color: #fff;
     height: 100%;
 }
@@ -585,7 +589,7 @@ Questions Builder Right Sidebar Style Start
 .sidebar-expand-btn:focus {outline: none;}
 .builder-right-sidebar-expand {
     position: absolute;
-    left: -20px;
+    left: -19px;
     top: 50px;
     height: 25px;
     width: 20px;
