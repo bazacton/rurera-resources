@@ -1692,24 +1692,22 @@ $rand_id = rand(999,99999);
         $(".question-no-field").draggable({
             containment: ".rureraform-builder",
         });
+
         /*Builder-Right-Sidebar-Expand Function Start*/
-        const $menu = $('.lms-element-properties')
-        const onMouseUp = e => {
-            if (!$menu.is(e.target)
-            && $menu.has(e.target).length === 0)
-            {
-                $menu.removeClass('expanded')
-            }
-        }
-        $('.sidebar-expand-btn').on('click', function() {
-            $('.lms-element-properties').toggleClass('expanded');
-            if ($menu .hasClass('expanded')) {
-            $(document).on('mouseup', onMouseUp)
-            } else {
-            $(document).off('mouseup', onMouseUp)
+        jQuery(".sidebar-expand-btn").on("click", function() {
+            jQuery(".lms-element-properties").toggleClass("expanded");
+        });
+
+        jQuery(document).click(function(event) {
+            var container = jQuery(".lms-element-properties, .sidebar-expand-btn");
+            if (
+                !container.is(event.target) &&
+                !container.has(event.target).length
+            ) {
+                container.removeClass("expanded");
             }
         });
-        /*Builder-Right-Sidebar-Expand Function Start*/
+        /*Builder-Right-Sidebar-Expand Function End*/
     });
 
     var saveSuccessLang = '{{ trans("webinars.success_store") }}';
