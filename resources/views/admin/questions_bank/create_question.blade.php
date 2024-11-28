@@ -1694,6 +1694,13 @@ $rand_id = rand(999,99999);
         });
         /*Builder-Right-Sidebar-Expand Function Start*/
         const $menu = $('.lms-element-properties')
+        const onMouseUp = e => {
+            if (!$menu.is(e.target)
+            && $menu.has(e.target).length === 0)
+            {
+                $menu.removeClass('expanded')
+            }
+        }
         $('.sidebar-expand-btn').on('click', function() {
             $('.lms-element-properties').toggleClass('expanded');
             if ($menu .hasClass('expanded')) {
