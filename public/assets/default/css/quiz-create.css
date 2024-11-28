@@ -188,7 +188,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /* True False Style End */
 
 /* File Attachment Style Start */
-.rureraform-form-editor .input-group-prepend ~ input[type="text"] {margin-bottom: 0; border: 1px solid #ccc; height: 40px; padding: 0 10px;}
+.rureraform-form-editor .input-group-prepend ~ input[type="text"] {margin-bottom: 0; border: 1px solid #ccc; height: 40px; padding: 0 10px; outline: none;}
 .rureraform-form-editor .input-group-append .input-group-text,
 .rureraform-form-editor .input-group-prepend .input-group-text{border-color: #ccc;} 
 .lms-quiz-create .fa, .far, .fas {font-family: "Font Awesome 5 Free" !important;}
