@@ -1693,9 +1693,10 @@ $rand_id = rand(999,99999);
             containment: ".rureraform-builder",
         });
         /*Builder-Right-Sidebar-Expand Function Start*/
+        const $menu = $('lms-element-properties')
         $('.sidebar-expand-btn').on('click', function() {
             $('.lms-element-properties').toggleClass('expanded');
-            if ($.lms-element-properties.hasClass('expanded')) {
+            if ($menu .hasClass('expanded')) {
             $(document).on('mouseup', onMouseUp)
             } else {
             $(document).off('mouseup', onMouseUp)
