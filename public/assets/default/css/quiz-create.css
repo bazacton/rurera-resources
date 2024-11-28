@@ -1304,8 +1304,10 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
         flex: 0 0 calc(100% - 872px);
         max-width: calc(100% - 872px);
     }
+    .builder-right-sidebar-expand {display: none;}
 }
 @media screen and (min-width: 1024px) and (max-width: 1800px) {
+    .builder-right-sidebar-expand {display: inline-block;}
     .lms-quiz-create .col-md-5:has(.expanded) {
         -ms-flex: 0 0 41.666667%;
         flex: 0 0 41.666667%;
