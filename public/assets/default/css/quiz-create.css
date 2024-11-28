@@ -1348,6 +1348,7 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
         right: 0;
         width: 41.666667%;
         z-index: 5555;
+        height: 100%;
     }
 }
 /* Quiz Backend Columns Width Style End*/
