@@ -943,6 +943,7 @@ Questions Builder Right Sidebar Style Start
 .rureraform-admin-popup .gallery-images ul li.active {box-shadow: 0 0 10px 3px #27325e94;}
 .rureraform-admin-popup .gallery-images img {width: 100%; height: 100%; object-fit: cover; border-radius: 0; transition: transform .4s ease-in-out;}
 .rureraform-admin-popup .gallery-images li:hover img {transform: scale(1.1) rotate(-3deg); opacity: 0.8;}
+.rureraform-admin-popup .gallery-images ul li.active img {opacity: 0.8;}
 
 /* Gallery-Images Style End */
 
