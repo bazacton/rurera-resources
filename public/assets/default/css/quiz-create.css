@@ -569,6 +569,7 @@ Questions Builder Right Sidebar Style Start
 /*Admin Popup Style Start*/
 .lms-element-properties {position: relative;}
 .sidebar-expand-btn {border: 0; background: none; font-size: 24px; outline: none;}
+.sidebar-expand-btn:focus {outline: none;}
 .builder-right-sidebar-expand {position: absolute; right: 0; top: -25px;}
 .sidebar-expand-btn i {font-size: 16px;}
 .lms-quiz-create .rureraform-admin-popup-overlay {position: fixed !important; z-index: 99980; top: 0;	left: 0; height: 100%; width: 100%; background-position: center center; background: rgba(0,0,0,0.8);display: none;}
