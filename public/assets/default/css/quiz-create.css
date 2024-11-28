@@ -598,6 +598,9 @@ Questions Builder Right Sidebar Style Start
     border-radius: 100%;
 }
 .sidebar-expand-btn i {color: #999;}
+.lms-element-properties.expanded .sidebar-expand-btn i {
+    transform: scale(-1);
+}
 .lms-quiz-create .rureraform-admin-popup-overlay {position: fixed !important; z-index: 99980; top: 0;	left: 0; height: 100%; width: 100%; background-position: center center; background: rgba(0,0,0,0.8);display: none;}
 .lms-quiz-create .rureraform-admin-popup {box-sizing: border-box; z-index: 99981; width: 100%; height: auto; background: #ffffff; display: none; overflow: hidden;}
 .lms-quiz-create .rureraform-admin-popup * {box-sizing: border-box;}
