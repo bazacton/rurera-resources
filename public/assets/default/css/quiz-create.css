@@ -666,6 +666,7 @@ Questions Builder Right Sidebar Style Start
 .lms-quiz-create .rureraform-properties-content .rureraform-properties-options-item select {height: 40px !important; line-height: normal;}
 .lms-quiz-create .rureraform-properties-content textarea {height: 10em !important; line-height: 1.4; padding: 0.4em 0.8em;}
 .lms-quiz-create .rureraform-properties-content textarea.rureraform-tinymce {height: 16em !important;}
+.lms-quiz-create .rureraform-properties-content .rureraform-properties-options-table textarea {height: auto !important;}
 .lms-quiz-create .rureraform-properties-content input[type="text"]:focus, .rureraform-properties-content select:focus, 
 .rureraform-properties-content textarea:focus, .rureraform-bulk-editor textarea:focus {border-color: #169F85; box-shadow: 0 0 16px -10px #169F85;}
 .lms-quiz-create .rureraform-properties-content input::-webkit-input-placeholder, .rureraform-properties-content textare::-webkit-input-placeholder {color: inherit !important;opacity: 0.3;}
