@@ -893,7 +893,7 @@ Questions Builder Right Sidebar Style Start
 .rureraform-properties-attachment-table>div span:hover {color: #169F85;}
 .rureraform-properties-attachment-table>div input[type='text'], .rureraform-properties-attachment-table>div select {font-size: 14px !important;	padding: 0.6em 0.6em;}
 .rureraform-properties-attachment-table div.rureraform-media-id input[type='text'] {padding-right: 40px;}
-.lms-quiz-create .rureraform-admin-popup .rureraform-properties-content:has(.input-group-prepend) input[type="text"] {width: calc(100% - 85px);}
+.lms-quiz-create .rureraform-admin-popup .rureraform-properties-content:has(.admin-file-view) input[type="text"] {width: calc(100% - 85px);}
 /* Admin Popup properties Content Style End */
 
 /* Gallery-Images Style Start */
