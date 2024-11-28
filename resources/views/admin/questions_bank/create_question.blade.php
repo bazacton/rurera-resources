@@ -135,7 +135,7 @@ $rand_id = rand(999,99999);
                                     <div class="modal-header">
                                       <h3>
                                         All Question Types
-                                        <span>We have a great range of question types to choose from.</span>
+                                        <span>We have a great range of question types toï¿½chooseï¿½from.</span>
                                       </h3>
                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
@@ -685,7 +685,9 @@ $rand_id = rand(999,99999);
                                     </div>
                                     <div class="col-5 col-md-5">
                                         <div class="lms-element-properties">
-										
+                                            <div class="builder-right-sidebar-expand">
+                                                <button type="button" class="sidebar-expand-btn"><i class="fas fa-bars"></i></button>
+                                            </div>
 											<div class="topic-parts-block">
 												<h3> Topics Parts </h3>
 												<a href="javascript:;" class="add-part-modal">Add New Part</a>
