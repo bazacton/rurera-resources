@@ -586,7 +586,7 @@ Questions Builder Right Sidebar Style Start
 .builder-right-sidebar-expand {
     position: absolute;
     left: -20px;
-    top: 0;
+    top: 50px;
     height: 25px;
     width: 20px;
     background-color: #fff;
