@@ -1692,7 +1692,11 @@ $rand_id = rand(999,99999);
         $(".question-no-field").draggable({
             containment: ".rureraform-builder",
         });
-
+        /*Builder-Right-Sidebar-Expand Function Start*/
+        $('.sidebar-expand-btn').on('click', function() {
+            $('.lms-element-properties').toggleClass('expanded');
+        });
+        /*Builder-Right-Sidebar-Expand Function Start*/
     });
 
     var saveSuccessLang = '{{ trans("webinars.success_store") }}';
