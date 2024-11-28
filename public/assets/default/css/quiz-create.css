@@ -662,7 +662,7 @@ Questions Builder Right Sidebar Style Start
 .lms-quiz-create .rureraform-properties-content input[type="text"],.rureraform-properties-content input[type="number"], 
 .rureraform-properties-content select, .rureraform-properties-content input[type="email"], .rureraform-properties-content input[type="password"], 
 .rureraform-properties-content textarea, .rureraform-bulk-editor textarea {font-size: 14px; font-weight: normal; border-radius: 3px; padding: 0 0.8em; line-height: 40px; border: 1px solid #CCC; border-spacing: 0; font-family: arial, verdana; box-sizing: border-box; box-shadow: none; margin: 0;	height: 40px; min-width: 0; max-width: 100%; outline: none; width: 100%;}
-.lms-quiz-create .rureraform-properties-content select {height: auto !important; padding: 0.5em 0.8em;}
+.lms-quiz-create .rureraform-properties-content select {padding: 0.5em 0.8em;}
 .lms-quiz-create .rureraform-properties-content .rureraform-properties-options-item select {height: 40px !important; line-height: normal;}
 .lms-quiz-create .rureraform-properties-content textarea {height: 10em !important; line-height: 1.4; padding: 0.4em 0.8em;}
 .lms-quiz-create .rureraform-properties-content textarea.rureraform-tinymce {height: 16em !important;}
