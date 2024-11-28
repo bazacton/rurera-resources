@@ -686,7 +686,7 @@ $rand_id = rand(999,99999);
                                     <div class="col-5 col-md-5">
                                         <div class="lms-element-properties">
                                             <div class="builder-right-sidebar-expand">
-                                                <button type="button" class="sidebar-expand-btn"><i class="fas fa-bars"></i></button>
+                                                <button type="button" class="sidebar-expand-btn"><i class="fas fa-chevron-right"></i></button>
                                             </div>
 											<div class="topic-parts-block">
 												<h3> Topics Parts </h3>
