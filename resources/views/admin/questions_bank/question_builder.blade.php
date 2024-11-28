@@ -718,10 +718,10 @@ $rand_id = rand(999,99999);
                                             <div class="rureraform-admin-popup" id="rureraform-element-properties">
                                                 <div class="rureraform-admin-popup-inner">
                                                     <div class="rureraform-admin-popup-title">
-                                                        <a href="#" title="Close"
+                                                        <a href="#" title="Close1"
                                                            onclick="return rureraform_properties_close();"><i
                                                                     class="fas fa-times"></i></a>
-                                                        <h3><i class="fas fa-cog element-properties-label"></i> Element Properties</h3>
+                                                        <h3><i class="fas fa-cog element-properties-label"></i> Element Properties< 1/h3>
                                                     </div>
                                                     <div class="rureraform-admin-popup-content">
                                                         <div class="rureraform-admin-popup-content-form">
