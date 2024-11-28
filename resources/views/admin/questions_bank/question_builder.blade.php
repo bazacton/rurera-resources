@@ -715,7 +715,7 @@ $rand_id = rand(999,99999);
 											</div>
 	
 										
-                                            <div class="rureraform-admin-popup" id="rureraform-element-properties">
+                                            <div class="rureraform-admin-popup test" id="rureraform-element-properties">
                                                 <div class="rureraform-admin-popup-inner">
                                                     <div class="rureraform-admin-popup-title">
                                                         <a href="#" title="Close"
