@@ -45,9 +45,9 @@ $rand_id = rand(999,99999);
     .navbar-bg {
         display: none;
     }
-    nav.navbar.navbar-expand-lg.main-navbar {
+    /* nav.navbar.navbar-expand-lg.main-navbar {
         display: none;
-    }
+    } */
 	.modal-open .modal{
 		z-index: 99999;
 	}
