@@ -1333,7 +1333,7 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
     .builder-right-sidebar-expand {display: none;}
 }
 @media screen and (min-width: 1024px) and (max-width: 1800px) {
-    .builder-right-sidebar-expand {display: inline-block;}
+    .builder-right-sidebar-expand {display: inline-flex;}
     .topic-parts-block {
         background-color: #fff;
     }
