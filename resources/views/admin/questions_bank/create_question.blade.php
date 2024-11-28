@@ -1695,6 +1695,11 @@ $rand_id = rand(999,99999);
         /*Builder-Right-Sidebar-Expand Function Start*/
         $('.sidebar-expand-btn').on('click', function() {
             $('.lms-element-properties').toggleClass('expanded');
+            if ($.lms-element-properties.hasClass('expanded')) {
+            $(document).on('mouseup', onMouseUp)
+            } else {
+            $(document).off('mouseup', onMouseUp)
+            }
         });
         /*Builder-Right-Sidebar-Expand Function Start*/
     });
