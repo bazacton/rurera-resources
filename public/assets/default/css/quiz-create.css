@@ -1312,9 +1312,6 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
         right: 0;
         width: 41.666667%;
         z-index: 5555;
-        transition: all .5s;
-        -webkit-transition: all .5s;
-        -o-transition: all .5s;
     }
 }
 /* Quiz Backend Columns Width Style End*/
