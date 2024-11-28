@@ -1693,7 +1693,7 @@ $rand_id = rand(999,99999);
             containment: ".rureraform-builder",
         });
         /*Builder-Right-Sidebar-Expand Function Start*/
-        const $menu = $('lms-element-properties')
+        const $menu = $('.lms-element-properties')
         $('.sidebar-expand-btn').on('click', function() {
             $('.lms-element-properties').toggleClass('expanded');
             if ($menu .hasClass('expanded')) {
