@@ -601,6 +601,7 @@ Questions Builder Right Sidebar Style Start
     align-items: center;
     justify-content: center;
     border-radius: 100% 0 0 100%;
+    z-index: 1;
 }
 .sidebar-expand-btn i {color: #999;}
 .lms-element-properties.expanded .sidebar-expand-btn i {
