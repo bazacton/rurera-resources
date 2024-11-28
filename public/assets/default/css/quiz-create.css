@@ -1291,13 +1291,30 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 
 /* Quiz Backend Columns Width Style Start*/
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
+    .tab-pane .row {
+        position: relative;
+    }
     .lms-quiz-create .col-md-7 {
+        -ms-flex: 0 0 872px;
         flex: 0 0 872px;
         max-width: 872px;
     }
     .lms-quiz-create .col-md-5 {
+        -ms-flex: 0 0 calc(100% - 872px);
         flex: 0 0 calc(100% - 872px);
         max-width: calc(100% - 872px);
+    }
+    .lms-quiz-create .col-md-5:has(.expanded) {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+        position: absolute;
+        right: 0;
+        width: 41.666667%;
+        z-index: 1;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
     }
 }
 /* Quiz Backend Columns Width Style End*/
