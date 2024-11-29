@@ -5,23 +5,6 @@ $rand_id = rand(99,9999);
 
 @endphp
 
-
-<style>
-    .ui-state-highlight {
-        margin: 0px 10px;
-    }
-
-    .field-holder.wrong, .form-field.wrong, .form-field.wrong label {
-        background: #ff4a4a;
-        color: #fff;
-    }
-    .rurera-hide{
-        display:none;
-    }
-	.rurera-question-block{display:none;}
-	.rurera-question-block.active{display:block;}
-
-</style>
 @php $quiz_type = isset( $quiz->quiz_type )? $quiz->quiz_type : '';
 $duration_type = isset( $duration_type )? $duration_type : 'no_time_limit';
 
