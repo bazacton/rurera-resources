@@ -506,6 +506,7 @@ body .spell-question-area .question-label span {text-align: center;}
 .word-char .pronounce-letter {background-color: #f6f6f6; font-weight: bold;}
 .word-char .pronounce-word {background-color: #ddd;}
 .spells .dataTable td a {font-weight: 600; font-size: 18px; text-decoration: none; }
+.spells-quiz-from.question-layout.row {margin-left: 0; margin-right: 0;}
 /*Spell Listing page Style End*/
 /* Spell-Quiz-Page, spelling/year-5/words-with-d-first-letters-spellbee/word-hunts Style End */
 
