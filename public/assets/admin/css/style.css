@@ -1686,6 +1686,10 @@ body:has(.multi-choice-template-modal.show) .modal {
     flex-direction: column;
     position: relative;
 }
+.template-item.active .template-box {
+    border-color: transparent;
+    box-shadow: 0 0 8px 2px #27325e94;
+}
 .template-box .card-icon {
     height: calc(100% - 50px);
     display: flex;
