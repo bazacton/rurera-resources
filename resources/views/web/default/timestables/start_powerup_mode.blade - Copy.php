@@ -11,18 +11,7 @@ $rand_id = rand(99,9999);
 <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width">
 
-<style>
-    .ui-state-highlight {
-        margin: 0px 10px;
-    }
 
-    .field-holder.wrong, .form-field.wrong, .form-field.wrong label {
-        background: #ff4a4a;
-        color: #fff;
-    }
-    .active-level{background:red;}
-
-</style>
 @endpush
 @section('content')
 @php $timer_counter = 0;
