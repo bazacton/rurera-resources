@@ -619,6 +619,12 @@ Questions Builder style End
 Questions Builder Right Sidebar Style Start
 ******************************************/
 /*Admin Popup Style Start*/
+.questions-bank-properties .topic-parts-block {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    height: 100%;
+    padding: 15px;
+}
 .lms-element-properties {
     position: relative;
     background-color: #fff;
