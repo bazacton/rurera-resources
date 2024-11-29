@@ -684,7 +684,7 @@ $rand_id = rand(999,99999);
                                         </div>
                                     </div>
                                     <div class="col-5 col-md-5">
-                                        <div class="lms-element-properties">
+                                        <div class="lms-element-properties test">
                                             <div class="builder-right-sidebar-expand">
                                                 <button type="button" class="sidebar-expand-btn"><i class="fas fa-chevron-left"></i></button>
                                             </div>
