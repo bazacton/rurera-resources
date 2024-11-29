@@ -18,36 +18,7 @@ $rand_id = rand(99,9999);
 <script src="/assets/vendors/flipbook/js/flipbook.min.js"></script>
 
 <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
-<style>
-    .ui-state-highlight {
-        margin: 0px 10px;
-    }
 
-    .field-holder.wrong, .form-field.wrong, .form-field.wrong label {
-        background: #ff4a4a;
-        color: #fff;
-    }
-
-    .incorrect {
-        background: #ff0202;
-        padding: 10px;
-        border-radius: 10px;
-        color: #fff !important;
-        display: inline-block !important;
-    }
-
-    .correct_answer {
-        display: inline-block !important;
-    }
-
-    .correct {
-        background: #58bd5b;
-        padding: 10px;
-        border-radius: 10px;
-        color: #fff !important;
-    }
-
-</style>
 @endpush
 @section('content')
 <div class="content-section">
