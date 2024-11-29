@@ -539,7 +539,7 @@ body .learning-page .learning-title {border-color: #ccc;}
 /*Questions-Arithmetic, rurera.com/timestables-practice/freedom-mode/play Style End*/
 
 /*Questions-Block-Numbers, rurera.com/timestables-practice/freedom-mode/play Style Start*/
-.questions-block-numbers {overflow: hidden;}
+.questions-block-numbers {overflow: hidden; padding-right: 3px;padding-left: 3px;}
 .questions-block-numbers ul {border-right: 1px solid #f1f0f5; border-bottom: 1px solid #f1f0f5; margin: 0 -3px;}
 .questions-block-numbers li {flex-basis: 33%;}
 .questions-block-numbers span {display: block; padding: 40px 15px; text-align: center; font-size: 26px; font-weight: 500; transition: all .5s ease; border: 1px solid #f1f0f5; border-bottom: 0; border-right: 0; color: #000; cursor: pointer;}
