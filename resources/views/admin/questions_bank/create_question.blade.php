@@ -957,7 +957,7 @@ $rand_id = rand(999,99999);
 													
 													
 													
-													<div class="col-lg-4 col-md-4 col-12">
+													<div class="col-lg-6 col-md-6 col-12">
 														<div class="form-group custom-switches-stacked">
 															<label class="custom-switch pl-0">
 																<input type="hidden" name="review_required_field" value="disable">
