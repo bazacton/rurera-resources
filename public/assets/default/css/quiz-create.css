@@ -526,6 +526,16 @@ body .spell-question-area .question-label span {text-align: center;}
 .lms-quiz-section .questions-arithmetic-box span {font-size: 35px; color: #fff; font-weight: 700; position: relative; z-index: 1;}
 .questions-arithmetic-box span span {font-weight: 400;}
 .questions-arithmetic-box .questions-controls span {font-size: 13px; font-weight: 500;}
+.questions-controls {position: relative; z-index: 1; margin-left: auto;}
+.questions-controls svg path {transition: all .5s;}
+.questions-controls a:hover svg path {fill: #fff;}
+.questions-controls a:hover svg path {fill: #000;}
+.questions-controls a.setting-btn svg path {fill: none;}
+.questions-controls a.setting-btn:hover svg path {stroke: #000;}
+.questions-controls a img {width: 28px; height: 28px;}
+body .learning-page .learning-content .learning-content-box {position: relative; z-index: 1;}
+body .learning-page.type-sats .learning-content .learning-content-box {border-color: transparent;}
+body .learning-page .learning-title {border-color: #ccc;}
 /*Questions-Arithmetic, rurera.com/timestables-practice/freedom-mode/play Style End*/
 
 /**********************************
