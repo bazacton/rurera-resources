@@ -206,13 +206,6 @@
 							</div>
 							<div class="row-field">
 								<label class="custom-switch pl-0">
-									<label class="custom-switch-description mb-0 cursor-pointer" for="example_question_switch">Example</label>
-									<input type="checkbox" name="example_question_switch" id="example_question_switch" value="1" class="custom-switch-input example_question_switch">
-									<span class="custom-switch-indicator"></span>	
-								</label>
-							</div>
-							<div class="row-field">
-								<label class="custom-switch pl-0">
 									<label class="custom-switch-description mb-0 cursor-pointer" for="include_keywords">keywords</label>
 									<input type="checkbox" name="include_keywords" id="include_keywords" value="1" class="custom-switch-input include_keywords" checked>
 									<span class="custom-switch-indicator"></span>	
@@ -275,120 +268,10 @@
 					</div>
 				</div>
 				</div>
-				
-				<div class="col-md-12 col-lg-12">
-					<div class="form-group">
-						<!-- Difficulty Level -->
-						<label>Select Difficulty Level:</label>
-						<div class="list-group list-in-row">
-							<div class="row-field">
-								<input type="radio" name="difficulty" id="Emerging" value="Emerging" checked>
-								<label for="Emerging">Emerging</label>
-							</div>
-							<div class="row-field">
-								<input type="radio" name="difficulty" id="Expected" value="Expected">
-								<label for="Expected">Expected</label>
-							</div>
-							<div class="row-field">
-								<input type="radio" name="difficulty" id="Exceeding" value="Exceeding">
-								<label for="Exceeding">Exceeding</label>
-							</div>
-						</div>
-					</div>
-				</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-lg-12">
 						<button type="submit" class="submit-btn mt-0">Generate Questions</button>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 col-12">
-				<div class="example-question-block rurera-hide">
-					<div class="row">
-						<div class="col-md-12 col-lg-12">
-							<h2 class="font-20 font-weight-bold mb-15">Example Questions</h2>
-						</div>
-						<div class="col-md-12 col-lg-12">
-							<div class="form-group intro-field">
-								<label for="intro_text_0">Intro Text:</label>
-								<textarea name="intro_text" id="intro_text_0" rows="2" class="w-100 form-control unicode-rm"></textarea>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-12">
-							<div class="form-group passage-field">
-								<label for="passage_0">Passage:</label>
-								<textarea name="passage" id="passage_0" rows="4" class="w-100 form-control unicode-rm"></textarea>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-12">
-							<div class="form-group">
-								<label for="main_question_0">Main Question:</label>
-								<input type="text" name="main_question" id="main_question_0" class="w-100 form-control unicode-rm" value="">
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-12 fact-integration-field">
-							<div class="form-group">
-								<label for="fact_integration">Fact Integration:</label>
-								<textarea class="note-codable summernote-editor1 w-100 form-control unicode-rm" id="fact_integration unicode-rm" name="fact_integration"></textarea>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-12">
-							<div class="form-group">
-								<label for="options_label">Options Label:</label>
-								<input type="text" name="options_label" id="options_label" class="w-100 form-control unicode-rm" value="">
-							</div>
-						</div>
-					</div>
-					<div class="form-group">
-						<label>Options:</label>
-						<div class="options-container" data-options-container="0" >
-							<div class="option-group" data-option-index="0">
-								<input type="text" class="form-control unicode-rm" name="options[0]" value="Option 1">
-								<input type="checkbox" name="correct_answers[]" value="0">
-								<div class="option-buttons">
-									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
-									<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
-									<button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
-								</div>
-							</div>
-							<div class="option-group" data-option-index="1">
-								<input type="text" class="form-control unicode-rm" name="options[1]" value="Option 2">
-								<input type="checkbox" name="correct_answers[]" value="1" checked>
-								<div class="option-buttons">
-									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
-									<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
-									<button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
-								</div>
-							</div>
-							<div class="option-group" data-option-index="3">
-								<input type="text" class="form-control unicode-rm" name="options[2]" value="Option 3">
-								<input type="checkbox" name="correct_answers[]" value="3">
-								<div class="option-buttons">
-									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
-									<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
-									<button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
-								</div>
-							</div>
-							<div class="option-group" data-option-index="4">
-								<input type="text" class="form-control unicode-rm" name="options[3]" value="Option 4">
-								<input type="checkbox" name="correct_answers[]" value="4">
-								<div class="option-buttons">
-									<button type="button" class="move-up-btn" onclick="moveOptionUp(this)">↑</button>
-									<button type="button" class="move-down-btn" onclick="moveOptionDown(this)">↓</button>
-									<button type="button" class="remove-option-btn" onclick="removeOption(this)">✖</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<button type="button" class="add-option-btn" onclick="addOption(0)">Add Option</button>
-					<div class="row mt-3">
-						<div class="col-md-12 col-lg-12">
-							<div class="form-group">
-								<label for="explanation_0">Explanation:</label>
-								<textarea class="note-codable summernote-editor1 unicode-rm w-100 form-control" id="explanation" name="explanation"></textarea>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>

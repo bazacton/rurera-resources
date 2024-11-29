@@ -1285,6 +1285,11 @@ function _rureraform_properties_prepare(_object) {
 
                 case 'gallery_images':
 					var random_id = Math.floor((Math.random() * 99999) + 1);
+					 var category_id = $("[name='category_id[]']").val();
+					var course_id = $("[name=course_id]").val();
+					var chapter_id = $("[name=chapter_id]").val();
+					var sub_chapter_id = $("[name=sub_chapter_id]").val();
+					
 					var gallery_directory = rureraform_meta[type][key]['gallery_directory'];
 					html += '<div class="gallery-images gallery-images-id-'+random_id+' p-20"><div class="rurera-button-loader" style="display: block;">\n\
                    <div class="spinner">\n\
@@ -1298,7 +1303,7 @@ function _rureraform_properties_prepare(_object) {
                         headers: {
                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                         },
-                        data: {"gallery_directory": gallery_directory},
+                        data: {"action_class": '.gallery-images-id-'+random_id ,"gallery_directory": gallery_directory, "category_id": category_id, "subject_id": course_id, "chapter_id": chapter_id, "sub_chapter_id": sub_chapter_id},
                         success: function (return_data) {
                             jQuery('.gallery-images-id-'+random_id).html(return_data);
                         }

@@ -193,7 +193,7 @@
 					<form action="javascript:;" method="POST" id="question-generator-form" class="px-25 question-generator-form">
 						@csrf
 						<input type="hidden" name="bulk_id" value="{{$QuestionsBulkListObj->id}}">
-						<input type="hidden" name="example_question_id" class="example_question_id" value="0">
+						<div class="example-selected-questions"></div>
 						<input type="hidden" name="prompt_id" class="prompt_id" value="0">
 						<div class="modal-dialog modal-xl">
 							<div class="modal-content">
@@ -209,19 +209,36 @@
 									<div class="modal-body">
 										<div class="row">
 											<div class="col-12">
-												<div class="form-group">
-													<div class="search-filed">
-														<i class="fas fa-search"></i>
-														<input type="text" placeholder="Search Templates" class="form-control">
-													</div>
-												</div>
-											</div>
-											@if($example_questions->count() > 0)
-												@php $counter = 1; @endphp
-												@foreach($example_questions as $example_type => $exampleQuestions)	
-														@if($exampleQuestions->count() > 0)
-															@foreach($exampleQuestions as $exampleQuestionObj)		
-																<div class="col-12 col-lg-4 col-md-6 template-item templates-list-{{$example_type}}">
+											<ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="section-tabid-Emerging" data-toggle="tab" href="#section-tab-Emerging" role="tab"
+                                                       aria-controls="section-tab-Emerging" aria-selected="true"><span class="tab-title">Emerging</span></a>
+                                                </li>
+												<li class="nav-item">
+                                                    <a class="nav-link" id="section-tabid-Expected" data-toggle="tab" href="#section-tab-Expected" role="tab"
+                                                       aria-controls="section-tab-Expected" aria-selected="true"><span class="tab-title">Expected</span></a>
+                                                </li>
+												<li class="nav-item">
+                                                    <a class="nav-link" id="section-tabid-Exceeding" data-toggle="tab" href="#section-tab-Exceeding" role="tab"
+                                                       aria-controls="section-tab-Exceeding" aria-selected="true"><span class="tab-title">Exceeding</span></a>
+                                                </li>
+                                            </ul>
+											
+											<div class="tab-content" id="myTabContent2">
+                                                <div class="tab-pane mt-3 fade in active show" id="section-tab-Emerging" role="tabpanel" aria-labelledby="section-tab-Emerging-tab">
+													<div class="row">
+														<div class="col-12">
+															<div class="form-group">
+																<div class="search-filed">
+																	<i class="fas fa-search"></i>
+																	<input type="text" placeholder="Search Templates" class="form-control">
+																</div>
+															</div>
+														</div>
+														@if($emerging_example_questions->count() > 0)
+															@php $counter = 1; @endphp
+															@foreach($emerging_example_questions as $exampleQuestionObj)	
+																<div class="col-12 col-lg-4 col-md-6 template-item templates-list-{{$exampleQuestionObj->question_type}}">
 																	<div class="template-box">
 																		<div class="rating-stars">
 																			<div class="rating-box">
@@ -235,7 +252,8 @@
 																			<img src="{{$exampleQuestionObj->example_thumbnail}}">
 																		</div>
 																		<div class="template-controls">
-																			<button type="button" class="preview-template-btn">Preview template (#{{$exampleQuestionObj->id}})</button>
+																			<button type="button" class="preview-template-btn">Preview template (#{{$exampleQuestionObj->id}}) ({{$exampleQuestionObj->question_difficulty_level}})
+																			</button>
 																			<button type="button" class="template-btn" data-template_image="{{$exampleQuestionObj->example_thumbnail}}" data-template_name="{{$exampleQuestionObj->getTitleAttribute()}}" data-template_id="{{$exampleQuestionObj->id}}">Select Template</button>
 																		</div>
 																		<div class="template-data-info">
@@ -243,11 +261,101 @@
 																		</div>
 																	</div>
 																</div>
+															@php $counter++; @endphp
 															@endforeach
 														@endif
-														@php $counter++; @endphp
-												@endforeach
-											@endif
+													</div>
+                                                </div>
+												
+												<div class="tab-pane mt-3 fade" id="section-tab-Expected" role="tabpanel" aria-labelledby="section-tab-Expected-tab">
+                                                   <div class="row">
+														<div class="col-12">
+															<div class="form-group">
+																<div class="search-filed">
+																	<i class="fas fa-search"></i>
+																	<input type="text" placeholder="Search Templates" class="form-control">
+																</div>
+															</div>
+														</div>
+														@if($expected_example_questions->count() > 0)
+															@php $counter = 1; @endphp
+															@foreach($expected_example_questions as $exampleQuestionObj)	
+																<div class="col-12 col-lg-4 col-md-6 template-item templates-list-{{$exampleQuestionObj->question_type}}">
+																	<div class="template-box">
+																		<div class="rating-stars">
+																			<div class="rating-box">
+																				<input type="checkbox" id="star-one">
+																				<label for="star-one">
+																					<i class="fas fa-star"></i>
+																				</label>
+																			</div>
+																		</div>
+																		<div class="card-icon pop">
+																			<img src="{{$exampleQuestionObj->example_thumbnail}}">
+																		</div>
+																		<div class="template-controls">
+																			<button type="button" class="preview-template-btn">Preview template (#{{$exampleQuestionObj->id}}) ({{$exampleQuestionObj->question_difficulty_level}})
+																			</button>
+																			<button type="button" class="template-btn" data-template_image="{{$exampleQuestionObj->example_thumbnail}}" data-template_name="{{$exampleQuestionObj->getTitleAttribute()}}" data-template_id="{{$exampleQuestionObj->id}}">Select Template</button>
+																		</div>
+																		<div class="template-data-info">
+																			<span>{{$exampleQuestionObj->search_tags}}</span>
+																		</div>
+																	</div>
+																</div>
+															@php $counter++; @endphp
+															@endforeach
+														@endif
+													</div>
+                                                </div>
+												
+												<div class="tab-pane mt-3 fade" id="section-tab-Exceeding" role="tabpanel" aria-labelledby="section-tab-Exceeding-tab">
+                                                   <div class="row">
+														<div class="col-12">
+															<div class="form-group">
+																<div class="search-filed">
+																	<i class="fas fa-search"></i>
+																	<input type="text" placeholder="Search Templates" class="form-control">
+																</div>
+															</div>
+														</div>
+														@if($exceeding_example_questions->count() > 0)
+															@php $counter = 1; @endphp
+															@foreach($exceeding_example_questions as $exampleQuestionObj)	
+																<div class="col-12 col-lg-4 col-md-6 template-item templates-list-{{$exampleQuestionObj->question_type}}">
+																	<div class="template-box">
+																		<div class="rating-stars">
+																			<div class="rating-box">
+																				<input type="checkbox" id="star-one">
+																				<label for="star-one">
+																					<i class="fas fa-star"></i>
+																				</label>
+																			</div>
+																		</div>
+																		<div class="card-icon pop">
+																			<img src="{{$exampleQuestionObj->example_thumbnail}}">
+																		</div>
+																		<div class="template-controls">
+																			<button type="button" class="preview-template-btn">Preview template (#{{$exampleQuestionObj->id}}) ({{$exampleQuestionObj->question_difficulty_level}})
+																			</button>
+																			<button type="button" class="template-btn" data-template_image="{{$exampleQuestionObj->example_thumbnail}}" data-template_name="{{$exampleQuestionObj->getTitleAttribute()}}" data-template_id="{{$exampleQuestionObj->id}}">Select Template</button>
+																		</div>
+																		<div class="template-data-info">
+																			<span>{{$exampleQuestionObj->search_tags}}</span>
+																		</div>
+																	</div>
+																</div>
+															@php $counter++; @endphp
+															@endforeach
+														@endif
+													</div>
+                                                </div>
+
+                                            </div>
+                                            </div>
+										
+										
+											
 										<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 											<div class="modal-dialog modal-dialog-centered">
 												<div class="modal-content">              
@@ -257,6 +365,9 @@
 													</div>
 												</div>
 											</div>
+										</div>
+										<div class="col-md-12 col-lg-12">
+											<button type="button" class="btn btn-primary template-selection-btn mt-0">Next</button>
 										</div>
 									</div>
 								</div>
@@ -274,28 +385,6 @@
 									<div class="modal-body">
 										<div class="row">
 										<div class="success-msg"></div>
-										
-										
-										<div class="col-md-12 col-lg-12">
-											<div class="form-group">
-												<!-- Difficulty Level -->
-												<label>Select Difficulty Level:</label>
-												<div class="list-group list-in-row">
-													<div class="row-field">
-														<input type="radio" name="difficulty" id="Emerging" value="Emerging" checked>
-														<label for="Emerging">Emerging</label>
-													</div>
-													<div class="row-field">
-														<input type="radio" name="difficulty" id="Expected" value="Expected">
-														<label for="Expected">Expected</label>
-													</div>
-													<div class="row-field">
-														<input type="radio" name="difficulty" id="Exceeding" value="Exceeding">
-														<label for="Exceeding">Exceeding</label>
-													</div>
-												</div>
-											</div>
-										</div>
 										<div class="col-12">
 											<div class="form-group">
 												<textarea name="chatgpt_response" id="chatgpt_response" class="form-control chatgpt_response" rows="20" placeholder="Input Response (JSON Only)"></textarea>
@@ -395,12 +484,25 @@ function validateJSON() {
 			var template_image = $(this).attr('data-template_image');
 			var template_name = $(this).attr('data-template_name');
 			var template_id = $(this).attr('data-template_id');
-			$(".example_question_id").val(template_id);
+			$(".example-selected-questions").append('<input type="hidden" name="example_question_id[]" class="example_question_id" value="'+template_id+'">');			
 			$(this).closest('.template-item').addClass('active');
-			$(".template-selection").addClass('rurera-hide');
-			$(".api-response-block").removeClass('rurera-hide');			
+			//$(".template-selection").addClass('rurera-hide');
+			//$(".api-response-block").removeClass('rurera-hide');			
 			//$(".multi-choice-template-modal").modal('hide');
 		});
+		
+		
+		$(document).on('click', '.template-selection-btn', function () {
+			var example_questions_ids = $('[name="example_question_id[]"]').val();
+			if($('[name="example_question_id[]"]').length > 0){
+				$(".template-selection").addClass('rurera-hide');
+				$(".api-response-block").removeClass('rurera-hide');			
+			}else{
+				alert('Please Choose Example Question');
+				return false; // Prevents form submission if JSON is invalid
+			}
+		});
+
 		
 		$(document).on('click', '.import-questions', function () {
 			$(".template-selection").removeClass('rurera-hide');
@@ -417,7 +519,7 @@ function validateJSON() {
 				alert('Please Choose Prompt');
 				return false; // Prevents form submission if JSON is invalid
 			}
-			if($(".example_question_id").val() == 0){
+			if($('[name="example_question_id[]"]').length == 0){
 				alert('Please Choose Example Question');
 				return false; // Prevents form submission if JSON is invalid
 			}
@@ -431,7 +533,7 @@ function validateJSON() {
 			
 			var formData = new FormData($('#question-generator-form')[0]);
 			var loaderDiv = $(".submit-btn");
-			rurera_loader(loaderDiv, 'button');
+			//rurera_loader(loaderDiv, 'button');
 			$.ajax({
 				type: "POST",
 				dataType: "json",
@@ -441,7 +543,7 @@ function validateJSON() {
 				contentType: false,
 				success: function (return_data) {
 					$(".chatgpt_response").val('');
-					rurera_remove_loader(loaderDiv, 'button');
+					//rurera_remove_loader(loaderDiv, 'button');
 					$("."+return_data.response_class).html(return_data.response_msg);
 				}
 			});
