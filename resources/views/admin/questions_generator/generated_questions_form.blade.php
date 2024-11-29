@@ -103,19 +103,23 @@ $rand_id = rand(999,99999);
 @else
 <span>{{$QuestionsBulkListObj->category->getTitleAttribute()}} / {{$QuestionsBulkListObj->subject->getTitleAttribute()}} / {{$QuestionsBulkListObj->chapter->getTitleAttribute()}}</span>
 <div class="title-search-field d-flex align-items-center justify-content-between mt-10">
-<h1>{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</h1> <select data-default_question_id="{{$default_question_id}}" name="part_item_id" data-bulk_list_id="{{$QuestionsBulkListObj->id}}" class="part_item_selection form-control populate w-auto">
-			@php $topic_counter = 1; @endphp
-			@if($topic_parts_items->count() > 0)
-				@foreach($topic_parts_items as $topicPartItemObj)
-					@php $selected = ($default_topic_part_id == 0 && $topic_counter == 1)? 'selected' : ''; 
-					$selected = ($default_topic_part_id == $topicPartItemObj->id)? 'selected' : $selected;
-					@endphp
-					<option value="{{$topicPartItemObj->id}}" {{$selected}}>{{$topicPartItemObj->title}}</option>
-					@php $topic_counter++; @endphp
-				@endforeach
-			@endif
-		</select>
-		</div>
+    <h1>{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</h1> 
+    <div class="search-dropdown">
+        <label>Search Dropdown</label>
+        <select data-default_question_id="{{$default_question_id}}" name="part_item_id" data-bulk_list_id="{{$QuestionsBulkListObj->id}}" class="part_item_selection form-control populate w-auto">
+            @php $topic_counter = 1; @endphp
+            @if($topic_parts_items->count() > 0)
+                @foreach($topic_parts_items as $topicPartItemObj)
+                    @php $selected = ($default_topic_part_id == 0 && $topic_counter == 1)? 'selected' : ''; 
+                    $selected = ($default_topic_part_id == $topicPartItemObj->id)? 'selected' : $selected;
+                    @endphp
+                    <option value="{{$topicPartItemObj->id}}" {{$selected}}>{{$topicPartItemObj->title}}</option>
+                    @php $topic_counter++; @endphp
+                @endforeach
+            @endif
+        </select>
+    </div>
+</div>
 @endif
 
 
