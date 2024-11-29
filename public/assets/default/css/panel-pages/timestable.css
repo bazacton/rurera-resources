@@ -3,14 +3,6 @@ TimesTable Page | Student Panel Style Start
 Sub Pages Style
 *****************************/
 /* Timestable Freedom Mode Start */
-/*Spells-Quiz-Info Style Start*/
-.spells-quiz-info ul {border: 1px solid #bac3ca; display: flex; gap: 15px; justify-content: space-between;}
-.spells-quiz-info ul li {border-left: 1px solid #bac3ca;text-align: center;width: 32%;padding: 15px 0;font-size: 20px;color: #343434;text-transform: uppercase;display: inline-flex;align-items: center;justify-content: center;gap: 5px;}
-.spells-quiz-info ul li:first-child {border-left: 0;}
-.spells-quiz-info ul li span {display: inline-block; font-weight: 600; font-size: 20px;}
-.spells-quiz-info ul li .nub-of-sec {color: #7caf40; }
-.spells-quiz-info ul li img {max-width: 100%; width: 20px; height: 20px; display: inline-block; vertical-align: middle; object-fit: contain;}
-/*Spells-Quiz-Info Style End*/
 .questions-select-option ul {overflow: hidden;}
 .questions-select-option li {position:relative; flex: 1 1 0px;}
 .questions-select-option label {background-color: #e8e8e8; padding: 6px 20px; margin: 0; border-right: 1px solid rgba(0,0,0,0.1); width: 100%; text-align: center; height: 100%; cursor: pointer; min-height: 55px;}
