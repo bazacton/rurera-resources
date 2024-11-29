@@ -5,21 +5,6 @@ $rand_id = rand(99,9999);
 
 @endphp
 
-
-<style>
-    .ui-state-highlight {
-        margin: 0px 10px;
-    }
-
-    .field-holder.wrong, .form-field.wrong, .form-field.wrong label {
-        background: #ff4a4a;
-        color: #fff;
-    }
-    .rurera-hide{
-        display:none;
-    }
-
-</style>
 <div class="content-section">
 
     <section class="lms-quiz-section">
