@@ -1203,7 +1203,6 @@ Lms Responsive Style Start
     .learning-page .learning-page-content {overflow: hidden;}
     .question-layout-block form.question-fields {padding: 20px 15px 0;}
     .question-layout-block .question-fields .rureraform-element {padding-left: 0; padding-right: 0;}
-    .rureraform-element .image-field img {max-width: 100%;}
     body .question-layout-block form.question-fields .questions-total-holder {font-size: 16px;}
     body .question-step:has(.question-number-holder .flag-question) .rureraform-form {padding: 60px 0 30px 0;}
     .counter-holder .svg-shapes-bottom {position: absolute; left: 68px; right: auto; bottom: 60px; transform: rotate(20deg);}
