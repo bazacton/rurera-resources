@@ -1833,3 +1833,23 @@ Admin API Questions Form Page Style Start
     display: none !important;
 }
 /*Hide Classes Style Start*/
+
+/****************************************** 
+Inline-Style From Php Files Style Start
+******************************************/
+
+/*rurera-resources\resources\views\web\default\panel\questions => preview_questions.blade Style */
+.image-field img {width:50px; height:50px}
+.image-field-box{position:absolute !important;}
+.draggable-items{display:table-row; clear:both;}
+.draggable-items li{display:block; float: left;}
+.rurera-droppable{width:100; border:1px solid #efefef; height:50px; display:inline-block;}  
+.rureraform-form-input-medium .rureraform-element .rureraform-input{height:auto;}
+.ui-state-highlight {margin: 0px 10px;}
+.field-holder.wrong, .form-field.wrong, .form-field.wrong label {background: #ff4a4a; color: #fff;}
+.rurera-question-block{display:none;}
+.rurera-question-block.active{display:block;}
+
+/****************************************** 
+Inline-Style From Php Files Style End
+******************************************/
