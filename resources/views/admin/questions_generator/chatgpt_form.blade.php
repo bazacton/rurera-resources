@@ -533,7 +533,7 @@ function validateJSON() {
 			
 			var formData = new FormData($('#question-generator-form')[0]);
 			var loaderDiv = $(".submit-btn");
-			//rurera_loader(loaderDiv, 'button');
+			rurera_loader(loaderDiv, 'button');
 			$.ajax({
 				type: "POST",
 				dataType: "json",
@@ -543,7 +543,7 @@ function validateJSON() {
 				contentType: false,
 				success: function (return_data) {
 					$(".chatgpt_response").val('');
-					//rurera_remove_loader(loaderDiv, 'button');
+					rurera_remove_loader(loaderDiv, 'button');
 					$("."+return_data.response_class).html(return_data.response_msg);
 				}
 			});

@@ -120,6 +120,8 @@ $rand_id = rand(999,99999);
 
 
 <!-- Edit-questions Tabs Start -->
+<div class="edit-questions-difficulty-tabs">	
+</div>
 <div class="edit-questions-tabs">	
 </div>
 <!-- Edit-questions Tabs End -->
@@ -220,16 +222,17 @@ $("body").on("change", ".part_item_selection", function (t) {
 	var part_item_id = $(this).val();
 	var bulk_list_id = $(this).attr('data-bulk_list_id');
 	var default_question_id = $(this).attr('data-default_question_id');
-	var loaderDiv = $('.edit-questions-tabs');
+	var loaderDiv = $('.edit-questions-difficulty-tabs');
 	rurera_loader(loaderDiv, 'button');
 	$.ajax({
-		type: "GET",
-		url: '/admin/questions-generator/get_questions_list_layout',
+		type: "POST",
+		url: '/admin/questions-generator/generate_question_builder_difficulty_layout',
 		data: {'part_item_id': part_item_id, 'bulk_list_id': bulk_list_id, 'default_question_id': default_question_id},
 		success: function (return_data) {
 			rurera_remove_loader(loaderDiv, 'button');
-			$(".edit-questions-tabs").html(return_data);
-			$(".question-builder-layout.active").click();
+			$(".edit-questions-difficulty-tabs").html(return_data);
+			 $(".difficulty-level-btn.active").click();
+			//$(".question-builder-layout.active").click();
 		}
 	});
 });
@@ -239,6 +242,29 @@ function decodeHtml(html) {
     txt.innerHTML = html;
     return txt.value;
 }
+
+ $("body").on("click", ".difficulty-level-btn", function (t) {
+	 var thisObj = $(this);
+	 var difficulty_level = $(this).attr('data-difficulty_level');
+	 var bulk_list_id = $(this).attr('data-bulk_list_id');
+	 var part_item_id = $(this).attr('data-part_item_id');
+	 var default_question_id = $('.part_item_selection').attr('data-default_question_id');
+	 var loaderDiv = $('.tab-content');
+		rurera_loader(loaderDiv, 'button');
+		$.ajax({
+			type: "GET",
+			headers: {
+				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			},
+			url: '/admin/questions-generator/get_questions_list_layout',
+			data: {'difficulty_level': difficulty_level, 'default_question_id': default_question_id, 'bulk_list_id': bulk_list_id, 'part_item_id': part_item_id},
+			success: function (return_data) {
+				$(".edit-questions-tabs").html(return_data);
+				$(".question-builder-layout.active").click();
+			}
+		});
+ });
+ 
  $("body").on("click", ".question-builder-layout", function (t) {
 	 var thisObj = $(this);
 	 var question_id = $(this).attr('data-question_id');
@@ -246,20 +272,6 @@ function decodeHtml(html) {
 	 var is_deleted = $(this).attr('data-is_deleted');
 	 var similiarity_responses1 = $('.nav').attr('data-similiarity_responses');
 	 var similiarity_responses = $('.nav').attr('data-similiarity_responses');
-	 /*similiarity_responses = JSON.parse(rureraform_decode64(similiarity_responses));
-	 console.log(question_index);
-	 current_similarities_array = [];
-	 if (similiarity_responses.hasOwnProperty(question_index)) {
-		 console.log(similiarity_responses[question_index]);
-		 var current_similarities_array = similiarity_responses[question_index];
-	 }
-	 var similiarity_html = '';
-	 console.log(current_similarities_array);
-	 $.each(current_similarities_array, function(index, entry) {
-		similiarity_html += decodeHtml(entry);
-	});*/
-	 
-	 
 	 $('.question-builder-area').html('');
 	 var loaderDiv = $('.tab-content');
 	 if(is_deleted == 'yes'){
@@ -278,15 +290,13 @@ function decodeHtml(html) {
 				rurera_remove_loader(loaderDiv, 'button');
 				$('.question-builder-area').html('');
 				$('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
-				/*$('.question-builder-area[data-question_id="'+question_id+'"]').find('.similarity-content-block-data').html(
-					similiarity_html
-				)*/
 			}
 		});
 	 }
  });
  
- $(".question-builder-layout.active").click();
+ $(".difficulty-level-btn.active").click();
+ //$(".question-builder-layout.active").click();
  
 $(document).on('click', '.move-up-keyword', function () {
     var $block = $(this).closest('.keyword-item');
