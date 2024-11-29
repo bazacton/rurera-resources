@@ -518,6 +518,16 @@ body .spell-question-area .question-label span {text-align: center;}
 .spells-quiz-info ul li img {max-width: 100%; width: 20px; height: 20px; display: inline-block; vertical-align: middle; object-fit: contain;}
 /*Spells-Quiz-Info Style End*/
 
+/*Questions-Arithmetic, rurera.com/timestables-practice/freedom-mode/play Style Start*/
+.questions-arithmetic-box {box-sizing: border-box; position: relative; min-height: 100px; padding: 0 15px;}
+.questions-arithmetic-box:before {content: ""; position: absolute; left: -37px; top: 0; width: 115%;height: 100%; pointer-events: none; background-color: grey; box-shadow: 0 0 8px rgba(0,0,0,0.2);}
+.questions-arithmetic-box input[type="text"] {border: 0; font-size: 35px; color: #fff; font-weight: 700; width: calc(100% - 300px); background-color: inherit; margin-left: 8px;     position: relative; z-index: 1;}
+.questions-arithmetic-box span,
+.lms-quiz-section .questions-arithmetic-box span {font-size: 35px; color: #fff; font-weight: 700; position: relative; z-index: 1;}
+.questions-arithmetic-box span span {font-weight: 400;}
+.questions-arithmetic-box .questions-controls span {font-size: 13px; font-weight: 500;}
+/*Questions-Arithmetic, rurera.com/timestables-practice/freedom-mode/play Style End*/
+
 /**********************************
 Lms Table Style 
 **********************************/
