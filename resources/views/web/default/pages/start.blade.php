@@ -51,7 +51,7 @@ if( $duration_type == 'total_practice'){
                                             class="leform-form leform-elements leform-form-input-medium leform-form-icon-inside leform-form-description-bottom ui-sortable"
                                             _data-parent="1"
                                             _data-parent-col="0" style="display: block;">
-                                            <div class="question-layout test">
+                                            <div class="question-layout">
 
                                             </div>
                                         </div>
