@@ -16,18 +16,7 @@ $rand_no = rand(99,9999);
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
 
-
     <link rel="stylesheet" href="/assets/admin/vendor/bootstrap/bootstrap.min.css"/>
-
-
-    <!-- <link rel="stylesheet" href="/assets/default/vendors/data-table/dataTables.min.css"/>
-    <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
-    <link rel="stylesheet" href="/assets/default/vendors/toast/jquery.toast.min.css">
-    <link rel="stylesheet" href="/assets/default/vendors/simplebar/simplebar.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/assets/vendors/jquerygrowl/jquery.growl.css">
-    <link rel="stylesheet" href="/assets/default/css/responsive.min.css"> -->
     <link rel="stylesheet" href="/assets/default/css/common.min.css?ver={{$rand_no}}">
 	<link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver={{$rand_no}}">
 
@@ -110,17 +99,6 @@ $rand_no = rand(99,9999);
 
 @stack('styles_bottom')
 @stack('scripts_bottom')
-
-<!-- <script src="/assets/default/js/parts/navbar.min.js?ver={{$rand_no}}"></script>
-<script src="/assets/default/js/parts/main.min.js?ver={{$rand_no}}"></script>
-<script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
-<script src="/assets/default/vendors/data-table/dataTables.min.js"></script>
-<script src="/assets/vendors/flipbook/js/flipbook.min.js"></script>
-<script src="/assets/vendors/jquerygrowl/jquery.growl.js"></script>
-<script src="/assets/default/vendors/sortable/jquery-ui.min.js"></script>
-<script src="/vendor/laravel-filemanager/js/stand-alone-button.js"></script>
-<script src="/assets/admin/js/custom.js?ver={{$rand_no}}"></script>
-<script src="/assets/default/js/question-layout.js?ver={{$rand_no}}"></script> -->
 
 <script>
     @if(session()->has('registration_package_limited'))
