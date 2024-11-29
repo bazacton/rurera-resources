@@ -1736,7 +1736,8 @@ body:has(.multi-choice-template-modal.show) .modal {
     color: var(--blue);
     outline: none;
 }
-.template-controls .template-btn:hover {
+.template-controls .template-btn:hover,
+.active .template-controls .template-btn {
     background-color: var(--blue);
     color: var(--white);
 }
