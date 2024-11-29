@@ -111,7 +111,7 @@ $rand_no = rand(99,9999);
 @stack('styles_bottom')
 @stack('scripts_bottom')
 
-<script src="/assets/default/js/parts/navbar.min.js?ver={{$rand_no}}"></script>
+<!-- <script src="/assets/default/js/parts/navbar.min.js?ver={{$rand_no}}"></script>
 <script src="/assets/default/js/parts/main.min.js?ver={{$rand_no}}"></script>
 <script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
 <script src="/assets/default/vendors/data-table/dataTables.min.js"></script>
@@ -120,7 +120,7 @@ $rand_no = rand(99,9999);
 <script src="/assets/default/vendors/sortable/jquery-ui.min.js"></script>
 <script src="/vendor/laravel-filemanager/js/stand-alone-button.js"></script>
 <script src="/assets/admin/js/custom.js?ver={{$rand_no}}"></script>
-<script src="/assets/default/js/question-layout.js?ver={{$rand_no}}"></script>
+<script src="/assets/default/js/question-layout.js?ver={{$rand_no}}"></script> -->
 
 <script>
     @if(session()->has('registration_package_limited'))
