@@ -103,8 +103,7 @@ $rand_id = rand(999,99999);
 @else
 <span>{{$QuestionsBulkListObj->category->getTitleAttribute()}} / {{$QuestionsBulkListObj->subject->getTitleAttribute()}} / {{$QuestionsBulkListObj->chapter->getTitleAttribute()}}</span>
 <div class="title-search-field d-flex align-items-center justify-content-between mt-10">
-    <h1>{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</h1> 
-    <div class="form-group mb-0">
+<h1>{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</h1>  <div class="form-group mb-0">
         <label>Select Topic Part</label>
         <select data-default_question_id="{{$default_question_id}}" name="part_item_id" data-bulk_list_id="{{$QuestionsBulkListObj->id}}" class="part_item_selection form-control populate w-auto">
             @php $topic_counter = 1; @endphp
@@ -119,7 +118,7 @@ $rand_id = rand(999,99999);
             @endif
         </select>
     </div>
-</div>
+		</div>
 @endif
 
 
@@ -274,8 +273,8 @@ function decodeHtml(html) {
 	 var question_id = $(this).attr('data-question_id');
 	 var question_index = $(this).attr('data-question_index');
 	 var is_deleted = $(this).attr('data-is_deleted');
-	 var similiarity_responses1 = $('.nav').attr('data-similiarity_responses');
-	 var similiarity_responses = $('.nav').attr('data-similiarity_responses');
+	 var similiarity_responses1 = $('.questions-nav-bar').attr('data-similiarity_responses');
+	 var similiarity_responses = $('.questions-nav-bar').attr('data-similiarity_responses');
 	 $('.question-builder-area').html('');
 	 var loaderDiv = $('.tab-content');
 	 if(is_deleted == 'yes'){
