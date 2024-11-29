@@ -17,33 +17,7 @@ $rand_id = rand(99,9999);
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/slide-menu.css">
 <script src="/assets/vendors/flipbook/js/flipbook.min.js"></script>
 <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
-<style>
-    .ui-state-highlight {
-        margin: 0px 10px;
-    }
-    .field-holder.wrong, .form-field.wrong, .form-field.wrong label, .field-holder.wrong, .form-field.wrong, .form-field.wrong label, .editor-field.wrong {
-        background: #ff4a4a;
-        color: #fff !important;
-    }
-    .field-holder.correct, .form-field.correct, .form-field.correct label, .field-holder.correct, .form-field.correct, .form-field.correct label, .editor-field.correct {
-        background: #70c17c;
-        color: #fff !important;
-    }
-    .editor-field.correct{
-        background: #70c17c !important;
-    }
-    .editor-field.wrong{
-        background: #ff4f4f !important
-    }
-    .question-area{min-height:300px !important;}
 
-	.spell-question-area .left-content {
-		height: auto !important;
-	}
-	.spells-quiz-from .form-field {
-		margin: 40px 0 40px;
-	}
-</style>
 @endpush
 @section('content')
 @php
