@@ -110,7 +110,7 @@ $rand_id = rand(999,99999);
 
 <!-- Edit-questions Tabs Start -->
 <div class="edit-questions-difficulty-tabs">
-    <div class="select-topic-filters">
+    <div class="select-topic-filters title-search-field">
         <label>Select Topic Part</label>
         <select data-default_question_id="{{$default_question_id}}" name="part_item_id" data-bulk_list_id="{{$QuestionsBulkListObj->id}}" class="part_item_selection form-control populate w-auto">
             @php $topic_counter = 1; @endphp
