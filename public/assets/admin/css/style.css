@@ -2327,6 +2327,9 @@ Admin Questions Generator Page Style End
 *********************/
 
 /* Similarity Content Tabs style start */
+.edit-questions-tabs .lms-element-properties {
+    background-color: inherit;
+}
 .similarity-content-block .similiarity-item {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
