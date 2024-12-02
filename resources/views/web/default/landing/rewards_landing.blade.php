@@ -1,9 +1,5 @@
 @extends(getTemplate().'.layouts.app')
 
-@push('styles_top')
-<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
-@endpush
-
 @section('content')
 <section
     class="products-sub-header page-sub-header position-relative pb-25 pt-80 d-flex align-items-center"
@@ -691,7 +687,6 @@
 @endsection
 
 @push('scripts_bottom')
-<script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
 <script src="/assets/default/vendors/masonry/masonry.pkgd.min.js"></script>
 <script src="/assets/default/js/parts/counter.js"></script>
 @endpush
