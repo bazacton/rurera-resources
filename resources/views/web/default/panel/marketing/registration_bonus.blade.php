@@ -1,7 +1,7 @@
 @extends(getTemplate() .'.panel.layouts.panel_layout')
 
 @push('styles_top')
-    <link rel="stylesheet" href="/assets/default/vendors/chartjs/chart.min.css"/>
+<link rel="stylesheet" href="/assets/default/vendors/chartjs/chart.min.css"/>
 @endpush
 
 @section('content')
