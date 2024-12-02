@@ -36,9 +36,9 @@
     <link rel="stylesheet" href="/assets/default/css/responsive.css">
     @stack('scripts_top')
 
-    <!-- @if(!empty($generalSettings['preloading']) and $generalSettings['preloading'] == '1')
+    @if(!empty($generalSettings['preloading']) and $generalSettings['preloading'] == '1')
         @include('admin.includes.preloading')
-    @endif -->
+    @endif
 
 </head>
 @php $bodyClass = ''; @endphp
