@@ -57,6 +57,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-12 col-md-12">
+                                    <!-- Test List Filters Start -->
                                     <div class="tests-list-holder mb-25">
                                         <a href="#." class="filter-mobile-btn">Filters Dropdown</a>
                                         <ul class="tests-list mb-30">
@@ -68,7 +69,10 @@
                                             <li data-type="independent_exams"><img src="/assets/default/img/assignment-logo/independent_exams.png" alt=""> Independent Exams</li>
                                         </ul>
                                     </div>
+                                    <!-- Test List Filters End -->
+                                     <!-- Total-Tests Counter Start -->
                                     <h4 class="total-tests has-border font-22">Total Tests: {{$sats->count()}}</h4>
+                                    <!-- Total-Tests Counter Start -->
                                 </div>
                             </div>
                         </form>
