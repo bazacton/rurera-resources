@@ -21,7 +21,6 @@
 	<link rel="stylesheet" href="/assets/default/css/panel-pages/left-menu.css?ver={{$rand_no}}">
 	<link rel="stylesheet" href="/assets/default/css/common.css?ver={{$rand_no}}">
     <link rel="stylesheet" href="/assets/vendors/jquerygrowl/jquery.growl.css">
-    <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
 
 	@if(auth()->check() && auth()->user()->isParent())
 		<link rel="stylesheet" href="/assets/default/css/panel-pages/parent.css?ver={{$rand_no}}">
@@ -1043,7 +1042,6 @@
 <script src="/assets/vendors/jquerygrowl/jquery.growl.js"></script>
 <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 <script src="/assets/default/js/admin/sticky-sidebar.js?ver={{$rand_no}}"></script>
-<script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
 <script>
 
     @if(session()->has('registration_package_limited'))

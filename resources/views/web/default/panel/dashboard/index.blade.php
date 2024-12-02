@@ -4,7 +4,6 @@
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/chartjs/chart.min.css"/>
 <link rel="stylesheet" href="/assets/default/vendors/apexcharts/apexcharts.css"/>
-<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
 @endpush
 
 @section('content')
@@ -742,8 +741,6 @@
     @endsection
 
     @push('scripts_bottom')
-
-    <script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
     <script src="/assets/default/vendors/apexcharts/apexcharts.min.js"></script>
     <script src="/assets/default/vendors/chartjs/chart.min.js"></script>
 
