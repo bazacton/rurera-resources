@@ -64,10 +64,10 @@
                 @include(getTemplate(). '.includes.navbar')
             @endif
             @if(auth()->check() && (auth()->user()->isUser() || auth()->user()->isParent() || auth()->user()->isTutor()))
-            @include(getTemplate(). '.panel.includes.sidebar')
+                @include(getTemplate(). '.panel.includes.sidebar')
             @endif
             <div class="panel-content">
-                <div class="container ">
+                <div class="container">
                     <div class="row"> 
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             @yield('content')
