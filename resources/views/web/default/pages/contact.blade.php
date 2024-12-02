@@ -1,9 +1,5 @@
 @extends(getTemplate().'.layouts.app')
 
-@push('styles_top')
-<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
-    @endpush
-
     @section('content')
     <section class="pages-sub-header about-sub-header has-bg mb-50 pt-50 pb-50" style="background:url(../assets/default/img/about-image.jpg);">
         <div class="container h-100">
@@ -242,7 +238,3 @@
             </div>
         </a>
     @endsection
-
-    @push('scripts_bottom')
-    <script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
-    @endpush

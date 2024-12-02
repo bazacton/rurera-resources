@@ -1,9 +1,5 @@
 @extends(getTemplate().'.layouts.app')
 
-@push('styles_top')
-<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
-    @endpush
-
     @section('content')
     <section class="lms-call-to-action sub-header position-relative pt-70 pb-70">
         <div class="container">
@@ -701,7 +697,3 @@
             </div>
 
     @endsection
-
-    @push('scripts_bottom')
-    <script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
-    @endpush

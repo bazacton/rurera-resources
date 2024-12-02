@@ -6,7 +6,6 @@
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/slide-menu.css">
 <script src="/assets/vendors/flipbook/js/flipbook.min.js"></script>
-<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
 <style>nav.navbar, nav.navbar1, footer {
                 display: none;
         }</style>
@@ -201,5 +200,4 @@
 
 @push('scripts_bottom')
 <script src="/assets/default/vendors/draw-lines/draw-lines.js"></script>
-<script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
 @endpush
