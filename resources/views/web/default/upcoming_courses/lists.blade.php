@@ -1,7 +1,6 @@
 @extends(getTemplate().'.layouts.app')
 
 @push('styles_top')
-    <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="/assets/default/vendors/select2/select2.min.css">
 @endpush
 
@@ -76,7 +75,6 @@
 
 @push('scripts_bottom')
     <script src="/assets/default/vendors/select2/select2.min.js"></script>
-    <script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
 
     <script src="/assets/default/js/parts/categories.min.js"></script>
 @endpush

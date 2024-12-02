@@ -1,14 +1,5 @@
 @extends(getTemplate().'.layouts.app')
 
-@push('styles_top')
-<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
-<style>
-    .is_child {
-        display: none;
-    }
-</style>
-@endpush
-
 @section('content')
 <section class="pages-sub-header lms-course-banner">
     <div class="container">
@@ -114,7 +105,6 @@
 @endsection
 
 @push('scripts_bottom')
-<script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
 

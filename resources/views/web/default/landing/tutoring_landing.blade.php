@@ -1,7 +1,6 @@
 @extends(getTemplate().'.layouts.app')
 
 @push('styles_top')
-<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
 <style>
     .gallery-sub-header {
         min-height: 850px;
@@ -792,6 +791,5 @@
 
 @push('scripts_bottom')
 <script src="/assets/default/js/helpers.js"></script>
-<script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
 <script src="/assets/default/vendors/masonry/masonry.pkgd.min.js"></script>
 @endpush
