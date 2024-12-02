@@ -89,6 +89,7 @@
 
 
                 <div class="col-12">
+                    <!-- Listing Search Start -->
                     <div class="listing-search lms-jobs-form mb-20">
                         <a href="#." class="filter-mobile-btn">Filters Dropdown</a>
                         <ul class="inline-filters">
@@ -100,6 +101,7 @@
                             <li class="{{$active}}"><a href="/spells/spelling-bee">Spelling Bee</a></li>
                         </ul>
                     </div>
+                    <!-- Listing Search End -->
                 </div>
 
                 @if( !empty( $data))
