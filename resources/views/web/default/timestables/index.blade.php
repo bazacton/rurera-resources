@@ -2,9 +2,7 @@
 
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
-<style type="text/css">
-    .timestables-mode-block{display:none;}
-</style>
+
 @endpush
 
 @section('content')
