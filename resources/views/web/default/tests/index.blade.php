@@ -46,6 +46,7 @@
                     </div>
                 </div>
                 <div class="col-12">
+                    <!-- Listing Search Start -->
                     <div class="listing-search lms-jobs-form mb-20">
                         <form>
                             <div class="row align-items-center">
@@ -77,6 +78,7 @@
                             </div>
                         </form>
                     </div>
+                    <!-- Listing Search End -->
                 </div>
                 <div class="col-12 col-lg-12 col-md-12">
                     <!-- Sats Listings Start -->

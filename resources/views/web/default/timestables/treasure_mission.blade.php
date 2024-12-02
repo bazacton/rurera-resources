@@ -22,6 +22,7 @@
 
 
     @if( !empty( $get_treasure_missions ) )
+        <!-- Listing Search Start -->
         <div class="listing-search lms-jobs-form mb-20">
             <ul class="inline-filters">
             @foreach( $get_treasure_missions as $key => $missionData)
@@ -40,6 +41,7 @@
             @endforeach
             </ul>
         </div>
+        <!-- Listing Search End -->
     @endif
 
 
