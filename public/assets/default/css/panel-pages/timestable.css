@@ -424,6 +424,7 @@ a.db-back-btn {font-weight: 700; display: inline-flex; align-items: center; posi
 .panel-content .school-zone-data.leaderboard-data .leaderboard>li.lms-performace-head div:first-child,
 .panel-content .school-zone-data.leaderboard-data .leaderboard>li.lms-performace-des .sr-no { width: 25%; }
 .panel-content .school-zone-data.leaderboard-data .leaderboard>li.lms-performace-des .sr-no span { font-size: 16px; font-weight: 400; }
+.withdraw-card .ixon-box img {max-width: 30px; object-fit: contain;}
 /* Timestable Showdown Mode style End */
 .hide {
     display: none !important;
