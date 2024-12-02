@@ -101,7 +101,7 @@
                 <div class="col-12">
                     <div class="referral-withdraw mb-30">
                       <div class="withdraw-card p-15 d-flex align-items-center flex-wrap">
-                          <div class="icon-box">
+                          <div class="icon-box mr-10">
                               <img src="/assets/default/svgs/shuttlecock.svg" alt="">
                           </div>
                               <div class="withdraw-text">
