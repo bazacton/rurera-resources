@@ -54,41 +54,39 @@
 @endif
 <body class="menu-closed @if($isRtl) rtl @endif {{$bodyClass}}">
 
-@php
-    $isPanel = true;
-@endphp
+    @php
+        $isPanel = true;
+    @endphp
 
-<div id="panel_app">
-
-    
-    <div class="panel-page-section">
-        @if(auth()->check() && (auth()->user()->isUser()))
-            @include(getTemplate(). '.includes.navbar')
-        @endif
-        @if(auth()->check() && (auth()->user()->isUser() || auth()->user()->isParent() || auth()->user()->isTutor()))
-            @include(getTemplate(). '.panel.includes.sidebar')
-        @endif
-        <div class="panel-content">
-            <div class="container ">
-                <div class="row"> 
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                        @yield('content')
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 panel-right-sidebar full-width-sidebar">
-                    <div class="row">
-                        <div class="col-12 col-lg-12">
-                            @include(getTemplate(). '.panel.includes.user_top_bar')
+    <div id="panel_app">
+        <div class="panel-page-section">
+            @if(auth()->check() && (auth()->user()->isUser()))
+                @include(getTemplate(). '.includes.navbar')
+            @endif
+            @if(auth()->check() && (auth()->user()->isUser() || auth()->user()->isParent() || auth()->user()->isTutor()))
+                @include(getTemplate(). '.panel.includes.sidebar')
+            @endif
+            <div class="panel-content">
+                <div class="container ">
+                    <div class="row"> 
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            @yield('content')
                         </div>
-                    </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 panel-right-sidebar full-width-sidebar">
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                @include(getTemplate(). '.panel.includes.user_top_bar')
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        @include('web.default.includes.advertise_modal.index')
     </div>
-
-
-    @include('web.default.includes.advertise_modal.index')
-</div>
 <div class="modal fade rurera-confirm-delete" id="rurera-confirm-delete" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered" role="document">
   <div class="modal-content">
