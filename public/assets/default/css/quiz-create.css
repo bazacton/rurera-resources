@@ -1838,7 +1838,7 @@ Inline-Style From Php Files Style Start
 ******************************************/
 
 /*rurera-resources\resources\views\web\default\panel\questions => preview_questions.blade Style */
-.image-field img {width:50px; height:50px}
+.image-field-box img {width:50px; height:50px}
 .image-field-box{position:absolute !important;}
 .draggable-items{display:table-row; clear:both;}
 .draggable-items li{display:block; float: left;}
