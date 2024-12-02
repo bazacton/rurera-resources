@@ -534,7 +534,6 @@ body .spell-question-area .question-label span {text-align: center;}
 .questions-controls a.setting-btn svg path {fill: none;}
 .questions-controls a.setting-btn:hover svg path {stroke: #000;}
 .questions-controls a img {width: 28px; height: 28px;}
-.question-layout-block form.question-fields,
 .spell-question-area .question-layout-block form.question-fields {border: 1px solid #bac3ca; margin: 0 0 50px; border-radius: 5px; background-color: #fff; padding: 30px 30px 0; overflow: hidden;}
 .spell-question-area .question-layout-block form.question-fields {border-radius: 0; border-top: 0;}
 .quiz-first-question .spells-quiz-info ul {gap: 0; border: 1px solid #f1f0f5; border-radius: 0;position: relative;z-index: 1;}
