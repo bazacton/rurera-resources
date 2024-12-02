@@ -4,10 +4,6 @@
 </style>
 @extends('web.default.panel.layouts.panel_layout')
 
-@push('styles_top')
-<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
-@endpush
-
 @section('content')
 <div class="timestables-mode-block">
 

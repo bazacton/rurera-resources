@@ -1,9 +1,5 @@
 @extends('web.default.panel.layouts.panel_layout')
 
-@push('styles_top')
-<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
-@endpush
-
 @section('content')
 <section class="content-section">
     <section class="page-section template-grid mx-w-100 py-60 news-section" style="background-color:#333">
@@ -868,7 +864,6 @@
 
 @push('scripts_bottom')
 <script src="/assets/default/vendors/masonry/masonry.pkgd.min.js"></script>
-<script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
 <script>
 $(document).on('click', '.ajax-callback', function (e) {
     var thisObj = $(this);

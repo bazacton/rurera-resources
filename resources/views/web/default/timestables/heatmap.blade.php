@@ -2,7 +2,6 @@
     .hide{display:none;}
     .above_12{display:none;}
 </style>
-<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
 
 <section class="p-25 panel-border border-bottom-4 border-radius-10 mb-30" style="background-color: #fff;">
     <div class="container">
@@ -94,7 +93,6 @@
 	</div>
 </section>
 <script src="/assets/default/vendors/masonry/masonry.pkgd.min.js"></script>
-<script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
 <script src="/assets/default/vendors/apexcharts/apexcharts.min.js"></script>
 <script src="/assets/default/vendors/chartjs/chart.min.js"></script>
 

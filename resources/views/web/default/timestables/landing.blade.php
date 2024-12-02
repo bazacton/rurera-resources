@@ -1,17 +1,11 @@
 @extends(getTemplate().'.layouts.app')
 
 @push('styles_top')
-<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
 <style>
     .time-tables-sub-header {
         background-color: #333399; 
-        /* background-image: linear-gradient(transparent 11px, rgba(255, 255, 255, 0.2) 12px, transparent 12px), linear-gradient(90deg, transparent 11px, rgba(255, 255, 255, 0.2) 12px, transparent 12px); 
-        background-size: 100% 12px, 12px 100%; */
     }
     .lms-column-section {
-        /* background: radial-gradient(rgba(0, 0, 0, 0.1) 2px, transparent 3px), radial-gradient(rgba(0, 0, 0, 0.1) 2px, transparent 3px), #7679ee; 
-        background-position: 0 0, 20px 20px; 
-        background-size: 40px 40px; */
         background-color: #7679ee;
     }
 </style>
@@ -1098,5 +1092,4 @@ $show_details = isset( $show_details )? $show_details : true;
 
 @push('scripts_bottom')
 <script src="/assets/default/vendors/masonry/masonry.pkgd.min.js"></script>
-<script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
 @endpush

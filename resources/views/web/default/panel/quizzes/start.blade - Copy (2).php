@@ -16,7 +16,6 @@ $rand_id = rand(99,9999);
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/slide-menu.css">
 <script src="/assets/vendors/flipbook/js/flipbook.min.js"></script>
-<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
 <style>
     .ui-state-highlight {
         margin: 0px 10px;
@@ -181,7 +180,6 @@ $rand_id = rand(99,9999);
 <script src="/assets/default/vendors/video/video.min.js"></script>
 <script src="/assets/default/vendors/jquery.simple.timer/jquery.simple.timer.js"></script>
 <script src="/assets/default/js/parts/quiz-start.min.js"></script>
-<script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
 <script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
 <script>
     init_question_functions();
