@@ -17,8 +17,6 @@ $rand_id = rand(99,9999);
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/slide-menu.css">
 <script src="/assets/vendors/flipbook/js/flipbook.min.js"></script>
 
-<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
-
 @endpush
 @section('content')
 <div class="content-section">
@@ -241,7 +239,6 @@ $rand_id = rand(99,9999);
 <script src="/assets/default/vendors/jquery.simple.timer/jquery.simple.timer.js"></script>
 <script src="/assets/default/js/parts/quiz-start.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-<script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
 <script src="/assets/default/js/question-layout.js?ver={{$rand_id}}"></script>
 <script type="text/javascript">
     $(document).ready(function () {

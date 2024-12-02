@@ -1,9 +1,5 @@
 @extends('web.default.panel.layouts.panel_layout')
 
-@push('styles_top')
-    <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
-@endpush
-
 @section('content')
 <section class="products-top-header lms-call-to-action search-top-banner position-relative pb-0 flex-column pt-70 pb-50 mt-10" style="background-color: #333399;">
         <div class="container h-100">
@@ -135,7 +131,6 @@ Access to the rewards with 3 simple steps</p>
 @push('scripts_bottom')
 
 <script src="/assets/default/vendors/masonry/masonry.pkgd.min.js"></script>
-<script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
 <script src="/assets/default/js/parts/products_lists.min.js"></script>
 <script>
   feather.replace()

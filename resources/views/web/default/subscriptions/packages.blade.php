@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
 
 @include('web.default.subscriptions.steps',['activeStep'=> 'packages'])
 @php $update_package_confirm = isset( $update_package_confirm )? $update_package_confirm : false; 
@@ -207,7 +206,6 @@ $user_subscribed_for = isset( $user_subscribed_for)? $user_subscribed_for : 1;
         </div>
     </div>
 </section>
-<script src="/assets/default/vendors/swiper/swiper-bundle.min.js"></script>
 <script src="/assets/default/vendors/masonry/masonry.pkgd.min.js"></script>
 <script type="text/javascript">
 
