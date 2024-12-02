@@ -7,69 +7,6 @@
 <link rel="stylesheet" href="/assets/default/vendors/daterangepicker/daterangepicker.min.css">
 <script src="/assets/default/vendors/charts/chart.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<style>
-    .hide {
-        display: none !important;
-    }
-	.word-block.active {
-		background: #edffea;
-	}
-	.word-block-inner {
-		display: contents;
-	}
-	.word-block-inner-data {
-		display: none;
-		width:100%;
-	}
-	.spell-words-data {
-		-webkit-user-select: none; /* Safari */
-		-moz-user-select: none;    /* Firefox */
-		-ms-user-select: none;     /* Internet Explorer/Edge */
-		user-select: none;         /* Non-prefixed version, currently supported by Chrome, Opera, and Firefox */
-	}
-	
-	.rurera-error {
-		color: #ff0909;
-	}
-	
-	.spell-words-data{
-		position: static;
-	}
-	
-	
-.selectedArea{
-  display:inline-block;
-  margin:20px 0;
-}
-
-.dragArea{
-  position:absolute;
-  display:none;
-  width:100px;
-  height:100px;
-  border:1px solid rgba(0,0,0,.15);
-  background:rgba(0,0,0,.05);
-  z-index:999999;
-}
-
-.dragArea.remove{  
-  border:1px solid rgba(255,0,0,.15);
-  background:rgba(255,0,0,.05);
-}
-
-.dragArea.add{  
-  border:1px solid rgba(0,0,255,.15);
-  background:rgba(0,0,255,.05);
-}
-.spell-words-data .word-block {
-    position: relative;
-}
-.spell-words-data .word-block input[type="checkbox"] {
-    width: 100%;
-    height: 100%;
-    left: 0;
-}
-</style>
 
 @endpush
 
