@@ -157,7 +157,7 @@
                                                             </a>
                                                         </li>';
                                 @endphp
-
+                                <!-- Spell Levels Listing Start -->
                                 <div class="spell-levels {{$spell_quiz_completed}}">
                                     <div class="spell-levels-top">
                                         <div class="spell-top-left">
@@ -199,6 +199,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Spell Levels Listing End -->
                                 @endforeach
 
 
