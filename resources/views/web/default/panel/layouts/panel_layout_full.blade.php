@@ -83,202 +83,200 @@
                 </div>
             </div>
         </div>
-
-
         @include('web.default.includes.advertise_modal.index')
     </div>
-<div class="modal fade rurera-confirm-delete" id="rurera-confirm-delete" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered" role="document">
-  <div class="modal-content">
-    <div class="modal-body">
-      <div class="modal-box">
-        <span class="icon-box d-block mb-15">
-            <img src="../assets/default/img/clock-modal-img.png" alt="">
-        </span>
-        <h3 class="font-24 font-weight-normal mb-10">Are you sure you want to remove?</h3>
-        <p class="mb-15 font-16">
-            You've been inactive for a while, and your session was paused. You can continue learning by using the following links
-        </p>
-        <div class="inactivity-controls">
-            <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">No</a>
-            <a href="javascript:;" class="rurera-delete-btn">Yes to Delete</a>
+    <div class="modal fade rurera-confirm-delete" id="rurera-confirm-delete" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+            <div class="modal-box">
+                <span class="icon-box d-block mb-15">
+                    <img src="../assets/default/img/clock-modal-img.png" alt="">
+                </span>
+                <h3 class="font-24 font-weight-normal mb-10">Are you sure you want to remove?</h3>
+                <p class="mb-15 font-16">
+                    You've been inactive for a while, and your session was paused. You can continue learning by using the following links
+                </p>
+                <div class="inactivity-controls">
+                    <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">No</a>
+                    <a href="javascript:;" class="rurera-delete-btn">Yes to Delete</a>
+                </div>
+            </div>
+            </div>
         </div>
-      </div>
+        </div>
     </div>
-  </div>
-</div>
-</div>
-<!-- Template JS File -->
-<script src="/assets/default/js/app.js"></script>
-<script src="/assets/default/vendors/moment.min.js"></script>
-<script src="/assets/default/vendors/feather-icons/dist/feather.min.js"></script>
-<script src="/vendor/laravel-filemanager/js/stand-alone-button.js"></script>
-<script src="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
-<script src="/assets/default/vendors/toast/jquery.toast.min.js"></script>
-<script type="text/javascript" src="/assets/default/vendors/simplebar/simplebar.min.js"></script>
+    <!-- Template JS File -->
+    <script src="/assets/default/js/app.js"></script>
+    <script src="/assets/default/vendors/moment.min.js"></script>
+    <script src="/assets/default/vendors/feather-icons/dist/feather.min.js"></script>
+    <script src="/vendor/laravel-filemanager/js/stand-alone-button.js"></script>
+    <script src="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="/assets/default/vendors/toast/jquery.toast.min.js"></script>
+    <script type="text/javascript" src="/assets/default/vendors/simplebar/simplebar.min.js"></script>
 
-<script>
-    var deleteAlertTitle = '{{ trans('public.are_you_sure') }}';
-    var deleteAlertHint = '{{ trans('public.deleteAlertHint') }}';
-    var deleteAlertConfirm = '{{ trans('public.deleteAlertConfirm') }}';
-    var deleteAlertCancel = '{{ trans('public.cancel') }}';
-    var deleteAlertSuccess = '{{ trans('public.success') }}';
-    var deleteAlertFail = '{{ trans('public.fail') }}';
-    var deleteAlertFailHint = '{{ trans('public.deleteAlertFailHint') }}';
-    var deleteAlertSuccessHint = '{{ trans('public.deleteAlertSuccessHint') }}';
-    var forbiddenRequestToastTitleLang = '{{ trans('public.forbidden_request_toast_lang') }}';
-    var forbiddenRequestToastMsgLang = '{{ trans('public.forbidden_request_toast_msg_lang') }}';
-</script>
-
-@if(session()->has('toast'))
     <script>
-        (function () {
-            "use strict";
-			
-
-            $.toast({
-                heading: '{{ session()->get('toast')['title'] ?? '' }}',
-                text: '{{ session()->get('toast')['msg'] ?? '' }}',
-                bgColor: '@if(session()->get('toast')['status'] == 'success') #43d477 @else #f63c3c @endif',
-                textColor: 'white',
-                hideAfter: 10000,
-                position: 'bottom-right',
-                icon: '{{ session()->get('toast')['status'] }}'
-            });
-        })(jQuery)
+        var deleteAlertTitle = '{{ trans('public.are_you_sure') }}';
+        var deleteAlertHint = '{{ trans('public.deleteAlertHint') }}';
+        var deleteAlertConfirm = '{{ trans('public.deleteAlertConfirm') }}';
+        var deleteAlertCancel = '{{ trans('public.cancel') }}';
+        var deleteAlertSuccess = '{{ trans('public.success') }}';
+        var deleteAlertFail = '{{ trans('public.fail') }}';
+        var deleteAlertFailHint = '{{ trans('public.deleteAlertFailHint') }}';
+        var deleteAlertSuccessHint = '{{ trans('public.deleteAlertSuccessHint') }}';
+        var forbiddenRequestToastTitleLang = '{{ trans('public.forbidden_request_toast_lang') }}';
+        var forbiddenRequestToastMsgLang = '{{ trans('public.forbidden_request_toast_msg_lang') }}';
     </script>
-@endif
 
-@stack('styles_bottom')
-@stack('scripts_bottom')
-<script src="/assets/default/vendors/sortable/jquery-ui.min.js"></script>
-<script src="/assets/default/js/question-layout.js"></script>
-<script src="/assets/default/js//parts/main.min.js?ver={{$rand_no}}"></script>
-<script src="/assets/default/js/panel/public.min.js"></script>
-<script src="/assets/vendors/jquerygrowl/jquery.growl.js"></script>
-<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
-<script>
+    @if(session()->has('toast'))
+        <script>
+            (function () {
+                "use strict";
+                
 
-    @if(session()->has('registration_package_limited'))
-    (function () {
-        "use strict";
-
-        handleLimitedAccountModal('{!! session()->get('registration_package_limited') !!}')
-    })(jQuery)
-
-    {{ session()->forget('registration_package_limited') }}
+                $.toast({
+                    heading: '{{ session()->get('toast')['title'] ?? '' }}',
+                    text: '{{ session()->get('toast')['msg'] ?? '' }}',
+                    bgColor: '@if(session()->get('toast')['status'] == 'success') #43d477 @else #f63c3c @endif',
+                    textColor: 'white',
+                    hideAfter: 10000,
+                    position: 'bottom-right',
+                    icon: '{{ session()->get('toast')['status'] }}'
+                });
+            })(jQuery)
+        </script>
     @endif
 
-    {!! !empty(getCustomCssAndJs('js')) ? getCustomCssAndJs('js') : '' !!}
+    @stack('styles_bottom')
+    @stack('scripts_bottom')
+    <script src="/assets/default/vendors/sortable/jquery-ui.min.js"></script>
+    <script src="/assets/default/js/question-layout.js"></script>
+    <script src="/assets/default/js//parts/main.min.js?ver={{$rand_no}}"></script>
+    <script src="/assets/default/js/panel/public.min.js"></script>
+    <script src="/assets/vendors/jquerygrowl/jquery.growl.js"></script>
+    <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
+    <script>
 
-            var options = {
-                type: 'bar',
-                data: {
-                    labels: ["Jul 2017", "Jan 2018", "Jul 2018", "Jan 2019", "Jul 2019"],
-                    datasets: [
-                        {
-                            label: '# of Votes',
-                            data: [10, 12, 5, 15, 20],
-                            borderWidth: 0,
-                            backgroundColor: '#417290',
-                            borderColor: '#417290',
-                        },  
-                        {
-                            label: '# of Points',
-                            data: [20, 10, 5, 10, 10],
-                            borderWidth: 0,
-                            backgroundColor: '#417290',
-                            borderColor: '#417290',
-                        },
-                        {
-                            label: '# of Points',
-                            data: [10, 5, 15, 20, 10],
-                            borderWidth: 0,
-                            backgroundColor: '#417290',
-                            borderColor: '#417290'
-                        },
-                        {
-                            label: '# of Points',
-                            data: [5, 2, 2, 15, 5],
-                            borderWidth: 0,
-                            backgroundColor: '#417290',
-                            borderColor: '#417290'
-                        },
-                        {
-                            label: '# of Points',
-                            data: [10, 2, 2, 10, 20],
-                            borderWidth: 0,
-                            backgroundColor: '#417290',
-                            borderColor: '#417290'
-                        },
-                        {
-                            label: '# of Points',
-                            data: [20, 5, 10, 15, 20],
-                            borderWidth: 0,
-                            backgroundColor: '#417290',
-                            borderColor: '#417290'
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    categoryPercentage: 1,
-                    scales: {
-                        x: {
-                        grid: {
-                            display: false
-                        },
-                        border: {
-                            display: false
-                        }
-                        },
-                        y: {
-                        grid: {
-                            display: false
-                        },
-                        border: {
-                            display: false
-                        }
-                        }
+        @if(session()->has('registration_package_limited'))
+        (function () {
+            "use strict";
+
+            handleLimitedAccountModal('{!! session()->get('registration_package_limited') !!}')
+        })(jQuery)
+
+        {{ session()->forget('registration_package_limited') }}
+        @endif
+
+        {!! !empty(getCustomCssAndJs('js')) ? getCustomCssAndJs('js') : '' !!}
+
+                var options = {
+                    type: 'bar',
+                    data: {
+                        labels: ["Jul 2017", "Jan 2018", "Jul 2018", "Jan 2019", "Jul 2019"],
+                        datasets: [
+                            {
+                                label: '# of Votes',
+                                data: [10, 12, 5, 15, 20],
+                                borderWidth: 0,
+                                backgroundColor: '#417290',
+                                borderColor: '#417290',
+                            },  
+                            {
+                                label: '# of Points',
+                                data: [20, 10, 5, 10, 10],
+                                borderWidth: 0,
+                                backgroundColor: '#417290',
+                                borderColor: '#417290',
+                            },
+                            {
+                                label: '# of Points',
+                                data: [10, 5, 15, 20, 10],
+                                borderWidth: 0,
+                                backgroundColor: '#417290',
+                                borderColor: '#417290'
+                            },
+                            {
+                                label: '# of Points',
+                                data: [5, 2, 2, 15, 5],
+                                borderWidth: 0,
+                                backgroundColor: '#417290',
+                                borderColor: '#417290'
+                            },
+                            {
+                                label: '# of Points',
+                                data: [10, 2, 2, 10, 20],
+                                borderWidth: 0,
+                                backgroundColor: '#417290',
+                                borderColor: '#417290'
+                            },
+                            {
+                                label: '# of Points',
+                                data: [20, 5, 10, 15, 20],
+                                borderWidth: 0,
+                                backgroundColor: '#417290',
+                                borderColor: '#417290'
+                            }
+                        ]
                     },
-                    plugins: {
-                        legend: {
-                            display: false
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        categoryPercentage: 1,
+                        scales: {
+                            x: {
+                            grid: {
+                                display: false
+                            },
+                            border: {
+                                display: false
+                            }
+                            },
+                            y: {
+                            grid: {
+                                display: false
+                            },
+                            border: {
+                                display: false
+                            }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
                         }
                     }
                 }
-            }
-            //var ctx = document.getElementById('chartBarHorizontal2').getContext('2d');
-            //new Chart(ctx, options);
-        </script>
-        <script>    
-            /*var ctxPie = document.getElementById('pieChart');
-            var pieChart = new Chart(ctxPie, {
-                type: 'pie',
-                data: {
-                    labels: ['Organic Se...', 'Direct', 'Social', 'Referral'],
-                    datasets: [{
-                        label: '# of Votes',
-                        data: [12, 19, 3, 5],
-                        backgroundColor: [
-                            '#417290',
-                            '#b0c6d3',
-                            '#e6e6e6',
-                            '#b6ecf7'
-                        ],
-                        borderColor: [
-                            '#417290',
-                            '#b0c6d3',
-                            '#e6e6e6',
-                            '#b6ecf7'
-                        ],
-                        borderWidth: 1
-                    }]
-                },
-                options: {}
-            });*/
-        </script>
-</script>
+                //var ctx = document.getElementById('chartBarHorizontal2').getContext('2d');
+                //new Chart(ctx, options);
+            </script>
+            <script>    
+                /*var ctxPie = document.getElementById('pieChart');
+                var pieChart = new Chart(ctxPie, {
+                    type: 'pie',
+                    data: {
+                        labels: ['Organic Se...', 'Direct', 'Social', 'Referral'],
+                        datasets: [{
+                            label: '# of Votes',
+                            data: [12, 19, 3, 5],
+                            backgroundColor: [
+                                '#417290',
+                                '#b0c6d3',
+                                '#e6e6e6',
+                                '#b6ecf7'
+                            ],
+                            borderColor: [
+                                '#417290',
+                                '#b0c6d3',
+                                '#e6e6e6',
+                                '#b6ecf7'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {}
+                });*/
+            </script>
+    </script>
 </body>
 </html>
