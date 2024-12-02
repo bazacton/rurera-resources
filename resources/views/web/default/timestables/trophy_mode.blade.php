@@ -14,7 +14,7 @@
                     <div class="referral-withdraw mb-30">
                       <div class="withdraw-card d-flex align-items-center flex-wrap">
                           <div class="icon-box">
-                              <img src="/assets/default/svgs/shuttlecock.svg" alt="">
+                              <img src="/assets/default/svgs/shuttlecock.svg" alt="shuttlecock icon" height="150" width="150">
                           </div>
                             <div class="withdraw-text">
                                 <h3 class="blog-grid-title font-18 font-weight-bold mb-5" itemprop="title">You need to play {{(5 - $results_data->count())}} more games to earn a Badge</h3>
