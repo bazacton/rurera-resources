@@ -21,13 +21,16 @@
             <div class="row pt-80">
 
                 <div class="col-12">
+                    <!-- Section Title Start -->
                     <div class="section-title text-left mb-50">
                         <h2 class="mt-0 mb-10 font-40 font-weight-bold">11Plus Online 10-Minutes test practices</h2>
                         <p> Work through a variety of practice questions to improve your skills and become familiar with
                             the <br> types of questions you'll encounter on the SATs. </p>
                     </div>
+                    <!-- Section Title End -->
                 </div>
                 <div class="col-12">
+                    <!-- Listing Search Start -->
                     <div class="listing-search lms-jobs-form mb-20">
                         <form>
                             <div class="row align-items-center">
@@ -102,6 +105,7 @@
                             </div>
                         </form>
                     </div>
+                    <!-- Listing Search End -->
                 </div>
 
 
