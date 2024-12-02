@@ -1,13 +1,5 @@
 @extends(getTemplate().'.layouts.app')
 
-@push('styles_top')
-<style>
-    .hide{display:none;}
-    .above_12{display:none;}
-</style>
-
-@endpush
-
 @section('content')
 <section class="heatmap-section">
     <div class="container">

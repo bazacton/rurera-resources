@@ -1,13 +1,5 @@
 @extends('web.default.panel.layouts.panel_layout')
 
-@push('styles_top')
-<style>
-    .hide{display:none;}
-    .above_12{display:none;}
-</style>
-
-@endpush
-
 @section('content')
 <div class="section-title mb-20">
     <h2 itemprop="title" class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a> Heat Map</h2>

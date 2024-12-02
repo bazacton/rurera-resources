@@ -1,13 +1,5 @@
 @extends('web.default.panel.layouts.panel_layout')
 
-@push('styles_top')
-<style>
-    .hide{display:none;}
-    .above_12{display:none;}
-</style>
-
-@endpush
-
 @section('content')
 <section class="heatmap-section mt-10">
         <div class="row">
