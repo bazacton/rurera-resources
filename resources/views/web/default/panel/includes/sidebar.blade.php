@@ -1,7 +1,6 @@
 @php
     $getPanelSidebarSettings = getPanelSidebarSettings();
 @endphp
-
 <!-- Panel Sidebar Start -->
     <div class="panel-sidebar px-25 pt-15" id="panelSidebar" style="position: inherit;top: 0px;">
         <div class="container">
