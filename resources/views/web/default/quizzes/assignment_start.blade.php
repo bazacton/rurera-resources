@@ -133,7 +133,7 @@ $rand_id = rand(99,9999);
                                 <h3>INSTRUCTIONS</h3>
                                 <h4>Setting Up Your Page</h4>
                                 <p>Before you start the test you can use the buttons on the top right of the screen to choose:</p>
-                                <ul>
+                                <ul class="test">
                                     <li>a coloured overlay (this will change the background colour and may help you read the questions better)</li>
                                 </ul>
                                 <img src="/assets/default/img/overlay.png" alt="#">
