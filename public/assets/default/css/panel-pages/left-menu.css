@@ -658,6 +658,7 @@ body:has(.edit-profile) {
 /*Test-List Default Style For Timestables Practice Page End*/
 
 /*Grid Card Default Style For Timestables Practice Page*/
+.timestables-mode-block {display: none;}
 .panel-content > .container > .row > [class*="col-"]:first-child {padding-right: 25px;}
 .panel-content > .container > .row > [class*="col-"]:last-child {padding-left: 25px;}
 .template-grid .row .row [class*="col"] {padding: 0 5px;}
