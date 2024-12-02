@@ -2,7 +2,7 @@
     $getPanelSidebarSettings = getPanelSidebarSettings();
 @endphp
 
-
+<!-- Panel Sidebar Start -->
 <div class="panel-sidebar px-25 pt-15" id="panelSidebar" style="position: inherit;top: 0px;">
     <button class="btn-transparent panel-sidebar-close sidebarNavToggle">
         <i data-feather="align-justify" width="24" height="24"></i>
@@ -602,3 +602,4 @@
         </li>
     </ul>
 </div>
+<!-- Panel Sidebar End -->
