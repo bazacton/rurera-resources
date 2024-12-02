@@ -50,9 +50,9 @@
 @endif
 <body class="menu-closed @if($isRtl) rtl @endif {{$bodyClass}}">
 
-@php
-    $isPanel = true;
-@endphp
+    @php
+        $isPanel = true;
+    @endphp
 
     <div id="panel_app">
         <div class="panel-page-section">
