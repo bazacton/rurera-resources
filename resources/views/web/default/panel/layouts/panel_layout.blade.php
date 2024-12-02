@@ -36,13 +36,13 @@
     <link rel="stylesheet" href="/assets/default/css/responsive.css">
     @stack('scripts_top')
 
-    <style>
+    <!-- <style>
         {!! !empty(getCustomCssAndJs('css')) ? getCustomCssAndJs('css') : '' !!}
 
         {!! getThemeFontsSettings() !!}
 
         {!! getThemeColorsSettings() !!}
-    </style>
+    </style> -->
 
     @if(!empty($generalSettings['preloading']) and $generalSettings['preloading'] == '1')
         @include('admin.includes.preloading')
