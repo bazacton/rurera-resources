@@ -2,11 +2,11 @@
 <html lang="{{ app()->getLocale() }}">
 
 @php
-$rtlLanguages = !empty($generalSettings['rtl_languages']) ? $generalSettings['rtl_languages'] : [];
+    $rtlLanguages = !empty($generalSettings['rtl_languages']) ? $generalSettings['rtl_languages'] : [];
 
-$isRtl = ((in_array(mb_strtoupper(app()->getLocale()), $rtlLanguages)) or (!empty($generalSettings['rtl_layout']) and $generalSettings['rtl_layout'] == 1));
-    $rand_no = rand(99,9999);
-$profile_navs = isset( $navData['profile_navs'] )? $navData['profile_navs'] : array();
+    $isRtl = ((in_array(mb_strtoupper(app()->getLocale()), $rtlLanguages)) or (!empty($generalSettings['rtl_layout']) and $generalSettings['rtl_layout'] == 1));
+        $rand_no = rand(99,9999);
+    $profile_navs = isset( $navData['profile_navs'] )? $navData['profile_navs'] : array();
 @endphp
 <head>
     @include(getTemplate().'.includes.metas')
