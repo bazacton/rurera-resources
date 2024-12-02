@@ -839,6 +839,26 @@ body:has(.edit-profile) {
 .question-result-layout .form-field.correct,
 .question-result-layout .form-field.wrong {border-radius: 10px;}
 .question-result-layout .form-field.correct input[type="checkbox"]:checked ~ label {background-color: inherit;}
+/* Multi Response List Style Start */
+.form-box {position: relative;}
+.form-field input[type="checkbox"] {position: absolute; left: 0; top: 0; opacity: 0;}
+.form-field label,
+.api-questions-form .option-group {background-color: #fff; border: 2px solid #ddd; border-bottom-width: 4px; border-radius: 8px; position: relative; cursor: auto; padding: 15px; width: 100%; margin-bottom: 0; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; line-height: normal; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
+.form-field input[type="checkbox"] ~ label {min-height: 52px; text-align: left;}
+.form-field input[type="checkbox"]:checked ~ label:after {opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+.form-field input[type="checkbox"]:checked ~ label{background-color: #fcfbfb;}
+.form-field label:hover {border: 2px solid #c4c3c3;border-bottom-width: 4px;border-radius: 8px;}
+.row-fields.lms-checkbox-img label {padding: 5px;}
+.lms-checkbox-img .form-field label:before {width: 30px; height: 30px; right: 15px; border-radius: 100%; margin-top: -15px;}
+.lms-checkbox-img .form-field label:after {right: 24px; font-size: 14px; height: auto; width: auto; line-height: normal; top: 50%; margin-top: -10px;}
+.lms-checkbox-img .form-field input[type="checkbox"]:checked ~ label:after {-webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); }
+.lms-checkbox-img label img {border-radius: 3px; width: 35px;  height: 35px; object-fit: contain; margin-right: 10px; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;}
+.lms-checkbox-img label {border-radius: 5px; display: flex; align-items: center;}
+.lms-checkbox-img .form-field.wrong label {background: none; border-color: #ff4a4a; color: #000;}
+.lms-checkbox-img .form-field.wrong label:before {border-color: #ff4a4a;}
+.form-field input[type="checkbox"]:checked ~ label:has(img) {background-color: inherit; border-color: rgb(113 150 251);}
+.active-option label {background-color: #f2f2f2;}
+/* Multi Response List Style End */
 /* Question-Result-Layout Style End */
 
 /************************
