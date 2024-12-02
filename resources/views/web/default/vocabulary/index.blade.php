@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
 <link rel="stylesheet" href="/assets/vendors/jquerygrowl/jquery.growl.css">
 <link rel="stylesheet" href="/assets/default/css/assignments.css">
+<link rel="stylesheet" href="/assets/default/css/panel-pages/wordlist.css">
 <link rel="stylesheet" href="/assets/default/vendors/daterangepicker/daterangepicker.min.css">
 <script src="/assets/default/vendors/charts/chart.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
