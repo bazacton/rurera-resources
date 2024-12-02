@@ -780,6 +780,23 @@ body:has(.edit-profile) {
 .finish-steps .chart-summary-fields .sats-summary .summary-text {width: calc(100% - 40px); text-align: left;}
 /*Analytics/Timestables/Result Sats Summary style End*/
 /* Question-Result-Layout Style Start */
+/* Columns Selection Style Start */
+.rureraform-admin-editor * {box-sizing: border-box;}
+.rureraform-col-1 {width: 8.33333333%;}
+.rureraform-col-2 {width: 16.66666666%;}
+.rureraform-col-3 {width: 25%;}
+.rureraform-col-4 {width: 33.33333333%;}
+.rureraform-col-5 {width: 41.66666666%;}
+.rureraform-col-6 {width: 50%;}
+.rureraform-col-7 {width: 58.33333333%;}
+.rureraform-col-8 {width: 66.66666666%;}
+.rureraform-col-9 {width: 75%;}
+.rureraform-col-10 {width: 83.33333333%;}
+.rureraform-col-11 {width: 91.66666666%;}
+.rureraform-col-12 {width: 100%;}
+.rureraform-row.rureraform-element [class*="rureraform-col-"] {float: none; display: inline-block; margin-right: 0; vertical-align: middle; outline: 1px dashed #f3f1f1; padding: 15px; }
+.rureraform-row.rureraform-element [class*="rureraform-col-"]:has(.rureraform-elements img) {vertical-align: top;}
+/* Columns Selection Style End */
 .question-result-layout {background-color: #fff; margin-bottom: 30px; padding: 30px 30px 20px; border: 2px solid #eee; border-left-width: 4px; position: relative;}
 .question-result-layout:before {height: 30px; width: 30px; text-align: center; border-radius: 100%; font-size: 14px; line-height: 30px; color: #fff; display: inline-block; margin-bottom: 10px;}
 .question-result-layout.question-status-correct:before {content: "\2713"; background-color: #70c17c;}
