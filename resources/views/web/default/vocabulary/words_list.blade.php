@@ -6,11 +6,7 @@
 <link rel="stylesheet" href="/assets/default/vendors/daterangepicker/daterangepicker.min.css">
 <script src="/assets/default/vendors/charts/chart.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<style>
-    .hide {
-        display: none !important;
-    }
-</style>
+
 @endpush
 
 @section('content')
