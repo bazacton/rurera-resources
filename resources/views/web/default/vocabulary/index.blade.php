@@ -106,7 +106,7 @@
 
                 @if( !empty( $data))
 
-                <section class="lms-data-table mt-0 mb-30 spells elevenplus-block">
+                <section class="lms-data-table mt-0 mb-30 spells elevenplus-block w-100">
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
