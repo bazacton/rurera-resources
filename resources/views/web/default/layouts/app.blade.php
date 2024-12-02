@@ -31,13 +31,13 @@
     @stack('styles_top')
     @stack('scripts_top')
 
-    <style>
+    <!-- <style>
         {!! !empty(getCustomCssAndJs('css')) ? getCustomCssAndJs('css') : '' !!}
 
         {!! getThemeFontsSettings() !!}
 
         {!! getThemeColorsSettings() !!}
-    </style>
+    </style> -->
 
 </head>
 
