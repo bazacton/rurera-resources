@@ -79,6 +79,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-12 col-md-12">
+                    <!-- Sats Listings Start -->
                     <div class="sats-listing-card medium">
                         <table class="simple-table">
                             <tbody>
@@ -88,6 +89,7 @@
                             </tbody>
                         </table>
                     </div>
+                    <!-- Sats Listings End -->
                 </div>
 
                 <div class="col-12">
