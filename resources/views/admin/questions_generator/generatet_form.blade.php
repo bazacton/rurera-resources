@@ -184,14 +184,6 @@
 							<div class="row-field">
 							
 								<label class="custom-switch pl-0">
-								<label class="custom-switch-description mb-0 cursor-pointer" for="include_intro_text">Intro Text</label>
-									<input type="checkbox" name="include_intro_text" id="include_intro_text" value="1" class="custom-switch-input include_intro_text" checked>
-									<span class="custom-switch-indicator"></span>
-								</label>
-							</div>
-							<div class="row-field">
-							
-								<label class="custom-switch pl-0">
 									<label class="custom-switch-description mb-0 cursor-pointer" for="include_passage">Passage</label>
 									<input type="checkbox" name="include_passage" id="include_passage" value="1" class="custom-switch-input include_passage" checked>
 									<span class="custom-switch-indicator"></span>
@@ -222,13 +214,6 @@
 							<!-- Content Text Area -->
 							<label for="instructions_ai">Instructions for AI:</label>
 							<textarea class="w-100 form-control unicode-rm" name="instructions_ai" id="instructions_ai" rows="4" maxlength="400"></textarea>
-						</div>
-					</div>
-				
-					<div class="intro-field">
-						<div class="form-group">
-							<label for="intro_text_main">Intro Text:</label>
-							<textarea name="intro_text_main" id="intro_text_main" class="form-control w-100 unicode-rm" rows="4"></textarea>
 						</div>
 					</div>
 					<div class="passage-field">
