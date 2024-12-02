@@ -106,113 +106,111 @@
 
                 @if( !empty( $data))
 
-                <div class="col-12">
-                    <section class="lms-data-table mt-0 mb-30 spells elevenplus-block">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
+                <section class="lms-data-table mt-0 mb-30 spells elevenplus-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
 
 
-                                    @php $total_questions_all = $total_attempts_all = $total_questions_attempt_all = $correct_questions_all =
-                                    $incorrect_questions_all = $pending_questions_all = $not_used_words_all = 0;
-                                    @endphp
+                                @php $total_questions_all = $total_attempts_all = $total_questions_attempt_all = $correct_questions_all =
+                                $incorrect_questions_all = $pending_questions_all = $not_used_words_all = 0;
+                                @endphp
 
-                                    @foreach( $data as $dataObj)
-                                    @php
-									
-									$total_questions = isset( $dataObj->quizQuestionsList )? count($dataObj->quizQuestionsList) : 0;
-									$spell_test_count = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', '')->where('status', 'waiting')->count();
-									$spell_test_completed = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', '')->where('status', '!=', 'waiting')->count();
-									$word_search_count = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', 'word-search')->where('status', 'waiting')->count();
-									$word_cloud_count = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', 'word-cloud')->where('status', 'waiting')->count();
-									$word_missing_count = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', 'word-missing')->where('status', 'waiting')->count();
-									
-									
-									$quizResultObj = $dataObj->parentResults->where('user_id', $user->id)->where('quiz_result_type', 'vocabulary')->where('attempt_mode', '')->where('status', 'passed')->last();
-									$percentage_class = '';
-									if( isset( $quizResultObj->id)){
-										$percentage_correct_answer = $QuestionsAttemptController->get_percetange_corrct_answer($quizResultObj);
-										$percentage_class = 'danger';
-										$percentage_class = ($percentage_correct_answer >= 70 )? 'improvement' : $percentage_class;
-										$percentage_class = ($percentage_correct_answer > 90 )? 'success' : $percentage_class;
-									}
+                                @foreach( $data as $dataObj)
+                                @php
+                                
+                                $total_questions = isset( $dataObj->quizQuestionsList )? count($dataObj->quizQuestionsList) : 0;
+                                $spell_test_count = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', '')->where('status', 'waiting')->count();
+                                $spell_test_completed = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', '')->where('status', '!=', 'waiting')->count();
+                                $word_search_count = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', 'word-search')->where('status', 'waiting')->count();
+                                $word_cloud_count = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', 'word-cloud')->where('status', 'waiting')->count();
+                                $word_missing_count = $dataObj->parentResults->where('quiz_result_type', 'vocabulary')->where('attempt_mode', 'word-missing')->where('status', 'waiting')->count();
+                                
+                                
+                                $quizResultObj = $dataObj->parentResults->where('user_id', $user->id)->where('quiz_result_type', 'vocabulary')->where('attempt_mode', '')->where('status', 'passed')->last();
+                                $percentage_class = '';
+                                if( isset( $quizResultObj->id)){
+                                    $percentage_correct_answer = $QuestionsAttemptController->get_percetange_corrct_answer($quizResultObj);
+                                    $percentage_class = 'danger';
+                                    $percentage_class = ($percentage_correct_answer >= 70 )? 'improvement' : $percentage_class;
+                                    $percentage_class = ($percentage_correct_answer > 90 )? 'success' : $percentage_class;
+                                }
 
 
-                                    $overall_percentage = 0;
-                                   
-                                    $spell_quiz_completed = '';
-                                    
+                                $overall_percentage = 0;
+                                
+                                $spell_quiz_completed = '';
+                                
 
-                                    $treasure_box_closed = '<li class="treasure">
-                                                        <a href="#">
-                                                            <span class="thumb-box">
-                                                                <img src="/assets/default/img/treasure2.png" alt="">
-                                                            </span>
-                                                        </a>
-                                                    </li>';
-                                    $treasure_box_opened = '<li class="treasure">
-                                                                <a href="#">
-                                                                    <span class="thumb-box">
-                                                                        <img src="/assets/default/img/treasure.png" alt="">
-                                                                    </span>
-                                                                </a>
-                                                            </li>';
-                                    @endphp
+                                $treasure_box_closed = '<li class="treasure">
+                                                    <a href="#">
+                                                        <span class="thumb-box">
+                                                            <img src="/assets/default/img/treasure2.png" alt="">
+                                                        </span>
+                                                    </a>
+                                                </li>';
+                                $treasure_box_opened = '<li class="treasure">
+                                                            <a href="#">
+                                                                <span class="thumb-box">
+                                                                    <img src="/assets/default/img/treasure.png" alt="">
+                                                                </span>
+                                                            </a>
+                                                        </li>';
+                                @endphp
 
-                                    <div class="spell-levels {{$spell_quiz_completed}}">
-                                        <div class="spell-levels-top">
-                                            <div class="spell-top-left">
-                                                <h3 class="font-18 font-weight-bold">{{$dataObj->getTitleAttribute()}} <span class="progress-star {{$percentage_class}}"><img src="/assets/default/img/tick-white.png"></span></h3>
-												<div class="spell-links">
-												<a href="javascript:;" class="spell-popup-btn" data-heading="{{$dataObj->getTitleAttribute()}}" data-play_link="/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/" data-spell_type="word-hunts" data-spell_id="{{$dataObj->id}}">
-													Practice Words
-												</a>
-												
-												
-												<a href="javascript:;" class="spell-popup-btn1 rurera-tooltip dropup">
-												
-												<span class="dropdown-toggle h-100 w-100 d-flex align-items-center justify-content-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Take a test</span>
-												
-												<div class="lms-tooltip dropdown-menu">
-													<div class="tooltip-box">	
-														<button data-heading="Take a test" class="tooltip-btn practice font-16 d-block mb-15 text-center spell-test-btn"  data-play_link="/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/test" data-spell_type="test">Take Test</button>
-														@if($spell_test_count > 0)
-															<button class="tooltip-btn legendary d-block font-16 text-center" onclick='window.location.href = "/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/test"'>Continue</button>
-														@endif
-														@if($spell_test_completed > 0)
-															<button class="tooltip-btn practice font-16 d-block mt-15 text-center" onclick='window.location.href = "/panel/analytics/vocabulary/{{$dataObj->id}}"'>Track</button>
-														@endif
-													</div>
-												  </div>
-												</a>
-												
-												</div>
-                                                @if($overall_percentage > 0 && $overall_percentage != 100)
-                                                <div class="levels-progress horizontal">
-                                                    <span class="progress-box">
-                                                        <span class="progress-count" style="width: {{$overall_percentage}}%;"></span>
-                                                    </span>
+                                <div class="spell-levels {{$spell_quiz_completed}}">
+                                    <div class="spell-levels-top">
+                                        <div class="spell-top-left">
+                                            <h3 class="font-18 font-weight-bold">{{$dataObj->getTitleAttribute()}} <span class="progress-star {{$percentage_class}}"><img src="/assets/default/img/tick-white.png"></span></h3>
+                                            <div class="spell-links">
+                                            <a href="javascript:;" class="spell-popup-btn" data-heading="{{$dataObj->getTitleAttribute()}}" data-play_link="/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/" data-spell_type="word-hunts" data-spell_id="{{$dataObj->id}}">
+                                                Practice Words
+                                            </a>
+                                            
+                                            
+                                            <a href="javascript:;" class="spell-popup-btn1 rurera-tooltip dropup">
+                                            
+                                            <span class="dropdown-toggle h-100 w-100 d-flex align-items-center justify-content-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Take a test</span>
+                                            
+                                            <div class="lms-tooltip dropdown-menu">
+                                                <div class="tooltip-box">	
+                                                    <button data-heading="Take a test" class="tooltip-btn practice font-16 d-block mb-15 text-center spell-test-btn"  data-play_link="/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/test" data-spell_type="test">Take Test</button>
+                                                    @if($spell_test_count > 0)
+                                                        <button class="tooltip-btn legendary d-block font-16 text-center" onclick='window.location.href = "/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/test"'>Continue</button>
+                                                    @endif
+                                                    @if($spell_test_completed > 0)
+                                                        <button class="tooltip-btn practice font-16 d-block mt-15 text-center" onclick='window.location.href = "/panel/analytics/vocabulary/{{$dataObj->id}}"'>Track</button>
+                                                    @endif
                                                 </div>
-                                                @endif
+                                                </div>
+                                            </a>
+                                            
                                             </div>
-                                            <div class="spell-top-right">
-                                                <a href="/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><img src="/assets/default/img/skills-icon.png" alt=""><span>{{$total_questions}}</span>word(s)</a>
+                                            @if($overall_percentage > 0 && $overall_percentage != 100)
+                                            <div class="levels-progress horizontal">
+                                                <span class="progress-box">
+                                                    <span class="progress-count" style="width: {{$overall_percentage}}%;"></span>
+                                                </span>
                                             </div>
+                                            @endif
+                                        </div>
+                                        <div class="spell-top-right">
+                                            <a href="/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/spelling-list" class="words-count"><img src="/assets/default/img/skills-icon.png" alt=""><span>{{$total_questions}}</span>word(s)</a>
                                         </div>
                                     </div>
-                                    @endforeach
-
-
-
-
-
-
-
                                 </div>
+                                @endforeach
+
+
+
+
+
+
+
                             </div>
                         </div>
-                    </section>
-                </div>
+                    </div>
+                </section>
                 @endif
 
             </div>
