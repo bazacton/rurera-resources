@@ -1,8 +1,3 @@
-<style>
-    .hide{display:none;}
-    .above_12{display:none;}
-</style>
-
 <section class="p-25 panel-border border-bottom-4 border-radius-10 mb-30" style="background-color: #fff;">
     <div class="container">
 	<div class="row">

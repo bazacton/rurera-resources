@@ -5386,7 +5386,7 @@ p {line-height: 1.5;}
 .rtl #coverCropperContainer div.buttons {text-align: right;}
 .rurera-hide,
 .hide-sec,
-.hide {
+.hide, .above_12 {
     display: none;
 }
 

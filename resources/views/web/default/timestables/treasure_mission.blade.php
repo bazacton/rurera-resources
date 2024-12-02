@@ -1,8 +1,3 @@
-<style>
-    .hide{display:none;}
-    .above_12{display:none;}
-    .rurera-hide{display:none;}
-</style>
 @extends('web.default.panel.layouts.panel_layout')
 
 @section('content')

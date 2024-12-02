@@ -1,7 +1,3 @@
-<style>
-    .hide{display:none;}
-    .above_12{display:none;}
-</style>
 @extends('web.default.panel.layouts.panel_layout')
 
 @push('styles_top')
