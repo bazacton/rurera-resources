@@ -1189,7 +1189,7 @@ $rand_id = rand(999,99999);
                                                              class="disable-div"
                                                              _data-parent="1"
                                                              _data-parent-col="0" style="display: block;">
-                                                            <div class="question-layout">
+                                                            <div class="question-layout row">
                                                                 <div class="question-layout-data"></div>
                                                             </div>
 
