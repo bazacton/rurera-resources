@@ -251,6 +251,8 @@ Set Up Quiz Page Style Start
 }
 .mastery-options .field-option:last-child {
     border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 /* custom-switch style start */
 .custom-switch {cursor: pointer; display: block; align-items: center; margin: 0; }
