@@ -215,7 +215,6 @@
                                                         </span>
                                                         <span class="user-name">
                                                             Muhammad Rehan
-                                                            <em>2 attempts</em>
                                                         </span>
                                                     </div>
                                                 </td>
@@ -246,7 +245,7 @@
                                                                     <div class="round_per"></div>
                                                                 </div>
                                                                 <div class="circle_inbox">
-                                                                    <span class="percent_text">35%</span>
+                                                                    <span class="percent_text">50%</span>
                                                                 </div>
                                                             </div>
                                                         </div>
