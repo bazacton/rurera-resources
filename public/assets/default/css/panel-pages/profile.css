@@ -221,6 +221,12 @@ Set Up Quiz Page Style Start
     height: 25px;
     width: 25px;
 }
+.setup-quiz-card .select-field select {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    height: 42px;
+}
 /* custom-switch style start */
 .custom-switch {cursor: pointer; display: block; align-items: center; margin: 0; }
 .custom-switch-input {position: absolute; z-index: -1; opacity: 0;}
