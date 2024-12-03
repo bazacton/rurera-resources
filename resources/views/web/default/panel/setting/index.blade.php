@@ -30,12 +30,11 @@
                 <div class="setup-quiz-card mb-30 bg-white panel-border rounded-sm">
                     <div class="setup-quiz-header mb-15 p-20">
                         <h3>Set up your quiz</h3>
-                        
                     </div>
                     <div class="setup-quiz-content px-20">
                         <div class="content-heading d-flex align-items-center justify-content-between">
+                            <h4 class="font-weight-500">Set a start time for activity</h4>
                             <div class="form-group custom-switches-stacked mb-0">
-                                <h4 class="font-weight-500">Set a start time for activity</h4>
                                 <label class="custom-switch pl-0 mb-0">
                                     <input type="checkbox" name="review_required" id="review_required" value="1" class="custom-switch-input">
                                     <span class="custom-switch-indicator"></span>
