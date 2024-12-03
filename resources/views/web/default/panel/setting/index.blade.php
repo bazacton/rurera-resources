@@ -85,7 +85,7 @@
                     <div class="setup-quiz-content px-20 d-flex align-items-center justify-content-between">
                         <div class="content-heading">
                             <h4 class="font-weight-500">Set a start time for activity</h4>
-                            <span>The number of times a student can attempt the activity.</span>
+                            <span class="d-block pt-5">The number of times a student can attempt the activity.</span>
                         </div>
                         <div class="select-field">
                             <select>
