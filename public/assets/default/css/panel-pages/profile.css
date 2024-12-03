@@ -371,5 +371,14 @@ Set Up Quiz Page Style End
 .list-options li {
     font-size: 14px;
 }
+.list-options li img {
+    height: 12px;
+    width: 12px;
+    filter: invert(90%) sepia(8%) saturate(76%) hue-rotate(8deg) brightness(86%) contrast(85%);
+}
+.list-options li .icon-box {
+    line-height: 12px;
+    display: inline-block;
+}
 /* Quiz Set Up Listings style end */
 
