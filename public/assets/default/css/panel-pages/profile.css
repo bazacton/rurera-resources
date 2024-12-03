@@ -395,7 +395,7 @@ Set Up Quiz Page Style End
 .author-info .info-text span:before {
     content: "";
     position: absolute;
-    left: 5px;
+    left: 4px;
     top: 50%;
     height: 4px;
     width: 4px;
