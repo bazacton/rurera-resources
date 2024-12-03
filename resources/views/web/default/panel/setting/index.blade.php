@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="setup-quiz-content">
-                        <h4>Set a start time for activity</h4>
+                        <h4 class="font-weight-500">Set a start time for activity</h4>
                         <div class=""></div>
                     </div>
                 </div>
