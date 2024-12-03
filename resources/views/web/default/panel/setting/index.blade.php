@@ -168,6 +168,18 @@
                             </div>
                         </div>
                     </div>
+                    <div class="setup-quiz-content px-20 d-flex align-items-center justify-content-between">
+                        <div class="content-heading">
+                            <h4 class="font-weight-500">Adaptive Question Bank Mode</h4>
+                            <span class="d-block pt-5">Creates distince set of questions for every quiz attempt. <a href="#">See how it works</a></span>
+                        </div>
+                        <div class="select-field">
+                            <select>
+                                <option value="Unlimited">Off</option>
+                                <option value="Limited">On</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
