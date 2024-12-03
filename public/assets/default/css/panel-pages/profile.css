@@ -626,14 +626,14 @@ New Quiz Page Style Start
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 15px;
+    gap: 20px;
 }
 .quiz-status {
-    padding: 15px 15px;
+    padding: 15px;
 }
 .quiz-status ul li {
     position: relative;
-    padding-left: 25px;
+    padding-left: 28px;
     color: #787d84;
     font-size: 14px;
 }
