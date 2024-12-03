@@ -112,7 +112,7 @@
                                 </label>
                             </div>
                         </div>
-                        <span class="timer-off">Turn off <em>timer</em> to enable feature</span>
+                        <span class="timer-off d-block mb-20">Turn off <em>timer</em> to enable feature</span>
                         <div class="mastery-options">
                             <div class="field-option">
                                 <span>Mastery goal</span>
