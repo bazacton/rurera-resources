@@ -31,7 +31,7 @@
                     <div class="setup-quiz-header mb-15 p-20">
                         <h3>Set up your quiz</h3>
                     </div>
-                    <div class="setup-quiz-content px-20">
+                    <div class="setup-quiz-content px-20 mb-25">
                         <div class="content-heading d-flex align-items-center justify-content-between mb-25">
                             <h4 class="font-weight-500">Set a start time for activity</h4>
                             <div class="form-group custom-switches-stacked mb-0">
@@ -83,7 +83,7 @@
                         </span>
                     </div>
                     <div class="setup-quiz-content px-20 d-flex align-items-center justify-content-between">
-                        <div class="content-heading mb-25">
+                        <div class="content-heading">
                             <h4 class="font-weight-500">Set a start time for activity</h4>
                             <span>The number of times a student can attempt the activity.</span>
                         </div>
