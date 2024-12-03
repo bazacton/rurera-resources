@@ -145,6 +145,7 @@
                                                 <th>Accuracy</th>
                                                 <th>Points</th>
                                                 <th>Score</th>
+                                                <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
