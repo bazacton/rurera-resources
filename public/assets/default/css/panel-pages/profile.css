@@ -257,6 +257,13 @@ Set Up Quiz Page Style Start
 .mastery-options .field-option span {
     font-weight: 500;
 }
+.mastery-options select {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: #bbb;
+}
 /* custom-switch style start */
 .custom-switch {cursor: pointer; display: block; align-items: center; margin: 0; }
 .custom-switch-input {position: absolute; z-index: -1; opacity: 0;}
