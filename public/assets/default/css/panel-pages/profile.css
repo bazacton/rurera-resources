@@ -411,3 +411,36 @@ Set Up Quiz Page Style End
 }
 /* Quiz Set Up Listings style end */
 
+/*************************************
+New Quiz Page Style Start
+**************************************/
+
+/* Quiz categories style start */
+.categories-card {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.categories-card .icon-box {
+    height: 45px;
+    width: 45px;
+    display: inline-flex;
+    background-color: #f2f2f2;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+.categories-card .icon-box img {
+    max-width: 100%;
+}
+/* Quiz categories style end */
+
+/*************************************
+New Quiz Page Style End
+**************************************/
+
