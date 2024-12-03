@@ -59,7 +59,7 @@
                                 </select>
                             </div>
                             <span class="comma mx-10">:</span>
-                            <div class="select-field">
+                            <div class="select-field mr-10">
                                 <select>
                                     <option value="00">00</option>
                                     <option value="02">02</option>
