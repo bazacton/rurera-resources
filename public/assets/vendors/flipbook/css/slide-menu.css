@@ -574,7 +574,7 @@ background-color: #000000;
   position: relative;
   z-index: 111;
 }
-/*Price-Packages Leave-Option Modal Style Start*/
+/*Leave-Option Modal Style Start*/
 .leave-option-content .img-box {width: 100px; display: inline-block; margin: 0 auto 20px;}
 .leave-option-content .img-box img {max-width: 100%; object-fit: contain; max-height: max-content;}
 .leave-option-content {text-align: center;}
@@ -583,7 +583,10 @@ background-color: #000000;
 .leave-option-control button:hover {background-color: var(--blue); color: var(--white);}
 .leave-option-control button.stay-btn {background-color: var(--blue); color: var(--white);}
 .leave-option-modal .close {position: absolute; right: 12px; top: 10px; z-index: 1;}
-/*Price-Packages Leave-Option Modal Style End*/
+.leave-option-modal .modal-body {
+  padding: 30px;
+}
+/*Leave-Option Modal Style End*/
 /* Responsive Style */
 @media only screen and (max-width: 576px)  {
   .flipbook-slide-menu,
