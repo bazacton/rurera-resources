@@ -758,6 +758,12 @@ New Quiz Page Style Start
     background-color: #9bd0ff;
     color: #2971b2;
 }
+.attempt-numbers i {
+    font-style: normal;
+    font-size: 8px;
+    font-weight: 600;
+    margin-right: 5px;
+}
 
 /*************************************
 New Quiz Page Style End
