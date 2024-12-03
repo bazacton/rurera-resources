@@ -1512,7 +1512,8 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .nav .nav-link.waiting {
     color: #bbb;
 }
-.edit-questions-tabs .nav .nav-link.active.waiting {
+.edit-questions-tabs .nav .nav-link.active.waiting,
+.edit-questions-tabs .nav .nav-link.active.api_pending {
     border-bottom-color: #bbb;
 }
 .edit-questions-tabs .nav .nav-link.api_pending {
