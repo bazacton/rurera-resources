@@ -114,7 +114,7 @@
                         </div>
                         <span class="timer-off d-block mb-20">Turn off <em>timer</em> to enable feature</span>
                         <div class="mastery-options">
-                            <div class="field-option">
+                            <div class="field-option d-flex align-items-center justify-content-between">
                                 <span>Mastery goal</span>
                                 <div class="select-box">
                                     <select>
@@ -126,7 +126,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="field-option">
+                            <div class="field-option d-flex align-items-center justify-content-between">
                                 <span>Reattempts per question</span>
                                 <div class="select-box">
                                     <select>
