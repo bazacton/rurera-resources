@@ -46,6 +46,7 @@
                                 <button type="button"><img src="/assets/default/svgs/calendar.svg" alt=""></button>
                                 <input type="text" placeholder="Tuesday December 3">
                             </div>
+                            <span class="comma mx-10">,</span>
                             <div class="select-field">
                                 <select>
                                     <option value="12">12</option>
@@ -57,7 +58,7 @@
                                     <option value="18">18</option>
                                 </select>
                             </div>
-                            <span class="comma">:</span>
+                            <span class="comma mx-10">:</span>
                             <div class="select-field">
                                 <select>
                                     <option value="00">00</option>
