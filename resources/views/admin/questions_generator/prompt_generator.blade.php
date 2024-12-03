@@ -99,7 +99,7 @@
 						<!-- Grade Selection -->
 						<input type="hidden" name="grade" id="grade1" value="7">
 						<!-- Question Type -->
-						<label>Question Type (optional):</label>
+						<label>Question Type:</label>
 						<div class="list-group list-in-row">
 							<div class="row-field">
 								<input type="radio" name="question_type" data-condition_key="question_type" class="conditional-parent" id="type_mc" value="multiple-choice" checked>
