@@ -648,16 +648,20 @@ New Quiz Page Style Start
     margin-top: -10px;
     border-radius: 3px;
 }
-.quiz-status ul li.correct:before {
+.quiz-status ul li.correct:before,
+.user-attempt-status li.correct span {
     background-color: #00ca85;
 }
-.quiz-status ul li.pending:before {
+.quiz-status ul li.pending:before,
+.user-attempt-status li.pending span {
     background-color: #1a7556;
 }
-.quiz-status ul li.incorrect:before {
+.quiz-status ul li.incorrect:before,
+.user-attempt-status li.incorrect span {
     background-color: #f23b69;
 }
-.quiz-status ul li.urgent:before {
+.quiz-status ul li.urgent:before,
+.user-attempt-status li.urgent span {
     background-color: #2971b2;
 }
 
@@ -697,6 +701,35 @@ New Quiz Page Style Start
 }
 .participants-table td {
     padding: 10px 15px;
+}
+.participants-table .user-info .user-name {
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.participants-table .user-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.participants-table .user-info em {
+    font-style: normal;
+    color: #787d84;
+}
+.user-attempt-status ul {
+    display: flex;
+    align-items: center;
+}
+.user-attempt-status li span {
+    min-width: 50px;
+    min-height: 20px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.user-attempt-status li {
+    line-height: 20px;
 }
 
 /*************************************
