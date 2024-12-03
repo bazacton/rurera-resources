@@ -65,9 +65,12 @@
             <div class="panel-content">
                 <div class="container">
                     <div class="row">
+                        <!-- Panel Content Start -->
                         <div class="col-12 col-sm-12 col-md-12 col-lg-8 panel-content-holder">
                             @yield('content')
                         </div>
+                        <!-- Panel Content End -->
+                        <!-- Panel Right Sidebar Start -->
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 panel-right-sidebar">
                             <div class="row">
                                 <div class="col-12 col-lg-12">
@@ -934,7 +937,8 @@
 
                             </div>
 
-                    </div>
+                        </div>
+                        <!-- Panel Right Sidebar Start -->
                     </div>
                 </div>
             </div>
