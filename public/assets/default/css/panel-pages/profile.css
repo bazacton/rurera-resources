@@ -227,6 +227,10 @@ Set Up Quiz Page Style Start
     padding: 5px 10px;
     height: 42px;
 }
+.setup-quiz-content {
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 25px;
+}
 /* custom-switch style start */
 .custom-switch {cursor: pointer; display: block; align-items: center; margin: 0; }
 .custom-switch-input {position: absolute; z-index: -1; opacity: 0;}
