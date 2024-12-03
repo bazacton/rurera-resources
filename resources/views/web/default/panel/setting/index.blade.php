@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="setup-quiz-card">
+                        <div class="setup-quiz-card mb-30 bg-white panel-border rounded-sm p-25">
                             <div class="setup-quiz-header">
                                 <h3>Set up your quiz</h3>
                                 <div class="form-group custom-switches-stacked px-10 pt-15 pb-10">
