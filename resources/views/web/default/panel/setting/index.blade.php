@@ -95,11 +95,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="setup-quiz-card mb-30 bg-white panel-border rounded-sm disabled-quiz">
+                <div class="setup-quiz-card mb-30 bg-white panel-border rounded-sm">
                     <div class="setup-quiz-header mb-15 p-20">
                         <h3>Mastery and learning</h3>
                     </div>
-                    <div class="setup-quiz-content px-20 mb-25">
+                    <div class="setup-quiz-content px-20 mb-25 disabled-quiz">
                         <div class="content-heading d-flex align-items-center justify-content-between mb-25">
                             <div class="heading-box">
                                 <h4 class="font-weight-500">Mastery mode</h4>
