@@ -384,5 +384,30 @@ Set Up Quiz Page Style End
     line-height: 12px;
     display: inline-block;
 }
+.author-info .info-text {
+    padding-left: 10px;
+    font-size: 14px;
+}
+.author-info .info-text span {
+    position: relative;
+    padding: 0 0 0 10px;
+}
+.author-info .info-text span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 5px;
+    width: 5px;
+    background-color: #64748b;
+    border-radius: 100%;
+    margin-top: -2px;
+}
+.author-info .info-text span:first-child {
+    padding-left: 0;
+}
+.author-info .info-text span:first-child:before {
+    display: none;
+}
 /* Quiz Set Up Listings style end */
 
