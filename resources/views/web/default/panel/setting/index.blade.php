@@ -140,7 +140,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="setup-quiz-content">
+                    <div class="setup-quiz-content px-20">
                         <div class="content-heading d-flex align-items-center justify-content-between mb-25">
                             <div class="heading-box">
                                 <h4 class="font-weight-500">Redemption questions</h4>
