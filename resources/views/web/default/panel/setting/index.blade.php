@@ -64,7 +64,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="listing-card">
+                        <div class="listing-card mb-30 bg-white panel-border rounded-sm">
                             <div class="img-holder">
                                 <figure>
                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
