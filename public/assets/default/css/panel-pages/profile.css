@@ -278,6 +278,16 @@ Set Up Quiz Page Style Start
     padding: 8px 15px;
     border-radius: 5px;
 }
+.assign-btn {
+    background-color: #6f42c1;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px 15px;
+    width: 100%;
+    font-weight: 500;
+    border-bottom: 5px solid #b58eff;
+}
 /* custom-switch style start */
 .custom-switch {cursor: pointer; display: block; align-items: center; margin: 0; }
 .custom-switch-input {position: absolute; z-index: -1; opacity: 0;}
