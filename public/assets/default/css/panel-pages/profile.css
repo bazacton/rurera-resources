@@ -268,6 +268,13 @@ Set Up Quiz Page Style Start
     color: var(--blue);
     text-decoration: underline;
 }
+.select-btn {
+    background-color: var(--indigo);
+    color: #fff;
+    border: 0;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
 /* custom-switch style start */
 .custom-switch {cursor: pointer; display: block; align-items: center; margin: 0; }
 .custom-switch-input {position: absolute; z-index: -1; opacity: 0;}
