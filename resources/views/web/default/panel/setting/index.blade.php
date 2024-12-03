@@ -95,6 +95,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="setup-quiz-card">
+                    
+                </div>
             </div>
         </div>
     </div>
