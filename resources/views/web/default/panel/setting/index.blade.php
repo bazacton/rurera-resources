@@ -51,17 +51,17 @@
                         <div class="listing-filters">
                             <div class="filter-box">
                                 <span class="icon-box"></span>
-                                <section>
+                                <select>
                                     <option value="All">All</option>
-                                </section>
+                                </select>
                             </div>
                             <div class="filter-box">
                                 <span class="icon-box"></span>
-                                <section>
+                                <select>
                                     <option value="Most recent">Most recent</option>
                                     <option value="Least recent">Least recent</option>
                                     <option value="Least recent">Alphabetical</option>
-                                </section>
+                                </select>
                             </div>
                         </div>
                         <div class="listing-card">
