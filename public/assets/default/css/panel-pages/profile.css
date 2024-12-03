@@ -343,8 +343,8 @@ Set Up Quiz Page Style End
     width: calc(100% - 135px);
 }
 .listing-card .author-info img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 100%;
     object-fit: cover;
 }
