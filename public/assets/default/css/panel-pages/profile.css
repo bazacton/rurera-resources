@@ -616,6 +616,50 @@ New Quiz Page Style Start
     gap: 6px;
 }
 
+
+.participants-holder {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.quiz-status ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.quiz-status {
+    padding: 15px 15px;
+}
+.quiz-status ul li {
+    position: relative;
+    padding-left: 25px;
+    color: #787d84;
+    font-size: 14px;
+}
+.quiz-status ul li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 20px;
+    width: 20px;
+    margin-top: -10px;
+    border-radius: 3px;
+}
+.quiz-status ul li.correct:before {
+    background-color: #00ca85;
+}
+.quiz-status ul li.pending:before {
+    background-color: #1a7556;
+}
+.quiz-status ul li.incorrect:before {
+    background-color: #f23b69;
+}
+.quiz-status ul li.urgent:before {
+    background-color: #2971b2;
+}
+
 /*************************************
 New Quiz Page Style End
 **************************************/
