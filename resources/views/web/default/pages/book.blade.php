@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/flipbook.style.css">
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/slide-menu.css">
+<link rel="stylesheet" type="text/css" href="/assets/admin/vendor/bootstrap/bootstrap.css">
 <script src="/assets/vendors/flipbook/js/flipbook.min.js?ver={{$random_id}}"></script>
 <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 <script src="/assets/default/js/book.js?ver={{$random_id}}"></script>
