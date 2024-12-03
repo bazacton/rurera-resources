@@ -699,6 +699,12 @@ New Quiz Page Style Start
 .participants-table th:first-child {
     padding-left: 50px;
 }
+.participants-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+.participants-table tbody tr:last-child {
+    border-bottom: 0;
+}
 .participants-table td {
     padding: 10px 15px;
 }
