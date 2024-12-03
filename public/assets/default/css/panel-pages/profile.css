@@ -191,6 +191,11 @@ Dashboard Account Settings Pages Style End
 /*************************************
 Set Up Quiz Page Style Start
 **************************************/
+.setup-quiz-header {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+    border-radius: .625rem .625rem 0 0;
+}
 /* custom-switch style start */
 .custom-switch {cursor: pointer; display: block; align-items: center; margin: 0; }
 .custom-switch-input {position: absolute; z-index: -1; opacity: 0;}
