@@ -34,7 +34,7 @@
                         <div class="setup-quiz-card mb-30 bg-white panel-border rounded-sm p-25">
                             <div class="setup-quiz-header">
                                 <h3>Set up your quiz</h3>
-                                <div class="form-group custom-switches-stacked px-10 pt-15 pb-10">
+                                <div class="form-group custom-switches-stacked">
                                     <label class="custom-switch pl-0">
                                         <input type="checkbox" name="review_required" id="review_required" value="1" class="custom-switch-input">
                                         <span class="custom-switch-indicator"></span>
