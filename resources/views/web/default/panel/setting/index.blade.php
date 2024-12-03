@@ -97,6 +97,20 @@
                 </div>
                 <div class="setup-quiz-card mb-30 bg-white panel-border rounded-sm">
                     <div class="setup-quiz-header mb-15 p-20">
+                        <h3>Game Assignment Settings</h3>
+                    </div>
+                    <div class="content-heading d-flex align-items-center justify-content-between">
+                        <div class="heading-box">
+                            <h4 class="font-weight-500">Assign to a class <span>optional</span></h4>
+                            <span class="d-block pt-5">You have 1 class</span>
+                        </div>
+                        <div class="btn-holder">
+                            <button type="button" class="select-btn">Select a class</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="setup-quiz-card mb-30 bg-white panel-border rounded-sm">
+                    <div class="setup-quiz-header mb-15 p-20">
                         <h3>Mastery and learning</h3>
                     </div>
                     <div class="setup-quiz-content px-20 mb-25 disabled-quiz">
