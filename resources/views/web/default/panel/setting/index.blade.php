@@ -21,6 +21,78 @@
 
 @section('content')
     <div class="row">
+        <div class="col-12">
+            <div class="quiz-setup-listings">
+                <div class="row">
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <div class="quiz-setup-sidenav">
+                            <h3>My library</h3>
+                            <ul>
+                                <li>
+                                    <a href="#"><span class="icon-box"></span> Created by me</a>
+                                    <span class="count-number">1</span>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="icon-box"></span> Imported</a>
+                                    <span class="count-number">0</span>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="icon-box"></span> Perviously used</a>
+                                    <span class="count-number">0</span>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="icon-box"></span> Liked by me</a>
+                                    <span class="count-number">0</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8 col-md-12">
+                        <div class="listing-filters">
+                            <div class="filter-box">
+                                <span class="icon-box"></span>
+                                <section>
+                                    <option value="All">All</option>
+                                </section>
+                            </div>
+                            <div class="filter-box">
+                                <span class="icon-box"></span>
+                                <section>
+                                    <option value="Most recent">Most recent</option>
+                                    <option value="Least recent">Least recent</option>
+                                    <option value="Least recent">Alphabetical</option>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="listing-card">
+                            <div class="img-holder">
+                                <figure>
+                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                </figure>
+                            </div>
+                            <div class="text-holder">
+                                <span class="listing-lable">Assesment</span>
+                                <h3><a href="#">Sciency Science</a></h3>
+                                <ul class="list-options">
+                                    <li><span></span> 8 questions</li>
+                                    <li><span></span> 1st-4th Grade</li>
+                                    <li><span></span> Science</li>
+                                </ul>
+                                <div class="author-info">
+                                    <span class="img-box"><img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt=""></span>
+                                    <span class="info-text">
+                                        <span>Kaiser K</span>
+                                        <span>2 hours ago</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-lg-8 col-md-8 col-12 mx-auto">
             <div class="setup-quiz-body">
                 <div class="section-title text-center mb-30">
