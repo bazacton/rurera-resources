@@ -1515,6 +1515,9 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .nav .nav-link.active.waiting {
     border-bottom-color: #bbb;
 }
+.edit-questions-tabs .nav .nav-link.api_pending {
+    color: #bbb;
+}
 .edit-questions-tabs .move-up-keyword {
     color: #fff;
     background-color: #4CAF50;
