@@ -41,8 +41,45 @@
                                 </label>
                             </div>
                         </div>
-                        
-                        <div class=""></div>
+                        <div class="fields-holder">
+                            <div class="input-field">
+                                <button type="button"><img src="/assets/default/svgs/calendar.svg" alt=""></button>
+                                <input type="text" placeholder="Tuesday December 3">
+                            </div>
+                            <div class="select-field">
+                                <select>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                </select>
+                            </div>
+                            <span class="comma">:</span>
+                            <div class="select-field">
+                                <select>
+                                    <option value="00">00</option>
+                                    <option value="02">02</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                </select>
+                            </div>
+                            <div class="select-field">
+                                <select>
+                                    <option value="PM">PM</option>
+                                    <option value="AM">AM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <span>
+                            <em>37 minutes</em>
+                            from now
+                        </span>
                     </div>
                 </div>
             </div>
