@@ -174,9 +174,9 @@
                                                             <li class="urgent"><span></span></li>
                                                         </ul>
                                                         <div class="attempt-numbers">
-                                                            <span class="correct">3</span>
-                                                            <span class="incorrect">1</span>
-                                                            <span class="urgent">2</span>
+                                                            <span class="correct"><i>&#10003;</i> 3</span>
+                                                            <span class="incorrect"><i>&#10005;</i> 1</span>
+                                                            <span class="urgent"><i>&#10003;</i> 2</span>
                                                         </div>
                                                     </div>
                                                 </td>
