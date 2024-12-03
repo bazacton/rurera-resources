@@ -264,6 +264,10 @@ Set Up Quiz Page Style Start
     border-radius: 5px;
     color: #bbb;
 }
+.content-heading span a {
+    color: var(--blue);
+    text-decoration: underline;
+}
 /* custom-switch style start */
 .custom-switch {cursor: pointer; display: block; align-items: center; margin: 0; }
 .custom-switch-input {position: absolute; z-index: -1; opacity: 0;}
