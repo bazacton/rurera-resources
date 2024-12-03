@@ -268,6 +268,9 @@ Set Up Quiz Page Style Start
     color: var(--blue);
     text-decoration: underline;
 }
+.setup-quiz-content .heading-box h4 span {
+    color: #999;
+}
 .select-btn {
     background-color: var(--indigo);
     color: #fff;

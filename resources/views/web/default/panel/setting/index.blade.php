@@ -102,7 +102,7 @@
                     <div class="setup-quiz-content px-20">
                         <div class="content-heading d-flex align-items-center justify-content-between">
                             <div class="heading-box">
-                                <h4 class="font-weight-500">Assign to a class <span>optional</span></h4>
+                                <h4 class="font-weight-500">Assign to a class <span>(optional)</span></h4>
                                 <span class="d-block pt-5">You have 1 class</span>
                             </div>
                             <div class="btn-holder">
