@@ -90,7 +90,7 @@
             </div>
             <div class="elements-holder mb-30 bg-white panel-border rounded-sm">
                 <div class="quiz-tabs">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <ul class="nav" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="participants-tab" data-toggle="tab" data-target="#participants" type="button" role="tab" aria-controls="participants" aria-selected="true">Participants</button>
                         </li>
