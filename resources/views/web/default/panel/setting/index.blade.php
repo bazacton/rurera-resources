@@ -95,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="setup-quiz-card mb-30 bg-white panel-border rounded-sm">
+                <div class="setup-quiz-card mb-30 bg-white panel-border rounded-sm disabled-quiz">
                     <div class="setup-quiz-header mb-15 p-20">
                         <h3>Mastery and learning</h3>
                     </div>
