@@ -95,8 +95,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="setup-quiz-card">
-                    
+                <div class="setup-quiz-card mb-30 bg-white panel-border rounded-sm">
+                    <div class="setup-quiz-header mb-15 p-20">
+                        <h3>Mastery and learning</h3>
+                    </div>
+                    <div class="setup-quiz-content px-20 mb-25">
+                        <div class="content-heading d-flex align-items-center justify-content-between mb-25">
+                            <h4 class="font-weight-500">Mastery mode</h4>
+                            <div class="form-group custom-switches-stacked mb-0">
+                                <label class="custom-switch pl-0 mb-0">
+                                    <input type="checkbox" name="review_required" id="review_required" value="1" class="custom-switch-input">
+                                    <span class="custom-switch-indicator"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
