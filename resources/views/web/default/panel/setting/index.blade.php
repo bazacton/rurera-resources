@@ -103,7 +103,7 @@
                         <div class="content-heading d-flex align-items-center justify-content-between mb-25">
                             <div class="heading-box">
                                 <h4 class="font-weight-500">Mastery mode</h4>
-                                <span>Achieve mastery by allowing students to reattempt incorrect awensors <br> till they reach the set goal</span>
+                                <span class="d-block pt-5">Achieve mastery by allowing students to reattempt incorrect awensors <br> till they reach the set goal</span>
                             </div>
                             <div class="form-group custom-switches-stacked mb-0">
                                 <label class="custom-switch pl-0 mb-0">
