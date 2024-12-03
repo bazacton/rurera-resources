@@ -23,7 +23,7 @@
     <div class="row">
         <div class="col-12">
             <div class="elements-holder mb-30 bg-white panel-border rounded-sm p-15">
-                <div class="dashboard-categories">
+                <div class="quiz-categories mb-25">
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="categories-card">
