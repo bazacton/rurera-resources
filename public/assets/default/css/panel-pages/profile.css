@@ -304,4 +304,24 @@ Set Up Quiz Page Style Start
 /*************************************
 Set Up Quiz Page Style End
 **************************************/
+/* Quiz Set Up Listings style Start */
+.listing-filters {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0 0 25px;
+}
+.listing-filters select {
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #999;
+}
+.filter-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+/* Quiz Set Up Listings style end */
 
