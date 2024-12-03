@@ -525,6 +525,11 @@ New Quiz Page Style Start
     border-radius: 3px;
     font-size: 14px;
     margin: 0 5px 0 0;
+    display: inline-flex;
+    align-items: center;
+}
+.class-controls button .icon-box {
+    margin-right: 8px;
 }
 .class-controls .class-controls-option img {
     height: 18px;
