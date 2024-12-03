@@ -41,7 +41,7 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="fields-holder">
+                        <div class="fields-holder mb-25">
                             <div class="input-field">
                                 <button type="button"><img src="/assets/default/svgs/calendar.svg" alt=""></button>
                                 <input type="text" placeholder="Tuesday December 3">
@@ -77,7 +77,7 @@
                                 </select>
                             </div>
                         </div>
-                        <span>
+                        <span class="time-info d-block text-center">
                             <em>37 minutes</em>
                             from now
                         </span>
