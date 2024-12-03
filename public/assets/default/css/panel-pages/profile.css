@@ -438,6 +438,10 @@ New Quiz Page Style Start
 .categories-card .icon-box img {
     max-width: 100%;
 }
+.categories-card .text-holder {
+    display: flex;
+    flex-direction: column;
+}
 /* Quiz categories style end */
 
 /*************************************
