@@ -224,8 +224,8 @@
 </script>
 
 <div id="container">
-        <div class="menu-cross-btn" data-toggle="modal" data-target="#leave-option-modal">
-            <a href="/books"><i class="fa fa-times"></i></a>
+        <div class="menu-cross-btn">
+            <a href="#" data-toggle="modal" data-target="#leave-option-modal"><i class="fa fa-times"></i></a>
         </div>
         <div class="infolinks-data"></div>
 
