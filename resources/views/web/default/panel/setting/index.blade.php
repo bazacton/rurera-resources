@@ -140,11 +140,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="setup-quiz-content px-20">
+                    <div class="setup-quiz-content px-20 mb-25">
                         <div class="content-heading d-flex align-items-center justify-content-between mb-25">
                             <div class="heading-box">
                                 <h4 class="font-weight-500">Redemption questions</h4>
                                 <span class="d-block pt-5">Allow students to reattemt a few incorrect questions.</span>
+                            </div>
+                            <div class="form-group custom-switches-stacked mb-0">
+                                <label class="custom-switch pl-0 mb-0">
+                                    <input type="checkbox" name="review_required" id="review_required" value="1" class="custom-switch-input">
+                                    <span class="custom-switch-indicator"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setup-quiz-content px-20 mb-25">
+                        <div class="content-heading d-flex align-items-center justify-content-between mb-25">
+                            <div class="heading-box">
+                                <h4 class="font-weight-500">Redemption quiz</h4>
+                                <span class="d-block pt-5">Allow students to awensor all incorrect questions at the end to improve accuracy.</span>
                             </div>
                             <div class="form-group custom-switches-stacked mb-0">
                                 <label class="custom-switch pl-0 mb-0">
