@@ -88,7 +88,7 @@
                     </div>
                 </div>
             </div>
-            <div class="elements-holder mb-30 bg-white panel-border rounded-sm p-15">
+            <div class="elements-holder mb-30 bg-white panel-border rounded-sm">
                 <div class="quiz-tabs">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
