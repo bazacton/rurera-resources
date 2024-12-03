@@ -378,7 +378,7 @@ Set Up Quiz Page Style End
 .list-options li img {
     height: 12px;
     width: 12px;
-    filter: invert(90%) sepia(8%) saturate(76%) hue-rotate(8deg) brightness(86%) contrast(85%);
+    filter: invert(17%) sepia(9%) saturate(17%) hue-rotate(347deg) brightness(103%) contrast(94%);
 }
 .list-options li .icon-box {
     line-height: 12px;
