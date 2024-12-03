@@ -510,6 +510,44 @@ New Quiz Page Style Start
     font-weight: 500;
 }
 /* Class-Insight style end */
+
+/* Class-controls style start */
+.class-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.class-controls button {
+    background-color: #f3f1f4;
+    border: 0;
+    padding: 8px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 0 5px 0 0;
+}
+.class-controls-option img {
+    height: 18px;
+    width: 18px;
+}
+.class-controls .right-area {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.class-controls button img {
+    height: 15px;
+    width: 15px;
+}
+.class-controls-option {
+    margin-right: 15px;
+    border-right: 1px solid #ddd;
+    padding-right: 15px;
+}
+.class-controls .class-controls-option button {
+}
+/* Class-controls style end */
+
 /*************************************
 New Quiz Page Style End
 **************************************/
