@@ -35,7 +35,7 @@
                             <div class="setup-quiz-header d-flex align-items-center justify-content-between">
                                 <h3>Set up your quiz</h3>
                                 <div class="form-group custom-switches-stacked mb-0">
-                                    <label class="custom-switch pl-0">
+                                    <label class="custom-switch pl-0 mb-0">
                                         <input type="checkbox" name="review_required" id="review_required" value="1" class="custom-switch-input">
                                         <span class="custom-switch-indicator"></span>
                                     </label>
