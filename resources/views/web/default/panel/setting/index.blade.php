@@ -93,7 +93,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-8 col-md-8 col-12 mx-auto">
+        <div class="col-lg-12 col-md-12 col-12 mx-auto">
             <div class="setup-quiz-body">
                 <div class="section-title text-center mb-30">
                     <h2>Sciency Science</h2>
