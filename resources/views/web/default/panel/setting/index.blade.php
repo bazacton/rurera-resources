@@ -23,29 +23,23 @@
     <div class="row">
         <div class="col-lg-8 col-md-8 col-12 mx-auto">
             <div class="setup-quiz-body">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="section-title text-center mb-30">
-                            <h2>Sciency Science</h2>
-                            <span>8 questions</span>
+                <div class="section-title text-center mb-30">
+                    <h2>Sciency Science</h2>
+                    <span>8 questions</span>
+                </div>
+                <div class="setup-quiz-card mb-30 bg-white panel-border rounded-sm py-25">
+                    <div class="setup-quiz-header d-flex align-items-center justify-content-between mb-15">
+                        <h3>Set up your quiz</h3>
+                        <div class="form-group custom-switches-stacked mb-0">
+                            <label class="custom-switch pl-0 mb-0">
+                                <input type="checkbox" name="review_required" id="review_required" value="1" class="custom-switch-input">
+                                <span class="custom-switch-indicator"></span>
+                            </label>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="setup-quiz-card mb-30 bg-white panel-border rounded-sm py-25">
-                            <div class="setup-quiz-header d-flex align-items-center justify-content-between mb-15">
-                                <h3>Set up your quiz</h3>
-                                <div class="form-group custom-switches-stacked mb-0">
-                                    <label class="custom-switch pl-0 mb-0">
-                                        <input type="checkbox" name="review_required" id="review_required" value="1" class="custom-switch-input">
-                                        <span class="custom-switch-indicator"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="setup-quiz-content">
-                                <h4>Set a start time for activity</h4>
-                                <div class=""></div>
-                            </div>
-                        </div>
+                    <div class="setup-quiz-content">
+                        <h4>Set a start time for activity</h4>
+                        <div class=""></div>
                     </div>
                 </div>
             </div>
