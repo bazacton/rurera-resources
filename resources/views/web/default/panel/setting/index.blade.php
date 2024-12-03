@@ -197,6 +197,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="bg-white panel-border rounded-sm setup-quiz-btn">
+                    <button type="submit" class="assign-btn">Assign</button>
+                </div>
             </div>
         </div>
     </div>
