@@ -732,6 +732,12 @@ New Quiz Page Style Start
 .user-attempt-status li {
     line-height: 20px;
 }
+.attempt-numbers {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    flex-wrap: wrap;
+}
 .attempt-numbers span {
     font-size: 12px;
     padding: 2px 10px;
