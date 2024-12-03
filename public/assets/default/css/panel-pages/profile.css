@@ -549,9 +549,72 @@ New Quiz Page Style Start
     border-right: 1px solid #ddd;
     padding-right: 15px;
 }
-.class-controls .class-controls-option button {
-}
 /* Class-controls style end */
+
+.quiz-tabs .nav-link {
+    background-color: inherit;
+    border: 0;
+    color: #787d84;
+    border-bottom: 3px solid transparent;
+    font-weight: 500;
+    padding: 15px 20px;
+}
+.quiz-tabs .nav-link.active {
+    border-bottom-color: var(--blue);
+    color: var(--blue);
+}
+.quiz-tabs .nav {
+    padding: 0 15px;
+}
+.quiz-tabs .tab-content {
+    background-color: #f9f9f9;
+    padding: 25px;
+}
+.quiz-filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+.quiz-filters .select-box {
+    font-size: 14px;
+    color: #787d84;
+}
+.quiz-filters select {
+    border: 1px solid #ddd;
+    padding: 4px 5px;
+    border-radius: 3px;
+    min-width: 80px;
+    min-height: 32px;
+    font-size: 14px;
+}
+.accuracy-btn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    height: 32px;
+    width: 32px;
+}
+.accuracy-btn img {
+    height: 15px;
+    width: 15px;
+}
+.sorting-lable {
+    font-size: 14px;
+    color: #787d84;
+}
+.sorting-by-filters select {
+    min-width: 150px;
+}
+.sorting-by-filters {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
 
 /*************************************
 New Quiz Page Style End
