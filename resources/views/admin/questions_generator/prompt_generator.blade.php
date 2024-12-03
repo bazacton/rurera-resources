@@ -94,6 +94,35 @@
 													   for="generate_for_all">Generate for All (with Questions also)</label>
 										</label>
 									</div>
+									
+					<div class="form-group">
+						<!-- Grade Selection -->
+						<input type="hidden" name="grade" id="grade1" value="7">
+						<!-- Question Type -->
+						<label>Question Type (optional):</label>
+						<div class="list-group list-in-row">
+							<div class="row-field">
+								<input type="radio" name="question_type" data-condition_key="question_type" class="conditional-parent" id="type_mc" value="multiple-choice" checked>
+								<label for="type_mc">Multiple Choice</label>
+							</div>
+							<div class="row-field">
+								<input type="radio" name="question_type" data-condition_key="question_type" class="conditional-parent" id="type_tf" value="true-false">
+								<label for="type_tf">True or False</label>
+							</div>
+							<div class="row-field">
+								<input type="radio" name="question_type" data-condition_key="question_type" class="conditional-parent" id="type_oq" value="open-question">
+								<label for="type_oq">Open Question</label>
+							</div>
+							<div class="row-field">
+								<input type="radio" name="question_type" data-condition_key="question_type" class="conditional-parent" id="type_fill" value="fill-in-the-blank">
+								<label for="type_fill">Fill in the Blank</label>
+							</div>
+							<div class="row-field">
+								<input type="radio" name="question_type" data-condition_key="question_type" class="conditional-parent" id="type_match" value="matching">
+								<label for="type_match">Matching</label>
+							</div>
+						</div>
+					</div>
 									<div class="form-group custom-switches-stacked">
 										<label>Prompts Title</label>
 										<input type="text" class="form-control" name="prompt_title">
