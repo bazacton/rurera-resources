@@ -82,6 +82,18 @@
                             from now
                         </span>
                     </div>
+                    <div class="setup-quiz-content px-20 d-flex align-items-center justify-content-between">
+                        <div class="content-heading mb-25">
+                            <h4 class="font-weight-500">Set a start time for activity</h4>
+                            <span>The number of times a student can attempt the activity.</span>
+                        </div>
+                        <div class="select-field">
+                            <select>
+                                <option value="Unlimited">Unlimited</option>
+                                <option value="Limited">Limited</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
