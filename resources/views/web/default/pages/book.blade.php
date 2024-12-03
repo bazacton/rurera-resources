@@ -224,7 +224,7 @@
 </script>
 
 <div id="container">
-        <div class="menu-cross-btn">
+        <div class="menu-cross-btn" data-toggle="modal" data-target="#leave-option-modal">
             <a href="/books"><i class="fa fa-times"></i></a>
         </div>
         <div class="infolinks-data"></div>
@@ -400,7 +400,28 @@
         </div>
     </div>
 
-
+<div class="modal fade leave-option-modal show" id="leave-option-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-modal="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+          </button>
+          <div class="modal-body p-30">
+              <div class="leave-option-content d-flex align-items-center justify-content-center flex-column">
+                  <span class="img-box">
+                      <img src="/assets/default/img/leave-img.png" height="128" width="128" alt="leave-image">
+                  </span>
+                  <h2 class="mb-10">Wait! Don’t Miss Out on Your Free Access!</h2>
+                  <p class="mb-30">Leaving now means losing your complimentary access . Are you sure you want to continue?</p>
+                  <div class="leave-option-control d-flex align-items-center justify-content-center">
+                      <button type="button" data-toggle="modal" data-target="#subscriptionModal" data-dismiss="modal">Leave Anyway</button>
+                      <button type="button" class="stay-btn" data-dismiss="modal" aria-label="Close">Keep My Free Access</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 <div class="modal fade review_submit" id="review_submit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
    <div class="modal-dialog">
        <div class="modal-content">
