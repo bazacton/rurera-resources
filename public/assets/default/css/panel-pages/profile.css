@@ -370,6 +370,10 @@ Set Up Quiz Page Style End
 }
 .list-options li {
     font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    line-height: normal;
+    gap: 5px;
 }
 .list-options li img {
     height: 12px;
