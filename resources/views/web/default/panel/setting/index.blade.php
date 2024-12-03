@@ -32,7 +32,7 @@
                     </div>
                     <div class="col-12">
                         <div class="setup-quiz-card mb-30 bg-white panel-border rounded-sm p-25">
-                            <div class="setup-quiz-header d-flex align-items-center justify-content-between">
+                            <div class="setup-quiz-header d-flex align-items-center justify-content-between mb-15">
                                 <h3>Set up your quiz</h3>
                                 <div class="form-group custom-switches-stacked mb-0">
                                     <label class="custom-switch pl-0 mb-0">
