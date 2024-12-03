@@ -112,6 +112,33 @@
                                 </label>
                             </div>
                         </div>
+                        <span class="timer-off">Turn off <em>timer</em> to enable feature</span>
+                        <div class="mastery-options">
+                            <div class="field-option">
+                                <span>Mastery goal</span>
+                                <div class="select-box">
+                                    <select>
+                                        <option value="80% accuracy">80% accuracy</option>
+                                        <option value="80% accuracy">70% accuracy</option>
+                                        <option value="80% accuracy">60% accuracy</option>
+                                        <option value="80% accuracy">50% accuracy</option>
+                                        <option value="80% accuracy">40% accuracy</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field-option">
+                                <span>Reattempts per question</span>
+                                <div class="select-box">
+                                    <select>
+                                        <option value="2 reattempts">2 reattempts</option>
+                                        <option value="2 reattempts">2 reattempts</option>
+                                        <option value="2 reattempts">60% accuracy</option>
+                                        <option value="2 reattempts">50% accuracy</option>
+                                        <option value="2 reattempts">40% accuracy</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
