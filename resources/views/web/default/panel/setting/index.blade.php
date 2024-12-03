@@ -36,7 +36,7 @@
                         </div>
                         <div class="col-lg-3">
                             <div class="categories-card">
-                                <span class="icon-box"><img src="/assets/default/svgs/accuracy.svg" alt=""></span>
+                                <span class="icon-box"><img src="/assets/default/svgs/check-circle.svg" alt=""></span>
                                 <div class="text-holder">
                                     <span>Completion Rate</span>
                                     <strong>100%</strong>
@@ -45,7 +45,7 @@
                         </div>
                         <div class="col-lg-3">
                             <div class="categories-card">
-                                <span class="icon-box"><img src="/assets/default/svgs/accuracy.svg" alt=""></span>
+                                <span class="icon-box"><img src="/assets/default/svgs/student-users.svg" alt=""></span>
                                 <div class="text-holder">
                                     <span>Students Assigned</span>
                                     <strong>2</strong>
@@ -54,7 +54,7 @@
                         </div>
                         <div class="col-lg-3">
                             <div class="categories-card">
-                                <span class="icon-box"><img src="/assets/default/svgs/accuracy.svg" alt=""></span>
+                                <span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span>
                                 <div class="text-holder">
                                     <span>Questions</span>
                                     <strong>8</strong>
