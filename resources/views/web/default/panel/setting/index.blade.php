@@ -24,7 +24,7 @@
         <div class="col-12">
             <div class="quiz-setup-listings">
                 <div class="row">
-                    <div class="col-12 col-lg-4 col-md-6">
+                    <div class="col-12 col-lg-3 col-md-6">
                         <div class="quiz-setup-sidenav">
                             <h3>My library</h3>
                             <ul>
@@ -47,7 +47,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-8 col-md-12">
+                    <div class="col-12 col-lg-9 col-md-12">
                         <div class="listing-filters">
                             <div class="filter-box">
                                 <span class="icon-box"></span>
