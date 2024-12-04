@@ -575,6 +575,10 @@ New Quiz Page Style Start
 .fullscreen .participants-holder {
     min-width: 1920px;
 }
+.quiz-tabs .tab-pane {
+    overflow: hidden;
+    overflow-x: auto;
+}
 .quiz-filters {
     display: flex;
     align-items: center;
