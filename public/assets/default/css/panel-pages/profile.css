@@ -909,6 +909,7 @@ New Quiz Page Style Start
     padding: 10px 10px;
     font-size: 14px;
     min-width: 65px;
+    position: relative;
 }
 .overview-table table td.points {
     padding-left: 10px;
@@ -943,7 +944,6 @@ New Quiz Page Style Start
 }
 .quiz-status-tooltip {
     display: inline;
-    position: relative;
     visibility: hidden;
 }
 .quiz-status-tooltip .tooltip-box {
@@ -951,10 +951,12 @@ New Quiz Page Style Start
     border-radius: 5px;
     padding: 15px;
     position: absolute;
+    left: 50%;
     bottom: 100%;
     z-index: 1;
     background-color: #fff;
     width: 400px;
+    transform: translateX(-50%);
 }
 .quiz-status-tooltip .tooltip-box:after {
     content: "";
