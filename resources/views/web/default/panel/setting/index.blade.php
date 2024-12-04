@@ -323,7 +323,7 @@
                                             <td>
                                                 5310
                                             </td>
-                                            <td>
+                                            <td class="points">
                                                 5 <span>(83%)</span>
                                             </td>
                                             <td>
