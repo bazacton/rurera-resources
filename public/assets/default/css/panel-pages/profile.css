@@ -851,9 +851,11 @@ New Quiz Page Style Start
     left: 0;
     right: auto;
     z-index: 1;
-    margin: 5px;
+    margin: auto 5px;
     width: 100%;
+    height: calc(100% - 30px);
     transform: translateY(-50%);
+    overflow: hidden;
 }
 .overview-table table {
     width: 100%;
