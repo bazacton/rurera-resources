@@ -828,6 +828,14 @@
 			return true;
 		});
 		
+        $(document).ready(function () {
+            $(".full-screen-btn").click(function (e) {
+                e.preventDefault();
+                
+                $(this).closest('.tab-content').toggleClass('fullscreen');
+            });
+        });
+
 		
     </script>
 	
