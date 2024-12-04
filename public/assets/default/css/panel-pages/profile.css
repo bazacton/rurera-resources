@@ -1050,6 +1050,21 @@ New Quiz Page Style Start
     padding-left: 0;
     border-left: 0;
 }
+.quiz-type,
+.user-response {
+    margin-bottom: 15px;
+}
+.quiz-type span,
+.user-response span {
+    color: #787d84;
+    display: block;
+    line-height: normal;
+    padding: 0 0 5px;
+}
+.quiz-type h5,
+.user-response h5 {
+    font-weight: 500 !important;
+}
 
 /*************************************
 New Quiz Page Style End
