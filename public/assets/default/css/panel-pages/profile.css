@@ -860,13 +860,13 @@ New Quiz Page Style Start
 
 
 .overview-table {
-    overflow: hidden;
-    overflow-x: auto;
     padding-bottom: 10px;
 }
 .overview-table-inner {
     border-radius: 5px 5px 0 0;
     border: 1px solid #ddd;
+    overflow: hidden;
+    overflow-x: auto;
 }
 .fullscreen .overview-table {
     position: fixed;
