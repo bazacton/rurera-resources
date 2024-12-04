@@ -857,6 +857,10 @@ New Quiz Page Style Start
     transform: translateY(-50%);
     overflow: hidden;
 }
+.fullscreen .overview-table-inner {
+    overflow: hidden;
+    overflow-x: auto;
+}
 .overview-table table {
     width: 100%;
     background: none;
