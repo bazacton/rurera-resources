@@ -124,6 +124,7 @@
                                     <option value="Attempt">Attempt</option>
                                 </select>
                                 <button type="button" class="accuracy-btn"><img src="/assets/default/svgs/download.svg" alt=""></button>
+                                <button class="full-screen-btn"><img src="/assets/default/svgs/resize-full.svg" alt=""></button>
                             </div>
                         </div>
                         <div class="tab-pane fade show active" id="participants" role="tabpanel" aria-labelledby="participants-tab">
