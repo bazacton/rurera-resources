@@ -869,8 +869,6 @@ New Quiz Page Style Start
     text-align: left;
 }
 .overview-table {
-    overflow: hidden;
-    overflow-x: auto;
     border-radius: 5px 5px 0 0;
     border: 1px solid #ddd;
 }
