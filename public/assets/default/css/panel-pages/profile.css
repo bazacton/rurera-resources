@@ -860,10 +860,12 @@ New Quiz Page Style Start
 
 
 .overview-table {
-    border-radius: 5px 5px 0 0;
-    border: 1px solid #ddd;
     overflow: hidden;
     overflow-x: auto;
+}
+.overview-table-inner {
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #ddd;
 }
 .fullscreen .overview-table {
     position: fixed;
@@ -872,9 +874,9 @@ New Quiz Page Style Start
     left: 0;
     right: auto;
     z-index: 1;
-    margin: auto 5px;
+    margin: 2px 2px;
     width: 100%;
-    height: calc(100% - 30px);
+    height: 100%;
     transform: translateY(-50%);
     overflow: hidden;
 }
