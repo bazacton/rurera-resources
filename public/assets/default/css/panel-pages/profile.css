@@ -956,12 +956,19 @@ New Quiz Page Style Start
     z-index: 1;
     background-color: #fff;
     width: 400px;
+    margin-bottom: -10px;
     transform: translateX(-50%);
     -webkit-transition: all 0.3s ease-out; 
     -moz-transition: all 0.3s ease-out; 
     -ms-transition: all 0.3s ease-out; 
     -o-transition: all 0.3s ease-out; 
     transition: all 0.3s ease-out;
+}
+.overview-table table td:hover .quiz-status-tooltip .tooltip-box {
+    margin-bottom: 0;
+}
+.overview-table table td:hover .quiz-status-tooltip {
+    visibility: visible;
 }
 .incorrect .tooltip-box {
     border-top: 3px solid #f23b69;
