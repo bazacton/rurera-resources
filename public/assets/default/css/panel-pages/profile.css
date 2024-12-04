@@ -864,6 +864,9 @@ New Quiz Page Style Start
     border-radius: 5px 5px 0 0;
     border: 1px solid #ddd;
 }
+.overview-table table td .user-info {
+    min-width: 150px;
+}
 .overview-table table td {
     background-color: #fff;
     border-left: 1px solid #ddd;
