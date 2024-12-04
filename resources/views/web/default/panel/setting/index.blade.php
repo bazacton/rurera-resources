@@ -312,14 +312,14 @@
                                             <th>Q7 <span class="q-percent correct">100%</span></th>
                                             <th>Q8 <span class="q-percent incorrect">100%</span></th>
 
-                                            <th>Q1 <span class="q-percent urgent">100%</span></th>
-                                            <th>Q2 <span class="q-percent correct">100%</span></th>
-                                            <th>Q3 <span class="q-percent correct">100%</span></th>
-                                            <th>Q4 <span class="q-percent incorrect">0%</span></th>
-                                            <th>Q5 <span class="q-percent warning">100%</span></th>
-                                            <th>Q6 <span class="q-percent urgent">100%</span></th>
-                                            <th>Q7 <span class="q-percent correct">100%</span></th>
-                                            <th>Q8 <span class="q-percent incorrect">100%</span></th>
+                                            <th>Q9 <span class="q-percent urgent">100%</span></th>
+                                            <th>Q10 <span class="q-percent correct">100%</span></th>
+                                            <th>Q11 <span class="q-percent correct">100%</span></th>
+                                            <th>Q12 <span class="q-percent incorrect">0%</span></th>
+                                            <th>Q13 <span class="q-percent warning">100%</span></th>
+                                            <th>Q14 <span class="q-percent urgent">100%</span></th>
+                                            <th>Q15 <span class="q-percent correct">100%</span></th>
+                                            <th>Q16 <span class="q-percent incorrect">100%</span></th>
                                         </tr>
                                     </thead>
                                     <tbody>
