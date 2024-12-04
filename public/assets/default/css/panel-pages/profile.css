@@ -805,6 +805,7 @@ New Quiz Page Style Start
     min-width: auto;
     border-radius: 5px;
     margin-top: 0;
+    display: none;
 }
 .dropdown-box .dropdown-menu .dropdown-item {
     padding: 5px 0;
@@ -818,6 +819,9 @@ New Quiz Page Style Start
     height: 15px;
     width: 15px;
     filter: invert(50%) sepia(10%) saturate(253%) hue-rotate(176deg) brightness(94%) contrast(89%);
+}
+.dropdown-box .dropdown:hover .dropdown-menu {
+    margin-top: 0;
 }
 
 /*************************************
