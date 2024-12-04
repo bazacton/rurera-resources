@@ -958,6 +958,9 @@ New Quiz Page Style Start
     width: 400px;
     transform: translateX(-50%);
 }
+.incorrect .tooltip-box {
+    border-top: 3px solid #f23b69;
+}
 .quiz-status-tooltip .tooltip-box:after {
     content: "";
     position: absolute;

@@ -438,7 +438,7 @@
                                                     5 <small>(83%)</small>
                                                 </td>
                                                 <td>
-                                                    <div class="quiz-status-tooltip">
+                                                    <div class="quiz-status-tooltip incorrect">
                                                         <div class="tooltip-box">
                                                             <div class="tooltip-top">
                                                                 <div class="status-box">
