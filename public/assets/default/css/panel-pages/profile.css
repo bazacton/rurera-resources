@@ -571,14 +571,6 @@ New Quiz Page Style Start
     border-radius: 0 0 10px 10px;
     padding: 25px;
 }
-.fullscreen .overview-table,
-.fullscreen .participants-holder {
-    min-width: 1920px;
-}
-.quiz-tabs .tab-pane {
-    overflow: hidden;
-    overflow-x: auto;
-}
 .quiz-filters {
     display: flex;
     align-items: center;
@@ -849,6 +841,11 @@ New Quiz Page Style Start
 .overview-table {
     border-radius: 5px 5px 0 0;
     border: 1px solid #ddd;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.fullscreen .overview-table {
+    min-width: 1920px;
 }
 .overview-table table {
     width: 100%;
