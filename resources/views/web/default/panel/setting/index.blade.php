@@ -324,31 +324,31 @@
                                                 5310
                                             </td>
                                             <td class="points">
-                                                5 <span>(83%)</span>
+                                                5 <small>(83%)</small>
                                             </td>
                                             <td>
-                                                <span class="urgent"></span>
+                                                <em class="urgent"></em>
                                             </td>
                                             <td>
-                                                <span class="correct"></span>
+                                                <em class="correct"></em>
                                             </td>
                                             <td>
-                                                <span class="pending"></span>
+                                                <em class="pending"></em>
                                             </td>
                                             <td>
-                                                <span class="incorrect"></span>
+                                                <em class="incorrect"></em>
                                             </td>
                                             <td>
-                                                <span class="correct"></span>
+                                                <em class="correct"></em>
                                             </td>
                                             <td>
-                                                <span class="urgent"></span>
+                                                <em class="urgent"></span>
                                             </td>
                                             <td>
-                                                <span class="pending"></span>
+                                                <em class="pending"></em>
                                             </td>
                                             <td>
-                                                <span class="correct"></span>
+                                                <em class="correct"></em>
                                             </td>
                                         </tr>
                                     </tbody>
