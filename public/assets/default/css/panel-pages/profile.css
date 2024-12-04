@@ -570,8 +570,6 @@ New Quiz Page Style Start
     background-color: #f9f9f9;
     border-radius: 0 0 10px 10px;
     padding: 25px;
-    overflow: hidden;
-    overflow-x: auto;
 }
 .fullscreen .tab-pane {
     min-width: 1920px;
@@ -865,10 +863,6 @@ New Quiz Page Style Start
 }
 .overview-table table th:nth-child(2) {
     text-align: left;
-}
-.overview-table {
-    border-radius: 5px 5px 0 0;
-    border: 1px solid #ddd;
 }
 .overview-table table td .user-info {
     min-width: 150px;
