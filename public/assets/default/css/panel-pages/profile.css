@@ -878,8 +878,14 @@ New Quiz Page Style Start
     padding: 0;
 }
 .overview-table table td em {
-    display: block;
+    display: flex;
     height: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.overview-table table td i {
+    font-style: normal;
 }
 .overview-table table th .q-num {
     display: block;
