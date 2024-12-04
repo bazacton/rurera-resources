@@ -828,6 +828,32 @@ New Quiz Page Style Start
     margin-top: 0;
 }
 
+
+.overview-table table {
+    width: 100%;
+    background: none;
+}
+.overview-table table th {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    padding: 10px 10px;
+    border-left: 1px solid #ddd;
+}
+.overview-table table th:first-child {
+    border-left: 0;
+}
+.overview-table {
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #ddd;
+}
+.overview-table table td {
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 10px 10px;
+}
+
 /*************************************
 New Quiz Page Style End
 **************************************/
