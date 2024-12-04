@@ -590,7 +590,8 @@ New Quiz Page Style Start
     min-height: 32px;
     font-size: 14px;
 }
-.accuracy-btn {
+.accuracy-btn,
+.full-screen-btn {
     background-color: #fff;
     border: 1px solid #ddd;
     display: inline-flex;
@@ -600,7 +601,8 @@ New Quiz Page Style Start
     height: 32px;
     width: 32px;
 }
-.accuracy-btn img {
+.accuracy-btn img,
+.full-screen-btn img {
     height: 15px;
     width: 15px;
 }
