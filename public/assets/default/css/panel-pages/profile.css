@@ -846,9 +846,11 @@ New Quiz Page Style Start
 }
 .fullscreen .overview-table {
     position: fixed;
-    width: 100%;
-    height: 100%;
     background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin: 5px;
 }
 .overview-table table {
     width: 100%;
