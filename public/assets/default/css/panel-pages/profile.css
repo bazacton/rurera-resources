@@ -859,14 +859,12 @@ New Quiz Page Style Start
 }
 
 
-.overview-table {
-    padding-bottom: 10px;
-}
 .overview-table-inner {
     border-radius: 5px 5px 0 0;
     border: 1px solid #ddd;
     overflow: hidden;
     overflow-x: auto;
+    padding-bottom: 10px;
 }
 .fullscreen .tab-pane:has(.overview-table) {
     position: fixed;
@@ -881,10 +879,6 @@ New Quiz Page Style Start
     transform: translateY(-50%);
     overflow: hidden;
     padding: 15px;
-}
-.fullscreen .overview-table-inner {
-    overflow: hidden;
-    overflow-x: auto;
 }
 .overview-table table {
     width: 100%;
