@@ -847,10 +847,13 @@ New Quiz Page Style Start
 .fullscreen .overview-table {
     position: fixed;
     background-color: #fff;
-    top: 0;
+    top: 50%;
     left: 0;
+    right: auto;
     z-index: 1;
     margin: 5px;
+    width: 100%;
+    transform: translateY(-50%);
 }
 .overview-table table {
     width: 100%;
