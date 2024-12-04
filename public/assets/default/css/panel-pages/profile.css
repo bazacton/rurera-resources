@@ -770,6 +770,16 @@ New Quiz Page Style Start
     font-weight: 600;
     margin-right: 5px;
 }
+.quiz-controls button {
+    background-color: #ede6f7;
+    border: 0;
+    color: #8855be;
+    font-size: 14px;
+    padding: 0 10px;
+    height: 34px;
+    vertical-align: middle;
+    border-radius: 3px;
+}
 
 /*************************************
 New Quiz Page Style End
