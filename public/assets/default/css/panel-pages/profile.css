@@ -817,6 +817,7 @@ New Quiz Page Style Start
 .dropdown-box .dropdown-menu .dropdown-item img {
     height: 15px;
     width: 15px;
+    filter: invert(50%) sepia(10%) saturate(253%) hue-rotate(176deg) brightness(94%) contrast(89%);
 }
 
 /*************************************
