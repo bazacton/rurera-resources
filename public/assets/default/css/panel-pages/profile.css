@@ -780,6 +780,15 @@ New Quiz Page Style Start
     width: 20px;
     filter: invert(45%) sepia(16%) saturate(2200%) hue-rotate(227deg) brightness(83%) contrast(87%);
 }
+.participants-table td .points {
+    font-weight: 500;
+}
+.participants-table td .points em {
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+    color: #bbb;
+}
 
 /*************************************
 New Quiz Page Style End
