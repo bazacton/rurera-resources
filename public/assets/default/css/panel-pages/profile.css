@@ -864,15 +864,14 @@ New Quiz Page Style Start
     border: 1px solid #ddd;
 }
 .overview-table table td {
-    border-left: 1px solid #ddd;
-    border-top: 1px solid #ddd;
-    padding: 10px 10px;
-}
-.overview-table table td {
+    background-color: #fff;
     border-left: 1px solid #ddd;
     border-top: 1px solid #ddd;
     padding: 10px 10px;
     font-size: 14px;
+}
+.overview-table table td:has(span) {
+    padding: 0;
 }
 .overview-table table th .q-num {
     display: block;
