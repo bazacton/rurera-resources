@@ -351,6 +351,43 @@
                                                 <em class="correct"></em>
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="user-info">
+                                                    <span class="user-name">Muhammad Rehan</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                5310
+                                            </td>
+                                            <td class="points">
+                                                5 <small>(83%)</small>
+                                            </td>
+                                            <td>
+                                                <em class="urgent"></em>
+                                            </td>
+                                            <td>
+                                                <em class="correct"></em>
+                                            </td>
+                                            <td>
+                                                <em class="pending"></em>
+                                            </td>
+                                            <td>
+                                                <em class="incorrect"></em>
+                                            </td>
+                                            <td>
+                                                <em class="correct"></em>
+                                            </td>
+                                            <td>
+                                                <em class="urgent"></span>
+                                            </td>
+                                            <td>
+                                                <em class="pending"></em>
+                                            </td>
+                                            <td>
+                                                <em class="correct"></em>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
