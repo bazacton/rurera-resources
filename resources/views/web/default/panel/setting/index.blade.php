@@ -327,28 +327,28 @@
                                                 5 <small>(83%)</small>
                                             </td>
                                             <td>
-                                                <em class="urgent"></em>
+                                                <em class="urgent"><i>&#10003;</i></em>
                                             </td>
                                             <td>
-                                                <em class="correct"></em>
+                                                <em class="correct"><i>&#10003;</i></em>
                                             </td>
                                             <td>
-                                                <em class="pending"></em>
+                                                <em class="pending"><i>&#10003;</i></em>
                                             </td>
                                             <td>
-                                                <em class="incorrect"></em>
+                                                <em class="incorrect"><i>&#10005;</i></em>
                                             </td>
                                             <td>
-                                                <em class="correct"></em>
+                                                <em class="correct"><i>&#10003;</i></em>
                                             </td>
                                             <td>
-                                                <em class="urgent"></span>
+                                                <em class="urgent"><i>&#10003;</i></span>
                                             </td>
                                             <td>
-                                                <em class="pending"></em>
+                                                <em class="pending"><i>&#10003;</i></em>
                                             </td>
                                             <td>
-                                                <em class="correct"></em>
+                                                <em class="correct"><i>&#10003;</i></em>
                                             </td>
                                         </tr>
                                         <tr>
@@ -364,28 +364,28 @@
                                                 5 <small>(83%)</small>
                                             </td>
                                             <td>
-                                                <em class="urgent"></em>
+                                                <em class="urgent"><i>&#10003;</i></em>
                                             </td>
                                             <td>
-                                                <em class="correct"></em>
+                                                <em class="correct"><i>&#10003;</i></em>
                                             </td>
                                             <td>
-                                                <em class="pending"></em>
+                                                <em class="pending"><i>&#10003;</i></em>
                                             </td>
                                             <td>
-                                                <em class="incorrect"></em>
+                                                <em class="incorrect"><i>&#10005;</i></em>
                                             </td>
                                             <td>
-                                                <em class="correct"></em>
+                                                <em class="correct"><i>&#10003;</i></em>
                                             </td>
                                             <td>
-                                                <em class="urgent"></span>
+                                                <em class="urgent"><i>&#10003;</i></span>
                                             </td>
                                             <td>
-                                                <em class="pending"></em>
+                                                <em class="pending"><i>&#10003;</i></em>
                                             </td>
                                             <td>
-                                                <em class="correct"></em>
+                                                <em class="correct"><i>&#10003;</i></em>
                                             </td>
                                         </tr>
                                     </tbody>
