@@ -880,6 +880,7 @@ New Quiz Page Style Start
     height: 100%;
     transform: translateY(-50%);
     overflow: hidden;
+    padding: 15px;
 }
 .fullscreen .overview-table-inner {
     overflow: hidden;
