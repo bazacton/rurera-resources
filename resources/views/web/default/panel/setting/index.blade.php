@@ -198,7 +198,7 @@
                                                     <span class="points">5<em>/6</em></span>
                                                 </td>
                                                 <td>
-                                                    <span class="score">Score</span>
+                                                    <span class="score">5310</span>
                                                 </td>
                                                 <td>
                                                     <div class="quiz-controls">
@@ -255,7 +255,7 @@
                                                     <span class="points">5<em>/6</em></span>
                                                 </td>
                                                 <td>
-                                                    <span class="score">Score</span>
+                                                    <span class="score">300</span>
                                                 </td>
                                                 <td>
                                                     <div class="quiz-controls">
