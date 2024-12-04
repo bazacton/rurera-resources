@@ -380,7 +380,7 @@
                                                 </td>
                                                 <td>
                                                     <div class="quiz-status-tooltip">
-                                                        <div class="tooltip-inner">
+                                                        <div class="tooltip-box">
                                                             <div class="tooltip-top">
                                                                 <div class="status-box">
                                                                     <span class="incorrect"><i>&#10005;</i> Incorrect</span>
