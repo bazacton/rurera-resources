@@ -571,7 +571,8 @@ New Quiz Page Style Start
     border-radius: 0 0 10px 10px;
     padding: 25px;
 }
-.fullscreen .tab-pane {
+.fullscreen .overview-table,
+.fullscreen .participants-holder {
     min-width: 1920px;
 }
 .quiz-filters {
