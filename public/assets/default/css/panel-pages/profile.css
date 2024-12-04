@@ -807,6 +807,9 @@ New Quiz Page Style Start
     margin-top: 0;
     display: none;
 }
+.dropdown-box .dropdown-menu.show {
+    display: block;
+}
 .dropdown-box .dropdown-menu .dropdown-item {
     padding: 5px 0;
     font-size: 14px;
