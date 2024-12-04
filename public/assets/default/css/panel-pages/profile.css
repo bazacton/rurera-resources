@@ -877,6 +877,10 @@ New Quiz Page Style Start
 .overview-table table td:has(em) {
     padding: 0;
 }
+.overview-table table td em {
+    display: block;
+    height: 40px;
+}
 .overview-table table th .q-num {
     display: block;
     font-weight: 400;
