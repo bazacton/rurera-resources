@@ -869,6 +869,7 @@ New Quiz Page Style Start
     border-top: 1px solid #ddd;
     padding: 10px 10px;
     font-size: 14px;
+    min-width: 65px;
 }
 .overview-table table td.points {
     padding-left: 10px;
