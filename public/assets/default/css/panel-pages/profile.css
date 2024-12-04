@@ -591,11 +591,6 @@ New Quiz Page Style Start
     flex-wrap: wrap;
     margin-bottom: 25px;
 }
-.fullscreen .quiz-filters {
-    background-color: #fff;
-    position: relative;
-    z-index: 3;
-}
 .quiz-filters .select-box {
     font-size: 14px;
     color: #787d84;
