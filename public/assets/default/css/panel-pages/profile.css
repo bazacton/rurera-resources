@@ -874,7 +874,7 @@ New Quiz Page Style Start
     padding-left: 10px;
     padding-right: 10px;
 }
-.overview-table table td:has(span) {
+.overview-table table td:has(em) {
     padding: 0;
 }
 .overview-table table th .q-num {
