@@ -668,6 +668,9 @@ New Quiz Page Style Start
 .overview-table .urgent {
     background-color: #2971b2;
 }
+.overview-table .warning {
+    background-color: #f0a71e;
+}
 
 
 .participants-table .user-info .img-box {
@@ -898,6 +901,7 @@ New Quiz Page Style Start
     font-weight: 400;
     color: #fff;
     border-radius: 2px;
+    margin-top: 3px;
 }
 
 /*************************************
