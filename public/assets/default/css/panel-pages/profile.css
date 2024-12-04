@@ -945,6 +945,18 @@ New Quiz Page Style Start
     border-radius: 2px;
     margin-top: 3px;
 }
+.quiz-status-tooltip {
+    display: inline;
+    position: relative;
+    visibility: hidden;
+}
+.quiz-status-tooltip .tooltip-box {
+    position: absolute;
+    bottom: 100%;
+    z-index: 1;
+    background-color: #fff;
+    width: 400px;
+}
 
 /*************************************
 New Quiz Page Style End
