@@ -801,7 +801,22 @@ New Quiz Page Style Start
     right: 0;
     visibility: visible;
     opacity: 1;
-    display: none;
+    top: 100% !important;
+    min-width: auto;
+    border-radius: 5px;
+    margin-top: 0;
+}
+.dropdown-box .dropdown-menu .dropdown-item {
+    padding: 5px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #787d84;
+}
+.dropdown-box .dropdown-menu .dropdown-item img {
+    height: 15px;
+    width: 15px;
 }
 
 /*************************************
