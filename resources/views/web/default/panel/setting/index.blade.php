@@ -311,6 +311,15 @@
                                             <th>Q6 <span class="q-percent urgent">100%</span></th>
                                             <th>Q7 <span class="q-percent correct">100%</span></th>
                                             <th>Q8 <span class="q-percent incorrect">100%</span></th>
+
+                                            <th>Q1 <span class="q-percent urgent">100%</span></th>
+                                            <th>Q2 <span class="q-percent correct">100%</span></th>
+                                            <th>Q3 <span class="q-percent correct">100%</span></th>
+                                            <th>Q4 <span class="q-percent incorrect">0%</span></th>
+                                            <th>Q5 <span class="q-percent warning">100%</span></th>
+                                            <th>Q6 <span class="q-percent urgent">100%</span></th>
+                                            <th>Q7 <span class="q-percent correct">100%</span></th>
+                                            <th>Q8 <span class="q-percent incorrect">100%</span></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -350,6 +359,31 @@
                                             <td>
                                                 <em class="correct"><i>&#10003;</i></em>
                                             </td>
+
+                                            <td>
+                                                <em class="urgent"><i>&#10003;</i></em>
+                                            </td>
+                                            <td>
+                                                <em class="correct"><i>&#10003;</i></em>
+                                            </td>
+                                            <td>
+                                                <em class="pending"><i>&#10003;</i></em>
+                                            </td>
+                                            <td>
+                                                <em class="incorrect"><i>&#10005;</i></em>
+                                            </td>
+                                            <td>
+                                                <em class="correct"><i>&#10003;</i></em>
+                                            </td>
+                                            <td>
+                                                <em class="urgent"><i>&#10003;</i></span>
+                                            </td>
+                                            <td>
+                                                <em class="pending"><i>&#10003;</i></em>
+                                            </td>
+                                            <td>
+                                                <em class="correct"><i>&#10003;</i></em>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -363,6 +397,31 @@
                                             <td class="points">
                                                 5 <small>(83%)</small>
                                             </td>
+                                            <td>
+                                                <em class="urgent"><i>&#10003;</i></em>
+                                            </td>
+                                            <td>
+                                                <em class="correct"><i>&#10003;</i></em>
+                                            </td>
+                                            <td>
+                                                <em class="pending"><i>&#10003;</i></em>
+                                            </td>
+                                            <td>
+                                                <em class="incorrect"><i>&#10005;</i></em>
+                                            </td>
+                                            <td>
+                                                <em class="correct"><i>&#10003;</i></em>
+                                            </td>
+                                            <td>
+                                                <em class="urgent"><i>&#10003;</i></span>
+                                            </td>
+                                            <td>
+                                                <em class="pending"><i>&#10003;</i></em>
+                                            </td>
+                                            <td>
+                                                <em class="correct"><i>&#10003;</i></em>
+                                            </td>
+
                                             <td>
                                                 <em class="urgent"><i>&#10003;</i></em>
                                             </td>
