@@ -789,6 +789,16 @@ New Quiz Page Style Start
     font-style: normal;
     color: #bbb;
 }
+.dropdown-box img {
+    height: 20px;
+    width: 20px;
+}
+.dropdown-box {
+    display: inline-block;
+}
+.dropdown-box .dropdown-toggle:after {
+    display: none;
+}
 
 /*************************************
 New Quiz Page Style End
