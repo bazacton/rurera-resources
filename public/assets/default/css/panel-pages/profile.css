@@ -724,6 +724,9 @@ New Quiz Page Style Start
     font-style: normal;
     color: #787d84;
 }
+.user-attempt-status {
+    max-width: 450px;
+}
 .user-attempt-status ul {
     display: flex;
     align-items: center;
