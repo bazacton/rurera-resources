@@ -731,7 +731,7 @@ New Quiz Page Style Start
     flex-wrap: wrap;
 }
 .user-attempt-status li span {
-    min-width: 40px;
+    min-width: 20px;
     min-height: 20px;
     display: inline-block;
     border-radius: 2px;
