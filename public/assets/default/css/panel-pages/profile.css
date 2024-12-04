@@ -551,6 +551,9 @@ New Quiz Page Style Start
 }
 /* Class-controls style end */
 
+.quiz-tabs .nav {
+    padding: 0 15px;
+}
 .quiz-tabs .nav-link {
     background-color: inherit;
     border: 0;
@@ -563,8 +566,17 @@ New Quiz Page Style Start
     border-bottom-color: var(--blue);
     color: var(--blue);
 }
-.quiz-tabs .nav {
-    padding: 0 15px;
+.quiz-tabs .nav-link span {
+    background-color: var(--blue);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    line-height: normal;
+    border-radius: 3px;
+    margin-left: 5px;
 }
 .quiz-tabs .tab-content {
     background-color: #f9f9f9;
