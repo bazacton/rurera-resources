@@ -678,9 +678,6 @@ New Quiz Page Style Start
 .participants-table table {
     width: 100%;
 }
-.participants-table {
-    overflow: hidden;
-}
 .participants-table th {
     text-align: left;
     font-weight: 400;
@@ -797,6 +794,13 @@ New Quiz Page Style Start
     display: inline-block;
 }
 .dropdown-box .dropdown-toggle:after {
+    display: none;
+}
+.dropdown-box .dropdown-menu {
+    left: auto !important;
+    right: 0;
+    visibility: visible;
+    opacity: 1;
     display: none;
 }
 
