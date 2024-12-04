@@ -850,6 +850,7 @@ New Quiz Page Style Start
     text-align: center;
     padding: 10px 10px;
     border-left: 1px solid #ddd;
+    min-width: 70px;
 }
 .overview-table table th:first-child {
     border-left: 0;
