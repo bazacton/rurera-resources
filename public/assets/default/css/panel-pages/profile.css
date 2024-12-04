@@ -868,7 +868,7 @@ New Quiz Page Style Start
     overflow: hidden;
     overflow-x: auto;
 }
-.fullscreen .overview-table {
+.fullscreen .tab-pane:has(.overview-table) {
     position: fixed;
     background-color: #fff;
     top: 50%;
