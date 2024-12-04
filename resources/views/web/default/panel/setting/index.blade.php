@@ -295,7 +295,66 @@
                         </div>
                         <div class="tab-pane fade" id="questions" role="tabpanel" aria-labelledby="questions-tab">...</div>
                         <div class="tab-pane fade" id="accommodations" role="tabpanel" aria-labelledby="accommodations-tab">...</div>
-                        <div class="tab-pane fade" id="overview" role="tabpanel" aria-labelledby="overview-tab">...</div>
+                        <div class="tab-pane fade" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                            <div class="overview-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Participant</th>
+                                            <th>Score</th>
+                                            <th>Points <span class="q-num">Out of 6</span></th>
+                                            <th>Q1 <span class="q-percent urgent">100%</span></th>
+                                            <th>Q2 <span class="q-percent correct">100%</span></th>
+                                            <th>Q3 <span class="q-percent correct">100%</span></th>
+                                            <th>Q4 <span class="q-percent incorrect">0%</span></th>
+                                            <th>Q5 <span class="q-percent warning">100%</span></th>
+                                            <th>Q6 <span class="q-percent urgent">100%</span></th>
+                                            <th>Q7 <span class="q-percent correct">100%</span></th>
+                                            <th>Q8 <span class="q-percent incorrect">100%</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="user-info">
+                                                    <span class="user-name">Muhammad Rehan</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                5310
+                                            </td>
+                                            <td>
+                                                5 <span>(83%)</span>
+                                            </td>
+                                            <td>
+                                                <span class="urgent"></span>
+                                            </td>
+                                            <td>
+                                                <span class="correct"></span>
+                                            </td>
+                                            <td>
+                                                <span class="pending"></span>
+                                            </td>
+                                            <td>
+                                                <span class="incorrect"></span>
+                                            </td>
+                                            <td>
+                                                <span class="correct"></span>
+                                            </td>
+                                            <td>
+                                                <span class="urgent"></span>
+                                            </td>
+                                            <td>
+                                                <span class="pending"></span>
+                                            </td>
+                                            <td>
+                                                <span class="correct"></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                         <div class="tab-pane fade" id="tags" role="tabpanel" aria-labelledby="tags-tab">...</div>
                     </div>
                 </div>
