@@ -108,26 +108,26 @@
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                        <div class="quiz-filters">
-                            <div class="select-box">
-                                <span>Showing</span>
-                                <select>
-                                    <option value="Best">Best</option>
-                                    <option value="Best">Bad</option>
-                                </select>
-                                <span>attempt</span>
-                            </div>
-                            <div class="sorting-by-filters">
-                                <span class="sorting-lable">Sort by:</span>
-                                <select>
-                                    <option value="Accuracy">Accuracy</option>
-                                    <option value="Attempt">Attempt</option>
-                                </select>
-                                <button type="button" class="accuracy-btn"><img src="/assets/default/svgs/download.svg" alt=""></button>
-                                <button class="full-screen-btn"><img src="/assets/default/svgs/resize-full.svg" alt=""></button>
-                            </div>
-                        </div>
                         <div class="tab-pane fade show active" id="participants" role="tabpanel" aria-labelledby="participants-tab">
+                            <div class="quiz-filters">
+                                <div class="select-box">
+                                    <span>Showing</span>
+                                    <select>
+                                        <option value="Best">Best</option>
+                                        <option value="Best">Bad</option>
+                                    </select>
+                                    <span>attempt</span>
+                                </div>
+                                <div class="sorting-by-filters">
+                                    <span class="sorting-lable">Sort by:</span>
+                                    <select>
+                                        <option value="Accuracy">Accuracy</option>
+                                        <option value="Attempt">Attempt</option>
+                                    </select>
+                                    <button type="button" class="accuracy-btn"><img src="/assets/default/svgs/download.svg" alt=""></button>
+                                    <button class="full-screen-btn"><img src="/assets/default/svgs/resize-full.svg" alt=""></button>
+                                </div>
+                            </div>
                             <div class="participants-holder">
                                 <div class="quiz-status">
                                     <ul>
@@ -326,9 +326,68 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="questions" role="tabpanel" aria-labelledby="questions-tab">...</div>
-                        <div class="tab-pane fade" id="accommodations" role="tabpanel" aria-labelledby="accommodations-tab">...</div>
+                        <div class="tab-pane fade" id="questions" role="tabpanel" aria-labelledby="questions-tab">
+                            <div class="quiz-filters">
+                                <div class="select-box">
+                                    <span>Showing</span>
+                                    <select>
+                                        <option value="Best">Best</option>
+                                        <option value="Best">Bad</option>
+                                    </select>
+                                    <span>attempt</span>
+                                </div>
+                                <div class="sorting-by-filters">
+                                    <span class="sorting-lable">Sort by:</span>
+                                    <select>
+                                        <option value="Accuracy">Accuracy</option>
+                                        <option value="Attempt">Attempt</option>
+                                    </select>
+                                    <button type="button" class="accuracy-btn"><img src="/assets/default/svgs/download.svg" alt=""></button>
+                                    <button class="full-screen-btn"><img src="/assets/default/svgs/resize-full.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="accommodations" role="tabpanel" aria-labelledby="accommodations-tab">
+                            <div class="quiz-filters">
+                                <div class="select-box">
+                                    <span>Showing</span>
+                                    <select>
+                                        <option value="Best">Best</option>
+                                        <option value="Best">Bad</option>
+                                    </select>
+                                    <span>attempt</span>
+                                </div>
+                                <div class="sorting-by-filters">
+                                    <span class="sorting-lable">Sort by:</span>
+                                    <select>
+                                        <option value="Accuracy">Accuracy</option>
+                                        <option value="Attempt">Attempt</option>
+                                    </select>
+                                    <button type="button" class="accuracy-btn"><img src="/assets/default/svgs/download.svg" alt=""></button>
+                                    <button class="full-screen-btn"><img src="/assets/default/svgs/resize-full.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="tab-pane fade" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                            <div class="quiz-filters">
+                                <div class="select-box">
+                                    <span>Showing</span>
+                                    <select>
+                                        <option value="Best">Best</option>
+                                        <option value="Best">Bad</option>
+                                    </select>
+                                    <span>attempt</span>
+                                </div>
+                                <div class="sorting-by-filters">
+                                    <span class="sorting-lable">Sort by:</span>
+                                    <select>
+                                        <option value="Accuracy">Accuracy</option>
+                                        <option value="Attempt">Attempt</option>
+                                    </select>
+                                    <button type="button" class="accuracy-btn"><img src="/assets/default/svgs/download.svg" alt=""></button>
+                                    <button class="full-screen-btn"><img src="/assets/default/svgs/resize-full.svg" alt=""></button>
+                                </div>
+                            </div>
                             <div class="overview-table">
                                 <div class="overview-table-inner">
                                     <table>
@@ -576,7 +635,27 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="tags" role="tabpanel" aria-labelledby="tags-tab">...</div>
+                        <div class="tab-pane fade" id="tags" role="tabpanel" aria-labelledby="tags-tab">
+                            <div class="quiz-filters">
+                                <div class="select-box">
+                                    <span>Showing</span>
+                                    <select>
+                                        <option value="Best">Best</option>
+                                        <option value="Best">Bad</option>
+                                    </select>
+                                    <span>attempt</span>
+                                </div>
+                                <div class="sorting-by-filters">
+                                    <span class="sorting-lable">Sort by:</span>
+                                    <select>
+                                        <option value="Accuracy">Accuracy</option>
+                                        <option value="Attempt">Attempt</option>
+                                    </select>
+                                    <button type="button" class="accuracy-btn"><img src="/assets/default/svgs/download.svg" alt=""></button>
+                                    <button class="full-screen-btn"><img src="/assets/default/svgs/resize-full.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

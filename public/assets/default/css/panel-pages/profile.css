@@ -957,6 +957,103 @@ New Quiz Page Style Start
     background-color: #fff;
     width: 400px;
 }
+.status-box {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.status-box img {
+    height: 15px;
+    width: 15px;
+}
+.status-box button {
+    background-color: #f3f1f4;
+    border: 0;
+    height: 26px;
+    padding: 0 6px;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.tooltip-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.overview-table .status-box span {
+    background-color: #ffbfcf;
+    color: #f23b69;
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+.overview-table .status-box span i {
+    font-size: 12px;
+}
+.status-box {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.status-box img {
+    height: 15px;
+    width: 15px;
+}
+.status-box button {
+    background-color: #f3f1f4;
+    border: 0;
+    height: 26px;
+    padding: 0 6px;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.tooltip-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.overview-table .status-box span {
+    background-color: #ffbfcf;
+    color: #f23b69;
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+.overview-table .status-box span i {
+    font-size: 12px;
+    margin-right: 5px;
+}
+.overview-table .attempt-info em {
+    display: inline-flex;
+    font-size: 16px;
+    font-style: normal;
+    height: auto;
+    font-weight: 500;
+}
+.attempt-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.attempt-info span {
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
+}
+.attempt-info span:first-child {
+    padding-left: 0;
+    border-left: 0;
+}
 
 /*************************************
 New Quiz Page Style End
