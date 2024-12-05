@@ -1476,6 +1476,9 @@ New Quiz Page Style Start
     padding: 25px;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
+body:has(.quiz-data-slide.active) {
+    overflow: hidden;
+}
 .slide-controls {
     display: flex;
     align-items: center;
