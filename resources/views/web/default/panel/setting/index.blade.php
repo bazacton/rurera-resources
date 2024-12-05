@@ -517,6 +517,53 @@
                                                 <th>Q7 <span class="q-percent correct">100%</span></th>
                                                 <th>Q8 <span class="q-percent incorrect">100%</span></th>
 
+                                                <th>Q9 <span class="q-percent urgent">100%</span></th>
+                                                <th>Q10 <span class="q-percent correct">100%</span></th>
+                                                <th>Q11 <span class="q-percent correct">100%</span></th>
+                                                <th>Q12 <span class="q-percent incorrect">0%</span></th>
+                                                <th>Q13 <span class="q-percent warning">100%</span></th>
+                                                <th>Q14 <span class="q-percent urgent">100%</span></th>
+                                                <th>Q15 <span class="q-percent correct">100%</span></th>
+                                                <th>Q16 <span class="q-percent incorrect">100%</span></th>
+
+                                                <th>Q17 <span class="q-percent urgent">100%</span></th>
+                                                <th>Q18 <span class="q-percent correct">100%</span></th>
+                                                <th>Q19 <span class="q-percent correct">100%</span></th>
+                                                <th>Q20 <span class="q-percent incorrect">0%</span></th>
+                                                <th>Q21 <span class="q-percent warning">100%</span></th>
+                                                <th>Q22 <span class="q-percent urgent">100%</span></th>
+                                                <th>Q23 <span class="q-percent correct">100%</span></th>
+                                                <th>Q24 <span class="q-percent incorrect">100%</span></th>
+
+                                                <th>Q25 <span class="q-percent urgent">100%</span></th>
+                                                <th>Q26 <span class="q-percent correct">100%</span></th>
+                                                <th>Q27 <span class="q-percent correct">100%</span></th>
+                                                <th>Q28 <span class="q-percent incorrect">0%</span></th>
+                                                <th>Q29 <span class="q-percent warning">100%</span></th>
+                                                <th>Q30 <span class="q-percent urgent">100%</span></th>
+                                                <th>Q31 <span class="q-percent correct">100%</span></th>
+                                                <th>Q32 <span class="q-percent incorrect">100%</span></th>
+
+                                                <th>Q33 <span class="q-percent urgent">100%</span></th>
+                                                <th>Q34 <span class="q-percent correct">100%</span></th>
+                                                <th>Q35 <span class="q-percent correct">100%</span></th>
+                                                <th>Q36 <span class="q-percent incorrect">0%</span></th>
+                                                <th>Q37 <span class="q-percent warning">100%</span></th>
+                                                <th>Q38 <span class="q-percent urgent">100%</span></th>
+                                                <th>Q39 <span class="q-percent correct">100%</span></th>
+                                                <th>Q40 <span class="q-percent incorrect">100%</span></th>
+
+                                                <th>Q41 <span class="q-percent urgent">100%</span></th>
+                                                <th>Q42 <span class="q-percent correct">100%</span></th>
+                                                <th>Q43 <span class="q-percent correct">100%</span></th>
+                                                <th>Q44 <span class="q-percent incorrect">0%</span></th>
+                                                <th>Q45 <span class="q-percent warning">100%</span></th>
+                                                <th>Q46 <span class="q-percent urgent">100%</span></th>
+                                                <th>Q47 <span class="q-percent correct">100%</span></th>
+                                                <th>Q48 <span class="q-percent incorrect">100%</span></th>
+
+                                                <th>Q49 <span class="q-percent urgent">100%</span></th>
+                                                <th>Q50 <span class="q-percent correct">100%</span></th>
                                                 
                                             </tr>
                                         </thead>
@@ -589,6 +636,286 @@
                                                     <em class="correct"><i>&#10003;</i></em>
                                                 </td>
 
+                                                <td>
+                                                    <div class="quiz-status-tooltip incorrect">
+                                                        <div class="tooltip-box">
+                                                            <div class="tooltip-top">
+                                                                <div class="status-box">
+                                                                    <span class="incorrect"><i>&#10005;</i> Incorrect</span>
+                                                                    <button type="button"><img src="/assets/default/svgs/checkbox.svg" alt=""></button>
+                                                                </div>
+                                                                <div class="attempt-info">
+                                                                    <span>
+                                                                        <em>16</em>
+                                                                        time
+                                                                    </span>
+                                                                    <span>
+                                                                        <em>0</em>
+                                                                        point
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quiz-type">
+                                                                <span>Multiple Choice question</span>
+                                                                <h5>8. Science helps us in:</h5>
+                                                            </div>
+                                                            <div class="user-response">
+                                                                <span>Meheak B's response</span>
+                                                                <h5><i>&#10005;</i> Standing</h5>
+                                                            </div>
+                                                            <div class="btn-holder">
+                                                                <button type="button" class="view-all-btn">View for all students</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <em class="urgent"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="incorrect"><i>&#10005;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="urgent"><i>&#10003;</i></span>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+
+                                                <td>
+                                                    <div class="quiz-status-tooltip incorrect">
+                                                        <div class="tooltip-box">
+                                                            <div class="tooltip-top">
+                                                                <div class="status-box">
+                                                                    <span class="incorrect"><i>&#10005;</i> Incorrect</span>
+                                                                    <button type="button"><img src="/assets/default/svgs/checkbox.svg" alt=""></button>
+                                                                </div>
+                                                                <div class="attempt-info">
+                                                                    <span>
+                                                                        <em>16</em>
+                                                                        time
+                                                                    </span>
+                                                                    <span>
+                                                                        <em>0</em>
+                                                                        point
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quiz-type">
+                                                                <span>Multiple Choice question</span>
+                                                                <h5>8. Science helps us in:</h5>
+                                                            </div>
+                                                            <div class="user-response">
+                                                                <span>Meheak B's response</span>
+                                                                <h5><i>&#10005;</i> Standing</h5>
+                                                            </div>
+                                                            <div class="btn-holder">
+                                                                <button type="button" class="view-all-btn">View for all students</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <em class="urgent"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="incorrect"><i>&#10005;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="urgent"><i>&#10003;</i></span>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+
+                                                <td>
+                                                    <div class="quiz-status-tooltip incorrect">
+                                                        <div class="tooltip-box">
+                                                            <div class="tooltip-top">
+                                                                <div class="status-box">
+                                                                    <span class="incorrect"><i>&#10005;</i> Incorrect</span>
+                                                                    <button type="button"><img src="/assets/default/svgs/checkbox.svg" alt=""></button>
+                                                                </div>
+                                                                <div class="attempt-info">
+                                                                    <span>
+                                                                        <em>16</em>
+                                                                        time
+                                                                    </span>
+                                                                    <span>
+                                                                        <em>0</em>
+                                                                        point
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quiz-type">
+                                                                <span>Multiple Choice question</span>
+                                                                <h5>8. Science helps us in:</h5>
+                                                            </div>
+                                                            <div class="user-response">
+                                                                <span>Meheak B's response</span>
+                                                                <h5><i>&#10005;</i> Standing</h5>
+                                                            </div>
+                                                            <div class="btn-holder">
+                                                                <button type="button" class="view-all-btn">View for all students</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <em class="urgent"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="incorrect"><i>&#10005;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="urgent"><i>&#10003;</i></span>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+
+                                                <td>
+                                                    <div class="quiz-status-tooltip incorrect">
+                                                        <div class="tooltip-box">
+                                                            <div class="tooltip-top">
+                                                                <div class="status-box">
+                                                                    <span class="incorrect"><i>&#10005;</i> Incorrect</span>
+                                                                    <button type="button"><img src="/assets/default/svgs/checkbox.svg" alt=""></button>
+                                                                </div>
+                                                                <div class="attempt-info">
+                                                                    <span>
+                                                                        <em>16</em>
+                                                                        time
+                                                                    </span>
+                                                                    <span>
+                                                                        <em>0</em>
+                                                                        point
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quiz-type">
+                                                                <span>Multiple Choice question</span>
+                                                                <h5>8. Science helps us in:</h5>
+                                                            </div>
+                                                            <div class="user-response">
+                                                                <span>Meheak B's response</span>
+                                                                <h5><i>&#10005;</i> Standing</h5>
+                                                            </div>
+                                                            <div class="btn-holder">
+                                                                <button type="button" class="view-all-btn">View for all students</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <em class="urgent"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="incorrect"><i>&#10005;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="urgent"><i>&#10003;</i></span>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+
+                                                <td>
+                                                    <div class="quiz-status-tooltip incorrect">
+                                                        <div class="tooltip-box">
+                                                            <div class="tooltip-top">
+                                                                <div class="status-box">
+                                                                    <span class="incorrect"><i>&#10005;</i> Incorrect</span>
+                                                                    <button type="button"><img src="/assets/default/svgs/checkbox.svg" alt=""></button>
+                                                                </div>
+                                                                <div class="attempt-info">
+                                                                    <span>
+                                                                        <em>16</em>
+                                                                        time
+                                                                    </span>
+                                                                    <span>
+                                                                        <em>0</em>
+                                                                        point
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quiz-type">
+                                                                <span>Multiple Choice question</span>
+                                                                <h5>8. Science helps us in:</h5>
+                                                            </div>
+                                                            <div class="user-response">
+                                                                <span>Meheak B's response</span>
+                                                                <h5><i>&#10005;</i> Standing</h5>
+                                                            </div>
+                                                            <div class="btn-holder">
+                                                                <button type="button" class="view-all-btn">View for all students</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <em class="urgent"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="incorrect"><i>&#10005;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="urgent"><i>&#10003;</i></span>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+
                                                 
                                             </tr>
                                             <tr>
@@ -604,6 +931,286 @@
                                                     5 <small>(83%)</small>
                                                 </td>
                                                 <td>
+                                                    <em class="urgent"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="incorrect"><i>&#10005;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="urgent"><i>&#10003;</i></span>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+
+                                                <td>
+                                                    <div class="quiz-status-tooltip incorrect">
+                                                        <div class="tooltip-box">
+                                                            <div class="tooltip-top">
+                                                                <div class="status-box">
+                                                                    <span class="incorrect"><i>&#10005;</i> Incorrect</span>
+                                                                    <button type="button"><img src="/assets/default/svgs/checkbox.svg" alt=""></button>
+                                                                </div>
+                                                                <div class="attempt-info">
+                                                                    <span>
+                                                                        <em>16</em>
+                                                                        time
+                                                                    </span>
+                                                                    <span>
+                                                                        <em>0</em>
+                                                                        point
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quiz-type">
+                                                                <span>Multiple Choice question</span>
+                                                                <h5>8. Science helps us in:</h5>
+                                                            </div>
+                                                            <div class="user-response">
+                                                                <span>Meheak B's response</span>
+                                                                <h5><i>&#10005;</i> Standing</h5>
+                                                            </div>
+                                                            <div class="btn-holder">
+                                                                <button type="button" class="view-all-btn">View for all students</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <em class="urgent"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="incorrect"><i>&#10005;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="urgent"><i>&#10003;</i></span>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+
+                                                <td>
+                                                    <div class="quiz-status-tooltip incorrect">
+                                                        <div class="tooltip-box">
+                                                            <div class="tooltip-top">
+                                                                <div class="status-box">
+                                                                    <span class="incorrect"><i>&#10005;</i> Incorrect</span>
+                                                                    <button type="button"><img src="/assets/default/svgs/checkbox.svg" alt=""></button>
+                                                                </div>
+                                                                <div class="attempt-info">
+                                                                    <span>
+                                                                        <em>16</em>
+                                                                        time
+                                                                    </span>
+                                                                    <span>
+                                                                        <em>0</em>
+                                                                        point
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quiz-type">
+                                                                <span>Multiple Choice question</span>
+                                                                <h5>8. Science helps us in:</h5>
+                                                            </div>
+                                                            <div class="user-response">
+                                                                <span>Meheak B's response</span>
+                                                                <h5><i>&#10005;</i> Standing</h5>
+                                                            </div>
+                                                            <div class="btn-holder">
+                                                                <button type="button" class="view-all-btn">View for all students</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <em class="urgent"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="incorrect"><i>&#10005;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="urgent"><i>&#10003;</i></span>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+
+                                                <td>
+                                                    <div class="quiz-status-tooltip incorrect">
+                                                        <div class="tooltip-box">
+                                                            <div class="tooltip-top">
+                                                                <div class="status-box">
+                                                                    <span class="incorrect"><i>&#10005;</i> Incorrect</span>
+                                                                    <button type="button"><img src="/assets/default/svgs/checkbox.svg" alt=""></button>
+                                                                </div>
+                                                                <div class="attempt-info">
+                                                                    <span>
+                                                                        <em>16</em>
+                                                                        time
+                                                                    </span>
+                                                                    <span>
+                                                                        <em>0</em>
+                                                                        point
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quiz-type">
+                                                                <span>Multiple Choice question</span>
+                                                                <h5>8. Science helps us in:</h5>
+                                                            </div>
+                                                            <div class="user-response">
+                                                                <span>Meheak B's response</span>
+                                                                <h5><i>&#10005;</i> Standing</h5>
+                                                            </div>
+                                                            <div class="btn-holder">
+                                                                <button type="button" class="view-all-btn">View for all students</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <em class="urgent"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="incorrect"><i>&#10005;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="urgent"><i>&#10003;</i></span>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+
+                                                <td>
+                                                    <div class="quiz-status-tooltip incorrect">
+                                                        <div class="tooltip-box">
+                                                            <div class="tooltip-top">
+                                                                <div class="status-box">
+                                                                    <span class="incorrect"><i>&#10005;</i> Incorrect</span>
+                                                                    <button type="button"><img src="/assets/default/svgs/checkbox.svg" alt=""></button>
+                                                                </div>
+                                                                <div class="attempt-info">
+                                                                    <span>
+                                                                        <em>16</em>
+                                                                        time
+                                                                    </span>
+                                                                    <span>
+                                                                        <em>0</em>
+                                                                        point
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quiz-type">
+                                                                <span>Multiple Choice question</span>
+                                                                <h5>8. Science helps us in:</h5>
+                                                            </div>
+                                                            <div class="user-response">
+                                                                <span>Meheak B's response</span>
+                                                                <h5><i>&#10005;</i> Standing</h5>
+                                                            </div>
+                                                            <div class="btn-holder">
+                                                                <button type="button" class="view-all-btn">View for all students</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <em class="urgent"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="incorrect"><i>&#10005;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="urgent"><i>&#10003;</i></span>
+                                                </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
+
+                                                <td>
+                                                    <div class="quiz-status-tooltip incorrect">
+                                                        <div class="tooltip-box">
+                                                            <div class="tooltip-top">
+                                                                <div class="status-box">
+                                                                    <span class="incorrect"><i>&#10005;</i> Incorrect</span>
+                                                                    <button type="button"><img src="/assets/default/svgs/checkbox.svg" alt=""></button>
+                                                                </div>
+                                                                <div class="attempt-info">
+                                                                    <span>
+                                                                        <em>16</em>
+                                                                        time
+                                                                    </span>
+                                                                    <span>
+                                                                        <em>0</em>
+                                                                        point
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="quiz-type">
+                                                                <span>Multiple Choice question</span>
+                                                                <h5>8. Science helps us in:</h5>
+                                                            </div>
+                                                            <div class="user-response">
+                                                                <span>Meheak B's response</span>
+                                                                <h5><i>&#10005;</i> Standing</h5>
+                                                            </div>
+                                                            <div class="btn-holder">
+                                                                <button type="button" class="view-all-btn">View for all students</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                     <em class="urgent"><i>&#10003;</i></em>
                                                 </td>
                                                 <td>
