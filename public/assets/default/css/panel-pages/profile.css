@@ -1453,9 +1453,12 @@ New Quiz Page Style Start
     overflow: hidden;
     overflow-y: auto;
     z-index: 5;
+    visibility: hidden;
+    opacity: 0;
 }
 .quiz-data-slide.active {
-    display: block;
+    visibility: visible;
+    opacity: 1;
     right: 0;
 }
 .quiz-data-slide:before {
