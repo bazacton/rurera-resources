@@ -1855,15 +1855,8 @@
             $(".slide-controls .close-btn").click(function(){
                 $(".quiz-data-slide").toggleClass("active");
             });
-
-            jQuery(document).click(function(event) {
-                var outside = jQuery(".quiz-data-slide");
-                if (
-                    !outside.is(event.target) &&
-                    !outside.has(event.target).length
-                ) {
-                    outside.removeClass("active");
-                }
+            $("body").click(function(){
+                $(".quiz-data-slide").toggleClass("active");
             });
         });
         /*Quiz Data Slide Function End*/
