@@ -1432,7 +1432,10 @@ New Quiz Page Style Start
     min-width: 300px;
 }
 .quiz-data-table .circle_percent {
-    font-size: 35px;
+    font-size: 40px;
+}
+.quiz-data-table .percent_text {
+    font-size: 11px;
 }
 .quiz-data-table .circle_inbox {
     position: absolute;
