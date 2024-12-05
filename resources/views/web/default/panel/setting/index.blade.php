@@ -130,6 +130,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    <a href="#" class="login-toggle1">open modal</a>
                     <div class="quiz-data-slide">
                         <div class="quiz-data-slide-inner">
                             <button type="button" class="close-btn">
@@ -1639,8 +1640,8 @@
         });
 
         /*Quiz Data Slide Function Start*/
-
-        jQuery(".quiz-data-table td label").on("click", function() {
+        
+        jQuery(".login-toggle1").on("click", function() {
             jQuery(".quiz-data-slide").toggleClass("active");
         });
 
