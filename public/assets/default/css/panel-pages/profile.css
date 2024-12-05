@@ -1447,16 +1447,17 @@ New Quiz Page Style Start
     transition: 1s;
     position: fixed;
     right: 100%;
-    top: 100px;
+    top: 0;
     min-height: 200px;
     background-color: #fff;
     display: none;
     padding: 25px;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     overflow-y: auto;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
     z-index: 5;
+    width: 100%;
 }
 .quiz-data-slide.active {
     display: block;
