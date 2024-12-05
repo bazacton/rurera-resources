@@ -22,6 +22,118 @@
 @section('content')
     <div class="row">
         <div class="col-12">
+            <div class="quiz-data-holder mb-30">
+                <div class="quiz-data-filters">
+                    <span class="sorting-lable">Filter by:</span>
+                    <div class="select-field">
+                        <select>
+                            <option value="All Games">All Games</option>
+                            <option value="Footbal">Footbal</option>
+                            <option value="Car Racing">Car Racing</option>
+                            <option value="Cricket">Cricket</option>
+                            <option value="Hockey">Hockey</option>
+                        </select>
+                    </div>
+                    <div class="select-field">
+                        <select>
+                            <option value="All Reports">All Reports</option>
+                            <option value="Weekly Reports">Weekly Reports</option>
+                            <option value="Monthly Reports">Monthly Reports</option>
+                            <option value="Yearly Reports">Yearly Reports</option>
+                        </select>
+                    </div>
+                    <div class="select-field">
+                        <select>
+                            <option value="All Classes">All Classes</option>
+                            <option value="Grade 1">Grade 1</option>
+                            <option value="Grade 2">Grade 3</option>
+                            <option value="Grade 3">Grade 3</option>
+                        </select>
+                    </div>
+                    <div class="select-field">
+                        <select>
+                            <option value="All Classes">Filter by Date</option>
+                            <option value="04/12/2024">04/12/2024</option>
+                            <option value="04/12/2024">Grade 3</option>
+                            <option value="04/12/2024">Grade 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="quiz-data-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="checkbox-field">
+                                        <input type="checkbox" id="q-type">
+                                        <label for="q-type">Type</label>
+                                    </div>
+                                </th>
+                                <th>Quiz Name</th>
+                                <th class="text-center">Total <br> Participants</th>
+                                <th>Accuracy</th>
+                                <th>Code</th>
+                                <th>Class</th>
+                                <th class="text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="checkbox-field">
+                                        <input type="checkbox" id="assigned">
+                                        <label for="assigned">
+                                            <span><img src="/assets/default/svgs/list-view.svg" alt=""> Assigned</span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    Science
+                                    <small>Dec 3 - <em>Runing</em></small>
+                                </td>
+                                <td class="text-center">2</td>
+                                <td>
+                                    <div class="progress-holder">
+                                        <div class="progress-box">
+                                            <div class="circle_percent" data-percent="50">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                                <div class="circle_inbox">
+                                                    <span class="percent_text">50%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <span class="c-grade">Grade 6</span>
+                                </td>
+                                <td class="text-center">
+                                    <div class="quiz-data-controls">
+                                        <button type="button">Edit Questions</button>
+                                        <div class="dropdown-box">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
+                                                </a>
+                                                <div class="dropdown-menu" style="">
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/delete.svg" alt=""> Delete</a>
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
             <div class="elements-holder mb-30 bg-white panel-border rounded-sm p-15">
                 <div class="quiz-categories mb-25">
                     <div class="row">
@@ -558,19 +670,19 @@
                             <h3>My library</h3>
                             <ul>
                                 <li>
-                                    <a href="#"><span class="icon-box"></span> Created by me</a>
+                                    <a href="#"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> Created by me</a>
                                     <span class="count-number">1</span>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="icon-box"></span> Imported</a>
+                                    <a href="#"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> Imported</a>
                                     <span class="count-number">0</span>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="icon-box"></span> Perviously used</a>
+                                    <a href="#"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> Perviously used</a>
                                     <span class="count-number">0</span>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="icon-box"></span> Liked by me</a>
+                                    <a href="#"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> Liked by me</a>
                                     <span class="count-number">0</span>
                                 </li>
                             </ul>
@@ -613,6 +725,44 @@
                                         <span>Kaiser K</span>
                                         <span>2 hours ago</span>
                                     </span>
+                                </div>
+                                <div class="listing-controls">
+                                    <button class="continue-btn">Continue editing</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing-card mb-15 bg-white panel-border rounded-sm">
+                            <div class="img-holder">
+                                <figure>
+                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                </figure>
+                            </div>
+                            <div class="text-holder">
+                                <span class="listing-lable">Assesment</span>
+                                <h3><a href="#">Sciency Science</a></h3>
+                                <ul class="list-options">
+                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 8 questions</li>
+                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 1st-4th Grade</li>
+                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Science</li>
+                                </ul>
+                                <div class="author-info">
+                                    <span class="img-box"><img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt=""></span>
+                                    <span class="info-text">
+                                        <span>Kaiser K</span>
+                                        <span>2 hours ago</span>
+                                    </span>
+                                </div>
+                                <div class="listing-controls">
+                                    <button class="share-btn">Share <span class="icon-box"><img src="/assets/default/svgs/share.svg" alt=""></span></button>
+                                    <div class="dropdown-box">
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"></a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Play</a>
+                                                <a class="dropdown-item" href="#">Pause</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
