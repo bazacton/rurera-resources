@@ -305,6 +305,35 @@ Set Up Quiz Page Style Start
 Set Up Quiz Page Style End
 **************************************/
 /* Quiz Set Up Listings style Start */
+
+/* Sidebar Nav Style Start */
+.quiz-setup-sidenav h3 {
+    margin-bottom: 15px;
+}
+.quiz-setup-sidenav li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #6d6d6d;
+    margin-bottom: 18px;
+    line-height: normal;
+    font-size: 14px;
+}
+.quiz-setup-sidenav li img {
+    height: 15px;
+    width: 15px;
+    filter: invert(46%) sepia(1%) saturate(2668%) hue-rotate(353deg) brightness(91%) contrast(84%);
+}
+.quiz-setup-sidenav li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #6d6d6d;
+    font-weight: 500;
+}
+/* Sidebar Nav Style End */
+
 .listing-filters {
     display: flex;
     align-items: center;
@@ -408,6 +437,90 @@ Set Up Quiz Page Style End
 }
 .author-info .info-text span:first-child:before {
     display: none;
+}
+.quiz-setup-sidenav h3 {
+    margin-bottom: 15px;
+}
+.quiz-setup-sidenav li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #6d6d6d;
+    margin-bottom: 18px;
+    line-height: normal;
+    font-size: 14px;
+}
+.quiz-setup-sidenav li img {
+    height: 15px;
+    width: 15px;
+    filter: invert(46%) sepia(1%) saturate(2668%) hue-rotate(353deg) brightness(91%) contrast(84%);
+}
+.quiz-setup-sidenav li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #6d6d6d;
+    font-weight: 500;
+}
+.listing-controls {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.listing-controls button {
+    border: 0;
+    background-color: #f3f1f4;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.listing-controls button img {
+    height: 12px;
+    width: 12px;
+}
+.listing-controls .dropdown-toggle {
+    background-color: var(--blue);
+    color: #fff;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+.listing-controls .dropdown-toggle:hover {
+    color: #fff;
+}
+.listing-controls .dropdown-menu {
+    left: auto !important;
+    right: 0;
+    visibility: visible;
+    opacity: 1;
+    top: 100% !important;
+    margin: 0;
+    min-width: 150px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    display: none;
+}
+.listing-controls .dropdown-menu.show {
+    display: block;
+}
+.listing-controls .dropdown-menu .dropdown-item {
+    padding: 5px 0;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 500;
+    color: #64748b;
+}
+.listing-controls .dropdown:hover .dropdown-menu {
+    margin-top: 0;
 }
 /* Quiz Set Up Listings style end */
 
