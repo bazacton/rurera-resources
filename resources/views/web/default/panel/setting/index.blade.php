@@ -130,7 +130,6 @@
                             </tr>
                         </tbody>
                     </table>
-                    <a href="#" class="login-toggle1">open modal</a>
                     <div class="quiz-data-slide">
                         <div class="quiz-data-slide-inner">
                             <button type="button" class="close-btn">
