@@ -1967,25 +1967,7 @@
 
         /*Quiz Data Slide Function Start*/
 
-        // $(document).ready(function(){
-        //     $(".quiz-data-table td label, .slide-controls .close-btn").click(function(){
-        //         $(".quiz-data-slide").toggleClass("active");
-        //     });
-        // });
-
-        jQuery(".quiz-data-table td label").on("click", function() {
-            jQuery(".quiz-data-slide").toggleClass("active");
-        });
-
-        jQuery(document).click(function(event) {
-            var container = jQuery(".quiz-data-slide, .quiz-data-table td label");
-            if (
-                !container.is(event.target) &&
-                !container.has(event.target).length
-            ) {
-                container.removeClass("active");
-            }
-        });
+        
         
         /*Quiz Data Slide Function End*/
 
