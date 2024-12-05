@@ -1851,6 +1851,10 @@
             $(".quiz-data-table td label").click(function(){
                 $(".quiz-data-slide").toggleClass("active");
             });
+
+            $(".slide-controls .close-btn").click(function(){
+                $(".quiz-data-slide").toggleClass("active");
+            });
         });
         /*Quiz Data Slide Function End*/
 
