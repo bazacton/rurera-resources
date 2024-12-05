@@ -1851,11 +1851,8 @@
             $(".quiz-data-table td label, .quiz-data-slide:before").click(function(){
                 $(".quiz-data-slide").toggleClass("active");
             });
-
-            $(".slide-controls .close-btn").click(function(){
-                $(".quiz-data-slide").toggleClass("active");
-            });
-            $("body").click(function(){
+            
+            $("body, .slide-controls .close-btn").click(function(){
                 $(".quiz-data-slide").toggleClass("active");
             });
         });
