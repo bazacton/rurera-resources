@@ -132,9 +132,215 @@
                     </table>
                     <div class="quiz-data-slide">
                         <div class="quiz-data-slide-inner">
-                            <button type="button" class="close-btn">
-                                <span>&times;</span>
-                            </button>
+                            <div class="slide-controls">
+                                <button type="button" class="close-btn">
+                                    <span>&times;</span>
+                                </button>
+                                <div class="prev-next-controls">
+                                    <button type="button" class="prev-btn">Prev</button>
+                                    <button type="button" class="next-btn">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Participants html start -->
+                            <div class="participants-holder">
+                                <div class="quiz-status">
+                                    <ul>
+                                        <li class="correct">Correct</li>
+                                        <li class="pending">Yet to b graded</li>
+                                        <li class="incorrect">Incorrect</li>
+                                        <li class="urgent">Urgent</li>
+                                    </ul>
+                                </div>
+                                <div class="participants-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th></th>
+                                                <th>Accuracy</th>
+                                                <th>Points</th>
+                                                <th>Score</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="user-info">
+                                                        <span class="img-box">
+                                                            <img src="/avatar/svgA04056688806304609.png" class="rounded-circle" alt="Rehan Qaiser" width="400" height="400" itemprop="image" loading="eager" title="rounded circle">
+                                                        </span>
+                                                        <span class="user-name">
+                                                            Muhammad Rehan
+                                                            <em>2 attempts</em>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-attempt-status">
+                                                        <ul>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="pending"><span></span></li>
+                                                            <li class="pending"><span></span></li>
+                                                            <li class="incorrect"><span></span></li>
+                                                            <li class="urgent"><span></span></li>
+                                                            <li class="urgent"><span></span></li>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="pending"><span></span></li>
+                                                            <li class="pending"><span></span></li>
+                                                            <li class="incorrect"><span></span></li>
+                                                            <li class="urgent"><span></span></li>
+                                                            <li class="urgent"><span></span></li>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="pending"><span></span></li>
+                                                            <li class="pending"><span></span></li>
+                                                            <li class="incorrect"><span></span></li>
+                                                            <li class="urgent"><span></span></li>
+                                                            <li class="urgent"><span></span></li>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="pending"><span></span></li>
+                                                            <li class="pending"><span></span></li>
+                                                            <li class="incorrect"><span></span></li>
+                                                            <li class="urgent"><span></span></li>
+                                                            <li class="urgent"><span></span></li>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="pending"><span></span></li>
+                                                            <li class="pending"><span></span></li>
+                                                            <li class="incorrect"><span></span></li>
+                                                            <li class="urgent"><span></span></li>
+                                                            <li class="urgent"><span></span></li>
+                                                        </ul>
+                                                        <div class="attempt-numbers">
+                                                            <span class="correct"><i>✓</i> 3</span>
+                                                            <span class="incorrect"><i>✕</i> 1</span>
+                                                            <span class="urgent"><i>✓</i> 2</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="progress-holder">
+                                                        <div class="progress-box">
+                                                            <div class="circle_percent" data-percent="35">
+                                                                <div class="circle_inner">
+                                                                    <div class="round_per"></div>
+                                                                </div>
+                                                                <div class="circle_inbox">
+                                                                    <span class="percent_text">35%</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="points">5<em>/6</em></span>
+                                                </td>
+                                                <td>
+                                                    <span class="score">5310</span>
+                                                </td>
+                                                <td>
+                                                    <div class="quiz-controls">
+                                                        <button type="button">Evaluate</button>
+                                                        <button type="button"><img src="/assets/default/svgs/refresh.svg" alt=""></button>
+                                                        <div class="dropdown-box">
+                                                            <div class="dropdown">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
+                                                                </a>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
+                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/delete.svg" alt=""> Delete</a>
+                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="user-info">
+                                                        <span class="img-box">
+                                                            <img src="/avatar/svgA04056688806304609.png" class="rounded-circle" alt="Rehan Qaiser" width="400" height="400" itemprop="image" loading="eager" title="rounded circle">
+                                                        </span>
+                                                        <span class="user-name">
+                                                            Muhammad Rehan
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="user-attempt-status">
+                                                        <ul>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="correct"><span></span></li>
+                                                            <li class="pending"><span></span></li>
+                                                            <li class="pending"><span></span></li>
+                                                            <li class="incorrect"><span></span></li>
+                                                            <li class="urgent"><span></span></li>
+                                                            <li class="urgent"><span></span></li>
+                                                        </ul>
+                                                        <div class="attempt-numbers">
+                                                            <span class="correct"><i>✓</i> 3</span>
+                                                            <span class="incorrect"><i>✕</i> 1</span>
+                                                            <span class="urgent"><i>✓</i> 2</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="progress-holder">
+                                                        <div class="progress-box">
+                                                            <div class="circle_percent" data-percent="35">
+                                                                <div class="circle_inner">
+                                                                    <div class="round_per"></div>
+                                                                </div>
+                                                                <div class="circle_inbox">
+                                                                    <span class="percent_text">50%</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="points">5<em>/6</em></span>
+                                                </td>
+                                                <td>
+                                                    <span class="score">300</span>
+                                                </td>
+                                                <td>
+                                                    <div class="quiz-controls">
+                                                        <button type="button">Evaluate</button>
+                                                        <button type="button"><img src="/assets/default/svgs/refresh.svg" alt=""></button>
+                                                        <div class="dropdown-box">
+                                                            <div class="dropdown">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
+                                                                </a>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
+                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/delete.svg" alt=""> Delete</a>
+                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- participants html end -->
                         </div>
                     </div>
                 </div>
