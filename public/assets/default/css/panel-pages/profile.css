@@ -1494,11 +1494,12 @@ New Quiz Page Style Start
     gap: 10px;
 }
 .slide-controls .close-btn {
-    font-size: 24px;
-    height: 35px;
-    padding: 0 15px;
-    display: inline-flex;
-    justify-content: center;
+    font-size: 34px;
+    background: none;
+    padding: 0;
+    border: 0;
+    height: auto;
+    line-height: normal;
 }
 
 /* Quiz Data Table style end */
