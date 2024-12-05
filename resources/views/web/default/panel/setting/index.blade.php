@@ -1851,8 +1851,8 @@
             $(".quiz-data-table td label, .quiz-data-slide:before").click(function(){
                 $(".quiz-data-slide").toggleClass("active");
             });
-            
-            $("body, .slide-controls .close-btn").click(function(){
+
+            $(".slide-controls .close-btn").click(function(){
                 $(".quiz-data-slide").toggleClass("active");
             });
         });
