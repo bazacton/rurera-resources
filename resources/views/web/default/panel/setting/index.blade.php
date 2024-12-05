@@ -1640,7 +1640,7 @@
 
         /*Quiz Data Slide Function Start*/
 
-        jQuery(".quiz-data-table td label span").on("click", function() {
+        jQuery(".quiz-data-table td label").on("click", function() {
             jQuery(".quiz-data-slide").toggleClass("active");
         });
 
