@@ -370,6 +370,7 @@ Set Up Quiz Page Style End
 }
 .listing-card .text-holder {
     width: calc(100% - 135px);
+    position: relative;
 }
 .listing-card .author-info img {
     width: 20px;
@@ -1301,56 +1302,6 @@ New Quiz Page Style Start
     border-radius: 5px;
     padding: 5px 15px;
     display: none;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    !i;
-    !;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    !i;
-    !;
 }
 
 .listing-controls .dropdown-menu .dropdown-item {
