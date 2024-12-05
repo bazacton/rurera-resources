@@ -1407,6 +1407,7 @@ New Quiz Page Style Start
     gap: 5px;
     font-size: 12px;
     border-left: 3px solid #079207;
+    cursor: pointer;
 }
 
 .quiz-data-table td label span img {
