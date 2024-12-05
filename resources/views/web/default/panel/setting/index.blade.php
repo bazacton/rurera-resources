@@ -2016,6 +2016,17 @@
 		});
         /*Circle Progress Function End*/
 
+        $( function() {
+            $(".overview-table table").on("click", ".remove", function() {
+                $(this).quiz-status-tooltip('hide');
+                $(this).closest('tr').remove();
+            });
+        });
+
+        $( function() {
+            $(".show_tip").quiz-status-tooltip({container: 'body'});
+        });
+
 		
     </script>
 	
