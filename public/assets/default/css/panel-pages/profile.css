@@ -1463,6 +1463,17 @@ New Quiz Page Style Start
     display: block;
     right: 0;
 }
+.quiz-data-slide:before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.4);
+    content: "";
+}
+
 .slide-controls {
     display: flex;
     align-items: center;
