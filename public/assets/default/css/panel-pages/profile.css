@@ -1449,7 +1449,6 @@ New Quiz Page Style Start
     position: fixed;
     right: 100%;
     top: 0;
-    display: none;
     height: 100%;
     overflow: hidden;
     overflow-y: auto;
