@@ -1431,12 +1431,15 @@ New Quiz Page Style Start
 .quiz-data-table td:nth-child(2) {
     min-width: 300px;
 }
-
-.quiz-data-table .circle_inbox .percent_text {left: 100%;transform: translate(0,-50%);margin-left: 15px;font-weight: 400;}
-
 .quiz-data-table .circle_percent {
-    overflow: visible;
     font-size: 35px;
+}
+.quiz-data-table .circle_inbox {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
 }
 .quiz-data-controls button {
     border: 1px solid #ddd;
