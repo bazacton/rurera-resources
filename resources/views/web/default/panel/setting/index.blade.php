@@ -1701,13 +1701,11 @@
                                 </div>
                                 <div class="listing-controls">
                                     <button class="share-btn">Share <span class="icon-box"><img src="/assets/default/svgs/share.svg" alt=""></span></button>
-                                    <div class="dropdown-box">
-                                        <div class="dropdown">
-                                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"></a>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Play</a>
-                                                <a class="dropdown-item" href="#">Pause</a>
-                                            </div>
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Play</a>
+                                        <div class="dropdown-menu" style="">
+                                            <a class="dropdown-item" href="#">Play</a>
+                                            <a class="dropdown-item" href="#">Pause</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1966,9 +1964,28 @@
         });
 
         /*Quiz Data Slide Function Start*/
+        $(document).ready(function () {
+            $(".quiz-data-table td label, .slide-controls .close-btn").click(function (e) {
+                e.stopPropagation(); 
+                $(".quiz-data-slide").toggleClass("active");
+            });
 
-        
-        
+            $(".quiz-data-slide").click(function (e) {
+                const $element = $(this);
+                const offset = $element.offset();
+                const pseudoAreaWidth = 20; 
+                if (
+                    e.pageX < offset.left + pseudoAreaWidth || 
+                    e.pageY < offset.top + pseudoAreaWidth 
+                ) {
+                    $element.removeClass("active");
+                }
+            });
+
+            $(".quiz-data-slide").on("click", function (e) {
+                e.stopPropagation();
+            });
+        });
         /*Quiz Data Slide Function End*/
 
 		
