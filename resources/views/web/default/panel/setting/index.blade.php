@@ -1234,6 +1234,12 @@
                                                 <td>
                                                     <em class="correct"><i>&#10003;</i></em>
                                                 </td>
+                                                <td>
+                                                    <em class="pending"><i>&#10003;</i></em>
+                                                </td>
+                                                <td>
+                                                    <em class="correct"><i>&#10003;</i></em>
+                                                </td>
 
                                                 
                                             </tr>
