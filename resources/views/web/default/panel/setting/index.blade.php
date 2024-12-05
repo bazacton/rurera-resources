@@ -1847,14 +1847,27 @@
         /*Quiz Data Slide Function Start*/
     
 
-        $(document).ready(function(){
-            $(".quiz-data-table td label, .quiz-data-slide:before").click(function(){
-                $(".quiz-data-slide").toggleClass("active");
-            });
+        // $(document).ready(function(){
+        //     $(".quiz-data-table td label, .quiz-data-slide:before").click(function(){
+        //         $(".quiz-data-slide").toggleClass("active");
+        //     });
 
-            $(".slide-controls .close-btn").click(function(){
-                $(".quiz-data-slide").toggleClass("active");
+        //     $(".slide-controls .close-btn").click(function(){
+        //         $(".quiz-data-slide").toggleClass("active");
+        //     });
+        // });
+
+
+        $(document).ready(function(){
+            $(".quiz-data-table td label").click(function(){
+                $(this).find(".quiz-data-slide").toggle();
             });
+        });
+        $(document).on("click", function(event){
+            var $trigger = $(".close-btn");
+            if($trigger !== event.target && !$trigger.has(event.target).length){
+                $(".quiz-data-slide").hide();
+            }            
         });
         /*Quiz Data Slide Function End*/
 
