@@ -138,7 +138,7 @@
                                 </button>
                                 <div class="prev-next-controls">
                                     <button type="button" class="prev-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-left.svg" alt=""></span> Prev</button>
-                                    <button type="button" class="next-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-right.svg" alt=""></span> Next</button>
+                                    <button type="button" class="next-btn"><span class="icon-box">Next <img src="/assets/default/svgs/arrow-right.svg" alt=""></span></button>
                                 </div>
                             </div>
 

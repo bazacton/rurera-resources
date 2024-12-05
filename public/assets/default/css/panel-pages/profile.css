@@ -1501,6 +1501,14 @@ New Quiz Page Style Start
     height: auto;
     line-height: normal;
 }
+.prev-next-controls img {
+    height: 24px;
+    width: 24px;
+}
+.prev-next-controls button {
+    display: inline-flex;
+    align-items: center;
+}
 
 /* Quiz Data Table style end */
 
