@@ -1509,6 +1509,12 @@ New Quiz Page Style Start
     display: inline-flex;
     align-items: center;
 }
+.prev-next-controls .prev-btn {
+    padding-left: 10px;
+}
+.prev-next-controls .next-btn {
+    padding-right: 10px;
+}
 
 /* Quiz Data Table style end */
 
