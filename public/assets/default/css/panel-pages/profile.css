@@ -1462,6 +1462,29 @@ New Quiz Page Style Start
     display: block;
     right: 0;
 }
+.slide-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.slide-controls button {
+    border: 1px solid #ddd;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+.prev-next-controls {
+    display: inline-flex;
+    gap: 10px;
+}
+.slide-controls .close-btn {
+    font-size: 24px;
+    height: 35px;
+    padding: 0 15px;
+    display: inline-flex;
+    justify-content: center;
+}
 
 /* Quiz Data Table style end */
 
