@@ -113,16 +113,11 @@
                                 <td class="text-center">
                                     <div class="quiz-data-controls">
                                         <button type="button">Edit Questions</button>
-                                        <div class="dropdown-box">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="">Play</span>
-                                                </a>
-                                                <div class="dropdown-menu" style="">
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/delete.svg" alt=""> Delete</a>
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
-                                                </div>
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Play</a>
+                                            <div class="dropdown-menu" style="">
+                                                <a class="dropdown-item" href="#">Play</a>
+                                                <a class="dropdown-item" href="#">Pause</a>
                                             </div>
                                         </div>
                                     </div>
