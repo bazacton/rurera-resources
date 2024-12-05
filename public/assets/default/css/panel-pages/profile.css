@@ -1470,10 +1470,13 @@ New Quiz Page Style Start
     pointer-events: none;
     height: 100%;
     width: 100%;
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.6);
     content: "";
 }
-
+.quiz-data-slide-inner {
+    position: relative;
+    z-index: 1;
+}
 .slide-controls {
     display: flex;
     align-items: center;
