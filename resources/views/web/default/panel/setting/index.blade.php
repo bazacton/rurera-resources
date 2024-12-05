@@ -130,6 +130,13 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="quiz-data-slide">
+                        <div class="quiz-data-slide-inner">
+                            <button type="button" class="close-btn">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1630,6 +1637,23 @@
                 $(this).closest('.tab-content').toggleClass('fullscreen');
             });
         });
+
+        /*Quiz Data Slide Function Start*/
+
+        jQuery(".quiz-data-table td label span").on("click", function() {
+            jQuery(".quiz-data-slide").toggleClass("active");
+        });
+
+        jQuery(document).click(function(event) {
+            var container = jQuery(".quiz-data-slide");
+            if (
+                !container.is(event.target) &&
+                !container.has(event.target).length
+            ) {
+                container.removeClass("active");
+            }
+        });
+        /*Quiz Data Slide Function End*/
 
 		
     </script>
