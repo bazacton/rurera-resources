@@ -1475,6 +1475,10 @@ New Quiz Page Style Start
     height: 100%;
     padding: 25px;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    max-width: 500px;
+    min-width: 500px;
+    overflow: hidden;
+    overflow-y: auto;
 }
 body:has(.quiz-data-slide.active) {
     overflow: hidden;
