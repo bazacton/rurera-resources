@@ -1444,7 +1444,7 @@ New Quiz Page Style Start
     border-radius: 3px;
 }
 .quiz-data-slide {
-    animation: slide-in-anim 1.5s ease-out forwards;
+    transition: 1s;
     position: absolute;
     right: 100%;
     top: 0;
@@ -1457,21 +1457,6 @@ New Quiz Page Style Start
     right: 0;
 }
 
-@keyframes slide-in-anim {
-	20% {
-		opacity: 0;
-	}
-	60% {
-		transform: translateX(-45%);
-	}
-	75% {
-		transform: translateX(-52%);
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(-50%);
-	}
-}
 /* Quiz Data Table style end */
 
 /*************************************
