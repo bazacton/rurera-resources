@@ -1640,20 +1640,12 @@
         });
 
         /*Quiz Data Slide Function Start*/
-        
-        
+    
 
-
-        var $el = $(".quiz-data-table td label");
-        var $ee = $(".quiz-data-slide");
-        $el.click(function(e){
-        e.stopPropagation();
-        $(".quiz-data-slide").toggleClass('active');
-        });
-        $(document).on('click',function(e){
-        if(($(e.target) != $el) && ($ee.hasClass('active'))){
-        $ee.removeClass('active');
-        }
+        $(document).ready(function(){
+            $(".quiz-data-table td label").click(function(){
+                $(".quiz-data-slide").toggleClass("active");
+            });
         });
         /*Quiz Data Slide Function End*/
 
