@@ -594,7 +594,7 @@ Left SideBar-menu End
 }
 body:has(.db-members),
 body:has(.edit-profile) {
-    background-color: #fff;
+    background-color: #f9fafe;
 }
 /*Dashboard-banner For Parent Page Style Start*/
 .dashboard-banner-container {margin-top: 80px; min-height: 250px;}
