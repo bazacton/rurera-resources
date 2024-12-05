@@ -1445,9 +1445,9 @@ New Quiz Page Style Start
     border-radius: 3px;
 }
 .quiz-data-slide {
-    transition: 0.8s ease-in;
+    transition: 0.5s ease-in;
     position: fixed;
-    right: 100%;
+    right: -100%;
     top: 0;
     height: 100%;
     overflow: hidden;
