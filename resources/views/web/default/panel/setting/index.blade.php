@@ -914,7 +914,7 @@
                                                 <td class="points">
                                                     5 <small>(83%)</small>
                                                 </td>
-                                                <td class="show_tip">
+                                                <td>
                                                     <div class="quiz-status-tooltip incorrect">
                                                         <div class="tooltip-box">
                                                             <div class="tooltip-top">
@@ -970,7 +970,7 @@
                                                     <em class="correct"><i>&#10003;</i></em>
                                                 </td>
 
-                                                <td class="show_tip">
+                                                <td>
                                                     <div class="quiz-status-tooltip incorrect">
                                                         <div class="tooltip-box">
                                                             <div class="tooltip-top">
@@ -1026,7 +1026,7 @@
                                                     <em class="correct"><i>&#10003;</i></em>
                                                 </td>
 
-                                                <td class="show_tip">
+                                                <td>
                                                     <div class="quiz-status-tooltip incorrect">
                                                         <div class="tooltip-box">
                                                             <div class="tooltip-top">
@@ -1082,7 +1082,7 @@
                                                     <em class="correct"><i>&#10003;</i></em>
                                                 </td>
 
-                                                <td class="show_tip">
+                                                <td>
                                                     <div class="quiz-status-tooltip incorrect">
                                                         <div class="tooltip-box">
                                                             <div class="tooltip-top">
@@ -1138,7 +1138,7 @@
                                                     <em class="correct"><i>&#10003;</i></em>
                                                 </td>
 
-                                                <td class="show_tip">
+                                                <td>
                                                     <div class="quiz-status-tooltip incorrect">
                                                         <div class="tooltip-box">
                                                             <div class="tooltip-top">
@@ -1194,7 +1194,7 @@
                                                     <em class="correct"><i>&#10003;</i></em>
                                                 </td>
 
-                                                <td class="show_tip">
+                                                <td>
                                                     <div class="quiz-status-tooltip incorrect">
                                                         <div class="tooltip-box">
                                                             <div class="tooltip-top">
@@ -1289,7 +1289,7 @@
                                                     <em class="correct"><i>&#10003;</i></em>
                                                 </td>
 
-                                                <td class="show_tip">
+                                                <td>
                                                     <div class="quiz-status-tooltip incorrect">
                                                         <div class="tooltip-box">
                                                             <div class="tooltip-top">
@@ -1345,7 +1345,7 @@
                                                     <em class="correct"><i>&#10003;</i></em>
                                                 </td>
 
-                                                <td class="show_tip">
+                                                <td>
                                                     <div class="quiz-status-tooltip incorrect">
                                                         <div class="tooltip-box">
                                                             <div class="tooltip-top">
@@ -1401,7 +1401,7 @@
                                                     <em class="correct"><i>&#10003;</i></em>
                                                 </td>
 
-                                                <td class="show_tip">
+                                                <td>
                                                     <div class="quiz-status-tooltip incorrect">
                                                         <div class="tooltip-box">
                                                             <div class="tooltip-top">
@@ -1457,7 +1457,7 @@
                                                     <em class="correct"><i>&#10003;</i></em>
                                                 </td>
 
-                                                <td class="show_tip">
+                                                <td>
                                                     <div class="quiz-status-tooltip incorrect">
                                                         <div class="tooltip-box">
                                                             <div class="tooltip-top">
@@ -1513,7 +1513,7 @@
                                                     <em class="correct"><i>&#10003;</i></em>
                                                 </td>
 
-                                                <td class="show_tip">
+                                                <td>
                                                     <div class="quiz-status-tooltip incorrect">
                                                         <div class="tooltip-box">
                                                             <div class="tooltip-top">
@@ -2015,17 +2015,6 @@
 		} 
 		});
         /*Circle Progress Function End*/
-
-        $( function() {
-            $(".overview-table table").on("click", ".remove", function() {
-                $(this).quiz-status-tooltip('hide');
-                $(this).closest('tr').remove();
-            });
-        });
-
-        $( function() {
-            $(".show_tip").quiz-status-tooltip({container: 'body'});
-        });
 
 		
     </script>
