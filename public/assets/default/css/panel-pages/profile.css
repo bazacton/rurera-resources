@@ -1445,12 +1445,13 @@ New Quiz Page Style Start
 }
 .quiz-data-slide {
     transition: 1s;
-    position: absolute;
+    position: fixed;
     right: 100%;
     top: 0;
     min-height: 200px;
     background-color: #fff;
     display: none;
+    padding: 25px;
 }
 .quiz-data-slide.active {
     display: block;
