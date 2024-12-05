@@ -1857,12 +1857,12 @@
             });
 
             jQuery(document).click(function(event) {
-                var container = jQuery(".quiz-data-slide");
+                var outside = jQuery(".quiz-data-slide");
                 if (
-                    !container.is(event.target) &&
-                    !container.has(event.target).length
+                    !outside.is(event.target) &&
+                    !outside.has(event.target).length
                 ) {
-                    container.removeClass("active");
+                    outside.removeClass("active");
                 }
             });
         });
