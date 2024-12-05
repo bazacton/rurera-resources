@@ -1845,31 +1845,17 @@
         });
 
         /*Quiz Data Slide Function Start*/
-    
-
-        // $(document).ready(function(){
-        //     $(".quiz-data-table td label, .quiz-data-slide:before").click(function(){
-        //         $(".quiz-data-slide").toggleClass("active");
-        //     });
-
-        //     $(".slide-controls .close-btn").click(function(){
-        //         $(".quiz-data-slide").toggleClass("active");
-        //     });
-        // });
-
-
-        $(document).ready(function() {
-            $(".quiz-data-table td label").click(function() {
-                $(".quiz-data-slide").toggle();
+        
+        $(document).ready(function(){
+            $(".quiz-data-table td label").click(function(){
+                $(".quiz-data-slide").toggleClass("active");
             });
-            $(document).on("click", function(event) {
-                var trigger = $(".quiz-data-table td label")[0];
-                var dropdown = $(".quiz-data-slide");
-                if (dropdown !== event.target && !dropdown.has(event.target).length && trigger !== event.target) {
-                $(".quiz-data-slide").hide();
-                }
+
+            $(".slide-controls .close-btn").click(function(){
+                $(".quiz-data-slide").toggleClass("active");
             });
         });
+        
         /*Quiz Data Slide Function End*/
 
 		
