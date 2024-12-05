@@ -1852,6 +1852,10 @@
                 $(".quiz-data-slide").toggleClass("active");
             });
 
+            $(".quiz-data-slide:before").click(function(){
+                $(".quiz-data-slide").toggleClass("active");
+            });
+
             $(".slide-controls .close-btn").click(function(){
                 $(".quiz-data-slide").toggleClass("active");
             });
