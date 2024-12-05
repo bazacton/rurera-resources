@@ -1641,18 +1641,19 @@
 
         /*Quiz Data Slide Function Start*/
         
-        jQuery(".login-toggle1").on("click", function() {
-            jQuery(".quiz-data-slide").toggleClass("active");
-        });
+        
 
-        jQuery(document).click(function(event) {
-            var container = jQuery(".quiz-data-slide");
-            if (
-                !container.is(event.target) &&
-                !container.has(event.target).length
-            ) {
-                container.removeClass("active");
-            }
+
+        var $el = $(".quiz-data-table td label");
+        var $ee = $(".quiz-data-slide");
+        $el.click(function(e){
+        e.stopPropagation();
+        $(".quiz-data-slide").toggleClass('active');
+        });
+        $(document).on('click',function(e){
+        if(($(e.target) != $el) && ($ee.hasClass('active'))){
+        $ee.removeClass('active');
+        }
         });
         /*Quiz Data Slide Function End*/
 
