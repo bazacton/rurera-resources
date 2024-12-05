@@ -1848,7 +1848,7 @@
     
 
         $(document).ready(function(){
-            $(".quiz-data-table td label").click(function(){
+            $(".quiz-data-table td label, .quiz-data-slide:before").click(function(){
                 $(".quiz-data-slide").toggleClass("active");
             });
 
