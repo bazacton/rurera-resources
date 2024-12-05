@@ -1443,6 +1443,23 @@ New Quiz Page Style Start
     padding: 6px 25px;
     border-radius: 3px;
 }
+.quiz-data-slide {
+    -webkit-transition: all 0.3s ease-out; 
+    -moz-transition: all 0.3s ease-out; 
+    -ms-transition: all 0.3s ease-out; 
+    -o-transition: all 0.3s ease-out; 
+    transition: all 0.3s ease-out;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    min-height: 200px;
+    background-color: #fff;
+    display: none;
+}
+.quiz-data-slide.active {
+    display: block;
+    right: 0;
+}
 /* Quiz Data Table style end */
 
 /*************************************
