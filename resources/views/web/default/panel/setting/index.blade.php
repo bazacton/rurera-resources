@@ -1978,7 +1978,7 @@
         });
 
         jQuery(document).click(function(event) {
-            var container = jQuery(".quiz-data-slide");
+            var container = jQuery(".quiz-data-slide, .quiz-data-table td label");
             if (
                 !container.is(event.target) &&
                 !container.has(event.target).length
