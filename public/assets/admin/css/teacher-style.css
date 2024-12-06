@@ -49,4 +49,13 @@
  .admin_teacher_role .classes-card .progress-bar.progress-bar-custom {
     background-color: #6bd700;
 }
+.admin_teacher_role .classes-card .bottom-controls {
+    background-color: #fff;
+    padding: 15px 15px;
+    margin: 0 -25px -20px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-radius: 0;
+}
 /* Admin Classes Style End */
