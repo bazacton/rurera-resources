@@ -176,8 +176,13 @@
     border-color: #e4e6fc !important;
 }
 .admin_teacher_role .dropdown-menu .dropdown-item {
-    margin: 0 0 5px;
+    margin: 0;
     height: 20px;
+    width: 20px;
+    max-width: none;
+    border-radius: 100%;
+    display: inline-block;
+    min-width: auto;
 }
 .admin_teacher_role .dropdown-menu {
     min-width: auto;
