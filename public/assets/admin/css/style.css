@@ -2575,5 +2575,5 @@ Admin Questions Generator Page Style End
 @media (max-width: 575.98px) {
     .api-question-status,
     .form-class .form-group,
-    .rureraform-admin-editor {display: none;}
+    .rureraform-toolbar {display: none;}
 }
