@@ -2624,7 +2624,7 @@ Admin Questions Generator Page Style End
     .edit-questions-tabs .tab-content {
         padding-top: 15px;
     }
-    .lms-element-properties {
+    body .lms-element-properties {
         height: auto;
     }
 }
