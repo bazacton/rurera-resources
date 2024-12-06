@@ -2601,4 +2601,7 @@ Admin Questions Generator Page Style End
     .rureraform-builder {
         padding: 10px !important;
     }
+    .similarity-content-tabs .card .card-header {
+        padding: 5px 0 15px !important;
+    }
 }
