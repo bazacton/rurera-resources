@@ -390,4 +390,7 @@
 .admin_teacher_role .create-google-class-modal .modal-footer .btn.btn-primary {
     color: #999;
 }
+.admin_teacher_role .create-google-class-modal .modal-footer .btn.btn-primary:hover {
+    color: #fff;
+}
 /* Admin Create-Google-Class-Modal Style End */
