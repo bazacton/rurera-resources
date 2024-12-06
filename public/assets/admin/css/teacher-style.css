@@ -330,36 +330,48 @@
     transform: none;
     top: 4px;
 }
-.user-list-options li .custom-checkbox-label {
+.admin_teacher_role .create-google-class-modal .user-list-options li .custom-checkbox-label {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.admin_teacher_role .custom-checkbox-label small {
+.admin_teacher_role .create-google-class-modal .custom-checkbox-label small {
     display: block;
     color: #787d84;
     font-size: 90%;
     padding-top: 2px;
 }
-.user-list-options ul {
+.admin_teacher_role .create-google-class-modal .user-list-options ul {
     border-bottom: 1px solid #ddd;
     margin-bottom: 15px;
     padding: 0 0 15px;
 }
-.user-list-options li:first-child {
+.admin_teacher_role .create-google-class-modal .user-list-options li:first-child {
     padding: 0 0 15px;
     margin-bottom: 15px;
     border-bottom: 1px solid #ddd;
 }
-.user-list-options li {
+.admin_teacher_role .create-google-class-modal .user-list-options li {
     margin-bottom: 15px;
 }
-.user-list-options li:last-child {
+.admin_teacher_role .create-google-class-modal .user-list-options li:last-child {
     margin-bottom: 0;
 }
-.user-list-options li em {
+.admin_teacher_role .create-google-class-modal .user-list-options li em {
     font-style: normal;
     color: #787d84;
+}
+.admin_teacher_role .create-google-class-modal .modal-footer {
+    padding: 0 0;
+    justify-content: flex-end;
+}
+.admin_teacher_role .create-google-class-modal .modal-footer .btn {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #f0eef2;
+    border-color: #f0eef2;
+    box-shadow: none;
 }
 /* Admin Create-Google-Class-Modal Style End */
