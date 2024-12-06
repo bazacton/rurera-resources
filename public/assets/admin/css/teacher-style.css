@@ -152,13 +152,18 @@
 /* Admin Classes Style End */
 
 /* Admin Create-Class-Modal Style Start */
-.create-class-modal .form-control {
+.admin_teacher_role .create-class-modal .form-control {
     background-color: inherit;
 }
-.create-class-modal .form-group {
+.admin_teacher_role .create-class-modal .form-group {
     margin-bottom: 15px;
 }
-.create-class-modal .modal-title {
+.admin_teacher_role .create-class-modal .modal-title {
     color: #333;
+}
+.admin_teacher_role .input-group-append .dropdown-toggle {
+    background: none;
+    box-shadow: none;
+    border-color: #e4e6fc !important;
 }
 /* Admin Create-Class-Modal Style End */
