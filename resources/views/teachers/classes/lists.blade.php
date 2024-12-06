@@ -51,7 +51,7 @@
 
                 </ul>
                 <div class="teacher-controls">
-                    <button type="button"><span class="icon-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span> Google Classrom</button>
+                    <button type="button" data-toggle="modal" data-target="#createGoogleClassModal"><span class="icon-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span> Google Classrom</button>
                     <button type="button" class="create-class-btn" data-toggle="modal" data-target="#createClassModal"><i class="fas fa-plus-circle"></i> Create a Class</button>
                 </div>
             </div>
@@ -191,6 +191,86 @@
                                         <label class="form-check-label custom-checkbox-label" for="requireClassCode">
                                             Require students to enter a class code
                                         </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Create class</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade create-google-class-modal" id="createGoogleClassModal" tabindex="-1" role="dialog" aria-labelledby="createGoogleClassModal" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="createClassModalLabel">Select Classes to Import</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="user-info">
+                                        <span class="img-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span>
+                                        <div class="text-holder">
+                                            <h5>Kaiser K</h5>
+                                            <a href="#">kaiser.can@gamil.com</a>
+                                        </div>
+                                        <button class="user-btn">Switch account</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <i class="fas fa-search"></i>
+                                        <input type="text" class="form-control" id="sectionName" placeholder="Search for a course">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="user-list-options">
+                                            <ul>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="all-classes">
+                                                        <label class="form-check-label custom-checkbox-label" for="all-classes">
+                                                            Select all classes
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="grade7">
+                                                        <label class="form-check-label custom-checkbox-label" for="grade7">
+                                                            Grade 7
+                                                            <em>0 students</em>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="grade6">
+                                                        <label class="form-check-label custom-checkbox-label" for="grade6">
+                                                            Grade 6
+                                                            <em>0 students</em>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="grade6-6">
+                                                        <label class="form-check-label custom-checkbox-label" for="grade6-6">
+                                                            Grade 6
+                                                            <em>0 students</em>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="grade6-6">
+                                                <label class="form-check-label custom-checkbox-label" for="grade6-6">
+                                                    Require a parent to guardian's email address
+                                                    <small>Instandly share student progress report</small>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
