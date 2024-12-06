@@ -2578,4 +2578,9 @@ Admin Questions Generator Page Style End
     .rureraform-toolbar,
     .note-toolbar,
     .custom-switches-stacked {display: none;}
+    .lms-quiz-create .col-7,
+    .lms-quiz-create .col-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
