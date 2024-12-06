@@ -64,191 +64,187 @@
 
         <div class="row">
             <div class="col-12 col-md-12">
-   <!-- Button to trigger modal -->
-   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createClassModal">
-            Open Modal
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="createClassModal" tabindex="-1" role="dialog" aria-labelledby="createClassModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="createClassModalLabel">Create a New Class</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <!-- Class Name with Color -->
-                            <div class="form-group">
-                                <label for="className">Enter class name (Required)</label>
-                                <div class="input-group">
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        id="className"
-                                        placeholder="E.g., Math Club"
-                                        required
-                                    />
-                                    <div class="input-group-append">
-                                        <button
-                                            class="btn btn-light dropdown-toggle"
-                                            type="button"
-                                            id="colorPickerDropdown"
-                                            data-toggle="dropdown"
-                                            aria-haspopup="true"
-                                            aria-expanded="false"
-                                            style="border: 1px solid #ccc;"
-                                        >
-                                            <span
-                                                class="color-indicator"
-                                                style="background-color: yellow;"
-                                            ></span>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <button class="dropdown-item" style="background-color: red;" onclick="setColor(this)"></button>
-                                            <button class="dropdown-item" style="background-color: blue;" onclick="setColor(this)"></button>
-                                            <button class="dropdown-item" style="background-color: green;" onclick="setColor(this)"></button>
+                <!-- Modal -->
+                <div class="modal fade" id="createClassModal" tabindex="-1" role="dialog" aria-labelledby="createClassModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="createClassModalLabel">Create a New Class</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <!-- Class Name with Color -->
+                                    <div class="form-group">
+                                        <label for="className">Enter class name (Required)</label>
+                                        <div class="input-group">
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="className"
+                                                placeholder="E.g., Math Club"
+                                                required
+                                            />
+                                            <div class="input-group-append">
+                                                <button
+                                                    class="btn btn-light dropdown-toggle"
+                                                    type="button"
+                                                    id="colorPickerDropdown"
+                                                    data-toggle="dropdown"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                                    style="border: 1px solid #ccc;"
+                                                >
+                                                    <span
+                                                        class="color-indicator"
+                                                        style="background-color: yellow;"
+                                                    ></span>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <button class="dropdown-item" style="background-color: red;" onclick="setColor(this)"></button>
+                                                    <button class="dropdown-item" style="background-color: blue;" onclick="setColor(this)"></button>
+                                                    <button class="dropdown-item" style="background-color: green;" onclick="setColor(this)"></button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+
+                                    <!-- Section -->
+                                    <div class="form-group">
+                                        <label for="sectionName">Section</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="sectionName"
+                                            placeholder="E.g., A or 1"
+                                        />
+                                    </div>
+
+                                    <!-- Subject -->
+                                    <div class="form-group">
+                                        <label for="subjectName">Subject</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="subjectName"
+                                            placeholder="E.g., Math, Science"
+                                        />
+                                    </div>
+
+                                    <!-- Room -->
+                                    <div class="form-group">
+                                        <label for="roomName">Room</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="roomName"
+                                            placeholder="E.g., Room 101"
+                                        />
+                                    </div>
+
+                                    <!-- Curriculum -->
+                                    <div class="form-group">
+                                        <label for="curriculumDropdown">Curriculum</label>
+                                        <select class="form-control" id="curriculumDropdown">
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Checkboxes -->
+                                    <div class="form-group form-check">
+                                        <input
+                                            type="checkbox"
+                                            class="form-check-input"
+                                            id="requireGuardianEmail"
+                                        />
+                                        <label class="form-check-label custom-checkbox-label" for="requireGuardianEmail">
+                                            Require students to enter a guardian's email address
+                                        </label>
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <input
+                                            type="checkbox"
+                                            class="form-check-input"
+                                            id="requireClassCode"
+                                        />
+                                        <label class="form-check-label custom-checkbox-label" for="requireClassCode">
+                                            Require students to enter a class code
+                                        </label>
+                                    </div>
+                                </form>
                             </div>
-
-                            <!-- Section -->
-                            <div class="form-group">
-                                <label for="sectionName">Section</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="sectionName"
-                                    placeholder="E.g., A or 1"
-                                />
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Create class</button>
                             </div>
-
-                            <!-- Subject -->
-                            <div class="form-group">
-                                <label for="subjectName">Subject</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="subjectName"
-                                    placeholder="E.g., Math, Science"
-                                />
-                            </div>
-
-                            <!-- Room -->
-                            <div class="form-group">
-                                <label for="roomName">Room</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="roomName"
-                                    placeholder="E.g., Room 101"
-                                />
-                            </div>
-
-                            <!-- Curriculum -->
-                            <div class="form-group">
-                                <label for="curriculumDropdown">Curriculum</label>
-                                <select class="form-control" id="curriculumDropdown">
-                                    <option value="1">Option 1</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
-                                </select>
-                            </div>
-
-                            <!-- Checkboxes -->
-                            <div class="form-group form-check">
-                                <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    id="requireGuardianEmail"
-                                />
-                                <label class="form-check-label custom-checkbox-label" for="requireGuardianEmail">
-                                    Require students to enter a guardian's email address
-                                </label>
-                            </div>
-                            <div class="form-group form-check">
-                                <input
-                                    type="checkbox"
-                                    class="form-check-input"
-                                    id="requireClassCode"
-                                />
-                                <label class="form-check-label custom-checkbox-label" for="requireClassCode">
-                                    Require students to enter a class code
-                                </label>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-primary">Create class</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    
-            <div class="card text-white classes-card bg-teal mb-3" style="max-width: 18rem; position: relative;">
-            <!-- Dropdown Menu -->
-            <div class="card-options dropdown">
-                <button
-                    class="btn btn-link text-white dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuButton"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                >
-                    <i class="fas fa-ellipsis-v"></i>
-                </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Add a co-teacher <i class="fas fa-lock"></i></a>
-                    <a class="dropdown-item" href="#">Edit class details</a>
-                    <a class="dropdown-item" href="#">Refresh Class Roster</a>
-                    <a class="dropdown-item" href="#">Archive Class</a>
-                    <a class="dropdown-item text-danger" href="#">Delete Class</a>
-                </div>
-            </div>
-
-            <div class="card-body">
-                <h5 class="card-title">Grade 6</h5>
-                <p class="card-text">A</p>
-                <p class="card-text">26 Students</p>
-                <div class="progress-holder">
-                    <p class="mb-1">1 completed activity</p>
-                    <div class="progress" style="height: 20px;">
-                        <div
-                            class="progress-bar progress-bar-custom"
-                            role="progressbar"
-                            style="width: 75%;"
-                            aria-valuenow="75"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                        >
-                            75%
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between mt-3 bottom-controls">
-                    <button class="btn btn-light btn-sm user-btn">
-                        <img src="/assets/default/img/class-user-icon.png" alt="">
-                    </button>
-                    <div class="right-area">
-                        <button class="btn btn-light btn-sm">
-                            <i class="fas fa-chart-line"></i>
+            </div>
+
+
+            <div class="col-12 col-md-12">
+                <div class="card text-white classes-card bg-teal mb-3" style="max-width: 18rem; position: relative;">
+                    <!-- Dropdown Menu -->
+                    <div class="card-options dropdown">
+                        <button
+                            class="btn btn-link text-white dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            <i class="fas fa-ellipsis-v"></i>
                         </button>
-                        <button class="btn btn-light btn-sm" title="Open folder for 'Grade 6 A' in Google Drive">
-                            <i class="fas fa-folder-open"></i>
-                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Add a co-teacher <i class="fas fa-lock"></i></a>
+                            <a class="dropdown-item" href="#">Edit class details</a>
+                            <a class="dropdown-item" href="#">Refresh Class Roster</a>
+                            <a class="dropdown-item" href="#">Archive Class</a>
+                            <a class="dropdown-item text-danger" href="#">Delete Class</a>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Grade 6</h5>
+                        <p class="card-text">A</p>
+                        <p class="card-text">26 Students</p>
+                        <div class="progress-holder">
+                            <p class="mb-1">1 completed activity</p>
+                            <div class="progress" style="height: 20px;">
+                                <div
+                                    class="progress-bar progress-bar-custom"
+                                    role="progressbar"
+                                    style="width: 75%;"
+                                    aria-valuenow="75"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                    75%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3 bottom-controls">
+                            <button class="btn btn-light btn-sm user-btn">
+                                <img src="/assets/default/img/class-user-icon.png" alt="">
+                            </button>
+                            <div class="right-area">
+                                <button class="btn btn-light btn-sm">
+                                    <i class="fas fa-chart-line"></i>
+                                </button>
+                                <button class="btn btn-light btn-sm" title="Open folder for 'Grade 6 A' in Google Drive">
+                                    <i class="fas fa-folder-open"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
                     <div class="card">
                     <div class="card-body">
                         <div class="table-responsive">
