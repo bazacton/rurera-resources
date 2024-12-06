@@ -2633,4 +2633,8 @@ Admin Questions Generator Page Style End
     .rureraform-form-editor .form-box .form-field {
         width: 100%;
     }
+    body .activity-status {
+        display: block;
+        margin: 6px 0;
+    }
 }
