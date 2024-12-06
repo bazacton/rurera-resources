@@ -2630,4 +2630,7 @@ Admin Questions Generator Page Style End
     body .edit-questions-tabs .nav .nav-link.active {
         border-bottom-color: transparent;
     }
+    .rureraform-form-editor .form-box .form-field {
+        width: 100%;
+    }
 }
