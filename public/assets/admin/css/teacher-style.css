@@ -327,6 +327,8 @@
 .user-list-options .custom-checkbox-label:before {
     border: 1px solid #ddd;
     background-color: inherit;
+    transform: none;
+    top: 4px;
 }
 .user-list-options li .custom-checkbox-label {
     width: 100%;
@@ -336,25 +338,28 @@
 }
 .admin_teacher_role .custom-checkbox-label small {
     display: block;
-}
-.user-list-options .custom-checkbox-label:before {
-    transform: none;
-    top: 4px;
-}
-.user-list-options li:first-child {
-    padding: 0 0 15px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #ddd;
+    color: #787d84;
+    font-size: 90%;
+    padding-top: 2px;
 }
 .user-list-options ul {
     border-bottom: 1px solid #ddd;
     margin-bottom: 15px;
     padding: 0 0 15px;
 }
+.user-list-options li:first-child {
+    padding: 0 0 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
 .user-list-options li {
     margin-bottom: 15px;
 }
 .user-list-options li:last-child {
     margin-bottom: 0;
+}
+.user-list-options li em {
+    font-style: normal;
+    color: #787d84;
 }
 /* Admin Create-Google-Class-Modal Style End */
