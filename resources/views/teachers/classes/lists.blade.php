@@ -245,7 +245,8 @@
                     </div>
                 </div>
             </div>
-                    <div class="card">
+            <div class="col-12 col-md-12">
+                <div class="card">
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
@@ -292,6 +293,7 @@
                     <div class="card-footer text-center">
                         {{ $classes->links() }}
                     </div>
+                </div>
                 </div>
             </div>
         </div>
