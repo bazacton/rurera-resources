@@ -67,6 +67,9 @@
     color: #fff;
     border-color: transparent;
 }
+.admin_teacher_role .teacher-controls .create-class-btn i {
+    margin-right: 8px;
+}
 .admin_teacher_role .teacher-controls button img {
     height: 20px;
     width: 20px;
