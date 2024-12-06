@@ -232,6 +232,9 @@
     background-color: #f3f3f3;
     border-radius: 3px;
     color: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
 }
 .admin_teacher_role input[type=checkbox]:checked ~ .custom-checkbox-label:before {
     background-color: #00a269;
