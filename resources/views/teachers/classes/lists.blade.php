@@ -49,6 +49,41 @@
 
         <div class="row">
             <div class="col-12 col-md-12">
+        <div class="card text-white bg-teal mb-3" style="max-width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Grade 6</h5>
+                <p class="card-text">A</p>
+                <p class="card-text">26 Students</p>
+                <div>
+                    <p class="mb-1">1 completed activity</p>
+                    <div class="progress" style="height: 20px;">
+                        <div
+                            class="progress-bar progress-bar-custom"
+                            role="progressbar"
+                            style="width: 75%;"
+                            aria-valuenow="75"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        >
+                            75%
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                    <button class="btn btn-light btn-sm">
+                        <i class="fas fa-users"></i>
+                    </button>
+                    <button class="btn btn-light btn-sm">
+                        <i class="fas fa-chart-line"></i>
+                    </button>
+                    <button class="btn btn-light btn-sm">
+                        <i class="fas fa-folder-open"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+
                 <div class="card">
                     <div class="card-body">
                         <div class="table-responsive">
