@@ -108,6 +108,12 @@
                                                         <button class="dropdown-item" style="background-color: red;" onclick="setColor(this)"></button>
                                                         <button class="dropdown-item" style="background-color: blue;" onclick="setColor(this)"></button>
                                                         <button class="dropdown-item" style="background-color: green;" onclick="setColor(this)"></button>
+                                                        <button class="dropdown-item" style="background-color: red;" onclick="setColor(this)"></button>
+                                                        <button class="dropdown-item" style="background-color: blue;" onclick="setColor(this)"></button>
+                                                        <button class="dropdown-item" style="background-color: green;" onclick="setColor(this)"></button>
+                                                        <button class="dropdown-item" style="background-color: red;" onclick="setColor(this)"></button>
+                                                        <button class="dropdown-item" style="background-color: blue;" onclick="setColor(this)"></button>
+                                                        <button class="dropdown-item" style="background-color: green;" onclick="setColor(this)"></button>
                                                     </div>
                                                 </div>
                                             </div>
