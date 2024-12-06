@@ -65,7 +65,7 @@
         <div class="row">
             <div class="col-12 col-md-12">
 
-            <div class="card text-white bg-teal mb-3" style="max-width: 18rem; position: relative;">
+            <div class="card text-white classes-card bg-teal mb-3" style="max-width: 18rem; position: relative;">
             <!-- Dropdown Menu -->
             <div class="card-options dropdown">
                 <button
