@@ -71,4 +71,7 @@
     align-items: center;
     gap: 10px;
 }
+.admin_teacher_role .user-btn {
+    background-color: #009788;
+}
 /* Admin Classes Style End */
