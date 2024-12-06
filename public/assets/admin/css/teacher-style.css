@@ -34,6 +34,7 @@
     display: inline-flex;
     align-items: center;
 }
+.admin_teacher_role .teacher-controls button .icon-box {margin-right: 5px;}
 .admin_teacher_role .card-options button:after {
     display: none;
 }
