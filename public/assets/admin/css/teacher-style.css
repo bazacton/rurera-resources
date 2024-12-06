@@ -79,7 +79,7 @@
     align-items: center;
 }
 .admin_teacher_role .bottom-controls .btn:hover {
-    background: #f3f1f4;
+    background: #e7e7e7 !important;
 }
 .admin_teacher_role .bottom-controls .btn i {
     font-size: 16px;
