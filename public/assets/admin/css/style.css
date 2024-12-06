@@ -2616,4 +2616,15 @@ Admin Questions Generator Page Style End
         margin-top: 10px;
         width: 100%;
     }
+    .admin-rurera-tabs .nav-link, 
+    .admin-rurera-tabs.nav-pills .nav-link {
+        margin-bottom: 0;
+        padding-bottom: 8px;
+    }
+    .edit-questions-tabs .tab-content {
+        padding-top: 15px;
+    }
+    .lms-element-properties {
+        height: auto;
+    }
 }
