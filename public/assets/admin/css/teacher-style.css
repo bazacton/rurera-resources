@@ -67,17 +67,19 @@
     border: 0;
 }
 .admin_teacher_role .bottom-controls .btn i {
-    font-size: 20px;
+    font-size: 16px;
 }
 .admin_teacher_role .right-area {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 .admin_teacher_role .bottom-controls .user-btn {
     background-color: #009788;
     padding: 10px 10px;
     color: #fff;
-    font-size: 16px;
+}
+.admin_teacher_role .bottom-controls .user-btn i {
+    font-size: 14px;
 }
 /* Admin Classes Style End */
