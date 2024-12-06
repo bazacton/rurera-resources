@@ -2604,4 +2604,10 @@ Admin Questions Generator Page Style End
     .similarity-content-tabs .card .card-header {
         padding: 5px 0 15px !important;
     }
+    .title-search-field label {
+        display: none;
+    }
+    .title-search-field .form-group {
+        margin-top: 10px;
+    }
 }
