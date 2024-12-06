@@ -103,9 +103,12 @@
                                                     ></span>
                                                 </button>
                                                 <div class="dropdown-menu">
-                                                    <button class="dropdown-item" style="background-color: red;" onclick="setColor(this)"></button>
-                                                    <button class="dropdown-item" style="background-color: blue;" onclick="setColor(this)"></button>
-                                                    <button class="dropdown-item" style="background-color: green;" onclick="setColor(this)"></button>
+                                                    <h5>Class Color Code</h5>
+                                                    <div class="class-color-box">
+                                                        <button class="dropdown-item" style="background-color: red;" onclick="setColor(this)"></button>
+                                                        <button class="dropdown-item" style="background-color: blue;" onclick="setColor(this)"></button>
+                                                        <button class="dropdown-item" style="background-color: green;" onclick="setColor(this)"></button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
