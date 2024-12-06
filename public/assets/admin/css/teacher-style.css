@@ -191,9 +191,9 @@
     justify-content: center;
 }
 .admin_teacher_role .dropdown-menu h5 {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     color: #555;
 }
 .admin_teacher_role .dropdown-menu .dropdown-item {
@@ -251,9 +251,5 @@
 .admin_teacher_role .modal-footer .btn-primary {
     background-color: #6bd700;
     border-color: #6bd700;
-}
-.admin_teacher_role .modal-footer .btn-secondary {
-    background-color: #f23b69;
-    border-color: #f23b69;
 }
 /* Admin Create-Class-Modal Style End */
