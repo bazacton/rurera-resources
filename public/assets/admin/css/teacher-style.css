@@ -1,3 +1,10 @@
+/* Admin Left Menue Style Start */
+.admin_teacher_role .main-sidebar {
+    background-color: #fff;
+    border-right: 1px solid #f2f2f2;
+}
+/* Admin Left Menue Style End */
+
 /* Admin Classes Style Start */
 .admin_teacher_role .nav-area {
     display: flex;
