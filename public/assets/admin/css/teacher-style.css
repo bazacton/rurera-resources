@@ -183,6 +183,7 @@
     border-radius: 100%;
     display: inline-block;
     min-width: auto;
+    padding: 0;
 }
 .admin_teacher_role .dropdown-menu {
     min-width: auto;
