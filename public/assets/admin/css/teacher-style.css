@@ -1,0 +1,17 @@
+.admin_teacher_role .nav-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.admin_teacher_role .teacher-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.admin_teacher_role .admin-rurera-tabs {
+    width: auto;
+    max-width: none;
+    margin-bottom: 0;
+    flex: 0 0 auto;
+}
