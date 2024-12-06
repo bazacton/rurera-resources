@@ -1,7 +1,7 @@
 /* Admin Left Menue Style Start */
 .admin_teacher_role .main-sidebar {
     background-color: #fff;
-    border: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
 }
 .admin_teacher_role .main-sidebar .sidebar-brand {
     padding: 0 15px;
@@ -10,6 +10,10 @@
     border-top: 1px solid #f2f2f2;
     padding-top: 10px;
     margin-top: 10px;
+}
+.main-sidebar .sidebar-menu li.menu-header {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
 }
 /* Admin Left Menue Style End */
 
@@ -165,5 +169,19 @@
     background: none;
     box-shadow: none;
     border-color: #e4e6fc !important;
+}
+.admin_teacher_role .input-group-append .dropdown-toggle:hover {
+    background-color: inherit;
+}
+.admin_teacher_role .dropdown-menu .dropdown-item {
+    margin: 0 0 5px;
+    height: 20px;
+}
+.admin_teacher_role .admin_teacher_role .dropdown-menu {
+    min-width: auto;
+    width: auto;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px 10px;
 }
 /* Admin Create-Class-Modal Style End */
