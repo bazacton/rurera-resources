@@ -3,16 +3,7 @@
 @push('libraries_top')
 
 @endpush
-<style>
-        .progress-bar-custom {
-            background-color: #4caf50;
-        }
-        .card-options {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-    </style>
+
 @section('content')
 <section class="section">
     <div class="section-header">
