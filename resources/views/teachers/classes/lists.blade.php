@@ -106,16 +106,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between mt-3">
+                <div class="d-flex justify-content-between mt-3 bottom-controls">
                     <button class="btn btn-light btn-sm">
                         <i class="fas fa-users"></i>
                     </button>
-                    <button class="btn btn-light btn-sm">
-                        <i class="fas fa-chart-line"></i>
-                    </button>
-                    <button class="btn btn-light btn-sm" title="Open folder for 'Grade 6 A' in Google Drive">
-                        <i class="fas fa-folder-open"></i>
-                    </button>
+                    <div class="right-area">
+                        <button class="btn btn-light btn-sm">
+                            <i class="fas fa-chart-line"></i>
+                        </button>
+                        <button class="btn btn-light btn-sm" title="Open folder for 'Grade 6 A' in Google Drive">
+                            <i class="fas fa-folder-open"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
