@@ -29,4 +29,11 @@
     display: inline-flex;
     align-items: center;
 }
+.admin_teacher_role .card-options button:after {
+    display: none;
+}
+.admin_teacher_role .card-options {
+    position: absolute;
+    right: 0;
+}
 /* Admin Classes Style End */
