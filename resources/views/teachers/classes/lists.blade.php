@@ -3,16 +3,7 @@
 @push('libraries_top')
 
 @endpush
-<style>
-        .progress-bar-custom {
-            background-color: #4caf50;
-        }
-        .card-options {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-    </style>
+
 @section('content')
 <section class="section">
     <div class="section-header">
@@ -60,7 +51,7 @@
 
                 </ul>
                 <div class="teacher-controls">
-                    <button type="button">Google Classrom</button>
+                    <button type="button"><span class="icon-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span> Google Classrom</button>
                     <button type="button">Create a Class</button>
                 </div>
             </div>
