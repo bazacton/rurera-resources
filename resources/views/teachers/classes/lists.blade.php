@@ -299,11 +299,11 @@
                             <i class="fas fa-ellipsis-v"></i>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Add a co-teacher <i class="fas fa-lock"></i></a>
-                            <a class="dropdown-item" href="#">Edit class details</a>
-                            <a class="dropdown-item" href="#">Refresh Class Roster</a>
-                            <a class="dropdown-item" href="#">Archive Class</a>
-                            <a class="dropdown-item text-danger" href="#">Delete Class</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Add a co-teacher <i class="fas fa-lock"></i></a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Edit class details</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> Refresh Class Roster</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Archive Class</a>
+                            <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Delete Class</a>
                         </div>
                     </div>
 
