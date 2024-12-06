@@ -171,7 +171,8 @@
     box-shadow: none;
     border-color: #e4e6fc !important;
 }
-.admin_teacher_role .input-group-append .dropdown-toggle:hover {
+.admin_teacher_role .input-group-append .dropdown-toggle:hover,
+.admin_teacher_role .input-group-append .dropdown-toggle:focus {
     background-color: inherit !important;
     border-color: #e4e6fc !important;
 }
