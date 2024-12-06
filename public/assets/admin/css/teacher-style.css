@@ -194,6 +194,9 @@
     min-width: auto;
     padding: 0;
 }
+.admin_teacher_role .input-group-append {
+    position: relative;
+}
 .admin_teacher_role .dropdown-menu {
     min-width: auto;
     border: 1px solid #ddd;
