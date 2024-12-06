@@ -42,4 +42,10 @@
   {
     margin-bottom: 0;
  }
+ .admin_teacher_role .classes-card .progress {
+    margin-top: 10px;
+ }
+ .admin_teacher_role .classes-card .progress-bar.progress-bar-custom {
+    background-color: #6bd700;
+}
 /* Admin Classes Style End */
