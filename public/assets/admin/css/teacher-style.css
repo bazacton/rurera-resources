@@ -15,3 +15,6 @@
     margin-bottom: 0;
     flex: 0 0 auto;
 }
+.admin_teacher_role .card {
+    background-color: #009788;
+}
