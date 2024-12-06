@@ -2583,4 +2583,10 @@ Admin Questions Generator Page Style End
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .title-search-field {
+        flex-wrap: wrap;
+    }
+    .title-search-field h1 {
+        font-size: 24px;
+    }
 }
