@@ -44,6 +44,7 @@
  }
  .admin_teacher_role .classes-card .progress {
     margin-top: 10px;
+    border-radius: 30px;
  }
  .admin_teacher_role .classes-card .progress-bar.progress-bar-custom {
     background-color: #6bd700;
