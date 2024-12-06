@@ -2588,6 +2588,11 @@ Admin Questions Generator Page Style End
     }
     .title-search-field {
         flex-wrap: wrap;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+    }
+    .title-search-field select {
+        width: 100%;
     }
     .title-search-field h1 {
         font-size: 24px;
