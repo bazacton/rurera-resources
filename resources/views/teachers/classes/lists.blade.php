@@ -49,7 +49,29 @@
 
         <div class="row">
             <div class="col-12 col-md-12">
-        <div class="card text-white bg-teal mb-3" style="max-width: 18rem;">
+
+            <div class="card text-white bg-teal mb-3" style="max-width: 18rem; position: relative;">
+            <!-- Dropdown Menu -->
+            <div class="card-options dropdown">
+                <button
+                    class="btn btn-link text-white dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Add a co-teacher <i class="fas fa-lock"></i></a>
+                    <a class="dropdown-item" href="#">Edit class details</a>
+                    <a class="dropdown-item" href="#">Refresh Class Roster</a>
+                    <a class="dropdown-item" href="#">Archive Class</a>
+                    <a class="dropdown-item text-danger" href="#">Delete Class</a>
+                </div>
+            </div>
+
             <div class="card-body">
                 <h5 class="card-title">Grade 6</h5>
                 <p class="card-text">A</p>
@@ -76,7 +98,7 @@
                     <button class="btn btn-light btn-sm">
                         <i class="fas fa-chart-line"></i>
                     </button>
-                    <button class="btn btn-light btn-sm">
+                    <button class="btn btn-light btn-sm" title="Open folder for 'Grade 6 A' in Google Drive">
                         <i class="fas fa-folder-open"></i>
                     </button>
                 </div>
