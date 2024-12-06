@@ -69,6 +69,7 @@
 }
 .admin_teacher_role .teacher-controls .create-class-btn i {
     margin-right: 8px;
+    font-size: 16px;
 }
 .admin_teacher_role .teacher-controls button img {
     height: 20px;
