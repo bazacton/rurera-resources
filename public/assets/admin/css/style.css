@@ -2571,3 +2571,9 @@ Admin Questions Generator Page Style End
     padding-top: 25px;
 }
 /* Prompts Tab style End */
+
+@media (max-width: 575.98px) {
+    .api-question-status,
+    .form-class .form-group,
+    .rureraform-admin-editor {display: none;}
+}
