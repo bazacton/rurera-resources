@@ -25,16 +25,21 @@
     overflow: hidden;
 }
 .admin_teacher_role .teacher-controls button {
-    background-color: #f3f1f4;
+    background-color: inherit;
     border: 0;
-    padding: 8px 10px;
+    padding: 8px 15px;
     border-radius: 3px;
     font-size: 14px;
     margin: 0 5px 0 0;
     display: inline-flex;
     align-items: center;
+    border: 1px solid #ddd;
 }
-.admin_teacher_role .teacher-controls button .icon-box {margin-right: 5px;}
+.admin_teacher_role .teacher-controls button img {
+    height: 20px;
+    width: 20px;
+}
+.admin_teacher_role .teacher-controls button .icon-box {margin-right: 8px;}
 .admin_teacher_role .card-options button:after {
     display: none;
 }
