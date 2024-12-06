@@ -41,7 +41,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="topics-tab" href="/admin/sections/joining-requests" >
+                        <a class="nav-link" id="topics-tab" href="#" >
                             <span class="tab-title">Archived Classes</span>
                         </a>
                     </li>
