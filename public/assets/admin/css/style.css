@@ -2592,4 +2592,13 @@ Admin Questions Generator Page Style End
     .title-search-field h1 {
         font-size: 24px;
     }
+    .edit-questions-difficulty-tabs .admin-rurera-tabs {
+        margin-bottom: 0;
+    }
+    .edit-questions-tabs {
+        margin-top: 20px;
+    }
+    .rureraform-builder {
+        padding: 10px !important;
+    }
 }
