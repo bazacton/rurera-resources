@@ -334,6 +334,13 @@
     align-items: center;
     justify-content: space-between;
 }
+.admin_teacher_role .custom-checkbox-label small {
+    display: block;
+}
+.user-list-options .custom-checkbox-label:before {
+    transform: none;
+    top: 4px;
+}
 .user-list-options li:first-child {
     padding: 0 0 15px;
     margin-bottom: 15px;
