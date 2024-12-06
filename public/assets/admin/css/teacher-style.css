@@ -374,4 +374,7 @@
     border-color: #f0eef2;
     box-shadow: none;
 }
+.admin_teacher_role .create-google-class-modal .modal-footer .btn.btn-primary {
+    color: #999;
+}
 /* Admin Create-Google-Class-Modal Style End */
