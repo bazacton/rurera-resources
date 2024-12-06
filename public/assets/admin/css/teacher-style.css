@@ -39,6 +39,9 @@
     right: 5px;
     top: 15px;
 }
+.admin_teacher_role .card-options .dropdown-toggle:hover {
+    background-color: inherit;
+}
  .admin_teacher_role .classes-card .card-title,
  .admin_teacher_role .classes-card .card-body p
   {
