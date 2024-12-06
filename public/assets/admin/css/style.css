@@ -2603,7 +2603,7 @@ Admin Questions Generator Page Style End
     .edit-questions-tabs {
         margin-top: 20px;
     }
-    .rureraform-builder {
+    body .rureraform-builder {
         padding: 10px !important;
     }
     .similarity-content-tabs .card .card-header {
