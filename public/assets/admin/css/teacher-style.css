@@ -213,5 +213,10 @@
 }
 .admin_teacher_role .modal-footer .btn-primary {
     background-color: #6bd700;
+    border-color: #6bd700;
+}
+.admin_teacher_role .modal-footer .btn-secondary {
+    background-color: #f23b69;
+    border-color: #f23b69;
 }
 /* Admin Create-Class-Modal Style End */
