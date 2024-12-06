@@ -66,7 +66,7 @@
             <div class="col-12 col-md-12">
                 <!-- Modal -->
                 <div class="modal fade create-class-modal" id="createClassModal" tabindex="-1" role="dialog" aria-labelledby="createClassModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="createClassModalLabel">Create a New Class</h5>
@@ -202,7 +202,7 @@
                     </div>
                 </div>
                 <div class="modal fade create-google-class-modal" id="createGoogleClassModal" tabindex="-1" role="dialog" aria-labelledby="createGoogleClassModal" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="createClassModalLabel">Select Classes to Import</h5>
