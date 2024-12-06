@@ -2627,7 +2627,7 @@ Admin Questions Generator Page Style End
     body .lms-element-properties {
         height: auto;
     }
-    .edit-questions-tabs .nav .nav-link.active {
+    body .edit-questions-tabs .nav .nav-link.active {
         border-bottom-color: transparent;
     }
 }
