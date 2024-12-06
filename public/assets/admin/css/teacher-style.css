@@ -188,6 +188,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .admin_teacher_role .dropdown-menu h5 {
