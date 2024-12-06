@@ -40,6 +40,15 @@
                             <span class="tab-title">Joining Requests</span>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="topics-tab" href="#" >
+                            <span class="tab-title">Archived Classes</span>
+                        </a>
+                    </li>
+
+
+
+
                 </ul>
                 <div class="teacher-controls">
                     <button type="button"><span class="icon-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span> Google Classrom</button>
@@ -112,9 +121,7 @@
                 </div>
             </div>
         </div>
-    
-
-                <div class="card">
+                    <div class="card">
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
