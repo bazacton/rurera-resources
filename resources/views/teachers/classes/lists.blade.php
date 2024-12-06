@@ -49,6 +49,15 @@
                             <span class="tab-title">Joining Requests</span>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="topics-tab" href="/admin/sections/joining-requests" >
+                            <span class="tab-title">Archived Classes</span>
+                        </a>
+                    </li>
+
+
+
+
                 </ul>
                 <div class="teacher-controls">
                     <button type="button">Google Classrom</button>
@@ -121,9 +130,7 @@
                 </div>
             </div>
         </div>
-    
-
-                <div class="card">
+                    <div class="card">
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
