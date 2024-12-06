@@ -231,9 +231,11 @@
     width: 20px;
     background-color: #f3f3f3;
     border-radius: 3px;
+    color: #fff;
 }
 .admin_teacher_role input[type=checkbox]:checked ~ .custom-checkbox-label:before {
     background-color: #00a269;
+    content: "\2713";
 }
 .admin_teacher_role .modal-footer .btn-primary {
     background-color: #6bd700;
