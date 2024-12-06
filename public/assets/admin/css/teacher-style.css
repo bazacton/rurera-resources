@@ -18,6 +18,8 @@
 }
 .admin_teacher_role .classes-card {
     background-color: #009788;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .admin_teacher_role .teacher-controls button {
     background-color: #f3f1f4;
