@@ -34,6 +34,12 @@
 }
 .admin_teacher_role .card-options {
     position: absolute;
-    right: 0;
+    right: 5px;
+    top: 15px;
 }
+ .admin_teacher_role .classes-card .card-title,
+ .admin_teacher_role .classes-card .card-body p
+  {
+    margin-bottom: 0;
+ }
 /* Admin Classes Style End */
