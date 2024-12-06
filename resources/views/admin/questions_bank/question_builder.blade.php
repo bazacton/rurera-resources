@@ -591,7 +591,7 @@ $rand_id = rand(999,99999);
 												</div>
 												
 												
-												<div class="tab-pane fade active py-0" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
+												<div class="tab-pane fade py-0" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
 												
                                                         <div id="accordion">
                                                             <div class="similarity-content-block-data">
