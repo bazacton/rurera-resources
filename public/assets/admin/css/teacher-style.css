@@ -180,9 +180,11 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    justify-content: center;
 }
 .admin_teacher_role .dropdown-menu h5 {
     font-size: 16px;
+    text-align: center;
 }
 .admin_teacher_role .dropdown-menu .dropdown-item {
     margin: 0;
@@ -204,6 +206,7 @@
     padding: 10px 10px;
     right: 0;
     left: auto !important;
+    box-shadow: none;
 }
 .admin_teacher_role .custom-checkbox-label {
     color: #333;
