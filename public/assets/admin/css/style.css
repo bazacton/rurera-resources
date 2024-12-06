@@ -2575,7 +2575,7 @@ Admin Questions Generator Page Style End
     display: none;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767px) {
     .api-question-status,
     .form-class .form-group,
     .rureraform-toolbar,
