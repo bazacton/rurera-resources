@@ -52,7 +52,7 @@
                 </ul>
                 <div class="teacher-controls">
                     <button type="button"><span class="icon-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span> Google Classrom</button>
-                    <button type="button" class="create-class-btn">Create a Class</button>
+                    <button type="button" class="create-class-btn" data-toggle="modal" data-target="#createClassModal">Create a Class</button>
                 </div>
             </div>
        </div>
