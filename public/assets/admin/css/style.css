@@ -2576,5 +2576,6 @@ Admin Questions Generator Page Style End
     .api-question-status,
     .form-class .form-group,
     .rureraform-toolbar,
-    .note-toolbar {display: none;}
+    .note-toolbar,
+    .custom-switches-stacked {display: none;}
 }
