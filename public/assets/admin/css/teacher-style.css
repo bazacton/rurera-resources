@@ -81,6 +81,9 @@
 .admin_teacher_role .bottom-controls .btn:hover {
     background: #e7e7e7 !important;
 }
+.admin_teacher_role .bottom-controls .btn.user-btn:hover {
+    background-color: inherit;
+}
 .admin_teacher_role .bottom-controls .btn i {
     font-size: 16px;
 }
