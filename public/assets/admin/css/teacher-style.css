@@ -114,6 +114,13 @@
   {
     margin-bottom: 0;
  }
+ .admin_teacher_role .classes-card .grade-text {
+    font-weight: bold;
+}
+.admin_teacher_role .classes-card .card-students {
+    line-height: normal;
+    font-weight: bold;
+}
  .admin_teacher_role .classes-card .progress {
     margin-top: 10px;
     border-radius: 30px;
