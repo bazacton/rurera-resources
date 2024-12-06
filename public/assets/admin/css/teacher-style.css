@@ -27,14 +27,13 @@
 .admin_teacher_role .teacher-controls button {
     background-color: inherit;
     border: 0;
-    padding: 8px 12px;
-    border-radius: 3px;
+    padding: 6px 10px;
+    border-radius: 5px;
     font-size: 14px;
-    margin: 0 5px 0 0;
+    margin: 0 0 0 5px;
     display: inline-flex;
     align-items: center;
     border: 1px solid #ddd;
-    outline: none;
 }
 .admin_teacher_role .teacher-controls .create-class-btn {
     background-color: var(--blue);
