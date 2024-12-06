@@ -2610,4 +2610,7 @@ Admin Questions Generator Page Style End
     .title-search-field .form-group {
         margin-top: 10px;
     }
+    .title-search-field .form-group .part_item_selection {
+        max-width: 55%;
+    }
 }
