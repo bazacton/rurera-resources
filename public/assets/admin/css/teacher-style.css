@@ -267,9 +267,7 @@
     color: #333;
 }
 .admin_teacher_role .create-google-class-modal .modal-body {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 25px;
+    padding: 25px 0 0 0;
 }
 .admin_teacher_role .create-google-class-modal .user-info {
     display: flex;
@@ -322,5 +320,34 @@
 }
 .admin_teacher_role .create-google-class-modal i ~ input[type="text"] {
     padding-left: 40px;
+}
+.user-list-options .form-check {
+    padding: 0;
+}
+.user-list-options .custom-checkbox-label:before {
+    border: 1px solid #ddd;
+    background-color: inherit;
+}
+.user-list-options li .custom-checkbox-label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-list-options li:first-child {
+    padding: 0 0 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.user-list-options ul {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 0 0 15px;
+}
+.user-list-options li {
+    margin-bottom: 15px;
+}
+.user-list-options li:last-child {
+    margin-bottom: 0;
 }
 /* Admin Create-Google-Class-Modal Style End */
