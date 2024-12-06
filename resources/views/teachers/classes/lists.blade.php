@@ -218,7 +218,7 @@
                                             <h5>Kaiser K</h5>
                                             <a href="#">kaiser.can@gamil.com</a>
                                         </div>
-                                        <button class="user-btn">Switch account</button>
+                                        <button class="user-btn" type="button">Switch account</button>
                                     </div>
                                     <div class="form-group">
                                         <i class="fas fa-search"></i>
