@@ -107,7 +107,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-between mt-3 bottom-controls">
-                    <button class="btn btn-light btn-sm">
+                    <button class="btn btn-light btn-sm user-btn">
                         <i class="fas fa-users"></i>
                     </button>
                     <div class="right-area">
