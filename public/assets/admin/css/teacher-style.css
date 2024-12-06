@@ -54,6 +54,9 @@
  .admin_teacher_role .classes-card .progress-bar.progress-bar-custom {
     background-color: #6bd700;
 }
+.admin_teacher_role .classes-card .progress-holder {
+    margin-top: 30px;
+}
 .admin_teacher_role .classes-card .bottom-controls {
     background-color: #fff;
     padding: 15px 15px;
@@ -68,6 +71,15 @@
     padding: 0;
     background: none;
     border: 0;
+    border-radius: 100%;
+    height: 38px;
+    width: 38px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.admin_teacher_role .bottom-controls .btn:hover {
+    background: #f3f1f4;
 }
 .admin_teacher_role .bottom-controls .btn i {
     font-size: 16px;
@@ -76,13 +88,5 @@
     display: inline-flex;
     align-items: center;
     gap: 15px;
-}
-.admin_teacher_role .bottom-controls .user-btn {
-    background-color: #009788;
-    padding: 10px 10px;
-    color: #fff;
-}
-.admin_teacher_role .bottom-controls .user-btn i {
-    font-size: 14px;
 }
 /* Admin Classes Style End */
