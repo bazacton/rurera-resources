@@ -58,4 +58,15 @@
     border-left: 1px solid #ddd;
     border-radius: 0;
 }
+.admin_teacher_role .bottom-controls .btn {
+    box-shadow: none;
+    padding: 0;
+    background: none;
+    border: 0;
+}
+.admin_teacher_role .right-area {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
 /* Admin Classes Style End */
