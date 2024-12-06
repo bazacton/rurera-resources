@@ -91,7 +91,7 @@
                 <h5 class="card-title">Grade 6</h5>
                 <p class="card-text">A</p>
                 <p class="card-text">26 Students</p>
-                <div>
+                <div class="progress-holder">
                     <p class="mb-1">1 completed activity</p>
                     <div class="progress" style="height: 20px;">
                         <div
