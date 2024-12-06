@@ -176,6 +176,14 @@
     background-color: inherit !important;
     border-color: #e4e6fc !important;
 }
+.admin_teacher_role .input-group-append .color-indicator {
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
 .admin_teacher_role .class-color-box {
     display: flex;
     align-items: center;
