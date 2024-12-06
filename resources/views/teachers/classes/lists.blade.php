@@ -264,8 +264,8 @@
                                                 </li>
                                             </ul>
                                             <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="grade6-6">
-                                                <label class="form-check-label custom-checkbox-label" for="grade6-6">
+                                                <input type="checkbox" class="form-check-input" id="require">
+                                                <label class="form-check-label custom-checkbox-label" for="require">
                                                     Require a parent to guardian's email address
                                                     <small>Instandly share student progress report</small>
                                                 </label>
