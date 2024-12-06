@@ -133,7 +133,7 @@
     background: #f2f2f2 !important;
 }
 .admin_teacher_role .bottom-controls .btn.user-btn:hover {
-    background-color: inherit;
+    background-color: inherit !important;
 }
 .admin_teacher_role .bottom-controls .btn i {
     font-size: 16px;
