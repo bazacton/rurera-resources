@@ -254,3 +254,73 @@
     border-color: #6bd700;
 }
 /* Admin Create-Class-Modal Style End */
+
+/* Admin Create-Google-Class-Modal Style Start */
+.admin_teacher_role .create-google-class-modal .modal-header {
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 15px;
+}
+.admin_teacher_role .create-google-class-modal .modal-content {
+    padding: 15px 15px;
+}
+.admin_teacher_role .create-google-class-modal .modal-title {
+    color: #333;
+}
+.admin_teacher_role .create-google-class-modal .modal-body {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 25px;
+}
+.admin_teacher_role .create-google-class-modal .user-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+.admin_teacher_role .create-google-class-modal .user-info h5 {
+    line-height: normal;
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+.admin_teacher_role .create-google-class-modal .user-info a {
+    display: block;
+    line-height: normal;
+    padding-top: 2px;
+    color: #787d84;
+}
+.admin_teacher_role .create-google-class-modal .user-info .img-box {display: inline-block;height: 35px;width: 35px;}
+.admin_teacher_role .create-google-class-modal .user-info .img-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.admin_teacher_role .create-google-class-modal .user-info .user-btn {
+    background-color: #f0eef2;
+    margin-left: auto;
+    border: 0;
+    padding: 5px 15px;
+    border-radius: 3px;
+    outline: none;
+}
+.admin_teacher_role .create-google-class-modal .form-group {
+    position: relative;
+    margin-bottom: 15px;
+    padding: 0;
+}
+.admin_teacher_role .create-google-class-modal i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #999;
+}
+.admin_teacher_role .create-google-class-modal input[type="text"] {
+    border-radius: 30px;
+}
+.admin_teacher_role .create-google-class-modal i ~ input[type="text"] {
+    padding-left: 40px;
+}
+/* Admin Create-Google-Class-Modal Style End */
