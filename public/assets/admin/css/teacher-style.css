@@ -1,3 +1,4 @@
+/* Admin Classes Style Start */
 .admin_teacher_role .nav-area {
     display: flex;
     align-items: center;
@@ -18,3 +19,4 @@
 .admin_teacher_role .card {
     background-color: #009788;
 }
+/* Admin Classes Style End */
