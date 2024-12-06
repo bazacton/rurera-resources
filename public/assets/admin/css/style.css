@@ -1058,7 +1058,6 @@ body.sidebar-gone .main-sidebar {left: -250px;}
 body.sidebar-mini .hide-sidebar-mini {display: none !important;}
 body.sidebar-mini .main-sidebar {width: 65px; overflow: initial !important; position: absolute; box-shadow: none;}
 body.sidebar-mini .main-sidebar:after {box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03); content: ' '; position: fixed; background-color: #fff; width: 65px; height: 100%; left: 0; top: 0; z-index: -1; opacity: 0; -webkit-animation-name: mini-sidebar; animation-name: mini-sidebar; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards;}
-.admin_teacher_role .main-sidebar {background-color: #fff;}
 @-webkit-keyframes mini-sidebar {
     from {
         opacity: 0;
