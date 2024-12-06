@@ -103,6 +103,9 @@
     background-color: rgba(255, 255, 255, 0.1);
     outline: none;
 }
+.classes-card .dropdown-item i {
+    margin-right: 5px;
+}
  .admin_teacher_role .classes-card .card-title,
  .admin_teacher_role .classes-card .card-body p
   {
