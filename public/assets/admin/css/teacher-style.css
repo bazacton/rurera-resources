@@ -175,6 +175,14 @@
     background-color: inherit !important;
     border-color: #e4e6fc !important;
 }
+.admin_teacher_role .class-color-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.admin_teacher_role .dropdown-menu h5 {
+    font-size: 16px;
+}
 .admin_teacher_role .dropdown-menu .dropdown-item {
     margin: 0;
     height: 20px;
@@ -187,12 +195,10 @@
 }
 .admin_teacher_role .dropdown-menu {
     min-width: auto;
-    width: auto;
     border: 1px solid #ddd;
     border-radius: 3px;
     padding: 10px 10px;
 }
-
 .admin_teacher_role .custom-checkbox-label {
     color: #333;
     position: relative;
