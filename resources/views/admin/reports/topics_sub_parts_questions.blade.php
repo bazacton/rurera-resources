@@ -268,10 +268,6 @@
 										  @php $chapter_counter = 0; @endphp
 												@foreach($WebinarChapters as $WebinarChapterObj)
 												@php $chapter_counter++; @endphp
-												@if($chapter_counter > 3)
-													@php continue; @endphp
-												@endif
-												
 												<tr class="topic_parts_parent accordion-parent" data-child_class="topic_parts_{{$WebinarChapterObj->id}}">
 													<td><span class="topic-part-title"><i class="fas fa-chevron-down"></i>&nbsp;{{$WebinarChapterObj->getTitleAttribute()}}</span></td>
 													<td>-</td>
@@ -290,9 +286,7 @@
 												@php $part_counter = 0; @endphp
 												@foreach($WebinarChapterObj->ChapterTopicParts as $TopicPartObj)
 												@php $part_counter++; @endphp
-												@if($part_counter > 5)
-													@php continue; @endphp
-												@endif
+												
 												@php 
 												$total_pending_questions = $total_unreviewed_questions = 0;
 												$expected_part_questions = 0;
