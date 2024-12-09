@@ -2764,4 +2764,7 @@ Admin Questions Generator Page Style End
         display: block;
         margin: 6px 0;
     }
+    .similarity-content-block .tab-content:has(.rureraform-admin-popup.active) > .tab-pane.question-details-tab-data > .col-12 {
+        display: none;
+    }
 }
