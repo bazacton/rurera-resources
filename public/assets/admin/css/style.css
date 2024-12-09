@@ -2605,6 +2605,22 @@ Admin Questions Generator Page Style End
     display: none;
 }
 
+.edit-questions-tabs .similarity-content-block:has(.rureraform-admin-popup) .nav {
+    display: none;
+}
+.edit-questions-tabs .similarity-content-block:has(.rureraform-admin-popup) .tab-content {
+    max-width: 100%;
+    width: 100%;
+}
+.edit-questions-tabs .similarity-content-block:has(.rureraform-admin-popup) .tab-content .tab-pane > .col-12 {
+    max-width: 72%;
+    width: 72%;
+}
+.edit-questions-tabs .similarity-content-block:has(.rureraform-admin-popup) .tab-content .tab-pan .lms-element-properties {
+    max-width: 28%;
+    width: 28%;
+}
+
 @media (max-width: 992px) {
     .api-question-status,
     .form-class .form-group,
