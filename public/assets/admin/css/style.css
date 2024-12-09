@@ -2704,7 +2704,6 @@ Admin Questions Generator Page Style End
     .similarity-content-block:has(.rureraform-admin-popup[style*="display: block"]) .question-details-tab-data > .col-12 {
         max-width: 70%;
         width: 70%;
-        padding: 0 15px 0 0;
     }
     .similarity-content-block:has(.rureraform-admin-popup[style*="display: block"]) .question-details-tab-data .lms-element-properties {
         width: 30%;
