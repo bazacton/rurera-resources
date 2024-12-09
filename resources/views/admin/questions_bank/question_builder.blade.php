@@ -21,16 +21,9 @@ $rand_id = rand(999,99999);
 											<button class="nav-link active question-details-tab" id="question-tab" data-toggle="tab" data-target="#question" type="button" role="tab" aria-controls="Question" aria-selected="false">Question</button>
 										</li>
 										<li class="nav-item" role="presentation">
-											<button class="nav-link active similarity-tab" id="Similarity-tab" data-toggle="tab" data-target="#Similarity" type="button" role="tab" aria-controls="Similarity" aria-selected="false">Similarity content</button>
+											<button class="nav-link active similarity-tab" id="Similarity-tab" data-toggle="tab" data-target="#Similarity" type="button" role="tab" aria-controls="Similarity" aria-selected="false">Settings</button>
 										</li>
-										<li class="nav-item" role="presentation">
-											<button class="nav-link" id="topic-parts-tab" data-toggle="tab" data-target="#topic-parts" type="button" role="tab" aria-controls="topic-parts" aria-selected="false">Topic Parts</button>
-										</li>
-										
-										<li class="nav-item" role="presentation">
-											<button class="nav-link" id="activity-tab" data-toggle="tab" data-target="#activity" type="button" role="tab" aria-controls="activity" aria-selected="false">Activity</button>
-										</li>
-										<li class="nav-item" role="presentation">
+										<li class="nav-item rurera-hide" role="presentation">
 											<button class="nav-link" id="review-tab" data-toggle="tab" data-target="#review" type="button" role="tab" aria-controls="review" aria-selected="true">Review</button>
 										</li>
 									</ul>
@@ -596,6 +589,22 @@ $rand_id = rand(999,99999);
 												
 												<div class="tab-pane fade py-0 show active similarity-tab-data" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
 												
+														<h3>Topic Parts</h3>
+														<div class="topic-parts-block">
+															
+														@if(isset( $questionObj->topicPartItem->id))
+															<div class="topic-parts-options">
+																<div class="form-field rureraform-cr-container-medium"> 
+																<input class="rureraform-checkbox-medium" type="checkbox" name="topic_part_item_id" id="topics_parts-875" value="875">
+																<label for="topics_parts-875"><h5 class="font-16 font-weight-bold text-dark">{{$questionObj->topicPartItem->title}}</h5> 
+																	{{$questionObj->topicPartItem->description}}
+																.</label>
+																</div>
+															</div>
+														@endif
+														</div>
+														
+														<h3>Similiarity Content</h3>
                                                         <div id="accordion">
                                                             <div class="similarity-content-block-data">
 															
@@ -613,27 +622,9 @@ $rand_id = rand(999,99999);
 															
 															</div>
                                                         </div>
-                                                    </div>
-
-                                                    <div class="tab-pane fade py-0" id="topic-parts" role="tabpanel" aria-labelledby="topic-parts-tab">
-                                                            <div class="topic-parts-block">
-															
-															@if(isset( $questionObj->topicPartItem->id))
-																<div class="topic-parts-options">
-																	<div class="form-field rureraform-cr-container-medium"> 
-																	<input class="rureraform-checkbox-medium" type="checkbox" name="topic_part_item_id" id="topics_parts-875" value="875">
-																	<label for="topics_parts-875"><h5 class="font-16 font-weight-bold text-dark">{{$questionObj->topicPartItem->title}}</h5> 
-																		{{$questionObj->topicPartItem->description}}
-																	.</label>
-																	</div>
-																</div>
-															@endif
-                                                            
-                                                            </div>
-                                                    </div>
-                                                    
-                                                    <div class="tab-pane fade py-0" id="activity" role="tabpanel" aria-labelledby="activity-tab">
-                                                        <div class="lms-dashboard-card">
+														
+														<h3>Activity Wall</h3>
+														<div class="lms-dashboard-card">
                                                             <div class="lms-card-body">
                                                                 <ul class="lms-card-timeline">
                                                                     <li class="lms-card-list active">
@@ -667,8 +658,10 @@ $rand_id = rand(999,99999);
                                                                 
                                                             </div>
                                                         </div>
+														
+														
                                                     </div>
-
+                                                    
                                                     <div class="tab-pane fade py-0" id="review" role="tabpanel" aria-labelledby="review-tab">
                                                         <div class="review-form">
                                                             <form>
