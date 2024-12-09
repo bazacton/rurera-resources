@@ -2581,6 +2581,7 @@ Admin Questions Generator Page Style End
     flex-wrap: wrap;
     gap: 8px;
     margin: 0 0 8px;
+    align-items: center;
 }
 .activity-status {
     background-color: #f3f3f3;
