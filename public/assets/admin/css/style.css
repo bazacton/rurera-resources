@@ -2574,6 +2574,21 @@ Admin Questions Generator Page Style End
 .rureraform-context-menu {
     display: none;
 }
+.similarity-content-block > .nav {
+    width: 35%;
+    max-width: 35%;
+}
+.similarity-content-block {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.similarity-content-block > .tab-content {
+    max-width: 65%;
+    width: 65%;
+    padding-top: 0;
+}
 
 @media (max-width: 992px) {
     .api-question-status,
