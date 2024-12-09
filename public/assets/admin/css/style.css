@@ -2517,7 +2517,7 @@ Admin Questions Generator Page Style End
     display: flex;
     gap: 10px;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 .similarity-content-block .lms-dashboard-card .lms-card-list:before {
     content: "";
@@ -2604,6 +2604,9 @@ Admin Questions Generator Page Style End
 .similarity-content-block .tab-content > .tab-pane.question-details-tab-data > .col-12 {
     padding: 0;
 }
+.similarity-content-block-data {
+    margin-bottom: 30px;
+}
 .similarity-tab-data .card .card-header {
     padding: 15px;
     background-color: inherit;
@@ -2620,6 +2623,7 @@ Admin Questions Generator Page Style End
     border: 1px solid #ddd;
     border-radius: 6px;
     overflow: hidden;
+    margin-bottom: 5px;
 }
 .similarity-tab-data h3 {
     font-size: 18px;
