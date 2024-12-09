@@ -10477,21 +10477,31 @@ $(document).on('click', '.reject-api-question-single', function () {
 
 $(document).on('click', '.reject-entire-batch', function () {
     var question_id = $(this).attr('data-question_id');
-    jQuery.ajax({
-        type: "GET",
-        url: '/admin/questions-generator/'+question_id+'/reject_entire_batch',
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+	var message = rureraform_esc_html__('Please confirm that you want to perform this Action.');
+    rureraform_dialog_open({
+        echo_html: function () {
+            this.html("<div class='rureraform-dialog-message'>" + message + "</div>");
+            this.show();
         },
-        data: {"question_id": question_id},
-        success: function (return_data) {
-			return_data = jQuery.parseJSON(return_data);
-            Swal.fire({
-				icon: "success",
-				html: '<h3 class="font-20 text-center text-dark-blue">Questions Deleted successfully!</h3>',
-				showConfirmButton: !1
+        ok_label: rureraform_esc_html__('Delete'),
+        ok_function: function (e) {
+            jQuery.ajax({
+				type: "GET",
+				url: '/admin/questions-generator/'+question_id+'/reject_entire_batch',
+				headers: {
+					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+				},
+				data: {"question_id": question_id},
+				success: function (return_data) {
+					return_data = jQuery.parseJSON(return_data);
+					Swal.fire({
+						icon: "success",
+						html: '<h3 class="font-20 text-center text-dark-blue">Questions Deleted successfully!</h3>',
+						showConfirmButton: !1
+					});
+					window.location.href = return_data.redirect_url;
+				}
 			});
-			window.location.href = return_data.redirect_url;
         }
     });
 });
