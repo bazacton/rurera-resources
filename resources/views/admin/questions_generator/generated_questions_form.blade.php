@@ -124,9 +124,10 @@ $rand_id = rand(999,99999);
 
 <!-- Edit-questions Tabs Start -->
 <div class="edit-questions-difficulty-tabs">	
-</div>
 <div class="edit-questions-tabs">	
 </div>
+</div>
+
 <!-- Edit-questions Tabs End -->
 
 
