@@ -93,6 +93,15 @@ $rand_id = rand(999,99999);
 .similiarity-item {
     margin-bottom: 5px;
 }
+
+.true_false_questions {
+    color: #224189 !important;
+    border-bottom-color: #224189 !important;
+}
+.checkbox_questions {
+    border-bottom-color: #ff0000 !important;
+    color: #ff0000 !important;
+}
 </style>
 @endpush
 
