@@ -64,7 +64,7 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-menu .sidenav-item a {
     position: relative;
 }
-.tooltip.custom-tooltip {
+.sidebar-menu-holder .tooltip {
     left: auto !important;
     right: 0;
 }
