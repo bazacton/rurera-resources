@@ -1299,9 +1299,12 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     border: 1px solid #ddd;
     display: inline-flex;
     width: auto;
+    padding-right: 0;
+    border-right: 0;
 }
 .edit-questions-difficulty-tabs .admin-rurera-tabs .nav-link {
     padding: 10px 25px;
+    border-right: 1px solid #ddd;
 }
 .edit-questions-difficulty-tabs .admin-rurera-tabs .nav-link.active {
     border-bottom-color: var(--primary);
