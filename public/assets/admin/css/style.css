@@ -1268,7 +1268,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .admin-rurera-tabs li {position: relative; margin-right: 30px;}
 .admin-rurera-tabs li:last-child {margin-right: 0;}
 .admin-rurera-tabs .nav-link, 
-.admin-rurera-tabs.nav-pills .nav-link {padding: 0 0 15px; border-bottom: 0; border-radius: 0;}
+.admin-rurera-tabs.nav-pills .nav-link {padding: 0 0 15px; border-bottom: 0; border-radius: 0; border-bottom: 3px solid transparent;}
 .admin-rurera-tabs .nav-link.active {border-bottom-color: var(--primary); color: var(--primary); }
 /*.admin-rurera-tabs .nav-item .nav-link {padding: 0 0 0 0!important; position: relative;}
  .admin-rurera-tabs li a:before {counter-increment: li; position: absolute; left: 0; top: 50%; transform: translateY(-50%); height: 40px; width: 40px; background-color: rgba(0,0,0,0.06); border-radius: 5px; text-align: center; line-height: 40px; color: #6c6b71; font-weight: bold; font-size: 18px;} */
