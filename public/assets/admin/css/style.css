@@ -2221,6 +2221,9 @@ output {
 .topic-parts-data table tr td:has(.topic-part-title) {
     min-width: 100px;
 }
+.topic_parts.accordion-parent td:has(.topic-part-title) {
+    padding-left: 30px !important;
+}
 .topic-parts-data table tr td {
     border: 2px dotted #ddd;
     padding-top: 10px !important;
