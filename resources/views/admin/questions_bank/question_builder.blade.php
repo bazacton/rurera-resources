@@ -541,6 +541,9 @@ $rand_id = rand(999,99999);
 														<button type="button" data-status="" data-question_id="{{isset( $questionObj->id )? $questionObj->id : 0 }}" class="reject-api-question-single btn btn-danger font-16">
 															Delete Single
 														</button>
+														<button type="button" data-status="" data-question_id="{{isset( $questionObj->id )? $questionObj->id : 0 }}" class="reject-entire-batch btn btn-danger font-16">
+															Delete Entire Batch
+														</button>
 													</div>
 												</div>
 												</div>

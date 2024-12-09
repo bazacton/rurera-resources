@@ -10473,6 +10473,28 @@ $(document).on('click', '.reject-api-question-single', function () {
     });
 });
 
+$(document).on('click', '.reject-entire-batch', function () {
+    var question_id = $(this).attr('data-question_id');
+    jQuery.ajax({
+        type: "GET",
+        url: '/admin/questions-generator/'+question_id+'/reject_entire_batch',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        data: {"question_id": question_id},
+        success: function (return_data) {
+			return_data = jQuery.parseJSON(return_data);
+            Swal.fire({
+				icon: "success",
+				html: '<h3 class="font-20 text-center text-dark-blue">Questions Deleted successfully!</h3>',
+				showConfirmButton: !1
+			});
+			window.location.href = return_data.redirect_url;
+        }
+    });
+});
+
+
 
 $(document).on('click', '.question_status_submit_btn', function () {
 	var formData = new FormData($('#question_reviewer_status_action_form')[0]);
