@@ -2219,7 +2219,7 @@ output {
     transform: translateY(-50%);
 }
 .topic-parts-data table tr td:has(.topic-part-title) {
-    min-width: 100px;
+    min-width: 250px;
 }
 .topic_parts.accordion-parent td:has(.topic-part-title) {
     padding-left: 30px !important;
