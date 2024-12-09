@@ -2580,7 +2580,7 @@ Admin Questions Generator Page Style End
     border-radius: 3px;
 }
 .similarity-content-block .lms-dashboard-card .lms-card-list:last-child {
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 .lms-dashboard-card .lms-card-info h5 .activity-date {
     margin-left: auto;
