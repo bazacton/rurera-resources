@@ -137,6 +137,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /*Image Sizes, When Image Size Greater Then Column Size Style End*/
 
 /*Image Alignments Style Start*/
+.question-layout.align-items-start .block-holder.image-field {display: block; padding-top: 8px;}
 .image-left {text-align: left !important;}
 .image-right {text-align: right !important;}
 .image-center {text-align: center !important;}
