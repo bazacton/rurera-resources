@@ -77,12 +77,13 @@ Lms Responsive Style Start
         visibility: hidden;
         opacity: 0;
         transform: translateY(-50%);
+        display: none;
     }
-    .panel-sidebar .sidebar-menu .sidenav-item:hover .nav-sub-title{
+    /* .panel-sidebar .sidebar-menu .sidenav-item:hover .nav-sub-title{
         visibility: visible;
         opacity: 1;
         margin-top: 0;
-    }
+    } */
     .sidebar-menu-holder {
         height: 100vh;
     }
