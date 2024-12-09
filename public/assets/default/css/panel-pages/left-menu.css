@@ -65,7 +65,7 @@ Left SideBar-menu Start
     position: relative;
 }
 .tooltip.custom-tooltip {
-    left: 30px !important;
+    left: 60px !important;
 }
 #nextBadgeChart path {stroke-width: 10px; stroke-dasharray: 10, 20; stroke-linecap: round;}
 .not-verified-alert {background-color: #d4efff;}
