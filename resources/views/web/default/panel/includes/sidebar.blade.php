@@ -61,7 +61,7 @@
             </div>
             <ul class="sidebar-menu pt-10 @if(!empty($authUser->userGroup)) has-user-group @endif @if(empty($getPanelSidebarSettings) or empty($getPanelSidebarSettings['background'])) without-bottom-image @endif" @if((!empty($isRtl) and $isRtl)) data-simplebar-direction="rtl" @endif>
                     <li class="sidenav-item {{ (request()->is('panel')) ? 'sidenav-item-active' : '' }}">
-                        <a href="/{{panelRoute()}}" class="d-flex align-items-center font-16" data-toggle="tooltip" data-placement="right" title="Home">
+                        <a href="/{{panelRoute()}}" class="d-flex align-items-center font-16" data-toggle="tooltip" data-placement="left" title="Home">
                             <span class="sidenav-item-icon mr-20">
                                 <img src="/assets/default/img/sidebar/home.svg">
                             </span>
@@ -70,7 +70,7 @@
                     </li>
                 @if(auth()->user()->isParent() || auth()->user()->isTutor())
                     <li class="sidenav-item {{ (request()->is('panel/set-work') or request()->is('panel/set-work/*')) ? 'sidenav-item-active' : '' }}">
-                        <a class="d-flex align-items-center" href="/{{panelRoute()}}/set-work" data-toggle="tooltip" data-placement="right" title="Set Work">
+                        <a class="d-flex align-items-center" href="/{{panelRoute()}}/set-work" data-toggle="tooltip" data-placement="left" title="Set Work">
                             <span class="sidenav-setting-icon sidenav-item-icon mr-20">
                                 <img src="/assets/default/img/sidebar/set-work.svg">
                             </span>
@@ -81,7 +81,7 @@
                 @endif
                 @if(auth()->user()->isUser())
                         <li class="sidenav-item {{ (request()->is('learn') or request()->is('learn/*')) ? 'sidenav-item-active' : '' }}">
-                            <a class="d-flex align-items-center" href="/learn" data-toggle="tooltip" data-placement="right" title="Learn">
+                            <a class="d-flex align-items-center" href="/learn" data-toggle="tooltip" data-placement="left" title="Learn">
                                 <span class="sidenav-item-icon mr-20">
                                     <img src="/assets/default/img/sidebar/learn.svg">
                                 </span>
@@ -90,7 +90,7 @@
                         </li>
                         @if(auth()->user()->show_timestables == 1)
                             <li class="sidenav-item {{ (request()->is('timestables-practice') or request()->is('timestables-practice/*')) ? 'sidenav-item-active' : '' }}">
-                                <a class="d-flex align-items-center" href="/timestables-practice" data-toggle="tooltip" data-placement="right" title="TimesTable">
+                                <a class="d-flex align-items-center" href="/timestables-practice" data-toggle="tooltip" data-placement="left" title="TimesTable">
                                     <span class="sidenav-item-icon mr-20">
                                         <img src="/assets/default/img/sidebar/timestable.svg">
                                     </span>
@@ -100,7 +100,7 @@
                         @endif
                         @if(auth()->user()->show_spellings == 1)
                         <li class="sidenav-item {{ (request()->is('spells') or request()->is('spells/*')) ? 'sidenav-item-active' : '' }}">
-                            <a class="d-flex align-items-center" href="/spells" data-toggle="tooltip" data-placement="right" title="Word Lists">
+                            <a class="d-flex align-items-center" href="/spells" data-toggle="tooltip" data-placement="left" title="Word Lists">
                                 <span class="sidenav-item-icon mr-20">
                                     <img src="/assets/default/img/sidebar/spell.svg">
                                 </span>
@@ -110,7 +110,7 @@
                         @endif
                         @if(auth()->user()->show_books == 1)
                         <li class="sidenav-item {{ (request()->is('books') or request()->is('books/*')) ? 'sidenav-item-active' : '' }}">
-                            <a class="d-flex align-items-center" href="/books" data-toggle="tooltip" data-placement="right" title="Books">
+                            <a class="d-flex align-items-center" href="/books" data-toggle="tooltip" data-placement="left" title="Books">
                                 <span class="sidenav-item-icon mr-20">
                                     <img src="/assets/default/img/sidebar/books.svg">
                                 </span>
@@ -121,7 +121,7 @@
                     
                     @if(auth()->user()->show_sats == 1)
                     <li class="sidenav-item {{ (request()->is('tests') or request()->is('tests/*')) ? 'sidenav-item-active' : '' }}">
-                        <a class="d-flex align-items-center" href="/tests" data-toggle="tooltip" data-placement="right" title="sats">
+                        <a class="d-flex align-items-center" href="/tests" data-toggle="tooltip" data-placement="left" title="sats">
                             <span class="sidenav-item-icon mr-20">
                                 <img src="/assets/default/img/sidebar/test.svg">
                             </span>
@@ -133,7 +133,7 @@
                     @endif
 
                 <li class="sidenav-item {{ (request()->is('quests') or request()->is('quests/*')) ? 'sidenav-item-active' : '' }}">
-                    <a class="d-flex align-items-center" href="/quests" data-toggle="tooltip" data-placement="right" title="Quests">
+                    <a class="d-flex align-items-center" href="/quests" data-toggle="tooltip" data-placement="left" title="Quests">
                         <span class="sidenav-item-icon mr-20">
                             <img src="/assets/default/img/sidebar/quests.svg">
                         </span>
@@ -146,7 +146,7 @@
                         
                     @if(auth()->user()->hide_games == 0)
                     <li class="sidenav-item {{ (request()->is('games') or request()->is('games/*')) ? 'sidenav-item-active' : '' }}">
-                        <a class="d-flex align-items-center" href="/games" data-toggle="tooltip" data-placement="right" title="Games">
+                        <a class="d-flex align-items-center" href="/games" data-toggle="tooltip" data-placement="left" title="Games">
                             <span class="sidenav-item-icon mr-20">
                                 <img src="/assets/default/img/sidebar/games.svg">
                             </span>
@@ -155,7 +155,7 @@
                     </li>
                     @endif
                     <li class="sidenav-item {{ (request()->is('shop') or request()->is('shop/*')) ? 'sidenav-item-active' : '' }}">
-                        <a class="d-flex align-items-center" href="/shop" data-toggle="tooltip" data-placement="right" title="Shop">
+                        <a class="d-flex align-items-center" href="/shop" data-toggle="tooltip" data-placement="left" title="Shop">
                             <span class="sidenav-item-icon mr-20">
                                 <img src="/assets/default/img/sidebar/shop.svg">
                             </span>
@@ -164,7 +164,7 @@
                     </li>
                     @endif
                     <li class="sidenav-item {{ (request()->is('panel/analytics') or request()->is('panel/analytics/*')) ? 'sidenav-item-active' : '' }}">
-                        <a class="d-flex align-items-center" href="/{{panelRoute()}}/analytics" data-toggle="tooltip" data-placement="right" title="Analytics">
+                        <a class="d-flex align-items-center" href="/{{panelRoute()}}/analytics" data-toggle="tooltip" data-placement="left" title="Analytics">
                             <span class="sidenav-setting-icon sidenav-item-icon mr-20">
                                 <img src="/assets/default/img/sidebar/grarph.svg">
                             </span>
@@ -174,7 +174,7 @@
 
                 @if(auth()->user()->isUser())
                     <li class="sidenav-item {{ (request()->is('school-zone') or request()->is('school-zone/*')) ? 'sidenav-item-active' : '' }}">
-                        <a class="d-flex align-items-center" href="/school-zone" data-toggle="tooltip" data-placement="right" title="School Zone">
+                        <a class="d-flex align-items-center" href="/school-zone" data-toggle="tooltip" data-placement="left" title="School Zone">
                             <span class="sidenav-item-icon mr-20">
                                 <img src="/assets/default/svgs/school-zone.svg">
                             </span>
@@ -183,7 +183,7 @@
                     </li>
                 @endif
                 <li class="sidenav-item {{ (request()->is('panel/marketing/affiliates') or request()->is('panel/marketing/affiliates/*')) ? 'sidenav-item-active' : '' }}">
-                    <a class="d-flex align-items-center" href="/{{panelRoute()}}/marketing/affiliates" data-toggle="tooltip" data-placement="right" title="Referrals">
+                    <a class="d-flex align-items-center" href="/{{panelRoute()}}/marketing/affiliates" data-toggle="tooltip" data-placement="left" title="Referrals">
                         <span class="sidenav-setting-icon sidenav-item-icon mr-20">
                             <img src="/assets/default/img/sidebar/referrals.png">
                         </span>
@@ -194,7 +194,7 @@
 
                 @if(auth()->user()->isParent() || auth()->user()->isTutor())
                     <li class="sidenav-item {{ (request()->is('panel/students') or request()->is('panel/students/*')) ? 'sidenav-item-active' : '' }}">
-                        <a class="d-flex align-items-center" href="/{{panelRoute()}}/students" data-toggle="tooltip" data-placement="right" title="Students">
+                        <a class="d-flex align-items-center" href="/{{panelRoute()}}/students" data-toggle="tooltip" data-placement="left" title="Students">
                             <span class="sidenav-setting-icon sidenav-item-icon mr-20">
                                 <img src="/assets/default/img/sidebar/members.png">
                             </span>
@@ -206,7 +206,7 @@
                 @endif
 
                 <li class="sidenav-item {{ (request()->is('panel/setting') or request()->is('panel/setting/*')) ? 'sidenav-item-active' : '' }}">
-                    <a class="d-flex align-items-center" href="/{{panelRoute()}}/setting" data-toggle="tooltip" data-placement="right" title="Profile">
+                    <a class="d-flex align-items-center" href="/{{panelRoute()}}/setting" data-toggle="tooltip" data-placement="left" title="Profile">
                         <span class="sidenav-setting-icon sidenav-item-icon mr-20">
                             <img src="{{ $authUser->getAvatar() }}" alt="{{ $authUser->get_full_name() }}" class="img-circle">
                         </span>
@@ -215,7 +215,7 @@
                 </li>
 
                 <li class="sidenav-item {{ (request()->is('logout') or request()->is('logout/*')) ? 'sidenav-item-active' : '' }}">
-                    <a class="d-flex align-items-center" href="/logout" data-toggle="tooltip" data-placement="right" title="Logout">
+                    <a class="d-flex align-items-center" href="/logout" data-toggle="tooltip" data-placement="left" title="Logout">
                         <span class="sidenav-setting-icon sidenav-item-icon mr-20">
                             <img src="/assets/default/img/sidebar/logout.svg">
                         </span>
