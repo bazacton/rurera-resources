@@ -11,33 +11,7 @@ $rand_id = rand(99,9999);
 @endpush
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<style>
-    .image-field img{
-        width:50px;
-        height:50px
-    }
-    .image-field-box{
-        position:absolute !important;
-    }
-    .draggable-items{
-        display:table-row;
-        clear:both;
 
-    }
-    .draggable-items li{
-        display:block;
-        float: left;
-    }
-    .rurera-droppable{
-            width:100; border:1px solid #efefef; height:50px; display:inline-block;
-        }
-		
-		
-		
-	.rureraform-form-input-medium .rureraform-element .rureraform-input{
-		height:auto;
-	}
-</style>
 @section('content')
 
 
