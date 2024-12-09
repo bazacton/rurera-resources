@@ -2594,9 +2594,6 @@ Admin Questions Generator Page Style End
     width: 65%;
     padding: 0 15px;
 }
-.edit-questions-tabs .similarity-content-block > .tab-content .question-details-tab-data {
-    display: none;
-}
 .edit-questions-tabs .similarity-content-block .card .card-header .btn-link {
     padding: 0;
 }
