@@ -2494,6 +2494,9 @@ Admin Questions Generator Page Style End
     background-color: #fff;
     border-radius: 5px;
 }
+.topic-parts-block {
+    margin: 0 0 15px;
+}
 .topic-parts-block .form-field label,
 .topic-parts-block .form-field label:hover {
     border-width: 1px;
