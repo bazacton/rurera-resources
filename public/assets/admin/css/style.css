@@ -1287,7 +1287,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     margin: 0;
 }
 .edit-questions-tabs .questions-nav-bar {
-    padding: 0 25px;
+    padding: 25px;
 }
 .edit-questions-difficulty-tabs .admin-rurera-tabs {
     margin: 0 !important;
