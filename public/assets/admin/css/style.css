@@ -2636,16 +2636,16 @@ Admin Questions Generator Page Style End
         margin: 0 -15px;
     }
     .similarity-content-block .tab-content .question-details-tab-data {
-        width: 65%;
-        max-width: 65%;
+        width: 70%;
+        max-width: 70%;
         display: inline-flex;
         flex-direction: column;
         opacity: 1;
         padding: 0 15px;
     }
     .similarity-content-block .tab-content .similarity-tab-data {
-        width: 65%;
-        max-width: 65%;
+        width: 30%;
+        max-width: 30%;
         display: inline-flex;
         flex-direction: column;
         opacity: 1;
