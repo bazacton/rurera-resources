@@ -99,8 +99,8 @@ $rand_id = rand(999,99999);
     border-bottom-color: #224189 !important;
 }
 .checkbox_questions {
-    border-bottom-color: #ff0000 !important;
-    color: #ff0000 !important;
+    color: #224189 !important;
+    border-bottom-color: #224189 !important;
 }
 </style>
 @endpush
