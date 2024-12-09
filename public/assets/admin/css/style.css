@@ -1268,11 +1268,11 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .admin-rurera-tabs li {position: relative;}
 .admin-rurera-tabs li:last-child {margin-right: 0;}
 .admin-rurera-tabs .nav-link, 
-.admin-rurera-tabs.nav-pills .nav-link {padding: 0 0 15px; border-bottom: 3px solid transparent; border-radius: 0;}
+.admin-rurera-tabs.nav-pills .nav-link {padding: 0 0 15px; border-bottom: 0; border-radius: 0;}
 .admin-rurera-tabs .nav-link.active {border-bottom-color: var(--primary); color: var(--primary); }
 /*.admin-rurera-tabs .nav-item .nav-link {padding: 0 0 0 0!important; position: relative;}
  .admin-rurera-tabs li a:before {counter-increment: li; position: absolute; left: 0; top: 50%; transform: translateY(-50%); height: 40px; width: 40px; background-color: rgba(0,0,0,0.06); border-radius: 5px; text-align: center; line-height: 40px; color: #6c6b71; font-weight: bold; font-size: 18px;} */
-.admin-rurera-tabs.nav-pills li .nav-link.active {background-color: inherit; box-shadow: none;}
+.admin-rurera-tabs.nav-pills li .nav-link.active {background-color: #fff; box-shadow: none;}
 .admin-rurera-tabs.nav-pills li .nav-link.active:before {background-color: var(--primary); color: #fff;}
 .admin-rurera-tabs li .nav-link span {display: block; line-height: normal; color: #6c6b71; font-size: 15px; font-weight: 600;}
 .admin-rurera-tabs li .nav-link .tab-detail {color: #b5b4b9; padding-top: 5px;}
@@ -1282,9 +1282,6 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .table-striped label input[type=checkbox] {width: 16px; height: 16px; display: inline-block; position: relative; top: 3px; margin-right: 10px;}
 .edit-questions-difficulty-tabs {
     margin-top: 30px;
-}
-.edit-questions-difficulty-data {
-    background-color: #fff;
 }
 .edit-questions-difficulty-tabs .questions-nav-bar {
     padding: 25px;
