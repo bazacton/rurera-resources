@@ -345,6 +345,9 @@
 </div>
 @push('scripts_bottom')
 <script>
-    $('.sidebar-menu-holder').tooltip();
+    $('.panel-sidebar .sidebar-menu .sidenav-item a').tooltip();
+  $('.js-btn-tooltip--custom').tooltip({
+    customClass: 'tooltip-custom'
+  });
 </script>
 @endpush
