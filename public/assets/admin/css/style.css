@@ -1265,7 +1265,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 
 /* Admin Rurera Tabs Style Start */
 .admin-rurera-tabs {margin: 0 0 40px 0; border-bottom: 1px solid #f6f6f6; width: 100%; max-width: 100%; }
-.admin-rurera-tabs li {position: relative; margin-right: 30px;}
+.admin-rurera-tabs li {position: relative;}
 .admin-rurera-tabs li:last-child {margin-right: 0;}
 .admin-rurera-tabs .nav-link, 
 .admin-rurera-tabs.nav-pills .nav-link {padding: 0 0 15px; border-bottom: 3px solid transparent; border-radius: 0;}
@@ -1280,6 +1280,23 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .admin-rurera-tabs li:last-child:after {visibility: hidden; opacity: 0;}
 .table-striped label {margin: 0;}
 .table-striped label input[type=checkbox] {width: 16px; height: 16px; display: inline-block; position: relative; top: 3px; margin-right: 10px;}
+.edit-questions-difficulty-tabs {
+    border: 1px solid #ddd;
+}
+.edit-questions-difficulty-tabs .lms-quiz-create > .row {
+    margin: 0;
+}
+.edit-questions-tabs .questions-nav-bar {
+    padding: 0 25px;
+}
+.edit-questions-difficulty-tabs .admin-rurera-tabs {
+    margin: 0 !important;
+}
+.edit-questions-difficulty-tabs .admin-rurera-tabs .nav-link {
+    padding: 10px 25px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
 /* Admin Rurera Tabs Style End */
 .search-field-box {background-color: #f1f1f1; border-bottom: 1px solid #eeeeee; padding: 20px;}
 .questions-group.populated-data,
