@@ -332,107 +332,6 @@
     @if(auth()->check() && (auth()->user()->isUser()))
     <div class="row ">
         <div class="col-12 col-lg-12 mt-35">
-            <section class="product-tabs-section panel-border">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="product-tabs">
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" id="trending-toys-tab" data-toggle="tab"
-                                           href="#trending-toys" role="tab" aria-controls="trending-toys"
-                                           aria-selected="true">Trending Toys</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="shortlisted-toys-tab" data-toggle="tab"
-                                           href="#shortlisted-toys" role="tab" aria-controls="shortlisted-toys"
-                                           aria-selected="false">Favorite Toys</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="entitled-toys-tab" data-toggle="tab"
-                                           href="#entitled-toys" role="tab" aria-controls="entitled-toys"
-                                           aria-selected="false">Entitled Toys</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="productTabContent">
-                                    <div class="tab-pane fade active show" id="trending-toys" role="tabpanel"
-                                         aria-labelledby="trending-toys-tab">
-                                        <div class="swiper-container product-tabs-slider">
-                                            <div class="swiper-wrapper">
-                                                @if( isset( $trending_toys ) && $trending_toys->count() > 0)
-                                                    @foreach( $trending_toys as $product)
-                                                        @php
-                                                            $hasDiscount = $product->getActiveDiscount();
-                                                        @endphp
-                                                        <div class="swiper-slide">
-                                                            <div class="product-card">
-                                                                <figure>
-                                                                    @include('web.default.products.includes.card')
-                                                                </figure>
-                                                            </div>
-                                                        </div>
-                                                    @endforeach
-                                                @endif
-                                            </div>
-                                            <!-- Add Arrows -->
-                                            <div class="swiper-button-prev"></div>
-                                            <div class="swiper-button-next"></div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="shortlisted-toys" role="tabpanel"
-                                         aria-labelledby="shortlisted-toys-tab">
-                                        <div class="swiper-container product-tabs-slider">
-                                            <div class="swiper-wrapper">
-                                                @if( isset( $shortlisted_toys ) && $shortlisted_toys->count() > 0)
-                                                    @foreach( $shortlisted_toys as $product)
-                                                        @php
-                                                            $hasDiscount = $product->getActiveDiscount();
-                                                        @endphp
-                                                        <div class="swiper-slide">
-                                                            <div class="product-card">
-                                                                <figure>
-                                                                    @include('web.default.products.includes.card')
-                                                                </figure>
-                                                            </div>
-                                                        </div>
-                                                    @endforeach
-                                                @endif
-                                            </div>
-                                            <!-- Add Arrows -->
-                                            <div class="swiper-button-prev"></div>
-                                            <div class="swiper-button-next"></div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="entitled-toys" role="tabpanel"
-                                         aria-labelledby="entitled-toys-tab">
-                                        <div class="swiper-container product-tabs-slider">
-                                            <div class="swiper-wrapper">
-                                                @if( isset( $entitled_toys ) && $entitled_toys->count() > 0)
-                                                    @foreach( $entitled_toys as $product)
-                                                        @php
-                                                            $hasDiscount = $product->getActiveDiscount();
-                                                        @endphp
-                                                        <div class="swiper-slide">
-                                                            <div class="product-card">
-                                                                <figure>
-                                                                    @include('web.default.products.includes.card')
-                                                                </figure>
-                                                            </div>
-                                                        </div>
-                                                    @endforeach
-                                                @endif
-                                            </div>
-                                            <!-- Add Arrows -->
-                                            <div class="swiper-button-prev"></div>
-                                            <div class="swiper-button-next"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
            <section>
                 <div class="container">
                     <div class="row">
@@ -736,6 +635,7 @@
             <span class="modal-time d-block font-12 text-gray mt-25"></span>
             <p class="modal-message font-weight-500 text-gray mt-4"></p>
         </div>
+    </div>
     </div>
 
     @endsection
