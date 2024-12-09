@@ -345,8 +345,6 @@
 </div>
 @push('scripts_bottom')
 <script>
-    $(function () {
-        $('.sidebar-menu-holder').tooltip()
-    })
+    $('.sidebar-menu-holder').tooltip();
 </script>
 @endpush
