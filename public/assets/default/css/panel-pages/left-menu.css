@@ -68,8 +68,9 @@ Left SideBar-menu Start
     justify-content: center;
 }
 .sidebar-menu-holder .tooltip {
-    left: calc(100% - 15px) !important;
+    left: calc(100% - 5px) !important;
 }
+.sidebar-menu-holder .tooltip-inner {white-space: nowrap;}
 #nextBadgeChart path {stroke-width: 10px; stroke-dasharray: 10, 20; stroke-linecap: round;}
 .not-verified-alert {background-color: #d4efff;}
 .panel-content .alert-warning {margin-top: 10px !important;font-weight: 500 !important;color: #343434;background-color: rgba(255, 171, 0, .44) !important;border-color: #ffab00 !important;}
