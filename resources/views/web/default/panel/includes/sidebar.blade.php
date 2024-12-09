@@ -343,8 +343,10 @@
     </div>
   </div>
 </div>
+@push('scripts_bottom')
 <script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
 </script>
+@endpush
