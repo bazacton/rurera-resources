@@ -1297,6 +1297,9 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
+.edit-questions-difficulty-tabs .admin-rurera-tabs .nav-link.active {
+    border-bottom-color: var(--primary);
+}
 /* Admin Rurera Tabs Style End */
 .search-field-box {background-color: #f1f1f1; border-bottom: 1px solid #eeeeee; padding: 20px;}
 .questions-group.populated-data,
