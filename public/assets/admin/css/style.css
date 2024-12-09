@@ -1284,8 +1284,6 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     background-color: #fff;
 }
 .edit-questions-difficulty-tabs .questions-nav-bar {
-    border: 1px solid #ddd;
-    border-top: 0;
     padding: 25px;
     background-color: #FFF;
 }
