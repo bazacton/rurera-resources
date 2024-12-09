@@ -64,7 +64,6 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-menu .sidenav-item a {
     position: relative;
 }
-.tooltip.custom-tooltip {margin-left: 50px;}
 #nextBadgeChart path {stroke-width: 10px; stroke-dasharray: 10, 20; stroke-linecap: round;}
 .not-verified-alert {background-color: #d4efff;}
 .panel-content .alert-warning {margin-top: 10px !important;font-weight: 500 !important;color: #343434;background-color: rgba(255, 171, 0, .44) !important;border-color: #ffab00 !important;}
