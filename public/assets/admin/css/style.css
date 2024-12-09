@@ -2606,7 +2606,7 @@ Admin Questions Generator Page Style End
     gap: 25px;
 }
 .similarity-content-block .tab-content > .tab-pane.question-details-tab-data > .col-12 {
-    padding: 0;
+    padding: 0 15px 0 0;
 }
 .similarity-content-block-data {
     margin-bottom: 30px;
