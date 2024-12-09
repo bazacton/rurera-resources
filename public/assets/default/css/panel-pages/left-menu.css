@@ -68,7 +68,7 @@ Left SideBar-menu Start
     justify-content: center;
 }
 .sidebar-menu-holder .tooltip {
-    left: calc(100% - 5px) !important;
+    left: 100% !important;
 }
 .sidebar-menu-holder .tooltip-inner {white-space: nowrap;}
 #nextBadgeChart path {stroke-width: 10px; stroke-dasharray: 10, 20; stroke-linecap: round;}
