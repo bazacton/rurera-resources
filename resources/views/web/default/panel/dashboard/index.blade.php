@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <!-- <section class="assignments-table count-number-wrapp mt-30">
+    <section class="assignments-table count-number-wrapp mt-30">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12">
@@ -84,7 +84,7 @@
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
 
 
 </section>
@@ -204,7 +204,7 @@
 						</span>
 					</div>
 				</div>	
-				<div class="icon-box mt-20 stages-items rurera-hide">
+				<div class="icon-box mt-20 stages-items ">
 					@php $attempted_count = 0; @endphp
 					@if( !empty($resultsRecords))
 						@foreach( $resultsRecords as $result_id => $percentage)
@@ -251,7 +251,7 @@
 	@endif
 </div>
 
-<div class="quests-list quests-learning rurera-hide">
+<div class="quests-list quests-learning ">
 	<div class="section-title text-left mb-30">
 		<h2 class="font-22">Learning Journeys</h2>
 	</div>
@@ -330,7 +330,7 @@
 @endif
 <div class="dashboard">
     @if(auth()->check() && (auth()->user()->isUser()))
-    <div class="row rurera-hide">
+    <div class="row ">
         <div class="col-12 col-lg-12 mt-35">
             <section class="product-tabs-section panel-border">
                 <div class="container">
