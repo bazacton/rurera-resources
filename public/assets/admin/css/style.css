@@ -2575,16 +2575,16 @@ Admin Questions Generator Page Style End
     display: none;
 }
 
-
-.edit-questions-tabs .similarity-content-block > .nav {
-    width: 35%;
-    max-width: 35%;
-}
 .edit-questions-tabs .similarity-content-block {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+.edit-questions-tabs .similarity-content-block > .nav {
+    width: 35%;
+    max-width: 35%;
 }
 .edit-questions-tabs .similarity-content-block > .tab-content {
     max-width: 65%;
