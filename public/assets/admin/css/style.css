@@ -1280,12 +1280,13 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .admin-rurera-tabs li:last-child:after {visibility: hidden; opacity: 0;}
 .table-striped label {margin: 0;}
 .table-striped label input[type=checkbox] {width: 16px; height: 16px; display: inline-block; position: relative; top: 3px; margin-right: 10px;}
+.edit-questions-difficulty-tabs {
+    margin-top: 30px;
+}
 .edit-questions-difficulty-data {
     background-color: #fff;
 }
 .edit-questions-difficulty-tabs .questions-nav-bar {
-    border: 1px solid #ddd;
-    border-top: 0;
     padding: 25px;
     background-color: #FFF;
 }
