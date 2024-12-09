@@ -10477,7 +10477,7 @@ $(document).on('click', '.reject-api-question-single', function () {
 
 $(document).on('click', '.reject-entire-batch', function () {
     var question_id = $(this).attr('data-question_id');
-	message = rureraform_esc_html__('Please confirm that you want to perform this Action.');
+	var message = rureraform_esc_html__('Please confirm that you want to perform this Action.');
     rureraform_dialog_open({
         echo_html: function () {
             this.html("<div class='rureraform-dialog-message'>" + message + "</div>");
