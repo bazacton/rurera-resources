@@ -1483,6 +1483,7 @@ body .question-step:has(.prev-next-controls) {padding-bottom: 0; }
 .note-editor .card-header {border-color: rgba(0, 0, 0, .2);}
 .lms-quiz-create .card {box-shadow: none;}
 .lms-quiz-create .card .card-body {border: 1px solid #ccc; background-color: #fff;}
+.main-content:has(.lms-quiz-create) {background-color: #fcfcfc;}
 .lms-quiz-create .select2-container {z-index: 12 !important;}
 .lms-quiz-create .rureraform-properties-item .rureraform-wysiwyg .field-options {padding: 15px 15px 10px; display: inline-block; width: 100%; float: none;}
 .lms-quiz-create .question-textarea select {padding: 4px 2px;}
