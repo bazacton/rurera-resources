@@ -2598,6 +2598,13 @@ Admin Questions Generator Page Style End
     padding: 0;
     background-color: inherit;
 }
+.similarity-tab-data .card .card-header button {
+    outline: none;
+    text-decoration: none;
+}
+.similarity-tab-data .card .card-header button .d-flex {
+    align-items: center;
+}
 .similarity-tab-data .card {
     border: 1px solid #ddd;
     border-radius: 6px;
