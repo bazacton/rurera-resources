@@ -10357,6 +10357,8 @@ $(document).on('click', '.question_topic_part_submit_btn', function () {
 });
 
 $(document).on('click', '.quiz-group', function () {
+	$(".quiz-group").removeClass('active');
+	$(this).addClass('active');
 	$(".topic-parts-block").addClass('rurera-hide');
 	
     rureraform_properties_open($(this));
