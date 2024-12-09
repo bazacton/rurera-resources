@@ -2605,12 +2605,13 @@ Admin Questions Generator Page Style End
     padding: 0;
 }
 .similarity-tab-data .card .card-header {
-    padding: 0;
+    padding: 15px;
     background-color: inherit;
 }
 .similarity-tab-data .card .card-header button {
     outline: none;
     text-decoration: none;
+    padding: 0;
 }
 .similarity-tab-data .card .card-header button .d-flex {
     align-items: center;
