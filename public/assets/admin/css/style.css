@@ -2597,6 +2597,9 @@ Admin Questions Generator Page Style End
 .edit-questions-tabs .similarity-content-block > .tab-content .question-details-tab-data {
     display: none;
 }
+.edit-questions-tabs .similarity-content-block .card .card-header .btn-link {
+    padding: 0;
+}
 
 @media (max-width: 992px) {
     .api-question-status,
