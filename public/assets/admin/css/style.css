@@ -2597,9 +2597,12 @@ Admin Questions Generator Page Style End
 .edit-questions-tabs .similarity-content-block .card .card-header .btn-link {
     padding: 0;
 }
-.edit-questions-tabs .nav .nav-link.similarity-tab.active {
+.edit-questions-tabs .similarity-content-block .nav .nav-link.similarity-tab.active {
     border-bottom-color: transparent;
     color: #000;
+}
+.edit-questions-tabs .similarity-content-block .tab-content > .tab-pane.similarity-tab-data.show {
+    display: none;
 }
 
 @media (max-width: 992px) {
