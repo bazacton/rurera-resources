@@ -1298,6 +1298,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     width: auto;
     padding-right: 0;
     border-right: 0;
+    border-bottom: 0;
 }
 .edit-questions-difficulty-tabs .admin-rurera-tabs .nav-link {
     padding: 10px 25px;
