@@ -2613,28 +2613,6 @@ Admin Questions Generator Page Style End
 .similarity-tab-data h3 {
     font-size: 18px;
 }
-.edit-questions-tabs .similarity-content-block:has(.rureraform-admin-popup.active) > .nav,
-.edit-questions-tabs .similarity-content-block .tab-content > .tab-pane.similarity-tab-data.show,
-.edit-questions-tabs .similarity-content-block:has(.rureraform-admin-popup.active) .tab-content .tab-pane.similarity-tab-data.show  {
-    display: none;
-}
-.edit-questions-tabs .similarity-content-block:has(.rureraform-admin-popup.active) .tab-content {
-    max-width: 100%;
-    width: 100%;
-}
-.edit-questions-tabs .similarity-content-block:has(.rureraform-admin-popup.active) .tab-content .tab-pane > .col-12 {
-    max-width: 65%;
-    width: 65%;
-}
-.edit-questions-tabs .similarity-content-block:has(.rureraform-admin-popup.active) .tab-content .tab-pane .lms-element-properties {
-    width: 35%;
-    max-width: 35%;
-}
-.edit-questions-tabs .similarity-content-block:has(.rureraform-admin-popup.active) .tab-content > .question-details-tab-data {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
 /* Similarity Content Tabs style End */
 
 /* Prompts Tab style start */
