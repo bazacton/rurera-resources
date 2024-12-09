@@ -2540,7 +2540,10 @@ Admin Questions Generator Page Style End
 .edit-questions-tabs .similarity-content-tabs .nav {
     gap: 25px;
 }
-/* Similarity Content Tabs style start */
+.similarity-content-block .tab-content > .tab-pane.question-details-tab-data > .col-12 {
+    padding: 0;
+}
+/* Similarity Content Tabs style End */
 
 /* Prompts Tab style start */
 .similarity-content-tabs:has(#prompts-tab) .nav {
