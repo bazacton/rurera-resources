@@ -1166,7 +1166,7 @@ body.layout-3 .main-footer {padding-left: 0; padding-right: 0;}
 .main-sidebar .sidebar-menu li ul.dropdown-menu li.active > a {color: var(--primary); font-weight: 600;}
 .main-sidebar .sidebar-menu li ul.dropdown-menu li a i {margin-top: 1px; text-align: center;}
 .main-sidebar .sidebar-menu li ul.dropdown-menu li ul.dropdown-menu {padding-left: 10px;}
-.main-content {padding-left: 280px; padding-right: 30px; padding-top: 100px; width: 100%; position: relative; background-color: #fff;}
+.main-content {padding-left: 280px; padding-right: 30px; padding-top: 100px; width: 100%; position: relative; background-color: #fcfcfc;}
 .main-footer {padding: 20px 30px 20px 280px; margin-top: 40px; color: #98a6ad; border-top: 1px solid #e3eaef; display: inline-block; width: 100%;}
 .main-footer .footer-left {float: left;}
 .main-footer .footer-right {float: right;}
@@ -1483,7 +1483,6 @@ body .question-step:has(.prev-next-controls) {padding-bottom: 0; }
 .note-editor .card-header {border-color: rgba(0, 0, 0, .2);}
 .lms-quiz-create .card {box-shadow: none;}
 .lms-quiz-create .card .card-body {border: 1px solid #ccc; background-color: #fff;}
-.main-content:has(.lms-quiz-create) {background-color: #fcfcfc;}
 .lms-quiz-create .select2-container {z-index: 12 !important;}
 .lms-quiz-create .rureraform-properties-item .rureraform-wysiwyg .field-options {padding: 15px 15px 10px; display: inline-block; width: 100%; float: none;}
 .lms-quiz-create .question-textarea select {padding: 4px 2px;}
