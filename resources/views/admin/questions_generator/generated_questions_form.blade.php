@@ -124,9 +124,10 @@ $rand_id = rand(999,99999);
 
 <!-- Edit-questions Tabs Start -->
 <div class="edit-questions-difficulty-tabs">	
-</div>
 <div class="edit-questions-tabs">	
 </div>
+</div>
+
 <!-- Edit-questions Tabs End -->
 
 
@@ -233,7 +234,7 @@ $("body").on("change", ".part_item_selection", function (t) {
 		data: {'part_item_id': part_item_id, 'bulk_list_id': bulk_list_id, 'default_question_id': default_question_id},
 		success: function (return_data) {
 			rurera_remove_loader(loaderDiv, 'button');
-			$(".edit-questions-difficulty-tabs").html(return_data);
+			$(".edit-questions-difficulty-tabs").append(return_data);
 			 $(".difficulty-level-btn.active").click();
 			//$(".question-builder-layout.active").click();
 		}
