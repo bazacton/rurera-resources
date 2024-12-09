@@ -21,7 +21,7 @@ $rand_id = rand(999,99999);
 											<button class="nav-link active question-details-tab" id="question-tab" data-toggle="tab" data-target="#question" type="button" role="tab" aria-controls="Question" aria-selected="false">Question</button>
 										</li>
 										<li class="nav-item" role="presentation">
-											<button class="nav-link active similarity-tab" id="Similarity-tab" data-toggle="tab" data-target="#Similarity" type="button" role="tab" aria-controls="Similarity" aria-selected="false">Settings</button>
+											<button class="nav-link similarity-tab" id="Similarity-tab" data-toggle="tab" data-target="#Similarity" type="button" role="tab" aria-controls="Similarity" aria-selected="false">Settings</button>
 										</li>
 										<li class="nav-item rurera-hide" role="presentation">
 											<button class="nav-link" id="review-tab" data-toggle="tab" data-target="#review" type="button" role="tab" aria-controls="review" aria-selected="true">Review</button>
@@ -587,7 +587,7 @@ $rand_id = rand(999,99999);
 												</div>
 												
 												
-												<div class="tab-pane fade py-0 show active similarity-tab-data" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
+												<div class="tab-pane fade py-0 similarity-tab-data" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
 												
 														<h3>Topic Parts</h3>
 														<div class="topic-parts-block">
