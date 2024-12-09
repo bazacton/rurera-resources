@@ -2582,6 +2582,7 @@ Admin Questions Generator Page Style End
     flex-wrap: wrap;
     justify-content: flex-start;
     flex-direction: row-reverse;
+    margin: 0 -15px;
     width: 100%;
 }
 .edit-questions-tabs .similarity-content-block > .nav {
