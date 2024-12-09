@@ -2602,10 +2602,9 @@ Admin Questions Generator Page Style End
     border-bottom-color: transparent;
     color: #000;
 }
-.edit-questions-tabs .similarity-content-block .tab-content > .tab-pane.similarity-tab-data.show {
-    display: none;
-}
-.edit-questions-tabs .similarity-content-block:has(.rureraform-admin-popup.active) > .nav {
+.edit-questions-tabs .similarity-content-block:has(.rureraform-admin-popup.active) > .nav,
+.edit-questions-tabs .similarity-content-block .tab-content > .tab-pane.similarity-tab-data.show,
+.edit-questions-tabs .similarity-content-block:has(.rureraform-admin-popup.active) .tab-content .tab-pane.similarity-tab-data.show  {
     display: none;
 }
 .edit-questions-tabs .similarity-content-block:has(.rureraform-admin-popup.active) .tab-content {
