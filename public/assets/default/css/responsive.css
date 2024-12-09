@@ -77,6 +77,7 @@ Lms Responsive Style Start
         visibility: hidden;
         opacity: 0;
         transform: translateY(-50%);
+        display: none;
     }
     /* .panel-sidebar .sidebar-menu .sidenav-item:hover .nav-sub-title{
         visibility: visible;
