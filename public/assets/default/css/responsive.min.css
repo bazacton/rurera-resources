@@ -59,8 +59,8 @@ Lms Responsive Style Start
     .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon {margin-right: 0 !important;}
     .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title {
         position: absolute;
-        bottom: 100%;
-        left: 50%;
+        top: 50%;
+        left: 100%;
         background-color: #000;
         font-size: 12px !important;
         color: #fff;
@@ -76,7 +76,7 @@ Lms Responsive Style Start
         margin-top: 10px;
         visibility: hidden;
         opacity: 0;
-        transform: translateX(-50%);
+        transform: translateY(-50%);
     }
     .panel-sidebar .sidebar-menu .sidenav-item:hover .nav-sub-title{
         visibility: visible;
@@ -1203,7 +1203,7 @@ Lms Responsive Style Start
     .learning-page .learning-page-content {overflow: hidden;}
     .question-layout-block form.question-fields {padding: 20px 15px 0;}
     .question-layout-block .question-fields .rureraform-element {padding-left: 0; padding-right: 0;}
-    .rureraform-element .image-field img {max-width: 100%;}
+    .question-layout-block .question-fields .rureraform-element .block-holder.image-field img {max-width: 100%;}
     body .question-layout-block form.question-fields .questions-total-holder {font-size: 16px;}
     body .question-step:has(.question-number-holder .flag-question) .rureraform-form {padding: 60px 0 30px 0;}
     .counter-holder .svg-shapes-bottom {position: absolute; left: 68px; right: auto; bottom: 60px; transform: rotate(20deg);}
