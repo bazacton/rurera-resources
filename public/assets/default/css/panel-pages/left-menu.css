@@ -64,9 +64,11 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-menu .sidenav-item a,
 .sidebar-menu-holder {
     position: relative;
+    width: 100%;
+    justify-content: center;
 }
 .sidebar-menu-holder .tooltip {
-    left: calc(100% - 30px) !important;
+    left: calc(100% - 15px) !important;
 }
 #nextBadgeChart path {stroke-width: 10px; stroke-dasharray: 10, 20; stroke-linecap: round;}
 .not-verified-alert {background-color: #d4efff;}
