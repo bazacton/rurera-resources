@@ -348,9 +348,6 @@
  
 
   $(document).ready(function() {
-      // Initialize tooltip with custom class
-      
-
       $('[data-toggle="tooltip"]').tooltip({
         container: '.sidebar-menu-holder'
         });
