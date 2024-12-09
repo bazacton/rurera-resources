@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <!-- <section class="assignments-table count-number-wrapp mt-30">
+    <section class="assignments-table count-number-wrapp mt-30">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12">
@@ -84,7 +84,7 @@
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
 
 
 </section>
@@ -204,7 +204,7 @@
 						</span>
 					</div>
 				</div>	
-				<div class="icon-box mt-20 stages-items rurera-hide">
+				<div class="icon-box mt-20 stages-items ">
 					@php $attempted_count = 0; @endphp
 					@if( !empty($resultsRecords))
 						@foreach( $resultsRecords as $result_id => $percentage)
@@ -251,7 +251,7 @@
 	@endif
 </div>
 
-<div class="quests-list quests-learning rurera-hide">
+<div class="quests-list quests-learning ">
 	<div class="section-title text-left mb-30">
 		<h2 class="font-22">Learning Journeys</h2>
 	</div>
@@ -330,110 +330,9 @@
 @endif
 <div class="dashboard">
     @if(auth()->check() && (auth()->user()->isUser()))
-    <div class="row rurera-hide">
+    <div class="row ">
         <div class="col-12 col-lg-12 mt-35">
-            <section class="product-tabs-section panel-border">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="product-tabs">
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" id="trending-toys-tab" data-toggle="tab"
-                                           href="#trending-toys" role="tab" aria-controls="trending-toys"
-                                           aria-selected="true">Trending Toys</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="shortlisted-toys-tab" data-toggle="tab"
-                                           href="#shortlisted-toys" role="tab" aria-controls="shortlisted-toys"
-                                           aria-selected="false">Favorite Toys</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="entitled-toys-tab" data-toggle="tab"
-                                           href="#entitled-toys" role="tab" aria-controls="entitled-toys"
-                                           aria-selected="false">Entitled Toys</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="productTabContent">
-                                    <div class="tab-pane fade active show" id="trending-toys" role="tabpanel"
-                                         aria-labelledby="trending-toys-tab">
-                                        <div class="swiper-container product-tabs-slider">
-                                            <div class="swiper-wrapper">
-                                                @if( isset( $trending_toys ) && $trending_toys->count() > 0)
-                                                    @foreach( $trending_toys as $product)
-                                                        @php
-                                                            $hasDiscount = $product->getActiveDiscount();
-                                                        @endphp
-                                                        <div class="swiper-slide">
-                                                            <div class="product-card">
-                                                                <figure>
-                                                                    @include('web.default.products.includes.card')
-                                                                </figure>
-                                                            </div>
-                                                        </div>
-                                                    @endforeach
-                                                @endif
-                                            </div>
-                                            <!-- Add Arrows -->
-                                            <div class="swiper-button-prev"></div>
-                                            <div class="swiper-button-next"></div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="shortlisted-toys" role="tabpanel"
-                                         aria-labelledby="shortlisted-toys-tab">
-                                        <div class="swiper-container product-tabs-slider">
-                                            <div class="swiper-wrapper">
-                                                @if( isset( $shortlisted_toys ) && $shortlisted_toys->count() > 0)
-                                                    @foreach( $shortlisted_toys as $product)
-                                                        @php
-                                                            $hasDiscount = $product->getActiveDiscount();
-                                                        @endphp
-                                                        <div class="swiper-slide">
-                                                            <div class="product-card">
-                                                                <figure>
-                                                                    @include('web.default.products.includes.card')
-                                                                </figure>
-                                                            </div>
-                                                        </div>
-                                                    @endforeach
-                                                @endif
-                                            </div>
-                                            <!-- Add Arrows -->
-                                            <div class="swiper-button-prev"></div>
-                                            <div class="swiper-button-next"></div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="entitled-toys" role="tabpanel"
-                                         aria-labelledby="entitled-toys-tab">
-                                        <div class="swiper-container product-tabs-slider">
-                                            <div class="swiper-wrapper">
-                                                @if( isset( $entitled_toys ) && $entitled_toys->count() > 0)
-                                                    @foreach( $entitled_toys as $product)
-                                                        @php
-                                                            $hasDiscount = $product->getActiveDiscount();
-                                                        @endphp
-                                                        <div class="swiper-slide">
-                                                            <div class="product-card">
-                                                                <figure>
-                                                                    @include('web.default.products.includes.card')
-                                                                </figure>
-                                                            </div>
-                                                        </div>
-                                                    @endforeach
-                                                @endif
-                                            </div>
-                                            <!-- Add Arrows -->
-                                            <div class="swiper-button-prev"></div>
-                                            <div class="swiper-button-next"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--<section>
+           <section>
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -535,12 +434,12 @@
                         </div>
                     </div>
                 </div>
-            </section>-->
+            </section>
         </div>
     </div>
     @endif
 
-    <!-- <div class="row">
+   <div class="row">
         <div class="col-12 col-lg-3 mt-35">
             <a href="@if($authUser->isUser()) /panel/webinars/purchases @else /panel/meetings/requests @endif" class="dashboard-stats rounded-sm panel-shadow p-10 p-md-20 d-flex align-items-center">
                 <div class="stat-icon requests">
@@ -595,9 +494,9 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
-    <!-- <div class="row">
+    <div class="row">
         <div class="col-12 col-lg-12 mt-35">
             <div class="bg-white noticeboard rounded-sm panel-shadow py-10 py-md-20 px-15 px-md-30">
                 <h3 class="font-16 text-dark-blue font-weight-bold">{{ trans('panel.noticeboard') }}</h3>
@@ -628,10 +527,10 @@
                 @endforeach
 
             </div>
-        </div> -->
+        </div> 
     </div>
     </section>
-    <!--<section style="padding: 0 0 60px;">
+    <section style="padding: 0 0 60px;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-8 mt-35">
@@ -708,7 +607,7 @@
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
 
 
     <div class="d-none" id="iNotAvailableModal">
@@ -736,6 +635,7 @@
             <span class="modal-time d-block font-12 text-gray mt-25"></span>
             <p class="modal-message font-weight-500 text-gray mt-4"></p>
         </div>
+    </div>
     </div>
 
     @endsection
