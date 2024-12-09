@@ -2623,6 +2623,35 @@ Admin Questions Generator Page Style End
     display: none;
 }
 
+
+@media (min-width: 993px) {
+    .similarity-content-block .nav {
+        display: none;
+    }
+    .similarity-content-block .tab-content {
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+    .similarity-content-block .tab-content .question-details-tab-data {
+        width: 65%;
+        max-width: 65%;
+        display: inline-flex;
+        flex-direction: column;
+        opacity: 1;
+        padding: 0 15px;
+    }
+    .similarity-content-block .tab-content .similarity-tab-data {
+        width: 65%;
+        max-width: 65%;
+        display: inline-flex;
+        flex-direction: column;
+        opacity: 1;
+        padding: 0 15px;
+    }
+}
 @media (max-width: 992px) {
     .api-question-status,
     .form-class .form-group,
