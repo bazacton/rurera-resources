@@ -433,7 +433,7 @@
                     </div>
                 </div>
             </section>
-            <!--<section>
+           <section>
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -535,12 +535,12 @@
                         </div>
                     </div>
                 </div>
-            </section>-->
+            </section>
         </div>
     </div>
     @endif
 
-    <!-- <div class="row">
+   <div class="row">
         <div class="col-12 col-lg-3 mt-35">
             <a href="@if($authUser->isUser()) /panel/webinars/purchases @else /panel/meetings/requests @endif" class="dashboard-stats rounded-sm panel-shadow p-10 p-md-20 d-flex align-items-center">
                 <div class="stat-icon requests">
@@ -595,9 +595,9 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
-    <!-- <div class="row">
+    <div class="row">
         <div class="col-12 col-lg-12 mt-35">
             <div class="bg-white noticeboard rounded-sm panel-shadow py-10 py-md-20 px-15 px-md-30">
                 <h3 class="font-16 text-dark-blue font-weight-bold">{{ trans('panel.noticeboard') }}</h3>
@@ -628,10 +628,10 @@
                 @endforeach
 
             </div>
-        </div> -->
+        </div> 
     </div>
     </section>
-    <!--<section style="padding: 0 0 60px;">
+    <section style="padding: 0 0 60px;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-8 mt-35">
@@ -708,7 +708,7 @@
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
 
 
     <div class="d-none" id="iNotAvailableModal">
