@@ -18,10 +18,10 @@ $rand_id = rand(999,99999);
 									<div class="similarity-content-block mb-30">
 									<ul class="nav" id="myTab" role="tablist">
 										<li class="nav-item" role="presentation">
-											<button class="nav-link active" id="question-tab" data-toggle="tab" data-target="#question" type="button" role="tab" aria-controls="Question" aria-selected="false">Question</button>
+											<button class="nav-link active question-details-tab" id="question-tab" data-toggle="tab" data-target="#question" type="button" role="tab" aria-controls="Question" aria-selected="false">Question</button>
 										</li>
 										<li class="nav-item" role="presentation">
-											<button class="nav-link" id="Similarity-tab" data-toggle="tab" data-target="#Similarity" type="button" role="tab" aria-controls="Similarity" aria-selected="false">Similarity content</button>
+											<button class="nav-link similarity-tab" id="Similarity-tab" data-toggle="tab" data-target="#Similarity" type="button" role="tab" aria-controls="Similarity" aria-selected="false">Similarity content</button>
 										</li>
 										<li class="nav-item" role="presentation">
 											<button class="nav-link" id="topic-parts-tab" data-toggle="tab" data-target="#topic-parts" type="button" role="tab" aria-controls="topic-parts" aria-selected="false">Topic Parts</button>
