@@ -2625,7 +2625,7 @@ Admin Questions Generator Page Style End
 
 
 @media (min-width: 993px) {
-    .similarity-content-block .nav {
+    .edit-questions-tabs .similarity-content-block .nav {
         display: none;
     }
     .similarity-content-block .tab-content {
