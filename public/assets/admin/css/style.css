@@ -2541,6 +2541,7 @@ Admin Questions Generator Page Style End
 .similarity-content-block .lms-dashboard-card .lms-card-timeline {
     border-left: 0;
     margin-left: 0;
+    overflow: hidden;
 }
 .similarity-tab-data .lms-dashboard-card .lms-card-body {
     background-color: inherit;
