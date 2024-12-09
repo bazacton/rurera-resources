@@ -61,7 +61,7 @@
             </div>
             <ul class="sidebar-menu pt-10 @if(!empty($authUser->userGroup)) has-user-group @endif @if(empty($getPanelSidebarSettings) or empty($getPanelSidebarSettings['background'])) without-bottom-image @endif" @if((!empty($isRtl) and $isRtl)) data-simplebar-direction="rtl" @endif>
                     <li class="sidenav-item {{ (request()->is('panel')) ? 'sidenav-item-active' : '' }}">
-                        <a href="/{{panelRoute()}}" class="d-flex align-items-center font-16" data-toggle="tooltip" data-placement="left" title="Home">
+                        <a href="/{{panelRoute()}}" class="d-flex align-items-center font-16" data-toggle="tooltip" data-placement="right" title="Home">
                             <span class="sidenav-item-icon mr-20">
                                 <img src="/assets/default/img/sidebar/home.svg">
                             </span>
