@@ -2530,6 +2530,10 @@ Admin Questions Generator Page Style End
     border-left: 0;
     margin-left: 0;
 }
+.similarity-tab-data .lms-dashboard-card .lms-card-body {
+    background-color: inherit;
+    padding: 0;
+}
 .similarity-content-block .lms-dashboard-card .lms-card-list.active .lms-card-icons {
     -webkit-animation: none;
     animation: none;
@@ -2586,6 +2590,18 @@ Admin Questions Generator Page Style End
 }
 .similarity-content-block .tab-content > .tab-pane.question-details-tab-data > .col-12 {
     padding: 0;
+}
+.similarity-tab-data .card .card-header {
+    padding: 0;
+    background-color: inherit;
+}
+.similarity-tab-data .card {
+    background-color: inherit;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+.similarity-tab-data h3 {
+    font-size: 18px;
 }
 /* Similarity Content Tabs style End */
 
