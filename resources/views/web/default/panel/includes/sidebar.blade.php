@@ -349,10 +349,11 @@
 
   $(document).ready(function() {
       // Initialize tooltip with custom class
-      $('.panel-sidebar .sidebar-menu .sidenav-item a').tooltip({
-        template: '<div class="tooltip custom-tooltip" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+      
+
+      $('[data-toggle="tooltip"]').tooltip({
         container: '.sidebar-menu-holder'
-      });
+        });
     });
 </script>
 @endpush
