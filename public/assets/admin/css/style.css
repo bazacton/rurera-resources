@@ -2599,9 +2599,9 @@ Admin Questions Generator Page Style End
     background-color: inherit;
 }
 .similarity-tab-data .card {
-    background-color: inherit;
     border: 1px solid #ddd;
     border-radius: 6px;
+    overflow: hidden;
 }
 .similarity-tab-data h3 {
     font-size: 18px;
