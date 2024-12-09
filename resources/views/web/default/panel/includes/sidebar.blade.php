@@ -345,6 +345,13 @@
 </div>
 @push('scripts_bottom')
 <script>
- 
+  
+
+  $(document).ready(function() {
+      // Initialize tooltip with custom class
+      $(.panel-sidebar .sidebar-menu .sidenav-item a).tooltip({
+        template: '<div class="tooltip custom-tooltip" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+      });
+    });
 </script>
 @endpush
