@@ -21,7 +21,7 @@ $rand_id = rand(999,99999);
 											<button class="nav-link active question-details-tab" id="question-tab" data-toggle="tab" data-target="#question" type="button" role="tab" aria-controls="Question" aria-selected="false">Question</button>
 										</li>
 										<li class="nav-item" role="presentation">
-											<button class="nav-link similarity-tab" id="Similarity-tab" data-toggle="tab" data-target="#Similarity" type="button" role="tab" aria-controls="Similarity" aria-selected="false">Similarity content</button>
+											<button class="nav-link active similarity-tab" id="Similarity-tab" data-toggle="tab" data-target="#Similarity" type="button" role="tab" aria-controls="Similarity" aria-selected="false">Similarity content</button>
 										</li>
 										<li class="nav-item" role="presentation">
 											<button class="nav-link" id="topic-parts-tab" data-toggle="tab" data-target="#topic-parts" type="button" role="tab" aria-controls="topic-parts" aria-selected="false">Topic Parts</button>
@@ -35,7 +35,7 @@ $rand_id = rand(999,99999);
 										</li>
 									</ul>
 									<div class="tab-content" id="myTabContent">
-										<div class="tab-pane fade show active py-0" id="question" role="tabpanel" aria-labelledby="question-tab">
+										<div class="tab-pane fade show active py-0 question-details-tab-data" id="question" role="tabpanel" aria-labelledby="question-tab">
 										
 											<div class="col-12 col-md-12">
 									
@@ -591,7 +591,7 @@ $rand_id = rand(999,99999);
 												</div>
 												
 												
-												<div class="tab-pane fade py-0" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
+												<div class="tab-pane fade py-0 show active similarity-tab-data" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
 												
                                                         <div id="accordion">
                                                             <div class="similarity-content-block-data">
