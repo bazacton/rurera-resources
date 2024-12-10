@@ -79,7 +79,7 @@
                         </div>
                         <div class="setup-quiz-content px-20 d-flex align-items-center justify-content-between">
                             <div class="content-heading">
-                                <h4 class="font-weight-600 font-16 mb-0">Set a start time for activity</h4>
+                                <h4 class="font-weight-600 font-16 mb-1">Set a start time for activity</h4>
                                 <span class="d-block">The number of times a student can attempt the activity.</span>
                             </div>
                             <div class="select-field">
@@ -97,7 +97,7 @@
                         <div class="setup-quiz-content px-20">
                             <div class="content-heading d-flex align-items-center justify-content-between">
                                 <div class="heading-box">
-                                    <h4 class="font-weight-600 font-16 mb-0">Assign to a class <span>(optional)</span></h4>
+                                    <h4 class="font-weight-600 font-16 mb-1">Assign to a class <span>(optional)</span></h4>
                                     <span class="d-block">You have 1 class</span>
                                 </div>
                                 <div class="btn-holder">
@@ -113,7 +113,7 @@
                         <div class="setup-quiz-content px-20 mb-25 disabled-quiz">
                             <div class="content-heading d-flex align-items-center justify-content-between mb-25">
                                 <div class="heading-box">
-                                    <h4 class="font-weight-600 font-16 mb-0">Mastery mode</h4>
+                                    <h4 class="font-weight-600 font-16 mb-1">Mastery mode</h4>
                                     <span class="d-block">Achieve mastery by allowing students to reattempt incorrect awensors <br> till they reach the set goal</span>
                                 </div>
                                 <div class="form-group custom-switches-stacked mb-0">
@@ -154,7 +154,7 @@
                         <div class="setup-quiz-content px-20 mb-25">
                             <div class="content-heading d-flex align-items-center justify-content-between">
                                 <div class="heading-box">
-                                    <h4 class="font-weight-600 font-16 mb-0">Redemption questions</h4>
+                                    <h4 class="font-weight-600 font-16 mb-1">Redemption questions</h4>
                                     <span class="d-block">Allow students to reattemt a few incorrect questions.</span>
                                 </div>
                                 <div class="form-group custom-switches-stacked mb-0">
@@ -168,7 +168,7 @@
                         <div class="setup-quiz-content px-20 mb-25">
                             <div class="content-heading d-flex align-items-center justify-content-between">
                                 <div class="heading-box">
-                                    <h4 class="font-weight-600 font-16 mb-0">Redemption quiz</h4>
+                                    <h4 class="font-weight-600 font-16 mb-1">Redemption quiz</h4>
                                     <span class="d-block">Allow students to awensor all incorrect questions at the end to improve accuracy.</span>
                                 </div>
                                 <div class="form-group custom-switches-stacked mb-0">
@@ -181,7 +181,7 @@
                         </div>
                         <div class="setup-quiz-content px-20 d-flex align-items-center justify-content-between">
                             <div class="content-heading">
-                                <h4 class="font-weight-600 font-16 mb-0">Adaptive Question Bank Mode</h4>
+                                <h4 class="font-weight-600 font-16 mb-1">Adaptive Question Bank Mode</h4>
                                 <span class="d-block">Creates distince set of questions for every quiz attempt. <a href="#">See how it works</a></span>
                             </div>
                             <div class="select-field">
