@@ -10,7 +10,7 @@
 
     <div class="section-body">
         <div class="row">
-        <div class="col-12">
+            <div class="col-12">
                 <div class="section-header">
                     <h1>My library</h1>
                     <div class="section-header-breadcrumb">
