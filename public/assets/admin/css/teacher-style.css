@@ -703,6 +703,7 @@ Set Up Quiz Page Style End
     align-items: center;
     padding: 0 10px;
     border-radius: 3px;
+    cursor: pointer;
 }
 .listing-controls .dropdown-toggle:hover {
     color: #fff;
@@ -1456,52 +1457,6 @@ New Quiz Page Style Start
     align-items: center;
     gap: 8px;
 }
-
-.listing-controls button img {
-    height: 12px;
-    width: 12px;
-}
-
-.dropdown {}
-
-.listing-controls .dropdown-toggle {
-    background-color: var(--blue);
-    color: #fff;
-    height: 28px;
-    display: inline-flex;
-    align-items: center;
-    padding: 0 10px;
-    border-radius: 3px;
-}
-
-.listing-controls .dropdown-toggle:hover {
-    color: #fff;
-}
-.listing-controls .dropdown-menu {
-    left: auto !important;
-    right: 0;
-    visibility: visible;
-    opacity: 1;
-    top: 100% !important;
-    margin: 0;
-    min-width: 150px;
-    border-radius: 5px;
-    padding: 5px 15px;
-    display: none;
-}
-
-.listing-controls .dropdown-menu .dropdown-item {
-    padding: 5px 0;
-    line-height: normal;
-    font-size: 14px;
-    font-weight: 500;
-    color: #64748b;
-}
-
-.listing-controls .dropdown-menu.show {
-    display: block;
-}
-
 .quiz-data-filters {
     display: flex;
     align-items: center;
@@ -1509,7 +1464,6 @@ New Quiz Page Style Start
     gap: 10px;
     margin-bottom: 15px;
 }
-
 .quiz-data-filters select {
     border: 1px solid #ddd;
     min-width: 180px;
@@ -1519,26 +1473,21 @@ New Quiz Page Style Start
     font-size: 14px;
     font-weight: 500;
 }
-
 .quiz-data-filters .sorting-lable {
     font-weight: 500;
     margin-right: 10px;
     font-size: 16px;
 }
-
 .quiz-data-table table {
     width: 100%;
 }
-
 .quiz-data-table thead {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
 }
-
 .quiz-data-table .checkbox-field {
     margin-bottom: 0;
 }
-
 .quiz-data-table .checkbox-field label {
     margin-bottom: 0;
     position: relative;
