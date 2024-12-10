@@ -1739,7 +1739,8 @@ body:has(.quiz-data-slide.active) {
     padding-right: 10px;
 }
 /* Quiz Data Table style end */
-.main-content:has(.quiz-data-holder) {
+.main-content:has(.quiz-data-holder),
+.main-content:has(.quiz-setup-listings) {
     background-color: #f9fafe;
 }
 .panel-border {
