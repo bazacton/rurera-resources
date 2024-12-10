@@ -464,7 +464,7 @@ Set Up Quiz Page Style Start
     color: #555;
 }
 .timer-off em {
-    font-weight: 600;
+    font-weight: bold;
     font-style: normal;
     text-transform: capitalize;
 }
