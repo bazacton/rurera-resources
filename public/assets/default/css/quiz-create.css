@@ -1495,7 +1495,6 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .nav .nav-link.active {color: var(--blue) !important; border-bottom-color: var(--blue) !important; z-index: 1;}
 .edit-questions-tabs .nav .nav-link:last-child {padding-right: 0;}
 .edit-questions-tabs .tab-content {padding: 30px 0 0;}
-.edit-questions-tabs .form-group {background-color: #fff; padding: 25px; border: 1px solid #ddd; border-radius: 5px;}
 .edit-questions-tabs .question-explain-block,
 .switches-holder {background-color: #fff; border: 1px solid #ddd; border-radius: 5px; padding: 25px; margin-bottom: 30px;}
 .edit-questions-tabs .question-explain-block textarea,
