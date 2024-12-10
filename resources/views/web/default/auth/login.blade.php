@@ -300,6 +300,7 @@
 @endsection
 
 @push('scripts_bottom')
+<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
 <script>
 
     $(document).on('click', '.login-back-btn', function (e) {
