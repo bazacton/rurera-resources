@@ -471,7 +471,7 @@ $rand_id = rand(999,99999);
 													<div class="switches-holder">
 														<div class="row">
 														<div class="col-lg-4 col-md-4 col-12">
-															<div class="form-group custom-switches-stacked px-10 pt-15 pb-10">
+															<div class="form-group custom-switches-stacked">
 																<label class="custom-switch pl-0">
 																	<input type="hidden" name="review_required_field" value="disable">
 																	<input type="checkbox"
@@ -488,7 +488,7 @@ $rand_id = rand(999,99999);
 														</div>
 														
 														<div class="col-lg-4 col-md-4 col-12">
-															<div class="form-group custom-switches-stacked px-10 pt-15 pb-10">
+															<div class="form-group custom-switches-stacked">
 																<label class="custom-switch pl-0">
 																	<input type="hidden" name="developer_review_required_field" value="disable">
 																	<input type="checkbox"
@@ -505,7 +505,7 @@ $rand_id = rand(999,99999);
 														</div>
 														
 														<div class="col-lg-4 col-md-4 col-12">
-															<div class="form-group custom-switches-stacked px-10 pt-15 pb-10">
+															<div class="form-group custom-switches-stacked">
 																<label class="custom-switch pl-0">
 																	<input type="hidden" name="hide_question_field" value="disable">
 																	<input type="checkbox"
