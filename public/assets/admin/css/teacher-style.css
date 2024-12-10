@@ -571,6 +571,18 @@ Set Up Quiz Page Style End
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+.filter-box i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.filter-box .fa-filter {
+    font-size: 10px;
+}
+.listing-filters i ~ select {
+    padding-left: 22px;
+}
 .listing-card {
     padding: 10px;
     display: flex;
