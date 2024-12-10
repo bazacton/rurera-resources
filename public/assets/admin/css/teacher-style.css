@@ -545,7 +545,7 @@ Set Up Quiz Page Style End
     align-items: center;
     gap: 10px;
     color: #6d6d6d;
-    font-weight: 500;
+    font-weight: 600;
 }
 .quiz-setup-sidenav li a i {
     margin: 0 !important;
