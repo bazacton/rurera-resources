@@ -10,12 +10,21 @@
 
     <div class="section-body">
         <div class="row">
+        <div class="col-12">
+                <div class="section-header">
+                    <h1>My library</h1>
+                    <div class="section-header-breadcrumb">
+                        <div class="breadcrumb-item active"><a href="/admin/">Dashboard</a>
+                        </div>
+                        <div class="breadcrumb-item">My library</div>
+                    </div>
+                </div>
+            </div>
             <div class="col-12 col-md-12">
                 <div class="quiz-setup-listings">
                     <div class="row">
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="quiz-setup-sidenav">
-                                <h3>My library</h3>
                                 <ul>
                                     <li>
                                         <a href="#"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> Created by me</a>
