@@ -1737,7 +1737,12 @@ body:has(.quiz-data-slide.active) {
     padding-right: 10px;
 }
 /* Quiz Data Table style end */
-
+.panel-border {
+    border: 1px solid #ddd;
+}
+.rounded-sm {
+    border-radius: .625rem !important;
+}
 /*************************************
 New Quiz Page Style End
 **************************************/
