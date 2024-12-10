@@ -236,6 +236,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .custom-switches-stacked {display: flex; flex-direction: column; margin-bottom: 0;}
 
 .custom-switches-stacked .custom-switch {margin-bottom: .5rem;}
+.switches-holder .custom-switches-stacked .custom-switch {margin-bottom: 0;}
 
 .custom-switch-indicator {display: inline-block; height: 1.25rem; width: 2.25rem; background: #e9ecef; border-radius: 50px; position: relative; vertical-align: middle; border: 1px solid rgba(0, 40, 100, 0.12); transition: .3s border-color, .3s background-color;}
 
