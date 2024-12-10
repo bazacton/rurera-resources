@@ -307,7 +307,6 @@
                                             </div>
                                             </div>
                                         </div>
-                                        <div class="show-notifications" data-show_message="yes"></div>
                                         </div>
                                     </form>
                                 </div>
