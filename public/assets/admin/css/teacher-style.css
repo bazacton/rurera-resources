@@ -896,9 +896,10 @@ New Quiz Page Style Start
     border: 0;
     color: #787d84;
     border-bottom: 3px solid transparent;
-    font-weight: 500;
+    font-weight: 600;
     padding: 15px 20px;
     outline: none;
+    font-size: 16px;
 }
 .quiz-tabs .nav-link.active {
     border-bottom-color: var(--blue);
