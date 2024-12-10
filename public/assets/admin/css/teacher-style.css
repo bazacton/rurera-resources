@@ -1438,25 +1438,6 @@ New Quiz Page Style Start
 }
 
 /* Quiz Data Table style Start */
-.listing-controls {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.listing-controls button {
-    border: 0;
-    background-color: #f3f1f4;
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 3px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
 .quiz-data-filters {
     display: flex;
     align-items: center;
