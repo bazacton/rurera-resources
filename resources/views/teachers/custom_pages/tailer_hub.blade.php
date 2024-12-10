@@ -71,7 +71,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="listing-card mb-15 bg-white panel-border rounded-sm p-25">
+                            <div class="mb-15 bg-white panel-border rounded-sm p-25">
                                 <div class="question-layout-block">
                                     <form class="question-fields" action="javascript:;" data-question_id="10180">
                                     <div class="left-content has-bg">
@@ -135,133 +135,181 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="listing-card mb-15 bg-white panel-border rounded-sm p-25">
-                            <div class="question-layout-block">
-                                <form class="question-fields" action="javascript:;" data-question_id="10180">
-                                    <div class="left-content has-bg">
-                                    <span class="questions-total-holder d-block mb-10">
-                                        <span class="question-dev-details">(34328) (Emerging) (truefalse_quiz)</span>
-                                    </span>
-                                    <span class="question-number-holder" style="z-index: 999999999;">
-                                        <span class="question-number">1</span>
-                                    </span>
-                                    <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
-                                        <div class="question-layout row d-flex align-items-start">
-                                        <div class="rureraform-col rureraform-col-12">
-                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                            <h5>Mark the following true and false:</h5>
+                            <div class="mb-15 bg-white panel-border rounded-sm p-25">
+                                <div class="question-layout-block">
+                                    <form class="question-fields" action="javascript:;" data-question_id="10180">
+                                        <div class="left-content has-bg">
+                                        <span class="questions-total-holder d-block mb-10">
+                                            <span class="question-dev-details">(34328) (Emerging) (truefalse_quiz)</span>
+                                        </span>
+                                        <span class="question-number-holder" style="z-index: 999999999;">
+                                            <span class="question-number">1</span>
+                                        </span>
+                                        <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
+                                            <div class="question-layout row d-flex align-items-start">
+                                            <div class="rureraform-col rureraform-col-12">
+                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                <h5>Mark the following true and false:</h5>
+                                                </div>
+                                            </div>
+                                            <div class="rureraform-col rureraform-col-8">
+                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
+                                                </div>
+                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
+                                                <i>Hint:&nbsp;&nbsp;Think about what happens inside cells during respiration and what is released.</i>
+                                                <div class="rureraform-element-cover"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rureraform-col rureraform-col-4">
+                                                <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
+                                                <div class="rureraform-column-input">
+                                                    <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
+                                                    <div class="form-box ">
+                                                        <div class="lms-radio-select rurera-in-row">
+                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                            <input class="editor-field" type="radio" name="field-40008" id="field-40008-0" value="True">
+                                                            <label for="field-40008-0">
+                                                            <span class="inner-label">True</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                            <input class="editor-field" type="radio" name="field-40008" id="field-40008-1" value="False">
+                                                            <label for="field-40008-1">
+                                                            <span class="inner-label">False</span>
+                                                            </label>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <label class="rureraform-description"></label>
+                                                </div>
+                                                <div class="rureraform-element-cover"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rureraform-col rureraform-col-8">
+                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                <h6>When balanced forces act on an object, it remains stationary or continues moving at the same speed.</h6>
+                                                </div>
+                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
+                                                <i>Hint:&nbsp;&nbsp;Balanced forces cancel each other out, meaning no change in motion happens.</i>
+                                                <div class="rureraform-element-cover"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rureraform-col rureraform-col-4">
+                                                <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
+                                                <div class="rureraform-column-input">
+                                                    <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
+                                                    <div class="form-box ">
+                                                        <div class="lms-radio-select rurera-in-row">
+                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                            <input class="editor-field" type="radio" name="field-84793" id="field-84793-0" value="True">
+                                                            <label for="field-84793-0">
+                                                            <span class="inner-label">True</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                            <input class="editor-field" type="radio" name="field-84793" id="field-84793-1" value="False">
+                                                            <label for="field-84793-1">
+                                                            <span class="inner-label">False</span>
+                                                            </label>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <label class="rureraform-description"></label>
+                                                </div>
+                                                <div class="rureraform-element-cover"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rureraform-col rureraform-col-8">
+                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                <h6>When an endothermic reaction occurs, energy is absorbed, making the surroundings cooler.</h6>
+                                                </div>
+                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
+                                                <i>Hint:&nbsp;&nbsp;Endothermic reactions pull in heat from the surroundings.</i>
+                                                <div class="rureraform-element-cover"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rureraform-col rureraform-col-4">
+                                                <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
+                                                <div class="rureraform-column-input">
+                                                    <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
+                                                    <div class="form-box ">
+                                                        <div class="lms-radio-select rurera-in-row">
+                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                            <input class="editor-field" type="radio" name="field-21459" id="field-21459-0" value="True">
+                                                            <label for="field-21459-0">
+                                                            <span class="inner-label">True</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                            <input class="editor-field" type="radio" name="field-21459" id="field-21459-1" value="False">
+                                                            <label for="field-21459-1">
+                                                            <span class="inner-label">False</span>
+                                                            </label>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <label class="rureraform-description"></label>
+                                                </div>
+                                                <div class="rureraform-element-cover"></div>
+                                                </div>
+                                            </div>
                                             </div>
                                         </div>
-                                        <div class="rureraform-col rureraform-col-8">
-                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                            <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
-                                            </div>
-                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
-                                            <i>Hint:&nbsp;&nbsp;Think about what happens inside cells during respiration and what is released.</i>
-                                            <div class="rureraform-element-cover"></div>
-                                            </div>
                                         </div>
-                                        <div class="rureraform-col rureraform-col-4">
-                                            <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
-                                            <div class="rureraform-column-input">
-                                                <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
-                                                <div class="form-box ">
-                                                    <div class="lms-radio-select rurera-in-row">
-                                                    <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                        <input class="editor-field" type="radio" name="field-40008" id="field-40008-0" value="True">
-                                                        <label for="field-40008-0">
-                                                        <span class="inner-label">True</span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                        <input class="editor-field" type="radio" name="field-40008" id="field-40008-1" value="False">
-                                                        <label for="field-40008-1">
-                                                        <span class="inner-label">False</span>
-                                                        </label>
-                                                    </div>
-                                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="mb-15 bg-white panel-border rounded-sm p-25">
+                                <div class="question-layout-block">
+                                    <form class="question-fields" action="javascript:;" data-question_id="10180">
+                                        <div class="left-content has-bg">
+                                        <span class="questions-total-holder d-block mb-10">
+                                            <span class="question-dev-details">(22300) (Expected) (drop_and_text)</span>
+                                        </span>
+                                        <span class="question-number-holder" style="z-index: 999999999;">
+                                            <span class="question-number">1</span>
+                                        </span>
+                                        <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
+                                            <div class="question-layout row d-flex align-items-start">
+                                            <div class="rureraform-col rureraform-col-12">
+                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                <div class="question-label question_heading">
+                                                    <span>Read the text and choose the correct answer.</span>
                                                 </div>
                                                 </div>
-                                                <label class="rureraform-description"></label>
                                             </div>
-                                            <div class="rureraform-element-cover"></div>
-                                            </div>
-                                        </div>
-                                        <div class="rureraform-col rureraform-col-8">
-                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                            <h6>When balanced forces act on an object, it remains stationary or continues moving at the same speed.</h6>
-                                            </div>
-                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
-                                            <i>Hint:&nbsp;&nbsp;Balanced forces cancel each other out, meaning no change in motion happens.</i>
-                                            <div class="rureraform-element-cover"></div>
-                                            </div>
-                                        </div>
-                                        <div class="rureraform-col rureraform-col-4">
-                                            <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
-                                            <div class="rureraform-column-input">
-                                                <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
-                                                <div class="form-box ">
-                                                    <div class="lms-radio-select rurera-in-row">
-                                                    <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                        <input class="editor-field" type="radio" name="field-84793" id="field-84793-0" value="True">
-                                                        <label for="field-84793-0">
-                                                        <span class="inner-label">True</span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                        <input class="editor-field" type="radio" name="field-84793" id="field-84793-1" value="False">
-                                                        <label for="field-84793-1">
-                                                        <span class="inner-label">False</span>
-                                                        </label>
-                                                    </div>
-                                                    </div>
+                                            <div class="rureraform-col rureraform-col-12">
+                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="drop_and_text"> When <select type="inner_dropdown" class="editor-field" id="dropdown-1" data-identifier="49226" name="field-dropdown1_options">
+                                                    <option value="Select Option">Select Option</option>
+                                                    <option value="lava">lava</option>
+                                                    <option value="extrusive">extrusive</option>
+                                                    <option value="magma">magma</option>
+                                                </select> cools below the Earth's surface, it forms <select type="inner_dropdown" class="editor-field" id="dropdown-2" data-identifier="49226" name="field-dropdown2_options">
+                                                    <option value="Select Option">Select Option</option>
+                                                    <option value="water">water</option>
+                                                    <option value="extrusive">extrusive</option>
+                                                    <option value="sedimentary">sedimentary</option>
+                                                    <option value="magma">magma</option>
+                                                </select> igneous rocks with large crystals. <div class="rureraform-element-cover"></div>
                                                 </div>
+                                            </div>
+                                            <div class="rureraform-col rureraform-col-12">
+                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
+                                                <p>
+                                                    <i>Hint: Think about the Moon’s effect on Earth, especially on tides and sunlight.</i>
+                                                </p>
+                                                <div class="rureraform-element-cover"></div>
                                                 </div>
-                                                <label class="rureraform-description"></label>
                                             </div>
-                                            <div class="rureraform-element-cover"></div>
                                             </div>
                                         </div>
-                                        <div class="rureraform-col rureraform-col-8">
-                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                            <h6>When an endothermic reaction occurs, energy is absorbed, making the surroundings cooler.</h6>
-                                            </div>
-                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
-                                            <i>Hint:&nbsp;&nbsp;Endothermic reactions pull in heat from the surroundings.</i>
-                                            <div class="rureraform-element-cover"></div>
-                                            </div>
+                                        <div class="show-notifications" data-show_message="yes"></div>
                                         </div>
-                                        <div class="rureraform-col rureraform-col-4">
-                                            <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
-                                            <div class="rureraform-column-input">
-                                                <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
-                                                <div class="form-box ">
-                                                    <div class="lms-radio-select rurera-in-row">
-                                                    <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                        <input class="editor-field" type="radio" name="field-21459" id="field-21459-0" value="True">
-                                                        <label for="field-21459-0">
-                                                        <span class="inner-label">True</span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                        <input class="editor-field" type="radio" name="field-21459" id="field-21459-1" value="False">
-                                                        <label for="field-21459-1">
-                                                        <span class="inner-label">False</span>
-                                                        </label>
-                                                    </div>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                                <label class="rureraform-description"></label>
-                                            </div>
-                                            <div class="rureraform-element-cover"></div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="show-notifications" data-show_message="yes"></div>
-                                    </div>
-                                </form>
+                                    </form>
                                 </div>
                             </div>
                         </div>
