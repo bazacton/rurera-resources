@@ -467,63 +467,62 @@ $rand_id = rand(999,99999);
 													</div>
 												</div>
 												</div>
-												
-												
-												<div class="col-lg-4 col-md-4 col-12">
-													<div class="form-group custom-switches-stacked px-10 pt-15 pb-10">
-														<label class="custom-switch pl-0">
-															<input type="hidden" name="review_required_field" value="disable">
-															<input type="checkbox"
-																	   name="review_required"
-																	   id="review_required" value="1" {{ (isset( $questionObj->review_required ) && $questionObj->review_required
-																== '1') ?
-																'checked="checked"' : ''
-																}} class="custom-switch-input"/>
-																<span class="custom-switch-indicator"></span>
-																<label class="custom-switch-description mb-0 cursor-pointer"
-																	   for="review_required">Teacher Review Required</label>
-														</label>
+												<div class="col-12">
+													<div class="switches-holder">
+														<div class="row">
+														<div class="col-lg-4 col-md-4 col-12">
+															<div class="form-group custom-switches-stacked px-10 pt-15 pb-10">
+																<label class="custom-switch pl-0">
+																	<input type="hidden" name="review_required_field" value="disable">
+																	<input type="checkbox"
+																			name="review_required"
+																			id="review_required" value="1" {{ (isset( $questionObj->review_required ) && $questionObj->review_required
+																		== '1') ?
+																		'checked="checked"' : ''
+																		}} class="custom-switch-input"/>
+																		<span class="custom-switch-indicator"></span>
+																		<label class="custom-switch-description mb-0 cursor-pointer"
+																			for="review_required">Teacher Review Required</label>
+																</label>
+															</div>
+														</div>
+														
+														<div class="col-lg-4 col-md-4 col-12">
+															<div class="form-group custom-switches-stacked px-10 pt-15 pb-10">
+																<label class="custom-switch pl-0">
+																	<input type="hidden" name="developer_review_required_field" value="disable">
+																	<input type="checkbox"
+																			name="developer_review_required"
+																			id="developer_review_required" value="1" {{ (isset( $questionObj->developer_review_required ) && $questionObj->developer_review_required
+																		== '1') ?
+																		'checked="checked"' : ''
+																		}} class="custom-switch-input"/>
+																		<span class="custom-switch-indicator"></span>
+																		<label class="custom-switch-description mb-0 cursor-pointer"
+																			for="developer_review_required">Developer Review Required</label>
+																</label>
+															</div>
+														</div>
+														
+														<div class="col-lg-4 col-md-4 col-12">
+															<div class="form-group custom-switches-stacked px-10 pt-15 pb-10">
+																<label class="custom-switch pl-0">
+																	<input type="hidden" name="hide_question_field" value="disable">
+																	<input type="checkbox"
+																			name="hide_question"
+																			id="hide_question" value="1" {{ (isset( $questionObj->hide_question ) && $questionObj->hide_question
+																		== '1') ?
+																		'checked="checked"' : ''
+																		}} class="custom-switch-input"/>
+																		<span class="custom-switch-indicator"></span>
+																		<label class="custom-switch-description mb-0 cursor-pointer"
+																			for="hide_question">Hide Question</label>
+																</label>
+															</div>
+														</div>
+														</div>
 													</div>
 												</div>
-												
-												
-												<div class="col-lg-4 col-md-4 col-12">
-													<div class="form-group custom-switches-stacked px-10 pt-15 pb-10">
-														<label class="custom-switch pl-0">
-															<input type="hidden" name="developer_review_required_field" value="disable">
-															<input type="checkbox"
-																	   name="developer_review_required"
-																	   id="developer_review_required" value="1" {{ (isset( $questionObj->developer_review_required ) && $questionObj->developer_review_required
-																== '1') ?
-																'checked="checked"' : ''
-																}} class="custom-switch-input"/>
-																<span class="custom-switch-indicator"></span>
-																<label class="custom-switch-description mb-0 cursor-pointer"
-																	   for="developer_review_required">Developer Review Required</label>
-														</label>
-													</div>
-												</div>
-												
-												
-												<div class="col-lg-4 col-md-4 col-12">
-													<div class="form-group custom-switches-stacked px-10 pt-15 pb-10">
-														<label class="custom-switch pl-0">
-															<input type="hidden" name="hide_question_field" value="disable">
-															<input type="checkbox"
-																	   name="hide_question"
-																	   id="hide_question" value="1" {{ (isset( $questionObj->hide_question ) && $questionObj->hide_question
-																== '1') ?
-																'checked="checked"' : ''
-																}} class="custom-switch-input"/>
-																<span class="custom-switch-indicator"></span>
-																<label class="custom-switch-description mb-0 cursor-pointer"
-																	   for="hide_question">Hide Question</label>
-														</label>
-													</div>
-												</div>
-												
-												
-												
 												
 												<div class="col-12 col-md-12">
 													<div class="create-question-fields-block d-flex align-items-center mb-30">
