@@ -1143,6 +1143,9 @@ New Quiz Page Style Start
 .dropdown-box {
     display: inline-block;
 }
+.dropdown-box .dropdown-toggle {
+    cursor: pointer;
+}
 .dropdown-box .dropdown-toggle:after {
     display: none;
 }
