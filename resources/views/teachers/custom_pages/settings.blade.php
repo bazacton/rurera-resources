@@ -11,7 +11,7 @@
     <div class="section-body">
         <div class="row">
             <div class="col-12 col-md-12">
-                <div class="setup-quiz-body mb-30">
+                <div class="setup-quiz-body mb-50">
                     <div class="section-title text-center mb-30">
                         <h2>Sciency Science</h2>
                         <span>8 questions</span>
