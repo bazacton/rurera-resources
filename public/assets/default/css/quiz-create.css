@@ -1546,7 +1546,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .create-question-fields-block button {border: 1px solid var(--blue); color: #fff; background-color: var(--blue); box-shadow: none; line-height: normal; font-size: 14px; font-weight: 600;}
 .edit-questions-tabs .create-question-fields-block button:focus,
 .edit-questions-tabs .create-question-fields-block button:hover {color: #fff;}
-.edit-questions-tabs .create-question-fields-block button.btn-danger {background-color: #f44336; border-color: #f44336;}
+.edit-questions-tabs .create-question-fields-block button.btn-danger {background-color: #ffe7e5; border-color: #fd8279; color: #ff5d52;}
 .edit-questions-tabs .rureraform-form-editor .rureraform-form {max-width: 100%;}
 .note-editor .note-editing-area .note-editable p {color: #333;}
 /*Edit Questions Tabs style End admin/questions-generator/view-api-response*/
