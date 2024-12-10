@@ -1711,6 +1711,43 @@ Tailer Hub Style Start
 .admin_teacher_role .question-layout .rureraform-element p {
     margin-bottom: 0;
 }
+.quiz-layout-edit-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.edit-options-controls img {
+    height: 15px;
+    width: 15px;
+}
+.edit-options-controls button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    height: 30px;
+    min-width: 30px;
+    border-radius: 3px;
+    outline: none;
+}
+.edit-options-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.edit-options-controls .poll-btn, .edit-options-controls .edit-btn {
+    padding: 0 10px;
+}
+.edit-options-controls .poll-btn i {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.edit-options-controls .edit-btn img {
+    height: 12px;
+    width: 12px;
+    margin-right: 10px;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
