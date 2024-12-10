@@ -675,6 +675,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 @media screen and (min-width: 992px) and (max-width: 1600px) {
     .parent-panel .sidebar-menu-holder {
         height: auto;
+        width: auto;
     }
 }
 /* Full  Menu For Parent Style End */
