@@ -53,13 +53,13 @@
                         <div class="col-12 col-lg-9 col-md-12">
                             <div class="listing-filters">
                                 <div class="filter-box">
-                                    <span class="icon-box"></span>
+                                    <i class="fas fa-filter"></i>
                                     <select>
                                         <option value="All">All</option>
                                     </select>
                                 </div>
                                 <div class="filter-box">
-                                    <span class="icon-box"></span>
+                                    <i class="fas fa-sort"></i>
                                     <select>
                                         <option value="Most recent">Most recent</option>
                                         <option value="Least recent">Least recent</option>
