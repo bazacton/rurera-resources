@@ -166,7 +166,7 @@
                                                 <div class="rureraform-column-input">
                                                     <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
                                                     <div class="form-box ">
-                                                        <div class="lms-radio-select rurera-in-row">
+                                                        <div class="lms-radio-select rurera-in-row justify-content-end">
                                                         <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
                                                             <input class="editor-field" type="radio" name="field-40008" id="field-40008-0" value="True">
                                                             <label for="field-40008-0">
@@ -201,7 +201,7 @@
                                                 <div class="rureraform-column-input">
                                                     <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
                                                     <div class="form-box ">
-                                                        <div class="lms-radio-select rurera-in-row">
+                                                        <div class="lms-radio-select rurera-in-row justify-content-end">
                                                         <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
                                                             <input class="editor-field" type="radio" name="field-84793" id="field-84793-0" value="True">
                                                             <label for="field-84793-0">
@@ -236,7 +236,7 @@
                                                 <div class="rureraform-column-input">
                                                     <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
                                                     <div class="form-box ">
-                                                        <div class="lms-radio-select rurera-in-row">
+                                                        <div class="lms-radio-select rurera-in-row justify-content-end">
                                                         <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
                                                             <input class="editor-field" type="radio" name="field-21459" id="field-21459-0" value="True">
                                                             <label for="field-21459-0">
