@@ -202,7 +202,7 @@
                         <div class="tab-pane fade" id="students" role="tabpanel" aria-labelledby="students-tab">
                             <div class="login-holder">
                                 <div class="row">
-                                    <div class="col-12 col-md-6">
+                                    <div class="col-12 col-md-12">
                                         <div class="login-options">
                                             <!-- <div class="text-center mt-20">
                                                 <span class="badge badge-circle-gray300 text-secondary d-inline-flex align-items-center justify-content-center">{{ trans('auth.or') }}</span>
