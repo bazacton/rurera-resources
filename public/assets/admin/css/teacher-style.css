@@ -1159,6 +1159,7 @@ New Quiz Page Style Start
     border-radius: 5px;
     margin-top: 0;
     display: none;
+    transform: none !important;
 }
 .dropdown-box .dropdown-menu.show {
     display: block;
