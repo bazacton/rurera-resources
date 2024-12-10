@@ -1739,6 +1739,9 @@ body:has(.quiz-data-slide.active) {
     padding-right: 10px;
 }
 /* Quiz Data Table style end */
+.main-content:has(.quiz-data-holder) {
+    background-color: #f9fafe;
+}
 .panel-border {
     border: 1px solid #ddd;
 }
