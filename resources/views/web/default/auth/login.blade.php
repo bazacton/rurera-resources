@@ -187,6 +187,15 @@
                                             </form>
                                         </div>
                                     </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="welcome-login-box">
+                                            <div class="text-holder">
+                                                <h2>Welcome to login</h2>
+                                                <span>Don't have an account?</span>
+                                                <a href="#" class="signup-btn">Sign Up</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
