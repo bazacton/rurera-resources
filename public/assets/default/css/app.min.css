@@ -316,8 +316,8 @@ Front-end Login Style Start
 }
 .login-option-tabs .nav-tabs button img {
   border-radius: 0;
-  height: 22px;
-  width: 22px;
+  height: 28px;
+  width: 28px;
 }
 .login-holder [class*="col-"] {
   height: 100%;
