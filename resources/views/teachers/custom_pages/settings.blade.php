@@ -4,6 +4,10 @@
 
 @endpush
 
+@push('styles_top')
+    <link rel="stylesheet" href="/assets/default/css/panel-pages/left-menu.css">
+@endpush
+
 @section('content')
 <section class="section">
    
