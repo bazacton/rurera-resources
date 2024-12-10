@@ -1739,6 +1739,33 @@ body:has(.quiz-data-slide.active) {
 .edit-questions-tabs .nav .nav-link.api_pending {
     color: #bbb !important;
 }
+.similiarity-status {
+    display: inline-block; 
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px white;	
+  }
+  .rurera-danger{background-color:#fd2929 !important;}
+  .rurera-warning{background-color:#ff973f !important;}
+  .similiarity-status.danger{
+      background-color:#fd2929;
+  }
+  .similiarity-status.warning{
+      background-color:#ff973f;
+  }
+  .similiarity-item span{
+      padding: 5px;
+  }
+  .similiarity-question-index {
+      background: #27325e;
+      margin-right: 10px;
+      color: #fff;
+  }
+  .similiarity-item {
+      margin-bottom: 5px;
+  }
 .slide-controls {
     display: flex;
     align-items: center;
