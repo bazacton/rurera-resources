@@ -305,162 +305,19 @@
                                     </div>
                                     </div>
 
-                                                                <div class="validation-error"></div>
-                                                            </div>
+                                        <div class="validation-error"></div>
+                                    </div>
 
-                                                        </div>
-                                                        </form>
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-
-                                                    
-                                    <script>
-                                        function question_layout_functions() {
-                                            var Questioninterval = setInterval(function () {
-                                                var seconds_count = $(".question-step-11558").attr('data-elapsed');
-                                                seconds_count = parseInt(seconds_count) + parseInt(1);
-                                                $(".question-step-11558").attr('data-elapsed', seconds_count);
-                                            }, 1000);
-                                        }
-                                    </script>
-
-                                    <div class="question-area"><div class="question-step question-step-11558" data-elapsed="0" data-qattempt="4335" data-start_time="0" data-qresult="26209" data-quiz_result_id="1104"><script>
-                                        var field_type = "checkbox";
-                                        var field_id = "19093";
-                                        var user_selected_value = "Cube";
-                                        var user_selected_key = "0";
-                                        var correct_value = "Cube";
-                                        var is_result_question = "1";
-
-                                        if (field_type === 'text' || field_type === 'number') {
-                                            var textField = document.getElementById('field-' + field_id);
-                                            textField.value = user_selected_value;
-                                            if( is_result_question == true){
-                                                if (user_selected_value !== correct_value) {
-                                                    textField.classList.add('wrong');
-                                                } else {
-                                                    textField.classList.add('correct');
-                                                }
-                                            }
-                                        } else if (field_type === 'radio') {
-                                            var textField = document.getElementById('field-' + field_id);
-                                            var correctClass = (user_selected_value !== correct_value) ? 'wrong' : 'correct';
-                                            if( is_result_question == true){
-                                                document.querySelector('[name="field-' + field_id + '"][value="' + user_selected_value + '"]').closest('.field-holder').classList.add(correctClass);
-                                                document.querySelector('[name="field-' + field_id + '"][value="' + correct_value + '"]').closest('.field-holder').classList.add('correct');
-                                            }
-                                            document.querySelector('[name="field-' + field_id + '"][value="' + user_selected_value + '"]').checked = true;
-                                        } else if (field_type === 'checkbox') {
-                                            var textField = document.getElementById('field-' + field_id);
-                                            var correctClass = (user_selected_value !== correct_value) ? 'wrong' : 'correct';
-                                            if( is_result_question == true){
-                                                document.querySelector('[name="field-' + field_id + '"][value="' + user_selected_value + '"]').closest('.form-field').classList.add(correctClass);
-                                                document.querySelector('[name="field-' + field_id + '"][value="' + correct_value + '"]').closest('.form-field').classList.add('correct');
-                                            }
-                                            document.querySelector('[name="field-' + field_id + '"][value="' + user_selected_value + '"]').checked = true;
-                                        } else if (field_type === 'textarea') {
-                                            var textField = document.getElementById('field-' + field_id);
-                                            textField.value = user_selected_value;
-                                            if( is_result_question == true){
-                                                if (user_selected_value !== correct_value) {
-                                                    textField.classList.add('wrong');
-                                                } else {
-                                                    textField.classList.add('correct');
-                                                }
-                                            }
-                                        }  else if (field_type === 'truefalse_quiz') {
-                                            
-                                        } else {
-                                            var fieldInputs = document.querySelectorAll('[name="field-' + field_id + '"]');
-                                            var correctInput = document.querySelector('[name="field-' + field_id + '"][value="' + correct_value + '"]');
-
-                                            if (user_selected_value !== correct_value) {
-                                                fieldInputs.forEach(function(input) {
-                                                    input.closest('.field-holder').classList.add('wrong');
-                                                    input.closest('.form-field').classList.add('wrong');
-                                                });
-                                            }
-
-                                            correctInput.classList.add('correct-mark');
-                                            correctInput.checked = true;
-                                        }
-
-                                    </script>
-                                    <script>
-                                        var field_type = "checkbox";
-                                        var field_id = "19093";
-                                        var user_selected_value = "Square-based pyramid";
-                                        var user_selected_key = "1";
-                                        var correct_value = "";
-                                        var is_result_question = "1";
-
-                                        if (field_type === 'text' || field_type === 'number') {
-                                            var textField = document.getElementById('field-' + field_id);
-                                            textField.value = user_selected_value;
-                                            if( is_result_question == true){
-                                                if (user_selected_value !== correct_value) {
-                                                    textField.classList.add('wrong');
-                                                } else {
-                                                    textField.classList.add('correct');
-                                                }
-                                            }
-                                        } else if (field_type === 'radio') {
-                                            var textField = document.getElementById('field-' + field_id);
-                                            var correctClass = (user_selected_value !== correct_value) ? 'wrong' : 'correct';
-                                            if( is_result_question == true){
-                                                document.querySelector('[name="field-' + field_id + '"][value="' + user_selected_value + '"]').closest('.field-holder').classList.add(correctClass);
-                                                document.querySelector('[name="field-' + field_id + '"][value="' + correct_value + '"]').closest('.field-holder').classList.add('correct');
-                                            }
-                                            document.querySelector('[name="field-' + field_id + '"][value="' + user_selected_value + '"]').checked = true;
-                                        } else if (field_type === 'checkbox') {
-                                            var textField = document.getElementById('field-' + field_id);
-                                            var correctClass = (user_selected_value !== correct_value) ? 'wrong' : 'correct';
-                                            if( is_result_question == true){
-                                                document.querySelector('[name="field-' + field_id + '"][value="' + user_selected_value + '"]').closest('.form-field').classList.add(correctClass);
-                                                document.querySelector('[name="field-' + field_id + '"][value="' + correct_value + '"]').closest('.form-field').classList.add('correct');
-                                            }
-                                            document.querySelector('[name="field-' + field_id + '"][value="' + user_selected_value + '"]').checked = true;
-                                        } else if (field_type === 'textarea') {
-                                            var textField = document.getElementById('field-' + field_id);
-                                            textField.value = user_selected_value;
-                                            if( is_result_question == true){
-                                                if (user_selected_value !== correct_value) {
-                                                    textField.classList.add('wrong');
-                                                } else {
-                                                    textField.classList.add('correct');
-                                                }
-                                            }
-                                        }  else if (field_type === 'truefalse_quiz') {
-                                            
-                                        } else {
-                                            var fieldInputs = document.querySelectorAll('[name="field-' + field_id + '"]');
-                                            var correctInput = document.querySelector('[name="field-' + field_id + '"][value="' + correct_value + '"]');
-
-                                            if (user_selected_value !== correct_value) {
-                                                fieldInputs.forEach(function(input) {
-                                                    input.closest('.field-holder').classList.add('wrong');
-                                                    input.closest('.form-field').classList.add('wrong');
-                                                });
-                                            }
-
-                                            correctInput.classList.add('correct-mark');
-                                            correctInput.checked = true;
-                                        }
-
-                                    </script>
+                                    </div>
+                                    </form>
+                                    
                                     <div class="lms-radio-lists">
-                                                                        <span class="list-title">Correct answer:</span>
-                                                                        <ul class="lms-radio-btn-group lms-user-answer-block"><li><label class="lms-question-label" for="radio2"><span>Cube</span></label></li></ul>
-                                                                        <span class="list-title">Rumaisa Khan answered:</span>
-                                                                        <ul class="lms-radio-btn-group lms-user-answer-block"><li><label class="lms-question-label wrong" for="radio2"><span>Cube</span></label></li><li><label class="lms-question-label wrong" for="radio2"><span>Square-based pyramid</span></label></li></ul>
-                                                                </div><hr></div></div>
-                                                            </div>
+                                            <span class="list-title">Correct answer:</span>
+                                            <ul class="lms-radio-btn-group lms-user-answer-block"><li><label class="lms-question-label" for="radio2"><span>Cube</span></label></li></ul>
+                                            <span class="list-title">Rumaisa Khan answered:</span>
+                                            <ul class="lms-radio-btn-group lms-user-answer-block"><li><label class="lms-question-label wrong" for="radio2"><span>Cube</span></label></li><li><label class="lms-question-label wrong" for="radio2"><span>Square-based pyramid</span></label></li></ul>
+                                    </div><hr></div></div>
+                                </div>
                             </div>
                         </div>
                     </div>
