@@ -695,7 +695,7 @@ Set Up Quiz Page Style End
 }
 .listing-controls .dropdown-toggle {
     background-color: var(--blue);
-    color: #fff;
+    color: #fff !important;
     height: 28px;
     display: inline-flex;
     align-items: center;
