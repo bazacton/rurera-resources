@@ -514,9 +514,6 @@ Set Up Quiz Page Style End
 /* Quiz Set Up Listings style Start */
 
 /* Sidebar Nav Style Start */
-.quiz-setup-sidenav h3 {
-    margin-bottom: 15px;
-}
 .quiz-setup-sidenav li {
     display: flex;
     align-items: center;
