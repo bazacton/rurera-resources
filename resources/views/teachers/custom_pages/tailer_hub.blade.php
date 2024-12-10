@@ -77,7 +77,7 @@
                                         <div class="edit-options-left">
                                             <div class="edit-options-controls">
                                                 <button type="button" class="grid-btn"><img src="/assets/default/svgs/grid-btn.svg" alt=""></button>
-                                                <button type="button"><i>&#10003;</i> 1. poll</button>
+                                                <button type="button" class="poll-btn"><i>&#10003;</i> 1. poll</button>
                                                 <div class="select-box">
                                                     <select>
                                                         <option value="20 seconds">20 seconds</option>
