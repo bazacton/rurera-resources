@@ -1009,7 +1009,7 @@ pre {border-radius: 3px;}
 
 /* 4.2 Section */
 .section {position: relative; /* z-index: 1; */}
-.section .section-header {background-color: #fff; border: none; position: relative; padding: 0 20px 20px 30px; display: flex; align-items: flex-start; margin-left: -30px; margin-right: -30px; flex-direction: column-reverse;}
+.section .section-header {border: none; position: relative; padding: 0 20px 20px 30px; display: flex; align-items: flex-start; margin-left: -30px; margin-right: -30px; flex-direction: column-reverse;}
 .section-header .text-left {position: absolute; right: 30px; top: 0;}
 .section .section-header h1,
 .title-search-field h1,
