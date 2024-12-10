@@ -233,7 +233,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 
 .custom-switch-input {position: absolute; z-index: -1; opacity: 0;}
 
-.custom-switches-stacked {display: flex; flex-direction: column;}
+.custom-switches-stacked {display: flex; flex-direction: column; margin-bottom: 0;}
 
 .custom-switches-stacked .custom-switch {margin-bottom: .5rem;}
 
