@@ -28,28 +28,23 @@
                                 <ul>
                                     <li>
                                         <a href="#">
-                                            <span class="icon-box">
-                                                <i class="fas fa-user"></i>
-                                            </span> Created by me
+                                            <i class="fas fa-user"></i> Created by me
                                         </a>
                                         <span class="count-number">1</span>
                                     </li>
                                     <li>
-                                        <a href="#"><span class="icon-box">
-                                            <i class="fas fa-file-import"></i>
-                                        </span> Imported</a>
+                                        <a href="#">
+                                        <i class="fas fa-file-import"></i> Imported</a>
                                         <span class="count-number">0</span>
                                     </li>
                                     <li>
-                                        <a href="#"><span class="icon-box">
-                                            <i class="fas fa-history"></i>
-                                        </span> Perviously used</a>
+                                        <a href="#">
+                                        <i class="fas fa-history"></i> Perviously used</a>
                                         <span class="count-number">0</span>
                                     </li>
                                     <li>
-                                        <a href="#"><span class="icon-box">
-                                            <i class="fas fa-heart"></i>
-                                        </span> Liked by me</a>
+                                        <a href="#">
+                                        <i class="fas fa-heart"></i> Liked by me</a>
                                         <span class="count-number">0</span>
                                     </li>
                                 </ul>
