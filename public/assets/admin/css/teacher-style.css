@@ -398,6 +398,10 @@
 /*************************************
 Set Up Quiz Page Style Start
 **************************************/
+.setup-quiz-body {
+    width: 1500px;
+    margin: 0 auto;
+}
 .setup-quiz-header {
     border-bottom: 1px solid #ddd;
     border-radius: .625rem .625rem 0 0;
