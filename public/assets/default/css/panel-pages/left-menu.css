@@ -61,7 +61,6 @@ Left SideBar-menu Start
 .border-radius-10 {border-radius: 10px;}
 .notification-card:hover button,
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse li.active:before {background-color: var(--primary)}
-.panel-sidebar .sidebar-menu .sidenav-item a,
 .sidebar-menu-holder {
     position: relative;
     width: 100%;
