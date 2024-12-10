@@ -285,6 +285,18 @@ Front-end Login Style Start
 .social-login {border: 1px dashed #dadada; border-radius: 5px; margin: 0 0 20px; padding: 20px; display: flex; align-items: center; gap: 25px;}
 .login-holder .login-options .social-login {min-height: 112px;}
 .social-login:hover {background-color: #f1f1f1; transition: all .3s ease;}
+.login-option-tabs .nav-tabs {
+  border: 0;
+  width: auto;
+  display: inline-flex;
+}
+.login-option-tabs .nav-tabs button {
+  background-color: inherit;
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-radius: 0;
+  padding: 10px 25px;
+}
 .login-holder [class*="col-"] {
   height: 100%;
 }
