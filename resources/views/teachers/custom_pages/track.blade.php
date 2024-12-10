@@ -143,7 +143,7 @@
                                         <button type="button" class="next-btn"><span class="icon-box">Next <img src="/assets/default/svgs/arrow-right.svg" alt=""></span></button>
                                     </div>
                                 </div>
-                                <div class="edit-questions-difficulty-tabs">
+                                <div class="edit-questions-difficulty-tabs mb-30">
                                     <div class="edit-questions-difficulty-data">
                                         <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills mt-20" id="assignment_tabs" role="tablist">
                                             <li class="nav-item"><a data-bulk_list_id="20" data-part_item_id="1374" class="nav-link difficulty-level-btn active" data-difficulty_level="Emerging" id="section-tabid-Emerging" data-toggle="tab" href="#section-tab-Emerging" role="tab" aria-controls="section-tab-Emerging" aria-selected="true"><span class="tab-title">Emerging</span></a></li>
