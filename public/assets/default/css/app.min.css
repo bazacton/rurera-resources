@@ -297,6 +297,12 @@ Front-end Login Style Start
   border-radius: 0;
   padding: 10px 25px;
 }
+.login-option-tabs .nav-tabs .nav-link.active {
+  color: var(--blue);
+}
+.login-option-tabs .nav-tabs li:first-child button {
+  border-radius: 6px 0 0 0;
+}
 .login-holder [class*="col-"] {
   height: 100%;
 }
