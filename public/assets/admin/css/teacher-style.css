@@ -1708,6 +1708,9 @@ Tailer Hub Style Start
 .admin_teacher_role .question-layout {
     padding-bottom: 0;
 }
+.admin_teacher_role .question-layout .rureraform-element p {
+    margin-bottom: 0;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
