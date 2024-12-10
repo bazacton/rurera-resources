@@ -93,6 +93,47 @@ $rand_id = rand(999,99999);
 .similiarity-item {
     margin-bottom: 5px;
 }
+
+.true_false_questions {
+    color: #224189 !important;
+    border-bottom-color: #224189 !important;
+}
+.checkbox_questions {
+    color: #224189 !important;
+    border-bottom-color: #224189 !important;
+}
+
+.question-types-colors {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+.question-types-colors span {
+    font-size: 16px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.question-types-colors span:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 18px;
+    width: 18px;
+    margin-right: 8px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.4) inset;
+}
+.question-types-colors .checkbox_questions_color:before {
+    background-color: #224189;
+}
+.question-types-colors .true_false_questions_color:before {
+    background-color: #c8d022;
+}
+
+
+
+
 </style>
 @endpush
 
@@ -124,6 +165,10 @@ $rand_id = rand(999,99999);
 
 <!-- Edit-questions Tabs Start -->
 <div class="edit-questions-difficulty-tabs">	
+<div class="question-types-colors">
+	<span class="checkbox_questions_color">MCQs</span>
+	<span class="true_false_questions_color">True/False</span>
+</div>
 <div class="edit-questions-difficulty-data">
 </div>
 <div class="edit-questions-tabs">	
