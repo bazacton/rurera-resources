@@ -1725,6 +1725,20 @@ body:has(.quiz-data-slide.active) {
     border-right: 0;
     border-bottom: 0;
 }
+.edit-questions-tabs .nav {border-bottom: 1px solid #ddd; gap: 0; display: flex; align-items: flex-end; justify-content: flex-start;}
+.edit-questions-tabs .nav .nav-link {border: 0; background-color: inherit; padding: 0 5px 5px; font-weight: 600; font-size: 16px; color: #000; border-bottom: 2px solid transparent; outline: none; transition: all .5s; -webkit-transition: all .5s; -o-transition: all .5s;}
+.edit-questions-tabs .nav .nav-link.active {color: var(--blue) !important; border-bottom-color: var(--blue) !important; z-index: 1;}
+.edit-questions-tabs .nav .nav-link:last-child {padding-right: 0;}
+.edit-questions-tabs .nav .nav-link.generated {color: #000 !important;}
+.edit-questions-tabs .nav .nav-link.active.generated {border-bottom-color: #000 !important;}
+.edit-questions-tabs .nav .nav-link.waiting {color: #bbb !important;}
+.edit-questions-tabs .nav .nav-link.active.waiting,
+.edit-questions-tabs .nav .nav-link.active.api_pending {
+    border-bottom-color: #bbb !important;
+}
+.edit-questions-tabs .nav .nav-link.api_pending {
+    color: #bbb !important;
+}
 .slide-controls {
     display: flex;
     align-items: center;
