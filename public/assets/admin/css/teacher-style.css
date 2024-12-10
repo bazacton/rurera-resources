@@ -1720,6 +1720,11 @@ New Quiz Page Style Start
 body:has(.quiz-data-slide.active) {
     overflow: hidden;
 }
+.admin_teacher_role .edit-questions-difficulty-tabs .admin-rurera-tabs {
+    border: 1px solid #ddd;
+    border-right: 0;
+    border-bottom: 0;
+}
 .slide-controls {
     display: flex;
     align-items: center;
