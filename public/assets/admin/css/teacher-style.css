@@ -398,7 +398,7 @@
 /*************************************
 Set Up Quiz Page Style Start
 **************************************/
-.setup-quiz-body {
+.admin_teacher_role .main-content {
     width: 1500px;
     margin: 0 auto;
 }
