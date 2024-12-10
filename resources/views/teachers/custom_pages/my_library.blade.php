@@ -27,19 +27,29 @@
                             <div class="quiz-setup-sidenav">
                                 <ul>
                                     <li>
-                                        <a href="#"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> Created by me</a>
+                                        <a href="#">
+                                            <span class="icon-box">
+                                                <i class=""></i>
+                                            </span> Created by me
+                                        </a>
                                         <span class="count-number">1</span>
                                     </li>
                                     <li>
-                                        <a href="#"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> Imported</a>
+                                        <a href="#"><span class="icon-box">
+                                            <i class=""></i>
+                                        </span> Imported</a>
                                         <span class="count-number">0</span>
                                     </li>
                                     <li>
-                                        <a href="#"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> Perviously used</a>
+                                        <a href="#"><span class="icon-box">
+                                            <i class=""></i>
+                                        </span> Perviously used</a>
                                         <span class="count-number">0</span>
                                     </li>
                                     <li>
-                                        <a href="#"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> Liked by me</a>
+                                        <a href="#"><span class="icon-box">
+                                            <i class=""></i>
+                                        </span> Liked by me</a>
                                         <span class="count-number">0</span>
                                     </li>
                                 </ul>
