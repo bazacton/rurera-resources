@@ -36,19 +36,19 @@
                                     </li>
                                     <li>
                                         <a href="#"><span class="icon-box">
-                                            <i class=""></i>
+                                            <i class="fas fa-file-import"></i>
                                         </span> Imported</a>
                                         <span class="count-number">0</span>
                                     </li>
                                     <li>
                                         <a href="#"><span class="icon-box">
-                                            <i class=""></i>
+                                            <i class="fas fa-history"></i>
                                         </span> Perviously used</a>
                                         <span class="count-number">0</span>
                                     </li>
                                     <li>
                                         <a href="#"><span class="icon-box">
-                                            <i class=""></i>
+                                            <i class="fas fa-heart"></i>
                                         </span> Liked by me</a>
                                         <span class="count-number">0</span>
                                     </li>
