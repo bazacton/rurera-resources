@@ -203,61 +203,6 @@
                             <div class="login-holder">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
-                                        <div class="login-card">
-
-                                            <h1 class="font-24 font-weight-bold">{{ trans('auth.login_h1') }}</h1>
-                                            <form method="Post" action="/login" class="mt-20">
-                                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                                <div class="form-group">
-                                                    <label class="input-label" for="username">Username:</label>
-                                                    <input name="username" type="text" class="form-control @error('username') is-invalid @enderror" id="username"
-                                                        value="{{ old('username') }}" aria-describedby="emailHelp">
-                                                    @error('username')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
-                                                    </div>
-                                                    @enderror
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label class="input-label" for="password">{{ trans('auth.password') }}:</label>
-
-                                                    <input name="password" type="password" class="form-control @error('password')  is-invalid @enderror" id="password" aria-describedby="passwordHelp">
-
-                                                    @error('password')
-                                                    <div class="invalid-feedback">
-                                                        {{ $message }}
-                                                    </div>
-                                                    @enderror
-                                                </div>
-
-                                                <button type="submit" class="btn btn-primary btn-block mt-20">{{ trans('auth.login') }}</button>
-                                                <!-- <p>By logging in to wonde you confirm you have read and agree <a href="#">terms of <br /> Use</a> and <a href="#">Privacy Notice</a></p>
-                                                <a href="#" class="login-next">Next</a> -->
-                                                <div class="login-option">
-                                                    <span>Login with</span>
-                                                    <a href="https://google.com/" target="_blank" class="social-login">
-                                                        <img src="/assets/default/img/auth/google.svg" class="mr-auto" alt=" google svg"/>
-                                                        <!-- <span class="flex-grow-1">{{ trans('auth.google_login') }}</span> -->
-                                                    </a>
-                                                    <a href="https://www.facebook.com/" target="_blank" class="social-login">
-                                                        <img src="/assets/default/img/auth/facebook.svg" class="mr-auto" alt="facebook svg"/>
-                                                        <!-- <span class="flex-grow-1">{{ trans('auth.facebook_login') }}</span> -->
-                                                    </a>
-                                                    <div class="text-center">
-                                                        <a href="/forget-password" target="_blank">{{ trans('auth.forget_your_password') }}</a>
-                                                    </div>
-                                                </div>
-                                                <div class="login-controls">
-                                                    <div>
-                                                        <span>{{ trans('auth.dont_have_account') }}</span>
-                                                        <a href="/register" class="text-secondary font-weight-bold">{{ trans('auth.signup') }}</a>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
                                         <div class="login-options">
                                             <!-- <div class="text-center mt-20">
                                                 <span class="badge badge-circle-gray300 text-secondary d-inline-flex align-items-center justify-content-center">{{ trans('auth.or') }}</span>
