@@ -570,6 +570,7 @@ Set Up Quiz Page Style End
 .filter-box {
     border: 1px solid #ddd;
     border-radius: 5px;
+    position: relative;
 }
 .filter-box i {
     position: absolute;
