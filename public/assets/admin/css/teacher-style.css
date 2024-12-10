@@ -1726,11 +1726,14 @@ Tailer Hub Style Start
     top: -45px;
     left: 0;
     width: 100%;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.question-layout-holder:hover .quiz-layout-edit-options {
+    top: 0;
 }
 .edit-options-controls img {
     height: 15px;
