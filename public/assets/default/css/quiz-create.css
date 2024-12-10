@@ -1509,9 +1509,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .nav .rurera-processing .nav-link {display: none;}
 .edit-questions-tabs .nav .nav-link.generated {color: #000 !important;}
 .edit-questions-tabs .nav .nav-link.active.generated {border-bottom-color: #000 !important;}
-.edit-questions-tabs .nav .nav-link.waiting {
-    color: #bbb !important;
-}
+.edit-questions-tabs .nav .nav-link.waiting {color: #bbb !important;}
 .edit-questions-tabs .nav .nav-link.active.waiting,
 .edit-questions-tabs .nav .nav-link.active.api_pending {
     border-bottom-color: #bbb !important;
