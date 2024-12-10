@@ -98,6 +98,10 @@
 								<label for="type_mc">Multiple Choice</label>
 							</div>
 							<div class="row-field">
+								<input type="radio" name="question_type" data-condition_key="question_type" class="conditional-parent" id="inner_dropdown" value="inner_dropdown">
+								<label for="inner_dropdown">Inner Dropdown</label>
+							</div>
+							<div class="row-field">
 								<input type="radio" name="question_type" data-condition_key="question_type" class="conditional-parent" id="type_tf" value="true-false">
 								<label for="type_tf">True or False</label>
 							</div>
@@ -116,7 +120,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-12 col-lg-12" data-condition_parent="question_type" data-condition_value="[multiple-choice, true-false]">
+				<div class="col-md-12 col-lg-12" data-condition_parent="question_type" data-condition_value="[multiple-choice, true-false, inner_dropdown]">
 					<div class="form-group">
 						<!-- Number of Options -->
 						<label>Number of Options (0-6):</label>
