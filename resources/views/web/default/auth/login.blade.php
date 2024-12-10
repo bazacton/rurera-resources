@@ -49,13 +49,19 @@
                 <div class="login-option-tabs">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="parent-tab" data-toggle="tab" data-target="#parent" type="button" role="tab" aria-controls="parent" aria-selected="true">Parent</button>
+                            <button class="nav-link active" id="parent-tab" data-toggle="tab" data-target="#parent" type="button" role="tab" aria-controls="parent" aria-selected="true">
+                                <span class="icon-box"><img src="/assets/default/svgs/parent.svg" alt=""></span> Parent
+                            </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="teacher-tab" data-toggle="tab" data-target="#teacher" type="button" role="tab" aria-controls="teacher" aria-selected="false">Teacher</button>
+                            <button class="nav-link" id="teacher-tab" data-toggle="tab" data-target="#teacher" type="button" role="tab" aria-controls="teacher" aria-selected="false">
+                                <span class="icon-box"><img src="/assets/default/svgs/teacher.svg" alt=""></span> Teacher
+                            </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="students-tab" data-toggle="tab" data-target="#students" type="button" role="tab" aria-controls="students" aria-selected="false">Students</button>
+                            <button class="nav-link" id="students-tab" data-toggle="tab" data-target="#students" type="button" role="tab" aria-controls="students" aria-selected="false">
+                                <span class="icon-box"><img src="/assets/default/svgs/students.svg" alt=""></span> Students
+                            </button>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
