@@ -598,6 +598,7 @@ Set Up Quiz Page Style End
 }
 .listing-card .text-holder h3 {
     margin: 0 0 5px;
+    font-size: 1.2rem;
 }
 .list-options {
     display: flex;
