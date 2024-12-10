@@ -227,7 +227,7 @@ Front-end Login Style Start
 .login-logo img {max-width: 50px; object-fit: contain;}
 .login-logo .logo-text {color: #203c64; text-transform: uppercase;}
 .login-back-btn span {color: var(--primary); font-weight: 700; margin-right: 5px;}
-.login-container .login-holder {background-color: #fff; border: 1px solid #ececec; border-radius: 0 6px 6px 6px; padding: 30px; margin-bottom: 15px; max-width: 1120px; min-width: 1120px; margin-left: 0; margin-right: 0; min-height: 590px;}
+.login-container .login-holder {background-color: #fff; border: 1px solid #ececec; border-radius: 0 6px 6px 6px; padding: 30px; margin-bottom: 15px; max-width: 1120px; min-width: 1120px; margin-left: 0; margin-right: 0; min-height: 350px;}
 .login-container .login-holder > [class*="col"] {padding-right: 0;}
 .login-container .login-holder > [class*="col"]:last-child {padding-right: 15px;}
 .login-holder .row {align-items: center;}
