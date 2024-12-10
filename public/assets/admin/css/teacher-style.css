@@ -685,6 +685,7 @@ Set Up Quiz Page Style End
     gap: 10px;
     color: #6d6d6d;
     font-weight: 500;
+    text-decoration: none;
 }
 .listing-controls {
     position: absolute;
