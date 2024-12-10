@@ -250,7 +250,7 @@ Front-end Login Style Start
 .social-login span {font-size: 18px; font-weight: 500; line-height: normal;}
 .lms-choose-membership .social-login span {color: var(--primary);}
 .social-login img {border-radius: 0; object-fit: contain; max-width: 130px; max-height: 70px;}
-.login-holder .input-label {margin: 0 0 15px; font-size: 24px; font-weight: 600; color: #515554;}
+.login-holder .input-label {margin: 0 0 15px; font-size: 16px; font-weight: 500; color: #515554;}
 .login-with-pin .login-password .input-label {width: 100%;}
 .login-password .form-group {margin-bottom: 0;}
 .emoji-passwords .is_empty {background-color: #ddd; height: 25px; width: 25px; border-radius: 100%;}
