@@ -4,6 +4,10 @@
 
 @endpush
 
+@push('styles_top')
+<link rel="stylesheet" href="/assets/default/css/quiz-create.css">
+@endpush
+
 @section('content')
 <section class="section">
    
