@@ -406,6 +406,10 @@ Set Up Quiz Page Style Start
     border-bottom: 1px solid #ddd;
     border-radius: .625rem .625rem 0 0;
 }
+.setup-quiz-header h3 {
+    font-size: 1.2rem;
+    color: #333333;
+}
 .setup-quiz-card .fields-holder {
     display: flex;
     align-items: center;
