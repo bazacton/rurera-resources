@@ -71,7 +71,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="listing-card mb-15 bg-white panel-border rounded-sm">
+                            <div class="listing-card mb-15 bg-white panel-border rounded-sm p-25">
                                 <div class="question-layout-block">
                                     <form class="question-fields" action="javascript:;" data-question_id="10180">
                                     <div class="left-content has-bg">
@@ -135,7 +135,7 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="listing-card mb-15 bg-white panel-border rounded-sm">
+                            <div class="listing-card mb-15 bg-white panel-border rounded-sm p-25">
                             <div class="question-layout-block">
                                 <form class="question-fields" action="javascript:;" data-question_id="10180">
                                     <div class="left-content has-bg">
