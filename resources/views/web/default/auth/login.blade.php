@@ -46,88 +46,106 @@
 
         <div class="row login-container mt-0">
             <div class="col-12 rurera-login-opt-block">
+                <div class="login-option-tabs">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="parent-tab" data-toggle="tab" data-target="#parent" type="button" role="tab" aria-controls="parent" aria-selected="true">Parent</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="teacher-tab" data-toggle="tab" data-target="#teacher" type="button" role="tab" aria-controls="teacher" aria-selected="false">Teacher</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="students-tab" data-toggle="tab" data-target="#students" type="button" role="tab" aria-controls="students" aria-selected="false">Students</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="parent" role="tabpanel" aria-labelledby="parent-tab">
+                            <div class="login-holder">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="login-card">
 
-                <div class="login-holder">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="login-card">
+                                            <h1 class="font-24 font-weight-bold">{{ trans('auth.login_h1') }}</h1>
+                                            <form method="Post" action="/login" class="mt-20">
+                                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                                <div class="form-group">
+                                                    <label class="input-label" for="username">Username:</label>
+                                                    <input name="username" type="text" class="form-control @error('username') is-invalid @enderror" id="username"
+                                                        value="{{ old('username') }}" aria-describedby="emailHelp">
+                                                    @error('username')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                    @enderror
+                                                </div>
 
-                                <h1 class="font-24 font-weight-bold">{{ trans('auth.login_h1') }}</h1>
-                                <form method="Post" action="/login" class="mt-20">
-                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                    <div class="form-group">
-                                        <label class="input-label" for="username">Username:</label>
-                                        <input name="username" type="text" class="form-control @error('username') is-invalid @enderror" id="username"
-                                            value="{{ old('username') }}" aria-describedby="emailHelp">
-                                        @error('username')
-                                        <div class="invalid-feedback">
-                                            {{ $message }}
+                                                <div class="form-group">
+                                                    <label class="input-label" for="password">{{ trans('auth.password') }}:</label>
+
+                                                    <input name="password" type="password" class="form-control @error('password')  is-invalid @enderror" id="password" aria-describedby="passwordHelp">
+
+                                                    @error('password')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                    @enderror
+                                                </div>
+
+                                                <button type="submit" class="btn btn-primary btn-block mt-20">{{ trans('auth.login') }}</button>
+                                                <!-- <p>By logging in to wonde you confirm you have read and agree <a href="#">terms of <br /> Use</a> and <a href="#">Privacy Notice</a></p>
+                                                <a href="#" class="login-next">Next</a> -->
+                                                <div class="login-option">
+                                                    <span>Login with</span>
+                                                    <a href="https://google.com/" target="_blank" class="social-login">
+                                                        <img src="/assets/default/img/auth/google.svg" class="mr-auto" alt=" google svg"/>
+                                                        <!-- <span class="flex-grow-1">{{ trans('auth.google_login') }}</span> -->
+                                                    </a>
+                                                    <a href="https://www.facebook.com/" target="_blank" class="social-login">
+                                                        <img src="/assets/default/img/auth/facebook.svg" class="mr-auto" alt="facebook svg"/>
+                                                        <!-- <span class="flex-grow-1">{{ trans('auth.facebook_login') }}</span> -->
+                                                    </a>
+                                                    <div class="text-center">
+                                                        <a href="/forget-password" target="_blank">{{ trans('auth.forget_your_password') }}</a>
+                                                    </div>
+                                                </div>
+                                                <div class="login-controls">
+                                                    <div>
+                                                        <span>{{ trans('auth.dont_have_account') }}</span>
+                                                        <a href="/register" class="text-secondary font-weight-bold">{{ trans('auth.signup') }}</a>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
-                                        @enderror
                                     </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="login-options">
+                                            <!-- <div class="text-center mt-20">
+                                                <span class="badge badge-circle-gray300 text-secondary d-inline-flex align-items-center justify-content-center">{{ trans('auth.or') }}</span>
+                                            </div> -->
+                                            <a href="javascript:;" class="rurera-login-opt social-login" data-login_type="login-with-smartbadge">
+                                                <img src="/store/1/default_images/qr-code.png" alt="login">
+                                                <span>Login with Smart Badge</span>
+                                            </a>
 
-                                    <div class="form-group">
-                                        <label class="input-label" for="password">{{ trans('auth.password') }}:</label>
-
-                                        <input name="password" type="password" class="form-control @error('password')  is-invalid @enderror" id="password" aria-describedby="passwordHelp">
-
-                                        @error('password')
-                                        <div class="invalid-feedback">
-                                            {{ $message }}
-                                        </div>
-                                        @enderror
-                                    </div>
-
-                                    <button type="submit" class="btn btn-primary btn-block mt-20">{{ trans('auth.login') }}</button>
-                                    <!-- <p>By logging in to wonde you confirm you have read and agree <a href="#">terms of <br /> Use</a> and <a href="#">Privacy Notice</a></p>
-                                    <a href="#" class="login-next">Next</a> -->
-                                    <div class="login-option">
-                                        <span>Login with</span>
-                                        <a href="https://google.com/" target="_blank" class="social-login">
-                                            <img src="/assets/default/img/auth/google.svg" class="mr-auto" alt=" google svg"/>
-                                            <!-- <span class="flex-grow-1">{{ trans('auth.google_login') }}</span> -->
-                                        </a>
-                                        <a href="https://www.facebook.com/" target="_blank" class="social-login">
-                                            <img src="/assets/default/img/auth/facebook.svg" class="mr-auto" alt="facebook svg"/>
-                                            <!-- <span class="flex-grow-1">{{ trans('auth.facebook_login') }}</span> -->
-                                        </a>
-                                        <div class="text-center">
-                                            <a href="/forget-password" target="_blank">{{ trans('auth.forget_your_password') }}</a>
+                                            <a href="javascript:;" class="rurera-login-opt social-login" data-login_type="login-with-emoji">
+                                                <img src="/store/1/default_images/emoji.png" alt="login">
+                                                <span>Login with Emoji</span>
+                                            </a>
+                                            
+                                            <a href="javascript:;" class="rurera-login-opt social-login" data-login_type="login-with-pin">
+                                                <img src="/store/1/default_images/password_field.svg" alt="#">
+                                                <span>Login with 6 - digit Pin</span>
+                                            </a>
+                                            <a href="javascript:;" class="rurera-login-opt social-login">
+                                                <img src="/store/1/default_images/Wonde-Logo.svg" alt="#"> <span class="coming-soon">Coming Soon</span>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="login-controls">
-                                        <div>
-                                            <span>{{ trans('auth.dont_have_account') }}</span>
-                                            <a href="/register" class="text-secondary font-weight-bold">{{ trans('auth.signup') }}</a>
-                                        </div>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="login-options">
-                                <!-- <div class="text-center mt-20">
-                                    <span class="badge badge-circle-gray300 text-secondary d-inline-flex align-items-center justify-content-center">{{ trans('auth.or') }}</span>
-                                </div> -->
-                                <a href="javascript:;" class="rurera-login-opt social-login" data-login_type="login-with-smartbadge">
-                                    <img src="/store/1/default_images/qr-code.png" alt="login">
-                                    <span>Login with Smart Badge</span>
-                                </a>
-
-                                <a href="javascript:;" class="rurera-login-opt social-login" data-login_type="login-with-emoji">
-                                    <img src="/store/1/default_images/emoji.png" alt="login">
-                                    <span>Login with Emoji</span>
-                                </a>
-                                
-                                <a href="javascript:;" class="rurera-login-opt social-login" data-login_type="login-with-pin">
-                                    <img src="/store/1/default_images/password_field.svg" alt="#">
-                                    <span>Login with 6 - digit Pin</span>
-                                </a>
-                                <a href="javascript:;" class="rurera-login-opt social-login">
-                                    <img src="/store/1/default_images/Wonde-Logo.svg" alt="#"> <span class="coming-soon">Coming Soon</span>
-                                </a>
-                            </div>
-                        </div>
+                        <div class="tab-pane fade" id="teacher" role="tabpanel" aria-labelledby="teacher-tab">...</div>
+                        <div class="tab-pane fade" id="students" role="tabpanel" aria-labelledby="students-tab">...</div>
                     </div>
                 </div>
             </div>
