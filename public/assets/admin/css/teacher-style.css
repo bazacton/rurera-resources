@@ -1701,3 +1701,13 @@ body:has(.quiz-data-slide.active) {
 /*************************************
 New Quiz Page Style End
 **************************************/
+
+/*************************************
+Tailer Hub Style Start
+**************************************/
+.admin_teacher_role .question-layout {
+    padding-bottom: 0;
+}
+/*************************************
+Tailer Hub Style End
+**************************************/
