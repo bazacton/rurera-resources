@@ -58,7 +58,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="quiz-data-table">
+                    <div class="quiz-data-table bg-white panel-border">
                         <table>
                             <thead>
                                 <tr>
