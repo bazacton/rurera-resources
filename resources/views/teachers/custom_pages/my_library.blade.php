@@ -29,7 +29,7 @@
                                     <li>
                                         <a href="#">
                                             <span class="icon-box">
-                                                <i class=""></i>
+                                                <i class="fas fa-user"></i>
                                             </span> Created by me
                                         </a>
                                         <span class="count-number">1</span>
