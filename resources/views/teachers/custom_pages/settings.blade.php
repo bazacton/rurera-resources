@@ -10,12 +10,18 @@
 
     <div class="section-body">
         <div class="row">
+            <div class="col-12">
+                <div class="section-header">
+                    <h1>Sciency Science</h1>
+                    <div class="section-header-breadcrumb">
+                        <div class="breadcrumb-item active"><a href="/admin/">Dashboard</a>
+                        </div>
+                        <div class="breadcrumb-item">Sciency Science</div>
+                    </div>
+                </div>
+            </div>
             <div class="col-12 col-md-12">
                 <div class="setup-quiz-body mb-50">
-                    <div class="section-title text-center mb-30">
-                        <h2>Sciency Science</h2>
-                        <span>8 questions</span>
-                    </div>
                     <div class="setup-quiz-card mb-30 bg-white panel-border rounded-sm">
                         <div class="setup-quiz-header mb-15 p-20">
                             <h3>Set up your quiz</h3>
