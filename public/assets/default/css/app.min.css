@@ -319,9 +319,6 @@ Front-end Login Style Start
   height: 22px;
   width: 22px;
 }
-.login-option-tabs .nav-tabs .nav-link.active img {
-  filter: invert(58%) sepia(23%) saturate(5546%) hue-rotate(178deg) brightness(102%) contrast(102%);
-}
 .login-holder [class*="col-"] {
   height: 100%;
 }
