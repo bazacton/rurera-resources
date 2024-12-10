@@ -71,7 +71,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="mb-15 bg-white panel-border rounded-sm p-25">
+                            <div class="question-layout-holder mb-15 bg-white panel-border rounded-sm p-25">
                                 <div class="question-layout-block">
                                     <div class="quiz-layout-edit-options">
                                         <div class="edit-options-left">
