@@ -297,6 +297,9 @@ Front-end Login Style Start
   border-top: 1px solid #ececec;
   border-radius: 0;
   padding: 10px 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 .login-option-tabs .nav-tabs .nav-link.active {
   color: var(--blue);
@@ -310,6 +313,11 @@ Front-end Login Style Start
 }
 .login-option-tabs .nav-tabs .nav-link:hover {
   border-color: #ececec;
+}
+.login-option-tabs .nav-tabs button img {
+  border-radius: 0;
+  height: 22px;
+  width: 22px;
 }
 .login-holder [class*="col-"] {
   height: 100%;
