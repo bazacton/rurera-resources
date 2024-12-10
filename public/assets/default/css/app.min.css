@@ -292,8 +292,8 @@ Front-end Login Style Start
 }
 .login-option-tabs .nav-tabs button {
   background-color: inherit;
-  border-right: 1px solid #ddd;
-  border-top: 1px solid #ddd;
+  border-right: 1px solid #ececec;
+  border-top: 1px solid #ececec;
   border-radius: 0;
   padding: 10px 25px;
 }
@@ -305,10 +305,10 @@ Front-end Login Style Start
 }
 .login-option-tabs .nav-tabs li:first-child button {
   border-radius: 6px 0 0 0;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #ececec;
 }
 .login-option-tabs .nav-tabs .nav-link:hover {
-  border-color: #ddd;
+  border-color: #ececec;
 }
 .login-holder [class*="col-"] {
   height: 100%;
