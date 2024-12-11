@@ -8,9 +8,6 @@
 <link rel="stylesheet" href="/assets/default/css/quiz-frontend.css">
 <link rel="stylesheet" href="/assets/default/css/quiz-create-frontend.css">
 <style>
-    .main-content{
-        padding-top: 0px;
-    }
     .navbar-bg {
         display: none;
     }
