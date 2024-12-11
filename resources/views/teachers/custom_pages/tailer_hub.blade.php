@@ -327,7 +327,7 @@
     
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip({
-            container: '.edit-options-controls'
+            container: '.admin_teacher_role';
         });
         
         $('.show-btn').on('click',function () {
