@@ -1898,7 +1898,7 @@ Tailer Hub Style Start
     padding: 0 15px;
     outline: none;
 }
-.rureraform-search-field button {
+.rureraform-search .input-field button {
     position: absolute;
     right: 5px;
     top: 50%;
