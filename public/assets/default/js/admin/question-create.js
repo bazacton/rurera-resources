@@ -1132,7 +1132,7 @@ function _rureraform_properties_prepare(_object) {
                 case 'text':
                     var after_html = EditorIsEmpty(rureraform_meta[type][key].after)? '' : rureraform_meta[type][key].after;
 					
-					var classes = rureraform_meta[type][key]['classes'];
+					var classes = EditorIsEmpty(rureraform_meta[type][key]['classes'])? '' : rureraform_meta[type][key]['classes'];
                     html += "<div class='rureraform-properties-item "+classes+"' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><input type='text' name='rureraform-" + key + "' id='rureraform-" + key + "' value='" + rureraform_escape_html(properties[key]) + "' placeholder='' />"+after_html+"</div></div>";
                     break;
 
@@ -6725,13 +6725,18 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 				   var question_label = rureraform_form_elements[i]["question_label"];
 				   var hint = rureraform_form_elements[i]["hint"];
 				   var hint_html = '';
+				   var question_label_html = '';
+				   if(question_label != ''){
+					   question_label_html = '<span class="truefalse_question_label">'+question_label+'</span>';
+				   }
 				   if(hint != ''){
 					   hint_html = '<span class="question_hint">'+hint+'</span>';
 				   }
+				   
                    var classes = '';
                     rureraform_form_elements[i]['field_id'] = random_id;
 				
-                   var field_data = '<span class="truefalse_question_label">'+question_label+'</span><span class="truefalse_quiz rureraform-input rureraform-cr-layout-undefined rureraform-cr-layout-undefined">\n' +
+                   var field_data = question_label_html+'<span class="truefalse_quiz rureraform-input rureraform-cr-layout-undefined rureraform-cr-layout-undefined">\n' +
                        '<div class="form-box rurera-in-row undefined image-right none">\n' +
                        '<div class="lms-radio-select rurera-in-row undefined image-right none">\n' +
                        '<div class="field-holder rureraform-cr-container-medium rureraform-cr-container-undefined">\n' +
