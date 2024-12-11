@@ -1752,8 +1752,9 @@ Tailer Hub Style Start
     padding-left: 25px;
 }
 .edit-options-controls img {
-    height: 15px;
-    width: 15px;
+    height: 12px;
+    width: 12px;
+    filter: invert(46%) sepia(12%) saturate(332%) hue-rotate(166deg) brightness(95%) contrast(88%);
 }
 .edit-options-controls button {
     background-color: #fff;
