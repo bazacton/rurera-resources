@@ -1925,18 +1925,13 @@ Tailer Hub Style Start
     font-size: 16px;
 }
 .search-option-btn button {
-    background-color: var(--publish);
-    border: 1px solid var(--publish);
-    color: #fff !important;
-    padding: 5px 10px;
+    border: 1px solid #ddd;
+    padding: 5px 12px;
     border-radius: 5px;
     font-weight: bold;
     color: #555;
     outline: none;
-    height: 46px;
-}
-.search-option-btn button i {
-    color: #fff;
+    height: 42px;
 }
 /*************************************
 Tailer Hub Style End
