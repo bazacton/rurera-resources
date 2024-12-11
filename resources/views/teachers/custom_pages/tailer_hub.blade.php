@@ -34,7 +34,7 @@
                         <div class="col-12 col-lg-12 col-md-12">
                             <div class="quiz-layout-edit-options">
                                 <div class="controls-heading">
-                                    <h6>Question 1 -</h6> <button type="button">Add page title</button> 
+                                    <h6>Question 1 -</h6> <button type="button">Add question title</button> 
                                 </div>
                                 <div class="edit-options-right">
                                     <div class="edit-options-controls">
