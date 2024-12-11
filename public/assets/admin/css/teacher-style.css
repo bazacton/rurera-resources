@@ -1717,7 +1717,7 @@ Tailer Hub Style Start
 .quiz-layout-edit-options {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
     position: absolute;
@@ -1767,6 +1767,21 @@ Tailer Hub Style Start
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.controls-heading {
+    display: inline-flex;
+    align-items: center;
+}
+.controls-heading h6 {
+    font-size: 14px;
+    margin: 0;
+    color: #333;
+}
+.controls-heading button {
+    border: 0;
+    background-color: inherit;
+    padding: 0;
+    font-size: 14px;
 }
 .edit-options-controls .poll-btn, .edit-options-controls .edit-btn {
     padding: 0 10px;
