@@ -56,11 +56,14 @@
                                                 <i class="fas fa-ellipsis-v"></i>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Add a co-teacher</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Edit class details</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> Refresh Class Roster</a>
-                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Archive Class</a>
-                                                <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Delete Class</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Shorten</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Rewrite</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> More fun</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> More formal</a>
+                                                <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Sprinkle fairy dust</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Change voice</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Fix spelling</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Custom prompt...</a>
                                             </div>
                                         </div>
                                     </div>
