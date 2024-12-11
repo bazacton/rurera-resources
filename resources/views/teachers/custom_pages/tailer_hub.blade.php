@@ -41,7 +41,7 @@
                                         <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
                                         <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="Move down"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
 
-                                        <button type="button" class="show-btn" data-toggle="tooltip" data-placement="top" title="Show question">
+                                        <button type="button" class="show-btn" data-toggle="tooltip" data-placement="top" title="Show/Hide question">
                                             <img class="show-img" src="/assets/default/svgs/eye-show.svg" alt="">
                                             <img class="hide-img" src="/assets/default/svgs/eye-off.svg" alt="">
                                         </button>
