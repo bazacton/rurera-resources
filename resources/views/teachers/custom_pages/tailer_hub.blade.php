@@ -76,14 +76,25 @@
                                         <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
                                         <div class="question-layout row d-flex align-items-start">
                                             <div class="rureraform-col rureraform-col-12">
-                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                <div class="question-label question_heading">
-                                                    <span>Read the text, then answer the question.</span>
-                                                    <div class="quiz-layout-edit-options">
-                                                        
+                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                    <div class="question-label question_heading">
+                                                        <span>Read the text, then answer the question.</span>
+                                                        <div class="quiz-layout-edit-options">
+                                                            
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="rureraform-col rureraform-col-12">
+                                                <div class="rureraform-element">
+                                                    <div class="question-label question_heading">
+                                                        <span>Srarch question form quizizz library</span>
+                                                    </div>
+                                                    <div class="rureraform-search-field">
+                                                        <input type="text" placeholder="Sciency Science">
+                                                        <button type="button"><i class="fas fa-search"></i> Search questions</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="rureraform-col rureraform-col-12">
                                             <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz"> Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm. <div class="rureraform-element-cover"></div>
