@@ -14,7 +14,7 @@
 
     <div class="section-body">
     <div class="row">
-            <div class="col-12 col-md-12">
+            <div class="col-12 col-md-9 col-lg-9">
                 <div class="section-header">
                     <h1>Tailer Hub</h1>
                     <div class="section-header-breadcrumb">
@@ -24,9 +24,9 @@
                     </div>
                 </div>
                 <div class="page-controls">
-                    <button type="button" class="setting-btn"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""> Settings</button>
-                    <button type="button" class="preview-btn">Preview</button>
-                    <button type="button" class="publish-btn">Publish</button>
+                    <button type="button" class="setting-btn"><img src="/assets/default/svgs/settings.svg" alt=""> Settings</button>
+                    <button type="button" class="preview-btn"><img src="/assets/default/svgs/preview.svg" alt=""> Preview</button>
+                    <button type="button" class="publish-btn"><img src="/assets/default/svgs/publish.svg" alt=""> Publish</button>
                 </div>
                 <div class="quiz-setup-listings">
                     <div class="row">
