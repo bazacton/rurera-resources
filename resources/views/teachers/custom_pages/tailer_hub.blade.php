@@ -30,6 +30,11 @@
                     </div>
                     <div class="quiz-data-slide">
                         <div class="quiz-data-slide-inner">
+                            <div class="slide-controls">
+                                <button type="button" class="close-btn">
+                                    <span>×</span>
+                                </button>
+                            </div>
                             <div class="setup-quiz-body mb-50">
                                 <div class="setup-quiz-card mb-30 bg-white panel-border rounded-sm">
                                     <div class="setup-quiz-header mb-15 p-20">
