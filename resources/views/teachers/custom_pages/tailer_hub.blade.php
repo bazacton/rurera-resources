@@ -66,6 +66,18 @@
                                         <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="Copy"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
                                         <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Trash"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
                                         <button type="button" class="add-btn" data-toggle="tooltip" data-placement="top" title="Add"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
+                                        <div class="card-options dropdown">
+                                            <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Add a co-teacher</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Edit class details</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> Refresh Class Roster</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Archive Class</a>
+                                                <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Delete Class</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
