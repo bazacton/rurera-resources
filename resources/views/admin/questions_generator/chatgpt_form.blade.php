@@ -281,7 +281,8 @@
 														@if($expected_example_questions->count() > 0)
 															@php $counter = 1; @endphp
 															@foreach($expected_example_questions as $exampleQuestionObj)	
-																<div class="col-12 col-lg-4 col-md-6 template-item templates-list-{{$exampleQuestionObj->question_type}}">
+															@php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
+																<div class="col-12 col-lg-4 col-md-6 {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
 																	<div class="template-box">
 																		<div class="rating-stars">
 																			<div class="rating-box">
@@ -323,7 +324,8 @@
 														@if($exceeding_example_questions->count() > 0)
 															@php $counter = 1; @endphp
 															@foreach($exceeding_example_questions as $exampleQuestionObj)	
-																<div class="col-12 col-lg-4 col-md-6 template-item templates-list-{{$exampleQuestionObj->question_type}}">
+															@php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
+																<div class="col-12 col-lg-4 col-md-6 {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
 																	<div class="template-box">
 																		<div class="rating-stars">
 																			<div class="rating-box">
