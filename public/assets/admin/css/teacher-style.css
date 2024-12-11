@@ -1831,7 +1831,6 @@ Tailer Hub Style Start
 }
 .page-controls button {
     border: 0;
-    background-color: var(--blue);
     display: inline-flex;
     align-items: center;
     gap: 2px;
