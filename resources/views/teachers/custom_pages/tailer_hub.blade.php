@@ -119,7 +119,10 @@
                                             <div class="rureraform-col rureraform-col-12">
                                             <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                                 <div class="question-label question_heading">
-                                                <span>Read the text, then answer the question.</span>
+                                                    <span>Read the text, then answer the question.</span>
+                                                    <div class="quiz-layout-edit-options">
+                                                        
+                                                    </div>
                                                 </div>
                                             </div>
                                             </div>
