@@ -17,6 +17,7 @@
 						<div class="breadcrumb-item">{{$QuestionsBulkListObj->category->getTitleAttribute()}}</div>
 						<div class="breadcrumb-item">{{$QuestionsBulkListObj->subject->getTitleAttribute()}}</div>
 						<div class="breadcrumb-item">{{$QuestionsBulkListObj->chapter->title}}</div>
+						<div class="breadcrumb-item active">{{$QuestionsBulkListObj->subChapter->sub_chapter_title}}</div>
 					</div>
 					<div class="section-header-breadcrumb">
 						<div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
