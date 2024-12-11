@@ -59,7 +59,7 @@
                                 <div class="question-layout-block">
                                     <div class="quiz-layout-edit-options">
                                         <div class="controls-heading">
-                                            <h6>Page 1 -</h6> <button type="button">Add page title</button> 
+                                            <h6>Question 1 -</h6> <button type="button">Add page title</button> 
                                         </div>
                                         <div class="edit-options-right">
                                             <div class="edit-options-controls">
