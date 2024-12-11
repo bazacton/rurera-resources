@@ -62,11 +62,10 @@
                                             <div class="edit-options-controls">
                                                 <button type="button" class="arrow-up-btn"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
                                                 <button type="button" class="arrow-down-btn"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
-                                                <button type="button" class="grid-btn"><img src="/assets/default/svgs/grid-btn.svg" alt=""></button>
                                                 <button type="button" class="copy-btn"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
                                                 <button type="button" class="tag-btn"><img src="/assets/default/svgs/tag-btn.svg" alt=""></button>
-                                                <button type="button" class="add-btn"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
                                                 <button type="button" class="delete-btn"><img src="/assets/default/svgs/trash-alt-btn.svg" alt=""></button>
+                                                <button type="button" class="add-btn"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
                                             </div>
                                         </div>
                                     </div>
