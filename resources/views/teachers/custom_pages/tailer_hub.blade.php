@@ -29,7 +29,7 @@
                         <button type="button" class="publish-btn"><img src="/assets/default/svgs/publish.svg" alt=""> Publish</button>
                     </div>
                 </div>
-                <div class="rureraform-element mb-20 bg-white panel-border rounded-sm p-25">
+                <div class="rureraform-element mb-20 bg-white panel-border rounded-sm p-15">
                     <h6 class="search-lable">Srarch question form quizizz library</h6>
                     <div class="rureraform-search-field">
                         <input type="text" placeholder="Sciency Science">
