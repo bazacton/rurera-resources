@@ -1819,6 +1819,23 @@ Tailer Hub Style Start
 .edit-options-controls .dropdown-toggle i {
     color: #1c274c;
 }
+.page-controls button {
+    border: 0;
+    background-color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.page-controls button img {
+    height: 18px;
+    width: 18px;
+}
+.page-controls {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
