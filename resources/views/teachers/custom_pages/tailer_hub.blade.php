@@ -327,8 +327,8 @@
         });
     });
     $(document).ready(function(){
-        $(".show-btn").click(function(){
-            $(".show-btn").toggleClass("show");
+        $('.show-btn').on('click',function () {
+            $('.show-btn').toggleClass('show');
         });
     });
 </script>
