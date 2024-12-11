@@ -1803,6 +1803,17 @@ Tailer Hub Style Start
     width: 12px;
     margin-right: 10px;
 }
+.edit-options-controls .tooltip-inner {
+    background-color: rgba(0,0,0,0.8);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+.edit-options-controls .bs-tooltip-top .arrow {
+    bottom: 1px;
+}
+.edit-options-controls .bs-tooltip-top .arrow::before {
+    background-color: rgba(0,0,0,0.8);
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
