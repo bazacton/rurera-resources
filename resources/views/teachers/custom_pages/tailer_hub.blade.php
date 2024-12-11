@@ -17,7 +17,7 @@
             <div class="col-12 col-md-9 col-lg-9">
                 <div class="d-flex align-items-center justify-content-between flex-wrap mb-20">
                     <div class="section-header mb-0 pb-0">
-                        <h1>Tailer Hub <span class="icon-box"></span></h1>
+                        <h1>Tailer Hub <button class="setting-btn" type="button"><img src="/assets/default/svgs/settings.svg" alt=""></button></h1>
                         <div class="section-header-breadcrumb">
                             <div class="breadcrumb-item active"><a href="/admin/">Dashboard</a>
                             </div>
