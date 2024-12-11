@@ -1835,7 +1835,6 @@ Tailer Hub Style Start
     display: inline-flex;
     align-items: center;
     gap: 2px;
-    color: #fff;
     padding: 10px 20px;
     border-radius: 10px;
     outline: none;
@@ -1846,7 +1845,8 @@ Tailer Hub Style Start
     background-color: var(--publish);
 }
 .page-controls .preview-btn {
-    background-color: #6c757d;
+    color: #6c757d;
+    border: 1px solid #6c757d;
 }
 .page-controls .preview-btn img {
     filter: invert(48%) sepia(2%) saturate(2184%) hue-rotate(167deg) brightness(93%) contrast(84%);
