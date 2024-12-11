@@ -27,34 +27,7 @@
             <div class="col-12 col-md-12">
                 <div class="quiz-setup-listings">
                     <div class="row">
-                        <div class="col-12 col-lg-3 col-md-6">
-                            <div class="quiz-setup-sidenav">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fas fa-user"></i> Created by me
-                                        </a>
-                                        <span class="count-number">1</span>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                        <i class="fas fa-file-import"></i> Imported</a>
-                                        <span class="count-number">0</span>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                        <i class="fas fa-history"></i> Perviously used</a>
-                                        <span class="count-number">0</span>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                        <i class="fas fa-heart"></i> Liked by me</a>
-                                        <span class="count-number">0</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-9 col-md-12">
+                        <div class="col-12 col-lg-12 col-md-12">
                             <div class="quiz-layout-edit-options">
                                 <div class="controls-heading">
                                     <h6>Question 1 -</h6> <button type="button">Add page title</button> 
