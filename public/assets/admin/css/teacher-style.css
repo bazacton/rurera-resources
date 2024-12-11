@@ -1810,6 +1810,9 @@ Tailer Hub Style Start
 .edit-options-controls .bs-tooltip-top .arrow::before {
     border-top-color: rgba(0, 0, 0, 0.8);
 }
+.edit-options-controls .dropdown-toggle i {
+    color: #333;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
