@@ -1761,6 +1761,7 @@ Tailer Hub Style Start
 }
 .show-btn.show .hide-img {
     display: block;
+    margin: 0 auto;
 }
 .show-btn.show .show-img {
     display: none;
