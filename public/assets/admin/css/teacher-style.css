@@ -1761,7 +1761,7 @@ Tailer Hub Style Start
     padding: 0;
 }
 .edit-options-controls button:hover {
-    background-color: #f2f2f2;
+    background-color: #f2f2f2 !important;
 }
 .edit-options-controls {
     display: flex;
