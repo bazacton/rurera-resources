@@ -1828,9 +1828,13 @@ Tailer Hub Style Start
     color: #fff;
     padding: 5px 10px;
     border-radius: 3px;
+    outline: none;
 }
 .page-controls .publish-btn {
     background-color: var(--publish);
+}
+.page-controls .preview-btn {
+    background-color: #6c757d;
 }
 .page-controls button img {
     height: 16px;
