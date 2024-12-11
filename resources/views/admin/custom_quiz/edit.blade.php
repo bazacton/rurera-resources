@@ -43,7 +43,7 @@
       method="Post">
     {{ csrf_field() }}
     <section class="section">
-        <div class="section-body" style="margin-top: 50px;">
+        <div class="section-body">
             <div class="row col-12 col-md-12 col-lg-12">
 
                 <input type="hidden" class="year_id_field" value="{{isset( $assignment->year_id )? $assignment->year_id : 0}}">
