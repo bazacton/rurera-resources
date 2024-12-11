@@ -6359,6 +6359,14 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 	
 					content = updatedContent2;
 
+					var hint = rureraform_form_elements[i]["hint"];
+				   var hint_html = '';
+				  
+				   if(hint != ''){
+					   hint_html = '<span class="question_hint">'+hint+'</span>';
+				   }
+				   content += hint_html;
+					
 					var html_data = "<div id='rureraform-element-" + i + "' class='question-fields rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'  data-type='" + rureraform_form_elements[i]["type"] + "'>" + content + "<div class='rureraform-element-cover'></div></div>";
                     html += html_data;
 					
