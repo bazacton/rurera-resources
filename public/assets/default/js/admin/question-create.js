@@ -1254,7 +1254,7 @@ function _rureraform_properties_prepare(_object) {
                    break;
 
                 case 'html':
-                    html += "<div class='rureraform-properties-item' data-id='" + key + "'>\n\
+                    html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div>\n\
                     \n\
                     <div class='rureraform-properties-tooltip'></div>\n\
                     <div class='rureraform-properties-content rureraform-wysiwyg'><textarea name='rureraform-" + key + "' id='rureraform-" + key + "' class='summernote-editor content-data'>" + properties[key] + "</textarea>\n\
@@ -2033,7 +2033,7 @@ function _rureraform_properties_prepare(_object) {
     		});
     	}
 	
-	if(jQuery('select[name="rureraform-no_of_fields"]').val() > 0){
+	if(jQuery('select[name="rureraform-no_of_fields"]').val() > 0){	
 		jQuery('select[name="rureraform-no_of_fields"]').each(function () {
 			var no_of_fields = $(this).val();
 			var thisBlock = $(this).closest('.rureraform-tab-content');
@@ -6720,10 +6720,11 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                    var left_data = '';
                     var right_data = '';
                    var attributes_data = '';
+				   var question_label = rureraform_form_elements[i]["question_label"];
                    var classes = '';
                     rureraform_form_elements[i]['field_id'] = random_id;
 				
-                   var field_data = '<span class="truefalse_quiz rureraform-input rureraform-cr-layout-undefined rureraform-cr-layout-undefined">\n' +
+                   var field_data = '<span class="truefalse_question_label">'+question_label+'</span><span class="truefalse_quiz rureraform-input rureraform-cr-layout-undefined rureraform-cr-layout-undefined">\n' +
                        '<div class="form-box rurera-in-row undefined image-right none">\n' +
                        '<div class="lms-radio-select rurera-in-row undefined image-right none">\n' +
                        '<div class="field-holder rureraform-cr-container-medium rureraform-cr-container-undefined">\n' +
@@ -10251,8 +10252,8 @@ function pasteHtmlAtCaret(html) {
 
 
 $(document).on('click', '.quiz-stage-generate', function () {
-
-    if($(".ajax-category-courses").val() == '' || $(".ajax-courses-dropdown").val() == ''){
+	var is_example_question = ($('[name=is_example_question]').prop('checked')) ? true : false;
+    if((is_example_question == false) && ($(".ajax-category-courses").val() == '' || $(".ajax-courses-dropdown").val() == '')){
         alert('Please Select Category and Subject.');
     }else {
         var question_status = $(this).attr('data-status');
