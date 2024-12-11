@@ -1881,6 +1881,11 @@ Tailer Hub Style Start
     filter: invert(14%) sepia(68%) saturate(589%) hue-rotate(186deg) brightness(90%) contrast(95%);
 }
 .rureraform-search-field {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.input-field {
     position: relative;
 }
 .rureraform-search-field input[type="text"] {
