@@ -1602,6 +1602,7 @@ New Quiz Page Style Start
 }
 body:has(.quiz-data-slide.active) {
     overflow: hidden;
+    padding-right: 16px;
 }
 .admin_teacher_role .edit-questions-difficulty-tabs .admin-rurera-tabs {
     border: 1px solid #ddd;
