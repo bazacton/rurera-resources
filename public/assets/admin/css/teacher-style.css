@@ -1824,7 +1824,7 @@ Tailer Hub Style Start
     background-color: var(--blue);
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 2px;
     color: #fff;
     padding: 5px 10px;
     border-radius: 3px;

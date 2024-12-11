@@ -875,6 +875,7 @@ ul.nav-tabs li.nav-item a.nav-link.active i {color: #191d21;}
 /* 4.1 Misc */
 :root {
     /* Colors */
+    --publish: #8fc963;
     --primary: #007BFFFF;
     --secondary: #34395e;
     --success: #47c363;
