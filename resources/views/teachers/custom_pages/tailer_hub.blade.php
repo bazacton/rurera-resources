@@ -321,12 +321,13 @@
 
 @push('scripts_bottom')
 <script>
-    $('[data-toggle="tooltip"]').each(function () {
-        $(this).tooltip({
-            container: $(this).closest('.edit-options-controls')
-        });
-    });
+    
     $(document).ready(function(){
+        $('[data-toggle="tooltip"]').each(function () {
+            $(this).tooltip({
+                container: $(this).closest('.edit-options-controls')
+            });
+        });
         $('.show-btn').on('click',function () {
             $('.show-btn').toggleClass('show');
         });
