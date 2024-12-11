@@ -1844,6 +1844,21 @@ Tailer Hub Style Start
     flex-wrap: wrap;
     gap: 15px;
 }
+.section-header h1 {
+    display: flex !important;
+    align-items: center;
+    gap: 5px;
+}
+.section-header .setting-btn {
+    height: 22px;
+    width: 22px;
+    border: 0;
+    background-color: inherit;
+    outline: none;
+}
+.section-header .setting-btn img {
+    max-width: 100%;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
