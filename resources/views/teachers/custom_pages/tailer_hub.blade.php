@@ -323,11 +323,10 @@
 <script>
     
     $(document).ready(function(){
-        $('[data-toggle="tooltip"]').each(function () {
-            $(this).tooltip({
-                container: $(this).closest('.edit-options-controls')
-            });
+        $('[data-toggle="tooltip"]').tooltip({
+            container: '.edit-options-controls'
         });
+        
         $('.show-btn').on('click',function () {
             $('.show-btn').toggleClass('show');
         });
