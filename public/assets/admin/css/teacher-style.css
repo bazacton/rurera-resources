@@ -1736,6 +1736,21 @@ Tailer Hub Style Start
 .question-layout-holder:hover .quiz-layout-edit-options {
     top: 0;
 }
+.edit-options-controls .select-box {
+    position: relative;
+}
+.edit-options-controls .select-box img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.edit-options-controls .select-box select {
+    border: 1px solid #ddd;
+    height: 30px;
+    border-radius: 3px;
+    padding: 0 10px;
+}
 .edit-options-controls img {
     height: 15px;
     width: 15px;
