@@ -35,7 +35,7 @@
                                     <span>×</span>
                                 </button>
                             </div>
-                            <div class="setup-quiz-body mb-50">
+                            <div class="setup-quiz-body mb-20">
                                 <div class="setup-quiz-card mb-30 bg-white panel-border rounded-sm">
                                     <div class="setup-quiz-header mb-15 p-20">
                                         <h3>Set up your quiz</h3>
