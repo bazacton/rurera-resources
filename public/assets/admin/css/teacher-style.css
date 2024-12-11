@@ -1751,6 +1751,10 @@ Tailer Hub Style Start
     width: 18px;
     object-fit: contain;
 }
+.edit-options-controls .stars-btn img {
+    height: 25px;
+    width: 25px;
+}
 .edit-options-controls button {
     background-color: #fff;
     border: 0;
