@@ -58,6 +58,9 @@
                             <div class="question-layout-holder mb-15 bg-white panel-border rounded-sm p-25">
                                 <div class="question-layout-block">
                                     <div class="quiz-layout-edit-options">
+                                        <div class="controls-heading">
+                                            <h6>Page 1 -</h6> <button type="button">Add page title</button> 
+                                        </div>
                                         <div class="edit-options-right">
                                             <div class="edit-options-controls">
                                                 <button type="button" class="arrow-up-btn"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
