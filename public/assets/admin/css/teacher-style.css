@@ -1843,6 +1843,7 @@ Tailer Hub Style Start
 }
 .page-controls .publish-btn {
     background-color: var(--publish);
+    color: #fff;
 }
 .page-controls .preview-btn {
     color: #6c757d;
