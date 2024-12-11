@@ -1928,7 +1928,7 @@ Tailer Hub Style Start
 .search-option-btn button {
     background-color: var(--publish);
     border: 1px solid var(--publish);
-    color: #fff;
+    color: #fff !important;
     padding: 5px 10px;
     border-radius: 5px;
     font-weight: bold;
