@@ -1717,10 +1717,11 @@ Tailer Hub Style Start
 .quiz-layout-edit-options {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
+    gap: 10px;
     position: absolute;
-    top: -45px;
+    top: -20px;
     left: 0;
     width: 100%;
     -webkit-transition: all 0.5s ease-out;
@@ -1729,6 +1730,7 @@ Tailer Hub Style Start
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
     z-index: 1;
+    padding-right: 10px;
 }
 .edit-options-controls .select-box {
     position: relative;
@@ -1755,9 +1757,8 @@ Tailer Hub Style Start
 }
 .edit-options-controls button {
     background-color: #fff;
-    border: 1px solid #ddd;
-    height: 28px;
-    min-width: 28px;
+    border: 0;
+    height: auto;
     border-radius: 3px;
     outline: none;
 }
