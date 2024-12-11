@@ -1131,8 +1131,9 @@ function _rureraform_properties_prepare(_object) {
 
                 case 'text':
                     var after_html = EditorIsEmpty(rureraform_meta[type][key].after)? '' : rureraform_meta[type][key].after;
-                    console.log(after_html);
-                    html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><input type='text' name='rureraform-" + key + "' id='rureraform-" + key + "' value='" + rureraform_escape_html(properties[key]) + "' placeholder='' />"+after_html+"</div></div>";
+					
+					var classes = rureraform_meta[type][key]['classes'];
+                    html += "<div class='rureraform-properties-item "+classes+"' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><input type='text' name='rureraform-" + key + "' id='rureraform-" + key + "' value='" + rureraform_escape_html(properties[key]) + "' placeholder='' />"+after_html+"</div></div>";
                     break;
 
                 case 'image':
@@ -5828,6 +5829,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                 case "text":
                     if (rureraform_form_elements[i]['input-style-size'] != "")
                     extra_class += " rureraform-input-" + rureraform_form_elements[i]['input-style-size'];
+					
                     html += "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element" + (properties["label-style-position"] != "" ? " rureraform-element-label-" + properties["label-style-position"] : "") + (rureraform_form_elements[i]['description-style-position'] != "" ? " rureraform-element-description-" + rureraform_form_elements[i]['description-style-position'] : "") + "' data-type='" + rureraform_form_elements[i]["type"] + "'><div class='rureraform-column-label" + column_label_class + "'><label class='rureraform-label" + (rureraform_form_elements[i]['label-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['label-style-align'] : "") + "'>" + properties["required-label-left"] + rureraform_escape_html(rureraform_form_elements[i]["label"]) + properties["required-label-right"] + properties["tooltip-label"] + "</label></div><div class='rureraform-column-input" + column_input_class + "'><div class='rureraform-input" + extra_class + "'" + properties["tooltip-input"] + ">" + icon + "<input type='text' class='" + (rureraform_form_elements[i]['input-style-align'] != "" ? "rureraform-ta-" + rureraform_form_elements[i]['input-style-align'] + " " : "") + rureraform_form_elements[i]["css-class"] + "' placeholder='" + rureraform_escape_html(rureraform_form_elements[i]["placeholder"]) + "' value='" + rureraform_escape_html(rureraform_form_elements[i]["default"]) + "' /></div><label class='rureraform-description" + (rureraform_form_elements[i]['description-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['description-style-align'] : "") + "'>" + properties["required-description-left"] + rureraform_escape_html(rureraform_form_elements[i]["description"]) + properties["required-description-right"] + properties["tooltip-description"] + "</label></div><div class='rureraform-element-cover'></div></div>";
                     break;
 
@@ -6721,6 +6723,11 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                     var right_data = '';
                    var attributes_data = '';
 				   var question_label = rureraform_form_elements[i]["question_label"];
+				   var hint = rureraform_form_elements[i]["hint"];
+				   var hint_html = '';
+				   if(hint != ''){
+					   hint_html = '<span class="question_hint">'+hint+'</span>';
+				   }
                    var classes = '';
                     rureraform_form_elements[i]['field_id'] = random_id;
 				
@@ -6736,7 +6743,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                        '<label for="field-' + random_id + '-1">False</label>\n' +
                        '</div>\n' +
                        '</div>\n' +
-                       '</div></span>';
+                       '</div></span>'+hint_html;
                    var html_data = "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'  data-type='" + rureraform_form_elements[i]["type"] + "'>" + field_data + "<div class='rureraform-element-cover'></div></div>";
                    html += html_data;
 
