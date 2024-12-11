@@ -1928,6 +1928,7 @@ Tailer Hub Style Start
 .search-option-btn button {
     background-color: var(--publish);
     border: 1px solid var(--publish);
+    color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     font-weight: bold;
@@ -1935,7 +1936,9 @@ Tailer Hub Style Start
     outline: none;
     height: 46px;
 }
-.search-option-btn button i {}
+.search-option-btn button i {
+    color: #fff;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
