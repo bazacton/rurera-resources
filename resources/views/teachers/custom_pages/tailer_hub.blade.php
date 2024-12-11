@@ -55,22 +55,6 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-9 col-md-12">
-                            <div class="listing-filters">
-                                <div class="filter-box">
-                                    <i class="fas fa-filter"></i>
-                                    <select>
-                                        <option value="All">All</option>
-                                    </select>
-                                </div>
-                                <div class="filter-box">
-                                    <i class="fas fa-sort"></i>
-                                    <select>
-                                        <option value="Most recent">Most recent</option>
-                                        <option value="Least recent">Least recent</option>
-                                        <option value="Least recent">Alphabetical</option>
-                                    </select>
-                                </div>
-                            </div>
                             <div class="question-layout-holder mb-15 bg-white panel-border rounded-sm p-25">
                                 <div class="question-layout-block">
                                     <div class="quiz-layout-edit-options">
