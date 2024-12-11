@@ -684,7 +684,7 @@ $rand_id = rand(999,99999);
                                         </div>
                                     </div>
                                     <div class="col-5 col-md-5">
-                                        <div class="lms-element-properties questions-bank-properties">
+                                        <div class="lms-element-properties">
                                             <div class="builder-right-sidebar-expand">
                                                 <button type="button" class="sidebar-expand-btn"><i class="fas fa-chevron-left"></i></button>
                                             </div>
@@ -899,6 +899,7 @@ $rand_id = rand(999,99999);
                                                                   class="form-control search-question-select2" data-placeholder="Search Question"></select>
                                                         </div>
                                                     </div>
+													
 
                                                     
 
@@ -1026,6 +1027,24 @@ $rand_id = rand(999,99999);
                                                             </label>
                                                         </div>
                                                     </div>
+													
+													<div class="col-lg-6 col-md-6 col-12">
+                                                        <div class="form-group custom-switches-stacked">
+                                                            <label class="custom-switch pl-0">
+                                                                <input type="hidden" name="is_shortlisted_field" value="disable">
+                                                                <input type="checkbox"
+                                                                           name="is_shortlisted"
+                                                                           id="is_shortlisted" value="1" {{ (isset( $questionObj->is_shortlisted ) && $questionObj->is_shortlisted
+                                                                    == '1') ?
+                                                                    'checked="checked"' : ''
+                                                                    }} class="custom-switch-input"/>
+                                                                    <span class="custom-switch-indicator"></span>
+                                                                    <label class="custom-switch-description mb-0 cursor-pointer"
+                                                                           for="is_shortlisted">Shortlist Question</label>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+													
 													
 													
 													<div class="col-lg-12 col-md-12 col-12">
@@ -1189,7 +1208,7 @@ $rand_id = rand(999,99999);
                                                              class="disable-div"
                                                              _data-parent="1"
                                                              _data-parent-col="0" style="display: block;">
-                                                            <div class="question-layout row">
+                                                            <div class="question-layout">
                                                                 <div class="question-layout-data"></div>
                                                             </div>
 

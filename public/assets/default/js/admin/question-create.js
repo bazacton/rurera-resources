@@ -225,6 +225,7 @@ function rureraform_save(_object, question_status) {
     var developer_review_required = ($('[name=developer_review_required]').prop('checked')) ? 1 : 0;
     var hide_question = ($('[name=hide_question]').prop('checked')) ? 1 : 0;
     var is_example_question = ($('[name=is_example_question]').prop('checked')) ? 1 : 0;
+    var is_shortlisted = ($('[name=is_shortlisted]').prop('checked')) ? 1 : 0;
     var glossary_ids = $("#glossary_ids").val();
 
     var new_glossaries = $(".new_glossaries")
@@ -278,6 +279,7 @@ function rureraform_save(_object, question_status) {
         "developer_review_required": developer_review_required,
         "hide_question": hide_question,
         "is_example_question": is_example_question,
+		"is_shortlisted": is_shortlisted,
         "action": "rureraform-form-save",
         "form-id": jQuery("#rureraform-id").val(),
         "form-options": rureraform_encode64(JSON.stringify(rureraform_form_options)),
