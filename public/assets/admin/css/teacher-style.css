@@ -1759,6 +1759,12 @@ Tailer Hub Style Start
 .hide-img {
     display: none;
 }
+.show-btn.show .hide-img {
+    display: block;
+}
+.show-btn.show .show-img {
+    display: none;
+}
 .edit-options-controls button {
     background-color: #fff;
     border: 0;
