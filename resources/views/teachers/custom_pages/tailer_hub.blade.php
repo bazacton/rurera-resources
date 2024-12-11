@@ -16,11 +16,11 @@
     <div class="row">
             <div class="col-12">
                 <div class="section-header">
-                    <h1>My library</h1>
+                    <h1>Tailer Hub</h1>
                     <div class="section-header-breadcrumb">
                         <div class="breadcrumb-item active"><a href="/admin/">Dashboard</a>
                         </div>
-                        <div class="breadcrumb-item">My library</div>
+                        <div class="breadcrumb-item">Tailer Hub</div>
                     </div>
                 </div>
             </div>
