@@ -1751,6 +1751,9 @@ Tailer Hub Style Start
     border-radius: 3px;
     padding: 0 10px;
 }
+.edit-options-controls .select-box img ~ select {
+    padding-left: 25px;
+}
 .edit-options-controls img {
     height: 15px;
     width: 15px;
