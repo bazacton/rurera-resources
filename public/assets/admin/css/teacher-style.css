@@ -1830,6 +1830,7 @@ Tailer Hub Style Start
     color: #1c274c;
 }
 .page-controls button {
+    background-color: inherit;
     border: 0;
     display: inline-flex;
     align-items: center;
@@ -1842,7 +1843,8 @@ Tailer Hub Style Start
     font-size: 16px;
 }
 .page-controls .publish-btn {
-    background-color: var(--publish);
+    border: 1px solid var(--publish);
+    color: var(--publish);
 }
 .page-controls .preview-btn {
     background-color: #6c757d;
