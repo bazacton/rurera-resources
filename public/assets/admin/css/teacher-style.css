@@ -1864,15 +1864,20 @@ Tailer Hub Style Start
     gap: 5px;
 }
 .section-header .setting-btn {
-    height: 22px;
-    width: 22px;
+    height: 30px;
+    width: 30px;
     border: 0;
     background-color: inherit;
     outline: none;
+    border-radius: 100%;
+}
+.section-header .setting-btn:hover {
+    background-color: #f2f2f2;
 }
 .section-header .setting-btn img {
-    max-width: 100%;
-    filter: invert(87%) sepia(5%) saturate(1601%) hue-rotate(192deg) brightness(101%) contrast(86%);
+    height: 20px;
+    width: 20px;
+    filter: invert(14%) sepia(68%) saturate(589%) hue-rotate(186deg) brightness(90%) contrast(95%);
 }
 /*************************************
 Tailer Hub Style End
