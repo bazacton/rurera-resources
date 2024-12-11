@@ -15,8 +15,8 @@
     <div class="section-body">
     <div class="row">
             <div class="col-12 col-md-9 col-lg-9">
-                <div class="d-flex align-items-center justify-content-between flex-wrap mb-30">
-                    <div class="section-header mb-0">
+                <div class="d-flex align-items-center justify-content-between flex-wrap mb-20">
+                    <div class="section-header mb-0 pb-0">
                         <h1>Tailer Hub</h1>
                         <div class="section-header-breadcrumb">
                             <div class="breadcrumb-item active"><a href="/admin/">Dashboard</a>
