@@ -1825,6 +1825,7 @@ Tailer Hub Style Start
     display: inline-flex;
     align-items: center;
     gap: 5px;
+    outline: none;
 }
 .page-controls button img {
     height: 18px;
