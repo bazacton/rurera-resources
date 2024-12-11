@@ -15,18 +15,20 @@
     <div class="section-body">
     <div class="row">
             <div class="col-12 col-md-9 col-lg-9">
-                <div class="section-header">
-                    <h1>Tailer Hub</h1>
-                    <div class="section-header-breadcrumb">
-                        <div class="breadcrumb-item active"><a href="/admin/">Dashboard</a>
+                <div class="d-flex align-items-center justify-content-between flex-wrap mb-30">
+                    <div class="section-header mb-0">
+                        <h1>Tailer Hub</h1>
+                        <div class="section-header-breadcrumb">
+                            <div class="breadcrumb-item active"><a href="/admin/">Dashboard</a>
+                            </div>
+                            <div class="breadcrumb-item">Tailer Hub</div>
                         </div>
-                        <div class="breadcrumb-item">Tailer Hub</div>
                     </div>
-                </div>
-                <div class="page-controls">
-                    <button type="button" class="setting-btn"><img src="/assets/default/svgs/settings.svg" alt=""> Settings</button>
-                    <button type="button" class="preview-btn"><img src="/assets/default/svgs/preview.svg" alt=""> Preview</button>
-                    <button type="button" class="publish-btn"><img src="/assets/default/svgs/publish.svg" alt=""> Publish</button>
+                    <div class="page-controls">
+                        <button type="button" class="setting-btn"><img src="/assets/default/svgs/settings.svg" alt=""> Settings</button>
+                        <button type="button" class="preview-btn"><img src="/assets/default/svgs/preview.svg" alt=""> Preview</button>
+                        <button type="button" class="publish-btn"><img src="/assets/default/svgs/publish.svg" alt=""> Publish</button>
+                    </div>
                 </div>
                 <div class="quiz-setup-listings">
                     <div class="row">
