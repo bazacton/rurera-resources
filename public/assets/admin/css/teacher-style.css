@@ -1895,11 +1895,11 @@ Tailer Hub Style Start
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
+    justify-content: space-between;
 }
 .rureraform-search-field .input-field {
     position: relative;
-    position: relative;
-    width: calc(100% - 180px);
+    width: calc(100% - 190px);
 }
 .rureraform-search-field input[type="text"] {
     width: 100%;
