@@ -1747,9 +1747,10 @@ Tailer Hub Style Start
 }
 .edit-options-controls .select-box select {
     border: 1px solid #ddd;
-    height: 30px;
+    height: 28px;
     border-radius: 3px;
     padding: 0 10px;
+    outline: none;
 }
 .edit-options-controls .select-box img ~ select {
     padding-left: 25px;
@@ -1761,8 +1762,8 @@ Tailer Hub Style Start
 .edit-options-controls button {
     background-color: #fff;
     border: 1px solid #ddd;
-    height: 30px;
-    min-width: 30px;
+    height: 28px;
+    min-width: 28px;
     border-radius: 3px;
     outline: none;
 }
