@@ -78,7 +78,7 @@
                             <span class="tab-detail">Preview assignment</span></a>
                     </li>
                 </ul>
-                <a href="javascript:;" class="col-2 col-md-2 col-lg-2 rurera-btn-grn rurera-confirm-dialog" data-title="Are you sure?" data-subtitle="You will not be able to edit the assignment after publishing." data-on_confirm="publish_assignment();">Publish</a>
+                <a href="javascript:;" class="col-2 col-md-2 col-lg-2 rurera-btn-grn rurera-confirm-dialog ml-auto" data-title="Are you sure?" data-subtitle="You will not be able to edit the assignment after publishing." data-on_confirm="publish_assignment();">Publish</a>
             </div>
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-12">
