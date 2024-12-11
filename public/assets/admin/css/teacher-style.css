@@ -1672,6 +1672,7 @@ body:has(.quiz-data-slide.active) {
     border: 0;
     height: auto;
     line-height: normal;
+    outline: none;
 }
 .prev-next-controls img {
     height: 24px;
