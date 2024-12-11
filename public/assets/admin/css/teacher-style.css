@@ -1762,6 +1762,12 @@ Tailer Hub Style Start
     height: auto;
     border-radius: 3px;
     outline: none;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+}
+.edit-options-controls button:hover {
+    background-color: #f2f2f2;
 }
 .edit-options-controls {
     display: flex;
