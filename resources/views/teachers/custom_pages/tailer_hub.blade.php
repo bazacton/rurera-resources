@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="mb-30 bg-white panel-border rounded-sm p-15">
-                    <h6 class="search-lable">Srarch question form quizizz library</h6>
+                    <h6 class="search-lable">Srarch question from quizizz library</h6>
                     <div class="rureraform-search-field">
                         <input type="text" placeholder="Sciency Science">
                         <button type="button"><i class="fas fa-search"></i> Search questions</button>
