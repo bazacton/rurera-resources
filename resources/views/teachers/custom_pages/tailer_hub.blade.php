@@ -26,7 +26,7 @@
                     </div>
                     <div class="page-controls">
                         <button type="button" class="setting-btn"><img src="/assets/default/svgs/settings.svg" alt=""> Settings</button>
-                        <button type="button" class="preview-btn"><img src="/assets/default/svgs/preview.svg" alt=""> Preview</button>
+                        <button type="button" class="preview-btn"><img src="/assets/default/svgs/eye-show.svg" alt=""> Preview</button>
                         <button type="button" class="publish-btn"><img src="/assets/default/svgs/publish.svg" alt=""> Publish</button>
                     </div>
                 </div>
