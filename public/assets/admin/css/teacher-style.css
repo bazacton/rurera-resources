@@ -1767,7 +1767,7 @@ Tailer Hub Style Start
 .edit-options-controls {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 4px;
 }
 .controls-heading {
     display: inline-flex;
