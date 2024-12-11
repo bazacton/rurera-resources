@@ -1846,6 +1846,9 @@ Tailer Hub Style Start
     border: 1px solid var(--publish);
     color: var(--publish);
 }
+.page-controls .publish-btn img {
+    filter: invert(68%) sepia(64%) saturate(308%) hue-rotate(51deg) brightness(95%) contrast(91%);
+}
 .page-controls .preview-btn {
     background-color: #6c757d;
 }
