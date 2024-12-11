@@ -61,37 +61,13 @@
                                         <div class="edit-options-left">
                                             <div class="edit-options-controls">
                                                 <button type="button" class="grid-btn"><img src="/assets/default/svgs/grid-btn.svg" alt=""></button>
-                                                <button type="button" class="poll-btn"><i>&#10003;</i> 1. poll</button>
-                                                <div class="select-box">
-                                                    <select>
-                                                        <option value="20 seconds">20 seconds</option>
-                                                        <option value="19 seconds">19 seconds</option>
-                                                        <option value="18 seconds">18 seconds</option>
-                                                        <option value="17 seconds">17 seconds</option>
-                                                    </select>
-                                                </div>
-                                                <div class="select-box">
-                                                    <select>
-                                                        <option value="Ungraded">Ungraded</option>
-                                                        <option value="Ungraded">Ungraded</option>
-                                                        <option value="Ungraded">Ungraded</option>
-                                                        <option value="Ungraded">Ungraded</option>
-                                                    </select>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                         <div class="edit-options-right">
                                             <div class="edit-options-controls">
-                                                <div class="select-box">
-                                                    <img src="/assets/default/svgs/stars-btn.svg" alt="">
-                                                    <select>
-                                                        <option value="All">All</option>
-                                                        <option value="All">All</option>
-                                                    </select>
-                                                </div>
                                                 <button type="button" class="copy-btn"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
                                                 <button type="button" class="tag-btn"><img src="/assets/default/svgs/tag-btn.svg" alt=""></button>
-                                                <button type="button" class="edit-btn"><img src="/assets/default/svgs/edit-btn.svg" alt="">Edit</button>
                                                 <button type="button" class="delete-btn"><img src="/assets/default/svgs/delete.svg" alt=""></button>
                                             </div>
                                         </div>
