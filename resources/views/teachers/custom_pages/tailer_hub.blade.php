@@ -29,6 +29,13 @@
                         <button type="button" class="publish-btn"><img src="/assets/default/svgs/publish.svg" alt=""> Publish</button>
                     </div>
                 </div>
+                <div class="rureraform-element mb-20 bg-white panel-border rounded-sm p-25">
+                    <h6 class="search-lable">Srarch question form quizizz library</h6>
+                    <div class="rureraform-search-field">
+                        <input type="text" placeholder="Sciency Science">
+                        <button type="button"><i class="fas fa-search"></i> Search questions</button>
+                    </div>
+                </div>
                 <div class="quiz-setup-listings">
                     <div class="row">
                         <div class="col-12 col-lg-12 col-md-12">
@@ -82,17 +89,6 @@
                                                         <div class="quiz-layout-edit-options">
                                                             
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="rureraform-col rureraform-col-12">
-                                                <div class="rureraform-element">
-                                                    <div class="question-label question_heading">
-                                                        <span>Srarch question form quizizz library</span>
-                                                    </div>
-                                                    <div class="rureraform-search-field">
-                                                        <input type="text" placeholder="Sciency Science">
-                                                        <button type="button"><i class="fas fa-search"></i> Search questions</button>
                                                     </div>
                                                 </div>
                                             </div>
