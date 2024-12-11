@@ -1807,11 +1807,8 @@ Tailer Hub Style Start
     padding: 5px 10px;
     border-radius: 8px;
 }
-.edit-options-controls .bs-tooltip-top .arrow {
-    bottom: 1px;
-}
 .edit-options-controls .bs-tooltip-top .arrow::before {
-    background-color: rgba(0,0,0,0.8);
+    border-top-color: rgba(0, 0, 0, 0.8);
 }
 /*************************************
 Tailer Hub Style End
