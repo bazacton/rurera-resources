@@ -65,7 +65,8 @@
                                         <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="Move down"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
                                         <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="Copy"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
                                         <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Trash"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
-                                        <button type="button" class="add-btn" data-toggle="tooltip" data-placement="top" title="Stars"><img src="/assets/default/svgs/stars-new.svg" alt=""></button>
+                                        <button type="button" class="crown-btn" data-toggle="tooltip" data-placement="top" title="Crown"><img src="/assets/default/svgs/crown-btn.svg" alt=""></button>
+                                        <button type="button" class="stars-btn" data-toggle="tooltip" data-placement="top" title="Stars"><img src="/assets/default/svgs/stars-new.svg" alt=""></button>
                                         <button type="button" class="add-btn" data-toggle="tooltip" data-placement="top" title="Add"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
                                         <div class="dropdown">
                                             <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
