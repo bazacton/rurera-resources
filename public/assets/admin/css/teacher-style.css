@@ -1881,6 +1881,33 @@ Tailer Hub Style Start
     width: 20px;
     filter: invert(14%) sepia(68%) saturate(589%) hue-rotate(186deg) brightness(90%) contrast(95%);
 }
+.rureraform-search-field {
+    position: relative;
+}
+.rureraform-search-field input[type="text"] {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 46px;
+    padding: 0 15px;
+    outline: none;
+}
+.rureraform-search-field button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    font-weight: bold;
+    color: #555;
+}
+.rureraform-search-field button i {
+    color: #999;
+    margin: 0 5px 0 0;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
