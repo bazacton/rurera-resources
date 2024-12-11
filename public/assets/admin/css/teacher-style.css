@@ -1785,6 +1785,7 @@ Tailer Hub Style Start
     color: #6c757d;
     line-height: normal;
     margin-left: 5px;
+    outline: none;
 }
 .edit-options-controls .poll-btn, .edit-options-controls .edit-btn {
     padding: 0 10px;
