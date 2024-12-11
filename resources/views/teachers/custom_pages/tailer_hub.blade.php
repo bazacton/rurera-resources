@@ -326,6 +326,11 @@
             container: $(this).closest('.edit-options-controls')
         });
     });
+    $(document).ready(function(){
+        $(".show-btn").click(function(){
+            $(".show-btn").toggleClass("show");
+        });
+    });
 </script>
 
 @endpush
