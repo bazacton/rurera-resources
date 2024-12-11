@@ -55,22 +55,22 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-9 col-md-12">
+                            <div class="quiz-layout-edit-options">
+                                <div class="controls-heading">
+                                    <h6>Question 1 -</h6> <button type="button">Add page title</button> 
+                                </div>
+                                <div class="edit-options-right">
+                                    <div class="edit-options-controls">
+                                        <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
+                                        <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="Move down"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
+                                        <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="Copy"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
+                                        <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Trash"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
+                                        <button type="button" class="add-btn" data-toggle="tooltip" data-placement="top" title="Add"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="question-layout-holder mb-15 bg-white panel-border rounded-sm p-25">
                                 <div class="question-layout-block">
-                                    <div class="quiz-layout-edit-options">
-                                        <div class="controls-heading">
-                                            <h6>Question 1 -</h6> <button type="button">Add page title</button> 
-                                        </div>
-                                        <div class="edit-options-right">
-                                            <div class="edit-options-controls">
-                                                <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
-                                                <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="Move down"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
-                                                <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="Copy"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
-                                                <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Trash"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
-                                                <button type="button" class="add-btn" data-toggle="tooltip" data-placement="top" title="Add"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <form class="question-fields" action="javascript:;" data-question_id="10180">
                                     <div class="left-content has-bg">
                                         <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
