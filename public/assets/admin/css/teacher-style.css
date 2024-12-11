@@ -1726,7 +1726,6 @@ Tailer Hub Style Start
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
     z-index: 1;
-    padding-right: 10px;
 }
 .edit-options-controls .select-box {
     position: relative;
@@ -1755,12 +1754,11 @@ Tailer Hub Style Start
 .edit-options-controls button {
     background-color: #fff;
     border: 0;
-    height: auto;
-    border-radius: 3px;
     outline: none;
     border-radius: 100%;
     height: 30px;
     width: 30px;
+    padding: 0;
 }
 .edit-options-controls button:hover {
     background-color: #f2f2f2;
