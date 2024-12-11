@@ -323,6 +323,12 @@
 @endsection
 
 @push('scripts_bottom')
-
+<script>
+    $('[data-toggle="tooltip"]').each(function () {
+        $(this).tooltip({
+            container: $(this).closest('.edit-options-controls')
+        });
+    });
+</script>
 
 @endpush
