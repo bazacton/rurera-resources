@@ -63,11 +63,11 @@
                                         </div>
                                         <div class="edit-options-right">
                                             <div class="edit-options-controls">
-                                                <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="bottom" title="Move up"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
-                                                <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="bottom" title="Move down"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
-                                                <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="bottom" title="Copy"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
-                                                <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="bottom" title="Trash"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
-                                                <button type="button" class="add-btn" data-toggle="tooltip" data-placement="bottom" title="Add"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
+                                                <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
+                                                <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="Move down"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
+                                                <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="Copy"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
+                                                <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Trash"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
+                                                <button type="button" class="add-btn" data-toggle="tooltip" data-placement="top" title="Add"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
                                             </div>
                                         </div>
                                     </div>
