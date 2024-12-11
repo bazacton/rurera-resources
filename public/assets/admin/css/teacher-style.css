@@ -1858,6 +1858,7 @@ Tailer Hub Style Start
 }
 .section-header .setting-btn img {
     max-width: 100%;
+    filter: invert(87%) sepia(5%) saturate(1601%) hue-rotate(192deg) brightness(101%) contrast(86%);
 }
 /*************************************
 Tailer Hub Style End
