@@ -141,7 +141,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="website" role="tabpanel" aria-labelledby="website-tab">...</div>
+                        <div class="tab-pane fade" id="website" role="tabpanel" aria-labelledby="website-tab">
+                            <h6>Generate questions from websites/online articles</h6>
+                            <div class="rureraform-search-field">
+                                <div class="input-field">
+                                    <i class="fas fa-link"></i>
+                                    <input type="text" placeholder="Enter any website URL (eg https://rurera.com/) ">
+                                </div>
+                            </div>
+                        </div>
                         <div class="tab-pane fade" id="utube" role="tabpanel" aria-labelledby="utube-tab">...</div>
                     </div>
                 </div>
