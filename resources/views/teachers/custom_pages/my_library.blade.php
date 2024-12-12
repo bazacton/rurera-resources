@@ -17,6 +17,9 @@
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Generate with AI</button>
             </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="import-tab" data-toggle="tab" data-target="#import-q" type="button" role="tab" aria-controls="import-q" aria-selected="false">Import Questions</button>
+            </li>
         </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -113,6 +116,11 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="import-q" role="tabpanel" aria-labelledby="import-tab">
+                <div class="copy-paste-questions">
+                    Import Questions
                 </div>
             </div>
         </div>
