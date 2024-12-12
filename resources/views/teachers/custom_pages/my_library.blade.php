@@ -60,7 +60,19 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                
+                <div class="mb-30 bg-white panel-border rounded-sm p-15">
+                    <h6 class="search-lable">Srarch question from library</h6>
+                    <div class="rureraform-search-field">
+                        <div class="input-field">
+                            <input type="text" placeholder="Search question..">
+                            <button type="button"><i class="fas fa-search"></i> Search questions</button>
+                        </div>
+                        <div class="search-option-btn">
+                            <span class="search-or-lable">Or</span>
+                            <button type="button"><i class="fas fa-plus"></i> Add question</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                 <div class="questions-inner-tabs">
@@ -256,19 +268,7 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="collection" role="tabpanel" aria-labelledby="collection-tab">
-                <div class="mb-30 bg-white panel-border rounded-sm p-15">
-                    <h6 class="search-lable">Srarch question from library</h6>
-                    <div class="rureraform-search-field">
-                        <div class="input-field">
-                            <input type="text" placeholder="Search question..">
-                            <button type="button"><i class="fas fa-search"></i> Search questions</button>
-                        </div>
-                        <div class="search-option-btn">
-                            <span class="search-or-lable">Or</span>
-                            <button type="button"><i class="fas fa-plus"></i> Add question</button>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
