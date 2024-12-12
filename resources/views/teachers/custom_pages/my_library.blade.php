@@ -230,7 +230,27 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="spreadsheet" role="tabpanel" aria-labelledby="spreadsheet-tab">
-                            Spreadsheet/CSV
+                            <h6>Bulk import questions using spreadsheet</h6>
+                            <div class="staff-picks-holder">
+                                <div class="upload-options">
+                                    <div class="field-box">
+                                        <input type="file" id="drag-drop">
+                                        <label for="drag-drop">
+                                            <img src="/assets/default/svgs/spreadsheet.svg" alt="">
+                                            <span>Drag and drop your spreadsheet</span>
+                                        </label>
+                                    </div>
+                                    <span class="field-separated">
+                                        <span>Or</span>
+                                    </span>
+                                    <div class="upload-controls">
+                                        <div class="field-box">
+                                            <input type="file" id="drag-drop">
+                                            <label for="drag-drop"><i class="fas fa-desktop"></i> Upload from device</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
