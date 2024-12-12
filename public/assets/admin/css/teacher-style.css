@@ -2189,6 +2189,23 @@ span.field-separated span:after {
     margin: 0 auto;
     filter: invert(41%) sepia(15%) saturate(4764%) hue-rotate(131deg) brightness(92%) contrast(101%);
 }
+.question_templates {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+.question_templates li {
+    width: 13.111%;
+    flex: 0 0 13.111%;
+}
+.question_templates li a {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
