@@ -216,7 +216,7 @@
                                     <div class="field-box">
                                         <input type="file" id="drag-drop">
                                         <label for="drag-drop">
-                                            <i class="fas fa-cloud-download-alt"></i>
+                                            <i class="fas fa-file-alt"></i>
                                             <span>Select a google form</span>
                                         </label>
                                     </div>
