@@ -1958,6 +1958,8 @@ Qustions AI Tabs Style Start
     border-top: 1px solid #ddd;
     border-radius: 0;
     outline: none;
+    font-size: 15px;
+    font-weight: 600;
 }
 .question-ai-tabs .nav-tabs .nav-item .nav-link.active {
     border-bottom-color: #fff;
