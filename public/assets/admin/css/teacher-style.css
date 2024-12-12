@@ -2115,7 +2115,7 @@ span.field-separated span:after {
 
 
 .questions-inner-tabs .tab-content {
-    padding: 0;
+    padding: 25px 0 0;
     border: 0;
 }
 .questions-inner-tabs .nav-tabs {
