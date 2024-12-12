@@ -31,7 +31,7 @@
                     </ul>
                     <span class="canvas-sub-title">Open ended responses</span>
                     <ul>
-                        <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-draw-polygon"></i></span> Draw</li>
+                        <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-pencil-alt"></i></span> Draw</li>
                         <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-meh-blank"></i></span> Open Ended</li>
                         <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-meh-blank"></i></span> Video Response</li>
                         <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-meh-blank"></i></span> Audio Response</li>
