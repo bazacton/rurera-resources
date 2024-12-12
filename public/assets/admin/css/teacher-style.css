@@ -2073,7 +2073,7 @@ span.field-separated span:after {
     color: #cccccc;
 }
 .pasted-question > ul li {
-    font-weight: bold;
+    font-weight: 500;
     line-height: normal;
 }
 .pasted-question > ul ul {
