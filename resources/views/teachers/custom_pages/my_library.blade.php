@@ -45,9 +45,11 @@
                         <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Hotspot</li>
                         <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Labeling</li>
                         <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Categorize</li>
-                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Mathematics</li>
-                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Math Response</li>
-                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Graphing</li>
+                    </ul>
+                    <span>Mathematics</span>
+                    <ul>
+                        <li><span class="icon-box" style="background-color: #e27a16;"><i class="fas fa-meh-blank"></i></span> Math Response</li>
+                        <li><span class="icon-box" style="background-color: #e27a16;"><i class="fas fa-meh-blank"></i></span> Graphing</li>
                     </ul>
                 </div>
             </div>
