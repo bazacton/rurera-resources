@@ -155,7 +155,7 @@
                             <div class="bg-white panel-border rounded-sm p-15">
                                 <div class="rureraform-search-field">
                                     <div class="input-field youtube-input-field w-100">
-                                        <i class="fas fa-youtube"></i>
+                                        <img src="/assets/default/svgs/youtube.svg" alt="">
                                         <input type="text" placeholder="Search question..">
                                         <button type="button"><i class="fas fa-search"></i> Browse YouTube</button>
                                     </div>
