@@ -57,35 +57,56 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <h6>Generate question from study materials (presentations/documents)</h6>
-                <div class="staff-picks-holder">
-                    <div class="upload-options">
-                        <div class="field-box">
-                            <input type="file" id="drag-drop">
-                            <label for="drag-drop">
-                                <i class="fas fa-cloud-download-alt"></i>
-                                <span>Drag and drop a study material</span>
-                            </label>
+                <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="document-tab" data-toggle="tab" data-target="#document" type="button" role="tab" aria-controls="document" aria-selected="true">Document</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="prompt-tab" data-toggle="tab" data-target="#prompt" type="button" role="tab" aria-controls="prompt" aria-selected="false">Text/Prompt</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="website-tab" data-toggle="tab" data-target="#website" type="button" role="tab" aria-controls="website" aria-selected="false">Website</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="utube-tab" data-toggle="tab" data-target="#utube" type="button" role="tab" aria-controls="utube" aria-selected="false">YouTube</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent2">
+                    <div class="tab-pane fade show active" id="document" role="tabpanel" aria-labelledby="document-tab">
+                        <h6>Generate question from study materials (presentations/documents)</h6>
+                        <div class="staff-picks-holder">
+                            <div class="upload-options">
+                                <div class="field-box">
+                                    <input type="file" id="drag-drop">
+                                    <label for="drag-drop">
+                                        <i class="fas fa-cloud-download-alt"></i>
+                                        <span>Drag and drop a study material</span>
+                                    </label>
+                                </div>
+                                <span class="field-separated">
+                                    <span>Or</span>
+                                </span>
+                                <div class="upload-controls">
+                                    <div class="field-box">
+                                        <input type="file" id="drag-drop">
+                                        <label for="drag-drop"><i class="fas fa-desktop"></i> Upload from device</label>
+                                    </div>
+                                    <div class="field-box">
+                                        <input type="file" id="drag-drop">
+                                        <label for="drag-drop"><i class="fas fa-desktop"></i> Import from device</label>
+                                    </div>
+                                    <div class="field-box">
+                                        <input type="file" id="drag-drop">
+                                        <label for="drag-drop"><i class="fas fa-camera"></i> Take a picture</label>
+                                    </div>
+                                </div>
+                                <p>Supported formates: PDF, PPT, PPTX, DOC</p>
+                            </div>
                         </div>
-                        <span class="field-separated">
-                            <span>Or</span>
-                        </span>
-                        <div class="upload-controls">
-                            <div class="field-box">
-                                <input type="file" id="drag-drop">
-                                <label for="drag-drop"><i class="fas fa-desktop"></i> Upload from device</label>
-                            </div>
-                            <div class="field-box">
-                                <input type="file" id="drag-drop">
-                                <label for="drag-drop"><i class="fas fa-desktop"></i> Import from device</label>
-                            </div>
-                            <div class="field-box">
-                                <input type="file" id="drag-drop">
-                                <label for="drag-drop"><i class="fas fa-camera"></i> Take a picture</label>
-                            </div>
-                        </div>
-                        <p>Supported formates: PDF, PPT, PPTX, DOC</p>
                     </div>
+                    <div class="tab-pane fade" id="prompt" role="tabpanel" aria-labelledby="prompt-tab">...</div>
+                    <div class="tab-pane fade" id="website" role="tabpanel" aria-labelledby="website-tab">...</div>
+                    <div class="tab-pane fade" id="utube" role="tabpanel" aria-labelledby="utube-tab">...</div>
                 </div>
             </div>
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
