@@ -1977,6 +1977,30 @@ Qustions AI Tabs Style Start
 .question-ai-tabs .tab-content {
     padding: 25px 0 0;
 }
+.staff-picks-holder {
+    border: 1px dashed #ddd;
+    padding: 25px;
+    text-align: center;
+}
+.upload-options input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.upload-options label {
+    display: inline-flex;
+    flex-direction: column;
+}
+.field-box span {
+    color: #333;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.upload-options label i {
+    color: #ddd;
+    font-size: 24px;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
