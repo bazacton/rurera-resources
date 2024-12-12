@@ -2171,6 +2171,17 @@ span.field-separated span:after {
 .rureraform-search-field .youtube-input-field input[type="text"] {
     font-size: 16px;
 }
+.beta-lable {
+    background-color: #8854c0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 20px;
+    margin: 0 0 0 5px;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
