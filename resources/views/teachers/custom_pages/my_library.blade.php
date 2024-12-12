@@ -180,7 +180,34 @@
                     </ul>
                     <div class="tab-content" id="myTabContent3">
                         <div class="tab-pane fade show active" id="paste-q" role="tabpanel" aria-labelledby="paste-q-tab">
-                            Paste Questions
+                            <h6>Copy and paste questions text from anywhere to create a quiz from it</h6>
+                            <div class="copy-paste-questions"> 
+                                <span class="text-lable">Paste your content</span>
+                                <div class="pasted-question">
+                                    <ul>
+                                        <li>
+                                            Question 1
+                                            <ul>
+                                                <li>Option 1</li>
+                                                <li>Option 2</li>
+                                                <li>Option 3</li>
+                                                <li>Option 4 (Correct)</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            Question 2
+                                            <ul>
+                                                <li>Option 1</li>
+                                                <li>Option 2</li>
+                                                <li>Option 3</li>
+                                                <li>Option 4 (Correct)</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="google-form" role="tabpanel" aria-labelledby="google-form-tab">
                             Google Form
