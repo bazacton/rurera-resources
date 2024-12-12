@@ -60,6 +60,9 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                 <div class="questions-inner-tabs">
                     <ul class="nav nav-tabs" id="myTab2" role="tablist">
                         <li class="nav-item" role="presentation">
@@ -142,9 +145,6 @@
                         <div class="tab-pane fade" id="utube" role="tabpanel" aria-labelledby="utube-tab">...</div>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                
             </div>
             <div class="tab-pane fade" id="import-q" role="tabpanel" aria-labelledby="import-tab">
                 <div class="copy-paste-questions">
