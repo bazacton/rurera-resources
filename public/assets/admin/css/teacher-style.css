@@ -2059,6 +2059,28 @@ span.field-separated span:after {
     margin-right: 10px;
     color: #fff;
 }
+
+
+.copy-paste-questions .text-lable {
+    display: block;
+    margin: 0 0 10px;
+    font-weight: bold;
+    line-height: normal;
+}
+.pasted-question > ul {
+    margin: 0 0 15px;
+}
+.pasted-question > ul ul {
+    counter-reset: listStyle;
+}
+.pasted-question > ul ul li {
+    margin-left: 1em;
+    counter-increment: listStyle;
+}
+.pasted-question > ul ul li::before {
+    margin-right: 1em;
+    content: counter(listStyle, lower-alpha);
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
