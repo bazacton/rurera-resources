@@ -106,8 +106,8 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="prompt" role="tabpanel" aria-labelledby="prompt-tab">
-                            <div class="copy-paste-questions">
-                                <h6>Copy and paste questions text from anywhere to create a quiz from it</h6>
+                            <h6>Copy and paste questions text from anywhere to create a quiz from it</h6>
+                            <div class="copy-paste-questions"> 
                                 <span class="text-lable">Paste your content</span>
                                 <div class="pasted-question">
                                     <ul>
