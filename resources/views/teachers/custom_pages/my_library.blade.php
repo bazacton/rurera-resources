@@ -23,31 +23,31 @@
                 <h6>Or select a question type to add question</h6>
                 <div class="canvas-list">
                     <ul>
-                        <li><span class="icon-box"><i class="fas fa-check"></i></span> Multiple Choice</li>
-                        <li><span class="icon-box"><i class="fas fa-meh-blank"></i></span> Fill in the Blank</li>
+                        <li><span class="icon-box" style="background-color: #8854bf;"><i class="fas fa-check"></i></span> Multiple Choice</li>
+                        <li><span class="icon-box" style="background-color: #8854bf;"><i class="fas fa-meh-blank"></i></span> Fill in the Blank</li>
                     </ul>
                     <span class="canvas-sub-title">Open ended responses</span>
                     <ul>
-                        <li>Draw</li>
-                        <li>Open Ended</li>
-                        <li>Video Response</li>
-                        <li>Audio Response</li>
-                        <li>Poll</li>
-                        <li>Word Cloud</li>
+                        <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-meh-blank"></i></span> Draw</li>
+                        <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-meh-blank"></i></span> Open Ended</li>
+                        <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-meh-blank"></i></span> Video Response</li>
+                        <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-meh-blank"></i></span> Audio Response</li>
+                        <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-meh-blank"></i></span> Poll</li>
+                        <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-meh-blank"></i></span> Word Cloud</li>
                     </ul>
                     
                     <span>Interactive/Higher-order thinking</span>
                     <ul>
-                        <li>Match</li>
-                        <li>Reorder</li>
-                        <li>Drag and Drop</li>
-                        <li>Drop Down</li>
-                        <li>Hotspot</li>
-                        <li>Labeling</li>
-                        <li>Categorize</li>
-                        <li>Mathematics</li>
-                        <li>Math Response</li>
-                        <li>Graphing</li>
+                        <li<span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> >Match</li>
+                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Reorder</li>
+                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Drag and Drop</li>
+                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Drop Down</li>
+                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Hotspot</li>
+                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Labeling</li>
+                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Categorize</li>
+                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Mathematics</li>
+                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Math Response</li>
+                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Graphing</li>
                     </ul>
                 </div>
             </div>
