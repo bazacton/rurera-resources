@@ -75,7 +75,36 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="copy-paste-questions">
+                    <h6>Copy and paste questions text from anywhere to create a quiz from it</h6>
+                    <span class="text-lable">Paste your content</span>
+                    <div class="pasted-question">
+                        <ul>
+                            <li>
+                                Question 1
+                                <ul>
+                                    <li>Option 1</li>
+                                    <li>Option 2</li>
+                                    <li>Option 3</li>
+                                    <li>Option 4 (Correct)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Question 2
+                                <ul>
+                                    <li>Option 1</li>
+                                    <li>Option 2</li>
+                                    <li>Option 3</li>
+                                    <li>Option 4 (Correct)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="section-body">
