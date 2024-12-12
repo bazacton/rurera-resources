@@ -68,15 +68,15 @@
                         <div class="upload-controls">
                             <div class="field-box">
                                 <input type="file" id="drag-drop">
-                                <label for="drag-drop">Upload from device</label>
+                                <label for="drag-drop"><i class="fas fa-desktop"></i> Upload from device</label>
                             </div>
                             <div class="field-box">
                                 <input type="file" id="drag-drop">
-                                <label for="drag-drop">Import from device</label>
+                                <label for="drag-drop"><i class="fas fa-desktop"></i> Import from device</label>
                             </div>
                             <div class="field-box">
                                 <input type="file" id="drag-drop">
-                                <label for="drag-drop">Take a picture</label>
+                                <label for="drag-drop"><i class="fas fa-camera"></i> Take a picture</label>
                             </div>
                         </div>
                         <p>Supported formates: PDF, PPT, PPTX, DOC</p>

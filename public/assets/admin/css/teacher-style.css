@@ -2047,7 +2047,17 @@ span.field-separated span:after {
     border-radius: 5px;
     font-weight: bold;
     font-size: 16px;
-    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+}
+.upload-options p {
+    margin: 0;
+}
+.upload-controls label i {
+    font-size: 14px;
+    vertical-align: middle;
+    margin-right: 10px;
+    color: #fff;
 }
 /*************************************
 Qustions AI Tabs Style End
