@@ -2126,7 +2126,7 @@ span.field-separated span:after {
     width: 25%;
 }
 .question-ai-tabs .questions-inner-tabs .nav-tabs .nav-link {
-    border: 0;
+    border-color: transparent;
     width: 100%;
     text-align: center;
 }
