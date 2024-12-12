@@ -20,6 +20,9 @@
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="import-tab" data-toggle="tab" data-target="#import-q" type="button" role="tab" aria-controls="import-q" aria-selected="false">Import Questions</button>
             </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="collection-tab" data-toggle="tab" data-target="#collection" type="button" role="tab" aria-controls="collection" aria-selected="false">My Collection</button>
+            </li>
         </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -141,19 +144,7 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                <div class="mb-30 bg-white panel-border rounded-sm p-15">
-                    <h6 class="search-lable">Srarch question from library</h6>
-                    <div class="rureraform-search-field">
-                        <div class="input-field">
-                            <input type="text" placeholder="Search question..">
-                            <button type="button"><i class="fas fa-search"></i> Search questions</button>
-                        </div>
-                        <div class="search-option-btn">
-                            <span class="search-or-lable">Or</span>
-                            <button type="button"><i class="fas fa-plus"></i> Add question</button>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <div class="tab-pane fade" id="import-q" role="tabpanel" aria-labelledby="import-tab">
                 <div class="copy-paste-questions">
@@ -182,6 +173,21 @@
                                 </ul>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="collection" role="tabpanel" aria-labelledby="collection-tab">
+                <div class="mb-30 bg-white panel-border rounded-sm p-15">
+                    <h6 class="search-lable">Srarch question from library</h6>
+                    <div class="rureraform-search-field">
+                        <div class="input-field">
+                            <input type="text" placeholder="Search question..">
+                            <button type="button"><i class="fas fa-search"></i> Search questions</button>
+                        </div>
+                        <div class="search-option-btn">
+                            <span class="search-or-lable">Or</span>
+                            <button type="button"><i class="fas fa-plus"></i> Add question</button>
+                        </div>
                     </div>
                 </div>
             </div>
