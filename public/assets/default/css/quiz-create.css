@@ -1071,7 +1071,8 @@ scrollbar-gutter: stable both-edges;
 .question-layout.row {
     align-items: center !important;
 }
-.question-layout.row:has(.rureraform-col .image-field) {
+.question-layout.row:has(.rureraform-col .image-field),
+.question-layout.row.align-items-start {
     align-items: flex-start !important;
 }
 
