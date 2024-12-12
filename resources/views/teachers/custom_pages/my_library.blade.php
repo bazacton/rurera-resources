@@ -27,11 +27,11 @@
                 <div class="canvas-list">
                     <ul>
                         <li><span class="icon-box" style="background-color: #8854bf;"><i class="fas fa-check"></i></span> Multiple Choice</li>
-                        <li><span class="icon-box" style="background-color: #8854bf;"><i class="fas fa-meh-blank"></i></span> Fill in the Blank</li>
+                        <li><span class="icon-box" style="background-color: #8854bf;"><i class="fas fa-fill-drip"></i></span> Fill in the Blank</li>
                     </ul>
                     <span class="canvas-sub-title">Open ended responses</span>
                     <ul>
-                        <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-meh-blank"></i></span> Draw</li>
+                        <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-draw-polygon"></i></span> Draw</li>
                         <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-meh-blank"></i></span> Open Ended</li>
                         <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-meh-blank"></i></span> Video Response</li>
                         <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-meh-blank"></i></span> Audio Response</li>
