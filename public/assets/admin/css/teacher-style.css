@@ -2121,9 +2121,10 @@ span.field-separated span:after {
 .questions-inner-tabs .nav-tabs {
     width: 100%;
     border: 1px solid #ddd;
+    flex-wrap: nowrap;
 }
 .questions-inner-tabs .nav-tabs .nav-item {
-    width: 25%;
+    width: 100%;
 }
 .question-ai-tabs .questions-inner-tabs .nav-tabs .nav-link {
     border-color: transparent;
