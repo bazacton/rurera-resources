@@ -268,7 +268,66 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="collection" role="tabpanel" aria-labelledby="collection-tab">
-                
+                <div class="my-collections">
+                    <ul class="question_templates">
+                        <li data-type="question_templates" data-option="multichoice_template" data-elements="question_label_multichoice_template,paragraph_multichoice_template,radio">
+                            <a href="#" data-title="Questions Templates">
+                            <img src="/store/1/tool-images/d1.png" alt=""> Multiple Choice </a>
+                        </li>
+                        <li data-type="question_templates" data-option="multiresponse_template" data-elements="question_label_multichoice_template,paragraph_multichoice_template,checkbox">
+                            <a href="#" data-title="Questions Templates">
+                            <img src="/store/1/tool-images/d2.png" alt=""> Multiple Response </a>
+                        </li>
+                        <li data-type="question_templates" data-option="true_false_template" data-elements="question_label_true_false,question_label_paragraph,truefalse_quiz">
+                            <a href="#" data-title="Questions Templates">
+                            <img src="/store/1/tool-images/d3.png" alt=""> True/False </a>
+                        </li>
+                        <li data-type="question_templates" data-option="short_answer_template" data-elements="question_label">
+                            <a href="#" data-title="Questions Templates">
+                            <img src="/store/1/tool-images/d4.png" alt=""> Short Answer </a>
+                        </li>
+                        <li data-type="question_templates" data-option="numeric_template" data-elements="question_label">
+                            <a href="#" data-title="Questions Templates">
+                            <img src="/store/1/tool-images/d5.png" alt=""> Numeric </a>
+                        </li>
+                        <li data-type="question_templates" data-option="sequence_template" data-elements="question_label_sequence_template,question_label_paragraph,sortable_quiz">
+                            <a href="#" data-title="Questions Templates">
+                            <img src="/store/1/tool-images/d6.png" alt=""> Sequence </a>
+                        </li>
+                        <li data-type="question_templates" data-option="matching_template" data-elements="question_label_matching_template,match_quiz">
+                            <a href="#" data-title="Questions Templates">
+                            <img src="/store/1/tool-images/d7.png" alt=""> Matching </a>
+                        </li>
+                        <li data-type="question_templates" data-option="fill_blanks_template" data-elements="question_label">
+                            <a href="#" data-title="Questions Templates">
+                            <img src="/store/1/tool-images/d8.png" alt=""> Fill in the Blanks </a>
+                        </li>
+                        <li data-type="question_templates" data-option="select_template" data-elements="question_label_select_template, html_select_template">
+                            <a href="#" data-title="Questions Templates">
+                            <img src="/store/1/tool-images/d9.png" alt=""> Select from Lists </a>
+                        </li>
+                        <li data-type="question_templates" data-option="drag_word_template" data-elements="question_label">
+                            <a href="#" data-title="Questions Templates">
+                            <img src="/store/1/tool-images/d10.png" alt=""> Drag the Words </a>
+                        </li>
+                        <li data-type="question_templates" data-option="hotspot_template" data-elements="question_label">
+                            <a href="#" data-title="Questions Templates">
+                            <img src="/store/1/tool-images/d11.png" alt=""> Hotspot </a>
+                        </li>
+                        <li data-type="question_templates" data-option="drag_drop_template" data-elements="question_label,draggable_question">
+                            <a href="#" data-title="Questions Templates">
+                            <img src="/store/1/tool-images/d12.png" alt=""> Drag and Drop </a>
+                        </li>
+                        <li data-type="question_templates" data-option="likert_template" data-elements="question_label">
+                            <a href="#" data-title="Questions Templates">
+                            <img src="/store/1/tool-images/d13.png" alt=""> Likert Scale </a>
+                        </li>
+                        <li data-type="question_templates" data-option="essay_template" data-elements="question_label">
+                            <a href="#" data-title="Questions Templates">
+                            <img src="/store/1/tool-images/d14.png" alt=""> Essay </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
