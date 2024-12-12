@@ -2157,6 +2157,17 @@ span.field-separated span:after {
 .rureraform-search-field .input-field.web-input-field {
     width: 100%;
 }
+.youtube-input-field img {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 28px;
+    width: 28px;
+}
+.rureraform-search-field img ~ input[type="text"] {
+    padding-left: 50px;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
