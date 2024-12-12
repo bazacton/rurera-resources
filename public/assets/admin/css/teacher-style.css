@@ -2004,7 +2004,7 @@ Qustions AI Tabs Style Start
 span.field-separated {
     width: 250px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 15px;
     position: relative;
     overflow: hidden;
 }
@@ -2025,6 +2025,23 @@ span.field-separated span:before, span.field-separated span:after {
 span.field-separated span:after {
     left: auto;
     right: 100%;
+}
+.upload-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 0 15px;
+}
+.upload-controls label {
+    margin: 0;
+    padding: 8px 15px;
+    background-color: var(--blue);
+    color: #fff;
+    line-height: normal;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
 }
 /*************************************
 Qustions AI Tabs Style End
