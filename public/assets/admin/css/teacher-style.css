@@ -2074,11 +2074,11 @@ span.field-separated span:after {
     counter-reset: listStyle;
 }
 .pasted-question > ul ul li {
-    margin-left: 1em;
+    margin-left: 5px;
     counter-increment: listStyle;
 }
 .pasted-question > ul ul li::before {
-    margin-right: 1em;
+    margin-right: 5px;
     content: counter(listStyle, lower-alpha);
 }
 /*************************************
