@@ -2127,10 +2127,13 @@ span.field-separated span:after {
 }
 .question-ai-tabs .questions-inner-tabs .nav-tabs .nav-link {
     border-color: transparent;
+    border-bottom: 3px solid transparent;
     width: 100%;
     text-align: center;
 }
-
+.question-ai-tabs .questions-inner-tabs .nav-tabs .nav-link.active {
+    border-bottom-color: var(--blue);
+}
 .question-ai-tabs .questions-inner-tabs .nav-tabs .nav-item:first-child .nav-link {
     border-left: 0;
 }
