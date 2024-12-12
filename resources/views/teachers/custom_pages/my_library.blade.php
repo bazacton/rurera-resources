@@ -23,8 +23,8 @@
                 <h6>Or select a question type to add question</h6>
                 <div class="canvas-list">
                     <ul>
-                        <li>Multiple Choice</li>
-                        <li>Fill in the Blank</li>
+                        <li><span class="icon-box"><i class="fas fa-check"></i></span> Multiple Choice</li>
+                        <li><span class="icon-box"><i class="fas fa-meh-blank"></i></span> Fill in the Blank</li>
                     </ul>
                     <span class="canvas-sub-title">Open ended responses</span>
                     <ul>
