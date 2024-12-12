@@ -150,7 +150,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="utube" role="tabpanel" aria-labelledby="utube-tab">...</div>
+                        <div class="tab-pane fade" id="utube" role="tabpanel" aria-labelledby="utube-tab">
+                            <h6 class="search-lable">Find or create an Interactive Video from YouTube</h6>
+                            <div class="bg-white panel-border rounded-sm p-15">
+                                <div class="rureraform-search-field">
+                                    <div class="input-field youtube-input-field w-100">
+                                        <i class="fas fa-youtube"></i>
+                                        <input type="text" placeholder="Search question..">
+                                        <button type="button"><i class="fas fa-search"></i> Browse YouTube</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
