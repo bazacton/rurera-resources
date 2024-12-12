@@ -151,7 +151,7 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="utube" role="tabpanel" aria-labelledby="utube-tab">
-                            <h6 class="search-lable">Find or create an Interactive Video from YouTube</h6>
+                            <h6 class="search-lable">Find or create an Interactive Video from YouTube <span class="beta-lable">Beta</span></h6>
                             <div class="bg-white panel-border rounded-sm p-15">
                                 <div class="rureraform-search-field">
                                     <div class="input-field youtube-input-field w-100">
