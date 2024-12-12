@@ -20,6 +20,7 @@
         </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <h6>Or select a question type to add question</h6>
                 <div class="canvas-list">
                     <ul>
                         <li>Multiple Choice</li>
