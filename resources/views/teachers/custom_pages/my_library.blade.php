@@ -63,8 +63,8 @@
                         <div class="field-box">
                             <input type="file" id="drag-drop">
                             <label for="drag-drop">
-                                <i class="fas fa-cloud"></i>
-                                <span>drag and drop a study material</span>
+                                <i class="fas fa-cloud-download-alt"></i>
+                                <span>Drag and drop a study material</span>
                             </label>
                         </div>
                         <span class="field-separated">
