@@ -52,12 +52,19 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <h6>Generate question from study materials (presentations/documents)</h6>
                 <div class="staff-picks-holder">
                     <div class="upload-options">
                         <div class="field-box">
                             <input type="file" id="drag-drop">
-                            <label for="drag-drop">drag and drop a study material</label>
+                            <label for="drag-drop">
+                                <i class="fas fa-cloud"></i>
+                                <span>drag and drop a study material</span>
+                            </label>
                         </div>
+                        <span class="field-separated">
+                            <span>Or</span>
+                        </span>
                         <div class="upload-controls">
                             <div class="field-box">
                                 <input type="file" id="drag-drop">
