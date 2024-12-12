@@ -138,6 +138,8 @@
 									<a href="javascript:;" class="copyable-text">[TOPIC_PART]</a> 
 									<a href="javascript:;" class="copyable-text">[TOPIC_PART_DESCRIPTION]</a> 
 									<a href="javascript:;" class="copyable-text">[SUBJECT]</a>
+									<a href="javascript:;" class="copyable-text">[SUB_CHAPTER_TITLE]</a>
+									
 									</span>
 									<div class="form-group custom-switches-stacked">
 										<label>Prompt</label>
