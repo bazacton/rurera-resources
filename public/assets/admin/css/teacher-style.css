@@ -2182,6 +2182,13 @@ span.field-separated span:after {
     border-radius: 20px;
     margin: 0 0 0 5px;
 }
+.upload-options label img {
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin: 0 auto;
+    filter: invert(41%) sepia(15%) saturate(4764%) hue-rotate(131deg) brightness(92%) contrast(101%);
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
