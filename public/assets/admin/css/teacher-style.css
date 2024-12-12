@@ -1995,7 +1995,8 @@ Qustions AI Tabs Style Start
     font-weight: 600;
 }
 .question-ai-tabs .tab-content {
-    padding: 25px 0 0;
+    padding: 25px 25px 0;
+    border: 1px solid #ddd;
 }
 .staff-picks-holder {
     border: 1px dashed #ddd;
