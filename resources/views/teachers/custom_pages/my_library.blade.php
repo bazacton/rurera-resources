@@ -9,13 +9,13 @@
     <div class="question-ai-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Blank Canvas</button>
+                <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Blank Canvas</button>
             </li>
             <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Staff picks</button>
+                <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Staff picks</button>
             </li>
             <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Generate with AI</button>
+                <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Generate with AI</button>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -50,7 +50,31 @@
                     </ul>
                 </div>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="staff-picks-holder">
+                    <div class="upload-options">
+                        <div class="field-box">
+                            <input type="file" id="drag-drop">
+                            <label for="drag-drop">drag and drop a study material</label>
+                        </div>
+                        <div class="upload-controls">
+                            <div class="field-box">
+                                <input type="file" id="drag-drop">
+                                <label for="drag-drop">Upload from device</label>
+                            </div>
+                            <div class="field-box">
+                                <input type="file" id="drag-drop">
+                                <label for="drag-drop">Import from device</label>
+                            </div>
+                            <div class="field-box">
+                                <input type="file" id="drag-drop">
+                                <label for="drag-drop">Take a picture</label>
+                            </div>
+                        </div>
+                        <p>Supported formates: PDF, PPT, PPTX, DOC</p>
+                    </div>
+                </div>
+            </div>
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
         </div>
     </div>
