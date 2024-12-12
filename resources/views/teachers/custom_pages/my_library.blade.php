@@ -43,7 +43,7 @@
                     <ul>
                         <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Match</li>
                         <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Reorder</li>
-                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Drag and Drop</li>
+                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-hand-paper"></i></span> Drag and Drop</li>
                         <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Drop Down</li>
                         <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Hotspot</li>
                         <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Labeling</li>
