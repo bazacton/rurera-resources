@@ -2168,6 +2168,9 @@ span.field-separated span:after {
 .rureraform-search-field img ~ input[type="text"] {
     padding-left: 50px;
 }
+.rureraform-search-field .youtube-input-field input[type="text"] {
+    font-size: 16px;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
