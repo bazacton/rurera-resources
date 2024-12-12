@@ -147,32 +147,28 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="import-q" role="tabpanel" aria-labelledby="import-tab">
-                <div class="copy-paste-questions">
-                    <h6>Copy and paste questions text from anywhere to create a quiz from it</h6>
-                    <span class="text-lable">Paste your content</span>
-                    <div class="pasted-question">
-                        <ul>
-                            <li>
-                                Question 1
-                                <ul>
-                                    <li>Option 1</li>
-                                    <li>Option 2</li>
-                                    <li>Option 3</li>
-                                    <li>Option 4 (Correct)</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                Question 2
-                                <ul>
-                                    <li>Option 1</li>
-                                    <li>Option 2</li>
-                                    <li>Option 3</li>
-                                    <li>Option 4 (Correct)</li>
-                                </ul>
-                            </li>
-                        </ul>
+                <div class="questions-inner-tabs">
+                    <ul class="nav nav-tabs" id="myTab3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="paste-q-tab" data-toggle="tab" data-target="#paste-q" type="button" role="tab" aria-controls="paste-q" aria-selected="true">Paste Questions</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="google-form-tab" data-toggle="tab" data-target="#google-form" type="button" role="tab" aria-controls="google-form" aria-selected="false">Google Form</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="spreadsheet-tab" data-toggle="tab" data-target="#spreadsheet" type="button" role="tab" aria-controls="spreadsheet" aria-selected="false">Spreadsheet/CSV</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent3">
+                        <div class="tab-pane fade show active" id="paste-q" role="tabpanel" aria-labelledby="paste-q-tab">
+                            Paste Questions
+                        </div>
+                        <div class="tab-pane fade" id="google-form" role="tabpanel" aria-labelledby="google-form-tab">
+                            Google Form
+                        </div>
+                        <div class="tab-pane fade" id="spreadsheet" role="tabpanel" aria-labelledby="spreadsheet-tab">
+                            Spreadsheet/CSV
+                        </div>
                     </div>
                 </div>
             </div>
