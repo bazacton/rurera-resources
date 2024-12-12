@@ -1961,6 +1961,7 @@ Qustions AI Tabs Style Start
 }
 .question-ai-tabs .nav-tabs .nav-item .nav-link.active {
     border-bottom-color: #fff;
+    color: var(--blue);
 }
 .question-ai-tabs .nav-tabs .nav-item:first-child .nav-link {
     border-left: 1px solid #ddd;
