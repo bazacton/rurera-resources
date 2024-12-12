@@ -1943,3 +1943,40 @@ Tailer Hub Style Start
 /*************************************
 Tailer Hub Style End
 **************************************/
+
+/*************************************
+Qustions AI Tabs Style Start
+**************************************/
+.question-ai-tabs h6 {
+    color: #333;
+    margin: 0 0 25px;
+}
+.canvas-list ul {
+    margin: 0 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 0;
+}
+.canvas-list .icon-box {
+    height: 30px;
+    width: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    color: #fff;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-weight: 400;
+}
+.canvas-list li {
+    width: 50%;
+    color: #333;
+    font-weight: 600;
+}
+.question-ai-tabs .tab-content {
+    padding: 25px 0 0;
+}
+/*************************************
+Qustions AI Tabs Style End
+**************************************/
