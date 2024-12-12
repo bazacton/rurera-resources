@@ -210,6 +210,7 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="google-form" role="tabpanel" aria-labelledby="google-form-tab">
+                            <h6>Import Google Form as a quiz</h6>
                             <div class="staff-picks-holder">
                                 <div class="upload-options">
                                     <div class="field-box">
