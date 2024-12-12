@@ -210,7 +210,23 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="google-form" role="tabpanel" aria-labelledby="google-form-tab">
-                            Google Form
+                            <div class="staff-picks-holder">
+                                <div class="upload-options">
+                                    <div class="field-box">
+                                        <input type="file" id="drag-drop">
+                                        <label for="drag-drop">
+                                            <i class="fas fa-cloud-download-alt"></i>
+                                            <span>Select a google form</span>
+                                        </label>
+                                    </div>
+                                    <div class="upload-controls">
+                                        <div class="field-box">
+                                            <input type="file" id="drag-drop">
+                                            <label for="drag-drop"><i class="fas fa-desktop"></i> Import from drive</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="spreadsheet" role="tabpanel" aria-labelledby="spreadsheet-tab">
                             Spreadsheet/CSV
