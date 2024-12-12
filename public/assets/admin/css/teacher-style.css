@@ -2066,17 +2066,23 @@ span.field-separated span:after {
     margin: 0 0 10px;
     font-weight: bold;
     line-height: normal;
+    color: #ccc;
 }
 .pasted-question > ul {
     margin: 0 0 15px;
+    color: #cccccc;
+}
+.pasted-question > ul li {
+    font-weight: bold;
+    line-height: normal;
 }
 .pasted-question > ul ul {
     counter-reset: listStyle;
 }
 .pasted-question > ul ul li {
-    margin-left: 5px;
     counter-increment: listStyle;
     font-weight: bold;
+    margin: 10px 0 0 10px;
 }
 .pasted-question > ul ul li::before {
     margin-right: 5px;
