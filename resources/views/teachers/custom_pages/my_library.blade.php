@@ -45,7 +45,7 @@
                         <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Reorder</li>
                         <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-hand-paper"></i></span> Drag and Drop</li>
                         <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Drop Down</li>
-                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Hotspot</li>
+                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fas fa-wifi"></i></span> Hotspot</li>
                         <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Labeling</li>
                         <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Categorize</li>
                     </ul>
