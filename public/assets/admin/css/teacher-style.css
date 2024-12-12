@@ -2076,10 +2076,11 @@ span.field-separated span:after {
 .pasted-question > ul ul li {
     margin-left: 5px;
     counter-increment: listStyle;
+    font-weight: bold;
 }
 .pasted-question > ul ul li::before {
     margin-right: 5px;
-    content: counter(listStyle, lower-alpha) "(";
+    content: counter(listStyle, lower-alpha) ")";
 }
 /*************************************
 Qustions AI Tabs Style End
