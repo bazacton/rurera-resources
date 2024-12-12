@@ -2115,7 +2115,7 @@ span.field-separated span:after {
 
 
 .questions-inner-tabs .tab-content {
-    margin-top: 25px;
+    margin: 25px 0;
 }
 .questions-inner-tabs .nav-tabs {
     width: 100%;
