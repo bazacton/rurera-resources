@@ -2390,14 +2390,18 @@ span.field-separated span:after {
 .featured-controls button {
     border: 0;
     background-color: inherit;
-    padding: 5px 10px;
+    padding: 8px 15px;
     color: var(--purple);
     font-weight: 600;
     border-radius: 8px;
+    line-height: normal;
 }
-
 .staff-picks-tabs .rureraform-search-field .input-field {
-    width: calc(100% - 350px);
+    width: calc(100% - 380px);
+}
+.featured-controls button.active {
+    background-color: var(--purple);
+    color: #fff;
 }
 /*************************************
 Qustions AI Tabs Style End
