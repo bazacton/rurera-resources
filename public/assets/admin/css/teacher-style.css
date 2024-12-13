@@ -2194,7 +2194,7 @@ span.field-separated span:after {
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 .admin_teacher_role .templates-lable {
     display: block;
