@@ -2332,8 +2332,11 @@ span.field-separated span:after {
     transform: translateX(-50%);
 }
 .featured-list-sidebar .listing-card .img-holder figure {
-    width: 60px;
+    width: 40px;
     height: 40px;
+}
+.listing-card .img-holder img {
+    border-radius: 5px;
 }
 .featured-list-sidebar .listing-card .text-holder {
     width: calc(100% - 75px);
