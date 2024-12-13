@@ -651,26 +651,28 @@
                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 <div class="staff-picks-tabs">
-                                    <ul class="nav nav-tabs" id="myTab4" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="featured-tab" data-toggle="tab" data-target="#featured" type="button" role="tab" aria-controls="featured" aria-selected="true">Featured List</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="community-tab" data-toggle="tab" data-target="#community" type="button" role="tab" aria-controls="community" aria-selected="false">Community</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="my-collection-tab" data-toggle="tab" data-target="#my-collection" type="button" role="tab" aria-controls="my-collection" aria-selected="false">My Collection</button>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content" id="myTabContent4">
-                                        <div class="tab-pane fade show active" id="featured" role="tabpanel" aria-labelledby="featured-tab">
-                                        Featured List
-                                        </div>
-                                        <div class="tab-pane fade" id="community" role="tabpanel" aria-labelledby="community-tab">
-                                        Community
-                                        </div>
-                                        <div class="tab-pane fade" id="my-collection" role="tabpanel" aria-labelledby="my-collection-tab">
-                                        my-collection
+                                    <div class="questions-inner-tabs">
+                                        <ul class="nav nav-tabs" id="myTab4" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="featured-tab" data-toggle="tab" data-target="#featured" type="button" role="tab" aria-controls="featured" aria-selected="true">Featured List</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="community-tab" data-toggle="tab" data-target="#community" type="button" role="tab" aria-controls="community" aria-selected="false">Community</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="my-collection-tab" data-toggle="tab" data-target="#my-collection" type="button" role="tab" aria-controls="my-collection" aria-selected="false">My Collection</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent4">
+                                            <div class="tab-pane fade show active" id="featured" role="tabpanel" aria-labelledby="featured-tab">
+                                            Featured List
+                                            </div>
+                                            <div class="tab-pane fade" id="community" role="tabpanel" aria-labelledby="community-tab">
+                                            Community
+                                            </div>
+                                            <div class="tab-pane fade" id="my-collection" role="tabpanel" aria-labelledby="my-collection-tab">
+                                            my-collection
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
