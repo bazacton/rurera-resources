@@ -647,16 +647,27 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <div class="mb-30 bg-white panel-border rounded-sm p-15">
-                                    <h6 class="search-lable">Srarch question from library</h6>
-                                    <div class="rureraform-search-field">
-                                        <div class="input-field">
-                                            <input type="text" placeholder="Search question..">
-                                            <button type="button"><i class="fas fa-search"></i> Search questions</button>
+                                <div class="staff-picks-holder">
+                                    <ul class="nav nav-tabs" id="myTab4" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="featured-tab" data-toggle="tab" data-target="#featured" type="button" role="tab" aria-controls="featured" aria-selected="true">Featured List</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="community-tab" data-toggle="tab" data-target="#community" type="button" role="tab" aria-controls="community" aria-selected="false">Community</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="my-collection-tab" data-toggle="tab" data-target="#my-collection" type="button" role="tab" aria-controls="my-collection" aria-selected="false">My Collection</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent4">
+                                        <div class="tab-pane fade show active" id="featured" role="tabpanel" aria-labelledby="featured-tab">
+                                        Featured List
                                         </div>
-                                        <div class="search-option-btn">
-                                            <span class="search-or-lable">Or</span>
-                                            <button type="button"><i class="fas fa-plus"></i> Add question</button>
+                                        <div class="tab-pane fade" id="community" role="tabpanel" aria-labelledby="community-tab">
+                                        Community
+                                        </div>
+                                        <div class="tab-pane fade" id="my-collection" role="tabpanel" aria-labelledby="my-collection-tab">
+                                        my-collection
                                         </div>
                                     </div>
                                 </div>
@@ -681,27 +692,32 @@
                                         <div class="tab-pane fade show active" id="document" role="tabpanel" aria-labelledby="document-tab">
                                             <h6>Generate question from study materials (presentations/documents)</h6>
                                             <div class="staff-picks-holder">
-                                                <ul class="nav nav-tabs" id="myTab4" role="tablist">
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link active" id="featured-tab" data-toggle="tab" data-target="#featured" type="button" role="tab" aria-controls="featured" aria-selected="true">Featured List</button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="community-tab" data-toggle="tab" data-target="#community" type="button" role="tab" aria-controls="community" aria-selected="false">Community</button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link" id="my-collection-tab" data-toggle="tab" data-target="#my-collection" type="button" role="tab" aria-controls="my-collection" aria-selected="false">My Collection</button>
-                                                </li>
-                                                </ul>
-                                                <div class="tab-content" id="myTabContent4">
-                                                    <div class="tab-pane fade show active" id="featured" role="tabpanel" aria-labelledby="featured-tab">
-                                                    Featured List
+                                                <div class="upload-options">
+                                                    <div class="field-box">
+                                                        <input type="file" id="drag-drop">
+                                                        <label for="drag-drop">
+                                                            <i class="fas fa-cloud-download-alt"></i>
+                                                            <span>Drag and drop a study material</span>
+                                                        </label>
                                                     </div>
-                                                    <div class="tab-pane fade" id="community" role="tabpanel" aria-labelledby="community-tab">
-                                                    Community
+                                                    <span class="field-separated">
+                                                        <span>Or</span>
+                                                    </span>
+                                                    <div class="upload-controls">
+                                                        <div class="field-box">
+                                                            <input type="file" id="drag-drop">
+                                                            <label for="drag-drop"><i class="fas fa-desktop"></i> Upload from device</label>
+                                                        </div>
+                                                        <div class="field-box">
+                                                            <input type="file" id="drag-drop">
+                                                            <label for="drag-drop"><i class="fas fa-desktop"></i> Import from device</label>
+                                                        </div>
+                                                        <div class="field-box">
+                                                            <input type="file" id="drag-drop">
+                                                            <label for="drag-drop"><i class="fas fa-camera"></i> Take a picture</label>
+                                                        </div>
                                                     </div>
-                                                    <div class="tab-pane fade" id="my-collection" role="tabpanel" aria-labelledby="my-collection-tab">
-                                                    my-collection
-                                                    </div>
+                                                    <p>Supported formates: PDF, PPT, PPTX, DOC</p>
                                                 </div>
                                             </div>
                                             <div class="question-hints">
