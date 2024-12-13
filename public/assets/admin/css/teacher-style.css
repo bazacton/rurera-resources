@@ -2352,6 +2352,8 @@ span.field-separated span:after {
     flex-wrap: wrap;
     border-top: 1px solid #ddd;
     padding: 14px 0 0;
+    margin: 0;
+    width: 100%;
 }
 .featured-list-sidebar .listing-card .text-holder h3 {
     font-size: 0.9rem;
