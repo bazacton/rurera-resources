@@ -2205,6 +2205,10 @@ span.field-separated span:after {
     justify-content: center;
     width: 100%;
     text-align: center;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 10px;
 }
 .admin_teacher_role .question_templates li img {
     width: 80px;
