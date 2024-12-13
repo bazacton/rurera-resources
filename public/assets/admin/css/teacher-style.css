@@ -2196,9 +2196,14 @@ span.field-separated span:after {
     gap: 15px;
     padding-bottom: 15px;
 }
+.admin_teacher_role .templates-lable {
+    display: block;
+    line-height: normal;
+    padding-bottom: 5px;
+}
 .admin_teacher_role .question_templates li {
-    width: 13.111%;
-    flex: 0 0 13.111%;
+    width: 100%;
+    flex: 0 0 100%;
 }
 .admin_teacher_role .question_templates li a {
     display: inline-flex;
