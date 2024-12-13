@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="page-controls">
-                        <button type="button" class="preview-btn"><img src="/assets/default/svgs/eye-show.svg" alt=""> Preview</button>
+                        <button type="button" class="preview-btn" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/eye-show.svg" alt=""> Preview</button>
                         <button type="button" class="publish-btn"><img src="/assets/default/svgs/publish.svg" alt=""> Publish</button>
                     </div>
                     <div class="quiz-data-slide">
@@ -510,6 +510,68 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="templatesleModal" tabindex="-1" aria-labelledby="templatesleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Question Templates</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="question_templates-holder">
+                        <ul class="question_templates">
+                            <li data-type="question_templates" data-option="multichoice_template" data-elements="question_label_multichoice_template,paragraph_multichoice_template,radio">
+                                <span class="templates-lable">Multiple Templates</span>
+                                <a href="#" data-title="Questions Templates">
+                                    <img src="/store/1/tool-images/d1.png" alt=""> Multiple Choice 
+                                </a>
+                                <a href="#" data-title="Questions Templates">
+                                <img src="/store/1/tool-images/d2.png" alt=""> Multiple Response </a>
+                            </li>
+                            <li data-type="question_templates" data-option="true_false_template" data-elements="question_label_true_false,question_label_paragraph,truefalse_quiz">
+                                <span class="templates-lable">Multiple Templates</span>    
+                                <a href="#" data-title="Questions Templates">
+                                <img src="/store/1/tool-images/d3.png" alt=""> True/False </a>
+                                <a href="#" data-title="Questions Templates">
+                                <img src="/store/1/tool-images/d4.png" alt=""> Short Answer </a>
+                                <a href="#" data-title="Questions Templates">
+                                <img src="/store/1/tool-images/d5.png" alt=""> Numeric </a>
+                                <a href="#" data-title="Questions Templates">
+                                <img src="/store/1/tool-images/d6.png" alt=""> Sequence </a>
+                            </li>
+                            <li data-type="question_templates" data-option="matching_template" data-elements="question_label_matching_template,match_quiz">
+                                <span class="templates-lable">Multiple Templates</span>    
+                                <a href="#" data-title="Questions Templates">
+                                <img src="/store/1/tool-images/d7.png" alt=""> Matching </a>
+                                <a href="#" data-title="Questions Templates">
+                                <img src="/store/1/tool-images/d8.png" alt=""> Fill in the Blanks </a>
+                                <a href="#" data-title="Questions Templates">
+                                <img src="/store/1/tool-images/d9.png" alt=""> Select from Lists </a>
+                                <a href="#" data-title="Questions Templates">
+                                <img src="/store/1/tool-images/d10.png" alt=""> Drag the Words </a>
+                                <a href="#" data-title="Questions Templates">
+                                <img src="/store/1/tool-images/d11.png" alt=""> Hotspot </a>
+                                <a href="#" data-title="Questions Templates">
+                                <img src="/store/1/tool-images/d12.png" alt=""> Drag and Drop </a>
+                            </li>
+                            
+                            <li data-type="question_templates" data-option="likert_template" data-elements="question_label">
+                                <span class="templates-lable">Multiple Templates</span>
+                                <a href="#" data-title="Questions Templates">
+                                <img src="/store/1/tool-images/d13.png" alt=""> Likert Scale </a>
+                                <a href="#" data-title="Questions Templates">
+                                <img src="/store/1/tool-images/d14.png" alt=""> Essay </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
