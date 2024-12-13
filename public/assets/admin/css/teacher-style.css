@@ -2298,6 +2298,30 @@ span.field-separated span:after {
     color: #fff;
     border-radius: 3px;
 }
+.question-hints h6 {
+    margin: 0 0 10px;
+}
+.question-hints-holder {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 30px;
+}
+.hints-box {
+    max-width: 23%;
+    flex: 0 0 23%;
+}
+.hints-box strong {
+    display: block;
+    line-height: normal;
+    color: #333;
+}
+.hints-box span {
+    display: block;
+    line-height: normal;
+    padding-top: 5px;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
