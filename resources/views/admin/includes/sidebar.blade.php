@@ -2008,7 +2008,19 @@
                                         Community
                                         </div>
                                         <div class="tab-pane fade" id="my-collection" role="tabpanel" aria-labelledby="my-collection-tab">
-                                        my-collection
+                                            <h6 class="search-lable">Srarch question from library</h6>    
+                                            <div class="mb-30 bg-white panel-border rounded-sm p-15">
+                                                <div class="rureraform-search-field">
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Search question..">
+                                                        <button type="button"><i class="fas fa-search"></i> Search questions</button>
+                                                    </div>
+                                                    <div class="search-option-btn">
+                                                        <span class="search-or-lable">Or</span>
+                                                        <button type="button" data-toggle="modal" data-target="#templatesleModal"><i class="fas fa-plus"></i> Add question</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
