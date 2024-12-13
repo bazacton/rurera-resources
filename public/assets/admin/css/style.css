@@ -2596,7 +2596,7 @@ Admin Questions Generator Page Style End
     border-radius: 3px;
 }
 .similarity-content-block .lms-dashboard-card .lms-card-list:last-child {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 .lms-dashboard-card .lms-card-info h5 .activity-date {
     margin-left: auto;
