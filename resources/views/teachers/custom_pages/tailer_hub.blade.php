@@ -517,7 +517,7 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="templatesleModal" tabindex="-1" aria-labelledby="templatesleModalLabel" aria-hidden="true">
+    <div class="modal fade question_templates_modal" id="templatesleModal" tabindex="-1" aria-labelledby="templatesleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
