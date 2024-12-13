@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="page-controls">
-                        <button type="button" class="preview-btn" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/eye-show.svg" alt=""> Preview</button>
+                        <button type="button" class="preview-btn"><img src="/assets/default/svgs/eye-show.svg" alt=""> Preview</button>
                         <button type="button" class="publish-btn"><img src="/assets/default/svgs/publish.svg" alt=""> Publish</button>
                     </div>
                     <div class="quiz-data-slide">
@@ -222,7 +222,7 @@
                         </div>
                         <div class="search-option-btn">
                             <span class="search-or-lable">Or</span>
-                            <button type="button"><i class="fas fa-plus"></i> Add question</button>
+                            <button type="button" data-toggle="modal" data-target="#templatesleModal"><i class="fas fa-plus"></i> Add question</button>
                         </div>
                     </div>
                 </div>
