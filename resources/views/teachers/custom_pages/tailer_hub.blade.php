@@ -647,7 +647,7 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <div class="staff-picks-holder">
+                                <div class="staff-picks-tabs">
                                     <ul class="nav nav-tabs" id="myTab4" role="tablist">
                                         <li class="nav-item" role="presentation">
                                             <button class="nav-link active" id="featured-tab" data-toggle="tab" data-target="#featured" type="button" role="tab" aria-controls="featured" aria-selected="true">Featured List</button>
