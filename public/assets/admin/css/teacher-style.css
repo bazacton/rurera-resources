@@ -1969,6 +1969,7 @@ Qustions AI Tabs Style Start
     padding: 5px 15px;
 }
 .question-ai-tabs .nav-tabs-holder .nav-tabs .nav-item .nav-link.active {
+    background-color: #fff;
     border-bottom-color: #fff;
     color: var(--blue);
 }
