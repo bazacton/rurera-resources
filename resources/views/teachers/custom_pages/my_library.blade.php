@@ -27,52 +27,6 @@
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <h6>Or select a question type to add question</h6>
-                <div class="question_templates-holder">
-                    <ul class="question_templates">
-                        <li data-type="question_templates" data-option="multichoice_template" data-elements="question_label_multichoice_template,paragraph_multichoice_template,radio">
-                            <span class="templates-lable">Multiple Templates</span>
-                            <a href="#" data-title="Questions Templates">
-                                <img src="/store/1/tool-images/d1.png" alt=""> Multiple Choice 
-                            </a>
-                            <a href="#" data-title="Questions Templates">
-                            <img src="/store/1/tool-images/d2.png" alt=""> Multiple Response </a>
-                        </li>
-                        <li data-type="question_templates" data-option="true_false_template" data-elements="question_label_true_false,question_label_paragraph,truefalse_quiz">
-                            <span class="templates-lable">Multiple Templates</span>    
-                            <a href="#" data-title="Questions Templates">
-                            <img src="/store/1/tool-images/d3.png" alt=""> True/False </a>
-                            <a href="#" data-title="Questions Templates">
-                            <img src="/store/1/tool-images/d4.png" alt=""> Short Answer </a>
-                            <a href="#" data-title="Questions Templates">
-                            <img src="/store/1/tool-images/d5.png" alt=""> Numeric </a>
-                            <a href="#" data-title="Questions Templates">
-                            <img src="/store/1/tool-images/d6.png" alt=""> Sequence </a>
-                        </li>
-                        <li data-type="question_templates" data-option="matching_template" data-elements="question_label_matching_template,match_quiz">
-                            <span class="templates-lable">Multiple Templates</span>    
-                            <a href="#" data-title="Questions Templates">
-                            <img src="/store/1/tool-images/d7.png" alt=""> Matching </a>
-                            <a href="#" data-title="Questions Templates">
-                            <img src="/store/1/tool-images/d8.png" alt=""> Fill in the Blanks </a>
-                            <a href="#" data-title="Questions Templates">
-                            <img src="/store/1/tool-images/d9.png" alt=""> Select from Lists </a>
-                            <a href="#" data-title="Questions Templates">
-                            <img src="/store/1/tool-images/d10.png" alt=""> Drag the Words </a>
-                            <a href="#" data-title="Questions Templates">
-                            <img src="/store/1/tool-images/d11.png" alt=""> Hotspot </a>
-                            <a href="#" data-title="Questions Templates">
-                            <img src="/store/1/tool-images/d12.png" alt=""> Drag and Drop </a>
-                        </li>
-                       
-                        <li data-type="question_templates" data-option="likert_template" data-elements="question_label">
-                            <span class="templates-lable">Multiple Templates</span>
-                            <a href="#" data-title="Questions Templates">
-                            <img src="/store/1/tool-images/d13.png" alt=""> Likert Scale </a>
-                            <a href="#" data-title="Questions Templates">
-                            <img src="/store/1/tool-images/d14.png" alt=""> Essay </a>
-                        </li>
-                    </ul>
-                </div>
                 <div class="canvas-list">
                     <ul>
                         <li><span class="icon-box" style="background-color: #8854bf;"><i class="fas fa-check"></i></span> Multiple Choice</li>
