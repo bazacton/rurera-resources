@@ -2367,6 +2367,26 @@ span.field-separated span:after {
 .featured-list-sidebar .listing-card .text-holder h3 a {
     font-weight: 600;
 }
+.featured-filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 15px;
+}
+.featured-filters h6 {
+    margin: 0;
+}
+.featured-filters span {
+    display: block;
+    line-height: normal;
+}
+.featured-filters select {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    min-width: 120px;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
