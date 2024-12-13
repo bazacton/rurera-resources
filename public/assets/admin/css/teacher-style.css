@@ -2298,6 +2298,10 @@ span.field-separated span:after {
     color: #fff;
     border-radius: 3px;
 }
+
+.question-hints {
+    padding-top: 30px;
+}
 .question-hints h6 {
     margin: 0 0 10px;
 }
@@ -2306,7 +2310,6 @@ span.field-separated span:after {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 15px;
-    padding-top: 30px;
 }
 .hints-box {
     max-width: 23%;
