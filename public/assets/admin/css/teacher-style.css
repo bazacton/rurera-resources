@@ -2189,22 +2189,29 @@ span.field-separated span:after {
     margin: 0 auto;
     filter: invert(41%) sepia(15%) saturate(4764%) hue-rotate(131deg) brightness(92%) contrast(101%);
 }
-.question_templates {
+.admin_teacher_role .question_templates {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 15px;
 }
-.question_templates li {
+.admin_teacher_role .question_templates li {
     width: 13.111%;
     flex: 0 0 13.111%;
 }
-.question_templates li a {
+.admin_teacher_role .question_templates li a {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     text-align: center;
+}
+.admin_teacher_role .question_templates li img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
 }
 /*************************************
 Qustions AI Tabs Style End
