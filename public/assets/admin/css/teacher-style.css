@@ -5,6 +5,17 @@
 }
 .admin_teacher_role .main-sidebar .sidebar-brand {
     padding: 0 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin_teacher_role .main-sidebar .sidebar-brand.sidebar-brand-sm {
+    display: none;
+}
+.admin_teacher_role .sidebar-brand img {
+    object-fit: contain;
+    width: 130px;
+    height: auto;
 }
 .admin_teacher_role .main-sidebar .sidebar-menu {
     border-top: 1px solid #f2f2f2;
