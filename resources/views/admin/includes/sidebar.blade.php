@@ -1967,9 +1967,10 @@
                                             <input type="text" placeholder="Search question..">
                                             <button type="button"><i class="fas fa-search"></i> Search questions</button>
                                         </div>
-                                        <div class="search-option-btn">
-                                            <span class="search-or-lable">Or</span>
-                                            <button type="button"><i class="fas fa-plus"></i> Add question</button>
+                                        <div class="featured-controls">
+                                            <button type="button">Featured List</button>
+                                            <button type="button">Community</button>
+                                            <button type="button">My Collection</button>
                                         </div>
                                     </div>
                                 </div>
