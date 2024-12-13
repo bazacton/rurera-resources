@@ -2194,6 +2194,7 @@ span.field-separated span:after {
     flex-wrap: wrap;
     align-items: center;
     gap: 15px;
+    padding-bottom: 15px;
 }
 .admin_teacher_role .question_templates li {
     width: 13.111%;
