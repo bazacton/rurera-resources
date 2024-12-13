@@ -1993,12 +1993,12 @@
                                                                         <span>2 hours ago</span>
                                                                     </span>
                                                                 </div>
-                                                                <ul class="list-options">
-                                                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 8 questions</li>
-                                                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 1st-4th Grade</li>
-                                                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Science</li>
-                                                                </ul>
                                                             </div>
+                                                            <ul class="list-options">
+                                                                <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 8 questions</li>
+                                                                <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 1st-4th Grade</li>
+                                                                <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Science</li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </div>
