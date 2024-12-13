@@ -1974,8 +1974,7 @@
                                         </li>
                                     </ul>
                                     <div class="tab-content" id="myTabContent4">
-                                        <div class="tab-pane fade show active" id="featured" role="tabpanel" aria-labelledby="featured-tab">
-                                            <h6 class="search-lable">Srarch question from library</h6>    
+                                        <div class="tab-pane fade show active" id="featured" role="tabpanel" aria-labelledby="featured-tab">   
                                             <div class="mb-30 bg-white panel-border rounded-sm p-15">
                                                 <div class="rureraform-search-field">
                                                     <div class="input-field">
@@ -2030,8 +2029,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="community" role="tabpanel" aria-labelledby="community-tab">
-                                            <h6 class="search-lable">Srarch question from library</h6>    
+                                        <div class="tab-pane fade" id="community" role="tabpanel" aria-labelledby="community-tab">   
                                             <div class="mb-30 bg-white panel-border rounded-sm p-15">
                                                 <div class="rureraform-search-field">
                                                     <div class="input-field">
@@ -2045,8 +2043,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="my-collection" role="tabpanel" aria-labelledby="my-collection-tab">
-                                            <h6 class="search-lable">Srarch question from library</h6>    
+                                        <div class="tab-pane fade" id="my-collection" role="tabpanel" aria-labelledby="my-collection-tab">   
                                             <div class="mb-30 bg-white panel-border rounded-sm p-15">
                                                 <div class="rureraform-search-field">
                                                     <div class="input-field">
