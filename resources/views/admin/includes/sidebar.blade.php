@@ -1968,7 +1968,7 @@
                                             <button type="button"><i class="fas fa-search"></i> Search questions</button>
                                         </div>
                                         <div class="featured-controls">
-                                            <button type="button">Featured List</button>
+                                            <button type="button" class="active">Featured List</button>
                                             <button type="button">Community</button>
                                             <button type="button">My Collection</button>
                                         </div>
