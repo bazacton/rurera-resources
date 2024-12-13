@@ -2336,6 +2336,28 @@ span.field-separated span:after {
     bottom: -8px;
     width: 88%;
 }
+.featured-list-sidebar .listing-card .img-holder figure {
+    width: 60px;
+    height: 40px;
+}
+.featured-list-sidebar .listing-card .text-holder {
+    width: calc(100% - 75px);
+}
+.featured-list-sidebar .listing-card {
+    align-items: flex-start;
+}
+.featured-list-sidebar .list-options li {
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px 5px;
+}
+.featured-list-sidebar .list-options {
+    gap: 5px 5px;
+    margin:0;
+    flex-wrap: wrap;
+    border-top: 1px solid #ddd;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/

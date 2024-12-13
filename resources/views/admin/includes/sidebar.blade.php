@@ -1985,13 +1985,7 @@
                                                                 </figure>
                                                             </div>
                                                             <div class="text-holder">
-                                                                <span class="listing-lable">Assesment</span>
                                                                 <h3><a href="#">Sciency Science</a></h3>
-                                                                <ul class="list-options">
-                                                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 8 questions</li>
-                                                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 1st-4th Grade</li>
-                                                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Science</li>
-                                                                </ul>
                                                                 <div class="author-info">
                                                                     <span class="img-box"><img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt=""></span>
                                                                     <span class="info-text">
@@ -1999,9 +1993,11 @@
                                                                         <span>2 hours ago</span>
                                                                     </span>
                                                                 </div>
-                                                                <div class="listing-controls">
-                                                                    <button class="continue-btn">Continue editing</button>
-                                                                </div>
+                                                                <ul class="list-options">
+                                                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 8 questions</li>
+                                                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 1st-4th Grade</li>
+                                                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Science</li>
+                                                                </ul>
                                                             </div>
                                                         </div>
                                                     </div>
