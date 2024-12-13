@@ -1961,100 +1961,55 @@
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="staff-picks-tabs">
-                                <div class="questions-inner-tabs">
-                                    <ul class="nav nav-tabs" id="myTab4" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="featured-tab" data-toggle="tab" data-target="#featured" type="button" role="tab" aria-controls="featured" aria-selected="true">Featured List</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="community-tab" data-toggle="tab" data-target="#community" type="button" role="tab" aria-controls="community" aria-selected="false">Community</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="my-collection-tab" data-toggle="tab" data-target="#my-collection" type="button" role="tab" aria-controls="my-collection" aria-selected="false">My Collection</button>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content" id="myTabContent4">
-                                        <div class="tab-pane fade show active" id="featured" role="tabpanel" aria-labelledby="featured-tab">   
-                                            <div class="mb-30 bg-white panel-border rounded-sm p-15">
-                                                <div class="rureraform-search-field">
-                                                    <div class="input-field">
-                                                        <input type="text" placeholder="Search question..">
-                                                        <button type="button"><i class="fas fa-search"></i> Search questions</button>
-                                                    </div>
-                                                    <div class="search-option-btn">
-                                                        <span class="search-or-lable">Or</span>
-                                                        <button type="button"><i class="fas fa-plus"></i> Add question</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12 col-lg-4 col-md-4">
-                                                    <div class="featured-list-sidebar">
-                                                        <div class="featured-filters">
-                                                            <div class="text-box">
-                                                                <h6>Reported Oprations</h6>
-                                                                <span>Risky jobs on the..</span>
-                                                            </div>
-                                                            <div class="select-field">
-                                                                <select>
-                                                                    <option value="Critical">Critical</option>
-                                                                    <option value="Critical">Critical</option>
-                                                                    <option value="Critical">Critical</option>
-                                                                    <option value="Critical">Critical</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="listing-card mb-15 bg-white panel-border rounded-sm">
-                                                            <div class="img-holder">
-                                                                <figure>
-                                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
-                                                                </figure>
-                                                            </div>
-                                                            <div class="text-holder">
-                                                                <h3><a href="#">Sciency Science</a></h3>
-                                                                <div class="author-info">
-                                                                    <span class="info-text">
-                                                                        <span>Kaiser K</span>
-                                                                        <span>2 hours ago</span>
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                            <ul class="list-options">
-                                                                <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 8 questions</li>
-                                                                <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 1st-4th Grade</li>
-                                                                <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Science</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                <div class="mb-30 bg-white panel-border rounded-sm p-15">
+                                    <div class="rureraform-search-field">
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Search question..">
+                                            <button type="button"><i class="fas fa-search"></i> Search questions</button>
                                         </div>
-                                        <div class="tab-pane fade" id="community" role="tabpanel" aria-labelledby="community-tab">   
-                                            <div class="mb-30 bg-white panel-border rounded-sm p-15">
-                                                <div class="rureraform-search-field">
-                                                    <div class="input-field">
-                                                        <input type="text" placeholder="Search question..">
-                                                        <button type="button"><i class="fas fa-search"></i> Search questions</button>
-                                                    </div>
-                                                    <div class="search-option-btn">
-                                                        <span class="search-or-lable">Or</span>
-                                                        <button type="button"><i class="fas fa-plus"></i> Add question</button>
-                                                    </div>
+                                        <div class="search-option-btn">
+                                            <span class="search-or-lable">Or</span>
+                                            <button type="button"><i class="fas fa-plus"></i> Add question</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-4 col-md-4">
+                                        <div class="featured-list-sidebar">
+                                            <div class="featured-filters">
+                                                <div class="text-box">
+                                                    <h6>Reported Oprations</h6>
+                                                    <span>Risky jobs on the..</span>
+                                                </div>
+                                                <div class="select-field">
+                                                    <select>
+                                                        <option value="Critical">Critical</option>
+                                                        <option value="Critical">Critical</option>
+                                                        <option value="Critical">Critical</option>
+                                                        <option value="Critical">Critical</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="my-collection" role="tabpanel" aria-labelledby="my-collection-tab">   
-                                            <div class="mb-30 bg-white panel-border rounded-sm p-15">
-                                                <div class="rureraform-search-field">
-                                                    <div class="input-field">
-                                                        <input type="text" placeholder="Search question..">
-                                                        <button type="button"><i class="fas fa-search"></i> Search questions</button>
-                                                    </div>
-                                                    <div class="search-option-btn">
-                                                        <span class="search-or-lable">Or</span>
-                                                        <button type="button"><i class="fas fa-plus"></i> Add question</button>
+                                            <div class="listing-card mb-15 bg-white panel-border rounded-sm">
+                                                <div class="img-holder">
+                                                    <figure>
+                                                        <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="text-holder">
+                                                    <h3><a href="#">Sciency Science</a></h3>
+                                                    <div class="author-info">
+                                                        <span class="info-text">
+                                                            <span>Kaiser K</span>
+                                                            <span>2 hours ago</span>
+                                                        </span>
                                                     </div>
                                                 </div>
+                                                <ul class="list-options">
+                                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 8 questions</li>
+                                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 1st-4th Grade</li>
+                                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Science</li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
