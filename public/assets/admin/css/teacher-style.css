@@ -2354,6 +2354,12 @@ span.field-separated span:after {
     border-top: 1px solid #ddd;
     padding: 14px 0 0;
 }
+.featured-list-sidebar .listing-card .text-holder h3 {
+    font-size: 0.9rem;
+}
+.featured-list-sidebar .listing-card .text-holder h3 a {
+    font-weight: 600;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
