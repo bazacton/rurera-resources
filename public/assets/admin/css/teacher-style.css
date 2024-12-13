@@ -2189,12 +2189,19 @@ span.field-separated span:after {
     margin: 0 auto;
     filter: invert(41%) sepia(15%) saturate(4764%) hue-rotate(131deg) brightness(92%) contrast(101%);
 }
+.question_templates_modal {
+    background-color: #fff;
+}
 .question_templates_modal .modal-dialog {
     max-width: 100%;
     margin: 0;
 }
 .question_templates_modal .modal-content {
     border-radius: 0;
+    box-shadow: none;
+}
+.question_templates_modal.show .modal-content {
+    box-shadow: none;
 }
 .admin_teacher_role .question_templates {
     display: flex;
