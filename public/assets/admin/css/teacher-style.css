@@ -2334,6 +2334,7 @@ span.field-separated span:after {
 }
 .listing-card:before {
     bottom: -8px;
+    width: 88%;
 }
 /*************************************
 Qustions AI Tabs Style End
