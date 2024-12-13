@@ -1987,7 +1987,6 @@
                                                             <div class="text-holder">
                                                                 <h3><a href="#">Sciency Science</a></h3>
                                                                 <div class="author-info">
-                                                                    <span class="img-box"><img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt=""></span>
                                                                     <span class="info-text">
                                                                         <span>Kaiser K</span>
                                                                         <span>2 hours ago</span>
