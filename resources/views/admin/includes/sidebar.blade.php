@@ -233,21 +233,21 @@
             @can('admin_assignments')
             <li class="nav-item {{ (request()->is('admin/custom_quiz')) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/custom_quiz') }}" class="nav-link">
-                    <i class="fas fa-tasks"></i>
+                    <img src="/assets/default/svgs/clipboard.svg" alt="">
                     <span>Custom Quiz</span>
                 </a>
             </li>
 			
 			<li class="nav-item {{ (request()->is('admin/custom_page/my_library')) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/custom_page/my_library') }}" class="nav-link">
-                    <i class="fas fa-tasks"></i>
+                    <img src="/assets/default/svgs/library-book.svg" alt="">
                     <span>My Library</span>
                 </a>
             </li>
 			
 			<li class="nav-item {{ (request()->is('admin/custom_page/track')) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/custom_page/track') }}" class="nav-link">
-                    <i class="fas fa-tasks"></i>
+                    <img src="/assets/default/svgs/bar-chart-trend.svg" alt="">
                     <span>Track</span>
                 </a>
             </li>
@@ -321,7 +321,7 @@
                 
                 <li class="nav-item {{ (request()->is('admin/assignments')) ? 'active' : '' }}">
                     <a href="{{ getAdminPanelUrl('/assignments') }}" class="nav-link">
-                        <i class="fas fa-tasks"></i>
+                        <img src="/assets/default/svgs/assignments.svg" alt="">
                         <span>Assignments</span>
                     </a>
                 </li>
