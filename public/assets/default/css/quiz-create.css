@@ -1524,6 +1524,11 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .nav .nav-link.api_pending {
     color: #bbb !important;
 }
+.edit-questions-tabs .nav .nav-link.checkbox_questions,
+.edit-questions-tabs .nav .nav-link.active.checkbox_questions {
+    color: #224189 !important;
+    border-bottom-color: #224189 !important;
+}
 .edit-questions-tabs .nav .nav-link.truefalse_quiz_questions,
 .edit-questions-tabs .nav .nav-link.active.truefalse_quiz_questions {border-bottom-color: var(--success) !important; margin-left: 10px; margin-right: -10px;}
 
