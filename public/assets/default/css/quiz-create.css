@@ -1525,7 +1525,7 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
     color: #bbb !important;
 }
 .edit-questions-tabs .nav .nav-link.truefalse_quiz_questions,
-.edit-questions-tabs .nav .nav-link.active.truefalse_quiz_questions {border-bottom-color: var(--success) !important;}
+.edit-questions-tabs .nav .nav-link.active.truefalse_quiz_questions {border-bottom-color: var(--success) !important; margin-left: 10px; margin-right: -10px;}
 
 .edit-questions-tabs .nav .nav-link.short-answer {border-bottom-color: var(--info) !important;}
 .edit-questions-tabs .nav .nav-link.open-end {border-bottom-color: var(--warning) !important;}
