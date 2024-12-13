@@ -709,6 +709,27 @@
                                                     <p>Supported formates: PDF, PPT, PPTX, DOC</p>
                                                 </div>
                                             </div>
+                                            <div class="question-hints">
+                                                <h6>Hints</h6>
+                                                <div class="question-hints-holder">
+                                                    <div class="hints-box">
+                                                        <strong>Total Referred Users</strong>
+                                                        <span>Users that registerd on the plateform using the referral code.</span>
+                                                    </div>
+                                                    <div class="hints-box">
+                                                        <strong>Total Referred Users</strong>
+                                                        <span>Users that registerd on the plateform using the referral code.</span>
+                                                    </div>
+                                                    <div class="hints-box">
+                                                        <strong>Total Referred Users</strong>
+                                                        <span>Users that registerd on the plateform using the referral code.</span>
+                                                    </div>
+                                                    <div class="hints-box">
+                                                        <strong>Total Referred Users</strong>
+                                                        <span>Users that registerd on the plateform using the referral code.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="tab-pane fade" id="prompt" role="tabpanel" aria-labelledby="prompt-tab">
                                             <h6>Copy and paste questions text from anywhere to create a quiz from it</h6>
