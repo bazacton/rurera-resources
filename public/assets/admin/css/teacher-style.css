@@ -2002,6 +2002,10 @@ Qustions AI Tabs Style Start
 .question-ai-tabs .tab-content {
     padding: 25px 0 0;
 }
+.question-ai-tabs > .tab-content {
+    max-width: 1190px;
+    margin: 0 auto;
+}
 .staff-picks-holder {
     border: 1px dashed #ddd;
     padding: 25px;
@@ -2204,9 +2208,6 @@ span.field-separated span:after {
 }
 .question_templates_modal.show .modal-content {
     box-shadow: none;
-}
-.question_templates_modal .question-ai-tabs {
-    
 }
 .question_templates_modal .modal-body {
     padding: 0;
