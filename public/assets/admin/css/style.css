@@ -1144,6 +1144,19 @@ body.layout-3 .main-footer {padding-left: 0; padding-right: 0;}
 .main-sidebar .sidebar-brand {display: inline-block; width: 100%; text-align: center; height: 60px; line-height: 60px;}
 .main-sidebar .sidebar-brand.sidebar-brand-sm {display: none;}
 .main-sidebar .sidebar-brand a {text-decoration: none; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; color: #000; }
+.admin_teacher_role .main-sidebar .sidebar-brand {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-sidebar .sidebar-brand.sidebar-brand-sm {
+    display: none;
+}
+.sidebar-brand img {
+    object-fit: contain;
+    width: 130px;
+    height: auto;
+}
 .main-sidebar .sidebar-user {display: inline-block; width: 100%; padding: 10px; margin-bottom: 10px;}
 .main-sidebar .sidebar-user .sidebar-user-picture {float: left; margin-right: 10px;}
 .main-sidebar .sidebar-user .sidebar-user-picture img {width: 50px; border-radius: 50%; }
