@@ -1964,7 +1964,8 @@ Qustions AI Tabs Style Start
     border: 0;
     border-radius: 5px 5px 0 0;
     outline: none;
-    padding: 5px 15px;
+    padding: 14px 24px;
+    line-height: normal;
 }
 .question-ai-tabs .nav-tabs-holder .nav-tabs .nav-item .nav-link.active {
     background: linear-gradient(to left, hsla(0, 0%, 100%, .6), transparent 50%) border-box, linear-gradient(to right, hsla(0, 0%, 100%, .6), transparent 50%) border-box, linear-gradient(#fff, #fff) padding-box, linear-gradient(180deg,#8b3dff,transparent) border-box;
