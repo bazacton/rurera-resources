@@ -2335,8 +2335,11 @@ span.field-separated span:after {
     width: 45px;
     height: 45px;
 }
-.listing-card .img-holder img {
+.featured-list-sidebar .listing-card .img-holder img {
     border-radius: 5px;
+}
+.featured-list-sidebar .author-info .info-text {
+    padding-left: 0;
 }
 .featured-list-sidebar .listing-card .text-holder {
     width: calc(100% - 75px);
