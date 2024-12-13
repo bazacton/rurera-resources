@@ -553,9 +553,30 @@
                                             <span class="templates-lable">Multiple Templates</span>
                                             <a href="#" data-title="Questions Templates">
                                                 <img src="/store/1/tool-images/d1.png" alt=""> Multiple Choice 
+                                                <div class="templete-hover-element">
+                                                    <div class="hover-box">
+                                                        <div class="img-holder"></div>
+                                                        <div class="text-holder">
+                                                            <h6>Multiple Choice</h6>
+                                                            <p>Check for retention by asking students to pick one or more correct answers. Use text, images, or math questions to spice things up!</p>
+                                                            <span class="text-lable"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </a>
                                             <a href="#" data-title="Questions Templates">
-                                            <img src="/store/1/tool-images/d2.png" alt=""> Multiple Response </a>
+                                                <img src="/store/1/tool-images/d2.png" alt=""> Multiple Response
+                                                <div class="templete-hover-element">
+                                                    <div class="hover-box">
+                                                        <div class="img-holder"></div>
+                                                        <div class="text-holder">
+                                                            <h6>Multiple Response</h6>
+                                                            <p>Check for retention by asking students to pick one or more correct answers. Use text, images, or math questions to spice things up!</p>
+                                                            <span class="text-lable"></span>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </a>
                                         </li>
                                         <li data-type="question_templates" data-option="true_false_template" data-elements="question_label_true_false,question_label_paragraph,truefalse_quiz">
                                             <span class="templates-lable">Multiple Templates</span>    
