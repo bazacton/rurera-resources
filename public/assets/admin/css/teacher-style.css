@@ -2349,9 +2349,10 @@ span.field-separated span:after {
 }
 .featured-list-sidebar .list-options {
     gap: 5px 5px;
-    margin:0;
+    margin: 10px 0 0;
     flex-wrap: wrap;
     border-top: 1px solid #ddd;
+    padding: 14px 0 0;
 }
 /*************************************
 Qustions AI Tabs Style End
