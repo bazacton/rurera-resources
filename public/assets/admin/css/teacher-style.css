@@ -2279,7 +2279,7 @@ span.field-separated span:after {
     display: flex;
     flex-direction: column;
 }
-.text-lable {
+.hover-box .text-lable {
     margin-top: auto;
     background-color: var(--blue);
     width: auto;
