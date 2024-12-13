@@ -2336,7 +2336,7 @@ span.field-separated span:after {
     height: 40px;
 }
 .featured-list-sidebar .listing-card .text-holder {
-    width: 100%;
+    width: calc(100% - 75px);
 }
 .featured-list-sidebar .listing-card {
     align-items: flex-start;
