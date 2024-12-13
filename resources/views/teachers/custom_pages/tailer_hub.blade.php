@@ -617,37 +617,6 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="canvas-list">
-                                    <ul>
-                                        <li><span class="icon-box" style="background-color: #8854bf;"><i class="fas fa-check"></i></span> Multiple Choice</li>
-                                        <li><span class="icon-box" style="background-color: #8854bf;"><i class="fas fa-fill-drip"></i></span> Fill in the Blank</li>
-                                    </ul>
-                                    <span class="canvas-sub-title">Open ended responses</span>
-                                    <ul>
-                                        <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-pencil-alt"></i></span> Draw</li>
-                                        <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-bars"></i></span> Open Ended</li>
-                                        <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-video"></i></span> Video Response</li>
-                                        <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-microphone"></i></span> Audio Response</li>
-                                        <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-meh-blank"></i></span> Poll</li>
-                                        <li><span class="icon-box" style="background-color: #2e73af;"><i class="fas fa-meh-blank"></i></span> Word Cloud</li>
-                                    </ul>
-                                    
-                                    <span>Interactive/Higher-order thinking</span>
-                                    <ul>
-                                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Match</li>
-                                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Reorder</li>
-                                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-hand-paper"></i></span> Drag and Drop</li>
-                                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Drop Down</li>
-                                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fas fa-wifi"></i></span> Hotspot</li>
-                                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Labeling</li>
-                                        <li><span class="icon-box" style="background-color: #00a068;"><i class="fas fa-meh-blank"></i></span> Categorize</li>
-                                    </ul>
-                                    <span>Mathematics</span>
-                                    <ul>
-                                        <li><span class="icon-box" style="background-color: #e27a16;"><i class="fas fa-meh-blank"></i></span> Math Response</li>
-                                        <li><span class="icon-box" style="background-color: #e27a16;"><i class="fas fa-meh-blank"></i></span> Graphing</li>
-                                    </ul>
-                                </div>
                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 <div class="staff-picks-tabs">
