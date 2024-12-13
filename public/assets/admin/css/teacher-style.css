@@ -2193,17 +2193,20 @@ span.field-separated span:after {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     padding-bottom: 15px;
 }
 .admin_teacher_role .templates-lable {
     display: block;
     line-height: normal;
-    padding-bottom: 5px;
+    width: 100%;
 }
 .admin_teacher_role .question_templates li {
     width: 100%;
     flex: 0 0 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .admin_teacher_role .question_templates li a {
     display: inline-flex;
