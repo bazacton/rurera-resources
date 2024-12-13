@@ -1991,6 +1991,20 @@
                                             <div class="row">
                                                 <div class="col-12 col-lg-4 col-md-4">
                                                     <div class="featured-list-sidebar">
+                                                        <div class="featured-filters">
+                                                            <div class="text-box">
+                                                                <h6>Reported Oprations</h6>
+                                                                <span>Risky jobs on the..</span>
+                                                            </div>
+                                                            <div class="select-field">
+                                                                <select>
+                                                                    <option value="Critical">Critical</option>
+                                                                    <option value="Critical">Critical</option>
+                                                                    <option value="Critical">Critical</option>
+                                                                    <option value="Critical">Critical</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
                                                         <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                                             <div class="img-holder">
                                                                 <figure>
