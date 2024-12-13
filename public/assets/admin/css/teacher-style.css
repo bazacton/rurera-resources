@@ -2206,8 +2206,10 @@ span.field-separated span:after {
     box-shadow: none;
 }
 .question_templates_modal .question-ai-tabs {
-    max-width: 1190px;
-    margin: 0 auto;
+    
+}
+.question_templates_modal .modal-body {
+    padding: 0;
 }
 .admin_teacher_role .question_templates {
     display: flex;
