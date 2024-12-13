@@ -1967,8 +1967,9 @@ Qustions AI Tabs Style Start
     padding: 5px 15px;
 }
 .question-ai-tabs .nav-tabs-holder .nav-tabs .nav-item .nav-link.active {
-    background-color: #fff;
-    border-bottom-color: #fff;
+    background: linear-gradient(to left, hsla(0, 0%, 100%, .6), transparent 50%) border-box, linear-gradient(to right, hsla(0, 0%, 100%, .6), transparent 50%) border-box, linear-gradient(#fff, #fff) padding-box, linear-gradient(180deg,#8b3dff,transparent) border-box;
+    border: 2px solid transparent;
+    border-bottom: 0;
 }
 .question-ai-tabs h6 {
     color: #333;
