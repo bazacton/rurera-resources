@@ -2319,8 +2319,7 @@ span.field-separated span:after {
 .listing-card {
     position: relative;
 }
-.listing-card:after,
-.listing-card:before {
+.listing-card:after {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -2331,10 +2330,6 @@ span.field-separated span:after {
     border: 1px solid #ddd;
     border-radius: 20px;
     transform: translateX(-50%);
-}
-.listing-card:before {
-    bottom: -8px;
-    width: 88%;
 }
 .featured-list-sidebar .listing-card .img-holder figure {
     width: 60px;
