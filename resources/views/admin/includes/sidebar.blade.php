@@ -2017,7 +2017,7 @@
                                                     </div>
                                                     <div class="search-option-btn">
                                                         <span class="search-or-lable">Or</span>
-                                                        <button type="button" data-toggle="modal" data-target="#templatesleModal"><i class="fas fa-plus"></i> Add question</button>
+                                                        <button type="button"><i class="fas fa-plus"></i> Add question</button>
                                                     </div>
                                                 </div>
                                             </div>
