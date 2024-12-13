@@ -1947,11 +1947,11 @@ Tailer Hub Style End
 /*************************************
 Qustions AI Tabs Style Start
 **************************************/
-.question-ai-tabs > .nav-tabs {
+.question-ai-tabs .nav-tabs-holder .nav-tabs {
     border: 0;
     justify-content: center;
 }
-.question-ai-tabs > .nav-tabs .nav-item .nav-link {
+.question-ai-tabs .nav-tabs-holder .nav-tabs .nav-item .nav-link {
     background-color: inherit;
     border: 0;
     border-radius: 0;
@@ -1959,7 +1959,7 @@ Qustions AI Tabs Style Start
     font-size: 15px;
     font-weight: 600;
 }
-.question-ai-tabs > .nav-tabs .nav-item .nav-link.active {
+.question-ai-tabs .nav-tabs-holder .nav-tabs .nav-item .nav-link.active {
     border-bottom-color: #fff;
     color: var(--blue);
 }
