@@ -263,7 +263,7 @@
 			
 			<li class="nav-item {{ (request()->is('admin/custom_page/tailer_hub')) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/custom_page/tailer_hub') }}" class="nav-link">
-                    <i class="fas fa-tasks"></i>
+                    <img src="/assets/default/svgs/Tailor-Hub.svg" alt="">
                     <span>Tailor Hub</span>
                 </a>
             </li>
