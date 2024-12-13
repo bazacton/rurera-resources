@@ -2213,6 +2213,7 @@ span.field-separated span:after {
     align-items: center;
     gap: 20px;
     padding-bottom: 30px;
+    position: relative;
 }
 .admin_teacher_role .templates-lable {
     display: block;
@@ -2245,6 +2246,46 @@ span.field-separated span:after {
     display: block;
     margin: 0 auto;
     object-fit: contain;
+}
+.templete-hover-element {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    padding: 20px;
+}
+.templete-hover-element .img-holder {
+    height: 100px;
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin: 0 0 15px;
+}
+.templete-hover-element  h6 {
+    margin-bottom: 10px;
+}
+.templete-hover-element p {
+    line-height: normal;
+    margin: 0;
+}
+.templete-hover-element .text-holder {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.text-lable {
+    margin-top: auto;
+    background-color: var(--blue);
+    width: auto;
+    display: inline-block;
+    max-width: fit-content;
+    padding: 0 12px;
+    color: #fff;
+    border-radius: 3px;
 }
 /*************************************
 Qustions AI Tabs Style End
