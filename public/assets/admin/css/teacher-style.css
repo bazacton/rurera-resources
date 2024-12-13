@@ -2203,6 +2203,10 @@ span.field-separated span:after {
 .question_templates_modal.show .modal-content {
     box-shadow: none;
 }
+.question_templates_modal .question-ai-tabs {
+    max-width: 1190px;
+    margin: 0 auto;
+}
 .admin_teacher_role .question_templates {
     display: flex;
     flex-wrap: wrap;
