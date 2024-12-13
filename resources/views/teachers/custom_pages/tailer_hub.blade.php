@@ -574,7 +574,7 @@
                                                         <div class="text-holder">
                                                             <h6>Multiple Response</h6>
                                                             <p>Check for retention by asking students to pick one or more correct answers. Use text, images, or math questions to spice things up!</p>
-                                                            <span class="text-lable"></span>
+                                                            <span class="text-lable">Auto-graded</span>
                                                         </div>
                                                     </div>
                                                 </div> 
