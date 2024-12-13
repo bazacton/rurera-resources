@@ -53,30 +53,13 @@
                 <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                     @php $tab_active_class = ($assignment->subtopic_id > 0)? '' : 'active'; @endphp
                     <li class="nav-item">
-                        <a class="nav-link {{$tab_active_class}}" id="topics-tab" data-toggle="tab" href="#topics" role="tab"
+                        <a class="nav-link active" id="topics-tab" data-toggle="tab" href="#topics" role="tab"
                            aria-controls="basic" aria-selected="true">
                             <span class="tab-title">Topic</span>
                             <span class="tab-detail">Choose Subject Topic</span>
                         </a>
                     </li>
 
-                    @php $tab_active_class = ($assignment->subtopic_id > 0)? 'active' : ''; @endphp
-                    <li class="nav-item {{($tab_active_class == 'active')? '' : 'disabled'}}">
-                        <a class="nav-link {{$tab_active_class}}" id="questions-tab" data-toggle="tab" href="#questions" role="tab"
-                           aria-controls="socials" aria-selected="false"><span
-                                    class="tab-title">Choose Questions</span>
-                            <span class="tab-detail">Choose Questions from topics</span></a>
-                    </li>
-
-                    @php  $is_disable_preview = (!empty($assignment->quizQuestionsList) && count($assignment->quizQuestionsList) > 0)? '' : 'disabled'; @endphp
-
-                    <li class="nav-item {{$is_disable_preview}}">
-                        <a class="nav-link" id="preview-tab" data-toggle="tab" href="#preview"
-                           role="tab"
-                           aria-controls="features" aria-selected="false"><span
-                                    class="tab-title">Test preview</span>
-                            <span class="tab-detail">Preview assignment</span></a>
-                    </li>
                 </ul>
                 <a href="javascript:;" class="col-2 col-md-2 col-lg-2 rurera-btn-grn rurera-confirm-dialog ml-auto" data-title="Are you sure?" data-subtitle="You will not be able to edit the assignment after publishing." data-on_confirm="publish_assignment();">Publish</a>
             </div>
@@ -88,7 +71,7 @@
 
                             <div class="tab-content" id="myTabContent2">
                                 @php $show_class = ($assignment->subtopic_id > 0)? '' : 'active show'; @endphp
-                                <div class="tab-pane mt-3 fade {{$show_class}}" id="topics" role="tabpanel"
+                                <div class="tab-pane mt-3 fade active show" id="topics" role="tabpanel"
                                      aria-labelledby="topics-tab">
                                     <div class="row col-lg-12 col-md-12 col-sm-4 col-12">
                                         <div class="populated-content-area col-lg-12 col-md-12 col-sm-12 col-12">
@@ -103,24 +86,19 @@
                                     </div>
                                     <input class="topic_id_value" type="hidden" name="ajax[{{$assignment->id}}][topic_id]" value="{{$assignment->topic_id}}">
                                     <input class="subtopic_id_value" type="hidden" name="ajax[{{$assignment->id}}][subtopic_id]" value="{{$assignment->subtopic_id}}">
-                                </div>
+									
+									
+									 <div class="" id="questions">
+										<div class="row col-lg-12 col-md-12 col-sm-12 col-12">
+											<div class="col-lg-4 col-md-4 col-sm-12 col-4 selected-questions-group questions-group-select1">
 
-
-                                @php $show_class = ($assignment->subtopic_id > 0)? 'active show' : ''; @endphp
-                                <div class="tab-pane mt-3 fade {{$show_class}}" id="questions" role="tabpanel"
-                                     aria-labelledby="questions-tab">
-                                    <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <div class="col-lg-4 col-md-4 col-sm-12 col-4 selected-questions-group questions-group-select1">
-
-                                        </div>
-                                        <div class="col-lg-8 col-md-8 col-sm-12 col-8 single-question-preview">
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="tab-pane mt-3 fade assignment-preview" id="preview" role="tabpanel"
-                                     aria-labelledby="preview-tab">
+											</div>
+											<div class="col-lg-8 col-md-8 col-sm-12 col-8 single-question-preview">
+											</div>
+										</div>
+									</div>
+									
+									<div class="assignment-preview" id="preview">
 
 
                                     <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
@@ -162,8 +140,13 @@
 
 
                                 </div>
+									
+									
+                                </div>
 
 
+                                @php $show_class = ($assignment->subtopic_id > 0)? 'active show' : ''; @endphp
+                                
                             </div>
 
 
