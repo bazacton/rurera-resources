@@ -634,7 +634,36 @@
                                         </ul>
                                         <div class="tab-content" id="myTabContent4">
                                             <div class="tab-pane fade show active" id="featured" role="tabpanel" aria-labelledby="featured-tab">
-                                            Featured List
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-4 col-md-4">
+                                                        <div class="listing-card mb-15 bg-white panel-border rounded-sm">
+                                                            <div class="img-holder">
+                                                                <figure>
+                                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                                                </figure>
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="listing-lable">Assesment</span>
+                                                                <h3><a href="#">Sciency Science</a></h3>
+                                                                <ul class="list-options">
+                                                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 8 questions</li>
+                                                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 1st-4th Grade</li>
+                                                                    <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Science</li>
+                                                                </ul>
+                                                                <div class="author-info">
+                                                                    <span class="img-box"><img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt=""></span>
+                                                                    <span class="info-text">
+                                                                        <span>Kaiser K</span>
+                                                                        <span>2 hours ago</span>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="listing-controls">
+                                                                    <button class="continue-btn">Continue editing</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="tab-pane fade" id="community" role="tabpanel" aria-labelledby="community-tab">
                                             Community
