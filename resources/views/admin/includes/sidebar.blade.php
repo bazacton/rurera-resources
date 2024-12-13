@@ -240,7 +240,7 @@
 			
 			<li class="nav-item {{ (request()->is('admin/custom_page/my_library')) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/custom_page/my_library') }}" class="nav-link">
-                    <img src="/assets/default/svgs/library-book.svg" alt="">
+                    <i class="fas fa-th"></i>
                     <span>My Library</span>
                 </a>
             </li>
