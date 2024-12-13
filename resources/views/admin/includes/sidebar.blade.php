@@ -11,8 +11,8 @@
             </a>
         </div>
 		@if(auth()->user()->isTeacher() || auth()->user()->isAdminTeacher())
-        <div class="sidebar-brand">
-            Create Button
+        <div class="create-modal-btn">
+            <button type="button">Create Button</button>
         </div>
         @endif
         @if(!auth()->user()->isTeacher() && !auth()->user()->isAdminTeacher())
