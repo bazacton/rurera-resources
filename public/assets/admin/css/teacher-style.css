@@ -2112,7 +2112,6 @@ span.field-separated span:after {
     padding-bottom: 25px;
 }
 .questions-inner-tabs .nav-tabs {
-    display: inline-flex;
     border: 1px solid #ddd;
     flex-wrap: nowrap;
     padding: 10px;
