@@ -2400,9 +2400,10 @@ span.field-separated span:after {
     width: calc(100% - 380px);
 }
 .featured-controls button.active {
-    background-color: var(--purple);
     color: #fff;
     box-shadow: 0 0 0 1px #5b14dd inset;
+    background: rgb(145, 70, 242);
+    background: linear-gradient(0deg, rgba(145, 70, 242, 1) 25%, rgba(113, 20, 240, 1) 100%);
 }
 .search-filters {
     display: flex;
