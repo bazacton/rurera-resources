@@ -1974,6 +1974,32 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="search-filters">
+                                    <div class="select-field">
+                                         <span>By:</span>
+                                        <select>
+                                            <option value="All providers">All providers</option>
+                                            <option value="All providers">All providers</option>
+                                            <option value="All providers">All providers</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-field">
+                                         <span>Capability:</span>
+                                        <select>
+                                            <option value="All providers">Embeddings</option>
+                                            <option value="All providers">Embeddings</option>
+                                            <option value="All providers">Embeddings</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-field">
+                                         <span>Tag:</span>
+                                        <select>
+                                            <option value="All">All</option>
+                                            <option value="All">All</option>
+                                            <option value="All">All</option>
+                                        </select>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-12 col-lg-4 col-md-4">
                                         <div class="featured-list-sidebar">

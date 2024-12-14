@@ -2402,6 +2402,7 @@ span.field-separated span:after {
 .featured-controls button.active {
     background-color: var(--purple);
     color: #fff;
+    box-shadow: 0 0 0 1px #5b14dd inset;
 }
 /*************************************
 Qustions AI Tabs Style End
