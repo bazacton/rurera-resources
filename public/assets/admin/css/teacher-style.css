@@ -2404,6 +2404,26 @@ span.field-separated span:after {
     color: #fff;
     box-shadow: 0 0 0 1px #5b14dd inset;
 }
+.search-filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+.search-filters .select-field {
+    background-color: #f7f8fa;
+    border: 1px solid #ddd;
+    position: relative;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+.select-field select {
+    border: 0;
+    padding: 0 0;
+    background-color: inherit;
+    cursor: pointer;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
