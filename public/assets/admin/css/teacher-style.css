@@ -2472,6 +2472,15 @@ span.field-separated span:after {
     background-color: #f2f2f2;
     padding: 10px;
 }
+.questions-header-controls button {
+    background-color: #f2f2f2;
+    border: 0;
+    padding: 2px 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    outline: none;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
