@@ -2445,16 +2445,18 @@ span.field-separated span:after {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 0 15px;
 }
 .questions-header .text-holder {
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
 }
-.questions-header .text-holder h6 {
-    margin: 0;
-    font-weight: 400;
-    font-size: 14px;
+.questions-header-inner h5 {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 0;
 }
 .questions-header .text-holder .icon-box {
     height: 28px;
