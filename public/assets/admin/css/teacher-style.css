@@ -2387,6 +2387,11 @@ span.field-separated span:after {
     padding: 5px 10px;
     min-width: 120px;
 }
+.featured-controls {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
 .featured-controls button {
     border: 0;
     background-color: inherit;
