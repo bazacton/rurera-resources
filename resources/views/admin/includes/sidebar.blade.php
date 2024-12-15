@@ -2149,7 +2149,7 @@
                                                 </form>
                                             </div>
                                             <div class="view-explanation">
-                                                <div class="collapse" id="explanation-list">
+                                                <div class="collapse mb-10" id="explanation-list">
                                                     <ul>
                                                         <li>1. Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
                                                         <li>2. Pellentesque nec est gravida eleifend turpis vsodales tortor.</li>
