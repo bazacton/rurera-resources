@@ -2157,7 +2157,7 @@
                                         </div>
                                         <div class="quiz-layout-edit-options">
                                             <div class="controls-heading">
-                                                <h6>Question 1 -</h6> <button type="button">Add question title</button> 
+                                                <h6>Question 2 -</h6> <button type="button">Add question title</button> 
                                             </div>
                                             <div class="edit-options-right">
                                                 <div class="edit-options-controls">
@@ -2322,7 +2322,7 @@
                                         </div>
                                         <div class="quiz-layout-edit-options">
                                             <div class="controls-heading">
-                                                <h6>Question 1 -</h6> <button type="button">Add question title</button> 
+                                                <h6>Question 3 -</h6> <button type="button">Add question title</button> 
                                             </div>
                                             <div class="edit-options-right">
                                                 <div class="edit-options-controls">
