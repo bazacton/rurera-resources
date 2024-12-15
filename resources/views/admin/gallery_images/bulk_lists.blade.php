@@ -739,6 +739,7 @@ ul.crop_sizes {
 				$('[name="example_question_id"][value="'+template_id+'"]').val(0);
 				$(this).closest('.template-item').removeClass('active');
 			}else{
+				$(".template-item").removeClass('active');
 				$('.example_question_id').val(template_id);
 				$(this).closest('.template-item').addClass('active');
 			}
