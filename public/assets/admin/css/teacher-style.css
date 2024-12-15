@@ -2504,7 +2504,6 @@ span.field-separated span:after {
     color: var(--blue);
     outline: none;
     position: relative;
-    margin-left: auto;
 }
 .view-explanation button:after {
     content: "";
