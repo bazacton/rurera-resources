@@ -283,6 +283,7 @@ ul.crop_sizes {
 									<th class="text-left">Questions</th>
                                     <th class="text-left">Status</th>
                                     <th class="text-left">Added Date</th>
+                                    <th class="text-left">Updated By</th>
                                     <th>{{ trans('admin/main.actions') }}</th>
                                 </tr>
 
@@ -332,7 +333,20 @@ ul.crop_sizes {
 										@endif	
 									</td>
                                     <td class="text-left" data-id="user">{{ $GalleryBulkListObj->status }}</td>
-                                    <td class="text-left" data-id="created_at">{{ dateTimeFormat($GalleryBulkListObj->created_at, 'j M y | H:i') }}</td>
+                                    <td class="text-left" data-id="created_at">
+									@if($GalleryBulkListObj->status == 'Pending')
+										-
+									@else
+										{{dateTimeFormat($GalleryBulkListObj->updated_at, 'j M y | H:i')}}
+									@endif
+									</td>
+									<td class="text-left" data-id="created_at">
+									@if($GalleryBulkListObj->status == 'Pending')
+										-
+									@else
+										{{$GalleryBulkListObj->updatedUser->get_full_name()}}
+									@endif
+									</td>
                                     <td data-id="action">
 										
                                         @if($GalleryBulkListObj->status == 'Pending')
