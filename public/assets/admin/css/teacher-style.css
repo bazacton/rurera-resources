@@ -2526,7 +2526,9 @@ span.field-separated span:after {
     color: #555;
 }
 .admin_teacher_role button,
-.admin_teacher_role button:focus {
+.admin_teacher_role button:focus,
+.admin_teacher_role select,
+.admin_teacher_role select:focus {
     outline: none;
 }
 /*************************************
