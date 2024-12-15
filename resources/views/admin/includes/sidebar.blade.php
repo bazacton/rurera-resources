@@ -2044,8 +2044,7 @@
                                             <div class="questions-header-inner">
                                                 <div class="text-holder">
                                                     <span class="icon-box"><img src="/assets/default/svgs/question-count.svg" alt=""></span>
-                                                    <h6>Exploring Magnetic Matrials and Their Uses</h6>
-                                                    <small>18 questions</small>
+                                                    <h6>Exploring Magnetic Matrials and Their Uses<small>18 questions</small></h6>
                                                 </div>
                                                 <div class="questions-header-controls">
                                                     <button type="button"><i class="fas fa-add"></i>Add all 18 questions</button>
