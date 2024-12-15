@@ -2365,9 +2365,7 @@
                                                         <div class="question-layout row d-flex align-items-start">
                                                         <div class="rureraform-col rureraform-col-12">
                                                             <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                            <div class="question-label question_heading">
-                                                                <span>Read the text and choose the correct answer.</span>
-                                                            </div>
+                                                                <h6>Read the text and choose the correct answer.</h6>
                                                             </div>
                                                         </div>
                                                         <div class="rureraform-col rureraform-col-12">
