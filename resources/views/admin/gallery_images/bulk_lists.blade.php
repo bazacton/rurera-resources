@@ -283,7 +283,7 @@ ul.crop_sizes {
 									<th class="text-left">Questions</th>
                                     <th class="text-left">Status</th>
                                     <th class="text-left">Added Date</th>
-                                    <th class="text-left">Updated By</th>
+                                    <th class="text-left">User</th>
                                     <th>{{ trans('admin/main.actions') }}</th>
                                 </tr>
 
