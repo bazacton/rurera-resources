@@ -2509,18 +2509,18 @@ span.field-separated span:after {
 .view-explanation button:after {
     content: "";
     position: absolute;
-    right: 0;
+    right: -5px;
     top: 50%;
     height: 8px;
     width: 8px;
     border-bottom: 1px solid;
     border-right: 1px solid;
-    transform: rotate(45deg) translateY(-50%);
-    margin-top: -2px;
+    transform: rotate(-135deg) translateY(-50%);
+    margin-top: -3px;
 }
 .view-explanation button.collapsed:after {
     transform: rotate(45deg) translateY(-50%);
-    margin-top: -3px;
+    right: 0;
 }
 
 .view-explanation {
