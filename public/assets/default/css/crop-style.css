@@ -1,0 +1,6 @@
+#image_preview { width:300px; }
+#crop_popup .modal-dialog { max-width:700px; }
+.image-crop-area {
+  height: 400px;
+  overflow: auto; 
+}
