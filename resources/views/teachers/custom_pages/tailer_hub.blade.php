@@ -987,6 +987,22 @@
                                                     </div>
                                                 </form>
                                             </div>
+                                            <div class="view-explanation">
+                                                <div class="explanation-controls d-flex align-items-center">
+                                                    <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list2" aria-expanded="false" aria-controls="explanation-list">
+                                                        View Explanation
+                                                    </button>
+                                                </div>
+                                                <div class="collapse" id="explanation-list2">
+                                                    <ul class="mt-10">
+                                                        <li>1. Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
+                                                        <li>2. Pellentesque nec est gravida eleifend turpis vsodales tortor.</li>
+                                                        <li>3. Vivamus dapibus nunc necm consectetur lacinia.</li>
+                                                        <li>4. Phasellus non turpis dignissim mattis tellus nec malesuada.</li>
+                                                        <li>5. Pellentesque efficitur erat in interdum viverra.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="quiz-layout-edit-options">
                                             <div class="controls-heading">
@@ -1069,6 +1085,22 @@
                                                     </div>
                                                     </div>
                                                 </form>
+                                            </div>
+                                            <div class="view-explanation">
+                                                <div class="explanation-controls d-flex align-items-center">
+                                                    <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list3" aria-expanded="false" aria-controls="explanation-list">
+                                                        View Explanation
+                                                    </button>
+                                                </div>
+                                                <div class="collapse" id="explanation-list3">
+                                                    <ul class="mt-10">
+                                                        <li>1. Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
+                                                        <li>2. Pellentesque nec est gravida eleifend turpis vsodales tortor.</li>
+                                                        <li>3. Vivamus dapibus nunc necm consectetur lacinia.</li>
+                                                        <li>4. Phasellus non turpis dignissim mattis tellus nec malesuada.</li>
+                                                        <li>5. Pellentesque efficitur erat in interdum viverra.</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
