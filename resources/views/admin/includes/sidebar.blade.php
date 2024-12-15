@@ -2037,6 +2037,20 @@
                                                     <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Science</li>
                                                 </ul>
                                             </div>
+                                            <div class="view-explanation">
+                                                <div class="collapse" id="explanation-list">
+                                                    <ul>
+                                                        <li>1. Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
+                                                        <li>2. Pellentesque nec est gravida eleifend turpis vsodales tortor.</li>
+                                                        <li>3. Vivamus dapibus nunc necm consectetur lacinia.</li>
+                                                        <li>4. Phasellus non turpis dignissim mattis tellus nec malesuada.</li>
+                                                        <li>5. Pellentesque efficitur erat in interdum viverra.</li>
+                                                    </ul>
+                                                </div>
+                                                <button type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
+                                                    View Explanation
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-8 col-md-8">
