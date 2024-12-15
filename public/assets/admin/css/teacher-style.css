@@ -2531,6 +2531,45 @@ span.field-separated span:after {
 .admin_teacher_role select:focus {
     outline: none;
 }
+
+.question-top-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question-count {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.question-count .icon-box {
+    height: 18px;
+    width: 18px;
+    background-color: #333;
+    border-radius: 3px;
+}
+
+.question-count .question-count-lable {
+    color: #333;
+    margin-left: 5px;
+}
+
+.question-info {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.question-info .q-type {
+    background-color: #f2f2f2;
+    padding: 5px 15px;
+    line-height: normal;
+    border-radius: 3px;
+    color: #333;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
