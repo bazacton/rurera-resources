@@ -2088,7 +2088,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="question-layout-holder mb-15 bg-white panel-border rounded-sm p-25">
+                                        <div class="question-layout-holder mb-35 bg-white panel-border rounded-sm p-25">
                                             <div class="question-layout-block">
                                                 <form class="question-fields" action="javascript:;" data-question_id="10180">
                                                 <div class="left-content has-bg">
@@ -2202,7 +2202,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="mb-15 bg-white panel-border rounded-sm p-25">
+                                        <div class="mb-35 bg-white panel-border rounded-sm p-25">
                                             <div class="question-layout-block">
                                                 <form class="question-fields" action="javascript:;" data-question_id="10180">
                                                     <div class="left-content has-bg">
