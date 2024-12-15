@@ -770,6 +770,7 @@ ul.crop_sizes {
 		});
 		$(document).on('click', '.crop-image-back-btn', function () {
 			$(".preview-cropped-img").html('');
+			$(".preview-cropped-img").html('');
 			$(".image-upload-block").removeClass('rurera-hide');
 			$(".template-selection").addClass('rurera-hide');		
 		});
@@ -979,6 +980,7 @@ ul.crop_sizes {
 			$(".image-upload-block").removeClass('rurera-hide');
 			$(".template-selection").addClass('rurera-hide');	
 			$(".image-crop-area").html('');
+			$(".preview-cropped-img").html('');
 			$(".preview-cropped-img").html('');
 			$('.template-item').removeClass('active');
 			var bulk_list_id = $(this).attr('data-id');
