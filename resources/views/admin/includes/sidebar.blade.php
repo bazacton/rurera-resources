@@ -1962,31 +1962,6 @@
                         <div class="tab-pane fade" id="q-collections" role="tabpanel" aria-labelledby="q-collections-tab">
                             <div class="staff-picks-tabs">
                                 <div class="mb-30 bg-white panel-border rounded-sm p-15">
-                                    <div class="quiz-setup-sidenav">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fas fa-user"></i> Created by me
-                                                </a>
-                                                <span class="count-number">1</span>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                <i class="fas fa-file-import"></i> Imported</a>
-                                                <span class="count-number">0</span>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                <i class="fas fa-history"></i> Perviously used</a>
-                                                <span class="count-number">0</span>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                <i class="fas fa-heart"></i> Liked by me</a>
-                                                <span class="count-number">0</span>
-                                            </li>
-                                        </ul>
-                                    </div>
                                     <div class="rureraform-search-field">
                                         <div class="input-field">
                                             <input type="text" placeholder="Search question..">
