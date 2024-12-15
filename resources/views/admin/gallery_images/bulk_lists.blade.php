@@ -769,12 +769,9 @@ ul.crop_sizes {
 			}
 		});
 		$(document).on('click', '.crop-image-back-btn', function () {
-			$(".preview-cropped-img").html('');
-			$(".preview-cropped-img").html('');
-			$(".preview-cropped-img img").remove();
-			console.log('remove-image-block');
+			$(".preview-cropped-img").html("");
 			$(".image-upload-block").removeClass('rurera-hide');
-			$(".template-selection").addClass('rurera-hide');		
+			$(".template-selection").addClass('rurera-hide');	
 		});
 		
 	
