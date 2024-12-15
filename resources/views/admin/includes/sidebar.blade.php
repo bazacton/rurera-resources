@@ -2632,7 +2632,7 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="collection" role="tabpanel" aria-labelledby="collection-tab">
-                            <div class="my-collections">
+                            <div class="staff-picks-tabs">
                                 <div class="mb-30 bg-white panel-border rounded-sm p-15">
                                     <div class="rureraform-search-field">
                                         <div class="input-field">
@@ -2643,6 +2643,32 @@
                                             <button type="button" class="active">Featured List</button>
                                             <button type="button">Community</button>
                                             <button type="button">My Collection</button>
+                                        </div>
+                                    </div>
+                                    <div class="search-filters mb-0">
+                                        <div class="select-field">
+                                            <span>By:</span>
+                                            <select>
+                                                <option value="All providers">All providers</option>
+                                                <option value="All providers">All providers</option>
+                                                <option value="All providers">All providers</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-field">
+                                            <span>Capability:</span>
+                                            <select>
+                                                <option value="All providers">Embeddings</option>
+                                                <option value="All providers">Embeddings</option>
+                                                <option value="All providers">Embeddings</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-field">
+                                            <span>Tag:</span>
+                                            <select>
+                                                <option value="All">All</option>
+                                                <option value="All">All</option>
+                                                <option value="All">All</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
