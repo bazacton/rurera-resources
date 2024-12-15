@@ -2047,7 +2047,7 @@
                                                     <h6>Exploring Magnetic Matrials and Their Uses<small>18 questions</small></h6>
                                                 </div>
                                                 <div class="questions-header-controls">
-                                                    <button type="button"><i class="fas fa-add"></i>Add all 18 questions</button>
+                                                    <button type="button"><img src="/assets/default/svgs/plus-circle.svg" alt="">Add all 18 questions</button>
                                                 </div>
                                             </div>
                                         </div>
