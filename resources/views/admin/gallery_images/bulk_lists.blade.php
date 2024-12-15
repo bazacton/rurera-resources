@@ -980,7 +980,6 @@ ul.crop_sizes {
 			$(".template-selection").addClass('rurera-hide');	
 			$(".image-crop-area").html('');
 			$(".preview-cropped-img").html('');
-			$(".preview-cropped-img").html('');
 			$('.template-item').removeClass('active');
 			var bulk_list_id = $(this).attr('data-id');
 			$('.bulk_list_id').val(bulk_list_id);
