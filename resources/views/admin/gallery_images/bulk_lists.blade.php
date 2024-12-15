@@ -771,6 +771,7 @@ ul.crop_sizes {
 		$(document).on('click', '.crop-image-back-btn', function () {
 			$(".preview-cropped-img").html('');
 			$(".preview-cropped-img").html('');
+			console.log('remove-image-block');
 			$(".image-upload-block").removeClass('rurera-hide');
 			$(".template-selection").addClass('rurera-hide');		
 		});
