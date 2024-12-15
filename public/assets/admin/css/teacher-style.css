@@ -2520,9 +2520,14 @@ span.field-separated span:after {
 }
 .view-explanation ul {
     background-color: #f9f9f9;
+    border: 1px solid #ddd;
     padding: 15px;
     border-radius: 5px;
     color: #555;
+}
+.admin_teacher_role button,
+.admin_teacher_role button:focus {
+    outline: none;
 }
 /*************************************
 Qustions AI Tabs Style End
