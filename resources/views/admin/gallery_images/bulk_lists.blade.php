@@ -260,7 +260,7 @@ ul.crop_sizes {
             <div class="col-12 col-md-12">
                 <div class="card">
                     
-                    <div class="card-header">
+                    <div class="card-header rurera-hide">
 						@can('admin_gallery_images_create')
 							<div class="text-right">
                             <a href="javascript:;" class="create-gallery-bulk-list-btn btn btn-primary">Create Gallery Bulk List</a>
@@ -312,6 +312,11 @@ ul.crop_sizes {
 										@if(!empty($image_recomendations))
 											@foreach($image_recomendations as $image_recomendation_data)
 												@php $searchable_keywords = isset( $image_recomendation_data['searchable_keywords'] )? $image_recomendation_data['searchable_keywords'] : '';
+												
+												if(is_array ($searchable_keywords)){
+													$searchable_keywords = implode(' ', $searchable_keywords);
+												}
+												
 												$explanation = isset( $image_recomendation_data['explanation'] )? $image_recomendation_data['explanation'] : '';
 												@endphp
 												Keywords: {{$searchable_keywords}}<br>
