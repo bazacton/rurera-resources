@@ -2043,7 +2043,7 @@
                                         <div class="questions-header">
                                             <div class="questions-header-inner">
                                                 <div class="text-holder">
-                                                    <h2>Exploring Magnetic Matrials and Their Uses<small>(18 questions)</small></h2>
+                                                    <h5>Exploring Magnetic Matrials and Their Uses<small>(18 questions)</small></h5>
                                                 </div>
                                                 <div class="questions-header-controls">
                                                     <button type="button"><img src="/assets/default/svgs/plus-circle.svg" alt="">Add all 18 questions</button>
