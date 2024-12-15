@@ -145,6 +145,7 @@ $(document).ready(function(){
 	  $(".template-item").addClass('rurera-hide');
 	  $(".template-item."+size_class).removeClass('rurera-hide');
   });
+  $(".crop_sizes li.active").click();
 });
 
 function init_crop_function(image_id, file_name, img_link){
