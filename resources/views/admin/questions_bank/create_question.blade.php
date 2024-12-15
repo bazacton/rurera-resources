@@ -5,6 +5,8 @@ $element_properties_meta    = element_properties_meta($chapters);
 $tabs_options    = tabs_options();
 $rand_id = rand(999,99999);
 
+$sizes_reference = isset( $questionObj->sizes_reference )? json_decode($questionObj->sizes_reference) : array();
+$sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_reference);
 @endphp
 
 
@@ -1042,6 +1044,20 @@ $rand_id = rand(999,99999);
                                                                     <label class="custom-switch-description mb-0 cursor-pointer"
                                                                            for="is_shortlisted">Shortlist Question</label>
                                                             </label>
+                                                        </div>
+                                                    </div>
+													<div class="col-lg-12 col-md-12 col-12 mt-20">
+                                                        <div class="form-group">
+                                                            <label class="input-label">Sizes Reference</label>
+                                                            <select name="sizes_reference[]" class="custom-select select2" multiple>
+																@php $sizes_references = sizes_references(); @endphp
+																@if(!empty( $sizes_references ))
+																	@foreach( $sizes_references as $size_reference_index => $size_reference_data)
+																		@php $size_reference_label = isset( $size_reference_data['label'] )? $size_reference_data['label'] : ''; @endphp
+																		<option value="{{$size_reference_index}}" {{ in_array($size_reference_index, $sizes_reference) ? 'selected' : '' }}>{{$size_reference_label}}</option>
+																	@endforeach
+																@endif
+															</select>
                                                         </div>
                                                     </div>
 													
