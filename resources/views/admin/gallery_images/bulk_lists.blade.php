@@ -769,6 +769,7 @@ ul.crop_sizes {
 			}
 		});
 		$(document).on('click', '.crop-image-back-btn', function () {
+			$(".preview-cropped-img").html('');
 			$(".image-upload-block").removeClass('rurera-hide');
 			$(".template-selection").addClass('rurera-hide');		
 		});
