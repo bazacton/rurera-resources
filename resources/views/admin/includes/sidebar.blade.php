@@ -2047,7 +2047,7 @@
                                                         <li>5. Pellentesque efficitur erat in interdum viverra.</li>
                                                     </ul>
                                                 </div>
-                                                <button type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
+                                                <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
                                                     View Explanation
                                                 </button>
                                             </div>
