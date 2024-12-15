@@ -1792,7 +1792,7 @@ Tailer Hub Style Start
     display: inline-flex;
     align-items: center;
 }
-.controls-heading h6 {
+.admin_teacher_role .controls-heading h6 {
     font-size: 14px;
     margin: 0;
     color: #333;
