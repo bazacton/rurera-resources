@@ -2458,6 +2458,10 @@ span.field-separated span:after {
     gap: 5px;
     margin-bottom: 0;
 }
+.questions-header-inner h5 small {
+    font-weight: 500;
+    font-size: 14px;
+}
 .questions-header .text-holder .icon-box {
     height: 28px;
     width: 28px;
