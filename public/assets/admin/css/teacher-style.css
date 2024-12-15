@@ -1788,25 +1788,6 @@ Tailer Hub Style Start
     display: flex;
     align-items: center;
 }
-.controls-heading {
-    display: inline-flex;
-    align-items: center;
-}
-.admin_teacher_role .controls-heading h6 {
-    font-size: 14px;
-    margin: 0;
-    color: #333;
-}
-.controls-heading button {
-    border: 0;
-    background-color: inherit;
-    padding: 0;
-    font-size: 14px;
-    color: #6c757d;
-    line-height: normal;
-    margin-left: 5px;
-    outline: none;
-}
 .edit-options-controls .poll-btn, .edit-options-controls .edit-btn {
     padding: 0 10px;
 }
