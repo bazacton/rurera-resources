@@ -764,7 +764,7 @@
                                                         <div class="rureraform-col rureraform-col-12">
                                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                                             <div class="question-label question_label">
-                                                            <span>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</span>
+                                                                <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
                                                             </div>
                                                         </div>
                                                         </div>
