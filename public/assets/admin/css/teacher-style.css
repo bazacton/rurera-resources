@@ -2496,6 +2496,19 @@ span.field-separated span:after {
     width: 12px;
     margin-right: 5px;
 }
+.view-explanation button {
+    border: 0;
+    background-color: inherit;
+    margin-top: 10px;
+    line-height: normal;
+    padding: 0;
+    text-decoration: underline;
+    color: var(--blue);
+    outline: none;
+}
+.view-explanation {
+    margin: 0 0 25px;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
