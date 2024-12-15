@@ -2437,6 +2437,10 @@ span.field-separated span:after {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 .questions-header .text-holder {
     display: inline-flex;
@@ -2446,6 +2450,7 @@ span.field-separated span:after {
 .questions-header .text-holder h6 {
     margin: 0;
     font-weight: 400;
+    font-size: 14px;
 }
 .questions-header .text-holder .icon-box {
     height: 28px;
@@ -2464,6 +2469,8 @@ span.field-separated span:after {
 }
 .questions-header {
     margin-bottom: 15px;
+    background-color: #f2f2f2;
+    padding: 10px;
 }
 /*************************************
 Qustions AI Tabs Style End
