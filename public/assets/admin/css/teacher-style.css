@@ -2521,6 +2521,12 @@ span.field-separated span:after {
     transform: rotate(45deg) translateY(-50%);
     right: 0;
 }
+.view-explanation .collapse {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    color: #555;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
