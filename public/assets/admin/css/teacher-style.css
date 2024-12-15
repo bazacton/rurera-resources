@@ -2395,6 +2395,7 @@ span.field-separated span:after {
     font-weight: 600;
     border-radius: 5px;
     line-height: normal;
+    outline: none;
 }
 .staff-picks-tabs .rureraform-search-field .input-field {
     width: calc(100% - 380px);
