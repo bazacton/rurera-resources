@@ -2395,7 +2395,7 @@ span.field-separated span:after {
 .featured-controls button {
     border: 0;
     background-color: inherit;
-    padding: 8px 15px;
+    padding: 12px 16px;
     color: #333;
     font-weight: 600;
     border-radius: 5px;
