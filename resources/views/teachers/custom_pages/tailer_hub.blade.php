@@ -14,7 +14,7 @@
 
     <div class="section-body">
     <div class="row">
-            <div class="col-12 col-md-9 col-lg-9">
+            <div class="col-12 col-md-9 col-lg-9 mx-auto">
                 <div class="d-flex align-items-center justify-content-between flex-wrap mb-20">
                     <div class="section-header mb-0 pb-0">
                         <h1>Tailer Hub <button class="setting-btn" type="button" data-toggle="tooltip" data-placement="top" title="Settings"><img src="/assets/default/svgs/settings.svg" alt=""></button></h1>
