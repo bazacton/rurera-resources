@@ -2518,7 +2518,7 @@ span.field-separated span:after {
     transform: rotate(45deg) translateY(-50%);
     right: 0;
 }
-.view-explanation .collapse {
+.view-explanation ul {
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 5px;
