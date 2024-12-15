@@ -2427,6 +2427,44 @@ span.field-separated span:after {
     background-color: inherit;
     cursor: pointer;
 }
+.questions-header .icon-box img {
+    height: 15px;
+    width: 15px;
+    filter: invert(75%) sepia(4%) saturate(20%) hue-rotate(338deg) brightness(97%) contrast(85%);
+}
+.questions-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.questions-header .text-holder {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.questions-header .text-holder h6 {
+    margin: 0;
+    font-weight: 400;
+}
+.questions-header .text-holder .icon-box {
+    height: 28px;
+    width: 28px;
+    background-color: #f2f2f2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.questions-header .text-holder small {
+    display: block;
+    line-height: normal;
+    margin-top: 2px;
+}
+.questions-header {
+    margin-bottom: 15px;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
