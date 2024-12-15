@@ -2040,6 +2040,18 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-8 col-md-8">
+                                        <div class="questions-header">
+                                            <div class="questions-header-inner">
+                                                <div class="text-holder">
+                                                    <span class="icon-box"></span>
+                                                    <h6>Exploring Magnetic Matrials and Their Uses</h6>
+                                                    <small>18 questions</small>
+                                                </div>
+                                                <div class="questions-header-controls">
+                                                    <button type="button"><i class="fas fa-add"></i>Add all 18 questions</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="quiz-layout-edit-options">
                                             <div class="controls-heading">
                                                 <h6>Question 1 -</h6> <button type="button">Add question title</button> 
