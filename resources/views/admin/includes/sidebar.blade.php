@@ -2642,13 +2642,3 @@
         </div>
     </div>
 </div>
-@push('scripts_bottom')
-<script>
-    function openModal(q-collections) {
-    const url = new URL(window.location.href);
-    url.searchParams.set('modal', q-collections); // Add or update `modal` parameter
-    window.history.pushState({}, '', url); // Update the URL without refreshing
-    document.getElementById(q-collections).style.display = 'block'; // Open modal
-}
-</script>
-@endpush
