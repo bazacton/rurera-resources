@@ -1962,7 +1962,7 @@
                         <div class="tab-pane fade" id="q-collections" role="tabpanel" aria-labelledby="q-collections-tab">
                             <div class="staff-picks-tabs">
                                 <div class="mb-30 bg-white panel-border rounded-sm p-15">
-                                    <div class="rureraform-search-field">
+                                    <div class="rureraform-search-field mb-15">
                                         <div class="input-field">
                                             <input type="text" placeholder="Search question..">
                                             <button type="button"><i class="fas fa-search"></i> Search questions</button>
@@ -1973,31 +1973,31 @@
                                             <button type="button">My Collection</button>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="search-filters">
-                                    <div class="select-field">
-                                         <span>By:</span>
-                                        <select>
-                                            <option value="All providers">All providers</option>
-                                            <option value="All providers">All providers</option>
-                                            <option value="All providers">All providers</option>
-                                        </select>
-                                    </div>
-                                    <div class="select-field">
-                                         <span>Capability:</span>
-                                        <select>
-                                            <option value="All providers">Embeddings</option>
-                                            <option value="All providers">Embeddings</option>
-                                            <option value="All providers">Embeddings</option>
-                                        </select>
-                                    </div>
-                                    <div class="select-field">
-                                         <span>Tag:</span>
-                                        <select>
-                                            <option value="All">All</option>
-                                            <option value="All">All</option>
-                                            <option value="All">All</option>
-                                        </select>
+                                    <div class="search-filters mb-0">
+                                        <div class="select-field">
+                                            <span>By:</span>
+                                            <select>
+                                                <option value="All providers">All providers</option>
+                                                <option value="All providers">All providers</option>
+                                                <option value="All providers">All providers</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-field">
+                                            <span>Capability:</span>
+                                            <select>
+                                                <option value="All providers">Embeddings</option>
+                                                <option value="All providers">Embeddings</option>
+                                                <option value="All providers">Embeddings</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-field">
+                                            <span>Tag:</span>
+                                            <select>
+                                                <option value="All">All</option>
+                                                <option value="All">All</option>
+                                                <option value="All">All</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
