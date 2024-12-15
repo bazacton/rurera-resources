@@ -2006,7 +2006,6 @@
                                             <div class="featured-filters">
                                                 <div class="text-box">
                                                     <h6>Reported Oprations</h6>
-                                                    <span>Risky jobs on the..</span>
                                                 </div>
                                                 <div class="select-field">
                                                     <select>
