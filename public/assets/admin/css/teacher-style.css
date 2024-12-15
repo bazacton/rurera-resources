@@ -2499,13 +2499,32 @@ span.field-separated span:after {
 .view-explanation button {
     border: 0;
     background-color: inherit;
-    margin-top: 10px;
     line-height: normal;
-    padding: 0;
+    padding: 0 15px 0 0;
     text-decoration: underline;
     color: var(--blue);
     outline: none;
+    position: relative;
 }
+.view-explanation button:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 8px;
+    width: 8px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    transform: rotate(45deg) translateY(-50%);
+    margin-top: -2px;
+}
+.view-explanation button.collapsed:after {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    transform: rotate(-45deg) translateY(-50%);
+    margin-top: -2px;
+}
+
 .view-explanation {
     margin: 0 0 25px;
 }
