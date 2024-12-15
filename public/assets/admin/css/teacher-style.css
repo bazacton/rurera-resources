@@ -2570,6 +2570,22 @@ span.field-separated span:after {
     border-radius: 3px;
     color: #333;
 }
+.question-info .q-time {
+    position: relative;
+    padding-right: 15px;
+}
+
+.question-info .q-time:after {
+    content: "";
+    height: 5px;
+    width: 5px;
+    background-color: #ddd;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 100%;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
