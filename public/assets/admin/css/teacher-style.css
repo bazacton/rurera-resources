@@ -1988,6 +1988,9 @@ Qustions AI Tabs Style Start
     color: #333;
     margin: 0 0 25px;
 }
+.question-ai-tabs .rureraform-element h6 {
+    margin-bottom: 0;
+}
 .question-ai-tabs .tab-content {
     padding: 25px 0 0;
 }
