@@ -2501,7 +2501,6 @@ span.field-separated span:after {
     background-color: inherit;
     line-height: normal;
     padding: 0 15px 0 0;
-    text-decoration: underline;
     color: var(--blue);
     outline: none;
     position: relative;
