@@ -2043,7 +2043,7 @@
                                         <div class="questions-header">
                                             <div class="questions-header-inner">
                                                 <div class="text-holder">
-                                                    <span class="icon-box"></span>
+                                                    <span class="icon-box"><img src="/assets/default/svgs/question-count.svg" alt=""></span>
                                                     <h6>Exploring Magnetic Matrials and Their Uses</h6>
                                                     <small>18 questions</small>
                                                 </div>
