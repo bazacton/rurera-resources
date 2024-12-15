@@ -321,9 +321,15 @@ ul.crop_sizes {
 												$explanation = isset( $image_recomendation_data['explanation'] )? $image_recomendation_data['explanation'] : '';
 												@endphp
 												Keywords: {{$searchable_keywords}}<br>
-												Explanation: {{$explanation}}<br><br>
+												Explanation: {{$explanation}}<br>
 											@endforeach
 										@endif
+										<a href="javascript:;" class="topic_details" data-bulk_id="{{$GalleryBulkListObj->id}}">Details</a><br><br>
+										<span class="topic-part-item-details rurera-hide" data-bulk_id="{{$GalleryBulkListObj->id}}">
+										@if(isset( $GalleryBulkListObj->topicPartItem->id))
+											{!! $GalleryBulkListObj->topicPartItem->description !!}
+										@endif
+										</span>
 									</td>
                                     <td class="text-left" data-id="user">
 										@if(!empty($questions_ids))
@@ -731,6 +737,18 @@ ul.crop_sizes {
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="topic-part-details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">              
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<div class="topic-part-details copyable-text">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 @endsection
 
 @push('scripts_bottom')
@@ -742,6 +760,14 @@ ul.crop_sizes {
 	
 	<script type="text/javascript">
 		
+		
+		$(document).on('click', '.topic_details', function () {
+			var bulk_id = $(this).attr('data-bulk_id');
+			var part_item_details = $('.topic-part-item-details[data-bulk_id="'+bulk_id+'"]').html();
+			$(".topic-part-details").html(part_item_details);
+			$("#topic-part-details").modal('show');
+			
+		});
 		$(document).on('click', '.apply-template-btn', function () {
 			var formData = new FormData($('#upload_image_area_form')[0]);
 			var loaderDiv = $(".submit-btn");
