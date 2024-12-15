@@ -812,8 +812,8 @@
                                                         View Explanation
                                                     </button>
                                                 </div>
-                                                <div class="collapse mb-10" id="explanation-list">
-                                                    <ul>
+                                                <div class="collapse" id="explanation-list">
+                                                    <ul class="mt-10">
                                                         <li>1. Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
                                                         <li>2. Pellentesque nec est gravida eleifend turpis vsodales tortor.</li>
                                                         <li>3. Vivamus dapibus nunc necm consectetur lacinia.</li>
