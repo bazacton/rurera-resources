@@ -226,6 +226,7 @@ function rureraform_save(_object, question_status) {
     var hide_question = ($('[name=hide_question]').prop('checked')) ? 1 : 0;
     var is_example_question = ($('[name=is_example_question]').prop('checked')) ? 1 : 0;
     var is_shortlisted = ($('[name=is_shortlisted]').prop('checked')) ? 1 : 0;
+    var sizes_reference = $("[name='sizes_reference[]']").val();
     var glossary_ids = $("#glossary_ids").val();
 
     var new_glossaries = $(".new_glossaries")
@@ -280,6 +281,7 @@ function rureraform_save(_object, question_status) {
         "hide_question": hide_question,
         "is_example_question": is_example_question,
 		"is_shortlisted": is_shortlisted,
+		"sizes_reference" : sizes_reference,
         "action": "rureraform-form-save",
         "form-id": jQuery("#rureraform-id").val(),
         "form-options": rureraform_encode64(JSON.stringify(rureraform_form_options)),

@@ -135,10 +135,15 @@ $(document).ready(function(){
   $(document).on('click', '.crop_sizes li', function(){
 	  var crop_width = $(this).attr('data-crop_size_width');
 	  var crop_height = $(this).attr('data-crop_size_height');
+	  var size_class = $(this).attr('data-size_class');
+	  $(".crop_sizes").find('li').removeClass('active');
+	  $(this).addClass('active');
 	  $(".R-cropper").css('width' , crop_width+'px');
 	  $(".R-cropper").css('height' , crop_height+'px');
 	  $(".dynaCanvas").attr('width', crop_width);
 	  $(".dynaCanvas").attr('height', crop_height);
+	  $(".template-item").addClass('rurera-hide');
+	  $(".template-item."+size_class).removeClass('rurera-hide');
   });
 });
 

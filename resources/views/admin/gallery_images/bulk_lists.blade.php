@@ -534,8 +534,17 @@ ul.crop_sizes {
 							</div>
 							<div class="col-12 col-md-12 col-lg-12">
 								<ul class="crop_sizes">
-									<li data-crop_size_width="200" data-crop_size_height="200">200 x 200</li>
-									<li data-crop_size_width="350" data-crop_size_height="150">350 x 150</li>
+									@php $sizes_references = sizes_references(); $size_count = 1;@endphp
+									@if(!empty( $sizes_references ))
+										@foreach( $sizes_references as $size_reference_index => $size_reference_data)
+											@php $size_reference_label = isset( $size_reference_data['label'] )? $size_reference_data['label'] : ''; 
+											$size_reference_width = isset( $size_reference_data['width'] )? $size_reference_data['width'] : ''; 
+											$size_reference_height = isset( $size_reference_data['height'] )? $size_reference_data['height'] : ''; 
+											@endphp
+											<li data-size_class="{{$size_reference_index}}" data-crop_size_width="{{$size_reference_width}}" data-crop_size_height="{{$size_reference_height}}" class="{{($size_count == 1)? 'active' : ''}}">{{$size_reference_label}}</li>
+											@php $size_count++ @endphp
+										@endforeach
+									@endif
 								</ul>
 								<div id="upload-container" class="rurera-upload-area">
 									<div id="drag-drop-area">
@@ -559,8 +568,11 @@ ul.crop_sizes {
 				
 				</div>
 				<div class="template-selection rurera-hide">
-				<div class="example-selected-questions"><input type="hidden" name="example_question_id" class="example_question_id"></div>
+				<div class="example-selected-questions"></div>
 				<div class="row">
+										<div class="col-md-12 col-lg-12">
+											<button type="button" class="btn btn-primary crop-image-back-btn crop-it mt-0">Back</button>
+										</div>
 											<div class="col-12">
 											<ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                                                 <li class="nav-item">
@@ -578,13 +590,16 @@ ul.crop_sizes {
                                             </ul>
 											
 											<div class="tab-content" id="myTabContent2">
-                                                <div class="tab-pane mt-3 fade in active show" id="section-tab-Emerging" role="tabpanel" aria-labelledby="section-tab-Emerging-tab">
+                                                <div class="tab-pane mt-3 fade in active show difficulty_levels" id="section-tab-Emerging" role="tabpanel" aria-labelledby="section-tab-Emerging-tab">
 													<div class="row">
 														@if($emerging_example_questions->count() > 0)
 															@php $counter = 1; @endphp
 															@foreach($emerging_example_questions as $exampleQuestionObj)	
 																@php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
-																<div class="col-12 col-lg-4 col-md-6 {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
+																@php $sizes_reference = json_decode($exampleQuestionObj->sizes_reference); 
+																$sizes_reference_classes = is_array($sizes_reference)? implode(' ', $sizes_reference) : '';
+																@endphp
+																<div class="col-12 col-lg-4 col-md-6 {{$sizes_reference_classes}} {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
 																	<div class="template-box">
 																		<div class="rating-stars">
 																			<div class="rating-box">
@@ -613,13 +628,16 @@ ul.crop_sizes {
 													</div>
                                                 </div>
 												
-												<div class="tab-pane mt-3 fade" id="section-tab-Expected" role="tabpanel" aria-labelledby="section-tab-Expected-tab">
+												<div class="tab-pane mt-3 fade difficulty_levels" id="section-tab-Expected" role="tabpanel" aria-labelledby="section-tab-Expected-tab">
                                                    <div class="row">
 														@if($expected_example_questions->count() > 0)
 															@php $counter = 1; @endphp
 															@foreach($expected_example_questions as $exampleQuestionObj)	
 															@php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
-																<div class="col-12 col-lg-4 col-md-6 {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
+															@php $sizes_reference = json_decode($exampleQuestionObj->sizes_reference); 
+																$sizes_reference_classes = is_array($sizes_reference)? implode(' ', $sizes_reference) : '';
+																@endphp
+																<div class="col-12 col-lg-4 col-md-6 {{$sizes_reference_classes}} {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
 																	<div class="template-box">
 																		<div class="rating-stars">
 																			<div class="rating-box">
@@ -648,13 +666,16 @@ ul.crop_sizes {
 													</div>
                                                 </div>
 												
-												<div class="tab-pane mt-3 fade" id="section-tab-Exceeding" role="tabpanel" aria-labelledby="section-tab-Exceeding-tab">
+												<div class="tab-pane mt-3 fade difficulty_levels" id="section-tab-Exceeding" role="tabpanel" aria-labelledby="section-tab-Exceeding-tab">
                                                    <div class="row">
 														@if($exceeding_example_questions->count() > 0)
 															@php $counter = 1; @endphp
 															@foreach($exceeding_example_questions as $exampleQuestionObj)	
 															@php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
-																<div class="col-12 col-lg-4 col-md-6 {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
+															@php $sizes_reference = json_decode($exampleQuestionObj->sizes_reference); 
+																$sizes_reference_classes = is_array($sizes_reference)? implode(' ', $sizes_reference) : '';
+																@endphp
+																<div class="col-12 col-lg-4 col-md-6 {{$sizes_reference_classes}} {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
 																	<div class="template-box">
 																		<div class="rating-stars">
 																			<div class="rating-box">
@@ -740,21 +761,35 @@ ul.crop_sizes {
 			});
 		});
 		$(document).on('click', '.crop-image-next-btn', function () {
-			var example_questions_ids = $('[name="example_question_id"]').val();
+			if($(".dynaCanvas").length > 0){
 			$(".image-upload-block").addClass('rurera-hide');
 			$(".template-selection").removeClass('rurera-hide');		
+			}else{
+				alert('Please upload image first');
+			}
 		});
+		$(document).on('click', '.crop-image-back-btn', function () {
+			$(".image-upload-block").removeClass('rurera-hide');
+			$(".template-selection").addClass('rurera-hide');		
+		});
+		
 	
 	$(document).on('click', '.template-btn', function () {
 			var template_image = $(this).attr('data-template_image');
 			var template_name = $(this).attr('data-template_name');
 			var template_id = $(this).attr('data-template_id');
-			if($('[name="example_question_id"][value="'+template_id+'"]').length > 0){
-				$('[name="example_question_id"][value="'+template_id+'"]').val(0);
+			if($('[name="example_question_id[]"][value="'+template_id+'"]').length > 0){
+				$('[name="example_question_id[]"][value="'+template_id+'"]').remove();
 				$(this).closest('.template-item').removeClass('active');
 			}else{
-				$(".template-item").removeClass('active');
-				$('.example_question_id').val(template_id);
+				$(this).closest('.difficulty_levels').find('.template-btn').each(function () {
+					var template_id_selected = $(this).attr('data-template_id');
+					if($('[name="example_question_id[]"][value="'+template_id_selected+'"]').length > 0){
+						$('[name="example_question_id[]"][value="'+template_id_selected+'"]').remove();
+						$(this).closest('.template-item').removeClass('active');
+					}
+				});
+				$(".example-selected-questions").append('<input type="text" name="example_question_id[]" class="example_question_id" value="'+template_id+'">');
 				$(this).closest('.template-item').addClass('active');
 			}
 		});
@@ -843,11 +878,7 @@ ul.crop_sizes {
     const img = new Image();
     const url = URL.createObjectURL(file);
     img.onload = function () {
-      if (img.width > maxDimensions.width || img.height > maxDimensions.height) {
-        callback(false, `exceeds maximum dimensions of ${maxDimensions.width}x${maxDimensions.height}px.`);
-      } else {
-        callback(true);
-      }
+      callback(true);
       URL.revokeObjectURL(url);
     };
     img.onerror = function () {
@@ -944,6 +975,12 @@ ul.crop_sizes {
 		});
 		
 		$(document).on('click', '.upload-image-btn', function () {
+			$(".image-upload-block").removeClass('rurera-hide');
+			$(".template-selection").addClass('rurera-hide');	
+			$(".image-crop-area").html('');
+			$(".preview-cropped-img").html('');
+			$(".preview-cropped-img").html('');
+			$('.template-item').removeClass('active');
 			var bulk_list_id = $(this).attr('data-id');
 			$('.bulk_list_id').val(bulk_list_id);
 			$(".upload_image_area").modal('show');
