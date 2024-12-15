@@ -2395,9 +2395,9 @@ span.field-separated span:after {
 }
 .featured-controls button.active {
     color: #fff;
-    box-shadow: 0 0 0 1px #5b14dd inset;
-    background: rgb(145, 70, 242);
-    background: linear-gradient(0deg, rgba(145, 70, 242, 1) 25%, rgba(113, 20, 240, 1) 100%);
+    box-shadow: 0 0 0 1px #007bff inset;
+    background: rgb(97,171,250);
+    background: linear-gradient(0deg, rgba(97,171,250,1) 25%, rgba(0,123,255,1) 100%);
 }
 .search-filters {
     display: flex;
