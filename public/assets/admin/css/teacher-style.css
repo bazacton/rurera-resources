@@ -2445,10 +2445,6 @@ span.field-separated span:after {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 5px;
-    border-radius: 5px;
 }
 .questions-header .text-holder {
     display: inline-flex;
@@ -2474,11 +2470,6 @@ span.field-separated span:after {
     display: block;
     line-height: normal;
     margin-top: 2px;
-}
-.questions-header {
-    margin-bottom: 15px;
-    background-color: #f2f2f2;
-    padding: 10px;
 }
 .questions-header-controls button {
     background-color: #f2f2f2;

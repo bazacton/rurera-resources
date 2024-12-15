@@ -2634,7 +2634,7 @@
                         <div class="tab-pane fade" id="collection" role="tabpanel" aria-labelledby="collection-tab">
                             <div class="staff-picks-tabs">
                                 <div class="mb-30 bg-white panel-border rounded-sm p-15">
-                                    <div class="rureraform-search-field mb-25">
+                                    <div class="rureraform-search-field mb-15">
                                         <div class="input-field">
                                             <input type="text" placeholder="Search question..">
                                             <button type="button"><i class="fas fa-search"></i> Search questions</button>
