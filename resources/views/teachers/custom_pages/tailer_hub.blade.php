@@ -266,7 +266,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="question-layout-holder mb-15 bg-white panel-border rounded-sm p-25">
+                            <div class="question-layout-holder mb-35 bg-white panel-border rounded-sm p-25">
                                 <div class="question-layout-block">
                                     <form class="question-fields" action="javascript:;" data-question_id="10180">
                                     <div class="left-content has-bg">
@@ -274,12 +274,7 @@
                                         <div class="question-layout row d-flex align-items-start">
                                             <div class="rureraform-col rureraform-col-12">
                                                 <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                    <div class="question-label question_heading">
-                                                        <span>Read the text, then answer the question.</span>
-                                                        <div class="quiz-layout-edit-options">
-                                                            
-                                                        </div>
-                                                    </div>
+                                                    <h4>Read the text, then answer the question.</h4>
                                                 </div>
                                             </div>
                                             <div class="rureraform-col rureraform-col-12">
@@ -289,7 +284,7 @@
                                             <div class="rureraform-col rureraform-col-12">
                                             <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                                 <div class="question-label question_label">
-                                                <span>What is the total time the school has for breaks and lunchtime in a 5-day week?</span>
+                                                    <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
                                                 </div>
                                             </div>
                                             </div>
@@ -324,7 +319,6 @@
                                                     </div>
                                                 </div>
                                                 </div>
-                                                <div class="rureraform-element-cover"></div>
                                             </div>
                                             </div>
                                         </div>
@@ -332,8 +326,61 @@
                                     </div>
                                     </form>
                                 </div>
+                                <div class="view-explanation">
+                                    <div class="explanation-controls d-flex align-items-center">
+                                        <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
+                                            View Explanation
+                                        </button>
+                                    </div>
+                                    <div class="collapse" id="explanation-list">
+                                        <ul class="mt-10">
+                                            <li>1. Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
+                                            <li>2. Pellentesque nec est gravida eleifend turpis vsodales tortor.</li>
+                                            <li>3. Vivamus dapibus nunc necm consectetur lacinia.</li>
+                                            <li>4. Phasellus non turpis dignissim mattis tellus nec malesuada.</li>
+                                            <li>5. Pellentesque efficitur erat in interdum viverra.</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="mb-15 bg-white panel-border rounded-sm p-25">
+                            <div class="quiz-layout-edit-options">
+                                <div class="controls-heading">
+                                    <h6>Question 1 -</h6> <button type="button">Add question title</button> 
+                                </div>
+                                <div class="edit-options-right">
+                                    <div class="edit-options-controls">
+                                        <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
+                                        <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="Move down"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
+
+                                        <button type="button" class="show-btn" data-toggle="tooltip" data-placement="top" title="Show/Hide question">
+                                            <img class="show-img" src="/assets/default/svgs/eye-show.svg" alt="">
+                                            <img class="hide-img" src="/assets/default/svgs/eye-off.svg" alt="">
+                                        </button>
+
+                                        <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="Duplicate question"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
+                                        <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Trash"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
+                                        <button type="button" class="crown-btn" data-toggle="tooltip" data-placement="top" title="Crown"><img src="/assets/default/svgs/crown-btn.svg" alt=""></button>
+                                        <button type="button" class="stars-btn" data-toggle="tooltip" data-placement="top" title="Stars"><img src="/assets/default/svgs/stars-new.svg" alt=""></button>
+                                        <button type="button" class="add-btn" data-toggle="tooltip" data-placement="top" title="Add question"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
+                                        <div class="dropdown">
+                                            <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Shorten</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Rewrite</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> More fun</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> More formal</a>
+                                                <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Sprinkle fairy dust</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Change voice</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Fix spelling</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Custom prompt...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-35 bg-white panel-border rounded-sm p-25">
                                 <div class="question-layout-block">
                                     <form class="question-fields" action="javascript:;" data-question_id="10180">
                                         <div class="left-content has-bg">
@@ -347,7 +394,7 @@
                                             <div class="question-layout row d-flex align-items-start">
                                             <div class="rureraform-col rureraform-col-12">
                                                 <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                <h5>Mark the following true and false:</h5>
+                                                    <h4>Mark the following true and false:</h4>
                                                 </div>
                                             </div>
                                             <div class="rureraform-col rureraform-col-8">
@@ -460,6 +507,59 @@
                                         </div>
                                     </form>
                                 </div>
+                                <div class="view-explanation">
+                                    <div class="explanation-controls d-flex align-items-center">
+                                        <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list2" aria-expanded="false" aria-controls="explanation-list">
+                                            View Explanation
+                                        </button>
+                                    </div>
+                                    <div class="collapse" id="explanation-list2" style="">
+                                        <ul class="mt-10">
+                                            <li>1. Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
+                                            <li>2. Pellentesque nec est gravida eleifend turpis vsodales tortor.</li>
+                                            <li>3. Vivamus dapibus nunc necm consectetur lacinia.</li>
+                                            <li>4. Phasellus non turpis dignissim mattis tellus nec malesuada.</li>
+                                            <li>5. Pellentesque efficitur erat in interdum viverra.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-layout-edit-options">
+                                <div class="controls-heading">
+                                    <h6>Question 1 -</h6> <button type="button">Add question title</button> 
+                                </div>
+                                <div class="edit-options-right">
+                                    <div class="edit-options-controls">
+                                        <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
+                                        <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="Move down"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
+
+                                        <button type="button" class="show-btn" data-toggle="tooltip" data-placement="top" title="Show/Hide question">
+                                            <img class="show-img" src="/assets/default/svgs/eye-show.svg" alt="">
+                                            <img class="hide-img" src="/assets/default/svgs/eye-off.svg" alt="">
+                                        </button>
+
+                                        <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="Duplicate question"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
+                                        <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Trash"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
+                                        <button type="button" class="crown-btn" data-toggle="tooltip" data-placement="top" title="Crown"><img src="/assets/default/svgs/crown-btn.svg" alt=""></button>
+                                        <button type="button" class="stars-btn" data-toggle="tooltip" data-placement="top" title="Stars"><img src="/assets/default/svgs/stars-new.svg" alt=""></button>
+                                        <button type="button" class="add-btn" data-toggle="tooltip" data-placement="top" title="Add question"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
+                                        <div class="dropdown">
+                                            <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Shorten</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Rewrite</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> More fun</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> More formal</a>
+                                                <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Sprinkle fairy dust</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Change voice</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Fix spelling</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Custom prompt...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="mb-15 bg-white panel-border rounded-sm p-25">
                                 <div class="question-layout-block">
@@ -475,9 +575,7 @@
                                             <div class="question-layout row d-flex align-items-start">
                                             <div class="rureraform-col rureraform-col-12">
                                                 <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                <div class="question-label question_heading">
-                                                    <span>Read the text and choose the correct answer.</span>
-                                                </div>
+                                                    <h4>Read the text and choose the correct answer.</h4>
                                                 </div>
                                             </div>
                                             <div class="rureraform-col rureraform-col-12">
@@ -507,6 +605,22 @@
                                         </div>
                                         </div>
                                     </form>
+                                </div>
+                                <div class="view-explanation">
+                                    <div class="explanation-controls d-flex align-items-center">
+                                        <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list3" aria-expanded="false" aria-controls="explanation-list">
+                                            View Explanation
+                                        </button>
+                                    </div>
+                                    <div class="collapse" id="explanation-list3" style="">
+                                        <ul class="mt-10">
+                                            <li>1. Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
+                                            <li>2. Pellentesque nec est gravida eleifend turpis vsodales tortor.</li>
+                                            <li>3. Vivamus dapibus nunc necm consectetur lacinia.</li>
+                                            <li>4. Phasellus non turpis dignissim mattis tellus nec malesuada.</li>
+                                            <li>5. Pellentesque efficitur erat in interdum viverra.</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
