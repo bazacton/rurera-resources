@@ -1916,11 +1916,12 @@ Tailer Hub Style Start
     top: 50%;
     transform: translateY(-50%);
     border: 1px solid #ddd;
-    padding: 5px 10px;
+    padding: 6px 10px;
     border-radius: 5px;
     outline: none;
     font-weight: bold;
     color: #555;
+    line-height: normal;
 }
 .rureraform-search-field button i {
     color: #999;
