@@ -273,6 +273,21 @@
                                         <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
                                         <div class="question-layout row d-flex align-items-start">
                                             <div class="rureraform-col rureraform-col-12">
+                                                <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
+                                                    <div class="question-top-info">
+                                                        <div class="question-count">
+                                                            <span class="icon-box"><i></i></span>
+                                                            <span class="question-count-lable">Question 1 of 20</span>
+                                                        </div>
+                                                        <div class="question-info">
+                                                            <span class="q-type">Multiple choice</span>
+                                                            <span class="q-time">Avg time</span>
+                                                            <span class="q-point">1 point</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="rureraform-col rureraform-col-12">
                                                 <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                                     <h4>Read the text, then answer the question.</h4>
                                                 </div>
