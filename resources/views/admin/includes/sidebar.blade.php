@@ -2146,7 +2146,6 @@
                                                                 </div>
                                                             </div>
                                                             </div>
-                                                            <div class="rureraform-element-cover"></div>
                                                         </div>
                                                         </div>
                                                     </div>
@@ -2206,7 +2205,9 @@
                                                         <div class="question-layout row d-flex align-items-start">
                                                         <div class="rureraform-col rureraform-col-12">
                                                             <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                            <h5>Mark the following true and false:</h5>
+                                                                <div class="question-label question_heading">
+                                                                    <span>Mark the following true and false:</span>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         <div class="rureraform-col rureraform-col-8">
