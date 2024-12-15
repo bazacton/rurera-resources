@@ -2095,7 +2095,7 @@
                                                     <div class="question-layout row d-flex align-items-start">
                                                         <div class="rureraform-col rureraform-col-12">
                                                             <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                <h6>Read the text, then answer the question.</h6>
+                                                                <h4>Read the text, then answer the question.</h4>
                                                             </div>
                                                         </div>
                                                         <div class="rureraform-col rureraform-col-12">
@@ -2215,7 +2215,7 @@
                                                         <div class="question-layout row d-flex align-items-start">
                                                         <div class="rureraform-col rureraform-col-12">
                                                             <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                <h6>Mark the following true and false:</h6>
+                                                                <h4>Mark the following true and false:</h4>
                                                             </div>
                                                         </div>
                                                         <div class="rureraform-col rureraform-col-8">
@@ -2380,7 +2380,7 @@
                                                         <div class="question-layout row d-flex align-items-start">
                                                         <div class="rureraform-col rureraform-col-12">
                                                             <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                <h6>Read the text and choose the correct answer.</h6>
+                                                                <h4>Read the text and choose the correct answer.</h4>
                                                             </div>
                                                         </div>
                                                         <div class="rureraform-col rureraform-col-12">
