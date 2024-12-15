@@ -2633,7 +2633,19 @@
                         </div>
                         <div class="tab-pane fade" id="collection" role="tabpanel" aria-labelledby="collection-tab">
                             <div class="my-collections">
-                                
+                                <div class="mb-30 bg-white panel-border rounded-sm p-15">
+                                    <div class="rureraform-search-field">
+                                        <div class="input-field">
+                                            <input type="text" placeholder="Search question..">
+                                            <button type="button"><i class="fas fa-search"></i> Search questions</button>
+                                        </div>
+                                        <div class="featured-controls">
+                                            <button type="button" class="active">Featured List</button>
+                                            <button type="button">Community</button>
+                                            <button type="button">My Collection</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
