@@ -250,14 +250,13 @@
                                                 <img src="/assets/default/svgs/stars-new.svg" alt="">
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Shorten</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Rewrite</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> More fun</a>
-                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> More formal</a>
-                                                <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Sprinkle fairy dust</a>
-                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Change voice</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Fix spelling</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Custom prompt...</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Add a similar question</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Turn into</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> Add explanation</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Fix grammatical and spelling</a>
+                                                <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Replace with a similar question</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Reduce options</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Write custom prompt</a>
                                             </div>
                                         </div>
                                     </div>
