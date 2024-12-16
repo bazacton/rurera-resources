@@ -235,19 +235,17 @@
                                         <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
                                         <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="Move down"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
 
-                                        <button type="button" class="show-btn" data-toggle="tooltip" data-placement="top" title="Show/Hide question">
+                                        <!-- <button type="button" class="show-btn" data-toggle="tooltip" data-placement="top" title="Show/Hide question">
                                             <img class="show-img" src="/assets/default/svgs/eye-show.svg" alt="">
                                             <img class="hide-img" src="/assets/default/svgs/eye-off.svg" alt="">
-                                        </button>
+                                        </button> -->
 
                                         <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="Duplicate question"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
                                         <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Trash"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
-                                        <button type="button" class="crown-btn" data-toggle="tooltip" data-placement="top" title="Crown"><img src="/assets/default/svgs/crown-btn.svg" alt=""></button>
-                                        <button type="button" class="stars-btn" data-toggle="tooltip" data-placement="top" title="Stars"><img src="/assets/default/svgs/stars-new.svg" alt=""></button>
-                                        <button type="button" class="add-btn" data-toggle="tooltip" data-placement="top" title="Add question"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
+                                        <button type="button" class="stars-btn" ></button>
                                         <div class="dropdown">
-                                            <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fas fa-ellipsis-v"></i>
+                                            <button class="btn btn-link text-white dropdown-toggle" type="button" data-toggle="tooltip" data-placement="top" title="Stars" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="/assets/default/svgs/stars-new.svg" alt="">
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                                 <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Shorten</a>
