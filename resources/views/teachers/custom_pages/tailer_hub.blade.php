@@ -219,7 +219,7 @@
                     <button type="button"><img src="/assets/default/svgs/ai.svg" alt=""> Generate quiz using AI</button>
                     <button type="button"><img src="/assets/default/svgs/import-worksheet.svg" alt=""> Import Worksheets</button>
                 </div>
-                <div class="mb-30 bg-white panel-border rounded-sm p-15">
+                <div class="mb-30 bg-white panel-border rounded-sm p-15" style="display: none;">
                     <h6 class="search-lable">Search question from library</h6>
                     <div class="rureraform-search-field mb-15">
                         <div class="input-field">
@@ -259,7 +259,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15">
+                <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible fade show">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <h6 class="search-lable">Enhance this quiz using AI</h6>
                     <ul>
                         <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add similar questions</a></li>
