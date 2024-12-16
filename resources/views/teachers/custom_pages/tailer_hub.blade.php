@@ -355,7 +355,7 @@
                                                         </ul>
                                                     </li>
                                                     <li>
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/img/change-voice.jpg" alt=""> Turn into</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/img/change-voice.jpeg" alt=""> Turn into</a>
                                                     </li>
                                                     <li>
                                                         <a class="dropdown-item" href="#"><img src="/assets/default/img/shorten.jpg" alt=""> Add explanation</a>
