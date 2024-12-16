@@ -2074,6 +2074,9 @@ Tailer Hub Style Start
     display: block;
     padding: 5px 10px;
 }
+.dropdown-menu > ul > li img {
+    margin-right: 5px;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
