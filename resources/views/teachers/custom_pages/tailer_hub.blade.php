@@ -226,6 +226,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="mb-30 bg-white panel-border rounded-sm p-15">
+                    <h6 class="search-lable">Srarch question from library</h6>
+                </div>
                 <div class="quiz-setup-listings">
                     <div class="row">
                         <div class="col-12 col-lg-12 col-md-12">
