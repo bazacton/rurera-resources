@@ -1770,6 +1770,7 @@ Tailer Hub Style Start
 .edit-options-controls .stars-btn img {
     height: 24px;
     width: 24px;
+    filter: invert(12%) sepia(9%) saturate(7437%) hue-rotate(201deg) brightness(100%) contrast(92%);
 }
 .hide-img {
     display: none;
