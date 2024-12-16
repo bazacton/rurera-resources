@@ -355,6 +355,20 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="listing-dropdown">
+                                <div class="dropdown">
+                                    <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" x-placement="top-end">
+                                        <a class="dropdown-item" href="#"><i class="fas fa-user"></i> New Question</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Library</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> Collection</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> Import</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> AI Builder</a>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="quiz-layout-edit-options">
                                 <div class="edit-options-right">
                                     <div class="edit-options-controls">
