@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 2048 2048" width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+<path transform="translate(1110,1109)" d="m0 0 767 1 1 1v766l-3 1h-765l-1-2v-765z" fill="#E84A3A"/>
+<path transform="translate(170,170)" d="m0 0h767l2 3-1 764-1 1h-767z" fill="#FCE313"/>
+<path transform="translate(170,1110)" d="m0 0h768l1 766-4 2h-764l-1-1z" fill="#93BC1A"/>
+<path transform="translate(170,1110)" d="m0 0h768l1 766-4 2h-764l-1-1zm85 84-1 4 1 594 5 1h592l1-4v-593l-1-1-108-1z" fill="#38474D"/>
+<path transform="translate(170,170)" d="m0 0h767l2 3-1 764-1 1h-767zm156 84-71 1-1 95v398l1 106 598-1v-597l-1-1-66-1z" fill="#3A474D"/>
+<path transform="translate(1110,1109)" d="m0 0 767 1 1 1v766l-3 1h-765l-1-2v-765zm99 84-13 1-2 3v595l1 1 25 1h533l39-1 1-1-1-592-1-6-16-1z" fill="#39474D"/>
+<path transform="translate(1451,170)" d="m0 0h84l1 1 1 340h290l50 1 1 1v83l-2 1h-339l-1 341h-85l-1-21v-315l1-5h-341l-1-1v-84l22-1h319v-284z" fill="#3A474D"/>
+</svg>
