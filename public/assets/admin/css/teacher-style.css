@@ -2586,7 +2586,7 @@ span.field-separated span:after {
     justify-content: center;
     margin: 0 0 -15px;
 }
-.listing-dropdown .dropdown {
+.listing-dropdown .btn-holder {
     position: relative;
     min-width: auto;
 }
@@ -2599,7 +2599,7 @@ span.field-separated span:after {
     position: relative;
     z-index: 1;
 }
-.listing-dropdown .dropdown:before {
+.listing-dropdown .btn-holder:before {
     position: absolute;
     left: 50%;
     top: 50%;

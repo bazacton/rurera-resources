@@ -353,7 +353,9 @@
                                 </div>
                             </div>
                             <div class="listing-dropdown">
-                                <button class="" data-toggle="modal" data-target="#templatesleModal"><i class="fas fa-plus"></i></button>
+                                <div class="btn-holder">
+                                    <button class="" data-toggle="modal" data-target="#templatesleModal"><i class="fas fa-plus"></i></button>
+                                </div>
                             </div>
                             <div class="quiz-layout-edit-options">
                                 <div class="edit-options-right">
