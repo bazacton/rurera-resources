@@ -1946,6 +1946,11 @@ Tailer Hub Style Start
     font-size: 12px;
     text-decoration: none;
 }
+.quiz-ai-tags a img {
+    height: 18px;
+    width: 18px;
+    margin-right: 6px;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
