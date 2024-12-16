@@ -2007,6 +2007,12 @@ Tailer Hub Style Start
     padding: 5px 45px 5px 10px;
     cursor: pointer;
 }
+.bulk-ai-box .select-field:has(.bulk-text) select {
+    padding-right: 10px;
+}
+.bulk-ai-box .select-field:has(.bulk-text) .select-field:after {
+    display: none;
+}
 .bulk-ai {
     display: flex;
     align-items: center;
