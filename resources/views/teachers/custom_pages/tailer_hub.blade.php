@@ -357,6 +357,11 @@
                                                     </li>
                                                     <li>
                                                         <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Turn into</a>
+                                                        <ul class="sub-dropdown">
+                                                            <li><a href="#">Drag Drop</a></li>
+                                                            <li><a href="#">Dropdown</a></li>
+                                                            <li><a href="#">Fill-in-blank</a></li>
+                                                        </ul>
                                                     </li>
                                                     <li>
                                                         <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Add explanation</a>
@@ -369,6 +374,12 @@
                                                     </li>
                                                     <li>
                                                         <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Reduce options</a>
+                                                        <ul class="sub-dropdown">
+                                                            <li><a href="#">4</a></li>
+                                                            <li><a href="#">3</a></li>
+                                                            <li><a href="#">2</a></li>
+                                                            <li><a href="#">1</a></li>
+                                                        </ul>
                                                     </li>
                                                     <li>
                                                         <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Write custom prompt</a>
