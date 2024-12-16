@@ -307,8 +307,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible fade show">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 fade show">
+                    <button type="button" class="close" data-dismiss="quiz-ai-tags" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <h6 class="search-lable">Enhance this quiz using AI</h6>
@@ -350,9 +350,9 @@
                                                         <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Add a similar question</a>
                                                         <ul class="sub-dropdown">
                                                             <li><a href="#">1</a></li>
-                                                            <li><a href="#">2</a></li>
                                                             <li><a href="#">3</a></li>
-                                                            <li><a href="#">4</a></li>
+                                                            <li><a href="#">5</a></li>
+                                                            <li><a href="#">10</a></li>
                                                         </ul>
                                                     </li>
                                                     <li>
