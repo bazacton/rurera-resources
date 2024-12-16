@@ -2010,7 +2010,7 @@ Tailer Hub Style Start
 .bulk-ai-box .select-field:has(.bulk-text) select {
     padding-right: 10px;
 }
-.bulk-ai-box .select-field:has(.bulk-text) .select-field:after {
+.bulk-ai-box .select-field:has(.bulk-text):after {
     display: none;
 }
 .bulk-ai {
