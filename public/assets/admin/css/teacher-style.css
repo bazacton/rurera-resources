@@ -1968,6 +1968,7 @@ Tailer Hub Style Start
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 25px;
+    gap: 5px;
 }
 .q-ai-nav-controls button:hover,
 .q-ai-nav-controls button.active {
