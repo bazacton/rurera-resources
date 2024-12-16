@@ -2073,6 +2073,7 @@ Tailer Hub Style Start
 .dropdown-menu li .sub-dropdown li a {
     display: block;
     padding: 5px 10px;
+    text-decoration: none;
 }
 .dropdown-menu li .sub-dropdown li a:hover {
     background-color: #f8f9fa;
