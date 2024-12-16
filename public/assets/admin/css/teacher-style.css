@@ -2045,6 +2045,17 @@ Tailer Hub Style Start
 .dropdown-menu > ul > li {
     position: relative;
 }
+.dropdown-menu > ul > li:has(.sub-dropdown):after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    height: 8px;
+    width: 8px;
+    border-right: 2px solid #ddd;
+    border-top: 2px solid #ddd;
+}
 .edit-options-controls .dropdown-item:hover {
     color: #333;
 }
