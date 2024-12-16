@@ -358,16 +358,16 @@
                                                         <a class="dropdown-item" href="#"><img src="/assets/default/img/change-voice.jpeg" alt=""> Turn into</a>
                                                     </li>
                                                     <li>
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/img/shorten.jpg" alt=""> Add explanation</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/img/shorten.jpeg" alt=""> Add explanation</a>
                                                     </li>
                                                     <li>
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/img/formal.jpg" alt=""> Fix grammatical and spelling</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/img/formal.jpeg" alt=""> Fix grammatical and spelling</a>
                                                     </li>
                                                     <li>
-                                                        <a class="dropdown-item text-danger" href="#"><img src="/assets/default/img/Sprinkle.jpg" alt=""> Replace with a similar question</a>
+                                                        <a class="dropdown-item text-danger" href="#"><img src="/assets/default/img/Sprinkle.jpeg" alt=""> Replace with a similar question</a>
                                                     </li>
                                                     <li>
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/img/change-voice.jpg" alt=""> Reduce options</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/img/change-voice.jpeg" alt=""> Reduce options</a>
                                                     </li>
                                                     <li>
                                                         <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Write custom prompt</a>
