@@ -250,13 +250,29 @@
                                                 <img src="/assets/default/svgs/stars-new.svg" alt="">
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Add a similar question</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Turn into</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> Add explanation</a>
-                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Fix grammatical and spelling</a>
-                                                <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Replace with a similar question</a>
-                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Reduce options</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Write custom prompt</a>
+                                                <ul>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Add a similar question</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Turn into</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> Add explanation</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Fix grammatical and spelling</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Replace with a similar question</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Reduce options</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Write custom prompt</a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
