@@ -2609,6 +2609,10 @@ span.field-separated span:after {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+.listing-dropdown .dropdown-menu {
+    left: 50% !important;
+    transform: translateX(50%) !important;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
