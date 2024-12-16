@@ -2592,6 +2592,7 @@ span.field-separated span:after {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     position: relative;
+    z-index: 1;
 }
 .listing-dropdown .dropdown:before {
     position: absolute;
