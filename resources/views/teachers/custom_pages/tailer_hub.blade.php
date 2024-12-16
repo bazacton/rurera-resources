@@ -284,6 +284,18 @@
                                 <span class="bulk-text">Mins <i class="fas fa-clock"></i></span>
                             </div>
                         </div>
+                        <div class="bulk-ai-box">
+                            <span class="bulk-lable">Mark as point</span>
+                            <div class="select-field">
+                                <select>
+                                    <option value="1">1</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                                <span class="bulk-text">Points <i class="fas fa-circle"></i></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible fade show">
