@@ -213,6 +213,12 @@
                         </div>
                     </div>
                 </div>
+                <div class="q-ai-nav-controls">
+                    <button type="button">Add Question</button>
+                    <button type="button">Add question from Collection</button>
+                    <button type="button">Generate quiz using AI</button>
+                    <button type="button">Import Worksheets</button>
+                </div>
                 <div class="mb-30 bg-white panel-border rounded-sm p-15">
                     <h6 class="search-lable">Search question from library</h6>
                     <div class="rureraform-search-field">
