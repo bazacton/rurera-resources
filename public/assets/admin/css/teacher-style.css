@@ -1957,7 +1957,7 @@ Tailer Hub Style Start
 
 .q-ai-nav-controls button {
     background-color: inherit;
-    border: 0;
+    border: 1px solid #ddd;
     font-weight: 600;
     padding: 8px 15px;
     border-radius: 5px;
