@@ -2006,6 +2006,7 @@ Tailer Hub Style Start
     appearance: none;
     padding: 5px 45px 5px 10px;
     cursor: pointer;
+    min-width: 40px;
 }
 .bulk-ai-box .select-field:has(.bulk-text) select {
     padding-right: 10px;
@@ -2025,6 +2026,11 @@ Tailer Hub Style Start
     margin: 0 0 10px;
     color: #333;
     font-weight: 600;
+}
+.bulk-ai-box .select-field .bulk-text {
+    padding: 0 10px;
+    border-left: 1px solid #ccc;
+    line-height: normal;
 }
 /*************************************
 Tailer Hub Style End
