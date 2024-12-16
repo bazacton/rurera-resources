@@ -1946,13 +1946,31 @@ Tailer Hub Style Start
     display: inline-block;
     line-height: normal;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 13px;
     text-decoration: none;
 }
 .quiz-ai-tags a img {
     height: 18px;
     width: 18px;
     margin-right: 6px;
+}
+
+.q-ai-nav-controls button {
+    background-color: inherit;
+    border: 0;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #444;
+}
+.q-ai-nav-controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+.q-ai-nav-controls button:hover {
+    background-color: rgba(0,0,0,0.050);
 }
 /*************************************
 Tailer Hub Style End
