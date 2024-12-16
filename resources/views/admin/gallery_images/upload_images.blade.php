@@ -103,20 +103,6 @@
 .rurera-upload-area .file-name {
   flex: 1;
 }
-.crop_sizes li {
-    background: #efefef;
-    padding: 6px 10px;
-    margin: 5px;
-    cursor: pointer;
-    line-height: normal;
-    border-radius: 5px;
-}
-.crop_sizes li.active {
-    color: #fff;
-    box-shadow: 0 0 0 1px #007bff inset;
-    background: rgb(97, 171, 250);
-    background: linear-gradient(0deg, rgba(97, 171, 250, 1) 25%, rgba(0, 123, 255, 1) 100%);
-}
 </style>
 @endpush
 
