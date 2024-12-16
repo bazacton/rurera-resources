@@ -2591,6 +2591,8 @@ span.field-separated span:after {
     min-width: auto;
 }
 .listing-dropdown .btn-holder button {
+    border: 0;
+    border-radius: 3px;
     padding: 0;
     height: 30px;
     width: 30px;
