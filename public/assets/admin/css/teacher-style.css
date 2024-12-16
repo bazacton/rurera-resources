@@ -2590,7 +2590,7 @@ span.field-separated span:after {
     position: relative;
     min-width: auto;
 }
-.listing-dropdown .dropdown button {
+.listing-dropdown .btn-holder button {
     padding: 0;
     height: 30px;
     width: 30px;
@@ -2609,21 +2609,15 @@ span.field-separated span:after {
     content: "";
     transform: translate(-50%, -50%);
     z-index: 0;
+    border: 0;
 }
-.listing-dropdown .dropdown button i {
+.listing-dropdown .btn-holder button i {
     margin: 0;
     color: #555;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-}
-.listing-dropdown .dropdown-item i {
-    margin: 0 6px 0 0 !important;
-    color: #888;
-}
-.listing-dropdown .dropdown-menu {
-    width: 160px;
 }
 /*************************************
 Qustions AI Tabs Style End
