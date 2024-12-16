@@ -214,7 +214,7 @@
                     </div>
                 </div>
                 <div class="mb-30 bg-white panel-border rounded-sm p-15">
-                    <h6 class="search-lable">Srarch question from library</h6>
+                    <h6 class="search-lable">Search question from library</h6>
                     <div class="rureraform-search-field">
                         <div class="input-field">
                             <input type="text" placeholder="Search question..">
@@ -227,7 +227,7 @@
                     </div>
                 </div>
                 <div class="mb-30 bg-white panel-border rounded-sm p-15">
-                    <h6 class="search-lable">Srarch question from library</h6>
+                    <h6 class="search-lable">Search question from library</h6>
                 </div>
                 <div class="quiz-setup-listings">
                     <div class="row">
