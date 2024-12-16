@@ -1890,7 +1890,7 @@ Tailer Hub Style Start
 }
 .rureraform-search-field .input-field {
     position: relative;
-    width: calc(100% - 190px);
+    width: calc(100% - 380px);
 }
 .rureraform-search-field input[type="text"] {
     width: 100%;
@@ -2443,9 +2443,6 @@ span.field-separated span:after {
     border-radius: 5px;
     line-height: normal;
     outline: none;
-}
-.staff-picks-tabs .rureraform-search-field .input-field {
-    width: calc(100% - 380px);
 }
 .featured-controls button.active {
     color: #fff;
