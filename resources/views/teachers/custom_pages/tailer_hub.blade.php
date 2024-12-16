@@ -364,7 +364,7 @@
                                         <a class="dropdown-item" href="#"><i class="fas fa-question"></i> New Question</a>
                                         <a class="dropdown-item" href="#"><i class="fas fa-shopping-bag"></i> Library</a>
                                         <a class="dropdown-item" href="#"><i class="fas fa-shopping-bag"></i> Collection</a>
-                                        <a class="dropdown-item" href="#"><i class="fas fa-import"></i> Import</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-file-import"></i> Import</a>
                                         <a class="dropdown-item" href="#"><i class="fas fa-building"></i> AI Builder</a>
                                     </div>
                                 </div>
