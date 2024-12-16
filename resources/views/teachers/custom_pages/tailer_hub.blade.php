@@ -259,6 +259,33 @@
                         </div>
                     </div>
                 </div>
+                <div class="mb-30 bg-white panel-border rounded-sm p-15 bulk-quiz">
+                    <div class="bulk-ai">
+                        <div class="bulk-ai-box">
+                            <span class="bulk-lable">Rendomize</span>
+                            <div class="select-field">
+                                <select>
+                                    <option value="Keep choices in current order">Keep choices in current order</option>
+                                    <option value="Keep choices in current order">Keep choices in current order</option>
+                                    <option value="Keep choices in current order">Keep choices in current order</option>
+                                    <option value="Keep choices in current order">Keep choices in current order</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="bulk-ai-box">
+                            <span class="bulk-lable">Estimation time</span>
+                            <div class="select-field">
+                                <select>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                                <span class="bulk-text">Mins <i class="fas fa-clock"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible fade show">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
