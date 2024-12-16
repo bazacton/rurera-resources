@@ -222,7 +222,7 @@
                         </div>
                         <div class="search-option-btn">
                             <span class="search-or-lable">Or</span>
-                            <button type="button" data-toggle="modal" data-target="#templatesleModal"><i class="fas fa-plus"></i> Add question</button>
+                            <button type="button"><i class="fas fa-plus"></i> Add question</button>
                         </div>
                     </div>
                 </div>
@@ -353,18 +353,7 @@
                                 </div>
                             </div>
                             <div class="listing-dropdown">
-                                <div class="dropdown">
-                                    <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-plus"></i>
-                                    </button>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" x-placement="top-end">
-                                        <a class="dropdown-item" href="#"><i class="fas fa-question"></i> New Question</a>
-                                        <a class="dropdown-item" href="#"><i class="fas fa-shopping-bag"></i> Library</a>
-                                        <a class="dropdown-item" href="#"><i class="fas fa-shopping-cart"></i> Collection</a>
-                                        <a class="dropdown-item" href="#"><i class="fas fa-file-import"></i> Import</a>
-                                        <a class="dropdown-item" href="#"><i class="fas fa-building"></i> AI Builder</a>
-                                    </div>
-                                </div>
+                                <button class="" data-toggle="modal" data-target="#templatesleModal"><i class="fas fa-plus"></i></button>
                             </div>
                             <div class="quiz-layout-edit-options">
                                 <div class="edit-options-right">
