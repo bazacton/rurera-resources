@@ -307,7 +307,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible fade show">
+                <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible alert fade show">
                     <button type="button" class="close" data-dismiss="quiz-ai-tags" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
