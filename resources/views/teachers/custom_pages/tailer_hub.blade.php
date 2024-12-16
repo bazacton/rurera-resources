@@ -214,7 +214,7 @@
                     </div>
                 </div>
                 <div class="q-ai-nav-controls">
-                    <button type="button">Add Question</button>
+                    <button type="button" class="active">Add Question</button>
                     <button type="button">Add question from Collection</button>
                     <button type="button">Generate quiz using AI</button>
                     <button type="button">Import Worksheets</button>
