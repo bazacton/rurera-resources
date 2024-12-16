@@ -347,6 +347,12 @@
                                                 <ul>
                                                     <li>
                                                         <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Add a similar question</a>
+                                                        <ul class="sub-dropdown">
+                                                            <li><a href="#">1</a></li>
+                                                            <li><a href="#">2</a></li>
+                                                            <li><a href="#">3</a></li>
+                                                            <li><a href="#">4</a></li>
+                                                        </ul>
                                                     </li>
                                                     <li>
                                                         <a class="dropdown-item" href="#"><img src="/assets/default/img/change-voice.jpg" alt=""> Turn into</a>
