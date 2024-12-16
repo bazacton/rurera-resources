@@ -214,7 +214,7 @@
                     </div>
                 </div>
                 <div class="q-ai-nav-controls">
-                    <button type="button" class="active"><img src="/assets/default/svgs/add-question.svg" alt=""> Add Question</button>
+                    <button type="button" class="active" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-question.svg" alt=""> Add Question</button>
                     <button type="button"><img src="/assets/default/svgs/add-collection.svg" alt=""> Add question from Collection</button>
                     <button type="button"><img src="/assets/default/svgs/ai.svg" alt=""> Generate quiz using AI</button>
                     <button type="button"><img src="/assets/default/svgs/import-worksheet.svg" alt=""> Import Worksheets</button>
