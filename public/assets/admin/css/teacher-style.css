@@ -1826,6 +1826,10 @@ Tailer Hub Style Start
 .edit-options-controls .dropdown-toggle i {
     color: #1c274c;
 }
+.edit-options-controls .dropdown-menu {
+    min-width: 160px;
+    width: auto;
+}
 .page-controls button {
     background-color: inherit;
     border: 0;
