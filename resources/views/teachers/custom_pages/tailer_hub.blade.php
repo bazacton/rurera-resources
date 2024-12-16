@@ -226,8 +226,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="quiz-ai-box mb-30 bg-white panel-border rounded-sm p-15">
+                <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15">
                     <h6 class="search-lable">Enhance this quiz using AI</h6>
+                    <ul>
+                        <li><a href="#">Add similar questions</a></li>
+                        <li><a href="#">Fix grammatical and spelling errors</a></li>
+                        <li><a href="#">Translate questions</a></li>
+                        <li><a href="#">Simplify questions</a></li>
+                        <li><a href="#">Add questions on particular topic</a></li>
+                        <li><a href="#">Reduce/increase Options From MCQs</a></li>
+                        <li><a href="#">Add learner’s name in the questions</a></li>
+                        <li><a href="#">Add answer's explanation</a></li>
+                        <li><a href="#">Write custom prompt</a></li>
+                    </ul>
                 </div>
                 <div class="quiz-setup-listings">
                     <div class="row">
