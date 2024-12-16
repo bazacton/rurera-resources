@@ -2603,7 +2603,7 @@ span.field-separated span:after {
     z-index: 0;
 }
 .listing-dropdown .dropdown button i {
-    margin: 0;
+    margin: 0 5px 0 0;
     color: #555;
     position: absolute;
     left: 50%;
