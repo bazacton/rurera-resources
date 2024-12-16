@@ -296,6 +296,14 @@
                                 <span class="bulk-text">Points <i class="fas fa-circle"></i></span>
                             </div>
                         </div>
+                        <div class="bulk-ai-box">
+                            <span class="bulk-lable">Randomize Question order</span>
+                            <div class="select-field">
+                                <select>
+                                    <option value="Randomize Question order">Randomize Question order</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible fade show">
