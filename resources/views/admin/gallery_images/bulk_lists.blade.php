@@ -33,12 +33,17 @@
 }
 
 .rurera-upload-area #drag-drop-area {
-  border: 2px dashed #007bff;
-  border-radius: 10px;
+border: 2px dashed #ddd;
+  border-radius: 5px;
   padding: 20px;
   background-color: #ffffff;
   cursor: pointer;
   position: relative;
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .rurera-upload-area #drag-drop-area p {
