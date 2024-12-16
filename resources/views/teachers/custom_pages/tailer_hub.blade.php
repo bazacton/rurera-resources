@@ -260,6 +260,7 @@
                     </div>
                 </div>
                 <div class="mb-30 bg-white panel-border rounded-sm p-15 bulk-quiz">
+                    <h6>Bulk Settings</h6>
                     <div class="bulk-ai">
                         <div class="bulk-ai-box">
                             <span class="bulk-lable">Rendomize</span>
