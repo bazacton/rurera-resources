@@ -2615,6 +2615,9 @@ span.field-separated span:after {
     margin: 0 6px 0 0 !important;
     color: #888;
 }
+.listing-dropdown .dropdown-menu {
+    width: 160px;
+}
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
