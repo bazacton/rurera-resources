@@ -363,7 +363,7 @@
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" x-placement="top-end">
                                         <a class="dropdown-item" href="#"><i class="fas fa-question"></i> New Question</a>
                                         <a class="dropdown-item" href="#"><i class="fas fa-shopping-bag"></i> Library</a>
-                                        <a class="dropdown-item" href="#"><i class="fas fa-shopping-bag"></i> Collection</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-shopping-cart"></i> Collection</a>
                                         <a class="dropdown-item" href="#"><i class="fas fa-file-import"></i> Import</a>
                                         <a class="dropdown-item" href="#"><i class="fas fa-building"></i> AI Builder</a>
                                     </div>
