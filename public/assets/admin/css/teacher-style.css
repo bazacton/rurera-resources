@@ -1710,6 +1710,7 @@ Tailer Hub Style Start
     max-width: 1500px;
     margin: 0 auto;
     padding-top: 35px;
+    background-color: #f7f7f7;
 }
 .admin_teacher_role .question-layout {
     padding-bottom: 0;
@@ -1776,7 +1777,7 @@ Tailer Hub Style Start
     display: none;
 }
 .edit-options-controls button {
-    background-color: #fff;
+    background-color: inherit;
     border: 0;
     outline: none;
     border-radius: 100%;
