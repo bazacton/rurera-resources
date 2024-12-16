@@ -2042,6 +2042,29 @@ Tailer Hub Style Start
 .bulk-ai-box .select-field .bulk-text .fa-circle {
     color: #ffad00;
 }
+.dropdown-menu > li {
+    position: relative;
+}
+.dropdown-menu li .sub-dropdown {
+    position: absolute;
+    left: 100%;
+    background-color: #fff;
+    min-width: 100px;
+    box-shadow: 0 10px 40px 0 rgba(51, 73, 94, 0.15);
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 5px 0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.dropdown-menu li .sub-dropdown li {line-height: normal;}
+.dropdown-menu li .sub-dropdown li a {
+    display: block;
+    padding: 5px 10px;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
