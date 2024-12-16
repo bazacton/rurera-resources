@@ -214,10 +214,10 @@
                     </div>
                 </div>
                 <div class="q-ai-nav-controls">
-                    <button type="button" class="active">Add Question</button>
-                    <button type="button">Add question from Collection</button>
-                    <button type="button">Generate quiz using AI</button>
-                    <button type="button">Import Worksheets</button>
+                    <button type="button" class="active"><img src="/assets/default/svgs/add-question.svg" alt=""> Add Question</button>
+                    <button type="button"><img src="/assets/default/svgs/add-collection.svg" alt=""> Add question from Collection</button>
+                    <button type="button"><img src="/assets/default/svgs/ai.svg" alt=""> Generate quiz using AI</button>
+                    <button type="button"><img src="/assets/default/svgs/import-worksheet.svg" alt=""> Import Worksheets</button>
                 </div>
                 <div class="mb-30 bg-white panel-border rounded-sm p-15">
                     <h6 class="search-lable">Search question from library</h6>
