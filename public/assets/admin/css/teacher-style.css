@@ -2612,7 +2612,8 @@ span.field-separated span:after {
     transform: translate(-50%, -50%);
 }
 .listing-dropdown .dropdown-item i {
-    margin: 0 10px 0 0 !important;
+    margin: 0 6px 0 0 !important;
+    color: #888;
 }
 /*************************************
 Qustions AI Tabs Style End
