@@ -2039,6 +2039,9 @@ Tailer Hub Style Start
     margin-left: 5px;
     color: #ccc;
 }
+.bulk-ai-box .select-field .bulk-text .fa-circle {
+    color: #ffad00;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
