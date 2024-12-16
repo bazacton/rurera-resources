@@ -18,7 +18,7 @@
                 <div class="d-flex align-items-center justify-content-between flex-wrap mb-20">
                     <div class="question-content-header">
                         <div class="section-heading">
-                            <h1><span class="icon-box"><img src="/assets/default/svgs/folder-document.svg" alt=""></span> Tailer Hub</h1>
+                            <h1>Tailer Hub</h1>
                         </div>
                         <div class="page-controls">
                             <button class="setting-btn" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="Settings"><img src="/assets/default/svgs/settings.svg" alt=""></button>
