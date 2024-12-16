@@ -1936,6 +1936,21 @@ Tailer Hub Style Start
     outline: none;
     height: 42px;
 }
+.quiz-ai-tags ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.quiz-ai-tags a {
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+    display: inline-block;
+    line-height: normal;
+    border-radius: 5px;
+    font-size: 12px;
+    text-decoration: none;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
