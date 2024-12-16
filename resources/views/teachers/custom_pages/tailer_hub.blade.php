@@ -361,11 +361,11 @@
                                         <i class="fas fa-plus"></i>
                                     </button>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" x-placement="top-end">
-                                        <a class="dropdown-item" href="#"><i class="fas fa-user"></i> New Question</a>
-                                        <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Library</a>
-                                        <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> Collection</a>
-                                        <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> Import</a>
-                                        <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> AI Builder</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-question"></i> New Question</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-shopping-bag"></i> Library</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-shopping-bag"></i> Collection</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-import"></i> Import</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-building"></i> AI Builder</a>
                                     </div>
                                 </div>
                             </div>
