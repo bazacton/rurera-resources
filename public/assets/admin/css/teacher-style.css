@@ -1934,6 +1934,7 @@ Tailer Hub Style Start
 .quiz-ai-tags {
     background: radial-gradient(95% 400% at 25% 400%, #f1e800 0, rgba(0, 196, 204, 0) 100%), radial-gradient(95% 420% at 95% 440%, #f3efef 0, rgba(139, 61, 255, 0) 100%) !important;
     position: relative;
+    color: #6c757d;
 }
 .quiz-ai-tags ul {
     display: flex;
@@ -1949,6 +1950,9 @@ Tailer Hub Style Start
     border-radius: 5px;
     font-size: 13px;
     text-decoration: none;
+}
+.quiz-ai-tags.alert:not(.alert-light) a {
+    color: var(--primary);
 }
 .quiz-ai-tags a img {
     height: 18px;
