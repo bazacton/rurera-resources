@@ -226,8 +226,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="mb-30 bg-white panel-border rounded-sm p-15">
-                    <h6 class="search-lable">Search question from library</h6>
+                <div class="quiz-ai-box mb-30 bg-white panel-border rounded-sm p-15">
+                    <h6 class="search-lable">Enhance this quiz using AI</h6>
                 </div>
                 <div class="quiz-setup-listings">
                     <div class="row">
