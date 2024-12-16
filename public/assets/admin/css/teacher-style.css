@@ -1984,7 +1984,6 @@ Tailer Hub Style Start
     background-color: #f6f6f6;
     border-radius: 5px;
     position: relative;
-    padding: 0 35px 0 0;
 }
 .bulk-ai-box .select-field:after {
     content: "";
@@ -1999,12 +1998,14 @@ Tailer Hub Style Start
     font-weight: 900;
     background: url(/assets/default/svgs/arrow-down.svg) no-repeat right;
     background-size: 65%;
+    pointer-events: none;
 }
 .bulk-ai-box .select-field select {
     border: 0;
     background-color: inherit;
     appearance: none;
-    padding: 5px 10px;
+    padding: 5px 45px 5px 10px;
+    cursor: pointer;
 }
 .bulk-ai {
     display: flex;
