@@ -1706,9 +1706,12 @@ Tailer Hub Style Start
 .admin_teacher_role .main-wrapper .navbar {
     display: none !important;
 }
+.admin_teacher_role {
+    background-color: #f7f7f7;
+}
 .admin_teacher_role .main-content {
     max-width: 1500px;
-    margin: 0 0 0 auto;
+    margin: 0 auto;
     padding-top: 35px;
     background-color: #f7f7f7;
 }
