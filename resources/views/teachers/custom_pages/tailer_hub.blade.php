@@ -247,7 +247,7 @@
                                         <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Trash"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
                                         <div class="dropdown" data-toggle="tooltip" data-placement="top" title="Ask Ai">
                                             <button class="btn btn-link dropdown-toggle stars-btn" type="button" title="Stars" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="/assets/default/svgs/stars-colord.svg" alt="">
+                                                <img src="/assets/default/svgs/stars-new.svg" alt="">
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                                 <ul>
