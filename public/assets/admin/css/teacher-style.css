@@ -2032,6 +2032,10 @@ Tailer Hub Style Start
     border-left: 1px solid #ccc;
     line-height: normal;
 }
+.bulk-ai-box .select-field .bulk-text i {
+    margin-left: 5px;
+    color: #ccc;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
