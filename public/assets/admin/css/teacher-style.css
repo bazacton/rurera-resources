@@ -1969,7 +1969,8 @@ Tailer Hub Style Start
     flex-wrap: wrap;
     margin-bottom: 25px;
 }
-.q-ai-nav-controls button:hover {
+.q-ai-nav-controls button:hover,
+.q-ai-nav-controls button.active {
     background-color: rgba(0,0,0,0.050);
 }
 /*************************************
