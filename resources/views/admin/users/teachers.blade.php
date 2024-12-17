@@ -67,6 +67,16 @@
                     <div class="teacher-list-controls">
                         <button type="button" class="edit-btn"><img src="/assets/default/svgs/edit-pencil.svg" alt=""></button>
                     </div>
+
+                    <script>
+                        $(document).ready(function(){
+                            function showFullNumber(element) {
+                                const fullNumber = element.getAttribute('data-full-number');
+                                element.textContent = fullNumber;
+                            }
+                        });
+                    </script>
+
                 </div>
             </div>
         </div>
