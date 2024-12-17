@@ -17,6 +17,33 @@
     </section>
 
     <div class="section-body">
+        <div class="teacher-listing">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-md-6">
+                    <div class="listing-grid-card">
+                        <div class="img-holder">
+                            <figure>
+                                <img src="/assets/default/img/video.png" alt="">
+                                <figcaption>
+                                    <span class="count-lable">1,432 Pts</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="text-holder">
+                            <div class="author-info">
+                                <span class="img-box"><img src="/assets/default/img/video.png" alt=""></span>
+                                <h6>Nolan Herwitz</h6>
+                                <a href="#"><i class="fas fa-envelop"></i> nolan@nerou.com</a>
+                                <span class="designation-lable">HR Department</span>
+                            </div>
+                            <div class="teacher-list-controls">
+                                <button type="button" class="edit-btn"><img src="/assets/default/svgs/edit-pencil.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                 <div class="card card-statistic-1">
