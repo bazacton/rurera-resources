@@ -156,5 +156,31 @@
 <script>
     {!! !empty(getCustomCssAndJs('js')) ? getCustomCssAndJs('js') : '' !!}
 </script>
+<script>
+    /*Quiz Data Slide Function Start*/
+    $(document).ready(function () {
+        $(".page-controls button.setting-btn, .slide-controls .close-btn").click(function (e) {
+            e.stopPropagation(); 
+            $(".quiz-data-slide").toggleClass("active");
+        });
+
+        $(".quiz-data-slide").click(function (e) {
+            const $element = $(this);
+            const offset = $element.offset();
+            const pseudoAreaWidth = 20; 
+            if (
+                e.pageX < offset.left + pseudoAreaWidth || 
+                e.pageY < offset.top + pseudoAreaWidth 
+            ) {
+                $element.removeClass("active");
+            }
+        });
+
+        $(".quiz-data-slide").on("click", function (e) {
+            e.stopPropagation();
+        });
+    });
+    /*Quiz Data Slide Function End*/
+</script>
 </body>
 </html>
