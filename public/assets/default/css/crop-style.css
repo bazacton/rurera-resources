@@ -27,7 +27,8 @@
   margin-bottom: 15px;
 }
 .btn.crop-image-back-btn,
-.btn.apply-template-btn1 {
+.btn.apply-template-btn1,
+.btn.crop-image-next-btn.crop-it {
   color: #fff;
   box-shadow: 0 0 0 1px #007bff inset;
   background: rgb(97, 171, 250);
