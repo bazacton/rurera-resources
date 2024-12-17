@@ -101,99 +101,100 @@
                 </form>
             </div>
         </section>
-    </div>
+        <div class="card">
+            <div class="card-header">
+                @can('admin_users_create')
+                    <div class="text-right">
+                        <a href="/admin/users/create" class="btn btn-primary">New Teacher</a>
+                    </div>
+                @endcan
+                @can('admin_users_export_excel')
+                    <a href="{{ getAdminPanelUrl() }}/students/excel?{{ http_build_query(request()->all()) }}" class="btn btn-primary">{{ trans('admin/main.export_xls') }}</a>
+                @endcan
+                <div class="h-10"></div>
+            </div>
 
-    <div class="card">
-        <div class="card-header">
-            @can('admin_users_create')
-                <div class="text-right">
-                    <a href="/admin/users/create" class="btn btn-primary">New Teacher</a>
-                </div>
-            @endcan
-            @can('admin_users_export_excel')
-                <a href="{{ getAdminPanelUrl() }}/students/excel?{{ http_build_query(request()->all()) }}" class="btn btn-primary">{{ trans('admin/main.export_xls') }}</a>
-            @endcan
-            <div class="h-10"></div>
-        </div>
-
-        <div class="card-body">
-            <div class="table-responsive text-center">
-                <table class="table table-striped font-14">
-                    <tr>
-                        <th>ID</th>
-                        <th class="text-left">{{ trans('admin/main.name') }}</th>
-                        <th>{{ trans('admin/main.register_date') }}</th>
-                        <th>{{ trans('admin/main.status') }}</th>
-                        <th width="120">{{ trans('admin/main.actions') }}</th>
-                    </tr>
-
-                    @if($users->count() > 0)
-                    @foreach($users as $user)
-
+            <div class="card-body">
+                <div class="table-responsive text-center">
+                    <table class="table table-striped font-14">
                         <tr>
-                            <td>{{ $user->id }}</td>
-                            <td class="text-left">
-                                <div class="d-flex align-items-center">
-                                    <figure class="avatar mr-2">
-                                        <img src="{{ $user->getAvatar() }}" alt="{{ $user->get_full_name() }}">
-                                    </figure>
-                                    <div class="media-body ml-1">
-                                        <div class="mt-0 mb-1 font-weight-bold">{{ $user->get_full_name() }}</div>
-
-                                        @if($user->mobile)
-                                            <div class="text-primary text-small font-600-bold">{{ $user->mobile }}</div>
-                                        @endif
-
-                                        @if($user->email)
-                                            <div class="text-primary text-small font-600-bold">{{ $user->email }}</div>
-                                        @endif
-                                    </div>
-                                </div>
-                            </td>
-                            <td>{{ dateTimeFormat($user->created_at, 'j M Y | H:i') }}</td>
-
-                            <td>
-                                @if($user->ban and !empty($user->ban_end_at) and $user->ban_end_at > time())
-                                    <div class="mt-0 mb-1 font-weight-bold text-danger">{{ trans('admin/main.ban') }}</div>
-                                    <div class="text-small font-600-bold">Until {{ dateTimeFormat($user->ban_end_at, 'Y/m/j') }}</div>
-                                @else
-                                    <div class="mt-0 mb-1 font-weight-bold {{ ($user->status == 'active') ? 'text-success' : 'text-warning' }}">{{ trans('admin/main.'.$user->status) }}</div>
-                                @endif
-                            </td>
-
-                            <td class="text-center mb-2" width="120">
-                                @can('admin_users_impersonate')
-                                    <a href="{{ getAdminPanelUrl() }}/users/{{ $user->id }}/impersonate" target="_blank" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.login') }}">
-                                        <i class="fa fa-user-shield"></i>
-                                    </a>
-                                @endcan
-
-                                @can('admin_users_edit')
-                                    <a href="{{ getAdminPanelUrl() }}/users/{{ $user->id }}/edit" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
-                                        <i class="fa fa-edit"></i>
-                                    </a>
-                                @endcan
-
-                                @can('admin_users_delete')
-                                    @include('admin.includes.delete_button',['url' => getAdminPanelUrl().'/users/'.$user->id.'/delete' , 'btnClass' => '', 'deleteConfirmMsg' => trans('update.user_delete_confirm_msg')])
-                                @endcan
-                            </td>
-
+                            <th>ID</th>
+                            <th class="text-left">{{ trans('admin/main.name') }}</th>
+                            <th>{{ trans('admin/main.register_date') }}</th>
+                            <th>{{ trans('admin/main.status') }}</th>
+                            <th width="120">{{ trans('admin/main.actions') }}</th>
                         </tr>
-                    @endforeach
-                    @else
-                        <tr>
-                           <td colspan="5">No Records Found</td>
-                       </tr>
-                    @endif
-                </table>
+
+                        @if($users->count() > 0)
+                        @foreach($users as $user)
+
+                            <tr>
+                                <td>{{ $user->id }}</td>
+                                <td class="text-left">
+                                    <div class="d-flex align-items-center">
+                                        <figure class="avatar mr-2">
+                                            <img src="{{ $user->getAvatar() }}" alt="{{ $user->get_full_name() }}">
+                                        </figure>
+                                        <div class="media-body ml-1">
+                                            <div class="mt-0 mb-1 font-weight-bold">{{ $user->get_full_name() }}</div>
+
+                                            @if($user->mobile)
+                                                <div class="text-primary text-small font-600-bold">{{ $user->mobile }}</div>
+                                            @endif
+
+                                            @if($user->email)
+                                                <div class="text-primary text-small font-600-bold">{{ $user->email }}</div>
+                                            @endif
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>{{ dateTimeFormat($user->created_at, 'j M Y | H:i') }}</td>
+
+                                <td>
+                                    @if($user->ban and !empty($user->ban_end_at) and $user->ban_end_at > time())
+                                        <div class="mt-0 mb-1 font-weight-bold text-danger">{{ trans('admin/main.ban') }}</div>
+                                        <div class="text-small font-600-bold">Until {{ dateTimeFormat($user->ban_end_at, 'Y/m/j') }}</div>
+                                    @else
+                                        <div class="mt-0 mb-1 font-weight-bold {{ ($user->status == 'active') ? 'text-success' : 'text-warning' }}">{{ trans('admin/main.'.$user->status) }}</div>
+                                    @endif
+                                </td>
+
+                                <td class="text-center mb-2" width="120">
+                                    @can('admin_users_impersonate')
+                                        <a href="{{ getAdminPanelUrl() }}/users/{{ $user->id }}/impersonate" target="_blank" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.login') }}">
+                                            <i class="fa fa-user-shield"></i>
+                                        </a>
+                                    @endcan
+
+                                    @can('admin_users_edit')
+                                        <a href="{{ getAdminPanelUrl() }}/users/{{ $user->id }}/edit" class="btn-transparent  text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                    @endcan
+
+                                    @can('admin_users_delete')
+                                        @include('admin.includes.delete_button',['url' => getAdminPanelUrl().'/users/'.$user->id.'/delete' , 'btnClass' => '', 'deleteConfirmMsg' => trans('update.user_delete_confirm_msg')])
+                                    @endcan
+                                </td>
+
+                            </tr>
+                        @endforeach
+                        @else
+                            <tr>
+                            <td colspan="5">No Records Found</td>
+                        </tr>
+                        @endif
+                    </table>
+                </div>
+            </div>
+
+            <div class="card-footer text-center">
+                {{ $users->appends(request()->input())->links() }}
             </div>
         </div>
-
-        <div class="card-footer text-center">
-            {{ $users->appends(request()->input())->links() }}
-        </div>
     </div>
+
+    
     <div class="modal fade create-class-modal" id="createClassModal" tabindex="-1" role="dialog" aria-labelledby="createClassModalLabel" aria-modal="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
