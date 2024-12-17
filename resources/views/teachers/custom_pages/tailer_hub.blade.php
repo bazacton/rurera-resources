@@ -318,8 +318,8 @@
                             <div class="quiz-layout-edit-options">
                                 <div class="edit-options-right">
                                     <div class="edit-options-controls">
-                                        <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
-                                        <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="Move down"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
+                                        <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up" data-trigger="hover"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
+                                        <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="Move down" data-trigger="hover"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
 
                                         <!-- <button type="button" class="show-btn" data-toggle="tooltip" data-placement="top" title="Show/Hide question">
                                             <img class="show-img" src="/assets/default/svgs/eye-show.svg" alt="">
