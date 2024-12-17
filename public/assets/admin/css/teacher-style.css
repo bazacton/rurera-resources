@@ -2893,6 +2893,7 @@ Qustions AI Tabs Style End
     border: 0;
     background: none;
     margin-left: auto;
+    padding: 0;
 }
 .teacher-list-controls .edit-btn img {
     max-width: 100%;
