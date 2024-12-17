@@ -2952,17 +2952,17 @@ Qustions AI Tabs Style End
     vertical-align: middle;
     margin-right: 5px;
     margin-left: 0 !important;
-    font-size: 14px;
 }
-.listing-grid-card .phone-number {
+.listing-grid-card .phone-number-box {
     display: block;
     max-width: fit-content;
     margin: 0 auto 10px;
+}
+.listing-grid-card .phone-number {
     line-height: normal;
     cursor: pointer;
 }
-.listing-grid-card .phone-number i {
-    font-size: 14px;
+.listing-grid-card .phone-number-box i {
     margin: 0 5px 0 0;
 }
 .listing-grid-card figcaption {
