@@ -1862,7 +1862,7 @@ Tailer Hub Style Start
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
 }
 .section-header h1 {
     display: flex !important;
