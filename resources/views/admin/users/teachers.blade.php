@@ -57,7 +57,9 @@
                         </span>
                         <h5>Nolan Herwitz</h5>
                         <a href="#"><i class="fas fa-envelope"></i> nolan@nerou.com</a>
-                        <span class="phone-num"><i class="fas fa-phone"></i> 12 34 56 78 10</span>
+                        <span class="phone-number" onclick="showFullNumber(this)" data-full-number="987-654-3210">
+                            <i class="fas fa-phone"></i> 987-XXX-XXXX
+                        </span>
                         <span class="designation-lable">Year 1</span>
                         <span class="designation-lable">Year 2</span>
                         <span class="designation-lable">Year 3</span>
@@ -276,3 +278,16 @@
         </div>
     </div>
 @endsection
+
+@push('scripts_bottom')
+<script>
+    $(document).ready(function(){
+        function showFullNumber(element) {
+            const fullNumber = element.getAttribute('data-full-number');
+            element.textContent = fullNumber;
+        }
+    });
+    
+</script>
+
+@endpush
