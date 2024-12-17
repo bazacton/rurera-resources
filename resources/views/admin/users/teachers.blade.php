@@ -17,8 +17,8 @@
     </section>
 
     <div class="section-body">
-        <div class="teacher-controls">
-            <button type="button" class="create-class-btn" data-toggle="modal" data-target="#createClassModal"><i class="fas fa-plus-circle"></i> Create a Class</button>
+        <div class="teacher-controls mb-25">
+            <button type="button" class="create-class-btn ml-auto" data-toggle="modal" data-target="#createClassModal"><i class="fas fa-plus-circle"></i> Create a Teacher</button>
         </div>
         <div class="teacher-listing">
             <div class="row">
