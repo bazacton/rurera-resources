@@ -11,3 +11,8 @@
 .admin-rurera-tabs {
   margin-top: 20px;
 }
+.image-crop-area .R-container {
+  border: 2px dashed #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
