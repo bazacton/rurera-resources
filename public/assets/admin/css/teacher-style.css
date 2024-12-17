@@ -2918,17 +2918,24 @@ Qustions AI Tabs Style End
     padding: 0 15px 15px;
 }
 .teacher-list-controls .edit-btn {
-    height: 18px;
-    width: 18px;
+    height: 40px;
+    width: 40px;
     border: 0;
     background: none;
     margin-left: auto;
     padding: 0;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.teacher-list-controls .edit-btn:hover {
+    background-color: #f2f2f2;
 }
 .teacher-list-controls .edit-btn img {
-    max-width: 100%;
+    width: 18px;
+    height: 18px;
     object-fit: contain;
-    max-height: 100%;
 }
 .listing-grid-card h5 {
     color: #333;
