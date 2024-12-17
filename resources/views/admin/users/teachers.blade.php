@@ -57,8 +57,11 @@
                         </span>
                         <h5>Nolan Herwitz</h5>
                         <a href="#"><i class="fas fa-envelope"></i> nolan@nerou.com</a>
-                        <span class="phone-number" onclick="togglePhoneNumber(this)" data-full-number="987-654-3210">
-                             987-XXX-XXXX
+                        <span class="phone-number-box">
+                            <i class="fas fa-phone"></i>
+                            <span class="phone-number" onclick="togglePhoneNumber(this)" data-full-number="987-654-3210">
+                                987-XXX-XXXX
+                            </span>
                         </span>
                         <span class="designation-lable">Year 1</span>
                         <span class="designation-lable">Year 2</span>
