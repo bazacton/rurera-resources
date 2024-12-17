@@ -51,16 +51,18 @@
 
 
 		@if(auth()->user()->isAdminTeacher())
-            <div class="question-content-header">
-                <div class="section-heading">
-                    <h1>Tailer Hub</h1>
-                </div>
-                <div class="page-controls">
-                    <button class="setting-btn" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="Settings"><img src="/assets/default/svgs/settings.svg" alt=""></button>
-                    <button type="button" class="preview-btn"><img src="/assets/default/svgs/eye-show.svg" alt=""> Preview</button>
-                    <button type="button" class="publish-btn"><img src="/assets/default/svgs/publish.svg" alt=""> Publish</button>
-                </div>
-            </div>
+			@if(request()->is('admin/custom_page/tailer_hub'))
+				<div class="question-content-header">
+					<div class="section-heading">
+						<h1>Tailer Hub</h1>
+					</div>
+					<div class="page-controls">
+						<button class="setting-btn" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="Settings"><img src="/assets/default/svgs/settings.svg" alt=""></button>
+						<button type="button" class="preview-btn"><img src="/assets/default/svgs/eye-show.svg" alt=""> Preview</button>
+						<button type="button" class="publish-btn"><img src="/assets/default/svgs/publish.svg" alt=""> Publish</button>
+					</div>
+				</div>
+			@endif
 		@endif
 		
         <div class="main-content">
