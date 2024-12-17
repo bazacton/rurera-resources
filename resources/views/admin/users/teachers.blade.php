@@ -38,7 +38,9 @@
                         </span>
                         <h5>Nolan Herwitz</h5>
                         <a href="#"><i class="fas fa-envelope"></i> nolan@nerou.com</a>
-                        <span class="designation-lable">HR Department</span>
+                        <span class="designation-lable">Year 1</span>
+                        <span class="designation-lable">Year 2</span>
+                        <span class="designation-lable">Year 3</span>
                     </div>
                     <div class="teacher-list-controls">
                         <button type="button" class="edit-btn"><img src="/assets/default/svgs/edit-pencil.svg" alt=""></button>
