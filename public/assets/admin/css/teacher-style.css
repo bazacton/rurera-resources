@@ -2100,11 +2100,14 @@ Tailer Hub Style Start
     margin-right: 5px;
 }
 .question-content-header {
-    display: flex;
+    background-color: #fff;
+    display: flexs;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+    padding: 10px 15px 10px 280px;
+    border-bottom: 1px solid #dddd;
 }
 .question-content-header h1 {
     font-size: 16px;
