@@ -2837,6 +2837,8 @@ Qustions AI Tabs Style End
     overflow: hidden;
     background-color: #fff;
     margin-bottom: 25px;
+    max-width: 18rem;
+    position: relative;
 }
 .listing-grid-card .img-holder {
     height: 100px;
