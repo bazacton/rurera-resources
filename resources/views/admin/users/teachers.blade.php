@@ -26,7 +26,7 @@
                     <figure>
                         <img src="/assets/default/img/video.png" alt="">
                         <figcaption>
-                            <span class="count-lable">1,432 Pts</span>
+                            <span class="count-lable">Admin</span>
                         </figcaption>
                     </figure>
                 </div>
