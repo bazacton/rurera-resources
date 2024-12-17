@@ -17,6 +17,9 @@
     </section>
 
     <div class="section-body">
+        <div class="teacher-controls">
+            <button type="button" class="create-class-btn" data-toggle="modal" data-target="#createClassModal"><i class="fas fa-plus-circle"></i> Create a Class</button>
+        </div>
         <div class="teacher-listing">
             <div class="row">
                 <div class="col-12 col-lg-6 col-md-6">
@@ -189,6 +192,141 @@
 
         <div class="card-footer text-center">
             {{ $users->appends(request()->input())->links() }}
+        </div>
+    </div>
+    <div class="modal fade create-class-modal" id="createClassModal" tabindex="-1" role="dialog" aria-labelledby="createClassModalLabel" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createClassModalLabel">Create a New Class</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="/admin/users/store" method="Post">
+                        <input type="hidden" name="_token" value="fQMda1fhIvcaZcx4ZDjTlvxDOt8k7uCaJ3yoHqn4">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" name="first_name" class="form-control  " value="" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" name="last_name" class="form-control  " value="" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Display Name</label>
+                            <input type="text" name="display_name" class="form-control  " value="" placeholder="Display Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input name="username" type="text" class="form-control " id="username" value="" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input name="email" type="text" class="form-control " id="email" value="">
+                        </div>
+                        <div class="form-group">
+                            <label class="input-label">Password</label>
+                            <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span type="button" class="input-group-text">
+                                <i class="fa fa-lock"></i>
+                                </span>
+                            </div>
+                            <input type="password" name="password" class="form-control ">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>User Role</label>
+                            <select class="form-control select2 select2-hidden-accessible" id="roleId" name="role_id" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-roleId">
+                            <option disabled="" selected="" data-select2-id="select2-data-13-lrx4">Select a user role</option>
+                            <option value="7">teachers - Teachers</option>
+                            <option value="1">user - Student role</option>
+                            </select>
+                            <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-12-kuiu" style="width: 555px;">
+                            <span class="selection">
+                                <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-roleId-container">
+                                <span class="select2-selection__rendered" id="select2-roleId-container" role="textbox" aria-readonly="true" title="Select a user role">Select a user role</span>
+                                <span class="select2-selection__arrow" role="presentation">
+                                    <b role="presentation"></b>
+                                </span>
+                                </span>
+                            </span>
+                            <span class="dropdown-wrapper" aria-hidden="true"></span>
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label>Year</label>
+                            <select data-default_id="0" class="form-control year_class_ajax_select " name="year_id">
+                            <option selected="" disabled="">Select Year</option>
+                            <optgroup label="ks1">
+                                <option value="606">Year 1</option>
+                                <option value="607">Year 2</option>
+                            </optgroup>
+                            <optgroup label="ks2">
+                                <option value="613">Year 3</option>
+                                <option value="614">Year 4</option>
+                                <option value="612">Year 5</option>
+                                <option value="615">Year 6</option>
+                                <option value="616">Year 7</option>
+                                <option value="617">Year 8</option>
+                            </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Student Class</label>
+                            <select data-default_id="0" class="class_section_ajax_select student_section form-control select2 select2-hidden-accessible" id="class_id" name="class_id" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-class_id">
+                            <option value="" data-select2-id="select2-data-22-4q50">Select Class</option>
+                            </select>
+                            <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-15-jssb" style="width: 555px;">
+                            <span class="selection">
+                                <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-class_id-container">
+                                <span class="select2-selection__rendered" id="select2-class_id-container" role="textbox" aria-readonly="true" title="Select Class">Select Class</span>
+                                <span class="select2-selection__arrow" role="presentation">
+                                    <b role="presentation"></b>
+                                </span>
+                                </span>
+                            </span>
+                            <span class="dropdown-wrapper" aria-hidden="true"></span>
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label>Class Section</label>
+                            <select data-default_id="0" class="section_ajax_select student_section form-control select2 select2-hidden-accessible" id="section_id" name="section_id" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-section_id">
+                            <option value="" data-select2-id="select2-data-24-2kmz">Select Section</option>
+                            </select>
+                            <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-18-7slm" style="width: 555px;">
+                            <span class="selection">
+                                <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-section_id-container">
+                                <span class="select2-selection__rendered" id="select2-section_id-container" role="textbox" aria-readonly="true" title="Select Section">Select Section</span>
+                                <span class="select2-selection__arrow" role="presentation">
+                                    <b role="presentation"></b>
+                                </span>
+                                </span>
+                            </span>
+                            <span class="dropdown-wrapper" aria-hidden="true"></span>
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label>Status</label>
+                            <select class="form-control " id="status" name="status">
+                            <option disabled="" selected="">Select a status</option>
+                            <option value="active">active</option>
+                            <option value="pending">pending</option>
+                            <option value="inactive">inactive</option>
+                            </select>
+                        </div>
+                        <div class="text-right mt-4">
+                            <button class="btn btn-primary">Save</button>
+                        </div>
+                        </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Create class</button>
+                </div>
+            </div>
         </div>
     </div>
 @endsection
