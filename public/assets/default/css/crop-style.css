@@ -26,3 +26,12 @@
 .preview-cropped-img {
   margin-bottom: 15px;
 }
+.btn.crop-image-back-btn,
+.btn.apply-template-btn1 {
+  color: #fff;
+  box-shadow: 0 0 0 1px #007bff inset;
+  background: rgb(97, 171, 250);
+  background: linear-gradient(0deg, rgba(97, 171, 250, 1) 25%, rgba(0, 123, 255, 1) 100%);
+  border: 0;
+  padding: 5px 20px;
+}
