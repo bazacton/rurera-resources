@@ -2863,7 +2863,7 @@ Qustions AI Tabs Style End
     border: 2px solid #fff;
     border-radius: 100%;
 }
-.listing-grid-card .img-box img {
+.listing-grid-card .img-box > img {
     height: 100%;
     width: 100%;
     object-fit: cover;
