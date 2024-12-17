@@ -17,8 +17,27 @@
                 </div>
             </div>
         </section>
-        <div class="teacher-controls mb-25">
-            <button type="button" class="create-class-btn ml-auto" data-toggle="modal" data-target="#createClassModal"><i class="fas fa-plus-circle"></i> Create a Teacher</button>
+        <div class="nav-area">
+            <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" id="topics-tab" href="/admin/sections">
+                        <span class="tab-title">Sections</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="topics-tab" href="/admin/sections/joining-requests">
+                        <span class="tab-title">Joining Requests</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="topics-tab" href="#">
+                        <span class="tab-title">Archived Classes</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="teacher-controls">
+                <button type="button" class="create-class-btn" data-toggle="modal" data-target="#createClassModal"><i class="fas fa-plus-circle"></i> Create a Class</button>
+            </div>
         </div>
         <div class="teacher-listing">
             <div class="listing-grid-card">
