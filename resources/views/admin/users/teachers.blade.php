@@ -249,45 +249,6 @@
                                 <option value="1">user - Student role</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <label>Year</label>
-                            <select data-default_id="0" class="form-control year_class_ajax_select " name="year_id">
-                            <option selected="" disabled="">Select Year</option>
-                            <optgroup label="ks1">
-                                <option value="606">Year 1</option>
-                                <option value="607">Year 2</option>
-                            </optgroup>
-                            <optgroup label="ks2">
-                                <option value="613">Year 3</option>
-                                <option value="614">Year 4</option>
-                                <option value="612">Year 5</option>
-                                <option value="615">Year 6</option>
-                                <option value="616">Year 7</option>
-                                <option value="617">Year 8</option>
-                            </optgroup>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Student Class</label>
-                            <select data-default_id="0" class="class_section_ajax_select student_section form-control select2 select2-hidden-accessible" id="class_id" name="class_id" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-class_id">
-                                <option value="Select Class" data-select2-id="select2-data-22-4q50">Select Class</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Class Section</label>
-                            <select data-default_id="0" class="section_ajax_select student_section form-control select2 select2-hidden-accessible" id="section_id" name="section_id" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-section_id">
-                            <option value="" data-select2-id="select2-data-24-2kmz">Select Section</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Status</label>
-                            <select class="form-control " id="status" name="status">
-                            <option disabled="" selected="">Select a status</option>
-                            <option value="active">active</option>
-                            <option value="pending">pending</option>
-                            <option value="inactive">inactive</option>
-                            </select>
-                        </div>
                         <div class="text-right mt-4">
                             <button class="btn btn-primary">Save</button>
                         </div>
