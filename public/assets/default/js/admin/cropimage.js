@@ -8,9 +8,10 @@
 	* Repository: https://github.com/fabrice8/cropimage
 	*/
 
-var CROP_WIDTH = 200;	
-var CROP_HEIGHT = 200;
 	
+var CROP_WIDTH = parseInt($(".crop_sizes li.active").attr('data-crop_size_width'));
+var CROP_HEIGHT = parseInt($(".crop_sizes li.active").attr('data-crop_size_height'));
+
 (function( factory ){
 	if( typeof define === 'function' && define.amd )
 		define( [ 'jquery' ], factory ) // AMD. Register as an anonymous module.
@@ -77,7 +78,7 @@ var CROP_HEIGHT = 200;
 									
 								</div>
 							</div>
-					</div>`
+					</div><div class="remove-stage-image">Remove</div>`
 	}
 	
 	function Cropper( e, adapted, callback ){
@@ -237,6 +238,7 @@ var CROP_HEIGHT = 200;
 	
 	function core( options, callback ){
 		/**---------------------------------------- cropper input configurations ----------------------------------------**/
+		pre(options);
 		var 
 		OPTIONS = $.extend({
 			image: false,
@@ -249,6 +251,8 @@ var CROP_HEIGHT = 200;
 			zoomMax: 2,
 			background: 'transparent', // transparent, custom
 			inBoundGrid: true,
+			CROP_WIDTH_VAR: 300,
+			CROP_HEIGHT_VAR: 300,
 			outBoundColor: 'dark', // light, dark, none
 			// deprecated
 			btnDoneAttr: '.R-container .R-btn-done'
@@ -259,7 +263,8 @@ var CROP_HEIGHT = 200;
 		
 		$(this).html( CreateCropBox( OPTIONS ) );
 		
-		
+		CROP_WIDTH = options.CROP_WIDTH_VAR;
+		CROP_HEIGHT = options.CROP_HEIGHT_VAR;
 		let  
 		_IMG_ = null,
 		$_CONTAINER = $(".R-container"),

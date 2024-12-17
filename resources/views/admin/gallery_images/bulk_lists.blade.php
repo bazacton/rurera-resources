@@ -580,7 +580,8 @@ ul.crop_sizes {
 					</div>
 				</div>
 				<div class="inactivity-controls">
-					<button type="button" class="btn btn-primary crop-image-next-btn crop-it mt-0">Crop & Next</button>
+					<button type="button" class="btn btn-primary crop-it mt-0">Crop</button>
+					<button type="button" class="btn btn-primary crop-image-next-btn rurera-hide mt-0">Next</button>
 					<!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
 				</div>
 				
@@ -589,7 +590,7 @@ ul.crop_sizes {
 				<div class="example-selected-questions"></div>
 				<div class="row">
 										<div class="col-md-12 col-lg-12">
-											<button type="button" class="btn btn-primary crop-image-back-btn crop-it mt-0">Back</button>
+											<button type="button" class="btn btn-primary crop-image-back-btn mt-0">Back</button>
 										</div>
 											<div class="col-12">
 											<ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
@@ -802,6 +803,8 @@ ul.crop_sizes {
 			if($(".dynaCanvas").length > 0){
 			$(".image-upload-block").addClass('rurera-hide');
 			$(".template-selection").removeClass('rurera-hide');		
+			$(".crop-it").removeClass('rurera-hide');
+			$(".crop-image-next-btn").addClass('rurera-hide');
 			}else{
 				alert('Please upload image first');
 			}
