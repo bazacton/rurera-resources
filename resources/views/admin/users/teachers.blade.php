@@ -206,7 +206,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="/admin/users/store" method="Post">
+                    <form action="/admin/users/store" method="Post" class="mb-0">
                         <input type="hidden" name="_token" value="fQMda1fhIvcaZcx4ZDjTlvxDOt8k7uCaJ3yoHqn4">
                         <div class="form-group">
                             <label>First Name</label>
