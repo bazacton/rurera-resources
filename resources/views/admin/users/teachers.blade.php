@@ -57,6 +57,7 @@
                         </span>
                         <h5>Nolan Herwitz</h5>
                         <a href="#"><i class="fas fa-envelope"></i> nolan@nerou.com</a>
+                        <span class="phone-num"><i class="fas fa-phone"></i> 12 34 56 78 10</span>
                         <span class="designation-lable">Year 1</span>
                         <span class="designation-lable">Year 2</span>
                         <span class="designation-lable">Year 3</span>
