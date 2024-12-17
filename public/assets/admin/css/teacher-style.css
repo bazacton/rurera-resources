@@ -1835,11 +1835,11 @@ Tailer Hub Style Start
     display: inline-flex;
     align-items: center;
     gap: 2px;
-    padding: 10px 20px;
+    padding: 8px 15px;
     border-radius: 10px;
     outline: none;
     min-width: 105px;
-    font-size: 16px;
+    line-height: normal;
 }
 .page-controls .publish-btn {
     background-color: var(--publish);
@@ -2122,8 +2122,8 @@ Tailer Hub Style Start
     gap: 10px;
 }
 .page-controls button.setting-btn {
-    height: 45px;
-    width: 45px;
+    height: 37px;
+    width: 37px;
     padding: 0;
     min-width: auto;
     justify-content: center;
@@ -2131,8 +2131,8 @@ Tailer Hub Style Start
 }
 .page-controls button.setting-btn img {
     margin: 0;
-    height: 20px;
-    width: 20px;
+    height: 16px;
+    width: 16px;
     filter: invert(14%) sepia(68%) saturate(589%) hue-rotate(186deg) brightness(90%) contrast(95%);
 }
 /*************************************
