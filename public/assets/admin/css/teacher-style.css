@@ -2954,6 +2954,16 @@ Qustions AI Tabs Style End
     margin-left: 0 !important;
     font-size: 14px;
 }
+.listing-grid-card .phone-num {
+    display: block;
+    max-width: fit-content;
+    margin: 0 auto 10px;
+    line-height: normal;
+}
+.listing-grid-card .phone-num i {
+    font-size: 14px;
+    margin: 0 5px 0 0;
+}
 .listing-grid-card figcaption {
     position: absolute;
     top: 0;
