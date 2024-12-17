@@ -12,6 +12,7 @@
   background-color: #f17676;
   color: #fff;
   border-radius: 5px;
+  cursor: pointer;
 }
 .image-crop-area:empty {
   display: none;
