@@ -320,11 +320,7 @@
                         <div class="text-right mt-4">
                             <button class="btn btn-primary">Save</button>
                         </div>
-                        </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary">Create class</button>
+                    </form>
                 </div>
             </div>
         </div>
