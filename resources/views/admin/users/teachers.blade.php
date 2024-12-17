@@ -69,9 +69,16 @@
                     </div>
 
                     <script>
-                        function showFullNumber(element) {
+                        function togglePhoneNumber(element) {
                             const fullNumber = element.getAttribute('data-full-number');
-                            element.textContent = fullNumber;
+                            const isHidden = element.textContent.includes('XXX');
+                            
+                            if (isHidden) {
+                                element.textContent = fullNumber;
+                            } else {
+                                const hiddenNumber = `${fullNumber.slice(0, 3)}-XXX-XXXX`;
+                                element.textContent = hiddenNumber;
+                            }
                         }
                     </script>
 
