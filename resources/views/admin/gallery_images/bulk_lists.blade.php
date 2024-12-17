@@ -28,8 +28,8 @@
 	
 .rurera-upload-area {
   text-align: center;
-  width: 80%;
-  max-width: 500px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .rurera-upload-area #drag-drop-area {
