@@ -20,23 +20,18 @@
         <div class="nav-area">
             <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                 <li class="nav-item">
+                    <a class="nav-link" id="topics-tab" href="/admin/all">
+                        <span class="tab-title">All</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="topics-tab" href="/admin/sections/admin">
+                        <span class="tab-title">Admin</span>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link active" id="topics-tab" href="/admin/teachers">
                         <span class="tab-title">Teachers</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="topics-tab" href="/admin/sections">
-                        <span class="tab-title">Sections</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="topics-tab" href="/admin/sections/joining-requests">
-                        <span class="tab-title">Joining Requests</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="topics-tab" href="#">
-                        <span class="tab-title">Archived Classes</span>
                     </a>
                 </li>
             </ul>
