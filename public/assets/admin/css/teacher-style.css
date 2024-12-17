@@ -2830,3 +2830,94 @@ span.field-separated span:after {
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
+
+.listing-grid-card {
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: 25px;
+}
+.listing-grid-card .img-holder {
+    height: 100px;
+    overflow: hidden;
+}
+.listing-grid-card .img-holder img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    width: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+.listing-grid-card .img-holder figure {
+    margin: 0;
+    position: relative;
+    height: 100%;
+}
+.listing-grid-card .img-box {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.listing-grid-card .img-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.listing-grid-card .text-holder {
+    display: inline-block;
+    width: 100%;
+    margin-top: -30px;
+    position: relative;
+    z-index: 1;
+}
+.listing-grid-card .author-info {
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+}
+.teacher-list-controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 15px 15px;
+}
+.teacher-list-controls .edit-btn {
+    height: 20px;
+    width: 20px;
+    border: 0;
+    background: none;
+    margin-left: auto;
+}
+.teacher-list-controls .edit-btn img {
+    max-width: 100%;
+    object-fit: contain;
+    max-height: 100%;
+}
+.listing-grid-card .author-info a {
+    display: block;
+    line-height: normal;
+    margin: 0 0 10px;
+}
+.listing-grid-card figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+}
+.listing-grid-card .count-lable {
+    background-color: #fff;
+    color: #333;
+    padding: 5px 15px;
+    display: inline-block;
+    line-height: normal;
+    border-radius: 20px;
+}
