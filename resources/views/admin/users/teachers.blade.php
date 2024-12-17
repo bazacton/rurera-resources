@@ -278,16 +278,3 @@
         </div>
     </div>
 @endsection
-
-@push('scripts_bottom')
-<script>
-    $(document).ready(function(){
-        function showFullNumber(element) {
-            const fullNumber = element.getAttribute('data-full-number');
-            element.textContent = fullNumber;
-        }
-    });
-    
-</script>
-
-@endpush
