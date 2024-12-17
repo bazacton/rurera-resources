@@ -2900,10 +2900,20 @@ Qustions AI Tabs Style End
     object-fit: contain;
     max-height: 100%;
 }
+.listing-grid-card h6 {
+    font-size: 20px;
+    color: #333;
+    margin: 0 0 5px;
+}
 .listing-grid-card .author-info a {
     display: block;
     line-height: normal;
-    margin: 0 0 10px;
+    margin: 0 auto 10px;
+    max-width: fit-content;
+}
+.listing-grid-card .author-info a i {
+    vertical-align: middle;
+    margin-right: 5px;
 }
 .listing-grid-card figcaption {
     position: absolute;
@@ -2917,8 +2927,18 @@ Qustions AI Tabs Style End
 .listing-grid-card .count-lable {
     background-color: #fff;
     color: #333;
-    padding: 5px 15px;
+    padding: 4px 15px;
     display: inline-block;
     line-height: normal;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.designation-lable {
+    display: inline-block;
+    line-height: normal;
+    background-color: #f3f4f8;
+    color: #333;
+    font-weight: 600;
+    padding: 4px 15px;
     border-radius: 20px;
 }
