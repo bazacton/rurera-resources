@@ -1673,7 +1673,7 @@
     });
     /*Quiz Data Slide Function Start*/
     $(document).ready(function () {
-        $(".question-content-header .setting-btn, .slide-controls .close-btn").click(function (e) {
+        $(".page-controls button.setting-btn, .slide-controls .close-btn").click(function (e) {
             e.stopPropagation(); 
             $(".quiz-data-slide").toggleClass("active");
         });
