@@ -2862,11 +2862,27 @@ Qustions AI Tabs Style End
     margin-bottom: 10px;
     border: 2px solid #fff;
     border-radius: 100%;
+    position: relative;
 }
 .listing-grid-card .img-box > img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 100%;
+}
+.listing-grid-card .img-box .country-flag {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.listing-grid-card .img-box .country-flag img {
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 100%;
 }
 .listing-grid-card .text-holder {
