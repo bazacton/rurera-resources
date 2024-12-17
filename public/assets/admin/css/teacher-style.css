@@ -1815,6 +1815,10 @@ Tailer Hub Style Start
 .admin_teacher_role .bs-tooltip-top .arrow::before {
     border-top-color: rgba(0, 0, 0, 0.8);
 }
+.admin_teacher_role .bs-tooltip-auto[x-placement^=bottom] .arrow::before, 
+.admin_teacher_role .bs-tooltip-bottom .arrow::before {
+    border-bottom-color: rgba(0, 0, 0, 0.8);
+}
 .edit-options-controls .dropdown-toggle:after {
     display: none;
 }
