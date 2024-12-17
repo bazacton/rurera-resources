@@ -1025,6 +1025,7 @@ ul.crop_sizes {
 			$('.template-item').removeClass('active');
 			var bulk_list_id = $(this).attr('data-id');
 			$('.bulk_list_id').val(bulk_list_id);
+			$(".rurera-upload-area").removeClass('rurera-hide');
 			$(".upload_image_area").modal('show');
 		});
 		
