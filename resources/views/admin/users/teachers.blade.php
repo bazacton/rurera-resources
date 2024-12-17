@@ -21,31 +21,27 @@
             <button type="button" class="create-class-btn ml-auto" data-toggle="modal" data-target="#createClassModal"><i class="fas fa-plus-circle"></i> Create a Teacher</button>
         </div>
         <div class="teacher-listing">
-            <div class="row">
-                <div class="col-12 col-lg-4 col-md-6">
-                    <div class="listing-grid-card">
-                        <div class="img-holder">
-                            <figure>
-                                <img src="/assets/default/img/video.png" alt="">
-                                <figcaption>
-                                    <span class="count-lable">1,432 Pts</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="text-holder">
-                            <div class="author-info">
-                                <span class="img-box">
-                                    <img src="/assets/default/img/video.png" alt="">
-                                    <span class="country-flag"><img src="/assets/default/svgs/uk-flag.svg" alt=""></span>
-                                </span>
-                                <h5>Nolan Herwitz</h5>
-                                <a href="#"><i class="fas fa-envelope"></i> nolan@nerou.com</a>
-                                <span class="designation-lable">HR Department</span>
-                            </div>
-                            <div class="teacher-list-controls">
-                                <button type="button" class="edit-btn"><img src="/assets/default/svgs/edit-pencil.svg" alt=""></button>
-                            </div>
-                        </div>
+            <div class="listing-grid-card">
+                <div class="img-holder">
+                    <figure>
+                        <img src="/assets/default/img/video.png" alt="">
+                        <figcaption>
+                            <span class="count-lable">1,432 Pts</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="text-holder">
+                    <div class="author-info">
+                        <span class="img-box">
+                            <img src="/assets/default/img/video.png" alt="">
+                            <span class="country-flag"><img src="/assets/default/svgs/uk-flag.svg" alt=""></span>
+                        </span>
+                        <h5>Nolan Herwitz</h5>
+                        <a href="#"><i class="fas fa-envelope"></i> nolan@nerou.com</a>
+                        <span class="designation-lable">HR Department</span>
+                    </div>
+                    <div class="teacher-list-controls">
+                        <button type="button" class="edit-btn"><img src="/assets/default/svgs/edit-pencil.svg" alt=""></button>
                     </div>
                 </div>
             </div>
