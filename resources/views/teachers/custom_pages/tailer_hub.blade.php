@@ -554,11 +554,11 @@
                                                 <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
                                                     <div class="question-top-info">
                                                         <div class="question-count">
-                                                            <span class="icon-box"><i></i></span>
+                                                            <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt=""></span>
                                                             <span class="question-count-lable">Question 1 of 20</span>
                                                         </div>
                                                         <div class="question-info">
-                                                            <span class="q-type">Multiple choice</span>
+                                                            <span class="q-type"><img src="/assets/default/svgs/multi-choice.svg" alt="">Multiple choice</span>
                                                             <span class="q-time">Avg time</span>
                                                             <span class="q-point">1 point</span>
                                                         </div>
@@ -776,11 +776,11 @@
                                                 <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
                                                     <div class="question-top-info">
                                                         <div class="question-count">
-                                                            <span class="icon-box"><i></i></span>
-                                                            <span class="question-count-lable">Question 1 of 20</span>
+                                                            <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt=""></span>
+                                                            <span class="question-count-lable">Question 3 of 18</span>
                                                         </div>
                                                         <div class="question-info">
-                                                            <span class="q-type">Multiple choice</span>
+                                                            <span class="q-type"><img src="/assets/default/svgs/multi-choice.svg" alt="">Multiple choice</span>
                                                             <span class="q-time">Avg time</span>
                                                             <span class="q-point">1 point</span>
                                                         </div>
@@ -1082,7 +1082,7 @@
                                                                 <div class="question-top-info">
                                                                     <div class="question-count">
                                                                         <span class="icon-box"><i></i></span>
-                                                                        <span class="question-count-lable">Question 1 of 20</span>
+                                                                        <span class="question-count-lable">Question 2 of 12</span>
                                                                     </div>
                                                                     <div class="question-info">
                                                                         <span class="q-type">Multiple choice</span>
