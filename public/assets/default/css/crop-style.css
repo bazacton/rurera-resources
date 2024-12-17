@@ -8,7 +8,8 @@
 .image-crop-area:empty {
   display: none;
 }
-.admin-rurera-tabs {
+.admin-rurera-tabs,
+.admin_teacher_role .admin-rurera-tabs {
   margin-top: 20px;
 }
 .image-crop-area .R-container {
