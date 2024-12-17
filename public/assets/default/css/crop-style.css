@@ -1,7 +1,7 @@
 #image_preview { width:300px; }
 #crop_popup .modal-dialog { max-width:700px; }
 .image-crop-area {
-  max-height: 400px;
+  height: 400px;
   overflow: auto; 
   margin-bottom: 15px;
 }
