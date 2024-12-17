@@ -103,10 +103,6 @@
 .rurera-upload-area .file-name {
   flex: 1;
 }
-.image-crop-area {
-    height: auto;
-    max-height: 400px;
-}
 </style>
 @endpush
 
