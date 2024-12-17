@@ -17,3 +17,11 @@
   border-radius: 5px;
   padding: 20px;
 }
+.preview-cropped-img img {
+  border: 2px dashed #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+.preview-cropped-img {
+  margin-bottom: 15px;
+}
