@@ -103,6 +103,7 @@
 .rurera-upload-area .file-name {
   flex: 1;
 }
+
 </style>
 @endpush
 
