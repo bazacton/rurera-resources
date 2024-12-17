@@ -2929,10 +2929,13 @@ Qustions AI Tabs Style End
     line-height: normal;
     margin: 0 auto 10px;
     max-width: fit-content;
+    font-weight: bold;
 }
 .listing-grid-card .author-info a i {
     vertical-align: middle;
     margin-right: 5px;
+    margin-left: 0 !important;
+    font-size: 14px;
 }
 .listing-grid-card figcaption {
     position: absolute;
