@@ -38,7 +38,7 @@
                                     <img src="/assets/default/img/video.png" alt="">
                                     <span class="country-flag"><img src="/assets/default/svgs/uk-flag.svg" alt=""></span>
                                 </span>
-                                <h6>Nolan Herwitz</h6>
+                                <h5>Nolan Herwitz</h5>
                                 <a href="#"><i class="fas fa-envelope"></i> nolan@nerou.com</a>
                                 <span class="designation-lable">HR Department</span>
                             </div>
