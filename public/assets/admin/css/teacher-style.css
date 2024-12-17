@@ -2841,15 +2841,19 @@ Qustions AI Tabs Style End
 .listing-grid-card .img-holder {
     height: 100px;
     overflow: hidden;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
 }
 .listing-grid-card .img-holder img {
     max-width: 100%;
-    object-fit: contain;
+    max-height: 100%;
+    object-fit: cover;
+    width: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
 .listing-grid-card .img-holder figure {
     margin: 0;
+    position: relative;
+    height: 100%;
 }
 .listing-grid-card .img-box {
     height: 50px;
@@ -2899,4 +2903,21 @@ Qustions AI Tabs Style End
     display: block;
     line-height: normal;
     margin: 0 0 10px;
+}
+.listing-grid-card figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+}
+.listing-grid-card .count-lable {
+    background-color: #fff;
+    color: #333;
+    padding: 5px 15px;
+    display: inline-block;
+    line-height: normal;
+    border-radius: 20px;
 }
