@@ -2101,7 +2101,7 @@ Tailer Hub Style Start
 }
 .question-content-header {
     background-color: #fff;
-    display: flexs;
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
