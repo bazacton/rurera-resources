@@ -69,12 +69,10 @@
                     </div>
 
                     <script>
-                        $(document).ready(function(){
-                            function showFullNumber(element) {
-                                const fullNumber = element.getAttribute('data-full-number');
-                                element.textContent = fullNumber;
-                            }
-                        });
+                        function showFullNumber(element) {
+                            const fullNumber = element.getAttribute('data-full-number');
+                            element.textContent = fullNumber;
+                        }
                     </script>
 
                 </div>
