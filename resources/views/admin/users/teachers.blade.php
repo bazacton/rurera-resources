@@ -241,21 +241,10 @@
                         <div class="form-group">
                             <label>User Role</label>
                             <select class="form-control select2 select2-hidden-accessible" id="roleId" name="role_id" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-roleId">
-                            <option disabled="" selected="" data-select2-id="select2-data-13-lrx4">Select a user role</option>
-                            <option value="7">teachers - Teachers</option>
-                            <option value="1">user - Student role</option>
+                                <option disabled="" selected="" data-select2-id="select2-data-13-lrx4">Select a user role</option>
+                                <option value="7">teachers - Teachers</option>
+                                <option value="1">user - Student role</option>
                             </select>
-                            <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-12-kuiu" style="width: 555px;">
-                            <span class="selection">
-                                <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-roleId-container">
-                                <span class="select2-selection__rendered" id="select2-roleId-container" role="textbox" aria-readonly="true" title="Select a user role">Select a user role</span>
-                                <span class="select2-selection__arrow" role="presentation">
-                                    <b role="presentation"></b>
-                                </span>
-                                </span>
-                            </span>
-                            <span class="dropdown-wrapper" aria-hidden="true"></span>
-                            </span>
                         </div>
                         <div class="form-group">
                             <label>Year</label>
@@ -278,36 +267,14 @@
                         <div class="form-group">
                             <label>Student Class</label>
                             <select data-default_id="0" class="class_section_ajax_select student_section form-control select2 select2-hidden-accessible" id="class_id" name="class_id" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-class_id">
-                            <option value="" data-select2-id="select2-data-22-4q50">Select Class</option>
+                                <option value="Select Class" data-select2-id="select2-data-22-4q50">Select Class</option>
                             </select>
-                            <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-15-jssb" style="width: 555px;">
-                            <span class="selection">
-                                <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-class_id-container">
-                                <span class="select2-selection__rendered" id="select2-class_id-container" role="textbox" aria-readonly="true" title="Select Class">Select Class</span>
-                                <span class="select2-selection__arrow" role="presentation">
-                                    <b role="presentation"></b>
-                                </span>
-                                </span>
-                            </span>
-                            <span class="dropdown-wrapper" aria-hidden="true"></span>
-                            </span>
                         </div>
                         <div class="form-group">
                             <label>Class Section</label>
                             <select data-default_id="0" class="section_ajax_select student_section form-control select2 select2-hidden-accessible" id="section_id" name="section_id" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-section_id">
                             <option value="" data-select2-id="select2-data-24-2kmz">Select Section</option>
                             </select>
-                            <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-18-7slm" style="width: 555px;">
-                            <span class="selection">
-                                <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-section_id-container">
-                                <span class="select2-selection__rendered" id="select2-section_id-container" role="textbox" aria-readonly="true" title="Select Section">Select Section</span>
-                                <span class="select2-selection__arrow" role="presentation">
-                                    <b role="presentation"></b>
-                                </span>
-                                </span>
-                            </span>
-                            <span class="dropdown-wrapper" aria-hidden="true"></span>
-                            </span>
                         </div>
                         <div class="form-group">
                             <label>Status</label>
