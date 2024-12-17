@@ -2871,13 +2871,14 @@ Qustions AI Tabs Style End
     border-radius: 100%;
 }
 .listing-grid-card .img-box .country-flag {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100%;
     position: absolute;
     right: 0;
     bottom: 0;
     height: 20px;
     width: 20px;
-    border: 1px solid #fff;
-    border-radius: 100%;
     overflow: hidden;
 }
 .listing-grid-card .img-box .country-flag img {
