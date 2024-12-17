@@ -36,7 +36,7 @@
                             <div class="author-info">
                                 <span class="img-box">
                                     <img src="/assets/default/img/video.png" alt="">
-                                    <span class="country-flag"><img src="/assets/default/img/video.png" alt=""></span>
+                                    <span class="country-flag"><img src="/assets/default/svgs/uk-flag.svg" alt=""></span>
                                 </span>
                                 <h6>Nolan Herwitz</h6>
                                 <a href="#"><i class="fas fa-envelope"></i> nolan@nerou.com</a>
