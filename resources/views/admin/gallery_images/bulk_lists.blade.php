@@ -574,10 +574,8 @@ ul.crop_sizes {
 									<ul id="file-list"></ul>
 								</div>
 							</div>
-							<div class="col-12 col-md-12 col-lg-12 img-contaner w-100 image-crop-area">
-							</div>
-							<div class="col-12 col-md-12 col-lg-12  preview-cropped-img">
-							</div>
+							<div class="col-12 col-md-12 col-lg-12 img-contaner w-100 image-crop-area"></div>
+							<div class="col-12 col-md-12 col-lg-12  preview-cropped-img"></div>
 						</div>
 					</div>
 				</div>
