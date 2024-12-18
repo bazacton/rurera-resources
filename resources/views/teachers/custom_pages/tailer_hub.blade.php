@@ -1572,8 +1572,8 @@
                     
                     <div class="question-card">
                         <div class="question-content">
-                            <p class="question-text"><div class="q-number">1</div> What does UI stand fo...</p>
-                            <p class="question-type">
+                            <div class="question-text"><div class="q-number">1</div> What does UI stand fo...</div>
+                            <div class="question-type">
                                 📋 Multiple choice 
                                 <div class="edit-options-controls">
                                     <div class="dropdown">
@@ -1592,7 +1592,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </p>
+                            </div>
                         </div>
                     </div>
 
