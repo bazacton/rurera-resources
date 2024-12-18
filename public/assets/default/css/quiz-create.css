@@ -1099,6 +1099,7 @@ scrollbar-gutter: stable both-edges;
 .question_hint {
     font-style: italic;
     color: #999;
+    display: block;
 }
 /*Quistions Type Content Default Style End*/
 
