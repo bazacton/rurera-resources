@@ -2052,7 +2052,7 @@ Tailer Hub Style Start
     gap: 10px 15px;
 }
 .bulk-quiz .btn-field a {
-    padding: 0;
+    padding: 5px 0;
     color: var(--blue);
     display: inline-block;
 }
