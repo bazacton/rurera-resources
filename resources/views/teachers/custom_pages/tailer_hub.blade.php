@@ -97,13 +97,9 @@
                     <div class="bulk-ai">
                         <div class="bulk-ai-box">
                             <span class="bulk-lable">Rendomize</span>
-                            <div class="select-field">
-                                <select>
-                                    <option value="Keep choices in current order">Keep choices in current order</option>
-                                    <option value="Keep choices in current order">Keep choices in current order</option>
-                                    <option value="Keep choices in current order">Keep choices in current order</option>
-                                    <option value="Keep choices in current order">Keep choices in current order</option>
-                                </select>
+                            <div class="btn-field">
+                                <button type="button">Question order</button>
+                                <button type="button">Options order</button>
                             </div>
                         </div>
                         <div class="bulk-ai-box">
@@ -141,7 +137,7 @@
                         <div class="bulk-ai-box">
                             <span class="bulk-lable">Bulk Delete</span>
                             <div class="btn-field">
-                                <button type="button">Delete</button>
+                                <button type="button">Delete All Questions</button>
                             </div>
                         </div>
                     </div>
