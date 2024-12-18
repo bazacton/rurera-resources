@@ -1617,20 +1617,25 @@
     }
 </script>
 <script>
-    
+    // Open modal and activate tab based on URL fragment
+    $(document).ready(function() {
+        // Check if the URL contains a fragment
+        var hash = window.location.hash;
+        if (hash) {
+            // Open the modal
+            $('#templatesleModal').modal('show');
+            // Activate the corresponding tab
+            $('a[href="' + hash + '"]').tab('show');
+        }
 
-    $(document).ready(function () {
-        // Handle modal show event
-        $('#templatesleModal').on('show.bs.modal', function (event) {
-            // Get the button that triggered the modal
-            var button = $(event.relatedTarget);
-            // Extract tab ID from data-tab attribute
-            var tabId = button.data('tab');
-
-            // Show the specific tab
-            if (tabId) {
-            $('#myTab a[href="#' + tabId + '"]').tab('show');
-            }
+        // Listen for tab change to update URL fragment
+        $('#templatesleModal').on('shown.bs.modal', function () {
+            var activeTab = $('#myTab .nav-link.active').attr('href');
+            window.location.hash = activeTab;
+        });
+        // When the modal is closed, remove the hash from the URL
+        $('#templatesleModal').on('hidden.bs.modal', function () {
+            history.pushState("", document.title, window.location.pathname + window.location.search);
         });
     });
 </script>
