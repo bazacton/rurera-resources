@@ -2055,13 +2055,6 @@ Tailer Hub Style Start
 .bulk-heading h6 {
     margin-bottom: 0;
 }
-.bulk-heading button {
-    border: 0;
-    padding: 5px 15px;
-    box-shadow: 0 0 0 1px #007bff inset;
-    background: rgb(97, 171, 250);
-    background: linear-gradient(0deg, rgba(97, 171, 250, 1) 25%, rgba(0, 123, 255, 1) 100%);
-}
 .bulk-quiz .btn-field {
     display: inline-flex;
     align-items: center;
