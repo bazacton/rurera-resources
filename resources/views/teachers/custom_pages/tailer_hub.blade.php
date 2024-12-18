@@ -92,7 +92,6 @@
                 <div class="mb-30 bg-white panel-border rounded-sm p-15 bulk-quiz">
                     <div class="bulk-heading">
                         <h6>Bulk Settings</h6>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#dragModal">Open Grid</button>
                     </div>
                     <div class="bulk-ai">
                         <div class="bulk-ai-box">
@@ -129,7 +128,7 @@
                         <div class="bulk-ai-box">
                             <span class="bulk-lable">Questions Order</span>
                             <div class="btn-field">
-                                <a href="#" class="delete-btn">Rearrange</a>
+                                <a href="#" class="delete-btn" data-toggle="modal" data-target="#dragModal">Rearrange</a>
                             </div>
                         </div>
                         <div class="bulk-ai-box">
