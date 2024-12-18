@@ -703,7 +703,7 @@
                                 <a href="#home" class="nav-link" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="false">Blank Canvas</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a href="#q-collections" class="nav-link active" id="q-collections-tab" data-toggle="tab" data-target="#q-collections" type="button" role="tab" aria-controls="q-collections" aria-selected="true">Collections</a>
+                                <a href="#q-collections" class="nav-link" id="q-collections-tab" data-toggle="tab" data-target="#q-collections" type="button" role="tab" aria-controls="q-collections" aria-selected="true">Collections</a>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <a href="#contact" class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Generate with AI</a>
@@ -717,7 +717,7 @@
                         </ul>
                     </div>
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <h6>Or select a question type to add question</h6>
                             <div class="question_templates-holder">
                                 <ul class="question_templates">
@@ -787,7 +787,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="tab-pane fade active show" id="q-collections" role="tabpanel" aria-labelledby="q-collections-tab">
+                        <div class="tab-pane fade" id="q-collections" role="tabpanel" aria-labelledby="q-collections-tab">
                             <div class="staff-picks-tabs">
                                 <div class="mb-30 bg-white panel-border rounded-sm p-15">
                                     <div class="rureraform-search-field mb-15">
