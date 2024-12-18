@@ -2829,6 +2829,9 @@ span.field-separated span:after {
     transform: translateY(-50%);
     border-radius: 100%;
 }
+.question-info .dropdown-toggle {
+    background-color: #f2f2f2;
+}
 
 
 .listing-dropdown {
