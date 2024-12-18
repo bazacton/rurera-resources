@@ -15,11 +15,6 @@
     <div class="section-body">
     <div class="row">
             <div class="col-12 col-md-9 col-lg-9 mx-auto">
-                <!-- Button to Open Modal -->
-                <div class="mt-5 text-center">
-                    <h3>Draggable Grid with Placeholder</h3>
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#dragModal">Open Grid</button>
-                </div>
 
                 <!-- Modal -->
                 <div class="modal fade" id="dragModal" tabindex="-1" role="dialog" aria-labelledby="dragModalLabel" aria-hidden="true">
@@ -95,7 +90,10 @@
                     </div>
                 </div>
                 <div class="mb-30 bg-white panel-border rounded-sm p-15 bulk-quiz">
-                    <h6>Bulk Settings</h6>
+                    <div class="bulk-heading">
+                        <h6>Bulk Settings</h6>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#dragModal">Open Grid</button>
+                    </div>
                     <div class="bulk-ai">
                         <div class="bulk-ai-box">
                             <span class="bulk-lable">Rendomize</span>
@@ -138,6 +136,12 @@
                                 <select>
                                     <option value="Randomize Question order">Randomize Question order</option>
                                 </select>
+                            </div>
+                        </div>
+                        <div class="bulk-ai-box">
+                            <span class="bulk-lable">Bulk Delete</span>
+                            <div class="btn-field">
+                                <button type="button">Delete</button>
                             </div>
                         </div>
                     </div>
