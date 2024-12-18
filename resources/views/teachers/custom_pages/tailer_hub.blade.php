@@ -359,9 +359,6 @@
                                 <div class="question-layout-block">
                                     <form class="question-fields" action="javascript:;" data-question_id="10180">
                                         <div class="left-content has-bg">
-                                        <span class="questions-total-holder d-block mb-10">
-                                            <span class="question-dev-details">(34328) (Emerging) (truefalse_quiz)</span>
-                                        </span>
                                         <span class="question-number-holder" style="z-index: 999999999;">
                                             <span class="question-number">1</span>
                                         </span>
@@ -578,13 +575,25 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="grid-container" id="gridContainer">
+                                <!-- Grid Items -->
+                                <div class="grid-item" draggable="true" id="item1">1</div>
+                                <div class="grid-item" draggable="true" id="item2">2</div>
+                                <div class="grid-item" draggable="true" id="item3">3</div>
+                                <div class="grid-item" draggable="true" id="item4">4</div>
+                                <div class="grid-item" draggable="true" id="item5">5</div>
+                                <div class="grid-item" draggable="true" id="item6">6</div>
+                                <div class="grid-item" draggable="true" id="item7">7</div>
+                                <div class="grid-item" draggable="true" id="item8">8</div>
+                                <div class="grid-item" draggable="true" id="item9">9</div>
+                                <div class="grid-item" draggable="true" id="item10">10</div>
+                                <div class="grid-item" draggable="true" id="item11">11</div>
+                                <div class="grid-item" draggable="true" id="item12">12</div>
+                            </div>
                             <div class="mb-15 bg-white panel-border rounded-sm p-25">
                                 <div class="question-layout-block">
                                     <form class="question-fields" action="javascript:;" data-question_id="10180">
                                         <div class="left-content has-bg">
-                                        <span class="questions-total-holder d-block mb-10">
-                                            <span class="question-dev-details">(22300) (Expected) (drop_and_text)</span>
-                                        </span>
                                         <span class="question-number-holder" style="z-index: 999999999;">
                                             <span class="question-number">1</span>
                                         </span>
@@ -1019,9 +1028,6 @@
                                             <div class="question-layout-block">
                                                 <form class="question-fields" action="javascript:;" data-question_id="10180">
                                                     <div class="left-content has-bg">
-                                                    <span class="questions-total-holder d-block mb-10">
-                                                        <span class="question-dev-details">(34328) (Emerging) (truefalse_quiz)</span>
-                                                    </span>
                                                     <span class="question-number-holder" style="z-index: 999999999;">
                                                         <span class="question-number">1</span>
                                                     </span>
@@ -1197,9 +1203,6 @@
                                             <div class="question-layout-block">
                                                 <form class="question-fields" action="javascript:;" data-question_id="10180">
                                                     <div class="left-content has-bg">
-                                                    <span class="questions-total-holder d-block mb-10">
-                                                        <span class="question-dev-details">(22300) (Expected) (drop_and_text)</span>
-                                                    </span>
                                                     <span class="question-number-holder" style="z-index: 999999999;">
                                                         <span class="question-number">1</span>
                                                     </span>
@@ -1555,6 +1558,49 @@
         });
     });
     
+</script>
+<!-- JavaScript for Drag and Drop -->
+<script>
+    const gridContainer = document.getElementById("gridContainer");
+    let draggedItem = null;
+
+    // Event listeners for drag and drop
+    document.querySelectorAll(".grid-item").forEach(item => {
+        item.addEventListener("dragstart", (e) => {
+            draggedItem = item;
+            setTimeout(() => item.classList.add("dragging"), 0);
+        });
+
+        item.addEventListener("dragend", () => {
+            draggedItem.classList.remove("dragging");
+            draggedItem = null;
+        });
+    });
+
+    gridContainer.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        const afterElement = getDragAfterElement(gridContainer, e.clientY);
+        if (afterElement == null) {
+            gridContainer.appendChild(draggedItem);
+        } else {
+            gridContainer.insertBefore(draggedItem, afterElement);
+        }
+    });
+
+    // Helper function to determine position
+    function getDragAfterElement(container, y) {
+        const draggableElements = [...container.querySelectorAll(".grid-item:not(.dragging)")];
+
+        return draggableElements.reduce((closest, child) => {
+            const box = child.getBoundingClientRect();
+            const offset = y - box.top - box.height / 2;
+            if (offset < 0 && offset > closest.offset) {
+                return { offset: offset, element: child };
+            } else {
+                return closest;
+            }
+        }, { offset: Number.NEGATIVE_INFINITY }).element;
+    }
 </script>
 
 @endpush
