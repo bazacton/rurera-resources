@@ -15,7 +15,21 @@
     <div class="section-body">
     <div class="row">
             <div class="col-12 col-md-9 col-lg-9 mx-auto">
-                
+                <div class="grid-container" id="gridContainer">
+                    <!-- Grid Items -->
+                    <div class="grid-item" draggable="true" id="item1">1</div>
+                    <div class="grid-item" draggable="true" id="item2">2</div>
+                    <div class="grid-item" draggable="true" id="item3">3</div>
+                    <div class="grid-item" draggable="true" id="item4">4</div>
+                    <div class="grid-item" draggable="true" id="item5">5</div>
+                    <div class="grid-item" draggable="true" id="item6">6</div>
+                    <div class="grid-item" draggable="true" id="item7">7</div>
+                    <div class="grid-item" draggable="true" id="item8">8</div>
+                    <div class="grid-item" draggable="true" id="item9">9</div>
+                    <div class="grid-item" draggable="true" id="item10">10</div>
+                    <div class="grid-item" draggable="true" id="item11">11</div>
+                    <div class="grid-item" draggable="true" id="item12">12</div>
+                </div>
                 <div class="q-ai-nav-controls">
                     <button type="button" class="active" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-question.svg" alt=""> Add Question</button>
                     <button type="button"><img src="/assets/default/svgs/add-collection.svg" alt=""> Add question from Collection</button>
@@ -574,21 +588,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="grid-container" id="gridContainer">
-                                <!-- Grid Items -->
-                                <div class="grid-item" draggable="true" id="item1">1</div>
-                                <div class="grid-item" draggable="true" id="item2">2</div>
-                                <div class="grid-item" draggable="true" id="item3">3</div>
-                                <div class="grid-item" draggable="true" id="item4">4</div>
-                                <div class="grid-item" draggable="true" id="item5">5</div>
-                                <div class="grid-item" draggable="true" id="item6">6</div>
-                                <div class="grid-item" draggable="true" id="item7">7</div>
-                                <div class="grid-item" draggable="true" id="item8">8</div>
-                                <div class="grid-item" draggable="true" id="item9">9</div>
-                                <div class="grid-item" draggable="true" id="item10">10</div>
-                                <div class="grid-item" draggable="true" id="item11">11</div>
-                                <div class="grid-item" draggable="true" id="item12">12</div>
                             </div>
                             <div class="mb-15 bg-white panel-border rounded-sm p-25">
                                 <div class="question-layout-block">
