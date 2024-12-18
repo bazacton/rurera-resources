@@ -1638,6 +1638,21 @@
             history.pushState("", document.title, window.location.pathname + window.location.search);
         });
     });
+
+    $(document).ready(function () {
+        // Handle modal show event
+        $('#templatesleModal').on('show.bs.modal', function (event) {
+            // Get the button that triggered the modal
+            var button = $(event.relatedTarget);
+            // Extract tab ID from data-tab attribute
+            var tabId = button.data('tab');
+
+            // Show the specific tab
+            if (tabId) {
+            $('#myTab a[href="#' + tabId + '"]').tab('show');
+            }
+        });
+    });
 </script>
 <script>
     const gridContainer = document.getElementById("gridContainer");
