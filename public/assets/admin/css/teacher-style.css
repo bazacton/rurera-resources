@@ -2143,6 +2143,13 @@ Tailer Hub Style Start
     width: 16px;
     filter: invert(14%) sepia(68%) saturate(589%) hue-rotate(186deg) brightness(90%) contrast(95%);
 }
+.blank-canvas-modal .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+}
+.blank-canvas-modal .question-content-header {
+    padding-left: 15px;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
