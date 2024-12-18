@@ -1623,14 +1623,14 @@
         var hash = window.location.hash;
         if (hash) {
             // Open the modal
-            $('#myModal').modal('show');
+            $('#templatesleModal').modal('show');
             // Activate the corresponding tab
             $('a[href="' + hash + '"]').tab('show');
         }
 
         // Listen for tab change to update URL fragment
-        $('#myModal').on('shown.bs.modal', function () {
-            var activeTab = $('#myTabs .nav-link.active').attr('href');
+        $('#templatesleModal').on('shown.bs.modal', function () {
+            var activeTab = $('#myTab .nav-link.active').attr('href');
             window.location.hash = activeTab;
         });
     });
