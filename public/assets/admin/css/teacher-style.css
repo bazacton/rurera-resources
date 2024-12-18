@@ -2948,6 +2948,12 @@ span.field-separated span:after {
     align-items: center;
     justify-content: space-between;
   }
+  .question-type > span {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2px 8px;
+    display: inline-block;
+    border-radius: 5px;
+}
   
 /*************************************
 Qustions AI Tabs Style End
