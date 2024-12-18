@@ -706,7 +706,7 @@
                                 <a href="#q-collections" class="nav-link" id="q-collections-tab" data-toggle="tab" data-target="#q-collections" type="button" role="tab" aria-controls="q-collections" aria-selected="true">Collections</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a href="#contact" class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Generate with AI</a>
+                                <a href="#generate-ai" class="nav-link" id="generate-ai-tab" data-toggle="tab" data-target="#generate-ai" type="button" role="tab" aria-controls="generate-ai" aria-selected="false">Generate with AI</a>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <a href="#import-q" class="nav-link" id="import-tab" data-toggle="tab" data-target="#import-q" type="button" role="tab" aria-controls="import-q" aria-selected="false">Import Questions</a>
@@ -1276,7 +1276,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="tab-pane fade" id="generate-ai" role="tabpanel" aria-labelledby="generate-ai-tab">
                             <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible alert fade show">
                                 <button type="button" class="close" data-dismiss="quiz-ai-tags" aria-label="Close">
                                     <span aria-hidden="true">×</span>
