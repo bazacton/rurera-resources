@@ -1966,6 +1966,7 @@ Tailer Hub Style Start
     padding: 8px 18px;
     border-radius: 5px;
     color: #444;
+    text-decoration: none;
 }
 .q-ai-nav-controls {
     display: flex;
