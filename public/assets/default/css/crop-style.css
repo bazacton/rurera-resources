@@ -5,13 +5,15 @@
   margin-bottom: 15px;
 }
 .remove-stage-image {
-  margin: 15px 0 15px;
   padding: 5px 10px;
   background-color: #f17676;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
+  position: absolute;
+  top: 15px;
+  right: 30px;
 }
 .image-crop-area:empty {
   display: none;
@@ -24,7 +26,6 @@
   border: 2px dashed #ddd;
   border-radius: 5px;
   padding: 20px;
-  height: calc(100% - 30px);
 }
 .preview-cropped-img img {
   border: 2px dashed #ddd;
