@@ -1574,7 +1574,7 @@
                             <div class="question-content">
                                 <div class="question-text"><div class="q-number">1</div> What does UI stand fo...</div>
                                 <div class="question-type">
-                                    <span>📋 Multiple choice</span> 
+                                    <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span> 
                                     <div class="edit-options-controls">
                                         <div class="dropdown">
                                             <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1599,7 +1599,7 @@
                             <div class="question-content">
                                 <div class="question-text"><div class="q-number">2</div> Which aspect of UI de...</div>
                                 <div class="question-type">
-                                    <span>📋 Multiple choice</span> 
+                                    <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span> 
                                     <div class="edit-options-controls">
                                         <div class="dropdown">
                                             <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1624,7 +1624,7 @@
                             <div class="question-content">
                                 <div class="question-text"><div class="q-number">3</div> How to export a pictu...</div>
                                 <div class="question-type">
-                                    <span>📋 Multiple choice</span> 
+                                    <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span> 
                                     <div class="edit-options-controls">
                                         <div class="dropdown">
                                             <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
