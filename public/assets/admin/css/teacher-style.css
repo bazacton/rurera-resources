@@ -2169,10 +2169,10 @@ Tailer Hub Style Start
     padding: 0;
 }
 .blank-canvas-modal .modal-body {
-    padding: 0;
+    padding: 0 0 0 300px;
 }
 .blank-canvas-modal .question-content-header {
-    padding-left: 320px;
+    padding-left: 15px;
     padding-right: 50px;
 }
 .canvas-modal-container {
