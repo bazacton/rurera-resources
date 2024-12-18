@@ -127,14 +127,6 @@
                             </div>
                         </div>
                         <div class="bulk-ai-box">
-                            <span class="bulk-lable">Randomize Question order</span>
-                            <div class="select-field">
-                                <select>
-                                    <option value="Randomize Question order">Randomize Question order</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="bulk-ai-box">
                             <span class="bulk-lable">Bulk Delete</span>
                             <div class="btn-field">
                                 <button type="button">Delete All Questions</button>
