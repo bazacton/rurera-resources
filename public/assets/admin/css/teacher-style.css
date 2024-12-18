@@ -1793,7 +1793,7 @@ Tailer Hub Style Start
     display: flex;
     align-items: center;
 }
-.edit-options-controls .poll-btn, .edit-options-controls .edit-btn {
+.edit-options-controls .poll-btn {
     padding: 0 10px;
 }
 .edit-options-controls .poll-btn i {
@@ -1801,11 +1801,6 @@ Tailer Hub Style Start
     font-style: normal;
     font-weight: 600;
     margin-right: 5px;
-}
-.edit-options-controls .edit-btn img {
-    height: 12px;
-    width: 12px;
-    margin-right: 10px;
 }
 .admin_teacher_role .tooltip-inner {
     background-color: rgba(0,0,0,0.8);
