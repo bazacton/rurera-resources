@@ -2187,6 +2187,515 @@
                         <button type="button" class="cancel-btn">Cancel</button>
                     </div>
                 </div>
+                <div class="canvas-editable-options">
+                    <div class="lms-element-properties">
+                        <div class="row">
+                            <div class="topic-parts-block rurera-hide" style="display:contents;"></div>
+                        </div>
+                        <div class="rureraform-admin-popup active" id="rureraform-element-properties" style="display: block;" data-element_id="rureraform-element-3">
+                            <div class="rureraform-admin-popup-inner">
+                            <div class="rureraform-admin-popup-title">
+                                <a href="#" title="Close" onclick="return rureraform_properties_close();">
+                                <i class="fas fa-times"></i>
+                                </a>
+                                <h3>
+                                <i class="fas fa-cog element-properties-label"></i> Element Properties
+                                </h3>
+                            </div>
+                            <div class="rureraform-admin-popup-content">
+                                <div class="rureraform-admin-popup-content-form">
+                                <div id="rureraform-properties-tabs" class="rureraform-tabs">
+                                    <a class="rureraform-tab rureraform-tab-active" href="#rureraform-tab-basic">Basic</a>
+                                </div>
+                                <div id="rureraform-tab-basic" class="rureraform-tab-content" style="display: block;">
+                                    <input type="hidden" name="rureraform-field_id" id="rureraform-field_id" value="48453" placeholder="">
+                                    <div class="rureraform-properties-item " data-id="label">
+                                    <div class="rureraform-properties-label">
+                                        <label>Label</label>
+                                    </div>
+                                    <div class="rureraform-properties-tooltip">
+                                        <i class="fas fa-question-circle rureraform-tooltip-anchor tooltipstered"></i>
+                                        <div class="rureraform-tooltip-content">This is the label of the field.</div>
+                                    </div>
+                                    <div class="rureraform-properties-content">
+                                        <input type="text" name="rureraform-label" id="rureraform-label" value="Mark One answer" placeholder="">
+                                    </div>
+                                    </div>
+                                    <div class="rureraform-properties-item " data-id="have_images">
+                                    <div class="rureraform-properties-label">
+                                        <label>Have Images</label>
+                                    </div>
+                                    <div class="rureraform-properties-tooltip"></div>
+                                    <div class="rureraform-properties-content">
+                                        <div class="rureraform-third">
+                                        <select name="rureraform-have_images" id="rureraform-have_images" class="">
+                                            <option selected="selected" value="no">No</option>
+                                            <option value="yes">Yes</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="rureraform-properties-item rurera-image-depend rurera-hide" data-id="image_position">
+                                    <div class="rureraform-properties-label">
+                                        <label>Image Position</label>
+                                    </div>
+                                    <div class="rureraform-properties-tooltip"></div>
+                                    <div class="rureraform-properties-content">
+                                        <div class="rureraform-third">
+                                        <select name="rureraform-image_position" id="rureraform-image_position" class="">
+                                            <option selected="selected" value="top">Top</option>
+                                            <option value="left">Left</option>
+                                            <option value="right">Right</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="rureraform-properties-item" data-id="options">
+                                    <div class="rureraform-properties-label">
+                                        <label>Options</label>
+                                    </div>
+                                    <div class="rureraform-properties-tooltip">
+                                        <i class="fas fa-question-circle rureraform-tooltip-anchor tooltipstered"></i>
+                                        <div class="rureraform-tooltip-content">These are the choices that the user will be able to choose from.</div>
+                                    </div>
+                                    <div class="rureraform-properties-content rureraform-properties-image-options-table">
+                                        <div class="rureraform-properties-options-table-header">
+                                        <div>Label</div>
+                                        <div class="rurera-image-depend rurera-hide">Image</div>
+                                        <div class="rurera-hide">Value</div>
+                                        <div></div>
+                                        </div>
+                                        <div class="rureraform-properties-options-box ui-resizable">
+                                        <div class="rureraform-properties-options-container ui-sortable" data-multi="on">
+                                            <div class="rureraform-properties-options-item rureraform-properties-options-item-default">
+                                            <div class="rureraform-properties-options-table">
+                                                <div>
+                                                <input class="rureraform-properties-options-label" type="text" value="Cells" placeholder="Label">
+                                                </div>
+                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
+                                                <div class="input-group-prepend">
+                                                    <button type="button" class="input-group-text admin-file-manager" data-input="image-options-0" data-preview="holder">
+                                                    <i class="fa fa-upload"></i>
+                                                    </button>
+                                                </div>
+                                                <input class="rureraform-properties-options-image" type="text" id="image-options-0" value="" placeholder="Upload Image">
+                                                <span>
+                                                    <i class="far fa-image"></i>
+                                                </span>
+                                                </div>
+                                                <div class="rurera-hide">
+                                                <input class="rureraform-properties-options-value" type="text" value="Cells" placeholder="Value">
+                                                </div>
+                                                <div>
+                                                <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
+                                                    <i class="fas fa-check"></i>
+                                                </span>
+                                                <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
+                                                    <i class="far fa-copy"></i>
+                                                </span>
+                                                <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </span>
+                                                <span title="Move the option">
+                                                    <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="rureraform-properties-options-item">
+                                            <div class="rureraform-properties-options-table">
+                                                <div>
+                                                <input class="rureraform-properties-options-label" type="text" value="Chloroplasts" placeholder="Label">
+                                                </div>
+                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
+                                                <div class="input-group-prepend">
+                                                    <button type="button" class="input-group-text admin-file-manager" data-input="image-options-1" data-preview="holder">
+                                                    <i class="fa fa-upload"></i>
+                                                    </button>
+                                                </div>
+                                                <input class="rureraform-properties-options-image" type="text" id="image-options-1" value="" placeholder="Upload Image">
+                                                <span>
+                                                    <i class="far fa-image"></i>
+                                                </span>
+                                                </div>
+                                                <div class="rurera-hide">
+                                                <input class="rureraform-properties-options-value" type="text" value="Chloroplasts" placeholder="Value">
+                                                </div>
+                                                <div>
+                                                <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
+                                                    <i class="fas fa-check"></i>
+                                                </span>
+                                                <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
+                                                    <i class="far fa-copy"></i>
+                                                </span>
+                                                <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </span>
+                                                <span title="Move the option">
+                                                    <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="rureraform-properties-options-item">
+                                            <div class="rureraform-properties-options-table">
+                                                <div>
+                                                <input class="rureraform-properties-options-label" type="text" value="Tissues" placeholder="Label">
+                                                </div>
+                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
+                                                <div class="input-group-prepend">
+                                                    <button type="button" class="input-group-text admin-file-manager" data-input="image-options-2" data-preview="holder">
+                                                    <i class="fa fa-upload"></i>
+                                                    </button>
+                                                </div>
+                                                <input class="rureraform-properties-options-image" type="text" id="image-options-2" value="" placeholder="Upload Image">
+                                                <span>
+                                                    <i class="far fa-image"></i>
+                                                </span>
+                                                </div>
+                                                <div class="rurera-hide">
+                                                <input class="rureraform-properties-options-value" type="text" value="Tissues" placeholder="Value">
+                                                </div>
+                                                <div>
+                                                <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
+                                                    <i class="fas fa-check"></i>
+                                                </span>
+                                                <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
+                                                    <i class="far fa-copy"></i>
+                                                </span>
+                                                <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </span>
+                                                <span title="Move the option">
+                                                    <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="rureraform-properties-options-item">
+                                            <div class="rureraform-properties-options-table">
+                                                <div>
+                                                <input class="rureraform-properties-options-label" type="text" value="Nuclei" placeholder="Label">
+                                                </div>
+                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
+                                                <div class="input-group-prepend">
+                                                    <button type="button" class="input-group-text admin-file-manager" data-input="image-options-3" data-preview="holder">
+                                                    <i class="fa fa-upload"></i>
+                                                    </button>
+                                                </div>
+                                                <input class="rureraform-properties-options-image" type="text" id="image-options-3" value="" placeholder="Upload Image">
+                                                <span>
+                                                    <i class="far fa-image"></i>
+                                                </span>
+                                                </div>
+                                                <div class="rurera-hide">
+                                                <input class="rureraform-properties-options-value" type="text" value="Nuclei" placeholder="Value">
+                                                </div>
+                                                <div>
+                                                <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
+                                                    <i class="fas fa-check"></i>
+                                                </span>
+                                                <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
+                                                    <i class="far fa-copy"></i>
+                                                </span>
+                                                <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </span>
+                                                <span title="Move the option">
+                                                    <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
+                                                </span>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
+                                        </div>
+                                        <div class="rureraform-properties-options-table-footer">
+                                        <a class="rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small" href="#" onclick="return rureraform_properties_options_new(null);">
+                                            <i class="fas fa-plus"></i>
+                                            <label>Add option</label>
+                                        </a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="rureraform-properties-item " data-id="description">
+                                    <div class="rureraform-properties-label">
+                                        <label>Description</label>
+                                    </div>
+                                    <div class="rureraform-properties-tooltip">
+                                        <i class="fas fa-question-circle rureraform-tooltip-anchor tooltipstered"></i>
+                                        <div class="rureraform-tooltip-content">This description appears below the field.</div>
+                                    </div>
+                                    <div class="rureraform-properties-content">
+                                        <input type="text" name="rureraform-description" id="rureraform-description" value="" placeholder="">
+                                    </div>
+                                    </div>
+                                    <div class="rureraform-properties-item " data-id="template_style">
+                                    <div class="rureraform-properties-label">
+                                        <label>Template Style</label>
+                                    </div>
+                                    <div class="rureraform-properties-tooltip"></div>
+                                    <div class="rureraform-properties-content">
+                                        <div class="rureraform-third">
+                                        <select name="rureraform-template_style" id="rureraform-template_style" class="">
+                                            <option selected="selected" value="rurera-in-row">Row</option>
+                                            <option value="rurera-in-cols">Columns</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="rureraform-properties-item " data-id="list_style">
+                                    <div class="rureraform-properties-label">
+                                        <label>Bullet list Style</label>
+                                    </div>
+                                    <div class="rureraform-properties-tooltip"></div>
+                                    <div class="rureraform-properties-content">
+                                        <div class="rureraform-third">
+                                        <select name="rureraform-list_style" id="rureraform-list_style" class="">
+                                            <option value="">None</option>
+                                            <option selected="selected" value="alphabet-list-style">English Alphabet</option>
+                                            <option value="numeric-list-style">Numbers</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="rureraform-properties-item " data-id="hint">
+                                    <div class="rureraform-properties-label">
+                                        <label>Hint</label>
+                                    </div>
+                                    <div class="rureraform-properties-tooltip"></div>
+                                    <div class="rureraform-properties-content">
+                                        <input type="text" name="rureraform-hint" id="rureraform-hint" value="" placeholder="">
+                                    </div>
+                                    </div>
+                                    <div class="rureraform-properties-item" data-id="explanation">
+                                    <div class="rureraform-properties-label">
+                                        <label>Explanation</label>
+                                    </div>
+                                    <div class="rureraform-properties-tooltip"></div>
+                                    <div class="rureraform-properties-content rureraform-wysiwyg">
+                                        <textarea name="rureraform-explanation" id="rureraform-explanation" class="summernote-editor content-data" style="display: none;">&lt;p&gt;&lt;br&gt;&lt;/p&gt;</textarea>
+                                        <div class="note-editor note-frame card">
+                                        <div class="note-dropzone">
+                                            <div class="note-dropzone-message"></div>
+                                        </div>
+                                        <div class="note-toolbar card-header" role="toolbar">
+                                            <div class="note-btn-group btn-group note-style">
+                                            <div class="note-btn-group btn-group">
+                                                <button type="button" class="note-btn btn btn-light btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" aria-label="Style" data-original-title="Style">
+                                                <i class="note-icon-magic"></i>
+                                                </button>
+                                                <div class="note-dropdown-menu dropdown-menu dropdown-style" role="list" aria-label="Style">
+                                                <a class="dropdown-item" href="#" data-value="p" role="listitem" aria-label="p">
+                                                    <p>Normal</p>
+                                                </a>
+                                                <a class="dropdown-item" href="#" data-value="blockquote" role="listitem" aria-label="blockquote">
+                                                    <blockquote class="blockquote">Blockquote</blockquote>
+                                                </a>
+                                                <a class="dropdown-item" href="#" data-value="pre" role="listitem" aria-label="pre">
+                                                    <pre>Code</pre>
+                                                </a>
+                                                <a class="dropdown-item" href="#" data-value="h1" role="listitem" aria-label="h1">
+                                                    <h1>Header 1</h1>
+                                                </a>
+                                                <a class="dropdown-item" href="#" data-value="h2" role="listitem" aria-label="h2">
+                                                    <h2>Header 2</h2>
+                                                </a>
+                                                <a class="dropdown-item" href="#" data-value="h3" role="listitem" aria-label="h3">
+                                                    <h3>Header 3</h3>
+                                                </a>
+                                                <a class="dropdown-item" href="#" data-value="h4" role="listitem" aria-label="h4">
+                                                    <h4>Header 4</h4>
+                                                </a>
+                                                <a class="dropdown-item" href="#" data-value="h5" role="listitem" aria-label="h5">
+                                                    <h5>Header 5</h5>
+                                                </a>
+                                                <a class="dropdown-item" href="#" data-value="h6" role="listitem" aria-label="h6">
+                                                    <h6>Header 6</h6>
+                                                </a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="note-btn-group btn-group note-font">
+                                            <button type="button" class="note-btn btn btn-light btn-sm note-btn-bold active" tabindex="-1" title="" aria-label="Bold (CTRL+B)" data-original-title="Bold (CTRL+B)">
+                                                <i class="note-icon-bold"></i>
+                                            </button>
+                                            <button type="button" class="note-btn btn btn-light btn-sm note-btn-underline" tabindex="-1" title="" aria-label="Underline (CTRL+U)" data-original-title="Underline (CTRL+U)">
+                                                <i class="note-icon-underline"></i>
+                                            </button>
+                                            </div>
+                                            <div class="note-btn-group btn-group note-para">
+                                            <div class="note-btn-group btn-group">
+                                                <button type="button" class="note-btn btn btn-light btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" aria-label="Paragraph" data-original-title="Paragraph">
+                                                <i class="note-icon-align-left"></i>
+                                                </button>
+                                                <div class="note-dropdown-menu dropdown-menu" role="list">
+                                                <div class="note-btn-group btn-group note-align">
+                                                    <button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Align left (CTRL+SHIFT+L)" data-original-title="Align left (CTRL+SHIFT+L)">
+                                                    <i class="note-icon-align-left"></i>
+                                                    </button>
+                                                    <button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Align center (CTRL+SHIFT+E)" data-original-title="Align center (CTRL+SHIFT+E)">
+                                                    <i class="note-icon-align-center"></i>
+                                                    </button>
+                                                    <button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Align right (CTRL+SHIFT+R)" data-original-title="Align right (CTRL+SHIFT+R)">
+                                                    <i class="note-icon-align-right"></i>
+                                                    </button>
+                                                    <button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Justify full (CTRL+SHIFT+J)" data-original-title="Justify full (CTRL+SHIFT+J)">
+                                                    <i class="note-icon-align-justify"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="note-btn-group btn-group note-list">
+                                                    <button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Outdent (CTRL+[)" data-original-title="Outdent (CTRL+[)">
+                                                    <i class="note-icon-align-outdent"></i>
+                                                    </button>
+                                                    <button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Indent (CTRL+])" data-original-title="Indent (CTRL+])">
+                                                    <i class="note-icon-align-indent"></i>
+                                                    </button>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Unordered list (CTRL+SHIFT+NUM7)" data-original-title="Unordered list (CTRL+SHIFT+NUM7)">
+                                                <i class="note-icon-unorderedlist"></i>
+                                            </button>
+                                            <button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Ordered list (CTRL+SHIFT+NUM8)" data-original-title="Ordered list (CTRL+SHIFT+NUM8)">
+                                                <i class="note-icon-orderedlist"></i>
+                                            </button>
+                                            </div>
+                                            <div class="note-btn-group btn-group note-table">
+                                            <div class="note-btn-group btn-group">
+                                                <button type="button" class="note-btn btn btn-light btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" aria-label="Table" data-original-title="Table">
+                                                <i class="note-icon-table"></i>
+                                                </button>
+                                                <div class="note-dropdown-menu dropdown-menu note-table" role="list" aria-label="Table">
+                                                <div class="note-dimension-picker">
+                                                    <div class="note-dimension-picker-mousecatcher" data-event="insertTable" data-value="1x1" style="width: 10em; height: 10em;"></div>
+                                                    <div class="note-dimension-picker-highlighted"></div>
+                                                    <div class="note-dimension-picker-unhighlighted"></div>
+                                                </div>
+                                                <div class="note-dimension-display">1 x 1</div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="note-btn-group btn-group note-insert">
+                                            <button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Link (CTRL+K)" data-original-title="Link (CTRL+K)">
+                                                <i class="note-icon-link"></i>
+                                            </button>
+                                            </div>
+                                            <div class="note-btn-group btn-group note-history">
+                                            <button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Undo (CTRL+Z)" data-original-title="Undo (CTRL+Z)">
+                                                <i class="note-icon-undo"></i>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="note-editing-area">
+                                            <div class="note-handle">
+                                            <div class="note-control-selection">
+                                                <div class="note-control-selection-bg"></div>
+                                                <div class="note-control-holder note-control-nw"></div>
+                                                <div class="note-control-holder note-control-ne"></div>
+                                                <div class="note-control-holder note-control-sw"></div>
+                                                <div class="note-control-sizing note-control-se"></div>
+                                                <div class="note-control-selection-info"></div>
+                                            </div>
+                                            </div>
+                                            <textarea class="note-codable" aria-multiline="true"></textarea>
+                                            <div class="note-editable card-block" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true" autocorrect="true" style="height: 400px;">
+                                            <p>
+                                                <br>
+                                            </p>
+                                            </div>
+                                        </div>
+                                        <output class="note-status-output" role="status" aria-live="polite"></output>
+                                        <div class="note-statusbar" role="status">
+                                            <div class="note-resizebar" aria-label="Resize">
+                                            <div class="note-icon-bar"></div>
+                                            <div class="note-icon-bar"></div>
+                                            <div class="note-icon-bar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="note-popover popover in note-table-popover bottom">
+                                            <div class="arrow"></div>
+                                            <div class="popover-content note-children-container">
+                                            <div class="note-btn-group btn-group note-add">
+                                                <button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Add row below" data-original-title="Add row below">
+                                                <i class="note-icon-row-below"></i>
+                                                </button>
+                                                <button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Add row above" data-original-title="Add row above">
+                                                <i class="note-icon-row-above"></i>
+                                                </button>
+                                                <button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Add column left" data-original-title="Add column left">
+                                                <i class="note-icon-col-before"></i>
+                                                </button>
+                                                <button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Add column right" data-original-title="Add column right">
+                                                <i class="note-icon-col-after"></i>
+                                                </button>
+                                            </div>
+                                            <div class="note-btn-group btn-group note-delete">
+                                                <button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Delete row" data-original-title="Delete row">
+                                                <i class="note-icon-row-remove"></i>
+                                                </button>
+                                                <button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Delete column" data-original-title="Delete column">
+                                                <i class="note-icon-col-remove"></i>
+                                                </button>
+                                                <button type="button" class="note-btn btn btn-light btn-sm btn-md" tabindex="-1" title="" aria-label="Delete table" data-original-title="Delete table">
+                                                <i class="note-icon-trash"></i>
+                                                </button>
+                                            </div>
+                                            <div class="note-btn-group btn-group note-custom">
+                                                <div class="note-btn-group btn-group">
+                                                <button type="button" class="note-btn btn btn-light btn-sm" tabindex="-1" title="" aria-label="Toggle table header" data-original-title="Toggle table header">
+                                                    <b>H <b></b>
+                                                    </b>
+                                                </button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <textarea class="content-area hide" name="1rureraform-explanation" id="rureraform-explanation">&lt;p&gt;&lt;br&gt;&lt;/p&gt;</textarea>
+                                        <div class="field-options field-options-explanation"></div>
+                                    </div>
+                                    </div>
+                                    <div class="rureraform-properties-item api_var" data-id="api_var">
+                                    <div class="rureraform-properties-label">
+                                        <label>API variable</label>
+                                    </div>
+                                    <div class="rureraform-properties-tooltip"></div>
+                                    <div class="rureraform-properties-content">
+                                        <input type="text" name="rureraform-api_var" id="rureraform-api_var" value="options" placeholder="">
+                                    </div>
+                                    </div>
+                                    <div class="rureraform-properties-item" data-id="score">
+                                    <div class="rureraform-properties-label">
+                                        <label>Score</label>
+                                    </div>
+                                    <div class="rureraform-properties-tooltip"></div>
+                                    <div class="rureraform-properties-content">
+                                        <input type="number" name="rureraform-score" id="rureraform-score" value="" placeholder="">
+                                    </div>
+                                    </div>
+                                    <input type="hidden" name="rureraform-elements_data" id="rureraform-elements_data" value="W3t9XQ==" placeholder="">
+                                </div>
+                                </div>
+                            </div>
+                            <div class="rureraform-admin-popup-buttons">
+                                <a class="rureraform-admin-button duplicate-element btn btn-primary" href="#">
+                                <label>Duplicate</label>
+                                </a>
+                                <a class="rureraform-admin-button remove-element btn btn-danger" href="#">
+                                <label>Remove</label>
+                                </a>
+                                <a class="rureraform-admin-button generate-question-code rurera-hide" href="#">
+                                <label>Apply Changes</label>
+                                </a>
+                            </div>
+                            <div class="rureraform-admin-popup-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                </div>
             </div>
         </div>
     </div>
