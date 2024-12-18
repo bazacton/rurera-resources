@@ -98,8 +98,8 @@
                         <div class="bulk-ai-box">
                             <span class="bulk-lable">Rendomize</span>
                             <div class="btn-field">
-                                <button type="button">Question order</button>
-                                <button type="button">Options order</button>
+                                <a href="#">Question order</a>
+                                <a href="#">Options order</a>
                             </div>
                         </div>
                         <div class="bulk-ai-box">
@@ -127,9 +127,16 @@
                             </div>
                         </div>
                         <div class="bulk-ai-box">
+                            <span class="bulk-lable">Questions Order</span>
+                            <div class="btn-field">
+                                <a href="#" class="delete-btn">Rearrange</a>
+                            </div>
+                        </div>
+                        <div class="bulk-ai-box">
                             <span class="bulk-lable">Bulk Delete</span>
                             <div class="btn-field">
-                                <button type="button">Delete All Questions</button>
+                                <button type="button"></button>
+                                <a href="#" class="delete-btn">Delete All Questions</a>
                             </div>
                         </div>
                     </div>
