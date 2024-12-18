@@ -15,20 +15,38 @@
     <div class="section-body">
     <div class="row">
             <div class="col-12 col-md-9 col-lg-9 mx-auto">
-                <div class="grid-container" id="gridContainer">
-                    <!-- Grid Items -->
-                    <div class="grid-item" draggable="true" id="item1">1</div>
-                    <div class="grid-item" draggable="true" id="item2">2</div>
-                    <div class="grid-item" draggable="true" id="item3">3</div>
-                    <div class="grid-item" draggable="true" id="item4">4</div>
-                    <div class="grid-item" draggable="true" id="item5">5</div>
-                    <div class="grid-item" draggable="true" id="item6">6</div>
-                    <div class="grid-item" draggable="true" id="item7">7</div>
-                    <div class="grid-item" draggable="true" id="item8">8</div>
-                    <div class="grid-item" draggable="true" id="item9">9</div>
-                    <div class="grid-item" draggable="true" id="item10">10</div>
-                    <div class="grid-item" draggable="true" id="item11">11</div>
-                    <div class="grid-item" draggable="true" id="item12">12</div>
+                <!-- Button to Open Modal -->
+                <div class="mt-5 text-center">
+                    <h3>Draggable Grid with Placeholder</h3>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#dragModal">Open Grid</button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="dragModal" tabindex="-1" role="dialog" aria-labelledby="dragModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="dragModalLabel">Draggable Grid</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="grid-container" id="gridContainer">
+                                    <!-- Grid Items -->
+                                    <div class="grid-item" draggable="true">1</div>
+                                    <div class="grid-item" draggable="true">2</div>
+                                    <div class="grid-item" draggable="true">3</div>
+                                    <div class="grid-item" draggable="true">4</div>
+                                    <div class="grid-item" draggable="true">5</div>
+                                    <div class="grid-item" draggable="true">6</div>
+                                    <div class="grid-item" draggable="true">7</div>
+                                    <div class="grid-item" draggable="true">8</div>
+                                    <div class="grid-item" draggable="true">9</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="q-ai-nav-controls">
                     <button type="button" class="active" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-question.svg" alt=""> Add Question</button>
@@ -1601,5 +1619,63 @@
         }, { offset: Number.NEGATIVE_INFINITY }).element;
     }
 </script>
+<script>
+    const gridContainer = document.getElementById("gridContainer");
+    let draggedItem = null;
+    let placeholder = document.createElement("div");
+    placeholder.className = "placeholder";
+
+    // Drag start
+    gridContainer.addEventListener("dragstart", (e) => {
+        if (e.target.classList.contains("grid-item")) {
+            draggedItem = e.target;
+            setTimeout(() => e.target.classList.add("dragging"), 0);
+        }
+    });
+
+    // Drag end
+    gridContainer.addEventListener("dragend", () => {
+        draggedItem.classList.remove("dragging");
+        placeholder.remove();
+        draggedItem = null;
+    });
+
+    // Drag over - dynamic placeholder positioning
+    gridContainer.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        const afterElement = getDragAfterElement(gridContainer, e.clientX, e.clientY);
+        if (afterElement === null) {
+            gridContainer.appendChild(placeholder);
+        } else {
+            gridContainer.insertBefore(placeholder, afterElement);
+        }
+    });
+
+    // Drop - replace placeholder with dragged item
+    gridContainer.addEventListener("drop", (e) => {
+        e.preventDefault();
+        if (draggedItem && placeholder) {
+            gridContainer.replaceChild(draggedItem, placeholder);
+        }
+    });
+
+    // Helper function: Get the closest element to insert before
+    function getDragAfterElement(container, x, y) {
+        const elements = [...container.querySelectorAll(".grid-item:not(.dragging)")];
+
+        return elements.reduce((closest, child) => {
+            const box = child.getBoundingClientRect();
+            const offset = y - box.top - box.height / 2;
+            if (offset < 0 && offset > closest.offset) {
+                return { offset: offset, element: child };
+            } else {
+                return closest;
+            }
+        }, { offset: Number.NEGATIVE_INFINITY }).element;
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 @endpush
