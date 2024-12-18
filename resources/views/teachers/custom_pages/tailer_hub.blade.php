@@ -175,9 +175,9 @@
                                             <span class="icon-box" data-toggle="tooltip" data-placement="top" title="Edit" data-trigger="hover"><img src="/assets/default/svgs/clapperboard-edit.svg" alt=""></span>
                                         </button>
                                         <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Trash" data-trigger="hover"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
-                                        <div class="dropdown" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Ask Ai" data-trigger="hover">
+                                        <div class="dropdown">
                                             <button class="btn btn-link dropdown-toggle stars-btn" type="button" title="Stars" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="/assets/default/svgs/ai.svg" alt="">
+                                                <span class="icon-box" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Ask Ai" data-trigger="hover"><img src="/assets/default/svgs/ai.svg" alt=""></span>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                                 <ul>
@@ -336,9 +336,9 @@
                                         <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="Duplicate question" data-trigger="hover"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
                                         <button type="button" class="edit-btn" data-toggle="tooltip" data-placement="top" title="Edit" data-trigger="hover"><img src="/assets/default/svgs/clapperboard-edit.svg" alt=""></button>
                                         <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Trash" data-trigger="hover"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
-                                        <div class="dropdown" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Ask Ai" data-trigger="hover">
+                                        <div class="dropdown">
                                             <button class="btn btn-link dropdown-toggle stars-btn" type="button" title="Stars" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="/assets/default/svgs/ai.svg" alt="">
+                                                <span class="icon-box" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Ask Ai" data-trigger="hover"><img src="/assets/default/svgs/ai.svg" alt=""></span>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                                 <ul>
@@ -556,9 +556,9 @@
                                         <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="Duplicate question" data-trigger="hover"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
                                         <button type="button" class="edit-btn" data-toggle="tooltip" data-placement="top" title="Edit" data-trigger="hover"><img src="/assets/default/svgs/clapperboard-edit.svg" alt=""></button>
                                         <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Trash" data-trigger="hover"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
-                                        <div class="dropdown" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Ask Ai" data-trigger="hover">
+                                        <div class="dropdown">
                                             <button class="btn btn-link dropdown-toggle stars-btn" type="button" title="Stars" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <img src="/assets/default/svgs/ai.svg" alt="">
+                                                <span class="icon-box" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Ask Ai" data-trigger="hover"><img src="/assets/default/svgs/ai.svg" alt=""></span>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                                 <ul>
