@@ -1569,82 +1569,84 @@
             <div class="modal-body">
                 <div class="blank-canvas-sidebar">
                     <h3 class="title">QUESTION (5) <button class="add-btn">+</button></h3>
+                    <div id="sortable">
+                        <div class="question-card">
+                            <div class="question-content">
+                                <div class="question-text"><div class="q-number">1</div> What does UI stand fo...</div>
+                                <div class="question-type">
+                                    <span>📋 Multiple choice</span> 
+                                    <div class="edit-options-controls">
+                                        <div class="dropdown">
+                                            <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" x-placement="bottom-end" style="position: absolute; transform: translate3d(-132px, 30px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Shorten</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Rewrite</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> More fun</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> More formal</a>
+                                                <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Sprinkle fairy dust</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Change voice</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Fix spelling</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Custom prompt...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-card">
+                            <div class="question-content">
+                                <div class="question-text"><div class="q-number">1</div> Which aspect of UI de...</div>
+                                <div class="question-type">
+                                    <span>📋 Multiple choice</span> 
+                                    <div class="edit-options-controls">
+                                        <div class="dropdown">
+                                            <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" x-placement="bottom-end" style="position: absolute; transform: translate3d(-132px, 30px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Shorten</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Rewrite</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> More fun</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> More formal</a>
+                                                <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Sprinkle fairy dust</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Change voice</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Fix spelling</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Custom prompt...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question-card">
+                            <div class="question-content">
+                                <div class="question-text"><div class="q-number">1</div> How to export a pictu...</div>
+                                <div class="question-type">
+                                    <span>📋 Multiple choice</span> 
+                                    <div class="edit-options-controls">
+                                        <div class="dropdown">
+                                            <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" x-placement="bottom-end" style="position: absolute; transform: translate3d(-132px, 30px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Shorten</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Rewrite</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> More fun</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> More formal</a>
+                                                <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Sprinkle fairy dust</a>
+                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Change voice</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Fix spelling</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Custom prompt...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
-                    <div class="question-card">
-                        <div class="question-content">
-                            <div class="question-text"><div class="q-number">1</div> What does UI stand fo...</div>
-                            <div class="question-type">
-                                <span>📋 Multiple choice</span> 
-                                <div class="edit-options-controls">
-                                    <div class="dropdown">
-                                        <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" x-placement="bottom-end" style="position: absolute; transform: translate3d(-132px, 30px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                            <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Shorten</a>
-                                            <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Rewrite</a>
-                                            <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> More fun</a>
-                                            <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> More formal</a>
-                                            <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Sprinkle fairy dust</a>
-                                            <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Change voice</a>
-                                            <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Fix spelling</a>
-                                            <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Custom prompt...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="question-card">
-                        <div class="question-content">
-                            <div class="question-text"><div class="q-number">1</div> Which aspect of UI de...</div>
-                            <div class="question-type">
-                                <span>📋 Multiple choice</span> 
-                                <div class="edit-options-controls">
-                                    <div class="dropdown">
-                                        <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" x-placement="bottom-end" style="position: absolute; transform: translate3d(-132px, 30px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                            <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Shorten</a>
-                                            <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Rewrite</a>
-                                            <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> More fun</a>
-                                            <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> More formal</a>
-                                            <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Sprinkle fairy dust</a>
-                                            <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Change voice</a>
-                                            <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Fix spelling</a>
-                                            <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Custom prompt...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="question-card">
-                        <div class="question-content">
-                            <div class="question-text"><div class="q-number">1</div> How to export a pictu...</div>
-                            <div class="question-type">
-                                <span>📋 Multiple choice</span> 
-                                <div class="edit-options-controls">
-                                    <div class="dropdown">
-                                        <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" x-placement="bottom-end" style="position: absolute; transform: translate3d(-132px, 30px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                            <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Shorten</a>
-                                            <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Rewrite</a>
-                                            <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> More fun</a>
-                                            <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> More formal</a>
-                                            <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Sprinkle fairy dust</a>
-                                            <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Change voice</a>
-                                            <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Fix spelling</a>
-                                            <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Custom prompt...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="question-content-header">
                     <div class="section-heading">
