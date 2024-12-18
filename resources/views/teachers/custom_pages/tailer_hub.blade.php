@@ -1648,15 +1648,6 @@
                     </div>
                     
                 </div>
-                <div class="question-content-header">
-                    <div class="section-heading">
-                        <h1>Tailer Hub</h1>
-                    </div>
-                    <div class="page-controls">
-                        <button type="button" class="preview-btn"><img src="/assets/default/svgs/eye-show.svg" alt=""> Preview</button>
-                        <button type="button" class="publish-btn"><img src="/assets/default/svgs/publish.svg" alt=""> Save</button>
-                    </div>
-                </div>
                 <div class="canvas-modal-container">
                     <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible alert fade show">
                         <button type="button" class="close" data-dismiss="quiz-ai-tags" aria-label="Close">
@@ -1815,6 +1806,10 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                    <div class="section-controls">
+                        <button type="button" class="save-btn"><img src="/assets/default/svgs/eye-show.svg" alt=""> Save</button>
+                        <button type="button" class="cancel-btn"><img src="/assets/default/svgs/publish.svg" alt=""> Cancel</button>
                     </div>
                 </div>
             </div>
