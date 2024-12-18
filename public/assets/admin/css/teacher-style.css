@@ -1959,7 +1959,7 @@ Tailer Hub Style Start
     margin-right: 6px;
 }
 
-.q-ai-nav-controls button {
+.q-ai-nav-controls a {
     background-color: inherit;
     border: 1px solid #ddd;
     font-weight: 600;
@@ -1974,11 +1974,11 @@ Tailer Hub Style Start
     margin-bottom: 25px;
     gap: 10px;
 }
-.q-ai-nav-controls button:hover,
-.q-ai-nav-controls button.active {
+.q-ai-nav-controls a:hover,
+.q-ai-nav-controls a.active {
     background-color: rgba(0,0,0,0.050);
 }
-.q-ai-nav-controls button img {
+.q-ai-nav-controls a img {
     height: 25px;
     width: 25px;
     margin-right: 10px;
