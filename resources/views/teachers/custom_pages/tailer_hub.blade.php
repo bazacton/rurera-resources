@@ -1633,6 +1633,10 @@
             var activeTab = $('#myTab .nav-link.active').attr('href');
             window.location.hash = activeTab;
         });
+        // When the modal is closed, remove the hash from the URL
+        $('#templatesleModal').on('hidden.bs.modal', function () {
+            history.pushState("", document.title, window.location.pathname + window.location.search);
+        });
     });
 </script>
 <script>
