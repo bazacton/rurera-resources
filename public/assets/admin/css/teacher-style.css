@@ -2045,6 +2045,23 @@ Tailer Hub Style Start
 .bulk-ai-box .select-field .bulk-text .fa-circle {
     color: #ffad00;
 }
+.bulk-heading {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 15px;
+}
+.bulk-heading h6 {
+    margin-bottom: 0;
+}
+.bulk-heading button {
+    border: 0;
+    padding: 5px 15px;
+    box-shadow: 0 0 0 1px #007bff inset;
+    background: rgb(97, 171, 250);
+    background: linear-gradient(0deg, rgba(97, 171, 250, 1) 25%, rgba(0, 123, 255, 1) 100%);
+}
 .dropdown-menu > ul > li {
     position: relative;
 }
@@ -2990,6 +3007,13 @@ Qustions AI Tabs Style End
 
 
 
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 350px;
+    margin: auto;
+}
+
 .grid-item {
     width: 100px;
     height: 100px;
@@ -3002,12 +3026,19 @@ Qustions AI Tabs Style End
     font-size: 24px;
     font-weight: bold;
     cursor: grab;
+    user-select: none;
+    transition: all 0.2s ease;
 }
+
 .grid-item.dragging {
     opacity: 0.5;
+    cursor: grabbing;
 }
-.grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 450px;
+
+.placeholder {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 2px dashed #aaa;
+    background-color: #f0f8ff;
 }
