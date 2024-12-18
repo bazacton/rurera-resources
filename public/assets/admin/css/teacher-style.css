@@ -2179,6 +2179,24 @@ Tailer Hub Style Start
     max-width: 960px;
     margin: 50px auto;
 }
+.section-controls button {
+    border: 0;
+    padding: 5px 25px;
+    border-radius: 5px;
+    color: #fff;
+}
+.section-controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.section-controls .save-btn {
+    background-color: var(--blue);
+}
+.section-controls .cancel-btn {
+    background-color: var(--danger);
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
