@@ -1824,6 +1824,7 @@
 @endsection
 
 @push('scripts_bottom')
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script>
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip({
@@ -1837,6 +1838,14 @@
     
 </script>
 <!-- JavaScript for Drag and Drop -->
+ <!-- Enable Sortable Functionality -->
+ <script>
+    $(document).ready(function () {
+        // Make the sidebar list sortable
+        $("#sortable").sortable();
+        $("#sortable").disableSelection();
+    });
+</script>
 <script>
     const gridContainer = document.getElementById("gridContainer");
     let draggedItem = null;
