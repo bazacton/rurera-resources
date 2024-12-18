@@ -2143,12 +2143,18 @@ Tailer Hub Style Start
     width: 16px;
     filter: invert(14%) sepia(68%) saturate(589%) hue-rotate(186deg) brightness(90%) contrast(95%);
 }
+
+.blank-canvas-modal {
+    background-color: #f7f7f7;
+}
 .blank-canvas-modal .modal-dialog {
     max-width: 100%;
     margin: 0;
+    height: 100%;
 }
-.blank-canvas-modal .question-content-header {
-    padding-left: 15px;
+.blank-canvas-modal .modal-content {
+    height: 100%;
+    background-color: inherit;
 }
 .blank-canvas-modal .modal-header {
     position: absolute;
@@ -2156,6 +2162,12 @@ Tailer Hub Style Start
     top: 10px;
     z-index: 1;
     padding: 0;
+}
+.blank-canvas-modal .modal-body {
+    padding: 0;
+}
+.blank-canvas-modal .question-content-header {
+    padding-left: 15px;
 }
 /*************************************
 Tailer Hub Style End
