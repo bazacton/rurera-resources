@@ -135,7 +135,6 @@
                         <div class="bulk-ai-box">
                             <span class="bulk-lable">Bulk Delete</span>
                             <div class="btn-field">
-                                <button type="button"></button>
                                 <a href="#" class="delete-btn">Delete All Questions</a>
                             </div>
                         </div>
