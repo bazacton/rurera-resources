@@ -1597,7 +1597,7 @@
                         </div>
                         <div class="question-card">
                             <div class="question-content">
-                                <div class="question-text"><div class="q-number">1</div> Which aspect of UI de...</div>
+                                <div class="question-text"><div class="q-number">2</div> Which aspect of UI de...</div>
                                 <div class="question-type">
                                     <span>📋 Multiple choice</span> 
                                     <div class="edit-options-controls">
@@ -1622,7 +1622,7 @@
                         </div>
                         <div class="question-card">
                             <div class="question-content">
-                                <div class="question-text"><div class="q-number">1</div> How to export a pictu...</div>
+                                <div class="question-text"><div class="q-number">3</div> How to export a pictu...</div>
                                 <div class="question-type">
                                     <span>📋 Multiple choice</span> 
                                     <div class="edit-options-controls">
