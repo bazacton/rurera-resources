@@ -1096,6 +1096,10 @@ scrollbar-gutter: stable both-edges;
 .learning-page .learning-content {
 	height: calc(100vh - 105px);
 }
+.question_hint {
+    font-style: italic;
+    color: #999;
+}
 /*Quistions Type Content Default Style End*/
 
 /*Quistions Type numeric-list style Start*/
