@@ -2068,6 +2068,7 @@ Tailer Hub Style Start
     padding: 5px 10px;
     text-decoration: none;
     color: #333;
+    display: inline-block;
 }
 .dropdown-menu > ul > li {
     position: relative;
