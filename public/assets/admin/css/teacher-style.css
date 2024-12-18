@@ -2023,7 +2023,7 @@ Tailer Hub Style Start
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px 15px;
+    gap: 10px 20px;
 }
 .bulk-ai .bulk-lable {
     display: block;
