@@ -1573,6 +1573,7 @@ New Quiz Page Style Start
     z-index: 5;
     visibility: hidden;
     opacity: 0;
+    display: block;
 }
 .quiz-data-slide.active {
     visibility: visible;
