@@ -1808,8 +1808,8 @@
                         </div>
                     </div>
                     <div class="section-controls">
-                        <button type="button" class="save-btn"><img src="/assets/default/svgs/eye-show.svg" alt=""> Save</button>
-                        <button type="button" class="cancel-btn"><img src="/assets/default/svgs/publish.svg" alt=""> Cancel</button>
+                        <button type="button" class="save-btn">Save</button>
+                        <button type="button" class="cancel-btn">Cancel</button>
                     </div>
                 </div>
             </div>
