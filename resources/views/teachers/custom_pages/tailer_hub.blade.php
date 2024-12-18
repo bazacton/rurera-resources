@@ -171,7 +171,7 @@
                                         </button> -->
 
                                         <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="Duplicate question" data-trigger="hover"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
-                                        <button type="button" class="edit-btn" data-toggle="tooltip" data-placement="top" title="Edit" data-trigger="hover"><img src="/assets/default/svgs/clapperboard-edit.svg" alt=""></button>
+                                        <button type="button" class="edit-btn" data-toggle="tooltip" data-placement="top" title="Edit" data-trigger="hover" data-toggle="modal" data-target="#blank-canvas-modal"><img src="/assets/default/svgs/clapperboard-edit.svg" alt=""></button>
                                         <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Trash" data-trigger="hover"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
                                         <div class="dropdown" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Ask Ai" data-trigger="hover">
                                             <button class="btn btn-link dropdown-toggle stars-btn" type="button" title="Stars" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -685,8 +685,8 @@
         </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade question_templates_modal" id="templatesleModal" tabindex="-1" aria-labelledby="templatesleModalLabel" style="display: none;" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade question_templates_modal" id="templatesleModal" tabindex="-1" aria-labelledby="templatesleModalLabel" style="display: none;" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -1550,6 +1550,29 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade blank-canvas-modal" id="blank-canvas-modal" tabindex="-1" aria-labelledby="blank-canvas-modalLabel" aria-modal="true" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="question-content-header">
+                    <div class="section-heading">
+                        <h1>Tailer Hub</h1>
+                    </div>
+                    <div class="page-controls">
+                        <button class="setting-btn" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="" data-original-title="Settings"><img src="/assets/default/svgs/settings.svg" alt=""></button>
+                        <button type="button" class="preview-btn"><img src="/assets/default/svgs/eye-show.svg" alt=""> Preview</button>
+                        <button type="button" class="publish-btn"><img src="/assets/default/svgs/publish.svg" alt=""> Publish</button>
                     </div>
                 </div>
             </div>
