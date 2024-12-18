@@ -1568,7 +1568,7 @@
             </div>
             <div class="modal-body">
                 <div class="blank-canvas-sidebar">
-                    <h3 class="title">QUESTION (5) <button class="add-btn">+</button></h3>
+                    <h3 class="title">QUESTION <span>(5)</span> <button class="add-btn">+</button></h3>
                     <div id="sortable">
                         <div class="question-card">
                             <div class="question-content">
