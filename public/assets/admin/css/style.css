@@ -1999,7 +1999,9 @@ Admin Questions Generator Page Style Start
 .rurera-hide{
     display:none;
 }
-
+.quiz-data-slide {
+    display: none;
+}
 .list-group {
     display: flex;
     gap: 10px;
