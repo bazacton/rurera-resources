@@ -2949,8 +2949,8 @@ span.field-separated span:after {
     justify-content: space-between;
   }
   .question-type > span {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 2px 8px;
+    background-color: rgba(0, 0, 0, 0.050);
+    padding: 5px 10px;
     display: inline-block;
     border-radius: 5px;
 }
