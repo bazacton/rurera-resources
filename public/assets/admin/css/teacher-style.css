@@ -2150,6 +2150,13 @@ Tailer Hub Style Start
 .blank-canvas-modal .question-content-header {
     padding-left: 15px;
 }
+.blank-canvas-modal .modal-header {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+    padding: 0;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
