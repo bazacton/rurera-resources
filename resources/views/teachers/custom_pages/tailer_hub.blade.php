@@ -1567,6 +1567,36 @@
                 </button>
             </div>
             <div class="modal-body">
+                <div class="blank-canvas-sidebar">
+                    <h3 class="title">QUESTION (5) <button class="add-btn">+</button></h3>
+                    
+                    <div class="question-card">
+                    <div class="question-number">1</div>
+                    <div class="question-content">
+                        <p class="question-text">What does UI stand fo...</p>
+                        <p class="question-type">📋 Multiple choice</p>
+                    </div>
+                    <div class="menu-btn">⋯</div>
+                    </div>
+
+                    <div class="question-card">
+                    <div class="question-number">2</div>
+                    <div class="question-content">
+                        <p class="question-text">Which aspect of UI de...</p>
+                        <p class="question-type">📋 Multiple choice</p>
+                    </div>
+                    <div class="menu-btn">⋯</div>
+                    </div>
+
+                    <div class="question-card">
+                    <div class="question-number">3</div>
+                    <div class="question-content">
+                        <p class="question-text">How to export a pictu...</p>
+                        <p class="question-type">📋 Multiple choice</p>
+                    </div>
+                    <div class="menu-btn">⋯</div>
+                    </div>
+                </div>
                 <div class="question-content-header">
                     <div class="section-heading">
                         <h1>Tailer Hub</h1>
