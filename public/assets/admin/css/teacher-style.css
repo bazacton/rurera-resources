@@ -2169,6 +2169,10 @@ Tailer Hub Style Start
 .blank-canvas-modal .question-content-header {
     padding-left: 15px;
 }
+.canvas-modal-container {
+    max-width: 960px;
+    margin: 50px auto;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
