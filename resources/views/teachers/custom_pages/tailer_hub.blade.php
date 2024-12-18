@@ -1595,6 +1595,59 @@
                             <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Write custom prompt</a></li>
                         </ul>
                     </div>
+                    <div class="quiz-layout-edit-options">
+                        <div class="edit-options-right">
+                            <div class="edit-options-controls">
+                                <div class="dropdown">
+                                    <button class="btn btn-link dropdown-toggle stars-btn" type="button" title="Stars" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="icon-box" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="" data-original-title="Ask Ai"><img src="/assets/default/svgs/ai.svg" alt=""></span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <ul>
+                                            <li>
+                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Add a similar question</a>
+                                                <ul class="sub-dropdown">
+                                                    <li><a href="#">1</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#">10</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Turn into</a>
+                                                <ul class="sub-dropdown">
+                                                    <li><a href="#">Drag Drop</a></li>
+                                                    <li><a href="#">Dropdown</a></li>
+                                                    <li><a href="#">Fill-in-blank</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Add explanation</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Fix grammatical and spelling</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Replace with a similar question</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Reduce options</a>
+                                                <ul class="sub-dropdown">
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Write&nbsp;custom&nbsp;prompt</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="question-layout-holder mb-15 bg-white panel-border rounded-sm p-25">
                         <div class="question-layout-block">
                             <form class="question-fields" action="javascript:;" data-question_id="10180">
