@@ -2155,6 +2155,10 @@ Tailer Hub Style Start
 .blank-canvas-modal .modal-content {
     height: 100%;
     background-color: inherit;
+    box-shadow: none;
+}
+.blank-canvas-modal.modal.show .modal-content {
+    box-shadow: none;
 }
 .blank-canvas-modal .modal-header {
     position: absolute;
