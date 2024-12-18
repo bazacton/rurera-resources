@@ -2045,16 +2045,6 @@ Tailer Hub Style Start
 .bulk-ai-box .select-field .bulk-text .fa-circle {
     color: #ffad00;
 }
-.bulk-heading {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 0 15px;
-}
-.bulk-heading h6 {
-    margin-bottom: 0;
-}
 .bulk-quiz .btn-field {
     display: inline-flex;
     align-items: center;
