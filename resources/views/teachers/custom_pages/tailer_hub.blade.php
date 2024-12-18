@@ -1617,6 +1617,25 @@
     }
 </script>
 <script>
+    // Open modal and activate tab based on URL fragment
+    $(document).ready(function() {
+        // Check if the URL contains a fragment
+        var hash = window.location.hash;
+        if (hash) {
+            // Open the modal
+            $('#myModal').modal('show');
+            // Activate the corresponding tab
+            $('a[href="' + hash + '"]').tab('show');
+        }
+
+        // Listen for tab change to update URL fragment
+        $('#myModal').on('shown.bs.modal', function () {
+            var activeTab = $('#myTabs .nav-link.active').attr('href');
+            window.location.hash = activeTab;
+        });
+    });
+</script>
+<script>
     const gridContainer = document.getElementById("gridContainer");
     let draggedItem = null;
     let placeholder = document.createElement("div");
