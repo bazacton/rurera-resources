@@ -2876,13 +2876,17 @@ span.field-separated span:after {
 }
 
 /* General reset */  
-  .container {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    padding: 15px;
-  }
+.blank-canvas-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+}
   
   .title {
     font-size: 18px;
