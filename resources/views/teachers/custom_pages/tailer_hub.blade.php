@@ -44,10 +44,10 @@
                     </div>
                 </div>
                 <div class="q-ai-nav-controls">
-                    <button type="button" class="active" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-question.svg" alt=""> Add Question</button>
-                    <button type="button"><img src="/assets/default/svgs/add-collection.svg" alt=""> Add question from Collection</button>
-                    <button type="button"><img src="/assets/default/svgs/ai.svg" alt=""> Generate quiz using AI</button>
-                    <button type="button"><img src="/assets/default/svgs/import-worksheet.svg" alt=""> Import Worksheets</button>
+                    <a href="https://rurera.com/admin/custom_page/tailer_hub#home" class="active" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-question.svg" alt=""> Add Question</a>
+                    <a href="https://rurera.com/admin/custom_page/tailer_hub#q-collections"><img src="/assets/default/svgs/add-collection.svg" alt=""> Add question from Collection</a>
+                    <a href="https://rurera.com/admin/custom_page/tailer_hub#generate-ai"><img src="/assets/default/svgs/ai.svg" alt=""> Generate quiz using AI</a>
+                    <a href="https://rurera.com/admin/custom_page/tailer_hub#import-q"><img src="/assets/default/svgs/import-worksheet.svg" alt=""> Import Worksheets</a>
                 </div>
                 <div class="mb-30 bg-white panel-border rounded-sm p-15" style="display: none;">
                     <h6 class="search-lable">Search question from library</h6>
