@@ -78,7 +78,7 @@ var CROP_HEIGHT = parseInt($(".crop_sizes li.active").attr('data-crop_size_heigh
 									
 								</div>
 							</div>
-					</div><div class="remove-stage-image">Remove</div>`
+					</div><div class="remove-stage-image">Remove	</div>`
 	}
 	
 	function Cropper( e, adapted, callback ){
@@ -349,8 +349,9 @@ var CROP_HEIGHT = parseInt($(".crop_sizes li.active").attr('data-crop_size_heigh
 			/*************** Adapt the picture to the container ( responsive ) ***************/
 			AdaptImg( originDetails, $_CONTAINER, function( ADAPTED ){
 				// given the picture size to the static canvas
-				staticCanvas.width = ADAPTED.width
-				staticCanvas.height = ADAPTED.height
+				staticCanvas.width = originDetails.width
+				staticCanvas.height = originDetails.height
+				
 
 				// Cover only the space of the image
 				$_COVER.css({
@@ -359,7 +360,8 @@ var CROP_HEIGHT = parseInt($(".crop_sizes li.active").attr('data-crop_size_heigh
 					right: ADAPTED.left +'px',
 					bottom: ADAPTED.top +'px',
 					background: OUTBOUNDS_COLOR[ OUTBOUNDS_COLOR.hasOwnProperty( OPTIONS.outBoundColor ) ? OPTIONS.outBoundColor : 'dark' ]
-				})
+				});
+				$(".image-crop-area").css('height', originDetails.height);
 				
 				/*************** Position and the size of the image cropper in function of the container ***************/
 				Cropper( originDetails, ADAPTED, function( CROPPED ){
@@ -372,7 +374,10 @@ var CROP_HEIGHT = parseInt($(".crop_sizes li.active").attr('data-crop_size_heigh
 						height: cropCanvas.height = borderWise( CROPPED.height ),
 						left: CROPPED.left +'px', 
 						top: CROPPED.top +'px' 
-					})
+					});
+					ADAPTED.left = 0;
+					ADAPTED.top = 0;
+
 					
 					/**---------------------------------------- init variables ----------------------------------------**/
 					
@@ -406,9 +411,10 @@ var CROP_HEIGHT = parseInt($(".crop_sizes li.active").attr('data-crop_size_heigh
 				
 					/**---------------------------------------- init canvas images ----------------------------------------**/
 					
+					pre(originDetails, 'originDetails');
 					setTimeout( () => {
-						ctx_Static.drawImage( _IMG_, 0, 0, ADAPTED.width, ADAPTED.height ); // Set picture into the static canvas
-						$_ADAPTER.css({ left: ADAPTED.left, top: ADAPTED.top, width: ADAPTED.width, height: ADAPTED.height }) // init the cropper sizes and position
+						ctx_Static.drawImage( _IMG_, 0, 0, originDetails.width, originDetails.height ); // Set picture into the static canvas
+						$_ADAPTER.css({ left: ADAPTED.left, top: ADAPTED.top, width: originDetails.width, height: originDetails.height }) // init the cropper sizes and position
 						
 						// Load first shot of image into the dynamic canvas ( cropper )
 						ctx_Dynamic.drawImage( staticCanvas, borderWise( CROPPED.left, true ), borderWise( CROPPED.top, true ), CROPPED.width, CROPPED.height, 0, 0, CROPPED.width, CROPPED.height )
@@ -423,8 +429,8 @@ var CROP_HEIGHT = parseInt($(".crop_sizes li.active").attr('data-crop_size_heigh
 							MOVING.y = e.pageY - $_CROPPER.position().top
 						}
 						
-						MoveLimitRight = ADAPTED.width - $_CROPPER.width()
-						MoveLimitBottom = ADAPTED.height - $_CROPPER.height()
+						MoveLimitRight = originDetails.width - $_CROPPER.width()
+						MoveLimitBottom = originDetails.height - $_CROPPER.height()
 					} )
 					
 					.dblclick( function( e ){
@@ -783,7 +789,7 @@ var CROP_HEIGHT = parseInt($(".crop_sizes li.active").attr('data-crop_size_heigh
 		}
 		
 		// Mount initial image
-		OPTIONS.image && setImage( OPTIONS.image )
+		OPTIONS.image && setImage( OPTIONS.image );
 
 		return {
 			setImage,
