@@ -2153,6 +2153,7 @@ Tailer Hub Style Start
     filter: invert(14%) sepia(68%) saturate(589%) hue-rotate(186deg) brightness(90%) contrast(95%);
 }
 
+/* Blank-Canvas-Modal Style Start */
 .blank-canvas-modal {
     background-color: #f7f7f7;
 }
@@ -2187,6 +2188,8 @@ Tailer Hub Style Start
     max-width: 960px;
     margin: 50px auto;
 }
+/* Blank-Canvas-Modal Style End */
+
 /* Section-Controls Style Start */
 .section-controls button {
     border: 0;
