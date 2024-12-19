@@ -2539,12 +2539,32 @@
 $(document).ready(function () {
     var sidebar_dropdown = function () {
         if ($(".blank-canvas-sidebar, .canvas-editable-options").length) {
-            $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll();
+            $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll(sidebar_nicescroll_opts);
             sidebar_nicescroll = $(".blank-canvas-sidebar, .canvas-editable-options").getNiceScroll();
 
         }
     }
     sidebar_dropdown();
+
+    $(function () {
+        let sidebar_nicescroll_opts = {
+            cursoropacitymin: 0,
+            cursoropacitymax: .8,
+            zindex: 892
+        }, now_layout_class = null;
+
+        var sidebar_nicescroll;
+        var update_sidebar_nicescroll = function () {
+            let a = setInterval(function () {
+                if (sidebar_nicescroll != null)
+                    sidebar_nicescroll.resize();
+            }, 10);
+
+            setTimeout(function () {
+                clearInterval(a);
+            }, 600);
+        }
+    });
 });
 
 
