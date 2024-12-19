@@ -2118,6 +2118,7 @@
                                                 <div class="elements-controls">
                                                     <button type="button"><img src="/assets/default/svgs/speech-bubble.svg" alt=""></button>
                                                     <button type="button"><img src="/assets/default/svgs/lock-open.svg" alt=""></button>
+                                                    <button type="button"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
                                                     <button type="button"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
                                                     <div class="edit-options-controls">
                                                         <div class="dropdown">
