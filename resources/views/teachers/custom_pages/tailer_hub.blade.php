@@ -2504,13 +2504,18 @@
     });
 </script>
 <script type="text/javascript">
-$(document).ready(function(){
-  $(function() {  
-        $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll({
-            scrollspeed: 40
-        });
-    });
-}); 
+$(document).ready(function () {
+    $(".blank-canvas-sidebar, .canvas-editable-options").hover(
+        function () {
+            $(this).niceScroll({
+                scrollspeed: 40,
+            });
+        },
+        function () {
+            $(this).getNiceScroll().remove();
+        }
+    );
+});
 </script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script>
