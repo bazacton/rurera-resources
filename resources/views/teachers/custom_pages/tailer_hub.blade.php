@@ -2504,19 +2504,6 @@
     });
 </script>
 
-<script type="text/javascript">
-$(document).ready(function () {
-
-    let scrollInstance = $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll({
-        cursoropacitymin: 0, // Start hidden
-        cursoropacitymax: 1, // Show when hovered
-        autohidemode: false, // Disable automatic hiding
-    });
-});
-
-
-</script>
-
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script>
     $(document).ready(function(){
