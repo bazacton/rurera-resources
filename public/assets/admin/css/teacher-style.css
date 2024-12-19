@@ -2187,6 +2187,7 @@ Tailer Hub Style Start
     max-width: 960px;
     margin: 50px auto;
 }
+/* Section-Controls Style Start */
 .section-controls button {
     border: 0;
     padding: 5px 25px;
@@ -2205,6 +2206,7 @@ Tailer Hub Style Start
 .section-controls .cancel-btn {
     background-color: var(--danger);
 }
+/* Section-Controls Style End */
 .canvas-editable-options {
     position: fixed;
     left: 0;
