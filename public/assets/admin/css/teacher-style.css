@@ -2199,7 +2199,7 @@ Tailer Hub Style Start
 }
 .canvas-editable-options {
     position: absolute;
-    right: -120px;
+    right: -650px;
     top: 0;
     z-index: 1;
     -webkit-transition: all 0.3s ease-out;
@@ -2209,12 +2209,11 @@ Tailer Hub Style Start
     transition: all 0.3s ease-out;
     opacity: 0;
     visibility: hidden;
-    right: 100%;
 }
-.canvas-editable-optionsa.active {
+.canvas-editable-options.active {
+    right: -100px;
     opacity: 1;
     visibility: visible;
-    right: 0;
 }
 /*************************************
 Tailer Hub Style End
