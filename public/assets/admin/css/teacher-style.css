@@ -2317,7 +2317,9 @@ Tailer Hub Style Start
     overflow-y: auto;
     border-right: 1px solid #ddd;
 }
-
+.admin_teacher_role .nicescroll-cursors {
+    background-color: #ddd !important;
+}
 .blank-canvas-sidebar::-webkit-scrollbar-track,
 .canvas-editable-options::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
