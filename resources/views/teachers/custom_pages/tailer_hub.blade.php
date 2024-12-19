@@ -2510,6 +2510,8 @@ $(document).ready(function () {
         function () {
             $(this).niceScroll({
                 scrollspeed: 40,
+                autohidemode: true,
+                enablekeyboard: true,
             });
         }
     );
