@@ -2218,7 +2218,6 @@ Tailer Hub Style Start
     position: fixed;
     left: 0;
     top: 15px;
-    z-index: 1060;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
@@ -2235,6 +2234,7 @@ Tailer Hub Style Start
     opacity: 1;
     visibility: visible;
     top: 0;
+    z-index: 1060;
 }
 .canvas-editable-options.lms-quiz-create .rureraform-properties-options-table-footer a {
     margin-left: 0;
