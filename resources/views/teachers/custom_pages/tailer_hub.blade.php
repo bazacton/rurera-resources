@@ -2510,6 +2510,7 @@ $(document).ready(function () {
         scrollspeed: 40,
         autohidemode: true,
         enablekeyboard: true,
+        resize: false
     });
 });
 
