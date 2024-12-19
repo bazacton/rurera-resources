@@ -2663,24 +2663,6 @@
                                                 <div class="field-options field-options-explanation"></div>
                                             </div>
                                             </div>
-                                            <div class="rureraform-properties-item api_var" data-id="api_var">
-                                            <div class="rureraform-properties-label">
-                                                <label>API variable</label>
-                                            </div>
-                                            <div class="rureraform-properties-tooltip"></div>
-                                            <div class="rureraform-properties-content">
-                                                <input type="text" name="rureraform-api_var" id="rureraform-api_var" value="options" placeholder="">
-                                            </div>
-                                            </div>
-                                            <div class="rureraform-properties-item" data-id="score">
-                                            <div class="rureraform-properties-label">
-                                                <label>Score</label>
-                                            </div>
-                                            <div class="rureraform-properties-tooltip"></div>
-                                            <div class="rureraform-properties-content">
-                                                <input type="number" name="rureraform-score" id="rureraform-score" value="" placeholder="">
-                                            </div>
-                                            </div>
                                             <input type="hidden" name="rureraform-elements_data" id="rureraform-elements_data" value="W3t9XQ==" placeholder="">
                                         </div>
                                         </div>
