@@ -2283,12 +2283,12 @@ Tailer Hub Style Start
 }
 .blank-canvas-sidebar::-webkit-scrollbar
 {
-    width: 10px;
+    width: 8px;
     background-color: #F5F5F5;
 }
 .blank-canvas-sidebar::-webkit-scrollbar-thumb
 {
-    background-color: #999;
+    background-color: #ccc;
     border: 0;
 }
 .blank-canvas-sidebar .title {
