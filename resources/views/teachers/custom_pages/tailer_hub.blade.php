@@ -2508,8 +2508,7 @@
 $(document).ready(function () {
     $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll({
         scrollspeed: 40,
-        autohidemode: true,
-        enablekeyboard: true,
+        enablekeyboard: false,
         resize: false
     });
 });
