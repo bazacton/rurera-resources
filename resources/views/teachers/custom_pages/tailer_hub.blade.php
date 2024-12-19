@@ -2506,13 +2506,9 @@
 
 <script type="text/javascript">
 $(document).ready(function () {
-    $(".blank-canvas-sidebar, .canvas-editable-options").hover(
-        function () {
-            $(this).niceScroll({
-                scrollspeed: 40,
-            });
-        }
-    );
+    $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll({
+        autohidemode: false
+    });
 });
 </script>
 
