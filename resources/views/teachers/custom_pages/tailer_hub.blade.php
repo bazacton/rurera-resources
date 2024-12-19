@@ -2258,7 +2258,7 @@
                                 <div class="rureraform-admin-popup active" id="rureraform-element-properties" style="display: block;" data-element_id="rureraform-element-3">
                                     <div class="rureraform-admin-popup-inner">
                                     <div class="rureraform-admin-popup-title">
-                                        <a href="#" title="Close" onclick="return rureraform_properties_close();">
+                                        <a href="#" title="Close">
                                         <i class="fas fa-times"></i>
                                         </a>
                                         <h3>
