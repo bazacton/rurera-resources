@@ -2252,6 +2252,9 @@ Tailer Hub Style Start
 .canvas-editable-options.lms-quiz-create .rureraform-properties-options-table-footer a label {
     margin: 0;
 }
+.canvas-editable-options.lms-quiz-create .rureraform-properties-image-options-table .rureraform-properties-options-table>div {
+    width: 70%;
+}
 /* Canvas-Editable-Options Style End */
 
 /* Elements-Tooltip Style Start */
