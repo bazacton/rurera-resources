@@ -2564,10 +2564,7 @@ $(document).ready(function () {
     $scrollableDiv.getNiceScroll().resize();
   });
 
-  // Destroy NiceScroll when the modal is hidden
-  $(".blank-canvas-modal").on("hidden.bs.modal", function () {
-    $scrollableDiv.getNiceScroll().remove();
-  });
+  
 });
 
 
