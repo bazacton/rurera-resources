@@ -1969,6 +1969,7 @@ Tailer Hub Style Start
 }
 /* Quiz AI Tags Style End */
 
+/* Questions AI Nav Controls Style Start */
 .q-ai-nav-controls a {
     background-color: inherit;
     border: 1px solid #ddd;
@@ -1994,6 +1995,7 @@ Tailer Hub Style Start
     width: 25px;
     margin-right: 10px;
 }
+/* Questions AI Nav Controls Style End */
 .bulk-ai-box .select-field {
     background-color: #f6f6f6;
     border-radius: 5px;
