@@ -2276,18 +2276,18 @@ Tailer Hub Style Start
     overflow-y: auto;
     border-right: 1px solid #ddd;
 }
-.blank-canvas-sidebar::-webkit-scrollbar-track
-{
+.blank-canvas-sidebar::-webkit-scrollbar-track,
+.canvas-editable-options::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
     background-color: #F5F5F5;
 }
-.blank-canvas-sidebar::-webkit-scrollbar
-{
+.blank-canvas-sidebar::-webkit-scrollbar,
+.canvas-editable-options::-webkit-scrollbar {
     width: 8px;
     background-color: #F5F5F5;
 }
-.blank-canvas-sidebar::-webkit-scrollbar-thumb
-{
+.blank-canvas-sidebar::-webkit-scrollbar-thumb,
+.canvas-editable-options::-webkit-scrollbar-thumb {
     background-color: #ccc;
     border: 0;
 }
