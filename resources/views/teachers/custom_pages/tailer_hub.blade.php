@@ -2506,12 +2506,14 @@
 
 <script type="text/javascript">
 $(document).ready(function () {
-    $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll({
-        scrollspeed: 40,
-        enablekeyboard: false,
-        resize: false
+
+    let scrollInstance = $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll({
+        cursoropacitymin: 0, // Start hidden
+        cursoropacitymax: 1, // Show when hovered
+        autohidemode: false, // Disable automatic hiding
     });
 });
+
 
 </script>
 
