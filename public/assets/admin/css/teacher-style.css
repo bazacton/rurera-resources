@@ -2229,6 +2229,9 @@ Tailer Hub Style Start
     border: 0;
     padding: 0;
 }
+.elements-controls .edit-options-controls button {
+    background-color: #f2f2f2;
+}
 .admin_teacher_role .question-layout .rureraform-element {
     position: relative;
 }
