@@ -2269,16 +2269,16 @@
                                                 <input type="text" name="rureraform-label" id="rureraform-label" value="Mark One answer" placeholder="">
                                             </div>
                                             </div>
-                                            <div class="rureraform-properties-item " data-id="have_images">
-                                            <div class="rureraform-properties-label">
-                                                <label>Answer with image</label>
-                                            </div>
-                                            <div class="form-group custom-switches-stacked mb-0">
-                                                <label class="custom-switch pl-0 mb-0">
-                                                    <input type="checkbox" name="answer-with-image" id="answer-with-image" value="1" class="custom-switch-input">
-                                                    <span class="custom-switch-indicator"></span>
-                                                </label>
-                                            </div>
+                                            <div class="rureraform-properties-item d-flex align-items-center justify-content-between" data-id="have_images">
+                                                <div class="rureraform-properties-label pb-0">
+                                                    <label>Answer with image</label>
+                                                </div>
+                                                <div class="form-group custom-switches-stacked mb-0">
+                                                    <label class="custom-switch pl-0 mb-0">
+                                                        <input type="checkbox" name="answer-with-image" id="answer-with-image" value="1" class="custom-switch-input">
+                                                        <span class="custom-switch-indicator"></span>
+                                                    </label>
+                                                </div>
                                             </div>
                                             <div class="rureraform-properties-item rurera-image-depend rurera-hide" data-id="image_position">
                                             <div class="rureraform-properties-label">
