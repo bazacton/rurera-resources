@@ -2207,6 +2207,8 @@ Tailer Hub Style Start
     background-color: var(--danger);
 }
 /* Section-Controls Style End */
+
+/* Canvas-Editable-Options Style Start */
 .canvas-editable-options {
     position: fixed;
     left: 0;
@@ -2229,7 +2231,9 @@ Tailer Hub Style Start
     visibility: visible;
     top: 0;
 }
+/* Canvas-Editable-Options Style End */
 
+/* Elements-Tooltip Style Start */
 .elements-tooltip img {
     height: 18px;
     width: 18px;
@@ -2277,6 +2281,8 @@ Tailer Hub Style Start
     flex-wrap: wrap;
     gap: 10px;
 }
+/* Elements-Tooltip Style End */
+
 /* Blank-Canvas Sidebar Style Start */  
 .blank-canvas-sidebar {
     position: fixed;
