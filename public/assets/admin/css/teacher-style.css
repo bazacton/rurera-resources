@@ -2236,6 +2236,21 @@ Tailer Hub Style Start
     visibility: visible;
     top: 0;
 }
+.canvas-editable-options.lms-quiz-create .rureraform-properties-options-table-footer a {
+    margin-left: 0;
+    border: 1px solid #ddd;
+    display: block;
+    text-align: center;
+    line-height: normal;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+.canvas-editable-options.lms-quiz-create .rureraform-properties-options-table-footer {
+    padding-left: 0;
+}
+.canvas-editable-options.lms-quiz-create .rureraform-properties-options-table-footer a label {
+    margin: 0;
+}
 /* Canvas-Editable-Options Style End */
 
 /* Elements-Tooltip Style Start */
