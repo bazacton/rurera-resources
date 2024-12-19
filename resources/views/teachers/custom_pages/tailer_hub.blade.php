@@ -2687,9 +2687,9 @@
                                 </div>
                             </div>
                             <script>
-                                $(document).ready(function(){
-                                    $(".rureraform-element").click(function(){
-                                        $(".canvas-editable-options").toggleClass("active");
+                                jQuery(document).ready(function(){
+                                    jQuery(".rureraform-element").click(function(){
+                                        jQuery(".canvas-editable-options").toggleClass("active");
                                     });
                                 });
                             </script>
