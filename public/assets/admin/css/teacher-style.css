@@ -2242,6 +2242,14 @@ Tailer Hub Style Start
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    opacity: 0;
+    visibility: hidden;
+    margin-bottom: 15px;
+}
+.admin_teacher_role .question-layout .rureraform-element:hover .elements-tooltip {
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 0;
 }
 .elements-controls {
     line-height: normal;
