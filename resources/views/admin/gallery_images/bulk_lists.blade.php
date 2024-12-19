@@ -836,7 +836,7 @@ ul.crop_sizes {
 						$(this).closest('.template-item').removeClass('active');
 					}
 				});
-				$(".example-selected-questions").append('<input type="text" name="example_question_id[]" class="example_question_id" value="'+template_id+'">');
+				$(".example-selected-questions").append('<input type="hidden" name="example_question_id[]" class="example_question_id" value="'+template_id+'">');
 				$(this).closest('.template-item').addClass('active');
 			}
 		});
