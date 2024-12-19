@@ -2686,11 +2686,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <script>
-                                jQuery(".rureraform-element").click(function(){
-                                    jQuery(".canvas-editable-options").toggleClass("active");
-                                });
-                            </script>
                         </div>
                     </div>
                     <div class="section-controls">
@@ -2707,6 +2702,13 @@
 @endsection
 
 @push('scripts_bottom')
+<script>
+    $(document).ready(function(){
+        $(".rureraform-element").click(function(){
+            $(".canvas-editable-options").toggleClass("active");
+        });
+    });
+</script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script>
     $(document).ready(function(){
