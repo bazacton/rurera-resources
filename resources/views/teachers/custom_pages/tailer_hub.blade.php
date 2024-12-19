@@ -2119,6 +2119,17 @@
                                                     <button type="button"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
                                                     <button type="button"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
                                                     <button type="button"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
+                                                    <div class="edit-options-controls">
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <i class="fas fa-ellipsis-v"></i>
+                                                            </button>
+                                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Rewrite</a>
+                                                                <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> More fun</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
