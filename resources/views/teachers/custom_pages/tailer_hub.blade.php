@@ -2557,9 +2557,9 @@
 <script type="text/javascript">
 $(document).ready(function () {
     var sidebar_dropdown = function () {
-        if ($(".main-sidebar, .blank-canvas-sidebar, .canvas-editable-options").length) {
-            $(".main-sidebar, .blank-canvas-sidebar, .canvas-editable-options").niceScroll(sidebar_nicescroll_opts);
-            sidebar_nicescroll = $(".main-sidebar, .blank-canvas-sidebar, .canvas-editable-options").getNiceScroll();
+        if ($(".blank-canvas-sidebar, .canvas-editable-options").length) {
+            $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll(sidebar_nicescroll_opts);
+            sidebar_nicescroll = $(".blank-canvas-sidebar, .canvas-editable-options").getNiceScroll();
 
         }
     }
