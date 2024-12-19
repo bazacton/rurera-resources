@@ -2506,10 +2506,15 @@
 
 <script type="text/javascript">
 $(document).ready(function () {
-    $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll({
-        autohidemode: false
-    });
+    $(".blank-canvas-sidebar, .canvas-editable-options").hover(
+        function () {
+            $(this).niceScroll({
+                scrollspeed: 40,
+            });
+        }
+    );
 });
+
 </script>
 
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
