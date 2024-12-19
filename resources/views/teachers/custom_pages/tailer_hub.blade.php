@@ -2286,13 +2286,11 @@
                                                 <label>Answer with image</label>
                                             </div>
                                             <div class="rureraform-properties-tooltip"></div>
-                                            <div class="rureraform-properties-content">
-                                                <div class="rureraform-third">
-                                                <select name="rureraform-have_images" id="rureraform-have_images" class="">
-                                                    <option selected="selected" value="no">No</option>
-                                                    <option value="yes">Yes</option>
-                                                </select>
-                                                </div>
+                                            <div class="form-group custom-switches-stacked mb-0">
+                                                <label class="custom-switch pl-0 mb-0">
+                                                    <input type="checkbox" name="answer-with-image" id="answer-with-image" value="1" class="custom-switch-input">
+                                                    <span class="custom-switch-indicator"></span>
+                                                </label>
                                             </div>
                                             </div>
                                             <div class="rureraform-properties-item rurera-image-depend rurera-hide" data-id="image_position">
