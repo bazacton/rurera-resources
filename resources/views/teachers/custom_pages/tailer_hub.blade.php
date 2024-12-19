@@ -2187,7 +2187,7 @@
                         <button type="button" class="cancel-btn">Cancel</button>
                     </div>
                 </div>
-                <div class="canvas-editable-options">
+                <div class="canvas-editable-options lms-quiz-create">
                     <div class="lms-element-properties">
                         <div class="row">
                             <div class="topic-parts-block rurera-hide" style="display:contents;"></div>
