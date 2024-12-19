@@ -2685,7 +2685,14 @@
                                     </div>
                                     </div>
                                 </div>
-                                </div>
+                            </div>
+                            <script>
+                                $(document).ready(function(){
+                                    $(".rureraform-element").click(function(){
+                                        $(".canvas-editable-options").toggleClass("active");
+                                    });
+                                });
+                            </script>
                         </div>
                     </div>
                     <div class="section-controls">
