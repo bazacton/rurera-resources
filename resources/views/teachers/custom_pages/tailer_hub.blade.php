@@ -2554,11 +2554,6 @@ $(document).ready(function () {
     $scrollableDiv.getNiceScroll()[0].show();
   });
 
-  // Optionally hide on mouse leave
-  $scrollableDiv.on("mouseleave", function () {
-    $scrollableDiv.getNiceScroll()[0].hide();
-  });
-
   // Reinitialize NiceScroll when the modal is shown
   $(".blank-canvas-modal").on("shown.bs.modal", function () {
     $scrollableDiv.getNiceScroll().resize();
