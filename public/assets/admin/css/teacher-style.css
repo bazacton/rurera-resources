@@ -1,3 +1,9 @@
+.admin_teacher_role button,
+.admin_teacher_role button:focus,
+.admin_teacher_role select,
+.admin_teacher_role select:focus {
+    outline: none;
+}
 /* Admin Left Menue Style Start */
 .admin_teacher_role .main-sidebar {
     background-color: #fff;
@@ -2920,6 +2926,8 @@ span.field-separated span:after {
     width: 12px;
     margin-right: 5px;
 }
+
+/* View-Explanation Style Start */
 .view-explanation button {
     border: 0;
     background-color: inherit;
@@ -2952,12 +2960,7 @@ span.field-separated span:after {
     border-radius: 5px;
     color: #555;
 }
-.admin_teacher_role button,
-.admin_teacher_role button:focus,
-.admin_teacher_role select,
-.admin_teacher_role select:focus {
-    outline: none;
-}
+/* View-Explanation Style End */
 
 /* Question-Layout Question-Top-Info Style Start */
 .question-top-info {
