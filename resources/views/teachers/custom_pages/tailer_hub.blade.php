@@ -2593,7 +2593,7 @@
                                                     </div>
                                                     </div>
                                                     <textarea class="note-codable" aria-multiline="true"></textarea>
-                                                    <div class="note-editable card-block" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true" autocorrect="true" style="height: 400px;">
+                                                    <div class="note-editable card-block" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true" autocorrect="true">
                                                     <p>
                                                         <br>
                                                     </p>
