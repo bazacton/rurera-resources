@@ -2512,6 +2512,7 @@ $(document).ready(function () {
             sidebar_nicescroll = $(".blank-canvas-sidebar, .canvas-editable-options").getNiceScroll();
         }
     }
+    sidebar_dropdown();
 });
 
 </script>
