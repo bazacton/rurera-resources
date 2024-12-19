@@ -2389,6 +2389,9 @@ Tailer Hub Style Start
     width: 18px;
     margin-right: 5px;
 }
+.canvas-editable-options.lms-quiz-create .rureraform-admin-popup-title {
+    background-color: inherit;
+}
 /* Blank-Canvas Sidebar Style End */
 
 /*************************************
