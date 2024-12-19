@@ -2325,10 +2325,10 @@ Tailer Hub Style Start
     margin-bottom: 10px;
 }
 .q-number {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
-    background: #007bff;
-    color: white;
+    background: rgba(0, 0, 0, 0.050);
+    color: #333;
     border-radius: 50%;
     width: 24px;
     height: 24px;
