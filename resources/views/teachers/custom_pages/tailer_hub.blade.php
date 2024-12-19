@@ -2506,15 +2506,11 @@
 
 <script type="text/javascript">
 $(document).ready(function () {
-    $(".blank-canvas-sidebar, .canvas-editable-options").hover(
-        function () {
-            $(this).niceScroll({
-                scrollspeed: 40,
-                autohidemode: true,
-                enablekeyboard: true,
-            });
-        }
-    );
+    $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll({
+        scrollspeed: 40,
+        autohidemode: true,
+        enablekeyboard: true,
+    });
 });
 
 </script>
