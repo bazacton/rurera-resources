@@ -2024,6 +2024,56 @@
                     
                 </div>
                 <div class="canvas-modal-container">
+                    <div class="mb-30 bg-white panel-border rounded-sm p-15 bulk-quiz">
+                        <div class="bulk-heading">
+                            <h6>Bulk Settings</h6>
+                        </div>
+                        <div class="bulk-ai">
+                            <div class="bulk-ai-box">
+                                <span class="bulk-lable">Rendomize</span>
+                                <div class="btn-field">
+                                    <a href="#">Question order</a>
+                                    <a href="#">Options order</a>
+                                </div>
+                            </div>
+                            <div class="bulk-ai-box">
+                                <span class="bulk-lable">Estimation time</span>
+                                <div class="select-field">
+                                    <select>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <span class="bulk-text">Mins <i class="fas fa-clock"></i></span>
+                                </div>
+                            </div>
+                            <div class="bulk-ai-box">
+                                <span class="bulk-lable">Mark as point</span>
+                                <div class="select-field">
+                                    <select>
+                                        <option value="1">1</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <span class="bulk-text">Points <i class="fas fa-circle"></i></span>
+                                </div>
+                            </div>
+                            <div class="bulk-ai-box">
+                                <span class="bulk-lable">Questions Order</span>
+                                <div class="btn-field">
+                                    <a href="#" class="delete-btn" data-toggle="modal" data-target="#dragModal">Rearrange</a>
+                                </div>
+                            </div>
+                            <div class="bulk-ai-box">
+                                <span class="bulk-lable">Bulk Delete</span>
+                                <div class="btn-field">
+                                    <a href="#" class="delete-btn">Delete All Questions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible alert fade show">
                         <button type="button" class="close" data-dismiss="quiz-ai-tags" aria-label="Close">
                             <span aria-hidden="true">×</span>
@@ -2502,6 +2552,21 @@
             $(".canvas-editable-options").toggleClass("active");
         });
     });
+</script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    var sidebar_dropdown = function () {
+        if ($(".main-sidebar, .blank-canvas-sidebar, .canvas-editable-options").length) {
+            $(".main-sidebar, .blank-canvas-sidebar, .canvas-editable-options").niceScroll(sidebar_nicescroll_opts);
+            sidebar_nicescroll = $(".main-sidebar, .blank-canvas-sidebar, .canvas-editable-options").getNiceScroll();
+
+        }
+    }
+    sidebar_dropdown();
+});
+
+
 </script>
 
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
