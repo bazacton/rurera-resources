@@ -2215,6 +2215,34 @@ Tailer Hub Style Start
     opacity: 1;
     visibility: visible;
 }
+
+.elements-tooltip img {
+    height: 15px;
+    width: 15px;
+}
+.elements-controls button {
+    background-color: initial;
+    border: 0;
+    padding: 0;
+}
+.elements-tooltip {
+    position: absolute;
+    bottom: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0,0,0, 0.2);
+    border-radius: 30px;
+    left: 50%;
+    padding: 5px 5px;
+    transform: translateX(-50%);
+}
+.elements-controls {
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
