@@ -2212,14 +2212,11 @@
                                         <i class="fas fa-times"></i>
                                         </a>
                                         <h3>
-                                        <i class="fas fa-cog element-properties-label"></i> Element Properties
+                                        <i class="fas fa-cog element-properties-label"></i> Multi Properties
                                         </h3>
                                     </div>
                                     <div class="rureraform-admin-popup-content">
                                         <div class="rureraform-admin-popup-content-form">
-                                        <div id="rureraform-properties-tabs" class="rureraform-tabs">
-                                            <a class="rureraform-tab rureraform-tab-active" href="#rureraform-tab-basic">Basic</a>
-                                        </div>
                                         <div id="rureraform-tab-basic" class="rureraform-tab-content" style="display: block;">
                                             <input type="hidden" name="rureraform-field_id" id="rureraform-field_id" value="48453" placeholder="">
                                             <div class="rureraform-properties-item " data-id="label">
