@@ -2513,6 +2513,13 @@ $(document).ready(function () {
         }
     }
     sidebar_dropdown();
+    $(function () {
+    let sidebar_nicescroll_opts = {
+        cursoropacitymin: 0,
+        cursoropacitymax: .8,
+        zindex: 892
+    }, now_layout_class = null;
+});
 });
 
 </script>
