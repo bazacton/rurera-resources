@@ -2428,18 +2428,7 @@
                                                 </div>
                                             </div>
                                             </div>
-                                            <div class="rureraform-properties-item " data-id="description">
-                                            <div class="rureraform-properties-label">
-                                                <label>Description</label>
-                                            </div>
-                                            <div class="rureraform-properties-tooltip">
-                                                <i class="fas fa-question-circle rureraform-tooltip-anchor tooltipstered"></i>
-                                                <div class="rureraform-tooltip-content">This description appears below the field.</div>
-                                            </div>
-                                            <div class="rureraform-properties-content">
-                                                <input type="text" name="rureraform-description" id="rureraform-description" value="" placeholder="">
-                                            </div>
-                                            </div>
+                                            
                                             <div class="rureraform-properties-item " data-id="template_style">
                                             <div class="rureraform-properties-label">
                                                 <label>Template Style</label>
