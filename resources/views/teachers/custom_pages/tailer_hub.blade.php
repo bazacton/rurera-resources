@@ -2539,7 +2539,7 @@
 $(document).ready(function () {
     var sidebar_dropdown = function () {
         if ($(".blank-canvas-sidebar, .canvas-editable-options").length) {
-            $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll(sidebar_nicescroll_opts);
+            $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll();
             sidebar_nicescroll = $(".blank-canvas-sidebar, .canvas-editable-options").getNiceScroll();
 
         }
@@ -2547,11 +2547,6 @@ $(document).ready(function () {
     sidebar_dropdown();
 
     $(function () {
-        let sidebar_nicescroll_opts = {
-            cursoropacitymin: 0,
-            cursoropacitymax: .8,
-            zindex: 892
-        }, now_layout_class = null;
 
         var sidebar_nicescroll;
         var update_sidebar_nicescroll = function () {
