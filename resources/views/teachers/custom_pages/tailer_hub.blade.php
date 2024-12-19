@@ -2729,8 +2729,10 @@
     });
 </script>
 <script type="text/javascript">
-  $(".blank-canvas-sidebar>").getNiceScroll().resize();
-  $(".blank-canvas-sidebar").niceScroll();
+$(window).load(function(){
+    $(".blank-canvas-sidebar>").getNiceScroll().resize();
+    $(".blank-canvas-sidebar").niceScroll();
+});
 </script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script>
