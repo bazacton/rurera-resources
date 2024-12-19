@@ -2198,9 +2198,9 @@ Tailer Hub Style Start
     background-color: var(--danger);
 }
 .canvas-editable-options {
-    position: absolute;
-    right: -650px;
-    top: 0;
+    position: fixed;
+    left: 0;
+    top: 15px;
     z-index: 1;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -2209,11 +2209,15 @@ Tailer Hub Style Start
     transition: all 0.3s ease-out;
     opacity: 0;
     visibility: hidden;
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
 }
 .canvas-editable-options.active {
-    right: -100px;
     opacity: 1;
     visibility: visible;
+    top: 0;
 }
 
 .elements-tooltip img {
@@ -2232,10 +2236,10 @@ Tailer Hub Style Start
     position: absolute;
     bottom: 100%;
     background-color: #fff;
-    box-shadow: 0 4px 4px rgba(0,0,0, 0.2);
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.2);
     border-radius: 30px;
     left: 50%;
-    padding: 5px 5px;
+    padding: 5px 8px;
     transform: translateX(-50%);
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -2245,6 +2249,7 @@ Tailer Hub Style Start
     opacity: 0;
     visibility: hidden;
     margin-bottom: 15px;
+    z-index: 2;
 }
 .admin_teacher_role .question-layout .rureraform-element:hover .elements-tooltip {
     opacity: 1;
