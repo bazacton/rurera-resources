@@ -2711,7 +2711,7 @@
 @push('scripts_bottom')
 <script>
     $(document).ready(function(){
-        $(".rureraform-element").click(function(){
+        $(".rureraform-element, .lms-quiz-create .rureraform-admin-popup-title a").click(function(){
             $(".canvas-editable-options").toggleClass("active");
         });
     });
