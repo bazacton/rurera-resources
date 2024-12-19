@@ -2536,30 +2536,38 @@
 </script>
 
 <script type="text/javascript">
+
+
 $(document).ready(function () {
-    var sidebar_dropdown = function () {
-        if ($(".blank-canvas-sidebar, .canvas-editable-options").length) {
-            $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll();
-            sidebar_nicescroll = $(".blank-canvas-sidebar, .canvas-editable-options").getNiceScroll();
+  const $scrollableDiv = $(".blank-canvas-sidebar, .canvas-editable-options");
 
-        }
-    }
-    sidebar_dropdown();
+  // Initialize NiceScroll (hidden by default)
+  $scrollableDiv.niceScroll({
+    cursorcolor: "#007bff",
+    cursorwidth: "8px",
+    autohidemode: true // Ensure it auto-hides
+  });
 
-    $(function () {
+  // Show NiceScroll on mouse enter
+  $scrollableDiv.on("mouseenter", function () {
+    $scrollableDiv.getNiceScroll().resize();
+    $scrollableDiv.getNiceScroll()[0].show();
+  });
 
-        var sidebar_nicescroll;
-        var update_sidebar_nicescroll = function () {
-            let a = setInterval(function () {
-                if (sidebar_nicescroll != null)
-                    sidebar_nicescroll.resize();
-            }, 10);
+  // Optionally hide on mouse leave
+  $scrollableDiv.on("mouseleave", function () {
+    $scrollableDiv.getNiceScroll()[0].hide();
+  });
 
-            setTimeout(function () {
-                clearInterval(a);
-            }, 600);
-        }
-    });
+  // Reinitialize NiceScroll when the modal is shown
+  $(".blank-canvas-modal").on("shown.bs.modal", function () {
+    $scrollableDiv.getNiceScroll().resize();
+  });
+
+  // Destroy NiceScroll when the modal is hidden
+  $(".blank-canvas-modal").on("hidden.bs.modal", function () {
+    $scrollableDiv.getNiceScroll().remove();
+  });
 });
 
 
