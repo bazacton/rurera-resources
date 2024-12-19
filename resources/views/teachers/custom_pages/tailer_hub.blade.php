@@ -2844,5 +2844,13 @@
         }, { offset: Number.NEGATIVE_INFINITY }).element;
     }
 </script>
+<script>
+
+$(document).ready(function(){
+    $(".rureraform-element").click(function(){
+        $(".canvas-editable-options").toggleClass("active");
+    });
+});
+</script>
 
 @endpush
