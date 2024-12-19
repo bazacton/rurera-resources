@@ -2114,6 +2114,13 @@
                                     <div class="rureraform-col rureraform-col-12">
                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                             <h4>Read the text, then answer the question.</h4>
+                                            <div class="elements-tooltip">
+                                                <div class="elements-controls">
+                                                    <button type="button"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
+                                                    <button type="button"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
+                                                    <button type="button"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="rureraform-col rureraform-col-12">
