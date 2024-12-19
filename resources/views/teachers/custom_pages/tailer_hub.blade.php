@@ -2506,20 +2506,11 @@
 
 <script type="text/javascript">
 $(document).ready(function () {
-    var sidebar_dropdown = function () {
-        if ($(".blank-canvas-sidebar, .canvas-editable-options").length) {
-            $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll(sidebar_nicescroll_opts);
-            sidebar_nicescroll = $(".blank-canvas-sidebar, .canvas-editable-options").getNiceScroll();
-        }
-    }
-    sidebar_dropdown();
-    $(function () {
-    let sidebar_nicescroll_opts = {
-        cursoropacitymin: 0,
-        cursoropacitymax: .8,
-        zindex: 892
-    }, now_layout_class = null;
-});
+    $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll({
+        scrollspeed: 40,
+        enablekeyboard: false,
+        resize: false
+    });
 });
 
 </script>
