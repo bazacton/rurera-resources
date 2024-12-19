@@ -2506,11 +2506,12 @@
 
 <script type="text/javascript">
 $(document).ready(function () {
-    $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll({
-        scrollspeed: 40,
-        enablekeyboard: false,
-        resize: false
-    });
+    var sidebar_dropdown = function () {
+        if ($(".blank-canvas-sidebar, .canvas-editable-options").length) {
+            $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll(sidebar_nicescroll_opts);
+            sidebar_nicescroll = $(".blank-canvas-sidebar, .canvas-editable-options").getNiceScroll();
+        }
+    }
 });
 
 </script>
