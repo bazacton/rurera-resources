@@ -2594,9 +2594,6 @@
                                                     </div>
                                                     <textarea class="note-codable" aria-multiline="true"></textarea>
                                                     <div class="note-editable card-block" contenteditable="true" role="textbox" aria-multiline="true" spellcheck="true" autocorrect="true">
-                                                    <p>
-                                                        <br>
-                                                    </p>
                                                     </div>
                                                 </div>
                                                 <output class="note-status-output" role="status" aria-live="polite"></output>
