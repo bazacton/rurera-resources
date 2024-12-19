@@ -2285,7 +2285,6 @@
                                             <div class="rureraform-properties-label">
                                                 <label>Answer with image</label>
                                             </div>
-                                            <div class="rureraform-properties-tooltip"></div>
                                             <div class="form-group custom-switches-stacked mb-0">
                                                 <label class="custom-switch pl-0 mb-0">
                                                     <input type="checkbox" name="answer-with-image" id="answer-with-image" value="1" class="custom-switch-input">
