@@ -2458,18 +2458,9 @@
                                                 </div>
                                             </div>
                                             </div>
-                                            <div class="rureraform-properties-item " data-id="hint">
-                                            <div class="rureraform-properties-label">
-                                                <label>Hint</label>
-                                            </div>
-                                            <div class="rureraform-properties-tooltip"></div>
-                                            <div class="rureraform-properties-content">
-                                                <input type="text" name="rureraform-hint" id="rureraform-hint" value="" placeholder="">
-                                            </div>
-                                            </div>
                                             
                                             <input type="hidden" name="rureraform-elements_data" id="rureraform-elements_data" value="W3t9XQ==" placeholder="">
-                                        </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="rureraform-admin-popup-buttons">
