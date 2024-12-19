@@ -2503,6 +2503,7 @@
         });
     });
 </script>
+
 <script type="text/javascript">
 $(document).ready(function () {
     $(".blank-canvas-sidebar, .canvas-editable-options").hover(
@@ -2514,6 +2515,7 @@ $(document).ready(function () {
     );
 });
 </script>
+
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script>
     $(document).ready(function(){
