@@ -1932,6 +1932,7 @@ Tailer Hub Style Start
     outline: none;
     height: 42px;
 }
+/* Quiz AI Tags Style Start */
 .quiz-ai-tags {
     background: radial-gradient(95% 400% at 25% 400%, #f1e800 0, rgba(0, 196, 204, 0) 100%), radial-gradient(95% 420% at 95% 440%, #f3efef 0, rgba(139, 61, 255, 0) 100%) !important;
     position: relative;
@@ -1960,6 +1961,7 @@ Tailer Hub Style Start
     width: 18px;
     margin-right: 6px;
 }
+/* Quiz AI Tags Style End */
 
 .q-ai-nav-controls a {
     background-color: inherit;
@@ -2957,6 +2959,7 @@ span.field-separated span:after {
     outline: none;
 }
 
+/* Question-Layout Question-Top-Info Style Start */
 .question-top-info {
     display: flex;
     align-items: center;
@@ -3022,7 +3025,7 @@ span.field-separated span:after {
 .question-info .dropdown-toggle {
     background-color: #f2f2f2;
 }
-
+/* Question-Layout Question-Top-Info Style End */
 
 .listing-dropdown {
     display: flex;
