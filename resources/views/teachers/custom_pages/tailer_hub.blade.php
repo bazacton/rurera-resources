@@ -2510,9 +2510,6 @@ $(document).ready(function () {
             $(this).niceScroll({
                 scrollspeed: 40,
             });
-        },
-        function () {
-            $(this).getNiceScroll().remove();
         }
     );
 });
