@@ -2216,7 +2216,7 @@ Tailer Hub Style Start
 /* Canvas-Editable-Options Style Start */
 .canvas-editable-options {
     position: fixed;
-    left: 0;
+    left: -100px;
     top: 0;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -2229,13 +2229,13 @@ Tailer Hub Style Start
     height: 100%;
     overflow: hidden;
     overflow-y: auto;
-    display: none;
 }
 .canvas-editable-options.active {
     opacity: 1;
     visibility: visible;
     z-index: 1060;
     display: block;
+    left: 0;
 }
 .canvas-editable-options.lms-quiz-create .rureraform-properties-options-table-footer a {
     margin-left: 0;
