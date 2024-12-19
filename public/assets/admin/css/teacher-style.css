@@ -2217,8 +2217,8 @@ Tailer Hub Style Start
 }
 
 .elements-tooltip img {
-    height: 15px;
-    width: 15px;
+    height: 18px;
+    width: 18px;
 }
 .elements-controls button {
     background-color: initial;
@@ -2234,6 +2234,11 @@ Tailer Hub Style Start
     left: 50%;
     padding: 5px 5px;
     transform: translateX(-50%);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 .elements-controls {
     line-height: normal;
