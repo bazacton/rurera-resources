@@ -2543,7 +2543,7 @@ $(document).ready(function () {
 
   // Initialize NiceScroll (hidden by default)
   $scrollableDiv.niceScroll({
-    cursorcolor: "#007bff",
+    cursorcolor: "red",
     cursorwidth: "8px",
     autohidemode: true // Ensure it auto-hides
   });
