@@ -2060,18 +2060,6 @@
                                     <span class="bulk-text">Points <i class="fas fa-circle"></i></span>
                                 </div>
                             </div>
-                            <div class="bulk-ai-box">
-                                <span class="bulk-lable">Questions Order</span>
-                                <div class="btn-field">
-                                    <a href="#" class="delete-btn" data-toggle="modal" data-target="#dragModal">Rearrange</a>
-                                </div>
-                            </div>
-                            <div class="bulk-ai-box">
-                                <span class="bulk-lable">Bulk Delete</span>
-                                <div class="btn-field">
-                                    <a href="#" class="delete-btn">Delete All Questions</a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible alert fade show">
