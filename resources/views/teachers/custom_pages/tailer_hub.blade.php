@@ -2504,8 +2504,13 @@
     });
 </script>
 <script type="text/javascript">
-  $(".blank-canvas-sidebar, .canvas-editable-options").getNiceScroll().resize();
-  $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll();
+$(document).ready(function(){
+  $(function() {  
+        $(".blank-canvas-sidebar, .canvas-editable-options").niceScroll({
+            scrollspeed: 40
+        });
+    });
+}); 
 </script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script>
