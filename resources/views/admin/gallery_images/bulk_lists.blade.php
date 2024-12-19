@@ -114,6 +114,11 @@ ul.crop_sizes {
     background: rgb(97, 171, 250);
     background: linear-gradient(0deg, rgba(97, 171, 250, 1) 25%, rgba(0, 123, 255, 1) 100%);
 }
+.R-cover {
+    width: 100%;
+    inset: 0px 0px !important;
+	background:none;
+}
 </style>
 @endpush
 
@@ -533,7 +538,7 @@ ul.crop_sizes {
 
 
 <div id="upload_image_area" class="upload_image_area modal fade" role="dialog" data-backdrop="static">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-lg" style="max-width:100%;">
         <div class="modal-content edit-quest-modal-div">
             <div class="modal-body">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -831,7 +836,7 @@ ul.crop_sizes {
 						$(this).closest('.template-item').removeClass('active');
 					}
 				});
-				$(".example-selected-questions").append('<input type="text" name="example_question_id[]" class="example_question_id" value="'+template_id+'">');
+				$(".example-selected-questions").append('<input type="hidden" name="example_question_id[]" class="example_question_id" value="'+template_id+'">');
 				$(this).closest('.template-item').addClass('active');
 			}
 		});
