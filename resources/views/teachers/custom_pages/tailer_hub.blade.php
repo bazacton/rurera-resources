@@ -2233,7 +2233,7 @@
                                             </div>
                                             <div class="rureraform-properties-item " data-id="have_images">
                                             <div class="rureraform-properties-label">
-                                                <label>Have Images</label>
+                                                <label>Answer with image</label>
                                             </div>
                                             <div class="rureraform-properties-tooltip"></div>
                                             <div class="rureraform-properties-content">
