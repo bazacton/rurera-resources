@@ -1571,13 +1571,15 @@
                     <h3 class="title">QUESTION <span>(5)</span> <button class="add-btn">+</button></h3>
                     <div id="sortable">
                         <div class="question-card">
-                            <div class="question-content">
-                                <div class="question-text"><div class="q-number">1</div> What does UI stand fo...</div>
-                                <div class="question-type">
-                                    <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span> 
-                                    <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                            <a href="#" class="question-card-link">
+                                <div class="question-content">
+                                    <div class="question-text"><div class="q-number">1</div> What does UI stand fo...</div>
+                                    <div class="question-type">
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span> 
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="question-card">
                             <div class="question-content">
