@@ -1555,7 +1555,12 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .nav .nav-link.group-col {border-bottom-color: var(--cyan) !important;}
 .inner_dropdown_questions_color {border-bottom-color: var(--orange) !important; color: var(--orange) !important; margin-left: 20px; margin-right: -20px;}
 .inner_dropdown_questions {border-bottom-color: var(--red) !important; color: var(--red) !important; margin-left: 20px;  margin-right: -20px;}
-
+.question-types-colors .inner_dropdown_questions_color:before {
+    background-color: var(--orange);
+}
+.question-types-colors .inner_text_questions_color:before {
+    background-color: #6c757d;
+}
 .edit-questions-tabs .move-up-keyword {
     color: #fff;
     background-color: #4CAF50;
