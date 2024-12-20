@@ -2290,7 +2290,7 @@ Tailer Hub Style Start
     border-radius: 5px;
 }
 .explanation-box {
-    display: none;
+    height: 0;
 }
 
 /* Properties Image Select Boxes Style Start */
