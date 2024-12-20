@@ -2244,6 +2244,7 @@ Tailer Hub Style Start
     line-height: normal;
     padding: 8px 10px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .canvas-editable-options.lms-quiz-create .rureraform-properties-options-table-footer {
     padding-left: 0;
