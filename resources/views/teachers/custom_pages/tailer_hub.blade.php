@@ -2540,11 +2540,19 @@
 
 @push('scripts_bottom')
 <script>
-    $(document).ready(function(){
-        $(".rureraform-element, .lms-quiz-create .rureraform-admin-popup-title a").click(function(){
-            $(".canvas-editable-options").toggleClass("active");
-        });
+$(document).ready(function() {
+    $(".rureraform-element, .lms-quiz-create .rureraform-admin-popup-title a").click(function(e) {
+        e.stopPropagation();
+        $(".canvas-editable-options").toggleClass("active");
     });
+
+    $(document).mouseup(function(e) {
+        var container = $(".canvas-editable-options");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            container.removeClass("active");
+        }
+    });
+});
 </script>
 
 <script type="text/javascript">
