@@ -2494,7 +2494,7 @@
                                     </div>
                                     <div class="rureraform-admin-popup-buttons">
                                         <a class="rureraform-admin-button duplicate-element btn btn-primary" href="#">
-                                        <label>Duplicate</label>
+                                        <label>Update</label>
                                         </a>
                                         <a class="rureraform-admin-button remove-element btn btn-danger" href="#">
                                         <label>Remove</label>
