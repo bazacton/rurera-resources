@@ -4,13 +4,11 @@
 .admin_teacher_role select:focus {
     outline: none;
 }
-.admin_teacher_role .main-sidebar {
-    z-index: 2;
-}
 /* Admin Left Menue Style Start */
 .admin_teacher_role .main-sidebar {
     background-color: #fff;
     border-right: 1px solid #f2f2f2;
+    z-index: 6;
 }
 .admin_teacher_role .main-sidebar .sidebar-brand {
     padding: 0 15px;
@@ -2144,7 +2142,7 @@ Tailer Hub Style Start
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 5;
 }
 .question-content-header h1 {
     font-size: 16px;
