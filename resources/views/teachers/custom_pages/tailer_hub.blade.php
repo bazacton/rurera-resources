@@ -2289,7 +2289,7 @@
           </button>
           <div class="img-holder">
             <figure>
-                <img src="asset/default/img/video.png" alt="">
+                <img src="assets/default/img/video.png" alt="">
                 <figcaption>
                     <div class="upload-box">
                         <input type="file" id="upload-thumbnail">
