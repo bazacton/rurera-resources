@@ -2301,7 +2301,6 @@
                                                 </div>
                                                 <div class="rureraform-properties-content rureraform-properties-image-options-table">
                                                     <div class="rureraform-properties-options-table-header">
-                                                    <div>Label</div>
                                                     <div class="rurera-image-depend rurera-hide">Image</div>
                                                     <div class="rurera-hide">Value</div>
                                                     <div></div>
