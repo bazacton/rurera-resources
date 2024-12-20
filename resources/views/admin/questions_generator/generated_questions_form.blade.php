@@ -169,6 +169,7 @@ $rand_id = rand(999,99999);
 	<span class="checkbox_questions_color">MCQs</span>
 	<span class="true_false_questions_color">True/False</span>
 	<span class="inner_dropdown_questions_color">Inner Dropdown</span>
+	<span class="inner_text_questions_color">Inner Text Fields</span>
 </div>
 <div class="edit-questions-difficulty-data">
 </div>
