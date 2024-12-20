@@ -2461,33 +2461,31 @@
                                             </div>
                                             
                                             <div class="rureraform-properties-item " data-id="template_style">
-                                            <div class="rureraform-properties-label">
-                                                <label>Template Style</label>
-                                            </div>
-                                            <div class="rureraform-properties-tooltip"></div>
-                                            <div class="rureraform-properties-content">
-                                                <div class="rureraform-third">
-                                                <select name="rureraform-template_style" id="rureraform-template_style" class="">
-                                                    <option selected="selected" value="rurera-in-row">Row</option>
-                                                    <option value="rurera-in-cols">Columns</option>
-                                                </select>
+                                                <div class="rureraform-properties-label">
+                                                    <label>Template Style</label>
                                                 </div>
-                                            </div>
+                                                <div class="rureraform-properties-tooltip"></div>
+                                                <div class="rureraform-properties-content">
+                                                    <div class="rureraform-third">
+                                                    <select name="rureraform-template_style" id="rureraform-template_style" class="">
+                                                        <option selected="selected" value="rurera-in-row">Row</option>
+                                                        <option value="rurera-in-cols">Columns</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="rureraform-properties-item " data-id="list_style">
-                                            <div class="rureraform-properties-label">
-                                                <label>Bullet list Style</label>
-                                            </div>
-                                            <div class="rureraform-properties-tooltip"></div>
-                                            <div class="rureraform-properties-content">
-                                                <div class="rureraform-third">
-                                                <select name="rureraform-list_style" id="rureraform-list_style" class="">
-                                                    <option value="">None</option>
-                                                    <option selected="selected" value="alphabet-list-style">English Alphabet</option>
-                                                    <option value="numeric-list-style">Numbers</option>
-                                                </select>
+                                                <div class="rureraform-properties-label">
+                                                    <label>Bullet list Style</label>
                                                 </div>
-                                            </div>
+                                                <div class="rureraform-properties-tooltip"></div>
+                                                <div class="rureraform-properties-content">
+                                                    <div class="bullet-controls">
+                                                        <button type="button">Enabled</button>
+                                                        <button type="button">Enabled</button>
+                                                        <button type="button">Selected</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                             
                                             <input type="hidden" name="rureraform-elements_data" id="rureraform-elements_data" value="W3t9XQ==" placeholder="">
