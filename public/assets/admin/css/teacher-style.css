@@ -2289,6 +2289,9 @@ Tailer Hub Style Start
 .canvas-editable-options.lms-quiz-create .rureraform-admin-popup-inner {
     border-radius: 5px;
 }
+.explanation-box {
+    display: none;
+}
 
 /* Properties Image Select Boxes Style Start */
 .img-select-box {
