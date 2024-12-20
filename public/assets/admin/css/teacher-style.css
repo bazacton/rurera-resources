@@ -2228,11 +2228,13 @@ Tailer Hub Style Start
     width: 450px;
     height: 100%;
     overflow: hidden;
+    display: none;
 }
 .canvas-editable-options.active {
     opacity: 1;
     visibility: visible;
     left: 0;
+    display: block;
 }
 .canvas-editable-options.lms-quiz-create .rureraform-properties-options-table-footer a {
     margin-left: 0;
