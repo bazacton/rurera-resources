@@ -2230,26 +2230,20 @@ Tailer Hub Style Start
 /* Canvas-Editable-Options Style Start */
 .canvas-editable-options-holder {
     padding: 10px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
     position: fixed;
     top: 5px;
     left: -100px;
     height: calc(100% - 15px);
     width: 450px;
-    -webkit-animation: slide 0.5s forwards;
-    -webkit-animation-delay: 2s;
-    animation: slide 0.5s forwards;
-    animation-delay: 2s;
 }
 .canvas-editable-options-holder:has(.canvas-editable-options.active) {
-    @-webkit-keyframes slide {
-        100% { left: 0; }
-    }
-    
-    @keyframes slide {
-        100% { left: 0; }
-    }
+    left: 5px;
 }
-
 .canvas-editable-options {
     background-color: #fff;
     opacity: 0;
