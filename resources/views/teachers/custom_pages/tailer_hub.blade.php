@@ -2461,9 +2461,6 @@
                                             </div>
                                             
                                             <div class="rureraform-properties-item " data-id="template_style">
-                                                <div class="rureraform-properties-label">
-                                                    <label>Template Style</label>
-                                                </div>
                                                 <div class="rureraform-properties-tooltip"></div>
                                                 <div class="rureraform-properties-content">
                                                     <div class="rureraform-third">
