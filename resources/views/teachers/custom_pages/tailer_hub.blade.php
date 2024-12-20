@@ -2451,13 +2451,13 @@
                                                     <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
                                                     </div>
                                                     <div class="rureraform-properties-options-table-footer">
-                                                    <a class="rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small" data-toggle="collapse" href="#explanation" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                                        <i class="fas fa-plus"></i>
-                                                        <label>Add Explanation</label>
-                                                    </a>
-                                                    <div class="explanation-box" id="explanation">
-                                                        <textarea name="explanation"></textarea>
-                                                    </div>
+                                                        <a class="rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small" data-toggle="collapse" href="#explanation" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                            <i class="fas fa-plus"></i>
+                                                            <label>Add Explanation</label>
+                                                        </a>
+                                                        <div class="explanation-box" id="explanation">
+                                                            <textarea name="explanation"></textarea>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
