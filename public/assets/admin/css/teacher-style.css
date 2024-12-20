@@ -2474,6 +2474,7 @@ body:has(.canvas-editable-options.active) .blank-canvas-sidebar{
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 10px;
+    cursor: auto;
 }
 .q-number {
     font-size: 12px;
