@@ -2453,7 +2453,7 @@
                                                     <div class="rureraform-properties-options-table-footer">
                                                     <a class="rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small" href="#" onclick="return rureraform_properties_options_new(null);">
                                                         <i class="fas fa-plus"></i>
-                                                        <label>Add option</label>
+                                                        <label>Add Explanation</label>
                                                     </a>
                                                     </div>
                                                 </div>
