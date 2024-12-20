@@ -2295,6 +2295,9 @@ Tailer Hub Style Start
     min-width: 150px;
     border-radius: 5px;
 }
+.canvas-editable-options.lms-quiz-create .rureraform-admin-popup-inner {
+    border-color: #ddd;
+}
 
 /* Properties Image Select Boxes Style Start */
 .img-select-box {
