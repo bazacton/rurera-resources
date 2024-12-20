@@ -1568,7 +1568,7 @@
             </div>
             <div class="modal-body">
                 <div class="blank-canvas-sidebar">
-                    <h3 class="title">QUESTION <span>(5)</span> <button class="add-btn">+</button></h3>
+                    <h3 class="title">QUESTION <span>(5)</span> <button class="add-btn" data-toggle="modal" data-target="#general-knowledge-modal">+</button></h3>
                     <div id="sortable">
                         <div class="question-card">
                             <a href="#" class="question-card-link">
@@ -2280,6 +2280,59 @@
         </div>
     </div>
 </div>
+<div class="modal fade general-knowledge-modal" id="general-knowledge-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="img-holder">
+            <figure>
+                <img src="asset/default/img/video.png" alt="">
+                <figcaption>
+                    <div class="upload-box">
+                        <input type="file" id="upload-thumbnail">
+                        <label for="upload-thumbnail">Upload thumbnail</label>
+                    </div>
+                    <div class="book-btn">
+                        but
+                    </div>
+                </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="text-holder">
+            <h2>General Knowledge & Methodology</h2>
+            <ul>
+                <li>
+                    <span>Category</span>
+                    <em>Empty</em>
+                </li>
+                <li>
+                    <span>Estimate duration</span>
+                    <em>Empty</em>
+                </li>
+                <li>
+                    <span>Trainer</span>
+                    <em>Empty</em>
+                </li>
+                <li>
+                    <span>Language</span>
+                    <em>Empty</em>
+                </li>
+            </ul>
+            <div class="description-field">
+                <textarea name="description"></textarea>
+                <span class="description-count">0/400</span>
+            </div>
+            <p>Let your learner know a title about the learning path</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 @endsection
