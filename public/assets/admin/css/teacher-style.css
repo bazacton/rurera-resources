@@ -2476,6 +2476,10 @@ body:has(.canvas-editable-options.active) .blank-canvas-sidebar{
     margin-bottom: 10px;
     cursor: auto;
 }
+.question-card .question-card-link {
+    width: 100%;
+    text-decoration: none;
+}
 .question-type .drag-btn {
     background-color: inherit;
     padding: 0;
