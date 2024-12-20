@@ -2293,7 +2293,7 @@
                                                         <input type="radio" name="img-box" id="box2">
                                                         <label for="box2">
                                                             <img src="/assets/default/img/video.png" alt="">
-                                                            <span>List</span>
+                                                            <span>Title</span>
                                                         </label>
                                                     </div>
                                                 </div>
