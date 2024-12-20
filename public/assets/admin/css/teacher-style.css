@@ -2229,6 +2229,7 @@ Tailer Hub Style Start
 
 /* Canvas-Editable-Options Style Start */
 .canvas-editable-options {
+    background-color: #fff;
     position: fixed;
     left: -100px;
     top: 0;
@@ -2242,8 +2243,9 @@ Tailer Hub Style Start
     width: 450px;
     height: calc(100% - 15px);
     display: none;
-    padding: 10px;
     overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 .canvas-editable-options.active {
     opacity: 1;
@@ -2302,14 +2304,11 @@ Tailer Hub Style Start
     padding-top: 0;
 }
 .canvas-editable-options.lms-quiz-create .rureraform-admin-popup-inner {
-    border-radius: 5px;
+    border: 0;
 }
 .canvas-editable-options .rureraform-admin-popup-buttons .duplicate-element {
     min-width: 150px;
     border-radius: 5px;
-}
-.canvas-editable-options.lms-quiz-create .rureraform-admin-popup-inner {
-    border-color: #ddd;
 }
 .canvas-editable-options.lms-quiz-create .rureraform-properties-options-box {
     border-top: 0;
