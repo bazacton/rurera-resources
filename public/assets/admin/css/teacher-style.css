@@ -2428,6 +2428,7 @@ Tailer Hub Style Start
     overflow: hidden;
     overflow-y: auto;
     border-right: 1px solid #ddd;
+    z-index: 1;
 }
 body:has(.canvas-editable-options.active) .blank-canvas-sidebar{
     display: none;
