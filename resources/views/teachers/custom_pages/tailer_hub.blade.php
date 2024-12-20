@@ -2289,14 +2289,14 @@
           </button>
           <div class="img-holder">
             <figure>
-                <img src="assets/default/img/video.png" alt="">
+                <img src="/assets/default/img/video.png" alt="">
                 <figcaption>
                     <div class="upload-box">
                         <input type="file" id="upload-thumbnail">
                         <label for="upload-thumbnail">Upload thumbnail</label>
                     </div>
                     <div class="book-btn">
-                        <button type="button"><img src="asset/default/svgs/book-saved.svg" alt=""></button>
+                        <button type="button"><img src="/assets/default/svgs/book-saved.svg" alt=""></button>
                     </div>
                 </figcaption>
             </figure>
