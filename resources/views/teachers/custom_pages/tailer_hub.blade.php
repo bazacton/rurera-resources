@@ -2250,7 +2250,7 @@
                                         <i class="fas fa-times"></i>
                                         </a>
                                         <h3>
-                                        <i class="fas fa-cog element-properties-label"></i> Multi Properties
+                                        <i class="fas fa-cog element-properties-label"></i> Multiple Choice 1
                                         </h3>
                                     </div>
                                     <div class="rureraform-admin-popup-content">
