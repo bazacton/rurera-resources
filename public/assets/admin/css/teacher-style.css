@@ -2286,6 +2286,9 @@ Tailer Hub Style Start
     border-top: 0;
     padding-top: 0;
 }
+.canvas-editable-options.lms-quiz-create .rureraform-admin-popup-inner {
+    border-radius: 5px;
+}
 /* Canvas-Editable-Options Style End */
 
 /* Elements-Tooltip Style Start */
