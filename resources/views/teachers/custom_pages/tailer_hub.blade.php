@@ -2544,7 +2544,7 @@ $(document).ready(function() {
 <script type="text/javascript">
 
 $(document).ready(function () {
-  const $scrollableDiv = $(".blank-canvas-sidebar, .canvas-editable-options .lms-element-properties");
+  const $scrollableDiv = $(".blank-canvas-sidebar, .canvas-editable-options");
 
   // Initialize NiceScroll with auto-hide enabled
   $scrollableDiv.niceScroll({
