@@ -2243,6 +2243,7 @@ Tailer Hub Style Start
     height: calc(100% - 15px);
     display: none;
     padding: 10px;
+    overflow: hidden;
 }
 .canvas-editable-options.active {
     opacity: 1;
