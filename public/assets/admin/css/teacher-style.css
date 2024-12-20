@@ -2215,7 +2215,6 @@ Tailer Hub Style Start
 
 /* Canvas-Editable-Options Style Start */
 .canvas-editable-options {
-    background-color: #fff;
     position: fixed;
     left: -100px;
     top: 0;
@@ -2230,7 +2229,7 @@ Tailer Hub Style Start
     height: 100%;
     overflow: hidden;
     display: none;
-    padding: 15px;
+    padding: 10px;
 }
 .canvas-editable-options.active {
     opacity: 1;
