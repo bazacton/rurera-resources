@@ -2532,30 +2532,38 @@
 
 <script type="text/javascript">
 
-
 $(document).ready(function () {
   const $scrollableDiv = $(".blank-canvas-sidebar, .canvas-editable-options");
 
-  // Initialize NiceScroll (hidden by default)
+  // Initialize NiceScroll with auto-hide enabled
   $scrollableDiv.niceScroll({
     cursorcolor: "red",
     cursorwidth: "8px",
-    autohidemode: true // Ensure it auto-hides
+    autohidemode: true // Auto-hide enabled initially
   });
 
-  // Show NiceScroll on mouse enter
+  // Show NiceScroll and disable auto-hide on mouse enter
   $scrollableDiv.on("mouseenter", function () {
-    $scrollableDiv.getNiceScroll().resize();
-    $scrollableDiv.getNiceScroll()[0].show();
+    $scrollableDiv.getNiceScroll().forEach(scroll => {
+      scroll.opt.autohidemode = false; // Disable auto-hide
+      scroll.show(); // Make scrollbars visible
+    });
+  });
+
+  // Re-enable auto-hide on mouse leave
+  $scrollableDiv.on("mouseleave", function () {
+    $scrollableDiv.getNiceScroll().forEach(scroll => {
+      scroll.opt.autohidemode = true; // Re-enable auto-hide
+      scroll.hide(); // Hide scrollbars after mouse leaves
+    });
   });
 
   // Reinitialize NiceScroll when the modal is shown
   $(".blank-canvas-modal").on("shown.bs.modal", function () {
     $scrollableDiv.getNiceScroll().resize();
   });
-
-  
 });
+
 
 
 </script>
