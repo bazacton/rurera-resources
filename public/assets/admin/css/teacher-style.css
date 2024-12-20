@@ -2250,14 +2250,6 @@ Tailer Hub Style Start
     left: 0;
     display: block;
 }
-.canvas-editable-options.lms-quiz-create .rureraform-admin-popup,
-.canvas-editable-options.lms-quiz-create .rureraform-admin-popup-inner {
-    height: 100%;
-}
-.canvas-editable-options.lms-quiz-create .lms-element-properties {
-    overflow: hidden;
-    overflow-y: auto;
-}
 .canvas-editable-options.lms-quiz-create .rureraform-properties-options-table-footer a {
     margin-left: 0;
     border: 1px solid #ddd;
