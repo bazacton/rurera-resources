@@ -2277,7 +2277,6 @@ function _rureraform_properties_prepare(_object) {
         jQuery(".rureraform-properties-options-item").disableSelection();
     }
 	if (properties.hasOwnProperty("dropdown1_options")) {
-		console.log('innerdropdown-sortable');
         jQuery(".rureraform-properties-options-container").sortable({
             items: ".rureraform-properties-options-item",
             forcePlaceholderSize: true,
@@ -2288,7 +2287,6 @@ function _rureraform_properties_prepare(_object) {
         jQuery(".rureraform-properties-options-item").disableSelection();
     }
 	if (properties.hasOwnProperty("dropdown2_options")) {
-		console.log('innerdropdown-sortable');
         jQuery(".rureraform-properties-options-container").sortable({
             items: ".rureraform-properties-options-item",
             forcePlaceholderSize: true,
@@ -2299,7 +2297,6 @@ function _rureraform_properties_prepare(_object) {
         jQuery(".rureraform-properties-options-item").disableSelection();
     }
 	if (properties.hasOwnProperty("dropdown3_options")) {
-		console.log('innerdropdown-sortable');
         jQuery(".rureraform-properties-options-container").sortable({
             items: ".rureraform-properties-options-item",
             forcePlaceholderSize: true,
@@ -2310,7 +2307,6 @@ function _rureraform_properties_prepare(_object) {
         jQuery(".rureraform-properties-options-item").disableSelection();
     }
 	if (properties.hasOwnProperty("dropdown4_options")) {
-		console.log('innerdropdown-sortable');
         jQuery(".rureraform-properties-options-container").sortable({
             items: ".rureraform-properties-options-item",
             forcePlaceholderSize: true,
@@ -2321,7 +2317,6 @@ function _rureraform_properties_prepare(_object) {
         jQuery(".rureraform-properties-options-item").disableSelection();
     }
 	if (properties.hasOwnProperty("dropdown5_options")) {
-		console.log('innerdropdown-sortable');
         jQuery(".rureraform-properties-options-container").sortable({
             items: ".rureraform-properties-options-item",
             forcePlaceholderSize: true,
