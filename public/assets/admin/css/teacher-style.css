@@ -2469,7 +2469,7 @@ body:has(.canvas-editable-options.active) .blank-canvas-sidebar{
 .question-card {
     display: flex;
     align-items: center;
-    background-color: #fafafa;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 10px;
