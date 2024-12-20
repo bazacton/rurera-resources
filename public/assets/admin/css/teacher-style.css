@@ -2241,7 +2241,6 @@ Tailer Hub Style Start
     visibility: hidden;
     width: 450px;
     height: calc(100% - 15px);
-    overflow: hidden;
     display: none;
     padding: 10px;
 }
