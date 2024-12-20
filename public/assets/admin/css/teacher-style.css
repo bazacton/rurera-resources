@@ -2228,6 +2228,9 @@ Tailer Hub Style Start
 /* Section-Controls Style End */
 
 /* Canvas-Editable-Options Style Start */
+.canvas-editable-options-holder {
+    padding: 10px;
+}
 .canvas-editable-options {
     background-color: #fff;
     position: fixed;
