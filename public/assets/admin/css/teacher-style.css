@@ -2235,7 +2235,7 @@ Tailer Hub Style Start
     background-color: #fff;
     position: fixed;
     left: -100px;
-    top: 0;
+    top: 5px;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
@@ -2253,7 +2253,7 @@ Tailer Hub Style Start
 .canvas-editable-options.active {
     opacity: 1;
     visibility: visible;
-    left: 0;
+    left: 5px;
     display: block;
 }
 .canvas-editable-options.lms-quiz-create .rureraform-properties-options-table-footer a {
