@@ -1727,7 +1727,7 @@ Tailer Hub Style Start
     background-color: #f7f7f7;
 }
 .admin_teacher_role:has(.question-content-header) .main-content {
-    padding-top: 80px;
+    padding-top: 100px;
 }
 .admin_teacher_role .section .section-header {
     background-color: inherit;
