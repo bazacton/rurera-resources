@@ -109,6 +109,10 @@
 								<input type="radio" name="question_type" data-condition_key="question_type" class="conditional-parent" id="inner_dropdown" value="inner_dropdown">
 								<label for="inner_dropdown">Inner Dropdown</label>
 							</div>
+							<div class="row-field">
+								<input type="radio" name="question_type" data-condition_key="question_type" class="conditional-parent" id="inner_input" value="inner_input">
+								<label for="inner_input">Inner Input</label>
+							</div>
 							
 							<div class="row-field">
 								<input type="radio" name="question_type" data-condition_key="question_type" class="conditional-parent" id="type_tf" value="true-false">
