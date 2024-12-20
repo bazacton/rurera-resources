@@ -2276,6 +2276,17 @@ function _rureraform_properties_prepare(_object) {
         });
         jQuery(".rureraform-properties-options-item").disableSelection();
     }
+	if (properties.hasOwnProperty("inner_dropdown")) {
+		console.log('innerdropdown-sortable');
+        jQuery(".rureraform-properties-options-container").sortable({
+            items: ".rureraform-properties-options-item",
+            forcePlaceholderSize: true,
+            dropOnEmpty: true,
+            placeholder: "rureraform-properties-options-item-placeholder",
+            handle: ".rureraform-properties-options-item-handler"
+        });
+        jQuery(".rureraform-properties-options-item").disableSelection();
+    }
 	if (properties.hasOwnProperty("sortable_options")) {
         jQuery(".rureraform-properties-options-box").resizable({
             grid: [5, 5],
