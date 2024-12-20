@@ -2492,9 +2492,6 @@
                                         <a class="rureraform-admin-button duplicate-element btn btn-primary" href="#">
                                         <label>Update</label>
                                         </a>
-                                        <a class="rureraform-admin-button remove-element btn btn-danger" href="#">
-                                        <label>Remove</label>
-                                        </a>
                                         <a class="rureraform-admin-button generate-question-code rurera-hide" href="#">
                                         <label>Apply Changes</label>
                                         </a>
