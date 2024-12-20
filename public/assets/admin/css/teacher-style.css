@@ -4,6 +4,9 @@
 .admin_teacher_role select:focus {
     outline: none;
 }
+.admin_teacher_role .main-sidebar {
+    z-index: 2;
+}
 /* Admin Left Menue Style Start */
 .admin_teacher_role .main-sidebar {
     background-color: #fff;
@@ -1723,6 +1726,9 @@ Tailer Hub Style Start
     padding-top: 35px;
     background-color: #f7f7f7;
 }
+.admin_teacher_role:has(.question-content-header) .main-content {
+    padding-top: 80px;
+}
 .admin_teacher_role .section .section-header {
     background-color: inherit;
 }
@@ -2131,6 +2137,10 @@ Tailer Hub Style Start
     justify-content: space-between;
     padding: 10px 15px 10px 280px;
     border-bottom: 1px solid #dddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 .question-content-header h1 {
     font-size: 16px;
