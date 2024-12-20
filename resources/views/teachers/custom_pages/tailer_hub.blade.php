@@ -2279,7 +2279,8 @@
             </div>
         </div>
     </div>
-    <div class="modal fade general-knowledge-modal" id="general-knowledge-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+</div>
+<div class="modal fade general-knowledge-modal" id="general-knowledge-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -2332,7 +2333,6 @@
       </div>
     </div>
   </div>
-</div>
 </section>
 
 @endsection
