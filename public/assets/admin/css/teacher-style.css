@@ -2226,7 +2226,7 @@ Tailer Hub Style Start
     opacity: 0;
     visibility: hidden;
     width: 450px;
-    height: 100%;
+    height: calc(100% - 15px);
     overflow: hidden;
     display: none;
     padding: 10px;
