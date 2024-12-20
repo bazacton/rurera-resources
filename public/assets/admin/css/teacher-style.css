@@ -2257,6 +2257,7 @@ Tailer Hub Style Start
 }
 .canvas-editable-options.lms-quiz-create .rureraform-admin-popup-inner {
     overflow: hidden;
+    overflow-y: auto;
 }
 .canvas-editable-options.lms-quiz-create .rureraform-properties-options-table-footer a {
     margin-left: 0;
