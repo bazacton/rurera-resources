@@ -2482,7 +2482,7 @@
                                                     <div class="bullet-controls">
                                                         <button type="button">Enabled</button>
                                                         <button type="button">Enabled</button>
-                                                        <button type="button">Selected</button>
+                                                        <button type="button" class="active">Selected</button>
                                                     </div>
                                                 </div>
                                             </div>
