@@ -2010,10 +2010,6 @@
                                                 <div class="rureraform-properties-label">
                                                     <label>Label</label>
                                                 </div>
-                                                <div class="rureraform-properties-tooltip">
-                                                    <i class="fas fa-question-circle rureraform-tooltip-anchor tooltipstered"></i>
-                                                    <div class="rureraform-tooltip-content">This is the label of the field.</div>
-                                                </div>
                                                 <div class="rureraform-properties-content">
                                                     <input type="text" name="rureraform-label" id="rureraform-label" value="Mark One answer" placeholder="">
                                                 </div>
