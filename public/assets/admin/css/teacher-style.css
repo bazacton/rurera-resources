@@ -2291,11 +2291,9 @@ Tailer Hub Style Start
 .canvas-editable-options.lms-quiz-create .rureraform-admin-popup-inner {
     border-radius: 5px;
 }
-.explanation-box {
-    display: none;
-}
-.explanation-box.show {
-    display: block;
+.canvas-editable-options .rureraform-admin-popup-buttons .duplicate-element {
+    min-width: 150px;
+    border-radius: 5px;
 }
 
 /* Properties Image Select Boxes Style Start */
