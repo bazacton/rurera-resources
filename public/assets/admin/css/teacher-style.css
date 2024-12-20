@@ -2482,6 +2482,9 @@ body:has(.canvas-editable-options.active) .blank-canvas-sidebar{
     opacity: 0.4;
     cursor: move;
 }
+.question-type .drag-btn img {
+    margin-right: 0;
+}
 .q-number {
     font-size: 12px;
     font-weight: bold;
