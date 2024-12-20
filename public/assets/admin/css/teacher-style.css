@@ -2238,9 +2238,11 @@ Tailer Hub Style Start
     left: -100px;
     height: calc(100% - 15px);
     width: 450px;
+    pointer-events: none;
 }
 .canvas-editable-options-holder:has(.canvas-editable-options.active) {
     left: 5px;
+    pointer-events: visible;
 }
 .canvas-editable-options {
     background-color: #fff;
