@@ -2311,6 +2311,9 @@ Tailer Hub Style Start
 .canvas-editable-options.lms-quiz-create .rureraform-admin-popup-inner {
     border-color: #ddd;
 }
+.canvas-editable-options.lms-quiz-create .rureraform-properties-options-box {
+    border-top: 0;
+}
 
 /* Properties Image Select Boxes Style Start */
 .img-select-box {
