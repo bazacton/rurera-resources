@@ -2278,6 +2278,7 @@ Tailer Hub Style Start
 .bullet-controls button.active {
     border-color: var(--blue);
 }
+
 .canvas-editable-options.lms-quiz-create .rureraform-admin-popup-buttons {
     background-color: inherit;
     border-top: 0;
