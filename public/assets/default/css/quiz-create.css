@@ -1537,7 +1537,8 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .nav .nav-link.inner_text_questions {
     margin-left: 30px;
     margin-right: -30px;
-    border-bottom-color: #ddd;
+    border-bottom-color: #6c757d;
+    color: #6c757d !important;
 }
 .edit-questions-tabs .nav .nav-link.checkbox_questions,
 .edit-questions-tabs .nav .nav-link.active.checkbox_questions {
