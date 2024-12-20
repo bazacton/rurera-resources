@@ -610,6 +610,12 @@
 						</li>
 					@endcan()
 					
+					@can('topics_sub_parts_word_count')
+						<li class="{{ (request()->is(getAdminPanelUrl('/reports/topics_sub_parts_word_count', false))) ? 'active' : '' }}">
+							<a class="nav-link active" href="{{ getAdminPanelUrl() }}/reports/topics_sub_parts_word_count">Topics Parts Words Counts</a>
+						</li>
+					@endcan()
+					
 				</ul>
 			</li>
 			@endcan()
