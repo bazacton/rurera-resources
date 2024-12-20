@@ -2280,6 +2280,24 @@
                                                     </label>
                                                 </div>
                                             </div>
+                                            <div class="rureraform-properties-item">
+                                                <div class="properties-select-boxes">
+                                                    <div class="img-select-box">
+                                                        <input type="radio" name="img-box" id="box1">
+                                                        <label for="box1">
+                                                            <img src="/assets/default/img/video.png" alt="">
+                                                            <span>List</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="img-select-box">
+                                                        <input type="radio" name="img-box" id="box2">
+                                                        <label for="box2">
+                                                            <img src="/assets/default/img/video.png" alt="">
+                                                            <span>List</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="rureraform-properties-item rurera-image-depend rurera-hide" data-id="image_position">
                                                 <div class="rureraform-properties-label">
                                                     <label>Image Position</label>
