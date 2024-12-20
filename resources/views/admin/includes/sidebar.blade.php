@@ -604,6 +604,7 @@
 							<a class="nav-link active" href="{{ getAdminPanelUrl() }}/reports/topics_questions">Topics Questions</a>
 						</li>
 					@endcan()
+					
 					@can('admin_reports_topics_parts_questions')
 						<li class="{{ (request()->is(getAdminPanelUrl('/reports/topics_sub_parts_questions', false))) ? 'active' : '' }}">
 							<a class="nav-link active" href="{{ getAdminPanelUrl() }}/reports/topics_sub_parts_questions">Topics Parts Questions</a>
