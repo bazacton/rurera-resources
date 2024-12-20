@@ -2473,7 +2473,7 @@
                                                             <i class="fas fa-plus"></i>
                                                             <label>Add Explanation..</label>
                                                         </a>
-                                                        <div class="explanation-box mt-15" id="explanation">
+                                                        <div class="explanation-box collapse mt-15" id="explanation">
                                                             <textarea name="explanation" class="form-control"></textarea>
                                                         </div>
                                                     </div>
