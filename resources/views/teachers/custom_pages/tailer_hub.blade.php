@@ -2296,7 +2296,7 @@
                         <label for="upload-thumbnail">Upload thumbnail</label>
                     </div>
                     <div class="book-btn">
-                        but
+                        <button type="button"><img src="asset/default/svgs/book-saved.svg" alt=""></button>
                     </div>
                 </figcaption>
             </figure>
