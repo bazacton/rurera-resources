@@ -1573,7 +1573,7 @@
                         <div class="question-card">
                             <a href="#" class="question-card-link">
                                 <div class="question-content">
-                                    <div class="question-text"><div class="q-number">1</div> What does UI stand fo...</div>
+                                    <div class="question-text"><div class="q-number">1</div> What does UI <br > stand fo...</div>
                                     <div class="question-type">
                                         <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span> 
                                         <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
