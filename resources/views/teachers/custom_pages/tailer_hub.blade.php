@@ -2539,7 +2539,7 @@
 
 
 $(document).ready(function () {
-  const $scrollableDiv = $(".blank-canvas-sidebar");
+  const $scrollableDiv = $(".blank-canvas-sidebar, .canvas-editable-options");
 
   // Initialize NiceScroll (hidden by default)
   $scrollableDiv.niceScroll({
