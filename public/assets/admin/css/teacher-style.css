@@ -2230,17 +2230,22 @@ Tailer Hub Style Start
 /* Canvas-Editable-Options Style Start */
 .canvas-editable-options-holder {
     padding: 10px;
-}
-.canvas-editable-options {
-    background-color: #fff;
-    position: fixed;
-    left: -100px;
-    top: 5px;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    position: relative;
+    left: -100px;
+}
+.canvas-editable-options-holder:has(.canvas-editable-options.active) {
+    left: 0;
+}
+.canvas-editable-options {
+    background-color: #fff;
+    position: fixed;
+    left: 5px;
+    top: 5px;
     opacity: 0;
     visibility: hidden;
     width: 450px;
@@ -2253,7 +2258,6 @@ Tailer Hub Style Start
 .canvas-editable-options.active {
     opacity: 1;
     visibility: visible;
-    left: 5px;
     display: block;
 }
 .canvas-editable-options.lms-quiz-create .rureraform-properties-options-table-footer a {
