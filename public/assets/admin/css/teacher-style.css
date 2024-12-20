@@ -2326,6 +2326,7 @@ Tailer Hub Style Start
     background-color: #f4f5f7;
     padding: 15px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .img-select-box label span {
     font-weight: 600;
@@ -2334,6 +2335,9 @@ Tailer Hub Style Start
 .img-select-box input[type="radio"]:checked ~ label {
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.img-select-box input[type="radio"]:checked ~ label span {
+    color: var(--blue);
 }
 /* Properties Image Select Boxes Style End */
 
