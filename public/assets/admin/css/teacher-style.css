@@ -2252,6 +2252,27 @@ Tailer Hub Style Start
 .canvas-editable-options.lms-quiz-create .rureraform-properties-image-options-table .rureraform-properties-options-table>div {
     width: 70%;
 }
+.bullet-controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bullet-controls button {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 8px 20px;
+    margin-left: -1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--blue);
+}
+.bullet-controls button:first-child {
+    border-radius: 5px 0 0 5px;
+}
+.bullet-controls button:last-child {
+    border-radius: 0 5px 5px 0;
+}
 /* Canvas-Editable-Options Style End */
 
 /* Elements-Tooltip Style Start */
