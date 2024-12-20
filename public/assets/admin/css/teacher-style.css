@@ -1726,6 +1726,10 @@ Tailer Hub Style Start
     padding-top: 35px;
     background-color: #f7f7f7;
 }
+.admin_teacher_role .question-layout.row {
+    margin-left: 0;
+    margin-right: 0;
+}
 .admin_teacher_role:has(.question-content-header) .main-content {
     padding-top: 100px;
 }
