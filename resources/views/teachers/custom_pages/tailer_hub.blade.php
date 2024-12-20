@@ -2474,7 +2474,7 @@
                                                             <label>Add Explanation..</label>
                                                         </a>
                                                         <div class="explanation-box mt-15" id="explanation">
-                                                            <textarea name="explanation"></textarea>
+                                                            <textarea name="explanation" class="form-control"></textarea>
                                                         </div>
                                                     </div>
                                                 </div>
