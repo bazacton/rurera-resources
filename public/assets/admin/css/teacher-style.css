@@ -2510,6 +2510,7 @@ body:has(.canvas-editable-options.active) .blank-canvas-sidebar{
     display: flex;
     align-items: center;
     margin: 0 0 10px;
+    line-height: normal;
 }
 .question-type {
     font-size: 12px;
