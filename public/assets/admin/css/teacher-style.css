@@ -2289,6 +2289,42 @@ Tailer Hub Style Start
 .canvas-editable-options.lms-quiz-create .rureraform-admin-popup-inner {
     border-radius: 5px;
 }
+
+/* Properties Image Select Boxes Style Start */
+.img-select-box {
+    position: relative;
+    max-width: 48.666%;
+    flex: 0 0 48.666%;
+}
+.img-select-box input[type="radio"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.img-select-box img {
+    max-width: 100%;
+    margin: 0 0 15px;
+}
+.properties-select-boxes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.img-select-box label {
+    margin: 0;
+    text-align: center;
+    background-color: #f4f5f7;
+    padding: 15px;
+    border-radius: 5px;
+}
+.img-select-box label span {
+    font-weight: 600;
+    color: #333;
+}
+/* Properties Image Select Boxes Style End */
+
 /* Canvas-Editable-Options Style End */
 
 /* Elements-Tooltip Style Start */
