@@ -2307,19 +2307,19 @@
             <h2>General Knowledge & Methodology</h2>
             <ul>
                 <li>
-                    <span>Category</span>
+                    <span><img src="/assets/default/svgs/grid.svg" alt=""> Category</span>
                     <em>Empty</em>
                 </li>
                 <li>
-                    <span>Estimate duration</span>
+                    <span><img src="/assets/default/svgs/clock.svg" alt=""> Estimate duration</span>
                     <em>Empty</em>
                 </li>
                 <li>
-                    <span>Trainer</span>
+                    <span><img src="/assets/default/svgs/trainer.svg" alt=""> Trainer</span>
                     <em>Empty</em>
                 </li>
                 <li>
-                    <span>Language</span>
+                    <span><img src="/assets/default/svgs/language.svg" alt=""> Language</span>
                     <em>Empty</em>
                 </li>
             </ul>
