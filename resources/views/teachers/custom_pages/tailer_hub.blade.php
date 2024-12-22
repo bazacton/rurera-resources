@@ -2324,7 +2324,7 @@
                 </li>
             </ul>
             <div class="description-field">
-                <textarea name="description"></textarea>
+                <textarea name="description" placeholder="Type description here..."></textarea>
                 <span class="description-count">0/400</span>
             </div>
             <p>Let your learner know a title about the learning path</p>
