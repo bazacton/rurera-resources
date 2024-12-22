@@ -2293,7 +2293,7 @@
                 <figcaption>
                     <div class="upload-box">
                         <input type="file" id="upload-thumbnail">
-                        <label for="upload-thumbnail">Upload thumbnail</label>
+                        <label for="upload-thumbnail"><img src="/assets/default/svgs/file-image.svg" alt=""> Upload thumbnail</label>
                     </div>
                     <div class="book-btn">
                         <button type="button"><img src="/assets/default/svgs/book-saved.svg" alt=""></button>
