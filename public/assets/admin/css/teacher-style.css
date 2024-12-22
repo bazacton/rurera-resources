@@ -2648,12 +2648,34 @@ body:has(.canvas-editable-options.active) .blank-canvas-sidebar{
     align-items: center;
     justify-content: space-between;
     line-height: normal;
+    font-weight: 600;
 }
 .general-knowledge-modal .text-holder > ul li img {
     max-width: 18px;
     max-height: 18px;
     margin-right: 5px;
     filter: invert(64%) sepia(0%) saturate(1899%) hue-rotate(315deg) brightness(84%) contrast(89%);
+}
+.general-knowledge-modal .text-holder > ul li em {
+    font-style: normal;
+}
+.description-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+.description-field textarea {
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    resize: none;
+    outline: none;
+    padding: 0 45px 0 0;
+    color: #6c757d;
+}
+.description-field .description-count {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
 }
 /* General Knowledge Modal Style End */
 
