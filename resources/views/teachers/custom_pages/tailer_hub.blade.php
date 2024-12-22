@@ -1900,21 +1900,21 @@
                                     <div class="rureraform-col rureraform-col-12">
                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                             <h4>Read the text, then answer the question.</h4>
-                                            <div class="elements-tooltip">
-                                                <div class="elements-controls">
-                                                    <button type="button"><img src="/assets/default/svgs/speech-bubble.svg" alt=""></button>
-                                                    <button type="button"><img src="/assets/default/svgs/lock-open.svg" alt=""></button>
-                                                    <button type="button"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
-                                                    <button type="button"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
-                                                    <div class="edit-options-controls">
-                                                        <div class="dropdown">
-                                                            <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                <i class="fas fa-ellipsis-v"></i>
-                                                            </button>
-                                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Rewrite</a>
-                                                                <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> More fun</a>
-                                                            </div>
+                                        </div>
+                                        <div class="elements-tooltip">
+                                            <div class="elements-controls">
+                                                <button type="button"><img src="/assets/default/svgs/speech-bubble.svg" alt=""></button>
+                                                <button type="button"><img src="/assets/default/svgs/lock-open.svg" alt=""></button>
+                                                <button type="button"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
+                                                <button type="button"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
+                                                <div class="edit-options-controls">
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Rewrite</a>
+                                                            <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> More fun</a>
                                                         </div>
                                                     </div>
                                                 </div>
