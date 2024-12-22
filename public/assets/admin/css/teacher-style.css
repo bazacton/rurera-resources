@@ -2641,6 +2641,7 @@ body:has(.canvas-editable-options.active) .blank-canvas-sidebar{
     display: flex;
     flex-direction: column;
     gap: 15px 0;
+    margin-bottom: 25px;
 }
 .general-knowledge-modal .text-holder > ul li {
     display: flex;
@@ -2652,6 +2653,7 @@ body:has(.canvas-editable-options.active) .blank-canvas-sidebar{
     max-width: 18px;
     max-height: 18px;
     margin-right: 5px;
+    filter: invert(64%) sepia(0%) saturate(1899%) hue-rotate(315deg) brightness(84%) contrast(89%);
 }
 /* General Knowledge Modal Style End */
 
