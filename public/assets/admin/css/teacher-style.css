@@ -2400,7 +2400,7 @@ Tailer Hub Style Start
     margin-bottom: 15px;
     z-index: 2;
 }
-.admin_teacher_role .question-layout .rureraform-element:hover .elements-tooltip {
+.admin_teacher_role .question-layout .rureraform-col:hover .elements-tooltip {
     opacity: 1;
     visibility: visible;
     margin-bottom: 0;
