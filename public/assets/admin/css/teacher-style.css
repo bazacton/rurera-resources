@@ -2378,7 +2378,7 @@ Tailer Hub Style Start
 .elements-controls .edit-options-controls button {
     background-color: #f2f2f2;
 }
-.admin_teacher_role .question-layout .rureraform-element {
+.admin_teacher_role .question-layout .rureraform-col {
     position: relative;
 }
 .elements-tooltip {
