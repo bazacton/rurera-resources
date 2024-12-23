@@ -51,7 +51,7 @@
                     </div>
                     <div class="overview-status">
                         <div class="chart-holder">
-                            <canvas id="statusChart" style="height: 100px;"></canvas>
+                            <canvas id="statusChart" width="250" height="125"></canvas>
                         </div>
                         <div class="status-content">
                             <h3>Sucsess</h3>
@@ -1281,6 +1281,5 @@
                 }
             }
         });
-        document.getElementById('statusChart').style.height = '100px';
     </script>
 @endpush
