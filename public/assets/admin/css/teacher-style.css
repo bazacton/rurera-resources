@@ -2707,6 +2707,8 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 .general-knowledge-modal .dropdown-menu {
     width: 350px;
     padding: 0;
+    transform: none !important;
+    top: 100% !important;
 }
 .selected-category {
     border-bottom: 1px solid #ddd;
