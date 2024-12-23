@@ -51,7 +51,7 @@
                     </div>
                     <div class="overview-status">
                         <div class="chart-holder">
-                            <canvas id="statusChart"></canvas>
+                            <canvas id="statusChart" style="height: 100px;"></canvas>
                         </div>
                         <div class="status-content">
                             <h3>Sucsess</h3>
@@ -1258,7 +1258,7 @@
                 labels: [''],
                 datasets: [{
                     label: 'Value',
-                    data: [10],
+                    data: [28],
                     backgroundColor: 'lightgreen',
                     borderWidth: 1
                 }]
