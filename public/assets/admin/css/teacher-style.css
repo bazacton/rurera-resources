@@ -2739,6 +2739,10 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     outline: none;
     margin: 0 0 5px;
 }
+.categories a.active {
+    background-color: #000;
+    color: #fff;
+}
 /* General Knowledge Modal Style End */
 
 /*************************************
