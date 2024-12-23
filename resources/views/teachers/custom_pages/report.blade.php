@@ -1324,10 +1324,10 @@
                 },
                 plugins: {
                     legend: {
-                        display: false // Hide the legend
+                        display: true // Hide the legend
                     },
                     tooltip: {
-                        enabled: false // Disable tooltips
+                        enabled: true // Disable tooltips
                     }
                 }
             }
