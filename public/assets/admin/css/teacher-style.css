@@ -3636,6 +3636,7 @@ Overview Questions Style Start
 }
 .overview-status .status-content {
     width: calc(100% - 300px);
+    padding-left: 30px;
 }
 /*************************************
 Overview Questions Style End
