@@ -1255,7 +1255,7 @@
         const myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['Category'],
+                labels: [''],
                 datasets: [{
                     label: 'Value',
                     data: [28],
