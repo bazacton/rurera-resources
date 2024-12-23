@@ -793,6 +793,10 @@ New Quiz Page Style Start
 .circle-orange.percent_more:after {
     background: #f6b700;
 }
+.circle-green .round_per,
+.circle-green.percent_more:after {
+    background: green;
+}
 .circle-yellow .round_per,
 .circle-yellow.percent_more:after {
     background: #f3f374;
