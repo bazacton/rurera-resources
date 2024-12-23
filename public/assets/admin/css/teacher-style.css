@@ -2428,7 +2428,7 @@ Tailer Hub Style Start
     overflow-y: auto;
     border-right: 1px solid #ddd;
 }
-body:has(.canvas-editable-options.active) .blank-canvas-sidebar{
+body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     display: none;
 }
 .admin_teacher_role .nicescroll-cursors {
