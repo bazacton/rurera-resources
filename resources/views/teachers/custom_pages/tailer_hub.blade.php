@@ -314,7 +314,7 @@
                                             <tbody>
                                                 <tr>
                                                     <td>a shadow</td>
-                                                    <td>1 respondent</td>
+                                                    <td class="respondents">1 respondent</td>
                                                     <td>20%</td>
                                                     <td>
                                                         <div class="progress">
@@ -324,7 +324,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td>a text</td>
-                                                    <td>0 respondents</td>
+                                                    <td class="respondents">0 respondents</td>
                                                     <td>0%</td>
                                                     <td>
                                                         <div class="progress">
@@ -334,7 +334,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td>a pop-up</td>
-                                                    <td>1 respondent</td>
+                                                    <td class="respondents">1 respondent</td>
                                                     <td>20%</td>
                                                     <td>
                                                         <div class="progress">
@@ -344,7 +344,7 @@
                                                 </tr>
                                                 <tr class="success-status">
                                                     <td><strong>An action by the user that creates an effect</strong></td>
-                                                    <td>3 respondents</td>
+                                                    <td class="respondents">3 respondents</td>
                                                     <td>60%</td>
                                                     <td>
                                                         <div class="progress">
