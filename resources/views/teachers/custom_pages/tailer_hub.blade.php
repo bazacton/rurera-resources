@@ -2307,7 +2307,8 @@
             <h2 class="editable" contenteditable="true">General Knowledge & Methodology</h2>
             <ul>
                 <li>
-                    <span><img src="/assets/default/svgs/grid.svg" alt=""> Category</span>
+                    <img src="/assets/default/svgs/grid.svg" alt="">
+                    <input type="text" placeholder="Category">
                     <em>Empty</em>
                 </li>
                 <li>
@@ -2386,7 +2387,7 @@ $(document).ready(function () {
   $(".blank-canvas-modal").on("shown.bs.modal", function () {
     $scrollableDiv.getNiceScroll().resize();
   });
-  
+
 });
 </script>
 <script>
