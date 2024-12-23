@@ -3632,10 +3632,10 @@ Overview Questions Style Start
     flex-wrap: wrap;
 }
 .overview-status .chart-holder {
-    width: 250px;
+    width: 350px;
 }
 .overview-status .status-content {
-    width: calc(100% - 300px);
+    width: calc(100% - 600px);
     padding-left: 30px;
 }
 /*************************************
