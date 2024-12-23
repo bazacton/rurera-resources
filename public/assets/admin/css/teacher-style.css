@@ -3759,13 +3759,20 @@ Overview Questions Style Start
     display: inline-flex;
     flex-direction: column;
     position: relative;
+    padding: 0 0 0 40px;
 }
 .quiz-stats ul li:before {
     content: "";
-    display: inline-block;
     height: calc(100% - 20px);
     vertical-align: middle;
     border-left: 2px solid #ddd;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.quiz-stats ul li:first-child {
+    padding-left: 0;
 }
 .quiz-stats ul li:first-child:before {
     display: none;
