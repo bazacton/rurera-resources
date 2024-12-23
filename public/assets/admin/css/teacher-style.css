@@ -2653,11 +2653,18 @@ body:has(.canvas-editable-options.active) .blank-canvas-sidebar{
     justify-content: space-between;
     line-height: normal;
     font-weight: 600;
+    position: relative;
+}
+.general-knowledge-modal input[type="text"] {
+    padding: 0 0 0 20px;
+    border: 0;
+    outline: none;
 }
 .general-knowledge-modal .text-holder > ul li img {
     max-width: 18px;
     max-height: 18px;
     margin-right: 5px;
+    position: absolute;
     filter: invert(64%) sepia(0%) saturate(1899%) hue-rotate(315deg) brightness(84%) contrast(89%);
 }
 .general-knowledge-modal .text-holder > ul li em {

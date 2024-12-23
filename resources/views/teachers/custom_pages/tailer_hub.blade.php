@@ -2307,9 +2307,11 @@
             <h2 class="editable" contenteditable="true">General Knowledge & Methodology</h2>
             <ul>
                 <li>
-                    <img src="/assets/default/svgs/grid.svg" alt="">
-                    <input type="text" placeholder="Category">
-                    <em>Empty</em>
+                    <div class="input-field">
+                        <img src="/assets/default/svgs/grid.svg" alt="">
+                        <input type="text" placeholder="Category">
+                        <em>Empty</em>
+                    </div>
                 </li>
                 <li>
                     <span><img src="/assets/default/svgs/clock.svg" alt=""> Estimate duration</span>
