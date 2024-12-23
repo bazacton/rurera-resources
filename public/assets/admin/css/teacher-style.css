@@ -3621,18 +3621,10 @@ Overview Questions Style Start
 }
 
 
-
 .overview-status {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-}
-.overview-status .chart-holder {
-    width: 300px;
-}
-.overview-status .status-content {
-    width: calc(100% - 350px);
-    padding-left: 30px;
 }
 /*************************************
 Overview Questions Style End
