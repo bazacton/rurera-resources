@@ -162,7 +162,7 @@
                             <div class="quiz-layout-edit-options">
                                 <div class="edit-options-right">
                                     <div class="edit-options-controls">
-                                        <button type="button" class="arrow-up-btn" data-toggle="bs-tooltip" data-placement="top" title="Move up" data-trigger="hover"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
+                                        <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up" data-trigger="hover"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
                                         <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="Move down" data-trigger="hover"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
 
                                         <!-- <button type="button" class="show-btn" data-toggle="tooltip" data-placement="top" title="Show/Hide question">
@@ -170,9 +170,9 @@
                                             <img class="hide-img" src="/assets/default/svgs/eye-off.svg" alt="">
                                         </button> -->
 
-                                        <button type="button" class="copy-btn" data-toggle="bs-tooltip" data-placement="top" title="Duplicate question" data-trigger="hover"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
+                                        <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="Duplicate question" data-trigger="hover"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
                                         <button type="button" class="edit-btn" data-toggle="modal" data-target="#blank-canvas-modal">
-                                            <span class="icon-box" data-toggle="bs-tooltip" data-placement="top" title="Edit" data-trigger="hover"><img src="/assets/default/svgs/clapperboard-edit.svg" alt=""></span>
+                                            <span class="icon-box" data-toggle="tooltip" data-placement="top" title="Edit" data-trigger="hover"><img src="/assets/default/svgs/clapperboard-edit.svg" alt=""></span>
                                         </button>
                                         <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Trash" data-trigger="hover"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
                                         <div class="dropdown">
@@ -2352,26 +2352,16 @@ $(document).ready(function () {
     });
 </script>
 
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="/assets/default/js/jquery-ui.js"></script>
 <script>
-
-
-    // Rename jQuery UI tooltip to 'uitooltip'
     $.widget.bridge('uitooltip', $.ui.tooltip);
-
     $(document).ready(function() {
-        // Initialize Bootstrap tooltip
-        $('[data-toggle="bs-tooltip"]').tooltip({
-            container: '.admin_teacher_role' // Ensure Bootstrap tooltip works as expected
+        $('[data-toggle="tooltip"]').tooltip({
+            container: '.admin_teacher_role'
         });
 
         $('.show-btn').on('click',function () {
             $('.show-btn').toggleClass('show');
-        });
-
-        // Example of initializing jQuery UI tooltip if needed
-        $('.ui-tooltip-element').uitooltip({
-            content: "This is a jQuery UI tooltip."
         });
     });
 </script>
