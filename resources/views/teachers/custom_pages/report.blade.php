@@ -1384,7 +1384,7 @@
         /*Overview Circle Progress Function End*/
 
         /*Overview Circle Progress Function End*/
-        $(".quiz-stats ul li").append('<div class="circle_inbox"><span class="percent_text"></span></div>');
+        $(".stats_percent").append('<div class="circle_inbox"><span class="percent_text"></span></div>');
 
         $(".stats_percent").each(function() {
             var $this = $(this),
