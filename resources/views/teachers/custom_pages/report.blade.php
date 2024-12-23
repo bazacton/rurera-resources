@@ -12,6 +12,45 @@
         <div class="row">
             <div class="col-12">
                 <h2>Overview</h2>
+                <div class="questions-overview-status">
+                    <div class="status-header">
+                        <div class="status">LIVE &#x2022; Completed</div>
+                    </div>
+
+                    <div class="quiz-title">UI Design Fundamentals & Best Practice</div>
+
+                    <div class="quiz-tags">
+                        <div class="tag">Fundamental</div>
+                        <div class="tag">Design</div>
+                        <div class="tag">Not Urgent</div>
+                    </div>
+
+                    <div class="quiz-info-holder">
+                        <div class="quiz-info">
+                            &#x1F4DD; Quiz &#x2022; 20 Questions<br>
+                            Started date: 28 Sep 2023
+                        </div>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-circle accuracy">50%</div>
+                            <div class="stat-label">Accuracy</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-circle completed">100%</div>
+                            <div class="stat-label">Completed Course</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Submissions</div>
+                            <div class="stat-circle" style="background:#e0e0e0; color:black">20</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Avg. Complete Time</div>
+                            <div class="stat-circle" style="background:#e0e0e0; color:black">4:20</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="questions-overview">
                     <div class="overview-summary">
                         <div class="row">
