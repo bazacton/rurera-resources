@@ -722,6 +722,31 @@
                         <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <h6>Or select a question type to add question</h6>
                             <div class="question_templates-holder">
+                                <div class="row">
+                                    <div class="col-12 col-lg-4 col-md-6 shortlisted template-item templates-list-checkbox">
+                                        <div class="template-box">
+                                            <div class="rating-stars">
+                                                <div class="rating-box">
+                                                    <input type="checkbox" id="star-one">
+                                                    <label for="star-one">
+                                                        <i class="fas fa-star"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="card-icon pop">
+                                                <img src="/media/25206/main_question mcqs temp01.jpg">
+                                            </div>
+                                            <div class="template-controls">
+                                                <button type="button" class="preview-template-btn">Preview template (#25206) (Emerging)
+                                                </button>
+                                                <button type="button" class="template-btn" data-template_image="/media/25206/main_question mcqs temp01.jpg" data-template_name="main_question" data-template_id="25206">Select Template</button>
+                                            </div>
+                                            <div class="template-data-info">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <ul class="question_templates">
                                     <li data-type="question_templates" data-option="multichoice_template" data-elements="question_label_multichoice_template,paragraph_multichoice_template,radio">
                                         <span class="templates-lable">Multiple Templates</span>
