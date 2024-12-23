@@ -307,13 +307,7 @@
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list">
-                                        <ul class="mt-10">
-                                            <li>1. Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
-                                            <li>2. Pellentesque nec est gravida eleifend turpis vsodales tortor.</li>
-                                            <li>3. Vivamus dapibus nunc necm consectetur lacinia.</li>
-                                            <li>4. Phasellus non turpis dignissim mattis tellus nec malesuada.</li>
-                                            <li>5. Pellentesque efficitur erat in interdum viverra.</li>
-                                        </ul>
+                                        <textarea class="form-control"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -532,13 +526,7 @@
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list2" style="">
-                                        <ul class="mt-10">
-                                            <li>1. Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
-                                            <li>2. Pellentesque nec est gravida eleifend turpis vsodales tortor.</li>
-                                            <li>3. Vivamus dapibus nunc necm consectetur lacinia.</li>
-                                            <li>4. Phasellus non turpis dignissim mattis tellus nec malesuada.</li>
-                                            <li>5. Pellentesque efficitur erat in interdum viverra.</li>
-                                        </ul>
+                                        <textarea class="form-control"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -670,13 +658,7 @@
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list3" style="">
-                                        <ul class="mt-10">
-                                            <li>1. Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
-                                            <li>2. Pellentesque nec est gravida eleifend turpis vsodales tortor.</li>
-                                            <li>3. Vivamus dapibus nunc necm consectetur lacinia.</li>
-                                            <li>4. Phasellus non turpis dignissim mattis tellus nec malesuada.</li>
-                                            <li>5. Pellentesque efficitur erat in interdum viverra.</li>
-                                        </ul>
+                                        <textarea class="form-control"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -996,13 +978,7 @@
                                                     </button>
                                                 </div>
                                                 <div class="collapse" id="explanation-list">
-                                                    <ul class="mt-10">
-                                                        <li>1. Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
-                                                        <li>2. Pellentesque nec est gravida eleifend turpis vsodales tortor.</li>
-                                                        <li>3. Vivamus dapibus nunc necm consectetur lacinia.</li>
-                                                        <li>4. Phasellus non turpis dignissim mattis tellus nec malesuada.</li>
-                                                        <li>5. Pellentesque efficitur erat in interdum viverra.</li>
-                                                    </ul>
+                                                    <textarea class="form-control"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -1171,13 +1147,7 @@
                                                     </button>
                                                 </div>
                                                 <div class="collapse" id="explanation-list2">
-                                                    <ul class="mt-10">
-                                                        <li>1. Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
-                                                        <li>2. Pellentesque nec est gravida eleifend turpis vsodales tortor.</li>
-                                                        <li>3. Vivamus dapibus nunc necm consectetur lacinia.</li>
-                                                        <li>4. Phasellus non turpis dignissim mattis tellus nec malesuada.</li>
-                                                        <li>5. Pellentesque efficitur erat in interdum viverra.</li>
-                                                    </ul>
+                                                    <textarea class="form-control"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -1264,13 +1234,7 @@
                                                     </button>
                                                 </div>
                                                 <div class="collapse" id="explanation-list3">
-                                                    <ul class="mt-10">
-                                                        <li>1. Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
-                                                        <li>2. Pellentesque nec est gravida eleifend turpis vsodales tortor.</li>
-                                                        <li>3. Vivamus dapibus nunc necm consectetur lacinia.</li>
-                                                        <li>4. Phasellus non turpis dignissim mattis tellus nec malesuada.</li>
-                                                        <li>5. Pellentesque efficitur erat in interdum viverra.</li>
-                                                    </ul>
+                                                    <textarea class="form-control"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -1977,13 +1941,7 @@
                                 </button>
                             </div>
                             <div class="collapse" id="explanation-list">
-                                <ul class="mt-10">
-                                    <li>1. Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
-                                    <li>2. Pellentesque nec est gravida eleifend turpis vsodales tortor.</li>
-                                    <li>3. Vivamus dapibus nunc necm consectetur lacinia.</li>
-                                    <li>4. Phasellus non turpis dignissim mattis tellus nec malesuada.</li>
-                                    <li>5. Pellentesque efficitur erat in interdum viverra.</li>
-                                </ul>
+                                <textarea class="form-control"></textarea>
                             </div>
                         </div>
                         <div class="canvas-editable-options-holder">
