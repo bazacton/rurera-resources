@@ -342,7 +342,7 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <tr>
+                                                <tr class="success-status">
                                                     <td><strong>An action by the user that creates an effect</strong></td>
                                                     <td>3 respondents</td>
                                                     <td>60%</td>
