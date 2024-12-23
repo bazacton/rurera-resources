@@ -300,6 +300,62 @@
                                     </div>
                                     </form>
                                 </div>
+                                <div class="rureraform-col rureraform-col-12">
+                                    <div class="rureraform-table">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Option</th>
+                                                    <th>Respondents</th>
+                                                    <th>Percentage</th>
+                                                    <th>Progress</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a shadow</td>
+                                                    <td>1 respondent</td>
+                                                    <td>20%</td>
+                                                    <td>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>a text</td>
+                                                    <td>0 respondents</td>
+                                                    <td>0%</td>
+                                                    <td>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>a pop-up</td>
+                                                    <td>1 respondent</td>
+                                                    <td>20%</td>
+                                                    <td>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>An action by the user that creates an effect</strong></td>
+                                                    <td>3 respondents</td>
+                                                    <td>60%</td>
+                                                    <td>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                                 <div class="view-explanation">
                                     <div class="explanation-controls d-flex align-items-center">
                                         <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
