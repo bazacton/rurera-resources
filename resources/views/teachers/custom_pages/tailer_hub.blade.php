@@ -2301,63 +2301,53 @@
 
 @push('scripts_bottom')
 <script>
-    $(document).ready(function() {
-        $(".rureraform-element, .lms-quiz-create .rureraform-admin-popup-title a").click(function(e) {
-            e.stopPropagation();
-            $(".canvas-editable-options").toggleClass("active");
-        });
+$(document).ready(function () {
+  const $scrollableDiv = $(".blank-canvas-sidebar, .canvas-editable-options");
 
-        $(document).mouseup(function(e) {
-            var container = $(".canvas-editable-options");
-            if (!container.is(e.target) && container.has(e.target).length === 0) {
-                container.removeClass("active");
-            }
-        });
-    });
-    </script>
+  // Initialize NiceScroll with auto-hide enabled
+  $scrollableDiv.niceScroll({
+    cursorcolor: "red",
+    cursorwidth: "8px",
+    autohidemode: true // Auto-hide enabled initially
+  });
 
-    <script type="text/javascript">
-
-    $(document).ready(function () {
-    const $scrollableDiv = $(".blank-canvas-sidebar, .canvas-editable-options");
-
-    // Initialize NiceScroll with auto-hide enabled
-    $scrollableDiv.niceScroll({
-        cursorcolor: "red",
-        cursorwidth: "8px",
-        autohidemode: true // Auto-hide enabled initially
-    });
-
-    // Helper function to safely iterate over NiceScroll instances
-    function applyToNiceScrollInstances(callback) {
-        const instances = $scrollableDiv.getNiceScroll();
-        if (instances && typeof instances === "object") {
-        // If a single instance, convert it to an array for consistent processing
-        const scrollArray = Array.isArray(instances) ? instances : [instances];
-        scrollArray.forEach(callback);
+  // Helper function to safely iterate over NiceScroll instances
+  function applyToNiceScrollInstances(callback) {
+    const instances = $scrollableDiv.getNiceScroll();
+    if (instances && typeof instances === "object") {
+      // Ensure it's an array for consistent iteration
+      const scrollArray = Array.isArray(instances) ? instances : [instances];
+      scrollArray.forEach(scroll => {
+        if (scroll) {
+          callback(scroll); // Only apply callback to valid instances
         }
+      });
     }
+  }
 
-    // Show NiceScroll and disable auto-hide on mouse enter
-    $scrollableDiv.on("mouseenter", function () {
-        applyToNiceScrollInstances(scroll => {
-        scroll.opt.autohidemode = false; // Disable auto-hide
-        scroll.show(); // Make scrollbars visible
-        });
+  // Show NiceScroll and disable auto-hide on mouse enter
+  $scrollableDiv.on("mouseenter", function () {
+    applyToNiceScrollInstances(scroll => {
+      scroll.opt.autohidemode = false; // Disable auto-hide
+      scroll.show(); // Make scrollbars visible
     });
+  });
 
-    // Re-enable auto-hide on mouse leave
-    $scrollableDiv.on("mouseleave", function () {
-        applyToNiceScrollInstances(scroll => {
-        scroll.opt.autohidemode = true; // Re-enable auto-hide
-        scroll.hide(); // Hide scrollbars after mouse leaves
-        });
+  // Re-enable auto-hide on mouse leave
+  $scrollableDiv.on("mouseleave", function () {
+    applyToNiceScrollInstances(scroll => {
+      scroll.opt.autohidemode = true; // Re-enable auto-hide
+      scroll.hide(); // Hide scrollbars after mouse leaves
     });
+  });
 
-    // Reinitialize NiceScroll when the modal is shown
-    $(".blank-canvas-modal").on("shown.bs.modal", function () {
-        $scrollableDiv.getNiceScroll().resize();
-    });
+  // Reinitialize NiceScroll when the modal is shown
+  $(".blank-canvas-modal").on("shown.bs.modal", function () {
+    const instances = $scrollableDiv.getNiceScroll();
+    if (instances) {
+      instances.resize();
+    }
+  });
 });
 
 </script>
