@@ -2351,6 +2351,8 @@ $(document).ready(function () {
         });
     });
 </script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script>
     $.widget.bridge('uitooltip', $.ui.tooltip);
     $(document).ready(function() {
@@ -2363,8 +2365,6 @@ $(document).ready(function () {
         });
     });
 </script>
-
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> 
 
 <!-- JavaScript for Drag and Drop -->
  <!-- Enable Sortable Functionality -->
