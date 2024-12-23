@@ -3595,10 +3595,7 @@ Overview Questions Style Start
     margin-left: auto;
 }
 .overview-summary {
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: 30px;
-    align-items: center;
 }
 .summary-content ul,
 .overview-content ul {
@@ -3620,12 +3617,6 @@ Overview Questions Style Start
     background-color: #ddd;
 }
 
-
-.overview-status {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
 /*************************************
 Overview Questions Style End
 **************************************/
