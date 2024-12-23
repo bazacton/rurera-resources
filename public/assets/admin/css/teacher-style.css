@@ -3745,7 +3745,31 @@ Overview Questions Style Start
 .quiz-info span:first-child:before {
     display: none;
 }
-
+.quiz-stats ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.quiz-stats ul li {
+    line-height: normal;
+    display: inline-flex;
+    flex-direction: column;
+    border-left: 2px solid #ddd;
+    margin: 0 0 0 25px;
+    padding: 0 0 0 25px;
+}
+.quiz-stats ul li:first-child {
+    padding-left: 0;
+    margin-left: 0;
+    border: 0;
+}
+.quiz-stats ul li .stats-lable {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+.quiz-stats ul li .circle_percent {
+    font-size: 40px;
+}
 /*************************************
 Overview Questions Style End
 **************************************/
