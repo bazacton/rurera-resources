@@ -2376,6 +2376,7 @@ Tailer Hub Style Start
 }
 .admin_teacher_role .question-layout .rureraform-col {
     position: relative;
+    padding: 0 0 20px !important;
 }
 .elements-tooltip {
     position: absolute;
