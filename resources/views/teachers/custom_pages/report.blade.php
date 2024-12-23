@@ -11,8 +11,8 @@
     <div class="section-body">
         <div class="row">
             <div class="col-12">
+                <h2>Overview</h2>
                 <div class="questions-overview">
-                    <h2>Overview</h2>
                     <div class="overview-summary">
                         <div class="progress-holder">
                             <div class="progress-box">
