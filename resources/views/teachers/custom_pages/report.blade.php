@@ -15,7 +15,7 @@
                 <div class="questions-overview-status">
                     <div class="status-header">
                         <div class="status">
-                            <span class="status-lable"><img src="/assets/default/svgs/trash-bin.svg" alt=""> LIVE</span>
+                            <span class="status-lable"><img src="/assets/default/svgs/live.svg" alt=""> LIVE</span>
                             <span class="status-info"><i>&#10003;</i> Completed</span>
                         </div>
                     </div>
