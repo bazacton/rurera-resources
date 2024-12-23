@@ -2236,7 +2236,7 @@ Tailer Hub Style Start
     width: 450px;
     pointer-events: none;
 }
-.canvas-editable-options-holder:has(.canvas-editable-options.active) {
+.canvas-editable-options-holder.active {
     left: 5px;
     pointer-events: visible;
     transition: all 0.5s ease-in-out;
@@ -2252,11 +2252,12 @@ Tailer Hub Style Start
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
 }
-.canvas-editable-options.active {
+.canvas-editable-options-holder.active .canvas-editable-options {
     opacity: 1;
     visibility: visible;
     display: block;
 }
+
 .canvas-editable-options.lms-quiz-create .rureraform-properties-options-table-footer a {
     margin-left: 0;
     border: 1px solid #ddd;
