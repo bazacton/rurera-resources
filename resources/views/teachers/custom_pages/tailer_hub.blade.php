@@ -162,7 +162,7 @@
                             <div class="quiz-layout-edit-options">
                                 <div class="edit-options-right">
                                     <div class="edit-options-controls">
-                                        <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up" data-trigger="hover"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
+                                        <button type="button" class="arrow-up-btn" data-toggle="bs-tooltip" data-placement="top" title="Move up" data-trigger="hover"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
                                         <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="Move down" data-trigger="hover"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
 
                                         <!-- <button type="button" class="show-btn" data-toggle="tooltip" data-placement="top" title="Show/Hide question">
@@ -170,9 +170,9 @@
                                             <img class="hide-img" src="/assets/default/svgs/eye-off.svg" alt="">
                                         </button> -->
 
-                                        <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="Duplicate question" data-trigger="hover"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
+                                        <button type="button" class="copy-btn" data-toggle="bs-tooltip" data-placement="top" title="Duplicate question" data-trigger="hover"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
                                         <button type="button" class="edit-btn" data-toggle="modal" data-target="#blank-canvas-modal">
-                                            <span class="icon-box" data-toggle="tooltip" data-placement="top" title="Edit" data-trigger="hover"><img src="/assets/default/svgs/clapperboard-edit.svg" alt=""></span>
+                                            <span class="icon-box" data-toggle="bs-tooltip" data-placement="top" title="Edit" data-trigger="hover"><img src="/assets/default/svgs/clapperboard-edit.svg" alt=""></span>
                                         </button>
                                         <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Trash" data-trigger="hover"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
                                         <div class="dropdown">
@@ -2361,7 +2361,7 @@ $(document).ready(function () {
 
     $(document).ready(function() {
         // Initialize Bootstrap tooltip
-        $('[data-toggle="tooltip"]').tooltip({
+        $('[data-toggle="bs-tooltip"]').tooltip({
             container: '.admin_teacher_role' // Ensure Bootstrap tooltip works as expected
         });
 
