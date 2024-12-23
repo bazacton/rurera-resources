@@ -2307,22 +2307,23 @@
             <h2 class="editable" contenteditable="true">General Knowledge & Methodology</h2>
             <ul>
                 <li>
-                    <div class="input-field">
-                        <img src="/assets/default/svgs/grid.svg" alt="">
-                        <input type="text" placeholder="Category">
-                        <em>Empty</em>
-                    </div>
-                </li>
-                <li>
-                    <span><img src="/assets/default/svgs/clock.svg" alt=""> Estimate duration</span>
+                    <img src="/assets/default/svgs/grid.svg" alt="">
+                    <input type="text" title="Category">
                     <em>Empty</em>
                 </li>
                 <li>
-                    <span><img src="/assets/default/svgs/trainer.svg" alt=""> Trainer</span>
+                    <img src="/assets/default/svgs/clock.svg" alt="">
+                    <input type="text" title="Estimate duration">
                     <em>Empty</em>
                 </li>
                 <li>
-                    <span><img src="/assets/default/svgs/language.svg" alt=""> Language</span>
+                    <img src="/assets/default/svgs/trainer.svg" alt="">
+                    <input type="text" title="Trainer">
+                    <em>Empty</em>
+                </li>
+                <li>
+                    <img src="/assets/default/svgs/language.svg" alt="">
+                    <input type="text" title="Language">
                     <em>Empty</em>
                 </li>
             </ul>
