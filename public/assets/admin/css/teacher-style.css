@@ -3595,8 +3595,28 @@ Overview Questions Style Start
     margin-left: auto;
 }
 .questions-overview .circle_percent {
-    font-size: 130px;
+    font-size: 110px;
 }
+.questions-overview .progress-info {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+    width: 100%;
+    text-align: center;
+    line-height: normal;
+    font-size: 13px;
+}
+.questions-overview .progress-info strong {
+    display: block;
+    color: #333;
+}
+.questions-overview .percent_text {
+    margin-top: -20px;
+}
+.percent_more:after {}
+
 .overview-summary {
     margin-bottom: 30px;
 }
