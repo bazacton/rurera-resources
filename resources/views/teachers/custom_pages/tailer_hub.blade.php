@@ -2354,7 +2354,6 @@ $(document).ready(function () {
 
 <script src="/assets/default/js/jquery-ui.js"></script>
 <script>
-    $.widget.bridge('uitooltip', $.ui.tooltip);
     $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip({
             container: '.admin_teacher_role'
