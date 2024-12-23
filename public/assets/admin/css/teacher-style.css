@@ -2765,6 +2765,9 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 .rureraform-table td:has(.progress) {
     padding: 0 !important;
 }
+.success-status strong {
+    color: green;
+}
 
 /*************************************
 Tailer Hub Style End
