@@ -1281,5 +1281,6 @@
                 }
             }
         });
+        document.getElementById('statusChart').style.height = '100px';
     </script>
 @endpush
