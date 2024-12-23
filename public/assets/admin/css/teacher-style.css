@@ -7,6 +7,10 @@
 .admin_teacher_role:has(.modal.show) {
     overflow: hidden;
 }
+.admin_teacher_role .modal.show {
+    overflow: hidden;
+    overflow-y: auto;
+}
 /* Admin Left Menue Style Start */
 .admin_teacher_role .main-sidebar {
     background-color: #fff;
