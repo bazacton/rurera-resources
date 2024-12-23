@@ -303,7 +303,7 @@
                                 <div class="view-explanation">
                                     <div class="explanation-controls d-flex align-items-center">
                                         <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
-                                            View Explanation
+                                           <i class="fas fa-plus"></i> Add Explanation
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list">
@@ -521,8 +521,8 @@
                                 </div>
                                 <div class="view-explanation">
                                     <div class="explanation-controls d-flex align-items-center">
-                                        <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list2" aria-expanded="false" aria-controls="explanation-list">
-                                            View Explanation
+                                        <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
+                                           <i class="fas fa-plus"></i> Add Explanation
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list2" style="">
@@ -653,8 +653,8 @@
                                 </div>
                                 <div class="view-explanation">
                                     <div class="explanation-controls d-flex align-items-center">
-                                        <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list3" aria-expanded="false" aria-controls="explanation-list">
-                                            View Explanation
+                                        <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
+                                           <i class="fas fa-plus"></i> Add Explanation
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list3" style="">
@@ -974,7 +974,7 @@
                                             <div class="view-explanation">
                                                 <div class="explanation-controls d-flex align-items-center">
                                                     <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
-                                                        View Explanation
+                                                        <i class="fas fa-plus"></i> Add Explanation
                                                     </button>
                                                 </div>
                                                 <div class="collapse" id="explanation-list">
@@ -1142,8 +1142,8 @@
                                             </div>
                                             <div class="view-explanation">
                                                 <div class="explanation-controls d-flex align-items-center">
-                                                    <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list2" aria-expanded="false" aria-controls="explanation-list">
-                                                        View Explanation
+                                                    <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
+                                                        <i class="fas fa-plus"></i> Add Explanation
                                                     </button>
                                                 </div>
                                                 <div class="collapse" id="explanation-list2">
@@ -1229,8 +1229,8 @@
                                             </div>
                                             <div class="view-explanation">
                                                 <div class="explanation-controls d-flex align-items-center">
-                                                    <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list3" aria-expanded="false" aria-controls="explanation-list">
-                                                        View Explanation
+                                                    <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
+                                                        <i class="fas fa-plus"></i> Add Explanation
                                                     </button>
                                                 </div>
                                                 <div class="collapse" id="explanation-list3">
@@ -1937,7 +1937,7 @@
                         <div class="view-explanation">
                             <div class="explanation-controls d-flex align-items-center">
                                 <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
-                                    View Explanation
+                                    <i class="fas fa-plus"></i> Add Explanation
                                 </button>
                             </div>
                             <div class="collapse" id="explanation-list">
