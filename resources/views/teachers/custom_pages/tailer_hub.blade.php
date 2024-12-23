@@ -2351,8 +2351,6 @@ $(document).ready(function () {
         });
     });
 </script>
-
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script>
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip({
@@ -2363,8 +2361,10 @@ $(document).ready(function () {
             $('.show-btn').toggleClass('show');
         });
     });
-    
 </script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
 <!-- JavaScript for Drag and Drop -->
  <!-- Enable Sortable Functionality -->
  <script>
