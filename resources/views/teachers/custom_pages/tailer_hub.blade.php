@@ -2304,11 +2304,11 @@
 $(document).ready(function() {
     $(".rureraform-element, .lms-quiz-create .rureraform-admin-popup-title a").click(function(e) {
         e.stopPropagation();
-        $(".canvas-editable-options").toggleClass("active");
+        $(".canvas-editable-options-holder").toggleClass("active");
     });
 
     $(document).mouseup(function(e) {
-        var container = $(".canvas-editable-options");
+        var container = $(".canvas-editable-options-holder");
         if (!container.is(e.target) && container.has(e.target).length === 0) {
             container.removeClass("active");
         }
