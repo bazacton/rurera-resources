@@ -3594,6 +3594,9 @@ Overview Questions Style Start
     max-width: 75%;
     margin-left: auto;
 }
+.questions-overview .circle_percent {
+    font-size: 130px;
+}
 .overview-summary {
     margin-bottom: 30px;
 }
