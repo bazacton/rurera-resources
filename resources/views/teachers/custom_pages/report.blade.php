@@ -32,8 +32,9 @@
 
                     <div class="quiz-info-holder">
                         <div class="quiz-info">
-                            &#x1F4DD; Quiz &#x2022; 20 Questions<br>
-                            Started date: 28 Sep 2023
+                            <span><em><img src="/assets/default/svgs/chat-msg.svg" alt=""></em>Quiz</span>
+                            <span class="question-number">20 Questions</span>
+                            <span>Started date: 28 Sep 2023</span>
                         </div>
                     </div>
 
