@@ -2352,11 +2352,10 @@ $(document).ready(function () {
     });
 </script>
 <script>
+    $.widget.bridge('uitooltip', $.ui.tooltip);
     $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip({
-            content: function() {
-                return $(this).attr('title');
-            }
+            container: '.admin_teacher_role'
         });
 
         $('.show-btn').on('click',function () {
