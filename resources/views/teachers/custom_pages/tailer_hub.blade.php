@@ -2354,14 +2354,24 @@ $(document).ready(function () {
 
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script>
+
+
+    // Rename jQuery UI tooltip to 'uitooltip'
     $.widget.bridge('uitooltip', $.ui.tooltip);
+
     $(document).ready(function() {
+        // Initialize Bootstrap tooltip
         $('[data-toggle="tooltip"]').tooltip({
-            container: '.admin_teacher_role'
+            container: '.admin_teacher_role' // Ensure Bootstrap tooltip works as expected
         });
 
         $('.show-btn').on('click',function () {
             $('.show-btn').toggleClass('show');
+        });
+
+        // Example of initializing jQuery UI tooltip if needed
+        $('.ui-tooltip-element').uitooltip({
+            content: "This is a jQuery UI tooltip."
         });
     });
 </script>
