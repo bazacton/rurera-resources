@@ -14,78 +14,96 @@
                 <h2>Overview</h2>
                 <div class="questions-overview">
                     <div class="overview-summary">
-                        <div class="progress-holder">
-                            <div class="progress-box">
-                                <div class="circle_percent" data-percent="164">
-                                    <div class="circle_inner">
-                                        <div class="round_per"></div>
+                        <div class="row">
+                            <div class="col-12 col-lg-5 col-md-6">
+                                <div class="progress-holder">
+                                    <div class="progress-box">
+                                        <div class="circle_percent" data-percent="164">
+                                            <div class="circle_inner">
+                                                <div class="round_per"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="summary-content">
-                            <h3>summary</h3>
-                            <ul>
-                                <li>
-                                    <span class="summary-lable">Created on</span>
-                                    <strong>September 9, 2019</strong>
-                                </li>
-                                <li>
-                                    <span class="summary-lable">Launched on</span>
-                                    <strong>September 9, 2019</strong>
-                                </li>
-                                <li>
-                                    <span class="summary-lable">Last responded</span>
-                                    <strong>September 9, 2019</strong>
-                                </li>
-                                <li>
-                                    <span class="summary-lable">Completed</span>
-                                    <strong>164 respondents</strong>
-                                </li>
-                                <li>
-                                    <span class="summary-lable">Abandoned</span>
-                                    <strong>437 respondents</strong>
-                                </li>
-                            </ul>
+                            <div class="col-12 col-lg-7 col-md-8">
+                                <div class="summary-content">
+                                    <h3>summary</h3>
+                                    <ul>
+                                        <li>
+                                            <span class="summary-lable">Created on</span>
+                                            <strong>September 9, 2019</strong>
+                                        </li>
+                                        <li>
+                                            <span class="summary-lable">Launched on</span>
+                                            <strong>September 9, 2019</strong>
+                                        </li>
+                                        <li>
+                                            <span class="summary-lable">Last responded</span>
+                                            <strong>September 9, 2019</strong>
+                                        </li>
+                                        <li>
+                                            <span class="summary-lable">Completed</span>
+                                            <strong>164 respondents</strong>
+                                        </li>
+                                        <li>
+                                            <span class="summary-lable">Abandoned</span>
+                                            <strong>437 respondents</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="overview-status">
-                        <div class="chart-holder">
-                            <canvas id="statusChart"></canvas>
-                        </div>
-                        <div class="status-content">
-                            <h3>Sucsess</h3>
-                            <p>Out of all the tasks completed by respondents, 28.0% ended up at a "correct" answer</p>
+                        <div class="row">
+                            <div class="col-12 col-lg-5 col-md-6">
+                                <div class="chart-holder">
+                                    <canvas id="statusChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7 col-md-8">
+                                <div class="status-content">
+                                    <h3>Sucsess</h3>
+                                    <p>Out of all the tasks completed by respondents, 28.0% ended up at a "correct" answer</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="overview-time">
-                        <div class="chart-holder">
-                            <canvas id="timeChart"></canvas>
-                        </div>
-                        <div class="overview-content">
-                            <h3>Time Taken</h3>
-                            <ul>
-                                <li>
-                                    <span class="summary-lable">Lowest observed time</span>
-                                    <strong>0s (0.00m)</strong>
-                                </li>
-                                <li>
-                                    <span class="summary-lable">Lower quartile</span>
-                                    <strong>2m 5s (2.09m)</strong>
-                                </li>
-                                <li>
-                                    <span class="summary-lable">Median</span>
-                                    <strong>3m 18s (3.30m)</strong>
-                                </li>
-                                <li>
-                                    <span class="summary-lable">Upper quartile</span>
-                                    <strong>5m 10s (5.16m)</strong>
-                                </li>
-                                <li>
-                                    <span class="summary-lable">Highest observed time</span>
-                                    <strong>30m 60s (30.10m)</strong>
-                                </li>
-                            </ul>
+                        <div class="row">
+                            <div class="col-12 col-lg-5 col-md-6">
+                                <div class="chart-holder">
+                                    <canvas id="timeChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7 col-md-8">
+                                <div class="overview-content">
+                                    <h3>Time Taken</h3>
+                                    <ul>
+                                        <li>
+                                            <span class="summary-lable">Lowest observed time</span>
+                                            <strong>0s (0.00m)</strong>
+                                        </li>
+                                        <li>
+                                            <span class="summary-lable">Lower quartile</span>
+                                            <strong>2m 5s (2.09m)</strong>
+                                        </li>
+                                        <li>
+                                            <span class="summary-lable">Median</span>
+                                            <strong>3m 18s (3.30m)</strong>
+                                        </li>
+                                        <li>
+                                            <span class="summary-lable">Upper quartile</span>
+                                            <strong>5m 10s (5.16m)</strong>
+                                        </li>
+                                        <li>
+                                            <span class="summary-lable">Highest observed time</span>
+                                            <strong>30m 60s (30.10m)</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
