@@ -3758,14 +3758,17 @@ Overview Questions Style Start
     line-height: normal;
     display: inline-flex;
     flex-direction: column;
-    border-left: 2px solid #ddd;
-    margin: 0 0 0 25px;
-    padding: 0 0 0 25px;
+    position: relative;
 }
-.quiz-stats ul li:first-child {
-    padding-left: 0;
-    margin-left: 0;
-    border: 0;
+.quiz-stats ul li:before {
+    content: "";
+    display: inline-block;
+    height: calc(100% - 20px);
+    vertical-align: middle;
+    border-left: 2px solid #ddd;
+}
+.quiz-stats ul li:first-child:before {
+    display: none;
 }
 .quiz-stats ul li .stats-lable {
     font-weight: 600;
