@@ -3771,6 +3771,16 @@ Overview Questions Style Start
 .quiz-stats ul li .stats_percent {
     font-size: 40px;
 }
+.quiz-stats ul li .circle_inbox {
+    position: initial;
+    border-radius: 0;
+    background: none;
+    display: inline-block;
+}
+.quiz-stats ul li .circle_inbox .percent_text {
+    position: inherit;
+    transform: none;
+}
 /*************************************
 Overview Questions Style End
 **************************************/
