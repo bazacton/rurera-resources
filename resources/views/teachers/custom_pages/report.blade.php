@@ -1306,7 +1306,7 @@
             $dataV = $this.data("percent"),
             $dataDeg = $dataV * 3.6,
             $round = $this.find(".round_per");
-            $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)"); 
+            $round.css("transform", "rotate(" + parseInt($dataDeg + 280) + "deg)"); 
             $this.append('<div class="circle_inbox"><span class="percent_text"></span></div>');
             $this.prop('Counter', 0).animate({Counter: $dataV},
         {
