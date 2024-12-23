@@ -2351,6 +2351,19 @@ $(document).ready(function () {
         });
     });
 </script>
+<script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip({
+            content: function() {
+                return $(this).attr('title');
+            }
+        });
+
+        $('.show-btn').on('click',function () {
+            $('.show-btn').toggleClass('show');
+        });
+    });
+</script>
 
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
@@ -2428,16 +2441,5 @@ $(document).ready(function () {
         });
     });
 </script> -->
-<script>
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip({
-            container: '.admin_teacher_role'
-        });
-        
-        $('.show-btn').on('click',function () {
-            $('.show-btn').toggleClass('show');
-        });
-    });
-</script>
 
 @endpush
