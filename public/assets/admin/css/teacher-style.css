@@ -2243,19 +2243,11 @@ Tailer Hub Style Start
 }
 .canvas-editable-options {
     background-color: #fff;
-    opacity: 0;
-    visibility: hidden;
     height: 100%;
-    display: none;
     overflow: hidden;
     border: 1px solid #ddd;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
-}
-.canvas-editable-options-holder.active .canvas-editable-options {
-    opacity: 1;
-    visibility: visible;
-    display: block;
 }
 
 .canvas-editable-options.lms-quiz-create .rureraform-properties-options-table-footer a {
