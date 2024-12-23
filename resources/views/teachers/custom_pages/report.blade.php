@@ -38,23 +38,33 @@
                         </div>
                     </div>
 
-                    <div class="stats">
-                        <div class="stat">
-                            <div class="stat-circle accuracy">50%</div>
-                            <div class="stat-label">Accuracy</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-circle completed">100%</div>
-                            <div class="stat-label">Completed Course</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-label">Submissions</div>
-                            <div class="stat-circle" style="background:#e0e0e0; color:black">20</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-label">Avg. Complete Time</div>
-                            <div class="stat-circle" style="background:#e0e0e0; color:black">4:20</div>
-                        </div>
+                    <div class="quiz-stats">
+                        <ul>
+                            <li>
+                                <span class="stats-lable">Accuracy</span>
+                                <div class="circle_percent" data-percent="50">
+                                    <div class="circle_inner">
+                                        <div class="round_per"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="stats-lable">Completed Course</span>
+                                <div class="circle_percent" data-percent="100">
+                                    <div class="circle_inner">
+                                        <div class="round_per"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="stats-lable">Submissions</span>
+                                <strong>20</strong>
+                            </li>
+                            <li>
+                                <span class="stats-lable">Avg. Complete Time</span>
+                                <strong>4:20</strong>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="questions-overview">
