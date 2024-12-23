@@ -1324,7 +1324,7 @@
                 },
                 plugins: {
                     legend: {
-                        display: true // Hide the legend
+                        display: false // Hide the legend
                     },
                     tooltip: {
                         enabled: true // Disable tooltips
