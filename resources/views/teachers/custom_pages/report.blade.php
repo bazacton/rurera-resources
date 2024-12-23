@@ -22,6 +22,10 @@
                                             <div class="circle_inner">
                                                 <div class="round_per"></div>
                                             </div>
+                                            <div class="progress-info">
+                                                <strong>Out of 601</strong>
+                                                <span>Completed</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
