@@ -18,7 +18,7 @@
                             <div class="col-12 col-lg-5 col-md-6">
                                 <div class="progress-holder">
                                     <div class="progress-box">
-                                        <div class="circle_percent warning" data-percent="164">
+                                        <div class="circle_percent circle-orange" data-percent="164">
                                             <div class="circle_inner">
                                                 <div class="round_per"></div>
                                             </div>
