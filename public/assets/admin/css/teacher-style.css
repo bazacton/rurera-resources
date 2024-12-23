@@ -3804,6 +3804,11 @@ Overview Questions Style Start
     z-index: 1;
     transform: translate(-50%, -50%);
 }
+.quiz-stats ul li strong {
+    font-size: 16px;
+    color: #000;
+    margin-top: auto;
+}
 /*************************************
 Overview Questions Style End
 **************************************/
