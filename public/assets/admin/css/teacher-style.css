@@ -3623,6 +3623,20 @@ Overview Questions Style Start
 .overview-summary .progress-holder {
     width: 250px;
 }
+
+
+
+.overview-status {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.overview-status .chart-holder {
+    width: 250px;
+}
+.overview-status .status-content {
+    width: calc(100% - 300px);
+}
 /*************************************
 Overview Questions Style End
 **************************************/
