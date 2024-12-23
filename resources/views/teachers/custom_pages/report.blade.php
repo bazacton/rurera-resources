@@ -14,10 +14,15 @@
                 <h2>Overview</h2>
                 <div class="questions-overview-status">
                     <div class="status-header">
-                        <div class="status">LIVE &#x2022; Completed</div>
+                        <div class="status">
+                            <span class="status-lable"><img src="/assets/default/svgs/trash-bin.svg" alt=""> LIVE</span>
+                            <span class="status-info"><i>&#10003;</i> Completed</span>
+                        </div>
                     </div>
 
-                    <div class="quiz-title">UI Design Fundamentals & Best Practice</div>
+                    <div class="quiz-title">
+                        <h3>UI Design Fundamentals & Best Practice</h3>
+                    </div>
 
                     <div class="quiz-tags">
                         <div class="tag">Fundamental</div>
