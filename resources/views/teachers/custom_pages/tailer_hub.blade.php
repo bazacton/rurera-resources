@@ -2386,49 +2386,51 @@ $(document).ready(function () {
         });
     });
 </script> -->
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-
-<!-- JavaScript for Drag and Drop -->
- <!-- Enable Sortable Functionality -->
- <script>
-    $(document).ready(function () {
-        // Make the sidebar list sortable
-        $("#sortable").sortable();
-        $("#sortable").disableSelection();
-    });
-</script>
 <script>
     const gridContainer = document.getElementById("gridContainer");
     let draggedItem = null;
+    let placeholder = document.createElement("div");
+    placeholder.className = "placeholder";
 
-    // Event listeners for drag and drop
-    document.querySelectorAll(".grid-item").forEach(item => {
-        item.addEventListener("dragstart", (e) => {
-            draggedItem = item;
-            setTimeout(() => item.classList.add("dragging"), 0);
-        });
-
-        item.addEventListener("dragend", () => {
-            draggedItem.classList.remove("dragging");
-            draggedItem = null;
-        });
-    });
-
-    gridContainer.addEventListener("dragover", (e) => {
-        e.preventDefault();
-        const afterElement = getDragAfterElement(gridContainer, e.clientY);
-        if (afterElement == null) {
-            gridContainer.appendChild(draggedItem);
-        } else {
-            gridContainer.insertBefore(draggedItem, afterElement);
+    // Drag start
+    gridContainer.addEventListener("dragstart", (e) => {
+        if (e.target.classList.contains("grid-item")) {
+            draggedItem = e.target;
+            setTimeout(() => e.target.classList.add("dragging"), 0);
         }
     });
 
-    // Helper function to determine position
-    function getDragAfterElement(container, y) {
-        const draggableElements = [...container.querySelectorAll(".grid-item:not(.dragging)")];
+    // Drag end
+    gridContainer.addEventListener("dragend", () => {
+        draggedItem.classList.remove("dragging");
+        placeholder.remove();
+        draggedItem = null;
+    });
 
-        return draggableElements.reduce((closest, child) => {
+    // Drag over - dynamic placeholder positioning
+    gridContainer.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        const afterElement = getDragAfterElement(gridContainer, e.clientX, e.clientY);
+        if (afterElement === null) {
+            gridContainer.appendChild(placeholder);
+        } else {
+            gridContainer.insertBefore(placeholder, afterElement);
+        }
+    });
+
+    // Drop - replace placeholder with dragged item
+    gridContainer.addEventListener("drop", (e) => {
+        e.preventDefault();
+        if (draggedItem && placeholder) {
+            gridContainer.replaceChild(draggedItem, placeholder);
+        }
+    });
+
+    // Helper function: Get the closest element to insert before
+    function getDragAfterElement(container, x, y) {
+        const elements = [...container.querySelectorAll(".grid-item:not(.dragging)")];
+
+        return elements.reduce((closest, child) => {
             const box = child.getBoundingClientRect();
             const offset = y - box.top - box.height / 2;
             if (offset < 0 && offset > closest.offset) {
