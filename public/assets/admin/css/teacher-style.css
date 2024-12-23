@@ -3600,12 +3600,14 @@ Overview Questions Style Start
     margin-bottom: 30px;
     align-items: center;
 }
-.summary-content ul {
+.summary-content ul,
+.overview-content ul {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.summary-content ul li {
+.summary-content ul li,
+.overview-content ul li {
     line-height: normal;
     padding: 2px 2px;
     display: flex;
@@ -3613,15 +3615,9 @@ Overview Questions Style Start
     justify-content: space-between;
 }
 .summary-content ul li:nth-child(odd) {}
-.summary-content ul li:nth-child(even) {
+.summary-content ul li:nth-child(even),
+.overview-content ul li:nth-child(even) {
     background-color: #ddd;
-}
-
-.summary-content {
-    width: calc(100% - 350px);
-}
-.overview-summary .progress-holder {
-    width: 300px;
 }
 
 
