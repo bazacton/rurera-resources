@@ -2268,7 +2268,7 @@
                     <img src="/assets/default/svgs/grid.svg" alt="">
                     <input type="text" placeholder="Category" title="Category">
                     <div class="dropdown">
-                        <button class="btn btn-link text-white dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn-link dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Choose Category
                         </button>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="generalMenu" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(30px, 30px, 0px);">
