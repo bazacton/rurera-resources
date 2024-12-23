@@ -2765,7 +2765,14 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 .rureraform-table td:has(.progress) {
     padding: 0 !important;
 }
-.success-status strong {
+.rureraform-table .respondents {
+    color: #fc544b;
+}
+.rureraform-table .success-status {
+    background-color: #cddcd5;
+}
+.success-status strong,
+.success-status .percent-value {
     color: green;
 }
 
