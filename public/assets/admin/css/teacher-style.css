@@ -2321,11 +2321,6 @@ Tailer Hub Style Start
 }
 
 /* Properties Image Select Boxes Style Start */
-.img-select-box {
-    position: relative;
-    max-width: 48.666%;
-    flex: 0 0 48.666%;
-}
 .img-select-box input[type="radio"] {
     position: absolute;
     width: 0;
@@ -2353,6 +2348,7 @@ Tailer Hub Style Start
 .img-select-box label span {
     font-weight: 600;
     color: #333;
+    display: block;
 }
 .img-select-box input[type="radio"]:checked ~ label {
     background-color: #fff;
