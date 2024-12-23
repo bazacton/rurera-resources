@@ -2351,17 +2351,6 @@ $(document).ready(function () {
         });
     });
 </script>
-<script>
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip({
-            container: '.admin_teacher_role'
-        });
-        
-        $('.show-btn').on('click',function () {
-            $('.show-btn').toggleClass('show');
-        });
-    });
-</script>
 
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
@@ -2440,59 +2429,15 @@ $(document).ready(function () {
     });
 </script> -->
 <script>
-    const gridContainer = document.getElementById("gridContainer");
-    let draggedItem = null;
-    let placeholder = document.createElement("div");
-    placeholder.className = "placeholder";
-
-    // Drag start
-    gridContainer.addEventListener("dragstart", (e) => {
-        if (e.target.classList.contains("grid-item")) {
-            draggedItem = e.target;
-            setTimeout(() => e.target.classList.add("dragging"), 0);
-        }
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip({
+            container: '.admin_teacher_role'
+        });
+        
+        $('.show-btn').on('click',function () {
+            $('.show-btn').toggleClass('show');
+        });
     });
-
-    // Drag end
-    gridContainer.addEventListener("dragend", () => {
-        draggedItem.classList.remove("dragging");
-        placeholder.remove();
-        draggedItem = null;
-    });
-
-    // Drag over - dynamic placeholder positioning
-    gridContainer.addEventListener("dragover", (e) => {
-        e.preventDefault();
-        const afterElement = getDragAfterElement(gridContainer, e.clientX, e.clientY);
-        if (afterElement === null) {
-            gridContainer.appendChild(placeholder);
-        } else {
-            gridContainer.insertBefore(placeholder, afterElement);
-        }
-    });
-
-    // Drop - replace placeholder with dragged item
-    gridContainer.addEventListener("drop", (e) => {
-        e.preventDefault();
-        if (draggedItem && placeholder) {
-            gridContainer.replaceChild(draggedItem, placeholder);
-        }
-    });
-
-    // Helper function: Get the closest element to insert before
-    function getDragAfterElement(container, x, y) {
-        const elements = [...container.querySelectorAll(".grid-item:not(.dragging)")];
-
-        return elements.reduce((closest, child) => {
-            const box = child.getBoundingClientRect();
-            const offset = y - box.top - box.height / 2;
-            if (offset < 0 && offset > closest.offset) {
-                return { offset: offset, element: child };
-            } else {
-                return closest;
-            }
-        }, { offset: Number.NEGATIVE_INFINITY }).element;
-    }
 </script>
 
 @endpush
