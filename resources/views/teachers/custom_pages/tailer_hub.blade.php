@@ -2473,7 +2473,7 @@ $(document).ready(function () {
         }, { offset: Number.NEGATIVE_INFINITY }).element;
     }
 </script>
-<script>
+<!-- <script>
     // Open modal and activate tab based on URL fragment
     $(document).ready(function() {
         // Check if the URL contains a fragment
@@ -2495,7 +2495,7 @@ $(document).ready(function () {
             history.pushState("", document.title, window.location.pathname + window.location.search);
         });
     });
-</script>
+</script> -->
 <script>
     const gridContainer = document.getElementById("gridContainer");
     let draggedItem = null;
