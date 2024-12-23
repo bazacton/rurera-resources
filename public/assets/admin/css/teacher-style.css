@@ -3618,10 +3618,10 @@ Overview Questions Style Start
 }
 
 .summary-content {
-    width: calc(100% - 300px);
+    width: calc(100% - 350px);
 }
 .overview-summary .progress-holder {
-    width: 250px;
+    width: 300px;
 }
 
 
@@ -3632,10 +3632,10 @@ Overview Questions Style Start
     flex-wrap: wrap;
 }
 .overview-status .chart-holder {
-    width: 350px;
+    width: 300px;
 }
 .overview-status .status-content {
-    width: calc(100% - 300px);
+    width: calc(100% - 350px);
     padding-left: 30px;
 }
 /*************************************
