@@ -2308,22 +2308,22 @@
             <ul>
                 <li>
                     <img src="/assets/default/svgs/grid.svg" alt="">
-                    <input type="text" title="Category">
+                    <input type="text" placeholder="Category" title="Category">
                     <em>Empty</em>
                 </li>
                 <li>
                     <img src="/assets/default/svgs/clock.svg" alt="">
-                    <input type="text" title="Estimate duration">
+                    <input type="text" placeholder="Estimate duration" title="Estimate duration">
                     <em>Empty</em>
                 </li>
                 <li>
                     <img src="/assets/default/svgs/trainer.svg" alt="">
-                    <input type="text" title="Trainer">
+                    <input type="text" placeholder="Trainer" title="Trainer">
                     <em>Empty</em>
                 </li>
                 <li>
                     <img src="/assets/default/svgs/language.svg" alt="">
-                    <input type="text" title="Language">
+                    <input type="text" placeholder="Language" title="Language">
                     <em>Empty</em>
                 </li>
             </ul>
