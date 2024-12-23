@@ -2745,6 +2745,27 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 }
 /* General Knowledge Modal Style End */
 
+.rureraform-table th, .rureraform-table td {
+    background-color: rgba(0, 0, 0, 0.04);
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+.rureraform-table .table:not(.table-sm):not(.table-md):not(.dataTable) td, 
+.rureraform-table .table:not(.table-sm):not(.table-md):not(.dataTable) th {
+    height: auto;
+    padding: 5px 10px;
+}
+.rureraform-table .table:not(.table-sm) thead th {
+    border-bottom: 2px solid #fff;
+}
+.rureraform-table .progress {
+    border-radius: 0;
+    height: 30px;
+}
+.rureraform-table td:has(.progress) {
+    padding: 0 !important;
+}
+
 /*************************************
 Tailer Hub Style End
 **************************************/
