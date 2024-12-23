@@ -315,7 +315,7 @@
                                                 <tr>
                                                     <td>a shadow</td>
                                                     <td class="respondents">1 respondent</td>
-                                                    <td>20%</td>
+                                                    <td class="percent-value">20%</td>
                                                     <td>
                                                         <div class="progress">
                                                             <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
@@ -325,7 +325,7 @@
                                                 <tr>
                                                     <td>a text</td>
                                                     <td class="respondents">0 respondents</td>
-                                                    <td>0%</td>
+                                                    <td class="percent-value">0%</td>
                                                     <td>
                                                         <div class="progress">
                                                             <div class="progress-bar bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
@@ -335,7 +335,7 @@
                                                 <tr>
                                                     <td>a pop-up</td>
                                                     <td class="respondents">1 respondent</td>
-                                                    <td>20%</td>
+                                                    <td class="percent-value">20%</td>
                                                     <td>
                                                         <div class="progress">
                                                             <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
@@ -345,7 +345,7 @@
                                                 <tr class="success-status">
                                                     <td><strong>An action by the user that creates an effect</strong></td>
                                                     <td class="respondents">3 respondents</td>
-                                                    <td>60%</td>
+                                                    <td class="percent-value">60%</td>
                                                     <td>
                                                         <div class="progress">
                                                             <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
