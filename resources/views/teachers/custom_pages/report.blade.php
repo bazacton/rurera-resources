@@ -1258,7 +1258,7 @@
                 labels: [''],
                 datasets: [{
                     label: 'Value',
-                    data: [28],
+                    data: [10],
                     backgroundColor: 'lightgreen',
                     borderWidth: 1
                 }]
