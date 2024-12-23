@@ -2656,7 +2656,7 @@ body:has(.canvas-editable-options.active) .blank-canvas-sidebar{
     position: relative;
 }
 .general-knowledge-modal input[type="text"] {
-    padding: 0 0 0 20px;
+    padding: 0 0 0 25px;
     border: 0;
     outline: none;
     color: #6c757d;
