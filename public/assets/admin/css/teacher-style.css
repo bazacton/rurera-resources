@@ -3248,6 +3248,9 @@ span.field-separated span:after {
     outline: none;
     position: relative;
 }
+.view-explanation button i {
+    margin-right: 5px;
+}
 .view-explanation button:after {
     content: "";
     position: absolute;
