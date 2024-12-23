@@ -3647,6 +3647,9 @@ Overview Questions Style Start
 }
 
 
+.questions-overview-status {
+    margin: 0 0 50px;
+}
 .status-lable em {
     height: 22px;
     width: 22px;
@@ -3660,6 +3663,7 @@ Overview Questions Style Start
 .status-lable img {
     max-width: 100%;
     max-height: 100%;
+    filter: invert(99%) sepia(25%) saturate(2%) hue-rotate(312deg) brightness(103%) contrast(100%);
 }
 .status-lable {
     display: inline-flex;
@@ -3736,6 +3740,7 @@ Overview Questions Style Start
 .quiz-info span em img {
     max-width: 100%;
     max-height: 100%;
+    filter: invert(99%) sepia(25%) saturate(2%) hue-rotate(312deg) brightness(103%) contrast(100%);
 }
 .quiz-info span:before {
     content: "";
