@@ -2336,14 +2336,6 @@ $(document).ready(function () {
     });
   });
 
-  // Re-enable auto-hide on mouse leave
-  $scrollableDiv.on("mouseleave", function () {
-    $scrollableDiv.getNiceScroll().forEach(scroll => {
-      scroll.opt.autohidemode = true; // Re-enable auto-hide
-      scroll.hide(); // Hide scrollbars after mouse leaves
-    });
-  });
-
   // Reinitialize NiceScroll when the modal is shown
   $(".blank-canvas-modal").on("shown.bs.modal", function () {
     $scrollableDiv.getNiceScroll().resize();
