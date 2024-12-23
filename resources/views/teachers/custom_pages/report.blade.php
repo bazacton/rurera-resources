@@ -11,6 +11,57 @@
     <div class="section-body">
         <div class="row">
             <div class="col-12">
+                <div class="questions-overview">
+                    <h2>Overview</h2>
+                    <div class="overview-summary">
+                        <div class="progress-holder">
+                            <div class="progress-box">
+                                <div class="circle_percent" data-percent="164">
+                                    <div class="circle_inner">
+                                        <div class="round_per"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary-content">
+                            <h3>summary</h3>
+                            <ul>
+                                <li>
+                                    <span class="summary-lable">Created on</span>
+                                    <strong>September 9, 2019</strong>
+                                </li>
+                                <li>
+                                    <span class="summary-lable">Launched on</span>
+                                    <strong>September 9, 2019</strong>
+                                </li>
+                                <li>
+                                    <span class="summary-lable">Last responded</span>
+                                    <strong>September 9, 2019</strong>
+                                </li>
+                                <li>
+                                    <span class="summary-lable">Completed</span>
+                                    <strong>164 respondents</strong>
+                                </li>
+                                <li>
+                                    <span class="summary-lable">Abandoned</span>
+                                    <strong>437 respondents</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="overview-status">
+                        <div class="chart-holder">
+                            <canvas id="statusChart"></canvas>
+                        </div>
+                        <div class="status-content">
+                            <h3>Sucsess</h3>
+                            <p>Out of all the tasks completed by respondents, 28.0% ended up at a "correct" answer</p>
+                        </div>
+                    </div>
+                    <div class="overview-time"></div>
+                </div>
+            </div>
+            <div class="col-12">
                 <div class="section-header">
                     <h1>Reports</h1>
                     <div class="section-header-breadcrumb">
@@ -1167,6 +1218,7 @@
 @endsection
 
 @push('scripts_bottom')
+    <script src="/assets/default/js/overview-chart.js"></script>
     <script>
     $(document).ready(function () {
         /*Circle Progress Function Start*/
@@ -1197,5 +1249,37 @@
         });
         /*Circle Progress Function End*/
     });
+    </script>
+    <script>
+        const ctx = document.getElementById('statusChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Category'],
+                datasets: [{
+                    label: 'Value',
+                    data: [28],
+                    backgroundColor: 'lightgreen',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                indexAxis: 'y', // Makes it a horizontal bar chart
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        max: 100 // Ensure it goes up to 100
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false // Hide the legend
+                    },
+                    tooltip: {
+                        enabled: false // Disable tooltips
+                    }
+                }
+            }
+        });
     </script>
 @endpush
