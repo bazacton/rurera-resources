@@ -3586,3 +3586,43 @@ Qustions AI Tabs Style End
     border: 2px dashed #aaa;
     background-color: #f0f8ff;
 }
+
+/*************************************
+Overview Questions Style Start
+**************************************/
+.questions-overview {
+    max-width: 75%;
+    margin-left: auto;
+}
+.overview-summary {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.summary-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.summary-content ul li {
+    line-height: normal;
+    padding: 2px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.summary-content ul li:nth-child(odd) {}
+.summary-content ul li:nth-child(even) {
+    background-color: #ddd;
+}
+
+.summary-content {
+    width: calc(100% - 300px);
+}
+.overview-summary .progress-holder {
+    width: 250px;
+}
+/*************************************
+Overview Questions Style End
+**************************************/
