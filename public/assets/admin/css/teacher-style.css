@@ -3635,7 +3635,7 @@ Overview Questions Style Start
     width: 350px;
 }
 .overview-status .status-content {
-    width: calc(100% - 600px);
+    width: calc(100% - 300px);
     padding-left: 30px;
 }
 /*************************************
