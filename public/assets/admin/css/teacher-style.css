@@ -3763,7 +3763,7 @@ Overview Questions Style Start
 }
 .quiz-stats ul li:before {
     content: "";
-    height: calc(100% - 20px);
+    height: calc(100% - 15px);
     vertical-align: middle;
     border-left: 2px solid #ddd;
     position: absolute;
@@ -3779,7 +3779,6 @@ Overview Questions Style Start
 }
 .quiz-stats ul li .stats-lable {
     font-weight: 600;
-    font-size: 16px;
     margin: 0 0 10px;
 }
 .percent-holder {
@@ -3815,9 +3814,10 @@ Overview Questions Style Start
     transform: translate(-50%, -50%);
 }
 .quiz-stats ul li strong {
-    font-size: 16px;
     color: #000;
-    margin-top: auto;
+    min-height: 35px;
+    display: inline-flex;
+    align-items: center;
 }
 /*************************************
 Overview Questions Style End
