@@ -51,14 +51,43 @@
                     </div>
                     <div class="overview-status">
                         <div class="chart-holder">
-                            <canvas id="statusChart" width="250" height="125"></canvas>
+                            <canvas id="statusChart"></canvas>
                         </div>
                         <div class="status-content">
                             <h3>Sucsess</h3>
                             <p>Out of all the tasks completed by respondents, 28.0% ended up at a "correct" answer</p>
                         </div>
                     </div>
-                    <div class="overview-time"></div>
+                    <div class="overview-time">
+                        <div class="chart-holder">
+                            <canvas id="timeChart"></canvas>
+                        </div>
+                        <div class="overview-content">
+                            <h3>Time Taken</h3>
+                            <ul>
+                                <li>
+                                    <span class="summary-lable">Lowest observed time</span>
+                                    <strong>0s (0.00m)</strong>
+                                </li>
+                                <li>
+                                    <span class="summary-lable">Lower quartile</span>
+                                    <strong>2m 5s (2.09m)</strong>
+                                </li>
+                                <li>
+                                    <span class="summary-lable">Median</span>
+                                    <strong>3m 18s (3.30m)</strong>
+                                </li>
+                                <li>
+                                    <span class="summary-lable">Upper quartile</span>
+                                    <strong>5m 10s (5.16m)</strong>
+                                </li>
+                                <li>
+                                    <span class="summary-lable">Highest observed time</span>
+                                    <strong>30m 60s (30.10m)</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-12">
