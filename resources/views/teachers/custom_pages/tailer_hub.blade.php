@@ -2304,7 +2304,7 @@
         </div>
         <div class="modal-body">
           <div class="text-holder">
-            <h2>General Knowledge & Methodology</h2>
+            <h2 class="editable" contenteditable="true">General Knowledge & Methodology</h2>
             <ul>
                 <li>
                     <span><img src="/assets/default/svgs/grid.svg" alt=""> Category</span>
@@ -2386,10 +2386,23 @@ $(document).ready(function () {
   $(".blank-canvas-modal").on("shown.bs.modal", function () {
     $scrollableDiv.getNiceScroll().resize();
   });
+  
 });
+</script>
+<script>
+    document.querySelectorAll('.editable').forEach(element => {
+        element.addEventListener('focus', () => {
+            // Save the initial text if needed
+            element.dataset.oldText = element.textContent;
+        });
 
-
-
+        element.addEventListener('blur', () => {
+            // Handle the change if needed
+            if (element.textContent !== element.dataset.oldText) {
+                console.log("Text changed to:", element.textContent);
+            }
+        });
+    });
 </script>
 
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
