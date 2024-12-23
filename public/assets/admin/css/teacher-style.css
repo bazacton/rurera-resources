@@ -3276,6 +3276,7 @@ span.field-separated span:after {
 }
 .view-explanation textarea {
     margin-top: 10px;
+    height: 120px;
 }
 /* View-Explanation Style End */
 
