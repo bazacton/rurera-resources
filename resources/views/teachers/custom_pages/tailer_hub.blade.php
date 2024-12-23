@@ -2328,13 +2328,6 @@ $(document).ready(function () {
     autohidemode: true // Auto-hide enabled initially
   });
 
-  // Show NiceScroll and disable auto-hide on mouse enter
-  $scrollableDiv.on("mouseenter", function () {
-    $scrollableDiv.getNiceScroll().forEach(scroll => {
-      scroll.opt.autohidemode = false; // Disable auto-hide
-      scroll.show(); // Make scrollbars visible
-    });
-  });
 
   // Reinitialize NiceScroll when the modal is shown
   $(".blank-canvas-modal").on("shown.bs.modal", function () {
