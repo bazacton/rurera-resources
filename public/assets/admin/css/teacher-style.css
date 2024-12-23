@@ -2659,6 +2659,7 @@ body:has(.canvas-editable-options.active) .blank-canvas-sidebar{
     padding: 0 0 0 20px;
     border: 0;
     outline: none;
+    color: #6c757d;
 }
 .general-knowledge-modal .text-holder > ul li img {
     max-width: 18px;
