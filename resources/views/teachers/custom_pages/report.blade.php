@@ -1304,7 +1304,7 @@
         $(".Overview_percent").each(function() {
             var $this = $(this),
             $dataV = $this.data("percent"),
-            $dataDeg = $dataV * 3,
+            $dataDeg = $dataV * 3.6,
             $round = $this.find(".round_per");
             $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)"); 
             $this.append('<div class="circle_inbox"><span class="percent_text"></span></div>');
