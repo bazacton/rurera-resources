@@ -2325,14 +2325,6 @@ $(document).ready(function () {
     }
   }
 
-  // Show NiceScroll and disable auto-hide on mouse enter
-  $scrollableDiv.on("mouseenter", function () {
-    applyToNiceScrollInstances(scroll => {
-      scroll.opt.autohidemode = false; // Disable auto-hide
-      scroll.show(); // Make scrollbars visible
-    });
-  });
-
   // Re-enable auto-hide on mouse leave
   $scrollableDiv.on("mouseleave", function () {
     applyToNiceScrollInstances(scroll => {
