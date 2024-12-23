@@ -3788,6 +3788,18 @@ Overview Questions Style Start
     transform: none;
     font-size: 16px;
 }
+.quiz-stats ul li .stats_percent:before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 100%;
+    content: "";
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
 /*************************************
 Overview Questions Style End
 **************************************/
