@@ -4,6 +4,9 @@
 .admin_teacher_role select:focus {
     outline: none;
 }
+.admin_teacher_role:has(.modal.show) {
+    overflow: hidden;
+}
 /* Admin Left Menue Style Start */
 .admin_teacher_role .main-sidebar {
     background-color: #fff;
