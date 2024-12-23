@@ -42,7 +42,7 @@
                         <ul>
                             <li>
                                 <span class="stats-lable">Accuracy</span>
-                                <div class="circle_percent" data-percent="50">
+                                <div class="stats_percent" data-percent="50">
                                     <div class="circle_inner">
                                         <div class="round_per"></div>
                                     </div>
@@ -50,7 +50,7 @@
                             </li>
                             <li>
                                 <span class="stats-lable">Completed Course</span>
-                                <div class="circle_percent" data-percent="100">
+                                <div class="stats_percent" data-percent="100">
                                     <div class="circle_inner">
                                         <div class="round_per"></div>
                                     </div>
