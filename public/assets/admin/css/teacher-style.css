@@ -3941,7 +3941,6 @@ Overview Questions Style Start
 .quiz-stats ul li .circle_inbox .percent_text {
     position: inherit;
     transform: none;
-    font-size: 16px;
 }
 .quiz-stats ul li .stats_percent:before {
     position: absolute;
