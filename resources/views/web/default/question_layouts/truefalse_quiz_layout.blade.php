@@ -7,8 +7,8 @@
 			
 				<div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
 					<input class="editor-field" type="radio" name="field-{{$element_unique_id}}" id="field-{{$element_unique_id}}-0" value="True" />
-					<span class="inner-label">True</span></label>
 					<label for="field-{{$element_unique_id}}-0">
+					<span class="inner-label">True</span></label>
 				</div>
 				
 				<div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
