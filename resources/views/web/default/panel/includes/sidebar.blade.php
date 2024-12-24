@@ -217,7 +217,7 @@
                 <li class="sidenav-item {{ (request()->is('logout') or request()->is('logout/*')) ? 'sidenav-item-active' : '' }}">
                     <a class="d-flex align-items-center" href="/logout" data-toggle="tooltip" data-placement="left" title="Logout">
                         <span class="sidenav-setting-icon sidenav-item-icon mr-20">
-                            <img src="/assets/default/svgs/shutdown.svg">
+                            <img src="/assets/default/img/sidebar/logout.svg">
                         </span>
                     </a>
                     <a href="/logout" class="font-16 nav-sub-title">Logout</a>
