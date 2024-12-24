@@ -157,7 +157,7 @@
                     <li class="sidenav-item {{ (request()->is('shop') or request()->is('shop/*')) ? 'sidenav-item-active' : '' }}">
                         <a class="d-flex align-items-center" href="/shop" data-toggle="tooltip" data-placement="left" title="Shop">
                             <span class="sidenav-item-icon mr-20">
-                                <img src="/assets/default/svgs/shop.svg">
+                                <img src="/assets/default/img/sidebar/shop.svg">
                             </span>
                         </a>
                         <a href="/shop" class="font-16 nav-sub-title">Shop</a>
