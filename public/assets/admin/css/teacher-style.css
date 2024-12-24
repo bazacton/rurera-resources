@@ -1287,10 +1287,10 @@ New Quiz Page Style Start
     border-radius: 2px;
     margin-top: 3px;
 }
-.quiz-status-tooltip {
+/* .quiz-status-tooltip {
     display: inline;
     visibility: hidden;
-}
+} */
 .quiz-status-tooltip .tooltip-box {
     border: 1px solid #ddd;
     border-radius: 5px;
