@@ -628,38 +628,13 @@
                                                     <td class="points">
                                                         5 <small>(83%)</small>
                                                     </td>
-                                                    <td>
-                                                        <div class="quiz-status-tooltip incorrect">
-                                                            <div class="tooltip-box">
-                                                                <div class="tooltip-top">
-                                                                    <div class="status-box">
-                                                                        <span class="incorrect"><i>✕</i> Incorrect</span>
-                                                                        <button type="button"><img src="/assets/default/svgs/checkbox.svg" alt=""></button>
-                                                                    </div>
-                                                                    <div class="attempt-info">
-                                                                        <span>
-                                                                            <em>16</em>
-                                                                            time
-                                                                        </span>
-                                                                        <span>
-                                                                            <em>0</em>
-                                                                            point
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="quiz-type">
-                                                                    <span>Multiple Choice question</span>
-                                                                    <h5>8. Science helps us in:</h5>
-                                                                </div>
-                                                                <div class="user-response">
-                                                                    <span>Meheak B's response</span>
-                                                                    <h5><i>✕</i> Standing</h5>
-                                                                </div>
-                                                                <div class="btn-holder">
-                                                                    <button type="button" class="view-all-btn">View for all students</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <td 
+                                                    data-container="quiz-tabs"
+                                                    data-toggle="popover"
+                                                    data-placement="top"
+                                                    title="Popover xd"
+                                                    data-content="<div class="quiz-status-tooltip incorrect"><div class="tooltip-box"><div class="tooltip-top"><div class="status-box"><span class="incorrect"><i>✕</i>Incorrect</span><button type="button"><img src="/assets/default/svgs/checkbox.svg" alt=""></button></div><div class="attempt-info"><span><em>16</em>time</span><span><em>0</em>point</span></div></div><div class="quiz-type"><span>Multiple Choice question</span><h5>8. Science helps us in:</h5></div><div class="user-response"><span>Meheak B's response</span><h5><i>✕</i>Standing</h5></div><div class="btn-holder"><button type="button" class="view-all-btn">View for all students</button></div></div></div>">
+                                                        
                                                         <em class="urgent"><i>✓</i></em>
                                                     </td>
                                                     <td>
@@ -685,7 +660,7 @@
                                                     </td>
 
                                                     <td>
-                                                        <div class="quiz-status-tooltip incorrect">
+                                                        <!-- <div class="quiz-status-tooltip incorrect">
                                                             <div class="tooltip-box">
                                                                 <div class="tooltip-top">
                                                                     <div class="status-box">
@@ -715,7 +690,7 @@
                                                                     <button type="button" class="view-all-btn">View for all students</button>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                         <em class="urgent"><i>✓</i></em>
                                                     </td>
                                                     <td>
