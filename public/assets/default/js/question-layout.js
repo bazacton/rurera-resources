@@ -99,8 +99,8 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
         clearInterval(Questioninterval);
     }
 
-    //rurera_loader($(this), 'div');
-	question_submit_process = false;
+    rurera_loader($(this), 'div');
+	//question_submit_process = false;
 
     var quiz_type = $(".question-area-block").attr('data-type');
     if (!rurera_is_field(quiz_type)) {
@@ -139,7 +139,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
         var field_identifier = field_id;
         var field_identifier = field_identifier.replace(/field-/g, '');
         var field_type = $(this).attr('data-field_type');
-		if(field_type == ''){
+		if(field_type == '' || field_type == 'undefined' || field_type == undefined){
 			var field_type = $(this).attr('type');
 		}
         const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
