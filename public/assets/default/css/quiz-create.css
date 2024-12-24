@@ -1535,7 +1535,6 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .nav .nav-link.inner_dropdown_questions.api_pending,
 .edit-questions-tabs .nav .nav-link.inner_text_questions.api_pending,
 .edit-questions-tabs .nav .nav-link.truefalse_quiz_questions.api_pending {
-    border-bottom-color: #bbb !important;
     color: #bbb !important;
 }
 .edit-questions-tabs .nav .nav-link.api_pending {
