@@ -2379,7 +2379,7 @@
                         </button>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="generalMenu" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(30px, 30px, 0px);">
                            <div class="select-languages-holder">
-                                <div class="categories">
+                                <div class="languages">
                                     <span>Select Languages</span>
                                     <a href="#" class="active">English</a>
                                     <a href="#">Deutsch</a>
