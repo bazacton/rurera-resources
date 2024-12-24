@@ -630,11 +630,11 @@
                                                     </td>
                                                     <td 
                                                         data-container="quiz-tabs"
-                                                        data-bs-toggle="popover"
-                                                        data-bs-placement="top"
-                                                        data-bs-html="true"
-                                                        data-bs-content
-                                                        data-bs-content="
+                                                        data-toggle="popover"
+                                                        data-placement="top"
+                                                        data-html="true"
+                                                        title="Popover xd"
+                                                        data-content="
                                                         <div class='quiz-status-tooltip incorrect'>
                                                             <div class='tooltip-box'>
                                                                 <div class='tooltip-top'>
@@ -1424,13 +1424,9 @@
             } 
         });
 
-        document.addEventListener('DOMContentLoaded', function () {
-        const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-        const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl);
-        });
-    });
-
+        $(function() {
+            $('[data-toggle="popover"]').popover()
+        })
 
     });
     </script>
