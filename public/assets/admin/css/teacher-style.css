@@ -2807,6 +2807,8 @@ Qustions AI Tabs Style Start
     align-items: center;
     justify-content: end;
     flex-direction: column;
+    width: 110%;
+    padding-right: 10%;
 }
 .question-ai-tabs .nav-tabs-holder .nav-tabs .nav-item .nav-link {
     background-color: #c8dfed;
