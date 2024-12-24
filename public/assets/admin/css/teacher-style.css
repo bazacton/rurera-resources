@@ -2765,6 +2765,7 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 .rureraform-table td:has(.progress) {
     padding: 0 !important;
     border: 0;
+    min-width: 100px;
 }
 .rureraform-table td .progress-bar.bg-success {
     background-color: #2a845e !important;
