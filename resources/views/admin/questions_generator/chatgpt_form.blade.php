@@ -117,6 +117,7 @@
 													@php 
 													$total_pending_questions = $total_unreviewed_questions = 0;
 													$expected_part_questions = getPartQuestions($subTopicObj->difficulty_level);
+													$expected_part_questions = ($expected_part_questions*$subTopicObj->topicPartItemPrompts->count());
 													$total_part_questions = $subTopicObj->topicPartItemQuestions->count();
 													$pending_part_questions = $expected_part_questions-$total_part_questions;
 													$pending_part_questions = ( $pending_part_questions < 0 )? 0 : $pending_part_questions;
