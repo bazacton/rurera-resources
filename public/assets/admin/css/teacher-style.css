@@ -3777,8 +3777,7 @@ Overview Questions Style Start
 }
 
 
-.overview-status .row,
-.overview-time .row {
+.questions-overview .row {
     align-items: center;
 }
 .overview-status {
