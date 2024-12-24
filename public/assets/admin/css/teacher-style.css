@@ -3782,6 +3782,9 @@ Overview Questions Style Start
 .overview-time .row {
     align-items: center;
 }
+.overview-status {
+    margin-bottom: 30px;
+}
 .questions-overview-status {
     margin: 0 0 50px;
 }
