@@ -2781,6 +2781,12 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     transform: translateY(-50%);
     content: "\2713";
     color: #797f84;
+    opacity: 0;
+    visibility: hidden;
+}
+.rureraform-table td .progress-bar.bg-success:after {
+    opacity: 1;
+    visibility: visible;
 }
 .rureraform-table .respondents {
     color: #fc544b;
