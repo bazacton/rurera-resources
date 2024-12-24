@@ -69,6 +69,11 @@ Left SideBar-menu Start
 .sidebar-menu-holder .tooltip {
     left: 100% !important;
 }
+@media (min-width:1601px) {
+    .sidebar-menu-holder .tooltip {
+        left: 0 !important;
+    }
+}
 .sidebar-menu-holder .tooltip-inner {white-space: nowrap;}
 #nextBadgeChart path {stroke-width: 10px; stroke-dasharray: 10, 20; stroke-linecap: round;}
 .not-verified-alert {background-color: #d4efff;}
