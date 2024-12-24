@@ -2779,6 +2779,9 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     visibility: visible;
     opacity: 1;
 }
+.general-knowledge-modal p {
+    margin-bottom: 0;
+}
 /* General Knowledge Modal Style End */
 
 .rureraform-table th, .rureraform-table td {
