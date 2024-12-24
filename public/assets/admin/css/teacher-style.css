@@ -2776,10 +2776,11 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 }
 .rureraform-table td .progress-bar:after {
     position: absolute;
-    right: 0;
+    right: -15px;
     top: 50%;
     transform: translateY(-50%);
     content: "\2713";
+    font-size: 16px;
     color: #797f84;
     opacity: 0;
     visibility: hidden;
