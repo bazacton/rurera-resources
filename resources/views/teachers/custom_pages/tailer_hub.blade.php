@@ -303,14 +303,6 @@
                                 <div class="rureraform-col rureraform-col-12">
                                     <div class="rureraform-table">
                                         <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Option</th>
-                                                    <th>Respondents</th>
-                                                    <th>Percentage</th>
-                                                    <th>Progress</th>
-                                                </tr>
-                                            </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>a shadow</td>
