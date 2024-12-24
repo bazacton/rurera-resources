@@ -2750,14 +2750,15 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     background: rgb(240, 236, 238);
     background: linear-gradient(0deg, rgba(240, 236, 238, 1) 4%, rgba(255, 255, 255, 1) 100%);
     padding: 20px;
+    margin-bottom: 30px;
 }
 .rureraform-table .table {
     margin: 0;
 }
 .rureraform-table th, .rureraform-table td {
     background-color: rgba(0, 0, 0, 0.04);
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 .rureraform-table .table:not(.table-sm):not(.table-md):not(.dataTable) td, 
 .rureraform-table .table:not(.table-sm):not(.table-md):not(.dataTable) th {
