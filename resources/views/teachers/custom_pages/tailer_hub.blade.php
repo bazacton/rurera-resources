@@ -318,7 +318,7 @@
                                                     <td class="percent-value">20%</td>
                                                     <td>
                                                         <div class="progress">
-                                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -328,7 +328,7 @@
                                                     <td class="percent-value">0%</td>
                                                     <td>
                                                         <div class="progress">
-                                                            <div class="progress-bar bg-secondary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -338,7 +338,7 @@
                                                     <td class="percent-value">20%</td>
                                                     <td>
                                                         <div class="progress">
-                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
                                                     </td>
                                                 </tr>
