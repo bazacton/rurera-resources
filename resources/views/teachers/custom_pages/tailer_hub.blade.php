@@ -2321,8 +2321,8 @@
             <h2 class="editable" contenteditable="true">General Knowledge & Methodology</h2>
             <ul>
                 <li>
-                    <img src="/assets/default/svgs/grid.svg" alt="">
-                    <input type="text" placeholder="Category" title="Category">
+                    <img src="/assets/default/svgs/title.svg" alt="">
+                    <input type="text" placeholder="Title" title="Title">
                     <div class="dropdown">
                         <button class="btn-link dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Choose Category
@@ -2346,18 +2346,18 @@
                     </div>
                 </li>
                 <li>
-                    <img src="/assets/default/svgs/clock.svg" alt="">
-                    <input type="text" placeholder="Estimate duration" title="Estimate duration">
+                    <img src="/assets/default/svgs/grades.svg" alt="">
+                    <input type="text" placeholder="Grade" title="Grade">
                     <em>Empty</em>
                 </li>
                 <li>
-                    <img src="/assets/default/svgs/trainer.svg" alt="">
-                    <input type="text" placeholder="Trainer" title="Trainer">
+                    <img src="/assets/default/svgs/book-saved.svg" alt="">
+                    <input type="text" placeholder="Subject" title="Subject">
                     <em>Empty</em>
                 </li>
                 <li>
-                    <img src="/assets/default/svgs/language.svg" alt="">
-                    <input type="text" placeholder="Language" title="Language">
+                    <img src="/assets/default/svgs/teacher-with-stick.svg" alt="">
+                    <input type="text" placeholder="Co-teacher" title="Co-teacher">
                     <div class="dropdown">
                         <button class="btn-link dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select Language
@@ -2375,6 +2375,21 @@
                            </div> 
                         </div>
                     </div>
+                </li>
+                <li>
+                    <img src="/assets/default/svgs/trainer.svg" alt="">
+                    <input type="text" placeholder="Start Date" title="Start Date">
+                    <em>Empty</em>
+                </li>
+                <li>
+                    <img src="/assets/default/svgs/trainer.svg" alt="">
+                    <input type="text" placeholder="Deadline :" title="Deadline :">
+                    <em>Empty</em>
+                </li>
+                <li>
+                    <img src="/assets/default/svgs/trainer.svg" alt="">
+                    <input type="text" placeholder="Participant attempts :" title="Participant attempts :">
+                    <em>Empty</em>
                 </li>
             </ul>
             <div class="description-field">
