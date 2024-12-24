@@ -2765,6 +2765,20 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 .languages a.active {
     background-color: #eff3f4;
 }
+.languages a:after {
+    content: "\2713";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    color: green;
+    transform: translateY(-50%);
+    visibility: hidden;
+    opacity: 0;
+}
+.languages a.active:after {
+    visibility: visible;
+    opacity: 1;
+}
 /* General Knowledge Modal Style End */
 
 .rureraform-table th, .rureraform-table td {
