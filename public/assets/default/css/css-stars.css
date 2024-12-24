@@ -82,6 +82,18 @@ body .lms-chapter-area .lms-chapter-ul >li ul > li a {vertical-align: top; paddi
   content: counter(my-sec-counter, upper-alpha ) ". ";
 }
 /* .lms-chapter-area{counter-reset: my-sec-counter;} */
+.lms-chapter-ul-outer li ul {
+    padding: 0 0 0 70px;
+}
+body .lms-chapter-area .lms-chapter-ul-outer li ul li a {
+    padding-left: 5px;
+    font-size: 14px;
+}
+body .lms-chapter-area .lms-chapter-ul-outer li ul li {
+    list-style: lower-alpha;
+    padding: 5px 0;
+    line-height: normal;
+}
 
 @media (max-width: 992px) {
     /* .lms-chapter-area .lms-chapter-ul {
