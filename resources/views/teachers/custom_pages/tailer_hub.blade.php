@@ -2377,17 +2377,17 @@
                     </div>
                 </li>
                 <li>
-                    <img src="/assets/default/svgs/trainer.svg" alt="">
+                    <img src="/assets/default/svgs/calendar-days.svg" alt="">
                     <input type="text" placeholder="Start Date" title="Start Date">
                     <em>Empty</em>
                 </li>
                 <li>
-                    <img src="/assets/default/svgs/trainer.svg" alt="">
+                    <img src="/assets/default/svgs/deadlines.svg" alt="">
                     <input type="text" placeholder="Deadline :" title="Deadline :">
                     <em>Empty</em>
                 </li>
                 <li>
-                    <img src="/assets/default/svgs/trainer.svg" alt="">
+                    <img src="/assets/default/svgs/attempt.svg" alt="">
                     <input type="text" placeholder="Participant attempts :" title="Participant attempts :">
                     <em>Empty</em>
                 </li>
