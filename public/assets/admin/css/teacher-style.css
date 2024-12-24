@@ -2772,6 +2772,15 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 .rureraform-table td .progress-bar {
     background-color: #283339;
     padding-left: 5px;
+    position: relative;
+}
+.rureraform-table td .progress-bar:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "\2713";
+    color: #797f84;
 }
 .rureraform-table .respondents {
     color: #fc544b;
