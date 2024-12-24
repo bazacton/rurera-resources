@@ -2348,27 +2348,7 @@
                 <li>
                     <img src="/assets/default/svgs/clock.svg" alt="">
                     <input type="text" placeholder="Estimate duration" title="Estimate duration">
-                    <div class="dropdown">
-                        <button class="btn-link dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Choose Category
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="generalMenu" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(30px, 30px, 0px);">
-                           <div class="select-categories-holder">
-                                <div class="selected-category">
-                                    <a href="#">Prototyping</a>
-                                </div>
-                                <div class="categories">
-                                    <span>Select category or create one</span>
-                                    <a href="#" class="active">Prototyping</a>
-                                    <a href="#">UI/UX</a>
-                                    <a href="#">Design</a>
-                                    <a href="#">Card</a>
-                                    <a href="#">Not Urgent</a>
-                                    <a href="#">Line</a>
-                                </div>
-                           </div> 
-                        </div>
-                    </div>
+                    <em>Empty</em>
                 </li>
                 <li>
                     <img src="/assets/default/svgs/trainer.svg" alt="">
