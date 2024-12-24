@@ -1304,6 +1304,7 @@
 
 @push('scripts_bottom')
     <script src="/assets/default/js/overview-chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script>
     $(document).ready(function () {
         /*Circle Progress Function Start*/
