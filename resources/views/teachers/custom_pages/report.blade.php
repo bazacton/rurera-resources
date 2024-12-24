@@ -11,7 +11,7 @@
     <div class="section-body">
         <div class="row">
             <div class="col-12">
-                <h2>Overview</h2>
+                <h2 class="mb-20">Overview</h2>
                 <div class="questions-overview-status">
                     <div class="status-header">
                         <div class="status">
