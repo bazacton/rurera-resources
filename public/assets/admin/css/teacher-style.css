@@ -1353,17 +1353,17 @@ New Quiz Page Style Start
     flex-wrap: wrap;
     margin-bottom: 15px;
 }
-.overview-table .status-box span {
+.status-box span {
     background-color: #ffbfcf;
     color: #f23b69;
     padding: 3px 10px;
     border-radius: 3px;
 }
-.overview-table .status-box span i {
+.status-box span i {
     font-size: 12px;
     margin-right: 5px;
 }
-.overview-table .attempt-info em {
+.attempt-info em {
     display: inline-flex;
     font-size: 16px;
     font-style: normal;
