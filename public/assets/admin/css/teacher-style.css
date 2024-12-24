@@ -3729,7 +3729,6 @@ Overview Questions Style Start
 **************************************/
 .questions-overview {
     max-width: 75%;
-    margin-left: auto;
 }
 .questions-overview .overview_percent {
     font-size: 110px;
