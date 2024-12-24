@@ -2760,6 +2760,7 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 .rureraform-table .progress {
     border-radius: 0;
     height: 30px;
+    background-color: inherit;
 }
 .rureraform-table td:has(.progress) {
     padding: 0 !important;
