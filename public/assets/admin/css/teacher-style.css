@@ -3955,6 +3955,9 @@ Overview Questions Style Start
     display: inline-flex;
     align-items: center;
 }
+.overview-time img {
+    max-width: 100%;
+}
 /*************************************
 Overview Questions Style End
 **************************************/
