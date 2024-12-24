@@ -157,7 +157,7 @@
                     <li class="sidenav-item {{ (request()->is('shop') or request()->is('shop/*')) ? 'sidenav-item-active' : '' }}">
                         <a class="d-flex align-items-center" href="/shop" data-toggle="tooltip" data-placement="left" title="Shop">
                             <span class="sidenav-item-icon mr-20">
-                                <img src="/assets/default/img/sidebar/shop.svg">
+                                <img src="/assets/default/svgs/shop.svg">
                             </span>
                         </a>
                         <a href="/shop" class="font-16 nav-sub-title">Shop</a>
@@ -217,7 +217,7 @@
                 <li class="sidenav-item {{ (request()->is('logout') or request()->is('logout/*')) ? 'sidenav-item-active' : '' }}">
                     <a class="d-flex align-items-center" href="/logout" data-toggle="tooltip" data-placement="left" title="Logout">
                         <span class="sidenav-setting-icon sidenav-item-icon mr-20">
-                            <img src="/assets/default/img/sidebar/logout.svg">
+                            <img src="/assets/default/svgs/shutdown.svg">
                         </span>
                     </a>
                     <a href="/logout" class="font-16 nav-sub-title">Logout</a>
