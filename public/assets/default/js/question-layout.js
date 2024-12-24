@@ -99,8 +99,8 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
         clearInterval(Questioninterval);
     }
 
-    rurera_loader($(this), 'div');
-	//question_submit_process = false;
+    //rurera_loader($(this), 'div');
+	question_submit_process = false;
 
     var quiz_type = $(".question-area-block").attr('data-type');
     if (!rurera_is_field(quiz_type)) {
@@ -138,7 +138,10 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
         var field_id = $(this).attr('id');
         var field_identifier = field_id;
         var field_identifier = field_identifier.replace(/field-/g, '');
-        var field_type = $(this).attr('type');
+        var field_type = $(this).attr('data-field_type');
+		if(field_type == ''){
+			var field_type = $(this).attr('type');
+		}
         const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
         var field_value = $(this).val();
 
@@ -165,7 +168,21 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
             var field_identifier = field_name.replace(/field-/g, '');
             identifier
             var identifier = $(this).attr('data-identifier');
-            question_data[0][identifier] = {};
+            //question_data[0][identifier] = {};
+			if (typeof question_data[0][identifier] === "undefined") {
+				question_data[0][identifier] = {};
+			}
+            question_data[0][identifier][field_identifier] = field_value;
+
+        } else if (field_type == 'inner_text') {
+            var field_identifier = field_name.replace(/field-/g, '');
+            var field_identifier = field_name.replace(/field-/g, '');
+            identifier
+            var identifier = $(this).attr('data-identifier');
+			if (typeof question_data[0][identifier] === "undefined") {
+				question_data[0][identifier] = {};
+			}
+            //question_data[0][identifier] = {};	
             question_data[0][identifier][field_identifier] = field_value;
 
         } else {
