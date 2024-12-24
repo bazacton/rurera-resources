@@ -2353,6 +2353,11 @@
                 <li>
                     <img src="/assets/default/svgs/trainer.svg" alt="">
                     <input type="text" placeholder="Trainer" title="Trainer">
+                    <em>Empty</em>
+                </li>
+                <li>
+                    <img src="/assets/default/svgs/language.svg" alt="">
+                    <input type="text" placeholder="Language" title="Language">
                     <div class="dropdown">
                         <button class="btn-link dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select Language
@@ -2370,11 +2375,6 @@
                            </div> 
                         </div>
                     </div>
-                </li>
-                <li>
-                    <img src="/assets/default/svgs/language.svg" alt="">
-                    <input type="text" placeholder="Language" title="Language">
-                    <em>Empty</em>
                 </li>
             </ul>
             <div class="description-field">
