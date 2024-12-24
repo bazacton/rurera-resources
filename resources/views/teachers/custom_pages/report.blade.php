@@ -633,7 +633,7 @@
                                                         data-toggle="popover"
                                                         data-placement="top"
                                                         data-html="true"
-                                                        title="Popover xd"
+                                                        title=""
                                                         data-content="
                                                         <div class='quiz-status-tooltip incorrect'>
                                                             <div class='tooltip-box'>
@@ -748,7 +748,7 @@
                                                     </td>
 
                                                     <td>
-                                                        <div class="quiz-status-tooltip incorrect">
+                                                        <!-- <div class="quiz-status-tooltip incorrect">
                                                             <div class="tooltip-box">
                                                                 <div class="tooltip-top">
                                                                     <div class="status-box">
@@ -778,7 +778,7 @@
                                                                     <button type="button" class="view-all-btn">View for all students</button>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                         <em class="urgent"><i>✓</i></em>
                                                     </td>
                                                     <td>
@@ -804,7 +804,7 @@
                                                     </td>
 
                                                     <td>
-                                                        <div class="quiz-status-tooltip incorrect">
+                                                        <!-- <div class="quiz-status-tooltip incorrect">
                                                             <div class="tooltip-box">
                                                                 <div class="tooltip-top">
                                                                     <div class="status-box">
@@ -834,7 +834,7 @@
                                                                     <button type="button" class="view-all-btn">View for all students</button>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                         <em class="urgent"><i>✓</i></em>
                                                     </td>
                                                     <td>
@@ -860,7 +860,7 @@
                                                     </td>
 
                                                     <td>
-                                                        <div class="quiz-status-tooltip incorrect">
+                                                        <!-- <div class="quiz-status-tooltip incorrect">
                                                             <div class="tooltip-box">
                                                                 <div class="tooltip-top">
                                                                     <div class="status-box">
@@ -890,7 +890,7 @@
                                                                     <button type="button" class="view-all-btn">View for all students</button>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                         <em class="urgent"><i>✓</i></em>
                                                     </td>
                                                     <td>
@@ -916,7 +916,7 @@
                                                     </td>
 
                                                     <td>
-                                                        <div class="quiz-status-tooltip incorrect">
+                                                        <!-- <div class="quiz-status-tooltip incorrect">
                                                             <div class="tooltip-box">
                                                                 <div class="tooltip-top">
                                                                     <div class="status-box">
@@ -946,7 +946,7 @@
                                                                     <button type="button" class="view-all-btn">View for all students</button>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                         <em class="urgent"><i>✓</i></em>
                                                     </td>
                                                     <td>
@@ -1011,7 +1011,7 @@
                                                     </td>
 
                                                     <td>
-                                                        <div class="quiz-status-tooltip incorrect">
+                                                        <!-- <div class="quiz-status-tooltip incorrect">
                                                             <div class="tooltip-box">
                                                                 <div class="tooltip-top">
                                                                     <div class="status-box">
@@ -1041,7 +1041,7 @@
                                                                     <button type="button" class="view-all-btn">View for all students</button>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                         <em class="urgent"><i>✓</i></em>
                                                     </td>
                                                     <td>
@@ -1067,7 +1067,7 @@
                                                     </td>
 
                                                     <td>
-                                                        <div class="quiz-status-tooltip incorrect">
+                                                        <!-- <div class="quiz-status-tooltip incorrect">
                                                             <div class="tooltip-box">
                                                                 <div class="tooltip-top">
                                                                     <div class="status-box">
@@ -1097,7 +1097,7 @@
                                                                     <button type="button" class="view-all-btn">View for all students</button>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                         <em class="urgent"><i>✓</i></em>
                                                     </td>
                                                     <td>
@@ -1123,7 +1123,7 @@
                                                     </td>
 
                                                     <td>
-                                                        <div class="quiz-status-tooltip incorrect">
+                                                        <!-- <div class="quiz-status-tooltip incorrect">
                                                             <div class="tooltip-box">
                                                                 <div class="tooltip-top">
                                                                     <div class="status-box">
@@ -1153,7 +1153,7 @@
                                                                     <button type="button" class="view-all-btn">View for all students</button>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                         <em class="urgent"><i>✓</i></em>
                                                     </td>
                                                     <td>
@@ -1179,7 +1179,7 @@
                                                     </td>
 
                                                     <td>
-                                                        <div class="quiz-status-tooltip incorrect">
+                                                        <!-- <div class="quiz-status-tooltip incorrect">
                                                             <div class="tooltip-box">
                                                                 <div class="tooltip-top">
                                                                     <div class="status-box">
@@ -1209,7 +1209,7 @@
                                                                     <button type="button" class="view-all-btn">View for all students</button>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                         <em class="urgent"><i>✓</i></em>
                                                     </td>
                                                     <td>
@@ -1235,7 +1235,7 @@
                                                     </td>
 
                                                     <td>
-                                                        <div class="quiz-status-tooltip incorrect">
+                                                        <!-- <div class="quiz-status-tooltip incorrect">
                                                             <div class="tooltip-box">
                                                                 <div class="tooltip-top">
                                                                     <div class="status-box">
@@ -1265,7 +1265,7 @@
                                                                     <button type="button" class="view-all-btn">View for all students</button>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                         <em class="urgent"><i>✓</i></em>
                                                     </td>
                                                     <td>
