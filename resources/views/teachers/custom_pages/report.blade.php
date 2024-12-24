@@ -630,11 +630,11 @@
                                                     </td>
                                                     <td 
                                                         data-container="quiz-tabs"
-                                                        data-toggle="popover"
-                                                        data-placement="top"
+                                                        data-bs-toggle="popover"
+                                                        data-bs-placement="top"
                                                         data-bs-html="true"
-                                                        title="Popover xd"
-                                                        data-content="
+                                                        data-bs-content
+                                                        data-bs-content="
                                                         <div class='quiz-status-tooltip incorrect'>
                                                             <div class='tooltip-box'>
                                                                 <div class='tooltip-top'>
