@@ -632,6 +632,7 @@
                                                         data-container="quiz-tabs"
                                                         data-toggle="popover"
                                                         data-placement="top"
+                                                        data-bs-html="true"
                                                         title="Popover xd"
                                                         data-content="
                                                         <div class='quiz-status-tooltip incorrect'>
