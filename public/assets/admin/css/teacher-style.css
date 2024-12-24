@@ -3140,6 +3140,10 @@ span.field-separated span:after {
     border-radius: 5px;
     text-align: left;
     padding: 20px;
+    transition: all 0.5s ease-in-out;
+}
+.admin_teacher_role .question_templates li a:hover .templete-hover-element {
+    margin-top: -5px;
 }
 .templete-hover-element .img-holder {
     height: 100px;
