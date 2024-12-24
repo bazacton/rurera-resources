@@ -2746,8 +2746,9 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 }
 /* General Knowledge Modal Style End */
 
+.rureraform-table .table {}
 .rureraform-table th, .rureraform-table td {
-    background-color: rgba(0, 0, 0, 0.04);
+    background-color: inherit;
     border-left: 2px solid #fff;
     border-bottom: 2px solid #fff;
 }
@@ -2756,15 +2757,13 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     height: auto;
     padding: 5px 10px;
 }
-.rureraform-table .table:not(.table-sm) thead th {
-    border-bottom: 2px solid #fff;
-}
 .rureraform-table .progress {
     border-radius: 0;
     height: 30px;
 }
 .rureraform-table td:has(.progress) {
     padding: 0 !important;
+    border: 0;
 }
 .rureraform-table td .progress-bar.bg-success {
     background-color: #2a845e !important;
@@ -2792,8 +2791,11 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 .rureraform-table .respondents {
     color: #fc544b;
 }
-.rureraform-table .success-status {
+.rureraform-table .success-status td {
     background-color: #cddcd5;
+}
+.rureraform-table .success-status td:has(.progress) {
+    background-color: inherit;
 }
 .success-status strong,
 .success-status .percent-value {
