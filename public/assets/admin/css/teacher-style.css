@@ -2746,12 +2746,16 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 }
 /* General Knowledge Modal Style End */
 
+.rureraform-table {
+    background: rgb(240, 236, 238);
+    background: linear-gradient(0deg, rgba(240, 236, 238, 1) 4%, rgba(255, 255, 255, 1) 100%);
+    padding: 20px;
+}
 .rureraform-table .table {
-    background: rgb(240,236,238);
-    background: linear-gradient(0deg, rgba(240,236,238,1) 4%, rgba(255,255,255,1) 100%);
+    margin: 0;
 }
 .rureraform-table th, .rureraform-table td {
-    background-color: inherit;
+    background-color: rgba(0, 0, 0, 0.04);
     border-left: 2px solid #fff;
     border-bottom: 2px solid #fff;
 }
@@ -2759,6 +2763,12 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 .rureraform-table .table:not(.table-sm):not(.table-md):not(.dataTable) th {
     height: auto;
     padding: 5px 10px;
+}
+.rureraform-table td:first-child {
+    border-left: 0;
+}
+.rureraform-table tr:last-child td {
+    border-bottom: 0;
 }
 .rureraform-table .progress {
     border-radius: 0;
@@ -2769,6 +2779,7 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     padding: 0 !important;
     border: 0;
     min-width: 100px;
+    background-color: inherit;
 }
 .rureraform-table td .progress-bar.bg-success {
     background-color: #2a845e !important;
