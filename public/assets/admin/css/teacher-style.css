@@ -2746,7 +2746,10 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 }
 /* General Knowledge Modal Style End */
 
-.rureraform-table .table {}
+.rureraform-table .table {
+    background: rgb(240,236,238);
+    background: linear-gradient(0deg, rgba(240,236,238,1) 4%, rgba(255,255,255,1) 100%);
+}
 .rureraform-table th, .rureraform-table td {
     background-color: inherit;
     border-left: 2px solid #fff;
