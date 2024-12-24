@@ -10,6 +10,8 @@
 .admin_teacher_role .modal.show {
     overflow: hidden;
     overflow-y: auto;
+    scrollbar-gutter: stable;
+    padding-right: 0 !important;
 }
 /* Admin Left Menue Style Start */
 .admin_teacher_role .main-sidebar {
