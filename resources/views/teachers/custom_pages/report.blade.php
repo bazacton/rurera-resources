@@ -137,7 +137,7 @@
                         <div class="row">
                             <div class="col-12 col-lg-5 col-md-6">
                                 <div class="chart-holder">
-                                    <canvas id="timeChart"></canvas>
+                                    <img src="/assets/default/img/time-chart.png" alt="">
                                 </div>
                             </div>
                             <div class="col-12 col-lg-7 col-md-8">
