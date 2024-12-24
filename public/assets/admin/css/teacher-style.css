@@ -3778,6 +3778,10 @@ Overview Questions Style Start
 }
 
 
+.overview-status .row,
+.overview-time .row {
+    align-items: center;
+}
 .questions-overview-status {
     margin: 0 0 50px;
 }
