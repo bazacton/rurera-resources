@@ -3780,6 +3780,11 @@ Overview Questions Style Start
 .questions-overview .row {
     align-items: center;
 }
+.questions-overview h3 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: #333;
+}
 .overview-status {
     margin-bottom: 30px;
 }
