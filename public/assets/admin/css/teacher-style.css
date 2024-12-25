@@ -3992,13 +3992,6 @@ Overview Questions Style End
     stroke: #ddd;
   }
 
-  .circle-chart .progress {
-    stroke: linear-gradient(to right, #6a0dad, #00b4d8);
-    stroke-linecap: round;
-    stroke-dasharray: 565.48; /* Circumference of the circle */
-    stroke-dashoffset: 565.48;
-  }
-
   .circle-chart .center {
     position: absolute;
     top: 50%;
