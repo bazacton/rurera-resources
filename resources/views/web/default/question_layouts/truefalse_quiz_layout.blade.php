@@ -9,7 +9,7 @@
       <div class="form-box rurera-in-row undefined image-right none">
          <div class="lms-radio-select rurera-in-row undefined image-right none">
             
-			<div class="active-option field-holder rureraform-cr-container-medium rureraform-cr-container-undefined">
+			<div class="field-holder rureraform-cr-container-medium rureraform-cr-container-undefined">
                <input class="editor-field" type="radio" name="field-{{$element_unique_id}}" id="field-{{$element_unique_id}}-0-0" value="True" />
 				<label for="field-{{$element_unique_id}}-0">
 				<span class="inner-label">True</span></label>
