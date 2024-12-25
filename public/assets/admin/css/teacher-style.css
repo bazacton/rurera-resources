@@ -3368,6 +3368,7 @@ span.field-separated span:after {
     outline: none;
     display: inline-flex;
     align-items: center;
+    min-height: 32px;
 }
 .questions-header-controls button img {
     height: 12px;
