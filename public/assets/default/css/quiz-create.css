@@ -1090,7 +1090,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
 .question-layout .rureraform-element:has(select),
 .rureraform-element:has(select),
 .rureraform-element:has(.input-holder.input_box) {
-	line-height: 56px;
+	line-height: 44px;
 }
 .rureraform-builder .quiz-group ol {
     padding-left: 15px;
