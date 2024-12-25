@@ -1130,9 +1130,11 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
     padding: 8px 10px;
 }
 .show-notifications .question-solution {
-    color: #999;
-    line-height: 26px;
-    font-style: italic;
+    color: #666;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 3px;
 }
 /*Quistions Type Content Default Style End*/
 
@@ -1269,7 +1271,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
 .prev-next-controls {display: flex; align-items: center; justify-content: center; margin-top: 20px; position: relative; padding-left: 100px;}
 .prev-next-controls a {margin: 0 7px 0 0;}
 .prev-next-controls .review-btn {position: absolute; left: 0; gap: 10px;}
-.question-layout-block .prev-next-controls { border-top: 2px dashed #ddd;position: fixed; width: 810px; bottom: -50px; background-color: #fff; min-height: 100px; padding: 30px; justify-content: space-between; z-index: 1; margin: 0;}
+.question-layout-block .prev-next-controls { border-top: 2px dashed #ddd;position: fixed; width: 845px; bottom: -50px; background-color: #fff; min-height: 100px; padding: 30px; justify-content: space-between; z-index: 1; margin: 0;}
 .question-layout-block .prev-next-controls .review-btn {position: relative; font-weight: 500;   margin-left: -15px;}
 
 .review-btn,
