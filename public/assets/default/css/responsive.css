@@ -1439,7 +1439,6 @@ Lms Responsive Style Start
     .gallery-sub-header .book-btn {font-size: 14px; min-width: 150px; padding: 15px 8px;}
     body .image-top.rurera-in-row .lms-radio-select .field-holder {max-width: 100%; flex: 0 0 100%;}
     .spells-quiz-from .lms-radio-select.rurera-in-row {flex-direction: row;}
-    body .rurera-in-row .field-holder, body .rurera-in-row .form-field {width: 100%;}
     nav.top-navbar .login-btn, nav .register-btn {padding: 4px 10px !important; font-size: 12px; white-space: nowrap;}
     .counter-holder .svg-shapes-top {right: 90px;}
     .counter-holder .svg-shapes-bottom {left: 60px;}
