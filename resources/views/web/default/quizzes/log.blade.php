@@ -108,6 +108,7 @@ $rand_id = rand(99,9999);
 													@endphp
 													<tr class="odd {{$analyzer_class}}">
 														<td>{{$attempt_counter}}</td>
+														<td>-</td>
 														<td>{{$PerformanceLogObj->attempted_questions}}</td>
 														<td>{{$PerformanceLogObj->incorrect_questions}}</td>
 														<td>{{$PerformanceLogObj->correct_questions}}</td>
