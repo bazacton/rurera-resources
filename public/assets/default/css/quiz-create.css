@@ -1092,6 +1092,9 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
 .rureraform-element:has(.input-holder.input_box) {
 	line-height: 40px;
 }
+.rureraform-element:has(.lms-radio-select) {
+    line-height: 50px;
+}
 .rureraform-builder .quiz-group ol {
     padding-left: 15px;
 }
