@@ -206,7 +206,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .form-box {position: relative;}
 .form-field input[type="checkbox"] {position: absolute; left: 0; top: 0; opacity: 0;}
 .form-field label,
-.api-questions-form .option-group {background-color: #fff; border: 2px solid #ddd; cursor: pointer; border-bottom-width: 4px; border-radius: 8px; position: relative; cursor: auto; padding: 12px; width: 100%; margin-bottom: 0; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; line-height: normal; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
+.api-questions-form .option-group {background-color: #fff; border: 2px solid #ddd; cursor: pointer; border-bottom-width: 4px; border-radius: 8px; position: relative; padding: 12px; width: 100%; margin-bottom: 0; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; line-height: normal;}
 .form-field input[type="checkbox"] ~ label {min-height: 52px; text-align: left;}
 .form-field input[type="checkbox"]:checked ~ label:after {opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 .form-field input[type="checkbox"]:checked ~ label{background-color: #f2f2f2; border-color: #a0a0a0;}
