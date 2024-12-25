@@ -26,7 +26,7 @@ $practice_time = 0;
 
 
     <link rel="stylesheet" href="/assets/default/css/responsive.css">
-<div class="content-section quiz-settings dis-arrows">
+<div class="content-section quiz-settings dis-arrows pt-60">
 
     <section class="lms-quiz-section">
 {{--Flipbook Pdf Questions--}}
