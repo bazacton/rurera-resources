@@ -602,7 +602,7 @@ Lms Responsive Style Start
     .notification-card button {position: absolute; right: 15px; top: 50%; transform: translateY(-50%);}
     .home-banner #change {white-space: inherit;}
     .learning-page .learning-content {height: auto;}
-    .question-layout-block .prev-next-controls {width: 100%; left: 0;}
+    .question-layout-block .prev-next-controls {width: 100%; left: 0; padding: 0 15px;}
     .reward-shapes .col-8 {flex: 0 0 100%; max-width: 100%;}
 }
 
@@ -730,9 +730,11 @@ Lms Responsive Style Start
     body .question-number-holder ~ .rureraform-elements {padding-left: 0;}
     .lms-data-table h3 {margin: 0 0 15px; font-size: 20px;}
     body .prev-next-controls .review-btn,
-    body .prev-next-controls .question-submit-btn {position: relative;}
+    body .prev-next-controls .question-submit-btn {position: relative; margin-right: 0;}
+    .question-layout-block .prev-next-controls .review-btn {margin-left: 0;}
     body .prev-next-controls {gap: 5px; flex-wrap: wrap;}
-    body .prev-next-controls a {margin-right: 0;}
+    body .prev-next-controls a,
+    .prev-next-controls .question-next-btn {margin-right: 8px;}
     body .question-review-required {top: -40px;}
     .lms-sorting-fields {overflow: hidden; overflow-x: auto;}
     body .match-question .stems li,
@@ -1138,6 +1140,14 @@ Lms Responsive Style Start
     .parent-account-section .imb-box {
         margin-top: 50px;
     }
+    .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {
+        padding: 20px 0;
+        display: block;
+        width: 100%;
+    }
+    .rureraform-element:has(span.truefalse_question_label) .truefalse_question_label {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -1299,7 +1309,6 @@ Lms Responsive Style Start
     .cell-card form.w-75 {width: 100% !important;}
     .find-instructor-section .find-instructor-section-circle {top: 0;}
     section.lms-chapter-section {overflow: hidden;}
-    .lms-chapter-area {padding-left: 40px;}
     .spells-topbar {padding: 20px 25px; flex-direction: column; gap: 15px;}
     body .learning-page .learning-title {padding-left: 10px; text-align: center;}
     body .learning-page .learning-content .learning-content-box {width: 100%;}
@@ -1389,8 +1398,10 @@ Lms Responsive Style Start
     .virtual-keyboard .row {gap: 5px 2px;}
     .virtual-keyboard .row.spacebar input {min-width: 230px; margin-top: 5px;}
     .spell-quiz-page table[id*='word-search-'] td {font-size: 12px;height: 20px;}
-    .stats-list ul {flex-direction: column;}
-    .stats-list ul li {padding: 0 0 0 15px; margin-left: 0;}
+    .stats-list ul {align-items: flex-start;}
+    .stats-list ul li,
+    .stats-list ul li, .lms-chapter-area .stats-list ul li {padding: 0 0 0 15px; margin-left: 15px;}
+    .lms-chapter-area .stats-list ul li:first-child {margin-left: 0; padding-left: 0;}
     .finish-steps .row {flex-direction: column;}
     .profile-info-box {flex-direction: column; position: relative;}
     .profile-info-box:not(.product-show__profile-info-box) {top: -60px; margin-bottom: -60px;}
@@ -1430,9 +1441,7 @@ Lms Responsive Style Start
     .lms-call-to-action .field-holder {flex-direction: column; align-items: center;}
     .gallery-sub-header .book-btn {font-size: 14px; min-width: 150px; padding: 15px 8px;}
     body .image-top.rurera-in-row .lms-radio-select .field-holder {max-width: 100%; flex: 0 0 100%;}
-    .rurera-in-row {flex-direction: column;}
     .spells-quiz-from .lms-radio-select.rurera-in-row {flex-direction: row;}
-    body .rurera-in-row .field-holder, body .rurera-in-row .form-field {width: 100%;}
     nav.top-navbar .login-btn, nav .register-btn {padding: 4px 10px !important; font-size: 12px; white-space: nowrap;}
     .counter-holder .svg-shapes-top {right: 90px;}
     .counter-holder .svg-shapes-bottom {left: 60px;}
