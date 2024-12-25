@@ -1105,6 +1105,26 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
     color: #999;
     display: block;
 }
+.show-notifications {
+    display: inline-block;
+    width: 100%;
+}
+.question-status-wrong {
+    color: #db3a3a;
+    background-color: #fff4f4;
+    border: 1px solid #db3a3a;
+}
+.show-notifications span {
+    display: block;
+    margin: 0 0 10px;
+    border-radius: 3px;
+    padding: 8px 10px;
+}
+.show-notifications .question-solution {
+    color: #999;
+    line-height: 26px;
+    font-style: italic;
+}
 /*Quistions Type Content Default Style End*/
 
 /*Quistions Type numeric-list style Start*/
