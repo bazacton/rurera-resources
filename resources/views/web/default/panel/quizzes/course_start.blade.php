@@ -25,9 +25,7 @@ $practice_time = 0;
 {{----}}
 
 
-@push('styles_top')
     <link rel="stylesheet" href="/assets/default/css/responsive.css">
-@endpush
 <div class="content-section quiz-settings dis-arrows">
 
     <section class="lms-quiz-section">
