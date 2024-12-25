@@ -4,7 +4,7 @@ $i = 0; $j = 1;
 $rand_id = rand(99,9999);
 
 @endphp
-
+    <link rel="stylesheet" href="/assets/default/css/responsive.css">
 <div class="content-section">
 
     <section class="lms-quiz-section">
