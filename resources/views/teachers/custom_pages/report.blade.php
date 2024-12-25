@@ -11,6 +11,31 @@
     <div class="section-body">
         <div class="row">
             <div class="col-12">
+                <div class="accuracy-score">
+                    <div class="chart-holder">
+                        <figure>
+                            <img src="/assets/default/img/accuracy-chart.png" alt="">
+                            <figcaption>
+                                <div class="circle-percent-box">
+                                    <div class="circle_percent" data-percent="92">
+                                        <div class="circle_inner">
+                                            <div class="round_per"></div>
+                                        </div>
+                                    </div>
+                                    <span class="total-percent">/100</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="accuracy-text">
+                        <span class="accuracy-lable">Accuracy Score</span>
+                        <h4>You're on the path to full automation!</h4>
+                        <p>We'll soon be able to automatically categorize your consumption date. Keep going</p>
+                        <a href="#" class="accuracy-back-btn">Back to dashboard</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
                 <h2 class="mb-20">Overview</h2>
                 <div class="questions-overview-status">
                     <div class="status-header">
