@@ -45,6 +45,10 @@ $rand_id = rand(99,9999);
                                         </th>
 										<th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1"
                                             colspan="1" aria-sort="ascending"
+                                            aria-label="Date: activate to sort column descending">Practice Questions
+                                        </th>
+										<th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1"
+                                            colspan="1" aria-sort="ascending"
                                             aria-label="Date: activate to sort column descending">Attempted Questions
                                         </th>
 										 <th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1"
@@ -84,6 +88,7 @@ $rand_id = rand(99,9999);
 											@php $completion_performance = ($UserPerformanceObj->completion_performance > 100)? 100 : $UserPerformanceObj->completion_performance; @endphp
 											<tr class="odd difficulty_level_tr">
 												<td>{{$UserPerformanceObj->difficulty_level}}</td>
+												<td>{{$UserPerformanceObj->part_practice_questions}}</td>
 												<td>{{$UserPerformanceObj->attempted_questions}}</td>
 												<td>{{$UserPerformanceObj->incorrect_questions}}</td>
 												<td>{{$UserPerformanceObj->correct_questions}}</td>
