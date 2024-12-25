@@ -13,6 +13,29 @@
     <div class="section-body">
         <div class="row">
             <div class="col-12">
+                <div class="circle-chart">
+                    <svg width="200" height="200" viewBox="0 0 200 200">
+                    <circle
+                        class="progress-background"
+                        cx="100"
+                        cy="100"
+                        r="90"
+                    ></circle>
+                    <circle
+                        class="progress"
+                        cx="100"
+                        cy="100"
+                        r="90"
+                        style="stroke-dashoffset: 565.48;" /* Default start at 0 */
+                    ></circle>
+                    </svg>
+                    <div class="center">
+                    <span class="value">92</span>
+                    <div class="text">/100</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
                 <div class="section-header">
                     <h1>My Collections</h1>
                     <div class="section-header-breadcrumb">
@@ -501,5 +524,18 @@
 
 @push('scripts_bottom')
 
+<script>
+    $(document).ready(function () {
+      const percentage = 92; // Replace with your dynamic value
+      const circumference = 2 * Math.PI * 90; // Circumference of the circle (radius: 90)
+      const offset = circumference - (percentage / 100) * circumference;
 
+      $(".progress").css({
+        "stroke-dashoffset": offset,
+        "stroke": "url(#gradient)" /* Optional gradient support */,
+      });
+
+      $(".value").text(percentage);
+    });
+  </script>
 @endpush
