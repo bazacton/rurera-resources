@@ -1114,6 +1114,11 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
     background-color: #fff4f4;
     border: 1px solid #db3a3a;
 }
+.question-status-correct {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #5cb871;
+}
 .show-notifications span {
     display: block;
     margin: 0 0 10px;
