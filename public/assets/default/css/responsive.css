@@ -1143,6 +1143,9 @@ Lms Responsive Style Start
         display: block;
         width: 100%;
     }
+    .rureraform-element:has(span.truefalse_question_label) .truefalse_question_label {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 640px) {
