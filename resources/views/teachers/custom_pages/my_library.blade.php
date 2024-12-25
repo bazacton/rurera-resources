@@ -13,32 +13,6 @@
     <div class="section-body">
         <div class="row">
             <div class="col-12">
-                <div class="circle-chart">
-                    <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Define the gradient -->
-                        <defs>
-                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" style="stop-color:#6a0dad; stop-opacity:1"></stop>
-                            <stop offset="100%" style="stop-color:#00b4d8; stop-opacity:1"></stop>
-                            </linearGradient>
-                        </defs>
-
-                        <!-- Circle background -->
-                        <circle class="progress-background" cx="100" cy="100" r="90" fill="none" stroke="#eee" stroke-width="10"></circle>
-
-                        <!-- Progress circle -->
-                        <circle class="progress" cx="100" cy="100" r="90" fill="none" stroke="url(#gradient)" stroke-width="10" stroke-dasharray="565.48" <!--="" approx.="" circumference="" of="" the="" circle="" --="">
-                            stroke-dashoffset="45.24" <!-- Adjust as needed -->
-                            transform="rotate(-90 100 100)" <!-- Rotate to start progress from top -->
-                        &gt;</circle>
-                    </svg>
-                    <div class="center">
-                        <span class="value">92</span>
-                        <div class="text">/100</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
                 <div class="section-header">
                     <h1>My Collections</h1>
                     <div class="section-header-breadcrumb">
@@ -527,17 +501,5 @@
 
 @push('scripts_bottom')
 
-<script>
-    $(document).ready(function () {
-      const percentage = 92; // Replace with your dynamic value
-      const circumference = 2 * Math.PI * 50; // Circumference of the circle (radius: 90)
-      const offset = circumference - (percentage / 100) * circumference;
 
-      $(".progress").css({
-        "stroke-dashoffset": offset,
-      });
-
-      $(".value").text(percentage);
-    });
-  </script>
 @endpush
