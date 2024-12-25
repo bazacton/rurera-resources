@@ -206,10 +206,10 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .form-box {position: relative;}
 .form-field input[type="checkbox"] {position: absolute; left: 0; top: 0; opacity: 0;}
 .form-field label,
-.api-questions-form .option-group {background-color: #fff; border: 2px solid #ddd; border-bottom-width: 4px; border-radius: 8px; position: relative; cursor: auto; padding: 12px; width: 100%; margin-bottom: 0; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; line-height: normal; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
+.api-questions-form .option-group {background-color: #fff; border: 2px solid #ddd; cursor: pointer; border-bottom-width: 4px; border-radius: 8px; position: relative; cursor: auto; padding: 12px; width: 100%; margin-bottom: 0; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; line-height: normal; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
 .form-field input[type="checkbox"] ~ label {min-height: 52px; text-align: left;}
 .form-field input[type="checkbox"]:checked ~ label:after {opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
-.form-field input[type="checkbox"]:checked ~ label{background-color: #fcfbfb;}
+.form-field input[type="checkbox"]:checked ~ label{background-color: #f2f2f2; border-color: #a0a0a0;}
 .form-field label:hover {border: 2px solid #c4c3c3;border-bottom-width: 4px;border-radius: 8px;}
 .row-fields.lms-checkbox-img label {padding: 5px;}
 .lms-checkbox-img .form-field label:before {width: 30px; height: 30px; right: 15px; border-radius: 100%; margin-top: -15px;}
@@ -223,6 +223,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .active-option label {
     background-color: #f2f2f2;
 }
+.form-field label:hover {background-color: #e8e8e8;}
 /* Multi Response List Style End */
 /*Quiz Radio-Image Style Start*/
 .lms-radio-img .field-holder label {padding: 5px; border-radius: 5px;}
