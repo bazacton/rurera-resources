@@ -78,8 +78,8 @@ $rand_id = rand(99,9999);
                                     </tr>
                                     </thead>
                                     <tbody>
-									@if($quiz->UserPerformances->where('user_id', auth()->user()->id)->count() > 0)
-										@foreach($quiz->UserPerformances->where('user_id', auth()->user()->id) as $UserPerformanceObj)
+									@if($quiz->UserPerformances->count() > 0)
+										@foreach($quiz->UserPerformances) as $UserPerformanceObj)
 											@php 
 											$completion_performance = $UserPerformanceObj->completion_performance;
 											$completion_performance = ($completion_performance > 100)? 100 : $completion_performance; 
