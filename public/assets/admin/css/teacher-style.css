@@ -3988,17 +3988,18 @@ Accuracy Score Card Style Start
     margin: 0;
     position: relative;
     min-height: 100px;
+    padding: 30px;
 }
 .accuracy-score figcaption {
     position: absolute;
     top: 50%;
     left: 0;
-    height: calc(100% - 70px);
+    height: auto;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
 }
 .accuracy-lable {
     text-transform: uppercase;
@@ -4039,30 +4040,40 @@ Accuracy Score Card Style Start
 .accuracy-score figure img {
     max-width: 100%;
 }
-
 .circle-percent-box {
     position: relative;
 }
-
+.accuracy-score .percent_text {
+    margin-top: -10px;
+    font-size: 30px;
+    line-height: normal;
+}
 .total-percent {
     position: absolute;
-    bottom: 10px;
+    bottom: 45px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 11;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: 600;
 }
-
 .accuracy-score .circle_percent {
-    font-size: 80px;
+    font-size: 150px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(-2deg, rgba(255, 255, 255, 1) -15%, rgba(240, 236, 238, 1) 100%);
 }
-
 .accuracy-score .circle_percent.percent_more:after {
     display: none;
 }
-
 .accuracy-score .circle_percent .round_per {
     display: none;
+}
+.accuracy-score .circle_inbox {
+    width: 65%;
+    height: 65%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 /*************************************
 Accuracy Score Card Style End
