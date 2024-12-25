@@ -86,7 +86,7 @@ $rand_id = rand(99,9999);
 											$completion_performance = ($completion_performance < 0)? 0 : $completion_performance; 
 											@endphp
 											@php $completion_performance = ($UserPerformanceObj->completion_performance > 100)? 100 : $UserPerformanceObj->completion_performance; @endphp
-											<tr class="odd difficulty_level_tr">
+											<tr class="odd difficulty_level_tr" data-user_id="{{auth()->user()->id}}" data-performance_user_id="{{$UserPerformanceObj->user_id}}">
 												<td>{{$UserPerformanceObj->difficulty_level}}</td>
 												<td>{{$UserPerformanceObj->part_practice_questions}}</td>
 												<td>{{$UserPerformanceObj->attempted_questions}}</td>
