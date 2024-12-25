@@ -23,7 +23,12 @@ $target_score = ($target_score > 0)? $target_score : 100;
 $practice_time = 0;
 @endphp
 {{----}}
-<div class="content-section quiz-settings dis-arrows pt-60">
+
+
+@push('styles_top')
+    <link rel="stylesheet" href="/assets/default/css/responsive.css">
+@endpush
+<div class="content-section quiz-settings dis-arrows">
 
     <section class="lms-quiz-section">
 {{--Flipbook Pdf Questions--}}
