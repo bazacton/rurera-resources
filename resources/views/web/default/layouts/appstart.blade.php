@@ -19,7 +19,6 @@ $rand_no = rand(99,9999);
     <link rel="stylesheet" href="/assets/admin/vendor/bootstrap/bootstrap.min.css"/>
     <link rel="stylesheet" href="/assets/default/css/common.min.css?ver={{$rand_no}}">
 	<link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver={{$rand_no}}">
-	<link rel="stylesheet" href="/assets/default/css/responsive.css?ver={{$rand_no}}">
 
 
     @if($isRtl)
@@ -36,6 +35,15 @@ $rand_no = rand(99,9999);
 
         {!! getThemeColorsSettings() !!}
     </style>
+	
+	<style>
+	label.frontend-field-error-label {
+		border-color: #f95555;
+	}
+	.input-holder.frontend-field-error-input {
+		border-color: #f95555;
+	}
+	</style>
 
 
     @if(!empty($generalSettings['preloading']) and $generalSettings['preloading'] == '1')
