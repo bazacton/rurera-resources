@@ -23,9 +23,9 @@ $target_score = ($target_score > 0)? $target_score : 100;
 $practice_time = 0;
 @endphp
 {{----}}
-<div class="content-section quiz-settings dis-arrows">
+<div class="content-section quiz-settings dis-arrows pt-60">
 
-    <section class="lms-quiz-section test">
+    <section class="lms-quiz-section">
 {{--Flipbook Pdf Questions--}}
         @if( $quiz->quiz_pdf != '')
         <script type="text/javascript">
