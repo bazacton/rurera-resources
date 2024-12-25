@@ -34,7 +34,7 @@ $rand_id = rand(99,9999);
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
-                                <h3>Log For "{{$quiz->TopicPartsItem->title}}"</h3>
+                                <h3>Log For "{{$quiz->TopicPartsItem->title}}" -- {{auth()->user()->id}}</h3>
                                 <table class="table table-striped table-bordered dataTable display responsive" style="width: 100%;"
                                        aria-describedby="example_info">
                                     <thead>
