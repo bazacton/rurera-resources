@@ -98,8 +98,8 @@ $rand_id = rand(99,9999);
 													@php $analyzer_class = ($PerformanceLogObj->type == 'analyzer')? 'is_analyzer' : ''; ; @endphp
 													@php 
 													$log_completion_performance = $PerformanceLogObj->completion_performance;
-													$log_completion_performance = ($completion_performance > 100)? 100 : $completion_performance; 
-													$log_completion_performance = ($completion_performance < 0)? 0 : $completion_performance; 
+													$log_completion_performance = ($log_completion_performance > 100)? 100 : $log_completion_performance; 
+													$log_completion_performance = ($log_completion_performance < 0)? 0 : $log_completion_performance; 
 													@endphp
 													<tr class="odd {{$analyzer_class}}">
 														<td>{{$attempt_counter}}</td>
