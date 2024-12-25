@@ -25,7 +25,7 @@ $practice_time = 0;
 {{----}}
 <div class="content-section quiz-settings dis-arrows">
 
-    <section class="lms-quiz-section">
+    <section class="lms-quiz-section test">
 {{--Flipbook Pdf Questions--}}
         @if( $quiz->quiz_pdf != '')
         <script type="text/javascript">
