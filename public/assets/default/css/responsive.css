@@ -602,7 +602,7 @@ Lms Responsive Style Start
     .notification-card button {position: absolute; right: 15px; top: 50%; transform: translateY(-50%);}
     .home-banner #change {white-space: inherit;}
     .learning-page .learning-content {height: auto;}
-    .question-layout-block .prev-next-controls {width: 100%; left: 0;}
+    .question-layout-block .prev-next-controls {width: 100%; left: 0; padding: 0 15px;}
     .reward-shapes .col-8 {flex: 0 0 100%; max-width: 100%;}
 }
 
