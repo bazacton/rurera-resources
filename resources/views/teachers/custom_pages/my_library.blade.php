@@ -527,12 +527,11 @@
 <script>
     $(document).ready(function () {
       const percentage = 92; // Replace with your dynamic value
-      const circumference = 2 * Math.PI * 90; // Circumference of the circle (radius: 90)
+      const circumference = 2 * Math.PI * 50; // Circumference of the circle (radius: 90)
       const offset = circumference - (percentage / 100) * circumference;
 
       $(".progress").css({
         "stroke-dashoffset": offset,
-        "stroke": "url(#gradient)" /* Optional gradient support */,
       });
 
       $(".value").text(percentage);
