@@ -1620,6 +1620,7 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
         var thisObj = jQuery(this);
 		console.log('validation-start');
         index_no = rurera_is_field(index_no) ? index_no : 0;
+		console.log('index_noindex_noindex_no----'+index_no);
         error_objects[index_no] = new Array();
         var visible_id = thisObj.data('visible');
         has_empty[index_no] = false;
@@ -1705,8 +1706,8 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
             array_length = alert_messages.length;
             alert_messages[array_length] = rurera_insert_error_message(thisnewObj, alert_messages, '', 'radio');
             has_empty[i] = true;
-            error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisnewObj, alert_messages, '', 'radio');
-            error_objects[index_no]['error_obj'] = thisObj;
+            //error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisnewObj, alert_messages, '', 'radio');
+            //error_objects[index_no]['error_obj'] = thisObj;
         }
     }
     if (checkbox_fields.length > 0) {

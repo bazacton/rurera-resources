@@ -11,12 +11,12 @@
             
 			<div class="field-holder rureraform-cr-container-medium rureraform-cr-container-undefined">
                <input class="editor-field" type="radio" name="field-{{$element_unique_id}}" id="field-{{$element_unique_id}}-0-0" value="True" />
-				<label for="field-{{$element_unique_id}}-0">
+				<label for="field-{{$element_unique_id}}-0-0">
 				<span class="inner-label">True</span></label>
             </div>
             <div class=" field-holder rureraform-cr-container-medium rureraform-cr-container-undefined">
                <input class="editor-field" type="radio" name="field-{{$element_unique_id}}" id="field-{{$element_unique_id}}-0-1" value="False" />
-				<label for="field-{{$element_unique_id}}-1">
+				<label for="field-{{$element_unique_id}}-0-1">
 				<span class="inner-label">False</span></label>
             </div>
 			
