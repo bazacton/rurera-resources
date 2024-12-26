@@ -21,7 +21,7 @@
                                 <span>A</span>
                                 <span>T</span>
                             </div>
-                            <div class="curved-text">
+                            <div class="curved-text-ex">
                                 <span>E</span>
                                 <span>X</span>
                                 <span>C</span>
