@@ -3985,6 +3985,111 @@ Accuracy Score Card Style Start
     margin: 0 0 30px;
     border: 1px solid #ddd;
 }
+/* Curved-text-ex Style */
+.chart-holder {
+    position: relative;
+}
+.curved-text-ex {
+    transform: rotate(65deg);
+    position: absolute;
+    right: -40px;
+    top: 130px;
+}
+.curved-text-ex span {
+    font-size: 16px;
+    transform-origin: center;
+    display: inline-block;
+    white-space: nowrap;
+    position: relative;
+    line-height: normal;
+}
+.curved-text-ex span:nth-child(1) {
+    top: 0px;
+}
+.curved-text-ex span:nth-child(2) {
+   top: 0;
+}
+.curved-text-ex span:nth-child(3) {
+    top: 0;
+    transform: rotate(15deg);
+}
+.curved-text-ex span:nth-child(4) {
+    top: 2px;
+    transform: rotate(10deg);
+}
+.curved-text-ex span:nth-child(5) {
+   transform: rotate(20deg);
+   top: 6px;
+}
+.curved-text-ex span:nth-child(6) {
+    transform: rotate(20deg);
+    top: 10px;
+}
+.curved-text-ex span:nth-child(7) {
+    transform: rotate(20deg);
+    top: 15px;
+}
+.curved-text-ex span:nth-child(8) {
+    transform: rotate(20deg);
+    top: 22px;
+}
+.curved-text-ex span:nth-child(9) {
+    transform: rotate(25deg);
+    top: 28px;
+}
+/* Curved-text-gr Style */
+.curved-text-gr {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 10px;
+    transform: rotate(-5deg);
+}
+.curved-text-gr span:nth-child(3) {
+    transform: rotate(10deg);
+    top: 1px;
+}
+.curved-text-gr span {
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    line-height: normal;
+}
+.curved-text-gr span:nth-child(4) {
+    transform: rotate(15deg);
+    top: 3px;
+}
+.curved-text-gr span:nth-child(5) {
+    transform: rotate(25deg);
+    top: 6px;
+    text-indent: -2px;
+}
+/* Curved-text-bd Style */
+.curved-text-bd {
+    position: absolute;
+    left: -6px;
+    bottom: 90px;
+    transform: rotate(-102deg);
+}
+.curved-text-bd span {
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    line-height: normal;
+}
+.curved-text-bd span:nth-child(1) {
+    transform: rotate(10deg);
+    top: 2px;
+}
+.curved-text-bd span:nth-child(2) {
+    transform: rotate(15deg);
+    top: 5px;
+}
+.curved-text-bd span:nth-child(3) {
+    transform: rotate(25deg);
+    top: 10px;
+}
+
 .accuracy-score figure {
     margin: 0;
     position: relative;
