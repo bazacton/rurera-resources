@@ -3981,7 +3981,7 @@ Accuracy Score Card Style Start
     background-color: #f9f9f9;
     border-radius: 5px;
     text-align: center;
-    padding: 0 30px 30px;
+    padding: 15px 30px 30px;
     margin: 0 0 30px;
     border: 1px solid #ddd;
 }
@@ -4094,7 +4094,7 @@ Accuracy Score Card Style Start
     margin: 0;
     position: relative;
     min-height: 100px;
-    padding: 30px;
+    padding: 30px 30px 10px;
 }
 .accuracy-score figcaption {
     position: absolute;
