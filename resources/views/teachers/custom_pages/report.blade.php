@@ -13,6 +13,31 @@
             <div class="col-12">
                 <div class="accuracy-score">
                     <div class="chart-holder">
+                        <div class="chart-value-lables">
+                            <div class="curved-text-gr">
+                                <span>G</span>
+                                <span>R</span>
+                                <span>E</span>
+                                <span>A</span>
+                                <span>T</span>
+                            </div>
+                            <div class="curved-text">
+                                <span>E</span>
+                                <span>X</span>
+                                <span>C</span>
+                                <span>E</span>
+                                <span>L</span>
+                                <span>L</span>
+                                <span>E</span>
+                                <span>N</span>
+                                <span>T</span>
+                            </div>
+                            <div class="curved-text-bd">
+                                <span>B</span>
+                                <span>A</span>
+                                <span>D</span>
+                            </div>  
+                        </div>
                         <figure>
                             <img src="/assets/default/img/accuracy-chart.png" alt="">
                             <figcaption>
