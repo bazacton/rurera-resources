@@ -1630,6 +1630,12 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 		thisObj.removeClass('frontend-field-error');
 		thisObj.closest('.jqte').removeClass('frontend-field-error');
 		
+		var this_id = thisObj.attr('id');
+		console.log('this_idthis_id-------'+this_id);
+		if($('[for="'+this_id+'"]').length > 0){
+			$('[for="'+this_id+'"]').removeClass('frontend-field-error-label');
+		}
+		
 		
         //checkbox_fields[index_no] = false;
 		
@@ -1652,7 +1658,9 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
             var field_name = thisObj.attr('name');
             var is_field_checked = jQuery('input[name="' + field_name + '"]').is(':checked');
             if (is_field_checked == false) {
-                radio_fields[index_no] = thisObj;
+                radio_fields[index_no] = thisObj;				
+				error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisObj, alert_messages, '', 'radio');
+				error_objects[index_no]['error_obj'] = thisObj;
             }
             //has_empty[index_no] = true;
             is_visible = false;
@@ -1685,7 +1693,6 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
             }
         } else {
             if (is_visible == true) {
-				
 				returnArray = rurera_check_field_type(thisObj, alert_messages, has_empty[index_no], error_objects, index_no);
 				has_empty[index_no] = returnArray.has_empty;
 				error_objects = returnArray.error_objects;
@@ -1743,6 +1750,19 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
                 $(error_msg).insertAfter(error_obj);
             });
         }
+		
+		if( error_dispaly_type == 'quiz_page') {
+            $(".rurera-error-msg").remove();
+            $.each(error_objects, function (key, errorObj) {
+                var error_msg = errorObj.error_msg;
+                var error_obj = errorObj.error_obj;
+                error_msg = '<div class="rurera-error-msg">' + error_msg + '</div>';
+                $('.validation-error').html(error_msg);
+            });
+        }
+		
+		
+		
 
         if( error_dispaly_type == 'growl') {
             var error_message = jQuery.growl.error({
@@ -1776,10 +1796,24 @@ function rurera_is_field(field_value) {
  * Making list of errors
  */
 function rurera_insert_error_message(thisObj, alert_messages, error_msg, field_type = '') {
-    thisObj.addClass('frontend-field-error');
+	console.log('thisObj-start');
+	if(thisObj != undefined && thisObj != 'undefined'){
+		thisObj.addClass('frontend-field-error');
+	}else{
+		return;
+	}
+	var this_id = thisObj.attr('id');
 	
+	if(thisObj.closest('.input-holder').length > 0){
+		thisObj.closest('.input-holder').addClass('frontend-field-error-input');
+	}
+	if($('[for="'+this_id+'"]').length > 0){
+		$('[for="'+this_id+'"]').addClass('frontend-field-error-label');
+	}
+	var default_message = 'Missing required fields';
     if (field_type == 'checkbox' || field_type == 'radio') {
 
+		default_message = 'Please choose options';
         var field_name = thisObj.attr('name');
         $('[name="' + field_name + '"]').addClass('frontend-field-error');
     }
@@ -1813,7 +1847,7 @@ function rurera_insert_error_message(thisObj, alert_messages, error_msg, field_t
     if (typeof field_label !== "undefined") {
         res = field_label.replace("*", " ");
     } else {
-        res = 'Label / Placeholder is missing';
+        res = default_message;//'Label / Placeholder is missing';
     }
     return '* ' + res + error_msg;
 }

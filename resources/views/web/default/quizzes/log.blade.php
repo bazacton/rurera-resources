@@ -45,7 +45,7 @@ $rand_id = rand(99,9999);
                                         </th>
 										<th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1"
                                             colspan="1" aria-sort="ascending"
-                                            aria-label="Date: activate to sort column descending">Practice Questions
+                                            aria-label="Date: activate to sort column descending">Total Questions
                                         </th>
 										<th class="sorting sorting_asc" tabindex="0" aria-controls="example" rowspan="1"
                                             colspan="1" aria-sort="ascending"
@@ -107,7 +107,11 @@ $rand_id = rand(99,9999);
 													$log_completion_performance = ($log_completion_performance < 0)? 0 : $log_completion_performance; 
 													@endphp
 													<tr class="odd {{$analyzer_class}}">
-														<td>{{$attempt_counter}}</td>
+														<td>{{$attempt_counter}} 
+														@if($PerformanceLogObj->result_id > 0)
+															(#{{$PerformanceLogObj->result_id}})
+														@endif
+														</td>
 														<td>-</td>
 														<td>{{$PerformanceLogObj->attempted_questions}}</td>
 														<td>{{$PerformanceLogObj->incorrect_questions}}</td>
