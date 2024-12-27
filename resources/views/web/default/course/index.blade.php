@@ -182,13 +182,16 @@
 													@endforeach
 												</ul>
 												@endif
-												<div class="percent-holder">
-                                                    <div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
-                                                        <div class="circle_inner">
-                                                            <div class="round_per"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+												@if($total_completion > 0)
+													@php $total_completion = round($total_completion / $sub_chapter_item->Quizzes->count()); @endphp
+													<div class="percent-holder">
+														<div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
+															<div class="circle_inner">
+																<div class="round_per"></div>
+															</div>
+														</div>
+													</div>
+												@endif
 												
                                             </li>
                                         @endif
