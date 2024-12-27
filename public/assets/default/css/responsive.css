@@ -1112,7 +1112,8 @@ Lms Responsive Style Start
     .curriculums-head:after {width: 300px;}
     .lms-element-nav ul {margin: 0 -10px;}
     .lms-element-nav li {padding: 0 10px 10px;}
-    body .rureraform-element:has(.input-holder.input_box) {line-height: 28px;}
+    body .rureraform-element:has(.input-holder.input_box),
+    body .rureraform-element:has(.lms-radio-select) {line-height: 28px;}
     body .lms-quiz-section .input-holder {width: 100%; margin: 10px 0;}
     .lms-quiz-section .input-holder input[type="text"] {max-width: 100%;}
     .footer .footer-subscribe {height: auto;}
