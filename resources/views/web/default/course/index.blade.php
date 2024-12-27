@@ -144,38 +144,35 @@
                                 <li id="subject_{{$chapter->id}}"><div class="element-title mb-20"><h2 class="mb-0 font-22 text-dark-charcoal">{{ $chapter->title }}</h2></div>
 
                                     @if(!empty($sub_chapters[$chapter->id]) and count($sub_chapters[$chapter->id]))
-                                    <div class="lms-chapter-ul-outer"><ul>
+                                    <div class="lms-chapter-ul-outer" id="accordion"><ul>
                                         @foreach($sub_chapters[$chapter->id] as $sub_chapter)
                                         @if(!empty($sub_chapter))
-												@php $sub_chapter_item = isset( $sub_chapter['sub_chapter_item'] )? $sub_chapter['sub_chapter_item'] : array();
-												@endphp
-												<li>
-												<a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$sub_chapter['id']}}" aria-expanded="true" aria-controls="collapseOne">{{ $sub_chapter['title'] }}</a>
+                                            @php $quizUserData = Quiz::getQuizPercentage($sub_chapter['id'], true);
+                                            $completion_count = isset( $quizUserData['completion_count'] )? $quizUserData['completion_count'] : 0;
+                                            $topic_percentage = isset( $quizUserData['topic_percentage'] )? $quizUserData['topic_percentage'] : 0;
+                                            $topic_student_level = isset( $quizUserData['topic_student_level'] )? $quizUserData['topic_student_level'] : '';
+											$sub_chapter_item = isset( $sub_chapter['sub_chapter_item'] )? $sub_chapter['sub_chapter_item'] : array();
+
+                                            $topic_percentage_flag = ( $topic_percentage >= 95 && $topic_percentage < 100)? '<img src="/assets/default/svgs/completion-flag.svg">' : '';
+                                            $topic_percentage_text = ($topic_percentage > 0 && $topic_percentage < 100)? '('.$topic_percentage.')' : '';
+
+                                            $completion_counter = 1;
+                                            while($completion_counter <= $completion_count){
+                                                $topic_percentage_text .= '<img src="/assets/default/svgs/completion-star.svg">';
+                                                $completion_counter++;
+                                            }
+
+                                            $topic_percentage_text .= $topic_percentage_flag;
+											$topic_student_level_text = ($topic_student_level != '')? '('.$topic_student_level.')' : '';
+                                            @endphp
+                                            <li>
+                                                <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">{{ $sub_chapter['title'] }} {!! $topic_percentage_text !!} {{$topic_student_level_text}}</a>
                                                 {{ user_assign_topic_template($sub_chapter['id'], 'practice', $childs, $parent_assigned_list) }}
 												
 												@if($sub_chapter_item->Quizzes->count() > 0)
-												<ul id="collapse{{$sub_chapter['id']}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+												<ul id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 													@foreach($sub_chapter_item->Quizzes as $QuizObj)
-														@php 
-														$topicPerformData = Quiz::getQuizPercentage($QuizObj->id, true);
-														
-														$topic_accuracy = isset( $topicPerformData['topic_accuracy'] )? $topicPerformData['topic_accuracy'] : 0;
-														$topic_completion = isset( $topicPerformData['topic_completion'] )? $topicPerformData['topic_completion'] : 0;
-														$topic_percentage_flag = '';
-														if($topic_completion > 80){
-															$topic_percentage_flag = ($topic_accuracy > 0)? '<img src="/assets/default/svgs/above_0.svg" title="'.$topic_accuracy.'%">' : $topic_percentage_flag;
-															$topic_percentage_flag = ($topic_accuracy > 25)? '<img src="/assets/default/svgs/above_25.svg" title="'.$topic_accuracy.'%">' : $topic_percentage_flag;
-															$topic_percentage_flag = ($topic_accuracy > 50)? '<img src="/assets/default/svgs/above_50.svg" title="'.$topic_accuracy.'%">' : $topic_percentage_flag;
-															$topic_percentage_flag = ($topic_accuracy > 80)? '<img src="/assets/default/svgs/above_80.svg" title="'.$topic_accuracy.'%">' : $topic_percentage_flag;
-														}
-														
-														$topic_percentage_text = ($topic_completion > 0 && $topic_completion < 80)? '('.$topic_completion.')' : '';
-
-														
-														$topic_percentage_text .= $topic_percentage_flag;
-														@endphp
-													
-														<li><a href="/{{$category_slug}}/{{$course->slug}}/{{$QuizObj->quiz_slug}}" class="{{ subscriptionCheckLink('courses') }}">{{ $QuizObj->getTitleAttribute() }} {!! $topic_percentage_text !!}</a></li>
+														<li><a href="/{{$category_slug}}/{{$course->slug}}/{{$QuizObj->quiz_slug}}" class="{{ subscriptionCheckLink('courses') }}">{{ $QuizObj->getTitleAttribute() }}</a></li>
 													@endforeach
 												</ul>
 												@endif
@@ -234,6 +231,107 @@
 					
 					
 					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+                    
+                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 chapter-views chapters-detail-view rurera-hide">
+                         
+			<div class="current-topics-detail bg-white mb-30 mt-15">
+			<div class="topics-table-group">
+		
+			@foreach($course->chapters as $chapter)
+				@if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
+				
+					<div class="topics-table">
+						<table class="w-100">
+							<thead>
+								<tr>
+									<th class="text-white text-left p-15">{{ $chapter->title }}</th>
+									<th class="text-white text-left p-15">Mastery Level</th>
+									<th class="text-white text-left p-15">Questions Count</th>
+									<th class="text-white text-left p-15">Rersources</th>
+								</tr>
+							</thead>
+							
+							<tbody>
+								@if(!empty($sub_chapters[$chapter->id]) and count($sub_chapters[$chapter->id]))
+									@foreach($sub_chapters[$chapter->id] as $sub_chapter)
+                                        @if(!empty($sub_chapter))
+                                            @php $quizUserData = Quiz::getQuizPercentage($sub_chapter['id'], true);
+                                            $completion_count = isset( $quizUserData['completion_count'] )? $quizUserData['completion_count'] : 0;
+                                            $topic_percentage = isset( $quizUserData['topic_percentage'] )? $quizUserData['topic_percentage'] : 0;
+
+                                            $topic_percentage_flag = ( $topic_percentage >= 95 && $topic_percentage < 100)? '<img src="/assets/default/svgs/completion-flag.svg">' : '';
+                                            $topic_percentage_text = ($topic_percentage > 0 && $topic_percentage < 100)? '('.$topic_percentage.')' : '';
+
+                                            $completion_counter = 1;
+                                            while($completion_counter <= $completion_count){
+                                                $topic_percentage_text .= '<img src="/assets/default/svgs/completion-star.svg">';
+                                                $completion_counter++;
+                                            }
+
+                                            $topic_percentage_text .= $topic_percentage_flag;
+                                            @endphp
+											
+											<tr>
+												<td data-label="{{ $chapter->title }}" class="px-15 py-20">
+													<div class="checkbox-field mb-0">
+														<label for="{{$sub_chapter['sub_chapter_slug']}}" class="m-0 font-weight-bold">{{ $sub_chapter['title'] }} {!! $topic_percentage_text !!}</label>
+													</div>
+												</td>
+												<td data-label="Mastery Level" class="px-15 py-20">
+													<span>
+													@if( $topic_percentage > 0)
+														<div class="rurera-progress-bar">
+															<span class="progress-inner" style="width: {{$topic_percentage}}%;"></span>
+														</div>
+													@else
+														-
+													@endif
+													</span>
+												</td>
+												<td data-label="Last Seen" class="px-15 py-20">
+													<span>{{$sub_chapter['total_questions']}}</span>
+												</td>
+												<td data-label="Rersources" class="px-15 py-20">
+													<a href="#" class="video-btn mr-10">
+														<span class="icon-box">
+															<img src="/assets/default/svgs/play-video.svg" alt="" title="Video">
+														</span>
+													</a>
+													<a href="#" class="file-btn">
+														<span class="icon-box">
+															<img src="/assets/default/svgs/filesheet.svg" alt="" title="Helpsheet">
+														</span>
+													</a>
+												</td>
+											</tr>
+											
+										@endif
+									@endforeach
+									
+									
+									
+								@endif
+								
+							</tbody>
+						</table>
+					</div>
+				@endif
+			@endforeach
+        </div>
+    </div>
+</div>
 
                     
                     
