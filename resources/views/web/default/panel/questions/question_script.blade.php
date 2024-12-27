@@ -32,7 +32,16 @@
 			document.querySelector('[name="field-' + field_id + '"][value="' + correct_value + '"]').closest('.form-field').classList.add('correct');
 		}
 		document.querySelector('[name="field-' + field_id + '"][value="' + user_selected_value + '"]').checked = true;
-    } else if (field_type === 'textarea') {
+    } else if (field_type === 'truefalse_quiz') {
+        var textField = document.getElementById('field-' + field_id);
+        var correctClass = (user_selected_value !== correct_value) ? 'wrong' : 'correct';
+		
+		if( is_result_question == true){
+			document.querySelector('[name="field-' + field_id + '"][value="' + user_selected_value + '"]').closest('.form-field').classList.add(correctClass);
+			document.querySelector('[name="field-' + field_id + '"][value="' + correct_value + '"]').closest('.form-field').classList.add('correct');
+		}
+		document.querySelector('[name="field-' + field_id + '"][value="' + user_selected_value + '"]').checked = true;
+    }else if (field_type === 'textarea') {
 		var textField = document.getElementById('field-' + field_id);
 		textField.value = user_selected_value;
 		if( is_result_question == true){
