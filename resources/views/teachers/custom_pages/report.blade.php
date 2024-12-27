@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="accuracy-tooltip">
-                    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content='<div class="accuracy-score">
+                    <button type="button" class="btn btn-secondary" data-container="body" data-html="true" data-toggle="popover" data-placement="top" data-content='<div class="accuracy-score">
                         <div class="chart-holder">
                             <div class="chart-value-lables">
                                 <div class="curved-text-gr">
