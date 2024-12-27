@@ -144,35 +144,38 @@
                                 <li id="subject_{{$chapter->id}}"><div class="element-title mb-20"><h2 class="mb-0 font-22 text-dark-charcoal">{{ $chapter->title }}</h2></div>
 
                                     @if(!empty($sub_chapters[$chapter->id]) and count($sub_chapters[$chapter->id]))
-                                    <div class="lms-chapter-ul-outer" id="accordion"><ul>
+                                    <div class="lms-chapter-ul-outer"><ul>
                                         @foreach($sub_chapters[$chapter->id] as $sub_chapter)
                                         @if(!empty($sub_chapter))
-                                            @php $quizUserData = Quiz::getQuizPercentage($sub_chapter['id'], true);
-                                            $completion_count = isset( $quizUserData['completion_count'] )? $quizUserData['completion_count'] : 0;
-                                            $topic_percentage = isset( $quizUserData['topic_percentage'] )? $quizUserData['topic_percentage'] : 0;
-                                            $topic_student_level = isset( $quizUserData['topic_student_level'] )? $quizUserData['topic_student_level'] : '';
-											$sub_chapter_item = isset( $sub_chapter['sub_chapter_item'] )? $sub_chapter['sub_chapter_item'] : array();
-
-                                            $topic_percentage_flag = ( $topic_percentage >= 95 && $topic_percentage < 100)? '<img src="/assets/default/svgs/completion-flag.svg">' : '';
-                                            $topic_percentage_text = ($topic_percentage > 0 && $topic_percentage < 100)? '('.$topic_percentage.')' : '';
-
-                                            $completion_counter = 1;
-                                            while($completion_counter <= $completion_count){
-                                                $topic_percentage_text .= '<img src="/assets/default/svgs/completion-star.svg">';
-                                                $completion_counter++;
-                                            }
-
-                                            $topic_percentage_text .= $topic_percentage_flag;
-											$topic_student_level_text = ($topic_student_level != '')? '('.$topic_student_level.')' : '';
-                                            @endphp
-                                            <li>
-                                                <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">{{ $sub_chapter['title'] }} {!! $topic_percentage_text !!} {{$topic_student_level_text}}</a>
+												@php $sub_chapter_item = isset( $sub_chapter['sub_chapter_item'] )? $sub_chapter['sub_chapter_item'] : array();
+												@endphp
+												<li>
+												<a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$sub_chapter['id']}}" aria-expanded="true" aria-controls="collapseOne">{{ $sub_chapter['title'] }}</a>
                                                 {{ user_assign_topic_template($sub_chapter['id'], 'practice', $childs, $parent_assigned_list) }}
 												
 												@if($sub_chapter_item->Quizzes->count() > 0)
-												<ul id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+												<ul id="collapse{{$sub_chapter['id']}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 													@foreach($sub_chapter_item->Quizzes as $QuizObj)
-														<li><a href="/{{$category_slug}}/{{$course->slug}}/{{$QuizObj->quiz_slug}}" class="{{ subscriptionCheckLink('courses') }}">{{ $QuizObj->getTitleAttribute() }}</a></li>
+														@php 
+														$topicPerformData = Quiz::getQuizPercentage($QuizObj->id, true);
+														
+														$topic_accuracy = isset( $topicPerformData['topic_accuracy'] )? $topicPerformData['topic_accuracy'] : 0;
+														$topic_completion = isset( $topicPerformData['topic_completion'] )? $topicPerformData['topic_completion'] : 0;
+														$topic_percentage_flag = '';
+														if($topic_completion > 80){
+															$topic_percentage_flag = ($topic_accuracy > 0)? '<img src="/assets/default/svgs/above_0.svg" title="'.$topic_accuracy.'%">' : $topic_percentage_flag;
+															$topic_percentage_flag = ($topic_accuracy > 25)? '<img src="/assets/default/svgs/above_25.svg" title="'.$topic_accuracy.'%">' : $topic_percentage_flag;
+															$topic_percentage_flag = ($topic_accuracy > 50)? '<img src="/assets/default/svgs/above_50.svg" title="'.$topic_accuracy.'%">' : $topic_percentage_flag;
+															$topic_percentage_flag = ($topic_accuracy > 80)? '<img src="/assets/default/svgs/above_80.svg" title="'.$topic_accuracy.'%">' : $topic_percentage_flag;
+														}
+														
+														$topic_percentage_text = ($topic_completion > 0 && $topic_completion < 80)? '('.$topic_completion.')' : '';
+
+														
+														$topic_percentage_text .= $topic_percentage_flag;
+														@endphp
+													
+														<li><a href="/{{$category_slug}}/{{$course->slug}}/{{$QuizObj->quiz_slug}}" class="{{ subscriptionCheckLink('courses') }}">{{ $QuizObj->getTitleAttribute() }} {!! $topic_percentage_text !!}</a></li>
 													@endforeach
 												</ul>
 												@endif
