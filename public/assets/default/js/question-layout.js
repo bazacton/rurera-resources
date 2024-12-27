@@ -340,7 +340,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
                     });
 
                 });
-				correct_answers_html = (correct_answers_html != '')? '<ul class="correct-answers-block">'+correct_answers_html+'</ul>' : '';
+				correct_answers_html = (correct_answers_html != '')? '<h3>Correct Answer: </h3><ul class="correct-answers-block">'+correct_answers_html+'</ul>' : '';
                 /*
                 if (question_response_layout != '') {
                     var question_response_layout = return_data.question_response_layout;
@@ -417,7 +417,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
                         //thisForm.find('.question-submit-btn').remove();
                         if (quiz_type == 'practice') {
                             //$("#quiz_question_status_modal").modal('show');
-                            $(".question-area-block").find('.show-notifications').html(correct_answers_html+'<span class="question-status-wrong">Thats incorrect, but well done for trying</span>');
+                            $(".question-area-block").find('.show-notifications').html('<span class="question-status-wrong">Thats incorrect, but well done for trying</span>'+correct_answers_html);
                             $(".question-area-block").find('.show-notifications').append('<audio autoPlay="" className="player-box-audio" id="audio_file_4492" src="/speech-audio/wrong-answer.mp3"></audio>');
                             if (rurera_is_field(return_data.question_solution)) {
                                 $(".question-area-block").find('.show-notifications').append(return_data.question_solution);
