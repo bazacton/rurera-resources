@@ -1112,7 +1112,9 @@ Lms Responsive Style Start
     .curriculums-head:after {width: 300px;}
     .lms-element-nav ul {margin: 0 -10px;}
     .lms-element-nav li {padding: 0 10px 10px;}
+    body .lms-quiz-section .input-holder {width: 100%; margin: 10px 0;}
     .lms-quiz-section .input-holder input[type="text"] {max-width: 100%;}
+    .question-layout .rureraform-col {padding: 0 15px 10px !important;}
     .footer .footer-subscribe {height: auto;}
     .footer-dots-img img {
         width: 200px;
@@ -1143,7 +1145,7 @@ Lms Responsive Style Start
         margin-top: 50px;
     }
     .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {
-        padding: 20px 0;
+        padding: 12px 0;
         display: block;
         width: 100%;
     }
@@ -1214,7 +1216,6 @@ Lms Responsive Style Start
     /* .lms-data-table table.table thead th {display: block; width: 100% !important; box-sizing: border-box;} */
     .lms-data-table.spells table.table thead th {display: table-cell; width: auto !important;}
     .learning-page .learning-page-content {overflow: hidden;}
-    .question-layout-block form.question-fields {padding: 20px 15px 0;}
     .question-layout-block .question-fields .rureraform-element {padding-left: 0; padding-right: 0;}
     .question-layout-block .question-fields .rureraform-element .block-holder.image-field img {max-width: 100%;}
     body .question-layout-block form.question-fields .questions-total-holder {font-size: 16px;}
