@@ -328,12 +328,18 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
             if (return_data.incorrect_flag == true && return_data.show_fail_message == true) {
                 var question_response_layout = return_data.question_response_layout;
 				
+				var correct_answers_html2 = '';
 				var correct_answers_html = '';
                 var user_answers_html = '';
+				
+				$.each(return_data.correct_answers_array, function (correct_index, correct_value) {
+                    correct_answers_html += '<li>' + correct_value + '</li>';
+                });
+				
                 $.each(return_data.incorrect_array, function (field_id, value) {
                     thisForm.find('#field-' + field_id).addClass('validate-error');
                     $.each(value.correct, function (correct_index, correct_value) {
-                        correct_answers_html += '<li>' + correct_value + '</li>';
+                        correct_answers_html2 += '<li>' + correct_value + '</li>';
                     });
                     $.each(value.user_input, function (user_index, user_value) {
                         user_answers_html += '<li>' + user_value + '</li>';
