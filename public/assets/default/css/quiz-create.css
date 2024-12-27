@@ -1275,7 +1275,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
 }
 .quiz-questions-bar-holder .value-lable span {
     position: absolute;
-    left: 0;
+    right: 0;
     background-color: #2ecc71;
     color: #fff;
     height: auto;
