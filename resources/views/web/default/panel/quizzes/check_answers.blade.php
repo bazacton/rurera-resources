@@ -15,9 +15,19 @@ $rand_id = rand(99,9999);
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/flipbook.style.css">
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/slide-menu.css">
+<link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver={{$rand_id}}">
 <script src="/assets/vendors/flipbook/js/flipbook.min.js"></script>
 <link rel="stylesheet" href="/assets/default/vendors/swiper/swiper-bundle.min.css">
-
+<style>
+.field-holder.correct, .form-field.correct, .form-field.correct label {
+    background: #70c17c !important;
+    color: #fff;
+}
+.field-holder.wrong, .form-field.wrong, .form-field.wrong label {
+    background: #ff4a4a !important;
+    color: #fff;
+}
+</style>
 @endpush
 @section('content')
 @php
@@ -81,7 +91,7 @@ $total_questions = is_array( $questions_list )? count($questions_list): 0;
                             </div>
                             <div class="col-12 col-md-4 col-lg-3">
                                 <div class="sats-summary-icon" style="background-color: #fe3c30;">
-                                    <img src="/assets/default/svgs/question-circle-white.svg" alt="">
+                                    <img src="/assets/default/svgs/question-circle.svg" alt="">
                                 </div>
                                 <div class="summary-text">
                                     <label>Incorrect / Not Attempted</label>
