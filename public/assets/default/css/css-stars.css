@@ -126,7 +126,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>ul {
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a:after {
     content: "";
     position: absolute;
-    left: 18px;
+    left: 22px;
     top: 50%;
     height: 9px;
     width: 9px;
