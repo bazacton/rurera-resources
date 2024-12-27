@@ -1147,7 +1147,7 @@ Lms Responsive Style Start
         margin-top: 50px;
     }
     .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {
-        padding: 20px 0;
+        padding: 12px 0;
         display: block;
         width: 100%;
     }
