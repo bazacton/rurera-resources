@@ -27,7 +27,7 @@ $is_new = isset( $is_new )? $is_new : 'no';
 
         <div class="learning-page-content flex-grow-1 bg-info-light p-15">
             <div class="default-loaded-data rurera-hide" data-is_started_already="{{isset( $resultObj->id)? 'yes' : 'no' }}"></div>
-            <div class="learning-content read-quiz-content {{isset( $resultObj->id)? 'rurera-hide' : '' }}" id="learningPageContent">
+            <div class="learning-content read-quiz-content {{isset( $resultObj->id)? 'rurera-hide' : '' }} pt-60" id="learningPageContent">
 
                 @php $content_class = ''; @endphp
                 @if( $quiz->quiz_type == 'vocabulary' || $quiz->quiz_type == 'practice')
