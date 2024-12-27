@@ -1141,6 +1141,10 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
 }
 .correct-answers-block {
     margin: 0 0 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 .correct-answers-block li {
     display: inline-block;
