@@ -1116,6 +1116,7 @@ Lms Responsive Style Start
     body .rureraform-element:has(.lms-radio-select) {line-height: 28px;}
     body .lms-quiz-section .input-holder {width: 100%; margin: 10px 0;}
     .lms-quiz-section .input-holder input[type="text"] {max-width: 100%;}
+    .question-layout .rureraform-col {padding: 0 15px 10px !important;}
     .footer .footer-subscribe {height: auto;}
     .footer-dots-img img {
         width: 200px;
