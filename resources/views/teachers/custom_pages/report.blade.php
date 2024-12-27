@@ -12,8 +12,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="accuracy-tooltip">
-                    <span>Tooltip Hover Link</span>
-                    <div class="accuracy-score">
+                    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content='<div class="accuracy-score">
                         <div class="chart-holder">
                             <div class="chart-value-lables">
                                 <div class="curved-text-gr">
@@ -56,11 +55,13 @@
                         </div>
                         <div class="accuracy-text">
                             <span class="accuracy-lable">Accuracy Score</span>
-                            <h4>You're on the path to full automation!</h4>
-                            <p>We'll soon be able to automatically categorize your consumption date. Keep going</p>
+                            <h4>You are on the path to full automation!</h4>
+                            <p>We will soon be able to automatically categorize your consumption date. Keep going</p>
                             <a href="#" class="accuracy-back-btn">Back to dashboard</a>
                         </div>
-                    </div>
+                    </div>'>
+                        Hover for accuracy tooltip
+                    </button>
                 </div>
             </div>
             <div class="col-12">
