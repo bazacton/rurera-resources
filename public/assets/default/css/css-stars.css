@@ -95,6 +95,47 @@ body .lms-chapter-area .lms-chapter-ul-outer li ul li {
     line-height: normal;
 }
 
+.lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer {
+    padding: 0;
+}
+body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul {
+    -moz-column-count: 1;
+    column-count: 1;
+}
+body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li {
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+}
+body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a {
+    padding: 15px 15px 15px 32px;
+    display: block;
+    position: relative;
+}
+body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
+    left: 15px;
+    margin-top: 15px;
+}
+body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>ul {
+    padding-bottom: 15px;
+}
+body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    height: 9px;
+    width: 9px;
+    border-top: 2px solid #555;
+    border-right: 2px solid #555;
+    transform: rotate(-45deg) translateY(-50%);
+}
+body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:after {
+    border-bottom: 2px solid #555;
+    border-left: 2px solid #555;
+    border-top: 0;
+    border-right: 0;
+}
+
 @media (max-width: 992px) {
     /* .lms-chapter-area .lms-chapter-ul {
         column-count: 2;
