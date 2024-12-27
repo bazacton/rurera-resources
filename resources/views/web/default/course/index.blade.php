@@ -151,6 +151,13 @@
 												@endphp
 												<li>
 												<a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$sub_chapter['id']}}" aria-expanded="true" aria-controls="collapseOne">{{ $sub_chapter['title'] }}</a>
+                                                <div class="percent-holder">
+                                                    <div class="stats_percent circle-orange" data-percent="50">
+                                                        <div class="circle_inner">
+                                                            <div class="round_per"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 {{ user_assign_topic_template($sub_chapter['id'], 'practice', $childs, $parent_assigned_list) }}
 												
 												@if($sub_chapter_item->Quizzes->count() > 0)
