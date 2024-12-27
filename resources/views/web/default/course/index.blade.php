@@ -137,14 +137,14 @@
                             aria-multiselectable="true">
 
 
-                            <ul class="lms-chapter-ul">
+                            <ul class="lms-chapter-ul" d="accordion_{{$chapter->id}}">
                                 @foreach($course->chapters as $chapter)
 
                                 @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
                                 <li id="subject_{{$chapter->id}}"><div class="element-title mb-20"><h2 class="mb-0 font-22 text-dark-charcoal">{{ $chapter->title }}</h2></div>
 
                                     @if(!empty($sub_chapters[$chapter->id]) and count($sub_chapters[$chapter->id]))
-                                    <div class="lms-chapter-ul-outer" d="accordion_{{$chapter->id}}"><ul>
+                                    <div class="lms-chapter-ul-outer"><ul>
                                         @foreach($sub_chapters[$chapter->id] as $sub_chapter)
                                         @if(!empty($sub_chapter))
 												@php $sub_chapter_item = isset( $sub_chapter['sub_chapter_item'] )? $sub_chapter['sub_chapter_item'] : array();
