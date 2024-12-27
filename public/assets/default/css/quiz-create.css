@@ -1092,9 +1092,6 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
 .rureraform-element:has(.input-holder.input_box) {
 	line-height: 40px;
 }
-.rureraform-element:has(.lms-radio-select) {
-    line-height: 44px;
-}
 .question-layout .rureraform-element:has(select ~ select) {
     line-height: 50px;
 }
