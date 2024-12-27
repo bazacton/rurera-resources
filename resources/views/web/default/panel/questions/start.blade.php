@@ -15,7 +15,7 @@ $rand_id = rand(99,9999);
 @section('content')
 
 
-<div class="learning-page type-practice type-sats">
+<div class="learning-page type-practice type-sats test">
 	<section class="lms-quiz-section">
         <div class="container questions-data-block read-quiz-content" data-total_questions="0">
             <div class="justify-content-center">
