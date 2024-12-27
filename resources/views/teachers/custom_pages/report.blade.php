@@ -11,8 +11,8 @@
     <div class="section-body">
         <div class="row">
             <div class="col-12">
-                <a href="#" class="tooltip-link">
-                    <span>|Tooltip Hover Link</span>
+                <div class="accuracy-tooltip">
+                    <span>Tooltip Hover Link</span>
                     <div class="accuracy-score">
                         <div class="chart-holder">
                             <div class="chart-value-lables">
@@ -61,7 +61,7 @@
                             <a href="#" class="accuracy-back-btn">Back to dashboard</a>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="col-12">
                 <h2 class="mb-20">Overview</h2>
