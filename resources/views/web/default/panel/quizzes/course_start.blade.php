@@ -23,10 +23,7 @@ $target_score = ($target_score > 0)? $target_score : 100;
 $practice_time = 0;
 @endphp
 {{----}}
-
-
-    <link rel="stylesheet" href="/assets/default/css/responsive.css">
-<div class="content-section quiz-settings dis-arrows pt-60">
+<div class="content-section quiz-settings dis-arrows">
 
     <section class="lms-quiz-section">
 {{--Flipbook Pdf Questions--}}
@@ -134,9 +131,20 @@ $practice_time = 0;
                     <div class="quiz-status-bar">
                         <div class="quiz-questions-bar-holder">
 
+							@php 
+							
+							$topic_accuracy = isset( $topicPerformData['topic_accuracy'] )? $topicPerformData['topic_accuracy'] : 0;
+							$topic_completion = isset( $topicPerformData['topic_completion'] )? $topicPerformData['topic_completion'] : 0;
+							@endphp
                             <div class="quiz-questions-bar">
-                                @if( $target_score > 0)
-                                    <span class="value-lable" data-title="Target" style="left:{{$target_score}}%"><span>{{$target_score}}%</span></span>
+                                @if( $topic_completion > 0)
+									@if( $topic_accuracy > $topic_completion)
+										<span class="accuracy-progress value-lable" data-title="Accuracy" style="left:{{$topic_accuracy}}%"><span>{{$topic_accuracy}}%</span></span>
+										<span class="completion-progress value-lable" data-title="Topic Completion" style="left:{{$topic_completion}}%"><span>{{$topic_completion}}%</span></span>
+									@else
+										<span class="completion-progress value-lable" data-title="Topic Completion" style="left:{{$topic_completion}}%"><span>{{$topic_completion}}%</span></span>
+										<span class="accuracy-progress value-lable" data-title="Accuracy" style="left:{{$topic_accuracy}}%"><span>{{$topic_accuracy}}%</span></span>
+									@endif
                                 @endif
                                 <span class="bar-fill" title="" style="width: 0%;"></span>
                             </div>
