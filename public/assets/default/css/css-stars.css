@@ -153,7 +153,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
 .round_per {position: absolute; left: 0; top: 0; width: 1em; height: 1em; background: var(--blue); clip:rect(0 1em 1em .5em); transform:rotate(180deg); transition:1.05s;}
 .percent_more .circle_inner {clip:rect(0 .5em 1em 0em);}
 .percent_more:after {position: absolute; left: .5em; top:0em; right: 0; bottom: 0; background: var(--blue); content:'';}
-.circle_inbox {position: absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; background: #fff; z-index:3; border-radius: 50%;}
+.circle_inbox {position: absolute;top: 50%; left: 50%; background: #fff; z-index: 3; border-radius: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%);}
 .percent_text {position: absolute; font-size: 14px; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 3; color: #000;
     font-weight: bold;}
 .chapter_percent .circle_inbox .percent_text {
