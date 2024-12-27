@@ -105,6 +105,10 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul {
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li {
     border-bottom: 1px solid #ddd;
     list-style: none;
+    margin-bottom: 0;
+}
+body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:last-child {
+    border-bottom: 0;
 }
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a {
     padding: 15px 15px 15px 32px;
