@@ -1264,9 +1264,18 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
 .quiz-questions-bar {background-color: #e5e5e5; height: 10px; border-radius: 20px; width: calc(100% - 60px); position: relative;}
 .quiz-questions-bar .bar-fill {background-color: #2ecc71; border-radius: 20px; display: block; height: 100%; position: relative; }
 .quiz-questions-bar-holder {width: calc(100% - 95px); display: inline-flex; vertical-align: middle; margin-right: -4px; align-items: center; position: relative; padding-left: 20px; }
-.quiz-questions-bar-holder .value-lable {
+.quiz-questions-bar .value-lable {
     position: absolute;
-    left: 0;
+    background-color: #333;
+    min-height: 10px;
+    display: inline-block;
+}
+.quiz-questions-bar .completion-progress {
+    background-color: #2ecc71;
+}
+.quiz-questions-bar-holder .value-lable span {
+    position: absolute;
+    right: 0;
     background-color: #2ecc71;
     color: #fff;
     height: auto;
@@ -1280,7 +1289,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
     z-index: 1;
     padding: 3px 15px;
 }
-.quiz-questions-bar-holder .accuracy-progress.value-lable {
+.quiz-questions-bar-holder .accuracy-progress.value-lable span {
     background-color: #333;
     top: 100%;
     transform: none;
@@ -1288,8 +1297,8 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
     bottom: auto;
     margin-bottom: 0;
 }
-.quiz-questions-bar-holder .value-lable:before {content: attr(data-title); background: #333; position: absolute; top: 100%; padding: 5px 13px; line-height: normal; left: 50%; transform: translateX(-50%); border-radius: 5px; letter-spacing: 0px; opacity: 0; visibility: hidden; margin-top: 10px;}
-.quiz-questions-bar-holder .value-lable:after {
+.quiz-questions-bar-holder .value-lable span:before {content: attr(data-title); background: #333; position: absolute; top: 100%; padding: 5px 13px; line-height: normal; left: 50%; transform: translateX(-50%); border-radius: 5px; letter-spacing: 0px; opacity: 0; visibility: hidden; margin-top: 10px;}
+.quiz-questions-bar-holder .value-lable span:after {
     position: absolute;
     left: 50%;
     top: 100%;
@@ -1301,7 +1310,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
     margin-left: -4px;
     margin-top: -4px;
 }
-.quiz-questions-bar-holder .accuracy-progress.value-lable:after {
+.quiz-questions-bar-holder .accuracy-progress.value-lable span:after {
     background-color: #333;
     top: 0;
 }
