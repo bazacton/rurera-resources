@@ -166,11 +166,11 @@
 											$topic_student_level_text = ($topic_student_level != '')? '('.$topic_student_level.')' : '';
                                             @endphp
                                             <li>
-                                                <a href="#" class="{{ subscriptionCheckLink('courses') }}" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">{{ $sub_chapter['title'] }} {!! $topic_percentage_text !!} {{$topic_student_level_text}}</a>
+                                                <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">{{ $sub_chapter['title'] }} {!! $topic_percentage_text !!} {{$topic_student_level_text}}</a>
                                                 {{ user_assign_topic_template($sub_chapter['id'], 'practice', $childs, $parent_assigned_list) }}
 												
 												@if($sub_chapter_item->Quizzes->count() > 0)
-												<ul id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+												<ul id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 													@foreach($sub_chapter_item->Quizzes as $QuizObj)
 														<li><a href="/{{$category_slug}}/{{$course->slug}}/{{$QuizObj->quiz_slug}}" class="{{ subscriptionCheckLink('courses') }}">{{ $QuizObj->getTitleAttribute() }}</a></li>
 													@endforeach
