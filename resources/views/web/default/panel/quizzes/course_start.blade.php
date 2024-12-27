@@ -139,11 +139,11 @@ $practice_time = 0;
                             <div class="quiz-questions-bar">
                                 @if( $topic_completion > 0)
 									@if( $topic_accuracy > $topic_completion)
-										<span class="accuracy-progress value-lable" data-title="Accuracy" style="left:{{$topic_accuracy}}%"><span>{{$topic_accuracy}}%</span></span>
-										<span class="completion-progress value-lable" data-title="Topic Completion" style="left:{{$topic_completion}}%"><span>{{$topic_completion}}%</span></span>
+										<span class="accuracy-progress value-lable" data-title="Accuracy" style="width:{{$topic_accuracy}}%"><span>{{$topic_accuracy}}%</span></span>
+										<span class="completion-progress value-lable" data-title="Topic Completion" style="width:{{$topic_completion}}%"><span>{{$topic_completion}}%</span></span>
 									@else
-										<span class="completion-progress value-lable" data-title="Topic Completion" style="left:{{$topic_completion}}%"><span>{{$topic_completion}}%</span></span>
-										<span class="accuracy-progress value-lable" data-title="Accuracy" style="left:{{$topic_accuracy}}%"><span>{{$topic_accuracy}}%</span></span>
+										<span class="completion-progress value-lable" data-title="Topic Completion" style="width:{{$topic_completion}}%"><span>{{$topic_completion}}%</span></span>
+										<span class="accuracy-progress value-lable" data-title="Accuracy" style="width:{{$topic_accuracy}}%"><span>{{$topic_accuracy}}%</span></span>
 									@endif
                                 @endif
                                 <span class="bar-fill" title="" style="width: 0%;"></span>
