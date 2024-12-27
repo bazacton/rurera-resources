@@ -1774,6 +1774,7 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 			
 			var already_printed_msgs = new Array();
 		
+			var error_msg_html = new Array();
             $.each(error_objects, function (key, errorObj) {
                 var error_msg = errorObj.error_msg;
                 var error_obj = errorObj.error_obj;
@@ -1782,10 +1783,13 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 						return true;
 					}
 					already_printed_msgs.push(error_msg);
-					error_msg = '<span class="question-status-wrong">' + error_msg + '</span>';
-					$('.show-notifications').append(error_msg);
+					error_msg_html += '<span class="question-status-wrong">' + error_msg + '</span>';
 				}
             });
+			
+			if(error_msg_html != ''){
+				$('.show-notifications').append('<div class="rurera-validation-error">'+error_msg_html+'</div>');
+			}
         }
 		
 		
