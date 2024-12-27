@@ -190,7 +190,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 
 /* True False Without Column Style Start, https://rurera.com/admin/questions_bank/34359/edit */
 .rureraform-element:has(.truefalse_quiz) {display: flex !important; align-items: center; flex-wrap: wrap;}
-.rureraform-element:has(span.truefalse_question_label) .truefalse_question_label {font-size: 1rem; font-weight: 700; width: 66.66666666%; padding-right: 15px;}
+.rureraform-element:has(span.truefalse_question_label) .truefalse_question_label {font-size: 1rem; font-weight: 700; width: 66.66666666%; padding-right: 15px; line-height: 24px;}
 .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {padding: 0 0 0 20px;}
 /* True False Without Column Style End */
 
@@ -1108,6 +1108,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
     font-style: italic;
     color: #999;
     display: block;
+    line-height: 24px;
 }
 .show-notifications {
     display: inline-block;
