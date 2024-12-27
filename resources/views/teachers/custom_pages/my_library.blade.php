@@ -6,7 +6,6 @@
 
 @push('styles_top')
     <link rel="stylesheet" href="/assets/default/css/quiz-create.css">
-    <link rel="stylesheet" href="/assets/default/css/responsive.css">
 @endpush
 
 @section('content')
