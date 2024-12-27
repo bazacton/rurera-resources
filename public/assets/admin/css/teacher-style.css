@@ -3987,8 +3987,6 @@ Accuracy Score Card Style Start
     padding: 15px 30px 30px;
     margin: 0 0 30px;
     border: 1px solid #ddd;
-    opacity: 0;
-    visibility: hidden;
 }
 /* Curved-text-ex Style */
 .chart-holder {

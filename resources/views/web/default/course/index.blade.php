@@ -137,20 +137,27 @@
                             aria-multiselectable="true">
 
 
-                            <ul class="lms-chapter-ul">
+                            <ul class="lms-chapter-ul" id="accordion">
                                 @foreach($course->chapters as $chapter)
 
                                 @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
                                 <li id="subject_{{$chapter->id}}"><div class="element-title mb-20"><h2 class="mb-0 font-22 text-dark-charcoal">{{ $chapter->title }}</h2></div>
 
                                     @if(!empty($sub_chapters[$chapter->id]) and count($sub_chapters[$chapter->id]))
-                                    <div class="lms-chapter-ul-outer"  id="accordion"><ul>
+                                    <div class="lms-chapter-ul-outer"><ul>
                                         @foreach($sub_chapters[$chapter->id] as $sub_chapter)
                                         @if(!empty($sub_chapter))
 												@php $sub_chapter_item = isset( $sub_chapter['sub_chapter_item'] )? $sub_chapter['sub_chapter_item'] : array();
 												@endphp
 												<li>
 												<a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$sub_chapter['id']}}" aria-expanded="true" aria-controls="collapseOne">{{ $sub_chapter['title'] }}</a>
+                                                <div class="percent-holder">
+                                                    <div class="chapter_percent circle-blue" data-percent="50">
+                                                        <div class="circle_inner">
+                                                            <div class="round_per"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 {{ user_assign_topic_template($sub_chapter['id'], 'practice', $childs, $parent_assigned_list) }}
 												
 												@if($sub_chapter_item->Quizzes->count() > 0)
@@ -482,6 +489,36 @@ $(document).on('click', '.view-change-btn', function (e) {
 	$(".chapter-views").addClass('rurera-hide');
 	$(".chapter-views."+view_chapter).removeClass('rurera-hide');
 });
+
+/*percent circle function start*/
+$(document).ready(function () {
+    $(".chapter_percent").each(function() {
+        var $this = $(this),
+        $dataV = $this.data("percent"),
+        $dataDeg = $dataV * 3.6,
+        $round = $this.find(".round_per");
+        $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)"); 
+        $this.append('<div class="circle_inbox"><span class="percent_text"></span></div>');
+        $this.prop('Counter', 0).animate({Counter: $dataV},
+    {
+        duration: 2000, 
+        easing: 'swing', 
+        step: function (now) {
+                $this.find(".percent_text").text(Math.ceil(now));
+            }
+        });
+        if($dataV >= 51){
+            $round.css("transform", "rotate(" + 360 + "deg)");
+            setTimeout(function(){
+            $this.addClass("percent_more");
+            },1000);
+            setTimeout(function(){
+            $round.css("transform", "rotate(" + parseInt($dataDeg + 180) + "deg)");
+            },1000);
+        } 
+    });
+});
+/*percent circle function end*/
 </script>
 
 @endpush

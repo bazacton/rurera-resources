@@ -111,13 +111,14 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:last-child {
     border-bottom: 0;
 }
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a {
-    padding: 15px 15px 15px 32px;
+    padding: 15px 15px 15px 40px;
     display: block;
     position: relative;
 }
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
     left: 15px;
     margin-top: 15px;
+    display: none;
 }
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>ul {
     padding-bottom: 15px;
@@ -125,20 +126,44 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>ul {
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a:after {
     content: "";
     position: absolute;
-    right: 15px;
+    left: 18px;
     top: 50%;
     height: 9px;
     width: 9px;
     border-top: 2px solid #333;
     border-right: 2px solid #333;
     transform: rotate(-45deg) translateY(-50%);
+    margin-top: 0;
 }
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:after {
     border-bottom: 2px solid #333;
     border-left: 2px solid #333;
     border-top: 0;
     border-right: 0;
+    margin-top: -2px;
 }
+/* Circle Progress style start */
+.chapter_percent {font-size:35px; width:1em; height:1em; position: relative; background: #eee; border-radius:50%; overflow:hidden; display:inline-block;}
+.circle_inner {position: absolute; left: 0; top: 0; width: 1em; height: 1em; clip:rect(0 1em 1em .5em);}
+.round_per {position: absolute; left: 0; top: 0; width: 1em; height: 1em; background: var(--blue); clip:rect(0 1em 1em .5em); transform:rotate(180deg); transition:1.05s;}
+.percent_more .circle_inner {clip:rect(0 .5em 1em 0em);}
+.percent_more:after {position: absolute; left: .5em; top:0em; right: 0; bottom: 0; background: var(--blue); content:'';}
+.circle_inbox {position: absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; background: #fff; z-index:3; border-radius: 50%;}
+.percent_text {position: absolute; font-size: 14px; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 3; color: #000;
+    font-weight: bold;}
+.circle-orange .round_per,
+.circle-orange.percent_more:after {
+    background: #f6b700;
+}
+.circle-green .round_per,
+.circle-green.percent_more:after {
+    background: green;
+}
+.circle-yellow .round_per,
+.circle-yellow.percent_more:after {
+    background: #f3f374;
+}
+/* Circle Progress style end */
 
 @media (max-width: 992px) {
     /* .lms-chapter-area .lms-chapter-ul {
