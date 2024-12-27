@@ -104,7 +104,7 @@ $rand_id = rand(99,9999);
 													@php 
 													$log_completion_performance = $PerformanceLogObj->completion_performance;
 													$log_completion_performance = ($log_completion_performance > 100)? 100 : $log_completion_performance; 
-													if($analyzer_class == 'is_analyzer'){
+													if($analyzer_class != 'is_analyzer'){
 														$log_completion_performance = ($log_completion_performance < 0)? 0 : $log_completion_performance; 
 													}
 													@endphp
