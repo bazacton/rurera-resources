@@ -1274,7 +1274,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
 .prev-next-controls {display: flex; align-items: center; justify-content: center; margin-top: 20px; position: relative; padding-left: 100px;}
 .prev-next-controls a {margin: 0 7px 0 0;}
 .prev-next-controls .review-btn {position: absolute; left: 0; gap: 10px;}
-.question-layout-block .prev-next-controls { border-top: 2px dashed #ddd;position: fixed; width: 845px; bottom: -50px; background-color: #fff; min-height: 100px; padding: 30px 15px; justify-content: space-between; z-index: 1; margin: 0;}
+.question-layout-block .prev-next-controls { border-top: 2px dashed #ddd;position: fixed; width: 845px; bottom: -50px; background-color: #fff; min-height: 100px; padding: 30px 0 30px 15px; justify-content: space-between; z-index: 1; margin: 0;}
 .question-layout-block .prev-next-controls .review-btn {position: relative; font-weight: 500;   margin-left: -15px;}
 
 .review-btn,
@@ -1316,8 +1316,8 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
 .prev-next-controls .question-submit-btn:after,
 .question-next-btn:after {content: ""; position: absolute; right: 15px; top: 50%; height: 7px; width: 14px; border: 2px solid; border-top: 0; border-right: 0; transform: rotate(-50deg); margin: -5px 0 0 0;}
 .prev-next-controls .question-submit-btn,
-.prev-next-controls .question-next-btn { position: absolute; right: 0; min-width: 160px;}
-.prev-next-controls .question-submit-btn{margin-right: 15px; overflow: hidden;}
+.prev-next-controls .question-next-btn { position: absolute; right: 0; min-width: 170px;}
+.prev-next-controls .question-submit-btn{margin-right: 0; overflow: hidden;}
 .prev-next-controls .question-next-btn {margin-right: 0;}
 .prev-next-controls .question-submit-btn svg,
 .prev-next-controls .question-next-btn svg {display: none;}
