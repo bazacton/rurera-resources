@@ -821,6 +821,7 @@ body:has(.edit-profile) {
 .question-result-layout.question-status-incorrect:before {content: "\00D7"; background-color: #ff4f4f; font-size: 22px;}
 .question-result-layout.question-status-correct {border-left-color: #70c17c;}
 .question-result-layout.question-status-incorrect {border-left-color: #ff4f4f;}
+.question-result-layout .rureraform-element:hover {outline: none !important;}
 .question-result-layout form.question-fields {background-color: inherit; border: 0; border-radius: 0; padding: 0; min-height: auto; margin: 0;}
 .question-result-layout .disable-div:before {background-color: inherit;}
 .question-result-layout .question-area {min-height: auto !important;}
