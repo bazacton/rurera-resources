@@ -144,7 +144,7 @@
                                 <li id="subject_{{$chapter->id}}"><div class="element-title mb-20"><h2 class="mb-0 font-22 text-dark-charcoal">{{ $chapter->title }}</h2></div>
 
                                     @if(!empty($sub_chapters[$chapter->id]) and count($sub_chapters[$chapter->id]))
-                                    <div class="lms-chapter-ul-outer"  id="accordion"><ul>
+                                    <div class="lms-chapter-ul-outer" d="accordion_{{$chapter->id}}"><ul>
                                         @foreach($sub_chapters[$chapter->id] as $sub_chapter)
                                         @if(!empty($sub_chapter))
 												@php $sub_chapter_item = isset( $sub_chapter['sub_chapter_item'] )? $sub_chapter['sub_chapter_item'] : array();
@@ -154,7 +154,7 @@
                                                 {{ user_assign_topic_template($sub_chapter['id'], 'practice', $childs, $parent_assigned_list) }}
 												
 												@if($sub_chapter_item->Quizzes->count() > 0)
-												<ul id="collapse{{$sub_chapter['id']}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+												<ul id="collapse{{$sub_chapter['id']}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion_{{$chapter->id}}">
 													@foreach($sub_chapter_item->Quizzes as $QuizObj)
 														@php 
 														$topicPerformData = Quiz::getQuizPercentage($QuizObj->id, true);
