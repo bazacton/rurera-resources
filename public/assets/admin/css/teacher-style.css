@@ -3976,6 +3976,9 @@ Overview Questions Style End
 /*************************************
 Accuracy Score Card Style Start
 **************************************/
+.accuracy-tooltip {
+    position: relative;
+}
 .accuracy-score {
     max-width: 400px;
     background-color: #f9f9f9;
@@ -3984,6 +3987,8 @@ Accuracy Score Card Style Start
     padding: 15px 30px 30px;
     margin: 0 0 30px;
     border: 1px solid #ddd;
+    opacity: 0;
+    visibility: hidden;
 }
 /* Curved-text-ex Style */
 .chart-holder {
@@ -4038,17 +4043,12 @@ Accuracy Score Card Style Start
     top: 28px;
 }
 /* Curved-text-gr Style */
-.accuracy-tooltip {
-    position: relative;
-}
 .curved-text-gr {
     position: absolute;
     text-align: center;
     width: 100%;
     top: 10px;
     transform: rotate(-5deg);
-    visibility: hidden;
-    opacity: 0;
 }
 .curved-text-gr span {
     font-size: 16px;
