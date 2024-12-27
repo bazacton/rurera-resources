@@ -11,54 +11,57 @@
     <div class="section-body">
         <div class="row">
             <div class="col-12">
-                <div class="accuracy-score">
-                    <div class="chart-holder">
-                        <div class="chart-value-lables">
-                            <div class="curved-text-gr">
-                                <span>G</span>
-                                <span>R</span>
-                                <span>E</span>
-                                <span>A</span>
-                                <span>T</span>
-                            </div>
-                            <div class="curved-text-ex">
-                                <span>E</span>
-                                <span>X</span>
-                                <span>C</span>
-                                <span>E</span>
-                                <span>L</span>
-                                <span>L</span>
-                                <span>E</span>
-                                <span>N</span>
-                                <span>T</span>
-                            </div>
-                            <div class="curved-text-bd">
-                                <span>B</span>
-                                <span>A</span>
-                                <span>D</span>
-                            </div>  
-                        </div>
-                        <figure>
-                            <img src="/assets/default/img/accuracy-chart.png" alt="">
-                            <figcaption>
-                                <div class="circle-percent-box">
-                                    <div class="circle_percent" data-percent="92">
-                                        <div class="circle_inner">
-                                            <div class="round_per"></div>
-                                        </div>
-                                    </div>
-                                    <span class="total-percent">/100</span>
+                <a href="#" class="tooltip-link">
+                    <span>|Tooltip Hover Link</span>
+                    <div class="accuracy-score">
+                        <div class="chart-holder">
+                            <div class="chart-value-lables">
+                                <div class="curved-text-gr">
+                                    <span>G</span>
+                                    <span>R</span>
+                                    <span>E</span>
+                                    <span>A</span>
+                                    <span>T</span>
                                 </div>
-                            </figcaption>
-                        </figure>
+                                <div class="curved-text-ex">
+                                    <span>E</span>
+                                    <span>X</span>
+                                    <span>C</span>
+                                    <span>E</span>
+                                    <span>L</span>
+                                    <span>L</span>
+                                    <span>E</span>
+                                    <span>N</span>
+                                    <span>T</span>
+                                </div>
+                                <div class="curved-text-bd">
+                                    <span>B</span>
+                                    <span>A</span>
+                                    <span>D</span>
+                                </div>  
+                            </div>
+                            <figure>
+                                <img src="/assets/default/img/accuracy-chart.png" alt="">
+                                <figcaption>
+                                    <div class="circle-percent-box">
+                                        <div class="circle_percent" data-percent="92">
+                                            <div class="circle_inner">
+                                                <div class="round_per"></div>
+                                            </div>
+                                        </div>
+                                        <span class="total-percent">/100</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="accuracy-text">
+                            <span class="accuracy-lable">Accuracy Score</span>
+                            <h4>You're on the path to full automation!</h4>
+                            <p>We'll soon be able to automatically categorize your consumption date. Keep going</p>
+                            <a href="#" class="accuracy-back-btn">Back to dashboard</a>
+                        </div>
                     </div>
-                    <div class="accuracy-text">
-                        <span class="accuracy-lable">Accuracy Score</span>
-                        <h4>You're on the path to full automation!</h4>
-                        <p>We'll soon be able to automatically categorize your consumption date. Keep going</p>
-                        <a href="#" class="accuracy-back-btn">Back to dashboard</a>
-                    </div>
-                </div>
+                </a>
             </div>
             <div class="col-12">
                 <h2 class="mb-20">Overview</h2>
