@@ -159,7 +159,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 /* Essay Textarea Field Style End */
 
 /* Input Text Field Style Start */
-.input-holder input.input-simple {border: 3px solid #000; height: 32px; min-height: 40px; color: #000; font-size: 16px; text-align: left; font-weight: 400; border-radius: 5px; display: inline-block; padding: 0 10px; width: 100%; max-width: 195px;}
+.input-holder input.input-simple {border: 3px solid #000; height: 30px; min-height: 30px; color: #000; font-size: 16px; text-align: left; font-weight: 400; border-radius: 5px; display: inline-block; padding: 0 10px; width: 100%; max-width: 170px;}
 .input-holder input[type="text"],
 .input-holder input.input-simple {border: 0; background-color: #fcfcfc;}
 .question-result-layout .input-holder .input-simple {width: 100%; }
@@ -1090,7 +1090,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
 .question-layout .rureraform-element:has(select),
 .rureraform-element:has(select),
 .rureraform-element:has(.input-holder.input_box) {
-	line-height: 40px;
+	line-height: 30px;
 }
 .question-layout .rureraform-element:has(select ~ select) {
     line-height: 50px;
@@ -1493,9 +1493,9 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
     background-position: 94% center;
     border: 1px solid #eee;
     min-width: 150px;
-    max-height: 40px;
-    min-height: 40px;
-    padding: 8px 28px 8px 10px;
+    max-height: 30px;
+    min-height: 30px;
+    padding: 0 28px 0 10px;
     border-radius: 5px;
     line-height: normal;
     -webkit-appearance: none;
