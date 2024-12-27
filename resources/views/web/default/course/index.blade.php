@@ -492,7 +492,7 @@ $(document).on('click', '.view-change-btn', function (e) {
 
 /*percent circle function start*/
 $(document).ready(function () {
-    $(".stats_percent").each(function() {
+    $(".chapter_percent").each(function() {
         var $this = $(this),
             $dataV = $this.data("percent"),
             $dataDeg = $dataV * 3.6,
