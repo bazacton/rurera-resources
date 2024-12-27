@@ -4038,12 +4038,17 @@ Accuracy Score Card Style Start
     top: 28px;
 }
 /* Curved-text-gr Style */
+.accuracy-tooltip {
+    position: relative;
+}
 .curved-text-gr {
     position: absolute;
     text-align: center;
     width: 100%;
     top: 10px;
     transform: rotate(-5deg);
+    visibility: hidden;
+    opacity: 0;
 }
 .curved-text-gr span {
     font-size: 16px;
