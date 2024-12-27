@@ -340,7 +340,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
                     });
 
                 });
-				correct_answers_html = (correct_answers_html != '')? '<h3>Correct Answer: </h3><ul class="correct-answers-block">'+correct_answers_html+'</ul>' : '';
+				correct_answers_html = (correct_answers_html != '')? '<h5>Correct Answer: </h5><ul class="correct-answers-block">'+correct_answers_html+'</ul>' : '';
                 /*
                 if (question_response_layout != '') {
                     var question_response_layout = return_data.question_response_layout;
