@@ -144,7 +144,7 @@
                                 <li id="subject_{{$chapter->id}}"><div class="element-title mb-20"><h2 class="mb-0 font-22 text-dark-charcoal">{{ $chapter->title }}</h2></div>
 
                                     @if(!empty($sub_chapters[$chapter->id]) and count($sub_chapters[$chapter->id]))
-                                    <div class="lms-chapter-ul-outer"><ul>
+                                    <div class="lms-chapter-ul-outer" id="accordion"><ul>
                                         @foreach($sub_chapters[$chapter->id] as $sub_chapter)
                                         @if(!empty($sub_chapter))
                                             @php $quizUserData = Quiz::getQuizPercentage($sub_chapter['id'], true);
@@ -166,11 +166,11 @@
 											$topic_student_level_text = ($topic_student_level != '')? '('.$topic_student_level.')' : '';
                                             @endphp
                                             <li>
-                                                <a href="/{{$category_slug}}/{{$course->slug}}/{{$sub_chapter['sub_chapter_slug']}}" class="{{ subscriptionCheckLink('courses') }}">{{ $sub_chapter['title'] }} {!! $topic_percentage_text !!} {{$topic_student_level_text}}</a>
+                                                <a href="#" class="{{ subscriptionCheckLink('courses') }}" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">{{ $sub_chapter['title'] }} {!! $topic_percentage_text !!} {{$topic_student_level_text}}</a>
                                                 {{ user_assign_topic_template($sub_chapter['id'], 'practice', $childs, $parent_assigned_list) }}
 												
 												@if($sub_chapter_item->Quizzes->count() > 0)
-												<ul>
+												<ul id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
 													@foreach($sub_chapter_item->Quizzes as $QuizObj)
 														<li><a href="/{{$category_slug}}/{{$course->slug}}/{{$QuizObj->quiz_slug}}" class="{{ subscriptionCheckLink('courses') }}">{{ $QuizObj->getTitleAttribute() }}</a></li>
 													@endforeach
