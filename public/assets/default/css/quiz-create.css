@@ -1116,12 +1116,12 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
     display: inline-block;
     width: 100%;
 }
-.question-status-wrong {
+.show-notifications .question-status-wrong {
     color: #db3a3a;
     background-color: #fff4f4;
     border: 1px solid #db3a3a;
 }
-.question-status-correct {
+.show-notifications .question-status-correct {
     color: #155724;
     background-color: #d4edda;
     border: 1px solid #5cb871;
