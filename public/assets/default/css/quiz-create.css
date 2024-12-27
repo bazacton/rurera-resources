@@ -1139,6 +1139,17 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
     border: 1px solid #ddd;
     border-radius: 3px;
 }
+.correct-answers-block {
+    margin: 0 0 15px;
+}
+.correct-answers-block li {
+    display: inline-block;
+    line-height: normal;
+    background-color: #e3ebfc;
+    color: var(--blue);
+    padding: 4px 10px;
+    border-radius: 3px;
+}
 /*Quistions Type Content Default Style End*/
 
 /*Quistions Type numeric-list style Start*/
