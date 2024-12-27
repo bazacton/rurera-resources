@@ -143,7 +143,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:a
     margin-top: -2px;
 }
 /* Circle Progress style start */
-.circle_percent {font-size:60px; width:1em; height:1em; position: relative; background: #eee; border-radius:50%; overflow:hidden; display:inline-block;}
+.chapter_percent {font-size:60px; width:1em; height:1em; position: relative; background: #eee; border-radius:50%; overflow:hidden; display:inline-block;}
 .circle_inner {position: absolute; left: 0; top: 0; width: 1em; height: 1em; clip:rect(0 1em 1em .5em);}
 .round_per {position: absolute; left: 0; top: 0; width: 1em; height: 1em; background: #e4a6d2; clip:rect(0 1em 1em .5em); transform:rotate(180deg); transition:1.05s;}
 .percent_more .circle_inner {clip:rect(0 .5em 1em 0em);}
