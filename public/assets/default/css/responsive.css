@@ -1113,7 +1113,7 @@ Lms Responsive Style Start
     .lms-element-nav ul {margin: 0 -10px;}
     .lms-element-nav li {padding: 0 10px 10px;}
     body .rureraform-element:has(.input-holder.input_box) {line-height: 28px;}
-    .lms-quiz-section .input-holder {width: 100%; margin: 10px 0;}
+    body .lms-quiz-section .input-holder {width: 100%; margin: 10px 0;}
     .lms-quiz-section .input-holder input[type="text"] {max-width: 100%;}
     .footer .footer-subscribe {height: auto;}
     .footer-dots-img img {
