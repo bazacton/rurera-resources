@@ -148,16 +148,11 @@
                                         @foreach($sub_chapters[$chapter->id] as $sub_chapter)
                                         @if(!empty($sub_chapter))
 												@php $sub_chapter_item = isset( $sub_chapter['sub_chapter_item'] )? $sub_chapter['sub_chapter_item'] : array();
+												$total_completion = 0;
 												@endphp
 												<li>
 												<a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$sub_chapter['id']}}" aria-expanded="true" aria-controls="collapseOne">{{ $sub_chapter['title'] }}</a>
-                                                <div class="percent-holder">
-                                                    <div class="chapter_percent circle-blue" data-percent="50">
-                                                        <div class="circle_inner">
-                                                            <div class="round_per"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                
                                                 {{ user_assign_topic_template($sub_chapter['id'], 'practice', $childs, $parent_assigned_list) }}
 												
 												@if($sub_chapter_item->Quizzes->count() > 0)
@@ -168,6 +163,7 @@
 														
 														$topic_accuracy = isset( $topicPerformData['topic_accuracy'] )? $topicPerformData['topic_accuracy'] : 0;
 														$topic_completion = isset( $topicPerformData['topic_completion'] )? $topicPerformData['topic_completion'] : 0;
+														$total_completion += $topic_completion;
 														$topic_percentage_flag = '';
 														if($topic_completion > 80){
 															$topic_percentage_flag = ($topic_accuracy > 0)? '<img src="/assets/default/svgs/above_0.svg" title="'.$topic_accuracy.'%">' : $topic_percentage_flag;
@@ -186,6 +182,17 @@
 													@endforeach
 												</ul>
 												@endif
+												@if($total_completion > 0)
+													@php $total_completion = round($total_completion / $sub_chapter_item->Quizzes->count()); @endphp
+												@endif
+												<div class="percent-holder">
+													<div class="chapter_percent circle-blue" data-percent="{{$total_completion}}">
+														<div class="circle_inner">
+															<div class="round_per"></div>
+														</div>
+													</div>
+												</div>
+												
 												
                                             </li>
                                         @endif
