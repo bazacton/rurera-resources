@@ -118,6 +118,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a {
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:before {
     left: 15px;
     margin-top: 15px;
+    display: none;
 }
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>ul {
     padding-bottom: 15px;
