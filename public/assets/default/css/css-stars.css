@@ -129,13 +129,13 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a:after {
     top: 50%;
     height: 9px;
     width: 9px;
-    border-top: 2px solid #555;
-    border-right: 2px solid #555;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
     transform: rotate(-45deg) translateY(-50%);
 }
 body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li>a.collapsed:after {
-    border-bottom: 2px solid #555;
-    border-left: 2px solid #555;
+    border-bottom: 2px solid #333;
+    border-left: 2px solid #333;
     border-top: 0;
     border-right: 0;
 }
