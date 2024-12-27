@@ -18,6 +18,7 @@ Lms Responsive Style Start
     .lms-accordion-modern.accordion .card-body {padding: 10px 20px 25px 20px;}
     .lms-accordion-modern.accordion .card.active .lms-img-holder {display: block;}
     .education-icon-box {margin-left: -60px;}
+    .login-container .login-holder {max-width: 100%; min-width: 100%;}
 }
 
 @media (min-width: 1200px) {
