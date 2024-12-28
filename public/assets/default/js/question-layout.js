@@ -2012,12 +2012,19 @@ $(document).on('click', '.confirm-delete', function (e) {
 });
 
 $(document).on('change', '.rureraform-checkbox-medium', function (e) {
-	var min_options = $(this).attr('data-min');
-	min_options = rurera_is_field(min_options)? min_options : 1;
+	var max_options = $(this).attr('data-max');
+	max_options = rurera_is_field(max_options)? max_options : 1;
 	var this_field_name = $(this).attr('name');
-	if(min_options == 1){
+	$(this).addClass('checked-tt');
+	if(max_options == 1){
+		$("input[name='" + this_field_name + "']:checked").removeClass('checked-tt');
 		$("input[name='" + this_field_name + "']:checked").prop('checked', false);
 		$(this).prop('checked', true);
+		$(this).addClass('checked-tt');
+	}
+	if($("input[name='" + this_field_name + "']:checked").length == max_options){
+		$("input[name='" + this_field_name + "']:checked").last().removeClass('checked-tt');
+		$("input[name='" + this_field_name + "']:checked").last().prop('checked', false);
 	}
 	
 });

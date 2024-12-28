@@ -26,7 +26,7 @@ $have_images_class = ($have_images == 'yes')? 'lms-checkbox-img'.' image-'.$imag
 							@php $image_path = '<img src="'.$optionObj->image.'" alt="">'; @endphp
 						@endif
 						<div class="form-field rureraform-cr-container-medium">
-							<input class="editor-field rureraform-checkbox-medium" data-min="{{$correctCount}}" type="checkbox" name="field-{{$element_unique_id}}" id="field-{{$element_unique_id}}-{{$option_index}}" value="{{$optionObj->value}}" /><label for="field-{{$element_unique_id}}-{{$option_index}}">
+							<input class="editor-field rureraform-checkbox-medium" data-max="{{$correctCount}}" data-min="{{$correctCount}}" type="checkbox" name="field-{{$element_unique_id}}" id="field-{{$element_unique_id}}-{{$option_index}}" value="{{$optionObj->value}}" /><label for="field-{{$element_unique_id}}-{{$option_index}}">
 							@if( $image_position == 'left' || $image_position == 'top' ){!! $image_path !!} @endif
 							{{$optionObj->label}}
 							@if( $image_position == 'right' ){!! $image_path !!} @endif
