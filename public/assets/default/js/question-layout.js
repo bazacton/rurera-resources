@@ -1845,7 +1845,7 @@ function rurera_insert_error_message(thisObj, alert_messages, error_msg, field_t
 
 		default_message = 'Please choose options';
 		if(field_type == 'checkbox'){
-			var answer_label = (minimum_selection < 2)? 'answere' : 'answers';
+			var answer_label = (minimum_selection < 2)? 'answer' : 'answers';
 			default_message = 'Please choose '+minimum_selection+' correct '+answer_label;
 		}
         var field_name = thisObj.attr('name');
