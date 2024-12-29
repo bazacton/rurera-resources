@@ -279,7 +279,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
                 var total_incorrects = parseInt($(".quiz-incorrects").html());
                 var total_percentage = ((total_corrects) * 100) / parseInt(total_questions);
                 //total_percentage = (correctInRow == 0)? 0 : total_percentage;
-                $(".quiz-questions-bar .bar-fill1").css('left', total_percentage+'%');
+                $(".quiz-questions-bar .bar-fill1").css('width', total_percentage+'%');
             }
             if($(".question-step.active .question-layout").length > 0) {
                 $(".question-step.active .question-layout").addClass('disable-div');
@@ -1092,7 +1092,7 @@ function init_question_functions() {
             var total_corrects = parseInt($(".quiz-corrects").html());
             var total_incorrects = parseInt($(".quiz-incorrects").html());
             var total_percentage = ((total_corrects) * 100) / parseInt(total_questions);
-            $(".quiz-questions-bar .bar-fill1").css('width', total_percentage+'%');
+            $(".quiz-questions-bar .bar-fill1").css('left', total_percentage+'%');
         }
 
         
