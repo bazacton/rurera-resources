@@ -1276,7 +1276,9 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
 .quiz-incorrects {background-color: #000; color: #fff; font-size: 30px; font-weight: 600; position: absolute; left: 27px; top: 50%; transform: translateY(-50%); min-width: 45px; text-align: center; min-height: 40px; margin-top: -5px; z-index: 0; box-shadow: 0 -2px 0 rgba(0,0,0,0.1); padding: 0 5px; display: inline-flex; align-items: center; justify-content: center;}
 .quiz-corrects-incorrects span {-webkit-transition: all 0.4s ease-out; -moz-transition: all 0.4s ease-out; -ms-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; transition: all 0.4s ease-out;}
 .quiz-incorrects:hover {z-index: 2; left: 25px; }
-
+.quiz-questions-bar-holder .value-lable.completion-progress,
+.quiz-questions-bar-holder .value-lable.completion-progress:after {background-color: #2ecc71;}
+.quiz-questions-bar-holder .value-lable.completion-progress:before {background: #2ecc71;}
 /* Quiz Status Bar Style End */
 /*Question Number Style Start*/
 .question-number {display: inline-block; background-color: #1e1e1b; color: #fff; padding: 5px 15px; border-radius: 6px; min-width: 48px; text-align: center;}
