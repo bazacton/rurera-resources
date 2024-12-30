@@ -4235,6 +4235,13 @@ Accuracy Score Card Style End
     font-weight: bold;
     color: #fff;
 }
+.progress-table .table tr td span {
+    display: block;
+    line-height: normal;
+    padding-bottom: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
 .progress-table .icon-box i {
     font-size: 15px;
     color: #ccc;
