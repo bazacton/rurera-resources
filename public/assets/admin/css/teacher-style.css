@@ -4399,12 +4399,27 @@ Accuracy Score Card Style End
     vertical-align: bottom;
 }
 .report-table table th em {
-    display: inline-block;
+    display: inline-flex;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: scale(-1);
     font-style: normal;
+    height: calc(100% - 130px);
+    border-right: 1px solid #ccc;
+    align-items: end;
+    padding: 0 5px;
+    justify-content: flex-start;
 }
 .report-table table th strong {
     display: block;
+    background-color: #ffe2cb;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 10px;
+}
+.report-table table th:has(strong) {
+    padding: 0;
+    min-width: 0;
+    text-align: center !important;
+    border: 0;
 }
