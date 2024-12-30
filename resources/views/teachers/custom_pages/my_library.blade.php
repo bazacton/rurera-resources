@@ -41,6 +41,7 @@
                                 <th><span>Consuming Resources</span></th>
                                 <th><span>Paper Grade</span></th>
                                 <th><span>Overall Marks</span></th>
+                                <th><span>Paste Paper Grade</span></th>
                             </tr>
                         </thead>
                         <tbody>
