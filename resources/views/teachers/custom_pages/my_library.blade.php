@@ -21,17 +21,17 @@
                                 <th rowspan="2">Last Name</th>
                                 <th colspan="4" class="report-title bg-danger">1: Global Geography</th>
                                 <th colspan="10" class="report-title">2: UK Geographical Issues</th>
-                                <th colspan="4" class="report-title">3: People & Environment</th>
+                                <th colspan="6" class="report-title">3: People & Environment</th>
                                 <th rowspan="2">Maximum Target Grade</th>
                                 <th rowspan="2">Unit Marks</th>
                                 <th rowspan="2">Current Grade</th>
                                 <th rowspan="2">Average Unit %</th>
                             </tr>
                             <tr>
-                                <th style="background-color: #ffb3b3"><span>Hazardous Earth</span></th>
-                                <th style="background-color: #ffb3b3"><span>Development Dynamics</span></th>
-                                <th style="background-color: #ffb3b3"><span>Challenges of Urbanization</span></th>
-                                <th style="background-color: #ffb3b3"><span>Paper Grade</span></th>
+                                <th style="background-color: #ffb3b3"><span>A: Hazardous Earthy 30</span></th>
+                                <th style="background-color: #ffb3b3"><span>B: Development Dynamics/34</span></th>
+                                <th style="background-color: #ffb3b3"><span>C: Challenges of an Urbanising World/50</span></th>
+                                <th style="background-color: #ffb3b3"><span>D: Hazardous Earthy 30</span></th>
                                 <th style="background-color: #ffe4b2"><span>The UK Economy</span></th>
                                 <th style="background-color: #ffe4b2"><span>Coastal Changes</span></th>
                                 <th style="background-color: #ffe4b2"><span>Dynamic Urban Areas</span></th>
@@ -40,6 +40,13 @@
                                 <th style="background-color: #ffe4b2"><span>People Under Threat</span></th>
                                 <th style="background-color: #ffe4b2"><span>Consuming Resources</span></th>
                                 <th style="background-color: #ffe4b2"><span>Paper Grade</span></th>
+                                <th style="background-color: #ffe4b2"><span>Overall Marks</span></th>
+                                <th style="background-color: #ffe4b2"><span>Paste Paper Grade</span></th>
+
+                                <th style="background-color: #ffe4b2"><span>A: Hazardous Earthy 30</span></th>
+                                <th style="background-color: #ffe4b2"><span>B: Development Dynamics/34</span></th>
+                                <th style="background-color: #ffe4b2"><span>C: Challenges of an Urbanising World/50</span></th>
+                                <th style="background-color: #ffe4b2"><span>D: Hazardous Earthy 30</span></th>
                                 <th style="background-color: #ffe4b2"><span>Overall Marks</span></th>
                                 <th style="background-color: #ffe4b2"><span>Paste Paper Grade</span></th>
                             </tr>
