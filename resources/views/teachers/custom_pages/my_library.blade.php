@@ -29,8 +29,8 @@
                             <tr>
                                 <th style="background-color: #fee3ea"><span>A: Hazardous Earthy 30</span></th>
                                 <th style="background-color: #fee3ea"><span>B: Development Dynamics/34</span></th>
-                                <th style="background-color: #ffb3b3"><span>C: Development Dynamics/34</span></th>
-                                <th style="background-color: #ffb3b3"><span>D: Hazardous Earthy 30</span></th>
+                                <th style="background-color: #fcd9df"><span>C: Development Dynamics/34</span></th>
+                                <th style="background-color: #fcd9df"><span>D: Hazardous Earthy 30</span></th>
                                 <th style="background-color: #ffe4b2"><span>The UK Economy</span></th>
                                 <th style="background-color: #ffe4b2"><span>Coastal Changes</span></th>
                                 <th style="background-color: #ffe4b2"><span>Dynamic Urban Areas</span></th>
