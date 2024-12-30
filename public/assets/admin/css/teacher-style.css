@@ -4387,3 +4387,10 @@ Accuracy Score Card Style End
 .report-table table .report-title.bg-danger {
     background-color: #ffb3b3 !important;
 }
+.report-table table th span {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+.report-table table th:has(span) {
+    min-width: auto;
+}
