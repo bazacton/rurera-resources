@@ -4275,8 +4275,8 @@ Accuracy Score Card Style End
     float: right;
 }
 .word-selection-box button.clear-btn img {
-    height: 12px;
-    width: 12px;
+    height: 10px;
+    width: 10px;
     margin-right: 2px;
 }
 .word-selection-box {
