@@ -55,8 +55,18 @@
                                     <strong>M..</strong>
                                     <em>Paste Paper Grade</em>
                                 </th>
-                                <th style="background-color: #feddc5">Unit Marks</th>
-                                <th style="background-color: #feddc5">Current G..</th>
+                                <th colspan="2" style="background-color: #feddc5">
+                                    <strong>Unit Marks</strong>
+                                    <em>Paste Paper Grade</em>
+                                    <em>Paste Paper Grade</em>
+                                </th>
+                                <th colspan="4" style="background-color: #feddc5">
+                                    <strong>Current G..</strong>
+                                    <em>Paste Paper Grade</em>
+                                    <em>Paste Paper Grade</em>
+                                    <em>Paste Paper Grade</em>
+                                    <em>Paste Paper Grade</em>
+                                </th>
                                 <th style="background-color: #feddc5">Average U..</th>
 
                             </tr>
