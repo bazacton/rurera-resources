@@ -52,8 +52,10 @@
                         <tbody>
                             <tr>
                                 <td class="has-met">
-                                    <button type="button" class="collaps-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-right.svg" alt=""></span></button>
-                                    Count NAHT KPI Count 2.1.a.1 Count in tens from any number, forward and backward
+                                    <div class="text-box">
+                                        <button type="button" class="collaps-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-right.svg" alt=""></span></button>
+                                        Count NAHT KPI Count 2.1.a.1 Count in tens from any number, forward and backward
+                                    </div>
                                 </td>
                                 <td class="met"><span>Met</span>M</td>
                                 <td class="almost"><span>Almost</span>A</td>
@@ -74,8 +76,10 @@
                             </tr>
                             <tr>
                                 <td class="has-met">
-                                    <button type="button" class="collaps-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-right.svg" alt=""></span></button>
-                                    Count NAHT KPI Count 2.1.a.2 Identify ten more or ten less than any given number
+                                    <div class="text-box">
+                                        <button type="button" class="collaps-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-right.svg" alt=""></span></button>
+                                        Count NAHT KPI Count 2.1.a.2 Identify ten more or ten less than any given number
+                                    </div>
                                 </td>
                                 <td class="almost">A</td>
                                 <td class="exceeding">E</td>
@@ -96,8 +100,10 @@
                             </tr>
                             <tr>
                                 <td class="has-met">
-                                    <button type="button" class="collaps-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-right.svg" alt=""></span></button>
-                                    Order and compare NAHT KPI Order and compare 2.1.c.1 Compare and order numbers from 0 up to 100; use &lt;, &gt; and = signs
+                                    <div class="text-box">
+                                        <button type="button" class="collaps-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-right.svg" alt=""></span></button>
+                                        Order and compare NAHT KPI Order and compare 2.1.c.1 Compare and order numbers from 0 up to 100; use &lt;, &gt; and = signs
+                                    </div>
                                 </td>
                                 <td class="almost">A</td>
                                 <td class="almost">A</td>
