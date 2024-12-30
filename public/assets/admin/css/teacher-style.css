@@ -4203,6 +4203,17 @@ Accuracy Score Card Style End
     background-color: #dc3545; /* Red */
     color: white;
 }
+.progress-table {
+    background-color: #ffff;
+    padding: 25px;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.progress-table .table tr td:first-child {
+    min-width: 350px;
+    border: 3px solid #fff;
+    box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
+}
 .progress-table .table tr th {
     background-color: #fff;
     border: 3px solid #fff;
