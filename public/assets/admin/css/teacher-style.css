@@ -4340,6 +4340,7 @@ Accuracy Score Card Style End
     padding: 25px;
     overflow: hidden;
     overflow-x: auto;
+    margin-bottom: 30px;
 }
 .report-table table {
     width: 100%;
