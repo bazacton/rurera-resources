@@ -4404,7 +4404,6 @@ Accuracy Score Card Style End
     text-orientation: mixed;
     transform: scale(-1);
     font-style: normal;
-    height: calc(100% - 130px);
     border-right: 1px solid #ccc;
     align-items: end;
     padding: 0 5px;
