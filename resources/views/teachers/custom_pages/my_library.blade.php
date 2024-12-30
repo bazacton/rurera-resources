@@ -31,7 +31,7 @@
                                 <th style="background-color: #ffb3b3"><span>Hazardous Earth</span></th>
                                 <th style="background-color: #ffb3b3"><span>Development Dynamics</span></th>
                                 <th style="background-color: #ffb3b3"><span>Challenges of Urbanization</span></th>
-                                <th style="background-color: #ffb3b3">Paper Grade <span></span></th>
+                                <th style="background-color: #ffb3b3"><span>Paper Grade</span></th>
                                 <th><span>The UK Economy</span></th>
                                 <th><span>Coastal Changes</span></th>
                                 <th><span>Dynamic Urban Areas</span></th>
