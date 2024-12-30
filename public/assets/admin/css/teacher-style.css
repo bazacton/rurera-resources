@@ -4360,6 +4360,7 @@ Accuracy Score Card Style End
 }
 .report-table table tr:first-child th:first-child {
     border-bottom: 0;
+    min-width: 200px;
 }
 .report-table table tr:nth-child(2) th:nth-child(2) {
     border: 0;
