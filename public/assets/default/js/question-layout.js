@@ -191,7 +191,6 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 
     });
 	
-	console.log(question_data);
 
     /*$(this).closest('form').find('.insert-into-sentense-holder').each(function() {
             var user_input = $(this).find('p').html();
@@ -202,7 +201,6 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 
 
     question_data_array = question_data;
-	console.log(question_data);
     question_data = chimp_encode64(JSON.stringify(question_data));
     quiz_user_data[0]['attempt'][question_id] = question_data_array;
     var qresult_id = thisBlock.attr('data-qresult');
@@ -918,7 +916,6 @@ function init_question_functions() {
 	
 	
 	$("body").on('click', '.questions-nav-controls .next-btn', function (e) {
-		console.log('next=========='+$('.rurera-question-block.active').next('.rurera-question-block').length);
 		if( $('.rurera-question-block.active').next('.rurera-question-block').length > 0){
 			$(".question-area-block").find('.show-notifications').html('');
 			$('.rurera-question-block.active').removeClass('active').next().addClass('active');
@@ -930,7 +927,6 @@ function init_question_functions() {
 	});
 	
 	$("body").on('click', '.questions-nav-controls .prev-btn', function (e) {
-		console.log('prev=========='+$('.rurera-question-block.active').prev('.rurera-question-block').length);
 		if( $('.rurera-question-block.active').prev('.rurera-question-block').length > 0){
 			$(".question-area-block").find('.show-notifications').html('');
 			$('.rurera-question-block.active').removeClass('active').prev().addClass('active');
@@ -972,7 +968,6 @@ function init_question_functions() {
         });*/
 
 
-		console.log('quiz-pagination ul li===' + question_id);
 
 
 		$('.rurera-question-block').addClass('rurera-hide');
@@ -1069,7 +1064,6 @@ function init_question_functions() {
 			TimerActive = rurera_is_valid_field(TimerActive)? TimerActive : true;
 			if( TimerActive == true){
 				var seconds_count = $(".question-step-"+quizQuestionID).attr('data-elapsed');
-				console.log('seconds_countseconds_countseconds_count==='+seconds_count);
 				seconds_count = parseInt(seconds_count) + parseInt(1);
 				$(".question-step-"+quizQuestionID).attr('data-elapsed', seconds_count);
 			}
@@ -1648,7 +1642,6 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 		thisObj.next('.rurera-req-field').next('.pbwp-box').removeClass('frontend-field-error');
 		thisObj.removeClass('frontend-field-error');
 		thisObj.closest('.jqte').removeClass('frontend-field-error');
-		
 		var this_id = thisObj.attr('id');
 		var this_field_name = thisObj.attr('name');
 		if (already_validated_fields.includes(this_field_name)) {
@@ -1656,7 +1649,6 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 		}else{
 			has_empty[index_no] = false;
 			//already_validated_fields.push(this_field_name);
-			console.log('this_idthis_id-------'+this_id);
 			if($('[for="'+this_id+'"]').length > 0){
 				$('[for="'+this_id+'"]').removeClass('frontend-field-error-label');
 			}
@@ -1679,6 +1671,23 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 					thisObj.val('');
 				}
 			}*/
+			if (!thisObj.val() && is_visible == true) {
+				if (thisObj.hasClass('rurera-req-field') || thisObj.hasClass('editor-field') || thisObj.hasClass('editor-fields')) {
+					array_length = alert_messages.length;
+					alert_messages[array_length] = rurera_insert_error_message(thisObj, alert_messages, '');
+					has_empty[index_no] = true;
+
+					error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisObj, alert_messages, '');
+					error_objects[index_no]['error_obj'] = thisObj;
+				}
+			} else {
+				if (is_visible == true) {
+					returnArray = rurera_check_field_type(thisObj, alert_messages, has_empty[index_no], error_objects, index_no);
+					has_empty[index_no] = returnArray.has_empty;
+					error_objects = returnArray.error_objects;
+					//has_empty[index_no] = rurera_check_field_type(thisObj, alert_messages, has_empty[index_no], error_objects, index_no);
+				}
+			}
 			if (thisObj.attr('type') == 'radio') {
 				var field_name = thisObj.attr('name');
 				var is_field_checked = jQuery('input[name="' + field_name + '"]').is(':checked');
@@ -1697,30 +1706,14 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 				var is_field_checked = jQuery('input[name="' + field_name + '"]').is(':checked');
 				if (is_field_checked == false || selectedCount < minimum_selection) {
 					checkbox_fields[index_no] = thisObj;				
-					error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisObj, alert_messages, '');
+					error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisObj, alert_messages, '', 'checkbox', minimum_selection);
 					error_objects[index_no]['error_obj'] = thisObj;
 					
 				}
 				//has_empty[index_no] = true;
 				is_visible = false;
 			}
-			if (!thisObj.val() && is_visible == true) {
-				if (thisObj.hasClass('rurera-req-field') || thisObj.hasClass('editor-field') || thisObj.hasClass('editor-fields')) {
-					array_length = alert_messages.length;
-					alert_messages[array_length] = rurera_insert_error_message(thisObj, alert_messages, '');
-					has_empty[index_no] = true;
-
-					error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisObj, alert_messages, '');
-					error_objects[index_no]['error_obj'] = thisObj;
-				}
-			} else {
-				if (is_visible == true) {
-					returnArray = rurera_check_field_type(thisObj, alert_messages, has_empty[index_no], error_objects, index_no);
-					has_empty[index_no] = returnArray.has_empty;
-					error_objects = returnArray.error_objects;
-					//has_empty[index_no] = rurera_check_field_type(thisObj, alert_messages, has_empty[index_no], error_objects, index_no);
-				}
-			}
+			
 			if (has_empty[index_no] == false) {
 				thisObj.next('.chosen-container').removeClass('frontend-field-error');
 				thisObj.next('.rurera-req-field').next('.pbwp-box').removeClass('frontend-field-error');
@@ -1744,7 +1737,8 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
             var thisnewObj = checkbox_fields[i];
             if (rurera_is_field(thisnewObj)) {
                 array_length = alert_messages.length;
-                alert_messages[array_length] = rurera_insert_error_message(thisnewObj, alert_messages, '', 'checkbox');
+				var minimum_selection = thisnewObj.attr('data-min');
+                alert_messages[array_length] = rurera_insert_error_message(thisnewObj, alert_messages, '', 'checkbox', minimum_selection);
                 has_empty[i] = true;
                 //error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisnewObj, alert_messages, '', 'checkbox');
                 //error_objects[index_no]['error_obj'] = thisObj;
@@ -1754,7 +1748,6 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
     var error_messages = ' <br><br>';
     if (has_empty.length > 0 && jQuery.inArray(true, has_empty) != -1) {
         array_length = alert_messages.length;
-		console.log(alert_messages);
         for (i = 0; i < array_length; i++) {
             if (i > 0) {
                 error_messages = error_messages + '<br>';
@@ -1832,15 +1825,14 @@ function rurera_is_field(field_value) {
 /*
  * Making list of errors
  */
-function rurera_insert_error_message(thisObj, alert_messages, error_msg, field_type = '') {
-	console.log('thisObj-start');
-	console.log('field_typefield_typefield_type====='+field_type);
+function rurera_insert_error_message(thisObj, alert_messages, error_msg, field_type = '', minimum_selection = 1) {
 	if(thisObj != undefined && thisObj != 'undefined'){
 		thisObj.addClass('frontend-field-error');
 	}else{
 		return;
 	}
 	var this_id = thisObj.attr('id');
+	
 	
 	if(thisObj.closest('.input-holder').length > 0){
 		thisObj.closest('.input-holder').addClass('frontend-field-error-input');
@@ -1852,6 +1844,10 @@ function rurera_insert_error_message(thisObj, alert_messages, error_msg, field_t
     if (field_type == 'checkbox' || field_type == 'radio') {
 
 		default_message = 'Please choose options';
+		if(field_type == 'checkbox'){
+			var answer_label = (minimum_selection < 2)? 'answer' : 'answers';
+			default_message = 'Please choose '+minimum_selection+' correct '+answer_label;
+		}
         var field_name = thisObj.attr('name');
         $('[name="' + field_name + '"]').addClass('frontend-field-error');
     }
@@ -1881,7 +1877,6 @@ function rurera_insert_error_message(thisObj, alert_messages, error_msg, field_t
         thisObj.closest('.jqte').addClass('frontend-field-error');
     }
 
-	console.log('field_labelfield_labelfield_label===='+field_label);
     var res = '';
     if (typeof field_label !== "undefined") {
         res = field_label.replace("*", " ");
@@ -2022,9 +2017,9 @@ $(document).on('change', '.rureraform-checkbox-medium', function (e) {
 		$(this).prop('checked', true);
 		$(this).addClass('checked-tt');
 	}
-	if($("input[name='" + this_field_name + "']:checked").length == max_options){
-		$("input[name='" + this_field_name + "']:checked").last().removeClass('checked-tt');
-		$("input[name='" + this_field_name + "']:checked").last().prop('checked', false);
+	if($("input[name='" + this_field_name + "']:checked").length > max_options){
+		$("input[name='" + this_field_name + "']:checked").first().removeClass('checked-tt');
+		$("input[name='" + this_field_name + "']:checked").first().prop('checked', false);
 	}
 	
 });
@@ -2038,7 +2033,6 @@ function isMobileDevice() {
 function rurera_question_timer(timer_class, timer_interval_label) {
     // Clear any existing interval
 	var TimerActive = true;
-	console.log(Questioninterval);
     if (Questioninterval) clearInterval(Questioninterval);
 
 	var timer_interval = (timer_interval_label == 'seconds')? 1000 : 10;
