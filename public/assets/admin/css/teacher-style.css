@@ -4258,7 +4258,8 @@ Accuracy Score Card Style End
     color: #6c757d;
     font-weight: 400;
     text-align: right !important;
-    padding: 0 !important;
+    padding: 5px 5px 5px 25px !important;
+    position: relative;
 }
 .word-selection-box button {
     border: 0;
@@ -4295,6 +4296,15 @@ Accuracy Score Card Style End
 .word-selection-box button.remove-btn img {
     max-width: 100%;
     filter: invert(64%) sepia(0%) saturate(0%) hue-rotate(239deg) brightness(96%) contrast(84%);
+}
+.progress-table .table tr td .collaps-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border: 0;
+    background: none;
+    border-right: 1px solid #ddd;
 }
 .collaps-btn img {
     max-width: 15px;
