@@ -4336,6 +4336,11 @@ Accuracy Score Card Style End
 }
 
 /* Report Table Style Start */
+.report-table {
+    padding: 25px;
+    overflow: hidden;
+    overflow-x: auto;
+}
 .report-table table {
     width: 100%;
     border-collapse: collapse;
@@ -4348,10 +4353,15 @@ Accuracy Score Card Style End
 }
 
 .report-table table th {
-    background-color: #f4f4f4;
     font-weight: bold;
+    font-size: 12px;
+    min-width: 80px;
 }
-
+.report-table table thead > tr:first-child > th:first-child, 
+.report-table table thead > tr:first-child > th:nth-child(2) {
+    background-color: #fff;
+    vertical-align: bottom;
+}
 .report-table table .column-group {
     background-color: #fde9ef;
     font-weight: bold;
