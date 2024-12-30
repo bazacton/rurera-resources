@@ -4410,16 +4410,19 @@ Accuracy Score Card Style End
     padding: 0 5px;
     justify-content: flex-start;
 }
+.report-table table th em:first-child {
+    border-left: 0;
+}
 .report-table table th strong {
     display: block;
     background-color: #ffe2cb;
     padding: 8px 0;
     border-bottom: 1px solid #ddd;
-    margin: 0 0 10px;
 }
 .report-table table th:has(strong) {
-    padding: 0;
-    min-width: 0;
+    padding: 0 5px;
+    min-width: 40px;
     text-align: center !important;
     border: 0;
+    border-right: 1px solid #ccc;
 }
