@@ -4355,7 +4355,6 @@ Accuracy Score Card Style End
 .report-table table th {
     font-weight: bold;
     font-size: 12px;
-    min-width: 80px;
     vertical-align: top;
     white-space: nowrap;
 }
