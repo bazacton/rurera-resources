@@ -20,7 +20,10 @@
                                 <tr>
                                     <th colspan="2" style="background-color: #fff"><img src="/assets/default/svgs/three-columns.svg" alt=""> Graph Colmuns</th>
                                     <th colspan="4" class="report-title bg-danger">
-                                        <button type="button" class="collaps-btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></button> 1: Global Geograph...
+                                        <div class="collapse-control-box">
+                                            <button type="button" class="collaps-btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></button> 
+                                            1: Global Geograph...
+                                        </div>
                                     </th>
                                     <th colspan="10" class="report-title">2: UK Geographical Issues</th>
                                     <th colspan="6" class="report-title" style="background-color: #c7f4e0">3: People & Environment</th>
