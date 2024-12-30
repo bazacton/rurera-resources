@@ -332,14 +332,18 @@ ul.crop_sizes {
 										@if(!empty($image_recomendations))
 											@foreach($image_recomendations as $image_recomendation_data)
 												@php $searchable_keywords = isset( $image_recomendation_data['searchable_keywords'] )? $image_recomendation_data['searchable_keywords'] : '';
+												$searchable_keywords = is_array($searchable_keywords)? $searchable_keywords : explode($searchable_keywords, ' ');
 												
-												if(is_array ($searchable_keywords)){
-													$searchable_keywords = implode(' ', $searchable_keywords);
+												$keywords_list  = '';
+												if(!empty($searchable_keywords)){
+													foreach($searchable_keywords as $keyword_text){
+														$keywords_list .= '<a href="javascrit:;" class="copyable-text">'.$keyword_text.'</a> ';
+													}
 												}
 												
 												$explanation = isset( $image_recomendation_data['explanation'] )? $image_recomendation_data['explanation'] : '';
 												@endphp
-												Keywords: {{$searchable_keywords}}<br>
+												Keywords: {!! $keywords_list !!}<br>
 												Explanation: {{$explanation}}<br>
 											@endforeach
 										@endif
