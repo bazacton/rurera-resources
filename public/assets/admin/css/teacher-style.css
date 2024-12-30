@@ -4270,6 +4270,9 @@ Accuracy Score Card Style End
     margin-left: 10px;
     padding: 5px 10px;
 }
+.word-selection-box {
+    opacity: 0.7;
+}
 .word-controls {
     margin: 0 0 10px;
 }
