@@ -14,156 +14,154 @@
         <div class="row">
             <div class="col-12">
                 <div class="report-table">
-                    <div id="accordion">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th colspan="2" style="background-color: #fff"><img src="/assets/default/svgs/three-columns.svg" alt=""> Graph Colmuns</th>
-                                    <th colspan="4" class="report-title bg-danger">
-                                        <div class="collapse-control-box">
-                                            <button type="button" class="collaps-btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></button> 
-                                            <b>1: Global Geograph...</b>
-                                        </div>
-                                    </th>
-                                    <th colspan="10" class="report-title">
-                                        <div class="collapse-control-box">
-                                            <button type="button" class="collaps-btn" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></button> 
-                                            <b>2: UK Geographical Issues</b>
-                                        </div>
-                                    </th>
-                                    <th colspan="6" class="report-title" style="background-color: #c7f4e0">3: People & Environment</th>
-                                    <th colspan="2" style="background-color: #e0f6fe">Topic S..</th>
-                                    <th colspan="8" style="background-color: #f9cfb3">Summary</th>
-                                    <th colspan="7" style="background-color: #fdedde">Summary</th>
-                                </tr>
-                                <tr>
-                                    <th style="background-color: #fff">First Name</th>
-                                    <th style="background-color: #fff">Last Name</th>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2" style="background-color: #fff"><img src="/assets/default/svgs/three-columns.svg" alt=""> Graph Colmuns</th>
+                                <th colspan="4" class="report-title bg-danger">
+                                    <div class="collapse-control-box">
+                                        <button type="button" class="collaps-btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></button> 
+                                        <b>1: Global Geograph...</b>
+                                    </div>
+                                </th>
+                                <th colspan="10" class="report-title">
+                                    <div class="collapse-control-box">
+                                        <button type="button" class="collaps-btn" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></button> 
+                                        <b>2: UK Geographical Issues</b>
+                                    </div>
+                                </th>
+                                <th colspan="6" class="report-title" style="background-color: #c7f4e0">3: People & Environment</th>
+                                <th colspan="2" style="background-color: #e0f6fe">Topic S..</th>
+                                <th colspan="8" style="background-color: #f9cfb3">Summary</th>
+                                <th colspan="7" style="background-color: #fdedde">Summary</th>
+                            </tr>
+                            <tr>
+                                <th style="background-color: #fff">First Name</th>
+                                <th style="background-color: #fff">Last Name</th>
 
-                                    <th style="background-color: #fee3ea">
-                                        <span id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">A: Hazardous Earthy 30</span>
-                                    </th>
-                                    <th style="background-color: #fee3ea"><span>B: Development Dynamics/34</span></th>
-                                    <th style="background-color: #fcd9df"><span>C: Development Dynamics/34</span></th>
-                                    <th style="background-color: #fcd9df"><span>D: Hazardous Earthy 30</span></th>
+                                <th style="background-color: #fee3ea">
+                                    <span id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">A: Hazardous Earthy 30</span>
+                                </th>
+                                <th style="background-color: #fee3ea"><span>B: Development Dynamics/34</span></th>
+                                <th style="background-color: #fcd9df"><span>C: Development Dynamics/34</span></th>
+                                <th style="background-color: #fcd9df"><span>D: Hazardous Earthy 30</span></th>
 
-                                    <th style="background-color: #fdeec5"><span>The UK Economy</span></th>
-                                    <th style="background-color: #fdeec5"><span>Coastal Changes</span></th>
-                                    <th style="background-color: #fdeec5">
-                                        <span id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordion">Dynamic Urban Areas</span>
-                                    </th>
-                                    <th style="background-color: #fdeec5"><span>Choice 1</span></th>
-                                    <th style="background-color: #fee7ac">
-                                        <span id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordion">Choice 2</span>
-                                    </th>
+                                <th style="background-color: #fdeec5"><span>The UK Economy</span></th>
+                                <th style="background-color: #fdeec5"><span>Coastal Changes</span></th>
+                                <th style="background-color: #fdeec5">
+                                    <span id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordion">Dynamic Urban Areas</span>
+                                </th>
+                                <th style="background-color: #fdeec5"><span>Choice 1</span></th>
+                                <th style="background-color: #fee7ac">
+                                    <span id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordion">Choice 2</span>
+                                </th>
 
-                                    <th style="background-color: #fdeec5"><span>People Under Threat</span></th>
-                                    <th style="background-color: #fdeec5"><span>Consuming Resources</span></th>
-                                    <th style="background-color: #fee7ac"><span>Paper Grade</span></th>
-                                    <th style="background-color: #fee7ac"><span>Overall Marks</span></th>
+                                <th style="background-color: #fdeec5"><span>People Under Threat</span></th>
+                                <th style="background-color: #fdeec5"><span>Consuming Resources</span></th>
+                                <th style="background-color: #fee7ac"><span>Paper Grade</span></th>
+                                <th style="background-color: #fee7ac"><span>Overall Marks</span></th>
 
-                                    <th style="background-color: #ffe4b2"><span>Paste Paper Grade</span></th>
+                                <th style="background-color: #ffe4b2"><span>Paste Paper Grade</span></th>
 
-                                    <th style="background-color: #c7f4e0"><span>A: Hazardous Earthy 30</span></th>
-                                    <th style="background-color: #c7f4e0"><span>B: Development Dynamics/34</span></th>
-                                    <th style="background-color: #c7f4e0"><span>C: Development Dynamics/34</span></th>
-                                    <th style="background-color: #c7f4e0"><span>D: Hazardous Earthy 30</span></th>
-                                    <th style="background-color: #c7f4e0"><span>Overall Marks</span></th>
-                                    <th style="background-color: #c7f4e0"><span>Paste Paper Grade</span></th>
+                                <th style="background-color: #c7f4e0"><span>A: Hazardous Earthy 30</span></th>
+                                <th style="background-color: #c7f4e0"><span>B: Development Dynamics/34</span></th>
+                                <th style="background-color: #c7f4e0"><span>C: Development Dynamics/34</span></th>
+                                <th style="background-color: #c7f4e0"><span>D: Hazardous Earthy 30</span></th>
+                                <th style="background-color: #c7f4e0"><span>Overall Marks</span></th>
+                                <th style="background-color: #c7f4e0"><span>Paste Paper Grade</span></th>
 
-                                    <th style="background-color: #dbeefd"><span>Overall Marks</span></th>
-                                    <th style="background-color: #dbeefd"><span>Paste Paper Grade</span></th>
+                                <th style="background-color: #dbeefd"><span>Overall Marks</span></th>
+                                <th style="background-color: #dbeefd"><span>Paste Paper Grade</span></th>
 
-                                    <th colspan="2" style="background-color: #feddc5">
-                                        <strong>M..</strong>
-                                        <em>Paste Paper Grade</em>
-                                    </th>
-                                    <th colspan="2" style="background-color: #feddc5">
-                                        <strong>Unit Marks</strong>
-                                        <em>Paste Paper Grade</em>
-                                        <em>Paste Paper Grade</em>
-                                    </th>
-                                    <th colspan="4" style="background-color: #feddc5">
-                                        <strong>Current G..</strong>
-                                        <em>Paste Paper Grade</em>
-                                        <em>Paste Paper Grade</em>
-                                        <em>Paste Paper Grade</em>
-                                        <em>Paste Paper Grade</em>
-                                    </th>
-                                    <th style="background-color: #fdedde">9</th>
-                                    <th style="background-color: #fdedde">8</th>
-                                    <th style="background-color: #fdedde">7</th>
-                                    <th style="background-color: #fdedde">6</th>
-                                    <th style="background-color: #fdedde">5</th>
-                                    <th style="background-color: #fdedde">4</th>
-                                    <th style="background-color: #fdedde">3</th>
+                                <th colspan="2" style="background-color: #feddc5">
+                                    <strong>M..</strong>
+                                    <em>Paste Paper Grade</em>
+                                </th>
+                                <th colspan="2" style="background-color: #feddc5">
+                                    <strong>Unit Marks</strong>
+                                    <em>Paste Paper Grade</em>
+                                    <em>Paste Paper Grade</em>
+                                </th>
+                                <th colspan="4" style="background-color: #feddc5">
+                                    <strong>Current G..</strong>
+                                    <em>Paste Paper Grade</em>
+                                    <em>Paste Paper Grade</em>
+                                    <em>Paste Paper Grade</em>
+                                    <em>Paste Paper Grade</em>
+                                </th>
+                                <th style="background-color: #fdedde">9</th>
+                                <th style="background-color: #fdedde">8</th>
+                                <th style="background-color: #fdedde">7</th>
+                                <th style="background-color: #fdedde">6</th>
+                                <th style="background-color: #fdedde">5</th>
+                                <th style="background-color: #fdedde">4</th>
+                                <th style="background-color: #fdedde">3</th>
 
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Tracy</td>
-                                    <td>Beaker</td>
-                                    <td>17</td>
-                                    <td>17</td>
-                                    <td>15</td>
-                                    <td class="highlight-blue">5</td>
-                                    <td>25</td>
-                                    <td>12</td>
-                                    <td>15</td>
-                                    <td>9</td>
-                                    <td>9</td>
-                                    <td>17</td>
-                                    <td>17</td>
-                                    <td class="highlight-green">7</td>
-                                    <td>50</td>
-                                    <td>64</td>
-                                    <td>4</td>
-                                    <td>3.80</td>
-                                </tr>
-                                <tr>
-                                    <td>Lyra</td>
-                                    <td>Belacqua</td>
-                                    <td>18</td>
-                                    <td>18</td>
-                                    <td>16</td>
-                                    <td class="highlight-blue">5</td>
-                                    <td>22</td>
-                                    <td>16</td>
-                                    <td>13</td>
-                                    <td>8</td>
-                                    <td>8</td>
-                                    <td>18</td>
-                                    <td>18</td>
-                                    <td class="highlight-green">7</td>
-                                    <td>51</td>
-                                    <td>87</td>
-                                    <td>5</td>
-                                    <td>3.80</td>
-                                </tr>
-                                <tr>
-                                    <td>Charlie</td>
-                                    <td>Bucket</td>
-                                    <td>15</td>
-                                    <td>15</td>
-                                    <td>14</td>
-                                    <td class="highlight-red">3</td>
-                                    <td>20</td>
-                                    <td>11</td>
-                                    <td>12</td>
-                                    <td>7</td>
-                                    <td>6</td>
-                                    <td>16</td>
-                                    <td>14</td>
-                                    <td class="highlight-red">4</td>
-                                    <td>38</td>
-                                    <td>53</td>
-                                    <td>3</td>
-                                    <td>3.03</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tracy</td>
+                                <td>Beaker</td>
+                                <td>17</td>
+                                <td>17</td>
+                                <td>15</td>
+                                <td class="highlight-blue">5</td>
+                                <td>25</td>
+                                <td>12</td>
+                                <td>15</td>
+                                <td>9</td>
+                                <td>9</td>
+                                <td>17</td>
+                                <td>17</td>
+                                <td class="highlight-green">7</td>
+                                <td>50</td>
+                                <td>64</td>
+                                <td>4</td>
+                                <td>3.80</td>
+                            </tr>
+                            <tr>
+                                <td>Lyra</td>
+                                <td>Belacqua</td>
+                                <td>18</td>
+                                <td>18</td>
+                                <td>16</td>
+                                <td class="highlight-blue">5</td>
+                                <td>22</td>
+                                <td>16</td>
+                                <td>13</td>
+                                <td>8</td>
+                                <td>8</td>
+                                <td>18</td>
+                                <td>18</td>
+                                <td class="highlight-green">7</td>
+                                <td>51</td>
+                                <td>87</td>
+                                <td>5</td>
+                                <td>3.80</td>
+                            </tr>
+                            <tr>
+                                <td>Charlie</td>
+                                <td>Bucket</td>
+                                <td>15</td>
+                                <td>15</td>
+                                <td>14</td>
+                                <td class="highlight-red">3</td>
+                                <td>20</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>7</td>
+                                <td>6</td>
+                                <td>16</td>
+                                <td>14</td>
+                                <td class="highlight-red">4</td>
+                                <td>38</td>
+                                <td>53</td>
+                                <td>3</td>
+                                <td>3.03</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="col-12">
