@@ -4456,6 +4456,17 @@ button.collaps-btn:before {
     top: 50%;
     left: 50%;
     margin-top: -1px;
-    background-color: #ccc;
     margin-left: -6px;
+    border-bottom: 2px solid #ccc;
+}
+button.collaps-btn.collapsed:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 12px;
+    width: 2px;
+    margin-top: -6px;
+    margin-left: -1px;
+    border-left: 2px solid #ccc;
 }
