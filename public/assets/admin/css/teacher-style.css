@@ -4358,10 +4358,11 @@ Accuracy Score Card Style End
     vertical-align: bottom;
     white-space: nowrap;
 }
-.report-table table thead > tr:first-child > th:first-child, 
-.report-table table thead > tr:first-child > th:nth-child(2) {
-    background-color: #fff;
-    vertical-align: bottom;
+.report-table table tr:nth-child(2) th:nth-child(2) {
+    border: 0;
+}
+.report-table table tr:nth-child(2) th:nth-child(1) {
+    border-right: 0;
 }
 .report-table table .column-group {
     background-color: #fde9ef;
