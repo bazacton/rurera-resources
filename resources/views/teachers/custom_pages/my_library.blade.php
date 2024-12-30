@@ -23,7 +23,7 @@
                                 <th colspan="10" class="report-title">2: UK Geographical Issues</th>
                                 <th colspan="6" class="report-title" style="background-color: #c7f4e0">3: People & Environment</th>
                                 <th colspan="2" style="background-color: #e0f6fe">Topic S..</th>
-                                <th colspan="11" style="background-color: #f9cfb3">Summary</th>
+                                <th colspan="8" style="background-color: #f9cfb3">Summary</th>
                                 <th colspan="7" style="background-color: #fdedde">Summary</th>
                             </tr>
                             <tr>
