@@ -4282,3 +4282,10 @@ Accuracy Score Card Style End
     display: inline-block;
     margin-right: 2px;
 }
+.word-selection-box button.remove-btn {
+    background-color: inherit;
+    padding: 5px;
+}
+.word-selection-box button.remove-btn img {
+    max-width: 100%;
+}
