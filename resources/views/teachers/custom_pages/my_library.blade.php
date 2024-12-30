@@ -27,8 +27,8 @@
                                 <th colspan="7" style="background-color: #fdedde">Summary</th>
                             </tr>
                             <tr>
-                                <th style="background-color: #ffb3b3"><span>A: Hazardous Earthy 30</span></th>
-                                <th style="background-color: #ffb3b3"><span>B: Development Dynamics/34</span></th>
+                                <th style="background-color: #fee3ea"><span>A: Hazardous Earthy 30</span></th>
+                                <th style="background-color: #fee3ea"><span>B: Development Dynamics/34</span></th>
                                 <th style="background-color: #ffb3b3"><span>C: Development Dynamics/34</span></th>
                                 <th style="background-color: #ffb3b3"><span>D: Hazardous Earthy 30</span></th>
                                 <th style="background-color: #ffe4b2"><span>The UK Economy</span></th>
