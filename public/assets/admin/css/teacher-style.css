@@ -4208,10 +4208,10 @@ Accuracy Score Card Style End
     color: white; 
 }
 .progress-table {
-    background-color: #ffff;
-    padding: 25px;
     overflow: hidden;
     overflow-x: auto;
+    padding: 0 0 15px;
+    margin-bottom: 25px;
 }
 .progress-table .table {
     border-spacing: 4px !important;
