@@ -17,23 +17,23 @@
                     <table class="table table-bordered text-center">
                         <thead>
                             <tr>
-                                <th>Objective</th>
-                                <th>Azeneth Armando</th>
-                                <th>Amelie Austin</th>
-                                <th>Eloise Chapman</th>
-                                <th>Aaliyah Collier</th>
-                                <th>Bailey Cook</th>
-                                <th>Jasmine Doyle</th>
-                                <th>Jorginho Gaspar</th>
-                                <th>Jayden Glover</th>
-                                <th>Prabodh Iyer</th>
-                                <th>Avinash Jain</th>
-                                <th>Ansel Jobin</th>
-                                <th>Makary Kaczmarek</th>
-                                <th>Kajal Korrapati</th>
-                                <th>Rishi Korrapati</th>
-                                <th>Bùi Thị Lự Chị</th>
-                                <th>Yue Wan Lü</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Objective</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Azeneth Armando</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Amelie Austin</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Eloise Chapman</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Aaliyah Collier</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Bailey Cook</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Jasmine Doyle</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Jorginho Gaspar</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Jayden Glover</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Prabodh Iyer</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Avinash Jain</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Ansel Jobin</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Makary Kaczmarek</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Kajal Korrapati</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Rishi Korrapati</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Bùi Thị Lự Chị</th>
+                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Yue Wan Lü</th>
                             </tr>
                         </thead>
                         <tbody>
