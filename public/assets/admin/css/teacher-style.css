@@ -4408,6 +4408,7 @@ Accuracy Score Card Style End
     align-items: end;
     padding: 0 5px;
     justify-content: flex-start;
+    height: calc(100% - 195px);
 }
 .report-table table th em:last-child {
     border-left: 0;
