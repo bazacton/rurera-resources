@@ -4197,7 +4197,7 @@ Accuracy Score Card Style End
 }
 .almost {
     background-color: #eeae4f; /* Yellow */
-    color: black;
+    color: white;
 }
 .target {
     background-color: #d9544f; /* Red */
