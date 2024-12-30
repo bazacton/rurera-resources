@@ -28,7 +28,7 @@
                                             <button class="remove-btn"><img src="/assets/default/svgs/paint-brush.svg" alt=""></button>
                                         </div>
                                         <span class="selection-status"><em>0</em> Selection</span>
-                                        <button type="button" class="clear-btn">Clear Selection</button>
+                                        <button type="button" class="clear-btn"><img src="/assets/default/svgs/dot-circle.svg" alt=""> Clear Selection</button>
                                     </div>
                                 </th>
                                 <th><span class="icon-box"><i class="fas fa-user"></i></span>Azeneth Armando</th>
