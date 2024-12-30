@@ -25,7 +25,12 @@
                                             1: Global Geograph...
                                         </div>
                                     </th>
-                                    <th colspan="10" class="report-title">2: UK Geographical Issues</th>
+                                    <th colspan="10" class="report-title">
+                                        <div class="collapse-control-box">
+                                            <button type="button" class="collaps-btn" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></button> 
+                                            2: UK Geographical Issues
+                                        </div>
+                                    </th>
                                     <th colspan="6" class="report-title" style="background-color: #c7f4e0">3: People & Environment</th>
                                     <th colspan="2" style="background-color: #e0f6fe">Topic S..</th>
                                     <th colspan="8" style="background-color: #f9cfb3">Summary</th>
@@ -44,10 +49,13 @@
 
                                     <th style="background-color: #fdeec5"><span>The UK Economy</span></th>
                                     <th style="background-color: #fdeec5"><span>Coastal Changes</span></th>
-                                    <th style="background-color: #fdeec5"><span>Dynamic Urban Areas</span></th>
+                                    <th style="background-color: #fdeec5">
+                                        <span id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordion">Dynamic Urban Areas</span>
+                                    </th>
                                     <th style="background-color: #fdeec5"><span>Choice 1</span></th>
-
-                                    <th style="background-color: #fee7ac"><span>Choice 2</span></th>
+                                    <th style="background-color: #fee7ac">
+                                        <span id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordion">Choice 2</span>
+                                    </th>
 
                                     <th style="background-color: #fdeec5"><span>People Under Threat</span></th>
                                     <th style="background-color: #fdeec5"><span>Consuming Resources</span></th>
