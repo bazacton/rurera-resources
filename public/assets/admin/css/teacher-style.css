@@ -4258,6 +4258,7 @@ Accuracy Score Card Style End
     color: #6c757d;
     font-weight: 400;
     text-align: right !important;
+    padding: 0 !important;
 }
 .word-selection-box button {
     border: 0;
