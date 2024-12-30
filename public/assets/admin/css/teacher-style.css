@@ -4383,7 +4383,7 @@ Accuracy Score Card Style End
     font-weight: bold;
 }
 
-.report-table table .section-title {
+.report-table table .report-title {
     background-color: #ffe4b2;
     font-weight: bold;
     text-align: left;
