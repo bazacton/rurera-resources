@@ -4440,3 +4440,22 @@ Accuracy Score Card Style End
     border-bottom: 1px solid #ccc;
     vertical-align: top;
 }
+button.collaps-btn {
+    height: 20px;
+    width: 20px;
+    border: 0;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+}
+button.collaps-btn:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 12px;
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    background-color: #ccc;
+    margin-left: -6px;
+}
