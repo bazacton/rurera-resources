@@ -22,13 +22,13 @@
                                     <th colspan="4" class="report-title bg-danger">
                                         <div class="collapse-control-box">
                                             <button type="button" class="collaps-btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></button> 
-                                            1: Global Geograph...
+                                            <b>1: Global Geograph...</b>
                                         </div>
                                     </th>
                                     <th colspan="10" class="report-title">
                                         <div class="collapse-control-box">
                                             <button type="button" class="collaps-btn" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></button> 
-                                            2: UK Geographical Issues
+                                            <b>2: UK Geographical Issues</b>
                                         </div>
                                     </th>
                                     <th colspan="6" class="report-title" style="background-color: #c7f4e0">3: People & Environment</th>
