@@ -4355,7 +4355,7 @@ Accuracy Score Card Style End
 .report-table table th {
     font-weight: bold;
     font-size: 12px;
-    vertical-align: top;
+    vertical-align: bottom;
     white-space: nowrap;
 }
 .report-table table thead > tr:first-child > th:first-child, 
@@ -4426,4 +4426,5 @@ Accuracy Score Card Style End
     border: 0;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    vertical-align: top;
 }
