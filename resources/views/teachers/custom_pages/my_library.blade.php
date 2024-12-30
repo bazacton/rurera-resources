@@ -32,16 +32,16 @@
                                 <th style="background-color: #ffb3b3"><span>Development Dynamics</span></th>
                                 <th style="background-color: #ffb3b3"><span>Challenges of Urbanization</span></th>
                                 <th style="background-color: #ffb3b3"><span>Paper Grade</span></th>
-                                <th><span>The UK Economy</span></th>
-                                <th><span>Coastal Changes</span></th>
-                                <th><span>Dynamic Urban Areas</span></th>
-                                <th><span>Choice 1</span></th>
-                                <th><span>Choice 2</span></th>
-                                <th><span>People Under Threat</span></th>
-                                <th><span>Consuming Resources</span></th>
-                                <th><span>Paper Grade</span></th>
-                                <th><span>Overall Marks</span></th>
-                                <th><span>Paste Paper Grade</span></th>
+                                <th style="background-color: #ffe4b2"><span>The UK Economy</span></th>
+                                <th style="background-color: #ffe4b2"><span>Coastal Changes</span></th>
+                                <th style="background-color: #ffe4b2"><span>Dynamic Urban Areas</span></th>
+                                <th style="background-color: #ffe4b2"><span>Choice 1</span></th>
+                                <th style="background-color: #ffe4b2"><span>Choice 2</span></th>
+                                <th style="background-color: #ffe4b2"><span>People Under Threat</span></th>
+                                <th style="background-color: #ffe4b2"><span>Consuming Resources</span></th>
+                                <th style="background-color: #ffe4b2"><span>Paper Grade</span></th>
+                                <th style="background-color: #ffe4b2"><span>Overall Marks</span></th>
+                                <th style="background-color: #ffe4b2"><span>Paste Paper Grade</span></th>
                             </tr>
                         </thead>
                         <tbody>
