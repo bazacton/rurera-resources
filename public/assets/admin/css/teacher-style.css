@@ -4288,4 +4288,5 @@ Accuracy Score Card Style End
 }
 .word-selection-box button.remove-btn img {
     max-width: 100%;
+    filter: invert(64%) sepia(0%) saturate(0%) hue-rotate(239deg) brightness(96%) contrast(84%);
 }
