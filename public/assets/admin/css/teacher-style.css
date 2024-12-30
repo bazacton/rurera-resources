@@ -4367,24 +4367,23 @@ Accuracy Score Card Style End
     font-weight: bold;
     text-align: left;
 }
-
 .report-table table .highlight-blue {
     background-color: #b3d9ff;
     font-weight: bold;
 }
-
 .report-table table .highlight-red {
     background-color: #ffb3b3;
     font-weight: bold;
 }
-
 .report-table table .highlight-green {
     background-color: #b3ffb3;
     font-weight: bold;
 }
-
 .report-table table .report-title {
     background-color: #ffe4b2;
     font-weight: bold;
     text-align: left;
+}
+.report-table table .report-title.bg-danger {
+    background-color: #ffb3b3 !important;
 }
