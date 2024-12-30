@@ -4265,6 +4265,15 @@ Accuracy Score Card Style End
     padding: 5px 5px 5px 25px !important;
     position: relative;
 }
+.progress-table .table tr td.has-met:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #d9544f;
+}
 .word-selection-box button {
     border: 0;
     height: 30px;
