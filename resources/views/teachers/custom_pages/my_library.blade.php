@@ -17,8 +17,7 @@
                     <table>
                         <thead>
                             <tr>
-                                <th rowspan="2">First Name</th>
-                                <th rowspan="2">Last Name</th>
+                                <th colspan="2" style="background-color: #fff">Graph Colmuns</th>
                                 <th colspan="4" class="report-title bg-danger">1: Global Geography</th>
                                 <th colspan="10" class="report-title">2: UK Geographical Issues</th>
                                 <th colspan="6" class="report-title" style="background-color: #c7f4e0">3: People & Environment</th>
@@ -27,6 +26,9 @@
                                 <th colspan="7" style="background-color: #fdedde">Summary</th>
                             </tr>
                             <tr>
+                                <th style="background-color: #fff">First Name</th>
+                                <th style="background-color: #fff">Last Name</th>
+
                                 <th style="background-color: #fee3ea"><span>A: Hazardous Earthy 30</span></th>
                                 <th style="background-color: #fee3ea"><span>B: Development Dynamics/34</span></th>
                                 <th style="background-color: #fcd9df"><span>C: Development Dynamics/34</span></th>
@@ -43,7 +45,7 @@
                                 <th style="background-color: #fdeec5"><span>Consuming Resources</span></th>
                                 <th style="background-color: #fee7ac"><span>Paper Grade</span></th>
                                 <th style="background-color: #fee7ac"><span>Overall Marks</span></th>
-                                
+
                                 <th style="background-color: #ffe4b2"><span>Paste Paper Grade</span></th>
 
                                 <th style="background-color: #c7f4e0"><span>A: Hazardous Earthy 30</span></th>
