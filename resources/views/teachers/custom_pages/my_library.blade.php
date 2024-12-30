@@ -40,7 +40,7 @@
                                 <th style="background-color: #fff">Last Name</th>
 
                                 <th style="background-color: #fee3ea">
-                                    <span id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">A: Hazardous Earthy 30</span>
+                                    <span id="collapse1" class="collapse show" aria-labelledby="heading1">A: Hazardous Earthy 30</span>
                                 </th>
                                 <th style="background-color: #fee3ea"><span>B: Development Dynamics/34</span></th>
                                 <th style="background-color: #fcd9df"><span>C: Development Dynamics/34</span></th>
@@ -49,11 +49,11 @@
                                 <th style="background-color: #fdeec5"><span>The UK Economy</span></th>
                                 <th style="background-color: #fdeec5"><span>Coastal Changes</span></th>
                                 <th style="background-color: #fdeec5">
-                                    <span id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordion">Dynamic Urban Areas</span>
+                                    <span id="collapse2" class="collapse show" aria-labelledby="heading2">Dynamic Urban Areas</span>
                                 </th>
                                 <th style="background-color: #fdeec5"><span>Choice 1</span></th>
                                 <th style="background-color: #fee7ac">
-                                    <span id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordion">Choice 2</span>
+                                    <span id="collapse2" class="collapse show" aria-labelledby="heading2">Choice 2</span>
                                 </th>
 
                                 <th style="background-color: #fdeec5"><span>People Under Threat</span></th>
