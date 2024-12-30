@@ -4213,6 +4213,7 @@ Accuracy Score Card Style End
     border-spacing: 4px !important;
     border-collapse: separate;
     width: 100%;
+    border: 0;
 }
 .progress-table .table tr th {
     background-color: #fff;
@@ -4220,6 +4221,7 @@ Accuracy Score Card Style End
     border-top: 3px solid fdb6b6;
 }
 .progress-table .table tr td {
+    border: 0;
     min-width: 350px;
     box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
 }
