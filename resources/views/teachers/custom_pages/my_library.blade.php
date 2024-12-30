@@ -19,7 +19,7 @@
                             <tr>
                                 <th rowspan="2">First Name</th>
                                 <th rowspan="2">Last Name</th>
-                                <th colspan="4" class="report-title">1: Global Geography</th>
+                                <th colspan="4" class="report-title bg-danger">1: Global Geography</th>
                                 <th colspan="5" class="report-title">2: UK Geographical Issues</th>
                                 <th colspan="4" class="report-title">3: People & Environment</th>
                                 <th rowspan="2">Maximum Target Grade</th>
