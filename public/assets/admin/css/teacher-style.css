@@ -4218,7 +4218,11 @@ Accuracy Score Card Style End
 .progress-table .table tr th {
     background-color: #fff;
     box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
-    border-top: 3px solid fdb6b6;
+    border-top: 3px solid #fdb6b6;
+    font-size: 12px;
+}
+.progress-table .table tr th .icon-box {
+    display: block;
 }
 .progress-table .table tr td {
     border: 0;
