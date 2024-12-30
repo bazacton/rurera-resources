@@ -22,7 +22,7 @@
                                 <th colspan="4" class="report-title bg-danger">1: Global Geography</th>
                                 <th colspan="10" class="report-title">2: UK Geographical Issues</th>
                                 <th colspan="6" class="report-title" style="background-color: #c7f4e0">3: People & Environment</th>
-                                <th rowspan="2">Maximum Target Grade</th>
+                                <th rowspan="2" style="background-color: #e0f6fe">Maximum Target Grade</th>
                                 <th rowspan="2">Unit Marks</th>
                                 <th rowspan="2">Current Grade</th>
                                 <th rowspan="2">Average Unit %</th>
@@ -49,6 +49,9 @@
                                 <th style="background-color: #c7f4e0"><span>D: Hazardous Earthy 30</span></th>
                                 <th style="background-color: #c7f4e0"><span>Overall Marks</span></th>
                                 <th style="background-color: #c7f4e0"><span>Paste Paper Grade</span></th>
+
+                                <th style="background-color: #dbeefd"><span>Overall Marks</span></th>
+                                <th style="background-color: #dbeefd"><span>Paste Paper Grade</span></th>
                             </tr>
                         </thead>
                         <tbody>
