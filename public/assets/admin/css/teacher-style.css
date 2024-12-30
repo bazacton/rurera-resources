@@ -4345,13 +4345,11 @@ Accuracy Score Card Style End
     width: 100%;
     border-collapse: collapse;
 }
-
 .report-table table th, .report-table table td {
     border: 1px solid #ccc;
     padding: 8px;
     text-align: center;
 }
-
 .report-table table th {
     font-weight: bold;
     font-size: 12px;
@@ -4362,6 +4360,7 @@ Accuracy Score Card Style End
 .report-table table tr:first-child th:first-child {
     border-bottom: 0;
     min-width: 200px;
+    text-transform: uppercase;
 }
 .report-table table tr:nth-child(2) th:nth-child(2) {
     border: 0;
