@@ -4334,3 +4334,47 @@ Accuracy Score Card Style End
     max-height: 22px;
     filter: invert(64%) sepia(0%) saturate(0%) hue-rotate(239deg) brightness(96%) contrast(84%);
 }
+
+/* Report Table Style Start */
+.report-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.report-table table th, .report-table table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.report-table table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.report-table table .column-group {
+    background-color: #fde9ef;
+    font-weight: bold;
+    text-align: left;
+}
+
+.report-table table .highlight-blue {
+    background-color: #b3d9ff;
+    font-weight: bold;
+}
+
+.report-table table .highlight-red {
+    background-color: #ffb3b3;
+    font-weight: bold;
+}
+
+.report-table table .highlight-green {
+    background-color: #b3ffb3;
+    font-weight: bold;
+}
+
+.report-table table .section-title {
+    background-color: #ffe4b2;
+    font-weight: bold;
+    text-align: left;
+}
