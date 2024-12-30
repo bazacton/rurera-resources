@@ -28,19 +28,19 @@
                                 <th rowspan="2">Average Unit %</th>
                             </tr>
                             <tr>
-                                <th>Hazardous Earth</th>
-                                <th>Development Dynamics</th>
-                                <th>Challenges of Urbanization</th>
-                                <th>Paper Grade</th>
-                                <th>The UK Economy</th>
-                                <th>Coastal Changes</th>
-                                <th>Dynamic Urban Areas</th>
-                                <th>Choice 1</th>
-                                <th>Choice 2</th>
-                                <th>People Under Threat</th>
-                                <th>Consuming Resources</th>
-                                <th>Paper Grade</th>
-                                <th>Overall Marks</th>
+                                <th><span>Hazardous Earth</span></th>
+                                <th><span>Development Dynamics</span></th>
+                                <th><span>Challenges of Urbanization</span></th>
+                                <th>Paper Grade <span></span></th>
+                                <th><span>The UK Economy</span></th>
+                                <th><span>Coastal Changes</span></th>
+                                <th><span>Dynamic Urban Areas</span></th>
+                                <th><span>Choice 1</span></th>
+                                <th><span>Choice 2</span></th>
+                                <th><span>People Under Threat</span></th>
+                                <th><span>Consuming Resources</span></th>
+                                <th><span>Paper Grade</span></th>
+                                <th><span>Overall Marks</span></th>
                             </tr>
                         </thead>
                         <tbody>
