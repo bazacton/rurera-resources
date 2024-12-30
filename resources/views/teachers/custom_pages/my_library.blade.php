@@ -51,14 +51,10 @@
                                 <th style="background-color: #dbeefd"><span>Overall Marks</span></th>
                                 <th style="background-color: #dbeefd"><span>Paste Paper Grade</span></th>
 
-                                <th colspan="1" style="background-color: #feddc5">M..</th>
-                                <th colspan="2" style="background-color: #feddc5">Unit Marks</th>
+                                <th style="background-color: #feddc5">M..</th>
+                                <th style="background-color: #feddc5">Unit Marks</th>
                                 <th style="background-color: #feddc5">Current G..</th>
                                 <th style="background-color: #feddc5">Average U..</th>
-
-                                <th><span>Overall Marks</span></th>
-                                <th><span>Overall Marks</span></th>
-                                <th><span>Overall Marks</span></th>
 
                             </tr>
                         </thead>
