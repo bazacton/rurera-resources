@@ -4210,18 +4210,16 @@ Accuracy Score Card Style End
     overflow-x: auto;
 }
 .progress-table .table {
-    border-spacing: 10px !important;
+    border-spacing: 4px !important;
     border-collapse: separate;
 }
 .progress-table .table tr th {
     background-color: #fff;
-    border: 3px solid #fff;
     box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
     border-top-color: #fdb6b6;
 }
 .progress-table .table tr td {
     min-width: 350px;
-    border: 3px solid #fff;
     box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
 }
 .progress-table .table tr td:first-child {
