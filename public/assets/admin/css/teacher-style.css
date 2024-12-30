@@ -4296,3 +4296,8 @@ Accuracy Score Card Style End
     max-width: 100%;
     filter: invert(64%) sepia(0%) saturate(0%) hue-rotate(239deg) brightness(96%) contrast(84%);
 }
+.collaps-btn img {
+    max-width: 15px;
+    max-height: 15px;
+    filter: invert(64%) sepia(0%) saturate(0%) hue-rotate(239deg) brightness(96%) contrast(84%);
+}
