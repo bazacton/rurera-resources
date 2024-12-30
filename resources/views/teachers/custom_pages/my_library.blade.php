@@ -19,9 +19,9 @@
                             <tr>
                                 <th rowspan="2">First Name</th>
                                 <th rowspan="2">Last Name</th>
-                                <th colspan="4" class="section-title">1: Global Geography</th>
-                                <th colspan="5" class="section-title">2: UK Geographical Issues</th>
-                                <th colspan="4" class="section-title">3: People & Environment</th>
+                                <th colspan="4" class="report-title">1: Global Geography</th>
+                                <th colspan="5" class="report-title">2: UK Geographical Issues</th>
+                                <th colspan="4" class="report-title">3: People & Environment</th>
                                 <th rowspan="2">Maximum Target Grade</th>
                                 <th rowspan="2">Unit Marks</th>
                                 <th rowspan="2">Current Grade</th>
