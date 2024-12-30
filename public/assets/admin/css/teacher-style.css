@@ -4369,6 +4369,12 @@ Accuracy Score Card Style End
     border-right: 0;
     border-top: 0;
 }
+.report-table table th img {
+    height: 15px;
+    width: 15px;
+    filter: invert(30%) sepia(8%) saturate(8%) hue-rotate(322deg) brightness(102%) contrast(87%);
+    margin-right: 5px;
+}
 .report-table table .column-group {
     background-color: #fde9ef;
     font-weight: bold;
