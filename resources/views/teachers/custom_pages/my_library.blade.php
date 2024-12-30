@@ -17,7 +17,19 @@
                     <table class="table table-bordered text-center">
                         <thead>
                             <tr>
-                                <th><span class="icon-box"><i class="fas fa-user"></i></span>Objective</th>
+                                <th>
+                                    <div class="word-selection-box">
+                                        <div class="word-controls">
+                                            <button type="button" class="met">U</button>
+                                            <button type="button" class="target">T</button>
+                                            <button type="button" class="almost">A</button>
+                                            <button type="button" class="met">M</button>
+                                            <button type="button" class="exceeding">E</button>
+                                        </div>
+                                        <span class="selection-status"><em>0</em> Selection</span>
+                                        <button type="button" class="clear-btn">Clear Selection</button>
+                                    </div>
+                                </th>
                                 <th><span class="icon-box"><i class="fas fa-user"></i></span>Azeneth Armando</th>
                                 <th><span class="icon-box"><i class="fas fa-user"></i></span>Amelie Austin</th>
                                 <th><span class="icon-box"><i class="fas fa-user"></i></span>Eloise Chapman</th>
