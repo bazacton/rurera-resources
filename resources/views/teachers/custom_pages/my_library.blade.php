@@ -23,9 +23,7 @@
                                 <th colspan="10" class="report-title">2: UK Geographical Issues</th>
                                 <th colspan="6" class="report-title" style="background-color: #c7f4e0">3: People & Environment</th>
                                 <th colspan="2" style="background-color: #e0f6fe">Topic S..</th>
-                                <th colspan="2">Unit Marks</th>
-                                <th colspan="2">Current Grade</th>
-                                <th colspan="2">Average Unit %</th>
+                                <th colspan="11" style="background-color: #f9cfb3">Summary</th>
                             </tr>
                             <tr>
                                 <th style="background-color: #ffb3b3"><span>A: Hazardous Earthy 30</span></th>
@@ -52,6 +50,12 @@
 
                                 <th style="background-color: #dbeefd"><span>Overall Marks</span></th>
                                 <th style="background-color: #dbeefd"><span>Paste Paper Grade</span></th>
+
+                                <th style="background-color: #feddc5"><span>M..</span></th>
+                                <th style="background-color: #feddc5"><span>Unit Marks</span></th>
+                                <th style="background-color: #feddc5"><span>Current G..</span></th>
+                                <th style="background-color: #feddc5"><span>Average U..</span></th>
+
                             </tr>
                         </thead>
                         <tbody>
