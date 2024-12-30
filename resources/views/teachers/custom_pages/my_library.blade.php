@@ -19,7 +19,9 @@
                             <thead>
                                 <tr>
                                     <th colspan="2" style="background-color: #fff"><img src="/assets/default/svgs/three-columns.svg" alt=""> Graph Colmuns</th>
-                                    <th colspan="4" class="report-title bg-danger"><button type="button" class="collaps-btn">   </button> 1: Global Geograph...</th>
+                                    <th colspan="4" class="report-title bg-danger">
+                                        <button type="button" class="collaps-btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></button> 1: Global Geograph...
+                                    </th>
                                     <th colspan="10" class="report-title">2: UK Geographical Issues</th>
                                     <th colspan="6" class="report-title" style="background-color: #c7f4e0">3: People & Environment</th>
                                     <th colspan="2" style="background-color: #e0f6fe">Topic S..</th>
@@ -30,7 +32,9 @@
                                     <th style="background-color: #fff">First Name</th>
                                     <th style="background-color: #fff">Last Name</th>
 
-                                    <th style="background-color: #fee3ea"><span>A: Hazardous Earthy 30</span></th>
+                                    <th style="background-color: #fee3ea" id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+                                        <span>A: Hazardous Earthy 30</span>
+                                    </th>
                                     <th style="background-color: #fee3ea"><span>B: Development Dynamics/34</span></th>
                                     <th style="background-color: #fcd9df"><span>C: Development Dynamics/34</span></th>
                                     <th style="background-color: #fcd9df"><span>D: Hazardous Earthy 30</span></th>
