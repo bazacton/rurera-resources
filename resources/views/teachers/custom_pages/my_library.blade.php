@@ -71,7 +71,7 @@
                             <tr>
                                 <td>Count NAHT KPI Count 2.1.a.2 Identify ten more or ten less than any given number</td>
                                 <td class="almost">A</td>
-                                <td class="exceeding" style="background-color: #17a2b8; color: white;">E</td>
+                                <td class="exceeding">E</td>
                                 <td class="target">T</td>
                                 <td class="met">M</td>
                                 <td class="met">M</td>
