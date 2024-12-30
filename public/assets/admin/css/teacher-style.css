@@ -4268,7 +4268,7 @@ Accuracy Score Card Style End
 .word-selection-box button.clear-btn {
     height: auto;
     width: auto;
-    margin-left: 10px;
+    margin-left: 20px;
     padding: 5px 10px;
 }
 .word-selection-box {
