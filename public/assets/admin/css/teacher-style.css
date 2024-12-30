@@ -4257,7 +4257,7 @@ Accuracy Score Card Style End
     border: 0;
     height: 30px;
     width: 30px;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 .word-selection-box button.clear-btn {
     height: auto;
@@ -4265,4 +4265,14 @@ Accuracy Score Card Style End
 }
 .word-controls {
     margin: 0 0 10px;
+}
+.selection-status em {
+    background-color: #777;
+    padding: 0px 8px;
+    font-style: normal;
+    border-radius: 25px;
+    color: #fff;
+    line-height: normal;
+    display: inline-block;
+    margin-right: 2px;
 }
