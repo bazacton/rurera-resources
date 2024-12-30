@@ -24,6 +24,7 @@
                                 <th colspan="6" class="report-title" style="background-color: #c7f4e0">3: People & Environment</th>
                                 <th colspan="2" style="background-color: #e0f6fe">Topic S..</th>
                                 <th colspan="11" style="background-color: #f9cfb3">Summary</th>
+                                <th colspan="7" style="background-color: #fdedde">Summary</th>
                             </tr>
                             <tr>
                                 <th style="background-color: #ffb3b3"><span>A: Hazardous Earthy 30</span></th>
@@ -67,7 +68,13 @@
                                     <em>Paste Paper Grade</em>
                                     <em>Paste Paper Grade</em>
                                 </th>
-                                <th style="background-color: #feddc5">Average U..</th>
+                                <th style="background-color: #feddc5">9</th>
+                                <th style="background-color: #feddc5">8</th>
+                                <th style="background-color: #feddc5">7</th>
+                                <th style="background-color: #feddc5">6</th>
+                                <th style="background-color: #feddc5">5</th>
+                                <th style="background-color: #feddc5">4</th>
+                                <th style="background-color: #feddc5">3</th>
 
                             </tr>
                         </thead>
