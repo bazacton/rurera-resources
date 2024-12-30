@@ -4398,3 +4398,13 @@ Accuracy Score Card Style End
     min-width: auto;
     vertical-align: bottom;
 }
+.report-table table th em {
+    display: inline-block;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: scale(-1);
+    font-style: normal;
+}
+.report-table table th strong {
+    display: block;
+}
