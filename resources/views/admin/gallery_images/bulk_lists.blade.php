@@ -332,7 +332,8 @@ ul.crop_sizes {
 										@if(!empty($image_recomendations))
 											@foreach($image_recomendations as $image_recomendation_data)
 												@php $searchable_keywords = isset( $image_recomendation_data['searchable_keywords'] )? $image_recomendation_data['searchable_keywords'] : '';
-												$searchable_keywords = is_array($searchable_keywords)? $searchable_keywords : explode($searchable_keywords, ' ');
+													
+													$searchable_keywords = is_array($searchable_keywords)? $searchable_keywords : explode(' ', $searchable_keywords);
 												
 												$keywords_list  = '';
 												if(!empty($searchable_keywords)){
