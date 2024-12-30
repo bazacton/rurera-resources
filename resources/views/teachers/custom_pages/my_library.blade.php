@@ -23,9 +23,7 @@
                                 <th colspan="10" class="report-title">2: UK Geographical Issues</th>
                                 <th colspan="6" class="report-title" style="background-color: #c7f4e0">3: People & Environment</th>
                                 <th rowspan="2" style="background-color: #e0f6fe">Maximum Target Grade</th>
-                                <th rowspan="2">Unit Marks</th>
-                                <th rowspan="2">Current Grade</th>
-                                <th rowspan="2">Average Unit %</th>
+                                
                             </tr>
                             <tr>
                                 <th style="background-color: #ffb3b3"><span>A: Hazardous Earthy 30</span></th>
