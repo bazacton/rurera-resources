@@ -68,13 +68,13 @@
                                     <em>Paste Paper Grade</em>
                                     <em>Paste Paper Grade</em>
                                 </th>
-                                <th style="background-color: #feddc5">9</th>
-                                <th style="background-color: #feddc5">8</th>
-                                <th style="background-color: #feddc5">7</th>
-                                <th style="background-color: #feddc5">6</th>
-                                <th style="background-color: #feddc5">5</th>
-                                <th style="background-color: #feddc5">4</th>
-                                <th style="background-color: #feddc5">3</th>
+                                <th style="background-color: #fdedde">9</th>
+                                <th style="background-color: #fdedde">8</th>
+                                <th style="background-color: #fdedde">7</th>
+                                <th style="background-color: #fdedde">6</th>
+                                <th style="background-color: #fdedde">5</th>
+                                <th style="background-color: #fdedde">4</th>
+                                <th style="background-color: #fdedde">3</th>
 
                             </tr>
                         </thead>
