@@ -4270,8 +4270,9 @@ Accuracy Score Card Style End
 .word-selection-box button.clear-btn {
     height: auto;
     width: auto;
-    margin-left: 10px;
+    margin-left: 2px;
     padding: 5px 10px;
+    float: right;
 }
 .word-selection-box button.clear-btn img {
     height: 12px;
@@ -4283,6 +4284,10 @@ Accuracy Score Card Style End
 }
 .word-controls {
     margin: 0 0 10px;
+}
+.selection-status {
+    margin-top: 4px;
+    float: left;
 }
 .selection-status em {
     background-color: #777;
