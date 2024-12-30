@@ -25,6 +25,7 @@
                                             <button type="button" class="almost">A</button>
                                             <button type="button" class="met">M</button>
                                             <button type="button" class="exceeding">E</button>
+                                            <button class="remove-btn"><img src="/assets/default/svgs/paint-brush.svg" alt=""></button>
                                         </div>
                                         <span class="selection-status"><em>0</em> Selection</span>
                                         <button type="button" class="clear-btn">Clear Selection</button>
