@@ -4390,6 +4390,7 @@ Accuracy Score Card Style End
 .report-table table th span {
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    transform: scale(-1);
 }
 .report-table table th:has(span) {
     min-width: auto;
