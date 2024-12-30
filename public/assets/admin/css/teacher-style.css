@@ -4190,3 +4190,16 @@ Accuracy Score Card Style Start
 /*************************************
 Accuracy Score Card Style End
 **************************************/
+
+.met {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+.almost {
+    background-color: #ffc107; /* Yellow */
+    color: black;
+}
+.target {
+    background-color: #dc3545; /* Red */
+    color: white;
+}
