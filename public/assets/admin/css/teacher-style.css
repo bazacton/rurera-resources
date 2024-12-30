@@ -4357,6 +4357,7 @@ Accuracy Score Card Style End
     font-size: 12px;
     min-width: 80px;
     vertical-align: top;
+    white-space: nowrap;
 }
 .report-table table thead > tr:first-child > th:first-child, 
 .report-table table thead > tr:first-child > th:nth-child(2) {
