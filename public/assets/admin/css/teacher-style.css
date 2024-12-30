@@ -4228,7 +4228,6 @@ Accuracy Score Card Style End
     margin: 0 0 5px;
 }
 .progress-table .table tr td {
-    min-width: 350px;
     border: 2px solid rgba(0,0,0,0.1);
     width: 50px;
     padding: 10px !important;
