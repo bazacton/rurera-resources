@@ -13,6 +13,102 @@
     <div class="section-body">
         <div class="row">
             <div class="col-12">
+                <div class="report-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">First Name</th>
+                                <th rowspan="2">Last Name</th>
+                                <th colspan="4" class="section-title">1: Global Geography</th>
+                                <th colspan="5" class="section-title">2: UK Geographical Issues</th>
+                                <th colspan="4" class="section-title">3: People & Environment</th>
+                                <th rowspan="2">Maximum Target Grade</th>
+                                <th rowspan="2">Unit Marks</th>
+                                <th rowspan="2">Current Grade</th>
+                                <th rowspan="2">Average Unit %</th>
+                            </tr>
+                            <tr>
+                                <th>Hazardous Earth</th>
+                                <th>Development Dynamics</th>
+                                <th>Challenges of Urbanization</th>
+                                <th>Paper Grade</th>
+                                <th>The UK Economy</th>
+                                <th>Coastal Changes</th>
+                                <th>Dynamic Urban Areas</th>
+                                <th>Choice 1</th>
+                                <th>Choice 2</th>
+                                <th>People Under Threat</th>
+                                <th>Consuming Resources</th>
+                                <th>Paper Grade</th>
+                                <th>Overall Marks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tracy</td>
+                                <td>Beaker</td>
+                                <td>17</td>
+                                <td>17</td>
+                                <td>15</td>
+                                <td class="highlight-blue">5</td>
+                                <td>25</td>
+                                <td>12</td>
+                                <td>15</td>
+                                <td>9</td>
+                                <td>9</td>
+                                <td>17</td>
+                                <td>17</td>
+                                <td class="highlight-green">7</td>
+                                <td>50</td>
+                                <td>64</td>
+                                <td>4</td>
+                                <td>3.80</td>
+                            </tr>
+                            <tr>
+                                <td>Lyra</td>
+                                <td>Belacqua</td>
+                                <td>18</td>
+                                <td>18</td>
+                                <td>16</td>
+                                <td class="highlight-blue">5</td>
+                                <td>22</td>
+                                <td>16</td>
+                                <td>13</td>
+                                <td>8</td>
+                                <td>8</td>
+                                <td>18</td>
+                                <td>18</td>
+                                <td class="highlight-green">7</td>
+                                <td>51</td>
+                                <td>87</td>
+                                <td>5</td>
+                                <td>3.80</td>
+                            </tr>
+                            <tr>
+                                <td>Charlie</td>
+                                <td>Bucket</td>
+                                <td>15</td>
+                                <td>15</td>
+                                <td>14</td>
+                                <td class="highlight-red">3</td>
+                                <td>20</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>7</td>
+                                <td>6</td>
+                                <td>16</td>
+                                <td>14</td>
+                                <td class="highlight-red">4</td>
+                                <td>38</td>
+                                <td>53</td>
+                                <td>3</td>
+                                <td>3.03</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-12">
                 <div class="progress-table">
                     <table class="table table-bordered text-center">
                         <thead>
