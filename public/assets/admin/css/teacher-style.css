@@ -4417,7 +4417,7 @@ Accuracy Score Card Style End
     background-color: #ffe2cb;
     padding: 8px 0;
     border-bottom: 1px solid #ddd;
-    margin-bottom: 0;
+    margin: 0 -5px;
 }
 .report-table table th:has(strong) {
     padding: 0 5px;
