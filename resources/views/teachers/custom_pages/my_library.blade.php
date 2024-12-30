@@ -56,11 +56,10 @@
                                 <th style="background-color: #feddc5">Current G..</th>
                                 <th style="background-color: #feddc5">Average U..</th>
 
-                            </tr>
-                            <tr>
                                 <th><span>Overall Marks</span></th>
                                 <th><span>Overall Marks</span></th>
                                 <th><span>Overall Marks</span></th>
+
                             </tr>
                         </thead>
                         <tbody>
