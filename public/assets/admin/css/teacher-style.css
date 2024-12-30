@@ -4386,7 +4386,7 @@ Accuracy Score Card Style End
     text-align: left;
 }
 .report-table table .report-title.bg-danger {
-    background-color: #ffb3b3 !important;
+    background-color: #fee3ea !important;
 }
 .report-table table th span {
     writing-mode: vertical-rl;
