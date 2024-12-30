@@ -20,7 +20,7 @@
                                 <th>
                                     <div class="word-selection-box">
                                         <div class="word-controls">
-                                            <button type="button" class="met">U</button>
+                                            <button type="button">U</button>
                                             <button type="button" class="target">T</button>
                                             <button type="button" class="almost">A</button>
                                             <button type="button" class="met">M</button>
