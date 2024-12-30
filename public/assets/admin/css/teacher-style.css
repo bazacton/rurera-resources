@@ -4203,3 +4203,9 @@ Accuracy Score Card Style End
     background-color: #dc3545; /* Red */
     color: white;
 }
+.progress-table .table tr th {
+    background-color: #fff;
+    border: 3px solid #fff;
+    box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
+    border-top-color: #fdb6b6;
+}
