@@ -13,6 +13,93 @@
     <div class="section-body">
         <div class="row">
             <div class="col-12">
+                <div class="progress-table">
+                    <table class="table table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <th>Objective</th>
+                                <th>Azeneth Armando</th>
+                                <th>Amelie Austin</th>
+                                <th>Eloise Chapman</th>
+                                <th>Aaliyah Collier</th>
+                                <th>Bailey Cook</th>
+                                <th>Jasmine Doyle</th>
+                                <th>Jorginho Gaspar</th>
+                                <th>Jayden Glover</th>
+                                <th>Prabodh Iyer</th>
+                                <th>Avinash Jain</th>
+                                <th>Ansel Jobin</th>
+                                <th>Makary Kaczmarek</th>
+                                <th>Kajal Korrapati</th>
+                                <th>Rishi Korrapati</th>
+                                <th>Bùi Thị Lự Chị</th>
+                                <th>Yue Wan Lü</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Count NAHT KPI Count 2.1.a.1 Count in tens from any number, forward and backward</td>
+                                <td class="met">M</td>
+                                <td class="almost">A</td>
+                                <td class="target">T</td>
+                                <td class="met">M</td>
+                                <td class="almost">A</td>
+                                <td class="met">M</td>
+                                <td class="met">M</td>
+                                <td class="almost">A</td>
+                                <td class="met">M</td>
+                                <td class="almost">A</td>
+                                <td class="met">M</td>
+                                <td class="almost">A</td>
+                                <td class="met">M</td>
+                                <td class="almost">A</td>
+                                <td class="met">M</td>
+                                <td class="almost">A</td>
+                            </tr>
+                            <tr>
+                                <td>Count NAHT KPI Count 2.1.a.2 Identify ten more or ten less than any given number</td>
+                                <td class="almost">A</td>
+                                <td class="exceeding" style="background-color: #17a2b8; color: white;">E</td>
+                                <td class="target">T</td>
+                                <td class="met">M</td>
+                                <td class="met">M</td>
+                                <td class="met">M</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                                <td class="met">M</td>
+                                <td class="target">T</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                            </tr>
+                            <tr>
+                                <td>Order and compare NAHT KPI Order and compare 2.1.c.1 Compare and order numbers from 0 up to 100; use &lt;, &gt; and = signs</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                                <td class="met">M</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                                <td class="met">M</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                                <td class="almost">A</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-12">
                 <div class="section-header">
                     <h1>My Collections</h1>
                     <div class="section-header-breadcrumb">
