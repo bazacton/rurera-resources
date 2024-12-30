@@ -4256,6 +4256,7 @@ Accuracy Score Card Style End
     font-size: 12px;
     color: #6c757d;
     font-weight: 400;
+    text-align: right !important;
 }
 .word-selection-box button {
     border: 0;
