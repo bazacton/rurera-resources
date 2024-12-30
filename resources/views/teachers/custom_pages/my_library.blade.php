@@ -28,7 +28,7 @@
                             <tr>
                                 <th style="background-color: #ffb3b3"><span>A: Hazardous Earthy 30</span></th>
                                 <th style="background-color: #ffb3b3"><span>B: Development Dynamics/34</span></th>
-                                <th style="background-color: #ffb3b3"><span>C: Challenges of an Urbanising World/50</span></th>
+                                <th style="background-color: #ffb3b3"><span>C: Development Dynamics/34</span></th>
                                 <th style="background-color: #ffb3b3"><span>D: Hazardous Earthy 30</span></th>
                                 <th style="background-color: #ffe4b2"><span>The UK Economy</span></th>
                                 <th style="background-color: #ffe4b2"><span>Coastal Changes</span></th>
@@ -43,7 +43,7 @@
 
                                 <th style="background-color: #c7f4e0"><span>A: Hazardous Earthy 30</span></th>
                                 <th style="background-color: #c7f4e0"><span>B: Development Dynamics/34</span></th>
-                                <th style="background-color: #c7f4e0"><span>C: Challenges of an Urbanising World/50</span></th>
+                                <th style="background-color: #c7f4e0"><span>C: Development Dynamics/34</span></th>
                                 <th style="background-color: #c7f4e0"><span>D: Hazardous Earthy 30</span></th>
                                 <th style="background-color: #c7f4e0"><span>Overall Marks</span></th>
                                 <th style="background-color: #c7f4e0"><span>Paste Paper Grade</span></th>
