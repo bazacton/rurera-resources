@@ -4220,7 +4220,7 @@ Accuracy Score Card Style End
     border: 2px solid rgba(0,0,0,0.1);
     border-top: 3px solid #fdb6b6;
     font-size: 12px;
-    width: 50px;
+    min-width: 80px;
     padding: 10px !important;
 }
 .progress-table .table tr th .icon-box {
@@ -4229,7 +4229,7 @@ Accuracy Score Card Style End
 }
 .progress-table .table tr td {
     border: 2px solid rgba(0,0,0,0.1);
-    width: 50px;
+    min-width: 80px;
     padding: 10px !important;
 }
 .progress-table .icon-box i {
