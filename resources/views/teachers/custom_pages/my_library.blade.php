@@ -39,22 +39,22 @@
                         <tbody>
                             <tr>
                                 <td>Count NAHT KPI Count 2.1.a.1 Count in tens from any number, forward and backward</td>
-                                <td class="met">M</td>
-                                <td class="almost">A</td>
-                                <td class="target">T</td>
-                                <td class="met">M</td>
-                                <td class="almost">A</td>
-                                <td class="met">M</td>
-                                <td class="met">M</td>
-                                <td class="almost">A</td>
-                                <td class="met">M</td>
-                                <td class="almost">A</td>
-                                <td class="met">M</td>
-                                <td class="almost">A</td>
-                                <td class="met">M</td>
-                                <td class="almost">A</td>
-                                <td class="met">M</td>
-                                <td class="almost">A</td>
+                                <td class="met"><span>Met</span>M</td>
+                                <td class="almost"><span>Almost</span>A</td>
+                                <td class="target"><span>Target</span>T</td>
+                                <td class="met"><span>Met</span>M</td>
+                                <td class="almost"><span>Almost</span>A</td>
+                                <td class="met"><span>Met</span>M</td>
+                                <td class="met"><span>Met</span>M</td>
+                                <td class="almost"><span>Almost</span>A</td>
+                                <td class="met"><span>Met</span>M</td>
+                                <td class="almost"><span>Almost</span>A</td>
+                                <td class="met"><span>Met</span>M</td>
+                                <td class="almost"><span>Almost</span>A</td>
+                                <td class="met"><span>Met</span>M</td>
+                                <td class="almost"><span>Almost</span>A</td>
+                                <td class="met"><span>Met</span>M</td>
+                                <td class="almost"><span>Almost</span>A</td>
                             </tr>
                             <tr>
                                 <td>Count NAHT KPI Count 2.1.a.2 Identify ten more or ten less than any given number</td>
