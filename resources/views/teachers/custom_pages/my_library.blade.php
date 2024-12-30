@@ -32,8 +32,8 @@
                                     <th style="background-color: #fff">First Name</th>
                                     <th style="background-color: #fff">Last Name</th>
 
-                                    <th style="background-color: #fee3ea" id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
-                                        <span>A: Hazardous Earthy 30</span>
+                                    <th style="background-color: #fee3ea">
+                                        <span id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">A: Hazardous Earthy 30</span>
                                     </th>
                                     <th style="background-color: #fee3ea"><span>B: Development Dynamics/34</span></th>
                                     <th style="background-color: #fcd9df"><span>C: Development Dynamics/34</span></th>
