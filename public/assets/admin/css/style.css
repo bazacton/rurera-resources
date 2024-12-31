@@ -505,11 +505,13 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 
 /* Assignments New Table Style Start */
 .assignments-table .card {border: 1px solid #ddd;border-radius: 5px;overflow: hidden;}
+
 .assignments-table .card h6 {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .assignments-table .card h6 .icon-box {
     padding: 2px;
     height: 20px;
@@ -531,10 +533,21 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     padding: 15px 10px;
     min-height: auto;
 }
-.assignments-table table thead tr th, .assignments-table tbody tr td {
+.assignments-table table.table thead tr th, 
+.assignments-table table.table tbody tr td {
     height: auto !important;
-    padding: 10px 10px !important;
     line-height: normal;
+    background-color: inherit;
+    vertical-align: top !important;
+    border: 0;
+    font-size: 14px;
+    text-align: left !important;
+}
+.assignments-table table.table thead tr th {
+    padding: 10px 10px 5px 10px !important;
+}
+.assignments-table table.table tbody tr td {
+    padding: 0 0 10px !important;
 }
 /* Assignments New Table Style End */
 
