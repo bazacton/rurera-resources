@@ -60,8 +60,8 @@
                                     <td>16 Sep 2024 05:00</td>
                                     <td class="text-success font-weight-bold">Active</td>
                                     <td>
-                                        <a href="#" class="mr-2"><img src="https://via.placeholder.com/20" alt="Edit Icon"></a>
-                                        <a href="#"><img src="https://via.placeholder.com/20" alt="View Icon"></a>
+                                        <a href="#" class="mr-2"><img src="assets/default/svgs/edit-simple.svg" alt="Edit Icon"></a>
+                                        <a href="#"><img src="assets/default/svgs/preview.svg" alt="View Icon"></a>
                                     </td>
                                 </tr>
                             </tbody>
