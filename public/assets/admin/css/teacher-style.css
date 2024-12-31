@@ -3206,11 +3206,12 @@ span.field-separated span:after {
     background-color: #f5f5f5;
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 15px 15px 0;
+    padding: 0;
 }
 .featured-list-sidebar-inner {
     overflow-y: hidden;
-    height: 300px;
+    height: 400px;
+    padding: 0 15px;
 }
 .listing-card {
     position: relative;
@@ -3269,6 +3270,7 @@ span.field-separated span:after {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 0 15px;
+    padding: 15px 15px 0;
 }
 .featured-filters h6 {
     margin: 0;
