@@ -4369,13 +4369,13 @@ Accuracy Score Card Style End
     min-width: 200px;
     text-transform: uppercase;
 }
-.report-table table tr:nth-child(2) th:nth-child(2) {
+/* .report-table table tr:nth-child(2) th:nth-child(2) {
     border: 0;
 }
 .report-table table tr:nth-child(2) th:nth-child(1) {
     border-right: 0;
     border-top: 0;
-}
+} */
 .report-table table th img {
     height: 15px;
     width: 15px;
