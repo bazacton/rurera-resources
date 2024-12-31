@@ -1700,6 +1700,10 @@ Tailer Hub Style Start
     margin: 0 auto;
     padding-top: 35px;
     background-color: #f7f7f7;
+    padding-left: 30px;
+}
+.admin_teacher_role:has(.main-sidebar) .main-content {
+    padding-left: 280px;
 }
 .admin_teacher_role .question-layout.row {
     margin-left: 0;
