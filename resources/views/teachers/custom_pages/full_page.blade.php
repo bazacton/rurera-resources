@@ -138,8 +138,6 @@
                                 <td>13</td>
                                 <td>14</td>
                                 <td>15</td>
-                                <td>16</td>
-                                <td>17</td>
                             </tr>
                             <tr>
                                 <td>Tracy</td>
@@ -178,8 +176,6 @@
                                 <td>13</td>
                                 <td>14</td>
                                 <td>15</td>
-                                <td>16</td>
-                                <td>17</td>
                             </tr>
                         </tbody>
                     </table>
