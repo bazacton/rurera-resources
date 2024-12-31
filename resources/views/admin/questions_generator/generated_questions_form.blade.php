@@ -107,8 +107,9 @@ $rand_id = rand(999,99999);
 .question-types-colors {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 10px 30px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 .question-types-colors span {
     font-size: 16px;
