@@ -37,13 +37,13 @@
                                 <th colspan="7" style="background-color: #fdedde">Summary</th>
                             </tr>
                             <tr>
-                                <th style="background-color: #fff">First Name</th>
-                                <th style="background-color: #fff">Last Name</th>
+                                <th style="background-color: #fff">Columns</th>
+                                <th style="background-color: #fff">Columns</th>
 
                                 <th style="background-color: #fee3ea">
                                     <span id="collapse1" class="collapse show" aria-labelledby="heading1">A: Hazardous Earthy 30</span>
                                 </th>
-                                <th style="background-color: #fee3ea"><span>B: Development Dynamics/34</span></th>
+                                <th style="background-color: #fee3ea"><span>Tracy Beaker</span></th>
                                 <th style="background-color: #fcd9df"><span>C: Development Dynamics/34</span></th>
                                 <th style="background-color: #fcd9df"><span>D: Hazardous Earthy 30</span></th>
 
@@ -102,8 +102,8 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Tracy</td>
-                                <td>Beaker</td>
+                                <td>3</td>
+                                <td>2</td>
                                 <td>17</td>
                                 <td>17</td>
                                 <td>15</td>
@@ -142,8 +142,8 @@
                                 <td>17</td>
                             </tr>
                             <tr>
-                                <td>Tracy</td>
-                                <td>Beaker</td>
+                                <td>2</td>
+                                <td>3</td>
                                 <td>17</td>
                                 <td>17</td>
                                 <td>15</td>
