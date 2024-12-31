@@ -4487,6 +4487,10 @@ Accuracy Score Card Style End
 }
 
 /* parent child table style start */
+.parent-child-table table {
+    width: 100%;
+    margin-bottom: 0;
+}
 .parent-child-table th, .parent-child-table td {
     border: 1px solid #ddd;
     padding: 8px;
