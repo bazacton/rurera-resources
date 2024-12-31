@@ -4509,7 +4509,9 @@ Accuracy Score Card Style End
 .parent-child-table .child-level-2 td {
     background-color: #fefefe;
 }
-.parent-child-table .child-level-3 td {
+.parent-child-table .child-level-3 td:first-child {
     padding-left: 60px;
+}
+.parent-child-table .child-level-3 td {
     background-color: #ffffff;
 }
