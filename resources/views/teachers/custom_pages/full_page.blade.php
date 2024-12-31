@@ -14,6 +14,56 @@
     <div class="section-body">
         <div class="row">
             <div class="col-12">
+                <div class="parent-child-table mb-30">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Description</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Parent 1</td>
+                                <td>Main Parent Item</td>
+                                <td>10</td>
+                            </tr>
+                            <tr class="child-level-1">
+                                <td>Child 1.1</td>
+                                <td>First-level child of Parent 1</td>
+                                <td>4</td>
+                            </tr>
+                            <tr class="child-level-2">
+                                <td>Child 1.1.1</td>
+                                <td>Second-level child of Child 1.1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr class="child-level-3">
+                                <td>Child 1.1.1.1</td>
+                                <td>Third-level child of Child 1.1.1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Parent 2</td>
+                                <td>Main Parent Item</td>
+                                <td>8</td>
+                            </tr>
+                            <tr class="child-level-1">
+                                <td>Child 2.1</td>
+                                <td>First-level child of Parent 2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr class="child-level-2">
+                                <td>Child 2.1.1</td>
+                                <td>Second-level child of Child 2.1</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-12">
                 <div class="report-table">
                     <table>
                         <thead>
