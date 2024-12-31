@@ -4337,10 +4337,9 @@ Accuracy Score Card Style End
 
 /* Report Table Style Start */
 .report-table {
-    padding: 0 0 10px;
+    padding: 25px;
     overflow: hidden;
     overflow-x: auto;
-    margin-bottom: 30px;
 }
 .report-table table {
     width: 100%;
@@ -4373,8 +4372,8 @@ Accuracy Score Card Style End
 .report-table table th img {
     height: 15px;
     width: 15px;
+    filter: invert(30%) sepia(8%) saturate(8%) hue-rotate(322deg) brightness(102%) contrast(87%);
     margin-right: 5px;
-    filter: invert(51%) sepia(0%) saturate(31%) hue-rotate(219deg) brightness(105%) contrast(88%);
 }
 .report-table table .column-group {
     background-color: #fde9ef;
