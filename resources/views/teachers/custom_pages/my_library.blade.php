@@ -451,7 +451,7 @@
                             </div>
                             <div class="quiz-layout-edit-options">
                                 <div class="edit-options-right">
-                                <div class="edit-options-controls">
+                                    <div class="edit-options-controls">
                                         <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="" data-trigger="hover" data-original-title="Move up"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
                                         <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="" data-trigger="hover" data-original-title="Move down"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
 
@@ -598,33 +598,60 @@
                             </div>
                             <div class="quiz-layout-edit-options">
                                 <div class="edit-options-right">
-                                    <div class="edit-options-controls">
-                                        <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Move up"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
-                                        <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Move down"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
+                                <div class="edit-options-controls">
+                                        <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="" data-trigger="hover" data-original-title="Move up"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
+                                        <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="" data-trigger="hover" data-original-title="Move down"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
 
-                                        <button type="button" class="show-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Show/Hide question">
-                                            <img class="show-img" src="/assets/default/svgs/eye-show.svg" alt="">
-                                            <img class="hide-img" src="/assets/default/svgs/eye-off.svg" alt="">
+                                        <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="" data-trigger="hover" data-original-title="Duplicate question"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
+                                        <button type="button" class="edit-btn" data-toggle="modal" data-target="#blank-canvas-modal">
+                                            <span class="icon-box" data-toggle="tooltip" data-placement="top" title="" data-trigger="hover" data-original-title="Edit"><img src="/assets/default/svgs/clapperboard-edit.svg" alt=""></span>
                                         </button>
-
-                                        <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Duplicate question"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
-                                        <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Trash"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
-                                        <button type="button" class="crown-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Crown"><img src="/assets/default/svgs/crown-btn.svg" alt=""></button>
-                                        <button type="button" class="stars-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stars"><img src="/assets/default/svgs/stars-new.svg" alt=""></button>
-                                        <button type="button" class="add-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add question"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
+                                        <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="" data-trigger="hover" data-original-title="Trash"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
                                         <div class="dropdown">
-                                            <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fas fa-ellipsis-v"></i>
+                                            <button class="btn btn-link dropdown-toggle stars-btn" type="button" title="Stars" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-box" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="" data-original-title="Ask Ai"><img src="/assets/default/svgs/ai.svg" alt=""></span>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Shorten</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Rewrite</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> More fun</a>
-                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> More formal</a>
-                                                <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Sprinkle fairy dust</a>
-                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Change voice</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Fix spelling</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Custom prompt...</a>
+                                                <ul>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Add a similar question</a>
+                                                        <ul class="sub-dropdown">
+                                                            <li><a href="#">1</a></li>
+                                                            <li><a href="#">3</a></li>
+                                                            <li><a href="#">5</a></li>
+                                                            <li><a href="#">10</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Turn into</a>
+                                                        <ul class="sub-dropdown">
+                                                            <li><a href="#">Drag Drop</a></li>
+                                                            <li><a href="#">Dropdown</a></li>
+                                                            <li><a href="#">Fill-in-blank</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Add explanation</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Fix grammatical and spelling</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Replace with a similar question</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Reduce options</a>
+                                                        <ul class="sub-dropdown">
+                                                            <li><a href="#">4</a></li>
+                                                            <li><a href="#">3</a></li>
+                                                            <li><a href="#">2</a></li>
+                                                            <li><a href="#">1</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Write&nbsp;custom&nbsp;prompt</a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -767,33 +794,60 @@
                             </div>
                             <div class="quiz-layout-edit-options">
                                 <div class="edit-options-right">
-                                    <div class="edit-options-controls">
-                                        <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Move up"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
-                                        <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Move down"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
+                                <div class="edit-options-controls">
+                                        <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="" data-trigger="hover" data-original-title="Move up"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
+                                        <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="" data-trigger="hover" data-original-title="Move down"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
 
-                                        <button type="button" class="show-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Show/Hide question">
-                                            <img class="show-img" src="/assets/default/svgs/eye-show.svg" alt="">
-                                            <img class="hide-img" src="/assets/default/svgs/eye-off.svg" alt="">
+                                        <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="" data-trigger="hover" data-original-title="Duplicate question"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
+                                        <button type="button" class="edit-btn" data-toggle="modal" data-target="#blank-canvas-modal">
+                                            <span class="icon-box" data-toggle="tooltip" data-placement="top" title="" data-trigger="hover" data-original-title="Edit"><img src="/assets/default/svgs/clapperboard-edit.svg" alt=""></span>
                                         </button>
-
-                                        <button type="button" class="copy-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Duplicate question"><img src="/assets/default/svgs/copy-btn.svg" alt=""></button>
-                                        <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Trash"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
-                                        <button type="button" class="crown-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Crown"><img src="/assets/default/svgs/crown-btn.svg" alt=""></button>
-                                        <button type="button" class="stars-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stars"><img src="/assets/default/svgs/stars-new.svg" alt=""></button>
-                                        <button type="button" class="add-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add question"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
+                                        <button type="button" class="delete-btn" data-toggle="tooltip" data-placement="top" title="" data-trigger="hover" data-original-title="Trash"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
                                         <div class="dropdown">
-                                            <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fas fa-ellipsis-v"></i>
+                                            <button class="btn btn-link dropdown-toggle stars-btn" type="button" title="Stars" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="icon-box" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="" data-original-title="Ask Ai"><img src="/assets/default/svgs/ai.svg" alt=""></span>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Shorten</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Rewrite</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-lock"></i> More fun</a>
-                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> More formal</a>
-                                                <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash"></i> Sprinkle fairy dust</a>
-                                                <a class="dropdown-item" href="#"><i class="fa fa-archive"></i> Change voice</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Fix spelling</a>
-                                                <a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Custom prompt...</a>
+                                                <ul>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Add a similar question</a>
+                                                        <ul class="sub-dropdown">
+                                                            <li><a href="#">1</a></li>
+                                                            <li><a href="#">3</a></li>
+                                                            <li><a href="#">5</a></li>
+                                                            <li><a href="#">10</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Turn into</a>
+                                                        <ul class="sub-dropdown">
+                                                            <li><a href="#">Drag Drop</a></li>
+                                                            <li><a href="#">Dropdown</a></li>
+                                                            <li><a href="#">Fill-in-blank</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Add explanation</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Fix grammatical and spelling</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Replace with a similar question</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Reduce options</a>
+                                                        <ul class="sub-dropdown">
+                                                            <li><a href="#">4</a></li>
+                                                            <li><a href="#">3</a></li>
+                                                            <li><a href="#">2</a></li>
+                                                            <li><a href="#">1</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Write&nbsp;custom&nbsp;prompt</a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
