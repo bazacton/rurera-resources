@@ -2332,14 +2332,12 @@ function _rureraform_properties_prepare(_object) {
             handles: "s"
         });
 
-        jQuery(".rureraform-properties-options-container").sortable({
-            items: ".rureraform-properties-options-item",
-            forcePlaceholderSize: true,
-            dropOnEmpty: true,
-            placeholder: "rureraform-properties-options-item-placeholder",
-            handle: ".rureraform-properties-options-item-handler"
+        jQuery(".rureraform-properties-options-box").sortable({
+            handle: ".sortable-handle", // Add a specific handle for sorting
+            items: ".sortable-item",   // Define sortable items
+            tolerance: "pointer",      // Better handling for mobile
+            cancel: "input,textarea",  // Prevent sorting on form elements
         });
-        jQuery(".rureraform-properties-options-item").disableSelection();
     }
     /*if (properties.hasOwnProperty("options2")) {
         jQuery(".rureraform-properties-options-box1").resizable({
