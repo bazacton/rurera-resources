@@ -2336,6 +2336,8 @@ function _rureraform_properties_prepare(_object) {
             items: ".rureraform-properties-options-item",
             forcePlaceholderSize: true,
             dropOnEmpty: true,
+            tolerance: "pointer",
+            cancel: "input,textarea",
             placeholder: "rureraform-properties-options-item-placeholder",
             handle: ".rureraform-properties-options-item-handler"
         });
