@@ -218,7 +218,7 @@
                                 <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                     <div class="img-holder">
                                         <figure>
-                                            <img src="/assets/default/img/games/maths-magic-adventure.jpg" height="270" width="480" alt="">
+                                            <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                         </figure>
                                     </div>
                                     <div class="text-holder">
@@ -240,7 +240,7 @@
                                 <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                     <div class="img-holder">
                                         <figure>
-                                            <img src="/assets/default/img/games/grammar-genius-challenge.jpg" height="270" width="480" alt="">
+                                            <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                         </figure>
                                     </div>
                                     <div class="text-holder">
@@ -262,7 +262,7 @@
                                 <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                     <div class="img-holder">
                                         <figure>
-                                            <img src="/assets/default/img/games/history-trivia-quest.jpg" height="270" width="480" alt="">
+                                            <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                         </figure>
                                     </div>
                                     <div class="text-holder">
@@ -284,7 +284,7 @@
                                 <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                     <div class="img-holder">
                                         <figure>
-                                            <img src="/assets/default/img/games/artistic-impressions-puzzle.jpg" height="270" width="480" alt="">
+                                            <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                         </figure>
                                     </div>
                                     <div class="text-holder">
@@ -306,7 +306,7 @@
                                 <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                     <div class="img-holder">
                                         <figure>
-                                            <img src="/assets/default/img/games/science-exploration-mission.jpg" height="270" width="480" alt="">
+                                            <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                         </figure>
                                     </div>
                                     <div class="text-holder">
@@ -328,7 +328,7 @@
                                 <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                     <div class="img-holder">
                                         <figure>
-                                            <img src="/assets/default/img/games/geography-world-challenges.jpg" height="270" width="480" alt="">
+                                            <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                         </figure>
                                     </div>
                                     <div class="text-holder">
@@ -350,7 +350,7 @@
                                 <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                     <div class="img-holder">
                                         <figure>
-                                            <img src="/assets/default/img/games/robotics-mind-challenges.jpg" height="270" width="480" alt="">
+                                            <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                         </figure>
                                     </div>
                                     <div class="text-holder">
@@ -372,7 +372,7 @@
                                 <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                     <div class="img-holder">
                                         <figure>
-                                            <img src="/assets/default/img/games/animal-kingdom-quiz.jpg" height="270" width="480" alt="">
+                                            <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                         </figure>
                                     </div>
                                     <div class="text-holder">
@@ -394,7 +394,7 @@
                                 <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                     <div class="img-holder">
                                         <figure>
-                                            <img src="/assets/default/img/games/physics-wonders-challenges.jpg" height="270" width="480" alt="">
+                                            <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                         </figure>
                                     </div>
                                     <div class="text-holder">
@@ -416,7 +416,7 @@
                                 <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                     <div class="img-holder">
                                         <figure>
-                                            <img src="/assets/default/img/games/chemistry-formula-puzzles.jpg" height="270" width="480" alt="">
+                                            <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                         </figure>
                                     </div>
                                     <div class="text-holder">
