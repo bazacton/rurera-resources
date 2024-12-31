@@ -1279,6 +1279,7 @@ Lms Responsive Style Start
     .spells-table-inner .table {min-width: 900px;}
     .rurera-in-row.alphabet-list-style .form-field {width: 100%; }
     .edit-questions-difficulty-tabs .admin-rurera-tabs .nav-link {padding: 10px 15px;}
+    .similarity-content-block .tab-content > .tab-pane.question-details-tab-data > .col-12 {padding: 0;}
 }
 @media screen and (max-width: 575px) {
     .spell-question-area .spells-quiz-info {margin: 0 0 30px;}
