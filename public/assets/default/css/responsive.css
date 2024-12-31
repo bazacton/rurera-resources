@@ -1280,6 +1280,9 @@ Lms Responsive Style Start
     .rurera-in-row.alphabet-list-style .form-field {width: 100%; }
     .edit-questions-difficulty-tabs .admin-rurera-tabs .nav-link {padding: 10px 15px;}
     .similarity-content-block .tab-content > .tab-pane.question-details-tab-data > .col-12 {padding: 0;}
+    .edit-questions-tabs .nav .nav-link.truefalse_quiz_questions, 
+    .edit-questions-tabs .nav .nav-link.active.truefalse_quiz_questions,
+    .inner_dropdown_questions, .inner_dropdown_questions.active {margin-left: 0; margin-right: 0;}
 }
 @media screen and (max-width: 575px) {
     .spell-question-area .spells-quiz-info {margin: 0 0 30px;}
