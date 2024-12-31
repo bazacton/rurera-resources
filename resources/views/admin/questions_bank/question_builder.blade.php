@@ -11,7 +11,7 @@ $rand_id = rand(999,99999);
 <section class="section form-class upload-path-rurera" data-question_save_type="update_builder_question" data-location="{{isset( $questionObj->id )? $questionObj->id : 0}}">
     <div class="section-body lms-quiz-create">
 		<input type="hidden" name="question_id" value="{{isset( $questionObj->id )? $questionObj->id : 0 }}">
-		<div class="row">
+		<div>
 									
 									
 									
