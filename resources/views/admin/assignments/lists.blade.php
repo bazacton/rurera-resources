@@ -32,7 +32,44 @@
                 </div>
             </div>
         </div>
-
+        <div class="col-12">
+            <div class="assignments-table">
+                <div class="card">
+                    <div class="card-header bg-light">
+                        <h6 class="mb-0"><span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt=""></span> Issue in Testing</h6>
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table mb-0">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Type</th>
+                                    <th>Total Questions</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Test</td>
+                                    <td>Vocabulary</td>
+                                    <td>0</td>
+                                    <td>11 Sep 2024 05:00</td>
+                                    <td>16 Sep 2024 05:00</td>
+                                    <td class="text-success font-weight-bold">Active</td>
+                                    <td>
+                                        <a href="#" class="mr-2"><img src="https://via.placeholder.com/20" alt="Edit Icon"></a>
+                                        <a href="#"><img src="https://via.placeholder.com/20" alt="View Icon"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="section-body">
