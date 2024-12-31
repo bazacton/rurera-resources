@@ -233,7 +233,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 col-lg-8">
                 <div class="progress-table">
                     <table class="table table-bordered text-center">
                         <thead>
