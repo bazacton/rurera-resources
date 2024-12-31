@@ -4485,3 +4485,25 @@ Accuracy Score Card Style End
     border-left: 2px solid #ccc;
     transform: translate(-50%, -50%);
 }
+
+/* parent child table style start */
+.parent-child-table th, .parent-child-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.parent-child-table th {
+    background-color: #f4f4f4;
+}
+.parent-child-table .child-level-1 td {
+    padding-left: 20px;
+    background-color: #f9f9f9;
+}
+.parent-child-table .child-level-2 td {
+    padding-left: 40px;
+    background-color: #fefefe;
+}
+.parent-child-table .child-level-3 td {
+    padding-left: 60px;
+    background-color: #ffffff;
+}
