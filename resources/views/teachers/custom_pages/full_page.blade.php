@@ -31,8 +31,8 @@
                                         <b>2: UK Geographical Issues</b>
                                     </div>
                                 </th>
-                                <th colspan="6" class="report-title" style="background-color: #c7f4e0">3: People & Environment</th>
-                                <th colspan="1" style="background-color: #e0f6fe">Topic S..</th>
+                                <th colspan="6" class="report-title" style="background-color: #c7f4e0">3: People &amp; Environment</th>
+                                <th colspan="2" style="background-color: #e0f6fe">Topic S..</th>
                                 <th colspan="7" style="background-color: #f9cfb3">Summary</th>
                                 <th colspan="7" style="background-color: #fdedde">Summary</th>
                             </tr>
@@ -74,7 +74,7 @@
                                 <th style="background-color: #dbeefd"><span>Overall Marks</span></th>
                                 <th style="background-color: #dbeefd"><span>Paste Paper Grade</span></th>
 
-                                <th colspan="2" style="background-color: #feddc5">
+                                <th colspan="1" style="background-color: #feddc5">
                                     <strong>M..</strong>
                                     <em>Paste Paper Grade</em>
                                 </th>
