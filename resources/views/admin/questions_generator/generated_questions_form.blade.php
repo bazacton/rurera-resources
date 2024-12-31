@@ -189,6 +189,9 @@ $rand_id = rand(999,99999);
 <script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
 <script src="/assets/vendors/summernote/summernote-table-headers.js"></script>
 <script src="/assets/default/vendors/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+<script src="/assets/default/js/admin/jquery.ui.touch-punch.min.js"></script>
+
+
 
 <script>
     // Function to generate a random alphanumeric ID (6 characters: mix of letters and numbers)
