@@ -4196,15 +4196,15 @@ Accuracy Score Card Style End
 **************************************/
 
 .met {
-    background-color: #5bb85d; /* Green */
+    background-color: #5bb85d;
     color: white;
 }
 .almost {
-    background-color: #eeae4f; /* Yellow */
+    background-color: #eeae4f;
     color: white;
 }
 .target {
-    background-color: #d9544f; /* Red */
+    background-color: #d9544f;
     color: white;
 }
 .exceeding {
