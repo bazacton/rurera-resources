@@ -41,7 +41,7 @@
                                 <th style="background-color: #fff">Columns</th>
 
                                 <th style="background-color: #fee3ea">
-                                    <span id="collapse1" class="collapse show" aria-labelledby="heading1">A: Hazardous Earthy 30</span>
+                                    <span id="collapse1" class="collapse show" aria-labelledby="heading1">Tracy Beaker</span>
                                 </th>
                                 <th style="background-color: #fee3ea"><span>Tracy Beaker</span></th>
                                 <th style="background-color: #fcd9df"><span>C: Development Dynamics/34</span></th>
