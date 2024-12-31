@@ -116,6 +116,7 @@ $rand_id = rand(999,99999);
     position: relative;
     display: inline-flex;
     align-items: center;
+    margin-left: 0;
 }
 .question-types-colors span:before {
     content: "";
