@@ -1,4 +1,4 @@
-@extends('admin.layouts_full.app')
+@extends('admin.layouts.app_full')
 
 @push('libraries_top')
 
