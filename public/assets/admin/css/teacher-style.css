@@ -4195,6 +4195,7 @@ Accuracy Score Card Style Start
 Accuracy Score Card Style End
 **************************************/
 
+/* Teacher progress-table Style Start */
 .met {
     background-color: #5bb85d;
     color: white;
@@ -4338,6 +4339,7 @@ Accuracy Score Card Style End
     max-height: 22px;
     filter: invert(64%) sepia(0%) saturate(0%) hue-rotate(239deg) brightness(96%) contrast(84%);
 }
+/* Teacher progress-table Style End */
 
 /* Report Table Style Start */
 .report-table {
