@@ -50,7 +50,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="child-level-1">
                                 <td class="has-met">
                                     <div class="text-box">
                                         <button type="button" class="collaps-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-right.svg" alt=""></span></button>
@@ -74,7 +74,7 @@
                                 <td class="met"><span>Met</span>M</td>
                                 <td class="almost"><span>Almost</span>A</td>
                             </tr>
-                            <tr>
+                            <tr class="child-level-2">
                                 <td class="has-met">
                                     <div class="text-box">
                                         <button type="button" class="collaps-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-right.svg" alt=""></span></button>
@@ -98,7 +98,7 @@
                                 <td class="almost">A</td>
                                 <td class="almost">A</td>
                             </tr>
-                            <tr>
+                            <tr class="child-level-3">
                                 <td class="has-met">
                                     <div class="text-box">
                                         <button type="button" class="collaps-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-right.svg" alt=""></span></button>
