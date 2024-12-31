@@ -141,44 +141,44 @@
                                 <td>17</td>
                             </tr>
                             <tr>
-                                <td>Lyra</td>
-                                <td>Belacqua</td>
-                                <td>18</td>
-                                <td>18</td>
-                                <td>16</td>
+                                <td>Tracy</td>
+                                <td>Beaker</td>
+                                <td>17</td>
+                                <td>17</td>
+                                <td>15</td>
                                 <td class="highlight-blue">5</td>
-                                <td>22</td>
-                                <td>16</td>
-                                <td>13</td>
-                                <td>8</td>
-                                <td>8</td>
-                                <td>18</td>
-                                <td>18</td>
+                                <td>25</td>
+                                <td>12</td>
+                                <td>15</td>
+                                <td>9</td>
+                                <td>9</td>
+                                <td>17</td>
+                                <td>17</td>
                                 <td class="highlight-green">7</td>
-                                <td>51</td>
-                                <td>87</td>
-                                <td>5</td>
+                                <td>50</td>
+                                <td>64</td>
+                                <td>4</td>
                                 <td>3.80</td>
-                            </tr>
-                            <tr>
-                                <td>Charlie</td>
-                                <td>Bucket</td>
-                                <td>15</td>
-                                <td>15</td>
-                                <td>14</td>
-                                <td class="highlight-red">3</td>
-                                <td>20</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
                                 <td>11</td>
                                 <td>12</td>
-                                <td>7</td>
-                                <td>6</td>
-                                <td>16</td>
+                                <td>13</td>
                                 <td>14</td>
-                                <td class="highlight-red">4</td>
-                                <td>38</td>
-                                <td>53</td>
-                                <td>3</td>
-                                <td>3.03</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
                             </tr>
                         </tbody>
                     </table>
