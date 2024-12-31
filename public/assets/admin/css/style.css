@@ -551,6 +551,8 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 }
 .assignments-table table.table tbody tr td {
     padding: 0 10px 10px !important;
+    font-weight: bold;
+    color: #333;
 }
 /* Assignments New Table Style End */
 
