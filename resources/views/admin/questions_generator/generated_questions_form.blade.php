@@ -11,6 +11,7 @@ $rand_id = rand(999,99999);
 <link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver={{$rand_id}}">
 <link href="/assets/default/css/jquery-ui/jquery-ui.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
+<link rel="stylesheet" href="/assets/default/css/responsive.css?ver={{$rand_id}}">
 <script src="/assets/default/js/admin/jquery.min.js"></script>
 <script src="/assets/default/js/admin/sticky-sidebar.js?ver={{$rand_id}}"></script>
 <link rel="stylesheet" href="/assets/default/vendors/bootstrap-tagsinput/bootstrap-tagsinput.min.css">
