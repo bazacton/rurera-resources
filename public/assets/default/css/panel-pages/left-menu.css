@@ -1155,7 +1155,7 @@ Right SideBar Style Start
     border-bottom: 1px solid #e6e6e6;
     padding: 15px;
 }
-.progress-course-card img {
+.progress-course-card .img-holder img {
     width: 60px;
     height: 60px;
     border-radius: 8px;
