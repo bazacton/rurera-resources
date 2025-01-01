@@ -988,6 +988,22 @@ Right SideBar Style Start
 .quests-list.quests-learning li:has(.quests-control) .quests-item {width: 65%; gap: 20px; }
 .quests-learning .quests-item .item-text .levels-progress.horizontal .progress-box {border-radius: 3px;}
 .panel-content-holder .quests-item:has(.progress-icon.circle) .item-text .levels-progress.horizontal {width: calc(100% - 50px);}
+.stages-items a {
+    height: 20px;
+    width: 5px;
+    display: inline-block;
+    background-color: #a0c28b;
+    border-radius: 50px;
+}
+.stages-items {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.stages-items .locked_nugget {
+    opacity: 0.5;
+}
 /* Quests-List Style End */
 /* Prep-Plan Style Start */
 .prep-plan {
