@@ -179,30 +179,61 @@
                     <div class="progress-learning-inner">
                         <div class="progress-course-card">
                             <div class="course-info">
-                                <img src="https://via.placeholder.com/60" alt="Course">
-                                <div>
-                                    <strong>Mastering UI/UX Design: A Guide</strong>
-                                    <span>5 Materials</span>
+                                <div class="img-holder">
+                                    <img src="https://via.placeholder.com/60" alt="Course">
                                 </div>
+                                <div class="course-title">
+                                    <p class="course-lable"><span class="icon-box"></span> Course</p>
+                                    <h3>Mastering UI/UX Design: A Guide</h3>
+                                </div>
+                                <ul class="course-info-list">
+                                    <li>
+                                        <span>Content</span>
+                                        <strong>5 Materials</strong>
+                                    </li>
+                                    <li>
+                                        <span>Complation</span>
+                                        <strong>-</strong>
+                                    </li>
+                                    <li>
+                                        <span>Deadline</span>
+                                        <strong><img src="/assets/default/svgs/clock.svg" alt="clock"> 1 Day</strong>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="status">
-                                <p class="deadline">1 Day</p>
-                                <button class="button">Start</button>
-                            </div>
+                            <button class="button">Start</button>
                         </div>
                         <div class="progress-course-card">
                             <div class="course-info">
-                                <img src="https://via.placeholder.com/60" alt="Course">
-                                <div>
-                                    <strong>Creating Engaging Learning Journeys</strong>
-                                    <span>12 Materials</span>
+                                <div class="img-holder">
+                                    <img src="https://via.placeholder.com/60" alt="Course">
                                 </div>
+                                <div class="course-title">
+                                    <p class="course-lable"><span class="icon-box"></span> Course</p>
+                                    <h3>Creating Engaging Learning Journeys</h3>
+                                </div>
+                                <ul class="course-info-list">
+                                    <li>
+                                        <span>Content</span>
+                                        <strong>5 Materials</strong>
+                                    </li>
+                                    <li>
+                                        <span>Complation</span>
+                                        <div class="progress-box">
+                                            <div class="circle_percent" data-percent="35">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>Deadline</span>
+                                        <strong><img src="/assets/default/svgs/clock.svg" alt="clock"> 1 Day</strong>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="status">
-                                <p class="completion">Completion: <span style="color: #28a745;">64%</span></p>
-                                <p class="deadline">12 hrs</p>
-                                <button class="button secondary">Continue</button>
-                            </div>
+                            <button class="button secondary">Continue</button>
                         </div>
                     </div>
                 </div>
