@@ -46,8 +46,10 @@
                     <div class="card-body">
                         <h5 class="card-title">English</h5>
                         <p class="text-danger">Needs Practice</p>
-                        <h3 class="text-primary">20</h3>
-                        <p class="text-muted">/130</p>
+                        <div class="subject-info">
+                            <strong class="text-primary">20</strong>
+                            <span class="text-muted">/130</span>
+                        </div>
                         <div class="progress">
                             <div class="progress-bar bg-primary" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
@@ -60,8 +62,10 @@
                     <div class="card-body">
                         <h5 class="card-title">Verbal Reasoning</h5>
                         <p class="text-danger">Needs Practice</p>
-                        <h3 class="text-primary">1412</h3>
-                        <p class="text-muted">/4000</p>
+                        <div class="subject-info">
+                            <strong class="text-primary">1412</strong>
+                            <span class="text-muted">/4000</span>
+                        </div>
                         <div class="progress">
                             <div class="progress-bar bg-primary" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
@@ -74,8 +78,10 @@
                     <div class="card-body">
                         <h5 class="card-title">Non-Verbal Reasoning</h5>
                         <p class="text-danger">Needs Practice</p>
-                        <h3 class="text-primary">935</h3>
-                        <p class="text-muted">/4000</p>
+                        <div class="subject-info">
+                            <strong class="text-primary">935</strong>
+                            <span class="text-muted">/4000</span>
+                        </div>
                         <div class="progress">
                             <div class="progress-bar bg-primary" role="progressbar" style="width: 23%" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
@@ -88,8 +94,10 @@
                     <div class="card-body">
                         <h5 class="card-title">Science</h5>
                         <p class="text-danger">Needs Practice</p>
-                        <h3 class="text-primary">1757</h3>
-                        <p class="text-muted">/4000</p>
+                        <div class="subject-info">
+                            <strong class="text-primary">1757</strong>
+                            <span class="text-muted">/4000</span>
+                        </div>
                         <div class="progress">
                             <div class="progress-bar bg-primary" role="progressbar" style="width: 44%" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
