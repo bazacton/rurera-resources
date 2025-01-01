@@ -179,9 +179,6 @@
                     <div class="progress-learning-inner">
                         <div class="progress-course-card">
                             <div class="course-info">
-                                <div class="img-holder">
-                                    <img src="/assets/default/img/ecommerce-img.webp" alt="Course">
-                                </div>
                                 <div class="course-title">
                                     <p class="course-lable"><span class="icon-box"><img src="/assets/default/svgs/multi-choice.svg" alt=""></span> Course</p>
                                     <h3>Mastering UI/UX Design: A Guide</h3>
@@ -205,9 +202,6 @@
                         </div>
                         <div class="progress-course-card">
                             <div class="course-info">
-                                <div class="img-holder">
-                                    <img src="/assets/default/img/ecommerce-img.webp" alt="Course">
-                                </div>
                                 <div class="course-title">
                                     <p class="course-lable"><span class="icon-box"><img src="/assets/default/svgs/multi-choice.svg" alt=""></span> Course</p>
                                     <h3>Creating Engaging Learning Journeys</h3>
