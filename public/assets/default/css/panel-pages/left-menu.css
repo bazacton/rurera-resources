@@ -1196,6 +1196,7 @@ Right SideBar Style Start
 }
 .course-info .img-holder {
     width: 15%;
+    margin-right: 15px;
 }
 .course-info .course-title {
     width: 35%;
