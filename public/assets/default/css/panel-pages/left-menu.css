@@ -1249,9 +1249,12 @@ ul.course-info-list li > strong {
     padding-top: 10px;
     font-size: 14px;
 }
-ul.course-info-list li  img {
-    height: 16px;
-    width: 16px;
+ul.course-info-list li > strong img {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    filter: invert(46%) sepia(17%) saturate(212%) hue-rotate(166deg) brightness(95%) contrast(97%);
 }
 ul.course-info-list li .progress-box {
     padding-top: 6px;
