@@ -104,7 +104,7 @@
                             <span class="icon-box"><img src="/assets/default/svgs/filesheet.svg" alt="" title="Helpsheet"></span>
                             English
                         </div>
-                        <div class="subject-progress text-right">
+                        <div class="plan-progress text-right">
                             <i>&#10003;</i>
                             <strong>5<em>/5</em></strong> 
                             <span>islands done this week</span>
