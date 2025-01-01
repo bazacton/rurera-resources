@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <section class="assignments-table count-number-wrapp mt-30">
+    <section class="assignments-table count-number-wrapp mt-30" style="display:none">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12">
@@ -498,7 +498,7 @@
 
     <div class="row">
         <div class="col-12 col-lg-12 mt-35">
-            <div class="bg-white noticeboard rounded-sm panel-shadow py-10 py-md-20 px-15 px-md-30">
+            <div class="bg-white noticeboard rounded-sm panel-shadow py-10 py-md-20 px-15 px-md-30" style="display:none">
                 <h3 class="font-16 text-dark-blue font-weight-bold">{{ trans('panel.noticeboard') }}</h3>
 
                 @foreach($authUser->getUnreadNoticeboards() as $getUnreadNoticeboard)
@@ -547,7 +547,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-3 col-md-4 mt-35">
+                <div class="col-12 col-lg-3 col-md-4 mt-35" style="display:none">
                     <div class="assignments-table count-number-wrapp">
                         <ul class="count-number-boxes count-number-verticle row">
                             <li class="count-number-card col-12">
