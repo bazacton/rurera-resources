@@ -100,8 +100,15 @@
                     <h4 class="text-center">Sarah's Exam Prep Plan</h4>
                     <div class="plan-item red">
                         <div class="progress-bar" style="width: 100%;"></div>
-                        <span>English</span>
-                        <span class="plan-progress">5/5 islands done this week</span>
+                        <div class="subject-title">
+                            <span class="icon-box"><img src="/assets/default/svgs/filesheet.svg" alt="" title="Helpsheet"></span>
+                            English
+                        </div>
+                        <div class="subject-progress text-right">
+                            <i>&#10003;</i>
+                            <strong>5<em>/5</em></strong> 
+                            <span>islands done this week</span>
+                        </div>
                     </div>
                     <div class="plan-item green">
                         <div class="progress-bar" style="width: 50%;"></div>
