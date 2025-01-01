@@ -183,7 +183,7 @@
                                     <img src="https://via.placeholder.com/60" alt="Course">
                                 </div>
                                 <div class="course-title">
-                                    <p class="course-lable"><span class="icon-box"></span> Course</p>
+                                    <p class="course-lable"><span class="icon-box"><img src="/assets/default/svgs/multi-choice.svg" alt=""></span> Course</p>
                                     <h3>Mastering UI/UX Design: A Guide</h3>
                                 </div>
                                 <ul class="course-info-list">
@@ -209,7 +209,7 @@
                                     <img src="https://via.placeholder.com/60" alt="Course">
                                 </div>
                                 <div class="course-title">
-                                    <p class="course-lable"><span class="icon-box"></span> Course</p>
+                                    <p class="course-lable"><span class="icon-box"><img src="/assets/default/svgs/multi-choice.svg" alt=""></span> Course</p>
                                     <h3>Creating Engaging Learning Journeys</h3>
                                 </div>
                                 <ul class="course-info-list">
