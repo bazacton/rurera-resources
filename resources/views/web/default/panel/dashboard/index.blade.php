@@ -301,7 +301,7 @@
 			$no_of_practices = isset( $questUserData['no_of_practices'] )? $questUserData['no_of_practices'] : 0;
 			
 			
-			$quest_icon = '/assets/default/img/types/'.$questObj->quest_topic_type.'.svg';
+			$quest_icon = '/assets/default/img/types/'.$questObj->quest_topic_type.'.png';
 			$quest_icon = ( $questObj->quest_icon != '')? $questObj->quest_icon : $quest_icon;
 			@endphp
 			@php $link = isset( $questObj->learningJourney->subject->slug )? $questObj->learningJourney->subject->slug : ''; @endphp
@@ -358,7 +358,7 @@
 					@if( $questObj->quest_topic_type == 'learning_journey')
     					@while( $remaining_attempts >= 1)
     						<a href="/learning-journey/{{$link}}" class="locked_nugget">
-    							<img src="{{$quest_icon}}" class="disabled-style">
+    							<span class="learning-journey-item"></span>
     						</a>
     						@php $remaining_attempts--; @endphp
     					@endwhile
