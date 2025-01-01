@@ -1193,15 +1193,6 @@ Right SideBar Style Start
     width: 12px;
     filter: invert(100%) sepia(23%) saturate(290%) hue-rotate(203deg) brightness(112%) contrast(100%);
 }
-.course-lable .icon-box {
-    height: 18px;
-    width: 18px;
-    display: inline-flex;
-    background-color: var(--blue);
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
-}
 .course-info .img-holder {
     width: 15%;
     margin-right: 15px;
