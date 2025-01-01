@@ -1051,6 +1051,8 @@ Right SideBar Style Start
     font-size: 14px;
     font-weight: normal;
     color: #333;
+    position: relative;
+    z-index: 1;
 }
 .plan-progress i {
     height: 15px;
