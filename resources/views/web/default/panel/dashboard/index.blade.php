@@ -97,7 +97,7 @@
             <!-- Prep Plan -->
             <div class="col-12">
                 <div class="prep-plan">
-                    <h4 class="mb-10">Sarah's Exam Prep Plan</h4>
+                    <h3 class="mb-10">Sarah's Exam Prep Plan</h3>
                     <div class="plan-item red">
                         <div class="progress-bar" style="width: 100%;"></div>
                         <div class="plan-inner">
