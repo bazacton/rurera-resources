@@ -1085,6 +1085,9 @@ Right SideBar Style Start
 .plan-item.red .plan-progress {
     color: #fff;
 }
+.plan-item.red .plan-progress {
+    color: #fff;
+}
 /* Prep-Plan Style End */
 /*Sidebar Student-list Style Start*/
 .parent-panel .sidebar-students-list .card {gap: 15px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; height: 335px; overflow: hidden;}
