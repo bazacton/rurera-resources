@@ -997,6 +997,7 @@ Right SideBar Style Start
     margin: 0 0 30px;
 }
 .plan-item {
+    background-color: #fff;
     position: relative;
     margin-bottom: 15px;
     padding: 15px 45px 15px 15px;
