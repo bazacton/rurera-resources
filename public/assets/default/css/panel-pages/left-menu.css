@@ -1182,6 +1182,47 @@ Right SideBar Style Start
     justify-content: center;
     border-radius: 3px;
 }
+.course-lable img {
+    height: 12px;
+    width: 12px;
+}
+.course-lable .icon-box {
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    background-color: var(--blue);
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+ul.course-info-list {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+ul.course-info-list li {
+    max-width: 29%;
+    flex: 0 0 29%;
+    line-height: normal;
+}
+ul.course-info-list li > span {
+    display: block;
+    line-height: normal;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6c757d;
+}
+ul.course-info-list li > strong {
+    display: block;
+    line-height: normal;
+    padding-top: 5px;
+    font-size: 14px;
+}
+ul.course-info-list li  img {
+    height: 16px;
+    width: 16px;
+}
 /* Circle Progress style start */
 .circle_percent {font-size:60px; width:1em; height:1em; position: relative; background: #eee; border-radius:50%; overflow:hidden; display:inline-block;}
 .circle_inner {position: absolute; left: 0; top: 0; width: 1em; height: 1em; clip:rect(0 1em 1em .5em);}
