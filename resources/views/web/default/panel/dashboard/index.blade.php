@@ -328,7 +328,7 @@
 </div>
 				
 @endif
-<div class="dashboard">
+<div class="dashboard" style="display:none">
     @if(auth()->check() && (auth()->user()->isUser()))
     <div class="row ">
         <div class="col-12 col-lg-12 mt-35">
@@ -440,7 +440,7 @@
     @endif
 
    <div class="row">
-        <div class="col-12 col-lg-3 mt-35">
+        <div class="col-12 col-lg-3 mt-35" style="display:none">
             <a href="@if($authUser->isUser()) /panel/webinars/purchases @else /panel/meetings/requests @endif" class="dashboard-stats rounded-sm panel-shadow p-10 p-md-20 d-flex align-items-center">
                 <div class="stat-icon requests">
                     <img src="/assets/default/img/icons/request.svg" alt="">
@@ -462,7 +462,7 @@
             </a>
         </div>
 
-        <div class="col-12 col-lg-3 mt-35">
+        <div class="col-12 col-lg-3 mt-35" style="display:none">
             <a href="/panel/support" class="dashboard-stats rounded-sm panel-shadow p-10 p-md-20 d-flex align-items-center">
                 <div class="stat-icon support-messages">
                     <img src="/assets/default/img/icons/support.svg" alt="">
@@ -531,7 +531,7 @@
     </div>
     </section>
     <section style="padding: 0 0 60px;">
-        <div class="container">
+        <div class="container" style="display:none">
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-8 mt-35">
                     <div class="bg-white monthly-sales-card rounded-sm panel-shadow py-10 py-md-20 px-15 px-md-30">
