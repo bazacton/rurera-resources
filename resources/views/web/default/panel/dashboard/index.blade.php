@@ -31,11 +31,12 @@
             trans('panel.view_all_events') }}</a>
 
         <div class="dashboard-banner">
+		
             <img src="{{ getPageBackgroundSettings('dashboard') }}" alt="" class="img-cover">
         </div>
     </div>
 
-    <section class="assignments-table count-number-wrapp mt-30" style="display:none">
+    <section class="assignments-table count-number-wrapp mt-30 rurera-hide">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12">
@@ -252,10 +253,11 @@
 </div>
 
 <div class="quests-list quests-learning ">
+	
+	@if( $LearningJourneys->count() > 0)
 	<div class="section-title text-left mb-30">
 		<h2 class="font-22">Learning Journeys</h2>
 	</div>
-	@if( $LearningJourneys->count() > 0)
 	<ul>
 		@foreach( $LearningJourneys as $learningJourneyObj)
 			@php $level_stages = $learningJourneyObj->learningJourneyStages->pluck('id')->toArray();
@@ -328,7 +330,7 @@
 </div>
 				
 @endif
-<div class="dashboard" style="display:none">
+<div class="dashboard rurera-hide">
     @if(auth()->check() && (auth()->user()->isUser()))
     <div class="row ">
         <div class="col-12 col-lg-12 mt-35">
@@ -440,7 +442,7 @@
     @endif
 
    <div class="row">
-        <div class="col-12 col-lg-3 mt-35" style="display:none">
+        <div class="col-12 col-lg-3 mt-35">
             <a href="@if($authUser->isUser()) /panel/webinars/purchases @else /panel/meetings/requests @endif" class="dashboard-stats rounded-sm panel-shadow p-10 p-md-20 d-flex align-items-center">
                 <div class="stat-icon requests">
                     <img src="/assets/default/img/icons/request.svg" alt="">
@@ -462,7 +464,7 @@
             </a>
         </div>
 
-        <div class="col-12 col-lg-3 mt-35" style="display:none">
+        <div class="col-12 col-lg-3 mt-35">
             <a href="/panel/support" class="dashboard-stats rounded-sm panel-shadow p-10 p-md-20 d-flex align-items-center">
                 <div class="stat-icon support-messages">
                     <img src="/assets/default/img/icons/support.svg" alt="">
@@ -498,7 +500,7 @@
 
     <div class="row">
         <div class="col-12 col-lg-12 mt-35">
-            <div class="bg-white noticeboard rounded-sm panel-shadow py-10 py-md-20 px-15 px-md-30" style="display:none">
+            <div class="bg-white noticeboard rounded-sm panel-shadow py-10 py-md-20 px-15 px-md-30">
                 <h3 class="font-16 text-dark-blue font-weight-bold">{{ trans('panel.noticeboard') }}</h3>
 
                 @foreach($authUser->getUnreadNoticeboards() as $getUnreadNoticeboard)
@@ -531,7 +533,7 @@
     </div>
     </section>
     <section style="padding: 0 0 60px;">
-        <div class="container" style="display:none">
+        <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-8 mt-35">
                     <div class="bg-white monthly-sales-card rounded-sm panel-shadow py-10 py-md-20 px-15 px-md-30">
@@ -547,7 +549,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-3 col-md-4 mt-35" style="display:none">
+                <div class="col-12 col-lg-3 col-md-4 mt-35">
                     <div class="assignments-table count-number-wrapp">
                         <ul class="count-number-boxes count-number-verticle row">
                             <li class="count-number-card col-12">
