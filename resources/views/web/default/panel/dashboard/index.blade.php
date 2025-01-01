@@ -9,7 +9,7 @@
 @section('content')
 <section class="">
 
-    <div class="bg-white dashboard-banner-container position-relative px-15 px-ld-35 py-10 panel-shadow panel-border rounded-sm">
+    <div class="bg-white dashboard-banner-container position-relative px-15 px-ld-35 py-10 panel-shadow panel-border rounded-sm mb-30">
         <h2 class="font-30 text-primary line-height-1">
             <span class="d-block">{{ trans('panel.hi') }} {{ $authUser->get_full_name() }},</span>
             <span class="font-16 font-weight-bold">{{ trans('panel.have_event',['count' => !empty($unReadNotifications) ? count($unReadNotifications) : 0]) }}</span>
