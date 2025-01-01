@@ -100,50 +100,58 @@
                     <h4 class="text-center">Sarah's Exam Prep Plan</h4>
                     <div class="plan-item red">
                         <div class="progress-bar" style="width: 100%;"></div>
-                        <div class="subject-title">
-                            <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="" title="book-bookmark"></span>
-                            English
-                        </div>
-                        <div class="plan-progress text-right">
-                            <i>&#10003;</i>
-                            <strong>5<em>/5</em></strong> 
-                            <span>islands done this week</span>
+                        <div class="plan-inner">
+                            <div class="subject-title">
+                                <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="" title="book-bookmark"></span>
+                                English
+                            </div>
+                            <div class="plan-progress text-right">
+                                <i>&#10003;</i>
+                                <strong>5<em>/5</em></strong> 
+                                <span>islands done this week</span>
+                            </div>
                         </div>
                         <span class="arrow">&#10140;</span>
                     </div>
                     <div class="plan-item green">
                         <div class="progress-bar" style="width: 50%;"></div>
-                        <div class="subject-title">
-                            <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="" title="book-bookmark"></span>
-                            VR
-                        </div>
-                        <div class="plan-progress text-right">
-                            <strong>1<em>/2</em></strong> 
-                            <span>islands done this week</span>
+                        <div class="plan-inner">
+                            <div class="subject-title">
+                                <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="" title="book-bookmark"></span>
+                                VR
+                            </div>
+                            <div class="plan-progress text-right">
+                                <strong>1<em>/2</em></strong> 
+                                <span>islands done this week</span>
+                            </div>
                         </div>
                         <span class="arrow">&#10140;</span>
                     </div>
                     <div class="plan-item blue">
                         <div class="progress-bar" style="width: 25%;"></div>
-                        <div class="subject-title">
-                            <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="" title="book-bookmark"></span>
-                            Maths
-                        </div>
-                        <div class="plan-progress">
-                            <strong>1<em>/4</em></strong> 
-                            <span>islands done this week</span>
+                        <div class="plan-inner">
+                            <div class="subject-title">
+                                <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="" title="book-bookmark"></span>
+                                Maths
+                            </div>
+                            <div class="plan-progress">
+                                <strong>1<em>/4</em></strong> 
+                                <span>islands done this week</span>
+                            </div>
                         </div>
                         <span class="arrow">&#10140;</span>
                     </div>
                     <div class="plan-item yellow">
                         <div class="progress-bar" style="width: 25%;"></div>
-                        <div class="subject-title">
-                            <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="" title="book-bookmark"></span>
-                            NVR
-                        </div>
-                        <div class="plan-progress">
-                            <strong>1<em>/4</em></strong> 
-                            <span>islands done this week</span>
+                        <div class="plan-inner">
+                            <div class="subject-title">
+                                <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="" title="book-bookmark"></span>
+                                NVR
+                            </div>
+                            <div class="plan-progress">
+                                <strong>1<em>/4</em></strong> 
+                                <span>islands done this week</span>
+                            </div>
                         </div>
                         <span class="arrow">&#10140;</span>
                     </div>
