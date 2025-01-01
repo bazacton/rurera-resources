@@ -1111,7 +1111,7 @@ Right SideBar Style Start
 
 /* Subjects Progress Style Start */
 .subject-card {
-    min-height: 155px;
+    min-height: 165px;
 }
 .subject-card .card-body {
     display: flex;
