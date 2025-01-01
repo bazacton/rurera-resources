@@ -169,6 +169,44 @@
                     </div>
                 </div>
             </div>
+            <!-- progress-learning -->
+            <div class="col-12">
+                <div class="progress-learning">
+                    <div class="progress-learning-header">
+                        <h2>In progress learning content</h2>
+                        <a href="#">View all</a>
+                    </div>
+
+                    <div class="progress-course-card">
+                        <div class="course-info">
+                            <img src="https://via.placeholder.com/60" alt="Course">
+                            <div>
+                                <strong>Mastering UI/UX Design: A Guide</strong>
+                                <span>5 Materials</span>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <p class="deadline">1 Day</p>
+                            <button class="button">Start</button>
+                        </div>
+                    </div>
+
+                    <div class="progress-course-card">
+                        <div class="course-info">
+                            <img src="https://via.placeholder.com/60" alt="Course">
+                            <div>
+                                <strong>Creating Engaging Learning Journeys</strong>
+                                <span>12 Materials</span>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <p class="completion">Completion: <span style="color: #28a745;">64%</span></p>
+                            <p class="deadline">12 hrs</p>
+                            <button class="button secondary">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <section class="assignments-table count-number-wrapp mt-30 rurera-hide">
