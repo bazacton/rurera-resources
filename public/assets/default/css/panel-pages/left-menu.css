@@ -1108,6 +1108,21 @@ Right SideBar Style Start
     color: #fff;
 }
 /* Prep-Plan Style End */
+
+/* Subjects Progress Style Start */
+.subject-card {
+    min-height: 155px;
+}
+.subject-card .card-body {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+}
+.subject-card .progress {
+    margin-top: auto;
+}
+/* Subjects Progress Style End */
+
 /*Sidebar Student-list Style Start*/
 .parent-panel .sidebar-students-list .card {gap: 15px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; height: 335px; overflow: hidden;}
 .sidebar-students-list .card:has(.item-control) {
