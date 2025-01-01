@@ -1165,9 +1165,6 @@ Right SideBar Style Start
     display: flex;
     flex-grow: 1;
 }
-.course-info div {
-    margin-left: 10px;
-}
 .course-info h3 {
     margin: 0 0 5px;
     font-size: 1rem;
