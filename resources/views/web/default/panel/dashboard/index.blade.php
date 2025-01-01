@@ -375,7 +375,7 @@
 	@endif
 </div>
 
-<div class="quests-list quests-learning ">
+<div class="quests-list quests-learning rurera-hide">
 	
 	@if( $LearningJourneys->count() > 0)
 	<div class="section-title text-left mb-30">
