@@ -186,7 +186,7 @@
                                 <ul class="course-info-list">
                                     <li>
                                         <span>Content</span>
-                                        <strong>5 Materials</strong>
+                                        <strong><img src="/assets/default/svgs/document-file.svg" alt="document file"> 5 Materials</strong>
                                     </li>
                                     <li>
                                         <span>Complation</span>
@@ -209,7 +209,7 @@
                                 <ul class="course-info-list">
                                     <li>
                                         <span>Content</span>
-                                        <strong>5 Materials</strong>
+                                        <strong><img src="/assets/default/svgs/document-file.svg" alt="document file"> 5 Materials</strong>
                                     </li>
                                     <li>
                                         <span>Complation</span>
