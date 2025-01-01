@@ -1237,6 +1237,15 @@ ul.course-info-list li  img {
     height: 16px;
     width: 16px;
 }
+.progress-course-card .button {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+}
 /* Circle Progress style start */
 .circle_percent {font-size:30px; width:1em; height:1em; position: relative; background: #eee; border-radius:50%; overflow:hidden; display:inline-block;}
 .circle_inner {position: absolute; left: 0; top: 0; width: 1em; height: 1em; clip:rect(0 1em 1em .5em);}
