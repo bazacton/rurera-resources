@@ -223,7 +223,7 @@
                                     </li>
                                     <li>
                                         <span>Deadline</span>
-                                        <strong><img src="/assets/default/svgs/clock.svg" alt="clock"> 1 Day</strong>
+                                        <strong class="over-time"><img src="/assets/default/svgs/clock.svg" alt="clock"> 1 Day</strong>
                                     </li>
                                 </ul>
                             </div>
