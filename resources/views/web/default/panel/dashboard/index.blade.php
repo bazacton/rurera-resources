@@ -101,7 +101,7 @@
                     <div class="plan-item red">
                         <div class="progress-bar" style="width: 100%;"></div>
                         <div class="subject-title">
-                            <span class="icon-box"><img src="/assets/default/svgs/filesheet.svg" alt="" title="Helpsheet"></span>
+                            <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="" title="book-bookmark"></span>
                             English
                         </div>
                         <div class="plan-progress text-right">
