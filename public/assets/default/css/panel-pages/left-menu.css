@@ -1091,6 +1091,8 @@ Right SideBar Style Start
     font-size: 14px;
     font-weight: 400;
     color: var(--blue);
+    top: 50%;
+    transform: translateY(-50%);
 }
 .plan-item.red .arrow {
     color: #fff;
