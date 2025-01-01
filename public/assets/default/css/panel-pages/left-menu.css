@@ -1248,6 +1248,7 @@ ul.course-info-list li > strong {
     line-height: normal;
     padding-top: 10px;
     font-size: 14px;
+    font-weight: 500;
 }
 ul.course-info-list li > strong img {
     width: 14px;
@@ -1294,6 +1295,9 @@ ul.course-info-list li .progress-box .circle_percent:before {
     content: "";
     z-index: 1;
     transform: translate(-50%, -50%);
+}
+.percent_text {
+    font-weight: 500;
 }
 .circle-orange .round_per,
 .circle-orange.percent_more:after {
