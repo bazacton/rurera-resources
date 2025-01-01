@@ -1197,13 +1197,12 @@ Right SideBar Style Start
 }
 ul.course-info-list {
     display: inline-flex;
-    align-items: center;
     flex-wrap: wrap;
     gap: 15px;
 }
 ul.course-info-list li {
-    max-width: 29%;
-    flex: 0 0 29%;
+    max-width: 28%;
+    flex: 0 0 28%;
     line-height: normal;
 }
 ul.course-info-list li > span {
