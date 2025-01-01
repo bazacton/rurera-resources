@@ -1230,7 +1230,7 @@ ul.course-info-list li > span {
 ul.course-info-list li > strong {
     display: block;
     line-height: normal;
-    padding-top: 5px;
+    padding-top: 10px;
     font-size: 14px;
 }
 ul.course-info-list li  img {
