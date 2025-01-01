@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class="container mt-15">
-        <h3>Subjects Progress<a href="#" class="text-primary">How we calculated?</a></h3>
+        <h3 class="mb-10">Subjects Progress<a href="#" class="text-primary">How we calculated?</a></h3>
         <div class="row">
             <!-- English Card -->
             <div class="col-md-6 col-lg-3 mb-4">
