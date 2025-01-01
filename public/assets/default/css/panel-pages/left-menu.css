@@ -1169,6 +1169,19 @@ Right SideBar Style Start
     margin: 0 0 5px;
     font-size: 1rem;
 }
+.course-lable img {
+    height: 12px;
+    width: 12px;
+}
+.course-lable .icon-box {
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    background-color: var(--blue);
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
 /* Circle Progress style start */
 .circle_percent {font-size:60px; width:1em; height:1em; position: relative; background: #eee; border-radius:50%; overflow:hidden; display:inline-block;}
 .circle_inner {position: absolute; left: 0; top: 0; width: 1em; height: 1em; clip:rect(0 1em 1em .5em);}
