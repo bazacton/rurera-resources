@@ -214,7 +214,7 @@
                                     <li>
                                         <span>Complation</span>
                                         <div class="progress-box">
-                                            <div class="circle_percent" data-percent="35">
+                                            <div class="circle_percent circle-green" data-percent="35">
                                                 <div class="circle_inner">
                                                     <div class="round_per"></div>
                                                 </div>
