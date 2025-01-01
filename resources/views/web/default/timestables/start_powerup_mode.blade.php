@@ -272,6 +272,7 @@ if( $duration_type == 'total_practice'){
 @push('scripts_bottom')
 
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="/assets/default/js/question-layout.js?var={{$rand_id}}"></script>
 <script>
     //init_question_functions();
 
