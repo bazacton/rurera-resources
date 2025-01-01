@@ -1047,6 +1047,39 @@ Right SideBar Style Start
     height: 20px;
     filter: invert(100%) sepia(23%) saturate(290%) hue-rotate(203deg) brightness(112%) contrast(100%);
 }
+.plan-progress {
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+}
+.plan-progress i {
+    height: 15px;
+    width: 15px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    font-size: 10px;
+    font-style: normal;
+    display: inline-block;
+    text-align: center;
+    line-height: 14px;
+    vertical-align: middle;
+    font-weight: 600;
+    margin: 0 6px 0 0;
+}
+.plan-progress strong {
+    font-size: 22px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 16px;
+}
+.plan-progress em {
+    font-style: normal;
+    font-size: 14px;
+}
+.plan-progress span {
+    font-size: 12px;
+    display: block;
+}
 /* Prep-Plan Style End */
 /*Sidebar Student-list Style Start*/
 .parent-panel .sidebar-students-list .card {gap: 15px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; height: 335px; overflow: hidden;}
