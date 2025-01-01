@@ -94,6 +94,32 @@
                     </div>
                 </div>
             </div>
+            <!-- Prep Plan -->
+            <div class="col-12">
+                <div class="prep-plan">
+                    <h4 class="text-center">Sarah's Exam Prep Plan</h4>
+                    <div class="plan-item red">
+                        <div class="progress-bar" style="width: 100%;"></div>
+                        <span>English</span>
+                        <span class="plan-progress">5/5 islands done this week</span>
+                    </div>
+                    <div class="plan-item green">
+                        <div class="progress-bar" style="width: 50%;"></div>
+                        <span>VR</span>
+                        <span class="plan-progress">1/2 islands done this week</span>
+                    </div>
+                    <div class="plan-item blue">
+                        <div class="progress-bar" style="width: 25%;"></div>
+                        <span>Maths</span>
+                        <span class="plan-progress">1/4 islands done this week</span>
+                    </div>
+                    <div class="plan-item yellow">
+                        <div class="progress-bar" style="width: 25%;"></div>
+                        <span>NVR</span>
+                        <span class="plan-progress">1/4 islands done this week</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <section class="assignments-table count-number-wrapp mt-30 rurera-hide">
