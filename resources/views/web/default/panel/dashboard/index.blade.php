@@ -131,7 +131,7 @@
                         <div class="progress-bar" style="width: 25%;"></div>
                         <div class="plan-inner">
                             <div class="subject-title">
-                                <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="" title="book-bookmark"></span>
+                                <span class="icon-box"><img src="/assets/default/svgs/mathematical.svg" alt="" title="book-bookmark"></span>
                                 Maths
                             </div>
                             <div class="plan-progress">
