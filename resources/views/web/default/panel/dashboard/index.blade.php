@@ -35,7 +35,67 @@
             <img src="{{ getPageBackgroundSettings('dashboard') }}" alt="" class="img-cover">
         </div>
     </div>
-
+    <div class="container mt-15">
+        <h3>Subjects Progress<a href="#" class="text-primary">How we calculated?</a></h3>
+        <div class="row">
+            <!-- English Card -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">English</h5>
+                        <p class="text-danger">Needs Practice</p>
+                        <h3 class="text-primary">20</h3>
+                        <p class="text-muted">/130</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Verbal Reasoning Card -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Verbal Reasoning</h5>
+                        <p class="text-danger">Needs Practice</p>
+                        <h3 class="text-primary">1412</h3>
+                        <p class="text-muted">/4000</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Non-Verbal Reasoning Card -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Non-Verbal Reasoning</h5>
+                        <p class="text-danger">Needs Practice</p>
+                        <h3 class="text-primary">935</h3>
+                        <p class="text-muted">/4000</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 23%" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Science Card -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Science</h5>
+                        <p class="text-danger">Needs Practice</p>
+                        <h3 class="text-primary">1757</h3>
+                        <p class="text-muted">/4000</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 44%" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="assignments-table count-number-wrapp mt-30 rurera-hide">
         <div class="container">
             <div class="row">
