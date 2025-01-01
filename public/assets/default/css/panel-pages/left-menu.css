@@ -1240,6 +1240,12 @@ ul.course-info-list li  img {
 ul.course-info-list li .progress-box {
     padding-top: 6px;
 }
+ul.course-info-list li > .over-time {
+    color: #ff4d4f;
+}
+ul.course-info-list li > .over-time img {
+    filter: invert(42%) sepia(22%) saturate(7404%) hue-rotate(332deg) brightness(112%) contrast(102%);
+}
 .progress-course-card .button {
     border: 1px solid #ddd;
     background-color: #fff;
