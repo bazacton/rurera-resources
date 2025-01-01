@@ -1015,6 +1015,12 @@ Right SideBar Style Start
     min-width: 300px;
     align-items: end;
 }
+.plan-item.red .plan-inner {
+    width: 100%;
+}
+.plan-item.green .plan-progress {
+    color: #fff;
+}
 .plan-item .progress-bar {
     position: absolute;
     top: 0;
