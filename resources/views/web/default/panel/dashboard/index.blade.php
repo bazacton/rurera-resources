@@ -39,8 +39,8 @@
         <h3>Subjects Progress<a href="#" class="text-primary">How we calculated?</a></h3>
         <div class="row">
             <!-- English Card -->
-            <div class="col-md-12 col-lg-12 mb-4">
-                <div class="card text-center subject-card">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">English</h5>
                         <p class="text-danger">Needs Practice</p>
@@ -53,8 +53,8 @@
                 </div>
             </div>
             <!-- Verbal Reasoning Card -->
-            <div class="col-md-12 col-lg-12 mb-4">
-                <div class="card text-center subject-card">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">Verbal Reasoning</h5>
                         <p class="text-danger">Needs Practice</p>
@@ -67,8 +67,8 @@
                 </div>
             </div>
             <!-- Non-Verbal Reasoning Card -->
-            <div class="col-md-12 col-lg-12 mb-4">
-                <div class="card text-center subject-card">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">Non-Verbal Reasoning</h5>
                         <p class="text-danger">Needs Practice</p>
@@ -81,8 +81,8 @@
                 </div>
             </div>
             <!-- Science Card -->
-            <div class="col-md-12 col-lg-12 mb-4">
-                <div class="card text-center subject-card">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">Science</h5>
                         <p class="text-danger">Needs Practice</p>
