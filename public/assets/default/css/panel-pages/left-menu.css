@@ -1195,10 +1195,17 @@ Right SideBar Style Start
     justify-content: center;
     border-radius: 3px;
 }
+.course-info .img-holder {
+    width: 15%;
+}
+.course-info .course-title {
+    width: 35%;
+}
 ul.course-info-list {
     display: inline-flex;
     flex-wrap: wrap;
     gap: 15px;
+    width: 50%;
 }
 ul.course-info-list li {
     max-width: 28%;
