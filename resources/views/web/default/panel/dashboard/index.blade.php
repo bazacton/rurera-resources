@@ -46,7 +46,7 @@
                     <div class="card-body">
                         <h5 class="card-title">English</h5>
                         <p class="text-danger">Needs Practice</p>
-                        <div class="subject-info">
+                        <div class="subject-info mb-10">
                             <strong class="text-primary">20</strong>
                             <span class="text-muted">/130</span>
                         </div>
@@ -62,7 +62,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Verbal Reasoning</h5>
                         <p class="text-danger">Needs Practice</p>
-                        <div class="subject-info">
+                        <div class="subject-info mb-10">
                             <strong class="text-primary">1412</strong>
                             <span class="text-muted">/4000</span>
                         </div>
@@ -78,7 +78,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Non-Verbal Reasoning</h5>
                         <p class="text-danger">Needs Practice</p>
-                        <div class="subject-info">
+                        <div class="subject-info mb-10">
                             <strong class="text-primary">935</strong>
                             <span class="text-muted">/4000</span>
                         </div>
@@ -94,7 +94,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Science</h5>
                         <p class="text-danger">Needs Practice</p>
-                        <div class="subject-info">
+                        <div class="subject-info mb-10">
                             <strong class="text-primary">1757</strong>
                             <span class="text-muted">/4000</span>
                         </div>
