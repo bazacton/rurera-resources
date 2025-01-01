@@ -975,6 +975,10 @@ Right SideBar Style Start
 .levels-progress .progress-numbers {color: #cacaca; font-weight: 600;}
 .quests-item .icon-box {margin-right: 10px; text-align: center; width: 52px;}
 .quests-item .icon-box img {max-width: 100%;}
+.quests-item .icon-box svg {
+    width: 52px;
+    height: 52px;
+}
 .quests-item .progress-numbers {position: absolute; top: 0; left: 50%; transform: translateX(-50%); font-size: 14px; }
 .quests-item .item-text h5 {margin-bottom: 2px; }
 .quests-item .horizontal .progress-count {border-radius: 50px 0 0 50px;}
