@@ -309,7 +309,7 @@
 			
 			<li class="d-flex align-items-center justify-content-between flex-wrap bg-white p-20 mb-20 bg-danger">
 				<div class="quests-item">
-					<div class="icon-box d-inline-flex justify-content-center align-items-center mr-10" style="background-color: #00be9c;">
+					<div class="icon-box d-inline-flex justify-content-center align-items-center mr-10" >
 						<img src="{{$quest_icon}}">
 					</div>
 					<div class="item-text">
