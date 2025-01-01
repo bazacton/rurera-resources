@@ -1005,6 +1005,9 @@ Right SideBar Style Start
     color: white;
     font-weight: bold;
     overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 .plan-item .progress-bar {
     position: absolute;
@@ -1029,6 +1032,20 @@ Right SideBar Style Start
 }
 .plan-item.yellow .progress-bar {
     background-color: #ffb74d;
+}
+.subject-title {
+    display: inline-flex;
+    flex-direction: column;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 14px;
+    gap: 10px;
+}
+.subject-title img {
+    height: 20px;
+    filter: invert(100%) sepia(23%) saturate(290%) hue-rotate(203deg) brightness(112%) contrast(100%);
 }
 /* Prep-Plan Style End */
 /*Sidebar Student-list Style Start*/
