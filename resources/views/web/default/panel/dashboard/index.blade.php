@@ -180,7 +180,7 @@
                         <div class="progress-course-card">
                             <div class="course-info">
                                 <div class="img-holder">
-                                    <img src="https://via.placeholder.com/60" alt="Course">
+                                    <img src="/assets/default/img/ecommerce-img.webp" alt="Course">
                                 </div>
                                 <div class="course-title">
                                     <p class="course-lable"><span class="icon-box"><img src="/assets/default/svgs/multi-choice.svg" alt=""></span> Course</p>
@@ -206,7 +206,7 @@
                         <div class="progress-course-card">
                             <div class="course-info">
                                 <div class="img-holder">
-                                    <img src="https://via.placeholder.com/60" alt="Course">
+                                    <img src="/assets/default/img/ecommerce-img.webp" alt="Course">
                                 </div>
                                 <div class="course-title">
                                     <p class="course-lable"><span class="icon-box"><img src="/assets/default/svgs/multi-choice.svg" alt=""></span> Course</p>
