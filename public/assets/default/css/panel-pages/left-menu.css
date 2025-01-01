@@ -1255,6 +1255,9 @@ ul.course-info-list li  img {
 }
 ul.course-info-list li .progress-box {
     padding-top: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
 }
 ul.course-info-list li > .over-time {
     color: #ff4d4f;
@@ -1277,8 +1280,18 @@ ul.course-info-list li > .over-time img {
 .round_per {position: absolute; left: 0; top: 0; width: 1em; height: 1em; background: #e4a6d2; clip:rect(0 1em 1em .5em); transform:rotate(180deg); transition:1.05s;}
 .percent_more .circle_inner {clip:rect(0 .5em 1em 0em);}
 .percent_more:after {position: absolute; left: .5em; top:0em; right: 0; bottom: 0; background: #e4a6d2; content:'';}
-.circle_inbox {}
-.percent_text {}
+ul.course-info-list li .progress-box .circle_percent:before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 70%;
+    width: 70%;
+    background-color: #fff;
+    border-radius: 100%;
+    content: "";
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
 .circle-orange .round_per,
 .circle-orange.percent_more:after {
     background: #f6b700;
