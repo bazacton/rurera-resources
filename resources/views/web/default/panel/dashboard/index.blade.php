@@ -109,6 +109,7 @@
                             <strong>5<em>/5</em></strong> 
                             <span>islands done this week</span>
                         </div>
+                        <span class="arrow">&#10140;</span>
                     </div>
                     <div class="plan-item green">
                         <div class="progress-bar" style="width: 50%;"></div>
@@ -120,6 +121,7 @@
                             <strong>1<em>/2</em></strong> 
                             <span>islands done this week</span>
                         </div>
+                        <span class="arrow">&#10140;</span>
                     </div>
                     <div class="plan-item blue">
                         <div class="progress-bar" style="width: 25%;"></div>
@@ -131,6 +133,7 @@
                             <strong>1<em>/4</em></strong> 
                             <span>islands done this week</span>
                         </div>
+                        <span class="arrow">&#10140;</span>
                     </div>
                     <div class="plan-item yellow">
                         <div class="progress-bar" style="width: 25%;"></div>
@@ -142,6 +145,7 @@
                             <strong>1<em>/4</em></strong> 
                             <span>islands done this week</span>
                         </div>
+                        <span class="arrow">&#10140;</span>
                     </div>
                 </div>
             </div>
