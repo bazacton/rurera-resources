@@ -112,18 +112,36 @@
                     </div>
                     <div class="plan-item green">
                         <div class="progress-bar" style="width: 50%;"></div>
-                        <span>VR</span>
-                        <span class="plan-progress">1/2 islands done this week</span>
+                        <div class="subject-title">
+                            <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="" title="book-bookmark"></span>
+                            VR
+                        </div>
+                        <div class="plan-progress text-right">
+                            <strong>1<em>/2</em></strong> 
+                            <span>islands done this week</span>
+                        </div>
                     </div>
                     <div class="plan-item blue">
                         <div class="progress-bar" style="width: 25%;"></div>
-                        <span>Maths</span>
-                        <span class="plan-progress">1/4 islands done this week</span>
+                        <div class="subject-title">
+                            <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="" title="book-bookmark"></span>
+                            Maths
+                        </div>
+                        <div class="plan-progress">
+                            <strong>1<em>/4</em></strong> 
+                            <span>islands done this week</span>
+                        </div>
                     </div>
                     <div class="plan-item yellow">
                         <div class="progress-bar" style="width: 25%;"></div>
-                        <span>NVR</span>
-                        <span class="plan-progress">1/4 islands done this week</span>
+                        <div class="subject-title">
+                            <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="" title="book-bookmark"></span>
+                            NVR
+                        </div>
+                        <div class="plan-progress">
+                            <strong>1<em>/4</em></strong> 
+                            <span>islands done this week</span>
+                        </div>
                     </div>
                 </div>
             </div>
