@@ -991,13 +991,11 @@ Right SideBar Style Start
 /* Quests-List Style End */
 /* Prep-Plan Style Start */
 .prep-plan {
-    padding: 20px;
-    background-color: #f1f1f1;
-    border-bottom: 1px solid #ddd;
     margin: 0 0 30px;
 }
 .plan-item {
     background-color: #fff;
+    border: 1px solid #ddd;
     position: relative;
     margin-bottom: 15px;
     padding: 10px 45px 10px 10px;
