@@ -36,7 +36,9 @@
         </div>
     </div>
     <div class="container mt-15">
-        <h3 class="mb-10">Subjects Progress<a href="#" class="text-primary">How we calculated?</a></h3>
+        <div class="section-title text-left mb-30">
+            <h2 class="font-22">Subjects Progress<a href="#" class="text-primary">How we calculated?</a></h2>
+        </div>
         <div class="row">
             <!-- English Card -->
             <div class="col-md-6 col-lg-3 mb-4">
@@ -97,7 +99,9 @@
             <!-- Prep Plan -->
             <div class="col-12">
                 <div class="prep-plan">
-                    <h3 class="mb-10">Sarah's Exam Prep Plan</h3>
+                    <div class="section-title text-left mb-30">
+                        <h2 class="font-22">Exam Prep Plan</h2>
+                    </div>
                     <div class="plan-item red">
                         <div class="progress-bar" style="width: 100%;"></div>
                         <div class="plan-inner">
