@@ -1110,7 +1110,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
     color: #999;
     display: block;
     line-height: 24px;
-    padding-top: 8px;
+    padding-top: 10px;
 }
 .show-notifications {
     display: inline-block;
