@@ -1161,8 +1161,12 @@ Lms Responsive Style Start
         width: 100%;
         padding: 0 0 15px;
     }
-    ul.course-info-list li > strong {
+    ul.course-info-list li > strong,
+    .percent_text {
         font-size: 13px;
+    }
+    .circle_percent {
+        font-size: 20px;
     }
 }
 
