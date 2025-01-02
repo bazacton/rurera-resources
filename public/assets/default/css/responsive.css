@@ -1303,6 +1303,15 @@ Lms Responsive Style Start
     .edit-questions-tabs .nav .nav-link.active.truefalse_quiz_questions,
     .inner_dropdown_questions, .inner_dropdown_questions.active,
     .edit-questions-tabs .nav .nav-link.inner_text_questions {margin-left: 0; margin-right: 0;}
+    .timeline-text > span {
+        display: block;
+        margin: 5px 0 0;
+        padding: 0 0 0 15px;
+    }
+    .timeline-text > span:before {
+        left: -2px;
+        right: auto;
+    }
 }
 @media screen and (max-width: 575px) {
     .spell-question-area .spells-quiz-info {margin: 0 0 30px;}
