@@ -62,13 +62,10 @@ Left SideBar-menu Start
 .notification-card:hover button,
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse li.active:before {background-color: var(--primary)}
 .sidebar-menu-holder {
-    position: relative;
     width: 100%;
     justify-content: center;
 }
-.sidebar-menu-holder .tooltip {
-    left: 100% !important;
-}
+
 .parent-panel .sidebar-menu-holder .tooltip {
     left: 0 !important;
 }
