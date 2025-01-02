@@ -14,7 +14,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 </div>
                 @if( in_array(10, $items))
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
                         <figure class="mb-20">
                             <a href="#" itemprop="url">
                                 <img src="../assets/default/img/national-curriculum.webp" alt="feature image" height="143" width="276">
@@ -29,7 +29,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 @endif
                 @if( in_array(2, $items))
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/11-plus" itemprop="url">
                                 <img src="../assets/default/img/entrance-exams.webp" alt="feature image" height="143" width="276">
@@ -44,7 +44,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 @endif
                 @if( in_array(3, $items))
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/sats-preparation" itemprop="url">
                                 <img src="../assets/default/img/sats-home-feature.webp" alt="feature image" height="143" width="276">
@@ -59,7 +59,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 @endif
                 @if( in_array(9, $items))
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/timestables-practice" itemprop="url">
                                 <img src="../assets/default/img/timetables-feature.webp" alt="feature image" height="143" width="276">
@@ -74,7 +74,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 @endif
                 @if( in_array(8, $items))
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/book-shelf" itemprop="url">
                                 <img src="../assets/default/img/book-shelf-feature.webp" alt="feature image" height="143" width="276">
@@ -89,7 +89,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 @endif
                 @if( in_array(15, $items))
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
                         <figure class="mb-20">
                             <a href="#" itemprop="url">
                                 <img src="../assets/default/img/teacher-empowerment-feature.webp" alt="feature image" height="143" width="276">
@@ -104,7 +104,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 @endif
                 @if( in_array(17, $items))
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/register" itemprop="url">
                                 <img src="../assets/default/img/rewards-features.webp" alt="feature image" height="143" width="276">
@@ -119,7 +119,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 @endif
                 @if( in_array(5, $items))
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/register" itemprop="url">
                                 <img src="../assets/default/img/quick-assesments.webp" alt="feature image" height="143" width="276">
@@ -134,7 +134,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 @endif
                 @if( in_array(6, $items))
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/register" itemprop="url">
                                 <img src="../assets/default/img/feature-automated-marking.webp" alt="feature image" height="143" width="276">
@@ -149,7 +149,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 @endif
                 @if( in_array(11, $items))
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/register" itemprop="url">
                                 <img src="../assets/default/img/performance-monitering.webp" alt="feature image" height="143" width="276">
@@ -164,7 +164,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 @endif
                 @if( in_array(7, $items))
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/register" itemprop="url">
                                 <img src="../assets/default/img/insights-feature.webp" alt="feature image" height="143" width="276">
@@ -179,7 +179,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 @endif
                 @if( in_array(16, $items))
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/contact-us" itemprop="url">
                                 <img src="../assets/default/img/protection-feature.webp" alt="feature image" height="143" width="276">
