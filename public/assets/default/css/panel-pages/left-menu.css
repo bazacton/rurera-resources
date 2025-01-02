@@ -69,6 +69,9 @@ Left SideBar-menu Start
 .sidebar-menu-holder .tooltip {
     left: 100% !important;
 }
+.parent-panel .sidebar-menu-holder .tooltip {
+    left: 0 !important;
+}
 @media (min-width:1601px) {
     .sidebar-menu-holder .tooltip {
         left: 0 !important;
