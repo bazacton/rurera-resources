@@ -152,7 +152,7 @@
                 <div class="reward-program-section">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                            <div class="position-relative reward-program-section-hero-card"> 
+                            <div class="position-relative reward-program-section-hero-card" ata-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-once="true"> 
                                 <img src="/store/1/default_images/home_sections_banners/club_points_banner.webp" class="reward-program-section-hero" alt="You earned 50 points!" height="390" width="570">
                                 <div class="example-reward-card bg-white rounded-sm shadow-lg p-5 p-md-15 d-flex align-items-center">
                                     <div class="example-reward-card-medal"> 
@@ -166,7 +166,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-6 mt-20 mb-40 mt-lg-0 mb-lg-0">
-                            <div class="column-text" data-aos="zoom-in" data-aos-once="true">
+                            <div class="column-text" data-aos-once="true" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
                                 <h2 class="font-40 text-dark">Unlock Coin Bonuses!</h2>
                                 <p class="font-16 mt-10" style="color: #000;">Start practicing now and unlock a world of exciting toys! As you learn and progress, earn coin points that boost your chances of winning amazing rewards. Dive into the fun and collect your coins today!</p>
                                 <div class="mt-35 d-flex align-items-center"> 
