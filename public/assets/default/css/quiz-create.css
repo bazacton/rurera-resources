@@ -1967,6 +1967,10 @@ Question Result Page Style Start
 .question-result-layout .rureraform-element:has(.input-holder.input_box ~ .input-holder.input_box) {
     line-height: 44px;
 }
+.question-result-layout .alphabet-list-style .wrong.form-field:before,
+.question-result-layout .alphabet-list-style .correct.form-field:before {
+    color: #fff;
+}
 /****************************************** 
 Question Result Page Style End
 ******************************************/
