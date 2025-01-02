@@ -192,6 +192,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .rureraform-element:has(.truefalse_quiz) {display: flex !important; align-items: center; flex-wrap: wrap;}
 .rureraform-element:has(span.truefalse_question_label) .truefalse_question_label {font-size: 1rem; font-weight: 700; width: 66.66666666%; padding-right: 15px; line-height: 24px;}
 .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {padding: 0 0 0 20px;}
+.question-result-layout .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {padding-left: 0;}
 /* True False Without Column Style End */
 
 /* File Attachment Style Start */
