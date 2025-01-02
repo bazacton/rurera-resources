@@ -122,7 +122,7 @@
     <section class="parent-account-section" style="background-color: #0065ff;">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-7 col-md-7" data-aos="fade-down">
+                <div class="col-12 col-lg-7 col-md-7" data-aos="fade-down" data-aos-duration="1000">
                     <div class="section-title mb-50">
                         <h2 class="font-40 text-white">Parent account</h2>
                         <p class="font-16 font-weight-500 text-white">We make it easy to be involved in your child’s learning
@@ -137,7 +137,7 @@
                         <li><span class="font-18">Easy to Manage Sibling Accounts</span></li>
                     </ul>
                 </div>
-                <div class="col-12 col-lg-5 col-md-5" data-aos="fade-up">
+                <div class="col-12 col-lg-5 col-md-5" data-aos="fade-up" data-aos-duration="1000">
                     <div class="imb-box">
                         <img src="/assets/default/img/banner-home.webp" width="548" height="570" alt="banner-home image">
                     </div>
