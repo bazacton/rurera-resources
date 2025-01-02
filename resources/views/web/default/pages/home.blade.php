@@ -44,7 +44,7 @@
                     <div class="choose-sats mt-90">
                         <div class="row">
                             <div class="col-12 col-lg-4 col-md-6">
-                                <div class="sats-box justify-content: center" data-aos-offset="100" data-aos="fade-up" data-aos-duration="3000">
+                                <div class="sats-box justify-content: center" data-aos-offset="100" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
                                     <img src="/store/1/default_images/home_sections_banners/dialogue.webp" height="300" width="300" alt="practice papers">
                                     <span class="mb-10" style="color: #3d358b;">Practice papers</span>
                                     <p>Ace every exam with tailored practice papers for KS1, KS2, SATs, 11 Plus, and more.</p>
@@ -52,7 +52,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 col-md-6">
-                                <div class="sats-box justify-content: center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="3000">
+                                <div class="sats-box justify-content: center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="3000" data-aos-once="true">
                                     <img src="/store/1/default_images/home_sections_banners/cactus.webp" width="300" height="300" alt="cactus image">
                                     <span class="mb-10" style="color: #f18700;">Interactive questions</span>
                                     <p>Conquer exams with 5,000+ interactive questions designed for success.</p>
@@ -89,28 +89,28 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
                         <img class="mb-15 blue-filter" src="../assets/default/svgs/student-user.svg" alt="Rurera Support image" height="50" width="50"> 
                         <h3 class="font-20">National Curriculum</h3>
                         <p class="pt-10">Explore wide range of learning resources available including for Years 1-6 and Functional Skills courses.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
                         <img class="mb-15 yellow-filter" src="../assets/default/svgs/graphic-design.svg" alt="Rurera Support image" height="50" width="50"> 
                         <h3 class="font-20">Quick assessments</h3>
                         <p class="pt-10">Real-time marking data helps identify students who need extra support or more challenges quickly.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="zoom-in-up" data-aos-duration="2000">
+                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-once="true">
                         <img class="mb-15 orange-filter" src="../assets/default/svgs/sav-time.svg" alt="Rurera Support image" height="50" width="50"> 
                         <h3 class="font-20">Real time diagnostics</h3>
                         <p class="pt-10">It helps find students' learning gaps, strengths, and suggests the best study path for faster progress.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
                         <img class="mb-15 blue-light-filter" src="../assets/default/svgs/support-white.svg" alt="Rurera Support image" height="50" width="50"> 
                         <h3 class="font-20">Get Rewards</h3>
                         <p class="pt-10">Have fun learning with Reward Coins, earn rewards, and make lasting memories with favorite toys.</p>
@@ -122,7 +122,7 @@
     <section class="parent-account-section" style="background-color: #0065ff;">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-7 col-md-7" data-aos="fade-down" data-aos-duration="1000">
+                <div class="col-12 col-lg-7 col-md-7" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                     <div class="section-title mb-50">
                         <h2 class="font-40 text-white">Parent account</h2>
                         <p class="font-16 font-weight-500 text-white">We make it easy to be involved in your child’s learning
@@ -137,7 +137,7 @@
                         <li><span class="font-18">Easy to Manage Sibling Accounts</span></li>
                     </ul>
                 </div>
-                <div class="col-12 col-lg-5 col-md-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="col-12 col-lg-5 col-md-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
                     <div class="imb-box">
                         <img src="/assets/default/img/banner-home.webp" width="548" height="570" alt="banner-home image">
                     </div>
@@ -165,7 +165,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-6 mt-20 mb-40 mt-lg-0 mb-lg-0">
-                            <div class="column-text" data-aos="zoom-in">
+                            <div class="column-text" data-aos="zoom-in" data-aos-once="true">
                                 <h2 class="font-40 text-dark">Unlock Coin Bonuses!</h2>
                                 <p class="font-16 mt-10" style="color: #000;">Start practicing now and unlock a world of exciting toys! As you learn and progress, earn coin points that boost your chances of winning amazing rewards. Dive into the fun and collect your coins today!</p>
                                 <div class="mt-35 d-flex align-items-center"> 
