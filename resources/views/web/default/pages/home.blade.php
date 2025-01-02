@@ -1,7 +1,7 @@
 @extends(getTemplate().'.layouts.app')
 
 @push('styles_top')
-
+<link rel="stylesheet" href="/assets/default/vendors/scroll-animation/aos.css"/>
 <style>
     .home-banner {background-color: #596bfd; min-height: 650px;}
     .home-categories-section {background-color: #f27530;}
@@ -238,6 +238,10 @@
 @endsection
 
 @push('scripts_bottom')
+<script src="/assets/default/vendors/scroll-animation/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script>
     function setupWordChange(timeout, animationTimeout = 300) {
     const container = document.getElementById("change");
