@@ -152,7 +152,7 @@
                 <div class="reward-program-section">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                            <div class="position-relative reward-program-section-hero-card" ata-aos="fade-right" data-aos-offset="300" data-aos-anchor=".reward-program-section" data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-duration="3000"> 
+                            <div class="position-relative reward-program-section-hero-card" data-aos-once="true" data-aos="fade-right" data-aos-anchor=".reward-program-section" data-aos-offset="500" data-aos-duration="3000"> 
                                 <img src="/store/1/default_images/home_sections_banners/club_points_banner.webp" class="reward-program-section-hero" alt="You earned 50 points!" height="390" width="570">
                                 <div class="example-reward-card bg-white rounded-sm shadow-lg p-5 p-md-15 d-flex align-items-center">
                                     <div class="example-reward-card-medal"> 
