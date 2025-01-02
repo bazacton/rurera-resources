@@ -117,7 +117,7 @@ Access to the rewards with 3 simple steps</p>
                             </div>
                             <div class="col-12 col-lg-4 col-md-4">
                                 <div class="lms-btn-group text-right">
-                                    <a itemprop="url" href="{{url('/')}}/register" class="lms-btn rounded-pill text-white border-white ml-auto">Join Rurera Today</a>
+                                    <a itemprop="url" href="{{url('/')}}/register" class="lms-btn rounded-pill text-white border-white ml-auto py-10 px-20 border">Join Rurera Today</a>
                                 </div>
                             </div>
                         </div>
