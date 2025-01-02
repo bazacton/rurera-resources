@@ -1960,3 +1960,13 @@ Inline-Style From Php Files Style Start
 /****************************************** 
 Inline-Style From Php Files Style End
 ******************************************/
+
+/****************************************** 
+Question Result Page Style Start
+******************************************/
+.question-result-layout .rureraform-element:has(.input-holder.input_box ~ .input-holder.input_box) {
+    line-height: 44px;
+}
+/****************************************** 
+Question Result Page Style End
+******************************************/
