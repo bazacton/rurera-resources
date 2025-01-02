@@ -861,7 +861,7 @@ body:has(.edit-profile) {
 .question-result-layout .lms-radio-btn-group {align-items: flex-start; justify-content: flex-start; margin-bottom: 15px;}
 .question-result-layout .lms-radio-btn-group .lms-question-label {background-color: #ededed; height: auto; border-color: #92aec4; border-width: 1px; border-radius: 0; padding: 8px 10px;}
 .question-result-layout .lms-radio-btn-group li {min-width: auto;}
-.question-result-layout .lms-radio-lists .list-title {margin-bottom: 10px; padding-top: 0; color: #333; display: block;}
+.question-result-layout .lms-radio-lists .list-title {margin-bottom: 10px; padding-top: 0; color: #333; display: block; font-weight: 600;}
 .question-result-layout hr {display: none;}
 .question-result-layout .field-holder,
 .question-result-layout .form-field label{background-color: inherit;}
