@@ -40,11 +40,11 @@
                 <div class="col-12 col-md-12 col-lg-12 text-center mx-auto">
                     <h1 class="top-text font-72 font-weight-bold text-white">One Stop for Fun Learning</h1>
                     <h1 class="font-50 font-weight-bold text-white"><span id="change"><span class="old">Exam Prep 11 Plus , CAT-4 . ISEB</span></span> </h1>
-                    <p class="font-19 pt-15 text-white pb-30" data-aos="fade-up" data-aos-duration="3000">Rurera is a transformative learning platform featuring a subscription model that delivers over 10,000 practice exercises for Key Stage 1 and Key Stage 2, along with resources for Times Tables, Books, SATs, and 11+ exams, empowering success.</p>
+                    <p class="font-19 pt-15 text-white pb-30" data-aos-offset="200" data-aos="fade-up" data-aos-duration="1000">Rurera is a transformative learning platform featuring a subscription model that delivers over 10,000 practice exercises for Key Stage 1 and Key Stage 2, along with resources for Times Tables, Books, SATs, and 11+ exams, empowering success.</p>
                     <div class="choose-sats mt-90">
                         <div class="row">
                             <div class="col-12 col-lg-4 col-md-6">
-                                <div class="sats-box justify-content: center" data-aos="fade-up" data-aos-duration="3000">
+                                <div class="sats-box justify-content: center" data-aos-offset="100" data-aos="fade-up" data-aos-duration="1000">
                                     <img src="/store/1/default_images/home_sections_banners/dialogue.webp" height="300" width="300" alt="practice papers">
                                     <span class="mb-10" style="color: #3d358b;">Practice papers</span>
                                     <p>Ace every exam with tailored practice papers for KS1, KS2, SATs, 11 Plus, and more.</p>
