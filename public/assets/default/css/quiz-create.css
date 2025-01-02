@@ -178,12 +178,14 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .lms-radio-select label:hover {background-color: rgba(0,0,0,0.05);}
 .lms-radio-select .field-holder.wrong label {border-color: #ff4a4a;}
 .lms-radio-select .wrong input[type=radio]:checked~label,
-.question-result-layout .form-field.wrong label {
+.question-result-layout .form-field.wrong label,
+.form-field.wrong input[type="checkbox"]:checked ~ label {
     border-color: #c23131;
 }
 .lms-radio-select .correct input[type=radio] ~ label,
 .lms-radio-select .correct input[type=radio]:checked~label,
-.question-result-layout .form-field.correct label {
+.question-result-layout .form-field.correct ,
+.form-field.correct input[type="checkbox"]:checked ~ label {
     border-color: #287834;
 }
 .lms-radio-select input[type=radio] {position: absolute; width: 0; height: 0;}
