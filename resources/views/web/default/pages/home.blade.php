@@ -122,7 +122,7 @@
     <section class="parent-account-section" style="background-color: #0065ff;">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-7 col-md-7">
+                <div class="col-12 col-lg-7 col-md-7" data-aos="fade-down">
                     <div class="section-title mb-50">
                         <h2 class="font-40 text-white">Parent account</h2>
                         <p class="font-16 font-weight-500 text-white">We make it easy to be involved in your child’s learning
@@ -137,7 +137,7 @@
                         <li><span class="font-18">Easy to Manage Sibling Accounts</span></li>
                     </ul>
                 </div>
-                <div class="col-12 col-lg-5 col-md-5">
+                <div class="col-12 col-lg-5 col-md-5" data-aos="fade-up">
                     <div class="imb-box">
                         <img src="/assets/default/img/banner-home.webp" width="548" height="570" alt="banner-home image">
                     </div>
@@ -165,7 +165,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-6 mt-20 mb-40 mt-lg-0 mb-lg-0">
-                            <div class="column-text">
+                            <div class="column-text" data-aos="zoom-in">
                                 <h2 class="font-40 text-dark">Unlock Coin Bonuses!</h2>
                                 <p class="font-16 mt-10" style="color: #000;">Start practicing now and unlock a world of exciting toys! As you learn and progress, earn coin points that boost your chances of winning amazing rewards. Dive into the fun and collect your coins today!</p>
                                 <div class="mt-35 d-flex align-items-center"> 
