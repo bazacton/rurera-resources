@@ -184,12 +184,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title text-center mb-0">
+                    <div class="section-title text-center mb-0" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true" data-aos-anchor=".testimonials-container">
                         <h2 class="mt-0 mb-10 font-40">Hear from Those Who Believe in Us!</h2>
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="swiper-container testimonials-swiper px-10" data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">
+                    <div class="swiper-container testimonials-swiper px-10" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" data-aos-anchor=".testimonials-container">
                         <div class="swiper-wrapper mb-50">
                             <div class="swiper-slide">
                                 <div class="testimonials-card position-relative py-15 py-lg-30 px-10 px-lg-20 rounded-sm shadow bg-white text-center mt-80">
