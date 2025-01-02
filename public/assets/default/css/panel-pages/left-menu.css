@@ -65,9 +65,13 @@ Left SideBar-menu Start
     width: 100%;
     justify-content: center;
 }
-
+.sidebar-menu-holder .tooltip {
+    left: auto !important;
+    right: -100%;
+}
 .parent-panel .sidebar-menu-holder .tooltip {
     left: 0 !important;
+    right: 0;
 }
 @media (min-width:1601px) {
     .sidebar-menu-holder .tooltip {
