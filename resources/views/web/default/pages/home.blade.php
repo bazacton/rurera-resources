@@ -34,13 +34,13 @@
 
 @section('content')
 <section class="content-section">
-    <section class="home-banner slider-hero-section position-relative pt-100 pb-100" data-aos="zoom-in">
+    <section class="home-banner slider-hero-section position-relative pt-100 pb-100">
         <div class="container user-select-none">
             <div class="row slider-content align-items-center hero-section2 flex-column-reverse flex-md-row">
                 <div class="col-12 col-md-12 col-lg-12 text-center mx-auto">
                     <h1 class="top-text font-72 font-weight-bold text-white">One Stop for Fun Learning</h1>
                     <h1 class="font-50 font-weight-bold text-white"><span id="change"><span class="old">Exam Prep 11 Plus , CAT-4 . ISEB</span></span> </h1>
-                    <p class="font-19 pt-15 text-white pb-30">Rurera is a transformative learning platform featuring a subscription model that delivers over 10,000 practice exercises for Key Stage 1 and Key Stage 2, along with resources for Times Tables, Books, SATs, and 11+ exams, empowering success.</p>
+                    <p class="font-19 pt-15 text-white pb-30" data-aos="fade-up" data-aos-duration="3000">Rurera is a transformative learning platform featuring a subscription model that delivers over 10,000 practice exercises for Key Stage 1 and Key Stage 2, along with resources for Times Tables, Books, SATs, and 11+ exams, empowering success.</p>
                     <div class="choose-sats mt-90">
                         <div class="row">
                             <div class="col-12 col-lg-4 col-md-6">
