@@ -1983,8 +1983,8 @@ Question Result Page Style Start
 .question-result-layout .rureraform-element {
     outline: none !important;
 }
-.question-result-layout .question_label span {
-    margin: 10px 0; 
+.question-result-layout .rureraform-col-12 {
+    padding: 0 0 10px;
 }
 /****************************************** 
 Question Result Page Style End
