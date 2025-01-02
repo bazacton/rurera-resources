@@ -844,7 +844,7 @@ body:has(.edit-profile) {
 .rureraform-row.rureraform-element [class*="rureraform-col-"] {float: none; display: inline-block; margin-right: 0; vertical-align: middle; outline: 1px dashed #f3f1f1; padding: 15px; }
 .rureraform-row.rureraform-element [class*="rureraform-col-"]:has(.rureraform-elements img) {vertical-align: top;}
 /* Columns Selection Style End */
-.question-result-layout {background-color: #fff; margin-bottom: 30px; padding: 30px 30px 20px; border: 2px solid #eee; border-left-width: 4px; position: relative;}
+.question-result-layout {background-color: #fff; margin-bottom: 30px; padding: 30px 30px 20px; border: 2px solid #eee; border-left-width: 4px; position: relative; pointer-events: none;}
 .question-result-layout:before {height: 30px; width: 30px; text-align: center; border-radius: 100%; font-size: 14px; line-height: 30px; color: #fff; display: inline-block; margin-bottom: 10px;}
 .question-result-layout.question-status-correct:before {content: "\2713"; background-color: #70c17c;}
 .question-result-layout.question-status-incorrect:before {content: "\00D7"; background-color: #ff4f4f; font-size: 22px;}
