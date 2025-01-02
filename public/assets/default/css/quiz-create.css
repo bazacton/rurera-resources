@@ -177,6 +177,12 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .lms-radio-select.inline-fields .field-holder label {width: 100%;}
 .lms-radio-select label:hover {background-color: rgba(0,0,0,0.05);}
 .lms-radio-select .field-holder.wrong label {border-color: #ff4a4a;}
+.lms-radio-select .wrong input[type=radio]:checked~label {
+    border-color: #c23131;
+}
+.lms-radio-select .correct input[type=radio] ~ label {
+    border-color: #287834;
+}
 .lms-radio-select input[type=radio] {position: absolute; width: 0; height: 0;}
 .lms-radio-select input[type=radio]:checked~label {background-color: #e8e8e8; border-color: #a0a0a0;}
 .lms-radio-select input[type=radio]:checked~label:after {width: 100%; transition: 0.4s; }
@@ -1972,6 +1978,9 @@ Question Result Page Style Start
 .question-result-layout .alphabet-list-style .wrong.form-field:before,
 .question-result-layout .alphabet-list-style .correct.form-field:before {
     color: #fff;
+}
+.question-result-layout .rureraform-element {
+    outline: none;
 }
 /****************************************** 
 Question Result Page Style End
