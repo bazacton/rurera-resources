@@ -1427,7 +1427,8 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
 .choose-file-btn {background-color: var(--primary); color: #fff; padding: 12px 25px; border-radius: 5px; text-transform: capitalize; cursor: pointer;}
 /* Quiz File Attachment Style End */
 /* Quiz Select Option Style Start*/
-.question-fields select {
+.question-fields select,
+.question-result-layout .rureraform-element select {
     background-image: url(/assets/default/svgs/arrow-down.svg);
     background-repeat: no-repeat;
     background-size: 15px;
