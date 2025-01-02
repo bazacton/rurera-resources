@@ -14,7 +14,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 </div>
                 @if( in_array(10, $items))
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
+                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="500" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".feature-grid-section">
                         <figure class="mb-20">
                             <a href="#" itemprop="url">
                                 <img src="../assets/default/img/national-curriculum.webp" alt="feature image" height="143" width="276">
@@ -29,7 +29,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 @endif
                 @if( in_array(2, $items))
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
+                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="1000" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".feature-grid-section">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/11-plus" itemprop="url">
                                 <img src="../assets/default/img/entrance-exams.webp" alt="feature image" height="143" width="276">
@@ -44,7 +44,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 @endif
                 @if( in_array(3, $items))
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
+                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="1500" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".feature-grid-section">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/sats-preparation" itemprop="url">
                                 <img src="../assets/default/img/sats-home-feature.webp" alt="feature image" height="143" width="276">
