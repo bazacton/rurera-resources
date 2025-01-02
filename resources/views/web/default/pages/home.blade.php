@@ -137,7 +137,7 @@
                         <li><span class="font-18">Easy to Manage Sibling Accounts</span></li>
                     </ul>
                 </div>
-                <div class="col-12 col-lg-5 col-md-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+                <div class="col-12 col-lg-5 col-md-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                     <div class="imb-box">
                         <img src="/assets/default/img/banner-home.webp" width="548" height="570" alt="banner-home image">
                     </div>
