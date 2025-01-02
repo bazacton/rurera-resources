@@ -195,7 +195,7 @@
                                             </div>
                                             <div class="col-12 col-md-4 col-lg-3">
                                                 <div class="sats-summary-icon" style="background-color: #fe3c30;">
-                                                    <img src="/assets/default/svgs/question-circle.svg" alt="">
+                                                    <img src="/assets/default/svgs/question-circle-white.svg" alt="">
                                                 </div>
                                                 <div class="summary-text">
                                                     <label>Incorrect / Not Attempted</label>
