@@ -68,6 +68,7 @@ Left SideBar-menu Start
 .sidebar-menu-holder .tooltip {
     left: auto !important;
     right: auto;
+    display: none;
 }
 .parent-panel .sidebar-menu-holder .tooltip {
     left: 0 !important;
