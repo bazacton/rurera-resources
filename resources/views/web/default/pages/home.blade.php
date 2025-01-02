@@ -189,7 +189,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="swiper-container testimonials-swiper px-10" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" data-aos-anchor=".testimonials-container">
+                    <div class="swiper-container testimonials-swiper px-10" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" data-aos-anchor=".testimonials-container" data-aos-delay="500">
                         <div class="swiper-wrapper mb-50">
                             <div class="swiper-slide">
                                 <div class="testimonials-card position-relative py-15 py-lg-30 px-10 px-lg-20 rounded-sm shadow bg-white text-center mt-80">
