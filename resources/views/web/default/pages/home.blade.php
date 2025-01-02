@@ -45,7 +45,7 @@
                     <div class="choose-sats mt-90">
                         <div class="row">
                             <div class="col-12 col-lg-4 col-md-6">
-                                <div class="sats-box justify-content: center" data-aos-offset="100" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" data-aos-anchor=".slider-hero-section">
+                                <div class="sats-box justify-content: center" data-aos-offset="100" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".slider-hero-section">
                                     <img src="/store/1/default_images/home_sections_banners/dialogue.webp" height="300" width="300" alt="practice papers">
                                     <span class="mb-10" style="color: #3d358b;">Practice papers</span>
                                     <p>Ace every exam with tailored practice papers for KS1, KS2, SATs, 11 Plus, and more.</p>
@@ -53,7 +53,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 col-md-6">
-                                <div class="sats-box justify-content: center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="3000" data-aos-once="true" data-aos-anchor=".slider-hero-section">
+                                <div class="sats-box justify-content: center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".slider-hero-section">
                                     <img src="/store/1/default_images/home_sections_banners/cactus.webp" width="300" height="300" alt="cactus image">
                                     <span class="mb-10" style="color: #f18700;">Interactive questions</span>
                                     <p>Conquer exams with 5,000+ interactive questions designed for success.</p>
