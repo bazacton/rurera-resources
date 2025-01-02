@@ -104,7 +104,7 @@ Access to the rewards with 3 simple steps</p>
             </form>
         </section>
     </div>
-    <section class="lms-column-section lms-text-section py-70 mx-w-100 mt-80" style="background-color: #f6b801;">
+    <section class="lms-column-section lms-text-section px-15 py-30 mx-w-100 mt-50" style="background-color: #f6b801;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -116,7 +116,7 @@ Access to the rewards with 3 simple steps</p>
                                     delivered through Rurera.</p>
                             </div>
                             <div class="col-12 col-lg-4 col-md-4">
-                                <div class="lms-btn-group">
+                                <div class="lms-btn-group text-right">
                                     <a itemprop="url" href="{{url('/')}}/register" class="lms-btn rounded-pill text-white border-white ml-auto">Join Rurera Today</a>
                                 </div>
                             </div>
