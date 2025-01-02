@@ -184,7 +184,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title text-center mb-0" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true" data-aos-anchor=".testimonials-container">
+                    <div class="section-title text-center mb-0" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".testimonials-container">
                         <h2 class="mt-0 mb-10 font-40">Hear from Those Who Believe in Us!</h2>
                     </div>
                 </div>
