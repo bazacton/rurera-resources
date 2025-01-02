@@ -180,7 +180,8 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 .lms-radio-select .wrong input[type=radio]:checked~label {
     border-color: #c23131;
 }
-.lms-radio-select .correct input[type=radio] ~ label {
+.lms-radio-select .correct input[type=radio] ~ label,
+.lms-radio-select .correct input[type=radio]:checked~label {
     border-color: #287834;
 }
 .lms-radio-select input[type=radio] {position: absolute; width: 0; height: 0;}
