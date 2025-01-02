@@ -1168,6 +1168,9 @@ Lms Responsive Style Start
     .circle_percent {
         font-size: 20px;
     }
+    .stages-items {
+        position: initial;
+    }
 }
 
 @media screen and (max-width: 640px) {
