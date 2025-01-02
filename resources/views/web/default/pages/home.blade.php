@@ -44,7 +44,7 @@
                     <div class="choose-sats mt-90">
                         <div class="row">
                             <div class="col-12 col-lg-4 col-md-6">
-                                <div class="sats-box justify-content: center">
+                                <div class="sats-box justify-content: center" data-aos="fade-up" data-aos-duration="3000">
                                     <img src="/store/1/default_images/home_sections_banners/dialogue.webp" height="300" width="300" alt="practice papers">
                                     <span class="mb-10" style="color: #3d358b;">Practice papers</span>
                                     <p>Ace every exam with tailored practice papers for KS1, KS2, SATs, 11 Plus, and more.</p>
@@ -52,7 +52,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 col-md-6">
-                                <div class="sats-box justify-content: center">
+                                <div class="sats-box justify-content: center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                                     <img src="/store/1/default_images/home_sections_banners/cactus.webp" width="300" height="300" alt="cactus image">
                                     <span class="mb-10" style="color: #f18700;">Interactive questions</span>
                                     <p>Conquer exams with 5,000+ interactive questions designed for success.</p>
@@ -60,7 +60,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 col-md-6">
-                                <div class="sats-box justify-content: center">
+                                <div class="sats-box justify-content: center" data-aos="fade-up" data-aos-duration="3000">
                                     <img src="/store/1/default_images/home_sections_banners/rocket-ship.webp" width="280" height="280" alt="rocket-ship image">
                                     <span class="mb-10" style="color: #7679ee;">Strong Foundation</span>
                                     <p>Build a powerful foundation that shapes every aspect of future success.</p>
@@ -89,21 +89,21 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white">
                         <img class="mb-15 blue-filter" src="../assets/default/svgs/student-user.svg" alt="Rurera Support image" height="50" width="50"> 
                         <h3 class="font-20">National Curriculum</h3>
                         <p class="pt-10">Explore wide range of learning resources available including for Years 1-6 and Functional Skills courses.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white">
                         <img class="mb-15 yellow-filter" src="../assets/default/svgs/graphic-design.svg" alt="Rurera Support image" height="50" width="50"> 
                         <h3 class="font-20">Quick assessments</h3>
                         <p class="pt-10">Real-time marking data helps identify students who need extra support or more challenges quickly.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white">
                         <img class="mb-15 orange-filter" src="../assets/default/svgs/sav-time.svg" alt="Rurera Support image" height="50" width="50"> 
                         <h3 class="font-20">Real time diagnostics</h3>
                         <p class="pt-10">It helps find students' learning gaps, strengths, and suggests the best study path for faster progress.</p>
