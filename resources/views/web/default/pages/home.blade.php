@@ -34,7 +34,7 @@
 
 @section('content')
 <section class="content-section">
-    <section class="home-banner slider-hero-section position-relative pt-100 pb-100">
+    <section class="home-banner slider-hero-section position-relative pt-100 pb-100" data-aos="zoom-in">
         <div class="container user-select-none">
             <div class="row slider-content align-items-center hero-section2 flex-column-reverse flex-md-row">
                 <div class="col-12 col-md-12 col-lg-12 text-center mx-auto">
