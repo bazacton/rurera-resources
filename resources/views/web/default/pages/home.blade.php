@@ -146,7 +146,7 @@
             </div>
         </div>
     </section>
-    <section class="home-sections home-sections-swiper container position-relative mt-90">
+    <section class="home-sections home-sections-swiper container position-relative mt-90" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
         <div class="row">
             <div class="col-12">
                 <div class="reward-program-section">
