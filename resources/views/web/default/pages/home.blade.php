@@ -89,28 +89,28 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="fade-up">
+                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="fade-up" data-aos-duration="2000">
                         <img class="mb-15 blue-filter" src="../assets/default/svgs/student-user.svg" alt="Rurera Support image" height="50" width="50"> 
                         <h3 class="font-20">National Curriculum</h3>
                         <p class="pt-10">Explore wide range of learning resources available including for Years 1-6 and Functional Skills courses.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="zoom-in">
+                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="zoom-in" data-aos-duration="2000">
                         <img class="mb-15 yellow-filter" src="../assets/default/svgs/graphic-design.svg" alt="Rurera Support image" height="50" width="50"> 
                         <h3 class="font-20">Quick assessments</h3>
                         <p class="pt-10">Real-time marking data helps identify students who need extra support or more challenges quickly.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="zoom-in-up">
+                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="zoom-in-up" data-aos-duration="2000">
                         <img class="mb-15 orange-filter" src="../assets/default/svgs/sav-time.svg" alt="Rurera Support image" height="50" width="50"> 
                         <h3 class="font-20">Real time diagnostics</h3>
                         <p class="pt-10">It helps find students' learning gaps, strengths, and suggests the best study path for faster progress.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="zoom-in">
+                    <div class="sats-box d-inline-flex border-solid border-transparent bg-white" data-aos="zoom-in" data-aos-duration="2000">
                         <img class="mb-15 blue-light-filter" src="../assets/default/svgs/support-white.svg" alt="Rurera Support image" height="50" width="50"> 
                         <h3 class="font-20">Get Rewards</h3>
                         <p class="pt-10">Have fun learning with Reward Coins, earn rewards, and make lasting memories with favorite toys.</p>
