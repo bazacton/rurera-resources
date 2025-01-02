@@ -74,7 +74,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 @endif
                 @if( in_array(8, $items))
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="2500" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
+                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="1500" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
                         <figure class="mb-20">
                             <a href="{{url('/')}}/book-shelf" itemprop="url">
                                 <img src="../assets/default/img/book-shelf-feature.webp" alt="feature image" height="143" width="276">
