@@ -1980,7 +1980,7 @@ Question Result Page Style Start
     color: #fff;
 }
 .question-result-layout .rureraform-element {
-    outline: none;
+    outline: none !important;
 }
 /****************************************** 
 Question Result Page Style End
