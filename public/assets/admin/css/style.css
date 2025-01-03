@@ -523,7 +523,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     justify-content: center;
     border-radius: 3px;
 }
-.assignments-table .card .icon-box img {
+.assignments-table .card h6 .icon-box img {
     background-color: var(--blue);
     max-width: 100%;
     max-height: 100%;
