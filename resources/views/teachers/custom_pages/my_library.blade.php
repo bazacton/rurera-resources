@@ -80,7 +80,7 @@
                                     </div>
                                 </div>
                                 <div class="featured-list-sidebar-inner">
-                                    <div class="listing-card mb-15 bg-white panel-border rounded-sm">
+                                    <div class="listing-card mb-15 bg-white panel-border rounded-sm active">
                                         <a href="#" class="listing-card-link">
                                             <div class="img-holder">
                                                 <figure>
