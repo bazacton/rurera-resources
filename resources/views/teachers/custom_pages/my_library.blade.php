@@ -1199,7 +1199,7 @@
             <span aria-hidden="true">&times;</span>
         </button>
         <div class="tab-content" id="myTabContent">
-            <div class="questions-collection tab-pane fade show active">
+            <div class="questions-collection tab-pane fade show active" id="collection" aria-labelledby="collection-tab">
                 <div class="questions-collection-inner">
                     <h3>Add this questions to a collection</h3>
                     <div class="questions-collection-fields">
@@ -1228,12 +1228,12 @@
                         </div>
                     </div>
                     <div class="collection-controls">
-                        <button type="button">Create a new collection</button>
+                        <button type="button" id="general-tab" data-toggle="tab" data-target="#general-knowledge">Create a new collection</button>
                         <button type="button">Done</button>
                     </div>
                 </div>
             </div>
-            <div class="general-knowledge-content tab-pane fade">
+            <div class="general-knowledge-content tab-pane fade" id="general-knowledge" aria-labelledby="general-tab">
                 <div class="modal-header">
                     <div class="img-holder">
                         <figure>
@@ -1332,7 +1332,7 @@
                         </div>
                         <div class="general-knowledge-controls d-flex align-items-center justify-content-between">
                             <button type="button" class="create-question-btn btn">Create question</button>
-                            <button type="button" class="cancel-question-btn btn">Cancel</button>
+                            <button type="button" class="cancel-question-btn btn" id="collection-tab" data-toggle="tab" data-target="#collection">Cancel</button>
                         </div>
                     </div>
                 </div>
