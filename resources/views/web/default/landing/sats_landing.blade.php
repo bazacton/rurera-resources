@@ -737,7 +737,7 @@
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
                                 <img src="../assets/default/svgs/exam-multiple-white.svg" width="50" height="50" alt="#" />
-                                <h3 class="text-white">100+ SATs practices</h3>
+                                <span class="text-white">100+ SATs practices</span>
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6">
