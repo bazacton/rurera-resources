@@ -3518,6 +3518,16 @@ span.field-separated span:after {
 .question-info .dropdown-toggle {
     background-color: #f2f2f2;
 }
+.question-add-btn {
+    position: absolute;
+    top: 0;
+    right: -22px;
+    border: 0;
+    background-color: var(--blue);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
 /* Question-Layout Question-Top-Info Style End */
 
 .listing-dropdown {
