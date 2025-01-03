@@ -4,7 +4,7 @@
 
 @endpush
 @push('styles_top')
-    <link rel="stylesheet" href="/assets/default/css/panel-pages/left-menu.css">
+    <link rel="stylesheet" href="/assets/default/css/panel-pages/dashboard.css">
 @endpush
 
 @section('content')
