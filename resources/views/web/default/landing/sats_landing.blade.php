@@ -575,7 +575,7 @@
     </section>
     <section class="home-sections home-sections-swiper container find-instructor-section position-relative mt-80">
         <div class="row align-items-center">
-            <div class="col-12">
+            <div class="col-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".find-instructor-section">
                 <div class="section-title text-center mb-50">
                     <h2 class="mt-0 mb-10 font-40"> Conquer the SATs with Confidence
                     </h2>
@@ -586,7 +586,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6" data-aos-once="true" data-aos="fade-right" data-aos-anchor=".find-instructor-section" data-aos-offset="100" data-aos-duration="3000">
                 <div class="">
                     <div class="section-title section-inner-title">
                         <h2 class="font-40 text-dark">KS1 & KS2 SATs Practice</h2>
@@ -602,7 +602,7 @@
                     </div> -->
                 </div>
             </div>
-            <div class="col-12 col-lg-6 mt-20 mt-lg-0">
+            <div class="col-12 col-lg-6 mt-20 mt-lg-0" data-aos="fade-left" data-aos-anchor=".find-instructor-section" data-aos-offset="200" data-aos-duration="3000">
                 <div class="position-relative img-holder">
                     <img src="/store/1/default_images/home_sections_banners/learning-practice.jpg" width="400" height="460" class="find-instructor-section-hero" alt="Have a Question? Ask it in forum and get answer" />
                     <img src="/assets/default/img/home/circle-4.png" width="170" height="170" class="find-instructor-section-circle" alt="circle" />
