@@ -1303,6 +1303,18 @@ Lms Responsive Style Start
     .edit-questions-tabs .nav .nav-link.active.truefalse_quiz_questions,
     .inner_dropdown_questions, .inner_dropdown_questions.active,
     .edit-questions-tabs .nav .nav-link.inner_text_questions {margin-left: 0; margin-right: 0;}
+    .timeline-text > span {
+        display: block;
+        margin: 5px 0 0;
+        padding: 0 0 0 15px;
+    }
+    .timeline-text > span:before {
+        left: -2px;
+        right: auto;
+    }
+    .timeline-text .analytics-more_details {
+        padding-left: 0;
+    }
 }
 @media screen and (max-width: 575px) {
     .spell-question-area .spells-quiz-info {margin: 0 0 30px;}
@@ -1413,8 +1425,8 @@ Lms Responsive Style Start
     .question-count ~ .spells-quiz-sound {margin-top: 30px;}
     .learning-page.type-vocabulary:has(.spells-quiz-sound) .word-cloud-box {margin-top: 0;}
     .spells-quiz-from .form-btn-field {display: flex;padding-left: 10px;padding-right: 10px;justify-content: center;gap: 10px;flex-wrap: wrap;padding-top: 0;}
-    .timeline-text p strong {margin-bottom: 10px; display: inline;}
-    .timeline-text .info-time {display: inline; margin-left: 10px;}
+    .timeline-text p strong {margin-bottom: 10px; display: block;}
+    .timeline-text .info-time {display: inline; margin-left: 0;}
     .timeline-text img {margin: 0 2px;}
     .db-members .profile-dropdown ul {right: auto; left: -5px;}
     body #rurera-words-search #rf-searchgamecontainer {padding: 8px;}
@@ -1440,15 +1452,9 @@ Lms Responsive Style Start
     .profile-info-box .user-actions {flex-direction: row !important; margin-top: 15px; width: 100%; justify-content: center;}
     .profile-info-box .user-actions button.btn-border-white {margin-top: 0 !important; margin-left: 10px; border-radius: 5px !important;}
     .reward-program-section .font-16,
-    .newsletter-inner .font-16, .testimonials-card .font-16 {
-        font-size: 1rem !important;
-    }
-    .example-reward-card .font-12 {
-        font-size: 14px;
-    }
-    .newsletter-inner .text-white, .testimonials-card p {
-        color: #000 !important;
-    }
+    .newsletter-inner .font-16, .testimonials-card .font-16 {font-size: 1rem !important;}
+    .example-reward-card .font-12 {font-size: 14px;}
+    .newsletter-inner .text-white, .testimonials-card p {color: #000 !important;}
     .reward-program-section .btn-outline-primary {color: #000; border-color: #000;}
     .lms-checkbox-img.rurera-in-row .field-holder, 
     .lms-checkbox-img.rurera-in-row .form-field, 
@@ -1460,6 +1466,7 @@ Lms Responsive Style Start
     .activities-container .filters-list {padding-right: 0;}
     .generatePassword, .username-auto-generate {position: relative; right: 0; top: 0; -webkit-transform: none; -ms-transform: none; transform: none; display: block; text-align: right; margin-top: 5px;}
     .home-sections:has(.blog-grid-card) .d-flex {flex-wrap: wrap; gap: 10px 0;}
+    .plan-inner {padding-right: 25px;}
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
