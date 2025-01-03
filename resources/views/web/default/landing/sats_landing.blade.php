@@ -344,7 +344,7 @@
     <section class="key-stage-section mt-50">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".key-stage-section">
                     <div class="section-title text-left mb-40">
                         <h2 class="mb-15 font-40">
                             Endless SATs Resources, Endless Practice Opportunities
@@ -356,12 +356,12 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" data-aos-anchor=".key-stage-section" data-aos-delay="1000">
                     <div class="element-title has-bg">
                         <h2 class="text-white m-0">Key Stage 1 & Key Stage 2</h2>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" data-aos-anchor=".key-stage-section" data-aos-delay="1000">
                     <ul class="lms-key-stage-table bg-table mt-30">
                         <li class="lms-key-stage-head">
                             <div class="lms-key-stage keystage-title border-none"></div>
