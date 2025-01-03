@@ -57,6 +57,7 @@
                                     <td>0</td>
                                     <td>50</td>
                                     <td>11 Sep 2024 05:00/16 Sep 2024 05:00</td>
+                                    <td>Accuracy</td>
                                     <td class="text-success font-weight-bold">Active</td>
                                     <td>
                                         <a href="#" class="mr-2"><img src="/assets/default/svgs/edit-simple.svg" alt="Edit Icon"></a>
