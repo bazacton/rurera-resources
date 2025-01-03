@@ -56,7 +56,7 @@
                                     <td>Vocabulary</td>
                                     <td>0</td>
                                     <td>50</td>
-                                    <td>11 Sep 2024 05:00/16 Sep 2024 05:00</td>
+                                    <td>11 Sep 05:00/16 Sep 05:00</td>
                                     <td>
                                         <div class="circle_percent" data-percent="50">
                                             <div class="circle_inner">
