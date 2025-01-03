@@ -4648,4 +4648,9 @@ Accuracy Score Card Style End
     border-radius: 20px;
     color: #333;
 }
+.collection-controls button.done-btn {
+    background-color: var(--blue);
+    color: var(--white);
+    border-color: transparent;
+}
 /* My Library Questions Collection Modal Style End */
