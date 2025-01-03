@@ -69,8 +69,18 @@
                                     </td>
                                     <td class="text-success font-weight-bold">Active</td>
                                     <td>
-                                        <a href="#" class="mr-2"><img src="/assets/default/svgs/edit-simple.svg" alt="Edit Icon"></a>
-                                        <a href="#"><img src="/assets/default/svgs/preview.svg" alt="View Icon"></a>
+                                        <div class="dropdown-box">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
+                                                </a>
+                                                <div class="dropdown-menu" style="">
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/delete.svg" alt=""> Delete</a>
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
