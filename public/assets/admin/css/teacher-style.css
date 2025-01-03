@@ -3216,6 +3216,13 @@ span.field-separated span:after {
 .listing-card {
     position: relative;
 }
+.listing-card .listing-card-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
 .featured-list-sidebar .listing-card .img-holder figure {
     width: 45px;
     height: 45px;
