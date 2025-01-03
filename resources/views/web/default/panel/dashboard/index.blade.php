@@ -173,7 +173,7 @@
             <div class="col-12">
                 <div class="progress-learning">
                     <div class="progress-learning-header">
-                        <h2>In progress learning content</h2>
+                        <h2 class="font-22">In progress learning content</h2>
                         <a href="#">View all</a>
                     </div>
                     <div class="progress-learning-inner">
