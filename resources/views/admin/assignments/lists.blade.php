@@ -58,7 +58,7 @@
                                     <td>50</td>
                                     <td>11 Sep 05:00/16 Sep 05:00</td>
                                     <td>
-                                        <div class="circle_percent" data-percent="50">
+                                        <div class="circle_percent circle-green" data-percent="50">
                                             <div class="circle_inner">
                                                 <div class="round_per" style="transform: rotate(360deg);"></div>
                                             </div>
