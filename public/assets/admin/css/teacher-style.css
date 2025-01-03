@@ -3234,9 +3234,8 @@ span.field-separated span:after {
 }
 .featured-list-sidebar .list-options li {
     font-size: 12px;
-    border: 1px solid #ddd;
     border-radius: 3px;
-    padding: 5px 5px;
+    padding: 0 8px 0 0;
 }
 .featured-list-sidebar .list-options {
     gap: 5px 5px;
