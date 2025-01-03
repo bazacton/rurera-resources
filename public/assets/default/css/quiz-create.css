@@ -1966,7 +1966,7 @@ Inline-Style From Php Files Style Start
 .rurera-droppable{width:100; border:1px solid #efefef; height:50px; display:inline-block;}  
 .rureraform-form-input-medium .rureraform-element .rureraform-input{height:auto;}
 .ui-state-highlight {margin: 0px 10px;}
-.field-holder.wrong, .form-field.wrong, .form-field.wrong label {background: #ff4a4a; color: #fff;}
+.field-holder.wrong, .form-field.wrong, .form-field.wrong label {background: #ff4a4a; color: #fff; border-color: #c23131;}
 .rurera-question-block{display:none;}
 .rurera-question-block.active{display:block;}
 
