@@ -3483,6 +3483,17 @@ span.field-separated span:after {
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.question-layout-holder:hover .question-info {
+    left: -10px;
+    opacity: 0;
+    visibility: hidden;
 }
 .question-info .q-type {
     background-color: #f2f2f2;
@@ -3521,17 +3532,22 @@ span.field-separated span:after {
 .question-add-btn {
     position: absolute;
     top: 0;
-    right: -22px;
+    right: 0;
     border: 0;
     background-color: var(--blue);
     color: #fff;
     padding: 5px 15px;
     border-radius: 3px;
+    opacity: 0;
+    visibility: hidden;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+}
+.question-layout-holder:hover .question-add-btn {
+    right: -22px;
 }
 /* Question-Layout Question-Top-Info Style End */
 
