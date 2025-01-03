@@ -81,26 +81,28 @@
                                 </div>
                                 <div class="featured-list-sidebar-inner">
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
-                                        <div class="img-holder">
-                                            <figure>
-                                                <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
-                                            </figure>
-                                        </div>
-                                        <div class="text-holder">
-                                            <h3><a href="#">Sciency Science</a></h3>
-                                            <div class="author-info">
-                                                <span class="info-text">
-                                                    <span>Kaiser K</span>
-                                                    <span>2 hours ago</span>
-                                                </span>
+                                        <a href="#" class="listing-card-link">
+                                            <div class="img-holder">
+                                                <figure>
+                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                                </figure>
                                             </div>
-                                        </div>
-                                        <ul class="list-options">
-                                            
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 8 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 7th-8th  Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
-                                        </ul>
+                                            <div class="text-holder">
+                                                <h3>Sciency Science</h3>
+                                                <div class="author-info">
+                                                    <span class="info-text">
+                                                        <span>Kaiser K</span>
+                                                        <span>2 hours ago</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="list-options">
+                                                
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 8 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 7th-8th  Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
+                                            </ul>
+                                        </a>
                                     </div>
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <div class="img-holder">
