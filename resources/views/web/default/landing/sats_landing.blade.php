@@ -734,7 +734,7 @@
                 </div>
                 <div class="col-12 col-lg-12 col-md-12">
                     <div class="row">
-                        <div class="col-12 col-lg-3 col-md-6" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="500" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
+                        <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
                                 <img src="../assets/default/svgs/exam-multiple-white.svg" width="50" height="50" alt="#" />
                                 <h3 class="text-white">100+ SATs practices</h3>
