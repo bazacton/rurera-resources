@@ -105,138 +105,150 @@
                                         </a>
                                     </div>
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
-                                        <div class="img-holder">
-                                            <figure>
-                                                <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
-                                            </figure>
-                                        </div>
-                                        <div class="text-holder">
-                                            <h3><a href="#">Maths Magic Adventure</a></h3>
-                                            <div class="author-info">
-                                                <span class="info-text">
-                                                    <span>Jane D</span>
-                                                    <span>5 hours ago</span>
-                                                </span>
+                                        <a href="#" class="listing-card-link">
+                                            <div class="img-holder">
+                                                <figure>
+                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                                </figure>
                                             </div>
-                                        </div>
-                                        <ul class="list-options">
+                                            <div class="text-holder">
+                                                <h3>Maths Magic Adventure</h3>
+                                                <div class="author-info">
+                                                    <span class="info-text">
+                                                        <span>Jane D</span>
+                                                        <span>5 hours ago</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="list-options">
 
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 3rd-5th Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/mathematical.svg" alt=""></span> Math</li>
-                                        </ul>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 3rd-5th Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/mathematical.svg" alt=""></span> Math</li>
+                                            </ul>
+                                        </a>
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
-                                        <div class="img-holder">
-                                            <figure>
-                                                <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
-                                            </figure>
-                                        </div>
-                                        <div class="text-holder">
-                                            <h3><a href="#">Grammar Genius Challenge</a></h3>
-                                            <div class="author-info">
-                                                <span class="info-text">
-                                                    <span>Mark T</span>
-                                                    <span>1 day ago</span>
-                                                </span>
+                                        <a href="#" class="listing-card-link">
+                                            <div class="img-holder">
+                                                <figure>
+                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                                </figure>
                                             </div>
-                                        </div>
-                                        <ul class="list-options">
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 15 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 4th-6th Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> English</li>
-                                        </ul>
+                                            <div class="text-holder">
+                                                <h3>Grammar Genius Challenge</h3>
+                                                <div class="author-info">
+                                                    <span class="info-text">
+                                                        <span>Mark T</span>
+                                                        <span>1 day ago</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="list-options">
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 15 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 4th-6th Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> English</li>
+                                            </ul>
+                                        </a>
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
-                                        <div class="img-holder">
-                                            <figure>
-                                                <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
-                                            </figure>
-                                        </div>
-                                        <div class="text-holder">
-                                            <h3><a href="#">History Trivia Quest</a></h3>
-                                            <div class="author-info">
-                                                <span class="info-text">
-                                                    <span>Lucy W</span>
-                                                    <span>2 days ago</span>
-                                                </span>
+                                        <a href="#" class="listing-card-link">
+                                            <div class="img-holder">
+                                                <figure>
+                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                                </figure>
                                             </div>
-                                        </div>
-                                        <ul class="list-options">
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 12 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 6th-8th Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> History</li>
-                                        </ul>
+                                            <div class="text-holder">
+                                                <h3>History Trivia Quest</h3>
+                                                <div class="author-info">
+                                                    <span class="info-text">
+                                                        <span>Lucy W</span>
+                                                        <span>2 days ago</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="list-options">
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 12 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 6th-8th Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> History</li>
+                                            </ul>
+                                        </a>
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
-                                        <div class="img-holder">
-                                            <figure>
-                                                <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
-                                            </figure>
-                                        </div>
-                                        <div class="text-holder">
-                                            <h3><a href="#">Artistic Impressions Puzzle</a></h3>
-                                            <div class="author-info">
-                                                <span class="info-text">
-                                                    <span>Sara L</span>
-                                                    <span>3 days ago</span>
-                                                </span>
+                                        <a href="#" class="listing-card-link">
+                                            <div class="img-holder">
+                                                <figure>
+                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                                </figure>
                                             </div>
-                                        </div>
-                                        <ul class="list-options">
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 5 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 1st-3rd Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Art</li>
-                                        </ul>
+                                            <div class="text-holder">
+                                                <h3>Artistic Impressions Puzzle</h3>
+                                                <div class="author-info">
+                                                    <span class="info-text">
+                                                        <span>Sara L</span>
+                                                        <span>3 days ago</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="list-options">
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 5 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 1st-3rd Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Art</li>
+                                            </ul>
+                                        </a>
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
-                                        <div class="img-holder">
-                                            <figure>
-                                                <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
-                                            </figure>
-                                        </div>
-                                        <div class="text-holder">
-                                            <h3><a href="#">Science Exploration Mission</a></h3>
-                                            <div class="author-info">
-                                                <span class="info-text">
-                                                    <span>Alex P</span>
-                                                    <span>5 hours ago</span>
-                                                </span>
+                                        <a href="#" class="listing-card-link">
+                                            <div class="img-holder">
+                                                <figure>
+                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                                </figure>
                                             </div>
-                                        </div>
-                                        <ul class="list-options">
+                                            <div class="text-holder">
+                                                <h3>Science Exploration Mission</h3>
+                                                <div class="author-info">
+                                                    <span class="info-text">
+                                                        <span>Alex P</span>
+                                                        <span>5 hours ago</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="list-options">
 
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 8 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 2nd-5th Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
-                                        </ul>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 8 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 2nd-5th Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
+                                            </ul>
+                                        </a>
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
-                                        <div class="img-holder">
-                                            <figure>
-                                                <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
-                                            </figure>
-                                        </div>
-                                        <div class="text-holder">
-                                            <h3><a href="#">Geography World Challenges</a></h3>
-                                            <div class="author-info">
-                                                <span class="info-text">
-                                                    <span>Chris B</span>
-                                                    <span>4 hours ago</span>
-                                                </span>
+                                        <a href="#" class="listing-card-link">
+                                            <div class="img-holder">
+                                                <figure>
+                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                                </figure>
                                             </div>
-                                        </div>
-                                        <ul class="list-options">
+                                            <div class="text-holder">
+                                                <h3>Geography World Challenges</h3>
+                                                <div class="author-info">
+                                                    <span class="info-text">
+                                                        <span>Chris B</span>
+                                                        <span>4 hours ago</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="list-options">
 
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 6 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 5th-7th Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Geography</li>
-                                        </ul>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 6 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 5th-7th Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Geography</li>
+                                            </ul>
+                                        </a>
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
