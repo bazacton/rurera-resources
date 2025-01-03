@@ -1329,7 +1329,10 @@
                     <textarea name="description" placeholder="Type description here..."></textarea>
                     <span class="description-count">0/400</span>
                 </div>
-                <p>Let your learner know a title about the learning path</p>
+                <div class="general-knowledge-controls">
+                    <button type="button" class="create-question-btn">Create question</button>
+                    <button type="button" class="cancel-question-btn">Cancel</button>
+                </div>
             </div>
             </div>
         </div>
