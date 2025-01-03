@@ -4641,7 +4641,7 @@ Accuracy Score Card Style End
     justify-content: space-between;
 }
 .collection-controls button,
-.general-knowledge-controls button {
+.general-knowledge-modal .general-knowledge-controls button {
     border: 1px solid #ddd;
     background-color: inherit;
     padding: 5px 15px;
