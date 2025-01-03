@@ -560,6 +560,9 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .assignments-table table.table .circle_percent {
     font-size: 40px;
 }
+.assignments-table table.table .circle_percent .percent_text {
+    font-size: 10px;
+}
 .assignments-table table.table tbody tr td:last-child,
 .assignments-table table.table thead tr th:last-child {
     text-align: center !important;
