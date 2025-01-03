@@ -538,7 +538,6 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     height: auto !important;
     line-height: normal;
     background-color: inherit;
-    vertical-align: top !important;
     border: 0;
     font-size: 14px;
     text-align: left !important;
