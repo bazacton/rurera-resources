@@ -473,7 +473,7 @@
                                 <div class="view-explanation">
                                     <div class="explanation-controls d-flex align-items-center">
                                         <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list1" aria-expanded="false" aria-controls="explanation-list">
-                                            <i class="fas fa-plus"></i> Add Explanation
+                                            <i class="fas fa-plus"></i> Explanation
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list1">
@@ -684,7 +684,7 @@
                                 <div class="view-explanation">
                                     <div class="explanation-controls d-flex align-items-center">
                                         <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list2" aria-expanded="false" aria-controls="explanation-list">
-                                            <i class="fas fa-plus"></i> Add Explanation
+                                            <i class="fas fa-plus"></i> Explanation
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list2">
@@ -798,7 +798,7 @@
                                 <div class="view-explanation">
                                     <div class="explanation-controls d-flex align-items-center">
                                         <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list3" aria-expanded="false" aria-controls="explanation-list">
-                                            <i class="fas fa-plus"></i> Add Explanation
+                                            <i class="fas fa-plus"></i> Explanation
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list3">
