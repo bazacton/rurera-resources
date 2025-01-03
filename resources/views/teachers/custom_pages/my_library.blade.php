@@ -1358,4 +1358,11 @@ $(document).ready(function () {
 
 });
 </script>
+<script>
+$(document).ready(function() {
+    $("#general-tab, #collection-tab").on("click", function() {
+        $(this).removeClass("active");
+    });
+});
+</script>
 @endpush
