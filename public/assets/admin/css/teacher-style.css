@@ -3527,6 +3527,11 @@ span.field-separated span:after {
     color: #fff;
     padding: 5px 15px;
     border-radius: 3px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 /* Question-Layout Question-Top-Info Style End */
 
