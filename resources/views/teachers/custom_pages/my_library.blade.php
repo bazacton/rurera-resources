@@ -466,13 +466,13 @@
                                                     <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
                                                     <div class="form-box ">
                                                         <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined wrong">
                                                             <input class="editor-field" type="radio" name="field-40008" id="field-40008-0" value="True">
                                                             <label for="field-40008-0">
                                                             <span class="inner-label">True</span>
                                                             </label>
                                                         </div>
-                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined correct">
                                                             <input class="editor-field" type="radio" name="field-40008" id="field-40008-1" value="False">
                                                             <label for="field-40008-1">
                                                             <span class="inner-label">False</span>
