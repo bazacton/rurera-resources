@@ -1452,15 +1452,9 @@ Lms Responsive Style Start
     .profile-info-box .user-actions {flex-direction: row !important; margin-top: 15px; width: 100%; justify-content: center;}
     .profile-info-box .user-actions button.btn-border-white {margin-top: 0 !important; margin-left: 10px; border-radius: 5px !important;}
     .reward-program-section .font-16,
-    .newsletter-inner .font-16, .testimonials-card .font-16 {
-        font-size: 1rem !important;
-    }
-    .example-reward-card .font-12 {
-        font-size: 14px;
-    }
-    .newsletter-inner .text-white, .testimonials-card p {
-        color: #000 !important;
-    }
+    .newsletter-inner .font-16, .testimonials-card .font-16 {font-size: 1rem !important;}
+    .example-reward-card .font-12 {font-size: 14px;}
+    .newsletter-inner .text-white, .testimonials-card p {color: #000 !important;}
     .reward-program-section .btn-outline-primary {color: #000; border-color: #000;}
     .lms-checkbox-img.rurera-in-row .field-holder, 
     .lms-checkbox-img.rurera-in-row .form-field, 
@@ -1472,6 +1466,7 @@ Lms Responsive Style Start
     .activities-container .filters-list {padding-right: 0;}
     .generatePassword, .username-auto-generate {position: relative; right: 0; top: 0; -webkit-transform: none; -ms-transform: none; transform: none; display: block; text-align: right; margin-top: 5px;}
     .home-sections:has(.blog-grid-card) .d-flex {flex-wrap: wrap; gap: 10px 0;}
+    .plan-inner {padding-right: 25px;}
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
