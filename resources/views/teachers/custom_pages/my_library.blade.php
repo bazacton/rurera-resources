@@ -96,9 +96,10 @@
                                             </div>
                                         </div>
                                         <ul class="list-options">
+                                            
                                             <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 8 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 1st-4th Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Science</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 7th-8th  Grade</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
                                         </ul>
                                     </div>
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
@@ -117,9 +118,10 @@
                                             </div>
                                         </div>
                                         <ul class="list-options">
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 10 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 3rd-5th Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Math</li>
+
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 3rd-5th Grade</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/mathematical.svg" alt=""></span> Math</li>
                                         </ul>
                                     </div>
 
@@ -139,9 +141,9 @@
                                             </div>
                                         </div>
                                         <ul class="list-options">
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 15 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 4th-6th Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> English</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 15 questions</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 4th-6th Grade</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> English</li>
                                         </ul>
                                     </div>
 
@@ -161,9 +163,9 @@
                                             </div>
                                         </div>
                                         <ul class="list-options">
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 12 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 6th-8th Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> History</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 12 questions</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 6th-8th Grade</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> History</li>
                                         </ul>
                                     </div>
 
@@ -183,9 +185,9 @@
                                             </div>
                                         </div>
                                         <ul class="list-options">
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 5 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 1st-3rd Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Art</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 5 questions</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 1st-3rd Grade</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Art</li>
                                         </ul>
                                     </div>
 
@@ -205,9 +207,10 @@
                                             </div>
                                         </div>
                                         <ul class="list-options">
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 8 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 2nd-5th Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Science</li>
+
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 8 questions</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 2nd-5th Grade</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
                                         </ul>
                                     </div>
 
@@ -227,9 +230,10 @@
                                             </div>
                                         </div>
                                         <ul class="list-options">
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 6 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 5th-7th Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Geography</li>
+
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 6 questions</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 5th-7th Grade</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Geography</li>
                                         </ul>
                                     </div>
 
@@ -249,9 +253,10 @@
                                             </div>
                                         </div>
                                         <ul class="list-options">
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 10 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 6th-8th Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Technology</li>
+
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 6th-8th  Grade</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Technology</li>
                                         </ul>
                                     </div>
 
@@ -271,9 +276,10 @@
                                             </div>
                                         </div>
                                         <ul class="list-options">
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 8 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 1st-3rd Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Biology</li>
+                                            
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 6th-8th  Grade</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Biology</li>
                                         </ul>
                                     </div>
 
@@ -293,9 +299,10 @@
                                             </div>
                                         </div>
                                         <ul class="list-options">
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 12 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 5th-8th Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Physics</li>
+
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 5th-8th  Grade</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Physics</li>
                                         </ul>
                                     </div>
 
@@ -315,9 +322,10 @@
                                             </div>
                                         </div>
                                         <ul class="list-options">
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 10 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> 7th-8th Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/list-view.svg" alt=""></span> Chemistry</li>
+                                            
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 7th-8th  Grade</li>
+                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Chemistry</li>
                                         </ul>
                                     </div>
                                 </div>
