@@ -42,22 +42,21 @@
                         <table class="table mb-0">
                             <thead class="thead-light">
                                 <tr>
-                                    <th>Title</th>
                                     <th>Type</th>
-                                    <th>Total Questions</th>
-                                    <th>Start Date</th>
-                                    <th>End Date</th>
+                                    <th>Questions</th>
+                                    <th>Participations</th>
+                                    <th>Start & End Date</th>
+                                    <th>Accuracy</th>
                                     <th>Status</th>
                                     <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Test</td>
                                     <td>Vocabulary</td>
                                     <td>0</td>
-                                    <td>11 Sep 2024 05:00</td>
-                                    <td>16 Sep 2024 05:00</td>
+                                    <td>50</td>
+                                    <td>11 Sep 2024 05:00/16 Sep 2024 05:00</td>
                                     <td class="text-success font-weight-bold">Active</td>
                                     <td>
                                         <a href="#" class="mr-2"><img src="/assets/default/svgs/edit-simple.svg" alt="Edit Icon"></a>
