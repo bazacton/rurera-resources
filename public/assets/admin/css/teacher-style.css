@@ -3249,6 +3249,14 @@ span.field-separated span:after {
 .featured-list-sidebar .listing-card .text-holder h3 a {
     font-weight: 600;
 }
+.featured-list-sidebar .load-more-btn {
+    width: 100%;
+    border: 0;
+    background-color: var(--blue);
+    color: #ddd;
+    padding: 5px 0;
+    border-radius: 5px;
+}
 .featured-filters {
     display: flex;
     align-items: center;
