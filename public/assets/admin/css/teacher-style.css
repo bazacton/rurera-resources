@@ -3548,6 +3548,8 @@ span.field-separated span:after {
 }
 .question-layout-holder:hover .question-add-btn {
     right: -22px;
+    opacity: 1;
+    visibility: visible;
 }
 /* Question-Layout Question-Top-Info Style End */
 
