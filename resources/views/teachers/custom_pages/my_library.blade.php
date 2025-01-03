@@ -1233,7 +1233,7 @@
                     </div>
                 </div>
             </div>
-            <div class="general-knowledge-content tab-pane fade" id="general-knowledge" aria-labelledby="general-tab">
+            <div class="general-knowledge-content tab-pane fade p-0" id="general-knowledge" aria-labelledby="general-tab">
                 <div class="modal-header">
                     <div class="img-holder">
                         <figure>
