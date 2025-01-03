@@ -3254,6 +3254,7 @@ span.field-separated span:after {
 .featured-list-sidebar .listing-card.active,
 .listing-card.active:after {
     border-color: var(--blue);
+    background-color: #f6faff !important;
 }
 .featured-list-sidebar .list-options li {
     font-size: 12px;
