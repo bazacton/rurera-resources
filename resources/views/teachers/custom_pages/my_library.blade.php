@@ -623,7 +623,7 @@
                                                             <span class="q-time">Avg time</span>
                                                             <span class="q-point">1 point</span>
                                                         </div>
-                                                        <button type="button" class="question-add-btn">Add</button>
+                                                        <button type="button" class="question-add-btn" data-toggle="modal" data-target="#general-knowledge-modal">Add</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1192,6 +1192,114 @@
         </div>
     </div>
 </section>
+<div class="modal fade general-knowledge-modal" id="general-knowledge-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <div class="img-holder">
+            <figure>
+                <img src="/assets/default/img/ecommerce-img.webp" alt="">
+                <figcaption>
+                    <div class="upload-box">
+                        <input type="file" id="upload-thumbnail">
+                        <label for="upload-thumbnail"><img src="/assets/default/svgs/file-image.svg" alt=""> Upload thumbnail</label>
+                    </div>
+                    <div class="book-btn">
+                        <button type="button"><img src="/assets/default/svgs/book-saved.svg" alt=""></button>
+                    </div>
+                </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="text-holder">
+            <h2 class="editable" contenteditable="true">General Knowledge &amp; Methodology</h2>
+            <ul>
+                <li>
+                    <img src="/assets/default/svgs/title.svg" alt="">
+                    <input type="text" placeholder="Title" title="Title">
+                    <div class="dropdown">
+                        <button class="btn-link dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Choose Category
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="generalMenu" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(30px, 30px, 0px);">
+                           <div class="select-categories-holder">
+                                <div class="selected-category">
+                                    <a href="#">Prototyping</a>
+                                </div>
+                                <div class="categories">
+                                    <span>Select category or create one</span>
+                                    <a href="#" class="active">Prototyping</a>
+                                    <a href="#">UI/UX</a>
+                                    <a href="#">Design</a>
+                                    <a href="#">Card</a>
+                                    <a href="#">Not Urgent</a>
+                                    <a href="#">Line</a>
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="/assets/default/svgs/grades.svg" alt="">
+                    <input type="text" placeholder="Grade" title="Grade">
+                    <em>Empty</em>
+                </li>
+                <li>
+                    <img src="/assets/default/svgs/book-saved.svg" alt="">
+                    <input type="text" placeholder="Subject" title="Subject">
+                    <em>Empty</em>
+                </li>
+                <li>
+                    <img src="/assets/default/svgs/teacher-with-stick.svg" alt="">
+                    <input type="text" placeholder="Co-teacher" title="Co-teacher">
+                    <div class="dropdown">
+                        <button class="btn-link dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select Language
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="generalMenu" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(30px, 30px, 0px);">
+                           <div class="select-languages-holder">
+                                <div class="languages">
+                                    <span>Select Languages</span>
+                                    <a href="#" class="active">English</a>
+                                    <a href="#">Deutsch</a>
+                                    <a href="#">Espanol</a>
+                                    <a href="#">Francais</a>
+                                    <a href="#">Italian</a>
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="/assets/default/svgs/calendar-days.svg" alt="">
+                    <input type="text" placeholder="Start Date" title="Start Date">
+                    <em>Empty</em>
+                </li>
+                <li>
+                    <img src="/assets/default/svgs/deadlines.svg" alt="">
+                    <input type="text" placeholder="Deadline :" title="Deadline :">
+                    <em>Empty</em>
+                </li>
+                <li>
+                    <img src="/assets/default/svgs/attempt.svg" alt="">
+                    <input type="text" placeholder="Participant attempts :" title="Participant attempts :">
+                    <em>Empty</em>
+                </li>
+            </ul>
+            <div class="description-field">
+                <textarea name="description" placeholder="Type description here..."></textarea>
+                <span class="description-count">0/400</span>
+            </div>
+            <p>Let your learner know a title about the learning path</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 
 @endsection
 
@@ -1207,21 +1315,6 @@ $(document).ready(function () {
         autohidemode: true // Auto-hide enabled initially
     });
 
-});
-</script>
-<script>
-$(document).ready(function() {
-    $(".question-add-btn, .rureraform-admin-popup-title a").click(function(e) {
-        e.stopPropagation();
-        $(".canvas-editable-options-holder").toggleClass("active");
-    });
-
-    $(document).mouseup(function(e) {
-        var container = $(".canvas-editable-options-holder");
-        if (!container.is(e.target) && container.has(e.target).length === 0) {
-            container.removeClass("active");
-        }
-    });
 });
 </script>
 @endpush
