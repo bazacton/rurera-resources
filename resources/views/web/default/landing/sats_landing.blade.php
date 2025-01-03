@@ -689,7 +689,7 @@
     </section>
     <section class="home-sections home-sections-swiper container find-instructor-section position-relative">
         <div class="row align-items-center">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6" data-aos-once="true" data-aos="fade-right" data-aos-anchor=".find-instructor-section" data-aos-offset="100" data-aos-duration="3000">
                 <div class="">
                     <div class="section-title section-inner-title">
                         <h2 class="font-40 text-dark">Enhance Learning with SATs Papers</h2>
@@ -706,7 +706,7 @@
                     <div class="flex-grow-1 ml-15"></div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 mt-20 mt-lg-0">
+            <div class="col-12 col-lg-6 mt-20 mt-lg-0" data-aos-once="true" data-aos="fade-left" data-aos-anchor=".find-instructor-section" data-aos-offset="200" data-aos-duration="3000">
                 <div class="position-relative img-holder">
                     <img src="/store/1/default_images/home_sections_banners/lesson-topics.jpg" width="400" height="460" class="find-instructor-section-hero" alt="Have a Question? Ask it in forum and get answer" />
                     <img src="/assets/default/img/home/circle-4.png" width="170" height="170" class="find-instructor-section-circle" alt="circle" />
@@ -723,7 +723,7 @@
     <section class="choose-sats choose-sats-section py-80 mt-90">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".choose-sats">
                     <div class="section-title text-center mb-50">
                         <h2 class="mt-0 mb-10 text-white font-40"> Ignite Your Path to Success with 100+ SATs practices</h2>
                         <p class="font-19 text-white">
