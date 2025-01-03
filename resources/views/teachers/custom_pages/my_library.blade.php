@@ -1195,7 +1195,8 @@
 <div class="modal fade general-knowledge-modal" id="general-knowledge-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
-        <div class="questions-collection">
+        <div ></div>
+        <div class="questions-collection tab-pane fade show active">
             <div class="questions-collection-inner">
                 <h3>Add this questions to a collection</h3>
                 <div class="questions-collection-fields">
@@ -1229,7 +1230,7 @@
                 </div>
             </div>
         </div>
-        <div class="general-knowledge-content">
+        <div class="general-knowledge-content tab-pane fade">
             <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
