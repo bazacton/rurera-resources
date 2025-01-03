@@ -1229,7 +1229,7 @@
                     </div>
                     <div class="collection-controls">
                         <button type="button" id="general-tab" data-toggle="tab" data-target="#general-knowledge">Create a new collection</button>
-                        <button type="button">Done</button>
+                        <button type="button" class="done-btn">Done</button>
                     </div>
                 </div>
             </div>
@@ -1331,8 +1331,8 @@
                             <span class="description-count">0/400</span>
                         </div>
                         <div class="general-knowledge-controls d-flex align-items-center justify-content-between">
-                            <button type="button" class="create-question-btn btn">Create question</button>
-                            <button type="button" class="cancel-question-btn btn" id="collection-tab" data-toggle="tab" data-target="#collection">Cancel</button>
+                            <button type="button" class="create-question-btn">Create question</button>
+                            <button type="button" class="cancel-question-btn" id="collection-tab" data-toggle="tab" data-target="#collection">Cancel</button>
                         </div>
                     </div>
                 </div>
