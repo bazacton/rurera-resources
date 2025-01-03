@@ -267,7 +267,7 @@
     <section class="lms-search-services mb-0 mt-0 pt-80 pb-60">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".lms-search-services">
                     <div class="section-title text-center mb-50">
                         <h2 class="mt-0 mb-10 text-white font-40">Master the SATs with Rurera
                         </h2>
@@ -278,7 +278,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" data-aos-anchor=".lms-search-services" data-aos-delay="1000">
                     <div class="process-holder">
                         <ul class="process-list d-flex justify-content-center steps-3 has-bg">
                             <li class="process-item"><a href="#" class="text-white">step 1</a></li>
@@ -287,7 +287,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" data-aos-anchor=".lms-search-services" data-aos-delay="1000">
                     <div class="process-card-holder">
                         <div class="row">
                             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
