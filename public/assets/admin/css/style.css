@@ -558,6 +558,9 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     height: 15px;
     width: 15px;
 }
+.assignments-table table.table .circle_percent {
+    font-size: 40px;
+}
 /* Assignments New Table Style End */
 
 @media (max-width: 575.98px) {
