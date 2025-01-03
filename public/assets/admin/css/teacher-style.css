@@ -3251,6 +3251,10 @@ span.field-separated span:after {
 .featured-list-sidebar .listing-card {
     align-items: flex-start;
 }
+.featured-list-sidebar .listing-card.active,
+.listing-card.active:after {
+    border-color: var(--blue);
+}
 .featured-list-sidebar .list-options li {
     font-size: 12px;
     border-radius: 3px;
