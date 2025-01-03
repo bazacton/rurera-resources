@@ -26,7 +26,7 @@
     <section class="position-relative job-singup-sub-header gallery-sub-header page-sub-header pb-80 pt-80 mb-0">
         <div class="container h-100">
             <div class="row h-100">
-                <div class="col-12 col-md-12 col-lg-6">
+                <div class="col-12 col-md-12 col-lg-6" data-aos-once="true" data-aos="fade-right" data-aos-anchor=".gallery-sub-header" data-aos-offset="100" data-aos-duration="3000">
                     <h1 class="font-72 font-weight-bold">Mastering <span class="text-scribble mr-10">SATs</span> with confidence.</h1>
                     <h2 class="mb-15 font-30">Maximize Your Performance: Boost your sats scores.
                     </h2>
@@ -57,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <div class="masonry-grid-gallery has-bg simple">
+        <div class="masonry-grid-gallery has-bg simple" data-aos-once="true" data-aos="fade-left" data-aos-anchor=".gallery-sub-header" data-aos-offset="200" data-aos-duration="3000">
             <div class="masonry-grid">
                 <div class="row">
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
