@@ -1329,9 +1329,9 @@
                     <textarea name="description" placeholder="Type description here..."></textarea>
                     <span class="description-count">0/400</span>
                 </div>
-                <div class="general-knowledge-controls">
-                    <button type="button" class="create-question-btn">Create question</button>
-                    <button type="button" class="cancel-question-btn">Cancel</button>
+                <div class="general-knowledge-controls d-flex align-items-center justify-content-between">
+                    <button type="button" class="create-question-btn btn">Create question</button>
+                    <button type="button" class="cancel-question-btn btn">Cancel</button>
                 </div>
             </div>
             </div>
