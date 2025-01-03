@@ -416,7 +416,9 @@
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list1">
-                                        <p>Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm.</p>
+                                        <div class="explanation-text-holder">
+                                            <p>Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
