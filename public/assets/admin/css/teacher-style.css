@@ -3212,7 +3212,7 @@ span.field-separated span:after {
 .featured-list-sidebar-inner {
     overflow-y: hidden;
     height: 1390px;
-    padding: 0 15px;
+    padding: 0 15px 15px;
 }
 .listing-card {
     position: relative;
