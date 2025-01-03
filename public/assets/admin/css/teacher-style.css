@@ -4576,3 +4576,75 @@ Accuracy Score Card Style End
 .parent-child-table .child-level-3 td {
     background-color: #ffffff;
 }
+
+/* My Library Questions Collection Modal Style Start */
+.tab-content .questions-collection {
+    padding: 30px;
+}
+.questions-collection h3 {
+    font-size: 20px;
+    color: #333;
+}
+.questions-collection input[type="text"] {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    height: 46px;
+    width: 100%;
+    padding: 0 15px;
+}
+.questions-collection .field-holder {
+    margin-bottom: 10px;
+}
+.collection-item {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin: 0 0 10px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.collection-item .img-holder {
+    width: 75px;
+    height: 70px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    padding: 0;
+}
+.collection-item .img-holder:before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    height: 4px;
+    width: 100%;
+    ranslateX(-50%);
+    border: 1px solid #ddd;
+    left: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.collection-item h4 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    color: #333;
+}
+.collection-item span {
+    display: block;
+    line-height: normal;
+    padding: 3px 0 0;
+}
+.collection-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.collection-controls button {
+    border: 1px solid #ddd;
+    background-color: inherit;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+/* My Library Questions Collection Modal Style End */
