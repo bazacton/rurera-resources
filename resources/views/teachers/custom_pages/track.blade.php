@@ -104,7 +104,7 @@
                                                     <div class="circle_inbox">
                                                         <span class="percent_text">50%</span>
                                                     </div>
-                                                <div class="circle_inbox"><span class="percent_text">50%</span></div></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
