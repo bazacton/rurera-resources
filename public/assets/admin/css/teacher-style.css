@@ -4649,6 +4649,11 @@ Accuracy Score Card Style End
     border-radius: 20px;
     color: #333;
 }
+.general-knowledge-modal .general-knowledge-controls .cancel-question-btn {
+    background-color: #ff6363;
+    border-color: transparent;
+    color: #fff;
+}
 .collection-controls button.done-btn {
     background-color: var(--blue);
     color: var(--white);
