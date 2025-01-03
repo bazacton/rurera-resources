@@ -3550,6 +3550,9 @@ span.field-separated span:after {
     opacity: 1;
     visibility: visible;
 }
+.admin_teacher_role:has(.canvas-editable-options-holder.active) .main-sidebar {
+    display: none;
+}
 /* Question-Layout Question-Top-Info Style End */
 
 .listing-dropdown {
