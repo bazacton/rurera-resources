@@ -57,7 +57,16 @@
                                     <td>0</td>
                                     <td>50</td>
                                     <td>11 Sep 2024 05:00/16 Sep 2024 05:00</td>
-                                    <td>Accuracy</td>
+                                    <td>
+                                        <div class="circle_percent" data-percent="50">
+                                            <div class="circle_inner">
+                                                <div class="round_per" style="transform: rotate(360deg);"></div>
+                                            </div>
+                                            <div class="circle_inbox">
+                                                <span class="percent_text">50%</span>
+                                            </div>
+                                        </div>
+                                    </td>
                                     <td class="text-success font-weight-bold">Active</td>
                                     <td>
                                         <a href="#" class="mr-2"><img src="/assets/default/svgs/edit-simple.svg" alt="Edit Icon"></a>
