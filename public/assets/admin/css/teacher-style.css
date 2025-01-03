@@ -4579,6 +4579,11 @@ Accuracy Score Card Style End
 }
 
 /* My Library Questions Collection Modal Style Start */
+.questions-collection-inner {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+}
 .tab-content .questions-collection {
     padding: 30px;
 }
@@ -4640,6 +4645,7 @@ Accuracy Score Card Style End
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: auto;
 }
 .collection-controls button,
 .general-knowledge-modal .general-knowledge-controls button {
