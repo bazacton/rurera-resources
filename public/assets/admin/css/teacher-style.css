@@ -13,6 +13,9 @@
     scrollbar-gutter: stable;
     padding-right: 0 !important;
 }
+
+.admin_teacher_role .ui-sortable-handle,
+.admin_teacher_role .sort-handler {cursor: none;}
 /* Admin Left Menue Style Start */
 .admin_teacher_role .main-sidebar {
     background-color: #fff;
