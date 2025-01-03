@@ -1228,7 +1228,7 @@
                         </div>
                     </div>
                     <div class="collection-controls">
-                        <button type="button" id="general-tab" data-toggle="tab" data-target="#general-knowledge">Create a new collection</button>
+                        <button type="button" class="active" id="general-tab" data-toggle="tab" data-target="#general-knowledge">Create a new collection</button>
                         <button type="button">Done</button>
                     </div>
                 </div>
