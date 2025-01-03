@@ -101,7 +101,6 @@
                                             <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 7th-8th  Grade</li>
                                             <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
                                         </ul>
-                                        <button class="load-more-btn"><i class="fas fa-plus"></i> Load More</button>
                                     </div>
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <div class="img-holder">
@@ -329,6 +328,7 @@
                                             <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Chemistry</li>
                                         </ul>
                                     </div>
+                                    <button class="load-more-btn"><i class="fas fa-plus"></i> Load More</button>
                                 </div>
                             </div>
                         </div>
