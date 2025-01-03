@@ -1209,4 +1209,19 @@ $(document).ready(function () {
 
 });
 </script>
+<script>
+$(document).ready(function() {
+    $(".question-add-btn .rureraform-admin-popup-title a").click(function(e) {
+        e.stopPropagation();
+        $(".canvas-editable-options-holder").toggleClass("active");
+    });
+
+    $(document).mouseup(function(e) {
+        var container = $(".canvas-editable-options-holder");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            container.removeClass("active");
+        }
+    });
+});
+</script>
 @endpush
