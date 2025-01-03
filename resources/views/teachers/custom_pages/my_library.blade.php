@@ -623,6 +623,7 @@
                                                             <span class="q-time">Avg time</span>
                                                             <span class="q-point">1 point</span>
                                                         </div>
+                                                        <button type="button" class="question-add-btn">Add</button>
                                                     </div>
                                                 </div>
                                             </div>
