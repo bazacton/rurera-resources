@@ -3546,7 +3546,7 @@ span.field-separated span:after {
     transition: all 0.3s ease-out;
 }
 .question-layout-holder:hover .question-add-btn {
-    right: -22px;
+    right: -10px;
     opacity: 1;
     visibility: visible;
 }
