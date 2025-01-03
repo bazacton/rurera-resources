@@ -567,6 +567,10 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .assignments-table table.table thead tr th:last-child {
     text-align: center !important;
 }
+.assignments-table .circle-green .round_per, 
+.assignments-table .circle-green.percent_more:after {
+    background: #47c363;
+}
 /* Assignments New Table Style End */
 
 @media (max-width: 575.98px) {
