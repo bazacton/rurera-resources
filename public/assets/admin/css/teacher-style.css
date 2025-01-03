@@ -1726,6 +1726,7 @@ Tailer Hub Style Start
 }
 .question-layout-holder {
     position: relative;
+    overflow: hidden;
 }
 .quiz-layout-edit-options {
     display: flex;
@@ -3491,9 +3492,7 @@ span.field-separated span:after {
     transition: all 0.3s ease-out;
 }
 .question-layout-holder:hover .question-info {
-    left: -10px;
-    opacity: 0;
-    visibility: hidden;
+    left: 400px;
 }
 .question-info .q-type {
     background-color: #f2f2f2;
@@ -3532,7 +3531,7 @@ span.field-separated span:after {
 .question-add-btn {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -50px;
     border: 0;
     background-color: var(--blue);
     color: #fff;
