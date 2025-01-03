@@ -15,7 +15,7 @@
 }
 
 .admin_teacher_role .ui-sortable-handle,
-.admin_teacher_role .sort-handler {cursor: none;}
+.admin_teacher_role .sort-handler {cursor: auto;}
 /* Admin Left Menue Style Start */
 .admin_teacher_role .main-sidebar {
     background-color: #fff;
