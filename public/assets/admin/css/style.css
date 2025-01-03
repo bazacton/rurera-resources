@@ -947,8 +947,8 @@ body, html {min-height: 100%;}
 body {background-color: #fff; font-size: 14px; font-weight: 400; font-family: "Nunito", "Segoe UI", arial; color: #6c757d;}
 a.bb {text-decoration: none; border-bottom: 1px solid var(--primary); padding-bottom: 1px;}
 .form-divider {display: inline-block; width: 100%; margin: 10px 0; font-size: 16px; font-weight: 600;}
-/* .ui-sortable-handle,
-.sort-handler {cursor: move;} */
+.ui-sortable-handle,
+.sort-handler {cursor: move;}
 .text-job {font-size: 10px; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; color: #34395e;}
 .text-time {font-size: 12px; color: #666; font-weight: 500; margin-bottom: 10px;}
 .bullet, .slash {display: inline; margin: 0 4px;}
