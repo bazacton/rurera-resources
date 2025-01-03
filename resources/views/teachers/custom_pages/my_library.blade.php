@@ -1211,7 +1211,7 @@ $(document).ready(function () {
 </script>
 <script>
 $(document).ready(function() {
-    $(".question-add-btn .rureraform-admin-popup-title a").click(function(e) {
+    $(".question-add-btn, .rureraform-admin-popup-title a").click(function(e) {
         e.stopPropagation();
         $(".canvas-editable-options-holder").toggleClass("active");
     });
