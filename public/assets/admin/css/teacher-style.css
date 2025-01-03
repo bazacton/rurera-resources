@@ -3253,8 +3253,6 @@ span.field-separated span:after {
 .featured-list-sidebar .list-options {
     gap: 5px 5px;
     flex-wrap: wrap;
-    border-top: 1px solid #ddd;
-    padding: 14px 0 0;
     margin: 0;
     width: 100%;
 }
