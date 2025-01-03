@@ -416,7 +416,7 @@
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list1">
-                                        <textarea class="form-control"></textarea>
+                                        <p>Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm.</p>
                                     </div>
                                 </div>
                             </div>
@@ -566,7 +566,7 @@
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list2">
-                                        <textarea class="form-control"></textarea>
+                                        <p>Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm.</p>
                                     </div>
                                 </div>
                             </div>
@@ -619,7 +619,7 @@
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list3">
-                                        <textarea class="form-control"></textarea>
+                                        <p>Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm.</p>
                                     </div>
                                 </div>
                             </div>
