@@ -4849,6 +4849,9 @@ Accuracy Score Card Style End
     overflow: hidden;
     margin: 0 0 10px;
 }
+.page-box a.active figure {
+    border-color: var(--blue);
+}
 .page-box .page-lable {
     font-weight: 600;
     color: #333;
