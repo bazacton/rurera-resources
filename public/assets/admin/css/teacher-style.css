@@ -4820,7 +4820,9 @@ Accuracy Score Card Style End
     vertical-align: top;
     margin-right: -4px;
 }
-.page-box {margin: 0 0 15px;}
+.page-box {
+    margin: 0 0 15px;
+}
 .page-box img {
     max-width: 100%;
 }
@@ -4839,6 +4841,14 @@ Accuracy Score Card Style End
     border: 2px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
+    margin: 0 0 10px;
+}
+.page-box .page-lable {
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+    display: block;
+    line-height: normal;
 }
 .document-viewer {padding: 0 0 0;}
 .document-content {
