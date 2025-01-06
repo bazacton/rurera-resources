@@ -1163,7 +1163,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mb-15 bg-white panel-border p-25 border-bottom-0">
+                            <div class="mb-15 bg-white panel-border p-25">
                                 <div class="question-layout-block">
                                     <form class="question-fields" action="javascript:;" data-question_id="10180">
                                         <div class="left-content has-bg">
