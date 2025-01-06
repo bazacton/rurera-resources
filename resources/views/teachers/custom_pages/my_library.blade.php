@@ -654,7 +654,7 @@
                                     </div>
                                     <div class="right-area w-auto">
                                         <button type="button" class="assignment-btn"><img class="show-img" src="/assets/default/svgs/clock.svg" alt=""> Assign</button>
-                                        <button type="button" class="perview-btn"><img class="show-img" src="/assets/default/svgs/eye-show.svg" alt=""> Perview</button>
+                                        <button type="button" class="perview-btn" data-toggle="modal" data-target="#document-modal"><img class="show-img" src="/assets/default/svgs/eye-show.svg" alt=""> Perview</button>
                                     </div>
                                 </div>
                             </div>
@@ -1398,7 +1398,7 @@
     </div>
 </div>
 
-<div class="modal document-modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal document-modal fade" id="document-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
