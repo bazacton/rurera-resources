@@ -4939,7 +4939,7 @@ Accuracy Score Card Style End
     line-height: normal;
     margin: 0;
 }
-.font-select-box input[type=radio]:checked label {
+.font-select-box input[type=radio]:checked ~ label {
     background-color: var(--blue);
     border-color: var(--blue);
     color: var(--white);
