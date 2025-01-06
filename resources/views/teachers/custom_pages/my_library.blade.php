@@ -1449,7 +1449,7 @@
                     <div class="form-group mb-0">
                         <label class="custom-switch pl-0 mb-15">
                             <em class="switch-lable">Shuffle answer</em>
-                            <input type="checkbox" name="document-switch" id="shuffle-ans" class="custom-switch-input">
+                            <input type="checkbox" name="document-switch" id="shuffle-ans" class="custom-switch-input" checked>
                             <span class="custom-switch-indicator"></span>
                         </label>
                     </div>
@@ -1463,7 +1463,7 @@
                     <div class="form-group mb-0">
                         <label class="custom-switch pl-0 mb-15">
                             <em class="switch-lable">Answer keys</em>
-                            <input type="checkbox" name="document-switch" id="ans-key" class="custom-switch-input">
+                            <input type="checkbox" name="document-switch" id="ans-key" class="custom-switch-input" checked>
                             <span class="custom-switch-indicator"></span>
                         </label>
                     </div>
@@ -1472,7 +1472,7 @@
                     <span class="fonts-lable">Font size</span>
                     <div class="font-select-options">
                         <div class="font-select-box">
-                            <input type="radio" name="font-size" id="font-sm">
+                            <input type="radio" name="font-size" id="font-sm" checked>
                             <label for="font-sm">S</label>
                         </div>
                         <div class="font-select-box">
