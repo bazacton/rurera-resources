@@ -2886,3 +2886,7 @@ Admin Questions Generator Page Style End
         display: none;
     }
 }
+.editor-objects-list img {
+    height: 15px;
+    width: 15px;
+}
