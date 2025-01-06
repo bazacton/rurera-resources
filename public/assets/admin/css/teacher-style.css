@@ -4767,7 +4767,7 @@ Accuracy Score Card Style End
     flex-wrap: wrap;
     border-bottom: 1px solid #ddd;
     justify-content: space-between;
-    padding: 15px 15px 15px;
+    padding: 15px 40px 15px 15px;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -4846,7 +4846,8 @@ Accuracy Score Card Style End
 }
 .document-viewer .close {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 15px;
+    top: 20px;
+    z-index: 2;
 }
 /* Document Viewer Page Style End */
