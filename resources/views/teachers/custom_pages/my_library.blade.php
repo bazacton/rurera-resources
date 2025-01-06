@@ -623,7 +623,7 @@
                                                             <span class="q-time">Avg time</span>
                                                             <span class="q-point">1 point</span>
                                                         </div>
-                                                        <button type="button" class="question-add-btn" data-toggle="modal" data-target="#general-knowledge-modal">Add</button>
+                                                        <button type="button" class="question-add-btn" data-toggle="modal" data-target="#general-knowledge-modal"><i class="fas fa-plus"></i> Add</button>
                                                     </div>
                                                 </div>
                                             </div>
