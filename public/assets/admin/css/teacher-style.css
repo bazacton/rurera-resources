@@ -886,6 +886,7 @@ New Quiz Page Style Start
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: end;
     width: calc(100% - 375px);
 }
 .class-controls button img {
