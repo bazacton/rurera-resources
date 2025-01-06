@@ -1474,8 +1474,8 @@ $(document).ready(function () {
             autohidemode: true
         });
     });
-    $('#document-modal').on('hidden.bs.modal', function () {
-        $scrollableDiv2.getNiceScroll().remove();
+    $("#document-modal").on("shown.bs.modal", function () {
+        $scrollableDiv2.getNiceScroll().resize();
     });
 
 });
