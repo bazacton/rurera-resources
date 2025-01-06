@@ -234,3 +234,8 @@ body .editor-controls-holder {
     height: 18px;
     width: 18px;
 }
+.editor-objects-list li .dropdown-menu {
+    width: auto;
+    left: auto !important;
+    right: 0 !important;
+}
