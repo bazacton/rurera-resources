@@ -1447,21 +1447,21 @@
             <div class="document-right-sidebar">
                 <div class="document-switch-options">
                     <div class="form-group mb-0">
-                        <label class="custom-switch pl-0 mb-0">
+                        <label class="custom-switch pl-0 mb-15">
                             <em class="switch-lable">Shuffle answer</em>
                             <input type="checkbox" name="document-switch" id="shuffle-ans" class="custom-switch-input">
                             <span class="custom-switch-indicator"></span>
                         </label>
                     </div>
                     <div class="form-group mb-0">
-                        <label class="custom-switch pl-0 mb-0">
+                        <label class="custom-switch pl-0 mb-15">
                             <em class="switch-lable">Shuffle questions</em>
                             <input type="checkbox" name="document-switch" id="shuffle-q" class="custom-switch-input">
                             <span class="custom-switch-indicator"></span>
                         </label>
                     </div>
                     <div class="form-group mb-0">
-                        <label class="custom-switch pl-0 mb-0">
+                        <label class="custom-switch pl-0 mb-15">
                             <em class="switch-lable">Answer keys</em>
                             <input type="checkbox" name="document-switch" id="ans-key" class="custom-switch-input">
                             <span class="custom-switch-indicator"></span>
