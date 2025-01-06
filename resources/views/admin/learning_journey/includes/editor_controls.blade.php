@@ -116,7 +116,17 @@ $topics_list = getSvgFiles('assets/admin/editor/topics/');
 			if( isset( $itemObj->id ) && !empty( $itemObj->LearningJourneyObjects->where('status','active') )){
 				foreach( $itemObj->LearningJourneyObjects->where('status','active') as $learningJourneyItemObj){
 
-					echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2">'.$learningJourneyItemObj->item_slug.' <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i><i class="fa fa-copy"></i></li>';
+					echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2">'.$learningJourneyItemObj->item_slug.'
+					<div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                        <img src="/assets/default/svgs/dots-three.svg" alt="">
+                      </button>
+                      <div class="dropdown-menu">
+                        <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i><i class="fa fa-copy"></i></li>
+                    </div>
+                    </div>
+
+					';
 
 				}
 			}
@@ -131,7 +141,24 @@ $topics_list = getSvgFiles('assets/admin/editor/topics/');
 
 
 		<div class="page-settings-fields">
-			<div class="option-field-item">
+            <div class="option-field-item">
+                <label>Background Image</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <button type="button" class="input-group-text admin-file-manager" data-input="background_image" data-preview="holder">
+                            <i class="fa fa-upload"></i>
+                        </button>
+                    </div>
+                    <input type="text"  data-field_id="background-image" data-field_name="background-image"
+                           data-field_type="page_style" data-id="" name="background_image" id="background_image" value="" class="trigger_field form-control ">
+                    <div class="input-group-append">
+                        <button type="button" class="input-group-text admin-file-view" data-input="background_image">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="option-field-item">
 				<label>Background Color</label>
 				<div class="input-group">
 					<input type="text" name="background_color" class="form-control trigger_field colorpickerinput"
