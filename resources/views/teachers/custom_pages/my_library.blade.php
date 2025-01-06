@@ -647,7 +647,6 @@
                                     </div>
                                 </div>
                                 <div class="class-insight">
-                                    <span class="insight-lable">Class Insight</span>
                                     <ul>
                                         <li><span class="icon-box">✓</span> <em>2</em> completed</li>
                                         <li><span class="icon-box">✓</span> <em>0</em> incompleted</li>
