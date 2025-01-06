@@ -4883,7 +4883,7 @@ Accuracy Score Card Style End
     background-color: #fff;
 }
 .document-switch-options {
-    padding: 15px;
+    padding: 15px 15px 0;
 }
 .document-switch-options .custom-switch {
     display: flex;
@@ -4904,5 +4904,39 @@ Accuracy Score Card Style End
 }
 .document-switch-options .custom-switch-input:checked ~ .custom-switch-indicator:before {
     left: calc(1rem + 4px);
+}
+.document-font-sizes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 15px;
+}
+.fonts-lable {
+    display: block;
+    line-height: normal;
+    color: #333;
+}
+.font-select-options {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.font-select-box {
+    position: relative;
+}
+.font-select-box input[type=radio] {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.font-select-box label {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #333;
+    padding: 3px 8px;
+    line-height: normal;
+    margin: 0;
 }
 /* Document Viewer Page Style End */
