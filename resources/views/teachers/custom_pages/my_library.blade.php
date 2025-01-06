@@ -606,6 +606,46 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="quiz-categories mb-25">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="categories-card">
+                                                <span class="icon-box"><img src="/assets/default/svgs/accuracy.svg" alt=""></span>
+                                                <div class="text-holder">
+                                                    <span>Accuracy</span>
+                                                    <strong>67%</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="categories-card">
+                                                <span class="icon-box"><img src="/assets/default/svgs/check-circle.svg" alt=""></span>
+                                                <div class="text-holder">
+                                                    <span>Completion Rate</span>
+                                                    <strong>100%</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="categories-card">
+                                                <span class="icon-box"><img src="/assets/default/svgs/student-users.svg" alt=""></span>
+                                                <div class="text-holder">
+                                                    <span>Students Assigned</span>
+                                                    <strong>2</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="categories-card">
+                                                <span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span>
+                                                <div class="text-holder">
+                                                    <span>Questions</span>
+                                                    <strong>8</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="class-insight">
                                     <span class="insight-lable">Class Insight</span>
                                     <ul>
@@ -615,11 +655,6 @@
                                     </ul>
                                 </div>
                                 <div class="class-controls">
-                                    <div class="left-area">
-                                        <button type="button">View quiz</button>
-                                        <button type="button">Flashcards</button>
-                                        <button type="button">Manage Accomodations</button>
-                                    </div>
                                     <div class="right-area">
                                         <div class="class-controls-option">
                                             <button type="button"><img src="/assets/default/svgs/delete.svg" alt=""></button>
