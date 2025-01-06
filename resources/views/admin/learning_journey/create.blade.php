@@ -25,11 +25,11 @@
 	.field_settings .ui-rotatable-handle, .field_settings .ui-resizable-handle, .field_settings .remove{
 		display:none !important;
 	}
-	
+
 	.field_settings.active {
 		opacity: 0.8;
 	}
-	
+
 	.field_settings.active .ui-rotatable-handle, .field_settings.active .ui-resizable-handle, .field_settings.active .remove{
 		display:block !important;
 	}
@@ -70,10 +70,10 @@
             bottom: -10px;
             right: -10px;
         }
-	
+
 	.field-data svg{height:auto; width: 100%;}
-	
-	
+
+
 	/* .editor-controls {
 		position: absolute;
 		top: 0;
@@ -181,8 +181,8 @@
         font-size: 15px;
         cursor: pointer;
     }
-	
-	
+
+
 	.graph-background {
 		background-color: var(--bg-color);
 		background-image: linear-gradient(var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(90deg, var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(var(--line-color-2) 1px, transparent 1px), linear-gradient(90deg, var(--line-color-2) 1px, transparent 1px) !important;
@@ -257,7 +257,7 @@
                             </div>
 
                             <div class="form-group">
-                                <button class="btn btn-primary add_learning_journey_set" type="button">Add Set</button>
+                                <button class="btn btn-primary add_learning_journey_set" type="button">Add Stage</button>
                             </div>
 
                             <div class="learning_journey_sets">
@@ -293,21 +293,21 @@
 <script src="/assets/admin/vendor/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-		
+
 		$(".editor-objects-list").sortable();
 		//$('.saved-item-class').click();
-		
+
 		$(".editor-objects-list").sortable({
 			update: function(event, ui) {
 				sorting_render(); // Call your function here
 			}
 		});
-		
+
         $('body').on('click', '.delete-parent-li', function (e) {
 
             $(this).closest('li').remove();
         });
-		
+
 
         $('body').on('change', '.category-id-field', function (e) {
             var category_id = $(this).val();
@@ -323,13 +323,13 @@
                 success: function (response) {
                     $(".category_subjects_list").html(response);
 					$(".category_subjects_list select").change();
-					
-					
+
+
                 }
             });
 
         });
-		
+
 		$("category-id-field").change();
         $('body').on('click', '.add_learning_journey_set', function (e) {
             //$(".learning_journey_sets").html('');
@@ -369,8 +369,8 @@
                 }
             });
         });
-		
-		
+
+
 		$('body').on('click', '.add-treasure-item', function (e) {
             //$(".learning_journey_sets").html('');
             var thisObj = $(this);
@@ -417,22 +417,22 @@
         handleTopicsMultiSelect2('search-topics-select2', '/admin/chapters/search', ['class', 'course', 'subject', 'title']);
 
     });
-	
-	
+
+
 	$('body').on('submit', '.learning-journey-form', function (e) {
 		console.log('submitted_form');
 		var posted_data = generate_stage_area();
 		console.log(posted_data);
 		$(".posted-data").val(JSON.stringify(posted_data));
 		//return false;
-		
+
 	});
-	
-	
-	
-	
-	
-	 
+
+
+
+
+
+
 
 </script>
 

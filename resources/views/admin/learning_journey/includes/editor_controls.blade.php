@@ -9,17 +9,17 @@ $topics_list = getSvgFiles('assets/admin/editor/topics/');
 		<ul class="nav" id="myTab" role="tablist">
 
 		<li class="nav-item" role="presentation">
-			<button class="nav-link" id="stages-tab" data-toggle="tab" data-target="#stages{{$data_id}}" type="button" role="tab" aria-controls="profile" aria-selected="false">Clipboard</button>
+			<button class="nav-link show active" id="stages-tab" data-toggle="tab" data-target="#stages{{$data_id}}" type="button" role="tab" aria-controls="profile" aria-selected="false">Clipboard</button>
 		</li>
 		<li class="nav-item" role="presentation">
 			<button class="nav-link" id="layers-tab" data-toggle="tab" data-target="#layers{{$data_id}}" type="button" role="tab" aria-controls="contact" aria-selected="false">Layers</button>
 		</li>
 		</ul>
 	</div>
-	<div class="editor-controls tab-pane fade" id="stages{{$data_id}}" role="tabpanel" aria-labelledby="profile-tab">
+	<div class="editor-controls tab-pane fade active show" id="stages{{$data_id}}" role="tabpanel" aria-labelledby="profile-tab">
 		<ul class="nav nav-pills" id="myTab3" role="tablist">
 			<li class="nav-item">
-				<a class="nav-link active" id="stages-tab{{$data_id}}" data-toggle="tab" href="#stages_objects{{$data_id}}" role="tab" aria-controls="stages{{$data_id}}" aria-selected="true">Stages</a>
+				<a class="nav-link show active" id="stages-tab{{$data_id}}" data-toggle="tab" href="#stages_objects{{$data_id}}" role="tab" aria-controls="stages{{$data_id}}" aria-selected="true">Stages</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" id="paths-tab{{$data_id}}" data-toggle="tab" href="#paths{{$data_id}}" role="tab" aria-controls="paths{{$data_id}}" aria-selected="true">Paths</a>
@@ -33,7 +33,7 @@ $topics_list = getSvgFiles('assets/admin/editor/topics/');
 		</ul>
 
 		<div class="tab-content" id="myTabContent2">
-			<div class="tab-pane mt-3 fade  show active " id="stages_objects{{$data_id}}" role="tabpanel" aria-labelledby="stages-tab{{$data_id}}">
+			<div class="tab-pane mt-3 fade show active " id="stages_objects{{$data_id}}" role="tabpanel" aria-labelledby="stages-tab{{$data_id}}">
 				<ul class="editor-objects">
 					@if( !empty( $stages_list ) )
 						@foreach( $stages_list as $stageObj)
