@@ -4938,6 +4938,7 @@ Accuracy Score Card Style End
     padding: 3px 8px;
     line-height: normal;
     margin: 0;
+    cursor: pointer;
 }
 .font-select-box input[type=radio]:checked ~ label {
     background-color: var(--blue);
