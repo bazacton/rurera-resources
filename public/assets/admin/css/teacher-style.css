@@ -4761,6 +4761,10 @@ Accuracy Score Card Style End
     margin: 0;
     border-radius: 0;
 }
+.document-viewer {
+    display: flex;
+    flex-wrap: wrap;
+}
 .document-header {
     display: flex;
     align-items: center;
@@ -4839,15 +4843,22 @@ Accuracy Score Card Style End
 .document-content {
     width: 60%;
     padding: 50px 15px 0 0;
-    margin: 0;
     background-color: #f3f3f3;
     text-align: center;
-    display: inline-block;
+    margin: 0 auto;
 }
 .document-viewer .close {
     position: absolute;
     right: 15px;
     top: 20px;
     z-index: 2;
+}
+.document-right-sidebar {
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 15%;
+    border-left: 1px solid #ddd;
+    background-color: #fff;
 }
 /* Document Viewer Page Style End */
