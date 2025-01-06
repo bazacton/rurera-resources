@@ -1457,26 +1457,18 @@
 
 @push('scripts_bottom')
 <script>
+
 $(document).ready(function () {
+  const $scrollableDiv = $(".featured-list-sidebar-inner, .document-left-sidebar");
+  $scrollableDiv.niceScroll({
+    cursorcolor: "red",
+    cursorwidth: "8px",
+    autohidemode: true
+  });
 
-    const $scrollableDiv = $(".featured-list-sidebar-inner");
-    $scrollableDiv.niceScroll({
-        cursorcolor: "red",
-        cursorwidth: "8px",
-        autohidemode: true
-    });
-
-    const $scrollableDiv2 = $(".document-left-sidebar");
-    $('#document-modal').on('shown.bs.modal', function () {
-        $scrollableDiv.niceScroll({
-            cursorcolor: "red",
-            cursorwidth: "8px",
-            autohidemode: true
-        });
-    });
-    $("#document-modal").on("shown.bs.modal", function () {
-        $scrollableDiv2.getNiceScroll().resize();
-    });
+  $(".document-modal").on("shown.bs.modal", function () {
+    $scrollableDiv.getNiceScroll().resize();
+  });
 
 });
 </script>
