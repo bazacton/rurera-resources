@@ -4862,7 +4862,7 @@ Accuracy Score Card Style End
 }
 .document-viewer {padding: 0 0 0;}
 .document-content {
-    width: 60%;
+    width: 55%;
     padding: 50px 15px 0 0;
     background-color: #f3f3f3;
     text-align: center;
@@ -4878,7 +4878,7 @@ Accuracy Score Card Style End
     position: sticky;
     top: 0;
     right: 0;
-    width: 15%;
+    width: 20%;
     border-left: 1px solid #ddd;
     background-color: #fff;
 }
