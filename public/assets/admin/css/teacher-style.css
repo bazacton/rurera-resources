@@ -885,6 +885,15 @@ New Quiz Page Style Start
     height: 18px;
     width: 18px;
 }
+.questions-control-options button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.class-controls .questions-control-options button img {
+    height: 14px;
+    width: 14px;
+    margin-right: 5px;
+}
 .class-controls .right-area {
     display: inline-flex;
     align-items: center;
