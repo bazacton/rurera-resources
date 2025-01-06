@@ -606,7 +606,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <ul class="list-options">      
+                                <ul class="list-options question-list-options">      
                                     <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 8 questions</li>
                                     <li><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt=""></span> 7th-8th  Grade</li>
                                     <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
