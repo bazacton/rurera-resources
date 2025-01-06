@@ -618,6 +618,18 @@
                                             <button type="button"><img src="/assets/default/svgs/save.svg" alt="">Save</button>
                                             <button type="button"><img src="/assets/default/svgs/share.svg" alt="">Share</button>
                                             <button type="button"><img src="/assets/default/svgs/download.svg" alt="">Worksheet</button>
+                                            <div class="dropdown-box">
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
+                                                    </a>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/delete.svg" alt=""> Delete</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="right-area w-auto">
