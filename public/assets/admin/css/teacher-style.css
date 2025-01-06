@@ -3414,6 +3414,7 @@ span.field-separated span:after {
 }
 .questions-header-controls button i {
     margin-right: 5px;
+    font-size: 12px;
 }
 .questions-header-controls button:hover i {
     color: var(--white);
