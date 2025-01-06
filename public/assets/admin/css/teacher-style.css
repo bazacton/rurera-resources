@@ -886,6 +886,8 @@ New Quiz Page Style Start
     align-items: center;
     flex-wrap: wrap;
     justify-content: end;
+}
+.class-controls .left-area ~ .right-area {
     width: calc(100% - 375px);
 }
 .class-controls button img {
