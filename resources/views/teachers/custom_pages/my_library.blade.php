@@ -1459,7 +1459,7 @@
 <script>
 $(document).ready(function () {
 
-    const $scrollableDiv = $(".featured-list-sidebar-inner, .document-pages");
+    const $scrollableDiv = $(".featured-list-sidebar-inner, .document-left-sidebar");
     // Initialize NiceScroll with auto-hide enabled
     $scrollableDiv.niceScroll({
         cursorcolor: "red",
