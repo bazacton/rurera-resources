@@ -863,6 +863,7 @@ New Quiz Page Style Start
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 10px;
 }
 .class-controls button {
     background-color: #f3f1f4;
@@ -885,6 +886,7 @@ New Quiz Page Style Start
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
+    width: calc(100% - 375px);
 }
 .class-controls button img {
     height: 15px;
