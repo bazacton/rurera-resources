@@ -1466,7 +1466,7 @@ $(document).ready(function () {
         autohidemode: true
     });
 
-    const $scrollableDiv = $(".document-left-sidebar");
+    const $scrollableDiv2 = $(".document-left-sidebar");
     $('#document-modal').on('shown.bs.modal', function () {
         $scrollableDiv.niceScroll({
             cursorcolor: "red",
@@ -1475,7 +1475,7 @@ $(document).ready(function () {
         });
     });
     $('#document-modal').on('hidden.bs.modal', function () {
-        $scrollableDiv.getNiceScroll().remove();
+        $scrollableDiv2.getNiceScroll().remove();
     });
 
 });
