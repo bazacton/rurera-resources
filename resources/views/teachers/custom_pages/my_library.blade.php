@@ -646,13 +646,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="class-insight">
-                                    <ul>
-                                        <li><span class="icon-box">✓</span> <em>2</em> completed</li>
-                                        <li><span class="icon-box">✓</span> <em>0</em> incompleted</li>
-                                        <li><span class="icon-box">✓</span> <em>2</em> unattempted</li>
-                                    </ul>
-                                </div>
                                 <div class="class-controls">
                                     <div class="right-area">
                                         <div class="class-controls-option">
@@ -661,7 +654,7 @@
                                             <button type="button"><img src="/assets/default/svgs/download.svg" alt=""></button>
                                         </div>
                                         <button type="button"><span class="icon-box"><img src="/assets/default/svgs/envelope.svg" alt=""></span>Email all parents</button>
-                                        <button type="button"><span class="icon-box"><img src="/assets/default/svgs/share.svg" alt=""></span>Share report</button>
+                                        <button type="button"><span class="icon-box"><img src="/assets/default/svgs/share.svg" alt=""></span>Share</button>
                                     </div>
                                 </div>
                             </div>
