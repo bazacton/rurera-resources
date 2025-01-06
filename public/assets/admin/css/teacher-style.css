@@ -3415,8 +3415,7 @@ span.field-separated span:after {
 .questions-header-controls button i {
     margin-right: 5px;
 }
-.questions-header-controls button:hover i,
-.questions-header-controls button i {
+.questions-header-controls button:hover i {
     color: var(--white);
 }
 /* View-Explanation Style Start */
