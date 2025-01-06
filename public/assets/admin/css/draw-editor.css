@@ -227,6 +227,10 @@ body .editor-controls-holder {
     width: 20px;
     border-radius: 100%;
 }
+.editor-objects-list li .dropdown-toggle:hover,
+.editor-objects-list li .dropdown-toggle:focus {
+    background-color: inherit;
+}
 .editor-objects-list li .dropdown-toggle:after {
     display: none;
 }
