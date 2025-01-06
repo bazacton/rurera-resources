@@ -1420,7 +1420,7 @@
                 <h3>Pages</h3>
                 <div class="document-pages">
                     <div class="page-box">
-                        <a href="#">
+                        <a href="#" class="active">
                             <figure>
                                 <img src="/assets/default/img/page1.png" alt="">
                             </figure>
