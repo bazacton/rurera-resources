@@ -324,26 +324,27 @@
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
-                                        <div class="img-holder">
-                                            <figure>
-                                                <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
-                                            </figure>
-                                        </div>
-                                        <div class="text-holder">
-                                            <h3>Chemistry Formula Puzzles</h3>
-                                            <div class="author-info">
-                                                <span class="info-text">
-                                                    <span>Oliver K</span>
-                                                    <span>3 hours ago</span>
-                                                </span>
+                                        <a href="#" class="listing-card-link">
+                                            <div class="img-holder">
+                                                <figure>
+                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                                </figure>
                                             </div>
-                                        </div>
-                                        <ul class="list-options">
-                                            
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 7th-8th  Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Chemistry</li>
-                                        </ul>
+                                            <div class="text-holder">
+                                                <h3>Chemistry Formula Puzzles</h3>
+                                                <div class="author-info">
+                                                    <span class="info-text">
+                                                        <span>Oliver K</span>
+                                                        <span>3 hours ago</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="list-options">
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 7th-8th  Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Chemistry</li>
+                                            </ul>
+                                        </a>
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
@@ -402,7 +403,7 @@
                                                 </figure>
                                             </div>
                                             <div class="text-holder">
-                                                <h3><a href="#">Grammar Genius Challenge</a></h3>
+                                                <h3>Grammar Genius Challenge</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
                                                         <span>Mark T</span>
@@ -474,7 +475,7 @@
                                                 </figure>
                                             </div>
                                             <div class="text-holder">
-                                                <h3><a href="#">Science Exploration Mission</a></h3>
+                                                <h3>Science Exploration Mission</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
                                                         <span>Alex P</span>
