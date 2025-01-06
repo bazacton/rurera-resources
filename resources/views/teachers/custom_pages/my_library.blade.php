@@ -606,10 +606,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="class-controls-option border-0 p-0 mr-0 mb-15">
-                                    <button type="button"><img src="/assets/default/svgs/delete.svg" alt=""></button>
-                                    <button type="button"><img src="/assets/default/svgs/print.svg" alt=""></button>
-                                    <button type="button"><img src="/assets/default/svgs/download.svg" alt=""></button>
+                                <div class="class-controls">
+                                    <div class="class-controls-option border-0 p-0 mr-0 mb-15">
+                                        <button type="button"><img src="/assets/default/svgs/delete.svg" alt=""></button>
+                                        <button type="button"><img src="/assets/default/svgs/print.svg" alt=""></button>
+                                        <button type="button"><img src="/assets/default/svgs/download.svg" alt=""></button>
+                                    </div>
                                 </div>
                                 <div class="class-controls">
                                     <div class="right-area">
