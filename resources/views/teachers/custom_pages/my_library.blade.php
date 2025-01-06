@@ -1459,12 +1459,23 @@
 <script>
 $(document).ready(function () {
 
-    const $scrollableDiv = $(".featured-list-sidebar-inner, .document-left-sidebar");
-    // Initialize NiceScroll with auto-hide enabled
+    const $scrollableDiv = $(".featured-list-sidebar-inner");
     $scrollableDiv.niceScroll({
         cursorcolor: "red",
         cursorwidth: "8px",
-        autohidemode: true // Auto-hide enabled initially
+        autohidemode: true
+    });
+
+    const $scrollableDiv = $(".document-left-sidebar");
+    $('#document-modal').on('shown.bs.modal', function () {
+        $scrollableDiv.niceScroll({
+            cursorcolor: "red",
+            cursorwidth: "8px",
+            autohidemode: true
+        });
+    });
+    $('#document-modal').on('hidden.bs.modal', function () {
+        $scrollableDiv.getNiceScroll().remove();
     });
 
 });
