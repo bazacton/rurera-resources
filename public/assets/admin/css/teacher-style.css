@@ -905,6 +905,16 @@ New Quiz Page Style Start
     height: 15px;
     width: 15px;
 }
+.class-controls button.assignment-btn,
+.class-controls button.perview-btn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 0 #ddd;
+}
+.class-controls button.assignment-btn img,
+.class-controls button.perview-btn img {
+    margin-right: 5px;
+}
 .class-controls-option {
     margin-right: 15px;
     border-right: 1px solid #ddd;
