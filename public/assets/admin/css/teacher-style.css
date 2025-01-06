@@ -4673,12 +4673,14 @@ Accuracy Score Card Style End
     -o-transition: all 0.3s ease-out; 
     transition: all 0.3s ease-out;
 }
-.collection-controls button:hover {
+.collection-controls button:hover,
+.general-knowledge-modal .general-knowledge-controls button:hover {
     background-color: var(--blue);
     color: var(--white);
     border-color: transparent;
 }
-.general-knowledge-modal .general-knowledge-controls .cancel-question-btn {
+.general-knowledge-modal .general-knowledge-controls .cancel-question-btn,
+.general-knowledge-modal .general-knowledge-controls .cancel-question-btn:hover {
     background-color: #ff6363;
     border-color: transparent;
     color: #fff;
