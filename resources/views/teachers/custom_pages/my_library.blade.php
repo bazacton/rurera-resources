@@ -1403,10 +1403,10 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="document-viewer">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
             <div class="document-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
                 <div class="document-heading">
                     <a href="#" class="back-btn"><i class="fas fa-chevron-left"></i></a>
                     <h2>Template Name <i class="fas fa-star"></i></h2>
