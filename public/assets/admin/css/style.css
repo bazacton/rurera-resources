@@ -554,6 +554,9 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     font-weight: bold;
     color: #333;
 }
+.assignments-table table.table tbody tr:first-child td {
+    padding-top: 0 !important;
+}
 .assignments-table table.table tbody tr:last-child td {
     border-bottom: 0;
 }
