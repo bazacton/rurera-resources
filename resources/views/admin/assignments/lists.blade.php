@@ -83,6 +83,37 @@
                                         </div>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>Vocabulary</td>
+                                    <td>0</td>
+                                    <td>50</td>
+                                    <td>11 Sep 05:00 / 16 Sep 05:00</td>
+                                    <td>
+                                        <div class="circle_percent circle-green" data-percent="50">
+                                            <div class="circle_inner">
+                                                <div class="round_per" style="transform: rotate(360deg);"></div>
+                                            </div>
+                                            <div class="circle_inbox">
+                                                <span class="percent_text">50%</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-success font-weight-bold">Active</td>
+                                    <td>
+                                        <div class="dropdown-box">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
+                                                </a>
+                                                <div class="dropdown-menu" style="">
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/delete.svg" alt=""> Delete</a>
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
