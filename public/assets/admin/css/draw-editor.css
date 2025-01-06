@@ -228,7 +228,8 @@ body .editor-controls-holder {
     border-radius: 100%;
 }
 .editor-objects-list li .dropdown-toggle:hover,
-.editor-objects-list li .dropdown-toggle:focus {
+.editor-objects-list li .dropdown-toggle:focus,
+.editor-objects-list li .show>.btn-secondary.dropdown-toggle {
     background-color: inherit;
 }
 .editor-objects-list li .dropdown-toggle:after {
@@ -241,5 +242,6 @@ body .editor-controls-holder {
 .editor-objects-list li .dropdown-menu {
     width: auto;
     left: auto !important;
-    right: 0 !important;
+    right: -100%;
+    margin-right: -20px;
 }
