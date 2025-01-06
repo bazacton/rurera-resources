@@ -621,7 +621,7 @@
                                         </div>
                                         <button type="button"><span class="icon-box"><img src="/assets/default/svgs/envelope.svg" alt=""></span>Email all parents</button>
                                         <div class="right-area">
-                                            <button type="button" class="assign-btn"><img class="show-img" src="/assets/default/svgs/clock.svg" alt=""> Assign</button>
+                                            <button type="button" class="assignment-btn"><img class="show-img" src="/assets/default/svgs/clock.svg" alt=""> Assign</button>
                                             <button type="button" class="perview-btn"><img class="show-img" src="/assets/default/svgs/eye-show.svg" alt=""> Perview</button>
                                         </div>
                                     </div>
