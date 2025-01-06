@@ -596,43 +596,13 @@
                         </div>
                         <div class="col-12 col-lg-8 col-md-8">
                             <div class="elements-holder mb-30 bg-white panel-border rounded-sm p-15">
-                                <div class="quiz-categories mb-25">
-                                    <div class="row">
-                                        <div class="col-lg-3">
-                                            <div class="categories-card">
-                                                <span class="icon-box"><img src="/assets/default/svgs/accuracy.svg" alt=""></span>
-                                                <div class="text-holder">
-                                                    <span>Accuracy</span>
-                                                    <strong>67%</strong>
-                                                </div>
-                                            </div>
+                                <div class="questions-header">
+                                    <div class="questions-header-inner">
+                                        <div class="text-holder">
+                                            <h5>Exploring Magnetic Matrials and Their Uses<small>(18 questions)</small></h5>
                                         </div>
-                                        <div class="col-lg-3">
-                                            <div class="categories-card">
-                                                <span class="icon-box"><img src="/assets/default/svgs/check-circle.svg" alt=""></span>
-                                                <div class="text-holder">
-                                                    <span>Completion Rate</span>
-                                                    <strong>100%</strong>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="categories-card">
-                                                <span class="icon-box"><img src="/assets/default/svgs/student-users.svg" alt=""></span>
-                                                <div class="text-holder">
-                                                    <span>Students Assigned</span>
-                                                    <strong>2</strong>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="categories-card">
-                                                <span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span>
-                                                <div class="text-holder">
-                                                    <span>Questions</span>
-                                                    <strong>8</strong>
-                                                </div>
-                                            </div>
+                                        <div class="questions-header-controls">
+                                            <button type="button"><i class="fas fa-plus"></i> Add All</button>
                                         </div>
                                     </div>
                                 </div>
@@ -658,16 +628,6 @@
                                         </div>
                                         <button type="button"><span class="icon-box"><img src="/assets/default/svgs/envelope.svg" alt=""></span>Email all parents</button>
                                         <button type="button"><span class="icon-box"><img src="/assets/default/svgs/share.svg" alt=""></span>Share report</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="questions-header">
-                                <div class="questions-header-inner">
-                                    <div class="text-holder">
-                                        <h5>Exploring Magnetic Matrials and Their Uses<small>(18 questions)</small></h5>
-                                    </div>
-                                    <div class="questions-header-controls">
-                                        <button type="button"><i class="fas fa-plus"></i> Add All</button>
                                     </div>
                                 </div>
                             </div>
