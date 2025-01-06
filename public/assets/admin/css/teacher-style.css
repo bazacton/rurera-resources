@@ -4776,6 +4776,7 @@ Accuracy Score Card Style End
     top: 0;
     z-index: 1;
     background-color: #fff;
+    width: 100%;
 }
 .document-heading {
     display: inline-flex;
