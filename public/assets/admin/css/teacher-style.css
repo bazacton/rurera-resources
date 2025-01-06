@@ -895,8 +895,6 @@ New Quiz Page Style Start
     margin-right: 5px;
 }
 .class-controls .right-area {
-    display: inline-flex;
-    align-items: center;
     flex-wrap: wrap;
     justify-content: end;
 }
