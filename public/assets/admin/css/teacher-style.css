@@ -4667,6 +4667,16 @@ Accuracy Score Card Style End
     padding: 5px 15px;
     border-radius: 20px;
     color: #333;
+    -webkit-transition: all 0.3s ease-out; 
+    -moz-transition: all 0.3s ease-out; 
+    -ms-transition: all 0.3s ease-out; 
+    -o-transition: all 0.3s ease-out; 
+    transition: all 0.3s ease-out;
+}
+.collection-controls button:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    border-color: transparent;
 }
 .general-knowledge-modal .general-knowledge-controls .cancel-question-btn {
     background-color: #ff6363;
