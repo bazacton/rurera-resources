@@ -4844,4 +4844,9 @@ Accuracy Score Card Style End
     text-align: center;
     display: inline-block;
 }
+.document-viewer .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 /* Document Viewer Page Style End */
