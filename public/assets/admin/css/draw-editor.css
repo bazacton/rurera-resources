@@ -203,7 +203,6 @@ body .editor-controls-holder {
 .drop-item a.remove {
     color: #ff0000;
 }
-
 .editor-zone .field-options {
     position: absolute;
     left: 0;
@@ -214,4 +213,20 @@ body .editor-controls-holder {
     background-color: #f2f2f2;
     padding: 30px 30px;
     border-radius: 5px;
+}
+.editor-objects-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.editor-objects-list li .dropdown-toggle {
+    padding: 0;
+    border: 0;
+    background-color: #333;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+}
+.editor-objects-list li .dropdown-toggle:after {
+    display: none;
 }
