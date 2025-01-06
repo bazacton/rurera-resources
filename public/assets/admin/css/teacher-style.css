@@ -3547,9 +3547,9 @@ span.field-separated span:after {
     position: absolute;
     top: 0;
     right: -50px;
-    border: 0;
-    background-color: var(--blue);
-    color: #fff;
+    border: 1px solid var(--blue);
+    background-color: inherit;
+    color: var(--blue);
     padding: 5px 15px;
     border-radius: 3px;
     opacity: 0;
@@ -3559,6 +3559,9 @@ span.field-separated span:after {
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+}
+.question-add-btn:hover {
+    background-color: var(--blue);
 }
 .question-layout-holder:hover .question-add-btn {
     right: -10px;
