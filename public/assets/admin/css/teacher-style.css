@@ -3288,6 +3288,15 @@ span.field-separated span:after {
 }
 .featured-list-sidebar .listing-card {
     align-items: flex-start;
+    max-width: 90%;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.featured-list-sidebar .listing-card.active {
+    max-width: 100%;
 }
 .featured-list-sidebar .listing-card.active,
 .listing-card.active:after {
