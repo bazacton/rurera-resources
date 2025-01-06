@@ -619,7 +619,6 @@
                                             <button type="button"><img src="/assets/default/svgs/share.svg" alt="">Share</button>
                                             <button type="button"><img src="/assets/default/svgs/download.svg" alt="">Worksheet</button>
                                         </div>
-                                        <button type="button"><span class="icon-box"><img src="/assets/default/svgs/envelope.svg" alt=""></span>Email all parents</button>
                                     </div>
                                     <div class="right-area w-auto">
                                         <button type="button" class="assignment-btn"><img class="show-img" src="/assets/default/svgs/clock.svg" alt=""> Assign</button>
