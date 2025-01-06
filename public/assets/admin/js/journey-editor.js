@@ -1,6 +1,6 @@
 var stage_created = false;
 $(document).on('click', '.control-tool-item', function () {
-    $(".field-options").addClass('hide');
+    //$(".field-options").addClass('hide');
     $('.control-tool-item').removeClass('active');
     $(this).addClass('active');
     //$('body').css('cursor', "pointer");
@@ -539,8 +539,21 @@ jQuery(document).ready(function () {
 			}
 		});
 		
+		const style = $('.draggable_field_' + field_id).attr('style');
+
+		var rotate_value = 0;
+		if (style) {
+			// Use a regular expression to extract the rotate value
+			const rotateMatch = style.match(/rotate\(([-\d.]+)deg\)/);
+			if (rotateMatch) {
+				const rotateValue = parseFloat(rotateMatch[1]); // Extract and convert to a number
+				rotate_value = rotateValue;
+			}
+		}
+		
+		console.log($('.draggable_field_' + field_id).attr('style'));
 		$('.draggable_field_' + field_id)
-			.rotatable()
+			.rotatable({angle: rotate_value})
 			.draggable({
 				preventCollision: true,
 				containment: dropZonObj
