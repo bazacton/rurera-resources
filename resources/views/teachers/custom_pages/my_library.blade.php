@@ -307,7 +307,7 @@
                                                 </figure>
                                             </div>
                                             <div class="text-holder">
-                                                <h3><a href="#">Physics Wonders Challenges</a></h3>
+                                                <h3>Physics Wonders Challenges</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
                                                         <span>Nina F</span>
@@ -330,7 +330,7 @@
                                             </figure>
                                         </div>
                                         <div class="text-holder">
-                                            <h3><a href="#">Chemistry Formula Puzzles</a></h3>
+                                            <h3>Chemistry Formula Puzzles</h3>
                                             <div class="author-info">
                                                 <span class="info-text">
                                                     <span>Oliver K</span>
@@ -354,7 +354,7 @@
                                                 </figure>
                                             </div>
                                             <div class="text-holder">
-                                                <h3><a href="#">Sciency Science</a></h3>
+                                                <h3>Sciency Science</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
                                                         <span>Kaiser K</span>
@@ -378,7 +378,7 @@
                                                 </figure>
                                             </div>
                                             <div class="text-holder">
-                                                <h3><a href="#">Maths Magic Adventure</a></h3>
+                                                <h3>Maths Magic Adventure</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
                                                         <span>Jane D</span>
