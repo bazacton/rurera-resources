@@ -3412,14 +3412,11 @@ span.field-separated span:after {
     background-color: var(--blue);
     color: var(--white);
 }
-.questions-header-controls button img {
-    height: 12px;
-    width: 12px;
+.questions-header-controls button i {
     margin-right: 5px;
-    filter: invert(30%) sepia(98%) saturate(2459%) hue-rotate(200deg) brightness(102%) contrast(107%);
 }
-.questions-header-controls button:hover img {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(124deg) brightness(101%) contrast(102%);
+.questions-header-controls button:hover i {
+    color: var(--white);
 }
 /* View-Explanation Style Start */
 .view-explanation button {
