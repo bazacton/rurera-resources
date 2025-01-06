@@ -614,7 +614,7 @@
                                 <div class="class-controls">
                                     <div class="right-area">
                                         <div class="class-controls-option">
-                                            <button type="button"><img src="/assets/default/svgs/delete.svg" alt=""></button>
+                                            <button type="button"><img src="/assets/default/svgs/edit-simple.svg" alt="">Copy & edit</button>
                                             <button type="button"><img src="/assets/default/svgs/print.svg" alt=""></button>
                                             <button type="button"><img src="/assets/default/svgs/download.svg" alt=""></button>
                                         </div>
