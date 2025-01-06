@@ -1401,4 +1401,15 @@ $(document).ready(function() {
     });
 });
 </script>
+<script>
+    document.querySelectorAll('.listing-card-link').forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            document.querySelectorAll('.listing-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            this.closest('.listing-card').classList.add('active');
+        });
+    });
+</script>
 @endpush
