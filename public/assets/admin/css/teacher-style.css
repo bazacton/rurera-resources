@@ -3568,6 +3568,9 @@ span.field-separated span:after {
     background-color: var(--blue);
     color: var(--white);
 }
+.question-add-btn i {
+    font-size: 12px;
+}
 .question-layout-holder:hover .question-add-btn {
     right: -10px;
     opacity: 1;
