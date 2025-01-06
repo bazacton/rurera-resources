@@ -600,7 +600,6 @@ Set Up Quiz Page Style End
     padding-left: 22px;
 }
 .listing-card {
-    padding: 10px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -3272,6 +3271,7 @@ span.field-separated span:after {
     gap: 12px;
     flex-wrap: wrap;
     text-decoration: none;
+    padding: 10px;
 }
 .featured-list-sidebar .listing-card .img-holder figure {
     width: 45px;
