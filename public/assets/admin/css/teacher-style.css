@@ -663,10 +663,6 @@ Set Up Quiz Page Style End
     line-height: 12px;
     display: inline-block;
 }
-.question-list-options.list-options li img {
-    height: 15px;
-    width: 15px;
-}
 .author-info .info-text {
     padding-left: 5px;
     font-size: 14px;
