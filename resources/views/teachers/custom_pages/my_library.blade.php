@@ -1398,6 +1398,63 @@
     </div>
 </div>
 
+<div class="modal document-modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="document-viewer">
+            <div class="document-header">
+                <div class="document-heading">
+                    <a href="#" class="back-btn"><i class="fas fa-chevron-left"></i></a>
+                    <h2>Template Name <i class="fas fa-star"></i></h2>
+                </div>
+                <div class="document-controls">
+                    <button type="button"><img src="/assets/default/svgs/settings.svg" alt=""> Settings</button>
+                    <button type="button"><img src="/assets/default/svgs/download.svg" alt=""> Download</button>
+                </div>
+            </div>
+            <div class="document-left-sidebar">
+                <h3>Pages</h3>
+                <div class="document-pages">
+                    <div class="page-box">
+                        <a href="#">
+                            <figure>
+                                <img src="/assets/default/img/page1.png" alt="">
+                            </figure>
+                            <span class="page-lable">Page 1</span>
+                        </a>
+                    </div>
+                    <div class="page-box">
+                        <a href="#">
+                            <figure>
+                                <img src="/assets/default/img/page2.png" alt="">
+                            </figure>
+                            <span class="page-lable">Page 1</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="document-content">
+                <div class="document-pdf">
+                    <div class="pdf-img-box">
+                        <img src="/assets/default/img/pdf.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="document-right-sidebar">
+                <div class="document-options"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 @endsection
 
 @push('scripts_bottom')
