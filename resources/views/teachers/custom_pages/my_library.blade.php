@@ -1207,15 +1207,17 @@
                             <input type="text" placeholder="Filter collections">
                         </div>
                         <div class="collection-item">
-                            <div class="img-holder">
-
-                            </div>
-                            <div class="text-holder">
-                                <h4>Name</h4>
-                                <span>0 questions</span>
-                                <span>updated less than a minute ago</span>
-                            </div>
+                            <input type="checkbox" id="name">
+                            <label for="name">
+                                <div class="img-holder"></div>
+                                <div class="text-holder">
+                                    <h4>Name</h4>
+                                    <span>0 questions</span>
+                                    <span>updated less than a minute ago</span>
+                                </div>
+                            </label>
                         </div>
+                            
                         <div class="collection-item">
                             <div class="img-holder">
 
