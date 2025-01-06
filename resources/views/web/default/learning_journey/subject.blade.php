@@ -58,6 +58,8 @@
 			$level_height = isset( $level_data_values->height ) ? $level_data_values->height : '800';
 			$page_graph = isset( $level_data_values->page_graph ) ? $level_data_values->page_graph : 0;
 			$page_graph = ( $page_graph == 1)? 'graph-background' : '';
+			$subject_slug = isset($course->slug)? $course->slug : '';
+			$year_slug = isset($course->categories()->first()->slug)? $course->categories()->first()->slug : '';
 			
 			@endphp
 			<div class="learning-journey-levels border-0" data-mission_id="mission_1">
@@ -91,19 +93,22 @@
 				</div>
 				@if(!empty( $itemsRow ) )
 				<div class="level-stage {{$page_graph}}" style="height:{{$level_height}}px; background:{{$level_background}}">
-					@php $item_counter = 0; $total_count = 0; $ul_class = 'ul-rtl'; $already_active = false; $is_active = false; @endphp
+					@php $item_counter = 0; $topic_counter = 0; $total_count = 0; $ul_class = 'ul-rtl'; $already_active = false; $is_active = false; @endphp
 					@foreach($itemsRow as $itemObj)
 						@php $item_counter++;  $total_count++; $is_completed = isset( $itemObj->is_completed )? $itemObj->is_completed : false; 
 						$percentage = isset( $itemObj->percentage )? $itemObj->percentage : false; 
 						$is_completed = ($percentage >= 70)? true : $is_completed;
-						
+						$item_type = isset( $itemObj->item_type ) ?  $itemObj->item_type : '';
 						$is_last = ($total_count >= count($itemsRow))? true : false;
 						
 						$is_active = ( $is_active == false && $is_completed != true)? true : $is_active;
 						$is_active = ($already_active == false)? $is_active : false;
 						$already_active = ($is_active == true)? true : $already_active;
+						if($item_type == 'topic'){
+							$topic_counter = isset($topic_counter)? $topic_counter+1 : 1;
+						}
 						@endphp
-						@include('web.default.learning_journey.journey_item', ['site_url' => $site_url, 'item_counter' => $item_counter, 'is_last' => $is_last, 'total_count' => $total_count, 'itemObj' => $itemObj])
+						@include('web.default.learning_journey.journey_item', ['year_slug' => $year_slug, 'subject_slug' => $subject_slug, 'topic_counter' => $topic_counter, 'site_url' => $site_url, 'item_counter' => $item_counter, 'is_last' => $is_last, 'total_count' => $total_count, 'itemObj' => $itemObj])
 						
 					@endforeach
 				</div>

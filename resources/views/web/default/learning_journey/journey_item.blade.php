@@ -11,12 +11,13 @@ $item_path_folder = '';
 $item_path_folder = ($item_type == 'stage' )? 'stages' : $item_path_folder;
 $item_path_folder = ($item_type == 'stage_objects' )? 'objects' : $item_path_folder;
 $item_path_folder = ($item_type == 'path' )? 'paths' : $item_path_folder;
+$item_path_folder = ($item_type == 'topic' )? 'topics' : $item_path_folder;
 $field_style = isset( $itemObj->field_style ) ?  $itemObj->field_style : '';
 $item_path = isset( $itemObj->item_path ) ?  $itemObj->item_path : '';
 $item_path = 'assets/editor/'.$item_path_folder.'/'.$item_path;
 $svgCode = getFileContent($item_path);
 $svgCode = updateSvgDimensions($svgCode, '100%', '100%');
-//pre($itemObj, false);
+$topic_quiz = isset( $data_values->topic )? $data_values->topic : 0;
 @endphp
 
 <style>
@@ -34,7 +35,11 @@ $svgCode = updateSvgDimensions($svgCode, '100%', '100%');
 
 <div class="learning-journey-item learning-journey-item-{{$itemObj->id}}" style="{{$field_style}}">
 	<div class="field-data">
+	@if($item_type == 'topic')
+		<div class="topic_counter"><a href="/{{$year_slug}}/{{$subject_slug}}/{{$topic_quiz}}">{{isset($topic_counter)? $topic_counter : 1}}</a></div>
+	@endif
 	{!! $svgCode !!}
 	</div>
 </div>
+
 
