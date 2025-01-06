@@ -222,7 +222,7 @@ body .editor-controls-holder {
 .editor-objects-list li .dropdown-toggle {
     padding: 0;
     border: 0;
-    background-color: #333;
+    background-color: inherit;
     height: 20px;
     width: 20px;
     border-radius: 100%;
