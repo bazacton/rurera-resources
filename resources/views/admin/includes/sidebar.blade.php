@@ -241,7 +241,7 @@
 			<li class="nav-item {{ (request()->is('admin/custom_page/my_library')) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/custom_page/my_library') }}" class="nav-link">
                     <i class="fas fa-th"></i>
-                    <span>My Collection</span>
+                    <span>Collection</span>
                 </a>
             </li>
 			
