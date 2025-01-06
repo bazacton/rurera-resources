@@ -894,6 +894,14 @@ New Quiz Page Style Start
     width: 14px;
     margin-right: 5px;
 }
+.class-controls .dropdown-box .dropdown-toggle {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 7px 8px;
+    border-radius: 3px;
+    line-height: normal;
+    display: inline-block;
+}
 .class-controls .right-area {
     flex-wrap: wrap;
     justify-content: end;
