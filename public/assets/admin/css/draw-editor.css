@@ -230,3 +230,7 @@ body .editor-controls-holder {
 .editor-objects-list li .dropdown-toggle:after {
     display: none;
 }
+.editor-objects-list img {
+    height: 18px;
+    width: 18px;
+}
