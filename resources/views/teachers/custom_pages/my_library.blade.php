@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-lg-4 col-md-4">
+                        <div class="col-12 col-lg-5 col-md-5">
                             <div class="featured-list-sidebar">
                                 <div class="featured-filters">
                                     <div class="text-box">
@@ -594,7 +594,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-8 col-md-8">
+                        <div class="col-12 col-lg-7 col-md-7">
                             <div class="elements-holder bg-white panel-border p-15 border-bottom-0">
                                 <div class="questions-header">
                                     <div class="questions-header-inner">
