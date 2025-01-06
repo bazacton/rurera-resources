@@ -4882,4 +4882,27 @@ Accuracy Score Card Style End
     border-left: 1px solid #ddd;
     background-color: #fff;
 }
+.document-switch-options {
+    padding: 15px;
+}
+.document-switch-options .custom-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.document-switch-options .switch-lable {
+    font-style: normal;
+    color: #333;
+    font-size: 14px;
+}
+.document-switch-options .custom-switch-indicator {
+    height: 1.05rem;
+}
+.document-switch-options .custom-switch-indicator:before {
+    height: calc(1.05rem - 4px);
+    width: calc(1.05rem - 4px);
+}
+.document-switch-options .custom-switch-input:checked ~ .custom-switch-indicator:before {
+    left: calc(1rem + 4px);
+}
 /* Document Viewer Page Style End */
