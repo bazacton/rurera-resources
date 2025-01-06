@@ -613,7 +613,7 @@
                                 </ul>
                                 <div class="class-controls">
                                     <div class="right-area">
-                                        <div class="class-controls-option">
+                                        <div class="class-controls-option questions-control-options">
                                             <button type="button"><img src="/assets/default/svgs/edit-simple.svg" alt="">Copy & edit</button>
                                             <button type="button"><img src="/assets/default/svgs/save.svg" alt="">Save</button>
                                             <button type="button"><img src="/assets/default/svgs/share.svg" alt="">Share</button>
