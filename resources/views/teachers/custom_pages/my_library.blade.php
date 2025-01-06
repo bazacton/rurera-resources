@@ -608,15 +608,16 @@
                                 </div>
                                 <ul class="list-options">      
                                     <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 8 questions</li>
-                                    <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 7th-8th  Grade</li>
+                                    <li><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt=""></span> 7th-8th  Grade</li>
                                     <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
                                 </ul>
                                 <div class="class-controls">
                                     <div class="right-area">
                                         <div class="class-controls-option">
                                             <button type="button"><img src="/assets/default/svgs/edit-simple.svg" alt="">Copy & edit</button>
-                                            <button type="button"><img src="/assets/default/svgs/print.svg" alt=""></button>
-                                            <button type="button"><img src="/assets/default/svgs/download.svg" alt=""></button>
+                                            <button type="button"><img src="/assets/default/svgs/save.svg" alt="">Save</button>
+                                            <button type="button"><img src="/assets/default/svgs/share.svg" alt="">Share</button>
+                                            <button type="button"><img src="/assets/default/svgs/download.svg" alt="">Worksheet</button>
                                         </div>
                                         <button type="button"><span class="icon-box"><img src="/assets/default/svgs/envelope.svg" alt=""></span>Email all parents</button>
                                         <button type="button"><span class="icon-box"><img src="/assets/default/svgs/share.svg" alt=""></span>Share</button>
