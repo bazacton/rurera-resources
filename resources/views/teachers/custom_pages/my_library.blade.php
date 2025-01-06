@@ -515,95 +515,99 @@
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
-                                        <div class="img-holder">
-                                            <figure>
-                                                <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
-                                            </figure>
-                                        </div>
-                                        <div class="text-holder">
-                                            <h3><a href="#">Robotics Mind Challenges</a></h3>
-                                            <div class="author-info">
-                                                <span class="info-text">
-                                                    <span>David H</span>
-                                                    <span>8 hours ago</span>
-                                                </span>
+                                        <a href="#" class="listing-card-link">
+                                            <div class="img-holder">
+                                                <figure>
+                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                                </figure>
                                             </div>
-                                        </div>
-                                        <ul class="list-options">
-
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 6th-8th  Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Technology</li>
-                                        </ul>
+                                            <div class="text-holder">
+                                                <h3>Robotics Mind Challenges</h3>
+                                                <div class="author-info">
+                                                    <span class="info-text">
+                                                        <span>David H</span>
+                                                        <span>8 hours ago</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="list-options">
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 6th-8th  Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Technology</li>
+                                            </ul>
+                                        </a>
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
-                                        <div class="img-holder">
-                                            <figure>
-                                                <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
-                                            </figure>
-                                        </div>
-                                        <div class="text-holder">
-                                            <h3><a href="#">Animal Kingdom Quiz</a></h3>
-                                            <div class="author-info">
-                                                <span class="info-text">
-                                                    <span>Ella S</span>
-                                                    <span>2 hours ago</span>
-                                                </span>
+                                        <a href="#" class="listing-card-link">
+                                            <div class="img-holder">
+                                                <figure>
+                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                                </figure>
                                             </div>
-                                        </div>
-                                        <ul class="list-options">
-                                            
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 6th-8th  Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Biology</li>
-                                        </ul>
+                                            <div class="text-holder">
+                                                <h3>Animal Kingdom Quiz</h3>
+                                                <div class="author-info">
+                                                    <span class="info-text">
+                                                        <span>Ella S</span>
+                                                        <span>2 hours ago</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="list-options">
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 6th-8th  Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Biology</li>
+                                            </ul>
+                                        </a>
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
-                                        <div class="img-holder">
-                                            <figure>
-                                                <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
-                                            </figure>
-                                        </div>
-                                        <div class="text-holder">
-                                            <h3><a href="#">Physics Wonders Challenges</a></h3>
-                                            <div class="author-info">
-                                                <span class="info-text">
-                                                    <span>Nina F</span>
-                                                    <span>6 hours ago</span>
-                                                </span>
+                                        <a href="#" class="listing-card-link">
+                                            <div class="img-holder">
+                                                <figure>
+                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                                </figure>
                                             </div>
-                                        </div>
-                                        <ul class="list-options">
-
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 5th-8th  Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Physics</li>
-                                        </ul>
+                                            <div class="text-holder">
+                                                <h3>Physics Wonders Challenges</h3>
+                                                <div class="author-info">
+                                                    <span class="info-text">
+                                                        <span>Nina F</span>
+                                                        <span>6 hours ago</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="list-options">
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 5th-8th  Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Physics</li>
+                                            </ul>
+                                        </a>
                                     </div>
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
-                                        <div class="img-holder">
-                                            <figure>
-                                                <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
-                                            </figure>
-                                        </div>
-                                        <div class="text-holder">
-                                            <h3><a href="#">Chemistry Formula Puzzles</a></h3>
-                                            <div class="author-info">
-                                                <span class="info-text">
-                                                    <span>Oliver K</span>
-                                                    <span>3 hours ago</span>
-                                                </span>
+                                        <a href="#" class="listing-card-link">
+                                            <div class="img-holder">
+                                                <figure>
+                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                                </figure>
                                             </div>
-                                        </div>
-                                        <ul class="list-options">
-                                            
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 7th-8th  Grade</li>
-                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Chemistry</li>
-                                        </ul>
+                                            <div class="text-holder">
+                                                <h3>Chemistry Formula Puzzles</h3>
+                                                <div class="author-info">
+                                                    <span class="info-text">
+                                                        <span>Oliver K</span>
+                                                        <span>3 hours ago</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="list-options">
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 7th-8th  Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Chemistry</li>
+                                            </ul>
+                                        </a>
                                     </div>
                                     <button class="load-more-btn"><i class="fas fa-plus"></i> Load More</button>
                                 </div>
