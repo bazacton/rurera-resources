@@ -2888,8 +2888,7 @@ Admin Questions Generator Page Style End
 }
 @media screen and (max-width: 767px) {
     .progress-wrapper .progress-holder {
-        margin: 15px 0 0;
-        gap: 15px;
+        display: none;
     }
     .progress-box {
         padding-left: 0;
