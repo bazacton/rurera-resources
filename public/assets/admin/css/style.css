@@ -2907,4 +2907,25 @@ Admin Questions Generator Page Style End
     .section .progress-wrapper .section-header {
         margin-bottom: 0 !important;
     }
+    .topic-parts-data thead {
+        display: none;
+    }
+    .topic-parts-data table {
+        min-width: auto;
+        display: block;
+    }
+    .topic-parts-data tr {
+        display: block;
+    }
+    .topic-parts-data tr td {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .topic-parts-data tr td:before {
+        content: attr(data-label);
+        display: inline-block;
+        color: #333;
+        font-weight: 600;
+    }
 }
