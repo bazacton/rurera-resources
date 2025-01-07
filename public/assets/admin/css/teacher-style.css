@@ -4894,6 +4894,7 @@ Accuracy Score Card Style End
     display: inline-block;
     height: calc(100vh - 75px);
     overflow: hidden;
+    padding: 15px;
 }
 .pdf-img-box img {
     max-width: 100%;
