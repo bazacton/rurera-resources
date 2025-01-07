@@ -5039,6 +5039,7 @@ Accuracy Score Card Style End
 }
 .hotel-table .progress {
     border-radius: 0;
+    position: relative;
 }
 .hotel-table .progress .progress-bar {
     background-color: #5cc45c;
