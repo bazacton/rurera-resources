@@ -900,6 +900,8 @@ New Quiz Page Style Start
     border-radius: 3px;
     line-height: normal;
     display: inline-block;
+    width: auto;
+    height: auto;
 }
 .class-controls .right-area {
     flex-wrap: wrap;
