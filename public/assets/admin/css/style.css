@@ -2408,7 +2408,7 @@ output {
 .prompt-text:empty{
     display: none;
 }
-.progress-wrapper {display: flex; align-items: center;}
+.progress-wrapper {display: flex; align-items: center; flex-wrap: wrap;}
 .progress-wrapper .progress-holder {margin: 0 0 0 auto; display: inline-flex; align-items: center; justify-content: flex-start; gap: 25px;}
 .circle_percent {font-size:60px; width:1em; height:1em; position: relative; background: #eee; border-radius:50%; overflow:hidden; display:inline-block;}
 .circle_inner {position: absolute; left: 0; top: 0; width: 1em; height: 1em; clip:rect(0 1em 1em .5em);}
@@ -2884,5 +2884,10 @@ Admin Questions Generator Page Style End
     }
     .similarity-content-block .tab-content:has(.rureraform-admin-popup.active) > .tab-pane.question-details-tab-data > .col-12 {
         display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .progress-wrapper .progress-holder {
+        margin: 15px 0 0;
     }
 }
