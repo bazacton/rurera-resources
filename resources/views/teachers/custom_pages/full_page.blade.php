@@ -14,6 +14,72 @@
     <div class="section-body">
         <div class="row">
             <div class="col-12">
+                <div class="hotel-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Hotel Chain</th>
+                                <th>Details</th>
+                                <th>Description</th>
+                                <th>Average Stay</th>
+                                <th>Average Occupancy Rate</th>
+                                <th>Available In</th>
+                                <th>Average Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="img-holder">
+                                        <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                    </div>
+                                    <strong>
+                                        Mountain Village Resorts
+                                        <span>Self-catering huts</span>
+                                    </strong>
+                                </td>
+                                <td>
+                                    <div class="categories">
+                                        <span>Categories: <em>3-star</em></span>
+                                        <span>Segment: <em>Winter breaks</em></span>
+                                        <span>Target: <em>Family</em></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="description">
+                                        <p>Perfect for your family winter holiday! Our traditional holiday villages offer cozy and affordable self-catering accommodation in family-friendly mountain... <a href="#">More</a></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="progress-lable">Compared to segment in days</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 70%;"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="occupancy">
+                                        <div class="progress-box">
+                                            <div class="circle_percent" data-percent="35">
+                                                <div class="circle_inner">
+                                                    <div class="round_per" style="transform: rotate(306deg);"></div>
+                                                </div>
+                                            <div class="circle_inbox"><span class="percent_text">35%</span></div></div>
+                                        </div>
+                                        <div class="occupancy-info">
+                                            <div>Total Nights: <span>163,520</span></div>
+                                            <div>Cancellation Rate: <span>12%</span></div>
+                                            <div>Last-Minute: <span>10%</span></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Austria, France, Germany, Switzerland</td>
+                                <td class="rating">Excellent</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-12">
                 <div class="progress-table">
                     <table class="table table-bordered text-center">
                         <thead>
