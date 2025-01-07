@@ -2923,14 +2923,14 @@ Admin Questions Generator Page Style End
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 5px;
+        border: 0;
+        border-bottom: 2px dotted #ddd;
     }
     .topic-parts-data table tr td:before {
         content: attr(data-label);
         display: inline-block;
         color: #333;
         font-weight: 600;
-        border: 0;
-        border-bottom: 2px dotted #ddd;
     }
     .topic_parts.accordion-parent td:has(.topic-part-title) {
         padding-left: 15px !important;
