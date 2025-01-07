@@ -2,6 +2,7 @@
 $stages_list = getSvgFiles('assets/admin/editor/stages/');
 $paths_list = getSvgFiles('assets/admin/editor/paths/');
 $topics_list = getSvgFiles('assets/admin/editor/topics/');
+$treasures_list = getSvgFiles('assets/admin/editor/treasures/');
  @endphp
 
 <div class="editor-controls-holder">
@@ -30,6 +31,9 @@ $topics_list = getSvgFiles('assets/admin/editor/topics/');
 			<li class="nav-item">
 				<a class="nav-link" id="topics-tab{{$data_id}}" data-toggle="tab" href="#topics{{$data_id}}" role="tab" aria-controls="topics{{$data_id}}" aria-selected="true">Topics</a>
 			</li>
+            <li class="nav-item">
+                <a class="nav-link" id="treasures-tab{{$data_id}}" data-toggle="tab" href="#treasures{{$data_id}}" role="tab" aria-controls="treasures{{$data_id}}" aria-selected="true">Treasures</a>
+            </li>
 		</ul>
 
 		<div class="tab-content" id="myTabContent2">
@@ -106,6 +110,24 @@ $topics_list = getSvgFiles('assets/admin/editor/topics/');
 					@endif
 					</ul>
 			</div>
+            <div class="tab-pane mt-3 fade" id="treasures{{$data_id}}" role="tabpanel" aria-labelledby="treasures-tab{{$data_id}}">
+                <ul class="editor-objects">
+                    @if( !empty( $treasures_list ) )
+                        @foreach( $treasures_list as $treasureObj)
+                            @php $object_path = isset( $treasureObj['path'] )? $treasureObj['path'] : '';
+							$object_slug = isset( $treasureObj['slug'] )? $treasureObj['slug'] : '';
+							$object_title = isset( $treasureObj['title'] )? $treasureObj['title'] : '';
+                            @endphp
+                            <li>
+                                <a href="javascript:;" title="{{$object_title}}" class="control-tool-item"
+                                   data-drag_type="treasure" data-object_path="/assets/admin/editor/treasures/{{$object_path}}" data-item_path="{{$object_path}}" data-drag_object="{{$object_slug}}">
+                                    <img src="/assets/admin/editor/treasures/{{$object_path}}" style="width:65px">
+                                </a>
+                            </li>
+                        @endforeach
+                    @endif
+                </ul>
+            </div>
 		</div>
 
 	</div>
@@ -117,14 +139,7 @@ $topics_list = getSvgFiles('assets/admin/editor/topics/');
 				foreach( $itemObj->LearningJourneyObjects->where('status','active') as $learningJourneyItemObj){
 
 					echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2">'.$learningJourneyItemObj->item_slug.'
-					<div class="dropdown">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                        <img src="/assets/default/svgs/dots-three.svg" alt="">
-                      </button>
-                      <div class="dropdown-menu">
-                        <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i><i class="fa fa-copy"></i></li>
-                    </div>
-                    </div>
+					/li>
 
 					';
 
@@ -142,23 +157,6 @@ $topics_list = getSvgFiles('assets/admin/editor/topics/');
 
 		<div class="page-settings-fields">
             <div class="option-field-item">
-                <label>Background Image</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <button type="button" class="input-group-text admin-file-manager" data-input="background_image" data-preview="holder">
-                            <i class="fa fa-upload"></i>
-                        </button>
-                    </div>
-                    <input type="text"  data-field_id="background-image" data-field_name="background-image"
-                           data-field_type="page_style" data-id="" name="background_image" id="background_image" value="" class="trigger_field form-control ">
-                    <div class="input-group-append">
-                        <button type="button" class="input-group-text admin-file-view" data-input="background_image">
-                            <i class="fa fa-eye"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="option-field-item">
 				<label>Background Color</label>
 				<div class="input-group">
 					<input type="text" name="background_color" class="form-control trigger_field colorpickerinput"
@@ -171,6 +169,24 @@ $topics_list = getSvgFiles('assets/admin/editor/topics/');
 						</div>
 					</div>
 			</div>
+
+            <div class="option-field-item">
+                <label>Background Image</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <button type="button" class="input-group-text admin-file-manager" data-input="background_image" data-preview="holder">
+                            <i class="fa fa-upload"></i>
+                        </button>
+                    </div>
+                    <input type="text"  data-field_id="background_image" data-field_name="background_image"
+                           data-field_type="page_style" data-id="" name="background_image" id="background_image" value="" class="trigger_field form-control ">
+                    <div class="input-group-append">
+                        <button type="button" class="input-group-text admin-file-view" data-input="background_image">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
 			<div class="option-field-item">
 				<label>Height</label>
 				<div class="input-group">
@@ -318,17 +334,109 @@ $topics_list = getSvgFiles('assets/admin/editor/topics/');
 						</div>
 				</div>
 
+                <div class="option-field-item">
+                    <label>Topic Order No</label>
+                    <div class="input-group">
+                        <input type="number" name="topic_order_no" class="form-control trigger_field"
+                               value="0" data-field_id="topic_order_no" data-field_name="topic_order_no"
+                                data-id="">
+
+                    </div>
+                </div>
+
+
+                <div class="option-field-item">
+                    <label class="input-label">Chapter</label>
+                    <select data-field_id="chapter_id"
+                            class="trigger_field form-control ajax-chapter-dropdown" data-field_name="select_chapter" data-field_type="select_chapter"
+                            data-placeholder="Search Chapter" data-id="">
+                        <option value="">Please select year, subject</option>
+                    </select>
+                    @error('chapter_id')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                    @enderror
+                </div>
+
+
+                <div class="option-field-item">
+                    <label class="input-label">Sub Chapter</label>
+                    <select data-field_id="sub_chapter_id"
+                            class="trigger_field form-control ajax-subchapter-dropdown" data-field_name="select_subchapter" data-field_type="select_subchapter"
+                            data-placeholder="Search Sub Chapter" data-id="">
+                        <option value="">Please select year, subject, Topic</option>
+                    </select>
+                    @error('sub_chapter_id')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                    @enderror
+
+                </div>
 				<div class="option-field-item">
 					<label class="input-label">Topic</label>
 					<select data-field_id="topic"
 							data-search-option="topic"
-							class="trigger_field form-control search_topic" data-field_name="select_topic" data-field_type="select_topic"
+							class="trigger_field form-control ajax-topicpart-item-dropdown search_topic1" data-field_name="select_topic" data-field_type="select_topic"
 							data-placeholder="Search Topic" data-id="">
 					</select>
 				</div>
 			</div>
 		@endforeach
 	@endif
+
+    @if( !empty( $treasures_list ) )
+        @foreach( $treasures_list as $treasureObj)
+            @php
+                $obj_slug = isset( $treasureObj['slug'] )? $treasureObj['slug'] : '';
+                $svg_code = isset( $treasureObj['svg_code'] )? $treasureObj['svg_code'] : '';
+            @endphp
+            <div class="infobox-{{$obj_slug}}-fields">
+                <div class="option-field-item">
+                    <label>Size (px)</label>
+                    <div class="input-group">
+                        <input type="number" name="topic_width" class="form-control trigger_field"
+                               value="180" data-field_id="topic_width" data-field_name="width"
+                               data-field_type="style" data-id="">
+
+                    </div>
+                </div>
+                <div class="option-field-item">
+                    <label>Fill Color</label>
+                    <div class="input-group">
+                        <input type="text" name="background_color" class="form-control trigger_field colorpickerinput"
+                               value="#ffffff" data-field_id="fill_color" data-field_name="fill"
+                               data-field_type="svg_path_style" data-id="">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <i class="fas fa-fill-drip"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="option-field-item">
+                    <label>No of Coins</label>
+                    <div class="input-group">
+                        <input type="number" name="no_of_coins" class="form-control trigger_field"
+                               value="0" data-field_id="no_of_coins" data-field_name="no_of_coins"
+                               data-id="">
+                    </div>
+                </div>
+
+                <div class="option-field-item">
+                    <label>Topic Order No</label>
+                    <div class="input-group">
+                        <select data-field_id="treasure_topic_order_no"
+                                class="trigger_field form-control treasure_topic_order_no" data-field_name="treasure_topic_order_no" data-field_type="treasure_topic_order_no"
+                                data-placeholder="Select Topic Order No" data-id="">
+                        </select>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+    @endif
 
 
 
@@ -390,5 +498,18 @@ $topics_list = getSvgFiles('assets/admin/editor/topics/');
 			</div>
 		@endforeach
 	@endif
+
+    @if( !empty( $treasures_list ) )
+        @foreach( $treasures_list as $treasureObj)
+            @php
+                $obj_slug = isset( $treasureObj['slug'] )? $treasureObj['slug'] : '';
+                $svg_code = isset( $treasureObj['svg_code'] )? $treasureObj['svg_code'] : '';
+                $svg_code = updateSvgDimensions($svg_code, '100%', '100%');
+            @endphp
+            <div class="{{$obj_slug}}_svg">
+                {!! $svg_code !!}
+            </div>
+        @endforeach
+    @endif
 
 </div>
