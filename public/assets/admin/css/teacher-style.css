@@ -5033,6 +5033,7 @@ Accuracy Score Card Style End
 .hotel-table .progress-lable {
     display: block;
     margin: 0 0 15px;
+    color: #333;
 }
 .hotel-table .progress {
     border-radius: 0;
