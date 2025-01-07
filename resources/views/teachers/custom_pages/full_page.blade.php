@@ -30,13 +30,15 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <div class="img-holder">
-                                        <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                    <div class="hotel-thum-box">
+                                        <div class="img-holder">
+                                            <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                        </div>
+                                        <strong>
+                                            Mountain Village Resorts
+                                            <span>Self-catering huts</span>
+                                        </strong>
                                     </div>
-                                    <strong>
-                                        Mountain Village Resorts
-                                        <span>Self-catering huts</span>
-                                    </strong>
                                 </td>
                                 <td>
                                     <div class="categories">
