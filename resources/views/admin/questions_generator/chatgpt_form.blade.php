@@ -145,9 +145,9 @@
 																<td class="{{$difficulty_level_class}} table-col-pending" data-label="Pending">{{$pending_questions}}</td>
 															@endforeach
 														@endif
-														<td data-label="Expected">{{$total_pending_questions}}</td>
-														<td data-label="Total">{{$total_unreviewed_questions}}</td>
-														<td data-label="Pending">&nbsp;</td>
+														<td data-label="Total Pending Questions">{{$total_pending_questions}}</td>
+														<td data-label="Total unreviewed Questions">{{$total_unreviewed_questions}}</td>
+														<td data-label="Action">&nbsp;</td>
 													</tr>
 													@if($subTopicObj->topicPartItemPrompts->count() > 0 )
 														@foreach($subTopicObj->topicPartItemPrompts as $promptObj)			
@@ -157,8 +157,8 @@
 															@endphp
 															
 															<tr class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
-															  <td data-label="Total Pending Questions">{{$prompt_title}}</td>
-															  <td data-label="Total unreviewed Questions">{{ dateTimeFormat($promptObj->created_at, 'j M y | H:i') }}</td>
+															  <td data-label="">{{$prompt_title}}</td>
+															  <td data-label="">{{ dateTimeFormat($promptObj->created_at, 'j M y | H:i') }}</td>
 															  @if(!empty($difficulty_levels))
 																@foreach($difficulty_levels as $difficulty_level)
 																	@php $total_questions = $promptObj->promptQuestions->where('question_difficulty_level', $difficulty_level)->count();@endphp
@@ -167,7 +167,7 @@
 																	$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
 																	$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
 																	@endphp
-																	<td class="{{$difficulty_level_class}}" data-label="Action">-</td>
+																	<td class="{{$difficulty_level_class}}" data-label="">-</td>
 																	<td class="{{$difficulty_level_class}}" data-label="">{{$total_questions}}</td>
 																	<td class="{{$difficulty_level_class}} table-col-pending" data-label="">-</td>
 																@endforeach
