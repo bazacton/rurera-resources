@@ -5167,3 +5167,11 @@ Accuracy Score Card Style End
     white-space: nowrap;
 }
 /* Hotel Table Style End */
+
+@media screen and (max-width: 767px) {
+    .document-left-sidebar,
+    .document-content,
+    .document-right-sidebar {
+        width: 100%;
+    }
+}
