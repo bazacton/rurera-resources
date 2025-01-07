@@ -1171,11 +1171,6 @@ Lms Responsive Style Start
     .stages-items {
         position: initial;
     }
-    .document-left-sidebar,
-    .document-content,
-    .document-right-sidebar {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 640px) {
