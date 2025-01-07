@@ -2922,16 +2922,18 @@ Admin Questions Generator Page Style End
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 5px;
     }
-    .topic-parts-data tr td:before {
+    .topic-parts-data table tr td:before {
         content: attr(data-label);
         display: inline-block;
         color: #333;
         font-weight: 600;
-    }
-    .topic-parts-data table tr td {
         border: 0;
         border-bottom: 2px dotted #ddd;
+    }
+    .topic_parts.accordion-parent td:has(.topic-part-title) {
+        padding-left: 15px !important;
     }
     .topic-parts-data table tr td:has(.topic-part-title) {
         min-width: auto;
