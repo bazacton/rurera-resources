@@ -55,7 +55,8 @@
                                 <td>
                                     <span class="progress-lable">Compared to segment in days</span>
                                     <div class="progress">
-                                        <div class="progress-bar" style="width: 70%;"></div>
+                                        <div class="progress-bar" data-value="7" style="width: 70%;"></div>
+                                        <div class="days-value" data-value="5"></div>
                                     </div>
                                 </td>
                                 <td>
