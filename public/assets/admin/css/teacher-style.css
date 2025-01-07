@@ -5071,6 +5071,10 @@ Accuracy Score Card Style End
     flex-wrap: wrap;
     align-items: flex-start;
 }
+.hotel-table .occupancy .occupancy-lable {
+    color: #333;
+    width: 100%;
+}
 .occupancy-info span {
     color: #333;
 }
