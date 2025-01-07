@@ -4825,7 +4825,9 @@ Accuracy Score Card Style End
     display: inline-block;
     vertical-align: top;
     margin-right: -4px;
-    height: calc(100vh - 15px);
+}
+.document-pages {
+    height: 500px;
 }
 .page-box {
     margin: 0 0 15px;
