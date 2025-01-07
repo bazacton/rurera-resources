@@ -2898,4 +2898,8 @@ Admin Questions Generator Page Style End
     .breadcrumb-item+.breadcrumb-item::before {
         display: none;
     }
+    .section .progress-wrapper .section-header h1 {
+        font-size: 18px;
+        margin-top: 15px;
+    }
 }
