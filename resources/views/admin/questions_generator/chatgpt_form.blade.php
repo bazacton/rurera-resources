@@ -157,8 +157,8 @@
 															@endphp
 															
 															<tr class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
-															  <td data-label="Expected">{{$prompt_title}}</td>
-															  <td data-label="Total">{{ dateTimeFormat($promptObj->created_at, 'j M y | H:i') }}</td>
+															  <td data-label="Total Pending Questions">{{$prompt_title}}</td>
+															  <td data-label="Total unreviewed Questions">{{ dateTimeFormat($promptObj->created_at, 'j M y | H:i') }}</td>
 															  @if(!empty($difficulty_levels))
 																@foreach($difficulty_levels as $difficulty_level)
 																	@php $total_questions = $promptObj->promptQuestions->where('question_difficulty_level', $difficulty_level)->count();@endphp
@@ -167,7 +167,7 @@
 																	$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
 																	$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
 																	@endphp
-																	<td class="{{$difficulty_level_class}}" data-label="Pending">-</td>
+																	<td class="{{$difficulty_level_class}}" data-label="Action">-</td>
 																	<td class="{{$difficulty_level_class}}" data-label="">{{$total_questions}}</td>
 																	<td class="{{$difficulty_level_class}} table-col-pending" data-label="">-</td>
 																@endforeach
