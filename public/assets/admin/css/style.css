@@ -2902,7 +2902,7 @@ Admin Questions Generator Page Style End
         font-size: 18px;
         margin-top: 15px;
     }
-    .section .progress-wrapper .section-header .section-header-breadcrumb {
+    .section .progress-wrapper .section-header .section-header-breadcrumb.hide-for-mobile {
         display: none;
     }
 }
