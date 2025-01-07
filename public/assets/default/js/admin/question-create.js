@@ -362,7 +362,7 @@ function rureraform_builder_save(_object, question_status) {
 			if (!keywordsArray[id]) {
 				keywordsArray[id] = {}; // Initialize each id in the array if it doesn't exist
 			}
-			
+
 			keywordsArray[id][field] = $(this).val(); // Store the value
 		}
 	});
@@ -629,7 +629,7 @@ function _rureraform_properties_prepare(_object) {
     if (typeof type == undefined || type == "")
         return false;
 
-	
+
     if (type == "settings") {
         properties = rureraform_form_options;
         jQuery("#rureraform-element-properties").find(".rureraform-admin-popup-title h3").html("<i class='fas fa-cogs'></i> " + rureraform_esc_html__("Form Settings"));
@@ -1133,7 +1133,7 @@ function _rureraform_properties_prepare(_object) {
 
                 case 'text':
                     var after_html = EditorIsEmpty(rureraform_meta[type][key].after)? '' : rureraform_meta[type][key].after;
-					
+
 					var classes = EditorIsEmpty(rureraform_meta[type][key]['classes'])? '' : rureraform_meta[type][key]['classes'];
                     html += "<div class='rureraform-properties-item "+classes+"' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><input type='text' name='rureraform-" + key + "' id='rureraform-" + key + "' value='" + rureraform_escape_html(properties[key]) + "' placeholder='' />"+after_html+"</div></div>";
                     break;
@@ -1294,7 +1294,7 @@ function _rureraform_properties_prepare(_object) {
 					var course_id = $("[name=course_id]").val();
 					var chapter_id = $("[name=chapter_id]").val();
 					var sub_chapter_id = $("[name=sub_chapter_id]").val();
-					
+
 					var gallery_directory = rureraform_meta[type][key]['gallery_directory'];
 					html += '<div class="gallery-images gallery-images-id-'+random_id+' p-20"><div class="rurera-button-loader" style="display: block;">\n\
                    <div class="spinner">\n\
@@ -1382,9 +1382,9 @@ function _rureraform_properties_prepare(_object) {
                 case 'text-number':
                     html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-number'><input type='text' name='rureraform-" + key + "' id='rureraform-" + key + "' value='" + rureraform_escape_html(properties[key]) + "' placeholder='' /></div></div></div>";
                     break;
-					
-					
-					
+
+
+
 
                 case 'checkbox':
                     selected = "";
@@ -1392,9 +1392,9 @@ function _rureraform_properties_prepare(_object) {
                         selected = " checked='checked'";
                     html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><input class='rureraform-checkbox-toggle' type='checkbox' value='off' name='rureraform-" + key + "' id='rureraform-" + key + "'" + selected + "' /><label for='rureraform-" + key + "'></label></div></div>";
                     break;
-					
-					
-					
+
+
+
 
                 case 'select':
                     options = "";
@@ -1410,7 +1410,7 @@ function _rureraform_properties_prepare(_object) {
                     var wrapper_class = (rureraform_meta[type][key]['wrapper_class'] != undefined)? rureraform_meta[type][key]['wrapper_class'] : '';
                     html += "<div class='rureraform-properties-item "+wrapper_class+"' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-third'><select name='rureraform-" + key + "' id='rureraform-" + key + "' class='"+field_class+"'>" + options + "</select></div></div></div>";
                     break;
-					
+
 				case 'inner_select_field':
                     options = "";
 					var field_option_id = rureraform_meta[type][key]['field_option_id'];
@@ -1430,12 +1430,12 @@ function _rureraform_properties_prepare(_object) {
                     var field_class = (rureraform_meta[type][key]['class'] != undefined)? rureraform_meta[type][key]['class'] : '';
                     var wrapper_class = (rureraform_meta[type][key]['wrapper_class'] != undefined)? rureraform_meta[type][key]['wrapper_class'] : '';
 					var field_option_id = rureraform_meta[type][key]['field_option_id'];
-					
-					
-					
+
+
+
                     html += "<div class='rureraform-properties-item rurera-inner-fields  "+wrapper_class+"' data-field_option_id='"+field_option_id+"' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-third'><select data-correct_answer='"+correct_answer+"' name='rureraform-" + key + "' id='rureraform-" + key + "' class='"+field_class+"'>" + options + "</select></div></div></div>";
                     break;
-                    
+
                 case 'ajax_select_new':
                     options = "";
                     var question_title = jQuery(".example_question_"+properties[key]).attr('data-question_title');
@@ -1686,7 +1686,7 @@ function _rureraform_properties_prepare(_object) {
                     }
                     html += "<div class='rureraform-properties-item' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-properties-options-table-header'><div>Label</div><div></div></div><div class='rureraform-properties-options-box'><div class='rureraform-properties-options-container' data-multi='" + rureraform_escape_html(rureraform_meta[type][key]['multi-select']) + "'>" + options + "</div></div><div class='rureraform-properties-options-table-footer'><a class='rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small' href='#' onclick='return rureraform_properties_options_new(null, $(this), \"only_label\");'><i class='fas fa-plus'></i><label>Add option</label></a></div></div></div>";
                     break;
-					
+
                 case 'draggable_options_label':
                     options = "";
                     for (var j = 0; j < properties[key].length; j++) {
@@ -1700,7 +1700,7 @@ function _rureraform_properties_prepare(_object) {
                     }
                     html += "<div class='rureraform-properties-item draggable_options_label' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-properties-options-table-header'><div>Label</div><div></div></div><div class='rureraform-properties-options-box'><div class='rureraform-properties-options-container' data-multi='" + rureraform_escape_html(rureraform_meta[type][key]['multi-select']) + "'>" + options + "</div></div><div class='rureraform-properties-options-table-footer'><a class='rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small' href='#' onclick='return rureraform_properties_options_new(null, $(this), \"only_repeater\");'><i class='fas fa-plus'></i><label>Add option</label></a></div></div></div>";
                     break;
-					
+
 				case 'options_label_minimal':
 					options = "";
 					var option_id = rureraform_meta[type][key]['option_id'];
@@ -1720,12 +1720,12 @@ function _rureraform_properties_prepare(_object) {
                     html += "<div class='rureraform-properties-item rurera-dropdown-options "+element_class+"' data-option_id='"+option_id+"' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-properties-options-table-header'><div>Label</div><div></div></div><div class='rureraform-properties-options-box'><div class='rureraform-properties-options-container' data-multi='" + rureraform_escape_html(rureraform_meta[type][key]['multi-select']) + "'>" + options + "</div></div><div class='rureraform-properties-options-table-footer'><a class='rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small' href='#' onclick='return rureraform_properties_options_new(null, $(this), \"only_label\");'><i class='fas fa-plus'></i><label>Add option</label></a></div></div></div>";
                     break;
 				break;
-					
+
 				case 'inner_text_field':
 					var after_html = EditorIsEmpty(rureraform_meta[type][key].after)? '' : rureraform_meta[type][key].after;
 					html += "<div class='rureraform-properties-item rurera-inner-fields ' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><input type='text' name='rureraform-" + key + "' id='rureraform-" + key + "' value='" + rureraform_escape_html(properties[key]) + "' placeholder='' />"+after_html+"</div></div>";
 				break;
-				
+
 				case 'block_start':
 					var field_option_id = rureraform_meta[type][key]['field_option_id'];
 					var element_class = 'rurera-hide';
@@ -1734,11 +1734,11 @@ function _rureraform_properties_prepare(_object) {
 					}
 					html += "<div class='section-block "+element_class+"' data-field_option_id='"+field_option_id+"'>" + rureraform_meta[type][key]['label'];
 				break;
-				
+
 				case 'block_end':
 					html += "</div>";
 				break;
-					
+
 				 case 'options_label_minimal11':
 					options = "";
 					var option_id = rureraform_meta[type][key]['option_id'];
@@ -1762,7 +1762,7 @@ function _rureraform_properties_prepare(_object) {
 					}
 					html += "<div class='rureraform-properties-item rurera-dropdown-options "+element_class+"' data-option_id='"+option_id+"' data-id='" + key + "'><div class='rureraform-properties-label'><label>" + rureraform_meta[type][key]['label'] + "</label></div><div class='rureraform-properties-tooltip'>" + tooltip_html + "</div><div class='rureraform-properties-content'><div class='rureraform-properties-options-table-header'><div>Label</div><div></div></div><div class='rureraform-properties-options-box'><div class='rureraform-properties-options-container' data-multi='" + rureraform_escape_html(rureraform_meta[type][key]['multi-select']) + "'>" + options + "</div></div><div class='rureraform-properties-options-table-footer'><a class='rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small' href='#' onclick='return rureraform_properties_options_new(null, $(this), \"inside_options\");'><i class='fas fa-plus'></i><label>Add option</label></a></div></div></div>";
 				break;
-				
+
 
                 case 'repeater_fields':
                     options = "";
@@ -1829,7 +1829,7 @@ function _rureraform_properties_prepare(_object) {
                         selected = "";
                         if (properties[key][j].hasOwnProperty("default") && properties[key][j]["default"] == "on")
                             selected = " rureraform-properties-options-item-default";
-						
+
 						if(DataIsEmpty(properties[key][j]["label"])){
 							continue;
 						}
@@ -2035,8 +2035,8 @@ function _rureraform_properties_prepare(_object) {
     			}).removeClass('rurera-hide');
     		});
     	}
-	
-	if(jQuery('select[name="rureraform-no_of_fields"]').val() > 0){	
+
+	if(jQuery('select[name="rureraform-no_of_fields"]').val() > 0){
 		jQuery('select[name="rureraform-no_of_fields"]').each(function () {
 			var no_of_fields = $(this).val();
 			var thisBlock = $(this).closest('.rureraform-tab-content');
@@ -2046,8 +2046,8 @@ function _rureraform_properties_prepare(_object) {
 			}).removeClass('rurera-hide');
 		});
 	}
-	
-	
+
+
 
 
     /*var HelloButton = function (context) {
@@ -2502,15 +2502,15 @@ function _rureraform_properties_prepare(_object) {
     });
     rureraform_init_tinymce();
     rureraform_properties_visible_conditions(_object);
-	
-	
-	
-	
+
+
+
+
 	console.log('draggable_count  '+$('.draggable_options_label .rureraform-properties-options-label').length);
 	if($('.draggable_options_label .rureraform-properties-options-label').length > 0){
 		$('.draggable_options_label .rureraform-properties-options-label').change();
 	}
-	
+
     // Prepare editor state - end
     return false;
 }
@@ -2532,7 +2532,7 @@ function rureraform_properties_open(_object) {
     jQuery("#rureraform-element-properties .rureraform-admin-popup-loading").show();
     jQuery("#rureraform-element-properties").attr('data-element_id', element_id);
     console.log(_object);
-	
+
 
     /*var sidebar = new StickySidebar('.lms-element-properties', {
         containerSelector: false,
@@ -2547,7 +2547,7 @@ function rureraform_properties_open(_object) {
     }, 500);
 
 
-	
+
 
     return false;
 }
@@ -2895,7 +2895,7 @@ function rureraform_properties_save() {
             });
         });
     }
-	
+
 	if (properties.hasOwnProperty("sortable_options")) {
         properties["sortable_options"] = new Array();
         jQuery(".rureraform-properties-options-container .rureraform-properties-options-item").each(function () {
@@ -2913,7 +2913,7 @@ function rureraform_properties_save() {
             });
         });
     }
-	
+
 	if (properties.hasOwnProperty("dropdown1_options")) {
         properties["dropdown1_options"] = new Array();
         jQuery('.rurera-dropdown-options[data-option_id="1"] .rureraform-properties-options-container .rureraform-properties-options-item').each(function () {
@@ -2932,7 +2932,7 @@ function rureraform_properties_save() {
             });
         });
     }
-	
+
 	if (properties.hasOwnProperty("dropdown2_options")) {
         properties["dropdown2_options"] = new Array();
         jQuery('.rurera-dropdown-options[data-option_id="2"] .rureraform-properties-options-container .rureraform-properties-options-item').each(function () {
@@ -2951,7 +2951,7 @@ function rureraform_properties_save() {
             });
         });
     }
-	
+
 	if (properties.hasOwnProperty("dropdown3_options")) {
         properties["dropdown3_options"] = new Array();
         jQuery('.rurera-dropdown-options[data-option_id="3"] .rureraform-properties-options-container .rureraform-properties-options-item').each(function () {
@@ -2970,7 +2970,7 @@ function rureraform_properties_save() {
             });
         });
     }
-	
+
 	if (properties.hasOwnProperty("dropdown4_options")) {
         properties["dropdown4_options"] = new Array();
         jQuery('.rurera-dropdown-options[data-option_id="4"] .rureraform-properties-options-container .rureraform-properties-options-item').each(function () {
@@ -2989,7 +2989,7 @@ function rureraform_properties_save() {
             });
         });
     }
-	
+
 	if (properties.hasOwnProperty("dropdown5_options")) {
         properties["dropdown5_options"] = new Array();
         jQuery('.rurera-dropdown-options[data-option_id="5"] .rureraform-properties-options-container .rureraform-properties-options-item').each(function () {
@@ -3309,9 +3309,9 @@ function rureraform_properties_close() {
         });
     } else
         _rureraform_properties_close();
-	
+
 	jQuery("#rureraform-element-properties").removeClass('active');
-	
+
 	$(".topic-parts-block").removeClass('rurera-hide');
     return false;
 }
@@ -5883,7 +5883,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                 case "text":
                     if (rureraform_form_elements[i]['input-style-size'] != "")
                     extra_class += " rureraform-input-" + rureraform_form_elements[i]['input-style-size'];
-					
+
                     html += "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element" + (properties["label-style-position"] != "" ? " rureraform-element-label-" + properties["label-style-position"] : "") + (rureraform_form_elements[i]['description-style-position'] != "" ? " rureraform-element-description-" + rureraform_form_elements[i]['description-style-position'] : "") + "' data-type='" + rureraform_form_elements[i]["type"] + "'><div class='rureraform-column-label" + column_label_class + "'><label class='rureraform-label" + (rureraform_form_elements[i]['label-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['label-style-align'] : "") + "'>" + properties["required-label-left"] + rureraform_escape_html(rureraform_form_elements[i]["label"]) + properties["required-label-right"] + properties["tooltip-label"] + "</label></div><div class='rureraform-column-input" + column_input_class + "'><div class='rureraform-input" + extra_class + "'" + properties["tooltip-input"] + ">" + icon + "<input type='text' class='" + (rureraform_form_elements[i]['input-style-align'] != "" ? "rureraform-ta-" + rureraform_form_elements[i]['input-style-align'] + " " : "") + rureraform_form_elements[i]["css-class"] + "' placeholder='" + rureraform_escape_html(rureraform_form_elements[i]["placeholder"]) + "' value='" + rureraform_escape_html(rureraform_form_elements[i]["default"]) + "' /></div><label class='rureraform-description" + (rureraform_form_elements[i]['description-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['description-style-align'] : "") + "'>" + properties["required-description-left"] + rureraform_escape_html(rureraform_form_elements[i]["description"]) + properties["required-description-right"] + properties["tooltip-description"] + "</label></div><div class='rureraform-element-cover'></div></div>";
                     break;
 
@@ -5978,8 +5978,8 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 
                         var label_data = '';
                         var image_data = '';
-						
-						
+
+
                         if (!DataIsEmpty(image_url)) {
                             image_data += '<img src="' + rureraform_form_elements[i]["options"][j]["image"] + '" alt=""> ';
                             var is_image = true;
@@ -5988,13 +5988,13 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 						if(DataIsEmpty(rureraform_form_elements[i]["options"][j]["label"])){
 							continue;
 						}
-						
+
 						if( image_position == 'top' || image_position == 'left' ){
 							label_data += image_data;
 						}
-						
+
                         label_data += rureraform_form_elements[i]["options"][j]["label"];
-					
+
 						if( image_position == 'right' ){
 							label_data += image_data;
 						}
@@ -6004,7 +6004,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         options += "<div class='form-field "+is_checked_class+" rureraform-cr-container-" + properties["checkbox-size"] + " rureraform-cr-container-" + properties["checkbox-position"] + "'>\n\
 					" + option + "</div>";
                     }
-					
+
 					var image_position_class = 'image-'+image_position;
                     var image_class = (is_image == true) ? "lms-checkbox-img "+image_position_class : "";
                     html += "<div id='rureraform-element-" + i + "' class='quiz-group rureraform-element-" + i + " rureraform-element" + (properties["label-style-position"] != "" ? " rureraform-element-label-" + properties["label-style-position"] : "") + (rureraform_form_elements[i]['description-style-position'] != "" ? " rureraform-element-description-" + rureraform_form_elements[i]['description-style-position'] : "") + "' data-type='" + rureraform_form_elements[i]["type"] + "'><div class='rureraform-column-label" + column_label_class + "'><label class='rureraform-label" + (rureraform_form_elements[i]['label-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['label-style-align'] : "") + "'>" + properties["required-label-left"] + rureraform_escape_html(rureraform_form_elements[i]["label"]) + properties["required-label-right"] + properties["tooltip-label"] + "</label></div><div class='rureraform-column-input" + column_input_class + "'><div class='rureraform-input" + extra_class + "'" + properties["tooltip-input"] + "><div class='form-box " + template_style + " " + image_class + "'>" + options + "</div></div><label class='rureraform-description" + (rureraform_form_elements[i]['description-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['description-style-align'] : "") + "'>" + properties["required-description-left"] + rureraform_escape_html(rureraform_form_elements[i]["description"]) + properties["required-description-right"] + properties["tooltip-description"] + "</label></div><div class='rureraform-element-cover'></div></div>";
@@ -6038,7 +6038,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         selected = "";
                         var image_url = rureraform_form_elements[i]["options"][j]["image"];
                         var label_data = '';
-						
+
 						if (!DataIsEmpty(image_url)) {
                             label_data += '<img src="' + rureraform_form_elements[i]["options"][j]["image"] + '" alt=""> ';
                             var is_image = true;
@@ -6088,7 +6088,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         selected = "";
                         var image_url = rureraform_form_elements[i]["sortable_options"][j]["image"];
                         var label_data = rureraform_form_elements[i]["sortable_options"][j]["label"];
-						
+
 						if (!DataIsEmpty(image_url)) {
                             label_data += '<img src="' + rureraform_form_elements[i]["sortable_options"][j]["image"] + '" alt=""> ';
                             var is_image = true;
@@ -6256,7 +6256,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 
                     html += "<div id='rureraform-element-" + i + "' class='quiz-group rureraform-element-" + i + " rureraform-element" + (properties["label-style-position"] != "" ? " rureraform-element-label-" + properties["label-style-position"] : "") + (rureraform_form_elements[i]['description-style-position'] != "" ? " rureraform-element-description-" + rureraform_form_elements[i]['description-style-position'] : "") + "' data-type='" + rureraform_form_elements[i]["type"] + "'><div class='rureraform-column-label" + column_label_class + "'><label class='rureraform-label" + (rureraform_form_elements[i]['label-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['label-style-align'] : "") + "'>" + properties["required-label-left"] + rureraform_escape_html(rureraform_form_elements[i]["label"]) + properties["required-label-right"] + properties["tooltip-label"] + "</label></div>"+content_data+"<div class='rureraform-element-cover'></div></div>";
                     break;
-                    
+
 
                 case "match_quiz":
                     var random_id = Math.floor((Math.random() * 99999) + 1);
@@ -6333,11 +6333,11 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 
                     html += "<div id='rureraform-element-" + i + "' class='quiz-group rureraform-element-" + i + " rureraform-element" + (properties["label-style-position"] != "" ? " rureraform-element-label-" + properties["label-style-position"] : "") + (rureraform_form_elements[i]['description-style-position'] != "" ? " rureraform-element-description-" + rureraform_form_elements[i]['description-style-position'] : "") + "' data-type='" + rureraform_form_elements[i]["type"] + "'><div class='rureraform-column-label" + column_label_class + "'><label class='rureraform-label" + (rureraform_form_elements[i]['label-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['label-style-align'] : "") + "'>" + properties["required-label-left"] + rureraform_escape_html(rureraform_form_elements[i]["label"]) + properties["required-label-right"] + properties["tooltip-label"] + "</label></div><div class='rureraform-column-input" + column_input_class + "'><div class='rureraform-input" + extra_class + "'" + properties["tooltip-input"] + "><div class='form-box " + template_style + " " + image_class + "'><div class='lms-sorting-fields' id='lmssort" + sort_id + "'>" + options + "</div></div></div><label class='rureraform-description" + (rureraform_form_elements[i]['description-style-align'] != "" ? " rureraform-ta-" + rureraform_form_elements[i]['description-style-align'] : "") + "'>" + properties["required-description-left"] + rureraform_escape_html(rureraform_form_elements[i]["description"]) + properties["required-description-right"] + properties["tooltip-description"] + "</label></div><div class='rureraform-element-cover'></div></div>";
                     break;
-					
-					
-				
+
+
+
 				case "inner_dropdown":
-				
+
                     var random_id = Math.floor((Math.random() * 99999) + 1);
                     var sort_id = Math.floor((Math.random() * 99999) + 1);
                     rureraform_form_elements[i]['field_id'] = random_id;
@@ -6367,12 +6367,12 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 
 					var content = rureraform_form_elements[i]["content"];
 					var element_unique_id = "unique-id-123"; // Example unique ID
-					
+
 					var elementObj = rureraform_form_elements[i];
 					var updatedContent = content.replace(/\[DROPDOWN id="(\d+)"\]/g, function(match, id) {
 						var property = `dropdown${id}_options`;
 						var inner_options = elementObj[property] || [];
-						
+
 						if (inner_options.length > 0) {
 							var dropdown = `<select type="inner_dropdown" class="editor-field" id="dropdown-${id}" data-identifier="${element_unique_id}" name="field-${property}">`;
 							inner_options.forEach(option => {
@@ -6383,9 +6383,9 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 						}
 						return ""; // If no options, replace with empty string
 					});
-					
+
 					content = updatedContent;
-					
+
 					var updatedContent2 = content.replace(/\[INPUTFIELD id="(\d+)"\]/g, function(match, id) {
 						var property = `inner_field${id}`;
 						var label_before = elementObj[`${property}_label_before`] || "";
@@ -6394,6 +6394,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 						var style_format = elementObj[`${property}_style_format`] || "input_box";
 						var text_format = elementObj[`${property}_text_format`] || "text";
 						var maxlength = elementObj[`${property}_maxlength`] || "";
+                        var correct_answer = elementObj[`inner_field${property}`] || "";
 
 						// Build the HTML for the input field
 						var labelBeforeHtml = label_before ? `<span class="input-label" contenteditable="false">${label_before}</span>` : "";
@@ -6403,32 +6404,32 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 						var inputField = `
 							<span class="input-holder ${style_format}">
 								${labelBeforeHtml}
-								<input type="${text_format}" placeholder="${placeholder}" ${fieldAttributes} 
+								<input value="${correct_answer}" type="${text_format}" placeholder="${placeholder}" ${fieldAttributes}
 									data-field_type="text" class="editor-field input-simple" data-id="${id}" id="field-${id}">
 								${labelAfterHtml}
 							</span>
 						`;
 						return inputField;
 					});
-	
+
 					content = updatedContent2;
 
 					var hint = rureraform_form_elements[i]["hint"];
 				   var hint_html = '';
-				  
+
 				   if(hint != ''){
 					   hint_html = '<span class="question_hint">'+hint+'</span>';
 				   }
 				   content += hint_html;
-					
+
 					var html_data = "<div id='rureraform-element-" + i + "' class='question-fields rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'  data-type='" + rureraform_form_elements[i]["type"] + "'>" + content + "<div class='rureraform-element-cover'></div></div>";
                     html += html_data;
-					
-                    break;		
-					
-					
+
+                    break;
+
+
 				case "inner_text":
-				
+
                     var random_id = Math.floor((Math.random() * 99999) + 1);
                     var sort_id = Math.floor((Math.random() * 99999) + 1);
                     rureraform_form_elements[i]['field_id'] = random_id;
@@ -6458,12 +6459,12 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 
 					var content = rureraform_form_elements[i]["content"];
 					var element_unique_id = "unique-id-123"; // Example unique ID
-					
+
 					var elementObj = rureraform_form_elements[i];
 					var updatedContent = content.replace(/\[DROPDOWN id="(\d+)"\]/g, function(match, id) {
 						var property = `dropdown${id}_options`;
 						var inner_options = elementObj[property] || [];
-						
+
 						if (inner_options.length > 0) {
 							var dropdown = `<select type="inner_dropdown" class="editor-field" id="dropdown-${id}" data-identifier="${element_unique_id}" name="field-${property}">`;
 							inner_options.forEach(option => {
@@ -6474,9 +6475,9 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 						}
 						return ""; // If no options, replace with empty string
 					});
-					
+
 					content = updatedContent;
-					
+
 					var updatedContent2 = content.replace(/\[INPUTFIELD id="(\d+)"\]/g, function(match, id) {
 						var property = `inner_field${id}`;
 						var label_before = elementObj[`${property}_label_before`] || "";
@@ -6494,32 +6495,32 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 						var inputField = `
 							<span class="input-holder ${style_format}">
 								${labelBeforeHtml}
-								<input type="${text_format}" placeholder="${placeholder}" ${fieldAttributes} 
+								<input type="${text_format}" placeholder="${placeholder}" ${fieldAttributes}
 									data-field_type="text" class="editor-field input-simple" data-id="${id}" id="field-${id}">
 								${labelAfterHtml}
 							</span>
 						`;
 						return inputField;
 					});
-	
+
 					content = updatedContent2;
 
 					var hint = rureraform_form_elements[i]["hint"];
 				   var hint_html = '';
-				  
+
 				   if(hint != ''){
 					   hint_html = '<span class="question_hint">'+hint+'</span>';
 				   }
 				   content += hint_html;
-					
+
 					var html_data = "<div id='rureraform-element-" + i + "' class='question-fields rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'  data-type='" + rureraform_form_elements[i]["type"] + "'>" + content + "<div class='rureraform-element-cover'></div></div>";
                     html += html_data;
-					
-                    break;			
-					
-					
+
+                    break;
+
+
 				case "drop_and_text":
-				
+
 					console.log(rureraform_form_elements[i]["dropdown1_options"]);
                     var random_id = Math.floor((Math.random() * 99999) + 1);
                     var sort_id = Math.floor((Math.random() * 99999) + 1);
@@ -6550,12 +6551,12 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 
 					var content = rureraform_form_elements[i]["content"];
 					var element_unique_id = "unique-id-123"; // Example unique ID
-					
+
 					var elementObj = rureraform_form_elements[i];
 					var updatedContent = content.replace(/\[DROPDOWN id="(\d+)"\]/g, function(match, id) {
 						var property = `dropdown${id}_options`;
 						var inner_options = elementObj[property] || [];
-						
+
 						if (inner_options.length > 0) {
 							var dropdown = `<select type="inner_dropdown" class="editor-field" id="dropdown-${id}" data-identifier="${element_unique_id}" name="field-${property}">`;
 							inner_options.forEach(option => {
@@ -6566,9 +6567,9 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 						}
 						return ""; // If no options, replace with empty string
 					});
-					
+
 					content = updatedContent;
-					
+
 					var updatedContent2 = content.replace(/\[INPUTFIELD id="(\d+)"\]/g, function(match, id) {
 						var property = `inner_field${id}`;
 						var label_before = elementObj[`${property}_label_before`] || "";
@@ -6586,28 +6587,28 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 						var inputField = `
 							<span class="input-holder ${style_format}">
 								${labelBeforeHtml}
-								<input type="${text_format}" placeholder="${placeholder}" ${fieldAttributes} 
+								<input type="${text_format}" placeholder="${placeholder}" ${fieldAttributes}
 									data-field_type="text" class="editor-field input-simple" data-id="${id}" id="field-${id}">
 								${labelAfterHtml}
 							</span>
 						`;
 						return inputField;
 					});
-	
+
 					content = updatedContent2;
 
 					var hint = rureraform_form_elements[i]["hint"];
 				   var hint_html = '';
-				  
+
 				   if(hint != ''){
 					   hint_html = '<span class="question_hint">'+hint+'</span>';
 				   }
 				   content += hint_html;
-					
+
 					var html_data = "<div id='rureraform-element-" + i + "' class='question-fields rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'  data-type='" + rureraform_form_elements[i]["type"] + "'>" + content + "<div class='rureraform-element-cover'></div></div>";
                     html += html_data;
-					
-                    break;	
+
+                    break;
 
 
                 case "imageselect":
@@ -6842,7 +6843,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                     break;
 
                 case "sum_quiz":
-				
+
                     var next_i = parseInt(i) + 1;
                     var html_data = "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'  data-type='" + rureraform_form_elements[i]["type"] + "'>" + rureraform_form_elements[i]["content"] + "<div class='rureraform-element-cover'></div></div>";
 
@@ -6898,7 +6899,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 
                     html += "<div style='" + imageStyle + "' id='rureraform-element-" + i + "' class='"+image_position+" "+image_size+" image-element-box rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'  data-type='" + rureraform_form_elements[i]["type"] + "'>" + image_layout + "<div class='rureraform-element-cover'></div></div>";
                     break;
-					
+
 				case "vocabulary_quiz":
                     var random_id = Math.floor((Math.random() * 99999) + 1);
 
@@ -6906,7 +6907,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 
 
                     html += "<div style='" + imageStyle + "' id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'>" + vocabulary_quiz_layout + "<div class='rureraform-element-cover'></div></div>";
-                    break;	
+                    break;
 
                 case "heading_quiz":
                     var html_data = "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html'  data-type='" + rureraform_form_elements[i]["type"] + "'>" + rureraform_form_elements[i]["content"] + "<div class='rureraform-element-cover'></div></div>";
@@ -6977,14 +6978,14 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 				   if(hint != ''){
 					   hint_html = '<span class="question_hint">'+hint+'</span>';
 				   }
-				   
+
                    var classes = '';
                     rureraform_form_elements[i]['field_id'] = random_id;
-					
+
 					var correct_answer = rureraform_form_elements[i]["correct_answer"];
 					var true_class = (correct_answer == "True")? "active-option" : "";
 					var false_class = (correct_answer == "False")? "active-option" : "";
-				
+
                    var field_data = question_label_html+'<span class="truefalse_quiz rureraform-input rureraform-cr-layout-undefined rureraform-cr-layout-undefined">\n' +
                        '<div class="form-box rurera-in-row undefined image-right none">\n' +
                        '<div class="lms-radio-select rurera-in-row undefined image-right none">\n' +
@@ -7036,7 +7037,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 				case "question_label_sequence_template":
 				case "question_label_select_template":
 				case "question_label_matching_template":
-				
+
 					var label_type = rureraform_form_elements[i]["label_type"];
 					var label_data = "<div class='question-label " + label_type + "'><span>" + rureraform_form_elements[i]["content"] + "</span></div>";
 					if(label_type == 'h1' || label_type == 'h2' || label_type == 'h3' || label_type == 'h4' || label_type == 'h5' || label_type == 'h6'){
@@ -7115,7 +7116,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
                         break;
 
 
-                    
+
                 case "audio_file":
                    html += "<div id='rureraform-element-" + i + "' class='rureraform-element-" + i + " rureraform-element quiz-group rureraform-element-html' data-type='" + rureraform_form_elements[i]["type"] + "'><audio controls>\n" +
                        "  <source src=\""+rureraform_form_elements[i]["content"]+"\" type=\"audio/ogg\">\n" +
@@ -8031,7 +8032,7 @@ function rureraform_form_ready() {
         });
 
         var type = jQuery(this).parent().attr("data-type");
-		
+
 		console.log('daata-type-----'+type);
 
         if (typeof type == undefined || type == "")
@@ -8068,9 +8069,9 @@ function rureraform_form_ready() {
 					}
 				});
                 //jQuery('.rureraform-toolbar-tool-other[data-type="'+template_name+'"] a').click();
-				
+
 				//$(".rureraform-elements").append('<div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html" data-type="question_label"><div class="question-label"><span>Question Label</span></div></div>');
-				
+
                 return false;
             }
             for (var key in rureraform_meta[type]) {
@@ -10005,7 +10006,7 @@ $(document).on('click', '.editor-add-field', function () {
 
 
 	$('.summernote-editor').summernote('focus');
-	
+
 	console.log('testing');
     var field_id = $(this).attr('data-id');
     var field_type = $(this).attr('data-field_type');
@@ -10203,7 +10204,7 @@ $(document).on('click', '.remove-repeater-field', function () {
 $(document).on('change', '.option-field-selected', function () {
     $(this).closest('.rureraform-properties-options-item').find('.tools-div').removeClass('rureraform-properties-options-item-default');
 	$(this).closest('.quiz-form-control').find('.tools-div').addClass('rureraform-properties-options-item-default');
-	
+
 });
 
 
@@ -10329,9 +10330,9 @@ $(document).on('keyup change focus blur paste checked unchecked', '.element-fiel
         $(".note-editable #field-" + field_id+' span').css('width', $(this).val()+'px');
 
     } else if (field_type == 'style_height') {
-    
+
         $(".note-editable #field-" + field_id+' span').css('border', $(this).val()+'px solid');
-    
+
     } else if (field_type == 'style_bg_color') {
 
         $(".note-editable #field-" + field_id+' span').css('border-color', $(this).val());
@@ -10402,7 +10403,7 @@ $(document).on('keyup focus blur change', '.note-editable', function () {
 
 
 $(document).ready(function() {
-	
+
 $(document).on('keyup focus blur change', '.draggable_options_label .rureraform-properties-options-label', function () {
 	var options_response = '';
 	var correct_answer = $(this).closest('.rureraform-admin-popup-inner').find('.inner_select_fields').find('select').attr('data-correct_answer');
@@ -10474,8 +10475,8 @@ $(document).on('click', '.generate-question-code', function () {
 });
 });
 
-	
-	
+
+
 
 function pasteHtmlAtCaret(html) {
     var sel, range;
@@ -10526,7 +10527,7 @@ $(document).on('click', '.quiz-stage-generate', function () {
 $(document).on('click', '.quiz-stage-builder-generate', function () {
 
     var question_status = $(this).attr('data-status');
-	
+
 	rureraform_builder_save(this, question_status);
 
 });
@@ -10580,8 +10581,8 @@ function EditorIsEmpty(dataValue) {
 
 $(document).on('click', '.question_glossary_submit_btn', function () {
     var formData = new FormData($(this).closest('.question_glossary_modal').find('form')[0]);
-	
-	
+
+
     $.ajax({
         type: "POST",
         url: '/admin/glossary/store_question_glossary',
@@ -10627,11 +10628,11 @@ $(document).on('click', '.quiz-group', function () {
 	$(".quiz-group").removeClass('active');
 	$(this).addClass('active');
 	$(".topic-parts-block").addClass('rurera-hide');
-	
+
     rureraform_properties_open($(this));
 });
 $(document).on('click', '.quiz-column-group', function (e) {
-	
+
 	$(".topic-parts-block").addClass('rurera-hide');
 	 if (!$(e.target).closest('.quiz-group').length) {
 		rureraform_properties_open($(this));
