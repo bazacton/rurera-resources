@@ -6394,7 +6394,7 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 						var style_format = elementObj[`${property}_style_format`] || "input_box";
 						var text_format = elementObj[`${property}_text_format`] || "text";
 						var maxlength = elementObj[`${property}_maxlength`] || "";
-                        var correct_answer = elementObj[`inner_field${property}`] || "";
+                        var correct_answer = elementObj[`${property}`] || "";
 
 						// Build the HTML for the input field
 						var labelBeforeHtml = label_before ? `<span class="input-label" contenteditable="false">${label_before}</span>` : "";
