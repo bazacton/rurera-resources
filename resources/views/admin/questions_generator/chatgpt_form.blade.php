@@ -13,7 +13,7 @@
 			<div class="progress-wrapper mb-30">
 				<div class="section-header pb-0">
 					<h1 class="mb-0">Import Questions</h1>
-					<div class="section-header-breadcrumb mt-10">
+					<div class="section-header-breadcrumb mt-10 hide-for-mobile">
 						<div class="breadcrumb-item">{{$QuestionsBulkListObj->category->getTitleAttribute()}}</div>
 						<div class="breadcrumb-item">{{$QuestionsBulkListObj->subject->getTitleAttribute()}}</div>
 						<div class="breadcrumb-item">{{$QuestionsBulkListObj->chapter->title}}</div>
