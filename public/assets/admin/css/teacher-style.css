@@ -4827,7 +4827,7 @@ Accuracy Score Card Style End
 }
 .document-pages {
     height: 500px;
-    padding: 15px 15px 0;
+    padding: 0 15px 0;
 }
 .page-box {
     margin: 0 0 15px;
@@ -4838,7 +4838,7 @@ Accuracy Score Card Style End
 .document-left-sidebar h3 {
     font-size: 18px;
     color: #333;
-    margin: 0;
+    margin: 0 0 15px;
     padding: 15px 15px 0;
 }
 .page-box a {
