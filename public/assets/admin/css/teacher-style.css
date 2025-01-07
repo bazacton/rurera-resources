@@ -5194,6 +5194,7 @@ Accuracy Score Card Style End
     .document-right-sidebar {
         height: auto;
         z-index: 9999;
+        padding-top: 15px;
     }
     .document-modal:has(.document-right-sidebar.active) .document-content {
         padding-right: 15px;
