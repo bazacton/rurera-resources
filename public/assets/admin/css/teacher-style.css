@@ -5042,6 +5042,25 @@ Accuracy Score Card Style End
 }
 .hotel-table .progress .progress-bar {
     background-color: #5cc45c;
+    position: relative;
+}
+.hotel-table .progress .progress-bar:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    height: 15px;
+    width: 2px;
+    background-color: #5cc45c;
+}
+.hotel-table .progress .progress-bar:after {
+    content: attr(data-value);
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    font-size: 14px;
+    margin: 0 -5px 15px 0;
+    color: #555;
 }
 .hotel-table table tr td:has(.occupancy) {
     min-width: 110px;
