@@ -5083,4 +5083,7 @@ Accuracy Score Card Style End
 .occupancy-info > div {
     margin: 0 0 5px;
 }
+.hotel-table table tr td.available-in {
+    white-space: nowrap;
+}
 /* Hotel Table Style End */
