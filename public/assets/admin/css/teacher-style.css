@@ -4875,7 +4875,7 @@ Accuracy Score Card Style End
     z-index: 2;
 }
 .document-right-sidebar {
-    position: fixed;
+    position: absolute;
     right: -500px;
     width: 20%;
     border-left: 1px solid #ddd;
