@@ -4962,10 +4962,11 @@ Accuracy Score Card Style End
     height: auto;
     min-height: auto;
     line-height: normal;
-    padding: 5px 15px;
+    padding: 10px 15px;
     font-size: 14px;
     color: #333;
     text-align: left !important;
+    white-space: nowrap;
 }
 .hotel-table .img-holder {
     width: 70px;
