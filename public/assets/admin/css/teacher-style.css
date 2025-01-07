@@ -4902,7 +4902,7 @@ Accuracy Score Card Style End
 }
 .document-content {
     width: 85%;
-    padding: 15px 15px;
+    padding: 15px 15px 0;
     text-align: center;
     margin: 0 auto 0;
     -webkit-transition: all 0.3s ease-out; 
@@ -4913,7 +4913,7 @@ Accuracy Score Card Style End
 }
 .document-pdf {
     display: inline-block;
-    height: calc(100vh - 75px);
+    height: calc(100vh - 85px);
     overflow: hidden;
     padding: 0 15px 0;
 }
