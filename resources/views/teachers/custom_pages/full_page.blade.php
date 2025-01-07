@@ -79,6 +79,57 @@
                                 <td class="available-in">Austria, France</td>
                                 <td class="rating">Excellent</td>
                             </tr>
+                            <tr>
+                                <td>
+                                    <div class="hotel-thum-box">
+                                        <div class="img-holder">
+                                            <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                        </div>
+                                        <strong>
+                                            Luxury Lakeside Spas
+                                            <span>5-star comfort</span>
+                                        </strong>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="categories">
+                                        <span>Categories: <em>3-star</em></span>
+                                        <span>Segment: <em>Winter breaks</em></span>
+                                        <span>Target: <em>Family</em></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="description">
+                                        <p>Perfect for a cozy, affordable family winter getaway! Stay in our self-catering holiday villages in the mountains.... <a href="#">More</a></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="progress-lable">Compared to segment in days</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" data-value="5" style="width: 50%;"></div>
+                                        <div class="days-value" data-value="3" style="left: 30px;"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="occupancy">
+                                        <span class="occupancy-lable">% of available beds occupied</span>
+                                        <div class="progress-box">
+                                            <div class="circle_percent circle-green" data-percent="80">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            <div class="circle_inbox"><span class="percent_text">80%</span></div></div>
+                                        </div>
+                                        <div class="occupancy-info">
+                                            <div>Total Nights: <span>163,520</span></div>
+                                            <div>Cancellation Rate: <span>12%</span></div>
+                                            <div>Last-Minute: <span>10%</span></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="available-in">Austria, France</td>
+                                <td class="rating">Excellent</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
