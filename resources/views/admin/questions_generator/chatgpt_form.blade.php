@@ -157,8 +157,8 @@
 															@endphp
 															
 															<tr class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
-															  <td data-label="">{{$prompt_title}}</td>
-															  <td data-label="">{{ dateTimeFormat($promptObj->created_at, 'j M y | H:i') }}</td>
+															  <td data-label="Topic Part Item">{{$prompt_title}}</td>
+															  <td data-label="Created Date">{{ dateTimeFormat($promptObj->created_at, 'j M y | H:i') }}</td>
 															  @if(!empty($difficulty_levels))
 																@foreach($difficulty_levels as $difficulty_level)
 																	@php $total_questions = $promptObj->promptQuestions->where('question_difficulty_level', $difficulty_level)->count();@endphp
@@ -167,14 +167,14 @@
 																	$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
 																	$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
 																	@endphp
-																	<td class="{{$difficulty_level_class}}" data-label="">-</td>
-																	<td class="{{$difficulty_level_class}}" data-label="">{{$total_questions}}</td>
-																	<td class="{{$difficulty_level_class}} table-col-pending" data-label="">-</td>
+																	<td class="{{$difficulty_level_class}}" data-label="Expected">-</td>
+																	<td class="{{$difficulty_level_class}}" data-label="Total">{{$total_questions}}</td>
+																	<td class="{{$difficulty_level_class}} table-col-pending" data-label="Pending">-</td>
 																@endforeach
 															  @endif
-															  <td data-label="">-</td>
-															  <td data-label="">{{$unreviewed_questions}}</td>
-															  <td data-label=""><a title="Copy Prompt" href="javascript:;" class="btn-transparent btn-sm text-primary copy-to-text" data-copy_to="prompt-text-{{$promptObj->id}}" title="" data-original-title="Copy Prompt"><i class="fas fa-copy"></i></a> 
+															  <td data-label="Expected">-</td>
+															  <td data-label="Total">{{$unreviewed_questions}}</td>
+															  <td data-label="Pending"><a title="Copy Prompt" href="javascript:;" class="btn-transparent btn-sm text-primary copy-to-text" data-copy_to="prompt-text-{{$promptObj->id}}" title="" data-original-title="Copy Prompt"><i class="fas fa-copy"></i></a> 
 															  <a title="Search on ChatGPT" href="https://chat.openai.com/?model=gpt-4&q={{ urlencode($promptObj->prompt_text) }}" target="_blank" class="btn-transparent btn-sm text-primary" title="" data-original-title="Search"><i class="fas fa-search"></i></a>
 															  <a title="Import Questions" href="javascript:;" class="btn-transparent btn-sm text-primary import-questions" data-prompt_id="{{$promptObj->id}}" title="" data-original-title="Import Questions" data-toggle="modal" data-target="#multi-choice-template-modal"><i class="fas fa-download"></i></a>
 															  <a target="_blank" href="/admin/questions-generator/view-api-response/{{$promptObj->questions_bulk_list_id}}/{{$promptObj->topic_part}}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Questions List"><i class="fas fa-sitemap"></i></a>
