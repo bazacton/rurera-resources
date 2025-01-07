@@ -4757,6 +4757,7 @@ Accuracy Score Card Style End
 /* Document Viewer Page Style Start */
 .admin_teacher_role .modal.document-modal {
     scrollbar-gutter: initial;
+    background-color: #f3f3f3;
 }
 .document-modal .modal-dialog {
     max-width: 100%;
@@ -4877,11 +4878,12 @@ Accuracy Score Card Style End
     display: block;
     line-height: normal;
 }
-.document-viewer {background-color: #f3f3f3;}
+.document-viewer {
+    background-color: #f3f3f3;
+}
 .document-content {
     width: 85%;
-    padding: 0 15px;
-    background-color: #f3f3f3;
+    padding: 15px 15px;
     text-align: center;
     margin: 0 auto 0;
     -webkit-transition: all 0.3s ease-out; 
@@ -4894,7 +4896,7 @@ Accuracy Score Card Style End
     display: inline-block;
     height: calc(100vh - 75px);
     overflow: hidden;
-    padding: 15px;
+    padding: 0 15px;
 }
 .pdf-img-box img {
     max-width: 100%;
