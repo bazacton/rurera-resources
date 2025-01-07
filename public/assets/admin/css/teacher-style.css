@@ -5040,4 +5040,40 @@ Accuracy Score Card Style End
 .hotel-table .progress .progress-bar {
     background-color: #5cc45c;
 }
+.hotel-table table tr td:has(.progress) {
+    min-width: 220px;
+}
+.hotel-table .progress-lable {
+    display: block;
+    margin: 0 0 15px;
+}
+.hotel-table .progress {
+    border-radius: 0;
+}
+.hotel-table .progress .progress-bar {
+    background-color: #5cc45c;
+}
+.hotel-table table tr td:has(.occupancy) {
+    min-width: 250px;
+}
+.hotel-table .progress-box {
+    padding: 0;
+}
+.hotel-table .circle_percent {
+    font-size: 60px;
+}
+.hotel-table .progress-box:before {
+    display: none;
+}
+.hotel-table .occupancy {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+.occupancy-info span {
+    color: #333;
+}
+.occupancy-info > div {
+    margin: 0 0 5px;
+}
 /* Hotel Table Style End */
