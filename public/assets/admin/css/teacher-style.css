@@ -4968,12 +4968,12 @@ Accuracy Score Card Style End
     text-align: left !important;
 }
 .hotel-table .img-holder {
-    width: 100px;
+    width: 70px;
 }
 .hotel-table .img-holder img {
     max-width: 100%;
     object-fit: cover;
-    height: 100px;
+    height: 70px;
     border-radius: 5px;
 }
 .hotel-table table tr td {
@@ -4991,10 +4991,10 @@ Accuracy Score Card Style End
 .hotel-thum-box strong {
     font-size: 14px;
     color: #333;
-    width: calc(100% - 115px);
+    width: calc(100% - 85px);
 }
 .hotel-table table tr td:first-child {
-    min-width: 320px;
+    min-width: 290px;
 }
 .hotel-table table tr td:has(.description) {
     max-width: 360px;
