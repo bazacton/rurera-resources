@@ -4997,7 +4997,7 @@ Accuracy Score Card Style End
     min-width: 290px;
 }
 .hotel-table table tr td:has(.description) {
-    max-width: 360px;
+    max-width: 290px;
 }
 .hotel-table .description p {
     margin: 0;
