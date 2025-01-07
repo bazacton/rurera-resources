@@ -2920,6 +2920,7 @@ Admin Questions Generator Page Style End
     .topic-parts-data tr td {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
     .topic-parts-data tr td:before {
