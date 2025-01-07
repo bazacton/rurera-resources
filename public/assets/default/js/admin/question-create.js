@@ -6372,11 +6372,13 @@ function _rureraform_build_children(_parent, _parent_col, image_styles = []) {
 					var updatedContent = content.replace(/\[DROPDOWN id="(\d+)"\]/g, function(match, id) {
 						var property = `dropdown${id}_options`;
 						var inner_options = elementObj[property] || [];
+                        var correct_answer = elementObj[`${property}`] || "";
 
 						if (inner_options.length > 0) {
 							var dropdown = `<select type="inner_dropdown" class="editor-field" id="dropdown-${id}" data-identifier="${element_unique_id}" name="field-${property}">`;
 							inner_options.forEach(option => {
-								dropdown += `<option value="${option.label}">${option.label}</option>`;
+                                var checked_html = (option.default == 'on')? 'selected' : '';
+								dropdown += `<option value="${option.label}" ${checked_html}>${option.label}</option>`;
 							});
 							dropdown += `</select>`;
 							return dropdown;
