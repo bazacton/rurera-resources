@@ -124,10 +124,10 @@
 													$total_unreviewed_questions = $subTopicObj->topicPartItemQuestions->where('question_status', 'api_pending')->count();
 													@endphp
 													<tr class="topic_parts accordion-parent" data-child_class="subtopic_prompts_{{$subTopicObj->id}}">
-														<td data-label="{{$subTopicObj->title}}">
+														<td data-label="Topic Part Item">
 															<span class="topic-part-title"><i class="fas fa-chevron-down"></i>&nbsp;{{$subTopicObj->title}}</span>
 														</td>
-														<td>-</td>
+														<td data-label="Created Date">-</td>
 														@if(!empty($difficulty_levels))
 															@foreach($difficulty_levels as $difficulty_level)
 																@php $difficulty_level_class = '';
@@ -140,14 +140,14 @@
 																$pending_questions = ($pending_questions < 0)? 0 : $pending_questions;
 																$total_pending_questions += $pending_questions;
 																@endphp
-																<td class="{{$difficulty_level_class}}">{{$expected_part_questions}}</td>
-																<td class="{{$difficulty_level_class}}">{{$total_questions}}</td>
-																<td class="{{$difficulty_level_class}} table-col-pending">{{$pending_questions}}</td>
+																<td class="{{$difficulty_level_class}}" data-label="Expected">{{$expected_part_questions}}</td>
+																<td class="{{$difficulty_level_class}}" data-label="Total">{{$total_questions}}</td>
+																<td class="{{$difficulty_level_class}} table-col-pending" data-label="Pending">{{$pending_questions}}</td>
 															@endforeach
 														@endif
-														<td>{{$total_pending_questions}}</td>
-														<td>{{$total_unreviewed_questions}}</td>
-														<td>&nbsp;</td>
+														<td data-label="Expected">{{$total_pending_questions}}</td>
+														<td data-label="Total">{{$total_unreviewed_questions}}</td>
+														<td data-label="Pending">&nbsp;</td>
 													</tr>
 													@if($subTopicObj->topicPartItemPrompts->count() > 0 )
 														@foreach($subTopicObj->topicPartItemPrompts as $promptObj)			
@@ -157,8 +157,8 @@
 															@endphp
 															
 															<tr class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
-															  <td>{{$prompt_title}}</td>
-															  <td>{{ dateTimeFormat($promptObj->created_at, 'j M y | H:i') }}</td>
+															  <td data-label="Expected">{{$prompt_title}}</td>
+															  <td data-label="Total">{{ dateTimeFormat($promptObj->created_at, 'j M y | H:i') }}</td>
 															  @if(!empty($difficulty_levels))
 																@foreach($difficulty_levels as $difficulty_level)
 																	@php $total_questions = $promptObj->promptQuestions->where('question_difficulty_level', $difficulty_level)->count();@endphp
@@ -167,14 +167,14 @@
 																	$difficulty_level_class = ($difficulty_level == 'Expected')? 'table-col-orange' : $difficulty_level_class;
 																	$difficulty_level_class = ($difficulty_level == 'Exceeding')? 'table-col-yellow' : $difficulty_level_class;
 																	@endphp
-																	<td class="{{$difficulty_level_class}}">-</td>
-																	<td class="{{$difficulty_level_class}}">{{$total_questions}}</td>
-																	<td class="{{$difficulty_level_class}} table-col-pending">-</td>
+																	<td class="{{$difficulty_level_class}}" data-label="Pending">-</td>
+																	<td class="{{$difficulty_level_class}}" data-label="">{{$total_questions}}</td>
+																	<td class="{{$difficulty_level_class}} table-col-pending" data-label="">-</td>
 																@endforeach
 															  @endif
-															  <td>-</td>
-															  <td>{{$unreviewed_questions}}</td>
-															  <td><a title="Copy Prompt" href="javascript:;" class="btn-transparent btn-sm text-primary copy-to-text" data-copy_to="prompt-text-{{$promptObj->id}}" title="" data-original-title="Copy Prompt"><i class="fas fa-copy"></i></a> 
+															  <td data-label="">-</td>
+															  <td data-label="">{{$unreviewed_questions}}</td>
+															  <td data-label=""><a title="Copy Prompt" href="javascript:;" class="btn-transparent btn-sm text-primary copy-to-text" data-copy_to="prompt-text-{{$promptObj->id}}" title="" data-original-title="Copy Prompt"><i class="fas fa-copy"></i></a> 
 															  <a title="Search on ChatGPT" href="https://chat.openai.com/?model=gpt-4&q={{ urlencode($promptObj->prompt_text) }}" target="_blank" class="btn-transparent btn-sm text-primary" title="" data-original-title="Search"><i class="fas fa-search"></i></a>
 															  <a title="Import Questions" href="javascript:;" class="btn-transparent btn-sm text-primary import-questions" data-prompt_id="{{$promptObj->id}}" title="" data-original-title="Import Questions" data-toggle="modal" data-target="#multi-choice-template-modal"><i class="fas fa-download"></i></a>
 															  <a target="_blank" href="/admin/questions-generator/view-api-response/{{$promptObj->questions_bulk_list_id}}/{{$promptObj->topic_part}}" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Questions List"><i class="fas fa-sitemap"></i></a>
@@ -183,7 +183,7 @@
 														@endforeach
 													@else
 														<tr class="subtopic_prompts_{{$subTopicObj->id}}" id="subtopic_prompts_{{$subTopicObj->id}}">
-														  <td colspan="{{(count($difficulty_levels)*3)+5}}">
+														  <td colspan="{{(count($difficulty_levels)*3)+5}}" data-label="">
 															No Prompt Found!
 														  </td>
 														</tr>
