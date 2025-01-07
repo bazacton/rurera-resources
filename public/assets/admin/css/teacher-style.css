@@ -1208,7 +1208,8 @@ New Quiz Page Style Start
     align-items: center;
     justify-content: center;
 }
-.dropdown-box .dropdown-toggle:hover {
+.dropdown-box .dropdown-toggle:hover,
+.dropdown-box .dropdown.show .dropdown-toggle {
     background-color: #f2f2f2;
 }
 .dropdown-box .dropdown-toggle:after {
