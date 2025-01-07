@@ -60,7 +60,7 @@
                                 </td>
                                 <td>
                                     <div class="occupancy">
-                                        <span>% of available beds occupied</span>
+                                        <span class="occupancy-lable">% of available beds occupied</span>
                                         <div class="progress-box">
                                             <div class="circle_percent circle-green" data-percent="75">
                                                 <div class="circle_inner">

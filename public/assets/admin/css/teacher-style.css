@@ -5068,6 +5068,7 @@ Accuracy Score Card Style End
 .hotel-table .occupancy {
     display: flex;
     gap: 12px;
+    flex-wrap: wrap;
     align-items: flex-start;
 }
 .occupancy-info span {
