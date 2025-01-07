@@ -1502,7 +1502,7 @@
 <script>
 
 $(document).ready(function () {
-  const $scrollableDiv = $(".featured-list-sidebar-inner, .document-pages");
+  const $scrollableDiv = $(".featured-list-sidebar-inner, .document-pages, .document-pdf");
   $scrollableDiv.niceScroll({
     cursorcolor: "red",
     cursorwidth: "8px",
