@@ -1432,7 +1432,7 @@
                             <figure>
                                 <img src="/assets/default/img/page2.png" alt="">
                             </figure>
-                            <span class="page-lable">Page 1</span>
+                            <span class="page-lable">Page 2</span>
                         </a>
                     </div>
                 </div>
