@@ -1229,10 +1229,12 @@ New Quiz Page Style Start
     gap: 10px;
     color: #787d84;
     background: none;
+    justify-content: end;
+    flex-direction: row-reverse;
 }
 .dropdown-box .dropdown-menu .dropdown-item img {
-    height: 15px;
-    width: 15px;
+    height: 16px;
+    width: 16px;
     filter: invert(50%) sepia(10%) saturate(253%) hue-rotate(176deg) brightness(94%) contrast(89%);
 }
 .dropdown-box .dropdown:hover .dropdown-menu {
