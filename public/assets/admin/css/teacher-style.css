@@ -3288,7 +3288,6 @@ span.field-separated span:after {
 }
 .featured-list-sidebar .listing-card {
     align-items: flex-start;
-    max-width: 90%;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
