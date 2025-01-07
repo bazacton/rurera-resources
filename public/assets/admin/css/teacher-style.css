@@ -5202,4 +5202,7 @@ Accuracy Score Card Style End
     .document-pdf {
         height: auto;
     }
+    .rureraform-search-field .input-field {
+        width: 100%;
+    }
 }
