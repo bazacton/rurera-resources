@@ -4764,6 +4764,7 @@ Accuracy Score Card Style End
 .document-viewer {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 .document-header {
     display: flex;
