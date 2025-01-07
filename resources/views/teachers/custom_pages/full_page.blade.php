@@ -63,7 +63,7 @@
                                         <div class="progress-box">
                                             <div class="circle_percent circle-green" data-percent="75">
                                                 <div class="circle_inner">
-                                                    <div class="round_per" style="transform: rotate(306deg);"></div>
+                                                    <div class="round_per"></div>
                                                 </div>
                                             <div class="circle_inbox"><span class="percent_text">75%</span></div></div>
                                         </div>
