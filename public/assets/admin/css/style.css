@@ -2891,4 +2891,10 @@ Admin Questions Generator Page Style End
         margin: 15px 0 0;
         gap: 15px;
     }
+    .progress-box {
+        padding-left: 0;
+    }
+    .progress-box:before {
+        display: none;
+    }
 }
