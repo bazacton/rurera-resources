@@ -5083,6 +5083,22 @@ Accuracy Score Card Style End
     margin: 0 -5px 15px 0;
     color: #555;
 }
+.days-value {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 2px;
+    background-color: rgba(0,0,0,0.3);
+}
+.days-value:before {
+    position: absolute;
+    top: 100%;
+    left: -2px;
+    content: attr(data-value);
+    margin: 5px 0 0 0;
+}
 .hotel-table table tr td:has(.occupancy) {
     min-width: 110px;
 }
