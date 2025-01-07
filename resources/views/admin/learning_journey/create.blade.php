@@ -217,6 +217,53 @@
                             {{ csrf_field() }}
 							<input type="hidden" name="posted_data" class="posted-data">
 
+
+                            <div class="form-group">
+                                <label>{{ trans('/admin/main.category')  }}</label>
+                                <select class="form-control @error('category_id') is-invalid @enderror ajax-category-courses"
+                                        name="category_id" data-course_id="{{isset( $LearningJourneyObj->subject_id )? $LearningJourneyObj->subject_id : 0}}">
+                                    <option {{ !empty($trend) ? '' : 'selected' }} disabled>{{ trans('admin/main.choose_category')  }}</option>
+
+                                    @foreach($categories as $category)
+                                        @if(!empty($category->subCategories) and count($category->subCategories))
+                                            <optgroup label="{{  $category->title }}">
+                                                @foreach($category->subCategories as $subCategory)
+                                                    <option value="{{ $subCategory->id }}" @if(!empty($LearningJourneyObj) and $LearningJourneyObj->year_id == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                                @endforeach
+                                            </optgroup>
+                                        @else
+                                            <option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($LearningJourneyObj) and $LearningJourneyObj->year_id == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+                                        @endif
+                                    @endforeach
+                                </select>
+                                @error('category_id')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                                @enderror
+                            </div>
+
+                            <div class="form-group">
+                                <label>Subjects</label>
+                                <select data-return_type="option"
+                                        data-default_id="{{isset( $LearningJourneyObj->subject_id)? $LearningJourneyObj->subject_id : 0}}" data-chapter_id="{{isset( $LearningJourneyObj->chapter_id )? $LearningJourneyObj->chapter_id : 0}}"
+                                        class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
+                                        id="subject_id" name="subject_id">
+                                    <option disabled selected>Subject</option>
+                                </select>
+                                @error('subject_id')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                                @enderror
+                            </div>
+
+
+
+
+
+
+
                             <div class="form-group">
                                 <label>{{ trans('/admin/main.category') }}</label>
                                 <select data-subject_id="{{ !empty($LearningJourneyObj)? $LearningJourneyObj->subject_id : 0}}"
@@ -289,6 +336,86 @@
  <script src="https://www.jqueryscript.net/demo/CSS3-Rotatable-jQuery-UI/jquery.ui.rotatable.js"></script>
 <script src="/assets/default/js/admin/filters.min.js"></script>
 <script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
+
+<script type="text/javascript">
+
+    var sub_chapters_fetched = false;
+        $(document).on('change', '.ajax-category-courses', function () {
+            var category_id = $(this).val();
+            var course_id = $(this).attr('data-course_id');
+            $.ajax({
+                type: "GET",
+                url: '/admin/webinars/courses_by_categories',
+                data: {'category_id': category_id, 'course_id': course_id},
+                success: function (return_data) {
+                    $(".ajax-courses-dropdown").html(return_data);
+                    $(".ajax-chapter-dropdown").html('<option value="">Please select year, subject</option>');
+                    $('.ajax-courses-dropdown').change();
+                }
+            });
+        });
+
+        $(document).on('change', '.ajax-courses-dropdown', function () {
+            var course_id = $(this).val();
+            var chapter_id = $(this).attr('data-chapter_id');
+
+            $.ajax({
+                type: "GET",
+                url: '/admin/webinars/chapters_by_course',
+                data: {'course_id': course_id, 'chapter_id': chapter_id},
+                success: function (return_data) {
+                    console.log('cccc-dropdown-list');
+                    $(".ajax-chapter-dropdown").html(return_data);
+                    $('.ajax-chapter-dropdown').change();
+                }
+            });
+        });
+        $(document).on('change', '.ajax-chapter-dropdown', function () {
+            var thisObj = $(this);
+            var chapter_id = $(this).val();
+            var sub_chapter_id = $(this).attr('data-sub_chapter_id');
+            var data_id = $(this).attr('data-id');
+            var sub_chapter_id = $('.field_settings[data-id="' + data_id + '"]').attr('data-select_subchapter_default');
+
+
+            var disabled_items = $(this).attr('data-disabled');
+            console.log('subchapter-dropdown-list');
+            if(chapter_id != ''){
+                $.ajax({
+                    type: "GET",
+                    url: '/admin/webinars/sub_chapters_by_chapter',
+                    data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id, 'disabled_items': disabled_items},
+                    success: function (return_data) {
+                        sub_chapters_fetched = true;
+                        thisObj.closest('.editor-zone').find(".ajax-subchapter-dropdown").html(return_data);
+                        thisObj.closest('.editor-zone').find(".ajax-subchapter-dropdown").change();
+                    }
+                });
+            }
+        });
+        $(document).on('change', '.ajax-subchapter-dropdown', function () {
+            var thisObj = $(this);
+            var subchapter_id = $(this).val();
+            var sub_chapter_id = $(this).attr('data-sub_chapter_id');
+            var disabled_items = $(this).attr('data-disabled');
+            var data_id = $(this).attr('data-id');
+            var default_id = $('.field_settings[data-id="' + data_id + '"]').attr('data-topic_default');
+            if(subchapter_id != ''){
+                $.ajax({
+                    type: "GET",
+                    url: '/admin/webinars/topic_part_quiz_by_sub_chapter',
+                    data: {'subchapter_id': subchapter_id, 'default_id': default_id},
+                    success: function (return_data) {
+                        thisObj.closest('.field-options').find(".ajax-topicpart-item-dropdown").html(return_data);
+                        thisObj.closest('.field-options').find(".ajax-topicpart-item-dropdown").find('option[value="' + default_id + '"]').attr('selected', 'selected');
+                        thisObj.closest('.field-options').find(".ajax-topicpart-item-dropdown").change();
+                    }
+                });
+            }
+        });
+        $(".ajax-category-courses").change();
+
+</script>
 <script src="/assets/admin/js/journey-editor.js?ver={{$rand_id}}"></script>
 <script src="/assets/admin/vendor/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
 <script type="text/javascript">
@@ -435,5 +562,4 @@
 
 
 </script>
-
 @endpush
