@@ -4995,11 +4995,17 @@ Accuracy Score Card Style End
     min-width: 320px;
 }
 .hotel-table table tr td:has(.description) {
-    max-width: 310px;
+    max-width: 360px;
 }
 .hotel-table .description p {
     margin: 0;
     line-height: normal;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+.hotel-table .description p a {
+    color: var(--blue);
 }
 .hotel-thum-box strong span {
     display: block;
