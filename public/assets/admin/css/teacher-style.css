@@ -4867,6 +4867,14 @@ Accuracy Score Card Style End
     background-color: #f3f3f3;
     text-align: center;
     margin: 0 auto;
+    -webkit-transition: all 0.3s ease-out; 
+    -moz-transition: all 0.3s ease-out; 
+    -ms-transition: all 0.3s ease-out; 
+    -o-transition: all 0.3s ease-out; 
+    transition: all 0.3s ease-out;
+}
+.document-modal:has(.document-right-sidebar.active) .document-content {
+    padding-right: 305px;
 }
 .document-viewer .close {
     position: absolute;
