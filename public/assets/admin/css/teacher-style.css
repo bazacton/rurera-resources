@@ -4755,6 +4755,9 @@ Accuracy Score Card Style End
 /* My Library Questions Collection Modal Style End */
 
 /* Document Viewer Page Style Start */
+.admin_teacher_role .modal.document-modal {
+    scrollbar-gutter: initial;
+}
 .document-modal .modal-dialog {
     max-width: 100%;
     margin: 0;
@@ -4894,7 +4897,8 @@ Accuracy Score Card Style End
 }
 .pdf-img-box img {
     max-width: 100%;
-    max-height: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .document-modal:has(.document-right-sidebar.active) .document-content {
     padding-right: 305px;
