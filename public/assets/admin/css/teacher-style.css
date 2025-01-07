@@ -4897,7 +4897,7 @@ Accuracy Score Card Style End
     transition: all 0.3s ease-out;
 }
 .document-right-sidebar.active {
-    right: 18px;
+    right: 0;
 }
 .document-switch-options {
     padding: 15px 15px 0;
