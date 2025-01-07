@@ -1227,6 +1227,8 @@ New Quiz Page Style Start
     display: none;
     transform: none !important;
     padding: 15px;
+    width: auto;
+    min-width: 160px;
 }
 .dropdown-box .dropdown-menu.show {
     display: block;
