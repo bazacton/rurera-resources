@@ -4952,7 +4952,8 @@ Accuracy Score Card Style End
 /* Hotel Table Style Start */
 .hotel-table {
     background-color: #fff;
-    padding: 25px;
+    padding: 5px;
+    margin-bottom: 30px;
 }
 .hotel-table thead {
     background-color: #f5f5f5;
