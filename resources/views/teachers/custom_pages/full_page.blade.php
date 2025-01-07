@@ -75,7 +75,7 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td>Austria, France</td>
+                                <td class="available-in">Austria, France</td>
                                 <td class="rating">Excellent</td>
                             </tr>
                         </tbody>
