@@ -13,9 +13,6 @@
     scrollbar-gutter: stable;
     padding-right: 0 !important;
 }
-.admin_teacher_role.sidebar-gone .main-content {
-    padding-left: 15px; 
-}
 
 .admin_teacher_role .ui-sortable-handle,
 .admin_teacher_role .sort-handler {cursor: auto;}
@@ -1743,6 +1740,9 @@ Tailer Hub Style Start
 }
 .admin_teacher_role:has(.main-sidebar) .main-content {
     padding-left: 280px;
+}
+.admin_teacher_role.sidebar-gone .main-content {
+    padding-left: 15px; 
 }
 .admin_teacher_role .question-layout.row {
     margin-left: 0;
