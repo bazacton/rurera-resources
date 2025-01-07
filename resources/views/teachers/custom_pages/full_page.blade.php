@@ -49,7 +49,7 @@
                                 </td>
                                 <td>
                                     <div class="description">
-                                        <p>Perfect for your family winter holiday! Our traditional holiday villages offer cozy and affordable self-catering accommodation in family-friendly mountain... <a href="#">More</a></p>
+                                        <p>Perfect for a cozy, affordable family winter getaway! Stay in our self-catering holiday villages in the mountains.... <a href="#">More</a></p>
                                     </div>
                                 </td>
                                 <td>
