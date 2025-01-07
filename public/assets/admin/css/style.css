@@ -2938,4 +2938,7 @@ Admin Questions Generator Page Style End
     .topic-parts-data table tr td:has(.topic-part-title) {
         min-width: auto;
     }
+    .topic-parts-data table tr td .topic-part-title {
+        padding-left: 20px;
+    }
 }
