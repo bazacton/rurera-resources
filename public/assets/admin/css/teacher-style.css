@@ -5027,4 +5027,17 @@ Accuracy Score Card Style End
 .hotel-table table tr td:has(.categories) {
     min-width: 185px;
 }
+.hotel-table table tr td:has(.progress) {
+    min-width: 220px;
+}
+.hotel-table .progress-lable {
+    display: block;
+    margin: 0 0 15px;
+}
+.hotel-table .progress {
+    border-radius: 0;
+}
+.hotel-table .progress .progress-bar {
+    background-color: #5cc45c;
+}
 /* Hotel Table Style End */
