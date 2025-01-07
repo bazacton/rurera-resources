@@ -2929,6 +2929,10 @@ Admin Questions Generator Page Style End
         color: #333;
         font-weight: 600;
     }
+    .topic-parts-data table tr td {
+        border: 0;
+        border-bottom: 2px dotted #ddd;
+    }
     .topic-parts-data table tr td:has(.topic-part-title) {
         min-width: auto;
     }
