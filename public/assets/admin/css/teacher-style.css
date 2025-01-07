@@ -4979,6 +4979,7 @@ Accuracy Score Card Style End
     vertical-align: top;
     padding: 15px 15px;
     text-align: left !important;
+    font-size: 14px;
 }
 .hotel-thum-box {
     display: flex;
