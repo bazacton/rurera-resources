@@ -5056,7 +5056,7 @@ Accuracy Score Card Style End
     background-color: #5cc45c;
 }
 .hotel-table table tr td:has(.occupancy) {
-    min-width: 250px;
+    min-width: 150px;
 }
 .hotel-table .progress-box {
     padding: 0;
