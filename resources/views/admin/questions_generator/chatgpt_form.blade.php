@@ -174,7 +174,7 @@
 															  @endif
 															  <td data-label="Expected">-</td>
 															  <td data-label="Total">{{$unreviewed_questions}}</td>
-															  <td data-label="Pending">
+															  <td data-label="Actions">
 																<div class="actions">
 																	<a title="Copy Prompt" href="javascript:;" class="btn-transparent btn-sm text-primary copy-to-text" data-copy_to="prompt-text-{{$promptObj->id}}" title="" data-original-title="Copy Prompt"><i class="fas fa-copy"></i></a> 
 																	<a title="Search on ChatGPT" href="https://chat.openai.com/?model=gpt-4&q={{ urlencode($promptObj->prompt_text) }}" target="_blank" class="btn-transparent btn-sm text-primary" title="" data-original-title="Search"><i class="fas fa-search"></i></a>
