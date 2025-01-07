@@ -4876,7 +4876,7 @@ Accuracy Score Card Style End
     padding: 15px 15px 0;
 }
 .page-box a {
-    display: block;
+    display: inline-block;
     background-color: #f3f3f3;
     padding: 10px;
     border-radius: 10px;
