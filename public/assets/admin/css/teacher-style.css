@@ -4987,10 +4987,12 @@ Accuracy Score Card Style End
     gap: 15px;
 }
 .hotel-thum-box strong {
+    font-size: 14px;
+    color: #333;
     width: calc(100% - 115px);
 }
 .hotel-table table tr td:first-child {
-    min-width: 200px;
+    min-width: 320px;
 }
 .hotel-table table tr td:has(.description) {
     max-width: 310px;
@@ -5001,5 +5003,21 @@ Accuracy Score Card Style End
 }
 .hotel-thum-box strong span {
     display: block;
+    line-height: normal;
+    font-weight: 500;
+    padding-top: 5px;
+}
+.hotel-table .categories span {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.hotel-table .categories span em {
+    font-style: normal;
+    color: #333;
+}
+.hotel-table table tr td:has(.categories) {
+    min-width: 185px;
 }
 /* Hotel Table Style End */
