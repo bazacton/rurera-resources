@@ -139,7 +139,15 @@ $treasures_list = getSvgFiles('assets/admin/editor/treasures/');
 				foreach( $itemObj->LearningJourneyObjects->where('status','active') as $learningJourneyItemObj){
 
 					echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2">'.$learningJourneyItemObj->item_slug.'
-					/li>
+					<div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                        <img src="/assets/default/svgs/dots-three.svg" alt="">
+                      </button>
+                      <div class="dropdown-menu">
+                        <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i><i class="fa fa-copy"></i></li>
+                    </div>
+                    </div>
+					</li>
 
 					';
 
