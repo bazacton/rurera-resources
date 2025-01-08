@@ -3570,6 +3570,9 @@ span.field-separated span:after {
 .question-layout-holder:hover .question-info {
     left: 400px;
 }
+.document-content .question-layout-holder:hover .question-info {
+    left: 0;
+}
 .question-info .q-type {
     background-color: #f2f2f2;
     padding: 5px 15px;
