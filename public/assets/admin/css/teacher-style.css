@@ -5408,6 +5408,12 @@ Accuracy Score Card Style End
     filter: invert(42%) sepia(53%) saturate(7487%) hue-rotate(200deg) brightness(103%) contrast(105%);
     margin: 0 5px 0 0;
 }
+.user-attempt-status .no-attempt span {
+    box-shadow: 0px 0px 0 1px rgba(0,0,0,0.1);
+}
+.compliance-tabs .user-attempt-status ul {
+    gap: 5px 10px;
+}
 /* Compliance Programes Style End */
 
 @media screen and (max-width: 767px) {
