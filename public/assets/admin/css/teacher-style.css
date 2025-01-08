@@ -5436,6 +5436,9 @@ Accuracy Score Card Style End
     font-size: 14px;
     color: #6c757d;
 }
+.compliance-tabs .dropdown-box .dropdown-toggle img {
+    margin: 0;
+}
 /* Compliance Programes Style End */
 
 @media screen and (max-width: 767px) {
