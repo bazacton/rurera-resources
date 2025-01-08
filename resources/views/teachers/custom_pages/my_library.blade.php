@@ -1411,10 +1411,10 @@
                     <a href="#" class="back-btn"><i class="fas fa-chevron-left"></i></a>
                     <h2>Template Name <i class="fas fa-star"></i></h2>
                 </div>
-                <div class="document-controls">
+                <!-- <div class="document-controls">
                     <button type="button" class="settings-btn"><img src="/assets/default/svgs/settings.svg" alt=""> Settings</button>
                     <button type="button"><img src="/assets/default/svgs/download.svg" alt=""> Download</button>
-                </div>
+                </div> -->
             </div>
             <!-- <div class="document-left-sidebar">
                 <h3>Pages</h3>
