@@ -5401,6 +5401,13 @@ Accuracy Score Card Style End
     height: 100%;
     border-radius: 8px;
 }
+.compliance-tabs .card-heading img {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    filter: invert(42%) sepia(53%) saturate(7487%) hue-rotate(200deg) brightness(103%) contrast(105%);
+    margin: 0 5px 0 0;
+}
 /* Compliance Programes Style End */
 
 @media screen and (max-width: 767px) {
