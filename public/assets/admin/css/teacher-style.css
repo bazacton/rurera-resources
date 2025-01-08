@@ -4906,8 +4906,8 @@ Accuracy Score Card Style End
     background-color: #f3f3f3;
 }
 .document-content {
-    width: 85%;
-    padding: 15px 15px 0;
+    width: 100%;
+    padding: 15px 310px 0 15px;
     text-align: center;
     margin: 0 auto 0;
     -webkit-transition: all 0.3s ease-out; 
@@ -4923,6 +4923,7 @@ Accuracy Score Card Style End
     padding: 0 15px 15px;
     width: 66.666667%;
     margin: 0 auto;
+    text-align: left;
 }
 .pdf-img-box img {
     max-width: 100%;
