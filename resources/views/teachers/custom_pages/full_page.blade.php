@@ -170,7 +170,7 @@
                                         <div class="col-12 col-lg-4 col-md-6">
                                             <div class="categories-listing-card">
                                                 <div class="card-heading">
-                                                    <h3>Access Control and Authorizatio</h3>
+                                                    <h3><img src="/assets/default/svgs/painter-brush.svg" alt="painter-brush"> Access Control and Authorizatio</h3>
                                                     <div class="dropdown-box">
                                                         <div class="dropdown">
                                                             <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -203,10 +203,56 @@
                                                         <li class="no-attempt"><span></span></li>
                                                         <li class="no-attempt"><span></span></li>
                                                     </ul>
+                                                    <div class="attempt-info">
+                                                        <span>0/<em>18 controls passing</em></span>
+                                                        <span>0% assigned</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-lg-4 col-md-6"></div>
+                                        <div class="col-12 col-lg-4 col-md-6">
+                                        <div class="categories-listing-card">
+                                                <div class="card-heading">
+                                                    <h3><img src="/assets/default/svgs/painter-brush.svg" alt="painter-brush"> Infrastructure Security</h3>
+                                                    <div class="dropdown-box">
+                                                        <div class="dropdown">
+                                                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
+                                                            </a>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
+                                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt=""> Delete</a>
+                                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="user-attempt-status">
+                                                    <ul>
+                                                        <li class="incorrect"><span></span></li>
+                                                        <li class="incorrect"><span></span></li>
+                                                        <li class="incorrect"><span></span></li>
+                                                        <li class="incorrect"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                    </ul>
+                                                    <div class="attempt-info">
+                                                        <span>0/<em>22 controls passing</em></span>
+                                                        <span>0% assigned</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="col-12 col-lg-4 col-md-6"></div>
                                     </div>
                                 </div>
