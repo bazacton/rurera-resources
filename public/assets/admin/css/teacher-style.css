@@ -5301,6 +5301,99 @@ Accuracy Score Card Style End
     align-items: center;
     gap: 10px;
 }
+.framework-listings .row {
+    margin: 0;
+}
+.framework-listings [class*="col-"] {
+    padding: 20px 25px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+}
+.framework-listings {
+    border: 2px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.framework-card .card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 10px;
+}
+.framework-card .card-heading h3 {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
+.framework-listings [class*="col-"]:first-child {
+    border-left: 0;
+}
+.framework-card .card-heading a {
+    color: var(--blue);
+    text-decoration: underline;
+    display: inline-block;
+    line-height: normal;
+}
+.progress-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo-box img {
+    height: 25px;
+    width: 25px;
+    object-fit: contain;
+}
+.logo-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: 41%;
+}
+.logo-box span {
+    line-height: normal;
+    color: #333;
+    font-weight: bold;
+}
+.value-box {width: 25%;text-align: center;}
+.value-box span {
+    font-weight: bold;
+    color: #333;
+    line-height: normal;
+    display: inline-block;
+    text-align: right;
+    min-width: 35px;
+}
+.value-box span em {
+    font-style: normal;
+    color: #6c757d;
+}
+.progress-list li .progress-box {
+    padding: 0;
+    gap: 5px;
+    justify-content: flex-end;
+    width: 33%;
+}
+.progress-list li .progress-box:before {
+    display: none;
+}
+.progress-list li .progress-box img {height: 25px;width: 25px;object-fit: contain;}
+.progress-list li .progress-box span {
+    font-weight: bold;
+    color: #333;
+    line-height: normal;
+    text-align: right;
+}
+.progress-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.framework-card .chart-box img {
+    max-width: 100%;
+    object-fit: contain;
+    max-height: 80%;
+}
 /* Compliance Programes Style End */
 
 @media screen and (max-width: 767px) {
