@@ -5040,7 +5040,8 @@ Accuracy Score Card Style End
     padding: 0 12px;
     border: 0;
 }
-.document-content .alphabet-list-style .field-holder:before, .alphabet-list-style .form-field:before {
+.document-content .alphabet-list-style .field-holder:before, 
+.document-content .alphabet-list-style .form-field:before {
     left: 0;
 }
 /* Document Viewer Page Style End */
