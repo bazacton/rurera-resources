@@ -14,6 +14,163 @@
     <div class="section-body">
         <div class="row">
             <div class="col-12">
+                <div class="compliance-programes">
+                    <div class="section-header">
+                        <h1>Compliance Program</h1>
+                    </div>
+                    <div class="compliance-info">
+                        <ul>
+                            <li>
+                                <span class="compliance-info-lable">Passing Controls</span>
+                                <div class="compliance-info-text">
+                                    <strong><img src="/assets/default/img/circle-green.png" alt="circle-green"> 73% - 65/<em>89</em></strong>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="compliance-info-lable">Unassignd</span>
+                                <div class="compliance-info-text">
+                                    <strong>8 controls</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="compliance-info-lable">Requirements Met</span>
+                                <div class="compliance-info-text">
+                                    <strong>16<em>33</em></strong>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="compliance-tabs">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="overview-tab" data-toggle="tab" data-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true">
+                                    <img src="/assets/default/svgs/grid-9dots.svg" alt="grid"> Overview
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="controls-tab" data-toggle="tab" data-target="#controls" type="button" role="tab" aria-controls="controls" aria-selected="false">
+                                    <img src="/assets/default/svgs/settings.svg" alt="settings"> Controls
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="requirements-tab" data-toggle="tab" data-target="#requirements" type="button" role="tab" aria-controls="requirements" aria-selected="false">
+                                    <img src="/assets/default/svgs/check-lists.svg" alt="check-lists"> Requirements
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="frameworks-tab" data-toggle="tab" data-target="#frameworks" type="button" role="tab" aria-controls="frameworks" aria-selected="false">
+                                    <img src="/assets/default/svgs/frame-cube.svg" alt="frame-cube"> Frameworks
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                                <div class="elements-title">
+                                    <h2 class="font-22">Frameworks</h2>
+                                    <div class="framework-controls">
+                                        <button type="button" class="logos-btn"><img src="/assets/default/img/btn-logo.png" alt="logos"></button>
+                                        <button type="button"><img src="/assets/default/svgs/badge-reward.svg" alt="logos"> Compliance badges</button>
+                                    </div>
+                                </div>
+                                <div class="framework-listings">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4 col-md-6">
+                                            <div class="framework-card">
+                                                <div class="card-heading">
+                                                    <h3>Framework Progress</h3>
+                                                    <a href="#">View all</a>
+                                                </div>
+                                                <ul class="progress-list">
+                                                    <li>
+                                                        <div class="logo-box">
+                                                            <img src="/assets/default/img/iso-logo.png" alt="iso-logo">
+                                                            <span>ISO 27001</span>
+                                                        </div>
+                                                        <div class="value-box">
+                                                            <span>0<em>/89</em></span>
+                                                        </div>
+                                                        <div class="progress-box">
+                                                            <img src="/assets/default/img/circle-gray.png" alt="circle-gray">
+                                                            <span>0%</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="logo-box">
+                                                            <img src="/assets/default/img/soc-logo.png" alt="soc-logo">
+                                                            <span>SOC 2 Type 2</span>
+                                                        </div>
+                                                        <div class="value-box">
+                                                            <span>66<em>/89</em></span>
+                                                        </div>
+                                                        <div class="progress-box">
+                                                            <img src="/assets/default/img/circle-green.png" alt="circle-green">
+                                                            <span>76%</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="logo-box">
+                                                            <img src="/assets/default/img/soc-logo.png" alt="soc-logo">
+                                                            <span>HIPAA</span>
+                                                        </div>
+                                                        <div class="value-box">
+                                                            <span>9<em>/89</em></span>
+                                                        </div>
+                                                        <div class="progress-box">
+                                                            <img src="/assets/default/img/circle-red.png" alt="circle-green">
+                                                            <span>14%</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="logo-box">
+                                                            <img src="/assets/default/img/soc-logo.png" alt="soc-logo">
+                                                            <span>PCI DSS</span>
+                                                        </div>
+                                                        <div class="value-box">
+                                                            <span>64<em>/64</em></span>
+                                                        </div>
+                                                        <div class="progress-box">
+                                                            <img src="/assets/default/img/circle-green.png" alt="circle-green">
+                                                            <span>100%</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 col-md-6">
+                                            <div class="framework-card">
+                                                <div class="card-heading">
+                                                    <h3>100% Controls Assigned</h3>
+                                                    <div class="chart-value-lables">
+                                                        <span class="assigned">Assigned</span>
+                                                        <span class="unassigned">Unassigned</span>
+                                                    </div>
+                                                </div>
+                                                <div class="chart-box">
+                                                    <img src="/assets/default/img/verticle-chart.png" alt="verticle-chart">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 col-md-6">
+                                            <div class="framework-card">
+                                                <div class="card-heading">
+                                                    <h3>73% of Controls Pass</h3>
+                                                </div>
+                                                <div class="chart-box">
+                                                    <img src="/assets/default/img/circle-chart.png" alt="circle-chart">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="controls" role="tabpanel" aria-labelledby="controls-tab">...</div>
+                            <div class="tab-pane fade" id="requirements" role="tabpanel" aria-labelledby="requirements-tab">...</div>
+                            <div class="tab-pane fade" id="frameworks" role="tabpanel" aria-labelledby="frameworks-tab">...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
                 <div class="hotel-table">
                     <table>
                         <thead>
