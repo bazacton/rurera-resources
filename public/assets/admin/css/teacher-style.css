@@ -5392,7 +5392,9 @@ Accuracy Score Card Style End
 .framework-card .chart-box img {
     max-width: 100%;
     object-fit: contain;
-    max-height: 80%;
+}
+.chart-box.circle-chart img {
+    max-width: 90%;
 }
 /* Compliance Programes Style End */
 
