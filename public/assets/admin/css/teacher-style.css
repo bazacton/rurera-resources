@@ -5400,6 +5400,7 @@ Accuracy Score Card Style End
     border: 2px solid rgba(0,0,0,0.1);
     height: 100%;
     border-radius: 8px;
+    padding: 20px 25px;
 }
 .compliance-tabs .card-heading img {
     height: 20px;
@@ -5412,7 +5413,7 @@ Accuracy Score Card Style End
     box-shadow: 0px 0px 0 1px rgba(0,0,0,0.1);
 }
 .compliance-tabs .user-attempt-status ul {
-    gap: 5px 10px;
+    gap: 5px 8px;
 }
 /* Compliance Programes Style End */
 
