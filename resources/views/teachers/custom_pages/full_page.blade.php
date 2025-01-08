@@ -72,7 +72,7 @@
                                         <button type="button"><img src="/assets/default/svgs/badge-reward.svg" alt="logos"> Compliance badges</button>
                                     </div>
                                 </div>
-                                <div class="framework-listings">
+                                <div class="framework-listings mb-30">
                                     <div class="row">
                                         <div class="col-12 col-lg-4 col-md-6">
                                             <div class="framework-card">
@@ -160,6 +160,54 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="elements-title">
+                                    <h2 class="font-22">Control categories</h2>
+                                </div>
+                                <div class="categories-listings">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4 col-md-6">
+                                            <div class="categories-listing-card">
+                                                <div class="card-heading">
+                                                    <h3>Access Control and Authorizatio</h3>
+                                                    <div class="dropdown-box">
+                                                        <div class="dropdown">
+                                                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                                <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
+                                                            </a>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
+                                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt=""> Delete</a>
+                                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="user-attempt-status">
+                                                    <ul>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                        <li class="no-attempt"><span></span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 col-md-6"></div>
+                                        <div class="col-12 col-lg-4 col-md-6"></div>
                                     </div>
                                 </div>
                             </div>
