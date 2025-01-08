@@ -4921,6 +4921,8 @@ Accuracy Score Card Style End
     height: calc(100vh - 85px);
     overflow: hidden;
     padding: 0 15px 15px;
+    width: 66.666667%;
+    margin: 0 auto;
 }
 .pdf-img-box img {
     max-width: 100%;
