@@ -1,6 +1,6 @@
               <div class="container mt-3">
                   <div class="col-12">
-                      <div class="chart-summary-fields result-layout-summary">
+                      <div class="chart-summary-fields result-layout-summary text-center">
                           <h3 class="text-center font-30 mb-50">
                               Congratulation
                               <span class="icon-box">
