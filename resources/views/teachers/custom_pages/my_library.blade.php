@@ -1446,9 +1446,6 @@
                                     <div class="text-holder">
                                         <h5>Exploring Magnetic Matrials and Their Uses<small>(18 questions)</small></h5>
                                     </div>
-                                    <div class="questions-header-controls">
-                                        <button type="button"><i class="fas fa-plus"></i> Add All</button>
-                                    </div>
                                 </div>
                             </div>
                             <ul class="list-options question-list-options mb-15">      
@@ -1475,7 +1472,6 @@
                                                         <span class="q-time">Avg time</span>
                                                         <span class="q-point">1 point</span>
                                                     </div>
-                                                    <button type="button" class="question-add-btn" data-toggle="modal" data-target="#general-knowledge-modal"><i class="fas fa-plus"></i> Add</button>
                                                 </div>
                                             </div>
                                         </div>
