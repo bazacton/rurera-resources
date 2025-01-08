@@ -1447,7 +1447,7 @@
                                 </div>
                             </div>
                         </div>
-                        <ul class="list-options question-list-options mb-15">      
+                        <ul class="list-options question-list-options mb-0">      
                             <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 8 questions</li>
                             <li><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt=""></span> 7th-8th  Grade</li>
                             <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
