@@ -5044,6 +5044,10 @@ Accuracy Score Card Style End
 .document-content .alphabet-list-style .form-field:before {
     left: 0;
 }
+.document-content .form-field label:hover {
+    background-color: inherit;
+    border: 0;
+}
 /* Document Viewer Page Style End */
 
 
