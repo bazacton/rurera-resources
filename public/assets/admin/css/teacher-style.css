@@ -5038,6 +5038,10 @@ Accuracy Score Card Style End
 .document-content .form-field label, 
 .document-content .api-questions-form .option-group {
     padding: 0 12px;
+    border: 0;
+}
+.document-content .alphabet-list-style .field-holder:before, .alphabet-list-style .form-field:before {
+    left: 0;
 }
 /* Document Viewer Page Style End */
 
