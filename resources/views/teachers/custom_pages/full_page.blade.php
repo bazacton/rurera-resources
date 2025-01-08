@@ -23,7 +23,7 @@
                             <li>
                                 <span class="compliance-info-lable">Passing Controls</span>
                                 <div class="compliance-info-text">
-                                    <strong><img src="/assets/default/img/circle-green.png" alt="circle-green"> 73% - 65/<em>89</em></strong>
+                                    <strong><img src="/assets/default/img/circle-green.png" alt="circle-green"> 73% - 65<em>/89</em></strong>
                                 </div>
                             </li>
                             <li>
@@ -35,7 +35,7 @@
                             <li>
                                 <span class="compliance-info-lable">Requirements Met</span>
                                 <div class="compliance-info-text">
-                                    <strong>16<em>33</em></strong>
+                                    <strong>16<em>/33</em></strong>
                                 </div>
                             </li>
                         </ul>
