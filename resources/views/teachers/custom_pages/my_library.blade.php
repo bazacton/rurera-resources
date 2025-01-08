@@ -1416,9 +1416,9 @@
                     <button type="button"><img src="/assets/default/svgs/download.svg" alt=""> Download</button>
                 </div>
             </div>
-            <div class="document-left-sidebar">
+            <!-- <div class="document-left-sidebar">
                 <h3>Pages</h3>
-                <!-- <div class="document-pages">
+                <div class="document-pages">
                     <div class="page-box">
                         <a href="#" class="active">
                             <figure>
@@ -1435,8 +1435,8 @@
                             <span class="page-lable">Page 2</span>
                         </a>
                     </div>
-                </div> -->
-            </div>
+                </div>
+            </div> -->
             <div class="document-content">
                 <div class="document-pdf">
                     <div class="pdf-img-box">
