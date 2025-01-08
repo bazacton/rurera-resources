@@ -4950,6 +4950,10 @@ Accuracy Score Card Style End
 .document-right-sidebar.active {
     right: 0;
 }
+.admin_teacher_role:has(.document-right-sidebar.active) .nicescroll-rails {
+    display: none !important;
+}
+
 .document-switch-options {
     padding: 15px 0 0;
 }
