@@ -5430,6 +5430,7 @@ Accuracy Score Card Style End
     font-size: 14px;
     border: 0;
     padding: 0;
+    gap: 0;
 }
 .compliance-tabs .attempt-info span em {
     font-size: 14px;
