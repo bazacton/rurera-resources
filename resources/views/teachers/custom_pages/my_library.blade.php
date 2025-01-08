@@ -1443,14 +1443,34 @@
                         <div class="questions-header">
                             <div class="questions-header-inner">
                                 <div class="text-holder">
-                                    <h5>Exploring Magnetic Matrials and Their Uses<small>(18 questions)</small></h5>
+                                    <h5>Exploring Magnetic Matrials and Their Uses</h5>
                                 </div>
+                            </div>
+                            <span class="instructor-lable">Instructor: Kaizer Can</span>
+                        </div>
+                        <div class="about-student">
+                            <div class="student-roll-num">
+                                Roll No:
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="student-other-info">
+                                <span class="student-name">Name: <small></small></span>
+                                <span class="student-class">Class: <small></small></span>
+                                <span class="student-subject">Subject: <small></small></span>
+                                <span class="date">Date: <small></small></span>
                             </div>
                         </div>
                         <ul class="list-options question-list-options mb-0">      
-                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 8 questions</li>
-                            <li><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt=""></span> 7th-8th  Grade</li>
-                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
+                            <li><span class="icon-box">-</span> 8 questions</li>
+                            <li><span class="icon-box">-</span> 7th-8th  Grade</li>
+                            <li><span class="icon-box">-</span> Science</li>
                         </ul>
                     </div>
                     <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0">
