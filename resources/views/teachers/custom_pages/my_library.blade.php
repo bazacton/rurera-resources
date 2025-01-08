@@ -1809,7 +1809,7 @@
                                             <h4>Mark the following true and false:</h4>
                                         </div>
                                     </div>
-                                    <div class="rureraform-col rureraform-col-8">
+                                    <div class="rureraform-col rureraform-col-12 pb-0">
                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                         <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
                                         </div>
@@ -1818,7 +1818,7 @@
                                         <div class="rureraform-element-cover"></div>
                                         </div>
                                     </div>
-                                    <div class="rureraform-col rureraform-col-8">
+                                    <div class="rureraform-col rureraform-col-12 pb-0">
                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                         <h6>When balanced forces act on an object, it remains stationary or continues moving at the same speed.</h6>
                                         </div>
@@ -1827,7 +1827,7 @@
                                         <div class="rureraform-element-cover"></div>
                                         </div>
                                     </div>
-                                    <div class="rureraform-col rureraform-col-8">
+                                    <div class="rureraform-col rureraform-col-12 pb-0">
                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                         <h6>When an endothermic reaction occurs, energy is absorbed, making the surroundings cooler.</h6>
                                         </div>
