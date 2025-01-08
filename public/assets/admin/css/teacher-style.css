@@ -4924,9 +4924,9 @@ Accuracy Score Card Style End
     height: 100%;
     object-fit: contain;
 }
-.document-modal:has(.document-right-sidebar.active) .document-content {
+/* .document-modal:has(.document-right-sidebar.active) .document-content {
     padding-right: 305px;
-}
+} */
 .document-viewer .close {
     position: absolute;
     right: 15px;
@@ -4935,7 +4935,7 @@ Accuracy Score Card Style End
 }
 .document-right-sidebar {
     position: absolute;
-    right: -500px;
+    right: 0;
     width: 20%;
     border-left: 1px solid #ddd;
     background-color: #fff;
