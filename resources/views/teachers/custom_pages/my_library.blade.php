@@ -1438,7 +1438,7 @@
                 </div>
             </div> -->
             <div class="document-content text-left">
-                <div class="document-pdf row">
+                <div class="document-pdf">
                     <div class="col-12 col-lg-8 col-md-8 mx-auto">
                         <div class="elements-holder bg-white panel-border p-15 border-bottom-0">
                             <div class="questions-header">
@@ -1456,32 +1456,6 @@
                                 <li><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt=""></span> 7th-8th  Grade</li>
                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
                             </ul>
-                            <div class="class-controls">
-                                <div class="left-area d-inline-flex align-items-center">
-                                    <div class="class-controls-option questions-control-options border-0 mr-0 pr-0 d-inline-flex align-items-center">
-                                        <button type="button"><img src="/assets/default/svgs/edit-simple.svg" alt="">Copy & edit</button>
-                                        <button type="button"><img src="/assets/default/svgs/save.svg" alt="">Save</button>
-                                        <button type="button"><img src="/assets/default/svgs/share.svg" alt="">Share</button>
-                                        <button type="button"><img src="/assets/default/svgs/download.svg" alt="">Worksheet</button>
-                                        <div class="dropdown-box">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
-                                                </a>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt=""> Delete</a>
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="right-area w-auto">
-                                    <button type="button" class="assignment-btn"><img class="show-img" src="/assets/default/svgs/clock.svg" alt=""> Assign</button>
-                                    <button type="button" class="perview-btn"><img class="show-img" src="/assets/default/svgs/eye-show.svg" alt=""> Perview</button>
-                                </div>
-                            </div>
                         </div>
                         <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0">
                             <div class="question-layout-block">
@@ -1558,18 +1532,6 @@
                                     </div>
                                 </div>
                                 </form>
-                            </div>
-                            <div class="view-explanation">
-                                <div class="explanation-controls d-flex align-items-center">
-                                    <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list1" aria-expanded="false" aria-controls="explanation-list">
-                                        <i class="fas fa-plus"></i> Explanation
-                                    </button>
-                                </div>
-                                <div class="collapse" id="explanation-list1">
-                                    <div class="explanation-text-holder">
-                                        <p>Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm.</p>
-                                    </div>
-                                </div>
                             </div>
                             <div class="canvas-editable-options-holder">
                                 <div class="canvas-editable-options lms-quiz-create">
@@ -1995,18 +1957,6 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="view-explanation">
-                                <div class="explanation-controls d-flex align-items-center">
-                                    <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list2" aria-expanded="false" aria-controls="explanation-list">
-                                        <i class="fas fa-plus"></i> Explanation
-                                    </button>
-                                </div>
-                                <div class="collapse" id="explanation-list2">
-                                    <div class="explanation-text-holder">
-                                        <p>Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm.</p>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="mb-15 bg-white panel-border p-25">
                             <div class="question-layout-block">
@@ -2049,18 +1999,6 @@
                                     </div>
                                     </div>
                                 </form>
-                            </div>
-                            <div class="view-explanation">
-                                <div class="explanation-controls d-flex align-items-center">
-                                    <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list3" aria-expanded="false" aria-controls="explanation-list">
-                                        <i class="fas fa-plus"></i> Explanation
-                                    </button>
-                                </div>
-                                <div class="collapse" id="explanation-list3">
-                                    <div class="explanation-text-holder">
-                                        <p>Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm.</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
