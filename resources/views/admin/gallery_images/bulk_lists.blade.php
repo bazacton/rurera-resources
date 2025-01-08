@@ -11,7 +11,7 @@
     .hide {
         display: none;
     }
-	
+
 	.defined-searches {
 		background: #efefef;
 		padding: 10px;
@@ -25,7 +25,7 @@
 	.save-template {
 		float: right;
 	}
-	
+
 .rurera-upload-area {
   text-align: center;
   width: 100%;
@@ -160,10 +160,10 @@ ul.crop_sizes {
                             </select>
                         </div>
                     </div>
-					
-					
-					
-					
+
+
+
+
 
 					<div class="col-md-4">
 					<div class="form-group">
@@ -181,8 +181,8 @@ ul.crop_sizes {
 						@enderror
 					</div>
 					</div>
-					
-					
+
+
 					<div class="col-md-4">
 					<div class="form-group">
 						<label class="input-label">Topic</label>
@@ -199,8 +199,8 @@ ul.crop_sizes {
 
 					</div>
 					</div>
-					
-					
+
+
 					<div class="col-md-3">
 					<div class="form-group">
 						<label class="input-label">Sub Topic</label>
@@ -214,12 +214,12 @@ ul.crop_sizes {
 						{{ $message }}
 					</div>
 					@enderror
-					
+
 
 					</div>
 					</div>
 					<div class="col-md-3">
-						<div class="form-group">	
+						<div class="form-group">
 							<label class="input-label">Status</label>
 							<select name="status" data-search-option="status" class="form-control "
 									data-placeholder="Search Status">
@@ -231,7 +231,7 @@ ul.crop_sizes {
 						</div>
 					</div>
 					<div class="col-md-3">
-						<div class="form-group">	
+						<div class="form-group">
 							<label class="input-label">Author</label>
 							<select name="user_id" data-search-option="display_name" class="form-control "
 									data-placeholder="Search author">
@@ -250,7 +250,7 @@ ul.crop_sizes {
 
                     <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
                         <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}</button>
-						
+
                     </div>
                 </form>
             </div>
@@ -262,8 +262,8 @@ ul.crop_sizes {
 				<span><strong>Defined Searches:</strong></span>
 					@if( !empty( $saved_templates ) )
 						@foreach( $saved_templates  as $template_name => $template_data)
-							@php $template_array = json_decode($template_data); 
-							$url_params = '<span>'.$template_name.'</span>'; 
+							@php $template_array = json_decode($template_data);
+							$url_params = '<span>'.$template_name.'</span>';
 							if( isset( $template_array->url_params )){
 								$url_params = '<a href="'.(string) url("").'/admin/topics_parts/?'.$template_array->url_params.'">'.$template_name.'</a>';
 							}
@@ -278,7 +278,7 @@ ul.crop_sizes {
         <div class="row">
             <div class="col-12 col-md-12">
                 <div class="card">
-                    
+
                     <div class="card-header rurera-hide">
 						@can('admin_gallery_images_create')
 							<div class="text-right">
@@ -289,8 +289,8 @@ ul.crop_sizes {
 							</div>
 						@endcan
                     </div>
-					
-					
+
+
 
                     <div class="card-body">
                         <div class="table-responsive">
@@ -307,9 +307,9 @@ ul.crop_sizes {
                                 </tr>
 
                                 @foreach($GalleryBulkLists as $GalleryBulkListObj)
-								@php $questions_ids = isset( $GalleryBulkListObj->questions_ids )? json_decode($GalleryBulkListObj->questions_ids) : array(); 
+								@php $questions_ids = isset( $GalleryBulkListObj->questions_ids )? json_decode($GalleryBulkListObj->questions_ids) : array();
 								@endphp
-								@php $image_recomendations = isset( $GalleryBulkListObj->image_recomendations )? json_decode($GalleryBulkListObj->image_recomendations, true) : array(); 
+								@php $image_recomendations = isset( $GalleryBulkListObj->image_recomendations )? json_decode($GalleryBulkListObj->image_recomendations, true) : array();
 								$image_recomendations = isset( $image_recomendations['searchable_keywords'] )? array($image_recomendations) : $image_recomendations;
 								@endphp
                                 <tr>
@@ -323,8 +323,8 @@ ul.crop_sizes {
 									<td data-id="category" class="text-left">{{ (isset($GalleryBulkListObj->category->id))? $GalleryBulkListObj->category->getTitleAttribute() : '-' }}
 									<br>
 										<small>
-										{{ (isset($GalleryBulkListObj->subject->id))? $GalleryBulkListObj->subject->getTitleAttribute() : '-' }} / 
-										{{ (isset($GalleryBulkListObj->chapter->id))? $GalleryBulkListObj->chapter->getTitleAttribute() : '-' }} / 
+										{{ (isset($GalleryBulkListObj->subject->id))? $GalleryBulkListObj->subject->getTitleAttribute() : '-' }} /
+										{{ (isset($GalleryBulkListObj->chapter->id))? $GalleryBulkListObj->chapter->getTitleAttribute() : '-' }} /
 										{{ (isset($GalleryBulkListObj->subChapter->id))? $GalleryBulkListObj->subChapter->sub_chapter_title : '-' }}
 										</small>
 									</td>
@@ -332,16 +332,16 @@ ul.crop_sizes {
 										@if(!empty($image_recomendations))
 											@foreach($image_recomendations as $image_recomendation_data)
 												@php $searchable_keywords = isset( $image_recomendation_data['searchable_keywords'] )? $image_recomendation_data['searchable_keywords'] : '';
-													
+
 													$searchable_keywords = is_array($searchable_keywords)? $searchable_keywords : explode(' ', $searchable_keywords);
-												
+
 												$keywords_list  = '';
 												if(!empty($searchable_keywords)){
 													foreach($searchable_keywords as $keyword_text){
 														$keywords_list .= '<a href="javascrit:;" class="copyable-text">'.$keyword_text.'</a> ';
 													}
 												}
-												
+
 												$explanation = isset( $image_recomendation_data['explanation'] )? $image_recomendation_data['explanation'] : '';
 												@endphp
 												Keywords: {!! $keywords_list !!}<br>
@@ -360,7 +360,7 @@ ul.crop_sizes {
 											@foreach($questions_ids as $question_id)
 												<a href="/panel/questions/{{$question_id}}/start" target="_blank">{{$question_id}}</a><br>
 											@endforeach
-										@endif	
+										@endif
 									</td>
                                     <td class="text-left" data-id="user">{{ $GalleryBulkListObj->status }}</td>
                                     <td class="text-left" data-id="created_at">
@@ -378,7 +378,7 @@ ul.crop_sizes {
 									@endif
 									</td>
                                     <td data-id="action">
-										
+
                                         @if($GalleryBulkListObj->status == 'Pending')
 											<a href="javascript:;" data-id="{{ $GalleryBulkListObj->id }}" class="upload-image-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Upload image"><i class="fas fa-upload"></i></a>&nbsp;&nbsp;&nbsp;
 										@endif
@@ -408,7 +408,7 @@ ul.crop_sizes {
 
 <div class="modal fade" id="imagemodal-list" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered">
-		<div class="modal-content">              
+		<div class="modal-content">
 			<div class="modal-body">
 				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 				<img src="" class="imagepreview-list" style="max-width: 460px;">
@@ -430,7 +430,7 @@ ul.crop_sizes {
 				<input type="hidden" name="form_data_encoded" class="form_data_encoded">
 				<input type="hidden" name="template_type" class="template_type">
 				<input type="hidden" name="form_id" class="form_id">
-				
+
 				<div class="inactivity-controls">
 					<a href="javascript:;" class="continue-btn save-template-btn button btn btn-primary">Save Template</a>
 				</div>
@@ -452,7 +452,7 @@ ul.crop_sizes {
 			  <div class="modal-box">
 			  <form action="/admin/gallery_images/gallery-bulk-list" method="POST" id="gallery-bulk-list-form" class="px-25 gallery-bulk-list-form">
 				@csrf
-				
+
 				<div class="row">
 					<div class="col-md-12 col-lg-12">
 					<div class="row">
@@ -526,7 +526,7 @@ ul.crop_sizes {
 
 							</div>
 						</div>
-						
+
 						</div>
 					</div>
 				</div>
@@ -552,9 +552,9 @@ ul.crop_sizes {
 			  <div class="modal-box">
 			  <form action="/admin/questions-generator/apply_template" method="POST" id="upload_image_area_form" class="px-25 upload_image_area_form" enctype="multipart/form-data">
 				@csrf
-				
+
 				<input type="hidden" name="bulk_list_id" class="bulk_list_id" value="0">
-			
+
 				<div class="image-upload-block">
 				<div class="row">
 					<div class="col-md-12 col-lg-12s">
@@ -563,13 +563,14 @@ ul.crop_sizes {
 								<h2 class="font-20 font-weight-bold mb-15">Image Upload</h2>
 							</div>
 							<div class="col-12 col-md-12 col-lg-12">
+                                <input type="hidden" name="crop_size" class="crop_size">
 								<ul class="crop_sizes">
 									@php $sizes_references = sizes_references(); $size_count = 1;@endphp
 									@if(!empty( $sizes_references ))
 										@foreach( $sizes_references as $size_reference_index => $size_reference_data)
-											@php $size_reference_label = isset( $size_reference_data['label'] )? $size_reference_data['label'] : ''; 
-											$size_reference_width = isset( $size_reference_data['width'] )? $size_reference_data['width'] : ''; 
-											$size_reference_height = isset( $size_reference_data['height'] )? $size_reference_data['height'] : ''; 
+											@php $size_reference_label = isset( $size_reference_data['label'] )? $size_reference_data['label'] : '';
+											$size_reference_width = isset( $size_reference_data['width'] )? $size_reference_data['width'] : '';
+											$size_reference_height = isset( $size_reference_data['height'] )? $size_reference_data['height'] : '';
 											@endphp
 											<li data-size_class="{{$size_reference_index}}" data-crop_size_width="{{$size_reference_width}}" data-crop_size_height="{{$size_reference_height}}" class="{{($size_count == 1)? 'active' : ''}}">{{$size_reference_label}}</li>
 											@php $size_count++ @endphp
@@ -586,15 +587,24 @@ ul.crop_sizes {
 							</div>
 							<div class="col-12 col-md-12 col-lg-12 img-contaner w-100 image-crop-area"></div>
 							<div class="col-12 col-md-12 col-lg-12  preview-cropped-img"></div>
+
+                            <div class="col-12 col-md-12 col-lg-12">
+                            <div class="form-group">
+                                <label class="input-label">Image Reference Text</label>
+                                <input type="text" name="image_reference_url" id="image_reference_url"
+                                        class="rurera-req-field form-control ">
+                            </div>
+                            </div>
+
 						</div>
 					</div>
 				</div>
 				<div class="inactivity-controls">
 					<button type="button" class="btn btn-primary crop-it mt-0">Crop</button>
-					<button type="button" class="btn btn-primary crop-image-next-btn rurera-hide mt-0">Next</button>
+					<button type="submit" class="btn btn-primary crop-image-next-btn rurera-hide mt-0">Next</button>
 					<!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
 				</div>
-				
+
 				</div>
 				<div class="template-selection rurera-hide">
 				<div class="example-selected-questions"></div>
@@ -617,15 +627,15 @@ ul.crop_sizes {
                                                        aria-controls="section-tab-Exceeding" aria-selected="true"><span class="tab-title">Exceeding</span></a>
                                                 </li>
                                             </ul>
-											
+
 											<div class="tab-content" id="myTabContent2">
                                                 <div class="tab-pane mt-3 fade in active show difficulty_levels" id="section-tab-Emerging" role="tabpanel" aria-labelledby="section-tab-Emerging-tab">
 													<div class="row">
 														@if($emerging_example_questions->count() > 0)
 															@php $counter = 1; @endphp
-															@foreach($emerging_example_questions as $exampleQuestionObj)	
+															@foreach($emerging_example_questions as $exampleQuestionObj)
 																@php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
-																@php $sizes_reference = json_decode($exampleQuestionObj->sizes_reference); 
+																@php $sizes_reference = json_decode($exampleQuestionObj->sizes_reference);
 																$sizes_reference_classes = is_array($sizes_reference)? implode(' ', $sizes_reference) : '';
 																@endphp
 																<div class="col-12 col-lg-4 col-md-6 {{$sizes_reference_classes}} {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
@@ -656,14 +666,14 @@ ul.crop_sizes {
 														@endif
 													</div>
                                                 </div>
-												
+
 												<div class="tab-pane mt-3 fade difficulty_levels" id="section-tab-Expected" role="tabpanel" aria-labelledby="section-tab-Expected-tab">
                                                    <div class="row">
 														@if($expected_example_questions->count() > 0)
 															@php $counter = 1; @endphp
-															@foreach($expected_example_questions as $exampleQuestionObj)	
+															@foreach($expected_example_questions as $exampleQuestionObj)
 															@php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
-															@php $sizes_reference = json_decode($exampleQuestionObj->sizes_reference); 
+															@php $sizes_reference = json_decode($exampleQuestionObj->sizes_reference);
 																$sizes_reference_classes = is_array($sizes_reference)? implode(' ', $sizes_reference) : '';
 																@endphp
 																<div class="col-12 col-lg-4 col-md-6 {{$sizes_reference_classes}} {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
@@ -694,14 +704,14 @@ ul.crop_sizes {
 														@endif
 													</div>
                                                 </div>
-												
+
 												<div class="tab-pane mt-3 fade difficulty_levels" id="section-tab-Exceeding" role="tabpanel" aria-labelledby="section-tab-Exceeding-tab">
                                                    <div class="row">
 														@if($exceeding_example_questions->count() > 0)
 															@php $counter = 1; @endphp
-															@foreach($exceeding_example_questions as $exampleQuestionObj)	
+															@foreach($exceeding_example_questions as $exampleQuestionObj)
 															@php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
-															@php $sizes_reference = json_decode($exampleQuestionObj->sizes_reference); 
+															@php $sizes_reference = json_decode($exampleQuestionObj->sizes_reference);
 																$sizes_reference_classes = is_array($sizes_reference)? implode(' ', $sizes_reference) : '';
 																@endphp
 																<div class="col-12 col-lg-4 col-md-6 {{$sizes_reference_classes}} {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
@@ -735,12 +745,12 @@ ul.crop_sizes {
 
                                             </div>
                                             </div>
-										
-										
-											
+
+
+
 										<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 											<div class="modal-dialog modal-dialog-centered">
-												<div class="modal-content">              
+												<div class="modal-content">
 													<div class="modal-body">
 														<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 														<img src="" class="imagepreview">
@@ -753,7 +763,7 @@ ul.crop_sizes {
 										</div>
 									</div>
 									</div>
-				
+
 				</form>
 			  </div>
 			</div>
@@ -763,7 +773,7 @@ ul.crop_sizes {
 
 <div class="modal fade" id="topic-part-details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered">
-		<div class="modal-content">              
+		<div class="modal-content">
 			<div class="modal-body">
 				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 				<div class="topic-part-details copyable-text">
@@ -777,19 +787,19 @@ ul.crop_sizes {
 @push('scripts_bottom')
 
 	<script src="/assets/default/js/admin/cropimage.js?ver={{$random_id}}"></script>
-	<script src="/assets/default/js/admin/crop-script.js?ver={{$random_id}}"></script>	
-	
-	
-	
+	<script src="/assets/default/js/admin/crop-script.js?ver={{$random_id}}"></script>
+
+
+
 	<script type="text/javascript">
-		
-		
+
+
 		$(document).on('click', '.topic_details', function () {
 			var bulk_id = $(this).attr('data-bulk_id');
 			var part_item_details = $('.topic-part-item-details[data-bulk_id="'+bulk_id+'"]').html();
 			$(".topic-part-details").html(part_item_details);
 			$("#topic-part-details").modal('show');
-			
+
 		});
 		$(document).on('click', '.apply-template-btn', function () {
 			var formData = new FormData($('#upload_image_area_form')[0]);
@@ -799,33 +809,33 @@ ul.crop_sizes {
 				type: "POST",
 				dataType: "json",
 				url: '/admin/questions-generator/apply_template',
-				data: formData,		
+				data: formData,
 				processData: false,
 				contentType: false,
 				success: function (return_data) {
 					console.log(return_data);
 					$("."+return_data.response_class).html(return_data.response_msg);
-					
+
 				}
 			});
 		});
 		$(document).on('click', '.crop-image-next-btn', function () {
-			if($(".dynaCanvas").length > 0){
-			$(".image-upload-block").addClass('rurera-hide');
-			$(".template-selection").removeClass('rurera-hide');		
-			$(".crop-it").removeClass('rurera-hide');
-			$(".crop-image-next-btn").addClass('rurera-hide');
-			}else{
-				alert('Please upload image first');
+            if($("#image_reference_url").val() == ''){
+                alert('Please Provide the Reference Text');
+                return false;
+            }
+			if($(".dynaCanvas").length < 1){
+                alert('Please upload image first');
+                return false;
 			}
 		});
 		$(document).on('click', '.crop-image-back-btn', function () {
 			$(".preview-cropped-img").html("");
 			$(".image-upload-block").removeClass('rurera-hide');
-			$(".template-selection").addClass('rurera-hide');	
+			$(".template-selection").addClass('rurera-hide');
 		});
-		
-	
+
+
 	$(document).on('click', '.template-btn', function () {
 			var template_image = $(this).attr('data-template_image');
 			var template_name = $(this).attr('data-template_name');
@@ -845,7 +855,7 @@ ul.crop_sizes {
 				$(this).closest('.template-item').addClass('active');
 			}
 		});
-		
+
 
 	$(document).ready(function () {
   const dragDropArea = $("#drag-drop-area");
@@ -913,14 +923,14 @@ ul.crop_sizes {
         validateImageDimensions(file, (isValid, error) => {
           if (isValid) {
             addFile(file);
-			
+
           } else {
             alert(`File "${file.name}" ${error}`);
           }
         });
       } else {
         addFile(file); // Non-image files are added directly
-		
+
       }
     }
 
@@ -992,7 +1002,7 @@ ul.crop_sizes {
 
 	  // Add the list item to the file list
 	  fileList.append(li);
-	 
+
 	}
 
 
@@ -1002,16 +1012,16 @@ ul.crop_sizes {
   }
 });
 
-	
-	
-	
+
+
+
 	</script>
-	
-		
+
+
 <script type="text/javascript">
 
     $(document).ready(function () {
-		
+
 		$(document).on('submit', '.gallery-bulk-list-form', function() {
 			var thisForm = $(this);
 			returnType = rurera_validation_process(thisForm);
@@ -1019,16 +1029,16 @@ ul.crop_sizes {
 				return false;
 			}
 			return true;
-			
+
 		});
-		
+
 		$(document).on('click', '.create-gallery-bulk-list-btn', function () {
 			$(".gallery_bulk_list").modal('show');
 		});
-		
+
 		$(document).on('click', '.upload-image-btn', function () {
 			$(".image-upload-block").removeClass('rurera-hide');
-			$(".template-selection").addClass('rurera-hide');	
+			$(".template-selection").addClass('rurera-hide');
 			$(".image-crop-area").html('');
 			$(".preview-cropped-img").html('');
 			$(".preview-cropped-img").html('');
@@ -1038,9 +1048,9 @@ ul.crop_sizes {
 			$(".rurera-upload-area").removeClass('rurera-hide');
 			$(".upload_image_area").modal('show');
 		});
-		
-		
-		
+
+
+
 		$(document).on('change', '.ajax-category-courses', function () {
 			var category_id = $(this).val();
 			var course_id = $(this).attr('data-course_id');
@@ -1084,14 +1094,14 @@ ul.crop_sizes {
 			});
 		});
         $(".ajax-category-courses").change();
-		
+
     });
-	
+
 	$(document).on('click', '.image-preview-modal', function () {
 		$('.imagepreview-list').attr('src', $(this).attr('src'));
-		$('#imagemodal-list').modal('show');   
+		$('#imagemodal-list').modal('show');
 	});
-	
+
 </script>
 
 

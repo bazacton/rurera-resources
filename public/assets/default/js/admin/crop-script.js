@@ -6,7 +6,7 @@ $(document).ready(function(){
   var img
   $('#imagUpload').change(function(e){
     img = e.target.files[0]
-    
+
     $('#image_preview').attr('src', URL.createObjectURL(img))
     $('#image_preview,#crop').removeClass('d-none')
   })
@@ -29,7 +29,7 @@ $(document).ready(function(){
     })
     .modal()
   });
-  
+
   $(document).on('click', '.crop-btn22', function () {
 	 // Get the cropped image source URL
 	var image_id = $(this).attr('data-image_rand_id');
@@ -51,9 +51,9 @@ $(document).ready(function(){
     })
     .modal()
   });
-  
-  
-  
+
+
+
   $(document).on('click', '.crop-btn', function () {
 	 // Get the cropped image source URL
 	var image_id = $(this).attr('data-image_rand_id');
@@ -67,7 +67,7 @@ $(document).ready(function(){
         // circleCrop: true,
         zoomable: true
       }
-	  
+
 	  console.log(cropOptions);
 
 	  // Initiate cropper
@@ -75,7 +75,7 @@ $(document).ready(function(){
 	  cropper.setImage( img_link );
   });
 
-  
+
 	function getFileNameFromBlobURL(blobDataURL, blob) {
 	  // Try to extract filename from URL path
 	  let fileName = blobDataURL.split('/').pop().split('?')[0];
@@ -100,22 +100,22 @@ $(document).ready(function(){
 	  return fileName;
 	}
 
-	
+
 	$(document).on('click', '.remove-stage-image', function(){
 		$(".rurera-upload-area").removeClass('rurera-hide');
 		$(".image-crop-area").html('');
 		$(".preview-cropped-img").html('');
 		$(".crop-image-next-btn").addClass('rurera-hide');
 		$(".crop-it").removeClass('rurera-hide');
-		
+
 	});
   $(document).on('click', '.crop-it', function(){
     // Get the cropped image source URL
-	
+
 	var image_id = $(this).attr('data-image_rand_id');
     const blobDataURL = cropper.getImage('PNG'); // JPEG, PNG, ...
     if( !blobDataURL ) return
-	
+
 	var parentObj = $(".image_paths_"+image_id).closest('li');
 	$(".preview-cropped-img").html('<img src="'+blobDataURL+'">');
 	$(".image_paths_"+image_id).remove();
@@ -132,17 +132,17 @@ $(document).ready(function(){
 		hiddenInput[0].files = fileClone.files;
 		parentObj.append(hiddenInput);
 	  });
-	
+
 	$(".crop-it").addClass('rurera-hide');
 	$(".crop-image-next-btn").removeClass('rurera-hide');
-	
+
 	$(".image_paths_"+image_id).val(blobDataURL);
     // Do something ...
   })
   $('.image-crop-area').on('click', '.reset-it', function(){
     cropper.reset()
   });
-  
+
   $(document).on('click', '.crop_sizes li', function(){
 	  var crop_width = $(this).attr('data-crop_size_width');
 	  var crop_height = $(this).attr('data-crop_size_height');
@@ -155,10 +155,11 @@ $(document).ready(function(){
 	  $(".dynaCanvas").attr('height', crop_height);
 	  $(".template-item").addClass('rurera-hide');
 	  $(".template-item."+size_class).removeClass('rurera-hide');
-	  var CROP_WIDTH = parseInt(crop_width);	
+	  var CROP_WIDTH = parseInt(crop_width);
 	  var CROP_HEIGHT = parseInt(crop_height);
 	  console.log('CROP_WIDTH=='+ CROP_WIDTH);
 	  console.log('CROP_HEIGHT=='+ CROP_HEIGHT);
+      $(".crop_size").val(size_class);
   });
   $(".crop_sizes li.active").click();
 });
