@@ -5264,6 +5264,43 @@ Accuracy Score Card Style End
     border-bottom-color: var(--blue);
     color: var(--blue);
 }
+.compliance-tabs .elements-title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 15px;
+}
+.compliance-tabs .elements-title h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+.framework-controls button {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: inherit;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 15px;
+    min-width: 120px;
+}
+.framework-controls button img {
+    height: 30px;
+    width: 30px;
+}
+.framework-controls .logos-btn img {
+    height: 30px;
+    object-fit: contain;
+    width: auto;
+}
+.framework-controls {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
 /* Compliance Programes Style End */
 
 @media screen and (max-width: 767px) {
