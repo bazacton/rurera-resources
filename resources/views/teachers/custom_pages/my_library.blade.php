@@ -1437,7 +1437,7 @@
                     </div>
                 </div>
             </div> -->
-            <div class="document-content text-left">
+            <div class="document-content">
                 <div class="document-pdf">
                     <div class="elements-holder bg-white panel-border p-15 border-bottom-0">
                         <div class="questions-header">
