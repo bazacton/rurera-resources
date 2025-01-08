@@ -4923,7 +4923,7 @@ Accuracy Score Card Style End
     padding: 0 15px 15px;
     width: 66.666667%;
     margin: 0 auto;
-    text-align: left;
+    text-align: left; 
 }
 .pdf-img-box img {
     max-width: 100%;
