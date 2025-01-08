@@ -1490,39 +1490,6 @@
                                         </div>
                                     </div>
                                     </div>
-                                    <div class="rureraform-col rureraform-col-12">
-                                    <div id="rureraform-element-24192" class="quiz-group rureraform-element-24192 rureraform-element ui-sortable-handle" data-type="checkbox">
-                                        <div class="rureraform-column-label">
-                                        <label class="rureraform-label">Mark two answers</label>
-                                        </div>
-                                        <div class="rureraform-column-input">
-                                        <div class="rureraform-input">
-                                            <div class="form-box  rurera-in-row alphabet-list-style  ">
-                                            <div class="form-field rureraform-cr-container-medium ">
-                                                <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-00-2424" value="3 hours 45 minutes">
-                                                <label for="field-24192-00-2424"> 3 hours 45 minutes </label>
-                                            </div>
-                                            <div class="form-field rureraform-cr-container-medium">
-                                                <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-11-2424" value="4 hours 10 minutes">
-                                                <label for="field-24192-11-2424"> 4 hours 10 minutes </label>
-                                            </div>
-                                            <div class="form-field rureraform-cr-container-medium">
-                                                <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-22-2424" value="3 hours 30 minutes">
-                                                <label for="field-24192-22-2424"> 3 hours 30 minutes </label>
-                                            </div>
-                                            <div class="form-field rureraform-cr-container-medium active-option">
-                                                <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-33-2424" value="4 hours 35 minutes">
-                                                <label for="field-24192-33-2424"> 4 hours 35 minutes </label>
-                                            </div>
-                                            <div class="form-field rureraform-cr-container-medium">
-                                                <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-44-2424" value="4 hours">
-                                                <label for="field-24192-44-2424"> 4 hours </label>
-                                            </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    </div>
                                 </div>
                                 </div>
                             </div>
@@ -1851,32 +1818,6 @@
                                         <div class="rureraform-element-cover"></div>
                                         </div>
                                     </div>
-                                    <div class="rureraform-col rureraform-col-4">
-                                        <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
-                                        <div class="rureraform-column-input">
-                                            <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
-                                            <div class="form-box ">
-                                                <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined active-option">
-                                                    <input class="editor-field" type="radio" name="field-40008" id="field-40008-0" value="True">
-                                                    <label for="field-40008-0">
-                                                    <span class="inner-label">True</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                    <input class="editor-field" type="radio" name="field-40008" id="field-40008-1" value="False">
-                                                    <label for="field-40008-1">
-                                                    <span class="inner-label">False</span>
-                                                    </label>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            </div>
-                                            <label class="rureraform-description"></label>
-                                        </div>
-                                        <div class="rureraform-element-cover"></div>
-                                        </div>
-                                    </div>
                                     <div class="rureraform-col rureraform-col-8">
                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                         <h6>When balanced forces act on an object, it remains stationary or continues moving at the same speed.</h6>
@@ -1886,64 +1827,12 @@
                                         <div class="rureraform-element-cover"></div>
                                         </div>
                                     </div>
-                                    <div class="rureraform-col rureraform-col-4">
-                                        <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
-                                        <div class="rureraform-column-input">
-                                            <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
-                                            <div class="form-box ">
-                                                <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                    <input class="editor-field" type="radio" name="field-84793" id="field-84793-0" value="True">
-                                                    <label for="field-84793-0">
-                                                    <span class="inner-label">True</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                    <input class="editor-field" type="radio" name="field-84793" id="field-84793-1" value="False">
-                                                    <label for="field-84793-1">
-                                                    <span class="inner-label">False</span>
-                                                    </label>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            </div>
-                                            <label class="rureraform-description"></label>
-                                        </div>
-                                        <div class="rureraform-element-cover"></div>
-                                        </div>
-                                    </div>
                                     <div class="rureraform-col rureraform-col-8">
                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                         <h6>When an endothermic reaction occurs, energy is absorbed, making the surroundings cooler.</h6>
                                         </div>
                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
                                         <i>Hint:&nbsp;&nbsp;Endothermic reactions pull in heat from the surroundings.</i>
-                                        <div class="rureraform-element-cover"></div>
-                                        </div>
-                                    </div>
-                                    <div class="rureraform-col rureraform-col-4">
-                                        <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
-                                        <div class="rureraform-column-input">
-                                            <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
-                                            <div class="form-box ">
-                                                <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                    <input class="editor-field" type="radio" name="field-21459" id="field-21459-0" value="True">
-                                                    <label for="field-21459-0">
-                                                    <span class="inner-label">True</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                    <input class="editor-field" type="radio" name="field-21459" id="field-21459-1" value="False">
-                                                    <label for="field-21459-1">
-                                                    <span class="inner-label">False</span>
-                                                    </label>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            </div>
-                                            <label class="rureraform-description"></label>
-                                        </div>
                                         <div class="rureraform-element-cover"></div>
                                         </div>
                                     </div>
