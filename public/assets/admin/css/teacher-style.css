@@ -4951,7 +4951,7 @@ Accuracy Score Card Style End
     right: 0;
 }
 .document-switch-options {
-    padding: 15px 15px 0;
+    padding: 15px 0 0;
 }
 .document-switch-options .custom-switch {
     display: flex;
