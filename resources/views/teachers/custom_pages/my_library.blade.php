@@ -1446,8 +1446,13 @@
                                     <h5>Exploring Magnetic Matrials and Their Uses</h5>
                                 </div>
                             </div>
-                            <span class="instructor-lable">Instructor: Kaizer Can</span>
                         </div>
+                        <span class="instructor-lable">Instructor: Kaizer Can</span>
+                        <ul class="list-options question-list-options mb-0">      
+                            <li><span class="icon-box">-</span> 8 questions</li>
+                            <li><span class="icon-box">-</span> 7th-8th  Grade</li>
+                            <li><span class="icon-box">-</span> Science</li>
+                        </ul>
                         <div class="about-student">
                             <div class="student-roll-num">
                                 Roll No:
@@ -1467,11 +1472,6 @@
                                 <span class="date">Date: <small></small></span>
                             </div>
                         </div>
-                        <ul class="list-options question-list-options mb-0">      
-                            <li><span class="icon-box">-</span> 8 questions</li>
-                            <li><span class="icon-box">-</span> 7th-8th  Grade</li>
-                            <li><span class="icon-box">-</span> Science</li>
-                        </ul>
                     </div>
                     <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0">
                         <div class="question-layout-block">
