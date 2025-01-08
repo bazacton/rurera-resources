@@ -155,7 +155,7 @@
                                                 <div class="card-heading">
                                                     <h3>73% of Controls Pass</h3>
                                                 </div>
-                                                <div class="chart-box">
+                                                <div class="chart-box circle-chart">
                                                     <img src="/assets/default/img/circle-chart.png" alt="circle-chart">
                                                 </div>
                                             </div>
