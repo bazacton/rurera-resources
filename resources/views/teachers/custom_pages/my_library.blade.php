@@ -1489,6 +1489,50 @@
                         </div>
                     </div>
                 </div>
+                <div class="document-switch-options">
+                    <div class="form-group mb-0">
+                        <label class="custom-switch pl-0 mb-15">
+                            <em class="switch-lable">Question tags</em>
+                            <input type="checkbox" name="document-switch" id="tags" class="custom-switch-input" checked>
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </div>
+                    <div class="form-group mb-0">
+                        <label class="custom-switch pl-0 mb-15">
+                            <em class="switch-lable">Instructor name</em>
+                            <input type="checkbox" name="document-switch" id="instructor" class="custom-switch-input">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </div>
+                    <div class="form-group mb-0">
+                        <label class="custom-switch pl-0 mb-15">
+                            <em class="switch-lable">Show answer options</em>
+                            <input type="checkbox" name="document-switch" id="ans-key" class="custom-switch-input" checked>
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="document-font-sizes border-0">
+                    <span class="fonts-lable">Font size</span>
+                    <div class="font-select-options">
+                        <div class="font-select-box">
+                            <input type="radio" name="font-size" id="font-sm" checked>
+                            <label for="font-sm">S</label>
+                        </div>
+                        <div class="font-select-box">
+                            <input type="radio" name="font-size" id="font-md">
+                            <label for="font-md">M</label>
+                        </div>
+                        <div class="font-select-box">
+                            <input type="radio" name="font-size" id="font-lg">
+                            <label for="font-lg">L</label>
+                        </div>
+                        <div class="font-select-box">
+                            <input type="radio" name="font-size" id="font-xl">
+                            <label for="font-xl">XL</label>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
       </div>
