@@ -5026,6 +5026,19 @@ Accuracy Score Card Style End
     border-color: var(--blue);
     color: var(--white);
 }
+.document-content .alphabet-list-style .form-field input[type="checkbox"] ~ label {
+    padding-left: 30px;
+}
+.document-content .form-field input[type="checkbox"] ~ label {
+    min-height: auto;
+}
+.document-content .rurera-in-row {
+    gap: 18px 10px;
+}
+.document-content .form-field label, 
+.document-content .api-questions-form .option-group {
+    padding: 0 12px;
+}
 /* Document Viewer Page Style End */
 
 
