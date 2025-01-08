@@ -5051,16 +5051,16 @@ Accuracy Score Card Style End
 }
 .instructor-lable {
     color: #333;
+    font-weight: 500;
     display: block;
     line-height: normal;
-    padding: 0 0 10px;
-    font-weight: 500;
 }
+.document-content .list-options {padding: 15px 0 0;}
 .about-student {
-    margin: 0 0 10px;
+    margin: 20px 0 15px;
 }
 .student-roll-num {
-    margin: 0 0 10px;
+    margin: 0 0 18px;
     color: #333;
     display: flex;
     align-items: center;
