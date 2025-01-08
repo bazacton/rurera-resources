@@ -5312,14 +5312,14 @@ Accuracy Score Card Style End
     border: 2px solid rgba(0,0,0,0.1);
     border-radius: 8px;
 }
-.framework-card .card-heading {
+.compliance-tabs .card-heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 0 10px;
 }
-.framework-card .card-heading h3 {
+.compliance-tabs .card-heading h3 {
     font-size: 1rem;
     color: #333;
     margin: 0;
