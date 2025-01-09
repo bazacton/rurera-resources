@@ -326,7 +326,7 @@ ul.crop_sizes {
 
                                 @foreach($GalleryBulkLists as $GalleryBulkListObj)
 								@php $questions_ids = isset( $GalleryBulkListObj->questions_ids )? json_decode($GalleryBulkListObj->questions_ids) : array();
-                                $galleryImageObj = $GalleryBulkListObj->GalleryBulkListImages->first();
+                                $galleryImageObj = $GalleryBulkListObj->GalleryBulkListImages->last();
                                 $image_reference_url = isset($galleryImageObj->image_reference_url)? $galleryImageObj->image_reference_url : '';
                                 @endphp
 								@php $image_recomendations = isset( $GalleryBulkListObj->image_recomendations )? json_decode($GalleryBulkListObj->image_recomendations, true) : array();
