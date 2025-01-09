@@ -63,9 +63,9 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
             thisObj.closest('.spells-quiz-from').find('.question-submit-btn').click();
         }
     }
-	
+
 	var thisObj = $(this);
-	
+
 	var thisBlock = $(".rurera-question-block.active");
     var thisForm = thisBlock.find('form');
 
@@ -76,7 +76,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
     }
     question_submit_process = true;
     returnType = rurera_validation_process(thisForm, 'quiz_page');
-	
+
 
     if( rurera_is_field(bypass_validation) && bypass_validation == 'yes' ){
         returnType = true;
@@ -91,16 +91,16 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
         question_submit_process = false;
         return false;
     }
-	
-	
+
+
 
     //question_submit_process = false;
     if(rurera_is_field(Questioninterval)) {
         clearInterval(Questioninterval);
     }
 
-    //rurera_loader($(this), 'div');
-	question_submit_process = false;
+    rurera_loader($(this), 'div');
+	//question_submit_process = false;
 
     var quiz_type = $(".question-area-block").attr('data-type');
     if (!rurera_is_field(quiz_type)) {
@@ -113,15 +113,15 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
     var appricate_word = appricate_words_array[Math.floor(Math.random() * appricate_words_array.length)];
     var appricate_colors_array = ['red', 'orange', 'blue', 'green'];
     var appricate_color = appricate_colors_array[Math.floor(Math.random() * appricate_colors_array.length)];
-   
-	
+
+
     var attempt_id = thisBlock.attr('data-qattempt');
     var quiz_result_id = thisBlock.attr('data-quiz_result_id');
     var time_consumed = thisBlock.attr('data-elapsed');
 
 
     var total_elapsed_time = $(".range-price").attr('data-time_elapsed');
-	
+
     var start_time = thisBlock.attr('data-start_time');
     var time_consumed_bk = parseInt(total_elapsed_time) - parseInt(start_time);
 
@@ -182,7 +182,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 			if (typeof question_data[0][identifier] === "undefined") {
 				question_data[0][identifier] = {};
 			}
-            //question_data[0][identifier] = {};	
+            //question_data[0][identifier] = {};
             question_data[0][identifier][field_identifier] = field_value;
 
         } else {
@@ -190,7 +190,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
         }
 
     });
-	
+
 
     /*$(this).closest('form').find('.insert-into-sentense-holder').each(function() {
             var user_input = $(this).find('p').html();
@@ -234,9 +234,9 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 			}else{
 				correct_questions = parseInt(correct_questions)+1;
 			}
-            
-			
-			
+
+
+
 			if (typeof afterQuestionValidation === "function") {
 				// myFunction exists and is a function
 				return_data.attempted_questions = attempted_questions;
@@ -245,9 +245,9 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 
 				afterQuestionValidation(return_data, thisForm, question_id, thisBlock);
 			}
-			
-			
-			
+
+
+
 
             if(return_data.incorrect_flag == true ){
                 correctInRow = 0;
@@ -298,7 +298,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
                 $(".lms-quiz-section").attr('data-total_points', return_data.total_points);
             }
             var quiz_type = return_data.quiz_type;
-            
+
             if( return_data.is_complete == true) {
                 //$(".question-area-block").html('Thank you for attempting!');
 
@@ -325,15 +325,15 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 
             if (return_data.incorrect_flag == true && return_data.show_fail_message == true) {
                 var question_response_layout = return_data.question_response_layout;
-				
+
 				var correct_answers_html2 = '';
 				var correct_answers_html = '';
                 var user_answers_html = '';
-				
+
 				$.each(return_data.correct_answers_array, function (correct_index, correct_value) {
                     correct_answers_html += '<li>' + correct_value + '</li>';
                 });
-				
+
                 $.each(return_data.incorrect_array, function (field_id, value) {
                     thisForm.find('#field-' + field_id).addClass('validate-error');
                     $.each(value.correct, function (correct_index, correct_value) {
@@ -395,8 +395,8 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
                     }
                 } else {
                     //$(".question-layout-block").html(return_data.question_response_layout);
-					
-					
+
+
 
                     if (quiz_type == 'vocabulary') {
                         if (rurera_is_field(return_data.question_correct_answere)) {
@@ -433,7 +433,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
 
                         }else {
                             const interval = setInterval(() => {
-                                
+
                                 $('#next-btn')[0].click();
                                 clearInterval(interval);
                             }, 3000);
@@ -570,7 +570,7 @@ $("body").off("click", ".question-submit-btn").on("click", ".question-submit-btn
                             },
                             data: {"attempt_id": qattempt_id, "quiz_user_data": quiz_user_data},
                             success: function (return_data) {
-                                
+
                                 $(".quiz-complete").css({display: "block"}).show(10).animate({opacity: 1});
                                 $(".quiz-complete").find(".question-layout").html(return_data);
                                 $(".quiz-complete").children().unbind('click');
@@ -807,7 +807,7 @@ function init_question_functions() {
     makeDropText($("p.given span.w"));
 
     if( $(".droppable_area").length > 0) {
-    
+
     $(".droppable_area").droppable({
         drop: function (event, ui) {
             // Clone the dropped element
@@ -844,7 +844,7 @@ function init_question_functions() {
             }
         });
     });
-    
+
     $(document).on('click', '.question-number', function (e) {
         $(this).closest('.question-layout-block').find('.question-dev-details').toggleClass('hide');
     })
@@ -877,10 +877,10 @@ function init_question_functions() {
         //$(".quiz-status-bar").addClass('rurera-hide');
         $('#next-btn')[0].click();
     });
-	
-	
-	
-    
+
+
+
+
 
     $(document).on('keyup', 'body', function (evt) {
         if( $(".question-area").hasClass('spell-question-area')){
@@ -913,8 +913,8 @@ function init_question_functions() {
     });
 
     var currentRequest = null;
-	
-	
+
+
 	$("body").on('click', '.questions-nav-controls .next-btn', function (e) {
 		if( $('.rurera-question-block.active').next('.rurera-question-block').length > 0){
 			$(".question-area-block").find('.show-notifications').html('');
@@ -925,7 +925,7 @@ function init_question_functions() {
 			rurera_question_timer('.rurera-question-block.active', 'seconds');
 		}
 	});
-	
+
 	$("body").on('click', '.questions-nav-controls .prev-btn', function (e) {
 		if( $('.rurera-question-block.active').prev('.rurera-question-block').length > 0){
 			$(".question-area-block").find('.show-notifications').html('');
@@ -934,7 +934,7 @@ function init_question_functions() {
 			$('.question-submit-btn').removeClass('rurera-hide');
 		}
 	});
-	
+
     $("body").on('click', '.quiz-pagination ul li, .questions-nav-controls .prev-btn1, .questions-nav-controls .next-btn1', function (e) {
 
         if ($(this).hasClass('disable-btn')) {
@@ -976,8 +976,8 @@ function init_question_functions() {
         //var question_layout = JSON.parse(question_layout);
         //$(".question-area-block").html(question_layout);
         var quizQuestionID = $(".question-area-block").find('.question-fields').attr('data-question_id');
-		
-		
+
+
 
         var total_points = $(".lms-quiz-section").attr('data-total_points');
         if( rurera_is_field(total_points) == true && total_points != ''){
@@ -986,7 +986,7 @@ function init_question_functions() {
             $(".spells-quiz-info .total-points span").html(total_points_data+' ');
 			$(".lms-quiz-section").attr('data-total_points', total_points);
         }
-		
+
 		var play_time = $(".lms-quiz-section").attr('data-play_time');
         if( rurera_is_field(play_time) == true && play_time != ''){
 			play_time_data = (play_time != '0')? getTime(play_time) : '--';
@@ -1073,13 +1073,13 @@ function init_question_functions() {
             $('#sound-icon-'+quizQuestionID).removeClass('pause');
             $('#sound-icon-'+quizQuestionID).click();
         }
-		
+
 		if (typeof onQuestionLoad === "function") {
 			onQuestionLoad();
 		}
-		
-		
-		
+
+
+
 
         var total_questions = $(".question-area").attr('data-total_questions');
         if($(".quiz-questions-bar").length > 0){
@@ -1089,7 +1089,7 @@ function init_question_functions() {
             $(".quiz-questions-bar .bar-fill1").css('width', total_percentage+'%');
         }
 
-        
+
 
         var actual_question_id = $(".question-fields").attr('data-question_id');
         //Temporary Commented
@@ -1099,7 +1099,7 @@ function init_question_functions() {
             url: '/question_attempt/mark_as_active',
             async: true,
             beforeSend: function () {
-                
+
                 if (currentRequest != null) {
                     currentRequest.abort();
                 }
@@ -1139,9 +1139,9 @@ function init_question_functions() {
         });
     });
     var active_question_id = $(".question-area-block").attr('data-active_question_id');
-    
+
     if( rurera_is_field(active_question_id)) {
-        
+
         $('.active-question-btn[data-question_id="' + active_question_id + '"]').click();
     }
 
@@ -1221,7 +1221,7 @@ function init_question_functions() {
             }
         });
     });
-	
+
 	$(document).on('click', '.exit_quiz_final', function (e) {
         var qattempt_id = $(".question-area .question-step").attr('data-qattempt');
         var quiz_result_id = $(".question-area .question-step").attr('data-quiz_result_id');
@@ -1266,7 +1266,7 @@ function init_question_functions() {
 
         timerInterval = setInterval(function () {
             timeLimit--;
-            
+
             timeLeftElement.text(timeLimit);
             if (timeLimit <= 0) {
                 clearInterval(timerInterval);
@@ -1282,7 +1282,7 @@ function init_question_functions() {
 
     function stopRecording() {
         mediaRecorder.stop();
-        
+
         clearInterval(timerInterval);
         startRecordButton.prop('disabled', false);
         stopRecordButton.prop('disabled', true);
@@ -1359,11 +1359,11 @@ function makeDropText(obj) {
 function chunkWords(p) {
     var into_type = $(".insert-into-sentense-holder").attr('data-into_type');
     var words = p.split("");
-    
+
     if (into_type == 'words') {
         var words = p.split(" ");
     }
-    
+
     words[0] = textWrapper(words[0], [0, 1]);
     var i;
     for (i = 1; i < words.length; i++) {
@@ -1637,7 +1637,7 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
         index_no = rurera_is_field(index_no) ? index_no : 0;
         error_objects[index_no] = new Array();
         var visible_id = thisObj.data('visible');
-		
+
 		thisObj.next('.chosen-container').removeClass('frontend-field-error');
 		thisObj.next('.rurera-req-field').next('.pbwp-box').removeClass('frontend-field-error');
 		thisObj.removeClass('frontend-field-error');
@@ -1652,11 +1652,11 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 			if($('[for="'+this_id+'"]').length > 0){
 				$('[for="'+this_id+'"]').removeClass('frontend-field-error-label');
 			}
-			
-			
+
+
 			//checkbox_fields[index_no] = false;
-			
-			
+
+
 			if (rurera_is_field(visible_id) == true) {
 				is_visible = jQuery("#" + visible_id).is(':hidden');
 				if (jQuery("#" + visible_id).css('display') !== 'none') {
@@ -1692,7 +1692,7 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 				var field_name = thisObj.attr('name');
 				var is_field_checked = jQuery('input[name="' + field_name + '"]').is(':checked');
 				if (is_field_checked == false) {
-					radio_fields[index_no] = thisObj;				
+					radio_fields[index_no] = thisObj;
 					error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisObj, alert_messages, '', 'radio');
 					error_objects[index_no]['error_obj'] = thisObj;
 				}
@@ -1705,15 +1705,15 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 				var selectedCount = jQuery('input[name="' + field_name + '"]:checked').length;
 				var is_field_checked = jQuery('input[name="' + field_name + '"]').is(':checked');
 				if (is_field_checked == false || selectedCount < minimum_selection) {
-					checkbox_fields[index_no] = thisObj;				
+					checkbox_fields[index_no] = thisObj;
 					error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisObj, alert_messages, '', 'checkbox', minimum_selection);
 					error_objects[index_no]['error_obj'] = thisObj;
-					
+
 				}
 				//has_empty[index_no] = true;
 				is_visible = false;
 			}
-			
+
 			if (has_empty[index_no] == false) {
 				thisObj.next('.chosen-container').removeClass('frontend-field-error');
 				thisObj.next('.rurera-req-field').next('.pbwp-box').removeClass('frontend-field-error');
@@ -1765,14 +1765,14 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
                 $(error_msg).insertAfter(error_obj);
             });
         }
-		
+
 		if( error_dispaly_type == 'quiz_page') {
 			$(".show-notifications").html('');
             $(".rurera-error-msg").remove();
-			
-			
+
+
 			var already_printed_msgs = new Array();
-		
+
 			var error_msg_html = new Array();
             $.each(error_objects, function (key, errorObj) {
                 var error_msg = errorObj.error_msg;
@@ -1785,14 +1785,14 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 					error_msg_html += '<span class="question-status-wrong">' + error_msg + '</span>';
 				}
             });
-			
+
 			if(error_msg_html != ''){
 				$('.show-notifications').append('<div class="rurera-validation-error">'+error_msg_html+'</div>');
 			}
         }
-		
-		
-		
+
+
+
 
         if( error_dispaly_type == 'growl') {
             var error_message = jQuery.growl.error({
@@ -1805,7 +1805,7 @@ function rurera_validation_process(form_name, error_dispaly_type = '') {
 }
 
 function rurera_is_valid_field(field_value) {
-	
+
     if (field_value != 'undefined' && field_value != undefined) {
         return true;
     } else {
@@ -1832,8 +1832,8 @@ function rurera_insert_error_message(thisObj, alert_messages, error_msg, field_t
 		return;
 	}
 	var this_id = thisObj.attr('id');
-	
-	
+
+
 	if(thisObj.closest('.input-holder').length > 0){
 		thisObj.closest('.input-holder').addClass('frontend-field-error-input');
 	}
@@ -1900,7 +1900,7 @@ function rurera_check_field_type(thisObj, alert_messages, has_empty, error_objec
         if (!pattern.test(thisObj.val())) {
             var array_length = alert_messages.length;
 			alert_messages[array_length] = rurera_insert_error_message(thisObj, alert_messages, ' is not valid Email!');
-			
+
 			error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisObj, alert_messages, ' is not valid Email!');
 			error_objects[index_no]['error_obj'] = thisObj;
 			has_empty = true;
@@ -1914,7 +1914,7 @@ function rurera_check_field_type(thisObj, alert_messages, has_empty, error_objec
         if (!pattern.test(thisObj.val())) {
 			var array_length = alert_messages.length;
 			alert_messages[array_length] = rurera_insert_error_message(thisObj, alert_messages, ' is not valid Number!');
-			
+
 			error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisObj, alert_messages, ' is not valid Number!');
 			error_objects[index_no]['error_obj'] = thisObj;
 			has_empty = true;
@@ -1967,7 +1967,7 @@ function rurera_check_field_type(thisObj, alert_messages, has_empty, error_objec
         if (thisObj.val().length < min_val) {
             array_length = alert_messages.length;
             alert_messages[array_length] = rurera_insert_error_message(thisObj, alert_messages, ' requires ' + min_val + ' minimum characters');
-			
+
 			error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisObj, alert_messages, ' requires minimum ' + min_val + ' characters');
             error_objects[index_no]['error_obj'] = thisObj;
             has_empty = true;
@@ -1977,7 +1977,7 @@ function rurera_check_field_type(thisObj, alert_messages, has_empty, error_objec
 		if (thisObj.val().indexOf(' ') !== -1) {
 			var array_length = alert_messages.length;
 			alert_messages[array_length] = rurera_insert_error_message(thisObj, alert_messages, ' should not contain spaces');
-			
+
 			error_objects[index_no]['error_msg'] = rurera_insert_error_message(thisObj, alert_messages, ' should not contain spaces');
 			error_objects[index_no]['error_obj'] = thisObj;
 			has_empty = true;
@@ -1999,11 +1999,11 @@ $(document).on('click', '.confirm-delete', function (e) {
 	e.preventDefault();
 	var confirm_type = $(this).attr('data-confirm-type');
 	var confirm_action = $(this).attr('data-confirm-action');
-	
+
 	if( confirm_type == 'link'){
 		$(".rurera-delete-btn").attr('href', confirm_action);
 	}
-	$(".rurera-confirm-delete").modal('show');	
+	$(".rurera-confirm-delete").modal('show');
 });
 
 $(document).on('change', '.rureraform-checkbox-medium', function (e) {
@@ -2021,7 +2021,7 @@ $(document).on('change', '.rureraform-checkbox-medium', function (e) {
 		$("input[name='" + this_field_name + "']:checked").first().removeClass('checked-tt');
 		$("input[name='" + this_field_name + "']:checked").first().prop('checked', false);
 	}
-	
+
 });
 
 
@@ -2046,3 +2046,7 @@ function rurera_question_timer(timer_class, timer_interval_label) {
     }, timer_interval); // Use the passed interval
 }
 
+$(document).on('click', '.finish-next-step', function (e) {
+    $(this).closest('.finish-steps').addClass('rurera-hide');
+    $(this).closest('.finish-steps').nextAll(".finish-steps:first").removeClass('rurera-hide');
+});
