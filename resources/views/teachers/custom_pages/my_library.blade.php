@@ -1439,7 +1439,7 @@
             </div> -->
             <div class="document-content">
                 <div class="document-pdf" id="pdf-fonts">
-                    <div class="site-logo mb-25">
+                    <div class="site-logo mb-15">
                         <img src="/store/1/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="150" height="38" itemprop="image" loading="eager">
                     </div>
                     <div class="elements-holder bg-white panel-border p-15 border-bottom-0" style="background-color: #fafafa !important;">
