@@ -2124,6 +2124,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="btn-holder px-15 text-center">
+                    <button type="button">Print / Download</button>
+                </div>
             </div>
         </div>
       </div>
