@@ -3522,6 +3522,7 @@ span.field-separated span:after {
     padding: 5px;
     height: 40px;
     color: #333;
+    text-transform: uppercase;
 }
 .examiner-section h6 {
     text-transform: uppercase;
