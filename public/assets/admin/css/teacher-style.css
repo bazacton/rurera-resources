@@ -3493,6 +3493,9 @@ span.field-separated span:after {
 .instructions ol {
     padding-left: 20px;
 }
+.instructions ol li {
+    list-style: auto;
+}
 .examiner-section {
     border: 1px solid #000;
     padding: 10px;
