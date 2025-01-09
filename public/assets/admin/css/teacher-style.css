@@ -3434,7 +3434,7 @@ span.field-separated span:after {
 }
 .document-pdf .questions-header-inner h5,
 .document-pdf .rureraform-element h4 {
-    font-size: medium;
+    font-size: inherit;
 }
 .questions-header-inner h5 small {
     font-weight: 500;
@@ -3489,12 +3489,14 @@ span.field-separated span:after {
 }
 .instructions h5 {
     color: #333;
+    font-size: inherit;
 }
 .examiner-section h5 {
     text-decoration: underline;
     text-transform: uppercase;
     color: #333;
     margin: 0 0 20px;
+    font-size: inherit;
 }
 .instructions ol {
     padding-left: 20px;
@@ -3527,6 +3529,7 @@ span.field-separated span:after {
     text-decoration: underline;
     padding: 0 0 0 20px;
     margin: 0 0 15px;
+    font-size: inherit;
 }
 /* View-Explanation Style Start */
 .view-explanation button {
