@@ -79,6 +79,7 @@ var CROP_HEIGHT = parseInt($(".crop_sizes li.active").attr('data-crop_size_heigh
 								</div>
 							</div>
 					</div><div class="remove-stage-image">Remove	</div>`
+
 	}
 
 	function Cropper( e, adapted, callback ){
@@ -247,8 +248,8 @@ var CROP_HEIGHT = parseInt($(".crop_sizes li.active").attr('data-crop_size_heigh
 			minHeight: 0,
 			device: 'all', // lg-md, sm-xs
 			circleCrop: false, // true => circle, square ( by default )
-			zoomable: true,
-			zoomMax: 2,
+			zoomable: false,
+			zoomMax: 0,
 			background: 'transparent', // transparent, custom
 			inBoundGrid: true,
 			CROP_WIDTH_VAR: 300,
@@ -262,7 +263,6 @@ var CROP_HEIGHT = parseInt($(".crop_sizes li.active").attr('data-crop_size_heigh
 		/**---------------------------------------- Create and init the cropper DOM components ----------------------------------------**/
 
 		$(this).html( CreateCropBox( OPTIONS ) );
-
 		CROP_WIDTH = options.CROP_WIDTH_VAR;
 		CROP_HEIGHT = options.CROP_HEIGHT_VAR;
 		let
@@ -303,7 +303,7 @@ var CROP_HEIGHT = parseInt($(".crop_sizes li.active").attr('data-crop_size_heigh
 			_IMG_.src = getImageSource( OPTIONS.image )
 
 			$_CONTAINER.addClass( OPTIONS.background )
-			$_CONTAINER.find('.R-error').remove()
+			$_CONTAINER.find('.R-error').remove();
 		}
 
 		/**
@@ -437,7 +437,8 @@ var CROP_HEIGHT = parseInt($(".crop_sizes li.active").attr('data-crop_size_heigh
 						// zooming container image
 						if( !OPTIONS.zoomable ) return
 
-						zoom == 1 ? zoomUp = true : null
+                        return false;
+						zoom == 0 ? zoomUp = true : null
 						zoom > ( OPTIONS.zoomMax - 0.5 ) ? zoomUp = false : null
 
 						MOVING.ox = Math.floor( e.pageX - $_COVER.offset().left )
@@ -491,6 +492,8 @@ var CROP_HEIGHT = parseInt($(".crop_sizes li.active").attr('data-crop_size_heigh
 					// DEPRECATED: Trigger event when the resizing is declare as done
 					$( OPTIONS.btnDoneAttr ).click( function(){ typeof callback == 'function' && callback( cropCanvas.toDataURL('image/jpeg') ) } )
 
+                    console.log('livecalleeeee111eeeed111111111111');
+                    $(".crop_sizes li.active").click();
 					/**---------------------------------------- pilote functions ----------------------------------------**/
 
 					function moving( e, MOVING, touch ){

@@ -160,8 +160,11 @@ $(document).ready(function(){
 	  console.log('CROP_WIDTH=='+ CROP_WIDTH);
 	  console.log('CROP_HEIGHT=='+ CROP_HEIGHT);
       $(".crop_size").val(size_class);
+      console.log('livecalleeeeeeeeed');
+      $(".R-cropper").trigger("touchstart");
   });
   $(".crop_sizes li.active").click();
+    $(".R-cropper").trigger("touchstart");
 });
 
 function init_crop_function(image_id, file_name, img_link){
@@ -180,5 +183,8 @@ function init_crop_function(image_id, file_name, img_link){
 	  // Initiate cropper
 	  cropper = $('.image-crop-area').cropimage( cropOptions );
 	  cropper.setImage( img_link );
+    $(".R-cropper").trigger("touchstart");
+    $(".crop_sizes li.active").click();
+    console.log('initizlizeeeeeeeeee--------------');
 	  $(".rurera-upload-area").addClass('rurera-hide');
 }
