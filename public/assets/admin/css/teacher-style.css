@@ -5123,7 +5123,7 @@ Accuracy Score Card Style End
 }
 .student-other-info small {
     display: inline-block;
-    min-width: 100px;
+    min-width: 125px;
     height: 1px;
     background-color: #ddd;
 }
