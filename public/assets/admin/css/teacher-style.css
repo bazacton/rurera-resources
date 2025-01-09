@@ -5011,6 +5011,10 @@ Accuracy Score Card Style End
     border-bottom: 1px solid #ddd;
     padding: 0 15px 15px;
 }
+.document-switch-options .custom-switch img {
+    height: 18px;
+    width: 18px;
+}
 .document-switch-options .switch-lable {
     font-style: normal;
     color: #333;
