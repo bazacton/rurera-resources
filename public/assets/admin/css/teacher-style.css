@@ -5610,8 +5610,8 @@ button.print-download-btn {
     }
     .document-right-sidebar {
         height: auto;
-        z-index: 9999;
         padding-top: 15px;
+        position: relative;
     }
     .document-modal:has(.document-right-sidebar.active) .document-content {
         padding-right: 15px;
@@ -5621,5 +5621,8 @@ button.print-download-btn {
     }
     .rureraform-search-field .input-field {
         width: 100%;
+    }
+    .document-content {
+        padding: 15px 0 0;
     }
 }
