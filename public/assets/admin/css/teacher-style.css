@@ -3487,8 +3487,10 @@ span.field-separated span:after {
 .instructions {
     margin-bottom: 30px;
 }
-.instructions h5 {
+.examiner-section h5 {
     text-decoration: underline;
+    text-transform: uppercase;
+    color: #333;
 }
 .instructions ol {
     padding-left: 20px;
