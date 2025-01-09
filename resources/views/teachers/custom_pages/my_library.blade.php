@@ -2096,14 +2096,14 @@
                         <label class="custom-switch mb-15">
                             <em class="switch-lable">Shuffle questions</em>
                             <input type="checkbox" name="document-switch" id="shuffle-q" class="custom-switch-input">
-                            <span class="custom-switch-indicator"></span>
+                            <img src="/assets/default/svgs/shuffle.svg" alt="shuffle">
                         </label>
                     </div>
                     <div class="form-group mb-0">
                         <label class="custom-switch mb-15">
                             <em class="switch-lable">Answer keys</em>
                             <input type="checkbox" name="document-switch" id="ans-key" class="custom-switch-input" checked>
-                            <span class="custom-switch-indicator"></span>
+                            <img src="/assets/default/svgs/shuffle.svg" alt="shuffle">
                         </label>
                     </div>
                 </div>
@@ -2133,21 +2133,21 @@
                         <label class="custom-switch mb-15">
                             <em class="switch-lable">Question tags</em>
                             <input type="checkbox" name="document-switch" id="tags" class="custom-switch-input" checked>
-                            <span class="custom-switch-indicator"></span>
+                            <img src="/assets/default/svgs/shuffle.svg" alt="shuffle">
                         </label>
                     </div>
                     <div class="form-group mb-0">
                         <label class="custom-switch mb-15">
                             <em class="switch-lable">Instructor name</em>
                             <input type="checkbox" name="document-switch" id="instructor" class="custom-switch-input">
-                            <span class="custom-switch-indicator"></span>
+                            <img src="/assets/default/svgs/shuffle.svg" alt="shuffle">
                         </label>
                     </div>
                     <div class="form-group mb-0">
                         <label class="custom-switch mb-15">
                             <em class="switch-lable">Show answer options</em>
                             <input type="checkbox" name="document-switch" id="ans-key" class="custom-switch-input" checked>
-                            <span class="custom-switch-indicator"></span>
+                            <img src="/assets/default/svgs/shuffle.svg" alt="shuffle">
                         </label>
                     </div>
                 </div>
