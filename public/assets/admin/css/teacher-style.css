@@ -3432,6 +3432,10 @@ span.field-separated span:after {
     gap: 5px;
     margin-bottom: 0;
 }
+.document-pdf .questions-header-inner h5,
+.document-pdf .questions-header-inner h4 {
+    font-size: unset;
+}
 .questions-header-inner h5 small {
     font-weight: 500;
     font-size: 14px;
