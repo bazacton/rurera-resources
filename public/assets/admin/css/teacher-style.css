@@ -3516,8 +3516,6 @@ span.field-separated span:after {
     text-transform: uppercase;
 }
 .examiner-section h6 {
-    text-transform: uppercase;
-    text-decoration: underline;
     padding: 0 0 0 20px;
     margin: 0 0 15px;
     font-size: inherit;
