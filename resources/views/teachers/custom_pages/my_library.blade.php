@@ -1483,7 +1483,6 @@
                                         <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
                                             <div class="question-top-info">
                                                 <div class="question-count">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt=""></span>
                                                     <span class="question-count-lable">Question 1 of 20</span>
                                                 </div>
                                                 <div class="question-info">
@@ -1846,7 +1845,6 @@
                                         <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
                                             <div class="question-top-info">
                                                 <div class="question-count">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt=""></span>
                                                     <span class="question-count-lable">Question 1 of 20</span>
                                                 </div>
                                                 <div class="question-info">
