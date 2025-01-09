@@ -2168,31 +2168,4 @@ $(document).ready(function() {
         });
     });
 </script>
-<script>
-    const settingsBtn = document.querySelector('.settings-btn');
-    const closeBtn = document.querySelector('.close-btn');
-    const rightSidebar = document.querySelector('.document-right-sidebar');
-
-    function openSidebar() {
-    rightSidebar.classList.add('active');
-    }
-
-    function closeSidebar() {
-    rightSidebar.classList.remove('active');
-    }
-
-    settingsBtn.addEventListener('click', openSidebar);
-    closeBtn.addEventListener('click', closeSidebar);
-
-    document.addEventListener('click', (event) => {
-    if (
-        !rightSidebar.contains(event.target) &&
-        event.target !== settingsBtn &&
-        event.target !== closeBtn
-    ) {
-        closeSidebar();
-    }
-    });
-
-</script>
 @endpush
