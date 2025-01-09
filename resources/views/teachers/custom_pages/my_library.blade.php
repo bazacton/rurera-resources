@@ -1473,7 +1473,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="instructions bg-white panel-border p-25">
+                    <div class="instructions bg-white panel-border p-25 border-bottom-0">
                         <h5>Instructions to candidates</h5>
                         <ol>
                             <li>Write your name, admission number, and class in the spaces provided.</li>
@@ -1486,7 +1486,7 @@
                             <li>Silent or non-programmable calculators <strong>SHOULD NOT</strong> be used.</li>
                         </ol>
                     </div>
-                    <div class="examiner-section bg-white panel-border p-25">
+                    <div class="examiner-section bg-white panel-border p-25 border-bottom-0">
                         <h5>FOR EXAMINER'S USE ONLY</h5>
                         <h6>Section 1</h6>
                         <table>
@@ -2020,7 +2020,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="mb-15 bg-white panel-border p-25">
+                    <div class="mb-15 bg-white panel-border p-25 border-bottom-0">
                         <div class="question-layout-block">
                             <form class="question-fields" action="javascript:;" data-question_id="10180">
                                 <div class="left-content has-bg">
