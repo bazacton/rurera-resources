@@ -11,11 +11,11 @@
 		padding: 8px;
 	}
 
-	#nav-profile-tab img {
+	#nav-profile img {
 		border-radius: 0 96px;
     	background: linear-gradient(0.06deg, #fafafa 0%, #f6f6f6 29.62%, #eaeaea 58.47%, #d7d7d7 86.92%, #cccccc 99.22%);
 	}
-	#nav-profile-tab .image-field{
+	#nav-profile .image-field{
 		display: inline-block;
 		padding: 8px;
 		border-radius: 0 100px;
@@ -23,11 +23,11 @@
 	}
 
 
-	#nav-contact-tab img {
+	#nav-contact img {
 		border-radius: 168px 0;
 		background: linear-gradient(0.06deg, #fafafa 0%, #f6f6f6 29.62%, #eaeaea 58.47%, #d7d7d7 86.92%, #cccccc 99.22%);
 	}
-	#nav-contact-tab .image-field{
+	#nav-contact .image-field{
 		display: inline-block;
 		padding: 8px;
 		border-radius: 150px 0;
@@ -35,11 +35,11 @@
 	}
 
 
-	#nav-contact2-tab img {
+	#nav-contact2 img {
 		border-radius: 140px 0;
 		background: linear-gradient(0.06deg, #fafafa 0%, #f6f6f6 29.62%, #eaeaea 58.47%, #d7d7d7 86.92%, #cccccc 99.22%);
 	}
-	#nav-contact2-tab .image-field{
+	#nav-contact2 .image-field{
 		display: inline-block;
 		padding: 8px;
 		border-radius: 150px 0;
