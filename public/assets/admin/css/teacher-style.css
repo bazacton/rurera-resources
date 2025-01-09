@@ -5098,6 +5098,15 @@ Accuracy Score Card Style End
     background-color: inherit;
     border: 0;
 }
+.lms-radio-select input[type=radio] ~ label:has(.label-box) {
+    padding-right: 0;
+}
+.document-content .form-field label .label-box {
+    border: 1px solid #ddd;
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+}
 .instructor-lable {
     color: #333;
     font-weight: 500;
