@@ -2016,6 +2016,24 @@
                             </form>
                         </div>
                     </div>
+                    <div class="bg-white panel-border rounded-sm p-25">
+                        <div class="answer-keys">
+                            <h5>Answer Keys</h5>
+                            <ul>
+                                <li>1. <span>n/a</span></li>
+                                <li>2. <span>b&#41; Issac Newton</span></li>
+                                <li>3. <span>n/a</span></li>
+                                <li>4. <span>imagination and creativity</span></li>
+                                <li>5. <span>imagination and creativity</span></li>
+                                <li>6. <span>a&#41;</span></li>
+                                <li>7. <span>n/a</span></li>
+                                <li>8. <span>n/a</span></li>
+                                <li>9. <span>e&#41; washing</span></li>
+                                <li>10. <span>d&#41; 1(correct)</span></li>
+                                <li>11. <span>b&#41;2</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="document-right-sidebar">
