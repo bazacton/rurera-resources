@@ -1490,7 +1490,7 @@
                         </ol>
                     </div>
                     <div class="examiner-section bg-white panel-border p-25 border-bottom-0">
-                        <h5>FOR EXAMINER'S USE ONLY</h5>
+                        <h5>For Examiner's Use Only</h5>
                         <table>
                             <thead>
                                 <tr>
