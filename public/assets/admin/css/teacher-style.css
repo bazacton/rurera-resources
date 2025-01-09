@@ -5627,4 +5627,7 @@ button.print-download-btn {
     .document-content {
         padding: 25px 0 0;
     }
+    .student-other-info span {
+        width: 47%;
+    }
 }
