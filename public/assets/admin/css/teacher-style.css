@@ -4812,7 +4812,7 @@ Accuracy Score Card Style End
 /* Document Viewer Page Style Start */
 .admin_teacher_role .modal.document-modal {
     scrollbar-gutter: initial;
-    background-color: #f3f3f3;
+    background-color: #fff;
 }
 .document-modal .modal-dialog {
     max-width: 100%;
@@ -4933,9 +4933,6 @@ Accuracy Score Card Style End
     font-size: 16px;
     display: block;
     line-height: normal;
-}
-.document-viewer {
-    background-color: #f3f3f3;
 }
 .document-content {
     width: 100%;
