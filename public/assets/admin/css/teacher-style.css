@@ -5106,6 +5106,14 @@ Accuracy Score Card Style End
     max-width: 33%;
     flex: 0 0 33%;
 }
+button.print-download-btn {
+    background-color: var(--blue);
+    border: 0;
+    color: var(--white);
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+}
 /* Document Viewer Page Style End */
 
 
