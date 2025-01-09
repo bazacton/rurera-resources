@@ -5150,6 +5150,10 @@ Accuracy Score Card Style End
     position: absolute;
     bottom: 5px;
 }
+.document-content .question-count .question-count-lable {
+    margin: 0;
+    border-bottom: 1px solid #333;
+}
 .answer-keys h5 {
     font-size: inherit;
 }
