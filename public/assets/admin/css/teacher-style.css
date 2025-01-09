@@ -4965,6 +4965,11 @@ Accuracy Score Card Style End
     height: 100%;
     object-fit: contain;
 }
+.site-logo img {
+    max-width: 150px;
+    max-height: 38px;
+    object-fit: contain;
+}
 /* .document-modal:has(.document-right-sidebar.active) .document-content {
     padding-right: 305px;
 } */
@@ -5000,7 +5005,6 @@ Accuracy Score Card Style End
 .admin_teacher_role:has(.document-right-sidebar.active) .nicescroll-rails {
     display: none !important;
 }
-
 .document-switch-options {
     padding: 15px 0 0;
 }
