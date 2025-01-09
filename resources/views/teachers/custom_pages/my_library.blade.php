@@ -1473,6 +1473,55 @@
                             </div>
                         </div>
                     </div>
+                    <div class="instructions bg-white panel-border p-25">
+                        <h5>Instructions to candidates</h5>
+                        <ol>
+                            <li>Write your name, admission number, and class in the spaces provided.</li>
+                            <li>Sign and write the date of examination in the spaces provided above.</li>
+                            <li>The paper contains two sections: Section I and II.</li>
+                            <li>Answer all questions in Section I and II.</li>
+                            <li>All answers and working must be written on the question paper in the spaces provided below each question.</li>
+                            <li><strong>Show all the steps in your calculations, giving your answers at each stage in the spaces provided below each question.</strong></li>
+                            <li>KNEC Mathematical tables may be used, except where stated otherwise.</li>
+                            <li>Silent or non-programmable calculators <strong>SHOULD NOT</strong> be used.</li>
+                        </ol>
+                    </div>
+                    <div class="examiner-section bg-white panel-border p-25">
+                        <h5>FOR EXAMINER'S USE ONLY</h5>
+                        <h6>Section 1</h6>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th>6</th>
+                                    <th>7</th>
+                                    <th>8</th>
+                                    <th>9</th>
+                                    <th>10</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0">
                         <div class="question-layout-block">
                             <form class="question-fields" action="javascript:;" data-question_id="10180">
@@ -2014,7 +2063,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="bg-white panel-border rounded-sm p-25 mb-30">
+                    <div class="bg-white panel-border p-25">
                         <div class="answer-keys">
                             <h5>Answer Keys</h5>
                             <ul>
@@ -2031,56 +2080,6 @@
                                 <li>11. <span>b&#41;2</span></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="instructions">
-                        <h5>Instructions to candidates</h5>
-                        <ol>
-                            <li>Write your name, admission number, and class in the spaces provided.</li>
-                            <li>Sign and write the date of examination in the spaces provided above.</li>
-                            <li>The paper contains two sections: Section I and II.</li>
-                            <li>Answer all questions in Section I and II.</li>
-                            <li>All answers and working must be written on the question paper in the spaces provided below each question.</li>
-                            <li><strong>Show all the steps in your calculations, giving your answers at each stage in the spaces provided below each question.</strong></li>
-                            <li>KNEC Mathematical tables may be used, except where stated otherwise.</li>
-                            <li>Silent or non-programmable calculators <strong>SHOULD NOT</strong> be used.</li>
-                        </ol>
-                    </div>
-
-                    <div class="examiner-section">
-                        <h5>FOR EXAMINER'S USE ONLY</h5>
-                        <h6>Section 1</h6>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>1</th>
-                                    <th>2</th>
-                                    <th>3</th>
-                                    <th>4</th>
-                                    <th>5</th>
-                                    <th>6</th>
-                                    <th>7</th>
-                                    <th>8</th>
-                                    <th>9</th>
-                                    <th>10</th>
-                                    <th>Total</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
             </div>
