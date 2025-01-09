@@ -1919,15 +1919,15 @@
                                                 <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
                                                     <input class="editor-field" type="radio" name="field-40008" id="field-40008-0" value="True">
                                                     <label for="field-40008-0">
-                                                        <span class="inner-label">True</span>
                                                         <span class="label-box"></span>
+                                                        <span class="inner-label">True</span>
                                                     </label>
                                                 </div>
                                                 <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
                                                     <input class="editor-field" type="radio" name="field-40008" id="field-40008-1" value="False">
                                                     <label for="field-40008-1">
-                                                        <span class="inner-label">False</span>
                                                         <span class="label-box"></span>
+                                                        <span class="inner-label">False</span>
                                                     </label>
                                                 </div>
                                                 </div>
@@ -1956,15 +1956,15 @@
                                                 <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
                                                     <input class="editor-field" type="radio" name="field-84793" id="field-84793-0" value="True">
                                                     <label for="field-84793-0">
-                                                        <span class="inner-label">True</span>
                                                         <span class="label-box"></span>
+                                                        <span class="inner-label">True</span>
                                                     </label>
                                                 </div>
                                                 <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
                                                     <input class="editor-field" type="radio" name="field-84793" id="field-84793-1" value="False">
                                                     <label for="field-84793-1">
-                                                        <span class="inner-label">False</span>
                                                         <span class="label-box"></span>
+                                                        <span class="inner-label">False</span>
                                                     </label>
                                                 </div>
                                                 </div>
@@ -1993,15 +1993,15 @@
                                                 <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
                                                     <input class="editor-field" type="radio" name="field-21459" id="field-21459-0" value="True">
                                                     <label for="field-21459-0">
-                                                        <span class="inner-label">True</span>
                                                         <span class="label-box"></span>
+                                                        <span class="inner-label">True</span>
                                                     </label>
                                                 </div>
                                                 <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
                                                     <input class="editor-field" type="radio" name="field-21459" id="field-21459-1" value="False">
                                                     <label for="field-21459-1">
-                                                        <span class="inner-label">False</span>
                                                         <span class="label-box"></span>
+                                                        <span class="inner-label">False</span>
                                                     </label>
                                                 </div>
                                                 </div>
