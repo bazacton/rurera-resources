@@ -5134,6 +5134,7 @@ Accuracy Score Card Style End
     display: flex;
     align-items: center;
     gap: 15px;
+    flex-wrap: wrap;
 }
 .student-other-info span {
     color: #333;
