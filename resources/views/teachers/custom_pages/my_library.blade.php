@@ -2032,6 +2032,55 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="instructions">
+                        <h2>Instructions to candidates</h2>
+                        <ol>
+                            <li>Write your name, admission number, and class in the spaces provided.</li>
+                            <li>Sign and write the date of examination in the spaces provided above.</li>
+                            <li>The paper contains two sections: Section I and II.</li>
+                            <li>Answer all questions in Section I and II.</li>
+                            <li>All answers and working must be written on the question paper in the spaces provided below each question.</li>
+                            <li>Show all the steps in your calculations, giving your answers at each stage in the spaces provided below each question.</li>
+                            <li>KNEC Mathematical tables may be used, except where stated otherwise.</li>
+                            <li>Silent or non-programmable calculators <strong>SHOULD NOT</strong> be used.</li>
+                        </ol>
+                    </div>
+
+                    <div class="examiner-section">
+                        <h3>FOR EXAMINER'S USE ONLY</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th>6</th>
+                                    <th>7</th>
+                                    <th>8</th>
+                                    <th>9</th>
+                                    <th>10</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="document-right-sidebar">
