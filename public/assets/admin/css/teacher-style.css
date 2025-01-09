@@ -3484,16 +3484,12 @@ span.field-separated span:after {
 .questions-header-controls button:hover i {
     color: var(--white);
 }
-.instructions {
-    margin-bottom: 30px;
-}
 .instructions h5 {
     font-size: inherit;
 }
 .examiner-section h5 {
     text-decoration: underline;
     text-transform: uppercase;
-    margin: 0 0 20px;
     font-size: inherit;
 }
 .instructions ol {
@@ -3515,7 +3511,7 @@ span.field-separated span:after {
 }
 .examiner-section table th,
 .examiner-section table td {
-    border: 1px solid #000;
+    border: 1px solid #ddd;
     padding: 5px;
     height: 40px;
     text-transform: uppercase;
