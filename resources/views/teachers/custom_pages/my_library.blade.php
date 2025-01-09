@@ -2035,6 +2035,7 @@
                 </div>
             </div>
             <div class="document-right-sidebar">
+                <h5>Settings</h5>
                 <div class="document-switch-options">
                     <div class="form-group mb-0">
                         <label class="custom-switch mb-15">
