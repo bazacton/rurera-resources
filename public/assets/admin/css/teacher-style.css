@@ -3488,13 +3488,11 @@ span.field-separated span:after {
     margin-bottom: 30px;
 }
 .instructions h5 {
-    color: #333;
     font-size: inherit;
 }
 .examiner-section h5 {
     text-decoration: underline;
     text-transform: uppercase;
-    color: #333;
     margin: 0 0 20px;
     font-size: inherit;
 }
@@ -3504,7 +3502,6 @@ span.field-separated span:after {
 .instructions ol li {
     list-style: auto;
     font-style: italic;
-    color: #333;
     font-weight: 600;
 }
 .examiner-section {
@@ -3521,12 +3518,10 @@ span.field-separated span:after {
     border: 1px solid #000;
     padding: 5px;
     height: 40px;
-    color: #333;
     text-transform: uppercase;
 }
 .examiner-section h6 {
     text-transform: uppercase;
-    color: #333;
     text-decoration: underline;
     padding: 0 0 0 20px;
     margin: 0 0 15px;
