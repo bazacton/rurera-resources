@@ -318,6 +318,7 @@ ul.crop_sizes {
 									<th class="text-left">Image Recomendations</th>
 									<th class="text-left">Questions</th>
                                     <th class="text-left">Status</th>
+                                    <th class="text-left">Reference</th>
                                     <th class="text-left">Added Date</th>
                                     <th class="text-left">User</th>
                                     <th>{{ trans('admin/main.actions') }}</th>
@@ -325,7 +326,9 @@ ul.crop_sizes {
 
                                 @foreach($GalleryBulkLists as $GalleryBulkListObj)
 								@php $questions_ids = isset( $GalleryBulkListObj->questions_ids )? json_decode($GalleryBulkListObj->questions_ids) : array();
-								@endphp
+                                $galleryImageObj = $GalleryBulkListObj->GalleryBulkListImages->first();
+                                $image_reference_url = isset($galleryImageObj->image_reference_url)? $galleryImageObj->image_reference_url : '';
+                                @endphp
 								@php $image_recomendations = isset( $GalleryBulkListObj->image_recomendations )? json_decode($GalleryBulkListObj->image_recomendations, true) : array();
 								$image_recomendations = isset( $image_recomendations['searchable_keywords'] )? array($image_recomendations) : $image_recomendations;
 								@endphp
@@ -333,6 +336,7 @@ ul.crop_sizes {
 									<td class="text-left" data-id="user">
 										@if( $GalleryBulkListObj->image_path != '')
 											<img class="image-preview-modal" width="50" src="/assets/default/questions_gallery/{{$GalleryBulkListObj->image_path}}">
+                                            {{$galleryImageObj->image_width}} X {{$galleryImageObj->image_height}}
 										@else
 											-
 										@endif
@@ -380,6 +384,7 @@ ul.crop_sizes {
 										@endif
 									</td>
                                     <td class="text-left" data-id="user">{{ $GalleryBulkListObj->status }}</td>
+                                    <td class="text-left" data-id="user">{{ $image_reference_url }}</td>
                                     <td class="text-left" data-id="created_at">
 									@if($GalleryBulkListObj->status == 'Pending')
 										-
