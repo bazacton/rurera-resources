@@ -77,7 +77,7 @@
 
 	#nav-contact5 .image-field{
 		display: inline-block;
-		padding: 8px;
+		padding: 18px 0;
 		border-left: 15px solid #b3b3b3;
     border-right: 15px solid #fafafa;
     border-radius: 5px;
