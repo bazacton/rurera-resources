@@ -2033,7 +2033,7 @@
                         </div>
                     </div>
                     <div class="instructions">
-                        <h2>Instructions to candidates</h2>
+                        <h5>Instructions to candidates</h5>
                         <ol>
                             <li>Write your name, admission number, and class in the spaces provided.</li>
                             <li>Sign and write the date of examination in the spaces provided above.</li>
@@ -2047,7 +2047,7 @@
                     </div>
 
                     <div class="examiner-section">
-                        <h3>FOR EXAMINER'S USE ONLY</h3>
+                        <h5>FOR EXAMINER'S USE ONLY</h5>
                         <table>
                             <thead>
                                 <tr>
