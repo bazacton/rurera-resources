@@ -1488,7 +1488,6 @@
                     </div>
                     <div class="examiner-section bg-white panel-border p-25 border-bottom-0">
                         <h5>FOR EXAMINER'S USE ONLY</h5>
-                        <h6>Section 1</h6>
                         <table>
                             <thead>
                                 <tr>
