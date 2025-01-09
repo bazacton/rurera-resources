@@ -1536,11 +1536,6 @@
                                                 <div class="question-count">
                                                     <span class="question-count-lable">Question 1 of 20</span>
                                                 </div>
-                                                <div class="question-info">
-                                                    <span class="q-type"><img src="/assets/default/svgs/multi-choice.svg" alt="">Multiple choice</span>
-                                                    <span class="q-time">Avg time</span>
-                                                    <span class="q-point">1 point</span>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1897,11 +1892,6 @@
                                             <div class="question-top-info">
                                                 <div class="question-count">
                                                     <span class="question-count-lable">Question 1 of 20</span>
-                                                </div>
-                                                <div class="question-info">
-                                                    <span class="q-type"><img src="/assets/default/svgs/multi-choice.svg" alt="">Multiple choice</span>
-                                                    <span class="q-time">Avg time</span>
-                                                    <span class="q-point">1 point</span>
                                                 </div>
                                             </div>
                                         </div>
