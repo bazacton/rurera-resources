@@ -5618,6 +5618,7 @@ button.print-download-btn {
     }
     .document-pdf {
         height: auto;
+        width: 100%;
     }
     .rureraform-search-field .input-field {
         width: 100%;
