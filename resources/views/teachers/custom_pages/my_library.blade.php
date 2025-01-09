@@ -1439,10 +1439,10 @@
             </div> -->
             <div class="document-content">
                 <div class="document-pdf" id="pdf-fonts" style="font-size: medium;">
-                    <div class="site-logo my-25">
-                        <img src="/store/1/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="150" height="38" itemprop="image" loading="eager">
-                    </div>
                     <div class="elements-holder bg-white panel-border p-15 border-bottom-0" style="background-color: #fafafa !important;">
+                        <div class="site-logo mb-20">
+                            <img src="/store/1/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="150" height="38" itemprop="image" loading="eager">
+                        </div>
                         <div class="questions-header">
                             <div class="questions-header-inner">
                                 <div class="text-holder">
