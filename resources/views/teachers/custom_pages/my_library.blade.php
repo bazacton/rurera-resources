@@ -2110,27 +2110,6 @@
                         </label>
                     </div>
                 </div>
-                <div class="document-font-sizes">
-                    <span class="fonts-lable">Font size</span>
-                    <div class="font-select-options">
-                        <div class="font-select-box">
-                            <input type="radio" name="font-size" id="font-sm" checked>
-                            <label for="font-sm" onclick="document.getElementById('pdf-fonts').style.fontSize='small'">S</label>
-                        </div>
-                        <div class="font-select-box">
-                            <input type="radio" name="font-size" id="font-md">
-                            <label for="font-md" onclick="document.getElementById('pdf-fonts').style.fontSize='medium'">M</label>
-                        </div>
-                        <div class="font-select-box">
-                            <input type="radio" name="font-size" id="font-lg">
-                            <label for="font-lg" onclick="document.getElementById('pdf-fonts').style.fontSize='large'">L</label>
-                        </div>
-                        <div class="font-select-box">
-                            <input type="radio" name="font-size" id="font-xl">
-                            <label for="font-xl" onclick="document.getElementById('pdf-fonts').style.fontSize='large'">XL</label>
-                        </div>
-                    </div>
-                </div>
                 <div class="document-switch-options">
                     <div class="form-group mb-0">
                         <label class="custom-switch mb-15">
@@ -2152,6 +2131,27 @@
                             <input type="checkbox" name="document-switch" id="ans-key" class="custom-switch-input" checked>
                             <span class="custom-switch-indicator"></span>
                         </label>
+                    </div>
+                </div>
+                <div class="document-font-sizes">
+                    <span class="fonts-lable">Font size</span>
+                    <div class="font-select-options">
+                        <div class="font-select-box">
+                            <input type="radio" name="font-size" id="font-sm" checked>
+                            <label for="font-sm" onclick="document.getElementById('pdf-fonts').style.fontSize='small'">S</label>
+                        </div>
+                        <div class="font-select-box">
+                            <input type="radio" name="font-size" id="font-md">
+                            <label for="font-md" onclick="document.getElementById('pdf-fonts').style.fontSize='medium'">M</label>
+                        </div>
+                        <div class="font-select-box">
+                            <input type="radio" name="font-size" id="font-lg">
+                            <label for="font-lg" onclick="document.getElementById('pdf-fonts').style.fontSize='large'">L</label>
+                        </div>
+                        <div class="font-select-box">
+                            <input type="radio" name="font-size" id="font-xl">
+                            <label for="font-xl" onclick="document.getElementById('pdf-fonts').style.fontSize='large'">XL</label>
+                        </div>
                     </div>
                 </div>
                 <div class="btn-holder px-15 text-center pt-15">
