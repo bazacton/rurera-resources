@@ -1439,7 +1439,7 @@
             </div> -->
             <div class="document-content">
                 <div class="document-pdf" id="pdf-fonts" style="font-size: medium;">
-                    <div class="elements-holder bg-white panel-border p-15 border-bottom-0" style="background-color: #fafafa !important;">
+                    <div class="elements-holder panel-border p-15 border-bottom-0" style="background-color: #fafafa;">
                         <div class="site-logo mb-20">
                             <img src="/store/1/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="150" height="38" itemprop="image" loading="eager">
                         </div>
@@ -1476,20 +1476,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="instructions bg-white panel-border p-25 border-bottom-0">
-                        <h5>Instructions to candidates</h5>
-                        <ol>
-                            <li>Write your name, admission number, and class in the spaces provided.</li>
-                            <li>Sign and write the date of examination in the spaces provided above.</li>
-                            <li>The paper contains two sections: Section I and II.</li>
-                            <li>Answer all questions in Section I and II.</li>
-                            <li>All answers and working must be written on the question paper in the spaces provided below each question.</li>
-                            <li><strong>Show all the steps in your calculations, giving your answers at each stage in the spaces provided below each question.</strong></li>
-                            <li>KNEC Mathematical tables may be used, except where stated otherwise.</li>
-                            <li>Silent or non-programmable calculators <strong>SHOULD NOT</strong> be used.</li>
-                        </ol>
-                    </div>
-                    <div class="examiner-section bg-white panel-border p-25 border-bottom-0">
+                    <div class="examiner-section panel-border p-25 border-bottom-0" style="background-color: #fafafa;">
                         <h5>For Examiner's Use Only</h5>
                         <table>
                             <thead>
@@ -1523,6 +1510,19 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <div class="instructions bg-white panel-border p-25 border-bottom-0">
+                        <h5>Instructions to candidates</h5>
+                        <ol>
+                            <li>Write your name, admission number, and class in the spaces provided.</li>
+                            <li>Sign and write the date of examination in the spaces provided above.</li>
+                            <li>The paper contains two sections: Section I and II.</li>
+                            <li>Answer all questions in Section I and II.</li>
+                            <li>All answers and working must be written on the question paper in the spaces provided below each question.</li>
+                            <li><strong>Show all the steps in your calculations, giving your answers at each stage in the spaces provided below each question.</strong></li>
+                            <li>KNEC Mathematical tables may be used, except where stated otherwise.</li>
+                            <li>Silent or non-programmable calculators <strong>SHOULD NOT</strong> be used.</li>
+                        </ol>
                     </div>
                     <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0">
                         <div class="question-layout-block">
