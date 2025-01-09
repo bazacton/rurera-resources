@@ -1438,7 +1438,7 @@
                 </div>
             </div> -->
             <div class="document-content">
-                <div class="document-pdf" id="pdf-fonts">
+                <div class="document-pdf" id="pdf-fonts" style="font-size: medium;">
                     <div class="site-logo my-25">
                         <img src="/store/1/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="150" height="38" itemprop="image" loading="eager">
                     </div>
