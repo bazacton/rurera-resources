@@ -83,10 +83,7 @@
 	#nav-contact5 .image-field{
 		display: inline-block;
 		padding: 8px;
-		background-image: linear-gradient(-6deg, #94dfff 0%, #67d1fb 13%, #2b8fba 100%);
-	}
-	#nav-contact5 img {
-	border-left: 15px solid #b3b3b3;
+		border-left: 15px solid #b3b3b3;
     border-right: 15px solid #fafafa;
     border-radius: 5px;
     box-sizing: border-box;
@@ -94,6 +91,9 @@
     background-repeat: no-repeat;
     background-size: 100% 20px;
     background-image: linear-gradient(to right, #b3b3b3 0%, #fafafa 100%), linear-gradient(to right, #b3b3b3 0%, #fafafa 100%);
+	}
+	#nav-contact5 img {
+	
 	}
 </style>
 
