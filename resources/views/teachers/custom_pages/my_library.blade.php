@@ -1438,7 +1438,7 @@
                 </div>
             </div> -->
             <div class="document-content">
-                <div class="document-pdf">
+                <div class="document-pdf" id="pdf-fonts">
                     <div class="elements-holder bg-white panel-border p-15 border-bottom-0">
                         <div class="questions-header">
                             <div class="questions-header-inner">
@@ -2064,19 +2064,19 @@
                     <div class="font-select-options">
                         <div class="font-select-box">
                             <input type="radio" name="font-size" id="font-sm" checked>
-                            <label for="font-sm">S</label>
+                            <label for="font-sm" onclick="document.getElementById('pdf-fonts').style.fontSize='small'">S</label>
                         </div>
                         <div class="font-select-box">
                             <input type="radio" name="font-size" id="font-md">
-                            <label for="font-md">M</label>
+                            <label for="font-md" onclick="document.getElementById('pdf-fonts').style.fontSize='medium'">M</label>
                         </div>
                         <div class="font-select-box">
                             <input type="radio" name="font-size" id="font-lg">
-                            <label for="font-lg">L</label>
+                            <label for="font-lg" onclick="document.getElementById('pdf-fonts').style.fontSize='large'">L</label>
                         </div>
                         <div class="font-select-box">
                             <input type="radio" name="font-size" id="font-xl">
-                            <label for="font-xl">XL</label>
+                            <label for="font-xl" onclick="document.getElementById('pdf-fonts').style.fontSize='large'">XL</label>
                         </div>
                     </div>
                 </div>
