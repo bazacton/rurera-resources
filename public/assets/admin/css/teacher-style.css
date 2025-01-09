@@ -3433,8 +3433,8 @@ span.field-separated span:after {
     margin-bottom: 0;
 }
 .document-pdf .questions-header-inner h5,
-.document-pdf .questions-header-inner h4 {
-    font-size: unset;
+.document-pdf .rureraform-element h4 {
+    font-size: medium;
 }
 .questions-header-inner h5 small {
     font-weight: 500;
