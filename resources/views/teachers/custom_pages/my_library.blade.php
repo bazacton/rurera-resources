@@ -2089,7 +2089,7 @@
                         <label class="custom-switch mb-15">
                             <em class="switch-lable">Shuffle answer</em>
                             <input type="checkbox" name="document-switch" id="shuffle-ans" class="custom-switch-input" checked>
-                            <span class="custom-switch-indicator"></span>
+                            <img src="/assets/default/svgs/shuffle.svg" alt="shuffle">
                         </label>
                     </div>
                     <div class="form-group mb-0">
