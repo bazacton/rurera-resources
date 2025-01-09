@@ -1439,7 +1439,7 @@
             </div> -->
             <div class="document-content">
                 <div class="document-pdf" id="pdf-fonts">
-                    <div class="elements-holder bg-white panel-border p-15 border-bottom-0">
+                    <div class="elements-holder bg-white panel-border p-15 border-bottom-0" style="background-color: #fafafa !important;">
                         <div class="questions-header">
                             <div class="questions-header-inner">
                                 <div class="text-holder">
