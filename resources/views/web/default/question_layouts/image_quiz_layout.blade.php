@@ -37,6 +37,7 @@
 
 
 	#nav-contact2 img {
+		max-width: 250px;
 		border-radius: 140px 0;
 		background: linear-gradient(0.06deg, #fafafa 0%, #f6f6f6 29.62%, #eaeaea 58.47%, #d7d7d7 86.92%, #cccccc 99.22%);
 	}
