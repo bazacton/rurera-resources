@@ -1,3 +1,45 @@
+@push('styles_top')
+<style>
+	#nav-home img {
+		border-radius: 0 96px;
+    	background: linear-gradient(0.06deg, #fafafa 0%, #f6f6f6 29.62%, #eaeaea 58.47%, #d7d7d7 86.92%, #cccccc 99.22%);
+	}
+	#nav-home .image-field{
+		border-radius: 0 100px;
+    	background: linear-gradient(0.01deg, #b3b3b3 8.92%, #d5d5d5 31.91%, #f0f0f0 54.33%, #fafafa 67.52%);
+	}
+
+	#nav-profile-tab img {
+		border-radius: 0 96px;
+    	background: linear-gradient(0.06deg, #fafafa 0%, #f6f6f6 29.62%, #eaeaea 58.47%, #d7d7d7 86.92%, #cccccc 99.22%);
+	}
+	#nav-profile-tab .image-field{
+		border-radius: 0 100px;
+    	background: linear-gradient(0.01deg, #b3b3b3 8.92%, #d5d5d5 31.91%, #f0f0f0 54.33%, #fafafa 67.52%);
+	}
+
+
+	#nav-contact-tab img {
+		border-radius: 168px 0;
+		background: linear-gradient(0.06deg, #fafafa 0%, #f6f6f6 29.62%, #eaeaea 58.47%, #d7d7d7 86.92%, #cccccc 99.22%);
+	}
+	#nav-contact-tab .image-field{
+		border-radius: 150px 0;
+    box-shadow: -1px -1px 2px #eee, -1px 0px 3px #eee, -4px 8px 8px rgba(0, 0, 0, 0.1), -8px 16px 16px rgba(0, 0, 0, 0.1), -16px 32px 32px rgba(0, 0, 0, 0.15), -32px 64px 64px rgba(0, 0, 0, 0.25)
+	}
+
+
+	#nav-contact2-tab img {
+		border-radius: 140px 0;
+		background: linear-gradient(0.06deg, #fafafa 0%, #f6f6f6 29.62%, #eaeaea 58.47%, #d7d7d7 86.92%, #cccccc 99.22%);
+	}
+	#nav-contact2-tab .image-field{
+		border-radius: 150px 0;
+		box-shadow: -1px -1px 2px #eee, -1px 0px 3px #eee, -4px 8px 8px rgba(0, 0, 0, 0.1), -8px 16px 16px rgba(0, 0, 0, 0.1), -16px 32px 32px rgba(0, 0, 0, 0.15), -32px 64px 64px rgba(0, 0, 0, 0.25);
+	}
+</style>
+
+@endpush
 <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
     <button class="nav-link active" id="nav-home-tab" data-toggle="tab" data-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Image Style 1</button>
