@@ -5075,7 +5075,7 @@ Accuracy Score Card Style End
 .student-roll-num span {
     height: 22px;
     width: 22px;
-    border: 1px solid #555;
+    border: 1px solid #ddd;
     margin: 0 0 0 10px;
 }
 .student-other-info {
@@ -5090,7 +5090,7 @@ Accuracy Score Card Style End
     display: inline-block;
     min-width: 100px;
     height: 1px;
-    background-color: #555;
+    background-color: #ddd;
 }
 .answer-keys h5 {
     color: #333;
