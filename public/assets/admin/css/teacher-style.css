@@ -5137,12 +5137,18 @@ Accuracy Score Card Style End
 }
 .student-other-info span {
     color: #333;
+    width: 23%;
+    position: relative;
+    display: block;
+    overflow: hidden;
 }
 .student-other-info small {
     display: inline-block;
-    min-width: 120px;
     height: 1px;
     background-color: #ddd;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
 }
 .answer-keys h5 {
     font-size: inherit;
