@@ -5142,7 +5142,7 @@ Accuracy Score Card Style End
 }
 .answer-keys h5 {
     color: #333;
-    font-size: 18px;
+    font-size: inherit;
 }
 .answer-keys ul {
     display: flex;
