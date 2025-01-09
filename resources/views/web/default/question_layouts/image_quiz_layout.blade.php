@@ -78,6 +78,23 @@
     background-size: 100% 20px;
     background-image: linear-gradient(to right, #b3b3b3 0%, #fafafa 100%), linear-gradient(to right, #b3b3b3 0%, #fafafa 100%);
 	}
+
+
+	#nav-contact5 .image-field{
+		display: inline-block;
+		padding: 8px;
+		background-image: linear-gradient(-6deg, #94dfff 0%, #67d1fb 13%, #2b8fba 100%);
+	}
+	#nav-contact5 img {
+	border-left: 15px solid #b3b3b3;
+    border-right: 15px solid #fafafa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 20px;
+    background-image: linear-gradient(to right, #b3b3b3 0%, #fafafa 100%), linear-gradient(to right, #b3b3b3 0%, #fafafa 100%);
+	}
 </style>
 
 @endpush
@@ -89,9 +106,10 @@
 	<button class="nav-link" id="nav-contact2-tab" data-toggle="tab" data-target="#nav-contact2" type="button" role="tab" aria-controls="nav-contact2" aria-selected="false">Image Style 4</button>
 	<button class="nav-link" id="nav-contact3-tab" data-toggle="tab" data-target="#nav-contact3" type="button" role="tab" aria-controls="nav-contact3" aria-selected="false">Image Style 5</button>
 	<button class="nav-link" id="nav-contact4-tab" data-toggle="tab" data-target="#nav-contact4" type="button" role="tab" aria-controls="nav-contact3" aria-selected="false">Image Style 6</button>
+	<button class="nav-link" id="nav-contact5-tab" data-toggle="tab" data-target="#nav-contact5" type="button" role="tab" aria-controls="nav-contact3" aria-selected="false">Image Style 7</button>
   </div>
 </nav>
-<div class="tab-content" id="nav-tabContent" style="background-color: #fafafa; padding: 30px;">
+<div class="tab-content" id="nav-tabContent" style="background-color: antiquewhite; padding: 30px;">
   <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 	<div id="rureraform-element-{{$element_id}}" class="{{ isset( $elementObj->image_position ) ? $elementObj->image_position : ''}} {{ isset( $elementObj->image_size ) ? $elementObj->image_size : ''}} rureraform-element-{{$element_id}} rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="{{$elementObj->type}}">
 		<span class="block-holder image-field"><img data-field_type="image" data-id="{{$element_unique_id}}" id="field-{{$element_unique_id}}" class="image-editor-field" src="{{ isset( $elementObj->content ) ? $elementObj->content : ''}}"></span>
@@ -118,6 +136,11 @@
 	</div>
   </div>
   <div class="tab-pane fade" id="nav-contact4" role="tabpanel" aria-labelledby="nav-contact4-tab">
+	<div id="rureraform-element-{{$element_id}}" class="{{ isset( $elementObj->image_position ) ? $elementObj->image_position : ''}} {{ isset( $elementObj->image_size ) ? $elementObj->image_size : ''}} rureraform-element-{{$element_id}} rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="{{$elementObj->type}}">
+		<span class="block-holder image-field"><img data-field_type="image" data-id="{{$element_unique_id}}" id="field-{{$element_unique_id}}" class="image-editor-field" src="{{ isset( $elementObj->content ) ? $elementObj->content : ''}}"></span>
+	</div>
+  </div>
+  <div class="tab-pane fade" id="nav-contact5" role="tabpanel" aria-labelledby="nav-contact5-tab">
 	<div id="rureraform-element-{{$element_id}}" class="{{ isset( $elementObj->image_position ) ? $elementObj->image_position : ''}} {{ isset( $elementObj->image_size ) ? $elementObj->image_size : ''}} rureraform-element-{{$element_id}} rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="{{$elementObj->type}}">
 		<span class="block-holder image-field"><img data-field_type="image" data-id="{{$element_unique_id}}" id="field-{{$element_unique_id}}" class="image-editor-field" src="{{ isset( $elementObj->content ) ? $elementObj->content : ''}}"></span>
 	</div>
