@@ -63,7 +63,7 @@
 	}
 	#nav-contact4 .image-field{
 		display: inline-block;
-		padding: 8px;
+		padding: 18px 0;
 		border-radius: 20px;
 		border-left: 15px solid #b3b3b3;
     border-right: 15px solid #fafafa;
