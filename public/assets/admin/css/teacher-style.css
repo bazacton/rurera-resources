@@ -5086,6 +5086,20 @@ Accuracy Score Card Style End
     height: 1px;
     background-color: #555;
 }
+.answer-keys h5 {
+    color: #333;
+    font-size: 18px;
+}
+.answer-keys ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 0;
+}
+.answer-keys ul li {
+    max-width: 33%;
+    flex: 0 0 33%;
+}
 /* Document Viewer Page Style End */
 
 
