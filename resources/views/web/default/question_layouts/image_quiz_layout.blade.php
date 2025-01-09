@@ -65,13 +65,8 @@
 		display: inline-block;
 		padding: 8px;
 		border-radius: 20px;
-    background: linear-gradient(0.06deg, #fafafa 0%, #f6f6f6 29.62%, #eaeaea 58.47%, #d7d7d7 86.92%, #cccccc 99.22%);
-    box-shadow: -4px 8px 8px rgba(0, 0, 0, 0.1), -8px 16px 16px rgba(0, 0, 0, 0.1), -16px 32px 32px rgba(0, 0, 0, 0.15), -32px 64px 64px rgba(0, 0, 0, 0.25);
-	}
-	#nav-contact4 img {
 		border-left: 15px solid #b3b3b3;
     border-right: 15px solid #fafafa;
-    border-radius: 5px;
     box-sizing: border-box;
     background-position: 0 0, 0 100%;
     background-repeat: no-repeat;
