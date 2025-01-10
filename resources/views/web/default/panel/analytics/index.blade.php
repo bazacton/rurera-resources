@@ -104,6 +104,22 @@
                     </select>
                 </div>
             </div>
+            <div class="select-holder">
+                <h5>Date Range</h5>
+                <div class="select-box">
+                    <select>
+                        <option value="Last 30 Days">Last 30 Days</option>
+                        <option value="Today">Today</option>
+                        <option value="Yesterday">Yesterday</option>
+                        <option value="Last 7 days">Last 7 days</option>
+                        <option value="This month">This month</option>
+                        <option value="Last 30 days">Last 30 days</option>
+                        <option value="This year(2025)">This year(2025)</option>
+                        <option value="All time">All time</option>
+                        <option value="Custom range [From - To]">Custom range [From - To]</option>
+                    </select>
+                </div>
+            </div>
         </div>
         <div class="analytics-header">
             <div class="header-text">
