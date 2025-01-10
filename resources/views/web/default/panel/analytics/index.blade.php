@@ -298,6 +298,7 @@ $(function () {
     {
       startDate: start,
       endDate: end,
+      parentEl: '.date-range-box',
       ranges: dateRanges,
       isInvalidDate: function (date) {
         // Sunday Disabled
