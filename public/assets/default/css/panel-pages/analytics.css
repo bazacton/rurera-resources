@@ -105,6 +105,7 @@ Sub Pages Style
     flex-wrap: wrap;
     gap: 30px;
     margin: 0 0 30px;
+    position: relative;
 }
 .analytics-dropdown h5 {
     color: #333;
@@ -142,10 +143,17 @@ Sub Pages Style
   font-size: 14px;
   border: 0;
   width: 100%;
+  cursor: pointer;
 }
 .date-range-box .daterangepicker {
   width: 100%;
   margin-left: -10px;
+}
+.date-range-box .daterangepicker .ranges ul {
+  width: 100%;
+}
+.date-range-box .daterangepicker .ranges {
+  width: 100%;
 }
 /***************************
 Analytics Page | Student Panel Style End
