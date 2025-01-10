@@ -313,14 +313,9 @@ function reset() {
   $("#reportrange1").data("daterangepicker").setStartDate(reset_start);
   $("#reportrange1").data("daterangepicker").setEndDate(reset_end);
 
-  if ($("#reportrange2").length > 0) {
-    $("#reportrange2").data("daterangepicker").setStartDate(reset_start);
-    $("#reportrange2").data("daterangepicker").setEndDate(reset_end);
-  }
-
   $(".daterangepicker.show-calendar").removeClass("show-calendar");
 
-  $("#reportrange1,#reportrange2").val(
+  $("#reportrange1").val(
     moment(start).format("MM/DD/YYYY") +
       " - " +
       moment(end).format("MM/DD/YYYY")
