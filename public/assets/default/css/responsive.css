@@ -1171,8 +1171,9 @@ Lms Responsive Style Start
     .stages-items {
         position: initial;
     }
-    .analytics-dropdown select {
-        width: 100%;
+    .analytics-dropdown select,
+    .date-range-box {
+        max-width: 100%;
     }
 }
 
