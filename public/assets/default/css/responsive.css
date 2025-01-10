@@ -1173,7 +1173,8 @@ Lms Responsive Style Start
     }
     .analytics-dropdown select,
     .date-range-box,
-    .analytics-dropdown .select-box {
+    .analytics-dropdown .select-box,
+    .analytics-dropdown .select-holder {
         max-width: 100%;
         width: 100%;
     }
