@@ -19,7 +19,7 @@ Sub Pages Style
 .questions-select-number label.selectable {background-color: #fff;}
 .questions-select-number input:checked ~ label {
     box-shadow: 0 3px 0 var(--primary);
-    border-bottom-color: var(--primary);
+    border-color: var(--primary);
     color: var(--primary);
 }
 .questions-select-number ul {margin: 0 0 0 -10px; flex-wrap: wrap;}
