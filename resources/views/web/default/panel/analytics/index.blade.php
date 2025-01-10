@@ -269,7 +269,7 @@
 </script>
 <script>
 
-var start = moment().subtract(29, "days");
+var start = moment().subtract(31, "days");
 var end = moment();
 
 var reset_start = moment().startOf("month");
@@ -284,7 +284,7 @@ $(function () {
     moment().subtract(1, "days")
   ];
   dateRanges["Last 7 Days"] = [moment().subtract(6, "days"), moment()];
-  dateRanges["Last 30 Days"] = [moment().subtract(29, "days"), moment()];
+  dateRanges["Last 30 Days"] = [moment().subtract(31, "days"), moment()];
   dateRanges["This Month"] = [
     moment().startOf("month"),
     moment().endOf("month")
