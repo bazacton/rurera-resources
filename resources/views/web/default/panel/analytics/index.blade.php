@@ -110,14 +110,9 @@
             </div>
             <div class="date-range-holder">
                 <h5>Date</h5>
-            </div>
-            <div class="custom-dropdown">
-                <input type="text" type="text" name="daterange" value="01/01/2018 - 01/15/2018" id="dropdown-input" placeholder="Type or select an option" oninput="filterOptions()" />
-                <div class="dropdown-menu" id="dropdown-menu">
-                    <div class="dropdown-item" onclick="selectOption('Option 1')">Option 1</div>
-                    <div class="dropdown-item" onclick="selectOption('Option 2')">Option 2</div>
-                    <div class="dropdown-item" onclick="selectOption('Option 3')">Option 3</div>
-                </div>
+                <input type="text" id="reportrange1">
+                <input type="text" id="reportrange2">
+                <div id="log"></div>
             </div>
         </div>
         <div class="analytics-header">
@@ -289,33 +284,110 @@
 
 </script>
 <script>
-  function filterOptions() {
-    const input = document.getElementById("dropdown-input");
-    const filter = input.value.toLowerCase();
-    const menu = document.getElementById("dropdown-menu");
-    const items = menu.getElementsByClassName("dropdown-item");
-    for (let item of items) {
-      if (item.textContent.toLowerCase().includes(filter)) {
-        item.style.display = "block";
-      } else {
-        item.style.display = "none";
+var start = moment().subtract(29, "days");
+var end = moment();
+
+var reset_start = moment().startOf("month");
+var reset_end = moment().endOf("month");
+
+$("#log").append(
+  "Initial: " +
+    moment(start).format("MM/DD/YYYY") +
+    " - " +
+    moment(end).format("MM/DD/YYYY") +
+    "<br>"
+);
+
+$(function () {
+  var dateRanges = new Array();
+
+  dateRanges["Today"] = [moment(), moment()];
+  dateRanges["Yesterday"] = [
+    moment().subtract(1, "days"),
+    moment().subtract(1, "days")
+  ];
+  dateRanges["Last 7 Days"] = [moment().subtract(6, "days"), moment()];
+  dateRanges["Last 30 Days"] = [moment().subtract(29, "days"), moment()];
+  dateRanges["This Month"] = [
+    moment().startOf("month"),
+    moment().endOf("month")
+  ];
+  dateRanges["Last Month"] = [
+    moment().subtract(1, "month").startOf("month"),
+    moment().subtract(1, "month").endOf("month")
+  ];
+
+  $("#reportrange1").daterangepicker(
+    {
+      startDate: start,
+      endDate: end,
+      ranges: dateRanges,
+      isInvalidDate: function (date) {
+        // Sunday Disabled
+        return date.day() == 0;
       }
+    },
+    function (start, end, label) {
+      var start_date = start.format("MM/DD/YYYY");
+      var end_date = end.format("MM/DD/YYYY");
+      $("#reportrange2").val(start_date + " - " + end_date);
+      $("#log").append(
+        "p1: " + label + " = " + start_date + " - " + end_date + "<br>"
+      );
+
+      $("#reportrange2").data("daterangepicker").setStartDate(start_date);
+      $("#reportrange2").data("daterangepicker").setEndDate(end_date);
     }
+  );
+
+  $("#reportrange2").daterangepicker(
+    {
+      startDate: start,
+      endDate: end,
+      ranges: dateRanges,
+      isInvalidDate: function (date) {
+        // Sunday Disabled
+        return date.day() == 0;
+      }
+    },
+    function (start, end, label) {
+      var start_date = start.format("MM/DD/YYYY");
+      var end_date = end.format("MM/DD/YYYY");
+      $("#reportrange1").val(start_date + " - " + end_date);
+      $("#log").append(
+        "p2: " + label + " = " + start_date + " - " + end_date + "<br>"
+      );
+
+      $("#reportrange1").data("daterangepicker").setStartDate(start_date);
+      $("#reportrange1").data("daterangepicker").setEndDate(end_date);
+    }
+  );
+});
+
+function reset() {
+  $("#log").append(
+    "Reset to: " +
+      moment(reset_start).format("MM/DD/YYYY") +
+      " - " +
+      moment(reset_end).format("MM/DD/YYYY") +
+      "<br>"
+  );
+  $("#reportrange1").data("daterangepicker").setStartDate(reset_start);
+  $("#reportrange1").data("daterangepicker").setEndDate(reset_end);
+
+  if ($("#reportrange2").length > 0) {
+    $("#reportrange2").data("daterangepicker").setStartDate(reset_start);
+    $("#reportrange2").data("daterangepicker").setEndDate(reset_end);
   }
 
-  function selectOption(value) {
-    document.getElementById("dropdown-input").value = value;
-    document.getElementById("dropdown-menu").style.display = "none";
-  }
-</script>
-<script>
-$(function() {
-  $('input[name="daterange"]').daterangepicker({
-    opens: 'left'
-  }, function(start, end, label) {
-    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-  });
-});
+  $(".daterangepicker.show-calendar").removeClass("show-calendar");
+
+  $("#reportrange1,#reportrange2").val(
+    moment(start).format("MM/DD/YYYY") +
+      " - " +
+      moment(end).format("MM/DD/YYYY")
+  );
+}
 </script>
 
 @endpush
