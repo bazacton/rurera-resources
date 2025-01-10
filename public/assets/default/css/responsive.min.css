@@ -1482,7 +1482,7 @@ Lms Responsive Style Start
     .home-sections:has(.blog-grid-card) .d-flex {flex-wrap: wrap; gap: 10px 0;}
     .plan-inner {padding-right: 25px;}
     .login-option-tabs .nav-tabs button {
-        padding: 8px 12px;
+        padding: 8px 8px;
         font-size: 14px;
         gap: 8px;
     }
