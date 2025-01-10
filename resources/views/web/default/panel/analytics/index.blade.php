@@ -301,6 +301,7 @@ $(function () {
       parentEl: '.analytics-dropdown',
       opens: 'left',
       ranges: dateRanges,
+      autoApply: false,
       isInvalidDate: function (date) {
         // Sunday Disabled
         return date.day() == 0;
