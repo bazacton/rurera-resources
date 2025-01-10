@@ -301,13 +301,20 @@ $(function () {
       parentEl: '.analytics-dropdown',
       opens: 'left',
       ranges: dateRanges,
-      autoApply: true,
+      autoApply: false,
+      drops: "auto",
       isInvalidDate: function (date) {
         // Sunday Disabled
         return date.day() == 0;
       }
     },
   );
+  $(document).on("mousedown.daterangepicker", function (e) {
+    var container = $(".daterangepicker");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      e.stopPropagation(); // Prevent the click from propagating
+    }
+  });
 });
 
 function reset() {
