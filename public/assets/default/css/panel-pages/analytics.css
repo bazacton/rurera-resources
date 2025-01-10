@@ -147,6 +147,12 @@ Sub Pages Style
   width: 100%;
   margin-left: -10px;
 }
+.date-range-box .daterangepicker .ranges ul {
+  width: 100%;
+}
+.date-range-box .daterangepicker .ranges {
+  width: 100%;
+}
 /***************************
 Analytics Page | Student Panel Style End
   ***************************/
