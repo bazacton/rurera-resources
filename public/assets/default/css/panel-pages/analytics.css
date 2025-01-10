@@ -145,6 +145,7 @@ Sub Pages Style
 }
 .date-range-box .daterangepicker {
   width: 100%;
+  margin-left: -10px;
 }
 /***************************
 Analytics Page | Student Panel Style End
