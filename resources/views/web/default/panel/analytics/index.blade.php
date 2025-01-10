@@ -110,7 +110,14 @@
             </div>
             <div class="date-range-holder">
                 <h5>Date</h5>
-                <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+            </div>
+            <div class="custom-dropdown">
+                <input type="text" type="text" name="daterange" value="01/01/2018 - 01/15/2018" id="dropdown-input" placeholder="Type or select an option" oninput="filterOptions()" />
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <div class="dropdown-item" onclick="selectOption('Option 1')">Option 1</div>
+                    <div class="dropdown-item" onclick="selectOption('Option 2')">Option 2</div>
+                    <div class="dropdown-item" onclick="selectOption('Option 3')">Option 3</div>
+                </div>
             </div>
         </div>
         <div class="analytics-header">
@@ -280,6 +287,26 @@
 
     });
 
+</script>
+<script>
+  function filterOptions() {
+    const input = document.getElementById("dropdown-input");
+    const filter = input.value.toLowerCase();
+    const menu = document.getElementById("dropdown-menu");
+    const items = menu.getElementsByClassName("dropdown-item");
+    for (let item of items) {
+      if (item.textContent.toLowerCase().includes(filter)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    }
+  }
+
+  function selectOption(value) {
+    document.getElementById("dropdown-input").value = value;
+    document.getElementById("dropdown-menu").style.display = "none";
+  }
 </script>
 <script>
 $(function() {
