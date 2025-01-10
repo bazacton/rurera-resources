@@ -182,7 +182,12 @@ Sub Pages Style
     font-size: 14px;
     border-radius: 3px;
 }
-
+.activities-container .card-header span {
+  margin: 0 0 0 10px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #666;
+}
 /***************************
 Analytics Page | Student Panel Style End
   ***************************/
