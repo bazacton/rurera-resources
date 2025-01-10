@@ -131,6 +131,9 @@ Sub Pages Style
     gap: 10px;
     flex-wrap: wrap;
 }
+.analytics-dropdown .daterangepicker {
+  margin-right: -30px;
+}
 .date-range-box {
     background: url(/assets/default/svgs/arrow-select.svg) no-repeat 95% 50%;
     background-size: 15px;
