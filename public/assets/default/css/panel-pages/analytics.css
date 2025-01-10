@@ -134,7 +134,7 @@ Sub Pages Style
   padding: 0;
 }
 .time-info-list {
-  padding: 0 25px;
+  padding: 0 25px 25px;
 }
 .time-info-list ul {
   display: flex;
