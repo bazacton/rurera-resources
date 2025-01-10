@@ -894,6 +894,9 @@ Lms Responsive Style Start
     .filters-list .tests-list li.active,
     .tests-list li.active,
     .listing-search .inline-filters li.active a:not(.wizard-steps .listing-search .inline-filters li.active a) {box-shadow: none; border: 0;}
+    .filters-list .analytics-type .active a {
+        color: #1b85fd;
+    }
     .filters-list .tests-list li,
     .tests-list li, .listing-search .inline-filters li:not(.wizard-steps .listing-search .inline-filters li) {flex-direction: row; min-height: auto; justify-content: flex-start; border: 0;}
     .chart-filters .form-group {width: 50%; padding-left: 8px;}
@@ -1184,6 +1187,24 @@ Lms Responsive Style Start
     }
     .date-range-holder input {
         height: 30px;
+    }
+    #profile-image-modal .close {
+        right: 5px;
+        top: 5px;
+    }
+    #profile-image-modal .svga-glob-controls {
+        width: 12.5%;
+    }
+    #userSettingForm #profile-image-modal #svga-container.svga-light {
+        padding-top: 0;
+    }
+    #profile-image-modal .svga-row.row-colors,
+    #profile-image-modal .svga-row.row-elements,
+    #profile-image-modal .svga-row.row-glob-controls {
+        margin: 0 -10px;
+    }
+    div#profile-image-modal {
+        padding-right: 0 !important;
     }
 }
 
@@ -1534,7 +1555,18 @@ Lms Responsive Style Start
     .spell-levels li > a:before {height: 100%; margin-top: 14px;}
     .panel-content .template-grid .text-holder a {display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 5px;}
     .panel-content .grid-card .title-label, .login-options .coming-soon {margin: 0;}
-    .school-zone-students [class*="col-"] {flex: 0 0 100%; max-width: 100%;}
+    .school-zone-students [class*="col-"] {padding: 0 5px;}
+    .userthumb .userthumb-text, .student-block-text {
+        padding: 10px 5px 5px;
+
+    }
+    .student-block-text .user-name {
+        font-size: 14px;
+    }
+    .student-rank span img {
+        width: 12px;
+        height: 12px;
+    }
     .user-profile-icons ul {gap: 2px;}
     .user-profile-icons li strong {padding: 4px 5px;}
     body .panel-content .container .row [class*="col-"].panel-right-sidebar {padding-left: 0; padding-right: 0;}
