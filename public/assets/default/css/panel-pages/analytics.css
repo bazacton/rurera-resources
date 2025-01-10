@@ -120,7 +120,9 @@ Sub Pages Style
   text-transform: uppercase;
   max-width: 150px;
   font-size: 14px;
-  font-weight: 500;
+  background: url(/assets/default/svgs/arrow-select.svg) no-repeat 95% 50%;
+  background-size: 10%;
+  cursor: pointer;
 }
 /***************************
 Analytics Page | Student Panel Style End
