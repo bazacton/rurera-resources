@@ -124,6 +124,17 @@ Sub Pages Style
   background-size: 10%;
   cursor: pointer;
 }
+.date-range-holder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.date-range-holder input {
+  border: 1px solid #ddd;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
 /***************************
 Analytics Page | Student Panel Style End
   ***************************/
