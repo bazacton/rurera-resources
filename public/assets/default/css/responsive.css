@@ -1545,6 +1545,10 @@ Lms Responsive Style Start
     .student-block-text .user-name {
         font-size: 14px;
     }
+    .student-rank span img {
+        width: 12px;
+        height: 12px;
+    }
     .user-profile-icons ul {gap: 2px;}
     .user-profile-icons li strong {padding: 4px 5px;}
     body .panel-content .container .row [class*="col-"].panel-right-sidebar {padding-left: 0; padding-right: 0;}
