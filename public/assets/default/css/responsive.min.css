@@ -1171,6 +1171,20 @@ Lms Responsive Style Start
     .stages-items {
         position: initial;
     }
+    .analytics-dropdown select,
+    .date-range-box,
+    .analytics-dropdown .select-box,
+    .analytics-dropdown .select-holder,
+    .date-range-holder {
+        max-width: 100%;
+        width: 100%;
+    }
+    .analytics-dropdown select {
+        padding: 15px 10px;
+    }
+    .date-range-holder input {
+        height: 48px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -1476,7 +1490,6 @@ Lms Responsive Style Start
         height: 15px;
         width: 15px;
     }
-    
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
