@@ -154,6 +154,33 @@ Sub Pages Style
 .time-info-list ul li:last-child {
   border-radius: 0 5px 5px 0;
 }
+.time-info-list .infobox strong {
+    margin: 0 0 5px;
+    display: block;
+    line-height: normal;
+    font-weight: 500;
+}
+.time-info-list .infobox strong em {
+    font-style: normal;
+}
+.time-info-list .infobox p {
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+.time-info-list .infobox a {
+    font-size: 14px;
+    text-decoration: underline;
+}
+.time-info-list .view-btn {
+    background-color: var(--blue);
+    color: var(--white);
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    padding: 5px 12px;
+    font-size: 14px;
+    border-radius: 3px;
+}
 
 /***************************
 Analytics Page | Student Panel Style End
