@@ -1188,6 +1188,10 @@ Lms Responsive Style Start
     .date-range-holder input {
         height: 30px;
     }
+    #profile-image-modal .close {
+        right: 5px;
+        top: 5px;
+    }
 }
 
 @media screen and (max-width: 640px) {
