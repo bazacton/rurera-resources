@@ -268,13 +268,6 @@
 
 </script>
 <script>
-
-var start = moment().subtract(31, "days");
-var end = moment();
-
-var reset_start = moment().startOf("month");
-var reset_end = moment().endOf("month");
-
 $(function () {
   var dateRanges = new Array();
 
@@ -296,8 +289,8 @@ $(function () {
 
   $("#reportrange1").daterangepicker(
     {
-      startDate: start,
-      endDate: end,
+      startDate: moment().subtract(31, "days"),
+      endDate: moment(),
       parentEl: '.analytics-dropdown',
       opens: 'left',
       ranges: dateRanges,
@@ -307,29 +300,40 @@ $(function () {
         // Sunday Disabled
         return date.day() == 0;
       }
-    },
+    }
   );
-  $(document).on("mousedown.daterangepicker", function (e) {
+
+  // Prevent closing when clicking outside
+  $(document).on("mousedown", function (e) {
     var container = $(".daterangepicker");
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      e.stopPropagation(); // Prevent the click from propagating
+    var input = $("#reportrange1");
+    if (
+      !container.is(e.target) && 
+      container.has(e.target).length === 0 && 
+      !input.is(e.target) && 
+      input.has(e.target).length === 0
+    ) {
+      e.stopPropagation();
     }
   });
 });
 
 function reset() {
- 
+  var reset_start = moment().startOf("month");
+  var reset_end = moment().endOf("month");
+
   $("#reportrange1").data("daterangepicker").setStartDate(reset_start);
   $("#reportrange1").data("daterangepicker").setEndDate(reset_end);
 
   $(".daterangepicker.show-calendar").removeClass("show-calendar");
 
   $("#reportrange1").val(
-    moment(start).format("MM/DD/YYYY") +
+    moment(reset_start).format("MM/DD/YYYY") +
       " - " +
-      moment(end).format("MM/DD/YYYY")
+      moment(reset_end).format("MM/DD/YYYY")
   );
 }
+
 </script>
 
 @endpush
