@@ -1201,6 +1201,9 @@ Lms Responsive Style Start
     #profile-image-modal #userSettingForm #svga-container.svga-light {
         padding-top: 0;
     }
+    #profile-image-modal .svga-row.row-colors {
+        margin: 0 -10px;
+    }
 }
 
 @media screen and (max-width: 640px) {
