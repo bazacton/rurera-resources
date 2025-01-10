@@ -94,7 +94,9 @@
             </div>
             <div class="date-range-holder">
                 <h5>Date Range</h5>
-                <input type="text" id="reportrange1">
+                <div class="date-range-box">
+                    <input type="text" id="reportrange1">
+                </div>
             </div>
         </div>
         <div class="analytics-header">
