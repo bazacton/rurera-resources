@@ -122,7 +122,7 @@ Sub Pages Style
   max-width: 150px;
   font-size: 14px;
   background: url(/assets/default/svgs/arrow-select.svg) no-repeat 95% 50%;
-  background-size: 10%;
+  background-size: 15px;
   cursor: pointer;
 }
 .date-range-holder {
