@@ -94,24 +94,7 @@
             </div>
             <div class="select-holder">
                 <h5>Date Range</h5>
-                <div class="select-box">
-                    <select>
-                        <option value="Last 30 Days">Last 30 Days</option>
-                        <option value="Today">Today</option>
-                        <option value="Yesterday">Yesterday</option>
-                        <option value="Last 7 days">Last 7 days</option>
-                        <option value="This month">This month</option>
-                        <option value="Last 30 days">Last 30 days</option>
-                        <option value="This year(2025)">This year(2025)</option>
-                        <option value="All time">All time</option>
-                        <option value="Custom range [From - To]">Custom range [From - To]</option>
-                    </select>
-                </div>
-            </div>
-            <div class="date-range-holder">
-                <h5>Date</h5>
                 <input type="text" id="reportrange1">
-                <input type="text" id="reportrange2">
             </div>
         </div>
         <div class="analytics-header">
@@ -283,19 +266,12 @@
 
 </script>
 <script>
+
 var start = moment().subtract(29, "days");
 var end = moment();
 
 var reset_start = moment().startOf("month");
 var reset_end = moment().endOf("month");
-
-$("#log").append(
-  "Initial: " +
-    moment(start).format("MM/DD/YYYY") +
-    " - " +
-    moment(end).format("MM/DD/YYYY") +
-    "<br>"
-);
 
 $(function () {
   var dateRanges = new Array();
@@ -326,37 +302,6 @@ $(function () {
         return date.day() == 0;
       }
     },
-    function (start, end, label) {
-      var start_date = start.format("MM/DD/YYYY");
-      var end_date = end.format("MM/DD/YYYY");
-      $("#reportrange2").val(start_date + " - " + end_date);
-
-      $("#reportrange2").data("daterangepicker").setStartDate(start_date);
-      $("#reportrange2").data("daterangepicker").setEndDate(end_date);
-    }
-  );
-
-  $("#reportrange2").daterangepicker(
-    {
-      startDate: start,
-      endDate: end,
-      ranges: dateRanges,
-      isInvalidDate: function (date) {
-        // Sunday Disabled
-        return date.day() == 0;
-      }
-    },
-    function (start, end, label) {
-      var start_date = start.format("MM/DD/YYYY");
-      var end_date = end.format("MM/DD/YYYY");
-      $("#reportrange1").val(start_date + " - " + end_date);
-      $("#log").append(
-        "p2: " + label + " = " + start_date + " - " + end_date + "<br>"
-      );
-
-      $("#reportrange1").data("daterangepicker").setStartDate(start_date);
-      $("#reportrange1").data("daterangepicker").setEndDate(end_date);
-    }
   );
 });
 
