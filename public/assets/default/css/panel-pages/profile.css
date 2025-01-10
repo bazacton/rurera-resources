@@ -53,10 +53,9 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
     z-index: 1;
 }
 #profile-image-modal .close span {
-    vertical-align: middle;
-    display: inline-block;
     height: 20px;
     width: 20px;
+    line-height: 18px;
 }
 /*Edit Profile Style Start*/
 .panel-content-holder .userSettingForm {width: 100%;}
