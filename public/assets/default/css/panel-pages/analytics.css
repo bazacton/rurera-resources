@@ -145,7 +145,8 @@ Sub Pages Style
   width: 33%;
   border: 1px solid #ddd;
   border-left: 0;
-  padding: 15px;
+  padding: 15px 15px 20px;
+  position: relative;
 }
 .time-info-list ul li:first-child {
   border-left: 1px solid #ddd;
