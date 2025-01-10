@@ -135,10 +135,12 @@ Sub Pages Style
     border: 1px solid #ddd;
     padding: 5px 30px 5px 10px;
     border-radius: 3px;
+    cursor: pointer;
 }
 .date-range-holder input {
   font-size: 14px;
   border: 0;
+  width: 100%;
 }
 /***************************
 Analytics Page | Student Panel Style End
