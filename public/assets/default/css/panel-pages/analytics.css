@@ -128,6 +128,8 @@ Sub Pages Style
   display: flex;
   align-items: center;
   gap: 10px;
+  background: url(/assets/default/svgs/arrow-select.svg) no-repeat 95% 50%;
+  background-size: 10%;
 }
 .date-range-holder input {
   border: 1px solid #ddd;
