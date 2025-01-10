@@ -1204,6 +1204,9 @@ Lms Responsive Style Start
     #profile-image-modal .svga-row.row-colors {
         margin: 0 -10px;
     }
+    div#profile-image-modal {
+        padding-right: 0 !important;
+    }
 }
 
 @media screen and (max-width: 640px) {
