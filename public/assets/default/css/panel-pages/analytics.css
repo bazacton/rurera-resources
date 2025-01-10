@@ -142,6 +142,7 @@ Sub Pages Style
   font-size: 14px;
   border: 0;
   width: 100%;
+  cursor: pointer;
 }
 .date-range-box .daterangepicker {
   width: 100%;
