@@ -132,7 +132,7 @@ Sub Pages Style
 }
 .date-range-box {
     background: url(/assets/default/svgs/arrow-select.svg) no-repeat 95% 50%;
-    background-size: 8%;
+    background-size: 15px;
     border: 1px solid #ddd;
     padding: 5px 30px 5px 10px;
     border-radius: 3px;
