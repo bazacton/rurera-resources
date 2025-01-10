@@ -112,10 +112,15 @@ Sub Pages Style
     text-transform: capitalize;
 }
 .analytics-dropdown select {
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    padding: 5px 10px;
-    min-width: 150px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 5px 10px;
+  min-width: 150px;
+  appearance: none;
+  text-transform: uppercase;
+  max-width: 150px;
+  font-size: 14px;
+  font-weight: 500;
 }
 /***************************
 Analytics Page | Student Panel Style End
