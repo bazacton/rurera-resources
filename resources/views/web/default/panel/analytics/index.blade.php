@@ -112,7 +112,6 @@
                 <h5>Date</h5>
                 <input type="text" id="reportrange1">
                 <input type="text" id="reportrange2">
-                <div id="log"></div>
             </div>
         </div>
         <div class="analytics-header">
@@ -331,9 +330,6 @@ $(function () {
       var start_date = start.format("MM/DD/YYYY");
       var end_date = end.format("MM/DD/YYYY");
       $("#reportrange2").val(start_date + " - " + end_date);
-      $("#log").append(
-        "p1: " + label + " = " + start_date + " - " + end_date + "<br>"
-      );
 
       $("#reportrange2").data("daterangepicker").setStartDate(start_date);
       $("#reportrange2").data("daterangepicker").setEndDate(end_date);
@@ -365,13 +361,7 @@ $(function () {
 });
 
 function reset() {
-  $("#log").append(
-    "Reset to: " +
-      moment(reset_start).format("MM/DD/YYYY") +
-      " - " +
-      moment(reset_end).format("MM/DD/YYYY") +
-      "<br>"
-  );
+ 
   $("#reportrange1").data("daterangepicker").setStartDate(reset_start);
   $("#reportrange1").data("daterangepicker").setEndDate(reset_end);
 
