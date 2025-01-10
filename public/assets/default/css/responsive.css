@@ -1494,6 +1494,27 @@ Lms Responsive Style Start
         max-width: 100%;
         flex: 0 0 100%;
     }
+    .analytics-dropdown .daterangepicker .drp-selected {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 10px;
+    }
+    .analytics-dropdown .daterangepicker.show-calendar .drp-buttons {
+        display: inline-block;
+        height: 100%;
+        padding: 10px;
+    }
+    .analytics-dropdown .daterangepicker .drp-buttons .cancelBtn {
+        float: left;
+        margin: 0;
+        height: auto;
+        padding: 10px 0;
+    }
+    .analytics-dropdown .daterangepicker .drp-buttons .applyBtn {
+        padding: 10px 10px;
+        height: auto;
+        float: right;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
