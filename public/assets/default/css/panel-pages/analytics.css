@@ -113,6 +113,29 @@ Sub Pages Style
   padding: 6px 10px;
   line-height: normal;
 }
+.time-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 15px;
+  background-color: #f8f8f8;
+  padding: 10px 25px;
+}
+.time-nav ul li a {
+  font-weight: 500;
+}
+.time-nav ul li em {
+  color: #bbb;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 0 0 5px;
+}
+.time-card .card-body {
+  padding: 0;
+}
+.time-info-list {
+  padding: 0 25px;
+}
 
 /***************************
 Analytics Page | Student Panel Style End
