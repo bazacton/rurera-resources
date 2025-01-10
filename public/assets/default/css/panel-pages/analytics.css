@@ -136,6 +136,24 @@ Sub Pages Style
 .time-info-list {
   padding: 0 25px;
 }
+.time-info-list ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.time-info-list ul li {
+  width: 33%;
+  border: 1px solid #ddd;
+  border-left: 0;
+  padding: 15px;
+}
+.time-info-list ul li:first-child {
+  border-left: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+}
+.time-info-list ul li:last-child {
+  border-radius: 0 5px 5px 0;
+}
 
 /***************************
 Analytics Page | Student Panel Style End
