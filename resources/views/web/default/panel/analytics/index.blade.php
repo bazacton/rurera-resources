@@ -299,6 +299,7 @@ $(function () {
       startDate: start,
       endDate: end,
       parentEl: '.analytics-dropdown',
+      opens: 'right',
       ranges: dateRanges,
       isInvalidDate: function (date) {
         // Sunday Disabled
