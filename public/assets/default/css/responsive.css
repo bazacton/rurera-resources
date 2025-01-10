@@ -894,6 +894,9 @@ Lms Responsive Style Start
     .filters-list .tests-list li.active,
     .tests-list li.active,
     .listing-search .inline-filters li.active a:not(.wizard-steps .listing-search .inline-filters li.active a) {box-shadow: none; border: 0;}
+    .filters-list .analytics-type .active a {
+        color: #1b85fd;
+    }
     .filters-list .tests-list li,
     .tests-list li, .listing-search .inline-filters li:not(.wizard-steps .listing-search .inline-filters li) {flex-direction: row; min-height: auto; justify-content: flex-start; border: 0;}
     .chart-filters .form-group {width: 50%; padding-left: 8px;}
