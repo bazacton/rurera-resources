@@ -129,6 +129,7 @@ Sub Pages Style
   display: flex;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .date-range-box {
     background: url(/assets/default/svgs/arrow-select.svg) no-repeat 95% 50%;
