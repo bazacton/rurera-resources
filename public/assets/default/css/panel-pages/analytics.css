@@ -98,6 +98,25 @@ Sub Pages Style
 .rurera-hide {
   display: none;
 }
+.analytics-dropdown .select-holder {display: flex;align-items: center;flex-wrap: wrap;gap: 10px;}
+.analytics-dropdown {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 0 30px;
+}
+.analytics-dropdown h5 {
+    color: #333;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.analytics-dropdown select {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px 10px;
+    min-width: 150px;
+}
 /***************************
 Analytics Page | Student Panel Style End
   ***************************/
