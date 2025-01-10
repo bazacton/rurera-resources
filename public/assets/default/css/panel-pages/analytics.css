@@ -98,6 +98,21 @@ Sub Pages Style
 .rurera-hide {
   display: none;
 }
+.activities-container .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.activities-container .card-header .card-toolbar a {
+  background-color: var(--blue);
+  border-radius: 3px;
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 6px 10px;
+  line-height: normal;
+}
 
 /***************************
 Analytics Page | Student Panel Style End
