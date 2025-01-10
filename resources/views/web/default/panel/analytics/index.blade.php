@@ -67,19 +67,7 @@
 
         <div class="analytics-dropdown">
             <div class="select-holder">
-                <h5>Skill Set</h5>
-                <div class="select-box">
-                    <select>
-                        <option value="All skills">All skills</option>
-                        <option value="Learn">Learn</option>
-                        <option value="Timetable">Timetable</option>
-                        <option value="Tests">Tests</option>
-                        <option value="Books">Books</option>
-                    </select>
-                </div>
-            </div>
-            <div class="select-holder">
-                <h5>SUBJECT</h5>
+                <h5>Subject</h5>
                 <div class="select-box">
                     <select>
                         <option value="All subjects">All subjects</option>
