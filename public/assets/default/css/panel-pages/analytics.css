@@ -124,6 +124,37 @@ Sub Pages Style
   background-size: 10%;
   cursor: pointer;
 }
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+}
+
+#dropdown-input {
+  width: 100%;
+  padding: 8px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  display: none;
+}
+
+.dropdown-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
 /***************************
 Analytics Page | Student Panel Style End
   ***************************/
