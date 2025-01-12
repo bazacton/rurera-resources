@@ -608,8 +608,6 @@ Lms Responsive Style Start
 }
 
 @media screen and (min-width: 767px) and (max-width: 1600px) {
-    .db-members .list-group .rurera-tables-list,
-    .db-members .list-group {width: 1100px;}
     .db-members .list-group:has(.rurera-tables-list) {width: 100%;}
     .db-members .card .card-body .list-group:has(.rurera-tables-list) {padding: 42px 0 0; overflow: hidden; overflow-x: auto;}
     .db-members .card .card-body {padding: 35px 0 0; overflow: hidden; overflow-x: auto;}
