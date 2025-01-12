@@ -1226,6 +1226,10 @@ Lms Responsive Style Start
     .categories-card.medium .categories-text .categories-title {
         margin: 0 0 5px;
     }
+    .topics-table {
+        overflow: hidden;
+        overflow-x: auto;
+    }
 }
 
 @media screen and (max-width: 640px) {
