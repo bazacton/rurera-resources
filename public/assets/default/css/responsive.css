@@ -140,7 +140,6 @@ Lms Responsive Style Start
     .job-singup-sub-header h1 {font-size: 3rem !important;}
     .job-singup-sub-header h2 {font-size: 1.5rem !important;}
     .navbar1 {padding-left: 0; padding-right: 0;}
-    .db-members .rurera-tabs-frontend {margin-bottom: 30px;}
 }
 @media screen and (min-width: 992px) and (max-width: 1300px) {
     .stats-list ul li {border-left: 0;width: 100%;padding: 0 0 15px;margin: 0 0 15px;text-align: left;border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
@@ -456,7 +455,7 @@ Lms Responsive Style Start
     body #progbar {margin-top: 0;}
     .container-fluid.read-quiz-content .quiz-status-bar {padding-top: 30px;}
     .read-quiz-content .spell-quiz-page .quiz-status-bar {margin-top: 10px;}
-    .db-members .rurera-tabs-frontend {padding-bottom: 30px !important;}
+    .db-members .rurera-tabs-frontend {margin-bottom: 0;}
     body .learning-page.type-sats .left-content {height: auto; overflow: visible;}
     body .populated-data .questions-select-number li {flex-basis: 31%;}
     body .wizard-steps .radio-buttons .card-radio:has(img) {width: 18.222%;}
@@ -941,7 +940,6 @@ Lms Responsive Style Start
     .col-6:has(.range-slider) {flex: 0 0 100%; max-width: 100%;}
     .practice-quiz-topics-list .col-4 {flex: 0 0 100%; max-width: 100%;}
     body .wizard-steps .radio-buttons .card-radio {min-height: auto;}
-    .db-members .rurera-tabs-frontend {padding-bottom: 30px !important;}
     .user-detail .info-text {margin-bottom: 20px;}
     .db-members .card .list-group-item .listing-title {display: inline-block; position: initial;}
     .db-members .card .list-group-item .row .col-auto:first-child .listing-title {display: none;}
