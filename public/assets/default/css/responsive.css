@@ -1209,6 +1209,13 @@ Lms Responsive Style Start
     .dashboard-students-holder .member-card-header .dropdown {
         padding-top: 10px;
     }
+    .categories-card.medium {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .categories-card.medium .categories-text {
+        padding-left: 15px;
+    }
 }
 
 @media screen and (max-width: 640px) {
