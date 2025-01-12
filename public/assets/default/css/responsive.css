@@ -1230,6 +1230,14 @@ Lms Responsive Style Start
         overflow: hidden;
         overflow-x: auto;
     }
+    .panel-content .template-grid .text-holder {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    .panel-content .timestables-mode-content [class*="col-"]:has(.simple-table) {
+        overflow: hidden;
+        overflow-x: auto;
+    }
 }
 
 @media screen and (max-width: 640px) {
