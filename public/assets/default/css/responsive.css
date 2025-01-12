@@ -1216,6 +1216,16 @@ Lms Responsive Style Start
     .categories-card.medium .categories-text {
         padding-left: 15px;
     }
+    .categories-card.medium .learning-btn {
+        position: inherit;
+        transform: none;
+        text-align: left;
+        display: block;
+        margin: 0 0 5px;
+    }
+    .categories-card.medium .categories-text .categories-title {
+        margin: 0 0 5px;
+    }
 }
 
 @media screen and (max-width: 640px) {
