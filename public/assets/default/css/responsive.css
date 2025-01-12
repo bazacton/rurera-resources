@@ -451,7 +451,8 @@ Lms Responsive Style Start
     .user-profile-icons li.dropdown:hover strong:before, 
     .user-profile-icons li.dropdown:hover strong:after {visibility: visible;opacity: 1;}
     body .question-layout-block form.question-fields .questions-nav-controls {background-color: #fff; left: 0; width: 100%; margin-bottom: 0 !important; padding: 0 15px 0 30px;}
-    .member-card-header {/*padding-top: 50px;*/ padding-bottom: 20px !important;}
+    .member-card-header {padding: 15px 15px !important;}
+    .db-members .rurera-tabs-frontend li {font-size: 14px !important; padding: 5px 10px;}
     body #progbar {margin-top: 0;}
     .container-fluid.read-quiz-content .quiz-status-bar {padding-top: 30px;}
     .read-quiz-content .spell-quiz-page .quiz-status-bar {margin-top: 10px;}
@@ -808,7 +809,7 @@ Lms Responsive Style Start
     .db-members .list-group .rurera-tables-list, 
     .db-members .list-group {background-color: inherit; border: 0;}
     .db-members .card .list-group-item,
-    .db-members .card .list-group-item:last-child {padding: 15px; margin-bottom: 25px; border: 1px solid #ddd; background-color: #fff; border-radius: 10px;}
+    .db-members .card .list-group-item:last-child {padding: 15px; margin-bottom: 0; border:0; border-bottom: 1px solid #ddd; background-color: #fff; border-radius: 0;}
     .db-members .list-group-item .switch-user-btn,
     .db-form-tabs .list-group-item .connect-user-btn{margin-top: 5px;}
     .rewards-layout-box.column-3 .row {grid-template-columns: 1fr 1fr;}
@@ -1440,8 +1441,7 @@ Lms Responsive Style Start
     .payment-card {min-width: 100%;}
     .detail-header-profile .profile-controls {gap: 5px 18px; margin-top: 15px;}
     .form-control.child-analytics {height: 49px; border-radius: 5px; border: 1px solid #ddd;}
-    .member-card-header .dropdown {margin-left: 0; margin-top: 15px;}
-    .member-card-header .d-flex {flex-direction: column;}
+    .member-card-header .dropdown {margin-left: 0;}
     .lms-quiz-section .input-holder:has(input[type="number"]) {max-width: min-content; min-width: 90px;}
     .lms-quiz-section .input-holder input.small,
     .input-holder .input-label ~ input[type="number"].input-simple {width: 100%;}
@@ -1582,7 +1582,6 @@ Lms Responsive Style Start
     .spell-levels .treasure-stage li > a {height: 40px; width: 38px;}
     .spell-levels .treasure-stage li > a img {max-width: 50%;}
     .login-password form {margin-bottom: 15px;}
-    .db-members .card .list-group-item {padding-bottom: 15px;}
     .edit-profile-top {gap: 15px;}
     .notification-card .text-right {text-align: center !important;}
     .detail-body .profile-inner, .edit-info-list .subscribe-plan {max-width: 100%; min-width: auto;}
