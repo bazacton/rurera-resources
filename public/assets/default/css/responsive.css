@@ -450,7 +450,7 @@ Lms Responsive Style Start
     .user-profile-icons li.dropdown:hover strong:before, 
     .user-profile-icons li.dropdown:hover strong:after {visibility: visible;opacity: 1;}
     body .question-layout-block form.question-fields .questions-nav-controls {background-color: #fff; left: 0; width: 100%; margin-bottom: 0 !important; padding: 0 15px 0 30px;}
-    .member-card-header {padding: 15px 15px !important;}
+    .member-card-header {padding: 15px 15px !important; margin-bottom: 0;}
     .db-members .rurera-tabs-frontend li {font-size: 14px !important; padding: 5px 10px;}
     body #progbar {margin-top: 0;}
     .container-fluid.read-quiz-content .quiz-status-bar {padding-top: 30px;}
@@ -1202,6 +1202,12 @@ Lms Responsive Style Start
     }
     div#profile-image-modal {
         padding-right: 0 !important;
+    }
+    .dashboard-students-holder .d-flex {
+        flex-wrap: wrap;
+    }
+    .dashboard-students-holder .member-card-header .dropdown {
+        padding-top: 10px;
     }
 }
 
