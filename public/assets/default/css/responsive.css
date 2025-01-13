@@ -958,7 +958,7 @@ Lms Responsive Style Start
     .list-group-item span, .list-group-item strong {font-size: .875rem !important;}
     .populated-data .questions-select-number label {min-height: 45px; padding: 0 15px;}
     body .populated-data .questions-select-number {max-width: 100%;}
-    .save-plan {margin: 40px 0 0 0; width: 45%; right: -50px; left: auto;}
+    .save-plan {margin: 45px 0 0 0; width: 45%; right: -20px; left: auto;}
     .save-plan span:before {width: 35px; height: 20px; top: 0; background-size: 100%; transform: rotate(45deg);}
     .save-plan span {padding-left: 35px;}
     .table-responsive.rewards-table {overflow: hidden; border: 1px solid #ddd; border-radius: 6px;}
