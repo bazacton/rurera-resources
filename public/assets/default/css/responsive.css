@@ -427,7 +427,8 @@ Lms Responsive Style Start
     .panel-sidebar .container {display: flex; align-items: center; justify-content: space-around; gap: 15px;}
     .panel-sidebar .user-profile-icons ul {gap: 0; justify-content: space-around;}
     .panel-content .panel-content-holder {max-width: 100%; flex: 0 0 100%;}
-    .result-layout-summary .sats-summary [class*="col-"] {border-bottom: 1px solid #e1e1e1;flex: 0 0 50%;max-width: 50%;}
+    .result-layout-summary .sats-summary [class*="col-"],
+    .finish-steps .result-layout-summary .sats-summary [class*="col-"] {border-bottom: 1px solid #e1e1e1;flex: 0 0 50%;max-width: 50%;}
     .panel-content {padding-left: 0; padding-right: 0;}
     .quiz-topbar [class*="col-"] {flex: 0 0 100%; max-width: 100%; text-align: center;}
     .user-profile-icons ul .menu-button-mobile,
@@ -1492,7 +1493,8 @@ Lms Responsive Style Start
     .item-text {text-align: center;}
     .rewards-tier-box [class*="col-"] {padding: 0 0 20px;}
     .product-tabs .product-card {padding: 0;}
-    .result-layout-summary .sats-summary [class*="col-"] {flex: 0 0 100%; max-width: 100%;}
+    .result-layout-summary .sats-summary [class*="col-"],
+    .finish-steps .result-layout-summary .sats-summary [class*="col-"] {flex: 0 0 100%; max-width: 100%;}
     .lms-library-slider figure {text-align: center;}
     .lms-books-listing .listing-card {text-align: center;}
     .lms-books-listing .listing-card .img-holder {margin: 0 0 20px;}
