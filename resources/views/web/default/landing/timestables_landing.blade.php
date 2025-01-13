@@ -144,7 +144,7 @@
             </div>
         </div>
     </section>
-    <section class="choose-sats pt-80">
+    <section class="choose-sats pt-50">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 col-md-6">
