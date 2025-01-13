@@ -1244,6 +1244,9 @@ Lms Responsive Style Start
     .categories-card.active, .categories-card:hover {
         transform: scaleX(1);
     }
+    .subscribe-plan:hover {
+        top: 0;
+    }
 }
 
 @media screen and (max-width: 640px) {
