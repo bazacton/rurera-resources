@@ -891,6 +891,13 @@ body:has(.edit-profile) {
 .question-result-layout .form-field.correct,
 .question-result-layout .form-field.wrong {border-radius: 10px;}
 .question-result-layout .form-field.correct input[type="checkbox"]:checked ~ label {background-color: inherit;}
+.status-in-words span {font-size: 16px;position: relative;display: inline-flex;align-items: center;}
+.status-in-words {display: flex;align-items: center;gap: 50px;margin-bottom: 30px;}
+.status-in-words span:before {content: "";display: inline-block;vertical-align: middle;height: 18px;width: 18px;margin-right: 8px; box-shadow: 0 0 4px rgba(0,0,0,0.4) inset;}
+.status-in-words .st-wrong:before {background-color: #dc160b;}
+.status-in-words .st-slow:before {background-color: #e29312;}
+.status-in-words .st-ok:before {background-color: #c8d022;}
+.status-in-words .st-fast:before {background-color: #43d21d;}
 /*Field row style start*/ 
 .rurera-in-row {display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start; justify-content: flex-start;}
 .rurera-in-row .rurera-in-row {width: 100%;}
