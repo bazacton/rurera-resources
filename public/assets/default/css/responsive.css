@@ -1238,6 +1238,9 @@ Lms Responsive Style Start
         overflow: hidden;
         overflow-x: auto;
     }
+    .find-instructor-section.pt-100 {
+        padding-top: 30px !important;
+    }
 }
 
 @media screen and (max-width: 640px) {
