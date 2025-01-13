@@ -386,6 +386,7 @@ Home Choose Sats Style Start
 .choose-sats .row .row [class*="col-"] {padding: 0 5px 10px;}
 .choose-sats .row .row {margin: 0 -5px;}
 .choose-sats li {list-style: none;}
+.choose-sats .sats-box ul {display: flex; flex-direction: column; gap: 15px 0;}
 /********************************
 Home Choose Sats Style End
 *********************************/
