@@ -2323,7 +2323,7 @@ Lms SignUp Page Style Start
 .create-btn:hover {color: #fff;}
 .list-card.border-0 {border-bottom: 0;}
 .lms-work-list .btn-holder {padding: 0 15px;}
-.lms-testimonial-slider [class*="swiper-button-"] {display: inline-flex; margin-top: -25px; height: 50px;width: 50px;justify-content: center;align-items: center;background-color: var(--primary);border-radius: 100%;}
+.lms-testimonial-slider [class*="swiper-button-"] {display: inline-flex; margin-top: -25px; height: 50px;width: 50px;justify-content: center;align-items: center;background-color: var(--primary);background-image: none; border-radius: 100%;}
 .lms-testimonial-slider [class*="swiper-button-"]:after {font-size: 20px;color: #fff;font-weight: 700;}
 .lms-testimonial-slider .swiper-button-next {right: -10px;}
 .lms-testimonial-slider .swiper-button-prev {left: -10px;}
