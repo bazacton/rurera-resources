@@ -2587,8 +2587,9 @@ body{overflow-x: hidden;}
 .lms-accordion-modern.accordion .card .lms-img-holder {position: absolute; left: 390px; opacity: 0; -webkit-transition: 1s ease-in-out 0s; -moz-transition: 1s ease-in-out 0s; -o-transition: 1s ease-in-out 0s; transition: 1s ease-in-out 0s; visibility: hidden; top: 20px; padding-top: 0; top: 50%; transform: translateY(-50%);}
 /* Lms Feature Card Style Start */
 .lms-feature-card {display: flex; margin-bottom: 40px; padding-right: 50px;}
+.lms-feature-card.mt-50 {margin-bottom: 0;}
 .lms-feature-card figure .svg-icon {width: 60px; height: 60px; display: block; text-align: center; line-height: 60px; border-radius: 10px; transform: rotate(-4deg); margin-right: 20px;}
-.lms-feature-card figure .svg-icon img {width: 24px; height: 24px; vertical-align: middle; /*filter: invert(100%) sepia(100%) saturate(4%) hue-rotate(256deg) brightness(107%) contrast(100%);*/} 
+.lms-feature-card figure .svg-icon img {width: 24px; height: 24px; vertical-align: middle;} 
 .lms-features-section,
 .lms-text-section,
 .lms-accordion-section,
