@@ -1899,7 +1899,7 @@ Lms FAQS Style Start
 .lms-faqs .card .card-header .btn-link {height: auto; padding: 0 35px 0 0; display: block; width: 100%; text-align: left; position: relative; transition: none;}
 .lms-faqs .card .card-header .btn-link h3 {font-weight: normal; color: inherit; font-size: inherit; }
 .lms-faqs .card .card-header .btn-link:before,
-.lms-faqs .card .card-header .btn-link:after {background-color: #2d3d4d; content: " "; display: block; position: absolute; right: 10px; top: 50%; height: 2px; width: 20px; border-radius: 5px; transform: translateY(-50%) rotate(90deg); transition: transform .3s ease;}
+.lms-faqs .card .card-header .btn-link:after {background-color: #2d3d4d; content: " "; display: block; position: absolute; right: 10px; top: 50%; height: 2px; width: 15px; border-radius: 5px; transform: translateY(-50%) rotate(90deg); transition: transform .3s ease;}
 .lms-faqs .card .card-header .btn-link:after {
   transform: translateY(-50%) rotate(180deg);
 }
