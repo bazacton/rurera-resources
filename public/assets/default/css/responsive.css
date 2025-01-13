@@ -1241,6 +1241,9 @@ Lms Responsive Style Start
     .find-instructor-section.pt-100 {
         padding-top: 30px !important;
     }
+    .categories-card.active, .categories-card:hover {
+        transform: scaleX(1);
+    }
 }
 
 @media screen and (max-width: 640px) {
