@@ -148,7 +148,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent " style="background: #f6b801;color: #fff;">
+                    <div class="sats-box d-inline-flex border-solid border-transparent text-left align-items-start" style="background: #f6b801;color: #fff;">
                         <h2 class="mt-0 mb-10 font-24">Essential tool for Maths teachers</h2>
                         <p class="pt-0 font-16" style="text-align: left;">Rurera provides interactive practice sessions, personalized feedback, and engaging resources to support effective math instruction and student learning:</p><br>
                         <ul style="text-align: left;">
@@ -160,7 +160,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6">
-                    <div class="sats-box d-inline-flex border-solid border-transparent" style="background: #f35b05;color: #fff;">
+                    <div class="sats-box d-inline-flex border-solid border-transparent text-left align-items-start" style="background: #f35b05;color: #fff;">
                         <h2 class="mt-0 mb-10 font-24">Engaging, trusted and easy to use</h2>
                         <p class="pt-0 font-16" style="text-align: left;">Tailor Multiplication and Division Practice to Your Child’s Needs. Daily Quizzes, Adaptive Learning, and Fun Rewards for Consistent Progress!
                         </p><br>
