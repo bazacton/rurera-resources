@@ -435,7 +435,7 @@
         </div>
     </div>
 </section>
-<section class="lms-faqs-section mb-80 mt-90">
+<section class="lms-faqs-section mb-80">
     <div class="container">
         <div class="row">
             <div class="col-12">
