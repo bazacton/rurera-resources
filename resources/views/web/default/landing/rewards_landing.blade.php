@@ -35,7 +35,7 @@
                     </div>
             </div>
             <div class="col-12 col-lg-6 text-right">
-                <div class="home-sections home-sections-swiper container reward-program-section position-relative" style="background: 0 0; margin-top: 0;">
+                <div class="home-sections home-sections-swiper container reward-program-section position-relative mt-0" style="background: none;">
                     <div class="position-relative reward-program-section-hero-card">
                         <img
                             src="/store/1/default_images/home_sections_banners/club_points_banner.png"
