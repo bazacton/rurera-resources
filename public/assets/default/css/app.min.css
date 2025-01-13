@@ -2827,7 +2827,7 @@ Lms FAQS New Elements Style End
 .categories-box .img-holder figure img {object-fit: contain; padding: 10px; border-radius: 100%;width: 100%; height: 100%;}
 .categories-list .categories-box .post-title a,
 .categories-list .categories-box .post-title {font-size: 16px; text-decoration: none; color: var(--dark-charcoal); font-weight: 400;}
-.categories-list .categories-box .post-title{margin-bottom: 0;}
+.categories-list .categories-box .post-title{margin-bottom: 0; text-align: center;}
 .footer-banner .banner-holder {position: relative;}
 .education-icon-box li {display: inline-flex; position: absolute;}
 .education-icon-box {position: absolute;left: 50%;}
