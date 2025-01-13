@@ -1248,7 +1248,8 @@ Lms Responsive Style Start
     .subscribe-plan:hover {
         top: 0;
     }
-    .choose-sats li {
+    .choose-sats li,
+    .lms-faqs .card-body p {
         font-size: .75rem;
     }
 }
