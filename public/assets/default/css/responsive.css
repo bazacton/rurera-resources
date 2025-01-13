@@ -206,7 +206,7 @@ Lms Responsive Style Start
     .swiper-pagination {bottom: unset}
     .swiper-pagination.features-swiper-pagination {bottom: -20px}
     .feature-slider .feature-slider-body .card-title {font-size: 16px}
-    .home-sections.home-sections-swiper {margin-top: 50px;}
+    .home-sections.home-sections-swiper {margin-top: 50px; overflow: hidden;}
     .home-sections .section-title {font-size: 18px;}
     .home-sections .section-hint {font-size: 14px;}
     .subscribes-container .left-gradient-box {width: 80px; height: 80px;}
