@@ -81,7 +81,7 @@
     </div>
 </section>
 <div class="lms-job-search">
-<section class="lms-search-services mb-0 pt-0">
+<section class="lms-search-services mb-0 pt-0 has-no-bg">
     <div class="container">
         <div class="row">
             <div class="col-12">
