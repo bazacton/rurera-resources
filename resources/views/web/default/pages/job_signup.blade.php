@@ -106,6 +106,9 @@
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="process-card mt-40 mb-30 text-center">
+                    <div class="process-step-number">
+                        <span>Step 1</span>
+                    </div>
                     <div class="process-card-body">
                         <div class="text-holder">
                             <h2 itemprop="title" class="post-title">Fill Application</h2>
@@ -116,6 +119,9 @@
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="process-card mt-40 mb-30 text-center">
+                    <div class="process-step-number">
+                        <span>Step 2</span>
+                    </div>
                     <div class="process-card-body">
                         <div class="text-holder">
                             <h2 itemprop="title" class="post-title">Get Shortlisted</h2>
@@ -126,6 +132,9 @@
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="process-card mt-40 mb-30 text-center">
+                    <div class="process-step-number">
+                        <span>Step 3</span>
+                    </div>
                     <div class="process-card-body">
                         <div class="text-holder">
                             <h2 itemprop="title" class="post-title">Prepare For Interview</h2>
