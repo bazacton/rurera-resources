@@ -175,10 +175,10 @@
         </div>
     </section>
 
-    <div class="d-flex align-items-center justify-content-center pt-80">
+    <div class="d-flex align-items-center justify-content-center pt-50">
         <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
     </div>
-    <section class="pt-80">
+    <section class="pt-60">
         <div class="container">
             <div class="row">
                 <div class="col-12">
