@@ -1256,6 +1256,10 @@ Lms Responsive Style Start
         justify-content: center;
         margin-left: 0 !important;
     }
+    .categories-list li {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }
 
 @media screen and (max-width: 640px) {
