@@ -1544,7 +1544,6 @@ Lms Responsive Style Start
     .stats-list ul li,
     .stats-list ul li, .lms-chapter-area .stats-list ul li {padding: 0 0 0 15px; margin-left: 15px;}
     .lms-chapter-area .stats-list ul li:first-child {margin-left: 0; padding-left: 0;}
-    .finish-steps .row {flex-direction: column;}
     .profile-info-box {flex-direction: column; position: relative;}
     .profile-info-box:not(.product-show__profile-info-box) {top: -60px; margin-bottom: -60px;}
     .profile-info-box .user-details {flex-direction: column; width: 100%; text-align: center;}
