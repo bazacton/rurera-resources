@@ -2696,7 +2696,7 @@ body{overflow-x: hidden;}
 /*************************************
 Lms Contact Form Pages Style Start
 *************************************/
-.contact-sub-header {background:url(../../default/img/contact-bg.jpg);}
+.contact-sub-header {background:url(../../default/img/contact-bg.jpg); background-size: cover; background-repeat: no-repeat;}
 .lms-services.lms-contact-form{margin-top: -30px;background: transparent;}
 .contact-sub-header .text-holder.has-bg {background:var(--primary);padding: 30px 40px; border-radius: 8px;box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);position: relative;bottom: -30px;}
 .contact-sub-header .text-holder a {text-decoration: none;font-size: 16px;font-weight: 500;background:#fff;padding: 0 45px;height: 60px;display: inline-block;color:var(--primary);line-height: 60px;}
