@@ -1411,6 +1411,9 @@ Lms Responsive Style Start
     .timeline-text .analytics-more_details {
         padding-left: 0;
     }
+    .summary-btns .summary-btn, .summary-btns a {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 575px) {
     .spell-question-area .spells-quiz-info {margin: 0 0 30px;}
