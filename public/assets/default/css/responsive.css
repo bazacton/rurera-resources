@@ -1617,4 +1617,6 @@ Lms Responsive Style Start
     .notification-card .text-right {text-align: center !important;}
     .detail-body .profile-inner, .edit-info-list .subscribe-plan {max-width: 100%; min-width: auto;}
     .home-sections:has(.blog-grid-card) .btn {padding-right: 10px; padding-left: 10px;}
+    .referral-text a {padding: 10px;}
+    .referral-link input.link-address {width: calc(100% - 82px);}
 } 
