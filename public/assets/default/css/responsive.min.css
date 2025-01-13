@@ -1248,6 +1248,9 @@ Lms Responsive Style Start
     .subscribe-plan:hover {
         top: 0;
     }
+    .choose-sats li {
+        font-size: .75rem;
+    }
 }
 
 @media screen and (max-width: 640px) {
