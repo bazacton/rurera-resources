@@ -1,5 +1,9 @@
 @extends(getTemplate().'.layouts.app')
 
+@push('styles_top')
+   <link href="/assets/default/vendors/swiper-slider/swiper-bundle.min.css" rel="stylesheet">
+@endpush
+
     @section('content')
             <section class="contact-sub-header pt-70 pb-0 mb-50">
             <div class="container">
@@ -269,14 +273,9 @@
                             </div>
                             <span class="swiper-notification"></span>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination swiper-pagination-bullets">
-                            <span
-                                class="swiper-pagination-bullet"></span><span
-                                class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
-                                class="swiper-pagination-bullet"></span>
-                        </div>
+                        <div class="swiper-button-next"><img src="/assets/default/svgs/arrow-right.svg" alt="arrow-right"></div>
+                        <div class="swiper-button-prev"><img src="/assets/default/svgs/arrow-left.svg" alt="arrow-left"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -332,3 +331,7 @@
             </div>
         </div>
     @endsection
+
+    @push('scripts_bottom')
+    <script src="/assets/default/vendors/swiper-slider/swiper-bundle.min.js"></script>
+    @endpush
