@@ -1492,7 +1492,7 @@ Lms Responsive Style Start
     .learning-page.type-vocabulary:has(.spells-quiz-sound) .word-cloud-box {margin-top: 0;}
     .spells-quiz-from .form-btn-field {display: flex;padding-left: 10px;padding-right: 10px;justify-content: center;gap: 10px;flex-wrap: wrap;padding-top: 0;}
     .timeline-text p strong {margin-bottom: 10px; display: block;}
-    .timeline-text .info-time {display: inline; margin-left: 0;}
+    .timeline-text .info-time {display: block; margin-left: 0;}
     .timeline-text img {margin: 0 2px;}
     .db-members .profile-dropdown ul {right: auto; left: -5px;}
     body #rurera-words-search #rf-searchgamecontainer {padding: 8px;}
