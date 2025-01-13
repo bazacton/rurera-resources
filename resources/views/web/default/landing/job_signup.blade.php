@@ -804,8 +804,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"><img src="/assets/default/svgs/arrow-left.svg" alt="arrow-left"></div>
-                    <div class="swiper-button-prev"><img src="/assets/default/svgs/arrow-right.svg" alt="arrow-right"></div>
+                    <div class="swiper-button-next"><img src="/assets/default/svgs/arrow-right.svg" alt="arrow-right"></div>
+                    <div class="swiper-button-prev"><img src="/assets/default/svgs/arrow-left.svg" alt="arrow-left"></div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
