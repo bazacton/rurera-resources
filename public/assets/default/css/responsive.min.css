@@ -467,7 +467,7 @@ Lms Responsive Style Start
     .page-sub-header p,
     .section-title p,
     .lms-text-section p,
-    .find-instructor-section p.font-16 {font-size: 16px !important; line-height: 24px;}
+    .find-instructor-section .font-16 {font-size: 16px !important; line-height: 24px;}
     .page-sub-header p {margin-bottom: 35px;}
     .lms-testimonials.testimonials-fancy {padding-top: 0; margin-top: 30px;}
     .job-singup-sub-header {padding-bottom: 30px;}
