@@ -357,7 +357,7 @@
         </div>
     </div>
 </section>
-<section class="categories-section mt-70 pt-70 pb-50 mb-60" style="background-color: #f60;">
+<section class="categories-section mt-70 pt-50 pb-50 mb-60" style="background-color: #f60;">
     <div class="container">
         <div class="row">
             <div class="col-12">
