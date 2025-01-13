@@ -2,10 +2,6 @@
 
 @push('styles_top')
 <style>
-    .gallery-sub-header {
-        min-height: 850px;
-    }
-
     .lms-search-services {
         background-color: #f27530;
     }
