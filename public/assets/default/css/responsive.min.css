@@ -301,7 +301,7 @@ Lms Responsive Style Start
     .gallery-sub-header .img-holder {text-align: center;}
     .gallery-sub-header .simple .masonry-grid [class*="col-"] {width: 33.333%;}
     .masonry-grid-gallery.has-bg:before {top: 0; height: 100%; width: 100%; transform: none;}
-    .choose-sats .sats-box {margin-bottom: 15px;}
+    .choose-sats .sats-box {margin-bottom: 15px; height: auto;}
     .navbar-nav .nav-item.has-mega-menu {position: relative;}
     .navbar-nav .has-mega-menu:hover .lms-mega-menu {z-index: 1; margin-top: 6px;}
     .navbar1 .navbar-nav>li.has-mega-menu .nav-link,
