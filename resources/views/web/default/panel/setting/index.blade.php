@@ -139,8 +139,6 @@
 
 		
     </script>
-	
-	userSettingForm
 
     <script src="/assets/default/js/panel/user_setting.min.js"></script>
 @endpush
