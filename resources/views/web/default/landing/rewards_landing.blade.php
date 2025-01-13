@@ -2,7 +2,7 @@
 
 @section('content')
 <section
-    class="products-sub-header page-sub-header position-relative pb-25 pt-80 d-flex align-items-center"
+    class="products-sub-header page-sub-header position-relative pb-25 pt-30 d-flex align-items-center"
     style="
         background-image: linear-gradient(transparent 11px, rgba(220, 220, 200, 0.1) 12px, transparent 12px), linear-gradient(90deg, transparent 11px, rgba(220, 220, 200, 0.1) 12px, transparent 12px);
         background-size: 100% 12px, 12px 100%;
