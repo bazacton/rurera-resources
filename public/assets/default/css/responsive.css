@@ -565,7 +565,7 @@ Lms Responsive Style Start
     .section-title.section-inner-title h2 {font-size: 1.2rem !important;}
     .blog-grid-card .blog-grid-detail .blog-grid-title {font-size: 1.4rem; min-height: auto;}
     .home-banner .choose-sats .sats-box {margin-bottom: 80px; margin-top: 20px;}
-    .lms-search-services img {max-width: 100%;}
+    .lms-search-services img {max-width: 100%; object-fit: contain;}
     .job-singup-sub-header h1 br {display: none;}
     .find-instructor-section figure img,
     .lms-text-section img { max-width: 100%; object-fit: contain; }
