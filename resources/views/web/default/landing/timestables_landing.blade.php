@@ -150,7 +150,7 @@
                 <div class="col-12 col-lg-6 col-md-6">
                     <div class="sats-box d-inline-flex border-solid border-transparent " style="background: #f6b801;color: #fff;">
                         <h2 class="mt-0 mb-10 font-24">Essential tool for Maths teachers</h2>
-                        <p class="pt-0 font-16" style="text-align: left;">Rurera provides interactive practice sessions, personalized feedback, and engaging resources to support effective math instruction and student learning :</p><br>
+                        <p class="pt-0 font-16" style="text-align: left;">Rurera provides interactive practice sessions, personalized feedback, and engaging resources to support effective math instruction and student learning:</p><br>
                         <ul style="text-align: left;">
                             <li>- Progress can be monitored on heatmap while student is practicing their times tables.</li>
                             <li>- Helps track student progress and evaluate understanding.</li>
