@@ -1252,6 +1252,10 @@ Lms Responsive Style Start
     .lms-faqs .card-body p {
         font-size: .75rem;
     }
+    .reward-process .d-flex:has(.try-rurera-btn) {
+        justify-content: center;
+        margin-left: 0 !important;
+    }
 }
 
 @media screen and (max-width: 640px) {
