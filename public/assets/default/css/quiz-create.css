@@ -2037,6 +2037,7 @@ Quiz Check Answers Page Style Start
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
 }
 .summary-btns .summary-btn,
@@ -2050,7 +2051,6 @@ Quiz Check Answers Page Style Start
     line-height: normal;
     min-width: 120px;
     text-align: center;
-    margin-right: 5px;
 }
 /*Sats Summary style end*/
 /*****************************
