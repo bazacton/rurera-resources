@@ -752,6 +752,7 @@ Lms Responsive Style Start
     .lms-search-services .process-holder .process-list li {width: 33.333% !important;}
     .lms-column-section .position-relative {text-align: center;}
     .lms-column-section img {margin-top: 30px; max-width: fit-content;}
+    #request-demo.lms-column-section img {max-width: 100%;}
     .lms-accordion-modern.accordion .card .lms-img-holder img,
     .lms-text-holder .icon-svg img  {margin-top: 0;}
     .testimonials-fancy-bg:before {top: 1px;}
