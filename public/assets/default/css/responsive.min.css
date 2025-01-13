@@ -1411,8 +1411,8 @@ Lms Responsive Style Start
     .timeline-text .analytics-more_details {
         padding-left: 0;
     }
-    .summary-btns .summary-btn, .summary-btns a {
-        width: 100%;
+    .result-layout-summary.chart-summary-fields {
+        padding: 0;
     }
 }
 @media screen and (max-width: 575px) {
