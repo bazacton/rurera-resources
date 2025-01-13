@@ -532,6 +532,7 @@ Lms Responsive Style Start
     .has-no-bg .process-step-number {color: var(--primary); }
     .has-no-bg .process-step-number:before,
     .has-no-bg .process-step-number:after {background-image: radial-gradient(circle, #0272b6, #0272b6, #0272b6, #0272b6, #ffffff);}
+    .lms-search-services .section-title {margin-bottom: 0 !important;}
     .custom-footer .widget-body {display: none; padding-bottom: 25px;}
     .custom-footer .widget-links li, 
     .custom-footer .widget-location li {margin-bottom: 10px; width: auto; padding: 0 5px;}
