@@ -145,6 +145,9 @@
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="process-card mt-40 mb-30 text-center">
+                    <div class="process-step-number">
+                        <span>Step 4</span>
+                    </div>
                     <div class="process-card-body">
                         <div class="text-holder">
                             <h2 itemprop="title" class="post-title">Get Hired</h2>
