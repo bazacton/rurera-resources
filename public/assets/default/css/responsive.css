@@ -1122,137 +1122,46 @@ Lms Responsive Style Start
     .lms-quiz-section .input-holder input[type="text"] {max-width: 100%;}
     .question-layout .rureraform-col {padding: 0 15px 10px !important;}
     .footer .footer-subscribe {height: auto;}
-    .footer-dots-img img {
-        width: 200px;
-        height: 200px;
-    }
-    .footer-logo-box a {
-        padding: 0;
-        flex-direction: row;
-        gap: 10px;
-    }
-    .footer-logo-box a span {
-        margin-top: 0;
-        font-size: 12px;
-        padding: 8px 10px;
-        white-space: nowrap;
-        font-weight: 500;
-    }
-    .footer-logo-box a img {
-        max-width: 150px;
-        object-fit: cover;
-        border-radius: 3px;
-        height: 100%;
-    }
-    .parent-account-section {
-        padding: 50px 25px 0;
-    }
-    .parent-account-section .imb-box {
-        margin-top: 50px;
-    }
-    .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {
-        padding: 12px 0;
-        display: block;
-        width: 100%;
-    }
-    .rureraform-element:has(span.truefalse_question_label) .truefalse_question_label {
-        width: 100%;
-    }
-    .course-info .course-title {
-        width: 100%;
-        padding: 0 0 10px;
-    }
-    ul.course-info-list {
-        gap: 10px;
-        width: 100%;
-        padding: 0 0 15px;
-    }
+    .footer-dots-img img {width: 200px; height: 200px;}
+    .footer-logo-box a {padding: 0; flex-direction: row; gap: 10px;}
+    .footer-logo-box a span {margin-top: 0; font-size: 12px; padding: 8px 10px; white-space: nowrap; font-weight: 500;}
+    .footer-logo-box a img {max-width: 150px; object-fit: cover; border-radius: 3px; height: 100%;}
+    .parent-account-section {padding: 50px 25px 0;}
+    .parent-account-section .imb-box {margin-top: 50px;}
+    .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {padding: 12px 0; display: block; width: 100%;}
+    .rureraform-element:has(span.truefalse_question_label) .truefalse_question_label {width: 100%;}
+    .course-info .course-title {width: 100%; padding: 0 0 10px;}
+    ul.course-info-list {gap: 10px; width: 100%; padding: 0 0 15px;}
     ul.course-info-list li > strong,
-    .percent_text {
-        font-size: 13px;
-    }
-    .circle_percent {
-        font-size: 20px;
-    }
-    .stages-items {
-        position: initial;
-    }
+    .percent_text {font-size: 13px;}
+    .circle_percent {font-size: 20px;}
+    .stages-items {position: initial;}
     .analytics-dropdown select,
     .date-range-box,
     .analytics-dropdown .select-box,
     .analytics-dropdown .select-holder,
-    .date-range-holder {
-        max-width: 100%;
-        width: 100%;
-    }
-    .analytics-dropdown select {
-        padding: 10px;
-    }
-    .date-range-holder input {
-        height: 30px;
-    }
-    #profile-image-modal .close {
-        right: 5px;
-        top: 5px;
-    }
-    #profile-image-modal .svga-glob-controls {
-        width: 12.5%;
-    }
-    #userSettingForm #profile-image-modal #svga-container.svga-light {
-        padding-top: 0;
-    }
+    .date-range-holder {max-width: 100%; width: 100%;}
+    .analytics-dropdown select {padding: 10px;}
+    .date-range-holder input {height: 30px;}
+    #profile-image-modal .close {right: 5px; top: 5px;}
+    #profile-image-modal .svga-glob-controls {width: 12.5%;}
+    #userSettingForm #profile-image-modal #svga-container.svga-light {padding-top: 0;}
     #profile-image-modal .svga-row.row-colors,
     #profile-image-modal .svga-row.row-elements,
-    #profile-image-modal .svga-row.row-glob-controls {
-        margin: 0 -10px;
-    }
-    div#profile-image-modal {
-        padding-right: 0 !important;
-    }
-    .dashboard-students-holder .d-flex {
-        flex-wrap: wrap;
-    }
-    .dashboard-students-holder .member-card-header .dropdown {
-        padding-top: 10px;
-    }
-    .categories-card.medium {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .categories-card.medium .categories-text {
-        padding-left: 15px;
-    }
-    .categories-card.medium .learning-btn {
-        position: inherit;
-        transform: none;
-        text-align: left;
-        display: block;
-        margin: 0 0 5px;
-    }
-    .categories-card.medium .categories-text .categories-title {
-        margin: 0 0 5px;
-    }
-    .topics-table {
-        overflow: hidden;
-        overflow-x: auto;
-    }
-    .panel-content .template-grid .text-holder {
-        gap: 5px;
-        flex-wrap: wrap;
-    }
-    .panel-content .timestables-mode-content [class*="col-"]:has(.simple-table) {
-        overflow: hidden;
-        overflow-x: auto;
-    }
-    .find-instructor-section.pt-100 {
-        padding-top: 30px !important;
-    }
-    .categories-card.active, .categories-card:hover {
-        transform: scaleX(1);
-    }
-    .subscribe-plan:hover {
-        top: 0;
-    }
+    #profile-image-modal .svga-row.row-glob-controls {margin: 0 -10px;}
+    div#profile-image-modal {padding-right: 0 !important;}
+    .dashboard-students-holder .d-flex {flex-wrap: wrap;}
+    .dashboard-students-holder .member-card-header .dropdown {padding-top: 10px;}
+    .categories-card.medium {padding-left: 0; padding-right: 0;}
+    .categories-card.medium .categories-text {padding-left: 15px;}
+    .categories-card.medium .learning-btn {position: inherit; transform: none; text-align: left; display: block; margin: 0 0 5px;}
+    .categories-card.medium .categories-text .categories-title {margin: 0 0 5px;}
+    .topics-table {overflow: hidden; overflow-x: auto;}
+    .panel-content .template-grid .text-holder {gap: 5px; flex-wrap: wrap;}
+    .panel-content .timestables-mode-content [class*="col-"]:has(.simple-table) {overflow: hidden; overflow-x: auto;}
+    .find-instructor-section.pt-100 {padding-top: 30px !important;}
+    .categories-card.active, .categories-card:hover {transform: scaleX(1);}
+    .subscribe-plan:hover {top: 0;}
     .choose-sats li,
     .lms-faqs .card-body p {
         font-size: .75rem;
