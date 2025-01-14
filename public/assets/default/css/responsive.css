@@ -1077,6 +1077,7 @@ Lms Responsive Style Start
     .form-group .rurera-error-msg {position: initial; padding-top: 2px;}
     .lms-choose-membership #progbar {margin-bottom: 0;}
     .lms-choose-membership .modal-body {padding: 0;}
+    .product-card .product-card-body .product-title {min-height: auto;}
 }
 
 @media screen and (max-width: 640px) {
@@ -1273,8 +1274,6 @@ Lms Responsive Style Start
     body .lms-quiz-section .question-area,
     body .question-layout-block form.question-fields, 
     body .question-fields .left-content {min-height: auto;}
-    /* body .prev-next-controls {flex-direction: column-reverse;}
-    body .prev-next-controls a {width: 100%;} */
     body .lms-radio-img.rurera-in-row .lms-radio-select .field-holder {max-width: 100%;flex: 0 0 100%;}
     .spell-levels.levels-grouping ul {text-align: center; justify-content: center; align-items: center;}
     .spell-levels.levels-grouping li {justify-content: center; margin-bottom: 0; flex-direction: column;}
