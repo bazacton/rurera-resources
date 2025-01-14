@@ -48,83 +48,21 @@ Lms Responsive Style Start
     .noticeboard-item > div {flex-wrap: wrap; gap: 10px;}
     body .panel-sidebar,
     .panel-page-section .panel-sidebar {width: 100px; z-index: 1; padding-left: 10px !important; padding-right: 10px !important;}
-    .panel-content {
-        padding-left: 110px;
-    }
-    .parent-panel .panel-content {
-        padding-left: 0;
-    }
-    .panel-sidebar .sidebar-menu .sidenav-item {
-        justify-content: center;
-    }
+    .panel-content {padding-left: 110px;}
+    .parent-panel .panel-content {padding-left: 0;}
+    .panel-sidebar .sidebar-menu .sidenav-item {justify-content: center;}
     .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon {margin-right: 0 !important;}
-    .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title {
-        position: absolute;
-        top: 50%;
-        left: 100%;
-        background-color: #000;
-        font-size: 12px !important;
-        color: #fff;
-        text-transform: capitalize;
-        white-space: nowrap;
-        padding: 2px 6px;
-        border-radius: 5px;
-        -webkit-transition: all 0.3s ease-out;
-        -moz-transition: all 0.3s ease-out;
-        -ms-transition: all 0.3s ease-out;
-        -o-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-        margin-top: 10px;
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(-50%);
-        display: none;
-    }
-    /* .panel-sidebar .sidebar-menu .sidenav-item:hover .nav-sub-title{
-        visibility: visible;
-        opacity: 1;
-        margin-top: 0;
-    } */
-    .sidebar-menu-holder {
-        height: 100vh;
-    }
-    .panel-sidebar .sidebar-menu {
-        padding-bottom: 15px;
-        padding-left: 10px;
-    }
-    .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title:before {
-        position: absolute;
-        left: 50%;
-        bottom: -7px;
-        height: 8px;
-        width: 8px;
-        content: "";
-        background-color: #000;
-        margin: 0;
-        transform: rotate(45deg) translateX(-50%);
-    }
-    .panel-sidebar .sidebar-menu .sidenav-item:first-child .nav-sub-title {
-        bottom: auto;
-        top: 100%;
-        z-index: 1;
-    }
-    .panel-sidebar .sidebar-menu .sidenav-item:first-child .nav-sub-title:before {
-        top: -1px;
-        bottom: auto;
-    }
+    .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title {position: absolute; top: 50%; left: 100%; background-color: #000; font-size: 12px !important; color: #fff; text-transform: capitalize; white-space: nowrap; padding: 2px 6px; border-radius: 5px; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; margin-top: 10px; visibility: hidden; opacity: 0; transform: translateY(-50%); display: none;}
+    .sidebar-menu-holder {height: 100vh;}
+    .panel-sidebar .sidebar-menu {padding-bottom: 15px; padding-left: 10px;}
+    .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title:before {position: absolute; left: 50%; bottom: -7px; height: 8px; width: 8px; content: ""; background-color: #000; margin: 0; transform: rotate(45deg) translateX(-50%);}
+    .panel-sidebar .sidebar-menu .sidenav-item:first-child .nav-sub-title {bottom: auto; top: 100%; z-index: 1;}
+    .panel-sidebar .sidebar-menu .sidenav-item:first-child .nav-sub-title:before {top: -1px; bottom: auto;}
     /* ===== Scrollbar CSS ===== */
 
-    .panel-sidebar .sidebar-menu::-webkit-scrollbar {
-        width: 10px;
-    }
-    .panel-sidebar .sidebar-menu::-webkit-scrollbar-track {
-        background: #fff;
-    }
-    .panel-sidebar .sidebar-menu::-webkit-scrollbar-thumb {
-        background-color: #f4f4f4;
-        border-radius: 0;
-        border: 0;
-    }
+    .panel-sidebar .sidebar-menu::-webkit-scrollbar {width: 10px;}
+    .panel-sidebar .sidebar-menu::-webkit-scrollbar-track {background: #fff;}
+    .panel-sidebar .sidebar-menu::-webkit-scrollbar-thumb {background-color: #f4f4f4; border-radius: 0; border: 0;}
     .panel-content > .container > .row > [class*="col-"]:first-child {padding-right: 15px;}
     .panel-content > .container > .row > [class*="col-"]:last-child {padding-left: 15px;}
     .panel-content .panel-content-holder {max-width: calc(100% - 370px);}
