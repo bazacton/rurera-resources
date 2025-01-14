@@ -1016,11 +1016,7 @@ Right SideBar Style Start
 .levels-progress .progress-numbers {color: #cacaca; font-weight: 600;}
 .quests-item .icon-box {margin-right: 10px; text-align: center; width: 52px;}
 .quests-item .icon-box img {max-width: 100%;}
-.quests-item .icon-box svg {
-    width: 50px;
-    height: 50px;
-    fill: var(--blue);
-}
+.quests-item .icon-box svg {width: 50px; height: 50px; fill: var(--blue);}
 .quests-item .progress-numbers {position: absolute; top: 0; left: 50%; transform: translateX(-50%); font-size: 14px; }
 .quests-item .item-text h5 {margin-bottom: 2px; }
 .quests-item .horizontal .progress-count {border-radius: 50px 0 0 50px;}
@@ -1029,25 +1025,9 @@ Right SideBar Style Start
 .quests-list.quests-learning li:has(.quests-control) .quests-item {width: 65%; gap: 20px; }
 .quests-learning .quests-item .item-text .levels-progress.horizontal .progress-box {border-radius: 3px;}
 .panel-content-holder .quests-item:has(.progress-icon.circle) .item-text .levels-progress.horizontal {width: calc(100% - 50px);}
-.stages-items a {
-    height: 20px;
-    width: 5px;
-    display: inline-block;
-    background-color: #a0c28b;
-    border-radius: 50px;
-}
-.stages-items {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 5px;
-    position: absolute;
-    right: 40px;
-    bottom: 12px;
-}
-.stages-items .locked_nugget {
-    opacity: 0.5;
-}
+.stages-items a {height: 20px; width: 5px; display: inline-block; background-color: #a0c28b; border-radius: 50px;}
+.stages-items {display: flex; align-items: flex-start; flex-wrap: wrap; gap: 5px; position: absolute; right: 40px; bottom: 12px;}
+.stages-items .locked_nugget {opacity: 0.5;}
 /* Quests-List Style End */
 /* Prep-Plan Style Start */
 .prep-plan {
