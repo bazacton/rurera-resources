@@ -1308,6 +1308,13 @@ Lms Responsive Style Start
     .result-layout-summary .sats-summary [class*="col-"],
     .finish-steps .result-layout-summary .sats-summary [class*="col-"] {flex: 0 0 100%; max-width: 100%;}
     .lms-library-slider figure {text-align: center;}
+    .lms-books-listing .listing-card .text-holder ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0 15px;
+    }
     .lms-books-listing .listing-card {text-align: center;}
     .lms-books-listing .listing-card .img-holder {margin: 0 0 20px;}
     .listing-card .read-btn, .book-btn {min-width: 206px; font-size: 16px; padding: 15px 25px;}
