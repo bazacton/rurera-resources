@@ -519,10 +519,7 @@ Lms Responsive Style Start
     .question-layout-block .prev-next-controls {width: 100%; left: 0; padding: 0 15px;}
     .reward-shapes .col-8 {flex: 0 0 100%; max-width: 100%;}
     .artboard-box img {max-width: 100%;}
-    .learning-journey-levels .graph-background {
-        width: 100%;
-        overflow: hidden;
-    }
+    .learning-journey-levels .graph-background {width: 100%; overflow: hidden;}
 }
 
 @media screen and (min-width: 767px) and (max-width: 1600px) {
