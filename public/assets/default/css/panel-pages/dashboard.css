@@ -1428,50 +1428,14 @@ content: "- View Less";
 }
 /*Sidebar Student-list Style End*/
 /*Sidebar Spell-widget Style Start*/
-.spell-widget button {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    width: 100%;
-    height: auto;
-    line-height: normal;
-    text-decoration: none !important;
-}
-.spell-widget .spell-item {
-    padding: 0 20px 12px;
-    border-bottom: 1px solid #c8c6c6;
-
-}
-.spell-widget .spell-item:last-child {
-    border: 0;
-}
-.spell-word img {
-    object-fit: contain;
-    height: 18px;
-    width: 18px;
-}
-.spell-widget .spell-word {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 24px;
-    margin: 8px 0 15px;
-}
-.spell-widget .day-date {
-    color: #fe0000;
-    font-weight: 600;
-}
-.spell-widget .spell-lable {
-    font-weight: 500;
-    display: block;
-    line-height: normal;
-    margin: 0 0 5px;
-}
-.spell-widget .prev-date {
-    color: #999;
-}
+.spell-widget button {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 0; width: 100%; height: auto; line-height: normal; text-decoration: none !important;}
+.spell-widget .spell-item {padding: 0 20px 12px; border-bottom: 1px solid #c8c6c6;}
+.spell-widget .spell-item:last-child {border: 0;}
+.spell-word img {object-fit: contain; height: 18px; width: 18px;}
+.spell-widget .spell-word {display: flex; align-items: center; gap: 5px; font-size: 24px; margin: 8px 0 15px;}
+.spell-widget .day-date {color: #fe0000; font-weight: 600;}
+.spell-widget .spell-lable {font-weight: 500; display: block; line-height: normal; margin: 0 0 5px;}
+.spell-widget .prev-date {color: #999;}
 /*Sidebar Spell-widget Style End*/
 
 /*Referrals Style Start*/
