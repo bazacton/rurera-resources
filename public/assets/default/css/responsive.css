@@ -1225,7 +1225,7 @@ Lms Responsive Style Start
         padding: 10px;
     }
     .search-block .search-input input[type=text] {
-        padding: 0.3rem;
+        padding: 0.3rem 0.3rem 0.3rem 0;
     }
 }
 @media screen and (max-width: 575px) {
