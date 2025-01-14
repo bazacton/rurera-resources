@@ -677,7 +677,6 @@ Lms Responsive Style Start
     .lms-our-mission-section.has-bg .lms-mission-holder {padding-top: 50px;}
     .lms-our-mission-section.has-bg {background-size: cover;}
     .lms-counter-section {text-align: center;}
-    .read-quiz-content {padding-top: 0 !important;}
     .read-quiz-content {max-width: 100%;}
     body .quiz-topbar {position: relative; z-index: 3;}
     .topbar-right .quiz-timer {position: initial; padding-top: 10px;}
