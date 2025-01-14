@@ -128,37 +128,37 @@ $practice_time = 0;
                     </div>
                 </section>
                 <div class="justify-content-center">
-                    <div class="quiz-status-bar">
-                        <div class="quiz-questions-bar-holder">
-
-							@php 
-							
-							$topic_accuracy = isset( $topicPerformData['topic_accuracy'] )? $topicPerformData['topic_accuracy'] : 0;
-							$topic_completion = isset( $topicPerformData['topic_completion'] )? $topicPerformData['topic_completion'] : 0;
-							@endphp
-                            <div class="quiz-questions-bar">
-                                @if( $topic_completion > 0)
-									@if( $topic_accuracy > $topic_completion)
-										<span class="accuracy-progress value-lable" data-title="Accuracy" style="left:{{$topic_accuracy}}%"><span>{{$topic_accuracy}}%</span></span>
-										<span class="completion-progress value-lable" data-title="Topic Completion" style="left:{{$topic_completion}}%"><span>{{$topic_completion}}%</span></span>
-									@else
-										<span class="completion-progress value-lable" data-title="Topic Completion" style="left:{{$topic_completion}}%"><span>{{$topic_completion}}%</span></span>
-										<span class="accuracy-progress value-lable" data-title="Accuracy" style="left:{{$topic_accuracy}}%"><span>{{$topic_accuracy}}%</span></span>
-									@endif
-                                @endif
-                                <span class="bar-fill" title="" style="width: 0%;"></span>
-                            </div>
-                            <span class="coin-numbers">
-                                <img src="/assets/default/img/quests-coin.png" alt="">
-                                <span class="total-earned-coins">0</span>
-                            </span>
-                        </div>
-                        <div class="quiz-corrects-incorrects">
-                            <span class="quiz-corrects">0</span>
-                            <span class="quiz-incorrects">0</span>
-                        </div>
-                    </div>
                     <div class="col-lg-9 col-md-12 col-sm-12 mt-50 mx-auto">
+                        <div class="quiz-status-bar">
+                            <div class="quiz-questions-bar-holder">
+
+                                @php 
+                                
+                                $topic_accuracy = isset( $topicPerformData['topic_accuracy'] )? $topicPerformData['topic_accuracy'] : 0;
+                                $topic_completion = isset( $topicPerformData['topic_completion'] )? $topicPerformData['topic_completion'] : 0;
+                                @endphp
+                                <div class="quiz-questions-bar">
+                                    @if( $topic_completion > 0)
+                                        @if( $topic_accuracy > $topic_completion)
+                                            <span class="accuracy-progress value-lable" data-title="Accuracy" style="left:{{$topic_accuracy}}%"><span>{{$topic_accuracy}}%</span></span>
+                                            <span class="completion-progress value-lable" data-title="Topic Completion" style="left:{{$topic_completion}}%"><span>{{$topic_completion}}%</span></span>
+                                        @else
+                                            <span class="completion-progress value-lable" data-title="Topic Completion" style="left:{{$topic_completion}}%"><span>{{$topic_completion}}%</span></span>
+                                            <span class="accuracy-progress value-lable" data-title="Accuracy" style="left:{{$topic_accuracy}}%"><span>{{$topic_accuracy}}%</span></span>
+                                        @endif
+                                    @endif
+                                    <span class="bar-fill" title="" style="width: 0%;"></span>
+                                </div>
+                                <span class="coin-numbers">
+                                    <img src="/assets/default/img/quests-coin.png" alt="">
+                                    <span class="total-earned-coins">0</span>
+                                </span>
+                            </div>
+                            <div class="quiz-corrects-incorrects">
+                                <span class="quiz-corrects">0</span>
+                                <span class="quiz-incorrects">0</span>
+                            </div>
+                        </div>
                         <div class="question-step quiz-complete" style="display:none">
                             <div class="question-layout-block">
                                 <div class="left-content has-bg">
