@@ -207,7 +207,7 @@ Lms Product Card Style Start
 .navbar-shopping-cart .simplebar-content-wrapper,
 .navbar-notification-card .simplebar-content-wrapper {overflow: hidden scroll !important;}
 /* Product Card Style Start */
-.product-card {background-color: #fff; position: relative; border-radius: 15px; transition: all .5s ease;padding: 0 0 15px;}
+.product-card {background-color: #fff; position: relative; border-radius: 15px; transition: all .5s ease;padding: 0;}
 .product-card .product-card {padding: 0;}
 .product-card .image-box {position: relative; width: 100%; height: 185px;}
 .product-card .image-box,
