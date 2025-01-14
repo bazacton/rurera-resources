@@ -19,9 +19,7 @@
                 <form action="/timestables-practice/freedom-mode/play" method="post">
                     {{ csrf_field() }}
                     <div class="questions-select-option">
-                        <div class="col-12">
-                            <div class="mb-20"><h4>Select Arithmetic Operations</h4></div>
-                        </div>
+                        <div class="mb-20"><h4>Select Arithmetic Operations</h4></div>
                         <ul class="mb-20 d-flex align-items-center">
                             <li>
                                 <input  type="radio" value="multiplication_division" id="multi-divi" name="question_type" />
