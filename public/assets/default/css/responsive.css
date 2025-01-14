@@ -60,17 +60,9 @@ Lms Responsive Style Start
     .panel-sidebar .sidebar-menu .sidenav-item:first-child .nav-sub-title:before {top: -1px; bottom: auto;}
     /* ===== Scrollbar CSS ===== */
 
-    .panel-sidebar .sidebar-menu::-webkit-scrollbar {
-        width: 10px;
-    }
-    .panel-sidebar .sidebar-menu::-webkit-scrollbar-track {
-        background: #fff;
-    }
-    .panel-sidebar .sidebar-menu::-webkit-scrollbar-thumb {
-        background-color: #f4f4f4;
-        border-radius: 0;
-        border: 0;
-    }
+    .panel-sidebar .sidebar-menu::-webkit-scrollbar {width: 10px;}
+    .panel-sidebar .sidebar-menu::-webkit-scrollbar-track {background: #fff;}
+    .panel-sidebar .sidebar-menu::-webkit-scrollbar-thumb {background-color: #f4f4f4; border-radius: 0; border: 0;}
     .panel-content > .container > .row > [class*="col-"]:first-child {padding-right: 15px;}
     .panel-content > .container > .row > [class*="col-"]:last-child {padding-left: 15px;}
     .panel-content .panel-content-holder {max-width: calc(100% - 370px);}
