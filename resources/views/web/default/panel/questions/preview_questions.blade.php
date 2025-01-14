@@ -27,7 +27,8 @@ $rand_id = rand(99,9999);
 	<section class="learning-content lms-quiz-section">
         <div class="container questions-data-block read-quiz-content" data-total_questions="0">
             <div class="justify-content-center">
-				<div class="quiz-status-bar">
+                <div class="col-lg-9 col-md-12 col-sm-12 mt-50 mx-auto">
+					<div class="quiz-status-bar">
 						<div class="quiz-questions-bar-holder">
 							<div class="quiz-questions-bar">
 								<span class="value-lable" data-title="Target" style="left:80%"><span>80%</span></span>
@@ -42,13 +43,7 @@ $rand_id = rand(99,9999);
 							<span class="quiz-corrects">0</span>
 							<span class="quiz-incorrects">0</span>
 						</div>
-				</div>
-                <div class="col-lg-9 col-md-12 col-sm-12 mt-50 mx-auto">
-					
-					
-					
-					
-					
+					</div>
 					<div class="question-area-block" data-active_question_id="0" data-questions_layout="">
                         @php $total_questions = 10; @endphp
                         <div class="question-area dis-arrows1" data-total_questions="10">
