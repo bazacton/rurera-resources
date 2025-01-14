@@ -1221,6 +1221,9 @@ Lms Responsive Style Start
         height: 30px;
         padding: 0 10px;
     }
+    .search-block .search-input .form-group {
+        padding: 10px;
+    }
 }
 @media screen and (max-width: 575px) {
     .spell-question-area .spells-quiz-info {margin: 0 0 30px;}
