@@ -56,7 +56,7 @@
                                 
                                 </div>
                             </div>
-                            </div>
+                        </div>
                         <div class="type-list-data single-player-data">
                             <div class="col-12 col-md-12 col-lg-12">
                                 <a itemprop="url" href="/timestables-practice/freedom-mode">
