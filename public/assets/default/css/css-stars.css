@@ -53,7 +53,7 @@ body .lms-chapter-area .lms-chapter-ul .lms-chapter-ul-outer>ul>li:has(.percent-
 .lms-chapter-area .lms-chapter-ul >li .lms-chapter-ul-outer > ul > li:before {content: counter(counter); counter-increment: counter; position: absolute; left: 0; top: 0;}
 body .lms-chapter-area .lms-chapter-ul >li ul > li a {vertical-align: top; padding-left: 10px; min-width: auto;}
 .lms-chapter-area .lms-chapter-ul >li ul > li a img {width: 15px; height: 15px; object-fit: contain; vertical-align: middle; display: inline-block; margin-left: 5px;}
-.lms-chapter-area .lms-chapter-ul >li{margin-bottom:45px; break-inside: avoid;}
+.lms-chapter-area .lms-chapter-ul >li{break-inside: avoid;}
 .lms-chapter-area .lms-chapter-ul >li .lms-chapter-ul-outer > ul > li {
     width: 100%;
     margin-bottom: 8px;
