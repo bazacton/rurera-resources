@@ -1377,6 +1377,7 @@ Lms Responsive Style Start
     .quiz-questions-bar-holder .bar-fill:after {width: 25px; height: 25px; right: 0; margin-top: -12px;}
     .quests-item {align-items: flex-start;}
     .quests-list.p-30 {padding: 15px !important;}
+    .lms-client-list .lms-client-logo figure {height: 80px;}
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
