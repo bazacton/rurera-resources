@@ -807,9 +807,7 @@ Lms Responsive Style Start
     .filters-list .tests-list li.active,
     .tests-list li.active,
     .listing-search .inline-filters li.active a:not(.wizard-steps .listing-search .inline-filters li.active a) {box-shadow: none; border: 0;}
-    .filters-list .analytics-type .active a {
-        color: #1b85fd;
-    }
+    .filters-list .analytics-type .active a {color: #1b85fd;}
     .filters-list .tests-list li,
     .tests-list li, .listing-search .inline-filters li:not(.wizard-steps .listing-search .inline-filters li) {flex-direction: row; min-height: auto; justify-content: flex-start; border: 0;}
     .chart-filters .form-group {width: 50%; padding-left: 8px;}
@@ -1216,16 +1214,9 @@ Lms Responsive Style Start
     .timeline-text > span:before {left: -2px; right: auto;}
     .timeline-text .analytics-more_details {padding-left: 0;}
     .result-layout-summary.chart-summary-fields {padding: 0;}
-    .search-block .search-input .form-group .btn {
-        height: 30px;
-        padding: 0 10px;
-    }
-    .search-block .search-input .form-group {
-        padding: 10px;
-    }
-    .search-block .search-input input[type=text] {
-        padding: 0.3rem 0.3rem 0.3rem 0;
-    }
+    .search-block .search-input .form-group .btn {height: 30px; padding: 0 10px;}
+    .search-block .search-input .form-group {padding: 10px;}
+    .search-block .search-input input[type=text] {padding: 0.3rem 0.3rem 0.3rem 0;}
 }
 @media screen and (max-width: 575px) {
     .spell-question-area .spells-quiz-info {margin: 0 0 30px;}
