@@ -1344,88 +1344,22 @@ ul.course-info-list li .progress-box .circle_percent:before {
 
 /*Sidebar Student-list Style Start*/
 .parent-panel .sidebar-students-list .card {gap: 15px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; height: 335px; overflow: hidden;}
-.sidebar-students-list .card:has(.item-control) {
-    height: auto;
-    overflow: visible;
-}
-.sidebar-students-list .card .col-auto {
-    padding: 0 0 0 15px;
-}
-.sidebar-students-list .card .col-auto:empty {
-    display: none;
-}
-.sidebar-students-list .card .col-auto:has(h6) {
-    max-width: 130px;
-    padding-left: 10px;
-}
-.switch-user-btn .icon-box img {
-    height: 20px;
-    width: 20px;
-}
-.sidebar-students-list .switch-user-btn {
-    font-size: 12px;
-    display: inline-flex;
-    padding: 0 10px 0 0;
-    position: relative;
-    margin-left: auto;
-}
-.sidebar-students-list .switch-user-btn:before {
-    content: "Switch User";
-    position: absolute;
-    right: 100%;
-    top: 50%;
-    color: #fcfcfc;
-    background-color: #000;
-    white-space: nowrap;
-    padding: 4px 8px;
-    border-radius: 4px;
-    transform: translateY(-50%);
-    margin-right: 10px;
-    visibility: hidden;
-    opacity: 0;
-}
-.sidebar-students-list .switch-user-btn:after {
-    content: "";
-    position: absolute;
-    right: 100%;
-    top: 50%;
-    height: 8px;
-    width: 8px;
-    background-color: #000;
-    margin-top: -4px;
-    margin-right: 7px;
-    transform: rotate(45deg);
-    visibility: hidden;
-    opacity: 0;
-}
+.sidebar-students-list .card:has(.item-control) {height: auto; overflow: visible;}
+.sidebar-students-list .card .col-auto {padding: 0 0 0 15px;}
+.sidebar-students-list .card .col-auto:empty {display: none;}
+.sidebar-students-list .card .col-auto:has(h6) {max-width: 130px; padding-left: 10px;}
+.switch-user-btn .icon-box img {height: 20px; width: 20px;}
+.sidebar-students-list .switch-user-btn {font-size: 12px; display: inline-flex; padding: 0 10px 0 0; position: relative; margin-left: auto;}
+.sidebar-students-list .switch-user-btn:before {content: "Switch User"; position: absolute; right: 100%; top: 50%;color: #fcfcfc; background-color: #000; white-space: nowrap; padding: 4px 8px; border-radius: 4px; transform: translateY(-50%); margin-right: 10px; visibility: hidden; opacity: 0;}
+.sidebar-students-list .switch-user-btn:after {content: ""; position: absolute; right: 100%; top: 50%; height: 8px; width: 8px; background-color: #000; margin-top: -4px; margin-right: 7px; transform: rotate(45deg); visibility: hidden; opacity: 0;}
 .sidebar-students-list .switch-user-btn:hover:before,
-.sidebar-students-list .switch-user-btn:hover:after {
-    opacity: 1;
-    visibility: visible;
-}
-.switch-user-btn .icon-box {
-    display: inline-block;
-    width: 100%;
-    vertical-align: middle;
-    text-align: center;
-}
-.item-control {
-    text-align: center;
-}
-.item-control .showMore {
-display: block;
-font-size: 16px;
-font-weight: 700;
-color: #b2b2b2;
-text-decoration: none;
-}
-.item-control .showMore::after {
-content: "+ View More";
-}
+.sidebar-students-list .switch-user-btn:hover:after {opacity: 1; visibility: visible;}
+.switch-user-btn .icon-box {display: inline-block; width: 100%; vertical-align: middle; text-align: center;}
+.item-control {text-align: center;}
+.item-control .showMore {display: block;font-size: 16px;font-weight: 700;color: #b2b2b2;text-decoration: none;}
+.item-control .showMore::after {content: "+ View More";}
 .item-control .showMore:hover {color: var(--primary);}
-.item-control .showMore.showLess::after {
-content: "- View Less";
-}
+.item-control .showMore.showLess::after {content: "- View Less";}
 /*Sidebar Student-list Style End*/
 /*Sidebar Spell-widget Style Start*/
 .spell-widget button {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 0; width: 100%; height: auto; line-height: normal; text-decoration: none !important;}
