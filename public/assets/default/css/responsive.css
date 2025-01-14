@@ -1479,7 +1479,7 @@ Lms Responsive Style Start
     .analytics-dropdown .daterangepicker.show-calendar .drp-buttons {display: inline-block; height: 100%; padding: 10px;}
     .analytics-dropdown .daterangepicker .drp-buttons .cancelBtn {float: left; margin: 0; height: auto; padding: 10px 0;}
     .analytics-dropdown .daterangepicker .drp-buttons .applyBtn {padding: 10px 10px; height: auto; float: right;}
-    .field-data svg {
+    body .field-data svg {
         width: 20%;
     }
 }
