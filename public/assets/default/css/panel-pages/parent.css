@@ -260,7 +260,7 @@ Assignments Table Style Start
 .db-members .card .list-group-item:first-child .listing-title {display: block;}
 .db-members .card .list-group-item .detail-btn {padding-right: 15px;}
 .db-members table {margin: 0;}
-.db-members:has(.no-record-found) .list-group .rurera-tables-list {background-color: inherit; border: 0; width: 100%; padding: 0 30px;}
+.db-members:has(.no-record-found) .list-group .rurera-tables-list {background-color: inherit; border: 0; width: 100%; padding: 15px 15px 0;}
 .db-members .rurera-button-loader {background-color: initial; z-index: 3; height: auto; min-height: 125px; border-radius: 10px;}
 .db-members:has(.rurera-button-loader) .rurera-pagination {display: none;}
 a.last-activity span {color: #bfbfbf;}
@@ -391,7 +391,6 @@ a.last-activity span strong {color: #343434;}
 .set-work-tags li:not(.clear-tags) {color: #666; border: 1px solid #e6e3e3; background-color: #efefef; padding: 5px 10px; border-radius: 5px;}
 .set-work-tags .clear-tags {color: var(--primary); font-weight: 500; text-decoration: underline;}
 .section-title ~ section.dashboard {margin-top: 20px;}
-.db-form-tabs .no-record-found {margin-top: 15px;}
 /* Wizard-Steps Style End */
 
 /*Lms Choose Membership Model Style Start*/
