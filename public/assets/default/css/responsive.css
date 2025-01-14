@@ -1272,6 +1272,12 @@ Lms Responsive Style Start
         position: initial;
         padding-top: 2px;
     }
+    .lms-choose-membership #progbar {
+        margin-bottom: 0;
+    }
+    .lms-choose-membership .modal-body {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 640px) {
