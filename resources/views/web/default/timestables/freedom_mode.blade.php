@@ -41,9 +41,7 @@
                                 </label>
                             </li>
                         </ul>
-                        <div class="col-12">
-                            <div class="mb-20"><h4>No of Questions </h4></div>
-                        </div>
+                        <div class="mb-20"><h4>No of Questions </h4></div>
 
                         <ul class="mb-20 d-flex align-items-center">
                             <li>
@@ -66,9 +64,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-12">
-                        <div class="mb-20"><h4>Select Tables</h4></div>
-                    </div>
+                    <div class="mb-20"><h4>Select Tables</h4></div>
                     <div class="questions-select-number">
                         <ul class="d-flex justify-content-center flex-wrap mb-30">
                         <li {{in_array(10,$locked_tables)? 'class=disable-timetable noselect' : ''}}><input type="checkbox" value="10" name="question_values[]" id="ten" {{in_array(10,$locked_tables)? 'disabled' : ''}}  /> <label for="ten" >10</label></li>
