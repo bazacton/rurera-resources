@@ -62,7 +62,7 @@
                         </div>
 						
                         <div class="questions-select-option">
-						<h4 class="mb-20">Select Practice Duration</h4>
+						    <h4 class="mb-20">Select Practice Duration</h4>
                             <ul class="mb-20 d-flex align-items-center">
                                 <li>
                                     <input checked type="radio" id="ten-questions" value="1" name="practice_time" />
