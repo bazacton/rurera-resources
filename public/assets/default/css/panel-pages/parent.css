@@ -380,7 +380,7 @@ a.last-activity span strong {color: #343434;}
 .lms-choose-membership:has(.wizard-steps) form {display: flex; flex-direction: column;}
 .progress-line {position: absolute; left: 0; bottom: -4px; height: 4px; border-radius: 50px; overflow: hidden; width: 100%; }
 .progress-line .progress-count {background-color: var(--primary); display: block; height: 100%; border-radius: 50px; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out;}
-.db-members .rurera-tabs-frontend {border-bottom: 1px solid #ddd; margin-bottom: 75px;}
+.db-members .rurera-tabs-frontend {border-bottom: 1px solid #ddd; margin-bottom: 20px;}
 .db-members .rurera-tabs-frontend li {color: #6c6b71; cursor: pointer; border-bottom: 3px solid transparent; padding: 10px 35px; text-transform: uppercase; font-weight: 500;}
 .db-members .rurera-tabs-frontend li.active {border-bottom-color: var(--primary); color: var(--primary);}
 .wizard-steps .sats-listing-card tbody tr td {border: 0; }
