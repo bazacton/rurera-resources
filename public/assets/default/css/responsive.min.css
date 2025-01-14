@@ -519,10 +519,7 @@ Lms Responsive Style Start
     .question-layout-block .prev-next-controls {width: 100%; left: 0; padding: 0 15px;}
     .reward-shapes .col-8 {flex: 0 0 100%; max-width: 100%;}
     .artboard-box img {max-width: 100%;}
-    .learning-journey-levels .graph-background {
-        width: 100%;
-        overflow: hidden;
-    }
+    .learning-journey-levels .graph-background {width: 100%; overflow: hidden;}
 }
 
 @media screen and (min-width: 767px) and (max-width: 1600px) {
@@ -964,7 +961,6 @@ Lms Responsive Style Start
     .delete img {height: 15px; width: 15px;}
     .learning-page .learning-content {padding-left: 15px; padding-right: 15px;}
     .newsletter-inner .section-title {text-align: center!important;}
-    .lms-books-listing .listing-card {text-align: center;}
     .lms-books-listing .listing-card .text-holder {padding-top: 15px;}
     .lms-column-section .lms-text-holder .row.align-items-center {flex-direction: column; gap: 25px; text-align: center;}
     .lms-column-section .lms-text-holder .row.align-items-center .lms-btn {margin-left: 0 !important;}
@@ -1081,6 +1077,9 @@ Lms Responsive Style Start
     .form-group .rurera-error-msg {position: initial; padding-top: 2px;}
     .lms-choose-membership #progbar {margin-bottom: 0;}
     .lms-choose-membership .modal-body {padding: 0;}
+    .product-card .product-card-body .product-title {min-height: auto;}
+    .product-card {text-align: center;}
+    .product-card .product-card-body .product-price-box .real {justify-content: center; margin: 0 0 15px;}
 }
 
 @media screen and (max-width: 640px) {
@@ -1277,8 +1276,6 @@ Lms Responsive Style Start
     body .lms-quiz-section .question-area,
     body .question-layout-block form.question-fields, 
     body .question-fields .left-content {min-height: auto;}
-    /* body .prev-next-controls {flex-direction: column-reverse;}
-    body .prev-next-controls a {width: 100%;} */
     body .lms-radio-img.rurera-in-row .lms-radio-select .field-holder {max-width: 100%;flex: 0 0 100%;}
     .spell-levels.levels-grouping ul {text-align: center; justify-content: center; align-items: center;}
     .spell-levels.levels-grouping li {justify-content: center; margin-bottom: 0; flex-direction: column;}
@@ -1387,12 +1384,13 @@ Lms Responsive Style Start
     .analytics-dropdown .daterangepicker .drp-buttons .cancelBtn {float: left; margin: 0; height: auto; padding: 10px 0;}
     .analytics-dropdown .daterangepicker .drp-buttons .applyBtn {padding: 10px 10px; height: auto; float: right;}
     .quiz-questions-bar-holder .bar-fill:after {width: 25px; height: 25px; right: 0; margin-top: -12px;}
+    .quests-item {align-items: flex-start;}
+    .quests-list.p-30 {padding: 15px !important;}
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
     .lms-count-field .lms-text-holder .currency-rate {margin: 15px 0 0 0; }
     .search-books ul li {width: 100%;}
-    .lms-call-to-action .search-icon {top: 14px; transform: none;}
     .lms-call-to-action input[type="text"] {border-radius: 8px; width: 100%;}
     .lms-call-to-action button {border-radius: 8px; margin-top: 15px;}
     .lms-call-to-action .field-holder {flex-direction: column; align-items: center;}
@@ -1431,4 +1429,8 @@ Lms Responsive Style Start
     .home-sections:has(.blog-grid-card) .btn {padding-right: 10px; padding-left: 10px;}
     .referral-text a {padding: 10px;}
     .referral-link input.link-address {width: calc(100% - 82px);}
+    .products-top-header.lms-call-to-action button[type="submit"] {padding: 0 8px; height: 40px;}
+    .products-top-header.lms-call-to-action input[type="text"] {
+        height: 40px;
+    }
 } 
