@@ -1430,7 +1430,6 @@ Lms Responsive Style Start
     .referral-text a {padding: 10px;}
     .referral-link input.link-address {width: calc(100% - 82px);}
     .products-top-header.lms-call-to-action button[type="submit"] {padding: 0 8px; height: 40px;}
-    .products-top-header.lms-call-to-action input[type="text"] {
-        height: 40px;
-    }
+    .products-top-header.lms-call-to-action input[type="text"] {height: 40px;}
+    .progress-learning-header a {white-space: nowrap;}
 } 
