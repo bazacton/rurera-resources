@@ -980,7 +980,7 @@ Lms Responsive Style Start
     .profile-view-data {margin: 0;}
     .profile-view-data > li {width: 100%; margin-right: 0; padding: 0;}
     .spell-levels .lms-tooltip {max-width: 200px; min-width: 200px;}
-    .spell-links .rurera-tooltip.dropup .dropdown-menu {left: 0 !important; transform: none !important;}
+    .spell-links .rurera-tooltip.dropup .dropdown-menu {left: auto !important; transform: none !important; right: 0;}
     .spell-links .lms-tooltip:before {left: 25px; transform: translateX(0) rotate(45deg);}
     .spell-links .lms-tooltip:after {left: 25px; transform: translateX(0) rotate(45deg);}
     .spell-levels ul > li:nth-child(1) .lms-tooltip,
