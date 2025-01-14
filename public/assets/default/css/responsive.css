@@ -1499,17 +1499,9 @@ Lms Responsive Style Start
     .panel-content .template-grid .text-holder a {display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 5px;}
     .panel-content .grid-card .title-label, .login-options .coming-soon {margin: 0;}
     .school-zone-students [class*="col-"] {padding: 0 5px;}
-    .userthumb .userthumb-text, .student-block-text {
-        padding: 10px 5px 5px;
-
-    }
-    .student-block-text .user-name {
-        font-size: 14px;
-    }
-    .student-rank span img {
-        width: 12px;
-        height: 12px;
-    }
+    .userthumb .userthumb-text, .student-block-text {padding: 10px 5px 5px;}
+    .student-block-text .user-name {font-size: 14px;}
+    .student-rank span img {width: 12px; height: 12px;}
     .user-profile-icons ul {gap: 2px;}
     .user-profile-icons li strong {padding: 4px 5px;}
     body .panel-content .container .row [class*="col-"].panel-right-sidebar {padding-left: 0; padding-right: 0;}
