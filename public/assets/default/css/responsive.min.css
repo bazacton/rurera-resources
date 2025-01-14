@@ -1268,6 +1268,10 @@ Lms Responsive Style Start
     .stats-container .stats-item:hover {
         transform: none;
     }
+    .form-group .rurera-error-msg {
+        position: initial;
+        padding-top: 2px;
+    }
 }
 
 @media screen and (max-width: 640px) {
