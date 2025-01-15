@@ -28,11 +28,13 @@ $show_details = isset( $show_details )? $show_details : true;
 @endphp
 <div class="{{$element_class}}">
     <div class="subscribe-plan {{(isset( $selected_package ) && $selected_package == $subscribe->id)? 'active' : ''}} current-plan position-relative d-flex flex-column rounded-lg pb-25 pt-40 px-20 mb-30">
-        <span class="subscribe-icon mb-20"><img src="{{ $subscribe->icon }}" height="auto" width="auto" alt="Box image"/></span>
-        <div class="subscribe-title text-left">
-            <h3 itemprop="title" class="font-24 font-weight-500 text-left">{{ $subscribe->title }}</h3>
+        <div class="plan-header">
+			<span class="subscribe-icon mb-20"><img src="{{ $subscribe->icon }}" height="auto" width="auto" alt="Box image"/></span>
+			<div class="subscribe-title text-left">
+				<h3 itemprop="title" class="font-24 font-weight-500 text-left">{{ $subscribe->title }}</h3>
+			</div>
 			<p>{{ $subscribe->description }}</p>
-        </div>
+		</div>
         <div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
             <span itemprop="price" class="font-36 line-height-1 packages-prices" data-package_id="{{$subscribe->id}}" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($subscribe->price) }}</span><span
                     class="yearly-price">{{ addCurrencyToPrice($subscribe->price) }} / month</span>
