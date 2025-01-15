@@ -7,7 +7,7 @@
 
 @section('content')
 <section class="content-section">
-    <section class="has-curve-shape" style="background-color: var(--primary); min-height: 350px;">
+    <section class="has-curve-shape page-sub-header" style="background-color: var(--primary); min-height: 350px;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
