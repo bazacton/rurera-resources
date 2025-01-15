@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-center mb-50">
-                        <h2 itemprop="title" class="text-white font-40">We'll help get you started</h2>
+                        <h1 itemprop="title" class="text-white font-72 font-weight-bold">We'll help get you started</h1>
                         <span class="font-14 text-white d-block pt-15">Schedule a demo with our team today!</span>
                     </div>
                     <div class="lms-btn-group custom-btn">
