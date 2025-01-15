@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-9">
-                    <div class="post-show pb-70 pr-50">
+                    <div class="post-show pb-0 pr-50">
 
                         {!! nl2br($post->content) !!}
                     </div>
