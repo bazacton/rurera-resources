@@ -940,7 +940,7 @@ Lms Responsive Style Start
     .banner-holder .text-holder h2 br {display: none;}
     .exploring-curriculum .lms-text-holder {text-align: center; gap: 15px;}
     .exploring-curriculum .lms-text-holder h4 {text-align: left;}
-    .lms-text-holder:has(.icon-svg) p {padding-left: 0; text-align: left;}
+    .lms-text-holder:has(.icon-svg) p {text-align: left;}
     .banner-holder .text-holder h2 {text-align: center;}
     .lms-accordion-modern.accordion .card-body p.font-16 {font-size: 16px !important;}
     .results-revenue-card {justify-content: center; text-align: center;}
