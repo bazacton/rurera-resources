@@ -1083,6 +1083,12 @@ Lms Responsive Style Start
     .product-card {text-align: center;}
     .product-card .product-card-body .product-price-box .real {justify-content: center; margin: 0 0 15px;}
     body .rurera-blog.blog-medium {min-height: auto;}
+    .lms-accordion-job .card-header .btn {padding-left: 20px;}
+    .lms-accordion-job>.card .btn.collapsed::before, 
+    .lms-accordion-job>.card .btn::before {font-size: 22px;}
+    .lms-accordion-job .card-header .btn small {
+        color: #999;
+    }
 }
 
 @media screen and (max-width: 640px) {
