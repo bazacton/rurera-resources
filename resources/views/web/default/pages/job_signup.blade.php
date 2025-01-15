@@ -855,7 +855,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-jobsform-section mb-0 pt-80 pb-90" style="background: url(../assets/default/svgs/diagonal-lines.svg) #f8f8f8;">
+    <section class="lms-jobsform-section mb-0 pt-50 pb-60" style="background: url(../assets/default/svgs/diagonal-lines.svg) #f8f8f8;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-12 col-md-8 col-lg-8">
