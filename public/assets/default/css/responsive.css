@@ -1097,28 +1097,12 @@ Lms Responsive Style Start
     .lms-accordion-job {padding: 0;}
     .lms-accordion-job .card-header {padding: 8px 15px 12px;}
     .job-singup-sub-header p {font-size: 16px; line-height: 24px;}
-    .job-singup-sub-header p br {
-        display: none;
-    }
-    .blog-single-post .blog-newsletter form {
-        width: 100%;
-    }
-    .blog-single-post .blog-newsletter {
-        padding: 0 15px;
-    }
-    .blog-single-post .blog-newsletter input[type="email"] {
-        width: 100%;
-    }
-    .blog-single-post .blog-newsletter .form-element {
-        position: relative;
-    }
-    .blog-single-post .blog-newsletter button {
-        position: absolute;
-        right: 0;
-        padding: 0 15px;
-        width: auto;
-        border-radius: 0 5px 5px 0;
-    }
+    .job-singup-sub-header p br {display: none;}
+    .blog-single-post .blog-newsletter form {width: 100%;}
+    .blog-single-post .blog-newsletter {padding: 0 15px;}
+    .blog-single-post .blog-newsletter input[type="email"] {width: 100%;}
+    .blog-single-post .blog-newsletter .form-element {position: relative;}
+    .blog-single-post .blog-newsletter button {position: absolute; right: 0; padding: 0 15px; width: auto; border-radius: 0 5px 5px 0;}
 }
 
 @media screen and (max-width: 640px) {
