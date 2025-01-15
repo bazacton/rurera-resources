@@ -713,7 +713,7 @@
             </div>
         </div>
     </section>
-    <section class="choose-sats choose-sats-section py-80 mt-90">
+    <section class="choose-sats choose-sats-section py-80 mt-80 mt-0-sm">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12">
