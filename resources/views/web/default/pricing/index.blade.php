@@ -54,7 +54,7 @@
                                 <div class="card-header" id="headingonsix">
                                     <button class="btn btn-link font-18 font-weight-bold" data-toggle="collapse" data-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">What payment methods do you accept?</button>
                                 </div>
-                                <div id="collapsesix" class="collapse show" aria-labelledby="headingsix" data-parent="#accordion">
+                                <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
                                     <div class="card-body">
                                         <p>We accept a variety of payment methods to make it convenient for you, including all major credit and debit cards, PayPal, Skrill and other secure online payment options. This flexibility ensures that you can choose the payment method that works best for you.</p>
                                     </div>
