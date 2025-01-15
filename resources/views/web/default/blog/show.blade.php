@@ -20,7 +20,7 @@
             </div>
         </div>
     </section>
-    <section class="mt-50 mb-50 lms-blog blog-single-post">
+    <section class="mt-15 mb-60 lms-blog blog-single-post">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-9">
