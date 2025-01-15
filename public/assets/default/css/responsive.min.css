@@ -439,6 +439,9 @@ Lms Responsive Style Start
     .lms-search-services .process-holder {display: none;}
     .process-card-holder [class*="col-"] {flex: 0 0 100%; max-width: 100%;}
     .process-card {text-align: left !important; padding-left: 60px; overflow: hidden; height: 100%; margin-bottom: 0 !important;}
+    .lms-search-services [class*="col-"]:last-child .process-card {
+        height: auto;
+    }
     .reward-process .process-card {padding-left: 0;}
     .process-step-number:before {background-color: #fff; position: absolute; left: -30px; top: 100%; content: ""; height: 9999px; width: 6px; margin-left: 0;}
     .process-step-number:after {position: absolute; left: -40px; top: 0; height: 25px; width: 25px; background: #e66f51; border: 2px solid #fff; border-radius: 100%; content: ""; margin-left: 0;}
