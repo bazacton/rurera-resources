@@ -209,7 +209,10 @@ Lms Responsive Style Start
 @media screen and (max-width: 992px) {
     .navbar-expand-lg .navbar-toggler,
     .navbar1 .navbar-toggler {display: block; font-size: 15px; color: #000; font-weight: 600;}
-    /* .navbar-expand-lg .navbar-nav {flex-direction: column; margin-bottom: 20px;} */
+    #navbarClose img {
+        height: 20px;
+        width: 20px;
+    }
     .navbar-nav .nav-item .sidenav-dropdown:before {display: none;}
     .navbar-nav .nav-item:hover .sidenav-dropdown {top: 0;}
     .lms-mega-menu {display: none;}
