@@ -2630,7 +2630,7 @@ body{overflow-x: hidden;}
 .lms-accordion-job {padding: 20px; border-radius: 8px;}
 .lms-accordion-job .card-header { background: #fff; padding:10px 15px; border-bottom: 0; margin-bottom: 0; }
 .lms-accordion-job .btn.focus, .lms-accordion-job .btn:focus { outline:none; box-shadow:none; }
-.lms-accordion-job .card-header .btn { font-weight: 600; display: flex; justify-content: space-between; color:var(--dark-charcoal); text-decoration: none; padding:0 0 0 30px; position: relative; background: #fff; border: 0; font-size: 18px; }
+.lms-accordion-job .card-header .btn { font-weight: 600; display: flex; justify-content: space-between; flex-wrap: wrap; color:var(--dark-charcoal); text-decoration: none; padding:0 0 0 30px; position: relative; background: #fff; border: 0; font-size: 18px; }
 .lms-accordion-job .card-header .btn small { font-size: 15px; color:var(--dark-charcoal); font-weight: 600; outline: none; }
 .lms-accordion-job>.card { position: relative; margin-bottom: 24px; border-radius: 8px; box-shadow: 0 2px 8px rgba(14,44,56,.15); border:0; }
 .lms-accordion-job>.card:last-child {margin-bottom: 0;}
