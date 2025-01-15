@@ -68,7 +68,7 @@
                         </li>
                     </ul>
                     <div class="d-flex align-items-center">
-                        <a href="{{url('/')}}/pricing" class="py-15 px-30 text-dark-blue font-16 register-btn try-rurera-btn  mt-0">Try Rurera for free</a>
+                        <a href="{{url('/')}}/pricing" class="py-15 px-30 text-dark-blue register-btn try-rurera-btn  mt-0">Try Rurera for free</a>
                         
                     </div>
                 </div>
@@ -1328,7 +1328,7 @@
             </div>
         </div>
         <div class="d-flex align-items-center justify-content-center pt-50">
-            <a href="{{url('/')}}/pricing" class="btn-primary font-16 text-dark-blue register-btn try-rurera-btn py-15 px-30">Try Rurera for free</a>
+            <a href="{{url('/')}}/pricing" class="btn-primary text-dark-blue register-btn try-rurera-btn py-15 px-30">Try Rurera for free</a>
         </div>
     </section>
     @php $faq_items = isset( $faq_items )? $faq_items : array();@endphp
