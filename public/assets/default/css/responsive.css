@@ -210,6 +210,7 @@ Lms Responsive Style Start
     .navbar-expand-lg .navbar-toggler,
     .navbar1 .navbar-toggler {display: block; font-size: 15px; color: #000; font-weight: 600;}
     /* .navbar-expand-lg .navbar-nav {flex-direction: column; margin-bottom: 20px;} */
+    .navbar-nav .nav-item .sidenav-dropdown:before {display: none;}
     .navbar-nav .nav-item:hover .sidenav-dropdown {top: 0;}
     .lms-mega-menu {display: none;}
     body .radio-buttons .card-radio {width: 23%;}
