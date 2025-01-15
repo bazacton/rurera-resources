@@ -714,7 +714,7 @@
                 </div>
             </div>
             <div class="col-12">
-                <div class="d-flex align-items-center justify-content-center mt-90">
+                <div class="d-flex align-items-center justify-content-center mt-60">
                     <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
                 </div>
             </div>
