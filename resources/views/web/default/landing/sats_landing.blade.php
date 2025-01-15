@@ -720,7 +720,7 @@
             </div>
         </div>
     </section>
-    <section class="choose-sats choose-sats-section py-80 mt-0">
+    <section class="choose-sats choose-sats-section py-80 mt-80">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".choose-sats">
