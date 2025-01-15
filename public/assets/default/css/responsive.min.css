@@ -1166,7 +1166,8 @@ Lms Responsive Style Start
     .reward-box .img-holder {margin-bottom: 15px;}
     .reward-box .img-holder ~ .text-holder {margin-left: 0; text-align: center;}
     .job-singup-sub-header.gallery-sub-header {padding-bottom: 30px !important; margin-bottom: 30px;}
-    .job-singup-sub-header.gallery-sub-header.mb-sm-0 {margin-bottom: 0 !important;}
+    .job-singup-sub-header.gallery-sub-header.mb-sm-0,
+    .job-singup-sub-header.gallery-sub-header {margin-bottom: 0 !important;}
     .lms-feature-card {padding-right: 0;}
     .exame-listing .exame-holder .exame-list .img-holder~.text-holder {margin-left: 12px;}
     .process-holder .section-title.text-left {text-align: center !important;}
