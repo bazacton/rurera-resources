@@ -13,7 +13,7 @@
                 <div class="col-12">
                     <div class="section-title text-center mb-50">
                         <h1 itemprop="title" class="text-white font-72 font-weight-bold">We'll help get you started</h1>
-                        <p class="text-white mb-0 pt-15">Schedule a demo with our team today!</p>
+                        <p class="font-19 text-white mb-0 pt-15">Schedule a demo with our team today!</p>
                     </div>
                     <div class="lms-btn-group custom-btn">
                         <a href="#" class="get-started-btn bg-white text-primary font-14 font-weight-500">Get started<small>for</small>free</a><a href="#" class="demo-btn text-white font-14 font-weight-500 btn-outline">Book a demo</a>
