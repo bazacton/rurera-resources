@@ -1056,7 +1056,7 @@ Sats Preparation Page Style End
 .charge-account-radio label:hover {border: 3px solid var(--primary); transition: all .3s ease; box-shadow: 0 10px 30px 0 rgba(67, 212, 119, .3); }
 .charge-account-radio input[type=radio] {visibility: hidden; display: none;}
 .charge-account-radio input[type=radio]:checked+label {box-shadow: 0 10px 30px 0 rgba(67, 212, 119, .3); border: 3px solid var(--primary); background-color: #fff; transition: all .3s ease;}
-.subscribe-plan {border: 1px solid #ddd; transition: all .4s ease; top: 0; border-radius: 5px !important; min-height: 392px;}
+.subscribe-plan {border: 1px solid #ddd; transition: all .4s ease; top: 0; border-radius: 5px !important; min-height: 345px;}
 .subscribe-plan .badge-popular {position: absolute; top: 10px; left: 10px; border-radius: 10px 0 10px 0; background-color:#fdb532; color: #fff;}
 .subscribe-plan p {color: #555;}
 .subscribe-plan:hover {top: -15px;}
