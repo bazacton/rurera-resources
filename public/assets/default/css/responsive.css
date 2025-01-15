@@ -1085,7 +1085,7 @@ Lms Responsive Style Start
     body .rurera-blog.blog-medium {min-height: auto;}
     .lms-accordion-job .card-header .btn {padding-left: 20px;}
     .lms-accordion-job>.card .btn.collapsed::before, 
-    .lms-accordion-job>.card .btn::before {font-size: 22px;}
+    .lms-accordion-job>.card .btn::before {font-size: 22px; top: 3px;}
     .lms-accordion-job .card-header .btn small {
         color: #999;
         font-weight: 500;
