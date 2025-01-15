@@ -35,7 +35,7 @@ $profile_navs = isset( $navData['profile_navs'] )? $navData['profile_navs'] : ar
             </a>
 
             <button class="navbar-toggler navbar-order" type="button" aria-label="navbar toggler" id="navbarToggle">
-            Menu <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="mx-lg-30 d-none d-lg-flex flex-grow-1 navbar-toggle-content " id="navbarContent">
