@@ -1,7 +1,7 @@
 @extends(getTemplate().'.layouts.app')
 
 @section('content')
-<section class="position-relative text-center page-sub-header pt-80 pb-30">
+<section class="position-relative text-center page-sub-header pt-60 pb-30">
   <div class="container h-100">
     <div class="row h-100 align-items-center text-left">
       <div class="col-12 col-md-12 col-lg-9">
