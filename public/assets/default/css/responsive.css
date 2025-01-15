@@ -1088,6 +1088,8 @@ Lms Responsive Style Start
     .lms-accordion-job>.card .btn::before {font-size: 22px;}
     .lms-accordion-job .card-header .btn small {
         color: #999;
+        font-weight: 500;
+        font-size: 14px;
     }
 }
 
