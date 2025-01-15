@@ -2278,6 +2278,7 @@ Lms SignUp Page Style Start
 .job-singup-sub-header p {font-size: 19px; line-height: 26px; font-weight: 400;margin: 0 0 25px;color: #586165;}
 .job-singup-sub-header .btn-primary {padding: 18px 40px;display: inline-block;line-height: normal;box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3) inset;}
 .gallery-sub-header .masonry-grid-gallery {position: absolute;right: 0;top: 0;z-index: 1;-webkit-transform: translateX(85.30184569647683px) rotate(-16deg);-moz-transform: translateX(85.30184569647683px) rotate(-16deg);-ms-transform: translateX(85.30184569647683px) rotate(-16deg);transform: translateX(85.30184569647683px) rotate(-16deg);width: 850px;}
+.job-singup-sub-header h3 {margin: 0 0 25px;}
 .slider-hero-section .masonry-grid-gallery {top: 50%;-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);}
 .masonry-grid {margin-left: -14px; width: 100% !important;}
 .masonry-grid-gallery .find-instructor-section-circle {position: absolute;top: 50%;left: 50%;max-width: 80%;max-height: 110%;margin-top: -18px;transform: translateX(-50%) translateY(-50%);}
