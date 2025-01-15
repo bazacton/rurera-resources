@@ -1130,6 +1130,12 @@ Lms Responsive Style Start
     .lms-jobs-form .card-header {flex-direction: column;align-items: flex-start;}
     .lms-jobs-form .card-header:has(.form-field-counter) button {
         padding-right: 0;
+        padding-left: 30px;
+    }
+    .lms-jobs-form .card .icon-box {
+        position: absolute;
+        left: 0;
+        top: 5px;
     }
     .form-field-counter {position: relative;right: 0;margin: 10px 0 0;}
     .lms-jobs-form .input-field {text-align: left;}
