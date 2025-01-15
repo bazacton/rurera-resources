@@ -784,24 +784,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-12 col-lg-6 col-md-6">
-                    <div class="section-title">
-                        <h2 class="font-36 text-white">
-                            Ignite Your Path to Success with 100+ SATs practices
-                        </h2>
-                        <p class="font-19 mb-0 mt-10 text-white">
-                            Work through a variety of SATs exam practice questions to improve your skills
-                            and become familiar with the types of questions you'll encounter on
-                            the SATs exam.
-                        </p>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
-
-
-
     <section class="pt-80">
         <div class="container">
             <div class="row">
