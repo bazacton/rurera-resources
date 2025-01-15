@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="/assets/default/vendors/scroll-animation/aos.css"/>
 <style>
     .gallery-sub-header {
-        min-height: 850px;
+        min-height: 790px;
     }
 
     .lms-search-services {
