@@ -247,7 +247,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-12 col-md-10 col-lg-10">
-                    <div class="section-title text-center mb-50">
+                    <div class="section-title text-center mb-30">
                         <h2 itemprop="title" class="mb-10 font-40">Open Positions</h2>
                         <p itemprop="description">We are always seeking talented individuals to join our team and contribute <br /> to our success. Explore some new positions:</p>
                     </div>
