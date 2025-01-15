@@ -57,7 +57,7 @@
             background-color: var(--gray-dark);
         }
     </style>
-    <section class="gallery-sub-header job-singup-sub-header mb-70 page-sub-header pb-10 position-relative pt-80">
+    <section class="gallery-sub-header job-singup-sub-header mb-50 page-sub-header pb-0 position-relative pt-80">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-lg-6 col-md-6">
