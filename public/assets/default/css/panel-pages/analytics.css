@@ -95,9 +95,6 @@ Sub Pages Style
 .chart-filters .analytics-data-ul a {padding-top: 0;}
 .form-control.child-analytics {background-color: inherit; border: 0; border-radius: 0; height: auto; padding: 0 5px; font-size: 15px; width: auto; display: inline-block;}
 /*analytics graph-data Style End*/
-.rurera-hide {
-  display: none;
-}
 .analytics-dropdown .select-holder {display: flex;align-items: center;flex-wrap: wrap;gap: 10px;}
 .analytics-dropdown {
     display: flex;
@@ -159,6 +156,9 @@ Sub Pages Style
 }
 .date-range-box .daterangepicker .ranges {
   width: 100%;
+}
+.rurera-hide {
+  display: none;
 }
 /***************************
 Analytics Page | Student Panel Style End
