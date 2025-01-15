@@ -999,6 +999,7 @@ Lms Responsive Style Start
     .subscribes-container .left-gradient-box {width: 40px; height: 40px;}
     .subscribes-container .right-gradient-box {width: 30px; height: 30px;}
     .swiper-pagination .swiper-pagination-bullet {width: 15px; height: 15px; margin-right: 10px;}
+    .lms-testimonial-slider .swiper-pagination-bullet {height: 4px; width: 50px;}
     .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:after {width: 8px; height: 8px}
     .gradient-box {border-radius: 10px;}
     .customers-testimonials.owl-carousel .owl-dots .owl-dot span {width: 15px; height: 15px;}
