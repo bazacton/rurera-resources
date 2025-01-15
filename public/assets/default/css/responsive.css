@@ -1041,7 +1041,7 @@ Lms Responsive Style Start
     .footer-logo-box a {padding: 0; flex-direction: row; gap: 10px;}
     .footer-logo-box a span {margin-top: 0; font-size: 12px; padding: 8px 10px; white-space: nowrap; font-weight: 500;}
     .footer-logo-box a img {max-width: 150px; object-fit: cover; border-radius: 3px; height: 100%;}
-    .parent-account-section {padding: 50px 25px 0;}
+    .parent-account-section {padding: 20px 0 0;}
     .parent-account-section .imb-box {margin-top: 50px;}
     .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {padding: 12px 0; display: block; width: 100%;}
     .rureraform-element:has(span.truefalse_question_label) .truefalse_question_label {width: 100%;}
