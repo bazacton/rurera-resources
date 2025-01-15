@@ -45,8 +45,7 @@ $profile_navs = isset( $navData['profile_navs'] )? $navData['profile_navs'] : ar
                     </a>
                 <div class="navbar-toggle-header text-right d-lg-none">
                     <button class="btn-transparent" id="navbarClose">
-                        Close
-                        <i data-feather="x" width="32" height="32"></i>
+                        <i data-feather="x" width="32" height="32">x</i>
                     </button>
                 </div>
 
