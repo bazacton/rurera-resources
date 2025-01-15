@@ -70,7 +70,7 @@
                         <li class="mb-10 font-19"><img alt="#" height="25" src="../assets/default/svgs/graphic-design.svg" width="25" />Score Guarantee: Commitment to improved performance.</li>
                         <li class="font-19"><img alt="#" height="25" src="../assets/default/svgs/book-opend.svg" width="25" />100% Proven Approach: Proven approach to success.</li>
                     </ul>
-                    <div class="d-flex align-items-center"><a href="#" class="rounded-pill btn-primary">11 plus exams</a><a href="#" class="rounded-pill btn-primary ml-15">More practices</a></div>
+                    <a href="https://rurera.com/pricing" class="py-15 px-30 text-dark-blue register-btn try-rurera-btn  mt-0">Try Rurera for free</a>
                 </div>
             </div>
         </div>
