@@ -2475,7 +2475,7 @@ Lms Masonry Style End
 .lms-testimonials.testimonials-fancy {padding: 30px 0 50px 0;margin: 50px 0 0 0;}
 .testimonial-card.fancy .testimonial-img{margin-bottom: 20px;}
 .testimonial-card.fancy .testimonial-img figure { max-width: 100%;max-height: 100px;}
-.testimonial-card.fancy{padding:30px 20px;margin-bottom:30px;border-radius:8px;background-color:#fff;box-shadow:0 8px 24px 0 rgba(128,128,128,0.3);transition:-webkit-filter .2s ease-in-out;transition:filter .2s ease-in-out;transition:filter .2s ease-in-out, -webkit-filter .2s ease-in-out;color:#333;z-index:99;position:relative;text-align:center; min-height: 316px;}
+.testimonial-card.fancy{padding:30px 20px;margin-bottom:30px;border-radius:8px;background-color:#fff;box-shadow:0 8px 24px 0 rgba(128,128,128,0.3);transition:-webkit-filter .2s ease-in-out;transition:filter .2s ease-in-out;transition:filter .2s ease-in-out, -webkit-filter .2s ease-in-out;color:#333;position:relative;text-align:center; min-height: 316px;}
 /* Lms Testimoial Fancy Bg Style Start */
 .testimonials-fancy-bg{background:var(--primary);position:relative;padding-bottom:100px;padding-top:70px;}
 .testimonials-fancy-bg:before{content:"";width:0;height:0;border-right:100vw solid transparent;border-bottom:13.9673100960067000vw solid var(--primary);position:absolute;margin-top:-13.867310096006543vw;top:0;}
