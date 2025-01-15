@@ -2607,8 +2607,6 @@ body{overflow-x: hidden;}
 .lms-feature-card.mt-50 {margin-bottom: 0;}
 .lms-feature-card figure .svg-icon {width: 60px; height: 60px; display: block; text-align: center; line-height: 60px; border-radius: 10px; transform: rotate(-4deg); margin-right: 20px;}
 .lms-feature-card figure .svg-icon img {width: 24px; height: 24px; vertical-align: middle;} 
-.lms-features-section,
-.lms-text-section,
 .lms-accordion-section,
 .lms-accordion-simple-section {max-width: 1070px; margin: 0 auto;}
 .lms-categories-section.has-bg [class*="col-"] {padding-left: 34px; padding-right: 34px;}
