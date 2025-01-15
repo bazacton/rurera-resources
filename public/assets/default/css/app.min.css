@@ -2894,10 +2894,10 @@ Lms FAQS New Elements Style End
   background-image: url(../../default/svgs/scribble.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  bottom: 0;
+  bottom: 5px;
   content: "";
   display: block;
-  height: 25%;
+  height: 38%;
   position: absolute;
   z-index: -1;
   min-width: 180px;
