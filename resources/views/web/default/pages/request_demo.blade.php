@@ -273,7 +273,9 @@
             <div class="row">
                 <div class="col-12 col-lg-7 col-md-7">
                     <div class="lms-jobsform-content">
-                        <div class="section-title mb-15"><h1 class="font-56 text-white m-0">Make your organization truly customer-centric</h1></div>
+                        <div class="section-title mb-15">
+                            <h2 class="font-56 text-white m-0">Make your organization truly customer-centric</h2>
+                        </div>
                         <div class="text-holder">
                             <p class="text-white font-24 mb-20 font-weight-bold">Connect with a Maze expert on an initial call to discuss how Maze Organization can help:</p>
                             <ul class="content-list mb-50">
