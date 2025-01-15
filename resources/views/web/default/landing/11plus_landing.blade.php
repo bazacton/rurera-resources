@@ -67,10 +67,7 @@
                                 width="25" height="25" itemprop="image" loading="eager">Guaranteed Results
                         </li>
                     </ul>
-                    <div class="d-flex align-items-center">
-                        <a href="{{url('/')}}/pricing" class="py-15 px-30 text-dark-blue register-btn try-rurera-btn  mt-0">Try Rurera for free</a>
-                        
-                    </div>
+                    <a href="{{url('/')}}/pricing" class="py-15 px-30 text-dark-blue register-btn try-rurera-btn  mt-0">Try Rurera for free</a>
                 </div>
             </div>
         </div>
