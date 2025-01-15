@@ -1082,6 +1082,7 @@ Lms Responsive Style Start
     .product-card .product-card-body .product-title {min-height: auto;}
     .product-card {text-align: center;}
     .product-card .product-card-body .product-price-box .real {justify-content: center; margin: 0 0 15px;}
+    .rurera-blog.blog-medium {min-height: auto;}
 }
 
 @media screen and (max-width: 640px) {
