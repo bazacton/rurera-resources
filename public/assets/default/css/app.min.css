@@ -3064,7 +3064,7 @@ Choose Plan Style End
 .lms-jobs-form .card .icon-box {display: inline-block; line-height: normal; margin-right: 8px;}
 .lms-jobs-form .card .icon-box svg {width: 22px; height: 22px;}
 .lms-jobs-form .card-header {display: flex; align-items: center; background-color: inherit; border: 0; padding: 15px; position: relative;}
-.lms-jobs-form .card button {border: 0; background: none; padding: 0; color: #000; font-weight: 600; font-size: 18px; width: 100%;}
+.lms-jobs-form .card button {border: 0; background: none; padding: 0; color: #000; font-weight: 600; font-size: 18px; width: 100%; position: relative;}
 .form-field-counter {margin-left: auto; display: inline-flex; align-items: center; position: absolute; right: 15px;}
 .lms-jobs-form .card .icon-box svg .st0 {stroke: var(--primary);}
 .lms-jobs-form .card .icon-box svg g {fill: var(--primary);}
