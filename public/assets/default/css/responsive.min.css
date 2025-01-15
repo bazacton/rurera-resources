@@ -1091,6 +1091,7 @@ Lms Responsive Style Start
         color: #999;
         font-weight: 500;
         font-size: 14px;
+        width: 100%;
     }
     .lms-accordion-job {padding: 0;}
     .lms-accordion-job .card-header {
