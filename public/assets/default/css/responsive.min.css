@@ -1382,6 +1382,9 @@ Lms Responsive Style Start
         flex-wrap: wrap;
         gap: 20px 0;
     }
+    .rurera-blog.blog-medium {
+        min-height: auto;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
