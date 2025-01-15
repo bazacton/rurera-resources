@@ -1080,6 +1080,12 @@ Sats Preparation Page Style End
 .subscribe-plan .subscribe-popular {position: absolute; right: 20px; top: 20px; color: #7668e3; border-radius: 2px; background-color: #e9e7fd; font-size: 15px; padding: 2px 10px;}
 .subscribe-plan .subscribe-title {text-align: center; margin: 0 0 10px;}
 .subscribe-plan .subscribe-title span {color: #807f85;}
+.subscribe-plan .plan-header {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+  margin: 0 0 15px;
+}
 .price-controls {display: flex; gap: 15px; flex-wrap: wrap; align-items: flex-start; justify-content: flex-start;}
 .price-controls .control-btn {background-color: #fff; border-style: solid; border-width: 2px 2px 10px; border-color: var(--primary); border-radius: 16px; padding: 16px 45px 16px 16px; display: flex; flex-direction: column; justify-content: center; gap: 5px; position: relative;}
 .price-controls .control-btn .icon-box {position: absolute; right: 15px; top: 50%; transform: translateY(-50%); height: 24px; width: 24px;}
