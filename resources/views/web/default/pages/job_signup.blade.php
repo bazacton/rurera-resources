@@ -756,7 +756,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-testimonial-slider pt-80 pb-90">
+    <section class="lms-testimonial-slider py-50">
         <div class="container">
             <div class="row">
                 <div class="col-12">
