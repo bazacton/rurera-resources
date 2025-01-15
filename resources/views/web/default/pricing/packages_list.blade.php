@@ -34,7 +34,7 @@ $show_details = isset( $show_details )? $show_details : true;
 				<h3 itemprop="title" class="font-24 font-weight-500 text-left">{{ $subscribe->title }}</h3>
 			</div>
 		</div>
-		<p>{{ $subscribe->description }}</p>
+		<p class="mb-15">{{ $subscribe->description }}</p>
         <div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
             <span itemprop="price" class="font-36 line-height-1 packages-prices" data-package_id="{{$subscribe->id}}" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($subscribe->price) }}</span><span
                     class="yearly-price">{{ addCurrencyToPrice($subscribe->price) }} / month</span>
