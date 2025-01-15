@@ -456,6 +456,11 @@ Home Testimonials Style End
 Home Blogs Style Start
 *********************************/
 .lms-call-to-action .search-icon {position: absolute; left: 15px; top: 50%; transform: translateY(-45%); height: 24px; width: 24px;}
+.blog-sub-header.lms-call-to-action .search-icon {
+  top: 15px;
+  transform: none;
+  left: 10px;
+}
 .line-shap-holder {position: relative;}
 .line-shap-holder:before {content: ""; position: absolute; left: 0; top: 34px; width: 100%; height: 200px; z-index: 1; background-image: radial-gradient(60.83% 60.83% at 50% 50%, #fbfbfb 47.02%, hsla(0, 0%, 98%, 0) 100%);}
 .line-shap-svg {position: absolute; top: 100px; left: 0; height: 300px; width: 100%; background-size:contain; background-repeat: repeat; opacity: 0.9; background-image: url("data:image/svg+xml,%3Csvg id='patternId' width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='a' patternUnits='userSpaceOnUse' width='29' height='50.115' patternTransform='scale(2) rotate(0)'%3E%3Crect x=' 0' y=' 0' width=' 100%25' height=' 100%25' fill=' hsla(0, 0%25, 100%25, 1)'/%3E%3Cpath d=' M14.499 11.82L4.36 5.968l.002-11.706 10.14-5.855L24.638-5.74l-.001 11.707zm0 50.06L4.36 56.029l.002-11.706 10.14-5.855 10.137 5.852-.001 11.707zm14.498-25.117L18.858 30.91l.002-11.707L29 13.349l10.137 5.853-.001 11.706zm-29 0l-10.139-5.852.002-11.707L0 13.349l10.138 5.853-.002 11.706zm14.501-19.905L0 8.488.002-8.257l14.5-8.374L29-8.26l-.002 16.745zm0 50.06L0 58.548l.002-16.745 14.5-8.373L29 41.8l-.002 16.744zM28.996 41.8l-14.498-8.37.002-16.744L29 8.312l14.498 8.37-.002 16.745zm-29 0l-14.498-8.37.002-16.744L0 8.312l14.498 8.37-.002 16.745z' stroke-linecap=' square' stroke-width=' 1' stroke=' hsla(0, 0%25, 0%25, 0.05)' fill=' none'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width=' 800%25' height=' 800%25' transform=' translate(0, 0)' fill=' url(%23a)'/%3E%3C/svg%3E");}
