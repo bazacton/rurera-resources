@@ -3785,12 +3785,6 @@ section:has(.trial-steps) .lms-btn-group a small {
   color: var(--primary);
   margin-left: 8px;
 }
-.team-slider .swiper-wrapper {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 15px;
-}
 .team-slider .swiper-slide:nth-child(odd) {
   margin-top: 50px;
 }
