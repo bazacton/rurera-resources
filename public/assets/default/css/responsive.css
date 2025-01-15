@@ -350,7 +350,7 @@ Lms Responsive Style Start
     .panel-right-sidebar .coin-counts img{width: 28px; height: 28px; margin-right: 0; margin-top: 0;}
     body .sidebar-logo img {max-width: 30px;}
     .sidebar-logo .sidebar-logo-text {display: none;}
-    .navbar-toggler-icon {width: 1.6em;height: 1.5em; margin-left: 10px;}
+    .navbar-toggler-icon {width: 1.6em;height: 1.5em;}
     .user-profile-icons .dropdown-menu-right {left: 0; right: auto;}
     .panel-right-sidebar [class*="col-"] {display: none;}
     .panel-right-sidebar [class*="col-"]:has(.user-profile-icons) {display: block;}
