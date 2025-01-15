@@ -1105,6 +1105,9 @@ Lms Responsive Style Start
     .blog-single-post .blog-newsletter .form-element {position: relative;}
     .blog-single-post .blog-newsletter button {position: absolute; right: 0; padding: 0 15px; width: auto; border-radius: 0 5px 5px 0;}
     .lms-features-section h3 {margin-top: 15px; font-size: 18px;}
+    .team-slider {
+        padding: 0 15px;
+    }
 }
 
 @media screen and (max-width: 640px) {
