@@ -333,7 +333,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-5 col-md-5">
-                    <div class="lms-jobs-form lms-contact-form mx-auto mb-40">
+                    <div class="lms-jobs-form lms-contact-form mx-auto mb-40 pb-20">
                         <div class="lms-jobs-form-body">
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
