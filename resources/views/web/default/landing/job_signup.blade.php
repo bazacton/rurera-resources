@@ -247,7 +247,7 @@
             </div>
         </div>
     </div>
-    <section id="job-options" class="lms-accordion-job-section pt-80 pb-70">
+    <section id="job-options" class="lms-accordion-job-section pt-50 pb-70">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-12 col-md-10 col-lg-10">
