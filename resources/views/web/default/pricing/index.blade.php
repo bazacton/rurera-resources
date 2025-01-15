@@ -7,7 +7,7 @@
 @section('content')
 
 <div class="lms-membership-section" data-currency_sign="{{getCurrencySign()}}">
-    <section class="lms-setup-progress-section mb-0 pt-70 pb-30 page-sub-header" style="background-color: #fff;">
+    <section class="lms-setup-progress-section mb-0 pt-60 pb-30 page-sub-header" style="background-color: #fff;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
