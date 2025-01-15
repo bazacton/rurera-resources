@@ -1091,6 +1091,7 @@ Lms Responsive Style Start
         font-weight: 500;
         font-size: 14px;
     }
+    .lms-accordion-job {padding: 0;}
 }
 
 @media screen and (max-width: 640px) {
