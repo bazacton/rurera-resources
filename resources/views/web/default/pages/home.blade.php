@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="d-flex align-items-center justify-content-center mt-80">
+                    <div class="d-flex align-items-center justify-content-center mt-50">
                         <a href="/pricing" class="try-rurera-btn btn-primary text-dark-blue font-16 register-btn py-15 px-30">Try Rurera for free</a>
                     </div>
                 </div>
