@@ -1095,6 +1095,9 @@ Lms Responsive Style Start
     .lms-accordion-job .card-header {
         padding: 8px 15px 12px;
     }
+    .lms-jobs-form .card-header:has(.form-field-counter) button {
+        padding-right: 0;
+    }
 }
 
 @media screen and (max-width: 640px) {
