@@ -45,7 +45,7 @@ $profile_navs = isset( $navData['profile_navs'] )? $navData['profile_navs'] : ar
                     </a>
                 <div class="navbar-toggle-header text-right d-lg-none">
                     <button class="btn-transparent" id="navbarClose">
-                        <i data-feather="x" width="32" height="32">x</i>
+                        <img src="/assets/default/svgs/close.svg" alt="close">
                     </button>
                 </div>
 
