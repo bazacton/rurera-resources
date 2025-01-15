@@ -1137,7 +1137,7 @@ Lms Responsive Style Start
         left: 0;
         top: 5px;
     }
-    .form-field-counter {position: relative;right: 0;margin: 10px 0 0;}
+    .form-field-counter {position: relative;right: 0;margin: 10px 0 0 30px;}
     .lms-jobs-form .input-field {text-align: left;}
     .job-singup-sub-header .btn-primary {padding-left: 25px; padding-right: 25px;}
     .lms-counter-card.counter-purple-bg,
