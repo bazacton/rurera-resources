@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="/assets/default/vendors/scroll-animation/aos.css"/>
 <style>
     .gallery-sub-header {
-        min-height: 790px;
+        min-height: 850px;
     }
 
     .lms-search-services {
@@ -26,7 +26,7 @@
     <section class="position-relative job-singup-sub-header gallery-sub-header page-sub-header pb-80 pt-80 mb-0 overflow-hidden">
         <div class="container h-100">
             <div class="row h-100">
-                <div class="col-12 col-md-12 col-lg-7" data-aos-once="true" data-aos="fade-right" data-aos-anchor=".gallery-sub-header" data-aos-offset="100" data-aos-duration="3000">
+                <div class="col-12 col-md-12 col-lg-6" data-aos-once="true" data-aos="fade-right" data-aos-anchor=".gallery-sub-header" data-aos-offset="100" data-aos-duration="3000">
                     <h1 class="font-72 font-weight-bold">Mastering <span class="text-scribble mr-10">SATs</span> with confidence.</h1>
                     <h2 class="mb-15 font-30">Maximize Your Performance: Boost your sats scores.
                     </h2>
