@@ -63,7 +63,7 @@
                 <div class="col-12 col-lg-6 col-md-6">
                     <h1 class="font-weight-bold font-72"><span class="mr-10 text-scribble">Independent</span>Schools Entrance Exams</h1>
                     <h2 class="font-30 mb-15">Unlock your Dreams: Master Entrance Exams</h2>
-                    <h3>Prepare for UK independent entrance exams with ease using our comprehensive resources. Our expert support helps you excel effortlessly.</h3>
+                    <p class="font-19">Prepare for UK independent entrance exams with ease using our comprehensive resources. Our expert support helps you excel effortlessly.</p>
                     <ul class="mb-30 p-0">
                         <li class="mb-10 font-19"><img alt="#" height="25" src="../assets/default/svgs/mobile.svg" width="25" />Learning Practice: Targeted skill-building sessions.</li>
                         <li class="mb-10 font-19"><img alt="#" height="25" src="../assets/default/svgs/preparation.svg" width="25" />Test Preparation: Comprehensive exam strategies.</li>
