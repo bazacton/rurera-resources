@@ -2767,6 +2767,7 @@ Lms Contact Form Pages Style Start
 .content-list li img {height: 24px; width: 24px; margin-right: 5px; filter: invert(65%) sepia(49%) saturate(705%) hue-rotate(179deg) brightness(101%) contrast(101%); position: absolute; left: 0;}
 .content-list li {
   padding: 0 0 0 35px;
+  position: relative;
 }
 /*************************************
 Lms Contact Form Pages Style End
