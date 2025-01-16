@@ -1432,6 +1432,12 @@ Lms Responsive Style Start
     .quests-list.p-30 {padding: 15px !important;}
     .lms-client-list .lms-client-logo figure {height: 80px;}
     .footer-bottom .footer-nav-box {flex-wrap: wrap; gap: 20px 0;}
+    .lms-choose-membership .social-login {min-height: 45px; margin: 0 !important;}
+    .social-login span {font-size: 12px;}
+    .lms-choose-membership .social-login img {
+        width: 15px;
+        height: 15px;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
