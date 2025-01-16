@@ -23,7 +23,7 @@
                             <img alt="#" height="18" src="../assets/default/svgs/check-simple.svg" width="18" itemprop="check image" class="img-sm mr-10" />Homework aligned with national curriculum
                         </li>
                     </ul>
-                    <div class="align-items-center d-flex"><a class="text-white bg-primary justify-content-center mt-0 register-btn try-rurera-btn" href="https://rurera.com/pricing">Try Rurera for free</a></div>
+                    <a class="text-white bg-primary justify-content-center mt-0 register-btn try-rurera-btn" href="https://rurera.com/pricing">Try Rurera for free</a>
                 </div>
                 <div class="col-12 col-lg-5 col-md-5">
                     <figure class="position-relative mb-80">
