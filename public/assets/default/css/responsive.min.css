@@ -1438,6 +1438,9 @@ Lms Responsive Style Start
         width: 15px;
         height: 15px;
     }
+    .lms-choose-membership .form-login-reading .form-separator {
+        margin: 5px 0 15px;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
