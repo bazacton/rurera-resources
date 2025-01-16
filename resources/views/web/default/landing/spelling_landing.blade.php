@@ -45,10 +45,6 @@
                         </li>
                     </ul>
                     <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
-                    <!-- <div class="d-flex align-items-center">
-                        <a href="{{url('/')}}/register" class="btn-primary rounded-pill">KS1-year2 SATs</a>
-                        <a href="{{url('/')}}/register" class="btn-primary rounded-pill ml-15">KS2-year6 SATs</a>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -373,13 +369,8 @@
                         <h2 class="font-40 text-dark">Curriculum Based Word Lists</h2>
                         <p class="font-16 text-gray mt-10">
                             Explore Rurera’s Word Directory, a comprehensive collection of vocabulary designed to enhance spelling skills. With words organized from A-Z, suffix, prefix, learning becomes simple and effective.
-
                         </p>
                     </div>
-                    <!-- <div class="mt-35 d-flex align-items-center btn-holder">
-                        <a href="{{url('/')}}/pricing" class="btn btn-primary">Start SATs Practice</a>
-                        <a href="{{url('/')}}/pricing" class="btn btn-outline-primary ml-15">Learn More</a>
-                    </div> -->
                 </div>
             </div>
             <div class="col-12 col-lg-6 mt-20 mt-lg-0">
@@ -407,13 +398,8 @@
                         </h2>
                         <p class="font-16 text-gray mt-10">
                             With Rurera’s Play and Learn Quizzes, kids can enjoy fun, interactive challenges that help them strengthen vocabulary and spelling skills while having a great time learning.
-
                         </p>
                     </div>
-                    <!-- <div class="mt-35 d-flex align-items-center btn-holder">
-                        <a href="{{url('/')}}/pricing" class="btn btn-primary">Take a SATs Quiz</a>
-                        <a href="{{url('/')}}/pricing" class="btn btn-outline-primary ml-15">Moniter performance</a>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -429,10 +415,6 @@
 
                         </p>
                     </div>
-                    <!-- <div class="mt-35 d-flex align-items-center btn-holder">
-                        <a href="{{url('/')}}/pricing" class="btn btn-primary">Track performance</a>
-                        <a href="{{url('/')}}/pricing" class="btn btn-outline-primary ml-15">Learn More</a>
-                    </div> -->
                 </div>
             </div>
             <div class="col-12 col-lg-6 mt-20 mt-lg-0">
