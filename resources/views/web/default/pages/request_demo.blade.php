@@ -124,10 +124,10 @@
                                 <div class="form-group d-flex flex-column">
                                     <div class="select-field w-100">
                                         <select>
-                                            <option value="Industry*">Country*</option>
-                                            <option value="Industry*">Country*</option>
+                                            <option value="Country*">Country*</option>
+                                            <option value="Country*">Country*</option>
                                             <option value="Industry*">Industry*</option>
-                                            <option value="Industry*">Country*</option>
+                                            <option value="Country*">Country*</option>
                                         </select>
                                     </div>
                                 </div>
@@ -136,10 +136,10 @@
                                 <div class="form-group d-flex flex-column">
                                     <div class="select-field w-100">
                                         <select>
-                                            <option value="Industry*">Company sieze*</option>
-                                            <option value="Industry*">Country*</option>
-                                            <option value="Industry*">Company sieze*</option>
-                                            <option value="Industry*">Country*</option>
+                                            <option value="Company size*">Company size*</option>
+                                            <option value="Country*">Country*</option>
+                                            <option value="Company size*">Company size*</option>
+                                            <option value="Country*">Country*</option>
                                         </select>
                                     </div>
                                 </div>
