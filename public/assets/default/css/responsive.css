@@ -504,7 +504,7 @@ Lms Responsive Style Start
     .have-question-card .contact-info .contact-btn {padding: 12px 20px; }
     .have-question-card .contact-info {padding-top: 40px; margin-top: 40px;}
     .lms-categories-section.has-bg, .lms-our-mission-section.has-bg {background-size: cover !important;}
-    .lms-our-mission-section.has-bg .lms-mission-holder {padding-top: 60px;}
+    .lms-our-mission-section.has-bg .lms-mission-holder {padding-top: 60px; text-align: center;}
     .modal.spell_words_popup {padding-right: 0 !important; margin-left: 0; width: 100%;}
     .spell-words-filters [class*="col-"] {flex: 0 0 50%; max-width: 50%; padding-bottom: 15px;}
     .spell-words-filters .play-again {display: inline-block; position: fixed; bottom: 20px; right: 20px; z-index: 1;}
@@ -591,7 +591,6 @@ Lms Responsive Style Start
     .pages-sub-header.about-sub-header.has-bg {background-size: cover !important; max-height: 100%;}
     .pages-sub-header.about-sub-header figure {display: none;}
     .lms-company-page {margin-top: 0 !important; padding-top: 0 !important;}
-    .lms-our-mission-section.has-bg .lms-mission-holder {padding-top: 50px;}
     .lms-our-mission-section.has-bg {background-size: cover;}
     .lms-counter-section {text-align: center;}
     .read-quiz-content {max-width: 100%;}
