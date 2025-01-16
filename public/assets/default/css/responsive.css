@@ -146,6 +146,7 @@ Lms Responsive Style Start
     .feature-slider .feature-slider-body .card-title {font-size: 16px}
     .home-sections.reward-program-section {margin-top: 50px !important; overflow: hidden;}
     .home-sections.home-sections-swiper { padding-bottom: 85px; margin-top: 0 !important; overflow: hidden;}
+    .home-sections.home-sections-swiper.mt-sm-50 {margin-top: 50px !important;}
     .choose-sats-section.mt-0-sm {margin-top: 0 !important;}
     .home-sections.home-sections-swiper.pb-sm-0,
     .page-sub-header .job-singup-sub-header .reward-program-section {padding-bottom: 0;}
