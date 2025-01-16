@@ -26,7 +26,7 @@
                     <a class="text-white bg-primary justify-content-center mt-0 register-btn try-rurera-btn" href="https://rurera.com/pricing">Try Rurera for free</a>
                 </div>
                 <div class="col-12 col-lg-5 col-md-5">
-                    <figure class="position-relative mb-80">
+                    <figure class="position-relative mb-80 mt-sm-50">
                         <img alt="The next-generation e-learning platform" height="460" src="../assets/default/img/educatormain-image1.jpg" width="414" itemprop="image" class="rounded-sm" />
                         <img alt="sub image" height="257" src="../assets/default/img/educatormain-image2.jpg" width="220" itemprop="image" class="rounded-sm sub-thumb" />
                         <img alt="circle" height="170" src="/assets/default/img/home/circle-4.png" width="170" itemprop="image" class="find-instructor-section-circle" style="right: -70px;" />
