@@ -459,10 +459,6 @@
                         <h2 class="font-40 text-dark"> Spelling Bee Practices</h2>
                         <p class="font-16 text-gray mt-10">Get ready for spelling success with Rurera’s Spelling Bee practice. Test your skills with challenging words and timed quizzes to boost your spelling confidence and performance.</p>
                     </div>
-                    <!-- <div class="mt-35 d-flex align-items-center btn-holder">
-                        <a href="{{url('/')}}/pricing" class="btn btn-primary">Track performance</a>
-                        <a href="{{url('/')}}/pricing" class="btn btn-outline-primary ml-15">Learn More</a>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -478,10 +474,6 @@
 
                         </p>
                     </div>
-                    <!-- <div class="mt-35 d-flex align-items-center btn-holder">
-                        <a href="{{url('/')}}/pricing" class="btn btn-primary">Take a Quiz</a>
-                        <a href="{{url('/')}}/pricing" class="btn btn-outline-primary ml-15">Moniter performance</a>
-                    </div> -->
                     <div class="flex-grow-1 ml-15"></div>
                 </div>
             </div>
