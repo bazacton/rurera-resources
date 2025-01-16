@@ -2764,7 +2764,10 @@ Lms Contact Form Pages Style Start
 .qoute-images {display: flex; align-items: center; justify-content: center;}
 .qoute-images .img-box {max-width: 110px; min-width: 110px; text-align: center;}
 .qoute-images .img-box img {max-width: 100%; max-height: 80px;}
-.content-list li img {height: 24px; width: 24px; margin-right: 5px; filter: invert(65%) sepia(49%) saturate(705%) hue-rotate(179deg) brightness(101%) contrast(101%);}
+.content-list li img {height: 24px; width: 24px; margin-right: 5px; filter: invert(65%) sepia(49%) saturate(705%) hue-rotate(179deg) brightness(101%) contrast(101%); position: absolute; left: 0;}
+.content-list li {
+  padding: 0 0 0 35px;
+}
 /*************************************
 Lms Contact Form Pages Style End
 *************************************/
