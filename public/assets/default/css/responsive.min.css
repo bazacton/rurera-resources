@@ -416,11 +416,7 @@ Lms Responsive Style Start
     .section-title p,
     .lms-text-section p,
     .find-instructor-section .font-16 {font-size: 16px !important; line-height: 24px;}
-    .find-instructor-section strong {
-        font-weight: bold !important;
-        color: #333 !important;
-        font-size: 1.25rem!important;
-    }
+    .find-instructor-section strong {font-weight: bold !important; color: #333 !important; font-size: 1.25rem!important;}
     .page-sub-header p {margin-bottom: 15px;}
     .lms-testimonials.testimonials-fancy {padding-top: 0; margin-top: 30px;}
     .job-singup-sub-header {padding-bottom: 30px;}
@@ -450,9 +446,7 @@ Lms Responsive Style Start
     .lms-search-services .process-holder {display: none;}
     .process-card-holder [class*="col-"] {flex: 0 0 100%; max-width: 100%;}
     .process-card {text-align: left !important; padding-left: 60px; overflow: hidden; height: 100%; margin-bottom: 0 !important;}
-    .lms-search-services [class*="col-"]:last-child .process-card {
-        height: auto;
-    }
+    .lms-search-services [class*="col-"]:last-child .process-card {height: auto;}
     .reward-process .process-card {padding-left: 0;}
     .process-step-number:before {background-color: #fff; position: absolute; left: -30px; top: 100%; content: ""; height: 9999px; width: 6px; margin-left: 0;}
     .process-step-number:after {position: absolute; left: -40px; top: 0; height: 25px; width: 25px; background: #e66f51; border: 2px solid #fff; border-radius: 100%; content: ""; margin-left: 0;}
@@ -1113,9 +1107,7 @@ Lms Responsive Style Start
     .blog-single-post .blog-newsletter .form-element {position: relative;}
     .blog-single-post .blog-newsletter button {position: absolute; right: 0; padding: 0 15px; width: auto; border-radius: 0 5px 5px 0;}
     .lms-features-section h3 {margin-top: 15px; font-size: 18px;}
-    .team-slider {
-        padding: 0 15px;
-    }
+    .team-slider {padding: 0 15px;}
     .team-slider .swiper-slide:nth-child(odd) {margin-top: 0;}
 }
 
@@ -1128,9 +1120,7 @@ Lms Responsive Style Start
     .list-tags {justify-content: center;}
     .lms-testimonial-slider .testimonial-body {flex-direction: column;}
     .lms-testimonial-slider .testimonial-card {padding: 15px;}
-    .lms-testimonial-slider .img-holder {
-        width: auto;
-    }
+    .lms-testimonial-slider .img-holder {width: auto;}
     .lms-testimonial-slider .testimonial-card .text-holder {width: 100%; padding: 15px 0 0 0;text-align: center;}
     .lms-testimonial-slider .swiper-button-next {right: 0px;}
     .lms-testimonial-slider .swiper-button-prev {left: 0;}
@@ -1154,15 +1144,8 @@ Lms Responsive Style Start
     .footer .footer-social {text-align: left;}
     .lms-form-wrapper .lms-radio-btn-group li {min-width: 115px;}
     .lms-jobs-form .card-header {flex-direction: column;align-items: flex-start;}
-    .lms-jobs-form .card-header:has(.form-field-counter) button {
-        padding-right: 0;
-        padding-left: 30px;
-    }
-    .lms-jobs-form .card .icon-box {
-        position: absolute;
-        left: 0;
-        top: 5px;
-    }
+    .lms-jobs-form .card-header:has(.form-field-counter) button {padding-right: 0; padding-left: 30px;}
+    .lms-jobs-form .card .icon-box {position: absolute; left: 0; top: 5px;}
     .form-field-counter {position: relative;right: 0;margin: 10px 0 0 30px;}
     .lms-jobs-form .input-field {text-align: left;}
     .job-singup-sub-header .btn-primary {padding-left: 25px; padding-right: 25px;}
@@ -1272,19 +1255,9 @@ Lms Responsive Style Start
     .search-block .search-input .form-group {padding: 10px;}
     .search-block .search-input input[type=text] {padding: 0.3rem 0.3rem 0.3rem 0;}
     .subscribe-plan {min-height: auto;}
-    .team-section .section-title {
-        flex-direction: column;
-        gap: 10px 0;
-    }
-    .checkbox-field.privacy-field {
-        align-items: flex-start;
-        margin: 0;
-    }
-    
-    .lms-jobs-form .checkbox-field.privacy-field label {
-        font-size: 14px;
-    }
-    
+    .team-section .section-title {flex-direction: column; gap: 10px 0;}
+    .checkbox-field.privacy-field {align-items: flex-start; margin: 0;}
+    .lms-jobs-form .checkbox-field.privacy-field label {font-size: 14px;}
     .lms-jobs-form .checkbox-field.privacy-field input[type=checkbox] {margin-top: 8px;}
 }
 @media screen and (max-width: 575px) {
@@ -1447,10 +1420,7 @@ Lms Responsive Style Start
     .quests-item {align-items: flex-start;}
     .quests-list.p-30 {padding: 15px !important;}
     .lms-client-list .lms-client-logo figure {height: 80px;}
-    .footer-bottom .footer-nav-box {
-        flex-wrap: wrap;
-        gap: 20px 0;
-    }
+    .footer-bottom .footer-nav-box {flex-wrap: wrap; gap: 20px 0;}
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
