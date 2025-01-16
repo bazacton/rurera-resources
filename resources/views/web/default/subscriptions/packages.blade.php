@@ -9,7 +9,7 @@ $subscribed_childs = isset( $subscribed_childs) ? $subscribed_childs : 0;
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12">
-                    <div class="element-title text-center mb-40">
+                    <div class="section-title text-center mb-40">
                         @if(isset($action_reason))
                             @if( $action_reason == 'module_access')
                                 <p class="font-16">Subscribed package for {{isset($childObj->id)? $childObj->get_full_name() : ''}} dont have access to this module.</p>
@@ -37,7 +37,7 @@ $user_subscribed_for = isset( $user_subscribed_for)? $user_subscribed_for : 1;
                       {{ csrf_field() }}
                 <div class="row">
                         <div class="col-12 col-lg-12 text-center">
-                            <div class="element-title text-center mb-40">	
+                            <div class="section-title text-center mb-40">	
                                 <h2 itemprop="title" class="font-50 text-dark-charcoal mb-0">Choose the right plan for {{isset($childObj->id)? $childObj->get_full_name() : ''}}</h2>
                                 <p class="font-19 pt-10">Save more with annual pricing</p>
                             </div>
