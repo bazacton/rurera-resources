@@ -3384,34 +3384,12 @@ Parent Account Style End
 /*********************************
 Tutoring Features Style Start
 **********************************/
-.tutoring-features-section {
-  background-color: #f7f7f7;
-}
-.feature-card {
-    background-color: #f7f7f7;
-    text-align: center;
-    padding: 0 30px 30px;
-}
-.tutoring-features-holder .row {
-  margin: 0;
-}
-.tutoring-features-holder [class*="col-"] {
-  padding: 0;
-}
-.feature-card .icon-box {
-  height: 60px;
-  width: 60px;
-  background-color: #fff;
-  margin: 0 auto 20px;
-  border-radius: 100%;
-  padding: 12px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.feature-card .icon-box img {
-  max-width: 100%;
-}
+.tutoring-features-section {background-color: #f7f7f7;}
+.feature-card {background-color: #f7f7f7; text-align: center; padding: 0 30px 30px;}
+.tutoring-features-holder .row {margin: 0;}
+.tutoring-features-holder [class*="col-"] {padding: 0;}
+.feature-card .icon-box {height: 60px; width: 60px; background-color: #fff; margin: 0 auto 20px; border-radius: 100%; padding: 12px; display: inline-flex; align-items: center; justify-content: center;}
+.feature-card .icon-box img {max-width: 100%;}
 /*Tutoring Accordian Style Start*/
 .tutoring-works .lms-accordion-modern.accordion {
   padding: 0;
