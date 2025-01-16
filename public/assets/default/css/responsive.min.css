@@ -432,7 +432,8 @@ Lms Responsive Style Start
     .page-sub-header h1,
     .time-tables-sub-header h1,
     .lms-setup-progress-section .section-title h1,
-    .home-banner h1.font-72 {text-align: center; font-size: 36px !important; line-height: 46px !important;}
+    .home-banner h1.font-72,
+    .home-banner h1.font-50 {text-align: center; font-size: 36px !important; line-height: 46px !important;}
     .job-singup-sub-header {text-align: center;}
     .job-singup-sub-header li {text-align: left; font-size: 16px !important;}
     .gallery-sub-header .masonry-grid-gallery {display: none;}
