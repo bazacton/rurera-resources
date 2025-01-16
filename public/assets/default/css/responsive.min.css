@@ -1441,6 +1441,12 @@ Lms Responsive Style Start
     .lms-choose-membership .form-login-reading .form-separator {
         margin: 5px 0 15px;
     }
+    .leave-option-control button {
+        width: 100%;
+    }
+    .leave-option-control {
+        flex-wrap: wrap;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
