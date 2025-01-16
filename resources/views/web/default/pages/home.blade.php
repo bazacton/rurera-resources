@@ -146,7 +146,7 @@
             </div>
         </div>
     </section>
-    <section class="home-sections home-sections-swiper container position-relative mt-90 overflow-hidden pb-sm-0">
+    <section class="home-sections home-sections-swiper container position-relative mt-90 overflow-hidden pb-sm-0 mt-sm-50">
         <div class="row">
             <div class="col-12">
                 <div class="reward-program-section">
