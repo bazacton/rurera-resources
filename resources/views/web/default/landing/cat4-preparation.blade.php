@@ -57,7 +57,7 @@
                         <li class="mb-10 font-19"><img alt="#" height="25" src="../assets/default/svgs/graphic-design.svg" width="25" />Endless CAT4 Resources</li>
                         <li class="font-19"><img alt="#" height="25" src="../assets/default/svgs/book-opend.svg" width="25" />Personalized Progress Reports</li>
                     </ul>
-                    <a href="https://rurera.com/pricing" class="text-white bg-primary justify-content-center register-btn try-rurera-btn">Try Rurera for free</a>
+                    <a href="https://rurera.com/pricing" class="text-white bg-primary justify-content-center register-btn try-rurera-btn mt-0">Try Rurera for free</a>
                 </div>
             </div>
         </div>
