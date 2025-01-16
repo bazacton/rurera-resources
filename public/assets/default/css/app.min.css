@@ -2408,18 +2408,7 @@ Header Navbar Dropdown Style Start
 .navbar-nav .nav-item .sidenav-dropdown {position: absolute; left: 0; top: 38px; width: auto; background: #f8f8f8; padding: 10px 20px 20px; box-shadow: 0 3px 3px 1px rgba(0, 0, 0, .1); border-radius: 0; transition: all 0.3s; z-index: 99; opacity: 0; visibility: hidden;}
 .navbar-nav .nav-item.book_shelf .sidenav-dropdown {position: absolute; left: 0; top: 38px; width: auto; background: #f3ce03; padding: 10px 20px 20px; box-shadow: 0 3px 3px 1px rgba(0, 0, 0, .1); border-radius: 0; transition: all 0.3s; z-index: 99; opacity: 0; visibility: hidden;}
 .navbar-nav .nav-item:hover .sidenav-dropdown {opacity: 1; visibility: visible; top: 100%;}
-.navbar-nav .nav-item .sidenav-dropdown:before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: -7px;
-    height: 13px;
-    width: 13px;
-    margin-left: -7px;
-    transform: rotate(45deg);
-    background-color: #f8f8f8;
-    z-index: -1;
-}
+.navbar-nav .nav-item .sidenav-dropdown:before {content: ""; position: absolute; left: 50%; top: -7px; height: 13px; width: 13px; margin-left: -7px; transform: rotate(45deg); background-color: #f8f8f8; z-index: -1;}
 .navbar-nav .nav-item .sidenav-dropdown li a {font-size: 14px; text-align: center; color: #171347; display: block; margin-bottom: 20px; padding-left: 10px; position: relative; text-align: left; white-space: nowrap;}
 .navbar-nav .nav-item:hover .sidenav-dropdown li:last-child a {margin-bottom: 0;}
 .navbar-nav .nav-item .nav-link:hover {color: #171347;}
