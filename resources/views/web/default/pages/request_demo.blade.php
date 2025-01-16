@@ -388,7 +388,10 @@
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                     <div class="form-group d-flex flex-column mb-0">
-                                        <div class="checkbox-field w-100"><input type="checkbox" id="data-privacy" /><label for="data-privacy">I agree to receive other communications from Atom Learning.</label></div>
+                                        <div class="checkbox-field privacy-field w-100">
+                                            <input type="checkbox" id="data-privacy" />
+                                            <label for="data-privacy">I agree to receive other communications from Atom Learning.</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
