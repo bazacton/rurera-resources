@@ -655,7 +655,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="element-title text-center mb-40">
+                    <div class="section-title text-center mb-40">
                         <h2 itemprop="title" class="font-40 text-dark-charcoal mb-0">Ideal Tuition for Your Child</h2>
                         <p class="font-16 pt-10" itemprop="description">For Exceptional Value: Choose Our Pre-Selected Package for Maximum Savings! </p>
                     </div>
