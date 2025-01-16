@@ -233,7 +233,7 @@
                 <div class="col-12 col-sm-12 col-lg-6 col-md-6">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon" style="background-color: #5e82d8;"><img alt="Pretest Activities" height="150" src="/assets/default/svgs/features-user.svg" width="150" /></i>
+                            <i class="svg-icon" style="background-color: #5e82d8;"><img alt="Pretest Activities" height="150" src="/assets/default/svgs/features-user-white.svg" width="150" /></i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">Pretest Activities</h3>
@@ -247,7 +247,7 @@
                 <div class="col-12 col-sm-12 col-lg-6 col-md-6">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon" style="background-color: #46b7e9;"><img alt="100+ ISEB Resources" height="200" src="/assets/default/svgs/features-resources.svg" width="200" /></i>
+                            <i class="svg-icon" style="background-color: #46b7e9;"><img alt="100+ ISEB Resources" height="200" src="/assets/default/svgs/features-resources-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">Timed Test Challenges</h3>
@@ -262,7 +262,7 @@
                 <div class="col-12 col-sm-12 col-lg-6 col-md-6">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon" style="background-color: #3cb46e;"><img alt="Timed Test Challenges" height="200" src="/assets/default/svgs/features-time-test.svg" width="200" /></i>
+                            <i class="svg-icon" style="background-color: #3cb46e;"><img alt="Timed Test Challenges" height="200" src="/assets/default/svgs/features-time-test-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">Pinpoint and Improve</h3>
@@ -277,7 +277,7 @@
                 <div class="col-12 col-sm-12 col-lg-6 col-md-6">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon" style="background-color: #f87966;"><img alt="Identify and Improve" height="200" src="/assets/default/svgs/features-globe.svg" width="200" /></i>
+                            <i class="svg-icon" style="background-color: #f87966;"><img alt="Identify and Improve" height="200" src="/assets/default/svgs/features-globe-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">100+ Practice Resources</h3>
@@ -291,7 +291,7 @@
                 <div class="col-12 col-sm-12 col-lg-6 col-md-6">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon" style="background-color: #3cb46e;"><img alt="Up-to-Date Reports" height="200" src="/assets/default/svgs/features-time-test.svg" width="200" /></i>
+                            <i class="svg-icon" style="background-color: #3cb46e;"><img alt="Up-to-Date Reports" height="200" src="/assets/default/svgs/features-time-test-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">Frequent Updates &amp; In-Depth Reports</h3>
@@ -305,7 +305,7 @@
                 <div class="col-12 col-sm-12 col-lg-6 col-md-6">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon" style="background-color: #46b7e9;"><img alt="Dedicated Professional Support" height="200" src="/assets/default/svgs/features-resources.svg" width="200" /></i>
+                            <i class="svg-icon" style="background-color: #46b7e9;"><img alt="Dedicated Professional Support" height="200" src="/assets/default/svgs/features-resources-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">Dedicated Professional Support</h3>
