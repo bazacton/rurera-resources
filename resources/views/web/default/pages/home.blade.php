@@ -180,7 +180,7 @@
             </div>
         </div>
     </section>
-    <section class="testimonials-container pt-80 pb-80">
+    <section class="testimonials-container pt-60 pb-60">
         <div class="container">
             <div class="row">
                 <div class="col-12">
