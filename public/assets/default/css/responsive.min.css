@@ -1108,6 +1108,9 @@ Lms Responsive Style Start
     .lms-features-section h3 {margin-top: 15px; font-size: 18px;}
     .team-slider {padding: 0 15px;}
     .team-slider .swiper-slide:nth-child(odd) {margin-top: 0;}
+    .have-question-card .media-holder {
+        width: 90%;
+    }
     .have-question-card .media-holder img {
         max-width: 100%;
     }
