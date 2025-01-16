@@ -220,7 +220,7 @@
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon bg-mdblue"><img alt="100+ Expert-Crafted Tests" height="150" src="/assets/default/svgs/features-user.svg" width="150" /></i>
+                            <i class="svg-icon bg-mdblue"><img alt="100+ Expert-Crafted Tests" height="150" src="/assets/default/svgs/features-user-white.svg" width="150" /></i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">100+ Expert-Crafted Tests</h3>
@@ -234,7 +234,7 @@
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon bg-green"><img alt="Wide Range of Questions" height="200" src="/assets/default/svgs/features-time-test.svg" width="200" /></i>
+                            <i class="svg-icon bg-green"><img alt="Wide Range of Questions" height="200" src="/assets/default/svgs/features-time-test-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">Wide Range of Questions</h3>
@@ -248,7 +248,7 @@
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon bg-orange"><img alt="Assess and Improve" height="200" src="/assets/default/svgs/features-globe.svg" width="200" /></i>
+                            <i class="svg-icon bg-orange"><img alt="Assess and Improve" height="200" src="/assets/default/svgs/features-globe-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">Assess and Improve</h3>
@@ -262,7 +262,7 @@
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon bg-deepskyblue"><img alt="Personalized Learning Paths" height="200" src="/assets/default/svgs/features-resources.svg" width="200" /></i>
+                            <i class="svg-icon bg-deepskyblue"><img alt="Personalized Learning Paths" height="200" src="/assets/default/svgs/features-resources-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">Personalized Learning Paths</h3>
