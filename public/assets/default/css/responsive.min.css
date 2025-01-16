@@ -146,9 +146,7 @@ Lms Responsive Style Start
     .feature-slider .feature-slider-body .card-title {font-size: 16px}
     .home-sections.reward-program-section {margin-top: 50px !important; overflow: hidden;}
     .home-sections.home-sections-swiper { padding-bottom: 85px; margin-top: 0 !important; overflow: hidden;}
-    .choose-sats-section.mt-0-sm {
-        margin-top: 0 !important;
-    }
+    .choose-sats-section.mt-0-sm {margin-top: 0 !important;}
     .home-sections.home-sections-swiper.pb-sm-0,
     .page-sub-header .job-singup-sub-header .reward-program-section {padding-bottom: 0;}
     .home-sections .section-title {font-size: 18px;}
@@ -214,10 +212,7 @@ Lms Responsive Style Start
 @media screen and (max-width: 992px) {
     .navbar-expand-lg .navbar-toggler,
     .navbar1 .navbar-toggler {display: block; font-size: 15px; color: #000; font-weight: 600;}
-    #navbarClose img {
-        height: 20px;
-        width: 20px;
-    }
+    #navbarClose img {height: 20px; width: 20px;}
     .navbar-nav .nav-item .sidenav-dropdown:before {display: none;}
     .navbar-nav .nav-item:hover .sidenav-dropdown {top: 0;}
     .lms-mega-menu {display: none;}
