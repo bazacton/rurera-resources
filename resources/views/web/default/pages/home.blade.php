@@ -81,7 +81,7 @@
     </section>
     
     {{do_shortcode('redefining_personalized_learning', array('items' => array(2,3,5,6,7,8,9,10,11,15,16,17)))}}
-    <section class="choose-sats choose-sats-section pt-80 pb-90 mt-50">
+    <section class="choose-sats choose-sats-section pt-80 pb-60 mt-50">
         <div class="container">
             <div class="row">
                 <div class="col-12">
