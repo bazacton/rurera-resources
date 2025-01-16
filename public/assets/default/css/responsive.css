@@ -149,7 +149,8 @@ Lms Responsive Style Start
     .choose-sats-section.mt-0-sm {
         margin-top: 0 !important;
     }
-    .home-sections.home-sections-swiper.pb-sm-0 {padding-bottom: 0;}
+    .home-sections.home-sections-swiper.pb-sm-0,
+    .page-sub-header .job-singup-sub-header .reward-program-section {padding-bottom: 0;}
     .home-sections .section-title {font-size: 18px;}
     .home-sections .section-hint {font-size: 14px;}
     .subscribes-container .left-gradient-box {width: 80px; height: 80px;}
