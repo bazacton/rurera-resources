@@ -3371,45 +3371,12 @@ span.review-label {line-height: normal;}
 /*********************************
 Parent Account Style Start
 **********************************/
-.parent-account-section .container > .row {
-  min-height: 452px;
-}
-.parent-account-section .imb-box img {
-  height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-}
-section.parent-account-section {
-  position: relative;
-  min-height: 452px;
-  margin-top: 80px;
-  background-color: var(--primary) !important;
-}
-.parent-account-section ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.parent-account-section ul li {
-  list-style: none;
-  color: #fff;
-  position: relative;
-  font-weight: 500;
-  padding: 0 0 0 30px;
-}
-.parent-account-section ul li:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  height: 16px;
-  width: 16px;
-  background-color: orange;
-  border-radius: 100%;
-  margin-top: -8px;
-}
+.parent-account-section .container > .row {min-height: 452px;}
+.parent-account-section .imb-box img {height: 100%; max-width: 100%; object-fit: contain;}
+section.parent-account-section {position: relative; min-height: 452px; margin-top: 80px; background-color: var(--primary) !important;}
+.parent-account-section ul {margin: 0; padding: 0; display: flex; flex-direction: column; gap: 20px;}
+.parent-account-section ul li {list-style: none; color: #fff; position: relative; font-weight: 500; padding: 0 0 0 30px;}
+.parent-account-section ul li:before {content: ""; position: absolute; left: 0; top: 50%; height: 16px; width: 16px; background-color: orange; border-radius: 100%; margin-top: -8px;}
 /*********************************
 Parent Account Style End
 **********************************/
