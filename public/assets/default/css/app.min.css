@@ -3529,71 +3529,16 @@ Tutoring Features Style End
 /*********************************
 Page Elements Style Start
 **********************************/
-.has-curve-shape {
-  padding: 70px 0 150px;
-  position: relative;
-}
-.custom-btn a {
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: 1px solid rgba(255,255,255,0.2);
-}
-.has-curve-shape:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: #fff;
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-  z-index: 2;
-  height: 70px;
-}
-
-.trial-steps li {
-  list-style: none;
-  flex: 0 0 33%;
-  max-width: 33%;
-  text-align: center;
-  position: relative;
-}
-
-.trial-steps ul {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px 30px;
-  position: relative;
-  overflow: hidden;
-}
-
-.trial-box {
-  text-align: center;
-}
-
-.trial-steps li .icon-box {
-  height: 40px;
-  width: 40px;
-  display: inline-flex;
-  justify-content: center;
-  border: 2px solid var(--primary);
-  border-radius: 100%;
-  align-items: center;
-  background-color: #fff;
-  position: relative;
-}
-.trial-steps .active .icon-box {
-  background-color: var(--primary);
-}
-.trial-steps li .icon-box img {
-  height: 20px;
-  width: 20px;
-  object-fit: contain;
-  filter: invert(19%) sepia(11%) saturate(3046%) hue-rotate(191deg) brightness(96%) contrast(95%);
-}
-.trial-steps .active .icon-box img {
-  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(295deg) brightness(107%) contrast(101%);
-}
-
+.has-curve-shape {padding: 70px 0 150px; position: relative;}
+.custom-btn a {padding: 10px 15px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.2);}
+.has-curve-shape:after {content: ""; position: absolute; left: 0; bottom: 0; width: 100%; background: #fff; border-radius: 50% 50% 0 0 / 100% 100% 0 0; z-index: 2; height: 70px;}
+.trial-steps li {list-style: none; flex: 0 0 33%; max-width: 33%; text-align: center; position: relative;}
+.trial-steps ul {display: flex; flex-wrap: wrap; margin: 0 -15px 30px; position: relative; overflow: hidden;}
+.trial-box {text-align: center;}
+.trial-steps li .icon-box {height: 40px; width: 40px; display: inline-flex; justify-content: center; border: 2px solid var(--primary); border-radius: 100%; align-items: center; background-color: #fff; position: relative;}
+.trial-steps .active .icon-box {background-color: var(--primary);}
+.trial-steps li .icon-box img {height: 20px; width: 20px; object-fit: contain; filter: invert(19%) sepia(11%) saturate(3046%) hue-rotate(191deg) brightness(96%) contrast(95%);}
+.trial-steps .active .icon-box img {filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(295deg) brightness(107%) contrast(101%);}
 .trial-steps li:before {
   content: "";
   height: 6px;
