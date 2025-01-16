@@ -3391,48 +3391,13 @@ Tutoring Features Style Start
 .feature-card .icon-box {height: 60px; width: 60px; background-color: #fff; margin: 0 auto 20px; border-radius: 100%; padding: 12px; display: inline-flex; align-items: center; justify-content: center;}
 .feature-card .icon-box img {max-width: 100%;}
 /*Tutoring Accordian Style Start*/
-.tutoring-works .lms-accordion-modern.accordion {
-  padding: 0;
-  background-color: inherit;
-}
-.tutoring-works .lms-accordion-modern.accordion .card {
-  margin-left: 0;
-  margin-bottom: 8px;
-  border-radius: 10px;
-  box-shadow: none;
-  background-color: #fff;
-  border: 0 !important;;
-}
-.tutoring-works .lms-accordion-modern.accordion .card.active {
-  max-width: 450px;
-}
-.tutoring-works .lms-accordion-modern.accordion .btn span {
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
-  color: var(--primary);
-  font-size: 14px;
-  font-weight: 500;
-  background-color: #d6e5fd;
-}
-.tutoring-works .lms-accordion-modern.accordion .btn {
-  color: #000;
-  border: 0;
-}
-.tutoring-works .lms-accordion-modern.accordion .card .lms-img-holder {
-  left: 450px;
-  background-color: #fff;
-  padding: 20px;
-  width: calc(100% - 600px);
-  height: 100%;
-  border-radius: 10px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-.tutoring-works .lms-accordion-modern.accordion .card .lms-img-holder img {
-  height: 100%;
-}
+.tutoring-works .lms-accordion-modern.accordion {padding: 0; background-color: inherit;}
+.tutoring-works .lms-accordion-modern.accordion .card {margin-left: 0; margin-bottom: 8px; border-radius: 10px; box-shadow: none; background-color: #fff; border: 0 !important;;}
+.tutoring-works .lms-accordion-modern.accordion .card.active {max-width: 450px;}
+.tutoring-works .lms-accordion-modern.accordion .btn span {height: 30px; width: 30px; line-height: 30px; color: var(--primary); font-size: 14px; font-weight: 500; background-color: #d6e5fd;}
+.tutoring-works .lms-accordion-modern.accordion .btn {color: #000; border: 0;}
+.tutoring-works .lms-accordion-modern.accordion .card .lms-img-holder {left: 450px; background-color: #fff; padding: 20px; width: calc(100% - 600px); height: 100%; border-radius: 10px; display: flex; align-items: flex-start; justify-content: center;}
+.tutoring-works .lms-accordion-modern.accordion .card .lms-img-holder img {height: 100%;}
 /*Tutoring Accordian Style End*/
 
 /*Tutoring Plans Style Start*/
