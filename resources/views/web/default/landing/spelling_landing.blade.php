@@ -467,7 +467,7 @@
             </div>
         </div>
     </section>
-    <section class="home-sections home-sections-swiper container find-instructor-section position-relative">
+    <section class="home-sections home-sections-swiper container find-instructor-section position-relative pb-sm-0">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6">
                 <div class="">
