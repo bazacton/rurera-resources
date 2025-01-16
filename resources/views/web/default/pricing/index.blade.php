@@ -168,7 +168,7 @@
         </div>
     </section>
   
-    <section class="lms-have-question pt-100 pb-100 mt-50" style="background-color: #f3f6ff;">
+    <section class="lms-have-question pt-70 pb-70 mt-50" style="background-color: #f3f6ff;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-12 mx-auto">
