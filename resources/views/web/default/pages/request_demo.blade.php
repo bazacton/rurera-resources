@@ -100,7 +100,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-group d-flex flex-column">
-                                    <div class="input-field w-100"><input type="text" placeholder="Company^" /></div>
+                                    <div class="input-field w-100"><input type="text" placeholder="Company*" /></div>
                                 </div>
                             </div>
                             <div class="col-12">
