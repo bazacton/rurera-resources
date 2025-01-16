@@ -2901,7 +2901,8 @@ Lms FAQS New Elements Style End
   height: 38%;
   position: absolute;
   z-index: -1;
-  min-width: 180px;
+  max-width: 180px;
+  width: 100%;
 }
 
 /*************************************
