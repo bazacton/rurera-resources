@@ -1111,6 +1111,7 @@ Lms Responsive Style Start
     .have-question-card .media-holder {width: 90%;}
     .have-question-card .media-holder img {max-width: 100%;}
     .have-question-card .media-holder .attachment-img {right: -25px; top: -20px; width: 70px;}
+    .find-instructor-section figure.mb-80.mt-sm-50 {margin-top: 50px;}
 }
 
 @media screen and (max-width: 640px) {
