@@ -657,10 +657,12 @@
                             Key Stage 2 Resources, KS2 quizzes, KS2 practices, KS2 assessments and KS2 Tests.
                         </p>
                     </div>
-                    <strong class="font-16 font-weight-normal text-gray d-block mb-20">The best part about KS2 quizzes?</strong>
-                    <p class="font-16 font-weight-normal text-gray">
-                        They're enjoyable! We're like the delightful combination of brownies and ice cream in the world of education, and we can help students discover how rewarding learning can be.
-                    </p>
+                    <div class="section-title">
+                        <h3 class="font-40 d-block mb-20">The best part about KS2 quizzes?</h3>
+                        <p class="font-16 font-weight-normal text-gray">
+                            They're enjoyable! We're like the delightful combination of brownies and ice cream in the world of education, and we can help students discover how rewarding learning can be.
+                        </p>
+                    </div>
                     <div class="align-items-center d-flex justify-content-center pt-30"><a href="/pricing" class="btn btn-primary rounded-pill">View all courses</a></div>
                 </div>
             </div>
