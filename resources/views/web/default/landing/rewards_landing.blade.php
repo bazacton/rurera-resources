@@ -30,9 +30,7 @@
                             Have Fun Learning 
                         </li>
                     </ul>
-                    <div class="d-flex align-items-center">
-                        <a href="https://rurera.com/pricing" class="mt-0 bg-primary justify-content-center register-btn text-white try-rurera-btn">Try Rurera for free</a>
-                    </div>
+                    <a href="https://rurera.com/pricing" class="mt-0 bg-primary justify-content-center register-btn text-white try-rurera-btn">Try Rurera for free</a>
             </div>
             <div class="col-12 col-lg-6 text-right">
                 <div class="home-sections home-sections-swiper container reward-program-section position-relative mt-0" style="background: none;">
