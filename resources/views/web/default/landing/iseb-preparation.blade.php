@@ -20,7 +20,7 @@
                         <li class="mb-10 font-19"><img alt="#" height="25" src="../assets/default/svgs/graphic-design.svg" width="25" />Score guarantee</li>
                         <li class="font-19"><img alt="#" height="25" src="../assets/default/svgs/book-opend.svg" width="25" />100% results</li>
                     </ul>
-                    <div class="align-items-center d-flex"><a href="https://rurera.com/pricing" class="mt-0 bg-primary justify-content-center register-btn text-white try-rurera-btn">Try Rurera for free</a></div>
+                    <a href="https://rurera.com/pricing" class="mt-0 bg-primary justify-content-center register-btn text-white try-rurera-btn">Try Rurera for free</a>
                 </div>
             </div>
         </div>
