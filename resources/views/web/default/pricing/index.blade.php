@@ -181,7 +181,7 @@
                             <h2 class="font-40 mb-20 font-weight-500">Got Questions? Our team is here to help reach out and let us assist you!</h2>
                             <span>Need help? Rurera's customer support team is here to assist with subscriptions, features, or technical issues. Contact us for quick and friendly support to ensure you get the most from your Rurera experience.</span>
                             </div>
-                            <div class="contact-info"><a href="#" class="contact-btn">Contact Us</a></div>
+                            <div class="contact-info"><a href="/contact-us" class="contact-btn">Contact Us</a></div>
                         </div>
                     </div>
                 </div>
