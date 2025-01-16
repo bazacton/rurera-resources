@@ -1268,6 +1268,16 @@ Lms Responsive Style Start
         flex-direction: column;
         gap: 10px 0;
     }
+    .checkbox-field.privacy-field {
+        align-items: flex-start;
+        margin: 0;
+    }
+    
+    .lms-jobs-form .checkbox-field.privacy-field label {
+        font-size: 14px;
+    }
+    
+    .lms-jobs-form .checkbox-field.privacy-field input[type=checkbox] {margin-top: 8px;}
 }
 @media screen and (max-width: 575px) {
     .spell-question-area .spells-quiz-info {margin: 0 0 30px;}
