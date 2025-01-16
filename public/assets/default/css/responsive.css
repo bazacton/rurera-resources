@@ -1272,19 +1272,9 @@ Lms Responsive Style Start
     .search-block .search-input .form-group {padding: 10px;}
     .search-block .search-input input[type=text] {padding: 0.3rem 0.3rem 0.3rem 0;}
     .subscribe-plan {min-height: auto;}
-    .team-section .section-title {
-        flex-direction: column;
-        gap: 10px 0;
-    }
-    .checkbox-field.privacy-field {
-        align-items: flex-start;
-        margin: 0;
-    }
-    
-    .lms-jobs-form .checkbox-field.privacy-field label {
-        font-size: 14px;
-    }
-    
+    .team-section .section-title {flex-direction: column; gap: 10px 0;}
+    .checkbox-field.privacy-field {align-items: flex-start; margin: 0;}
+    .lms-jobs-form .checkbox-field.privacy-field label {font-size: 14px;}
     .lms-jobs-form .checkbox-field.privacy-field input[type=checkbox] {margin-top: 8px;}
 }
 @media screen and (max-width: 575px) {
@@ -1447,10 +1437,7 @@ Lms Responsive Style Start
     .quests-item {align-items: flex-start;}
     .quests-list.p-30 {padding: 15px !important;}
     .lms-client-list .lms-client-logo figure {height: 80px;}
-    .footer-bottom .footer-nav-box {
-        flex-wrap: wrap;
-        gap: 20px 0;
-    }
+    .footer-bottom .footer-nav-box {flex-wrap: wrap; gap: 20px 0;}
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
