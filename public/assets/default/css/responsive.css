@@ -325,7 +325,7 @@ Lms Responsive Style Start
     .mobile-login-reg-buttons .mobile-register-btn {background-color: var(--primary); color: #fff; font-size: 16px; padding: 12px 20px; border-radius: 5px; width: 100%; text-align: center; font-weight: 500;}
     .counter-holder .svg-shapes-bottom {left: 142px; bottom: -12px;}
     .counter-holder .svg-shapes-top {right: -193px; top: -36px;}
-    .row.circle-icon-list {padding: 0 15px;}
+    .row.circle-icon-list {padding: 0 15px; gap: 15px 0;}
     .quiz-first-question .questions-status {padding-top: 15px;}
     .info-setting .instruction-dropdown {margin-right: -10px; width: 300px;}
     body .learning-page {padding-top: 0;}
