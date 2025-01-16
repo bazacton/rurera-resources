@@ -118,8 +118,8 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-12 col-lg-12 mb-50">
-        <div class="element-title text-center">
-          <h2 itemprop="title"  class="font-weight-bold mb-15">Trusted by Many, Loved by All</h2>
+        <div class="section-title text-center">
+          <h2 itemprop="title"  class="font-40 font-weight-bold mb-15">Trusted by Many, Loved by All</h2>
           <p itemprop="description"  class="text-center mb-10">
             Hear heartfelt stories from students, teachers, <br> and parents about their experiences.
           </p>
@@ -235,12 +235,12 @@
   <div class="container">
     <div class="lms-testimonials row">
       <div class="col-12 mb-20">
-        <h2 itemprop="title"
-          class="font-weight-bold text-center w-100 mb-10 font-40 pt-0 text-dark-charcoal"
-          style="text-align:center;padding-top:20px">Discover What Makes Rurera Loved!</h2>
-        <p itemprop="description" class="mb-25 text-center">
-          Read heartfelt testimonials from our community and see how Rurera has <br > transformed their learning experiences.
-        </p>
+        <div class="section-title">
+          <h2 itemprop="title"class="font-weight-bold text-center w-100 mb-10 font-40 pt-0 text-dark-charcoal">Discover What Makes Rurera Loved!</h2>
+          <p itemprop="description" class="mb-25 text-center">
+            Read heartfelt testimonials from our community and see how Rurera has <br > transformed their learning experiences.
+          </p>
+        </div>
       </div>
       <div class="col-12">
         <div class="testimonial-filters">
