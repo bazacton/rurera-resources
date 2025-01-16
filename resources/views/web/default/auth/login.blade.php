@@ -128,7 +128,7 @@
                                             <div class="text-holder">
                                                 <h2>Welcome to login</h2>
                                                 <span>Don't have an account?</span>
-                                                <a href="#" class="signup-btn">Sign Up</a>
+                                                <a href="/register-as" class="signup-btn">Sign Up</a>
                                             </div>
                                         </div>
                                     </div>
@@ -198,7 +198,7 @@
                                             <div class="text-holder">
                                                 <h2>Welcome to login</h2>
                                                 <span>Don't have an account?</span>
-                                                <a href="#" class="signup-btn">Sign Up</a>
+                                                <a href="/register-as" class="signup-btn">Sign Up</a>
                                             </div>
                                         </div>
                                     </div>
