@@ -645,6 +645,7 @@ Set Up Quiz Page Style End
     align-items: center;
     gap: 10px 15px;
     margin: 0 0 10px;
+    flex-wrap: wrap;
 }
 .list-options li {
     font-size: 14px;
@@ -3473,6 +3474,7 @@ span.field-separated span:after {
     align-items: center;
     gap: 5px;
     margin-bottom: 0;
+    flex-wrap: wrap;
 }
 .document-pdf .questions-header-inner h5,
 .document-pdf .rureraform-element h4 {
@@ -3613,6 +3615,7 @@ span.field-separated span:after {
 .question-top-info {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .question-count {
@@ -5718,5 +5721,15 @@ button.print-download-btn {
     }
     .featured-filters {
         gap: 5px;
+    }
+    .questions-header-inner h5 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .class-controls-option {
+        gap: 5px 0;
+    }
+    .question-count {
+        margin: 0 0 10px;
     }
 }
