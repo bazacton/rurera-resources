@@ -1931,15 +1931,9 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="document-viewer">
-            <div class="document-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="document-heading">
-                    <a href="#" class="back-btn"><i class="fas fa-chevron-left"></i></a>
-                    <h2>Enhance Questions <i class="fas fa-star"></i></h2>
-                </div>
-            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
             <div class="document-content" style="padding-right: 15px;">
                 <div class="document-pdf" id="pdf-fonts" style="font-size: medium;">
                     <div class="row">
