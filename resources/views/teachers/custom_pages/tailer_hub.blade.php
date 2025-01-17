@@ -2599,6 +2599,22 @@
 
 @push('scripts_bottom')
 <script>
+
+$(document).ready(function () {
+  const $scrollableDiv = $(".document-pdf");
+  $scrollableDiv.niceScroll({
+    cursorcolor: "red",
+    cursorwidth: "8px",
+    autohidemode: true
+  });
+
+  $(".document-modal").on("shown.bs.modal", function () {
+    $scrollableDiv.getNiceScroll().resize();
+  });
+
+});
+</script>
+<script>
 $(document).ready(function() {
     $(".rureraform-element, .lms-quiz-create .rureraform-admin-popup-title a").click(function(e) {
         e.stopPropagation();
@@ -2617,7 +2633,7 @@ $(document).ready(function() {
 <script type="text/javascript">
 
 $(document).ready(function () {
-  const $scrollableDiv = $(".blank-canvas-sidebar, .canvas-editable-options, .document-pdf");
+  const $scrollableDiv = $(".blank-canvas-sidebar, .canvas-editable-options");
 
   // Initialize NiceScroll with auto-hide enabled
   $scrollableDiv.niceScroll({
