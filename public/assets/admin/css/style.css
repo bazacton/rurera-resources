@@ -2975,3 +2975,9 @@ Admin Questions Generator Page Style End
         padding-left: 20px;
     }
 }
+@media screen and (max-width: 576px) {
+    .assignments-table table.table tbody tr td span span {
+        display: block;
+        padding-top: 5px;
+    }
+}
