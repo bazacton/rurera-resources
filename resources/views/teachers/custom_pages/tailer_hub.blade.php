@@ -146,7 +146,7 @@
                     <h6 class="search-lable">Enhance this quiz using AI</h6>
                     <ul>
                         <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add similar questions</a></li>
-                        <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Fix grammatical and spelling errors</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#document-modal"><img src="/assets/default/svgs/ai.svg" alt="">Fix grammatical and spelling errors</a></li>
                         <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Translate questions</a></li>
                         <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Simplify questions</a></li>
                         <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add questions on particular topic</a></li>
@@ -1925,6 +1925,767 @@
         </div>
       </div>
     </div>
+</div>
+<div class="modal document-modal fade" id="document-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="document-viewer">
+            <div class="document-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="document-heading">
+                    <a href="#" class="back-btn"><i class="fas fa-chevron-left"></i></a>
+                    <h2>Template Name <i class="fas fa-star"></i></h2>
+                </div>
+                <!-- <div class="document-controls">
+                    <button type="button" class="settings-btn"><img src="/assets/default/svgs/settings.svg" alt=""> Settings</button>
+                    <button type="button"><img src="/assets/default/svgs/download.svg" alt=""> Download</button>
+                </div> -->
+            </div>
+            <!-- <div class="document-left-sidebar">
+                <h3>Pages</h3>
+                <div class="document-pages">
+                    <div class="page-box">
+                        <a href="#" class="active">
+                            <figure>
+                                <img src="/assets/default/img/page1.png" alt="">
+                            </figure>
+                            <span class="page-lable">Page 1</span>
+                        </a>
+                    </div>
+                    <div class="page-box">
+                        <a href="#">
+                            <figure>
+                                <img src="/assets/default/img/page2.png" alt="">
+                            </figure>
+                            <span class="page-lable">Page 2</span>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+            <div class="document-right-sidebar">
+                <h5>Settings</h5>
+                <div class="document-switch-options">
+                    <div class="form-group mb-0">
+                        <label class="custom-switch mb-15">
+                            <em class="switch-lable">Shuffle answer</em>
+                            <input type="checkbox" name="document-switch" id="shuffle-ans" class="custom-switch-input" checked>
+                            <img src="/assets/default/svgs/shuffle.svg" alt="shuffle">
+                        </label>
+                    </div>
+                    <div class="form-group mb-0">
+                        <label class="custom-switch mb-15">
+                            <em class="switch-lable">Shuffle questions</em>
+                            <input type="checkbox" name="document-switch" id="shuffle-q" class="custom-switch-input">
+                            <img src="/assets/default/svgs/shuffle.svg" alt="shuffle">
+                        </label>
+                    </div>
+                    <div class="form-group mb-0">
+                        <label class="custom-switch mb-15">
+                            <em class="switch-lable">Answer keys</em>
+                            <input type="checkbox" name="document-switch" id="ans-key" class="custom-switch-input" checked>
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="document-switch-options">
+                    <div class="form-group mb-0">
+                        <label class="custom-switch mb-15">
+                            <em class="switch-lable">Question tags</em>
+                            <input type="checkbox" name="document-switch" id="tags" class="custom-switch-input" checked>
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </div>
+                    <div class="form-group mb-0">
+                        <label class="custom-switch mb-15">
+                            <em class="switch-lable">Instructor name</em>
+                            <input type="checkbox" name="document-switch" id="instructor" class="custom-switch-input">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </div>
+                    <div class="form-group mb-0">
+                        <label class="custom-switch mb-15">
+                            <em class="switch-lable">Show answer options</em>
+                            <input type="checkbox" name="document-switch" id="ans-key" class="custom-switch-input" checked>
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="document-font-sizes">
+                    <span class="fonts-lable">Font size</span>
+                    <div class="font-select-options">
+                        <div class="font-select-box">
+                            <input type="radio" name="font-size" id="font-sm" checked>
+                            <label for="font-sm" onclick="document.getElementById('pdf-fonts').style.fontSize='small'">S</label>
+                        </div>
+                        <div class="font-select-box">
+                            <input type="radio" name="font-size" id="font-md">
+                            <label for="font-md" onclick="document.getElementById('pdf-fonts').style.fontSize='medium'">M</label>
+                        </div>
+                        <div class="font-select-box">
+                            <input type="radio" name="font-size" id="font-lg">
+                            <label for="font-lg" onclick="document.getElementById('pdf-fonts').style.fontSize='large'">L</label>
+                        </div>
+                        <div class="font-select-box">
+                            <input type="radio" name="font-size" id="font-xl">
+                            <label for="font-xl" onclick="document.getElementById('pdf-fonts').style.fontSize='large'">XL</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-holder px-15 text-center pt-15">
+                    <button type="button" class="print-download-btn">Print / Download</button>
+                </div>
+            </div>
+            <div class="document-content">
+                <div class="document-pdf" id="pdf-fonts" style="font-size: medium;">
+                    <div class="elements-holder panel-border p-15 border-bottom-0" style="background-color: #fafafa;">
+                        <div class="site-logo mb-20">
+                            <img src="/store/1/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="150" height="38" itemprop="image" loading="eager">
+                        </div>
+                        <div class="questions-header">
+                            <div class="questions-header-inner">
+                                <div class="text-holder">
+                                    <h5>Exploring Magnetic Matrials and Their Uses</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="instructor-lable">Instructor: Kaizer Can</span>
+                        <ul class="list-options question-list-options mb-0">      
+                            <li><span class="icon-box">-</span> 8 questions</li>
+                            <li><span class="icon-box">-</span> 7th-8th  Grade</li>
+                            <li><span class="icon-box">-</span> Science</li>
+                        </ul>
+                        <div class="about-student">
+                            <div class="student-roll-num">
+                                Roll No:
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="student-other-info">
+                                <span class="student-name">Name: <small></small></span>
+                                <span class="student-class">Class: <small></small></span>
+                                <span class="student-subject">Subject: <small></small></span>
+                                <span class="date">Date: <small></small></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="examiner-section panel-border p-25 border-bottom-0" style="background-color: #fafafa;">
+                        <h5>For Examiner's Use Only</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th>6</th>
+                                    <th>7</th>
+                                    <th>8</th>
+                                    <th>9</th>
+                                    <th>10</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="instructions bg-white panel-border p-25 border-bottom-0">
+                        <h5>Instructions to candidates</h5>
+                        <ol>
+                            <li>Write your name, admission number, and class in the spaces provided.</li>
+                            <li>Sign and write the date of examination in the spaces provided above.</li>
+                            <li>The paper contains two sections: Section I and II.</li>
+                            <li>Answer all questions in Section I and II.</li>
+                            <li>All answers and working must be written on the question paper in the spaces provided below each question.</li>
+                            <li><strong>Show all the steps in your calculations, giving your answers at each stage in the spaces provided below each question.</strong></li>
+                            <li>KNEC Mathematical tables may be used, except where stated otherwise.</li>
+                            <li>Silent or non-programmable calculators <strong>SHOULD NOT</strong> be used.</li>
+                        </ol>
+                    </div>
+                    <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0">
+                        <div class="question-layout-block">
+                            <form class="question-fields" action="javascript:;" data-question_id="10180">
+                            <div class="left-content has-bg">
+                                <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
+                                <div class="question-layout row d-flex align-items-start">
+                                    <div class="rureraform-col rureraform-col-12">
+                                        <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
+                                            <div class="question-top-info">
+                                                <div class="question-count">
+                                                    <span class="question-count-lable">Question 1 of 20</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rureraform-col rureraform-col-12">
+                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                            <h4>Read the text, then answer the question.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="rureraform-col rureraform-col-12">
+                                    <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz"> Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm. <div class="rureraform-element-cover"></div>
+                                    </div>
+                                    </div>
+                                    <div class="rureraform-col rureraform-col-12">
+                                    <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                        <div class="question-label question_label">
+                                            <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="rureraform-col rureraform-col-12">
+                                        <div id="rureraform-element-24192" class="quiz-group rureraform-element-24192 rureraform-element ui-sortable-handle" data-type="checkbox">
+                                            <div class="rureraform-column-label">
+                                            <label class="rureraform-label">Mark two answers</label>
+                                            </div>
+                                            <div class="rureraform-column-input">
+                                            <div class="rureraform-input">
+                                                <div class="form-box  rurera-in-row alphabet-list-style">
+                                                <div class="form-field rureraform-cr-container-medium ">
+                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-00-2424" value="3 hours 45 minutes">
+                                                    <label for="field-24192-00-2424"> 3 hours 45 minutes </label>
+                                                </div>
+                                                <div class="form-field rureraform-cr-container-medium">
+                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-11-2424" value="4 hours 10 minutes">
+                                                    <label for="field-24192-11-2424"> 4 hours 10 minutes </label>
+                                                </div>
+                                                <div class="form-field rureraform-cr-container-medium">
+                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-22-2424" value="3 hours 30 minutes">
+                                                    <label for="field-24192-22-2424"> 3 hours 30 minutes </label>
+                                                </div>
+                                                <div class="form-field rureraform-cr-container-medium">
+                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-33-2424" value="4 hours 35 minutes">
+                                                    <label for="field-24192-33-2424"> 4 hours 35 minutes </label>
+                                                </div>
+                                                <div class="form-field rureraform-cr-container-medium">
+                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-44-2424" value="4 hours">
+                                                    <label for="field-24192-44-2424"> 4 hours </label>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                        <div class="canvas-editable-options-holder">
+                            <div class="canvas-editable-options lms-quiz-create">
+                                <div class="lms-element-properties">
+                                    <div class="row">
+                                        <div class="topic-parts-block rurera-hide" style="display:contents;"></div>
+                                    </div>
+                                    <div class="rureraform-admin-popup active" id="rureraform-element-properties" style="display: block;" data-element_id="rureraform-element-3">
+                                        <div class="rureraform-admin-popup-inner">
+                                        <div class="rureraform-admin-popup-title">
+                                            <a href="#" title="Close">
+                                            <i class="fas fa-times"></i>
+                                            </a>
+                                            <h3>
+                                            <i class="fas fa-cog element-properties-label"></i> Multiple Choice 1
+                                            </h3>
+                                        </div>
+                                        <div class="rureraform-admin-popup-content">
+                                            <div class="rureraform-admin-popup-content-form">
+                                            <div id="rureraform-tab-basic" class="rureraform-tab-content" style="display: block;">
+                                                <input type="hidden" name="rureraform-field_id" id="rureraform-field_id" value="48453" placeholder="">
+                                                <div class="rureraform-properties-item " data-id="label">
+                                                <div class="rureraform-properties-label">
+                                                    <label>Label</label>
+                                                </div>
+                                                <div class="rureraform-properties-content">
+                                                    <input type="text" name="rureraform-label" id="rureraform-label" value="Mark One answer" placeholder="">
+                                                </div>
+                                                </div>
+                                                <div class="rureraform-properties-item d-flex align-items-center justify-content-between" data-id="have_images">
+                                                    <div class="rureraform-properties-label pb-0">
+                                                        <label>Answer with image</label>
+                                                    </div>
+                                                    <div class="form-group custom-switches-stacked mb-0">
+                                                        <label class="custom-switch pl-0 mb-0">
+                                                            <input type="checkbox" name="answer-with-image" id="answer-with-image" value="1" class="custom-switch-input">
+                                                            <span class="custom-switch-indicator"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="rureraform-properties-item">
+                                                    <div class="properties-select-boxes">
+                                                        <div class="img-select-box">
+                                                            <input type="radio" name="img-box" id="box1">
+                                                            <label for="box1">
+                                                                <img src="/store/1/tool-images/d5.png" alt="">
+                                                                <span>List</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="img-select-box">
+                                                            <input type="radio" name="img-box" id="box2">
+                                                            <label for="box2">
+                                                                <img src="/store/1/tool-images/d14.png" alt="">
+                                                                <span>Essay</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="rureraform-properties-item rurera-image-depend rurera-hide" data-id="image_position">
+                                                    <div class="rureraform-properties-label">
+                                                        <label>Image Position</label>
+                                                    </div>
+                                                <div class="rureraform-properties-tooltip"></div>
+                                                <div class="rureraform-properties-content">
+                                                    <div class="rureraform-third">
+                                                    <select name="rureraform-image_position" id="rureraform-image_position" class="">
+                                                        <option selected="selected" value="top">Top</option>
+                                                        <option value="left">Left</option>
+                                                        <option value="right">Right</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="rureraform-properties-item" data-id="options">
+                                                    <div class="rureraform-properties-label">
+                                                        <label>Options</label>
+                                                    </div>
+                                                    <div class="rureraform-properties-content rureraform-properties-image-options-table">
+                                                        <div class="rureraform-properties-options-table-header">
+                                                        <div class="rurera-image-depend rurera-hide">Image</div>
+                                                        <div class="rurera-hide">Value</div>
+                                                        <div></div>
+                                                        </div>
+                                                        <div class="rureraform-properties-options-box ui-resizable">
+                                                        <div class="rureraform-properties-options-container ui-sortable" data-multi="on">
+                                                            <div class="rureraform-properties-options-item rureraform-properties-options-item-default">
+                                                            <div class="rureraform-properties-options-table">
+                                                                <div>
+                                                                <input class="rureraform-properties-options-label" type="text" value="Cells" placeholder="Label">
+                                                                </div>
+                                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
+                                                                <div class="input-group-prepend">
+                                                                    <button type="button" class="input-group-text admin-file-manager" data-input="image-options-0" data-preview="holder">
+                                                                    <i class="fa fa-upload"></i>
+                                                                    </button>
+                                                                </div>
+                                                                <input class="rureraform-properties-options-image" type="text" id="image-options-0" value="" placeholder="Upload Image">
+                                                                <span>
+                                                                    <i class="far fa-image"></i>
+                                                                </span>
+                                                                </div>
+                                                                <div class="rurera-hide">
+                                                                <input class="rureraform-properties-options-value" type="text" value="Cells" placeholder="Value">
+                                                                </div>
+                                                                <div>
+                                                                <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
+                                                                    <i class="fas fa-check"></i>
+                                                                </span>
+                                                                <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
+                                                                    <i class="far fa-copy"></i>
+                                                                </span>
+                                                                <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
+                                                                    <i class="fas fa-trash-alt"></i>
+                                                                </span>
+                                                                <span title="Move the option">
+                                                                    <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
+                                                                </span>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="rureraform-properties-options-item">
+                                                            <div class="rureraform-properties-options-table">
+                                                                <div>
+                                                                <input class="rureraform-properties-options-label" type="text" value="Chloroplasts" placeholder="Label">
+                                                                </div>
+                                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
+                                                                <div class="input-group-prepend">
+                                                                    <button type="button" class="input-group-text admin-file-manager" data-input="image-options-1" data-preview="holder">
+                                                                    <i class="fa fa-upload"></i>
+                                                                    </button>
+                                                                </div>
+                                                                <input class="rureraform-properties-options-image" type="text" id="image-options-1" value="" placeholder="Upload Image">
+                                                                <span>
+                                                                    <i class="far fa-image"></i>
+                                                                </span>
+                                                                </div>
+                                                                <div class="rurera-hide">
+                                                                <input class="rureraform-properties-options-value" type="text" value="Chloroplasts" placeholder="Value">
+                                                                </div>
+                                                                <div>
+                                                                <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
+                                                                    <i class="fas fa-check"></i>
+                                                                </span>
+                                                                <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
+                                                                    <i class="far fa-copy"></i>
+                                                                </span>
+                                                                <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
+                                                                    <i class="fas fa-trash-alt"></i>
+                                                                </span>
+                                                                <span title="Move the option">
+                                                                    <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
+                                                                </span>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="rureraform-properties-options-item">
+                                                            <div class="rureraform-properties-options-table">
+                                                                <div>
+                                                                <input class="rureraform-properties-options-label" type="text" value="Tissues" placeholder="Label">
+                                                                </div>
+                                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
+                                                                <div class="input-group-prepend">
+                                                                    <button type="button" class="input-group-text admin-file-manager" data-input="image-options-2" data-preview="holder">
+                                                                    <i class="fa fa-upload"></i>
+                                                                    </button>
+                                                                </div>
+                                                                <input class="rureraform-properties-options-image" type="text" id="image-options-2" value="" placeholder="Upload Image">
+                                                                <span>
+                                                                    <i class="far fa-image"></i>
+                                                                </span>
+                                                                </div>
+                                                                <div class="rurera-hide">
+                                                                <input class="rureraform-properties-options-value" type="text" value="Tissues" placeholder="Value">
+                                                                </div>
+                                                                <div>
+                                                                <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
+                                                                    <i class="fas fa-check"></i>
+                                                                </span>
+                                                                <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
+                                                                    <i class="far fa-copy"></i>
+                                                                </span>
+                                                                <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
+                                                                    <i class="fas fa-trash-alt"></i>
+                                                                </span>
+                                                                <span title="Move the option">
+                                                                    <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
+                                                                </span>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="rureraform-properties-options-item">
+                                                            <div class="rureraform-properties-options-table">
+                                                                <div>
+                                                                <input class="rureraform-properties-options-label" type="text" value="Nuclei" placeholder="Label">
+                                                                </div>
+                                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
+                                                                <div class="input-group-prepend">
+                                                                    <button type="button" class="input-group-text admin-file-manager" data-input="image-options-3" data-preview="holder">
+                                                                    <i class="fa fa-upload"></i>
+                                                                    </button>
+                                                                </div>
+                                                                <input class="rureraform-properties-options-image" type="text" id="image-options-3" value="" placeholder="Upload Image">
+                                                                <span>
+                                                                    <i class="far fa-image"></i>
+                                                                </span>
+                                                                </div>
+                                                                <div class="rurera-hide">
+                                                                <input class="rureraform-properties-options-value" type="text" value="Nuclei" placeholder="Value">
+                                                                </div>
+                                                                <div>
+                                                                <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
+                                                                    <i class="fas fa-check"></i>
+                                                                </span>
+                                                                <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
+                                                                    <i class="far fa-copy"></i>
+                                                                </span>
+                                                                <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
+                                                                    <i class="fas fa-trash-alt"></i>
+                                                                </span>
+                                                                <span title="Move the option">
+                                                                    <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
+                                                                </span>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
+                                                        </div>
+                                                        <div class="rureraform-properties-options-table-footer">
+                                                            <a class="rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small" data-toggle="collapse" href="#explanation" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                                <i class="fas fa-plus"></i>
+                                                                <label>Add Explanation..</label>
+                                                            </a>
+                                                            <div class="explanation-box collapse mt-15" id="explanation">
+                                                                <textarea name="explanation" class="form-control"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="rureraform-properties-item " data-id="template_style">
+                                                    <div class="rureraform-properties-tooltip"></div>
+                                                    <div class="rureraform-properties-content">
+                                                        <div class="rureraform-third">
+                                                        <select name="rureraform-template_style" id="rureraform-template_style" class="">
+                                                            <option selected="selected" value="rurera-in-row">Row</option>
+                                                            <option value="rurera-in-cols">Columns</option>
+                                                        </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="rureraform-properties-item " data-id="list_style">
+                                                    <div class="rureraform-properties-label">
+                                                        <label>Bullet list Style</label>
+                                                    </div>
+                                                    <div class="rureraform-properties-tooltip"></div>
+                                                    <div class="rureraform-properties-content">
+                                                        <div class="bullet-controls">
+                                                            <button type="button">Enabled</button>
+                                                            <button type="button">Enabled</button>
+                                                            <button type="button" class="active">Selected</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <input type="hidden" name="rureraform-elements_data" id="rureraform-elements_data" value="W3t9XQ==" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rureraform-admin-popup-buttons">
+                                            <a class="rureraform-admin-button duplicate-element btn btn-primary" href="#">
+                                            <label>Update</label>
+                                            </a>
+                                            <a class="rureraform-admin-button generate-question-code rurera-hide" href="#">
+                                            <label>Apply Changes</label>
+                                            </a>
+                                        </div>
+                                        <div class="rureraform-admin-popup-loading" style="display: none;">
+                                            <i class="fas fa-spinner fa-spin"></i>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-0 bg-white panel-border p-25 border-bottom-0">
+                        <div class="question-layout-block">
+                            <form class="question-fields" action="javascript:;" data-question_id="10180">
+                                <div class="left-content has-bg">
+                                <span class="question-number-holder" style="z-index: 999999999;">
+                                    <span class="question-number">1</span>
+                                </span>
+                                <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
+                                    <div class="question-layout row d-flex align-items-start">
+                                    <div class="rureraform-col rureraform-col-12">
+                                        <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
+                                            <div class="question-top-info">
+                                                <div class="question-count">
+                                                    <span class="question-count-lable">Question 1 of 20</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rureraform-col rureraform-col-12">
+                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                            <h4>Mark the following true and false:</h4>
+                                        </div>
+                                    </div>
+                                    <div class="rureraform-col rureraform-col-8">
+                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                        <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
+                                        </div>
+                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
+                                        <i>Hint:&nbsp;&nbsp;Think about what happens inside cells during respiration and what is released.</i>
+                                        <div class="rureraform-element-cover"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rureraform-col rureraform-col-4">
+                                        <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
+                                        <div class="rureraform-column-input">
+                                            <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
+                                            <div class="form-box ">
+                                                <div class="lms-radio-select rurera-in-row justify-content-end">
+                                                <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                    <input class="editor-field" type="radio" name="field-40008" id="field-40008-0" value="True">
+                                                    <label for="field-40008-0">
+                                                        <span class="label-box"></span>
+                                                        <span class="inner-label">True</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                    <input class="editor-field" type="radio" name="field-40008" id="field-40008-1" value="False">
+                                                    <label for="field-40008-1">
+                                                        <span class="label-box"></span>
+                                                        <span class="inner-label">False</span>
+                                                    </label>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <label class="rureraform-description"></label>
+                                        </div>
+                                        <div class="rureraform-element-cover"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rureraform-col rureraform-col-8">
+                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                        <h6>When balanced forces act on an object, it remains stationary or continues moving at the same speed.</h6>
+                                        </div>
+                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
+                                        <i>Hint:&nbsp;&nbsp;Balanced forces cancel each other out, meaning no change in motion happens.</i>
+                                        <div class="rureraform-element-cover"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rureraform-col rureraform-col-4">
+                                        <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
+                                        <div class="rureraform-column-input">
+                                            <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
+                                            <div class="form-box ">
+                                                <div class="lms-radio-select rurera-in-row justify-content-end">
+                                                <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                    <input class="editor-field" type="radio" name="field-84793" id="field-84793-0" value="True">
+                                                    <label for="field-84793-0">
+                                                        <span class="label-box"></span>
+                                                        <span class="inner-label">True</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                    <input class="editor-field" type="radio" name="field-84793" id="field-84793-1" value="False">
+                                                    <label for="field-84793-1">
+                                                        <span class="label-box"></span>
+                                                        <span class="inner-label">False</span>
+                                                    </label>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <label class="rureraform-description"></label>
+                                        </div>
+                                        <div class="rureraform-element-cover"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rureraform-col rureraform-col-8">
+                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                        <h6>When an endothermic reaction occurs, energy is absorbed, making the surroundings cooler.</h6>
+                                        </div>
+                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
+                                        <i>Hint:&nbsp;&nbsp;Endothermic reactions pull in heat from the surroundings.</i>
+                                        <div class="rureraform-element-cover"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rureraform-col rureraform-col-4">
+                                        <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
+                                        <div class="rureraform-column-input">
+                                            <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
+                                            <div class="form-box ">
+                                                <div class="lms-radio-select rurera-in-row justify-content-end">
+                                                <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                    <input class="editor-field" type="radio" name="field-21459" id="field-21459-0" value="True">
+                                                    <label for="field-21459-0">
+                                                        <span class="label-box"></span>
+                                                        <span class="inner-label">True</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                    <input class="editor-field" type="radio" name="field-21459" id="field-21459-1" value="False">
+                                                    <label for="field-21459-1">
+                                                        <span class="label-box"></span>
+                                                        <span class="inner-label">False</span>
+                                                    </label>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <label class="rureraform-description"></label>
+                                        </div>
+                                        <div class="rureraform-element-cover"></div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="bg-white panel-border p-25 border-bottom-0">
+                        <div class="question-layout-block">
+                            <form class="question-fields" action="javascript:;" data-question_id="10180">
+                                <div class="left-content has-bg">
+                                <span class="question-number-holder" style="z-index: 999999999;">
+                                    <span class="question-number">1</span>
+                                </span>
+                                <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
+                                    <div class="question-layout row d-flex align-items-start">
+                                    <div class="rureraform-col rureraform-col-12">
+                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                            <h4>Read the text and choose the correct answer.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="rureraform-col rureraform-col-12">
+                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="drop_and_text"> When <select type="inner_dropdown" class="editor-field" id="dropdown-1" data-identifier="49226" name="field-dropdown1_options">
+                                            <option value="Select Option">Select Option</option>
+                                            <option value="lava">lava</option>
+                                            <option value="extrusive">extrusive</option>
+                                            <option value="magma">magma</option>
+                                        </select> cools below the Earth's surface, it forms <select type="inner_dropdown" class="editor-field" id="dropdown-2" data-identifier="49226" name="field-dropdown2_options">
+                                            <option value="Select Option">Select Option</option>
+                                            <option value="water">water</option>
+                                            <option value="extrusive">extrusive</option>
+                                            <option value="sedimentary">sedimentary</option>
+                                            <option value="magma">magma</option>
+                                        </select> igneous rocks with large crystals. <div class="rureraform-element-cover"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rureraform-col rureraform-col-12">
+                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
+                                        <p>
+                                            <i>Hint: Think about the Moon’s effect on Earth, especially on tides and sunlight.</i>
+                                        </p>
+                                        <div class="rureraform-element-cover"></div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="bg-white panel-border p-25">
+                        <div class="answer-keys">
+                            <h5>Answer Keys</h5>
+                            <ul>
+                                <li>1. <span>n/a</span></li>
+                                <li>2. <span>b&#41; Issac Newton</span></li>
+                                <li>3. <span>n/a</span></li>
+                                <li>4. <span>imagination and creativity</span></li>
+                                <li>5. <span>imagination and creativity</span></li>
+                                <li>6. <span>a&#41;</span></li>
+                                <li>7. <span>n/a</span></li>
+                                <li>8. <span>n/a</span></li>
+                                <li>9. <span>e&#41; washing</span></li>
+                                <li>10. <span>d&#41; 1(correct)</span></li>
+                                <li>11. <span>b&#41;2</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 </section>
 
