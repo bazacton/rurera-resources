@@ -1943,6 +1943,11 @@
             <div class="document-content" style="padding-right: 15px;">
                 <div class="document-pdf" id="pdf-fonts" style="font-size: medium;">
                     <div class="row">
+                        <div class="col-12">
+                        <div class="questions-heading">
+                            <h3>Enhance Questions</h3>
+                        </div>
+                        </div>
                         <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                             <div class="instructions bg-white panel-border p-25 border-bottom-0">
                                 <h5>Instructions to candidates</h5>
