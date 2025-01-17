@@ -2931,21 +2931,10 @@ Admin Questions Generator Page Style End
     .topic-parts-data table {min-width: auto; display: block;}
     .topic-parts-data tr {display: block;}
     .topic-parts-data table tr td {display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 5px; border: 0; border-bottom: 2px dotted #ddd;}
-    .topic-parts-data table tr td:before {
-        content: attr(data-label);
-        display: inline-block;
-        color: #333;
-        font-weight: 600;
-    }
-    .topic_parts.accordion-parent td:has(.topic-part-title) {
-        padding-left: 15px !important;
-    }
-    .topic-parts-data table tr td:has(.topic-part-title) {
-        min-width: auto;
-    }
-    .topic-parts-data table tr td .topic-part-title {
-        padding-left: 20px;
-    }
+    .topic-parts-data table tr td:before {content: attr(data-label); display: inline-block; color: #333; font-weight: 600;}
+    .topic_parts.accordion-parent td:has(.topic-part-title) {padding-left: 15px !important;}
+    .topic-parts-data table tr td:has(.topic-part-title) {min-width: auto;}
+    .topic-parts-data table tr td .topic-part-title {padding-left: 20px;}
 }
 @media screen and (max-width: 576px) {
     .assignments-table table.table tbody tr td span span {display: block; padding-top: 5px;}
