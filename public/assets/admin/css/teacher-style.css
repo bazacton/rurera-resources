@@ -5644,4 +5644,7 @@ button.print-download-btn {
     .admin_teacher_role .main-sidebar {
         z-index: 891;
     }
+    .admin_teacher_role .main-wrapper nav.navbar.navbar-expand-lg.main-navbar {
+        z-index: 10;
+    }
 }
