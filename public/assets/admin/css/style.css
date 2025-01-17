@@ -2895,6 +2895,9 @@ Admin Questions Generator Page Style End
         padding-bottom: 0 !important;
         border-bottom: 0 !important;
     }
+    .assignments-table table.table tbody tr td:before {
+        content: attr(data-th);
+    }
 }
 @media screen and (max-width: 767px) {
     .progress-wrapper .progress-holder {
