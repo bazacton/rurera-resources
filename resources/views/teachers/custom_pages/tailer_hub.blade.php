@@ -1971,7 +1971,7 @@
                         <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                             <div class="question-layout-holder mb-0 bg-white panel-border p-25 mb-25">
                                 <input type="checkbox" id="q-check1">
-                                <label for="q-check1">
+                                <label for="q-check1" class="question-check-option">
                                     <div class="question-layout-block">
                                         <form class="question-fields" action="javascript:;" data-question_id="10180">
                                         <div class="left-content has-bg">
