@@ -2886,17 +2886,14 @@ Admin Questions Generator Page Style End
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 15px 0 !important;
+        padding: 15px 15px !important;
         border-bottom: 1px solid #ddd !important;
         color: #999;
         font-weight: 500;
         gap: 10px;
     }
     .assignments-table table.table tbody tr:first-child td {
-        padding: 15px 0 !important;
-    }
-    .assignments-table table.table tbody tr:first-child td:first-child {
-        padding-top: 0 !important;
+        padding: 15px 15px !important;
     }
     .assignments-table table.table tbody tr:last-child td.border-sm-0 {
         padding-bottom: 0 !important;
