@@ -2878,6 +2878,10 @@ Admin Questions Generator Page Style End
     .similarity-content-block .tab-content:has(.rureraform-admin-popup.active) > .tab-pane.question-details-tab-data > .col-12 {
         display: none;
     }
+    .assignments-table .card {
+        box-shadow: none;
+        border: 0;
+    }
     .assignments-table .card .card-body {
         padding: 0 !important;
     }
@@ -2905,7 +2909,6 @@ Admin Questions Generator Page Style End
         padding: 15px 15px !important;
     }
     .assignments-table table.table tbody tr:last-child td.border-sm-0 {
-        padding-bottom: 0 !important;
         border-bottom: 0 !important;
     }
     .assignments-table table.table tbody tr td:before {
