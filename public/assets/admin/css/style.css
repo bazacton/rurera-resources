@@ -2886,6 +2886,7 @@ Admin Questions Generator Page Style End
         border-bottom: 1px solid #ddd !important;
         color: #999;
         font-weight: 500;
+        gap: 10px;
     }
     .assignments-table table.table tbody tr:first-child td {
         padding: 15px 0 !important;
