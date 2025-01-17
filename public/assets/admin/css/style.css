@@ -2906,6 +2906,8 @@ Admin Questions Generator Page Style End
         color: #333;
         font-weight: 600;
     }
+    .assignments-table table.table tbody tr td.hide-lg {display: flex;}
+    .assignments-table table.table tbody tr td.hide-sm {display: none;}
 }
 @media screen and (max-width: 767px) {
     .progress-wrapper .progress-holder {
