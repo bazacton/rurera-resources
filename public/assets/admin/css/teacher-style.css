@@ -2907,7 +2907,7 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 }
 span.quiz-element-icon {
     position: absolute;
-    right: -47px;
+    right: -22px;
     font-size: 20px;
     opacity: 1;
     top: 50%;
@@ -2918,7 +2918,7 @@ span.quiz-element-icon {
 }
 span.quiz-element-icon i {
     font-size: 18px;
-    color: #666;
+    color: #777;
 }
 /*************************************
 Tailer Hub Style End
