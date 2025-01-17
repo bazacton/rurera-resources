@@ -1741,9 +1741,6 @@ New Quiz Page Style End
 /*************************************
 Tailer Hub Style Start
 **************************************/
-.admin_teacher_role .main-wrapper .navbar {
-    display: none !important;
-}
 .admin_teacher_role {
     background-color: #f7f7f7;
 }
