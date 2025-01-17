@@ -1926,7 +1926,7 @@
       </div>
     </div>
 </div>
-<div class="modal document-modal fade" id="document-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal document-modal enhance-questions-modal fade" id="document-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
@@ -3062,7 +3062,7 @@
 <script>
 
 $(document).ready(function () {
-  const $scrollableDiv = $(".document-pdf");
+  const $scrollableDiv = $(".enhance-questions-modal");
   $scrollableDiv.niceScroll({
     cursorcolor: "red",
     cursorwidth: "8px",
