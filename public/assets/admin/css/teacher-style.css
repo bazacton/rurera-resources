@@ -5735,9 +5735,6 @@ button.print-download-btn {
     .question-count {
         margin: 0 0 10px;
     }
-    .admin_teacher_role .question-layout .rureraform-col {
-        width: 100%;
-    }
     .admin_teacher_role .rurera-in-row {
         justify-content: flex-start !important;
     }
