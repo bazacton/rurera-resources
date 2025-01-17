@@ -3609,6 +3609,9 @@ span.field-separated span:after {
     padding: 10px;
     margin-top: 10px;
 }
+.view-explanation .explanation-text-holder p {
+    margin: 0;
+}
 /* View-Explanation Style End */
 
 /* Question-Layout Question-Top-Info Style Start */
