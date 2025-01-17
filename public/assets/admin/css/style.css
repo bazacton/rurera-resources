@@ -2891,7 +2891,7 @@ Admin Questions Generator Page Style End
     .assignments-table table.table tbody tr:first-child td:first-child {
         padding-top: 0 !important;
     }
-    .assignments-table table.table tbody tr td:last-child {
+    .assignments-table table.table tbody tr:last-child td:last-child {
         padding-bottom: 0 !important;
         border-bottom: 0 !important;
     }
