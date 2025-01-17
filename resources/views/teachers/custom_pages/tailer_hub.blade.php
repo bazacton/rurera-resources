@@ -1970,8 +1970,8 @@
                         </div>
                         <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                             <div class="question-layout-holder mb-0 bg-white panel-border rounded-sm p-25 mb-25">
+                                <span class="quiz-element-icon"><i class="fas fa-chevron-right"></i></span>
                                 <div class="question-check-option">
-                                    <span class="quiz-element-icon"><i class="fas fa-chevron-right"></i></span>
                                     <input type="checkbox" id="q-check1">
                                     <label for="q-check1" class="question-check-box">
                                         <div class="question-layout-block">
