@@ -53,6 +53,20 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td data-th="Actions" class="hide-lg">
+                                        <div class="dropdown-box">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
+                                                </a>
+                                                <div class="dropdown-menu" style="">
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt=""> Delete</a>
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
                                     <td data-th="Type">Vocabulary</td>
                                     <td data-th="Questions">0</td>
                                     <td data-th="Participations">50</td>
@@ -68,7 +82,7 @@
                                         </div>
                                     </td>
                                     <td data-th="Status" class="text-success font-weight-bold">Active</td>
-                                    <td data-th="Actions">
+                                    <td data-th="Actions" class="hide-sm">
                                         <div class="dropdown-box">
                                             <div class="dropdown">
                                                 <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -84,6 +98,20 @@
                                     </td>
                                 </tr>
                                 <tr>
+                                    <td data-th="Actions" class="hide-lg">
+                                        <div class="dropdown-box">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
+                                                </a>
+                                                <div class="dropdown-menu" style="">
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt=""> Delete</a>
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
                                     <td data-th="Type">Vocabulary</td>
                                     <td data-th="Questions">0</td>
                                     <td data-th="Participations">50</td>
@@ -99,7 +127,7 @@
                                         </div>
                                     </td>
                                     <td data-th="Status" class="text-success font-weight-bold">Active</td>
-                                    <td data-th="Actions">
+                                    <td data-th="Actions" class="hide-sm">
                                         <div class="dropdown-box">
                                             <div class="dropdown">
                                                 <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
