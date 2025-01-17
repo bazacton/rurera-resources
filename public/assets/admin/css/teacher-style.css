@@ -2882,6 +2882,8 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     position: absolute;
     right: 0;
     top: 0;
+    font-size: 14px;
+    font-weight: bold;
     border: 1px solid #ddd;
     border-radius: 3px;
     display: inline-flex;
