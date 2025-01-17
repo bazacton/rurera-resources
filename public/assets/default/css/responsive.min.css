@@ -1082,8 +1082,7 @@ Lms Responsive Style Start
     .find-instructor-section.pt-100 {padding-top: 30px !important;}
     .categories-card.active, .categories-card:hover {transform: scaleX(1);}
     .subscribe-plan:hover {top: 0;}
-    .choose-sats li,
-    .lms-faqs .card-body p {font-size: .75rem;}
+    .choose-sats li {font-size: .75rem;}
     .reward-process .d-flex:has(.try-rurera-btn) {justify-content: center; margin-left: 0 !important;}
     .categories-list li {flex: 0 0 50%; max-width: 50%;}
     .stats-container .stats-item:hover {transform: none;}
