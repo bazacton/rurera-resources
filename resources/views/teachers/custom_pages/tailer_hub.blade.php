@@ -1945,7 +1945,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="questions-heading d-flex align-items-center justify-content-between">
-                                <h3>Enhance Questions</h3>
+                                <h3 class="font-22">Enhance Questions</h3>
                                 <div class="search-filters mb-0">
                                     <div class="select-field">
                                         <span>By:</span>
