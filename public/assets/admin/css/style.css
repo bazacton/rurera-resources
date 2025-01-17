@@ -2884,6 +2884,8 @@ Admin Questions Generator Page Style End
         justify-content: space-between;
         padding: 15px 0 !important;
         border-bottom: 1px solid #ddd !important;
+        color: #999;
+        font-weight: 500;
     }
     .assignments-table table.table tbody tr:first-child td {
         padding: 15px 0 !important;
@@ -2897,6 +2899,8 @@ Admin Questions Generator Page Style End
     }
     .assignments-table table.table tbody tr td:before {
         content: attr(data-th);
+        color: #333;
+        font-weight: 600;
     }
 }
 @media screen and (max-width: 767px) {
