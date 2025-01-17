@@ -126,7 +126,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td data-th="Status" class="text-success font-weight-bold">Active</td>
+                                    <td data-th="Status" class="text-success font-weight-bold border-sm-0">Active</td>
                                     <td data-th="Actions" class="hide-sm">
                                         <div class="dropdown-box">
                                             <div class="dropdown">
