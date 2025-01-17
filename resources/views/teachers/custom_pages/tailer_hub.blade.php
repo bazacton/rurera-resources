@@ -3087,7 +3087,7 @@ $(document).ready(function () {
 </script>
 <script>
 $(document).ready(function() {
-    $(".quiz-setup-listings .rureraform-element, .lms-quiz-create .rureraform-admin-popup-title a").click(function(e) {
+    $(".blank-canvas-modal .rureraform-element, .lms-quiz-create .rureraform-admin-popup-title a").click(function(e) {
         e.stopPropagation();
         $(".canvas-editable-options-holder").toggleClass("active");
     });
