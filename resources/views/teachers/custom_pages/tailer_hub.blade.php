@@ -2617,7 +2617,7 @@ $(document).ready(function() {
 <script type="text/javascript">
 
 $(document).ready(function () {
-  const $scrollableDiv = $(".blank-canvas-sidebar, .canvas-editable-options");
+  const $scrollableDiv = $(".blank-canvas-sidebar, .canvas-editable-options, .document-pdf");
 
   // Initialize NiceScroll with auto-hide enabled
   $scrollableDiv.niceScroll({
