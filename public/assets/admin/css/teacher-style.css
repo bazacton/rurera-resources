@@ -4960,6 +4960,16 @@ Accuracy Score Card Style End
     margin: 0 auto;
     text-align: left; 
 }
+.enhance-questions-modal .document-pdf {
+    height: auto;
+    padding: 0;
+}
+.enhance-questions-modal .document-content {
+    padding: 50px 0 0;
+}
+.admin_teacher_role .modal.enhance-questions-modal {
+    height: 100vh;
+}
 .document-modal .nicescroll-rails-hr {
     display: none !important;
 }
