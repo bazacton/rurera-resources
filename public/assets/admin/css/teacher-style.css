@@ -5700,3 +5700,13 @@ button.print-download-btn {
         z-index: 10;
     }
 }
+@media screen and (max-width: 576px) {
+    .rureraform-search-field .input-field button {
+        position: relative;
+        transform: none;
+        right: 0;
+        top: 0;
+        float: inline-end;
+        margin: 10px 0 0;
+    }
+}
