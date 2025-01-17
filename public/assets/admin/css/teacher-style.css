@@ -2894,6 +2894,15 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     color: var(--white);
     content: "\2713";
 }
+.question-check-option {
+    opacity: 0.5;
+}
+.question-layout-holder:has(input[type=checkbox]:checked) {
+    border-color: var(--blue) !important;
+}
+.question-layout-holder:has(input[type=checkbox]:checked) .question-check-option {
+    opacity: 1;
+}
 /*************************************
 Tailer Hub Style End
 **************************************/
