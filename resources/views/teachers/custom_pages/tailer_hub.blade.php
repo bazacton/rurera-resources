@@ -54,7 +54,7 @@
                     <div class="rureraform-search-field mb-15">
                         <div class="input-field">
                             <input type="text" placeholder="Search question..">
-                            <button type="button"><i class="fas fa-search"></i> Search questions</button>
+                            <button type="button"><i class="fas fa-search"></i> <span>Search questions</span></button>
                         </div>
                         <div class="featured-controls">
                             <button type="button" class="active">Featured List</button>
@@ -1059,7 +1059,7 @@
                                     <div class="rureraform-search-field mb-15">
                                         <div class="input-field">
                                             <input type="text" placeholder="Search question..">
-                                            <button type="button"><i class="fas fa-search"></i> Search questions</button>
+                                            <button type="button"><i class="fas fa-search"></i> <span>Search questions</span></button>
                                         </div>
                                         <div class="featured-controls">
                                             <button type="button" class="active">Featured List</button>
