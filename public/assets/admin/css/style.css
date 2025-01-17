@@ -2884,6 +2884,13 @@ Admin Questions Generator Page Style End
     .assignments-table thead {
         display: none;
     }
+    .assignments-table table.table tbody tr {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .assignments-table table.table tbody tr:last-child {
+        margin-bottom: 0;
+    }
     .assignments-table table.table tbody tr td {
         display: flex;
         align-items: center;
