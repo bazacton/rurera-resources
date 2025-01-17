@@ -5613,6 +5613,7 @@ button.print-download-btn {
     .admin_teacher_role:has(.main-sidebar) .main-content {
         padding-left: 280px;
         max-width: 100%;
+        padding-top: 100px;
     }
 }
 
