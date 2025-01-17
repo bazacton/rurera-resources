@@ -1944,7 +1944,7 @@
                     <button type="button"><img src="/assets/default/svgs/download.svg" alt=""> Download</button>
                 </div> -->
             </div>
-            <div class="document-content">
+            <div class="document-content" style="padding-right: 15px;">
                 <div class="document-pdf" id="pdf-fonts" style="font-size: medium;">
                     <div class="elements-holder panel-border p-15 border-bottom-0" style="background-color: #fafafa;">
                         <div class="site-logo mb-20">
