@@ -1937,12 +1937,8 @@
                 </button>
                 <div class="document-heading">
                     <a href="#" class="back-btn"><i class="fas fa-chevron-left"></i></a>
-                    <h2>Template Name <i class="fas fa-star"></i></h2>
+                    <h2>Enhance Questions <i class="fas fa-star"></i></h2>
                 </div>
-                <!-- <div class="document-controls">
-                    <button type="button" class="settings-btn"><img src="/assets/default/svgs/settings.svg" alt=""> Settings</button>
-                    <button type="button"><img src="/assets/default/svgs/download.svg" alt=""> Download</button>
-                </div> -->
             </div>
             <div class="document-content" style="padding-right: 15px;">
                 <div class="document-pdf" id="pdf-fonts" style="font-size: medium;">
