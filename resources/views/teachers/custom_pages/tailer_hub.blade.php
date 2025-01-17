@@ -2341,7 +2341,7 @@
                                                 <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
                                                     <div class="question-top-info">
                                                         <div class="question-count">
-                                                            <span class="question-count-lable">Question 1 of 20</span>
+                                                            <span class="question-count-lable">Question 3 of 20</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2526,7 +2526,7 @@
                                                                 <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
                                                                     <div class="question-top-info">
                                                                         <div class="question-count">
-                                                                            <span class="question-count-lable">Question 1 of 20</span>
+                                                                            <span class="question-count-lable">Question 5 of 20</span>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2885,7 +2885,7 @@
                                                 <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
                                                     <div class="question-top-info">
                                                         <div class="question-count">
-                                                            <span class="question-count-lable">Question 1 of 20</span>
+                                                            <span class="question-count-lable">Question 2 of 20</span>
                                                         </div>
                                                     </div>
                                                 </div>
