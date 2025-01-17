@@ -5711,5 +5711,6 @@ button.print-download-btn {
     }
     .rureraform-search-field button i {
         margin: 0;
+        font-size: 14px;
     }
 }
