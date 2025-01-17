@@ -504,7 +504,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .card.bg-info .card-header, .card.bg-dark .card-header, .card.bg-warning .card-header {color: #fff; opacity: .9;}
 
 /* Assignments New Table Style Start */
-.assignments-table .card {border: 1px solid #ddd;border-radius: 5px;}
+.assignments-table .card {border: 1px solid #ddd;border-radius: 5px; background-color: inherit;}
 .assignments-table .card h6 {
     display: flex;
     align-items: center;
@@ -535,6 +535,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 }
 .assignments-table table.table thead tr th, 
 .assignments-table table.table tbody tr td {
+    background-color: #fff;
     height: auto !important;
     line-height: normal;
     background-color: inherit;
