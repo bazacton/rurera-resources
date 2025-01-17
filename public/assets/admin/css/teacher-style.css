@@ -1747,9 +1747,6 @@ Tailer Hub Style Start
 .admin_teacher_role .main-content {
     background-color: #f7f7f7;
 }
-.admin_teacher_role.sidebar-gone .main-content {
-    padding-left: 15px; 
-}
 .admin_teacher_role .question-layout.row {
     margin-left: 0;
     margin-right: 0;
