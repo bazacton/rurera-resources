@@ -5702,11 +5702,14 @@ button.print-download-btn {
 }
 @media screen and (max-width: 576px) {
     .rureraform-search-field .input-field button {
-        position: relative;
-        transform: none;
-        right: 0;
-        top: 0;
-        float: inline-end;
-        margin: 10px 0 0;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+    }
+    .rureraform-search-field button span {
+        display: none;
+    }
+    .rureraform-search-field button i {
+        margin: 0;
     }
 }
