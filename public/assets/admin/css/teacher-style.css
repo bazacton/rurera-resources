@@ -5640,4 +5640,8 @@ button.print-download-btn {
     .student-other-info span {
         width: 47%;
     }
+    .question-content-header {padding-left: 15px;}
+    .admin_teacher_role .main-sidebar {
+        z-index: 891;
+    }
 }
