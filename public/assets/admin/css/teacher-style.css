@@ -5713,4 +5713,10 @@ button.print-download-btn {
         margin: 0;
         font-size: 14px;
     }
+    .featured-filters select {
+        min-width: 100px;
+    }
+    .featured-filters {
+        gap: 5px;
+    }
 }
