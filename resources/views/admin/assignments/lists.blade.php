@@ -70,7 +70,9 @@
                                     <td data-th="Type">Vocabulary</td>
                                     <td data-th="Questions">0</td>
                                     <td data-th="Participations">50</td>
-                                    <td data-th="Start & End Date">11 Sep 05:00 / 16 Sep 05:00</td>
+                                    <td data-th="Start & End Date">
+                                        <span>11 Sep 05:00 / <span>16 Sep 05:00</span></span>
+                                    </td>
                                     <td data-th="Accuracy">
                                         <div class="circle_percent circle-green" data-percent="50">
                                             <div class="circle_inner">
