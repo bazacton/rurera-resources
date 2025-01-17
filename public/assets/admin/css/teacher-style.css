@@ -3449,6 +3449,7 @@ span.field-separated span:after {
     padding: 0 0;
     background-color: inherit;
     cursor: pointer;
+    min-width: 50px;
 }
 .questions-header .icon-box img {
     height: 15px;
