@@ -4971,6 +4971,9 @@ Accuracy Score Card Style End
     padding-bottom: 15px;
     overflow-x: hidden !important;
 }
+.document-modal .nicescroll-rails-hr {
+    display: none;
+}
 .pdf-img-box img {
     max-width: 100%;
     height: 100%;
