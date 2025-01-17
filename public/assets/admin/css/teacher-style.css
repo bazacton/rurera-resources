@@ -4961,13 +4961,13 @@ Accuracy Score Card Style End
     text-align: left; 
 }
 .document-pdf:has(.document-inner) {
-    overflow: unset;
     padding: 0;
     height: auto;
 }
 .document-inner {
     height: calc(100vh - 5px);
     overflow: hidden;
+    padding-right: 10px;
 }
 .pdf-img-box img {
     max-width: 100%;
