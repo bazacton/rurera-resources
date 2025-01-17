@@ -4961,7 +4961,6 @@ Accuracy Score Card Style End
     text-align: left; 
 }
 .document-pdf:has(.document-inner) {
-    height: 100%;
     overflow: unset;
     padding: 0;
 }
