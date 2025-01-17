@@ -578,6 +578,9 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .assignments-table .circle-green.percent_more:after {
     background: #47c363;
 }
+.hide-lg {
+    display: none;
+}
 /* Assignments New Table Style End */
 
 @media (max-width: 575.98px) {
