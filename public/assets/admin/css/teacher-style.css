@@ -4960,17 +4960,6 @@ Accuracy Score Card Style End
     margin: 0 auto;
     text-align: left; 
 }
-.document-pdf:has(.document-inner) {
-    padding: 0;
-    height: auto;
-}
-.document-inner {
-    height: calc(100vh - 130px);
-    overflow: hidden;
-    padding-right: 10px;
-    padding-bottom: 15px;
-    overflow-x: hidden !important;
-}
 .document-modal .nicescroll-rails-hr {
     display: none !important;
 }
