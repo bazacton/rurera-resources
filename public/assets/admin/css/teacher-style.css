@@ -1751,9 +1751,6 @@ Tailer Hub Style Start
     background-color: #f7f7f7;
     padding-left: 30px;
 }
-.admin_teacher_role:has(.main-sidebar) .main-content {
-    padding-left: 280px;
-}
 .admin_teacher_role.sidebar-gone .main-content {
     padding-left: 15px; 
 }
@@ -5612,6 +5609,12 @@ button.print-download-btn {
     margin: 0;
 }
 /* Compliance Programes Style End */
+@media screen and (min-width: 1024px) and (max-width: 1800px) {
+    .admin_teacher_role:has(.main-sidebar) .main-content {
+        padding-left: 280px;
+        max-width: 100%;
+    }
+}
 
 @media screen and (max-width: 767px) {
     .document-left-sidebar,
