@@ -2920,45 +2920,17 @@ Admin Questions Generator Page Style End
     .assignments-table table.table tbody tr td.hide-sm {display: none;}
 }
 @media screen and (max-width: 767px) {
-    .progress-wrapper .progress-holder {
-        display: none;
-    }
-    .progress-box {
-        padding-left: 0;
-    }
+    .progress-wrapper .progress-holder {display: none;}
+    .progress-box {padding-left: 0;}
     .progress-box:before,
-    .breadcrumb-item+.breadcrumb-item::before {
-        display: none;
-    }
-    .section .progress-wrapper .section-header h1 {
-        font-size: 18px;
-        margin-top: 10px;
-    }
-    .section .progress-wrapper .section-header .section-header-breadcrumb.hide-for-mobile {
-        display: none;
-    }
-    .section .progress-wrapper .section-header {
-        margin-bottom: 0 !important;
-    }
-    .topic-parts-data thead {
-        display: none;
-    }
-    .topic-parts-data table {
-        min-width: auto;
-        display: block;
-    }
-    .topic-parts-data tr {
-        display: block;
-    }
-    .topic-parts-data table tr td {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 5px;
-        border: 0;
-        border-bottom: 2px dotted #ddd;
-    }
+    .breadcrumb-item+.breadcrumb-item::before {display: none;}
+    .section .progress-wrapper .section-header h1 {font-size: 18px; margin-top: 10px; }
+    .section .progress-wrapper .section-header .section-header-breadcrumb.hide-for-mobile {display: none;}
+    .section .progress-wrapper .section-header {margin-bottom: 0 !important;}
+    .topic-parts-data thead {display: none;}
+    .topic-parts-data table {min-width: auto; display: block;}
+    .topic-parts-data tr {display: block;}
+    .topic-parts-data table tr td {display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 5px; border: 0; border-bottom: 2px dotted #ddd;}
     .topic-parts-data table tr td:before {
         content: attr(data-label);
         display: inline-block;
@@ -2976,8 +2948,5 @@ Admin Questions Generator Page Style End
     }
 }
 @media screen and (max-width: 576px) {
-    .assignments-table table.table tbody tr td span span {
-        display: block;
-        padding-top: 5px;
-    }
+    .assignments-table table.table tbody tr td span span {display: block; padding-top: 5px;}
 }
