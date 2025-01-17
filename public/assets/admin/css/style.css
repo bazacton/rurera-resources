@@ -2935,6 +2935,8 @@ Admin Questions Generator Page Style End
     .topic_parts.accordion-parent td:has(.topic-part-title) {padding-left: 15px !important;}
     .topic-parts-data table tr td:has(.topic-part-title) {min-width: auto;}
     .topic-parts-data table tr td .topic-part-title {padding-left: 20px;}
+    .table:not(.table-sm):not(.table-md):not(.dataTable) td, 
+    .table:not(.table-sm):not(.table-md):not(.dataTable) th {white-space: nowrap;}
 }
 @media screen and (max-width: 576px) {
     .assignments-table table.table tbody tr td span span {display: block; padding-top: 5px;}
