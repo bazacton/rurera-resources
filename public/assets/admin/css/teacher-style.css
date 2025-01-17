@@ -5741,4 +5741,8 @@ button.print-download-btn {
     .admin_teacher_role .rurera-in-row {
         justify-content: flex-start !important;
     }
+    .admin_teacher_role .alphabet-list-style .field-holder:has(input), 
+    .admin_teacher_role .alphabet-list-style .form-field:has(input) {
+        width: 100%;
+    }
 }
