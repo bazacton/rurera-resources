@@ -2875,6 +2875,26 @@ Admin Questions Generator Page Style End
     .similarity-content-block .tab-content:has(.rureraform-admin-popup.active) > .tab-pane.question-details-tab-data > .col-12 {
         display: none;
     }
+    .assignments-table thead {
+        display: none;
+    }
+    .assignments-table table.table tbody tr td {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0 !important;
+        border-bottom: 1px solid #ddd !important;
+    }
+    .assignments-table table.table tbody tr:first-child td {
+        padding: 15px 0 !important;
+    }
+    .assignments-table table.table tbody tr:first-child td:first-child {
+        padding-top: 0 !important;
+    }
+    .assignments-table table.table tbody tr td:last-child {
+        padding-bottom: 0 !important;
+        border-bottom: 0 !important;
+    }
 }
 @media screen and (max-width: 767px) {
     .progress-wrapper .progress-holder {
