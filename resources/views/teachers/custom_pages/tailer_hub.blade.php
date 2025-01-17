@@ -1944,9 +1944,35 @@
                 <div class="document-pdf" id="pdf-fonts" style="font-size: medium;">
                     <div class="row">
                         <div class="col-12">
-                        <div class="questions-heading">
-                            <h3>Enhance Questions</h3>
-                        </div>
+                            <div class="questions-heading">
+                                <h3>Enhance Questions</h3>
+                                <div class="search-filters mb-0">
+                                    <div class="select-field">
+                                        <span>By:</span>
+                                        <select>
+                                            <option value="All providers">All providers</option>
+                                            <option value="All providers">All providers</option>
+                                            <option value="All providers">All providers</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-field">
+                                        <span>Capability:</span>
+                                        <select>
+                                            <option value="All providers">Embeddings</option>
+                                            <option value="All providers">Embeddings</option>
+                                            <option value="All providers">Embeddings</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-field">
+                                        <span>Tag:</span>
+                                        <select>
+                                            <option value="All">All</option>
+                                            <option value="All">All</option>
+                                            <option value="All">All</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                             <div class="instructions bg-white panel-border p-25 border-bottom-0">
