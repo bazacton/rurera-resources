@@ -2518,4 +2518,7 @@ Flip Book Custom Style End
     .flipbook-bookLayer {
         height: 100%;
     }
+    body .book .flipbook-data {
+        transform: scale(1);
+    }
 }
