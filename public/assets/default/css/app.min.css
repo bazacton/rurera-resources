@@ -288,14 +288,16 @@ Front-end Login Style Start
   gap: 15px;
 }
 .login-pad-icons a {
-  width: auto;
   display: inline-flex;
   align-items: center;
-  flex-direction: column;
-  background-color: #f2f2f2;
-  padding: 10px 10px;
+  padding: 10px;
   justify-content: center;
   border-radius: 5px;
+  border: 1px solid #ddd;
+  flex-basis: 32%;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
 }
 .login-pad-icons a img {
   border-radius: 0;
