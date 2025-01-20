@@ -296,7 +296,7 @@ Front-end Login Style Start
   border: 1px solid #ddd;
   flex-basis: 18%;
   gap: 10px;
-  font-size: 24px;
+  font-size: 48px;
   font-weight: 700;
 }
 .login-pad-icons a img {
