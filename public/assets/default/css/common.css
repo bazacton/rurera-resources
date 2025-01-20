@@ -1270,6 +1270,14 @@ body:has(.activities-container) .table-responsive {overflow: visible;}
 .form-group:has(select) .rurera-error-msg {top: 2px;}
 .form-control option {padding-top: 10px; padding-bottom: 10px; line-height: 50px;}
 .rurera-error-msg {color: #ffa3a3; font-size: 14px;}
+.topFilters select.form-control {
+    padding: 8px 10px;
+    appearance: none;
+    background: url(/assets/default/svgs/arrow-down.svg) right center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
 @media (prefers-reduced-motion:reduce) {
     .form-control {transition: none;}
 }
