@@ -15,6 +15,91 @@
             <div class="breadcrumb-item">Timestables Assignments</div>
         </div>
     </div>
+    <section class="card">
+        <div class="card-body">
+            <form action="/admin/assignments" id="topic_parts_search_form" method="get" class="row mb-0">
+
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="input-label">{{trans('admin/main.category')}}</label>
+                        <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control" data-course_id="{{get_filter_request('subject_id', 'assignments_search')}}">
+                            <option value="">{{trans('admin/main.all_categories')}}</option>
+                            @foreach($categories as $category)
+                                @if(!empty($category->subCategories) and count($category->subCategories))
+                                    <optgroup label="{{  $category->title }}">
+                                        @foreach($category->subCategories as $subCategory)
+                                            <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'assignments_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                        @endforeach
+                                    </optgroup>
+                                @else
+                                    <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'assignments_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+                                @endif
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label>Subjects</label>
+                        <select data-return_type="option"
+                                data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'assignments_search')}}"
+                                class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
+                                id="subject_id" name="subject_id">
+                            <option disabled selected>Subject</option>
+                        </select>
+                        @error('subject_id')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="input-label">{{ trans('admin/main.end_date') }}</label>
+                        <div class="input-group">
+                            <input type="date" id="lsdate" class="text-center form-control" name="to"
+                                   value="{{ request()->get('to') }}" placeholder="End Date">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
+                    <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}</button>
+
+                </div>
+            </form>
+        </div>
+        @php $saved_templates = $user->saved_templates;
+				$saved_templates = json_decode( $saved_templates );
+				$saved_templates = isset( $saved_templates->assignments_search )? $saved_templates->assignments_search : array();
+        @endphp
+        <div class="defined-searches mt-20" style="display:none">
+            <span><strong>Defined Searches:</strong></span>
+            @if( !empty( $saved_templates ) )
+                @foreach( $saved_templates  as $template_name => $template_data)
+                    @php $template_array = json_decode($template_data);
+							$url_params = '<span>'.$template_name.'</span>';
+							if( isset( $template_array->url_params )){
+								$url_params = '<a href="'.(string) url("").'/admin/topics_parts/?'.$template_array->url_params.'">'.$template_name.'</a>';
+							}
+                    @endphp
+                    <span class="apply-template-field" data-form_id="topic_parts_search_form" data-template_type="assignments_search" data-template_data="{{$template_data}}"> {!! $url_params !!} <a href="javascript:;" data-template_name="{{$template_name}}" class="remove-template"><i class="fas fa-times"></i></a></span>
+                @endforeach
+            @endif
+            <button type="button" class="btn btn-success save-template" data-form_id="topic_parts_search_form" data-template_type="assignments_search" ><i class="fas fa-save"></i> Save Template</button>
+        </div>
+    </section>
+
+
 
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
@@ -32,8 +117,39 @@
                 </div>
             </div>
         </div>
+
+            <div class="col-12 col-md-12">
+                <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="topics-tab" href="/admin/assignments">
+                            <span class="tab-title">All assignments</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="topics-tab" href="/admin/assignments/scheduled" >
+                            <span class="tab-title">Scheduled</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="topics-tab" href="/admin/assignments/running" >
+                            <span class="tab-title">Running</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="topics-tab" href="/admin/assignments/completed" >
+                            <span class="tab-title">Completed</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="topics-tab" href="/admin/assignments/paused" >
+                            <span class="tab-title">Paused</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         <div class="col-12">
-            <div class="assignments-table table-sm">
+            <div class="assignments-table">
                 <div class="card">
                     <div class="card-header bg-light">
                         <h6 class="mb-0"><span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt=""></span> Issue in Testing</h6>
@@ -53,27 +169,11 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td data-th="Actions" class="hide-lg">
-                                        <div class="dropdown-box">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
-                                                </a>
-                                                <div class="dropdown-menu" style="">
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt=""> Delete</a>
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td data-th="Type">Vocabulary</td>
-                                    <td data-th="Questions">0</td>
-                                    <td data-th="Participations">50</td>
-                                    <td data-th="Start & End Date">
-                                        <span>11 Sep 05:00 / <span>16 Sep 05:00</span></span>
-                                    </td>
-                                    <td data-th="Accuracy">
+                                    <td>Vocabulary</td>
+                                    <td>0</td>
+                                    <td>50</td>
+                                    <td>11 Sep 05:00 / 16 Sep 05:00</td>
+                                    <td>
                                         <div class="circle_percent circle-green" data-percent="50">
                                             <div class="circle_inner">
                                                 <div class="round_per" style="transform: rotate(360deg);"></div>
@@ -83,8 +183,8 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td data-th="Status" class="text-success font-weight-bold">Active</td>
-                                    <td data-th="Actions" class="hide-sm">
+                                    <td class="text-success font-weight-bold">Active</td>
+                                    <td>
                                         <div class="dropdown-box">
                                             <div class="dropdown">
                                                 <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -100,27 +200,11 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td data-th="Actions" class="hide-lg">
-                                        <div class="dropdown-box">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
-                                                </a>
-                                                <div class="dropdown-menu" style="">
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt=""> Delete</a>
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td data-th="Type">Vocabulary</td>
-                                    <td data-th="Questions">0</td>
-                                    <td data-th="Participations">50</td>
-                                    <td data-th="Start & End Date">
-                                        <span>11 Sep 05:00 / <span>16 Sep 05:00</span></span>
-                                    </td>
-                                    <td data-th="Accuracy">
+                                    <td>Vocabulary</td>
+                                    <td>0</td>
+                                    <td>50</td>
+                                    <td>11 Sep 05:00 / 16 Sep 05:00</td>
+                                    <td>
                                         <div class="circle_percent circle-green" data-percent="50">
                                             <div class="circle_inner">
                                                 <div class="round_per" style="transform: rotate(360deg);"></div>
@@ -130,8 +214,8 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td data-th="Status" class="text-success font-weight-bold border-sm-0">Active</td>
-                                    <td data-th="Actions" class="hide-sm">
+                                    <td class="text-success font-weight-bold">Active</td>
+                                    <td>
                                         <div class="dropdown-box">
                                             <div class="dropdown">
                                                 <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -373,5 +457,27 @@
 @endsection
 
 @push('scripts_bottom')
+    <script type="text/javascript">
 
+        $(document).ready(function () {
+
+            $(document).on('change', '.ajax-category-courses', function () {
+                var category_id = $(this).val();
+                var course_id = $(this).attr('data-course_id');
+                $.ajax({
+                    type: "GET",
+                    url: '/admin/webinars/courses_by_categories',
+                    data: {'category_id': category_id, 'course_id': course_id},
+                    success: function (return_data) {
+                        $(".ajax-courses-dropdown").html(return_data);
+                        $(".ajax-chapter-dropdown").html('<option value="">Please select year, subject</option>');
+                        $('.ajax-courses-dropdown').change();
+                    }
+                });
+            });
+
+        });
+
+
+    </script>
 @endpush
