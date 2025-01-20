@@ -2524,7 +2524,8 @@ Flip Book Custom Style End
     .flipbook-page3-inner {
         left: -175px;
     }
-    .flipbook-center-container3 {
+    .flipbook-center-container3,
+    .flipbook-page3-back {
         width: 100% !important;
         transform: none !important;
     }
