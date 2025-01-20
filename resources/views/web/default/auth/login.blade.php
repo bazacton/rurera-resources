@@ -117,7 +117,7 @@
                                                 <div class="login-controls">
                                                     <div>
                                                         <span>{{ trans('auth.dont_have_account') }}</span>
-                                                        <a href="/register" class="text-secondary font-weight-bold">{{ trans('auth.signup') }}</a>
+                                                        <a href="/pricing" class="text-secondary font-weight-bold">{{ trans('auth.signup') }}</a>
                                                     </div>
                                                 </div>
                                             </form>
