@@ -271,10 +271,10 @@
                         <div class="login-password">
                             <form class="mb-10">
                                 <div class="form-group d-inline-flex align-items-start justify-content-start flex-row flex-wrap">
-                                    <label class="input-label" for="username">
+                                    <h2 class="text-center font-24 font-weight-bold mb-15" for="username">
                                         Enter Pin Code
                                         <span class="d-block font-16 font-weight-normal pt-5">If your teacher has given you a PIN code to access Rurera Go, enter <br> it in the form below..</span>
-                                    </label>
+                                    </h2>
                                     <input type="hidden" class="login_pin_final" value="">
                                     <input type="text" name="pincode" class="login_pin focused_field" autocomplete="pincode" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
                                     <input type="text" name="pincode1" class="login_pin" autocomplete="pincode1" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
