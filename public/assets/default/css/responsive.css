@@ -85,6 +85,9 @@ Lms Responsive Style Start
     .school-zone-students [class*="col-"] {flex: 0 0 50%;max-width: 50%;}
     .quiz-topbar [class*="col-"] {width: 100%; flex: 0 0 100%;max-width: 100%;}
     .quiz-topbar .close-btn-holder {position: absolute;top: -44px;right: 15px;}
+    .navbar1 .nav-item .nav-link, .navbar1 li .nav-link {
+        padding: 10px 15px;
+    }
 }
 @media (min-width:991px) {
     .top-navbar .top-contact-box {border-bottom: 0 !important;}
