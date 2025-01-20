@@ -2,6 +2,7 @@
 
 @push('styles_top')
     <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
 @endpush
 
 @section('content')
@@ -590,7 +591,7 @@
 @endsection
 
 @push('scripts_bottom')
-
+<script src="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
 
 @endpush
 
