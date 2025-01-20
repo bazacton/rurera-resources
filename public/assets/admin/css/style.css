@@ -2885,17 +2885,17 @@ Admin Questions Generator Page Style End
     .assignments-table .card .card-body {
         padding: 0 !important;
     }
-    .assignments-table thead {
+    .table-sm table thead {
         display: none;
     }
-    .assignments-table table.table tbody tr {
+    .table-sm table.table tbody tr {
         display: block;
         margin-bottom: 15px;
     }
-    .assignments-table table.table tbody tr:last-child {
+    .table-sm table.table tbody tr:last-child {
         margin-bottom: 0;
     }
-    .assignments-table table.table tbody tr td {
+    .table-sm table.table tbody tr td {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -2905,19 +2905,19 @@ Admin Questions Generator Page Style End
         font-weight: 500;
         gap: 10px;
     }
-    .assignments-table table.table tbody tr:first-child td {
+    .table-sm table table.table tbody tr:first-child td {
         padding: 15px 15px !important;
     }
-    .assignments-table table.table tbody tr:last-child td.border-sm-0 {
+    .table-sm table table.table tbody tr:last-child td.border-sm-0 {
         border-bottom: 0 !important;
     }
-    .assignments-table table.table tbody tr td:before {
+    .table-sm table table.table tbody tr td:before {
         content: attr(data-th);
         color: #333;
         font-weight: 600;
     }
-    .assignments-table table.table tbody tr td.hide-lg {display: flex;}
-    .assignments-table table.table tbody tr td.hide-sm {display: none;}
+    .table-sm table table.table tbody tr td.hide-lg {display: flex;}
+    .table-sm table table.table tbody tr td.hide-sm {display: none;}
 }
 @media screen and (max-width: 767px) {
     .progress-wrapper .progress-holder {display: none;}
