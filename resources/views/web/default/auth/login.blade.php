@@ -268,7 +268,7 @@
                 <a href="javascript:;" class="login-back-btn d-inline-block mb-10 font-18"><span>&#8592;</span> Back</a>
                 <div class="login-holder d-flex flex-column justify-content-center align-items-center">
                     <div class="col-12">
-                        <div class="login-password">
+                        <div class="login-password text-center">
                             <form class="mb-10">
                                 <div class="form-group d-inline-flex align-items-center justify-content-center flex-column flex-wrap">
                                     <h2 class="text-center font-24 font-weight-bold mb-15" for="username">
