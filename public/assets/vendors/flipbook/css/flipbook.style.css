@@ -2514,3 +2514,8 @@ Flip Book Custom Style End
 .book-info-link{
     cursor: pointer;
 }
+@media screen and (max-width: 575px) {
+    .flipbook-bookLayer {
+        height: 100%;
+    }
+}
