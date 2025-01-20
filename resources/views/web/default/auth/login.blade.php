@@ -286,6 +286,38 @@
                                     </div>
                                 </div>
                             </form>
+							<div class="login-pad-icons">
+                                <a id="pad-1" href="javascript:;" class="loginpad-icon">
+                                    1<img src="/assets/default/svgs/login_pin/1.svg?ver={{$rand_no}}" alt="1">
+                                </a>
+                                <a id="pad-2" href="javascript:;" class="loginpad-icon">
+                                    2<img src="/assets/default/svgs/login_pin/2.svg?ver={{$rand_no}}" alt="2">
+                                </a>
+                                <a id="pad-3" href="javascript:;" class="loginpad-icon">
+                                    3<img src="/assets/default/svgs/login_pin/3.svg?ver={{$rand_no}}" alt="3">
+                                </a>
+                                <a id="pad-4" href="javascript:;" class="loginpad-icon">
+                                    4<img src="/assets/default/svgs/login_pin/4.svg?ver={{$rand_no}}" alt="4">
+                                </a>
+                                <a id="pad-5" href="javascript:;" class="loginpad-icon">
+                                    5<img src="/assets/default/svgs/login_pin/5.svg?ver={{$rand_no}}" alt="5">
+                                </a>
+                                <a id="pad-6" href="javascript:;" class="loginpad-icon">
+                                    6<img src="/assets/default/svgs/login_pin/6.svg?ver={{$rand_no}}" alt="6">
+                                </a>
+                                <a id="pad-7" href="javascript:;" class="loginpad-icon">
+                                    7<img src="/assets/default/svgs/login_pin/7.svg?ver={{$rand_no}}" alt="7">
+                                </a>
+                                <a id="pad-8" href="javascript:;" class="loginpad-icon">
+                                    8<img src="/assets/default/svgs/login_pin/8.svg?ver={{$rand_no}}" alt="8">
+                                </a>
+                                <a id="pad-9" href="javascript:;" class="loginpad-icon">
+                                    9<img src="/assets/default/svgs/login_pin/9.svg?ver={{$rand_no}}" alt="9">
+                                </a>
+                                <a id="pad-0" href="javascript:;" class="loginpad-icon">
+                                    0<img src="/assets/default/svgs/login_pin/0.svg?ver={{$rand_no}}" alt="0">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -390,7 +422,7 @@
 
 
 
-        $(document).on('dblclick', '.emoji-passwords span', function (e) {
+        $(document).on('click', '.emoji-passwords span', function (e) {
             $(this).attr('data-emoji_id','');
             $(this).html('');
             $(this).addClass('is_empty');
