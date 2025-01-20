@@ -253,7 +253,7 @@ Front-end Login Style Start
 .login-holder .input-label {margin: 0 0 15px; font-size: 16px; font-weight: 500; color: #515554;}
 .login-with-pin .login-password .input-label {width: 100%;}
 .login-password .form-group {margin-bottom: 0;}
-.emoji-passwords .is_empty {background-color: #ddd; height: 60px; width: 60px; border-radius: 100%;}
+.emoji-passwords .is_empty {border: 1px solid #ddd; height: 60px; width: 60px; border-radius: 100%;}
 .login-password form {margin-bottom: 50px;}
 .login-with-emoji form {
   border-bottom: 1px solid #ddd;
@@ -274,7 +274,7 @@ Front-end Login Style Start
 .emoji-icons .emoji-icon img {max-width: 100%; height: 60px; width: 60px; object-fit: contain;}
 .login-password p {text-align: center; color: #5c78a8; font-size: 18px; }
 .login-password p a {color: #5c78a8;}
-.emoji-passwords {display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px;}
+.emoji-passwords {display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px 15px;}
 .emoji-passwords img {max-width: 100%; width: 60px; height: 60px; object-fit: contain;}
 .login-with-smartbadge .login-holder,
 .login-with-emoji .login-holder,
