@@ -209,8 +209,8 @@
                             
                                 @if( !empty( $profile_navs ) )
                                 <div class="col-12 col-lg-12">
-                                <div class="sidebar-students-list db-members p-15">
-                                <div class="card">
+                                <div class="sidebar-students-list db-members">
+                                <div class="card p-15">
                                 <h3 class="font-19 font-weight-bold d-flex justify-content-between align-items-center flex-wrap">
                                     Switch Accounts
                                     <a href="/panel/students" class="view-all font-weight-bold font-16">View All</a>
