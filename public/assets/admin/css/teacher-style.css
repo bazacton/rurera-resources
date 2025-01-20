@@ -3657,7 +3657,7 @@ span.field-separated span:after {
     transition: all 0.3s ease-out;
 }
 .question-layout-holder:hover .question-info {
-    left: 400px;
+    /* left: 400px; */
 }
 .document-content .question-layout-holder:hover .question-info {
     left: 0;
