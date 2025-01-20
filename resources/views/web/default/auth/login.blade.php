@@ -26,6 +26,7 @@
             -webkit-text-security: disc;
         }
     </style>
+    <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
 @endpush
 @section('content')
     <div class="container d-flex flex-column justify-content-center align-items-center">
@@ -56,6 +57,11 @@
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="parent-tab" data-toggle="tab" data-target="#parent" type="button" role="tab" aria-controls="parent" aria-selected="true">
                                 <span class="icon-box"><img src="/assets/default/svgs/parent-colord.svg" alt=""></span> Parent
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tutor-tab" data-toggle="tab" data-target="#tutor" type="button" role="tab" aria-controls="tutor" aria-selected="false">
+                                <span class="icon-box"><img src="/assets/default/svgs/teacher-colord.svg" alt=""></span> Tutor
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -160,20 +166,20 @@
                                             <div class="text-holder">
                                                 <h2>Welcome to login</h2>
                                                 <span>Don't have an account?</span>
-                                                <a href="/register-as" class="signup-btn">Sign Up</a>
+                                                <a href="/pricing" class="signup-btn">Sign Up</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="teacher" role="tabpanel" aria-labelledby="teacher-tab">
+                        <div class="tab-pane fade" id="tutor" role="tabpanel" aria-labelledby="tutor-tab">
                             <div class="login-holder">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <div class="login-card">
 
-                                            <h1 class="font-24 font-weight-bold">Log in to educator account</h1>
+                                            <h1 class="font-24 font-weight-bold">Log in to tutor account</h1>
                                             <form method="Post" action="/login" class="mt-20">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                                 <div class="form-group">
@@ -230,7 +236,64 @@
                                             <div class="text-holder">
                                                 <h2>Welcome to login</h2>
                                                 <span>Don't have an account?</span>
-                                                <a href="/register-as" class="signup-btn">Sign Up</a>
+                                                <a href="/register" class="signup-btn">Sign Up</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="teacher" role="tabpanel" aria-labelledby="teacher-tab">
+                            <div class="login-holder">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="login-card">
+
+                                            <h1 class="font-24 font-weight-bold">Log in to educator account</h1>
+                                            <form method="Post" action="/login" class="mt-20">
+                                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                                <div class="form-group">
+                                                    <label class="input-label" for="username">Username:</label>
+                                                    <input name="username" type="text" class="form-control @error('username') is-invalid @enderror" id="username"
+                                                           value="{{ old('username') }}" aria-describedby="emailHelp">
+                                                    @error('username')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                    @enderror
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="input-label" for="password">{{ trans('auth.password') }}:</label>
+
+                                                    <input name="password" type="password" class="form-control @error('password')  is-invalid @enderror" id="password" aria-describedby="passwordHelp">
+
+                                                    @error('password')
+                                                    <div class="invalid-feedback">
+                                                        {{ $message }}
+                                                    </div>
+                                                    @enderror
+                                                </div>
+
+                                                <button type="submit" class="btn btn-primary btn-block mt-20">{{ trans('auth.login') }}</button>
+                                                <!-- <p>By logging in to wonde you confirm you have read and agree <a href="#">terms of <br /> Use</a> and <a href="#">Privacy Notice</a></p>
+                                                <a href="#" class="login-next">Next</a> -->
+
+                                                <div class="login-controls">
+                                                    <div>
+                                                        <span>{{ trans('auth.dont_have_account') }}</span>
+                                                        <a href="/request-a-demo" class="text-secondary font-weight-bold">Request for demo</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="welcome-login-box">
+                                            <div class="text-holder">
+                                                <h2>Welcome to login</h2>
+                                                <span>Don't have an account?</span>
+                                                <a href="/request-a-demo" class="signup-btn">Request for demo</a>
                                             </div>
                                         </div>
                                     </div>
@@ -286,7 +349,7 @@
                                     </div>
                                 </div>
                             </form>
-							<div class="login-pad-icons">
+                            <div class="login-pad-icons">
                                 <a id="pad-1" href="javascript:;" class="loginpad-icon">
                                     <span>1</span><img src="/assets/default/svgs/login_pin/1.svg?ver={{$rand_no}}" alt="1">
                                 </a>
@@ -361,6 +424,7 @@
 
 @push('scripts_bottom')
     <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
     <script>
 
         $(document).on('click', '.login-back-btn', function (e) {
