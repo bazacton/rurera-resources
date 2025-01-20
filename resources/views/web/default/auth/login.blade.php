@@ -270,18 +270,20 @@
                     <div class="col-12">
                         <div class="login-password">
                             <form class="mb-10">
-                                <div class="form-group d-inline-flex align-items-start justify-content-center flex-row flex-wrap">
+                                <div class="form-group d-inline-flex align-items-center justify-content-center flex-column flex-wrap">
                                     <h2 class="text-center font-24 font-weight-bold mb-15" for="username">
                                         Enter Pin Code
                                         <span class="d-block font-16 font-weight-normal pt-5">If your teacher has given you a PIN code to access Rurera Go, enter <br> it in the form below..</span>
                                     </h2>
-                                    <input type="hidden" class="login_pin_final" value="">
-                                    <input type="text" name="pincode" class="login_pin focused_field" autocomplete="pincode" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
-                                    <input type="text" name="pincode1" class="login_pin" autocomplete="pincode1" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
-                                    <input type="text" name="pincode2" class="login_pin" autocomplete="pincode2" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
-                                    <input type="text" name="pincode3" class="login_pin" autocomplete="pincode3" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
-                                    <input type="text" name="pincode4" class="login_pin" autocomplete="pincode4" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
-                                    <input type="text" name="pincode5" class="login_pin" autocomplete="pincode5" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
+                                    <div class="password-fields">
+                                        <input type="hidden" class="login_pin_final" value="">
+                                        <input type="text" name="pincode" class="login_pin focused_field" autocomplete="pincode" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
+                                        <input type="text" name="pincode1" class="login_pin" autocomplete="pincode1" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
+                                        <input type="text" name="pincode2" class="login_pin" autocomplete="pincode2" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
+                                        <input type="text" name="pincode3" class="login_pin" autocomplete="pincode3" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
+                                        <input type="text" name="pincode4" class="login_pin" autocomplete="pincode4" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
+                                        <input type="text" name="pincode5" class="login_pin" autocomplete="pincode5" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
+                                    </div>
                                 </div>
                             </form>
                         </div>
