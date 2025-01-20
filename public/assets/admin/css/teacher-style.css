@@ -2169,6 +2169,9 @@ Tailer Hub Style Start
     left: 0;
     z-index: 5;
 }
+.admin_teacher_role:has(.question-content-header) nav.navbar.main-navbar {
+    display: none;
+}
 .question-content-header h1 {
     font-size: 16px;
     margin: 0;
