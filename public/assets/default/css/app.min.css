@@ -288,17 +288,17 @@ Front-end Login Style Start
   gap: 15px;
 }
 .login-pad-icons a {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px;
-  justify-content: center;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  flex-basis: 32%;
-  gap: 10px;
-  font-size: 24px;
-  font-weight: 700;
-  flex-direction: row-reverse;
+  display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    flex-basis: 32%;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    flex-direction: row-reverse;
 }
 .login-pad-icons a img {
   border-radius: 0;
