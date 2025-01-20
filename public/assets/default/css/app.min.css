@@ -300,6 +300,10 @@ Front-end Login Style Start
   font-weight: 900;
   color: rgb(196, 196, 196);
 }
+.login-pad-icons a:hover {
+  color: #777;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
 .login-pad-icons a img {
   border-radius: 0;
     width: 60px;
