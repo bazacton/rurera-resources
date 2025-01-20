@@ -2541,6 +2541,9 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     margin: 0 0 10px;
     line-height: normal;
 }
+.question-text br {
+    display: none;
+}
 .question-type {
     font-size: 12px;
     color: #666;
