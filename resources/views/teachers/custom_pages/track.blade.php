@@ -61,7 +61,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="quiz-data-table bg-white panel-border">
+                    <div class="quiz-data-table bg-white panel-border table-sm">
                         <table>
                             <thead>
                                 <tr>
