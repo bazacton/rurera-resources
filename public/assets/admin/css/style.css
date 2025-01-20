@@ -2878,7 +2878,13 @@ Admin Questions Generator Page Style End
     .similarity-content-block .tab-content:has(.rureraform-admin-popup.active) > .tab-pane.question-details-tab-data > .col-12 {
         display: none;
     }
-
+    .assignments-table .card {
+        box-shadow: none;
+        border: 0;
+    }
+    .assignments-table .card .card-body {
+        padding: 0 !important;
+    }
 }
 @media screen and (max-width: 767px) {
     .progress-wrapper .progress-holder {display: none;}
