@@ -4,7 +4,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></scrip>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <link rel="stylesheet" href="/assets/default/css/app.css">
-<link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/flipbook.style.css">
+<link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/flipbook.style.css?ver={{$rand_no}}">
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="/assets/vendors/flipbook/css/slide-menu.css">
 <link rel="stylesheet" type="text/css" href="/assets/admin/vendor/bootstrap/bootstrap.css">
