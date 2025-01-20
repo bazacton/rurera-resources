@@ -280,6 +280,23 @@ Front-end Login Style Start
 .login-with-emoji .login-holder,
 .login-with-pin .login-holder{max-width: 1120px; min-width: 1120px; min-height: 450px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
 .login-password .form-group input.login_pin {margin-bottom: 5px !important; padding: 0 5px; text-align: center;}
+.login-pad-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.login-pad-icons a {
+  height: 60px;
+  width: 60px;
+}
+.login-pad-icons a img {
+  border-radius: 0;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
 .login-card {padding: 0;}
 .login-card select.form-control {padding: 0 10px;}
 .social-login {border: 1px dashed #dadada; border-radius: 5px; margin: 0 0 20px; padding: 20px; display: flex; align-items: center; gap: 25px;}
