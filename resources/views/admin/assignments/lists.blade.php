@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="col-12">
-            <div class="assignments-table">
+            <div class="assignments-table table-sm">
                 <div class="card">
                     <div class="card-header bg-light">
                         <h6 class="mb-0"><span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt=""></span> Issue in Testing</h6>
