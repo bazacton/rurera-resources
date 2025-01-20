@@ -85,7 +85,8 @@ Lms Responsive Style Start
         top: 6px;
     }
     .panel-content .education-icon-box li figure,
-    .panel-content .education-icon-box li:nth-child(1) figure {
+    .panel-content .education-icon-box li:nth-child(1) figure,
+    .panel-content .education-icon-box li:nth-child(5) figure {
         width: 40px;
         height: 40px;
     }
@@ -575,6 +576,9 @@ Lms Responsive Style Start
 @media screen and (min-width: 767px) and (max-width: 992px) {
     .quiz-topbar .close-btn-holder {position: absolute; top: -40px; right: 15px;}
     .products-top-header .banner-holder {right: 215px;}
+    .panel-content .products-top-header .banner-holder {
+        margin-top: -50px;
+    }
 }
 
 @media (min-width:767px) {
