@@ -85,7 +85,8 @@ Lms Responsive Style Start
         top: 6px;
     }
     .panel-content .education-icon-box li figure,
-    .panel-content .education-icon-box li:nth-child(1) figure {
+    .panel-content .education-icon-box li:nth-child(1) figure,
+    .panel-content .education-icon-box li:nth-child(5) figure {
         width: 40px;
         height: 40px;
     }
