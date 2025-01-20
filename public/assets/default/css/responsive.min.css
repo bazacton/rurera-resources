@@ -80,6 +80,35 @@ Lms Responsive Style Start
     .products-top-header .banner-holder {
         right: 0;
     }
+    .panel-content .education-icon-box li:nth-child(4) {
+        left: 75px;
+        top: 6px;
+    }
+    .panel-content .education-icon-box li figure,
+    .panel-content .education-icon-box li:nth-child(1) figure {
+        width: 40px;
+        height: 40px;
+    }
+    .panel-content .education-icon-box li:nth-child(5) {
+        left: 36px;
+        top: 27px;
+    }
+    .panel-content .education-icon-box li:nth-child(6) {
+        left: 38px;
+        top: -17px;
+    }
+    .panel-content .education-icon-box li:nth-child(3) {
+        left: -5px;
+        top: 40px;
+    }
+    .panel-content .education-icon-box li:nth-child(2) {
+        left: 0;
+        top: 0;
+    }
+    .panel-content .education-icon-box li:nth-child(1) {
+        left: -38px;
+        top: 15px;
+    }
 }
 @media screen and (min-width: 992px) and (max-width: 1300px) {
     .stats-list ul li {border-left: 0;width: 100%;padding: 0 0 15px;margin: 0 0 15px;text-align: left;border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
