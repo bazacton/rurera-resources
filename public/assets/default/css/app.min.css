@@ -253,7 +253,7 @@ Front-end Login Style Start
 .login-holder .input-label {margin: 0 0 15px; font-size: 16px; font-weight: 500; color: #515554;}
 .login-with-pin .login-password .input-label {width: 100%;}
 .login-password .form-group {margin-bottom: 0;}
-.emoji-passwords .is_empty {background-color: #ddd; height: 25px; width: 25px; border-radius: 100%;}
+.emoji-passwords .is_empty {background-color: #ddd; height: 30px; width: 30px; border-radius: 100%;}
 .login-password form {margin-bottom: 50px;}
 .login-with-emoji form {
   border-bottom: 1px solid #ddd;
