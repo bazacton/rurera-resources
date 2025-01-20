@@ -190,7 +190,6 @@ Lms Responsive Style Start
     .top-navbar .navbar-brand {max-width: 140px; margin-left: 0 !important;}
     .top-navbar .navbar-brand .img-cover {object-fit: contain;}
     .top-navbar #navbarContent {margin-left: 10px !important; margin-right: 10px !important; width: 100%;}
-    .top-navbar .nav-icons-or-start-live {margin-left: 15px; position: absolute; right: 20px; top: 15px;}
     .navbar-nav .educator-menu {border-right: 0;}
     .navbar1 .navbar-nav {justify-content: center;}
     .mega-menu-head {padding: 20px 0;}
@@ -1350,7 +1349,8 @@ Lms Responsive Style Start
     .result-layout-summary .sats-summary [class*="col-"],
     .finish-steps .result-layout-summary .sats-summary [class*="col-"] {flex: 0 0 100%; max-width: 100%;}
     .lms-library-slider figure {text-align: center;}
-    .lms-books-listing .listing-card .text-holder ul {display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0 15px;}
+    .lms-books-listing .listing-card .text-holder ul {display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 15px;}
+    .lms-books-listing .listing-card .text-holder li {margin-bottom: 0;}
     .lms-books-listing .listing-card {text-align: center;}
     .lms-books-listing .listing-card .img-holder {margin: 0 0 20px;}
     .listing-card .read-btn, .book-btn {min-width: 206px; font-size: 16px; padding: 15px 25px;}
