@@ -245,7 +245,7 @@
                 <div class="login-holder">
                     <div class="col-12">
                         <div class="login-magic-code">
-                            <label class="input-label d-block text-left" for="username">Login with Smart Badge</label>
+                            <h2 class="text-center font-24 font-weight-bold mb-15" for="username">Login with Smart Badge</h2>
                             <p>To login with your Magic Code please hold it up to the screen and center the <br /> code inside the square.</p>
                             <div class="error-msg">
                                 <span>To login with Magic Code please allow camera access in your browser</span>
