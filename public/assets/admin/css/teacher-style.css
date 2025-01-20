@@ -3732,7 +3732,6 @@ span.field-separated span:after {
     display: none;
 }
 /* Question-Layout Question-Top-Info Style End */
-
 .listing-dropdown {
     display: flex;
     align-items: center;
@@ -3938,9 +3937,6 @@ Qustions AI Tabs Style End
     padding: 4px 15px;
     border-radius: 20px;
 }
-
-
-
 .grid-container {
     display: flex;
     flex-wrap: wrap;
@@ -4000,8 +3996,6 @@ Overview Questions Style Start
 .questions-overview .percent_text {
     margin-top: -20px;
 }
-.percent_more:after {}
-
 .overview-summary {
     margin-bottom: 30px;
 }
