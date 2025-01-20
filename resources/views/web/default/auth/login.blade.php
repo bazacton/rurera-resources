@@ -49,23 +49,23 @@
                 <div class="login-option-tabs">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="parent-tab" data-toggle="tab" data-target="#parent" type="button" role="tab" aria-controls="parent" aria-selected="true">
+                            <button class="nav-link active" id="students-tab" data-toggle="tab" data-target="#students" type="button" role="tab" aria-controls="students" aria-selected="false">
+                                <span class="icon-box"><img src="/assets/default/svgs/students-colord.svg" alt=""></span> Students
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="parent-tab" data-toggle="tab" data-target="#parent" type="button" role="tab" aria-controls="parent" aria-selected="true">
                                 <span class="icon-box"><img src="/assets/default/svgs/parent-colord.svg" alt=""></span> Parent
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="teacher-tab" data-toggle="tab" data-target="#teacher" type="button" role="tab" aria-controls="teacher" aria-selected="false">
-                                <span class="icon-box"><img src="/assets/default/svgs/teacher-colord.svg" alt=""></span> Teacher
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="students-tab" data-toggle="tab" data-target="#students" type="button" role="tab" aria-controls="students" aria-selected="false">
-                                <span class="icon-box"><img src="/assets/default/svgs/students-colord.svg" alt=""></span> Students
+                                <span class="icon-box"><img src="/assets/default/svgs/teacher-colord.svg" alt=""></span> Educator
                             </button>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="parent" role="tabpanel" aria-labelledby="parent-tab">
+                        <div class="tab-pane fade" id="parent" role="tabpanel" aria-labelledby="parent-tab">
                             <div class="login-holder">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
@@ -205,7 +205,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="students" role="tabpanel" aria-labelledby="students-tab">
+                        <div class="tab-pane fade show active" id="students" role="tabpanel" aria-labelledby="students-tab">
                             <div class="login-holder">
                                 <div class="row">
                                     <div class="col-12 col-md-12">
