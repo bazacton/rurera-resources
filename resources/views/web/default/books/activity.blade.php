@@ -49,7 +49,7 @@
                                 </div>
                                 <div class="badge-btn text-right" style="width: 52%;">
                                     @foreach( $bookPageInfoLinkData as $bookPageInfoLinkObj)
-										@php @info_link_icon = ($bookPageInfoLinkObj->info_type == 'map')? 'map.svg' : $bookPageInfoLinkObj->info_type.'.png'; @endphp
+										@php $info_link_icon = ($bookPageInfoLinkObj->info_type == 'map')? 'map.svg' : $bookPageInfoLinkObj->info_type.'.png'; @endphp
                                        <img src="/assets/default/img/book-icons/{{$info_link_icon}}">
                                    @endforeach
                                 </div>
