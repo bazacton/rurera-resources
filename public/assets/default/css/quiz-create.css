@@ -1154,7 +1154,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {
     margin-top: 10px;
 }
 .correct-answers-block {
-    margin: 0 0 15px;
+    margin: 10px 0 15px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
