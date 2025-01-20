@@ -2515,9 +2515,6 @@ Flip Book Custom Style End
     cursor: pointer;
 }
 @media screen and (max-width: 575px) {
-    .flipbook-bookLayer {
-        height: 100%;
-    }
     body .book .flipbook-data {
         transform: scale(1);
     }
