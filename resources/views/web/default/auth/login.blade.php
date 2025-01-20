@@ -4,28 +4,28 @@
     <script>window.opener.postMessage('You already have an account with us. Please <a href="/login">Login</a> to access.', window.location.origin);window.close();</script>
 @endif
 @push('styles_top')
-<style>
-    body{background-color: #fafafa !important;}
-    .login_pin {
-        border: 1px solid #ddd;
-        max-width: 50px;
-        width: auto;
-        display: inline-block;
-        margin: 0 5px;
-        border-radius: 2px;
-        letter-spacing: 1px;
-        font-family: auto;
-    }
+    <style>
+        body{background-color: #fafafa !important;}
+        .login_pin {
+            border: 1px solid #ddd;
+            max-width: 50px;
+            width: auto;
+            display: inline-block;
+            margin: 0 5px;
+            border-radius: 2px;
+            letter-spacing: 1px;
+            font-family: auto;
+        }
 
-    .login_pin::-webkit-credentials-auto-fill-button {
-        visibility: hidden;
-        display: none;
-    }
+        .login_pin::-webkit-credentials-auto-fill-button {
+            visibility: hidden;
+            display: none;
+        }
 
-    .login_pin:-webkit-autofill {
-        -webkit-text-security: disc;
-    }
-</style>
+        .login_pin:-webkit-autofill {
+            -webkit-text-security: disc;
+        }
+    </style>
 @endpush
 @section('content')
     <div class="container d-flex flex-column justify-content-center align-items-center">
@@ -65,19 +65,51 @@
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
+
+                        <div class="tab-pane fade show active" id="students" role="tabpanel" aria-labelledby="students-tab">
+                            <div class="login-holder">
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <h1 class="font-24 font-weight-bold">Log in to student account</h1>
+                                        <div class="login-options">
+                                            <!-- <div class="text-center mt-20">
+                                                <span class="badge badge-circle-gray300 text-secondary d-inline-flex align-items-center justify-content-center">{{ trans('auth.or') }}</span>
+                                            </div> -->
+                                            <a href="javascript:;" class="rurera-login-opt social-login" data-login_type="login-with-smartbadge">
+                                                <img src="/store/1/default_images/qr-code.png" alt="login">
+                                                <span>Login with Smart Badge</span>
+                                            </a>
+
+                                            <a href="javascript:;" class="rurera-login-opt social-login" data-login_type="login-with-emoji">
+                                                <img src="/store/1/default_images/emoji.png" alt="login">
+                                                <span>Login with Emoji</span>
+                                            </a>
+
+                                            <a href="javascript:;" class="rurera-login-opt social-login" data-login_type="login-with-pin">
+                                                <img src="/store/1/default_images/password_field.svg" alt="#">
+                                                <span>Login with 6 - digit Pin</span>
+                                            </a>
+                                            <a href="javascript:;" class="rurera-login-opt social-login">
+                                                <img src="/store/1/default_images/Wonde-Logo.svg" alt="#"> <span class="coming-soon">Coming Soon</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="tab-pane fade" id="parent" role="tabpanel" aria-labelledby="parent-tab">
                             <div class="login-holder">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <div class="login-card">
 
-                                            <h1 class="font-24 font-weight-bold">{{ trans('auth.login_h1') }}</h1>
+                                            <h1 class="font-24 font-weight-bold">Log in to parent account</h1>
                                             <form method="Post" action="/login" class="mt-20">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                                 <div class="form-group">
                                                     <label class="input-label" for="username">Username:</label>
                                                     <input name="username" type="text" class="form-control @error('username') is-invalid @enderror" id="username"
-                                                        value="{{ old('username') }}" aria-describedby="emailHelp">
+                                                           value="{{ old('username') }}" aria-describedby="emailHelp">
                                                     @error('username')
                                                     <div class="invalid-feedback">
                                                         {{ $message }}
@@ -141,13 +173,13 @@
                                     <div class="col-12 col-md-6">
                                         <div class="login-card">
 
-                                            <h1 class="font-24 font-weight-bold">{{ trans('auth.login_h1') }}</h1>
+                                            <h1 class="font-24 font-weight-bold">Log in to educator account</h1>
                                             <form method="Post" action="/login" class="mt-20">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                                 <div class="form-group">
                                                     <label class="input-label" for="username">Username:</label>
                                                     <input name="username" type="text" class="form-control @error('username') is-invalid @enderror" id="username"
-                                                        value="{{ old('username') }}" aria-describedby="emailHelp">
+                                                           value="{{ old('username') }}" aria-describedby="emailHelp">
                                                     @error('username')
                                                     <div class="invalid-feedback">
                                                         {{ $message }}
@@ -200,36 +232,6 @@
                                                 <span>Don't have an account?</span>
                                                 <a href="/register-as" class="signup-btn">Sign Up</a>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade show active" id="students" role="tabpanel" aria-labelledby="students-tab">
-                            <div class="login-holder">
-                                <div class="row">
-                                    <div class="col-12 col-md-12">
-                                        <div class="login-options">
-                                            <!-- <div class="text-center mt-20">
-                                                <span class="badge badge-circle-gray300 text-secondary d-inline-flex align-items-center justify-content-center">{{ trans('auth.or') }}</span>
-                                            </div> -->
-                                            <a href="javascript:;" class="rurera-login-opt social-login" data-login_type="login-with-smartbadge">
-                                                <img src="/store/1/default_images/qr-code.png" alt="login">
-                                                <span>Login with Smart Badge</span>
-                                            </a>
-
-                                            <a href="javascript:;" class="rurera-login-opt social-login" data-login_type="login-with-emoji">
-                                                <img src="/store/1/default_images/emoji.png" alt="login">
-                                                <span>Login with Emoji</span>
-                                            </a>
-                                            
-                                            <a href="javascript:;" class="rurera-login-opt social-login" data-login_type="login-with-pin">
-                                                <img src="/store/1/default_images/password_field.svg" alt="#">
-                                                <span>Login with 6 - digit Pin</span>
-                                            </a>
-                                            <a href="javascript:;" class="rurera-login-opt social-login">
-                                                <img src="/store/1/default_images/Wonde-Logo.svg" alt="#"> <span class="coming-soon">Coming Soon</span>
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -324,186 +326,186 @@
 @endsection
 
 @push('scripts_bottom')
-<script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
-<script>
+    <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
+    <script>
 
-    $(document).on('click', '.login-back-btn', function (e) {
-        $(".login-opt-type").addClass('rurera-hide');
-        $(".rurera-login-opt-block").removeClass('rurera-hide')
-    });
-
-    $(document).on('click', '.rurera-login-opt', function (e) {
-        $(".rurera-login-opt-block").addClass('rurera-hide');
-        $(".login-opt-type").addClass('rurera-hide');
-        var login_type = $(this).attr('data-login_type');
-        $("."+login_type).removeClass('rurera-hide');
-        if(login_type == 'login-with-pin') {
-            $(".focused_field").focus();
-        }
-
-    });
-    var loginSubmitRequest = null;
-
-    $(document).on('keyup change', '.login_pin_final', function (e) {
-
-        var thisObj = $(this);
-        var login_pin_final = $(this).val();
-        var total_pin_count = $(this).val().length;
-        if(total_pin_count == 6){
-            rurera_loader($(".login-with-pin"), 'div');
-            loginSubmitRequest = jQuery.ajax({
-               type: "POST",
-               url: '/login_pin',
-                beforeSend: function () {
-                    if (loginSubmitRequest != null) {
-                        loginSubmitRequest.abort();
-                    }
-                },
-               headers: {
-                   'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-               },
-               data: {'login_pin':login_pin_final},
-               success: function (return_data) {
-                   if( return_data == 'loggedin'){
-                       window.location.href = '/panel';
-                   }else{
-                       thisObj.val('');
-                       rurera_remove_loader($(".login-with-pin"), 'div');
-                       $(".login_pin").val('');
-                       $(".focused_field").focus();
-                       Swal.fire({
-                           icon: 'error',
-                           html: '<h3 class="font-20 text-center text-dark-blue py-25">Incorrect Pin</h3>',
-                           showConfirmButton: !1
-                       });
-                   }
-               }
-           });
-        }
-    });
-
-
-
-
-
-    $(document).on('dblclick', '.emoji-passwords span', function (e) {
-        $(this).attr('data-emoji_id','');
-        $(this).html('');
-        $(this).addClass('is_empty');
-        $(".emoji-passwords span").removeClass('active');
-        $(this).addClass('active');
-        $(this).nextAll('span').html('');
-        $(this).nextAll('span').addClass('is_empty');
-        $(this).nextAll('span').attr('data-emoji_id','');
-        var password_field_value = '';
-        $(".emoji-passwords span").each(function () {
-            password_field_value += $(this).attr('data-emoji_id');
+        $(document).on('click', '.login-back-btn', function (e) {
+            $(".login-opt-type").addClass('rurera-hide');
+            $(".rurera-login-opt-block").removeClass('rurera-hide')
         });
-        $(".emoji-password-field").val(password_field_value);
-    });
 
-    $(document).on('click', '.emoji-icon', function (e) {
-        var current_pass = $(".emoji-passwords span.active");
-        var current_val = $(this).attr('id');
-        var password_value = $(".emoji-password-field").val();
-        $(".emoji-password-field").val(password_value+current_val);
-        current_pass.removeClass('is_empty');
-        current_pass.html($(this).html());
-        current_pass.attr('data-emoji_id', current_val);
-        current_pass.removeClass('active');
-        current_pass.next('span').addClass('active');
-        if( current_pass.next('span').length == 0){
-            rurera_loader($(".login-with-emoji"), 'div');
-            var login_emoji = $(".emoji-password-field").val();
+        $(document).on('click', '.rurera-login-opt', function (e) {
+            $(".rurera-login-opt-block").addClass('rurera-hide');
+            $(".login-opt-type").addClass('rurera-hide');
+            var login_type = $(this).attr('data-login_type');
+            $("."+login_type).removeClass('rurera-hide');
+            if(login_type == 'login-with-pin') {
+                $(".focused_field").focus();
+            }
 
-            loginSubmitRequest = jQuery.ajax({
-               type: "POST",
-               url: '/login_emoji',
-                beforeSend: function () {
-                    if (loginSubmitRequest != null) {
-                        loginSubmitRequest.abort();
+        });
+        var loginSubmitRequest = null;
+
+        $(document).on('keyup change', '.login_pin_final', function (e) {
+
+            var thisObj = $(this);
+            var login_pin_final = $(this).val();
+            var total_pin_count = $(this).val().length;
+            if(total_pin_count == 6){
+                rurera_loader($(".login-with-pin"), 'div');
+                loginSubmitRequest = jQuery.ajax({
+                    type: "POST",
+                    url: '/login_pin',
+                    beforeSend: function () {
+                        if (loginSubmitRequest != null) {
+                            loginSubmitRequest.abort();
+                        }
+                    },
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: {'login_pin':login_pin_final},
+                    success: function (return_data) {
+                        if( return_data == 'loggedin'){
+                            window.location.href = '/panel';
+                        }else{
+                            thisObj.val('');
+                            rurera_remove_loader($(".login-with-pin"), 'div');
+                            $(".login_pin").val('');
+                            $(".focused_field").focus();
+                            Swal.fire({
+                                icon: 'error',
+                                html: '<h3 class="font-20 text-center text-dark-blue py-25">Incorrect Pin</h3>',
+                                showConfirmButton: !1
+                            });
+                        }
                     }
-                },
-               headers: {
-                   'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-               },
-               data: {'login_emoji':login_emoji},
-               success: function (return_data) {
-                   if( return_data == 'loggedin'){
-                       window.location.href = '/panel';
-                   }else{
-                       $(".emoji-password-field").val('');
-                       $(".emoji-passwords span").addClass('is_empty');
-                       $(".emoji-passwords span:first").addClass('active');
-                       $(".emoji-passwords span").html('');
-                       rurera_remove_loader($(".login-with-emoji"), 'div');
-                       $(".login_pin").val('');
-                       Swal.fire({
-                           icon: 'error',
-                           html: '<h3 class="font-20 text-center text-dark-blue py-25">Incorrect Emojis</h3>',
-                           showConfirmButton: !1
-                       });
-                   }
-               }
-           });
-
-        }
-
-    });
-    $(document).on('input keydown paste', ".login_pin", function (event) {
-        var keyCode = event.keyCode || event.which;
-        if (!((keyCode >= 48 && keyCode <= 57) || // Allow numeric keys
-              (keyCode >= 96 && keyCode <= 105) || // Allow numpad keys
-              keyCode == 8 || // Allow backspace
-              keyCode == 46 || // Allow delete
-              (keyCode >= 37 && keyCode <= 40))) { // Allow arrow keys
-            event.preventDefault();
-        }
-        var $this = $(this);
-        var value = $this.val();
-
-        if (event.type === 'paste') {
-            event.preventDefault(); // Prevent default paste behavior
-
-            // Get the pasted text
-            var pastedText = (event.originalEvent || event).clipboardData.getData('text');
-
-            // Split the pasted text into individual characters
-            var characters = pastedText.split('');
-
-            // Distribute each character into successive input fields
-            characters.forEach(function(char) {
-                $this.val(char);
-                $this = $this.next('.login_pin');
-            });
-
-            // Ensure focus is on the last input field
-            $this.focus();
-        } else if ((event.type === 'input' || event.type === 'keydown') && value.length === 1) {
-            $this.next('.login_pin').focus();
-        } else if (event.type === 'keydown' && event.which === 8 && value === "") {
-            $this.prev('.login_pin').focus();
-        }
-
-
-        allFilled = true;
-        var login_pin_code = '';
-        $(".login_pin").each(function(){
-            login_pin_code += $(this).val();
-            if($(this).val() === ''){
-                allFilled = false;
-                return false;
+                });
             }
         });
-        if(allFilled){
-            $(".login_pin_final").val(login_pin_code);
-            $(".login_pin_final").change();
-        }
-    });
-    function sendResponseToParent() {
+
+
+
+
+
+        $(document).on('dblclick', '.emoji-passwords span', function (e) {
+            $(this).attr('data-emoji_id','');
+            $(this).html('');
+            $(this).addClass('is_empty');
+            $(".emoji-passwords span").removeClass('active');
+            $(this).addClass('active');
+            $(this).nextAll('span').html('');
+            $(this).nextAll('span').addClass('is_empty');
+            $(this).nextAll('span').attr('data-emoji_id','');
+            var password_field_value = '';
+            $(".emoji-passwords span").each(function () {
+                password_field_value += $(this).attr('data-emoji_id');
+            });
+            $(".emoji-password-field").val(password_field_value);
+        });
+
+        $(document).on('click', '.emoji-icon', function (e) {
+            var current_pass = $(".emoji-passwords span.active");
+            var current_val = $(this).attr('id');
+            var password_value = $(".emoji-password-field").val();
+            $(".emoji-password-field").val(password_value+current_val);
+            current_pass.removeClass('is_empty');
+            current_pass.html($(this).html());
+            current_pass.attr('data-emoji_id', current_val);
+            current_pass.removeClass('active');
+            current_pass.next('span').addClass('active');
+            if( current_pass.next('span').length == 0){
+                rurera_loader($(".login-with-emoji"), 'div');
+                var login_emoji = $(".emoji-password-field").val();
+
+                loginSubmitRequest = jQuery.ajax({
+                    type: "POST",
+                    url: '/login_emoji',
+                    beforeSend: function () {
+                        if (loginSubmitRequest != null) {
+                            loginSubmitRequest.abort();
+                        }
+                    },
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: {'login_emoji':login_emoji},
+                    success: function (return_data) {
+                        if( return_data == 'loggedin'){
+                            window.location.href = '/panel';
+                        }else{
+                            $(".emoji-password-field").val('');
+                            $(".emoji-passwords span").addClass('is_empty');
+                            $(".emoji-passwords span:first").addClass('active');
+                            $(".emoji-passwords span").html('');
+                            rurera_remove_loader($(".login-with-emoji"), 'div');
+                            $(".login_pin").val('');
+                            Swal.fire({
+                                icon: 'error',
+                                html: '<h3 class="font-20 text-center text-dark-blue py-25">Incorrect Emojis</h3>',
+                                showConfirmButton: !1
+                            });
+                        }
+                    }
+                });
+
+            }
+
+        });
+        $(document).on('input keydown paste', ".login_pin", function (event) {
+            var keyCode = event.keyCode || event.which;
+            if (!((keyCode >= 48 && keyCode <= 57) || // Allow numeric keys
+                (keyCode >= 96 && keyCode <= 105) || // Allow numpad keys
+                keyCode == 8 || // Allow backspace
+                keyCode == 46 || // Allow delete
+                (keyCode >= 37 && keyCode <= 40))) { // Allow arrow keys
+                event.preventDefault();
+            }
+            var $this = $(this);
+            var value = $this.val();
+
+            if (event.type === 'paste') {
+                event.preventDefault(); // Prevent default paste behavior
+
+                // Get the pasted text
+                var pastedText = (event.originalEvent || event).clipboardData.getData('text');
+
+                // Split the pasted text into individual characters
+                var characters = pastedText.split('');
+
+                // Distribute each character into successive input fields
+                characters.forEach(function(char) {
+                    $this.val(char);
+                    $this = $this.next('.login_pin');
+                });
+
+                // Ensure focus is on the last input field
+                $this.focus();
+            } else if ((event.type === 'input' || event.type === 'keydown') && value.length === 1) {
+                $this.next('.login_pin').focus();
+            } else if (event.type === 'keydown' && event.which === 8 && value === "") {
+                $this.prev('.login_pin').focus();
+            }
+
+
+            allFilled = true;
+            var login_pin_code = '';
+            $(".login_pin").each(function(){
+                login_pin_code += $(this).val();
+                if($(this).val() === ''){
+                    allFilled = false;
+                    return false;
+                }
+            });
+            if(allFilled){
+                $(".login_pin_final").val(login_pin_code);
+                $(".login_pin_final").change();
+            }
+        });
+        function sendResponseToParent() {
             // Access the parent window and post a message
             window.opener.postMessage("Response from popup", window.location.origin);
         }
 
-</script>
+    </script>
 @endpush
