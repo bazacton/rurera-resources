@@ -2524,10 +2524,5 @@ Flip Book Custom Style End
     .flipbook-page3-inner img {
         width: 100%;
     }
-    .flipbook-center-container3,
-    .flipbook-page3-back, .flipbook-book3,
-    .flipbook-page3-front {
-        width: 100% !important;
-        transform: none !important;
-    }
+    
 }
