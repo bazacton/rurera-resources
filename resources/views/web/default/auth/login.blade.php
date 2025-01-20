@@ -70,7 +70,7 @@
                             <div class="login-holder">
                                 <div class="row">
                                     <div class="col-12 col-md-12">
-                                        <h1 class="font-24 font-weight-bold">Log in to student account</h1>
+                                        <h1 class="font-24 font-weight-bold mb-15">Log in to student account</h1>
                                         <div class="login-options">
                                             <!-- <div class="text-center mt-20">
                                                 <span class="badge badge-circle-gray300 text-secondary d-inline-flex align-items-center justify-content-center">{{ trans('auth.or') }}</span>
