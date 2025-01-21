@@ -2524,5 +2524,10 @@ Flip Book Custom Style End
     .flipbook-book3 {
         transform: none !important;
     }
+    body .flipbook-data {
+        height: 100%;
+        margin-top: 0;
+        width: 72%;
+    }
     
 }
