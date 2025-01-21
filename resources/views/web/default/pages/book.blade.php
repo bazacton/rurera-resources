@@ -13,7 +13,6 @@
 <script src="/assets/default/js/book.js?ver={{$random_id}}"></script>
 <script src="/assets/default/js/question-layout.js?ver={{$random_id}}"></script>
 <meta name="csrf-token" content="{{ csrf_token() }}">
-<meta name="viewport">
 <style>
     .page-content-area{
         position: absolute;
