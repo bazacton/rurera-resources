@@ -579,25 +579,4 @@
 
 
 </script>
-<script>
-const flipbook = document.querySelector('.flipbook-main-wrapper');
-const book = document.querySelector('.flipbook-book3');
-
-function resizeFlipbook() {
-    const viewportHeight = window.innerHeight;
-    const bookHeight = book.offsetHeight;
-    const scale = viewportHeight / bookHeight;
-
-    book.style.transform = `scale(${scale}) translate(-50%, -50%)`;
-    book.style.transformOrigin = 'center center';
-}
-
-window.addEventListener('resize', resizeFlipbook);
-resizeFlipbook();
-$('.book').turn({
-    width: '100%',
-    height: '100%',
-    autoCenter: true,
-});
-</script>
 <img src="/assets/default/img/icons/sidebar/dashboard.svg" onload="startTimer()" onbeforeunload="stopTimer()" style="display:none;">
