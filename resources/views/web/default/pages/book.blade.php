@@ -13,7 +13,7 @@
 <script src="/assets/default/js/book.js?ver={{$random_id}}"></script>
 <script src="/assets/default/js/question-layout.js?ver={{$random_id}}"></script>
 <meta name="csrf-token" content="{{ csrf_token() }}">
-<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+<meta name="viewport">
 <style>
     .page-content-area{
         position: absolute;
