@@ -2521,7 +2521,7 @@ Flip Book Custom Style End
     .flipbook-page3:has(.flipbook-data) .flipbook-page3-bg {
         display: none;
     }
-    .flipbook-book3 {
+    body .book {
         transform: none !important;
     }
     body .flipbook-data {
