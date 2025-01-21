@@ -2518,5 +2518,11 @@ Flip Book Custom Style End
     body .book .flipbook-data {
         transform: scale(1);
     }
+    .flipbook-page3:has(.flipbook-data) .flipbook-page3-bg {
+        display: none;
+    }
+    .flipbook-book3 {
+        transform: none !important;
+    }
     
 }
