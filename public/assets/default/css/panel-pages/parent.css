@@ -179,22 +179,8 @@ Assignments Table Style Start
 .db-form-tabs .rurera-tables-list a.dropdown-toggle .icon-box {height: auto; width: auto; background-color: inherit;}
 .rurera-tables-list .dropdown:hover .dropdown-menu {opacity: 0; visibility: hidden; margin: 0;}
 .rurera-tables-list .dropdown-menu.show,
-.rurera-tables-list .dropdown.show:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    top: 100% !important;
-}
-.db-form-tabs .rurera-tables-list .dropdown-menu {
-    min-width: 120px;
-    margin: 0;
-    transition: none;
-    padding: 10px;
-    border-radius: 5px;
-    left: auto !important;
-    right: 0;
-    transform: none !important;
-}
-
+.rurera-tables-list .dropdown.show:hover .dropdown-menu {opacity: 1; visibility: visible; top: 100% !important;}
+.db-form-tabs .rurera-tables-list .dropdown-menu {min-width: 120px; margin: 0; transition: none; padding: 10px; border-radius: 5px; left: auto !important; right: 0; transform: none !important;}
 .member-card-header .btn img {width: 22px; height: 22px;}
 .db-members .card .list-group-item:nth-child(even) {background-color: #fff;}
 .billing-card .list-group-item {padding: 0;}
@@ -211,27 +197,12 @@ Assignments Table Style Start
 .member-card-header .db-members .profile-dropdown a:after {display: none;}
 .member-card-header .db-members .profile-dropdown > a {position: relative; padding-right: 35px;}
 .member-card-header .db-members .profile-dropdown > a:before {content: ""; position: absolute; border: 2px solid var(--primary); height: 8px; width: 8px; border-top: 0; border-left: 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); top: 50%; margin-top: -5px; right: 18px;}
-.member-card-header .db-members .profile-dropdown:hover > a:before {-webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-.member-card-header .db-members .profile-dropdown:hover ul {
-    margin-top: 0;
-}
-.member-card-header h2 {
-    color: var(--primary);
-}
+.member-card-header .db-members .profile-dropdown:hover > a:before {-webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
+.member-card-header .db-members .profile-dropdown:hover ul {margin-top: 0;}
+.member-card-header h2 {color: var(--primary);}
 .member-card-header .dropdown .btn,
-.member-card-header .db-members .profile-dropdown > a {
-    margin-left: 15px;
-    color: var(--primary);
-    height: auto;
-    font-weight: 500;
-}
-.member-card-header .dropdown .btn img {
-    filter: invert(44%) sepia(99%) saturate(269%) hue-rotate(190deg) brightness(90%) contrast(93%);
-    margin-right: 8px;
-}
+.member-card-header .db-members .profile-dropdown > a {margin-left: 15px; color: var(--primary); height: auto; font-weight: 500;}
+.member-card-header .dropdown .btn img {filter: invert(44%) sepia(99%) saturate(269%) hue-rotate(190deg) brightness(90%) contrast(93%); margin-right: 8px;}
 /*Dashboard members list style start*/
 .dashboard-students-holder {
     background-color: #fff;
