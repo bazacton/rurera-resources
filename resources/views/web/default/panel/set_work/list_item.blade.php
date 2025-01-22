@@ -12,10 +12,10 @@
                         <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="/panel/set-work/{{$assignmentObj->id}}/progress" class="detail-btn">Details</a>
+                        <a href="/panel/set-work/{{$assignmentObj->id}}/progress" class="detail-btn"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple"> Details</a>
                         @php $completed_count = $assignmentObj->students->where('status', 'completed')->count(); @endphp
                         @if( $completed_count == 0 && $assignmentObj->status == 'active')
-                        <a href="javascript:;" data-confirm-type="link" data-confirm-action="/panel/set-work/{{$assignmentObj->id}}/remove" class="remove-btn confirm-delete"><img src="/assets/default/svgs/delete-menu.svg"></a>
+                        <a href="javascript:;" data-confirm-type="link" data-confirm-action="/panel/set-work/{{$assignmentObj->id}}/remove" class="remove-btn confirm-delete"><img src="/assets/default/svgs/delete-menu.svg"> Delete</a>
                         @endif
                     </div>
                 </div>
@@ -53,10 +53,10 @@
                         <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="/panel/set-work/{{$assignmentObj->id}}/progress" class="detail-btn">Details</a>
+                        <a href="/panel/set-work/{{$assignmentObj->id}}/progress" class="detail-btn"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple"> Details</a>
                         @php $completed_count = $assignmentObj->students->where('status', 'completed')->count(); @endphp
                         @if( $completed_count == 0 && $assignmentObj->status == 'active')
-                        <a href="javascript:;" data-confirm-type="link" data-confirm-action="/panel/set-work/{{$assignmentObj->id}}/remove" class="remove-btn confirm-delete"><img src="/assets/default/svgs/delete-menu.svg"></a>
+                        <a href="javascript:;" data-confirm-type="link" data-confirm-action="/panel/set-work/{{$assignmentObj->id}}/remove" class="remove-btn confirm-delete"><img src="/assets/default/svgs/delete-menu.svg"> Delete</a>
                         @endif
                     </div>
                 </div>
