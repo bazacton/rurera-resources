@@ -497,6 +497,7 @@ a.last-activity span strong {color: #343434;}
     align-items: center;
     justify-content: center;
     vertical-align: middle;
+    color: #d55555;
 }
 .db-form-tabs .list-group-item .remove-btn img,
 .action-activity .remove-btn img {max-height: 15px;max-width: 15px;min-height: 15px;min-width: 15px;filter: invert(46%) sepia(74%) saturate(4289%) hue-rotate(328deg) brightness(89%) contrast(90%);}
