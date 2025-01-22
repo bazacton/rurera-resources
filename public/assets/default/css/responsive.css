@@ -927,14 +927,8 @@ Lms Responsive Style Start
     .db-members .card .list-group-item .col-auto:first-child.col-lg-2 {flex: 0 0 100%; max-width: 100%;}
     .db-members .card .list-group-item [class*="col-"].action-activity {display: none;}
     .wizard-steps .radio-buttons {justify-content: flex-start !important;}
-    .member-card-header {
-        border: 1px solid #ddd;
-        border-bottom: 0;
-    }
-    .dashboard-students-holder {
-        border: 0;
-        background-color: inherit;
-    }
+    .member-card-header {border: 1px solid #ddd; border-bottom: 0;}
+    .dashboard-students-holder {border: 0; background-color: inherit;}
     .db-form-tabs h6,
     .db-form-tabs .list-group-item h6 span {font-weight: 500 !important;}
     .db-members .last-activity span {text-align: right;}
