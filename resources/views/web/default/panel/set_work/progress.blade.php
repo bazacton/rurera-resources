@@ -180,7 +180,7 @@ $QuestionsAttemptController = new QuestionsAttemptController();
 @endpush
 
 @section('content')
-<section class="panel-border bg-white rounded-sm px-25 pt-25">
+<section class="panel-border bg-white rounded-sm px-25 pt-25 mb-15">
     <div class="form-group">
         <div class="row">
             <div class="col-12 col-lg-3">
