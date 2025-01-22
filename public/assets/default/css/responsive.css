@@ -1125,12 +1125,7 @@ Lms Responsive Style Start
     div#profile-image-modal {padding-right: 0 !important;}
     .dashboard-students-holder .d-flex {flex-wrap: wrap;}
     .member-card-header {margin-bottom: 0 !important;}
-    .db-members .rurera-tabs-frontend {
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-bottom: 0;
-        padding-top: 10px;
-    }
+    .db-members .rurera-tabs-frontend {background-color: #fff; border: 1px solid #ddd; border-bottom: 0; padding-top: 10px;}
     .categories-card.medium {padding-left: 0; padding-right: 0;}
     .categories-card.medium .categories-text {padding-left: 15px;}
     .categories-card.medium .learning-btn {position: inherit; transform: none; text-align: left; display: block; margin: 0 0 5px;}
