@@ -267,6 +267,8 @@ Assignments Table Style Start
     color: #64748b;
     display: inline-block;
     vertical-align: middle;
+    width: 100%;
+    margin: 0 0 8px;
 }
 .db-members .card .list-group-item .detail-btn img {
     min-height: 15px;
