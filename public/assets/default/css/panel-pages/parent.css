@@ -251,6 +251,7 @@ Assignments Table Style Start
 /*Dashboard members list style start*/
 .dashboard-students-holder {
     background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 10px;
 }
 .dashboard-students-holder .db-form-tabs {margin-bottom: 0;}
