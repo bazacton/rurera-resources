@@ -201,7 +201,7 @@ Assignments Table Style Start
     top: 100% !important;
 }
 .db-form-tabs .rurera-tables-list .dropdown-menu {
-    min-width: 160px;
+    min-width: 120px;
     margin: 0;
     transition: none;
     padding: 10px;
