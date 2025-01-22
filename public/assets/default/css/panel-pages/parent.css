@@ -222,7 +222,7 @@ Assignments Table Style Start
 .db-members .card .column-2 .list-group-item {max-width: 47.5%; width: 47.5%; margin-left: 15px;}
 .dashboard .lms-jobs-form {border: 0; }
 .panel-content .dashboard .lms-jobs-form .input-field:before {display: none;}
-.member-card-header {padding:30px !important; border-bottom: 1px solid #ddd; margin-bottom: 30px; background-color: #fff; border-radius: 10px 10px 0 0;}
+.member-card-header {padding:30px !important; border: 1px solid #ddd; margin-bottom: 30px; background-color: #fff; border-radius: 10px 10px 0 0;}
 .member-card-header .dropdown {margin-left: auto;}
 .member-card-header .db-members .profile-dropdown a:after {display: none;}
 .member-card-header .db-members .profile-dropdown > a {position: relative; padding-right: 35px;}
@@ -251,7 +251,6 @@ Assignments Table Style Start
 /*Dashboard members list style start*/
 .dashboard-students-holder {
     background-color: #fff;
-    border: 1px solid #ddd;
     border-radius: 10px;
 }
 .dashboard-students-holder .db-form-tabs {margin-bottom: 0;}
