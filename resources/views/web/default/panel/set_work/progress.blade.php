@@ -286,7 +286,7 @@ $QuestionsAttemptController = new QuestionsAttemptController();
                                 <div class="table-responsive">
                                     <table class="table table-striped font-16">
                                         <tr>
-                                            <th class="text-center">Student</th>
+                                            <th class="text-left">Student</th>
                                             <th class="text-center">Attempts</th>
                                             <th class="text-center">Last Activity</th>
                                         </tr>
