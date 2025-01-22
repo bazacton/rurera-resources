@@ -189,8 +189,13 @@ Assignments Table Style Start
     width: auto;
     background-color: inherit;
 }
-.action-activity .dropdown:hover .dropdown-menu {opacity: 0;visibility: hidden;margin: 0;}
-.action-activity .dropdown-menu.show {
+.action-activity .dropdown:hover .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    margin: 0;
+}
+.action-activity .dropdown-menu.show,
+.action-activity .dropdown.show:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
     top: 100% !important;
