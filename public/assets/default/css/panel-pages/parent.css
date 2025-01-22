@@ -265,10 +265,11 @@ Assignments Table Style Start
     border: 0;
     border-radius: 3px;
     color: #64748b;
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
     width: 100%;
-    margin: 0 0 8px;
+    margin: 0 0 8px 0;
+    align-items: center;
+    gap: 5px;
 }
 .db-members .card .list-group-item .detail-btn img {
     min-height: 15px;
@@ -491,15 +492,13 @@ a.last-activity span strong {color: #343434;}
 .book-form .tests-list li img.google-icon,
 .lms-choose-membership .social-login img.google-icon {height: 30px; width: 30px; margin-bottom: -10px; }
 .action-activity .remove-btn {
-    text-align: center;
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    vertical-align: middle;
     color: #d55555;
+    gap: 8px;
 }
 .db-form-tabs .list-group-item .remove-btn img,
-.action-activity .remove-btn img {max-height: 15px;max-width: 15px;min-height: 15px;min-width: 15px; margin-right: 5px; filter: invert(46%) sepia(74%) saturate(4289%) hue-rotate(328deg) brightness(89%) contrast(90%);}
+.action-activity .remove-btn img {max-height: 15px;max-width: 15px;min-height: 15px;min-width: 15px;filter: invert(46%) sepia(74%) saturate(4289%) hue-rotate(328deg) brightness(89%) contrast(90%);}
 .gallery-slider {position: relative; }
 .gallery-slider ul {padding: 5px; }
 .gallery-slider li {display: inline-block; vertical-align: top; width: 8.333%; padding: 5px; }
