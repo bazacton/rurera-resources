@@ -1160,6 +1160,7 @@ Lms Responsive Style Start
         text-align: center;
         padding-right: 0 !important;
     }
+    .wizard-steps-heading h3.font-24 {font-size: 1.5rem !important;}
 }
 
 @media screen and (max-width: 640px) {
