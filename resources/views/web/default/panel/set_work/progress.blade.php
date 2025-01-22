@@ -279,7 +279,7 @@ $QuestionsAttemptController = new QuestionsAttemptController();
             <div class="row g-3 list-unstyled">
                 <div class="col-12">
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body pt-15">
                             <div class="list-group list-group-custom list-group-flush mb-0 totalChilds"
                                  data-childs="12">
 
