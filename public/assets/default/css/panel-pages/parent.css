@@ -189,6 +189,12 @@ Assignments Table Style Start
     width: auto;
     background-color: inherit;
 }
+.action-activity .dropdown:hover .dropdown-menu {opacity: 0;visibility: hidden;margin: 0;}
+.action-activity .dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    top: 100% !important;
+}
 .member-card-header .btn img {width: 22px; height: 22px;}
 .db-members .card .list-group-item:nth-child(even) {background-color: #fff;}
 .billing-card .list-group-item {padding: 0;}
