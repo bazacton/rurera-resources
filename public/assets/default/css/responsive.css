@@ -1472,7 +1472,9 @@ Lms Responsive Style Start
     .login-option-tabs .nav-tabs button {
         padding: 8px 5px;
         font-size: 13px;
-        gap: 5px;}
+        gap: 5px;
+    }
+    .login-container .rurera-login-opt-block {padding: 0;}
     .login-option-tabs .nav-tabs button img {height: 15px; width: 15px;}
     .login-holder .login-options .social-login {max-width: 100%; flex: 0 0 100%;}
     .analytics-dropdown .daterangepicker .drp-selected {width: 100%; text-align: center; margin: 0 0 10px;}
