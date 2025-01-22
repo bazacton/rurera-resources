@@ -249,6 +249,10 @@ Assignments Table Style Start
     margin-right: 8px;
 }
 /*Dashboard members list style start*/
+.dashboard-students-holder {
+    background-color: #fff;
+    border-radius: 10px;
+}
 .dashboard-students-holder .db-form-tabs {margin-bottom: 0;}
 .db-members .card .card-header button,
 .db-members .list-group .rurera-tables-list,
