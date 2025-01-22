@@ -201,9 +201,11 @@ Assignments Table Style Start
     top: 100% !important;
 }
 .db-form-tabs .action-activity .dropdown-menu {
-    min-width: 180px;
+    min-width: 160px;
     margin: 0;
     transition: none;
+    padding: 10px;
+    border-radius: 5px;
 }
 .member-card-header .btn img {width: 22px; height: 22px;}
 .db-members .card .list-group-item:nth-child(even) {background-color: #fff;}
