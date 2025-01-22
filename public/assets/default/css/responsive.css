@@ -1585,4 +1585,5 @@ Lms Responsive Style Start
     .products-top-header.lms-call-to-action input[type="text"] {height: 40px;}
     .progress-learning-header a {white-space: nowrap;}
     .dashboard-banner-container {min-height: 150px;}
+    .member-card-header .dropdown {padding-top: 10px;}
 } 
