@@ -206,7 +206,11 @@ Assignments Table Style Start
     transition: none;
     padding: 10px;
     border-radius: 5px;
+    left: auto !important;
+    right: 0;
+    transform: none !important;
 }
+
 .member-card-header .btn img {width: 22px; height: 22px;}
 .db-members .card .list-group-item:nth-child(even) {background-color: #fff;}
 .billing-card .list-group-item {padding: 0;}
