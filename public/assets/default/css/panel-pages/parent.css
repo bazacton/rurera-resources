@@ -200,6 +200,10 @@ Assignments Table Style Start
     visibility: visible;
     top: 100% !important;
 }
+.db-form-tabs .action-activity .dropdown-menu {
+    min-width: 180px;
+    margin: 0;
+}
 .member-card-header .btn img {width: 22px; height: 22px;}
 .db-members .card .list-group-item:nth-child(even) {background-color: #fff;}
 .billing-card .list-group-item {padding: 0;}
