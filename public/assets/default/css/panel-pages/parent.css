@@ -174,26 +174,10 @@ Assignments Table Style Start
 .db-members .card .list-group-item small {display: block; line-height: normal; font-size: 16px;}
 .db-members .card .list-group-item .profile-dropdown {padding-top: 0; min-height: 38px; display: inline-flex; align-items: center; flex-direction: column;}
 .db-members .card .card-header button img {width: 18px; height: 18px; filter: invert(100%) sepia(0%) saturate(7472%) hue-rotate(114deg) brightness(109%) contrast(97%); margin-right: 6px;}
-.db-form-tabs .rurera-tables-list a.dropdown-toggle {
-    border: 0;
-    width: 20px;
-    height: 20px;
-}
-.db-form-tabs .rurera-tables-list a.dropdown-toggle img {
-    max-width: 20px;
-    min-height: 20px;
-    min-width: auto;
-}
-.db-form-tabs .rurera-tables-list a.dropdown-toggle .icon-box {
-    height: auto;
-    width: auto;
-    background-color: inherit;
-}
-.rurera-tables-list .dropdown:hover .dropdown-menu {
-    opacity: 0;
-    visibility: hidden;
-    margin: 0;
-}
+.db-form-tabs .rurera-tables-list a.dropdown-toggle {border: 0; width: 20px; height: 20px;}
+.db-form-tabs .rurera-tables-list a.dropdown-toggle img {max-width: 20px; min-height: 20px; min-width: auto;}
+.db-form-tabs .rurera-tables-list a.dropdown-toggle .icon-box {height: auto; width: auto; background-color: inherit;}
+.rurera-tables-list .dropdown:hover .dropdown-menu {opacity: 0; visibility: hidden; margin: 0;}
 .rurera-tables-list .dropdown-menu.show,
 .rurera-tables-list .dropdown.show:hover .dropdown-menu {
     opacity: 1;
