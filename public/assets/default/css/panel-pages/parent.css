@@ -203,6 +203,7 @@ Assignments Table Style Start
 .db-form-tabs .action-activity .dropdown-menu {
     min-width: 180px;
     margin: 0;
+    transition: none;
 }
 .member-card-header .btn img {width: 22px; height: 22px;}
 .db-members .card .list-group-item:nth-child(even) {background-color: #fff;}
