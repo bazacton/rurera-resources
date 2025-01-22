@@ -454,6 +454,7 @@ Lms Responsive Style Start
     .top-navbar .nav-icons-or-start-live,
     .page-sub-header h1 br {display: none;}
     .section-title {text-align: center !important;}
+    .wizard-steps-heading.text-left .section-title {text-align: left !important;}
     .panel-content .section-title.text-left,
     .newsletter-inner .section-title,
     .home-sections:has(.blog-grid-card) .section-title,
