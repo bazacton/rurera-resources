@@ -2510,10 +2510,10 @@ body .quiz-open .flipbook-quiz {
 Flip Book Custom Style End
 ****************************/
 
-
 .book-info-link{
     cursor: pointer;
 }
+
 @media screen and (max-width: 575px) {
     body .book .flipbook-data {
         transform: scale(1);
