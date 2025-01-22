@@ -1171,10 +1171,7 @@ Lms Responsive Style Start
     .have-question-card .media-holder img {max-width: 100%;}
     .have-question-card .media-holder .attachment-img {right: -25px; top: -20px; width: 70px;}
     .find-instructor-section figure.mb-80.mt-sm-50 {margin-top: 50px;}
-    .lms-text-holder.lms-client-description {
-        text-align: center;
-        padding-right: 0 !important;
-    }
+    .lms-text-holder.lms-client-description {text-align: center; padding-right: 0 !important;}
     .wizard-steps-heading h3.font-24 {font-size: 1.5rem !important;}
     .populated-data .card .form-check-label {font-size: 1rem !important;}
 }
