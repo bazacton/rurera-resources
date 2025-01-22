@@ -765,6 +765,7 @@ Lms Responsive Style Start
     .db-members .card .list-group-item .row .col-5 {flex: 0 0 35%; max-width: 35%;}
     .list-group-item .row {gap: 10px;}
     .db-members .list-group-item .row {flex-wrap: wrap;gap: 0; border: 1px solid #ddd; border-radius: 10px;}
+    .db-members .list-group .list-group-item:first-child,
     .db-members .list-group .list-group-item:first-child .row {
         border-radius: 0 0 10px 10px;
     }
@@ -777,8 +778,8 @@ Lms Responsive Style Start
         border: 0;
         border-bottom: 0;
         background-color: #fff;
-        border-radius: 0;
         margin-bottom: 15px;
+        border-radius: 10px;
     }
     .db-members .list-group-item .switch-user-btn,
     .db-form-tabs .list-group-item .connect-user-btn{margin-top: 5px;}
