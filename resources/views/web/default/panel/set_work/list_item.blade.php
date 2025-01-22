@@ -2,8 +2,10 @@
     <div class="row align-items-center">
         <div class="col-auto col-lg-2 pr-15">
             <h6 class="listing-title font-16 font-weight-500">Title</h6>
-            <h6 class="font-16 font-weight-normal"><a href="#"><img class="quiz-type-icon mr-5" src="/assets/default/img/assignment-logo/{{$assignmentObj->assignment_type}}.png">
-                    {{$assignmentObj->title}}</a></h6>
+            <h6 class="font-16 font-weight-normal">
+                <a href="#"><img class="quiz-type-icon mr-5" src="/assets/default/img/assignment-logo/{{$assignmentObj->assignment_type}}.png">
+                    {{$assignmentObj->title}}</a>
+            </h6>
         </div>
         <div class="col-auto">
             <h6 class="listing-title font-16 font-weight-500">Student</h6>
@@ -14,6 +16,20 @@
                 @endforeach
                 @endif
             </h6>
+            <div class="dropdown-box hide-lg">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="/panel/set-work/{{$assignmentObj->id}}/progress" class="detail-btn">Details</a>
+                        @php $completed_count = $assignmentObj->students->where('status', 'completed')->count(); @endphp
+                        @if( $completed_count == 0 && $assignmentObj->status == 'active')
+                        <a href="javascript:;" data-confirm-type="link" data-confirm-action="/panel/set-work/{{$assignmentObj->id}}/remove" class="remove-btn confirm-delete"><img src="/assets/default/svgs/delete-menu.svg"></a>
+                        @endif
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="col-auto">
             <h6 class="listing-title font-16 font-weight-500">Type</h6>
