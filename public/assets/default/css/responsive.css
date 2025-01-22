@@ -901,6 +901,7 @@ Lms Responsive Style Start
     body .wizard-steps .radio-buttons .card-radio {min-height: auto;}
     .user-detail .info-text {margin-bottom: 20px;}
     .db-members .card .list-group-item .listing-title {display: inline-block; position: initial;}
+    .db-members .card .list-group-item .dropdown-box.hide-lg {display: inline-block;}
     .db-members .card .rurera-tables-list .list-group-item:first-child .listing-title {display: inline-block;}
     .db-members .card .list-group-item .row .col-auto:first-child .listing-title {display: none;}
     .db-members .card .list-group-item .action-activity .listing-title {text-align: left; width: auto; padding-right: 0;}
