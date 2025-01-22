@@ -294,6 +294,7 @@ Assignments Table Style Start
 .db-members .card .list-group-item .action-activity .listing-title { width: 100%; text-align: right; padding-right: 30px;}
 .db-members .card .list-group-item [class*="col-"]:has(small) {flex-direction: column; align-items: flex-start;}
 .db-members .card .list-group-item .listing-title {color:#000; position: absolute;top: -42px; text-transform: uppercase; pointer-events: none; display: none;}
+.db-members .card .list-group-item .dropdown-box.hide-lg {display: none;}
 .db-members .card .list-group-item:first-child .listing-title {display: block;}
 .db-members .card .rurera-tables-list .list-group-item .listing-title {display: none;}
 .db-members .card .list-group-item .detail-btn {padding-right: 15px;}
