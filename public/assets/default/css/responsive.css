@@ -769,7 +769,14 @@ Lms Responsive Style Start
     .db-members .list-group .rurera-tables-list, 
     .db-members .list-group {background-color: inherit; border: 0;}
     .db-members .card .list-group-item,
-    .db-members .card .list-group-item:last-child {padding: 15px 15px 0; margin-bottom: 0; border:0; border-bottom: 0; background-color: #fff; border-radius: 0;}
+    .db-members .card .list-group-item:last-child {
+        padding: 0 15px 0;
+        border: 0;
+        border-bottom: 0;
+        background-color: #fff;
+        border-radius: 0;
+        margin-bottom: 15px;
+    }
     .db-members .list-group-item .switch-user-btn,
     .db-form-tabs .list-group-item .connect-user-btn{margin-top: 5px;}
     .rewards-layout-box.column-3 .row {grid-template-columns: 1fr 1fr;}
@@ -908,7 +915,18 @@ Lms Responsive Style Start
     .db-members .card .list-group-item .row .col-auto:first-child .listing-title {display: none;}
     .db-members .card .list-group-item .action-activity .listing-title {text-align: left; width: auto; padding-right: 0;}
     .db-members .card .list-group-item .detail-btn {margin-left: auto;}
-    .db-members .card .list-group-item [class*="col-"] {display: flex; align-items: center; justify-content: space-between; flex-direction: row; position: relative; min-height: auto; border-bottom: 1px solid #ddd; padding: 0 15px 15px; margin-bottom: 0; max-height: 50px;}
+    .db-members .card .list-group-item [class*="col-"] {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        position: relative;
+        min-height: auto;
+        border-bottom: 1px solid #ddd;
+        padding: 10px 15px 10px;
+        margin-bottom: 0;
+        max-height: none;
+    }
     .db-members .card .list-group-item [class*="col-"]:last-child {padding-right: 15px; margin-bottom: 0; justify-content: space-between;}
     .db-members .card .list-group-item .col-2 {flex: 0 0 auto; max-width: none; width: auto; gap: 10px;}
     .db-members .card .list-group-item .row .col-auto:first-child {width: auto;  flex: 0 0 auto; padding-left: 15px;}
@@ -916,6 +934,14 @@ Lms Responsive Style Start
     .db-members .card .list-group-item .col-auto:first-child.col-lg-2 {flex: 0 0 100%; max-width: 100%;}
     .db-members .card .list-group-item [class*="col-"].action-activity {display: none;}
     .wizard-steps .radio-buttons {justify-content: flex-start !important;}
+    .member-card-header {
+        border: 1px solid #ddd;
+        border-bottom: 0;
+    }
+    .dashboard-students-holder {
+        border: 0;
+        background-color: inherit;
+    }
     .db-form-tabs h6,
     .db-form-tabs .list-group-item h6 span {font-weight: 500 !important;}
     .db-members .last-activity span {text-align: right;}
