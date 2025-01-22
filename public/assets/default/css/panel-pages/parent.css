@@ -491,14 +491,14 @@ a.last-activity span strong {color: #343434;}
 .book-form .tests-list li img {height: 18px; width: 18px;}
 .book-form .tests-list li img.google-icon,
 .lms-choose-membership .social-login img.google-icon {height: 30px; width: 30px; margin-bottom: -10px; }
-.action-activity .remove-btn {
+.list-group-item .remove-btn {
     display: flex;
     align-items: center;
     color: #d55555;
     gap: 8px;
 }
 .db-form-tabs .list-group-item .remove-btn img,
-.action-activity .remove-btn img {max-height: 15px;max-width: 15px;min-height: 15px;min-width: 15px;filter: invert(46%) sepia(74%) saturate(4289%) hue-rotate(328deg) brightness(89%) contrast(90%);}
+.list-group-item .remove-btn img {max-height: 15px;max-width: 15px;min-height: 15px;min-width: 15px;filter: invert(46%) sepia(74%) saturate(4289%) hue-rotate(328deg) brightness(89%) contrast(90%);}
 .gallery-slider {position: relative; }
 .gallery-slider ul {padding: 5px; }
 .gallery-slider li {display: inline-block; vertical-align: top; width: 8.333%; padding: 5px; }
