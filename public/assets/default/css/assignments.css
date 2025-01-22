@@ -40,7 +40,7 @@
 .card .card-body .section-title:before {margin-top: 8px; }
 .card .card-body .section-title + .section-lead {margin-top: -5px;}
 .card .card-body p {font-weight: 500;}
-.card .card-header {border-bottom-color: #f9f9f9; line-height: 30px; -ms-grid-row-align: center; align-self: center; width: 100%; min-height: 70px; padding: 15px 25px; display: flex; align-items: center; overflow: hidden;}
+.card .card-header {border-bottom-color: #f9f9f9; line-height: 30px; -ms-grid-row-align: center; align-self: center; width: 100%; min-height: 50px; padding: 15px 25px; display: flex; align-items: center; overflow: hidden;}
 .card .card-header .btn {margin-top: 1px; padding: 2px 15px;}
 .card .card-header .btn:not(.note-btn) {border-radius: 30px;}
 .card .card-header .btn:hover {box-shadow: none;}
