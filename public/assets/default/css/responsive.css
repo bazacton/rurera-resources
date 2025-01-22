@@ -764,7 +764,7 @@ Lms Responsive Style Start
     .have-question-card .text-box {width: 100%; padding: 20px 0 0 0;}
     .db-members .card .list-group-item .row .col-5 {flex: 0 0 35%; max-width: 35%;}
     .list-group-item .row {gap: 10px;}
-    .db-members .list-group-item .row {flex-wrap: wrap;gap: 10px 0;}
+    .db-members .list-group-item .row {flex-wrap: wrap;gap: 0;}
     .list-group-item .switch-user-btn img {margin: 0;}
     .db-members .list-group .rurera-tables-list, 
     .db-members .list-group {background-color: inherit; border: 0;}
