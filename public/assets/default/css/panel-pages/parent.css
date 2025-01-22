@@ -269,7 +269,7 @@ Assignments Table Style Start
     width: 100%;
     margin: 0 0 8px 0;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
 }
 .db-members .card .list-group-item .detail-btn img {
     min-height: 15px;
