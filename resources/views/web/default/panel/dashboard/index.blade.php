@@ -37,7 +37,7 @@
     </div>
     <div class="mt-15">
         <div class="section-title text-left mb-30">
-            <h2 class="font-22">Subjects Progress<a href="#" class="text-primary">How we calculated?</a></h2>
+            <h2 class="font-22">Subjects Progress <a href="#" class="text-primary">How we calculated?</a></h2>
         </div>
         <div class="row">
             <!-- English Card -->
