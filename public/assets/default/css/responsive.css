@@ -1371,7 +1371,8 @@ Lms Responsive Style Start
     .trophy-levels .input::before {left: -46px;}
     .tests-list li {flex-basis: 48%; text-align: center;}
     .questions-select-option ul {flex-wrap: wrap; padding-right: 1px; padding-bottom: 1px;}
-    .panel-content .questions-select-option li {margin-right: 0; margin-bottom: -1px;}
+    .panel-content .questions-select-option li {margin-right: 0; margin-bottom: -1px; flex: auto;}
+    .questions-select-option label {min-height: 40px; padding: 5px 10px;}
     .questions-select-option li:first-child label,
     .questions-select-option li:last-child label {border-radius: 0;}
     .panel-content .inline-filters {gap: 15px;}
