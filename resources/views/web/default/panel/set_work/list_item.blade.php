@@ -6,16 +6,6 @@
                 <a href="#"><img class="quiz-type-icon mr-5" src="/assets/default/img/assignment-logo/{{$assignmentObj->assignment_type}}.png">
                     {{$assignmentObj->title}}</a>
             </h6>
-        </div>
-        <div class="col-auto">
-            <h6 class="listing-title font-16 font-weight-500">Student</h6>
-            <h6 class="font-16 font-weight-normal">
-                @if( $assignmentObj->students->count() > 0)
-                @foreach($assignmentObj->students as $studentObj)
-                <span class="font-16">{{$studentObj->user->get_full_name()}}</span>
-                @endforeach
-                @endif
-            </h6>
             <div class="dropdown-box hide-lg">
                 <div class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -30,6 +20,16 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="col-auto">
+            <h6 class="listing-title font-16 font-weight-500">Student</h6>
+            <h6 class="font-16 font-weight-normal">
+                @if( $assignmentObj->students->count() > 0)
+                @foreach($assignmentObj->students as $studentObj)
+                <span class="font-16">{{$studentObj->user->get_full_name()}}</span>
+                @endforeach
+                @endif
+            </h6>
         </div>
         <div class="col-auto">
             <h6 class="listing-title font-16 font-weight-500">Type</h6>
