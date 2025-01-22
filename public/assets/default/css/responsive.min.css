@@ -929,7 +929,8 @@ Lms Responsive Style Start
         border-bottom: 1px solid #ddd;
         padding: 10px 15px 10px;
         margin-bottom: 0;
-        max-height: none;
+        max-height: 60px;
+        min-height: 60px;
     }
     .db-members .card .list-group-item [class*="col-"]:last-child {border-bottom: 0; padding-right: 15px; margin-bottom: 0; justify-content: space-between;}
     .db-members .card .list-group-item .col-2 {flex: 0 0 auto; max-width: none; width: auto; gap: 10px;}
@@ -1141,6 +1142,13 @@ Lms Responsive Style Start
     #profile-image-modal .svga-row.row-glob-controls {margin: 0 -10px;}
     div#profile-image-modal {padding-right: 0 !important;}
     .dashboard-students-holder .d-flex {flex-wrap: wrap;}
+    .member-card-header {margin-bottom: 0 !important;}
+    .db-members .rurera-tabs-frontend {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-bottom: 0;
+        padding-top: 10px;
+    }
     .categories-card.medium {padding-left: 0; padding-right: 0;}
     .categories-card.medium .categories-text {padding-left: 15px;}
     .categories-card.medium .learning-btn {position: inherit; transform: none; text-align: left; display: block; margin: 0 0 5px;}
@@ -1585,4 +1593,5 @@ Lms Responsive Style Start
     .products-top-header.lms-call-to-action input[type="text"] {height: 40px;}
     .progress-learning-header a {white-space: nowrap;}
     .dashboard-banner-container {min-height: 150px;}
+    .member-card-header .dropdown {padding-top: 10px;}
 } 
