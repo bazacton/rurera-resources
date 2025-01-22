@@ -1162,6 +1162,7 @@ Lms Responsive Style Start
         padding-right: 0 !important;
     }
     .wizard-steps-heading h3.font-24 {font-size: 1.5rem !important;}
+    .populated-data .card .form-check-label {font-size: 1rem !important;}
 }
 
 @media screen and (max-width: 640px) {
