@@ -832,7 +832,7 @@ Lms Responsive Style Start
     .listing-card .read-btn, .book-btn {min-width: 150px; font-size: 13px; padding: 15px 10px;}
     .listing-card .read-btn .btn-icon {margin-right: 5px;}
     .trophy-levels {justify-content: center;}
-    .filter-mobile-btn {display: block; background-color: #fff; border: 1px solid #ddd; padding: 10px 25px 10px 10px; line-height: normal; border-radius: 3px; position: relative; font-size: 15px;}
+    .filter-mobile-btn {display: block; background-color: #fff; border: 1px solid #ddd; padding: 10px 25px 10px 10px; line-height: normal; border-radius: 3px; position: relative; font-size: 15px; font-weight: 500; text-transform: uppercase;}
     .filter-mobile-btn:after {content: ""; position: absolute; right: 12px; top: 50%; border-style: solid; border-width: 4px; border-left-color: transparent; border-top-color: transparent; transform: rotate(45deg) translateY(-50%); margin-top: -2px;}
     .filters-list {position: relative; width: 50%; padding-right: 8px; margin-top: 12px;}
     .filters-list .analytics-type,
