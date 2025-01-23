@@ -1175,6 +1175,36 @@ Lms Responsive Style Start
         padding: 15px;
         border-radius: 0 0 10px 10px;
     }
+    /*Default SM Table For Mobile Style Start*/
+    .table-sm thead {
+        display: none;
+    }
+    .table-sm tr {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 0 0 15px;
+    }
+    .table-sm tr td {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 12px;
+    }
+    .table-sm tr td:before {
+        content: attr(data-th);
+        color: #333;
+        font-size: 15px;
+    }
+    .panel-section-card:has(.table-sm) {
+        background-color: inherit !important;
+        padding: 0 !important;
+        border: 0;
+    }
+    /*Default SM Table For Mobile Style End*/
 }
 
 @media screen and (max-width: 640px) {
@@ -1395,7 +1425,6 @@ Lms Responsive Style Start
     .levels-grouping .spell-levels-top strong {text-align: center;}
     .spell-levels-top {background-color: #fff; flex-direction: column;justify-content: flex-start;align-items: flex-start;gap: 15px;}
     .levels-progress.horizontal .progress-box {min-width: auto; width: 100%;}
-    .panel-content {padding-left: 0; padding-right: 0;}
     .panel-content .inline-filters li {width: 47%;}
     .panel-content .inline-filters a {width: 100%;}
     .trophy-levels .input::before {left: -46px;}
@@ -1559,4 +1588,9 @@ Lms Responsive Style Start
     .progress-learning-header a {white-space: nowrap;}
     .dashboard-banner-container {min-height: 150px;}
     .member-card-header.activities-header .dropdown {padding-top: 0;}
+    .edit-profile-body .form-group:has(.input-field) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 0;
+    }
 }
