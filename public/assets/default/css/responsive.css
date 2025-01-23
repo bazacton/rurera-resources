@@ -918,6 +918,7 @@ Lms Responsive Style Start
     .db-members .card .list-group-item .row .col-auto:first-child {width: auto;  flex: 0 0 auto; padding-left: 15px;}
     .db-members .card .list-group-item [class*="col-"].ms-2 {flex-direction: column; align-items: flex-start;width: auto;}
     .db-members .card .list-group-item .col-auto:first-child.col-lg-2 {flex: 0 0 100%; max-width: 100%;}
+    .db-members .card .list-group-item [class*="col-"].activity-date {width: 100%;}
     .db-members .card .list-group-item [class*="col-"].action-activity {display: none;}
     .wizard-steps .radio-buttons {justify-content: flex-start !important;}
     .member-card-header {border: 1px solid #ddd; border-bottom: 0;}
