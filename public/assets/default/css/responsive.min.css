@@ -370,7 +370,7 @@ Lms Responsive Style Start
     .panel-content > .container > .row > [class*="col-"]:first-child {padding-right: 15px;}
     body.panel-sidebar-open {overflow: hidden;}
     .sidebar-menu-top {padding: 15px 0 15px 15px; position: relative;}
-    body .sidebar-menu-holder {background-color: #fff; visibility: hidden; padding: 0; opacity: 0; position: fixed; top: 0; height: 100%; left: -150%; transition: left .4s cubic-bezier(.43, .83, .54, 1.02), opacity .4s linear; z-index: 2; width: 100%;}
+    body .sidebar-menu-holder {background-color: #fff; visibility: hidden; padding: 0; opacity: 0; position: fixed; top: 0; height: 100%; left: -150%; transition: left .4s cubic-bezier(.43, .83, .54, 1.02), opacity .4s linear; z-index: 2; width: 100%; display: block;}
     body .sidebar-menu-holder .sidebar-logo {display: flex; display: none;}
     .results-revenue-card .text-box p br {display: none;}
     .learning-start {padding: 25px 20px 0;}
@@ -768,6 +768,9 @@ Lms Responsive Style Start
     .list-group-item .switch-user-btn img {margin: 0;}
     .db-members .list-group .rurera-tables-list, 
     .db-members .list-group {background-color: inherit; border: 0;}
+    .db-members .list-group.has-listing-title {
+        padding-top: 0;
+    }
     .db-members .card .list-group-item,
     .db-members .card .list-group-item:last-child {padding: 0 15px 0; border: 0; border-bottom: 0; background-color: #fff; margin-bottom: 15px; border-radius: 10px;}
     .db-members .list-group-item .switch-user-btn,
@@ -829,12 +832,13 @@ Lms Responsive Style Start
     .listing-card .read-btn, .book-btn {min-width: 150px; font-size: 13px; padding: 15px 10px;}
     .listing-card .read-btn .btn-icon {margin-right: 5px;}
     .trophy-levels {justify-content: center;}
-    .filter-mobile-btn {display: block; background-color: #fff; border: 1px solid #ddd; padding: 10px 25px 10px 10px; line-height: normal; border-radius: 3px; position: relative; font-size: 15px;}
+    .filter-mobile-btn {display: block; background-color: #fff; border: 1px solid #ddd; padding: 10px 25px 10px 10px; line-height: normal; border-radius: 3px; position: relative; font-size: 15px; font-weight: 500; text-transform: uppercase;}
     .filter-mobile-btn:after {content: ""; position: absolute; right: 12px; top: 50%; border-style: solid; border-width: 4px; border-left-color: transparent; border-top-color: transparent; transform: rotate(45deg) translateY(-50%); margin-top: -2px;}
     .filters-list {position: relative; width: 50%; padding-right: 8px; margin-top: 12px;}
     .filters-list .analytics-type,
     .filters-list .tests-list,
     .tests-list, .listing-search .inline-filters:not(.wizard-steps .listing-search .inline-filters) {position: absolute; width: 95%; flex-direction: column; left: 0; top: 100%; text-align: left; background-color: #fff; z-index: 3; padding: 10px 15px; box-shadow: 0 0 5px rgba(0,0,0,0.1); visibility: hidden; opacity: 0; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; margin-top: 10px; align-items: flex-start;}
+    .filters-list .analytics-type {width: 100%;}
     .tests-list, .listing-search .inline-filters:not(.wizard-steps .listing-search .inline-filters) {width: 100%; padding-top: 15px; padding-bottom: 15px;}
     .filters-list .analytics-type.open,
     .filters-list .tests-list.open,
@@ -1112,7 +1116,7 @@ Lms Responsive Style Start
     #profile-image-modal .svga-row.row-elements,
     #profile-image-modal .svga-row.row-glob-controls {margin: 0 -10px;}
     div#profile-image-modal {padding-right: 0 !important;}
-    .dashboard-students-holder .d-flex {flex-wrap: wrap;}
+    .dashboard-students-holder .d-flex {flex-wrap: wrap; gap: 10px 0;}
     .member-card-header {margin-bottom: 0 !important;}
     .db-members .rurera-tabs-frontend {background-color: #fff; border: 1px solid #ddd; border-bottom: 0; padding-top: 10px;}
     .categories-card.medium {padding-left: 0; padding-right: 0;}
@@ -1486,6 +1490,7 @@ Lms Responsive Style Start
     .lms-choose-membership .form-login-reading .form-separator {margin: 5px 0 15px;}
     .leave-option-control button {width: 100%;}
     .leave-option-control {flex-wrap: wrap;}
+    .analytics-dropdown select {background-position: 98% 50%;}
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
@@ -1534,5 +1539,5 @@ Lms Responsive Style Start
     .products-top-header.lms-call-to-action input[type="text"] {height: 40px;}
     .progress-learning-header a {white-space: nowrap;}
     .dashboard-banner-container {min-height: 150px;}
-    .member-card-header .dropdown {padding-top: 10px;}
-} 
+    .member-card-header.activities-header .dropdown {padding-top: 0;}
+}
