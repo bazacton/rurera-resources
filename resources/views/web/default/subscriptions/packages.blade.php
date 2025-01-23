@@ -31,7 +31,7 @@ $subscribed_childs = isset( $subscribed_childs) ? $subscribed_childs : 0;
 $subscribed_for = isset( $subscribed_for)? $subscribed_for : 1;
 $user_subscribed_for = isset( $user_subscribed_for)? $user_subscribed_for : 1;
 @endphp
-<section class="lms-setup-progress-section mb-0 pt-20 pb-60 packages-list-modal {{$packages_list_class}}">
+<section class="lms-setup-progress-section mb-0 pt-20 pb-30 packages-list-modal {{$packages_list_class}}">
         <div class="container">
             <form class="package-register-form" method="post" action="javascript:;" data-user_subscribed_for="{{isset( $user_subscribed_for )? $user_subscribed_for : 1}}">
                       {{ csrf_field() }}
