@@ -11,7 +11,7 @@ $rand_id = rand(99,9999);
 @endpush
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/assets/default/css/responsive.css">
+<link rel="stylesheet" href="/assets/default/css/responsive.css?ver={{$rand_id}}">
 
 @section('content')
 
