@@ -1175,6 +1175,27 @@ Lms Responsive Style Start
         padding: 15px;
         border-radius: 0 0 10px 10px;
     }
+    /*Default SM Table For Mobile Style Start*/
+    .table-sm thead {
+        display: none;
+    }
+    .table-sm tr {
+        display: flex;
+        flex-direction: column;
+    }
+    .table-sm tr td {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 12px;
+    }
+    .table-sm tr td:before {
+        content: attr(data-th);
+        color: #333;
+        font-size: 15px;
+    }
+    /*Default SM Table For Mobile Style End*/
 }
 
 @media screen and (max-width: 640px) {
