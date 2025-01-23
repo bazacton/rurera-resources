@@ -27,7 +27,7 @@
                         <h3 class="font-24 mb-5">Set Work</h3>
                         <p class="text-muted font-16">The test changes as you go, getting tougher if you keep getting things right, and easier if you find it hard. Let's make a special practice plan just for your student, with questions that are just right for students level.</p>
                     </div>
-                    <div class="years-group populated-data">
+                    <div class="years-group populated-data mb-10">
                         <div class="form-section mb-20 text-left 223">
                             <h2 class="section-title font-18 font-weight-bold">Select Student</h2>
                         </div>
