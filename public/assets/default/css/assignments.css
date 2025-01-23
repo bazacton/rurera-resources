@@ -72,3 +72,215 @@
 .form-check-input{-webkit-appearance: auto; appearance: auto;}
 .assignment_topic_type_fields .form-check {margin-bottom: 10px; padding-left: 5px;}
 .card .card-body .row[class*="col-"] {padding-right: 0; padding-left: 0; margin: 0;}
+
+/*Sats-listing-card style on set-work-page start*/
+.sats-listing-card {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.sats-listing-card .img-holder {
+    margin-bottom: 15px;
+}
+.sats-listing-card .img-holder img {
+    max-width: 100%;
+    transition: all .5s;
+}
+.sats-listing-card:hover .img-holder img {
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+}
+.sats-listing-card .text-holder span {
+    color: #6d6d6d;
+    font-weight: 500;
+    display: block;
+    margin: 0 0 5px;
+    line-height: normal;
+}
+.sats-listing-card .text-holder h4 {
+    margin: 0 0 15px;
+    font-size: 20px;
+}
+.sats-listing-card .text-holder h4 a {
+    color: #000;
+}
+.sats-listing-card .img-holder figure {
+    position: relative;
+}
+.sats-listing-card .img-holder figure > a {
+    display: block;
+}
+.sats-listing-card .waiting {
+    background-color: #fdfd9b;
+    color: #222;
+}
+.sats-listing-card .passed {
+    background-color: #7eb282;
+}
+.sats-listing-card .img-holder figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding: 15px 15px;
+    pointer-events: none;
+}
+.sats-listing-card.medium .row {
+    align-items: center;
+}
+.sats-listing-card.medium .img-holder {
+    margin-bottom: 0;
+}
+.sats-listing-card.medium .text-holder h4 {
+    margin-bottom: 0;
+}
+.sats-listing-card table {
+    width: 100%;
+}
+.sats-listing-card table img {
+    max-width: 50px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.sats-listing-card table h4 {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 70px);
+    line-height: normal;
+    position: relative;
+}
+.sats-listing-card table h4 img {
+    vertical-align: middle;
+    margin: 0;
+    max-width: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sats-listing-card thead {
+    background-color: var(--primary);
+}
+.sats-listing-card.medium {
+    border-radius: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 0 15px;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.sats-listing-card thead th, .panel-section-card .custom-table thead td, .panel-section-card .custom-table thead th {
+    padding: 15px 20px;
+    color: #333;
+    text-align: left;
+    font-weight: 600;
+}
+.sats-listing-card tbody tr td:nth-child(2) {
+    min-width: 500px;
+    padding-left: 10px;
+}
+.col-lg-9 .sats-listing-card tbody tr td:nth-child(2) {
+    min-width: 390px;
+}
+.sats-listing-card .rurera-unlock-item img, .sats-listing-card .rurera-lock-item img {
+    margin-right: 0;
+}
+.panel-content .sats-listing-card tbody tr td:nth-child(2) {
+    min-width: auto;
+}
+.sats-listing-card tbody tr td {
+    border-bottom: 1px solid #ececec;
+    padding: 25px 20px;
+}
+.sats-listing-card .attempt-progress {
+    min-width: 120px;
+}
+.sats-listing-card.medium .media-holder {
+    margin: -15px 0 0 12px;
+    background-color: #fff;
+    width: 100px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    min-height: 120px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.sats-listing-card.medium .media-holder:after, .sats-listing-card.medium .media-holder:before {
+    width: 0;
+    height: 0;
+    border-bottom: 14px solid #a1a5a6;
+    border-right: 12px solid transparent;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -12px;
+}
+.sats-listing-card.medium .media-holder:before {
+    border-left: 12px solid transparent;
+    border-right: 0;
+    left: -12px;
+    right: auto;
+}
+.sats-listing-card.medium figure {
+    background-color: #fff;
+}
+.sats-listing-card.medium figure img {
+    max-width: 50px;
+}
+.sats-listing-card.medium .text-holder {
+    width: calc(100% - 115px);
+    padding: 15px 0 0 15px;
+}
+.sats-listing-card.medium .list-top {
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px;
+}
+.sats-listing-card.medium .text-holder h4 {
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.sats-listing-card.medium .text-holder h4 a {
+    color: #39363f;
+}
+.sats-listing-card.medium .text-holder h4 .sub_label {
+    font-size: 14px;
+    padding-top: 5px;
+}
+.sats-listing-card.medium .text-holder p {
+    font-size: 14px;
+    color: #a0a4ad;
+    font-weight: 600;
+    margin: 0;
+}
+.sats-listing-card.medium .text-inner {
+    padding-right: 20px;
+}
+.sats-listing-card.medium .simple-table tbody tr:nth-child(even), 
+.sats-listing-card.medium .simple-table tbody tr:nth-child(even):hover, 
+.panel-section-card tbody tr:nth-child(even), .panel-section-card tbody tr:nth-child(even) {
+    background-color: #fff !important;
+}
+
+.sats-listing-card.medium .simple-table tbody tr:nth-child(odd), .panel-section-card tbody tr:nth-child(odd), .sats-listing-card.medium .simple-table tbody tr:hover {
+    background-color: inherit !important;
+}
+.sats-listing-card.medium .total-tests {
+    padding: 0 0 30px;
+}
+.sats-listing-card.medium table .total-tests {
+    padding-bottom: 10px;
+}
+.sats-listing-card.medium .simple-table tbody:has(.total-tests) tr:nth-child(even) {
+    background-color: inherit !important;
+}
+.sats-listing-card.medium .simple-table tbody:has(.total-tests) tr:nth-child(odd) {
+    background-color: #fff !important;
+}
+/*Sats-listing-card style on set-work-page end*/
