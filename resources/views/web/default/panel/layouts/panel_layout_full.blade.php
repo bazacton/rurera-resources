@@ -31,7 +31,7 @@
         @endforeach
     @endif
 	
-    <link rel="stylesheet" href="/assets/default/css/responsive.css?ver={{$rand_id}}">
+    <link rel="stylesheet" href="/assets/default/css/responsive.css">
     @stack('styles_top')
     @stack('scripts_top')
 
