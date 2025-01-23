@@ -222,6 +222,7 @@ Assignments Table Style Start
 .member-card-header:hover .db-members .profile-dropdown ul {margin-top: 15px;}
 .profile-menu > ul > li .user-menu-text > a {font-weight: 600; font-size: 18px; display: block;}
 .profile-dropdown {position: relative; padding-top: 5px; display: inline-block;}
+.member-card-header.activities-header .profile-dropdown {padding-top: 0;}
 .profile-dropdown ul {position: absolute; top: 100%; left: 0; background-color: #fff; min-width: 180px; padding: 15px; box-shadow: 0 0 3px rgba(0,0,0,0.1); border-radius: 8px; z-index: 3; opacity: 0; visibility: hidden; margin-top: -10px; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out;}
 .profile-dropdown:hover ul {opacity: 1; visibility: visible; margin: 0;}
 .profile-dropdown .icon-box img[src$='.png'] {filter: none;}
