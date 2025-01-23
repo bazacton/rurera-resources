@@ -756,7 +756,7 @@ Lms Responsive Style Start
     .sats-listing-card table:not(thead) td {text-align: left;}
     .sats-listing-card table:not(thead) td h4 {font-size: 1rem !important;}
     .sats-listing-card table:not(thead) td img {margin: 0 10px 0 0; vertical-align: top;}
-    .wizard-steps .sats-listing-card tbody tr td {display: block; padding-bottom: 15px;}
+    .wizard-steps .sats-listing-card tbody tr td {display: block; padding: 20px 0;}
     .wizard-steps .sats-listing-card tbody tr td:has(.mock-test-assign-btn) {padding-top: 0; padding-bottom: 20px; display: inline-block;}
     .results-info {width: auto;}
     .results-revenue-card .text-box,
