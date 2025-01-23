@@ -880,8 +880,8 @@
                     <div class="row user-details-block">
                         <div class="col-12 col-lg-12 col-md-12">
                             <span class="form-label d-block mb-10">Student Username</span>
-                            <div class="input-field d-inline-flex align-items-center">
-                                <input type="text" name="username" class="rurera-req-field" placeholder="Username">
+                            <div class="input-field d-inline-flex align-items-center w-100">
+                                <input type="text" name="username" class="rurera-req-field form-control" placeholder="Username">
                             </div>
                         </div>
                         <div class="col-12 col-lg-12 col-md-12">
