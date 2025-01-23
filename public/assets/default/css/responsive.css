@@ -1581,7 +1581,11 @@ Lms Responsive Style Start
     .analytics-header .header-text,
     #analyticsAccordion .card .card-header {padding-left: 15px; padding-right: 0;}
     .user-profile-icons .dropdown:hover .dropdown-menu {top: 66px;}
-    .class-thumb-list li.school-box {width: 30%;}
+    .class-thumb-list li.school-box {width: 30%; overflow: visible;}
+    .class-thumb .media-box {height: 80px;
+        width: 80px;
+    }
+    .class-thumb .media-box {position: relative; z-index: 2;}
     .class-thumb .media-icon {height: 80px; width: 80px;}
     .book-form .tests-list.payment-methods {flex-wrap: wrap;}
     .book-form .tests-list li {width: 100%; flex-basis: 100%;}
