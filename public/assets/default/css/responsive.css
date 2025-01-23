@@ -1395,7 +1395,6 @@ Lms Responsive Style Start
     .levels-grouping .spell-levels-top strong {text-align: center;}
     .spell-levels-top {background-color: #fff; flex-direction: column;justify-content: flex-start;align-items: flex-start;gap: 15px;}
     .levels-progress.horizontal .progress-box {min-width: auto; width: 100%;}
-    .panel-content {padding-left: 0; padding-right: 0;}
     .panel-content .inline-filters li {width: 47%;}
     .panel-content .inline-filters a {width: 100%;}
     .trophy-levels .input::before {left: -46px;}
