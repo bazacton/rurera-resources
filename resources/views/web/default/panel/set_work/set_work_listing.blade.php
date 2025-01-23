@@ -17,7 +17,7 @@
 
                             <div class="list-group list-group-custom set-work-content list-group-flush totalChilds"
                                  data-childs="12">
-                                <div class="rurera-tables-list mb-30">
+                                <div class="rurera-tables-list">
                                 @if( $assignments->count() > 0 )
                                 @foreach($assignments as $assignmentObj)
                                     @include('web.default.panel.set_work.list_item',['assignmentObj' => $assignmentObj])
