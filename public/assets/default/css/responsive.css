@@ -768,6 +768,9 @@ Lms Responsive Style Start
     .list-group-item .switch-user-btn img {margin: 0;}
     .db-members .list-group .rurera-tables-list, 
     .db-members .list-group {background-color: inherit; border: 0;}
+    .db-members .list-group.has-listing-title {
+        padding-top: 0;
+    }
     .db-members .card .list-group-item,
     .db-members .card .list-group-item:last-child {padding: 0 15px 0; border: 0; border-bottom: 0; background-color: #fff; margin-bottom: 15px; border-radius: 10px;}
     .db-members .list-group-item .switch-user-btn,
