@@ -63,7 +63,8 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse li.active:before {background-color: var(--primary)}
 .sidebar-menu-holder {
     width: 100%;
-    justify-content: center;
+    display: flex;
+    justify-content: flex-end;
 }
 .sidebar-menu-holder .tooltip {
     left: auto !important;
