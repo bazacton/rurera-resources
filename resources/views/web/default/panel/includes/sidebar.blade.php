@@ -75,7 +75,7 @@
                                 <img src="/assets/default/img/sidebar/set-work.svg">
                             </span>
                         </a>
-                        <a href="/{{panelRoute()}}/set-work/create" class="font-16 nav-sub-title">Set Work</a>
+                        <a href="/{{panelRoute()}}/set-work" class="font-16 nav-sub-title">Set Work</a>
                     </li>
 
                 @endif
