@@ -1582,9 +1582,7 @@ Lms Responsive Style Start
     #analyticsAccordion .card .card-header {padding-left: 15px; padding-right: 0;}
     .user-profile-icons .dropdown:hover .dropdown-menu {top: 66px;}
     .class-thumb-list li.school-box {width: 30%; overflow: visible;}
-    .class-thumb .media-box {height: 80px;
-        width: 80px;
-    }
+    .class-thumb .media-box {height: 80px; width: 80px;}
     .class-thumb .media-box {position: relative; z-index: 2;}
     .class-thumb .media-icon {height: 80px; width: 80px;}
     .book-form .tests-list.payment-methods {flex-wrap: wrap;}
@@ -1604,9 +1602,5 @@ Lms Responsive Style Start
     .progress-learning-header a {white-space: nowrap;}
     .dashboard-banner-container {min-height: 150px;}
     .member-card-header.activities-header .dropdown {padding-top: 0;}
-    .edit-profile-body .form-group:has(.input-field) {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin: 0;
-    }
+    .edit-profile-body .form-group:has(.input-field) {flex: 0 0 100%; max-width: 100%; margin: 0;}
 }
