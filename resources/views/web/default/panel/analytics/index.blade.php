@@ -40,7 +40,7 @@
     <div class="activities-container p-20 p-lg-35 ">
         <div class="chart-filters p-0">
             <div class="filters-list mb-0">
-                <a href="#" class="filter-mobile-btn">Filters Dropdown</a>
+                <a href="#" class="filter-mobile-btn">Filters</a>
                 <ul class="analytics-type">
                     @php $link_append = (isset($_GET['child'])) ? '?child='.$_GET['child'] : ''; @endphp
                     <li {{($type_selected == 'all')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics{{$link_append}}" data-graph_type="all"><img src="/assets/default/img/sidebar/all.svg"> ALL</a></li>
