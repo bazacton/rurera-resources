@@ -1168,6 +1168,12 @@ Lms Responsive Style Start
     .lms-text-holder.lms-client-description {text-align: center; padding-right: 0 !important;}
     .wizard-steps-heading h3.font-24 {font-size: 1.5rem !important;}
     .populated-data .card .form-check-label {font-size: 1rem !important;}
+    .db-members:has(.no-record-found) .list-group .rurera-tables-list {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 0 0 10px 10px;
+    }
 }
 
 @media screen and (max-width: 640px) {
