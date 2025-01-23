@@ -93,4 +93,9 @@
     line-height: 24px; }
   .growl .growl-message {
     font-size: 14px;
-    line-height: 18px; }
+    line-height: 18px;
+    padding-top: 8px;
+  }
+    .growl .growl-message br {
+      display: none;
+    }
