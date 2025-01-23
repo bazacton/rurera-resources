@@ -302,11 +302,6 @@ a.last-activity span strong {color: #343434;}
 /*dashboard Card Style End*/
 
 /*Dashboard Packages Style Start*/
-.panel-content {
-    padding: 30px 15px 30px 254px;
-    width: calc(100% - 254px);
-    width: 100%;
-}
 .plan-switch-holder {text-align: center; margin: 0 0 50px; display: inline-flex; align-items: flex-start; justify-content: center; flex-wrap: wrap; position: relative;}
 .plan-switch-option {display: flex; align-items: center; justify-content: center; gap: 0;}
 .lms-choose-membership .plan-switch-option {justify-content: flex-start; padding: 10px 0;}
@@ -346,7 +341,7 @@ a.last-activity span strong {color: #343434;}
 .subscribe-plan .subscribe-title {text-align: center; margin: 0 0 10px;}
 .subscribe-plan .subscribe-title span {color: #807f85;}
 /*Dashboard Packages Style End*/
-.panel-content {padding: 30px 15px 30px 15px; width: calc(100% - 254px); width: 100%;}
+.panel-content {padding: 30px 15px 30px 15px;}
 @media (max-width:991px) {
     .panel-content {padding: 30px 15px 30px;}
 }
