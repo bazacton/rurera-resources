@@ -1540,6 +1540,6 @@ Lms Responsive Style Start
     .dashboard-banner-container {min-height: 150px;}
     .member-card-header.activities-header .dropdown {padding-top: 0;}
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 370px) {
     .member-card-header .dropdown {padding-top: 10px;}
 } 
