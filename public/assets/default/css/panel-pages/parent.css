@@ -593,6 +593,9 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 #progbar {margin-bottom: 15px;}
 .flexible-progress-bar li .icon-box img {max-width: 50%; filter: invert(98%) sepia(4%) saturate(4%) hue-rotate(264deg) brightness(107%) contrast(73%);}
 .googlepay-gateway-fields section.container {margin-top: 0 !important;}
+.social-info-holder .row {
+    gap: 25px 0;
+}
 .social-info-card-header {
     display: flex;
     align-items: center;
