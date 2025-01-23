@@ -66,7 +66,7 @@ $user_subscribed_for = isset( $user_subscribed_for)? $user_subscribed_for : 1;
         </div>
     </section>
     <section class="social-info-section pb-60 packages-list-modal {{$packages_list_class}}">
-    <div class="container rurera-hide">
+    <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="social-info-holder">
