@@ -33,7 +33,7 @@
     @endif
 	
     @stack('styles_top')
-    <link rel="stylesheet" href="/assets/default/css/responsive.css">
+    <link rel="stylesheet" href="/assets/default/css/responsive.css?ver={{$rand_id}}">
     @stack('scripts_top')
 
     @if(!empty($generalSettings['preloading']) and $generalSettings['preloading'] == '1')
