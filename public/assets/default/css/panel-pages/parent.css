@@ -593,7 +593,14 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 #progbar {margin-bottom: 15px;}
 .flexible-progress-bar li .icon-box img {max-width: 50%; filter: invert(98%) sepia(4%) saturate(4%) hue-rotate(264deg) brightness(107%) contrast(73%);}
 .googlepay-gateway-fields section.container {margin-top: 0 !important;}
-.social-info-card .icon-box {height: 45px; width: 50px; display: inline-flex; align-items: center; justify-content: center; background-color: #cfe3f4; padding: 8px; border-radius: 3px; margin: 0 0 15px;}
+.social-info-card-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.social-info-card .icon-box {height: 45px; width: 50px; display: inline-flex; align-items: center; justify-content: center; background-color: #cfe3f4; padding: 8px; border-radius: 3px;}
 .social-info-card .icon-box img {max-width: 100%;}
 .class-connect-modal .unlink-block.rurera-processing .unlink-btn {box-shadow: none;}
 .class-connect-modal .unlink-block .unlink-btn {padding: 14px 30px; display: inline-block;}
