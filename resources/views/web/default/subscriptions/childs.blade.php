@@ -58,7 +58,7 @@
           </div>
 
 		  <div class="col-12">
-			<div class="edit-element-title mb-20">
+			<div class="edit-element-title mb-10 mt-10">
 				<h6 class="font-weight-500">
 					School Preference
 				</h6>
