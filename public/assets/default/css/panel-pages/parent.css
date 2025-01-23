@@ -204,6 +204,7 @@ Assignments Table Style Start
 .member-card-header .db-members .profile-dropdown > a {margin-left: 15px; color: var(--primary); height: auto; font-weight: 500;}
 .member-card-header .dropdown .btn img {filter: invert(44%) sepia(99%) saturate(269%) hue-rotate(190deg) brightness(90%) contrast(93%); margin-right: 8px;}
 /*Dashboard members list style start*/
+.db-members .list-group.has-listing-title {padding-top: 30px;}
 .dashboard-students-holder {background-color: #fff; border: 1px solid #ddd; border-radius: 10px;}
 .dashboard-students-holder .db-form-tabs {margin-bottom: 0;}
 .db-members .card .card-header button,
