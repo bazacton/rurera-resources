@@ -4,7 +4,7 @@
             <div class="panel-section-card bg-white panel-border rounded-sm p-25">
                 <div class="row">
                     <div class="col-12">
-                        <div class="table-responsive transactions-table pt-20">
+                        <div class="table-responsive transactions-table pt-20 table-sm">
                             <table class="table text-center custom-table">
                                 <thead>
                                 <tr>
