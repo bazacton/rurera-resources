@@ -1204,7 +1204,12 @@ Lms Responsive Style Start
         padding: 0 !important;
         border: 0;
     }
-    /*Default SM Table For Mobile Style End*/
+    /*Default SM Table For Mobile Style End*/    
+    .svga-vert-order-blocks .svga-row,
+    .svga-vert-order-bodyzones .svga-row.row-bodyzones,
+    .svga-vert-order-controls .svga-row.row-controls {
+        margin: -10px;
+    }
 }
 
 @media screen and (max-width: 640px) {
