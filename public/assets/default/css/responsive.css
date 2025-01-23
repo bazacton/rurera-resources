@@ -1535,4 +1535,5 @@ Lms Responsive Style Start
     .progress-learning-header a {white-space: nowrap;}
     .dashboard-banner-container {min-height: 150px;}
     .member-card-header .dropdown {padding-top: 10px;}
+    .member-card-header.activities-header .dropdown {padding-top: 0;}
 } 
