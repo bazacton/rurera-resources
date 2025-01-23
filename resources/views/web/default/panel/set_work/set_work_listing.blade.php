@@ -35,9 +35,7 @@
                                 @endif
                                 </div>
 
-                                <div class="rurera-pagination">
-                                    {{ $assignments->links() }}
-                                </div>
+                                <div class="rurera-pagination">{{ $assignments->links() }}</div>
 
                             </div>
 
