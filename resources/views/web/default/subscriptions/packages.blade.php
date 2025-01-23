@@ -73,33 +73,39 @@ $user_subscribed_for = isset( $user_subscribed_for)? $user_subscribed_for : 1;
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="social-info-card">
-                                <span class="icon-box">
-                                    <img src="/assets/default/svgs/cancel.svg" alt="">
-                                </span>
-                                <div class="text-box">
+                                <div class="social-info-card-header">
+                                    <span class="icon-box">
+                                        <img src="/assets/default/svgs/cancel.svg" alt="">
+                                    </span>
                                     <h5>No hassle cancellation.</h5>
+                                </div>
+                                <div class="text-box"> 
                                     <p>End your subscription anytime, online, no phone call required</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="social-info-card">
-                                <span class="icon-box" style="background-color: #fff3e3;">
-                                    <img src="/assets/default/svgs/dots-two.svg" alt="">
-                                </span>
-                                <div class="text-box">
+                                <div class="social-info-card-header">
+                                    <span class="icon-box" style="background-color: #fff3e3;">
+                                        <img src="/assets/default/svgs/dots-two.svg" alt="">
+                                    </span>
                                     <h5>Super-fast email support</h5>
+                                </div>
+                                <div class="text-box">
                                     <p>Including 1:1 personalized help to fully leverage the tool</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="social-info-card">
-                                <span class="icon-box" style="background-color: #ffcfcf;">
-                                    <img src="/assets/default/svgs/version.svg" alt="">
-                                </span>
-                                <div class="text-box">
+                                <div class="social-info-card-header">
+                                    <span class="icon-box" style="background-color: #ffcfcf;">
+                                        <img src="/assets/default/svgs/version.svg" alt="">
+                                    </span>
                                     <h5>Upgrade/Downgrade anytime:</h5>
+                                </div>
+                                <div class="text-box">
                                     <p>Move to a different plan and duration with built-in pro-rating so you never pay extra</p>
                                 </div>
                             </div>
