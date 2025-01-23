@@ -8,7 +8,8 @@
 
 #growls-default {
   top: 50px;
-  right: 25px; }
+  right: 25px; 
+}
 #growls-tl {
   top: 10px;
   left: 10px; }
@@ -98,4 +99,11 @@
   }
     .growl .growl-message br {
       display: none;
+    }
+    @media screen and (max-width: 575px) {
+      #growls-default {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+      }
     }
