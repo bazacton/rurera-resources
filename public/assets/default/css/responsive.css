@@ -1180,8 +1180,12 @@ Lms Responsive Style Start
         display: none;
     }
     .table-sm tr {
+        background-color: #fff;
         display: flex;
         flex-direction: column;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 0 0 15px;
     }
     .table-sm tr td {
         display: flex;
@@ -1194,6 +1198,11 @@ Lms Responsive Style Start
         content: attr(data-th);
         color: #333;
         font-size: 15px;
+    }
+    .panel-section-card:has(.table-sm) {
+        background-color: inherit !important;
+        padding: 0 !important;
+        border: 0;
     }
     /*Default SM Table For Mobile Style End*/
 }
