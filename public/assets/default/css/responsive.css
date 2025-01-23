@@ -572,6 +572,7 @@ Lms Responsive Style Start
     .db-members .list-group:has(.rurera-tables-list) {width: 100%;}
     .db-members .card .card-body .list-group:has(.rurera-tables-list) {padding: 0 0 15px; overflow: hidden; overflow-x: auto;}
     .db-members .card .card-body {padding: 35px 0 0; overflow: hidden; overflow-x: auto;}
+    .member-card-header {margin-bottom: 0;}
     .db-members .card .card-body:has(.rurera-tables-list) {padding-top: 0;}
 }
 @media screen and (min-width: 767px) and (max-width: 992px) {
@@ -1168,12 +1169,6 @@ Lms Responsive Style Start
     .lms-text-holder.lms-client-description {text-align: center; padding-right: 0 !important;}
     .wizard-steps-heading h3.font-24 {font-size: 1.5rem !important;}
     .populated-data .card .form-check-label {font-size: 1rem !important;}
-    .db-members:has(.no-record-found) .list-group .rurera-tables-list {
-        background-color: #fff;
-        border: 1px solid #ddd;
-        padding: 15px;
-        border-radius: 0 0 10px 10px;
-    }
 }
 
 @media screen and (max-width: 640px) {
