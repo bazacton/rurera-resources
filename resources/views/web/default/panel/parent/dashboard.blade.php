@@ -705,7 +705,7 @@
 </div>
 
 <div class="modal fade class-connect-modal" id="class-connect-modal" tabindex="-1" aria-labelledby="class-connect-modallabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
                 <strong>Connect To Class</strong>
@@ -810,7 +810,7 @@
     </div>
 </div>
 <div class="modal fade class-connect-modal" id="cancelsubscriptionModal" tabindex="-1" aria-labelledby="cancelsubscriptionModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             
 			<div class="modal-header">
@@ -835,7 +835,7 @@
 </div>
 
 <div class="modal fade class-connect-modal" id="unlinkModal" tabindex="-1" aria-labelledby="unlinkModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
                 <strong>Unlink Student</strong>
