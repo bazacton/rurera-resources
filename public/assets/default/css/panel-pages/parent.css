@@ -601,7 +601,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .lms-choose-membership .social-info-card-header h5 {
     margin-bottom: 0;
