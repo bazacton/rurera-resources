@@ -993,7 +993,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">Back to Dashboard <span aria-hidden="true">×</span></button>
             </div>
             <div class="modal-body">
-                <div class="container container-nosidebar">
+                <div class="container">
                 <div class="tab-content subscription-content" id="nav-tabContent">
 
                 </div>
