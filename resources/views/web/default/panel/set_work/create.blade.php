@@ -15,602 +15,587 @@
 @section('content')
 
 <div class="container set-work-container lms-choose-membership">
-                    <div class="row">
-                        <div class="col-12">
-                            <form action="/panel/set-work/{{ !empty($assignment) ? $assignment->id.'/update' : 'store' }}" method="Post" class="rurera-form-validation">
-                                {{ csrf_field() }}
-
-                                <ul class="set-work-tagss text-left 223 rurera-hide remove-pending"></ul>
-
-                                <div class="wizard-steps active" data-step_id="1">
-                                    <div class="wizard-steps-heading mb-30 text-left 223">
-                                        <h3 class="font-24 mb-5">Set Work</h3>
-                                        <p class="text-muted font-16">The test changes as you go, getting tougher if you keep getting things right, and easier if you find it hard. Let's make a special practice plan just for your student, with questions that are just right for students level.</p>
-                                    </div>
-                                    <div class="years-group populated-data">
-                                        <div class="form-section mb-20 text-left 223">
-                                            <h2 class="section-title font-18 font-weight-bold">Select Student</h2>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="input-group">
-
-                                                <div class="radio-buttons justify-content-left">
-
-                                                    @if( !empty( $childs ) )
-                                                    @php $child_count = 0; @endphp
-                                                            @foreach($childs as $childLinkObj)
-                                                            @php $childObj = $childLinkObj->user; @endphp
-                                                            @php
-                                                            $userSubscriptions = $childObj->userSubscriptions;
-                                                            $is_user_subscribed = isset( $userSubscriptions->id )? true : false;
-                                                            if($is_user_subscribed == true){
-                                                                $child_count++;
-                                                            }
-                                                            $selected_child = ($child_count == 1)? 'checked' : '';
-                                                            @endphp
-                                                            
-                                                                @if( $is_user_subscribed == true)
-																	<input type="hidden" class="user-permissions" data-type="sats" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('sats')}}">
-																	<input type="hidden" class="user-permissions" data-type="11plus" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
-																	<input type="hidden" class="user-permissions" data-type="iseb" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
-																	<input type="hidden" class="user-permissions" data-type="cat4" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
-																	<input type="hidden" class="user-permissions" data-type="independent_exams" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
-																	<label class="card-radio">
-																		<input type="radio" data-year_id="{{$childObj->year_id}}" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_users][]"
-																				value="{{$childObj->id}}" class="assignment-user-class" data-tag_title="{{$childObj->get_full_name()}}" {{$selected_child}}>
-																		<span class="radio-btn"><i class="las la-check"></i>
-																			<div class="card-icon">
-																			<img src="{{ $childObj->getAvatar() }}">
-																				<h3>{{$childObj->get_full_name()}}</h3>
-																			</div>
-																		</span>
-																	</label>
-                                                                @else
-                                                                <a href="javascript:;" class="subscription-modal rurera-hide remove-pending" data-type="update_package_confirm" data-id="{{$childObj->id}}">
-                                                                    <span class="radio-btn disabled-style"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                        <img src="{{ $childObj->getAvatar() }}">
-                                                                            <h3>{{$childObj->get_full_name()}}</h3>
-                                                                            <span>Buy Membership</span>
-                                                                        </div>
-                                                                    </span>
-                                                                </a>
-                                                                @endif
-                                                            @endforeach
-                                                    @endif
-                                                    <label class="card-radio add-student-btn rurera-hide remove-pending">
-                                                        <a href="javascript:;" class="subscription-modal add-student-modal" data-type="child_register" data-id="0" >
-                                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                            <div class="card-icon">
-                                                                <img src="/assets/default/svgs/add-con.svg">
-                                                                <h3>Student</h3>
-                                                        </div>
-                                                    </span>
-                                                        </a>
-
-                                                    </label>
-                                                    <input type="hidden" class="year_id_field" name="ajax[{{ !empty($quiz) ? $quiz->id : 'new' }}][year_id]" value="0">
-                                                </div>
-                                                <div class="invalid-feedback"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="years-group populated-data rurera-hide remove-pending">
-                                        <div class="form-group">
-                                            <div class="form-section mb-20 text-left 223">
-                                                <h2 class="section-title font-24">Select Type</h2>
-                                            </div>
-
-
-                                            <div class="radio-buttons justify-content-left mb-50">
-                                                <label class="card-radio">
-                                                    <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type_check]"
-                                                        class="assignment_type_check" value="practice_test" data-tag_title="Set Practice" checked>
-                                                    <span class="radio-btn"><i class="las la-check"></i>
-                                                                <div class="card-icon">
-                                                                    <h3>Set Practice</h3>
-                                                            </div>
-
-                                                        </span>
-                                                </label>
-                                                <label class="card-radio">
-                                                    <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type_check]"
-                                                        class="assignment_type_check" value="mock_test" data-tag_title="Set Mock Test">
-                                                    <span class="radio-btn"><i class="las la-check"></i>
-                                                                <div class="card-icon">
-                                                                    <h3>Set Mock Test</h3>
-                                                            </div>
-
-                                                        </span>
-                                                </label>
-                                            </div>
-
-                                        </div>
-                                    </div>
-									
-									
-                                    <div class="years-group populated-data">
-                                        <div class="form-section mb-20 text-left 223">
-                                            <h2 class="section-title font-18 font-weight-bold">Select Type of Practice</h2>
-                                        </div>
-                                        <div class="form-group">
-
-
-                                            <div class="input-group">
-
-                                                <div class="radio-buttons justify-content-left">
-                                                    <label class="card-radio practice-item-active" data-next_step="3">
-                                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
-                                                            class="assignment_topic_type_check" value="practice" data-tag_title="Courses" checked>
-                                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                            <div class="card-icon">
-                                                            <img src="/assets/default/img/assignment-logo/practice.png">
-                                                                <h3>Courses</h3>
-                                                        </div>
-                                                    </span>
-                                                    </label>
-                                                   
-                                                    <label class="card-radio  " data-next_step="3">
-                                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
-                                                            class="assignment_topic_type_check" value="vocabulary" data-tag_title="Vocabulary">
-                                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                            <div class="card-icon">
-                                                                <img src="/assets/default/img/assignment-logo/vocabulary.png">
-                                                                <h3>Vocabulary</h3>
-                                                        </div>
-
-                                                        </span>
-                                                    </label>
-
-                                                    <label class="card-radio " data-next_step="3">
-                                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
-                                                            class="assignment_topic_type_check" value="timestables" data-tag_title="Timestables">
-                                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                            <div class="card-icon">
-                                                                <img src="/assets/default/img/assignment-logo/timestables.png">
-                                                                <h3>Timestables</h3>
-                                                        </div>
-
-                                                        </span>
-                                                    </label>
-													
-													<label class="card-radio " data-next_step="3">
-													<input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
-														class="assignment_topic_type_check" value="mock_test" data-tag_title="Mock Test">
-													<span class="radio-btn"><i class="las la-check"></i>
-														<div class="card-icon">
-															<img src="/assets/default/img/assignment-logo/independent_exams.png">
-															<h3>Mock Test</h3>
-													</div>
-
-													</span>
-												</label>
-
-                                                    <label class="card-radio " data-next_step="3">
-                                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
-                                                            class="assignment_topic_type_check" value="sats" data-tag_title="SATs">
-                                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                            <div class="card-icon">
-                                                                <img src="/assets/default/img/assignment-logo/sats.png">
-                                                                <h3>SATs</h3>
-                                                        </div>
-
-                                                        </span>
-                                                    </label>
-
-                                                    <label class="card-radio " data-next_step="3">
-                                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
-                                                            class="assignment_topic_type_check" value="books" data-tag_title="Books">
-                                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                            <div class="card-icon">
-                                                                <img src="/assets/default/img/types/books.svg">
-                                                                <h3>Books</h3>
-                                                        </div>
-
-                                                        </span>
-                                                    </label>
-
-                                                </div>
-                                                <div class="invalid-feedback"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-									
-									<div class="years-group populated-data assignment_topic_type_fields mock_test_fields row">
-
-                                        <div class="col-12 col-lg-12 col-md-12">
-										
-                                            <div class="form-section mb-20 text-left 223">
-                                                <h2 class="section-title font-18 font-weight-bold">Select a Topic</h2>
-                                            </div>
-                                            <div class="tests-list-holder mb-25">
-                                                <ul class="tests-list mb-30">
-                                                    <input type="radio" class="rurera-hide assignment_topic_type_check assignment_topic_type_mock" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]" value="">
-                                                    <li data-type="all" data-test_type="all" class="active" data-tag_title="All Tests">All Tests</li>
-                                                    <li data-type="11plus" data-test_type="11plus" data-tag_title="11Plus"><img src="/assets/default/img/assignment-logo/11plus.png" alt=""> 11Plus</li>
-                                                    <li data-type="iseb" data-test_type="iseb" data-tag_title="ISEB"><img src="/assets/default/img/assignment-logo/iseb.png" alt=""> ISEB</li>
-                                                    <li data-type="cat4" data-test_type="cat4" data-tag_title="CAT 4"><img src="/assets/default/img/assignment-logo/cat4.png" alt=""> CAT 4</li>
-                                                    <li data-type="independent_exams" data-test_type="independent_exams" data-tag_title="Independent Exams"><img src="/assets/default/img/assignment-logo/independent_exams.png" alt=""> Independent Exams</li>
-                                                </ul>
-                                            </div>
-                                            <h4 class="total-tests has-border font-18 font-weight-bold">Select Tests: {{$sats->count()}}</h4>
-                                        </div>
-
-
-                                        <div class="col-12 col-lg-12 col-md-12">
-                                            <div class="sats-listing-card medium mt-30">
-                                                <table class="simple-table">
-                                                    <tbody>
-                                                    <input type="radio" data-total_questions="0"  name="ajax[new][topic_ids]" class="rurera-hide topic_selection topic_select_radio" value="0">
-                                                    @if( !empty( $sats))
-                                                    @php $counter = 0; @endphp
-                                                        @foreach( $sats as $rowObj)
-                                                            @include('web.default.tests.single_item_assignment',['rowObj' => $rowObj])
-                                                        @endforeach
-                                                    @endif
-                                                    </tbody>
-                                                </table>
-                                                <div class="sats-listing-empty rurera-hidden"><p>No Tests Found</p></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="years-group populated-data assignment_type_check_fields practice_test_fields">
-
-
-                                        <div class="form-section assignment_topic_type_fields practice_fields mb-20 text-left 223 ajax-title show-after-ajax">
-                                            <h2 class="section-title font-18 font-weight-bold">Select a Subject</h2>
-                                        </div>
-
-
-                                        <div class="form-section assignment_topic_type_fields 11sats_fields mb-20 text-left 223">
-                                            <h2 class="section-title font-18 font-weight-bold">Sats</h2>
-                                        </div>
-
-
-                                        <div class="form-section assignment_topic_type_fields 11plus_fields mb-20 text-left 223">
-                                            <h2 class="section-title font-18 font-weight-bold">11 Plus</h2>
-                                        </div>
-
-
-                                        <div class="form-section assignment_topic_type_fields independent_exams_fields mb-20 text-left 223">
-                                            <h2 class="section-title font-18 font-weight-bold">Independent Exams</h2>
-                                        </div>
-
-
-                                        <div class="form-section assignment_topic_type_fields iseb_fields mb-20 text-left 223">
-                                            <h2 class="section-title font-18 font-weight-bold">ISEB</h2>
-                                        </div>
-
-
-                                        <div class="form-section assignment_topic_type_fields cat4_fields mb-20 text-left 223">
-                                            <h2 class="section-title font-18 font-weight-bold">CAT 4</h2>
-                                        </div>
-
-
-                                        <div class="form-section assignment_topic_type_fields vocabulary_fields mb-20 text-left 223 ajax-title show-after-ajax">
-                                            <h2 class="section-title font-18 font-weight-bold">Select List</h2>
-                                        </div>
-
-                                        <div class="form-section assignment_topic_type_fields timestables_fields mb-20 text-left 223 ajax-title show-after-ajax">
-                                            <h2 class="section-title font-18 font-weight-bold">Times Tables</h2>
-                                        </div>
-
-                                        <div class="form-section assignment_topic_type_fields assignment_fields mb-20 text-left 223 ajax-title show-after-ajax">
-                                            <h2 class="section-title font-18 font-weight-bold">Custom Assignment</h2>
-                                        </div>
-
-                                        <div class="practice-quiz-ajax-fields setwork-fields"></div>
-
-                                        @php
-                                        $tables_no = isset( $assignment->tables_no )? json_decode($assignment->tables_no) : array();
-                                        @endphp
-
-
-                                        <div class="form-group assignment_topic_type_fields timestables_fields ajax-title show-after-ajax">
-											<div class="timestables-heatmap"></div>
-                                            <div class="questions-select-number">
-                                                <ul class="d-flex justify-content-left flex-wrap mb-30">
-                                                    <li><input type="checkbox" value="10" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(10,$tables_no)?
-                                                        'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
-                                                    <li><input type="checkbox" value="2" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(2,$tables_no)?
-                                                        'checked' : 'checked'}} id="tables_two" /> <label for="tables_two">2</label></li>
-                                                    <li><input type="checkbox" value="5" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(5,$tables_no)?
-                                                        'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
-                                                    <li><input type="checkbox" value="3" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(3,$tables_no)?
-                                                        'checked' : 'checked'}} id="tables_three" /> <label for="tables_three">3</label></li>
-                                                    <li><input type="checkbox" value="4" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(4,$tables_no)?
-                                                        'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
-                                                    <li><input type="checkbox" value="8" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(8,$tables_no)?
-                                                        'checked' : ''}} id="tables_eight" /> <label for="tables_eight">8</label></li>
-                                                    <li><input type="checkbox" value="6" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(6,$tables_no)?
-                                                        'checked' : ''}} id="tables_six" /> <label for="tables_six">6</label></li>
-                                                    <li><input type="checkbox" value="7" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(7,$tables_no)?
-                                                        'checked' : ''}} id="tables_seven" /> <label for="tables_seven">7</label></li>
-                                                    <li><input type="checkbox" value="9" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(9,$tables_no)?
-                                                        'checked' : ''}} id="tables_nine" /> <label for="tables_nine">9</label></li>
-                                                    <li><input type="checkbox" value="11" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(11,$tables_no)?
-                                                        'checked' : ''}} id="tables_eleven" /> <label for="tables_eleven">11</label></li>
-                                                    <li><input type="checkbox" value="12" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(12,$tables_no)?
-                                                        'checked' : ''}} id="tables_twelve" /> <label for="tables_twelve">12</label></li>
-                                                    <li><input type="checkbox" value="13" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(13,$tables_no)?
-                                                        'checked' : ''}} id="tables_thirteen" /> <label for="tables_thirteen">13</label></li>
-                                                    <li><input type="checkbox" value="14" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(14,$tables_no)?
-                                                        'checked' : ''}} id="tables_fourteen" /> <label for="tables_fourteen">14</label></li>
-                                                    <li><input type="checkbox" value="15" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(15,$tables_no)?
-                                                        'checked' : ''}} id="tables_fifteen" /> <label for="tables_fifteen">15</label></li>
-                                                    <li><input type="checkbox" value="16" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(16,$tables_no)?
-                                                        'checked' : ''}} id="tables_sixteen" /> <label for="tables_sixteen">16</label></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        <div class="practice-quiz-topics-list assignment_topic_type_fields practice_fields"></div>
-
-
-                                    </div>
-									
-									
-									<div class="years-group populated-data">
-                                        <div class="form-section mb-20 text-left 223">
-                                            <h2 class="section-title font-18 font-weight-bold">General information</h2>
-                                        </div>
-                                        <div class="row mb-15">
-                                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                                <div class="form-group">
-                                                    <label class="input-label font-weight-bold">Practice Title</label>
-													<div class="input-group">
-                                                    <input type="text"
-                                                        name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][title]"
-                                                        value="{{ !empty($assignment) ? $assignment->title : old('title') }}"
-                                                        class="js-ajax-title form-control rurera-req-field bg-white"
-                                                        placeholder="Practice Title"/>
-													</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                                <div class="form-group">
-                                                    <label class="input-label font-weight-bold">Practice Start Date</label>
-                                                    <div class="input-group">
-                                                        <input type="text" autocomplete="off"
-                                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_start_date]"
-                                                            value="{{ !empty($assignment) ? dateTimeFormat($assignment->assignment_start_date, 'Y-m-d', false) : old('assignment_start_date') }}"
-                                                            class="form-control bg-white practice-start-date rureradatepicker rurera-req-field @error('assignment_start_date') is-invalid @enderror"
-                                                            min="{{date('Y-m-d')}}"
-                                                            placeholder="Practice Start Date"/>
-                                                        @error('assignment_start_date')
-                                                        <div class="invalid-feedback">
-                                                            {{ $message }}
-                                                        </div>
-                                                        @enderror
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                                <div class="form-group conditional_fields Daily_field Weekly_field Monthly_field">
-                                                    <label class="input-label font-weight-bold">Practice Due Date</label>
-                                                    <div class="input-group">
-                                                        <input type="text" autocomplete="off"
-                                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_end_date]"
-                                                            value="{{ !empty($assignment) ? dateTimeFormat($assignment->assignment_end_date, 'Y-m-d', false) : old('assignment_end_date') }}"
-                                                            class="form-control bg-white practice-due-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}"
-                                                            placeholder="Practice Due Date"/>
-                                                        <div class="invalid-feedback"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-
-                                        <div class="row assignment_topic_type_fields1 practice_fields vocabulary_fields1 no-of-questions-fields">
-                                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
-                                                <div class="form-group">
-                                                    <label class="input-label font-weight-bold mb-0">Show No of Questions <span class="max_questions"></span></label>
-
-                                                    <div class="range-slider">
-                                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
-                                                        <div class="range-slider_line">
-                                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
-                                                        </div>
-                                                        <input type="range" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][no_of_questions]" value="0"
-                                                            class="js-ajax-title form-control rurera-req-field no_of_questions range-slider-field" min="0" max="0" placeholder=""/>
-                                                    </div>
-
-
-                                                    <div class="invalid-feedback"></div>
-
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-12 col-6 assignment_topic_type_fields timestables_fields vocabulary_fields mock_test_fields sats_fields books_fields">
-                                                <div class="form-group">
-                                                    <label class="input-label font-weight-bold mb-0">No of Attempts</label>
-
-                                                    <div class="invalid-feedback"></div>
-                                                    <div class="range-slider">
-                                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
-                                                        <div class="range-slider_line">
-                                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
-                                                        </div>
-                                                        <input type="range"
-                                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][no_of_attempts]"
-                                                            value="0"
-                                                            class="js-ajax-title form-control no_of_attempts range-slider-field"
-                                                            placeholder="" min="1" max="10"/>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-group assignment_topic_type_fields timestables_fields">
-                                            <label class="input-label mb-10 font-weight-bold">Duration Type</label>
-
-                                            <div class="years-group populated-data input-group">
-
-
-                                                <div class="radio-buttons justify-content-left">
+    <div class="row">
+        <div class="col-12">
+            <form action="/panel/set-work/{{ !empty($assignment) ? $assignment->id.'/update' : 'store' }}" method="Post" class="rurera-form-validation">
+                {{ csrf_field() }}
+
+                <ul class="set-work-tagss text-left 223 rurera-hide remove-pending"></ul>
+
+                <div class="wizard-steps active" data-step_id="1">
+                    <div class="wizard-steps-heading mb-30 text-left 223">
+                        <h3 class="font-24 mb-5">Set Work</h3>
+                        <p class="text-muted font-16">The test changes as you go, getting tougher if you keep getting things right, and easier if you find it hard. Let's make a special practice plan just for your student, with questions that are just right for students level.</p>
+                    </div>
+                    <div class="years-group populated-data">
+                        <div class="form-section mb-20 text-left 223">
+                            <h2 class="section-title font-18 font-weight-bold">Select Student</h2>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+
+                                <div class="radio-buttons justify-content-left">
+
+                                    @if( !empty( $childs ) )
+                                    @php $child_count = 0; @endphp
+                                            @foreach($childs as $childLinkObj)
+                                            @php $childObj = $childLinkObj->user; @endphp
+                                            @php
+                                            $userSubscriptions = $childObj->userSubscriptions;
+                                            $is_user_subscribed = isset( $userSubscriptions->id )? true : false;
+                                            if($is_user_subscribed == true){
+                                                $child_count++;
+                                            }
+                                            $selected_child = ($child_count == 1)? 'checked' : '';
+                                            @endphp
+                                            
+                                                @if( $is_user_subscribed == true)
+                                                    <input type="hidden" class="user-permissions" data-type="sats" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('sats')}}">
+                                                    <input type="hidden" class="user-permissions" data-type="11plus" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
+                                                    <input type="hidden" class="user-permissions" data-type="iseb" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
+                                                    <input type="hidden" class="user-permissions" data-type="cat4" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
+                                                    <input type="hidden" class="user-permissions" data-type="independent_exams" data-user_id="{{$childObj->id}}" value="{{$childObj->subscription('11plus')}}">
                                                     <label class="card-radio">
-                                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][duration_type]"
-                                                            class="duration_conditional_check" value="total_practice" checked>
+                                                        <input type="radio" data-year_id="{{$childObj->year_id}}" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_users][]"
+                                                                value="{{$childObj->id}}" class="assignment-user-class" data-tag_title="{{$childObj->get_full_name()}}" {{$selected_child}}>
                                                         <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
-                                                                <h3>Total Practice</h3>
-                                                        </div>
-
-                                                    </span>
+                                                            <img src="{{ $childObj->getAvatar() }}">
+                                                                <h3>{{$childObj->get_full_name()}}</h3>
+                                                            </div>
+                                                        </span>
                                                     </label>
-                                                    <label class="card-radio">
-                                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][duration_type]"
-                                                            class="duration_conditional_check" value="per_question">
-                                                        <span class="radio-btn"><i class="las la-check"></i>
-                                                            <div class="card-icon">
-                                                                <h3>Per Question</h3>
+                                                @else
+                                                <a href="javascript:;" class="subscription-modal rurera-hide remove-pending" data-type="update_package_confirm" data-id="{{$childObj->id}}">
+                                                    <span class="radio-btn disabled-style"><i class="las la-check"></i>
+                                                        <div class="card-icon">
+                                                        <img src="{{ $childObj->getAvatar() }}">
+                                                            <h3>{{$childObj->get_full_name()}}</h3>
+                                                            <span>Buy Membership</span>
                                                         </div>
-
                                                     </span>
-                                                    </label>
-                                                </div>
-
-                                                <div class="invalid-feedback"></div>
-                                            </div>
-
+                                                </a>
+                                                @endif
+                                            @endforeach
+                                    @endif
+                                    <label class="card-radio add-student-btn rurera-hide remove-pending">
+                                        <a href="javascript:;" class="subscription-modal add-student-modal" data-type="child_register" data-id="0" >
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                                <img src="/assets/default/svgs/add-con.svg">
+                                                <h3>Student</h3>
                                         </div>
+                                    </span>
+                                        </a>
 
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
-                                        <div class="form-group">
-                                            <label class="input-label font-weight-bold mb-0">Practice Time (<span class="practice_interval_data">Minutes</span>)</label>
-                                            <div class="range-slider">
-                                                <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
-                                                <div class="range-slider_line">
-                                                    <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
-                                                </div>
-                                                <input type="range"
-                                                    name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][practice_time]"
-                                                    value="0"
-                                                    class="js-ajax-title form-control practice_interval range-slider-field" step="20" min="0" max="240"
-                                                    placeholder=""/>
-                                            </div>
-                                            <div class="invalid-feedback"></div>
-                                        </div>
-
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
-                                        <div class="form-group duration_type_fields per_question_fields assignment_topic_type_fields timestables_fields">
-                                            <label class="input-label font-weight-bold">Questions Time Interval (<span class="time_interval_data">Seconds</span>)</label>
-
-                                            <div class="range-slider">
-                                                <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
-                                                <div class="range-slider_line">
-                                                    <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
-                                                </div>
-                                                <input type="range"
-                                                    name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][time_interval]"
-                                                    value="0"
-                                                    class="js-ajax-title form-control time_interval range-slider-field" step="10" min="0" max="1200"
-                                                    placeholder=""/>
-                                            </div>
-
-                                            <div class="invalid-feedback"></div>
-                                        </div>
-                                            </div>
-                                        </div>
-
-
-                                    <div class="form-group assignment_topic_type_fields practice_fields1">
-                                        <label class="input-label font-weight-bold">Practice Method</label>
-                                        <div class="plan-switch-option" style="justify-content: left;">
-                                                <span class="switch-label font-18">Completion Target</span> &nbsp;&nbsp;&nbsp;&nbsp;
-                                                <div class="plan-switch">
-                                                    <div class="custom-control custom-switch"><input type="checkbox" name="auto_generate" class="assignment_method_check custom-control-input" id="method_check" value="target_improvements"><label class="custom-control-label" for="method_check"></label></div>
-                                                </div>
-                                        </div>
-                                    </div>
-
-                                        <div class="row assignment_topic_type_fields practice_fields1">
-                                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
-                                                <div class="form-group assignment_method_check_fields target_improvements_fields">
-                                                    <label class="input-label font-weight-bold">Percentage of Correct Answers</label>
-
-                                                    <div class="invalid-feedback"></div>
-                                                    <div class="range-slider">
-                                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
-                                                        <div class="range-slider_line">
-                                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
-                                                        </div>
-                                                        <input type="range"
-                                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][target_percentage]"
-                                                            value="0" data-label="%"
-                                                            class="js-ajax-title form-control correct_answers_percentage range-slider-field" min="0" max="100"
-                                                            placeholder=""/>
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
-                                                <div class="form-group assignment_method_check_fields target_improvements_fields">
-                                                    <label class="input-label font-weight-bold">Average Time of Correct Answers (Seconds)</label>
-
-                                                    <div class="range-slider">
-                                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
-                                                        <div class="range-slider_line">
-                                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
-                                                        </div>
-                                                        <input type="range"
-                                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][target_average_time]"
-                                                            value="0"
-                                                            class="js-ajax-title form-control average_time range-slider-field" min="0" max="60"
-                                                            placeholder=""/>
-                                                    </div>
-                                                    <div class="invalid-feedback"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-										<div class="col-12 col-sm-12 col-md-12 col-lg-12">
-											<div class="form-group mt-30">
-												<div class="btn-field">
-													<button type="submit" class="nav-link js-submit-quiz-form">Create</button>
-												</div>
-											</div>
-										</div>
-
-
-
-                                    </div>
-
+                                    </label>
+                                    <input type="hidden" class="year_id_field" name="ajax[{{ !empty($quiz) ? $quiz->id : 'new' }}][year_id]" value="0">
                                 </div>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+                    </div>
 
-                                <div class="wizard-steps" data-step_id="2">
+                    <div class="years-group populated-data rurera-hide remove-pending">
+                        <div class="form-group">
+                            <div class="form-section mb-20 text-left 223">
+                                <h2 class="section-title font-24">Select Type</h2>
+                            </div>
 
+
+                            <div class="radio-buttons justify-content-left mb-50">
+                                <label class="card-radio">
+                                    <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type_check]"
+                                        class="assignment_type_check" value="practice_test" data-tag_title="Set Practice" checked>
+                                    <span class="radio-btn"><i class="las la-check"></i>
+                                                <div class="card-icon">
+                                                    <h3>Set Practice</h3>
+                                            </div>
+
+                                        </span>
+                                </label>
+                                <label class="card-radio">
+                                    <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type_check]"
+                                        class="assignment_type_check" value="mock_test" data-tag_title="Set Mock Test">
+                                    <span class="radio-btn"><i class="las la-check"></i>
+                                                <div class="card-icon">
+                                                    <h3>Set Mock Test</h3>
+                                            </div>
+
+                                        </span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="years-group populated-data">
+                        <div class="form-section mb-20 text-left 223">
+                            <h2 class="section-title font-18 font-weight-bold">Select Type of Practice</h2>
+                        </div>
+                        <div class="form-group">
+
+
+                            <div class="input-group">
+
+                                <div class="radio-buttons justify-content-left">
+                                    <label class="card-radio practice-item-active" data-next_step="3">
+                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                            class="assignment_topic_type_check" value="practice" data-tag_title="Courses" checked>
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                            <img src="/assets/default/img/assignment-logo/practice.png">
+                                                <h3>Courses</h3>
+                                        </div>
+                                    </span>
+                                    </label>
                                     
+                                    <label class="card-radio  " data-next_step="3">
+                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                            class="assignment_topic_type_check" value="vocabulary" data-tag_title="Vocabulary">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                                <img src="/assets/default/img/assignment-logo/vocabulary.png">
+                                                <h3>Vocabulary</h3>
+                                        </div>
+
+                                        </span>
+                                    </label>
+
+                                    <label class="card-radio " data-next_step="3">
+                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                            class="assignment_topic_type_check" value="timestables" data-tag_title="Timestables">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                                <img src="/assets/default/img/assignment-logo/timestables.png">
+                                                <h3>Timestables</h3>
+                                        </div>
+
+                                        </span>
+                                    </label>
+                                    
+                                    <label class="card-radio " data-next_step="3">
+                                    <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                        class="assignment_topic_type_check" value="mock_test" data-tag_title="Mock Test">
+                                    <span class="radio-btn"><i class="las la-check"></i>
+                                        <div class="card-icon">
+                                            <img src="/assets/default/img/assignment-logo/independent_exams.png">
+                                            <h3>Mock Test</h3>
+                                    </div>
+
+                                    </span>
+                                </label>
+
+                                    <label class="card-radio " data-next_step="3">
+                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                            class="assignment_topic_type_check" value="sats" data-tag_title="SATs">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                                <img src="/assets/default/img/assignment-logo/sats.png">
+                                                <h3>SATs</h3>
+                                        </div>
+
+                                        </span>
+                                    </label>
+
+                                    <label class="card-radio " data-next_step="3">
+                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                            class="assignment_topic_type_check" value="books" data-tag_title="Books">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                                <img src="/assets/default/img/types/books.svg">
+                                                <h3>Books</h3>
+                                        </div>
+
+                                        </span>
+                                    </label>
+
+                                </div>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="years-group populated-data assignment_topic_type_fields mock_test_fields row">
+
+                        <div class="col-12 col-lg-12 col-md-12">
+                        
+                            <div class="form-section mb-20 text-left 223">
+                                <h2 class="section-title font-18 font-weight-bold">Select a Topic</h2>
+                            </div>
+                            <div class="tests-list-holder mb-25">
+                                <ul class="tests-list mb-30">
+                                    <input type="radio" class="rurera-hide assignment_topic_type_check assignment_topic_type_mock" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]" value="">
+                                    <li data-type="all" data-test_type="all" class="active" data-tag_title="All Tests">All Tests</li>
+                                    <li data-type="11plus" data-test_type="11plus" data-tag_title="11Plus"><img src="/assets/default/img/assignment-logo/11plus.png" alt=""> 11Plus</li>
+                                    <li data-type="iseb" data-test_type="iseb" data-tag_title="ISEB"><img src="/assets/default/img/assignment-logo/iseb.png" alt=""> ISEB</li>
+                                    <li data-type="cat4" data-test_type="cat4" data-tag_title="CAT 4"><img src="/assets/default/img/assignment-logo/cat4.png" alt=""> CAT 4</li>
+                                    <li data-type="independent_exams" data-test_type="independent_exams" data-tag_title="Independent Exams"><img src="/assets/default/img/assignment-logo/independent_exams.png" alt=""> Independent Exams</li>
+                                </ul>
+                            </div>
+                            <h4 class="total-tests has-border font-18 font-weight-bold">Select Tests: {{$sats->count()}}</h4>
+                        </div>
 
 
+                        <div class="col-12 col-lg-12 col-md-12">
+                            <div class="sats-listing-card medium mt-30">
+                                <table class="simple-table">
+                                    <tbody>
+                                    <input type="radio" data-total_questions="0"  name="ajax[new][topic_ids]" class="rurera-hide topic_selection topic_select_radio" value="0">
+                                    @if( !empty( $sats))
+                                    @php $counter = 0; @endphp
+                                        @foreach( $sats as $rowObj)
+                                            @include('web.default.tests.single_item_assignment',['rowObj' => $rowObj])
+                                        @endforeach
+                                    @endif
+                                    </tbody>
+                                </table>
+                                <div class="sats-listing-empty rurera-hidden"><p>No Tests Found</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="years-group populated-data assignment_type_check_fields practice_test_fields">
+
+
+                        <div class="form-section assignment_topic_type_fields practice_fields mb-20 text-left 223 ajax-title show-after-ajax">
+                            <h2 class="section-title font-18 font-weight-bold">Select a Subject</h2>
+                        </div>
+
+
+                        <div class="form-section assignment_topic_type_fields 11sats_fields mb-20 text-left 223">
+                            <h2 class="section-title font-18 font-weight-bold">Sats</h2>
+                        </div>
+
+
+                        <div class="form-section assignment_topic_type_fields 11plus_fields mb-20 text-left 223">
+                            <h2 class="section-title font-18 font-weight-bold">11 Plus</h2>
+                        </div>
+
+
+                        <div class="form-section assignment_topic_type_fields independent_exams_fields mb-20 text-left 223">
+                            <h2 class="section-title font-18 font-weight-bold">Independent Exams</h2>
+                        </div>
+
+
+                        <div class="form-section assignment_topic_type_fields iseb_fields mb-20 text-left 223">
+                            <h2 class="section-title font-18 font-weight-bold">ISEB</h2>
+                        </div>
+
+
+                        <div class="form-section assignment_topic_type_fields cat4_fields mb-20 text-left 223">
+                            <h2 class="section-title font-18 font-weight-bold">CAT 4</h2>
+                        </div>
+
+
+                        <div class="form-section assignment_topic_type_fields vocabulary_fields mb-20 text-left 223 ajax-title show-after-ajax">
+                            <h2 class="section-title font-18 font-weight-bold">Select List</h2>
+                        </div>
+
+                        <div class="form-section assignment_topic_type_fields timestables_fields mb-20 text-left 223 ajax-title show-after-ajax">
+                            <h2 class="section-title font-18 font-weight-bold">Times Tables</h2>
+                        </div>
+
+                        <div class="form-section assignment_topic_type_fields assignment_fields mb-20 text-left 223 ajax-title show-after-ajax">
+                            <h2 class="section-title font-18 font-weight-bold">Custom Assignment</h2>
+                        </div>
+
+                        <div class="practice-quiz-ajax-fields setwork-fields"></div>
+
+                        @php
+                        $tables_no = isset( $assignment->tables_no )? json_decode($assignment->tables_no) : array();
+                        @endphp
+
+
+                        <div class="form-group assignment_topic_type_fields timestables_fields ajax-title show-after-ajax">
+                            <div class="timestables-heatmap"></div>
+                            <div class="questions-select-number">
+                                <ul class="d-flex justify-content-left flex-wrap mb-30">
+                                    <li><input type="checkbox" value="10" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(10,$tables_no)?
+                                        'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
+                                    <li><input type="checkbox" value="2" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(2,$tables_no)?
+                                        'checked' : 'checked'}} id="tables_two" /> <label for="tables_two">2</label></li>
+                                    <li><input type="checkbox" value="5" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(5,$tables_no)?
+                                        'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
+                                    <li><input type="checkbox" value="3" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(3,$tables_no)?
+                                        'checked' : 'checked'}} id="tables_three" /> <label for="tables_three">3</label></li>
+                                    <li><input type="checkbox" value="4" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(4,$tables_no)?
+                                        'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
+                                    <li><input type="checkbox" value="8" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(8,$tables_no)?
+                                        'checked' : ''}} id="tables_eight" /> <label for="tables_eight">8</label></li>
+                                    <li><input type="checkbox" value="6" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(6,$tables_no)?
+                                        'checked' : ''}} id="tables_six" /> <label for="tables_six">6</label></li>
+                                    <li><input type="checkbox" value="7" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(7,$tables_no)?
+                                        'checked' : ''}} id="tables_seven" /> <label for="tables_seven">7</label></li>
+                                    <li><input type="checkbox" value="9" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(9,$tables_no)?
+                                        'checked' : ''}} id="tables_nine" /> <label for="tables_nine">9</label></li>
+                                    <li><input type="checkbox" value="11" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(11,$tables_no)?
+                                        'checked' : ''}} id="tables_eleven" /> <label for="tables_eleven">11</label></li>
+                                    <li><input type="checkbox" value="12" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(12,$tables_no)?
+                                        'checked' : ''}} id="tables_twelve" /> <label for="tables_twelve">12</label></li>
+                                    <li><input type="checkbox" value="13" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(13,$tables_no)?
+                                        'checked' : ''}} id="tables_thirteen" /> <label for="tables_thirteen">13</label></li>
+                                    <li><input type="checkbox" value="14" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(14,$tables_no)?
+                                        'checked' : ''}} id="tables_fourteen" /> <label for="tables_fourteen">14</label></li>
+                                    <li><input type="checkbox" value="15" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(15,$tables_no)?
+                                        'checked' : ''}} id="tables_fifteen" /> <label for="tables_fifteen">15</label></li>
+                                    <li><input type="checkbox" value="16" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(16,$tables_no)?
+                                        'checked' : ''}} id="tables_sixteen" /> <label for="tables_sixteen">16</label></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="practice-quiz-topics-list assignment_topic_type_fields practice_fields"></div>
+
+
+                    </div>
+                    
+                    
+                    <div class="years-group populated-data">
+                        <div class="form-section mb-20 text-left 223">
+                            <h2 class="section-title font-18 font-weight-bold">General information</h2>
+                        </div>
+                        <div class="row mb-15">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label class="input-label font-weight-bold">Practice Title</label>
+                                    <div class="input-group">
+                                    <input type="text"
+                                        name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][title]"
+                                        value="{{ !empty($assignment) ? $assignment->title : old('title') }}"
+                                        class="js-ajax-title form-control rurera-req-field bg-white"
+                                        placeholder="Practice Title"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label class="input-label font-weight-bold">Practice Start Date</label>
+                                    <div class="input-group">
+                                        <input type="text" autocomplete="off"
+                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_start_date]"
+                                            value="{{ !empty($assignment) ? dateTimeFormat($assignment->assignment_start_date, 'Y-m-d', false) : old('assignment_start_date') }}"
+                                            class="form-control bg-white practice-start-date rureradatepicker rurera-req-field @error('assignment_start_date') is-invalid @enderror"
+                                            min="{{date('Y-m-d')}}"
+                                            placeholder="Practice Start Date"/>
+                                        @error('assignment_start_date')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="form-group conditional_fields Daily_field Weekly_field Monthly_field">
+                                    <label class="input-label font-weight-bold">Practice Due Date</label>
+                                    <div class="input-group">
+                                        <input type="text" autocomplete="off"
+                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_end_date]"
+                                            value="{{ !empty($assignment) ? dateTimeFormat($assignment->assignment_end_date, 'Y-m-d', false) : old('assignment_end_date') }}"
+                                            class="form-control bg-white practice-due-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}"
+                                            placeholder="Practice Due Date"/>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="row assignment_topic_type_fields1 practice_fields vocabulary_fields1 no-of-questions-fields">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                                <div class="form-group">
+                                    <label class="input-label font-weight-bold mb-0">Show No of Questions <span class="max_questions"></span></label>
+
+                                    <div class="range-slider">
+                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                        <div class="range-slider_line">
+                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <input type="range" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][no_of_questions]" value="0"
+                                            class="js-ajax-title form-control rurera-req-field no_of_questions range-slider-field" min="0" max="0" placeholder=""/>
+                                    </div>
+
+
+                                    <div class="invalid-feedback"></div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-6 assignment_topic_type_fields timestables_fields vocabulary_fields mock_test_fields sats_fields books_fields">
+                                <div class="form-group">
+                                    <label class="input-label font-weight-bold mb-0">No of Attempts</label>
+
+                                    <div class="invalid-feedback"></div>
+                                    <div class="range-slider">
+                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                        <div class="range-slider_line">
+                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <input type="range"
+                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][no_of_attempts]"
+                                            value="0"
+                                            class="js-ajax-title form-control no_of_attempts range-slider-field"
+                                            placeholder="" min="1" max="10"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group assignment_topic_type_fields timestables_fields">
+                            <label class="input-label mb-10 font-weight-bold">Duration Type</label>
+
+                            <div class="years-group populated-data input-group">
+
+
+                                <div class="radio-buttons justify-content-left">
+                                    <label class="card-radio">
+                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][duration_type]"
+                                            class="duration_conditional_check" value="total_practice" checked>
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                                <h3>Total Practice</h3>
+                                        </div>
+
+                                    </span>
+                                    </label>
+                                    <label class="card-radio">
+                                        <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][duration_type]"
+                                            class="duration_conditional_check" value="per_question">
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                                <h3>Per Question</h3>
+                                        </div>
+
+                                    </span>
+                                    </label>
+                                </div>
+
+                                <div class="invalid-feedback"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                        <div class="form-group">
+                            <label class="input-label font-weight-bold mb-0">Practice Time (<span class="practice_interval_data">Minutes</span>)</label>
+                            <div class="range-slider">
+                                <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                <div class="range-slider_line">
+                                    <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                </div>
+                                <input type="range"
+                                    name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][practice_time]"
+                                    value="0"
+                                    class="js-ajax-title form-control practice_interval range-slider-field" step="20" min="0" max="240"
+                                    placeholder=""/>
+                            </div>
+                            <div class="invalid-feedback"></div>
+                        </div>
+
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                        <div class="form-group duration_type_fields per_question_fields assignment_topic_type_fields timestables_fields">
+                            <label class="input-label font-weight-bold">Questions Time Interval (<span class="time_interval_data">Seconds</span>)</label>
+
+                            <div class="range-slider">
+                                <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                <div class="range-slider_line">
+                                    <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                </div>
+                                <input type="range"
+                                    name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][time_interval]"
+                                    value="0"
+                                    class="js-ajax-title form-control time_interval range-slider-field" step="10" min="0" max="1200"
+                                    placeholder=""/>
+                            </div>
+
+                            <div class="invalid-feedback"></div>
+                        </div>
+                            </div>
+                        </div>
+
+
+                    <div class="form-group assignment_topic_type_fields practice_fields1">
+                        <label class="input-label font-weight-bold">Practice Method</label>
+                        <div class="plan-switch-option" style="justify-content: left;">
+                                <span class="switch-label font-18">Completion Target</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                                <div class="plan-switch">
+                                    <div class="custom-control custom-switch"><input type="checkbox" name="auto_generate" class="assignment_method_check custom-control-input" id="method_check" value="target_improvements"><label class="custom-control-label" for="method_check"></label></div>
+                                </div>
+                        </div>
+                    </div>
+
+                        <div class="row assignment_topic_type_fields practice_fields1">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                                <div class="form-group assignment_method_check_fields target_improvements_fields">
+                                    <label class="input-label font-weight-bold">Percentage of Correct Answers</label>
+
+                                    <div class="invalid-feedback"></div>
+                                    <div class="range-slider">
+                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                        <div class="range-slider_line">
+                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <input type="range"
+                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][target_percentage]"
+                                            value="0" data-label="%"
+                                            class="js-ajax-title form-control correct_answers_percentage range-slider-field" min="0" max="100"
+                                            placeholder=""/>
+                                    </div>
 
 
                                 </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                                <div class="form-group assignment_method_check_fields target_improvements_fields">
+                                    <label class="input-label font-weight-bold">Average Time of Correct Answers (Seconds)</label>
 
-                                <div class="wizard-pagination1 rurera-hide">
-                                    <div class="previous-btn wizard-step disabled-btn" data-next_step="0">Previous</div>
-                                    <div class="next-btn wizard-step" data-next_step="2">Continue</div>
+                                    <div class="range-slider">
+                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                        <div class="range-slider_line">
+                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <input type="range"
+                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][target_average_time]"
+                                            value="0"
+                                            class="js-ajax-title form-control average_time range-slider-field" min="0" max="60"
+                                            placeholder=""/>
+                                    </div>
+                                    <div class="invalid-feedback"></div>
                                 </div>
-
-                                <div class="rurera-hide wizard-step clear-all-btn" data-next_step="1">Clear all</div>
-
-
+                            </div>
+                        </div>
 
 
-                            </form>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-group mt-30">
+                                <div class="btn-field">
+                                    <button type="submit" class="nav-link js-submit-quiz-form">Create</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="wizard-steps" data-step_id="2">
+                </div>
+
+                <div class="wizard-pagination1 rurera-hide">
+                    <div class="previous-btn wizard-step disabled-btn" data-next_step="0">Previous</div>
+                    <div class="next-btn wizard-step" data-next_step="2">Continue</div>
+                </div>
+
+                <div class="rurera-hide wizard-step clear-all-btn" data-next_step="1">Clear all</div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <div class="modal fade lms-choose-membership" id="assignmentCreateModal" tabindex="-1" aria-labelledby="assignmentCreateModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -647,23 +632,6 @@
         </div>
     </div>
 </div>
-
-
-<section class="section">
-    <div class="section-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-12">
-
-                    <div class="card">
-                        <div class="card-body">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</section>
-
 @endsection
 
 @push('scripts_bottom')
