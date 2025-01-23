@@ -1284,7 +1284,6 @@ Lms Responsive Style Start
     .lms-counter-card.counter-yellow-bg:after {right: 180px; bottom: 30px; height: 130px; width: 130px;transform: rotate(-210deg);}
     .counter-holder .svg-shapes-top {right: 94px;top: 100%;transform: rotate(-215deg);margin-top: 27px;}
     .spells-table-inner {overflow: hidden; overflow-x: auto;}
-    /* .lms-data-table table.table thead th {display: block; width: 100% !important; box-sizing: border-box;} */
     .lms-data-table.spells table.table thead th {display: table-cell; width: auto !important;}
     .learning-page .learning-page-content {overflow: hidden;}
     .question-layout-block .question-fields .rureraform-element {padding-left: 0; padding-right: 0;}
