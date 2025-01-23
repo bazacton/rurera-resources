@@ -1211,6 +1211,12 @@ Lms Responsive Style Start
     .svga-col-right .svga-row {
         margin: -10px;
     }
+    .svga-row.row-elements {
+        padding-top: 0;
+    }
+    .svga-vert-order-controls {
+        margin: 0 0 10px;
+    }
 }
 
 @media screen and (max-width: 640px) {
