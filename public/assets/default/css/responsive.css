@@ -1207,7 +1207,8 @@ Lms Responsive Style Start
     /*Default SM Table For Mobile Style End*/    
     .svga-vert-order-blocks .svga-row,
     .svga-vert-order-bodyzones .svga-row.row-bodyzones,
-    .svga-vert-order-controls .svga-row.row-controls {
+    .svga-vert-order-controls .svga-row.row-controls,
+    .svga-col-right .svga-row {
         margin: -10px;
     }
 }
