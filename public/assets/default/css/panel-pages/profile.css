@@ -151,6 +151,10 @@ span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 a
 .profile-view-data {margin: 0 -5px;}
 .profile-view-data > li {width: 50%; display: inline-block; margin-right: -4px; padding: 0 5px;}
 .edit-info-list li > a {border-bottom: 1px solid #ddd; flex-wrap: wrap;}
+.edit-info-list li:last-child > a {
+    border-bottom: 0;
+    padding-bottom: 0 !important;
+}
 .info-list-label {color: #94a3b8; max-width: calc(100% - 70px); word-wrap: break-word;}
 .info-list-label strong {color: #475569; line-height: normal; padding-top: 2px;}
 .edit-icon {gap: 15px;}
