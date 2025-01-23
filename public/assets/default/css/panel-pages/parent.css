@@ -384,6 +384,7 @@ a.last-activity span strong {color: #343434;}
 .set-work-tags .clear-tags {color: var(--primary); font-weight: 500; text-decoration: underline;}
 .section-title ~ section.dashboard {margin-top: 20px;}
 .list-group-custom .rurera-pagination {padding: 0 15px 15px;}
+.list-group-custom .rurera-pagination:empty {display: none;}
 /* Wizard-Steps Style End */
 
 /*Lms Choose Membership Model Style Start*/
