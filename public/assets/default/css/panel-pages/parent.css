@@ -650,7 +650,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 }
 .parent-panel .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title {
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
 .parent-panel .panel-sidebar .sidebar-menu .sidenav-item:first-child .nav-sub-title {
     bottom: 100%;
