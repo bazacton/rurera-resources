@@ -66,7 +66,7 @@ $user_subscribed_for = isset( $user_subscribed_for)? $user_subscribed_for : 1;
         </div>
     </section>
     <section class="social-info-section pb-60 packages-list-modal {{$packages_list_class}}">
-    <div class="container">
+    <div class="container rurera-hide">
         <div class="row">
             <div class="col-12">
                 <div class="social-info-holder">
@@ -109,8 +109,8 @@ $user_subscribed_for = isset( $user_subscribed_for)? $user_subscribed_for : 1;
             </div>
         </div>
     </div>
-</section>
-<section class="container packages-list-modal {{$packages_list_class}}">
+    </section>
+<section class="container packages-list-modal {{$packages_list_class}} rurera-hide">
     <div class="row justify-content-center">
         <div class="col-12">
             <div class="section-title text-center mb-50">
@@ -166,7 +166,7 @@ $user_subscribed_for = isset( $user_subscribed_for)? $user_subscribed_for : 1;
         </div>
     </div>
 </section>
-<section class="recent-reviews-section pt-70 packages-list-modal {{$packages_list_class}}">
+<section class="recent-reviews-section pt-70 packages-list-modal {{$packages_list_class}} rurera-hide">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
