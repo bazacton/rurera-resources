@@ -1116,7 +1116,7 @@ Lms Responsive Style Start
     #profile-image-modal .svga-row.row-elements,
     #profile-image-modal .svga-row.row-glob-controls {margin: 0 -10px;}
     div#profile-image-modal {padding-right: 0 !important;}
-    .dashboard-students-holder .d-flex {flex-wrap: wrap;}
+    .dashboard-students-holder .d-flex {flex-wrap: wrap; gap: 10px 0;}
     .member-card-header {margin-bottom: 0 !important;}
     .db-members .rurera-tabs-frontend {background-color: #fff; border: 1px solid #ddd; border-bottom: 0; padding-top: 10px;}
     .categories-card.medium {padding-left: 0; padding-right: 0;}
@@ -1541,6 +1541,3 @@ Lms Responsive Style Start
     .dashboard-banner-container {min-height: 150px;}
     .member-card-header.activities-header .dropdown {padding-top: 0;}
 }
-@media screen and (max-width: 370px) {
-    .member-card-header .dropdown {padding-top: 10px;}
-} 
