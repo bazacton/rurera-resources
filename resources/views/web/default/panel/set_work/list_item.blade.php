@@ -64,3 +64,10 @@
         </div>
     </div> <!--[ row end ]-->
 </div>
+@push('scripts_bottom')
+<script>
+    $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
+@endpush
