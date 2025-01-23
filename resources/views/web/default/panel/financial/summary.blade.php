@@ -19,17 +19,17 @@
                                 @if($accountings->count() > 0)
                                 @foreach($accountings as $accounting)
                                     <tr>
-                                        <td class="text-left">
+                                        <td class="text-left" data-th="{{ trans('public.title') }}">
                                             <div class="d-flex flex-column">
                                             <span class="font-16 font-weight-normal">
 												{{isset( $accounting->orderItem->order->package->title )? $accounting->orderItem->order->package->title : ''}}
                                             </span>
                                             </div>
                                         </td>
-                                        <td class="text-left align-middle">
+                                        <td class="text-left align-middle" data-th="Student">
                                             <span class="font-16 font-weight-normal">{{isset( $accounting->orderItem->order->student->id )? $accounting->orderItem->order->student->get_full_name() : ''}}</span>
                                         </td>
-                                        <td class="text-center align-middle">
+                                        <td class="text-center align-middle" data-th="{{ trans('panel.amount') }} ({{ $currency }})">
                                             @switch($accounting->type)
                                                 @case(\App\Models\Accounting::$addiction)
                                                 <span class="font-16 font-weight-normal">+{{ $accounting->amount }}</span>
@@ -39,7 +39,7 @@
                                                 @break;
                                             @endswitch
                                         </td>
-                                        <td class="text-center align-middle font-16 font-weight-normal text-gray">
+                                        <td class="text-center align-middle font-16 font-weight-normal text-gray" data-th="{{ trans('public.date') }}">
                                             <span>{{ dateTimeFormat($accounting->created_at, 'j M Y') }}</span>
                                         </td>
                                     </tr>
