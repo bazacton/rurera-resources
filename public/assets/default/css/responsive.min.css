@@ -754,10 +754,14 @@ Lms Responsive Style Start
     .panel-morehelp .contact-btn p {width: calc(100% - 40px);}
     .heatmap-section-inner {padding: 15px;}
     .sats-listing-card table:not(thead) td {text-align: left;}
-    .sats-listing-card table:not(thead) td h4 {font-size: 1rem !important;}
+    .sats-listing-card table:not(thead) td h4 {font-size: 1rem !important; line-height: normal;}
     .sats-listing-card table:not(thead) td img {margin: 0 10px 0 0; vertical-align: top;}
-    .wizard-steps .sats-listing-card tbody tr td {display: block; padding: 20px 0 10px;}
+    .wizard-steps .sats-listing-card tbody tr td {display: block; padding: 20px 0 5px;}
     .wizard-steps .sats-listing-card tbody tr td:has(.mock-test-assign-btn) {padding-top: 0; padding-bottom: 20px; display: inline-block;}
+    .wizard-steps .years-group,
+    .panel-content .mock_test_fields .sats-listing-card.medium {
+        margin-bottom: 0;
+    }
     .results-info {width: auto;}
     .results-revenue-card .text-box,
     .have-question-card .text-box {width: 100%; padding: 20px 0 0 0;}
@@ -898,6 +902,7 @@ Lms Responsive Style Start
     .read-quiz-content .treasure-stage .horizontal-list li {width: auto;}
     .rurera-list-btn {min-width: 120px;}
     .sats-listing-card tbody tr td .rurera-list-btn {margin-left: 55px;}
+    .heatmap-table-boxes li:last-child {flex: 2 1 0;}
     .input-holder, .lms-quiz-section .input-holder{width: 100% !important; margin-top: 15px; margin-bottom: 15px;}
     .question-result-layout .rureraform-element {padding-bottom: 15px;}
     .learning-page.type-vocabulary .question-layout-block {padding-top: 0;}
