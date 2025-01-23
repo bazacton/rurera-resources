@@ -758,9 +758,7 @@ Lms Responsive Style Start
     .sats-listing-card table:not(thead) td img {margin: 0 10px 0 0; vertical-align: top;}
     .wizard-steps .sats-listing-card tbody tr td {display: block; padding: 20px 0 5px;}
     .wizard-steps .sats-listing-card tbody tr td:has(.mock-test-assign-btn) {padding-top: 0; padding-bottom: 20px; display: inline-block;}
-    .wizard-steps .years-group.mock_test_fields {
-        margin-bottom: 0;
-    }
+    .wizard-steps .years-group.mock_test_fields,
     .panel-content .mock_test_fields .sats-listing-card.medium {
         margin-bottom: 0;
     }
