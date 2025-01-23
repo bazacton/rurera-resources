@@ -80,7 +80,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <div class="list-group list-group-custom list-group-flush mb-0 totalChilds"
+                                <div class="list-group list-group-custom list-group-flush mb-0 totalChilds has-listing-title"
                                     data-childs="{{$childs->count()}}">
 
                                     @if( !empty( $childs ) )
