@@ -603,6 +603,9 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
     gap: 15px;
     margin-bottom: 15px;
 }
+.lms-choose-membership .social-info-card-header h5 {
+    margin-bottom: 0;
+}
 .social-info-card .icon-box {height: 45px; width: 50px; display: inline-flex; align-items: center; justify-content: center; background-color: #cfe3f4; padding: 8px; border-radius: 3px;}
 .social-info-card .icon-box img {max-width: 100%;}
 .class-connect-modal .unlink-block.rurera-processing .unlink-btn {box-shadow: none;}
