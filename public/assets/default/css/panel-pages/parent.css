@@ -588,6 +588,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 .reset-btn {color: var(--primary); font-weight: 500; display: inline-flex; align-items: center; gap: 10px;}
 .reset-btn .icon-box img {height: 14px; width: 14px; filter: invert(32%) sepia(96%) saturate(583%) hue-rotate(201deg) brightness(114%) contrast(110%);}
 .input-field input {border: 0;}
+.connect-student-form .input-field input {border: 1px solid #ddd;}
 /*Insta Form Style Start*/
 .insta-form-inner {background-color: #fff; border-radius: 10px; max-width: 770px; margin: 0 auto; padding: 50px 35px;}
 .insta-form-inner input[type="text"], 
