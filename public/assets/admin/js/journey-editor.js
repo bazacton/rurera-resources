@@ -1,8 +1,43 @@
 var stage_created = false;
+
+var alreadyInitiated = [];
 $(document).on('click', '.control-tool-item', function () {
     //$(".field-options").addClass('hide');
     $('.control-tool-item').removeClass('active');
     $(this).addClass('active');
+    //$('body').css('cursor', "pointer");
+});
+
+$(document).on('click', '.path-tool-item', function () {
+    var target_class = $(this).attr('data-target_class');
+    $(".flowchart-links-layer > g").removeAttr('class');
+    $(".flowchart-links-layer > g").addClass(target_class);
+});
+
+
+$(document).on('click', '.sets-selection', function () {
+    var set_name = $(this).attr('data-set');
+    //$(".field-options").addClass('hide');
+    $('.sets-selection').removeClass('active');
+    var treasure_data = $(this).find('.item_treasure_pending');
+    var topic_data = $(this).find('.item_topic_pending');
+    var treasure_svg_code = treasure_data.closest('li').find('.svg_code').html();
+    var treasure_item_path = treasure_data.attr('data-item_path');
+    var topic_svg_code = topic_data.closest('li').find('.svg_code').html();
+    var topic_item_path = topic_data.attr('data-item_path');
+
+    var treasure_block = $('.path-initializer[data-field_type="treasure"]');
+    treasure_block.attr('data-item_path', treasure_item_path);
+    treasure_block.find('.field-data svg').remove();
+    treasure_block.find('.field-data').prepend(treasure_svg_code);
+
+
+    var topic_block = $('.path-initializer[data-field_type="topic"]');
+    topic_block.attr('data-item_path', topic_item_path);
+    topic_block.find('.field-data svg').remove();
+    topic_block.find('.field-data').prepend(topic_svg_code);
+    $(this).addClass('active');
+    $('input[name="stage_set"]').val(set_name);
     //$('body').css('cursor', "pointer");
 });
 
@@ -174,6 +209,8 @@ $(document).on('click', '.book-dropzone', function (e) {
         dropZonObj.append($el);
     }
 
+    //after_add_render(field_random_number, dropZonObj);
+
 
     /*
     * Draggable
@@ -219,6 +256,111 @@ $(document).on('click', '.book-dropzone', function (e) {
 
 
 });
+function after_add_render(field_random_number, dropZonObj){
+
+    $flowchart = $(".book-dropzone.active");
+
+
+
+
+
+    var operatorId = field_random_number;
+    var fieldObj = $('#'+operatorId);
+    var field_position = fieldObj.position();
+    var operatorData = {
+        //top: field_position.top,// ($flowchart.height() / 2) - 30,
+        //left: field_position.left,//($flowchart.width() / 2) - 100 + 10,
+        properties: {
+            title: 'Operator1111 ' + 3,
+            inputs: {
+                input_1: {
+                    label: '',
+                }
+            },
+            outputs: {
+                output_1: {
+                    label: '',
+                }
+            }
+        }
+    };
+    var initiate = false;
+
+    if (!alreadyInitiated[operatorId]) {
+        // Add the operator to the flowchart if not already initiated
+        $flowchart.flowchart('createOperator', operatorId, operatorData, $("#" + field_random_number));
+        // Mark the operator as initiated
+        alreadyInitiated[operatorId] = operatorId;
+        initiate = true;
+    }
+    console.log('alreadyInitiated.length');
+    console.log(Object.keys(alreadyInitiated).length);
+
+    initiate = false;
+
+    if($flowchart != null && initiate == true) {
+        reinitialize_items();
+        /*$flowchart.flowchart('addLink', {
+            fromOperator: 'operator1',
+            fromConnector: 'output_1',
+            toOperator: operatorId,
+            toConnector: 'input_1',
+        });*/
+    }
+    /*$('.draggable_field_' + field_random_number)
+        .rotatable()
+        .draggable({
+            preventCollision: true,
+            containment: dropZonObj,
+            drag: function(event, ui) {
+                reinitialize_items(ui); // Call your function here
+            }
+        })
+        .off('wheel'); // Unbinds all wheel events from this element
+*/
+
+    $('.draggable_field_' + field_random_number).resizable({
+        resize: function(event, ui) {
+            $(".field-options").find('.trigger_field[data-field_name="width"]').val(ui.size.width);
+            $(".field-options").find('.trigger_field[data-field_name="width"]').change();
+        }
+    });
+}
+
+function reinitialize_items(){
+
+    $('.levels-objects-list').find('li').each(function () {
+        var field_id = $(this).attr('data-id');
+        const previousElement = $(this).prev('li'); // Find the previous element with the same data-field_type
+        if (previousElement.length > 0) {
+            const previousId = previousElement.attr('data-id'); // Get the ID of the previous element
+            $flowchart.flowchart('addLink', {
+                fromOperator: previousId,
+                fromConnector: 'output_1',
+                toOperator: field_id,
+                toConnector: 'input_1',
+            });
+        }
+
+
+    });
+
+    /*$('.book-dropzone.active').find('.path-initializer').each(function () {
+        var field_id = $(this).attr('id');
+        const previousElement = $(this).prev('.path-initializer'); // Find the previous element with the same data-field_type
+        if (previousElement.length > 0) {
+            const previousId = previousElement.attr('id'); // Get the ID of the previous element
+            $flowchart.flowchart('addLink', {
+                fromOperator: previousId,
+                fromConnector: 'output_1',
+                toOperator: field_id,
+                toConnector: 'input_1',
+            });
+        }
+
+
+    });*/
+}
 
 function sorting_render(){
 	$('.editor-objects-list li').each(function (index_id, thisObj) {
@@ -228,7 +370,79 @@ function sorting_render(){
 		$(".draggable_field_" + data_id).css('z-index', index_id);
 		$(".draggable_field_" + data_id).attr('data-field_postition', index_id);
 	});
+
+
+
+    /*$('.book-dropzone.active').find('.path-initializer').each(function () {
+        var field_id = $(this).attr('id');
+        console.log('book-dropzone.activebook-dropzone.activebook-dropzone.activebook-dropzone.active');
+        after_add_render(field_id, $(".book-dropzone.active"));
+    });*/
+    console.log('sorting-render');
+
+    $('.levels-objects-list').find('li').each(function () {
+        var field_id = $(this).attr('data-id');
+
+        after_add_render(field_id, $(".book-dropzone.active"));
+    });
 }
+
+function levels_sorting_render(){
+    $('.levels-objects-list li').each(function (index_id, thisObj) {
+        index_id++;
+        $(thisObj).attr('data-field_postition', index_id);
+        var data_id = $(thisObj).attr('data-id');
+        $(".draggable_field_" + data_id).css('z-index', index_id);
+        $(".draggable_field_" + data_id).attr('data-field_postition', index_id);
+    });
+
+    console.log('levels_sorting_render');
+
+    var operatorData = {
+        //top: field_position.top,// ($flowchart.height() / 2) - 30,
+        //left: field_position.left,//($flowchart.width() / 2) - 100 + 10,
+        properties: {
+            title: 'Operator1111 ' + 3,
+            inputs: {
+                input_1: {
+                    label: '',
+                }
+            },
+            outputs: {
+                output_1: {
+                    label: '',
+                }
+            }
+        }
+    };
+
+    var links = $flowchart.flowchart('getData').links;
+
+    // Find the link with the specified details
+
+
+    $('.levels-objects-list').find('li').each(function () {
+        var field_id = $(this).attr('data-id');
+        if ($flowchart.flowchart('getOperatorData', field_id)) {
+            Object.keys(links).forEach(function (linkId) {
+                var link = links[linkId];
+                if (
+                    link.toOperator === field_id &&
+                    link.toConnector === 'input_1'
+                ) {
+                    // Delete the matching link
+                    $flowchart.flowchart('deleteLink', linkId);
+                    console.log("Deleted link with ID: " + linkId);
+                }
+            });
+        }
+    });
+    reinitialize_items();
+}
+
+$(document).on('click', '#stage_settings-tab1', function (e) {
+
+});
 
 $(document).on('click', '.page_settings', function (e) {
 	if (!$(e.target).is($(this))) {
@@ -266,9 +480,20 @@ $(document).on('click', '.page_settings', function (e) {
 		format: 'hex',
 	});
 });
+
+$(document).on('change', '.conditional-field', function () {
+    $(".conditional-child-fields").hide();
+    var child_value = $(this).val();
+    var selectedOption = $(this).find('option:selected');
+    var child_class = selectedOption.attr('data-child');
+    $('.'+child_class).show();
+});
+
 var subject_topics_list = [];
 $(document).on('click', '.field_settings', function (e) {
     $(".field-options").html('');
+    $(".editor-parent-nav #stages-tab").click();
+    $(".editor-controls li #objects-tab1").click();
     var fieldObj = $(this);
     var field_id = fieldObj.data('id');
 	var item_title = fieldObj.attr('data-item_title');
@@ -279,7 +504,6 @@ $(document).on('click', '.field_settings', function (e) {
 
 
 
-    console.log($(".ajax-chapter-dropdown").length);
     if($(".ajax-chapter-dropdown").length > 0) {
         $(".ajax-chapter-dropdown").each(function (index) {
             var data_id = $(this).attr('data-id');
@@ -301,7 +525,7 @@ $(document).on('click', '.field_settings', function (e) {
         $(".ajax-subchapter-dropdown").each(function (index) {
             var data_id = $(this).attr('data-id');
             var selected_value = $('.field_settings[data-id="' + data_id + '"]').attr('data-sub_chapter_id');
-            console.log(selected_value);
+
             $(this).find('option[value="' + selected_value + '"]').attr('selected', 'selected');
         });
         $(".ajax-subchapter-dropdown").change();
@@ -441,6 +665,12 @@ $(document).on('click', '.field_settings', function (e) {
 });
 
 $(document).on('keyup change keydown click', '.field-options .trigger_field', function (e) {
+    console.log('trigger_field_change_data-------------------');
+    trigger_field_change($(this));
+});
+
+$(document).on('keyup change keydown click', '.page-settings-fields .trigger_field', function (e) {
+    console.log('trigger_field_change_data-------------------');
     trigger_field_change($(this));
 });
 
@@ -449,9 +679,31 @@ $(document).on('click', '.editor-objects-list li .fa-trash', function (e) {
 		return false;
 	}
     var data_id  = $(this).closest('li').attr('data-id');
+    var element_type = $('.field_settings[data-id="'+data_id+'"]').attr('data-field_type');
 	$('.field_settings[data-id="'+data_id+'"]').remove();
 	$(this).closest('li').remove();
 	sorting_render();
+    levels_sorting_render();
+    if(element_type == 'topic' || element_type == 'treasure'){
+
+
+        var links = $flowchart.flowchart('getData').links;
+
+        // Find the link with the specified details
+
+        if ($flowchart.flowchart('getOperatorData', data_id)) {
+            Object.keys(links).forEach(function (linkId) {
+                var link = links[linkId];
+                if (link.toOperator === data_id && link.toConnector === 'input_1') {
+                    $flowchart.flowchart('deleteLink', linkId);
+                }
+            });
+        }
+
+
+
+    }
+
 });
 
 $(document).on('click', '.editor-objects-list li .fa-unlock', function (e) {
@@ -479,7 +731,6 @@ $(document).on('click', '.editor-objects-list li .fa-lock', function (e) {
 
 
 function trigger_field_change(thisObj) {
-    console.log('trigger_field_change');
     var data_id = thisObj.attr('data-id');
     var field_type = thisObj.attr('data-field_type');
     var field_id = thisObj.attr('data-field_id');
@@ -567,6 +818,8 @@ jQuery(document).ready(function () {
     });
 
 
+
+
 		//$('.saved-item-class').click();
 
 
@@ -627,7 +880,6 @@ jQuery(document).ready(function () {
 			}
 		}
 
-		console.log($('.draggable_field_' + field_id).attr('style'));
 		$('.draggable_field_' + field_id)
 			.rotatable({angle: rotate_value})
 			.draggable({
@@ -658,6 +910,8 @@ jQuery(document).ready(function () {
 
     $(document).on('stylechanged', '.resizeable', function (e) {
     });
+
+
 
 
 });
@@ -791,7 +1045,7 @@ $(document).on('click', '.generate', function (e) {
 
 });
 
-$(document).on('change', 'input[name="topic_order_no"]', function (e) {
+$(document).on('change', 'input[name="topic_order_no222"]', function (e) {
     var topic_order_no = $(this).val();
     var total_with_same_value = $(this)
         .closest('.editor-zone')
@@ -814,7 +1068,6 @@ $(document).on('change', 'input[name="topic_order_no"]', function (e) {
     $(".treasure_topic_order_no").html(options_html);
 
 
-    console.log(options_html);
 });
 
 $(document).on('change', 'select[name="subject_id"]', function (e) {
@@ -842,10 +1095,17 @@ function generate_stage_area(){
 	var posted_data = {};
 	posted_data['levels'] = {};
 	$(".book-dropzone").each(function (index) {
+        var svgs_code = $(this).find('.flowchart-links-layer').html();
+        var stage_set = 'set2';//$(this).find('input[name="stage_set"]').val();
+        if(svgs_code != ''){
+            svgs_code = '<svg class="flowchart-links-layer">'+svgs_code+'</svg>';
+        }
 		var level_id = $(this).attr('data-level_id');
 		posted_data['levels'][level_id] = {};
 
 		posted_data['levels'][level_id]['background'] = $(this).attr('data-page_background');
+        posted_data['levels'][level_id]['stage_set'] = stage_set;
+        posted_data['levels'][level_id]['svgs_code'] = svgs_code;
         posted_data['levels'][level_id]['background_image'] = $(this).attr('data-background_image');
 		posted_data['levels'][level_id]['height'] = $(this).attr('data-page_height');
 		posted_data['levels'][level_id]['page_graph'] = $(this).attr('data-page_graph');
@@ -871,6 +1131,8 @@ function generate_stage_area(){
 			var item_path = fieldObj.attr('data-item_path');
 			var unique_id = fieldObj.attr('data-unique_id');
 			var item_title = fieldObj.attr('data-item_title');
+            var field_postition = fieldObj.attr('data-field_postition');
+
 
 
 
@@ -894,7 +1156,6 @@ function generate_stage_area(){
 				var triggerObj = $(this);
 
 				var attr_id = triggerObj.data('field_id');
-                console.log(triggerObj.data('field_id'));
 				var attr_value = fieldObj.attr('data-' + triggerObj.data('field_id'));
 				data_values[attr_id] = attr_value;
 			});
@@ -909,6 +1170,8 @@ function generate_stage_area(){
 			posted_data[field_id]['unique_id'] = unique_id;
 			posted_data[field_id]['item_title'] = item_title;
 			posted_data[field_id]['is_new'] = is_new;
+            posted_data[field_id]['field_postition'] = field_postition;
+
 		});
 	});
 

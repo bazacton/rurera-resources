@@ -1,7 +1,11 @@
 @extends('admin.layouts.app')
 @php $rand_id = rand(0,9999); @endphp
 @push('styles_top')
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <link href="/assets/default/vendors/sortable/jquery-ui.min.css"/>
+<link rel="stylesheet" href="/assets/admin/css/jquery.flowchart.css?ver={{$rand_id}}">
 <link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
 <link rel="stylesheet" href="/assets/admin/css/draw-editor.css?ver={{$rand_id}}">
 <link rel="stylesheet" href="/assets/admin/vendor/bootstrap-colorpicker/bootstrap-colorpicker.min.css">
@@ -9,6 +13,44 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
 
 <style type="text/css">
+
+    .roadmap .roadmap-road {
+        stroke: #000000;
+        stroke-width:15px;
+    }
+    .roadmap-path {
+        display: none;
+    }
+    .roadmap .roadmap-path {
+        display: block;
+    }
+
+
+    .spacer-block{width:0px !important;}
+    .spacer-block svg {
+        width: 10px !important;
+        height: 10px !important;
+    }
+    .spacer-svg-controls .flowchart-operator-outputs .flowchart-operator-connector-small-arrow {
+        right: 10px !important;!i;!;
+    }
+
+    .spacer-svg-controls .flowchart-operator-outputs .flowchart-operator-connector-arrow{
+        right:10px !important;
+    }
+
+    ul.editor-objects.sets-selection.active {
+        background: #b2b2b2;
+    }
+
+    .flowchart-operator-inputs-outputs.right-in .flowchart-operator-inputs .flowchart-operator-connector-arrow {
+        right: -10px !important;
+        left: auto !important;
+    }
+    .flowchart-operator-inputs-outputs.right-in .flowchart-operator-outputs .flowchart-operator-connector-arrow {
+        left: -10px !important;
+        right: auto !important;
+    }
 
 :root {
   --bg-color: #fff;
@@ -127,6 +169,7 @@
         background-color: #f2f2f2;
         padding: 30px 30px;
         border-radius: 5px;
+        overflow:auto;
     }
     .editor-parent-nav {
         margin: 0 0 25px;
@@ -189,6 +232,14 @@
 		background-position: -1.5px -1.5px, -1.5px -1.5px, -1px -1px, -1px -1px !important;
 		background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px !important;
 	}
+
+.flowchart-example-container {
+    width: 800px;
+    height: 400px;
+    background: white;
+    border: 1px solid #BBB;
+    margin-bottom: 10px;
+}
 
 </style>
 @endpush
@@ -329,9 +380,170 @@
         </div>
     </div>
 </section>
+
+
+<div id="level_add_modal" class="level_add_modal modal fade" role="dialog" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content edit-quest-modal-div">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-box">
+                    <form action="javascript:;" method="POST" id="generate-bulk-list-form" class="px-25 add-level-form">
+                        @csrf
+
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-12">
+                                        <h2 class="font-20 font-weight-bold mb-15">Level</h2>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="form-group">
+                                            <label class="input-label">Type</label>
+                                            <select name="level_type" data-plugin-selectTwo class="form-control populate level_type conditional-field">
+                                                <option value="topic" data-child="topic-fields">Topic</option>
+                                                <option value="treasure_mission" data-child="treasure_mission-fields">Treasure Mission</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 conditional-child-fields treasure_mission-fields">
+                                        <div class="form-group">
+                                            <label class="input-label">Points</label>
+                                            <input name="treasure_mission_points" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 conditional-child-fields topic-fields">
+                                        <div class="form-group">
+                                            <label class="input-label">{{trans('admin/main.category')}}</label>
+                                            <select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
+                                                <option value="">{{trans('admin/main.all_categories')}}</option>
+                                                @foreach($categories as $category)
+                                                    @if(!empty($category->subCategories) and count($category->subCategories))
+                                                        <optgroup label="{{  $category->title }}">
+                                                            @foreach($category->subCategories as $subCategory)
+                                                                <option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
+                                                            @endforeach
+                                                        </optgroup>
+                                                    @else
+                                                        <option value="{{ $category->id }}">{{ $category->title }}</option>
+                                                    @endif
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 conditional-child-fields topic-fields">
+                                        <div class="form-group">
+                                            <label class="input-label">Subjects</label>
+                                            <select data-chapter_id="" id="subject_id"
+                                                    class="rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
+                                                    name="subject_id" data-next_index="chapter_id" data-next_value="">
+                                                <option value="">Please select year, subject</option>
+                                            </select>
+                                            @error('subject_id')
+                                            <div class="invalid-feedback">
+                                                {{ $message }}
+                                            </div>
+                                            @enderror
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 conditional-child-fields topic-fields">
+                                        <div class="form-group">
+                                            <label class="input-label">Topic</label>
+                                            <select data-sub_chapter_id="" id="chapter_id"
+                                                    class="rurera-req-field form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
+                                                    name="chapter_id" data-disabled="{{isset($already_created_bulk_lists)? json_encode($already_created_bulk_lists) : ''}}" data-next_index="sub_chapter_id" data-next_value="">
+                                                <option value="">Please select year, subject</option>
+                                            </select>
+                                            @error('chapter_id')
+                                            <div class="invalid-feedback">
+                                                {{ $message }}
+                                            </div>
+                                            @enderror
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 conditional-child-fields topic-fields">
+                                        <div class="form-group">
+                                            <label class="input-label">Sub Topic</label>
+                                            <select id="sub_chapter_id"
+                                                    class="rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+                                                    name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
+                                                <option value="">Please select year, subject, Topic</option>
+                                            </select>
+                                            @error('sub_chapter_id')
+                                            <div class="invalid-feedback">
+                                                {{ $message }}
+                                            </div>
+                                            @enderror
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 col-lg-12 conditional-child-fields topic-fields">
+                                    <div class="form-group">
+                                        <label>Topic Part Items</label>
+                                        <select data-return_type="option" multiple
+
+                                                class="topic-parts-data form-control select2"
+                                                id="topic_part_item_id" name="topic_part_item_id[]">
+                                            <option disabled>Topic Part Item</option>
+                                        </select>
+                                    </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inactivity-controls">
+                            <button type="button" class="add-level-stage-btn mt-0">Add Level</button>
+                            <!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
+                        </div>
+                        <form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="chart_container">
+    <div class="flowchart-example-container" id="flowchartworkspace"></div>
+</div>
+<div class="draggable_operators">
+    <div class="draggable_operators_label">
+        Operators (drag and drop them in the flowchart):
+    </div>
+    <div class="draggable_operators_divs">
+        <div class="draggable_operator" data-nb-inputs="1" data-nb-outputs="0">1 input</div>
+        <div class="draggable_operator" data-nb-inputs="0" data-nb-outputs="1">1 output</div>
+        <div class="draggable_operator" data-nb-inputs="1" data-nb-outputs="1">1 input &amp; 1 output</div>
+        <div class="draggable_operator" data-nb-inputs="1" data-nb-outputs="2">1 in &amp; 2 out</div>
+        <div class="draggable_operator" data-nb-inputs="2" data-nb-outputs="1">2 in &amp; 1 out</div>
+        <div class="draggable_operator" data-nb-inputs="2" data-nb-outputs="2">2 in &amp; 2 out</div>
+    </div>
+</div>
+<button class="create_operator">Create operator</button>
+<button class="delete_selected_button">Delete selected operator / link</button>
+<div id="operator_properties" style="display: block;">
+    <label for="operator_title">Operator's title: </label><input id="operator_title" type="text">
+</div>
+<div id="link_properties" style="display: block;">
+    <label for="link_color">Link's color: </label><input id="link_color" type="color">
+</div>
+<button class="get_data" id="get_data">Get data</button>
+<button class="set_data" id="set_data">Set data</button>
+<button id="save_local">Save to local storage</button>
+<button id="load_local">Load from local storage</button>
+<div>
+    <textarea id="flowchart_data"></textarea>
+</div>
 @endsection
 
 @push('scripts_bottom')
+    <script src="/assets/admin/js/jquery.flowchart.js?ver={{$rand_id}}"></script>
 <script src="/assets/default/vendors/sortable/jquery-ui.min.js"></script>
  <script src="https://www.jqueryscript.net/demo/CSS3-Rotatable-jQuery-UI/jquery.ui.rotatable.js"></script>
 <script src="/assets/default/js/admin/filters.min.js"></script>
@@ -370,7 +582,33 @@
                 }
             });
         });
-        $(document).on('change', '.ajax-chapter-dropdown', function () {
+    $(document).on('change', '.ajax-chapter-dropdown', function () {
+        var chapter_id = $(this).val();
+        var sub_chapter_id = $(this).attr('data-sub_chapter_id');
+        var disabled_items = $(this).attr('data-disabled');
+        $.ajax({
+            type: "GET",
+            url: '/admin/webinars/sub_chapters_by_chapter',
+            data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id,  'disabled_items': disabled_items},
+            success: function (return_data) {
+                $(".ajax-subchapter-dropdown").html(return_data);
+            }
+        });
+    });
+
+    $(document).on('change', '.ajax-subchapter-dropdown', function () {
+        var sub_chapter_id = $(this).val();
+        var topic_part = $(this).attr('data-next_value');
+        $.ajax({
+            type: "GET",
+            url: '/admin/webinars/topic_part_item_by_sub_chapter',
+            data: {'subchapter_id': sub_chapter_id, 'show_all': 'yes', 'topic_part': topic_part},
+            success: function (return_data) {
+                $(".topic-parts-data").html(return_data);
+            }
+        });
+    });
+        /*$(document).on('change', '.ajax-chapter-dropdown', function () {
             var thisObj = $(this);
             var chapter_id = $(this).val();
             var sub_chapter_id = $(this).attr('data-sub_chapter_id');
@@ -412,7 +650,7 @@
                     }
                 });
             }
-        });
+        });*/
         $(".ajax-category-courses").change();
 
 </script>
@@ -429,6 +667,17 @@
 				sorting_render(); // Call your function here
 			}
 		});
+
+        $(".levels-objects-list").sortable({
+            update: function(event, ui) {
+                levels_sorting_render(); // Call your function here
+            }
+        });
+
+        $('body').on('click', '.stage-accordion', function (e) {
+
+            levels_sorting_render();
+        });
 
         $('body').on('click', '.delete-parent-li', function (e) {
 
@@ -543,23 +792,432 @@
         $(".category-id-field").change();
         handleTopicsMultiSelect2('search-topics-select2', '/admin/chapters/search', ['class', 'course', 'subject', 'title']);
 
+
+
     });
 
 
 	$('body').on('submit', '.learning-journey-form', function (e) {
 		console.log('submitted_form');
 		var posted_data = generate_stage_area();
-		console.log(posted_data);
+        console.log(posted_data);
 		$(".posted-data").val(JSON.stringify(posted_data));
-		//return false;
+
+
+        //return false;
 
 	});
 
+    $(document).on('click', '.add-level', function () {
+        $(".level_add_modal").modal('show');
+    });
+    $(document).on('click', '.add-level-stage-btn', function () {
+        var level_type = $('[name="level_type"]').val();
+        var treasure_mission_points = $('[name="treasure_mission_points"]').val();
+        var unique_id = Math.floor((Math.random() * 99999) + 1);
+        var field_random_number = 'rand_' + unique_id;
+        var layer_html = '';
+        $el = $('<div></div>');
+        if(level_type == 'topic') {
+            var topic_part_item_ids = $('[name="topic_part_item_id[]"]').val();
+            $.each(topic_part_item_ids, function(index, topic_part_item_id) {
+                var unique_id = Math.floor((Math.random() * 99999) + 1);
+                var field_random_number = 'rand_' + unique_id;
+                // Perform an action with each topic_part_item_id
+                $el.append($('<div id="' + field_random_number + '" data-topic_part_item_id="'+topic_part_item_id+'" style="left:0px; top:0px;" data-item_title="Topic" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="topic" data-trigger_class="infobox-topic_numbers-fields" data-item_type="topic_numbers" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 258 264" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="257.641" width="263.774" height="257.64" rx="49.0743" transform="rotate(90 257.641 0)" fill="#8F5C57" fill-opacity="0.79"></rect></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+                $el.append('</div>');
+                layer_html += `<li data-id="${field_random_number}" data-field_postition="2">Topic Title
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                        <img src="/assets/default/svgs/dots-three.svg" alt="">
+                        </button>
+                    <div class="dropdown-menu">
+                        <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i><i class="fa fa-copy"></i>
+                    </div>
+                </div>
+                </li>`;
+            });
+        }
+        if(level_type == 'treasure_mission') {
+            $el.append($('<div data-no_of_coins="'+treasure_mission_points+'" id="' + field_random_number + '" style="left:0px; top:0px;" data-item_title="Treasure" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/treasure_1.svg" data-field_type="treasure" data-trigger_class="infobox-treasure_1-fields" data-item_type="treasure" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FFAC33" d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379z"></path></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+            $el.append('</div>');
+            layer_html += `<li data-id="${field_random_number}" data-field_postition="2">Topic Title
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                <img src="/assets/default/svgs/dots-three.svg" alt="">
+                </button>
+            <div class="dropdown-menu">
+                <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i><i class="fa fa-copy"></i>
+            </div>
+        </div>
+        </li>`;
+        }
+
+
+        $(".levels-objects-list").append(layer_html);
+
+        $(".book-dropzone.active").append($el);
+        $(".level_add_modal").modal('hide');
+
+        setTimeout(function() {
+            levels_sorting_render();
+        }, 2000); // 2000 milliseconds = 2 seconds
+    });
+
+
+    $(document).on('click', '.add-spacer', function () {
+        var level_type = 'spacer';
+        var unique_id = Math.floor((Math.random() * 99999) + 1);
+        var field_random_number = 'rand_' + unique_id;
+        var layer_html = '';
+        if(level_type == 'spacer') {
+            var unique_id = Math.floor((Math.random() * 99999) + 1);
+            var field_random_number = 'rand_' + unique_id;
+
+            $el = ($('<div id="' + field_random_number + '"  style="left:0px; top:0px;" data-item_title="Spacer" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer spacer-block flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="topic" data-trigger_class="infobox-spacer-fields" data-item_type="spacer" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="5" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="black" /></svg><div class="flowchart-operator-inputs-outputs spacer-svg-controls"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+            $el.append('<a href="javascript:;" class="remove spacer-remove"><span class="fas fa-trash"></span></a>');
+            $el.append('</div>');
+            layer_html += `<li data-id="${field_random_number}" data-field_postition="2">Topic Title
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                    <img src="/assets/default/svgs/dots-three.svg" alt="">
+                    </button>
+                <div class="dropdown-menu">
+                    <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i><i class="fa fa-copy"></i>
+                </div>
+            </div>
+            </li>`;
+        }
+        $(".levels-objects-list").append(layer_html);
+
+        $(".book-dropzone.active").append($el);
+        $(".level_add_modal").modal('hide');
+
+        $('.draggable_field_' + field_random_number)
+            .rotatable({angle: rotate_value})
+            .off('wheel'); // Unbinds all wheel events from this element
+
+        setTimeout(function() {
+            levels_sorting_render();
+        }, 2000); // 2000 milliseconds = 2 seconds
+    });
 
 
 
 
 
 
+</script>
+
+
+
+<script type="text/javascript">
+    /* global $ */
+    var $flowchart = null;
+    $(document).ready(function() {
+
+        $(".conditional-field").change();
+        $(".sets-selection.active").click();
+
+
+        $flowchart = $('#flowchartworkspace');
+        $flowchart = $(".book-dropzone.active");
+        var $container = $flowchart.parent();
+
+
+
+
+
+        // Apply the plugin on a standard, empty div...
+        $flowchart.flowchart({
+            data: defaultFlowchartData,
+            defaultSelectedLinkColor: '#000055',
+            grid: 10,
+            multipleLinksOnInput: true,
+            multipleLinksOnOutput: true
+        });
+
+
+
+
+        function getOperatorData($element) {
+            var nbInputs = parseInt($element.data('nb-inputs'), 10);
+            var nbOutputs = parseInt($element.data('nb-outputs'), 10);
+            var data = {
+                properties: {
+                    title: $element.text(),
+                    inputs: {},
+                    outputs: {}
+                }
+            };
+
+            var i = 0;
+            for (i = 0; i < nbInputs; i++) {
+                data.properties.inputs['input_' + i] = {
+                    label: 'Input ' + (i + 1)
+                };
+            }
+            for (i = 0; i < nbOutputs; i++) {
+                data.properties.outputs['output_' + i] = {
+                    label: 'Output ' + (i + 1)
+                };
+            }
+
+            return data;
+        }
+
+
+
+        //-----------------------------------------
+        //--- operator and link properties
+        //--- start
+        var $operatorProperties = $('#operator_properties');
+        $operatorProperties.hide();
+        var $linkProperties = $('#link_properties');
+        $linkProperties.hide();
+        var $operatorTitle = $('#operator_title');
+        var $linkColor = $('#link_color');
+
+        $flowchart.flowchart({
+            onOperatorSelect: function(operatorId) {
+                $operatorProperties.show();
+                $operatorTitle.val($flowchart.flowchart('getOperatorTitle', operatorId));
+                return true;
+            },
+            onOperatorUnselect: function() {
+                $operatorProperties.hide();
+                return true;
+            },
+            onLinkSelect: function(linkId) {
+                $linkProperties.show();
+                $linkColor.val($flowchart.flowchart('getLinkMainColor', linkId));
+                return true;
+            },
+            onLinkUnselect: function() {
+                $linkProperties.hide();
+                return true;
+            }
+        });
+
+
+        //reinitialize_items();
+
+        $operatorTitle.keyup(function() {
+            var selectedOperatorId = $flowchart.flowchart('getSelectedOperatorId');
+            if (selectedOperatorId != null) {
+                $flowchart.flowchart('setOperatorTitle', selectedOperatorId, $operatorTitle.val());
+            }
+        });
+
+        $linkColor.change(function() {
+            var selectedLinkId = $flowchart.flowchart('getSelectedLinkId');
+            if (selectedLinkId != null) {
+                $flowchart.flowchart('setLinkMainColor', selectedLinkId, $linkColor.val());
+            }
+        });
+        //--- end
+        //--- operator and link properties
+        //-----------------------------------------
+
+        //-----------------------------------------
+        //--- delete operator / link button
+        //--- start
+        $flowchart.parent().siblings('.delete_selected_button').click(function() {
+            $flowchart.flowchart('deleteSelected');
+        });
+        //--- end
+        //--- delete operator / link button
+        //-----------------------------------------
+
+
+
+        //-----------------------------------------
+        //--- create operator button
+        //--- start
+        var operatorI = 0;
+        $flowchart.parent().siblings('.create_operator').click(function() {
+            var operatorId = 'created_operator_' + operatorI;
+            var operatorData = {
+                top: ($flowchart.height() / 2) - 30,
+                left: ($flowchart.width() / 2) - 100 + (operatorI * 10),
+                properties: {
+                    title: 'Operator ' + (operatorI + 3),
+                    inputs: {
+                        input_1: {
+                            label: 'Input 1',
+                        }
+                    },
+                    outputs: {
+                        output_1: {
+                            label: 'Output 1',
+                        }
+                    }
+                }
+            };
+
+            operatorI++;
+
+            $flowchart.flowchart('createOperator', operatorId, operatorData);
+
+        });
+        //--- end
+        //--- create operator button
+        //-----------------------------------------
+
+
+
+
+        //-----------------------------------------
+        //--- draggable operators
+        //--- start
+        //var operatorId = 0;
+        var $draggableOperators = $('.draggable_operator');
+        $draggableOperators.draggable({
+            cursor: "move",
+            opacity: 0.7,
+
+            // helper: 'clone',
+            appendTo: 'body',
+            zIndex: 1000,
+
+            helper: function(e) {
+                var $this = $(this);
+                var data = getOperatorData($this);
+                return $flowchart.flowchart('getOperatorElement', data);
+            },
+            stop: function(e, ui) {
+                var $this = $(this);
+                var elOffset = ui.offset;
+                var containerOffset = $container.offset();
+                if (elOffset.left > containerOffset.left &&
+                    elOffset.top > containerOffset.top &&
+                    elOffset.left < containerOffset.left + $container.width() &&
+                    elOffset.top < containerOffset.top + $container.height()) {
+
+                    var flowchartOffset = $flowchart.offset();
+
+                    var relativeLeft = elOffset.left - flowchartOffset.left;
+                    var relativeTop = elOffset.top - flowchartOffset.top;
+
+                    var positionRatio = $flowchart.flowchart('getPositionRatio');
+                    relativeLeft /= positionRatio;
+                    relativeTop /= positionRatio;
+
+                    var data = getOperatorData($this);
+                    data.left = relativeLeft;
+                    data.top = relativeTop;
+
+                    $flowchart.flowchart('addOperator', data);
+                }
+            }
+        });
+        //--- end
+        //--- draggable operators
+        //-----------------------------------------
+
+
+        //-----------------------------------------
+        //--- save and load
+        //--- start
+        function Flow2Text() {
+            var data = $flowchart.flowchart('getData');
+            $('#flowchart_data').val(JSON.stringify(data, null, 2));
+        }
+        $('#get_data').click(Flow2Text);
+
+        function Text2Flow() {
+            var data = JSON.parse($('#flowchart_data').val());
+            $flowchart.flowchart('setData', data);
+        }
+        $('#set_data').click(Text2Flow);
+
+        /*global localStorage*/
+        function SaveToLocalStorage() {
+            if (typeof localStorage !== 'object') {
+                alert('local storage not available');
+                return;
+            }
+            Flow2Text();
+            localStorage.setItem("stgLocalFlowChart", $('#flowchart_data').val());
+        }
+        $('#save_local').click(SaveToLocalStorage);
+
+        function LoadFromLocalStorage() {
+            if (typeof localStorage !== 'object') {
+                alert('local storage not available');
+                return;
+            }
+            var s = localStorage.getItem("stgLocalFlowChart");
+            if (s != null) {
+                $('#flowchart_data').val(s);
+                Text2Flow();
+            }
+            else {
+                alert('local storage empty');
+            }
+        }
+        $('#load_local').click(LoadFromLocalStorage);
+        //--- end
+        //--- save and load
+        //-----------------------------------------
+
+        levels_sorting_render();
+    });
+
+    var defaultFlowchartData = {
+        operators: {
+            operator1: {
+                top: 20,
+                left: 20,
+                properties: {
+                    title: 'Operator 1',
+                    inputs: {},
+                    outputs: {
+                        output_1: {
+                            label: 'Output 1',
+                        }
+                    }
+                }
+            },
+            operator2: {
+                top: 80,
+                left: 300,
+                properties: {
+                    title: 'Operator 2',
+                    inputs: {
+                        input_1: {
+                            label: 'Input 1',
+                        },
+                        input_2: {
+                            label: 'Input 2',
+                        },
+                    },
+                    outputs: {}
+                }
+            },
+        },
+        links: {
+            link_1: {
+                fromOperator: 'operator1',
+                fromConnector: 'output_1',
+                toOperator: 'operator2',
+                toConnector: 'input_2',
+            },
+            link_2: {
+                fromOperator: 'operator1',
+                fromConnector: 'output_1',
+                toOperator: 'operator2',
+                toConnector: 'input_1',
+            },
+        }
+    };
+
+      defaultFlowchartData = {};
+
+
+
+
+
+    if (false) console.log('remove lint unused warning', defaultFlowchartData);
 </script>
 @endpush

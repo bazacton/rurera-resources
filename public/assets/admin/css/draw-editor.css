@@ -142,7 +142,8 @@ body .editor-zone:has(.field-options.hide) {
     padding-left: 0;
 }
 body .editor-zone:has(.field-options) {
-    padding-left: 369px;
+    /*padding-left: 369px;*/
+    padding-left:0px;
 }
 .book-dropzone {
     position: relative;
