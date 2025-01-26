@@ -675,8 +675,9 @@
         });
 
         $('body').on('click', '.stage-accordion', function (e) {
-
-            levels_sorting_render();
+            if(!$(this).hasClass('collapsed')){
+                levels_sorting_render();
+            }
         });
 
         $('body').on('click', '.delete-parent-li', function (e) {
@@ -874,7 +875,7 @@
             var unique_id = Math.floor((Math.random() * 99999) + 1);
             var field_random_number = 'rand_' + unique_id;
 
-            $el = ($('<div id="' + field_random_number + '"  style="left:0px; top:0px;" data-item_title="Spacer" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer spacer-block flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="topic" data-trigger_class="infobox-spacer-fields" data-item_type="spacer" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="5" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="black" /></svg><div class="flowchart-operator-inputs-outputs spacer-svg-controls"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+            $el = ($('<div id="' + field_random_number + '"  style="left:0px; top:0px;" data-item_title="Spacer" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer spacer-block flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="spacer" data-trigger_class="infobox-spacer-fields" data-item_type="spacer" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="5" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="black" /></svg><div class="flowchart-operator-inputs-outputs spacer-svg-controls"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
             $el.append('<a href="javascript:;" class="remove spacer-remove"><span class="fas fa-trash"></span></a>');
             $el.append('</div>');
             layer_html += `<li data-id="${field_random_number}" data-field_postition="2">Topic Title

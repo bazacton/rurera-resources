@@ -103,7 +103,7 @@ $(document).on('click', '.book-dropzone', function (e) {
         dropZonObj.append($el);
     }
 
-    if (drag_type == "stage" || drag_type == "path" || drag_type == "stage_objects" || drag_type == "topic" || drag_type == "treasure") {
+    if (drag_type == "stage" || drag_type == "path" || drag_type == "stage_objects" || drag_type == "topic" || drag_type == "treasure" || drag_type == "spacer") {
 
 
 		var svg_code = $(".svgs-data ."+drag_object+"_svg").html();
@@ -684,7 +684,7 @@ $(document).on('click', '.editor-objects-list li .fa-trash', function (e) {
 	$(this).closest('li').remove();
 	sorting_render();
     levels_sorting_render();
-    if(element_type == 'topic' || element_type == 'treasure'){
+    if(element_type == 'topic' || element_type == 'treasure' || element_type == 'spacer'){
 
 
         var links = $flowchart.flowchart('getData').links;
