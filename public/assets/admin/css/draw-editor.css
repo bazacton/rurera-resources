@@ -195,6 +195,12 @@ body .editor-parent-nav .nav-link {
 body .book-dropzone {
     border-radius: 0;
 }
+.page-settings-fields {
+    padding: 0 15px;
+}
+.option-field-item {
+    margin-bottom: 15px;
+}
 .editor-zone .generate {
     margin-top: 30px;
 }
