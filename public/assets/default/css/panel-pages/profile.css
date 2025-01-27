@@ -178,7 +178,7 @@ address .info-list-label {color: #64748b;}
 .detail-body .edit-info-list .subscribe-plan:hover {top: 0;}
 .detail-body .edit-info-list .package-block {display: flex; align-items: center; justify-content: space-between; flex-direction: row-reverse; margin-bottom: 10px;}
 .detail-body .subscribe-plan .subscribe-title {margin-bottom: 0;}
-.detail-body .subscribe-plan .subscribe-price {flex-wrap: wrap;}
+.detail-body .subscribe-plan .subscribe-price {flex-wrap: wrap; gap: 10px;}
 .detail-body .subscribe-plan .subscribe-price span {color: #596bfd; font-weight: 500; font-size: 18px !important; margin-bottom: 5px;}
 .detail-body .subscribe-plan .subscribe-price .yearly-price {color: #64748b; font-size: 15px !important; font-weight: 400; margin-bottom: 0;}
 .detail-body .subscribe-plan .package-update-btn.btn {background-color: var(--primary); color: #fff; padding: 0 8px; height: 42px; }
