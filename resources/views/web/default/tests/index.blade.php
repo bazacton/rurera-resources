@@ -59,7 +59,7 @@
                                 <div class="col-12 col-lg-12 col-md-12">
                                     <!-- Test List Filters Start -->
                                     <div class="tests-list-holder mb-25">
-                                        <a href="#." class="filter-mobile-btn">Filters Dropdown</a>
+                                        <a href="#." class="filter-mobile-btn">Filters</a>
                                         <ul class="tests-list mb-30">
                                             <li data-type="all" class="active">All Tests</li>
                                             <li data-type="sats"><img src="/assets/default/img/assignment-logo/sats.png" alt=""> SATs</li>
