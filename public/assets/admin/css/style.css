@@ -2774,6 +2774,12 @@ Admin Questions Generator Page Style End
     display: none;
 }
 
+/* Learning Journey Sets Edit Page Accordions Style Start */
+.learning_journey_sets .curriculum-item-data {
+    height: auto !important;
+}
+/* Learning Journey Sets Edit Page Accordions Style End */
+
 
 @media (min-width: 993px) {
     .edit-questions-tabs .similarity-content-block .nav {
