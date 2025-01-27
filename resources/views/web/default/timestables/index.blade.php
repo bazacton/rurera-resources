@@ -3,6 +3,7 @@
 @section('content')
 <section class="content-section">
     <section class="page-section template-grid mx-w-100 p-0 news-section">
+        <a href="javascript:;" class="timestables-back-btn">Back</a>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12">
@@ -280,7 +281,6 @@
 
                         </div>
                         <div class="timestables-mode-block">
-                            <a href="javascript:;" class="timestables-back-btn">Back</a>
                             <div class="timestables-mode-content">
 
                             </div>
