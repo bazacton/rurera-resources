@@ -1392,6 +1392,9 @@ Lms Responsive Style Start
         height: 20px;
         width: 20px;
     }
+    body .profile-inner {
+        padding: 15px;
+    }
     
     
 }
