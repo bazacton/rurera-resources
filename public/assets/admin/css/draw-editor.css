@@ -155,6 +155,7 @@ body .editor-zone:has(.field-options) {
 body .editor-controls-holder {
     border: 1px solid #ccc;
     background-color: inherit;
+    border-radius: 0;
     height: 100%;
     padding: 0;
 }
@@ -190,6 +191,9 @@ body .editor-parent-nav ul {
 body .editor-parent-nav .nav-link {
     padding: 5px 12px;
     font-size: 14px;
+}
+body .book-dropzone {
+    border-radius: 0;
 }
 .editor-zone .generate {
     margin-top: 30px;
