@@ -895,8 +895,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									@if(isset( $user->userSubscriptions->subscribe ) && $user->userSubscriptions->is_cancelled == 0 )	
 									<a href="javascript:;" class="reset-btn package-payment-btn cancel-subscription-modal" data-type="child_payment" data-id="{{$user->id}}">
 										<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>
-												  &nbsp;&nbsp;Cancel Subscription
-											&nbsp;&nbsp;&nbsp;&nbsp;
+											Cancel Subscription
 										</a>
 									@else
 										@if(isset( $user->userSubscriptions->id))
