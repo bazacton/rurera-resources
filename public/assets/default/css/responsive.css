@@ -1223,6 +1223,11 @@ Lms Responsive Style Start
     .svga-vert-order-controls {
         margin: 0 0 10px;
     }
+    .detail-body .edit-info-list .package-block img {
+        height: 50px;
+        width: 50px;
+        object-fit: contain;
+    }
 }
 
 @media screen and (max-width: 640px) {
