@@ -1365,6 +1365,8 @@ Lms Responsive Style Start
     .sats-listing-card tbody tr {position: relative;}
     .sats-listing-card tbody tr td {display: block;}
     .sats-listing-card tbody tr td:last-child {padding: 0; border: 0;}
+    .sats-listing-card.medium tbody tr td:last-child { border-bottom: 1px solid #ececec; padding: 25px 20px;}
+    .sats-listing-card.medium tbody tr td .rurera-list-btn {margin-left: 0;}
     body .learning-page .close {right: 30px;}
     .spells-table-inner .table {min-width: 900px;}
     .rurera-in-row.alphabet-list-style .form-field {width: 100%; }
