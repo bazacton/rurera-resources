@@ -3,7 +3,6 @@ Word Lists Page | Student Panel Style Start
 Sub Pages Style
 *****************************/
 .db-back-btn {
-    margin: 0 0 10px;
     display: inline-block;
     position: relative;
     color: var(--primary);
