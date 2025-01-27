@@ -3,288 +3,288 @@
 @section('content')
 <section class="content-section">
     <section class="page-section template-grid mx-w-100 p-0 news-section">
-        <a href="javascript:;" class="timestables-back-btn">Back</a>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12">
-                        <div class="timestables-modes row">
-                            <div class="col-12 col-lg-12 col-md-12">
-                                <div class="section-title mb-30">
-                                <h2 itemprop="title" class="font-22 mb-0">Time Tables</h2>
-                            </div>
+                    <a href="javascript:;" class="timestables-back-btn mb-20">Back</a>
+                    <div class="timestables-modes row">
+                        <div class="col-12 col-lg-12 col-md-12">
+                            <div class="section-title mb-30">
+                            <h2 itemprop="title" class="font-22 mb-0">Time Tables</h2>
                         </div>
-                        <div class="col-12 col-lg-12 col-md-12 rurera-hide">
-                            <ul class="tests-list type-list mb-30">
-                                <li data-type="single-player" class="active"><img src="/assets/default/img/single.png" alt=""> Single Player</li>
-                                <li data-type="multi-player"><img src="/assets/default/img/multi.png" alt=""> Multi Player</li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div class="col-12 col-lg-12 col-md-12 rurera-hide">
+                        <ul class="tests-list type-list mb-30">
+                            <li data-type="single-player" class="active"><img src="/assets/default/img/single.png" alt=""> Single Player</li>
+                            <li data-type="multi-player"><img src="/assets/default/img/multi.png" alt=""> Multi Player</li>
+                        </ul>
+                    </div>
 
-                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                <div class="modal-body">
-                                <div class="col-12 col-lg-12 pt-15">
-                                <div class="sound-card panel-border bg-white rounded-sm p-20">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                    </button>
-                                    <span class="selective-sound font-22">very</span>
-                                        <div class="sound-box">
-                                            <span class="icon-box">
-                                                <img src="/assets/default/svgs/sound.svg" alt="sound svg image" height="800" width="800">
-                                            </span>
-                                            <span class="current-sound font-22">very</span>
-                                        </div>
-                                        <div class="sound-list">
-                                            <h5>adjective</h5>
-                                            <ol>
-                                                <li>being actual or real</li>
-                                                <li>exact, precise</li>
-                                                <li>exactly suitable or necessary</li>
-                                            </ol>
-                                        </div>
-                                        <div class="sound-list mb-0">
-                                            <h5>adverb</h5>
-                                            <ol>
-                                                <li>in actual fact: truly</li>
-                                                <li>to a great degree: extremely</li>
-                                            </ol>
-                                        </div>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                            <div class="modal-body">
+                            <div class="col-12 col-lg-12 pt-15">
+                            <div class="sound-card panel-border bg-white rounded-sm p-20">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                                </button>
+                                <span class="selective-sound font-22">very</span>
+                                    <div class="sound-box">
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/sound.svg" alt="sound svg image" height="800" width="800">
+                                        </span>
+                                        <span class="current-sound font-22">very</span>
+                                    </div>
+                                    <div class="sound-list">
+                                        <h5>adjective</h5>
+                                        <ol>
+                                            <li>being actual or real</li>
+                                            <li>exact, precise</li>
+                                            <li>exactly suitable or necessary</li>
+                                        </ol>
+                                    </div>
+                                    <div class="sound-list mb-0">
+                                        <h5>adverb</h5>
+                                        <ol>
+                                            <li>in actual fact: truly</li>
+                                            <li>to a great degree: extremely</li>
+                                        </ol>
                                     </div>
                                 </div>
-                                </div>
-                                
-                                </div>
+                            </div>
+                            </div>
+                            
                             </div>
                         </div>
-                        <div class="type-list-data single-player-data">
-                            <div class="col-12 col-md-12 col-lg-12">
-                                <a itemprop="url" href="/timestables-practice/freedom-mode">
-                                    <div class="grid-card timestables-mode-data" data-mode_type="freedom_mode" itemtype="https://schema.org/NewsArticle">
-                                        <div class="text-holder">
-                                            <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
-                                                Freedom mode
-                                            </h3>
-                                        </div>
-                                        <div class="img-holder">
-                                            <img src="/assets/default/svgs/eagle.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
-                                        </div>
-                                        <p class="text-gray">Explore multiplication, division, or both at your own pace.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-md-12 col-lg-12">
-                                <a itemprop="url" href="/timestables-practice/powerup-mode">
-                                    <div class="grid-card timestables-mode-data" itemtype="https://schema.org/NewsArticle">
-                                        <div class="text-holder">
-                                            <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
-                                                Power-up Heatmap
-                                            </h3>
-                                        </div>
-                                        <div class="img-holder">
-                                            <img src="/assets/default/svgs/battery-level.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
-                                        </div>
-                                        <p class="text-gray">Conquer questions to turn your heatmap green.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-md-12 col-lg-12">
-                                <a itemprop="url" href="/timestables-practice/trophy-mode">
-                                    <div class="grid-card timestables-mode-data" itemtype="https://schema.org/NewsArticle">
-                                        <div class="text-holder">
-                                            <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
-                                                Trophy Mode
-                                            </h3>
-                                        </div>
-                                        <div class="img-holder">
-                                            <img src="/assets/default/svgs/shuttlecock.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
-                                        </div>
-                                        <p class="text-gray">Speed trophy badge by playing 10 games.</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-12 col-md-12 col-lg-12">
-                                <a itemprop="url" href="/timestables-practice/treasure-mission">
-                                    <div class="grid-card timestables-mode-data" itemtype="https://schema.org/NewsArticle">
-                                        <div class="text-holder">
-                                            <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
-                                                Treasure Mission
-                                            </h3>
-                                            <div class="coin-counts">
-                                            <strong>
-                                                <img src="/assets/default/img/panel-sidebar/heart-red.png" alt="">
-                                                {{$authUser->user_life_lines}}
-                                            </strong>
-                                            </div>
-                                        </div>
-                                        <div class="img-holder">
-                                            <img src="/assets/default/img/treasure.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
-                                        </div>
-                                        <p class="text-gray">Journey through times tables practice and discover hidden treasures.</p>
-                                        
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-12 col-md-12 col-lg-12">
-                                <a itemprop="url" href="/timestables-practice/showdown-mode">
-                                    <div class="grid-card timestables-mode-data" itemtype="https://schema.org/NewsArticle">
-                                        <div class="text-holder">
-                                            <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
-                                                Showdown
-                                            </h3>
-                                        </div>
-                                        <div class="img-holder">
-                                            <img src="/assets/default/img/showdown.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
-                                        </div>
-                                        <p class="text-gray">Journey through times tables practice and discover hidden treasures.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-md-12 col-lg-12">
-                                <a itemprop="url" href="/timestables-practice/heat-map">
-                                    <div class="grid-card timestables-mode-data" itemtype="https://schema.org/NewsArticle">
-                                        <div class="text-holder">
-                                            <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
-                                                Heat Map
-                                            </h3>
-                                        </div>
-                                        <div class="img-holder">
-                                            <img src="/assets/default/svgs/fire.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
-                                        </div>
-                                        <p class="text-gray">Colours visualization for user data in heatmap</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-md-12 col-lg-12">
-                                <a itemprop="url" href="/panel/analytics">
-                                    <div class="grid-card timestables-mode-data" itemtype="https://schema.org/NewsArticle">
-                                        <div class="text-holder">
-                                            <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
-                                                Analytics
-                                            </h3>
-                                        </div>
-                                        <div class="img-holder">
-                                            <img src="/assets/default/svgs/analytics.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
-                                        </div>
-                                        <p class="text-gray">Connect with individuals worldwide in a Cloud.</p>
-
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="type-list-data multi-player-data rurera-hide">
-                            <div class="col-12 col-md-12 col-lg-12">
-                                <div class="grid-card timestables-mode-data" itemtype="https://schema.org/NewsArticle">
+                    </div>
+                    <div class="type-list-data single-player-data">
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <a itemprop="url" href="/timestables-practice/freedom-mode">
+                                <div class="grid-card timestables-mode-data" data-mode_type="freedom_mode" itemtype="https://schema.org/NewsArticle">
                                     <div class="text-holder">
                                         <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
-                                        <a class="grid-btn" itemprop="Button" href="javascript:;">Tournament</a>
-                                            <span class="title-label">Coming Soon</span>
+                                            Freedom mode
                                         </h3>
                                     </div>
                                     <div class="img-holder">
-                                        <img src="/assets/default/svgs/worldCup-colord.svg" class="img-cover" alt="Preparing for Success: Online Courses for Year 5 Students" title="Preparing for Success: Online Courses for Year 5 Students" itemprop="image" loading="eager">
+                                        <img src="/assets/default/svgs/eagle.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
                                     </div>
-                                    <p class="text-gray">Play and compete with classmates in exciting challenges.</p>
+                                    <p class="text-gray">Explore multiplication, division, or both at your own pace.</p>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-12 col-lg-12">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <a itemprop="url" href="/timestables-practice/powerup-mode">
                                 <div class="grid-card timestables-mode-data" itemtype="https://schema.org/NewsArticle">
                                     <div class="text-holder">
                                         <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
-                                            <a class="grid-btn" itemprop="Button" href="javascript:;">Global Arena
-                                                <span class="title-label">Coming Soon</span>
-                                            </a>
+                                            Power-up Heatmap
                                         </h3>
                                     </div>
                                     <div class="img-holder">
-                                        <img src="/assets/default/svgs/global-arena.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                                        <img src="/assets/default/svgs/battery-level.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                                    </div>
+                                    <p class="text-gray">Conquer questions to turn your heatmap green.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <a itemprop="url" href="/timestables-practice/trophy-mode">
+                                <div class="grid-card timestables-mode-data" itemtype="https://schema.org/NewsArticle">
+                                    <div class="text-holder">
+                                        <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
+                                            Trophy Mode
+                                        </h3>
+                                    </div>
+                                    <div class="img-holder">
+                                        <img src="/assets/default/svgs/shuttlecock.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                                    </div>
+                                    <p class="text-gray">Speed trophy badge by playing 10 games.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <a itemprop="url" href="/timestables-practice/treasure-mission">
+                                <div class="grid-card timestables-mode-data" itemtype="https://schema.org/NewsArticle">
+                                    <div class="text-holder">
+                                        <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
+                                            Treasure Mission
+                                        </h3>
+                                        <div class="coin-counts">
+                                        <strong>
+                                            <img src="/assets/default/img/panel-sidebar/heart-red.png" alt="">
+                                            {{$authUser->user_life_lines}}
+                                        </strong>
+                                        </div>
+                                    </div>
+                                    <div class="img-holder">
+                                        <img src="/assets/default/img/treasure.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
+                                    </div>
+                                    <p class="text-gray">Journey through times tables practice and discover hidden treasures.</p>
+                                    
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <a itemprop="url" href="/timestables-practice/showdown-mode">
+                                <div class="grid-card timestables-mode-data" itemtype="https://schema.org/NewsArticle">
+                                    <div class="text-holder">
+                                        <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
+                                            Showdown
+                                        </h3>
+                                    </div>
+                                    <div class="img-holder">
+                                        <img src="/assets/default/img/showdown.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
+                                    </div>
+                                    <p class="text-gray">Journey through times tables practice and discover hidden treasures.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <a itemprop="url" href="/timestables-practice/heat-map">
+                                <div class="grid-card timestables-mode-data" itemtype="https://schema.org/NewsArticle">
+                                    <div class="text-holder">
+                                        <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
+                                            Heat Map
+                                        </h3>
+                                    </div>
+                                    <div class="img-holder">
+                                        <img src="/assets/default/svgs/fire.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                                    </div>
+                                    <p class="text-gray">Colours visualization for user data in heatmap</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <a itemprop="url" href="/panel/analytics">
+                                <div class="grid-card timestables-mode-data" itemtype="https://schema.org/NewsArticle">
+                                    <div class="text-holder">
+                                        <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
+                                            Analytics
+                                        </h3>
+                                    </div>
+                                    <div class="img-holder">
+                                        <img src="/assets/default/svgs/analytics.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
                                     </div>
                                     <p class="text-gray">Connect with individuals worldwide in a Cloud.</p>
 
                                 </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="type-list-data multi-player-data rurera-hide">
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <div class="grid-card timestables-mode-data" itemtype="https://schema.org/NewsArticle">
+                                <div class="text-holder">
+                                    <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
+                                    <a class="grid-btn" itemprop="Button" href="javascript:;">Tournament</a>
+                                        <span class="title-label">Coming Soon</span>
+                                    </h3>
+                                </div>
+                                <div class="img-holder">
+                                    <img src="/assets/default/svgs/worldCup-colord.svg" class="img-cover" alt="Preparing for Success: Online Courses for Year 5 Students" title="Preparing for Success: Online Courses for Year 5 Students" itemprop="image" loading="eager">
+                                </div>
+                                <p class="text-gray">Play and compete with classmates in exciting challenges.</p>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-12 col-md-12">
-                            <div class="preferences panel-border bg-white rounded-sm p-20">
-                                <h5 class="font-19 font-weight-bold">Preferences</h5>
-                                <h6 class="font-weight-500 mb-20">Lesson experience</h6>
-                                <div class="preferences-switch-list">
-                                    <div class="preferences-switch-box mb-15">
-                                        <span class="switch-lable">Sound effect</span>
-                                        <div class="custom-control custom-switch">
-                                            <input type="checkbox" name="disabled" class="custom-control-input" id="sound">
-                                            <label class="custom-control-label" for="sound"></label>
-                                        </div>
-                                    </div>
-                                    <div class="preferences-switch-box mb-15">
-                                        <span class="switch-lable">Animation</span>
-                                        <div class="custom-control custom-switch">
-                                            <input type="checkbox" name="disabled" class="custom-control-input" id="animation">
-                                            <label class="custom-control-label" for="animation"></label>
-                                        </div>
-                                    </div>
-                                    <div class="preferences-switch-box mb-15">
-                                        <span class="switch-lable">Motivational message</span>
-                                        <div class="custom-control custom-switch">
-                                            <input type="checkbox" name="disabled" class="custom-control-input" id="motivational">
-                                            <label class="custom-control-label" for="motivational"></label>
-                                        </div>
-                                    </div>
-                                    <div class="preferences-switch-box mb-15">
-                                        <span class="switch-lable">Listing exercises</span>
-                                        <div class="custom-control custom-switch">
-                                            <input type="checkbox" name="disabled" class="custom-control-input" id="listing">
-                                            <label class="custom-control-label" for="listing"></label>
-                                        </div>
-                                    </div>
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <div class="grid-card timestables-mode-data" itemtype="https://schema.org/NewsArticle">
+                                <div class="text-holder">
+                                    <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
+                                        <a class="grid-btn" itemprop="Button" href="javascript:;">Global Arena
+                                            <span class="title-label">Coming Soon</span>
+                                        </a>
+                                    </h3>
                                 </div>
-                                <h6 class="font-weight-500 mb-20">Appearance</h6>
-                                <div class="preferences-select">
-                                    <span class="font-weight-500 mb-5 d-block">Dark mode</span>
-                                    <select>
-                                        <option value="System Default">System Default</option>
-                                        <option value="System Default">System Default</option>
-                                        <option value="System Default">System Default</option>
-                                        <option value="System Default">System Default</option>
-                                    </select>
+                                <div class="img-holder">
+                                    <img src="/assets/default/svgs/global-arena.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
                                 </div>
-                                <h6 class="font-weight-500 mb-20">Japanese</h6>
-                                <div class="preferences-switch-box mb-10">
-                                    <span class="switch-lable">Show pronunciation</span>
+                                <p class="text-gray">Connect with individuals worldwide in a Cloud.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-12 col-md-12">
+                        <div class="preferences panel-border bg-white rounded-sm p-20">
+                            <h5 class="font-19 font-weight-bold">Preferences</h5>
+                            <h6 class="font-weight-500 mb-20">Lesson experience</h6>
+                            <div class="preferences-switch-list">
+                                <div class="preferences-switch-box mb-15">
+                                    <span class="switch-lable">Sound effect</span>
                                     <div class="custom-control custom-switch">
-                                        <input type="checkbox" name="disabled" class="custom-control-input" id="pronunciation">
-                                        <label class="custom-control-label" for="pronunciation"></label>
+                                        <input type="checkbox" name="disabled" class="custom-control-input" id="sound">
+                                        <label class="custom-control-label" for="sound"></label>
                                     </div>
                                 </div>
-                                <div class="select-language">
-                                    <div class="language-box">
-                                        <input type="radio" name="language" id="one">
-                                        <label for="one" data-toggle="modal" data-target="#exampleModalCenter">
-                                            <span class="icon-box"></span>
-                                            <span class="country-lable">Romanized</span>
-                                        </label>
+                                <div class="preferences-switch-box mb-15">
+                                    <span class="switch-lable">Animation</span>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" name="disabled" class="custom-control-input" id="animation">
+                                        <label class="custom-control-label" for="animation"></label>
                                     </div>
-                                    <div class="language-box">
-                                        <input type="radio" name="language" id="two">
-                                        <label for="two">
-                                            <span class="icon-box"></span>
-                                            <span class="country-lable">Japanese</span>
-                                        </label>
+                                </div>
+                                <div class="preferences-switch-box mb-15">
+                                    <span class="switch-lable">Motivational message</span>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" name="disabled" class="custom-control-input" id="motivational">
+                                        <label class="custom-control-label" for="motivational"></label>
+                                    </div>
+                                </div>
+                                <div class="preferences-switch-box mb-15">
+                                    <span class="switch-lable">Listing exercises</span>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" name="disabled" class="custom-control-input" id="listing">
+                                        <label class="custom-control-label" for="listing"></label>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        </div>
-                        <div class="timestables-mode-block">
-                            <div class="timestables-mode-content">
-
+                            <h6 class="font-weight-500 mb-20">Appearance</h6>
+                            <div class="preferences-select">
+                                <span class="font-weight-500 mb-5 d-block">Dark mode</span>
+                                <select>
+                                    <option value="System Default">System Default</option>
+                                    <option value="System Default">System Default</option>
+                                    <option value="System Default">System Default</option>
+                                    <option value="System Default">System Default</option>
+                                </select>
+                            </div>
+                            <h6 class="font-weight-500 mb-20">Japanese</h6>
+                            <div class="preferences-switch-box mb-10">
+                                <span class="switch-lable">Show pronunciation</span>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" name="disabled" class="custom-control-input" id="pronunciation">
+                                    <label class="custom-control-label" for="pronunciation"></label>
+                                </div>
+                            </div>
+                            <div class="select-language">
+                                <div class="language-box">
+                                    <input type="radio" name="language" id="one">
+                                    <label for="one" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <span class="icon-box"></span>
+                                        <span class="country-lable">Romanized</span>
+                                    </label>
+                                </div>
+                                <div class="language-box">
+                                    <input type="radio" name="language" id="two">
+                                    <label for="two">
+                                        <span class="icon-box"></span>
+                                        <span class="country-lable">Japanese</span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
+                    </div>
+
+                    </div>
+                    <div class="timestables-mode-block">
+                        <div class="timestables-mode-content">
+
+                        </div>
+                    </div>
                 </div>
                 </div>
             </div>
