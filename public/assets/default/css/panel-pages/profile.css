@@ -190,6 +190,12 @@ address .info-list-label {color: #64748b;}
 .profile-controls a {color: var(--primary);}
 .profile-controls .icon-box {height: 15px; width: 15px;}
 .profile-controls .icon-box img {max-width: 100%; filter: invert(58%) sepia(88%) saturate(5319%) hue-rotate(220deg) brightness(97%) contrast(105%);}
+.edit-profile-controls img,
+.reset-btn img {
+    height: 15px;
+    width: 15px;
+    object-fit: contain;
+}
 /* User Detail Style End */
 
 /* Profile master-card style start */
