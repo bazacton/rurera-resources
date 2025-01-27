@@ -9,9 +9,6 @@
     .hide {
         display: none;
     }
-	.emoji-icons {display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-start;min-height: auto;}
-    .emoji-icons .emoji-icon {border-radius: 100%; display: inline-block; object-fit: contain; height: 28px;}
-    .emoji-icons .emoji-icon img {max-width: 100%; }
 </style>
 
 <style>
