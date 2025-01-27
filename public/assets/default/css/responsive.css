@@ -1109,7 +1109,7 @@ Lms Responsive Style Start
     ul.course-info-list li > strong,
     .percent_text {font-size: 13px;}
     .circle_percent {font-size: 20px;}
-    .stages-items {position: initial;}
+    .stages-items {position: initial;padding-left: 70px;}
     .analytics-dropdown select,
     .date-range-box,
     .analytics-dropdown .select-box,
