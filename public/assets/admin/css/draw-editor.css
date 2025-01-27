@@ -167,7 +167,8 @@ body .editor-controls-holder .tab-pane .nav {
     border-bottom: 1px solid #ddd;
     padding: 0 10px;
 }
-body .editor-controls .nav .nav-item .nav-link {
+body .editor-controls .nav .nav-item .nav-link,
+body .editor-objects-block .nav .nav-item .nav-link {
     background-color: inherit;
     padding: 5px 6px;
     border: 1px solid #ddd;
@@ -177,14 +178,17 @@ body .editor-controls .nav .nav-item .nav-link {
     border-radius: 0;
     box-shadow: none;
 }
-body .editor-controls .nav .nav-item:first-child .nav-link {
+body .editor-controls .nav .nav-item:first-child .nav-link,
+body .editor-objects-block .nav .nav-item:first-child .nav-link {
     border-left: 1px solid #ddd;
     border-radius: 5px 0 0 0;
 }
-body .editor-controls .nav .nav-item:last-child .nav-link {
+body .editor-controls .nav .nav-item:last-child .nav-link,
+body .editor-objects-block .nav .nav-item:last-child .nav-link {
     border-radius: 0 5px 0 0;
 }
-body .editor-controls .nav .nav-item .nav-link.active {
+body .editor-controls .nav .nav-item .nav-link.active,
+body .editor-objects-block .nav .nav-item .nav-link.active {
     border-bottom-color: #fff;
 }
 body .editor-parent-nav ul {
