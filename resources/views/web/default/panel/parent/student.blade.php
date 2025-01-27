@@ -613,7 +613,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 										<div class="col-12 col-sm-12 col-md-12 col-lg-12">
 										
 										<div class="form-group custom-switches-stacked mb-15 ">
-											<label class="custom-switch pl-0 custom-label">
+											<label class="custom-switch pl-0 custom-label mb-0">
 												<input type="checkbox" name="show_timestables"
 													   id="show_timestables_field" value="1" class="custom-switch-input"  {{($user->show_timestables == 1)? 'checked' : ''}}/>
 												<span class="custom-switch-indicator">
@@ -651,7 +651,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											@php $is_disabled_style = (!$user->subscription('bookshelf'))? 'disabled-style' : ''; @endphp
 											
 											<div class="form-group custom-switches-stacked mb-15 {{$is_disabled_style}}">
-												<label class="custom-switch pl-0 custom-label">
+												<label class="custom-switch pl-0 custom-label mb-0">
 													<input type="checkbox" name="show_games"
 														   id="show_games_field" value="1" class="custom-switch-input"  {{($user->show_games == 1)? 'checked' : ''}}/>
 													<span class="custom-switch-indicator">
@@ -672,7 +672,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											@php $is_disabled_style = (!$user->subscription('bookshelf'))? 'disabled-style' : ''; @endphp
 											
 											<div class="form-group custom-switches-stacked mb-15 {{$is_disabled_style}}">
-												<label class="custom-switch pl-0 custom-label">
+												<label class="custom-switch pl-0 custom-label mb-0">
 													<input type="checkbox" name="show_books"
 														   id="show_books_field" value="1" class="custom-switch-input"  {{($user->show_books == 1)? 'checked' : ''}}/>
 													<span class="custom-switch-indicator">
@@ -692,7 +692,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											@php $is_disabled_style = (!$user->subscription('11plus'))? 'disabled-style' : ''; @endphp
 											
 											<div class="form-group custom-switches-stacked mb-15">
-												<label class="custom-switch pl-0 custom-label  {{$is_disabled_style}}">
+												<label class="custom-switch pl-0 custom-label mb-0 {{$is_disabled_style}}">
 													<input type="checkbox" name="show_enterance_exams"
 														   id="show_enterance_exams_field" value="1" class="custom-switch-input"  {{($user->show_enterance_exams == 1 && $is_disabled == '')? 'checked' : ''}} {{$is_disabled}}/>
 													<span class="custom-switch-indicator">
@@ -712,7 +712,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											@php $is_disabled_style = (!$user->subscription('sats'))? 'disabled-style' : ''; @endphp
 											
 											<div class="form-group custom-switches-stacked mb-15">
-												<label class="custom-switch pl-0 custom-label  {{$is_disabled_style}}">
+												<label class="custom-switch pl-0 custom-label mb-0 {{$is_disabled_style}}">
 													<input type="checkbox" name="show_sats"
 														   id="show_sats_field" value="1" class="custom-switch-input"  {{($user->show_sats == 1 && $is_disabled == '')? 'checked' : ''}} {{$is_disabled}}/>
 													<span class="custom-switch-indicator">
@@ -738,7 +738,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 												<div class="col-12 col-sm-12 col-md-12 col-lg-12">
 													
 													<div class="form-group custom-switches-stacked mb-15">
-														<label class="custom-switch pl-0 custom-label {{$is_disabled_style}}">
+														<label class="custom-switch pl-0 custom-label mb-0 {{$is_disabled_style}}">
 															<input type="checkbox" name="hide_subjects[]"
 																   id="hide_{{$courseObj->id}}" value="{{$courseObj->id}}" class="custom-switch-input"  {{!in_array($courseObj->id, $hide_subjects)? 'checked' : ''}} {{$is_disabled}}/>
 															<span class="custom-switch-indicator">
