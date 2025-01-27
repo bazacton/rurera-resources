@@ -209,6 +209,9 @@ body .book-dropzone {
 body .editor-controls-holder .editor-objects-block .nav {
     padding: 0 15px;
 }
+body .editor-objects-block .nav .nav-item .nav-link {
+    padding: 5px 15px;
+}
 .page-settings-fields {
     padding: 0 15px;
 }
