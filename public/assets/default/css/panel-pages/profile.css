@@ -197,6 +197,15 @@ address .info-list-label {color: #64748b;}
     object-fit: contain;
     margin-right: 5px;
 }
+.edit-profile .custom-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.edit-profile .custom-switch em {
+    font-style: normal;
+}
 /* User Detail Style End */
 
 /* Profile master-card style start */
