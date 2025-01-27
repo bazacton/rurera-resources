@@ -283,7 +283,7 @@ $QuestionsAttemptController = new QuestionsAttemptController();
                             <div class="list-group list-group-custom list-group-flush mb-0 totalChilds" data-childs="12">
 
                                 <div class="table-responsive">
-                                    <table class="table table-striped font-16">
+                                    <table class="table table-striped font-16 mb-0">
                                         <tr>
                                             <th class="text-left">Student</th>
                                             <th class="text-center">Attempts</th>
