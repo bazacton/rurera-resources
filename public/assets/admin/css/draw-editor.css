@@ -206,7 +206,8 @@ body .book-dropzone {
     padding: 0 15px;
     margin-bottom: 20px;
 }
-body .editor-controls-holder .editor-objects-block .nav {
+body .editor-controls-holder .editor-objects-block .nav,
+.editor-objects-block .tab-pane {
     padding: 0 15px;
 }
 body .editor-objects-block .nav .nav-item .nav-link {
