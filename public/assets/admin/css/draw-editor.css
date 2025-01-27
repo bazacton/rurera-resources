@@ -153,9 +153,14 @@ body .editor-zone:has(.field-options) {
     max-width: 100%;
 }
 body .editor-controls-holder {
-    height: 100%;
     border: 1px solid #ccc;
     background-color: inherit;
+    height: 100%;
+    padding: 0;
+}
+body .editor-parent-nav {
+    padding: 15px;
+    background-color: #f8f8f8;
 }
 .editor-zone .generate {
     margin-top: 30px;
