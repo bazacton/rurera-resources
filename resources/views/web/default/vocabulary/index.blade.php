@@ -28,7 +28,7 @@
                 <div class="col-12">
                     <!-- Listing Search Start -->
                     <div class="listing-search lms-jobs-form mb-20">
-                        <a href="#." class="filter-mobile-btn">Filters Dropdown</a>
+                        <a href="#." class="filter-mobile-btn">Filters</a>
                         <ul class="inline-filters">
                             @php $active = ($quiz_category == '')? 'active' :'' @endphp
                             <li class="{{$active}}"><a href="/spells">All Word Lists</a></li>
