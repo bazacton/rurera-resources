@@ -200,11 +200,13 @@ address .info-list-label {color: #64748b;}
 .edit-profile .custom-switch {
     display: flex;
     align-items: center;
-    gap: 10px;
     flex-wrap: wrap;
 }
 .edit-profile .custom-switch em {
     font-style: normal;
+}
+.edit-profile .custom-switch input[type=checkbox], .edit-profile .custom-switch input[type=radio] {
+    margin-right: 10px;
 }
 /* User Detail Style End */
 
