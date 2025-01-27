@@ -190,6 +190,7 @@ body .editor-objects-block .nav .nav-item:last-child .nav-link {
 body .editor-controls .nav .nav-item .nav-link.active,
 body .editor-objects-block .nav .nav-item .nav-link.active {
     border-bottom-color: #fff;
+    color: var(--primary);
 }
 body .editor-parent-nav ul {
     gap: 8px 10px;
@@ -200,6 +201,13 @@ body .editor-parent-nav .nav-link {
 }
 body .book-dropzone {
     border-radius: 0;
+}
+.editor-objects-block h5 {
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+body .editor-objects-block .tab-pane .nav {
+    padding: 0 15px;
 }
 .page-settings-fields {
     padding: 0 15px;
