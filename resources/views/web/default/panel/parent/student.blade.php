@@ -757,11 +757,6 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											@endforeach
 										@endif
 										
-										
-										
-										
-											
-											
 										</div>
 										
 									<div class="edit-profile-controls">
