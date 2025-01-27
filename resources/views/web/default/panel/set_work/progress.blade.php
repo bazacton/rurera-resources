@@ -297,7 +297,7 @@ $QuestionsAttemptController = new QuestionsAttemptController();
                                             <td>
                                                 <span>{{$assignmentTopicObj->user->get_full_name()}}</span>
                                             </td>
-                                            <td>
+                                            <td class="text-center">
                                                 @php $attempt_counter = 1; $counter = 1; @endphp
                                                 @foreach( $assignmentTopicObj->AssignmentResults as $resultObj)
 
@@ -325,7 +325,7 @@ $QuestionsAttemptController = new QuestionsAttemptController();
                                                 @endwhile
                                             </td>
 
-                                            <td>
+                                            <td class="text-center">
                                                 @if( $assignmentTopicObj->updated_at != '')
                                                 <span>{{ dateTimeFormat($assignmentTopicObj->updated_at, 'j M y') }}</span>
                                                 @endif
