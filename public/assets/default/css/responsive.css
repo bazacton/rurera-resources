@@ -1387,6 +1387,13 @@ Lms Responsive Style Start
         flex: auto;
         max-width: fit-content;
     }
+    body .emoji-icons {gap: 5px;}
+    body .emoji-icons .emoji-icon {
+        height: 20px;
+        width: 20px;
+    }
+    
+    
 }
 @media screen and (max-width: 575px) {
     .spell-question-area .spells-quiz-info {margin: 0 0 30px;}
