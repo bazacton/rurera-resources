@@ -183,7 +183,7 @@
 		</div>
 		<h3 class="mt-30">Choose Practice Type</h3>
 		<div class="tests-list-holder spell-type-check mb-25 mt-20">
-			<a href="#." class="filter-mobile-btn">Filters Dropdown</a>
+			<a href="#." class="filter-mobile-btn">Filters</a>
 			<ul class="tests-list mb-30">
 				<li data-type="word-hunts" class="active">Word Hunts</li>
 				<li data-type="word-search">Word Search</li>
