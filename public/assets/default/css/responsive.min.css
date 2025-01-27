@@ -1462,7 +1462,7 @@ Lms Responsive Style Start
     .panel-content .inline-filters li {width: 47%;}
     .panel-content .inline-filters a {width: 100%;}
     .trophy-levels .input::before {left: -46px;}
-    .tests-list li {flex-basis: 48%; text-align: center;}
+    .tests-list li {flex-basis: 48%; text-align: left; max-width: 100%;}
     .questions-select-option ul {flex-wrap: wrap; padding-right: 1px; padding-bottom: 1px;}
     .panel-content .questions-select-option li {margin-right: 0; margin-bottom: -1px; flex: auto;}
     .questions-select-option label {min-height: 40px; padding: 5px 10px;}
