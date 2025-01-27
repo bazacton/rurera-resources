@@ -621,10 +621,10 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 													   id="show_timestables_field" value="1" class="custom-switch-input"  {{($user->show_timestables == 1)? 'checked' : ''}}/>
 												<span class="custom-switch-indicator">
 														<em class="hide-text">Hide</em>
-														<span class="switch-circle font-style-normal mx-5"></span>
-														<em class="show-text">Show</em>
+														<span class="switch-circle"></span>
+														<em class="show-text font-style-normal mx-5">Show</em>
 												</span>
-												<label class="custom-switch-description mb-0 cursor-pointer"
+												<label class="custom-switch-description mb-0 cursor-pointer mb-0"
 													   for="show_timestables_field">Timestables</label>
 											</label>
 										</div>
