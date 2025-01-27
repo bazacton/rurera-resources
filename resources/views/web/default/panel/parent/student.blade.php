@@ -788,7 +788,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								</h2>
 							
 								<div class="student-profile-holder profile-view-data">
-								<div class="profile-inner">
+								<div class="profile-inner mb-10">
 									<div class="profile-header">
 										<h3>{{$user->get_full_name()}}</h3>
 										<a href="#" class="student-qrCode"><img src="/store/1/default_images/qr-code.png" alt=""></a>
