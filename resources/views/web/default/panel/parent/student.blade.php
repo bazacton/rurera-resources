@@ -634,7 +634,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											
 											<div class="form-group custom-switches-stacked mb-15">
 											
-												<label class="custom-switch pl-0 custom-label">
+												<label class="custom-switch pl-0 custom-label mb-0">
 													<input type="checkbox" name="show_spellings"
 														   id="show_spellings_field" value="1" class="custom-switch-input"  {{($user->show_spellings == 1)? 'checked' : ''}}/>
 													<span class="custom-switch-indicator">
@@ -642,7 +642,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 														<span class="switch-circle"></span>
 														<em class="show-text">Show</em>
 													</span>
-													<label class="custom-switch-description mb-7 cursor-pointer"
+													<label class="custom-switch-description mb-7 cursor-pointer mb-0"
 														   for="show_spellings_field">Spellings</label>
 												</label>
 											</div>
