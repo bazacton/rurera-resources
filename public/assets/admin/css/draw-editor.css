@@ -164,10 +164,10 @@ body .editor-parent-nav {
 }
 body .editor-controls-holder .tab-pane .nav {
     border-bottom: 1px solid #ddd;
-    padding: 0 5px;
+    padding: 0 10px;
 }
 body .editor-controls .nav .nav-item .nav-link {
-    padding: 0 7px;
+    padding: 5px 6px;
     border: 1px solid #ddd;
     border-left: 0;
     border-bottom: 1px solid transparent;
