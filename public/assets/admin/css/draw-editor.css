@@ -184,6 +184,13 @@ body .editor-controls .nav .nav-item:last-child .nav-link {
 body .editor-controls .nav .nav-item .nav-link.active {
     border-bottom-color: #fff;
 }
+body .editor-parent-nav ul {
+    gap: 8px 10px;
+}
+body .editor-parent-nav .nav-link {
+    padding: 5px 12px;
+    font-size: 14px;
+}
 .editor-zone .generate {
     margin-top: 30px;
 }
