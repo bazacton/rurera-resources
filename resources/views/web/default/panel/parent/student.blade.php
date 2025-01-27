@@ -618,7 +618,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 												<span class="custom-switch-indicator">
 														<em class="hide-text">Hide</em>
 														<span class="switch-circle"></span>
-														<em class="show-text font-style-normal mx-5">Show</em>
+														<em class="show-text font-style-normal">Show</em>
 												</span>
 												<label class="custom-switch-description mb-0 cursor-pointer mb-0"
 													   for="show_timestables_field">Timestables</label>
