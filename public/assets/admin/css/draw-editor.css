@@ -168,12 +168,14 @@ body .editor-controls-holder .tab-pane .nav {
     padding: 0 10px;
 }
 body .editor-controls .nav .nav-item .nav-link {
+    background-color: inherit;
     padding: 5px 6px;
     border: 1px solid #ddd;
     border-left: 0;
     border-bottom: 1px solid transparent;
     margin: 0 0 -1px;
     border-radius: 0;
+    box-shadow: none;
 }
 body .editor-controls .nav .nav-item:first-child .nav-link {
     border-left: 1px solid #ddd;
