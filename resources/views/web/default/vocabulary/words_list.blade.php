@@ -12,14 +12,11 @@
 
 <section class="content-section">
     <section class="pt-10">
-        <a href="/spells" class="db-back-btn">Back to List</a>
         <div class="container">
-
             <div class="row pt-15 pb-70">
-
                 @if( !empty( $spellQuiz))
-
                 <div class="col-12">
+                    <a href="/spells" class="db-back-btn">Back to List</a>
                     <section class="lms-data-table spells spells-data-list elevenplus-block">
                         <h3 class="font-22 mb-30">
                             {{$spellQuiz->getTitleAttribute()}} Words List
