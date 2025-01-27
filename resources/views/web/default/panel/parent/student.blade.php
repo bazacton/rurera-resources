@@ -813,8 +813,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 													<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>Reset Emoji
 											    </a>
 											<a href="javascript:;" class="reset-btn regenerate-pin" data-user_id="{{$user->id}}">
-													<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>
-												    Reset Pin
+													<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>Reset Pin
 											    </a>
 											
 							</div>
