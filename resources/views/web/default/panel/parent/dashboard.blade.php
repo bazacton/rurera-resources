@@ -24,20 +24,18 @@
         <div class="d-flex align-items-center justify-content-between flex-md-row">
             <h2 class="section-title font-36">Students</h2>
             <div class="dropdown">
-            <button type="button" class="btn subscription-modal p-0 font-18 {{($childs->count() == 0)? 'add-child-btn' : ''}}" data-type="child_register" data-id="0">
-                <img src="/assets/default/img/student.png" width="64" height="64"> Add Student
-            </button>
-            <button type="button" class="btn link-student-modal p-0 font-18" data-type="child_register" data-id="0">
-                <img src="/assets/default/img/student.png" width="64" height="64"> Link Student
-            </button>
-
-        </div>
+                <button type="button" class="btn subscription-modal p-0 font-18 {{($childs->count() == 0)? 'add-child-btn' : ''}}" data-type="child_register" data-id="0">
+                    <img src="/assets/default/img/student.png" width="64" height="64"> Add Student
+                </button>
+                <button type="button" class="btn link-student-modal p-0 font-18" data-type="child_register" data-id="0">
+                    <img src="/assets/default/img/student.png" width="64" height="64"> Link Student
+                </button>
+            </div>
         </div>
     </section>
 
     @if( $studentsRequests->count() > 0)
     <section class="dashboard mb-60">
-
         <div class="db-form-tabs">
             <div class="db-members">
                 <div class="row g-3 list-unstyled students-requests-list">
@@ -73,7 +71,6 @@
     </section>
     @endif
     <section class="dashboard">
-
         <div class="db-form-tabs">
             <div class="db-members">
                 <div class="row g-3 list-unstyled">
