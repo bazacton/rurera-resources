@@ -208,6 +208,7 @@ address .info-list-label {color: #64748b;}
 .edit-profile .custom-switch input[type=checkbox], .edit-profile .custom-switch input[type=radio] {
     margin-right: 10px;
 }
+.edit-profile .custom-switch .custom-switch-description {margin-left: 5px;}
 /* User Detail Style End */
 
 /* Profile master-card style start */
