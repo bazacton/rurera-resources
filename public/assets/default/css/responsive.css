@@ -1237,9 +1237,10 @@ Lms Responsive Style Start
     }
     .table-sm tr td:before {
         content: attr(data-th);
-        color: #333;
+        color: #94a3b8;
         font-size: 15px;
         font-weight: 600;
+        text-transform: uppercase;
     }
     .panel-section-card:has(.table-sm) {
         background-color: inherit !important;
