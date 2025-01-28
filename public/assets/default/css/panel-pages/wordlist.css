@@ -86,7 +86,7 @@ Sub Pages Style
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 0 10px;
 }
 .spell-words-data .word-block {display: inline-block; width: 32.3%; }
 .spell-words-data .word-block:has(label.collapsed){border-bottom: 1px solid #ececec;}
