@@ -2779,7 +2779,7 @@ Admin Questions Generator Page Style End
     height: auto !important;
 }
 .draggable-content-lists li {
-    padding: 0 0 !important;
+    padding: 0 !important;
 }
 .draggable-content-lists {
     border-bottom: 1px solid #ddd;
