@@ -1029,8 +1029,8 @@ Lms Responsive Style Start
     .spell_words_popup h2 {padding-right: 40px;}
     .spell-words-filters {padding-top: 0;}
     .spell-words-data {padding-top: 0;}
-    .spell_words_popup_body .tests-list {opacity: 1; visibility: visible; position: relative; flex-direction: row; padding: 0; box-shadow: none; gap: 12px 10px;}
-    .spell_words_popup_body .tests-list li {flex-basis: auto; width: auto; text-decoration: underline; min-width: auto;}
+    .spell_words_popup_body .tests-list {background-color: inherit; opacity: 1; visibility: visible; position: relative; flex-direction: row; padding: 0; box-shadow: none; gap: 12px 10px;}
+    .spell_words_popup_body .tests-list li {background-color: inherit; flex-basis: auto; width: auto; text-decoration: underline; min-width: auto;}
     .spell_words_popup_body .filter-mobile-btn {display: none;}
     .virtual-keyboard input[type=button], .virtual-keyboard button[type=button] {min-width: 20px;font-size: 11px;min-height: 20px;}
     .delete img {height: 15px; width: 15px;}
