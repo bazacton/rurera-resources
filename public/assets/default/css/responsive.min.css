@@ -1208,66 +1208,23 @@ Lms Responsive Style Start
     .lms-text-holder.lms-client-description {text-align: center; padding-right: 0 !important;}
     .wizard-steps-heading h3.font-24 {font-size: 1.5rem !important;}
     .populated-data .card .form-check-label {font-size: 1rem !important;}
-    .db-members:has(.no-record-found) .list-group .rurera-tables-list {
-        background-color: #fff;
-        border: 1px solid #ddd;
-        padding: 15px;
-        border-radius: 0 0 10px 10px;
-    }
+    .db-members:has(.no-record-found) .list-group .rurera-tables-list {background-color: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 0 0 10px 10px;}
     /*Default SM Table For Mobile Style Start*/
-    .table-sm thead {
-        display: none;
-    }
-    .table-sm tr {
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        margin: 0 0 15px;
-    }
-    .table-sm tr td {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        padding: 12px;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-    .table-sm tr td:before {
-        content: attr(data-th);
-        color: #94a3b8;
-        font-size: 15px;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-    .panel-section-card:has(.table-sm) {
-        background-color: inherit !important;
-        padding: 0 !important;
-        border: 0;
-    }
+    .table-sm thead {display: none;}
+    .table-sm tr {background-color: #fff; display: flex; flex-direction: column; border: 1px solid #ddd; border-radius: 8px; margin: 0 0 15px;}
+    .table-sm tr td {display: flex; align-items: center; justify-content: space-between; position: relative; padding: 12px; flex-wrap: wrap; gap: 8px;}
+    .table-sm tr td:before {content: attr(data-th); color: #94a3b8; font-size: 15px; font-weight: 600; text-transform: uppercase;}
+    .panel-section-card:has(.table-sm) {background-color: inherit !important; padding: 0 !important; border: 0;}
     /*Default SM Table For Mobile Style End*/    
     .svga-vert-order-blocks .svga-row,
     .svga-vert-order-bodyzones .svga-row.row-bodyzones,
     .svga-vert-order-controls .svga-row.row-controls,
-    .svga-col-right .svga-row {
-        margin: -10px;
-    }
-    .svga-row.row-elements {
-        padding-top: 0;
-    }
-    .svga-vert-order-controls {
-        margin: 0 0 10px;
-    }
-    .detail-body .edit-info-list .package-block img {
-        height: 50px;
-        width: 50px;
-        object-fit: contain;
-    }
-    .level-stage {
-        overflow: hidden;
-    }
+    .svga-col-right .svga-row {margin: -10px;}
+    .svga-row.row-elements {padding-top: 0;}
+    .svga-vert-order-controls {margin: 0 0 10px;}
+    .detail-body .edit-info-list .package-block img {height: 50px; width: 50px; object-fit: contain;}
+    .level-stage {overflow: hidden;}
+    .activities-container .row {gap: 15px 0;}
 }
 
 @media screen and (max-width: 640px) {
@@ -1395,18 +1352,10 @@ Lms Responsive Style Start
     .sats-listing-card tbody tr {position: relative;}
     .sats-listing-card tbody tr td {display: block;}
     .sats-listing-card tbody tr td:last-child {padding: 0; border: 0;}
-    .sats-listing-card.medium tbody tr td:last-child {
-        border-bottom: 0;
-        padding: 0 0 25px;
-        text-align: left !important;
-        border-top: 0;
-    }
+    .sats-listing-card.medium tbody tr td:last-child {border-bottom: 0; padding: 0 0 25px; text-align: left !important; border-top: 0;}
     .sats-listing-card.medium table:not(thead) td {border-top: 1px solid #ececec; border-bottom: 0; padding: 25px 0 15px;}
     .sats-listing-card.medium tbody tr td .rurera-list-btn {margin-left: 65px;}
-    .sats-listing-card.medium table:not(thead) tr:first-child td {
-        border-top: 0;
-        padding-top: 10px;
-    }
+    .sats-listing-card.medium table:not(thead) tr:first-child td {border-top: 0; padding-top: 10px;}
     body .learning-page .close {right: 30px;}
     .spells-table-inner .table {min-width: 900px;}
     .rurera-in-row.alphabet-list-style .form-field {width: 100%; }
@@ -1588,7 +1537,7 @@ Lms Responsive Style Start
     .profile-info-box .user-actions button.btn-border-white {margin-top: 0 !important; margin-left: 10px; border-radius: 5px !important;}
     .reward-program-section .font-16,
     .newsletter-inner .font-16, .testimonials-card .font-16,
-    .detail-body .inner-heading.font-16 {font-size: 1rem !important;}
+    .detail-body .inner-heading.font-16, .activities-container span.font-16 {font-size: 1rem !important;}
     .example-reward-card .font-12 {font-size: 14px;}
     .newsletter-inner .text-white, .testimonials-card p {color: #000 !important;}
     .reward-program-section .btn-outline-primary {color: #000; border-color: #000;}
