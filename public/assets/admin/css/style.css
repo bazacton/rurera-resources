@@ -2852,12 +2852,12 @@ Admin Questions Generator Page Style End
     padding: 4px;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.1);
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
 .draggable-content-lists li .btn svg {
-    height: 14px;
-    width: 14px;
+    height: 12px;
+    width: 12px;
     margin: 0 !important;
 }
 .draggable-content-lists li .feather-move,
@@ -2866,8 +2866,8 @@ Admin Questions Generator Page Style End
     stroke: #333;
     background-color: rgba(0, 0, 0, 0.1);
     padding: 2px 4px;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     border-radius: 3px;
 }
 .draggable-content-lists li.active .btn,
