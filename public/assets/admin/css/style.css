@@ -2792,7 +2792,6 @@ Admin Questions Generator Page Style End
     flex-direction: column;
     border-radius: 0 !important;
     border-left: 0;
-    margin-bottom: -1px;
 }
 .draggable-content-lists li.active {
     border-bottom-color: #fff;
