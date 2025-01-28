@@ -2786,10 +2786,18 @@ Admin Questions Generator Page Style End
 .draggable-content-lists li {
     max-width: min-content;
     border: 1px solid #ddd;
+    border-bottom: 2px solid transparent;
     padding: 5px 10px !important;
-    border-bottom-color: #fff;
     display: inline-flex;
     flex-direction: column;
+    border-radius: 0 !important;
+    border-left: 0;
+}
+.draggable-content-lists li.active {
+    border-bottom-color: #fff;
+}
+.draggable-content-lists li:first-child {
+    border-left: 1px solid #ddd;
 }
 .draggable-content-lists li > .d-flex {
     flex-wrap: wrap;
