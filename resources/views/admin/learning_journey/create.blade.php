@@ -272,6 +272,7 @@
 <section class="section">
     <div class="section-header">
         <h1>{{!empty($glossary) ?trans('/admin/main.edit'): trans('admin/main.new') }} Learning Journey</h1>
+        <a href="javascript:;" class="journey-settings"><i class="fa fa-cog"></i> Settings</a>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="/admin/">{{ trans('admin/main.dashboard') }}</a>
             </div>
@@ -280,6 +281,7 @@
             <div class="breadcrumb-item">{{!empty($glossary) ?trans('/admin/main.edit'): trans('admin/main.new') }}
             </div>
         </div>
+
     </div>
     <div class="section-body">
         <div class="row">
@@ -289,93 +291,80 @@
                         <form action="/admin/learning_journey/{{ !empty($LearningJourneyObj) ? $LearningJourneyObj->id.'/store' : 'store' }}" class="learning-journey-form"
                               method="Post">
                             {{ csrf_field() }}
+
+                            <div id="journey-settings-modal" class="journey-settings-modal modal fade" role="dialog" data-backdrop="static">
+                                <div class="modal-dialog">
+                                    <div class="modal-content journey-settings-modal-div">
+                                        <div class="modal-body">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <div class="modal-box">
+
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-lg-12">
+
+                                                            <div class="form-group">
+                                                                <label>Journey Title</label>
+                                                                <input type="text" class="form-control" name="journey_title">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>{{ trans('/admin/main.category')  }}</label>
+                                                                <select class="form-control @error('category_id') is-invalid @enderror ajax-category-courses"
+                                                                        name="category_id" data-course_id="{{isset( $LearningJourneyObj->subject_id )? $LearningJourneyObj->subject_id : 0}}">
+                                                                    <option {{ !empty($trend) ? '' : 'selected' }} disabled>{{ trans('admin/main.choose_category')  }}</option>
+
+                                                                    @foreach($categories as $category)
+                                                                        @if(!empty($category->subCategories) and count($category->subCategories))
+                                                                            <optgroup label="{{  $category->title }}">
+                                                                                @foreach($category->subCategories as $subCategory)
+                                                                                    <option value="{{ $subCategory->id }}" @if(!empty($LearningJourneyObj) and $LearningJourneyObj->year_id == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                                                                @endforeach
+                                                                            </optgroup>
+                                                                        @else
+                                                                            <option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($LearningJourneyObj) and $LearningJourneyObj->year_id == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+                                                                        @endif
+                                                                    @endforeach
+                                                                </select>
+                                                                @error('category_id')
+                                                                <div class="invalid-feedback">
+                                                                    {{ $message }}
+                                                                </div>
+                                                                @enderror
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label>Subjects</label>
+                                                                <select data-return_type="option"
+                                                                        data-default_id="{{isset( $LearningJourneyObj->subject_id)? $LearningJourneyObj->subject_id : 0}}" data-chapter_id="{{isset( $LearningJourneyObj->chapter_id )? $LearningJourneyObj->chapter_id : 0}}"
+                                                                        class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
+                                                                        id="subject_id" name="subject_id">
+                                                                    <option disabled selected>Subject</option>
+                                                                </select>
+                                                                @error('subject_id')
+                                                                <div class="invalid-feedback">
+                                                                    {{ $message }}
+                                                                </div>
+                                                                @enderror
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="inactivity-controls">
+                                                        <button type="button" class="update-journey-settings mt-0">Update</button>
+                                                        <!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
 							<input type="hidden" name="posted_data" class="posted-data">
 
 
-                            <div class="form-group">
-                                <label>{{ trans('/admin/main.category')  }}</label>
-                                <select class="form-control @error('category_id') is-invalid @enderror ajax-category-courses"
-                                        name="category_id" data-course_id="{{isset( $LearningJourneyObj->subject_id )? $LearningJourneyObj->subject_id : 0}}">
-                                    <option {{ !empty($trend) ? '' : 'selected' }} disabled>{{ trans('admin/main.choose_category')  }}</option>
-
-                                    @foreach($categories as $category)
-                                        @if(!empty($category->subCategories) and count($category->subCategories))
-                                            <optgroup label="{{  $category->title }}">
-                                                @foreach($category->subCategories as $subCategory)
-                                                    <option value="{{ $subCategory->id }}" @if(!empty($LearningJourneyObj) and $LearningJourneyObj->year_id == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
-                                                @endforeach
-                                            </optgroup>
-                                        @else
-                                            <option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($LearningJourneyObj) and $LearningJourneyObj->year_id == $category->id) selected="selected" @endif>{{ $category->title }}</option>
-                                        @endif
-                                    @endforeach
-                                </select>
-                                @error('category_id')
-                                <div class="invalid-feedback">
-                                    {{ $message }}
-                                </div>
-                                @enderror
-                            </div>
-
-                            <div class="form-group">
-                                <label>Subjects</label>
-                                <select data-return_type="option"
-                                        data-default_id="{{isset( $LearningJourneyObj->subject_id)? $LearningJourneyObj->subject_id : 0}}" data-chapter_id="{{isset( $LearningJourneyObj->chapter_id )? $LearningJourneyObj->chapter_id : 0}}"
-                                        class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
-                                        id="subject_id" name="subject_id">
-                                    <option disabled selected>Subject</option>
-                                </select>
-                                @error('subject_id')
-                                <div class="invalid-feedback">
-                                    {{ $message }}
-                                </div>
-                                @enderror
-                            </div>
 
 
 
-
-
-
-
-                            <div class="form-group">
-                                <label>{{ trans('/admin/main.category') }}</label>
-                                <select data-subject_id="{{ !empty($LearningJourneyObj)? $LearningJourneyObj->subject_id : 0}}"
-                                        class="form-control category-id-field @error('category_id') is-invalid @enderror"
-                                        name="category_id">
-                                    <option {{ !empty($trend) ?
-                                    '' : 'selected' }} disabled>{{ trans('admin/main.choose_category') }}</option>
-
-                                    @foreach($categories as $category)
-                                    @if(!empty($category->subCategories) and count($category->subCategories))
-                                    <optgroup label="{{  $category->title }}">
-                                        @foreach($category->subCategories as $subCategory)
-                                        <option value="{{ $subCategory->id }}" @if(!empty($LearningJourneyObj) and
-                                                $LearningJourneyObj->
-                                            year_id == $subCategory->id) selected="selected" @endif>{{
-                                            $subCategory->title }}
-                                        </option>
-                                        @endforeach
-                                    </optgroup>
-                                    @else
-                                    <option value="{{ $category->id }}" class="font-weight-bold"
-                                            @if(!empty($LearningJourneyObj)
-                                            and $LearningJourneyObj->year_id == $category->id) selected="selected"
-                                        @endif>{{
-                                        $category->title }}
-                                    </option>
-                                    @endif
-                                    @endforeach
-                                </select>
-                                @error('category_id')
-                                <div class="invalid-feedback">
-                                    {{ $message }}
-                                </div>
-                                @enderror
-                            </div>
-                            <div class="category_subjects_list">
-
-                            </div>
 
                             <div class="form-group">
                                 <button class="btn btn-primary add_learning_journey_set" type="button">Add Stage</button>
@@ -403,6 +392,7 @@
         </div>
     </div>
 </section>
+
 
 
 <div id="level_add_modal" class="level_add_modal modal fade" role="dialog" data-backdrop="static">
@@ -531,38 +521,6 @@
     </div>
 </div>
 
-
-<div id="chart_container">
-    <div class="flowchart-example-container" id="flowchartworkspace"></div>
-</div>
-<div class="draggable_operators">
-    <div class="draggable_operators_label">
-        Operators (drag and drop them in the flowchart):
-    </div>
-    <div class="draggable_operators_divs">
-        <div class="draggable_operator" data-nb-inputs="1" data-nb-outputs="0">1 input</div>
-        <div class="draggable_operator" data-nb-inputs="0" data-nb-outputs="1">1 output</div>
-        <div class="draggable_operator" data-nb-inputs="1" data-nb-outputs="1">1 input &amp; 1 output</div>
-        <div class="draggable_operator" data-nb-inputs="1" data-nb-outputs="2">1 in &amp; 2 out</div>
-        <div class="draggable_operator" data-nb-inputs="2" data-nb-outputs="1">2 in &amp; 1 out</div>
-        <div class="draggable_operator" data-nb-inputs="2" data-nb-outputs="2">2 in &amp; 2 out</div>
-    </div>
-</div>
-<button class="create_operator">Create operator</button>
-<button class="delete_selected_button">Delete selected operator / link</button>
-<div id="operator_properties" style="display: block;">
-    <label for="operator_title">Operator's title: </label><input id="operator_title" type="text">
-</div>
-<div id="link_properties" style="display: block;">
-    <label for="link_color">Link's color: </label><input id="link_color" type="color">
-</div>
-<button class="get_data" id="get_data">Get data</button>
-<button class="set_data" id="set_data">Set data</button>
-<button id="save_local">Save to local storage</button>
-<button id="load_local">Load from local storage</button>
-<div>
-    <textarea id="flowchart_data"></textarea>
-</div>
 @endsection
 
 @push('scripts_bottom')
@@ -835,6 +793,15 @@
     $(document).on('click', '.add-level', function () {
         $(".level_add_modal").modal('show');
     });
+    $(document).on('click', '.journey-settings', function () {
+        $(".journey-settings-modal").modal('show');
+    });
+
+    $(document).on('click', '.update-journey-settings', function () {
+        $(".journey-settings-modal").modal('hide');
+    });
+
+
     $(document).on('click', '.add-level-stage-btn', function () {
         var level_type = $('[name="level_type"]').val();
         var treasure_mission_points = $('[name="treasure_mission_points"]').val();
