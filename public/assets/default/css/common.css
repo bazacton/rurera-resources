@@ -1217,7 +1217,13 @@ a.badge-gray200:focus {outline: 0; box-shadow: 0 0 0 .2rem hsla(0, 0%, 94.5%, .5
 .card-header:first-child {border-radius: calc(.3125rem - 1px) calc(.3125rem - 1px) 0 0;}
 .card-header+.list-group .list-group-item:first-child {border-top: 0;}
 /* panel/store/purchases Page Table Style Start */
-body:has(.activities-container) .simple-table .dropdown-menu {right: 0; left: auto !important;}
+body:has(.activities-container) .simple-table .dropdown-menu {
+    right: 0;
+    left: auto !important;
+    min-width: auto;
+    padding: 0 15px 10px;
+    border-radius: 5px;
+}
 .table-actions .dropdown-toggle:after {
     display: none;
 }
