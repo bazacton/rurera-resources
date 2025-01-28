@@ -2822,7 +2822,7 @@ Admin Questions Generator Page Style End
     min-height: 30px;
     height: 30px;
     max-height: 25px;
-    margin-right: 5px;
+    margin-right: 8px !important;
 }
 .stage-accordion .chapter-icon svg {
     height: 12px;
@@ -2831,6 +2831,9 @@ Admin Questions Generator Page Style End
 }
 .stage-accordion .cursor-pointer {
     white-space: nowrap;
+    line-height: normal;
+    font-weight: 500 !important;
+    color: #333;
 }
 .draggable-content-lists li .btn {
     padding: 0;
