@@ -2802,7 +2802,6 @@ Admin Questions Generator Page Style End
     border-radius: 5px 0 0 0 !important;
 }
 .draggable-content-lists li:last-child {
-    border-left: 1px solid #ddd;
     border-radius: 0 5px 0 0 !important;
 }
 .draggable-content-lists li > .d-flex {
