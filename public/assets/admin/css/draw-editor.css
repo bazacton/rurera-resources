@@ -231,6 +231,9 @@ body .editor-objects-block .nav .nav-item .nav-link {
     border-radius: 3px;
     text-decoration: none;
 }
+.editor-controls .tab-content {
+    padding: 0 15px;
+}
 .page-settings-fields {
     padding: 0 15px;
 }
