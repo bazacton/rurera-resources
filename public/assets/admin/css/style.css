@@ -2839,11 +2839,18 @@ Admin Questions Generator Page Style End
 .draggable-content-lists li .btn svg {
     height: 15px;
     width: 15px;
-    margin: 0 !important;!i;!;
+    margin: 0 !important;
 }
 .draggable-content-lists li .feather-move {
     height: 15px;
     width: 15px;
+    margin-right: 0 !important;
+    stroke: #333;
+}
+.draggable-content-lists li > .d-flex .d-flex:has(.btn) {
+    padding-left: 40px;
+    padding-top: 5px;
+    gap: 5px;
 }
 /* Learning Journey Sets Edit Page Accordions Style End */
 
