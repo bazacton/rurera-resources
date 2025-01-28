@@ -2809,6 +2809,7 @@ Admin Questions Generator Page Style End
 }
 .tabs-data {
     border: 1px solid #ddd;
+    border-radius: 0 5px 5px 5px;
     padding: 20px 25px;
 }
 .stage-accordion input {
