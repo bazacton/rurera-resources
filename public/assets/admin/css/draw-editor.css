@@ -125,12 +125,11 @@ body .editor-zone:has(.editor-controls-holder),
 body .editor-zone:has(.field-options.hide) {
     padding-left: 0;
 }
-body .editor-zone:has(.field-options) {
-    /*padding-left: 369px;*/
-    padding-left:0px;
-}
 body .editor-zone:has(.editor-controls-holder) {
     padding: 0 520px 0 369px;
+}
+body .editor-zone:has(.field-options) {
+    padding-left:0px;
 }
 .book-dropzone {
     position: relative;
