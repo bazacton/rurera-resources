@@ -2781,10 +2781,17 @@ Admin Questions Generator Page Style End
 .draggable-content-lists li {
     padding: 0 !important;
 }
-.draggable-content-lists {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 25px;
-    margin: 0 0 25px;
+.tabs-data {
+    border: 1px solid #ddd;
+    padding: 20px 25px;
+}
+.stage-accordion {
+    max-width: 100px;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+}
+.stage-accordion input {
+    width: 100%;
 }
 .stage-accordion .chapter-icon {
     min-width: 25px;
