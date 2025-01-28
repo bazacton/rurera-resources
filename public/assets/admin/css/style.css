@@ -2811,9 +2811,6 @@ Admin Questions Generator Page Style End
     border: 1px solid #ddd;
     padding: 20px 25px;
 }
-.stage-accordion {
-    
-}
 .stage-accordion input {
     width: 100%;
 }
@@ -2827,6 +2824,10 @@ Admin Questions Generator Page Style End
     height: 28px;
     max-height: 28px;
     margin-right: 8px !important;
+}
+.draggable-content-lists li.active .chapter-icon {
+    background-color: #dce9fd;
+    border-color: #dce9fd;
 }
 .stage-accordion .chapter-icon svg {
     height: 12px;
