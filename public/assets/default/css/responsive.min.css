@@ -210,7 +210,10 @@ Lms Responsive Style Start
     .forum-hero-section {padding-bottom: 25px; padding-top: 25px;}
     .forum-hero-section .forum-hero-section__image {position: relative; width: 100%; max-width: 100%; height: auto; margin-top: 25px;}
     .forum-recommended-topics-section {margin-top: 45px;}
-    .table-responsive {overflow-x: auto;}
+    .table-responsive,
+    body:has(.activities-container) .table-responsive {overflow-x: auto;}
+    body:has(.activities-container) .table-responsive .table td, 
+    body:has(.activities-container) .table-responsive .table th {white-space: nowrap;}
     .webinar-form .table-responsive {overflow: auto;}
     .webinar-progress .progress-item {border-left: 0; padding: 0; margin: 5px 0;}
     .webinar-progress .progress-item:first-child {margin-top: 0;}
@@ -1025,9 +1028,9 @@ Lms Responsive Style Start
     .spell_words_popup_body .row > [class*="col-"] {flex: 0 0 auto; max-width: none;}
     .spell_words_popup h2 {padding-right: 40px;}
     .spell-words-filters {padding-top: 0;}
-    .spell-words-data {padding-top: 15px;}
-    .spell_words_popup_body .tests-list {opacity: 1; visibility: visible; position: relative; flex-direction: row; padding: 0; box-shadow: none; gap: 12px 10px;}
-    .spell_words_popup_body .tests-list li {flex-basis: auto; width: auto; text-decoration: underline; min-width: auto;}
+    .spell-words-data {padding-top: 0;}
+    .spell_words_popup_body .tests-list {background-color: inherit; opacity: 1; visibility: visible; position: relative; flex-direction: row; padding: 0; box-shadow: none; gap: 12px 10px;}
+    .spell_words_popup_body .tests-list li {background-color: inherit; flex-basis: auto; width: auto; text-decoration: underline; min-width: auto;}
     .spell_words_popup_body .filter-mobile-btn {display: none;}
     .virtual-keyboard input[type=button], .virtual-keyboard button[type=button] {min-width: 20px;font-size: 11px;min-height: 20px;}
     .delete img {height: 15px; width: 15px;}
