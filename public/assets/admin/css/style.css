@@ -2836,8 +2836,11 @@ Admin Questions Generator Page Style End
 .stage-accordion .cursor-pointer {
     white-space: nowrap;
     line-height: normal;
-    font-weight: 500 !important;
+    font-size: 15px;
     color: #333;
+}
+.draggable-content-lists li.active .cursor-pointer {
+    color: var(--primary);
 }
 .draggable-content-lists li .btn {
     padding: 0;
