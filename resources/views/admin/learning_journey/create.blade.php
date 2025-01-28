@@ -295,7 +295,7 @@
                             {{ csrf_field() }}
 
                             <div id="journey-settings-modal" class="journey-settings-modal modal fade" role="dialog" data-backdrop="static">
-                                <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-dialog">
                                     <div class="modal-content journey-settings-modal-div">
                                         <div class="modal-body">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -363,18 +363,43 @@
 
 							<input type="hidden" name="posted_data" class="posted-data">
 
-                            <div class="learning_journey_sets">
-                                <div class="form-group mb-0">
-                                    <button class="btn btn-primary add_learning_journey_set" type="button">Add Stage</button>
-                                </div>
 
+
+
+
+
+                            <div class="form-group">
+                                <button class="btn btn-primary add_learning_journey_set" type="button">Add Stage</button>
+                            </div>
+
+                            <div class="learning_journey_sets">
+
+
+                                @php $li_content_respnose = ''; $li_content_data_response = ''; @endphp
                                 @if( !empty( $LearningJourneyObj->learningJourneyLevels ))
-                                @foreach( $LearningJourneyObj->learningJourneyLevels as $itemObj)
-									{{$thisObj->learning_journey_set_layout($request, $itemObj->id, false, true, $itemObj)}}
-                                @endforeach
+                                    @foreach( $LearningJourneyObj->learningJourneyLevels as $itemObj)
+                                        @php $response = $thisObj->learning_journey_set_layout($request, $itemObj->id, false, true, $itemObj);
+                                        $response = json_decode($response, true);
+                                        $li_content_respnose .= isset($response['li_content']) ? $response['li_content'] : '';
+                                        $li_content_data_response .= isset($response['li_content_data']) ? $response['li_content_data'] : '';
+                                        @endphp
+                                    @endforeach
                                 @endif
 
+                                <div class="learning-jounrey-tabs accordion-content-wrapper mt-15" id="chapterAccordion" role="tablist"
+                                     aria-multiselectable="true">
+                                    <ul class="draggable-content-lists  curriculum-set-ul jounry-stages-lis">
+                                        {!! $li_content_respnose !!}
+                                    </ul>
+                                </div>
+                                <div class="tabs-data">
+                                    {!! $li_content_data_response !!}
+                                </div>
+
+
                             </div>
+
+
                             <div class="text-right mt-4">
                                 <button class="btn btn-primary">{{ trans('admin/main.submit') }}</button>
                             </div>
@@ -632,9 +657,11 @@
 <script src="/assets/admin/vendor/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-
 		$(".editor-objects-list").sortable();
 		//$('.saved-item-class').click();
+
+
+        $(".jounry-stages-lis").sortable();
 
 		$(".editor-objects-list").sortable({
 			update: function(event, ui) {
@@ -649,6 +676,11 @@
         });
 
         $('body').on('click', '.stage-accordion', function (e) {
+            /*console.log($(".book-dropzone.active").find('.flowchart-link').length);
+            if($(".book-dropzone.active").find('.flowchart-link').length == 0) {
+                console.log('no_path_added_1111111111111');
+                levels_sorting_render();
+            }*/
             if(!$(this).hasClass('collapsed')){
                 levels_sorting_render();
             }
@@ -690,13 +722,12 @@
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
+                dataType: 'json',
                 data: {},
                 success: function (response) {
-                    $(".learning_journey_sets").append(response);
-                    //$(".curriculum-set-ul").sortable();
-                    $(".curriculum-item-data-ul").sortable();
-                    $(".curriculum-chapter-data-ul").sortable();
-                    $(".curriculum-topics-ul").sortable();
+                    $(".jounry-stages-lis").append(response.li_content);
+                    $(".tabs-data").append(response.li_content_data);
+
                     handleTopicsMultiSelect2('search-topics-select2', '/admin/chapters/search', ['class', 'course', 'subject', 'title']);
                 }
             });
@@ -863,6 +894,26 @@
 
     $(document).on('click', '.add-spacer', function () {
         var level_type = 'spacer';
+        var current_li = $(this).closest('li');
+        var current_li_id = current_li.attr('data-id');
+        var current_obj = $('.draggable_field_' + current_li_id);
+        var current_obj_top = current_obj.position().top;
+        var current_obj_left = current_obj.position().left;
+
+
+        var next_li_id = current_li.next('li').attr('data-id');
+        var next_obj = $('.draggable_field_' + next_li_id);
+        var next_obj_top = next_obj.position().top;
+        var next_obj_left = next_obj.position().left;
+
+        var midpoint = { top: (current_obj_top + next_obj_top) / 2, left: (current_obj_left + next_obj_left) / 2 };
+
+
+        console.log('current_obj_top==='+current_obj_top);
+        console.log('current_obj_left==='+current_obj_left);
+        console.log('next_obj_top==='+next_obj_top);
+        console.log('next_obj_left==='+next_obj_left);
+
         var unique_id = Math.floor((Math.random() * 99999) + 1);
         var field_random_number = 'rand_' + unique_id;
         var layer_html = '';
@@ -870,7 +921,7 @@
             var unique_id = Math.floor((Math.random() * 99999) + 1);
             var field_random_number = 'rand_' + unique_id;
 
-            $el = ($('<div id="' + field_random_number + '"  style="left:0px; top:0px;" data-item_title="Spacer" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer spacer-block flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="spacer" data-trigger_class="infobox-spacer-fields" data-item_type="spacer" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="5" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="black" /></svg><div class="flowchart-operator-inputs-outputs spacer-svg-controls"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+            $el = ($('<div id="' + field_random_number + '"  style="left:'+midpoint.left+'px; top:'+midpoint.top+'px;" data-item_title="Spacer" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer spacer-block flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="spacer" data-trigger_class="infobox-spacer-fields" data-item_type="spacer" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="5" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="black" /></svg><div class="flowchart-operator-inputs-outputs spacer-svg-controls"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
             $el.append('<a href="javascript:;" class="remove spacer-remove"><span class="fas fa-trash"></span></a>');
             $el.append('</div>');
             layer_html += `<li data-id="${field_random_number}" data-field_postition="2">Spacer
@@ -884,7 +935,9 @@
             </div>
             </li>`;
         }
-        $(".levels-objects-list").append(layer_html);
+        $(this).closest('li').after(layer_html);
+
+        //$(".levels-objects-list").append(layer_html);
 
         $(".book-dropzone.active").append($el);
         $(".level_add_modal").modal('hide');
