@@ -148,6 +148,7 @@ body .editor-controls-holder {
     border-radius: 0;
     height: 100%;
     padding: 0;
+    overflow: visible;
 }
 body .editor-parent-nav {
     padding: 15px;
