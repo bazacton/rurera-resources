@@ -170,7 +170,7 @@ body .editor-controls-holder .tab-pane .nav {
 body .editor-controls .nav .nav-item .nav-link,
 body .editor-objects-block .nav .nav-item .nav-link {
     background-color: inherit;
-    padding: 5px 6px;
+    padding: 5px 12px;
     border: 1px solid #ddd;
     border-left: 0;
     border-bottom: 2px solid transparent;
@@ -298,6 +298,7 @@ body .editor-objects-block .nav .nav-item .nav-link {
     border-radius: 5px;
 }
 .editor-objects-list li {
+    border-radius: 3px;
     display: flex;
     align-items: center;
     justify-content: space-between;
