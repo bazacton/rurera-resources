@@ -1215,6 +1215,7 @@ Lms Responsive Style Start
         justify-content: space-between;
         position: relative;
         padding: 12px;
+        flex-wrap: wrap;
     }
     .table-sm tr td:before {
         content: attr(data-th);
