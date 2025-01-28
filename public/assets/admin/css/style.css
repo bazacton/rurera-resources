@@ -2848,19 +2848,25 @@ Admin Questions Generator Page Style End
     color: #333;
 }
 .draggable-content-lists li .btn {
-    padding: 0;
+    padding: 4px 5px;
     margin: 0 5px 0 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 23px;
+    height: 23px;
 }
 .draggable-content-lists li .btn svg {
-    height: 15px;
-    width: 15px;
+    height: 14px;
+    width: 14px;
     margin: 0 !important;
 }
 .draggable-content-lists li .feather-move {
-    height: 15px;
-    width: 15px;
     margin-right: 0 !important;
     stroke: #333;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2px 5px;
+    width: 22px;
+    height: 22px;
+    border-radius: 3px;
 }
 .draggable-content-lists li > .d-flex .d-flex:has(.btn) {
     padding-left: 35px;
