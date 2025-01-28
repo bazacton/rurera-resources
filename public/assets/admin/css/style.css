@@ -1404,23 +1404,10 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .edit-questions-difficulty-tabs .questions-nav-bar {padding: 25px; background-color: #FFF; border: 1px solid #ddd;}
 .edit-questions-difficulty-tabs .lms-quiz-create > .row {margin: 0;}
 .edit-questions-difficulty-tabs .admin-rurera-tabs {margin: 0 0 -1px !important; border: 1px solid #ddd; display: inline-flex; width: auto; padding-right: 0; border-right: 0; border-bottom: 0;}
-.edit-questions-difficulty-tabs .admin-rurera-tabs .nav-link {
-    padding: 10px 25px;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid transparent;
-}
-.edit-questions-difficulty-tabs .admin-rurera-tabs .nav-link.active {
-    border-bottom-color: var(--primary);
-}
-.edit-questions-difficulty-tabs .edit-questions-tabs {
-    margin-top: 0;
-    border: 1px solid #ddd;
-    padding: 25px 25px;
-}
-.edit-questions-difficulty-tabs .edit-questions-tabs:has(.tab-content) {
-    border: 0;
-    padding: 0;
-}
+.edit-questions-difficulty-tabs .admin-rurera-tabs .nav-link {padding: 10px 25px; border-right: 1px solid #ddd; border-bottom: 1px solid transparent;}
+.edit-questions-difficulty-tabs .admin-rurera-tabs .nav-link.active {border-bottom-color: var(--primary);}
+.edit-questions-difficulty-tabs .edit-questions-tabs {margin-top: 0; border: 1px solid #ddd; padding: 25px 25px;}
+.edit-questions-difficulty-tabs .edit-questions-tabs:has(.tab-content) {border: 0; padding: 0;}
 /* Admin Rurera Tabs Style End */
 .search-field-box {background-color: #f1f1f1; border-bottom: 1px solid #eeeeee; padding: 20px;}
 .questions-group.populated-data,
@@ -1594,19 +1581,8 @@ body .question-step:has(.prev-next-controls) {padding-bottom: 0; }
 .lms-quiz-create .lms-dashboard-card {box-shadow: none;}
 
 /*pages Book List Style Start*/
-.pages-list ul {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-.pages-list ul li {
-    box-shadow: 0 0 3px rgba(0,0,0,0.1);
-    padding: 15px 10px;
-    border-radius: 5px;
-    position: relative;
-    flex: 0 0 32.333%;
-    max-width: 0 0 32.333%;
-}
+.pages-list ul {display: flex; gap: 15px; flex-wrap: wrap;}
+.pages-list ul li {box-shadow: 0 0 3px rgba(0,0,0,0.1); padding: 15px 10px; border-radius: 5px; position: relative; flex: 0 0 32.333%; max-width: 0 0 32.333%;}
 .pages-list > ul > li > img {
     height: 35px;
     width: 35px;
