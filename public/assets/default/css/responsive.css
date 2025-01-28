@@ -210,10 +210,7 @@ Lms Responsive Style Start
     .forum-hero-section {padding-bottom: 25px; padding-top: 25px;}
     .forum-hero-section .forum-hero-section__image {position: relative; width: 100%; max-width: 100%; height: auto; margin-top: 25px;}
     .forum-recommended-topics-section {margin-top: 45px;}
-    .table-responsive,
-    body:has(.activities-container) .table-responsive {overflow-x: auto;}
-    body:has(.activities-container) .table-responsive .table td, 
-    body:has(.activities-container) .table-responsive .table th {white-space: nowrap;}
+    .table-responsive{overflow-x: auto;}
     .webinar-form .table-responsive {overflow: auto;}
     .webinar-progress .progress-item {border-left: 0; padding: 0; margin: 5px 0;}
     .webinar-progress .progress-item:first-child {margin-top: 0;}
