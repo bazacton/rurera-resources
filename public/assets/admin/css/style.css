@@ -2877,6 +2877,7 @@ Admin Questions Generator Page Style End
 }
 .draggable-content-lists li > .d-flex .d-flex:has(.btn) {
     padding-left: 35px;
+    padding-top: 2px;
     gap: 5px;
 }
 .accordion-row .collapse-chevron-icon.feather-chevron-up {
