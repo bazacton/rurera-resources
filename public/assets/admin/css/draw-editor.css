@@ -129,6 +129,9 @@ body .editor-zone:has(.field-options) {
     /*padding-left: 369px;*/
     padding-left:0px;
 }
+.editor-zone:has(.editor-controls-holder) {
+    padding: 0 520px 0 369px;
+}
 .book-dropzone {
     position: relative;
     border: 1px solid #ccc;
@@ -149,6 +152,8 @@ body .editor-controls-holder {
     height: 100%;
     padding: 0;
     overflow: visible;
+    min-width: 500px;
+    max-width: 500px;
 }
 body .editor-parent-nav {
     padding: 15px;
