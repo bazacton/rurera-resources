@@ -2789,6 +2789,10 @@ Admin Questions Generator Page Style End
     max-width: 100px;
     border: 1px solid #ddd;
     padding: 5px 10px;
+    border-bottom-color: #fff;
+    margin-bottom: -1px;
+    border-bottom-width: 2px;
+    border-radius: 3px 3px 0 0;
 }
 .stage-accordion input {
     width: 100%;
