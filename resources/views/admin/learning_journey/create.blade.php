@@ -14,6 +14,22 @@
 
 <style type="text/css">
 
+    .right-in2 .flowchart-operator-outputs {
+        position: absolute;
+        right: 0;
+    }
+    .right-in2 .flowchart-operator-inputs {
+        position: absolute;
+        left: 0;
+    }
+
+
+    .field-data1 {
+        position: relative;
+    }.flowchart-operator-inputs1 {
+         position: absolute;
+         top: 2;
+     }
     .roadmap .roadmap-road {
         stroke: #000000;
         stroke-width:15px;
@@ -43,6 +59,13 @@
         background: #b2b2b2;
     }
 
+    .right-in .flowchart-operator-connector-arrow {
+        border-right: 10px solid rgb(204, 204, 204);
+        border-left: none;
+    }
+    .right-in .flowchart-operator-inputs, .right-in .flowchart-operator-outputs {
+        display: contents !important;
+    }
     .flowchart-operator-inputs-outputs.right-in .flowchart-operator-inputs .flowchart-operator-connector-arrow {
         right: -10px !important;
         left: auto !important;
@@ -866,6 +889,18 @@
     });
 
 
+    $(document).on('click', '.change-position', function () {
+        var data_id = $(this).closest('li').attr('data-id');
+        var link_position = $(this).closest('li').attr('data-link_position');
+        if(link_position == 'left-in'){
+            link_position = 'right-in';
+        }else{
+            link_position = 'left-in';
+        }
+        $(this).closest('li').attr('data-link_position', link_position);
+        levels_sorting_render();
+    });
+
     $(document).on('click', '.add-spacer', function () {
         var level_type = 'spacer';
         var unique_id = Math.floor((Math.random() * 99999) + 1);
@@ -878,7 +913,7 @@
             $el = ($('<div id="' + field_random_number + '"  style="left:0px; top:0px;" data-item_title="Spacer" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer spacer-block flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="spacer" data-trigger_class="infobox-spacer-fields" data-item_type="spacer" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="5" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="black" /></svg><div class="flowchart-operator-inputs-outputs spacer-svg-controls"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
             $el.append('<a href="javascript:;" class="remove spacer-remove"><span class="fas fa-trash"></span></a>');
             $el.append('</div>');
-            layer_html += `<li data-id="${field_random_number}" data-field_postition="2">Topic Title
+            layer_html += `<li data-id="${field_random_number}" data-field_postition="2">Spacer
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
                     <img src="/assets/default/svgs/dots-three.svg" alt="">
