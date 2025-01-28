@@ -2846,17 +2846,18 @@ Admin Questions Generator Page Style End
     white-space: nowrap;
     line-height: normal;
     font-size: 14px;
-    color: #333;
+    color: #999;
     font-weight: 600 !important;
 }
 .draggable-content-lists li .btn {
     padding: 4px;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.05);
     width: 20px;
     height: 20px;
 }
 .draggable-content-lists li .btn svg {
+    color: #999;
     height: 12px;
     width: 12px;
     margin: 0 !important;
@@ -2864,8 +2865,8 @@ Admin Questions Generator Page Style End
 .draggable-content-lists li .feather-move,
 .accordion-row .collapse-chevron-icon.feather-chevron-up {
     margin-right: 0 !important;
-    stroke: #333;
-    background-color: rgba(0, 0, 0, 0.1);
+    stroke: #999;
+    background-color: rgba(0, 0, 0, 0.05);
     padding: 2px 4px;
     width: 20px;
     height: 20px;
