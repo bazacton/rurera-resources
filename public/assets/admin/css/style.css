@@ -2799,6 +2799,11 @@ Admin Questions Generator Page Style End
 }
 .draggable-content-lists li:first-child {
     border-left: 1px solid #ddd;
+    border-radius: 5px 0 0 0 !important;
+}
+.draggable-content-lists li:last-child {
+    border-left: 1px solid #ddd;
+    border-radius: 0 5px 0 0 !important;
 }
 .draggable-content-lists li > .d-flex {
     flex-wrap: wrap;
@@ -2852,7 +2857,6 @@ Admin Questions Generator Page Style End
 }
 .draggable-content-lists li > .d-flex .d-flex:has(.btn) {
     padding-left: 40px;
-    padding-top: 5px;
     gap: 5px;
 }
 /* Learning Journey Sets Edit Page Accordions Style End */
