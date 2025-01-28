@@ -1217,7 +1217,10 @@ a.badge-gray200:focus {outline: 0; box-shadow: 0 0 0 .2rem hsla(0, 0%, 94.5%, .5
 .card-header:first-child {border-radius: calc(.3125rem - 1px) calc(.3125rem - 1px) 0 0;}
 .card-header+.list-group .list-group-item:first-child {border-top: 0;}
 /* panel/store/purchases Page Table Style Start */
-body:has(.activities-container) .simple-table .dropdown-menu {right: 0; left: auto;}
+body:has(.activities-container) .simple-table .dropdown-menu {right: 0; left: auto !important;}
+.table-actions .dropdown-toggle:after {
+    display: none;
+}
 body:has(.activities-container) .table-responsive {overflow: visible;}
 /* panel/store/purchases Page Table Style End */
 .card-footer {padding: .75rem 1.25rem; background-color: rgba(52, 52, 52, .03); border-top: 1px solid rgba(52, 52, 52, .125);}
