@@ -295,7 +295,9 @@ $(document).on('click', '.book-dropzone', function (e) {
 
 	var z_index = $(".editor-objects-list li").length+1;
 	if( item_title != undefined){
-		$(".editor-objects-list").append('<li data-id="'+field_random_number+'" data-field_postition="'+z_index+'">'+item_title+' <i class="fa fa-trash"></i><i class="fa fa-lock"></i><i class="fa fa-sort"></i><i class="fa fa-copy"></i></li>');
+		$(".editor-objects-list").append('<li data-id="'+field_random_number+'" data-field_postition="'+z_index+'">'+item_title+' <div class="dropdown"><button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">\n' +
+            '                                <img src="/assets/default/svgs/dots-three.svg" alt="">\n' +
+            '                              </button><div class="dropdown-menu"><i class="fa fa-trash"></i><i class="fa fa-lock"></i><i class="fa fa-sort"></i><i class="fa fa-copy"></i></div></div></li>');
 		$(".editor-objects-list").sortable({
 			update: function(event, ui) {
 				sorting_render(); // Call your function here
