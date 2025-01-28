@@ -4,6 +4,9 @@ $paths_list = getSvgFiles('assets/admin/editor/paths/');
 $topics_list = getSvgFiles('assets/admin/editor/topics/');
 $treasures_list = getSvgFiles('assets/admin/editor/treasures/');
 $sets_list = getSvgFilesByFolder('assets/admin/editor/sets/');
+$data_values = isset( $itemObj->data_values )? json_decode($itemObj->data_values) : array();
+$stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
+
  @endphp
 
 <div class="editor-controls-holder">
@@ -27,62 +30,30 @@ $sets_list = getSvgFilesByFolder('assets/admin/editor/sets/');
 	<div class="editor-controls tab-pane fade active show" id="stages{{$data_id}}" role="tabpanel" aria-labelledby="profile-tab">
 		<ul class="nav nav-pills" id="myTab3" role="tablist">
 			<li class="nav-item">
-				<a class="nav-link show active" id="stages-tab{{$data_id}}" data-toggle="tab" href="#stages_objects{{$data_id}}" role="tab" aria-controls="stages{{$data_id}}" aria-selected="true">Stages</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" id="paths-tab{{$data_id}}" data-toggle="tab" href="#paths{{$data_id}}" role="tab" aria-controls="paths{{$data_id}}" aria-selected="true">Paths</a>
-			</li>
-			<li class="nav-item">
 				<a class="nav-link" id="objects-tab{{$data_id}}" data-toggle="tab" href="#objects{{$data_id}}" role="tab" aria-controls="objects{{$data_id}}" aria-selected="true">Objects</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" id="topics-tab{{$data_id}}" data-toggle="tab" href="#topics{{$data_id}}" role="tab" aria-controls="topics{{$data_id}}" aria-selected="true">Topics</a>
-			</li>
             <li class="nav-item">
-                <a class="nav-link" id="treasures-tab{{$data_id}}" data-toggle="tab" href="#treasures{{$data_id}}" role="tab" aria-controls="treasures{{$data_id}}" aria-selected="true">Treasures</a>
+                <a class="nav-link" id="clipboard_settings-tab{{$data_id}}" data-toggle="tab" href="#clipboard_settings{{$data_id}}" role="tab" aria-controls="clipboard_settings{{$data_id}}" aria-selected="true">Settings</a>
             </li>
 		</ul>
 
 		<div class="tab-content" id="myTabContent2">
-			<div class="tab-pane mt-3 fade show active " id="stages_objects{{$data_id}}" role="tabpanel" aria-labelledby="stages-tab{{$data_id}}">
-				<ul class="editor-objects">
-					@if( !empty( $stages_list ) )
-						@foreach( $stages_list as $stageObj)
-							@php $stage_path = isset( $stageObj['path'] )? $stageObj['path'] : '';
+			<div class="tab-pane mt-3 fade show active" id="objects{{$data_id}}" role="tabpanel" aria-labelledby="objects-tab{{$data_id}}">
+					<ul class="editor-objects">
+                        @if( !empty( $stages_list ) )
+                            @foreach( $stages_list as $stageObj)
+                                @php $stage_path = isset( $stageObj['path'] )? $stageObj['path'] : '';
 							$stage_slug = isset( $stageObj['slug'] )? $stageObj['slug'] : '';
 							$stage_title = isset( $stageObj['title'] )? $stageObj['title'] : '';
-							@endphp
-							<li>
-								<a href="javascript:;" title="{{$stage_title}}" class="control-tool-item"
-								data-drag_type="stage" data-object_path="/assets/admin/editor/stages/{{$stage_path}}" data-item_path="{{$stage_path}}" data-drag_object="{{$stage_slug}}">
-									<img src="/assets/admin/editor/stages/{{$stage_path}}" style="width:65px">
-								</a>
-							</li>
-						@endforeach
-					@endif
-
-				</ul>
-			</div>
-			<div class="tab-pane mt-3 fade" id="paths{{$data_id}}" role="tabpanel" aria-labelledby="paths-tab{{$data_id}}">
-					<ul class="editor-objects">
-					@if( !empty( $paths_list ) )
-						@foreach( $paths_list as $pathObj)
-							@php $object_path = isset( $pathObj['path'] )? $pathObj['path'] : '';
-							$object_slug = isset( $pathObj['slug'] )? $pathObj['slug'] : '';
-							$object_title = isset( $pathObj['title'] )? $pathObj['title'] : '';
-							@endphp
-							<li>
-								<a href="javascript:;" title="{{$object_title}}" class="control-tool-item"
-								data-drag_type="path" data-object_path="/assets/admin/editor/paths/{{$object_path}}" data-item_path="{{$object_path}}" data-drag_object="{{$object_slug}}">
-									<img src="/assets/admin/editor/paths/{{$object_path}}" style="width:65px">
-								</a>
-							</li>
-						@endforeach
-					@endif
-					</ul>
-			</div>
-			<div class="tab-pane mt-3 fade" id="objects{{$data_id}}" role="tabpanel" aria-labelledby="objects-tab{{$data_id}}">
-					<ul class="editor-objects">
+                                @endphp
+                                <li>
+                                    <a href="javascript:;" title="{{$stage_title}}" class="control-tool-item"
+                                       data-drag_type="stage" data-object_path="/assets/admin/editor/stages/{{$stage_path}}" data-item_path="{{$stage_path}}" data-drag_object="{{$stage_slug}}">
+                                        <img src="/assets/admin/editor/stages/{{$stage_path}}" style="width:65px">
+                                    </a>
+                                </li>
+                            @endforeach
+                        @endif
 					@if( !empty( $objects_list ) )
 						@foreach( $objects_list as $objectObj)
 							@php $object_path = isset( $objectObj['path'] )? $objectObj['path'] : '';
@@ -99,42 +70,65 @@ $sets_list = getSvgFilesByFolder('assets/admin/editor/sets/');
 					@endif
 					</ul>
 			</div>
-			<div class="tab-pane mt-3 fade" id="topics{{$data_id}}" role="tabpanel" aria-labelledby="topics-tab{{$data_id}}">
-					<ul class="editor-objects">
-					@if( !empty( $topics_list ) )
-						@foreach( $topics_list as $topicObj)
-							@php $object_path = isset( $topicObj['path'] )? $topicObj['path'] : '';
-							$object_slug = isset( $topicObj['slug'] )? $topicObj['slug'] : '';
-							$object_title = isset( $topicObj['title'] )? $topicObj['title'] : '';
-							@endphp
-							<li>
-								<a href="javascript:;" title="{{$object_title}}" class="control-tool-item"
-								data-drag_type="topic" data-object_path="/assets/admin/editor/topics/{{$object_path}}" data-item_path="{{$object_path}}" data-drag_object="{{$object_slug}}">
-									<img src="/assets/admin/editor/topics/{{$object_path}}" style="width:65px">
-								</a>
-							</li>
-						@endforeach
-					@endif
-					</ul>
-			</div>
-            <div class="tab-pane mt-3 fade" id="treasures{{$data_id}}" role="tabpanel" aria-labelledby="treasures-tab{{$data_id}}">
-                <ul class="editor-objects">
-                    @if( !empty( $treasures_list ) )
-                        @foreach( $treasures_list as $treasureObj)
-                            @php $object_path = isset( $treasureObj['path'] )? $treasureObj['path'] : '';
-							$object_slug = isset( $treasureObj['slug'] )? $treasureObj['slug'] : '';
-							$object_title = isset( $treasureObj['title'] )? $treasureObj['title'] : '';
-                            @endphp
-                            <li>
-                                <a href="javascript:;" title="{{$object_title}}" class="control-tool-item"
-                                   data-drag_type="treasure" data-object_path="/assets/admin/editor/treasures/{{$object_path}}" data-item_path="{{$object_path}}" data-drag_object="{{$object_slug}}">
-                                    <img src="/assets/admin/editor/treasures/{{$object_path}}" style="width:65px">
-                                </a>
-                            </li>
-                        @endforeach
-                    @endif
+
+            <div class="tab-pane mt-3 fade " id="clipboard_settings{{$data_id}}" role="tabpanel" aria-labelledby="clipboard_settings-tab{{$data_id}}">
+                @if( !empty( $sets_list ) )
+                    @foreach( $sets_list as $directory_name => $directoryData)
+                        @php $is_selected = ($stage_set == $directory_name)? 'active' : ''; @endphp
+                        <ul class="editor-objects sets-selection {{$is_selected}}" data-set="{{$directory_name}}">
+                            <h6 class="mt-20">{{$directory_name}}</h6>
+                            @foreach( $directoryData as $set_data)
+                                @php $object_path = isset( $set_data['path'] )? $set_data['path'] : '';
+                $object_slug = isset( $set_data['slug'] )? $set_data['slug'] : '';
+                $object_title = isset( $set_data['title'] )? $set_data['title'] : '';
+                $svg_code = isset( $set_data['svg_code'] )? $set_data['svg_code'] : '';
+                $svg_code = updateSvgDimensions($svg_code, '100%', '100%');
+                                @endphp
+                                <li>
+                                    <a href="javascript:;" title="{{$object_title}}" class="stage-tool-item item_{{$object_slug}}"
+                                       data-drag_type="treasure" data-object_path="/assets/admin/editor/sets/{{$object_path}}" data-item_path="{{$object_path}}" data-drag_object="{{$object_slug}}">
+                                        <img src="/assets/admin/editor/sets/{{$object_path}}" style="width:65px">
+                                    </a>
+
+                                    <div class="svg_code hide">
+                                        {!! $svg_code !!}
+                                    </div>
+                                </li>
+                            @endforeach
+                        </ul>
+                    @endforeach
+                @endif
+
+                <h6 class="mt-20">Path Setting</h6>
+                <ul>
+                    <li>
+                        <a href="javascript:;" title="Path 1" class="path-tool-item item_path1" data-target_class="default-path">
+                            Path 1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="Path 2" class="path-tool-item item_path2" data-target_class="roadmap">
+                            Path 2
+                        </a>
+                    </li>
                 </ul>
+
+                <h6 class="mt-20">Templates Layouts</h6>
+                <ul>
+                    <li>
+                        <a href="javascript:;" title="Layout 1" class="layout-template-item item_path1" data-target_layout="layout1">
+                            Layout 1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" title="Layout 2" class="layout-template-item item_path2" data-target_layout="layout2">
+                            Layout 2
+                        </a>
+                    </li>
+                </ul>
+
             </div>
+
 		</div>
 
 	</div>
@@ -179,16 +173,16 @@ $sets_list = getSvgFilesByFolder('assets/admin/editor/sets/');
             <a href="javascript:;" class="add-level">+</a>
             <ul class="editor-objects-list levels-objects-list {{$data_id}}">
                 @php
-                    if( isset( $itemObj->id ) && !empty( $itemObj->LearningJourneyObjects->whereIn('item_type', array('topic', 'treasure'))->where('status','active') )){
-                        foreach( $itemObj->LearningJourneyObjects->whereIn('item_type', array('topic', 'treasure'))->where('status','active') as $learningJourneyItemObj){
+                    if( isset( $itemObj->id ) && !empty( $itemObj->LearningJourneyObjects->whereIn('item_type', array('topic', 'treasure', 'spacer'))->where('status','active') )){
+                        foreach( $itemObj->LearningJourneyObjects->whereIn('item_type', array('topic', 'treasure', 'spacer'))->where('status','active') as $learningJourneyItemObj){
 
-                            echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2">'.$learningJourneyItemObj->item_slug.'
+                            echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2" data-link_position="left-in">'.$learningJourneyItemObj->item_slug.'
                             <div class="dropdown">
                               <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
                                 <img src="/assets/default/svgs/dots-three.svg" alt="">
                               </button>
                               <div class="dropdown-menu">
-                                <i class="fa fa-plus add-spacer"></i><i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
+                                <i class="fa fa-plus change-position"></i><i class="fa fa-plus add-spacer"></i><i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
                             </div>
                             </div>
                             </li>
@@ -264,10 +258,6 @@ $sets_list = getSvgFilesByFolder('assets/admin/editor/sets/');
                 <label class="custom-switch-description mb-0 cursor-pointer" for="rtlSwitch">Enable Graph</label>
             </label>
         </div>
-        @php
-            $data_values = isset( $itemObj->data_values )? json_decode($itemObj->data_values) : array();
-            $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
-        @endphp
         <input type="text" name="stage_set" class="form-control trigger_field"
                value="{{$stage_set}}" data-field_id="stage_set" data-field_name="stage_set"
                data-field_type="page_set" data-id="">
@@ -293,46 +283,6 @@ $sets_list = getSvgFilesByFolder('assets/admin/editor/sets/');
             </label>
         </div>
 
-        @if( !empty( $sets_list ) )
-            @foreach( $sets_list as $directory_name => $directoryData)
-                @php $is_selected = ($stage_set == $directory_name)? 'active' : ''; @endphp
-                <ul class="editor-objects sets-selection {{$is_selected}}" data-set="{{$directory_name}}">
-                <h6 class="mt-20">{{$directory_name}}</h6>
-                @foreach( $directoryData as $set_data)
-                @php $object_path = isset( $set_data['path'] )? $set_data['path'] : '';
-                $object_slug = isset( $set_data['slug'] )? $set_data['slug'] : '';
-                $object_title = isset( $set_data['title'] )? $set_data['title'] : '';
-                $svg_code = isset( $set_data['svg_code'] )? $set_data['svg_code'] : '';
-                $svg_code = updateSvgDimensions($svg_code, '100%', '100%');
-                @endphp
-                    <li>
-                        <a href="javascript:;" title="{{$object_title}}" class="stage-tool-item item_{{$object_slug}}"
-                           data-drag_type="treasure" data-object_path="/assets/admin/editor/sets/{{$object_path}}" data-item_path="{{$object_path}}" data-drag_object="{{$object_slug}}">
-                            <img src="/assets/admin/editor/sets/{{$object_path}}" style="width:65px">
-                        </a>
-
-                        <div class="svg_code hide">
-                            {!! $svg_code !!}
-                        </div>
-                    </li>
-                    @endforeach
-                </ul>
-            @endforeach
-        @endif
-
-        <h6 class="mt-20">Path Setting</h6>
-        <ul>
-            <li>
-                <a href="javascript:;" title="Path 1" class="path-tool-item item_path1" data-target_class="default-path">
-                    Path 1
-                </a>
-            </li>
-            <li>
-                <a href="javascript:;" title="Path 2" class="path-tool-item item_path2" data-target_class="roadmap">
-                    Path 2
-                </a>
-            </li>
-        </ul>
 
 
 

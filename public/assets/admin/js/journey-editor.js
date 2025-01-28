@@ -1,4 +1,44 @@
 var stage_created = false;
+var template_layout = {
+    layout1: {
+        1: {
+            top: '600',
+            left: '0'
+        },
+        2: {
+            top: '600',
+            left: '300'
+        },
+        3: {
+            top: '600',
+            left: '600'
+        },
+        4: {
+            top: '400',
+            left: '0'
+        },
+        5: {
+            top: '400',
+            left: '300'
+        },
+        6: {
+            top: '400',
+            left: '600'
+        },
+        7: {
+            top: '200',
+            left: '0'
+        },
+        8: {
+            top: '200',
+            left: '300'
+        },
+        9: {
+            top: '200',
+            left: '600'
+        }
+    }
+};
 
 var alreadyInitiated = [];
 $(document).on('click', '.control-tool-item', function () {
@@ -12,6 +52,24 @@ $(document).on('click', '.path-tool-item', function () {
     var target_class = $(this).attr('data-target_class');
     $(".flowchart-links-layer > g").removeAttr('class');
     $(".flowchart-links-layer > g").addClass(target_class);
+});
+
+$(document).on('click', '.layout-template-item', function () {
+    var target_layout = $(this).attr('data-target_layout');
+
+    //template_layout
+    var template_layout_data = template_layout[target_layout];
+    var item_counter = 1;
+    $('.levels-objects-list').find('li').each(function (item_no) {
+        var field_id = $(this).attr('data-id');
+        var top_position =template_layout_data[item_counter].top;
+        var left_position =template_layout_data[item_counter].left;
+        $(".draggable_field_" + field_id).css('top', top_position+'px');
+        $(".draggable_field_" + field_id).css('left', left_position+'px');
+        item_counter++;
+        levels_sorting_render();
+    });
+
 });
 
 
@@ -275,10 +333,16 @@ function after_add_render(field_random_number, dropZonObj){
             inputs: {
                 input_1: {
                     label: '',
+                },
+                output_2: {
+                    label: '',
                 }
             },
             outputs: {
                 output_1: {
+                    label: '',
+                },
+                input_2: {
                     label: '',
                 }
             }
@@ -331,15 +395,43 @@ function reinitialize_items(){
 
     $('.levels-objects-list').find('li').each(function () {
         var field_id = $(this).attr('data-id');
+        var link_position = $(this).attr('data-link_position');
+        link_position = (link_position == null || link_position == undefined)? 'left-in' : link_position
         const previousElement = $(this).prev('li'); // Find the previous element with the same data-field_type
         if (previousElement.length > 0) {
             const previousId = previousElement.attr('data-id'); // Get the ID of the previous element
-            $flowchart.flowchart('addLink', {
-                fromOperator: previousId,
-                fromConnector: 'output_1',
-                toOperator: field_id,
-                toConnector: 'input_1',
-            });
+
+            console.log('link_position-----'+link_position);
+
+            var from_connector = 'output_1';
+            if(link_position == 'right-in'){
+                from_connector = 'input_1';
+            }
+
+            if(link_position == 'left-in') {
+                /*$flowchart.flowchart('addLink', {
+                    fromOperator: previousId,
+                    fromConnector: 'output_1',
+                    toOperator: field_id,
+                    toConnector: 'input_1',
+                });*/
+                $flowchart.flowchart('addLink', {
+                    fromOperator: previousId,
+                    fromConnector: 'output_1',
+                    toOperator: field_id,
+                    toConnector: 'input_1',
+                });
+            }
+            if(link_position == 'right-in'){
+                $flowchart.flowchart('addLink', {
+                    fromOperator: previousId,
+                    fromConnector: 'input_2',
+                    toOperator: field_id,
+                    toConnector: 'output_2',
+                });
+            }
+
+
         }
 
 
@@ -406,10 +498,16 @@ function levels_sorting_render(){
             inputs: {
                 input_1: {
                     label: '',
+                },
+                output_2: {
+                    label: '',
                 }
             },
             outputs: {
                 output_1: {
+                    label: '',
+                },
+                input_2: {
                     label: '',
                 }
             }
