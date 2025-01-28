@@ -2869,6 +2869,11 @@ Admin Questions Generator Page Style End
     height: 22px;
     border-radius: 3px;
 }
+.draggable-content-lists li.active .btn,
+.draggable-content-lists li.active .feather-move, 
+.draggable-content-lists li.active .feather-chevron-up {
+    background-color: #dce9fd;
+}
 .draggable-content-lists li > .d-flex .d-flex:has(.btn) {
     padding-left: 35px;
     gap: 5px;
