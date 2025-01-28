@@ -2861,6 +2861,9 @@ Admin Questions Generator Page Style End
     padding-left: 35px;
     gap: 5px;
 }
+.accordion-row .collapse-chevron-icon.feather-chevron-up {
+    stroke: #333;
+}
 /* Learning Journey Sets Edit Page Accordions Style End */
 
 
