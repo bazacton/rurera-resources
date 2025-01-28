@@ -210,10 +210,7 @@ Lms Responsive Style Start
     .forum-hero-section {padding-bottom: 25px; padding-top: 25px;}
     .forum-hero-section .forum-hero-section__image {position: relative; width: 100%; max-width: 100%; height: auto; margin-top: 25px;}
     .forum-recommended-topics-section {margin-top: 45px;}
-    .table-responsive,
-    body:has(.activities-container) .table-responsive {overflow-x: auto;}
-    body:has(.activities-container) .table-responsive .table td, 
-    body:has(.activities-container) .table-responsive .table th {white-space: nowrap;}
+    .table-responsive{overflow-x: auto;}
     .webinar-form .table-responsive {overflow: auto;}
     .webinar-progress .progress-item {border-left: 0; padding: 0; margin: 5px 0;}
     .webinar-progress .progress-item:first-child {margin-top: 0;}
@@ -1156,6 +1153,12 @@ Lms Responsive Style Start
     .form-group .rurera-error-msg {position: initial; padding-top: 2px;}
     .lms-choose-membership #progbar {margin-bottom: 0;}
     .lms-choose-membership .modal-body {padding: 0;}
+    .lms-choose-membership .modal-body.spell_words_popup_body {
+        padding-top: 20px;
+    }
+    .spell-words-filters h3 {
+        font-size: 1.2rem;
+    }
     .product-card .product-card-body .product-title {min-height: auto;}
     .product-card {text-align: center;}
     .product-card .product-card-body .product-price-box .real {justify-content: center; margin: 0 0 15px;}
@@ -1209,6 +1212,7 @@ Lms Responsive Style Start
         justify-content: space-between;
         position: relative;
         padding: 12px;
+        flex-wrap: wrap;
     }
     .table-sm tr td:before {
         content: attr(data-th);
