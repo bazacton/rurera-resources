@@ -1895,3 +1895,6 @@ School Plan Page Style Start
 /*****************************
 School Plan Page Style End
 *****************************/
+.table-actions .dropdown-toggle:after {
+    display: none;
+}
