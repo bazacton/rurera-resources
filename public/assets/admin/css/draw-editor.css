@@ -325,5 +325,7 @@ body .editor-objects-block .nav .nav-item .nav-link {
 .editor-objects-list li .dropdown-menu {
     width: auto;
     left: auto !important;
-    right: -100%;
+    right: 0;
+    transform: none !important;
+    top: 100% !important;
 }
