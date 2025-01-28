@@ -2836,7 +2836,8 @@ Admin Questions Generator Page Style End
     color: #333;
 }
 .draggable-content-lists li.active .chapter-icon svg,
-.draggable-content-lists li.active .feather-chevron-up {
+.draggable-content-lists li.active .feather-chevron-up,
+.draggable-content-lists li.active .cursor-pointer {
     color: cadetblue;
     stroke: cadetblue;
 }
@@ -2845,9 +2846,6 @@ Admin Questions Generator Page Style End
     line-height: normal;
     font-size: 13px;
     color: #333;
-}
-.draggable-content-lists li.active .cursor-pointer {
-    color: var(--primary);
 }
 .draggable-content-lists li .btn {
     padding: 0;
