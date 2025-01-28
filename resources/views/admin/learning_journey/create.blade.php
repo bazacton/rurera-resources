@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
 
 <style type="text/css">
-
+    .field-options {
+        display: none !important;
+    }
     .right-in2 .flowchart-operator-outputs {
         position: absolute;
         right: 0;
