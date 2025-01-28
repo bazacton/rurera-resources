@@ -57,7 +57,7 @@
             <div class="panel-section-card p-0 mt-20">
                 <div class="row">
                     <div class="col-12">
-                        <div class="table-responsive">
+                        <div class="table-responsive test">
                             <table class="table text-center custom-table simple-table">
                                 <thead>
                                 <tr>
