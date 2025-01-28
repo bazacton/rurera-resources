@@ -2787,7 +2787,7 @@ Admin Questions Generator Page Style End
     max-width: min-content;
     border: 1px solid #ddd;
     border-bottom: 2px solid transparent;
-    padding: 5px 10px !important;
+    padding: 10px 15px !important;
     display: inline-flex;
     flex-direction: column;
     border-radius: 0 !important;
@@ -2814,16 +2814,35 @@ Admin Questions Generator Page Style End
     width: 100%;
 }
 .stage-accordion .chapter-icon {
-    min-width: 25px;
-    width: 25px;
-    max-width: 25px;
-    min-height: 25px;
-    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: inherit;
+    min-width: 30px;
+    width: 30px;
+    max-width: 30px;
+    min-height: 30px;
+    height: 30px;
     max-height: 25px;
     margin-right: 5px;
 }
 .stage-accordion .chapter-icon svg {
     height: 12px;
+    width: 15px;
+    color: #333;
+}
+.stage-accordion .cursor-pointer {
+    white-space: nowrap;
+}
+.draggable-content-lists li .btn {
+    padding: 0;
+    margin: 0 5px 0 0;
+}
+.draggable-content-lists li .btn svg {
+    height: 15px;
+    width: 15px;
+    margin: 0 !important;!i;!;
+}
+.draggable-content-lists li .feather-move {
+    height: 15px;
     width: 15px;
 }
 /* Learning Journey Sets Edit Page Accordions Style End */
