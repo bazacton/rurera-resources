@@ -40,32 +40,26 @@
     display: block;
     text-transform: lowercase;
 }
-
 .drag-controls li a span {
     display: block;
     font-weight: 400;
 }
-
 /*.drag-controls svg g {
     fill: #ccc;
 }*/
-
 .drag-controls svg {
     width: 20px;
     height: 20px;
     margin: 0 auto 5px;
     display: block;
 }
-
 .drag-controls li a:hover, .drag-controls li a.active {
     background-color: #4d9eb3;
     color: #fff;
 }
-
 .drag-controls li a:hover svg g, .drag-controls li a.active svg g {
     fill: #fff;
 }
-
 .drag-controls .sub-dropdown {
     position: absolute;
     right: 50%;
@@ -86,7 +80,6 @@
     transition: all 0.5s ease-in-out;
     z-index: -1;
 }
-
 .controls-dropdown > li:hover .sub-dropdown {
     right: 100%;
     width: 90px;
@@ -94,16 +87,13 @@
     visibility: visible;
     z-index: 0;
 }
-
 .drag-controls li .sub-dropdown a {
     display: inline-block;
     padding: 8px 4px;
 }
-
 .drag-controls li .sub-dropdown a svg {
     margin: 0;
 }
-
 .open-controls-btn {
     position: absolute;
     right: 4px;
