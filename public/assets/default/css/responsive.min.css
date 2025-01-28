@@ -948,11 +948,31 @@ Lms Responsive Style Start
     .save-plan {margin: 45px 0 0 0; width: 45%; right: -20px; left: auto;}
     .save-plan span:before {width: 35px; height: 20px; top: 0; background-size: 100%; transform: rotate(45deg);}
     .save-plan span {padding-left: 35px;}
-    .table-responsive.rewards-table {overflow: hidden; border: 1px solid #ddd; border-radius: 6px;}
+    .table-responsive.rewards-table {overflow: hidden; border: 0;}
     .table-responsive.rewards-table thead {position: absolute; width: 0; height: 0; overflow: hidden; clip: rect(0 0 0 0);}
     .rewards-table .simple-table tbody {box-shadow: none;}
     .table-responsive.rewards-table table td::before {content: attr(data-label); font-weight: 500; font-size: 14px; color: #94a3b8; text-transform: uppercase;}
-    .rewards-table .custom-table tbody td {display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding-left: .75rem; padding-right: .75rem;}
+    .rewards-table .custom-table tbody td {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: .75rem;
+        padding-right: .75rem;
+        border: 1px solid #ddd;
+        border-bottom: 0;
+    }
+    .rewards-table .custom-table tr {
+        display: block;
+        margin: 0 0 15px;
+    }
+    .rewards-table .custom-table tbody td:last-child {
+        border-bottom: 1px solid #ddd;
+        border-radius: 0 0 8px 8px;
+    }
+    .rewards-table .custom-table tbody td:first-child {
+        border-radius: 8px 8px 0 0;
+    }
     .form-login-reading form .w-80,
     .child-edit-form .w-80 {width: 100% !important;}
     .no-record-found-head li {padding: 0 10px;}
@@ -1213,11 +1233,14 @@ Lms Responsive Style Start
         position: relative;
         padding: 12px;
         flex-wrap: wrap;
+        gap: 8px;
     }
     .table-sm tr td:before {
         content: attr(data-th);
-        color: #333;
+        color: #94a3b8;
         font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
     }
     .panel-section-card:has(.table-sm) {
         background-color: inherit !important;
