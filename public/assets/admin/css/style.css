@@ -2848,6 +2848,23 @@ Admin Questions Generator Page Style End
 }
 /* Learning Journey Sets Edit Page Accordions Style End */
 
+/* Learning Journey Model Settings Style Start */
+.update-journey-settings {
+    background-color: var(--primary);
+    border: 0;
+    color: #fff;
+    padding: 8px 25px;
+    border-radius: 3px;
+    outline: none;
+}
+.journey-settings-modal .inactivity-controls {
+    padding: 0 15px;
+}
+.journey-settings-modal .modal-body {
+    padding: 25px;
+}
+/* Learning Journey Model Settings Style End */
+
 
 @media (min-width: 993px) {
     .edit-questions-tabs .similarity-content-block .nav {
