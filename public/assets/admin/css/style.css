@@ -2858,7 +2858,7 @@ Admin Questions Generator Page Style End
     stroke: #333;
 }
 .draggable-content-lists li > .d-flex .d-flex:has(.btn) {
-    padding-left: 40px;
+    padding-left: 35px;
     gap: 5px;
 }
 /* Learning Journey Sets Edit Page Accordions Style End */
