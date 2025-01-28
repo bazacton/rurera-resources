@@ -153,6 +153,7 @@ body .editor-controls-holder {
     overflow: visible;
     min-width: 500px;
     max-width: 500px;
+    height: auto;
 }
 body .editor-parent-nav {
     padding: 15px;
