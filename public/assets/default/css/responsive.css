@@ -1159,6 +1159,9 @@ Lms Responsive Style Start
     .lms-choose-membership .modal-body.spell_words_popup_body {
         padding-top: 20px;
     }
+    .spell-words-filters h3 {
+        font-size: 1.2rem;
+    }
     .product-card .product-card-body .product-title {min-height: auto;}
     .product-card {text-align: center;}
     .product-card .product-card-body .product-price-box .real {justify-content: center; margin: 0 0 15px;}
