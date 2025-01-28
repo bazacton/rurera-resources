@@ -2795,7 +2795,7 @@ Admin Questions Generator Page Style End
 }
 .draggable-content-lists li.active {
     background-color: #f7fbfe !important;
-    border-bottom-color: var(--primary);
+    border-bottom-color: cadetblue;
 }
 .draggable-content-lists li:first-child {
     border-left: 1px solid #ddd;
