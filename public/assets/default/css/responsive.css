@@ -1219,26 +1219,12 @@ Lms Responsive Style Start
     .svga-vert-order-blocks .svga-row,
     .svga-vert-order-bodyzones .svga-row.row-bodyzones,
     .svga-vert-order-controls .svga-row.row-controls,
-    .svga-col-right .svga-row {
-        margin: -10px;
-    }
-    .svga-row.row-elements {
-        padding-top: 0;
-    }
-    .svga-vert-order-controls {
-        margin: 0 0 10px;
-    }
-    .detail-body .edit-info-list .package-block img {
-        height: 50px;
-        width: 50px;
-        object-fit: contain;
-    }
-    .level-stage {
-        overflow: hidden;
-    }
-    .activities-container .row {
-        gap: 15px 0;
-    }
+    .svga-col-right .svga-row {margin: -10px;}
+    .svga-row.row-elements {padding-top: 0;}
+    .svga-vert-order-controls {margin: 0 0 10px;}
+    .detail-body .edit-info-list .package-block img {height: 50px; width: 50px; object-fit: contain;}
+    .level-stage {overflow: hidden;}
+    .activities-container .row {gap: 15px 0;}
 }
 
 @media screen and (max-width: 640px) {
