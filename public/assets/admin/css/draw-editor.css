@@ -148,12 +148,16 @@ body .editor-controls-holder {
     border: 1px solid #ccc;
     background-color: inherit;
     border-radius: 0;
-    height: 100%;
     padding: 0;
     overflow: visible;
     min-width: 500px;
     max-width: 500px;
     height: auto;
+}
+.editor-controls .editor-objects {
+    max-height: 629px;
+    overflow: hidden;
+    overflow-y: auto;
 }
 body .editor-parent-nav {
     padding: 15px;
