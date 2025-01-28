@@ -1268,6 +1268,9 @@ Lms Responsive Style Start
     .level-stage {
         overflow: hidden;
     }
+    .activities-container .row {
+        gap: 15px 0;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -1580,7 +1583,7 @@ Lms Responsive Style Start
     .profile-info-box .user-actions button.btn-border-white {margin-top: 0 !important; margin-left: 10px; border-radius: 5px !important;}
     .reward-program-section .font-16,
     .newsletter-inner .font-16, .testimonials-card .font-16,
-    .detail-body .inner-heading.font-16 {font-size: 1rem !important;}
+    .detail-body .inner-heading.font-16, .activities-container span.font-16 {font-size: 1rem !important;}
     .example-reward-card .font-12 {font-size: 14px;}
     .newsletter-inner .text-white, .testimonials-card p {color: #000 !important;}
     .reward-program-section .btn-outline-primary {color: #000; border-color: #000;}
