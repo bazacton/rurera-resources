@@ -173,7 +173,7 @@ body .editor-objects-block .nav .nav-item .nav-link {
     padding: 5px 6px;
     border: 1px solid #ddd;
     border-left: 0;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
     margin: 0 0 -1px;
     border-radius: 0;
     box-shadow: none;
