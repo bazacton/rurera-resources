@@ -2784,14 +2784,15 @@ Admin Questions Generator Page Style End
     flex-wrap: wrap;
 }
 .draggable-content-lists li {
-    padding: 0 !important;
-    max-width: 100px;
+    max-width: min-content;
     border: 1px solid #ddd;
-    padding: 5px 10px;
+    padding: 5px 10px !important;
     border-bottom-color: #fff;
-    margin-bottom: -1px;
-    border-bottom-width: 2px;
-    border-radius: 3px 3px 0 0;
+    display: inline-flex;
+    flex-direction: column;
+}
+.draggable-content-lists li > .d-flex {
+    flex-wrap: wrap;
 }
 .tabs-data {
     border: 1px solid #ddd;
