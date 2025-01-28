@@ -57,7 +57,7 @@
             <div class="panel-section-card p-0 mt-20">
                 <div class="row">
                     <div class="col-12">
-                        <div class="table-responsive test">
+                        <div class="table-responsive table-sm">
                             <table class="table text-center custom-table simple-table">
                                 <thead>
                                 <tr>
@@ -72,7 +72,7 @@
                                 @foreach($orders as $order)
                                     <tr>
 
-                                        <td class="text-left">
+                                        <td class="text-left" data-th="Title">
                                             @if(!empty($order) and !empty($order->product))
                                             <span><a href="/products/{{ $order->product->slug }}" target="_blank">{{ $order->product->title }}</a>
                                                 Order #{{ $order->id }},
@@ -82,7 +82,7 @@
                                             </span>
                                             @endif
                                         </td>
-                                        <td class="align-middle">
+                                        <td class="align-middle" data-th="{{ trans('public.status') }}">
                                             @if($order->status == \App\Models\ProductOrder::$waitingDelivery)
                                                 <span class="text-warning">{{ trans('update.product_order_status_waiting_delivery') }}</span>
                                             @elseif($order->status == \App\Models\ProductOrder::$success)
@@ -93,11 +93,11 @@
                                                 <span class="text-danger">{{ trans('update.product_order_status_canceled') }}</span>
                                             @endif
                                         </td>
-                                        <td class="align-middle">
+                                        <td class="align-middle" data-th="{{ trans('public.date') }}">
                                             <span>{{ dateTimeFormat($order->created_at, 'j M Y H:i') }}</span>
                                         </td>
 
-                                        <td class="text-center align-middle">
+                                        <td class="text-center align-middle" data-th="Actions">
                                             @if(!empty($order) and $order->status != \App\Models\ProductOrder::$canceled)
                                                 <div class="btn-group dropdown table-actions">
                                                     <button type="button" class="btn-transparent dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
