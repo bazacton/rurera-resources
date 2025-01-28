@@ -1395,7 +1395,8 @@ Lms Responsive Style Start
     .sats-listing-card tbody tr {position: relative;}
     .sats-listing-card tbody tr td {display: block;}
     .sats-listing-card tbody tr td:last-child {padding: 0; border: 0;}
-    .sats-listing-card.medium tbody tr td:last-child { border-bottom: 1px solid #ececec; padding: 25px 20px;}
+    .sats-listing-card.medium tbody tr td:last-child { border-bottom: 1px solid #ececec; padding: 25px 0; text-align: left !important;}
+    .sats-listing-card.medium table:not(thead) td {padding-left: 0; padding-right: 0;}
     .sats-listing-card.medium tbody tr td .rurera-list-btn {margin-left: 0;}
     body .learning-page .close {right: 30px;}
     .spells-table-inner .table {min-width: 900px;}
@@ -1613,7 +1614,7 @@ Lms Responsive Style Start
     .leave-option-control button {width: 100%;}
     .leave-option-control {flex-wrap: wrap;}
     .analytics-dropdown select {background-position: 98% 50%;}
-    .sats-listing-card.medium table h4 img {top: -2px; right: -25px; max-width: 30px; transform: none;}
+    .sats-listing-card.medium table h4 img {top: -2px; right: 0; max-width: 30px; transform: none;}
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
