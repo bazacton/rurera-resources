@@ -329,5 +329,9 @@ body .editor-objects-block .nav .nav-item .nav-link {
     right: 0;
     transform: none !important;
     top: 100% !important;
-    min-width: 130px;
+    min-width: 120px;
+}
+.editor-objects-list li .dropdown-menu i {
+    padding: 5px 8px;
+    color: #333;
 }
