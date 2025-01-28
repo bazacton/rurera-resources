@@ -215,6 +215,7 @@ body .editor-objects-block .nav .nav-item .nav-link {
 }
 .editor-objects-block .page-settings-fields h5 {
     padding: 0;
+    margin: 0 0 10px;
 }
 .page-settings-fields {
     padding: 0 15px;
