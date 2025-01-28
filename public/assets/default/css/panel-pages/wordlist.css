@@ -250,7 +250,7 @@ body:has(.sentences-block) footer.footer.footer-home {display: none;}
 /* Vertical Keyboard Style End */
 
 /* Spell Words popup Style Start */
-.modal.spell_words_popup {padding-left: 0 !important; padding-right: 0 !important;}
+.modal.spell_words_popup {background-color: #fafafa; padding-left: 0 !important; padding-right: 0 !important;}
 .modal.spell_words_popup:has(.wizard-steps) {overflow: hidden;}
 .modal.spell_words_popup:has(.wizard-steps) .modal-body {padding-left: 0; padding-right: 0; padding-top: 30px; overflow: hidden; overflow-y: auto;}
 .spell_words_popup .modal-dialog {max-width: 100%; margin: 0;}
