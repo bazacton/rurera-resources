@@ -2856,6 +2856,9 @@ Admin Questions Generator Page Style End
     width: 20px;
     height: 20px;
 }
+.draggable-content-lists li .btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
 .draggable-content-lists li .btn svg {
     color: #999;
     height: 12px;
