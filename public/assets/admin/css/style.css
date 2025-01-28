@@ -2785,12 +2785,6 @@ Admin Questions Generator Page Style End
 }
 .draggable-content-lists li {
     padding: 0 !important;
-}
-.tabs-data {
-    border: 1px solid #ddd;
-    padding: 20px 25px;
-}
-.stage-accordion {
     max-width: 100px;
     border: 1px solid #ddd;
     padding: 5px 10px;
@@ -2798,6 +2792,13 @@ Admin Questions Generator Page Style End
     margin-bottom: -1px;
     border-bottom-width: 2px;
     border-radius: 3px 3px 0 0;
+}
+.tabs-data {
+    border: 1px solid #ddd;
+    padding: 20px 25px;
+}
+.stage-accordion {
+    
 }
 .stage-accordion input {
     width: 100%;
