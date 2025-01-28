@@ -328,4 +328,5 @@ body .editor-objects-block .nav .nav-item .nav-link {
     right: 0;
     transform: none !important;
     top: 100% !important;
+    min-width: 130px;
 }
