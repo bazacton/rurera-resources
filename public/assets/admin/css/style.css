@@ -2835,6 +2835,11 @@ Admin Questions Generator Page Style End
     width: 15px;
     color: #333;
 }
+.draggable-content-lists li.active .chapter-icon svg,
+.draggable-content-lists li.active .feather-chevron-up {
+    color: cadetblue;
+    stroke: cadetblue;
+}
 .stage-accordion .cursor-pointer {
     white-space: nowrap;
     line-height: normal;
