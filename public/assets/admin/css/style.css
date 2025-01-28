@@ -2778,6 +2778,24 @@ Admin Questions Generator Page Style End
 .learning_journey_sets .curriculum-item-data {
     height: auto !important;
 }
+.draggable-content-lists li {
+    padding: 0 0 !important;
+}
+.draggable-content-lists {}
+.stage-accordion {}
+.stage-accordion .chapter-icon {
+    min-width: 25px;
+    width: 25px;
+    max-width: 25px;
+    min-height: 25px;
+    height: 25px;
+    max-height: 25px;
+    margin-right: 5px;
+}
+.stage-accordion .chapter-icon svg {
+    height: 15px;
+    width: 15px;
+}
 /* Learning Journey Sets Edit Page Accordions Style End */
 
 
