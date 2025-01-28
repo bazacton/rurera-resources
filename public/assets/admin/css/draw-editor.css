@@ -305,15 +305,15 @@ body .editor-objects-block .nav .nav-item .nav-link {
 .editor-objects-list li .dropdown-toggle {
     padding: 0;
     border: 0;
-    background-color: inherit;
-    height: 20px;
-    width: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 25px;
+    width: 25px;
     border-radius: 100%;
 }
 .editor-objects-list li .dropdown-toggle:hover,
 .editor-objects-list li .dropdown-toggle:focus,
 .editor-objects-list li .show>.btn-secondary.dropdown-toggle {
-    background-color: inherit;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .editor-objects-list li .dropdown-toggle:after {
     display: none;
