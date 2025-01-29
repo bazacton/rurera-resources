@@ -386,6 +386,10 @@ body ul.editor-objects.sets-selection li img {
     border: 1px solid #ddd;
 }
 .editor-objects-list li .dropdown-menu.show {
-    display: flex !important
-;
+    display: flex !important;
+}
+body .editor-objects-list li {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    margin-bottom: 10px;
 }
