@@ -362,17 +362,11 @@
                             </div>
 
 							<input type="hidden" name="posted_data" class="posted-data">
-
-
-
-
-
-
-                            <div class="form-group">
-                                <button class="btn btn-primary add_learning_journey_set" type="button">Add Stage</button>
-                            </div>
-
+                            
                             <div class="learning_journey_sets">
+                                <div class="form-group">
+                                    <button class="btn btn-primary add_learning_journey_set" type="button">Add Stage</button>
+                                </div>
 
                                 @if( !empty( $LearningJourneyObj->learningJourneyLevels ))
                                 @foreach( $LearningJourneyObj->learningJourneyLevels as $itemObj)
@@ -380,10 +374,7 @@
                                 @endforeach
                                 @endif
 
-
                             </div>
-
-
                             <div class="text-right mt-4">
                                 <button class="btn btn-primary">{{ trans('admin/main.submit') }}</button>
                             </div>
