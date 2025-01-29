@@ -2538,7 +2538,7 @@ Admin Questions Generator Page Style End
 .draggable-content-lists li > .d-flex {
     flex-wrap: wrap;
 }
-.tabs-data {
+.learning_journey_sets .tabs-data {
     border: 1px solid #ddd;
     border-radius: 0 0 5px 5px;
     padding: 20px 25px 25px;
