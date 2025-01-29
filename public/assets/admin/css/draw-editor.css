@@ -177,14 +177,14 @@ body .editor-objects-block .nav .nav-item .nav-link {
     border-radius: 0;
     box-shadow: none;
 }
+body .editor-controls .nav .nav-item:last-child .nav-link,
+body .editor-objects-block .nav .nav-item:last-child .nav-link {
+    border-radius: 0 5px 0 0;
+}
 body .editor-controls .nav .nav-item:first-child .nav-link,
 body .editor-objects-block .nav .nav-item:first-child .nav-link {
     border-left: 1px solid #ddd;
     border-radius: 5px 0 0 0;
-}
-body .editor-controls .nav .nav-item:last-child .nav-link,
-body .editor-objects-block .nav .nav-item:last-child .nav-link {
-    border-radius: 0 5px 0 0;
 }
 body .editor-controls .nav .nav-item .nav-link.active,
 body .editor-objects-block .nav .nav-item .nav-link.active {
