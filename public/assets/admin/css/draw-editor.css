@@ -424,6 +424,9 @@ body .editor-objects-list li {
     outline: none;
     padding: 0 15px;
 }
+.learning-stage-btn button i {
+    margin-right: 5px;
+}
 .learning-jounrey-tabs {
     display: flex;
     flex-wrap: wrap;
