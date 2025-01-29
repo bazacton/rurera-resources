@@ -2199,13 +2199,8 @@ output {
 .card:has(.columns-settings) .table-striped tr th {text-align: left !important;}
 .card:has(.columns-settings) .table-striped tr th:last-child {text-align: center !important;}
 /* Questions Generator Table Style End*/
-.copyable-text {
-    cursor: pointer;
-    user-select: text; /* Allows text selection */
-}
-.copyable-text:hover {
-    text-decoration: underline;
-}
+.copyable-text {cursor: pointer; user-select: text;}
+.copyable-text:hover {text-decoration: underline;}
 #question-generator-form .prompt-text:empty {display: none;}
 /*****************************************
 Admin Questions Generator Page Style End
