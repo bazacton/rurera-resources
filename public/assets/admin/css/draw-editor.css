@@ -405,13 +405,13 @@ body .editor-objects-list li {
 .learning-stage-btn {
     display: inline-flex;
     margin-bottom: 0;
+    margin-left: auto;
 }
 .learning-stage-btn button {
     height: 100%;
     border: 1px solid #ddd;
     background-color: #fff;
     margin-left: 0;
-    border-left: 0;
     border-radius: 0 5px 0 0;
     font-size: 14px;
     color: var(--blue);
