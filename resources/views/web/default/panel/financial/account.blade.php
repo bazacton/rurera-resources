@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-4 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/36.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/36.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $accountCharge ? addCurrencyToPrice($accountCharge) : 0 }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('financial.account_charge') }}</span>
                     </div>
@@ -20,7 +20,7 @@
 
                 <div class="col-4 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/37.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/37.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $readyPayout ? addCurrencyToPrice($readyPayout) : 0 }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('financial.ready_to_payout') }}</span>
                     </div>
@@ -28,12 +28,11 @@
 
                 <div class="col-4 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/38.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/38.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $totalIncome ? addCurrencyToPrice($totalIncome) : 0 }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('financial.total_income') }}</span>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -67,7 +66,7 @@
                     <div class="col-6 col-lg-3 mb-40 charge-account-radio">
                         <input type="radio" class="online-gateway" name="gateway" id="{{ $paymentChannel->class_name }}" @if(old('gateway') == $paymentChannel->class_name) checked @endif value="{{ $paymentChannel->class_name }}">
                         <label for="{{ $paymentChannel->class_name }}" class="rounded-sm p-20 p-lg-45 d-flex flex-column align-items-center justify-content-center">
-                            <img src="{{ $paymentChannel->image }}" width="120" height="60" alt="">
+                            <img src="{{ $paymentChannel->image }}" width="120" height="60" alt="radio image">
                             <p class="mt-30 font-16 font-weight-500 text-dark-blue">{{ trans('financial.pay_via') }}
                                 <span class="font-weight-bold">{{ $paymentChannel->title }}</span>
                             </p>
@@ -78,7 +77,7 @@
                 <div class="col-6 col-lg-3 mb-40 charge-account-radio">
                     <input type="radio" name="gateway" id="offline" value="offline" @if(old('gateway') == 'offline' or !empty($editOfflinePayment)) checked @endif>
                     <label for="offline" class="rounded-sm p-20 p-lg-45 d-flex flex-column align-items-center justify-content-center">
-                        <img src="/assets/default/img/activity/pay.svg" width="120" height="60" alt="">
+                        <img src="/assets/default/img/activity/pay.svg" width="120" height="60" alt="pay">
                         <p class="mt-30 font-16 font-weight-500 text-dark-blue">{{ trans('financial.pay_via') }}
                             <span class="font-weight-bold">{{ trans('financial.offline') }}</span>
                         </p>
@@ -86,9 +85,8 @@
                 </div>
             </div>
 
-            <div class="">
+            <div>
                 <h3 class="section-title mb-20">{{ trans('financial.finalize_payment') }}</h3>
-
                 <div class="row">
                     <div class="col-12 col-lg-3 mb-25 mb-lg-0">
                         <label class="font-weight-500 font-16 text-dark-blue d-block">{{ trans('panel.amount') }}</label>
@@ -163,9 +161,7 @@
                                 <div class="custom-upload-input"></div>
                             </label>
 
-                            <input type="file" name="attachment" id="attachmentFile"
-                                   class="form-control h-auto invisible-file-input @error('attachment') is-invalid @enderror"
-                                   value=""/>
+                            <input type="file" name="attachment" id="attachmentFile" class="form-control h-auto invisible-file-input @error('attachment') is-invalid @enderror" value=""/>
                             @error('attachment')
                             <div class="invalid-feedback">
                                 {{ $message }}
