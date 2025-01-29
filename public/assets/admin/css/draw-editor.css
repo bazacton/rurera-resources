@@ -283,7 +283,7 @@ body ul.editor-objects.sets-selection li {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-right: 5px;
+    margin: 0 5px 5px 0;
     padding: 10px;
     height: 50px;
     width: 50px;
