@@ -368,9 +368,7 @@
 
 
 
-                            <div class="form-group">
-                                <button class="btn btn-primary add_learning_journey_set" type="button">Add Stage</button>
-                            </div>
+
 
                             <div class="learning_journey_sets">
 
@@ -391,6 +389,9 @@
                                     <ul class="draggable-content-lists  curriculum-set-ul jounry-stages-lis">
                                         {!! $li_content_respnose !!}
                                     </ul>
+                                    <div class="learning-stage-btn form-group">
+                                        <button class="btn btn-primary add_learning_journey_set" type="button">Add Stage</button>
+                                    </div>
                                 </div>
                                 <div class="tabs-data">
                                     {!! $li_content_data_response !!}
