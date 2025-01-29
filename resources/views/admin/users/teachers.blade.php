@@ -287,7 +287,7 @@
                                 <option value="1">user - Student role</option>
                             </select>
                         </div>
-                        <div class="text-right mt-4 mb-0">
+                        <div class="text-right mt-4">
                             <button class="btn btn-primary">Save</button>
                         </div>
                     </form>
