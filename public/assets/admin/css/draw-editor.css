@@ -276,6 +276,14 @@ form.learning-journey-form {
     resize: both;
     overflow: hidden;
 }
+.learning_journey_sets .form-group {
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+.learning_journey_sets {
+    position: relative;
+}
 
 .hide {
     display: none;
