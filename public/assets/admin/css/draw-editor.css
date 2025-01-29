@@ -266,6 +266,9 @@ body .editor-objects-block .nav .nav-item .nav-link {
     padding: 0;
     margin-bottom: 0;
 }
+.card:has(.learning-journey-form) {
+    overflow: hidden;
+}
 form.learning-journey-form {
     margin: 0;
 }
