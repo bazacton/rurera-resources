@@ -596,8 +596,15 @@ $(document).on('change', '.conditional-field', function () {
 var subject_topics_list = [];
 $(document).on('click', '.field_settings', function (e) {
     $(".field-options").html('');
-    $(".editor-parent-nav #stages-tab").click();
-    $(".editor-controls li #objects-tab1").click();
+    if( $(this).hasClass('path-initializer')){
+        $(".editor-parent-nav #layers-tab").click();
+        $(".editor-controls li #levels_layers-tab1").click();
+    }else{
+        $(".editor-parent-nav #stages-tab").click();
+        $(".editor-controls li #objects-tab1").click();
+    }
+
+
     var fieldObj = $(this);
     var field_id = fieldObj.data('id');
 	var item_title = fieldObj.attr('data-item_title');
