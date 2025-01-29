@@ -2545,7 +2545,6 @@ Admin Questions Generator Page Style End
     border: 1px solid #ddd;
     border-radius: 0 5px 5px 5px;
     padding: 20px 25px;
-    min-height: 900px;
 }
 .stage-accordion input {
     width: 100%;
