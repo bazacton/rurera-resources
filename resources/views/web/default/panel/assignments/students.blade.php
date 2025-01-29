@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-3 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/homework.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/homework.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 font-weight-bold mt-5">{{ $courseAssignmentsCount }}</strong>
                         <span class="font-16 text-dark-blue text-gray font-weight-500">{{ trans('update.course_assignments') }}</span>
                     </div>
@@ -21,7 +21,7 @@
 
                 <div class="col-3 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/58.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/58.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 font-weight-bold mt-5">{{ $pendingReviewCount }}</strong>
                         <span class="font-16 text-dark-blue text-gray font-weight-500">{{ trans('update.pending_review') }}</span>
                     </div>
@@ -29,7 +29,7 @@
 
                 <div class="col-3 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/45.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/45.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $passedCount }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('quiz.passed') }}</span>
                     </div>
