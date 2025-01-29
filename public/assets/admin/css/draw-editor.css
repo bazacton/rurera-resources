@@ -392,6 +392,10 @@ body ul.editor-objects.sets-selection li img {
 ul.editor-objects-list {
     margin-top: 25px;
 }
+.editor-objects-list .ui-sortable-handle.active {
+    background-color: #efefef;
+    border-color: var(--blue);
+}
 body .editor-objects-list li {
     border: 1px solid #ccc;
     padding: 8px 10px;
