@@ -439,3 +439,20 @@ body .editor-objects-list li {
     padding: 8px 20px;
     outline: none;
 }
+.editor-controls-holder ul:has(.path-tool-item),
+.editor-controls-holder ul:has(.layout-template-item) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.editor-controls-holder .path-tool-item,
+.editor-controls-holder .layout-template-item {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 5px 15px;
+    display: inline-block;
+    line-height: normal;
+    border-radius: 3px;
+    text-decoration: none;
+}
