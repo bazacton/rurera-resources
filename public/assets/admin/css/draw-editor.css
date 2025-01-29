@@ -277,7 +277,7 @@ form.learning-journey-form {
     top: 15px;
     right: 0;
 }
-body .editor-controls .editor-objects {
+body .editor-controls .editor-objects.sets-selection {
     background-color: #f2f2f2 !important;
     border: 1px solid transparent;
     padding: 15px;
