@@ -411,6 +411,7 @@ body .editor-objects-list li {
     color: var(--blue);
     font-weight: 600;
     outline: none;
+    padding: 0 15px;
 }
 .learning-jounrey-tabs {
     display: flex;
