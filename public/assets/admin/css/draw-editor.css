@@ -206,13 +206,16 @@ body .book-dropzone {
     padding: 0 15px;
     margin-bottom: 20px;
 }
+.editor-controls-holder .fade:not(.show) {
+    display: none;
+}
 body .editor-controls-holder .editor-objects-block .nav,
 .editor-objects-block .tab-pane {
     padding: 0 15px;
 }
 .editor-objects-block .tab-pane {
     padding-bottom: 15px;
-    margin-top: 10px !important;
+    margin-top: 25px !important;
 }
 body .editor-objects-block .nav .nav-item .nav-link {
     padding: 5px 15px;
