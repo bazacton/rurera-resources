@@ -278,9 +278,13 @@ form.learning-journey-form {
     right: 0;
 }
 body .editor-controls .editor-objects {
-    background-color: #f2f2f2;
+    background-color: #f2f2f2 !important;
+    border: 1px solid transparent;
     padding: 15px;
     border-radius: 5px;
+}
+ul.editor-objects.sets-selection.active {
+    border-color: var(--primary);
 }
 body .editor-controls .editor-objects h6.mt-20 {
     margin-top: 0 !important;
