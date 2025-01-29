@@ -10,7 +10,7 @@
                 <div class="row">
                     <div class="col-4 d-flex align-items-center justify-content-center">
                         <div class="d-flex flex-column align-items-center text-center">
-                            <img src="/assets/default/img/activity/webinars.svg" width="64" height="64" alt="">
+                            <img src="/assets/default/img/activity/webinars.svg" width="64" height="64" alt="webinars">
                             <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $activePackage->title }}</strong>
                             <span class="font-16 text-gray font-weight-500">{{ trans('financial.active_plan') }}</span>
                         </div>
@@ -18,7 +18,7 @@
 
                     <div class="col-4 d-flex align-items-center justify-content-center">
                         <div class="d-flex flex-column align-items-center text-center">
-                            <img src="/assets/default/img/activity/53.svg" width="64" height="64" alt="">
+                            <img src="/assets/default/img/activity/53.svg" width="64" height="64" alt="activity">
                             <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ dateTimeFormat($activePackage->activation_date, 'j M Y') }}</strong>
                             <span class="font-16 text-gray font-weight-500">{{ trans('update.activation_date') }}</span>
                         </div>
@@ -26,7 +26,7 @@
 
                     <div class="col-4 d-flex align-items-center justify-content-center">
                         <div class="d-flex flex-column align-items-center text-center">
-                            <img src="/assets/default/img/activity/54.svg" width="64" height="64" alt="">
+                            <img src="/assets/default/img/activity/54.svg" width="64" height="64" alt="activity">
                             <strong class="font-30 text-dark-blue text-dark-blue font-weight-bold mt-5">{{ $activePackage->days_remained ?? trans('update.unlimited') }}</strong>
                             <span class="font-16 text-gray font-weight-500">{{ trans('financial.days_remained') }}</span>
                         </div>
@@ -39,9 +39,7 @@
 
     <section class="mt-30">
         <h2 class="section-title">{{ trans('update.account_statistics') }}</h2>
-
         <div class="d-flex align-items-center justify-content-around bg-white rounded-sm shadow mt-15 p-15">
-
             <div class="registration-package-statistics d-flex flex-column align-items-center">
                 <div class="registration-package-statistics-icon">
                     <img src="/assets/default/img/icons/play.svg" alt="">
@@ -132,9 +130,7 @@
 
     <section class="mt-30">
         <h2 class="section-title">{{ trans('update.upgrade_your_account') }}</h2>
-
         <div class="row mt-15">
-
             @foreach($packages as $package)
                 <div class="col-12 col-sm-6 col-lg-3 mt-15">
                     <div class="subscribe-plan position-relative bg-white d-flex flex-column align-items-center rounded-sm shadow pt-50 pb-20 px-20">
@@ -142,7 +138,6 @@
                         @if(!empty($activePackage) and $activePackage->package_id == $package->id)
                             <span class="badge badge-primary badge-popular px-15 py-5">{{ trans('update.activated') }}</span>
                         @endif
-
 
                         <div class="plan-icon">
                             <img src="{{ $package->icon }}" class="img-cover" alt="">
