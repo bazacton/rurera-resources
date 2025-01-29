@@ -1166,32 +1166,11 @@ body.layout-3 .main-footer {padding-left: 0; padding-right: 0;}
 .main-sidebar .sidebar-brand {display: inline-block; width: 100%; text-align: center; height: 60px; line-height: 60px;}
 .main-sidebar .sidebar-brand.sidebar-brand-sm {display: none;}
 .main-sidebar .sidebar-brand a {text-decoration: none; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; color: #000; }
-.admin_teacher_role .main-sidebar .sidebar-brand {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-.main-sidebar .sidebar-brand.sidebar-brand-sm {
-    display: none;
-}
-.sidebar-brand img {
-    object-fit: contain;
-    width: 130px;
-    height: auto;
-}
-.create-modal-btn {
-    padding: 5px 10px 15px;
-}
-.create-modal-btn button {
-    width: 100%;
-    border: 1px solid #ddd;
-    background-color: #f5f5f5;
-    padding: 10px 10px;
-    border-radius: 5px;
-    outline: none;
-    color: #666;
-    font-weight: 600;
-}
+.admin_teacher_role .main-sidebar .sidebar-brand {display: inline-flex; align-items: center; justify-content: center;}
+.main-sidebar .sidebar-brand.sidebar-brand-sm {display: none;}
+.sidebar-brand img {object-fit: contain; width: 130px; height: auto;}
+.create-modal-btn {padding: 5px 10px 15px;}
+.create-modal-btn button {width: 100%; border: 1px solid #ddd; background-color: #f5f5f5; padding: 10px 10px; border-radius: 5px; outline: none; color: #666; font-weight: 600;}
 .main-sidebar .sidebar-user {display: inline-block; width: 100%; padding: 10px; margin-bottom: 10px;}
 .main-sidebar .sidebar-user .sidebar-user-picture {float: left; margin-right: 10px;}
 .main-sidebar .sidebar-user .sidebar-user-picture img {width: 50px; border-radius: 50%; }
@@ -1203,11 +1182,7 @@ body.layout-3 .main-footer {padding-left: 0; padding-right: 0;}
 .main-sidebar .sidebar-menu li a .badge {float: right; padding: 5px 10px; margin-top: 2px;}
 .main-sidebar .sidebar-menu li a i { margin-right: 12px; text-align: center;}
 .main-sidebar .sidebar-menu li a span img {margin-left: 5px; }
-.main-sidebar .sidebar-menu li img {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-}
+.main-sidebar .sidebar-menu li img {width: 16px; height: 16px; margin-right: 10px;}
 .main-sidebar .sidebar-menu li a span {margin-top: 3px; width: 100%;}
 .main-sidebar .sidebar-menu li a:hover {background-color: #f8fafb;}
 .main-sidebar .sidebar-menu li.active a {color: var(--primary); font-weight: 600; background-color: #f8fafb;}
@@ -1531,66 +1506,21 @@ body .question-step:has(.prev-next-controls) {padding-bottom: 0; }
 /*pages Book List Style End*/
 
 /*Topics Parts Create Output Table Start*/
-#outputTable textarea {
-    overflow: hidden;
-    width: 100%;
-    padding: 15px 10px;
-    border: 1px solid #ddd;
-    resize: none;
-    border-radius: 3px;
-    outline: none;
-    height: auto;
-    field-sizing: content;
-}
-table#outputTable {
-    width: 100%;
-}
-table#outputTable thead th {
-    padding-bottom: 15px;
-}
-#outputTable td {
-    padding: 0 15px 15px;
-    vertical-align: top;
-}
-#outputTable td:first-child {
-    padding-left: 0;
-}
-.remove-btn {
-    background-color: #ffe1e1;
-    border: 1px solid #e60909;
-    color: #e60909;
-    padding: 6px 18px;
-    font-size: 14px;
-    border-radius: 3px;
-}
+#outputTable textarea {overflow: hidden; width: 100%; padding: 15px 10px; border: 1px solid #ddd; resize: none; border-radius: 3px; outline: none; height: auto; field-sizing: content;}
+table#outputTable {width: 100%;}
+table#outputTable thead th {padding-bottom: 15px;}
+#outputTable td {padding: 0 15px 15px; vertical-align: top;}
+#outputTable td:first-child {padding-left: 0;}
+.remove-btn {background-color: #ffe1e1; border: 1px solid #e60909; color: #e60909; padding: 6px 18px; font-size: 14px; border-radius: 3px;}
 .card-body .text-right:has(button),
-.card-body .text-left:has(button) {
-    text-align: left !important;
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 20px;
-}
+.card-body .text-left:has(button) {text-align: left !important; display: inline-block; vertical-align: middle; margin-bottom: 20px;}
 .card-body .text-right:has(.add-item-modal),
-.card-body .text-right:has(.add-part-modal) {
-    float: inline-end;
-    margin-bottom: 20px;
-    margin-top: 0 !important;
-}
-.modal-open .modal{
-    padding-right: 0 !important;
-}
-.modal-footer {
-    justify-content: flex-start;
-    align-items: center;
-}
-.card-body .modal-footer .text-right:has(button) {
-    margin-bottom: 0;
-}
+.card-body .text-right:has(.add-part-modal) {float: inline-end; margin-bottom: 20px; margin-top: 0 !important;}
+.modal-open .modal{padding-right: 0 !important;}
+.modal-footer {justify-content: flex-start; align-items: center;}
+.card-body .modal-footer .text-right:has(button) {margin-bottom: 0;}
 .question_part_modal .modal-content,
-.question_part_modal .modal-fullscreen {
-    height: 100%;
-    border-radius: 0;
-}
+.question_part_modal .modal-fullscreen {height: 100%; border-radius: 0;}
 /*Topics Parts Create Output Table End*/
 /*Topics Parts Form Table Style Start*/
 .topic-parts-form .table:not(.table-sm):not(.table-md):not(.dataTable) td, 
