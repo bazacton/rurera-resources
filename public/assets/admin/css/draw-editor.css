@@ -155,9 +155,11 @@ body .editor-controls-holder {
     height: auto;
 }
 .editor-controls .editor-objects {
-    max-height: 629px;
-    overflow: hidden;
-    overflow-y: auto;
+    background-color: inherit;
+    padding: 0;
+}
+body ul.editor-objects li {
+    width: 32.5555%;
 }
 body .editor-parent-nav {
     padding: 15px;
