@@ -1532,107 +1532,39 @@ table#outputTable thead th {padding-bottom: 15px;}
 /*Topics Parts Form Table Style End*/
 
 /*Glossary Question_Edit_Part Modal Style Start*/
-.modal.question_edit_part_modal {
-    background-color: #fff;
-}
+.modal.question_edit_part_modal {background-color: #fff;}
 .question_edit_part_modal #dynamicContainer textarea.form-control,
-.question-generator-form .form-group textarea {
-    field-sizing: content;
-}
-.multi-choice-template-modal .question-generator-form .form-group textarea {
-    max-width: 100%;
-    width: 100%;
-}
+.question-generator-form .form-group textarea {field-sizing: content;}
+.multi-choice-template-modal .question-generator-form .form-group textarea {max-width: 100%; width: 100%;}
 /*Glossary Question_Edit_Part Modal Style End*/
 /*Topics_Parts Template_save_modal Style Start*/
-.template_save_modal .inactivity-controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
+.template_save_modal .inactivity-controls {display: flex; align-items: center; justify-content: center; gap: 10px;}
 .template_save_modal .save-template-btn,
-.template_save_modal .inactivity-controls .btn-danger {
-    padding: 8px 30px;
-}
+.template_save_modal .inactivity-controls .btn-danger {padding: 8px 30px;}
 /*Topics_Parts Template_save_modal Style End*/
 /*topic parts search-form select2 style Start*/
 #topic_parts_search_form .select2-container,
 #sub_parts_questions_report_search_form .select2-container {z-index: auto !important;}
-#topic_parts_search_form .select2-container--default .select2-selection--single {
-    border-color: #e4e6fc;
-    background-color: #fdfdff;
-}
+#topic_parts_search_form .select2-container--default .select2-selection--single {border-color: #e4e6fc; background-color: #fdfdff;}
 /*topic parts search-form select2 style End*/
-.question-generator-form .form-group textarea {
-    min-height: 100px;
-    overflow: hidden;
-}
-
+.question-generator-form .form-group textarea {min-height: 100px; overflow: hidden;}
 /*Import Question Page questions-generator/add-response/ Style Start*/
-body:has(.multi-choice-template-modal.show) {
-    overflow: hidden;
-}
-body:has(.multi-choice-template-modal.show) .modal {
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-#question-generator-form .radio-buttons .card-radio {
-    width: 23%;
-}
-#imagemodal {
-    text-align: center;
-}
-#imagemodal .modal-dialog {
-    max-width: inherit;
-    display: inline-flex;
-}
-.multi-choice-template-modal > .modal-dialog > .modal-content {
-    background-color: #fcfcfc;
-}
-.section .multi-choice-template-modal .section-header {
-    background-color: inherit;
-}
-#question-generator-form .populated-data .radio-btn {
-    min-height: 185px;
-}
-#question-generator-form .populated-data .radio-btn .card-icon {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 150px;
-}
-#question-generator-form .radio-btn .card-icon h3 {
-    margin-top: auto;
-}
-.multi-choice-template-modal {
-    padding-right: 0 !important;
-}
-.multi-choice-template-modal .modal-dialog.modal-xl {
-    max-width: 1400px;
-    height: 100%;
-}
-.multi-choice-template-modal .modal-content {
-    height: 100%;
-}
-.template-box img {
-    max-width: 100%;
-    object-fit: contain;
-}
-.template-item {
-    margin: 0 0 30px;
-}
-.template-box {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    padding: 25px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
+body:has(.multi-choice-template-modal.show) {overflow: hidden;}
+body:has(.multi-choice-template-modal.show) .modal {overflow-x: hidden; overflow-y: auto;}
+#question-generator-form .radio-buttons .card-radio {width: 23%;}
+#imagemodal {text-align: center;}
+#imagemodal .modal-dialog {max-width: inherit; display: inline-flex;}
+.multi-choice-template-modal > .modal-dialog > .modal-content {background-color: #fcfcfc;}
+.section .multi-choice-template-modal .section-header {background-color: inherit;}
+#question-generator-form .populated-data .radio-btn {min-height: 185px;}
+#question-generator-form .populated-data .radio-btn .card-icon {height: 100%; display: flex; flex-direction: column; min-height: 150px;}
+#question-generator-form .radio-btn .card-icon h3 {margin-top: auto;}
+.multi-choice-template-modal {padding-right: 0 !important;}
+.multi-choice-template-modal .modal-dialog.modal-xl {max-width: 1400px; height: 100%;}
+.multi-choice-template-modal .modal-content {height: 100%;}
+.template-box img {max-width: 100%; object-fit: contain;}
+.template-item {margin: 0 0 30px;}
+.template-box {background-color: #fff; border: 1px solid #ddd; border-radius: 5px; overflow: hidden; padding: 25px; height: 100%; display: flex; flex-direction: column; position: relative;}
 .template-item.active .template-box {
     border-color: transparent;
     box-shadow: 0 0 8px 2px #27325e94;
