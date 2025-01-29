@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-4 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/36.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/36.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $accountCharge ? addCurrencyToPrice($accountCharge) : 0 }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('financial.account_charge') }}</span>
                     </div>
@@ -23,7 +23,7 @@
 
                 <div class="col-4 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/37.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/37.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ addCurrencyToPrice($readyPayout ?? 0) }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('financial.ready_to_payout') }}</span>
                     </div>
@@ -31,12 +31,11 @@
 
                 <div class="col-4 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/38.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/38.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ addCurrencyToPrice($totalIncome ?? 0) }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('financial.total_income') }}</span>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -102,8 +101,6 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="my-30">
                 {{ $payouts->appends(request()->input())->links('vendor.pagination.panel') }}
             </div>
@@ -116,7 +113,6 @@
         ])
 
     @endif
-
 
     <div id="requestPayoutModal" class="d-none">
         <h3 class="section-title after-line font-20 text-dark-blue mb-25">{{ trans('financial.payout_confirmation') }}</h3>
