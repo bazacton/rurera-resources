@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/56.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/56.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $activeQuizzes }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('quiz.active_certificates') }}</span>
                     </div>
@@ -20,7 +20,7 @@
 
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/57.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/57.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $achievementsCount }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('quiz.student_achievements') }}</span>
                     </div>
@@ -28,7 +28,7 @@
 
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mt-5 mt-lg-0">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/60.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/60.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $failedResults }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('quiz.failed_students') }}</span>
                     </div>
@@ -36,19 +36,17 @@
 
                 <div class="col-6 col-lg-3 d-flex align-items-center justify-content-center mt-5 mt-lg-0">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/hours.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/hours.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $avgGrade }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('quiz.average_grade') }}</span>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <section class="mt-25">
         <h2 class="section-title">{{ trans('quiz.filter_certificates') }}</h2>
-
         <div class="panel-section-card py-20 px-25 mt-20">
             <form action="" method="get" class="row">
                 <div class="col-12 col-lg-4">
