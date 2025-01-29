@@ -41,6 +41,56 @@ var template_layout = {
 };
 
 var alreadyInitiated = [];
+
+$(document).on('click', '.flowchart-links-layer g path', function (e) {
+    var top = 0;
+    var left = 0;
+    let bookDropzone = $(this).closest('.book-dropzone');
+    var data_id = $(this).closest('g').attr('data-element_id');
+    var this_element    = $('.levels-objects-list li[data-id="'+data_id+'"]');
+
+    if (bookDropzone.length) {
+        let dropzoneBbox = bookDropzone[0].getBoundingClientRect();
+
+        top = e.pageY - (dropzoneBbox.top + window.scrollY);
+        left = e.pageX - (dropzoneBbox.left + window.scrollX);
+
+        console.log('Mouse Click Position - Top:', top, 'Left:', left);
+    }
+
+    var unique_id = Math.floor((Math.random() * 99999) + 1);
+    var field_random_number = 'rand_' + unique_id;
+
+    var layer_html = '';
+    $el = ($('<div id="' + field_random_number + '"  style="left:'+left+'px; top:'+top+'px;" data-item_title="Spacer" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer spacer-block flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="spacer" data-trigger_class="infobox-spacer-fields" data-item_type="spacer" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="5" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="black" /></svg><div class="flowchart-operator-inputs-outputs spacer-svg-controls"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+    $el.append('<a href="javascript:;" class="remove spacer-remove"><span class="fas fa-trash"></span></a>');
+    $el.append('</div>');
+    layer_html += `<li data-id="${field_random_number}" data-field_postition="2">Spacer
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                <img src="/assets/default/svgs/dots-three.svg" alt="">
+                </button>
+            <div class="dropdown-menu">
+                <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i><i class="fa fa-copy"></i>
+            </div>
+        </div>
+        </li>`;
+    this_element.after(layer_html);
+
+    //$(".levels-objects-list").append(layer_html);
+
+    $(".book-dropzone.active").append($el);
+
+    //$('.draggable_field_' + field_random_number).click();
+    sorting_render();
+    levels_sorting_render();
+
+
+
+
+});
+
+
 $(document).on('click', '.control-tool-item', function () {
     //$(".field-options").addClass('hide');
     $('.control-tool-item').removeClass('active');
@@ -353,12 +403,13 @@ function after_add_render(field_random_number, dropZonObj){
         alreadyInitiated[operatorId] = operatorId;
         initiate = true;
     }
-    console.log('alreadyInitiated.length');
-    console.log(Object.keys(alreadyInitiated).length);
+
 
     initiate = false;
 
     if($flowchart != null && initiate == true) {
+
+        //sorting_render();
         reinitialize_items();
         /*$flowchart.flowchart('addLink', {
             fromOperator: 'operator1',

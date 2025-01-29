@@ -514,8 +514,16 @@ jQuery(function ($) {
                         ' C' + (fromX - bezierIntensity) + ',' + fromY +
                         ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
                         ' ' + bezierToX + ',' + toY);
+                    linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                        ' C' + (fromX - bezierIntensity) + ',' + fromY +
+                        ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
+                        ' ' + bezierToX + ',' + toY);
                 }else {
                     linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + fromY +
+                        ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
+                        ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
+                        ' ' + bezierToX + ',' + toY);
+                    linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + fromY +
                         ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
                         ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
                         ' ' + bezierToX + ',' + toY);
@@ -525,10 +533,7 @@ jQuery(function ($) {
                     ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
                                       ' ' + (toX - bezierIntensity) + ',' + toY + ' ' + bezierToX + ',' + toY);*/
 
-                linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + fromY +
-                    ' C' + (fromX - bezierIntensity) + ',' + fromY +
-                    ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
-                    ' ' + bezierToX + ',' + toY);
+
 
                 linkData.internal.els.rect.setAttribute("x", fromX);
                 }else{
@@ -543,14 +548,20 @@ jQuery(function ($) {
                             ' C' + (fromX - bezierIntensity) + ',' + fromY +
                             ' ' + (bezierToX - bezierIntensity) + ',' + toY +
                             ' ' + bezierToX + ',' + toY);
+                        linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                            ' C' + (fromX - bezierIntensity) + ',' + fromY +
+                            ' ' + (bezierToX - bezierIntensity) + ',' + toY +
+                            ' ' + bezierToX + ',' + toY);
                     }else {
                         linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                            ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
+                            ' ' + (toX - bezierIntensity) + ',' + toY + ' ' + bezierToX + ',' + toY);
+                        linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
                             ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
                             ' ' + (toX - bezierIntensity) + ',' + toY + ' ' + bezierToX + ',' + toY);
                     }
 
 
-                    linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) + ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY + ' ' + (toX - bezierIntensity) + ',' + toY + ' ' + bezierToX + ',' + toY);
                     linkData.internal.els.rect.setAttribute("x", fromX);
                 }
             }
