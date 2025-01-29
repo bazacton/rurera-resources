@@ -27,6 +27,7 @@ jQuery(function ($) {
             multipleLinksOnInput: false,
             linkVerticalDecal: 0,
             verticalConnection: false,
+            //verticalConnection: true,
             onOperatorSelect: function (operatorId) {
                 return true;
             },
@@ -429,6 +430,8 @@ jQuery(function ($) {
             group.appendChild(shape_path);
             linkData.internal.els.path2 = shape_path;
 
+
+
             var shape_rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
             shape_rect.setAttribute("stroke", "none");
             shape_rect.setAttribute("mask", "url(#" + maskId + ")");
@@ -455,6 +458,11 @@ jQuery(function ($) {
 
         _refreshLinkPositions: function (linkId) {
             var linkData = this.data.links[linkId];
+            var link_position = (linkData.position != undefined)? linkData.position : 'left_right';
+            var previousOpertor = linkData.fromOperator;
+            var prev_link_position = $('.levels-objects-list li[data-id="'+previousOpertor+'"]').attr('data-link_position');
+            prev_link_position = (prev_link_position == null || prev_link_position == undefined)? 'left-in' : prev_link_position
+
 
             var subConnectors = this._getSubConnectors(linkData);
             var fromSubConnector = subConnectors[0];
@@ -490,12 +498,61 @@ jQuery(function ($) {
                 linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) + ' C' + bezierFromX + ',' + (fromY + bezierIntensity) + ' ' + bezierToX + ',' + (toY - bezierIntensity) + ' ' + bezierToX + ',' + toY);
                 linkData.internal.els.rect.setAttribute("x", fromX - 1 + this.options.linkWidth / 2);
             } else {
-                bezierFromX = (fromX + offsetFromX + distanceFromArrow);
-                bezierToX = toX + 1;
+
+
+
+                if(link_position == 'right_left'){
+                // Left to Right Connection
+                bezierFromX = fromX - 1;
+                bezierToX = toX + offsetFromX + distanceFromArrow;
+
                 bezierIntensity = Math.min(100, Math.max(Math.abs(bezierFromX - bezierToX) / 2, Math.abs(fromY - toY)));
-                linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) + ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY + ' ' + (toX - bezierIntensity) + ',' + toY + ' ' + bezierToX + ',' + toY);
-                linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) + ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY + ' ' + (toX - bezierIntensity) + ',' + toY + ' ' + bezierToX + ',' + toY);
+
+                if(prev_link_position == 'right-in'){
+
+                    linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                        ' C' + (fromX - bezierIntensity) + ',' + fromY +
+                        ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
+                        ' ' + bezierToX + ',' + toY);
+                }else {
+                    linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + fromY +
+                        ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
+                        ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
+                        ' ' + bezierToX + ',' + toY);
+
+                }
+                /*linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                    ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
+                                      ' ' + (toX - bezierIntensity) + ',' + toY + ' ' + bezierToX + ',' + toY);*/
+
+                linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + fromY +
+                    ' C' + (fromX - bezierIntensity) + ',' + fromY +
+                    ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
+                    ' ' + bezierToX + ',' + toY);
+
                 linkData.internal.els.rect.setAttribute("x", fromX);
+                }else{
+                    bezierFromX = (fromX + offsetFromX + distanceFromArrow);
+                    bezierToX = toX + 1;
+                    bezierIntensity = Math.min(100, Math.max(Math.abs(bezierFromX - bezierToX) / 2, Math.abs(fromY - toY)));
+                    console.log('linkIdlinkIdlinkIdlinkId');
+                    console.log(prev_link_position);
+                    if(prev_link_position == 'right-in'){
+
+                        linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                            ' C' + (fromX - bezierIntensity) + ',' + fromY +
+                            ' ' + (bezierToX - bezierIntensity) + ',' + toY +
+                            ' ' + bezierToX + ',' + toY);
+                    }else {
+                        linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                            ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
+                            ' ' + (toX - bezierIntensity) + ',' + toY + ' ' + bezierToX + ',' + toY);
+                    }
+
+
+                    linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) + ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY + ' ' + (toX - bezierIntensity) + ',' + toY + ' ' + bezierToX + ',' + toY);
+                    linkData.internal.els.rect.setAttribute("x", fromX);
+                }
             }
 
 
@@ -614,6 +671,8 @@ jQuery(function ($) {
             for (var key_i in infos.inputs) {
                 if (infos.inputs.hasOwnProperty(key_i)) {
                     addConnector(key_i, infos.inputs[key_i], $operator_inputs, 'inputs');
+                    //addConnector($operator_inputs, infos.inputs[key_i], 'outputs', 'inputs');
+
                 }
             }
 
@@ -646,6 +705,8 @@ jQuery(function ($) {
 
             var $operator_connector_small_arrow = $('<div class="flowchart-operator-connector-small-arrow"></div>');
             $operator_connector_small_arrow.appendTo($operator_connector);
+
+
 
             fullElement.connectors[connectorKey].push($operator_connector);
             fullElement.connectorArrows[connectorKey].push($operator_connector_arrow);

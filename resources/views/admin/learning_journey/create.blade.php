@@ -883,6 +883,7 @@
 
     $(document).on('click', '.change-position', function () {
         var data_id = $(this).closest('li').attr('data-id');
+        $(".draggable_field_"+data_id).find('.flowchart-operator-inputs-outputs').toggleClass('right-in');
         var link_position = $(this).closest('li').attr('data-link_position');
         if(link_position == 'left-in'){
             link_position = 'right-in';

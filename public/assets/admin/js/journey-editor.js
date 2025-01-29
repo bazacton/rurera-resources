@@ -2,36 +2,36 @@ var stage_created = false;
 var template_layout = {
     layout1: {
         1: {
-            top: '600',
-            left: '0'
+            top: '630',
+            left: '40'
         },
         2: {
-            top: '600',
+            top: '590',
             left: '300'
         },
         3: {
-            top: '600',
+            top: '640',
             left: '600'
         },
         4: {
-            top: '400',
-            left: '0'
+            top: '430',
+            left: '610'
         },
         5: {
-            top: '400',
-            left: '300'
+            top: '460',
+            left: '330'
         },
         6: {
-            top: '400',
-            left: '600'
+            top: '470',
+            left: '60'
         },
         7: {
-            top: '200',
-            left: '0'
+            top: '270',
+            left: '140'
         },
         8: {
-            top: '200',
-            left: '300'
+            top: '340',
+            left: '330'
         },
         9: {
             top: '200',
@@ -336,17 +336,11 @@ function after_add_render(field_random_number, dropZonObj){
                 input_1: {
                     label: '',
                 },
-                output_2: {
-                    label: '',
-                }
             },
             outputs: {
                 output_1: {
                     label: '',
                 },
-                input_2: {
-                    label: '',
-                }
             }
         }
     };
@@ -425,12 +419,21 @@ function reinitialize_items(){
                 });
             }
             if(link_position == 'right-in'){
+
                 $flowchart.flowchart('addLink', {
+                    fromOperator: previousId,
+                    fromConnector: 'output_1',
+                    toOperator: field_id,
+                    toConnector: 'input_1',
+                    position: 'right_left',
+                });
+
+                /*$flowchart.flowchart('addLink', {
                     fromOperator: previousId,
                     fromConnector: 'input_2',
                     toOperator: field_id,
                     toConnector: 'output_2',
-                });
+                });*/
             }
 
 
@@ -501,17 +504,11 @@ function levels_sorting_render(){
                 input_1: {
                     label: '',
                 },
-                output_2: {
-                    label: '',
-                }
             },
             outputs: {
                 output_1: {
                     label: '',
                 },
-                input_2: {
-                    label: '',
-                }
             }
         }
     };
@@ -598,7 +595,7 @@ $(document).on('click', '.field_settings', function (e) {
     $(".field-options").html('');
     if( $(this).hasClass('path-initializer')){
         $(".editor-parent-nav #layers-tab").click();
-        $(".editor-controls li #levels_layers-tab1").click();
+        $(".editor-objects-block li #levels_layers-tab1").click();
     }else{
         $(".editor-parent-nav #stages-tab").click();
         $(".editor-controls li #objects-tab1").click();
