@@ -511,45 +511,18 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .assignments-table .card-header.bg-light {padding: 15px 10px; min-height: auto;}
 .assignments-table table.table thead tr th, 
 .assignments-table table.table tbody tr td {background-color: #fff; height: auto !important; line-height: normal; border: 0; font-size: 14px; text-align: left !important;}
-.assignments-table table.table thead tr th {
-    padding: 15px 10px 5px 10px !important;
-    font-weight: 600;
-    font-size: 12px;
-    color: #6c757d;
-}
-.assignments-table table.table tbody tr td {
-    border-bottom: 1px solid #ddd;
-    padding: 15px 10px 15px !important;
-    font-weight: bold;
-    color: #333;
-}
-.assignments-table table.table tbody tr:first-child td {
-    padding-top: 0 !important;
-}
-.assignments-table table.table tbody tr:last-child td {
-    border-bottom: 0;
-}
-.assignments-table table td a img {
-    height: 15px;
-    width: 15px;
-}
-.assignments-table table.table .circle_percent {
-    font-size: 40px;
-}
-.assignments-table table.table .circle_percent .percent_text {
-    font-size: 10px;
-}
+.assignments-table table.table thead tr th {padding: 15px 10px 5px 10px !important; font-weight: 600; font-size: 12px; color: #6c757d;}
+.assignments-table table.table tbody tr td {border-bottom: 1px solid #ddd; padding: 15px 10px 15px !important; font-weight: bold; color: #333;}
+.assignments-table table.table tbody tr:first-child td {padding-top: 0 !important;}
+.assignments-table table.table tbody tr:last-child td {border-bottom: 0;}
+.assignments-table table td a img {height: 15px; width: 15px;}
+.assignments-table table.table .circle_percent {font-size: 40px;}
+.assignments-table table.table .circle_percent .percent_text {font-size: 10px;}
 .assignments-table table.table tbody tr td:last-child,
-.assignments-table table.table thead tr th:last-child {
-    text-align: center !important;
-}
+.assignments-table table.table thead tr th:last-child {text-align: center !important;}
 .assignments-table .circle-green .round_per, 
-.assignments-table .circle-green.percent_more:after {
-    background: #47c363;
-}
-.hide-lg {
-    display: none;
-}
+.assignments-table .circle-green.percent_more:after {background: #47c363;}
+.hide-lg {display: none;}
 /* Assignments New Table Style End */
 
 @media (max-width: 575.98px) {
