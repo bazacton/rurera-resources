@@ -126,7 +126,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
                                 <img src="/assets/default/svgs/dots-three.svg" alt="">
                               </button>
                               <div class="dropdown-menu">
-                                <i class="fa fa-plus change-position"></i><i class="fa fa-plus add-spacer"></i><i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
+                                <i class="fa fa-recycle change-position"></i><i class="fa fa-plus add-spacer"></i><i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
                             </div>
                             </div>
                             </li>
