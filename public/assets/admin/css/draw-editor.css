@@ -427,3 +427,14 @@ body .editor-objects-list li {
     display: flex;
     flex-wrap: wrap;
 }
+.add-level-form {
+    margin-bottom: 0;
+}
+.add-level-form .add-level-stage-btn {
+    background-color: var(--blue);
+    border-radius: 5px;
+    color: var(--white);
+    border: 0;
+    padding: 8px 15px;
+    outline: none;
+}
