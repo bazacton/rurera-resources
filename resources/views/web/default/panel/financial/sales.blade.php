@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-6 col-md-3 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/48.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/48.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 font-weight-bold mt-5 text-dark-blue">{{ $studentCount }}</strong>
                         <span class="font-16 font-weight-500 text-gray">{{ trans('quiz.students') }}</span>
                     </div>
@@ -21,7 +21,7 @@
 
                 <div class="col-6 col-md-3 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/webinars.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/webinars.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 font-weight-bold mt-5 text-dark-blue">{{ $webinarCount }}</strong>
                         <span class="font-16 font-weight-500 text-gray">{{ trans('panel.content_sales') }}</span>
                     </div>
@@ -29,7 +29,7 @@
 
                 <div class="col-6 col-md-3 d-flex align-items-center justify-content-center mt-5 mt-md-0">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/sales.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/sales.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 font-weight-bold mt-5 text-dark-blue">{{ $meetingCount }}</strong>
                         <span class="font-16 font-weight-500 text-gray">{{ trans('panel.appointment_sales') }}</span>
                     </div>
@@ -37,19 +37,17 @@
 
                 <div class="col-6 col-md-3 d-flex align-items-center justify-content-center mt-5 mt-md-0">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/download-sales.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/download-sales.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 font-weight-bold mt-5 text-dark-blue">{{ addCurrencyToPrice($totalSales) }}</strong>
                         <span class="font-16 font-weight-500 text-gray">{{ trans('financial.total_sales') }}</span>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <section class="mt-25">
         <h2 class="section-title">{{ trans('financial.sales_report') }}</h2>
-
         <div class="panel-section-card py-20 px-25 mt-20">
             <form action="" method="get" class="row">
                 <div class="col-12 col-lg-4">
@@ -105,7 +103,6 @@
                                 <div class="col-12 col-lg-8">
                                     <div class="form-group">
                                         <label class="input-label">{{ trans('quiz.student') }}</label>
-
                                         <select name="student_id" class="form-control select2">
                                             <option value="all">{{ trans('public.all') }}</option>
 
