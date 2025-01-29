@@ -295,7 +295,7 @@
                             {{ csrf_field() }}
 
                             <div id="journey-settings-modal" class="journey-settings-modal modal fade" role="dialog" data-backdrop="static">
-                                <div class="modal-dialog">
+                                <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content journey-settings-modal-div">
                                         <div class="modal-body">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
