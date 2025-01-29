@@ -520,10 +520,12 @@ function levels_sorting_render(){
 
     // Find the link with the specified details
 
+    console.log(links);
 
     $('.levels-objects-list').find('li').each(function () {
         var field_id = $(this).attr('data-id');
         if ($flowchart.flowchart('getOperatorData', field_id)) {
+            if(links != undefined){
             Object.keys(links).forEach(function (linkId) {
                 var link = links[linkId];
                 if (
@@ -535,9 +537,11 @@ function levels_sorting_render(){
                     console.log("Deleted link with ID: " + linkId);
                 }
             });
+            }
         }
     });
     reinitialize_items();
+
 }
 
 $(document).on('click', '#stage_settings-tab1', function (e) {
