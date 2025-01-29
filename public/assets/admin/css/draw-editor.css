@@ -440,3 +440,13 @@ body .editor-objects-list li {
     border-radius: 3px;
     text-decoration: none;
 }
+
+@media (max-width: 992px) {
+    body .editor-zone:has(.editor-controls-holder) {
+        padding: 0 400px 0 369px;
+    }
+    body .editor-controls-holder {
+        min-width: 375px;
+        max-width: 375px;
+    }
+}
