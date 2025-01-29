@@ -31,6 +31,7 @@
     position: relative;
     padding-top: 5px;
     padding-bottom: 5px;
+    height: 19px;
 }
 
 .flowchart-operator-connector-label {
