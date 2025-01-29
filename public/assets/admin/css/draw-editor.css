@@ -344,3 +344,7 @@ body .editor-objects-block .nav .nav-item .nav-link {
     border-radius: 3px;
     border: 1px solid #ddd;
 }
+.editor-objects-list li .dropdown-menu.show {
+    display: flex !important
+;
+}
