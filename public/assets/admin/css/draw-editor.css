@@ -276,7 +276,7 @@ form.learning-journey-form {
     resize: both;
     overflow: hidden;
 }
-.learning_journey_sets .form-group {
+.learning_journey_sets .form-group:has(.add_learning_journey_set) {
     position: absolute;
     top: 15px;
     right: 0;
