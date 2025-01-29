@@ -7,7 +7,7 @@
 
 @section('content')
 
-<section class="">
+<section>
     <div class="activities-container mt-25 p-20 p-lg-35">
         <div class="row">
             <div class="col-4 d-flex align-items-center justify-content-center">
