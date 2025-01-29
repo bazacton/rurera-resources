@@ -373,13 +373,14 @@
                             <div class="learning_journey_sets">
 
 
-                                @php $li_content_respnose = ''; $li_content_data_response = ''; @endphp
+                                @php $li_counter = 1; $li_content_respnose = ''; $li_content_data_response = ''; @endphp
                                 @if( !empty( $LearningJourneyObj->learningJourneyLevels ))
                                     @foreach( $LearningJourneyObj->learningJourneyLevels as $itemObj)
-                                        @php $response = $thisObj->learning_journey_set_layout($request, $itemObj->id, false, true, $itemObj);
+                                        @php $response = $thisObj->learning_journey_set_layout($request, $itemObj->id, false, true, $itemObj, $li_counter);
                                         $response = json_decode($response, true);
                                         $li_content_respnose .= isset($response['li_content']) ? $response['li_content'] : '';
                                         $li_content_data_response .= isset($response['li_content_data']) ? $response['li_content_data'] : '';
+                                        $li_counter++;
                                         @endphp
                                     @endforeach
                                 @endif
@@ -682,6 +683,20 @@
                 console.log('no_path_added_1111111111111');
                 levels_sorting_render();
             }*/
+
+            var level_id = $(this).attr('data-id');
+
+            $(".accordion-row").removeClass('active');
+            $(this).closest(".accordion-row").addClass('active');
+            $(".curriculum-item-data").removeClass('active');
+            $(".curriculum-item-data").removeClass('show');
+            $(".book-dropzone").removeClass('active');
+            $(this).addClass('active');
+            $(".curriculum-item-data#collapseItems"+level_id).addClass('active');
+            //$(".curriculum-item-data#collapseItems"+level_id).addClass('show');
+            //$(".curriculum-item-data#collapseItems"+level_id).addClass('show');
+            $(".curriculum-item-data#collapseItems"+level_id).find('.book-dropzone').addClass('active');
+
             sorting_render();
             if(!$(this).hasClass('collapsed')){
                 sorting_render();
@@ -719,6 +734,8 @@
 		$("category-id-field").change();
         $('body').on('click', '.add_learning_journey_set', function (e) {
             //$(".learning_journey_sets").html('');
+            var loader_div = $('.add_learning_journey_set');
+            rurera_loader(loader_div, 'div');
             $.ajax({
                 type: "GET",
                 url: '/admin/learning_journey/learning_journey_set_layout',
@@ -728,6 +745,7 @@
                 dataType: 'json',
                 data: {},
                 success: function (response) {
+                    rurera_remove_loader(loader_div, 'button');
                     $(".jounry-stages-lis").append(response.li_content);
                     $(".tabs-data").append(response.li_content_data);
 
