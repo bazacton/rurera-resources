@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-4 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/46.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/46.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $postsCount }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('update.articles') }}</span>
                     </div>
@@ -16,7 +16,7 @@
 
                 <div class="col-4 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/47.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/47.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $commentsCount }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('panel.comments') }}</span>
                     </div>
@@ -24,7 +24,7 @@
 
                 <div class="col-4 d-flex align-items-center justify-content-center">
                     <div class="d-flex flex-column align-items-center text-center">
-                        <img src="/assets/default/img/activity/48.svg" width="64" height="64" alt="">
+                        <img src="/assets/default/img/activity/48.svg" width="64" height="64" alt="activity">
                         <strong class="font-30 text-dark-blue font-weight-bold mt-5">{{ $pendingPublishCount }}</strong>
                         <span class="font-16 text-gray font-weight-500">{{ trans('update.pending_publish') }}</span>
                     </div>
