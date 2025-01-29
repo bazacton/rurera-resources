@@ -2207,118 +2207,31 @@ Admin Questions Generator Page Style End
 *********************/
 
 /* Similarity Content Tabs style start */
-.edit-questions-tabs .lms-element-properties {
-    background-color: inherit;
-    height: auto;
-}
-.similarity-content-block .similiarity-item {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-.similarity-content-tabs .card {
-    padding: 10px 15px 0 15px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-}
-.similarity-content-tabs .card .card-header {
-    width: 100%;
-    padding: 5px 0 15px;
-    min-height: auto;
-    border: 0;
-}
-.similarity-content-tabs .card .card-header .btn-link {
-    padding: 0;
-    width: 100%;
-    position: relative;
-    color: #000;
-    font-weight: 600;
-    font-size: 15px;
-    border: 0;
-    text-decoration: none;
-    outline: none;
-    background: none;
-    cursor: pointer;
-}
-.similarity-content-tabs .card .card-header h5 {
-    width: 100%;
-}
+.edit-questions-tabs .lms-element-properties {background-color: inherit; height: auto;}
+.similarity-content-block .similiarity-item {-ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%;}
+.similarity-content-tabs .card {padding: 10px 15px 0 15px; border-radius: 5px; margin-bottom: 10px; border: 1px solid #ddd; background-color: #fff;}
+.similarity-content-tabs .card .card-header {width: 100%; padding: 5px 0 15px; min-height: auto; border: 0;}
+.similarity-content-tabs .card .card-header .btn-link {padding: 0; width: 100%; position: relative; color: #000; font-weight: 600; font-size: 15px; border: 0; text-decoration: none; outline: none; background: none; cursor: pointer;}
+.similarity-content-tabs .card .card-header h5 {width: 100%;}
 .btn-link .similarity-serial { color: #999; font-size: 14px;}
-.similarity-content-tabs .card .card-body {
-    border: 0;
-    padding: 5px 0 20px;
-    background-color: inherit;
-}
-.similarity-content-tabs .card .card-header .d-flex {
-    align-items: center;
-}
-.similarity-content-block .similarity-percentage {
-    margin-right: 10px;
-    line-height: normal;
-    border-radius: 3px;
-    padding: 4px 5px;
-    font-size: 14px;
-}
-.similarity-percentage.blue {
-    color: #fff;
-    background-color: #add4ff;
-}
-.similarity-percentage.orange {
-    color: #fff;
-    background-color: #ffd4b0;
-}
-.similarity-percentage.yellow {
-    color: #fff;
-    background-color: #ff973f;
-}
-.similarity-percentage.red {
-    color: #fff;
-    background-color: #ffacb4;
-}
-.similarity-serial {
-    display: inline-flex;
-    align-items: center;
-    text-align: left;
-    font-size: 14px;
-    letter-spacing: -0.2px;
-} 
-.similarity-serial.red span {
-    background-color: var(--red);
-}
-.similarity-content-block .card .card-body p {
-    line-height: 22px;
-}
-.similarity-content-block ul {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-.similarity-content-block .rureraform-toolbar-list {
-    gap: 8px;
-}
-.similarity-content-block-data .card .card-body ul {
-    margin-bottom: 10px;
-}
+.similarity-content-tabs .card .card-body {border: 0; padding: 5px 0 20px; background-color: inherit;}
+.similarity-content-tabs .card .card-header .d-flex {align-items: center;}
+.similarity-content-block .similarity-percentage {margin-right: 10px; line-height: normal; border-radius: 3px; padding: 4px 5px; font-size: 14px;}
+.similarity-percentage.blue {color: #fff; background-color: #add4ff;}
+.similarity-percentage.orange {color: #fff; background-color: #ffd4b0;}
+.similarity-percentage.yellow {color: #fff; background-color: #ff973f;}
+.similarity-percentage.red {color: #fff; background-color: #ffacb4;}
+.similarity-serial {display: inline-flex; align-items: center; text-align: left; font-size: 14px; letter-spacing: -0.2px;} 
+.similarity-serial.red span {background-color: var(--red);}
+.similarity-content-block .card .card-body p {line-height: 22px;}
+.similarity-content-block ul {display: flex; align-items: center; gap: 10px; flex-wrap: wrap;}
+.similarity-content-block .rureraform-toolbar-list {gap: 8px;}
+.similarity-content-block-data .card .card-body ul {margin-bottom: 10px;}
 .similarity-content-block ul:has(li .rurera-hide),
-.similarity-content-tabs:has(#prompts-tab) .nav:has(li .rurera-hide) {
-    display: none;
-}
-.similarity-content-block ul li {
-    line-height: normal;
-    color: #bbb;
-    font-weight: 600;
-}
-.similarity-content-block ul li.active-option {
-    text-decoration: underline;
-}
-.edit-questions-tabs .similarity-content-tabs .form-group {
-    padding: 0;
-    border: 0;
-    background-color: inherit;
-}
+.similarity-content-tabs:has(#prompts-tab) .nav:has(li .rurera-hide) {display: none;}
+.similarity-content-block ul li {line-height: normal; color: #bbb; font-weight: 600;}
+.similarity-content-block ul li.active-option {text-decoration: underline;}
+.edit-questions-tabs .similarity-content-tabs .form-group {padding: 0; border: 0; background-color: inherit;}
 .edit-questions-tabs .review-form {
     padding: 20px;
     border: 1px solid #ddd;
