@@ -755,20 +755,13 @@ Lms Responsive Style Start
     .heatmap-section-inner {padding: 15px;}
     .sats-listing-card table:not(thead) td {text-align: left;}
     .sats-listing-card table:not(thead) td h4 {font-size: 1rem !important; line-height: normal;}
-    .sats-listing-card table:not(thead) td h4 a {
-        display: block;
-        margin: 0 0 8px;
-    }
-    .sats-listing-card table:not(thead) td h4 br {
-        display: none;
-    }
+    .sats-listing-card table:not(thead) td h4 a {display: block; margin: 0 0 8px;}
+    .sats-listing-card table:not(thead) td h4 br {display: none;}
     .sats-listing-card table:not(thead) td img {margin: 0 10px 0 0; vertical-align: top;}
     .wizard-steps .sats-listing-card tbody tr td {display: block; padding: 20px 0 5px;}
     .wizard-steps .sats-listing-card tbody tr td:has(.mock-test-assign-btn) {padding-top: 0; padding-bottom: 20px; display: inline-block;}
     body .wizard-steps .years-group,
-    .panel-content .mock_test_fields .sats-listing-card.medium {
-        margin-bottom: 0;
-    }
+    .panel-content .mock_test_fields .sats-listing-card.medium {margin-bottom: 0;}
     .results-info {width: auto;}
     .results-revenue-card .text-box,
     .have-question-card .text-box {width: 100%; padding: 20px 0 0 0;}
@@ -780,9 +773,7 @@ Lms Responsive Style Start
     .list-group-item .switch-user-btn img {margin: 0;}
     .db-members .list-group .rurera-tables-list, 
     .db-members .list-group {background-color: inherit; border: 0;}
-    .db-members .list-group.has-listing-title {
-        padding-top: 0;
-    }
+    .db-members .list-group.has-listing-title {padding-top: 0;}
     .db-members .card .list-group-item,
     .db-members .card .list-group-item:last-child {padding: 0 15px 0; border: 0; border-bottom: 0; background-color: #fff; margin-bottom: 15px; border-radius: 10px;}
     .db-members .list-group-item .switch-user-btn,
@@ -1357,27 +1348,13 @@ Lms Responsive Style Start
     .checkbox-field.privacy-field {align-items: flex-start; margin: 0;}
     .lms-jobs-form .checkbox-field.privacy-field label {font-size: 14px;}
     .lms-jobs-form .checkbox-field.privacy-field input[type=checkbox] {margin-top: 8px;}
-    .referral-price-lists.mb-30 {
-        margin-bottom: 0 !important;
-    }
-    .referral-price-lists .row {
-        justify-content: center;
-    }
-    .referral-price-lists .row [class*="col-"] {
-        width: auto;
-        flex: auto;
-        max-width: fit-content;
-    }
+    .referral-price-lists.mb-30 {margin-bottom: 0 !important;}
+    .referral-price-lists .row {justify-content: center;}
+    .referral-price-lists .row [class*="col-"] {width: auto; flex: auto; max-width: fit-content;}
     body .emoji-icons {gap: 5px;}
-    body .emoji-icons .emoji-icon {
-        height: 20px;
-        width: 20px;
-    }
-    body .profile-inner {
-        padding: 15px;
-    }
-    
-    
+    body .emoji-icons .emoji-icon {height: 20px; width: 20px;}
+    body .profile-inner {padding: 15px;}
+
 }
 @media screen and (max-width: 575px) {
     .spell-question-area .spells-quiz-info {margin: 0 0 30px;}
