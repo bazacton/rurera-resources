@@ -2412,41 +2412,6 @@ Admin Questions Generator Page Style End
     display: none;
 }
 
-/* Learning Journey Sets Edit Page Accordions Style Start */
-.learning_journey_sets .curriculum-item-data {height: auto !important;}
-.draggable-content-lists {display: flex; align-items: center; flex-wrap: wrap;}
-.draggable-content-lists li {max-width: min-content; border: 1px solid #ddd; border-bottom: 2px solid transparent; padding: 12px 15px !important; display: inline-flex; flex-direction: column; border-radius: 0 !important; border-left: 0; margin-top: 0 !important;}
-.draggable-content-lists li.active {background-color: #f7fbfe !important; border-bottom-color: cadetblue;}
-.draggable-content-lists li:first-child {border-left: 1px solid #ddd; border-radius: 5px 0 0 0 !important;}
-.draggable-content-lists li ~ li:last-child {border-radius: 0 5px 0 0 !important;}
-.draggable-content-lists li > .d-flex {flex-wrap: wrap;}
-.learning_journey_sets .tabs-data {border: 1px solid #ddd; border-radius: 0 0 5px 5px; padding: 20px 25px 25px;}
-.stage-accordion input {width: 100%;}
-.stage-accordion .chapter-icon {border: 1px solid rgba(0, 0, 0, 0.1); background-color: inherit; min-width: 28px; width: 28px; max-width: 28px; min-height: 28px; height: 28px; max-height: 28px; margin-right: 8px !important;}
-.draggable-content-lists li.active .chapter-icon {background-color: #dce9fd; border-color: #dce9fd;}
-.stage-accordion .chapter-icon svg {height: 12px; width: 15px; color: #333;}
-.draggable-content-lists li.active .chapter-icon svg,
-.draggable-content-lists li.active .feather-chevron-up,
-.draggable-content-lists li.active .cursor-pointer {color: cadetblue; stroke: cadetblue;}
-.stage-accordion .cursor-pointer {white-space: nowrap; line-height: normal; font-size: 14px; color: #999; font-weight: 600 !important;}
-.draggable-content-lists li .btn {padding: 4px; margin: 0; background-color: rgba(0, 0, 0, 0.05); width: 20px; height: 20px;}
-.draggable-content-lists li .btn:hover {background-color: rgba(0, 0, 0, 0.05) !important;}
-.draggable-content-lists li .btn svg {color: #999; height: 12px; width: 12px; margin: 0 !important;}
-.draggable-content-lists li .feather-move,
-.accordion-row .collapse-chevron-icon.feather-chevron-up {margin-right: 0 !important; stroke: #999; background-color: rgba(0, 0, 0, 0.05); padding: 2px 4px; width: 20px; height: 20px; border-radius: 3px; cursor: pointer;}
-.draggable-content-lists li.active .btn,
-.draggable-content-lists li.active .feather-move, 
-.draggable-content-lists li.active .feather-chevron-up {background-color: #dce9fd;}
-.draggable-content-lists li > .d-flex .d-flex:has(.btn) {padding-left: 35px; padding-top: 2px; gap: 5px;}
-/* Learning Journey Sets Edit Page Accordions Style End */
-
-/* Learning Journey Model Settings Style Start */
-.update-journey-settings {background-color: var(--primary); border: 0; color: #fff; padding: 8px 25px; border-radius: 3px; outline: none;}
-.journey-settings-modal .inactivity-controls {padding: 0 15px;}
-.journey-settings-modal .modal-body {padding: 25px;}
-/* Learning Journey Model Settings Style End */
-
-
 @media (min-width: 993px) {
     .edit-questions-tabs .similarity-content-block .nav {display: none;}
     .edit-questions-tabs .similarity-content-block .tab-content {padding: 0; display: flex; align-items: flex-start; flex-wrap: wrap;}
