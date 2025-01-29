@@ -155,10 +155,6 @@ body .editor-controls-holder {
     max-width: 500px;
     height: auto;
 }
-.editor-controls .editor-objects {
-    background-color: inherit;
-    padding: 0;
-}
 body ul.editor-objects li {
     width: 23.888%;
 }
@@ -281,10 +277,15 @@ form.learning-journey-form {
     top: 15px;
     right: 0;
 }
-body ul.editor-objects.sets-selection.active {
+body ul.editor-objects.sets-selection.active,
+body .editor-controls .editor-objects {
     background-color: #f2f2f2;
     padding: 15px;
     border-radius: 5px;
+}
+ul.editor-objects.sets-selection.active h6.mt-20,
+body .editor-controls .editor-objects h6.mt-20 {
+    margin-top: 0 !important;
 }
 .learning_journey_sets {
     position: relative;
