@@ -390,7 +390,7 @@
                                         {!! $li_content_respnose !!}
                                     </ul>
                                     <div class="learning-stage-btn form-group">
-                                        <button class="add_learning_journey_set" type="button">Add Stage</button>
+                                        <button class="add_learning_journey_set" type="button"><i class="fas fa-plus"></i> Add Stage</button>
                                     </div>
                                 </div>
                                 <div class="tabs-data">
