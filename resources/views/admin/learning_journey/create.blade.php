@@ -362,9 +362,9 @@
                             </div>
 
 							<input type="hidden" name="posted_data" class="posted-data">
-                            
+
                             <div class="learning_journey_sets">
-                                <div class="form-group">
+                                <div class="form-group mb-0">
                                     <button class="btn btn-primary add_learning_journey_set" type="button">Add Stage</button>
                                 </div>
 
