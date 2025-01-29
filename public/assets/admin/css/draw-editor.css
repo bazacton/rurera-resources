@@ -448,8 +448,8 @@ body .editor-objects-list li {
 }
 .editor-controls-holder .path-tool-item,
 .editor-controls-holder .layout-template-item {
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: #fafafa;
+    border: 1px solid #ccc;
     padding: 5px 15px;
     display: inline-block;
     line-height: normal;
