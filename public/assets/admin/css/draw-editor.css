@@ -396,3 +396,23 @@ body .editor-objects-list li {
     padding: 8px 10px;
     margin-bottom: 10px;
 }
+.learning-stage-btn {
+    display: inline-flex;
+    margin-bottom: 0;
+}
+.learning-stage-btn button {
+    height: 100%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-left: 0;
+    border-left: 0;
+    border-radius: 0 5px 0 0;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 600;
+    outline: none;
+}
+.learning-jounrey-tabs {
+    display: flex;
+    flex-wrap: wrap;
+}
