@@ -77,39 +77,16 @@ Lms Responsive Style Start
     .job-singup-sub-header h1 {font-size: 3rem !important;}
     .job-singup-sub-header h2 {font-size: 1.5rem !important;}
     .navbar1 {padding-left: 0; padding-right: 0;}
-    .products-top-header .banner-holder {
-        right: 0;
-    }
-    .panel-content .education-icon-box li:nth-child(4) {
-        left: 75px;
-        top: 6px;
-    }
+    .products-top-header .banner-holder {right: 0;}
+    .panel-content .education-icon-box li:nth-child(4) {left: 75px; top: 6px;}
     .panel-content .education-icon-box li figure,
     .panel-content .education-icon-box li:nth-child(1) figure,
-    .panel-content .education-icon-box li:nth-child(5) figure {
-        width: 40px;
-        height: 40px;
-    }
-    .panel-content .education-icon-box li:nth-child(5) {
-        left: 36px;
-        top: 27px;
-    }
-    .panel-content .education-icon-box li:nth-child(6) {
-        left: 38px;
-        top: -17px;
-    }
-    .panel-content .education-icon-box li:nth-child(3) {
-        left: -5px;
-        top: 40px;
-    }
-    .panel-content .education-icon-box li:nth-child(2) {
-        left: 0;
-        top: 0;
-    }
-    .panel-content .education-icon-box li:nth-child(1) {
-        left: -38px;
-        top: 15px;
-    }
+    .panel-content .education-icon-box li:nth-child(5) figure {width: 40px; height: 40px;}
+    .panel-content .education-icon-box li:nth-child(5) {left: 36px; top: 27px;}
+    .panel-content .education-icon-box li:nth-child(6) {left: 38px; top: -17px;}
+    .panel-content .education-icon-box li:nth-child(3) {left: -5px; top: 40px;}
+    .panel-content .education-icon-box li:nth-child(2) {left: 0; top: 0;}
+    .panel-content .education-icon-box li:nth-child(1) {left: -38px; top: 15px;}
 }
 @media screen and (min-width: 992px) and (max-width: 1300px) {
     .stats-list ul li {border-left: 0;width: 100%;padding: 0 0 15px;margin: 0 0 15px;text-align: left;border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
@@ -117,9 +94,7 @@ Lms Responsive Style Start
     .school-zone-students [class*="col-"] {flex: 0 0 50%;max-width: 50%;}
     .quiz-topbar [class*="col-"] {width: 100%; flex: 0 0 100%;max-width: 100%;}
     .quiz-topbar .close-btn-holder {position: absolute;top: -44px;right: 15px;}
-    .navbar1 .nav-item .nav-link, .navbar1 li .nav-link {
-        padding: 10px 15px;
-    }
+    .navbar1 .nav-item .nav-link, .navbar1 li .nav-link {padding: 10px 15px;}
 }
 @media (min-width:991px) {
     .top-navbar .top-contact-box {border-bottom: 0 !important;}
