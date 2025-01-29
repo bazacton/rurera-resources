@@ -215,6 +215,7 @@ body .editor-controls-holder .editor-objects-block .nav,
 }
 .editor-objects-block .tab-pane {
     padding-bottom: 15px;
+    margin-top: 10px !important;
 }
 body .editor-objects-block .nav .nav-item .nav-link {
     padding: 5px 15px;
