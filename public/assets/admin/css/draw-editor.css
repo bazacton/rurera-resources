@@ -449,4 +449,7 @@ body .editor-objects-list li {
         min-width: 375px;
         max-width: 375px;
     }
+    body .editor-zone:has(.field-options) {
+        padding-left: 0;
+    }
 }
