@@ -2687,68 +2687,25 @@ Admin Questions Generator Page Style End
     .custom-switches-stacked,
     .note-toolbar.card-header {display: none !important;}
     .lms-quiz-create .col-7,
-    .lms-quiz-create .col-5 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .title-search-field {
-        flex-wrap: wrap;
-        align-items: flex-start !important;
-        justify-content: flex-start !important;
-    }
-    .title-search-field select {
-        width: 100% !important;
-    }
-    .title-search-field h1 {
-        font-size: 24px;
-    }
-    .edit-questions-difficulty-tabs .admin-rurera-tabs {
-        margin-bottom: 0;
-    }
-    .edit-questions-tabs {
-        margin-top: 20px;
-    }
-    body .rureraform-builder {
-        padding: 10px !important;
-    }
-    .similarity-content-tabs .card .card-header {
-        padding: 5px 0 15px !important;
-    }
-    .title-search-field label {
-        display: none;
-    }
-    .title-search-field .form-group {
-        margin-top: 10px;
-        width: 100%;
-    }
+    .lms-quiz-create .col-5 {flex: 0 0 100%; max-width: 100%;}
+    .title-search-field {flex-wrap: wrap; align-items: flex-start !important; justify-content: flex-start !important;}
+    .title-search-field select {width: 100% !important;}
+    .title-search-field h1 {font-size: 24px;}
+    .edit-questions-difficulty-tabs .admin-rurera-tabs {margin-bottom: 0;}
+    .edit-questions-tabs {margin-top: 20px;}
+    body .rureraform-builder {padding: 10px !important;}
+    .similarity-content-tabs .card .card-header {padding: 5px 0 15px !important;}
+    .title-search-field label {display: none;}
+    .title-search-field .form-group {margin-top: 10px; width: 100%;}
     .admin-rurera-tabs .nav-link, 
-    .admin-rurera-tabs.nav-pills .nav-link {
-        margin-bottom: 0;
-        padding-bottom: 8px;
-    }
-    .edit-questions-tabs .tab-content {
-        padding-top: 15px;
-    }
-    body .lms-element-properties {
-        height: auto;
-    }
-    .rureraform-form-editor .form-box .form-field {
-        width: 100%;
-    }
-    body .activity-status {
-        display: block;
-        margin: 6px 0;
-    }
-    .similarity-content-block .tab-content:has(.rureraform-admin-popup.active) > .tab-pane.question-details-tab-data > .col-12 {
-        display: none;
-    }
-    .assignments-table .card {
-        box-shadow: none;
-        border: 0;
-    }
-    .assignments-table .card .card-body {
-        padding: 0 !important;
-    }
+    .admin-rurera-tabs.nav-pills .nav-link {margin-bottom: 0; padding-bottom: 8px;}
+    .edit-questions-tabs .tab-content {padding-top: 15px;}
+    body .lms-element-properties {height: auto;}
+    .rureraform-form-editor .form-box .form-field {width: 100%;}
+    body .activity-status {display: block; margin: 6px 0;}
+    .similarity-content-block .tab-content:has(.rureraform-admin-popup.active) > .tab-pane.question-details-tab-data > .col-12 {display: none;}
+    .assignments-table .card {box-shadow: none; border: 0;}
+    .assignments-table .card .card-body {padding: 0 !important;}
 }
 @media screen and (max-width: 767px) {
     .progress-wrapper .progress-holder {display: none;}
