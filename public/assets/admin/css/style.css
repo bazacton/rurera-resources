@@ -1800,9 +1800,6 @@ body:has(.multi-choice-template-modal.show) .modal {overflow-x: hidden; overflow
 /*****************************************
 Admin Questions Generator Page Style Start
 *********************/
-.rurera-hide{
-    display:none;
-}
 .quiz-data-slide {
     display: none;
 }
