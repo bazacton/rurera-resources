@@ -987,6 +987,18 @@
     var $flowchart = null;
     $(document).ready(function() {
 
+
+        $(document).on('keyup change keydown click', 'input[name="stage_name"]', function (e) {
+            var current_value = $(this).val();
+            console.log(current_value);
+
+            var level_id    = $(this).closest('.li-content-data').attr('data-level_id');
+            console.log(level_id);
+            $('li.accordion-row[data-id="'+level_id+'"]').find('.journey-title-'+level_id).html(current_value);
+
+        });
+
+
         $(".conditional-field").change();
         $(".sets-selection.active").click();
 
