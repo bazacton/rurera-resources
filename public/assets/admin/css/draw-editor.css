@@ -435,6 +435,6 @@ body .editor-objects-list li {
     border-radius: 3px;
     color: var(--white);
     border: 0;
-    padding: 8px 25px;
+    padding: 8px 20px;
     outline: none;
 }
