@@ -412,7 +412,8 @@ body .editor-objects-list li {
     border: 1px solid #ddd;
     background-color: #fff;
     margin-left: 0;
-    border-radius: 0 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 0;
     font-size: 14px;
     color: var(--blue);
     font-weight: 600;
