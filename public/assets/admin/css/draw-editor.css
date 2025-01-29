@@ -256,7 +256,10 @@ body .editor-objects-block .nav .nav-item .nav-link {
     height:30px;
     width:140px;
 }
-
+.card .card-body:has(.learning-journey-form), .card:has(.learning-journey-form) {
+    box-shadow: none;
+    padding: 0;
+}
 .book-dropzone .resizeable{
     resize: both;
     overflow: hidden;
