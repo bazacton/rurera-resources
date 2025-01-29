@@ -273,11 +273,11 @@ form.learning-journey-form {
     resize: both;
     overflow: hidden;
 }
-.editor-controls .editor-objects {
+.editor-controls-holder .editor-objects {
     background-color: inherit;
     padding: 0;
 }
-body .editor-controls .editor-objects.sets-selection {
+body .editor-controls-holder .editor-objects.sets-selection {
     background-color: inherit;
     border: 1px solid transparent;
     padding: 0;
@@ -289,7 +289,7 @@ body ul.editor-objects.sets-selection.active {
     background-color: #f3f9ff;
     padding: 15px;
 }
-body .editor-controls .editor-objects h6.mt-20 {
+body .editor-controls-holder .editor-objects h6.mt-20 {
     margin-top: 0 !important;
 }
 body ul.editor-objects.sets-selection li {
