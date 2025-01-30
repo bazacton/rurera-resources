@@ -15,7 +15,7 @@
 .open-controls-btn {position: absolute; right: 4px; top: -32px; height: 25px; width: 25px; background-color: #ccc; border-radius: 100%;}
 /* Learning Journey Sets Edit Page Accordions Style Start */
 .learning_journey_sets .curriculum-item-data {height: auto !important;}
-.draggable-content-lists {display: flex; align-items: center; flex-wrap: wrap;}
+.draggable-content-lists {display: flex; align-items: center; flex-wrap: wrap; padding-left: 1px;}
 .draggable-content-lists li {
     max-width: min-content;
     border: 1px solid #ddd;
