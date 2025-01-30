@@ -2201,7 +2201,7 @@ Admin Questions Generator Page Style End
 .similarity-serial.red span {background-color: var(--red);}
 .similarity-content-block .card .card-body p {line-height: 22px;}
 .similarity-content-block ul {display: flex; align-items: center; gap: 10px; flex-wrap: wrap;}
-.similarity-content-block .rureraform-toolbar-list {gap: 8px;}
+.similarity-content-block .rureraform-toolbar-list {gap: 5px;}
 .similarity-content-block-data .card .card-body ul {margin-bottom: 10px;}
 .similarity-content-block ul:has(li .rurera-hide),
 .similarity-content-tabs:has(#prompts-tab) .nav:has(li .rurera-hide) {display: none;}
