@@ -2219,37 +2219,10 @@ Admin Questions Generator Page Style End
 .similarity-content-block .similarity-content-tabs .lms-card-body {padding: 0; background-color: inherit;}
 .similarity-content-block .lms-dashboard-card .lms-card-timeline {border-left: 0; margin-left: 0; overflow: hidden;}
 .similarity-tab-data .lms-dashboard-card .lms-card-body {background-color: inherit; padding: 0;}
-.similarity-content-block .lms-dashboard-card .lms-card-list.active .lms-card-icons {
-    -webkit-animation: none;
-    animation: none;
-    position: relative;
-    left: 0;
-    top: 0;
-    overflow: visible;
-    border: 1px solid #8af68a;
-    border-radius: 5px;
-    height: 40px;
-    width: 40px;
-    align-items: center;
-    justify-content: center;
-    padding: 0 5px;
-}
-.similarity-content-block .lms-dashboard-card .lms-card-icons img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-}
-.similarity-content-block .lms-dashboard-card .lms-card-info {
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.similarity-content-block .lms-dashboard-card .lms-card-info h5 {
-    font-weight: bold;
-    width: 100%;
-    color: #000;
-    margin-bottom: 5px;
-}
+.similarity-content-block .lms-dashboard-card .lms-card-list.active .lms-card-icons {-webkit-animation: none; animation: none; position: relative; left: 0; top: 0; overflow: visible; border: 1px solid #8af68a; border-radius: 5px; height: 40px; width: 40px; align-items: center; justify-content: center; padding: 0 5px;}
+.similarity-content-block .lms-dashboard-card .lms-card-icons img {width: 30px; height: 30px; object-fit: contain;}
+.similarity-content-block .lms-dashboard-card .lms-card-info {align-items: center; flex-wrap: wrap; width: 100%;}
+.similarity-content-block .lms-dashboard-card .lms-card-info h5 {font-weight: bold; width: 100%; color: #000; margin-bottom: 5px;}
 .similarity-content-block .lms-dashboard-card .lms-card-info p {
     padding-top: 5px;
     font-weight: 500;
