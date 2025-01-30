@@ -191,7 +191,7 @@ $(function () {
         var body = $("body"),
             w = $(window);
 
-        if (w.outerWidth() <= 1024) {
+        if (w.outerWidth() <= 1200) {
             body.removeClass('search-show search-gone');
             if (body.hasClass('sidebar-gone')) {
                 body.removeClass('sidebar-gone');
