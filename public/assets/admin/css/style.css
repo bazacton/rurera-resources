@@ -1693,66 +1693,20 @@ output {font-weight: bold; color: #333;}
 /* Questions Defined Searches style end */
 
 /* Topic-parts-data style Start */
-.topic-parts-data .card {
-    padding: 10px;
-}
-.topic-parts-data .card .card-header {
-    padding: 0;
-}
-.topic-parts-data .card .card-header .btn {
-    padding: 0;
-}
-.topic-parts-data .card table {
-    margin: 0;
-    width: 100%;
-    border: 0;
-}
-.topic-parts-data .form-group {
-    margin: 0;
-}
-.topic-parts-data table {
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
-}
-.topic-parts-data table thead {
-    border: 2px dotted #ddd;
-    border-bottom: 0;
-}
-.topic-parts-data .card .card-body {
-    padding-left: 0;
-    padding-right: 0;
-}
-.topic-parts-data table tr td .topic-part-title {
-    color: var(--blue);
-    position: relative;
-    display: block;
-    padding-left: 15px;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-}
-.topic-parts-data table tr td .topic-part-title i {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-.topic-parts-data table tr td:has(.topic-part-title) {
-    min-width: 300px;
-}
-.topic_parts.accordion-parent td:has(.topic-part-title) {
-    padding-left: 30px !important;
-}
-.topic_sub_parts td:has(.topic-part-title) {
-    padding-left: 45px !important;
-}
-.topic-parts-data table tr td {
-    border: 2px dotted #ddd;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    height: auto !important;
-    color: #999;
-}
+.topic-parts-data .card {padding: 10px;}
+.topic-parts-data .card .card-header {padding: 0;}
+.topic-parts-data .card .card-header .btn {padding: 0;}
+.topic-parts-data .card table {margin: 0; width: 100%; border: 0;}
+.topic-parts-data .form-group {margin: 0;}
+.topic-parts-data table {border-radius: 5px 5px 0 0; overflow: hidden;}
+.topic-parts-data table thead {border: 2px dotted #ddd; border-bottom: 0;}
+.topic-parts-data .card .card-body {padding-left: 0; padding-right: 0;}
+.topic-parts-data table tr td .topic-part-title {color: var(--blue); position: relative; display: block; padding-left: 15px; font-size: 14px; font-weight: 600; cursor: pointer;}
+.topic-parts-data table tr td .topic-part-title i {position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+.topic-parts-data table tr td:has(.topic-part-title) {min-width: 300px;}
+.topic_parts.accordion-parent td:has(.topic-part-title) {padding-left: 30px !important;}
+.topic_sub_parts td:has(.topic-part-title) {padding-left: 45px !important;}
+.topic-parts-data table tr td {border: 2px dotted #ddd; padding-top: 10px !important; padding-bottom: 10px !important; height: auto !important; color: #999;}
 .topic-parts-data table tr td:has(.btn-sm) {
     min-width: 115px;
     padding-left: 10px !important;
