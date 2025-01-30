@@ -30,7 +30,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
 	<div class="editor-controls tab-pane fade active show" id="stages{{$data_id}}" role="tabpanel" aria-labelledby="profile-tab">
 		<ul class="nav nav-pills" id="myTab3" role="tablist">
 			<li class="nav-item">
-				<a class="nav-link" id="objects-tab{{$data_id}}" data-toggle="tab" href="#objects{{$data_id}}" role="tab" aria-controls="objects{{$data_id}}" aria-selected="true">Objects</a>
+				<a class="nav-link active" id="objects-tab{{$data_id}}" data-toggle="tab" href="#objects{{$data_id}}" role="tab" aria-controls="objects{{$data_id}}" aria-selected="true">Objects</a>
 			</li>
 		</ul>
 
@@ -208,8 +208,8 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
             <label>Stage Name</label>
             <div class="input-group">
                 <input type="text" name="stage_name" class="form-control trigger_field"
-                       value="" data-field_id="stage_name" data-field_name="stage_name"
-                       data-field_type="data" data-id="">
+                       value="{{isset($itemObj->level_title)? $itemObj->level_title : ''}}" data-field_id="stage_name" data-field_name="stage_name"
+                       data-field_type="page_style" data-id="">
             </div>
         </div>
         <div class="option-field-item">
@@ -260,7 +260,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
                 <label class="custom-switch-description mb-0 cursor-pointer" for="rtlSwitch">Enable Graph</label>
             </label>
         </div>
-        <input type="text" name="stage_set" class="form-control trigger_field"
+        <input type="text" name="stage_set" class="hide form-control trigger_field"
                value="{{$stage_set}}" data-field_id="stage_set" data-field_name="stage_set"
                data-field_type="page_set" data-id="">
 
@@ -272,13 +272,13 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
             <div class="input-group">
                 <input type="number" name="passing_scores" class="form-control trigger_field"
                        value="90" data-field_id="passing_scores" data-field_name="passing_scores" min="50" max="100"
-                       data-field_type="page_data" data-id="">
+                       data-field_type="page_style" data-id="">
             </div>
         </div>
 
         <div class="option-field-item mt-20 mb-20">
             <label class="custom-switch pl-0">
-                <input type="hidden" name="shuffle_questions" class="trigger_field" value="0" data-field_id="shuffle_questions" data-field_name="shuffle_questions" data-field_type="page_data" data-id="">
+                <input type="hidden" name="shuffle_questions" class="trigger_field" value="0" data-field_id="shuffle_questions" data-field_name="shuffle_questions" data-field_type="page_style" data-id="">
                 <input type="checkbox" name="shuffle_questions_radio" id="shuffle_questions" value="1" class="custom-switch-input">
                 <span class="custom-switch-indicator"></span>
                 <label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_questions">Shuffle Questions</label>
