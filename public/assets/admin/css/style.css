@@ -67,39 +67,22 @@ a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fas,
 a:not(.btn-social-icon):not(.btn-social):not(.page-link) .far,
 a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fal,
 a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {margin-left: 4px;}
-
 .bg-primary {background-color: var(--primary) !important;}
-
 .bg-secondary {background-color: #cdd3d8 !important;}
-
 .bg-success {background-color: #47c363 !important;}
-
 .bg-info {background-color: #3abaf4 !important;}
-
 .bg-warning {background-color: #ffa426 !important;}
-
 .bg-danger {background-color: #fc544b !important;}
-
 .bg-light {background-color: #e3eaef !important;}
-
 .bg-dark {background-color: #191d21 !important;}
-
 .text-primary, .text-primary-all *, .text-primary-all *:before, .text-primary-all *:after {color: var(--primary) !important;}
-
 .text-secondary, .text-secondary-all *, .text-secondary-all *:before, .text-secondary-all *:after {color: #cdd3d8 !important;}
-
 .text-success, .text-success-all *, .text-success-all *:before, .text-success-all *:after {color: #47c363 !important;}
-
 .text-info, .text-info-all *, .text-info-all *:before, .text-info-all *:after {color: #3abaf4 !important;}
-
 .text-warning, .text-warning-all *, .text-warning-all *:before, .text-warning-all *:after {color: #ffa426 !important;}
-
 .text-danger, .text-danger-all *, .text-danger-all *:before, .text-danger-all *:after {color: #fc544b !important;}
-
 .text-light, .text-light-all *, .text-light-all *:before, .text-light-all *:after {color: #e3eaef !important;}
-
 .text-white, .text-white-all *, .text-white-all *:before, .text-white-all *:after {color: #ffffff !important;}
-
 .text-dark, .text-dark-all *, .text-dark-all *:before, .text-dark-all *:after {color: #191d21 !important;}
 
 .font-weight-normal {font-weight: 500 !important;}
@@ -125,18 +108,13 @@ p, ul:not(.list-unstyled), ol {line-height: 28px;}
 .custom-file-label,
 .form-group .select2-container--default .select2-selection--single {background-color: #fdfdff; border-color: #e4e6fc;}
 #question_properties textarea {border-color: #e4e6fc; resize: none; border-radius: 5px;}
-
 .form-control:focus,
 .input-group-text:focus,
 .custom-select:focus,
 .custom-file-label:focus {background-color: #fefeff; border-color: #95a0f4;}
-
 .custom-control {line-height: 1.6rem;}
-
 .bootstrap-tagsinput {display: block !important;}
-
 .bootstrap-tagsinput input {width: 100% !important; max-width: 100% !important;}
-
 .custom-file,
 .custom-file-label,
 .custom-select,
