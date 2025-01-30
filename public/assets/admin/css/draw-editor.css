@@ -28,6 +28,15 @@
     flex-direction: column;
     border-radius: 0 !important;
     margin: 0 0 -1px -1px !important;
+    position: relative;
+}
+.draggable-content-lists li:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: cadetblue;
 }
 .draggable-content-lists li.active {background-color: #f7fbfe !important; border-bottom-color: cadetblue;}
 .draggable-content-lists li:first-child {border-left: 1px solid #ddd; border-radius: 5px 0 0 0 !important;}
