@@ -8,49 +8,11 @@
 .drag-controls svg {width: 20px; height: 20px; margin: 0 auto 5px; display: block;}
 .drag-controls li a:hover, .drag-controls li a.active {background-color: #4d9eb3; color: #fff;}
 .drag-controls li a:hover svg g, .drag-controls li a.active svg g {fill: #fff;}
-.drag-controls .sub-dropdown {
-    position: absolute;
-    right: 50%;
-    top: 0;
-    background-color: #fff;
-    width: 90px;
-    height: calc(100% + 2px);
-    border-radius: 8px 0 0 8px / 50px 0 0 50px;
-    margin: -1px 0 0 -28px;
-    border: 1px solid #ccc;
-    text-align: center;
-    padding: 20px 0;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    z-index: -1;
-}
-.controls-dropdown > li:hover .sub-dropdown {
-    right: 100%;
-    width: 90px;
-    opacity: 1;
-    visibility: visible;
-    z-index: 0;
-}
-.drag-controls li .sub-dropdown a {
-    display: inline-block;
-    padding: 8px 4px;
-}
-.drag-controls li .sub-dropdown a svg {
-    margin: 0;
-}
-.open-controls-btn {
-    position: absolute;
-    right: 4px;
-    top: -32px;
-    height: 25px;
-    width: 25px;
-    background-color: #ccc;
-    border-radius: 100%;
-}
+.drag-controls .sub-dropdown {position: absolute; right: 50%; top: 0; background-color: #fff; width: 90px; height: calc(100% + 2px); border-radius: 8px 0 0 8px / 50px 0 0 50px; margin: -1px 0 0 -28px; border: 1px solid #ccc; text-align: center; padding: 20px 0; opacity: 0; visibility: hidden; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; z-index: -1;}
+.controls-dropdown > li:hover .sub-dropdown {right: 100%; width: 90px; opacity: 1; visibility: visible; z-index: 0;}
+.drag-controls li .sub-dropdown a {display: inline-block; padding: 8px 4px;}
+.drag-controls li .sub-dropdown a svg {margin: 0;}
+.open-controls-btn {position: absolute; right: 4px; top: -32px; height: 25px; width: 25px; background-color: #ccc; border-radius: 100%;}
 /* Learning Journey Sets Edit Page Accordions Style Start */
 .learning_journey_sets .curriculum-item-data {height: auto !important;}
 .draggable-content-lists {display: flex; align-items: center; flex-wrap: wrap;}
