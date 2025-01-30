@@ -1407,7 +1407,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 /*Range Slider Style End*/
 
 /*Responsive Style Start*/
-@media screen and (min-width: 1024px) and (max-width: 1800px) {
+@media screen and (min-width: 1024px) and (max-width: 1850px) {
     .main-sidebar ~ .main-content {margin: 0; max-width: 100%; padding-left: 280px;}
 }
 @media(max-width:1024px) {
