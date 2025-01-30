@@ -170,13 +170,19 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
             <h6 class="mt-20">Path Setting</h6>
             <ul>
                 <li>
-                    <a href="javascript:;" title="Path 1" class="path-tool-item item_path1" data-target_class="default-path">
+                    <a href="javascript:;" title="Path 1" class="active path-tool-item item_path1" data-target_class="roadmap-default">
                         Path 1
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:;" title="Path 2" class="path-tool-item item_path2" data-target_class="roadmap">
+                    <a href="javascript:;" title="Path 2" class="path-tool-item item_path2" data-target_class="roadmap-road">
                         Path 2
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:;" title="Path 3" class="path-tool-item item_path3" data-target_class="roadmap-steps">
+                        Path 3
                     </a>
                 </li>
             </ul>

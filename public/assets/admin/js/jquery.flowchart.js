@@ -378,7 +378,9 @@ jQuery(function ($) {
             linkData.internal.els.fromSmallConnector = fromSmallConnector;
             linkData.internal.els.toSmallConnector = toSmallConnector;
 
+            var target_class = $(".path-tool-item.active").attr('data-target_class');
             var overallGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+            overallGroup.setAttribute("class", target_class);
             this.objs.layers.links[0].appendChild(overallGroup);
             linkData.internal.els.overallGroup = overallGroup;
 
@@ -417,7 +419,7 @@ jQuery(function ($) {
             var shape_path2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
             shape_path2.setAttribute("stroke-width", this.options.linkWidth.toString());
             shape_path2.setAttribute("fill", "none");
-            shape_path2.setAttribute("class", "roadmap-road");
+            shape_path2.setAttribute("class", "roadmap-path roadmap-road roadmap-default");
             group.appendChild(shape_path2);
             linkData.internal.els.path = shape_path2;
 
@@ -426,9 +428,23 @@ jQuery(function ($) {
             shape_path.setAttribute("fill", "none");
             shape_path.setAttribute("stroke", "#FFFFFF");
             shape_path.setAttribute("stroke-dasharray", "10,10");
-            shape_path.setAttribute("class", "roadmap-path");
+            shape_path.setAttribute("class", "roadmap-path roadmap-road");
             group.appendChild(shape_path);
             linkData.internal.els.path2 = shape_path;
+
+            var shape_path3 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            shape_path3.setAttribute("stroke-width", 25); // Example: thicker stroke
+            shape_path3.setAttribute("stroke-linecap", "round"); // Example: thicker stroke
+            shape_path3.setAttribute("fill", "none");
+            shape_path3.setAttribute("stroke", "brown"); // Example: different color (Tomato)
+            shape_path3.setAttribute("stroke-dasharray", "4,40,30,40"); // Example: different dash pattern
+            shape_path3.setAttribute("class", "roadmap-path roadmap-steps"); // New class for differentiation
+
+            // Append shape_path3 to the group
+            group.appendChild(shape_path3);
+
+            // Link to the internal elements object if needed
+            linkData.internal.els.path3 = shape_path3;
 
 
 
@@ -496,10 +512,9 @@ jQuery(function ($) {
                 bezierIntensity = Math.min(100, Math.max(Math.abs(bezierFromX - bezierToX) / 2, Math.abs(fromY - toY)));
                 linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) + ' C' + bezierFromX + ',' + (fromY + bezierIntensity) + ' ' + bezierToX + ',' + (toY - bezierIntensity) + ' ' + bezierToX + ',' + toY);
                 linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) + ' C' + bezierFromX + ',' + (fromY + bezierIntensity) + ' ' + bezierToX + ',' + (toY - bezierIntensity) + ' ' + bezierToX + ',' + toY);
+                linkData.internal.els.path3.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) + ' C' + bezierFromX + ',' + (fromY + bezierIntensity) + ' ' + bezierToX + ',' + (toY - bezierIntensity) + ' ' + bezierToX + ',' + toY);
                 linkData.internal.els.rect.setAttribute("x", fromX - 1 + this.options.linkWidth / 2);
             } else {
-
-
 
                 if(link_position == 'right_left'){
                 // Left to Right Connection
@@ -518,12 +533,20 @@ jQuery(function ($) {
                         ' C' + (fromX - bezierIntensity) + ',' + fromY +
                         ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
                         ' ' + bezierToX + ',' + toY);
+                    linkData.internal.els.path3.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                        ' C' + (fromX - bezierIntensity) + ',' + fromY +
+                        ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
+                        ' ' + bezierToX + ',' + toY);
                 }else {
                     linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + fromY +
                         ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
                         ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
                         ' ' + bezierToX + ',' + toY);
                     linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + fromY +
+                        ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
+                        ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
+                        ' ' + bezierToX + ',' + toY);
+                    linkData.internal.els.path3.setAttribute("d", 'M' + bezierFromX + ',' + fromY +
                         ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
                         ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
                         ' ' + bezierToX + ',' + toY);
@@ -552,11 +575,18 @@ jQuery(function ($) {
                             ' C' + (fromX - bezierIntensity) + ',' + fromY +
                             ' ' + (bezierToX - bezierIntensity) + ',' + toY +
                             ' ' + bezierToX + ',' + toY);
+                        linkData.internal.els.path3.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                            ' C' + (fromX - bezierIntensity) + ',' + fromY +
+                            ' ' + (bezierToX - bezierIntensity) + ',' + toY +
+                            ' ' + bezierToX + ',' + toY);
                     }else {
                         linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
                             ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
                             ' ' + (toX - bezierIntensity) + ',' + toY + ' ' + bezierToX + ',' + toY);
                         linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                            ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
+                            ' ' + (toX - bezierIntensity) + ',' + toY + ' ' + bezierToX + ',' + toY);
+                        linkData.internal.els.path3.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
                             ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
                             ' ' + (toX - bezierIntensity) + ',' + toY + ' ' + bezierToX + ',' + toY);
                     }

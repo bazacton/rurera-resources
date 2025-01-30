@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
 
 <style type="text/css">
+    .flowchart-temporary-link-layer{display:none !important;}
     .field-options {
         display: none !important;
     }
@@ -32,17 +33,16 @@
          position: absolute;
          top: 2;
      }
-    .roadmap .roadmap-road {
+    .roadmap-road .roadmap-default {
         stroke: #000000;
         stroke-width:15px;
     }
-    .roadmap-path {
-        display: none;
+    .roadmap-default .roadmap-default, .roadmap-road .roadmap-road, .roadmap-steps .roadmap-steps{
+        display:block;
     }
-    .roadmap .roadmap-path {
-        display: block;
+    .roadmap-path{
+        display:none;
     }
-
 
     .spacer-block{width:0px !important;}
     .spacer-block svg {
@@ -116,8 +116,8 @@
             cursor: pointer;
         }
         .ui-rotatable-handle::before {
-            content: '\f2ea'; /* Font Awesome rotate icon */
-            font-family: 'Font Awesome 5 Free';
+            content: '\f111'; /* Font Awesome rotate icon */
+            font-family: 'Font Awesome 6 Free';
             font-weight: 900;
             color: white;
             font-size: 12px;
@@ -663,6 +663,7 @@
 		//$('.saved-item-class').click();
 
 
+        levels_sorting_render();
         $(".jounry-stages-lis").sortable();
 
 		$(".editor-objects-list").sortable({
@@ -898,9 +899,19 @@
         $(".book-dropzone.active").append($el);
         $(".level_add_modal").modal('hide');
 
-        setTimeout(function() {
-            levels_sorting_render();
-        }, 2000); // 2000 milliseconds = 2 seconds
+        $(".editor-objects-list").sortable({
+            update: function(event, ui) {
+                sorting_render(); // Call your function here
+            }
+        });
+
+        $('.draggable_field_' + field_random_number)
+            .draggable({
+                preventCollision: true,
+                containment: $('.book-dropzone.active')
+            })
+            .off('wheel');
+        levels_sorting_render();
     });
 
 
@@ -971,9 +982,7 @@
             .rotatable({angle: rotate_value})
             .off('wheel'); // Unbinds all wheel events from this element
 
-        setTimeout(function() {
-            levels_sorting_render();
-        }, 2000); // 2000 milliseconds = 2 seconds
+        levels_sorting_render();
     });
 
 
@@ -991,6 +1000,7 @@
     $(document).ready(function() {
 
 
+        $(".path-tool-item.active").click();
         $(document).on('keyup change keydown click', 'input[name="stage_name"]', function (e) {
             var current_value = $(this).val();
             current_value = (current_value == '')? 'Stage Name' : current_value;

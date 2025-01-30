@@ -102,6 +102,8 @@ $(document).on('click', '.path-tool-item', function () {
     var target_class = $(this).attr('data-target_class');
     $(".flowchart-links-layer > g").removeAttr('class');
     $(".flowchart-links-layer > g").addClass(target_class);
+    $(".path-tool-item").removeClass('active');
+    $(this).addClass('active');
 });
 
 $(document).on('click', '.layout-template-item', function () {
@@ -564,31 +566,42 @@ function levels_sorting_render(){
         }
     };
 
-    var links = $flowchart.flowchart('getData').links;
+    if($flowchart == null){
+        console.log('not-availbale-chart');
+        setTimeout(function() {
+            sorting_render();
+            levels_sorting_render();
+        }, 2000); // 2000 milliseconds = 2 seconds
+    }else {
+        sorting_render();
+        console.log('available-chart----------');
+        var links = $flowchart.flowchart('getData').links;
 
-    // Find the link with the specified details
+        // Find the link with the specified details
 
-    console.log(links);
+        console.log(links);
 
-    $('.levels-objects-list').find('li').each(function () {
-        var field_id = $(this).attr('data-id');
-        if ($flowchart.flowchart('getOperatorData', field_id)) {
-            if(links != undefined){
-            Object.keys(links).forEach(function (linkId) {
-                var link = links[linkId];
-                if (
-                    link.toOperator === field_id &&
-                    link.toConnector === 'input_1'
-                ) {
-                    // Delete the matching link
-                    $flowchart.flowchart('deleteLink', linkId);
-                    console.log("Deleted link with ID: " + linkId);
+        $('.levels-objects-list').find('li').each(function () {
+            var field_id = $(this).attr('data-id');
+            if ($flowchart.flowchart('getOperatorData', field_id)) {
+                if (links != undefined) {
+                    Object.keys(links).forEach(function (linkId) {
+                        var link = links[linkId];
+                        if (
+                            link.toOperator === field_id &&
+                            link.toConnector === 'input_1'
+                        ) {
+                            // Delete the matching link
+                            $flowchart.flowchart('deleteLink', linkId);
+                            console.log("Deleted link with ID: " + linkId);
+                        }
+                    });
                 }
-            });
             }
-        }
-    });
-    reinitialize_items();
+        });
+        reinitialize_items();
+
+    }
 
 }
 
@@ -1268,6 +1281,10 @@ function generate_stage_area(){
         posted_data['levels'][level_id]['background_image'] = $(this).attr('data-background_image');
 		posted_data['levels'][level_id]['height'] = $(this).attr('data-page_height');
 		posted_data['levels'][level_id]['page_graph'] = $(this).attr('data-page_graph');
+        posted_data['levels'][level_id]['item_path'] = $(this).attr('data-item_path');
+        posted_data['levels'][level_id]['stage_name'] = $(this).attr('data-stage_name');
+        posted_data['levels'][level_id]['passing_scores'] = $(this).attr('data-passing_scores');
+        posted_data['levels'][level_id]['shuffle_questions'] = $(this).attr('data-shuffle_questions');
 		$(this).find(".field_settings").each(function (index) {
 			var fieldObj = $(this);
 			var data_values = {};
