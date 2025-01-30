@@ -15,7 +15,12 @@
 .open-controls-btn {position: absolute; right: 4px; top: -32px; height: 25px; width: 25px; background-color: #ccc; border-radius: 100%;}
 /* Learning Journey Sets Edit Page Accordions Style Start */
 .learning_journey_sets .curriculum-item-data {height: auto !important;}
-.draggable-content-lists {display: flex; align-items: center; flex-wrap: wrap; padding-left: 1px;}
+.draggable-content-lists {
+    display: flex;
+    align-items: center;
+    padding-left: 1px;
+    width: calc(100% - 120px);
+}
 .draggable-content-lists li {
     max-width: min-content;
     border: 1px solid #ddd;
@@ -27,7 +32,7 @@
 }
 .draggable-content-lists li.active {background-color: #f7fbfe !important; border-bottom-color: cadetblue;}
 .draggable-content-lists li:first-child {border-left: 1px solid #ddd; border-radius: 5px 0 0 0 !important;}
-.draggable-content-lists li ~ li:last-child {border-radius: 0 5px 0 0 !important;}
+.draggable-content-lists li ~ li:last-child {border-right: 0;}
 .draggable-content-lists li > .d-flex {flex-wrap: wrap;}
 .learning_journey_sets .tabs-data {border: 1px solid #ddd; border-radius: 0 0 5px 5px; padding: 20px 25px 25px;}
 .stage-accordion input {width: 100%;}
@@ -123,7 +128,7 @@ ul.editor-objects-list {margin-top: 25px;}
 .editor-objects-list .ui-sortable-handle.active {background-color: #efefef; border-color: var(--blue);}
 body .editor-objects-list li {background-color: #f8f8f8; border: 1px solid #ccc; padding: 8px 10px; margin-bottom: 10px;}
 .learning-stage-btn {display: inline-flex; margin-bottom: 0; margin-left: auto;}
-.learning-stage-btn button {height: 100%; border: 1px solid #ddd; background-color: #fff; margin-left: 0; border-radius: 5px 5px 0 0; border-bottom: 0; font-size: 14px; color: var(--blue); font-weight: 600; outline: none; padding: 0 15px;}
+.learning-stage-btn button {height: 100%; border: 1px solid #ddd; background-color: #fff; margin-left: 0; border-radius: 0 5px 0 0; border-bottom: 0; font-size: 14px; color: var(--blue); font-weight: 600; outline: none; padding: 0 15px;}
 .learning-stage-btn button i {margin-right: 5px;}
 .learning-jounrey-tabs {display: flex; flex-wrap: wrap;}
 .add-level-form {margin-bottom: 0;}
