@@ -852,13 +852,7 @@ a.dropdown-item:focus, a.dropdown-item:active, a.dropdown-item.active {backgroun
     .dropdown-list-toggle .dropdown-list {left: 10px !important; width: calc(100% - 20px);}
 }
 /* Dropdown-Menu In Courses Table Style Start */
-.table-actions.dropdown .dropdown-menu {
-    display: none;
-    right: 0;
-    left: auto !important;
-    transform: none !important;
-    top: 100% !important;
-}
+.table-actions.dropdown .dropdown-menu {display: none; right: 0; left: auto !important; transform: none !important; top: 100% !important;}
 .table-actions.dropdown .dropdown-toggle {outline: none;}
 /* Dropdown-Menu In Courses Table Style End */
 
@@ -1547,43 +1541,9 @@ body:has(.multi-choice-template-modal.show) .modal {overflow-x: hidden; overflow
 .template-box img {max-width: 100%; object-fit: contain;}
 .template-item {margin: 0 0 30px;}
 .template-box {background-color: #fff; border: 1px solid #ddd; border-radius: 5px; overflow: hidden; padding: 25px; height: 100%; display: flex; flex-direction: column; position: relative;}
-.template-item.active .template-box {
-    border-color: transparent;
-    box-shadow: 0 0 8px 2px #27325e94;
-}
-.template-box .card-icon {
-    height: calc(100% - 50px);
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-bottom: 25px;
-    overflow: hidden;
-    cursor: pointer;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 25px;
-}
-.template-box .card-icon:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(/assets/default/svgs/zoom2.svg);
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    background-size: 10%;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0;
-    visibility: hidden; 
-    margin-top: -10px;
-}
+.template-item.active .template-box {border-color: transparent; box-shadow: 0 0 8px 2px #27325e94;}
+.template-box .card-icon {height: calc(100% - 50px); display: flex; flex-direction: column; position: relative; margin-bottom: 25px; overflow: hidden; cursor: pointer; border-bottom: 1px solid #ddd; padding-bottom: 25px;}
+.template-box .card-icon:before {content: ""; position: absolute; left: 0; top: 0; height: 100%; width: 100%; pointer-events: none; display: flex; justify-content: center; align-items: center; background-image: url(/assets/default/svgs/zoom2.svg); transition: all .5s; -webkit-transition: all .5s; -o-transition: all .5s; background-size: 10%; background-repeat: no-repeat; background-position: center; opacity: 0; visibility: hidden; margin-top: -10px;}
 .template-box .card-icon:hover:before {
     opacity: 0.3;
     visibility: visible;
