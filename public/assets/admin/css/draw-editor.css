@@ -100,70 +100,18 @@ body ul.editor-objects.sets-selection li img {width: 100% !important;}
 .drop-item span.field-handle {position: absolute; right: 5px; top: -15px; cursor: move;}
 .book-dropzone .text-highlighter {background: yellow; opacity: 0.7; width: inherit; height: inherit;}
 .drop-item a.remove {color: #ff0000;}
-.editor-zone .field-options {
-    position: absolute;
-    left: 0;
-    right: auto;
-    min-width: 340px;
-    max-width: 340px;
-    height: 100%;
-    background-color: #f2f2f2;
-    padding: 30px 30px;
-    border-radius: 5px;
-}
-.editor-objects-list li {
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.editor-objects-list li .dropdown-toggle {
-    padding: 0;
-    border: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-    height: 25px;
-    width: 25px;
-    border-radius: 100%;
-}
+.editor-zone .field-options {position: absolute; left: 0; right: auto; min-width: 340px; max-width: 340px; height: 100%; background-color: #f2f2f2; padding: 30px 30px; border-radius: 5px;}
+.editor-objects-list li {border-radius: 3px; display: flex; align-items: center; justify-content: space-between;}
+.editor-objects-list li .dropdown-toggle {padding: 0; border: 0; background-color: rgba(0, 0, 0, 0.1); height: 25px; width: 25px; border-radius: 100%;}
 .editor-objects-list li .dropdown-toggle:hover,
 .editor-objects-list li .dropdown-toggle:focus,
-.editor-objects-list li .show>.btn-secondary.dropdown-toggle {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-.editor-objects-list li .dropdown-toggle:after {
-    display: none;
-}
-.editor-objects-list img {
-    height: 18px;
-    width: 18px;
-}
-.editor-objects-list li .dropdown-menu {
-    width: auto;
-    left: auto !important;
-    right: 0;
-    transform: none !important;
-    top: 100% !important;
-    min-width: 180px;
-    padding: 12px 10px;
-}
-.editor-objects-list li .dropdown-menu i {
-    display: inline-flex;
-    float: right;
-    padding: 8px 9px;
-    color: #333;
-    font-size: 12px;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.05);
-    margin: 0 5px;
-    border-radius: 3px;
-    border: 1px solid #ddd;
-}
-.editor-objects-list li .dropdown-menu.show {
-    display: flex !important;
-}
-ul.editor-objects-list {
-    margin-top: 25px;
-}
+.editor-objects-list li .show>.btn-secondary.dropdown-toggle {background-color: rgba(0, 0, 0, 0.1);}
+.editor-objects-list li .dropdown-toggle:after {display: none;}
+.editor-objects-list img {height: 18px; width: 18px;}
+.editor-objects-list li .dropdown-menu {width: auto; left: auto !important; right: 0; transform: none !important; top: 100% !important; min-width: 180px; padding: 12px 10px;}
+.editor-objects-list li .dropdown-menu i {display: inline-flex; float: right; padding: 8px 9px; color: #333; font-size: 12px; cursor: pointer; background-color: rgba(0, 0, 0, 0.05); margin: 0 5px; border-radius: 3px; border: 1px solid #ddd;}
+.editor-objects-list li .dropdown-menu.show {display: flex !important;}
+ul.editor-objects-list {margin-top: 25px;}
 .editor-objects-list .ui-sortable-handle.active {
     background-color: #efefef;
     border-color: var(--blue);
