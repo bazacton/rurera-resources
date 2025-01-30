@@ -1622,6 +1622,7 @@ output {font-weight: bold; color: #333;}
     padding-left: 25px;
 }
 /* Note-Editable Order List Style End */
+
 /* Note-Editable Table Default Style Start */
 .example-question-block table {
     width: 100%;
@@ -1632,6 +1633,7 @@ output {font-weight: bold; color: #333;}
     padding: 5px;
 }
 /* Note-Editable Table Default Style End */
+
 /* Note-Dropdown-Menu Style Start */
 .note-dropdown-menu h1,
 .note-dropdown-menu h2,
@@ -1908,38 +1910,12 @@ Admin Questions Generator Page Style End
 /* Similarity Content Tabs style End */
 
 /* Prompts Tab style start */
-.similarity-content-tabs:has(#prompts-tab) .nav {
-    border-bottom: 1px solid #ddd;
-    gap: 0 25px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-}
-.similarity-content-tabs:has(#prompts-tab) .nav .nav-link.active {
-    color: var(--blue);
-    border-bottom-color: var(--blue);
-    z-index: 1;
-}
-.similarity-content-tabs:has(#prompts-tab) .nav .nav-link {
-    border: 0;
-    background-color: inherit;
-    padding: 0 0 5px;
-    font-weight: 600;
-    font-size: 16px;
-    color: #000;
-    border-bottom: 2px solid transparent;
-    outline: none;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-}
-.similarity-content-tabs:has(#prompts-tab) .tab-content {
-    padding-top: 25px;
-}
+.similarity-content-tabs:has(#prompts-tab) .nav {border-bottom: 1px solid #ddd; gap: 0 25px; display: flex; align-items: flex-end; justify-content: flex-start;}
+.similarity-content-tabs:has(#prompts-tab) .nav .nav-link.active {color: var(--blue); border-bottom-color: var(--blue); z-index: 1;}
+.similarity-content-tabs:has(#prompts-tab) .nav .nav-link {border: 0; background-color: inherit; padding: 0 0 5px; font-weight: 600; font-size: 16px; color: #000; border-bottom: 2px solid transparent; outline: none; transition: all .5s; -webkit-transition: all .5s; -o-transition: all .5s; }
+.similarity-content-tabs:has(#prompts-tab) .tab-content {padding-top: 25px;}
 /* Prompts Tab style End */
-.rureraform-context-menu {
-    display: none;
-}
+.rureraform-context-menu {display: none;}
 
 @media (min-width: 993px) {
     .edit-questions-tabs .similarity-content-block .nav {display: none;}
