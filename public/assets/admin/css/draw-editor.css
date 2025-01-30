@@ -22,7 +22,6 @@
     width: calc(100% - 120px);
 }
 .draggable-content-lists li {
-    max-width: min-content;
     border: 1px solid #ddd;
     padding: 12px 15px !important;
     display: inline-flex;
