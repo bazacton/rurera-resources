@@ -2213,41 +2213,12 @@ Admin Questions Generator Page Style End
 .topic-parts-block .form-field label,
 .topic-parts-block .form-field label:hover {border-width: 1px; border-radius: 5px;}
 .review-form .form-submit-btn {background-color: var(--blue); border: 0; color: #fff; padding: 5px 25px; border-radius: 3px; font-weight: bold; font-size: 16px; outline: none;}
-.similarity-content-block .lms-dashboard-card .lms-card-list {
-    border: 1px solid #ddd;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 6px;
-    display: flex;
-    gap: 10px;
-    width: 100%;
-    margin-bottom: 5px;
-}
-.similarity-content-block .lms-dashboard-card .lms-card-list:before {
-    content: "";
-    position: absolute;
-    left: 50px;
-    top: 100%;
-    height: 100%;
-    width: 2px;
-    background-color: #ddd;
-}
-.similarity-content-block .lms-dashboard-card .lms-card-list:last-child:before {
-    display: none;
-}
-.similarity-content-block .similarity-content-tabs .lms-card-body {
-    padding: 0;
-    background-color: inherit;
-}
-.similarity-content-block .lms-dashboard-card .lms-card-timeline {
-    border-left: 0;
-    margin-left: 0;
-    overflow: hidden;
-}
-.similarity-tab-data .lms-dashboard-card .lms-card-body {
-    background-color: inherit;
-    padding: 0;
-}
+.similarity-content-block .lms-dashboard-card .lms-card-list {border: 1px solid #ddd; background-color: #fff; padding: 15px; border-radius: 6px; display: flex; gap: 10px; width: 100%; margin-bottom: 5px;}
+.similarity-content-block .lms-dashboard-card .lms-card-list:before {content: ""; position: absolute; left: 50px; top: 100%; height: 100%; width: 2px; background-color: #ddd;}
+.similarity-content-block .lms-dashboard-card .lms-card-list:last-child:before {display: none;}
+.similarity-content-block .similarity-content-tabs .lms-card-body {padding: 0; background-color: inherit;}
+.similarity-content-block .lms-dashboard-card .lms-card-timeline {border-left: 0; margin-left: 0; overflow: hidden;}
+.similarity-tab-data .lms-dashboard-card .lms-card-body {background-color: inherit; padding: 0;}
 .similarity-content-block .lms-dashboard-card .lms-card-list.active .lms-card-icons {
     -webkit-animation: none;
     animation: none;
