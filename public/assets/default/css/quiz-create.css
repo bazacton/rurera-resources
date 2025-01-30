@@ -878,6 +878,7 @@ Questions Builder Right Sidebar Style Start
 .lms-quiz-create .rureraform-properties-options-table-header {padding: 0 50px 5px 0;margin: 0;}
 .lms-quiz-create .rureraform-properties-options-table-footer {text-align: right; margin-top: 5px;}
 .lms-quiz-create .rureraform-properties-options-table-footer a {margin-left: 5px;}
+.lms-quiz-create .rureraform-properties-options-table-footer a i {margin: 0 5px 0 0;}
 .lms-quiz-create .rureraform-properties-options-table-footer-left {display: table-cell;	text-align: left; vertical-align: middle; font-size: 15px; font-style: italic;}
 .lms-quiz-create .rureraform-properties-options-table-footer-right {display: table-cell; text-align: right;	vertical-align: middle;}
 .lms-quiz-create .rureraform-properties-options-table>div {display: table-cell;	width: 33.3333%; padding-right: 10px; text-align: right; vertical-align: middle; font-size: 16px; position: relative;}
