@@ -15,35 +15,10 @@
 .open-controls-btn {position: absolute; right: 4px; top: -32px; height: 25px; width: 25px; background-color: #ccc; border-radius: 100%;}
 /* Learning Journey Sets Edit Page Accordions Style Start */
 .learning_journey_sets .curriculum-item-data {height: auto !important;}
-.draggable-content-lists {
-    display: flex;
-    align-items: center;
-    padding-left: 1px;
-}
-.draggable-content-lists li {
-    border: 1px solid #ddd;
-    padding: 12px 15px !important;
-    display: inline-flex;
-    flex-direction: column;
-    border-radius: 0 !important;
-    margin: 0 0 -1px -1px !important;
-    position: relative;
-}
-.draggable-content-lists li:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-    background-color: cadetblue;
-    opacity: 0;
-    visibility: hidden;
-}
-.draggable-content-lists li.active:after {
-    opacity: 1;
-    visibility: visible;
-}
+.draggable-content-lists {display: flex; align-items: center; padding-left: 1px;}
+.draggable-content-lists li {border: 1px solid #ddd; padding: 12px 15px !important; display: inline-flex; flex-direction: column; border-radius: 0 !important; margin: 0 0 -1px -1px !important; position: relative;}
+.draggable-content-lists li:after {content: ""; position: absolute; left: 0; bottom: 0; height: 2px; width: 100%; background-color: cadetblue; opacity: 0; visibility: hidden;}
+.draggable-content-lists li.active:after {opacity: 1; visibility: visible;}
 .draggable-content-lists li.active {background-color: #f7fbfe !important; border-bottom-color: cadetblue;}
 .draggable-content-lists li:first-child {border-left: 1px solid #ddd; border-radius: 5px 0 0 0 !important;}
 .draggable-content-lists li ~ li:last-child {border-right: 1px solid #ddd;}
