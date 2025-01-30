@@ -273,7 +273,7 @@
 @section('content')
 <section class="section">
     <div class="section-header">
-        <h1>{{!empty($glossary) ?trans('/admin/main.edit'): trans('admin/main.new') }} Learning Journey</h1>
+        <h1 class="journey_title">{{isset( $LearningJourneyObj->journey_title)? $LearningJourneyObj->journey_title : 'New Learning Journey'}}</h1>
         <a href="javascript:;" class="journey-settings"><i class="fa fa-cog"></i> Settings</a>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="/admin/">{{ trans('admin/main.dashboard') }}</a>
@@ -308,7 +308,7 @@
 
                                                             <div class="form-group">
                                                                 <label>Journey Title</label>
-                                                                <input type="text" class="form-control" name="journey_title">
+                                                                <input type="text" class="form-control learning_journey_title" name="journey_title" value="{{isset( $LearningJourneyObj->journey_title)? $LearningJourneyObj->journey_title : ''}}">
                                                             </div>
                                                             <div class="form-group">
                                                                 <label>{{ trans('/admin/main.category')  }}</label>
@@ -684,7 +684,8 @@
                 levels_sorting_render();
             }*/
 
-            var level_id = $(this).attr('data-id');
+            //var level_id = $(this).attr('data-id');
+            var level_id = $(this).closest('li').attr('data-id');
 
             $(".accordion-row").removeClass('active');
             $(this).closest(".accordion-row").addClass('active');
@@ -843,6 +844,8 @@
     });
 
     $(document).on('click', '.update-journey-settings', function () {
+        var learning_journey_title = $('.learning_journey_title').val();
+        $('.journey_title').html(learning_journey_title);
         $(".journey-settings-modal").modal('hide');
     });
 
@@ -990,7 +993,7 @@
 
         $(document).on('keyup change keydown click', 'input[name="stage_name"]', function (e) {
             var current_value = $(this).val();
-            console.log(current_value);
+            current_value = (current_value == '')? 'Stage Name' : current_value;
 
             var level_id    = $(this).closest('.li-content-data').attr('data-level_id');
             console.log(level_id);
