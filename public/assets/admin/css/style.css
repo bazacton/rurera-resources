@@ -1585,57 +1585,16 @@ body:has(.multi-choice-template-modal.show) .modal {overflow-x: hidden; overflow
 /*****************************************
 Admin Questions Generator Page Style Start
 *********************/
-.quiz-data-slide {
-    display: none;
-}
-.list-group {
-    display: flex;
-    gap: 10px;
-    margin-top: 5px;
-    flex-wrap: wrap;
-}
+.quiz-data-slide {display: none;}
+.list-group {display: flex; gap: 10px; margin-top: 5px; flex-wrap: wrap;}
 .list-group input[type="radio"],
-.list-group input[type="checkbox"] {
-    display: none;
-}
-.list-group label {
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: #f1f1f1;
-    color: #333;
-    font-size: 14px;
-    border: 2px solid transparent;
-}
+.list-group input[type="checkbox"] {display: none;}
+.list-group label {padding: 5px 10px; border-radius: 4px; cursor: pointer; background-color: #f1f1f1; color: #333; font-size: 14px; border: 2px solid transparent;}
 .list-group input[type="radio"]:checked + label,
-.list-group input[type="checkbox"]:checked + label {
-    border-color: var(--blue);
-}
-.range-output {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-input[type="range"], input[type="number"] {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-button.submit-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--blue);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
+.list-group input[type="checkbox"]:checked + label {border-color: var(--blue);}
+.range-output {display: flex; align-items: center; gap: 10px;}
+input[type="range"], input[type="number"] {width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;}
+button.submit-btn {width: 100%; padding: 10px; background-color: var(--blue); color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; margin-top: 20px;}
 /* Add this CSS for the range slider styling */
 .range-output {
     display: flex;
