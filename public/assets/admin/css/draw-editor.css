@@ -31,7 +31,7 @@
 }
 .draggable-content-lists li.active {background-color: #f7fbfe !important; border-bottom-color: cadetblue;}
 .draggable-content-lists li:first-child {border-left: 1px solid #ddd; border-radius: 5px 0 0 0 !important;}
-.draggable-content-lists li ~ li:last-child {border-right: 0;}
+.draggable-content-lists li ~ li:last-child {border-right: 1px solid #ddd;}
 .draggable-content-lists li > .d-flex {flex-wrap: wrap;}
 .learning_journey_sets .tabs-data {border: 1px solid #ddd; border-radius: 0 0 5px 5px; padding: 20px 25px 25px;}
 .stage-accordion input {width: 100%;}
