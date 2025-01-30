@@ -1552,66 +1552,20 @@ body:has(.multi-choice-template-modal.show) .modal {overflow-x: hidden; overflow
 .search-filed i {position: absolute; right: 15px; top: 50%; font-size: 16px; color: #bbb; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);}
 .choose-fields {display: flex; align-items: center; gap: 10px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;}
 .choose-types input[type=radio] {position: absolute; width: 0; height: 0; opacity: 0;}
-.choose-types .choose-box label {
-    margin: 0;
-    border: 1px solid #ddd;
-    border-radius: 30px;
-    padding: 5px 15px;
-    color: #333;
-    cursor: pointer;
-}
-.choose-types {
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-.choose-types label {
-    margin-bottom: 0;
-}
-.choose-types .choose-box input[type=radio]:checked ~ label {
-    background-color: var(--blue);
-    border-color: var(--blue);
-    color: #fff;
-}
+.choose-types .choose-box label {margin: 0; border: 1px solid #ddd; border-radius: 30px; padding: 5px 15px; color: #333; cursor: pointer;}
+.choose-types {margin-bottom: 30px; display: flex; align-items: center; gap: 15px;}
+.choose-types label {margin-bottom: 0;}
+.choose-types .choose-box input[type=radio]:checked ~ label {background-color: var(--blue); border-color: var(--blue); color: #fff;}
 .multi-choice-template-modal .modal-body,
-.multi-choice-template-modal .modal-content {
-    background-color: #fcfcfc;
-}
-.multi-choice-template-modal #imagemodal .modal-body {
-    background-color: #fff;
-}
-.template-controls {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: auto;
-}
-.multi-choice-template-modal #imagemodal .modal-content {
-    height: auto;
-}
-.multi-choice-template-modal #imagemodal .modal-body {
-    border-radius: 8px;
-}
-.template-data-info span {
-    font-size: 13px;
-    color: #bbb;
-}
-.template-data-info {
-    margin-top: 15px;
-}
-.template-box .rating-stars {
-    position: absolute;
-    right: 12px;
-    top: 12px;
-    z-index: 1;
-}
-.rating-stars input[type=checkbox] {
-    position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
-}
+.multi-choice-template-modal .modal-content {background-color: #fcfcfc;}
+.multi-choice-template-modal #imagemodal .modal-body {background-color: #fff;}
+.template-controls {display: flex; align-items: center; justify-content: space-between; margin-top: auto;}
+.multi-choice-template-modal #imagemodal .modal-content {height: auto;}
+.multi-choice-template-modal #imagemodal .modal-body {border-radius: 8px;}
+.template-data-info span {font-size: 13px; color: #bbb;}
+.template-data-info {margin-top: 15px;}
+.template-box .rating-stars {position: absolute; right: 12px; top: 12px; z-index: 1;}
+.rating-stars input[type=checkbox] {position: absolute; width: 0; height: 0; opacity: 0;}
 .rating-box {
     position: relative;
 }
