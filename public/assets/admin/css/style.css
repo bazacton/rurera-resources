@@ -795,7 +795,6 @@ h6 .badge {font-size: 11px; padding: 3px 8px;}
     .nav-collapse .navbar-nav .nav-item .nav-link {background-color: #fff; color: #6c757d;}
     .nav-collapse .navbar-nav .nav-item .nav-link:hover {background-color: #fcfcfd; color: var(--primary);}
     .nav-collapse .navbar-nav .nav-item:focus > a, .nav-collapse .navbar-nav .nav-item.active > a {background-color: var(--primary); color: #fff;}
-    .navbar {left: 5px; right: 0;}
     .navbar .dropdown-menu {position: absolute;}
     .navbar .navbar-nav {flex-direction: row;}
     .navbar-expand-lg .navbar-nav .dropdown-menu-right {right: 0; left: auto;}
@@ -1186,9 +1185,6 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu > li.active > a:before {c
 body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-menu li a {padding-left: 61px; background-color: #fff;}
 
 @media (max-width: 1024px) {
-    .sidebar-gone-hide {display: none !important;}
-    .sidebar-gone-show {display: block !important;}
-    .main-sidebar {position: fixed !important; margin-top: 0 !important; z-index: 891;}
     body.layout-2 .main-wrapper,
     body.layout-3 .main-wrapper {width: 100%; padding: 0; display: block;}
     .main-content {padding-left: 15px; padding-right: 15px; width: 100% !important;}
@@ -1198,21 +1194,6 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
         padding-bottom: 0 !important;
     }
     .card.card-statistic-1 .card-body {padding: 0 !important;}
-    body.search-show {overflow: hidden;}
-    body.search-show .navbar {z-index: 892;}
-    body.sidebar-show {overflow: hidden;}
-    body.search-show:before, body.sidebar-show:before {content: ''; position: fixed; left: 0; right: 0; width: 100%; height: 100%; background-color: #000; opacity: 0; z-index: 891; -webkit-animation-name: fadeinbackdrop; animation-name: fadeinbackdrop; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards;}
-
-    @-webkit-keyframes fadeinbackdrop {
-        to {
-            opacity: .6;
-        }
-    }
-    @keyframes fadeinbackdrop {
-        to {
-            opacity: .6;
-        }
-    }
 }
 
 /* 4.5 Animation */
@@ -1413,6 +1394,25 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 @media(max-width:1200px) {
     .main-sidebar ~ .main-content {padding-left: 30px; margin-left: 0; padding-right: 30px; max-width: 100%; width: 100%;}
     #question_design .col-7 {flex: 0 0 100%; max-width: 100%;}
+    .navbar {left: 5px; right: 0;}
+    .sidebar-gone-hide {display: none !important;}
+    .sidebar-gone-show {display: block !important;}
+    .main-sidebar {position: fixed !important; margin-top: 0 !important; z-index: 891;}
+    body.search-show {overflow: hidden;}
+    body.search-show .navbar {z-index: 892;}
+    body.sidebar-show {overflow: hidden;}
+    body.search-show:before, body.sidebar-show:before {content: ''; position: fixed; left: 0; right: 0; width: 100%; height: 100%; background-color: #000; opacity: 0; z-index: 891; -webkit-animation-name: fadeinbackdrop; animation-name: fadeinbackdrop; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards;}
+
+    @-webkit-keyframes fadeinbackdrop {
+        to {
+            opacity: .6;
+        }
+    }
+    @keyframes fadeinbackdrop {
+        to {
+            opacity: .6;
+        }
+    }
 }
 @media(max-width:767px) {
     .admin-rurera-tabs .nav-link, .admin-rurera-tabs.nav-pills .nav-link {margin-bottom: 10px;}
