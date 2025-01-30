@@ -114,59 +114,16 @@ body ul.editor-objects.sets-selection li img {width: 100% !important;}
 ul.editor-objects-list {margin-top: 25px;}
 .editor-objects-list .ui-sortable-handle.active {background-color: #efefef; border-color: var(--blue);}
 body .editor-objects-list li {background-color: #f8f8f8; border: 1px solid #ccc; padding: 8px 10px; margin-bottom: 10px;}
-.learning-stage-btn {
-    display: inline-flex;
-    margin-bottom: 0;
-    margin-left: auto;
-}
-.learning-stage-btn button {
-    height: 100%;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    margin-left: 0;
-    border-radius: 5px 5px 0 0;
-    border-bottom: 0;
-    font-size: 14px;
-    color: var(--blue);
-    font-weight: 600;
-    outline: none;
-    padding: 0 15px;
-}
-.learning-stage-btn button i {
-    margin-right: 5px;
-}
-.learning-jounrey-tabs {
-    display: flex;
-    flex-wrap: wrap;
-}
-.add-level-form {
-    margin-bottom: 0;
-}
-.add-level-form .add-level-stage-btn {
-    background-color: var(--primary);
-    border-radius: 3px;
-    color: var(--white);
-    border: 0;
-    padding: 8px 20px;
-    outline: none;
-}
+.learning-stage-btn {display: inline-flex; margin-bottom: 0; margin-left: auto;}
+.learning-stage-btn button {height: 100%; border: 1px solid #ddd; background-color: #fff; margin-left: 0; border-radius: 5px 5px 0 0; border-bottom: 0; font-size: 14px; color: var(--blue); font-weight: 600; outline: none; padding: 0 15px;}
+.learning-stage-btn button i {margin-right: 5px;}
+.learning-jounrey-tabs {display: flex; flex-wrap: wrap;}
+.add-level-form {margin-bottom: 0;}
+.add-level-form .add-level-stage-btn {background-color: var(--primary); border-radius: 3px; color: var(--white); border: 0; padding: 8px 20px; outline: none;}
 .editor-controls-holder ul:has(.path-tool-item),
-.editor-controls-holder ul:has(.layout-template-item) {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
+.editor-controls-holder ul:has(.layout-template-item) {display: flex; align-items: center; flex-wrap: wrap; gap: 10px;}
 .editor-controls-holder .path-tool-item,
-.editor-controls-holder .layout-template-item {
-    background-color: #fafafa;
-    border: 1px solid #ccc;
-    padding: 5px 15px;
-    display: inline-block;
-    line-height: normal;
-    border-radius: 3px;
-    text-decoration: none;
-}
+.editor-controls-holder .layout-template-item {background-color: #fafafa; border: 1px solid #ccc; padding: 5px 15px; display: inline-block; line-height: normal; border-radius: 3px; text-decoration: none;}
 
 @media (max-width: 992px) {
     body .editor-zone:has(.editor-controls-holder) {
