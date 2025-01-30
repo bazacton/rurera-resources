@@ -117,7 +117,7 @@
         }
         .ui-rotatable-handle::before {
             content: '\f111'; /* Font Awesome rotate icon */
-            font-family: 'Font Awesome 6 Free';
+            font-family: 'Font Awesome 5 Free';
             font-weight: 900;
             color: white;
             font-size: 12px;
