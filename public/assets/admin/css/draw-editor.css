@@ -16,7 +16,15 @@
 /* Learning Journey Sets Edit Page Accordions Style Start */
 .learning_journey_sets .curriculum-item-data {height: auto !important;}
 .draggable-content-lists {display: flex; align-items: center; flex-wrap: wrap;}
-.draggable-content-lists li {max-width: min-content; border: 1px solid #ddd; border-bottom: 2px solid transparent; padding: 12px 15px !important; display: inline-flex; flex-direction: column; border-radius: 0 !important; border-left: 0; margin-top: 0 !important;}
+.draggable-content-lists li {
+    max-width: min-content;
+    border: 1px solid #ddd;
+    padding: 12px 15px !important;
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 0 !important;
+    margin: 0 0 -1px -1px !important;
+}
 .draggable-content-lists li.active {background-color: #f7fbfe !important; border-bottom-color: cadetblue;}
 .draggable-content-lists li:first-child {border-left: 1px solid #ddd; border-radius: 5px 0 0 0 !important;}
 .draggable-content-lists li ~ li:last-child {border-radius: 0 5px 0 0 !important;}
