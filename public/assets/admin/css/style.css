@@ -2208,30 +2208,11 @@ Admin Questions Generator Page Style End
 .similarity-content-block ul li {line-height: normal; color: #bbb; font-weight: 600;}
 .similarity-content-block ul li.active-option {text-decoration: underline;}
 .edit-questions-tabs .similarity-content-tabs .form-group {padding: 0; border: 0; background-color: inherit;}
-.edit-questions-tabs .review-form {
-    padding: 20px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    border-radius: 5px;
-}
-.topic-parts-block {
-    margin: 0 0 15px;
-}
+.edit-questions-tabs .review-form {padding: 20px;border: 1px solid #ddd; background-color: #fff; border-radius: 5px;}
+.topic-parts-block {margin: 0 0 15px;}
 .topic-parts-block .form-field label,
-.topic-parts-block .form-field label:hover {
-    border-width: 1px;
-    border-radius: 5px;
-}
-.review-form .form-submit-btn {
-    background-color: var(--blue);
-    border: 0;
-    color: #fff;
-    padding: 5px 25px;
-    border-radius: 3px;
-    font-weight: bold;
-    font-size: 16px;
-    outline: none;
-}
+.topic-parts-block .form-field label:hover {border-width: 1px; border-radius: 5px;}
+.review-form .form-submit-btn {background-color: var(--blue); border: 0; color: #fff; padding: 5px 25px; border-radius: 3px; font-weight: bold; font-size: 16px; outline: none;}
 .similarity-content-block .lms-dashboard-card .lms-card-list {
     border: 1px solid #ddd;
     background-color: #fff;
