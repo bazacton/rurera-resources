@@ -46,112 +46,32 @@
 .journey-settings-modal .inactivity-controls {padding: 0 15px;}
 .journey-settings-modal .modal-body {padding: 25px;}
 /* Learning Journey Model Settings Style End */
-.book-pages-navs {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 10px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    align-items: center;
-}
-.book-pages-navs .prev-page, .book-pages-navs .next-page {
-    border: 1px solid #ddd;
-    padding: 10px 20px;
-    display: inline-block;
-    line-height: normal;
-    border-radius: 5px;
-}
-.book-pages-navs .generate {
-    margin-right: auto;
-}
+.book-pages-navs {display: flex; flex-direction: row-reverse; gap: 10px; margin-bottom: 20px; margin-top: 20px; align-items: center;}
+.book-pages-navs .prev-page, .book-pages-navs .next-page {border: 1px solid #ddd; padding: 10px 20px; display: inline-block; line-height: normal; border-radius: 5px;}
+.book-pages-navs .generate {margin-right: auto;}
 body .editor-zone:has(.editor-controls-holder),
-body .editor-zone:has(.field-options.hide) {
-    padding-left: 0;
-}
-body .editor-zone:has(.editor-controls-holder) {
-    padding: 0 520px 0 369px;
-    overflow: visible;
-}
-body .editor-zone:has(.field-options) {
-    padding-left:0px;
-}
-.book-dropzone {
-    position: relative;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    /*width: 760px;*/
-	height:100%;
-    box-sizing: border-box;
-    background-size: cover !important;
-    overflow: hidden;
-}
-.book-dropzone img {
-    max-width: 100%;
-}
-body .editor-controls-holder {
-    border: 1px solid #ccc;
-    background-color: inherit;
-    border-radius: 0;
-    padding: 0;
-    overflow: visible;
-    min-width: 500px;
-    max-width: 500px;
-    height: auto;
-}
-body ul.editor-objects li {
-    width: 23.888%;
-}
-body .editor-parent-nav {
-    padding: 15px;
-    background-color: #f8f8f8;
-}
-body .editor-controls-holder .tab-pane .nav {
-    border-bottom: 1px solid #ddd;
-    padding: 0 10px;
-}
+body .editor-zone:has(.field-options.hide) {padding-left: 0;}
+body .editor-zone:has(.editor-controls-holder) {padding: 0 520px 0 369px; overflow: visible;}
+body .editor-zone:has(.field-options) {padding-left:0px;}
+.book-dropzone {position: relative; border: 1px solid #ccc; border-radius: 5px; /*width: 760px;*/ height:100%; box-sizing: border-box; background-size: cover !important; overflow: hidden;}
+.book-dropzone img {max-width: 100%;}
+body .editor-controls-holder {border: 1px solid #ccc; background-color: inherit; border-radius: 0; padding: 0; overflow: visible; min-width: 500px; max-width: 500px; height: auto;}
+body ul.editor-objects li {width: 23.888%;}
+body .editor-parent-nav {padding: 15px; background-color: #f8f8f8;}
+body .editor-controls-holder .tab-pane .nav {border-bottom: 1px solid #ddd; padding: 0 10px;}
 body .editor-controls .nav .nav-item .nav-link,
-body .editor-objects-block .nav .nav-item .nav-link {
-    background-color: inherit;
-    padding: 5px 12px;
-    border: 1px solid #ddd;
-    border-left: 0;
-    border-bottom: 2px solid transparent;
-    margin: 0 0 -1px;
-    border-radius: 0;
-    box-shadow: none;
-}
+body .editor-objects-block .nav .nav-item .nav-link {background-color: inherit; padding: 5px 12px; border: 1px solid #ddd; border-left: 0; border-bottom: 2px solid transparent; margin: 0 0 -1px; border-radius: 0; box-shadow: none;}
 body .editor-controls .nav .nav-item:last-child .nav-link,
-body .editor-objects-block .nav .nav-item:last-child .nav-link {
-    border-radius: 0 5px 0 0;
-}
+body .editor-objects-block .nav .nav-item:last-child .nav-link {border-radius: 0 5px 0 0;}
 body .editor-controls .nav .nav-item:first-child .nav-link,
-body .editor-objects-block .nav .nav-item:first-child .nav-link {
-    border-left: 1px solid #ddd;
-    border-radius: 5px 0 0 0;
-}
+body .editor-objects-block .nav .nav-item:first-child .nav-link {border-left: 1px solid #ddd; border-radius: 5px 0 0 0;}
 body .editor-controls .nav .nav-item .nav-link.active,
-body .editor-objects-block .nav .nav-item .nav-link.active {
-    border-bottom-color: #fff;
-    color: var(--primary);
-}
-body .editor-parent-nav ul {
-    gap: 8px 10px;
-}
-body .editor-parent-nav .nav-link {
-    padding: 5px 12px;
-    font-size: 14px;
-}
-body .book-dropzone {
-    border-radius: 0;
-    min-height: 705px;
-}
-.editor-objects-block h5 {
-    padding: 0 15px;
-    margin-bottom: 20px;
-}
-.editor-controls-holder .fade:not(.show) {
-    display: none;
-}
+body .editor-objects-block .nav .nav-item .nav-link.active {border-bottom-color: #fff; color: var(--primary);}
+body .editor-parent-nav ul {gap: 8px 10px;}
+body .editor-parent-nav .nav-link {padding: 5px 12px; font-size: 14px;}
+body .book-dropzone {border-radius: 0; min-height: 705px;}
+.editor-objects-block h5 {padding: 0 15px; margin-bottom: 20px;}
+.editor-controls-holder .fade:not(.show) {display: none;}
 body .editor-controls-holder .editor-objects-block .nav,
 .editor-objects-block .tab-pane {
     padding: 0 15px;
