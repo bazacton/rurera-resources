@@ -19,7 +19,6 @@
     display: flex;
     align-items: center;
     padding-left: 1px;
-    width: calc(100% - 120px);
 }
 .draggable-content-lists li {
     border: 1px solid #ddd;
