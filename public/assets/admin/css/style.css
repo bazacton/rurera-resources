@@ -876,7 +876,13 @@ a.dropdown-item:focus, a.dropdown-item:active, a.dropdown-item.active {backgroun
     .dropdown-list-toggle .dropdown-list {left: 10px !important; width: calc(100% - 20px);}
 }
 /* Dropdown-Menu In Courses Table Style Start */
-.table-actions.dropdown .dropdown-menu {display: none; right: 0; left: auto !important;}
+.table-actions.dropdown .dropdown-menu {
+    display: none;
+    right: 0;
+    left: auto !important;
+    transform: none !important;
+    top: 100% !important;
+}
 .table-actions.dropdown .dropdown-toggle {outline: none;}
 /* Dropdown-Menu In Courses Table Style End */
 
