@@ -129,6 +129,7 @@ body .editor-objects-list li {background-color: #f8f8f8; border: 1px solid #ccc;
 .flowchart-operators-layer .field-data {border: 1px solid #ddd; border-radius: 5px;}
 .flowchart-operators-layer .field-data svg {height: 100%;}
 body .flowchart-operator {border: 0;}
+body .ui-rotatable-handle::before {font-size: 10px;}
 @media (max-width: 992px) {
     body .editor-zone:has(.editor-controls-holder) {
         padding: 0 400px 0 369px;
