@@ -1495,7 +1495,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
         <div class="modal-content edit-quest-modal-div">
             <div class="modal-body">
 			  <div class="modal-box">
-				<h3 class="font-24 font-weight-normal mb-10">Save the Template</h3>
+				<h3 class="font-20 font-weight-normal mb-10">Save the Template</h3>
 				<p class="mb-15 font-16">
 					<input type="text" name="template_name" class="template_name form-control">
 				</p>
