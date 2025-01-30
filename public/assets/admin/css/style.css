@@ -2139,44 +2139,16 @@ output {
 .percent_more .circle_inner {clip:rect(0 .5em 1em 0em);}
 .percent_more:after {position: absolute; left: .5em; top:0em; right: 0; bottom: 0; background: #e4a6d2; content:'';}
 .circle_inbox {position: absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; background: #fff; z-index:3; border-radius: 50%;}
-.percent_text {position: absolute; font-size: 14px; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 3; color: #000;
-    font-weight: bold;}
+.percent_text {position: absolute; font-size: 14px; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 3; color: #000; font-weight: bold;}
 .circle-orange .round_per,
-.circle-orange.percent_more:after {
-    background: #f6b700;
-}
+.circle-orange.percent_more:after {background: #f6b700;}
 .circle-yellow .round_per,
-.circle-yellow.percent_more:after {
-    background: #f3f374;
-}
-.progress-box {
-    display: inline-flex;
-    align-items: center;
-    gap: 15px;
-    position: relative;
-    padding-left: 25px;
-}
-.progress-box:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    height: calc(100% - 20px);
-    width: 1px;
-    background-color: #ddd;
-    transform: translateY(-50%);
-}
-.progress-holder .progress-box:first-child {
-    padding-left: 0;
-    border: 0;
-}
-.progress-box .progress-lable {
-    color: #999;
-    font-weight: 600;
-}
-.progress-holder .progress-box:first-child:before {
-    display: none;
-}
+.circle-yellow.percent_more:after {background: #f3f374;}
+.progress-box {display: inline-flex; align-items: center; gap: 15px; position: relative; padding-left: 25px;}
+.progress-box:before {content: ""; position: absolute; left: 0; top: 50%; height: calc(100% - 20px); width: 1px; background-color: #ddd; transform: translateY(-50%);}
+.progress-holder .progress-box:first-child {padding-left: 0; border: 0;}
+.progress-box .progress-lable {color: #999; font-weight: 600;}
+.progress-holder .progress-box:first-child:before {display: none;}
 /* Topic-parts-data style End */
 /* Questions Generator Column Setting Dropdown Style Start*/
 .columns-settings .dropdown-menu {width: 300px; right: 0; left: auto !important; transform: none !important; top: 100% !important;}
