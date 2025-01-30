@@ -367,7 +367,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 
 .card .card-body .section-title {margin: 30px 0 10px 0; font-size: 16px;}
 
-.card .card-body .section-title:before {margin-top: 8px;}
+.card .card-body .section-title:before {margin-top: 0;}
 
 .card .card-body .section-title + .section-lead {margin-top: -5px;}
 
