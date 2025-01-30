@@ -89,7 +89,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
         </ul>
 
         <div class="tab-pane mt-3 fade show active " id="all_layers{{$data_id}}" role="tabpanel" aria-labelledby="all_layers-tab{{$data_id}}">
-            <ul class="editor-objects-list {{$data_id}}">
+            <ul class="editor-objects-list editor-objects-list-all {{$data_id}}">
                 @php
                     if( isset( $itemObj->id ) && !empty( $itemObj->LearningJourneyObjects->where('status','active') )){
                         foreach( $itemObj->LearningJourneyObjects->where('status','active') as $learningJourneyItemObj){
