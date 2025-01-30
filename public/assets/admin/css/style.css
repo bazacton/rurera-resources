@@ -1190,9 +1190,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     .main-content {padding-left: 15px; padding-right: 15px; width: 100% !important;}
     .main-footer {padding-left: 30px;}
     .card .card-header, .card .card-body, .card .card-footer {padding: 20px 15px !important;}
-    .card.card-statistic-1 .card-header, .card.card-statistic-2 .card-header {
-        padding-bottom: 0 !important;
-    }
+    .card.card-statistic-1 .card-header, .card.card-statistic-2 .card-header {padding-bottom: 0 !important;}
     .card.card-statistic-1 .card-body {padding: 0 !important;}
 }
 
@@ -1544,66 +1542,16 @@ body:has(.multi-choice-template-modal.show) .modal {overflow-x: hidden; overflow
 .template-item.active .template-box {border-color: transparent; box-shadow: 0 0 8px 2px #27325e94;}
 .template-box .card-icon {height: calc(100% - 50px); display: flex; flex-direction: column; position: relative; margin-bottom: 25px; overflow: hidden; cursor: pointer; border-bottom: 1px solid #ddd; padding-bottom: 25px;}
 .template-box .card-icon:before {content: ""; position: absolute; left: 0; top: 0; height: 100%; width: 100%; pointer-events: none; display: flex; justify-content: center; align-items: center; background-image: url(/assets/default/svgs/zoom2.svg); transition: all .5s; -webkit-transition: all .5s; -o-transition: all .5s; background-size: 10%; background-repeat: no-repeat; background-position: center; opacity: 0; visibility: hidden; margin-top: -10px;}
-.template-box .card-icon:hover:before {
-    opacity: 0.3;
-    visibility: visible;
-    margin-top: 0;
-}
-.template-controls .template-btn {
-    background-color: inherit;
-    border: 1px solid var(--blue);
-    padding: 6px 10px;
-    border-radius: 5px;
-    color: var(--blue);
-    outline: none;
-    white-space: nowrap;
-}
+.template-box .card-icon:hover:before {opacity: 0.3; visibility: visible; margin-top: 0;}
+.template-controls .template-btn {background-color: inherit; border: 1px solid var(--blue); padding: 6px 10px; border-radius: 5px; color: var(--blue); outline: none; white-space: nowrap;}
 .template-controls .template-btn:hover,
-.template-item.active .template-controls .template-btn {
-    background-color: var(--blue);
-    color: var(--white);
-}
-.template-controls .preview-template-btn {
-    color: var(--purple);
-    outline: none;
-    padding: 0;
-    background-color: inherit;
-    border: 0;
-}
-.multi-choice-template-modal .form-control {
-    width: auto;
-    max-width: 350px;
-    min-width: 350px;
-}
-.search-filed {
-    display: inline-block;
-    position: relative;
-}
-.search-filed i {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    font-size: 16px;
-    color: #bbb;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-}
-.choose-fields {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-.choose-types input[type=radio] {
-    position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
-}
+.template-item.active .template-controls .template-btn {background-color: var(--blue); color: var(--white);}
+.template-controls .preview-template-btn {color: var(--purple); outline: none; padding: 0; background-color: inherit; border: 0;}
+.multi-choice-template-modal .form-control {width: auto; max-width: 350px; min-width: 350px;}
+.search-filed {display: inline-block; position: relative;}
+.search-filed i {position: absolute; right: 15px; top: 50%; font-size: 16px; color: #bbb; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);}
+.choose-fields {display: flex; align-items: center; gap: 10px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;}
+.choose-types input[type=radio] {position: absolute; width: 0; height: 0; opacity: 0;}
 .choose-types .choose-box label {
     margin: 0;
     border: 1px solid #ddd;
