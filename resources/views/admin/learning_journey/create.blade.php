@@ -116,8 +116,8 @@
             cursor: pointer;
         }
         .ui-rotatable-handle::before {
-            content: '\f2ea'; /* Font Awesome rotate icon */
-            font-family: 'Font Awesome 5 Free';
+            content: '\f111'; /* Font Awesome rotate icon */
+            font-family: 'Font Awesome 6 Free';
             font-weight: 900;
             color: white;
             font-size: 12px;
@@ -682,7 +682,9 @@
                 console.log('no_path_added_1111111111111');
                 levels_sorting_render();
             }*/
+            sorting_render();
             if(!$(this).hasClass('collapsed')){
+                sorting_render();
                 levels_sorting_render();
             }
         });
