@@ -37,6 +37,12 @@
     height: 2px;
     width: 100%;
     background-color: cadetblue;
+    opacity: 0;
+    visibility: hidden;
+}
+.draggable-content-lists li.active:after {
+    opacity: 1;
+    visibility: visible;
 }
 .draggable-content-lists li.active {background-color: #f7fbfe !important; border-bottom-color: cadetblue;}
 .draggable-content-lists li:first-child {border-left: 1px solid #ddd; border-radius: 5px 0 0 0 !important;}
