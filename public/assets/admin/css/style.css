@@ -502,6 +502,13 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .assignments-table .circle-green .round_per, 
 .assignments-table .circle-green.percent_more:after {background: #47c363;}
 .hide-lg {display: none;}
+.dropdown-menu[x-placement^=bottom], .dropdown-menu[x-placement^=left], 
+.dropdown-menu[x-placement^=right], .dropdown-menu[x-placement^=top] {
+    right: 0;
+    bottom: auto;
+    left: auto !important;
+    top: auto !important;
+}
 /* Assignments New Table Style End */
 
 @media (max-width: 575.98px) {
