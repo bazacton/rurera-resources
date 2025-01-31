@@ -61,20 +61,9 @@ Left SideBar-menu Start
 .border-radius-10 {border-radius: 10px;}
 .notification-card:hover button,
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse li.active:before {background-color: var(--primary)}
-.sidebar-menu-holder {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-.sidebar-menu-holder .tooltip {
-    left: auto !important;
-    right: auto;
-    display: none;
-}
-.parent-panel .sidebar-menu-holder .tooltip {
-    left: 0 !important;
-    right: 0;
-}
+.sidebar-menu-holder {width: 100%; display: flex; justify-content: flex-end;}
+.sidebar-menu-holder .tooltip {left: auto !important; right: auto; display: none;}
+.parent-panel .sidebar-menu-holder .tooltip {left: 0 !important; right: 0;}
 @media (min-width:1601px) {
     .sidebar-menu-holder .tooltip {
         left: 0 !important;
@@ -115,9 +104,7 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse li:last-child {border-bottom: 0;}
 .noticeboard-item button {padding-left: 10px; padding-right: 10px;}
 .monthly-sales-card .monthly-sales-chart {height: -webkit-max-content;height: -moz-max-content; height: max-content;}
-.panel-shadow {
-    box-shadow: 0 12px 23px 0 rgba(62, 73, 84, .04)
-}
+.panel-shadow {box-shadow: 0 12px 23px 0 rgba(62, 73, 84, .04)}
 .conversation-box {
     border-radius: 10px;
     border: 1px solid #ececec
