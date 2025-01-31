@@ -91,71 +91,19 @@
 .sats-listing-card.medium .text-holder h4 {margin-bottom: 0;}
 .sats-listing-card table {width: 100%;}
 .sats-listing-card table img {max-width: 50px; display: inline-block; margin-right: 15px;}
-.sats-listing-card table h4 {
-    display: inline-block;
-    vertical-align: middle;
-    width: calc(100% - 70px);
-    line-height: normal;
-    position: relative;
-}
-.sats-listing-card table h4 img {
-    vertical-align: middle;
-    margin: 0;
-    max-width: 60px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.sats-listing-card thead {
-    background-color: var(--primary);
-}
-.sats-listing-card.medium {
-    border-radius: 0;
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 0 0 15px;
-    width: 100%;
-    overflow: hidden;
-    overflow-x: auto;
-}
-.sats-listing-card thead th, .panel-section-card .custom-table thead td, .panel-section-card .custom-table thead th {
-    padding: 15px 20px;
-    color: #333;
-    text-align: left;
-    font-weight: 600;
-}
-.sats-listing-card tbody tr td:nth-child(2) {
-    min-width: 500px;
-    padding-left: 10px;
-}
-.col-lg-9 .sats-listing-card tbody tr td:nth-child(2) {
-    min-width: 390px;
-}
-.sats-listing-card .rurera-unlock-item img, .sats-listing-card .rurera-lock-item img {
-    margin-right: 0;
-}
-.panel-content .sats-listing-card tbody tr td:nth-child(2) {
-    min-width: auto;
-}
-.sats-listing-card tbody tr td {
-    border-bottom: 1px solid #ececec;
-    padding: 25px 20px;
-}
-.sats-listing-card .attempt-progress {
-    min-width: 120px;
-}
-.sats-listing-card.medium .media-holder {
-    margin: -15px 0 0 12px;
-    background-color: #fff;
-    width: 100px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    min-height: 120px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
+.sats-listing-card table h4 {display: inline-block; vertical-align: middle; width: calc(100% - 70px); line-height: normal; position: relative;}
+.sats-listing-card table h4 img {vertical-align: middle; margin: 0; max-width: 60px; position: absolute; top: 50%; transform: translateY(-50%);}
+.sats-listing-card thead {background-color: var(--primary);}
+.sats-listing-card.medium {border-radius: 0; display: flex; align-items: flex-start; flex-wrap: wrap; padding: 0 0 15px; width: 100%; overflow: hidden; overflow-x: auto;}
+.sats-listing-card thead th, .panel-section-card .custom-table thead td, 
+.panel-section-card .custom-table thead th {padding: 15px 20px; color: #333; text-align: left; font-weight: 600;}
+.sats-listing-card tbody tr td:nth-child(2) {min-width: 500px; padding-left: 10px;}
+.col-lg-9 .sats-listing-card tbody tr td:nth-child(2) {min-width: 390px;}
+.sats-listing-card .rurera-unlock-item img, .sats-listing-card .rurera-lock-item img {margin-right: 0;}
+.panel-content .sats-listing-card tbody tr td:nth-child(2) {min-width: auto;}
+.sats-listing-card tbody tr td {border-bottom: 1px solid #ececec; padding: 25px 20px;}
+.sats-listing-card .attempt-progress {min-width: 120px;}
+.sats-listing-card.medium .media-holder {margin: -15px 0 0 12px; background-color: #fff; width: 100px; box-shadow: 0 0 5px rgba(0,0,0,0.2); min-height: 120px; display: inline-flex; align-items: center; justify-content: center; position: relative;}
 .sats-listing-card.medium .media-holder:after, .sats-listing-card.medium .media-holder:before {
     width: 0;
     height: 0;
@@ -212,8 +160,8 @@
 .panel-section-card tbody tr:nth-child(even), .panel-section-card tbody tr:nth-child(even) {
     background-color: #fff !important;
 }
-
-.sats-listing-card.medium .simple-table tbody tr:nth-child(odd), .panel-section-card tbody tr:nth-child(odd), .sats-listing-card.medium .simple-table tbody tr:hover {
+.sats-listing-card.medium .simple-table tbody tr:nth-child(odd), .panel-section-card tbody tr:nth-child(odd), 
+.sats-listing-card.medium .simple-table tbody tr:hover {
     background-color: inherit !important;
 }
 .sats-listing-card.medium .total-tests {
