@@ -851,8 +851,8 @@ pre {border-radius: 3px;}
     }
 }
 
-.overlay-gradient-bottom:after {content: ' '; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: inherit; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.65) 100%); z-index: 1;}
-.overlay-gradient-top:after {content: ' '; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: inherit; background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.65) 100%); z-index: 1;}
+.overlay-gradient-bottom:after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: inherit; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.65) 100%); z-index: 1;}
+.overlay-gradient-top:after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: inherit; background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.65) 100%); z-index: 1;}
 .index-1 {z-index: 1 !important;}
 .index-2 {z-index: 2 !important;}
 .index-3 {z-index: 3 !important;}
@@ -1219,7 +1219,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .populated-data .questions-select-number input:checked ~ label {background-color: #f3f3f3; color: #000;}
 .populated-data .ui-widget.ui-widget-content {margin-top: 15px;}
 .select2-container--default .select2-selection--single {background-color: #fdfdff; border-color: #e4e6fc;}
-.populated-data .form-control {background-color: inherit; border-color: #ced4da; border-radius: 4px !important; appearance: none; -webkit-appearance: none; -moz-appearance: none; text-indent: 1px; text-overflow: ''; }
+.populated-data .form-control {background-color: inherit; border-color: #ced4da; border-radius: 4px !important; appearance: none; -webkit-appearance: none; -moz-appearance: none; text-indent: 1px; text-overflow: unset; }
 .populated-data .select2-selection--single,
 .populated-data .select2-container--default .select2-selection--multiple {background-color: #fff; border-color: #ced4da;}
 .populated-data .select2-container--default .select2-selection--single .select2-selection__arrow b {border: 0; }
