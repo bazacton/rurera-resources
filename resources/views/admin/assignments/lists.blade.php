@@ -251,7 +251,7 @@
                     </div>
 
                     <div class="col-md-3">
-                        <div class="form-group test">
+                        <div class="form-group">
                             <label class="input-label">{{ trans('admin/main.start_date') }}</label>
                             <div class="input-group">
                                 <input type="date" id="fsdate" class="text-center form-control" name="from"
