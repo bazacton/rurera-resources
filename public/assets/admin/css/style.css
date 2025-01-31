@@ -546,6 +546,7 @@ table td .dropdown-toggle {cursor: pointer;}
 .table-links a {color: #666;}
 table tr:hover .table-links {opacity: 1;}
 .table-striped tbody tr:nth-of-type(odd) {background-color: rgba(0, 0, 0, 0.02);}
+.table td:has(.btn-transparent) {min-width: 150px;}
 
 @media (max-width: 575.98px) {
     .table-responsive table {min-width: 800px;}
