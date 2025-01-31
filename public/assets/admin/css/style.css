@@ -84,7 +84,7 @@ a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {margin-left: 4px;
 .text-light, .text-light-all *, .text-light-all *:before, .text-light-all *:after {color: #e3eaef !important;}
 .text-white, .text-white-all *, .text-white-all *:before, .text-white-all *:after {color: #ffffff !important;}
 .text-dark, .text-dark-all *, .text-dark-all *:before, .text-dark-all *:after {color: #191d21 !important;}
-
+.btn-transparent {outline: none;}
 .font-weight-normal {font-weight: 500 !important;}
 
 .lead {line-height: 34px;}
