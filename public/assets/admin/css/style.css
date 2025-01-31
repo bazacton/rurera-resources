@@ -1807,6 +1807,11 @@ Admin Questions Generator Page Style End
 .similarity-content-tabs:has(#prompts-tab) .tab-content {padding-top: 25px;}
 /* Prompts Tab style End */
 .rureraform-context-menu {display: none;}
+/* Webinars Page style start */
+.draggable-lists-chapter li {
+    border: 1px solid #ddd;
+}
+/* Webinars Page style End */
 
 @media (min-width: 993px) {
     .edit-questions-tabs .similarity-content-block .nav {display: none;}
