@@ -1071,64 +1071,23 @@ scrollbar-gutter: stable both-edges;
 .question-layout .rureraform-col {padding:0 15px 20px !important;}
 .rurera-question-block:has(.question-number-holder) .question-layout {display: inline-block;width: 100%;padding-bottom: 0;}
 body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bottom: 130px;}
-.question-layout {
-    padding: 0;
-    display: inline-block;
-    width: 100%;
-}
-.question-layout.row {
-    align-items: center !important;
-}
+.question-layout {padding: 0; display: inline-block; width: 100%;}
+.question-layout.row {align-items: center !important;}
 .question-layout.row:has(.rureraform-col .image-field),
-.question-layout.row.align-items-start {
-    align-items: flex-start !important;
-}
-
-.question-layout .rureraform-element {
-	outline: 0 !important;
-	padding: 0;
-}
-.question-layout .rureraform-element p {
-    line-height: 25px;
-}
+.question-layout.row.align-items-start {align-items: flex-start !important;}
+.question-layout .rureraform-element {outline: 0 !important; padding: 0;}
+.question-layout .rureraform-element p {line-height: 25px;}
 .question-layout .rureraform-element:has(select),
 .rureraform-element:has(select),
-.rureraform-element:has(.input-holder.input_box) {
-	line-height: 25px;
-}
-.question-layout .rureraform-element:has(select ~ select) {
-    line-height: 40px;
-}
-.rureraform-builder .quiz-group ol {
-    padding-left: 15px;
-}
-.quiz-group ol li {
-    margin-top: 15px;
-}
-.learning-page .learning-content {
-	height: calc(100vh - 105px);
-}
-.question_hint {
-    font-style: italic;
-    color: #999;
-    display: block;
-    line-height: 24px;
-    padding-top: 10px;
-}
-.show-notifications {
-    display: inline-block;
-    width: 100%;
-}
-.show-notifications .question-status-wrong {
-    color: #db3a3a;
-    background-color: #fff4f4;
-    border: 1px solid #db3a3a;
-}
-.show-notifications .question-status-correct {
-    color: #155724;
-    background-color: #d4edda;
-    border: 1px solid #5cb871;
-}
+.rureraform-element:has(.input-holder.input_box) {line-height: 25px;}
+.question-layout .rureraform-element:has(select ~ select) {line-height: 40px;}
+.rureraform-builder .quiz-group ol {padding-left: 15px;}
+.quiz-group ol li {margin-top: 15px;}
+.learning-page .learning-content {height: calc(100vh - 105px);}
+.question_hint {font-style: italic; color: #999; display: block; line-height: 24px; padding-top: 10px;}
+.show-notifications {display: inline-block; width: 100%;}
+.show-notifications .question-status-wrong {color: #db3a3a; background-color: #fff4f4; border: 1px solid #db3a3a;}
+.show-notifications .question-status-correct {color: #155724; background-color: #d4edda; border: 1px solid #5cb871;}
 .show-notifications span {
     display: block;
     margin: 0 0 10px;
