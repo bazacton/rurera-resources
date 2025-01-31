@@ -1851,37 +1851,13 @@ Admin Questions Generator Page Style End
     .similarity-content-block .tab-content:has(.rureraform-admin-popup.active) > .tab-pane.question-details-tab-data > .col-12 {display: none;}
     .assignments-table .card {box-shadow: none; border: 0;}
     .assignments-table .card .card-body {padding: 0 !important;}
-    .table-sm table thead {
-        display: none;
-    }
-    .table-sm table.table tbody tr {
-        display: block;
-        margin-bottom: 15px;
-    }
-    .table-sm table.table tbody tr:last-child {
-        margin-bottom: 0;
-    }
-    .table-sm table.table tbody tr td {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px 15px !important;
-        border-bottom: 1px solid #ddd !important;
-        color: #999;
-        font-weight: 500;
-        gap: 10px;
-    }
-    .table-sm table.table tbody tr:first-child td {
-        padding: 15px 15px !important;
-    }
-    .table-sm table.table tbody tr:last-child td.border-sm-0 {
-        border-bottom: 0 !important;
-    }
-    .table-sm table.table tbody tr td:before {
-        content: attr(data-th);
-        color: #333;
-        font-weight: 600;
-    }
+    .table-sm table thead {display: none;}
+    .table-sm table.table tbody tr {display: block; margin-bottom: 15px}
+    .table-sm table.table tbody tr:last-child {margin-bottom: 0;}
+    .table-sm table.table tbody tr td {display: flex; align-items: center; justify-content: space-between; padding: 15px 15px !important;      border-bottom: 1px solid #ddd !important;color: #999;font-weight: 500; gap: 10px;}
+    .table-sm table.table tbody tr:first-child td {padding: 15px 15px !important;}
+    .table-sm table.table tbody tr:last-child td.border-sm-0 {border-bottom: 0 !important;}
+    .table-sm table.table tbody tr td:before {content: attr(data-th); color: #333; font-weight: 600;}
     .table-sm table.table tbody tr td.hide-lg {display: flex;}
     .table-sm table.table tbody tr td.hide-sm {display: none;}
 }
