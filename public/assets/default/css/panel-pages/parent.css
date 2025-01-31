@@ -1,10 +1,7 @@
 /*************************************
 Dashboard Right Sidebar Pages Style Start
 **************************************/
-.panel-right-sidebar .card-header {
-    border: 0;
-}
-
+.panel-right-sidebar .card-header {border: 0;}
 .top-navbar .dropdown-menu.user-profile-dropdown {min-width: 250px; border: 1px solid #e1e1e1; border-radius: 10px; padding: 15px 0 10px; visibility: hidden;opacity: 0;display: block !important;transition: all .5s ease;margin-top: 0;text-align: center; top: 100%;}
 .top-navbar .dropdown-menu.user-profile-dropdown .user-nav-detail img {margin: 0 0 15px;}
 .top-navbar .dropdown:hover .user-profile-dropdown {opacity: 1;  visibility: visible; margin-top: -5px;}
@@ -559,14 +556,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 .class-connect-modal .modal-header strong {font-size: 22px; color: var(--primary); width: 100%;}
 .class-connect-modal .user-details-block [class*="col-"] {width: 100%; flex: 0 0 100%; max-width: 100%; }
 .class-connect-modal .user-details-block .form-label {display: block; font-size: 18px; font-weight: 600; margin: 0 0 15px;}
-.class-connect-modal .user-details-block input[type="text"] {
-    width: 100%;
-    border: 1px solid #ddd;
-    font-size: 14px;
-    height: 40px;
-    padding: 0 10px;
-    border-radius: 3px;
-}
+.class-connect-modal .user-details-block input[type="text"] {width: 100%; border: 1px solid #ddd; font-size: 14px; height: 40px; padding: 0 10px; border-radius: 3px;}
 .class-connect-modal .input-field:has(.frontend-field-error) {padding: 0px; overflow: hidden;}
 .class-connect-modal .input-field:has(.frontend-field-error) input[type="text"] {border-radius: 5px; padding: 0 10px; }
 .class-connect-modal .user-details-block .class-code-submit {width: auto; margin-left: auto; margin-right: auto; margin-top: 20px !important; border-radius: 30px; }
