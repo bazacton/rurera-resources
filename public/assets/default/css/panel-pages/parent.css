@@ -628,57 +628,16 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 /*Lms Choose Membership Model Style End*/
 
 /* Full  Menu For Parent Style Start */
-.parent-panel .panel-sidebar, .parent-panel .xs-panel-nav {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 0 0 15px;
-    width: 100% !important;
-    position: relative !important;
-    height: auto;
-}
-.parent-panel .panel-sidebar > .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.parent-panel .sidebar-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-direction: row;
-}
-.parent-panel .panel-sidebar .sidebar-menu {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    padding-top: 0 !important;
-    padding: 0;
-    height: auto;
-    overflow: visible;
-}
-.parent-panel .panel-sidebar .sidebar-menu .sidenav-item {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-    padding: 0;
-}
-.parent-panel .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.parent-panel .panel-sidebar .sidebar-menu .sidenav-item:first-child .nav-sub-title {
-    bottom: 100%;
-    top: auto;
-}
-.parent-panel .panel-sidebar .sidebar-menu .sidenav-item:first-child .nav-sub-title:before {
-    top: auto;
-    bottom: -7px;
-}
-.parent-panel .sidebar-menu-holder .sidebar-logo {
-    display: none;
-}
+.parent-panel .panel-sidebar, .parent-panel .xs-panel-nav {background-color: #fff; border-bottom: 1px solid #ddd; padding: 0 0 15px; width: 100% !important; position: relative !important; height: auto;}
+.parent-panel .panel-sidebar > .container {display: flex; justify-content: space-between; align-items: center;}
+.parent-panel .sidebar-logo {display: flex; justify-content: center; align-items: center; gap: 20px; flex-direction: row;}
+.parent-panel .panel-sidebar .sidebar-menu {display: flex; align-items: flex-start; gap: 30px; padding-top: 0 !important; padding: 0; height: auto; overflow: visible;}
+.parent-panel .panel-sidebar .sidebar-menu .sidenav-item {display: flex; flex-wrap: wrap; align-items: center; position: relative; padding: 0;}
+.parent-panel .panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title {margin-top: 0; margin-bottom: 0;}
+.parent-panel .panel-sidebar .sidebar-menu .sidenav-item:first-child .nav-sub-title {bottom: 100%; top: auto;}
+.parent-panel .panel-sidebar .sidebar-menu .sidenav-item:first-child .nav-sub-title:before {top: auto; bottom: -7px;}
+.parent-panel .sidebar-menu-holder .sidebar-logo {display: none;}
+
 @media screen and (min-width: 992px) and (max-width: 1600px) {
     .parent-panel .sidebar-menu-holder {
         height: auto;
