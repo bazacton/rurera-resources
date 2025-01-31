@@ -60,7 +60,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 test@@">
+                <div class="col-md-3">
                     <div class="form-group">
                         <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                         <div class="input-group">
