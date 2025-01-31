@@ -1341,7 +1341,7 @@ body .question-step:has(.prev-next-controls) {padding-bottom: 0; }
 /*pages Book List Style End*/
 
 /*Topics Parts Create Output Table Start*/
-#outputTable textarea {overflow: hidden; width: 100%; padding: 15px 10px; border: 1px solid #ddd; resize: none; border-radius: 3px; outline: none; height: auto; field-sizing: content;}
+#outputTable textarea {overflow: hidden; width: 100%; padding: 15px 10px; border: 1px solid #ddd; resize: none; border-radius: 3px; outline: none; height: auto; box-sizing: content-box;}
 table#outputTable {width: 100%;}
 table#outputTable thead th {padding-bottom: 15px;}
 #outputTable td {padding: 0 15px 15px; vertical-align: top;}
@@ -1369,7 +1369,7 @@ table#outputTable thead th {padding-bottom: 15px;}
 /*Glossary Question_Edit_Part Modal Style Start*/
 .modal.question_edit_part_modal {background-color: #fff;}
 .question_edit_part_modal #dynamicContainer textarea.form-control,
-.question-generator-form .form-group textarea {field-sizing: content;}
+.question-generator-form .form-group textarea {box-sizing: content-box;}
 .multi-choice-template-modal .question-generator-form .form-group textarea {max-width: 100%; width: 100%;}
 /*Glossary Question_Edit_Part Modal Style End*/
 /*Topics_Parts Template_save_modal Style Start*/
