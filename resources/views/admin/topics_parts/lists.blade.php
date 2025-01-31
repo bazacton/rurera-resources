@@ -6,17 +6,14 @@
     .hide {
         display: none;
     }
-	
 	.defined-searches {
 		background: #efefef;
 		padding: 10px;
 	}
 	.defined-searches .apply-template-field {
 		margin-right: 10px;
-		padding-top: 9px;
 		display: inline-block;
 	}
-
 	.save-template {
 		float: right;
 	}
