@@ -97,62 +97,16 @@ Sub Pages Style
 /*analytics graph-data Style End*/
 .analytics-dropdown .select-holder {display: flex;align-items: center;flex-wrap: wrap;gap: 10px;}
 .analytics-dropdown {display: flex;align-items: center; flex-wrap: wrap; gap: 15px 30px; margin: 0 0 30px; position: relative;}
-.analytics-dropdown h5 {
-    color: #333;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-.analytics-dropdown select {
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  padding: 5px 10px;
-  min-width: 150px;
-  appearance: none;
-  text-transform: uppercase;
-  max-width: 150px;
-  font-size: 14px;
-  background: url(/assets/default/svgs/arrow-select.svg) no-repeat 95% 50%;
-  background-size: 15px;
-  cursor: pointer;
-}
-.date-range-holder {
-  display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-.analytics-dropdown .daterangepicker {
-  margin-right: -30px;
-}
-.date-range-box {
-    background: url(/assets/default/svgs/arrow-select.svg) no-repeat 95% 50%;
-    background-size: 15px;
-    border: 1px solid #ddd;
-    padding: 5px 30px 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    position: relative;
-}
-.date-range-holder input {
-  font-size: 14px;
-  border: 0;
-  width: 100%;
-  cursor: pointer;
-  min-width: 175px;
-}
-.date-range-box .daterangepicker {
-  width: 100%;
-  margin-left: -10px;
-}
-.date-range-box .daterangepicker .ranges ul {
-  width: 100%;
-}
-.date-range-box .daterangepicker .ranges {
-  width: 100%;
-}
-.rurera-hide {
-  display: none;
-}
+.analytics-dropdown h5 {color: #333; font-weight: 500; text-transform: capitalize;}
+.analytics-dropdown select {border: 1px solid #ddd; border-radius: 3px; padding: 5px 10px; min-width: 150px; appearance: none; text-transform: uppercase; max-width: 150px; font-size: 14px; background: url(/assets/default/svgs/arrow-select.svg) no-repeat 95% 50%; background-size: 15px; cursor: pointer;}
+.date-range-holder {display: flex; align-items: center; gap: 10px; flex-wrap: wrap;}
+.analytics-dropdown .daterangepicker {margin-right: -30px;}
+.date-range-box {background: url(/assets/default/svgs/arrow-select.svg) no-repeat 95% 50%; background-size: 15px; border: 1px solid #ddd; padding: 5px 30px 5px 10px; border-radius: 3px; cursor: pointer; position: relative;}
+.date-range-holder input {font-size: 14px; border: 0; width: 100%; cursor: pointer; min-width: 175px;}
+.date-range-box .daterangepicker {width: 100%; margin-left: -10px;}
+.date-range-box .daterangepicker .ranges ul {width: 100%;}
+.date-range-box .daterangepicker .ranges {width: 100%;}
+.rurera-hide {display: none;}
 /***************************
 Analytics Page | Student Panel Style End
   ***************************/
