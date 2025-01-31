@@ -8,22 +8,9 @@ section:has(.edit-profile-content) {overflow: hidden;}
 .profile-image-holder img#profileImagePreview {border-radius: 5px;border: 3px solid #fff;box-shadow: 0 0 8px rgba(0,0,0,0.2);}
 .svga-light #svga-start-overlay {background-color: #fff;}
 .svga-light #svga-gender {background-color: #fff;}
-.svga-col-right .svga-elements svg {
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.svga-col-right .svga-elements svg g{
-    transform: none;
-}
-.svga-col-right .svga-elements {
-    padding: 9%;
-}
+.svga-col-right .svga-elements svg {-webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);left: 50%; top: 50%; display: flex; align-items: center; justify-content: center;}
+.svga-col-right .svga-elements svg g{transform: none;}
+.svga-col-right .svga-elements {padding: 9%;}
 .rurera-button-loader .preloader {position: absolute; top: 50%; left: 50%; z-index: 1; transform: translate(-50%, -50%); text-align: center;}
 .rurera-button-loader .preloader img {width: 300px; object-fit: contain; height: 300px;}
 span.preloader-text {display: block; width: 60%; text-align: center; margin: 0 auto;}
