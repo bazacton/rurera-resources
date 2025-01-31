@@ -155,7 +155,7 @@
                         <h6 class="mb-0"><span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt=""></span> Issue in Testing</h6>
                     </div>
                     <div class="card-body p-0">
-                        <table class="table mb-0">
+                        <table class="table mb-0 table-sm">
                             <thead class="thead-light">
                                 <tr>
                                     <th>Type</th>
@@ -169,11 +169,11 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Vocabulary</td>
-                                    <td>0</td>
-                                    <td>50</td>
-                                    <td>11 Sep 05:00 / 16 Sep 05:00</td>
-                                    <td>
+                                    <td data-th="Type">Vocabulary</td>
+                                    <td data-th="Questions">0</td>
+                                    <td data-th="Participations">50</td>
+                                    <td data-th="Start & End Date">11 Sep 05:00 / 16 Sep 05:00</td>
+                                    <td data-th="Accuracy">
                                         <div class="circle_percent circle-green" data-percent="50">
                                             <div class="circle_inner">
                                                 <div class="round_per" style="transform: rotate(360deg);"></div>
@@ -183,8 +183,8 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="text-success font-weight-bold">Active</td>
-                                    <td>
+                                    <td data-th="Status" class="text-success font-weight-bold">Active</td>
+                                    <td data-th="Actions">
                                         <div class="dropdown-box">
                                             <div class="dropdown">
                                                 <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -200,11 +200,11 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Vocabulary</td>
-                                    <td>0</td>
-                                    <td>50</td>
-                                    <td>11 Sep 05:00 / 16 Sep 05:00</td>
-                                    <td>
+                                    <td data-th="Type">Vocabulary</td>
+                                    <td data-th="Questions">0</td>
+                                    <td data-th="Participations">50</td>
+                                    <td data-th="Start & End Date">11 Sep 05:00 / 16 Sep 05:00</td>
+                                    <td data-th="Accuracy">
                                         <div class="circle_percent circle-green" data-percent="50">
                                             <div class="circle_inner">
                                                 <div class="round_per" style="transform: rotate(360deg);"></div>
@@ -214,8 +214,8 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="text-success font-weight-bold">Active</td>
-                                    <td>
+                                    <td data-th="Status" class="text-success font-weight-bold">Active</td>
+                                    <td data-th="Actions">
                                         <div class="dropdown-box">
                                             <div class="dropdown">
                                                 <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
