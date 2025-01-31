@@ -268,6 +268,8 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 
 .colorinput-input:checked ~ .colorinput-color:before {opacity: 1;}
 
+.colorpickerinput .fa-fill-drip {color: #fff; padding: 5px; border-radius: 3px;}
+
 /* 3.3 List */
 .list-unstyled-border li {border-bottom: 1px solid #f9f9f9; padding-bottom: 15px; margin-bottom: 15px; }
 
