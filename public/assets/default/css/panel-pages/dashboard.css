@@ -65,12 +65,8 @@ Left SideBar-menu Start
 .sidebar-menu-holder .tooltip {left: auto !important; right: auto; display: none;}
 .parent-panel .sidebar-menu-holder .tooltip {left: 0 !important; right: 0;}
 @media (min-width:1601px) {
-    .sidebar-menu-holder .tooltip {
-        left: 0 !important;
-    }
-    .sidebar-menu-holder .tooltip {
-        display: none;
-    }
+    .sidebar-menu-holder .tooltip {left: 0 !important;}
+    .sidebar-menu-holder .tooltip {display: none;}
 }
 .sidebar-menu-holder .tooltip-inner {white-space: nowrap;}
 #nextBadgeChart path {stroke-width: 10px; stroke-dasharray: 10, 20; stroke-linecap: round;}
@@ -537,9 +533,7 @@ Left SideBar-menu End
 *************************/
 
 /*Filter For Mobile Button Style*/
-.filter-mobile-btn {
-    display: none;
-}
+.filter-mobile-btn {display: none;}
 /*Filter For Mobile Button Style End*/
 /*Panel Content Default Style*/
 .panel-content {padding: 30px 15px 30px 254px; width: calc(100% - 254px); width: 100%;}
@@ -598,9 +592,7 @@ body:has(.edit-profile) {background-color: #f9fafe;}
 /*Panel Content Default Style End*/
 
 /*Panel Right-Sidebar Hide Style*/
-.panel-right-sidebar.full-width-sidebar {
-    display: none;
-}
+.panel-right-sidebar.full-width-sidebar {display: none;}
 /*Panel Right-Sidebar Hide Style End*/
 
 /*Test-List Default Style For Timestables Practice Page*/
