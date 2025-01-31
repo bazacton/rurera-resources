@@ -191,23 +191,10 @@ address .info-list-label {color: #64748b;}
 .profile-controls .icon-box {height: 15px; width: 15px;}
 .profile-controls .icon-box img {max-width: 100%; filter: invert(58%) sepia(88%) saturate(5319%) hue-rotate(220deg) brightness(97%) contrast(105%);}
 .edit-profile-controls img,
-.reset-btn img {
-    height: 12px;
-    width: 12px;
-    object-fit: contain;
-    margin-right: 5px;
-}
-.edit-profile .custom-switch {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.edit-profile .custom-switch em {
-    font-style: normal;
-}
-.edit-profile .custom-switch input[type=checkbox], .edit-profile .custom-switch input[type=radio] {
-    margin-right: 10px;
-}
+.reset-btn img {height: 12px; width: 12px; object-fit: contain; margin-right: 5px;}
+.edit-profile .custom-switch {display: flex; align-items: center; flex-wrap: wrap;}
+.edit-profile .custom-switch em {font-style: normal;}
+.edit-profile .custom-switch input[type=checkbox], .edit-profile .custom-switch input[type=radio] {margin-right: 10px;}
 .edit-profile .custom-switch .custom-switch-description {margin-left: 5px;}
 /* User Detail Style End */
 
