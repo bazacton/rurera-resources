@@ -292,12 +292,18 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .card.card-hero .card-header .card-icon .ion, .card.card-hero .card-header .card-icon .fas, 
 .card.card-hero .card-header .card-icon .far, .card.card-hero .card-header .card-icon .fab, 
 .card.card-hero .card-header .card-icon .fal {font-size: 140px;}
-.card.card-statistic-1 .card-header, .card.card-statistic-2 .card-header {border-color: transparent; padding-bottom: 0; height: auto; min-height: auto; display: block;}
+.card.card-statistic-1 .card-header, .card.card-statistic-2 .card-header {
+    border-color: transparent;
+    height: auto;
+    min-height: auto;
+    padding: 0;
+}
 .card.card-statistic-1 .card-header h4,
 .card.card-statistic-2 .card-header h4 {line-height: 1.2; color: #98a6ad;}
 .card.card-statistic-1 .card-body,
 .card.card-statistic-2 .card-body {padding-top: 0;}
-.card.card-statistic-1 .card-body, .card.card-statistic-2 .card-body {font-size: 26px; font-weight: 700; color: #34395e; padding-bottom: 0;}
+.card.card-statistic-1 .card-body, 
+.card.card-statistic-2 .card-body {font-size: 26px; font-weight: 700; color: #34395e; padding-bottom: 0;}
 .card.card-statistic-1, 
 .card.card-statistic-2 {
     width: 100%;
@@ -339,6 +345,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     font-size: 20px;
     flex: 0;
     line-height: normal;
+    padding: 0;
 }
 .card.card-statistic-2 .card-chart {padding-top: 20px; margin-left: -9px; margin-right: -1px; margin-bottom: -15px;}
 .card.card-statistic-2 .card-chart canvas {height: 90px !important; }
