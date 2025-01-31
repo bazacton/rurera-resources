@@ -337,12 +337,7 @@ a.last-activity span strong {color: #343434;}
 .subscribe-plan .subscribe-popular {position: absolute; right: 20px; top: 20px; color: #7668e3; border-radius: 2px; background-color: #e9e7fd; font-size: 15px; padding: 2px 10px;}
 .subscribe-plan .subscribe-title {text-align: center; margin: 0 0 10px;}
 .subscribe-plan .subscribe-title span {color: #807f85;}
-.subscribe-plan .plan-header {
-    display: flex;
-    align-items: center;
-    gap: 0 15px;
-    margin: 0 0 15px;
-  }
+.subscribe-plan .plan-header {display: flex; align-items: center; gap: 0 15px; margin: 0 0 15px;}
 /*Dashboard Packages Style End*/
 .panel-content {padding: 30px 15px 30px 15px;}
 @media (max-width:991px) {
