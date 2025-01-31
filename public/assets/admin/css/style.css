@@ -508,6 +508,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
     bottom: auto;
     left: auto !important;
     top: auto !important;
+    transform: none !important;
 }
 /* Assignments New Table Style End */
 
