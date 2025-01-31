@@ -96,14 +96,7 @@ Sub Pages Style
 .form-control.child-analytics {background-color: inherit; border: 0; border-radius: 0; height: auto; padding: 0 5px; font-size: 15px; width: auto; display: inline-block;}
 /*analytics graph-data Style End*/
 .analytics-dropdown .select-holder {display: flex;align-items: center;flex-wrap: wrap;gap: 10px;}
-.analytics-dropdown {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px 30px;
-    margin: 0 0 30px;
-    position: relative;
-}
+.analytics-dropdown {display: flex;align-items: center; flex-wrap: wrap; gap: 15px 30px; margin: 0 0 30px; position: relative;}
 .analytics-dropdown h5 {
     color: #333;
     font-weight: 500;
