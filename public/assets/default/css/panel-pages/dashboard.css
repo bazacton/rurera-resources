@@ -542,15 +542,9 @@ Left SideBar-menu End
 }
 /*Filter For Mobile Button Style End*/
 /*Panel Content Default Style*/
-.panel-content {
-    padding: 30px 15px 30px 254px;
-    width: calc(100% - 254px);
-    width: 100%;
-}
+.panel-content {padding: 30px 15px 30px 254px; width: calc(100% - 254px); width: 100%;}
 body:has(.db-members),
-body:has(.edit-profile) {
-    background-color: #f9fafe;
-}
+body:has(.edit-profile) {background-color: #f9fafe;}
 /*Dashboard-banner For Parent Page Style Start*/
 .dashboard-banner-container {margin-top: 80px; min-height: 250px;}
 .dashboard-banner-container h2 {position: relative; z-index: 1;}
@@ -594,35 +588,11 @@ body:has(.edit-profile) {
 .list-box strong {font-size: 19px; line-height: normal; font-weight: 600; position: relative; margin: 0 0 3px; display: inline-block; }
 .list-box strong:after {content: "\2197"; color: #1ddeaf; display: inline-block; margin: 0 0 0 2px; vertical-align: top; font-size: 16px; font-weight: 500;}
 .list-box span {font-size: 14px; display: block; line-height: normal;}
-.panel-subheader {
-    background: url(/assets/default/img/subheader-bg1.png) no-repeat right bottom #ebf3fe;
-    background-position: 95% 100%;
-    padding: 20px 20px;
-    border-radius: 5px;
-    margin: 0 0 25px;
-    position: relative;
-}
-.learning-journey-levels .panel-subheader .title {
-    margin: 0 0 25px;
-}
-.learning-journey-levels .panel-subheader h2 {
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 0;
-}
-.panel-subheader .info-modal-btn {
-    height: 20px;
-    width: 20px;
-    display: inline-block;
-    cursor: pointer;
-    line-height: 20px;
-    margin-left: 5px;
-    vertical-align: middle;
-}
-.panel-subheader .info-modal-btn img {
-    max-width: 100%;
-    vertical-align: top;
-}
+.panel-subheader {background: url(/assets/default/img/subheader-bg1.png) no-repeat right bottom #ebf3fe; background-position: 95% 100%; padding: 20px 20px; border-radius: 5px; margin: 0 0 25px; position: relative;}
+.learning-journey-levels .panel-subheader .title {margin: 0 0 25px;}
+.learning-journey-levels .panel-subheader h2 {display: inline-block; vertical-align: middle; margin-bottom: 0;}
+.panel-subheader .info-modal-btn {height: 20px; width: 20px; display: inline-block; cursor: pointer; line-height: 20px; margin-left: 5px; vertical-align: middle;}
+.panel-subheader .info-modal-btn img {max-width: 100%; vertical-align: top;}
 /*Panel Stats For Subject and treasure-mission Style End*/
 
 /*Panel Content Default Style End*/
