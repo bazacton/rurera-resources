@@ -82,12 +82,7 @@ Sub Pages Style
 .spell-words-data .word-block label .down-arrow {content: ""; position: absolute; right: 10px; top: 50%; height: 6px; width: 6px; border: 1px solid #666; border-left: transparent; border-top: transparent; transform: rotate(45deg); margin-top: -5px; pointer-events: none;}
 .spell_words_popup .spell-words-filters input.search-word {height: 36px; padding: 5px 10px; }
 .spell-words-data {padding-top: 30px; display: flex; flex-wrap: wrap; gap: 0 15px; align-items: flex-start; position: relative;}
-.spell-words-data .word-block-inner {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0 10px;
-}
+.spell-words-data .word-block-inner {width: 100%; display: flex; flex-wrap: wrap; gap: 0 10px;}
 .spell-words-data .word-block {display: inline-block; width: 32.3%; }
 .spell-words-data .word-block:has(label.collapsed){border-bottom: 1px solid #ececec;}
 .spell-words-data .word-block label {margin-bottom: 0; font-weight: 400; position: relative; background-color: #e8f0fd; padding: 15px 0; width: 100%;}
