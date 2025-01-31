@@ -690,7 +690,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                             <div class="builder-right-sidebar-expand">
                                                 <button type="button" class="sidebar-expand-btn"><i class="fas fa-chevron-left"></i></button>
                                             </div>
-											<div class="topic-parts-block">
+											<div class="topic-parts-block has-border">
 												<h3> Topics Parts </h3>
 												<a href="javascript:;" class="add-part-modal">Add New Part</a>
 												<div class="topic-parts-options"></div>
