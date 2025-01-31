@@ -22,7 +22,7 @@
 
     <div class="mt-30 d-flex align-items-center justify-content-end">
         <a href="" target="_blank" class="js-join-meeting-link btn btn-sm btn-primary">{{ trans('footer.join') }}</a>
-        <button type="button" class="btn btn-sm btn-danger ml-10 close-swl test-btn">{{ trans('public.close') }}</button>
+        <button type="button" class="btn btn-sm btn-danger ml-10 close-swl">{{ trans('public.close') }}</button>
     </div>
 </div>
 @push('scripts_bottom')
