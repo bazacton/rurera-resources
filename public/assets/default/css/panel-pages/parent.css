@@ -593,22 +593,10 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 #progbar {margin-bottom: 15px;}
 .flexible-progress-bar li .icon-box img {max-width: 50%; filter: invert(98%) sepia(4%) saturate(4%) hue-rotate(264deg) brightness(107%) contrast(73%);}
 .googlepay-gateway-fields section.container {margin-top: 0 !important;}
-.social-info-holder .row {
-    gap: 25px 0;
-}
-.social-info-card-header {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 10px;
-}
-.lms-choose-membership .social-info-card-header h5 {
-    margin-bottom: 0;
-}
-.social-info-card-header h5 {
-    width: calc(100% - 70px);
-}
+.social-info-holder .row {gap: 25px 0;}
+.social-info-card-header {display: flex; align-items: center; flex-wrap: wrap; gap: 15px; margin-bottom: 10px;}
+.lms-choose-membership .social-info-card-header h5 {margin-bottom: 0;}
+.social-info-card-header h5 {width: calc(100% - 70px);}
 .social-info-card .icon-box {height: 45px; width: 50px; display: inline-flex; align-items: center; justify-content: center; background-color: #cfe3f4; padding: 8px; border-radius: 3px;}
 .social-info-card .icon-box img {max-width: 100%;}
 .class-connect-modal .unlink-block.rurera-processing .unlink-btn {box-shadow: none;}
