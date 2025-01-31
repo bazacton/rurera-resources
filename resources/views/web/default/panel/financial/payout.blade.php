@@ -115,7 +115,7 @@
     @endif
 
     <div id="requestPayoutModal" class="d-none">
-        <h3 class="section-title after-line font-20 text-dark-blue mb-25">{{ trans('financial.payout_confirmation') }}</h3>
+        <h3 class="section-title after-line font-20 text-dark-blue mb-15">{{ trans('financial.payout_confirmation') }}</h3>
         <p class="text-gray mt-15">{{ trans('financial.payout_confirmation_hint') }}</p>
         <form method="post" action="/panel/financial/request-payout">
             {{ csrf_field() }}
