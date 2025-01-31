@@ -105,51 +105,18 @@ Left SideBar-menu Start
 .noticeboard-item button {padding-left: 10px; padding-right: 10px;}
 .monthly-sales-card .monthly-sales-chart {height: -webkit-max-content;height: -moz-max-content; height: max-content;}
 .panel-shadow {box-shadow: 0 12px 23px 0 rgba(62, 73, 84, .04)}
-.conversation-box {
-    border-radius: 10px;
-    border: 1px solid #ececec
-}
+.conversation-box {border-radius: 10px; border: 1px solid #ececec;}
 .conversation-box,
-.selected-row {
-    background-color: #f7fafd
-}
+.selected-row {background-color: #f7fafd;}
 .panel-sidebar,
-.xs-panel-nav {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 0 0 15px;
-}
-.panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title {
-    font-weight: 600;
-}
-.panel-sidebar .sidebar-menu .sidenav-item a .crown-icon {
-    width: 18px;
-    vertical-align: middle;
-    margin-left: 8px;
-}
-.panel-sidebar .sidebar-menu .dropdown-menu li a {
-    display: block;
-    padding: 5px 15px;
-    font-weight: 400;
-    text-transform: capitalize;
-}
-.conversations-list {
-    max-height: 710px;
-    overflow: auto
-}
-.col-lg-5.conversations-list .table-responsive {
-    min-width: 660px;
-}
-.conversations-card {
-    max-height: 405px;
-    overflow: auto
-}
-.notification-card {
-    border: 1px solid #ddd;
-    transition: .3s;
-    box-shadow: none;
-    padding: 25px 20px !important;
-}
+.xs-panel-nav {background-color: #fff; border-bottom: 1px solid #ddd; padding: 0 0 15px;}
+.panel-sidebar .sidebar-menu .sidenav-item .nav-sub-title {font-weight: 600;}
+.panel-sidebar .sidebar-menu .sidenav-item a .crown-icon {width: 18px; vertical-align: middle; margin-left: 8px;}
+.panel-sidebar .sidebar-menu .dropdown-menu li a {display: block; padding: 5px 15px; font-weight: 400; text-transform: capitalize;}
+.conversations-list {max-height: 710px; overflow: auto;}
+.col-lg-5.conversations-list .table-responsive {min-width: 660px;}
+.conversations-card {max-height: 405px; overflow: auto;}
+.notification-card {border: 1px solid #ddd; transition: .3s; box-shadow: none; padding: 25px 20px !important;}
 .notification-card .badge {
     display: block;
     width: 16px;
