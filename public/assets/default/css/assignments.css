@@ -104,78 +104,27 @@
 .sats-listing-card tbody tr td {border-bottom: 1px solid #ececec; padding: 25px 20px;}
 .sats-listing-card .attempt-progress {min-width: 120px;}
 .sats-listing-card.medium .media-holder {margin: -15px 0 0 12px; background-color: #fff; width: 100px; box-shadow: 0 0 5px rgba(0,0,0,0.2); min-height: 120px; display: inline-flex; align-items: center; justify-content: center; position: relative;}
-.sats-listing-card.medium .media-holder:after, .sats-listing-card.medium .media-holder:before {
-    width: 0;
-    height: 0;
-    border-bottom: 14px solid #a1a5a6;
-    border-right: 12px solid transparent;
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -12px;
-}
-.sats-listing-card.medium .media-holder:before {
-    border-left: 12px solid transparent;
-    border-right: 0;
-    left: -12px;
-    right: auto;
-}
-.sats-listing-card.medium figure {
-    background-color: #fff;
-}
-.sats-listing-card.medium figure img {
-    max-width: 50px;
-}
-.sats-listing-card.medium .text-holder {
-    width: calc(100% - 115px);
-    padding: 15px 0 0 15px;
-}
-.sats-listing-card.medium .list-top {
-    display: flex;
-    align-items: center;
-    margin: 0 0 15px;
-}
-.sats-listing-card.medium .text-holder h4 {
-    font-weight: 500;
-    margin-bottom: 12px;
-}
-.sats-listing-card.medium .text-holder h4 a {
-    color: #39363f;
-}
-.sats-listing-card.medium .text-holder h4 .sub_label {
-    font-size: 14px;
-    padding-top: 5px;
-}
-.sats-listing-card.medium .text-holder p {
-    font-size: 14px;
-    color: #a0a4ad;
-    font-weight: 600;
-    margin: 0;
-}
-.sats-listing-card.medium .text-inner {
-    padding-right: 20px;
-}
+.sats-listing-card.medium .media-holder:after, 
+.sats-listing-card.medium .media-holder:before {width: 0; height: 0; border-bottom: 14px solid #a1a5a6; border-right: 12px solid transparent; content: ""; position: absolute; top: 0; right: -12px;}
+.sats-listing-card.medium .media-holder:before {border-left: 12px solid transparent; border-right: 0; left: -12px; right: auto;}
+.sats-listing-card.medium figure {background-color: #fff;}
+.sats-listing-card.medium figure img {max-width: 50px;}
+.sats-listing-card.medium .text-holder {width: calc(100% - 115px); padding: 15px 0 0 15px;}
+.sats-listing-card.medium .list-top {display: flex; align-items: center; margin: 0 0 15px;}
+.sats-listing-card.medium .text-holder h4 {font-weight: 500; margin-bottom: 12px;}
+.sats-listing-card.medium .text-holder h4 a {color: #39363f;}
+.sats-listing-card.medium .text-holder h4 .sub_label {font-size: 14px; padding-top: 5px;}
+.sats-listing-card.medium .text-holder p {font-size: 14px; color: #a0a4ad; font-weight: 600; margin: 0;}
+.sats-listing-card.medium .text-inner {padding-right: 20px;}
 .sats-listing-card.medium .simple-table tbody tr:nth-child(even), 
 .sats-listing-card.medium .simple-table tbody tr:nth-child(even):hover, 
-.panel-section-card tbody tr:nth-child(even), .panel-section-card tbody tr:nth-child(even) {
-    background-color: #fff !important;
-}
+.panel-section-card tbody tr:nth-child(even), .panel-section-card tbody tr:nth-child(even) {background-color: #fff !important;}
 .sats-listing-card.medium .simple-table tbody tr:nth-child(odd), .panel-section-card tbody tr:nth-child(odd), 
-.sats-listing-card.medium .simple-table tbody tr:hover {
-    background-color: inherit !important;
-}
-.sats-listing-card.medium .total-tests {
-    padding: 0 0 30px;
-}
-.sats-listing-card.medium table .total-tests {
-    padding-bottom: 10px;
-}
-.sats-listing-card.medium .simple-table tbody:has(.total-tests) tr:nth-child(even) {
-    background-color: inherit !important;
-}
-.sats-listing-card.medium .simple-table tbody:has(.total-tests) tr:nth-child(odd) {
-    background-color: #fff !important;
-}
+.sats-listing-card.medium .simple-table tbody tr:hover {background-color: inherit !important;}
+.sats-listing-card.medium .total-tests {padding: 0 0 30px;}
+.sats-listing-card.medium table .total-tests {padding-bottom: 10px;}
+.sats-listing-card.medium .simple-table tbody:has(.total-tests) tr:nth-child(even) {background-color: inherit !important;}
+.sats-listing-card.medium .simple-table tbody:has(.total-tests) tr:nth-child(odd) {background-color: #fff !important;}
 /*Sats-listing-card style on set-work-page end*/
 /* Timestable Heatmap Table style on set-work-page Start */
 .heatmap-section {position: relative; background: url(/assets/default/img/mountain.jpg) no-repeat; background-size: cover; padding-top: 70px; padding-bottom: 70px;}
