@@ -117,35 +117,13 @@ Left SideBar-menu Start
 .col-lg-5.conversations-list .table-responsive {min-width: 660px;}
 .conversations-card {max-height: 405px; overflow: auto;}
 .notification-card {border: 1px solid #ddd; transition: .3s; box-shadow: none; padding: 25px 20px !important;}
-.notification-card .badge {
-    display: block;
-    width: 16px;
-    height: 16px
-}
-.notification-card:hover {
-    border-color: #cecece;
-}
-.notification-card .request-action-btn {
-    padding: 0 20px;
-}
-.notification-card .notification-title {
-    text-transform: capitalize;
-}
-.notification-card:hover button {
-    color: #fff;
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-size: 1rem 1rem;
-}
-.notification-card button {
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-.panel-sidebar .container {
-    padding: 0;
-}
+.notification-card .badge {display: block; width: 16px; height: 16px}
+.notification-card:hover {border-color: #cecece;}
+.notification-card .request-action-btn {padding: 0 20px;}
+.notification-card .notification-title {text-transform: capitalize;}
+.notification-card:hover button {color: #fff; background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-size: 1rem 1rem;}
+.notification-card button {-webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out;}
+.panel-sidebar .container {padding: 0;}
 .sidebar-logo {
     display: flex;
     flex-direction: column;
