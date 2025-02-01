@@ -132,44 +132,12 @@ Left SideBar-menu Start
 .xs-panel-nav .user-avatar img {border-radius: 50px;}
 .panel-sidebar .user-info .user-name {font-size: 16px; font-weight: 500; line-height: 1.2; color: #171347;}
 .panel-sidebar .user-info .create-new-user {border-radius: 5px; background-color: #f1f1f1; padding: 8px; font-size: 14px; font-weight: 500; line-height: 1.19; color: #818894; pointer-events: none;}
-.panel-sidebar .sidebar-user-stats .sidebar-user-stat-item strong {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #171347;
-    pointer-events: none
-}
-.panel-sidebar .sidebar-user-stats .sidebar-user-stat-item .stat-name {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.29;
-    color: #818894;
-    pointer-events: none
-}
-.panel-sidebar .sidebar-menu {
-    height: calc(100% - 100px);
-    padding-bottom: 35px;
-    overflow: hidden;
-    overflow-y: auto;
-}
-.panel-sidebar .sidebar-menu .dropdown-menu {
-    margin: 10px 0 0;
-    width: 100%;
-    min-width: auto;
-    box-shadow: none;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    padding: 5px 0;
-    display: none;
-}
-.panel-sidebar .dropdown-toggle:after {
-    margin-left: 10px;
-}
-.panel-sidebar .sidebar-menu .dropdown-menu.show {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-}
+.panel-sidebar .sidebar-user-stats .sidebar-user-stat-item strong {font-size: 16px; font-weight: 700; line-height: 1.2; color: #171347; pointer-events: none;}
+.panel-sidebar .sidebar-user-stats .sidebar-user-stat-item .stat-name {font-size: 14px; font-weight: 500; line-height: 1.29; color: #818894; pointer-events: none;}
+.panel-sidebar .sidebar-menu {height: calc(100% - 100px); padding-bottom: 35px; overflow: hidden; overflow-y: auto;}
+.panel-sidebar .sidebar-menu .dropdown-menu {margin: 10px 0 0; width: 100%; min-width: auto; box-shadow: none; border: 1px solid #ddd; border-radius: 3px; padding: 5px 0; display: none;}
+.panel-sidebar .dropdown-toggle:after {margin-left: 10px;}
+.panel-sidebar .sidebar-menu .dropdown-menu.show {display: block; opacity: 1; visibility: visible;}
 .panel-sidebar .sidebar-menu .dropdown-menu:before {
     background-color: #fff;
     position: absolute;
