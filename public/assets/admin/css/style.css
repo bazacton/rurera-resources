@@ -316,12 +316,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .card.card-statistic-1 .card-header h4, .card.card-statistic-2 .card-header h4 {font-weight: 600; font-size: 13px; letter-spacing: .5px;}
 .card.card-statistic-1 .card-header h4 {margin-bottom: 0;}
 .card.card-statistic-2 .card-header h4 {text-transform: none; margin-bottom: 0;}
-.card.card-statistic-1 .card-body {
-    font-size: 20px;
-    flex: 0;
-    line-height: normal;
-    padding: 0;
-}
+.card.card-statistic-1 .card-body {font-size: 20px; flex: 0; line-height: normal; padding: 0;}
 .card.card-statistic-2 .card-chart {padding-top: 20px; margin-left: -9px; margin-right: -1px; margin-bottom: -15px;}
 .card.card-statistic-2 .card-chart canvas {height: 90px !important; }
 .card .card-stats {width: 100%; display: inline-block; margin-top: 2px; margin-bottom: -6px;}
