@@ -138,24 +138,9 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-menu .dropdown-menu {margin: 10px 0 0; width: 100%; min-width: auto; box-shadow: none; border: 1px solid #ddd; border-radius: 3px; padding: 5px 0; display: none;}
 .panel-sidebar .dropdown-toggle:after {margin-left: 10px;}
 .panel-sidebar .sidebar-menu .dropdown-menu.show {display: block; opacity: 1; visibility: visible;}
-.panel-sidebar .sidebar-menu .dropdown-menu:before {
-    background-color: #fff;
-    position: absolute;
-    top: -6px;
-    left: 15px;
-    content: "";
-    height: 10px;
-    width: 10px;
-    border-top: 1px solid #ddd;
-    border-left: 1px solid #ddd;
-    transform: rotate(45deg);
-}
-.panel-sidebar .sidebar-menu.has-user-group {
-    height: calc(100% - 455px)
-}
-.panel-sidebar .sidebar-menu.without-bottom-image {
-    height: calc(100% - 298px)
-}
+.panel-sidebar .sidebar-menu .dropdown-menu:before {background-color: #fff; position: absolute; top: -6px; left: 15px; content: ""; height: 10px; width: 10px; border-top: 1px solid #ddd; border-left: 1px solid #ddd; transform: rotate(45deg);}
+.panel-sidebar .sidebar-menu.has-user-group {height: calc(100% - 455px);}
+.panel-sidebar .sidebar-menu.without-bottom-image {height: calc(100% - 298px);}
 @media (max-width:991px) {
     .dashboard-banner-container {
         margin-top: 25px;
