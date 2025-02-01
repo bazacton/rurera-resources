@@ -2,18 +2,8 @@
 Word Lists Page | Student Panel Style Start
 Sub Pages Style
 *****************************/
-.db-back-btn {
-    display: inline-block;
-    position: relative;
-    color: var(--primary);
-}
-.db-back-btn:before {
-    content: "\2190";
-    margin-right: 5px;
-    display: inline-block;
-    color: var(--primary);
-    font-weight: 700;
-}
+.db-back-btn {display: inline-block; position: relative; color: var(--primary);}
+.db-back-btn:before {content: "\2190"; margin-right: 5px; display: inline-block; color: var(--primary); font-weight: 700;}
 /*Spells-Quiz-Info Style Start*/
 .spells-quiz-info ul {border: 1px solid #bac3ca; display: flex; gap: 15px; justify-content: space-between;}
 .spells-quiz-info ul li {border-left: 1px solid #bac3ca;text-align: center;width: 32%;padding: 15px 0;font-size: 20px;color: #343434;text-transform: uppercase;display: inline-flex;align-items: center;justify-content: center;gap: 5px;}
