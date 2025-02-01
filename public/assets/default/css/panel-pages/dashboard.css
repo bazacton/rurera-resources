@@ -142,48 +142,16 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-menu.has-user-group {height: calc(100% - 455px);}
 .panel-sidebar .sidebar-menu.without-bottom-image {height: calc(100% - 298px);}
 @media (max-width:991px) {
-    .dashboard-banner-container {
-        margin-top: 25px;
-    }
-    .conversations-list {
-        height: 275px
-    }
-    .panel-sidebar {
-        width: 100%;
-        background-color: #fff;
-        top: 110%;
-        padding: 40px 20px 0 !important;
-        transition: top .4s cubic-bezier(.43, .83, .54, 1.02), opacity .4s linear
-    }
-    .panel-sidebar .panel-sidebar-close {
-        display: block
-    }
-    .panel-sidebar.nav-show {
-        top: 0
-    }
-    .panel-sidebar .user-info .user-name h3 {
-        font-size: 14px
-    }
-    .panel-sidebar .user-info .user-avatar {
-        width: 70px;
-        height: 70px
-    }
-    .panel-sidebar .user-info .user-name {
-        margin-top: 0 !important
-    }
-    .panel-sidebar .sidebar-menu {
-        height: calc(100% - 70px) !important;
-        padding-left: 20px;
-        padding-right: 15px;
-        padding-bottom: 0;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    body.parent-panel .panel-sidebar .sidebar-menu {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+    .dashboard-banner-container {margin-top: 25px;}
+    .conversations-list {height: 275px;}
+    .panel-sidebar {width: 100%; background-color: #fff; top: 110%; padding: 40px 20px 0 !important; transition: top .4s cubic-bezier(.43, .83, .54, 1.02), opacity .4s linear;}
+    .panel-sidebar .panel-sidebar-close {display: block;}
+    .panel-sidebar.nav-show {top: 0;}
+    .panel-sidebar .user-info .user-name h3 {font-size: 14px;}
+    .panel-sidebar .user-info .user-avatar {width: 70px; height: 70px;}
+    .panel-sidebar .user-info .user-name {margin-top: 0 !important;}
+    .panel-sidebar .sidebar-menu {height: calc(100% - 70px) !important; padding-left: 20px; padding-right: 15px; padding-bottom: 0; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
+    body.parent-panel .panel-sidebar .sidebar-menu {padding-left: 20px; padding-right: 20px;}
 }
 .panel-sidebar .sidebar-menu .sidenav-item {
     padding: 12px 0;
