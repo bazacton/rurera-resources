@@ -120,69 +120,18 @@ Left SideBar-menu Start
 .notification-card:hover button {color: #fff; background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-size: 1rem 1rem;}
 .notification-card button {-webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out;}
 .panel-sidebar .container {padding: 0;}
-.sidebar-logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-.sidebar-logo img {
-    max-width: 50px;
-    object-fit: contain;
-}
-.sidebar-logo-text {
-    font-size: 14px;
-    font-weight: 700;
-    color: #989898;
-    text-transform: uppercase;
-}
-.panel-sidebar {
-    position: fixed !important;
-    top: 55px;
-    left: 0;
-    bottom: 0;
-    width: 254px;
-    height: 100%;
-    border-right: 1px solid #dcdcdc;
-}
-.panel-sidebar .panel-sidebar-close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    display: none
-}
-.nav-icons-or-start-live.navbar-order {
-    display: none;
-}
-.panel-sidebar .user-info .user-avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px
-}
-.panel-sidebar .navbar-toggler {
-    display: none;
-}
+.sidebar-logo {display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px;}
+.sidebar-logo img {max-width: 50px; object-fit: contain;}
+.sidebar-logo-text {font-size: 14px; font-weight: 700; color: #989898; text-transform: uppercase;}
+.panel-sidebar {position: fixed !important; top: 55px; left: 0; bottom: 0; width: 254px; height: 100%; border-right: 1px solid #dcdcdc;}
+.panel-sidebar .panel-sidebar-close {position: absolute; top: 10px; right: 20px; display: none;}
+.nav-icons-or-start-live.navbar-order {display: none;}
+.panel-sidebar .user-info .user-avatar {width: 100px; height: 100px; border-radius: 50px;}
+.panel-sidebar .navbar-toggler {display: none;}
 .panel-sidebar .user-info .user-avatar img,
-.xs-panel-nav .user-avatar img {
-    border-radius: 50px
-}
-.panel-sidebar .user-info .user-name {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.2;
-    color: #171347
-}
-.panel-sidebar .user-info .create-new-user {
-    border-radius: 5px;
-    background-color: #f1f1f1;
-    padding: 8px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.19;
-    color: #818894;
-    pointer-events: none
-}
+.xs-panel-nav .user-avatar img {border-radius: 50px;}
+.panel-sidebar .user-info .user-name {font-size: 16px; font-weight: 500; line-height: 1.2; color: #171347;}
+.panel-sidebar .user-info .create-new-user {border-radius: 5px; background-color: #f1f1f1; padding: 8px; font-size: 14px; font-weight: 500; line-height: 1.19; color: #818894; pointer-events: none;}
 .panel-sidebar .sidebar-user-stats .sidebar-user-stat-item strong {
     font-size: 16px;
     font-weight: 700;
