@@ -1505,29 +1505,18 @@ output {font-weight: bold; color: #333;}
 .remove-option-btn {background-color: #f44336; color: white;}
 .move-up-btn, .move-down-btn {background-color: #2196F3; color: white;}
 /* Question Type List In A Row Style Start */
-.list-group.list-in-row {
-    display: flex;
-    flex-direction: row;
-    gap: 3px;
-}
+.list-group.list-in-row {display: flex; flex-direction: row; gap: 3px;}
 /* Question Type List In A Row Style End */
 
 /* Note-Editable Order List Style Start */
 .note-editable ul,
-.note-editable ol {
-    padding-left: 25px;
-}
+.note-editable ol {padding-left: 25px;}
 /* Note-Editable Order List Style End */
 
 /* Note-Editable Table Default Style Start */
-.example-question-block table {
-    width: 100%;
-}
-.example-question-block table, .example-question-block th, .example-question-block td {
-    border: 1px solid #f6f6f6;
-    border-collapse: collapse;
-    padding: 5px;
-}
+.example-question-block table {width: 100%;}
+.example-question-block table, .example-question-block th, 
+.example-question-block td {border: 1px solid #f6f6f6; border-collapse: collapse; padding: 5px;}
 /* Note-Editable Table Default Style End */
 
 /* Note-Dropdown-Menu Style Start */
