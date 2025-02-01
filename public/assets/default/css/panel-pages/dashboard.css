@@ -153,39 +153,20 @@ Left SideBar-menu Start
     .panel-sidebar .sidebar-menu {height: calc(100% - 70px) !important; padding-left: 20px; padding-right: 15px; padding-bottom: 0; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
     body.parent-panel .panel-sidebar .sidebar-menu {padding-left: 20px; padding-right: 20px;}
 }
-.panel-sidebar .sidebar-menu .sidenav-item {
-    padding: 12px 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-}
+.panel-sidebar .sidebar-menu .sidenav-item {padding: 12px 0; display: flex; flex-wrap: wrap; align-items: center; position: relative;}
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active>a,
-.panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active>a * {
-    color: #ffab00 !important;
-}
-.panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active svg {
-    color: var(--primary) !important
-}
+.panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active>a * {color: #ffab00 !important;}
+.panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active svg {color: var(--primary) !important;}
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .assign-strock svg,
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .assign-strock svg *,
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active circle,
-.panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active polyline {
-    stroke: #ffab00 !important
-}
+.panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active polyline {stroke: #ffab00 !important;}
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .assign-fill svg,
-.panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .assign-fill svg * {
-    fill: #ffab00 !important
-}
+.panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .assign-fill svg * {fill: #ffab00 !important;}
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .cls-1,
-.panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .cls-3 {
-    fill: #ffab00 !important;
-}
+.panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .cls-3 {fill: #ffab00 !important;}
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .sidenav-notification-icon .cls-1,
-.panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .sidenav-notification-icon .cls-3 {
-    fill: none !important;
-    stroke: #ffab00 !important
-}
+.panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .sidenav-notification-icon .cls-3 {fill: none !important; stroke: #ffab00 !important;}
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon {
     width: 25px;
     height: 25px;
