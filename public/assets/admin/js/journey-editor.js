@@ -47,7 +47,7 @@ $(document).on('click', '.flowchart-links-layer g path', function (e) {
     var left = 0;
     let bookDropzone = $(this).closest('.book-dropzone');
     var data_id = $(this).closest('g').attr('data-element_id');
-    var this_element    = $('.levels-objects-list li[data-id="'+data_id+'"]');
+    var this_element    = $('.curriculum-item-data.active .levels-objects-list li[data-id="'+data_id+'"]');
 
     if (bookDropzone.length) {
         let dropzoneBbox = bookDropzone[0].getBoundingClientRect();
@@ -100,9 +100,9 @@ $(document).on('click', '.control-tool-item', function () {
 
 $(document).on('click', '.path-tool-item', function () {
     var target_class = $(this).attr('data-target_class');
-    $(".flowchart-links-layer > g").removeAttr('class');
-    $(".flowchart-links-layer > g").addClass(target_class);
-    $(".path-tool-item").removeClass('active');
+    $(".curriculum-item-data.active .flowchart-links-layer > g").removeAttr('class');
+    $(".curriculum-item-data.active .flowchart-links-layer > g").addClass(target_class);
+    $(".curriculum-item-data.active .path-tool-item").removeClass('active');
     $(this).addClass('active');
 });
 
@@ -112,7 +112,7 @@ $(document).on('click', '.layout-template-item', function () {
     //template_layout
     var template_layout_data = template_layout[target_layout];
     var item_counter = 1;
-    $('.levels-objects-list').find('li').each(function (item_no) {
+    $('.curriculum-item-data.active .levels-objects-list').find('li').each(function (item_no) {
         var field_id = $(this).attr('data-id');
         var top_position =template_layout_data[item_counter].top;
         var left_position =template_layout_data[item_counter].left;
@@ -319,6 +319,7 @@ $(document).on('click', '.book-dropzone', function (e) {
         dropZonObj.append($el);
     }
 
+    console.log('item-adddddddddddddddddddddddddddeeeed');
     //after_add_render(field_random_number, dropZonObj);
 
 
@@ -358,6 +359,7 @@ $(document).on('click', '.book-dropzone', function (e) {
 	}
 
 	sorting_render();
+
 
 
 	$(".field_settingss").rotatable({
@@ -442,7 +444,7 @@ function after_add_render(field_random_number, dropZonObj){
 
 function reinitialize_items(){
 
-    $('.levels-objects-list').find('li').each(function () {
+    $('.curriculum-item-data.active .levels-objects-list').find('li').each(function () {
         var field_id = $(this).attr('data-id');
         var link_position = $(this).attr('data-link_position');
         link_position = (link_position == null || link_position == undefined)? 'left-in' : link_position
@@ -528,9 +530,9 @@ function sorting_render(){
         console.log('book-dropzone.activebook-dropzone.activebook-dropzone.activebook-dropzone.active');
         after_add_render(field_id, $(".book-dropzone.active"));
     });*/
-    console.log('sorting-render');
+    console.log('sorting-render1111111111111111111111111111111111');
 
-    $('.levels-objects-list').find('li').each(function () {
+    $('.curriculum-item-data.active .levels-objects-list').find('li').each(function () {
         var field_id = $(this).attr('data-id');
 
         after_add_render(field_id, $(".book-dropzone.active"));
@@ -538,7 +540,7 @@ function sorting_render(){
 }
 
 function levels_sorting_render(){
-    $('.levels-objects-list li').each(function (index_id, thisObj) {
+    $('.curriculum-item-data.active .levels-objects-list li').each(function (index_id, thisObj) {
         index_id++;
         $(thisObj).attr('data-field_postition', index_id);
         var data_id = $(thisObj).attr('data-id');
@@ -579,9 +581,10 @@ function levels_sorting_render(){
 
         // Find the link with the specified details
 
+        console.log('linkslinkslinkslinkslinks');
         console.log(links);
 
-        $('.levels-objects-list').find('li').each(function () {
+        $('.curriculum-item-data.active .levels-objects-list').find('li').each(function () {
             var field_id = $(this).attr('data-id');
             if ($flowchart.flowchart('getOperatorData', field_id)) {
                 if (links != undefined) {

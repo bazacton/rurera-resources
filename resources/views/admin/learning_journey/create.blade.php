@@ -375,7 +375,7 @@
 
                                 @php $li_counter = 1; $li_content_respnose = ''; $li_content_data_response = ''; @endphp
                                 @if( !empty( $LearningJourneyObj->learningJourneyLevels ))
-                                    @foreach( $LearningJourneyObj->learningJourneyLevels as $itemObj)
+                                    @foreach( $LearningJourneyObj->learningJourneyLevels->where('status', 'active') as $itemObj)
                                         @php $response = $thisObj->learning_journey_set_layout($request, $itemObj->id, false, true, $itemObj, $li_counter);
                                         $response = json_decode($response, true);
                                         $li_content_respnose .= isset($response['li_content']) ? $response['li_content'] : '';
@@ -698,12 +698,8 @@
             //$(".curriculum-item-data#collapseItems"+level_id).addClass('show');
             //$(".curriculum-item-data#collapseItems"+level_id).addClass('show');
             $(".curriculum-item-data#collapseItems"+level_id).find('.book-dropzone').addClass('active');
+            flowChartInitialize();
 
-            sorting_render();
-            if(!$(this).hasClass('collapsed')){
-                sorting_render();
-                levels_sorting_render();
-            }
         });
 
         $('body').on('click', '.delete-parent-li', function (e) {
@@ -750,6 +746,9 @@
                     rurera_remove_loader(loader_div, 'button');
                     $(".jounry-stages-lis").append(response.li_content);
                     $(".tabs-data").append(response.li_content_data);
+                    flowChartInitialize();
+
+                        sorting_render();
 
                     handleTopicsMultiSelect2('search-topics-select2', '/admin/chapters/search', ['class', 'course', 'subject', 'title']);
                 }
@@ -997,25 +996,15 @@
 <script type="text/javascript">
     /* global $ */
     var $flowchart = null;
-    $(document).ready(function() {
 
 
-        $(".path-tool-item.active").click();
-        $(document).on('keyup change keydown click', 'input[name="stage_name"]', function (e) {
-            var current_value = $(this).val();
-            current_value = (current_value == '')? 'Stage Name' : current_value;
-
-            var level_id    = $(this).closest('.li-content-data').attr('data-level_id');
-            console.log(level_id);
-            $('li.accordion-row[data-id="'+level_id+'"]').find('.journey-title-'+level_id).html(current_value);
-
-        });
-
-
-        $(".conditional-field").change();
-        $(".sets-selection.active").click();
-
-
+    function flowChartInitialize(){
+        var is_already_initiated = $(".book-dropzone.active").attr('data-intiated_already');
+        if(is_already_initiated == 'yes'){
+            return false;
+        }
+        $(".book-dropzone.active").attr('data-intiated_already', 'yes');
+        console.log('intiated---------------------------');
         $flowchart = $('#flowchartworkspace');
         $flowchart = $(".book-dropzone.active");
         var $container = $flowchart.parent();
@@ -1258,6 +1247,31 @@
         //-----------------------------------------
 
         levels_sorting_render();
+    }
+    $(document).ready(function() {
+
+
+        $(".path-tool-item.active").click();
+        $(document).on('keyup change keydown click', 'input[name="stage_name"]', function (e) {
+            var current_value = $(this).val();
+            current_value = (current_value == '')? 'Stage Name' : current_value;
+
+            var level_id    = $(this).closest('.li-content-data').attr('data-level_id');
+            console.log(level_id);
+            $('li.accordion-row[data-id="'+level_id+'"]').find('.journey-title-'+level_id).html(current_value);
+
+        });
+
+        flowChartInitialize();
+
+        levels_sorting_render();
+
+
+        $(".conditional-field").change();
+        $(".sets-selection.active").click();
+
+
+
     });
 
     var defaultFlowchartData = {
