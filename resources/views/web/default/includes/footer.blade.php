@@ -7,23 +7,14 @@
                         <div class="widget widget-links">
                             <ul>
                                 <li itemprop="about"><a itemprop="url" href="/about-us">About Us</a></li>
-                                
                                 <li itemprop="features"><a itemprop="url" href="/features">Features</a></li>
-
                                 <li itemprop="blog"><a itemprop="url" href="/blog">Blog</a></li>
-
                                 <li itemprop="national-curriculum"><a itemprop="url" href="/national-curriculum">National Curriculum</a></li>
-
                                 <li itemprop="testimonials"><a itemprop="url" href="/testimonials">Testimonials</a></li>
-
                                 <li itemprop="faq"><a itemprop="url" href="/faqs">Faqs</a></li>
-                                
                                 <li itemprop="careers"><a itemprop="url" href="/careers">Careers <span class="hiring-label">Hiring!</span></a></li>
-
                                 <li itemprop="contact-us"><a itemprop="url" href="/contact-us">contact-us</a></li>
-
                                 <li itemprop="Terms & conditions"><a itemprop="url" href="/terms-and-conditions">Terms & conditions</a></li>
-
                                 <li itemprop="Privacy Policy"><a itemprop="url" href="/privacy-policy">Privacy Policy</a></li>
                             </ul>
                         </div>
