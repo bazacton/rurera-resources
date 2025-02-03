@@ -594,7 +594,8 @@ keystage2 Page Style Start
 .categories-boxes .categories-icon {padding: 35px 35px; background: var(--primary); color: #fff; border-radius: 10px 10px 0 0; transition: all 0.3s ease-in-out; display: flex; align-items: center; justify-content: center; min-height: 126px;}
 .categories-boxes .categories-icon img{width: 50%; position: absolute; left: 50%; top: 50%; height: 50%; -o-object-fit: contain; object-fit: contain; transform: translate(-50%, -50%);}
 .categories-boxes .categories-icon {position: relative; }
-.categories-boxes .categories-icon svg {width: 64px; height: 56px;}
+.categories-boxes .categories-icon svg,
+.categories-boxes .categories-icon img {width: 64px; height: 56px;}
 .categories-boxes .categories-icon path {stroke: #fff;}
 .categories-boxes .categories-icon g,
 .categories-boxes .categories-icon svg.icon path{fill: #fff;}
