@@ -23,6 +23,7 @@ $profile_navs = isset( $navData['profile_navs'] )? $navData['profile_navs'] : ar
 @if( !isset( $authUser ) || !$authUser->isUser())
 
 <div id="navbarVacuum"></div>
+
 <nav id="navbar" class="navbar1 navbar-expand-lg navbar-light top-navbar">
     <div class="{{ (!empty($isPanel) and $isPanel) ? 'container-fluid' : 'container-fluid'}}">
         <div class="d-flex align-items-center justify-content-between w-100">
