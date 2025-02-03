@@ -38,5 +38,5 @@
 </head>
 
 <body id="app">
-{!! $body !!}
+    {!! $body !!}
 </body>
