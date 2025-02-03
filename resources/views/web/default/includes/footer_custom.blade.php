@@ -1,4 +1,3 @@
-
 <section class="custom-footer test pt-80 pb-50 wow fadeInUp" style="background-color:#000">
 	<div class="container">
 		<div class="row align-items-center">
