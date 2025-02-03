@@ -763,7 +763,7 @@
                               <div class="input-field input-card">
                                 <span class="icon-svg">
                                   <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
-                                    <g id="SVGRepo_bgCarrier2" stroke-width="0"></g>
+                                    <g id="SVGRepo_bgCarrier22" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier8" stroke-linecap="round" stroke-linejoin="round"></g>
                                     <g id="SVGRepo_iconCarrier5">
                                       <g>
