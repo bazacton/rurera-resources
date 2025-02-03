@@ -214,7 +214,7 @@
                                 <div class="categories-card">
                                     <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
                                     <div class="categories-icon" style="background: #339;">
-                                        <img src="/assets/default/svgs/categories-vocabulary.svg" alt="categories-vocabulary">
+                                        <img src="/assets/default/svgs/categories-math.svg" alt="categories-math">
                                     </div>
                                     <a href="#"><h3 class="categories-title">Vocabulary</h3></a>
                                 </div>
