@@ -172,7 +172,7 @@
                                     @else
                                     @if( isset( $navbarPage['submenu'] ) && $navbarPage['submenu'] != '' && (!isset(
                                     $navbarPage['is_mega_menu'] ) || $navbarPage['is_mega_menu'] != 1))
-                                    
+
                                     <div class="sidenav-dropdown">
                                         <ul class="sidenav-item-collapse">
                                             {!! $navbarPage['submenu'] !!}
@@ -181,8 +181,8 @@
                                     @endif
                                     @if( isset( $navbarPage['is_mega_menu'] ) && $navbarPage['is_mega_menu'] == 1) {!! $navbarPage['submenu'] !!} @endif
                                     @endif
-                        </li>
-                        @endforeach
+                                </li>
+                            @endforeach
                         @endif
                     </ul>
                     <div class="mobile-login-reg-buttons">
