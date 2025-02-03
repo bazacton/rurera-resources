@@ -491,7 +491,7 @@
             </div>
         </div>
     </section>
-    <div class="modal fade lms-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
+    <div class="modal fade lms-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
@@ -583,7 +583,7 @@
                           </div>
                         </div>
                         <div class="col-12 col-lg-12 col-md-12 col-sm-12">
-                          <a href="#" class="nav-link mt-20 btn-primary rounded-pill" id="home-tab" data-toggle="tab" data-target="#home" role="tab" aria-controls="home" aria-selected="true"> Start your 7-day free trial </a>
+                          <a href="#" class="nav-link mt-20 btn-primary rounded-pill" id="home-tab" data-toggle="tab" data-target="#home" aria-controls="home" aria-selected="true"> Start your 7-day free trial </a>
                         </div>
                       </div>
                     </div>
@@ -636,14 +636,14 @@
                       </div>
                       <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="form-group">
-                          <a href="#" class="nav-link btn-primary rounded-pill mb-25 text-center" id="book-tab" data-toggle="tab" data-target="#book" role="tab" aria-controls="book" aria-selected="true"> continue </a>
+                          <a href="#" class="nav-link btn-primary rounded-pill mb-25 text-center" id="book-tab" data-toggle="tab" data-target="#book" aria-controls="book" aria-selected="true"> continue </a>
                         </div>
                       </div>
                       <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center">
                         <p class="mb-20">By Clicking on Start Free Trial, I agree to the <a href="#">Terms of Service</a>And <a href="#">Privacy Policy</a>
                         </p>
                         <div class="subscription mb-20">
-                          <span>Already have a subscription? <a href="#" id="contact-tab" data-toggle="tab" data-target="#contact" role="tab" aria-controls="contact" aria-selected="false">log in</a>
+                          <span>Already have a subscription? <a href="#" id="contact-tab" data-toggle="tab" data-target="#contact" aria-controls="contact" aria-selected="false">log in</a>
                           </span>
                         </div>
                       </div>
@@ -680,7 +680,7 @@
                               </span>
                             </a> Upgrade to the Family Premium plan to read the rest of this book and enjoy unlimited access to our entire library.
                           </p>
-                          <a href="#" class="nav-link btn-primary rounded-pill mb-25" id="subscribe-tab" data-toggle="tab" data-target="#subscribe" role="tab" aria-controls="subscribe" aria-selected="false"> Get Rurera </a>
+                          <a href="#" class="nav-link btn-primary rounded-pill mb-25" id="subscribe-tab" data-toggle="tab" data-target="#subscribe" aria-controls="subscribe" aria-selected="false"> Get Rurera </a>
                         </div>
                       </div>
                     </div>
@@ -704,7 +704,7 @@
                         <ul class="mt-20 plan-feature">
                           <li class="mt-10">15 days of subscription</li>
                         </ul>
-                        <button type="submit" id="contact-tab5" data-toggle="tab" data-target="#contact" role="tab" aria-controls="contact" aria-selected="false" class="btn btn-primary btn-block mt-30 rounded-pill bg-none"> Purchase </button>
+                        <button type="submit" id="contact-tab5" data-toggle="tab" data-target="#contact" aria-controls="contact" aria-selected="false" class="btn btn-primary btn-block mt-30 rounded-pill bg-none"> Purchase </button>
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -716,7 +716,7 @@
                         <ul class="mt-20 plan-feature">
                           <li class="mt-10">30 days of subscription</li>
                         </ul>
-                        <button type="submit" id="contact-tab6" data-toggle="tab" data-target="#contact" role="tab" aria-controls="contact" aria-selected="false" class="btn btn-primary btn-block mt-30 rounded-pill"> Purchase </button>
+                        <button type="submit" id="contact-tab6" data-toggle="tab" data-target="#contact" aria-controls="contact" aria-selected="false" class="btn btn-primary btn-block mt-30 rounded-pill"> Purchase </button>
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 price-plan-image">
@@ -725,7 +725,7 @@
                     <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center bg-dark-green bg-dark-green">
                       <strong>96% of subscribing parents in rurera Family report significant improvement in their child's reading skills.</strong>
                       <div class="subscription mt-20">
-                        <span>Already have a subscription? <a href="." id="contact-tab9" data-toggle="tab" data-target="#contact" role="tab" aria-controls="contact" aria-selected="false">log in</a>
+                        <span>Already have a subscription? <a href="." id="contact-tab9" data-toggle="tab" data-target="#contact" aria-controls="contact" aria-selected="false">log in</a>
                         </span>
                       </div>
                     </div>
