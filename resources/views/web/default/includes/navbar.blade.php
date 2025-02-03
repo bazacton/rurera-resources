@@ -172,6 +172,7 @@
                                     @else
                                     @if( isset( $navbarPage['submenu'] ) && $navbarPage['submenu'] != '' && (!isset(
                                     $navbarPage['is_mega_menu'] ) || $navbarPage['is_mega_menu'] != 1))
+                                    
                                     <div class="sidenav-dropdown">
                                         <ul class="sidenav-item-collapse">
                                             {!! $navbarPage['submenu'] !!}
