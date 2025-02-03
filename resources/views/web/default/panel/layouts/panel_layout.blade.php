@@ -952,12 +952,8 @@
                 </div>
             </div>
         </div>
-
-
         @include('web.default.includes.advertise_modal.index')
     </div>
-
-
 
 <div class="modal fade rurera-confirm-delete" id="rurera-confirm-delete" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered" role="document">
