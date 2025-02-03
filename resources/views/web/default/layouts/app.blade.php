@@ -42,82 +42,81 @@
 </head>
 
 <body class="menu-closed @if($isRtl) rtl @endif">
+    <div id="app">
 
-<div id="app">
+        @if(!request()->is('login') && !request()->is('register') && !request()->is('forget-password'))
+        @if(!isset($appHeader))
+            @include('web.default.includes.top_nav')
+            @include('web.default.includes.navbar')
+        @endif
+        @endif
 
-    @if(!request()->is('login') && !request()->is('register') && !request()->is('forget-password'))
-    @if(!isset($appHeader))
-        @include('web.default.includes.top_nav')
-        @include('web.default.includes.navbar')
+        @if(!empty($justMobileApp))
+            @include('web.default.includes.mobile_app_top_nav')
+        @endif
+
+        @yield('content')
+
+        @if(!request()->is('login') && !request()->is('register') && !request()->is('forget-password'))
+        @if(!isset($appFooter))
+        @include('web.default.includes.footer_custom')
+        @endif
+        @endif
+
+        @include('web.default.includes.advertise_modal.index')
+    </div>
+    <!-- Template JS File -->
+
+    @if(empty($justMobileApp) and checkShowCookieSecurityDialog())
+        @include('web.default.includes.cookie-security')
     @endif
-    @endif
-
-    @if(!empty($justMobileApp))
-        @include('web.default.includes.mobile_app_top_nav')
-    @endif
-
-    @yield('content')
-
-@if(!request()->is('login') && !request()->is('register') && !request()->is('forget-password'))
-@if(!isset($appFooter))
-@include('web.default.includes.footer_custom')
-@endif
-@endif
-
-    @include('web.default.includes.advertise_modal.index')
-</div>
-<!-- Template JS File -->
-
-@if(empty($justMobileApp) and checkShowCookieSecurityDialog())
-    @include('web.default.includes.cookie-security')
-@endif
 
 
-<script>
-    var deleteAlertTitle = '{{ trans('public.are_you_sure') }}';
-    var deleteAlertHint = '{{ trans('public.deleteAlertHint') }}';
-    var deleteAlertConfirm = '{{ trans('public.deleteAlertConfirm') }}';
-    var deleteAlertCancel = '{{ trans('public.cancel') }}';
-    var deleteAlertSuccess = '{{ trans('public.success') }}';
-    var deleteAlertFail = '{{ trans('public.fail') }}';
-    var deleteAlertFailHint = '{{ trans('public.deleteAlertFailHint') }}';
-    var deleteAlertSuccessHint = '{{ trans('public.deleteAlertSuccessHint') }}';
-    var forbiddenRequestToastTitleLang = '{{ trans('public.forbidden_request_toast_lang') }}';
-    var forbiddenRequestToastMsgLang = '{{ trans('public.forbidden_request_toast_msg_lang') }}';
-</script>
-
-@if(session()->has('toast'))
     <script>
-        (function () {
-            "use strict";
-
-            $.toast({
-                heading: '{{ session()->get('toast')['title'] ?? '' }}',
-                text: '{{ session()->get('toast')['msg'] ?? '' }}',
-                bgColor: '@if(session()->get('toast')['status'] == 'success') #43d477 @else #f63c3c @endif',
-                textColor: 'white',
-                hideAfter: 10000,
-                position: 'bottom-right',
-                icon: '{{ session()->get('toast')['status'] }}'
-            });
-        })(jQuery)
+        var deleteAlertTitle = '{{ trans('public.are_you_sure') }}';
+        var deleteAlertHint = '{{ trans('public.deleteAlertHint') }}';
+        var deleteAlertConfirm = '{{ trans('public.deleteAlertConfirm') }}';
+        var deleteAlertCancel = '{{ trans('public.cancel') }}';
+        var deleteAlertSuccess = '{{ trans('public.success') }}';
+        var deleteAlertFail = '{{ trans('public.fail') }}';
+        var deleteAlertFailHint = '{{ trans('public.deleteAlertFailHint') }}';
+        var deleteAlertSuccessHint = '{{ trans('public.deleteAlertSuccessHint') }}';
+        var forbiddenRequestToastTitleLang = '{{ trans('public.forbidden_request_toast_lang') }}';
+        var forbiddenRequestToastMsgLang = '{{ trans('public.forbidden_request_toast_msg_lang') }}';
     </script>
-@endif
 
-@stack('styles_bottom')
-@stack('scripts_bottom')
+    @if(session()->has('toast'))
+        <script>
+            (function () {
+                "use strict";
 
-<script src="/assets/default/js/parts/navbar.min.js?ver={{$rand_no}}"></script>
-<script src="/assets/default/js/parts/main.min.js?ver={{$rand_no}}"></script>
+                $.toast({
+                    heading: '{{ session()->get('toast')['title'] ?? '' }}',
+                    text: '{{ session()->get('toast')['msg'] ?? '' }}',
+                    bgColor: '@if(session()->get('toast')['status'] == 'success') #43d477 @else #f63c3c @endif',
+                    textColor: 'white',
+                    hideAfter: 10000,
+                    position: 'bottom-right',
+                    icon: '{{ session()->get('toast')['status'] }}'
+                });
+            })(jQuery)
+        </script>
+    @endif
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YZCMFMHVM0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    @stack('styles_bottom')
+    @stack('scripts_bottom')
 
-  gtag('config', 'G-YZCMFMHVM0');
-</script>
+    <script src="/assets/default/js/parts/navbar.min.js?ver={{$rand_no}}"></script>
+    <script src="/assets/default/js/parts/main.min.js?ver={{$rand_no}}"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZCMFMHVM0"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YZCMFMHVM0');
+    </script>
 </body>
 </html>
