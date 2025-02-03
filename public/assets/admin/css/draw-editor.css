@@ -55,7 +55,7 @@ body .editor-zone:has(.editor-controls-holder),
 body .editor-zone:has(.field-options.hide) {padding-left: 0;}
 body .editor-zone:has(.editor-controls-holder) {padding:0x; overflow: visible;}
 body .editor-zone:has(.field-options) {padding-left:0px;}
-.book-dropzone {position: relative; border: 1px solid #ccc; border-radius: 5px; width: 770px; height:100%; box-sizing: border-box; background-size: cover !important; overflow: hidden;}
+.book-dropzone {position: relative; border: 1px solid #ccc; border-radius: 5px; width: 770px; height:100%; box-sizing: border-box; background-size: cover !important; overflow: hidden; display: inline-block; vertical-align: top;}
 .book-dropzone img {max-width: 100%;}
 body .editor-controls-holder {border: 1px solid #ccc; background-color: inherit; border-radius: 0; padding: 0; overflow: visible; min-width: 500px; max-width: 500px; height: auto; display: inline-block; vertical-align: top;}
 body ul.editor-objects li {width: 23.888%;}
