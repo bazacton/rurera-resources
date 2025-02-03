@@ -654,7 +654,7 @@ Lms Responsive Style Start
     .chart-filters,
     .chart-filters ul {flex-wrap: wrap; border: 0;}
     .spells-quiz-info ul {justify-content: flex-start; gap: 0;}
-    .spells-quiz-from button {margin-top: 0; min-width: auto; padding: 10 20px;}
+    .spells-quiz-from button {margin-top: 0; min-width: auto; padding: 10px 20px;}
     .spells .dataTable td a,
     .spells .dataTable thead tr th {font-size: 14px;}
     .spells-topbar .view-btn {min-width: 150px; text-align: center;}
