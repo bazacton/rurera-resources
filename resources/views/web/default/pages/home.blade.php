@@ -4,7 +4,6 @@
 <link rel="stylesheet" href="/assets/default/vendors/swiper-slider/swiper-bundle.min.css"/>
 <link rel="stylesheet" href="/assets/default/vendors/scroll-animation/aos.css"/>
 <style>
-    .home-categories-section {background-color: #f27530;}
     .choose-sats-section {background-color: #7679ee;}
     .reward-program-section {background-color: #fffcee;}
     .lms-newsletter {background-color: #f6b801;}
