@@ -275,7 +275,7 @@
                                 <div class="categories-card">
                                     <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
                                     <div class="categories-icon" style="background: #2d6a4f;">
-                                        <img src="/assets/default/svgs/science-art.svg" alt="categories-science">
+                                        <img src="/assets/default/svgs/categories-art.svg" alt="categories-science">
                                     </div>
                                     <a href="#"><h3 class="categories-title">SAT</h3></a>
                                 </div>
@@ -286,7 +286,7 @@
                                 <div class="categories-card">
                                     <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
                                     <div class="categories-icon" style="background: #339;">
-                                        <img src="/assets/default/svgs/science-math.svg" alt="categories-math">
+                                        <img src="/assets/default/svgs/categories-math.svg" alt="categories-math">
                                     </div>
                                     <a href="#"><h3 class="categories-title">Maths</h3></a>
                                 </div>
