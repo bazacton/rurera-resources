@@ -22,19 +22,8 @@
           </h1>
           <strong class="d-block font-36">Read Anywhere, Anytime!</strong>
           <p itemprop="description" class="lms-subtitle font-19 font-weight-normal pt-20">Rurera boosts reading skills with fun books, cool rewards, and personalized challenges. Watch your child's love for reading grow every day!</p>
-          <!-- <ul class="mt-40 mb-30 p-0 row">
-            <li class="mb-10 font-19 col-lg-6 col-md-6 col-12">Track Your Reading Progress</li>
-            <li class="mb-10 font-19 col-lg-6 col-md-6 col-12">Estimate Your Reading Time</li>
-            <li class="mb-10 font-19 col-lg-6 col-md-6 col-12">Engage in Fun Reading Activities & Quizzes</li>
-            <li class="mb-10 font-19 col-lg-6 col-md-6 col-12">Challenge Yourself with Fun Quizzes for Every Chapter & Book!</li>
-            <li class="mb-10 font-19 col-lg-6 col-md-6 col-12">Find What You Need with Easy Search & Navigation</li>
-            <li class="mb-10 font-19 col-lg-6 col-md-6 col-12">Earn Badges for Your Reading Achievements</li>
-          </ul> -->
           <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
-          <!-- <div class="d-flex align-items-center mt-30">
-            <a href="#" data-toggle="modal" data-target="#exampleModal" class="book-btn justify-content-center bg-primary text-white">Start Reading</a>
-            <a href="#" data-toggle="modal" data-target="#exampleModal" class="book-btn justify-content-center ml-15">Continue Reading</a>
-          </div> -->
+
         </div>
       </div>
     </div>
@@ -45,7 +34,7 @@
             <div class="img-holder">
               <figure>
                 <a href="#">
-                  <img src="https:../assets/default/img/book-masonry1.png" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
+                  <img src="/assets/default/img/book-masonry1.png" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
                 </a>
               </figure>
             </div>
