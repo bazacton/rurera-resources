@@ -1,24 +1,24 @@
 @php
-if (empty($authUser) and auth()->check()) {
-$authUser = auth()->user();
-}
+    if (empty($authUser) and auth()->check()) {
+    $authUser = auth()->user();
+    }
 
-$navBtnUrl = null;
-$navBtnText = null;
+    $navBtnUrl = null;
+    $navBtnText = null;
 
-if(request()->is('forums*')) {
-$navBtnUrl = '/forums/create-topic';
-$navBtnText = trans('update.create_new_topic');
-} else {
-$navbarButton = getNavbarButton(!empty($authUser) ? $authUser->role_id : null);
+    if(request()->is('forums*')) {
+    $navBtnUrl = '/forums/create-topic';
+    $navBtnText = trans('update.create_new_topic');
+    } else {
+    $navbarButton = getNavbarButton(!empty($authUser) ? $authUser->role_id : null);
 
-if (!empty($navbarButton)) {
-$navBtnUrl = $navbarButton->url;
-$navBtnText = $navbarButton->title;
-}
-}
-$navbarPages = isset( $navData['navbarPages'] )? $navData['navbarPages'] : array();
-$profile_navs = isset( $navData['profile_navs'] )? $navData['profile_navs'] : array();
+    if (!empty($navbarButton)) {
+    $navBtnUrl = $navbarButton->url;
+    $navBtnText = $navbarButton->title;
+    }
+    }
+    $navbarPages = isset( $navData['navbarPages'] )? $navData['navbarPages'] : array();
+    $profile_navs = isset( $navData['profile_navs'] )? $navData['profile_navs'] : array();
 @endphp
 @if( !isset( $authUser ) || !$authUser->isUser())
 
