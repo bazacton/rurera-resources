@@ -234,7 +234,7 @@
                 <div class="blog-grid-card pb-0">
                   <div class="blog-grid-detail pr-0">
                     <div class="blog-grid-image lazyload-img">
-                      <img src="/assets/default/img/buller-img.png" class="img-sm" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" width="100%" height="100%" itemprop="image" loading="eager">
+                      <img src="/assets/default/img/buller-img.png" class="img-sm" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" width="20" height="21" itemprop="image" loading="eager">
                       <img src="../assets/default/img/bookchoose-img1.png" width="370" height="250" class="img-cover" loading="eager" alt="#">
                     </div>
                     <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
@@ -250,7 +250,7 @@
                 <div class="blog-grid-card pb-0">
                   <div class="blog-grid-detail pr-0">
                     <div class="blog-grid-image lazyload-img">
-                      <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Uncover Your Progress:" title="Uncover Your Progress:" width="100%" height="100%" itemprop="image" loading="eager">
+                      <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Uncover Your Progress:" title="Uncover Your Progress:" width="20" height="21" itemprop="image" loading="eager">
                       <img src="../assets/default/img/bookchoose-img2.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
                     </div>
                     <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
@@ -266,7 +266,7 @@
                 <div class="blog-grid-card pb-0">
                   <div class="blog-grid-detail pr-0">
                     <div class="blog-grid-image lazyload-img">
-                      <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Personalized Learning Pathways:" title="Personalized Learning Pathways:" width="100%" height="100%" itemprop="image" loading="eager">
+                      <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Personalized Learning Pathways:" title="Personalized Learning Pathways:" width="20" height="21" itemprop="image" loading="eager">
                       <img src="../assets/default/img/bookchoose-img3.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
                     </div>
                     <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
@@ -283,7 +283,7 @@
                 <div class="blog-grid-card pb-0">
                   <div class="blog-grid-detail pr-0">
                     <div class="blog-grid-image lazyload-img">
-                      <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Awesome Rewards as You Read:" title="Awesome Rewards as You Read:" width="100%" height="100%" itemprop="image" loading="eager">
+                      <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Awesome Rewards as You Read:" title="Awesome Rewards as You Read:" width="20" height="21" itemprop="image" loading="eager">
                       <img src="../assets/default/img/bookchoose-img1.png" width="370" height="250" class="img-cover" loading="eager" alt="#">
                     </div>
                     <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
@@ -299,7 +299,7 @@
                 <div class="blog-grid-card pb-0">
                   <div class="blog-grid-detail pr-0">
                     <div class="blog-grid-image lazyload-img">
-                      <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Effortless Student Engagement:" title="Effortless Student Engagement:" width="100%" height="100%" itemprop="image" loading="eager">
+                      <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Effortless Student Engagement:" title="Effortless Student Engagement:" width="20" height="21" itemprop="image" loading="eager">
                       <img src="../assets/default/img/bookchoose-img2.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
                     </div>
                     <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
@@ -315,7 +315,7 @@
                 <div class="blog-grid-card pb-0">
                   <div class="blog-grid-detail pr-0">
                     <div class="blog-grid-image lazyload-img">
-                      <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Reporting Made Easy:" title="Reporting Made Easy:" width="100%" height="100%" itemprop="image" loading="eager">
+                      <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Reporting Made Easy:" title="Reporting Made Easy:" width="20" height="21" itemprop="image" loading="eager">
                       <img src="../assets/default/img/bookchoose-img3.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
                     </div>
                     <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
