@@ -1107,7 +1107,7 @@ Sats Preparation Page Style End
 .subscribe-plan.subscribe-highlight .plan-feature li:after {background-color: rgba(255,255,255,0.1); border-color: rgba(0,0,0,0.2);}
 .registration-package-statistics .registration-package-statistics-icon {width: 48px; height: 48px;}
 .subscribe-plan .subscribe-icon {position: relative;}
-.subscribe-plan .subscribe-icon img {transition: all .4s ease; width: 50px; object-fit: contain;}
+.subscribe-plan .subscribe-icon img {transition: all .4s ease; width: 50px; height: 50px; object-fit: contain;}
 .subscribe-plan h3 {text-align: center; color: #5a5865; line-height: normal;}
 .subscribe-plan .subscribe-price {justify-content: center; flex-direction: column; align-items: center;}
 .subscribe-plan .subscribe-price .yearly-price {display: block; color: #aeaeb0; padding-top: 10px;}
