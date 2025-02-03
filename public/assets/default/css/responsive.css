@@ -1525,6 +1525,9 @@ Lms Responsive Style Start
         width: 35px;
         height: 35px;
     }
+    .login-pad-icons {
+        padding-bottom: 25px;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
