@@ -387,6 +387,7 @@ Front-end Login Style End
 /********************************
 Home Banner Style Start
 *********************************/
+.home-banner {background-color: #596bfd; min-height: 650px;}
 .home-banner .choose-sats .sats-box {background-color: rgba(255,255,255,0.9); border-color: rgba(0,0,0,0.4); min-height: 135px; padding: 40px 12px 20px; position: relative; transition: all .5s ease;}
 .home-banner .choose-sats .sats-box img {margin-top: -110px; max-width: 100px; max-height: 100px; transition: all .5s ease; position: absolute;}
 .home-banner .choose-sats .sats-box:hover img {margin-top: -100px;}
