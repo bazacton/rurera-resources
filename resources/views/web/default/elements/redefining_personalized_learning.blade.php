@@ -3,7 +3,7 @@ $items = isset( $items )? $items : array();
 $heading = isset( $heading )? $heading : "Unlock Success with Rurera's Key Features";
 $description = isset( $description )? $description : "Rurera provides powerful resources that align with student's specific interests and learning goals.";
 @endphp
-<section class="pt-60 feature-grid-section">
+<section class="pt-60 feature-grid-section test">
     <div class="container">
         <div class="row">
             <div class="col-12">
