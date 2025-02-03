@@ -170,9 +170,7 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon {width: 25px; height: 25px; margin-bottom: 0; margin-right: 12px !important;}
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon .cls-3,
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon.assign-fill svg,
-.panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon.assign-fill svg * {
-    fill: #fff
-}
+.panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon.assign-fill svg * {fill: #fff}
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon.sidenav-notification-icon .cls-1 {
     fill: none;
     stroke: #fff;
