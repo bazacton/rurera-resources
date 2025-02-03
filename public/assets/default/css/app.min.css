@@ -1768,10 +1768,8 @@ Lms Books Listing Style End
 .usernames-suggestions br {display: none;}
 .lms-choose-membership .emoji-icons .emoji-icon {padding: 0 5px;}
 .lms-choose-membership .pin-list {min-height: 28px; display: flex; align-items: center; color: #666; font-weight: 500;}
-.modal.spell_words_popup {padding-right: 25px !important; margin-left: -18px; width: 103%;}
-@supports (scrollbar-gutter: stable both-edges) {
-  .modal.spell_words_popup {scrollbar-gutter: stable both-edges;}
-}
+.modal.spell_words_popup {padding-right: 25px !important; scrollbar-gutter: stable both-edges; margin-left: -18px; width: 103%;}
+
 /* Recent Reviews Style */
 .recent-reviews-section .grid-item {width: 100%; padding: 0 0 0 14px; margin-bottom: 14px;}
 .reviews-card {border: 1px solid #ddd; padding: 15px 10px; border-radius: 4px; background-color: #fff;}
