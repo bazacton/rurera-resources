@@ -340,7 +340,7 @@
             </div>
           </div>
           <div class="col-12 col-lg-12 col-md-12 mx-auto">
-            <div class="lms-faqs mx-w-100" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="lms-faqs mx-w-100" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <div id="accordion">
                 <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
                   <div class="card-header active" id="heading">
@@ -352,7 +352,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                   <div class="card-header" id="headingTwo">
                     <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I read books offline?</button>
                   </div>
@@ -362,7 +362,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                   <div class="card-header" id="headingThree">
                     <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How can I find books that match my reading level?</button>
                   </div>
@@ -372,7 +372,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                   <div class="card-header" id="headingfour">
                     <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">How do book chapter quizzes work?</button>
                   </div>
@@ -382,7 +382,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                   <div class="card-header" id="headingfive">
                     <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">How do I earn Coin Points through reading?</button>
                   </div>
@@ -392,7 +392,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                   <div class="card-header" id="headingsix">
                     <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">How does reading benefit a child's development?</button>
                   </div>
@@ -402,7 +402,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                   <div class="card-header" id="heading7">
                     <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">Can reading help with academic performance?</button>
                   </div>
@@ -412,7 +412,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                   <div class="card-header" id="heading8">
                     <button class="btn font-18 font-weight-bold btn-link collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">How does reading improve a child's language skills?</button>
                   </div>
@@ -428,7 +428,6 @@
       </div>
     </div>
   </section>
-  
   
   @foreach($homeSections as $homeSection)
     @if($homeSection->name == \App\Models\HomeSection::$blog and !empty($blog) and !$blog->isEmpty())
