@@ -961,7 +961,7 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img class="w-100" src="../assets/default/img/company-quiz.jpg" alt="company performance" title="company performance" width="100%" height="auto" itemprop="image" loading="eager" /></figure>
+                                <figure><img class="w-100" src="../assets/default/img/company-quiz.jpg" alt="company performance" title="company performance" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
                         <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
