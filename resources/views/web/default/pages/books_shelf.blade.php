@@ -83,7 +83,7 @@
             <div class="img-holder">
               <figure>
                 <a href="#">
-                  <img src="/assets/default/img/book05.png" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
+                  <img src="/assets/default/img/book05.png" alt="default staff image" title="default staff image" width="192" height="193" itemprop="image" loading="eager">
                 </a>
               </figure>
             </div>
