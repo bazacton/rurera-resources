@@ -654,7 +654,7 @@ Lms Responsive Style Start
     .chart-filters,
     .chart-filters ul {flex-wrap: wrap; border: 0;}
     .spells-quiz-info ul {justify-content: flex-start; gap: 0;}
-    .spells-quiz-from button {margin-top: 0; min-width: auto; padding: 10 20px;}
+    .spells-quiz-from button {margin-top: 0; min-width: auto; padding: 10px 20px;}
     .spells .dataTable td a,
     .spells .dataTable thead tr th {font-size: 14px;}
     .spells-topbar .view-btn {min-width: 150px; text-align: center;}
@@ -1252,7 +1252,7 @@ Lms Responsive Style Start
     .treasure-mission-layout .spell-levels .horizontal-list {display: inline-block !important;}
     .treasure-mission-layout .spell-levels li > a {height: 43px; width: 45px;}
     .treasure-mission-layout .spell-levels .horizontal-list li.treasure.vertical-li {margin-top: 30px;margin-left: 0;}
-    .treasure-mission-layout .spell-levels .horizontal-list li.treasure.vertical-li a:after {height: 35;margin-top: 0;width: 2px;margin-left: -1px; margin-bottom: 5px;}
+    .treasure-mission-layout .spell-levels .horizontal-list li.treasure.vertical-li a:after {height: 35px;margin-top: 0;width: 2px;margin-left: -1px; margin-bottom: 5px;}
     .treasure-mission-layout .spell-levels .horizontal-list li.vertical-li {right: 0; margin-top: 30px;}
     .treasure-mission-layout .spell-levels .horizontal-list.ul-rtl {margin-left: 0;}
     .treasure-mission-layout .spell-levels .treasure > a .thumb-box img {max-width: 100%;height: auto;object-fit: contain;}
