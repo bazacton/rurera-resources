@@ -798,10 +798,8 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
-                        <figure class="mb-20" class="mb-20">
-
+                        <figure class="mb-20">
                             <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Key to Effective Learning</span>
@@ -813,9 +811,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
                             <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">SATs 100s online Assessments</span>
@@ -826,9 +822,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
                             <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Past SATs Papers</span>
@@ -840,9 +834,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
                             <img src="../assets/default/img/quick-assesments.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Learn, Play & Win</span>
@@ -855,9 +847,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
                             <img src="../assets/default/img/insights-feature.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Student Engagement</span>
@@ -869,9 +859,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
                             <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Activity Monitoring</span>
@@ -883,9 +871,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
                             <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Parental Insights</span>
@@ -899,9 +885,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
                             <img src="../assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Interactive Learning</span>
