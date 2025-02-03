@@ -43,7 +43,6 @@
 
 <body class="menu-closed @if($isRtl) rtl @endif">
     <div id="app">
-
         @if(!request()->is('login') && !request()->is('register') && !request()->is('forget-password'))
         @if(!isset($appHeader))
             @include('web.default.includes.top_nav')
