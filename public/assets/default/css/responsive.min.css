@@ -1170,7 +1170,8 @@ Lms Responsive Style Start
     .detail-body .edit-info-list .package-block img {height: 50px; width: 50px; object-fit: contain;}
     .level-stage {overflow: hidden;}
     .activities-container .row {gap: 15px 0;}
-    .section-title.font-24 {font-size: 1.5rem !important;}
+    .section-title.font-24,
+    .login-holder h2.font-24 {font-size: 1.5rem !important;}
 }
 
 @media screen and (max-width: 640px) {
@@ -1505,6 +1506,13 @@ Lms Responsive Style Start
     .leave-option-control {flex-wrap: wrap;}
     .analytics-dropdown select {background-position: 98% 50%;}
     .sats-listing-card.medium table h4 img {top: -2px; right: 0; max-width: 30px; transform: none;}
+    .emoji-passwords {
+        gap: 10px;
+    }
+    .emoji-passwords .is_empty {
+        height: 35px;
+        width: 35px;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
