@@ -509,7 +509,7 @@
           <span aria-hidden="true">×</span>
         </button>
         <div class="modal-body">
-          <div class="tab-content" id="nav-tabContent">
+          <div class="tab-content" id="nav-tabContent2">
             <div class="tab-pane fade show active" id="get" role="tabpanel" aria-labelledby="get-tab">
               <div class="membership-steps-holder">
                 <div class="container">
