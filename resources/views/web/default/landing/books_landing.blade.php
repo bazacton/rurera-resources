@@ -669,7 +669,7 @@
                             <a href="#">
                               <span class="icon-svg">
                                 <svg width="64px" height="64px" viewBox="0 0 48 48" id="b" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-                                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                  <g id="SVGRepo_bgCarrier4" stroke-width="0"></g>
                                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                   <g id="SVGRepo_iconCarrier4">
                                     <path class="c" d="m32.017,16.7078c1.7678,1.3258,3.241,4.7141,2.9463,8.397-.2946,2.799-1.7678,5.1561-2.9463,6.04"></path>
@@ -763,7 +763,7 @@
                               <div class="input-field input-card">
                                 <span class="icon-svg">
                                   <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_bgCarrier2" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier8" stroke-linecap="round" stroke-linejoin="round"></g>
                                     <g id="SVGRepo_iconCarrier5">
                                       <g>
@@ -796,8 +796,8 @@
                             </div>
                             <div class="secure-server">
                               <figure>
-                                <svg fill="#000000" width="64px" height="64px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="lock-check" class="icon glyph">
-                                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <svg fill="#000000" width="64px" height="64px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="lock-check2" class="icon glyph">
+                                  <g id="SVGRepo_bgCarrier3" stroke-width="0"></g>
                                   <g id="SVGRepo_tracerCarrier9" stroke-linecap="round" stroke-linejoin="round"></g>
                                   <g id="SVGRepo_iconCarrier6">
                                     <path d="M18,8H17V7A5,5,0,0,0,7,7V8H6a2,2,0,0,0-2,2V20a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V10A2,2,0,0,0,18,8ZM9,7a3,3,0,0,1,6,0V8H9Zm6.71,6.71-4,4a1,1,0,0,1-1.42,0l-2-2a1,1,0,0,1,1.42-1.42L11,15.59l3.29-3.3a1,1,0,0,1,1.42,1.42Z"></path>
