@@ -171,6 +171,7 @@
                                     </div>
                                     @else
                                     @if( isset( $navbarPage['submenu'] ) && $navbarPage['submenu'] != '' && (!isset(
+                                        
                                     $navbarPage['is_mega_menu'] ) || $navbarPage['is_mega_menu'] != 1))
 
                                     <div class="sidenav-dropdown">
@@ -179,7 +180,7 @@
                                         </ul>
                                     </div>
                                     @endif
-                                        @if( isset( $navbarPage['is_mega_menu'] ) && $navbarPage['is_mega_menu'] == 1) {!! $navbarPage['submenu'] !!} @endif
+                                    @if( isset( $navbarPage['is_mega_menu'] ) && $navbarPage['is_mega_menu'] == 1) {!! $navbarPage['submenu'] !!} @endif
                                     @endif
                                 </li>
                             @endforeach
