@@ -22,13 +22,12 @@
 @endphp
 @if( !isset( $authUser ) || !$authUser->isUser())
     <div id="navbarVacuum"></div>
-    
+
     <nav id="navbar" class="navbar1 navbar-expand-lg navbar-light top-navbar">
         <div class="{{ (!empty($isPanel) and $isPanel) ? 'container-fluid' : 'container-fluid'}}">
             <div class="d-flex align-items-center justify-content-between w-100">
 
-                <a class="navbar-brand navbar-order d-flex align-items-center justify-content-center mr-0 {{ (empty($navBtnUrl) and empty($navBtnText)) ? 'ml-auto' : '' }}"
-                href="{{url('/')}}/" itemprop="url">
+                <a class="navbar-brand navbar-order d-flex align-items-center justify-content-center mr-0 {{ (empty($navBtnUrl) and empty($navBtnText)) ? 'ml-auto' : '' }}" href="{{url('/')}}/" itemprop="url">
                     @if(!empty($generalSettings['logo']))
                     <img src="{{ $generalSettings['logo'] }}" class="img-cover" alt="Rurera Logo" title="Rurera Logo"
                         width="185" height="38" itemprop="image" loading="eager">
@@ -40,10 +39,9 @@
                 </button>
 
                 <div class="mx-lg-30 d-none d-lg-flex flex-grow-1 navbar-toggle-content " id="navbarContent">
-                    <a class="mobile-logo"
-                        href="{{url('/')}}/" itemprop="url">
+                    <a class="mobile-logo" href="{{url('/')}}/" itemprop="url">
                         <img src="{{ $generalSettings['logo'] }}" alt="Rurera Logo" title="Rurera Logo" width="185" height="38" itemprop="image" loading="eager">
-                        </a>
+                    </a>
                     <div class="navbar-toggle-header text-right d-lg-none">
                         <button class="btn-transparent" id="navbarClose">
                             <img src="/assets/default/svgs/close.svg" alt="close">
@@ -122,14 +120,14 @@
                                                             <div class="col-12 col-lg-3 col-md-6">
                                                                 @endif
                                                                 <div class="menu-colum-text">
-                                                                    <a
-                                                                            href="/{{$navigation_slug}}/{{$chapter_data['chapter_slug']}}"><strong>{!! isset(
-                                                                            $chapter_data['chapter_icon_code'] )?
-                                                                            $chapter_data['chapter_icon_code'] :
-                                                                            '' !!}{{isset(
-                                                                            $chapter_data['chapter_title'] )?
-                                                                            $chapter_data['chapter_title'] :
-                                                                            ''}}</strong></a>
+                                                                    <a href="/{{$navigation_slug}}/{{$chapter_data['chapter_slug']}}"><strong>{!! isset(
+                                                                        $chapter_data['chapter_icon_code'] )?
+                                                                        $chapter_data['chapter_icon_code'] :
+                                                                        '' !!}{{isset(
+                                                                        $chapter_data['chapter_title'] )?
+                                                                        $chapter_data['chapter_title'] :
+                                                                        ''}}</strong>
+                                                                    </a>
                                                                     @if( isset( $chapter_data['topics']) && !empty(
                                                                     $chapter_data['topics'] ) )
                                                                     <ul class="topic-list">
@@ -147,15 +145,15 @@
                                                                             <a href="{{$chapter_link}}">{{$topic_title}}</a>
                                                                         </li>
                                                                         @else
-                                                                        <li style="display:none;"><a
-                                                                                    href="/course/{{$chapter_data['chapter_slug']}}#subject_{{$topic_id}}">{{$topic_title}}</a>
+                                                                        <li style="display:none;">
+                                                                            <a href="/course/{{$chapter_data['chapter_slug']}}#subject_{{$topic_id}}">{{$topic_title}}</a>
                                                                         </li>
                                                                         @endif
                                                                         @php $topics_count++; @endphp
                                                                         @endforeach
                                                                         @if( count($chapter_data['topics']) > 8)
-                                                                        <li class="load-more"><a
-                                                                                    href="/course/{{$chapter_data['chapter_slug']}}">...</a>
+                                                                        <li class="load-more">
+                                                                            <a href="/course/{{$chapter_data['chapter_slug']}}">...</a>
                                                                         </li>
                                                                         @endif
                                                                     </ul>
