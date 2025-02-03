@@ -171,7 +171,7 @@
                                     </div>
                                     @else
                                     @if( isset( $navbarPage['submenu'] ) && $navbarPage['submenu'] != '' && (!isset(
-                                        
+
                                     $navbarPage['is_mega_menu'] ) || $navbarPage['is_mega_menu'] != 1))
 
                                     <div class="sidenav-dropdown">
@@ -197,7 +197,7 @@
                 @if(isset( $authUser ) && $authUser->isUser())
                     <div class="coin-counts">
                         <strong>
-                            <img src="/assets/default/img/coin-img.png" alt="">
+                            <img src="/assets/default/img/coin-img.png" alt="coin-img">
                             {{$authUser->getRewardPoints()}}
                         </strong>
                     </div>
