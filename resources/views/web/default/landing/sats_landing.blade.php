@@ -981,7 +981,7 @@
                                 <figure><img class="w-100" src="../assets/default/img/all-in-1-platform.jpg" alt="company rewards" title="company rewards" width="100%" height="auto" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-4">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
                                     <span itemprop="size">#4</span>Timely Reporting
@@ -996,7 +996,7 @@
                                 <figure><img class="w-100" src="../assets/default/img/company-sats.jpg" alt="company insights" title="company insights" width="100%" height="auto" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-5">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
                                     <span itemprop="size">#5</span>Breakthrough insights at every level
@@ -1014,7 +1014,7 @@
                                 <figure><img class="w-100" src="../assets/default/img/company-insights.jpg" alt="company quiz" title="company quiz" width="100%" height="auto" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-6">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">
                                     <span itemprop="size">#6</span>Students Engagement
@@ -1032,7 +1032,7 @@
                                 <figure><img class="w-100" src="../assets/default/img/company-performance.jpg" alt="company curriculum" width="100%" height="auto" title="company curriculum" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-6">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="true" aria-controls="collapse-7">
                                     <span itemprop="size">#7</span>Reward points
@@ -1074,7 +1074,7 @@
                                 @if( !empty( $faq_items ))
 
                                 @foreach( $faq_items as $itemData)
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingonsix">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold" data-toggle="collapse" data-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">{{isset( $itemData['title'])? $itemData['title'] : '' }}</button>
@@ -1090,7 +1090,7 @@
                                 @endforeach
 
                                 @else
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingonsix">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">What are SATs in UK?</button>
@@ -1103,7 +1103,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingTwo">
                                         <h3 class="mb-0"><button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse"
                                                 data-target="#collapseTwo" aria-expanded="false"
@@ -1130,7 +1130,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingseven">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven"> Which subjects are assessed during the SATs exams?</button>
@@ -1149,7 +1149,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading8">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">Is it compulsory for students to take the SATs exams?</button>
@@ -1162,7 +1162,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading9">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">What is the process for scoring SATs, and how are student results determined?
@@ -1176,7 +1176,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading10">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">Does Rurera align with the national curriculum and standards?</button>
@@ -1189,7 +1189,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading11">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">How does Rurera boost and sustain my child's motivation?</button>
@@ -1203,7 +1203,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading12">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">What support and resources does Rurera offer for my child's learning?</button>
@@ -1217,7 +1217,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading13">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">Will my child need my help to use Rurera, or can they manage it independently?
