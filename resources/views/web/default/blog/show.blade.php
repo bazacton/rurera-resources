@@ -52,7 +52,7 @@
                                     </h2>
                                 </div>
                                 <div class="blog-grid-image">
-                                    <img src="/store/1/default_images/blogs/blog-13.webp" class="img-cover" alt="2 Ways to Boost Learning and SATs Success with Rurera" title="2 Ways to Boost Learning and SATs Success with Rurera" width="100%" height="100%" itemprop="image" loading="eager">
+                                    <img src="/store/1/default_images/blogs/blog-13.webp" class="img-cover" alt="2 Ways to Boost Learning and SATs Success with Rurera" title="2 Ways to Boost Learning and SATs Success with Rurera" width="1380" height="920" itemprop="image" loading="eager">
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                                     </h2>
                                 </div>
                                 <div class="blog-grid-image">
-                                    <img src="/store/1/default_images/blogs/blog-29.jpg" class="img-cover" alt="Experience realistic 11+ mock exams designed to simulate act" title="Experience realistic 11+ mock exams designed to simulate act" width="100%" height="100%" itemprop="image" loading="eager">
+                                    <img src="/store/1/default_images/blogs/blog-29.jpg" class="img-cover" alt="Experience realistic 11+ mock exams designed to simulate act" title="Experience realistic 11+ mock exams designed to simulate act" width="370" height="370" itemprop="image" loading="eager">
                                 </div>
                             </div>
                         </div>
@@ -84,7 +84,7 @@
                                     </h2>
                                 </div>
                                 <div class="blog-grid-image">
-                                    <img src="/store/1/default_images/blogs/blog-27.jpg" class="img-cover" alt="How to Explore the Future of Learning for Year 6 Students." title="How to Explore the Future of Learning for Year 6 Students." width="100%" height="100%" itemprop="image" loading="eager">
+                                    <img src="/store/1/default_images/blogs/blog-27.jpg" class="img-cover" alt="How to Explore the Future of Learning for Year 6 Students." title="How to Explore the Future of Learning for Year 6 Students." width="370" height="370" itemprop="image" loading="eager">
                                 </div>
                             </div>
                         </div>
