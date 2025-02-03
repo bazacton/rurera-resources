@@ -13,7 +13,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 </div>
             </div>
             @if( in_array(10, $items))
-            
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="500" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
                     <figure class="mb-20">
@@ -29,6 +29,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             </div>
             @endif
             @if( in_array(2, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="1000" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
                     <figure class="mb-20">
@@ -44,6 +45,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             </div>
             @endif
             @if( in_array(3, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="1500" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
                     <figure class="mb-20">
@@ -59,6 +61,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             </div>
             @endif
             @if( in_array(9, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="2000" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
                     <figure class="mb-20">
@@ -74,6 +77,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             </div>
             @endif
             @if( in_array(8, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="1500" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
                     <figure class="mb-20">
@@ -89,6 +93,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             </div>
             @endif
             @if( in_array(15, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="1500" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
                     <figure class="mb-20">
@@ -104,6 +109,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             </div>
             @endif
             @if( in_array(17, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="3500" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
@@ -119,6 +125,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             </div>
             @endif
             @if( in_array(5, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="4000" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
@@ -134,6 +141,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             </div>
             @endif
             @if( in_array(6, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="4500" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
@@ -149,6 +157,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             </div>
             @endif
             @if( in_array(11, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="5000" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
@@ -164,6 +173,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             </div>
             @endif
             @if( in_array(7, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="5500" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
@@ -179,6 +189,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             </div>
             @endif
             @if( in_array(16, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="6000" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
@@ -195,6 +206,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @endif
 
             @if( in_array(1, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="6500" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20" class="mb-20">
@@ -211,6 +223,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @endif
             
             @if( in_array(4, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="7000" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
@@ -227,6 +240,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @endif
             
             @if( in_array(12, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="7500" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
@@ -258,6 +272,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             </div>
             @endif
             @if( in_array(14, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="8500" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
@@ -274,6 +289,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             @endif
             
             @if( in_array(18, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="9000" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
@@ -289,6 +305,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             </div>
             @endif
             @if( in_array(19, $items))
+
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="9500" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
                     <figure class="mb-20">
@@ -303,6 +320,7 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 </div>
             </div>
             @endif
+            
         </div>
     </div>
 </section>
