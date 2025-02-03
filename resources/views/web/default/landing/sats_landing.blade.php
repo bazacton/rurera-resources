@@ -1092,7 +1092,7 @@
                                 <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingonsix">
                                         <h3 class="mb-0">
-                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">What are SATs in UK?</button>
+                                            <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="heading7">What are SATs in UK?</button>
                                         </h3>
                                     </div>
                                     <div id="collapsesix" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
