@@ -947,7 +947,7 @@
                                 <figure><img class="w-100" src="../assets/default/img/adpative-assessment.jpg" alt="company sats" title="company sats" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-2">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
                                     <span itemprop="size">#2</span>Quick Results via automated marking
