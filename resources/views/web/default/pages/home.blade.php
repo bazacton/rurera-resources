@@ -49,7 +49,6 @@
                                     <img src="/store/1/default_images/home_sections_banners/dialogue.webp" height="300" width="300" alt="practice papers">
                                     <span class="mb-10" style="color: #3d358b;">Practice papers</span>
                                     <p>Ace every exam with tailored practice papers for KS1, KS2, SATs, 11 Plus, and more.</p>
-                                    <!-- <a href="{{url('/')}}/register">Learn more</a> -->
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 col-md-6">
@@ -57,7 +56,6 @@
                                     <img src="/store/1/default_images/home_sections_banners/cactus.webp" width="300" height="300" alt="cactus image">
                                     <span class="mb-10" style="color: #f18700;">Interactive questions</span>
                                     <p>Conquer exams with 5,000+ interactive questions designed for success.</p>
-                                    <!-- <a href="{{url('/')}}/register">Learn more</a> -->
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 col-md-6">
@@ -65,7 +63,6 @@
                                     <img src="/store/1/default_images/home_sections_banners/rocket-ship.webp" width="280" height="280" alt="rocket-ship image">
                                     <span class="mb-10" style="color: #7679ee;">Strong Foundation</span>
                                     <p>Build a powerful foundation that shapes every aspect of future success.</p>
-                                    <!-- <a href="{{url('/')}}/register">Learn more</a> -->
                                 </div>
                             </div>
                         </div>
