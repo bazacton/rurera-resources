@@ -28,9 +28,9 @@
             <div class="d-flex align-items-center justify-content-between w-100">
 
                 <a class="navbar-brand navbar-order d-flex align-items-center justify-content-center mr-0 {{ (empty($navBtnUrl) and empty($navBtnText)) ? 'ml-auto' : '' }}" href="{{url('/')}}/" itemprop="url">
-                    @if(!empty($generalSettings['logo']))
+                @if(!empty($generalSettings['logo']))
                     <img src="{{ $generalSettings['logo'] }}" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="185" height="38" itemprop="image" loading="eager">
-                    @endif
+                @endif
                 </a>
 
                 <button class="navbar-toggler navbar-order" type="button" aria-label="navbar toggler" id="navbarToggle">
