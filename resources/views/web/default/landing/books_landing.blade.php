@@ -342,7 +342,7 @@
           <div class="col-12 col-lg-12 col-md-12 mx-auto">
             <div class="lms-faqs mx-w-100" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <div id="accordion">
-                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                   <div class="card-header active" id="heading">
                     <button class="btn font-18 font-weight-bold btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">How does Rurera’s bookshelf work?</button>
                   </div>
