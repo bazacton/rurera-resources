@@ -433,7 +433,7 @@ Home Choose Sats Style End
 /********************************
 Home Reward Section Style Start
 *********************************/
-.reward-program-section {border-radius: 30px; background-color: #f7fafd;}
+.reward-program-section {border-radius: 30px; background-color: #fffcee;}
 .reward-program-section .reward-program-section-hero-card {height: 350px; }
 .reward-program-section .reward-program-section-hero-card .reward-program-section-hero {position: absolute; height: 390px; width: 100%; left: -70px; top: -20px; object-fit: contain;}
 .reward-program-section .reward-program-section-dots {position: absolute; top: 25px; left: 30px; z-index: 1; -webkit-animation: hero-dot 5s linear 0s infinite alternate; animation: hero-dot 5s linear 0s infinite alternate;}
