@@ -27,7 +27,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
             </li>
 		</ul>
 	</div>
-	<div class="editor-controls tab-pane fade active show" id="stages{{$data_id}}" role="tabpanel" aria-labelledby="profile-tab">
+	<div class="editor-controls tab-pane fade" id="stages{{$data_id}}" role="tabpanel" aria-labelledby="profile-tab">
 		<ul class="nav nav-pills" id="myTab3" role="tablist">
 			<li class="nav-item">
 				<a class="nav-link active" id="objects-tab{{$data_id}}" data-toggle="tab" href="#objects{{$data_id}}" role="tab" aria-controls="objects{{$data_id}}" aria-selected="true">Objects</a>
