@@ -58,11 +58,11 @@
 
     @yield('content')
 
-    @if(!request()->is('login') && !request()->is('register') && !request()->is('forget-password'))
-        @if(!isset($appFooter))
-			@include('web.default.includes.footer_custom')
-        @endif
-    @endif
+@if(!request()->is('login') && !request()->is('register') && !request()->is('forget-password'))
+@if(!isset($appFooter))
+@include('web.default.includes.footer_custom')
+@endif
+@endif
 
     @include('web.default.includes.advertise_modal.index')
 </div>
