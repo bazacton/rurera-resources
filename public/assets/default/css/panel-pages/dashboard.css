@@ -167,12 +167,7 @@ Left SideBar-menu Start
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .cls-3 {fill: #ffab00 !important;}
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .sidenav-notification-icon .cls-1,
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .sidenav-notification-icon .cls-3 {fill: none !important; stroke: #ffab00 !important;}
-.panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon {
-    width: 25px;
-    height: 25px;
-    margin-bottom: 0;
-    margin-right: 12px !important;
-}
+.panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon {width: 25px; height: 25px; margin-bottom: 0; margin-right: 12px !important;}
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon .cls-3,
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon.assign-fill svg,
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon.assign-fill svg * {
