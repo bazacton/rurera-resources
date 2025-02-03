@@ -56,7 +56,7 @@
             <div class="img-holder">
               <figure>
                 <a href="#">
-                  <img src="https:../assets/default/img/book-masonry1.png" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
+                  <img src="/assets/default/img/book-masonry1.png" alt="default staff image" title="default staff image" width="192" height="288" itemprop="image" loading="eager">
                 </a>
               </figure>
             </div>
@@ -65,7 +65,7 @@
             <div class="img-holder">
               <figure>
                 <a href="#">
-                  <img src="../assets/default/img/book-masonry6.png" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
+                  <img src="/assets/default/img/book-masonry6.png" alt="default staff image" title="default staff image" width="192" height="157" itemprop="image" loading="eager">
                 </a>
               </figure>
             </div>
@@ -74,7 +74,7 @@
             <div class="img-holder">
               <figure>
                 <a href="#">
-                  <img src="../assets/default/img/book-masonry4.png" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
+                  <img src="/assets/default/img/book-masonry4.png" alt="default staff image" title="default staff image" width="192" height="284" itemprop="image" loading="eager">
                 </a>
               </figure>
             </div>
@@ -83,7 +83,7 @@
             <div class="img-holder">
               <figure>
                 <a href="#">
-                  <img src="../assets/default/img/book05.png" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
+                  <img src="/assets/default/img/book05.png" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
                 </a>
               </figure>
             </div>
@@ -92,7 +92,7 @@
             <div class="img-holder">
               <figure>
                 <a href="#">
-                  <img src="../assets/default/img/book02.png" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
+                  <img src="/assets/default/img/book02.png" alt="default staff image" title="default staff image" width="192" height="294" itemprop="image" loading="eager">
                 </a>
               </figure>
             </div>
@@ -101,7 +101,7 @@
             <div class="img-holder">
               <figure>
                 <a href="#">
-                  <img src="../assets/default/img/book03.png" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
+                  <img src="/assets/default/img/book03.png" alt="default staff image" title="default staff image" width="192" height="228" itemprop="image" loading="eager">
                 </a>
               </figure>
             </div>
@@ -110,7 +110,7 @@
             <div class="img-holder">
               <figure>
                 <a href="#">
-                  <img src="https:../assets/default/img/book-masonry6.png" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
+                  <img src="https:/assets/default/img/book-masonry6.png" alt="default staff image" title="default staff image" width="192" height="157" itemprop="image" loading="eager">
                 </a>
               </figure>
             </div>
@@ -119,7 +119,7 @@
             <div class="img-holder">
               <figure>
                 <a href="#">
-                  <img src="../assets/default/img/book05.png" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager">
+                  <img src="/assets/default/img/book05.png" alt="default staff image" title="default staff image" width="192" height="193" itemprop="image" loading="eager">
                 </a>
               </figure>
             </div>
