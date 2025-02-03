@@ -57,7 +57,7 @@ body .editor-zone:has(.editor-controls-holder) {padding:0; overflow: visible;}
 body .editor-zone:has(.field-options) {padding-left:0px;}
 .book-dropzone {position: relative; border: 1px solid #ccc; border-radius: 5px; width: 770px; height:100%; box-sizing: border-box; background-size: cover !important; overflow: hidden; display: inline-block; vertical-align: top;}
 .book-dropzone img {max-width: 100%;}
-body .editor-controls-holder {border: 1px solid #ccc; background-color: inherit; border-radius: 0; padding: 0; overflow: visible; min-width: 500px; max-width: 500px; height: auto; display: inline-block; vertical-align: top;}
+body .editor-controls-holder {border: 1px solid #ccc; background-color: inherit; border-radius: 0; padding: 0; overflow: visible; min-width: 500px; max-width: 500px; height: auto; display: inline-block; vertical-align: top; position: relative;}
 body ul.editor-objects li {width: 23.888%;}
 body .editor-parent-nav {padding: 15px; background-color: #f8f8f8;}
 body .editor-controls-holder .tab-pane .nav {border-bottom: 1px solid #ddd; padding: 0 10px;}
