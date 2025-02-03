@@ -1,5 +1,5 @@
 
-<section class="custom-footer test pt-80 pb-50 wow fadeInUp" style="background-color:#000">
+<section class="custom-footer pt-80 pb-50 wow fadeInUp" style="background-color:#000">
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-12 col-lg-8">
