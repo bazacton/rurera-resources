@@ -643,7 +643,7 @@
                         <p class="mb-20">By Clicking on Start Free Trial, I agree to the <a href="#">Terms of Service</a>And <a href="#">Privacy Policy</a>
                         </p>
                         <div class="subscription mb-20">
-                          <span>Already have a subscription? <a href="#" id="contact-tab" data-toggle="tab" data-target="#contact" aria-controls="contact" aria-selected="false">log in</a>
+                          <span>Already have a subscription? <a href="#" id="contact-tab" data-toggle="tab" data-target="#contact" aria-controls="contact" aria-selected="false" role="tab">log in</a>
                           </span>
                         </div>
                       </div>
