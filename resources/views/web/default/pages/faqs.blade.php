@@ -659,23 +659,23 @@
             </div>
         </div>
     </section>
-        <section class="lms-column-section lms-text-section w-100 mt-50" style="background-color: #fdfced;">
+    <section class="lms-column-section lms-text-section w-100 mt-50" style="background-color: #fdfced;">
         <div class="container">
             <div class="row">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="lms-text-holder py-70">
-                    <strong itemprop="text" class="mb-20">24/7 customer support</strong>
-                    <h2 itemprop="title">
-                        Need Help?<br />
-                        We're Here for You.
-                    </h2>
-                    <p itemprop="text" class="mt-15 mb-25">
-                        Our highly trained support geeks<br />
-                        are always ready to help you.
-                    </p>
-                    <a itemprop="url" href="{{url('/')}}/contact-us" class="lms-btn btn-primary rounded-pill text-white border-0 btn font-16">Ask a question ?</a>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="lms-text-holder py-70">
+                        <strong itemprop="text" class="mb-20">24/7 customer support</strong>
+                        <h2 itemprop="title">
+                            Need Help?<br />
+                            We're Here for You.
+                        </h2>
+                        <p itemprop="text" class="mt-15 mb-25">
+                            Our highly trained support geeks<br />
+                            are always ready to help you.
+                        </p>
+                        <a itemprop="url" href="{{url('/')}}/contact-us" class="lms-btn btn-primary rounded-pill text-white border-0 btn font-16">Ask a question ?</a>
                     </b>
-                </b>
+                    </b>
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
