@@ -1516,6 +1516,11 @@ Lms Responsive Style Start
     .login-with-emoji form {
         padding: 20px 0 25px;
     }
+    .login-password .form-group input.login_pin {
+        max-width: 30px !important;
+        margin: 0 2px 2px !important;
+        font-size: 30px;
+    }
 }
 @media screen and (max-width: 480px) {
     .lms-count-field .lms-text-holder {flex-direction: column;}
