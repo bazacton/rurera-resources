@@ -179,7 +179,7 @@
                                         </ul>
                                     </div>
                                     @endif
-                                    @if( isset( $navbarPage['is_mega_menu'] ) && $navbarPage['is_mega_menu'] == 1) {!! $navbarPage['submenu'] !!} @endif
+                                        @if( isset( $navbarPage['is_mega_menu'] ) && $navbarPage['is_mega_menu'] == 1) {!! $navbarPage['submenu'] !!} @endif
                                     @endif
                                 </li>
                             @endforeach
