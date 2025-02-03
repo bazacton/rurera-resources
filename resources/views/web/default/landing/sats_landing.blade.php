@@ -1069,7 +1069,7 @@
                 </div>
                 <div class="col-12 col-lg-12 col-md-12 mx-auto">
                     <div class="mt-0">
-                        <div class="lms-faqs mx-w-100 mt-0" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="lms-faqs mx-w-100 mt-0" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div id="accordion">
                                 @if( !empty( $faq_items ))
 
