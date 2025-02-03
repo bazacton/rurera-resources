@@ -13,19 +13,19 @@ $description = isset( $description )? $description : "Rurera provides powerful r
                 </div>
             </div>
             @if( in_array(10, $items))
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="500" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
-                        <figure class="mb-20">
-                            <a href="#" itemprop="url">
-                                <img src="../assets/default/img/national-curriculum.webp" alt="feature image" height="143" width="276">
-                            </a>
-                        </figure>
-                        <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
-                            <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">National Curriculum</a>
-                        </h3>
-                        <p itemprop="description">If offer Skill plans, Courses Topics and Test preparations as per defined curricula.</p>
-                    </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="500" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
+                    <figure class="mb-20">
+                        <a href="#" itemprop="url">
+                            <img src="../assets/default/img/national-curriculum.webp" alt="feature image" height="143" width="276">
+                        </a>
+                    </figure>
+                    <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
+                        <a target="_blank" href="#" itemprop="url" class="text-dark-charcoal">National Curriculum</a>
+                    </h3>
+                    <p itemprop="description">If offer Skill plans, Courses Topics and Test preparations as per defined curricula.</p>
                 </div>
+            </div>
             @endif
             @if( in_array(2, $items))
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
