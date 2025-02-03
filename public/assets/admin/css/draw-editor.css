@@ -131,11 +131,6 @@ body .editor-objects-list li {background-color: #f8f8f8; border: 1px solid #ccc;
 body .flowchart-operator {border: 0;}
 body .ui-rotatable-handle::before {font-size: 10px;}
 @media (max-width: 992px) {
-    body .editor-controls-holder {
-        min-width: 375px;
-        max-width: 375px;
-    }
-    body .editor-zone:has(.field-options) {
-        padding-left: 0;
-    }
+    body .editor-controls-holder {min-width: 375px; max-width: 375px;}
+    body .editor-zone:has(.field-options) {padding-left: 0;}
 }
