@@ -1328,7 +1328,7 @@ Lms Responsive Style Start
     .referral-price-lists .row {justify-content: center;}
     .referral-price-lists .row [class*="col-"] {width: auto; flex: auto; max-width: fit-content;}
     body .emoji-icons {gap: 5px;}
-    body .emoji-icons .emoji-icon {height: 20px; width: 20px;}
+    body .emoji-icons .emoji-icon {height: 20px; width: 20px; margin: 0 5px;}
     body .profile-inner {padding: 15px;}
 
 }
