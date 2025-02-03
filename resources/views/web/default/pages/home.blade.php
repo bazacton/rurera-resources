@@ -3,9 +3,6 @@
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/swiper-slider/swiper-bundle.min.css"/>
 <link rel="stylesheet" href="/assets/default/vendors/scroll-animation/aos.css"/>
-<style>
-    .lms-newsletter {background-color: #f6b801;}
-</style>
 @endpush
 
 @section('content')
