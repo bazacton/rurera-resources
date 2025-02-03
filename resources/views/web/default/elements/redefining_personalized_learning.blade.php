@@ -209,7 +209,6 @@ $description = isset( $description )? $description : "Rurera provides powerful r
             </div>
             @endif
             
-            
             @if( in_array(4, $items))
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="feature-grid text-center mb-40" itemprop="feature learning course" data-aos="zoom-in" data-aos-delay="7000" data-aos-easing="linear" data-aos-duration="2000" data-aos-once="true">
