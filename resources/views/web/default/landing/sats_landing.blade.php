@@ -1095,7 +1095,7 @@
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">What are SATs in UK?</button>
                                         </h3>
                                     </div>
-                                    <div id="collapse7" class="collapse" aria-labelledby="heading7">
+                                    <div id="collapse7" class="collapse" aria-labelledby="collapse7">
                                         <div class="card-body">
                                             <p>SATs (Standard Assessment Tests) are exams administered to primary school children in England to evaluate their academic progress and the quality of education at their schools. These tests are taken at the end of Key Stage 1 (Years 1–2) and Key Stage 2 (Years 3–6). <br>In Key Stage 2, SATs focus on English and mathematics, but do not include science. </p>
                                         </div>
