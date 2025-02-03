@@ -403,7 +403,7 @@
               <div class="blog-grid-card rurera-grid" itemscope="" itemtype="https://schema.org/Blog">
                 <div class="blog-grid-detail">
                   <span class="badge created-at d-flex align-items-center">
-                    <i data-feather="calendar" width="20" height="20" class="mr-5"></i>
+                    <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
                     <span itemprop="datePublished" content="2023-04-05T08:00:00+08:00">13 Jun 2023</span>
                   </span>
                   <h3 class="blog-grid-title mt-10" itemprop="name">
@@ -424,7 +424,7 @@
               <div class="blog-grid-card rurera-grid" itemscope="" itemtype="https://schema.org/Blog">
                 <div class="blog-grid-detail">
                   <span class="badge created-at d-flex align-items-center">
-                    <i data-feather="calendar" width="20" height="20" class="mr-5"></i>
+                    <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
                     <span itemprop="datePublished" content="2023-04-05T08:00:00+08:00">28 Apr 2023</span>
                   </span>
                   <h3 class="blog-grid-title mt-10" itemprop="name">
@@ -444,7 +444,7 @@
               <div class="blog-grid-card rurera-grid" itemscope="" itemtype="https://schema.org/Blog">
                 <div class="blog-grid-detail">
                   <span class="badge created-at d-flex align-items-center">
-                    <i data-feather="calendar" width="20" height="20" class="mr-5"></i>
+                    <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
                     <span itemprop="datePublished" content="2023-04-05T08:00:00+08:00">13 Jun 2023</span>
                   </span>
                   <h3 class="blog-grid-title mt-10" itemprop="name">
@@ -465,7 +465,7 @@
               <div class="blog-grid-card rurera-grid" itemscope="" itemtype="https://schema.org/Blog">
                 <div class="blog-grid-detail">
                   <span class="badge created-at d-flex align-items-center">
-                    <i data-feather="calendar" width="20" height="20" class="mr-5"></i>
+                    <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
                     <span itemprop="datePublished" content="2023-04-05T08:00:00+08:00">28 Apr 2023</span>
                   </span>
                   <h3 class="blog-grid-title mt-10" itemprop="name">
