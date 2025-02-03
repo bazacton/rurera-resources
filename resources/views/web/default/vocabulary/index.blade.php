@@ -154,15 +154,11 @@
             </div>
         </div>
     </section>
-
-
-
     <a href="#" class="scroll-btn" style="display: block;">
         <div class="round">
             <div id="cta"><span class="arrow primera next"></span> <span class="arrow segunda next"></span></div>
         </div>
     </a>
-
 </section>
 
 
