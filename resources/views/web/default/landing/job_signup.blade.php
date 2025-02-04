@@ -21,21 +21,21 @@
             <div class="grid-item col-lg-3 col-md-3 col-sm-6">
                 <div class="img-holder">
                     <figure>
-                        <a href="#"><img src="https:../assets/default/img/staff-1.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager"></a>
+                        <a href="#"><img src="/assets/default/img/staff-1.jpg" alt="default staff image" title="default staff image" width="192" height="157" itemprop="image" loading="eager"></a>
                     </figure>
                 </div>
             </div>
             <div class="grid-item col-lg-3 col-md-3 col-sm-6">
                 <div class="img-holder">
                     <figure>
-                        <a href="#"><img src="../assets/default/img/staff-6.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager"></a>
+                        <a href="#"><img src="/assets/default/img/staff-6.jpg" alt="default staff image" title="default staff image" width="192" height="157" itemprop="image" loading="eager"></a>
                     </figure>
                 </div>
             </div>
             <div class="grid-item col-lg-3 col-md-3 col-sm-6">
                 <div class="img-holder">
                     <figure>
-                        <a href="#"><img src="../assets/default/img/staff-4.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager"></a>
+                        <a href="#"><img src="/assets/default/img/staff-4.jpg" alt="default staff image" title="default staff image" width="100%" height="auto" itemprop="image" loading="eager"></a>
                     </figure>
                 </div>
             </div>
