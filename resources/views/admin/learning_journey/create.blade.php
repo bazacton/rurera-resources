@@ -671,7 +671,9 @@
 
 
         levels_sorting_render();
-        $(".jounry-stages-lis").sortable();
+        if($(".jounry-stages-lis li").length > 1) {
+            $(".jounry-stages-lis").sortable();
+        }
 
 		$(".editor-objects-list").sortable({
 			update: function(event, ui) {

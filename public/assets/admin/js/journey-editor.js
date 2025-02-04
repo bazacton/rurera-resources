@@ -1030,7 +1030,13 @@ jQuery(document).ready(function () {
 		}
 
 		$('.draggable_field_' + field_id)
-			.rotatable({angle: rotate_value})
+            .rotatable({
+                angle: rotate_value,
+                rotate: function(event, ui) {
+                    sorting_render();
+                    levels_sorting_render();
+                }
+            })
 			.draggable({
 				preventCollision: true,
 				containment: dropZonObj,
