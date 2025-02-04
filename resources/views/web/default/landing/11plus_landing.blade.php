@@ -492,7 +492,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
-                        <figure class="mb-20" class="mb-20">
+                        <figure class="mb-20">
 
                             <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143"
                                 width="276">
@@ -640,9 +640,9 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion lms-accordion-modern"
+                    <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion lms-accordion-modern"
                         id="accordion-modern">
-                        <div class="card active" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card active" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-1">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
                                     type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false"
@@ -667,7 +667,7 @@
                                         itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-2">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
                                     type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false"
@@ -691,7 +691,7 @@
                                         itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-3">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
                                     type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false"
@@ -714,7 +714,7 @@
                                         itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-4">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
                                     type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false"
@@ -736,7 +736,7 @@
                                         itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-5">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
                                     type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false"
@@ -761,7 +761,7 @@
                                         itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-6">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
                                     type="button" data-toggle="collapse" data-target="#collapse-6" aria-expanded="true"
@@ -786,7 +786,7 @@
                                         itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-6">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
                                     type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="true"
@@ -830,12 +830,12 @@
                 </div>
                 <div class="col-12 col-lg-12 col-md-12 mx-auto">
                     <div class="mt-0">
-                        <div class="lms-faqs mx-w-100 mt-0" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="lms-faqs mx-w-100 mt-0" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div id="accordion">
                                 @if( !empty( $faq_items ))
 
                                 @foreach( $faq_items as $itemData)
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingonsix">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold" data-toggle="collapse"
@@ -853,7 +853,7 @@
                                 @endforeach
 
                                 @else
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingonsix">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed"
@@ -874,7 +874,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingTwo">
                                         <h3 class="mb-0"><button class="btn btn-link font-18 font-weight-bold collapsed"
                                                 data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
@@ -894,7 +894,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingseven">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed"
@@ -917,7 +917,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading8">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed"
@@ -936,7 +936,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading9">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed"
@@ -955,7 +955,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading10">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed"
@@ -977,7 +977,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading11">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed"
@@ -998,7 +998,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading12">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed"
