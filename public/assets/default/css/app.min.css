@@ -885,7 +885,8 @@ Sats Preparation Page Style End
 .video-box .home-video-play-button .play-btn-holder {height: 100px; width: 100px; border-radius: 100%; background-color: rgba(255,255,255, 0.2); position: relative; text-align: center;}
 .video-box .home-video-play-button .play-btn-holder:before {content: ""; position: absolute; left: 0; height: 100px; width: 100px; background-color: #fff; opacity: .4; pointer-events: none; border-radius: 50%; -webkit-animation: pluse 2s ease-out infinite; animation: pluse 2s ease-out infinite;}
 .video-box #poster-img {max-width: 100%; width: 100%; height: 100%; position: absolute; object-fit: cover;}
-.video-box .home-video-play-button .play-btn-holder svg {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.video-box .home-video-play-button .play-btn-holder svg,
+.video-box .home-video-play-button .play-btn-holder img {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 
 .lms-wave-shape-bottom, .lms-wave-shape, .lms-wave-shape-top {position: relative;}
 .lms-wave-shape{margin-bottom: 90px;}
