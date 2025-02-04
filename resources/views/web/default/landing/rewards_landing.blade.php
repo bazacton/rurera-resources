@@ -329,7 +329,7 @@
                     <div class="lms-faqs mx-w-100 mt-0">
                         <div id="accordion">
                             <div class="card">
-                                <div class="card-header active" id="headingon11" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card-header active" id="heading11" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <h3 itemprop="name" class="mb-0">
                                         <button class="btn btn-link font-18 font-weight-bold" data-toggle="collapse" data-target="#collapse11" aria-expanded="true" aria-controls="collapse11">
                                             What are the ways I can earn coin points on Rurera?
