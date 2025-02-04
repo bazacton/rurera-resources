@@ -161,7 +161,7 @@
                                         </p>
                                     </div>
                                     <div class="img-holder">
-                                        <figure><img src="../assets/default/img/redeemstep-1.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="auto" itemprop="image" loading="eager" /></figure>
+                                        <figure><img src="../assets/default/img/redeemstep-1.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="302" itemprop="image" loading="eager" /></figure>
                                     </div>
                                 </div>
                             </div>
@@ -170,7 +170,7 @@
                             <div class="process-card process-two">
                                 <div class="process-card-body d-flex align-items-center justify-content-between">
                                     <div class="img-holder">
-                                        <figure><img src="../assets/default/img/redeemstep-2.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="auto" itemprop="image" loading="eager" /></figure>
+                                        <figure><img src="../assets/default/img/redeemstep-2.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="302" itemprop="image" loading="eager" /></figure>
                                     </div>
                                     <div class="text-holder ml-30">
                                         <h2 itemprop="title" class="post-title">Step 2:</h2>
@@ -193,7 +193,7 @@
                                         </p>
                                     </div>
                                     <div class="img-holder">
-                                        <figure><img src="../assets/default/img/redeemstep-3.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="auto" itemprop="image" loading="eager" /></figure>
+                                        <figure><img src="../assets/default/img/redeemstep-3.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="302" itemprop="image" loading="eager" /></figure>
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +202,7 @@
                             <div class="process-card process-foure">
                                 <div class="process-card-body d-flex align-items-center justify-content-between">
                                     <div class="img-holder">
-                                        <figure><img src="../assets/default/img/redeemstep-4.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="auto" itemprop="image" loading="eager" /></figure>
+                                        <figure><img src="../assets/default/img/redeemstep-4.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="302" itemprop="image" loading="eager" /></figure>
                                     </div>
                                     <div class="text-holder ml-30">
                                         <h2 itemprop="title" class="post-title">Step 4:</h2>
