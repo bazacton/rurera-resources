@@ -2,12 +2,8 @@
 
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/scroll-animation/animate.css">
-@endpush
 
-@section('content')
-<section class="content-section">
-
-    <style>
+<style>
         .bg-deepskyblue {
             background-color: #46b7e9;
         }
@@ -42,6 +38,10 @@
             background-color: #75c0fa;
         }
     </style>
+@endpush
+
+@section('content')
+<section class="content-section">
     <section class="gallery-sub-header job-singup-sub-header mb-70 page-sub-header pb-10 position-relative pt-80">
         <div class="container h-100">
             <div class="row h-100">
