@@ -24,7 +24,7 @@
                                         <form class="w-75 mx-auto">
                                             <div class="field-holder has-icon d-flex">
                                                 <span class="search-icon">
-                                                    <img src="../assets/default/svgs/search.svg" alt="default search" title="default search" width="100%" height="auto" loading="eager">
+                                                    <img src="../assets/default/svgs/search.svg" alt="default search" title="default search" width="24" height="24" loading="eager">
                                                 </span>
                                                 <input class="px-40" type="text" placeholder="What we can help you find ?">
                                                 <button type="submit">Search</button>
