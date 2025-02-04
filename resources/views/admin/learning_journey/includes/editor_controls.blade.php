@@ -95,13 +95,9 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
                         foreach( $itemObj->LearningJourneyObjects->where('status','active') as $learningJourneyItemObj){
 
                             echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2">'.$learningJourneyItemObj->item_slug.'
-                            <div class="dropdown">
-                              <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                <img src="/assets/default/svgs/dots-three.svg" alt="">
-                              </button>
-                              <div class="dropdown-menu">
-                                <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i><i class="fa fa-copy"></i>
-                                </div>
+
+                            <div class="actions-menu">
+                                <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
                             </div>
                             </li>
                             ';
@@ -121,14 +117,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
                         foreach( $itemObj->LearningJourneyObjects->whereIn('item_type', array('topic', 'treasure', 'spacer'))->where('status','active') as $learningJourneyItemObj){
 
                             echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2" data-link_position="left-in">'.$learningJourneyItemObj->item_slug.'
-                            <div class="dropdown">
-                              <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                <img src="/assets/default/svgs/dots-three.svg" alt="">
-                              </button>
-                              <div class="dropdown-menu">
-                                <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
-                            </div>
-                            </div>
+
                             <div class="actions-menu">
                                 <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
                             </div></li>
