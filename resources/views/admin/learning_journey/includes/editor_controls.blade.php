@@ -23,11 +23,11 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
             <button class="nav-link" id="levels-tab" data-toggle="tab" data-target="#levels{{$data_id}}" type="button" role="tab" aria-controls="contact" aria-selected="false">Levels</button>
         </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="stage_settings-tab" data-toggle="tab" data-target="#stage_settings{{$data_id}}" type="button" role="tab" aria-controls="contact" aria-selected="false">Stage Settings</button>
+                <button class="nav-link stage_settings-tab" id="stage_settings-tab" data-toggle="tab" data-target="#stage_settings{{$data_id}}" type="button" role="tab" aria-controls="contact" aria-selected="false">Stage Settings</button>
             </li>
 		</ul>
 	</div>
-	<div class="editor-controls tab-pane fade" id="stages{{$data_id}}" role="tabpanel" aria-labelledby="profile-tab">
+	<div class="editor-controls tab-pane fade active show" id="stages{{$data_id}}" role="tabpanel" aria-labelledby="profile-tab">
 		<ul class="nav nav-pills" id="myTab3" role="tablist">
 			<li class="nav-item">
 				<a class="nav-link active" id="objects-tab{{$data_id}}" data-toggle="tab" href="#objects{{$data_id}}" role="tab" aria-controls="objects{{$data_id}}" aria-selected="true">Objects</a>
@@ -126,10 +126,12 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
                                 <img src="/assets/default/svgs/dots-three.svg" alt="">
                               </button>
                               <div class="dropdown-menu">
-                                <i class="fa fa-recycle change-position"></i><i class="fa fa-plus add-spacer"></i><i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
+                                <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
                             </div>
                             </div>
-                            </li>
+                            <div class="actions-menu">
+                                <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
+                            </div></li>
                             ';
 
                         }
@@ -214,7 +216,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
             <label>Stage Name</label>
             <div class="input-group">
                 <input type="text" name="stage_name" class="form-control trigger_field"
-                       value="{{isset($itemObj->level_title)? $itemObj->level_title : ''}}" data-field_id="stage_name" data-field_name="stage_name"
+                       value="{{isset($itemObj->level_title)? $itemObj->level_title : 'Stage Title'}}" data-field_id="stage_name" data-field_name="stage_name"
                        data-field_type="page_style" data-id="">
             </div>
         </div>
@@ -313,7 +315,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
 				<div class="option-field-item">
 					<label>Size (px)</label>
 					<div class="input-group">
-						<input type="number" name="stage_width" class="form-control trigger_field"
+						<input type="text" name="stage_width" class="form-control trigger_field"
 								   value="500" data-field_id="stage_width" data-field_name="width"
 						   data-field_type="style" data-id="">
 
@@ -346,7 +348,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
 				<div class="option-field-item">
 					<label>Size (px)</label>
 					<div class="input-group">
-						<input type="number" name="path_width" class="form-control trigger_field"
+						<input type="text" name="path_width" class="form-control trigger_field"
 								   value="300" data-field_id="path_width" data-field_name="width"
 						   data-field_type="style" data-id="">
 
@@ -379,7 +381,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
 				<div class="option-field-item">
 					<label>Size (px)</label>
 					<div class="input-group">
-						<input type="number" name="object_width" class="form-control trigger_field"
+						<input type="text" name="object_width" class="form-control trigger_field"
 								   value="180" data-field_id="object_width" data-field_name="width"
 						   data-field_type="style" data-id="">
 
@@ -412,7 +414,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
 				<div class="option-field-item">
 					<label>Size (px)</label>
 					<div class="input-group">
-						<input type="number" name="topic_width" class="form-control trigger_field"
+						<input type="text" name="topic_width" class="form-control trigger_field"
 								   value="180" data-field_id="topic_width" data-field_name="width"
 						   data-field_type="style" data-id="">
 
@@ -494,7 +496,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
                 <div class="option-field-item">
                     <label>Size (px)</label>
                     <div class="input-group">
-                        <input type="number" name="topic_width" class="form-control trigger_field"
+                        <input type="text" name="topic_width" class="form-control trigger_field"
                                value="180" data-field_id="topic_width" data-field_name="width"
                                data-field_type="style" data-id="">
 

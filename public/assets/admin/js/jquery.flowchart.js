@@ -850,6 +850,28 @@ jQuery(function ($) {
                             fullElement.operator.css({left: ui.position.left, top: ui.position.top});
                         }
                         operatorChangedPosition($(this).data('operator_id'), ui.position);
+
+                        // Percentage
+                        var parent = $(this).parent(); // Assuming dropZonObj is the container
+                        var parentWidth = parent.width();
+                        var parentHeight = parent.height();
+
+                        // Calculate the percentages
+                        var leftPercent = (ui.position.left / parentWidth) * 100;
+                        var topPercent = (ui.position.top / parentHeight) * 100;
+
+                        // Set the CSS of the element with the percentages
+                        $(this).css({
+                            left: leftPercent + '%',
+                            top: topPercent + '%'
+                        });
+
+                        // Prevent jQuery UI from overriding the percentage values with pixel values
+                        ui.position.left = leftPercent + '%';
+                        ui.position.top = topPercent + '%';
+
+
+
                     },
                     stop: function (e, ui) {
                         self._unsetTemporaryLink();
