@@ -417,7 +417,7 @@
                                     <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center bg-dark-green bg-dark-green">
                                         <strong>96% of subscribing parents in rurera Family report significant improvement in their child's reading skills.</strong>
                                         <div class="subscription mt-20">
-                                            <span>Already have a subscription?<a href="." id="contact-tab5" data-toggle="tab" data-target="#contact3" type="button" role="tab" aria-controls="contact" aria-selected="false">log in</a></span>
+                                            <span>Already have a subscription?<a href=".#" id="contact-tab5" data-toggle="tab" data-target="#contact3" role="tab" aria-controls="contact" aria-selected="false">log in</a></span>
                                         </div>
                                     </div>
                                 </div>
