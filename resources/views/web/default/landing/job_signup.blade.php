@@ -275,10 +275,7 @@
                                         <li>Conduct code reviews to ensure adherence to coding standards, software design principles, and performance optimization.</li>
                                         <li>Troubleshoot and debug complex software issues, identify root causes, and implement effective solutions.</li>
                                         <li>Participate in Agile/Scrum development processes, including sprint planning, daily stand-ups, and retrospectives.</li>
-                                
                                         <li>Collaborate with quality assurance teams to ensure software meets quality standards and is thoroughly tested.</li>
-                                        
-                                    
                                     </ul>
                                     <h3 itemprop="title" class="font-24">Requirements</h3>
                                     <ul class="lms-disc-list">
@@ -513,7 +510,7 @@
                             <div id="collapse_6" class="collapse" aria-labelledby="heading_6" data-parent="#accordionExample">
                                 <div class="card-body">
                                     
-                                    <h3 itemprop="title" class="font-24">Overview</h4>
+                                    <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a Science Curriculum Designer to join our education team. As a Science Curriculum Designer, you will play a critical role in developing and designing a comprehensive and engaging science curriculum that aligns with educational standards and promotes inquiry-based learning. You will collaborate with subject matter experts, instructional designers, and educators to create curriculum materials that foster scientific understanding, critical thinking, and hands-on exploration.</p>
 
                                 
