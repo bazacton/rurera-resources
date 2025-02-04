@@ -499,7 +499,7 @@
 </div>
 
 
-<div class="modal fade lms-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
+<div class="modal fade lms-choose-membership" id="subscriptionModal">
     <div class="modal-dialog">
         <div class="modal-content">
             <button type="button" class="close" data-toggle="modal" data-target="#leave-option-modal"><span aria-hidden="true">×</span></button>
@@ -510,7 +510,7 @@
         </div>
     </div>
 </div>
-<div class="modal fade leave-option-modal" id="leave-option-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade leave-option-modal" id="leave-option-modal" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
