@@ -47,7 +47,7 @@
                         />
                         <div class="example-reward-card rounded-sm shadow-lg p-5 p-md-15 d-flex align-items-center" style="background-color: #f60;">
                             <div class="example-reward-card-medal">
-                                <img src="/assets/default/img/rewards/medal.png" class="img-cover rounded-circle" alt="medal" title="medal" width="100%" height="auto" itemprop="image" loading="eager" />
+                                <img src="/assets/default/img/rewards/medal.png" class="img-cover rounded-circle" alt="medal" title="medal" width="512" height="512" itemprop="image" loading="eager" />
                             </div>
                             <div class="flex-grow-1 ml-15"><span class="font-14 font-weight-bold text-white d-block">You earned 50 coin points!</span><span class="text-white font-12 font-weight-500">Buy your favoruite toy now!</span></div>
                         </div>
