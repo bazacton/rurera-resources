@@ -502,7 +502,7 @@
       </div>
     </div>
   </section>
-  <div class="modal fade lms-choose-membership" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" style="display: none;" aria-hidden="true">
+  <div class="modal fade lms-choose-membership" id="exampleModal" style="display: none;" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -583,7 +583,7 @@
                           </div>
                         </div>
                         <div class="col-12 col-lg-12 col-md-12 col-sm-12">
-                          <a href="#" class="nav-link mt-20 btn-primary rounded-pill" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"> Start your 7-day free trial </a>
+                          <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Start your 7-day free trial</a>
                         </div>
                       </div>
                     </div>
