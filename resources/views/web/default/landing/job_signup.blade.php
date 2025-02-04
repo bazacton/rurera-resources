@@ -637,11 +637,9 @@
                                         <li>Ability to work independently and collaboratively in a fast-paced environment.</li>
                                         <li>Familiarity with educational technology tools and platforms used in language arts instruction is a plus.</li>
                                     </ul>
-                                <p itemprop="description">Join our team and contribute to the development of a high-quality language arts curriculum that nurtures literacy skills and fosters a love for reading and writing. This is an exciting opportunity to make a positive impact on language arts education.</p>
-                                
+                                    <p itemprop="description">Join our team and contribute to the development of a high-quality language arts curriculum that nurtures literacy skills and fosters a love for reading and writing. This is an exciting opportunity to make a positive impact on language arts education.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
