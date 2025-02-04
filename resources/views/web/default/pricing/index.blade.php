@@ -359,7 +359,7 @@
                                             <ul class="mt-20 plan-feature">
                                                 <li class="mt-10">15 days of subscription</li>
                                             </ul>
-                                            <button type="submit" id="contact-tab2" data-toggle="tab" data-target="#contact" role="tab" aria-controls="contact" aria-selected="false" class="btn btn-primary btn-block mt-30 rounded-pill bg-none">
+                                            <button type="submit" id="contact-tab2" data-toggle="tab" data-target="#contact" aria-controls="contact" aria-selected="false" class="btn btn-primary btn-block mt-30 rounded-pill bg-none">
                                                 Purchase
                                             </button>
                                         </div>
@@ -371,7 +371,7 @@
                                             <ul class="mt-20 plan-feature">
                                                 <li class="mt-10">30 days of subscription</li>
                                             </ul>
-                                            <button type="submit" id="contact-tab3" data-toggle="tab" data-target="#contact2" role="tab" aria-controls="contact" aria-selected="false" class="btn btn-primary btn-block mt-30 rounded-pill">
+                                            <button type="submit" id="contact-tab3" data-toggle="tab" data-target="#contact2" aria-controls="contact" aria-selected="false" class="btn btn-primary btn-block mt-30 rounded-pill">
                                                 Purchase
                                             </button>
                                         </div>
@@ -380,7 +380,7 @@
                                     <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center bg-dark-green bg-dark-green">
                                         <strong>96% of subscribing parents in rurera Family report significant improvement in their child's reading skills.</strong>
                                         <div class="subscription mt-20">
-                                            <span>Already have a subscription?<a href=".#" id="contact-tab5" data-toggle="tab" data-target="#contact3" role="tab" aria-controls="contact" aria-selected="false">log in</a></span>
+                                            <span>Already have a subscription?<a href=".#" id="contact-tab5" data-toggle="tab" data-target="#contact3" aria-controls="contact" aria-selected="false">log in</a></span>
                                         </div>
                                     </div>
                                 </div>
