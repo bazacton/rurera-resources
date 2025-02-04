@@ -212,7 +212,9 @@ $(document).on('click', '.book-dropzone', function (e) {
         //$el.append('<span class="field-handle fas fa-arrows-alt"></span><a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
 
         $el.append('<a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('<a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a>');
+        if (drag_type == "topic" || drag_type == "treasure" || drag_type == "spacer") {
+            $el.append('<a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a>');
+        }
         $el.append('</div>');
         if (!EditorIsEmpty(attribute_type)) {
             $el.find('.customizable-field').css(attribute_type, attribute_value);
