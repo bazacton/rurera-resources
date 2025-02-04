@@ -20,8 +20,8 @@
 
     </div>
     <div class="blog-grid-image lazyload-img">
-        <img src="/assets/default/img/buller-img.png" class="img-sm" alt="{{ $post->title }}" title="{{ $post->title }}" width="100%" height="100%" itemprop="image" loading="eager">
-        <img src="{{ $post->image }}" class="img-cover img-lg" alt="{{ $post->title }}" title="{{ $post->title }}" width="100%" height="100%" itemprop="image" loading="eager">
+        <img src="/assets/default/img/buller-img.png" class="img-sm" alt="{{ $post->title }}" title="{{ $post->title }}" width="20" height="21" itemprop="image" loading="eager">
+        <img src="{{ $post->image }}" class="img-cover img-lg" alt="{{ $post->title }}" title="{{ $post->title }}" width="20" height="21" itemprop="image" loading="eager">
     </div>
 
 </div>
