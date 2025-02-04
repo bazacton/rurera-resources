@@ -19,10 +19,7 @@
         background-color: #3d358b;
     }
 </style>
-@endpush
-
-@section('content')
-    <style>
+<style>
         .bg-deepskyblue {
             background-color: #46b7e9;
         }
@@ -57,6 +54,9 @@
             background-color: var(--gray-dark);
         }
     </style>
+@endpush
+
+@section('content')
     <section class="gallery-sub-header job-singup-sub-header mb-60 page-sub-header pb-0 position-relative pt-80">
         <div class="container h-100">
             <div class="row h-100">
