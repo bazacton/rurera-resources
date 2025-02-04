@@ -475,13 +475,12 @@
 
                                 @foreach( $faq_items as $itemData)
                                 <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingonsix">
+                                    <div class="card-header" id="heading12">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold" data-toggle="collapse" data-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">{{isset( $itemData['title'])? $itemData['title'] : '' }}</button>
                                         </h3>
                                     </div>
-                                    <div id="collapsesix" class="collapse" aria-labelledby="headingsix"
-                                        data-parent="#accordion">
+                                    <div id="collapsesix" class="collapse" aria-labelledby="heading12" data-parent="#accordion">
                                         <div class="card-body">
                                             <p>{{isset( $itemData['description'])? $itemData['description'] : '' }}</p>
                                         </div>
@@ -491,12 +490,12 @@
 
                                 @else
                                 <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingonsix">
+                                    <div class="card-header" id="heading13">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix"> What are times tables?</button>
                                         </h3>
                                     </div>
-                                    <div id="collapsesix" class="collapse" aria-labelledby="headingsix"
+                                    <div id="collapsesix" class="collapse" aria-labelledby="heading13"
                                         data-parent="#accordion">
                                         <div class="card-body">
                                             <p>Times tables are charts that list the multiples of a number, providing a quick reference for basic multiplication facts. They are essential tools for helping students memorize and master multiplication, forming the foundation for more advanced math skills.</p>
