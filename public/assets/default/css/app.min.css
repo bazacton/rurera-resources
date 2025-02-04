@@ -1720,7 +1720,9 @@ Lms Books Listing Style End
 .membership-steps-list li {position: relative;width: 50%;}
 .membership-steps-list li a {display: flex;position: relative;}
 .membership-steps-list li a .icon-svg {width: 50px;height: 50px;border-radius: 100%;background: #afbacc;display: flex;align-items: center;justify-content: center;}
-.membership-steps-list li a .icon-svg svg {width: 26px;height: 26px; fill: #fff;}
+.membership-steps-list li a .icon-svg svg,
+.membership-steps-list li a .icon-svg img {width: 26px;height: 26px; fill: #fff;}
+.membership-steps-list li a .icon-svg img {filter: invert(100%) sepia(94%) saturate(12%) hue-rotate(209deg) brightness(105%) contrast(100%);}
 .membership-steps-list li:last-child { width: 50px;}
 .membership-steps-list li:before {content: "";position: absolute;left: 55px;top: 20px;width: 77%;height: 13px;background: #afbacc;padding-left: 50px;border-radius: 0;}
 .membership-steps-list li:last-child:before { display: none;}
