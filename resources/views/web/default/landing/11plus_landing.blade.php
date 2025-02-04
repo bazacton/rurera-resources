@@ -687,7 +687,7 @@
                             </div>
                             <div class="lms-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-quiz.jpg"
-                                        alt="company performance" title="company performance" width="100%" height="auto"
+                                        alt="company performance" title="company performance" width="652" height="401"
                                         itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -710,7 +710,7 @@
                             </div>
                             <div class="lms-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/all-in-1-platform.jpg"
-                                        alt="company rewards" title="company rewards" width="100%" height="auto"
+                                        alt="company rewards" title="company rewards" width="652" height="401"
                                         itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -732,7 +732,7 @@
                             </div>
                             <div class="lms-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-sats.jpg"
-                                        alt="company insights" title="company insights" width="100%" height="auto"
+                                        alt="company insights" title="company insights" width="652" height="401"
                                         itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -757,7 +757,7 @@
                             </div>
                             <div class="lms-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-insights.jpg"
-                                        alt="company quiz" title="company quiz" width="100%" height="auto"
+                                        alt="company quiz" title="company quiz" width="652" height="401"
                                         itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -782,7 +782,7 @@
                             </div>
                             <div class="lms-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-performance.jpg"
-                                        alt="company curriculum" width="100%" height="auto" title="company curriculum"
+                                        alt="company curriculum" width="652" height="401" title="company curriculum"
                                         itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -807,7 +807,7 @@
                             </div>
                             <div class="lms-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-rewards.jpg"
-                                        alt="company curriculum" width="100%" height="auto" title="company curriculum"
+                                        alt="company curriculum" width="652" height="401" title="company curriculum"
                                         itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
