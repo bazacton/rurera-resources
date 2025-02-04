@@ -247,7 +247,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-12 col-md-12 col-sm-12">
-                                                <a href="#" class="nav-link mt-20 btn-primary rounded-pill" id="home-tab" data-toggle="tab" data-target="#home" aria-controls="home" aria-selected="true">
+                                                <a href="#" class="nav-link mt-20 btn-primary rounded-pill" id="home-tab" data-toggle="tab" data-target="#home" aria-controls="home">
                                                     Start your 7-day free trial
                                                 </a>
                                             </div>
@@ -300,7 +300,7 @@
                                         <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center">
                                             <p class="mb-20">By Clicking on Start Free Trial, I agree to the<a href="#">Terms of Service</a>And<a href="#">Privacy Policy</a></p>
                                             <div class="subscription mb-20">
-                                                <span>Already have a subscription?<a href="#" id="contact-tab" data-toggle="tab" data-target="#contact4" aria-controls="contact4">log in</a></span>
+                                                <span>Already have a subscription?<a href="#" id="contact-tab" data-toggle="tab" data-target="#contact4" aria-controls="contact">log in</a></span>
                                             </div>
                                         </div>
                                     </div>
