@@ -862,7 +862,7 @@
                         <div class="lms-jobs-form-body">
                             <div class="accordion" id="accordionExample2">
                                 <div class="card">
-                                    <div class="card-header" id="headingOne">
+                                    <div class="card-header active" id="headingOne">
                                         <button class="text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                             <span class="icon-box">
                                                 <img src="/assets/default/svgs/job-form-user.svg" alt="job-form-user">
