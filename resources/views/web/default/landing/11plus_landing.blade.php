@@ -351,7 +351,7 @@
                                                     xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" fill="#3d358b">
                                                     <g id="SVGRepo_bgCarrier2" stroke-width="0"></g>
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    <g id="SVGRepo_tracerCarrier2" stroke-linecap="round"
                                                         stroke-linejoin="round"></g>
                                                     <g id="SVGRepo_iconCarrier">
                                                         <style type="text/css">
@@ -825,7 +825,7 @@
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 486.1 486.1"
                                                     xml:space="preserve">
                                                     <g id="SVGRepo_bgCarrier3" stroke-width="0"></g>
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    <g id="SVGRepo_tracerCarrier3" stroke-linecap="round"
                                                         stroke-linejoin="round"></g>
                                                     <g id="SVGRepo_iconCarrier">
                                                         <g>
@@ -872,7 +872,7 @@
                                                 <svg width="64px" height="64px" viewBox="0 0 512 512"
                                                     xmlns="http://www.w3.org/2000/svg" fill="#f35b05">
                                                     <g id="SVGRepo_bgCarrier4" stroke-width="0"></g>
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    <g id="SVGRepo_tracerCarrier4" stroke-linecap="round"
                                                         stroke-linejoin="round"></g>
                                                     <g id="SVGRepo_iconCarrier">
                                                         <path fill="#f35b05"
@@ -901,7 +901,7 @@
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" fill="#7679ee">
                                                     <g id="SVGRepo_bgCarrier5" stroke-width="0"></g>
-                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    <g id="SVGRepo_tracerCarrier5" stroke-linecap="round"
                                                         stroke-linejoin="round"></g>
                                                     <g id="SVGRepo_iconCarrier">
                                                         <g id="icomoon-ignore"> </g>
