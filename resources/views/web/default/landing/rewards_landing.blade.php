@@ -40,8 +40,8 @@
                             class="reward-program-section-hero"
                             alt="Win Club Points"
                             title="Win Club Points"
-                            width="410"
-                            height="auto"
+                            width="570"
+                            height="406"
                             itemprop="image"
                             loading="eager"
                         />
