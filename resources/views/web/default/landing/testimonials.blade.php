@@ -6,7 +6,7 @@
     <div class="row h-100 align-items-center text-left">
       <div class="col-12 col-md-12 col-lg-9">
         <p itemprop="sub title" class="lms-subtitle">How we've helped others</p>
-        <h1 itemprop="title" class="font-72 font-weight-bold mb-15">
+        <h1 itemprop="title" class="font-72 font-weight-bold mb-15 test">
           Stories of Trust and <span class="text-scribble">Triumph!</span>
         </h1>
         <p itemprop="description" class="font-19">
