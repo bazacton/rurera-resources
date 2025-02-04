@@ -636,7 +636,7 @@
                       </div>
                       <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="form-group">
-                          <a href="#" class="nav-link btn-primary rounded-pill mb-25 text-center" id="book-tab" data-toggle="tab" data-target="#book" type="button" role="tab" aria-controls="book" aria-selected="true"> continue </a>
+                          <a href="#" class="nav-link btn-primary rounded-pill mb-25 text-center" id="book-tab" data-toggle="tab" data-target="#book" type="button" role="tab" aria-controls="book" aria-selected="true"> Continue </a>
                         </div>
                       </div>
                       <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center">
