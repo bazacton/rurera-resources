@@ -2836,7 +2836,8 @@ Lms FAQS New Elements Style End
 *************************************/
 .exame-listing .exame-holder{display: flex; flex-wrap: wrap;background: #fff;border-radius: 10px;}
 .exame-listing .exame-holder .exame-list {padding: 15px;border-bottom: 1px solid #edecef; position: relative; width: 50%; list-style: none;}
-.exame-listing .exame-holder .exame-list .icon-savg svg { width: 35px;height: 35px;}
+.exame-listing .exame-holder .exame-list .icon-savg svg,
+.exame-listing .exame-holder .exame-list .icon-savg img { width: 35px;height: 35px; object-fit: contain;}
 .exame-listing .exame-holder .exame-list .icon-savg {display: flex;}
 .exame-listing .exame-holder .exame-list .img-holder~.text-holder {margin-left: 20px;}
 .exame-listing .exame-holder .exame-list.border-right {border-right: 1px solid #edecef;}
