@@ -181,7 +181,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
-                        <figure class="mb-20" class="mb-20">
+                        <figure class="mb-20">
                             <a href="{{url('/')}}/classes" itemprop="url">
                                 <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
                             </a>
