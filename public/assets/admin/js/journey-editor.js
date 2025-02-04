@@ -42,7 +42,7 @@ var template_layout = {
 
 var alreadyInitiated = [];
 
-$(document).on('click', '.flowchart-links-layer g path', function (e) {
+$(document).on('dblclick', '.flowchart-links-layer g path', function (e) {
     var top = 0;
     var left = 0;
     let bookDropzone = $(this).closest('.book-dropzone');
@@ -55,17 +55,26 @@ $(document).on('click', '.flowchart-links-layer g path', function (e) {
         top = e.pageY - (dropzoneBbox.top + window.scrollY);
         left = e.pageX - (dropzoneBbox.left + window.scrollX);
 
-        console.log('Mouse Click Position - Top:', top, 'Left:', left);
+        var elementWidth = bookDropzone.width();
+        var elementHeight = bookDropzone.height();
+
+        var topPercentage = (e.offsetY / elementHeight) * 100;
+        var leftPercentage = (e.offsetX / elementWidth) * 100;
+
+        console.log('Mouse Click Position - Top:', topPercentage, 'Left:', leftPercentage);
+
+
     }
 
     var unique_id = Math.floor((Math.random() * 99999) + 1);
     var field_random_number = 'rand_' + unique_id;
 
     var layer_html = '';
-    $el = ($('<div id="' + field_random_number + '"  style="left:'+left+'px; top:'+top+'px;" data-item_title="Spacer" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer spacer-block flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="spacer" data-trigger_class="infobox-spacer-fields" data-item_type="spacer" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="5" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="black" /></svg><div class="flowchart-operator-inputs-outputs spacer-svg-controls"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+    $el = ($('<div id="' + field_random_number + '"  style="left:'+leftPercentage+'%; top:'+topPercentage+'%;" data-item_title="Spacer" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer spacer-block flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="spacer" data-trigger_class="infobox-spacer-fields" data-item_type="spacer" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="5" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="black" /></svg><div class="flowchart-operator-inputs-outputs spacer-svg-controls"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
     $el.append('<a href="javascript:;" class="remove spacer-remove"><span class="fas fa-trash"></span></a>');
+    $el.append('<a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a>');
     $el.append('</div>');
-    layer_html += `<li data-id="${field_random_number}" data-field_postition="2">Spacer
+    layer_html += `<li class="rurera-hide" data-id="${field_random_number}" data-field_postition="2">Spacer
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
                 <img src="/assets/default/svgs/dots-three.svg" alt="">
@@ -116,8 +125,8 @@ $(document).on('click', '.layout-template-item', function () {
         var field_id = $(this).attr('data-id');
         var top_position =template_layout_data[item_counter].top;
         var left_position =template_layout_data[item_counter].left;
-        $(".draggable_field_" + field_id).css('top', top_position+'px');
-        $(".draggable_field_" + field_id).css('left', left_position+'px');
+        $(".draggable_field_" + field_id).css('top', top_position+'%');
+        $(".draggable_field_" + field_id).css('left', left_position+'%');
         item_counter++;
         levels_sorting_render();
     });
@@ -187,138 +196,29 @@ $(document).on('click', '.book-dropzone', function (e) {
 	var unique_id = Math.floor((Math.random() * 99999) + 1);
     var field_random_number = 'rand_' + unique_id;
 
+    var elementWidth = $(this).width();
+    var elementHeight = $(this).height();
 
-    if (drag_type == "text") {
-        var $el = $('<div style="left:' + e.offsetX + 'px; top:' + e.offsetY + 'px;" data-is_new="yes" class="drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-field_type="' + drag_type + '" data-trigger_class="p-fields" data-paragraph_value="Test text here..." data-color="#000000"><div class="field-data customizable-field data_style_field data_html_field" data-html_id="text_html" data-style_id="text_color" contenteditable="true">Test text here...</div>');
-        //$el.append('<span class="field-handle fas fa-arrows-alt"></span><a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('<a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('</div>');
-        if (!EditorIsEmpty(attribute_type)) {
-            $el.find('.customizable-field').css(attribute_type, attribute_value);
-            $el.attr('data-' + attribute_type, attribute_value);
-        }
-        dropZonObj.append($el);
-    }
+    var topPercentage = (e.offsetY / elementHeight) * 100;
+    var leftPercentage = (e.offsetX / elementWidth) * 100;
 
-    if (drag_type == "highlighter") {
-
-        var $el = $('<div style="left:' + e.offsetX + 'px; top:' + e.offsetY + 'px;" data-is_new="yes" class="drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-field_type="' + drag_type + '" data-trigger_class="highlighter-fields" data-background=""><div class="field-data"><div class="stage-shapes resizeable data_style_field" data-style_id="highlighter_size"><div class="customizable-field text-highlighter data_style_field" data-style_id="highlighter_background"></div></div></div>');
-        //$el.append('<span class="field-handle fas fa-arrows-alt"></span><a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('<a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('</div>');
-        if (!EditorIsEmpty(attribute_type)) {
-            $el.find('.customizable-field').css(attribute_type, attribute_value);
-            $el.attr('data-' + attribute_type, attribute_value);
-        }
-        dropZonObj.append($el);
-    }
 
     if (drag_type == "stage" || drag_type == "path" || drag_type == "stage_objects" || drag_type == "topic" || drag_type == "treasure" || drag_type == "spacer") {
 
 
 		var svg_code = $(".svgs-data ."+drag_object+"_svg").html();
 
-        var $el = $('<div style="left:' + e.offsetX + 'px; top:' + e.offsetY + 'px;" data-item_title="'+item_title+'" data-unique_id="'+unique_id+'" data-is_new="yes" class="drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="' + item_path + '" data-field_type="' + drag_type + '" data-trigger_class="infobox-'+drag_object+'-fields" data-item_type="'+drag_object+'" data-paragraph_value="Test text here..."><div class="field-data">'+svg_code+'</div>');
+        var $el = $('<div style="left:' + leftPercentage + '%; top:' + topPercentage + '%;" data-item_title="'+item_title+'" data-unique_id="'+unique_id+'" data-is_new="yes" class="drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="' + item_path + '" data-field_type="' + drag_type + '" data-trigger_class="infobox-'+drag_object+'-fields" data-item_type="'+drag_object+'" data-paragraph_value="Test text here..."><div class="field-data">'+svg_code+'</div>');
         //$el.append('<span class="field-handle fas fa-arrows-alt"></span><a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
+
         $el.append('<a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
+        $el.append('<a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a>');
         $el.append('</div>');
         if (!EditorIsEmpty(attribute_type)) {
             $el.find('.customizable-field').css(attribute_type, attribute_value);
         }
         dropZonObj.append($el);
     }
-
-    if (drag_type == "look_for_clues") {
-        var $el = $('<div style="left:' + e.offsetX + 'px; top:' + e.offsetY + 'px;" data-is_new="yes" class="drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-field_type="' + drag_type + '" data-trigger_class="infobox-look_for_clues-fields" data-paragraph_value="Test text here..."><div class="field-data"><img src="/assets/default/img/book-icons/look_for_clues.png"></div>');
-        //$el.append('<span class="field-handle fas fa-arrows-alt"></span><a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('<a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('</div>');
-        if (!EditorIsEmpty(attribute_type)) {
-            $el.find('.customizable-field').css(attribute_type, attribute_value);
-        }
-        dropZonObj.append($el);
-    }
-
-    if (drag_type == "picture_in_your_mind") {
-        var $el = $('<div style="left:' + e.offsetX + 'px; top:' + e.offsetY + 'px;" data-is_new="yes" class="drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-field_type="' + drag_type + '" data-trigger_class="infobox-picture_in_your_mind-fields" data-paragraph_value="Test text here..."><div class="field-data"><img src="/assets/default/img/book-icons/picture_in_your_mind.png"></div>');
-        //$el.append('<span class="field-handle fas fa-arrows-alt"></span><a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('<a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('</div>');
-        if (!EditorIsEmpty(attribute_type)) {
-            $el.find('.customizable-field').css(attribute_type, attribute_value);
-        }
-        dropZonObj.append($el);
-    }
-
-    if (drag_type == "try_do_it_yourself") {
-        var $el = $('<div style="left:' + e.offsetX + 'px; top:' + e.offsetY + 'px;" data-is_new="yes" class="drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-field_type="' + drag_type + '" data-trigger_class="infobox-try_do_it_yourself-fields" data-paragraph_value="Test text here..."><div class="field-data"><img src="/assets/default/img/book-icons/try_do_it_yourself.png"></div>');
-        //$el.append('<span class="field-handle fas fa-arrows-alt"></span><a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('<a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('</div>');
-        if (!EditorIsEmpty(attribute_type)) {
-            $el.find('.customizable-field').css(attribute_type, attribute_value);
-        }
-        dropZonObj.append($el);
-    }
-
-    if (drag_type == "think_and_remember") {
-        var $el = $('<div style="left:' + e.offsetX + 'px; top:' + e.offsetY + 'px;" data-is_new="yes" class="drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-field_type="' + drag_type + '" data-trigger_class="infobox-think_and_remember-fields" data-paragraph_value="Test text here..."><div class="field-data"><img src="/assets/default/img/book-icons/think_and_remember.png"></div>');
-        //$el.append('<span class="field-handle fas fa-arrows-alt"></span><a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('<a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('</div>');
-        if (!EditorIsEmpty(attribute_type)) {
-            $el.find('.customizable-field').css(attribute_type, attribute_value);
-        }
-        dropZonObj.append($el);
-    }
-
-    if (drag_type == "facts") {
-        var $el = $('<div style="left:' + e.offsetX + 'px; top:' + e.offsetY + 'px;" data-is_new="yes" class="drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-field_type="' + drag_type + '" data-trigger_class="infobox-facts-fields" data-paragraph_value="Test text here..."><div class="field-data"><img src="/assets/default/img/book-icons/facts.png"></div>');
-        //$el.append('<span class="field-handle fas fa-arrows-alt"></span><a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('<a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('</div>');
-        if (!EditorIsEmpty(attribute_type)) {
-            $el.find('.customizable-field').css(attribute_type, attribute_value);
-        }
-        dropZonObj.append($el);
-    }
-
-    if (drag_type == "quiz") {
-
-        var $el = $('<div style="left:' + e.offsetX + 'px; top:' + e.offsetY + 'px;" data-is_new="yes" class="drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-field_type="' + drag_type + '" data-trigger_class="infobox-quiz-fields"><div class="field-data"><img src="/assets/default/img/book-icons/quiz.png"></div>');
-        //$el.append('<span class="field-handle fas fa-arrows-alt"></span><a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('<a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('</div>');
-        if (!EditorIsEmpty(attribute_type)) {
-            $el.find('.customizable-field').css(attribute_type, attribute_value);
-        }
-        dropZonObj.append($el);
-    }
-
-    if (drag_type == "topicsss") {
-
-        var $el = $('<div style="left:' + e.offsetX + 'px; top:' + e.offsetY + 'px;" data-is_new="yes" class="drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-field_type="' + drag_type + '" data-topic_title="" data-trigger_class="infobox-topic-fields"><div class="field-data"><img src="/assets/default/img/book-icons/quiz.png"></div>');
-        //$el.append('<span class="field-handle fas fa-arrows-alt"></span><a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('<a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('</div>');
-        if (!EditorIsEmpty(attribute_type)) {
-            $el.find('.customizable-field').css(attribute_type, attribute_value);
-        }
-        dropZonObj.append($el);
-    }
-
-    if (drag_type == "map") {
-
-        var $el = $('<div style="left:' + e.offsetX + 'px; top:' + e.offsetY + 'px;" data-is_new="yes" class="drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-field_type="' + drag_type + '" data-topic_title="" data-trigger_class="infobox-map-fields"><div class="field-data"><img src="/assets/default/img/book-icons/map.svg" width="500"></div>');
-        //$el.append('<span class="field-handle fas fa-arrows-alt"></span><a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('<a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
-        $el.append('</div>');
-        if (!EditorIsEmpty(attribute_type)) {
-            $el.find('.customizable-field').css(attribute_type, attribute_value);
-        }
-        dropZonObj.append($el);
-    }
-
     console.log('item-adddddddddddddddddddddddddddeeeed');
     //after_add_render(field_random_number, dropZonObj);
 
@@ -330,15 +230,54 @@ $(document).on('click', '.book-dropzone', function (e) {
     .rotatable()
     .draggable({
         preventCollision: true,
-        containment: dropZonObj
+        containment: dropZonObj,
+        drag: function(event, ui) {
+            var parent = $(this).parent(); // Assuming dropZonObj is the container
+            var parentWidth = parent.width();
+            var parentHeight = parent.height();
+
+            // Calculate the percentages
+            var leftPercent = (ui.position.left / parentWidth) * 100;
+            var topPercent = (ui.position.top / parentHeight) * 100;
+
+            // Set the CSS of the element with the percentages
+            $(this).css({
+                left: leftPercent + '%',
+                top: topPercent + '%'
+            });
+
+            // Prevent jQuery UI from overriding the percentage values with pixel values
+            ui.position.left = leftPercent + '%';
+            ui.position.top = topPercent + '%';
+        }
     })
     .off('wheel'); // Unbinds all wheel events from this element
 
 
 	$('.draggable_field_' + field_random_number).resizable({
         resize: function(event, ui) {
-			$(".field-options").find('.trigger_field[data-field_name="width"]').val(ui.size.width);
-			$(".field-options").find('.trigger_field[data-field_name="width"]').change();
+
+            var parent = $(this).parent(); // Assuming dropZonObj is the container
+            var parentWidth = parent.width();
+            var parentHeight = parent.height();
+
+            // Calculate the width and height in percentages
+            var widthPercent = (ui.size.width / parentWidth) * 100;
+            var heightPercent = (ui.size.height / parentHeight) * 100;
+
+            widthPercent = (widthPercent > 100)? 100 : widthPercent;
+
+            // Set the CSS of the element with percentage values
+            $(this).css({
+                width: widthPercent + '%',
+                height: heightPercent + '%'
+            });
+
+            // Update the field options with the percentage values
+            $(".field-options").find('.trigger_field[data-field_name="width"]').val(widthPercent);
+            $(".field-options").find('.trigger_field[data-field_name="width"]').change();
+
+            console.log('resieeeeeeeeeeeeeee---------------3333');
         }
     });
 
@@ -434,12 +373,34 @@ function after_add_render(field_random_number, dropZonObj){
         .off('wheel'); // Unbinds all wheel events from this element
 */
 
-    $('.draggable_field_' + field_random_number).resizable({
-        resize: function(event, ui) {
-            $(".field-options").find('.trigger_field[data-field_name="width"]').val(ui.size.width);
-            $(".field-options").find('.trigger_field[data-field_name="width"]').change();
-        }
-    });
+    var field_type = $(".draggable_field_"+operatorId).attr('data-field_type');
+    if(field_type != 'topic' && field_type != 'treasure' && field_type != 'spacer') {
+        $('.draggable_field_' + field_random_number).resizable({
+            resize: function (event, ui) {
+
+                console.log('resiezee0000000000-------00000000000');
+                var parent = $(this).parent(); // Assuming dropZonObj is the container
+                var parentWidth = parent.width();
+                var parentHeight = parent.height();
+
+                // Calculate the width and height in percentages
+                var widthPercent = (ui.size.width / parentWidth) * 100;
+                var heightPercent = (ui.size.height / parentHeight) * 100;
+                widthPercent = (widthPercent > 100) ? 100 : widthPercent;
+
+                // Set the CSS of the element with percentage values
+                $(this).css({
+                    width: widthPercent + '%',
+                    height: heightPercent + '%'
+                });
+
+                // Update the field options with the percentage values
+                $(".field-options").find('.trigger_field[data-field_name="width"]').val(widthPercent);
+                $(".field-options").find('.trigger_field[data-field_name="width"]').change();
+
+            }
+        });
+    }
 }
 
 function reinitialize_items(){
@@ -664,8 +625,10 @@ $(document).on('click', '.field_settings', function (e) {
         $(".editor-parent-nav #layers-tab").click();
         $(".editor-objects-block li #levels_layers-tab1").click();
     }else{
-        $(".editor-parent-nav #stages-tab").click();
-        $(".editor-controls li #objects-tab1").click();
+        $(".editor-parent-nav #layers-tab").click();
+        $(".editor-objects-block li #all_layers-tab1").click();
+        //$(".editor-parent-nav #stages-tab").click();
+        //$(".editor-controls li #objects-tab1").click();
     }
 
 
@@ -842,12 +805,15 @@ $(document).on('click', '.field_settings', function (e) {
 $(document).on('keyup change keydown click', '.field-options .trigger_field', function (e) {
     console.log('trigger_field_change_data-------------------');
     trigger_field_change($(this));
+    //levels_sorting_render();
 });
 
 $(document).on('keyup change keydown click', '.page-settings-fields .trigger_field', function (e) {
     console.log('trigger_field_change_data-------------------');
     trigger_field_change($(this));
 });
+
+
 
 $(document).on('click', '.editor-objects-list li .fa-trash', function (e) {
 	if( $(this).closest('li').hasClass('locked-object')){
@@ -928,6 +894,9 @@ function trigger_field_change(thisObj) {
     if(this_value != null){
         this_value = this_value.replace(/\n/g, '<br />');
     }
+    if( field_name == 'width'){
+        this_value = this_value+'%';
+    }
     $(".draggable_field_" + data_id).attr('data-' + field_id, this_value);
     if (field_type == 'text') {
         $(".draggable_field_" + data_id + ' .field-data').html(this_value);
@@ -940,8 +909,11 @@ function trigger_field_change(thisObj) {
 
 	if (field_type == 'page_style') {
 		var this_value_number = this_value;
+        if( field_name == 'width'){
+            this_value = this_value+'%';
+        }
 		if( field_name == 'height'){
-			this_value = this_value+'px';
+			this_value = this_value+'%';
 		}
 		if( field_name == 'graph'){
 			if( this_value == 1){
@@ -960,7 +932,7 @@ function trigger_field_change(thisObj) {
 
 	if (field_type == 'svg_style') {
 		if( field_name == 'width'){
-			this_value = this_value+'px';
+			this_value = this_value+'%';
 		}
 		$(".draggable_field_" + data_id).find('svg').css(field_name,this_value);
         //$(".draggable_field_" + data_id + ' .field-data').html(this_value);
@@ -1025,19 +997,19 @@ jQuery(document).ready(function () {
 
 				switch(event.which) {
 					case 37: // Left arrow key
-						$activeElement.css('left', leftPos - 1 + 'px');
+						$activeElement.css('left', leftPos - 1 + '%');
 						break;
 
 					case 39: // Right arrow key
-						$activeElement.css('left', leftPos + 1 + 'px');
+						$activeElement.css('left', leftPos + 1 + '%');
 						break;
 
 					case 38: // Up arrow key
-						$activeElement.css('top', topPos - 1 + 'px');
+						$activeElement.css('top', topPos - 1 + '%');
 						break;
 
 					case 40: // Down arrow key
-						$activeElement.css('top', topPos + 1 + 'px');
+						$activeElement.css('top', topPos + 1 + '%');
 						break;
 				}
 			}
@@ -1059,16 +1031,60 @@ jQuery(document).ready(function () {
 			.rotatable({angle: rotate_value})
 			.draggable({
 				preventCollision: true,
-				containment: dropZonObj
+				containment: dropZonObj,
+                drag: function(event, ui) {
+                    var parent = $(this).parent(); // Assuming dropZonObj is the container
+                    var parentWidth = parent.width();
+                    var parentHeight = parent.height();
+
+                    // Calculate the percentages
+                    var leftPercent = (ui.position.left / parentWidth) * 100;
+                    var topPercent = (ui.position.top / parentHeight) * 100;
+
+                    // Set the CSS of the element with the percentages
+                    $(this).css({
+                        left: leftPercent + '%',
+                        top: topPercent + '%'
+                    });
+
+                    // Prevent jQuery UI from overriding the percentage values with pixel values
+                    ui.position.left = leftPercent + '%';
+                    ui.position.top = topPercent + '%';
+                }
 			})
 			.off('wheel'); // Unbinds all wheel events from this element
-			$('.draggable_field_' + field_id).resizable({
-				resize: function(event, ui) {
-					$(".field-options").find('.trigger_field[data-field_name="width"]').val(ui.size.width);
-					$(".field-options").find('.trigger_field[data-field_name="width"]').change();
-				}
 
-			});
+
+
+            var field_type = $(".draggable_field_"+field_id).attr('data-field_type');
+            if(field_type != 'topic' && field_type != 'treasure' && field_type != 'spacer') {
+                $('.draggable_field_' + field_id).resizable({
+                    resize: function (event, ui) {
+                        var parent = $(this).parent(); // Assuming dropZonObj is the container
+                        var parentWidth = parent.width();
+                        var parentHeight = parent.height();
+
+                        // Calculate the width and height in percentages
+                        var widthPercent = (ui.size.width / parentWidth) * 100;
+                        var heightPercent = (ui.size.height / parentHeight) * 100;
+
+                        widthPercent = (widthPercent > 100) ? 100 : widthPercent;
+
+                        // Set the CSS of the element with percentage values
+                        $(this).css({
+                            width: widthPercent + '%',
+                            height: heightPercent + '%'
+                        });
+
+                        // Update the field options with the percentage values
+                        $(".field-options").find('.trigger_field[data-field_name="width"]').val(widthPercent);
+                        $(".field-options").find('.trigger_field[data-field_name="width"]').change();
+
+                        console.log('resieeeeeeeeeeeeeee---------------222');
+                    }
+
+                });
+            }
 
     });
 
@@ -1077,10 +1093,34 @@ jQuery(document).ready(function () {
 			return false;
 		}
 		var data_id = $(this).closest('.field_settings').attr('data-id');
+        var element_type = $(this).closest('.field_settings').attr('data-field_type');
 		$('.editor-objects-list li[data-id="'+data_id+'"]').remove();
 		sorting_render();
         $(this).parent().detach();
         $(".field-options").addClass('hide');
+
+        levels_sorting_render();
+        if(element_type == 'topic' || element_type == 'treasure' || element_type == 'spacer'){
+
+
+            var links = $flowchart.flowchart('getData').links;
+
+            // Find the link with the specified details
+
+            if ($flowchart.flowchart('getOperatorData', data_id)) {
+                Object.keys(links).forEach(function (linkId) {
+                    var link = links[linkId];
+                    if (link.toOperator === data_id && link.toConnector === 'input_1') {
+                        $flowchart.flowchart('deleteLink', linkId);
+                    }
+                });
+            }
+
+
+
+        }
+
+
     });
 
     $(document).on('stylechanged', '.resizeable', function (e) {
@@ -1294,7 +1334,7 @@ function generate_stage_area(){
 			var field_style = field_position_top = field_position_left = '';
 			var field_position = fieldObj.position();
 			if (field_position != undefined && field_position != 'undefined') {
-				var field_style = 'style="top:' + field_position.top + 'px;left:' + field_position.left + 'px;position: absolute;width: max-content;"';
+				var field_style = 'style="top:' + field_position.top + '%;left:' + field_position.left + '%;position: absolute;width: max-content;"';
 				var field_position_top = field_position.top;
 				var field_position_left = field_position.left;
 			}
