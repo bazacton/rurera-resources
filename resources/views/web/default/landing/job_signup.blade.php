@@ -722,7 +722,7 @@
                                         <li>Create design assets, including icons, graphics, and visual elements, to support the UI/UX design.</li>
                                         <li>Iteratively refine UI/UX designs based on user feedback, usability findings, and analytics data.</li>
                                     </ul>
-                                    <h3 itemprop="title" class="font-24">Requirements</h4>
+                                    <h3 itemprop="title" class="font-24">Requirements</h3>
                                     <ul class="lms-disc-list">
                                         <li>Bachelor's or Master's degree in Design, Human-Computer Interaction, or a related field.</li>
                                         <li>Extensive experience in UI/UX design, including wireframing, prototyping, and visual design.</li>
