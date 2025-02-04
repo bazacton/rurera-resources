@@ -287,9 +287,7 @@ $(document).on('click', '.book-dropzone', function (e) {
 
 	var z_index = $(".editor-objects-list li").length+1;
 	if( item_title != undefined){
-		$(".editor-objects-list-all").append('<li data-id="'+field_random_number+'" data-field_postition="'+z_index+'">'+item_title+' <div class="dropdown"><button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">\n' +
-            '                                <img src="/assets/default/svgs/dots-three.svg" alt="">\n' +
-            '                              </button><div class="actions-menu">\n' +
+		$(".editor-objects-list-all").append('<li data-id="'+field_random_number+'" data-field_postition="'+z_index+'">'+item_title+' <div class="actions-menu">\n' +
             '                                <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>\n' +
             '                            </div></li>');
 		$(".editor-objects-list-all").sortable({
