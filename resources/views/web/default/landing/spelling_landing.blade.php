@@ -486,8 +486,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion lms-accordion-modern" id="accordion-modern">
-                        <div class="card active" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion lms-accordion-modern" id="accordion-modern">
+                        <div class="card active" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-1">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
                                     <span itemprop="size">#1</span>Adaptive Assessments Testing
@@ -505,7 +505,7 @@
                                 <figure><img class="w-100" src="../assets/default/img/adpative-assessment.jpg" alt="company sats" title="company sats" width="100%" height="auto" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-2">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
                                     <span itemprop="size">#2</span>Quick Results via automated marking
@@ -522,7 +522,7 @@
                                 <figure><img class="w-100" src="../assets/default/img/company-quiz.jpg" alt="company performance" title="company performance" width="100%" height="auto" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-3">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
                                     <span itemprop="size">#3</span>Diverse Question Formats
@@ -539,7 +539,7 @@
                                 <figure><img class="w-100" src="../assets/default/img/all-in-1-platform.jpg" alt="company rewards" title="company rewards" width="100%" height="auto" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-4">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
                                     <span itemprop="size">#4</span>Timely Reporting
@@ -554,7 +554,7 @@
                                 <figure><img class="w-100" src="../assets/default/img/company-sats.jpg" alt="company insights" title="company insights" width="100%" height="auto" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-5">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
                                     <span itemprop="size">#5</span>Breakthrough insights at every level
@@ -572,7 +572,7 @@
                                 <figure><img class="w-100" src="../assets/default/img/company-insights.jpg" alt="company quiz" title="company quiz" width="100%" height="auto" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-6">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">
                                     <span itemprop="size">#6</span>Students Engagement
@@ -590,7 +590,7 @@
                                 <figure><img class="w-100" src="../assets/default/img/company-performance.jpg" alt="company curriculum" width="100%" height="auto" title="company curriculum" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-6">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="true" aria-controls="collapse-7">
                                     <span itemprop="size">#7</span>Reward points
@@ -628,9 +628,9 @@
                 </div>
                 <div class="col-12 col-lg-12 col-md-12 mx-auto">
                     <div class="mt-0">
-                        <div class="lms-faqs mx-w-100 mt-0" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="lms-faqs mx-w-100 mt-0" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div id="accordion">
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingonsix">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">What types of vocabulary resources does Rurera provide?</button>
@@ -643,7 +643,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingTwo">
                                         <h3 class="mb-0"><button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse"
                                                 data-target="#collapseTwo" aria-expanded="false"
@@ -658,7 +658,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingseven">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven"> What are some common strategies for memorizing spelling words?</button>
@@ -671,7 +671,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading8">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">What are some effective methods for teaching vocabulary?</button>
@@ -684,7 +684,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading9">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">How do the Play and Learn Quizzes work?
@@ -697,7 +697,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading10">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">How can Progress Rewards benefit my child?</button>
@@ -710,7 +710,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading11">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">Why should I choose Rurera for my child’s vocabulary and spelling practice?</button>
@@ -724,7 +724,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading12">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">How can I find new vocabulary words to learn on Rurera? </button>
@@ -738,7 +738,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading13">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">How often should I practice spelling on Rurera to improve?
