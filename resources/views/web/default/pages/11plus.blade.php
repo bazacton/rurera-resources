@@ -4,8 +4,6 @@
 <style>
     .gallery-sub-header {
         min-height:780px; 
-        /* background-image: linear-gradient(transparent 11px, rgba(220,220,200,.8) 12px, transparent 12px), linear-gradient(90deg, transparent 11px, rgba(220,220,200,.8) 12px, transparent 12px);
-        background-size: 100% 12px, 12px 100%; */
     }
     .lms-newsletter {
         background-color: #f18700;
