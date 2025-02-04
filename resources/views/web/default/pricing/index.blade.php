@@ -52,7 +52,7 @@
                     <div class="lms-faqs mx-w-100 mt-0">
                         <div id="accordion">
                             <div class="card">
-                                <div class="card-header" id="headingonsix">
+                                <div class="card-header" id="headingsix">
                                     <button class="btn btn-link font-18 font-weight-bold" data-toggle="collapse" data-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">What payment methods do you accept?</button>
                                 </div>
                                 <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
