@@ -360,9 +360,9 @@
                                                     <a href="#">
                                                         <span class="icon-svg">
                                                             <svg width="64px" height="64px" viewBox="0 0 48 48" id="b" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-                                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                                                <g id="SVGRepo_iconCarrier">
+                                                                <g id="SVGRepo_bgCarrier6" stroke-width="0"></g>
+                                                                <g id="SVGRepo_tracerCarrier6" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                                <g id="SVGRepo_iconCarrier6">
                                                                     <path class="c" d="m32.017,16.7078c1.7678,1.3258,3.241,4.7141,2.9463,8.397-.2946,2.799-1.7678,5.1561-2.9463,6.04"></path>
                                                                     <path class="c" d="m5.5,17.7391v12.8165h8.5443l11.0487,8.839V8.6054l-11.0487,9.1336H5.5Z"></path>
                                                                     <path class="c" d="m37.173,10.9625c3.0936,2.3571,5.598,8.397,5.3034,15.0263-.4419,5.0088-2.9463,9.1336-5.3034,10.9014"></path>
@@ -478,9 +478,9 @@
                                                                     xml:space="preserve"
                                                                     fill="#000000"
                                                                 >
-                                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                                                    <g id="SVGRepo_iconCarrier">
+                                                                    <g id="SVGRepo_bgCarrier2" stroke-width="0"></g>
+                                                                    <g id="SVGRepo_tracerCarrier2" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                                    <g id="SVGRepo_iconCarrier2">
                                                                         <g>
                                                                             <path
                                                                                 class="st0"
@@ -526,9 +526,9 @@
                                                     <div class="secure-server">
                                                         <figure>
                                                             <svg fill="#000000" width="64px" height="64px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="lock-check" class="icon glyph">
-                                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                                                <g id="SVGRepo_iconCarrier">
+                                                                <g id="SVGRepo_bgCarrier3" stroke-width="0"></g>
+                                                                <g id="SVGRepo_tracerCarrier3" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                                <g id="SVGRepo_iconCarrier3">
                                                                     <path
                                                                         d="M18,8H17V7A5,5,0,0,0,7,7V8H6a2,2,0,0,0-2,2V20a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V10A2,2,0,0,0,18,8ZM9,7a3,3,0,0,1,6,0V8H9Zm6.71,6.71-4,4a1,1,0,0,1-1.42,0l-2-2a1,1,0,0,1,1.42-1.42L11,15.59l3.29-3.3a1,1,0,0,1,1.42,1.42Z"
                                                                     ></path>
