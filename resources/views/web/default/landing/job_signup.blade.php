@@ -598,13 +598,13 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-header" id="heading_7">
+                            <div class="card-header" id="heading_77">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse_7" aria-expanded="false" aria-controls="collapse_7">
                                     Language Arts Curriculum Designer
                                     <small>Freelance / online / on-site</small>
                                 </button>
                             </div>
-                            <div id="collapse_7" class="collapse" aria-labelledby="heading_7" data-parent="#accordionExample">
+                            <div id="collapse_7" class="collapse" aria-labelledby="heading_77" data-parent="#accordionExample">
                                 <div class="card-body">
                                     
                                     <h3 itemprop="title" class="font-24">Overview</h3>
@@ -648,13 +648,13 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-header" id="heading_7">
+                            <div class="card-header" id="heading_78">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse_7" aria-expanded="false" aria-controls="collapse_7">
                                     QA Analyst
                                     <small>Freelance / online / on-site</small>
                                 </button>
                             </div>
-                            <div id="collapse_7" class="collapse" aria-labelledby="heading_7" data-parent="#accordionExample">
+                            <div id="collapse_7" class="collapse" aria-labelledby="heading_78" data-parent="#accordionExample">
                                 <div class="card-body">
                                     
                                     <h3 itemprop="title" class="font-24">Overview</h3>
