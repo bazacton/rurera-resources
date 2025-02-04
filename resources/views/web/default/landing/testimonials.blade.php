@@ -230,7 +230,7 @@
     <div class="lms-testimonials row">
       <div class="col-12 mb-20">
         <div class="section-title">
-          <h2 itemprop="title"class="font-weight-bold text-center w-100 mb-10 font-40 pt-0 text-dark-charcoal">Discover What Makes Rurera Loved!</h2>
+          <h2 itemprop="title" class="font-weight-bold text-center w-100 mb-10 font-40 pt-0 text-dark-charcoal">Discover What Makes Rurera Loved!</h2>
           <p itemprop="description" class="mb-25 text-center">
             Read heartfelt testimonials from our community and see how Rurera has <br > transformed their learning experiences.
           </p>
