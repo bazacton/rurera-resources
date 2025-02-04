@@ -14,6 +14,9 @@
 
 <style type="text/css">
 
+    .flowchart-operator{
+        display: inline-table;
+    }
     .flowchart-operator-connector-arrow1, .flowchart-operator-connector-small-arrow1 {
         visibility: hidden;
     }

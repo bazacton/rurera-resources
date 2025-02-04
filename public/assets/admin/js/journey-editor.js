@@ -982,61 +982,64 @@ jQuery(document).ready(function () {
         var field_id = $(this).attr('data-id');
 
 
-		$(document).on('keydown', function(event) {
-			const $activeElement = $('.draggable_field_' + field_id + '.active');
+        $(document).on('keydown', function (event) {
+            const $activeElement = $('.draggable_field_' + field_id + '.active');
 
-			if( $activeElement.hasClass('locked-object')){
-				return false;
-			}
+            if ($activeElement.hasClass('locked-object')) {
+                return false;
+            }
 
-			if ($activeElement.length) {
-				if ($(event.target).attr('class') == '') {
-					event.preventDefault(); // Prevent the default scroll action
-				}
+            if ($activeElement.length) {
+                if ($(event.target).attr('class') == '') {
+                    event.preventDefault(); // Prevent the default scroll action
+                }
 
-				let leftPos = parseInt($activeElement.css('left'));
-				let topPos = parseInt($activeElement.css('top'));
+                let leftPos = parseInt($activeElement.css('left'));
+                let topPos = parseInt($activeElement.css('top'));
 
-				switch(event.which) {
-					case 37: // Left arrow key
-						$activeElement.css('left', leftPos - 1 + '%');
-						break;
+                switch (event.which) {
+                    case 37: // Left arrow key
+                        $activeElement.css('left', leftPos - 1 + '%');
+                        break;
 
-					case 39: // Right arrow key
-						$activeElement.css('left', leftPos + 1 + '%');
-						break;
+                    case 39: // Right arrow key
+                        $activeElement.css('left', leftPos + 1 + '%');
+                        break;
 
-					case 38: // Up arrow key
-						$activeElement.css('top', topPos - 1 + '%');
-						break;
+                    case 38: // Up arrow key
+                        $activeElement.css('top', topPos - 1 + '%');
+                        break;
 
-					case 40: // Down arrow key
-						$activeElement.css('top', topPos + 1 + '%');
-						break;
-				}
-			}
-		});
+                    case 40: // Down arrow key
+                        $activeElement.css('top', topPos + 1 + '%');
+                        break;
+                }
+            }
+        });
 
-		const style = $('.draggable_field_' + field_id).attr('style');
+        const style = $('.draggable_field_' + field_id).attr('style');
 
-		var rotate_value = 0;
-		if (style) {
-			// Use a regular expression to extract the rotate value
-			const rotateMatch = style.match(/rotate\(([-\d.]+)deg\)/);
-			if (rotateMatch) {
-				const rotateValue = parseFloat(rotateMatch[1]); // Extract and convert to a number
-				rotate_value = rotateValue;
-			}
-		}
+        var rotate_value = 0;
+        if (style) {
+            // Use a regular expression to extract the rotate value
+            const rotateMatch = style.match(/rotate\(([-\d.]+)deg\)/);
+            if (rotateMatch) {
+                const rotateValue = parseFloat(rotateMatch[1]); // Extract and convert to a number
+                rotate_value = rotateValue;
+            }
+        }
 
-		$('.draggable_field_' + field_id)
+        $('.draggable_field_' + field_id+' .field-data')
             .rotatable({
                 angle: rotate_value,
-                rotate: function(event, ui) {
+                rotate: function (event, ui) {
+                    console.log('field_dsfsdfsdlkfjsdklfj lksdjfk sdklflkjsd f');
                     sorting_render();
                     levels_sorting_render();
                 }
-            })
+            }).off('wheel');
+
+		$('.draggable_field_' + field_id)
 			.draggable({
 				preventCollision: true,
 				containment: dropZonObj,
@@ -1067,6 +1070,9 @@ jQuery(document).ready(function () {
             var field_type = $(".draggable_field_"+field_id).attr('data-field_type');
             if(field_type != 'topic' && field_type != 'treasure' && field_type != 'spacer') {
                 $('.draggable_field_' + field_id).resizable({
+                    handles: {
+                        se: $('.draggable_field_' + field_id).find(".resize-handler") // Ensure the correct handler
+                    },
                     resize: function (event, ui) {
                         var parent = $(this).parent(); // Assuming dropZonObj is the container
                         var parentWidth = parent.width();
