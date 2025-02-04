@@ -427,9 +427,9 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion lms-accordion-modern"
+                    <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion lms-accordion-modern"
                          id="accordion-modern">
-                        <div class="card active" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card active" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-1">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
                                         type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false"
@@ -450,11 +450,11 @@
                             </div>
                             <div class="lms-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/adpative-assessment.jpg"
-                                             alt="company sats" title="company sats" width="100%" height="auto"
+                                             alt="company sats" title="company sats" width="652" height="401"
                                              itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-2">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
                                         type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false"
@@ -474,11 +474,11 @@
                             </div>
                             <div class="lms-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-quiz.jpg"
-                                             alt="company performance" title="company performance" width="100%" height="auto"
+                                             alt="company performance" title="company performance" width="652" height="401"
                                              itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-3">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
                                         type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false"
@@ -497,11 +497,11 @@
                             </div>
                             <div class="lms-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/all-in-1-platform.jpg"
-                                             alt="company rewards" title="company rewards" width="100%" height="auto"
+                                             alt="company rewards" title="company rewards" width="652" height="401"
                                              itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-4">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
                                         type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false"
@@ -519,11 +519,11 @@
                             </div>
                             <div class="lms-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-sats.jpg"
-                                             alt="company insights" title="company insights" width="100%" height="auto"
+                                             alt="company insights" title="company insights" width="652" height="401"
                                              itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-5">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
                                         type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false"
@@ -544,11 +544,11 @@
                             </div>
                             <div class="lms-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-insights.jpg"
-                                             alt="company quiz" title="company quiz" width="100%" height="auto"
+                                             alt="company quiz" title="company quiz" width="652" height="401"
                                              itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-6">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
                                         type="button" data-toggle="collapse" data-target="#collapse-6" aria-expanded="true"
@@ -569,11 +569,11 @@
                             </div>
                             <div class="lms-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-performance.jpg"
-                                             alt="company curriculum" width="100%" height="auto" title="company curriculum"
+                                             alt="company curriculum" width="652" height="401" title="company curriculum"
                                              itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
-                        <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-6">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
                                         type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="true"
@@ -594,7 +594,7 @@
                             </div>
                             <div class="lms-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/company-rewards.jpg"
-                                             alt="company curriculum" width="100%" height="auto" title="company curriculum"
+                                             alt="company curriculum" width="652" height="401" title="company curriculum"
                                              itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
@@ -615,10 +615,10 @@
                 </div>
                 <div class="col-12 col-lg-12 col-md-12 mx-auto">
                     <div class="mt-0">
-                        <div class="mt-0 lms-faqs mx-w-100" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="mt-0 lms-faqs mx-w-100" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div id="accordion">
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingonsix">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                    <div class="card-header" id="headingsix">
                                         <h3 class="mb-0">
                                             <button aria-controls="collapsesix" aria-expanded="true" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapsesix" data-toggle="collapse">
                                                 What is the Independent Schools Examination Board (ISEB)?
@@ -634,7 +634,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingTwo">
                                         <h3 class="mb-0">
                                             <button aria-controls="collapseTwo" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapseTwo" data-toggle="collapse">
@@ -651,7 +651,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingseven">
                                         <h3 class="mb-0">
                                             <button aria-controls="collapseseven" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapseseven" data-toggle="collapse">
@@ -668,7 +668,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading8">
                                         <h3 class="mb-0">
                                             <button aria-controls="collapse8" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse8" data-toggle="collapse">
@@ -685,7 +685,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading9">
                                         <h3 class="mb-0">
                                             <button aria-controls="collapse9" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse9" data-toggle="collapse">
@@ -702,7 +702,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading10">
                                         <h3 class="mb-0">
                                             <button aria-controls="collapse10" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse10" data-toggle="collapse">
@@ -719,7 +719,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading11">
                                         <h3 class="mb-0">
                                             <button aria-controls="collapse11" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse11" data-toggle="collapse">When are ISEB exams held?</button>
@@ -734,7 +734,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading12">
                                         <h3 class="mb-0">
                                             <button aria-controls="collapse12" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse12" data-toggle="collapse">
@@ -751,7 +751,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading13">
                                         <h3 class="mb-0">
                                             <button aria-controls="collapse13" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse13" data-toggle="collapse">
@@ -768,7 +768,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading14">
                                         <h3 class="mb-0">
                                             <button aria-controls="collapse14" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse14" data-toggle="collapse">How are ISEB exams graded?</button>
@@ -783,7 +783,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="heading15">
                                         <h3 class="mb-0">
                                             <button aria-controls="collapse15" aria-expanded="false" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapse15" data-toggle="collapse">
