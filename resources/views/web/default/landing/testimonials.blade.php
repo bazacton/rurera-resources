@@ -6,7 +6,7 @@
     <div class="row h-100 align-items-center text-left">
       <div class="col-12 col-md-12 col-lg-9">
         <p itemprop="sub title" class="lms-subtitle">How we've helped others</p>
-        <h1 itemprop="title" class="font-72 font-weight-bold mb-15 test">
+        <h1 itemprop="title" class="font-72 font-weight-bold mb-15">
           Stories of Trust and <span class="text-scribble">Triumph!</span>
         </h1>
         <p itemprop="description" class="font-19">
@@ -23,7 +23,7 @@
         <div class="testimonial-card fancy">
           <div class="testimonial-img text-center">
             <figure>
-              <img src="../assets/default/img/bri-client2.jpg" alt="bran images" title="bran images" width="100%" height="auto" itemprop="image" loading="eager" />
+              <img src="../assets/default/img/bri-client2.jpg" alt="bran images" title="bran images" width="120" height="120" itemprop="image" loading="eager" />
             </figure>
           </div>
           <div class="testimonial-body">
@@ -37,7 +37,7 @@
         <div class="testimonial-card fancy">
           <div class="testimonial-img text-center">
             <figure>
-              <img src="../assets/default/img/bri-client1.jpg" alt="bran images" title="bran images" width="100%" height="auto" itemprop="image" loading="eager" />
+              <img src="../assets/default/img/bri-client1.jpg" alt="bran images" title="bran images" width="120" height="120" itemprop="image" loading="eager" />
             </figure>
           </div>
           <div class="testimonial-body">
@@ -53,7 +53,7 @@
         <div class="testimonial-card fancy">
           <div class="testimonial-img text-center">
             <figure>
-              <img src="../assets/default/img/bri-client3.jpg" alt="bran images" title="bran images" width="100%" height="auto" itemprop="image" loading="eager" />
+              <img src="../assets/default/img/bri-client3.jpg" alt="bran images" title="bran images" width="120" height="120" itemprop="image" loading="eager" />
             </figure>
           </div>
           <div class="testimonial-body">
@@ -67,7 +67,7 @@
         <div class="testimonial-card fancy">
           <div class="testimonial-img text-center">
             <figure>
-              <img src="../assets/default/img/bri-client6.jpg" alt="bran images" title="bran images" width="100%" height="auto" itemprop="image" loading="eager" />
+              <img src="../assets/default/img/bri-client6.jpg" alt="bran images" title="bran images" width="120" height="120" itemprop="image" loading="eager" />
             </figure>
           </div>
           <div class="testimonial-body">
