@@ -44,11 +44,10 @@
 <body class="menu-closed @if($isRtl) rtl @endif">
     <div id="app">
         @if(!request()->is('login') && !request()->is('register') && !request()->is('forget-password'))
-        
-        @if(!isset($appHeader))
-            @include('web.default.includes.top_nav')
-            @include('web.default.includes.navbar')
-        @endif
+            @if(!isset($appHeader))
+                @include('web.default.includes.top_nav')
+                @include('web.default.includes.navbar')
+            @endif
         @endif
 
         @if(!empty($justMobileApp))
@@ -58,14 +57,14 @@
         @yield('content')
 
         @if(!request()->is('login') && !request()->is('register') && !request()->is('forget-password'))
-        @if(!isset($appFooter))
-        @include('web.default.includes.footer_custom')
-        @endif
+            @if(!isset($appFooter))
+                @include('web.default.includes.footer_custom')
+            @endif
         @endif
 
         @include('web.default.includes.advertise_modal.index')
     </div>
-    <!-- Template JS File@@@@ -->
+    <!-- Template JS File -->
 
     @if(empty($justMobileApp) and checkShowCookieSecurityDialog())
         @include('web.default.includes.cookie-security')
