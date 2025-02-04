@@ -693,7 +693,7 @@
                         <div class="mt-0 lms-faqs mx-w-100" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div id="accordion">
                                 <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingonsix">
+                                    <div class="card-header" id="headingsix">
                                         <h3 class="mb-0">
                                             <button aria-controls="collapsesix" aria-expanded="true" class="font-18 btn btn-link collapsed font-weight-bold" data-target="#collapsesix" data-toggle="collapse">
                                                 What types of vocabulary resources does Rurera provide?
