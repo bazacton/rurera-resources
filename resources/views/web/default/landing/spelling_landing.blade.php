@@ -631,12 +631,12 @@
                         <div class="lms-faqs mx-w-100 mt-0" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div id="accordion">
                                 <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingonsix">
+                                    <div class="card-header" id="heading6">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">What types of vocabulary resources does Rurera provide?</button>
                                         </h3>
                                     </div>
-                                    <div id="collapsesix" class="collapse" aria-labelledby="headingsix"
+                                    <div id="collapsesix" class="collapse" aria-labelledby="heading6"
                                         data-parent="#accordion">
                                         <div class="card-body">
                                             <p>Rurera offers a comprehensive curriculum based Word Directory, custom word lists, and sets to expand your child’s word knowledge. These resources are tailored to meet individual learning needs and interests.</p>
@@ -822,7 +822,7 @@
             </div>
         </div>
     </section>
-    <div class="modal fade lms-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
+    <div class="modal fade lms-choose-membership" id="subscriptionModal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
