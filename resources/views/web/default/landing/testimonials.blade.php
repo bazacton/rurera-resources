@@ -143,7 +143,7 @@
                     <img src="/assets/default/svgs/video-play-btn.svg" alt="video-play-btn">
                 </span>
             </a>
-            <video controls="true" id="video" preload="metadata" poster="/store/1/default_images/home_video_section.png">
+            <video id="video" preload="metadata" poster="/store/1/default_images/home_video_section.png">
                 <source src="//cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4" type="video/mp4">
             </video>
         </div>
