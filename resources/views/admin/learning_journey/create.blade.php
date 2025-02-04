@@ -99,9 +99,6 @@
   box-sizing: border-box;
 }
 
-	.field_settings .ui-rotatable-handle, .field_settings .ui-resizable-handle, .field_settings .remove{
-		display:none !important;
-	}
 
 	.field_settings.active {
 		opacity: 0.8;
