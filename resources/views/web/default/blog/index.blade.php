@@ -150,7 +150,7 @@
                     <div class="col-12 col-lg-7 col-md-7">
                         <div class="svg-holder">
                             <span class="icon-svg">
-                                <img class="w-100" src="../assets/default/svgs/blog-newsletter.svg" alt="default newsletter" title="default newsletter" width="100%" height="auto" loading="eager" />
+                                <img class="w-100" src="../assets/default/svgs/blog-newsletter.svg" alt="default newsletter" title="default newsletter" width="689" height="463" loading="eager" />
                             </span>
                         </div>
                     </div>
