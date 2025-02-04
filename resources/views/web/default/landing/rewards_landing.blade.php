@@ -343,7 +343,7 @@
                                 </div>
                             </div>
                             <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                                <div class="card-header" id="headingon12">
+                                <div class="card-header" id="heading12">
                                     <h3 itemprop="name" class="mb-0">
                                         <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="true" aria-controls="collapse12">
                                             Where can I check my current coin points balance?
