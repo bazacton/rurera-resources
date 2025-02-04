@@ -383,7 +383,7 @@
                                     <div class="img-holder">
                                         <figure>
                                             <span class="icon-savg">
-                                                <img src="/assets/default/svgs/ex-computin.svg" alt="ex-computin">
+                                                <img src="/assets/default/svgs/ex-computing.svg" alt="ex-computing">
                                             </span>
                                         </figure>
                                     </div>
