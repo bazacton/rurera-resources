@@ -359,7 +359,7 @@
                                             <ul class="mt-20 plan-feature">
                                                 <li class="mt-10">15 days of subscription</li>
                                             </ul>
-                                            <button type="submit" id="contact-tab2" data-toggle="tab" data-target="#contact" aria-controls="contact" aria-selected="false" class="btn btn-primary btn-block mt-30 rounded-pill bg-none">
+                                            <button type="submit" id="contact-tab2" data-toggle="tab" data-target="#contact" aria-controls="contact" class="btn btn-primary btn-block mt-30 rounded-pill bg-none">
                                                 Purchase
                                             </button>
                                         </div>
@@ -371,7 +371,7 @@
                                             <ul class="mt-20 plan-feature">
                                                 <li class="mt-10">30 days of subscription</li>
                                             </ul>
-                                            <button type="submit" id="contact-tab3" data-toggle="tab" data-target="#contact2" aria-controls="contact" aria-selected="false" class="btn btn-primary btn-block mt-30 rounded-pill">
+                                            <button type="submit" id="contact-tab3" data-toggle="tab" data-target="#contact2" aria-controls="contact" class="btn btn-primary btn-block mt-30 rounded-pill">
                                                 Purchase
                                             </button>
                                         </div>
