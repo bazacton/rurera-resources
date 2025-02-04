@@ -645,7 +645,7 @@
                             </div>
                         </div>
                         <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <div class="card-header" id="heading-6">
+                            <div class="card-header" id="heading-7">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
                                         type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="true"
                                         aria-controls="collapse-7">
