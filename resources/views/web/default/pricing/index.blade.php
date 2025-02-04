@@ -224,9 +224,9 @@
                                                         <a href="#">
                                                             <span class="icon-svg">
                                                                 <svg fill="#000000" width="64px" height="64px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                                                    <g id="SVGRepo_iconCarrier">
+                                                                    <g id="SVGRepo_bgCarrier2" stroke-width="0"></g>
+                                                                    <g id="SVGRepo_tracerCarrier2" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                                    <g id="SVGRepo_iconCarrier2">
                                                                         <path
                                                                             fill-rule="evenodd"
                                                                             d="M6 8a6 6 0 1112 0v2.917c0 .703.228 1.387.65 1.95L20.7 15.6a1.5 1.5 0 01-1.2 2.4h-15a1.5 1.5 0 01-1.2-2.4l2.05-2.733a3.25 3.25 0 00.65-1.95V8zm6 13.5A3.502 3.502 0 018.645 19h6.71A3.502 3.502 0 0112 21.5z"
@@ -250,9 +250,9 @@
                                                                     xml:space="preserve"
                                                                     fill="#fff"
                                                                 >
-                                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                                                    <g id="SVGRepo_iconCarrier">
+                                                                    <g id="SVGRepo_bgCarrier3" stroke-width="0"></g>
+                                                                    <g id="SVGRepo_tracerCarrier3" stroke-linecap="round" stroke-linejoin="round"></g>
+                                                                    <g id="SVGRepo_iconCarrier3">
                                                                         <g>
                                                                             <path
                                                                                 d="M16.145,2.571c-0.272-0.273-0.718-0.273-0.99,0L6.92,10.804l-4.241-4.27 c-0.272-0.274-0.715-0.274-0.989,0L0.204,8.019c-0.272,0.271-0.272,0.717,0,0.99l6.217,6.258c0.272,0.271,0.715,0.271,0.99,0 L17.63,5.047c0.276-0.273,0.276-0.72,0-0.994L16.145,2.571z"
