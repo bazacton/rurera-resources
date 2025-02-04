@@ -862,12 +862,10 @@
                         <div class="lms-jobs-form-body">
                             <div class="accordion" id="accordionExample2">
                                 <div class="card">
-                                <div class="card-header" id="headingOne">
+                                    <div class="card-header" id="headingOne">
                                         <button class="text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                             <span class="icon-box">
-                                                <svg id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32"><style type="text/css">
-                                                    .st0{fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-                                                </style><g><path class="st0" d="M30.3,3.2v9.5c0,1.2-1,2.2-2.2,2.2H13.3c0-0.2,0-0.4,0-0.6c0-2.3-1.9-4.2-4.2-4.2V3.2c0-1.2,1-2.2,2.2-2.2   h16.8C29.3,1,30.3,2,30.3,3.2z"/><line class="st0" x1="16.6" x2="22.9" y1="5.6" y2="5.6"/><line class="st0" x1="13.8" x2="25.7" y1="10.3" y2="10.3"/><path class="st0" d="M15.1,31H3.4c-0.9,0-1.7-0.7-1.7-1.7l0,0c0-3.3,2.7-6,6-6h3c3.3,0,6,2.7,6,6l0,0C16.7,30.3,16,31,15.1,31z"/><path class="st0" d="M9.2,10.1C6.9,10.1,5,12,5,14.3s1.9,5.9,4.2,5.9s4.2-3.6,4.2-5.9S11.5,10.1,9.2,10.1z"/></g></svg>
+                                                <img src="/assets/default/svgs/job-form-user.svg" alt="job-form-user">
                                             </span>
                                             Stage 1 : Rurera application form
                                         </button>
@@ -877,71 +875,70 @@
                                             </span>
                                             <span itemprop="counter" class="counter-counts"><em>0</em> of 3 tasks</span>
                                         </div>
-                                </div>
-
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample2">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                                <div class="lms-form-description">
-                                                    <b itemprop="description">Thanks for your interest in joining Team Rurera.</b>
-                                                    <p itemprop="description">Please complete the form below to give us as much information as possible to help
-                                                        move to the next step. Once you
-                                                        send
-                                                        in your application we will review and get back to you with a date and time for
-                                                        a chat online.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                                <div class="form-group">
-                                                    <label class="input-label">Position applying for</label>
-                                                    <div class="input-field select-arrow">
-                                                        <select class="lms-jobs-select">
-                                                            <option value="" selected="selected">Content Creator/Instructional Designer
-                                                            </option>
-                                                            <option value="">Subject Matter Expert (SME)</option>
-                                                            <option value="">Online Instructor/Educator</option>
-                                                            <option value="">Curriculum Developer</option>
-                                                            <option value="">Learning Experience Designer</option>
-                                                            <option value="">Administrator</option>
-                                                            <option value="">Quality Assurance Specialist</option>
-                                                            <option value="">Marketing and Enrollment Manager</option>
-                                                            <option value="">Technical Support Specialist</option>
-                                                            <option value="">Data Analyst</option>
-                                                        </select>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample2">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="lms-form-description">
+                                                        <b itemprop="description">Thanks for your interest in joining Team Rurera.</b>
+                                                        <p itemprop="description">Please complete the form below to give us as much information as possible to help
+                                                            move to the next step. Once you
+                                                            send
+                                                            in your application we will review and get back to you with a date and time for
+                                                            a chat online.</p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                                <div class="form-group">
-                                                    <label class="input-label">List your main skills</label>
-                                                    <div class="input-field">
-                                                        <input type="text" placeholder="Html Css etc">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <label class="input-label">Position applying for</label>
+                                                        <div class="input-field select-arrow">
+                                                            <select class="lms-jobs-select">
+                                                                <option value="" selected="selected">Content Creator/Instructional Designer
+                                                                </option>
+                                                                <option value="">Subject Matter Expert (SME)</option>
+                                                                <option value="">Online Instructor/Educator</option>
+                                                                <option value="">Curriculum Developer</option>
+                                                                <option value="">Learning Experience Designer</option>
+                                                                <option value="">Administrator</option>
+                                                                <option value="">Quality Assurance Specialist</option>
+                                                                <option value="">Marketing and Enrollment Manager</option>
+                                                                <option value="">Technical Support Specialist</option>
+                                                                <option value="">Data Analyst</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                                <div class="form-group">
-                                                    <label class="input-label">Training experience</label>
-                                                    <div class="input-field select-arrow">
-                                                        <select class="lms-jobs-select">
-                                                            <option value="" selected="selected">1</option>
-                                                            <option value="">2</option>
-                                                            <option value="">3</option>
-                                                            <option value="">4</option>
-                                                            <option value="">5</option>
-                                                            <option value="">6</option>
-                                                            <option value="">7</option>
-                                                            <option value="">8</option>
-                                                            <option value="">9</option>
-                                                            <option value="">10</option>
-                                                        </select>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <label class="input-label">List your main skills</label>
+                                                        <div class="input-field">
+                                                            <input type="text" placeholder="Html Css etc">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <label class="input-label">Training experience</label>
+                                                        <div class="input-field select-arrow">
+                                                            <select class="lms-jobs-select">
+                                                                <option value="" selected="selected">1</option>
+                                                                <option value="">2</option>
+                                                                <option value="">3</option>
+                                                                <option value="">4</option>
+                                                                <option value="">5</option>
+                                                                <option value="">6</option>
+                                                                <option value="">7</option>
+                                                                <option value="">8</option>
+                                                                <option value="">9</option>
+                                                                <option value="">10</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 </div>
                                 <div class="card">
                                 <div class="card-header" id="headingTwo">
