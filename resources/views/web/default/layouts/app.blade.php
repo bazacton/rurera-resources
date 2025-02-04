@@ -65,7 +65,7 @@
 
         @include('web.default.includes.advertise_modal.index')
     </div>
-    <!-- Template JS File -->
+    <!-- Template JS File@@@@ -->
 
     @if(empty($justMobileApp) and checkShowCookieSecurityDialog())
         @include('web.default.includes.cookie-security')
