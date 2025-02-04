@@ -257,6 +257,9 @@ $(document).on('click', '.book-dropzone', function (e) {
 
 
 	$('.draggable_field_' + field_random_number).resizable({
+        handles: {
+            se: $('.draggable_field_' + field_random_number).find(".resize-handler") // Ensure the correct handler
+        },
         resize: function(event, ui) {
 
             var parent = $(this).parent(); // Assuming dropZonObj is the container
@@ -378,6 +381,9 @@ function after_add_render(field_random_number, dropZonObj){
     var field_type = $(".draggable_field_"+operatorId).attr('data-field_type');
     if(field_type != 'topic' && field_type != 'treasure' && field_type != 'spacer') {
         $('.draggable_field_' + field_random_number).resizable({
+            handles: {
+                se: $('.draggable_field_' + field_random_number).find(".resize-handler") // Ensure the correct handler
+            },
             resize: function (event, ui) {
 
                 console.log('resiezee0000000000-------00000000000');
