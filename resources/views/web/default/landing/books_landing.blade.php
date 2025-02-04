@@ -680,7 +680,7 @@
                               </span>
                             </a> Upgrade to the Family Premium plan to read the rest of this book and enjoy unlimited access to our entire library.
                           </p>
-                          <a href="#" class="nav-link btn-primary rounded-pill mb-25" id="subscribe-tab" data-toggle="tab" data-target="#subscribe" aria-controls="subscribe" aria-selected="false"> Get Rurera </a>
+                          <a href="#" class="nav-link btn-primary rounded-pill mb-25" id="subscribe-tab" data-toggle="tab" data-target="#subscribe" aria-controls="subscribe"> Get Rurera </a>
                         </div>
                       </div>
                     </div>
@@ -704,7 +704,7 @@
                         <ul class="mt-20 plan-feature">
                           <li class="mt-10">15 days of subscription</li>
                         </ul>
-                        <button type="submit" id="contact-tab5" data-toggle="tab" data-target="#contact" aria-controls="contact" type="button" class="btn btn-primary btn-block mt-30 rounded-pill bg-none"> Purchase </button>
+                        <button type="submit" id="contact-tab5" data-toggle="tab" data-target="#contact" aria-controls="contact" class="btn btn-primary btn-block mt-30 rounded-pill bg-none"> Purchase </button>
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -716,7 +716,7 @@
                         <ul class="mt-20 plan-feature">
                           <li class="mt-10">30 days of subscription</li>
                         </ul>
-                        <button type="submit" id="contact-tab6" data-toggle="tab" data-target="#contact" aria-controls="contact" type="button" class="btn btn-primary btn-block mt-30 rounded-pill"> Purchase </button>
+                        <button type="submit" id="contact-tab6" data-toggle="tab" data-target="#contact" aria-controls="contact" class="btn btn-primary btn-block mt-30 rounded-pill"> Purchase </button>
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 price-plan-image">
