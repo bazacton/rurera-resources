@@ -704,7 +704,7 @@
                         <ul class="mt-20 plan-feature">
                           <li class="mt-10">15 days of subscription</li>
                         </ul>
-                        <button type="submit" id="contact-tab5" data-toggle="tab" data-target="#contact" aria-controls="contact" role="button" class="btn btn-primary btn-block mt-30 rounded-pill bg-none"> Purchase </button>
+                        <button type="submit" id="contact-tab5" data-toggle="tab" data-target="#contact" aria-controls="contact" type="button" class="btn btn-primary btn-block mt-30 rounded-pill bg-none"> Purchase </button>
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -725,7 +725,7 @@
                     <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center bg-dark-green bg-dark-green">
                       <strong>96% of subscribing parents in rurera Family report significant improvement in their child's reading skills.</strong>
                       <div class="subscription mt-20">
-                        <span>Already have a subscription? <a href=".#" id="contact-tab9" data-toggle="tab" data-target="#contact" aria-controls="contact" aria-selected="false" role="button">log in</a>
+                        <span>Already have a subscription? <a href=".#" id="contact-tab9" data-toggle="tab" data-target="#contact" aria-controls="contact" role="button">log in</a>
                         </span>
                       </div>
                     </div>
