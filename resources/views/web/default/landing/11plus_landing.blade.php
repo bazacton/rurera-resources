@@ -350,7 +350,7 @@
                                                 <svg width="64px" height="64px" viewBox="0 0 960 960" version="1.1"
                                                     xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" fill="#3d358b">
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                    <g id="SVGRepo_bgCarrier2" stroke-width="0"></g>
                                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
                                                         stroke-linejoin="round"></g>
                                                     <g id="SVGRepo_iconCarrier">
@@ -824,7 +824,7 @@
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 486.1 486.1"
                                                     xml:space="preserve">
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                    <g id="SVGRepo_bgCarrier3" stroke-width="0"></g>
                                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
                                                         stroke-linejoin="round"></g>
                                                     <g id="SVGRepo_iconCarrier">
@@ -871,7 +871,7 @@
                                             <span class="icon-savg">
                                                 <svg width="64px" height="64px" viewBox="0 0 512 512"
                                                     xmlns="http://www.w3.org/2000/svg" fill="#f35b05">
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                    <g id="SVGRepo_bgCarrier4" stroke-width="0"></g>
                                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
                                                         stroke-linejoin="round"></g>
                                                     <g id="SVGRepo_iconCarrier">
@@ -900,7 +900,7 @@
                                                 <svg width="64px" height="64px" viewBox="0 0 32 32" version="1.1"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" fill="#7679ee">
-                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                    <g id="SVGRepo_bgCarrier5" stroke-width="0"></g>
                                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
                                                         stroke-linejoin="round"></g>
                                                     <g id="SVGRepo_iconCarrier">
