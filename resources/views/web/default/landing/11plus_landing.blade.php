@@ -787,7 +787,7 @@
                             </div>
                         </div>
                         <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                            <div class="card-header" id="heading-6">
+                            <div class="card-header" id="heading-7">
                                 <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
                                     type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="true"
                                     aria-controls="collapse-7">
@@ -836,14 +836,14 @@
 
                                 @foreach( $faq_items as $itemData)
                                 <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingonsix">
+                                    <div class="card-header" id="heading77">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold" data-toggle="collapse"
                                                 data-target="#collapsesix" aria-expanded="true"
                                                 aria-controls="collapsesix">{{isset( $itemData['title'])? $itemData['title'] : '' }}</button>
                                         </h3>
                                     </div>
-                                    <div id="collapsesix" class="collapse" aria-labelledby="headingsix"
+                                    <div id="collapsesix" class="collapse" aria-labelledby="heading77"
                                         data-parent="#accordion">
                                         <div class="card-body">
                                             <p>{{isset( $itemData['description'])? $itemData['description'] : '' }}</p>
@@ -854,14 +854,14 @@
 
                                 @else
                                 <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-                                    <div class="card-header" id="headingonsix">
+                                    <div class="card-header" id="heading66">
                                         <h3 class="mb-0">
                                             <button class="btn btn-link font-18 font-weight-bold collapsed"
                                                 data-toggle="collapse" data-target="#collapsesix" aria-expanded="true"
                                                 aria-controls="collapsesix">What is the 11 Plus exam?</button>
                                         </h3>
                                     </div>
-                                    <div id="collapsesix" class="collapse" aria-labelledby="headingsix"
+                                    <div id="collapsesix" class="collapse" aria-labelledby="heading66"
                                         data-parent="#accordion">
                                         <div class="card-body">
                                             <p>The 11+ exam is a selective entrance test used by grammar schools and
