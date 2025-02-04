@@ -161,7 +161,7 @@
                                         </p>
                                     </div>
                                     <div class="img-holder">
-                                        <figure><img src="../assets/default/img/redeemstep-1.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="auto" itemprop="image" loading="eager" /></figure>
+                                        <figure><img src="../assets/default/img/redeemstep-1.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="302" itemprop="image" loading="eager" /></figure>
                                     </div>
                                 </div>
                             </div>
@@ -170,7 +170,7 @@
                             <div class="process-card process-two">
                                 <div class="process-card-body d-flex align-items-center justify-content-between">
                                     <div class="img-holder">
-                                        <figure><img src="../assets/default/img/redeemstep-2.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="auto" itemprop="image" loading="eager" /></figure>
+                                        <figure><img src="../assets/default/img/redeemstep-2.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="302" itemprop="image" loading="eager" /></figure>
                                     </div>
                                     <div class="text-holder ml-30">
                                         <h2 itemprop="title" class="post-title">Step 2:</h2>
@@ -193,7 +193,7 @@
                                         </p>
                                     </div>
                                     <div class="img-holder">
-                                        <figure><img src="../assets/default/img/redeemstep-3.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="auto" itemprop="image" loading="eager" /></figure>
+                                        <figure><img src="../assets/default/img/redeemstep-3.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="302" itemprop="image" loading="eager" /></figure>
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +202,7 @@
                             <div class="process-card process-foure">
                                 <div class="process-card-body d-flex align-items-center justify-content-between">
                                     <div class="img-holder">
-                                        <figure><img src="../assets/default/img/redeemstep-4.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="auto" itemprop="image" loading="eager" /></figure>
+                                        <figure><img src="../assets/default/img/redeemstep-4.jpg" alt="redeemstep image" title="redeemstep image" width="420" height="302" itemprop="image" loading="eager" /></figure>
                                     </div>
                                     <div class="text-holder ml-30">
                                         <h2 itemprop="title" class="post-title">Step 4:</h2>
@@ -220,9 +220,9 @@
             <div class="svg-shapes-bottom">
                 <span class="icon-svg">
                     <svg width="64px" height="64px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier"><path d="M3.415.189a1 1 0 011.1-.046l15 9a1 1 0 010 1.714l-15 9a1 1 0 01-1.491-1.074L4.754 11H10a1 1 0 100-2H4.753l-1.73-7.783A1 1 0 013.416.189z" fill="#5C5F62"></path></g>
+                        <g id="SVGRepo_bgCarrier2" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier2" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier2"><path d="M3.415.189a1 1 0 011.1-.046l15 9a1 1 0 010 1.714l-15 9a1 1 0 01-1.491-1.074L4.754 11H10a1 1 0 100-2H4.753l-1.73-7.783A1 1 0 013.416.189z" fill="#5C5F62"></path></g>
                     </svg>
                 </span>
             </div>
@@ -413,56 +413,56 @@
                                 </div>
                             </div>
 							<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                                <div class="card-header" id="headingsix">
+                                <div class="card-header" id="heading7">
                                     <h3 itemprop="name" class="mb-0">
                                         <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapsesix">
                                             What should I do if I don’t have enough coin points to redeem a toy?
                                         </button>
                                     </h3>
                                 </div>
-                                <div id="collapse7" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
+                                <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
                                     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="card-body pb-0">
                                         <p itemprop="text" class="mb-15">If you don’t have enough coin points to redeem the toy you want, you will need to continue engaging with quizzes, SATs, and reading to earn more points. Once you have accumulated the required amount, you can return to the Rewards Store to complete your redemption.</p>
                                     </div>
                                 </div>
                             </div>
 							<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                                <div class="card-header" id="headingsix">
+                                <div class="card-header" id="heading8">
                                     <h3 itemprop="name" class="mb-0">
                                         <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapsesix">
                                         Can I transfer my coin points to another Rurera account?
                                         </button>
                                     </h3>
                                 </div>
-                                <div id="collapse8" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
+                                <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
                                     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="card-body pb-0">
                                         <p itemprop="text" class="mb-15">Coin points are linked to your personal account and are not transferable to other accounts. They are exclusively for use within your own account, where you can redeem them for rewards.</p>
                                     </div>
                                 </div>
                             </div>
 							<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                                <div class="card-header" id="headingsix">
+                                <div class="card-header" id="heading9">
                                     <h3 itemprop="name" class="mb-0">
                                         <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapsesix">
                                         How can I get support if I encounter issues with my rewards or redemption?
                                         </button>
                                     </h3>
                                 </div>
-                                <div id="collapse9" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
+                                <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
                                     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="card-body pb-0">
                                         <p itemprop="text" class="mb-15">If you experience any issues with your rewards or redemption, you can contact our support team through the "Contact Us" section on the website or app. Provide detailed information about your issue, and our team will assist you as quickly as possible.</p>
                                     </div>
                                 </div>
                             </div>
 							<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                                <div class="card-header" id="headingsix">
+                                <div class="card-header" id="heading10">
                                     <h3 itemprop="name" class="mb-0">
                                         <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapsesix">
                                         What should I do if my toy hasn’t arrived after redemption?
                                         </button>
                                     </h3>
                                 </div>
-                                <div id="collapse10" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
+                                <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
                                     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="card-body pb-0">
                                         <p itemprop="text" class="mb-15">If your toy hasn’t arrived within the expected timeframe after redemption, please reach out to our support team with your redemption details. We will investigate the issue and ensure that you receive your toy promptly.</p>
                                     </div>
