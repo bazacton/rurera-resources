@@ -335,7 +335,7 @@
                                                     </a>
                                                     Upgrade to the Family Premium plan to read the rest of this book and enjoy unlimited access to our entire library.
                                                 </p>
-                                                <a href="#" class="nav-link btn-primary rounded-pill mb-25" id="subscribe-tab" data-toggle="tab" data-target="#subscribe" aria-controls="subscribe" aria-selected="false">
+                                                <a href="#" class="nav-link btn-primary rounded-pill mb-25" id="subscribe-tab" data-toggle="tab" data-target="#subscribe" aria-controls="subscribe">
                                                     Get Rurera
                                                 </a>
                                             </div>
