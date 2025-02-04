@@ -67,7 +67,7 @@
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure><a href="{{url('/')}}/11plus">
-                                <img src="../assets/default/img/11-plus/paper1.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                                <img src="../assets/default/img/11-plus/paper1.png" alt="sats-header" title="sats-header" width="192" height="157" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a>
                             </figure>
                         </div>
@@ -75,115 +75,115 @@
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure><a href="{{url('/')}}/11plus">
-                                <img src="../assets/default/img/11-plus/paper2.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                                <img src="../assets/default/img/11-plus/paper2.png" alt="sats-header" title="sats-header" width="192" height="294" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper3.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper3.png" alt="sats-header" title="sats-header" width="192" height="294" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper4.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper4.png" alt="sats-header" title="sats-header" width="192" height="294" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper5.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper5.png" alt="sats-header" title="sats-header" width="192" height="193" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper6.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper6.png" alt="sats-header" title="sats-header" width="192" height="228" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper1.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper1.png" alt="sats-header" title="sats-header" width="192" height="157" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper2.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper2.png" alt="sats-header" title="sats-header" width="100%" height="294" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper3.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper3.png" alt="sats-header" title="sats-header" width="100%" height="294" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper4.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper4.png" alt="sats-header" title="sats-header" width="100%" height="294" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper5.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper5.png" alt="sats-header" title="sats-header" width="192" height="193" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper6.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper6.png" alt="sats-header" title="sats-header" width="192" height="228" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper1.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper1.png" alt="sats-header" title="sats-header" width="192" height="157" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper2.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper2.png" alt="sats-header" title="sats-header" width="192" height="294" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper3.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper3.png" alt="sats-header" title="sats-header" width="192" height="294" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper4.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper4.png" alt="sats-header" title="sats-header" width="192" height="294" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper5.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper5.png" alt="sats-header" title="sats-header" width="192" height="193" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper6.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper6.png" alt="sats-header" title="sats-header" width="192" height="228" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper3.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper3.png" alt="sats-header" title="sats-header" width="192" height="294" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
-                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper1.png" alt="sats-header" title="sats-header" width="100%" height="auto" itemprop="image" loading="eager"
+                            <figure><a href="{{url('/')}}/11plus"><img src="../assets/default/img/11-plus/paper1.png" alt="sats-header" title="sats-header" width="192" height="157" itemprop="image" loading="eager"
                                         class="rounded has-shadow-x"></a></figure>
                         </div>
                     </div>
