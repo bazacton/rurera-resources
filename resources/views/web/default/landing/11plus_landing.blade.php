@@ -663,7 +663,7 @@
                             </div>
                             <div class="lms-img-holder">
                                 <figure><img class="w-100" src="../assets/default/img/adpative-assessment.jpg"
-                                        alt="company sats" title="company sats" width="100%" height="auto"
+                                        alt="company sats" title="company sats" width="652" height="401"
                                         itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
