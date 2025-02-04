@@ -326,15 +326,19 @@
                     <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion lms-accordion-modern" id="accordion-modern">
                         <div class="card active" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-1">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
-                                    <span itemprop="size">#1</span>Adaptive Assessments Testing
+                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" 
+                                    type="button" data-toggle="collapse" data-target="#collapse-1" 
+                                    aria-expanded="false" aria-controls="collapse-1">
+                                    <span itemprop="size">#1</span> Adaptive Assessments Testing
                                 </button>
                             </div>
-                            <div id="collapse-1" class="collapse show" aria-labelledby="heading-1" data-parent="#accordion-modern">
+                            <div id="collapse-1" class="collapse show" aria-labelledby="heading-1" 
+                                data-parent="#accordion-modern">
                                 <div class="card-body">
                                     <p itemprop="description" class="font-16 font-weight-normal">
-                                        It helps schools to offer adaptive assessments that adjust the difficulty of questions as below, emerging, expected, exceeding and challenge which is based on a student's previous responses, history,
-                                        reports and performance providing a more tailored learning experience.
+                                        It helps schools to offer adaptive assessments that adjust the difficulty of questions as below: 
+                                        emerging, expected, exceeding, and challenge—based on a student's previous responses, history, 
+                                        reports, and performance, providing a more tailored learning experience.
                                     </p>
                                 </div>
                             </div>
