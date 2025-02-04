@@ -196,7 +196,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             <div class="modal-body">
                 <div class="tab-content" id="nav-tabContent2">
-                    <div class="tab-pane fade show active" id="get" role="tabpanel" aria-labelledby="get-tab">
+                    <div class="tab-pane fade show active" id="get" role="tabpanel">
                         <div class="membership-steps-holder">
                             <div class="container">
                                 <div class="row">
@@ -257,7 +257,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="tab-pane fade" id="home" role="tabpanel">
                         <div class="form-login-reading">
                             <div class="container">
                                 <div class="row">
@@ -308,7 +308,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="book" role="tabpanel" aria-labelledby="book-tab">
+                    <div class="tab-pane fade" id="book" role="tabpanel">
                         <div class="book-detail-holder">
                             <div class="container">
                                 <div class="row justify-content-center">
@@ -345,7 +345,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="subscribe" role="tabpanel" aria-labelledby="subscribe-tab">
+                    <div class="tab-pane fade" id="subscribe" role="tabpanel">
                         <div class="subscribe-plan-holder">
                             <div class="container">
                                 <div class="row">
@@ -387,7 +387,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="tab-pane fade" id="contact" role="tabpanel">
                         <div class="book-form-holder">
                             <div class="container">
                                 <div class="row justify-content-center">
