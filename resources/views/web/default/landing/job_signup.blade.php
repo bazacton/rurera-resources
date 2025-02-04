@@ -941,121 +941,119 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <button class="text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <span class="icon-box">
-                                            <svg style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Guide"/><g id="Layer_2"><g><path d="M6,6c0-0.93-0.64-1.71-1.5-1.93V2.5C4.5,2.22,4.28,2,4,2S3.5,2.22,3.5,2.5v1.57C2.64,4.29,2,5.07,2,6s0.64,1.71,1.5,1.93    v5.57C3.5,13.78,3.72,14,4,14s0.5-0.22,0.5-0.5V7.93C5.36,7.71,6,6.93,6,6z M4,7C3.45,7,3,6.55,3,6s0.45-1,1-1s1,0.45,1,1    S4.55,7,4,7z"/><path d="M8.5,9.07V2.5C8.5,2.22,8.28,2,8,2S7.5,2.22,7.5,2.5v6.57C6.64,9.29,6,10.07,6,11s0.64,1.71,1.5,1.93v0.57    C7.5,13.78,7.72,14,8,14s0.5-0.22,0.5-0.5v-0.57c0.86-0.22,1.5-1,1.5-1.93S9.36,9.29,8.5,9.07z M8,12c-0.55,0-1-0.45-1-1    s0.45-1,1-1s1,0.45,1,1S8.55,12,8,12z"/><path d="M14,5c0-0.93-0.64-1.71-1.5-1.93V2.5C12.5,2.22,12.28,2,12,2s-0.5,0.22-0.5,0.5v0.57C10.64,3.29,10,4.07,10,5    s0.64,1.71,1.5,1.93v6.57c0,0.28,0.22,0.5,0.5,0.5s0.5-0.22,0.5-0.5V6.93C13.36,6.71,14,5.93,14,5z M12,6c-0.55,0-1-0.45-1-1    s0.45-1,1-1s1,0.45,1,1S12.55,6,12,6z"/></g></g></svg>
-                                        </span>
-                                        Stage 2 : My preferences and availability
-                                    </button>
-                                    <div class="form-field-counter">
-                                        <span class="counts-bar-box">
-                                            <span class="counts-bar"></span>
-                                        </span>
-                                        <span class="counter-counts"><em>0</em> of 2 tasks</span>
+                                    <div class="card-header" id="headingTwo">
+                                        <button class="text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/job-form-img2.svg" alt="job-form-img2">
+                                            </span>
+                                            Stage 2 : My preferences and availability
+                                        </button>
+                                        <div class="form-field-counter">
+                                            <span class="counts-bar-box">
+                                                <span class="counts-bar"></span>
+                                            </span>
+                                            <span class="counter-counts"><em>0</em> of 2 tasks</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
-                                    <div class="card-body">
-                                        <div class="row">
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+                                        <div class="card-body">
+                                            <div class="row">
 
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                                <div class="checkbox-group">
-                                                    <div class="checkbox-field">
-                                                        <input type="checkbox" id="checkbox1">
-                                                        <label for="checkbox1">Full Time Availability</label>
-                                                    </div>
-                                                    <div class="checkbox-field">
-                                                        <input type="checkbox" id="checkbox2">
-                                                        <label for="checkbox2">Extra-curricular activities</label>
-                                                    </div>
-                                                    <div class="checkbox-field">
-                                                        <input type="checkbox" id="checkbox3">
-                                                        <label for="checkbox3">Meetings and collaboration</label>
-                                                    </div>
-                                                    <div class="checkbox-field">
-                                                        <input type="checkbox" id="checkbox4">
-                                                        <label for="checkbox4">Grade level specialization</label>
-                                                    </div>
-                                                    <div class="checkbox-field">
-                                                        <input type="checkbox" id="checkbox5">
-                                                        <label for="checkbox5">Teaching methods</label>
-                                                    </div>
-                                                    <div class="checkbox-field">
-                                                        <input type="checkbox" id="checkbox6">
-                                                        <label for="checkbox6">Professional development</label>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="checkbox-group">
+                                                        <div class="checkbox-field">
+                                                            <input type="checkbox" id="checkbox1">
+                                                            <label for="checkbox1">Full Time Availability</label>
+                                                        </div>
+                                                        <div class="checkbox-field">
+                                                            <input type="checkbox" id="checkbox2">
+                                                            <label for="checkbox2">Extra-curricular activities</label>
+                                                        </div>
+                                                        <div class="checkbox-field">
+                                                            <input type="checkbox" id="checkbox3">
+                                                            <label for="checkbox3">Meetings and collaboration</label>
+                                                        </div>
+                                                        <div class="checkbox-field">
+                                                            <input type="checkbox" id="checkbox4">
+                                                            <label for="checkbox4">Grade level specialization</label>
+                                                        </div>
+                                                        <div class="checkbox-field">
+                                                            <input type="checkbox" id="checkbox5">
+                                                            <label for="checkbox5">Teaching methods</label>
+                                                        </div>
+                                                        <div class="checkbox-field">
+                                                            <input type="checkbox" id="checkbox6">
+                                                            <label for="checkbox6">Professional development</label>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                                <div class="form-group">
-                                                    <label class="input-label">Explain your availability to teach</label>
-                                                    <div class="input-field">
-                                                        <textarea class="field-textarea" placeholder="Detail here"></textarea>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <label class="input-label">Explain your availability to teach</label>
+                                                        <div class="input-field">
+                                                            <textarea class="field-textarea" placeholder="Detail here"></textarea>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 </div>
                                 <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <button class="text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <span class="icon-box">
-                                            <svg id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
-                                                .st0{fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-                                            </style><g><path class="st0" d="M30.3,3.2v9.5c0,1.2-1,2.2-2.2,2.2H13.3c0-0.2,0-0.4,0-0.6c0-2.3-1.9-4.2-4.2-4.2V3.2c0-1.2,1-2.2,2.2-2.2   h16.8C29.3,1,30.3,2,30.3,3.2z"/><line class="st0" x1="16.6" x2="22.9" y1="5.6" y2="5.6"/><line class="st0" x1="13.8" x2="25.7" y1="10.3" y2="10.3"/><path class="st0" d="M15.1,31H3.4c-0.9,0-1.7-0.7-1.7-1.7l0,0c0-3.3,2.7-6,6-6h3c3.3,0,6,2.7,6,6l0,0C16.7,30.3,16,31,15.1,31z"/><path class="st0" d="M9.2,10.1C6.9,10.1,5,12,5,14.3s1.9,5.9,4.2,5.9s4.2-3.6,4.2-5.9S11.5,10.1,9.2,10.1z"/></g></svg>
-                                        </span>
-                                        Stage 3 : Contact Details
-                                    </button>
-                                    <div class="form-field-counter">
-                                        <span class="counts-bar-box">
-                                            <span class="counts-bar"></span>
-                                        </span>
-                                        <span class="counter-counts"><em>0</em> of 4 tasks</span>
+                                    <div class="card-header" id="headingThree">
+                                        <button class="text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/job-form-user.svg" alt="job-form-user">
+                                            </span>
+                                            Stage 3 : Contact Details
+                                        </button>
+                                        <div class="form-field-counter">
+                                            <span class="counts-bar-box">
+                                                <span class="counts-bar"></span>
+                                            </span>
+                                            <span class="counter-counts"><em>0</em> of 4 tasks</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample2">
-                                    <div class="card-body">
-                                        <div class="row">
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample2">
+                                        <div class="card-body">
+                                            <div class="row">
 
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                                <div class="form-group">
-                                                    <label class="input-label">First and last name</label>
-                                                    <div class="input-field">
-                                                        <input type="text" placeholder="">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <label class="input-label">First and last name</label>
+                                                        <div class="input-field">
+                                                            <input type="text" placeholder="">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                                <div class="form-group">
-                                                    <label class="input-label">E-mail</label>
-                                                    <div class="input-field">
-                                                        <input type="text" placeholder="">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <label class="input-label">E-mail</label>
+                                                        <div class="input-field">
+                                                            <input type="text" placeholder="">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                                <div class="form-group">
-                                                    <label class="input-label">Mobile/messenger ID</label>
-                                                    <div class="input-field">
-                                                        <input type="text" placeholder="">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <label class="input-label">Mobile/messenger ID</label>
+                                                        <div class="input-field">
+                                                            <input type="text" placeholder="">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                                <div class="form-group">
-                                                    <label class="input-label">Tell us about yourself and why you feel your a good
-                                                        fit</label>
-                                                    <div class="input-field">
-                                                        <textarea class="field-textarea" placeholder="Detail here"></textarea>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <label class="input-label">Tell us about yourself and why you feel your a good
+                                                            fit</label>
+                                                        <div class="input-field">
+                                                            <textarea class="field-textarea" placeholder="Detail here"></textarea>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 </div>
                             </div>
                             <div class="form-group text-right mb-0 mt-20">
