@@ -711,10 +711,13 @@
             //$(".curriculum-item-data#collapseItems"+level_id).addClass('show');
             //$(".curriculum-item-data#collapseItems"+level_id).addClass('show');
             $(".curriculum-item-data#collapseItems"+level_id).find('.book-dropzone').addClass('active');
+            $(".curriculum-item-data#collapseItems"+level_id).find('.book-dropzone').click();
             $('.book-dropzone.active').closest('.editor-zone').find('.stage_settings-tab').click();
             flowChartInitialize();
 
         });
+		
+		$(".accordion-row.active").click();
 
         $('body').on('click', '.delete-parent-li', function (e) {
 
