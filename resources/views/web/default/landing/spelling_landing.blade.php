@@ -607,8 +607,7 @@
                                             <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">What types of vocabulary resources does Rurera provide?</button>
                                         </h3>
                                     </div>
-                                    <div id="collapsesix" class="collapse" aria-labelledby="heading6"
-                                        data-parent="#accordion">
+                                    <div id="collapsesix" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
                                         <div class="card-body">
                                             <p>Rurera offers a comprehensive curriculum based Word Directory, custom word lists, and sets to expand your child’s word knowledge. These resources are tailored to meet individual learning needs and interests.</p>
                                         </div>
@@ -616,9 +615,7 @@
                                 </div>
                                 <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingTwo">
-                                        <h3 class="mb-0"><button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse"
-                                                data-target="#collapseTwo" aria-expanded="false"
-                                                aria-controls="collapseTwo"> What is the importance of vocabulary in language learning?</button></h3>
+                                        <h3 class="mb-0"><button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> What is the importance of vocabulary in language learning?</button></h3>
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                         data-parent="#accordion">
@@ -793,8 +790,7 @@
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                 <div class="modal-body">
-                    <div class="tab-content subscription-content" id="nav-tabContent">
-                    </div>
+                    <div class="tab-content subscription-content" id="nav-tabContent"></div>
                 </div>
             </div>
         </div>
