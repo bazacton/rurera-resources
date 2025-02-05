@@ -20,16 +20,7 @@
             <div class="col-12 col-lg-6 text-right">
                 <div class="home-sections home-sections-swiper container reward-program-section position-relative mt-0" style="background: none;">
                     <div class="position-relative reward-program-section-hero-card">
-                        <img
-                            src="/store/1/default_images/home_sections_banners/club_points_banner.png"
-                            class="reward-program-section-hero"
-                            alt="Win Club Points"
-                            title="Win Club Points"
-                            width="570"
-                            height="406"
-                            itemprop="image"
-                            loading="eager"
-                        />
+                        <img src="/store/1/default_images/home_sections_banners/club_points_banner.png" class="reward-program-section-hero" alt="Win Club Points" title="Win Club Points" width="570" height="406" itemprop="image" loading="eager" />
                         <div class="example-reward-card rounded-sm shadow-lg p-5 p-md-15 d-flex align-items-center" style="background-color: #f60;">
                             <div class="example-reward-card-medal">
                                 <img src="/assets/default/img/rewards/medal.png" class="img-cover rounded-circle" alt="medal" title="medal" width="512" height="512" itemprop="image" loading="eager" />
