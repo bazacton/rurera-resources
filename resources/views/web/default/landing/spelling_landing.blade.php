@@ -5,11 +5,9 @@
     .lms-search-services {
         background-color: #f27530;
     }
-
     .lms-column-section {
         background-color: #7679ee;
     }
-
     .choose-sats-section {
         background-color: #3d358b;
     }
@@ -23,11 +21,9 @@
             <div class="row h-100">
                 <div class="col-12 col-md-12 col-lg-6">
                     <h1 class="font-72 font-weight-bold">Inspiring <span class="text-scribble mr-10">Kids</span> to Love Words and Spelling!</h1>
-                    <h2 class="mb-15 font-30">Discover a fun and simple way to Master English spelling!
-                    </h2>
+                    <h2 class="mb-15 font-30">Discover a fun and simple way to Master English spelling!</h2>
                     <p class="font-19">
                         We help kids build a strong foundation in spelling and vocabulary with engaging, interactive lessons based on British English. Our fun approach makes learning spelling and word usage enjoyable and effective.
-
                     </p>
                     <ul class="mb-0 p-0">
                         <li class="mb-10 font-19">
@@ -35,7 +31,6 @@
                         </li>
                         <li class="mb-10 font-19">
                             <img src="../assets/default/svgs/preparation.svg" width="25" height="25" alt="#">Spelling Quizzes: Fun and interactive quizzes.
-
                         </li>
                         <li class="mb-10 font-19">
                             <img src="../assets/default/svgs/graphic-design.svg" width="25" height="25" alt="#">Win Rewards: Earn rewards for milestones.
@@ -60,7 +55,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -70,7 +64,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -80,7 +73,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -90,7 +82,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -100,7 +91,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -110,7 +100,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -120,7 +109,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -130,7 +118,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -140,7 +127,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -150,7 +136,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -160,7 +145,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -170,7 +154,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -180,7 +163,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -190,7 +172,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -200,7 +181,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -210,7 +190,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -220,7 +199,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -230,7 +208,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -240,7 +217,6 @@
                             </figure>
                         </div>
                     </div>
-
                     <div class="grid-item col-lg-3 col-md-4 col-sm-4">
                         <div class="img-holder">
                             <figure>
@@ -250,7 +226,6 @@
                             </figure>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -412,7 +387,6 @@
                         <h2 class="font-40 text-dark">Audio Pronunciations</h2>
                         <p class="font-16 text-gray mt-10">
                             Improve pronunciation and listening skills with Rurera’s Audio Pronunciations. Hear words spoken clearly, and master phonemic awareness by learning the correct sounds, helping kids grasp the building blocks of language more effectively.
-
                         </p>
                     </div>
                 </div>
@@ -453,7 +427,6 @@
                         <h2 class="font-40 text-dark">Progress Rewards</h2>
                         <p class="font-16 text-gray mt-10">
                             Celebrate your achievements with Rurera’s Progress Rewards. Earn rewards as you hit milestones and make improvements, keeping motivation high and recognizing your hard work along the way.
-
                         </p>
                     </div>
                     <div class="flex-grow-1 ml-15"></div>
@@ -473,10 +446,8 @@
             </div>
         </div>
     </section>
-
 	{{do_shortcode('redefining_personalized_learning', array('heading' => "Achieve Success with Rurera’s Key Features.", 'description' => "Rurera provides powerful resources that align with student’s specific interests and learning goals.", 'items' => array(10,6,15,17,19)))}}
     
-
     <section class="lms-column-section lms-accordion-section w-100 pb-60 pt-60" style="background-color: #f6f0ea; max-width: 100%;">
         <div class="container">
             <div class="row">
@@ -747,9 +718,7 @@
                                     </div>
                                     <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
                                         <div class="card-body">
-                                            <p>For the best results, practice regularly aim for a few times a week. Consistent practice helps reinforce your spelling skills and improve over time.
-
-                                            </p>
+                                            <p>For the best results, practice regularly aim for a few times a week. Consistent practice helps reinforce your spelling skills and improve over time.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -766,8 +735,7 @@
                 <div class="col-12 col-lg-7 col-md-7">
                     <div class="section-title mb-50">
                         <h2 class="font-40 text-white">Parent account</h2>
-                        <p class="font-16 font-weight-500 text-white">We make it easy to be involved in your child’s learning
-                            Ability to assign activities</p>
+                        <p class="font-16 font-weight-500 text-white">We make it easy to be involved in your child’s learning Ability to assign activities</p>
                     </div>
                     <ul>
                         <li><span class="font-18">Real-Time diagnostics</span></li>
@@ -814,9 +782,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12 col-12 mx-auto">
                     <div class="row">
-
                         @include('web.default.pricing.packages_list',['subscribes' => array(), 'packages_only' => $packages_only, 'show_details' => false])
-
                     </div>
                 </div>
             </div>
@@ -833,7 +799,6 @@
             </div>
         </div>
     </div>
-
 </section>
 @endsection
 
