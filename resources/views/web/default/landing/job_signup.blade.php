@@ -81,87 +81,87 @@
     </div>
 </section>
 <div class="lms-job-search">
-<section class="lms-search-services mb-0 pt-0 has-no-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-title text-center mb-50">
-                    <h2 itemprop="title" class="mt-0 mb-10 font-40">Hiring<span class="text-scribble ml-10">Process</span></h2>
-                    <p itemprop="description">Interested candidates can submit their applications and can apply jobs. The hiring team will review the received <br> resumes and shortlist candidates based on their qualifications, relevant experience, and skills.</p>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="process-holder">
-                    <ul itemprop="process"  class="process-list d-flex justify-content-center">
-                        <li itemprop="item" class="process-item">
-                            <a href="#.">step 1</a>
-                        </li>
-                        <li itemprop="item" class="process-item">
-                            <a href="#.">step 2</a>
-                        </li>
-                        <li itemprop="item" class="process-item">
-                            <a href="#.">step 3</a>
-                        </li>
-                        <li itemprop="item" class="process-item">
-                            <a href="#.">step 4</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                <div class="process-card mt-40 mb-30 text-center">
-                    <div class="process-step-number">
-                        <span>Step 1</span>
+    <section class="lms-search-services mb-0 pt-0 has-no-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center mb-50">
+                        <h2 itemprop="title" class="mt-0 mb-10 font-40">Hiring<span class="text-scribble ml-10">Process</span></h2>
+                        <p itemprop="description">Interested candidates can submit their applications and can apply jobs. The hiring team will review the received <br> resumes and shortlist candidates based on their qualifications, relevant experience, and skills.</p>
                     </div>
-                    <div class="process-card-body">
-                        <div class="text-holder">
-                            <h2 itemprop="title" class="post-title">Fill Application</h2>
-                            <p itemprop="description" class="mt-15">thoroughly with personal info, work experience, and qualifications.</p>
+                </div>
+                <div class="col-12">
+                    <div class="process-holder">
+                        <ul itemprop="process"  class="process-list d-flex justify-content-center">
+                            <li itemprop="item" class="process-item">
+                                <a href="#.">step 1</a>
+                            </li>
+                            <li itemprop="item" class="process-item">
+                                <a href="#.">step 2</a>
+                            </li>
+                            <li itemprop="item" class="process-item">
+                                <a href="#.">step 3</a>
+                            </li>
+                            <li itemprop="item" class="process-item">
+                                <a href="#.">step 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="process-card mt-40 mb-30 text-center">
+                        <div class="process-step-number">
+                            <span>Step 1</span>
+                        </div>
+                        <div class="process-card-body">
+                            <div class="text-holder">
+                                <h2 itemprop="title" class="post-title">Fill Application</h2>
+                                <p itemprop="description" class="mt-15">thoroughly with personal info, work experience, and qualifications.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                <div class="process-card mt-40 mb-30 text-center">
-                    <div class="process-step-number">
-                        <span>Step 2</span>
-                    </div>
-                    <div class="process-card-body">
-                        <div class="text-holder">
-                            <h2 itemprop="title" class="post-title">Get Shortlisted</h2>
-                            <p itemprop="description" class="mt-15">if you meet requirements, stay informed about next steps.</p>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="process-card mt-40 mb-30 text-center">
+                        <div class="process-step-number">
+                            <span>Step 2</span>
+                        </div>
+                        <div class="process-card-body">
+                            <div class="text-holder">
+                                <h2 itemprop="title" class="post-title">Get Shortlisted</h2>
+                                <p itemprop="description" class="mt-15">if you meet requirements, stay informed about next steps.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                <div class="process-card mt-40 mb-30 text-center">
-                    <div class="process-step-number">
-                        <span>Step 3</span>
-                    </div>
-                    <div class="process-card-body">
-                        <div class="text-holder">
-                            <h2 itemprop="title" class="post-title">Prepare For Interview</h2>
-                            <p itemprop="description" class="mt-15">research company, practice common questions, show enthusiasm.</p>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="process-card mt-40 mb-30 text-center">
+                        <div class="process-step-number">
+                            <span>Step 3</span>
+                        </div>
+                        <div class="process-card-body">
+                            <div class="text-holder">
+                                <h2 itemprop="title" class="post-title">Prepare For Interview</h2>
+                                <p itemprop="description" class="mt-15">research company, practice common questions, show enthusiasm.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                <div class="process-card mt-40 mb-30 text-center">
-                    <div class="process-step-number">
-                        <span>Step 4</span>
-                    </div>
-                    <div class="process-card-body">
-                        <div class="text-holder">
-                            <h2 itemprop="title" class="post-title">Get Hired</h2>
-                            <p itemprop="description" class="mt-15">await official offer letter, join our team. Congratulations!</p>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="process-card mt-40 mb-30 text-center">
+                        <div class="process-step-number">
+                            <span>Step 4</span>
+                        </div>
+                        <div class="process-card-body">
+                            <div class="text-holder">
+                                <h2 itemprop="title" class="post-title">Get Hired</h2>
+                                <p itemprop="description" class="mt-15">await official offer letter, join our team. Congratulations!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
     <div class="stats-container mb-50 pb-10 pt-20">
         <div class="container">
@@ -266,7 +266,6 @@
                                 <div class="card-body">
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and experienced Senior Software Developer to join our dynamic team. As a Senior Software Developer, you will be responsible for designing, developing, and implementing high-quality software solutions. You will collaborate with cross-functional teams to analyze user requirements, create technical specifications, and deliver robust software applications.</p>
-                                
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Design, develop, and maintain efficient and scalable software solutions in accordance with project requirements and coding standards.</li>
@@ -285,19 +284,14 @@
                                         <li>In-depth knowledge of software development principles, methodologies, and best practices.</li>
                                         <li>Experience with front-end and back-end development, including web development frameworks, APIs, and databases.</li>
                                         <li>Familiarity with Agile/Scrum development methodologies and tools (e.g., JIRA, Confluence).</li>
-                                        
                                         <li>Excellent problem-solving and analytical skills, with the ability to quickly understand complex systems and troubleshoot issues. </li>
-                                       
                                         <li>Strong communication and collaboration skills, with the ability to effectively convey technical concepts to both technical and non-technical stakeholders.</li>
                                         <li>Proven ability to work on multiple projects simultaneously and deliver high-quality results within deadlines.</li>
                                         <li>A passion for continuous learning and staying up-to-date with emerging technologies and industry trends.</li>
                                     </ul>
-
                                     <p itemprop="description">Join our team and contribute to the development of innovative and impactful software solutions. As a Senior Software Developer, you will have the opportunity to make a significant impact, lead technical initiatives, and contribute to the growth and success of our organization.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
@@ -314,7 +308,6 @@
                                 <div class="card-body">
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and experienced Database Administrator to join our team. As a Database Administrator, you will be responsible for the performance, integrity, and security of our databases. You will work closely with software developers, system administrators, and other stakeholders to ensure the efficient operation of our database systems.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Install, configure, and maintain database management systems (DBMS) to ensure optimal performance, availability, and security.</li>
@@ -342,10 +335,8 @@
                                         <li>Strong communication and collaboration skills, with the ability to work effectively with cross-functional teams.</li>
                                     </ul>
                                     <p itemprop="description">In summary, as a Database Administrator, you will play a crucial role in designing, implementing, and maintaining efficient and secure database systems. You will monitor performance, troubleshoot issues, optimize queries, ensure data integrity, and collaborate with various stakeholders to meet the organization's data management needs.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                   
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
@@ -360,10 +351,8 @@
                             </div>
                             <div id="collapse_3" class="collapse" aria-labelledby="heading_3" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and experienced Math Assessment Specialist to join our team. As a Math Assessment Specialist, you will play a crucial role in developing and implementing effective math assessment strategies and materials. You will work closely with curriculum developers, educators, and other stakeholders to ensure high-quality math assessments that align with educational standards.</p>
-                                
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Design and develop math assessment materials, including test items, rubrics, scoring guides, and performance tasks.</li>
@@ -372,9 +361,7 @@
                                         <li>Review and analyze existing math assessments to identify areas for improvement and make necessary revisions.</li>
                                         <li>Develop assessment blueprints and item specifications to guide the creation of math assessments.</li>
                                         <li>Ensure that math assessments are valid, reliable, and appropriately measure students' math knowledge and skills.</li>
-                                        
-                                        <li>Collaborate with subject matter experts and educators to gather feedback on assessments and incorporate their insights.
-                                        </li>
+                                        <li>Collaborate with subject matter experts and educators to gather feedback on assessments and incorporate their insights.</li>
                                         <li>Conduct item analysis and statistical analysis of assessment data to evaluate item quality and inform future improvements.</li>
                                         <li>Provide insights and recommendations based on assessment data to inform instructional decisions and improve teaching practices.</li>
                                         <li>Generate reports and visualizations to communicate assessment findings to educators, administrators, and other stakeholders.</li>
@@ -393,10 +380,8 @@
                                         
                                     </ul>
                                     <p itemprop="description">We offer a competitive salary and benefits package. This is an exciting opportunity to contribute to the improvement of math education through the development and analysis of high-quality assessments. Join our team and make a positive impact on students' learning outcomes.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
