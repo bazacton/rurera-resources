@@ -91,18 +91,7 @@
               </p>
               <div class="lms-btn-group mt-30">
                 <a href="{{url('/')}}/register" class="lms-btn rounded-pill"
-                  >Get Started<span class="svg-icon"
-                    ><svg
-                      width="10"
-                      height="14"
-                      viewBox="0 0 9 7"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M4.628.616a.5.5 0 1 0-.64.768L6.203 3.23H.5a.5.5 0 0 0 0 1h5.612L3.988 6a.5.5 0 1 0 .64.769l3.23-2.693a.5.5 0 0 0 0-.768L4.628.616z"
-                      ></path></svg></span
+                  >Get Started<span class="svg-icon"></span
                 ></a>
               </div>
             </div>
@@ -112,9 +101,7 @@
     </div>
   </div>
 </section>
-<section
-  class="home-sections home-sections-swiper find-instructor-section find-instructor-testimonial position-relative mt-20"
->
+<section class="home-sections home-sections-swiper find-instructor-section find-instructor-testimonial position-relative mt-20">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-12 col-lg-12 mb-50">
@@ -151,7 +138,6 @@
     </div>
   </div>
 </section>
-
 <section class="home-sections home-sections-swiper find-instructor-section find-instructor-testimonial position-relative pb-sm-0">
   <div class="container">
     <div class="row align-items-center">
@@ -167,7 +153,7 @@
           <div class="find-instructor-circle">
             <span itemprop="number" class="lms-serial-no">#2</span>
           </div>
-            <p itemprop="datePublished" content="2023-06-05">Experienced Teacher / 30 May 2023</p>
+          <p itemprop="datePublished" content="2023-06-05">Experienced Teacher / 30 May 2023</p>
           <h3 itemprop="title" class="font-36 font-weight-bold text-dark">Peter J.</h3>
           <p itemprop="description" class="font-16 font-weight-normal text-gray mt-10">One of the standout features of Rurera is its assessment and analytics capabilities. It provides real-time data on student performance, allowing me to track their progress and identify areas where additional support is needed.</p>
         </div>
