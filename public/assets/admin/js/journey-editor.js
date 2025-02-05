@@ -118,6 +118,8 @@ $(document).on('click', '.path-tool-item', function () {
 $(document).on('click', '.layout-template-item', function () {
     var target_layout = $(this).attr('data-target_layout');
 
+    $(".layout-template-item").removeClass('active');
+    $(this).addClass('active');
     //template_layout
     var template_layout_data = template_layout[target_layout];
     var item_counter = 1;
@@ -132,8 +134,6 @@ $(document).on('click', '.layout-template-item', function () {
     });
 	
 	
-    $(".layout-template-item").removeClass('active');
-    $(this).addClass('active');
 
 });
 
