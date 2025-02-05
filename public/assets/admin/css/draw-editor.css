@@ -154,6 +154,7 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
     top: 50%;
     transform: translateY(-50%);
     cursor: grab;
+    z-index: 1;
 }
 .book-dropzone .drop-item.spacer-block .field-data {
     text-align: center;
