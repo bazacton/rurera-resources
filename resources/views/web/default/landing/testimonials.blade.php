@@ -91,7 +91,7 @@
               </p>
               <div class="lms-btn-group mt-30">
                 <a href="{{url('/')}}/register" class="lms-btn rounded-pill"
-                  >Get Started<span class="svg-icon"></span
+                  >Get Started<span class="svg-icon"><img src="/assets/default/svgs/btn-right-arrow.svg" alt="btn-right-arrow"></span
                 ></a>
               </div>
             </div>
