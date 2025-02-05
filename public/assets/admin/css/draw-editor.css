@@ -137,10 +137,12 @@ body .editor-objects-list li {background-color: #f8f8f8; border: 1px solid #ccc;
 .editor-controls-holder .layout-template-item {background-color: #fafafa; border: 1px solid #ccc; padding: 5px 15px; display: inline-block; line-height: normal; border-radius: 3px; text-decoration: none;}
 .editor-controls-holder .path-tool-item.active,
 .editor-controls-holder .layout-template-item.active {border-color: #9acbff; background-color: #f3f9ff; color: var(--blue);}
-.book-dropzone .drop-item {background-color: inherit;
+.book-dropzone .drop-item {
+    background: none;
     border: 1px solid transparent;
     border-radius: 5px;
-    background-image: none;}
+    background-image: none;
+}
 .book-dropzone .drop-item.active{border-color: #ddd; opacity: 1;}
 .book-dropzone .field-data svg {height: 100%;}
 .book-dropzone .ui-rotatable-handle {top: -5px; left: -5px; pointer-events: none; opacity: 0; visibility: hidden;}
