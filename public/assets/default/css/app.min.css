@@ -298,13 +298,7 @@ Front-end Login Style Start
 .welcome-login-box {background-color: #f5586d; height: 100%; padding: 25px; color: #fff; text-align: center; min-height: 340px; display: flex; flex-direction: column; align-items: center; justify-content: center;}
 .welcome-login-box h2 {margin: 0 0 15px; font-size: 30px;}
 .welcome-login-box span {display: block; line-height: normal; margin-bottom: 30px;}
-.welcome-login-box .signup-btn {
-  border: 1px solid rgba(255,255,255,0.5);
-  padding: 8px 30px;
-  display: inline-block;
-  border-radius: 20px;
-  color: #fff;
-}
+.welcome-login-box .signup-btn {border: 1px solid rgba(255,255,255,0.5); padding: 8px 30px; display: inline-block; border-radius: 20px; color: #fff;}
 /********************************
 Front-end Login Style End
 *********************************/
@@ -648,9 +642,7 @@ Sats Preparation Page Style Start
 .lms-column-section .accordion .card-body p {font-size: 18px; color: #151824;}
 .lms-column-section .accordion .btn {justify-content: flex-start; height: auto; border-radius: 0; text-decoration: none; padding: 20px 20px; border-radius: 6px;}
 .lms-column-section .lms-text-holder {gap: 15px;}
-.lms-text-holder:has(.icon-svg) p {
-    padding-left: 50px;
-}
+.lms-text-holder:has(.icon-svg) p {padding-left: 50px;}
 /*lms Column Section Style End*/
 
 /*Find-Instructor Section Style Start*/
@@ -1784,9 +1776,7 @@ body .flipbook-data {height: 68%; transform: scale(1.5); margin-top: 280px;}
 .lms-social-rating .reviews-count em {font-style: normal;}
 .lms-social-rating a {display: inline-block;}
 .lms-social-rating .rating-holder {display: inline-flex; flex-direction: column; gap: 30px;}
-.lms-choose-membership .tab-pane {
-    padding-top: 50px;
-}
+.lms-choose-membership .tab-pane {padding-top: 50px;}
 /*Lms Choose Membership Model Style End*/
 
 /*Price-Packages Leave-Option Modal Style Start*/
