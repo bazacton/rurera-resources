@@ -31,7 +31,16 @@
 .draggable-content-lists li.active .chapter-icon svg,
 .draggable-content-lists li.active .feather-chevron-up,
 .draggable-content-lists li.active .cursor-pointer {color: cadetblue; stroke: cadetblue;}
-.stage-accordion .cursor-pointer {white-space: nowrap; line-height: normal; font-size: 14px; color: #999; font-weight: 600 !important;}
+.stage-accordion .cursor-pointer {
+    line-height: normal;
+    font-size: 14px;
+    color: #999;
+    font-weight: 600 !important;
+    width: 10ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .draggable-content-lists li .btn {padding: 4px; margin: 0; background-color: rgba(0, 0, 0, 0.05); width: 20px; height: 20px;}
 .draggable-content-lists li .btn:hover {background-color: rgba(0, 0, 0, 0.05) !important;}
 .draggable-content-lists li .btn svg {color: #999; height: 12px; width: 12px; margin: 0 !important;}
