@@ -162,10 +162,10 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
     flex-direction: column;
     position: relative;
 }
-.drop-item.spacer-block .drop-item .remove {
+.drop-item.spacer-block .remove {
     margin-bottom: 5px;
 }
-.drop-item.spacer-block .drop-item .remove span {
+.drop-item.spacer-block .remove span {
     margin: 0 !important;
 }
 .book-dropzone .drop-item.spacer-block .field-data .flowchart-operator-inputs-outputs {margin-left: 0;margin-right: 0;display: inline-block;}
