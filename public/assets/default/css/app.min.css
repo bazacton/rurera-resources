@@ -287,42 +287,14 @@ Front-end Login Style Start
 .login-holder .login-options {display: flex; flex-wrap: wrap; gap: 15px;}
 .login-holder .login-options .social-login {min-height: 90px; margin-bottom: 0; max-width: 49%; flex: 0 0 49%;}
 .social-login:hover {background-color: #f1f1f1; transition: all .3s ease;}
-.login-option-tabs .nav-tabs {
-  border: 0;
-  width: auto;
-  display: inline-flex;
-}
-.login-option-tabs .nav-tabs button {
-  background-color: inherit;
-  border-right: 1px solid #ececec;
-  border-top: 1px solid #ececec;
-  border-radius: 0;
-  padding: 10px 25px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-.login-option-tabs .nav-tabs .nav-link.active {
-  color: var(--blue);
-}
-.login-option-tabs .nav-tabs .nav-link.active:hover {
-  border-bottom-color: transparent;
-}
-.login-option-tabs .nav-tabs li:first-child button {
-  border-radius: 6px 0 0 0;
-  border-left: 1px solid #ececec;
-}
-.login-option-tabs .nav-tabs .nav-link:hover {
-  border-color: #ececec;
-}
-.login-option-tabs .nav-tabs button img {
-  border-radius: 0;
-  height: 28px;
-  width: 28px;
-}
-.login-holder [class*="col-"] {
-  height: 100%;
-}
+.login-option-tabs .nav-tabs {border: 0; width: auto; display: inline-flex;}
+.login-option-tabs .nav-tabs button {background-color: inherit; border-right: 1px solid #ececec; border-top: 1px solid #ececec; border-radius: 0; padding: 10px 25px; display: inline-flex; align-items: center; gap: 10px;}
+.login-option-tabs .nav-tabs .nav-link.active {color: var(--blue);}
+.login-option-tabs .nav-tabs .nav-link.active:hover {border-bottom-color: transparent;}
+.login-option-tabs .nav-tabs li:first-child button {border-radius: 6px 0 0 0; border-left: 1px solid #ececec;}
+.login-option-tabs .nav-tabs .nav-link:hover {border-color: #ececec;}
+.login-option-tabs .nav-tabs button img {border-radius: 0; height: 28px; width: 28px;}
+.login-holder [class*="col-"] {height: 100%;}
 .welcome-login-box {
   background-color: #f5586d;
   height: 100%;
