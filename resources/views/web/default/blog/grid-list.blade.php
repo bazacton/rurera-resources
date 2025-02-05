@@ -4,7 +4,6 @@
             <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
             <span  itemprop="datePublished" content="2023-04-05T08:00:00+08:00">{{ dateTimeFormat($post->created_at, 'j M Y') }}</span>
         </span>
-
         <h2 class="blog-grid-title mt-10" itemprop="headline">
             <a itemprop="url" href="{{ $post->getUrl() }}">{{ $post->title }}</a>
         </h2>
@@ -14,10 +13,7 @@
             if( !empty( $meta_description ) ){
 
             }
-
         @endphp
-
-
     </div>
     <div class="blog-grid-image lazyload-img">
         <img src="/assets/default/img/buller-img.png" class="img-sm" alt="{{ $post->title }}" title="{{ $post->title }}" width="20" height="21" itemprop="image" loading="eager">
