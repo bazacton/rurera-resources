@@ -138,25 +138,25 @@
     <section class="lms-newsletter blog-newsletter mt-70">
         <div class="container">
             <div class="row">
-            <div class="col-12">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-12 col-lg-5 col-md-7">
-                        <div class="section-title">
-                            <h2 class="mb-15 text-white font-40">Ready to start learning <br /> using Rurera</h2>
-                            <p class="mb-0 text-white">Determine what skills or knowledge you want to acquire or improve upon selecting the appropriate learning platform.</p>
+                <div class="col-12">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-12 col-lg-5 col-md-7">
+                            <div class="section-title">
+                                <h2 class="mb-15 text-white font-40">Ready to start learning <br /> using Rurera</h2>
+                                <p class="mb-0 text-white">Determine what skills or knowledge you want to acquire or improve upon selecting the appropriate learning platform.</p>
+                            </div>
+                        <div class="lms-btn-group mt-30 "><a href="{{url('/')}}/register" class="lms-btn rounded-pill text-white border-white">Signup</a></div>
                         </div>
-                    <div class="lms-btn-group mt-30 "><a href="{{url('/')}}/register" class="lms-btn rounded-pill text-white border-white">Signup</a></div>
+                        <div class="col-12 col-lg-7 col-md-7">
+                            <div class="svg-holder">
+                                <span class="icon-svg">
+                                    <img class="w-100" src="../assets/default/svgs/blog-newsletter.svg" alt="default newsletter" title="default newsletter" width="689" height="463" loading="eager" />
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-7 col-md-7">
-                        <div class="svg-holder">
-                            <span class="icon-svg">
-                                <img class="w-100" src="../assets/default/svgs/blog-newsletter.svg" alt="default newsletter" title="default newsletter" width="689" height="463" loading="eager" />
-                            </span>
-                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
             </div>
         </div>
     </section>
