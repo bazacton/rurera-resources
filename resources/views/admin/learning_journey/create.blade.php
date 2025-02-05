@@ -665,7 +665,20 @@
 <script src="/assets/admin/js/journey-editor.js?ver={{$rand_id}}"></script>
 <script src="/assets/admin/vendor/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
 <script type="text/javascript">
+		function check_stages(){
+		  if($(".jounry-stages-lis li").length > 1){
+			  $(".jounry-stages-lis").find('.delete-parent-li').removeClass('rurera-hide');
+			  $(".jounry-stages-lis").find('.feather-move').removeClass('rurera-hide');
+		  }else{
+			  $(".jounry-stages-lis").find('.delete-parent-li').addClass('rurera-hide');
+			  $(".jounry-stages-lis").find('.feather-move').addClass('rurera-hide');
+		  }
+	   }
     $(document).ready(function () {
+		
+		
+		check_stages();
+		  
 		$(".editor-objects-list").sortable();
 		//$('.saved-item-class').click();
 
@@ -722,6 +735,7 @@
         $('body').on('click', '.delete-parent-li', function (e) {
 
             $(this).closest('li').remove();
+			check_stages();
         });
 
 
@@ -768,6 +782,7 @@
                         sorting_render();
 
                     handleTopicsMultiSelect2('search-topics-select2', '/admin/chapters/search', ['class', 'course', 'subject', 'title']);
+					check_stages();
                 }
             });
         });
@@ -1344,6 +1359,9 @@
     };
 
       defaultFlowchartData = {};
+	  
+	  
+	  
 
 
 
