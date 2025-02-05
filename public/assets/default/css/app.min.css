@@ -2423,6 +2423,7 @@ Lms Masonry Style End
 .about-sub-header .lms-btn-group .lms-btn .svg-icon svg {fill:var(--primary);font-size:20px;width:15px;height:15px;display:flex;margin-left:10px;}
 .testimonials-fancy-bg .lms-btn-group{justify-content: center;}
 .testimonials-fancy-bg .lms-text-holder .lms-btn-group .lms-btn .svg-icon img {filter: invert(37%) sepia(62%) saturate(3127%) hue-rotate(222deg) brightness(101%) contrast(98%); margin-left: 10px; vertical-align: middle;}
+.testimonials-fancy-bg .lms-text-holder .lms-btn-group .lms-btn span {line-height: 12px;}
 body{overflow-x: hidden;}
 .testimonial-card p {color: #818894;margin: 0 0 15px;font-size: 17px;padding: 0;}
 .testimonial-card .lms-rating-star {margin: 0 0 10px;}
