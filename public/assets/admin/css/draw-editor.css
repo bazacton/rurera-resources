@@ -133,7 +133,7 @@ body .editor-objects-list li {background-color: #f8f8f8; border: 1px solid #ccc;
     right: -5px;
 }
 body .flowchart-operator {border: 0;}
-body .ui-rotatable-handle::before {font-size: 10px; font-family: "Font Awesome 5 Free";}
+body .ui-rotatable-handle::before {font-size: 10px; content: "\f0e2"; font-family: "Font Awesome 5 Free";}
 @media (max-width: 992px) {
     body .editor-controls-holder {min-width: 375px; max-width: 375px;}
     body .editor-zone:has(.field-options) {padding-left: 0;}
