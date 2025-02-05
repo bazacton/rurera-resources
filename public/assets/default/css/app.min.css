@@ -3013,10 +3013,8 @@ Choose Plan Style End
 .lms-jobs-form.lms-contact-form .input-field textarea {height: 150px;}
 .lms-contact-form-tabs .nav-tabs {border: 0;margin: 0 0 30px;}
 .lms-contact-form-tabs .nav-tabs .nav-link {position: relative;background-color: inherit;border: 0;border-radius: 0;padding: 0;margin-right: 30px;font-size: 22px;font-weight: 500;}
-
 /*Lms Jobs Form Style End*/
 /*****************************
-
 
 /* Rewards Style Start */
 .rewards-header {background-color: #f4f4f4;}
@@ -3275,13 +3273,10 @@ span.review-label {line-height: normal;}
 
 .lazyload-img {filter: blur(10px);}
 .lazyload-img.loaded {filter: blur(0);}
-
 .lazyload-img .img-sm {display: block;}
 .lazyload-img .img-lg {display: none;}
-
 .lazyload-img.loaded .img-lg {display: block;}
 .lazyload-img.loaded .img-sm {display: none;}
-
 /*********************************
 Parent Account Style Start
 **********************************/
