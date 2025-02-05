@@ -883,8 +883,7 @@
         $packages_only = isset( $packages )? $packages : array();
         $show_details = isset( $show_details )? $show_details : true;
     @endphp
-    <section class="lms-setup-progress-section lms-membership-section mb-0 pt-70 pb-60"
-             data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
+    <section class="lms-setup-progress-section lms-membership-section mb-0 pt-70 pb-60" data-currency_sign="{{getCurrencySign()}}" style="background-color: #fff;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12 text-center">
@@ -898,10 +897,10 @@
                         <div class="plan-switch-option">
                             <span class="switch-label">Pay Monthly</span>
                             <div class="plan-switch">
-                                <div class="custom-control custom-switch"><input type="checkbox" name="disabled"
-                                                                                 class="custom-control-input subscribed_for-field" value="12"
-                                                                                 id="iNotAvailable" /><label class="custom-control-label"
-                                                                                                             for="iNotAvailable"></label></div>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" name="disabled" class="custom-control-input subscribed_for-field" value="12" id="iNotAvailable" />
+                                    <label class="custom-control-label" for="iNotAvailable"></label>
+                                </div>
                             </div>
                             <span class="switch-label">Pay Yearly</span>
                         </div>
