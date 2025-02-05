@@ -6,8 +6,7 @@
             <div class="row h-100">
                 <div class="col-12 col-md-10 col-lg-10 mx-0 text-left">
                     <h1 itemprop="title" class="font-26 font-weight-bold text-white">Exchange Rewards <br />Get more <span class="text-scribble">toys</span> with every practice</h1>
-                    <p itemprop="description" class="mt-15 mb-40 text-white">Unlock Knowledge and Reward Yourself with Exciting Toys.<br />
-Access to the rewards with 3 simple steps</p>
+                    <p itemprop="description" class="mt-15 mb-40 text-white">Unlock Knowledge and Reward Yourself with Exciting Toys.<br /> Access to the rewards with 3 simple steps</p>
                     <form class="w-75 mx-0 mb-50">
                         <div class="field-holder has-icon d-flex">
                             <span class="search-icon">
