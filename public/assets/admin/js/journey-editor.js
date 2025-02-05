@@ -634,7 +634,16 @@ var subject_topics_list = [];
 
 $(document).on('click', '.field_settings', function (e) {
     $(".field-options").html('');
-    
+    if( $(this).hasClass('path-initializer')){
+        $(".editor-parent-nav #layers-tab").click();
+        $(".editor-objects-block li #levels_layers-tab1").click();
+    }else{
+        $(".editor-parent-nav #layers-tab").click();
+        $(".editor-objects-block li #all_layers-tab1").click();
+        //$(".editor-parent-nav #stages-tab").click();
+        //$(".editor-controls li #objects-tab1").click();
+    }
+
 
     var fieldObj = $(this);
     var field_id = fieldObj.data('id');
