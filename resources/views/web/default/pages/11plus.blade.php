@@ -1283,58 +1283,36 @@ $show_details = isset( $show_details )? $show_details : true;
             </div>
         </div>
     </div>
-</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-    <section class="lms-newsletter py-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="newsletter-inner">
-                        <div class="row">
-                            <div class="col-12 col-lg-8 col-md-8">
-                                <div class="section-title">
-                                    <h2 itemprop="title" class="mb-10 text-white font-40">Kickstart your 11 plus exam Prep today</h2>
-                                    <p itemprop="description" class="mb-0 text-white font-16">
-                                        Let us help you achieve the score you deserve and unlock <br/>
-                                        doors to your future academic success.
-                                    </p>
-                                </div>
+</div>	
+<section class="lms-newsletter py-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="newsletter-inner">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 col-md-8">
+                            <div class="section-title">
+                                <h2 itemprop="title" class="mb-10 text-white font-40">Kickstart your 11 plus exam Prep today</h2>
+                                <p itemprop="description" class="mb-0 text-white font-16">
+                                    Let us help you achieve the score you deserve and unlock <br/>
+                                    doors to your future academic success.
+                                </p>
                             </div>
-                            <div class="col-12 col-lg-4 col-md-4">
-                                <div class="form-field position-relative text-right">
-                                    <button class="rounded rounded-pill bg-white">
-                                        <a href="{{url('/')}}/membership"
-                                           style="color:var(--gray-dark);">View our plans</a>
-                                    </button>
-                                </div>
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-4">
+                            <div class="form-field position-relative text-right">
+                                <button class="rounded rounded-pill bg-white">
+                                    <a href="{{url('/')}}/membership"
+                                        style="color:var(--gray-dark);">View our plans</a>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
 </section>
 @endsection
 
