@@ -480,9 +480,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12 col-12 mx-auto">
                     <div class="row">
-
                         @include('web.default.pricing.packages_list',['subscribes' => array(), 'packages_only' => $packages_only, 'show_details' => false])
-
                     </div>
                 </div>
             </div>
@@ -499,48 +497,46 @@
             </div>
         </div>
     </div>
-
-	
-<section class="footer-banner pt-50 pb-50" style="background: #f6b801;">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-7">
-                <div class="banner-holder">
-                    <div class="text-holder">
-                        <h2 itemprop="title" class="text-white font-30">
-                            Our rewards bring you excitement,<br >
-                             letting you see the results of practice in real time!
-                        </h2>
+    <section class="footer-banner pt-50 pb-50" style="background: #f6b801;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-7">
+                    <div class="banner-holder">
+                        <div class="text-holder">
+                            <h2 itemprop="title" class="text-white font-30">
+                                Our rewards bring you excitement,<br >
+                                letting you see the results of practice in real time!
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-5">
+                    <div class="banner-holder d-flex justify-content-end">
+                        <ul class="education-icon-box">
+                            <li>
+                                <figure><img src="../assets/default/img/book-education.svg" alt="education icon-box" title="education icon-box" width="800" height="800" itemprop="image" loading="eager" /></figure>
+                            </li>
+                            <li>
+                                <figure><img src="../assets/default/img/pencil-ruler.svg" alt="education icon-box" title="education icon-box" width="800" height="800" itemprop="image" loading="eager" /></figure>
+                            </li>
+                            <li>
+                                <figure><img src="../assets/default/img/mathematics.svg" alt="education icon-box" title="education icon-box" width="800" height="800" itemprop="image" loading="eager" /></figure>
+                            </li>
+                            <li>
+                                <figure><img src="../assets/default/img/book-education-study.svg" alt="education icon-box" title="education icon-box" width="800" height="800" itemprop="image" loading="eager" /></figure>
+                            </li>
+                            <li>
+                                <figure><img src="../assets/default/img/coins-money.svg" alt="education icon-box" title="education icon-box" width="800" height="800" itemprop="image" loading="eager" /></figure>
+                            </li>
+                            <li>
+                                <figure><img src="../assets/default/img/document-education-file.svg" alt="education icon-box" title="education icon-box" width="800" height="800" itemprop="image" loading="eager" /></figure>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-5">
-                <div class="banner-holder d-flex justify-content-end">
-                    <ul class="education-icon-box">
-                        <li>
-                            <figure><img src="../assets/default/img/book-education.svg" alt="education icon-box" title="education icon-box" width="800" height="800" itemprop="image" loading="eager" /></figure>
-                        </li>
-                        <li>
-                            <figure><img src="../assets/default/img/pencil-ruler.svg" alt="education icon-box" title="education icon-box" width="800" height="800" itemprop="image" loading="eager" /></figure>
-                        </li>
-                        <li>
-                            <figure><img src="../assets/default/img/mathematics.svg" alt="education icon-box" title="education icon-box" width="800" height="800" itemprop="image" loading="eager" /></figure>
-                        </li>
-                        <li>
-                            <figure><img src="../assets/default/img/book-education-study.svg" alt="education icon-box" title="education icon-box" width="800" height="800" itemprop="image" loading="eager" /></figure>
-                        </li>
-                        <li>
-                            <figure><img src="../assets/default/img/coins-money.svg" alt="education icon-box" title="education icon-box" width="800" height="800" itemprop="image" loading="eager" /></figure>
-                        </li>
-                        <li>
-                            <figure><img src="../assets/default/img/document-education-file.svg" alt="education icon-box" title="education icon-box" width="800" height="800" itemprop="image" loading="eager" /></figure>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
-    </div>
-</section>
+    </section>
 @endsection
 
 @push('scripts_bottom')
