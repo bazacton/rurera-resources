@@ -137,13 +137,15 @@ body .editor-objects-list li {background-color: #f8f8f8; border: 1px solid #ccc;
 .editor-controls-holder .layout-template-item {background-color: #fafafa; border: 1px solid #ccc; padding: 5px 15px; display: inline-block; line-height: normal; border-radius: 3px; text-decoration: none;}
 .editor-controls-holder .path-tool-item.active,
 .editor-controls-holder .layout-template-item.active {border-color: #9acbff; background-color: #f3f9ff; color: var(--blue);}
-.book-dropzone .drop-item {background-color: inherit;
+.book-dropzone .drop-item {
+    background: none;
     border: 1px solid transparent;
     border-radius: 5px;
-    background-image: none;}
+    background-image: none;
+}
 .book-dropzone .drop-item.active{border-color: #ddd; opacity: 1;}
 .book-dropzone .field-data svg {height: 100%;}
-.book-dropzone .ui-rotatable-handle {top: -5px; left: -5px; pointer-events: none; opacity: 0; visibility: hidden;}
+.book-dropzone .ui-rotatable-handle {top: 0; left: 0; pointer-events: none; opacity: 0; visibility: hidden;}
 body .flowchart-operator {border: 0;}
 body .ui-rotatable-handle::before {font-size: 10px; content: "\f0e2"; font-family: "Font Awesome 5 Free";}
 .book-dropzone .object-options a {background: rgba(0, 0, 0, 0.5); position: absolute; right: 0; bottom: 0; height: 20px; width: 20px; text-align: center; display: inline-flex; justify-content: center; align-items: center; border-radius: 100%; font-size: 12px; color: #fff; text-decoration: none; pointer-events: none; opacity: 0; visibility: hidden; text-indent: 0;}
