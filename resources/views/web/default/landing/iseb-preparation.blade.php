@@ -6,7 +6,6 @@
 
 @section('content')
 <section class="content-section">
-
     <section class="gallery-sub-header job-singup-sub-header mb-70 page-sub-header pb-10 position-relative pt-80" style="min-height: 480px;">
         <div class="container h-100">
             <div class="row h-100">
@@ -273,83 +272,62 @@
                 <div class="col-12">
                     <div class="section-title mb-50 text-center">
                         <h2 class="mb-10 font-40">Personalized 11 Plus Prep with Rurera</h2>
-                        <p class="font-16 text-gray">Empower your child’s learning journey with tailored resources and
-                            assessments that meet their unique needs.</p>
+                        <p class="font-16 text-gray">Empower your child’s learning journey with tailored resources and assessments that meet their unique needs.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143"
-                                 width="276">
-
+                            <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Game-Based Learning</span>
                         </h3>
-                        <p itemprop="description">Make study sessions fun with engaging, reward-based activities and
-                            instant feedback.</p>
+                        <p itemprop="description">Make study sessions fun with engaging, reward-based activities and instant feedback.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143"
-                                 width="276">
-
+                            <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Essential Mock Exams</span>
                         </h3>
-                        <p itemprop="description">Boost confidence with realistic 11+ mock exams that simulate actual
-                            test conditions.</p>
+                        <p itemprop="description">Boost confidence with realistic 11+ mock exams that simulate actual test conditions.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143"
-                                 width="276">
-
+                            <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Parental Insights</span>
                         </h3>
-                        <p itemprop="description">Monitor progress with detailed insights to support your child’s
-                            academic success.</p>
+                        <p itemprop="description">Monitor progress with detailed insights to support your child’s academic success.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143"
-                                 width="276">
-
+                            <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Ultimate 11 Plus Practice Toolkit</span>
                         </h3>
-                        <p itemprop="description">Encourage continuous improvement with self-assessment tools and
-                            progress tracking.</p>
+                        <p itemprop="description">Encourage continuous improvement with self-assessment tools and progress tracking.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/quick-assesments.jpg" alt="feature image" height="143"
-                                 width="276">
-
+                            <img src="../assets/default/img/quick-assesments.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Top-Tier Study Materials</span>
                         </h3>
-                        <p itemprop="description">Access all-encompassing resources to thoroughly prepare for every
-                            aspect of the 11+ exam.</p>
+                        <p itemprop="description">Access all-encompassing resources to thoroughly prepare for every aspect of the 11+ exam.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
