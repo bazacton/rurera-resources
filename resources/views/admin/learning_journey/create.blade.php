@@ -686,6 +686,10 @@
                 levels_sorting_render(); // Call your function here
             }
         });
+		
+		$(document).on('click', '#layers-tab', function (e) {
+			$(".editor-objects-block li #all_layers-tab1").click();
+		});
 
         $('body').on('click', '.stage-accordion', function (e) {
             /*console.log($(".book-dropzone.active").find('.flowchart-link').length);
