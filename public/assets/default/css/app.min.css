@@ -3377,14 +3377,9 @@ span.review-label {line-height: normal;}
 .try-rurera-btn:hover:before {border-radius: 0; transform: translateY(0) scaleY(1);}
 
 .home-banner .try-rurera-btn,
-.exploring-curriculum .try-rurera-btn {    color: var(--primary);
-  border-color: rgb(0 0 0 / .2);
-  background-color: #fff;
-}
+.exploring-curriculum .try-rurera-btn {color: var(--primary); border-color: rgb(0 0 0 / .2); background-color: #fff;}
 .home-banner .try-rurera-btn:hover,
-.exploring-curriculum .try-rurera-btn:hover {
-  color: #fff;
-}
+.exploring-curriculum .try-rurera-btn:hover {color: #fff;}
 .listing-card .read-btn:hover .btn-icon svg g {fill:#fff;}
 .listing-card .read-btn .btn-icon {display: inline-block; width: 22px; height: 18px; line-height: normal; margin-right: 12px; margin-top: 0;}
 .listing-card .read-btn .btn-icon svg {max-width: 100%;}
@@ -3441,35 +3436,12 @@ Tutoring Features Style Start
 /*Tutoring Accordian Style End*/
 
 /*Tutoring Plans Style Start*/
-.plan-top-title {
-  display: block;
-  text-align: center;
-  background-color: var(--primary);
-  color: #fff;
-  font-weight: 500;
-  padding: 8px 10px;
-}
-.tutoring-plans .subscribe-plan {
-  border-radius: 10px !important;
-  overflow: hidden;
-  border: 0;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-.tutoring-plans .subscribe-title {
-  padding: 25px 20px 10px;
-}
-.tutoring-plans .subscribe-title h3 {
-  margin-bottom: 20px;
-}
-.tutoring-plans .subscribe-price {
-  padding: 0 20px;
-}
-.tutoring-plans .subscribe-price input {
-  position: absolute;
-  height: 0;
-  width: 0;
-  opacity: 0;
-}
+.plan-top-title {display: block; text-align: center; background-color: var(--primary); color: #fff; font-weight: 500; padding: 8px 10px;}
+.tutoring-plans .subscribe-plan {border-radius: 10px !important; overflow: hidden; border: 0; box-shadow: 0 0 10px rgba(0,0,0,0.05);}
+.tutoring-plans .subscribe-title {padding: 25px 20px 10px;}
+.tutoring-plans .subscribe-title h3 {margin-bottom: 20px;}
+.tutoring-plans .subscribe-price {padding: 0 20px;}
+.tutoring-plans .subscribe-price input {position: absolute; height: 0; width: 0; opacity: 0;}
 .tutoring-plans .subscribe-price label {
   border: 1px solid #ddd;
   border-radius: 5px;
