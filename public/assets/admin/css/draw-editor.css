@@ -153,6 +153,7 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 .book-dropzone .drop-item.spacer-block .field-data {
     text-align: center;
