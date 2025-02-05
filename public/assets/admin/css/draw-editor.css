@@ -141,7 +141,7 @@ body .ui-rotatable-handle::before {font-size: 10px; content: "\f0e2"; font-famil
 }
 body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1px solid #ddd; border-radius: 3px; font-size: 12px; margin: 0 0 0 8px; padding: 8px 10px;}
 .book-dropzone .drop-item.active .ui-rotatable-handle,
-.book-dropzone .drop-item.active .object-options a {opacity: 1; visibility: visible; pointer-events: unset;}
+.book-dropzone .drop-item.active .object-options a {opacity: 1; visibility: visible; pointer-events: unset; display: inline-flex !important;}
 @media (max-width: 992px) {
     body .editor-controls-holder {min-width: 375px; max-width: 375px;}
     body .editor-zone:has(.field-options) {padding-left: 0;}
