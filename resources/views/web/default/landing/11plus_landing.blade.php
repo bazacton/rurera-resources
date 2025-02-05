@@ -5,31 +5,24 @@
 .gallery-sub-header {
     min-height: 650px;
 }
-
 .lms-newsletter {
     background-color: #f18700;
 }
-
 .bg-deepskyblue {
     background-color: #46b7e9;
 }
-
 .bg-blue {
     background-color: #3d358b;
 }
-
 .bg-yellow {
     background-color: #f6b801;
 }
-
 .bg-deepyellow {
     background-color: #f18700;
 }
-
 .bg-lightblue {
     background-color: #7679ee;
 }
-
 .bg-orange {
     background-color: #f35b05;
 }
