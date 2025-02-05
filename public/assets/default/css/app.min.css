@@ -3442,74 +3442,15 @@ Tutoring Features Style Start
 .tutoring-plans .subscribe-title h3 {margin-bottom: 20px;}
 .tutoring-plans .subscribe-price {padding: 0 20px;}
 .tutoring-plans .subscribe-price input {position: absolute; height: 0; width: 0; opacity: 0;}
-.tutoring-plans .subscribe-price label {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 15px 15px 15px 60px;
-  position: relative;
-  margin-bottom: 0;
-  width: 100%;
-}
-.tutoring-plans .subscribe-price label:before {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  margin-top: -10px;
-  height: 20px;
-  width: 20px;
-  border: 1px solid #999;
-  content: "";
-  border-radius: 100%;
-}
-.tutoring-plans .subscribe-price input:checked ~ label:before {
-  background-color: var(--primary);
-  border-color: var(--primary);
-}
-.tutoring-plans .subscribe-price input[type="radio"]:checked ~ label:before {
-  background-color: inherit;
-  box-shadow: 0 0 0 5px inset var(--primary);
-  border-color: transparent;
-}
-.tutoring-plans .subscribe-price:has(input[type="checkbox"]) label:after {
-  content: "\2713";
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  height: 20px;
-  width: 20px;
-  text-align: center;
-  margin-top: -10px;
-  line-height: 20px;
-  color: #fff;
-  opacity: 0;
-  font-size: 14px;
-}
-.tutoring-plans .subscribe-price:has(input[type="checkbox"]) input:checked ~ label:after {
-  opacity: 1;
-}
-.tutoring-plans .subscribe-price label .plan-price {
-  color: #333;
-  font-size: 12px;
-  font-weight: 400;
-  margin-bottom: 5px;
-  display: block;
-}
-.subscribe-plan .subscribe-price .best-option {
-  display: block;
-  text-align: center;
-  background-color: var(--primary);
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 6px;
-  margin: 0 0 10px;
-  font-size: 14px;
-  font-weight: 400;
-}
-.tutoring-plans .subscribe-price.best-price label {
-  background-color: #eff7fa;
-  box-shadow: 0 0 0 2px var(--primary);
-  border: 0;
-}
+.tutoring-plans .subscribe-price label {border: 1px solid #ddd; border-radius: 5px; padding: 15px 15px 15px 60px; position: relative; margin-bottom: 0; width: 100%;}
+.tutoring-plans .subscribe-price label:before {position: absolute; left: 15px; top: 50%; margin-top: -10px; height: 20px; width: 20px; border: 1px solid #999; content: ""; border-radius: 100%;}
+.tutoring-plans .subscribe-price input:checked ~ label:before {background-color: var(--primary); border-color: var(--primary);}
+.tutoring-plans .subscribe-price input[type="radio"]:checked ~ label:before {background-color: inherit; box-shadow: 0 0 0 5px inset var(--primary); border-color: transparent;}
+.tutoring-plans .subscribe-price:has(input[type="checkbox"]) label:after {content: "\2713"; position: absolute; left: 15px; top: 50%; height: 20px; width: 20px; text-align: center; margin-top: -10px; line-height: 20px; color: #fff; opacity: 0; font-size: 14px;}
+.tutoring-plans .subscribe-price:has(input[type="checkbox"]) input:checked ~ label:after {opacity: 1;}
+.tutoring-plans .subscribe-price label .plan-price {color: #333; font-size: 12px; font-weight: 400; margin-bottom: 5px; display: block;}
+.subscribe-plan .subscribe-price .best-option {display: block; text-align: center; background-color: var(--primary); color: #fff; padding: 5px 10px; border-radius: 6px; margin: 0 0 10px; font-size: 14px; font-weight: 400;}
+.tutoring-plans .subscribe-price.best-price label {background-color: #eff7fa; box-shadow: 0 0 0 2px var(--primary); border: 0;}
 .plan-btn-holder {
   padding: 0 20px 30px;
 }
