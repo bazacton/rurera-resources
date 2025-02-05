@@ -212,8 +212,11 @@ $(document).on('click', '.book-dropzone', function (e) {
         //$el.append('<span class="field-handle fas fa-arrows-alt"></span><a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
 
         $el.append('<a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
+
         if (drag_type == "topic" || drag_type == "treasure" || drag_type == "spacer") {
             $el.append('<a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a>');
+        }else{
+            $el.append('<div class="object-options"><a href="javascript:;" class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se resize-handler"><span class="fa fa-recycle"></span></a></div>');
         }
         $el.append('</div>');
         if (!EditorIsEmpty(attribute_type)) {
@@ -627,6 +630,8 @@ $(document).on('change', '.conditional-field', function () {
 });
 
 var subject_topics_list = [];
+
+
 $(document).on('click', '.field_settings', function (e) {
     $(".field-options").html('');
     if( $(this).hasClass('path-initializer')){
@@ -634,7 +639,7 @@ $(document).on('click', '.field_settings', function (e) {
         $(".editor-objects-block li #levels_layers-tab1").click();
     }else{
         $(".editor-parent-nav #layers-tab").click();
-        $(".editor-objects-block li #all_layers-tab1").click();
+        $(".editor-objects-block li .all_layers-tab").click();
         //$(".editor-parent-nav #stages-tab").click();
         //$(".editor-controls li #objects-tab1").click();
     }

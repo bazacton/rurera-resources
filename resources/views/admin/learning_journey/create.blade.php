@@ -688,7 +688,7 @@
         });
 		
 		$(document).on('click', '#layers-tab', function (e) {
-			$(".editor-objects-block li #all_layers-tab1").click();
+			$(".editor-objects-block li .all_layers-tab").click();
 		});
 
         $('body').on('click', '.stage-accordion', function (e) {
