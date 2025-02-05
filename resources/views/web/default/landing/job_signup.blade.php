@@ -685,11 +685,9 @@
                                         <li>Excellent attention to detail and ability to work with minimal supervision.</li>
                                         <li>Strong communication and collaboration skills to work effectively in a team environment.</li>
                                     </ul>
-                                <p itemprop="description">Join our team and contribute to the delivery of high-quality software solutions. As a QA Analyst, you will have the opportunity to ensure the reliability and functionality of our products through comprehensive testing and quality assurance practices.</p>
-                                
+                                    <p itemprop="description">Join our team and contribute to the delivery of high-quality software solutions. As a QA Analyst, you will have the opportunity to ensure the reliability and functionality of our products through comprehensive testing and quality assurance practices.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
@@ -1089,9 +1087,7 @@
             </div>
         </div>
     </section>
-    
 </div>
-
 @endsection
 
 @push('scripts_bottom')
