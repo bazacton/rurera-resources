@@ -219,7 +219,7 @@ $(document).on('click', '.book-dropzone', function (e) {
         if (drag_type == "topic" || drag_type == "treasure" || drag_type == "spacer") {
             $el.append('<a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a>');
         }else{
-            $el.append('<div class="object-options"><a href="javascript:;" class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se resize-handler"><span class="fa fa-recycle"></span></a></div>');
+            $el.append('<div class="object-options"><a href="javascript:;" class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se resize-handler"><span class="fa fa-resize"></span></a></div>');
         }
         $el.append('</div>');
         if (!EditorIsEmpty(attribute_type)) {
@@ -588,7 +588,14 @@ $(document).on('click', '#stage_settings-tab1', function (e) {
 });
 
 $(document).on('click', '.page_settings', function (e) {
+	if($(this).hasClass('page_settings')){
+		console.log('hasClass111122222222222222');
+	}
+	if ($(e.target).closest('.page_settings').is(this)) {
+        console.log('page-settttttttttttttttttttttttttttttt11111111111111155555555555555555555');
+    }
 	if (!$(e.target).is($(this))) {
+		console.log('page-settttttttttttttttttttttttttttttt111111111111111');
 		return false;
 	}
 	$(this).closest('.editor-zone').find('.stage_settings-tab').click();
