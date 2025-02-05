@@ -910,10 +910,8 @@
                 </div>
                 <div class="col-lg-12 col-md-12 col-12 mx-auto">
                     <div class="row">
-
                         @include('web.default.pricing.packages_list',['subscribes' => array(), 'packages_only' =>
                         $packages_only, 'show_details' => false])
-
                     </div>
                 </div>
             </div>
@@ -922,19 +920,14 @@
     <div class="modal fade lms-choose-membership" id="subscriptionModal">
         <div class="modal-dialog">
             <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true">×</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                 <div class="modal-body">
-                    <div class="tab-content subscription-content" id="nav-tabContent">
-                    </div>
+                    <div class="tab-content subscription-content" id="nav-tabContent"></div>
                 </div>
             </div>
         </div>
     </div>
-
 </section>
-
-
 
 </section>
 
