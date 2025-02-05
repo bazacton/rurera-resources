@@ -156,7 +156,6 @@
                             <li>- Helps track student progress and evaluate understanding.</li>
                             <li>- It helps to provide targeted support and resources.</li>
                         </ul>
-
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6">
@@ -174,7 +173,6 @@
             </div>
         </div>
     </section>
-
     <div class="d-flex align-items-center justify-content-center pt-50">
         <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
     </div>
@@ -190,9 +188,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
                             <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Times Tables Practice</span>
@@ -204,9 +200,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
                             <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Personalised Learning</span>
@@ -217,9 +211,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
                             <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Progress Tracking</span>
@@ -231,9 +223,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
                             <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Learn & Play</span>
@@ -244,9 +234,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
                             <img src="../assets/default/img/quick-assesments.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Achievements and Rewards</span>
@@ -258,9 +246,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
                             <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Varied Game Modes</span>
@@ -271,9 +257,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
                             <img src="../assets/default/img/insights-feature.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Breakthrough insights</span>
@@ -281,13 +265,10 @@
                         <p itemprop="description">It significantly allows to identify student’s learning strengths and areas needing improvement.</p>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
                             <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">TimeTables Revision</span>
@@ -298,9 +279,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
                             <img src="../assets/default/img/rewards-store-feature.jpg" alt="feature image" height="143" width="276">
-
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Rewards Store</span>
@@ -308,12 +287,9 @@
                         <p itemprop="description">Students can redeem coin points and exchange trending toys with every practice via Rurera toy store.</p>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
-
     <section class="lms-column-section lms-accordion-section w-100 pb-80 pt-80" style="background-color: #f6f0ea; max-width: 100%;">
         <div class="container">
             <div class="row">
@@ -504,9 +480,7 @@
                                 </div>
                                 <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                                     <div class="card-header" id="headingTwo">
-                                        <h3 class="mb-0"><button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse"
-                                                data-target="#collapseTwo" aria-expanded="false"
-                                                aria-controls="collapseTwo">Why are learning times tables important?</button></h3>
+                                        <h3 class="mb-0"><button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Why are learning times tables important?</button></h3>
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                         data-parent="#accordion">
@@ -577,9 +551,7 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 @endif
-
                             </div>
                         </div>
                     </div>
@@ -593,8 +565,7 @@
                 <div class="col-12 col-lg-7 col-md-7">
                     <div class="section-title mb-50">
                         <h2 class="font-40 text-white">Parent account</h2>
-                        <p class="font-16 font-weight-500 text-white">We make it easy to be involved in your child’s learning
-                            Ability to assign activities</p>
+                        <p class="font-16 font-weight-500 text-white">We make it easy to be involved in your child’s learning Ability to assign activities</p>
                     </div>
                     <ul>
                         <li><span class="font-18">Real-Time diagnostics</span></li>
@@ -613,7 +584,6 @@
             </div>
         </div>
     </section>
-
     @php
     $packages_only = isset( $packages )? $packages : array();
     $show_details = isset( $show_details )? $show_details : true;
@@ -641,9 +611,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12 col-12 mx-auto">
                     <div class="row">
-
                         @include('web.default.pricing.packages_list',['subscribes' => array(), 'packages_only' => $packages_only, 'show_details' => false])
-
                     </div>
                 </div>
             </div>
@@ -660,7 +628,6 @@
             </div>
         </div>
     </div>
-
 </section>
 
 @endsection
