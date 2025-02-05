@@ -185,7 +185,16 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
     margin: 0 !important;
 }
 .book-dropzone .drop-item.spacer-block .field-data .flowchart-operator-inputs-outputs {margin-left: 0;margin-right: 0;display: inline-block;}
-
+.book-dropzone .flowchart-operator-connector {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+}
+.book-dropzone .flowchart-operator .flowchart-operator-inputs-outputs {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 @media (max-width: 992px) {
     body .editor-controls-holder {min-width: 375px; max-width: 375px;}
