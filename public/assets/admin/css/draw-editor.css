@@ -179,12 +179,12 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
     align-items: center;
 }
 .book-dropzone .drop-item.spacer-block .field-data > svg {
-    margin: 0 0 0 10px;
+    margin: 4px 0 0 8px;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
     cursor: grab;
     z-index: 1;
+    left: 0;
 }
 .book-dropzone .drop-item.spacer-block .field-data {
     text-align: center;
@@ -193,6 +193,8 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
     align-items: center;
     flex-direction: column;
     position: relative;
+    margin: 0 0 10px;
+    min-height: 20px;
 }
 .drop-item.spacer-block .remove {
     margin-bottom: 8px;
