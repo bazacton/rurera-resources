@@ -1856,9 +1856,7 @@ Lms FAQS Style Start
 .lms-faqs .card .card-header .btn-link h3 {font-weight: normal; color: inherit; font-size: inherit; }
 .lms-faqs .card .card-header .btn-link:before,
 .lms-faqs .card .card-header .btn-link:after {background-color: #2d3d4d; content: " "; display: block; position: absolute; right: 10px; top: 50%; height: 2px; width: 15px; border-radius: 5px; transform: translateY(-50%) rotate(90deg); transition: transform .3s ease;}
-.lms-faqs .card .card-header .btn-link:after {
-  transform: translateY(-50%) rotate(180deg);
-}
+.lms-faqs .card .card-header .btn-link:after {transform: translateY(-50%) rotate(180deg);}
 .lms-faqs .card .card-header.active .btn-link:after {transform: translateY(-50%) rotate(0deg);}
 .lms-faqs .card .card-header.active .btn-link:before {display: none;}
 .accordion__icon--is-open:before {transform: translateY(-50%) rotate(180deg);}
@@ -2818,19 +2816,7 @@ Lms FAQS New Elements Style End
   Processs Section Style End
 *************************************/
 .text-scribble {display: inline-block; padding: 0.125rem; z-index: 1; position: relative; line-height: normal;}
-.text-scribble:before {
-  background-image: url(../../default/svgs/scribble.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  bottom: 5px;
-  content: "";
-  display: block;
-  height: 38%;
-  position: absolute;
-  z-index: -1;
-  max-width: 180px;
-  width: 100%;
-}
+.text-scribble:before {background-image: url(../../default/svgs/scribble.svg); background-repeat: no-repeat; background-size: contain; bottom: 5px; content: ""; display: block; height: 38%; position: absolute; z-index: -1; max-width: 180px; width: 100%;}
 
 /*************************************
 Time Table Style Start
