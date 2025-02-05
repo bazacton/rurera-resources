@@ -8,23 +8,14 @@
                 <h1 itemprop="title" class="font-72 font-weight-bold">
                     Learn, Play, and Win <span class="text-scribble">Rewards!</span>
                 </h1>
-				
                 <p class="mt-30">Join our fun learning adventure to master lessons and earn amazing toys and Amazon gift cards!</p>
                 <ul class="mb-30 p-0 mt-30">
-                        <li class="mb-10 font-19">
-                            Master your Lessons
-                        </li>
-                        <li class="mb-10 font-19">
-                            Earn Great Rewards
-                        </li>
-                        <li class="mb-10 font-19">
-                            Celebrate your Success
-                        </li>
-                        <li class="font-19">
-                            Have Fun Learning 
-                        </li>
-                    </ul>
-                    <a href="https://rurera.com/pricing" class="mt-0 bg-primary justify-content-center register-btn text-white try-rurera-btn">Try Rurera for free</a>
+                    <li class="mb-10 font-19">Master your Lessons</li>
+                    <li class="mb-10 font-19">Earn Great Rewards</li>
+                    <li class="mb-10 font-19">Celebrate your Success</li>
+                    <li class="font-19">Have Fun Learning</li>
+                </ul>
+                <a href="https://rurera.com/pricing" class="mt-0 bg-primary justify-content-center register-btn text-white try-rurera-btn">Try Rurera for free</a>
             </div>
             <div class="col-12 col-lg-6 text-right">
                 <div class="home-sections home-sections-swiper container reward-program-section position-relative mt-0" style="background: none;">
