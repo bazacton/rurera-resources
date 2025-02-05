@@ -122,7 +122,7 @@ body ul.editor-objects.sets-selection li img {width: 100% !important;}
 .editor-objects-list li .dropdown-menu {width: auto; left: auto !important; right: 0; transform: none !important; top: 100% !important; min-width: 180px; padding: 12px 10px;}
 .editor-objects-list li .dropdown-menu i {display: inline-flex; float: right; padding: 8px 9px; color: #333; font-size: 12px; cursor: pointer; background-color: rgba(0, 0, 0, 0.05); margin: 0 5px; border-radius: 3px; border: 1px solid #ddd;}
 .editor-objects-list li .dropdown-menu.show {display: flex !important;}
-ul.editor-objects-list {margin-top: 25px;}
+ul.editor-objects-list {margin-top: 25px; counter-reset: section;}
 .editor-objects-list .ui-sortable-handle.active {background-color: #efefef; border-color: var(--blue);}
 body .editor-objects-list li {
     background-color: #f8f8f8;
