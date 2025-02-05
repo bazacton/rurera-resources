@@ -78,7 +78,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
 		<h5>Layers</h5>
         <ul class="nav nav-pills" id="myTab3" role="tablist">
             <li class="nav-item">
-                <a class="nav-link show active all_layers-tab" id="all_layers-tab{{$data_id}}" data-toggle="tab" href="#all_layers{{$data_id}}" role="tab" aria-controls="all_layers{{$data_id}}" aria-selected="true">All</a>
+                <a class="nav-link all_layers-tab" id="all_layers-tab{{$data_id}}" data-toggle="tab" href="#all_layers{{$data_id}}" role="tab" aria-controls="all_layers{{$data_id}}" aria-selected="true">All</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="levels_layers-tab{{$data_id}}" data-toggle="tab" href="#levels_layers{{$data_id}}" role="tab" aria-controls="levels_layers{{$data_id}}" aria-selected="true">Levels</a>
@@ -88,7 +88,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
             </li>
         </ul>
 
-        <div class="tab-pane mt-3 fade show active " id="all_layers{{$data_id}}" role="tabpanel" aria-labelledby="all_layers-tab{{$data_id}}">
+        <div class="tab-pane mt-3 fade " id="all_layers{{$data_id}}" role="tabpanel" aria-labelledby="all_layers-tab{{$data_id}}">
             <ul class="editor-objects-list editor-objects-list-all {{$data_id}}">
                 @php
                     if( isset( $itemObj->id ) && !empty( $itemObj->LearningJourneyObjects->where('status','active') )){
