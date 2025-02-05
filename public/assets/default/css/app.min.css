@@ -295,27 +295,9 @@ Front-end Login Style Start
 .login-option-tabs .nav-tabs .nav-link:hover {border-color: #ececec;}
 .login-option-tabs .nav-tabs button img {border-radius: 0; height: 28px; width: 28px;}
 .login-holder [class*="col-"] {height: 100%;}
-.welcome-login-box {
-  background-color: #f5586d;
-  height: 100%;
-  padding: 25px;
-  color: #fff;
-  text-align: center;
-  min-height: 340px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.welcome-login-box h2 {
-  margin: 0 0 15px;
-  font-size: 30px;
-}
-.welcome-login-box span {
-  display: block;
-  line-height: normal;
-  margin-bottom: 30px;
-}
+.welcome-login-box {background-color: #f5586d; height: 100%; padding: 25px; color: #fff; text-align: center; min-height: 340px; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.welcome-login-box h2 {margin: 0 0 15px; font-size: 30px;}
+.welcome-login-box span {display: block; line-height: normal; margin-bottom: 30px;}
 .welcome-login-box .signup-btn {
   border: 1px solid rgba(255,255,255,0.5);
   padding: 8px 30px;
