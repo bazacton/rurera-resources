@@ -130,6 +130,10 @@ $(document).on('click', '.layout-template-item', function () {
         item_counter++;
         levels_sorting_render();
     });
+	
+	
+    $(".layout-template-item").removeClass('active');
+    $(this).addClass('active');
 
 });
 
