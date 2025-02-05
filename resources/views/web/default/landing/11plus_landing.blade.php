@@ -45,25 +45,20 @@
                     <h1 class="font-72 font-weight-bold"><span class="text-scribble mr-10">11 Plus</span>and Entrance Exams</h1>
                     <h2 class="mb-15 font-30">Unlock Opportunities: Ace the 11 Plus Exam!
                     </h2>
-                    <p class="font-19">Prepare for selective school admissions with comprehensive learning and practice
-                        tools.</p>
+                    <p class="font-19">Prepare for selective school admissions with comprehensive learning and practice tools.</p>
                     <ul class="mb-30 p-0">
                         <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/mobile.svg" alt="mobile" title="mobile" width="25"
-                                height="25" itemprop="image" loading="eager">11+ Learning practice
+                            <img src="../assets/default/svgs/mobile.svg" alt="mobile" title="mobile" width="25" height="25" itemprop="image" loading="eager">11+ Learning practice
                         </li>
                         <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/preparation.svg" alt="preparation" title="preparation"
-                                width="25" height="25" itemprop="image" loading="eager">11+ Assessment & 11+ Tests
+                            <img src="../assets/default/svgs/preparation.svg" alt="preparation" title="preparation" width="25" height="25" itemprop="image" loading="eager">11+ Assessment & 11+ Tests
                         </li>
                         <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/graphic-design.svg" alt="graphic-design"
-                                title="graphic-design" width="25" height="25" itemprop="image" loading="eager">11+
+                            <img src="../assets/default/svgs/graphic-design.svg" alt="graphic-design" title="graphic-design" width="25" height="25" itemprop="image" loading="eager">11+
                             Quizzes & Exam Prep
                         </li>
                         <li class="font-19">
-                            <img src="../assets/default/svgs/book-opend.svg" alt="book-opend" title="book-opend"
-                                width="25" height="25" itemprop="image" loading="eager">Guaranteed Results
+                            <img src="../assets/default/svgs/book-opend.svg" alt="book-opend" title="book-opend" width="25" height="25" itemprop="image" loading="eager">Guaranteed Results
                         </li>
                     </ul>
                     <a href="{{url('/')}}/pricing" class="py-15 px-30 text-dark-blue register-btn try-rurera-btn  mt-0">Try Rurera for free</a>
