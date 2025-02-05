@@ -3451,29 +3451,12 @@ Tutoring Features Style Start
 .tutoring-plans .subscribe-price label .plan-price {color: #333; font-size: 12px; font-weight: 400; margin-bottom: 5px; display: block;}
 .subscribe-plan .subscribe-price .best-option {display: block; text-align: center; background-color: var(--primary); color: #fff; padding: 5px 10px; border-radius: 6px; margin: 0 0 10px; font-size: 14px; font-weight: 400;}
 .tutoring-plans .subscribe-price.best-price label {background-color: #eff7fa; box-shadow: 0 0 0 2px var(--primary); border: 0;}
-.plan-btn-holder {
-  padding: 0 20px 30px;
-}
-.tutoring-plans .subscribe-plan button.btn {
-  padding: 15px 10px;
-  height: auto;
-  font-weight: 400;
-  border-radius: 50px;
-}
-.tutoring-plans .subscribe-plan .subscribe-price small {
-  vertical-align: bottom;
-  font-size: 16px;
-}
-.tutoring-plans .subscribe-plan .subscribe-price .plan-prices {
-  color: var(--secondary);
-  padding-top: 0;
-}
-.tutoring-plans .plan-feature {
-  min-height: 113px;
-}
-.tutoring-plans .subscribe-plan:hover:not(.current-plan) button.btn {
-  background-color: var(--primary);
-}
+.plan-btn-holder {padding: 0 20px 30px;}
+.tutoring-plans .subscribe-plan button.btn {padding: 15px 10px; height: auto; font-weight: 400; border-radius: 50px;}
+.tutoring-plans .subscribe-plan .subscribe-price small {vertical-align: bottom; font-size: 16px;}
+.tutoring-plans .subscribe-plan .subscribe-price .plan-prices {color: var(--secondary); padding-top: 0;}
+.tutoring-plans .plan-feature {min-height: 113px;}
+.tutoring-plans .subscribe-plan:hover:not(.current-plan) button.btn {background-color: var(--primary);}
 /*Tutoring Plans Style End*/
 /*********************************
 Tutoring Features Style End
@@ -3492,21 +3475,8 @@ Page Elements Style Start
 .trial-steps .active .icon-box {background-color: var(--primary);}
 .trial-steps li .icon-box img {height: 20px; width: 20px; object-fit: contain; filter: invert(19%) sepia(11%) saturate(3046%) hue-rotate(191deg) brightness(96%) contrast(95%);}
 .trial-steps .active .icon-box img {filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(295deg) brightness(107%) contrast(101%);}
-.trial-steps li:before {
-  content: "";
-  height: 6px;
-  width: 100%;
-  position: absolute;
-  background-color: var(--primary);
-  top: 50%;
-  margin-top: -3px;
-  z-index: -1;
-  left: -50%;
-}
-.trial-steps li:first-child:before {
-  opacity: 0;
-  visibility:hidden;
-}
+.trial-steps li:before {content: ""; height: 6px; width: 100%; position: absolute; background-color: var(--primary); top: 50%; margin-top: -3px; z-index: -1; left: -50%;}
+.trial-steps li:first-child:before {opacity: 0; visibility:hidden;}
 .lms-btn-group.custom-btn,
 section:has(.trial-steps) .lms-btn-group {
   justify-content: center;
