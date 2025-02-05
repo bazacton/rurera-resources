@@ -509,8 +509,7 @@
                                     <span itemprop="size">#4</span>Timely Reporting
                                 </button>
                             </div>
-                            <div id="collapse-4" class="collapse" aria-labelledby="heading-4"
-                                 data-parent="#accordion-modern">
+                            <div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordion-modern">
                                 <div class="card-body">
                                     <p itemprop="description" class="font-16 font-weight-normal">Online platforms often
                                         provide real-time reporting to both students and teachers, allowing for prompt
@@ -518,21 +517,16 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img class="w-100" src="../assets/default/img/company-sats.jpg"
-                                             alt="company insights" title="company insights" width="652" height="401"
-                                             itemprop="image" loading="eager" /></figure>
+                                <figure><img class="w-100" src="../assets/default/img/company-sats.jpg" alt="company insights" title="company insights" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
                         <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-5">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
-                                        type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false"
-                                        aria-controls="collapse-5">
+                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
                                     <span itemprop="size">#5</span>Breakthrough insights at every level
                                 </button>
                             </div>
-                            <div id="collapse-5" class="collapse" aria-labelledby="heading-5"
-                                 data-parent="#accordion-modern">
+                            <div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordion-modern">
                                 <div class="card-body">
                                     <p itemprop="description" class="font-16 font-weight-normal">
                                         Students and their parents can access a dashboard that displays their live
@@ -543,16 +537,12 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img class="w-100" src="../assets/default/img/company-insights.jpg"
-                                             alt="company quiz" title="company quiz" width="652" height="401"
-                                             itemprop="image" loading="eager" /></figure>
+                                <figure><img class="w-100" src="../assets/default/img/company-insights.jpg" alt="company quiz" title="company quiz" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
                         <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-6">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
-                                        type="button" data-toggle="collapse" data-target="#collapse-6" aria-expanded="true"
-                                        aria-controls="collapse-6">
+                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">
                                     <span itemprop="size">#6</span>Students Engagement
                                 </button>
                             </div>
@@ -568,16 +558,12 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img class="w-100" src="../assets/default/img/company-performance.jpg"
-                                             alt="company curriculum" width="652" height="401" title="company curriculum"
-                                             itemprop="image" loading="eager" /></figure>
+                                <figure><img class="w-100" src="../assets/default/img/company-performance.jpg" alt="company curriculum" width="652" height="401" title="company curriculum" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
                         <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-7">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
-                                        type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="true"
-                                        aria-controls="collapse-7">
+                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="true" aria-controls="collapse-7">
                                     <span itemprop="size">#7</span>Reward points
                                 </button>
                             </div>
@@ -593,9 +579,7 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img class="w-100" src="../assets/default/img/company-rewards.jpg"
-                                             alt="company curriculum" width="652" height="401" title="company curriculum"
-                                             itemprop="image" loading="eager" /></figure>
+                                <figure><img class="w-100" src="../assets/default/img/company-rewards.jpg" alt="company curriculum" width="652" height="401" title="company curriculum" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
                     </div>
@@ -833,9 +817,6 @@
             </div>
         </div>
     </section>
-
-
-
     @php
         $packages_only = isset( $packages )? $packages : array();
         $show_details = isset( $show_details )? $show_details : true;
