@@ -319,106 +319,78 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143"
-                                 width="276">
-
+                            <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Parental Insights</span>
                         </h3>
-                        <p itemprop="description">Monitor progress with detailed insights to support your child’s
-                            academic success.</p>
+                        <p itemprop="description">Monitor progress with detailed insights to support your child’s academic success.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143"
-                                 width="276">
-
+                            <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Ultimate 11 Plus Practice Toolkit</span>
                         </h3>
-                        <p itemprop="description">Encourage continuous improvement with self-assessment tools and
-                            progress tracking.</p>
+                        <p itemprop="description">Encourage continuous improvement with self-assessment tools and progress tracking.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/quick-assesments.jpg" alt="feature image" height="143"
-                                 width="276">
-
+                            <img src="../assets/default/img/quick-assesments.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Top-Tier Study Materials</span>
                         </h3>
-                        <p itemprop="description">Access all-encompassing resources to thoroughly prepare for every
-                            aspect of the 11+ exam.</p>
+                        <p itemprop="description">Access all-encompassing resources to thoroughly prepare for every aspect of the 11+ exam.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image"
-                                 height="143" width="276">
-
+                            <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Smart Exam Tactics</span>
                         </h3>
-                        <p itemprop="description">Learn effective tips for time management, stress reduction, and
-                            question strategies.</p>
+                        <p itemprop="description">Learn effective tips for time management, stress reduction, and question strategies.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/insights-feature.jpg" alt="feature image" height="143"
-                                 width="276">
-
+                            <img src="../assets/default/img/insights-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Adaptive Curriculum</span>
                         </h3>
-                        <p itemprop="description">Use a curriculum that adjusts to each student’s needs for personalised
-                            learning.</p>
+                        <p itemprop="description">Use a curriculum that adjusts to each student’s needs for personalised learning.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143"
-                                 width="276">
-
+                            <img src="../assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Personalised Practice</span>
                         </h3>
-                        <p itemprop="description">Provide practice options that reinforce key concepts and reduce
-                            learning anxiety.</p>
+                        <p itemprop="description">Provide practice options that reinforce key concepts and reduce learning anxiety.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143"
-                                 width="276">
-
+                            <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Elevate 11 Plus Preparation</span>
                         </h3>
-                        <p itemprop="description">Achieve exam success with tailored practice and confidence-building
-                            resources.</p>
+                        <p itemprop="description">Achieve exam success with tailored practice and confidence-building resources.</p>
                     </div>
                 </div>
             </div>
