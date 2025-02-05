@@ -1,13 +1,7 @@
 @extends(getTemplate().'.layouts.app')
 
 @section('content')
-<section
-    class="products-sub-header page-sub-header position-relative pb-25 pt-0 d-flex align-items-center"
-    style="
-        background-image: linear-gradient(transparent 11px, rgba(220, 220, 200, 0.1) 12px, transparent 12px), linear-gradient(90deg, transparent 11px, rgba(220, 220, 200, 0.1) 12px, transparent 12px);
-        background-size: 100% 12px, 12px 100%;
-    "
->
+<section class="products-sub-header page-sub-header position-relative pb-25 pt-0 d-flex align-items-center" style="background-image: linear-gradient(transparent 11px, rgba(220, 220, 200, 0.1) 12px, transparent 12px), linear-gradient(90deg, transparent 11px, rgba(220, 220, 200, 0.1) 12px, transparent 12px); background-size: 100% 12px, 12px 100%;">
     <div class="container">
         <div class="row align-items-center job-singup-sub-header">
             <div class="col-12 col-md-12 col-lg-6">
