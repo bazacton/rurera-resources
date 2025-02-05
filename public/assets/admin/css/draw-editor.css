@@ -148,17 +148,19 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
     margin: 0;
     align-items: center;
 }
-
-.book-dropzone .drop-item.spacer-block svg {
+.book-dropzone .drop-item.spacer-block .field-data > svg {
     margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
-
 .book-dropzone .drop-item.spacer-block .field-data {
     text-align: center;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 .drop-item.spacer-block .drop-item .remove {
     margin-bottom: 5px;
