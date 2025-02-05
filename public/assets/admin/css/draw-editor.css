@@ -143,7 +143,7 @@ body .editor-objects-list li {background-color: #f8f8f8; border: 1px solid #ccc;
 .book-dropzone .ui-rotatable-handle {top: -5px; left: -5px; pointer-events: none; opacity: 0; visibility: hidden;}
 body .flowchart-operator {border: 0;}
 body .ui-rotatable-handle::before {font-size: 10px; content: "\f0e2"; font-family: "Font Awesome 5 Free";}
-.book-dropzone .object-options a {background: rgba(0, 0, 0, 0.5); position: absolute; right: -5px; bottom: -5px; height: 20px; width: 20px; text-align: center; display: inline-flex; justify-content: center; align-items: center; border-radius: 100%; font-size: 12px; color: #fff; text-decoration: none; pointer-events: none; opacity: 0; visibility: hidden; text-indent: 0;}
+.book-dropzone .object-options a {background: rgba(0, 0, 0, 0.5); position: absolute; right: 0; bottom: 0; height: 20px; width: 20px; text-align: center; display: inline-flex; justify-content: center; align-items: center; border-radius: 100%; font-size: 12px; color: #fff; text-decoration: none; pointer-events: none; opacity: 0; visibility: hidden; text-indent: 0;}
 .book-dropzone .object-options a span {margin: 0 !important; vertical-align: middle; font-size: 12px;}
 body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1px solid #ddd; border-radius: 3px; font-size: 12px; margin: 0 0 0 8px; padding: 8px 10px;}
 .book-dropzone .drop-item.active .ui-rotatable-handle,
