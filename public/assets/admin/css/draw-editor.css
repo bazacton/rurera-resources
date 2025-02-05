@@ -163,7 +163,7 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
     position: relative;
 }
 .drop-item.spacer-block .remove {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 .drop-item.spacer-block .remove span {
     margin: 0 !important;
