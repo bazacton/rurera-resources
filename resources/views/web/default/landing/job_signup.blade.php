@@ -411,10 +411,8 @@
                             </div>
                             <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a Math Curriculum Designer to join our education team. As a Math Curriculum Designer, you will play a key role in developing and designing a comprehensive and effective math curriculum that aligns with educational standards and meets the needs of students and educators. You will collaborate with subject matter experts, instructional designers, and educators to create engaging and rigorous math curricula that promote conceptual understanding and support student learning.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Design and develop a standards-based math curriculum for specific grade levels or courses.</li>
@@ -491,10 +489,8 @@
                                     
                                     </ul>
                                     <p itemprop="description">Join our creative team and contribute to the development of visually stunning digital assets that engage and inspire our audience. This is an excellent opportunity to grow your digital design skills and make a significant impact on our brand's digital presence.</p>
-                                
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
@@ -556,10 +552,8 @@
                             </div>
                             <div id="collapse_7" class="collapse" aria-labelledby="heading_7" data-parent="#accordionExample">
                                 <div class="card-body">
-                                   
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a talented and detail-oriented Content Production Specialist to join our team. As a Content Production Specialist, you will be responsible for creating, editing, and managing various types of content across multiple platforms. Your role will involve working closely with the content team to ensure the production of high-quality and engaging content that meets our brand standards and resonates with our target audience.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Create original content, including articles, blog posts, social media posts, videos, and other multimedia materials.</li>
@@ -587,11 +581,9 @@
                                         <li>Ability to work independently and collaboratively in a fast-paced environment.</li>
                                         <li>Good communication skills and ability to work effectively with cross-functional teams.</li>
                                     </ul>
-                                <p itemprop="description">Join our team and contribute to the production of compelling and engaging content that captivates our audience and supports our brand goals. This is an exciting opportunity to showcase your creativity, writing skills, and attention to detail in a dynamic content production role.</p>
-                                
+                                    <p itemprop="description">Join our team and contribute to the production of compelling and engaging content that captivates our audience and supports our brand goals. This is an exciting opportunity to showcase your creativity, writing skills, and attention to detail in a dynamic content production role.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
@@ -605,11 +597,9 @@
                                 </button>
                             </div>
                             <div id="collapse_77" class="collapse" aria-labelledby="heading_77" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    
+                                <div class="card-body">      
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a Language Arts Curriculum Designer to join our education team. As a Language Arts Curriculum Designer, you will play a crucial role in developing and designing a comprehensive and engaging language arts curriculum that aligns with educational standards and promotes literacy and language development. You will collaborate with subject matter experts, instructional designers, and educators to create curriculum materials that foster reading, writing, communication, and critical thinking skills.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Design and develop a standards-based language arts curriculum for specific grade levels or courses.</li>
@@ -654,10 +644,8 @@
                             </div>
                             <div id="collapse_78" class="collapse" aria-labelledby="heading_78" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and detail-oriented QA Analyst to join our quality assurance team. As a QA Analyst, you will be responsible for ensuring the quality and reliability of our software products through rigorous testing and defect identification. Your role will involve designing and executing test plans, conducting functional and regression testing, and collaborating with cross-functional teams to deliver high-quality software solutions.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Collaborate with product managers, business analysts, and developers to understand project requirements and define test objectives.</li>
