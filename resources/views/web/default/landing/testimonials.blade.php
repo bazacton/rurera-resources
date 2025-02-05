@@ -247,10 +247,8 @@
         </div>
         <div class="lms-masonry">
           <div class="masonry-grid row">
-
              @foreach($testimonials as $testimonial)
                 <div class="grid-item col-lg-4 col-md-4 col-sm-6 student">
-
                     <div class="testimonial-card">
                         <div class="testimonial-body">
                           <p itemprop="description">{!! nl2br($testimonial->comment) !!}</p>
@@ -258,7 +256,7 @@
                             <span>{{ $testimonial->user_name }}</span><small><em>|</em>{{ $testimonial->testimonial_by }}</small>
                           </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             @endforeach
           </div>
