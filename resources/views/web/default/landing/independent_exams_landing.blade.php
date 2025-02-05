@@ -579,14 +579,11 @@
                         </div>
                         <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-7">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
-                                        type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="true"
-                                        aria-controls="collapse-7">
+                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="true" aria-controls="collapse-7">
                                     <span itemprop="size">#7</span>Reward points
                                 </button>
                             </div>
-                            <div id="collapse-7" class="collapse" aria-labelledby="heading-7"
-                                 data-parent="#accordion-modern">
+                            <div id="collapse-7" class="collapse" aria-labelledby="heading-7" data-parent="#accordion-modern">
                                 <div class="card-body">
                                     <p itemprop="description" class="font-16 font-weight-normal">
                                         Unlock Knowledge and Reward Yourself with Exciting Toys. It implies through
@@ -597,9 +594,7 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img class="w-100" src="../assets/default/img/company-rewards.jpg"
-                                             alt="company curriculum" width="652" height="401" title="company curriculum"
-                                             itemprop="image" loading="eager" /></figure>
+                                <figure><img class="w-100" src="../assets/default/img/company-rewards.jpg" alt="company curriculum" width="652" height="401" title="company curriculum" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
                     </div>
@@ -610,11 +605,6 @@
             <a href="{{url('/')}}/pricing" class="btn-primary font-16 text-dark-blue register-btn try-rurera-btn py-15 px-30">Try Rurera for free</a>
         </div>
     </section>
-
-
-
-
-
     <section class="py-100" style="background-color: #fff;">
         <div class="container">
             <div class="row">
@@ -814,9 +804,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12 col-12 mx-auto">
                     <div class="row">
-
                         @include('web.default.pricing.packages_list',['subscribes' => array(), 'packages_only' => $packages_only, 'show_details' => false])
-
                     </div>
                 </div>
             </div>
@@ -833,7 +821,6 @@
             </div>
         </div>
     </div>
-
     </section>
 @endsection
 
