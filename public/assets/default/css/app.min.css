@@ -2775,9 +2775,7 @@ Lms Contact Form Pages Style Start
 .contact-sub-header .message-box .icon-svg svg {width: 30px;height: 30px;}
 .lms-contact-form-section .svg-container:before{top: 0;bottom: auto;-webkit-transform: scaleY(-1); -moz-transform: scaleY(-1); transform: scaleY(-1);}
 .lms-jobsform-content h2.font-56 {font-size: 56px;}
-.lms-jobsform-content li {
-  list-style: none;
-}
+.lms-jobsform-content li {list-style: none;}
 .content-list {display: flex; flex-direction: column; gap: 10px;}
 .lms-jobsform-partners ul {display: flex; align-items: center; flex-wrap: wrap; gap: 15px;}
 .lms-jobsform-partners li img {bottom: 0; height: 48px; left: 0; position: absolute; right: 0; top: 0; width: 100%; object-fit: contain;}
@@ -2797,10 +2795,7 @@ Lms Contact Form Pages Style Start
 .qoute-images .img-box {max-width: 110px; min-width: 110px; text-align: center;}
 .qoute-images .img-box img {max-width: 100%; max-height: 80px;}
 .content-list li img {height: 24px; width: 24px; margin-right: 5px; filter: invert(65%) sepia(49%) saturate(705%) hue-rotate(179deg) brightness(101%) contrast(101%); position: absolute; left: 0;}
-.content-list li {
-  padding: 0 0 0 35px;
-  position: relative;
-}
+.content-list li {padding: 0 0 0 35px; position: relative;}
 /*************************************
 Lms Contact Form Pages Style End
 *************************************/
