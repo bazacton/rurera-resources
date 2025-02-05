@@ -147,7 +147,6 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
     width: auto !important;
     margin: 0;
     align-items: center;
-    gap: 10px;
 }
 
 .book-dropzone .drop-item.spacer-block svg {
