@@ -634,6 +634,7 @@ var subject_topics_list = [];
 
 $(document).on('click', '.field_settings', function (e) {
     $(".field-options").html('');
+	if( stage_created == true){
     if( $(this).hasClass('path-initializer')){
         $(".editor-parent-nav #layers-tab").click();
         $(".editor-objects-block li #levels_layers-tab1").click();
@@ -643,6 +644,7 @@ $(document).on('click', '.field_settings', function (e) {
         //$(".editor-parent-nav #stages-tab").click();
         //$(".editor-controls li #objects-tab1").click();
     }
+	}
 
 
     var fieldObj = $(this);
@@ -1323,7 +1325,10 @@ $(document).on('change', 'select[name="subject_id"]', function (e) {
 			subject_topics_list = JSON.parse(return_data);
 			if( stage_created == false){
 				$('.saved-item-class').click();
+				setTimeout(function() {				
 				stage_created = true;
+				}, 2000); // 2000 milliseconds = 2 seconds
+
 			}
 		}
 	});
