@@ -929,7 +929,7 @@
     $(document).on('click', '.change-position', function () {
         var data_id = $(this).closest('.field_settings').attr('id');
         $(".draggable_field_"+data_id).find('.flowchart-operator-inputs-outputs').toggleClass('right-in');
-        var link_position = $(this).closest('li').attr('data-link_position');
+        var link_position = $('.levels-objects-list li[data-id="'+data_id+'"]').attr('data-link_position');
         if(link_position == 'left-in'){
             link_position = 'right-in';
         }else{
