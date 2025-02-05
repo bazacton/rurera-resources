@@ -587,18 +587,17 @@ $(document).on('click', '#stage_settings-tab1', function (e) {
 
 });
 
+$(document).on('click', '.flowchart-links-layer', function (e) {
+	if (e.target !== this) return; // Ensures the click is only on `.page_settings`
+	$(this).closest('.editor-zone').find('.stage_settings-tab').click();
+});
 $(document).on('click', '.page_settings', function (e) {
-	if($(this).hasClass('page_settings')){
-		console.log('hasClass111122222222222222');
-	}
-	if ($(e.target).closest('.page_settings').is(this)) {
-        console.log('page-settttttttttttttttttttttttttttttt11111111111111155555555555555555555');
-    }
+	
 	if (!$(e.target).is($(this))) {
 		console.log('page-settttttttttttttttttttttttttttttt111111111111111');
 		return false;
 	}
-	$(this).closest('.editor-zone').find('.stage_settings-tab').click();
+	
 	console.log('page-settttttttttttttttttttttttttttttt');
 	$('.page_settings').removeClass('active');
 	$(this).addClass('active');
