@@ -355,8 +355,7 @@
                                         <h3 itemprop="title" class="post-title font-19 font-weight-bold">
                                             English
                                         </h3>
-                                        <p itemprop="description" class="font-16 text-gray">Patterns, sequencing and
-                                            geometry</p>
+                                        <p itemprop="description" class="font-16 text-gray">Patterns, sequencing and geometry</p>
                                     </div>
                                 </a>
                             </li>
@@ -373,8 +372,7 @@
                                         <h3 itemprop="title" class="post-title font-19 font-weight-bold">
                                             Maths
                                         </h3>
-                                        <p itemprop="description" class="font-16 text-gray">Patterns, sequencing and
-                                            geometry</p>
+                                        <p itemprop="description" class="font-16 text-gray">Patterns, sequencing and geometry</p>
                                     </div>
                                 </a>
                             </li>
@@ -391,8 +389,7 @@
                                         <h3 itemprop="title" class="post-title font-19 font-weight-bold">
                                             Computing
                                         </h3>
-                                        <p itemprop="description" class="font-16 text-gray">Patterns, sequencing and
-                                            geometry</p>
+                                        <p itemprop="description" class="font-16 text-gray">Patterns, sequencing and geometry</p>
                                     </div>
                                 </a>
                             </li>
@@ -409,8 +406,7 @@
                                         <h3 itemprop="title" class="post-title font-19 font-weight-bold">
                                             Science
                                         </h3>
-                                        <p itemprop="description" class="font-16 text-gray">Patterns, sequencing and
-                                            geometry</p>
+                                        <p itemprop="description" class="font-16 text-gray">Patterns, sequencing and geometry</p>
                                     </div>
                                 </a>
                             </li>
@@ -426,16 +422,14 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="section-title mb-50 text-center">
                         <h2 itemprop="section title" class="mb-10 font-40">Real practice, Proven Results</h2>
-                        <p itemprop="description" class="font-19 text-gray">It’s hugely trusted by parents, recommended
-                            by teachers and loved by students</p>
+                        <p itemprop="description" class="font-19 text-gray">It’s hugely trusted by parents, recommended by teachers and loved by students</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="counter-holder row mt-100">
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-30 position-relative">
                             <div class="lms-counter-card counter-purple-bg text-white">
-                                <strong itemprop="size" class="custom-counter" data-count="100"></strong><span itemprop="plus"
-                                    class="plus-icons">+</span>
+                                <strong itemprop="size" class="custom-counter" data-count="100"></strong><span itemprop="plus" class="plus-icons">+</span>
                                 <p itemprop="description" class="font-16 text-white">
                                     11+ practices
                                 </p>
@@ -460,8 +454,7 @@
                                 </span>
                             </div>
                             <div class="lms-counter-card counter-orange-bg text-white">
-                                <strong itemprop="size" class="custom-counter" data-count="60"></strong><span itemprop="plus"
-                                    class="plus-icons">+</span>
+                                <strong itemprop="size" class="custom-counter" data-count="60"></strong><span itemprop="plus" class="plus-icons">+</span>
                                 <p itemprop="description" class="font-16 text-white">
                                     Cities
                                 </p>
@@ -473,81 +466,57 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
     <section class="pt-80">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-title mb-50 text-center">
                         <h2 class="mb-10 font-40">Personalized 11 Plus Prep with Rurera</h2>
-                        <p class="font-16 text-gray">Empower your child’s learning journey with tailored resources and
-                            assessments that meet their unique needs.</p>
+                        <p class="font-16 text-gray">Empower your child’s learning journey with tailored resources and assessments that meet their unique needs.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143"
-                                width="276">
-
+                            <img src="../assets/default/img/ks1-year1-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Game-Based Learning</span>
                         </h3>
-                        <p itemprop="description">Make study sessions fun with engaging, reward-based activities and
-                            instant feedback.</p>
+                        <p itemprop="description">Make study sessions fun with engaging, reward-based activities and instant feedback.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143"
-                                width="276">
-
+                            <img src="../assets/default/img/entrance-exams.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Essential Mock Exams</span>
                         </h3>
-                        <p itemprop="description">Boost confidence with realistic 11+ mock exams that simulate actual
-                            test conditions.</p>
+                        <p itemprop="description">Boost confidence with realistic 11+ mock exams that simulate actual test conditions.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143"
-                                width="276">
-
+                            <img src="../assets/default/img/sats-home-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Parental Insights</span>
                         </h3>
-                        <p itemprop="description">Monitor progress with detailed insights to support your child’s
-                            academic success.</p>
+                        <p itemprop="description">Monitor progress with detailed insights to support your child’s academic success.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143"
-                                width="276">
-
+                            <img src="../assets/default/img/analytics-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Ultimate 11 Plus Practice Toolkit</span>
                         </h3>
-                        <p itemprop="description">Encourage continuous improvement with self-assessment tools and
-                            progress tracking.</p>
+                        <p itemprop="description">Encourage continuous improvement with self-assessment tools and progress tracking.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -568,16 +537,12 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image"
-                                height="143" width="276">
-
+                            <img src="../assets/default/img/feature-automated-marking.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Smart Exam Tactics</span>
                         </h3>
-                        <p itemprop="description">Learn effective tips for time management, stress reduction, and
-                            question strategies.</p>
+                        <p itemprop="description">Learn effective tips for time management, stress reduction, and question strategies.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -591,47 +556,35 @@
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Adaptive Curriculum</span>
                         </h3>
-                        <p itemprop="description">Use a curriculum that adjusts to each student’s needs for personalised
-                            learning.</p>
+                        <p itemprop="description">Use a curriculum that adjusts to each student’s needs for personalised learning.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143"
-                                width="276">
-
+                            <img src="../assets/default/img/book-shelf-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Personalised Practice</span>
                         </h3>
-                        <p itemprop="description">Provide practice options that reinforce key concepts and reduce
-                            learning anxiety.</p>
+                        <p itemprop="description">Provide practice options that reinforce key concepts and reduce learning anxiety.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="feature-grid text-center mb-40" itemprop="feature learning course">
                         <figure class="mb-20">
-
-                            <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143"
-                                width="276">
-
+                            <img src="../assets/default/img/timetables-feature.jpg" alt="feature image" height="143" width="276">
                         </figure>
                         <h3 class="mb-5 font-20 font-weight-bold" itemprop="title">
                             <span class="text-dark-charcoal">Elevate 11 Plus Preparation</span>
                         </h3>
-                        <p itemprop="description">Achieve exam success with tailored practice and confidence-building
-                            resources.</p>
+                        <p itemprop="description">Achieve exam success with tailored practice and confidence-building resources.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-    <section class="lms-column-section lms-accordion-section w-100 pb-60 pt-60"
-        style="background-color: #f6f0ea; max-width: 100%;">
+    <section class="lms-column-section lms-accordion-section w-100 pb-60 pt-60" style="background-color: #f6f0ea; max-width: 100%;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -644,9 +597,7 @@
                         id="accordion-modern">
                         <div class="card active" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-1">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
-                                    type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false"
-                                    aria-controls="collapse-1">
+                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
                                     <span itemprop="size">#1</span>Adaptive Assessments Testing
                                 </button>
                             </div>
