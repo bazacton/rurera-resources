@@ -59,7 +59,6 @@
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="card">
                                 <div class="card-header" id="headingTwo">
                                     <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -72,7 +71,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="card">
                                 <div class="card-header" id="headingseven">
                                     <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
@@ -88,7 +86,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="card">
                                 <div class="card-header" id="heading8">
                                     <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">What is your cancellation policy?</button>
@@ -99,7 +96,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="card">
                                 <div class="card-header" id="heading9">
                                     <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
@@ -109,6 +105,7 @@
                                 <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion"><div class="card-body">
                                     <p>No, with Rurera, the price you see is the price you pay. There are no hidden fees, surprise charges, or additional costs. We believe in transparent pricing so you can budget confidently without worrying about unexpected expenses.</p>
                                 </div>
+                            </div>
                             </div>
 
                             <div class="card">
