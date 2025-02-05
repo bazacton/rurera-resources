@@ -424,10 +424,7 @@
             </div>
         </div>
     </section>
-
-
-    <section class="lms-column-section lms-accordion-section w-100 pb-60 pt-60"
-             style="background-color: #f6f0ea; max-width: 100%;">
+    <section class="lms-column-section lms-accordion-section w-100 pb-60 pt-60" style="background-color: #f6f0ea; max-width: 100%;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -436,18 +433,14 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion lms-accordion-modern"
-                         id="accordion-modern">
+                    <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="accordion lms-accordion-modern" id="accordion-modern">
                         <div class="card active" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-1">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
-                                        type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false"
-                                        aria-controls="collapse-1">
+                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
                                     <span itemprop="size">#1</span>Adaptive Assessments Testing
                                 </button>
                             </div>
-                            <div id="collapse-1" class="collapse show" aria-labelledby="heading-1"
-                                 data-parent="#accordion-modern">
+                            <div id="collapse-1" class="collapse show" aria-labelledby="heading-1" data-parent="#accordion-modern">
                                 <div class="card-body">
                                     <p itemprop="description" class="font-16 font-weight-normal">
                                         It helps schools to offer adaptive assessments that adjust the difficulty of
@@ -458,21 +451,16 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img class="w-100" src="../assets/default/img/adpative-assessment.jpg"
-                                             alt="company sats" title="company sats" width="652" height="401"
-                                             itemprop="image" loading="eager" /></figure>
+                                <figure><img class="w-100" src="../assets/default/img/adpative-assessment.jpg" alt="company sats" title="company sats" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
                         <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-2">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
-                                        type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false"
-                                        aria-controls="collapse-2">
+                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
                                     <span itemprop="size">#2</span>Quick Results via automated marking
                                 </button>
                             </div>
-                            <div id="collapse-2" class="collapse" aria-labelledby="heading-2"
-                                 data-parent="#accordion-modern">
+                            <div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordion-modern">
                                 <div class="card-body">
                                     <p itemprop="description" class="font-16 font-weight-normal">
                                         Real-time marking data allows for quick identification of students who may
@@ -482,16 +470,12 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img class="w-100" src="../assets/default/img/company-quiz.jpg"
-                                             alt="company performance" title="company performance" width="652" height="401"
-                                             itemprop="image" loading="eager" /></figure>
+                                <figure><img class="w-100" src="../assets/default/img/company-quiz.jpg" alt="company performance" title="company performance" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
                         <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-3">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
-                                        type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false"
-                                        aria-controls="collapse-3">
+                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
                                     <span itemprop="size">#3</span>Diverse Question Formats
                                 </button>
                             </div>
@@ -505,16 +489,12 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img class="w-100" src="../assets/default/img/all-in-1-platform.jpg"
-                                             alt="company rewards" title="company rewards" width="652" height="401"
-                                             itemprop="image" loading="eager" /></figure>
+                                <figure><img class="w-100" src="../assets/default/img/all-in-1-platform.jpg" alt="company rewards" title="company rewards" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
                         <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <div class="card-header" id="heading-4">
-                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed"
-                                        type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false"
-                                        aria-controls="collapse-4">
+                                <button itemprop="button" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
                                     <span itemprop="size">#4</span>Timely Reporting
                                 </button>
                             </div>
@@ -527,9 +507,7 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img class="w-100" src="../assets/default/img/company-sats.jpg"
-                                             alt="company insights" title="company insights" width="652" height="401"
-                                             itemprop="image" loading="eager" /></figure>
+                                <figure><img class="w-100" src="../assets/default/img/company-sats.jpg" alt="company insights" title="company insights" width="652" height="401" itemprop="image" loading="eager" /></figure>
                             </div>
                         </div>
                         <div class="card" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
