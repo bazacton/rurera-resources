@@ -102,12 +102,12 @@
                                         Are there any additional fees or hidden charges?
                                     </button>
                                 </div>
-                                <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion"><div class="card-body">
-                                    <p>No, with Rurera, the price you see is the price you pay. There are no hidden fees, surprise charges, or additional costs. We believe in transparent pricing so you can budget confidently without worrying about unexpected expenses.</p>
+                                <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>No, with Rurera, the price you see is the price you pay. There are no hidden fees, surprise charges, or additional costs. We believe in transparent pricing so you can budget confidently without worrying about unexpected expenses.</p>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-
                             <div class="card">
                                 <div class="card-header" id="heading10">
                                     <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
@@ -120,7 +120,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="card">
                                 <div class="card-header" id="heading11">
                                     <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
@@ -133,7 +132,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="card">
                                 <div class="card-header" id="heading12">
                                     <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
@@ -146,7 +144,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="card">
                                 <div class="card-header" id="heading13">
                                     <button class="btn btn-link font-18 font-weight-bold collapsed" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
@@ -159,7 +156,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
