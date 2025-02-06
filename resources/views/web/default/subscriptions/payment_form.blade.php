@@ -171,7 +171,6 @@ button:disabled {
                                                 <div class="input-field">
                                                     <input type="text" placeholder="MM / YY">
                                                 </div>
-
                                             </div>
                                         </div>
                                         <div class="col-12 col-lg-6 col-md-6 col-sm-12">
@@ -180,10 +179,9 @@ button:disabled {
                                                 <div class="input-field">
                                                     <input type="text" placeholder="CVC">
                                                 </div>
-
                                             </div>
                                         </div>
-                                </div>
+                                    </div>
                                 </div>
                                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                                     <span class="form-label">Country</span>
