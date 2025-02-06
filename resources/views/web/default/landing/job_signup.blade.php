@@ -422,13 +422,10 @@
                                         <li>Attention to detail and ability to maintain a high level of accuracy and quality in curriculum materials.</li>
                                         <li>Strong collaboration and teamwork skills to work effectively with subject matter experts, educators, and instructional designers.</li>
                                         <li>Familiarity with educational technology tools and platforms used in math instruction is a plus.</li>
-                                        
                                     </ul>
                                      <p itemprop="description">We offer a competitive salary and benefits package. This is an exciting opportunity to contribute to the development of a high-quality math curriculum that empowers students and supports effective teaching. Join our team and make a positive impact on math education.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
@@ -443,10 +440,8 @@
                             </div>
                             <div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordionExample">
                                 <div class="card-body">
-                                   
                                     <h3 itemprop="title" class="font-24">Overview</h3>
-                                    <p itemprop="description">We are seeking an Associate Digital Designer to join our creative team. As an Associate Digital Designer, you will support the design and production of digital assets for various digital platforms. Your role will involve collaborating with the design team to create visually appealing and engaging digital materials that effectively communicate our brand's message and enhance user experience.</p>
-                                    
+                                    <p itemprop="description">We are seeking an Associate Digital Designer to join our creative team. As an Associate Digital Designer, you will support the design and production of digital assets for various digital platforms. Your role will involve collaborating with the design team to create visually appealing and engaging digital materials that effectively communicate our brand's message and enhance user experience.</p>  
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Assist in the creation and execution of digital designs, including website graphics, social media assets, email templates, banners, and display ads.</li>
