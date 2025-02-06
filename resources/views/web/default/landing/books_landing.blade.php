@@ -646,17 +646,9 @@
                           <h2>Consult a grownup for assistance.</h2>
                           <p class="mt-15">
                             <a href="#">
-                              <span class="icon-svg">
-                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="b" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-                                  <g id="SVGRepo_bgCarrier4" stroke-width="0"></g>
-                                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                  <g id="SVGRepo_iconCarrier4">
-                                    <path class="c" d="m32.017,16.7078c1.7678,1.3258,3.241,4.7141,2.9463,8.397-.2946,2.799-1.7678,5.1561-2.9463,6.04"></path>
-                                    <path class="c" d="m5.5,17.7391v12.8165h8.5443l11.0487,8.839V8.6054l-11.0487,9.1336H5.5Z"></path>
-                                    <path class="c" d="m37.173,10.9625c3.0936,2.3571,5.598,8.397,5.3034,15.0263-.4419,5.0088-2.9463,9.1336-5.3034,10.9014"></path>
-                                  </g>
-                                </svg>
-                              </span>
+                            <span class="icon-svg">
+                                <img src="/assets/default/svgs/sound-play.svg" height="28" width="28" alt="sound-play">
+                            </span>
                             </a> Upgrade to the Family Premium plan to read the rest of this book and enjoy unlimited access to our entire library.
                           </p>
                           <a href="#" class="nav-link btn-primary rounded-pill mb-25" id="subscribe-tab" data-toggle="tab" data-target="#subscribe" aria-controls="subscribe"> Get Rurera </a>
