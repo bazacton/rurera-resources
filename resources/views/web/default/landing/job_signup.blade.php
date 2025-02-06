@@ -463,10 +463,8 @@
                                         <li>Familiarity with responsive design principles and designing for various digital platforms (web, mobile, social media).</li>
                                         <li>Basic understanding of UX/UI design principles and user-centered design concepts. Knowledge of HTML and CSS is a plus.</li>
                                         <li>Strong attention to detail and ability to multitask in a fast-paced environment.</li>
-                                        <li>Excellent communication skills and ability to collaborate effectively with team members and stakeholders.
-                                        </li>
+                                        <li>Excellent communication skills and ability to collaborate effectively with team members and stakeholders.</li>
                                         <li>Passion for staying updated with industry trends and emerging digital design techniques.</li>
-                                    
                                     </ul>
                                     <p itemprop="description">Join our creative team and contribute to the development of visually stunning digital assets that engage and inspire our audience. This is an excellent opportunity to grow your digital design skills and make a significant impact on our brand's digital presence.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
@@ -511,13 +509,10 @@
                                         <li>Attention to detail and ability to maintain a high level of accuracy and quality in curriculum materials.</li>
                                         <li>Strong collaboration and teamwork skills to work effectively with subject matter experts, educators, and instructional designers.</li>
                                         <li>Familiarity with educational technology tools and platforms used in science instruction is a plus.</li>
-                                        
                                     </ul>
                                     <p itemprop="description">Join our team and contribute to the development of a high-quality science curriculum that sparks students' curiosity, promotes scientific literacy, and fosters a love for learning. This is an exciting opportunity to make a positive impact on science education.</p>
-                    
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
@@ -695,19 +690,14 @@
                                         <li>Proficiency in design tools such as Sketch, Figma, Adobe XD, or similar.</li>
                                         <li>Strong portfolio showcasing expertise in UI/UX design and problem-solving skills.</li>
                                         <li>Solid understanding of user-centered design principles, user research methodologies, and usability testing.</li>
-                                        <li>Knowledge of responsive design, mobile-first design principles, and accessibility standards.
-                                        </li>
+                                        <li>Knowledge of responsive design, mobile-first design principles, and accessibility standards.</li>
                                         <li>Excellent visual and communication skills to present design concepts and rationale to stakeholders.</li>
                                         <li>Ability to work in a collaborative, agile environment and manage multiple projects simultaneously.</li>
                                         <li>Experience with design systems and familiarity with front-end development concepts are a plus.</li>
-                                       
                                     </ul>
-
                                     <p itemprop="description">Join our team and contribute to creating exceptional user experiences through innovative UI/UX design. As a Senior UI/UX Designer, you will have the opportunity to shape the digital landscape of our curriculum, champion user-centered design, and drive positive impact for our users and business.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
