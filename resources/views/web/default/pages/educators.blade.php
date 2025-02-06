@@ -70,16 +70,16 @@
                 <div class="position-relative">
                     <img
                         alt="Become an instructor"
-                        height="auto"
+                        height="460"
                         src="/store/1/default_images/home_sections_banners/analytics.jpg"
-                        width="100%"
+                        width="400"
                         itemprop="image"
                         class="find-instructor-section-hero"
                         loading="eager"
                         title="Become an instructor"
                     />
-                    <img alt="circle" height="auto" src="/assets/default/img/home/circle-4.png" width="100%" itemprop="image" class="find-instructor-section-circle" loading="eager" title="circle" />
-                    <img alt="dots" height="auto" src="/assets/default/img/home/dot.png" width="100%" itemprop="image" class="find-instructor-section-dots" loading="eager" title="dots" />
+                    <img alt="circle" height="170" src="/assets/default/img/home/circle-4.png" width="170" itemprop="image" class="find-instructor-section-circle" loading="eager" title="circle" />
+                    <img alt="dots" height="110" src="/assets/default/img/home/dot.png" width="70" itemprop="image" class="find-instructor-section-dots" loading="eager" title="dots" />
                 </div>
             </div>
             <div class="col-12 col-lg-6">
