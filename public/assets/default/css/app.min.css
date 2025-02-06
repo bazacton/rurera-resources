@@ -1634,7 +1634,8 @@ Lms Books Listing Style End
 .membership-steps h3{color: var(--primary-hover);}
 .lms-choose-membership .book-detail p {position: relative;}
 .lms-choose-membership .book-detail p .icon-svg {position: absolute;left: -50px;top: 0;width: 40px;height: 40px;border: 2px solid var(--primary-hover);display: inline-flex;border-radius: 100%;align-items: center;justify-content: center;}
-.lms-choose-membership .book-detail p .icon-svg svg {width: 28px;height: 28px;fill: var(--primary-hover);}
+.lms-choose-membership .book-detail p .icon-svg svg,
+.lms-choose-membership .book-detail p .icon-svg img {width: 28px;height: 28px;fill: var(--primary-hover); filter: invert(26%) sepia(78%) saturate(1981%) hue-rotate(183deg) brightness(95%) contrast(98%);}
 .lms-choose-membership .input-field input[type="text"]:focus {border-color:var(--primary-hover);}
 .lms-choose-membership .subscribe-plan-holder strong {padding: 0 100px;display: inline-block;line-height: 26px;color: var(--primary-hover); margin-top: 30px;}
 .membership-steps-list li.active::before { background:#64c07d;}
