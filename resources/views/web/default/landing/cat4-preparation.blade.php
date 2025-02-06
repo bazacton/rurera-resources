@@ -2,39 +2,11 @@
 
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/scroll-animation/animate.css">
-
-<style>
-
-        .bg-deepyellow {
-            background-color: #f18700;
-        }
-        .bg-lightblue {
-            background-color: #7679ee;
-        }
-        .bg-orange {
-            background-color: #f35b05;
-        }
-        .bg-mdblue {
-            background-color: #5e82d8;
-        }
-        .bg-green {
-            background-color: #3cb46e;
-        }
-        .lms-newsletter {
-            background-color: var(--gray-dark);
-        }
-        .gallery-sub-header {
-            min-height: 480px;
-        }
-        .lms-column-section {
-            background-color: #75c0fa;
-        }
-    </style>
 @endpush
 
 @section('content')
 <section class="content-section">
-    <section class="gallery-sub-header job-singup-sub-header mb-70 page-sub-header pb-10 position-relative pt-80">
+    <section class="gallery-sub-header job-singup-sub-header mb-70 page-sub-header pb-10 position-relative pt-80" style="min-height: 480px;">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-lg-6 col-md-6">
@@ -212,7 +184,7 @@
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon bg-mdblue"><img alt="100+ Expert-Crafted Tests" height="150" src="/assets/default/svgs/features-user-white.svg" width="150" /></i>
+                            <i class="svg-icon bg-mdblue" style="background-color: #5e82d8;"><img alt="100+ Expert-Crafted Tests" height="150" src="/assets/default/svgs/features-user-white.svg" width="150" /></i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">100+ Expert-Crafted Tests</h3>
@@ -226,7 +198,7 @@
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon bg-green"><img alt="Wide Range of Questions" height="200" src="/assets/default/svgs/features-time-test-white.svg" width="200" /></i>
+                            <i class="svg-icon bg-green" style="background-color: #3cb46e;"><img alt="Wide Range of Questions" height="200" src="/assets/default/svgs/features-time-test-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">Wide Range of Questions</h3>
@@ -240,7 +212,7 @@
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon bg-orange"><img alt="Assess and Improve" height="200" src="/assets/default/svgs/features-globe-white.svg" width="200" /></i>
+                            <i class="svg-icon bg-orange" style="background-color: #f35b05;"><img alt="Assess and Improve" height="200" src="/assets/default/svgs/features-globe-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">Assess and Improve</h3>
