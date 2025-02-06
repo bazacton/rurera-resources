@@ -867,22 +867,21 @@
                             <div class="accordion" id="accordionExample2">
                                 <div class="card">
                                 <div class="card-header" id="headingOne">
-                                        <button class="text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <span class="icon-box">
-                                                <svg id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32"><style type="text/css">
-                                                    .st0{fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-                                                </style><g><path class="st0" d="M30.3,3.2v9.5c0,1.2-1,2.2-2.2,2.2H13.3c0-0.2,0-0.4,0-0.6c0-2.3-1.9-4.2-4.2-4.2V3.2c0-1.2,1-2.2,2.2-2.2   h16.8C29.3,1,30.3,2,30.3,3.2z"/><line class="st0" x1="16.6" x2="22.9" y1="5.6" y2="5.6"/><line class="st0" x1="13.8" x2="25.7" y1="10.3" y2="10.3"/><path class="st0" d="M15.1,31H3.4c-0.9,0-1.7-0.7-1.7-1.7l0,0c0-3.3,2.7-6,6-6h3c3.3,0,6,2.7,6,6l0,0C16.7,30.3,16,31,15.1,31z"/><path class="st0" d="M9.2,10.1C6.9,10.1,5,12,5,14.3s1.9,5.9,4.2,5.9s4.2-3.6,4.2-5.9S11.5,10.1,9.2,10.1z"/></g></svg>
-                                            </span>
-                                            Stage 1 : Rurera application form
-                                        </button>
-                                        <div class="form-field-counter">
-                                            <span class="counts-bar-box">
-                                                <span class="counts-bar" style="width: 20%;"></span>
-                                            </span>
-                                            <span itemprop="counter" class="counter-counts"><em>0</em> of 3 tasks</span>
-                                        </div>
+                                    <button class="text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="icon-box">
+                                            <svg id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32"><style type="text/css">
+                                                .st0{fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                                            </style><g><path class="st0" d="M30.3,3.2v9.5c0,1.2-1,2.2-2.2,2.2H13.3c0-0.2,0-0.4,0-0.6c0-2.3-1.9-4.2-4.2-4.2V3.2c0-1.2,1-2.2,2.2-2.2   h16.8C29.3,1,30.3,2,30.3,3.2z"/><line class="st0" x1="16.6" x2="22.9" y1="5.6" y2="5.6"/><line class="st0" x1="13.8" x2="25.7" y1="10.3" y2="10.3"/><path class="st0" d="M15.1,31H3.4c-0.9,0-1.7-0.7-1.7-1.7l0,0c0-3.3,2.7-6,6-6h3c3.3,0,6,2.7,6,6l0,0C16.7,30.3,16,31,15.1,31z"/><path class="st0" d="M9.2,10.1C6.9,10.1,5,12,5,14.3s1.9,5.9,4.2,5.9s4.2-3.6,4.2-5.9S11.5,10.1,9.2,10.1z"/></g></svg>
+                                        </span>
+                                        Stage 1 : Rurera application form
+                                    </button>
+                                    <div class="form-field-counter">
+                                        <span class="counts-bar-box">
+                                            <span class="counts-bar" style="width: 20%;"></span>
+                                        </span>
+                                        <span itemprop="counter" class="counter-counts"><em>0</em> of 3 tasks</span>
+                                    </div>
                                 </div>
-
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample2">
                                     <div class="card-body">
                                         <div class="row">
@@ -965,7 +964,6 @@
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
                                     <div class="card-body">
                                         <div class="row">
-
                                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                                 <div class="checkbox-group">
                                                     <div class="checkbox-field">
