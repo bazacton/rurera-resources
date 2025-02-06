@@ -5,18 +5,6 @@
 .gallery-sub-header {
     min-height: 650px;
 }
-.bg-yellow {
-    background-color: #f6b801;
-}
-.bg-deepyellow {
-    background-color: #f18700;
-}
-.bg-lightblue {
-    background-color: #7679ee;
-}
-.bg-orange {
-    background-color: #f35b05;
-}
 </style>
 @endpush
 
@@ -229,7 +217,7 @@
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon bg-yellow">
+                            <i class="svg-icon bg-yellow" style="background-color: #f6b801;">
                                 <img src="/assets/default/svgs/feature-time.svg" height="24" width="24" alt="Timed Practices"> 
                             </i>
                         </figure>
@@ -245,7 +233,7 @@
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon bg-deepyellow">
+                            <i class="svg-icon bg-deepyellow" style="background-color: #f18700;">
                                 <img src="/assets/default/svgs/feature-target.svg" height="24" width="24" alt="Target Identification">
                             </i>
                         </figure>
@@ -261,7 +249,7 @@
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon bg-lightblue">
+                            <i class="svg-icon bg-lightblue" style="background-color: #7679ee;">
                                 <img src="/assets/default/svgs/feature-exam.svg" height="24" width="24" alt="Exam Practice Resources">
                             </i>
                         </figure>
@@ -277,7 +265,7 @@
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon bg-orange">
+                            <i class="svg-icon bg-orange" style="background-color: #f35b05;">
                                 <img src="/assets/default/svgs/feature-progress.svg" height="24" width="24" alt="Progress Reports">
                             </i>
                         </figure>
