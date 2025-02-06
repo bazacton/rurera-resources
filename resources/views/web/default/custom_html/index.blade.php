@@ -26,7 +26,6 @@
                         </ul>
                     </div>
                 </div>
-
             </li>
             <li>
                 <div class="user-thumb">
@@ -56,7 +55,7 @@
     </div>
 </div>
     <div class="col-12 col-lg-12 col-md-12">
-            <div class="section-title mb-30">
+        <div class="section-title mb-30">
             <h2 itemprop="title" class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a>National Competition</h2>
         </div>
     </div>
@@ -854,9 +853,7 @@
                     </span>
                 </a>
             </li>
-
             <li>
-
                 <a href="#">
                     <div class="levels-progress circle" data-percent="75">
                         <span class="progress-box">
@@ -873,7 +870,8 @@
                         <span>Complete all Topics above to unlock this!</span>
                     </div>
                 </div>
-            </li><li>
+            </li>
+            <li>
                 <a href="#">
                     <div class="levels-progress circle" data-percent="30">
                         <span class="progress-box">
@@ -891,7 +889,7 @@
                     </div>
                 </div>
             </li>
-    </ul>
+        </ul>
     </div>
     <div class="panel-subheader">
         <div class="title">
