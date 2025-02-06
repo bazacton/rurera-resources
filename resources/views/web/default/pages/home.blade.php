@@ -50,7 +50,7 @@
     </section>
     
     {{do_shortcode('redefining_personalized_learning', array('items' => array(2,3,5,6,7,8,9,10,11,15,16,17)))}}
-    
+
     <section class="choose-sats choose-sats-section pt-80 pb-60 mt-50">
         <div class="container">
             <div class="row">
@@ -242,54 +242,33 @@
     const changeFrame = () =>
         window.requestAnimationFrame(() => {
         const delta = Date.now() - lastChange;
-
-        // Less time than the animation duration has passed
         if (delta < animationTimeout) {
             needsUpdate = true;
-
-            // Ratio for where in the animation we are
             const ratio = Math.min(delta / animationTimeout, 1);
-            
-            // Measure both text boxes
             const targetWidth = newText.scrollWidth;
             const oldWidth = oldText.scrollWidth;
             const difference = targetWidth - oldWidth;
-
-            // Make room for the new text
             const halfWidth = `${(difference * ratio) / 2}px`;
             oldText.style.marginLeft = halfWidth;
             oldText.style.marginRight = halfWidth;
-
-            // Fade the new text in
             oldText.style.opacity = 1 - ratio;
             newText.style.opacity = ratio;
-
-            // Center the new text over the old one
             newText.style.left = `${(difference * (ratio - 1)) / 2}px`;
-
-            // Move the new text in
             newText.style.bottom = `${maxMargin * (1 - ratio)}em`;
             oldText.style.top = `${maxMargin * ratio}em`;
 
             changeFrame();
             return;
         } else if (needsUpdate) {
-            // Update the text
             oldText.innerHTML = headlines[(currentHeadline + 1) % headlines.length];
             newText.innerHTML =
             headlines[(currentHeadline + 2) % headlines.length];
             needsUpdate = false;
         }
-
-        // Reset spacing around word on the line
         oldText.style.marginLeft = "0px";
         oldText.style.marginRight = "0px";
-
-        // Reset opacities
         oldText.style.opacity = 1;
         newText.style.opacity = 0;
-
-        // Update container positions
         oldText.style.top = "0px";
         newText.style.bottom = `${maxMargin}em`;
         newText.style.left = "0px";
@@ -307,8 +286,6 @@
         changeFrame();
     }, timeout);
     }
-
-    // Play the animation
     document.addEventListener("DOMContentLoaded", () => {
     setupWordChange(2000);
     });
