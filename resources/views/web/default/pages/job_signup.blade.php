@@ -88,19 +88,11 @@
             </div>
             <div class="col-12">
                 <div class="process-holder">
-                    <ul itemprop="process"  class="process-list d-flex justify-content-center">
-                        <li itemprop="item" class="process-item">
-                            <a href="#.">step 1</a>
-                        </li>
-                        <li itemprop="item" class="process-item">
-                            <a href="#.">step 2</a>
-                        </li>
-                        <li itemprop="item" class="process-item">
-                            <a href="#.">step 3</a>
-                        </li>
-                        <li itemprop="item" class="process-item">
-                            <a href="#.">step 4</a>
-                        </li>
+                    <ul itemprop="process" class="process-list d-flex justify-content-center">
+                        <li itemprop="item" class="process-item"><a href="#.">step 1</a></li>
+                        <li itemprop="item" class="process-item"><a href="#.">step 2</a></li>
+                        <li itemprop="item" class="process-item"><a href="#.">step 3</a></li>
+                        <li itemprop="item" class="process-item"><a href="#.">step 4</a></li>
                     </ul>
                 </div>
             </div>
@@ -262,7 +254,6 @@
                                 <div class="card-body">
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and experienced Senior Software Developer to join our dynamic team. As a Senior Software Developer, you will be responsible for designing, developing, and implementing high-quality software solutions. You will collaborate with cross-functional teams to analyze user requirements, create technical specifications, and deliver robust software applications.</p>
-                                
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Design, develop, and maintain efficient and scalable software solutions in accordance with project requirements and coding standards.</li>
@@ -305,7 +296,6 @@
                                 <div class="card-body">
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and experienced Database Administrator to join our team. As a Database Administrator, you will be responsible for the performance, integrity, and security of our databases. You will work closely with software developers, system administrators, and other stakeholders to ensure the efficient operation of our database systems.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Install, configure, and maintain database management systems (DBMS) to ensure optimal performance, availability, and security.</li>
@@ -351,7 +341,6 @@
                                 <div class="card-body">
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and experienced Math Assessment Specialist to join our team. As a Math Assessment Specialist, you will play a crucial role in developing and implementing effective math assessment strategies and materials. You will work closely with curriculum developers, educators, and other stakeholders to ensure high-quality math assessments that align with educational standards.</p>
-                                
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Design and develop math assessment materials, including test items, rubrics, scoring guides, and performance tasks.</li>
