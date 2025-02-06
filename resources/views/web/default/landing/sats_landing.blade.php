@@ -6,9 +6,6 @@
     .gallery-sub-header {
         min-height: 850px;
     }
-    .lms-column-section {
-        background-color: #7679ee;
-    }
     .choose-sats-section {
         background-color: #3d358b;
     }
@@ -545,7 +542,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-column-section lms-text-section exploring-curriculum mx-w-100 mt-80 mb-80 pt-70 pb-70 pr-30 pl-30">
+    <section class="lms-column-section lms-text-section exploring-curriculum mx-w-100 mt-80 mb-80 pt-70 pb-70 pr-30 pl-30" style="background-color: #7679ee;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".exploring-curriculum">
