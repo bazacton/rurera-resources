@@ -411,7 +411,7 @@
                                     </button>
                                 </div>
                                 <div class="collapse" id="collapse11" aria-labelledby="heading11" data-parent="#accordion">
-                                    <div class="card-body" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+                                    <div class="card-body" itemscope="" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
                                         <p itemprop="text">
                                             Rurera offers a range of adaptive learning tools, teacher-created resources, and real-time performance tracking, designed to enhance both teaching and learning. Our platform focuses on personalized
                                             learning to meet the unique needs of each student and supports teachers with efficient lesson planning and progress monitoring.
@@ -426,7 +426,7 @@
                                     </button>
                                 </div>
                                 <div class="collapse" id="collapse12" aria-labelledby="heading12" data-parent="#accordion">
-                                    <div class="card-body" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+                                    <div class="card-body" itemscope="" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
                                         <p itemprop="text">
                                             Rurera offers a hub of teacher-created materials, including lesson plans, real-time performance tracking, quizzes, mock tests, and interactive activities. These resources are designed to be flexible
                                             and easily integrated into your existing curriculum.
