@@ -7,9 +7,6 @@
         background-image: linear-gradient(transparent 11px, rgba(255, 255, 255, 0.2) 12px, transparent 12px), linear-gradient(90deg, transparent 11px, rgba(255, 255, 255, 0.2) 12px, transparent 12px);
         background-size: 100% 12px, 12px 100%;
     }
-    .lms-books-listing {
-        background-color: #f1f1f1;
-    }
 </style>
 @endpush
 
