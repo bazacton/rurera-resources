@@ -2,9 +2,6 @@
 
 @push('styles_top')
 <style>
-    .time-tables-sub-header {
-        background-color: #333399;
-    }
     .lms-column-section {
         background-color: #7679ee;
     }
@@ -13,7 +10,7 @@
 
 @section('content')
 <section class="content-section">
-    <section class="time-tables-sub-header pt-70 pb-80 text-center">
+    <section class="time-tables-sub-header pt-70 pb-80 text-center" style="background-color: #333399;">
         <div class="container">
             <div class="row">
                 <div class="col-11 mx-auto">
