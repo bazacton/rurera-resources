@@ -744,8 +744,7 @@
                                     <div class="testimonial-body">
                                         <div class="img-holder">
                                             <figure>
-                                                <a itemprop="url" href="{{url('/')}}"><img src="/store/1/default_images/testimonials/parent-testimonial.jpg"
-                                                        alt="testimonials" title="testimonials"  width="300" height="300" itemprop="image"  loading="eager"></a>
+                                                <a itemprop="url" href="{{url('/')}}"><img src="/store/1/default_images/testimonials/parent-testimonial.jpg" alt="testimonials" title="testimonials"  width="300" height="300" itemprop="image"  loading="eager"></a>
                                             </figure>
                                         </div>
                                         <div class="text-holder">
@@ -850,15 +849,15 @@
                                                             <select class="lms-jobs-select">
                                                                 <option value="" selected="selected">Content Creator/Instructional Designer
                                                                 </option>
-                                                                <option value="">Subject Matter Expert (SME)</option>
-                                                                <option value="">Online Instructor/Educator</option>
-                                                                <option value="">Curriculum Developer</option>
-                                                                <option value="">Learning Experience Designer</option>
-                                                                <option value="">Administrator</option>
-                                                                <option value="">Quality Assurance Specialist</option>
-                                                                <option value="">Marketing and Enrollment Manager</option>
-                                                                <option value="">Technical Support Specialist</option>
-                                                                <option value="">Data Analyst</option>
+                                                                <option value="Subject Matter Expert (SME)">Subject Matter Expert (SME)</option>
+                                                                <option value="Online Instructor/Educator">Online Instructor/Educator</option>
+                                                                <option value="Curriculum Developer">Curriculum Developer</option>
+                                                                <option value="Learning Experience Designer">Learning Experience Designer</option>
+                                                                <option value="Administrator">Administrator</option>
+                                                                <option value="Quality Assurance Specialist">Quality Assurance Specialist</option>
+                                                                <option value="Marketing and Enrollment Manager">Marketing and Enrollment Manager</option>
+                                                                <option value="Technical Support Specialist">Technical Support Specialist</option>
+                                                                <option value="Data Analyst">Data Analyst</option>
                                                             </select>
                                                         </div>
                                                     </div>
