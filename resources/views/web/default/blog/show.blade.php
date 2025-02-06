@@ -10,9 +10,7 @@
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-12">
                     <a href="/blog" itemprop="url" class="post-back-btn font-18 font-weight-normal">Back to blog</a>
-                    
                     <h1 class="font-30 font-weight-bold my-20">{{ $post->title }}</h1>
-
                     <div class="post-date">
                         <span class="mt-15 d-block font-16">{{ dateTimeFormat($post->created_at, 'j M Y') }}</span>
                     </div>
@@ -88,7 +86,7 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
+                    </div>
                     <div class="single-post-block mb-50">
                         <div class="post-inner">
                             <ul class="order-list">
@@ -116,7 +114,6 @@
                             <span class="d-block text-right font-14 ">Don't worry, we don't spam</span>
                         </form>
                     </div>
-
                 </div>
                 @if( !empty( $headings_array ) )
 					<div class="col-12 col-lg-3 col-md-3">
