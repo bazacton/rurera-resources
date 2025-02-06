@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="/assets/default/vendors/scroll-animation/aos.css"/>
 <style>
     .gallery-sub-header {
-        min-height: 850px;
+        min-height: 640px;
     }
 
     .lms-search-services {
@@ -12,48 +12,13 @@
     }
 
     .lms-column-section {
-        background-color: #7679ee;
+        background-color: #75c0fa;
     }
 
     .choose-sats-section {
         background-color: #3d358b;
     }
 </style>
-<style>
-        .bg-deepskyblue {
-            background-color: #46b7e9;
-        }
-        .bg-blue {
-            background-color: #3d358b;
-        }
-        .bg-yellow {
-            background-color: #f6b801;
-        }
-        .bg-deepyellow {
-            background-color: #f18700;
-        }
-        .bg-lightblue {
-            background-color: #7679ee;
-        }
-        .bg-orange {
-            background-color: #f35b05;
-        }
-        .bg-mdblue {
-            background-color: #5e82d8;
-        }
-        .bg-green {
-            background-color: #3cb46e;
-        }
-        .gallery-sub-header {
-            min-height: 480px;
-        }
-        .lms-column-section {
-            background-color: #75c0fa;
-        }
-        .lms-newsletter {
-            background-color: var(--gray-dark);
-        }
-    </style>
 @endpush
 
 @section('content')
