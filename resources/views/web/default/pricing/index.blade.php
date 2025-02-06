@@ -316,7 +316,7 @@
                                                 <p class="mt-15">
                                                     <a href="#">
                                                         <span class="icon-svg">
-                                                            
+                                                            <img src="/assets/default/svgs/sound-play.svg" height="28" width="28" alt="sound-play">
                                                         </span>
                                                     </a>
                                                     Upgrade to the Family Premium plan to read the rest of this book and enjoy unlimited access to our entire library.
