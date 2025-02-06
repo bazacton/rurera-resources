@@ -301,7 +301,7 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img alt="company performance" height="auto" src="../assets/default/img/company-quiz.jpg" width="100%" itemprop="image" class="w-100" loading="eager" title="company performance" /></figure>
+                                <figure><img alt="company performance" height="401" src="/assets/default/img/company-quiz.jpg" width="652" itemprop="image" class="w-100" loading="eager" title="company performance" /></figure>
                             </div>
                         </div>
                         <div class="card">
@@ -318,7 +318,7 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img alt="company rewards" height="auto" src="../assets/default/img/all-in-1-platform.jpg" width="100%" itemprop="image" class="w-100" loading="eager" title="company rewards" /></figure>
+                                <figure><img alt="company rewards" height="401" src="../assets/default/img/all-in-1-platform.jpg" width="652" itemprop="image" class="w-100" loading="eager" title="company rewards" /></figure>
                             </div>
                         </div>
                         <div class="card">
@@ -333,7 +333,7 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img alt="company insights" height="auto" src="../assets/default/img/company-sats.jpg" width="100%" itemprop="image" class="w-100" loading="eager" title="company insights" /></figure>
+                                <figure><img alt="company insights" height="401" src="../assets/default/img/company-sats.jpg" width="652" itemprop="image" class="w-100" loading="eager" title="company insights" /></figure>
                             </div>
                         </div>
                         <div class="card">
@@ -351,7 +351,7 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img alt="company quiz" height="auto" src="../assets/default/img/company-insights.jpg" width="100%" itemprop="image" class="w-100" loading="eager" title="company quiz" /></figure>
+                                <figure><img alt="company quiz" height="401" src="../assets/default/img/company-insights.jpg" width="652" itemprop="image" class="w-100" loading="eager" title="company quiz" /></figure>
                             </div>
                         </div>
                         <div class="card">
@@ -369,7 +369,7 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img alt="company curriculum" height="auto" src="../assets/default/img/company-performance.jpg" width="100%" itemprop="image" class="w-100" loading="eager" title="company curriculum" /></figure>
+                                <figure><img alt="company curriculum" height="401" src="../assets/default/img/company-performance.jpg" width="652" itemprop="image" class="w-100" loading="eager" title="company curriculum" /></figure>
                             </div>
                         </div>
                         <div class="card">
