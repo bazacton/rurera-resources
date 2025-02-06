@@ -62,7 +62,7 @@
 .book-pages-navs .generate {margin-right: auto;}
 body .editor-zone:has(.editor-controls-holder),
 body .editor-zone:has(.field-options.hide) {padding-left: 0;}
-body .editor-zone:has(.editor-controls-holder) {display: flex; align-items: flex-start; justify-content: center; gap: 25px; padding:0; overflow: visible;}
+body .editor-zone:has(.editor-controls-holder) {display: flex; align-items: flex-start; justify-content: center; gap: 25px; padding:0;}
 body .editor-zone:has(.field-options) {padding-left:0px;}
 .book-dropzone {position: relative; border: 1px solid #ccc; border-radius: 5px; width: 770px; height:100%; box-sizing: border-box; background-size: cover !important; overflow: hidden; display: inline-block; vertical-align: top;}
 .book-dropzone img {max-width: 100%;}
@@ -80,7 +80,7 @@ body .editor-controls .nav .nav-item .nav-link.active,
 body .editor-objects-block .nav .nav-item .nav-link.active {border-bottom-color: #fff; color: var(--primary);}
 body .editor-parent-nav ul {gap: 8px 10px;}
 body .editor-parent-nav .nav-link {padding: 5px 12px; font-size: 14px;}
-body .book-dropzone {border-radius: 0; min-height: 705px; overflow: hidden;}
+body .book-dropzone {border-radius: 0; min-height: 705px;}
 .editor-objects-block h5 {padding: 0 15px; margin-bottom: 20px;}
 .editor-controls-holder .fade:not(.show) {display: none;}
 body .editor-controls-holder .editor-objects-block .nav,
