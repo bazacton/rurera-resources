@@ -271,10 +271,7 @@
                                         <li>Conduct code reviews to ensure adherence to coding standards, software design principles, and performance optimization.</li>
                                         <li>Troubleshoot and debug complex software issues, identify root causes, and implement effective solutions.</li>
                                         <li>Participate in Agile/Scrum development processes, including sprint planning, daily stand-ups, and retrospectives.</li>
-                                
                                         <li>Collaborate with quality assurance teams to ensure software meets quality standards and is thoroughly tested.</li>
-                                        
-                                    
                                     </ul>
                                     <h3 itemprop="title" class="font-24">Requirements</h3>
                                     <ul class="lms-disc-list">
@@ -284,19 +281,14 @@
                                         <li>In-depth knowledge of software development principles, methodologies, and best practices.</li>
                                         <li>Experience with front-end and back-end development, including web development frameworks, APIs, and databases.</li>
                                         <li>Familiarity with Agile/Scrum development methodologies and tools (e.g., JIRA, Confluence).</li>
-                                        
                                         <li>Excellent problem-solving and analytical skills, with the ability to quickly understand complex systems and troubleshoot issues. </li>
-                                       
                                         <li>Strong communication and collaboration skills, with the ability to effectively convey technical concepts to both technical and non-technical stakeholders.</li>
                                         <li>Proven ability to work on multiple projects simultaneously and deliver high-quality results within deadlines.</li>
                                         <li>A passion for continuous learning and staying up-to-date with emerging technologies and industry trends.</li>
                                     </ul>
-
                                     <p itemprop="description">Join our team and contribute to the development of innovative and impactful software solutions. As a Senior Software Developer, you will have the opportunity to make a significant impact, lead technical initiatives, and contribute to the growth and success of our organization.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
@@ -341,10 +333,8 @@
                                         <li>Strong communication and collaboration skills, with the ability to work effectively with cross-functional teams.</li>
                                     </ul>
                                     <p itemprop="description">In summary, as a Database Administrator, you will play a crucial role in designing, implementing, and maintaining efficient and secure database systems. You will monitor performance, troubleshoot issues, optimize queries, ensure data integrity, and collaborate with various stakeholders to meet the organization's data management needs.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                   
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
@@ -359,7 +349,6 @@
                             </div>
                             <div id="collapse_3" class="collapse" aria-labelledby="heading_3" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and experienced Math Assessment Specialist to join our team. As a Math Assessment Specialist, you will play a crucial role in developing and implementing effective math assessment strategies and materials. You will work closely with curriculum developers, educators, and other stakeholders to ensure high-quality math assessments that align with educational standards.</p>
                                 
