@@ -164,7 +164,7 @@ button:disabled {
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
-                                <div class="row">
+                                  <div class="row">
                                         <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                                             <span class="form-label">Expiry</span>
                                             <div class="form-group">
@@ -235,17 +235,6 @@ button:disabled {
                                     Keep in mind that there may be sales tax added. For instructions on how to cancel, please refer to the provided guidelines
                                 </p>
                                 @endif
-
-
-
-
-
-
-
-
-
-
-
                                 <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center"><a href="javascript:;" data-user_id="{{isset($user_id)? $user_id : 0}}" data-subscribed_for="{{isset($subscribed_for)? $subscribed_for : 0}}" class="nav-link btn-primary rounded-pill mb-25 process-payment">Take me to Stripe Site</a></div>
                             </div>
                         </div>
@@ -253,18 +242,11 @@ button:disabled {
                 </div>
             </div>
         </div>
-
-
-
         </div>
     </div>
 </div>
 
-
 <script>
-
-
-
 	$(document).on('click', '.coupon-code-apply', function (e) {
 		var thisObj = $(this);
 		rurera_loader(thisObj, 'div');
@@ -371,11 +353,6 @@ button:disabled {
         },
       });
 
-      // This point will only be reached if there is an immediate error when
-      // confirming the payment. Otherwise, your customer will be redirected to
-      // your `return_url`. For some payment methods like iDEAL, your customer will
-      // be redirected to an intermediate site first to authorize the payment, then
-      // redirected to the `return_url`.
       if (error.type === "card_error" || error.type === "validation_error") {
         showMessage(error.message);
       } else {
