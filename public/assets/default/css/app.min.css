@@ -1619,7 +1619,8 @@ Lms Books Listing Style End
 .lms-choose-membership .subscription span a { font-weight: bold;color: var(--primary-hover);padding-left: 6px;text-transform: capitalize;}
 .lms-choose-membership .subscription span a:hover {text-decoration: underline;}
 .lms-choose-membership .book-form .secure-server {display: flex;justify-content: center;align-items: center;}
-.lms-choose-membership .book-form .secure-server figure svg {width: 26px;height: 36px;display: flex;fill: #7c7d7f;margin-right: 5px;}
+.lms-choose-membership .book-form .secure-server figure svg,
+.lms-choose-membership .book-form .secure-server figure img {width: 26px;height: 26px; display: flex;fill: #7c7d7f; filter: invert(54%) sepia(7%) saturate(99%) hue-rotate(181deg) brightness(88%) contrast(88%); margin-right: 5px;}
 .lms-choose-membership .book-form .secure-server span {font-size: 12px;line-height: 14px;color: #7c7d7f;}
 .membership-steps-list {display: flex;align-items: center;justify-content: center;position: relative;max-width: 575px;margin: 0 auto;}
 .membership-steps-list li {position: relative;width: 50%;}
