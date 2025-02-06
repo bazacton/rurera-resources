@@ -194,7 +194,7 @@
                 <div class="col-12 col-sm-12 col-lg-3 col-md-6">
                     <div class="fancy testimonial-card">
                         <div class="text-center testimonial-img">
-                            <figure><img alt="bran images" height="auto" src="../assets/default/img/bri-client2.jpg" width="100%" itemprop="image" loading="eager" title="bran images" /></figure>
+                            <figure><img alt="bran images" height="120" src="/assets/default/img/bri-client2.jpg" width="120" itemprop="image" loading="eager" title="bran images" /></figure>
                         </div>
                         <div class="testimonial-body">
                             <h2 class="post-title" itemprop="title">Cristian Miller</h2>
@@ -206,7 +206,7 @@
                 <div class="col-12 col-sm-12 col-lg-3 col-md-6">
                     <div class="fancy testimonial-card">
                         <div class="text-center testimonial-img">
-                            <figure><img alt="bran images" height="auto" src="../assets/default/img/bri-client1.jpg" width="100%" itemprop="image" loading="eager" title="bran images" /></figure>
+                            <figure><img alt="bran images" height="120" src="/assets/default/img/bri-client1.jpg" width="120" itemprop="image" loading="eager" title="bran images" /></figure>
                         </div>
                         <div class="testimonial-body">
                             <h2 class="post-title" itemprop="title">Peter J.</h2>
@@ -218,7 +218,7 @@
                 <div class="col-12 col-sm-12 col-lg-3 col-md-6">
                     <div class="fancy testimonial-card">
                         <div class="text-center testimonial-img">
-                            <figure><img alt="bran images" height="auto" src="../assets/default/img/bri-client3.jpg" width="100%" itemprop="image" loading="eager" title="bran images" /></figure>
+                            <figure><img alt="bran images" height="120" src="/assets/default/img/bri-client3.jpg" width="120" itemprop="image" loading="eager" title="bran images" /></figure>
                         </div>
                         <div class="testimonial-body">
                             <h2 class="post-title" itemprop="title">Fiona Thompson</h2>
@@ -230,7 +230,7 @@
                 <div class="col-12 col-sm-12 col-lg-3 col-md-6">
                     <div class="fancy testimonial-card">
                         <div class="text-center testimonial-img">
-                            <figure><img alt="bran images" height="auto" src="../assets/default/img/bri-client6.jpg" width="100%" itemprop="image" loading="eager" title="bran images" /></figure>
+                            <figure><img alt="bran images" height="120" src="../assets/default/img/bri-client6.jpg" width="120" itemprop="image" loading="eager" title="bran images" /></figure>
                         </div>
                         <div class="testimonial-body">
                             <h2 class="post-title" itemprop="title">Kyle Matt</h2>
