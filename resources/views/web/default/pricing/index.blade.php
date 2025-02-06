@@ -417,7 +417,7 @@
                                                     </div>
                                                     <div class="secure-server">
                                                         <figure>
-                                                            
+                                                            <img src="/assets/default/svgs/server-lock.svg" height="26" width="26" alt="">
                                                         </figure>
                                                         <span>
                                                             Secure Server<br />
