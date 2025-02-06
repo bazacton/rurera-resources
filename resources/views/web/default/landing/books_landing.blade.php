@@ -23,7 +23,6 @@
           <strong class="d-block font-36">Read Anywhere, Anytime!</strong>
           <p itemprop="description" class="lms-subtitle font-19 font-weight-normal pt-20">Rurera boosts reading skills with fun books, cool rewards, and personalized challenges. Watch your child's love for reading grow every day!</p>
           <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
-
         </div>
       </div>
     </div>
@@ -502,7 +501,7 @@
             </div>
         </div>
     </div>
-  <div class="modal fade lms-choose-membership" id="exampleModal" style="display: none;" aria-hidden="true">
+  <div class="modal fade lms-choose-membership" id="exampleModal" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
