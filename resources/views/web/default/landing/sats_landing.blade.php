@@ -2,16 +2,11 @@
 
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/scroll-animation/aos.css"/>
-<style>
-    .gallery-sub-header {
-        min-height: 850px;
-    }
-</style>
 @endpush
 
 @section('content')
 <section class="content-section">
-    <section class="position-relative job-singup-sub-header gallery-sub-header page-sub-header pb-80 pt-80 mb-0 overflow-hidden">
+    <section class="position-relative job-singup-sub-header gallery-sub-header page-sub-header pb-80 pt-80 mb-0 overflow-hidden" style="min-height: 850px;">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-md-12 col-lg-6" data-aos-once="true" data-aos="fade-right" data-aos-anchor=".gallery-sub-header" data-aos-offset="100" data-aos-duration="3000">
