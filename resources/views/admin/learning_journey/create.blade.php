@@ -295,6 +295,22 @@
     <div class="section-body">
         <div class="row">
             <div class="col-12 col-md-12 col-lg-12">
+                <div class="zoom-header">
+                    <button class="zoomin">zoom in </button>
+                    <select id="sel" class="select" onchange="handleChange()">
+                        <option value=0.5>50%</option>
+                        <option value=0.75>75%</option>
+                        <option value=0.85>85%</option>
+                        <option value=0.9>90%</option>
+                        <option value=1 selected>100%</option>
+                        <option value=1.2>120%</option>
+                        <option value=1.5>150%</option>
+                        <option value=1>reset</option>
+                    </select>
+                    <button class="zoomout"> zoom out</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12">
                 <div class="card">
                     <div class="card-body">
                         <form action="/admin/learning_journey/{{ !empty($LearningJourneyObj) ? $LearningJourneyObj->id.'/store' : 'store' }}" class="learning-journey-form"
@@ -1359,13 +1375,42 @@
 
       defaultFlowchartData = {};
 	  
-	  
-	  
-
-
-
-
-
     if (false) console.log('remove lint unused warning', defaultFlowchartData);
+</script>
+<script>    
+    let zoomArr = [0.5,0.75,0.85,0.9,1,1.2,1.5];
+
+    var element = document.querySelector('.book-dropzone');
+    let value = element.getBoundingClientRect().width / element.offsetWidth;
+
+    let indexofArr = 4;
+    handleChange = ()=>{
+    let val = document.querySelector('#sel').value; 
+    val = Number(val)
+    console.log('handle change selected value ',val);
+    indexofArr = zoomArr.indexOf(val);
+    console.log('Handle changes',indexofArr)
+    element.style['transform'] = `scale(${val})`
+    }
+
+    document.querySelector('.zoomin').addEventListener('click',()=>{
+    console.log('value of index zoomin is',indexofArr)
+    if(indexofArr < zoomArr.length-1){
+        indexofArr += 1;
+        value = zoomArr[indexofArr];
+        document.querySelector('#sel').value = value
+        element.style['transform'] = `scale(${value})`
+    }
+    })
+
+    document.querySelector('.zoomout').addEventListener('click',()=>{
+    console.log('value of index  zoom out is',indexofArr)
+    if(indexofArr >0){
+        indexofArr -= 1;
+        value = zoomArr[indexofArr];
+        document.querySelector('#sel').value = value
+    element.style['transform'] = `scale(${value})`
+    }
+    })
 </script>
 @endpush
