@@ -570,7 +570,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tab-pane fade" id="home" role="tabpanel">
               <div class="form-login-reading">
                 <div class="container">
                   <div class="row">
@@ -631,7 +631,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="book">
+            <div class="tab-pane fade" id="book" role="tabpanel">
               <div class="book-detail-holder">
                 <div class="container">
                   <div class="row justify-content-center">
@@ -667,7 +667,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="subscribe">
+            <div class="tab-pane fade" id="subscribe" role="tabpanel">
               <div class="subscribe-plan-holder">
                 <div class="container">
                   <div class="row">
@@ -712,7 +712,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="contact">
+            <div class="tab-pane fade" id="contact" role="tabpanel">
               <div class="book-form-holder">
                 <div class="container">
                   <div class="row justify-content-center">
