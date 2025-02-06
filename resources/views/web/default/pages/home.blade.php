@@ -204,7 +204,6 @@
         </div>
     </section>
 </section>
-
 @endsection
 
 @push('scripts_bottom')
@@ -231,12 +230,8 @@
     container.insertBefore(newText, container.firstChild);
 
     const maxMargin = 0.9;
-
-    // The last time the animation was started
     let lastChange = Date.now();
-    // The index of the current headline
     let currentHeadline = 0;
-    // Whether the DOM needs to be updated after the animation
     let needsUpdate = true;
 
     const changeFrame = () =>
