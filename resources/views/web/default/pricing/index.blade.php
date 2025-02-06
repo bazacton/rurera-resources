@@ -396,7 +396,9 @@
                                                 <div class="col-12 col-lg-12 col-md-12 col-sm-12">
                                                     <div class="form-group">
                                                         <div class="input-field input-card">
-                                                            
+                                                            <span class="icon-svg">
+                                                                <img src="/assets/default/svgs/card.svg" height="24" width="24" alt="card">
+                                                            </span>
                                                             <input type="text" placeholder="Card Number" />
                                                         </div>
                                                     </div>
