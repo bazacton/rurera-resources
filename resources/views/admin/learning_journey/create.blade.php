@@ -1379,9 +1379,9 @@
 	  
     if (false) console.log('remove lint unused warning', defaultFlowchartData);
 </script>
-<script>    
+<script>
+    //*** Book Dropzone Zoom Function Start ***//
     let zoomArr = [0.5,0.75,0.85,0.9,1,1.2,1.5];
-
     var element = document.querySelector('.book-dropzone');
     let value = element.getBoundingClientRect().width / element.offsetWidth;
 
@@ -1414,5 +1414,6 @@
     element.style['transform'] = `scale(${value})`
     }
     })
+    //*** Book Dropzone Zoom Function End ***//
 </script>
 @endpush
