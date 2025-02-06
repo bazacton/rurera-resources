@@ -305,7 +305,7 @@
                   <div class="blog-grid-detail pr-0">
                     <div class="blog-grid-image lazyload-img">
                       <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Reporting Made Easy:" title="Reporting Made Easy:" width="20" height="21" itemprop="image" loading="eager">
-                      <img src="../assets/default/img/bookchoose-img3.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
+                      <img src="/assets/default/img/bookchoose-img3.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
                     </div>
                     <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/rewards">Reporting Made Easy:</a>
@@ -434,7 +434,6 @@
                            @include('web.default.blog.rurera-grid-list',['post' =>$post])
                        </div>
                    @endforeach
-
                </div>
                <div class="d-flex align-items-center justify-content-center pt-30">
                     <a href="/pricing" class="try-rurera-btn btn-primary font-16 text-dark-blue register-btn py-15 px-30">Try Rurera for free</a>
@@ -443,8 +442,6 @@
        @endif
     @endforeach
 	
-  
-  
   @php
     $packages_only = isset( $packages )? $packages : array();
     $show_details = isset( $show_details )? $show_details : true;
@@ -472,9 +469,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12 col-12 mx-auto">
                     <div class="row">
-
                         @include('web.default.pricing.packages_list',['subscribes' => array(), 'packages_only' => $packages_only, 'show_details' => false])
-
                     </div>
                 </div>
             </div>
@@ -485,8 +480,7 @@
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                 <div class="modal-body">
-                    <div class="tab-content subscription-content" id="nav-tabContent">
-                    </div>
+                    <div class="tab-content subscription-content" id="nav-tabContent"></div>
                 </div>
             </div>
         </div>
