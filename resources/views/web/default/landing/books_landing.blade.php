@@ -570,7 +570,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="home">
+            <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
               <div class="form-login-reading">
                 <div class="container">
                   <div class="row">
