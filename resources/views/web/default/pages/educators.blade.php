@@ -127,19 +127,19 @@
                 <div class="position-relative">
                     <img
                         alt="Have a Question? Ask it in forum and get answer"
-                        height="auto"
+                        height="524"
                         src="/store/1/default_images/home_sections_banners/assesment-quiz.jpg"
-                        width="100%"
+                        width="402"
                         itemprop="image"
                         class="find-instructor-section-hero"
                         loading="eager"
                         title="get answer"
                     />
-                    <img alt="circle" height="auto" src="/assets/default/img/home/circle-4.png" width="100%" itemprop="image" class="find-instructor-section-circle" loading="eager" title="circle" />
-                    <img alt="dots" height="auto" src="/assets/default/img/home/dot.png" width="100%" itemprop="image" class="find-instructor-section-dots" loading="eager" title="dots" />
+                    <img alt="circle" height="170" src="/assets/default/img/home/circle-4.png" width="170" itemprop="image" class="find-instructor-section-circle" loading="eager" title="circle" />
+                    <img alt="dots" height="110" src="/assets/default/img/home/dot.png" width="70" itemprop="image" class="find-instructor-section-dots" loading="eager" title="dots" />
                     <div class="align-items-center d-flex bg-white border example-instructor-card p-5 p-md-15 rounded-sm shadow-lg">
                         <div class="example-instructor-card-avatar">
-                            <img alt="user name" height="auto" src="/assets/default/img/home/become_instructor.svg" width="100%" itemprop="image" class="img-cover rounded-circle" loading="eager" title="user name" />
+                            <img alt="user name" height="512" src="/assets/default/img/home/become_instructor.svg" width="512" itemprop="image" class="img-cover rounded-circle" loading="eager" title="user name" />
                         </div>
                         <div class="flex-grow-1 ml-15"><span class="font-weight-bold d-block font-14 text-secondary">Take a quiz</span><span class="text-gray font-12 font-weight-500">Start earning with practice now..</span></div>
                     </div>
