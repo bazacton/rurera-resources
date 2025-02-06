@@ -33,10 +33,6 @@
                         </li>
                     </ul>
                     <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
-                    <!-- <div class="d-flex align-items-center">
-                        <a href="{{url('/')}}/register" class="btn-primary rounded-pill">KS1-year2 SATs</a>
-                        <a href="{{url('/')}}/register" class="btn-primary rounded-pill ml-15">KS2-year6 SATs</a>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -329,13 +325,9 @@
             <div class="row">
                 <div class="col-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".key-stage-section">
                     <div class="section-title text-left mb-40">
-                        <h2 class="mb-15 font-40">
-                            Endless SATs Resources, Endless Practice Opportunities
-
-                        </h2>
+                        <h2 class="mb-15 font-40">Endless SATs Resources, Endless Practice Opportunities</h2>
                         <p class="font-19 text-gray">
                             With consistent effort and top-tier SATs resources, boost your performance on exam day.
-
                         </p>
                     </div>
                 </div>
@@ -365,20 +357,15 @@
                             <div class="lms-key-stage text-center"><strong>2022</strong></div>
                             <div class="lms-key-stage">
                                 <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="#" />
-                                    </div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="#" />
-                                    </div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="#" />
-                                    </div>
+                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="#" /></div>
+                                    <div class="lms-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="#" /></div>
+                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="#" /></div>
                                 </div>
                             </div>
                             <div class="lms-key-stage">
                                 <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="#" />
-                                    </div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="#" />
-                                    </div>
+                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="#" /></div>
+                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="#" /></div>
                                 </div>
                             </div>
                             <div class="lms-key-stage">
@@ -400,20 +387,15 @@
                             <div class="lms-key-stage text-center"><strong>2019</strong></div>
                             <div class="lms-key-stage">
                                 <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="#" />
-                                    </div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="#" />
-                                    </div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="#" />
-                                    </div>
+                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="#" /></div>
+                                    <div class="lms-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="#" /></div>
+                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="#" /></div>
                                 </div>
                             </div>
                             <div class="lms-key-stage">
                                 <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="#" />
-                                    </div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="#" />
-                                    </div>
+                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="#" /></div>
+                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="#" /></div>
                                 </div>
                             </div>
                             <div class="lms-key-stage">
