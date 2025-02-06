@@ -294,6 +294,7 @@
     </div>
     <div class="section-body">
         <div class="row">
+            <!-- Zoom Header Start -->
             <div class="col-12 col-md-12 col-lg-12">
                 <div class="zoom-header">
                     <button class="zoomin">zoom in </button>
@@ -310,6 +311,7 @@
                     <button class="zoomout"> zoom out</button>
                 </div>
             </div>
+            <!-- Zoom Header End -->
             <div class="col-12 col-md-12 col-lg-12">
                 <div class="card">
                     <div class="card-body">
