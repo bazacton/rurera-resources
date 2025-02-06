@@ -23,10 +23,8 @@
             <div class="row">
                 <div class="col-12 col-lg-9 col-md-9">
                     <div class="post-show pb-0 pr-50">
-
                         {!! nl2br($post->content) !!}
                     </div>
-
                     {{-- post Comments --}}
                     @if($post->enable_comment)
                         @include('web.default.includes.comments',[
@@ -74,11 +72,11 @@
                             <div class="rurera-blog blog-medium" itemscope="" itemtype="https://schema.org/NewsArticle">
                                 <div class="blog-grid-detail">
                                     <span class="badge created-at d-flex align-items-center">
-                                    <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
-                                    <span itemprop="datePublished" content="2023-04-05T08:00:00+08:00">28 Apr 2023</span>
+                                        <i data-feather="calendar" style="height: 20px; width: 20px;" class="mr-5"></i>
+                                        <span itemprop="datePublished" content="2023-04-05T08:00:00+08:00">28 Apr 2023</span>
                                     </span>
                                     <h2 class="blog-grid-title mt-10" itemprop="headline">
-                                    <a href="/blog/elevating-education-exploring-the-future-of-learning-for-year-6-students" itemprop="url">How to Explore the Future of Learning for Year 6 Students.</a>
+                                        <a href="/blog/elevating-education-exploring-the-future-of-learning-for-year-6-students" itemprop="url">How to Explore the Future of Learning for Year 6 Students.</a>
                                     </h2>
                                 </div>
                                 <div class="blog-grid-image">
