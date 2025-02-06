@@ -405,7 +405,7 @@
                     <div class="mt-0 lms-faqs mx-w-100" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
                         <div id="accordion">
                             <div class="card" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
-                                <div class="card-header" id="headingon11">
+                                <div class="card-header" id="heading11">
                                     <button aria-controls="collapse11" aria-expanded="false" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapse11" data-toggle="collapse">
                                         What makes Rurera different from other educational platforms?
                                     </button>
@@ -420,7 +420,7 @@
                                 </div>
                             </div>
                             <div class="card" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
-                                <div class="card-header" id="headingon12">
+                                <div class="card-header" id="heading12">
                                     <button aria-controls="collapse12" aria-expanded="true" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapse12" data-toggle="collapse">
                                         What kind of features does Rurera provide for teachers?
                                     </button>
@@ -441,7 +441,7 @@
                                     </button>
                                 </div>
                                 <div class="collapse" id="collapseOne" aria-labelledby="heading" data-parent="#accordion">
-                                    <div class="card-body" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+                                    <div class="card-body" itemscope="" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
                                         <p itemprop="text">
                                             By offering easy-to-use tools for creating and customizing lessons and homework, as well as automated grading, Rurera streamlines administrative tasks and allows you to focus more on teaching.
                                         </p>
@@ -455,7 +455,7 @@
                                     </button>
                                 </div>
                                 <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
-                                    <div class="card-body" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+                                    <div class="card-body" itemscope="" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
                                         <p itemprop="text">
                                             Yes, Rurera includes a variety of assessment tools, such as quizzes and mock tests, that helps teachers to evaluate student understanding and track their progress over time. Detailed performance
                                             reports assist in identifying areas for improvement.
@@ -470,7 +470,7 @@
                                     </button>
                                 </div>
                                 <div class="collapse" id="collapsefive" aria-labelledby="headingfive" data-parent="#accordion">
-                                    <div class="card-body" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+                                    <div class="card-body" itemscope="" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
                                         <p itemprop="text">Yes, Rurera’s resources are designed to align with national curriculum standards, ensuring they are relevant and useful for a variety of educational requirements.</p>
                                     </div>
                                 </div>
@@ -480,7 +480,7 @@
                                     <button aria-controls="collapse6" aria-expanded="false" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapse6" data-toggle="collapse">How can I create quizzes on Rurera?</button>
                                 </div>
                                 <div class="collapse" id="collapse6" aria-labelledby="heading6" data-parent="#accordion">
-                                    <div class="card-body" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+                                    <div class="card-body" itemscope="" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
                                         <p itemprop="text">
                                             Rurera provides an easy-to-use quiz creation tool where teachers can design custom quizzes to assess student understanding. You can choose from various question formats, set difficulty levels, and
                                             schedule quizzes according to your teaching plan.
@@ -495,7 +495,7 @@
                                     </button>
                                 </div>
                                 <div class="collapse" id="collapse7" aria-labelledby="heading7" data-parent="#accordion">
-                                    <div class="card-body" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+                                    <div class="card-body" itemscope="" itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
                                         <p itemprop="text">
                                             Yes, Rurera offers detailed insights into student performance, including breakdowns of quiz results, assignment scores, and overall progress. You can view individual performance data to identify
                                             strengths and areas for improvement.
