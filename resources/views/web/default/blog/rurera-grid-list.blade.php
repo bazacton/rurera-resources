@@ -19,7 +19,7 @@
 
     </div>
     <div class="blog-grid-image">
-        <img src="{{ $post->image }}" class="img-cover" alt="{{ $post->title }}" title="{{ $post->title }}" width="100%" height="100%" itemprop="image" loading="eager">
+        <img src="{{ $post->image }}" class="img-cover" alt="{{ $post->title }}" title="{{ $post->title }}" width="1380" height="920" itemprop="image" loading="eager">
     </div>
 
 </div>
