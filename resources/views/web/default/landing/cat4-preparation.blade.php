@@ -4,15 +4,7 @@
 <link rel="stylesheet" href="/assets/default/vendors/scroll-animation/animate.css">
 
 <style>
-        .bg-deepskyblue {
-            background-color: #46b7e9;
-        }
-        .bg-blue {
-            background-color: #3d358b;
-        }
-        .bg-yellow {
-            background-color: #f6b801;
-        }
+
         .bg-deepyellow {
             background-color: #f18700;
         }
@@ -262,7 +254,7 @@
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon bg-deepskyblue"><img alt="Personalized Learning Paths" height="200" src="/assets/default/svgs/features-resources-white.svg" width="200" /></i>
+                            <i class="svg-icon bg-deepskyblue" style="background-color: #46b7e9;"><img alt="Personalized Learning Paths" height="200" src="/assets/default/svgs/features-resources-white.svg" width="200" /></i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">Personalized Learning Paths</h3>
