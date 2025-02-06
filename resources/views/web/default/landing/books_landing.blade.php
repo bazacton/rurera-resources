@@ -1,13 +1,6 @@
 @extends(getTemplate().'.layouts.app')
 
 @push('styles_top')
-<style>
-    .book-library-sub-header {
-        background-color: #333399;
-        background-image: linear-gradient(transparent 11px, rgba(255, 255, 255, 0.2) 12px, transparent 12px), linear-gradient(90deg, transparent 11px, rgba(255, 255, 255, 0.2) 12px, transparent 12px);
-        background-size: 100% 12px, 12px 100%;
-    }
-</style>
 @endpush
 
 @section('content')
