@@ -194,7 +194,7 @@
                 <div class="col-12 col-sm-12 col-lg-3 col-md-6">
                     <div class="fancy testimonial-card">
                         <div class="text-center testimonial-img">
-                            <figure><img alt="bran images" height="120" src="assets/default/img/bri-client2.jpg" width="120" itemprop="image" loading="eager" title="bran images" /></figure>
+                            <figure><img alt="bran images" height="120" src="/assets/default/img/bri-client2.jpg" width="120" itemprop="image" loading="eager" title="bran images" /></figure>
                         </div>
                         <div class="testimonial-body">
                             <h2 class="post-title" itemprop="title">Cristian Miller</h2>
