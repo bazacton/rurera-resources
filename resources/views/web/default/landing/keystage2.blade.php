@@ -6,7 +6,6 @@
 
 @section('content')
 <section class="content-section">
-
     <section class="text-center page-sub-header py-80" style="background-color: var(--primary);">
         <div class="container">
             <div class="row">
@@ -431,11 +430,7 @@
             </div>
         </div>
     </section>
-
-
-
 </section>
-
 @endsection
 
 @push('scripts_bottom')
