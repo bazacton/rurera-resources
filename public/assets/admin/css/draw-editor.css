@@ -239,6 +239,7 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
     border-radius: 3px;
     min-height: 33px;
     max-height: 33px;
+    outline: none;
 }
 /* Zoom Header Style End */
 
