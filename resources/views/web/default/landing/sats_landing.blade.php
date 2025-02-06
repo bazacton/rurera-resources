@@ -556,15 +556,9 @@
                     <div class="section-title section-inner-title">
                         <h2 class="font-40 text-dark">KS1 & KS2 SATs Practice</h2>
                         <p class="font-16 text-gray mt-10">
-
                             Rurera offers comprehensive KS1 and KS2 SATs practice, providing interactive exercises and personalized feedback tailored to each student's needs. This helps young learners build confidence and master essential skills for their assessments.
-
                         </p>
                     </div>
-                    <!-- <div class="mt-35 d-flex align-items-center btn-holder">
-                        <a href="{{url('/')}}/pricing" class="btn btn-primary">Start SATs Practice</a>
-                        <a href="{{url('/')}}/pricing" class="btn btn-outline-primary ml-15">Learn More</a>
-                    </div> -->
                 </div>
             </div>
             <div class="col-12 col-lg-6 mt-20 mt-lg-0" data-aos="fade-left" data-aos-offset="200" data-aos-duration="3000">
@@ -595,10 +589,6 @@
 
                         </p>
                     </div>
-                    <!-- <div class="mt-35 d-flex align-items-center btn-holder">
-                        <a href="{{url('/')}}/pricing" class="btn btn-primary">Take a SATs Quiz</a>
-                        <a href="{{url('/')}}/pricing" class="btn btn-outline-primary ml-15">Moniter performance</a>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -614,10 +604,6 @@
 
                         </p>
                     </div>
-                    <!-- <div class="mt-35 d-flex align-items-center btn-holder">
-                        <a href="{{url('/')}}/pricing" class="btn btn-primary">Track performance</a>
-                        <a href="{{url('/')}}/pricing" class="btn btn-outline-primary ml-15">Learn More</a>
-                    </div> -->
                 </div>
             </div>
             <div class="col-12 col-lg-6 mt-20 mt-lg-0" data-aos="fade-left" data-aos-offset="200" data-aos-duration="3000">
@@ -644,10 +630,6 @@
                         <h2 class="font-40 text-dark"> Effortlessly Track Practice</h2>
                         <p class="font-16 text-gray mt-10">Easily monitor practice with detailed logs and performance insights, helping you keep track of progress and pinpoint areas needing improvement.</p>
                     </div>
-                    <!-- <div class="mt-35 d-flex align-items-center btn-holder">
-                        <a href="{{url('/')}}/pricing" class="btn btn-primary">Track performance</a>
-                        <a href="{{url('/')}}/pricing" class="btn btn-outline-primary ml-15">Learn More</a>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -659,15 +641,9 @@
                     <div class="section-title section-inner-title">
                         <h2 class="font-40 text-dark">Enhance Learning with SATs Papers</h2>
                         <p class="font-16 text-gray mt-10">
-                        Enhance learning by using SATs papers, which provide targeted practice and familiarize students with exam formats. These papers help reinforce key concepts, improve problem-solving skills, and build confidence by simulating real test conditions.
-
-
+                            Enhance learning by using SATs papers, which provide targeted practice and familiarize students with exam formats. These papers help reinforce key concepts, improve problem-solving skills, and build confidence by simulating real test conditions.
                         </p>
                     </div>
-                    <!-- <div class="mt-35 d-flex align-items-center btn-holder">
-                        <a href="{{url('/')}}/pricing" class="btn btn-primary">Take a Quiz</a>
-                        <a href="{{url('/')}}/pricing" class="btn btn-outline-primary ml-15">Moniter performance</a>
-                    </div> -->
                     <div class="flex-grow-1 ml-15"></div>
                 </div>
             </div>
@@ -857,8 +833,6 @@
                         </h3>
                         <p itemprop="description">
                             Explore online books, interactive multiplication, and activities that make learning fun and effective.
-
-
                         </p>
                     </div>
                 </div>
@@ -876,14 +850,9 @@
                         </p>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     </section>
-
-
     <section class="lms-column-section lms-accordion-section w-100 pb-60 pt-60" style="background-color: #f6f0ea; max-width: 100%;">
         <div class="container">
             <div class="row">
@@ -1077,7 +1046,6 @@
                                         <div class="card-body">
                                             <p>
                                                 The Year 6 SATs in 2025 will take place between <strong>12th May-15th May:</strong>
-
                                             </p>
                                             <ul>
                                                 <li> <strong>Monday:</strong> English paper 1 and English paper 2</li>
@@ -1085,11 +1053,6 @@
                                                 <li><strong>Wednesday: </strong> Maths paper 1 and maths paper 2</li>
                                                 <li> <strong>Thursday:</strong> Maths paper 3</li>
                                             </ul>
-
-
-
-
-
                                         </div>
                                     </div>
                                 </div>
@@ -1195,9 +1158,7 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 @endif
-
                             </div>
                         </div>
                     </div>
@@ -1278,7 +1239,6 @@
             </div>
         </div>
     </div>
-
 </section>
 @endsection
 
