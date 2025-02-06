@@ -1020,7 +1020,6 @@
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample2">
                                     <div class="card-body">
                                         <div class="row">
-
                                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                                 <div class="form-group">
                                                     <label class="input-label">First and last name</label>
@@ -1078,8 +1077,7 @@
                         <div class="row align-items-center">
                             <div class="col-12 col-lg-8 col-md-8">
                                 <h2 itemprop="title" class="mb-20 text-white font-40">Ready to start learning?</h2>
-                                <p itemprop="description" class="mb-0 text-white">Discover a growing collection of resources
-                                    delivered through Rurera.</p>
+                                <p itemprop="description" class="mb-0 text-white">Discover a growing collection of resources delivered through Rurera.</p>
                             </div>
                             <div class="col-12 col-lg-4 col-md-4">
                                 <div class="lms-btn-group">
