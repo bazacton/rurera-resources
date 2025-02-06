@@ -6,7 +6,6 @@
 
 @section('content')
 <section class="content-section">
-
     <section class="position-relative find-instructor-section gallery-sub-header job-singup-sub-header mb-0 page-sub-header pb-50 pt-80">
         <div class="container h-100">
             <div class="row h-100">
@@ -58,16 +57,7 @@
             </div>
             <div class="col-12 col-lg-6 mt-20 mt-lg-0">
                 <div class="position-relative">
-                    <img
-                        alt="Have a Question? Ask it in forum and get answer"
-                        height="auto"
-                        src="/store/1/default_images/home_sections_banners/curriculum.jpg"
-                        width="100%"
-                        itemprop="image"
-                        class="find-instructor-section-hero"
-                        loading="eager"
-                        title="get answer"
-                    />
+                    <img alt="Have a Question? Ask it in forum and get answer" height="auto" src="/store/1/default_images/home_sections_banners/curriculum.jpg" width="100%" itemprop="image" class="find-instructor-section-hero" loading="eager" title="get answer" />
                     <img alt="circle" height="auto" src="/assets/default/img/home/circle-4.png" width="100%" itemprop="image" class="find-instructor-section-circle" loading="eager" title="circle" />
                     <img alt="dots" height="auto" src="/assets/default/img/home/dot.png" width="100%" itemprop="image" class="find-instructor-section-dots" loading="eager" title="dots" />
                 </div>
