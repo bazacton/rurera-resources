@@ -334,7 +334,7 @@
                         <div class="login-password text-center">
                             <form class="mb-10">
                                 <div class="form-group d-inline-flex align-items-center justify-content-center flex-column flex-wrap">
-                                    <h2 class="text-center font-24 font-weight-bold mb-15" for="username">
+                                    <h2 class="text-center font-24 font-weight-bold mb-15">
                                         Enter Pin Code
                                         <span class="d-block font-16 font-weight-normal pt-5">If your teacher has given you a PIN code to access Rurera Go, enter <br> it in the form below..</span>
                                     </h2>
@@ -393,7 +393,7 @@
                         <div class="login-password">
                             <form>
                                 <div class="form-group">
-                                    <h2 class="text-center font-24 font-weight-bold mb-15" for="username">Please enter your emojis</h2>
+                                    <h2 class="text-center font-24 font-weight-bold mb-15">Please enter your emojis</h2>
                                     <div class="emoji-passwords">
                                         <span class="is_empty active"></span>
                                         <span class="is_empty"></span>
