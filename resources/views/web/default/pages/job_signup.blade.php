@@ -721,9 +721,7 @@
                                     <div class="testimonial-body">
                                         <div class="img-holder">
                                             <figure>
-                                                <a itemprop="url" href="{{url('/')}}"><img
-                                                        src="/store/1/default_images/testimonials/teacher-testimonial.jpg"
-                                                        alt="profile" title="profile" width="100%" height="auto" itemprop="image"  loading="eager"></a>
+                                                <a itemprop="url" href="{{url('/')}}"><img src="/store/1/default_images/testimonials/teacher-testimonial.jpg" alt="profile" title="profile" width="100%" height="auto" itemprop="image"  loading="eager"></a>
                                             </figure>
                                         </div>
                                         <div class="text-holder">
@@ -743,8 +741,8 @@
                                     <div class="testimonial-body">
                                         <div class="img-holder">
                                             <figure>
-                                                <a itemprop="url" href="{{url('/')}}"><img src="/store/1/default_images/testimonials/parent-testimonial.jpg"
-                                                        alt="testimonials" title="testimonials"  width="100%" height="auto" itemprop="image"  loading="eager"></a>
+                                                <a itemprop="url" href="{{url('/')}}">
+                                                    <img src="/store/1/default_images/testimonials/parent-testimonial.jpg" alt="testimonials" title="testimonials"  width="100%" height="auto" itemprop="image"  loading="eager"></a>
                                             </figure>
                                         </div>
                                         <div class="text-holder">
@@ -995,8 +993,7 @@
                                             </div>
                                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                                 <div class="form-group">
-                                                    <label class="input-label">Tell us about yourself and why you feel your a good
-                                                        fit</label>
+                                                    <label class="input-label">Tell us about yourself and why you feel your a good fit</label>
                                                     <div class="input-field">
                                                         <textarea class="field-textarea" placeholder="Detail here"></textarea>
                                                     </div>
