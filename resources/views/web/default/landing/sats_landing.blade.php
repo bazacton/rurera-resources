@@ -6,15 +6,9 @@
     .gallery-sub-header {
         min-height: 850px;
     }
-
-    .lms-search-services {
-        background-color: #f27530;
-    }
-
     .lms-column-section {
         background-color: #7679ee;
     }
-
     .choose-sats-section {
         background-color: #3d358b;
     }
@@ -264,7 +258,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-search-services mb-0 mt-0 pt-80 pb-60">
+    <section class="lms-search-services mb-0 mt-0 pt-80 pb-60" style="background-color: #f27530;">
         <div class="container">
             <div class="row">
                 <div class="col-12" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" data-aos-anchor=".lms-search-services">
