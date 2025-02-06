@@ -218,15 +218,7 @@ button:disabled {
                                 <p class="mb-20">By Clicking on Start Free Trial, I agree to the<a href="#">Terms of Service</a>And<a href="#">Privacy Policy</a></p>
                                 <div class="secure-server">
                                     <figure>
-                                        <svg fill="#000000" width="64px" height="64px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="lock-check" class="icon glyph">
-                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                            <g id="SVGRepo_iconCarrier">
-                                                <path
-                                                        d="M18,8H17V7A5,5,0,0,0,7,7V8H6a2,2,0,0,0-2,2V20a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V10A2,2,0,0,0,18,8ZM9,7a3,3,0,0,1,6,0V8H9Zm6.71,6.71-4,4a1,1,0,0,1-1.42,0l-2-2a1,1,0,0,1,1.42-1.42L11,15.59l3.29-3.3a1,1,0,0,1,1.42,1.42Z"
-                                                ></path>
-                                            </g>
-                                        </svg>
+                                      <img src="/assets/default/svgs/server-lock.svg" height="26" width="26" alt="">
                                     </figure>
                                     <span>
                                         Secure Server<br/>
@@ -235,8 +227,6 @@ button:disabled {
                                 </div>
                             </div>
                             </div>
-							
-
                             <div class="googlepay-gateway-fields conditional-fields rurera-hide payment-content p-25">
                                 @if( isset( $subscribed_childs ) && $subscribed_childs == 0)
                                 <p class="mb-25">
