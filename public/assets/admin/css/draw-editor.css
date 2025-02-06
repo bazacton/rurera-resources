@@ -161,6 +161,9 @@ body .editor-objects-list li:before {
 }
 .book-dropzone .drop-item.active{border-color: #ddd; opacity: 1;}
 .book-dropzone .field-data svg {height: 100%; margin-bottom: -10px;}
+.book-dropzone .field-data.ui-rotatable {
+    margin: 0 0 20px 0;
+}
 .book-dropzone .ui-rotatable-handle {top: 0; left: 0; pointer-events: none; opacity: 0; visibility: hidden;}
 body .flowchart-operator {border: 0;}
 body .ui-rotatable-handle::before {font-size: 10px; content: "\f0e2"; font-family: "Font Awesome 5 Free";}
