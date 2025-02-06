@@ -373,7 +373,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-header" id="heading-6">
+                            <div class="card-header" id="heading-7">
                                 <button aria-controls="collapse-7" aria-expanded="true" class="btn btn-link collapsed btn-block text-left" data-target="#collapse-7" data-toggle="collapse" itemprop="button" type="button">
                                     <span itemprop="size">#7</span>Reward points
                                 </button>
@@ -387,7 +387,7 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img alt="company curriculum" height="auto" src="../assets/default/img/company-rewards.jpg" width="100%" itemprop="image" class="w-100" loading="eager" title="company curriculum" /></figure>
+                                <figure><img alt="company curriculum" height="401" src="../assets/default/img/company-rewards.jpg" width="652" itemprop="image" class="w-100" loading="eager" title="company curriculum" /></figure>
                             </div>
                         </div>
                     </div>
@@ -402,9 +402,9 @@
                     <div class="text-center section-title mb-50"><h2 class="mb-10 font-40 text-dark-charcoal">Frequently asked questions</h2></div>
                 </div>
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12 mx-auto">
-                    <div class="mt-0 lms-faqs mx-w-100" itemtype="https://schema.org/Question" itemprop="mainEntity">
+                    <div class="mt-0 lms-faqs mx-w-100" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
                         <div id="accordion">
-                            <div class="card" itemtype="https://schema.org/Question" itemprop="mainEntity">
+                            <div class="card" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
                                 <div class="card-header" id="headingon11">
                                     <button aria-controls="collapse11" aria-expanded="false" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapse11" data-toggle="collapse">
                                         What makes Rurera different from other educational platforms?
@@ -419,7 +419,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" itemtype="https://schema.org/Question" itemprop="mainEntity">
+                            <div class="card" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
                                 <div class="card-header" id="headingon12">
                                     <button aria-controls="collapse12" aria-expanded="true" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapse12" data-toggle="collapse">
                                         What kind of features does Rurera provide for teachers?
@@ -434,7 +434,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" itemtype="https://schema.org/Question" itemprop="mainEntity">
+                            <div class="card" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
                                 <div class="card-header" id="heading">
                                     <button aria-controls="collapseOne" aria-expanded="true" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapseOne" data-toggle="collapse">
                                         How can Rurera help reduce educators' workload?
@@ -448,7 +448,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" itemtype="https://schema.org/Question" itemprop="mainEntity">
+                            <div class="card" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
                                 <div class="card-header" id="headingThree">
                                     <button aria-controls="collapseThree" aria-expanded="false" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapseThree" data-toggle="collapse">
                                         Can Rurera help with student assessments?
@@ -463,7 +463,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" itemtype="https://schema.org/Question" itemprop="mainEntity">
+                            <div class="card" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
                                 <div class="card-header" id="headingfive">
                                     <button aria-controls="collapsefive" aria-expanded="false" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapsefive" data-toggle="collapse">
                                         Are Rurera’s resources aligned with the national curriculum?
@@ -475,7 +475,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" itemtype="https://schema.org/Question" itemprop="mainEntity">
+                            <div class="card" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
                                 <div class="card-header" id="heading6">
                                     <button aria-controls="collapse6" aria-expanded="false" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapse6" data-toggle="collapse">How can I create quizzes on Rurera?</button>
                                 </div>
@@ -488,7 +488,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" itemtype="https://schema.org/Question" itemprop="mainEntity">
+                            <div class="card" itemscope="" itemtype="https://schema.org/Question" itemprop="mainEntity">
                                 <div class="card-header" id="heading7">
                                     <button aria-controls="collapse7" aria-expanded="false" class="font-weight-bold btn btn-link collapsed font-18" data-target="#collapse7" data-toggle="collapse">
                                         Can I get insights into individual student performance?
