@@ -284,7 +284,7 @@
                                 </div>
                             </div>
                             <div class="lms-img-holder">
-                                <figure><img alt="company sats" height="auto" src="../assets/default/img/adpative-assessment.jpg" width="100%" itemprop="image" class="w-100" loading="eager" title="company sats" /></figure>
+                                <figure><img alt="company sats" height="401" src="../assets/default/img/adpative-assessment.jpg" width="652" itemprop="image" class="w-100" loading="eager" title="company sats" /></figure>
                             </div>
                         </div>
                         <div class="card">
