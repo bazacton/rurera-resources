@@ -1,11 +1,7 @@
 @extends(getTemplate().'.layouts.app')
 
 @push('styles_top')
-<style>
-    .lms-column-section {
-        background-color: #7679ee;
-    }
-</style>
+
 @endpush
 
 @section('content')
@@ -86,7 +82,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-column-section lms-text-section mx-w-100 py-50 pr-30 pl-30">
+    <section class="lms-column-section lms-text-section mx-w-100 py-50 pr-30 pl-30" style="background-color: #7679ee;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -94,7 +90,7 @@
                         <div class="d-flex flex-column">
                             <h3 class="mb-10 font-30 d-flex text-white">
                                 <span class="icon-svg mr-15 mt-5">
-                                    <img src="../assets/default/svgs/bulb-white.svg" alt="#" height="35" width="35" />
+                                    <img src="/assets/default/svgs/bulb-white.svg" alt="#" height="35" width="35" />
                                 </span> Boost Your Child's Multiplication and Division Skills with a Splash of Fun!
                             </h3>
                         </div>
