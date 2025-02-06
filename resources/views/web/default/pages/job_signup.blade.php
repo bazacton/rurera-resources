@@ -526,10 +526,8 @@
                             </div>
                             <div id="collapse_7" class="collapse" aria-labelledby="heading_7" data-parent="#accordionExample">
                                 <div class="card-body">
-                                   
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a talented and detail-oriented Content Production Specialist to join our team. As a Content Production Specialist, you will be responsible for creating, editing, and managing various types of content across multiple platforms. Your role will involve working closely with the content team to ensure the production of high-quality and engaging content that meets our brand standards and resonates with our target audience.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Create original content, including articles, blog posts, social media posts, videos, and other multimedia materials.</li>
@@ -557,11 +555,9 @@
                                         <li>Ability to work independently and collaboratively in a fast-paced environment.</li>
                                         <li>Good communication skills and ability to work effectively with cross-functional teams.</li>
                                     </ul>
-                                <p itemprop="description">Join our team and contribute to the production of compelling and engaging content that captivates our audience and supports our brand goals. This is an exciting opportunity to showcase your creativity, writing skills, and attention to detail in a dynamic content production role.</p>
-                                
+                                    <p itemprop="description">Join our team and contribute to the production of compelling and engaging content that captivates our audience and supports our brand goals. This is an exciting opportunity to showcase your creativity, writing skills, and attention to detail in a dynamic content production role.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
@@ -576,10 +572,8 @@
                             </div>
                             <div id="collapse_7" class="collapse" aria-labelledby="heading_7" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a Language Arts Curriculum Designer to join our education team. As a Language Arts Curriculum Designer, you will play a crucial role in developing and designing a comprehensive and engaging language arts curriculum that aligns with educational standards and promotes literacy and language development. You will collaborate with subject matter experts, instructional designers, and educators to create curriculum materials that foster reading, writing, communication, and critical thinking skills.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Design and develop a standards-based language arts curriculum for specific grade levels or courses.</li>
@@ -607,11 +601,9 @@
                                         <li>Ability to work independently and collaboratively in a fast-paced environment.</li>
                                         <li>Familiarity with educational technology tools and platforms used in language arts instruction is a plus.</li>
                                     </ul>
-                                <p itemprop="description">Join our team and contribute to the development of a high-quality language arts curriculum that nurtures literacy skills and fosters a love for reading and writing. This is an exciting opportunity to make a positive impact on language arts education.</p>
-                                
+                                    <p itemprop="description">Join our team and contribute to the development of a high-quality language arts curriculum that nurtures literacy skills and fosters a love for reading and writing. This is an exciting opportunity to make a positive impact on language arts education.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
@@ -626,10 +618,8 @@
                             </div>
                             <div id="collapse_7" class="collapse" aria-labelledby="heading_7" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a skilled and detail-oriented QA Analyst to join our quality assurance team. As a QA Analyst, you will be responsible for ensuring the quality and reliability of our software products through rigorous testing and defect identification. Your role will involve designing and executing test plans, conducting functional and regression testing, and collaborating with cross-functional teams to deliver high-quality software solutions.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Collaborate with product managers, business analysts, and developers to understand project requirements and define test objectives.</li>
@@ -657,11 +647,9 @@
                                         <li>Excellent attention to detail and ability to work with minimal supervision.</li>
                                         <li>Strong communication and collaboration skills to work effectively in a team environment.</li>
                                     </ul>
-                                <p itemprop="description">Join our team and contribute to the delivery of high-quality software solutions. As a QA Analyst, you will have the opportunity to ensure the reliability and functionality of our products through comprehensive testing and quality assurance practices.</p>
-                                
+                                    <p itemprop="description">Join our team and contribute to the delivery of high-quality software solutions. As a QA Analyst, you will have the opportunity to ensure the reliability and functionality of our products through comprehensive testing and quality assurance practices.</p>
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
@@ -676,10 +664,8 @@
                             </div>
                             <div id="collapse_8" class="collapse" aria-labelledby="heading_8" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a highly skilled and experienced Senior UI/UX Designer to join our design team. As a Senior UI/UX Designer, you will be responsible for creating intuitive and visually appealing user interfaces and seamless user experiences across various digital platforms. Your role will involve leading the UI/UX design process, collaborating with cross-functional teams, and ensuring the delivery of exceptional design solutions that meet user needs and business objectives.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Lead the end-to-end UI/UX design process, from conceptualization to execution, for digital products and experiences.</li>
@@ -701,19 +687,14 @@
                                         <li>Proficiency in design tools such as Sketch, Figma, Adobe XD, or similar.</li>
                                         <li>Strong portfolio showcasing expertise in UI/UX design and problem-solving skills.</li>
                                         <li>Solid understanding of user-centered design principles, user research methodologies, and usability testing.</li>
-                                        <li>Knowledge of responsive design, mobile-first design principles, and accessibility standards.
-                                        </li>
+                                        <li>Knowledge of responsive design, mobile-first design principles, and accessibility standards.</li>
                                         <li>Excellent visual and communication skills to present design concepts and rationale to stakeholders.</li>
                                         <li>Ability to work in a collaborative, agile environment and manage multiple projects simultaneously.</li>
                                         <li>Experience with design systems and familiarity with front-end development concepts are a plus.</li>
-                                       
                                     </ul>
-
                                     <p itemprop="description">Join our team and contribute to creating exceptional user experiences through innovative UI/UX design. As a Senior UI/UX Designer, you will have the opportunity to shape the digital landscape of our curriculum, champion user-centered design, and drive positive impact for our users and business.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
