@@ -524,41 +524,21 @@
                             <li class="active">
                               <a href="#">
                                 <span class="icon-svg">
-                                  <svg fill="#000000" width="64px" height="64px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="lock-check" class="icon glyph">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                      <path d="M18,8H17V7A5,5,0,0,0,7,7V8H6a2,2,0,0,0-2,2V20a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V10A2,2,0,0,0,18,8ZM9,7a3,3,0,0,1,6,0V8H9Zm6.71,6.71-4,4a1,1,0,0,1-1.42,0l-2-2a1,1,0,0,1,1.42-1.42L11,15.59l3.29-3.3a1,1,0,0,1,1.42,1.42Z"></path>
-                                    </g>
-                                  </svg>
+                                    <img src="/assets/default/svgs/lock-steps.svg" alt="lock-steps">
                                 </span>
                               </a>
                             </li>
                             <li>
                               <a href="#">
                                 <span class="icon-svg">
-                                  <svg fill="#000000" width="64px" height="64px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="SVGRepo_bgCarrier2" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                      <path fill-rule="evenodd" d="M6 8a6 6 0 1112 0v2.917c0 .703.228 1.387.65 1.95L20.7 15.6a1.5 1.5 0 01-1.2 2.4h-15a1.5 1.5 0 01-1.2-2.4l2.05-2.733a3.25 3.25 0 00.65-1.95V8zm6 13.5A3.502 3.502 0 018.645 19h6.71A3.502 3.502 0 0112 21.5z"></path>
-                                    </g>
-                                  </svg>
+                                    <img src="/assets/default/svgs/bell-steps.svg" alt="bell-steps">
                                 </span>
                               </a>
                             </li>
                             <li>
                               <a href="#">
                                 <span class="icon-svg">
-                                  <svg height="64px" width="64px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.837 17.837" xml:space="preserve" fill="#fff">
-                                    <g id="SVGRepo_bgCarrier3" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                      <g>
-                                        <path d="M16.145,2.571c-0.272-0.273-0.718-0.273-0.99,0L6.92,10.804l-4.241-4.27 c-0.272-0.274-0.715-0.274-0.989,0L0.204,8.019c-0.272,0.271-0.272,0.717,0,0.99l6.217,6.258c0.272,0.271,0.715,0.271,0.99,0 L17.63,5.047c0.276-0.273,0.276-0.72,0-0.994L16.145,2.571z"></path>
-                                      </g>
-                                    </g>
-                                  </svg>
+                                    <img src="/assets/default/svgs/check-steps.svg" alt="check-steps">
                                 </span>
                               </a>
                             </li>
@@ -660,7 +640,7 @@
                       <div class="book-detail">
                         <div class="img-holder">
                           <figure>
-                            <img src="../assets/default/img/book-list1.png" height="192" width="152" alt="#">
+                            <img src="/assets/default/img/book-list1.png" height="192" width="152" alt="#">
                           </figure>
                         </div>
                         <div class="text-holder mt-20">
