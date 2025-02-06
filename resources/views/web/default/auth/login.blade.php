@@ -183,8 +183,8 @@
                                             <form method="Post" action="/login" class="mt-20">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                                 <div class="form-group">
-                                                    <label class="input-label" for="username">Username:</label>
-                                                    <input name="username" type="text" class="form-control @error('username') is-invalid @enderror" id="username"
+                                                    <label class="input-label" for="username2">Username:</label>
+                                                    <input name="username" type="text" class="form-control @error('username') is-invalid @enderror" id="username2"
                                                            value="{{ old('username') }}" aria-describedby="emailHelp">
                                                     @error('username')
                                                     <div class="invalid-feedback">
@@ -264,9 +264,9 @@
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <label class="input-label" for="password">{{ trans('auth.password') }}:</label>
+                                                    <label class="input-label" for="password2">{{ trans('auth.password') }}:</label>
 
-                                                    <input name="password" type="password" class="form-control @error('password')  is-invalid @enderror" id="password" aria-describedby="passwordHelp">
+                                                    <input name="password" type="password" class="form-control @error('password')  is-invalid @enderror" id="password2" aria-describedby="passwordHelp">
 
                                                     @error('password')
                                                     <div class="invalid-feedback">
@@ -308,7 +308,7 @@
                 <div class="login-holder">
                     <div class="col-12">
                         <div class="login-magic-code">
-                            <h2 class="text-center font-24 font-weight-bold mb-15" for="username">Login with Smart Badge</h2>
+                            <h2 class="text-center font-24 font-weight-bold mb-15">Login with Smart Badge</h2>
                             <p class="text-center">To login with your Magic Code please hold it up to the screen and center the <br /> code inside the square.</p>
                             <div class="error-msg">
                                 <span>To login with Magic Code please allow camera access in your browser</span>
