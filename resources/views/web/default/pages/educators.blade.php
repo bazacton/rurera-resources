@@ -58,8 +58,8 @@
             <div class="col-12 col-lg-6 mt-20 mt-lg-0">
                 <div class="position-relative">
                     <img alt="Have a Question? Ask it in forum and get answer" height="524" src="/store/1/default_images/home_sections_banners/curriculum.jpg" width="402" itemprop="image" class="find-instructor-section-hero" loading="eager" title="get answer" />
-                    <img alt="circle" height="auto" src="/assets/default/img/home/circle-4.png" width="100%" itemprop="image" class="find-instructor-section-circle" loading="eager" title="circle" />
-                    <img alt="dots" height="auto" src="/assets/default/img/home/dot.png" width="100%" itemprop="image" class="find-instructor-section-dots" loading="eager" title="dots" />
+                    <img alt="circle" height="170" src="/assets/default/img/home/circle-4.png" width="170" itemprop="image" class="find-instructor-section-circle" loading="eager" title="circle" />
+                    <img alt="dots" height="110" src="/assets/default/img/home/dot.png" width="110" itemprop="image" class="find-instructor-section-dots" loading="eager" title="dots" />
                 </div>
             </div>
         </div>
