@@ -2,27 +2,10 @@
 
 @push('styles_top')
 <link rel="stylesheet" href="/assets/default/vendors/scroll-animation/aos.css"/>
-<style>
-    .gallery-sub-header {
-        min-height: 640px;
-    }
-
-    .lms-search-services {
-        background-color: #f27530;
-    }
-
-    .lms-column-section {
-        background-color: #75c0fa;
-    }
-
-    .choose-sats-section {
-        background-color: #3d358b;
-    }
-</style>
 @endpush
 
 @section('content')
-    <section class="gallery-sub-header job-singup-sub-header mb-60 page-sub-header pb-0 position-relative pt-80">
+    <section class="gallery-sub-header job-singup-sub-header mb-60 page-sub-header pb-0 position-relative pt-80" style="min-height: 640px;">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-lg-6 col-md-6">
@@ -285,7 +268,7 @@
             </div>
         </div>
     </section>
-    <section class="container-w lms-column-section lms-text-section mt-40 pb-30 pl-30 pr-30 pt-30">
+    <section class="container-w lms-column-section lms-text-section mt-40 pb-30 pl-30 pr-30 pt-30" style="background-color: #75c0fa;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-lg-12 col-md-12">
