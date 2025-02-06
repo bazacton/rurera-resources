@@ -5,15 +5,6 @@
 .gallery-sub-header {
     min-height: 650px;
 }
-.lms-newsletter {
-    background-color: #f18700;
-}
-.bg-deepskyblue {
-    background-color: #46b7e9;
-}
-.bg-blue {
-    background-color: #3d358b;
-}
 .bg-yellow {
     background-color: #f6b801;
 }
@@ -222,7 +213,7 @@
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon bg-blue">
+                            <i class="svg-icon bg-blue" style="background-color: #3d358b;">
                                <img src="/assets/default/svgs/feature-mock.svg" height="24" width="24" alt="Mock Exams"> 
                             </i>
                         </figure>
@@ -302,7 +293,7 @@
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon bg-deepskyblue">
+                            <i class="svg-icon bg-deepskyblue" style="background-color: #46b7e9;">
                                 <img src="/assets/default/svgs/feature-Professional.svg" height="24" width="24" alt="Professional Support">
                             </i>
                         </figure>
@@ -323,8 +314,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="section-title mb-50 text-center">
-                        <h2 itemprop="title" class="text-white font-40">Discover Top Resources for 11 Plus & Entrance
-                            Exams!</h2>
+                        <h2 itemprop="title" class="text-white font-40">Discover Top Resources for 11 Plus & Entrance Exams!</h2>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -340,9 +330,7 @@
                                         </figure>
                                     </div>
                                     <div class="text-holder">
-                                        <h3 itemprop="title" class="post-title font-19 font-weight-bold">
-                                            English
-                                        </h3>
+                                        <h3 itemprop="title" class="post-title font-19 font-weight-bold">English</h3>
                                         <p itemprop="description" class="font-16 text-gray">Patterns, sequencing and geometry</p>
                                     </div>
                                 </a>
