@@ -28,10 +28,10 @@
                     {{-- post Comments --}}
                     @if($post->enable_comment)
                         @include('web.default.includes.comments',[
-                                'comments' => $post->comments,
-                                'inputName' => 'blog_id',
-                                'inputValue' => $post->id
-                            ])
+                            'comments' => $post->comments,
+                            'inputName' => 'blog_id',
+                            'inputValue' => $post->id
+                        ])
                     @endif
                     {{-- ./ post Comments --}}
                     
