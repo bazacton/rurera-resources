@@ -1,16 +1,12 @@
 @extends(getTemplate().'.layouts.app')
 
 @push('styles_top')
-<style>
-.gallery-sub-header {
-    min-height: 650px;
-}
-</style>
+
 @endpush
 
 @section('content')
 <section class="content-section">
-    <section class="position-relative job-singup-sub-header gallery-sub-header page-sub-header pb-0 pt-80 mb-70">
+    <section class="position-relative job-singup-sub-header gallery-sub-header page-sub-header pb-0 pt-80 mb-70" style="min-height: 650px;">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-md-6 col-lg-6">
