@@ -138,10 +138,6 @@ button:disabled {
                                 </ul>
                             </div>
                             <div class="card-gateway-fields conditional-fields row">
-
-
-
-
                                 <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <div class="input-field"><input type="text" placeholder="First Name"/></div>
