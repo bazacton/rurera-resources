@@ -32,7 +32,7 @@
             <div class="img-holder">
               <figure>
                 <a href="#">
-                  <img src="../assets/default/img/book-masonry6.png" alt="default staff image" title="default staff image" width="192" height="157" itemprop="image" loading="eager">
+                  <img src="/assets/default/img/book-masonry6.png" alt="default staff image" title="default staff image" width="192" height="157" itemprop="image" loading="eager">
                 </a>
               </figure>
             </div>
@@ -41,7 +41,7 @@
             <div class="img-holder">
               <figure>
                 <a href="#">
-                  <img src="../assets/default/img/book-masonry4.png" alt="default staff image" title="default staff image" width="192" height="284" itemprop="image" loading="eager">
+                  <img src="/assets/default/img/book-masonry4.png" alt="default staff image" title="default staff image" width="192" height="284" itemprop="image" loading="eager">
                 </a>
               </figure>
             </div>
@@ -50,7 +50,7 @@
             <div class="img-holder">
               <figure>
                 <a href="#">
-                  <img src="../assets/default/img/book05.png" alt="default staff image" title="default staff image" width="192" height="193" itemprop="image" loading="eager">
+                  <img src="/assets/default/img/book05.png" alt="default staff image" title="default staff image" width="192" height="193" itemprop="image" loading="eager">
                 </a>
               </figure>
             </div>
@@ -59,7 +59,7 @@
             <div class="img-holder">
               <figure>
                 <a href="#">
-                  <img src="../assets/default/img/book02.png" alt="default staff image" title="default staff image" width="192" height="294" itemprop="image" loading="eager">
+                  <img src="/assets/default/img/book02.png" alt="default staff image" title="default staff image" width="192" height="294" itemprop="image" loading="eager">
                 </a>
               </figure>
             </div>
@@ -68,7 +68,7 @@
             <div class="img-holder">
               <figure>
                 <a href="#">
-                  <img src="../assets/default/img/book03.png" alt="default staff image" title="default staff image" width="192" height="228" itemprop="image" loading="eager">
+                  <img src="/assets/default/img/book03.png" alt="default staff image" title="default staff image" width="192" height="228" itemprop="image" loading="eager">
                 </a>
               </figure>
             </div>
@@ -108,7 +108,7 @@
           <div class="services-card text-center mb-30 pr-40 pl-40">
             <div class="services-card-body">
               <figure class="icon-md">
-                <img src="../assets/default/svgs/book2.svg" alt="support" title="support" width="100" height="100" itemprop="image" loading="eager">
+                <img src="/assets/default/svgs/book2.svg" alt="support" title="support" width="100" height="100" itemprop="image" loading="eager">
               </figure>
               <div class="services-text mt-20">
                 <h2 itemprop="title" class="font-24 mb-10">Book Chapter Quizzes</h2>
@@ -121,7 +121,7 @@
           <div class="services-card text-center mb-30 pr-40 pl-40">
             <div class="services-card-body">
               <figure class="icon-md">
-                <img src="../assets/default/svgs/analysis.svg" alt="knowledge" title="knowledge" width="100" height="100" itemprop="image" loading="eager">
+                <img src="/assets/default/svgs/analysis.svg" alt="knowledge" title="knowledge" width="100" height="100" itemprop="image" loading="eager">
               </figure>
               <div class="services-text mt-20">
                 <h2 itemprop="title" class="font-24 mb-10">Assessments &amp; Tests</h2>
@@ -134,7 +134,7 @@
           <div class="services-card text-center mb-30 pr-40 pl-40">
             <div class="services-card-body">
               <figure class="icon-md">
-                <img src="../assets/default/svgs/coins-money.svg" alt="technical" title="technical" width="100" height="100" itemprop="image" loading="eager">
+                <img src="/assets/default/svgs/coins-money.svg" alt="technical" title="technical" width="100" height="100" itemprop="image" loading="eager">
               </figure>
               <div class="services-text mt-20">
                 <h2 itemprop="title" class="font-24 mb-10">Earn Reading Rewards</h2>
@@ -224,7 +224,7 @@
                   <div class="blog-grid-detail pr-0">
                     <div class="blog-grid-image lazyload-img">
                       <img src="/assets/default/img/buller-img.png" class="img-sm" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" width="20" height="21" itemprop="image" loading="eager">
-                      <img src="../assets/default/img/bookchoose-img1.png" width="370" height="250" class="img-cover" loading="eager" alt="#">
+                      <img src="/assets/default/img/bookchoose-img1.png" width="370" height="250" class="img-cover" loading="eager" alt="#">
                     </div>
                     <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="#">Enjoy Every E-Book Adventure:</a>
@@ -240,7 +240,7 @@
                   <div class="blog-grid-detail pr-0">
                     <div class="blog-grid-image lazyload-img">
                       <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Uncover Your Progress:" title="Uncover Your Progress:" width="20" height="21" itemprop="image" loading="eager">
-                      <img src="../assets/default/img/bookchoose-img2.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
+                      <img src="/assets/default/img/bookchoose-img2.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
                     </div>
                     <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/register">Uncover Your Progress:</a>
@@ -256,7 +256,7 @@
                   <div class="blog-grid-detail pr-0">
                     <div class="blog-grid-image lazyload-img">
                       <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Personalized Learning Pathways:" title="Personalized Learning Pathways:" width="20" height="21" itemprop="image" loading="eager">
-                      <img src="../assets/default/img/bookchoose-img3.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
+                      <img src="/assets/default/img/bookchoose-img3.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
                     </div>
                     <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="#">Personalized Learning Pathways:</a>
@@ -273,7 +273,7 @@
                   <div class="blog-grid-detail pr-0">
                     <div class="blog-grid-image lazyload-img">
                       <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Awesome Rewards as You Read:" title="Awesome Rewards as You Read:" width="20" height="21" itemprop="image" loading="eager">
-                      <img src="../assets/default/img/bookchoose-img1.png" width="370" height="250" class="img-cover" loading="eager" alt="#">
+                      <img src="/assets/default/img/bookchoose-img1.png" width="370" height="250" class="img-cover" loading="eager" alt="#">
                     </div>
                     <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="#">Awesome Rewards as You Read:</a>
@@ -289,7 +289,7 @@
                   <div class="blog-grid-detail pr-0">
                     <div class="blog-grid-image lazyload-img">
                       <img src="/assets/default/img/buller-img.png" class="img-sm" alt="Effortless Student Engagement:" title="Effortless Student Engagement:" width="20" height="21" itemprop="image" loading="eager">
-                      <img src="../assets/default/img/bookchoose-img2.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
+                      <img src="/assets/default/img/bookchoose-img2.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
                     </div>
                     <h3 itemprop="title" class="blog-grid-title mt-15 text-dark-charcoal px-20">
                       <a itemprop="url" href="/register">Effortless Student Engagement:</a>
