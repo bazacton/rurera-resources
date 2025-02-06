@@ -1609,7 +1609,8 @@ Lms Books Listing Style End
 .lms-choose-membership .input-field input:-ms-input-placeholder {color: #b5b8bf;}
 .lms-choose-membership .input-field input:-moz-placeholder {color: #b5b8bf;}
 .lms-choose-membership .input-field.input-card .icon-svg {display: inline-flex;position: absolute;left: 11px;top: 12px;}
-.lms-choose-membership .input-field.input-card .icon-svg svg {width: 24px;height: 24px;fill: #b5b8bf;}
+.lms-choose-membership .input-field.input-card .icon-svg svg,
+.lms-choose-membership .input-field.input-card .icon-svg img {width: 24px;height: 24px;fill: #b5b8bf; filter: invert(96%) sepia(3%) saturate(1230%) hue-rotate(189deg) brightness(79%) contrast(86%);}
 .lms-choose-membership .input-field.input-card .icon-svg .st0{fill:#b5b8bf;}
 .lms-choose-membership .input-field.input-card input[type="text"] {padding-left: 50px;}
 .lms-choose-membership .book-form p {font-size: 14px;}
