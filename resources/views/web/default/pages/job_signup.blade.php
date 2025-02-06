@@ -360,9 +360,7 @@
                                         <li>Review and analyze existing math assessments to identify areas for improvement and make necessary revisions.</li>
                                         <li>Develop assessment blueprints and item specifications to guide the creation of math assessments.</li>
                                         <li>Ensure that math assessments are valid, reliable, and appropriately measure students' math knowledge and skills.</li>
-                                        
-                                        <li>Collaborate with subject matter experts and educators to gather feedback on assessments and incorporate their insights.
-                                        </li>
+                                        <li>Collaborate with subject matter experts and educators to gather feedback on assessments and incorporate their insights.</li>
                                         <li>Conduct item analysis and statistical analysis of assessment data to evaluate item quality and inform future improvements.</li>
                                         <li>Provide insights and recommendations based on assessment data to inform instructional decisions and improve teaching practices.</li>
                                         <li>Generate reports and visualizations to communicate assessment findings to educators, administrators, and other stakeholders.</li>
@@ -378,13 +376,10 @@
                                         <li>Strong communication and collaboration skills to work effectively with diverse stakeholders.</li>
                                         <li>Attention to detail and commitment to maintaining high standards of assessment validity and reliability.</li>
                                         <li>Familiarity with educational assessment technology and online assessment platforms is a plus.</li>
-                                        
                                     </ul>
                                     <p itemprop="description">We offer a competitive salary and benefits package. This is an exciting opportunity to contribute to the improvement of math education through the development and analysis of high-quality assessments. Join our team and make a positive impact on students' learning outcomes.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
@@ -399,10 +394,8 @@
                             </div>
                             <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking a Math Curriculum Designer to join our education team. As a Math Curriculum Designer, you will play a key role in developing and designing a comprehensive and effective math curriculum that aligns with educational standards and meets the needs of students and educators. You will collaborate with subject matter experts, instructional designers, and educators to create engaging and rigorous math curricula that promote conceptual understanding and support student learning.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Design and develop a standards-based math curriculum for specific grade levels or courses.</li>
@@ -426,14 +419,11 @@
                                         <li>Excellent written and verbal communication skills to convey complex math concepts in a clear and understandable manner.</li>
                                         <li>Attention to detail and ability to maintain a high level of accuracy and quality in curriculum materials.</li>
                                         <li>Strong collaboration and teamwork skills to work effectively with subject matter experts, educators, and instructional designers.</li>
-                                        <li>Familiarity with educational technology tools and platforms used in math instruction is a plus.</li>
-                                        
+                                        <li>Familiarity with educational technology tools and platforms used in math instruction is a plus.</li> 
                                     </ul>
                                      <p itemprop="description">We offer a competitive salary and benefits package. This is an exciting opportunity to contribute to the development of a high-quality math curriculum that empowers students and supports effective teaching. Join our team and make a positive impact on math education.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
@@ -448,10 +438,8 @@
                             </div>
                             <div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordionExample">
                                 <div class="card-body">
-                                   
                                     <h3 itemprop="title" class="font-24">Overview</h3>
                                     <p itemprop="description">We are seeking an Associate Digital Designer to join our creative team. As an Associate Digital Designer, you will support the design and production of digital assets for various digital platforms. Your role will involve collaborating with the design team to create visually appealing and engaging digital materials that effectively communicate our brand's message and enhance user experience.</p>
-                                    
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Assist in the creation and execution of digital designs, including website graphics, social media assets, email templates, banners, and display ads.</li>
@@ -476,13 +464,10 @@
                                         <li>Excellent communication skills and ability to collaborate effectively with team members and stakeholders.
                                         </li>
                                         <li>Passion for staying updated with industry trends and emerging digital design techniques.</li>
-                                    
                                     </ul>
                                     <p itemprop="description">Join our creative team and contribute to the development of visually stunning digital assets that engage and inspire our audience. This is an excellent opportunity to grow your digital design skills and make a significant impact on our brand's digital presence.</p>
-                                
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
@@ -497,11 +482,8 @@
                             </div>
                             <div id="collapse_6" class="collapse" aria-labelledby="heading_6" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    
                                     <h3 itemprop="title" class="font-24">Overview</h4>
                                     <p itemprop="description">We are seeking a Science Curriculum Designer to join our education team. As a Science Curriculum Designer, you will play a critical role in developing and designing a comprehensive and engaging science curriculum that aligns with educational standards and promotes inquiry-based learning. You will collaborate with subject matter experts, instructional designers, and educators to create curriculum materials that foster scientific understanding, critical thinking, and hands-on exploration.</p>
-
-                                
                                     <h3 itemprop="title" class="font-24">Responsibilities</h3>
                                     <ul class="lms-disc-list">
                                         <li>Design and develop a standards-based science curriculum for specific grade levels or courses.</li>
@@ -526,13 +508,10 @@
                                         <li>Attention to detail and ability to maintain a high level of accuracy and quality in curriculum materials.</li>
                                         <li>Strong collaboration and teamwork skills to work effectively with subject matter experts, educators, and instructional designers.</li>
                                         <li>Familiarity with educational technology tools and platforms used in science instruction is a plus.</li>
-                                        
                                     </ul>
                                     <p itemprop="description">Join our team and contribute to the development of a high-quality science curriculum that sparks students' curiosity, promotes scientific literacy, and fosters a love for learning. This is an exciting opportunity to make a positive impact on science education.</p>
-                    
                                     <h3 itemprop="title" class="font-24">Hours and schedule</h3>
                                     <p itemprop="description">9am to 6pm (12-1 lunch &amp; 3:00 to 3:30pm break)</p>
-                                    
                                     <p itemprop="description"><a href="#" class="lms-apply-btn">Apply for this position</a></p>
                                     <p itemprop="description"><a href="#" class="lms-contact-btn">Contact us</a></p>
                                 </div>
