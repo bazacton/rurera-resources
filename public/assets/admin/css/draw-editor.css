@@ -231,6 +231,12 @@ body .flowchart-operator-connector-small-arrow {
     opacity: 1;
     visibility: visible;
 }
+.book-dropzone .object-options a.resize-handler {
+    right: 5px;
+    bottom: 0px;
+    width: auto;
+    transform: rotate(75deg);
+}
 /* Zoom Header Style Start */
 .zoom-header button {
     border: 1px solid #ddd;
