@@ -214,11 +214,15 @@ body .flowchart-operator-connector-small-arrow {
     visibility: visible;
 }
 .book-dropzone .object-options a.resize-handler {
-    right: 5px;
-    bottom: 0px;
-    width: auto;
-    transform: rotate(75deg);
+    right: -3px;
+    bottom: 0;
+    background-color: #ddd;
     background-image: none;
+    height: 12px;
+    width: 12px;
+}
+.book-dropzone .object-options a.resize-handler .fas {
+    display: none;
 }
 /* Zoom Header Style Start */
 .zoom-header button {
