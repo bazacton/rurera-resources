@@ -1162,6 +1162,7 @@ jQuery(document).ready(function () {
             }
 
     });
+	
 
     $(document).on('click', '.book-dropzone .remove', function (e) {
 		if( $(this).closest('.field_settings').hasClass('locked-object')){
@@ -1170,6 +1171,7 @@ jQuery(document).ready(function () {
 		var data_id = $(this).closest('.field_settings').attr('data-id');
         var element_type = $(this).closest('.field_settings').attr('data-field_type');
 		$('.editor-objects-list-all li[data-id="'+data_id+'"]').remove();
+		$('.levels-objects-list li[data-id="'+data_id+'"]').remove();
 		sorting_render();
         $(this).closest('.field_settings').remove();
         $(".field-options").addClass('hide');
@@ -1194,6 +1196,7 @@ jQuery(document).ready(function () {
 
 
         }
+		
 
 
     });
