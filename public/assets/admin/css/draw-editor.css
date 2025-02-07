@@ -211,8 +211,14 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
     height: auto;
 }
 svg.flowchart-links-layer {
-    bottom: 0;
+    bottom: 10px;
     top: auto;
+}
+body .flowchart-operator-connector-arrow {
+    top: -10px;
+}
+body .flowchart-operator-connector-small-arrow {
+    top: -5px;
 }
 /* Zoom Header Style Start */
 .zoom-header button {
