@@ -91,7 +91,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set1';
 						$layer_counter = 1;
                         foreach( $itemObj->LearningJourneyObjects->where('status','active') as $learningJourneyItemObj){
 
-                            echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2"><span class="layer-serial">'.$layer_counter.'</span><label contenteditable="true">'.$learningJourneyItemObj->item_title.'</label>
+                            echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2"><label contenteditable="true">'.$learningJourneyItemObj->item_title.'</label>
 
                             <div class="actions-menu">
                                 <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
