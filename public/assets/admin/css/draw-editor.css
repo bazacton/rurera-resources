@@ -214,8 +214,8 @@ body .flowchart-operator-connector-small-arrow {
     visibility: visible;
 }
 .book-dropzone .object-options a.resize-handler {
-    right: -5px;
-    bottom: -8px;
+    right: -3px;
+    bottom: -6px;
     background-color: #ddd;
     background-image: none;
     height: 12px;
