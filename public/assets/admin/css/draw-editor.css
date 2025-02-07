@@ -226,6 +226,7 @@ body .flowchart-operator-connector-small-arrow {
     left: 15px;
     opacity: 0;
     visibility: hidden;
+    color: #ff0000;
 }
 .book-dropzone .drop-item.field_settings a.remove span {
     font-size: 10px;
