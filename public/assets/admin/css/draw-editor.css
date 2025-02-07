@@ -80,7 +80,7 @@ body .editor-controls .nav .nav-item .nav-link.active,
 body .editor-objects-block .nav .nav-item .nav-link.active {border-bottom-color: #fff; color: var(--primary);}
 body .editor-parent-nav ul {gap: 8px 10px;}
 body .editor-parent-nav .nav-link {padding: 5px 12px; font-size: 14px;}
-body .book-dropzone {border-radius: 0; min-height: 705px; z-index: 1; background-color: #fff;}
+body .book-dropzone {border-radius: 0; min-height: 705px; z-index: 1; background-color: #fff; transform-origin:0% 0%;}
 .editor-objects-block h5 {padding: 0 15px; margin-bottom: 20px;}
 .editor-controls-holder .fade:not(.show) {display: none;}
 body .editor-controls-holder .editor-objects-block .nav,
