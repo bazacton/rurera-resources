@@ -236,6 +236,7 @@ body .flowchart-operator-connector-small-arrow {
     bottom: 0px;
     width: auto;
     transform: rotate(75deg);
+    background-image: none;
 }
 /* Zoom Header Style Start */
 .zoom-header button {
