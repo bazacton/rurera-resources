@@ -77,7 +77,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set1';
                 <a class="nav-link all_layers-tab active" id="all_layers-tab{{$data_id}}" data-toggle="tab" href="#all_layers{{$data_id}}" role="tab" aria-controls="all_layers{{$data_id}}" aria-selected="true">All</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="levels_layers-tab{{$data_id}}" data-toggle="tab" href="#levels_layers{{$data_id}}" role="tab" aria-controls="levels_layers{{$data_id}}" aria-selected="true">Levels</a>
+                <a class="nav-link levels_layers-tab" id="levels_layers-tab{{$data_id}}" data-toggle="tab" href="#levels_layers{{$data_id}}" role="tab" aria-controls="levels_layers{{$data_id}}" aria-selected="true">Levels</a>
             </li>
         </ul>
 
@@ -168,23 +168,6 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set1';
 					</div>
 				</div>
 
-				<div class="option-field-item">
-					<label>Background Image</label>
-					<div class="input-group">
-						<div class="input-group-prepend">
-							<button type="button" class="input-group-text admin-file-manager" data-input="background_image" data-preview="holder">
-								<i class="fa fa-upload"></i>
-							</button>
-						</div>
-						<input type="text"  data-field_id="background_image" data-field_name="background_image"
-							   data-field_type="page_style" data-id="" name="background_image" id="background_image" value="" class="trigger_field form-control ">
-						<div class="input-group-append">
-							<button type="button" class="input-group-text admin-file-view" data-input="background_image">
-								<i class="fa fa-eye"></i>
-							</button>
-						</div>
-					</div>
-				</div>
 				<div class="option-field-item">
 					<label>Height</label>
 					<div class="input-group">
