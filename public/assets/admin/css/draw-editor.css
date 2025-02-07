@@ -213,6 +213,10 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
     padding-bottom: 0;
     height: auto;
 }
+svg.flowchart-links-layer {
+    bottom: 0;
+    top: auto;
+}
 /* Zoom Header Style Start */
 .zoom-header button {
     border: 1px solid #ddd;
