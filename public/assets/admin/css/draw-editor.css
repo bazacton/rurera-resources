@@ -215,10 +215,10 @@ svg.flowchart-links-layer {
     top: auto;
 }
 body .flowchart-operator-connector-arrow {
-    top: -10px;
+    top: -20px;
 }
 body .flowchart-operator-connector-small-arrow {
-    top: -5px;
+    top: -15px;
 }
 /* Zoom Header Style Start */
 .zoom-header button {
