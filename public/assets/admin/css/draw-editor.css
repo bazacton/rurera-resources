@@ -62,7 +62,7 @@
 .book-pages-navs .generate {margin-right: auto;}
 body .editor-zone:has(.editor-controls-holder),
 body .editor-zone:has(.field-options.hide) {padding-left: 0;}
-body .editor-zone:has(.editor-controls-holder) {display: flex; align-items: flex-start; justify-content: center; gap: 25px; padding:0; overflow: visible;}
+body .editor-zone:has(.editor-controls-holder) {display: flex; align-items: flex-start; justify-content: center; gap: 25px; padding:0;}
 body .editor-zone:has(.field-options) {padding-left:0px;}
 .book-dropzone {position: relative; border: 1px solid #ccc; border-radius: 5px; width: 770px; height:100%; box-sizing: border-box; background-size: cover !important; overflow: hidden; display: inline-block; vertical-align: top;}
 .book-dropzone img {max-width: 100%;}
@@ -98,7 +98,6 @@ body .editor-objects-block .nav .nav-item .nav-link {padding: 5px 15px;}
 .book-dropzone .stage-shapes{height:30px; width:140px;}
 .card .card-body:has(.learning-journey-form), .card:has(.learning-journey-form) {box-shadow: none; padding: 0; margin-bottom: 0;}
 .card:has(.learning-journey-form) {overflow: hidden;}
-.card:has(.learning-journey-form) {}
 .main-content:has(.zoom-header) .card:has(.learning-journey-form) {
     overflow: visible;
 }
