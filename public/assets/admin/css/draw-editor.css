@@ -227,10 +227,11 @@ body .flowchart-operator-connector-small-arrow {
 .book-dropzone .drop-item.field_settings a.remove {
     position: absolute;
     top: -20px;
-    left: 15px;
+    left: 50%;
     opacity: 0;
     visibility: hidden;
     color: #ff0000;
+    transform: translateX(-50%);
 }
 .book-dropzone .drop-item.field_settings a.remove span {
     font-size: 10px;
