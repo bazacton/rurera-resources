@@ -108,6 +108,7 @@ $(document).on('click', '.control-tool-item', function () {
 
 $(document).on('click', '.path-tool-item', function () {
     var target_class = $(this).attr('data-target_class');
+	$(this).closest('.editor-zone').find('.book-dropzone.active').attr('data-item_path', target_class);
     $(".curriculum-item-data.active .flowchart-links-layer > g").removeAttr('class');
     $(".curriculum-item-data.active .flowchart-links-layer > g").addClass(target_class);
     $(".curriculum-item-data.active .path-tool-item").removeClass('active');

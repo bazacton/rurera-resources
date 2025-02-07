@@ -6,6 +6,7 @@ $treasures_list = getSvgFiles('assets/admin/editor/treasures/');
 $sets_list = getSvgFilesByFolder('assets/admin/editor/sets/');
 $data_values = isset( $itemObj->data_values )? json_decode($itemObj->data_values) : array();
 $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set1';
+$item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadmap-default';
  @endphp
 
 <div class="editor-controls-holder">
@@ -248,18 +249,21 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set1';
             <h6 class="mt-20">Path Setting</h6>
             <ul>
                 <li>
-                    <a href="javascript:;" title="Path 1" class="active path-tool-item item_path1" data-target_class="roadmap-default">
+					@php $path_is_active = ($item_path == 'roadmap-default' || $item_path == '')? 'active' : ''; @endphp
+                    <a href="javascript:;" title="Path 1" class="{{$path_is_active}} path-tool-item item_path1" data-target_class="roadmap-default">
                         Path 1
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:;" title="Path 2" class="path-tool-item item_path2" data-target_class="roadmap-road">
+					@php $path_is_active = ($item_path == 'roadmap-road')? 'active' : ''; @endphp
+                    <a href="javascript:;" title="Path 2" class="{{$path_is_active}} path-tool-item item_path2" data-target_class="roadmap-road">
                         Path 2
                     </a>
                 </li>
 
                 <li>
-                    <a href="javascript:;" title="Path 3" class="path-tool-item item_path3" data-target_class="roadmap-steps">
+					@php $path_is_active = ($item_path == 'roadmap-steps')? 'active' : ''; @endphp
+                    <a href="javascript:;" title="Path 3" class="{{$path_is_active}} path-tool-item item_path3" data-target_class="roadmap-steps">
                         Path 3
                     </a>
                 </li>
