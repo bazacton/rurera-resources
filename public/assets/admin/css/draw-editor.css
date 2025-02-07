@@ -155,7 +155,7 @@ body .editor-objects-list li:before {
 .editor-controls-holder .layout-template-item.active {border-color: #9acbff; background-color: #f3f9ff; color: var(--blue);}
 .book-dropzone .drop-item {
     background: none;
-    border: 1px solid transparent;
+    border: 2px dotted transparent;
     border-radius: 5px;
     background-image: none;
 }
