@@ -98,6 +98,10 @@ body .editor-objects-block .nav .nav-item .nav-link {padding: 5px 15px;}
 .book-dropzone .stage-shapes{height:30px; width:140px;}
 .card .card-body:has(.learning-journey-form), .card:has(.learning-journey-form) {box-shadow: none; padding: 0; margin-bottom: 0;}
 .card:has(.learning-journey-form) {overflow: hidden;}
+.card:has(.learning-journey-form) {}
+.main-content:has(.zoom-header) .card:has(.learning-journey-form) {
+    overflow: visible;
+}
 form.learning-journey-form {margin: 0;}
 .book-dropzone .resizeable{resize: both; overflow: hidden;}
 .editor-controls-holder .editor-objects {background-color: inherit; padding: 0;}
