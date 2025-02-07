@@ -298,7 +298,7 @@ $(document).on('click', '.book-dropzone', function (e) {
 
 	var z_index = $(".editor-objects-list-all li").length+1;
 	if( item_title != undefined){
-		$(".editor-objects-list-all").prepend('<li data-id="'+field_random_number+'" data-field_postition="'+z_index+'"><span class="layer-serial"></span><label contenteditable="true">'+item_title+'</label> <div class="actions-menu">\n' +
+		$(".editor-objects-list-all").prepend('<li data-id="'+field_random_number+'" data-field_postition="'+z_index+'"><label contenteditable="true">'+item_title+'</label> <div class="actions-menu">\n' +
             '                                <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>\n' +
             '                            </div></li>');
 		$(".editor-objects-list-all").sortable({
@@ -499,7 +499,7 @@ function sorting_render(){
 		index_plus++;
 		var index_id = total_length - index_id;
 		$(thisObj).attr('data-field_postition', index_id);
-		$(thisObj).find('.layer-serial').html(index_plus);
+		
 		var data_id = $(thisObj).attr('data-id');
 		$(".draggable_field_" + data_id).css('z-index', index_id);
 		$(".draggable_field_" + data_id).attr('data-field_postition', index_id);
