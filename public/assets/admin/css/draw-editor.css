@@ -140,7 +140,6 @@ body .editor-objects-list li label {margin: 0; line-height: normal;}
 .editor-controls-holder .path-tool-item.active,
 .editor-controls-holder .layout-template-item.active {border-color: #9acbff; background-color: #f3f9ff; color: var(--blue);}
 .book-dropzone .drop-item {background: none; background-image: none;}
-.book-dropzone .drop-item.active{ opacity: 1;}
 .book-dropzone .drop-item > .field-data {border: 2px dotted transparent; border-radius: 5px;}
 .book-dropzone .drop-item.active > .field-data {border-color: #ddd;}
 .book-dropzone .field-data svg {height: 100%; margin-bottom: 0;}
