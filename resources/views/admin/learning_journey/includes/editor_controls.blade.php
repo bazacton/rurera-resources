@@ -19,7 +19,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set1';
 			<button class="nav-link" id="layers-tab" data-toggle="tab" data-target="#layers{{$data_id}}" type="button" role="tab" aria-controls="contact" aria-selected="false">Layers</button>
 		</li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link stage_settings-tab" id="stage_settings-tab" data-toggle="tab" data-target="#stage_settings{{$data_id}}" type="button" role="tab" aria-controls="contact" aria-selected="false">Stage Settings</button>
+                <button class="nav-link all_settings-tab" id="all_settings-tab" data-toggle="tab" data-target="#all_settings{{$data_id}}" type="button" role="tab" aria-controls="contact" aria-selected="false">Settings</button>
             </li>
 		</ul>
 	</div>
@@ -79,9 +79,6 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set1';
             <li class="nav-item">
                 <a class="nav-link" id="levels_layers-tab{{$data_id}}" data-toggle="tab" href="#levels_layers{{$data_id}}" role="tab" aria-controls="levels_layers{{$data_id}}" aria-selected="true">Levels</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" id="clipboard_settings-tab{{$data_id}}" data-toggle="tab" href="#clipboard_settings{{$data_id}}" role="tab" aria-controls="clipboard_settings{{$data_id}}" aria-selected="true">Settings</a>
-            </li>
         </ul>
 
         <div class="tab-pane mt-3 fade all_layers-tab-data show active" id="all_layers{{$data_id}}" role="tabpanel" aria-labelledby="all_layers-tab{{$data_id}}">
@@ -128,7 +125,116 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set1';
             </ul>
         </div>
 
-        <div class="tab-pane mt-3 fade " id="clipboard_settings{{$data_id}}" role="tabpanel" aria-labelledby="clipboard_settings-tab{{$data_id}}">
+        
+
+
+
+	</div>
+
+    <div class="editor-objects-block tab-pane fade" id="all_settings{{$data_id}}" role="settingtabpanel" aria-labelledby="all_settings-tab">
+	
+		<ul class="nav nav-pills" id="myTab3" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link stage_settings-tab active" id="stage_settings-tab{{$data_id}}" data-toggle="tab" href="#stage_settings{{$data_id}}" role="tab" aria-controls="stage_settings{{$data_id}}" aria-selected="true">Stage Settings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="layers_settings-tab{{$data_id}}" data-toggle="tab" href="#layers_settings{{$data_id}}" role="tab" aria-controls="layers_settings{{$data_id}}" aria-selected="true">Layers Settings</a>
+            </li>
+        </ul>
+		
+		<div class="tab-pane mt-3 fade show active" id="stage_settings{{$data_id}}" role="settingtabpanel" aria-labelledby="stage_settings-tab{{$data_id}}">
+		
+			<div class="page-settings-fields">
+				<h5>Levels</h5>
+				<div class="option-field-item">
+					<label>Stage Name</label>
+					<div class="input-group">
+						<input type="text" name="stage_name" class="form-control trigger_field"
+							   value="{{isset($itemObj->level_title)? $itemObj->level_title : 'Stage Title'}}" data-field_id="stage_name" data-field_name="stage_name"
+							   data-field_type="page_style" data-id="">
+					</div>
+				</div>
+				<div class="option-field-item">
+					<label>Background Color</label>
+					<div class="input-group">
+						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput"
+							   value="#ffffff" data-field_id="page_background" data-field_name="background"
+							   data-field_type="page_style" data-id="">
+						<div class="input-group-append">
+							<div class="input-group-text">
+								<i class="fas fa-fill-drip"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="option-field-item">
+					<label>Background Image</label>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<button type="button" class="input-group-text admin-file-manager" data-input="background_image" data-preview="holder">
+								<i class="fa fa-upload"></i>
+							</button>
+						</div>
+						<input type="text"  data-field_id="background_image" data-field_name="background_image"
+							   data-field_type="page_style" data-id="" name="background_image" id="background_image" value="" class="trigger_field form-control ">
+						<div class="input-group-append">
+							<button type="button" class="input-group-text admin-file-view" data-input="background_image">
+								<i class="fa fa-eye"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="option-field-item">
+					<label>Height</label>
+					<div class="input-group">
+						<input type="number" name="page_height" class="form-control trigger_field"
+							   value="800" data-field_id="page_height" data-field_name="height" min="800"
+							   data-field_type="page_style" data-id="">
+					</div>
+				</div>
+
+				<div class="option-field-item">
+					<label class="custom-switch pl-0">
+						<input type="hidden" name="page_graph" class="trigger_field" value="0" data-field_id="page_graph" data-field_name="graph" data-field_type="page_style" data-id="">
+						<input type="checkbox" name="page_graph_radio" id="rtlSwitch" value="1" class="custom-switch-input">
+						<span class="custom-switch-indicator"></span>
+						<label class="custom-switch-description mb-0 cursor-pointer" for="rtlSwitch">Enable Graph</label>
+					</label>
+				</div>
+				<input type="text" name="stage_set" class="hide form-control trigger_field"
+					   value="{{$stage_set}}" data-field_id="stage_set" data-field_name="stage_set"
+					   data-field_type="page_set" data-id="">
+
+				<h6 class="mt-20">Topic Settings</h6>
+
+
+				<div class="option-field-item">
+					<label>Passing Scores (%)</label>
+					<div class="input-group">
+						<input type="number" name="passing_scores" class="form-control trigger_field"
+							   value="90" data-field_id="passing_scores" data-field_name="passing_scores" min="50" max="100"
+							   data-field_type="page_style" data-id="">
+					</div>
+				</div>
+
+				<div class="option-field-item mt-20 mb-20">
+					<label class="custom-switch pl-0">
+						<input type="hidden" name="shuffle_questions" class="trigger_field" value="0" data-field_id="shuffle_questions" data-field_name="shuffle_questions" data-field_type="page_style" data-id="">
+						<input type="checkbox" name="shuffle_questions_radio" id="shuffle_questions" value="1" class="custom-switch-input">
+						<span class="custom-switch-indicator"></span>
+						<label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_questions">Shuffle Questions</label>
+					</label>
+				</div>
+
+
+
+
+			</div>
+		</div>
+		
+		
+		<div class="tab-pane mt-3 fade" id="layers_settings{{$data_id}}" role="settingtabpanel" aria-labelledby="layers_settings-tab{{$data_id}}">
             @if( !empty( $sets_list ) )
                 @foreach( $sets_list as $directory_name => $directoryData)
                     @php $is_selected = ($stage_set == $directory_name)? 'active' : ''; @endphp
@@ -191,99 +297,6 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set1';
             </ul>
 
         </div>
-
-
-
-	</div>
-
-    <div class="editor-objects-block tab-pane fade" id="stage_settings{{$data_id}}" role="tabpanel" aria-labelledby="stage_settings-tab">
-    <div class="page-settings-fields">
-        <h5>Levels</h5>
-        <div class="option-field-item">
-            <label>Stage Name</label>
-            <div class="input-group">
-                <input type="text" name="stage_name" class="form-control trigger_field"
-                       value="{{isset($itemObj->level_title)? $itemObj->level_title : 'Stage Title'}}" data-field_id="stage_name" data-field_name="stage_name"
-                       data-field_type="page_style" data-id="">
-            </div>
-        </div>
-        <div class="option-field-item">
-            <label>Background Color</label>
-            <div class="input-group">
-                <input type="text" name="background_color" class="form-control trigger_field colorpickerinput"
-                       value="#ffffff" data-field_id="page_background" data-field_name="background"
-                       data-field_type="page_style" data-id="">
-                <div class="input-group-append">
-                    <div class="input-group-text">
-                        <i class="fas fa-fill-drip"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="option-field-item">
-            <label>Background Image</label>
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <button type="button" class="input-group-text admin-file-manager" data-input="background_image" data-preview="holder">
-                        <i class="fa fa-upload"></i>
-                    </button>
-                </div>
-                <input type="text"  data-field_id="background_image" data-field_name="background_image"
-                       data-field_type="page_style" data-id="" name="background_image" id="background_image" value="" class="trigger_field form-control ">
-                <div class="input-group-append">
-                    <button type="button" class="input-group-text admin-file-view" data-input="background_image">
-                        <i class="fa fa-eye"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="option-field-item">
-            <label>Height</label>
-            <div class="input-group">
-                <input type="number" name="page_height" class="form-control trigger_field"
-                       value="800" data-field_id="page_height" data-field_name="height" min="800"
-                       data-field_type="page_style" data-id="">
-            </div>
-        </div>
-
-        <div class="option-field-item">
-            <label class="custom-switch pl-0">
-                <input type="hidden" name="page_graph" class="trigger_field" value="0" data-field_id="page_graph" data-field_name="graph" data-field_type="page_style" data-id="">
-                <input type="checkbox" name="page_graph_radio" id="rtlSwitch" value="1" class="custom-switch-input">
-                <span class="custom-switch-indicator"></span>
-                <label class="custom-switch-description mb-0 cursor-pointer" for="rtlSwitch">Enable Graph</label>
-            </label>
-        </div>
-        <input type="text" name="stage_set" class="hide1 form-control trigger_field"
-               value="{{$stage_set}}" data-field_id="stage_set" data-field_name="stage_set"
-               data-field_type="page_set" data-id="">
-
-        <h6 class="mt-20">Topic Settings</h6>
-
-
-        <div class="option-field-item">
-            <label>Passing Scores (%)</label>
-            <div class="input-group">
-                <input type="number" name="passing_scores" class="form-control trigger_field"
-                       value="90" data-field_id="passing_scores" data-field_name="passing_scores" min="50" max="100"
-                       data-field_type="page_style" data-id="">
-            </div>
-        </div>
-
-        <div class="option-field-item mt-20 mb-20">
-            <label class="custom-switch pl-0">
-                <input type="hidden" name="shuffle_questions" class="trigger_field" value="0" data-field_id="shuffle_questions" data-field_name="shuffle_questions" data-field_type="page_style" data-id="">
-                <input type="checkbox" name="shuffle_questions_radio" id="shuffle_questions" value="1" class="custom-switch-input">
-                <span class="custom-switch-indicator"></span>
-                <label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_questions">Shuffle Questions</label>
-            </label>
-        </div>
-
-
-
-
-    </div>
 </div>
 </div>
 

@@ -844,7 +844,7 @@ $(document).on('click', '.field_settings', function (e) {
 
 });
 
-$(document).on('keyup keydown click', '.field-options .trigger_field', function (e) {
+$(document).on('keyup keydown click change', '.field-options .trigger_field', function (e) {
     
     trigger_field_change($(this));
     //levels_sorting_render();
@@ -868,7 +868,7 @@ $(document).on('keyup keydown click', '.field-options .trigger_field', function 
 
         });
 		
-$(document).on('keyup keydown click', '.page-settings-fields .trigger_field', function (e) {
+$(document).on('keyup keydown click change', '.page-settings-fields .trigger_field', function (e) {
     
     trigger_field_change($(this));
 });
@@ -973,8 +973,9 @@ function trigger_field_change(thisObj) {
             this_value = this_value+'%';
         }
 		if( field_name == 'height'){
-			this_value = this_value+'%';
+			this_value = this_value+'px';
 		}
+		console.log(field_name);
 		if( field_name == 'graph'){
 			if( this_value == 1){
 				$(".page_settings.active").addClass('graph-background');
@@ -1128,9 +1129,7 @@ jQuery(document).ready(function () {
             var field_type = $(".draggable_field_"+field_id).attr('data-field_type');
             if(field_type != 'topic' && field_type != 'treasure' && field_type != 'spacer') {
                 $('.draggable_field_' + field_id).resizable({
-                    handles: {
-                        se: $('.draggable_field_' + field_id).find(".resize-handler") // Ensure the correct handler
-                    },
+                    
                     resize: function (event, ui) {
                         var parent = $(this).parent(); // Assuming dropZonObj is the container
                         var parentWidth = parent.width();
