@@ -5,8 +5,7 @@ $topics_list = getSvgFiles('assets/admin/editor/topics/');
 $treasures_list = getSvgFiles('assets/admin/editor/treasures/');
 $sets_list = getSvgFilesByFolder('assets/admin/editor/sets/');
 $data_values = isset( $itemObj->data_values )? json_decode($itemObj->data_values) : array();
-$stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
-
+$stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set1';
  @endphp
 
 <div class="editor-controls-holder">
@@ -19,9 +18,6 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
 		<li class="nav-item" role="presentation">
 			<button class="nav-link" id="layers-tab" data-toggle="tab" data-target="#layers{{$data_id}}" type="button" role="tab" aria-controls="contact" aria-selected="false">Layers</button>
 		</li>
-        <li class="nav-item hide" role="presentation">
-            <button class="nav-link" id="levels-tab" data-toggle="tab" data-target="#levels{{$data_id}}" type="button" role="tab" aria-controls="contact" aria-selected="false">Levels</button>
-        </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link stage_settings-tab" id="stage_settings-tab" data-toggle="tab" data-target="#stage_settings{{$data_id}}" type="button" role="tab" aria-controls="contact" aria-selected="false">Stage Settings</button>
             </li>
@@ -78,7 +74,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
 		<h5>Layers</h5>
         <ul class="nav nav-pills" id="myTab3" role="tablist">
             <li class="nav-item">
-                <a class="nav-link all_layers-tab" id="all_layers-tab{{$data_id}}" data-toggle="tab" href="#all_layers{{$data_id}}" role="tab" aria-controls="all_layers{{$data_id}}" aria-selected="true">All</a>
+                <a class="nav-link all_layers-tab active" id="all_layers-tab{{$data_id}}" data-toggle="tab" href="#all_layers{{$data_id}}" role="tab" aria-controls="all_layers{{$data_id}}" aria-selected="true">All</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="levels_layers-tab{{$data_id}}" data-toggle="tab" href="#levels_layers{{$data_id}}" role="tab" aria-controls="levels_layers{{$data_id}}" aria-selected="true">Levels</a>
@@ -88,13 +84,14 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
             </li>
         </ul>
 
-        <div class="tab-pane mt-3 fade " id="all_layers{{$data_id}}" role="tabpanel" aria-labelledby="all_layers-tab{{$data_id}}">
+        <div class="tab-pane mt-3 fade all_layers-tab-data show active" id="all_layers{{$data_id}}" role="tabpanel" aria-labelledby="all_layers-tab{{$data_id}}">
             <ul class="editor-objects-list editor-objects-list-all {{$data_id}}">
                 @php
                     if( isset( $itemObj->id ) && !empty( $itemObj->LearningJourneyObjects->where('status','active') )){
+						$layer_counter = 1;
                         foreach( $itemObj->LearningJourneyObjects->where('status','active') as $learningJourneyItemObj){
 
-                            echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2">'.$learningJourneyItemObj->item_slug.'
+                            echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2"><span class="layer-serial">'.$layer_counter.'</span><label contenteditable="true">'.$learningJourneyItemObj->item_title.'</label>
 
                             <div class="actions-menu">
                                 <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
@@ -102,6 +99,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
                             </li>
                             ';
 
+						$layer_counter++;
                         }
                     }
                 @endphp
@@ -114,7 +112,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
             <ul class="editor-objects-list levels-objects-list {{$data_id}}">
                 @php
                     if( isset( $itemObj->id ) && !empty( $itemObj->LearningJourneyObjects->whereIn('item_type', array('topic', 'treasure', 'spacer'))->where('status','active') )){
-                        foreach( $itemObj->LearningJourneyObjects->whereIn('item_type', array('topic', 'treasure', 'spacer'))->where('status','active') as $learningJourneyItemObj){
+                        foreach( $itemObj->LearningJourneyObjects->whereIn('item_type', array('stage_start', 'stage_end', 'topic', 'treasure', 'spacer'))->where('status','active') as $learningJourneyItemObj){
 
                             echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2" data-link_position="left-in">'.$learningJourneyItemObj->item_slug.'
 
@@ -134,14 +132,14 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
             @if( !empty( $sets_list ) )
                 @foreach( $sets_list as $directory_name => $directoryData)
                     @php $is_selected = ($stage_set == $directory_name)? 'active' : ''; @endphp
-                    <ul class="editor-objects sets-selection {{$is_selected}}" data-set="{{$directory_name}}">
+                    <ul class="editor-objects sets-selection {{$is_selected}} {{$stage_set}}" data-set="{{$directory_name}}">
                         <h6 class="mt-20">{{$directory_name}}</h6>
                         @foreach( $directoryData as $set_data)
                             @php $object_path = isset( $set_data['path'] )? $set_data['path'] : '';
-                $object_slug = isset( $set_data['slug'] )? $set_data['slug'] : '';
-                $object_title = isset( $set_data['title'] )? $set_data['title'] : '';
-                $svg_code = isset( $set_data['svg_code'] )? $set_data['svg_code'] : '';
-                $svg_code = updateSvgDimensions($svg_code, '100%', '100%');
+							$object_slug = isset( $set_data['slug'] )? $set_data['slug'] : '';
+							$object_title = isset( $set_data['title'] )? $set_data['title'] : '';
+							$svg_code = isset( $set_data['svg_code'] )? $set_data['svg_code'] : '';
+							$svg_code = updateSvgDimensions($svg_code, '100%', '100%');
                             @endphp
                             <li>
                                 <a href="javascript:;" title="{{$object_title}}" class="stage-tool-item item_{{$object_slug}}"
@@ -257,7 +255,7 @@ $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set2';
                 <label class="custom-switch-description mb-0 cursor-pointer" for="rtlSwitch">Enable Graph</label>
             </label>
         </div>
-        <input type="text" name="stage_set" class="hide form-control trigger_field"
+        <input type="text" name="stage_set" class="hide1 form-control trigger_field"
                value="{{$stage_set}}" data-field_id="stage_set" data-field_name="stage_set"
                data-field_type="page_set" data-id="">
 
