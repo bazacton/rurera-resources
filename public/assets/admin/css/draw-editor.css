@@ -225,13 +225,19 @@ body .flowchart-operator-connector-small-arrow {
     top: -15px;
 }
 .book-dropzone .drop-item.field_settings a.remove {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     position: absolute;
-    top: -20px;
+    top: -22px;
     left: 50%;
     opacity: 0;
     visibility: hidden;
     color: #ff0000;
     transform: translateX(-50%);
+    border-radius: 15px;
+    height: fit-content;
+    padding: 5px 10px 3px;
+    width: fit-content;
 }
 .book-dropzone .drop-item.field_settings a.remove span {
     font-size: 10px;
