@@ -160,7 +160,7 @@ body .editor-objects-list li:before {
     background-image: none;
     border-radius: 5px;
 }
-.book-dropzone .drop-item.active{border-color: #ddd; opacity: 1;}
+.book-dropzone .drop-item.active{background-color: #fff; border-color: #ddd; opacity: 1;}
 .book-dropzone .field-data svg {height: 100%; margin-bottom: -10px;}
 .book-dropzone .field-data.ui-rotatable {
     margin: 0 0 20px 0;
