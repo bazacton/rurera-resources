@@ -240,7 +240,7 @@ body .flowchart-operator-connector-small-arrow {
     transform: translateX(-50%);
     border-radius: 15px;
     height: fit-content;
-    padding: 5px 10px 3px;
+    padding: 4px 10px 3px;
     width: fit-content;
 }
 .book-dropzone .drop-item.field_settings a.remove span {
