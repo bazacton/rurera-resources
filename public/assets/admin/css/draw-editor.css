@@ -141,6 +141,10 @@ body .editor-objects-list li:before {
     color: #000;
     left: 10px;
 }
+body .editor-objects-list li label {
+    margin: 0;
+    line-height: normal;
+}
 .learning-stage-btn {display: inline-flex; margin-bottom: 0; margin-left: auto;}
 .learning-stage-btn button {height: 100%; border: 1px solid #ddd; background-color: #fff; margin-left: 0; border-radius: 5px 5px 0 0; border-bottom: 0; font-size: 14px; color: var(--blue); font-weight: 600; outline: none; padding: 0 15px;}
 .learning-stage-btn button i {margin-right: 5px;}
