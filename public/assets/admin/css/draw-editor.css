@@ -175,37 +175,11 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
 .drop-item.spacer-block .remove {margin-bottom: 8px;}
 .drop-item.spacer-block .remove span {margin: 0 !important;}
 .book-dropzone .drop-item.spacer-block .field-data .flowchart-operator-inputs-outputs {margin-left: 0;margin-right: 0;display: inline-block;}
-.book-dropzone .flowchart-operator-connector {
-    position: relative;
-    padding-top: 0;
-    padding-bottom: 0;
-    height: auto;
-}
-svg.flowchart-links-layer {
-    bottom: 0;
-    top: auto;
-}
-body .flowchart-operator-connector-arrow {
-    top: -20px;
-}
-body .flowchart-operator-connector-small-arrow {
-    top: -15px;
-}
-.book-dropzone .drop-item.field_settings a.remove {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    position: absolute;
-    top: -22px;
-    left: 50%;
-    opacity: 0;
-    visibility: hidden;
-    color: #ff0000;
-    transform: translateX(-50%);
-    border-radius: 15px;
-    height: fit-content;
-    padding: 4px 10px 3px;
-    width: fit-content;
-}
+.book-dropzone .flowchart-operator-connector {position: relative; padding-top: 0; padding-bottom: 0; height: auto;}
+svg.flowchart-links-layer {bottom: 0; top: auto;}
+body .flowchart-operator-connector-arrow {top: -20px;}
+body .flowchart-operator-connector-small-arrow {top: -15px;}
+.book-dropzone .drop-item.field_settings a.remove {background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); position: absolute; top: -22px; left: 50%; opacity: 0; visibility: hidden; color: #ff0000; transform: translateX(-50%); border-radius: 15px; height: fit-content; padding: 4px 10px 3px; width: fit-content;}
 .book-dropzone .drop-item.field_settings a.remove span {
     font-size: 10px;
 }
