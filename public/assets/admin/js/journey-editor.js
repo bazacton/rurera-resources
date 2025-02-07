@@ -219,7 +219,7 @@ $(document).on('click', '.book-dropzone', function (e) {
         if (drag_type == "topic" || drag_type == "treasure" || drag_type == "spacer") {
             $el.append('<a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a>');
         }else{
-            $el.append('<div class="object-options"><a href="javascript:;" class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se resize-handler"><span class="fa fa-resize"></span></a></div>');
+            $el.append('<div class="object-options"><a href="javascript:;" class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se resize-handler"><span class="fas fa-expand-alt fa-fw"></span></a></div>');
         }
         $el.append('</div>');
         if (!EditorIsEmpty(attribute_type)) {
