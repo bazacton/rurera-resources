@@ -224,6 +224,12 @@ body .flowchart-operator-connector-small-arrow {
     position: absolute;
     top: -18px;
     left: 15px;
+    opacity: 0;
+    visibility: hidden;
+}
+.book-dropzone .drop-item.field_settings.active a.remove {
+    opacity: 1;
+    visibility: visible;
 }
 /* Zoom Header Style Start */
 .zoom-header button {
