@@ -13,6 +13,39 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
 
 <style type="text/css">
+.flowchart-operator-inputs-outputs {
+    position: absolute;
+	top:40%;
+}
+
+.field-data.ui-rotatable {
+    position: relative;
+}
+
+
+.flowchart-operator-outputs {
+    position: absolute;
+    left: 0%;
+}
+
+.flowchart-operator-inputs {
+    position: absolute;
+    left: 50%;
+}
+
+
+
+.flowchart-operator-outputs {
+    left: 0%;
+}
+
+.flowchart-operator-inputs {
+    left: 50%;
+}
+
+
+
+
 
     .flowchart-operator{
         display: inline-table;
