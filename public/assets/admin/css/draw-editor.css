@@ -124,21 +124,9 @@ body ul.editor-objects.sets-selection li img {width: 100% !important;}
 .editor-objects-list li .dropdown-menu.show {display: flex !important;}
 ul.editor-objects-list {margin-top: 25px; counter-reset: section;}
 body .editor-objects-list li {background-color: #f8f8f8; border: 1px solid #ccc; padding: 8px 10px 8px 25px; margin-bottom: 10px; position: relative;}
-body .editor-objects-list li:before {
-    counter-increment: section;
-    content: counter(section) ". ";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-weight: bold;
-    color: #000;
-    left: 10px;
-}
+body .editor-objects-list li:before {counter-increment: section; content: counter(section) ". "; position: absolute; top: 50%; transform: translateY(-50%); font-weight: bold; color: #000; left: 10px;}
 body .editor-objects-list li.active {background-color: #efefef; border-color: var(--blue);}
-body .editor-objects-list li label {
-    margin: 0;
-    line-height: normal;
-}
+body .editor-objects-list li label {margin: 0; line-height: normal;}
 .learning-stage-btn {display: inline-flex; margin-bottom: 0; margin-left: auto;}
 .learning-stage-btn button {height: 100%; border: 1px solid #ddd; background-color: #fff; margin-left: 0; border-radius: 5px 5px 0 0; border-bottom: 0; font-size: 14px; color: var(--blue); font-weight: 600; outline: none; padding: 0 15px;}
 .learning-stage-btn button i {margin-right: 5px;}
@@ -151,10 +139,7 @@ body .editor-objects-list li label {
 .editor-controls-holder .layout-template-item {background-color: #fafafa; border: 1px solid #ccc; padding: 5px 15px; display: inline-block; line-height: normal; border-radius: 3px; text-decoration: none;}
 .editor-controls-holder .path-tool-item.active,
 .editor-controls-holder .layout-template-item.active {border-color: #9acbff; background-color: #f3f9ff; color: var(--blue);}
-.book-dropzone .drop-item {
-    background: none;
-    background-image: none;
-}
+.book-dropzone .drop-item {background: none; background-image: none;}
 .book-dropzone .drop-item.active{ opacity: 1;}
 .book-dropzone .drop-item > .field-data {
     border: 2px dotted transparent;
