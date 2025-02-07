@@ -16,6 +16,7 @@
 .flowchart-operator-inputs-outputs {
     position: absolute;
 	top:40%;
+	z-index:-1;
 }
 
 .field-data.ui-rotatable {
