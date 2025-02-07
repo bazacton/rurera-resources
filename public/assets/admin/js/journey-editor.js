@@ -216,7 +216,6 @@ $(document).on('click', '.book-dropzone', function (e) {
 
 
         if (drag_type == "topic" || drag_type == "treasure" || drag_type == "spacer") {
-            $el.append('<a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a>');
         }else{
             $el.append('<div class="object-options"><a href="javascript:;" class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se resize-handler"><span class="fas fa-expand-alt fa-fw"></span></a><a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a></div>');
         }
@@ -601,7 +600,10 @@ $(document).on('click', '#stage_settings-tab1', function (e) {
 
 $(document).on('click', '.flowchart-links-layer', function (e) {
 	if (e.target !== this) return; // Ensures the click is only on `.page_settings`
+	$(this).closest('.editor-zone').find('.all_settings-tab').click();
 	$(this).closest('.editor-zone').find('.stage_settings-tab').click();
+	$('.field_settings').removeClass('active');
+	
 });
 $(document).on('click', '.page_settings', function (e) {
 	
