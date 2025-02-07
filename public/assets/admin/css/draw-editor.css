@@ -143,15 +143,7 @@ body .editor-objects-list li label {margin: 0; line-height: normal; outline: non
 .book-dropzone .drop-item > .field-data {border: 2px dotted transparent; border-radius: 5px;}
 .book-dropzone .drop-item.active > .field-data {border-color: #ddd;}
 .book-dropzone .field-data svg {height: 100%; margin-bottom: 0;}
-.book-dropzone .ui-rotatable-handle {
-    background-color: rgba(0, 0, 0, 0.1);
-    top: 50%;
-    left: -48px;
-    pointer-events: none;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-50%);
-}
+.book-dropzone .ui-rotatable-handle {background-color: rgba(0, 0, 0, 0.1); top: 50%; left: -48px; pointer-events: none; opacity: 0; visibility: hidden; transform: translateY(-50%);}
 .book-dropzone .ui-rotatable-handle:after {
     content: "";
     position: absolute;
