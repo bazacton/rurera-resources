@@ -425,6 +425,8 @@ function reinitialize_items(){
         var field_id = $(this).attr('data-id');
         var link_position = $(this).attr('data-link_position');
         link_position = (link_position == null || link_position == undefined)? 'left-in' : link_position
+		link_position = 'left-in';
+		console.log('reinitialize_itemsreinitialize_itemsreinitialize_itemsreinitialize_items');
         const previousElement = $(this).prev('li'); // Find the previous element with the same data-field_type
         if (previousElement.length > 0) {
             const previousId = previousElement.attr('data-id'); // Get the ID of the previous element
@@ -666,10 +668,10 @@ $(document).on('click', '.field_settings', function (e) {
 		
 		if( $(this).hasClass('path-initializer')){
 			thisParentObj.find(".editor-parent-nav #layers-tab").click();
-			thisParentObj.find(".editor-objects-block li #levels_layers-tab1").click();
+			thisParentObj.find('.levels_layers-tab').click();
 		}else{
 			thisParentObj.find(".editor-parent-nav #layers-tab").click();
-			thisParentObj.find(".editor-objects-block li #all_layers-tab1").click();
+			thisParentObj.find('.all_layers-tab').click();
 			//$(".editor-parent-nav #stages-tab").click();
 			//$(".editor-controls li #objects-tab1").click();
 		}
@@ -716,8 +718,8 @@ $(document).on('click', '.field_settings', function (e) {
 
 	thisParentObj.find('.field_settings').removeClass('active');
 	$(this).addClass('active');
-	thisParentObj.find('.editor-objects-list li').removeClass('active');
-	thisParentObj.find('.editor-objects-list li[data-id="'+field_id+'"]').addClass('active');
+	thisParentObj.find('.editor-objects-list-all li').removeClass('active');
+	thisParentObj.find('.editor-objects-list-all li[data-id="'+field_id+'"]').addClass('active');
 
     thisParentObj.find('.field-options .trigger_field').each(function () {
 
@@ -877,7 +879,7 @@ $(document).on('keyup keydown click change', '.page-settings-fields .trigger_fie
 
 
 
-$(document).on('click', '.editor-objects-list li .fa-trash', function (e) {
+$(document).on('click', '.editor-objects-list-all li .fa-trash', function (e) {
 	if( $(this).closest('li').hasClass('locked-object')){
 		return false;
 	}
@@ -909,7 +911,7 @@ $(document).on('click', '.editor-objects-list li .fa-trash', function (e) {
 
 });
 
-$(document).on('click', '.editor-objects-list li .fa-unlock', function (e) {
+$(document).on('click', '.editor-objects-list-all li .fa-unlock', function (e) {
 	$(this).removeClass('fa-unlock');
 	$(this).addClass('fa-lock');
 	$(this).closest('li').addClass('locked-object');
@@ -920,7 +922,7 @@ $(document).on('click', '.editor-objects-list li .fa-unlock', function (e) {
 	$('.draggable_field_' + data_id).rotatable("disable");
 });
 
-$(document).on('click', '.editor-objects-list li .fa-lock', function (e) {
+$(document).on('click', '.editor-objects-list-all li .fa-lock', function (e) {
 	$(this).removeClass('fa-lock');
 	$(this).addClass('fa-unlock');
 	$(this).closest('li').removeClass('locked-object');
@@ -1167,7 +1169,7 @@ jQuery(document).ready(function () {
 		}
 		var data_id = $(this).closest('.field_settings').attr('data-id');
         var element_type = $(this).closest('.field_settings').attr('data-field_type');
-		$('.editor-objects-list li[data-id="'+data_id+'"]').remove();
+		$('.editor-objects-list-all li[data-id="'+data_id+'"]').remove();
 		sorting_render();
         $(this).closest('.field_settings').remove();
         $(".field-options").addClass('hide');
@@ -1469,6 +1471,8 @@ function generate_stage_area(){
 
 		});
 	});
+	
+	console.log(posted_data);
 
 	return posted_data;
 }
