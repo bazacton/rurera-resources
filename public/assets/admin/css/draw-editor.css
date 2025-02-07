@@ -144,16 +144,7 @@ body .editor-objects-list li label {margin: 0; line-height: normal; outline: non
 .book-dropzone .drop-item.active > .field-data {border-color: #ddd;}
 .book-dropzone .field-data svg {height: 100%; margin-bottom: 0;}
 .book-dropzone .ui-rotatable-handle {background-color: rgba(0, 0, 0, 0.1); top: 50%; left: -48px; pointer-events: none; opacity: 0; visibility: hidden; transform: translateY(-50%);}
-.book-dropzone .ui-rotatable-handle:after {
-    content: "";
-    position: absolute;
-    right: -100%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 25px;
-    border-top: 3px dotted #ddd;
-    margin-right: -5px;
-}
+.book-dropzone .ui-rotatable-handle:after {content: ""; position: absolute; right: -100%; top: 50%; transform: translateY(-50%); width: 25px; border-top: 3px dotted #ddd; margin-right: -5px;}
 body .flowchart-operator {border: 0;}
 body .ui-rotatable-handle::before {font-size: 10px; content: "\f0e2"; font-family: "Font Awesome 5 Free"; color: #333;}
 .book-dropzone .object-options a {position: absolute; right: -5px; bottom: -5px; height: 20px; width: 20px; text-align: center; display: inline-flex; justify-content: center; align-items: center; border-radius: 100%; font-size: 12px; color: #333; text-decoration: none; pointer-events: none; opacity: 0; visibility: hidden; text-indent: 0;}
@@ -172,24 +163,10 @@ svg.flowchart-links-layer {bottom: 0; top: auto;}
 body .flowchart-operator-connector-arrow {top: -20px;}
 body .flowchart-operator-connector-small-arrow {top: -15px;}
 .book-dropzone .drop-item.field_settings a.remove {background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); position: absolute; top: -22px; left: 50%; opacity: 0; visibility: hidden; color: #ff0000; transform: translateX(-50%); border-radius: 15px; height: fit-content; padding: 4px 10px 3px; width: fit-content;}
-.book-dropzone .drop-item.field_settings a.remove span {
-    font-size: 10px;
-}
-.book-dropzone .drop-item.field_settings.active a.remove {
-    opacity: 1;
-    visibility: visible;
-}
-.book-dropzone .object-options a.resize-handler {
-    right: -3px;
-    bottom: -6px;
-    background-color: #ddd;
-    background-image: none;
-    height: 12px;
-    width: 12px;
-}
-.book-dropzone .object-options a.resize-handler .fas {
-    display: none;
-}
+.book-dropzone .drop-item.field_settings a.remove span {font-size: 10px;}
+.book-dropzone .drop-item.field_settings.active a.remove {opacity: 1; visibility: visible;}
+.book-dropzone .object-options a.resize-handler {right: -3px; bottom: -6px; background-color: #ddd; background-image: none; height: 12px; width: 12px;}
+.book-dropzone .object-options a.resize-handler .fas {display: none;}
 /* Zoom Header Style Start */
 .zoom-header button {
     border: 1px solid #ddd;
