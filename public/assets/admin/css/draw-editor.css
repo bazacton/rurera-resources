@@ -180,7 +180,7 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
     align-items: center;
 }
 .book-dropzone .drop-item.spacer-block .field-data > svg {
-    margin: 14px 0 0 12px;
+    margin: -7px 0 0 12px;
     position: absolute;
     top: 0;
     cursor: grab;
