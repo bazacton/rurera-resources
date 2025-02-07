@@ -146,7 +146,7 @@ body .editor-objects-list li label {margin: 0; line-height: normal;}
 .book-dropzone .ui-rotatable-handle {
     background-color: rgba(0, 0, 0, 0.1);
     top: 50%;
-    left: -35px;
+    left: -48px;
     pointer-events: none;
     opacity: 0;
     visibility: hidden;
@@ -155,12 +155,12 @@ body .editor-objects-list li label {margin: 0; line-height: normal;}
 .book-dropzone .ui-rotatable-handle:after {
     content: "";
     position: absolute;
-    right: 0;
+    right: -100%;
     top: 50%;
     transform: translateY(-50%);
-    width: 10px;
-    height: 2px;
-    border: 2px dotted #ddd;
+    width: 25px;
+    border-top: 3px dotted #ddd;
+    margin-right: -5px;
 }
 body .flowchart-operator {border: 0;}
 body .ui-rotatable-handle::before {font-size: 10px; content: "\f0e2"; font-family: "Font Awesome 5 Free"; color: #333;}
