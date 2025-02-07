@@ -294,7 +294,7 @@
     </div>
     <div class="section-body">
         <div class="row">
-            <!-- Zoom Header Start -->
+		<!-- Zoom Header Start -->
             <div class="col-12 col-md-12 col-lg-12">
                 <div class="zoom-header">
                     <button class="zoomin">zoom in </button>
@@ -602,7 +602,7 @@
                 url: '/admin/webinars/chapters_by_course',
                 data: {'course_id': course_id, 'chapter_id': chapter_id},
                 success: function (return_data) {
-                    console.log('cccc-dropdown-list');
+                    
                     $(".ajax-chapter-dropdown").html(return_data);
                     $('.ajax-chapter-dropdown').change();
                 }
@@ -697,7 +697,7 @@
 		
 		check_stages();
 		  
-		$(".editor-objects-list").sortable();
+		$(".editor-objects-list222").sortable();
 		//$('.saved-item-class').click();
 
 
@@ -707,20 +707,22 @@
         }
 
 		$(".editor-objects-list").sortable({
+			handle: ".fa-sort", // Make sure your icon has this class
 			update: function(event, ui) {
 				sorting_render(); // Call your function here
+				levels_sorting_render();
 			}
 		});
-
-        $(".levels-objects-list").sortable({
-            update: function(event, ui) {
-                levels_sorting_render(); // Call your function here
-            }
-        });
 		
 		$(document).on('click', '#layers-tab', function (e) {
-			$(".editor-objects-block li #all_layers-tab1").click();
+			//$(".editor-objects-block li #all_layers-tab1").click();
 		});
+		
+		$('body').on('click', '.accordion-row', function (e) {
+			var level_id = $(this).attr('data-id');
+			
+
+        });
 
         $('body').on('click', '.stage-accordion', function (e) {
             /*console.log($(".book-dropzone.active").find('.flowchart-link').length);
@@ -732,6 +734,8 @@
             //var level_id = $(this).attr('data-id');
             var level_id = $(this).closest('li').attr('data-id');
 
+
+			$(".stage-accordion").removeClass('active');
             $(".accordion-row").removeClass('active');
             $(this).closest(".accordion-row").addClass('active');
             $(".curriculum-item-data").removeClass('active');
@@ -745,6 +749,7 @@
             $(".curriculum-item-data#collapseItems"+level_id).find('.book-dropzone').click();
             $('.book-dropzone.active').closest('.editor-zone').find('.stage_settings-tab').click();
             flowChartInitialize();
+			
 
         });
 		
@@ -796,11 +801,44 @@
                     $(".jounry-stages-lis").append(response.li_content);
                     $(".tabs-data").append(response.li_content_data);
                     flowChartInitialize();
-
-                        sorting_render();
+					
+					var unique_id = Math.floor((Math.random() * 99999) + 1);
+					var unique_id2 = Math.floor((Math.random() * 99999) + 1);
+					sorting_render();
 
                     handleTopicsMultiSelect2('search-topics-select2', '/admin/chapters/search', ['class', 'course', 'subject', 'title']);
 					check_stages();
+					$(".jounry-stages-lis").find("li.accordion-row").last().find(".stage-accordion").click();
+					
+					layer_html = `<li data-id="${unique_id}" data-field_postition="2"><span class="layer-serial">1</span><label contenteditable="true">Start</label>
+						<div class="actions-menu">
+							<i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort ui-sortable-handle"></i>
+						</div>
+					</li>`;
+					layer_html += `<li data-id="${unique_id2}" data-field_postition="2"><span class="layer-serial">2</span><label contenteditable="true">End</label>
+						<div class="actions-menu">
+							<i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort ui-sortable-handle"></i>
+						</div>
+					</li>`;
+					
+					
+					$el = $('<div></div>');
+					
+					$el.append($('<div id="' + unique_id + '" style="width:20%;left:0%; top:%;" data-item_title="Start" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id + '" data-id="' + unique_id + '" data-item_path="default/treasure_1.svg" data-field_type="stage_start" data-trigger_class="infobox-stage_start-fields" data-item_type="stage_start" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FFAC33" d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379z"></path></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div><a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a></div>'));
+					$el.append('</div>');
+					
+					$el.append($('<div id="' + unique_id2 + '" style="width:20%;left:0%; top:%;" data-item_title="Start" data-unique_id="' + unique_id2 + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id2 + '" data-id="' + unique_id2 + '" data-item_path="default/treasure_1.svg" data-field_type="stage_end" data-trigger_class="infobox-stage_end-fields" data-item_type="stage_end" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FFAC33" d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379z"></path></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div><a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a></div>'));
+					$el.append('</div>');
+					$(".book-dropzone.active").append($el);
+					
+					$(".book-dropzone.active").closest('.editor-zone').find('.levels-objects-list').prepend(layer_html);
+
+					$(".editor-objects-list").sortable({
+						handle: ".fa-sort", // Make sure your icon has this class
+						update: function(event, ui) {
+							sorting_render(); // Call your function here
+						}
+					});
                 }
             });
         });
@@ -876,9 +914,9 @@
 
 
 	$('body').on('submit', '.learning-journey-form', function (e) {
-		console.log('submitted_form');
+		
 		var posted_data = generate_stage_area();
-        console.log(posted_data);
+        
 		$(".posted-data").val(JSON.stringify(posted_data));
 
 
@@ -928,24 +966,20 @@
                 </li>`;
             });
         }
-        console.log($el);
+        
         if(level_type == 'treasure_mission') {
             $el.append($('<div data-no_of_coins="'+treasure_mission_points+'" id="' + field_random_number + '" style="width:20%;left:0%; top:%;" data-item_title="Treasure" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/treasure_1.svg" data-field_type="treasure" data-trigger_class="infobox-treasure_1-fields" data-item_type="treasure" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FFAC33" d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379z"></path></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div><a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a></div>'));
             $el.append('</div>');
-            layer_html += `<li data-id="${field_random_number}" data-field_postition="2">Treasure
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                <img src="/assets/default/svgs/dots-three.svg" alt="">
-                </button>
-            <div class="dropdown-menu">
-                <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i><i class="fa fa-copy"></i>
-            </div>
-        </div>
+            layer_html += `<li data-id="${field_random_number}" data-field_postition="2"><span class="layer-serial">3</span><label contenteditable="true">Treasure</label>
+            <div class="actions-menu">
+				<i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort ui-sortable-handle"></i>
+			</div>
         </li>`;
         }
 
 
-        $(".levels-objects-list").append(layer_html);
+        $(".book-dropzone.active").closest('.editor-zone').find(".editor-objects-list-all").append(layer_html);
+        $(".book-dropzone.active").closest('.editor-zone').find(".levels-objects-list").append(layer_html);
 
         $(".book-dropzone.active").append($el);
         $(".level_add_modal").modal('hide');
@@ -969,13 +1003,13 @@
     $(document).on('click', '.change-position', function () {
         var data_id = $(this).closest('.field_settings').attr('id');
         $(".draggable_field_"+data_id).find('.flowchart-operator-inputs-outputs').toggleClass('right-in');
-        var link_position = $('.levels-objects-list li[data-id="'+data_id+'"]').attr('data-link_position');
+        var link_position = $('.editor-objects-list-all li[data-id="'+data_id+'"]').attr('data-link_position');
         if(link_position == 'left-in'){
             link_position = 'right-in';
         }else{
             link_position = 'left-in';
         }
-        $('.levels-objects-list li[data-id="'+data_id+'"]').attr('data-link_position', link_position);
+        $('.editor-objects-list-all li[data-id="'+data_id+'"]').attr('data-link_position', link_position);
         levels_sorting_render();
     });
 
@@ -996,11 +1030,7 @@
         var midpoint = { top: (current_obj_top + next_obj_top) / 2, left: (current_obj_left + next_obj_left) / 2 };
 
 
-        console.log('current_obj_top==='+current_obj_top);
-        console.log('current_obj_left==='+current_obj_left);
-        console.log('next_obj_top==='+next_obj_top);
-        console.log('next_obj_left==='+next_obj_left);
-
+        
         var unique_id = Math.floor((Math.random() * 99999) + 1);
         var field_random_number = 'rand_' + unique_id;
         var layer_html = '';
@@ -1025,7 +1055,7 @@
         }
         $(this).closest('li').after(layer_html);
 
-        //$(".levels-objects-list").append(layer_html);
+        //$(".editor-objects-list-all").append(layer_html);
 
         $(".book-dropzone.active").append($el);
         $(".level_add_modal").modal('hide');
@@ -1057,7 +1087,7 @@
             return false;
         }
         $(".book-dropzone.active").attr('data-intiated_already', 'yes');
-        console.log('intiated---------------------------');
+        
         $flowchart = $('#flowchartworkspace');
         $flowchart = $(".book-dropzone.active");
         var $container = $flowchart.parent();
@@ -1306,11 +1336,14 @@
 
         $(".path-tool-item.active").click();
         $(document).on('keyup change keydown click', 'input[name="stage_name"]', function (e) {
-            var current_value = $(this).val();
-            current_value = (current_value == '')? 'Stage Name' : current_value;
+            var current_value = $(this).val();	
+			
+			
 
             var level_id    = $(this).closest('.li-content-data').attr('data-level_id');
-            console.log(level_id);
+			var current_value = $('.book-dropzone[data-level_id="'+level_id+'"]').attr('data-stage_name');
+            current_value = (current_value == '')? 'Stage Name' : current_value;
+            
             $('li.accordion-row[data-id="'+level_id+'"]').find('.journey-title-'+level_id).html(current_value);
 
         });
@@ -1321,7 +1354,7 @@
 
 
         $(".conditional-field").change();
-        $(".sets-selection.active").click();
+		$(".book-dropzone.active").closest('.editor-zone').find(".sets-selection.active").click();
 
 
 
@@ -1377,6 +1410,13 @@
 
       defaultFlowchartData = {};
 	  
+	  
+	  
+
+
+
+
+
     if (false) console.log('remove lint unused warning', defaultFlowchartData);
 </script>
 <script>

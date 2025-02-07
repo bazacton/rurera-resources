@@ -61,7 +61,7 @@ $(document).on('dblclick', '.flowchart-links-layer g path', function (e) {
         var topPercentage = (e.offsetY / elementHeight) * 100;
         var leftPercentage = (e.offsetX / elementWidth) * 100;
 
-        console.log('Mouse Click Position - Top:', topPercentage, 'Left:', leftPercentage);
+        
 
 
     }
@@ -141,6 +141,7 @@ $(document).on('click', '.sets-selection', function () {
     var set_name = $(this).attr('data-set');
     //$(".field-options").addClass('hide');
     $('.sets-selection').removeClass('active');
+    $(this).addClass('active');
     var treasure_data = $(this).find('.item_treasure_pending');
     var topic_data = $(this).find('.item_topic_pending');
     var treasure_svg_code = treasure_data.closest('li').find('.svg_code').html();
@@ -158,8 +159,7 @@ $(document).on('click', '.sets-selection', function () {
     topic_block.attr('data-item_path', topic_item_path);
     topic_block.find('.field-data svg').remove();
     topic_block.find('.field-data').prepend(topic_svg_code);
-    $(this).addClass('active');
-    $('input[name="stage_set"]').val(set_name);
+    $(this).closest('.editor-zone').find('input[name="stage_set"]').val(set_name);
     //$('body').css('cursor', "pointer");
 });
 
@@ -214,12 +214,11 @@ $(document).on('click', '.book-dropzone', function (e) {
         var $el = $('<div style="left:' + leftPercentage + '%; top:' + topPercentage + '%;" data-item_title="'+item_title+'" data-unique_id="'+unique_id+'" data-is_new="yes" class="drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="' + item_path + '" data-field_type="' + drag_type + '" data-trigger_class="infobox-'+drag_object+'-fields" data-item_type="'+drag_object+'" data-paragraph_value="Test text here..."><div class="field-data">'+svg_code+'</div>');
         //$el.append('<span class="field-handle fas fa-arrows-alt"></span><a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
 
-        $el.append('<a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a>');
 
         if (drag_type == "topic" || drag_type == "treasure" || drag_type == "spacer") {
             $el.append('<a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a>');
         }else{
-            $el.append('<div class="object-options"><a href="javascript:;" class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se resize-handler"><span class="fas fa-expand-alt fa-fw"></span></a></div>');
+            $el.append('<div class="object-options"><a href="javascript:;" class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se resize-handler"><span class="fas fa-expand-alt fa-fw"></span></a><a href="javascript:;" class="remove"><span class="fas fa-trash"></span></a></div>');
         }
         $el.append('</div>');
         if (!EditorIsEmpty(attribute_type)) {
@@ -227,15 +226,18 @@ $(document).on('click', '.book-dropzone', function (e) {
         }
         dropZonObj.append($el);
     }
-    console.log('item-adddddddddddddddddddddddddddeeeed');
+    
+	
     //after_add_render(field_random_number, dropZonObj);
 
 
     /*
     * Draggable
     */
+	
+	$('.draggable_field_' + field_random_number+ ' .field-data').rotatable();
+	
     $('.draggable_field_' + field_random_number)
-    .rotatable()
     .draggable({
         preventCollision: true,
         containment: dropZonObj,
@@ -287,8 +289,6 @@ $(document).on('click', '.book-dropzone', function (e) {
             // Update the field options with the percentage values
             $(".field-options").find('.trigger_field[data-field_name="width"]').val(widthPercent);
             $(".field-options").find('.trigger_field[data-field_name="width"]').change();
-
-            console.log('resieeeeeeeeeeeeeee---------------3333');
         }
     });
 
@@ -296,12 +296,13 @@ $(document).on('click', '.book-dropzone', function (e) {
 		format: 'hex',
 	});
 
-	var z_index = $(".editor-objects-list li").length+1;
+	var z_index = $(".editor-objects-list-all li").length+1;
 	if( item_title != undefined){
-		$(".editor-objects-list-all").append('<li data-id="'+field_random_number+'" data-field_postition="'+z_index+'">'+item_title+' <div class="actions-menu">\n' +
+		$(".editor-objects-list-all").prepend('<li data-id="'+field_random_number+'" data-field_postition="'+z_index+'"><span class="layer-serial"></span><label contenteditable="true">'+item_title+'</label> <div class="actions-menu">\n' +
             '                                <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>\n' +
             '                            </div></li>');
 		$(".editor-objects-list-all").sortable({
+			handle: ".fa-sort",
 			update: function(event, ui) {
 				sorting_render(); // Call your function here
 			}
@@ -309,6 +310,8 @@ $(document).on('click', '.book-dropzone', function (e) {
 	}
 
 	sorting_render();
+	
+	
 
 
 
@@ -392,7 +395,7 @@ function after_add_render(field_random_number, dropZonObj){
             },
             resize: function (event, ui) {
 
-                console.log('resiezee0000000000-------00000000000');
+                
                 var parent = $(this).parent(); // Assuming dropZonObj is the container
                 var parentWidth = parent.width();
                 var parentHeight = parent.height();
@@ -427,7 +430,7 @@ function reinitialize_items(){
         if (previousElement.length > 0) {
             const previousId = previousElement.attr('data-id'); // Get the ID of the previous element
 
-            console.log('link_position-----'+link_position);
+            
 
             var from_connector = 'output_1';
             if(link_position == 'right-in'){
@@ -490,9 +493,13 @@ function reinitialize_items(){
 }
 
 function sorting_render(){
-	$('.editor-objects-list li').each(function (index_id, thisObj) {
-		index_id++;
+	var total_length = $('.book-dropzone.active').closest('.editor-zone').find('.editor-objects-list-all li').length;
+	$('.book-dropzone.active').closest('.editor-zone').find('.editor-objects-list-all li').each(function (index_id, thisObj) {
+		var index_plus = index_id;
+		index_plus++;
+		var index_id = total_length - index_id;
 		$(thisObj).attr('data-field_postition', index_id);
+		$(thisObj).find('.layer-serial').html(index_plus);
 		var data_id = $(thisObj).attr('data-id');
 		$(".draggable_field_" + data_id).css('z-index', index_id);
 		$(".draggable_field_" + data_id).attr('data-field_postition', index_id);
@@ -505,7 +512,7 @@ function sorting_render(){
         console.log('book-dropzone.activebook-dropzone.activebook-dropzone.activebook-dropzone.active');
         after_add_render(field_id, $(".book-dropzone.active"));
     });*/
-    console.log('sorting-render1111111111111111111111111111111111');
+    
 
     $('.curriculum-item-data.active .levels-objects-list').find('li').each(function () {
         var field_id = $(this).attr('data-id');
@@ -515,15 +522,15 @@ function sorting_render(){
 }
 
 function levels_sorting_render(){
-    $('.curriculum-item-data.active .levels-objects-list li').each(function (index_id, thisObj) {
+    /*$('.curriculum-item-data.active .levels-objects-list li').each(function (index_id, thisObj) {
         index_id++;
         $(thisObj).attr('data-field_postition', index_id);
         var data_id = $(thisObj).attr('data-id');
         $(".draggable_field_" + data_id).css('z-index', index_id);
         $(".draggable_field_" + data_id).attr('data-field_postition', index_id);
-    });
+    });*/
 
-    console.log('levels_sorting_render');
+    
 
     var operatorData = {
         //top: field_position.top,// ($flowchart.height() / 2) - 30,
@@ -544,20 +551,19 @@ function levels_sorting_render(){
     };
 
     if($flowchart == null){
-        console.log('not-availbale-chart');
+        
         setTimeout(function() {
             sorting_render();
             levels_sorting_render();
         }, 2000); // 2000 milliseconds = 2 seconds
     }else {
         sorting_render();
-        console.log('available-chart----------');
+        
         var links = $flowchart.flowchart('getData').links;
 
         // Find the link with the specified details
 
-        console.log('linkslinkslinkslinkslinks');
-        console.log(links);
+        
 
         $('.curriculum-item-data.active .levels-objects-list').find('li').each(function () {
             var field_id = $(this).attr('data-id');
@@ -571,7 +577,7 @@ function levels_sorting_render(){
                         ) {
                             // Delete the matching link
                             $flowchart.flowchart('deleteLink', linkId);
-                            console.log("Deleted link with ID: " + linkId);
+                            
                         }
                     });
                 }
@@ -582,6 +588,12 @@ function levels_sorting_render(){
     }
 
 }
+
+$(document).on('keyup change keydown', '.editor-objects-list-all li label', function (e) {
+    var label_text = $(this).html();
+	var field_id = $(this).closest('li').attr('data-id');
+	$(".draggable_field_"+field_id).attr('data-item_title', label_text);
+});
 
 $(document).on('click', '#stage_settings-tab1', function (e) {
 
@@ -594,23 +606,22 @@ $(document).on('click', '.flowchart-links-layer', function (e) {
 $(document).on('click', '.page_settings', function (e) {
 	
 	if (!$(e.target).is($(this))) {
-		console.log('page-settttttttttttttttttttttttttttttt111111111111111');
 		return false;
 	}
+	var thisParentObj = $(this).closest('.editor-zone');
 	
-	console.log('page-settttttttttttttttttttttttttttttt');
 	$('.page_settings').removeClass('active');
 	$(this).addClass('active');
-    $(".field-options").html('');
+    thisParentObj.find(".field-options").html('');
     var fieldObj = $(this);
     var field_id = fieldObj.data('id');
     var parent_field_id = field_id;
     var trigger_class = fieldObj.data('trigger_class');
-    $(".field-options").html('<h4 class="properties-title">Stage Properties</h4> '+$('.' + trigger_class).html());
-	$('.field_settings').removeClass('active');
-    $(".field-options .trigger_field").attr('data-id', field_id);
+    thisParentObj.find(".field-options").html('<h4 class="properties-title">Stage Properties</h4> '+$('.' + trigger_class).html());
+	thisParentObj.find('.field_settings').removeClass('active');
+    thisParentObj.find(".field-options .trigger_field").attr('data-id', field_id);
 
-	$('.field-options .trigger_field').each(function () {
+	thisParentObj.find('.field-options .trigger_field').each(function () {
         var field_id = $(this).data('field_id');
         var field_type = $(this).data('field_type');
         var field_value = fieldObj.attr('data-' + field_id);
@@ -626,10 +637,12 @@ $(document).on('click', '.page_settings', function (e) {
 
     });
 
-	$('.field-options .trigger_field').change();
+	thisParentObj.find('.field-options .trigger_field').change();
 	$('.colorpickerinput').colorpicker({
 		format: 'hex',
 	});
+	
+	
 });
 
 $(document).on('change', '.conditional-field', function () {
@@ -645,16 +658,19 @@ var subject_topics_list = [];
 
 $(document).on('click', '.field_settings', function (e) {
     $(".field-options").html('');
+	
+	var thisParentObj = $(this).closest('.editor-zone');
 	if( stage_created == true){
-    if( $(this).hasClass('path-initializer')){
-        $(".editor-parent-nav #layers-tab").click();
-        $(".editor-objects-block li #levels_layers-tab1").click();
-    }else{
-        $(".editor-parent-nav #layers-tab").click();
-        $(".editor-objects-block li #all_layers-tab1").click();
-        //$(".editor-parent-nav #stages-tab").click();
-        //$(".editor-controls li #objects-tab1").click();
-    }
+		
+		if( $(this).hasClass('path-initializer')){
+			thisParentObj.find(".editor-parent-nav #layers-tab").click();
+			thisParentObj.find(".editor-objects-block li #levels_layers-tab1").click();
+		}else{
+			thisParentObj.find(".editor-parent-nav #layers-tab").click();
+			thisParentObj.find(".editor-objects-block li #all_layers-tab1").click();
+			//$(".editor-parent-nav #stages-tab").click();
+			//$(".editor-controls li #objects-tab1").click();
+		}
 	}
 
 
@@ -663,7 +679,7 @@ $(document).on('click', '.field_settings', function (e) {
 	var item_title = fieldObj.attr('data-item_title');
 	var parent_field_id = field_id;
     var trigger_class = fieldObj.data('trigger_class');
-    $(".field-options").html('<h4 class="properties-title">'+item_title+' Properties</h4> '+$('.' + trigger_class).html());
+    thisParentObj.find(".field-options").html('<h4 class="properties-title">'+item_title+' Properties</h4> '+$('.' + trigger_class).html());
 
 
 
@@ -696,12 +712,12 @@ $(document).on('click', '.field_settings', function (e) {
     }
 
 
-	$('.field_settings').removeClass('active');
+	thisParentObj.find('.field_settings').removeClass('active');
 	$(this).addClass('active');
-	$('.editor-objects-list li').removeClass('active');
-	$('.editor-objects-list li[data-id="'+field_id+'"]').addClass('active');
+	thisParentObj.find('.editor-objects-list li').removeClass('active');
+	thisParentObj.find('.editor-objects-list li[data-id="'+field_id+'"]').addClass('active');
 
-    $('.field-options .trigger_field').each(function () {
+    thisParentObj.find('.field-options .trigger_field').each(function () {
 
 		var currentFieldObj = $(this);
         var field_id = $(this).data('field_id');
@@ -799,10 +815,10 @@ $(document).on('click', '.field_settings', function (e) {
 
 
     if (!EditorIsEmpty($('.' + trigger_class).html())) {
-        $(".field-options").removeClass('hide');
+        thisParentObj.find(".field-options").removeClass('hide');
     }
-    $(".field-options .trigger_field").attr('data-id', field_id);
-	$('.field-options .trigger_field').change();
+    thisParentObj.find(".field-options .trigger_field").attr('data-id', field_id);
+	thisParentObj.find('.field-options .trigger_field').change();
 	$('.colorpickerinput').colorpicker({
 		format: 'hex',
 	});
@@ -828,14 +844,32 @@ $(document).on('click', '.field_settings', function (e) {
 
 });
 
-$(document).on('keyup change keydown click', '.field-options .trigger_field', function (e) {
-    console.log('trigger_field_change_data-------------------');
+$(document).on('keyup keydown click', '.field-options .trigger_field', function (e) {
+    
     trigger_field_change($(this));
     //levels_sorting_render();
 });
 
-$(document).on('keyup change keydown click', '.page-settings-fields .trigger_field', function (e) {
-    console.log('trigger_field_change_data-------------------');
+		$('body').on('click', '.stage-accordion', function (e) {
+            var level_id = $(this).closest('li').attr('data-id');
+
+			$(".stage-accordion").removeClass('active');
+            $(".accordion-row").removeClass('active');
+            $(this).closest(".accordion-row").addClass('active');
+            $(".curriculum-item-data").removeClass('active');
+            $(".curriculum-item-data").removeClass('show');
+            $(".book-dropzone").removeClass('active');
+            $(this).addClass('active');
+            $('.curriculum-item-data[data-level_id="'+level_id+'"]').addClass('active');
+            //$(".curriculum-item-data#collapseItems"+level_id).addClass('show');
+            //$(".curriculum-item-data#collapseItems"+level_id).addClass('show');
+            $('.curriculum-item-data[data-level_id="'+level_id+'"]').find('.book-dropzone').addClass('active');
+            
+
+        });
+		
+$(document).on('keyup keydown click', '.page-settings-fields .trigger_field', function (e) {
+    
     trigger_field_change($(this));
 });
 
@@ -1057,7 +1091,7 @@ jQuery(document).ready(function () {
             .rotatable({
                 angle: rotate_value,
                 rotate: function (event, ui) {
-                    console.log('field_dsfsdfsdlkfjsdklfj lksdjfk sdklflkjsd f');
+                    
                     sorting_render();
                     levels_sorting_render();
                 }
@@ -1118,7 +1152,7 @@ jQuery(document).ready(function () {
                         $(".field-options").find('.trigger_field[data-field_name="width"]').val(widthPercent);
                         $(".field-options").find('.trigger_field[data-field_name="width"]').change();
 
-                        console.log('resieeeeeeeeeeeeeee---------------222');
+                        
                     }
 
                 });
@@ -1134,7 +1168,7 @@ jQuery(document).ready(function () {
         var element_type = $(this).closest('.field_settings').attr('data-field_type');
 		$('.editor-objects-list li[data-id="'+data_id+'"]').remove();
 		sorting_render();
-        $(this).parent().detach();
+        $(this).closest('.field_settings').remove();
         $(".field-options").addClass('hide');
 
         levels_sorting_render();
@@ -1352,7 +1386,7 @@ function generate_stage_area(){
 	posted_data['levels'] = {};
 	$(".book-dropzone").each(function (index) {
         var svgs_code = $(this).find('.flowchart-links-layer').html();
-        var stage_set = 'set2';//$(this).find('input[name="stage_set"]').val();
+        var stage_set = $(this).closest('.editor-zone').find('input[name="stage_set"]').val();
         if(svgs_code != ''){
             svgs_code = '<svg class="flowchart-links-layer">'+svgs_code+'</svg>';
         }
