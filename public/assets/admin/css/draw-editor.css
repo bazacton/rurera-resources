@@ -123,7 +123,6 @@ body ul.editor-objects.sets-selection li img {width: 100% !important;}
 .editor-objects-list li .dropdown-menu i {display: inline-flex; float: right; padding: 8px 9px; color: #333; font-size: 12px; cursor: pointer; background-color: rgba(0, 0, 0, 0.05); margin: 0 5px; border-radius: 3px; border: 1px solid #ddd;}
 .editor-objects-list li .dropdown-menu.show {display: flex !important;}
 ul.editor-objects-list {margin-top: 25px; counter-reset: section;}
-.editor-objects-list li.active {background-color: #efefef; border-color: var(--blue);}
 body .editor-objects-list li {
     background-color: #f8f8f8;
     border: 1px solid #ccc;
@@ -141,6 +140,7 @@ body .editor-objects-list li:before {
     color: #000;
     left: 10px;
 }
+body .editor-objects-list li.active {background-color: #efefef; border-color: var(--blue);}
 body .editor-objects-list li label {
     margin: 0;
     line-height: normal;
