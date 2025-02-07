@@ -222,8 +222,8 @@ body .flowchart-operator-connector-small-arrow {
 }
 .book-dropzone .drop-item.field_settings a.remove {
     position: absolute;
-    top: 0;
-    left: -5px;
+    top: -2px;
+    left: 15px;
 }
 /* Zoom Header Style Start */
 .zoom-header button {
