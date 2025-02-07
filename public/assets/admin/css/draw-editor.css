@@ -211,7 +211,7 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
     height: auto;
 }
 svg.flowchart-links-layer {
-    bottom: 10px;
+    bottom: 0;
     top: auto;
 }
 body .flowchart-operator-connector-arrow {
