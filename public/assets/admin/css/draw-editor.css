@@ -159,7 +159,7 @@ body .editor-objects-list li label {margin: 0; line-height: normal;}
     top: 50%;
     transform: translateY(-50%);
     width: 25px;
-    border-top: 1px dotted #ddd;
+    border-top: 3px dotted #ddd;
     margin-right: -5px;
 }
 body .flowchart-operator {border: 0;}
