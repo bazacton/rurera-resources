@@ -112,7 +112,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                     if( isset( $itemObj->id ) && !empty( $itemObj->LearningJourneyObjects->whereIn('item_type', array('topic', 'treasure', 'spacer'))->where('status','active') )){
                         foreach( $itemObj->LearningJourneyObjects->whereIn('item_type', array('stage_start', 'stage_end', 'topic', 'treasure', 'spacer'))->where('status','active') as $learningJourneyItemObj){
 
-                            echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2" data-link_position="left-in">'.$learningJourneyItemObj->item_slug.'
+                            echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2" data-link_position="left-in">'.$learningJourneyItemObj->item_title.'
 
                             <div class="actions-menu">
                                 <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
