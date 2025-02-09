@@ -887,10 +887,10 @@
 					$(".book-dropzone.active").append($el);
 					
 					$('.draggable_field_' + unique_id)
-					.rotatable({angle: rotate_value})
+					.rotatable()
 					.off('wheel'); // Unbinds all wheel events from this element
 					$('.draggable_field_' + unique_id2)
-					.rotatable({angle: rotate_value})
+					.rotatable()
 					.off('wheel'); // Unbinds all wheel events from this element
 					
 					$(".book-dropzone.active").closest('.editor-zone').find('.levels-objects-list').prepend(layer_html);
