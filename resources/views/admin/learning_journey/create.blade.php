@@ -496,6 +496,7 @@
                                             <label class="input-label">Type</label>
                                             <select name="level_type" data-plugin-selectTwo class="form-control populate level_type conditional-field">
                                                 <option value="topic" data-child="topic-fields">Topic</option>
+                                                <option value="custom_topic" data-child="topic-fields">Custom Topic</option>
                                                 <option value="treasure_mission" data-child="treasure_mission-fields">Treasure Mission</option>
                                             </select>
                                         </div>
@@ -659,14 +660,27 @@
     $(document).on('change', '.ajax-subchapter-dropdown', function () {
         var sub_chapter_id = $(this).val();
         var topic_part = $(this).attr('data-next_value');
-        $.ajax({
-            type: "GET",
-            url: '/admin/webinars/topic_part_item_by_sub_chapter',
-            data: {'subchapter_id': sub_chapter_id, 'show_all': 'yes', 'topic_part': topic_part},
-            success: function (return_data) {
-                $(".topic-parts-data").html(return_data);
-            }
-        });
+		var level_type = $(".level_type").val();
+		if(level_type == 'topic'){
+			$.ajax({
+				type: "GET",
+				url: '/admin/webinars/topic_part_item_by_sub_chapter',
+				data: {'subchapter_id': sub_chapter_id, 'show_all': 'yes', 'topic_part': topic_part},
+				success: function (return_data) {
+					$(".topic-parts-data").html(return_data);
+				}
+			});
+		}
+		if(level_type == 'custom_topic'){
+			$.ajax({
+				type: "GET",
+				url: '/admin/webinars/custom_topic_by_sub_chapter',
+				data: {'subchapter_id': sub_chapter_id, 'show_all': 'yes', 'topic_part': topic_part},
+				success: function (return_data) {
+					$(".topic-parts-data").html(return_data);
+				}
+			});
+		}
     });
         /*$(document).on('change', '.ajax-chapter-dropdown', function () {
             var thisObj = $(this);
@@ -995,24 +1009,20 @@
         var field_random_number = 'rand_' + unique_id;
         var layer_html = '';
         $el = $('<div></div>');
-        if(level_type == 'topic') {
+        if(level_type == 'topic' || level_type == 'custom_topic') {
             var topic_part_item_ids = $('[name="topic_part_item_id[]"]').val();
 
             $.each(topic_part_item_ids, function(index, topic_part_item_id) {
+				var topic_title = $('option[value="' + topic_part_item_id + '"]').attr('data-title');
                 var unique_id = Math.floor((Math.random() * 99999) + 1);
                 var field_random_number = 'rand_' + unique_id;
                 // Perform an action with each topic_part_item_id
-                $el.append($('<div id="' + field_random_number + '" data-topic_part_item_id="'+topic_part_item_id+'" style="width:20%;left:0%; top:0%;" data-item_title="Topic" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="topic" data-trigger_class="infobox-topic_numbers-fields" data-item_type="topic_numbers" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 258 264" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="257.641" width="263.774" height="257.64" rx="49.0743" transform="rotate(90 257.641 0)" fill="#8F5C57" fill-opacity="0.79"></rect></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div><a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a></div>'));
+                $el.append($('<div id="' + field_random_number + '" data-topic_part_item_id="'+topic_part_item_id+'" style="width:20%;left:0%; top:0%;" data-item_title="'+topic_title+'" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="topic" data-trigger_class="infobox-topic_numbers-fields" data-item_type="topic_numbers" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 258 264" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="257.641" width="263.774" height="257.64" rx="49.0743" transform="rotate(90 257.641 0)" fill="#8F5C57" fill-opacity="0.79"></rect></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div><a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a></div>'));
                 $el.append('</div>');
-                layer_html += `<li data-id="${field_random_number}" data-field_postition="2">Topic Title
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                        <img src="/assets/default/svgs/dots-three.svg" alt="">
-                        </button>
-                    <div class="dropdown-menu">
-                        <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i><i class="fa fa-copy"></i>
-                    </div>
-                </div>
+                layer_html += `<li data-id="${field_random_number}" data-field_postition="2">${topic_title}
+                   <div class="actions-menu">
+						<i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort ui-sortable-handle"></i>
+					</div>
                 </li>`;
             });
         }

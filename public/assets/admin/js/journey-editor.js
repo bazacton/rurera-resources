@@ -608,7 +608,30 @@ $(document).on('click', '.flowchart-links-layer', function (e) {
 	$('.field_settings').removeClass('active');
 	
 });
-$(document).on('click', '.page_settings', function (e) {
+
+
+$(document).on('click', '.topics_settings-tab', function (e) {
+	
+	var thisParentObj = $(this).closest('.editor-zone').find('.book-dropzone');
+	var thisObj = $(this);
+	thisObj.closest('.editor-zone').find('.topic_settings_fields').find('.trigger_field').each(function () {
+        var field_id = $(this).data('field_id');
+		var field_attr_type = $(this).attr('data-field_attr_type');
+		var current_value = thisParentObj.attr('data-' + field_id);
+		console.log(field_id);
+		console.log(current_value);
+
+		if( field_attr_type == 'switch'){
+			if( current_value == 1){
+				$(this).closest('.custom-switch').find(".custom-switch-input").prop('checked', true);
+			}
+		}
+		$(this).val(current_value);
+
+    });
+	
+});
+$(document).on('click', '.page_settings1', function (e) {
 	
 	if (!$(e.target).is($(this))) {
 		return false;
@@ -625,6 +648,8 @@ $(document).on('click', '.page_settings', function (e) {
     thisParentObj.find(".field-options").html('<h4 class="properties-title">Stage Properties</h4> '+$('.' + trigger_class).html());
 	thisParentObj.find('.field_settings').removeClass('active');
     thisParentObj.find(".field-options .trigger_field").attr('data-id', field_id);
+	
+	console.log('page_settings____________-');
 
 	thisParentObj.find('.field-options .trigger_field').each(function () {
         var field_id = $(this).data('field_id');
@@ -632,7 +657,7 @@ $(document).on('click', '.page_settings', function (e) {
         var field_value = fieldObj.attr('data-' + field_id);
         if (field_type != 'image') {
 
-			if( field_id == 'page_graph'){
+			if( field_id == 'page_graph' || field_id == 'shuffle_questions'){
 				if( field_value == 1){
 					$(this).closest('.custom-switch').find(".custom-switch-input").prop('checked', true);
 				}
@@ -850,7 +875,6 @@ $(document).on('click', '.field_settings', function (e) {
 });
 
 $(document).on('keyup keydown click change', '.field-options .trigger_field', function (e) {
-    
     trigger_field_change($(this));
     //levels_sorting_render();
 });
@@ -875,6 +899,9 @@ $(document).on('keyup keydown click change', '.field-options .trigger_field', fu
 		
 $(document).on('keyup keydown click change', '.page-settings-fields .trigger_field', function (e) {
     
+    trigger_field_change($(this));
+});
+$(document).on('keyup keydown click change', '.topic_settings_fields .trigger_field', function (e) {
     trigger_field_change($(this));
 });
 
@@ -1408,8 +1435,18 @@ function generate_stage_area(){
 		posted_data['levels'][level_id]['page_graph'] = $(this).attr('data-page_graph');
         posted_data['levels'][level_id]['item_path'] = $(this).attr('data-item_path');
         posted_data['levels'][level_id]['stage_name'] = $(this).attr('data-stage_name');
+		
+		
+        posted_data['levels'][level_id]['skip_questions'] = $(this).attr('data-skip_questions');
+        posted_data['levels'][level_id]['after_activity_show_answers'] = $(this).attr('data-after_activity_show_answers');
+        posted_data['levels'][level_id]['activity_show_answers'] = $(this).attr('data-activity_show_answers');
+        posted_data['levels'][level_id]['redemption_questions'] = $(this).attr('data-redemption_questions');
+        posted_data['levels'][level_id]['play_music'] = $(this).attr('data-play_music');
         posted_data['levels'][level_id]['passing_scores'] = $(this).attr('data-passing_scores');
         posted_data['levels'][level_id]['shuffle_questions'] = $(this).attr('data-shuffle_questions');
+		posted_data['levels'][level_id]['shuffle_answer_options'] = $(this).attr('data-shuffle_answer_options');
+		
+		
 		$(this).find(".field_settings").each(function (index) {
 			var fieldObj = $(this);
 			var data_values = {};

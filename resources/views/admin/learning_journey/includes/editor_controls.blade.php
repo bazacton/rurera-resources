@@ -141,12 +141,15 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
             <li class="nav-item">
                 <a class="nav-link" id="layers_settings-tab{{$data_id}}" data-toggle="tab" href="#layers_settings{{$data_id}}" role="tab" aria-controls="layers_settings{{$data_id}}" aria-selected="true">Layers Settings</a>
             </li>
+			
+            <li class="nav-item topics_settings-tab">
+                <a class="nav-link " id="topics_settings-tab{{$data_id}}" data-toggle="tab" href="#topics_settings{{$data_id}}" role="tab" aria-controls="topics_settings{{$data_id}}" aria-selected="true">Topics Settings</a>
+            </li>
         </ul>
 		
 		<div class="tab-pane mt-3 fade show active" id="stage_settings{{$data_id}}" role="settingtabpanel" aria-labelledby="stage_settings-tab{{$data_id}}">
-		
+			<h6 class="mt-20">Stage Settings</h6>
 			<div class="page-settings-fields">
-				<h5>Levels</h5>
 				<div class="option-field-item">
 					<label>Stage Name</label>
 					<div class="input-group">
@@ -190,26 +193,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					   value="{{$stage_set}}" data-field_id="stage_set" data-field_name="stage_set"
 					   data-field_type="page_set" data-id="">
 
-				<h6 class="mt-20">Topic Settings</h6>
-
-
-				<div class="option-field-item">
-					<label>Passing Scores (%)</label>
-					<div class="input-group">
-						<input type="number" name="passing_scores" class="form-control trigger_field"
-							   value="90" data-field_id="passing_scores" data-field_name="passing_scores" min="50" max="100"
-							   data-field_type="page_style" data-id="">
-					</div>
-				</div>
-
-				<div class="option-field-item mt-20 mb-20">
-					<label class="custom-switch pl-0">
-						<input type="hidden" name="shuffle_questions" class="trigger_field" value="0" data-field_id="shuffle_questions" data-field_name="shuffle_questions" data-field_type="page_style" data-id="">
-						<input type="checkbox" name="shuffle_questions_radio" id="shuffle_questions" value="1" class="custom-switch-input">
-						<span class="custom-switch-indicator"></span>
-						<label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_questions">Shuffle Questions</label>
-					</label>
-				</div>
+				
 
 
 
@@ -219,6 +203,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 		
 		
 		<div class="tab-pane mt-3 fade" id="layers_settings{{$data_id}}" role="settingtabpanel" aria-labelledby="layers_settings-tab{{$data_id}}">
+			<h6 class="mt-20">Layers Settings</h6>
             @if( !empty( $sets_list ) )
                 @foreach( $sets_list as $directory_name => $directoryData)
                     @php $is_selected = ($stage_set == $directory_name)? 'active' : ''; @endphp
@@ -283,6 +268,86 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                 </li>
             </ul>
 
+        </div>
+		
+		
+		<div class="tab-pane mt-3 fade topic_settings_fields" id="topics_settings{{$data_id}}" role="settingtabpanel" aria-labelledby="topics_settings-tab{{$data_id}}">
+			<h6 class="mt-20">Topic Settings</h6>
+			
+			<div class="option-field-item mt-20 mb-20">
+				<label class="custom-switch pl-0">
+					<input type="hidden" data-field_attr_type="switch" name="redemption_questions" class="trigger_field" value="0" data-field_id="redemption_questions" data-field_name="redemption_questions" data-field_type="page_style" data-id="">
+					<input type="checkbox" name="redemption_questions_radio" id="redemption_questions" value="1" class="custom-switch-input">
+					<span class="custom-switch-indicator"></span>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="redemption_questions">Redemption questions</label>
+				</label>
+			</div>
+			
+			<div class="option-field-item mt-20 mb-20">
+				<label class="custom-switch pl-0">
+					<input type="hidden" data-field_attr_type="switch" data-field_attr_type="switch" name="activity_show_answers" class="trigger_field" value="0" data-field_id="activity_show_answers" data-field_name="activity_show_answers" data-field_type="page_style" data-id="">
+					<input type="checkbox" name="activity_show_answers_radio" id="activity_show_answers" value="1" class="custom-switch-input">
+					<span class="custom-switch-indicator"></span>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="activity_show_answers">Show answers (During Activity)</label>
+				</label>
+			</div>
+			
+			<div class="option-field-item mt-20 mb-20">
+				<label class="custom-switch pl-0">
+					<input type="hidden" data-field_attr_type="switch" name="after_activity_show_answers" class="trigger_field" value="0" data-field_id="after_activity_show_answers" data-field_name="after_activity_show_answers" data-field_type="page_style" data-id="">
+					<input type="checkbox" name="after_activity_show_answers_radio" id="after_activity_show_answers" value="1" class="custom-switch-input">
+					<span class="custom-switch-indicator"></span>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="after_activity_show_answers">Show answers (After Activity)</label>
+				</label>
+			</div>
+			
+			<div class="option-field-item mt-20 mb-20">
+				<label class="custom-switch pl-0">
+					<input type="hidden" data-field_attr_type="switch" name="shuffle_questions" class="trigger_field" value="0" data-field_id="shuffle_questions" data-field_name="shuffle_questions" data-field_type="page_style" data-id="">
+					<input type="checkbox" name="shuffle_questions_radio" id="shuffle_questions" value="1" class="custom-switch-input">
+					<span class="custom-switch-indicator"></span>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_questions">Shuffle Questions</label>
+				</label>
+			</div>
+			
+			<div class="option-field-item mt-20 mb-20">
+				<label class="custom-switch pl-0">
+					<input type="hidden" data-field_attr_type="switch" name="shuffle_answer_options" class="trigger_field" value="0" data-field_id="shuffle_answer_options" data-field_name="shuffle_answer_options" data-field_type="page_style" data-id="">
+					<input type="checkbox" name="shuffle_answer_options_radio" id="shuffle_answer_options" value="1" class="custom-switch-input">
+					<span class="custom-switch-indicator"></span>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_answer_options">Shuffle Answer Options</label>
+				</label>
+			</div>
+			
+			<div class="option-field-item mt-20 mb-20">
+				<label class="custom-switch pl-0">
+					<input type="hidden" data-field_attr_type="switch" name="skip_questions" class="trigger_field" value="0" data-field_id="skip_questions" data-field_name="skip_questions" data-field_type="page_style" data-id="">
+					<input type="checkbox" name="skip_questions_radio" id="skip_questions" value="1" class="custom-switch-input">
+					<span class="custom-switch-indicator"></span>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="skip_questions">Skip Question (Attempt Later)</label>
+				</label>
+			</div>
+			
+			<div class="option-field-item mt-20 mb-20">
+				<label class="custom-switch pl-0">
+					<input type="hidden" data-field_attr_type="switch" name="play_music" class="trigger_field" value="0" data-field_id="play_music" data-field_name="play_music" data-field_type="page_style" data-id="">
+					<input type="checkbox" name="play_music_radio" id="play_music" value="1" class="custom-switch-input">
+					<span class="custom-switch-indicator"></span>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="play_music">Play Music</label>
+				</label>
+			</div>
+
+
+			<div class="option-field-item">
+				<label>Passing Scores (%)</label>
+				<div class="input-group">
+					<input type="number" name="passing_scores" class="form-control trigger_field"
+						   value="90" data-field_id="passing_scores" data-field_name="passing_scores" min="50" max="100"
+						   data-field_type="page_style" data-id="">
+				</div>
+			</div>
+
+			
         </div>
 </div>
 </div>
