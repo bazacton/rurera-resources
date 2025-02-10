@@ -12,11 +12,6 @@ body:has(.quiz-topbar) {
   scrollbar-gutter: stable both-edges;
 }
 html:has(.admin_role, .quiz-topbar) {overflow: visible;}
-.single-question-preview .question-layout-block .prev-next-controls.questions-nav-controls {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
 .quiz-topbar, .read-quiz-info ~ .read-quiz-content .quiz-topbar {background-color: #4c5387; padding: 15px 0 15px; position: relative; z-index: 1; width: 100%; }
 .quiz-topbar .row {align-items: center;}
 .quiz-top-info p,
