@@ -19,11 +19,11 @@
             <div class="ms-auto last-activity profile-dropdown">
                 <a href="#" class="font-18 font-weight-normal">{{$selected_child}}</a>
                 <ul>
-                    <li><a href="/{{panelRoute()}}/analytics/?child=all" class="switch-user-btn"><span class="icon-box"><img src="/assets/default/svgs/switch-user.svg" alt=""></span> All Students</a></li>
+                    <li><a href="/{{panelRoute()}}/analytics/?child=all" class="switch-user-btn"><span class="icon-box"><img src="/assets/default/svgs/switch-user.svg" alt="switch-user" height="800" width="800"></span> All Students</a></li>
                     @if( !empty( $childs ) )
                     @foreach($childs as $childLinkObj)
                     @php $childObj = $childLinkObj->user; @endphp
-                        <li><a href="/{{panelRoute()}}/analytics/?child={{ $childObj->id }}" class="switch-user-btn"><span class="icon-box"><img src="{{$childObj->getAvatar()}}" alt=""></span> {{ $childObj->get_full_name() }}</a></li>
+                        <li><a href="/{{panelRoute()}}/analytics/?child={{ $childObj->id }}" class="switch-user-btn"><span class="icon-box"><img src="{{$childObj->getAvatar()}}" alt="#" height="400" width="400"></span> {{ $childObj->get_full_name() }}</a></li>
                     @endforeach
                     @endif
                 </ul>
