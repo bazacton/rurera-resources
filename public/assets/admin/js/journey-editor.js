@@ -123,7 +123,8 @@ $(document).on('click', '.layout-template-item', function () {
     //template_layout
     var template_layout_data = template_layout[target_layout];
     var item_counter = 1;
-    $(".book-dropzone.active").closest('.editor-zone').find('.curriculum-item-data.active .levels-objects-list').find('li').each(function (item_no) {
+    console.log($(".book-dropzone.active").closest('.editor-zone').find('.levels-objects-list').find('li').length);
+    $(".book-dropzone.active").closest('.editor-zone').find('.levels-objects-list').find('li').each(function (item_no) {
         var field_id = $(this).attr('data-id');
         var top_position =template_layout_data[item_counter].top;
         var left_position =template_layout_data[item_counter].left;
