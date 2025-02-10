@@ -789,6 +789,7 @@
                 levels_sorting_render();
             }*/
 
+            console.log('dropzone-active-------'+$('.book-dropzone.active').attr('data-level_id'));
             console.log('stage=========accordion======');
 
             //var level_id = $(this).attr('data-id');
