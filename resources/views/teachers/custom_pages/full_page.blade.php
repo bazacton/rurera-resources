@@ -173,7 +173,7 @@
                                                     <h3><img src="/assets/default/svgs/painter-brush.svg" alt="painter-brush"> Access Control and Authorizatio</h3>
                                                     <div class="dropdown-box">
                                                         <div class="dropdown">
-                                                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
                                                                 <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
                                                             </a>
                                                             <div class="dropdown-menu">
