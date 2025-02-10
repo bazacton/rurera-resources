@@ -437,7 +437,7 @@
                                                                         <input type="radio" class="package_id choose-package update-package-{{$subscribe->id}}" data-label="{{ $subscribe->title }}" id="up-{{$subscribe->id}}" data-price="{{$subscribe->price}}" value="{{ $subscribe->id }}" name="package_id">
                                                                         <label for="up-{{$subscribe->id}}" data-label="{{ $subscribe->title }}">
                                                                             <span class="subscribe-icon mb-20">
-                                                                                <img src="../assets/default/img/pig.png" height="auto" width="auto" alt="Box image">
+                                                                                <img src="../assets/default/img/pig.png" height="104" width="78" alt="Box image">
                                                                             </span>
                                                                             <div class="subscribe-title">
                                                                                 <h3 itemprop="title" class="font-24 font-weight-500">{{$subscribe->title }}</h3>
