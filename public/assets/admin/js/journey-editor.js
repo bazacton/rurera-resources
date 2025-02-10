@@ -7,19 +7,19 @@ var template_layout = {
         },
         2: {
             top: '90',
-            left: '300'
+            left: '30'
         },
         3: {
             top: '40',
-            left: '600'
+            left: '60'
         },
         4: {
             top: '30',
-            left: '610'
+            left: '60'
         },
         5: {
             top: '60',
-            left: '330'
+            left: '30'
         },
         6: {
             top: '70',
@@ -27,20 +27,20 @@ var template_layout = {
         },
         7: {
             top: '70',
-            left: '140'
+            left: '40'
         },
         8: {
             top: '40',
-            left: '330'
+            left: '30'
         },
         9: {
             top: '00',
-            left: '600'
+            left: '60'
         }
     }
 };
 
-var alreadyInitiated = [];
+var alreadyInitiated     = [];
 
 $(document).on('dblclick', '.flowchart-links-layer g path', function (e) {
     var top = 0;
