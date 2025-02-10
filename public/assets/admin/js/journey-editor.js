@@ -308,6 +308,12 @@ $(document).on('click', '.book-dropzone', function (e) {
 		$(".editor-objects-list-all").sortable({
 			handle: ".fa-sort",
 			update: function(event, ui) {
+                var $list = $(this);
+                var $stageEnd = $list.find(".stage_end").detach(); // Remove and store the .stage_end element
+                $list.append($stageEnd);
+
+                var $stageStart = $list.find(".stage_start").detach(); // Remove and store the .stage_end element
+                $list.prepend($stageStart);
 				sorting_render(); // Call your function here
 			}
 		});
@@ -525,6 +531,7 @@ function sorting_render(){
 
         after_add_render(field_id, $(".book-dropzone.active"));
     });
+
 }
 
 function levels_sorting_render(){
