@@ -19,7 +19,7 @@
     <div class="d-flex align-items-center justify-content-between flex-md-row">
         <h2 class="section-title font-36">Set Work</h2>
         <div class="dropdown">
-        <a class="btn subscription-modal font-18 p-0" href="/panel/set-work/create" data-type="child_register"><img src="/assets/default/svgs/add-con.svg"> Add Work
+        <a class="btn subscription-modal font-18 p-0" href="/panel/set-work/create" data-type="child_register"><img src="/assets/default/svgs/add-con.svg" alt="add-con" height="800" width="800"> Add Work
         </a>
     </div>
     </div>
