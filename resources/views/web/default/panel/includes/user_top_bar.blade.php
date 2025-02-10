@@ -2,8 +2,7 @@
 <div class="user-profile-icons">
     <ul>
         <li class="sidebar-logo-mobile">
-            <a class="sidebar-logo"
-               href="{{url('/')}}/" itemprop="url">
+            <a class="sidebar-logo" href="{{url('/')}}/" itemscope itemprop="url">
                 <img src="/assets/default/img/sidebar/logo.svg" alt="Rurera Logo" width="150" height="38"><span class="sidebar-logo-text"></span>
             </a>
         </li>
