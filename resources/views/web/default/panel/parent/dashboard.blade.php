@@ -420,7 +420,7 @@
                                             </div>
                                             @endif
 
-                                            <input type="hidden" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="1">
+                                            <input type="hidden" id="quantity" name="quantity" class="form-control input-number">
 
                                             <div class="col-12 col-lg-12 col-md-124">
                                                 <strong class="choose-title d-block mb-10 font-24">Choose Package</strong>
