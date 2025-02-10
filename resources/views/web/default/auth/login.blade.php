@@ -336,7 +336,7 @@
                                     </h2>
                                     <div class="password-fields">
                                         <input type="hidden" class="login_pin_final" value="">
-                                        <input type="text" name="pincode" class="login_pin focused_field" autocomplete="pincode" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
+                                        <input type="text" name="pincode" class="login_pin focused_field" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
                                         <input type="text" name="pincode1" class="login_pin" autocomplete="pincode1" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
                                         <input type="text" name="pincode2" class="login_pin" autocomplete="pincode2" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
                                         <input type="text" name="pincode3" class="login_pin" autocomplete="pincode3" value="" maxlength="1" style="border: 1px solid #ddd;max-width: 50px;width: auto;display: inline-block;margin: 0 5px;border-radius: 2px;letter-spacing: 1px;font-family: auto;">
