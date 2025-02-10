@@ -167,11 +167,7 @@
                                 $by_user_label .= 'By <img src="'.$userObj->getAvatar().'" width="26" height="26" alt="avatar"> ' . $userObj->get_full_name();
                             }
                         }
-
-
                         @endphp
-
-
                                 <li>
                                     <div class="timeline-icon"><img src="{{$analytic_icon}}" width="26" height="26" alt="avatar"></div>
                                     <div class="timeline-text"><p><strong><a href="{{$detail_link}}">{{isset( $analyticData['topic_title'] )? $analyticData['topic_title'] : ''}}</a></strong> {!! $by_user_label !!} <span class="info-time">{{ dateTimeFormat($start_time,'H:i') }}</span></p>
@@ -192,13 +188,9 @@
                                     @endif
                                     </div>
                                 </li>
-
-
                         @endforeach
                         @endif
-
                         </ul>
-
                     </div>
                 </div>
             </div>
