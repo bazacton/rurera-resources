@@ -134,8 +134,8 @@ $(document).on('click', '.layout-template-item', function () {
         $(".draggable_field_" + field_id).css('top', top_position+'%');
         $(".draggable_field_" + field_id).css('left', left_position+'%');
         item_counter++;
-        levels_sorting_render();
     });
+    levels_sorting_render();
 
 
 
