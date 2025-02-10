@@ -45,11 +45,8 @@
     <section class="section">
         <div class="section-body">
             <div class="row col-12 col-md-12 col-lg-12">
-
                 <input type="hidden" class="year_id_field" value="{{isset( $assignment->year_id )? $assignment->year_id : 0}}">
                 <input type="hidden" class="subject_id_field" value="{{isset( $assignment->subject_id )? $assignment->subject_id : 0}}">
-
-
                 <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                     @php $tab_active_class = ($assignment->subtopic_id > 0)? '' : 'active'; @endphp
                     <li class="nav-item">
@@ -59,7 +56,6 @@
                             <span class="tab-detail">Choose Subject Topic</span>
                         </a>
                     </li>
-
                 </ul>
                 <a href="javascript:;" class="col-2 col-md-2 col-lg-2 rurera-btn-grn rurera-confirm-dialog ml-auto" data-title="Are you sure?" data-subtitle="You will not be able to edit the assignment after publishing." data-on_confirm="publish_assignment();">Publish</a>
             </div>
