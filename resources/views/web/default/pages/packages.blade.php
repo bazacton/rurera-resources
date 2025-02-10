@@ -149,16 +149,13 @@
 
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="select-plan">
-                                        <input type="radio" class="choose-package" data-label="{{ $subscribe->title }}"
-                                               id="{{$subscribe->id}}" data-price="{{$subscribe->price}}"
-                                               value="{{ $subscribe->id }}" name="package">
+                                        <input type="radio" class="choose-package" data-label="{{ $subscribe->title }}" id="{{$subscribe->id}}" data-price="{{$subscribe->price}}" value="{{ $subscribe->id }}" name="package">
                                         <label for="{{$subscribe->id}}" data-label="{{ $subscribe->title }}">
                                             <div class="subscribe-plan position-relative d-flex flex-column rounded-lg py-25 px-20">
-                                                        <span class="subscribe-icon mb-35">
-                                                            <img src="../assets/default/svgs/box-color2.svg" alt="#">
-                                                            <img src="../assets/default/svgs/box-white.svg"
-                                                                 class="box-white-svg" alt="#">
-                                                        </span>
+                                                <span class="subscribe-icon mb-35">
+                                                    <img src="../assets/default/svgs/box-color2.svg" alt="#">
+                                                    <img src="../assets/default/svgs/box-white.svg" class="box-white-svg" alt="#">
+                                                </span>
                                                 <h3 itemprop="title"
                                                     class="font-24 font-weight-500 text-dark-charcoal pt-20">{{
                                                     $subscribe->title }}</h3>
