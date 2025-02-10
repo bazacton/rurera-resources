@@ -145,7 +145,7 @@ $(document).on('click', '.layout-template-item', function () {
 $(document).on('click', '.sets-selection', function () {
     var set_name = $(this).attr('data-set');
     //$(".field-options").addClass('hide');
-    $('.sets-selection').removeClass('active');
+    $(this).closest('.editor-objects-block').find('.sets-selection').removeClass('active');
     $(this).addClass('active');
     var treasure_data = $(this).find('.item_treasure_pending');
     var topic_data = $(this).find('.item_topic_pending');
