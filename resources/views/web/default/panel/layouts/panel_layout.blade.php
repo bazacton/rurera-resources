@@ -245,7 +245,7 @@
                                         <div id="accordion">
                                             <div class="panel-shadow panel-border rounded-sm pb-10 pt-15" style="background-color: #ddd;">
                                                 <div class="spell-item mb-10">
-                                                    <div class="spell-heading">
+                                                    <div class="spell-heading" id="heading1">
                                                         <button class="btn btn-link font-16 font-weight-bold" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
                                                             <span class="day-date">Word of the Day</span>
                                                         </button>
@@ -264,7 +264,7 @@
                                                 </div>
                                         
                                                 <div class="spell-item">
-                                                    <div class="spell-heading">
+                                                    <div class="spell-heading" id="heading2">
                                                         <button class="btn btn-link font-16 font-weight-bold" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                                                             Pungent
                                                             <span class="prev-date font-15 font-weight-500">Yesterday</span>
