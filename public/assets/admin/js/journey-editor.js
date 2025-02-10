@@ -426,7 +426,7 @@ function after_add_render(field_random_number, dropZonObj){
 
 function reinitialize_items(){
 
-    $('.curriculum-item-data.active .levels-objects-list').find('li').each(function () {
+    $('.curriculum-item-data .levels-objects-list').find('li').each(function () {
         var field_id = $(this).attr('data-id');
         var link_position = $(this).attr('data-link_position');
         link_position = (link_position == null || link_position == undefined)? 'left-in' : link_position

@@ -806,6 +806,7 @@
 
             console.log('dropzone-active-------'+$('.book-dropzone.active').attr('data-level_id'));
             flowChartInitialize();
+            sorting_render();
 
             levels_sorting_render();
 
