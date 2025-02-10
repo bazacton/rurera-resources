@@ -1151,7 +1151,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .search-field-box .col-lg-4 {padding-left: 0;}
 .search-field-box label {margin: 0; font-size: 13px;}
 .search-field-box .row {align-items: center;}
-.questions-group-select {padding: 0; margin: 0; height: calc(100vh - 100px); overflow: hidden; overflow-y: auto;}
+.questions-group-select {padding: 0; margin: 0; height: calc(100vh - 150px); overflow: hidden; overflow-y: auto;}
 .questions-group-select > li,
 .assignment-preview .questions-list > li {border-bottom: 1px solid #eee; padding: 20px 20px; line-height: normal; transition: all .5s; -webkit-transition: all .5s; -o-transition: all .5s; position: relative;}
 .questions-group-select > li:before,
