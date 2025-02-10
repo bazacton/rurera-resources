@@ -551,12 +551,9 @@
                                 <div class="col-lg-6 col-md-6 col-sm-12">
 
                                     <div class="select-plan">
-                                        <input type="radio" class="choose-package update-package-{{$subscribe->id}}"
-                                               data-label="{{ $subscribe->title }}"
-                                               id="up-{{$subscribe->id}}" data-price="{{$subscribe->price}}"
-                                               value="{{ $subscribe->id }}" name="package">
-                                        <label for="up-{{$subscribe->id}}" data-label="{{ $subscribe->title }}">
-                                            <div class="subscribe-plan position-relative d-flex flex-column rounded-lg py-25 px-20">
+                                        <div class="subscribe-plan position-relative d-flex flex-column rounded-lg py-25 px-20">
+                                            <input type="radio" class="choose-package update-package-{{$subscribe->id}}" data-label="{{ $subscribe->title }}" id="up-{{$subscribe->id}}" data-price="{{$subscribe->price}}" value="{{ $subscribe->id }}" name="package">    
+                                            <label for="up-{{$subscribe->id}}" data-label="{{ $subscribe->title }}">
                                                 <span class="subscribe-icon mb-20">
                                                     <img src="../assets/default/img/plan-rocket.png" height="274" width="372" alt="Box image">
                                                 </span>
@@ -599,8 +596,8 @@
                                                         <span>11Plus</span>
                                                     </li>
                                                 </ul>
-                                            </div>
-                                        </label>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                                 @endforeach
@@ -636,11 +633,10 @@
 
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="select-plan">
-                                    <input type="radio" class="choose-package" data-label="{{ $subscribe->title }}"
-                                           id="{{$subscribe->id}}" data-price="{{$subscribe->price}}"
-                                           value="{{ $subscribe->id }}" name="package">
-                                    <label for="{{$subscribe->id}}" data-label="{{ $subscribe->title }}">
-                                        <div class="subscribe-plan position-relative d-flex flex-column rounded-lg py-25 px-20">
+                                    
+                                    <div class="subscribe-plan position-relative d-flex flex-column rounded-lg py-25 px-20">
+                                        <input type="radio" class="choose-package" data-label="{{ $subscribe->title }}" id="{{$subscribe->id}}" data-price="{{$subscribe->price}}" value="{{ $subscribe->id }}" name="package">
+                                        <label for="{{$subscribe->id}}" data-label="{{ $subscribe->title }}">
                                             <span class="subscribe-icon mb-20">
                                                 <img src="../assets/default/img/plan-rocket.png" height="274" width="372" alt="Box image">
                                             </span>
@@ -680,8 +676,8 @@
                                                     <span>11Plus</span>
                                                 </li>
                                             </ul>
-                                        </div>
-                                    </label>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                             @endforeach
