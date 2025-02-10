@@ -67,40 +67,26 @@
                 <div class="col-12 col-md-12 col-lg-12">
                     <div class="card mb-0">
                         <div class="card-body">
-
-
                             <div class="tab-content" id="myTabContent2">
                                 @php $show_class = ($assignment->subtopic_id > 0)? '' : 'active show'; @endphp
                                 <div class="tab-pane mt-3 fade active show" id="topics" role="tabpanel"
                                      aria-labelledby="topics-tab">
                                     <div class="row col-lg-12 col-md-12 col-sm-4 col-12">
                                         <div class="populated-content-area col-lg-12 col-md-12 col-sm-12 col-12">
-
-                                            <div class="topics-subtopics-content-area test">
-
+                                            <div class="topics-subtopics-content-area row">
                                                 {!! $topics_subtopics_layout !!}
-
                                             </div>
                                         </div>
-
                                     </div>
                                     <input class="topic_id_value" type="hidden" name="ajax[{{$assignment->id}}][topic_id]" value="{{$assignment->topic_id}}">
                                     <input class="subtopic_id_value" type="hidden" name="ajax[{{$assignment->id}}][subtopic_id]" value="{{$assignment->subtopic_id}}">
-									
-									
 									 <div class="" id="questions">
 										<div class="row col-lg-12 col-md-12 col-sm-12 col-12">
-											<div class="col-lg-4 col-md-4 col-sm-12 col-4 selected-questions-group questions-group-select1">
-
-											</div>
-											<div class="col-lg-8 col-md-8 col-sm-12 col-8 single-question-preview">
-											</div>
+											<div class="col-lg-4 col-md-4 col-sm-12 col-4 selected-questions-group questions-group-select1"></div>
+											<div class="col-lg-8 col-md-8 col-sm-12 col-8 single-question-preview"></div>
 										</div>
 									</div>
-									
 									<div class="assignment-preview" id="preview">
-
-
                                     <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
                                         <div class="col-lg-4 col-md-4 col-sm-12 col-4">
                                             <ul class="questions-list ">
@@ -130,26 +116,16 @@
                                                 @endforeach
                                                 @endif
                                             </ul>
-
                                         </div>
                                         <div class="col-lg-8 col-md-8 col-sm-12 col-8">
                                             <div class="assignment-questions-preview">
                                             </div>
                                         </div>
                                     </div>
-
-
                                 </div>
-									
-									
                                 </div>
-
-
                                 @php $show_class = ($assignment->subtopic_id > 0)? 'active show' : ''; @endphp
-                                
                             </div>
-
-
                         </div>
                     </div>
                 </div>
