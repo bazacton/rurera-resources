@@ -164,7 +164,7 @@
                         if(auth()->check() && (auth()->user()->isParent() || auth()->user()->isTutor())){
                             $userObj = isset( $analyticData['user'] )? $analyticData['user'] : array();
                             if( isset( $userObj->id)){
-                                $by_user_label .= 'By <img src="'.$userObj->getAvatar().'" width="26" height="26"> ' . $userObj->get_full_name();
+                                $by_user_label .= 'By <img src="'.$userObj->getAvatar().'" width="26" height="26" alt="avatar"> ' . $userObj->get_full_name();
                             }
                         }
 
@@ -173,7 +173,7 @@
 
 
                                 <li>
-                                    <div class="timeline-icon"><img src="{{$analytic_icon}}" width="26" height="26" alt=""></div>
+                                    <div class="timeline-icon"><img src="{{$analytic_icon}}" width="26" height="26" alt="avatar"></div>
                                     <div class="timeline-text"><p><strong><a href="{{$detail_link}}">{{isset( $analyticData['topic_title'] )? $analyticData['topic_title'] : ''}}</a></strong> {!! $by_user_label !!} <span class="info-time">{{ dateTimeFormat($start_time,'H:i') }}</span></p>
                                     @if( $type == 'book_read')
                                             <span class="analytic-item">Reading Time: {{isset( $analyticData['read_time'] )? $analyticData['read_time'] : 0}} min</span>
