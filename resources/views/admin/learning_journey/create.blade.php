@@ -15,7 +15,7 @@
 <style type="text/css">
 .flowchart-operator-inputs-outputs {
     position: absolute;
-	top:40%;
+	top:50%;
 	z-index:-1;
 }
 
@@ -637,7 +637,7 @@
                 url: '/admin/webinars/chapters_by_course',
                 data: {'course_id': course_id, 'chapter_id': chapter_id},
                 success: function (return_data) {
-                    
+
                     $(".ajax-chapter-dropdown").html(return_data);
                     $('.ajax-chapter-dropdown').change();
                 }
@@ -741,10 +741,10 @@
 		  }
 	   }
     $(document).ready(function () {
-		
-		
+
+
 		check_stages();
-		  
+
 		$(".editor-objects-list222").sortable();
 		//$('.saved-item-class').click();
 
@@ -768,14 +768,14 @@
 				levels_sorting_render();
 			}
 		});
-		
+
 		$(document).on('click', '#layers-tab', function (e) {
 			//$(".editor-objects-block li #all_layers-tab1").click();
 		});
-		
+
 		$('body').on('click', '.accordion-row', function (e) {
 			var level_id = $(this).attr('data-id');
-			
+
 
         });
 
@@ -804,10 +804,10 @@
             $(".curriculum-item-data#collapseItems"+level_id).find('.book-dropzone').click();
             $('.book-dropzone.active').closest('.editor-zone').find('.stage_settings-tab').click();
             flowChartInitialize();
-			
+
 
         });
-		
+
 		$(".accordion-row.active").click();
 
         $('body').on('click', '.delete-parent-li', function (e) {
@@ -856,7 +856,7 @@
                     $(".jounry-stages-lis").append(response.li_content);
                     $(".tabs-data").append(response.li_content_data);
                     flowChartInitialize();
-					
+
 					var unique_id = Math.floor((Math.random() * 99999) + 1);
 					var unique_id2 = Math.floor((Math.random() * 99999) + 1);
 					sorting_render();
@@ -864,7 +864,7 @@
                     handleTopicsMultiSelect2('search-topics-select2', '/admin/chapters/search', ['class', 'course', 'subject', 'title']);
 					check_stages();
 					$(".jounry-stages-lis").find("li.accordion-row").last().find(".stage-accordion").click();
-					
+
 					layer_html = `<li data-id="${unique_id}" data-field_postition="2"><label contenteditable="true">Start</label>
 						<div class="actions-menu">
 							<i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort ui-sortable-handle"></i>
@@ -875,24 +875,24 @@
 							<i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort ui-sortable-handle"></i>
 						</div>
 					</li>`;
-					
-					
+
+
 					$el = $('<div></div>');
-					
+
 					$el.append($('<div id="' + unique_id + '" style="width:20%;left:0%; top:%;" data-item_title="Start" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id + '" data-id="' + unique_id + '" data-item_path="default/treasure_1.svg" data-field_type="stage_start" data-trigger_class="infobox-stage_start-fields" data-item_type="stage_start" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FFAC33" d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379z"></path></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
 					$el.append('</div>');
-					
+
 					$el.append($('<div id="' + unique_id2 + '" style="width:20%;left:50%; top:%;" data-item_title="Start" data-unique_id="' + unique_id2 + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id2 + '" data-id="' + unique_id2 + '" data-item_path="default/treasure_1.svg" data-field_type="stage_end" data-trigger_class="infobox-stage_end-fields" data-item_type="stage_end" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FFAC33" d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379z"></path></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
 					$el.append('</div>');
 					$(".book-dropzone.active").append($el);
-					
+
 					$('.draggable_field_' + unique_id)
 					.rotatable()
 					.off('wheel'); // Unbinds all wheel events from this element
 					$('.draggable_field_' + unique_id2)
 					.rotatable()
 					.off('wheel'); // Unbinds all wheel events from this element
-					
+
 					$(".book-dropzone.active").closest('.editor-zone').find('.levels-objects-list').prepend(layer_html);
 
 					$(".editor-objects-list-all").sortable({
@@ -901,7 +901,7 @@
 							sorting_render(); // Call your function here
 						}
 					});
-					
+
 					$(".levels-objects-list").sortable({
 						handle: ".fa-sort", // Make sure your icon has this class
 						update: function(event, ui) {
@@ -985,9 +985,9 @@
 
 
 	$('body').on('submit', '.learning-journey-form', function (e) {
-		
+
 		var posted_data = generate_stage_area();
-        
+
 		$(".posted-data").val(JSON.stringify(posted_data));
 
 
@@ -1033,7 +1033,7 @@
                 </li>`;
             });
         }
-        
+
         if(level_type == 'treasure_mission') {
             $el.append($('<div data-no_of_coins="'+treasure_mission_points+'" id="' + field_random_number + '" style="width:20%;left:0%; top:%;" data-item_title="Treasure" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/treasure_1.svg" data-field_type="treasure" data-trigger_class="infobox-treasure_1-fields" data-item_type="treasure" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FFAC33" d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379z"></path></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div><a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a></div>'));
             $el.append('</div>');
@@ -1097,7 +1097,7 @@
         var midpoint = { top: (current_obj_top + next_obj_top) / 2, left: (current_obj_left + next_obj_left) / 2 };
 
 
-        
+
         var unique_id = Math.floor((Math.random() * 99999) + 1);
         var field_random_number = 'rand_' + unique_id;
         var layer_html = '';
@@ -1154,7 +1154,7 @@
             return false;
         }
         $(".book-dropzone.active").attr('data-intiated_already', 'yes');
-        
+
         $flowchart = $('#flowchartworkspace');
         $flowchart = $(".book-dropzone.active");
         var $container = $flowchart.parent();
@@ -1403,14 +1403,14 @@
 
         $(".path-tool-item.active").click();
         $(document).on('keyup change keydown click', 'input[name="stage_name"]', function (e) {
-            var current_value = $(this).val();	
-			
-			
+            var current_value = $(this).val();
+
+
 
             var level_id    = $(this).closest('.li-content-data').attr('data-level_id');
 			var current_value = $('.book-dropzone[data-level_id="'+level_id+'"]').attr('data-stage_name');
             current_value = (current_value == '')? 'Stage Name' : current_value;
-            
+
             $('li.accordion-row[data-id="'+level_id+'"]').find('.journey-title-'+level_id).html(current_value);
 
         });
@@ -1476,9 +1476,9 @@
     };
 
       defaultFlowchartData = {};
-	  
-	  
-	  
+
+
+
 
 
 
@@ -1494,7 +1494,7 @@
 
     let indexofArr = 4;
     handleChange = ()=>{
-    let val = document.querySelector('#sel').value; 
+    let val = document.querySelector('#sel').value;
     val = Number(val)
     console.log('handle change selected value ',val);
     indexofArr = zoomArr.indexOf(val);
