@@ -184,7 +184,7 @@
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                                 <div class="form-group">
                                                     <label class="input-label" for="username3">Username:</label>
-                                                    <input name="username3" type="text" class="form-control @error('username') is-invalid @enderror" id="username2"
+                                                    <input name="username3" type="text" class="form-control @error('username') is-invalid @enderror" id="username3"
                                                            value="{{ old('username') }}" aria-describedby="emailHelp">
                                                     @error('username')
                                                     <div class="invalid-feedback">
