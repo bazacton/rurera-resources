@@ -268,7 +268,7 @@
                                                         <button class="btn btn-link font-16 font-weight-bold" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                                                             Pungent
                                                             <span class="prev-date font-15 font-weight-500">Yesterday</span>
-                                                            <p class="font-15 font-weight-normal">a particularly strong taste or scent</p>
+                                                            <span class="font-15 font-weight-normal">a particularly strong taste or scent</span>
                                                         </button>
                                                     </div>
                                                     <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
