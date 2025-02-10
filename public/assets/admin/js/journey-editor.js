@@ -1165,6 +1165,9 @@ jQuery(document).ready(function () {
             var field_type = $(".draggable_field_"+field_id).attr('data-field_type');
             if(field_type != 'topic' && field_type != 'treasure' && field_type != 'spacer') {
                 $('.draggable_field_' + field_id).resizable({
+                    handles: {
+                        se: $('.draggable_field_' + field_id).find(".resize-handler") // Ensure the correct handler
+                    },
 
                     resize: function (event, ui) {
                         var parent = $(this).parent(); // Assuming dropZonObj is the container
