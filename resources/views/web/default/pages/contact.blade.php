@@ -8,7 +8,7 @@
                     <p itemprop="description" class="text-white font-19">Whether you have a question, feedback, or any other inquiry, we are here to assist you. We have a contact form on our website that you can fill out. This method allows us to gather the necessary details to assist you effectively.</p>
                 </div>
                 <div class="col-12 col-md-9 col-lg-3">
-                    <figure><img src="../assets/default/img/rocket.png" alt="rocket" itemprop="image" width="100%" height="auto" ></figure>
+                    <figure><img src="/assets/default/img/rocket.png" alt="rocket" itemprop="image" width="274" height="372" ></figure>
                 </div>
             </div>
         </div>
