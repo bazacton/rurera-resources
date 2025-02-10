@@ -113,8 +113,7 @@
             @php if(!isset( $analyticDataArray['practice_time'] ) || $analyticDataArray['practice_time'] == 0){ continue; } @endphp
             @php $report_date = strtotime(str_replace('_', '-', $date_str)); @endphp
             <div class="card">
-                <div class="card-header collapsed mb-0" id="headingOne" type="button" data-toggle="collapse"
-                     data-target="#report_{{$date_str}}" aria-expanded="true" aria-controls="report_{{$date_str}}">
+                <div class="card-header collapsed mb-0" id="headingOne" data-toggle="collapse" data-target="#report_{{$date_str}}" aria-expanded="true" aria-controls="report_{{$date_str}}">
                     <span>{{ dateTimeFormat($report_date,'d F Y') }}</span>
                     <span class="analytics-timespend float-right">
                         <img src="/assets/default/img/panel-sidebar/clock.svg" alt="">
@@ -207,7 +206,7 @@
 
             @else
                 <div class="card">
-                    <div class="card-header collapsed mb-0" id="headingOne" type="button" data-toggle="collapse" data-target="#report_07_03_2024" aria-expanded="true" aria-controls="report_07_03_2024">
+                    <div class="card-header collapsed mb-0" id="headingOne" data-toggle="collapse" data-target="#report_07_03_2024" aria-expanded="true" aria-controls="report_07_03_2024">
                         <span>&nbsp;</span>
                         <span class="analytics-timespend float-right">
                             <span>No Records Found</span>
