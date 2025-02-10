@@ -171,7 +171,7 @@
                                                         </a>
                                                     </li>
                                                     @endif                                             
-                                                    <li><a href="/panel/students/print-card/{{$childObj->id}}" target="_blank"><span class="icon-box"><img src="/assets/default/svgs/printer-activity.svg" alt=""></span> Print Login Card <Profile></Profile></a></li>
+                                                    <li><a href="/panel/students/print-card/{{$childObj->id}}" target="_blank"><span class="icon-box"><img src="/assets/default/svgs/printer-activity.svg" alt=""></span> Print Login Card</a></li>
                                                 </ul>
                                             </div>
                                         </div> <!--[ row end ]-->
