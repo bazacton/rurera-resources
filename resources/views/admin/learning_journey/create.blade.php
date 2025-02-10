@@ -795,6 +795,7 @@
                 sorting_render();
                 levels_sorting_render();
                 reinitialize_items();
+                $(".book-dropzone.active").closest('.editor-zone').find(".sets-selection.active").click();
             }, 1000); // 2000 milliseconds = 2 seconds
 
             //var level_id = $(this).attr('data-id');
