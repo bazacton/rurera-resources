@@ -198,7 +198,7 @@
 
             @else
                 <div class="card">
-                    <div class="card-header collapsed mb-0" id="headingOne" data-toggle="collapse" role="button" data-target="#report_07_03_2024" aria-expanded="true" aria-controls="report_07_03_2024">
+                    <div class="card-header collapsed mb-0" id="headingOne2" data-toggle="collapse" role="button" data-target="#report_07_03_2024" aria-expanded="true" aria-controls="report_07_03_2024">
                         <span>&nbsp;</span>
                         <span class="analytics-timespend float-right">
                             <span>No Records Found</span>
