@@ -168,7 +168,7 @@
                                             class="assignment_topic_type_check" value="timestables" data-tag_title="Timestables">
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
-                                                <img src="/assets/default/img/assignment-logo/timestables.png">
+                                                <img src="/assets/default/img/assignment-logo/timestables.png" height="65" width="98" alt="timestables">
                                                 <h3>Timestables</h3>
                                         </div>
 
