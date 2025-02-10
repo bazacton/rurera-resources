@@ -234,7 +234,7 @@
                                                 <figure>
                                                     <a itemprop="url" href="{{url('/')}}"><img
                                                             src="/store/1/default_images/testimonials/teacher-testimonial.jpg"
-                                                            alt="profile" title="profile" width="100%" height="auto" itemprop="image"  loading="eager"></a>
+                                                            alt="profile" title="profile" width="300" height="300" itemprop="image"  loading="eager"></a>
                                                 </figure>
                                             </div>
                                             <div class="text-holder">
