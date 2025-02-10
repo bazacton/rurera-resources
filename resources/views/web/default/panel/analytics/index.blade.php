@@ -128,8 +128,7 @@
 
                 </div>
 
-                <div id="report_{{$date_str}}" class="collapse" aria-labelledby="headingOne"
-                     data-parent="#analyticsAccordion">
+                <div id="report_{{$date_str}}" class="collapse" data-parent="#analyticsAccordion">
                     <div class="card-body">
                         <ul class="timeline-list">
 
