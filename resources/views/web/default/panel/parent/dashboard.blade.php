@@ -432,9 +432,7 @@
                                                             @foreach($subscribes as $subscribe)
 
                                                             <div class="col-lg-6 col-md-6 col-sm-12">
-
-                                                                <div class="select-plan">
-                                                                    
+                                                                <div class="select-plan">  
                                                                     <div class="subscribe-plan position-relative d-flex flex-column rounded-lg py-25 px-20">
                                                                         <input type="radio" class="package_id choose-package update-package-{{$subscribe->id}}" data-label="{{ $subscribe->title }}" id="up-{{$subscribe->id}}" data-price="{{$subscribe->price}}" value="{{ $subscribe->id }}" name="package_id">
                                                                         <label for="up-{{$subscribe->id}}" data-label="{{ $subscribe->title }}">
