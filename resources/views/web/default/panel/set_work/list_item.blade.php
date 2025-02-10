@@ -9,13 +9,13 @@
             <div class="dropdown-box hide-lg">
                 <div class="dropdown">
                     <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
+                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three" height="800" width="800"></span>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="/panel/set-work/{{$assignmentObj->id}}/progress" class="detail-btn"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple"> Details</a>
+                        <a href="/panel/set-work/{{$assignmentObj->id}}/progress" class="detail-btn"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple" alt="edit-simple" height="64" width="64"> Details</a>
                         @php $completed_count = $assignmentObj->students->where('status', 'completed')->count(); @endphp
                         @if( $completed_count == 0 && $assignmentObj->status == 'active')
-                        <a href="javascript:;" data-confirm-type="link" data-confirm-action="/panel/set-work/{{$assignmentObj->id}}/remove" class="remove-btn confirm-delete"><img src="/assets/default/svgs/delete-menu.svg"> Delete</a>
+                        <a href="javascript:;" data-confirm-type="link" data-confirm-action="/panel/set-work/{{$assignmentObj->id}}/remove" class="remove-btn confirm-delete"><img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu" height="800" width="800"> Delete</a>
                         @endif
                     </div>
                 </div>
