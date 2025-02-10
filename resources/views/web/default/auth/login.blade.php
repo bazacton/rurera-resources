@@ -112,10 +112,10 @@
                                             <h1 class="font-24 font-weight-bold">Log in to parent account</h1>
                                             <form method="Post" action="/login" class="mt-20">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                                <div class="form-group">
+                                                <div class="form-group" id="emailHelp2">
                                                     <label class="input-label" for="username">Username:</label>
                                                     <input name="username" type="text" class="form-control @error('username') is-invalid @enderror" id="username"
-                                                           value="{{ old('username') }}" aria-describedby="emailHelp">
+                                                           value="{{ old('username') }}" aria-describedby="emailHelp2">
                                                     @error('username')
                                                     <div class="invalid-feedback">
                                                         {{ $message }}
@@ -178,14 +178,12 @@
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <div class="login-card">
-
                                             <h1 class="font-24 font-weight-bold">Log in to tutor account</h1>
                                             <form method="Post" action="/login" class="mt-20">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                                <div class="form-group">
+                                                <div class="form-group" id="emailHelp3">
                                                     <label class="input-label" for="username3">Username:</label>
-                                                    <input name="username3" type="text" class="form-control @error('username') is-invalid @enderror" id="username3"
-                                                           value="{{ old('username') }}" aria-describedby="emailHelp">
+                                                    <input name="username3" type="text" class="form-control @error('username') is-invalid @enderror" id="username3" value="{{ old('username') }}" aria-describedby="emailHelp3">
                                                     @error('username')
                                                     <div class="invalid-feedback">
                                                         {{ $message }}
@@ -250,7 +248,7 @@
                                             <h1 class="font-24 font-weight-bold">Log in to educator account</h1>
                                             <form method="Post" action="/login" class="mt-20">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                                <div class="form-group">
+                                                <div class="form-group" id="emailHelp">
                                                     <label class="input-label" for="username4">Username:</label>
                                                     <input name="username4" type="text" class="form-control @error('username') is-invalid @enderror" id="username4"
                                                            value="{{ old('username') }}" aria-describedby="emailHelp">
