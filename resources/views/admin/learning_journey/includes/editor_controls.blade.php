@@ -6,7 +6,7 @@ $treasures_list = getSvgFiles('assets/admin/editor/treasures/');
 $sets_list = getSvgFilesByFolder('assets/admin/editor/sets/');
 $data_values = isset( $itemObj->data_values )? json_decode($itemObj->data_values) : array();
 $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set1';
-$stage_set = ($stage_set == '')? 'set1' : '';
+$stage_set = ($stage_set == '')? 'set1' : $stage_set;
 $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadmap-default';
  @endphp
 
