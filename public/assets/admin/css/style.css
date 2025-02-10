@@ -1160,6 +1160,9 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .questions-group-select > li:hover:before {visibility: visible; opacity: 1;}
 .questions-group-select > li:last-child,
 .assignment-preview .questions-list > li:last-child {border-bottom: 0;}
+.single-question-preview .assignment-preview {
+    margin-top: 15px;
+}
 .search-field-box input[type="text"] {margin-top: 0 !important; border-color: #e2e2e2;}
 .question-list-item .question-title {display: block; font-weight: bold; color: var(--primary); font-size: 18px; margin: 0 0 5px; text-align: left; padding-right: 80px;}
 .question-list-item .topic-title {font-size: 16px; display: block; color: #333; font-weight: 600; margin: 0 0 25px; text-align: left;}
@@ -1217,6 +1220,9 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .single-question-preview .prev-next-controls .review-btn {left: 0;}
 .single-question-preview .prev-next-controls,
 .assignment-questions-preview .prev-next-controls {margin-top: auto; border-top: 1px solid #eee; padding-top: 30px;}
+.questions-group-select {
+    height: 650px;
+}
 #glossary_solution .select2-container {z-index: auto !important;}
 .lms-quiz-create ol li {list-style: auto;}
 .lms-quiz-create .add-glossary-modal {margin-top: 10px; display: inline-block;}
