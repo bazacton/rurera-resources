@@ -126,7 +126,10 @@ $(document).on('click', '.layout-template-item', function () {
     console.log($(".book-dropzone.active").closest('.editor-zone').find('.levels-objects-list').find('li').length);
     $(".book-dropzone.active").closest('.editor-zone').find('.levels-objects-list').find('li').each(function (item_no) {
         var field_id = $(this).attr('data-id');
-        var top_position =template_layout_data[item_counter].top;
+        console.log('field_id--'+ field_id);
+        console.log('item_counter--'+ item_counter);
+        console.log('------------------');
+        var top_position = template_layout_data[item_counter].top;
         var left_position =template_layout_data[item_counter].left;
         $(".draggable_field_" + field_id).css('top', top_position+'%');
         $(".draggable_field_" + field_id).css('left', left_position+'%');
