@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
 
 <style type="text/css">
+    .ui-icon-gripsmall-diagonal-se{
+        display:none !important;
+    }
 .flowchart-operator-inputs-outputs {
     position: absolute;
 	top:50%;
@@ -785,6 +788,8 @@
                 console.log('no_path_added_1111111111111');
                 levels_sorting_render();
             }*/
+
+            console.log('stage=========accordion======');
 
             //var level_id = $(this).attr('data-id');
             var level_id = $(this).closest('li').attr('data-id');
