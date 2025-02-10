@@ -76,7 +76,7 @@
                                     <div class="row col-lg-12 col-md-12 col-sm-4 col-12">
                                         <div class="populated-content-area col-lg-12 col-md-12 col-sm-12 col-12">
 
-                                            <div class="topics-subtopics-content-area">
+                                            <div class="topics-subtopics-content-area test">
 
                                                 {!! $topics_subtopics_layout !!}
 
