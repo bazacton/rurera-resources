@@ -1181,6 +1181,9 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     bottom: 0;
     width: 100%;
 }
+.single-question-preview .question-layout-block form.question-fields {
+    margin-bottom: 15px;
+}
 .single-question-preview .prev-next-controls .question-submit-btn, 
 .single-question-preview .prev-next-controls .question-next-btn {position: relative;}
 
