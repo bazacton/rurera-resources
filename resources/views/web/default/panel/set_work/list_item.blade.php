@@ -3,7 +3,7 @@
         <div class="col-auto col-lg-2 pr-15">
             <h6 class="listing-title font-16 font-weight-500">Title</h6>
             <h6 class="font-16 font-weight-normal">
-                <a href="#"><img class="quiz-type-icon mr-5" src="/assets/default/img/assignment-logo/{{$assignmentObj->assignment_type}}.png">
+                <a href="#"><img class="quiz-type-icon mr-5" src="/assets/default/img/assignment-logo/{{$assignmentObj->assignment_type}}.png" alt="timestables" height="65" width="98">
                     {{$assignmentObj->title}}</a>
             </h6>
             <div class="dropdown-box hide-lg">
