@@ -562,7 +562,7 @@
                                         <label for="up-{{$subscribe->id}}" data-label="{{ $subscribe->title }}">
                                             <div class="subscribe-plan position-relative d-flex flex-column rounded-lg py-25 px-20">
                                                 <span class="subscribe-icon mb-20">
-                                                    <img src="../assets/default/img/plan-rocket.png" height="auto" width="auto" alt="Box image">
+                                                    <img src="../assets/default/img/plan-rocket.png" height="274" width="372" alt="Box image">
                                                 </span>
                                                 <div class="subscribe-title">
                                                     <h3 itemprop="title" class="font-24 font-weight-500 pt-20">
@@ -646,7 +646,7 @@
                                     <label for="{{$subscribe->id}}" data-label="{{ $subscribe->title }}">
                                         <div class="subscribe-plan position-relative d-flex flex-column rounded-lg py-25 px-20">
                                             <span class="subscribe-icon mb-20">
-                                                <img src="../assets/default/img/plan-rocket.png" height="auto" width="auto" alt="Box image">
+                                                <img src="../assets/default/img/plan-rocket.png" height="274" width="372" alt="Box image">
                                             </span>
                                             <div class="subscribe-title">
                                                 <h3 itemprop="title" class="font-24 font-weight-500">{{$subscribe->title }}</h3>
