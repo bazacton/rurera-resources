@@ -6,6 +6,7 @@ $treasures_list = getSvgFiles('assets/admin/editor/treasures/');
 $sets_list = getSvgFilesByFolder('assets/admin/editor/sets/');
 $data_values = isset( $itemObj->data_values )? json_decode($itemObj->data_values) : array();
 $stage_set = isset( $data_values->stage_set )? $data_values->stage_set : 'set1';
+$stage_set = ($stage_set == '')? 'set1' : '';
 $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadmap-default';
  @endphp
 
@@ -126,14 +127,14 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
             </ul>
         </div>
 
-        
+
 
 
 
 	</div>
 
     <div class="editor-objects-block tab-pane fade" id="all_settings{{$data_id}}" role="settingtabpanel" aria-labelledby="all_settings-tab">
-	
+
 		<ul class="nav nav-pills" id="myTab3" role="tablist">
             <li class="nav-item">
                 <a class="nav-link stage_settings-tab active" id="stage_settings-tab{{$data_id}}" data-toggle="tab" href="#stage_settings{{$data_id}}" role="tab" aria-controls="stage_settings{{$data_id}}" aria-selected="true">Stage Settings</a>
@@ -141,12 +142,12 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
             <li class="nav-item">
                 <a class="nav-link" id="layers_settings-tab{{$data_id}}" data-toggle="tab" href="#layers_settings{{$data_id}}" role="tab" aria-controls="layers_settings{{$data_id}}" aria-selected="true">Layers Settings</a>
             </li>
-			
+
             <li class="nav-item topics_settings-tab">
                 <a class="nav-link " id="topics_settings-tab{{$data_id}}" data-toggle="tab" href="#topics_settings{{$data_id}}" role="tab" aria-controls="topics_settings{{$data_id}}" aria-selected="true">Topics Settings</a>
             </li>
         </ul>
-		
+
 		<div class="tab-pane mt-3 fade show active" id="stage_settings{{$data_id}}" role="settingtabpanel" aria-labelledby="stage_settings-tab{{$data_id}}">
 			<h6 class="mt-20">Stage Settings</h6>
 			<div class="page-settings-fields">
@@ -193,15 +194,15 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					   value="{{$stage_set}}" data-field_id="stage_set" data-field_name="stage_set"
 					   data-field_type="page_set" data-id="">
 
-				
+
 
 
 
 
 			</div>
 		</div>
-		
-		
+
+
 		<div class="tab-pane mt-3 fade" id="layers_settings{{$data_id}}" role="settingtabpanel" aria-labelledby="layers_settings-tab{{$data_id}}">
 			<h6 class="mt-20">Layers Settings</h6>
             @if( !empty( $sets_list ) )
@@ -269,11 +270,11 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
             </ul>
 
         </div>
-		
-		
+
+
 		<div class="tab-pane mt-3 fade topic_settings_fields" id="topics_settings{{$data_id}}" role="settingtabpanel" aria-labelledby="topics_settings-tab{{$data_id}}">
 			<h6 class="mt-20">Topic Settings</h6>
-			
+
 			<div class="option-field-item mt-20 mb-20">
 				<label class="custom-switch pl-0">
 					<input type="hidden" data-field_attr_type="switch" name="redemption_questions" class="trigger_field" value="0" data-field_id="redemption_questions" data-field_name="redemption_questions" data-field_type="page_style" data-id="">
@@ -282,7 +283,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<label class="custom-switch-description mb-0 cursor-pointer" for="redemption_questions">Redemption questions</label>
 				</label>
 			</div>
-			
+
 			<div class="option-field-item mt-20 mb-20">
 				<label class="custom-switch pl-0">
 					<input type="hidden" data-field_attr_type="switch" data-field_attr_type="switch" name="activity_show_answers" class="trigger_field" value="0" data-field_id="activity_show_answers" data-field_name="activity_show_answers" data-field_type="page_style" data-id="">
@@ -291,7 +292,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<label class="custom-switch-description mb-0 cursor-pointer" for="activity_show_answers">Show answers (During Activity)</label>
 				</label>
 			</div>
-			
+
 			<div class="option-field-item mt-20 mb-20">
 				<label class="custom-switch pl-0">
 					<input type="hidden" data-field_attr_type="switch" name="after_activity_show_answers" class="trigger_field" value="0" data-field_id="after_activity_show_answers" data-field_name="after_activity_show_answers" data-field_type="page_style" data-id="">
@@ -300,7 +301,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<label class="custom-switch-description mb-0 cursor-pointer" for="after_activity_show_answers">Show answers (After Activity)</label>
 				</label>
 			</div>
-			
+
 			<div class="option-field-item mt-20 mb-20">
 				<label class="custom-switch pl-0">
 					<input type="hidden" data-field_attr_type="switch" name="shuffle_questions" class="trigger_field" value="0" data-field_id="shuffle_questions" data-field_name="shuffle_questions" data-field_type="page_style" data-id="">
@@ -309,7 +310,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_questions">Shuffle Questions</label>
 				</label>
 			</div>
-			
+
 			<div class="option-field-item mt-20 mb-20">
 				<label class="custom-switch pl-0">
 					<input type="hidden" data-field_attr_type="switch" name="shuffle_answer_options" class="trigger_field" value="0" data-field_id="shuffle_answer_options" data-field_name="shuffle_answer_options" data-field_type="page_style" data-id="">
@@ -318,7 +319,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_answer_options">Shuffle Answer Options</label>
 				</label>
 			</div>
-			
+
 			<div class="option-field-item mt-20 mb-20">
 				<label class="custom-switch pl-0">
 					<input type="hidden" data-field_attr_type="switch" name="skip_questions" class="trigger_field" value="0" data-field_id="skip_questions" data-field_name="skip_questions" data-field_type="page_style" data-id="">
@@ -327,7 +328,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<label class="custom-switch-description mb-0 cursor-pointer" for="skip_questions">Skip Question (Attempt Later)</label>
 				</label>
 			</div>
-			
+
 			<div class="option-field-item mt-20 mb-20">
 				<label class="custom-switch pl-0">
 					<input type="hidden" data-field_attr_type="switch" name="play_music" class="trigger_field" value="0" data-field_id="play_music" data-field_name="play_music" data-field_type="page_style" data-id="">
@@ -347,7 +348,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 				</div>
 			</div>
 
-			
+
         </div>
 </div>
 </div>
