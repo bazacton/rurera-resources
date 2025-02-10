@@ -100,7 +100,7 @@
                                     
 
                                     <div class="list-group-item {{$is_cancelled}}">
-                                    <span class="emojis-response rurera-hide">{!! $emoji_response !!}</span>
+                                    <div class="emojis-response rurera-hide">{!! $emoji_response !!}</div>
                                     <span class="pin-response rurera-hide">{{$childObj->login_pin}}</span>
                                     
                                         <div class="row align-items-center">
