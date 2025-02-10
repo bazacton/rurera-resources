@@ -82,7 +82,7 @@
                                         <a href="javascript:;" class="subscription-modal add-student-modal" data-type="child_register" data-id="0" >
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
-                                                <img src="/assets/default/svgs/add-con.svg">
+                                                <img src="/assets/default/svgs/add-con.svg" alt="add-con" height="800" width="800">
                                                 <h3>Student</h3>
                                         </div>
                                     </span>
