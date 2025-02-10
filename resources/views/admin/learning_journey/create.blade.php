@@ -791,6 +791,11 @@
 
             console.log('dropzone-active-------'+$('.book-dropzone.active').attr('data-level_id'));
             console.log('stage=========accordion======');
+            setTimeout(function() {
+                sorting_render();
+                levels_sorting_render();
+                reinitialize_items();
+            }, 2000); // 2000 milliseconds = 2 seconds
 
             //var level_id = $(this).attr('data-id');
             var level_id = $(this).closest('li').attr('data-id');
