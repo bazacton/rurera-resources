@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
 
 <style type="text/css">
+    .ui-icon-gripsmall-diagonal-se{
+        display:none !important;
+    }
 .flowchart-operator-inputs-outputs {
     position: absolute;
 	top:50%;
@@ -786,6 +789,15 @@
                 levels_sorting_render();
             }*/
 
+            console.log('dropzone-active-------'+$('.book-dropzone.active').attr('data-level_id'));
+            console.log('stage=========accordion======');
+            setTimeout(function() {
+                sorting_render();
+                levels_sorting_render();
+                reinitialize_items();
+                $(".book-dropzone.active").closest('.editor-zone').find(".sets-selection.active").click();
+            }, 1000); // 2000 milliseconds = 2 seconds
+
             //var level_id = $(this).attr('data-id');
             var level_id = $(this).closest('li').attr('data-id');
 
@@ -802,8 +814,9 @@
             //$(".curriculum-item-data#collapseItems"+level_id).addClass('show');
             $(".curriculum-item-data#collapseItems"+level_id).find('.book-dropzone').addClass('active');
             $(".curriculum-item-data#collapseItems"+level_id).find('.book-dropzone').click();
-            $('.book-dropzone.active').closest('.editor-zone').find('.stage_settings-tab').click();
+            $('.book-dropzone.active').closest('.editor-zone').find('.all_settings-tab').click();
 
+            reinitialize_items();
             console.log('dropzone-active-------'+$('.book-dropzone.active').attr('data-level_id'));
             flowChartInitialize();
             sorting_render();

@@ -145,7 +145,7 @@ $(document).on('click', '.layout-template-item', function () {
 $(document).on('click', '.sets-selection', function () {
     var set_name = $(this).attr('data-set');
     //$(".field-options").addClass('hide');
-    $('.sets-selection').removeClass('active');
+    $(this).closest('.editor-objects-block').find('.sets-selection').removeClass('active');
     $(this).addClass('active');
     var treasure_data = $(this).find('.item_treasure_pending');
     var topic_data = $(this).find('.item_topic_pending');
@@ -1165,6 +1165,9 @@ jQuery(document).ready(function () {
             var field_type = $(".draggable_field_"+field_id).attr('data-field_type');
             if(field_type != 'topic' && field_type != 'treasure' && field_type != 'spacer') {
                 $('.draggable_field_' + field_id).resizable({
+                    handles: {
+                        se: $('.draggable_field_' + field_id).find(".resize-handler") // Ensure the correct handler
+                    },
 
                     resize: function (event, ui) {
                         var parent = $(this).parent(); // Assuming dropZonObj is the container
