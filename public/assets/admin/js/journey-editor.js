@@ -1009,6 +1009,16 @@ function trigger_field_change(thisObj) {
             this_value = this_value+'%';
         }
 		if( field_name == 'height'){
+            var current_height = $(".page_settings.active").attr('data-'+field_id);
+
+
+            $(".page_settings.active").find(".field_settings").each(function () {
+                $activeElement = $(this);
+                var topPos = parseInt($activeElement.css('top'));
+                $activeElement.attr('data-topPx', topPos);
+            });
+
+            console.log('page-heightttttt');
 			this_value = this_value+'px';
 		}
 		console.log(field_name);
@@ -1025,6 +1035,21 @@ function trigger_field_change(thisObj) {
 		}
         //$(".draggable_field_" + data_id + ' .field-data').html(this_value);
 		$(".page_settings.active").attr('data-'+field_id, this_value_number);
+
+
+        if( field_name == 'height') {
+            $(".page_settings.active").find(".field_settings").each(function () {
+                var parentHeight = this_value;
+                var topPercent = (parseInt($(this).attr('data-topPx')) / parseInt(parentHeight)) * 100;
+
+                // Set the CSS of the element with the percentages
+                $(this).css({
+                    top: topPercent+'%'
+                });
+            });
+        }
+
+
     }
 
 	if (field_type == 'svg_style') {
