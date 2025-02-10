@@ -8,7 +8,7 @@
             </h6>
             <div class="dropdown-box hide-lg">
                 <div class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
                         <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
                     </a>
                     <div class="dropdown-menu">
@@ -49,7 +49,7 @@
             <h6 class="listing-title font-16 font-weight-500">Action</h6>
             <div class="dropdown-box">
                 <div class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
                         <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
                     </a>
                     <div class="dropdown-menu">
