@@ -47,13 +47,13 @@
         </div>
         <a class="sidebar-logo"
         href="{{url('/')}}/" itemprop="url">
-            <img src="/assets/default/img/sidebar/logo.svg"><span class="sidebar-logo-text">Rurera</span>
+            <img src="/assets/default/img/sidebar/logo.svg" alt="Rurera Logo" width="150" height="38"><span class="sidebar-logo-text">Rurera</span>
         </a>
         <div class="sidebar-menu-holder">
             <div class="sidebar-menu-top">
             <a class="sidebar-logo"
                 href="{{url('/')}}/" itemprop="url">
-                <img src="/assets/default/img/sidebar/logo.svg"><span class="sidebar-logo-text">Rurera</span>
+                <img src="/assets/default/img/sidebar/logo.svg" alt="Rurera Logo" width="150" height="38"><span class="sidebar-logo-text">Rurera</span>
             </a>
             <button class="navbar-toggler navbar-order" type="button" id="navbarToggle">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
