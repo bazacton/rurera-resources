@@ -803,7 +803,11 @@
             $(".curriculum-item-data#collapseItems"+level_id).find('.book-dropzone').addClass('active');
             $(".curriculum-item-data#collapseItems"+level_id).find('.book-dropzone').click();
             $('.book-dropzone.active').closest('.editor-zone').find('.stage_settings-tab').click();
+
+            console.log('dropzone-active-------'+$('.book-dropzone.active').attr('data-level_id'));
             flowChartInitialize();
+
+            levels_sorting_render();
 
 
         });
