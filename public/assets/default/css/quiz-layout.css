@@ -11,7 +11,7 @@ body:has(.quiz-topbar) {
   overflow-y: auto;
   scrollbar-gutter: stable both-edges;
 }
-html.admin_role:has(.quiz-topbar) {overflow: visible;}
+html:has(.admin_role, .quiz-topbar) {overflow: visible;}
 .quiz-topbar, .read-quiz-info ~ .read-quiz-content .quiz-topbar {background-color: #4c5387; padding: 15px 0 15px; position: relative; z-index: 1; width: 100%; }
 .quiz-topbar .row {align-items: center;}
 .quiz-top-info p,
