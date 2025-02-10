@@ -123,10 +123,10 @@
                                                     @enderror
                                                 </div>
 
-                                                <div class="form-group">
+                                                <div class="form-group" id="passwordHelp2">
                                                     <label class="input-label" for="password">{{ trans('auth.password') }}:</label>
 
-                                                    <input name="password" type="password" class="form-control @error('password')  is-invalid @enderror" id="password" aria-describedby="passwordHelp">
+                                                    <input name="password" type="password" class="form-control @error('password')  is-invalid @enderror" id="password" aria-describedby="passwordHelp2">
 
                                                     @error('password')
                                                     <div class="invalid-feedback">
@@ -191,9 +191,9 @@
                                                     @enderror
                                                 </div>
 
-                                                <div class="form-group">
+                                                <div class="form-group" id="passwordHelp3">
                                                     <label class="input-label" for="password3">{{ trans('auth.password') }}:</label>
-                                                    <input name="password" type="password" class="form-control @error('password')  is-invalid @enderror" id="password3" aria-describedby="passwordHelp">
+                                                    <input name="password" type="password" class="form-control @error('password')  is-invalid @enderror" id="password3" aria-describedby="passwordHelp3">
                                                     @error('password')
                                                     <div class="invalid-feedback">
                                                         {{ $message }}
@@ -259,7 +259,7 @@
                                                     @enderror
                                                 </div>
 
-                                                <div class="form-group">
+                                                <div class="form-group" id="passwordHelp">
                                                     <label class="input-label" for="password2">{{ trans('auth.password') }}:</label>
                                                     <input name="password" type="password" class="form-control @error('password')  is-invalid @enderror" id="password2" aria-describedby="passwordHelp">
                                                     @error('password')
