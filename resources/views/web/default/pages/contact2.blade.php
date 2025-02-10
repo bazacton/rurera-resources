@@ -210,7 +210,7 @@
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-20">
                         <div class="lms-map-holder h-100">
-                            <iframe class="gmap_iframe w-100 h-100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                            <iframe style="border: 0;" class="gmap_iframe w-100 h-100" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                         </div>
                     </div>
                 </div>
