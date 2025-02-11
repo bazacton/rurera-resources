@@ -14,7 +14,7 @@ $quiz_image = ($rowObj->quiz_image != '')? $rowObj->quiz_image : '/assets/defaul
 @endphp
 <tr>
     <td>
-        <img src="{{$quiz_image}}" alt="">
+        <img src="{{$quiz_image}}" alt="quiz_image" width="59" height="59">
         <h4 class="font-19 font-weight-bold"><a href="/sats/{{$rowObj->quiz_slug}}" class="{{ subscriptionCheckLink('bookshelf') }}">{{$rowObj->getTitleAttribute()}}</a>
             <br> <span class="sub_label">{{$rowObj->no_of_questions}} Question(s),</span> <span class="sub_label">Time:{{$rowObj->time}}m,</span> <span class="sub_label">{{getQuizTypeTitle($rowObj->quiz_type)}}</span>
 			@if( $rowObj->time == 10)
