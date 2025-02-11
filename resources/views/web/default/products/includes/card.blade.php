@@ -30,15 +30,13 @@
         </div>
 
         <figcaption class="product-card-body">
-            
             <a href="{{ $product->getUrl() }}" itemprop="url">
                 <h3 class="product-title font-weight-bold font-18" itemprop="title">{{ $product->title,'title' }}</h3>
             </a>
-
             <div class="product-price-box mt-15">
                 <span class="real" itemprop="price"><i data-feather="zap" width="20" height="20" class=""></i> {{ $product->point }} Coins</span>
             </div>
         </figcaption>
-        <button type="button" class="cart-button" itemprop="Cart Button"><a  class="bt-button" href="{{ $product->getUrl() }}" itemprop="url">BUY</a></button>
+        <a class="bt-button cart-button" href="{{ $product->getUrl() }}" itemprop="url">BUY</a>
     </figure>
 </div>
