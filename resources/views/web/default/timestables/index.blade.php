@@ -181,7 +181,7 @@
                             <div class="grid-card timestables-mode-data" itemscope itemtype="https://schema.org/NewsArticle">
                                 <div class="text-holder">
                                     <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
-                                    <a class="grid-btn" itemprop="Button" href="javascript:;">Tournament</a>
+                                    <a class="grid-btn" itemscope itemprop="Button" href="javascript:;">Tournament</a>
                                         <span class="title-label">Coming Soon</span>
                                     </h3>
                                 </div>
@@ -195,7 +195,7 @@
                             <div class="grid-card timestables-mode-data" itemscope itemtype="https://schema.org/NewsArticle">
                                 <div class="text-holder">
                                     <h3 class="blog-grid-title font-18 font-weight-bold" itemprop="title">
-                                        <a class="grid-btn" itemprop="Button" href="javascript:;">Global Arena
+                                        <a class="grid-btn" itemscope itemprop="Button" href="javascript:;">Global Arena
                                             <span class="title-label">Coming Soon</span>
                                         </a>
                                     </h3>
@@ -294,7 +294,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="section-title mb-30">
+                    <div class="section-title mb-30" itemscope itemtype="https://schema.org/Article">
                       <a href="#" itemprop="button" class="back-btn mb-30" style="margin-right: auto;">
                         <span>←</span>
                     </a>
@@ -669,7 +669,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="section-title mb-50">
+                    <div class="section-title mb-50" itemscope itemtype="https://schema.org/Article">
                         <a href="#" itemprop="button" class="back-btn mb-30" style="margin-right: auto;">
                             <span>←</span>
                         </a>
