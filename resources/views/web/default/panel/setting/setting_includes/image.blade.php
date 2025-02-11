@@ -45,7 +45,7 @@
     </div>
 </section>
 
-<div class="modal fade" id="avatarCropModalContainer" tabindex="-1" role="dialog" aria-labelledby="avatarCrop">
+<div class="modal fade" id="avatarCropModalContainer" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
