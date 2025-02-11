@@ -4,7 +4,7 @@
 <div class="timestables-mode-block">
 
 <div class="timestables-mode-content">
-<div class="section-title mb-30">
+<div class="section-title mb-30" itemscope itemtype="https://schema.org/Article">
     <h2 itemprop="title" class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a> Freedom Mode</h2>
 </div>
 <section class="p-25 panel-border border-bottom-4 border-radius-10 mb-30" style="background-color: #fff;">
@@ -136,7 +136,7 @@
 
     </div>
 </div>
-<div class="modal fade disable-timetables-table" id="disable-timetables-table" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade disable-timetables-table" id="disable-timetables-table" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-body">
