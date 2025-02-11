@@ -433,18 +433,13 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 				<div class="option-field-item">
 					<label>Size (px)</label>
 					<div class="input-group">
-						<input type="text" name="topic_width" class="form-control trigger_field"
-								   value="180" data-field_id="topic_width" data-field_name="width"
-						   data-field_type="style" data-id="">
-
-						</div>
+						<input type="text" name="topic_width" class="form-control trigger_field" value="180" data-field_id="topic_width" data-field_name="width" data-field_type="style" data-id="">
+					</div>
 				</div>
 				<div class="option-field-item">
 					<label>Fill Color</label>
 					<div class="input-group">
-						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput"
-								   value="#ffffff" data-field_id="fill_color" data-field_name="fill"
-						   data-field_type="svg_path_style" data-id="">
+						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput" value="#ffffff" data-field_id="fill_color" data-field_name="fill" data-field_type="svg_path_style" data-id="">
 							<div class="input-group-append">
 								<div class="input-group-text">
 									<i class="fas fa-fill-drip"></i>
@@ -456,19 +451,13 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                 <div class="option-field-item">
                     <label>Topic Order No</label>
                     <div class="input-group">
-                        <input type="number" name="topic_order_no" class="form-control trigger_field"
-                               value="0" data-field_id="topic_order_no" data-field_name="topic_order_no"
-                                data-id="">
-
+                        <input type="number" name="topic_order_no" class="form-control trigger_field" value="0" data-field_id="topic_order_no" data-field_name="topic_order_no" data-id="">
                     </div>
                 </div>
 
-
                 <div class="option-field-item">
                     <label class="input-label">Chapter</label>
-                    <select data-field_id="chapter_id"
-                            class="trigger_field form-control ajax-chapter-dropdown" data-field_name="select_chapter" data-field_type="select_chapter"
-                            data-placeholder="Search Chapter" data-id="">
+                    <select data-field_id="chapter_id" class="trigger_field form-control ajax-chapter-dropdown" data-field_name="select_chapter" data-field_type="select_chapter" data-placeholder="Search Chapter" data-id="">
                         <option value="">Please select year, subject</option>
                     </select>
                     @error('chapter_id')
@@ -478,12 +467,9 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                     @enderror
                 </div>
 
-
                 <div class="option-field-item">
                     <label class="input-label">Sub Chapter</label>
-                    <select data-field_id="sub_chapter_id"
-                            class="trigger_field form-control ajax-subchapter-dropdown" data-field_name="select_subchapter" data-field_type="select_subchapter"
-                            data-placeholder="Search Sub Chapter" data-id="">
+                    <select data-field_id="sub_chapter_id" class="trigger_field form-control ajax-subchapter-dropdown" data-field_name="select_subchapter" data-field_type="select_subchapter" data-placeholder="Search Sub Chapter" data-id="">
                         <option value="">Please select year, subject, Topic</option>
                     </select>
                     @error('sub_chapter_id')
@@ -495,10 +481,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                 </div>
 				<div class="option-field-item">
 					<label class="input-label">Topic</label>
-					<select data-field_id="topic"
-							data-search-option="topic"
-							class="trigger_field form-control ajax-topicpart-item-dropdown search_topic1" data-field_name="select_topic" data-field_type="select_topic"
-							data-placeholder="Search Topic" data-id="">
+					<select data-field_id="topic" data-search-option="topic" class="trigger_field form-control ajax-topicpart-item-dropdown search_topic1" data-field_name="select_topic" data-field_type="select_topic" data-placeholder="Search Topic" data-id="">
 					</select>
 				</div>
 			</div>
@@ -515,18 +498,13 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                 <div class="option-field-item">
                     <label>Size (px)</label>
                     <div class="input-group">
-                        <input type="text" name="topic_width" class="form-control trigger_field"
-                               value="180" data-field_id="topic_width" data-field_name="width"
-                               data-field_type="style" data-id="">
-
+                        <input type="text" name="topic_width" class="form-control trigger_field" value="180" data-field_id="topic_width" data-field_name="width" data-field_type="style" data-id="">
                     </div>
                 </div>
                 <div class="option-field-item">
                     <label>Fill Color</label>
                     <div class="input-group">
-                        <input type="text" name="background_color" class="form-control trigger_field colorpickerinput"
-                               value="#ffffff" data-field_id="fill_color" data-field_name="fill"
-                               data-field_type="svg_path_style" data-id="">
+                        <input type="text" name="background_color" class="form-control trigger_field colorpickerinput" value="#ffffff" data-field_id="fill_color" data-field_name="fill" data-field_type="svg_path_style" data-id="">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <i class="fas fa-fill-drip"></i>
@@ -534,38 +512,24 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                         </div>
                     </div>
                 </div>
-
                 <div class="option-field-item">
                     <label>No of Coins</label>
                     <div class="input-group">
-                        <input type="number" name="no_of_coins" class="form-control trigger_field"
-                               value="0" data-field_id="no_of_coins" data-field_name="no_of_coins"
-                               data-id="">
+                        <input type="number" name="no_of_coins" class="form-control trigger_field" value="0" data-field_id="no_of_coins" data-field_name="no_of_coins" data-id="">
                     </div>
                 </div>
-
                 <div class="option-field-item">
                     <label>Topic Order No</label>
                     <div class="input-group">
-                        <select data-field_id="treasure_topic_order_no"
-                                class="trigger_field form-control treasure_topic_order_no" data-field_name="treasure_topic_order_no" data-field_type="treasure_topic_order_no"
-                                data-placeholder="Select Topic Order No" data-id="">
+                        <select data-field_id="treasure_topic_order_no" class="trigger_field form-control treasure_topic_order_no" data-field_name="treasure_topic_order_no" data-field_type="treasure_topic_order_no" data-placeholder="Select Topic Order No" data-id="">
                         </select>
                     </div>
                 </div>
             </div>
         @endforeach
     @endif
-
-
-
 </div>
-
-
-
 <div class="svgs-data rurera-hide">
-
-
 	@if( !empty( $stages_list ) )
 		@foreach( $stages_list as $stageObj)
 			@php
