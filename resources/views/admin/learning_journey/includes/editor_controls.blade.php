@@ -190,18 +190,9 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 						<label class="custom-switch-description mb-0 cursor-pointer" for="rtlSwitch">Enable Graph</label>
 					</label>
 				</div>
-				<input type="text" name="stage_set" class="hide form-control trigger_field"
-					   value="{{$stage_set}}" data-field_id="stage_set" data-field_name="stage_set"
-					   data-field_type="page_set" data-id="">
-
-
-
-
-
-
+				<input type="text" name="stage_set" class="hide form-control trigger_field" value="{{$stage_set}}" data-field_id="stage_set" data-field_name="stage_set" data-field_type="page_set" data-id="">
 			</div>
 		</div>
-
 
 		<div class="tab-pane mt-3 fade" id="layers_settings{{$data_id}}" role="settingtabpanel" aria-labelledby="layers_settings-tab{{$data_id}}">
 			<h6 class="mt-20">Layers Settings</h6>
