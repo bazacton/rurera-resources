@@ -659,7 +659,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 														<em class="show-text">Show</em>
 													</span>
 													<label class="custom-switch-description mb-0 cursor-pointer"
-														   for="show_games_field">Games</label>
+														   for="show_games_field"><span>Games</span></label>
 												</label>
 											</div>
 										</div>
@@ -680,7 +680,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 														<em class="show-text">Show</em>
 													</span>
 													<label class="custom-switch-description mb-0 cursor-pointer"
-														   for="show_books_field">Books</label>
+														   for="show_books_field"><span>Books</span></label>
 												</label>
 											</div>
 										</div>
@@ -700,7 +700,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 														<em class="show-text">Show</em>
 													</span>
 													<label class="custom-switch-description mb-0 cursor-pointer"
-														   for="show_enterance_exams_field">Enterance Exams</label>
+														   for="show_enterance_exams_field"><span>Enterance Exams</span></label>
 												</label>
 											</div>
 										</div>
@@ -720,7 +720,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 														<em class="show-text">Show</em>
 													</span>
 													<label class="custom-switch-description mb-0 cursor-pointer"
-														   for="show_sats_field">SATs</label>
+														   for="show_sats_field"><span>SATs</span></label>
 												</label>
 											</div>
 										</div>
@@ -810,11 +810,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									</div>
 								</div>
 								<a href="javascript:;" class="reset-btn regenerate-emoji" data-user_id="{{$user->id}}">
-													<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>Reset Emoji
-											    </a>
-											<a href="javascript:;" class="reset-btn regenerate-pin" data-user_id="{{$user->id}}">
-													<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>Reset Pin
-											    </a>
+                                    <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>Reset Emoji
+                                </a>
+                                <a href="javascript:;" class="reset-btn regenerate-pin" data-user_id="{{$user->id}}">
+                                    <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>Reset Pin
+                                </a>
 											
 							</div>
 							<div class="edit-profile edit-profile-block mt-20 rurera-hide bg-white p-25">
@@ -846,15 +846,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 										<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
 										<a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
                                     </div>
-									</form>
-                        </div>
+								</form>
+                            </div>
                         </div>
                     </div>
                     </div>
-					
-					
-					
-					
 					
 					<div class="row mb-50">
                         <div class="col-lg-4 col-md-4 col-sm-12 col-12">
@@ -868,46 +864,44 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             <div class="edit-info-list">
 								@if( !isset( $user->userSubscriptions->id))<a href="javascript:;" class="membership-btn font-16 float-right package-payment-btn subscription-modal" data-type="child_payment" data-id="{{$user->id}}">+ Subscription</a>@endif
 								@if( isset( $user->userSubscriptions->id))
-										<div class="subscribe-plan active current-plan position-relative d-flex flex-column rounded-lg p-20 mb-10 mt-10">
-											<div class="package-block">
-												<span class="subscribe-icon"><img src="{{ $subscribe->icon }}" height="auto" width="auto" alt="Box image"/></span>
-												<div class="subscribe-title">
-													<h3 itemprop="title" class="font-24 font-weight-500">{{ $subscribe->title }}</h3>
-												</div>
-											</div>
-											<div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
-												<span itemprop="price" class="font-36 line-height-1 packages-prices" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($subscribe->price) }}</span>
-												<span class="yearly-price">{{ addCurrencyToPrice($subscribe->price) }} / {{(isset( $user->userSubscriptions->subscribe_for ) && $user->userSubscriptions->subscribe_for == 12)? 'Monthly' : 'Monthly'}}</span>
-												<span class="yearly-price">Expiry: {{isset( $user->userSubscriptions->expiry_at )? dateTimeFormat($user->userSubscriptions->expiry_at, 'j M Y') : '-'}}</span>
-														
-											</div>
-											<div class="row">
-											<div class="col-lg-6 col-md-6 col-sm-12">
-											</div>
-											<div class="col-lg-6 col-md-6 col-sm-12">
-												<a href="javascript:;" class="package-update-btn btn w-100 subscription-modal" data-type="update_package" data-id="{{$user->id}}">Update Subscription
-												</a>
-											</div>
-											</div>
-										</div>
-									@endif
-									
-									@if(isset( $user->userSubscriptions->subscribe ) && $user->userSubscriptions->is_cancelled == 0 )	
-									<a href="javascript:;" class="reset-btn package-payment-btn cancel-subscription-modal" data-type="child_payment" data-id="{{$user->id}}">
-										<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>
-											Cancel Subscription
-										</a>
-									@else
-										@if(isset( $user->userSubscriptions->id))
-										<div class="cancel-message">Subscription has been canceled. You will still be able to use the package till its expiry and wont be charged for the renwal.</div>
-										@endif
-									@endif
-									
-									
-								</div>
+                                    <div class="subscribe-plan active current-plan position-relative d-flex flex-column rounded-lg p-20 mb-10 mt-10">
+                                        <div class="package-block">
+                                            <span class="subscribe-icon"><img src="{{ $subscribe->icon }}" height="auto" width="auto" alt="Box image"/></span>
+                                            <div class="subscribe-title">
+                                                <h3 itemprop="title" class="font-24 font-weight-500">{{ $subscribe->title }}</h3>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
+                                            <span itemprop="price" class="font-36 line-height-1 packages-prices" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($subscribe->price) }}</span>
+                                            <span class="yearly-price">{{ addCurrencyToPrice($subscribe->price) }} / {{(isset( $user->userSubscriptions->subscribe_for ) && $user->userSubscriptions->subscribe_for == 12)? 'Monthly' : 'Monthly'}}</span>
+                                            <span class="yearly-price">Expiry: {{isset( $user->userSubscriptions->expiry_at )? dateTimeFormat($user->userSubscriptions->expiry_at, 'j M Y') : '-'}}</span>
+                                                    
+                                        </div>
+                                        <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <a href="javascript:;" class="package-update-btn btn w-100 subscription-modal" data-type="update_package" data-id="{{$user->id}}">Update Subscription
+                                            </a>
+                                        </div>
+                                        </div>
+                                    </div>
+                                @endif
+                                
+                                @if(isset( $user->userSubscriptions->subscribe ) && $user->userSubscriptions->is_cancelled == 0 )	
+                                <a href="javascript:;" class="reset-btn package-payment-btn cancel-subscription-modal" data-type="child_payment" data-id="{{$user->id}}">
+                                    <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>
+                                        Cancel Subscription
+                                    </a>
+                                @else
+                                    @if(isset( $user->userSubscriptions->id))
+                                    <div class="cancel-message">Subscription has been canceled. You will still be able to use the package till its expiry and wont be charged for the renwal.</div>
+                                    @endif
+                                @endif
+                                
+                            </div>
 						</div>
 					</div>
-								
 								
 					
 		    @if( isset( $user->card_last_four ) && $user->card_last_four != '')
@@ -963,16 +957,6 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 			@endif
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
 <div class="modal fade lms-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -1020,8 +1004,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
         <div class="modal-content">
             <div class="modal-header">
                 <strong>Unlink Student</strong>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">×</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             </div>
             <div class="modal-body">
                 <div class="container container-nosidebar">
@@ -1032,15 +1015,12 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 <a href="javascript:;" class="nav-link btn-primary rounded-pill mb-10 unlink-btn" data-child_id="0">Proceed Unlink</a>
                             </div>
                         </div>
-                </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
-
 @endsection
 
 @push('scripts_bottom')
