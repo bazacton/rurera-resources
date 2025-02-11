@@ -187,7 +187,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 						<input type="hidden" name="page_graph" class="trigger_field" value="0" data-field_id="page_graph" data-field_name="graph" data-field_type="page_style" data-id="">
 						<input type="checkbox" name="page_graph_radio" id="rtlSwitch" value="1" class="custom-switch-input">
 						<span class="custom-switch-indicator"></span>
-						<label class="custom-switch-description mb-0 cursor-pointer" for="rtlSwitch">Enable Graph</label>
+						<label class="custom-switch-description mb-0 cursor-pointer" for="rtlSwitch"><span>Enable Graph</span></label>
 					</label>
 				</div>
 				<input type="text" name="stage_set" class="hide form-control trigger_field" value="{{$stage_set}}" data-field_id="stage_set" data-field_name="stage_set" data-field_type="page_set" data-id="">
@@ -271,7 +271,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<input type="hidden" data-field_attr_type="switch" name="redemption_questions" class="trigger_field" value="0" data-field_id="redemption_questions" data-field_name="redemption_questions" data-field_type="page_style" data-id="">
 					<input type="checkbox" name="redemption_questions_radio" id="redemption_questions" value="1" class="custom-switch-input">
 					<span class="custom-switch-indicator"></span>
-					<label class="custom-switch-description mb-0 cursor-pointer" for="redemption_questions">Redemption questions</label>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="redemption_questions"><span>Redemption questions</span></label>
 				</label>
 			</div>
 
@@ -280,7 +280,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<input type="hidden" data-field_attr_type="switch" data-field_attr_type="switch" name="activity_show_answers" class="trigger_field" value="0" data-field_id="activity_show_answers" data-field_name="activity_show_answers" data-field_type="page_style" data-id="">
 					<input type="checkbox" name="activity_show_answers_radio" id="activity_show_answers" value="1" class="custom-switch-input">
 					<span class="custom-switch-indicator"></span>
-					<label class="custom-switch-description mb-0 cursor-pointer" for="activity_show_answers">Show answers (During Activity)</label>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="activity_show_answers"><span>Show answers (During Activity)</span></label>
 				</label>
 			</div>
 
