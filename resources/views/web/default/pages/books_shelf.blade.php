@@ -189,7 +189,7 @@
                   <div class="row">
                     @if( !empty( $books ))
                     @foreach( $books as $book_category => $category_books)
-                    <div class="col-lg-12">
+                    <div class="col-lg-12" itemscope itemtype="https://schema.org/Article">
                         <h3 class="mb-10 font-36" itemprop="title">{{$book_category}}</h3>
                         <span class="mb-35 d-block" itemprop="sub title">For kids ages 0-3</span>
                     </div>
@@ -209,7 +209,7 @@
                                 </div>
 
                                 <div class="col-12 col-lg-6 col-md-5">
-                                    <div class="text-holder">
+                                    <div class="text-holder" itemscope itemtype="https://schema.org/Article">
                                         <h3 itemprop="title"><a href="/books/{{$bookData->book_slug}}" itemprop="url">{{$bookData->book_title}}</a></h3>
                                         <ul itemprop="books info list">
                                             <li><span itemprop="info text">Reading Level :</span>{{$bookData->reading_level }}</li>
@@ -264,7 +264,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-12">
-          <div class="section-title mb-50">
+          <div class="section-title mb-50" itemscope itemtype="https://schema.org/Article">
             <h2 itemprop="title" class="text-dark-charcoal text-white font-40">Inspiring every student to Read and show their <span class="text
   scribble">best.</span>
             </h2>
@@ -276,7 +276,7 @@
             <div class="col-12 col-md-4 col-lg-4">
               <div class="mb-40">
                 <div class="blog-grid-card pb-0">
-                  <div class="blog-grid-detail pr-0">
+                  <div class="blog-grid-detail pr-0" itemscope itemtype="https://schema.org/Article">
                     <div class="blog-grid-image">
                       <img src="../assets/default/img/bookchoose-img1.png" width="370" height="250" class="img-cover" loading="eager" alt="#">
                     </div>
@@ -291,7 +291,7 @@
             <div class="col-12 col-md-4 col-lg-4">
               <div class="mb-40">
                 <div class="blog-grid-card pb-0">
-                  <div class="blog-grid-detail pr-0">
+                  <div class="blog-grid-detail pr-0" itemscope itemtype="https://schema.org/Article">
                     <div class="blog-grid-image">
                       <img src="../assets/default/img/bookchoose-img2.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
                     </div>
@@ -306,7 +306,7 @@
             <div class="col-12 col-md-4 col-lg-4">
               <div class="mb-40">
                 <div class="blog-grid-card pb-0">
-                  <div class="blog-grid-detail pr-0">
+                  <div class="blog-grid-detail pr-0" itemscope itemtype="https://schema.org/Article">
                     <div class="blog-grid-image">
                       <img src="../assets/default/img/bookchoose-img3.png" width="370" height="250" loading="eager" class="img-cover" alt="#">
                     </div>
@@ -392,7 +392,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="section-title text-center mb-50">
+          <div class="section-title text-center mb-50" itemscope itemtype="https://schema.org/Article">
             <h2 itemprop="title" class="font-40 mb-10 text-dark-charcoal">Blog</h2>
             <p itemprop="description">Get to know more about latest news, resources and much more.</p>
           </div>
