@@ -1727,6 +1727,8 @@ Admin Questions Generator Page Style End
     .topic-parts-data table tr td .topic-part-title {padding-left: 20px;}
     .table:not(.table-sm):not(.table-md):not(.dataTable) td, 
     .table:not(.table-sm):not(.table-md):not(.dataTable) th {white-space: nowrap;}
+    .topic-parts-data .table:not(.table-sm):not(.table-md):not(.dataTable) td, 
+    .topic-parts-data .table:not(.table-sm):not(.table-md):not(.dataTable) th {white-space: inherit;}
 }
 @media screen and (max-width: 576px) {
     .assignments-table table.table tbody tr td span span {display: block; padding-top: 5px;}
