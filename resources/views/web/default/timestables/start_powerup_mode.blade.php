@@ -80,17 +80,17 @@ if( $duration_type == 'total_practice'){
                                         <li class="intermediate {{$li_custom_class}} {{($is_acheived == 1 || $is_active == 1 || $last_stage_completed == 1)? 'completed' : ''}} {{$last_stage}}" data-id="{{$nuggetObj['id']}}" data-quiz_level="medium">
                                             <a href="javascript:;" class="{{$treasure_mission_class}}" data-id="{{$nuggetObj['id']}}">
                                                 @if($is_acheived == 1 )
-                                                    <img src="/assets/default/img/tick-white.png" alt="">
+                                                    <img src="/assets/default/img/tick-white.png" alt="tick-white">
                                                 @elseif($is_active == 1 )
-                                                    <img src="/assets/default/img/stepon.png" alt="">
+                                                    <img src="/assets/default/img/stepon.png" alt="stepon" width="31" height="35">
                                                 @else
                                                     @if($last_stage_completed == 1)
-                                                        <img src="/assets/default/img/stepon.png" alt="">
+                                                        <img src="/assets/default/img/stepon.png" alt="stepon" width="31" height="35">
                                                     @else
                                                         @if( isset( $nuggetObj['is_last_stage'] ) && $nuggetObj['is_last_stage'] == true)
-                                                            <img src="/assets/default/img/flag-grey.png" alt="">
+                                                            <img src="/assets/default/img/flag-grey.png" alt="flag-grey">
                                                         @else
-                                                            <img src="/assets/default/img/panel-lock.png" alt="">
+                                                            <img src="/assets/default/img/panel-lock.png" alt="panel-lock" width="22" height="28">
                                                         @endif
                                                     @endif
                                                 @endif
