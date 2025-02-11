@@ -289,7 +289,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<input type="hidden" data-field_attr_type="switch" name="after_activity_show_answers" class="trigger_field" value="0" data-field_id="after_activity_show_answers" data-field_name="after_activity_show_answers" data-field_type="page_style" data-id="">
 					<input type="checkbox" name="after_activity_show_answers_radio" id="after_activity_show_answers" value="1" class="custom-switch-input">
 					<span class="custom-switch-indicator"></span>
-					<label class="custom-switch-description mb-0 cursor-pointer" for="after_activity_show_answers">Show answers (After Activity)</label>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="after_activity_show_answers"><span>Show answers (After Activity)</span></label>
 				</label>
 			</div>
 
@@ -298,7 +298,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<input type="hidden" data-field_attr_type="switch" name="shuffle_questions" class="trigger_field" value="0" data-field_id="shuffle_questions" data-field_name="shuffle_questions" data-field_type="page_style" data-id="">
 					<input type="checkbox" name="shuffle_questions_radio" id="shuffle_questions" value="1" class="custom-switch-input">
 					<span class="custom-switch-indicator"></span>
-					<label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_questions">Shuffle Questions</label>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_questions"><span>Shuffle Questions</span></label>
 				</label>
 			</div>
 
@@ -307,7 +307,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<input type="hidden" data-field_attr_type="switch" name="shuffle_answer_options" class="trigger_field" value="0" data-field_id="shuffle_answer_options" data-field_name="shuffle_answer_options" data-field_type="page_style" data-id="">
 					<input type="checkbox" name="shuffle_answer_options_radio" id="shuffle_answer_options" value="1" class="custom-switch-input">
 					<span class="custom-switch-indicator"></span>
-					<label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_answer_options">Shuffle Answer Options</label>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_answer_options"><span>Shuffle Answer Options</span></label>
 				</label>
 			</div>
 
@@ -316,7 +316,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<input type="hidden" data-field_attr_type="switch" name="skip_questions" class="trigger_field" value="0" data-field_id="skip_questions" data-field_name="skip_questions" data-field_type="page_style" data-id="">
 					<input type="checkbox" name="skip_questions_radio" id="skip_questions" value="1" class="custom-switch-input">
 					<span class="custom-switch-indicator"></span>
-					<label class="custom-switch-description mb-0 cursor-pointer" for="skip_questions">Skip Question (Attempt Later)</label>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="skip_questions"><span>Skip Question (Attempt Later)</span></label>
 				</label>
 			</div>
 
@@ -325,31 +325,21 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<input type="hidden" data-field_attr_type="switch" name="play_music" class="trigger_field" value="0" data-field_id="play_music" data-field_name="play_music" data-field_type="page_style" data-id="">
 					<input type="checkbox" name="play_music_radio" id="play_music" value="1" class="custom-switch-input">
 					<span class="custom-switch-indicator"></span>
-					<label class="custom-switch-description mb-0 cursor-pointer" for="play_music">Play Music</label>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="play_music"><span>Play Music</span></label>
 				</label>
 			</div>
-
 
 			<div class="option-field-item">
 				<label>Passing Scores (%)</label>
 				<div class="input-group">
-					<input type="number" name="passing_scores" class="form-control trigger_field"
-						   value="90" data-field_id="passing_scores" data-field_name="passing_scores" min="50" max="100"
-						   data-field_type="page_style" data-id="">
+					<input type="number" name="passing_scores" class="form-control trigger_field" value="90" data-field_id="passing_scores" data-field_name="passing_scores" min="50" max="100" data-field_type="page_style" data-id="">
 				</div>
 			</div>
-
-
         </div>
+	</div>
 </div>
-</div>
-
 
 <div class="option-fields-block hide">
-
-
-
-
 	@if( !empty( $stages_list ) )
 		@foreach( $stages_list as $stageObj)
 			@php
