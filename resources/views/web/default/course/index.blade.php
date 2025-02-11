@@ -1,22 +1,16 @@
 @extends('web.default.panel.layouts.panel_layout')
 @php use App\Models\Quiz; @endphp
 
-
 @push('styles_top')
     <link rel="stylesheet" href="/assets/default/css/css-stars.css">
     <link rel="stylesheet" href="/assets/default/vendors/video/video-js.min.css">
 @endpush
 
-
 @section('content')
-
-
-
 <section class="container-fluid">
     <div class="row">
         <div class="col-12 p-0">
             <div class="post-show" style="overflow:hidden;">
-
                 <section class="count-number-wrapp" style="display:none">
                     <div class="container">
                         <div class="row">
@@ -330,14 +324,11 @@
 </section>
     <div id="webinarReportModal" class="d-none">
         <h3 class="section-title after-line font-20 text-dark-blue">{{ trans('product.report_the_course') }}</h3>
-
         <form action="/course/{{ $course->id }}/report" method="post" class="mt-25">
-
             <div class="form-group">
                 <label class="text-dark-blue font-16">{{ trans('product.reason') }}</label>
                 <select id="reason" name="reason" class="form-control">
                     <option value="" selected disabled>{{ trans('product.select_reason') }}</option>
-
                     @foreach(getReportReasons() as $reason)
                         <option value="{{ $reason }}">{{ $reason }}</option>
                     @endforeach
@@ -351,7 +342,6 @@
                 <div class="invalid-feedback"></div>
             </div>
             <p class="text-gray font-16">{{ trans('product.report_modal_hint') }}</p>
-
             <div class="mt-30 d-flex align-items-center justify-content-end">
                 <button type="button" class="js-course-report-submit btn btn-sm btn-primary">{{ trans('panel.report') }}</button>
                 <button type="button" class="btn btn-sm btn-danger ml-10 close-swl">{{ trans('public.close') }}</button>
