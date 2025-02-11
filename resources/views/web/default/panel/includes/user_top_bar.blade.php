@@ -122,8 +122,8 @@
                         @endif
 
                         <a class="dropdown-item nav-logout" href="/logout">
-                            <img src="/assets/default/img/icons/sidebar/logout.svg" height="auto" itemprop="image"
-                                 width="25" alt="nav-icon" title="nav-icon" loading="eager">
+                            <img src="/assets/default/img/icons/sidebar/logout.svg" height="24" itemprop="image"
+                                 width="24" alt="nav-icon" title="nav-icon" loading="eager">
                             <span class="font-16 text-dark-blue">{{ trans('panel.log_out') }}</span>
                         </a>
                     </div>
