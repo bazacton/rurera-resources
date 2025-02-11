@@ -26,13 +26,8 @@ if( $duration_type == 'total_practice'){
 	Your browser does not support the audio element.
 </audio>
 <div class="content-section">
-
     <section class="lms-quiz-section1 justify-content-start">
-
-
-        <div class="container-fluid questions-data-block read-quiz-content"
-             data-total_questions="30">
-
+        <div class="container-fluid questions-data-block read-quiz-content" data-total_questions="30">
             <div class="justify-content-center row">
                 <div class="col-lg-8 col-md-12 col-sm-12 mx-auto">
                     <div class="question-step quiz-complete" style="display:none">
@@ -51,35 +46,23 @@ if( $duration_type == 'total_practice'){
 
                         </div>
                     </div>
-
                     <div class="start-counter"></div>
-
                     <div class="learning-content start-btn-container hide" id="learningPageContent">
                         <div class="learning-title">
                             <h3 class="mb-5"></h3>
                         </div>
                         <div class="d-flex align-items-center justify-content-center w-100">
-
-
                             <div class="learning-content-box d-flex align-items-center justify-content-center flex-column p-15 p-lg-30 rounded-lg">
                                 <div class="learning-content-box-icon">
                                     <img src="/assets/default/img/learning/quiz.svg" alt="downloadable icon">
                                 </div>
-
                                 <p>Press Start button when you are ready!</p>
-
                                 <a href="javascript:;" class="btn btn-primary btn-sm mt-15 start-timestables-quiz">Start</a>
                                 <div class="learning-content-quiz"></div>
-
                             </div>
                         </div>
-
                     </div>
-
                     <div class="question-area-block quiz-first-question" data-duration_type="{{$duration_type}}" data-time_interval="{{$time_interval}}" data-practice_time="{{$practice_time}}" style="display:none" data-quiz_result_id="{{$QuizzAttempts->quiz_result_id}}" data-attempt_id="{{$QuizzAttempts->id}}" data-total_questions="{{count($questions_list)}}" data-corrected_questions="0">
-
-
-					
                     <div class="spell-levels border-0 rurera-hide">
                         @php $ul_custom_class = isset( $stageObj['custom_class'] )? $stageObj['custom_class'] : ''; $li_count = $counter = $last_stage_completed = 0;  @endphp
                         @if( isset( $stageObj['nuggets'] ) && !empty( $stageObj['nuggets'] ) )
