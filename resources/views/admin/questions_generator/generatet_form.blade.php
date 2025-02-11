@@ -184,7 +184,7 @@
 							<div class="row-field">
 							
 								<label class="custom-switch pl-0">
-								<label class="custom-switch-description mb-0 cursor-pointer" for="include_instruction_ai">Instructions for AI</label>
+								<label class="custom-switch-description mb-0 cursor-pointer" for="include_instruction_ai"><span>Instructions for AI</span></label>
 									<input type="checkbox" name="include_instruction_ai" id="include_instruction_ai" value="1" class="custom-switch-input include_instruction_ai">
 									<span class="custom-switch-indicator"></span>
 								</label>
@@ -192,21 +192,21 @@
 							<div class="row-field">
 							
 								<label class="custom-switch pl-0">
-									<label class="custom-switch-description mb-0 cursor-pointer" for="include_passage">Passage</label>
+									<label class="custom-switch-description mb-0 cursor-pointer" for="include_passage"><span>Passage</span></label>
 									<input type="checkbox" name="include_passage" id="include_passage" value="1" class="custom-switch-input include_passage" checked>
 									<span class="custom-switch-indicator"></span>
 								</label>
 							</div>
 							<div class="row-field">
 								<label class="custom-switch pl-0">
-									<label class="custom-switch-description mb-0 cursor-pointer" for="include_fact_integration">Fact Integration</label>
+									<label class="custom-switch-description mb-0 cursor-pointer" for="include_fact_integration"><span>Fact Integration</span></label>
 									<input type="checkbox" name="include_fact_integration" id="include_fact_integration" value="1" class="custom-switch-input include_fact_integration">
 									<span class="custom-switch-indicator"></span>
 								</label>
 							</div>
 							<div class="row-field">
 								<label class="custom-switch pl-0">
-									<label class="custom-switch-description mb-0 cursor-pointer" for="include_keywords">keywords</label>
+									<label class="custom-switch-description mb-0 cursor-pointer" for="include_keywords"><span>keywords</span></label>
 									<input type="checkbox" name="include_keywords" id="include_keywords" value="1" class="custom-switch-input include_keywords" checked>
 									<span class="custom-switch-indicator"></span>	
 								</label>
