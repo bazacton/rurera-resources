@@ -24,7 +24,7 @@
                 <li class=" {{$li_class}} {{$is_active}}" data-mission_id="{{isset( $missionData['id'])? $missionData['id'] : ''}}">
                     <a href="javascript:;">
                         <span class="icon-box">
-                                <img src="{{isset( $missionData['img'])? $missionData['img'] : ''}}">
+                                <img src="{{isset( $missionData['img'])? $missionData['img'] : ''}}" alt="mission image" width="25" height="25">
                         </span>
                         {{isset( $missionData['title'])? $missionData['title'] : ''}}
                     </a>
