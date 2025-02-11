@@ -853,34 +853,27 @@ $rand_id = rand(999,99999);
                             <div class="col-12 col-md-12">
 
                                 <label class="input-label">Solution</label>
-                                <input type="radio" class="btn-check" name="solution" id="Acceptable" value="Acceptable"
-                                       autocomplete="off" checked="checked">
+                                <input type="radio" class="btn-check" name="solution" id="Acceptable" value="Acceptable" autocomplete="off" checked="checked">
                                 <label class="btn btn-secondary" for="Acceptable">Acceptable</label>
 
-                                <input type="radio" class="btn-check" name="solution" id="Appropriate"
-                                       value="Appropriate" autocomplete="off">
+                                <input type="radio" class="btn-check" name="solution" id="Appropriate" value="Appropriate" autocomplete="off">
                                 <label class="btn btn-secondary" for="Appropriate">Appropriate</label>
 
-                                <input type="radio" class="btn-check" name="solution" id="Aspirational"
-                                       value="Aspirational" autocomplete="off">
+                                <input type="radio" class="btn-check" name="solution" id="Aspirational" value="Aspirational" autocomplete="off">
                                 <label class="btn btn-secondary" for="Aspirational">Aspirational</label>
                             </div>
 
                             <div class="col-12 col-md-12">
                                 <label class="input-label">Difficulty Level</label>
-                                <input type="radio" class="btn-check" name="difficulty_level" id="Standard"
-                                       value="Standard" autocomplete="off" checked="checked">
+                                <input type="radio" class="btn-check" name="difficulty_level" id="Standard" value="Standard" autocomplete="off" checked="checked">
                                 <label class="btn btn-secondary" for="Standard">Standard</label>
 
-                                <input type="radio" class="btn-check" name="difficulty_level" id="Medium" value="Medium"
-                                       autocomplete="off">
+                                <input type="radio" class="btn-check" name="difficulty_level" id="Medium" value="Medium" autocomplete="off">
                                 <label class="btn btn-secondary" for="Medium">Medium</label>
 
-                                <input type="radio" class="btn-check" name="difficulty_level" id="Expert" value="Expert"
-                                       autocomplete="off">
+                                <input type="radio" class="btn-check" name="difficulty_level" id="Expert" value="Expert" autocomplete="off">
                                 <label class="btn btn-secondary" for="Expert">Expert</label>
                             </div>
-
 
                             <div class="col-12 col-md-12">
                                 <div class="form-group custom-switches-stacked mt-2">
@@ -888,19 +881,15 @@ $rand_id = rand(999,99999);
                                         <input type="checkbox" name="publish_question" id="publish_question" value="1"
                                                class="custom-switch-input"/>
                                         <span class="custom-switch-indicator"></span>
-                                        <label class="custom-switch-description mb-0 cursor-pointer"
-                                               for="publish_question">Publish</label>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="publish_question"><span>Publish</span></label>
                                     </label>
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="col-12 col-md-12">
                             <div class="form-group">
                                 <label class="input-label">Details</label>
-                                <textarea class="note-codable summernote" id="status_details" name="status_details"
-                                          aria-multiline="true"></textarea>
+                                <textarea class="note-codable summernote" id="status_details" name="status_details" aria-multiline="true"></textarea>
                             </div>
                         </div>
                     </div>
