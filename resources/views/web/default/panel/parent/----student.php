@@ -1003,15 +1003,14 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
         </div>
 		
 		<div class="modal fade" id="profile-image-modal" tabindex="-1" role="dialog" aria-labelledby="profile-image-modal">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-
-            <div class="modal-body">
-                    <div id="svgAvatars"></div>
-            </div>
-        </div>
-    </div>
-</div>
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div id="svgAvatars"></div>
+					</div>
+				</div>
+			</div>
+		</div>
 			
 			<script>
 			/*$(document).on('click', '.edit-profile-btn', function (e) {
