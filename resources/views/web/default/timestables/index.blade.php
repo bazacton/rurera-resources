@@ -686,7 +686,7 @@
                                       <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile2" aria-selected="false">Sent</a>
                                     </li>
                                     <li class="nav-item">
-                                      <a class="nav-link" id="contact-tab2" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact" aria-selected="false">Completed</a>
+                                      <a class="nav-link" id="contact-tab2" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact2" aria-selected="false">Completed</a>
                                     </li>
                                 </ul>
                             </div>
