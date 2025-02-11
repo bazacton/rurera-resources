@@ -86,8 +86,7 @@
 
                 @if(auth()->check() && (auth()->user()->isUser()))
                 <div class="dropdown">
-                    <a href="#!" class="navbar-user d-flex align-items-center dropdown-toggle" type="button"
-                       id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    <a href="#!" class="navbar-user d-flex align-items-center dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false">
                         <img src="{{ $authUser->getAvatar() }}" class="rounded-circle"
                              alt="{{ $authUser->get_full_name() }}" width="100%" height="auto" itemprop="image"
