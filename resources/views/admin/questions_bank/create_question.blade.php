@@ -1479,8 +1479,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                         <input type="checkbox" name="image_question" id="image_question" value="1"
                                                class="custom-switch-input"/>
                                         <span class="custom-switch-indicator"></span>
-                                        <label class="custom-switch-description mb-0 cursor-pointer"
-                                               for="image_question">Image Question</label>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="image_question"><span>Image Question</span></label>
                                     </label>
                                 </div>
                             </div>
@@ -1488,11 +1487,9 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                             <div class="col-12 col-md-12">
                                 <div class="form-group custom-switches-stacked mt-2">
                                     <label class="custom-switch pl-0">
-                                        <input type="checkbox" name="word_problem" id="word_problem" value="1"
-                                               class="custom-switch-input"/>
+                                        <input type="checkbox" name="word_problem" id="word_problem" value="1" class="custom-switch-input"/>
                                         <span class="custom-switch-indicator"></span>
-                                        <label class="custom-switch-description mb-0 cursor-pointer" for="word_problem">Word
-                                            Problem</label>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="word_problem"><span>Word Problem</span></label>
                                     </label>
                                 </div>
                             </div>
@@ -1503,8 +1500,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                         <input type="checkbox" name="new_glossary" id="new_glossary" value="1"
                                                class="custom-switch-input"/>
                                         <span class="custom-switch-indicator"></span>
-                                        <label class="custom-switch-description mb-0 cursor-pointer" for="new_glossary">New
-                                            Glossary</label>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="new_glossary"><span>New Glossary</span></label>
                                     </label>
                                 </div>
                             </div>
@@ -1515,8 +1511,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                         <input type="checkbox" name="glossary_with_illustration"
                                                id="glossary_with_illustration" value="1" class="custom-switch-input"/>
                                         <span class="custom-switch-indicator"></span>
-                                        <label class="custom-switch-description mb-0 cursor-pointer"
-                                               for="glossary_with_illustration">Glossary with Illustration</label>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="glossary_with_illustration"><span>Glossary with Illustration</span></label>
                                     </label>
                                 </div>
                             </div>
@@ -1524,23 +1519,19 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                             <div class="col-12 col-md-12">
 
                                 <label class="input-label">Solution</label>
-                                <input type="radio" class="btn-check" name="solution" id="Acceptable" value="Acceptable"
-                                       autocomplete="off" checked="checked">
+                                <input type="radio" class="btn-check" name="solution" id="Acceptable" value="Acceptable" autocomplete="off" checked="checked">
                                 <label class="btn btn-secondary" for="Acceptable">Acceptable</label>
 
-                                <input type="radio" class="btn-check" name="solution" id="Appropriate"
-                                       value="Appropriate" autocomplete="off">
+                                <input type="radio" class="btn-check" name="solution" id="Appropriate" value="Appropriate" autocomplete="off">
                                 <label class="btn btn-secondary" for="Appropriate">Appropriate</label>
 
-                                <input type="radio" class="btn-check" name="solution" id="Aspirational"
-                                       value="Aspirational" autocomplete="off">
+                                <input type="radio" class="btn-check" name="solution" id="Aspirational" value="Aspirational" autocomplete="off">
                                 <label class="btn btn-secondary" for="Aspirational">Aspirational</label>
                             </div>
 
                             <div class="col-12 col-md-12">
                                 <label class="input-label">Difficulty Level</label>
-                                <input type="radio" class="btn-check" name="difficulty_level" id="Standard"
-                                       value="Standard" autocomplete="off" checked="checked">
+                                <input type="radio" class="btn-check" name="difficulty_level" id="Standard" value="Standard" autocomplete="off" checked="checked">
                                 <label class="btn btn-secondary" for="Standard">Standard</label>
 
                                 <input type="radio" class="btn-check" name="difficulty_level" id="Medium" value="Medium"
@@ -1551,27 +1542,21 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                        autocomplete="off">
                                 <label class="btn btn-secondary" for="Expert">Expert</label>
                             </div>
-
-
                             <div class="col-12 col-md-12">
                                 <div class="form-group custom-switches-stacked mt-2">
                                     <label class="custom-switch pl-0">
-                                        <input type="checkbox" name="publish_question" id="publish_question" value="1"
-                                               class="custom-switch-input"/>
+                                        <input type="checkbox" name="publish_question" id="publish_question" value="1" class="custom-switch-input"/>
                                         <span class="custom-switch-indicator"></span>
-                                        <label class="custom-switch-description mb-0 cursor-pointer"
-                                               for="publish_question">Publish</label>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="publish_question"><span>Publish</span></label>
                                     </label>
                                 </div>
                             </div>
                         </div>
 
-
                         <div class="col-12 col-md-12">
                             <div class="form-group">
                                 <label class="input-label">Details</label>
-                                <textarea class="note-codable summernote" id="status_details" name="status_details"
-                                          aria-multiline="true"></textarea>
+                                <textarea class="note-codable summernote" id="status_details" name="status_details" aria-multiline="true"></textarea>
                             </div>
                         </div>
                     </div>
