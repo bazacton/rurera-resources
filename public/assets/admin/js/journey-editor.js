@@ -2,40 +2,86 @@ var stage_created = false;
 var template_layout = {
     layout1: {
         1: {
-            top: '63',
-            left: '40'
+            top: '78',
+            left: '0'
         },
         2: {
-            top: '90',
-            left: '30'
+            top: '78',
+            left: '49'
         },
         3: {
-            top: '40',
-            left: '60'
+            top: '59',
+            left: '79'
         },
         4: {
-            top: '30',
-            left: '60'
+            top: '60',
+            left: '23'
         },
         5: {
-            top: '60',
-            left: '30'
+            top: '39',
+            left: '3'
         },
         6: {
-            top: '70',
-            left: '60'
+            top: '35',
+            left: '50'
         },
         7: {
-            top: '70',
-            left: '40'
+            top: '20',
+            left: '78'
         },
         8: {
-            top: '40',
-            left: '30'
+            top: '13',
+            left: '5'
         },
         9: {
-            top: '00',
-            left: '60'
+            top: '0',
+            left: '38'
+        },
+        10: {
+            top: '0',
+            left: '78'
+        }
+    },
+    layout2: {
+        1: {
+            top: '81',
+            left: '3'
+        },
+        2: {
+            top: '81',
+            left: '44'
+        },
+        3: {
+            top: '81',
+            left: '77'
+        },
+        4: {
+            top: '55',
+            left: '77'
+        },
+        5: {
+            top: '55',
+            left: '44'
+        },
+        6: {
+            top: '55',
+            left: '6'
+        },
+        7: {
+            top: '28',
+            left: '6'
+        },
+        8: {
+            top: '28',
+            left: '40'
+        },
+        9: {
+            top: '28',
+            left: '75'
+        },
+        10: {
+            top: '0',
+            left: '78'
         }
     }
 };
@@ -535,13 +581,12 @@ function sorting_render(){
 }
 
 function levels_sorting_render(){
-    /*$('.curriculum-item-data.active .levels-objects-list li').each(function (index_id, thisObj) {
+    $('.curriculum-item-data.active .levels-objects-list li').each(function (index_id, thisObj) {
         index_id++;
         $(thisObj).attr('data-field_postition', index_id);
         var data_id = $(thisObj).attr('data-id');
-        $(".draggable_field_" + data_id).css('z-index', index_id);
         $(".draggable_field_" + data_id).attr('data-field_postition', index_id);
-    });*/
+    });
 
 
 
@@ -1509,6 +1554,7 @@ function generate_stage_area(){
 			var unique_id = fieldObj.attr('data-unique_id');
 			var item_title = fieldObj.attr('data-item_title');
             var field_postition = fieldObj.attr('data-field_postition');
+            var topic_part_item_id = fieldObj.attr('data-topic_part_item_id');
 
 
 
@@ -1548,6 +1594,8 @@ function generate_stage_area(){
 			posted_data[field_id]['item_title'] = item_title;
 			posted_data[field_id]['is_new'] = is_new;
             posted_data[field_id]['field_postition'] = field_postition;
+            posted_data[field_id]['topic_part_item_id'] = topic_part_item_id;
+
 
 		});
 	});

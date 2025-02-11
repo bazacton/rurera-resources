@@ -88,7 +88,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                 @php
                     if( isset( $itemObj->id ) && !empty( $itemObj->LearningJourneyObjects->where('status','active') )){
 						$layer_counter = 1;
-                        foreach( $itemObj->LearningJourneyObjects->where('status','active') as $learningJourneyItemObj){
+                        foreach( $itemObj->LearningJourneyObjects->whereNotIn('item_type', array('stage_start', 'stage_end'))->where('status','active')->sortBy('topic_order_no') as $learningJourneyItemObj){
 
                             echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2"><label contenteditable="true">'.$learningJourneyItemObj->item_title.'</label>
 
@@ -111,14 +111,21 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
             <ul class="editor-objects-list levels-objects-list {{$data_id}}">
                 @php
                     if( isset( $itemObj->id ) && !empty( $itemObj->LearningJourneyObjects->whereIn('item_type', array('topic', 'treasure', 'spacer'))->where('status','active') )){
-                        foreach( $itemObj->LearningJourneyObjects->whereIn('item_type', array('stage_start', 'stage_end', 'topic', 'treasure', 'spacer'))->where('status','active') as $learningJourneyItemObj){
+                        foreach( $itemObj->LearningJourneyObjects->whereIn('item_type', array('stage_start', 'stage_end', 'topic', 'treasure', 'spacer'))->where('status','active')->sortBy('topic_order_no') as $learningJourneyItemObj){
 
-                            echo '<li data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2" data-link_position="left-in">'.$learningJourneyItemObj->item_title.'
+                            $li_class = '';
+                            $li_class = ($learningJourneyItemObj->item_type == 'stage_start')? 'stage_start' : '';
+                            $li_class = ($learningJourneyItemObj->item_type == 'stage_end')? 'stage_end' : $li_class;
 
-                            <div class="actions-menu">
-                                <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
-                            </div></li>
-                            ';
+                            $li_html = '<li class="'.$li_class.'" data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2" data-link_position="left-in">'.$learningJourneyItemObj->item_title;
+
+                            if( $learningJourneyItemObj->item_type != 'stage_start' && $learningJourneyItemObj->item_type != 'stage_end' ){
+                                $li_html .= '<div class="actions-menu">
+                                    <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
+                                </div>';
+                            }
+                            $li_html .= '</li>';
+                            echo $li_html;
 
                         }
                     }
@@ -187,12 +194,21 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 						<input type="hidden" name="page_graph" class="trigger_field" value="0" data-field_id="page_graph" data-field_name="graph" data-field_type="page_style" data-id="">
 						<input type="checkbox" name="page_graph_radio" id="rtlSwitch" value="1" class="custom-switch-input">
 						<span class="custom-switch-indicator"></span>
-						<label class="custom-switch-description mb-0 cursor-pointer" for="rtlSwitch"><span>Enable Graph</span></label>
+						<label class="custom-switch-description mb-0 cursor-pointer" for="rtlSwitch">Enable Graph</label>
 					</label>
 				</div>
-				<input type="text" name="stage_set" class="hide form-control trigger_field" value="{{$stage_set}}" data-field_id="stage_set" data-field_name="stage_set" data-field_type="page_set" data-id="">
+				<input type="text" name="stage_set" class="hide form-control trigger_field"
+					   value="{{$stage_set}}" data-field_id="stage_set" data-field_name="stage_set"
+					   data-field_type="page_set" data-id="">
+
+
+
+
+
+
 			</div>
 		</div>
+
 
 		<div class="tab-pane mt-3 fade" id="layers_settings{{$data_id}}" role="settingtabpanel" aria-labelledby="layers_settings-tab{{$data_id}}">
 			<h6 class="mt-20">Layers Settings</h6>
@@ -271,7 +287,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<input type="hidden" data-field_attr_type="switch" name="redemption_questions" class="trigger_field" value="0" data-field_id="redemption_questions" data-field_name="redemption_questions" data-field_type="page_style" data-id="">
 					<input type="checkbox" name="redemption_questions_radio" id="redemption_questions" value="1" class="custom-switch-input">
 					<span class="custom-switch-indicator"></span>
-					<label class="custom-switch-description mb-0 cursor-pointer" for="redemption_questions"><span>Redemption questions</span></label>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="redemption_questions">Redemption questions</label>
 				</label>
 			</div>
 
@@ -280,7 +296,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<input type="hidden" data-field_attr_type="switch" data-field_attr_type="switch" name="activity_show_answers" class="trigger_field" value="0" data-field_id="activity_show_answers" data-field_name="activity_show_answers" data-field_type="page_style" data-id="">
 					<input type="checkbox" name="activity_show_answers_radio" id="activity_show_answers" value="1" class="custom-switch-input">
 					<span class="custom-switch-indicator"></span>
-					<label class="custom-switch-description mb-0 cursor-pointer" for="activity_show_answers"><span>Show answers (During Activity)</span></label>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="activity_show_answers">Show answers (During Activity)</label>
 				</label>
 			</div>
 
@@ -289,7 +305,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<input type="hidden" data-field_attr_type="switch" name="after_activity_show_answers" class="trigger_field" value="0" data-field_id="after_activity_show_answers" data-field_name="after_activity_show_answers" data-field_type="page_style" data-id="">
 					<input type="checkbox" name="after_activity_show_answers_radio" id="after_activity_show_answers" value="1" class="custom-switch-input">
 					<span class="custom-switch-indicator"></span>
-					<label class="custom-switch-description mb-0 cursor-pointer" for="after_activity_show_answers"><span>Show answers (After Activity)</span></label>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="after_activity_show_answers">Show answers (After Activity)</label>
 				</label>
 			</div>
 
@@ -298,7 +314,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<input type="hidden" data-field_attr_type="switch" name="shuffle_questions" class="trigger_field" value="0" data-field_id="shuffle_questions" data-field_name="shuffle_questions" data-field_type="page_style" data-id="">
 					<input type="checkbox" name="shuffle_questions_radio" id="shuffle_questions" value="1" class="custom-switch-input">
 					<span class="custom-switch-indicator"></span>
-					<label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_questions"><span>Shuffle Questions</span></label>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_questions">Shuffle Questions</label>
 				</label>
 			</div>
 
@@ -307,7 +323,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<input type="hidden" data-field_attr_type="switch" name="shuffle_answer_options" class="trigger_field" value="0" data-field_id="shuffle_answer_options" data-field_name="shuffle_answer_options" data-field_type="page_style" data-id="">
 					<input type="checkbox" name="shuffle_answer_options_radio" id="shuffle_answer_options" value="1" class="custom-switch-input">
 					<span class="custom-switch-indicator"></span>
-					<label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_answer_options"><span>Shuffle Answer Options</span></label>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="shuffle_answer_options">Shuffle Answer Options</label>
 				</label>
 			</div>
 
@@ -316,7 +332,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<input type="hidden" data-field_attr_type="switch" name="skip_questions" class="trigger_field" value="0" data-field_id="skip_questions" data-field_name="skip_questions" data-field_type="page_style" data-id="">
 					<input type="checkbox" name="skip_questions_radio" id="skip_questions" value="1" class="custom-switch-input">
 					<span class="custom-switch-indicator"></span>
-					<label class="custom-switch-description mb-0 cursor-pointer" for="skip_questions"><span>Skip Question (Attempt Later)</span></label>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="skip_questions">Skip Question (Attempt Later)</label>
 				</label>
 			</div>
 
@@ -325,21 +341,31 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 					<input type="hidden" data-field_attr_type="switch" name="play_music" class="trigger_field" value="0" data-field_id="play_music" data-field_name="play_music" data-field_type="page_style" data-id="">
 					<input type="checkbox" name="play_music_radio" id="play_music" value="1" class="custom-switch-input">
 					<span class="custom-switch-indicator"></span>
-					<label class="custom-switch-description mb-0 cursor-pointer" for="play_music"><span>Play Music</span></label>
+					<label class="custom-switch-description mb-0 cursor-pointer" for="play_music">Play Music</label>
 				</label>
 			</div>
+
 
 			<div class="option-field-item">
 				<label>Passing Scores (%)</label>
 				<div class="input-group">
-					<input type="number" name="passing_scores" class="form-control trigger_field" value="90" data-field_id="passing_scores" data-field_name="passing_scores" min="50" max="100" data-field_type="page_style" data-id="">
+					<input type="number" name="passing_scores" class="form-control trigger_field"
+						   value="90" data-field_id="passing_scores" data-field_name="passing_scores" min="50" max="100"
+						   data-field_type="page_style" data-id="">
 				</div>
 			</div>
+
+
         </div>
-	</div>
+</div>
 </div>
 
+
 <div class="option-fields-block hide">
+
+
+
+
 	@if( !empty( $stages_list ) )
 		@foreach( $stages_list as $stageObj)
 			@php
@@ -349,13 +375,18 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 				<div class="option-field-item">
 					<label>Size (px)</label>
 					<div class="input-group">
-						<input type="text" name="stage_width" class="form-control trigger_field" value="500" data-field_id="stage_width" data-field_name="width" data-field_type="style" data-id="">
-					</div>
+						<input type="text" name="stage_width" class="form-control trigger_field"
+								   value="500" data-field_id="stage_width" data-field_name="width"
+						   data-field_type="style" data-id="">
+
+						</div>
 				</div>
 				<div class="option-field-item">
 					<label>Fill Color</label>
 					<div class="input-group">
-						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput" value="#ffffff" data-field_id="fill_color" data-field_name="fill" data-field_type="svg_path_style" data-id="">
+						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput"
+								   value="#ffffff" data-field_id="fill_color" data-field_name="fill"
+						   data-field_type="svg_path_style" data-id="">
 							<div class="input-group-append">
 								<div class="input-group-text">
 									<i class="fas fa-fill-drip"></i>
@@ -377,13 +408,18 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 				<div class="option-field-item">
 					<label>Size (px)</label>
 					<div class="input-group">
-						<input type="text" name="path_width" class="form-control trigger_field" value="300" data-field_id="path_width" data-field_name="width" data-field_type="style" data-id="">
-					</div>
+						<input type="text" name="path_width" class="form-control trigger_field"
+								   value="300" data-field_id="path_width" data-field_name="width"
+						   data-field_type="style" data-id="">
+
+						</div>
 				</div>
 				<div class="option-field-item">
 					<label>Fill Color</label>
 					<div class="input-group">
-						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput" value="#ffffff" data-field_id="fill_color" data-field_name="fill" data-field_type="svg_path_style" data-id="">
+						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput"
+								   value="#ffffff" data-field_id="fill_color" data-field_name="fill"
+						   data-field_type="svg_path_style" data-id="">
 							<div class="input-group-append">
 								<div class="input-group-text">
 									<i class="fas fa-fill-drip"></i>
@@ -405,13 +441,18 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 				<div class="option-field-item">
 					<label>Size (px)</label>
 					<div class="input-group">
-						<input type="text" name="object_width" class="form-control trigger_field" value="180" data-field_id="object_width" data-field_name="width" data-field_type="style" data-id="">
-					</div>
+						<input type="text" name="object_width" class="form-control trigger_field"
+								   value="180" data-field_id="object_width" data-field_name="width"
+						   data-field_type="style" data-id="">
+
+						</div>
 				</div>
 				<div class="option-field-item">
 					<label>Fill Color</label>
 					<div class="input-group">
-						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput" value="#ffffff" data-field_id="fill_color" data-field_name="fill" data-field_type="svg_path_style" data-id="">
+						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput"
+								   value="#ffffff" data-field_id="fill_color" data-field_name="fill"
+						   data-field_type="svg_path_style" data-id="">
 							<div class="input-group-append">
 								<div class="input-group-text">
 									<i class="fas fa-fill-drip"></i>
@@ -433,13 +474,18 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 				<div class="option-field-item">
 					<label>Size (px)</label>
 					<div class="input-group">
-						<input type="text" name="topic_width" class="form-control trigger_field" value="180" data-field_id="topic_width" data-field_name="width" data-field_type="style" data-id="">
-					</div>
+						<input type="text" name="topic_width" class="form-control trigger_field"
+								   value="180" data-field_id="topic_width" data-field_name="width"
+						   data-field_type="style" data-id="">
+
+						</div>
 				</div>
 				<div class="option-field-item">
 					<label>Fill Color</label>
 					<div class="input-group">
-						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput" value="#ffffff" data-field_id="fill_color" data-field_name="fill" data-field_type="svg_path_style" data-id="">
+						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput"
+								   value="#ffffff" data-field_id="fill_color" data-field_name="fill"
+						   data-field_type="svg_path_style" data-id="">
 							<div class="input-group-append">
 								<div class="input-group-text">
 									<i class="fas fa-fill-drip"></i>
@@ -451,13 +497,19 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                 <div class="option-field-item">
                     <label>Topic Order No</label>
                     <div class="input-group">
-                        <input type="number" name="topic_order_no" class="form-control trigger_field" value="0" data-field_id="topic_order_no" data-field_name="topic_order_no" data-id="">
+                        <input type="number" name="topic_order_no" class="form-control trigger_field"
+                               value="0" data-field_id="topic_order_no" data-field_name="topic_order_no"
+                                data-id="">
+
                     </div>
                 </div>
 
+
                 <div class="option-field-item">
                     <label class="input-label">Chapter</label>
-                    <select data-field_id="chapter_id" class="trigger_field form-control ajax-chapter-dropdown" data-field_name="select_chapter" data-field_type="select_chapter" data-placeholder="Search Chapter" data-id="">
+                    <select data-field_id="chapter_id"
+                            class="trigger_field form-control ajax-chapter-dropdown" data-field_name="select_chapter" data-field_type="select_chapter"
+                            data-placeholder="Search Chapter" data-id="">
                         <option value="">Please select year, subject</option>
                     </select>
                     @error('chapter_id')
@@ -467,9 +519,12 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                     @enderror
                 </div>
 
+
                 <div class="option-field-item">
                     <label class="input-label">Sub Chapter</label>
-                    <select data-field_id="sub_chapter_id" class="trigger_field form-control ajax-subchapter-dropdown" data-field_name="select_subchapter" data-field_type="select_subchapter" data-placeholder="Search Sub Chapter" data-id="">
+                    <select data-field_id="sub_chapter_id"
+                            class="trigger_field form-control ajax-subchapter-dropdown" data-field_name="select_subchapter" data-field_type="select_subchapter"
+                            data-placeholder="Search Sub Chapter" data-id="">
                         <option value="">Please select year, subject, Topic</option>
                     </select>
                     @error('sub_chapter_id')
@@ -481,7 +536,10 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                 </div>
 				<div class="option-field-item">
 					<label class="input-label">Topic</label>
-					<select data-field_id="topic" data-search-option="topic" class="trigger_field form-control ajax-topicpart-item-dropdown search_topic1" data-field_name="select_topic" data-field_type="select_topic" data-placeholder="Search Topic" data-id="">
+					<select data-field_id="topic"
+							data-search-option="topic"
+							class="trigger_field form-control ajax-topicpart-item-dropdown search_topic1" data-field_name="select_topic" data-field_type="select_topic"
+							data-placeholder="Search Topic" data-id="">
 					</select>
 				</div>
 			</div>
@@ -498,13 +556,18 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                 <div class="option-field-item">
                     <label>Size (px)</label>
                     <div class="input-group">
-                        <input type="text" name="topic_width" class="form-control trigger_field" value="180" data-field_id="topic_width" data-field_name="width" data-field_type="style" data-id="">
+                        <input type="text" name="topic_width" class="form-control trigger_field"
+                               value="180" data-field_id="topic_width" data-field_name="width"
+                               data-field_type="style" data-id="">
+
                     </div>
                 </div>
                 <div class="option-field-item">
                     <label>Fill Color</label>
                     <div class="input-group">
-                        <input type="text" name="background_color" class="form-control trigger_field colorpickerinput" value="#ffffff" data-field_id="fill_color" data-field_name="fill" data-field_type="svg_path_style" data-id="">
+                        <input type="text" name="background_color" class="form-control trigger_field colorpickerinput"
+                               value="#ffffff" data-field_id="fill_color" data-field_name="fill"
+                               data-field_type="svg_path_style" data-id="">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <i class="fas fa-fill-drip"></i>
@@ -512,24 +575,38 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                         </div>
                     </div>
                 </div>
+
                 <div class="option-field-item">
                     <label>No of Coins</label>
                     <div class="input-group">
-                        <input type="number" name="no_of_coins" class="form-control trigger_field" value="0" data-field_id="no_of_coins" data-field_name="no_of_coins" data-id="">
+                        <input type="number" name="no_of_coins" class="form-control trigger_field"
+                               value="0" data-field_id="no_of_coins" data-field_name="no_of_coins"
+                               data-id="">
                     </div>
                 </div>
+
                 <div class="option-field-item">
                     <label>Topic Order No</label>
                     <div class="input-group">
-                        <select data-field_id="treasure_topic_order_no" class="trigger_field form-control treasure_topic_order_no" data-field_name="treasure_topic_order_no" data-field_type="treasure_topic_order_no" data-placeholder="Select Topic Order No" data-id="">
+                        <select data-field_id="treasure_topic_order_no"
+                                class="trigger_field form-control treasure_topic_order_no" data-field_name="treasure_topic_order_no" data-field_type="treasure_topic_order_no"
+                                data-placeholder="Select Topic Order No" data-id="">
                         </select>
                     </div>
                 </div>
             </div>
         @endforeach
     @endif
+
+
+
 </div>
+
+
+
 <div class="svgs-data rurera-hide">
+
+
 	@if( !empty( $stages_list ) )
 		@foreach( $stages_list as $stageObj)
 			@php
