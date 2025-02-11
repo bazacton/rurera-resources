@@ -105,7 +105,8 @@ Sub Pages Style
 .try-rurera-btn:hover:before {border-radius: 0; transform: translateY(0) scaleY(1);}
 .listing-card .read-btn:hover .btn-icon svg g {fill:#fff;}
 .listing-card .read-btn .btn-icon {display: inline-block; width: 22px; height: 18px; line-height: normal; margin-right: 12px; margin-top: 0;}
-.listing-card .read-btn .btn-icon svg {max-width: 100%;}
+.listing-card .read-btn .btn-icon svg,
+.listing-card .read-btn .btn-icon img {filter: invert(38%) sepia(46%) saturate(4811%) hue-rotate(224deg) brightness(105%) contrast(98%); max-width: 100%;}
 .listing-card .read-btn .btn-icon svg g {fill: var(--primary);}
 .listing-card .read-btn.continue,
 .book-btn.bg-primary, .try-rurera-btn {color: #fff; border-color: rgba(0,0,0,0.4); background-color: var(--primary);}
