@@ -276,14 +276,13 @@ $avatar_color_settings = json_encode($avatar_color_settings);
 <div class="modal fade" id="profile-image-modal" tabindex="-1" role="dialog" aria-labelledby="profile-image-modal">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-
             <div class="modal-body">
-                    <div id="svgAvatars"></div>
+                <div id="svgAvatars"></div>
             </div>
         </div>
     </div>
 </div>
-<div class="modal fade" id="avatarCropModalContainer" tabindex="-1" role="dialog" aria-labelledby="avatarCrop">
+<div class="modal fade" id="avatarCropModalContainer" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
