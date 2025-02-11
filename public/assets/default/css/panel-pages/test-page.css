@@ -29,7 +29,7 @@ Sub Pages Style
 .sats-listing-card.medium .img-holder {margin-bottom: 0;}
 .sats-listing-card.medium .text-holder h4 {margin-bottom: 0;}
 .sats-listing-card table {width: 100%;}
-.sats-listing-card table img {max-width: 50px; display: inline-block; margin-right: 15px;}
+.sats-listing-card table img {max-width: 50px; max-height: 50px; display: inline-block; margin-right: 15px;}
 .sats-listing-card table h4 {display: inline-block; vertical-align: middle; width: calc(100% - 70px); line-height: normal; position: relative;}
 .sats-listing-card table h4 img {vertical-align: middle; margin: 0; max-width: 60px; max-height: 60px; position: absolute; top: 50%; transform: translateY(-50%);}
 .sats-listing-card thead {background-color: var(--primary);}
