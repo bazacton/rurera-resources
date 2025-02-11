@@ -827,13 +827,9 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 																	</select>
 																</div>
 															</div>
-
-                                                            
                                                         </div>
                                                     </div>
                                                     </div>
-
-													
 													<div class="col-lg-12 col-md-12 col-12">
                                                         <div class="form-group">
                                                             <label class="input-label">Reference Type</label>
@@ -911,9 +907,6 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 															<span>5 tags maximum, user letters  and numbers only</span>
 														</div>
 													</div>
-													
-													
-													
 													<div class="col-lg-6 col-md-6 col-12">
 														<div class="form-group custom-switches-stacked">
 															<label class="custom-switch pl-0">
@@ -925,13 +918,10 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 																	'checked="checked"' : ''
 																	}} class="custom-switch-input"/>
 																	<span class="custom-switch-indicator"></span>
-																	<label class="custom-switch-description mb-0 cursor-pointer"
-																		   for="review_required">Teacher Review Required</label>
+																	<label class="custom-switch-description mb-0 cursor-pointer" for="review_required"><span>Teacher Review Required</span></label>
 															</label>
 														</div>
 													</div>
-													
-													
 													<div class="col-lg-6 col-md-6 col-12">
 														<div class="form-group custom-switches-stacked">
 															<label class="custom-switch pl-0">
@@ -943,12 +933,10 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 																	'checked="checked"' : ''
 																	}} class="custom-switch-input"/>
 																	<span class="custom-switch-indicator"></span>
-																	<label class="custom-switch-description mb-0 cursor-pointer"
-																		   for="developer_review_required">Developer Review Required</label>
+																	<label class="custom-switch-description mb-0 cursor-pointer" for="developer_review_required"><span>Developer Review Required</span></label>
 															</label>
 														</div>
 													</div>
-													
 													
                                                     <div class="col-lg-6 col-md-6 col-12">
                                                         <div class="form-group custom-switches-stacked">
@@ -961,8 +949,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                                     'checked="checked"' : ''
                                                                     }} class="custom-switch-input"/>
                                                                     <span class="custom-switch-indicator"></span>
-                                                                    <label class="custom-switch-description mb-0 cursor-pointer"
-                                                                           for="hide_question">Hide Question</label>
+                                                                    <label class="custom-switch-description mb-0 cursor-pointer" for="hide_question"><span>Hide Question</span></label>
                                                             </label>
                                                         </div>
                                                     </div>
@@ -978,8 +965,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                                     'checked="checked"' : ''
                                                                     }} class="custom-switch-input"/>
                                                                     <span class="custom-switch-indicator"></span>
-                                                                    <label class="custom-switch-description mb-0 cursor-pointer"
-                                                                           for="is_example_question">Example Question</label>
+                                                                    <label class="custom-switch-description mb-0 cursor-pointer" for="is_example_question"><span>Example Question</span></label>
                                                             </label>
                                                         </div>
                                                     </div>
@@ -995,8 +981,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                                     'checked="checked"' : ''
                                                                     }} class="custom-switch-input"/>
                                                                     <span class="custom-switch-indicator"></span>
-                                                                    <label class="custom-switch-description mb-0 cursor-pointer"
-                                                                           for="is_shortlisted">Shortlist Question</label>
+                                                                    <label class="custom-switch-description mb-0 cursor-pointer" for="is_shortlisted"><span>Shortlist Question</span></label>
                                                             </label>
                                                         </div>
                                                     </div>
@@ -1014,8 +999,6 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 															</select>
                                                         </div>
                                                     </div>
-													
-													
 													
 													<div class="col-lg-12 col-md-12 col-12">
 													<div class="form-group">
