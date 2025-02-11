@@ -132,7 +132,7 @@
                                                                 $total_completion = 0;
                                                                 @endphp
                                                                 <li>
-                                                                <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$sub_chapter['id']}}" aria-expanded="true" aria-controls="collapseOne">{{ $sub_chapter['title'] }}</a>
+                                                                <a href="#" class="{{ subscriptionCheckLink('courses') }} collapsed" data-toggle="collapse" data-target="#collapse{{$sub_chapter['id']}}" aria-expanded="true">{{ $sub_chapter['title'] }}</a>
                                                                 
                                                                 {{ user_assign_topic_template($sub_chapter['id'], 'practice', $childs, $parent_assigned_list) }}
                                                                 
