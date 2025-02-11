@@ -58,7 +58,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="type-list-data single-player-data">
+                    <div class="type-list-data single-player-data" itemscope itemtype="https://schema.org/Article">
                         <div class="col-12 col-md-12 col-lg-12">
                             <a itemprop="url" href="/timestables-practice/freedom-mode">
                                 <div class="grid-card timestables-mode-data" itemscope data-mode_type="freedom_mode" itemtype="https://schema.org/NewsArticle">
@@ -74,7 +74,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-md-12 col-lg-12">
+                        <div class="col-12 col-md-12 col-lg-12" itemscope itemtype="https://schema.org/Article">
                             <a itemprop="url" href="/timestables-practice/powerup-mode">
                                 <div class="grid-card timestables-mode-data" itemscope itemtype="https://schema.org/NewsArticle">
                                     <div class="text-holder">
@@ -89,7 +89,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-md-12 col-lg-12">
+                        <div class="col-12 col-md-12 col-lg-12" itemscope itemtype="https://schema.org/Article">
                             <a itemprop="url" href="/timestables-practice/trophy-mode">
                                 <div class="grid-card timestables-mode-data" itemscope itemtype="https://schema.org/NewsArticle">
                                     <div class="text-holder">
@@ -105,7 +105,7 @@
                             </a>
                         </div>
 
-                        <div class="col-12 col-md-12 col-lg-12">
+                        <div class="col-12 col-md-12 col-lg-12" itemscope itemtype="https://schema.org/Article">
                             <a itemprop="url" href="/timestables-practice/treasure-mission">
                                 <div class="grid-card timestables-mode-data" itemscope itemtype="https://schema.org/NewsArticle">
                                     <div class="text-holder">
@@ -128,7 +128,7 @@
                             </a>
                         </div>
 
-                        <div class="col-12 col-md-12 col-lg-12">
+                        <div class="col-12 col-md-12 col-lg-12" itemscope itemtype="https://schema.org/Article">
                             <a itemprop="url" href="/timestables-practice/showdown-mode">
                                 <div class="grid-card timestables-mode-data" itemscope itemtype="https://schema.org/NewsArticle">
                                     <div class="text-holder">
@@ -143,7 +143,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-md-12 col-lg-12">
+                        <div class="col-12 col-md-12 col-lg-12" itemscope itemtype="https://schema.org/Article">
                             <a itemprop="url" href="/timestables-practice/heat-map">
                                 <div class="grid-card timestables-mode-data" itemscope itemtype="https://schema.org/NewsArticle">
                                     <div class="text-holder">
@@ -158,7 +158,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 col-md-12 col-lg-12">
+                        <div class="col-12 col-md-12 col-lg-12" itemscope itemtype="https://schema.org/Article">
                             <a itemprop="url" href="/panel/analytics">
                                 <div class="grid-card timestables-mode-data" itemscope itemtype="https://schema.org/NewsArticle">
                                     <div class="text-holder">
