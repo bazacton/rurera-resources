@@ -83,7 +83,7 @@
                                         <h1>{{ $course->title }}</h1>
                                     </div>
                                     @if(isset( $course->learn_icon ) && $course->learn_icon != '')
-                                        <div class="course-icon"><img src="{{$course->learn_icon}}"></div>
+                                        <div class="course-icon"><img src="{{$course->learn_icon}}" alt="course-icon" width="150" height="150"></div>
                                     @endif
                                     <div class="stats-list">
                                         <ul>
