@@ -187,43 +187,43 @@
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/Swashbuckle-The-Great-Pirate-Games-Content-Card.png"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/Swashbuckle-The-Great-Pirate-Games-Content-Card.png" width="480" height="270" alt="Swashbuckle-The-Great-Pirate-Games-Content-Card"></span>
                 <h5><a href="#">The Great Pirate Games</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/a_year_on_your_farm_content_card.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/a_year_on_your_farm_content_card.jpg" width="480" height="270" alt="a_year_on_your_farm_content_card"></span>
                 <h5><a href="#">Look after the animals down on the farm</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/bitz-and-bob-game-cc.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/bitz-and-bob-game-cc.jpg" width="480" height="270" alt="bitz-and-bob-game-cc"></span>
                 <h5><a href="#">Bitz & Bob Let’s Get Bitzy</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/contentindexbiggleton.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/contentindexbiggleton.jpg" width="480" height="270" alt="contentindexbiggleton"></span>
                 <h5><a href="#">Biggleton Helping Hands</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/jamillah-and-aladdin-comic-sky-1024.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/jamillah-and-aladdin-comic-sky-1024.jpg" width="480" height="270" alt="jamillah-and-aladdin-comic-sky-1024"></span>
                 <h5><a href="#">Cave of Wonders Comic</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/topsy_and_tim_at_the_farm_1024.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/topsy_and_tim_at_the_farm_1024.jpg" width="480" height="270" alt="topsy_and_tim_at_the_farm_1024"></span>
                 <h5><a href="#">Topsy and Tim at the Farm</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/andys-animal-teams-index.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/andys-animal-teams-index.jpg" width="480" height="270" alt="andys-animal-teams-index"></span>
                 <h5><a href="#">Andy's Animal Teams</a></h5>
             </div>
         </div>
