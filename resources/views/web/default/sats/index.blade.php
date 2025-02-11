@@ -80,8 +80,6 @@
                         </table>
                     </div>
                 </div>
-
-
                 <div class="col-12">
                     <div class="mt-60">
                         {{ $sats->appends(request()->input())->links('vendor.pagination.panel') }}
