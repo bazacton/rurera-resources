@@ -19,12 +19,9 @@
                 <div class="col-12">
                     <div class="section-title text-left mb-30">
                         <h2 class="mt-0 mb-10 font-22">Spelling word lists</h2>
-                        <p class="font-16"> Work through a variety of practice questions to improve your skills and become familiar with
-                            the types of questions you'll encounter on the SATs. </p>
+                        <p class="font-16"> Work through a variety of practice questions to improve your skills and become familiar with the types of questions you'll encounter on the SATs. </p>
                     </div>
                 </div>
-
-
                 <div class="col-12">
                     <!-- Listing Search Start -->
                     <div class="listing-search lms-jobs-form mb-20">
@@ -40,15 +37,11 @@
                     </div>
                     <!-- Listing Search End -->
                 </div>
-
                 @if( !empty( $data))
-
                 <section class="lms-data-table mt-0 mb-30 spells elevenplus-block w-100">
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
-
-
                                 @php $total_questions_all = $total_attempts_all = $total_questions_attempt_all = $correct_questions_all =
                                 $incorrect_questions_all = $pending_questions_all = $not_used_words_all = 0;
                                 @endphp
@@ -103,12 +96,8 @@
                                             <a href="javascript:;" class="spell-popup-btn" data-heading="{{$dataObj->getTitleAttribute()}}" data-play_link="/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/" data-spell_type="word-hunts" data-spell_id="{{$dataObj->id}}">
                                                 Practice Words
                                             </a>
-                                            
-                                            
                                             <a href="javascript:;" class="spell-popup-btn1 rurera-tooltip dropup">
-                                            
-                                            <span class="dropdown-toggle h-100 w-100 d-flex align-items-center justify-content-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Take a test</span>
-                                            
+                                            <span class="dropdown-toggle h-100 w-100 d-flex align-items-center justify-content-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Take a test</span>                                            
                                             <div class="lms-tooltip dropdown-menu">
                                                 <div class="tooltip-box">	
                                                     <button data-heading="Take a test" class="tooltip-btn practice font-16 d-block mb-15 text-center spell-test-btn"  data-play_link="/spelling/{{isset( $dataObj->quizYear->slug )? $dataObj->quizYear->slug : ''}}/{{$dataObj->quiz_slug}}/test" data-spell_type="test">Take Test</button>
@@ -121,7 +110,6 @@
                                                 </div>
                                                 </div>
                                             </a>
-                                            
                                             </div>
                                             @if($overall_percentage > 0 && $overall_percentage != 100)
                                             <div class="levels-progress horizontal">
@@ -138,19 +126,11 @@
                                 </div>
                                 <!-- Spell Levels Listing End -->
                                 @endforeach
-
-
-
-
-
-
-
                             </div>
                         </div>
                     </div>
                 </section>
                 @endif
-
             </div>
         </div>
     </section>
@@ -160,7 +140,6 @@
         </div>
     </a>
 </section>
-
 
 <div class="modal fade spell_words_popup lms-choose-membership" id="spell_words_popup" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 <div class="modal-dialog" role="document">
@@ -192,30 +171,24 @@
 		<div class="spell-words-filters" data-spell_id="0" data-spell_type="">
 		<div class="rurera-error mb-30 rurera-hide">Select atleast 15 words to continue!</div>
 		<div class="row">
-		
-		
-		<div class="col-9 col-lg-9 col-md-12">
-			<h3>Choosen Words (<span class="choosen-words">Default All Selected</span>)</h3>
-		</div>
-		<div class="col-3 col-lg-3 col-md-12">
-			Sort By
-			<div class="form-group">
-				<select name="sort_by" class="sort_by_filter">
-					<option value="alphabetically">Alphabetically</option>
-					<option value="attempts">No of Attempts</option>
-				</select>
-			</div>
-		</div>
-		
-		
+            <div class="col-9 col-lg-9 col-md-12">
+                <h3>Choosen Words (<span class="choosen-words">Default All Selected</span>)</h3>
+            </div>
+            <div class="col-3 col-lg-3 col-md-12">
+                Sort By
+                <div class="form-group">
+                    <select name="sort_by" class="sort_by_filter">
+                        <option value="alphabetically">Alphabetically</option>
+                        <option value="attempts">No of Attempts</option>
+                    </select>
+                </div>
+            </div>
 		</div>
 		<form class="spell-quiz-form" action="#" method="POST">
 		<input type="hidden" name="is_new" value="yes">
 		{{ csrf_field() }}
 		
-		<div class="spell-words-data" id="accordion">
-		</div>
-		
+		<div class="spell-words-data" id="accordion"></div>
 		</form>
       </div>
     </div>
