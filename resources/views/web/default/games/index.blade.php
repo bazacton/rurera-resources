@@ -42,44 +42,44 @@
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
                 <a href="/games/word-scramble">
-                <span class="icon-box"><img src="/assets/default/img/games/word-scramble.jpg" style="height: 190px;width: 100%;" alt="word-scramble"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/word-scramble.jpg" style="height: 190px;width: 100%;" width="612" height="402" alt="word-scramble"></span>
                 <h5>Word Scramble</h5>
                 </a>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/my-swashbuckle-adventure.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/my-swashbuckle-adventure.jpg" width="480" height="270" alt="my-swashbuckle-adventure"></span>
                 <h5><a href="#">My Swashbuckle Adventure</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/dm-dash-game-cc-2017.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/dm-dash-game-cc-2017.jpg" width="480" height="270" alt="dm-dash-game-cc-2017"></span>
                 <h5><a href="#">Danger Dash</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/mpam-game-cc-2017.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/mpam-game-cc-2017.jpg" width="480" height="270" alt="mpam-game-cc-2017"></span>
                 <h5><a href="#">My Pet and Friends</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/supertato-supermarket-showdown-game-cc.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/supertato-supermarket-showdown-game-cc.jpg" width="480" height="270" alt="supertato-supermarket-showdown-game-cc"></span>
                 <h5><a href="#">Supermarket Showdown</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/p05wjp0r.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/p05wjp0r.jpg" width="480" height="270" alt="p05wjp0r"></span>
                 <h5><a href="#">My World Kitchen</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/Peter_Rabbit_Update_content_card.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/Peter_Rabbit_Update_content_card.jpg" width="480" height="270" alt="Peter_Rabbit_Update_content_card"></span>
                 <h5><a href="#">Peter Rabbit's Hop To It</a></h5>
             </div>
         </div>
