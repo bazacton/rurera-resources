@@ -85,103 +85,103 @@
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/octonauts-ocean-adventures-cc.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/octonauts-ocean-adventures-cc.jpg" width="480" height="270" alt="octonauts-ocean-adventures-cc"></span>
                 <h5><a href="#">Octonauts Ocean Adventures</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/waffle-and-friends-game-cbeebies-cc.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/waffle-and-friends-game-cbeebies-cc.jpg" width="480" height="270" alt="waffle-and-friends-game-cbeebies-cc"></span>
                 <h5><a href="#">It's time to play with Waffle and Friends</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/ShaunTheSheep-BarnyardBoogie-Index.png"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/ShaunTheSheep-BarnyardBoogie-Index.png" width="480" height="270" alt="ShaunTheSheep-BarnyardBoogie-Index"></span>
                 <h5><a href="#">Barnyard Boogie</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/furchester-hotel-game-cc-2017-v2.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/furchester-hotel-game-cc-2017-v2.jpg" width="480" height="270" alt="furchester-hotel-game-cc-2017-v2"></span>
                 <h5><a href="#">The Furchester Hotel: A Helping Hand</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/shaun-race-the-flock-sp-index.jpeg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/shaun-race-the-flock-sp-index.jpeg" width="480" height="270" alt="shaun-race-the-flock-sp-index"></span>
                 <h5><a href="#">Race the Flock with Shaun the Sheep</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" width="480" height="270" alt="go-jetters-hero-academy-cc-v2"></span>
                 <h5><a href="#">Go Jetters Hero Academy</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/Tish-Tash-game-card-cc.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/Tish-Tash-game-card-cc.jpg" width="480" height="270" alt="Tish-Tash-game-card-cc"></span>
                 <h5><a href="#">Bobby's Rescue Mission</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/go-jetters-game-cc-2017.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/go-jetters-game-cc-2017.jpg" width="480" height="270" alt="go-jetters-game-cc-2017"></span>
                 <h5><a href="#">Help the Go Jetters beat Glitch</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/Graces-Amazing-Machines-game-index2.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/Graces-Amazing-Machines-game-index2.jpg" width="480" height="270" alt="Graces-Amazing-Machines-game-index2"></span>
                 <h5><a href="#">Speedy's Epic Journey</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/go-jetters-cadet-rescue-cc.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/go-jetters-cadet-rescue-cc.jpg" width="480" height="270" alt="go-jetters-cadet-rescue-cc"></span>
                 <h5><a href="#">Go on a mission with the Go Jetters</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/go-jetters-cadet-rescue-cc.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/go-jetters-cadet-rescue-cc.jpg" width="480" height="270" alt="go-jetters-cadet-rescue-cc"></span>
                 <h5><a href="#">Pablo's Art World Adventure</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/Bitzandbobindexcard.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/Bitzandbobindexcard.jpg" width="480" height="270" alt="Bitzandbobindexcard"></span>
                 <h5><a href="#">Have an ice cream party with Bitz & Bob</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/swashbuckle-midnight-mystery-game-gem-cc.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/swashbuckle-midnight-mystery-game-gem-cc.jpg" width="480" height="270" alt="swashbuckle-midnight-mystery-game-gem-cc"></span>
                 <h5><a href="#">The Midnight Mystery</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/SarahDuck_bubblepop_game_Banner_1024_576.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/SarahDuck_bubblepop_game_Banner_1024_576.jpg" width="480" height="270" alt="SarahDuck_bubblepop_game_Banner_1024_576"></span>
                 <h5><a href="#">Sarah and Duck game</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/go-jetters-global-grooves-index.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/go-jetters-global-grooves-index.jpg" width="480" height="270" alt="go-jetters-global-grooves-index"></span>
                 <h5><a href="#">Go Jetters Global Grooves</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/andys-safari-sounds-index02.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/andys-safari-sounds-index02.jpg" width="480" height="270" alt="andys-safari-sounds-index02"></span>
                 <h5><a href="#">Andy's Safari Sounds</a></h5>
             </div>
         </div>
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
             <div class="game-card">
-                <span class="icon-box"><img src="/assets/default/img/games/peter-rabbit-running-wild-game-cc.jpg"></span>
+                <span class="icon-box"><img src="/assets/default/img/games/peter-rabbit-running-wild-game-cc.jpg" width="480" height="270" alt="peter-rabbit-running-wild-game-cc"></span>
                 <h5><a href="#">Peter Rabbit Running Wild</a></h5>
             </div>
         </div>
