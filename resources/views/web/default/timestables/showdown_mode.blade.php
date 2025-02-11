@@ -4,7 +4,7 @@
 <div class="timestables-mode-block">
 
 <div class="timestables-mode-content">
-<div class="section-title mb-20">
+<div class="section-title mb-20" itemscope itemtype="https://schema.org/Article">
     <h2 itemprop="title" class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a> Showdown Mode</h2>
 </div>
 <section class="p-25 panel-border border-widht-2 border-bottom-4 border-radius-10 mb-30" style="background-color: #fff;">
