@@ -4,7 +4,7 @@
 <div class="timestables-mode-block">
 
 <div class="timestables-mode-content">
-<div class="section-title mb-20">
+<div class="section-title mb-20" itemscope itemtype="https://schema.org/Article">
     <h2 itemprop="title" class="font-22 mb-0"><a href="/timestables-practice" class="timestables-back-btn"></a> Treasure Mission</h2>
 </div>
 <section class="p-0 mt-30 treasure-mission-layout">
