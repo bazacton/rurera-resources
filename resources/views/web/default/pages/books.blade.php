@@ -73,7 +73,7 @@
                                                 <div class="btn-holder">
                                                     <a href="/books/{{$bookData->book_slug}}" class="read-btn {{ subscriptionCheckLink('bookshelf') }}" itemprop="url">
                                                         <span class="btn-icon">
-                                                            <img src="/assets/default/svgs/book-open.svg" alt="book open">
+                                                            <img src="/assets/default/svgs/book-open.svg" alt="book open" width="182" height="150">
                                                         </span>
                                                         Read the eBook
                                                     </a>
