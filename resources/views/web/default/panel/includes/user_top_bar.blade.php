@@ -89,13 +89,13 @@
                     <a href="#!" class="navbar-user d-flex align-items-center dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false">
                         <img src="{{ $authUser->getAvatar() }}" class="rounded-circle"
-                             alt="{{ $authUser->get_full_name() }}" width="100%" height="auto" itemprop="image"
+                             alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image"
                              alt="rounded circle" loading="eager" title="rounded circle">
                     </a>
 
                     <div class="dropdown-menu user-profile-dropdown" aria-labelledby="dropdownMenuButton">
                         <div class="dropdown-item user-nav-detail">
-                            <img src="{{ $authUser->getAvatar() }}" class="rounded-circle" alt="{{ $authUser->get_full_name() }}" width="100%" height="auto" itemprop="image"
+                            <img src="{{ $authUser->getAvatar() }}" class="rounded-circle" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image"
                                  alt="rounded circle" loading="eager" title="rounded circle">
                             <span class="font-16 text-dark-blue user-name">{{ $authUser->get_full_name() }}</span>
                             <a href="/panel/setting" class="font-16 text-dark-blue user-manage-btn">Manage Account</a>
@@ -110,7 +110,7 @@
                             @foreach( $profile_navs as $profile_nav)
 
                             <a class="dropdown-item " href="/panel/switch_user/{{$profile_nav['id']}}">
-                                <img src="{{ $profile_nav->getAvatar() }}" class="rounded-circle" alt="{{ $profile_nav['full_name'] }}" width="100%" height="auto" itemprop="image"
+                                <img src="{{ $profile_nav->getAvatar() }}" class="rounded-circle" alt="{{ $profile_nav['full_name'] }}" width="400" height="400" itemprop="image"
                                      alt="rounded circle" loading="eager" title="rounded circle">
                                 @php $full_name = (isset( $navData['is_parent'] ) && $navData['is_parent'] == true)? 'Parent Dashboard' : $profile_nav['full_name']; @endphp
                                 <span class="font-16 text-dark-blue user-list-name">{{ $full_name }}</span>
