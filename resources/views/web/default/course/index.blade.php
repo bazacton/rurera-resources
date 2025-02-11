@@ -245,102 +245,93 @@
                             </ul>
                         </div>
                     </div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 chapter-views chapters-detail-view rurera-hide">          
-			<div class="current-topics-detail bg-white mb-30 mt-15">
-			<div class="topics-table-group">
-		
-			@foreach($course->chapters as $chapter)
-				@if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
-				
-					<div class="topics-table">
-						<table class="w-100">
-							<thead>
-								<tr>
-									<th class="text-white text-left p-15">{{ $chapter->title }}</th>
-									<th class="text-white text-left p-15">Mastery Level</th>
-									<th class="text-white text-left p-15">Questions Count</th>
-									<th class="text-white text-left p-15">Rersources</th>
-								</tr>
-							</thead>
-							
-							<tbody>
-								@if(!empty($sub_chapters[$chapter->id]) and count($sub_chapters[$chapter->id]))
-									@foreach($sub_chapters[$chapter->id] as $sub_chapter)
-                                        @if(!empty($sub_chapter))
-                                            @php $quizUserData = Quiz::getQuizPercentage($sub_chapter['id'], true);
-                                            $completion_count = isset( $quizUserData['completion_count'] )? $quizUserData['completion_count'] : 0;
-                                            $topic_percentage = isset( $quizUserData['topic_percentage'] )? $quizUserData['topic_percentage'] : 0;
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 chapter-views chapters-detail-view rurera-hide">          
+                        <div class="current-topics-detail bg-white mb-30 mt-15">
+                        <div class="topics-table-group">
+                    
+                        @foreach($course->chapters as $chapter)
+                            @if((!empty($chapter->chapterItems) and count($chapter->chapterItems)) or (!empty($chapter->quizzes) and count($chapter->quizzes)))
+                            
+                                <div class="topics-table">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-white text-left p-15">{{ $chapter->title }}</th>
+                                                <th class="text-white text-left p-15">Mastery Level</th>
+                                                <th class="text-white text-left p-15">Questions Count</th>
+                                                <th class="text-white text-left p-15">Rersources</th>
+                                            </tr>
+                                        </thead>
+                                        
+                                        <tbody>
+                                            @if(!empty($sub_chapters[$chapter->id]) and count($sub_chapters[$chapter->id]))
+                                                @foreach($sub_chapters[$chapter->id] as $sub_chapter)
+                                                    @if(!empty($sub_chapter))
+                                                        @php $quizUserData = Quiz::getQuizPercentage($sub_chapter['id'], true);
+                                                        $completion_count = isset( $quizUserData['completion_count'] )? $quizUserData['completion_count'] : 0;
+                                                        $topic_percentage = isset( $quizUserData['topic_percentage'] )? $quizUserData['topic_percentage'] : 0;
 
-                                            $topic_percentage_flag = ( $topic_percentage >= 95 && $topic_percentage < 100)? '<img src="/assets/default/svgs/completion-flag.svg">' : '';
-                                            $topic_percentage_text = ($topic_percentage > 0 && $topic_percentage < 100)? '('.$topic_percentage.')' : '';
+                                                        $topic_percentage_flag = ( $topic_percentage >= 95 && $topic_percentage < 100)? '<img src="/assets/default/svgs/completion-flag.svg">' : '';
+                                                        $topic_percentage_text = ($topic_percentage > 0 && $topic_percentage < 100)? '('.$topic_percentage.')' : '';
 
-                                            $completion_counter = 1;
-                                            while($completion_counter <= $completion_count){
-                                                $topic_percentage_text .= '<img src="/assets/default/svgs/completion-star.svg">';
-                                                $completion_counter++;
-                                            }
+                                                        $completion_counter = 1;
+                                                        while($completion_counter <= $completion_count){
+                                                            $topic_percentage_text .= '<img src="/assets/default/svgs/completion-star.svg">';
+                                                            $completion_counter++;
+                                                        }
 
-                                            $topic_percentage_text .= $topic_percentage_flag;
-                                            @endphp
-											
-											<tr>
-												<td data-label="{{ $chapter->title }}" class="px-15 py-20">
-													<div class="checkbox-field mb-0">
-														<label class="m-0 font-weight-bold">{{ $sub_chapter['title'] }} {!! $topic_percentage_text !!}</label>
-													</div>
-												</td>
-												<td data-label="Mastery Level" class="px-15 py-20">
-													<span>
-													@if( $topic_percentage > 0)
-														<div class="rurera-progress-bar">
-															<span class="progress-inner" style="width: {{$topic_percentage}}%;"></span>
-														</div>
-													@else
-														-
-													@endif
-													</span>
-												</td>
-												<td data-label="Last Seen" class="px-15 py-20">
-													<span>{{$sub_chapter['total_questions']}}</span>
-												</td>
-												<td data-label="Rersources" class="px-15 py-20">
-													<a href="#" class="video-btn mr-10">
-														<span class="icon-box">
-															<img src="/assets/default/svgs/play-video.svg" alt="" title="Video">
-														</span>
-													</a>
-													<a href="#" class="file-btn">
-														<span class="icon-box">
-															<img src="/assets/default/svgs/filesheet.svg" alt="" title="Helpsheet">
-														</span>
-													</a>
-												</td>
-											</tr>
-											
-										@endif
-									@endforeach
-									
-									
-									
-								@endif
-								
-							</tbody>
-						</table>
-					</div>
-				@endif
-			@endforeach
-        </div>
-    </div>
-</div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                                                        $topic_percentage_text .= $topic_percentage_flag;
+                                                        @endphp
+                                                        
+                                                        <tr>
+                                                            <td data-label="{{ $chapter->title }}" class="px-15 py-20">
+                                                                <div class="checkbox-field mb-0">
+                                                                    <label class="m-0 font-weight-bold">{{ $sub_chapter['title'] }} {!! $topic_percentage_text !!}</label>
+                                                                </div>
+                                                            </td>
+                                                            <td data-label="Mastery Level" class="px-15 py-20">
+                                                                <span>
+                                                                @if( $topic_percentage > 0)
+                                                                    <div class="rurera-progress-bar">
+                                                                        <span class="progress-inner" style="width: {{$topic_percentage}}%;"></span>
+                                                                    </div>
+                                                                @else
+                                                                    -
+                                                                @endif
+                                                                </span>
+                                                            </td>
+                                                            <td data-label="Last Seen" class="px-15 py-20">
+                                                                <span>{{$sub_chapter['total_questions']}}</span>
+                                                            </td>
+                                                            <td data-label="Rersources" class="px-15 py-20">
+                                                                <a href="#" class="video-btn mr-10">
+                                                                    <span class="icon-box">
+                                                                        <img src="/assets/default/svgs/play-video.svg" alt="" title="Video">
+                                                                    </span>
+                                                                </a>
+                                                                <a href="#" class="file-btn">
+                                                                    <span class="icon-box">
+                                                                        <img src="/assets/default/svgs/filesheet.svg" alt="" title="Helpsheet">
+                                                                    </span>
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                    @endif
+                                                @endforeach
+                                                
+                                                
+                                                
+                                            @endif
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            @endif
+                        @endforeach
+                    </div>
+                </div>
+            </div>
                 </div>
             </div>
         </div>
@@ -350,35 +341,6 @@
 </div>
 </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div id="webinarReportModal" class="d-none">
         <h3 class="section-title after-line font-20 text-dark-blue">{{ trans('product.report_the_course') }}</h3>
 
