@@ -481,8 +481,7 @@ $rand_id = rand(999,99999);
 																		'checked="checked"' : ''
 																		}} class="custom-switch-input"/>
 																		<span class="custom-switch-indicator"></span>
-																		<label class="custom-switch-description mb-0 cursor-pointer"
-																			for="review_required">Teacher Review Required</label>
+																		<label class="custom-switch-description mb-0 cursor-pointer" for="review_required"><span>Teacher Review Required</span></label>
 																</label>
 															</div>
 														</div>
@@ -498,8 +497,7 @@ $rand_id = rand(999,99999);
 																		'checked="checked"' : ''
 																		}} class="custom-switch-input"/>
 																		<span class="custom-switch-indicator"></span>
-																		<label class="custom-switch-description mb-0 cursor-pointer"
-																			for="developer_review_required">Developer Review Required</label>
+																		<label class="custom-switch-description mb-0 cursor-pointer" for="developer_review_required"><span>Developer Review Required</span></label>
 																</label>
 															</div>
 														</div>
@@ -515,8 +513,7 @@ $rand_id = rand(999,99999);
 																		'checked="checked"' : ''
 																		}} class="custom-switch-input"/>
 																		<span class="custom-switch-indicator"></span>
-																		<label class="custom-switch-description mb-0 cursor-pointer"
-																			for="hide_question">Hide Question</label>
+																		<label class="custom-switch-description mb-0 cursor-pointer" for="hide_question"><span>Hide Question</span></label>
 																</label>
 															</div>
 														</div>
@@ -548,17 +545,12 @@ $rand_id = rand(999,99999);
 												</div>
 												</div>
 												
-												
-												
 												<div class="lms-element-properties">
-										
 													<div class="row">
 														<div class="topic-parts-block" style="display:contents;">
 																
 														</div>
 													</div>
-
-												
 													<div class="rureraform-admin-popup" id="rureraform-element-properties">
 														<div class="rureraform-admin-popup-inner">
 															<div class="rureraform-admin-popup-title">
@@ -578,19 +570,14 @@ $rand_id = rand(999,99999);
 																<a class="rureraform-admin-button generate-question-code rurera-hide"
 																   href="#"><label>Apply Changes</label></a>
 															</div>
-															<div class="rureraform-admin-popup-loading"><i
-																		class="fas fa-spinner fa-spin"></i></div>
+															<div class="rureraform-admin-popup-loading"><i class="fas fa-spinner fa-spin"></i></div>
 														</div>
 													</div>
-
 												</div>
 												
-												
 												</div>
-												
 												
 												<div class="tab-pane fade py-0 similarity-tab-data" id="Similarity" role="tabpanel" aria-labelledby="Similarity-tab">
-												
 														<h3>Topic Parts</h3>
 														<div class="topic-parts-block">
 															
@@ -682,7 +669,7 @@ $rand_id = rand(999,99999);
                                                                             <label class="custom-switch pl-0">
                                                                                 <input type="checkbox" name="image-question" id="image-question" value="1" class="custom-switch-input">
                                                                                 <span class="custom-switch-indicator"></span>
-                                                                                <label class="custom-switch-description mb-0 cursor-pointer" for="image-question">Image Question</label>
+                                                                                <label class="custom-switch-description mb-0 cursor-pointer" for="image-question"><span>Image Question</span></label>
                                                                             </label>
                                                                         </div>
 
@@ -690,7 +677,7 @@ $rand_id = rand(999,99999);
                                                                             <label class="custom-switch pl-0">
                                                                                 <input type="checkbox" name="word-problem" id="word-problem" value="1" class="custom-switch-input">
                                                                                 <span class="custom-switch-indicator"></span>
-                                                                                <label class="custom-switch-description mb-0 cursor-pointer" for="word-problem">Word Problem</label>
+                                                                                <label class="custom-switch-description mb-0 cursor-pointer" for="word-problem"><span>Word Problem</span></label>
                                                                             </label>
                                                                         </div>
 
@@ -698,7 +685,7 @@ $rand_id = rand(999,99999);
                                                                             <label class="custom-switch pl-0">
                                                                                 <input type="checkbox" name="new-glossary" id="new-glossary" value="1" class="custom-switch-input">
                                                                                 <span class="custom-switch-indicator"></span>
-                                                                                <label class="custom-switch-description mb-0 cursor-pointer" for="new-glossary">New Glossary</label>
+                                                                                <label class="custom-switch-description mb-0 cursor-pointer" for="new-glossary"><span>New Glossary</span></label>
                                                                             </label>
                                                                         </div>
 
@@ -706,7 +693,7 @@ $rand_id = rand(999,99999);
                                                                             <label class="custom-switch pl-0">
                                                                                 <input type="checkbox" name="glossary-with-illustration" id="glossary-with-illustration" value="1" class="custom-switch-input">
                                                                                 <span class="custom-switch-indicator"></span>
-                                                                                <label class="custom-switch-description mb-0 cursor-pointer" for="glossary-with-illustration">Glossary With Illustration</label>
+                                                                                <label class="custom-switch-description mb-0 cursor-pointer" for="glossary-with-illustration"><span>Glossary With Illustration</span></label>
                                                                             </label>
                                                                         </div>
                                                                     </div>
@@ -715,7 +702,7 @@ $rand_id = rand(999,99999);
                                                                             <label class="custom-switch pl-0">
                                                                                 <input type="checkbox" name="publish" id="publish" value="1" class="custom-switch-input">
                                                                                 <span class="custom-switch-indicator"></span>
-                                                                                <label class="custom-switch-description mb-0 cursor-pointer" for="publish">Publish</label>
+                                                                                <label class="custom-switch-description mb-0 cursor-pointer" for="publish"><span>Publish</span></label>
                                                                             </label>
                                                                         </div> 
                                                                     </div>
@@ -732,25 +719,17 @@ $rand_id = rand(999,99999);
                                                             </form>
                                                         </div>
                                                     </div>
-												
-												
-											</div>
+												</div>
 											</div>
 										</div>
-										
-										
-										
-										
 									</div>
-									
                                 </div>
-	
-    </div>
-@include('admin.questions_bank.question_editor_fields_controls')
+							</div>
+							@include('admin.questions_bank.question_editor_fields_controls')
 
-    </div>
-    </div>
-    </div>
+    			</div>
+    		</div>
+    	</div>
 </section>
 
 
@@ -833,8 +812,7 @@ $rand_id = rand(999,99999);
                                         <input type="checkbox" name="image_question" id="image_question" value="1"
                                                class="custom-switch-input"/>
                                         <span class="custom-switch-indicator"></span>
-                                        <label class="custom-switch-description mb-0 cursor-pointer"
-                                               for="image_question">Image Question</label>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="image_question"><span>Image Question</span></label>
                                     </label>
                                 </div>
                             </div>
@@ -845,8 +823,7 @@ $rand_id = rand(999,99999);
                                         <input type="checkbox" name="word_problem" id="word_problem" value="1"
                                                class="custom-switch-input"/>
                                         <span class="custom-switch-indicator"></span>
-                                        <label class="custom-switch-description mb-0 cursor-pointer" for="word_problem">Word
-                                            Problem</label>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="word_problem"><span>Word Problem</span></label>
                                     </label>
                                 </div>
                             </div>
@@ -857,8 +834,7 @@ $rand_id = rand(999,99999);
                                         <input type="checkbox" name="new_glossary" id="new_glossary" value="1"
                                                class="custom-switch-input"/>
                                         <span class="custom-switch-indicator"></span>
-                                        <label class="custom-switch-description mb-0 cursor-pointer" for="new_glossary">New
-                                            Glossary</label>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="new_glossary"><span>New Glossary</span></label>
                                     </label>
                                 </div>
                             </div>
@@ -869,8 +845,7 @@ $rand_id = rand(999,99999);
                                         <input type="checkbox" name="glossary_with_illustration"
                                                id="glossary_with_illustration" value="1" class="custom-switch-input"/>
                                         <span class="custom-switch-indicator"></span>
-                                        <label class="custom-switch-description mb-0 cursor-pointer"
-                                               for="glossary_with_illustration">Glossary with Illustration</label>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="glossary_with_illustration"><span>Glossary with Illustration</span></label>
                                     </label>
                                 </div>
                             </div>
