@@ -28,17 +28,17 @@
                         <ul class="inline-filters">
                             @php $active = ($quiz_category == '')? 'active' :'' @endphp
                             <li class="{{$active}}"><a href="/spells"><span class="icon-box">
-                                                                    <img src="/assets/default/svgs/filter-all.svg">
-                                                                </span>All Word Lists</a></li>
+                                <img src="/assets/default/svgs/filter-all.svg" alt="filter-all">
+                                </span>All Word Lists</a></li>
                             @php $active = ($quiz_category == 'Word Lists')? 'active' :'' @endphp
                             <li class="{{$active}}"><a href="/spells?quiz_category=Word+Lists"><span class="icon-box">
-                                                                                                <img src="/assets/default/svgs/filter-letters.svg">
-                                                                                            </span>Word Lists
+                                <img src="/assets/default/svgs/filter-letters.svg" alt="filter-letters">
+                                </span>Word Lists
                                 </a></li>
                             @php $active = ($quiz_category == 'Spelling Bee')? 'active' :'' @endphp
                             <li class="{{$active}}"><a href="/spells?quiz_category=Spelling+Bee"><span class="icon-box">
-                                                                    <img src="/assets/default/svgs/filter-words.svg">
-                                                                </span>Spelling Bee
+                                <img src="/assets/default/svgs/filter-words.svg" alt="filter-words">
+                                </span>Spelling Bee
                                 </a></li>
                         </ul>
                     </div>
