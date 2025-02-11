@@ -252,7 +252,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
 															   id="weekly_summary_emails_label" value="1" class="custom-switch-input" {{ (!empty($user) && $user->weekly_summary_emails == '1') ? 'checked' : '' }}/>
 														<span class="custom-switch-indicator"></span>
 														<label class="custom-switch-description mb-0 cursor-pointer"
-															   for="weekly_summary_emails_label">Receive weekly summary emails</label>
+															   for="weekly_summary_emails_label"><span>Receive weekly summary emails</span></label>
 													</label>
 												</div>
 											</div>
