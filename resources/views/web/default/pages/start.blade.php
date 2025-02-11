@@ -22,12 +22,8 @@ if( $duration_type == 'total_practice'){
 }
 @endphp
 <div class="content-section">
-
     <section class="lms-quiz-section1 justify-content-start">
-
-        <div class="container-fluid questions-data-block read-quiz-content"
-             data-total_questions="30">
-
+        <div class="container-fluid questions-data-block read-quiz-content" data-total_questions="30">
             <div class="justify-content-center">
                 <div class="container">
                     <div class="row">
@@ -45,35 +41,25 @@ if( $duration_type == 'total_practice'){
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                             <div class="start-counter"></div>
-
                             <div class="learning-content start-btn-container hide" id="learningPageContent">
                                 <div class="learning-title">
                                     <h3 class="mb-5"></h3>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-center w-100">
-
-
                                     <div class="learning-content-box d-flex align-items-center justify-content-center flex-column p-15 p-lg-30 rounded-lg">
                                         <div class="learning-content-box-icon">
                                             <img src="/assets/default/img/learning/quiz.svg" alt="downloadable icon">
                                         </div>
-
                                         <p>Press Start button when you are ready!</p>
-
                                         <a href="javascript:;" class="btn btn-primary btn-sm mt-15 start-timestables-quiz">Start</a>
                                         <div class="learning-content-quiz"></div>
-
                                     </div>
                                 </div>
-
                             </div>
-
                             <div class="question-area-block quiz-first-question row mt-0" data-duration_type="{{$duration_type}}" data-time_interval="{{$time_interval}}" data-practice_time="{{$practice_time}}" style="display:none" data-quiz_result_id="{{$QuizzAttempts->quiz_result_id}}" data-attempt_id="{{$QuizzAttempts->id}}" data-total_questions="{{count($questions_list)}}">
-
                                 <div class="col-12 col-lg-8 mx-auto">
                                     <div class="spells-quiz-info">
                                         <ul>
@@ -116,8 +102,8 @@ if( $duration_type == 'total_practice'){
                                         </div>
                                         </div>
                                         <div class="questions-block-numbers">
-                                        <ul class="d-flex justify-content-center flex-wrap">
-                                            <li id="key-7" data-value="7"><span>7</span></li>
+                                            <ul class="d-flex justify-content-center flex-wrap">
+                                                <li id="key-7" data-value="7"><span>7</span></li>
                                                 <li id="key-8" data-value="8"><span>8</span></li>
                                                 <li id="key-9" data-value="9"><span>9</span></li>
                                                 <li id="key-4" data-value="4"><span>4</span></li>
@@ -129,30 +115,21 @@ if( $duration_type == 'total_practice'){
                                                 <li class="delete" data-value="delete"><span>Delete</span></li>
                                                 <li id="key-0" data-value="0"><span>0</span></li>
                                                 <li class="enter" data-value="enter"><span>Enter</span></li>
-                                        </ul>
+                                            </ul>
                                         </div>
                                         </form>
                                     </div>
-
-
                                     @php $question_no++; @endphp
                                     @endforeach
 
                                     @endif
-
                                 </div>
-                                
-                                
                             </div>
-
                         </div>
-
                     </div>  
                 </div>
             </div>
         </section>
-
-
 </div>
 <div class="question-status-modal">
   <div class="modal fade timestables_question_status_modal" id="timestables_question_status_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
