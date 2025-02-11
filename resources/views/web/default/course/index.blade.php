@@ -245,24 +245,7 @@
                             </ul>
                         </div>
                     </div>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-                    
-                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 chapter-views chapters-detail-view rurera-hide">
-                         
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 chapter-views chapters-detail-view rurera-hide">          
 			<div class="current-topics-detail bg-white mb-30 mt-15">
 			<div class="topics-table-group">
 		
@@ -303,7 +286,7 @@
 											<tr>
 												<td data-label="{{ $chapter->title }}" class="px-15 py-20">
 													<div class="checkbox-field mb-0">
-														<label for="{{$sub_chapter['sub_chapter_slug']}}" class="m-0 font-weight-bold">{{ $sub_chapter['title'] }} {!! $topic_percentage_text !!}</label>
+														<label class="m-0 font-weight-bold">{{ $sub_chapter['title'] }} {!! $topic_percentage_text !!}</label>
 													</div>
 												</td>
 												<td data-label="Mastery Level" class="px-15 py-20">
