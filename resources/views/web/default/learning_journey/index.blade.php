@@ -20,7 +20,7 @@
 						@if($learningJourneyObj->subject->icon_code != '')
 							   {!! $learningJourneyObj->subject->icon_code !!}
 						@else
-						   <img src="{!! $learningJourneyObj->subject->thumbnail !!}" alt="learning image">
+						   <img src="{!! $learningJourneyObj->subject->thumbnail !!}" alt="learning image" width="50" height="50">
 						@endif
 					</div>
 					<div class="item-text">
@@ -31,7 +31,7 @@
 							</span>
 						</div>
 						<span class="progress-icon font-16 font-weight-normal">
-							<img src="/assets/default/img/quests-coin.png" alt="">
+							<img src="/assets/default/img/quests-coin.png" alt="quests-coin" width="35" height="35">
 							+20
 						</span>
 						<span class="progress-info d-block pt-5">
