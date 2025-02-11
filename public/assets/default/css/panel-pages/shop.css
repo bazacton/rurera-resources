@@ -72,7 +72,7 @@ Lms Products Top Header Style Start
 .products-top-header .top-search-categories-form h1 {font-size: 48px; line-height: 56px; color: var(--primary);}
 .products-top-header {min-height: 500px; padding-top: 6rem; background: #fff;}
 .products-top-header .banner-holder {position: absolute; right: 80px; top: 50%; transform: translateY(-50%); margin-top: -30px;}
-.search-top-banner .banner-holder .education-icon-box img {position: initial;}
+.search-top-banner .banner-holder .education-icon-box img {position: initial; max-width: 100%; max-height: 100%; object-fit: contain;}
 .education-icon-box li {display: inline-flex; position: absolute;}
 .education-icon-box {position: absolute;left: 50%;}
 .education-icon-box li:nth-child(2) {left: 10px;top: -42px;}
