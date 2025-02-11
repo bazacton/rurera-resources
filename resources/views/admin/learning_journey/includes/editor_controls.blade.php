@@ -349,18 +349,13 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 				<div class="option-field-item">
 					<label>Size (px)</label>
 					<div class="input-group">
-						<input type="text" name="stage_width" class="form-control trigger_field"
-								   value="500" data-field_id="stage_width" data-field_name="width"
-						   data-field_type="style" data-id="">
-
-						</div>
+						<input type="text" name="stage_width" class="form-control trigger_field" value="500" data-field_id="stage_width" data-field_name="width" data-field_type="style" data-id="">
+					</div>
 				</div>
 				<div class="option-field-item">
 					<label>Fill Color</label>
 					<div class="input-group">
-						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput"
-								   value="#ffffff" data-field_id="fill_color" data-field_name="fill"
-						   data-field_type="svg_path_style" data-id="">
+						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput" value="#ffffff" data-field_id="fill_color" data-field_name="fill" data-field_type="svg_path_style" data-id="">
 							<div class="input-group-append">
 								<div class="input-group-text">
 									<i class="fas fa-fill-drip"></i>
@@ -382,18 +377,13 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 				<div class="option-field-item">
 					<label>Size (px)</label>
 					<div class="input-group">
-						<input type="text" name="path_width" class="form-control trigger_field"
-								   value="300" data-field_id="path_width" data-field_name="width"
-						   data-field_type="style" data-id="">
-
-						</div>
+						<input type="text" name="path_width" class="form-control trigger_field" value="300" data-field_id="path_width" data-field_name="width" data-field_type="style" data-id="">
+					</div>
 				</div>
 				<div class="option-field-item">
 					<label>Fill Color</label>
 					<div class="input-group">
-						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput"
-								   value="#ffffff" data-field_id="fill_color" data-field_name="fill"
-						   data-field_type="svg_path_style" data-id="">
+						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput" value="#ffffff" data-field_id="fill_color" data-field_name="fill" data-field_type="svg_path_style" data-id="">
 							<div class="input-group-append">
 								<div class="input-group-text">
 									<i class="fas fa-fill-drip"></i>
@@ -415,18 +405,13 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
 				<div class="option-field-item">
 					<label>Size (px)</label>
 					<div class="input-group">
-						<input type="text" name="object_width" class="form-control trigger_field"
-								   value="180" data-field_id="object_width" data-field_name="width"
-						   data-field_type="style" data-id="">
-
-						</div>
+						<input type="text" name="object_width" class="form-control trigger_field" value="180" data-field_id="object_width" data-field_name="width" data-field_type="style" data-id="">
+					</div>
 				</div>
 				<div class="option-field-item">
 					<label>Fill Color</label>
 					<div class="input-group">
-						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput"
-								   value="#ffffff" data-field_id="fill_color" data-field_name="fill"
-						   data-field_type="svg_path_style" data-id="">
+						<input type="text" name="background_color" class="form-control trigger_field colorpickerinput" value="#ffffff" data-field_id="fill_color" data-field_name="fill" data-field_type="svg_path_style" data-id="">
 							<div class="input-group-append">
 								<div class="input-group-text">
 									<i class="fas fa-fill-drip"></i>
