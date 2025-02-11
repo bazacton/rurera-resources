@@ -23,21 +23,21 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="search-block">
-                                    <div class="top-search-form">
-                                        <div class="search-input bg-white">
-                                            <form action="/books" method="get">
-                                                <div class="form-group d-flex align-items-center m-0">
-                                                    <input type="text" name="search" class="form-control border-0 font-16" value="{{ request()->get('search','') }}" placeholder="Search by Author, Title, or Keyword"/>
-                                                    <button type="submit" class="btn btn-primary rounded-pill">{{ trans('home.find') }}</button>
-                                                </div>
-                                            </form>
-                                        </div>
+                                <div class="top-search-form">
+                                    <div class="search-input bg-white">
+                                        <form action="/books" method="get">
+                                            <div class="form-group d-flex align-items-center m-0">
+                                                <input type="text" name="search" class="form-control border-0 font-16" value="{{ request()->get('search','') }}" placeholder="Search by Author, Title, or Keyword"/>
+                                                <button type="submit" class="btn btn-primary rounded-pill">{{ trans('home.find') }}</button>
+                                            </div>
+                                        </form>
                                     </div>
+                                </div>
                             </div>
                             <div class="row">
                                 @if( !empty( $books ))
                                 @foreach( $books as $book_category => $category_books)
-                                <div class="col-lg-12">
+                                <div class="col-lg-12" itemscope itemtype="https://schema.org/Article">
                                     <h3 class="mb-10 font-22" itemprop="title">{{$book_category}}</h3>
                                     <span class="mb-35 d-block font-16" itemprop="sub title">For kids ages 0-3</span>
                                 </div>
@@ -57,7 +57,7 @@
                                             </div>
 
                                             <div class="col-12 col-lg-6 col-md-5 col-sm-5">
-                                                <div class="text-holder">
+                                                <div class="text-holder" itemscope itemtype="https://schema.org/Article">
                                                     <h3 itemprop="title" class="font-18 font-weight-bold mb-5"><a href="/books/{{$bookData->book_slug}}" class="{{ subscriptionCheckLink('bookshelf') }}" itemprop="url">{{$bookData->book_title}}</a>
                                                     </h3>
                                                     <ul itemprop="books info list">
