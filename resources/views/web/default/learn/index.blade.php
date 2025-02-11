@@ -28,7 +28,7 @@
                             @if($courseObj->icon_code != '')
                                    {!! $courseObj->icon_code !!}
                            @else
-                               <img src="{!! $courseObj->thumbnail !!}">
+                               <img src="{!! $courseObj->thumbnail !!}" width="50" height="50" alt="categories image">
                            @endif
                         </div>
                         <div class="categories-text">
