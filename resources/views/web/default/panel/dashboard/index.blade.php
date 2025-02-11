@@ -385,7 +385,7 @@
 			<li class="d-flex align-items-center justify-content-between flex-wrap bg-white p-20 mb-20 bg-danger">
 				<div class="quests-item">
 					<div class="icon-box d-inline-flex justify-content-center align-items-center mr-10" >
-						<img src="{{$quest_icon}}">
+						<img src="{{$quest_icon}}" alt="learning image" width="50" height="50">
 					</div>
 					<div class="item-text">
 						<h5 class="font-18 font-weight-bold"><a href="/learning-journey/{{$link}}">{{$questObj->title}}</a></h5>
@@ -395,7 +395,7 @@
 							</span>
 						</div>
 						<span class="progress-icon font-16 font-weight-normal">
-							<img src="/assets/default/img/quests-coin.png" alt="">
+							<img src="/assets/default/img/quests-coin.png" alt="quests-coin" width="35" height="35">
 							+{{isset( $questUserData['questScore'] )? $questUserData['questScore'] : 0}}
 						</span>
 						<span class="progress-info d-block pt-5">
@@ -417,7 +417,7 @@
 											<h5 class="font-18 font-weight-bold text-white mb-5">															
 											Active practice: 11<br> 
 											Questions answered: 11 <br>
-											<img src="/assets/default/img/panel-sidebar/coins.svg" alt="" width="30">Coins earned:11
+											<img src="/assets/default/img/panel-sidebar/coins.svg" alt="coins" width="30">Coins earned:11
 											</h5>
 											<button class="tooltip-button" onclick="window.location.href='/panel/quizzes/11/check_answers';">Result</button>
 										</div>
@@ -467,7 +467,7 @@
 						@if($learningJourneyObj->subject->icon_code != '')
 							   {!! $learningJourneyObj->subject->icon_code !!}
 						@else
-						   <img src="{!! $learningJourneyObj->subject->thumbnail !!}">
+						   <img src="{!! $learningJourneyObj->subject->thumbnail !!}" alt="learning image" width="50" height="50">
 						@endif
 					</div>
 					<div class="item-text">
@@ -478,7 +478,7 @@
 							</span>
 						</div>
 						<span class="progress-icon font-16 font-weight-normal">
-							<img src="/assets/default/img/quests-coin.png" alt="">
+							<img src="/assets/default/img/quests-coin.png" alt="quests-coin" width="35" height="35">
 							+20
 						</span>
 						<span class="progress-info d-block pt-5">
@@ -502,7 +502,7 @@
 														<h5 class="font-18 font-weight-bold text-white mb-5">															
 														Active practice: {{getTimeWithText($resultObj->quizz_result_questions_list->where('status', '!=', 'waiting')->sum('time_consumed'))}}<br> 
 														Questions answered: {{$resultObj->quizz_result_questions_list->where('status', '!=', 'waiting')->count()}} <br>
-														<img src="/assets/default/img/panel-sidebar/coins.svg" alt="" width="30">Coins earned:{{$resultObj->quizz_result_questions_list->where('status', 'correct')->sum('quiz_grade')}}
+														<img src="/assets/default/img/panel-sidebar/coins.svg" alt="coins" width="30">Coins earned:{{$resultObj->quizz_result_questions_list->where('status', 'correct')->sum('quiz_grade')}}
 														</h5>
 														<button class="tooltip-button" onclick="window.location.href='/panel/results/{{$resultObj->id}}/timetables';">Result</button>
 													</div>
