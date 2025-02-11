@@ -47,7 +47,7 @@
                                     <div class="listing-card">
                                         <div class="row">
                                             <div class="col-12 col-lg-2 col-md-3 col-sm-3">
-                                                <div class="img-holder">
+                                                <div class="img-holder" itemscope itemtype="https://schema.org/Article">
                                                     <figure>
                                                         <a href="/books/{{$bookData->book_slug}}" itemprop="url" class="{{ subscriptionCheckLink('bookshelf') }}">
                                                             <img src="{{$bookData->cover_image }}" alt="#" height="182" width="137" itemprop="image"/>
@@ -70,7 +70,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-4 col-md-4 col-sm-4">
-                                                <div class="btn-holder">
+                                                <div class="btn-holder" itemscope itemtype="https://schema.org/Article">
                                                     <a href="/books/{{$bookData->book_slug}}" class="read-btn {{ subscriptionCheckLink('bookshelf') }}" itemprop="url">
                                                         <span class="btn-icon">
                                                             <img src="/assets/default/svgs/book-open.svg" alt="book open" width="182" height="150">
