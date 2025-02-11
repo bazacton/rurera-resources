@@ -9,10 +9,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
 
 <section>
     <h2 class="section-title">{{ trans('financial.account') }}</h2>
-
     <div class="row mt-30">
-
-
         <div class="col-12 user-profile-block">
             <div class="user-detail mb-50 bg-white panel-border rounded-sm p-25">
                 <div class="detail-header mb-25 pb-25">
@@ -111,8 +108,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
-                                    </li>
-                                    
+                                    </li> 
                                 </ul>
                             </div>
                         </div>
@@ -278,10 +274,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                 </div>
             </div>
         </div>
-
 </section>
-
-
 <div class="modal fade" id="profile-image-modal" tabindex="-1" role="dialog" aria-labelledby="profile-image-modal">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -292,8 +285,6 @@ $avatar_color_settings = json_encode($avatar_color_settings);
         </div>
     </div>
 </div>
-
-
 <div class="modal fade" id="avatarCropModalContainer" tabindex="-1" role="dialog" aria-labelledby="avatarCrop">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
