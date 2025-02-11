@@ -137,7 +137,7 @@
                                                                 {{ user_assign_topic_template($sub_chapter['id'], 'practice', $childs, $parent_assigned_list) }}
                                                                 
                                                                 @if($sub_chapter_item->Quizzes->count() > 0)
-                                                                <ul id="collapse{{$sub_chapter['id']}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                                                <ul id="collapse{{$sub_chapter['id']}}" class="collapse" data-parent="#accordion">
                                                                     @foreach($sub_chapter_item->Quizzes as $QuizObj)
                                                                         @php 
                                                                         $topicPerformData = Quiz::getQuizPercentage($QuizObj->id, true);
