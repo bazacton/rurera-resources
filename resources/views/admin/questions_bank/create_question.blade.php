@@ -298,17 +298,13 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                 </div>
                               </div>
                             </div>
-
-                            <div class="tab-pane mt-3 fade" id="question_design" role="tabpanel"
-                                 aria-labelledby="question_design-tab">
+                            <div class="tab-pane mt-3 fade" id="question_design" role="tabpanel" aria-labelledby="question_design-tab">
                                 <div class="row">
-
                                     <div class="col-7 col-md-7">
                                         <div class="hap-container">
                                             <div class="hap-content">
                                                 <div class="hap-content-area">
-                                                    <div id="global-message-container">
-                                                    </div>
+                                                    <div id="global-message-container"></div>
                                                     <div class="hap-content-box">
                                                         <script>rureraform_gettingstarted_enable = "off";</script>
                                                         <div class="wrap rureraform-admin rureraform-admin-editor">
@@ -424,9 +420,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                                         <input type="text" placeholder="Search...">
                                                                     </div>
                                                                     <div class="rureraform-fa-selector-content">
-                                                                                                                        <span title="No icon"
-                                                                                                                              onclick="rureraform_fa_selector_set(this);"><i
-                                                                                                                                    class=""></i></span><span
+                                                                        <span title="No icon" onclick="rureraform_fa_selector_set(this);"><i class=""></i></span><span
                                                                                 title="Star"
                                                                                 onclick="rureraform_fa_selector_set(this);"><i
                                                                                     class="rureraform-fa rureraform-fa-star"></i></span><span
@@ -512,10 +506,8 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                                 </div>
                                                             </div>
 
-
                                                             <div id="rureraform-global-message"></div>
-                                                            <div class="rureraform-dialog-overlay"
-                                                                 id="rureraform-dialog-overlay"></div>
+                                                            <div class="rureraform-dialog-overlay" id="rureraform-dialog-overlay"></div>
                                                             <div class="rureraform-dialog" id="rureraform-dialog">
                                                                 <div class="rureraform-dialog-inner">
                                                                     <div class="rureraform-dialog-title">
@@ -680,15 +672,10 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 												<a href="javascript:;" class="add-part-modal">Add New Part</a>
 												<div class="topic-parts-options"></div>
 											</div>
-										
-	
-										
                                             <div class="rureraform-admin-popup" id="rureraform-element-properties">
                                                 <div class="rureraform-admin-popup-inner">
                                                     <div class="rureraform-admin-popup-title">
-                                                        <a href="#" title="Close"
-                                                           onclick="return rureraform_properties_close();"><i
-                                                                    class="fas fa-times"></i></a>
+                                                        <a href="#" title="Close" onclick="return rureraform_properties_close();"><i class="fas fa-times"></i></a>
                                                         <h3><i class="fas fa-cog element-properties-label"></i> Element Properties</h3>
                                                     </div>
                                                     <div class="rureraform-admin-popup-content">
@@ -696,47 +683,29 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                         </div>
                                                     </div>
                                                     <div class="rureraform-admin-popup-buttons">
-                                                        <a class="rureraform-admin-button duplicate-element btn btn-primary"
-                                                           href="#"><label>Duplicate</label></a>
+                                                        <a class="rureraform-admin-button duplicate-element btn btn-primary" href="#"><label>Duplicate</label></a>
                                                         <a class="rureraform-admin-button remove-element btn btn-danger" href="#"><label>Remove</label></a>
-                                                        <a class="rureraform-admin-button generate-question-code rurera-hide"
-                                                           href="#"><label>Apply Changes</label></a>
+                                                        <a class="rureraform-admin-button generate-question-code rurera-hide" href="#"><label>Apply Changes</label></a>
                                                     </div>
-                                                    <div class="rureraform-admin-popup-loading"><i
-                                                                class="fas fa-spinner fa-spin"></i></div>
+                                                    <div class="rureraform-admin-popup-loading"><i class="fas fa-spinner fa-spin"></i></div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
-
-                            <div class="tab-pane mt-3 fade active show" id="question_properties" role="tabpanel"
-                                                             aria-labelledby="question_properties-tab">
-
-
+                            <div class="tab-pane mt-3 fade active show" id="question_properties" role="tabpanel" aria-labelledby="question_properties-tab">
                                     <div class="col-12 col-md-12">
                                         <div class="row">
-
-
                                             <div class="col-12 col-md-12">
                                                 <div class="row">
-												
-
-
                                                     <div class="col-12">
-													
-												<div class="templates-buttons mb-20">
-													<button class="btn btn-primary save-template"><i class="fas fa-save"></i> Save Template</button>
-													<button class="btn btn-primary activate-template"><i class="fas fa-calendar-week"></i> Activate Template</button>
-												</div>
+                                                        <div class="templates-buttons mb-20">
+                                                            <button class="btn btn-primary save-template"><i class="fas fa-save"></i> Save Template</button>
+                                                            <button class="btn btn-primary activate-template"><i class="fas fa-calendar-week"></i> Activate Template</button>
+                                                        </div>
 														
-                                                        <div class="search-fields-block"
-                                                             style="background: #efefef;padding: 10px;"><div class="row">
-															 
+                                                        <div class="search-fields-block" style="background: #efefef;padding: 10px;"><div class="row">
 															 <div class="col-lg-6 col-md-6 col-12">
 																	<div class="form-group">
 																		<label class="input-label">Question Reference</label>
