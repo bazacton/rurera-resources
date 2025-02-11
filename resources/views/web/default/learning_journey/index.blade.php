@@ -20,7 +20,7 @@
 						@if($learningJourneyObj->subject->icon_code != '')
 							   {!! $learningJourneyObj->subject->icon_code !!}
 						@else
-						   <img src="{!! $learningJourneyObj->subject->thumbnail !!}">
+						   <img src="{!! $learningJourneyObj->subject->thumbnail !!}" alt="learning image">
 						@endif
 					</div>
 					<div class="item-text">
