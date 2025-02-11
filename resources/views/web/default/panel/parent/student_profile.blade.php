@@ -468,7 +468,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 													   id="hide_timestables_field" value="1" class="custom-switch-input"  {{($user->hide_timestables == 1)? 'checked' : ''}}/>
 												<span class="custom-switch-indicator"></span>
 												<label class="custom-switch-description mb-0 cursor-pointer"
-													   for="hide_timestables_field">Hide Timestables</label>
+													   for="hide_timestables_field"><span>Hide Timestables</span></label>
 											</label>
 										</div>
 										</div>
@@ -481,7 +481,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 														   id="hide_spellings_field" value="1" class="custom-switch-input"  {{($user->hide_spellings == 1)? 'checked' : ''}}/>
 													<span class="custom-switch-indicator"></span>
 													<label class="custom-switch-description mb-0 cursor-pointer"
-														   for="hide_spellings_field">Hide Spellings</label>
+														   for="hide_spellings_field"><span>Hide Spellings</span></label>
 												</label>
 											</div>
 										</div>
@@ -494,7 +494,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 														   id="hide_games_field" value="1" class="custom-switch-input"  {{($user->hide_games == 1)? 'checked' : ''}}/>
 													<span class="custom-switch-indicator"></span>
 													<label class="custom-switch-description mb-0 cursor-pointer"
-														   for="hide_games_field">Hide Games</label>
+														   for="hide_games_field"><span>Hide Games</span></label>
 												</label>
 											</div>
 										</div>
@@ -507,7 +507,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 														   id="hide_books_field" value="1" class="custom-switch-input"  {{($user->hide_books == 1)? 'checked' : ''}}/>
 													<span class="custom-switch-indicator"></span>
 													<label class="custom-switch-description mb-0 cursor-pointer"
-														   for="hide_books_field">Hide Books</label>
+														   for="hide_books_field"><span>Hide Books</span></label>
 												</label>
 											</div>
 										</div>
@@ -604,15 +604,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 										<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
 										<a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
                                     </div>
-									</form>
-                        </div>
+								</form>
+                        	</div>
                         </div>
                     </div>
                     </div>
-					
-					
-					
-					
 					
 					<div class="row mb-50">
                         <div class="col-lg-4 col-md-4 col-sm-12 col-12">
@@ -720,37 +716,8 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                 </div>
             </div>
 			@endif
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-					
-					
-					
                 </div>
             </div>
-			
-			
-			
 			
 			<div class="col-12 user-edit-profile rurera-hide">
             <div class="edit-profile mb-50">
@@ -785,7 +752,6 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     </div>
                                     <div class="mb-0 mt-20">
                                         <div class="row">
-										
 										
 										<div class="col-12">
 											<div class="edit-element-title mb-20">
@@ -940,7 +906,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 													   id="hide_timestables_field" value="1" class="custom-switch-input"  {{($user->hide_timestables == 1)? 'checked' : ''}}/>
 												<span class="custom-switch-indicator"></span>
 												<label class="custom-switch-description mb-0 cursor-pointer"
-													   for="hide_timestables_field">Hide Timestables</label>
+													   for="hide_timestables_field"><span>Hide Timestables</span></label>
 											</label>
 										</div>
 									</div>
@@ -966,7 +932,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 													   id="hide_games_field" value="1" class="custom-switch-input"  {{($user->hide_games == 1)? 'checked' : ''}}/>
 												<span class="custom-switch-indicator"></span>
 												<label class="custom-switch-description mb-0 cursor-pointer"
-													   for="hide_games_field">Hide Games</label>
+													   for="hide_games_field"><span>Hide Games</span></label>
 											</label>
 										</div>
 									</div>
@@ -979,11 +945,10 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 													   id="hide_books_field" value="1" class="custom-switch-input"  {{($user->hide_books == 1)? 'checked' : ''}}/>
 												<span class="custom-switch-indicator"></span>
 												<label class="custom-switch-description mb-0 cursor-pointer"
-													   for="hide_books_field">Hide Books</label>
+													   for="hide_books_field"><span>Hide Books</span></label>
 											</label>
 										</div>
 									</div>
-											
 											
 											<div class="col-12">
                                                 <div class="edit-element-title mb-20">
