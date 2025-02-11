@@ -78,58 +78,43 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 @section('content')
 
 <section class="section form-class upload-path-rurera" data-question_save_type="{{$save_type}}" data-location="{{isset( $questionObj->id )? $questionObj->id : 0}}">
-
-
     <div class="section-body lms-quiz-create">
-        
         <div class="row">
-		<div class="col-12 col-md-12 col-lg-12">
-        
-                        <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                            <li class="nav-item">
-                               <a class="nav-link active" id="question_properties-tab" data-toggle="tab" href="#question_properties" role="tab"
-                                  aria-controls="question_properties" aria-selected="false"><span class="tab-title">Question Properties</span></a>
-                           </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="question_design-tab" data-toggle="tab" href="#question_design" role="tab"
-                                   aria-controls="question_design" aria-selected="true"><span class="tab-title">Question Design</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="glossary_solution-tab" data-toggle="tab"
-                                   href="#glossary_solution" role="tab"
-                                   aria-controls="glossary_solution" aria-selected="true"><span class="tab-title">Glossary & Solution</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="review_required_tab-tab" data-toggle="tab"
-                                   href="#review_required_tab" role="tab"
-                                   aria-controls="review_required_tab" aria-selected="true"><span class="tab-title">Comments for Reviewer</span></a>
-                            </li>
+            <div class="col-12 col-md-12 col-lg-12">
+                <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="question_properties-tab" data-toggle="tab" href="#question_properties" role="tab"
+                            aria-controls="question_properties" aria-selected="false"><span class="tab-title">Question Properties</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="question_design-tab" data-toggle="tab" href="#question_design" role="tab"
+                            aria-controls="question_design" aria-selected="true"><span class="tab-title">Question Design</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="glossary_solution-tab" data-toggle="tab"
+                            href="#glossary_solution" role="tab"
+                            aria-controls="glossary_solution" aria-selected="true"><span class="tab-title">Glossary & Solution</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="review_required_tab-tab" data-toggle="tab"
+                            href="#review_required_tab" role="tab"
+                            aria-controls="review_required_tab" aria-selected="true"><span class="tab-title">Comments for Reviewer</span></a>
+                    </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" id="question_preview-tab" data-toggle="tab"
-                                   href="#question_preview" role="tab"
-                                   aria-controls="question_design" aria-selected="true"><span class="tab-title">Question Preview</span></a>
-                            </li>
-                           
-                        </ul>
-			</div>
-			</div>
-
-
+                    <li class="nav-item">
+                        <a class="nav-link" id="question_preview-tab" data-toggle="tab"
+                            href="#question_preview" role="tab"
+                            aria-controls="question_design" aria-selected="true"><span class="tab-title">Question Preview</span></a>
+                    </li>
+                 </ul>
+            </div>
+		</div>
         <div class="row">
-
-
             <div class="col-12 col-md-12">
-
-
                 <div class="card">
                     <div class="card-body">
-
-
                         <div class="tab-content" id="myTabContent2">
-
                             <div class="patterns-modal">
-							 
                               <button type="button" class="btn btn-primary rurera-hide" data-toggle="modal" data-target=".bd-example-modal-lg">Button</button>
                               <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg" role="document">
