@@ -105,9 +105,9 @@ if( $duration_type == 'total_practice'){
                                                 <a href="#">
                                                     <span class="thumb-box">
                                                         @if($is_acheived == 1)
-                                                            <img src="/assets/default/img/treasure.png" alt="">
+                                                            <img src="/assets/default/img/treasure.png" alt="treasure" width="82" height="74">
                                                         @else
-                                                            <img src="/assets/default/img/treasure2.png" alt="">
+                                                            <img src="/assets/default/img/treasure2.png" alt="treasure2" width="82" height="74">
                                                         @endif
                                                     </span>
                                                 </a>
