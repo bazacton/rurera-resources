@@ -9,7 +9,7 @@
                     <a href="javascript:;" class="timestables-back-btn mb-20">Back</a>
                     <div class="timestables-modes row">
                         <div class="col-12 col-lg-12 col-md-12">
-                            <div class="section-title mb-30">
+                        <div class="section-title mb-30" itemscope itemtype="https://schema.org/Article">
                             <h2 itemprop="title" class="font-22 mb-0">Time Tables</h2>
                         </div>
                     </div>
