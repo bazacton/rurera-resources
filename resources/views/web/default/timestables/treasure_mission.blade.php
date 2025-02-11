@@ -49,7 +49,7 @@
                     <h2 class="font-19 font-weight-bold">{{isset( $levelObj['title'] )? $levelObj['title'] : ''}}</h2>
                     <span class="info-modal-btn" data-toggle="modal" data-target="#{{$levelObj['id']}}"> <img src="/assets/default/svgs/info-icon2.svg" alt=""></span>
                 </div>
-                <div class="modal fade {{$levelObj['id']}}" id="{{$levelObj['id']}}" tabindex="-1" role="dialog" aria-labelledby="infomodalTitile" aria-hidden="true">
+                <div class="modal fade {{$levelObj['id']}}" id="{{$levelObj['id']}}" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                       <div class="modal-body">
