@@ -242,14 +242,12 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                             </div>
 											<div class="col-12 col-sm-12 col-md-12 col-lg-12">
 												<div class="form-group custom-switches-stacked">
-													<label class="custom-switch pl-0">
+													<div class="custom-switch pl-0">
 														<input type="hidden" name="weekly_summary_emails_label" value="0">
-														<input type="checkbox" name="weekly_summary_emails"
-															   id="weekly_summary_emails_label" value="1" class="custom-switch-input" {{ (!empty($user) && $user->weekly_summary_emails == '1') ? 'checked' : '' }}/>
+														<input type="checkbox" name="weekly_summary_emails" id="weekly_summary_emails_label" value="1" class="custom-switch-input" {{ (!empty($user) && $user->weekly_summary_emails == '1') ? 'checked' : '' }}/>
 														<span class="custom-switch-indicator"></span>
-														<label class="custom-switch-description mb-0 cursor-pointer"
-															   for="weekly_summary_emails_label"><span>Receive weekly summary emails</span></label>
-													</label>
+														<label class="custom-switch-description mb-0 cursor-pointer" for="weekly_summary_emails_label"><span>Receive weekly summary emails</span></label>
+                                                    </div>
 												</div>
 											</div>
                                         </div>
