@@ -1138,7 +1138,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                         <div class="show-notifications"></div>
                                                         <div class="prev-next-controls text-center questions-nav-controls">
                                                             @if( !isset( $disable_finish ) || $disable_finish == 'false')
-                                                            <a href="javascript:;" data-toggle="modal" class="review-btn {{isset($rev_btn_class)? $rev_btn_class : ''}}" data-target="#review_submit">
+                                                            <a href="javascript:;" data-toggle="modal" class="review-btn test {{isset($rev_btn_class)? $rev_btn_class : ''}}" data-target="#review_submit">
                                                                 Finish
                                                                 <svg style="width: 22px;height: 22px;" xmlns="http://www.w3.org/2000/svg" version="1.0"
                                                                      width="512.000000pt" height="512.000000pt"
