@@ -1269,8 +1269,7 @@
                                     <span>updated less than a minute ago</span>
                                 </div>
                             </label>
-                        </div>
-                            
+                        </div>   
                         <div class="collection-item">
                             <input type="checkbox" id="xx">
                             <label for="xx">
@@ -1319,18 +1318,18 @@
                                     </button>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="generalMenu" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(30px, 30px, 0px);">
                                     <div class="select-categories-holder">
-                                            <div class="selected-category">
-                                                <a href="#">Prototyping</a>
-                                            </div>
-                                            <div class="categories">
-                                                <span>Select category or create one</span>
-                                                <a href="#" class="active">Prototyping</a>
-                                                <a href="#">UI/UX</a>
-                                                <a href="#">Design</a>
-                                                <a href="#">Card</a>
-                                                <a href="#">Not Urgent</a>
-                                                <a href="#">Line</a>
-                                            </div>
+                                        <div class="selected-category">
+                                            <a href="#">Prototyping</a>
+                                        </div>
+                                        <div class="categories">
+                                            <span>Select category or create one</span>
+                                            <a href="#" class="active">Prototyping</a>
+                                            <a href="#">UI/UX</a>
+                                            <a href="#">Design</a>
+                                            <a href="#">Card</a>
+                                            <a href="#">Not Urgent</a>
+                                            <a href="#">Line</a>
+                                        </div>
                                     </div> 
                                     </div>
                                 </div>
@@ -1354,14 +1353,14 @@
                                     </button>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="generalMenu" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(30px, 30px, 0px);">
                                     <div class="select-languages-holder">
-                                            <div class="languages">
-                                                <span>Select Languages</span>
-                                                <a href="#" class="active">English</a>
-                                                <a href="#">Deutsch</a>
-                                                <a href="#">Espanol</a>
-                                                <a href="#">Francais</a>
-                                                <a href="#">Italian</a>
-                                            </div>
+                                        <div class="languages">
+                                            <span>Select Languages</span>
+                                            <a href="#" class="active">English</a>
+                                            <a href="#">Deutsch</a>
+                                            <a href="#">Espanol</a>
+                                            <a href="#">Francais</a>
+                                            <a href="#">Italian</a>
+                                        </div>
                                     </div> 
                                     </div>
                                 </div>
