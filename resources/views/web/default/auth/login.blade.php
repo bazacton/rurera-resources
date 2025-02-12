@@ -192,17 +192,14 @@
                                                 </div>
 
                                                 <button type="submit" class="btn btn-primary btn-block mt-20">{{ trans('auth.login') }}</button>
-                                                <!-- <p>By logging in to wonde you confirm you have read and agree <a href="#">terms of <br /> Use</a> and <a href="#">Privacy Notice</a></p>
-                                                <a href="#" class="login-next">Next</a> -->
+                                                
                                                 <div class="login-option">
                                                     <span>Login with</span>
                                                     <a href="https://google.com/" target="_blank" class="social-login">
                                                         <img src="/assets/default/img/auth/google.svg" class="mr-auto" alt=" google svg"/>
-                                                        <!-- <span class="flex-grow-1">{{ trans('auth.google_login') }}</span> -->
                                                     </a>
                                                     <a href="https://www.facebook.com/" target="_blank" class="social-login">
                                                         <img src="/assets/default/img/auth/facebook.svg" class="mr-auto" alt="facebook svg"/>
-                                                        <!-- <span class="flex-grow-1">{{ trans('auth.facebook_login') }}</span> -->
                                                     </a>
                                                     <div class="text-center">
                                                         <a href="/forget-password" target="_blank">{{ trans('auth.forget_your_password') }}</a>
@@ -260,9 +257,7 @@
                                                 </div>
 
                                                 <button type="submit" class="btn btn-primary btn-block mt-20">{{ trans('auth.login') }}</button>
-                                                <!-- <p>By logging in to wonde you confirm you have read and agree <a href="#">terms of <br /> Use</a> and <a href="#">Privacy Notice</a></p>
-                                                <a href="#" class="login-next">Next</a> -->
-
+                                                
                                                 <div class="login-controls">
                                                     <div>
                                                         <span>{{ trans('auth.dont_have_account') }}</span>
