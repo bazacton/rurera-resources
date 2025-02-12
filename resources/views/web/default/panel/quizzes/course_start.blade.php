@@ -238,7 +238,7 @@ $practice_time = 0;
                                     </a>
                                     <a href="javascript:;" id="prev-btn" class="rurera-hide prev-btn">
                                         prev
-                                        
+                                        <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                     </a>
                                     <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
                                         mark answer
