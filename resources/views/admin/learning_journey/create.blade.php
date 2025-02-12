@@ -905,6 +905,15 @@
             $('.curriculum-item-data[data-level_id="'+level_id+'"]').remove();
             $('.accordion-row[data-id="'+new_level_id+'"]').find('.stage-accordion').click();
             //$(".path-tool-item.active").click();
+
+            var $editorZone = $(".book-dropzone.active").closest('.editor-zone');
+            var $activePathTool = $editorZone.find('.path-tool-item.active');
+
+            if ($activePathTool.length) {
+                $activePathTool.click();
+            } else {
+                $editorZone.find('.path-tool-item').first().click();
+            };
 			check_stages();
         });
 
