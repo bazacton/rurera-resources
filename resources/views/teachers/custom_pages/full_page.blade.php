@@ -323,7 +323,7 @@
                                 <td>
                                     <div class="hotel-thum-box">
                                         <div class="img-holder">
-                                            <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                            <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="go-jetters-hero-academy-cc-v2">
                                         </div>
                                         <strong>
                                             Mountain Village Resorts
@@ -374,7 +374,7 @@
                                 <td>
                                     <div class="hotel-thum-box">
                                         <div class="img-holder">
-                                            <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                            <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="go-jetters-hero-academy-cc-v2">
                                         </div>
                                         <strong>
                                             Luxury Lakeside Spas
@@ -438,10 +438,10 @@
                                             <button type="button" class="almost">A</button>
                                             <button type="button" class="met">M</button>
                                             <button type="button" class="exceeding">E</button>
-                                            <button class="remove-btn"><img src="/assets/default/svgs/paint-brush.svg" alt=""></button>
+                                            <button class="remove-btn"><img src="/assets/default/svgs/paint-brush.svg" alt="paint-brush"></button>
                                         </div>
                                         <span class="selection-status"><em>0</em> Selection</span>
-                                        <button type="button" class="clear-btn"><img src="/assets/default/svgs/dot-circle.svg" alt=""> Clear Selection</button>
+                                        <button type="button" class="clear-btn"><img src="/assets/default/svgs/dot-circle.svg" alt="dot-circle"> Clear Selection</button>
                                     </div>
                                 </th>
                                 <th><span class="icon-box"><i class="fas fa-user"></i></span>Azeneth Armando</th>
@@ -466,7 +466,7 @@
                             <tr class="child-level-1">
                                 <td class="has-met">
                                     <div class="text-box">
-                                        <button type="button" class="collaps-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-right.svg" alt=""></span></button>
+                                        <button type="button" class="collaps-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-right.svg" alt="arrow-right"></span></button>
                                         Count NAHT KPI Count 2.1.a.1 Count in tens from any number, forward and backward
                                     </div>
                                 </td>
@@ -490,7 +490,7 @@
                             <tr class="child-level-2">
                                 <td class="has-met">
                                     <div class="text-box">
-                                        <button type="button" class="collaps-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-right.svg" alt=""></span></button>
+                                        <button type="button" class="collaps-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-right.svg" alt="arrow-right"></span></button>
                                         Count NAHT KPI Count 2.1.a.2 Identify ten more or ten less than any given number
                                     </div>
                                 </td>
