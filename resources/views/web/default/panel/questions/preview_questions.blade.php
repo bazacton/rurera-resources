@@ -40,9 +40,7 @@ $rand_id = rand(99,9999);
                             <div class="correct-appriciate" style="display:none"></div>
                             <div class="question-inner-step-area">
                                 <div class="question-layout-block">
-
 									<div class="left-content has-bg">
-									
 										@php $is_active = ''; $counter = 0; @endphp
 										@if($questions->count() > 0)
 											@foreach($questions as $questionObj)
@@ -85,16 +83,10 @@ $rand_id = rand(99,9999);
 										</a>
 									</div>
 								</div>
-
 								</div>
 							</div>
-
 						</div>
-
                         </div>
-					
-					
-					
                     <div class="question-area-temp hide"></div>
                 </div>
             </div>
