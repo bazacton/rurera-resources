@@ -9,8 +9,6 @@
 
 @section('content')
 <section class="section">
-   
-
     <div class="section-body">
         <div class="row">
             <div class="col-12">
@@ -1073,7 +1071,8 @@
                                             <ul class="lms-radio-btn-group lms-user-answer-block"><li><label class="lms-question-label" for="radio2"><span>Cube</span></label></li></ul>
                                             <span class="list-title">Rumaisa Khan answered:</span>
                                             <ul class="lms-radio-btn-group lms-user-answer-block"><li><label class="lms-question-label wrong" for="radio2"><span>Cube</span></label></li><li><label class="lms-question-label wrong" for="radio2"><span>Square-based pyramid</span></label></li></ul>
-                                    </div><hr></div></div>
+                                    </div><hr></div>
+                                </div>
                                 </div>
                             </div>
                         </div>
