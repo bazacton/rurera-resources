@@ -11,14 +11,12 @@
         <h2 class="font-22"><span>{{$categoryObj->category->getTitleAttribute()}} - {{$categoryObj->getTitleAttribute()}}</span></h2>
         <p>{{$categoryObj->category->getTitleAttribute()}} courses - Comprehensive list of courses for Children Aged 5, 6 and 7.</p>
     </div>
-
     <div class="categories-boxes row">
         <div class="col-12">
             <div class="subjects-heading">
                 <h2 class="font-22">Subjects - {{$categoryObj->getTitleAttribute()}}</h2>
             </div>
         </div>
-
         <div class="col-12">
         @if( !empty( $courses_list ) )
            @foreach( $courses_list as $courseObj)
@@ -26,7 +24,7 @@
                     <div class="categories-card medium">
                         <div class="categories-icon" style="background:{{$courseObj->background_color}}">
                             @if($courseObj->icon_code != '')
-                                   {!! $courseObj->icon_code !!}
+                                {!! $courseObj->icon_code !!}
                            @else
                                <img src="{!! $courseObj->thumbnail !!}" width="50" height="50" alt="categories image">
                            @endif
@@ -50,10 +48,7 @@
        @endif
         </div>
     </div>
-
 </section>
-
-
 <!-- Bootstrap Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -74,9 +69,6 @@
     </div>
   </div>
 </div>
-
-
-
 @endsection
 
 @push('scripts_bottom')
