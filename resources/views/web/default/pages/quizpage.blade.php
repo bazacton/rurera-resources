@@ -63,12 +63,8 @@
 
 @section('content')
 <section class="content-section">
-
-
-    
     <section class="lms-quiz-section">
-        <div class="read-quiz-info quiz-show">
-        </div>
+        <div class="read-quiz-info quiz-show"></div>
         <div class="container-fluid read-quiz-content">
             <section class="quiz-topbar">
                 <div class="container-fluid">
