@@ -64,10 +64,6 @@ $timer_counter = $practice_time;
 
         </script>
         <div class="read-quiz-info quiz-show"></div>
-        <script>
-
-
-        </script>
         @endif
 
         <div class="container questions-data-block read-quiz-content" data-total_questions="{{$quizQuestions->count()}}">
