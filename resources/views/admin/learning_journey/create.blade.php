@@ -1094,6 +1094,59 @@
         $(".journey-settings-modal").modal('hide');
     });
 
+
+
+        $(document).on('click', '.add-level-stage-treasure-btn', function () {
+            var level_type = 'treasure_mission';
+            var treasure_mission_points = $('.treasure_selection').val();
+
+            if(treasure_mission_points  == 'custom'){
+                treasure_mission_points = $('.custom_treasure_field_data').val();
+            }
+            var unique_id = Math.floor((Math.random() * 99999) + 1);
+            var field_random_number = 'rand_' + unique_id;
+            var layer_html = '';
+            $el = $('<div></div>');
+
+            $el.append($('<div data-no_of_coins="'+treasure_mission_points+'" id="' + field_random_number + '" style="width:20%;left:0%; top:%;" data-item_title="Treasure" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/treasure_1.svg" data-field_type="treasure" data-trigger_class="infobox-treasure_1-fields" data-item_type="treasure" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FFAC33" d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379z"></path></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+            $el.append('</div>');
+            layer_html += `<li data-id="${field_random_number}" data-field_postition="2"><label contenteditable="true">Treasure</label>
+                <div class="actions-menu">
+                    <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort ui-sortable-handle"></i>
+                </div>
+            </li>`;
+
+
+            $(".book-dropzone.active").closest('.editor-zone').find(".editor-objects-list-all").append(layer_html);
+            //$(".book-dropzone.active").closest('.editor-zone').find(".levels-objects-list").append(layer_html);
+            $(".book-dropzone.active").closest('.editor-zone').find(".levels-objects-list").find(".stage_end").last().before(layer_html).length || $(".levels-objects-list").append(layer_html);
+
+
+            $(".book-dropzone.active").append($el);
+            $(".level_add_modal").modal('hide');
+
+
+            $(".editor-objects-list-all").sortable({
+                update: function(event, ui) {
+                    var $list = $(this);
+                    var $stageEnd = $list.find(".stage_end").detach(); // Remove and store the .stage_end element
+                    $list.append($stageEnd);
+
+                    var $stageStart = $list.find(".stage_start").detach(); // Remove and store the .stage_end element
+                    $list.prepend($stageStart);
+                    sorting_render(); // Call your function here
+                }
+            });
+
+            $('.draggable_field_' + field_random_number)
+                .draggable({
+                    preventCollision: true,
+                    containment: $('.book-dropzone.active')
+                })
+                .off('wheel');
+            levels_sorting_render();
+        });
+
         $(document).on('click', '.add-level-stage-topic-btn', function () {
             var level_type = 'topic';
             var unique_id = Math.floor((Math.random() * 99999) + 1);
@@ -1142,6 +1195,57 @@
                 })
                 .off('wheel');
             levels_sorting_render();
+    });
+
+    $(document).on('click', '.add-level-stage-custom-btn', function () {
+        var level_type = 'custom_topic';
+        var unique_id = Math.floor((Math.random() * 99999) + 1);
+        var field_random_number = 'rand_' + unique_id;
+        var layer_html = '';
+        $el = $('<div></div>');
+        var topic_part_item_id = $(this).attr('data-id');
+        var topic_title = $(this).attr('data-title');
+
+        var unique_id = Math.floor((Math.random() * 99999) + 1);
+        var field_random_number = 'rand_' + unique_id;
+        // Perform an action with each topic_part_item_id
+        $el.append($('<div id="' + field_random_number + '" data-topic_part_item_id="'+topic_part_item_id+'" style="width:20%;left:0%; top:0%;" data-item_title="'+topic_title+'" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="topic" data-trigger_class="infobox-topic_numbers-fields" data-item_type="topic_numbers" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 258 264" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="257.641" width="263.774" height="257.64" rx="49.0743" transform="rotate(90 257.641 0)" fill="#8F5C57" fill-opacity="0.79"></rect></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+        $el.append('</div>');
+        layer_html += `<li data-id="${field_random_number}" data-field_postition="2">${topic_title}
+               <div class="actions-menu">
+                    <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort ui-sortable-handle"></i>
+                </div>
+            </li>`;
+
+
+        $(".book-dropzone.active").closest('.editor-zone').find(".editor-objects-list-all").append(layer_html);
+        //$(".book-dropzone.active").closest('.editor-zone').find(".levels-objects-list").append(layer_html);
+        $(".book-dropzone.active").closest('.editor-zone').find(".levels-objects-list").find(".stage_end").last().before(layer_html).length || $(".levels-objects-list").append(layer_html);
+
+
+        $(".book-dropzone.active").append($el);
+        $(".level_add_modal").modal('hide');
+
+
+        $(".editor-objects-list-all").sortable({
+            update: function(event, ui) {
+                var $list = $(this);
+                var $stageEnd = $list.find(".stage_end").detach(); // Remove and store the .stage_end element
+                $list.append($stageEnd);
+
+                var $stageStart = $list.find(".stage_start").detach(); // Remove and store the .stage_end element
+                $list.prepend($stageStart);
+                sorting_render(); // Call your function here
+            }
+        });
+
+        $('.draggable_field_' + field_random_number)
+            .draggable({
+                preventCollision: true,
+                containment: $('.book-dropzone.active')
+            })
+            .off('wheel');
+        levels_sorting_render();
     });
 
 
