@@ -55,7 +55,7 @@ $rand_id = rand(99,9999);
 											<div class="show-notifications" data-show_message="yes"></div>
 
 											<div class="prev-next-controls text-center mb-50 questions-nav-controls disabled-div">
-												<a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
+												<a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1 test" data-target="#review_submit">
 													Finish
 													<svg style="width: 22px;height: 22px;" xmlns="http://www.w3.org/2000/svg" version="1.0" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
 														<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
