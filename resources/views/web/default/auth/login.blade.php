@@ -132,11 +132,11 @@
                                                     <span>Login with</span>
                                                     <a href="https://google.com/" target="_blank" class="social-login">
                                                         <img src="/assets/default/img/auth/google.svg" class="mr-auto" alt=" google svg"/>
-                                                        <!-- <span class="flex-grow-1">{{ trans('auth.google_login') }}</span> -->
+                                                        
                                                     </a>
                                                     <a href="https://www.facebook.com/" target="_blank" class="social-login">
                                                         <img src="/assets/default/img/auth/facebook.svg" class="mr-auto" alt="facebook svg"/>
-                                                        <!-- <span class="flex-grow-1">{{ trans('auth.facebook_login') }}</span> -->
+                                                        
                                                     </a>
                                                     <div class="text-center">
                                                         <a href="/forget-password" target="_blank">{{ trans('auth.forget_your_password') }}</a>
