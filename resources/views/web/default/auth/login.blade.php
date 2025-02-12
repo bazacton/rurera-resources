@@ -102,7 +102,6 @@
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <div class="login-card">
-
                                             <h1 class="font-24 font-weight-bold">Log in to parent account</h1>
                                             <form method="Post" action="/login" class="mt-20">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -119,9 +118,7 @@
 
                                                 <div class="form-group" id="passwordHelp2">
                                                     <label class="input-label" for="password">{{ trans('auth.password') }}:</label>
-
                                                     <input name="password" type="password" class="form-control @error('password')  is-invalid @enderror" id="password" aria-describedby="passwordHelp2">
-
                                                     @error('password')
                                                     <div class="invalid-feedback">
                                                         {{ $message }}
@@ -130,8 +127,7 @@
                                                 </div>
 
                                                 <button type="submit" class="btn btn-primary btn-block mt-20">{{ trans('auth.login') }}</button>
-                                                <!-- <p>By logging in to wonde you confirm you have read and agree <a href="#">terms of <br /> Use</a> and <a href="#">Privacy Notice</a></p>
-                                                <a href="#" class="login-next">Next</a> -->
+                                                
                                                 <div class="login-option">
                                                     <span>Login with</span>
                                                     <a href="https://google.com/" target="_blank" class="social-login">
