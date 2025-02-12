@@ -232,7 +232,7 @@ $practice_time = 0;
                                 <div class="prev-next-controls text-center mb-50 questions-nav-controls">
                                     <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
                                         Finish
-                                        
+                                        <img src="/assets/default/svgs/review-btn-flag.svg" alt="review-btn-flag">
                                     </a>
                                     <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
                                         Next
