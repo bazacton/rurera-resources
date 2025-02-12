@@ -12,7 +12,7 @@ if( !empty( $emojisArray ) ){
 	$emoji_response .= '<div class="emoji-icons">';
 	foreach( $emojisArray as $emojiCode){
 		if( $emojiCode != ''){
-			$emoji_response .= '<a id="icon1" href="javascript:;" class="emoji-icon"><img src="/assets/default/svgs/emojis/icon'.$emojiCode.'.svg" alt="emoji image"></a>';
+			$emoji_response .= '<a id="'.$emojiCode.'" href="javascript:;" class="emoji-icon"><img src="/assets/default/svgs/emojis/icon'.$emojiCode.'.svg" alt="emoji image"></a>';
 		}
 	}
 	$emoji_response .= '</div>';
