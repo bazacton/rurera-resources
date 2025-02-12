@@ -432,8 +432,13 @@
 
 
 
-                            <div class="learning_journey_sets">
-
+                            <div class="learning_journey_sets rurera-processing">
+                                <div class="rurera-button-loader" style="display: block;">
+                                    <div class="spinner">
+                                        <div class="double-bounce1"></div>
+                                        <div class="double-bounce2"></div>
+                                    </div>
+                                </div>
 
                                 @php $li_counter = 1; $li_content_respnose = ''; $li_content_data_response = ''; @endphp
                                 @if( !empty( $LearningJourneyObj->learningJourneyLevels ))
@@ -615,13 +620,21 @@
 
 <script type="text/javascript">
 
+    var loaderDivMain = $(".learning_journey_sets");
+    //rurera_loader(loaderDivMain, 'div');
     var sub_chapters_fetched = false;
+    var categoriesRequest = null;
         $(document).on('change', '.ajax-category-courses', function () {
             var category_id = $(this).val();
             var course_id = $(this).attr('data-course_id');
-            $.ajax({
+            categoriesRequest = $.ajax({
                 type: "GET",
                 url: '/admin/webinars/courses_by_categories',
+                beforeSend: function () {
+                    if (categoriesRequest != null) {
+                        categoriesRequest.abort();
+                    }
+                },
                 data: {'category_id': category_id, 'course_id': course_id},
                 success: function (return_data) {
                     $(".ajax-courses-dropdown").html(return_data);
@@ -631,13 +644,19 @@
             });
         });
 
+        var chaptersRequest = null;
         $(document).on('change', '.ajax-courses-dropdown', function () {
             var course_id = $(this).val();
             var chapter_id = $(this).attr('data-chapter_id');
 
-            $.ajax({
+            chaptersRequest = $.ajax({
                 type: "GET",
                 url: '/admin/webinars/chapters_by_course',
+                beforeSend: function () {
+                    if (chaptersRequest != null) {
+                        chaptersRequest.abort();
+                    }
+                },
                 data: {'course_id': course_id, 'chapter_id': chapter_id},
                 success: function (return_data) {
 
@@ -646,13 +665,19 @@
                 }
             });
         });
+        var subChapter2Request = null;
     $(document).on('change', '.ajax-chapter-dropdown', function () {
         var chapter_id = $(this).val();
         var sub_chapter_id = $(this).attr('data-sub_chapter_id');
         var disabled_items = $(this).attr('data-disabled');
-        $.ajax({
+        subChapter2Request = $.ajax({
             type: "GET",
             url: '/admin/webinars/sub_chapters_by_chapter',
+            beforeSend: function () {
+                if (subChapter2Request != null) {
+                    subChapter2Request.abort();
+                }
+            },
             data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id,  'disabled_items': disabled_items},
             success: function (return_data) {
                 $(".ajax-subchapter-dropdown").html(return_data);
@@ -660,14 +685,21 @@
         });
     });
 
+    var subChapterRequest = null;
     $(document).on('change', '.ajax-subchapter-dropdown', function () {
         var sub_chapter_id = $(this).val();
         var topic_part = $(this).attr('data-next_value');
 		var level_type = $(".level_type").val();
+
 		if(level_type == 'topic'){
-			$.ajax({
+            subChapterRequest = $.ajax({
 				type: "GET",
 				url: '/admin/webinars/topic_part_item_by_sub_chapter',
+                beforeSend: function () {
+                    if (subChapterRequest != null) {
+                        subChapterRequest.abort();
+                    }
+                },
 				data: {'subchapter_id': sub_chapter_id, 'show_all': 'yes', 'topic_part': topic_part},
 				success: function (return_data) {
 					$(".topic-parts-data").html(return_data);
@@ -675,9 +707,14 @@
 			});
 		}
 		if(level_type == 'custom_topic'){
-			$.ajax({
+            subChapterRequest = $.ajax({
 				type: "GET",
 				url: '/admin/webinars/custom_topic_by_sub_chapter',
+                beforeSend: function () {
+                    if (subChapterRequest != null) {
+                        subChapterRequest.abort();
+                    }
+                },
 				data: {'subchapter_id': sub_chapter_id, 'show_all': 'yes', 'topic_part': topic_part},
 				success: function (return_data) {
 					$(".topic-parts-data").html(return_data);
@@ -734,6 +771,7 @@
 <script src="/assets/admin/js/journey-editor.js?ver={{$rand_id}}"></script>
 <script src="/assets/admin/vendor/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
 <script type="text/javascript">
+
 		function check_stages(){
 		  if($(".jounry-stages-lis li").length > 1){
 			  $(".jounry-stages-lis").find('.delete-parent-li').removeClass('rurera-hide');
@@ -776,7 +814,6 @@
                 var $list = $(this);
                 var $stageEnd = $list.find(".stage_end").detach(); // Remove and store the .stage_end element
                 $list.append($stageEnd);
-
                 var $stageStart = $list.find(".stage_start").detach(); // Remove and store the .stage_end element
                 $list.prepend($stageStart);
 				sorting_render(); // Call your function here
@@ -795,6 +832,7 @@
         });
 
         $('body').on('click', '.stage-accordion', function (e) {
+            rurera_loader(loaderDivMain, 'div');
             /*console.log($(".book-dropzone.active").find('.flowchart-link').length);
             if($(".book-dropzone.active").find('.flowchart-link').length == 0) {
                 console.log('no_path_added_1111111111111');
@@ -809,6 +847,8 @@
                 reinitialize_items();
                 $(".book-dropzone.active").closest('.editor-zone').find(".sets-selection.active").click();
                 $(".book-dropzone.active").closest('.editor-zone').find(".page-settings-fields").find('.trigger_field').change();
+                console.log('sdffffffffffffffffffff');
+                rurera_remove_loader(loaderDivMain, 'button');
 
             }, 1000); // 2000 milliseconds = 2 seconds
 
@@ -843,19 +883,43 @@
 		$(".accordion-row.active").click();
 
         $('body').on('click', '.delete-parent-li', function (e) {
+            var level_id = $(this).closest('li').attr('data-id');
 
+            var prev_element = $('.curriculum-item-data[data-level_id="'+level_id+'"]').prev().hasClass('curriculum-item-data');
+            var next_element = $('.curriculum-item-data[data-level_id="'+level_id+'"]').next().hasClass('curriculum-item-data');
+
+            if(prev_element == true){
+                var new_level_id = $('.curriculum-item-data[data-level_id="'+level_id+'"]').prev().attr('data-level_id');
+                //$('.curriculum-item-data[data-level_id="'+level_id+'"]').prev().addClass('active show');
+                //$('.accordion-row[data-id="'+new_level_id+'"]').addClass('active');
+            }else{
+                if(next_element == true){
+                    var new_level_id = $('.curriculum-item-data[data-level_id="'+level_id+'"]').next().attr('data-level_id');
+                    //$('.curriculum-item-data[data-level_id="'+level_id+'"]').next().addClass('active show');
+                    //$('.accordion-row[data-id="'+new_level_id+'"]').addClass('active');
+                }
+            }
             $(this).closest('li').remove();
+            $('.curriculum-item-data[data-level_id="'+level_id+'"]').remove();
+            $('.accordion-row[data-id="'+new_level_id+'"]').find('.stage-accordion').click();
+
 			check_stages();
         });
 
 
+        var categoryRequest = null;
         $('body').on('change', '.category-id-field', function (e) {
             var category_id = $(this).val();
             var subject_id = $(this).attr('data-subject_id');
             var learning_journey_id = '{{isset( $LearningJourneyObj->id )? $LearningJourneyObj->id : 0}}';
-            $.ajax({
+            categoryRequest = $.ajax({
                 type: "GET",
                 url: '/national-curriculum/subjects_by_category',
+                beforeSend: function () {
+                    if (categoryRequest != null) {
+                        categoryRequest.abort();
+                    }
+                },
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
@@ -909,7 +973,7 @@
 					$el.append($('<div id="' + unique_id + '" style="width:20%;left:0%; top:0%;" data-item_title="Start" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id + '" data-id="' + unique_id + '" data-item_path="default/treasure_1.svg" data-field_type="stage_start" data-trigger_class="infobox-stage_start-fields" data-item_type="stage_start" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FFAC33" d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379z"></path></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
 					$el.append('</div>');
 
-					$el.append($('<div id="' + unique_id2 + '" style="width:20%;left:50%; top:0%;" data-item_title="Start" data-unique_id="' + unique_id2 + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id2 + '" data-id="' + unique_id2 + '" data-item_path="default/treasure_1.svg" data-field_type="stage_end" data-trigger_class="infobox-stage_end-fields" data-item_type="stage_end" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FFAC33" d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379z"></path></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+					$el.append($('<div id="' + unique_id2 + '" style="width:20%;left:50%; top:0%;" data-item_title="End" data-unique_id="' + unique_id2 + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id2 + '" data-id="' + unique_id2 + '" data-item_path="default/treasure_1.svg" data-field_type="stage_end" data-trigger_class="infobox-stage_end-fields" data-item_type="stage_end" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FFAC33" d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379z"></path></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
 					$el.append('</div>');
 					$(".book-dropzone.active").append($el);
 
@@ -1010,14 +1074,20 @@
             });
         });
 
+        var curriculumItemRequest = null;
         $('body').on('click', '.add-curriculum-item', function (e) {
             //$(".learning_journey_sets").html('');
             var thisObj = $(this);
             var data_id = $(this).attr('data-data_id');
 			var subject_id = $('.choose-curriculum-subject').val();
-            $.ajax({
+            curriculumItemRequest = $.ajax({
                 type: "GET",
                 url: '/admin/learning_journey/learning_journey_topic_layout',
+                beforeSend: function () {
+                    if (curriculumItemRequest != null) {
+                        curriculumItemRequest.abort();
+                    }
+                },
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
@@ -1030,13 +1100,19 @@
         });
 
 
+        var treasureRequest = null;
 		$('body').on('click', '.add-treasure-item', function (e) {
             //$(".learning_journey_sets").html('');
             var thisObj = $(this);
             var data_id = $(this).attr('data-data_id');
-            $.ajax({
+            treasureRequest = $.ajax({
                 type: "GET",
                 url: '/admin/learning_journey/learning_journey_treasure_layout',
+                beforeSend: function () {
+                    if (treasureRequest != null) {
+                        treasureRequest.abort();
+                    }
+                },
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
@@ -1047,14 +1123,20 @@
             });
         });
 
+        var CurriculumRequest = null;
         $('body').on('click', '.add-curriculum-chapter', function (e) {
             //$(".learning_journey_sets").html('');
             var thisObj = $(this);
             var data_id = $(this).attr('data-data_id');
             var item_id = $(this).attr('data-item_id');
-            $.ajax({
+            CurriculumRequest = $.ajax({
                 type: "GET",
                 url: '/admin/national_curriculum/curriculum_item_chapter_layout',
+                beforeSend: function () {
+                    if (CurriculumRequest != null) {
+                        CurriculumRequest.abort();
+                    }
+                },
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
@@ -1120,7 +1202,7 @@
                 var unique_id = Math.floor((Math.random() * 99999) + 1);
                 var field_random_number = 'rand_' + unique_id;
                 // Perform an action with each topic_part_item_id
-                $el.append($('<div id="' + field_random_number + '" data-topic_part_item_id="'+topic_part_item_id+'" style="width:20%;left:0%; top:0%;" data-item_title="'+topic_title+'" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="topic" data-trigger_class="infobox-topic_numbers-fields" data-item_type="topic_numbers" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 258 264" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="257.641" width="263.774" height="257.64" rx="49.0743" transform="rotate(90 257.641 0)" fill="#8F5C57" fill-opacity="0.79"></rect></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div><a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a></div>'));
+                $el.append($('<div id="' + field_random_number + '" data-topic_part_item_id="'+topic_part_item_id+'" style="width:20%;left:0%; top:0%;" data-item_title="'+topic_title+'" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="topic" data-trigger_class="infobox-topic_numbers-fields" data-item_type="topic_numbers" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 258 264" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="257.641" width="263.774" height="257.64" rx="49.0743" transform="rotate(90 257.641 0)" fill="#8F5C57" fill-opacity="0.79"></rect></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
                 $el.append('</div>');
                 layer_html += `<li data-id="${field_random_number}" data-field_postition="2">${topic_title}
                    <div class="actions-menu">
@@ -1131,7 +1213,7 @@
         }
 
         if(level_type == 'treasure_mission') {
-            $el.append($('<div data-no_of_coins="'+treasure_mission_points+'" id="' + field_random_number + '" style="width:20%;left:0%; top:%;" data-item_title="Treasure" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/treasure_1.svg" data-field_type="treasure" data-trigger_class="infobox-treasure_1-fields" data-item_type="treasure" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FFAC33" d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379z"></path></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div><a href="javascript:;" class="change-position"><span class="fa fa-recycle"></span></a></div>'));
+            $el.append($('<div data-no_of_coins="'+treasure_mission_points+'" id="' + field_random_number + '" style="width:20%;left:0%; top:%;" data-item_title="Treasure" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/treasure_1.svg" data-field_type="treasure" data-trigger_class="infobox-treasure_1-fields" data-item_type="treasure" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#FFAC33" d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379z"></path></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
             $el.append('</div>');
             layer_html += `<li data-id="${field_random_number}" data-field_postition="2"><label contenteditable="true">Treasure</label>
             <div class="actions-menu">
@@ -1259,7 +1341,7 @@
 
 
             var is_already_initiated = $(this).attr('data-intiated_already');
-            if(is_already_initiated == 'no') {
+            if(is_already_initiated != 'yes') {
 
                 $(this).attr('data-intiated_already', 'yes');
 
@@ -1532,6 +1614,10 @@
 		$(".book-dropzone.active").closest('.editor-zone').find(".sets-selection.active").click();
         $(".book-dropzone.active").closest('.editor-zone').find(".page-settings-fields").find('.trigger_field').change();
 
+        setTimeout(function() {
+            rurera_remove_loader(loaderDivMain, 'button');
+
+        }, 2000);
 
 
     });
