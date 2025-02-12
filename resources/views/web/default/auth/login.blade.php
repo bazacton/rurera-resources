@@ -391,7 +391,6 @@
     <script src="/assets/admin/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
     <script>
-
         $(document).on('click', '.login-back-btn', function (e) {
             $(".login-opt-type").addClass('rurera-hide');
             $(".rurera-login-opt-block").removeClass('rurera-hide')
@@ -410,7 +409,6 @@
         var loginSubmitRequest = null;
 
         $(document).on('keyup change', '.login_pin_final', function (e) {
-
             var thisObj = $(this);
             var login_pin_final = $(this).val();
             var total_pin_count = $(this).val().length;
