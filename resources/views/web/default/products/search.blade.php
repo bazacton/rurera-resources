@@ -83,9 +83,7 @@
     <div class="container">
         <section class="pt-lg-50 pt-md-40">
             <form action="{{ (!empty($isRewardProducts) and $isRewardProducts) ? '/reward-products' : '/products' }}" method="get" id="filtersForm">
-
                 @include('web.default.products.includes.top_filters')
-
                 <div class="row">
                     <div class="col-12 col-md-12">
                         <div class="row">
@@ -111,8 +109,7 @@
                         <div class="row align-items-center">
                             <div class="col-12 col-lg-8 col-md-8">
                                 <h2 itemprop="title" class="mb-20 text-white font-40">Ready to start learning?</h2>
-                                <p itemprop="description" class="mb-0 text-white">Discover a growing collection of resources
-                                    delivered through Rurera.</p>
+                                <p itemprop="description" class="mb-0 text-white">Discover a growing collection of resources delivered through Rurera.</p>
                             </div>
                             <div class="col-12 col-lg-4 col-md-4">
                                 <div class="lms-btn-group text-right">
