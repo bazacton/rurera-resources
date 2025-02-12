@@ -1253,7 +1253,7 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 
 .next-btn svg, .next-btn img,
 .prev-btn img {position: absolute; right: 10px; filter: invert(57%) sepia(1%) saturate(1500%) hue-rotate(209deg) brightness(102%) contrast(86%); width: 20px; height: 20px;}
-.next-btn {padding-right: 50px;}
+.next-btn, .prev-btn {padding-right: 50px;}
 
 .review-btn:hover,
 .prev-btn:hover,
