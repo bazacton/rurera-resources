@@ -29,15 +29,11 @@
                 </ul>
             </div>
             @endif
-    </div>
+        </div>
     </div>
 </section>
-
-
 <section>
-
-
-    <div class="activities-container p-20 p-lg-35 ">
+    <div class="activities-container p-20 p-lg-35">
         <div class="chart-filters p-0">
             <div class="filters-list mb-0">
                 <a href="#" class="filter-mobile-btn">Filters</a>
@@ -51,20 +47,11 @@
                     <li {{($type_selected == 'tests')? 'class=active' : ''}}><a href="/{{panelRoute()}}/analytics/tests{{$link_append}}" data-graph_type="tests"><img src="/assets/default/img/sidebar/test.svg" height="800" width="800" alt="test"> TEST</a></li>
                 </ul>
             </div>
-
-
-
             <ul class="analytics-data-ul">
-                <li><a href="javascript:;" class=" hide graph_Custom" data-graph_id="graph_id_Custom">September 20, 2023 -
-                        September 26, 2023</a>
+                <li><a href="javascript:;" class=" hide graph_Custom" data-graph_id="graph_id_Custom">September 20, 2023 - September 26, 2023</a>
                 </li>
-
             </ul>
-
-
-
         </div>
-
         <div class="analytics-dropdown">
             <div class="select-holder">
                 <h5>Subject</h5>
@@ -107,7 +94,6 @@
             </div>
         </div>
         <div class="accordion" id="analyticsAccordion">
-
             @if( !empty( $analytics_data) )
             @foreach( $analytics_data as $date_str => $analyticDataArray)
             @php if(!isset( $analyticDataArray['practice_time'] ) || $analyticDataArray['practice_time'] == 0){ continue; } @endphp
@@ -125,7 +111,6 @@
                             {{ isset( $analyticDataArray['coins_earned'] )? $analyticDataArray['coins_earned'] : 0 }}
                         </span>
                     </span>
-
                 </div>
 
                 <div id="report_{{$date_str}}" class="collapse" data-parent="#analyticsAccordion">
