@@ -115,7 +115,6 @@
                                                     </div>
                                                     @enderror
                                                 </div>
-
                                                 <div class="form-group" id="passwordHelp2">
                                                     <label class="input-label" for="password">{{ trans('auth.password') }}:</label>
                                                     <input name="password" type="password" class="form-control @error('password')  is-invalid @enderror" id="password" aria-describedby="passwordHelp2">
@@ -125,18 +124,14 @@
                                                     </div>
                                                     @enderror
                                                 </div>
-
                                                 <button type="submit" class="btn btn-primary btn-block mt-20">{{ trans('auth.login') }}</button>
-                                                
                                                 <div class="login-option">
                                                     <span>Login with</span>
                                                     <a href="https://google.com/" target="_blank" class="social-login">
-                                                        <img src="/assets/default/img/auth/google.svg" class="mr-auto" alt=" google svg"/>
-                                                        
+                                                        <img src="/assets/default/img/auth/google.svg" class="mr-auto" alt=" google svg"/> 
                                                     </a>
                                                     <a href="https://www.facebook.com/" target="_blank" class="social-login">
                                                         <img src="/assets/default/img/auth/facebook.svg" class="mr-auto" alt="facebook svg"/>
-                                                        
                                                     </a>
                                                     <div class="text-center">
                                                         <a href="/forget-password" target="_blank">{{ trans('auth.forget_your_password') }}</a>
@@ -180,7 +175,6 @@
                                                     </div>
                                                     @enderror
                                                 </div>
-
                                                 <div class="form-group" id="passwordHelp3">
                                                     <label class="input-label" for="password3">{{ trans('auth.password') }}:</label>
                                                     <input name="password" type="password" class="form-control @error('password')  is-invalid @enderror" id="password3" aria-describedby="passwordHelp3">
@@ -190,9 +184,7 @@
                                                     </div>
                                                     @enderror
                                                 </div>
-
                                                 <button type="submit" class="btn btn-primary btn-block mt-20">{{ trans('auth.login') }}</button>
-                                                
                                                 <div class="login-option">
                                                     <span>Login with</span>
                                                     <a href="https://google.com/" target="_blank" class="social-login">
@@ -231,7 +223,6 @@
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <div class="login-card">
-
                                             <h1 class="font-24 font-weight-bold">Log in to educator account</h1>
                                             <form method="Post" action="/login" class="mt-20">
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -245,7 +236,6 @@
                                                     </div>
                                                     @enderror
                                                 </div>
-
                                                 <div class="form-group" id="passwordHelp">
                                                     <label class="input-label" for="password2">{{ trans('auth.password') }}:</label>
                                                     <input name="password" type="password" class="form-control @error('password')  is-invalid @enderror" id="password2" aria-describedby="passwordHelp">
@@ -255,9 +245,7 @@
                                                     </div>
                                                     @enderror
                                                 </div>
-
                                                 <button type="submit" class="btn btn-primary btn-block mt-20">{{ trans('auth.login') }}</button>
-                                                
                                                 <div class="login-controls">
                                                     <div>
                                                         <span>{{ trans('auth.dont_have_account') }}</span>
@@ -305,7 +293,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-12 login-opt-type login-with-pin mx-auto rurera-hide">
                 <a href="javascript:;" class="login-back-btn d-inline-block mb-10 font-18"><span>&#8592;</span> Back</a>
                 <div class="login-holder d-flex flex-column justify-content-center align-items-center">
@@ -364,7 +351,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-12 login-opt-type rurera-hide login-with-emoji">
                 <a href="javascript:;" class="login-back-btn d-inline-block mb-10 font-18"><span>&#8592;</span> Back</a>
                 <div class="login-holder">
