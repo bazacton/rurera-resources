@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
 
 <style type="text/css">
+    .rurera-button-loader{background:#fff !important;}
     .ui-icon-gripsmall-diagonal-se{
         display:none !important;
     }
@@ -900,9 +901,10 @@
                 }
             }
             $(this).closest('li').remove();
+
             $('.curriculum-item-data[data-level_id="'+level_id+'"]').remove();
             $('.accordion-row[data-id="'+new_level_id+'"]').find('.stage-accordion').click();
-
+            //$(".path-tool-item.active").click();
 			check_stages();
         });
 
