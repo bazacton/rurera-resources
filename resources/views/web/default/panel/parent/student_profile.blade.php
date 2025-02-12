@@ -570,14 +570,13 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 						</div>
 					</div>
 					<a href="javascript:;" class="reset-btn regenerate-emoji" data-user_id="{{$user->id}}">
-										<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>
-										  Reset Emoji
-								    </a>
-								<a href="javascript:;" class="reset-btn regenerate-pin" data-user_id="{{$user->id}}">
-										<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>
-										  Reset Pin
-								    </a>
-								
+						<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>
+						Reset Emoji
+					</a>
+					<a href="javascript:;" class="reset-btn regenerate-pin" data-user_id="{{$user->id}}">
+						<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>
+						Reset Pin
+					</a>			
 				</div>
 				<div class="edit-profile edit-profile-block mt-10 rurera-hide">
 						<form class="child-edit-form" method="post" action="javascript:;">
