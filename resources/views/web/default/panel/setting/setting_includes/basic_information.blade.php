@@ -311,7 +311,6 @@ if( !empty( $emojisArray ) ){
 													</div>			
 												</div>
 											</div>
-											
                                         </div>
                                     </div>
                                 </div>
@@ -386,10 +385,6 @@ if( !empty( $emojisArray ) ){
 
 $(document).ready(function () {
 
-
-
-
-
     $(document).on('click', '.regenerate-emoji', function (e) {
         rurera_loader($("#userSettingForm"), 'div');
         var login_emoji = $(".emoji-password-field").val();
@@ -453,10 +448,6 @@ $(document).ready(function () {
         refresh_preference_field();
     });
     refresh_preference_field();
-
-
-
-
 
     $(document).on('click', '.regenerate-pin', function (e) {
         rurera_loader($("#userSettingForm"), 'div');
