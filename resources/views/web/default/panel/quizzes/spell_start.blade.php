@@ -139,7 +139,7 @@ $target_score = 90;
                                             </div>
                                         </div>
                                     </div>
-{{-- Instruction landing Page --}}
+                                    {{-- Instruction landing Page --}}
                                     <div class="info-setting">
                                         <button class="info-btn">
                                             <img src="/assets/default/svgs/info-icon.svg" alt="#">
