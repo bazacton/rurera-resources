@@ -17,13 +17,10 @@
 </section>
 
 <section class="dashboard">
-
     <div class="row">
         <div class="col-12 col-lg-12 mt-35">
             <div class="bg-white noticeboard rounded-sm panel-shadow py-10 py-md-20 px-15 px-md-30">
                 <h3 class="font-16 text-dark-blue font-weight-bold">Edit Child</h3>
-
-
                 <form method="Post" action="/panel/parent/update_child/{{$userData->id}}" class="create_student_form mt-35">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="form-group">
@@ -39,15 +36,10 @@
                         <label class="input-label" for="password">New Password :</label>
                         <input name="password" type="password" class="form-control rurera-req-field" id="password">
                     </div>
-
-
                     <button type="submit" class="btn btn-primary btn-block mt-20 submit-button">Submit</button>
                 </form>
-
             </div>
-
         </div>
-
     </div>
 </section>
 
