@@ -79,12 +79,11 @@
 
 
                                     @if(request()->is('custom_html')  || request()->is('panel/billing')  || request()->is('panel/change_password')  || request()->is('panel/setting') || request()->is('panel/rewards') || request()->is('panel/store/purchases') || request()->is('panel/notifications') || request()->is('panel/support/tickets'))
-                                    <div class="panel-rightside-menu mb-30">
+                                    <div class="panel-rightside-menu mb-30" itemscope itemtype="https://schema.org/Article">
                                         <div class="user-info">
                                             <a href="#">
-
                                                 <img src="{{ $authUser->getAvatar() }}" alt="{{ $authUser->get_full_name() }}" width="100%" height="auto" itemprop="image"
-                                                                                                            alt="User Avatar" loading="eager" title="User Avatar">
+                                                     alt="User Avatar" loading="eager" title="User Avatar">
                                                 <span>
                                                     <strong>{{ $authUser->get_full_name() }}</strong>
                                                     <span>View Your Profile</span>
