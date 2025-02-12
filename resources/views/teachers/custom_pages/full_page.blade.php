@@ -888,11 +888,10 @@
                                         <span>×</span>
                                     </button>
                                     <div class="prev-next-controls">
-                                        <button type="button" class="prev-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-left.svg" alt=""></span> Prev</button>
-                                        <button type="button" class="next-btn"><span class="icon-box">Next <img src="/assets/default/svgs/arrow-right.svg" alt=""></span></button>
+                                        <button type="button" class="prev-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-left.svg" alt="arrow-left"></span> Prev</button>
+                                        <button type="button" class="next-btn"><span class="icon-box">Next <img src="/assets/default/svgs/arrow-right.svg" alt="arrow-right"></span></button>
                                     </div>
                                 </div>
-
                                 <div class="edit-questions-difficulty-tabs mb-30">
                                     <div class="edit-questions-difficulty-data">
                                         <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills mt-20" id="assignment_tabs" role="tablist">
@@ -943,7 +942,7 @@
                                             </div>
                                             <div class="col-12 col-md-4 col-lg-3">
                                                 <div class="sats-summary-icon" style="background-color: #fe3c30;">
-                                                    <img src="/assets/default/svgs/question-circle-white.svg" alt="">
+                                                    <img src="/assets/default/svgs/question-circle-white.svg" alt="question-circle-white">
                                                 </div>
                                                 <div class="summary-text">
                                                     <label>Incorrect / Not Attempted</label>
@@ -1011,9 +1010,7 @@
                                             <div class="left-content has-bg">
                                                 <h2>&nbsp;</h2>
                                                 <div id="rureraform-form-1" class="rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
-                                                    <div class="question-layout">
-
-                                                    </div>
+                                                    <div class="question-layout"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1045,16 +1042,16 @@
                                                 </div>
                                                 <div class="form-field rureraform-cr-container-medium wrong">
                                                     <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-11-8001" value="Square-based pyramid"><label for="field-19093-11-8001">
-                                                    <img src="/media/topic_parts/121/shape-2.png" alt="">Square-based pyramid
+                                                    <img src="/media/topic_parts/121/shape-2.png" alt="shape-2">Square-based pyramid
                                                     </label>
                                                 </div>
                                                 <div class="form-field rureraform-cr-container-medium">
                                                     <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-22-8001" value="Triangular prism"><label for="field-19093-22-8001">
-                                                    <img src="/media/topic_parts/121/shape-3.png" alt=""> 							Triangular prism
+                                                    <img src="/media/topic_parts/121/shape-3.png" alt="shape-3"> 							Triangular prism
                                                     </label>
                                                 </div>                                                                                                                                         <div class="form-field rureraform-cr-container-medium">
                                                     <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-33-8001" value="Triangular-based pyramid"><label for="field-19093-33-8001">
-                                                    <img src="/media/topic_parts/121/shape-4.png" alt=""> 							Triangular-based pyramid
+                                                    <img src="/media/topic_parts/121/shape-4.png" alt="shape-4"> 							Triangular-based pyramid
                                                     </label>
                                                 </div>                                                                                                        </div>
                                             </div>
