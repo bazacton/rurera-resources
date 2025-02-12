@@ -231,14 +231,7 @@ if( !empty( $emojisArray ) ){
                     <div class="col-lg-12 col-md-12 col-12">
                         <div class="edit-profile-content-holder tab-content" id="myTabContent">
                             <div class="edit-profile-content panel-border bg-white rounded-sm p-25 tab-pane fade show active" id="edit-profile" role="tabpanel" aria-labelledby="edit-profile-tab">
-                                <!-- <div class="edit-profile-top d-flex align-items-center flex-wrap justify-content-between mb-50">
-                                    <div class="top-heading">
-                                        <h5 class="font-16 font-weight-500">
-                                            GENERAL INFO
-                                            <span class="d-block pt-5 font-12">Edit your account's general information</span>
-                                        </h5>
-                                    </div>
-                                </div> -->
+                                
                                 <div class="edit-element-title mb-15">
                                     <h6 class="font-weight-500">
                                         Profile picture
