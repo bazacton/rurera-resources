@@ -78,10 +78,7 @@ $target_score = 90;
 
         </script>
         <div class="read-quiz-info quiz-show"></div>
-        <script>
-
-
-        </script>
+        
         @endif
 
         <div class="container-fluid questions-data-block read-quiz-content"
