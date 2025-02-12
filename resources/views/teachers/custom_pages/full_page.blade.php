@@ -1051,28 +1051,23 @@
                                                     </label>
                                                 </div>
                                                 <div class="form-field rureraform-cr-container-medium">
-                                                                <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-22-8001" value="Triangular prism"><label for="field-19093-22-8001">
-                                                                <img src="/media/topic_parts/121/shape-3.png" alt=""> 							Triangular prism
-                                                                                            </label>
-                                                            </div>
-                                                                                                                                                                                                            <div class="form-field rureraform-cr-container-medium">
-                                                                <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-33-8001" value="Triangular-based pyramid"><label for="field-19093-33-8001">
-                                                                <img src="/media/topic_parts/121/shape-4.png" alt=""> 							Triangular-based pyramid
-                                                                                            </label>
-                                                            </div>
-                                                                                                                                                                </div>
+                                                    <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-22-8001" value="Triangular prism"><label for="field-19093-22-8001">
+                                                    <img src="/media/topic_parts/121/shape-3.png" alt=""> 							Triangular prism
+                                                    </label>
+                                                </div>                                                                                                                                         <div class="form-field rureraform-cr-container-medium">
+                                                    <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-33-8001" value="Triangular-based pyramid"><label for="field-19093-33-8001">
+                                                    <img src="/media/topic_parts/121/shape-4.png" alt=""> 							Triangular-based pyramid
+                                                    </label>
+                                                </div>                                                                                                        </div>
                                             </div>
-                                                </div>
+                                        </div>
                                         <div class="rureraform-element-cover"></div>
                                     </div>
                                     </div>
-
                                         <div class="validation-error"></div>
                                     </div>
-
                                     </div>
                                     </form>
-                                    
                                     <div class="lms-radio-lists">
                                             <span class="list-title">Correct answer:</span>
                                             <ul class="lms-radio-btn-group lms-user-answer-block"><li><label class="lms-question-label" for="radio2"><span>Cube</span></label></li></ul>
