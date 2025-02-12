@@ -146,36 +146,36 @@ $target_score = 90;
                                         </button>
                                         <div class="instruction-dropdown">
                                             <div class="instruction-text">
-                                                            <h3>INSTRUCTIONS</h3>
-                                                            <h4>Setting Up Your Page</h4>
-                                                            <p>Before you start the test you can use the buttons on the top right of the screen to choose:</p>
-                                                            <ul>
-                                                                <li>a coloured overlay (this will change the background colour and may help you read the questions better)</li>
-                                                            </ul>
-                                                            <img src="/assets/default/img/overlay.png" alt="#">
-                                                            <ul>
-                                                                <li>the font size</li>
-                                                            </ul>
-                                                            <img src="/assets/default/img/font-size.png">
-                                                            <p>We recommend you setup your page BEFORE the test starts.</p>
-                                                            <p>Changing these features during the test will reduce the amount of time you have to answer the questions.</p>
-                                                            <hr style="border-color:rgba(130, 80, 232, 0.15)">
-                                                            <h4>Navigating The Test</h4>
-                                                            <p>Read the instructions for each question carefully.</p>
-                                                            <p>Choose your answer by clicking on it. If you want to change your mind, click on a different answer.</p>
-                                                            <p>Once you are sure of your answer click ‘Submit Answer’. You will not be able to go back to change your answer.</p>
-                                                            <img src="/assets/default/img/answer.png" alt="#">
-                                                            <p>You can use a pen/pencil and paper to make notes if you wish. Your working and notes will not be marked.</p>
-                                                            <hr style="border-color:rgba(130, 80, 232, 0.15)">
-                                                            <h4>About The Test</h4>
-                                                            <p>The Verbal Reasoning Test assesses a range of English language skills including:</p>
-                                                            <ul>
-                                                                <li>Comprehension</li>
-                                                                <li>Reasoning</li>
-                                                                <li>Logic</li>
-                                                            </ul>
-                                                            <p>The questions you see in this Walkthrough are examples of these types.</p>
-                                                            <p>Some of these types may appear in the test, while others may not.</p>
+                                                <h3>INSTRUCTIONS</h3>
+                                                <h4>Setting Up Your Page</h4>
+                                                <p>Before you start the test you can use the buttons on the top right of the screen to choose:</p>
+                                                <ul>
+                                                    <li>a coloured overlay (this will change the background colour and may help you read the questions better)</li>
+                                                </ul>
+                                                <img src="/assets/default/img/overlay.png" alt="#">
+                                                <ul>
+                                                    <li>the font size</li>
+                                                </ul>
+                                                <img src="/assets/default/img/font-size.png">
+                                                <p>We recommend you setup your page BEFORE the test starts.</p>
+                                                <p>Changing these features during the test will reduce the amount of time you have to answer the questions.</p>
+                                                <hr style="border-color:rgba(130, 80, 232, 0.15)">
+                                                <h4>Navigating The Test</h4>
+                                                <p>Read the instructions for each question carefully.</p>
+                                                <p>Choose your answer by clicking on it. If you want to change your mind, click on a different answer.</p>
+                                                <p>Once you are sure of your answer click ‘Submit Answer’. You will not be able to go back to change your answer.</p>
+                                                <img src="/assets/default/img/answer.png" alt="#">
+                                                <p>You can use a pen/pencil and paper to make notes if you wish. Your working and notes will not be marked.</p>
+                                                <hr style="border-color:rgba(130, 80, 232, 0.15)">
+                                                <h4>About The Test</h4>
+                                                <p>The Verbal Reasoning Test assesses a range of English language skills including:</p>
+                                                <ul>
+                                                    <li>Comprehension</li>
+                                                    <li>Reasoning</li>
+                                                    <li>Logic</li>
+                                                </ul>
+                                                <p>The questions you see in this Walkthrough are examples of these types.</p>
+                                                <p>Some of these types may appear in the test, while others may not.</p>
                                               </div>
                                         </div>
                                     </div>
@@ -214,8 +214,6 @@ $target_score = 90;
                     </div>
                 </div>
             </section>
-
-
             <div class="justify-content-center spell-quiz-page pt-50">
                 <div class="container">
                     <div class="row">
@@ -250,21 +248,17 @@ $target_score = 90;
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-					
 					 <div class="question-attempt-block rurera-hide"><h2>Another session is active in a different location. Please continue from there.</h2></div>
 
                     <div class="question-area-block" data-quiz_result_id="{{isset( $newQuizStart->id )? $newQuizStart->id : 0}}" data-duration_type="{{isset( $duration_type )? $duration_type : 'no_time_limit'}}" data-time_interval="{{isset( $time_interval )? $time_interval : 0}}" data-practice_time="{{isset( $practice_time )? $practice_time : 0}}"
-                                                                     data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
+                         data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
 					@php $timer_counter = 0; $total_questions_count = 10; $total_points = 10; $total_play_time = 10; @endphp
 					<div class="question-area spell-question-area">
 						<div class="correct-appriciate" style="display:none"></div>
 						
 							<div class="question-layout-block">				 
-							
-							
 							<div class="spells-quiz-info">
 							<ul>
 								<li class="show-correct-answer">
@@ -282,8 +276,6 @@ $target_score = 90;
 							</ul>
 						</div>
 							
-							
-							
                         @if( is_array( $question ))
                         @php $question_no = 1; @endphp
 
@@ -300,9 +292,7 @@ $target_score = 90;
                         @php $question_no++; @endphp
                         @endforeach
                         @else
-                        
-					
-					
+                    
 						@if( !empty( $questions_layout  ) )
 							@php $question_counter  = 1; @endphp
 							@foreach( $questions_layout as $result_question_id => $questionLayout)
@@ -322,17 +312,10 @@ $target_score = 90;
 							@endforeach
 						@endif
 					
-
                         @endif
 						
-						
-						
-                    <div class="question-correct-answere rurera-hide">
-                    </div>
+                    <div class="question-correct-answere rurera-hide"></div>
 					<div class="question-populated-response"></div>
-						
-						
-						
 						<div class="prev-next-controls text-center mb-50 questions-nav-controls">
 							<a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
 								Finish
@@ -351,10 +334,7 @@ $target_score = 90;
 								Next
 							</a>
 						</div>
-						
-						
-						
-						</div>
+					</div>
 
         </div>
     </div>		
