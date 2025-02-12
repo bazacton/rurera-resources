@@ -8,35 +8,33 @@
 @section('content')
 
 <section>
-    <div class="activities-container mt-25 p-20 p-lg-35">
-        <div class="row">
-            <div class="col-4 d-flex align-items-center justify-content-center">
-                <div class="d-flex flex-column align-items-center text-center">
-                    <img src="/assets/default/svgs/calculator-game.svg" width="90" height="90" alt="calculator-game">
-                    <strong class="font-24 mt-5">64</strong>
-                    <span class="font-16 text-gray font-weight-500">Total Games</span>
-                </div>
+<div class="activities-container mt-25 p-20 p-lg-35">
+    <div class="row">
+        <div class="col-4 d-flex align-items-center justify-content-center">
+            <div class="d-flex flex-column align-items-center text-center">
+                <img src="/assets/default/svgs/calculator-game.svg" width="90" height="90" alt="calculator-game">
+                <strong class="font-24 mt-5">64</strong>
+                <span class="font-16 text-gray font-weight-500">Total Games</span>
             </div>
+        </div>
 
-            <div class="col-4 d-flex align-items-center justify-content-center">
-                <div class="d-flex flex-column align-items-center text-center">
-                    <img src="/assets/default/svgs/report-game.svg" width="90" height="90" alt="report-game">
-                    <strong class="font-24 mt-5">64</strong>
-                    <span class="font-16 text-gray font-weight-500">Daily Average Time</span>
-                </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+            <div class="d-flex flex-column align-items-center text-center">
+                <img src="/assets/default/svgs/report-game.svg" width="90" height="90" alt="report-game">
+                <strong class="font-24 mt-5">64</strong>
+                <span class="font-16 text-gray font-weight-500">Daily Average Time</span>
             </div>
+        </div>
 
-            <div class="col-4 d-flex align-items-center justify-content-center">
-                <div class="d-flex flex-column align-items-center text-center">
-                    <img src="/assets/default/svgs/time-game.svg" width="90" height="90" alt="time-game">
-                    <strong class="font-24 mt-5">0</strong>
-                    <span class="font-16 text-gray font-weight-500">Today Remaining Time</span>
-                </div>
+        <div class="col-4 d-flex align-items-center justify-content-center">
+            <div class="d-flex flex-column align-items-center text-center">
+                <img src="/assets/default/svgs/time-game.svg" width="90" height="90" alt="time-game">
+                <strong class="font-24 mt-5">0</strong>
+                <span class="font-16 text-gray font-weight-500">Today Remaining Time</span>
             </div>
         </div>
     </div>
-
-
+</div>
 <div class="dashboard-games-holder">
     <div class="row mt-35">
         <div class="col-12 col-md-6 col-sm-6 col-lg-4">
