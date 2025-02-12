@@ -58,64 +58,63 @@
             </button>
             </div>
             <ul class="sidebar-menu pt-10 @if(!empty($authUser->userGroup)) has-user-group @endif @if(empty($getPanelSidebarSettings) or empty($getPanelSidebarSettings['background'])) without-bottom-image @endif" @if((!empty($isRtl) and $isRtl)) data-simplebar-direction="rtl" @endif>
-                    <li class="sidenav-item {{ (request()->is('panel')) ? 'sidenav-item-active' : '' }}">
-                        <a href="/{{panelRoute()}}" class="d-flex align-items-center font-16" data-toggle="tooltip" data-placement="left" title="Home">
-                            <span class="sidenav-item-icon mr-20">
-                                <img src="/assets/default/img/sidebar/home.svg">
-                            </span>
-                            <span class="nav-sub-title font-16">Home</span>
-                        </a>
-                    </li>
+                <li class="sidenav-item {{ (request()->is('panel')) ? 'sidenav-item-active' : '' }}">
+                    <a href="/{{panelRoute()}}" class="d-flex align-items-center font-16" data-toggle="tooltip" data-placement="left" title="Home">
+                        <span class="sidenav-item-icon mr-20">
+                            <img src="/assets/default/img/sidebar/home.svg">
+                        </span>
+                        <span class="nav-sub-title font-16">Home</span>
+                    </a>
+                </li>
                 @if(auth()->user()->isParent() || auth()->user()->isTutor())
-                    <li class="sidenav-item {{ (request()->is('panel/set-work') or request()->is('panel/set-work/*')) ? 'sidenav-item-active' : '' }}">
-                        <a class="d-flex align-items-center" href="/{{panelRoute()}}/set-work" data-toggle="tooltip" data-placement="left" title="Set Work">
-                            <span class="sidenav-setting-icon sidenav-item-icon mr-20">
-                                <img src="/assets/default/img/sidebar/set-work.svg">
-                            </span>
-                        </a>
-                        <a href="/{{panelRoute()}}/set-work" class="font-16 nav-sub-title">Set Work</a>
-                    </li>
-
+                <li class="sidenav-item {{ (request()->is('panel/set-work') or request()->is('panel/set-work/*')) ? 'sidenav-item-active' : '' }}">
+                    <a class="d-flex align-items-center" href="/{{panelRoute()}}/set-work" data-toggle="tooltip" data-placement="left" title="Set Work">
+                        <span class="sidenav-setting-icon sidenav-item-icon mr-20">
+                            <img src="/assets/default/img/sidebar/set-work.svg">
+                        </span>
+                    </a>
+                    <a href="/{{panelRoute()}}/set-work" class="font-16 nav-sub-title">Set Work</a>
+                </li>
                 @endif
                 @if(auth()->user()->isUser())
-                        <li class="sidenav-item {{ (request()->is('learn') or request()->is('learn/*')) ? 'sidenav-item-active' : '' }}">
-                            <a class="d-flex align-items-center" href="/learn" data-toggle="tooltip" data-placement="left" title="Learn">
-                                <span class="sidenav-item-icon mr-20">
-                                    <img src="/assets/default/img/sidebar/learn.svg" alt="learn" width="800" height="800">
-                                </span>
-                            </a>
-                                <a href="/learn" class="font-16 nav-sub-title">Learn @if(!auth()->subscription('courses'))<img src="/assets/default/svgs/crown.svg" alt="crown" class="crown-icon">@endif</a>
-                        </li>
-                        @if(auth()->user()->show_timestables == 1)
-                            <li class="sidenav-item {{ (request()->is('timestables-practice') or request()->is('timestables-practice/*')) ? 'sidenav-item-active' : '' }}">
-                                <a class="d-flex align-items-center" href="/timestables-practice" data-toggle="tooltip" data-placement="left" title="TimesTable">
-                                    <span class="sidenav-item-icon mr-20">
-                                        <img src="/assets/default/img/sidebar/timestable.svg" width="800" height="800" alt="timestable">
-                                    </span>
-                                </a>
-                                <a href="/timestables-practice" class="font-16 nav-sub-title">TimesTable</a>
-                            </li>
-                        @endif
-                        @if(auth()->user()->show_spellings == 1)
-                        <li class="sidenav-item {{ (request()->is('spells') or request()->is('spells/*')) ? 'sidenav-item-active' : '' }}">
-                            <a class="d-flex align-items-center" href="/spells" data-toggle="tooltip" data-placement="left" title="Word Lists">
-                                <span class="sidenav-item-icon mr-20">
-                                    <img src="/assets/default/img/sidebar/spell.svg" width="800" height="800" alt="spell">
-                                </span>
-                            </a>
-                            <a href="/spells" class="font-16 nav-sub-title">Word Lists</a>
-                        </li>
-                        @endif
-                        @if(auth()->user()->show_books == 1)
-                        <li class="sidenav-item {{ (request()->is('books') or request()->is('books/*')) ? 'sidenav-item-active' : '' }}">
-                            <a class="d-flex align-items-center" href="/books" data-toggle="tooltip" data-placement="left" title="Books">
-                                <span class="sidenav-item-icon mr-20">
-                                    <img src="/assets/default/img/sidebar/books.svg" width="800" height="800" alt="books">
-                                </span>
-                            </a>
-                                <a href="/books" class="font-16 nav-sub-title">Books @if(!auth()->subscription('bookshelf'))<img src="/assets/default/svgs/crown.svg" class="crown-icon">@endif</a>
-                        </li>
-                        @endif
+                    <li class="sidenav-item {{ (request()->is('learn') or request()->is('learn/*')) ? 'sidenav-item-active' : '' }}">
+                        <a class="d-flex align-items-center" href="/learn" data-toggle="tooltip" data-placement="left" title="Learn">
+                            <span class="sidenav-item-icon mr-20">
+                                <img src="/assets/default/img/sidebar/learn.svg" alt="learn" width="800" height="800">
+                            </span>
+                        </a>
+                            <a href="/learn" class="font-16 nav-sub-title">Learn @if(!auth()->subscription('courses'))<img src="/assets/default/svgs/crown.svg" alt="crown" class="crown-icon">@endif</a>
+                    </li>
+                    @if(auth()->user()->show_timestables == 1)
+                    <li class="sidenav-item {{ (request()->is('timestables-practice') or request()->is('timestables-practice/*')) ? 'sidenav-item-active' : '' }}">
+                        <a class="d-flex align-items-center" href="/timestables-practice" data-toggle="tooltip" data-placement="left" title="TimesTable">
+                            <span class="sidenav-item-icon mr-20">
+                                <img src="/assets/default/img/sidebar/timestable.svg" width="800" height="800" alt="timestable">
+                            </span>
+                        </a>
+                        <a href="/timestables-practice" class="font-16 nav-sub-title">TimesTable</a>
+                    </li>
+                @endif
+                @if(auth()->user()->show_spellings == 1)
+                <li class="sidenav-item {{ (request()->is('spells') or request()->is('spells/*')) ? 'sidenav-item-active' : '' }}">
+                    <a class="d-flex align-items-center" href="/spells" data-toggle="tooltip" data-placement="left" title="Word Lists">
+                        <span class="sidenav-item-icon mr-20">
+                            <img src="/assets/default/img/sidebar/spell.svg" width="800" height="800" alt="spell">
+                        </span>
+                    </a>
+                    <a href="/spells" class="font-16 nav-sub-title">Word Lists</a>
+                </li>
+                @endif
+                @if(auth()->user()->show_books == 1)
+                <li class="sidenav-item {{ (request()->is('books') or request()->is('books/*')) ? 'sidenav-item-active' : '' }}">
+                    <a class="d-flex align-items-center" href="/books" data-toggle="tooltip" data-placement="left" title="Books">
+                        <span class="sidenav-item-icon mr-20">
+                            <img src="/assets/default/img/sidebar/books.svg" width="800" height="800" alt="books">
+                        </span>
+                    </a>
+                        <a href="/books" class="font-16 nav-sub-title">Books @if(!auth()->subscription('bookshelf'))<img src="/assets/default/svgs/crown.svg" class="crown-icon">@endif</a>
+                </li>
+                @endif
                     
                     @if(auth()->user()->show_sats == 1)
                     <li class="sidenav-item {{ (request()->is('tests') or request()->is('tests/*')) ? 'sidenav-item-active' : '' }}">
