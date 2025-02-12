@@ -82,10 +82,7 @@ if( !empty( $emojisArray ) ){
 </style>
 <section>
     <h2 class="section-title">{{ trans('financial.account') }}</h2>
-
     <div class="row mt-30">
-
-
         <div class="col-12 user-profile-block rurera-hide">
             <div class="user-detail mb-50">
                 <div class="detail-header mb-25 pb-25">
@@ -277,7 +274,6 @@ if( !empty( $emojisArray ) ){
                                                 </div>
                                             </div>	
 											
-											
 											<div class="col-12">
                                                 <div class="edit-element-title mb-10">
                                                     <h6 class="font-weight-500">
@@ -312,11 +308,9 @@ if( !empty( $emojisArray ) ){
 																</li>
 															</ul>
 														</div>
-													</div>
-																
+													</div>			
 												</div>
 											</div>
-											
 											
                                         </div>
                                     </div>
@@ -333,7 +327,6 @@ if( !empty( $emojisArray ) ){
                 </div>
             </div>
         </div>
-
 </section>
 <div class="modal fade" id="profile-image-modal" tabindex="-1" role="dialog" aria-labelledby="profile-image-modal">
     <div class="modal-dialog modal-lg" role="document">
@@ -347,8 +340,6 @@ if( !empty( $emojisArray ) ){
         </div>
     </div>
 </div>
-
-
 <div class="modal fade" id="avatarCropModalContainer" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
