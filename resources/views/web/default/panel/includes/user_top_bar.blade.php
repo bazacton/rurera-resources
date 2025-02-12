@@ -103,8 +103,6 @@
                         <div class="d-md-none border-bottom mb-20 pb-10 text-right">
                             <i class="close-dropdown" data-feather="x" width="32" height="32" class="mr-10"></i>
                         </div>
-
-
                         @if( !empty( $profile_navs ) )
                         <div class="user-nav-list">
                             @foreach( $profile_navs as $profile_nav)
@@ -116,11 +114,9 @@
                                 <span class="font-16 text-dark-blue user-list-name">{{ $full_name }}</span>
                                 <span class="font-16 text-dark-blue user-list-email">{{ $profile_nav['email'] }}</span>
                             </a>
-
                             @endforeach
                         </div>
                         @endif
-
                         <a class="dropdown-item nav-logout" href="/logout">
                             <img src="/assets/default/img/icons/sidebar/logout.svg" height="24" itemprop="image"
                                  width="24" alt="nav-icon" title="nav-icon" loading="eager">
@@ -128,7 +124,6 @@
                         </a>
                     </div>
                 </div>
-
                 @endif
                 @else
                 <div class="d-flex align-items-center ml-md-50">
