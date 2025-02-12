@@ -70,10 +70,8 @@ $timer_counter = $practice_time;
         </script>
         @endif
 
-        <div class="container questions-data-block read-quiz-content"
-             data-total_questions="{{$quizQuestions->count()}}">
+        <div class="container questions-data-block read-quiz-content" data-total_questions="{{$quizQuestions->count()}}">
             @php $top_bar_class = ($quiz->quiz_type == 'vocabulary')? 'rurera-hide' : ''; @endphp
-
             <section class="quiz-topbar {{$top_bar_class}}">
                 <div class="container-fluid">
                     <div class="row">
@@ -124,8 +122,6 @@ $timer_counter = $practice_time;
                     </div>
                 </div>
             </section>
-
-
             <div class="justify-content-center">
                 <div class="col-lg-9 col-md-12 col-sm-12 mt-50 mx-auto">
                     <div class="question-step quiz-complete" style="display:none">
@@ -144,83 +140,77 @@ $timer_counter = $practice_time;
 
                         </div>
                     </div>
-
                     <div class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
                         @php $total_questions = 10; @endphp
                         <div class="question-area dis-arrows1" data-total_questions="{{$total_questions}}">
                             <div class="correct-appriciate" style="display:none"></div>
                             <div class="question-inner-step-area">
                                 <div class="question-layout-block">
+                                    <div class="left-content has-bg">
+                                        @if( is_array( $question ))
+                                        @php $question_no = 1; @endphp
 
-                                        <div class="left-content has-bg">
+                                        @foreach( $question as $questionObj)
+                                        @include('web.default.panel.questions.question_layout',[
+                                        'question'=> $questionObj,
+                                        'prev_question' => 0,
+                                        'next_question' => 0,
+                                        'question_no' => $question_no,
+                                        'quizAttempt' => $quizAttempt,
+                                        'newQuestionResult' => $newQuestionResult,
+                                        'quizResultObj' => $newQuizStart
+                                        ])
+                                        @php $question_no++; @endphp
+                                        @endforeach
+                                        @else
 
+                                        @if( !empty( $questions_layout  ) )
+                                            @php $question_counter  = 1; @endphp
+                                            @foreach( $questions_layout as $result_question_id => $questionLayout)
+                                                @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
+                                                $active_class = ($active_question_id == $active_actual_question_id)? 'active' : '';
+                                                $active_class = ($active_class == '' && $question_counter == 1)? 'active' : '';
+                                                @endphp
+                                                <div class="rurera-question-block question-step question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
+                                                data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
+                                                data-start_time="0" data-qresult="{{isset( $result_question_id )? $result_question_id : 0}}"
+                                                data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
+                                                
+                                                {!! $questionLayout !!}
+                                                
+                                                Question ID: {{$active_actual_question_id}}
+                                                </div>
 
-                            @if( is_array( $question ))
-                            @php $question_no = 1; @endphp
+                                                @php $question_counter++; @endphp
+                                            @endforeach
+                                        @endif
 
-                            @foreach( $question as $questionObj)
-                            @include('web.default.panel.questions.question_layout',[
-                            'question'=> $questionObj,
-                            'prev_question' => 0,
-                            'next_question' => 0,
-                            'question_no' => $question_no,
-                            'quizAttempt' => $quizAttempt,
-                            'newQuestionResult' => $newQuestionResult,
-                            'quizResultObj' => $newQuizStart
-                            ])
-                            @php $question_no++; @endphp
-                            @endforeach
-                            @else
-
-
-
-                            @if( !empty( $questions_layout  ) )
-                                @php $question_counter  = 1; @endphp
-                                @foreach( $questions_layout as $result_question_id => $questionLayout)
-                                    @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
-                                    $active_class = ($active_question_id == $active_actual_question_id)? 'active' : '';
-                                    $active_class = ($active_class == '' && $question_counter == 1)? 'active' : '';
-                                    @endphp
-                                    <div class="rurera-question-block question-step question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
-                                    data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
-                                    data-start_time="0" data-qresult="{{isset( $result_question_id )? $result_question_id : 0}}"
-                                    data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
-									
-                                    {!! $questionLayout !!}
-									
-									Question ID: {{$active_actual_question_id}}
+                                        @endif
+                                        <div class="show-notifications" data-show_message="yes"></div>
+                                            <div class="prev-next-controls text-center mb-50 questions-nav-controls">
+                                                <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
+                                                    Finish
+                                                    <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
+                                                </a>
+                                                <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
+                                                    Next
+                                                    <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
+                                                </a>
+                                                <a href="javascript:;" id="prev-btn" class="rurera-hide prev-btn">
+                                                    prev
+                                                    <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
+                                                </a>
+                                                <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
+                                                    mark answer
+                                                </a>
+                                                <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
+                                                    Next
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    @php $question_counter++; @endphp
-                                @endforeach
-                            @endif
-
-                            @endif
-                            <div class="show-notifications" data-show_message="yes"></div>
-                                <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-                                    <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
-                                        Finish
-                                        <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
-                                    </a>
-                                    <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
-                                        Next
-                                        <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                    </a>
-                                    <a href="javascript:;" id="prev-btn" class="rurera-hide prev-btn">
-                                        prev
-                                        <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                    </a>
-                                    <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
-                                        mark answer
-                                    </a>
-                                    <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
-                                        Next
-                                    </a>
                                 </div>
                             </div>
-								</div>
-							</div>
-						</div>
                         </div>
                     <div class="question-area-temp hide"></div>
                 </div>
