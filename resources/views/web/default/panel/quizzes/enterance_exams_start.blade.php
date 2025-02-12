@@ -197,8 +197,6 @@ $timer_counter = $practice_time;
 
                             @endif
                             <div class="show-notifications" data-show_message="yes"></div>
-
-
                                 <div class="prev-next-controls text-center mb-50 questions-nav-controls">
                                     <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
                                         Finish
@@ -220,26 +218,15 @@ $timer_counter = $practice_time;
                                     </a>
                                 </div>
                             </div>
-
 								</div>
 							</div>
-
 						</div>
-
-
-
-
                         </div>
-
                     <div class="question-area-temp hide"></div>
-
                 </div>
-
             </div>
         </div>
     </section>
-
-
 </div>
 
 @if($quiz->quiz_type == 'vocabulary')
