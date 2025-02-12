@@ -487,33 +487,25 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 							</div>
 							
 							<div class="col-6 col-sm-12 col-md-6 col-lg-6">
-								
 								<div class="form-group custom-switches-stacked mb-15">
 									<label class="custom-switch pl-0">
-										<input type="checkbox" name="hide_games"
-												id="hide_games_field" value="1" class="custom-switch-input"  {{($user->hide_games == 1)? 'checked' : ''}}/>
+										<input type="checkbox" name="hide_games" id="hide_games_field" value="1" class="custom-switch-input"  {{($user->hide_games == 1)? 'checked' : ''}}/>
 										<span class="custom-switch-indicator"></span>
-										<label class="custom-switch-description mb-0 cursor-pointer"
-												for="hide_games_field"><span>Hide Games</span></label>
+										<label class="custom-switch-description mb-0 cursor-pointer" for="hide_games_field"><span>Hide Games</span></label>
 									</label>
 								</div>
 							</div>
 							
 							<div class="col-6 col-sm-12 col-md-6 col-lg-6">
-								
 								<div class="form-group custom-switches-stacked mb-15">
 									<label class="custom-switch pl-0">
-										<input type="checkbox" name="hide_books"
-												id="hide_books_field" value="1" class="custom-switch-input"  {{($user->hide_books == 1)? 'checked' : ''}}/>
+										<input type="checkbox" name="hide_books" id="hide_books_field" value="1" class="custom-switch-input"  {{($user->hide_books == 1)? 'checked' : ''}}/>
 										<span class="custom-switch-indicator"></span>
-										<label class="custom-switch-description mb-0 cursor-pointer"
-												for="hide_books_field"><span>Hide Books</span></label>
+										<label class="custom-switch-description mb-0 cursor-pointer" for="hide_books_field"><span>Hide Books</span></label>
 									</label>
 								</div>
 							</div>
-								
-								
-							</div>
+						</div>
 							
 						<div class="edit-profile-controls">
 							<input type="hidden" name="user_id" value="{{$user->id}}">
