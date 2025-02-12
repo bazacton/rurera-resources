@@ -447,10 +447,6 @@
             }
         });
 
-
-
-
-
         $(document).on('click', '.emoji-passwords span', function (e) {
             $(this).attr('data-emoji_id','');
             $(this).html('');
@@ -511,9 +507,7 @@
                         }
                     }
                 });
-
             }
-
         });
         $(document).on('input keydown paste', ".login_pin", function (event) {
             var keyCode = event.keyCode || event.which;
