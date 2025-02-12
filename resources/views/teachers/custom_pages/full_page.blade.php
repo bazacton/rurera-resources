@@ -919,7 +919,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <!-- Participants html start -->
                                 <div class="chart-summary-fields result-layout-summary">
                                     <div class="sats-summary">
@@ -953,7 +952,6 @@
                                                     <div class="score">1 / 262</div>
                                                 </div>
                                             </div>
-
                                             <div class="col-12 col-md-4 col-lg-3">
                                                 <div class="sats-summary-icon" style="background-color: #e67035;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none" style="color:#fff">
@@ -1010,8 +1008,6 @@
                                     </div>
                                 </div>
                                 <div class="question-result-layout question-status-incorrect"><meta name="csrf-token" content="0TSlo0r1yRWjsWXWM5vZXOXNgvQNz593JQEnTlAP">
-
-
                                     <div class="question-step quiz-complete" style="display:none">
                                         <div class="question-layout-block">
                                             <div class="left-content has-bg">
@@ -1025,26 +1021,15 @@
                                         </div>
                                     </div>
 
-
-
-                                                    
-                                                        <form class="question-fields" action="javascript:;" data-question_id="11558">
-                                                        <meta name="csrf-token" content="0TSlo0r1yRWjsWXWM5vZXOXNgvQNz593JQEnTlAP">
-                                                                                                <span class="questions-total-holder d-block mb-15">
-                                                                                    <span class="question-dev-details">(11558) (Learn) (checkbox)</span>
-                                                        </span>
-
-
-
-                                                                            <div id="rureraform-form-1" class="disable-div rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
-                                                            <div class="question-layout row d-flex align-items-center">
-                                                                                            <div class="rureraform-col rureraform-col-12"><div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="drop_and_text">
-                                        
-
-                                    Here are diagrams of some 3-D shapes.
-
-
-                                        
+                                    <form class="question-fields" action="javascript:;" data-question_id="11558">
+                                    <meta name="csrf-token" content="0TSlo0r1yRWjsWXWM5vZXOXNgvQNz593JQEnTlAP">
+                                        <span class="questions-total-holder d-block mb-15">
+                                        <span class="question-dev-details">(11558) (Learn) (checkbox)</span>
+                                    </span>
+                                    <div id="rureraform-form-1" class="disable-div rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
+                                        <div class="question-layout row d-flex align-items-center">
+                                    <div class="rureraform-col rureraform-col-12"><div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="drop_and_text">
+                                        Here are diagrams of some 3-D shapes.
                                         <div class="rureraform-element-cover"></div>
                                     </div>
                                     </div><div class="rureraform-col rureraform-col-12"><div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
