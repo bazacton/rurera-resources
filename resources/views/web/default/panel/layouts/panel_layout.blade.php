@@ -82,7 +82,7 @@
                                     <div class="panel-rightside-menu mb-30" itemscope itemtype="https://schema.org/Article">
                                         <div class="user-info">
                                             <a href="#">
-                                                <img src="{{ $authUser->getAvatar() }}" alt="{{ $authUser->get_full_name() }}" width="100%" height="auto" itemprop="image"
+                                                <img src="{{ $authUser->getAvatar() }}" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image"
                                                      alt="User Avatar" loading="eager" title="User Avatar">
                                                 <span>
                                                     <strong>{{ $authUser->get_full_name() }}</strong>
