@@ -39,8 +39,7 @@
 
 
 @section('content')
-<form action="/admin/custom_quiz/{{ !empty($assignment) ? $assignment->id.'/update' : 'store' }}"
-      method="Post">
+<form action="/admin/custom_quiz/{{ !empty($assignment) ? $assignment->id.'/update' : 'store' }}" method="Post">
     {{ csrf_field() }}
     <section class="section">
         <div class="section-body">
@@ -50,8 +49,7 @@
                 <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                     @php $tab_active_class = ($assignment->subtopic_id > 0)? '' : 'active'; @endphp
                     <li class="nav-item">
-                        <a class="nav-link active" id="topics-tab" data-toggle="tab" href="#topics" role="tab"
-                           aria-controls="basic" aria-selected="true">
+                        <a class="nav-link active" id="topics-tab" data-toggle="tab" href="#topics" role="tab" aria-controls="basic" aria-selected="true">
                             <span class="tab-title">Topic</span>
                             <span class="tab-detail">Choose Subject Topic</span>
                         </a>
@@ -65,8 +63,7 @@
                         <div class="card-body">
                             <div class="tab-content" id="myTabContent2">
                                 @php $show_class = ($assignment->subtopic_id > 0)? '' : 'active show'; @endphp
-                                <div class="tab-pane mt-3 fade active show" id="topics" role="tabpanel"
-                                     aria-labelledby="topics-tab">
+                                <div class="tab-pane mt-3 fade active show" id="topics" role="tabpanel" aria-labelledby="topics-tab">
                                     <div class="row col-lg-12 col-md-12 col-sm-4 col-12">
                                         <div class="populated-content-area col-lg-12 col-md-12 col-sm-12 col-12">
                                             <div class="topics-subtopics-content-area row">
@@ -86,13 +83,11 @@
                                     <div class="row col-lg-12 col-md-12 col-sm-12 col-12">
                                         <div class="col-lg-4 col-md-4 col-sm-12 col-4">
                                             <ul class="questions-list ">
-
                                                 @if( !empty( $assignment->quizQuestionsList))
                                                 @foreach( $assignment->quizQuestionsList as $questionObj)
                                                 @if( !empty( $questionObj->QuestionData))
                                                 @foreach( $questionObj->QuestionData as $questionDataObj)
                                                 @php $review_required_title = ($questionDataObj->review_required > 0)? '<span class="topic-title review-required">Review Required</span>' : ''; @endphp
-
                                                 <li data-question_id="{{$questionDataObj->id}}">
                                                     <input type="hidden" name="ajax[{{$assignment->id}}][question_list_ids][]" value="{{$questionDataObj->id}}">
                                                     <div class="question-list-item" id="question-list-item">
