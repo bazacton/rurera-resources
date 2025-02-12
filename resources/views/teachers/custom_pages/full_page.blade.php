@@ -514,7 +514,7 @@
                             <tr class="child-level-3">
                                 <td class="has-met">
                                     <div class="text-box">
-                                        <button type="button" class="collaps-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-right.svg" alt=""></span></button>
+                                        <button type="button" class="collaps-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-right.svg" alt="arrow-right"></span></button>
                                         Order and compare NAHT KPI Order and compare 2.1.c.1 Compare and order numbers from 0 up to 100; use &lt;, &gt; and = signs
                                     </div>
                                 </td>
@@ -595,7 +595,7 @@
                     <table>
                         <thead>
                             <tr>
-                                <th colspan="2" style="background-color: #fff"><img src="/assets/default/svgs/three-columns.svg" alt=""> Graph Colmuns</th>
+                                <th colspan="2" style="background-color: #fff"><img src="/assets/default/svgs/three-columns.svg" alt="three-columns"> Graph Colmuns</th>
                                 <th colspan="4" class="report-title bg-danger">
                                     <div class="collapse-control-box">
                                         <button type="button" class="collaps-btn" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></button> 
@@ -834,7 +834,7 @@
                                         <div class="checkbox-field">
                                             <input type="checkbox" id="assigned">
                                             <label for="assigned">
-                                                <span><img src="/assets/default/svgs/list-view.svg" alt=""> Assigned</span>
+                                                <span><img src="/assets/default/svgs/list-view.svg" alt="list-view"> Assigned</span>
                                             </label>
                                         </div>
                                     </td>
@@ -867,12 +867,12 @@
                                             <div class="dropdown-box">
                                                 <div class="dropdown">
                                                     <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
+                                                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
                                                     </a>
                                                     <div class="dropdown-menu" style="">
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt=""> Delete</a>
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
                                                     </div>
                                                 </div>
                                             </div>
