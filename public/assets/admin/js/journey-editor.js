@@ -1067,7 +1067,8 @@ function trigger_field_change(thisObj) {
 
             $(".page_settings.active").find(".field_settings").each(function () {
                 $activeElement = $(this);
-                var topPos = parseInt($activeElement.css('top'));
+                var topPos = parseFloat($activeElement.css('top'));
+                console.log('topPX----'+$activeElement.css('top'));
                 $activeElement.attr('data-topPx', topPos);
             });
 
@@ -1092,9 +1093,13 @@ function trigger_field_change(thisObj) {
 
         if( field_name == 'height') {
             $(".page_settings.active").find(".field_settings").each(function () {
-                var parentHeight = this_value;
-                var topPercent = (parseInt($(this).attr('data-topPx')) / parseInt(parentHeight)) * 100;
 
+                var parentHeight = this_value;
+                var topPercent = (parseFloat($(this).attr('data-topPx')) / parseFloat(parentHeight)) * 100;
+
+
+                console.log('topPercent-----'+topPercent);
+                console.log('height----'+parentHeight)
                 // Set the CSS of the element with the percentages
                 $(this).css({
                     top: topPercent+'%'

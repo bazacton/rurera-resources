@@ -11,8 +11,11 @@
 <link rel="stylesheet" href="/assets/admin/vendor/bootstrap-colorpicker/bootstrap-colorpicker.min.css">
 
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="/assets/default/css/quiz-create.css">
+    <link rel="stylesheet" href="/assets/admin/css/teacher-style.css?ver={{$rand_id}}">
 
 <style type="text/css">
+    .book-dropzone{height:800px;}
     .rurera-button-loader{background:#fff !important;}
     .ui-icon-gripsmall-diagonal-se{
         display:none !important;
@@ -484,126 +487,18 @@
 
 
 <div id="level_add_modal" class="level_add_modal modal fade" role="dialog" data-backdrop="static">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg" style="max-width:100%;">
         <div class="modal-content edit-quest-modal-div">
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-box">
-                    <form action="javascript:;" method="POST" id="generate-bulk-list-form" class="px-25 add-level-form">
-                        @csrf
 
-                        <div class="row">
-                            <div class="col-md-12 col-lg-12">
-                                <div class="row">
-                                    <div class="col-md-12 col-lg-12">
-                                        <h2 class="font-20 font-weight-bold mb-15">Level</h2>
-                                    </div>
-                                    <div class="col-md-12 col-lg-12">
-                                        <div class="form-group">
-                                            <label class="input-label">Type</label>
-                                            <select name="level_type" data-plugin-selectTwo class="form-control populate level_type conditional-field">
-                                                <option value="topic" data-child="topic-fields">Topic</option>
-                                                <option value="custom_topic" data-child="topic-fields">Custom Topic</option>
-                                                <option value="treasure_mission" data-child="treasure_mission-fields">Treasure Mission</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-lg-12 conditional-child-fields treasure_mission-fields">
-                                        <div class="form-group">
-                                            <label class="input-label">Points</label>
-                                            <input name="treasure_mission_points" type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-lg-12 conditional-child-fields topic-fields">
-                                        <div class="form-group">
-                                            <label class="input-label">{{trans('admin/main.category')}}</label>
-                                            <select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
-                                                <option value="">{{trans('admin/main.all_categories')}}</option>
-                                                @foreach($categories as $category)
-                                                    @if(!empty($category->subCategories) and count($category->subCategories))
-                                                        <optgroup label="{{  $category->title }}">
-                                                            @foreach($category->subCategories as $subCategory)
-                                                                <option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
-                                                            @endforeach
-                                                        </optgroup>
-                                                    @else
-                                                        <option value="{{ $category->id }}">{{ $category->title }}</option>
-                                                    @endif
-                                                @endforeach
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-lg-12 conditional-child-fields topic-fields">
-                                        <div class="form-group">
-                                            <label class="input-label">Subjects</label>
-                                            <select data-chapter_id="" id="subject_id"
-                                                    class="rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
-                                                    name="subject_id" data-next_index="chapter_id" data-next_value="">
-                                                <option value="">Please select year, subject</option>
-                                            </select>
-                                            @error('subject_id')
-                                            <div class="invalid-feedback">
-                                                {{ $message }}
-                                            </div>
-                                            @enderror
+                    @include('admin.learning_journey.includes.topic_treasure_selection', ['sub_chapters' => $sub_chapters])
 
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-lg-12 conditional-child-fields topic-fields">
-                                        <div class="form-group">
-                                            <label class="input-label">Topic</label>
-                                            <select data-sub_chapter_id="" id="chapter_id"
-                                                    class="rurera-req-field form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
-                                                    name="chapter_id" data-disabled="{{isset($already_created_bulk_lists)? json_encode($already_created_bulk_lists) : ''}}" data-next_index="sub_chapter_id" data-next_value="">
-                                                <option value="">Please select year, subject</option>
-                                            </select>
-                                            @error('chapter_id')
-                                            <div class="invalid-feedback">
-                                                {{ $message }}
-                                            </div>
-                                            @enderror
 
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-lg-12 conditional-child-fields topic-fields">
-                                        <div class="form-group">
-                                            <label class="input-label">Sub Topic</label>
-                                            <select id="sub_chapter_id"
-                                                    class="rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
-                                                    name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
-                                                <option value="">Please select year, subject, Topic</option>
-                                            </select>
-                                            @error('sub_chapter_id')
-                                            <div class="invalid-feedback">
-                                                {{ $message }}
-                                            </div>
-                                            @enderror
 
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12 col-lg-12 conditional-child-fields topic-fields">
-                                    <div class="form-group">
-                                        <label>Topic Part Items</label>
-                                        <select data-return_type="option" multiple
-
-                                                class="topic-parts-data form-control select2"
-                                                id="topic_part_item_id" name="topic_part_item_id[]">
-                                            <option disabled>Topic Part Item</option>
-                                        </select>
-                                    </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="inactivity-controls">
-                            <button type="button" class="add-level-stage-btn mt-0">Add Level</button>
-                            <!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
-                        </div>
-                        <form>
                 </div>
             </div>
         </div>
@@ -1185,7 +1080,9 @@
 	});
 
     $(document).on('click', '.add-level', function () {
+        //$('.sub-chapters-list').change();
         $(".level_add_modal").modal('show');
+
     });
     $(document).on('click', '.journey-settings', function () {
         $(".journey-settings-modal").modal('show');
@@ -1195,6 +1092,56 @@
         var learning_journey_title = $('.learning_journey_title').val();
         $('.journey_title').html(learning_journey_title);
         $(".journey-settings-modal").modal('hide');
+    });
+
+        $(document).on('click', '.add-level-stage-topic-btn', function () {
+            var level_type = 'topic';
+            var unique_id = Math.floor((Math.random() * 99999) + 1);
+            var field_random_number = 'rand_' + unique_id;
+            var layer_html = '';
+            $el = $('<div></div>');
+            var topic_part_item_id = $(this).attr('data-id');
+            var topic_title = $(this).attr('data-title');
+
+            var unique_id = Math.floor((Math.random() * 99999) + 1);
+            var field_random_number = 'rand_' + unique_id;
+            // Perform an action with each topic_part_item_id
+            $el.append($('<div id="' + field_random_number + '" data-topic_part_item_id="'+topic_part_item_id+'" style="width:20%;left:0%; top:0%;" data-item_title="'+topic_title+'" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="topic" data-trigger_class="infobox-topic_numbers-fields" data-item_type="topic_numbers" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 258 264" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="257.641" width="263.774" height="257.64" rx="49.0743" transform="rotate(90 257.641 0)" fill="#8F5C57" fill-opacity="0.79"></rect></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+            $el.append('</div>');
+            layer_html += `<li data-id="${field_random_number}" data-field_postition="2">${topic_title}
+               <div class="actions-menu">
+                    <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort ui-sortable-handle"></i>
+                </div>
+            </li>`;
+
+
+            $(".book-dropzone.active").closest('.editor-zone').find(".editor-objects-list-all").append(layer_html);
+            $(".book-dropzone.active").closest('.editor-zone').find(".levels-objects-list").find(".stage_end").last().before(layer_html).length || $(".levels-objects-list").append(layer_html);
+
+
+            $(".book-dropzone.active").append($el);
+            $(".level_add_modal").modal('hide');
+
+
+            $(".editor-objects-list-all").sortable({
+                update: function(event, ui) {
+                    var $list = $(this);
+                    var $stageEnd = $list.find(".stage_end").detach(); // Remove and store the .stage_end element
+                    $list.append($stageEnd);
+
+                    var $stageStart = $list.find(".stage_start").detach(); // Remove and store the .stage_end element
+                    $list.prepend($stageStart);
+                    sorting_render(); // Call your function here
+                }
+            });
+
+            $('.draggable_field_' + field_random_number)
+                .draggable({
+                    preventCollision: true,
+                    containment: $('.book-dropzone.active')
+                })
+                .off('wheel');
+            levels_sorting_render();
     });
 
 
