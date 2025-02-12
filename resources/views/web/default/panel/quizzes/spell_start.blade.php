@@ -240,9 +240,7 @@ $target_score = 90;
                                      class="rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable"
                                      _data-parent="1"
                                      _data-parent-col="0" style="display: block;">
-                                    <div class="question-layout">
-
-                                    </div>
+                                    <div class="question-layout"></div>
                                 </div>
                             </div>
                         </div>
@@ -333,36 +331,16 @@ $target_score = 90;
 						</div>
 					</div>
 
-        </div>
-    </div>		
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-                    </div>
-
-                    <div class="question-area-temp hide"></div>
-
                 </div>
-                    </div>
-                </div>
-
-
-            </div>
+            </div>								
         </div>
-    </section>
-
-
+    <div class="question-area-temp hide"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 </div>
 
 @if($quiz->quiz_type == 'vocabulary')
