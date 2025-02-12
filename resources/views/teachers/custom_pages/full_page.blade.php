@@ -1033,26 +1033,24 @@
                                         <div class="rureraform-element-cover"></div>
                                     </div>
                                     </div><div class="rureraform-col rureraform-col-12"><div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                <div class="question-label question_label"><span>Select each shape that has the same number of faces as vertices.</span></div>
-                                        </div>
+                                        <div class="question-label question_label"><span>Select each shape that has the same number of faces as vertices.</span></div>
+                                    </div>
                                     </div><div class="rureraform-col rureraform-col-12"><div id="rureraform-element-19093" class="quiz-group rureraform-element-19093 rureraform-element ui-sortable-handle" data-type="checkbox">
                                         <div class="rureraform-column-label"><label class="rureraform-label"></label></div>
                                         <div class="rureraform-column-input">
                                             <div class="rureraform-input">
-                                                <div class="form-box lms-checkbox-img image-left rurera-in-cols   ">
-                                                
-                                                
-                                                                                                                                                                                                                            <div class="form-field rureraform-cr-container-medium correct">
-                                                                <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-00-8001" value="Cube"><label for="field-19093-00-8001">
-                                                                <img src="/media/topic_parts/121/shape-1.png" alt=""> 							Cube
-                                                                                            </label>
-                                                            </div>
-                                                                                                                                                                                                            <div class="form-field rureraform-cr-container-medium wrong">
-                                                                <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-11-8001" value="Square-based pyramid"><label for="field-19093-11-8001">
-                                                                <img src="/media/topic_parts/121/shape-2.png" alt=""> 							Square-based pyramid
-                                                                                            </label>
-                                                            </div>
-                                                                                                                                                                                                            <div class="form-field rureraform-cr-container-medium">
+                                                <div class="form-box lms-checkbox-img image-left rurera-in-cols">
+                                                    <div class="form-field rureraform-cr-container-medium correct">
+                                                    <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-00-8001" value="Cube"><label for="field-19093-00-8001">
+                                                    <img src="/media/topic_parts/121/shape-1.png" alt="">Cube
+                                                    </label>
+                                                </div>
+                                                <div class="form-field rureraform-cr-container-medium wrong">
+                                                    <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-11-8001" value="Square-based pyramid"><label for="field-19093-11-8001">
+                                                    <img src="/media/topic_parts/121/shape-2.png" alt="">Square-based pyramid
+                                                    </label>
+                                                </div>
+                                                <div class="form-field rureraform-cr-container-medium">
                                                                 <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-22-8001" value="Triangular prism"><label for="field-19093-22-8001">
                                                                 <img src="/media/topic_parts/121/shape-3.png" alt=""> 							Triangular prism
                                                                                             </label>
