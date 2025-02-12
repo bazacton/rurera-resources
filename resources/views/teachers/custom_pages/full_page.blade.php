@@ -172,12 +172,12 @@
                                                     <div class="dropdown-box">
                                                         <div class="dropdown">
                                                             <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                                <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
+                                                                <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
                                                             </a>
                                                             <div class="dropdown-menu">
-                                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
-                                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt=""> Delete</a>
-                                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
+                                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
                                                             </div>
                                                         </div>
                                                     </div>
