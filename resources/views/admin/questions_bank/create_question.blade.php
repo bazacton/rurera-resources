@@ -1100,80 +1100,80 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                             </div>
                         </div>
                             <div class="tab-pane mt-3 fade" id="question_preview" role="tabpanel" aria-labelledby="question_preview-tab">
-                                    <div class="question-area">
-                                        <div class="question-step question-step-0" data-elapsed="0"
-                                             data-qattempt="0"
-                                             data-start_time="0" data-qresult="tstttt111"
-                                             data-quiz_result_id="0">
-                                            <div class="question-layout-block" style="width: 100%;">
-                                                <form class="question-fields" action="javascript:;" data-question_id="0">
-                                                    <div class="left-content has-bg">
-														<div class="quiz-status-bar">
-															<div class="quiz-questions-bar-holder">
-																<div class="quiz-questions-bar">
-																	<span class="value-lable" data-title="Target" style="left:90%"><span>90%</span></span>
-																	<span class="bar-fill" title="0%" style="width: 0%;"></span>
-																</div>
-																<span class="coin-numbers">
-																	<img src="/assets/default/img/quests-coin.png" alt="">
-																	<span class="total-earned-coins">0</span>
-																</span>
-															</div>
-															<div class="quiz-corrects-incorrects">
-																<span class="quiz-corrects">0</span>
-																<span class="quiz-incorrects">0</span>
-															</div>
-														</div>
-                                                        <span class="question-number-holder" style="z-index: 999999999;"> <span class="question-number">1</span>
-                                                        </span>
-                                                        @php $classes = isset( $class )? $class : ''; @endphp
-                                                        <div id="rureraform-form-1"
-                                                             class="disable-div"
-                                                             _data-parent="1"
-                                                             _data-parent-col="0" style="display: block;">
-                                                            <div class="question-layout">
-                                                                <div class="question-layout-data"></div>
+                                <div class="question-area">
+                                    <div class="question-step question-step-0" data-elapsed="0"
+                                            data-qattempt="0"
+                                            data-start_time="0" data-qresult="tstttt111"
+                                            data-quiz_result_id="0">
+                                        <div class="question-layout-block" style="width: 100%;">
+                                            <form class="question-fields" action="javascript:;" data-question_id="0">
+                                                <div class="left-content has-bg">
+                                                    <div class="quiz-status-bar">
+                                                        <div class="quiz-questions-bar-holder">
+                                                            <div class="quiz-questions-bar">
+                                                                <span class="value-lable" data-title="Target" style="left:90%"><span>90%</span></span>
+                                                                <span class="bar-fill" title="0%" style="width: 0%;"></span>
                                                             </div>
+                                                            <span class="coin-numbers">
+                                                                <img src="/assets/default/img/quests-coin.png" alt="">
+                                                                <span class="total-earned-coins">0</span>
+                                                            </span>
                                                         </div>
-                                                        <div class="show-notifications"></div>
-                                                        <div class="prev-next-controls text-center questions-nav-controls">
-                                                            @if( !isset( $disable_finish ) || $disable_finish == 'false')
-                                                            <a href="javascript:;" data-toggle="modal" class="review-btn {{isset($rev_btn_class)? $rev_btn_class : ''}}" data-target="#review_submit">
-                                                                Finish
-                                                                <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
-                                                            </a>
-                                                            @endif
-
-                                                            @php $prev_class = (isset( $prev_question ) && $prev_question > 0)? '' : ''; @endphp
-                                                            @if( !isset( $disable_prev ) || $disable_prev == 'false')
-                                                            <a href="javascript:;" id="prev-btn" class="rurera-hide {{$prev_class}} prev-btn {{isset( $prev_btn_class)? $prev_btn_class : ''}}"
-                                                               data-question_id="0">
-                                                               <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                                            </a>
-                                                            @endif
-                                                            @php $next_class = (isset( $next_question ) && $next_question > 0)? '' : ''; @endphp
-                                                            @if( !isset( $disable_next ) || $disable_next == 'false')
-                                                            <a href="javascript:;" id="next-btn" class="rurera-hide {{$next_class}} next-btn {{isset( $next_btn_class)? $next_btn_class : ''}}"
-                                                               data-question_id="0">
-                                                                Next
-                                                                <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                                            </a>
-                                                            @endif
-                                                            @if( !isset( $disable_submit ) || $disable_submit == 'false')
-                                                            <a href="javascript:;" id="question-submit-btn" class="question-submit-btn {{isset( $submit_class)? $submit_class : ''}}">
-                                                                mark answer
-                                                            </a>
-                                                            @endif
+                                                        <div class="quiz-corrects-incorrects">
+                                                            <span class="quiz-corrects">0</span>
+                                                            <span class="quiz-incorrects">0</span>
                                                         </div>
                                                     </div>
+                                                    <span class="question-number-holder" style="z-index: 999999999;"> <span class="question-number">1</span>
+                                                    </span>
+                                                    @php $classes = isset( $class )? $class : ''; @endphp
+                                                    <div id="rureraform-form-1"
+                                                            class="disable-div"
+                                                            _data-parent="1"
+                                                            _data-parent-col="0" style="display: block;">
+                                                        <div class="question-layout">
+                                                            <div class="question-layout-data"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="show-notifications"></div>
+                                                    <div class="prev-next-controls text-center questions-nav-controls">
+                                                        @if( !isset( $disable_finish ) || $disable_finish == 'false')
+                                                        <a href="javascript:;" data-toggle="modal" class="review-btn {{isset($rev_btn_class)? $rev_btn_class : ''}}" data-target="#review_submit">
+                                                            Finish
+                                                            <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
+                                                        </a>
+                                                        @endif
 
-													@if( isset( $questionObj->id ))
-														<input type="hidden" name="question_id" value="{{$questionObj->id}}">	
-													@endif
-                                                </form>
-                                            </div>
+                                                        @php $prev_class = (isset( $prev_question ) && $prev_question > 0)? '' : ''; @endphp
+                                                        @if( !isset( $disable_prev ) || $disable_prev == 'false')
+                                                        <a href="javascript:;" id="prev-btn" class="rurera-hide {{$prev_class}} prev-btn {{isset( $prev_btn_class)? $prev_btn_class : ''}}"
+                                                            data-question_id="0">
+                                                            <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
+                                                        </a>
+                                                        @endif
+                                                        @php $next_class = (isset( $next_question ) && $next_question > 0)? '' : ''; @endphp
+                                                        @if( !isset( $disable_next ) || $disable_next == 'false')
+                                                        <a href="javascript:;" id="next-btn" class="rurera-hide {{$next_class}} next-btn {{isset( $next_btn_class)? $next_btn_class : ''}}"
+                                                            data-question_id="0">
+                                                            Next
+                                                            <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
+                                                        </a>
+                                                        @endif
+                                                        @if( !isset( $disable_submit ) || $disable_submit == 'false')
+                                                        <a href="javascript:;" id="question-submit-btn" class="question-submit-btn {{isset( $submit_class)? $submit_class : ''}}">
+                                                            mark answer
+                                                        </a>
+                                                        @endif
+                                                    </div>
+                                                </div>
+
+                                                @if( isset( $questionObj->id ))
+                                                    <input type="hidden" name="question_id" value="{{$questionObj->id}}">	
+                                                @endif
+                                            </form>
                                         </div>
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
