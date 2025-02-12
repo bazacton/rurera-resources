@@ -102,7 +102,6 @@
                             </tr>
                             </thead>
                             <tbody>
-
                             @if($affiliates->count() > 0)
                             @foreach($affiliates as $affiliate)
                                 <tr>
@@ -116,11 +115,8 @@
                                             </div>
                                         </div>
                                     </td>
-
                                     <td>{{ addCurrencyToPrice($affiliate->getAffiliateRegistrationAmountsOfEachReferral()) }}</td>
-
                                     <td>{{ addCurrencyToPrice($affiliate->getTotalAffiliateCommissionOfEachReferral()) }}</td>
-
                                     <td>{{ dateTimeFormat($affiliate->created_at, 'Y M j | H:i') }}</td>
                                 </tr>
                             @endforeach
@@ -132,7 +128,6 @@
                             </tbody>
                         </table>
                     </div>
-
                     <div class="my-30">
                         {{ $affiliates->appends(request()->input())->links('vendor.pagination.panel') }}
                     </div>
