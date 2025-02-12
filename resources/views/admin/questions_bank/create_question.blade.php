@@ -407,8 +407,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                                        name="rureraform-file"
                                                                        onchange="jQuery('#rureraform-import-style-iframe').attr('data-loading', 'true'); jQuery('#rureraform-import-style-form').submit();">
                                                             </form>
-                                                            <div class="rureraform-admin-popup-overlay"
-                                                                 id="rureraform-element-properties-overlay"></div>
+                                                            <div class="rureraform-admin-popup-overlay" id="rureraform-element-properties-overlay"></div>
 
                                                             <div class="rureraform-fa-selector-overlay"></div>
                                                             <div class="rureraform-fa-selector">
@@ -843,7 +842,6 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 															</select>
                                                         </div>
                                                     </div>
-													
                                                     <div class="col-lg-6 col-md-6 col-12 rurera-hide">
                                                         <div class="form-group">
                                                             <label class="input-label">Example Question</label>
@@ -851,10 +849,6 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                                   class="form-control search-question-select2" data-placeholder="Search Question"></select>
                                                         </div>
                                                     </div>
-													
-
-                                                    
-
                                                     <div class="col-lg-6 col-md-6 col-12 rurera-hide">
                                                         <div class="form-group">
                                                             <label class="input-label">Correct Answer Score</label>
@@ -869,7 +863,6 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                             @enderror
                                                         </div>
                                                     </div>
-
                                                     <div class="col-lg-6 col-md-6 col-12 rurera-hide">
                                                         <div class="form-group">
                                                             <label class="input-label">Average Time</label>
@@ -1027,16 +1020,13 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 														</div>
 													</div>
 													</div>
-
-
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                            <div class="tab-pane mt-3 fade" id="glossary_solution" role="tabpanel"
-                                                         aria-labelledby="glossary_solution-tab">
+                            <div class="tab-pane mt-3 fade" id="glossary_solution" role="tabpanel" aria-labelledby="glossary_solution-tab">
 
 								@php $glossary  = isset( $glossary )? $glossary : array(); $glossary_ids = isset( $glossary_ids )? $glossary_ids : array(); @endphp
 
