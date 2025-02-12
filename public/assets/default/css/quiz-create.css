@@ -1241,8 +1241,8 @@ body .learning-page.type-sats .left-content:has(.prev-next-controls) {padding-bo
 
 .review-btn svg,
 .prev-btn svg,
-.next-btn svg,
-.review-btn img {height: 15px; width: 15px; margin-left: 5px;}
+.next-btn svg {height: 15px; width: 15px; margin-left: 5px;} 
+.review-btn img {filter: invert(57%) sepia(1%) saturate(1500%) hue-rotate(209deg) brightness(102%) contrast(86%); height: 20px; width: 20px;}
 
 .prev-btn svg,
 .next-btn svg {margin-left: 0;}
