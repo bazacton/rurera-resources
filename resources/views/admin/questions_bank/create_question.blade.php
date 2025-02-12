@@ -1064,22 +1064,16 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                         <div class="col-12 col-md-12">
                                             <div class="form-group">
                                                 <label class="input-label">Solution</label>
-                                                <textarea class="note-codable summernote" id="question_solve"
-                                                          name="question_solve"
-                                                          aria-multiline="true">{{isset( $question_solve )? $question_solve : ''}}</textarea>
+                                                <textarea class="note-codable summernote" id="question_solve" name="question_solve"
+                                                aria-multiline="true">{{isset( $question_solve )? $question_solve : ''}}</textarea>
                                             </div>
                                         </div>
-                                </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="tab-pane mt-3 fade" id="review_required_tab" role="tabpanel"
-                                                     aria-labelledby="review_required_tab-tab">
-
-
+                            <div class="tab-pane mt-3 fade" id="review_required_tab" role="tabpanel" aria-labelledby="review_required_tab-tab">
                             <div class="col-12 col-md-12">
                                 <div class="row">
-
-                                    
 									@php $question_status = isset( $questionObj->question_status )? $questionObj->question_status : ''; @endphp
 									@if(auth()->user()->isReviewer())
 									@if($question_status == 'Submit for review' ||
@@ -1093,7 +1087,6 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 									@endif
 									@endif
 
-
                                     @if(auth()->user()->isTeacher() || auth()->user()->isAuthor())
                                     <div class="col-12 col-md-12">
                                         <div class="form-group">
@@ -1103,30 +1096,20 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                         </div>
                                     </div>
                                     @endif
-
                                 </div>
                             </div>
                         </div>
-
-                            <div class="tab-pane mt-3 fade" id="question_preview" role="tabpanel"
-                                                             aria-labelledby="question_preview-tab">
-
-
-
-
+                            <div class="tab-pane mt-3 fade" id="question_preview" role="tabpanel" aria-labelledby="question_preview-tab">
                                     <div class="question-area">
                                         <div class="question-step question-step-0" data-elapsed="0"
                                              data-qattempt="0"
                                              data-start_time="0" data-qresult="tstttt111"
                                              data-quiz_result_id="0">
                                             <div class="question-layout-block" style="width: 100%;">
-
                                                 <form class="question-fields" action="javascript:;" data-question_id="0">
                                                     <div class="left-content has-bg">
-
 														<div class="quiz-status-bar">
 															<div class="quiz-questions-bar-holder">
-																
 																<div class="quiz-questions-bar">
 																	<span class="value-lable" data-title="Target" style="left:90%"><span>90%</span></span>
 																	<span class="bar-fill" title="0%" style="width: 0%;"></span>
@@ -1141,11 +1124,8 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 																<span class="quiz-incorrects">0</span>
 															</div>
 														</div>
-													
                                                         <span class="question-number-holder" style="z-index: 999999999;"> <span class="question-number">1</span>
                                                         </span>
-
-
                                                         @php $classes = isset( $class )? $class : ''; @endphp
                                                         <div id="rureraform-form-1"
                                                              class="disable-div"
@@ -1154,12 +1134,9 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                             <div class="question-layout">
                                                                 <div class="question-layout-data"></div>
                                                             </div>
-
                                                         </div>
                                                         <div class="show-notifications"></div>
-
                                                         <div class="prev-next-controls text-center questions-nav-controls">
-
                                                             @if( !isset( $disable_finish ) || $disable_finish == 'false')
                                                             <a href="javascript:;" data-toggle="modal" class=" review-btn {{isset($rev_btn_class)? $rev_btn_class : ''}}" data-target="#review_submit">
                                                                 Finish
@@ -1219,45 +1196,28 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                                     </g>
                                                                 </svg>
                                                             </a>
-
-
                                                             @endif
                                                         </div>
                                                     </div>
 
-
 													@if( isset( $questionObj->id ))
-															<input type="hidden" name="question_id" value="{{$questionObj->id}}">	
+														<input type="hidden" name="question_id" value="{{$questionObj->id}}">	
 													@endif
                                                 </form>
-
                                             </div>
                                         </div>
-
                                     </div>
-
-
-
-
                             </div>
-
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
     <div class="row">
         <div class="col-12 col-md-12">
-
-
+            
             @include('admin.questions_bank.question_editor_fields_controls')
-
 
             <div class="mt-5 mb-5 create-question-fields-block">
                 <button type="button" data-status="Draft" class="quiz-stage-generate btn btn-warning">Draft</button>
