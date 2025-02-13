@@ -947,6 +947,7 @@
                         .off('wheel');
 
 					$(".book-dropzone.active").closest('.editor-zone').find('.levels-objects-list').prepend(layer_html);
+                    $(".book-dropzone.active").closest('.editor-zone').find('.editor-objects-list-all').prepend(layer_html);
 
 					$(".editor-objects-list-all").sortable({
 						handle: ".fa-sort", // Make sure your icon has this class
@@ -1153,9 +1154,9 @@
 
         $(document).on('click', '.add-level-stage-topic-btn', function () {
             if($(this).hasClass('topic-added')){
-
                 $(this).closest('.topic-part-item-list').removeClass('active');
 
+                $(this).removeClass('topic-added');
                 var data_id  = $(this).attr('data-id');
                 delete alreadyAddedTopics[data_id];
                 var element_id = $('.field_settings[data-topic_part_item_id="'+data_id+'"]').attr('data-id');
@@ -1175,23 +1176,6 @@
                         });
                     }
                 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             }else {
                 $(this).addClass('topic-added');
@@ -1248,54 +1232,81 @@
     });
 
     $(document).on('click', '.add-level-stage-custom-btn', function () {
-        var level_type = 'custom_topic';
-        var unique_id = Math.floor((Math.random() * 99999) + 1);
-        var field_random_number = 'rand_' + unique_id;
-        var layer_html = '';
-        $el = $('<div></div>');
-        var topic_part_item_id = $(this).attr('data-id');
-        var topic_title = $(this).attr('data-title');
+        if($(this).hasClass('topic-added')){
+            $(this).closest('.custom-topic-part-item-list').removeClass('active');
+            $(this).removeClass('topic-added');
 
-        var unique_id = Math.floor((Math.random() * 99999) + 1);
-        var field_random_number = 'rand_' + unique_id;
-        // Perform an action with each topic_part_item_id
-        $el.append($('<div id="' + field_random_number + '" data-topic_part_item_id="'+topic_part_item_id+'" style="width:20%;left:0%; top:0%;" data-item_title="'+topic_title+'" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="topic" data-trigger_class="infobox-topic_numbers-fields" data-item_type="topic_numbers" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 258 264" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="257.641" width="263.774" height="257.64" rx="49.0743" transform="rotate(90 257.641 0)" fill="#8F5C57" fill-opacity="0.79"></rect></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
-        $el.append('</div>');
-        layer_html += `<li data-id="${field_random_number}" data-field_postition="2">${topic_title}
+            var data_id  = $(this).attr('data-id');
+            delete alreadyAddedTopics[data_id];
+            var element_id = $('.field_settings[data-topic_part_item_id="'+data_id+'"]').attr('data-id');
+            var element_type = $('.field_settings[data-topic_part_item_id="'+data_id+'"]').attr('data-field_type');
+            $('.field_settings[data-topic_part_item_id="'+data_id+'"]').remove();
+            $('.editor-objects-list li[data-id="'+element_id+'"]').remove();
+            sorting_render();
+            levels_sorting_render();
+            if(element_type == 'topic' || element_type == 'treasure' || element_type == 'spacer'){
+                var links = $flowchart.flowchart('getData').links;
+                if ($flowchart.flowchart('getOperatorData', element_id)) {
+                    Object.keys(links).forEach(function (linkId) {
+                        var link = links[linkId];
+                        if (link.toOperator === element_id && link.toConnector === 'input_1') {
+                            $flowchart.flowchart('deleteLink', linkId);
+                        }
+                    });
+                }
+            }
+
+        }else {
+            $(this).addClass('topic-added');
+            $(this).closest('.custom-topic-part-item-list').addClass('active');
+            var level_type = 'custom_topic';
+            var unique_id = Math.floor((Math.random() * 99999) + 1);
+            var field_random_number = 'rand_' + unique_id;
+            var layer_html = '';
+            $el = $('<div></div>');
+            var topic_part_item_id = $(this).attr('data-id');
+            var topic_title = $(this).attr('data-title');
+
+            var unique_id = Math.floor((Math.random() * 99999) + 1);
+            var field_random_number = 'rand_' + unique_id;
+            // Perform an action with each topic_part_item_id
+            $el.append($('<div id="' + field_random_number + '" data-topic_part_item_id="' + topic_part_item_id + '" style="width:20%;left:0%; top:0%;" data-item_title="' + topic_title + '" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="topic" data-trigger_class="infobox-topic_numbers-fields" data-item_type="topic_numbers" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 258 264" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="257.641" width="263.774" height="257.64" rx="49.0743" transform="rotate(90 257.641 0)" fill="#8F5C57" fill-opacity="0.79"></rect></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+            $el.append('</div>');
+            layer_html += `<li data-id="${field_random_number}" data-field_postition="2">${topic_title}
                <div class="actions-menu">
                     <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort ui-sortable-handle"></i>
                 </div>
             </li>`;
 
 
-        $(".book-dropzone.active").closest('.editor-zone').find(".editor-objects-list-all").append(layer_html);
-        //$(".book-dropzone.active").closest('.editor-zone').find(".levels-objects-list").append(layer_html);
-        $(".book-dropzone.active").closest('.editor-zone').find(".levels-objects-list").find(".stage_end").last().before(layer_html).length || $(".levels-objects-list").append(layer_html);
+            $(".book-dropzone.active").closest('.editor-zone').find(".editor-objects-list-all").append(layer_html);
+            //$(".book-dropzone.active").closest('.editor-zone').find(".levels-objects-list").append(layer_html);
+            $(".book-dropzone.active").closest('.editor-zone').find(".levels-objects-list").find(".stage_end").last().before(layer_html).length || $(".levels-objects-list").append(layer_html);
 
 
-        $(".book-dropzone.active").append($el);
-        $(".level_add_modal").modal('hide');
+            $(".book-dropzone.active").append($el);
 
 
-        $(".editor-objects-list-all").sortable({
-            update: function(event, ui) {
-                var $list = $(this);
-                var $stageEnd = $list.find(".stage_end").detach(); // Remove and store the .stage_end element
-                $list.append($stageEnd);
+            $(".editor-objects-list-all").sortable({
+                update: function (event, ui) {
+                    var $list = $(this);
+                    var $stageEnd = $list.find(".stage_end").detach(); // Remove and store the .stage_end element
+                    $list.append($stageEnd);
 
-                var $stageStart = $list.find(".stage_start").detach(); // Remove and store the .stage_end element
-                $list.prepend($stageStart);
-                sorting_render(); // Call your function here
-            }
-        });
+                    var $stageStart = $list.find(".stage_start").detach(); // Remove and store the .stage_end element
+                    $list.prepend($stageStart);
+                    sorting_render(); // Call your function here
+                }
+            });
 
-        $('.draggable_field_' + field_random_number)
-            .draggable({
-                preventCollision: true,
-                containment: $('.book-dropzone.active')
-            })
-            .off('wheel');
-        levels_sorting_render();
+            $('.draggable_field_' + field_random_number)
+                .draggable({
+                    preventCollision: true,
+                    containment: $('.book-dropzone.active')
+                })
+                .off('wheel');
+            levels_sorting_render();
+        }
     });
 
 

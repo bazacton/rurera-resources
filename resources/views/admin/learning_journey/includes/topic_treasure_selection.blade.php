@@ -2,8 +2,8 @@
         <div class="mb-30 bg-white panel-border rounded-sm p-15">
             <div class="rureraform-search-field mb-15">
                 <div class="input-field">
-                    <input type="text" class="conditional-block topics_block" placeholder="Search question..">
-                    <button type="button" class="conditional-block topics_block"><i class="fas fa-search"></i> <span>Search questions</span></button>
+                    <input type="text" class="conditional-block topics_block topic_search_field" name="topic_search_field" placeholder="Search question..">
+                    <button type="button" class="conditional-block topics_block search-topic-btn"><i class="fas fa-search"></i> <span>Search Topic</span></button>
                 </div>
                 <div class="add-object-type-list featured-controls">
                     <button type="button" data-type="topics" class="active">Topics</button>
@@ -68,8 +68,6 @@
                         </div>
                     </div>
                     <div class="featured-list-sidebar-inner sub-chapters-list-data">
-
-                        <button class="load-more-btn"><i class="fas fa-plus"></i> Load More</button>
                     </div>
                 </div>
             </div>
@@ -81,18 +79,6 @@
                     <div class="featured-filters">
                         <div class="text-box">
                             <h6>Custom Topics</h6>
-                        </div>
-                        <div class="select-field">
-                            <select class="custom-sub-chapters-list">
-                                @if($sub_chapters->count() > 0)
-                                    @php $counter_i = 1; @endphp
-                                    @foreach($sub_chapters as $subChapterObj)
-                                        @php $selected = ($counter_i == 1)? 'selected' : ''; @endphp
-                                        <option value="{{$subChapterObj->id}}" {{$selected}}>{{isset($subChapterObj->sub_chapter_title )? $subChapterObj->sub_chapter_title : ''}}</option>
-                                        @php $counter_i++; @endphp
-                                    @endforeach
-                                @endif
-                            </select>
                         </div>
                     </div>
                     <div class="featured-list-sidebar-inner custom-sub-chapters-list-data">
@@ -113,6 +99,7 @@
                                                     <span>2 hours ago</span>
                                                 </span>
                                             </div>
+                                            <button type="button" class="assignment-btn add-level-stage-custom-btn" data-id="{{$quizObj->id}}" data-title="{{$quizObj->getTitleAttribute()}}">+Add</button>
                                         </div>
                                         <ul class="list-options">
 
@@ -199,7 +186,6 @@
                 </div>
                 <button type="button" class="add-level-stage-treasure-btn">Add Treasure</button>
             </div>
-            <div class="col-12 col-lg-8 col-md-8 topic-part-item-data"></div>
         </div>
     </div>
 
@@ -275,10 +261,48 @@
             });
         });
 
+
+        var topicSearchRequest = null;
+        var subChapterDivMain = $(".sub-chapters-list-data");
+        var searchDivMain = $(".search-topic-btn");
+        $(document).on('click', '.search-topic-btn', function () {
+            rurera_loader(subChapterDivMain, 'div');
+            rurera_loader(searchDivMain, 'div');
+            var search_text = $(".topic_search_field").val();
+            var sub_chapter_id = $(this).val();
+            topicSearchRequest = $.ajax({
+                type: "GET",
+                url: '/admin/learning_journey/search_topic_part_items_list',
+                beforeSend: function () {
+                    if (topicSearchRequest != null) {
+                        topicSearchRequest.abort();
+                    }
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {'search_text': search_text},
+                success: function (response) {
+                    rurera_remove_loader(subChapterDivMain, 'button');
+                    rurera_remove_loader(searchDivMain, 'button');
+                    $(".sub-chapters-list-data").html(response);
+
+                    $.each(alreadyAddedTopics, function(index, selected_topic_id) {
+                        $('.add-level-stage-topic-btn[data-id="'+selected_topic_id+'"]').addClass('topic-added');
+                        $('.add-level-stage-topic-btn[data-id="'+selected_topic_id+'"]').closest('.topic-part-item-list').addClass('active');
+
+                    });
+
+
+                }
+            });
+        });
+
         var subChapterDataRequest = null;
         var subChapterDivMain = $(".sub-chapters-list-data");
         $(document).on('change', '.sub-chapters-list', function () {
             rurera_loader(subChapterDivMain, 'div');
+            console.log('loader------');
             var sub_chapter_id = $(this).val();
             subChapterDataRequest = $.ajax({
                 type: "GET",
@@ -307,9 +331,9 @@
             });
         });
 
-        var subChapterDivMain = $(".custom-sub-chapters-list-data");
+        var customSubChapterDivMain = $(".custom-sub-chapters-list-data");
         $(document).on('change', '.custom-sub-chapters-list', function () {
-            rurera_loader(subChapterDivMain, 'div');
+            rurera_loader(customSubChapterDivMain, 'div');
             var sub_chapter_id = $(this).val();
             subChapterDataRequest = $.ajax({
                 type: "GET",
@@ -324,7 +348,7 @@
                 },
                 data: {'sub_chapter_id': sub_chapter_id},
                 success: function (response) {
-                    rurera_remove_loader(subChapterDivMain, 'button');
+                    rurera_remove_loader(customSubChapterDivMain, 'button');
                     $(".custom-sub-chapters-list-data").html(response);
                 }
             });
