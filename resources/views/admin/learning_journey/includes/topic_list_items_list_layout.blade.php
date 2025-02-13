@@ -15,6 +15,7 @@
                             <span>2 hours ago</span>
                         </span>
                     </div>
+                    <button type="button" class="assignment-btn add-level-stage-topic-btn" data-id="{{$topicPartItemObj->id}}" data-title="{{$topicPartItemObj->title}}">+Add</button>
                 </div>
                 <ul class="list-options">
 

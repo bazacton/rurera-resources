@@ -976,10 +976,7 @@ $(document).on('click', '.editor-objects-list-all li .fa-trash', function (e) {
     levels_sorting_render();
     if(element_type == 'topic' || element_type == 'treasure' || element_type == 'spacer'){
 
-
         var links = $flowchart.flowchart('getData').links;
-
-        // Find the link with the specified details
 
         if ($flowchart.flowchart('getOperatorData', data_id)) {
             Object.keys(links).forEach(function (linkId) {
@@ -989,8 +986,6 @@ $(document).on('click', '.editor-objects-list-all li .fa-trash', function (e) {
                 }
             });
         }
-
-
 
     }
 

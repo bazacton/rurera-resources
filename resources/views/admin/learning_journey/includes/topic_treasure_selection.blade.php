@@ -13,27 +13,39 @@
             </div>
             <div class="search-filters mb-0 conditional-block topics_block">
                 <div class="select-field">
-                    <span>By:</span>
-                    <select>
-                        <option value="All providers">All providers</option>
-                        <option value="All providers">All providers</option>
-                        <option value="All providers">All providers</option>
+                    <span>Year:</span>
+
+
+                    <select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
+                        <option value="">{{trans('admin/main.all_categories')}}</option>
+                        @foreach($categories as $category)
+                            @if(!empty($category->subCategories) and count($category->subCategories))
+                                <optgroup label="{{  $category->title }}">
+                                    @foreach($category->subCategories as $subCategory)
+                                        <option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
+                                    @endforeach
+                                </optgroup>
+                            @else
+                                <option value="{{ $category->id }}">{{ $category->title }}</option>
+                            @endif
+                        @endforeach
                     </select>
                 </div>
                 <div class="select-field">
-                    <span>Capability:</span>
-                    <select>
-                        <option value="All providers">Embeddings</option>
-                        <option value="All providers">Embeddings</option>
-                        <option value="All providers">Embeddings</option>
+                    <span>Subject:</span>
+                    <select data-chapter_id="" id="subject_id"
+                            class="rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
+                            name="subject_id" data-next_index="chapter_id" data-next_value="">
+                        <option value="">Please select year, subject</option>
                     </select>
                 </div>
+
                 <div class="select-field">
-                    <span>Tag:</span>
-                    <select>
-                        <option value="All">All</option>
-                        <option value="All">All</option>
-                        <option value="All">All</option>
+                    <span>Topic:</span>
+                    <select data-sub_chapter_id="" id="chapter_id"
+                            class="rurera-req-field form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
+                            name="chapter_id" data-disabled="{{isset($already_created_bulk_lists)? json_encode($already_created_bulk_lists) : ''}}" data-next_index="sub_chapter_id" data-next_value="">
+                        <option value="">Please select year, subject</option>
                     </select>
                 </div>
             </div>
@@ -46,16 +58,13 @@
                             <h6>Reported Oprations</h6>
                         </div>
                         <div class="select-field">
-                            <select class="sub-chapters-list">
-                                @if($sub_chapters->count() > 0)
-                                    @php $counter_i = 1; @endphp
-                                    @foreach($sub_chapters as $subChapterObj)
-                                        @php $selected = ($counter_i == 1)? 'selected' : ''; @endphp
-                                        <option value="{{$subChapterObj->id}}" {{$selected}}>{{isset($subChapterObj->sub_chapter_title )? $subChapterObj->sub_chapter_title : ''}}</option>
-                                        @php $counter_i++; @endphp
-                                    @endforeach
-                                @endif
+
+                            <select id="sub_chapter_id"
+                                    class="sub-chapters-list rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+                                    name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
+                                <option value="">Please select year, subject, Topic</option>
                             </select>
+
                         </div>
                     </div>
                     <div class="featured-list-sidebar-inner sub-chapters-list-data">
@@ -250,8 +259,8 @@
 
         var topicPartItemDataRequest = null;
         $(document).on('click', '.topic-part-item-list', function () {
-            $(".topic-part-item-list").removeClass('active');
-            $(this).addClass('active');
+            //$(".topic-part-item-list").removeClass('active');
+            //$(this).addClass('active');
             rurera_loader(ItemloaderDivMain, 'div');
             var topic_part_item_id = $(this).attr('data-id');
             topicPartItemDataRequest = $.ajax({
@@ -317,6 +326,14 @@
                 success: function (response) {
                     rurera_remove_loader(subChapterDivMain, 'button');
                     $(".sub-chapters-list-data").html(response);
+
+                    $.each(alreadyAddedTopics, function(index, selected_topic_id) {
+                        $('.add-level-stage-topic-btn[data-id="'+selected_topic_id+'"]').addClass('topic-added');
+                        $('.add-level-stage-topic-btn[data-id="'+selected_topic_id+'"]').closest('.topic-part-item-list').addClass('active');
+
+                    });
+
+
                 }
             });
         });
