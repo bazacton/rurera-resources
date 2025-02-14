@@ -258,7 +258,7 @@ $(document).on('click', '.book-dropzone', function (e) {
     var leftPercentage = (e.offsetX / elementWidth) * 100;
 
 
-    if (drag_type == "stage" || drag_type == "path" || drag_type == "stage_objects" || drag_type == "topic" || drag_type == "treasure" || drag_type == "spacer") {
+    if (drag_type == "stage_start" || drag_type == "stage_end" || drag_type == "stage" || drag_type == "path" || drag_type == "stage_objects" || drag_type == "topic" || drag_type == "treasure" || drag_type == "spacer") {
 
 
 		var svg_code = $(".svgs-data ."+drag_object+"_svg").html();
