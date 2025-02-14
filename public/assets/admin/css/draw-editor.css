@@ -192,6 +192,10 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 /* Zoom Header Style End */
 
 /* Level Add Modal Style Start */
+.level_add_modal .modal-dialog,
+.level_add_modal .modal-content {
+    height: 100%;
+}
 .rureraform-search-field {
     display: flex;
     align-items: center;
