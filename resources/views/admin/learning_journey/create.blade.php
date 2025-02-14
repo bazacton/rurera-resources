@@ -491,7 +491,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <div class="modal-box">
+                <div class="modal-box d-inline-block w-100">
 
                     @include('admin.learning_journey.includes.topic_treasure_selection', ['sub_chapters' => $sub_chapters])
 
