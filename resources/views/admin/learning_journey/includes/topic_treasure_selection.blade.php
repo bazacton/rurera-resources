@@ -14,8 +14,6 @@
             <div class="search-filters mb-0 conditional-block topics_block">
                 <div class="select-field">
                     <span>Year:</span>
-
-
                     <select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
                         <option value="">{{trans('admin/main.all_categories')}}</option>
                         @foreach($categories as $category)
@@ -58,13 +56,11 @@
                             <h6>Reported Oprations</h6>
                         </div>
                         <div class="select-field">
-
                             <select id="sub_chapter_id"
-                                    class="sub-chapters-list rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
-                                    name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
+                                class="sub-chapters-list rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+                                name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
                                 <option value="">Please select year, subject, Topic</option>
                             </select>
-
                         </div>
                     </div>
                     <div class="featured-list-sidebar-inner sub-chapters-list-data">
@@ -119,7 +115,6 @@
         </div>
         <div class="row conditional-block rurera-hide treasures_block">
             <div class="col-12 col-lg-12 col-md-12 years-group populated-data">
-
                 <div class="form-group">
                     <div class="input-group">
                         <div class="radio-buttons">
