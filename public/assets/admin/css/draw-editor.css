@@ -209,6 +209,9 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .level_add_modal.modal .modal-content {
     box-shadow: none;
 }
+.level_add_modal .modal-box {
+    padding-top: 30px;
+}
 /* Rureraform-Search-Field Style Start */
 .rureraform-search-field {
     display: flex;
