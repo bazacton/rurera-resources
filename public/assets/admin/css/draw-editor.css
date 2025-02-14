@@ -187,37 +187,11 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .rureraform-search-field .input-field button {position: absolute; right: 5px; top: 50%; transform: translateY(-50%); border: 1px solid #ddd; padding: 6px 10px; border-radius: 5px; outline: none; font-weight: bold; color: #555; line-height: normal;}
 .rureraform-search-field button i {color: #999; margin: 0 5px 0 0;}
 .search-option-btn .search-or-lable {margin-right: 10px; font-weight: 600; font-size: 16px;}
-.search-option-btn button {
-    border: 1px solid #ddd;
-    padding: 5px 12px;
-    border-radius: 5px;
-    font-weight: bold;
-    color: #555;
-    outline: none;
-    height: 42px;
-}
+.search-option-btn button {border: 1px solid #ddd; padding: 5px 12px; border-radius: 5px; font-weight: bold; color: #555; outline: none; height: 42px;}
 /*featured-controls style start*/
-.featured-controls {
-    background-color: #f2f2f2;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-.featured-controls button {
-    border: 0;
-    background-color: inherit;
-    padding: 12px 16px;
-    color: #333;
-    font-weight: 600;
-    border-radius: 5px;
-    line-height: normal;
-    outline: none;
-}
-.featured-controls button.active {
-    color: #fff;
-    box-shadow: 0 0 0 1px #007bff inset;
-    background: rgb(97, 171, 250);
-    background: linear-gradient(0deg, rgba(97, 171, 250, 1) 25%, rgba(0, 123, 255, 1) 100%);
-}
+.featured-controls {background-color: #f2f2f2; border: 1px solid #ddd; border-radius: 5px;}
+.featured-controls button {border: 0; background-color: inherit; padding: 12px 16px; color: #333; font-weight: 600; border-radius: 5px; line-height: normal; outline: none;}
+.featured-controls button.active {color: #fff; box-shadow: 0 0 0 1px #007bff inset; background: rgb(97, 171, 250); background: linear-gradient(0deg, rgba(97, 171, 250, 1) 25%, rgba(0, 123, 255, 1) 100%);}
 /*featured-controls style end*/
 /*search-filters style start*/
 .search-filters {
