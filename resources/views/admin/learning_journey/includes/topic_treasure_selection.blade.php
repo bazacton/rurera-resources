@@ -48,6 +48,15 @@
                         <option value="">Please select year, subject</option>
                     </select>
                 </div>
+
+                <div class="select-field">
+                    <span>Sub Topic:</span>
+                    <select id="sub_chapter_id"
+                            class="sub-chapters-list rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+                            name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
+                        <option value="">Please select year, subject, Topic</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div class="row conditional-block topics_block">
@@ -56,15 +65,6 @@
                     <div class="featured-filters">
                         <div class="text-box">
                             <h6>Reported Oprations</h6>
-                        </div>
-                        <div class="select-field">
-
-                            <select id="sub_chapter_id"
-                                    class="sub-chapters-list rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
-                                    name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
-                                <option value="">Please select year, subject, Topic</option>
-                            </select>
-
                         </div>
                     </div>
                     <div class="featured-list-sidebar-inner sub-chapters-list-data">

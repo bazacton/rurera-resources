@@ -436,7 +436,7 @@
 
 
 
-                            <div class="learning_journey_sets rurera-processing">
+                            <div class="learning_journey_sets">
                                 <div class="rurera-button-loader" style="display: block;">
                                     <div class="spinner">
                                         <div class="double-bounce1"></div>
@@ -516,7 +516,7 @@
 
 <script type="text/javascript">
 
-    var loaderDivMain = $(".learning_journey_sets");
+    var loaderDivMain = $(".book-dropzone");
     //rurera_loader(loaderDivMain, 'div');
     var sub_chapters_fetched = false;
     var categoriesRequest = null;
