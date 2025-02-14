@@ -30,20 +30,13 @@ $is_development = (!empty( $search_tags ) && in_array('development', $search_tag
          data-start_time="0" data-qresult="{{isset( $newQuestionResult->id )? $newQuestionResult->id : 0}}"
          data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
         <div class="question-layout-block">
-
             <form class="question-fields" action="javascript:;" data-question_id="{{ $question->id }}">
                 <div class="left-content has-bg">
                 <div class="spells-quiz-info">
                     <ul>
-                        <li>
-                            <span>{{$question_no}}</span> Of 10
-                        </li>
-                        <li>
-                           XX
-                        </li>
-                        <li>
-                            <span>0</span> Points
-                        </li>
+                        <li><span>{{$question_no}}</span> Of 10</li>
+                        <li>XX</li>
+                        <li><span>0</span> Points</li>
                     </ul>
                 </div>
                 <div class="spells-quiz-sound">
@@ -62,7 +55,6 @@ $is_development = (!empty( $search_tags ) && in_array('development', $search_tag
                     </div>
                 </div>
                 </div>
-
 
                 <div class="prev-next-controls text-center mb-50 questions-nav-controls  rurera-hide">
                     @if( !isset( $disable_finish ) || $disable_finish == 'false')
@@ -88,16 +80,11 @@ $is_development = (!empty( $search_tags ) && in_array('development', $search_tag
                     <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
                         mark answer
                     </a>
-
-
                     @endif
                 </div>
-
             </form>
-
         </div>
     </div>
-
 </div>
 
 <script src="/assets/default/vendors/sortable/jquery-ui.min.js"></script>
