@@ -395,6 +395,7 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 }
 .featured-list-sidebar .listing-card .text-holder {
     width: calc(100% - 60px);
+    padding-right: 60px;
 }
 .listing-card .text-holder h3 {
     margin: 0 0 5px;
