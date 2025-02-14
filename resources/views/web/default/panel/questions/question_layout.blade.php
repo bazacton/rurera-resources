@@ -53,8 +53,6 @@ $flag_class = (in_array($question->id, $already_flagged))? 'flaged' : 'notflaged
     <span class="question-dev-details">({{ $question->id }}) ({{ $question->question_difficulty_level }}) ({{ $question->question_type }})</span>
 </span>
 
-
-
 @php $classes = isset( $class )? $class : ''; @endphp
 <div id="rureraform-form-1"
         class="{{$classes}} rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable"
@@ -70,19 +68,10 @@ $flag_class = (in_array($question->id, $already_flagged))? 'flaged' : 'notflaged
 
         <div class="validation-error"></div>
     </div>
-
 </div>
 </form>
-					
-					
-					
-					
-					
-					
-					
-					
 
-                
+
 <script>
     function question_layout_functions() {
         var Questioninterval = setInterval(function () {
