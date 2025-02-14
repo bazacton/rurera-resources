@@ -448,6 +448,40 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .author-info .info-text span:first-child:before {
     display: none;
 }
+.list-options {
+    display: flex;
+    align-items: center;
+    gap: 10px 15px;
+    margin: 0 0 10px;
+    flex-wrap: wrap;
+}
+.featured-list-sidebar .list-options {
+    gap: 5px 5px;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+}
+.list-options li {
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    line-height: normal;
+    gap: 5px;
+}
+.featured-list-sidebar .list-options li {
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 0 8px 0 0;
+}
+.list-options li .icon-box {
+    line-height: 12px;
+    display: inline-block;
+}
+.list-options li img {
+    height: 12px;
+    width: 12px;
+    filter: invert(17%) sepia(9%) saturate(17%) hue-rotate(347deg) brightness(103%) contrast(94%);
+}
 /*listing-card style end*/
 
 /* Level Add Modal Style End */
