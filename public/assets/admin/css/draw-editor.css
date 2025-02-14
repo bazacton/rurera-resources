@@ -1,6 +1,9 @@
 .admin_role button {
     outline: none !important;
 }
+.panel-border {
+    border: 1px solid #ddd;
+}
 .drag-controls {position: absolute; right: -40px; top: 30px; height: calc(100% - 120px); border: 1px solid #cccccc; border-radius: 0 8px 8px 0 / 0 50px 50px 0; padding-top: 15px; background-color: #fff; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
 .open .drag-controls {right: 1px; opacity: 1; visibility: visible;}
 .controls-box {height: 100%; width: 100%;}
