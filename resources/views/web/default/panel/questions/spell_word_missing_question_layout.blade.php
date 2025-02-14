@@ -67,7 +67,6 @@ shuffle($characters_list);
          data-start_time="0" data-qresult="{{isset( $newQuestionResult->id )? $newQuestionResult->id : 0}}"
          data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
         <div class="question-layout-block">
-
             <form class="question-fields" action="javascript:;" data-defination="{{isset($word_data['audio_defination'])? $word_data['audio_defination'] : ''}}" data-question_id="{{ $question->id }}">
                 <div class="spells-quiz-info">
                     <ul>
@@ -242,19 +241,13 @@ shuffle($characters_list);
                         <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
                             mark answer
                         </a>
-
-
-
                         @endif
                     </div>
                 </div>
             </form>
-
         </div>
     </div>
-
 </div>
-
 
 <script>
 
