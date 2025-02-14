@@ -99,7 +99,7 @@
                                                     <span>2 hours ago</span>
                                                 </span>
                                             </div>
-                                            <button type="button" class="assignment-btn add-level-stage-custom-btn" data-id="{{$quizObj->id}}" data-title="{{$quizObj->getTitleAttribute()}}">+Add</button>
+                                            <button type="button" class="assignment-btn add-level-stage-custom-btn" data-id="{{$quizObj->id}}" data-title="{{$quizObj->getTitleAttribute()}}">+ Add</button>
                                         </div>
                                         <ul class="list-options">
 
