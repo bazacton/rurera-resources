@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-    <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0">
+    <div class="question-layout-holder mb-0 bg-white panel-border p-25">
 
         @if($topicPartItemObj->topicPartItemQuestions->count() > 0)
             @foreach($topicPartItemObj->topicPartItemQuestions as $questionObj)
