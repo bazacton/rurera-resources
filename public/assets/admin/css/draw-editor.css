@@ -331,7 +331,7 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
     padding-left: 0;
 }
 .featured-list-sidebar .listing-card .text-holder {
-    width: calc(100% - 75px);
+    width: calc(100% - 60px);
 }
 .featured-list-sidebar .listing-card {
     align-items: flex-start;
