@@ -201,19 +201,13 @@ shuffle($correct_characters_list);
                         <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
                             mark answer
                         </a>
-
-
-
                         @endif
                     </div>
                 </div>
             </form>
-
         </div>
     </div>
-
 </div>
-
 
 <script>
 
@@ -301,15 +295,6 @@ shuffle($correct_characters_list);
         }
     });
 	
-	
-	
-	
-	
-
-
-
-
-
 
     function getRandomNumberNotInArray(maxNumber, excludeArray) {
       var randomNumber;
@@ -383,11 +368,6 @@ shuffle($correct_characters_list);
     });
     
 	
-	
-	
-	
-	
-
     $(document).on('click', '.start-spell-quiz', function (e) {
     //jQuery(document).ready(function() {
 
@@ -396,8 +376,6 @@ shuffle($correct_characters_list);
         $('.editor-field-inputs:eq(0)').focus();
         //$('#field-{{$field_id}}').focus();
         $('#sound-icon-{{ $question->id }}').click();
-		
-		
 		
           var $keyboardWrapper = $('.virtual-keyboard'),
           $key = $keyboardWrapper.find("input"),
