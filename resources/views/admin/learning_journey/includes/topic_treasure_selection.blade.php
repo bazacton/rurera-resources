@@ -180,7 +180,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="input-group custom_treasure_field rurera-hide">
+                    <div class="input-group custom_treasure_field rurera-hide mt-15">
                         <input type="text" name="custom_treasure" class="form-control custom_treasure_field_data" value="0">
                     </div>
                 </div>
