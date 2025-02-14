@@ -394,6 +394,7 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
     flex-wrap: wrap;
     text-decoration: none;
     padding: 10px;
+    width: 100%;
 }
 .listing-card .img-holder figure {
     width: 120px;
