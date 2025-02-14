@@ -43,7 +43,7 @@
                         <h3>{{$topicPartItemObj->title}}</h3>
                         <div class="author-info">
                         <span class="info-text">
-                            <span>{{$topicPartItemObj->user->get_full_name()}}</span>
+                            <span>{{isset($topicPartItemObj->user->id)? $topicPartItemObj->user->get_full_name() : '-'}}</span>
                             <span>2 hours ago</span>
                         </span>
                         </div>
@@ -52,8 +52,8 @@
                     <ul class="list-options">
 
                         <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 0 questions</li>
-                        <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> {{$topicPartItemObj->category->getTitleAttribute()}}</li>
-                        <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> {{$topicPartItemObj->subject->getTitleAttribute()}}</li>
+                        <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> {{isset($topicPartItemObj->category->id)? $topicPartItemObj->category->getTitleAttribute() : ''}}</li>
+                        <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> {{isset($topicPartItemObj->subject->id)? $topicPartItemObj->subject->getTitleAttribute() : ''}}</li>
                     </ul>
                 </a>
             </div>
