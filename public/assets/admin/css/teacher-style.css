@@ -616,8 +616,7 @@ Set Up Quiz Page Style End
     object-fit: cover;
 }
 .listing-card .text-holder {
-    /* width: calc(100% - 135px); */
-    width: calc(100% - 60px);
+    width: calc(100% - 135px);
     position: relative;
 }
 .listing-card .author-info img {
@@ -3341,6 +3340,7 @@ span.field-separated span:after {
     flex-wrap: wrap;
     text-decoration: none;
     padding: 10px;
+    width: 100%;
 }
 .featured-list-sidebar .listing-card .img-holder figure {
     width: 45px;
