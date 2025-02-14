@@ -191,7 +191,7 @@ fillGridWithRandomLetters($grid);
                         @if( !isset( $disable_finish ) || $disable_finish == 'false')
                         <a href="javascript:;" id="review-btn_{{ $question->id }}" data-toggle="modal" class="review-btn" data-target="#review_submit">
                             Finish
-                            
+                            <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
                         </a>
                         @endif
                         @php $prev_class = (isset( $prev_question ) && $prev_question > 0)? '' : 'disable-btn'; @endphp
