@@ -3354,6 +3354,7 @@ span.field-separated span:after {
 }
 .featured-list-sidebar .listing-card .text-holder {
     width: calc(100% - 60px);
+    padding-right: 60px;
 }
 .featured-list-sidebar .listing-card {
     align-items: flex-start;
