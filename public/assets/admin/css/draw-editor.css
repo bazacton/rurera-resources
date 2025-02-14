@@ -271,6 +271,27 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
     background: rgb(97,171,250);
     background: linear-gradient(0deg, rgba(97,171,250,1) 25%, rgba(0,123,255,1) 100%);
 }
+.search-filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.search-filters .select-field {
+    background-color: #f7f8fa;
+    border: 1px solid #ddd;
+    position: relative;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+.search-filters .select-field select {
+    border: 0;
+    padding: 0 0;
+    background-color: inherit;
+    cursor: pointer;
+    min-width: 50px;
+}
 .featured-list-sidebar-inner {
     overflow-y: hidden;
     height: 1390px;
