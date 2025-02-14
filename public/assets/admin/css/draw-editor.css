@@ -146,9 +146,10 @@ body .editor-objects-list li label {margin: 0; line-height: normal; outline: non
 .editor-controls-holder .layout-template-item {background-color: #fafafa; border: 1px solid #ccc; padding: 5px 15px; display: inline-block; line-height: normal; border-radius: 3px; text-decoration: none;}
 .editor-controls-holder .path-tool-item.active,
 .editor-controls-holder .layout-template-item.active {border-color: #9acbff; background-color: #f3f9ff; color: var(--blue);}
-.book-dropzone .drop-item > .field-data {border: 2px dotted transparent; border-radius: 5px;}
-.book-dropzone .drop-item.active > .field-data {border-color: #ddd;}
-.book-dropzone .drop-item.ui-draggable {padding: 0;margin: 0;border: 0; cursor: pointer;}
+.book-dropzone .drop-item,
+.book-dropzone .drop-item.ui-draggable {border: 2px dotted transparent; border-radius: 5px;}
+.book-dropzone .drop-item.active {border-color: #ddd;}
+.book-dropzone .drop-item.ui-draggable {padding: 0;margin: 0;cursor: pointer;}
 .field_settings.active {z-index: 5 !important;}
 .book-dropzone .field-data svg {height: 100%; margin-bottom: 0;}
 .book-dropzone .ui-rotatable-handle {background-color: rgba(0, 0, 0, 0.1); top: 50%; left: -48px; pointer-events: none; opacity: 0; visibility: hidden; transform: translateY(-50%);}
@@ -173,7 +174,7 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .book-dropzone .drop-item.field_settings a.remove {background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); position: absolute; top: -22px; left: 50%; opacity: 0; visibility: hidden; color: #ff0000; transform: translateX(-50%); border-radius: 15px; height: fit-content; padding: 4px 10px 3px; width: fit-content;}
 .book-dropzone .drop-item.field_settings a.remove span {font-size: 10px;}
 .book-dropzone .drop-item.field_settings.active a.remove {opacity: 1; visibility: visible;}
-.book-dropzone .object-options a.resize-handler {right: -4px; bottom: 10px; background-color: #ddd; background-image: none; height: 12px; width: 12px;}
+.book-dropzone .object-options a.resize-handler {right: -4px; bottom: -4px; background-color: #ddd; background-image: none; height: 12px; width: 12px;}
 .book-dropzone .object-options a.resize-handler .fas {display: none;}
 /* Zoom Header Style Start */
 .zoom-header button {border: 1px solid #ddd; background-color: #f5f5f5; font-size: 16px; font-weight: 600; outline: none; border-radius: 3px; color: #333; text-shadow: 0 1px 1px #fff; padding: 5px 15px; line-height: normal; max-height: 33px;}
