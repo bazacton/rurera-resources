@@ -111,7 +111,7 @@ body .editor-controls-holder .editor-objects h6.mt-20 {margin-top: 0 !important;
 body ul.editor-objects.sets-selection li {background-color: #fafafa; border: 1px solid #ccc; border-radius: 3px; display: inline-flex; align-items: center; justify-content: center; margin: 0 5px 5px 0; padding: 10px; height: 50px; width: 50px;}
 body ul.editor-objects.sets-selection li img {width: 100% !important;}
 .hide {display: none;}
-.book-dropzone .drop-item {background: inherit; position: absolute; width: fit-content;}
+.book-dropzone .drop-item {background: inherit; background-image: none; position: absolute; width: fit-content;}
 .drop-item span.field-handle {position: absolute; right: 5px; top: -15px; cursor: move;}
 .book-dropzone .text-highlighter {background: yellow; opacity: 0.7; width: inherit; height: inherit;}
 .drop-item a.remove {color: #ff0000;}
@@ -143,7 +143,6 @@ body .editor-objects-list li label {margin: 0; line-height: normal; outline: non
 .editor-controls-holder .layout-template-item {background-color: #fafafa; border: 1px solid #ccc; padding: 5px 15px; display: inline-block; line-height: normal; border-radius: 3px; text-decoration: none;}
 .editor-controls-holder .path-tool-item.active,
 .editor-controls-holder .layout-template-item.active {border-color: #9acbff; background-color: #f3f9ff; color: var(--blue);}
-.book-dropzone .drop-item {background: none; background-image: none;}
 .book-dropzone .drop-item > .field-data {border: 2px dotted transparent; border-radius: 5px;}
 .book-dropzone .drop-item.active > .field-data {border-color: #ddd;}
 .book-dropzone .field-data svg {height: 100%; margin-bottom: 0;}
