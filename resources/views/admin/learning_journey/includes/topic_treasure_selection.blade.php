@@ -190,9 +190,6 @@
     </div>
 
     <script>
-
-
-
         $(document).on('change', '.treasure_selection', function () {
             var current_value = $(this).val();
             $(".custom_treasure_field").addClass('rurera-hide');
