@@ -142,7 +142,7 @@ body .editor-objects-list li label {margin: 0; line-height: normal; outline: non
 .book-dropzone .drop-item.active {border-color: #ddd;}
 .book-dropzone .drop-item.ui-draggable {padding: 0;margin: 0;cursor: pointer;}
 .book-dropzone .drop-item .field-data {height: 100%;}
-.field_settings.active {z-index: 10 !important;}
+.field_settings.active {z-index: 11 !important;}
 .book-dropzone .field-data svg {height: 100%; margin-bottom: 0;}
 .book-dropzone .ui-rotatable-handle {background-color: rgba(0, 0, 0, 0.1); top: 50%; left: -48px; pointer-events: none; opacity: 0; visibility: hidden; transform: translateY(-50%);}
 .book-dropzone .ui-rotatable-handle:after {content: ""; position: absolute; right: -100%; top: 50%; transform: translateY(-50%); width: 25px; border-top: 3px dotted #ddd; margin-right: -5px;}
