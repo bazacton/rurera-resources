@@ -30,51 +30,49 @@ $is_development = (!empty( $search_tags ) && in_array('development', $search_tag
 $total_questions = count(json_decode($quizAttempt->questions_list));
 
 @endphp
-
-
-				
-					<form class="question-fields" action="javascript:;" data-question_id="{{ $question->id }}">
-					<meta name="csrf-token" content="{{ csrf_token() }}">
-                    @php $already_flagged = ($quizResultObj->flagged_questions != '') ? (array)
-                    json_decode($quizResultObj->flagged_questions) : array();
-                    $flag_class = (in_array($question->id, $already_flagged))? 'flaged' : 'notflaged';
-                    @endphp
-                    @if( $question->review_required == 1 || $is_development == true)
-                    <div class="question-review-required">
-                        @if( $question->review_required == 1)
-                        <div class="question-label-tag">Review Required</div>
-                        @endif
-                        @if( $is_development == true)
-                        <div class="question-label-tag">Developer Review Required</div>
-                        @endif
-                    </div>
-                    @endif
-                    <span class="questions-total-holder d-block mb-15">
-                        @if($layout_type != 'results') <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$question_no}}</span>
-                        @endif
-                        <span class="question-dev-details">({{ $question->id }}) ({{ $question->question_difficulty_level }}) ({{ $question->question_type }})</span>
-                    </span>
+			
+<form class="question-fields" action="javascript:;" data-question_id="{{ $question->id }}">
+<meta name="csrf-token" content="{{ csrf_token() }}">
+@php $already_flagged = ($quizResultObj->flagged_questions != '') ? (array)
+json_decode($quizResultObj->flagged_questions) : array();
+$flag_class = (in_array($question->id, $already_flagged))? 'flaged' : 'notflaged';
+@endphp
+@if( $question->review_required == 1 || $is_development == true)
+<div class="question-review-required">
+    @if( $question->review_required == 1)
+    <div class="question-label-tag">Review Required</div>
+    @endif
+    @if( $is_development == true)
+    <div class="question-label-tag">Developer Review Required</div>
+    @endif
+</div>
+@endif
+<span class="questions-total-holder d-block mb-15">
+    @if($layout_type != 'results') <span class="question-number-holder question-number" style="z-index: 999999999;"> {{$question_no}}</span>
+    @endif
+    <span class="question-dev-details">({{ $question->id }}) ({{ $question->question_difficulty_level }}) ({{ $question->question_type }})</span>
+</span>
 
 
 
-                    @php $classes = isset( $class )? $class : ''; @endphp
-                    <div id="rureraform-form-1"
-                         class="{{$classes}} rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable"
-                         _data-parent="1"
-                         _data-parent-col="0" style="display: block;">
-                        <div class="question-layout row d-flex align-items-center">
-                            @if( isset( $show_marks ) && $show_marks == true)
-                                @if($layout_type != 'results')
-                                <span class="marks" data-marks="{{$question->question_score}}">{{$question->question_score}} marks</span>
-                                @endif
-                            @endif
-                            {!! $question_layout !!}
+@php $classes = isset( $class )? $class : ''; @endphp
+<div id="rureraform-form-1"
+        class="{{$classes}} rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable"
+        _data-parent="1"
+        _data-parent-col="0" style="display: block;">
+    <div class="question-layout row d-flex align-items-center">
+        @if( isset( $show_marks ) && $show_marks == true)
+            @if($layout_type != 'results')
+            <span class="marks" data-marks="{{$question->question_score}}">{{$question->question_score}} marks</span>
+            @endif
+        @endif
+        {!! $question_layout !!}
 
-                            <div class="validation-error"></div>
-                        </div>
+        <div class="validation-error"></div>
+    </div>
 
-                    </div>
-					</form>
+</div>
+</form>
 					
 					
 					
