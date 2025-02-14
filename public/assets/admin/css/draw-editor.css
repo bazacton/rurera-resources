@@ -202,6 +202,9 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .level_add_modal.modal {
     background-color: var(--white);
 }
+.level_add_modal .modal-dialog {
+    margin: 0;
+}
 .level_add_modal.modal.show .modal-content,
 .level_add_modal.modal .modal-content {
     box-shadow: none;
