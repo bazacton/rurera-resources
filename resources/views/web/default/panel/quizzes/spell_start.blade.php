@@ -598,10 +598,6 @@ $target_score = 90;
             focusInterval = null;
         });
 		
-		
-		
-
-
         $('.editor-field-inputs:eq(0)').focus();
         Quizintervals = setInterval(function () {
             if( timePaused == false) {
@@ -667,8 +663,6 @@ $target_score = 90;
             if (curSize >= 16)
             $('.learning-page').css('font-size', curSize);
         });
-		
-		
 		
 		var active_question_id = $(".question-area-block").attr('data-active_question_id');
 		if( active_question_id > 0){
@@ -790,8 +784,6 @@ $target_score = 90;
 		$(".quiz-questions-bar .bar-fill").attr('title',Math.round(correct_percentage)+'%');
     }
 	
-	
-
 	$(document).on('click', '.reset-quiz-button', function (e) {
 		var total_questions = '{{$total_questions}}';
 		$(".quiz_reset_modal .modal-body .total-questions").html(total_questions);
@@ -809,8 +801,5 @@ $target_score = 90;
 	$(document).on('click', '.reset-test-btn', function (e) {
         $(".spell-test-quiz-form").submit();
     });	
-	
-
-
 </script>
 	
