@@ -368,14 +368,11 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 }
 .add-level-stage-custom-btn {
     background-color: inherit;
-    padding: 2px 15px;
-    border-radius: 5px;
-    font-size: 13px;
-    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 3px;
     outline: none;
     display: inline-flex;
     align-items: center;
-    min-height: 32px;
     color: var(--blue);
     border: 1px solid var(--blue);
     -webkit-transition: all 0.3s ease-out;
@@ -383,6 +380,7 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    margin-top: 5px;
 }
 .featured-list-sidebar .load-more-btn {
     width: 100%;
