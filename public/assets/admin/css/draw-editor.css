@@ -308,6 +308,11 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
     padding: 0;
     margin-bottom: 30px;
 }
+.featured-list-sidebar-inner {
+    overflow-y: hidden;
+    max-height: 1390px;
+    padding: 0 15px 15px;
+}
 /*featured-filters style start*/
 .featured-filters {
     display: flex;
@@ -360,6 +365,91 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
     color: var(--blue);
     border: 1px solid var(--blue);
 }
+/*listing-card style start*/
+.listing-card {
+    position: relative;
+}
+.featured-list-sidebar .listing-card {
+    align-items: flex-start;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.listing-card .listing-card-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+    text-decoration: none;
+    padding: 10px;
+}
+.listing-card .img-holder figure {
+    width: 120px;
+    height: 100px;
+    margin-bottom: 0;
+}
+.featured-list-sidebar .listing-card .img-holder figure {
+    width: 45px;
+    height: 45px;
+}
+.listing-card .img-holder img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.featured-list-sidebar .listing-card .img-holder img {
+    border-radius: 5px;
+}
+.listing-card .text-holder {
+    width: calc(100% - 135px);
+    position: relative;
+}
+.featured-list-sidebar .listing-card .text-holder {
+    width: calc(100% - 60px);
+}
+.listing-card .text-holder h3 {
+    margin: 0 0 5px;
+    font-size: 1.2rem;
+}
+.featured-list-sidebar .listing-card .text-holder h3 {
+    font-size: 0.9rem;
+}
+.author-info .info-text {
+    padding-left: 5px;
+    font-size: 14px;
+}
+.featured-list-sidebar .author-info .info-text {
+    padding-left: 0;
+}
+.author-info .info-text span {
+    position: relative;
+    padding: 0 0 0 15px;
+}
+.author-info .info-text span:first-child {
+    padding-left: 0;
+}
+.author-info .info-text span {
+    position: relative;
+    padding: 0 0 0 15px;
+}
+.author-info .info-text span:before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    height: 4px;
+    width: 4px;
+    background-color: #64748b;
+    border-radius: 100%;
+    margin-top: -2px;
+}
+.author-info .info-text span:first-child:before {
+    display: none;
+}
+/*listing-card style end*/
+
 /* Level Add Modal Style End */
 
 @media (max-width: 992px) {
