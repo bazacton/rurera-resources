@@ -213,22 +213,13 @@ fillGridWithRandomLetters($grid);
                         <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
                             mark answer
                         </a>
-
-
-
                         @endif
                     </div>
                 </div>
             </form>
-
         </div>
     </div>
-
 </div>
-
-<script>
-        
-    </script>
 
 <script>
 
