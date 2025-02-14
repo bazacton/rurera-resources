@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-    <div class="question-layout-holder mb-0 bg-white panel-border p-25">
+    <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0">
 
         @if($quizObj->quizQuestionsList->count() > 0)
             @foreach($quizObj->quizQuestionsList as $quizQuestionObj)

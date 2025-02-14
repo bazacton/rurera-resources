@@ -484,16 +484,20 @@
     </div>
 </section>
 
+
+
 <div id="level_add_modal" class="level_add_modal modal fade" role="dialog" data-backdrop="static">
-    <div class="modal-dialog modal-lg m-0" style="max-width:100%;">
+    <div class="modal-dialog modal-lg" style="max-width:100%;">
         <div class="modal-content edit-quest-modal-div">
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <div class="modal-box d-inline-block w-100 mt-10">
+                <div class="modal-box">
 
                     @include('admin.learning_journey.includes.topic_treasure_selection', ['sub_chapters' => $sub_chapters])
+
+
 
                 </div>
             </div>
@@ -1080,7 +1084,12 @@
 
     $(document).on('click', '.add-level', function () {
         //$('.sub-chapters-list').change();
+
+        $(".level_add_modal .ajax-category-courses").val('').change();
+        $(".sub-chapters-list-data").html('');
+        $(".topic-part-item-data").html('');
         $(".level_add_modal").modal('show');
+
 
     });
     $(document).on('click', '.journey-settings', function () {
@@ -1154,7 +1163,8 @@
 
                 $(this).removeClass('topic-added');
                 var data_id  = $(this).attr('data-id');
-                delete alreadyAddedTopics[data_id];
+                var level_id = $(".book-dropzone.active").attr('data-level_id');
+                delete alreadyAddedTopics[level_id][data_id];
                 var element_id = $('.field_settings[data-topic_part_item_id="'+data_id+'"]').attr('data-id');
                 var element_type = $('.field_settings[data-topic_part_item_id="'+data_id+'"]').attr('data-field_type');
                 $('.field_settings[data-topic_part_item_id="'+data_id+'"]').remove();
@@ -1182,7 +1192,11 @@
                 var layer_html = '';
                 $el = $('<div></div>');
                 var topic_part_item_id = $(this).attr('data-id');
-                alreadyAddedTopics[topic_part_item_id]    = topic_part_item_id;
+                var level_id = $(".book-dropzone.active").attr('data-level_id');
+                if (!Array.isArray(alreadyAddedTopics[level_id])) {
+                    alreadyAddedTopics[level_id] = [];
+                }
+                alreadyAddedTopics[level_id][topic_part_item_id]    = topic_part_item_id;
                 var topic_title = $(this).attr('data-title');
 
                 var unique_id = Math.floor((Math.random() * 99999) + 1);
@@ -1228,12 +1242,14 @@
     });
 
     $(document).on('click', '.add-level-stage-custom-btn', function () {
+        console.log(alreadyAddedTopics);
         if($(this).hasClass('topic-added')){
             $(this).closest('.custom-topic-part-item-list').removeClass('active');
             $(this).removeClass('topic-added');
 
             var data_id  = $(this).attr('data-id');
-            delete alreadyAddedTopics[data_id];
+            var level_id = $(".book-dropzone.active").attr('data-level_id');
+            delete alreadyAddedTopics[level_id][data_id];
             var element_id = $('.field_settings[data-topic_part_item_id="'+data_id+'"]').attr('data-id');
             var element_type = $('.field_settings[data-topic_part_item_id="'+data_id+'"]').attr('data-field_type');
             $('.field_settings[data-topic_part_item_id="'+data_id+'"]').remove();
@@ -1253,8 +1269,14 @@
             }
 
         }else {
+            var data_id  = $(this).attr('data-id');
             $(this).addClass('topic-added');
             $(this).closest('.custom-topic-part-item-list').addClass('active');
+            var level_id = $(".book-dropzone.active").attr('data-level_id');
+            if (!Array.isArray(alreadyAddedTopics[level_id])) {
+                alreadyAddedTopics[level_id] = [];
+            }
+            alreadyAddedTopics[level_id][data_id]    = data_id;
             var level_type = 'custom_topic';
             var unique_id = Math.floor((Math.random() * 99999) + 1);
             var field_random_number = 'rand_' + unique_id;
