@@ -191,6 +191,45 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 }
 /* Zoom Header Style End */
 
+/* Level Add Modal Style Start */
+.rureraform-search-field {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+.rureraform-search-field .input-field {
+    position: relative;
+    width: calc(100% - 380px);
+}
+.rureraform-search-field input[type="text"] {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 46px;
+    padding: 0 15px;
+    outline: none;
+}
+.rureraform-search-field .input-field button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #ddd;
+    padding: 6px 10px;
+    border-radius: 5px;
+    outline: none;
+    font-weight: bold;
+    color: #555;
+    line-height: normal;
+}
+.rureraform-search-field button i {
+    color: #999;
+    margin: 0 5px 0 0;
+}
+/* Level Add Modal Style End */
+
 @media (max-width: 992px) {
     body .editor-controls-holder {min-width: 375px; max-width: 375px;}
     body .editor-zone:has(.field-options) {padding-left: 0;}
