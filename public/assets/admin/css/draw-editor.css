@@ -148,6 +148,7 @@ body .editor-objects-list li label {margin: 0; line-height: normal; outline: non
     padding: 10px 15px;
     white-space: nowrap;
     height: auto;
+    min-height: 54px;
 }
 .learning-stage-btn button i {margin-right: 5px;}
 .learning-jounrey-tabs {display: flex; align-items: flex-end;}
