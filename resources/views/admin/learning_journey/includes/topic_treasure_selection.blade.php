@@ -68,6 +68,9 @@
                         </div>
                     </div>
                     <div class="featured-list-sidebar-inner sub-chapters-list-data">
+                        @include('admin.learning_journey.includes.topic_list_items_list_layout', ['topicPartsItems' => $topicPartsItems])
+
+                        <button class="load-more-btn load-more-topic-items"><i class="fas fa-plus"></i> Load More</button>
                     </div>
                 </div>
             </div>
