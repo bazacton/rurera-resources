@@ -77,8 +77,7 @@ body .editor-controls .nav .nav-item .nav-link.active,
 body .editor-objects-block .nav .nav-item .nav-link.active {border-bottom-color: #fff; color: var(--primary);}
 body .editor-parent-nav ul {gap: 8px 10px;}
 body .editor-parent-nav .nav-link {padding: 5px 12px; font-size: 14px;}
-body .book-dropzone {border-radius: 0; min-height: 705px; z-index: 1; background-color: #fff; transform-origin:0% 0%; 
-}
+body .book-dropzone {border-radius: 0; min-height: 705px; z-index: 1; background-color: #fff; transform-origin:0% 0%;}
 .editor-objects-block h5 {padding: 0 15px; margin-bottom: 20px;}
 .editor-controls-holder .fade:not(.show) {display: none;}
 body .editor-controls-holder .editor-objects-block .nav,
@@ -96,9 +95,7 @@ body .editor-objects-block .nav .nav-item .nav-link {padding: 5px 15px;}
 .book-dropzone .stage-shapes{height:30px; width:140px;}
 .card .card-body:has(.learning-journey-form), .card:has(.learning-journey-form) {box-shadow: none; padding: 0; margin-bottom: 0;}
 .card:has(.learning-journey-form) {overflow: hidden;}
-.main-content:has(.zoom-header) .card:has(.learning-journey-form) {
-    overflow: visible;
-}
+.main-content:has(.zoom-header) .card:has(.learning-journey-form) {overflow: visible;}
 form.learning-journey-form {margin: 0;}
 .book-dropzone .resizeable{resize: both; overflow: hidden;}
 .editor-controls-holder .editor-objects {background-color: inherit; padding: 0;}
@@ -178,19 +175,11 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 /* Zoom Header Style End */
 
 /* Level Add Modal Style Start */
-.level_add_modal.modal {
-    background-color: var(--white);
-}
-.level_add_modal .modal-dialog {
-    margin: 0;
-}
+.level_add_modal.modal {background-color: var(--white);}
+.level_add_modal .modal-dialog {margin: 0;}
 .level_add_modal.modal.show .modal-content,
-.level_add_modal.modal .modal-content {
-    box-shadow: none;
-}
-.level_add_modal .modal-box {
-    padding-top: 30px;
-}
+.level_add_modal.modal .modal-content {box-shadow: none;}
+.level_add_modal .modal-box {padding-top: 30px;}
 /* Rureraform-Search-Field Style Start */
 .rureraform-search-field {
     display: flex;
