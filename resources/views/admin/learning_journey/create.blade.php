@@ -958,7 +958,8 @@
 
                             var $stageStart = $list.find(".stage_start").detach(); // Remove and store the .stage_end element
                             $list.prepend($stageStart);
-							sorting_render(); // Call your function here
+                            sorting_render(); // Call your function here
+                            levels_sorting_render();
 						}
 					});
 
@@ -1125,8 +1126,7 @@
             </li>`;
 
 
-            $(".book-dropzone.active").closest('.editor-zone').find(".editor-objects-list-all").append(layer_html);
-            //$(".book-dropzone.active").closest('.editor-zone').find(".levels-objects-list").append(layer_html);
+            $(".book-dropzone.active").closest('.editor-zone').find(".editor-objects-list-all").find(".stage_end").last().before(layer_html).length || $(".editor-objects-list-all").append(layer_html);
             $(".book-dropzone.active").closest('.editor-zone').find(".levels-objects-list").find(".stage_end").last().before(layer_html).length || $(".levels-objects-list").append(layer_html);
 
 
@@ -1211,7 +1211,7 @@
             </li>`;
 
 
-                $(".book-dropzone.active").closest('.editor-zone').find(".editor-objects-list-all").append(layer_html);
+                $(".book-dropzone.active").closest('.editor-zone').find(".editor-objects-list-all").find(".stage_end").last().before(layer_html).length || $(".editor-objects-list-all").append(layer_html);
                 $(".book-dropzone.active").closest('.editor-zone').find(".levels-objects-list").find(".stage_end").last().before(layer_html).length || $(".levels-objects-list").append(layer_html);
 
 
