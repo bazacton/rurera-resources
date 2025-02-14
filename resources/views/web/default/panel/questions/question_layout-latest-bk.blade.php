@@ -10,15 +10,11 @@
                  class="rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable"
                  _data-parent="1"
                  _data-parent-col="0" style="display: block;">
-                <div class="question-layout row">
-
-                </div>
+                <div class="question-layout row"></div>
             </div>
         </div>
-
     </div>
 </div>
-
 @php
 
 $question_layout = html_entity_decode(json_decode(base64_decode(trim(stripslashes($question->question_layout)))));
@@ -86,7 +82,6 @@ $total_questions = countSubItems(json_decode($quizAttempt->questions_list));
 
                     </div>
                     <div class="show-notifications"></div>
-
                     <div class="prev-next-controls text-center mb-50 questions-nav-controls">
                         @if( !isset( $disable_finish ) || $disable_finish == 'false')
                         <a href="javascript:;" data-toggle="modal" class="review-btn" data-target="#review_submit">
