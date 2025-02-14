@@ -14,6 +14,8 @@
             <div class="search-filters mb-0 conditional-block topics_block">
                 <div class="select-field">
                     <span>Year:</span>
+
+
                     <select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
                         <option value="">{{trans('admin/main.all_categories')}}</option>
                         @foreach($categories as $category)
@@ -56,11 +58,13 @@
                             <h6>Reported Oprations</h6>
                         </div>
                         <div class="select-field">
+
                             <select id="sub_chapter_id"
-                                class="sub-chapters-list rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
-                                name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
+                                    class="sub-chapters-list rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+                                    name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
                                 <option value="">Please select year, subject, Topic</option>
                             </select>
+
                         </div>
                     </div>
                     <div class="featured-list-sidebar-inner sub-chapters-list-data">
@@ -95,7 +99,7 @@
                                                     <span>2 hours ago</span>
                                                 </span>
                                             </div>
-                                            <button type="button" class="assignment-btn add-level-stage-custom-btn" data-id="{{$quizObj->id}}" data-title="{{$quizObj->getTitleAttribute()}}">+ Add</button>
+                                            <button type="button" class="assignment-btn add-level-stage-custom-btn" data-id="{{$quizObj->id}}" data-title="{{$quizObj->getTitleAttribute()}}">+Add</button>
                                         </div>
                                         <ul class="list-options">
 
@@ -115,6 +119,7 @@
         </div>
         <div class="row conditional-block rurera-hide treasures_block">
             <div class="col-12 col-lg-12 col-md-12 years-group populated-data">
+
                 <div class="form-group">
                     <div class="input-group">
                         <div class="radio-buttons">
@@ -175,7 +180,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="input-group custom_treasure_field rurera-hide mt-15">
+                    <div class="input-group custom_treasure_field rurera-hide">
                         <input type="text" name="custom_treasure" class="form-control custom_treasure_field_data" value="0">
                     </div>
                 </div>
@@ -185,6 +190,9 @@
     </div>
 
     <script>
+
+
+
         $(document).on('change', '.treasure_selection', function () {
             var current_value = $(this).val();
             $(".custom_treasure_field").addClass('rurera-hide');
@@ -258,6 +266,10 @@
         var subChapterDivMain = $(".sub-chapters-list-data");
         var searchDivMain = $(".search-topic-btn");
         $(document).on('click', '.search-topic-btn', function () {
+            var level_id = $(".book-dropzone.active").attr('data-level_id');
+            if (!Array.isArray(alreadyAddedTopics[level_id])) {
+                alreadyAddedTopics[level_id] = [];
+            }
             rurera_loader(subChapterDivMain, 'div');
             rurera_loader(searchDivMain, 'div');
             var search_text = $(".topic_search_field").val();
@@ -279,7 +291,7 @@
                     rurera_remove_loader(searchDivMain, 'button');
                     $(".sub-chapters-list-data").html(response);
 
-                    $.each(alreadyAddedTopics, function(index, selected_topic_id) {
+                    $.each(alreadyAddedTopics[level_id], function(index, selected_topic_id) {
                         $('.add-level-stage-topic-btn[data-id="'+selected_topic_id+'"]').addClass('topic-added');
                         $('.add-level-stage-topic-btn[data-id="'+selected_topic_id+'"]').closest('.topic-part-item-list').addClass('active');
 
@@ -294,6 +306,10 @@
         var subChapterDivMain = $(".sub-chapters-list-data");
         $(document).on('change', '.sub-chapters-list', function () {
             rurera_loader(subChapterDivMain, 'div');
+            var level_id = $(".book-dropzone.active").attr('data-level_id');
+            if (!Array.isArray(alreadyAddedTopics[level_id])) {
+                alreadyAddedTopics[level_id] = [];
+            }
             console.log('loader------');
             var sub_chapter_id = $(this).val();
             subChapterDataRequest = $.ajax({
@@ -312,7 +328,7 @@
                     rurera_remove_loader(subChapterDivMain, 'button');
                     $(".sub-chapters-list-data").html(response);
 
-                    $.each(alreadyAddedTopics, function(index, selected_topic_id) {
+                    $.each(alreadyAddedTopics[level_id], function(index, selected_topic_id) {
                         $('.add-level-stage-topic-btn[data-id="'+selected_topic_id+'"]').addClass('topic-added');
                         $('.add-level-stage-topic-btn[data-id="'+selected_topic_id+'"]').closest('.topic-part-item-list').addClass('active');
 
