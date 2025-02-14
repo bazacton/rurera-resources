@@ -484,10 +484,8 @@
     </div>
 </section>
 
-
-
 <div id="level_add_modal" class="level_add_modal modal fade" role="dialog" data-backdrop="static">
-    <div class="modal-dialog modal-lg" style="max-width:100%;">
+    <div class="modal-dialog modal-lg m-0" style="max-width:100%;">
         <div class="modal-content edit-quest-modal-div">
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -496,8 +494,6 @@
                 <div class="modal-box">
 
                     @include('admin.learning_journey.includes.topic_treasure_selection', ['sub_chapters' => $sub_chapters])
-
-
 
                 </div>
             </div>
