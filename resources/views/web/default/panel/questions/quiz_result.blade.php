@@ -8,7 +8,7 @@
                 <a href="{{ $quizResult->quiz->webinar->getUrl() }}" target="_blank" class="text-gray">{{ $quizResult->quiz->webinar->title }}</a>
                 | {{ trans('public.by') }}
                 <span class="font-weight-bold">
-                    <a href="{{ $quizResult->quiz->creator->getProfileUrl() }}" target="_blank" class=""> {{ $quizResult->quiz->creator->get_full_name() }}</a>
+                    <a href="{{ $quizResult->quiz->creator->getProfileUrl() }}" target="_blank"> {{ $quizResult->quiz->creator->get_full_name() }}</a>
                 </span>
             </p>
 
@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-6 col-md-3 d-flex align-items-center justify-content-center">
                         <div class="d-flex flex-column align-items-center text-center">
-                            <img src="/assets/default/img/activity/58.svg" width="64" height="64" alt="">
+                            <img src="/assets/default/img/activity/58.svg" width="64" height="64" alt="activity image">
                             <strong class="font-30 font-weight-bold text-secondary mt-5">{{ $quizResult->quiz->pass_mark }}/{{ $questionsSumGrade }}</strong>
                             <span class="font-16 text-gray font-weight-500">{{ trans('public.min') }} {{ trans('quiz.grade') }}</span>
                         </div>
@@ -24,7 +24,7 @@
 
                     <div class="col-6 col-md-3 d-flex align-items-center justify-content-center">
                         <div class="d-flex flex-column align-items-center text-center">
-                            <img src="/assets/default/img/activity/88.svg" width="64" height="64" alt="">
+                            <img src="/assets/default/img/activity/88.svg" width="64" height="64" alt="activity image">
                             <strong class="font-30 font-weight-bold text-secondary mt-5">{{ $numberOfAttempt }}/{{ $quizResult->quiz->attempt }}</strong>
                             <span class="font-16 text-gray font-weight-500">{{ trans('quiz.attempts') }}</span>
                         </div>
@@ -32,7 +32,7 @@
 
                     <div class="col-6 col-md-3 mt-30 mt-md-0 d-flex align-items-center justify-content-center mt-5 mt-md-0">
                         <div class="d-flex flex-column align-items-center text-center">
-                            <img src="/assets/default/img/activity/45.svg" width="64" height="64" alt="">
+                            <img src="/assets/default/img/activity/45.svg" width="64" height="64" alt="activity image">
                             <strong class="font-30 font-weight-bold text-secondary mt-5">{{ $quizResult->user_grade }}/{{  $questionsSumGrade }}</strong>
                             <span class="font-16 text-gray font-weight-500">{{ trans('quiz.your_grade') }}</span>
                         </div>
@@ -40,7 +40,7 @@
 
                     <div class="col-6 col-md-3 mt-30 mt-md-0 d-flex align-items-center justify-content-center mt-5 mt-md-0">
                         <div class="d-flex flex-column align-items-center text-center">
-                            <img src="/assets/default/img/activity/44.svg" width="64" height="64" alt="">
+                            <img src="/assets/default/img/activity/44.svg" width="64" height="64" alt="activity image">
                             <strong class="font-30 font-weight-bold text-{{ ($quizResult->status == 'passed') ? 'primary' : ($quizResult->status == 'waiting' ? 'warning' : 'danger') }} mt-5">
                                 {{ trans('quiz.'.$quizResult->status) }}
                             </strong>
