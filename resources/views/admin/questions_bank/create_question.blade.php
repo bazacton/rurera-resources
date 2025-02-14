@@ -1031,13 +1031,11 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 								@php $glossary  = isset( $glossary )? $glossary : array(); $glossary_ids = isset( $glossary_ids )? $glossary_ids : array(); @endphp
 
                                 <div class="col-12 col-md-12">
-                                <div class="row">
-                                    <div class="col-12 col-md-12">
+                                    <div class="row">
+                                        <div class="col-12 col-md-12">
                                             <div class="form-group">
                                                 <label class="input-label">Glossary</label>
-                                                <select name="glossary_ids[]" id="glossary_ids"
-                                                        class="glossary-items form-control"
-                                                        multiple>
+                                                <select name="glossary_ids[]" id="glossary_ids" class="glossary-items form-control" multiple>
                                                     @if(!empty($glossary))
                                                     @foreach($glossary as $glossaryData)
                                                     @php $selected = '' @endphp
