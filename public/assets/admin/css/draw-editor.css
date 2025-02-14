@@ -126,21 +126,7 @@ body .editor-objects-list li:before {counter-increment: section; content: counte
 body .editor-objects-list li.active {background-color: #efefef; border-color: var(--blue);}
 body .editor-objects-list li label {margin: 0; line-height: normal; outline: none;}
 .learning-stage-btn {display: inline-flex; margin-bottom: 0; margin-left: auto;}
-.learning-stage-btn button {
-    border: 1px solid #ddd;
-    background-color: #fff;
-    margin-left: 0;
-    border-radius: 5px 5px 0 0;
-    border-bottom: 0;
-    font-size: 14px;
-    color: var(--blue);
-    font-weight: 600;
-    outline: none;
-    padding: 10px 15px;
-    white-space: nowrap;
-    height: auto;
-    min-height: 54px;
-}
+.learning-stage-btn button {border: 1px solid #ddd; background-color: #fff; margin-left: 0; border-radius: 5px 5px 0 0; border-bottom: 0; font-size: 14px; color: var(--blue); font-weight: 600; outline: none; padding: 10px 15px; white-space: nowrap; height: auto; min-height: 54px;}
 .learning-stage-btn button i {margin-right: 5px;}
 .learning-jounrey-tabs {display: flex; align-items: flex-end;}
 .add-level-form {margin-bottom: 0;}
