@@ -135,19 +135,12 @@ shuffle($correct_characters_list);
 							@endforeach
 						@endif	
 						</ul>
-					
                         <input type="text" data-min="{{$no_of_words}}" class="editor-field rurera-min-char hide" data-field_id="{{$field_id}}" data-id="{{$field_id}}" id="field-{{$field_id}}">
                     </div>
-
-
-
                     <div class="question-correct-answere rurera-hide">
                         {{$correct_answer}} - {{$question->id}}
                     </div>
-					
 					<div class="question-populated-response"></div>
-
-
                     <div class="form-btn-field">
                         <button type="button" class="question-review-btn" data-id="{{ $question->id }}">Finish<svg style="width: 22px;height: 22px;" xmlns="http://www.w3.org/2000/svg" version="1.0"
                                  width="512.000000pt" height="512.000000pt"
