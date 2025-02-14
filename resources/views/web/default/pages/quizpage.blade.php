@@ -134,13 +134,13 @@
                         <div class="question-label">
                             <span>Solve the follwing problems. Use pen and paper where required</span></div>
                         <span> <span>1 x 2 x 3</span> <span class="input-holder"> <input type="text"
-                                                                                         class="editor-field input-simple extra-small"> </span> <span>1 + 2 + 3</span> </span>
+                            class="editor-field input-simple extra-small"> </span> <span>1 + 2 + 3</span> </span>
                         <span> <span>2 x 2 x 2</span> <span class="input-holder"> <input type="text"
-                                                                                         class="editor-field input-simple extra-small"> </span> <span>2 + 2 + 2</span> </span>
+                            class="editor-field input-simple extra-small"> </span> <span>2 + 2 + 2</span> </span>
                         <span> <span>1 x 10 x 10</span> <span class="input-holder"> <input type="text"
-                                                                                           class="editor-field input-simple extra-small"> </span> <span>1 + 10 + 10</span> </span>
+                            class="editor-field input-simple extra-small"> </span> <span>1 + 10 + 10</span> </span>
                         <span> <span>0 x 10 x 10</span> <span class="input-holder"> <input type="text"
-                                                                                           class="editor-field input-simple extra-small"> </span> <span>0 + 10 + 10</span> </span>
+                            class="editor-field input-simple extra-small"> </span> <span>0 + 10 + 10</span> </span>
                         <span class="marks">1 mark</span>
                     </div>
                     <div class="prev-next-controls text-center mb-50">
