@@ -12,34 +12,8 @@
             <li><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt=""></span> 7th-8th  Grade</li>
             <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
         </ul>
-        <div class="class-controls">
-            <div class="left-area d-inline-flex align-items-center">
-                <div class="class-controls-option questions-control-options border-0 mr-0 pr-0 d-inline-flex align-items-center">
-                    <button type="button"><img src="/assets/default/svgs/edit-simple.svg" alt="">Copy & edit</button>
-                    <button type="button"><img src="/assets/default/svgs/save.svg" alt="">Save</button>
-                    <button type="button"><img src="/assets/default/svgs/share.svg" alt="">Share</button>
-                    <button type="button"><img src="/assets/default/svgs/download.svg" alt="">Worksheet</button>
-                    <div class="dropdown-box">
-                        <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
-                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt=""> Delete</a>
-                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="right-area w-auto">
-                <button type="button" class="assignment-btn add-level-stage-custom-btn" data-id="{{$quizObj->id}}" data-title="{{$quizObj->getTitleAttribute()}}"><img class="show-img" src="/assets/default/svgs/clock.svg" alt=""> Assign</button>
-                <button type="button" class="perview-btn" data-toggle="modal" data-target="#document-modal"><img class="show-img" src="/assets/default/svgs/eye-show.svg" alt=""> Perview</button>
-            </div>
-        </div>
     </div>
-    <div class="question-layout-holder mb-0 bg-white panel-border p-25">
+    <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0">
 
         @if($quizObj->quizQuestionsList->count() > 0)
             @foreach($quizObj->quizQuestionsList as $quizQuestionObj)

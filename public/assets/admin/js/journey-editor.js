@@ -480,56 +480,57 @@ function after_add_render(field_random_number, dropZonObj){
 function reinitialize_items(){
 
     $('.curriculum-item-data.active .levels-objects-list').find('li').each(function () {
-        var field_id = $(this).attr('data-id');
-        var link_position = $(this).attr('data-link_position');
-        link_position = (link_position == null || link_position == undefined)? 'left-in' : link_position
-		link_position = 'left-in';
-		console.log('reinitialize_itemsreinitialize_itemsreinitialize_itemsreinitialize_items');
-        const previousElement = $(this).prev('li'); // Find the previous element with the same data-field_type
-        if (previousElement.length > 0) {
-            const previousId = previousElement.attr('data-id'); // Get the ID of the previous element
+        if (!$(this).hasClass('disable-link')) {
+            var field_id = $(this).attr('data-id');
+            var link_position = $(this).attr('data-link_position');
+            link_position = (link_position == null || link_position == undefined) ? 'left-in' : link_position
+            link_position = 'left-in';
+            //const previousElement = $(this).prev('li'); // Find the previous element with the same data-field_type
+            const previousElement = $(this).prevAll('li').not('.disable-link').first();
+            if (previousElement.length > 0) {
+                const previousId = previousElement.attr('data-id'); // Get the ID of the previous element
 
 
+                var from_connector = 'output_1';
+                if (link_position == 'right-in') {
+                    from_connector = 'input_1';
+                }
 
-            var from_connector = 'output_1';
-            if(link_position == 'right-in'){
-                from_connector = 'input_1';
+                if (link_position == 'left-in') {
+                    /*$flowchart.flowchart('addLink', {
+                        fromOperator: previousId,
+                        fromConnector: 'output_1',
+                        toOperator: field_id,
+                        toConnector: 'input_1',
+                    });*/
+                    $flowchart.flowchart('addLink', {
+                        fromOperator: previousId,
+                        fromConnector: 'output_1',
+                        toOperator: field_id,
+                        toConnector: 'input_1',
+                    });
+                }
+                if (link_position == 'right-in') {
+
+                    $flowchart.flowchart('addLink', {
+                        fromOperator: previousId,
+                        fromConnector: 'output_1',
+                        toOperator: field_id,
+                        toConnector: 'input_1',
+                        position: 'right_left',
+                    });
+
+                    /*$flowchart.flowchart('addLink', {
+                        fromOperator: previousId,
+                        fromConnector: 'input_2',
+                        toOperator: field_id,
+                        toConnector: 'output_2',
+                    });*/
+                }
+
+
             }
-
-            if(link_position == 'left-in') {
-                /*$flowchart.flowchart('addLink', {
-                    fromOperator: previousId,
-                    fromConnector: 'output_1',
-                    toOperator: field_id,
-                    toConnector: 'input_1',
-                });*/
-                $flowchart.flowchart('addLink', {
-                    fromOperator: previousId,
-                    fromConnector: 'output_1',
-                    toOperator: field_id,
-                    toConnector: 'input_1',
-                });
-            }
-            if(link_position == 'right-in'){
-
-                $flowchart.flowchart('addLink', {
-                    fromOperator: previousId,
-                    fromConnector: 'output_1',
-                    toOperator: field_id,
-                    toConnector: 'input_1',
-                    position: 'right_left',
-                });
-
-                /*$flowchart.flowchart('addLink', {
-                    fromOperator: previousId,
-                    fromConnector: 'input_2',
-                    toOperator: field_id,
-                    toConnector: 'output_2',
-                });*/
-            }
-
-
-        }
+       }
 
 
     });

@@ -1408,6 +1408,28 @@
         levels_sorting_render();
     });
 
+
+    $(document).on('change', '.start_end_layers', function () {
+        var current_value = $(this).val();
+        console.log(current_value);
+
+        $(this).closest('.editor-zone').find('.levels-objects-list li.stage_start').removeClass('disable-link');
+        $(this).closest('.editor-zone').find('.levels-objects-list li.stage_end').removeClass('disable-link');
+        $(this).closest('.editor-zone').find('.levels-objects-list li.stage_start').removeClass('rurera-hide');
+        $(this).closest('.editor-zone').find('.levels-objects-list li.stage_end').removeClass('rurera-hide');
+        $(this).closest('.editor-zone').find('.path-initializer[data-item_type="stage_start"]').removeClass('rurera-hide');
+        $(this).closest('.editor-zone').find('.path-initializer[data-item_type="stage_end"]').removeClass('rurera-hide');
+        if(current_value == 0){
+            $(this).closest('.editor-zone').find('.levels-objects-list li.stage_start').addClass('rurera-hide');
+            $(this).closest('.editor-zone').find('.levels-objects-list li.stage_end').addClass('rurera-hide');
+            $(this).closest('.editor-zone').find('.levels-objects-list li.stage_start').addClass('disable-link');
+            $(this).closest('.editor-zone').find('.levels-objects-list li.stage_end').addClass('disable-link');
+            $(this).closest('.editor-zone').find('.path-initializer[data-item_type="stage_start"]').addClass('rurera-hide');
+            $(this).closest('.editor-zone').find('.path-initializer[data-item_type="stage_end"]').addClass('rurera-hide');
+
+        }
+        levels_sorting_render();
+    });
     $(document).on('click', '.add-spacer', function () {
         var level_type = 'spacer';
         var current_li = $(this).closest('li');

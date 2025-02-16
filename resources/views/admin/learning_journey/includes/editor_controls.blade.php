@@ -276,6 +276,15 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                 </li>
             </ul>
 
+            <div class="option-field-item mt-20 mb-20">
+                <label class="custom-switch pl-0">
+                    <input type="hidden" data-field_attr_type="switch" name="start_end_layers" class="start_end_layers trigger_field" value="1" data-field_id="start_end_layers" data-field_name="start_end_layers" data-field_type="page_style" data-id="">
+                    <input type="checkbox" name="start_end_layers_radio" id="start_end_layers" value="1" class="custom-switch-input" checked>
+                    <span class="custom-switch-indicator"></span>
+                    <label class="custom-switch-description mb-0 cursor-pointer" for="start_end_layers">Start End Layers</label>
+                </label>
+            </div>
+
         </div>
 
 
