@@ -3453,12 +3453,18 @@ span.field-separated span:after {
     padding: 2px 10px;
     border-radius: 5px;
 }
+.search-filters .select-field span {
+    vertical-align: middle;
+}
 .search-filters .select-field select {
     border: 0;
     padding: 0 0;
     background-color: inherit;
     cursor: pointer;
     min-width: 50px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
 }
 .questions-header .icon-box img {
     height: 15px;
