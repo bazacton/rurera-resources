@@ -3,15 +3,12 @@
 @section('content')
 
 <section class="content-section">
-
-
     <section class="mb-0 pt-70 pb-60">
         <div class="container">
             <div class="row">
                 <form action="/panel/financial/pay-subscribes" method="post" class="w-100">
                     {{ csrf_field() }}
                     <div class="col-12">
-
                         <div class="lms-form-wrapper mb-50">
                             <div class="lms-choose-plan d-flex mb-30">
                                 <div class="lms-choose-field">
@@ -19,29 +16,25 @@
                                     <div class="lms-radio-select">
                                         <ul class="lms-radio-btn-group d-inline-flex align-items-center">
                                             <li>
-                                                <input type="radio" id="month" value="1" data-discount="0"
-                                                       name="subscribe_for" checked="checked"/>
+                                                <input type="radio" id="month" value="1" data-discount="0" name="subscribe_for" checked="checked"/>
                                                 <label class="lms-label" for="month">
                                                     <span>01 month</span>
                                                 </label>
                                             </li>
                                             <li>
-                                                <input type="radio" id="three_months" value="3" data-discount="5"
-                                                       name="subscribe_for"/>
+                                                <input type="radio" id="three_months" value="3" data-discount="5" name="subscribe_for"/>
                                                 <label class="lms-label" for="three_months">
                                                     <span>03 month <span>(5%)</span> </span>
                                                 </label>
                                             </li>
                                             <li>
-                                                <input type="radio" id="six_months" value="6" data-discount="10"
-                                                       name="subscribe_for"/>
+                                                <input type="radio" id="six_months" value="6" data-discount="10" name="subscribe_for"/>
                                                 <label class="lms-label" for="six_months">
                                                     <span>06 month <span>(10%)</span> </span>
                                                 </label>
                                             </li>
                                             <li>
-                                                <input type="radio" id="year" value="12" data-discount="20"
-                                                       name="subscribe_for"/>
+                                                <input type="radio" id="year" value="12" data-discount="20" name="subscribe_for"/>
                                                 <label class="lms-label" for="year">
                                                     <span>whole year <span>(20%)</span></span>
                                                 </label>
@@ -58,28 +51,22 @@
                                             <span class="icon-minus">−</span>
                                         </button>
                                     </span>
-                                        <input type="text" id="quantity" name="quantity"
-                                               class="form-control input-number" value="1" min="1"
-                                               max="100">
+                                        <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
                                         <span class="input-group-btn">
-                                        <button type="button" class="quantity-right-plus btn btn-number"
-                                                data-type="plus" data-field="">
+                                        <button type="button" class="quantity-right-plus btn btn-number" data-type="plus" data-field="">
                                             <span class="icon-plus">+</span>
                                         </button>
                                     </span>
                                     </div>
                                 </div>
                             </div>
-
-
                             <div class="childs-block">
                                 <div class="child-item lms-choose-plan-selected mt-10">
                                     <div class="lms-jobs-form">
                                         <div class="row">
                                             <div class="col-12 col-lg-4 col-md-8">
                                                 <div class="input-field">
-                                                    <input type="text" name="student_name[]"
-                                                           placeholder="Enter your name..">
+                                                    <input type="text" name="student_name[]" placeholder="Enter your name..">
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-2 col-md-4">
@@ -93,7 +80,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                             <br><br><br><br>
                             <div class="total-amount"></div>
