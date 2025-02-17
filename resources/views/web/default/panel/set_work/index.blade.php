@@ -19,21 +19,19 @@
     <div class="d-flex align-items-center justify-content-between flex-md-row">
         <h2 class="section-title font-36">Set Work</h2>
         <div class="dropdown">
-        <a class="btn subscription-modal font-18 p-0" href="/panel/set-work/create" data-type="child_register"><img src="/assets/default/svgs/add-con.svg" alt="add-con" height="800" width="800"> Add Work
-        </a>
-    </div>
+            <a class="btn subscription-modal font-18 p-0" href="/panel/set-work/create" data-type="child_register"><img src="/assets/default/svgs/add-con.svg" alt="add-con" height="800" width="800"> Add Work
+            </a>
+        </div>
     </div>
 </section>
 @include('web.default.flash_message')
 <section class="dashboard">
-
     <div class="db-form-tabs">
         <div class="db-members">
             <div class="row g-3 list-unstyled">
                 <div class="col-12">
                     <div class="card pt-0">
                         <div class="card-body">
-
                             <ul class="rurera-tabs-frontend set-work-ajax d-flex flex-wrap align-items-center">
                                 <li class="active font-weight-bold font-18 pb-10" data-type="active">Inprogress</li>
                                 <li class="font-weight-bold font-18 pb-10" data-type="completed">Completed</li>
@@ -49,33 +47,26 @@
                                 @endforeach
                                 @else
                                     @php $no_records_data = '<div class="no-record-found-head mb-20">
-                                            <ul class="d-flex align-items-center justify-content-between">
-                                                <li><h6 class="listing-title font-16 font-weight-500">Title</h6></li>
-                                                <li><h6 class="listing-title font-16 font-weight-500">Student</h6></li>
-                                                <li><h6 class="listing-title font-16 font-weight-500">Type</h6></li>
-                                                <li><h6 class="listing-title font-16 font-weight-500">Action</h6></li>
-                                            </ul>
+                                        <ul class="d-flex align-items-center justify-content-between">
+                                            <li><h6 class="listing-title font-16 font-weight-500">Title</h6></li>
+                                            <li><h6 class="listing-title font-16 font-weight-500">Student</h6></li>
+                                            <li><h6 class="listing-title font-16 font-weight-500">Type</h6></li>
+                                            <li><h6 class="listing-title font-16 font-weight-500">Action</h6></li>
+                                        </ul>
                                     </div>'; @endphp
                                     @include('web.default.default.list_no_record',['no_records_data' => $no_records_data])
                                 @endif
                                 </div>
-
                                 <div class="rurera-pagination">{{ $assignments->links() }}</div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </section>
 </div>
-
-
-
 
 @endsection
 
