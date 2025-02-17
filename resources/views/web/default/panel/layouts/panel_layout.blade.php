@@ -129,13 +129,13 @@
                                             @if(auth()->user()->isParent())
                                             <li>
                                                 <a href="/panel/billing">
-                                                    <span class="nav-icon"><img src="/assets/default/svgs/shop-nav.svg" alt=""></span>
+                                                    <span class="nav-icon"><img src="/assets/default/svgs/shop-nav.svg" alt="shop-nav"></span>
                                                     <span class="menu-text">Billing</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/panel/change_password">
-                                                    <span class="nav-icon"><img src="/assets/default/svgs/account-nav.svg" alt=""></span>
+                                                    <span class="nav-icon"><img src="/assets/default/svgs/account-nav.svg" alt="account-nav"></span>
                                                     <span class="menu-text">Change Password</span>
                                                 </a>
                                             </li>
@@ -151,7 +151,7 @@
                                         <ul>
                                             <li>
                                             <div class="store-item">
-                                                <img src="/assets/default/svgs/stats-coins.svg" alt="">
+                                                <img src="/assets/default/svgs/stats-coins.svg" alt="stats-coins">
                                                 <span class="item-label">
                                                     Current Balance
                                                     <span class="iteme-numbers">{{$authUser->getRewardPoints()}}</span>
@@ -172,17 +172,17 @@
                                                 <li>
                                                     <div class="start-item">
                                                         <div class="icon-box">
-                                                            <img src="/assets/default/img/types/practice.svg" alt="">
+                                                            <img src="/assets/default/img/types/practice.svg" alt="practice">
                                                         </div>
                                                         <div class="item-text">
                                                             <h5>Track Your Progress</h5>
                                                         </div>
                                                     </div>
                                                 </li>
-                                                        <li>
+                                                <li>
                                                     <div class="start-item">
                                                         <div class="icon-box">
-                                                            <img src="/assets/default/img/types/practice.svg" alt="">
+                                                            <img src="/assets/default/img/types/practice.svg" alt="practice">
                                                         </div>
                                                         <div class="item-text">
                                                             <h5>Earn first 10 coins</h5>
@@ -197,12 +197,7 @@
                                 @endif
 
                                 @if(request()->is('panel/marketing/affiliates') || auth()->user()->isParent() || auth()->user()->isTutor())
-                                
 
-
-
-
-                            
                                 @if( !empty( $profile_navs ) )
                                 <div class="col-12 col-lg-12">
                                 <div class="sidebar-students-list db-members">
