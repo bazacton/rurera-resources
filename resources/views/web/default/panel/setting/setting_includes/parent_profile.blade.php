@@ -15,7 +15,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                 <div class="detail-header mb-25 pb-25">
                     <div class="info-media d-flex align-items-center flex-wrap">
                         <span class="media-box">
-                            <img src="{{$user->getAvatar()}}" alt="">
+                            <img src="{{$user->getAvatar()}}" alt="{{$user->getAvatar()}}">
                         </span>
                         <h2 class="info-title font-weight-500">
                             {{$user->display_name}}
@@ -41,7 +41,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                                 <strong class="d-block font-weight-500">{{$user->display_name}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -80,7 +80,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                                 <strong class="d-block font-weight-500">{{$user->user_preference}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -92,7 +92,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                                 <strong class="d-block font-weight-500">{{$user->email}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -104,7 +104,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                                 <strong class="d-block font-weight-500">{{$user->mobile}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
