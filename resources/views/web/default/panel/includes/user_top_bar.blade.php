@@ -39,7 +39,7 @@
                     </a>
                     @endforeach
                 </div>
-                <div class="dropdown-footer text-center">
+                <div class="dropdown-footer text-right">
                     <a href="{{ getAdminPanelUrl() }}/notifications">{{ trans('admin/main.view_all') }} <i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
