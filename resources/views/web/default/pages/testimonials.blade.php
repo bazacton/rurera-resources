@@ -23,7 +23,7 @@
         <div class="testimonial-card fancy">
           <div class="testimonial-img text-center">
             <figure>
-              <img src="../assets/default/img/bri-client2.jpg" alt="bran images" title="bran images" width="100%" height="auto" itemprop="image" loading="eager" />
+              <img src="/assets/default/img/bri-client2.jpg" alt="bran images" title="bran images" width="100%" height="auto" itemprop="image" loading="eager" />
             </figure>
           </div>
           <div class="testimonial-body">
@@ -37,7 +37,7 @@
         <div class="testimonial-card fancy">
           <div class="testimonial-img text-center">
             <figure>
-              <img src="../assets/default/img/bri-client1.jpg" alt="bran images" title="bran images" width="120" height="120" itemprop="image" loading="eager" />
+              <img src="/assets/default/img/bri-client1.jpg" alt="bran images" title="bran images" width="120" height="120" itemprop="image" loading="eager" />
             </figure>
           </div>
           <div class="testimonial-body">
@@ -53,7 +53,7 @@
         <div class="testimonial-card fancy">
           <div class="testimonial-img text-center">
             <figure>
-              <img src="../assets/default/img/bri-client3.jpg" alt="bran images" title="bran images" width="120" height="120" itemprop="image" loading="eager" />
+              <img src="/assets/default/img/bri-client3.jpg" alt="bran images" title="bran images" width="120" height="120" itemprop="image" loading="eager" />
             </figure>
           </div>
           <div class="testimonial-body">
@@ -67,7 +67,7 @@
         <div class="testimonial-card fancy">
           <div class="testimonial-img text-center">
             <figure>
-              <img src="../assets/default/img/bri-client6.jpg" alt="bran images" title="bran images" width="120" height="120" itemprop="image" loading="eager" />
+              <img src="/assets/default/img/bri-client6.jpg" alt="bran images" title="bran images" width="120" height="120" itemprop="image" loading="eager" />
             </figure>
           </div>
           <div class="testimonial-body">
