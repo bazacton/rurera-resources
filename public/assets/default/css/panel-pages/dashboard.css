@@ -659,7 +659,40 @@ Right SideBar Style Start
 .user-profile-icons .dropdown-menu:before {content: ""; position: absolute; top: -8px; right: 30px; height: 15px; width: 15px; border-top: 1px solid #ddd; border-left: 1px solid#ddd; transform: rotate(45deg);}
 .user-profile-icons .dropdown-menu:before {background-color: #fff; top: -6px; box-shadow: none; border: 0; }
 .user-profile-icons .dropdown-menu {border: 1px solid #ddd; box-shadow: none; right: -15px; transition: none; margin: 0; padding: 10px 15px;}
-.user-profile-icons .dropdown-menu .dropdown-header {text-align: center;}
+.user-profile-icons .dropdown-menu .dropdown-header {
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    padding: 0 0 10px;
+    font-size: 18px;
+}
+.user-profile-icons .dropdown-list-content {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+.dropdown-list-content .dropdown-item {
+    padding: 10px 15px;
+    display: block;
+    margin: 0 0 10px;
+}
+.user-profile-icons .notifications-lable {
+    display: block;
+    margin: 0 0 5px;
+    font-weight: 600;
+}
+.dropdown-list-content .dropdown-item .time {
+    color: #666;
+}
+.user-profile-icons .dropdown-footer a {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 5px 10px;
+    display: inline-block;
+    line-height: normal;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
 .user-profile-icons .dropdown:hover .dropdown-menu {margin-top: 5px;}
 .dropdown-menu.user-profile-dropdown .user-nav-list {border: 0; padding: 15px 20px 15px !important; display: inline-block; text-align: left; border-bottom: 1px solid #f4f4f6; width: 100%;}
 .top-navbar .dropdown-menu.user-profile-dropdown .user-nav-list img,
