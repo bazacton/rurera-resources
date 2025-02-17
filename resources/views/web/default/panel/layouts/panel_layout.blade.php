@@ -276,7 +276,6 @@
                                     </div>
                                 </div>
                                 
-                                
                                 <div class="col-12 col-lg-12 mb-30 mt-25">
                                     <div class="referrals panel-border panel-shadow rounded-sm">
                                         <div class="referral-card">
@@ -306,27 +305,27 @@
                                                         <span>Total users earning</span>
                                                     </li>
                                                     <li>
-                                                                <strong>1</strong>
-                                                                <span>Pending invites</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="referral-payment">
-                                                        <div class="heading">
-                                                            <h3 class="font-19 font-weight-bold">Your wallet</h3>
-                                                            <a href="#">Go to referrals <span>&#8594;</span></a>
-                                                        </div>
-                                                        <p>
-                                                            <span class="icon-box">
-                                                                <img src="/assets/default/svgs/wallet.svg" alt="">
-                                                            </span>
-                                                            <strong>
-                                                                £0.00
-                                                                <em>Pending payment</em>
-                                                            </strong>
-                                                        </p>
-                                                    </div>
+                                                        <strong>1</strong>
+                                                        <span>Pending invites</span>
+                                                    </li>
+                                                </ul>
                                                 </div>
+                                                <div class="referral-payment">
+                                                    <div class="heading">
+                                                        <h3 class="font-19 font-weight-bold">Your wallet</h3>
+                                                        <a href="#">Go to referrals <span>&#8594;</span></a>
+                                                    </div>
+                                                    <p>
+                                                        <span class="icon-box">
+                                                            <img src="/assets/default/svgs/wallet.svg" alt="">
+                                                        </span>
+                                                        <strong>
+                                                            £0.00
+                                                            <em>Pending payment</em>
+                                                        </strong>
+                                                    </p>
+                                                </div>
+                                            </div>
                                     </div>
                                 </div>
                             @if(request()->is('custom_html') || request()->is('panel') || request()->is('panel/setting') || request()->is('panel/rewards') || request()->is('panel/store/purchases') || request()->is('panel/notifications') || request()->is('panel/support/tickets'))
