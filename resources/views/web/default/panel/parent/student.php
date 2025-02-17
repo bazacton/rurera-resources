@@ -87,7 +87,6 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 		</div>
 	</div>
 	<div class="detail-body">
-	
 		<div class="row mb-50">
 			<div class="col-lg-4 col-md-4 col-sm-12 col-12">
 				<div class="info-text">
@@ -135,7 +134,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								</span>
 							</a>
 						</li>
-							<li>
+						<li>
 							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
 								<span class="info-list-label font-16">
 									Preference
@@ -147,7 +146,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								</span>
 							</a>
 						</li>
-							<li>
+						<li>
 							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
 								<span class="info-list-label font-16">
 									Year Group
@@ -183,7 +182,6 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								</div>
 							</div>
 							
-							
 							<div class="col-6 col-lg-6 col-md-6 form-group">
 								<div class="form-group">
 									<span class="fomr-label">Display name</span>
@@ -193,7 +191,6 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									</div>
 								</div>
 							</div>
-							
 							
 							<div class="col-6 col-lg-6 col-md-6 form-group">
 								<label>Preference</label>
@@ -457,7 +454,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								<div class="form-group custom-switches-stacked mb-15">
 									<label class="custom-switch pl-0">
 										<input type="checkbox" name="hide_timestables"
-											id="hide_timestables_field" value="1" class="custom-switch-input"  {{($user->hide_timestables == 1)? 'checked' : ''}}/>
+											id="hide_timestables_field" value="1" class="custom-switch-input" {{($user->hide_timestables == 1)? 'checked' : ''}}/>
 										<span class="custom-switch-indicator"></span>
 										<label class="custom-switch-description mb-0 cursor-pointer"
 											for="hide_timestables_field"><span>Hide Timestables</span></label>
@@ -470,7 +467,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								<div class="form-group custom-switches-stacked mb-15">
 									<label class="custom-switch pl-0">
 										<input type="checkbox" name="hide_spellings"
-												id="hide_spellings_field" value="1" class="custom-switch-input"  {{($user->hide_spellings == 1)? 'checked' : ''}}/>
+												id="hide_spellings_field" value="1" class="custom-switch-input" {{($user->hide_spellings == 1)? 'checked' : ''}}/>
 										<span class="custom-switch-indicator"></span>
 										<label class="custom-switch-description mb-0 cursor-pointer"
 												for="hide_spellings_field"><span>Hide Spellings</span></label>
@@ -495,7 +492,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								<div class="form-group custom-switches-stacked mb-15">
 									<label class="custom-switch pl-0">
 										<input type="checkbox" name="hide_books"
-												id="hide_books_field" value="1" class="custom-switch-input"  {{($user->hide_books == 1)? 'checked' : ''}}/>
+												id="hide_books_field" value="1" class="custom-switch-input" {{($user->hide_books == 1)? 'checked' : ''}}/>
 										<span class="custom-switch-indicator"></span>
 										<label class="custom-switch-description mb-0 cursor-pointer"
 												for="hide_books_field"><span>Hide Books</span></label>
@@ -558,9 +555,8 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 							</ul>
 						</div>
 					</div>
-					<a href="javascript:;" class="reset-btn regenerate-emoji" data-user_id="{{$user->id}}"><span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>Reset Emoji</a>
-					<a href="javascript:;" class="reset-btn regenerate-pin" data-user_id="{{$user->id}}"><span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>Reset Pin</a>
-								
+					<a href="javascript:;" class="reset-btn regenerate-emoji" data-user_id="{{$user->id}}"><span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Reset Emoji</a>
+					<a href="javascript:;" class="reset-btn regenerate-pin" data-user_id="{{$user->id}}"><span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Reset Pin</a>			
 				</div>
 				<div class="edit-profile edit-profile-block mt-10 rurera-hide">
 						<form class="child-edit-form" method="post" action="javascript:;">
@@ -640,13 +636,10 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 						@endif
 					@endif
 					
-					
 				</div>
 			</div>
 		</div>
-								
-								
-					
+			
 		    @if( isset( $user->card_last_four ) && $user->card_last_four != '')
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12">
@@ -671,7 +664,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                         </div>
                                         <div class="payment-card-body">
                                             <span class="card-type-icon d-block mb-15">
-                                                <img src="/assets/default/svgs/card-chip.svg" alt="" height="32" width="44">
+                                                <img src="/assets/default/svgs/card-chip.svg" alt="card-chip" height="32" width="44">
                                             </span>
                                             <div class="user-card-info d-flex align-items-center flex-wrap justify-content-between">
                                                 <div class="card-info-text">
@@ -709,9 +702,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								<div class="edit-profile-content" id="edit-profile" role="tabpanel" aria-labelledby="edit-profile-tab">
 									<div class="edit-profile-top d-flex align-items-center flex-wrap justify-content-between mb-50">
 										<div class="top-heading">
-											<h5 class="font-16 font-weight-500">
-												
-											</h5>
+											<h5 class="font-16 font-weight-500"></h5>
 										</div>
 										<div class="edit-profile-controls">
 											<a href="javascript:;" class="text-center cancel-edit-button">Cancel</a>
@@ -733,9 +724,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											</div>
 										</div>
 										<div class="mb-0 mt-20">
-											<div class="row">
-											
-											
+										<div class="row">
 											<div class="col-12">
 												<div class="edit-element-title mb-20">
 													<h6 class="font-weight-500">
@@ -763,7 +752,6 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 													</div>
 												</div>
 											</div>
-											
 											
 											<div class="col-6 col-lg-6 col-md-6 form-group">
 												<div class="form-group">
@@ -800,7 +788,6 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 												</select>
 												</div>
 											</div>
-											
 										</div>
 									</div>
 									
