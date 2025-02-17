@@ -33,7 +33,6 @@
                         </div>
                         <div class="form-group">
                             <div class="input-group">
-
                                 <div class="radio-buttons justify-content-left">
 
                                     @if( !empty( $childs ) )
@@ -60,7 +59,7 @@
                                                                 value="{{$childObj->id}}" class="assignment-user-class" data-tag_title="{{$childObj->get_full_name()}}" {{$selected_child}}>
                                                         <span class="radio-btn"><i class="las la-check"></i>
                                                             <div class="card-icon">
-                                                            <img src="{{ $childObj->getAvatar() }}">
+                                                            <img src="{{ $childObj->getAvatar() }}" alt="card-icon">
                                                                 <h3>{{$childObj->get_full_name()}}</h3>
                                                             </div>
                                                         </span>
@@ -69,7 +68,7 @@
                                                 <a href="javascript:;" class="subscription-modal rurera-hide remove-pending" data-type="update_package_confirm" data-id="{{$childObj->id}}">
                                                     <span class="radio-btn disabled-style"><i class="las la-check"></i>
                                                         <div class="card-icon">
-                                                        <img src="{{ $childObj->getAvatar() }}">
+                                                        <img src="{{ $childObj->getAvatar() }}" alt="card-icon">
                                                             <h3>{{$childObj->get_full_name()}}</h3>
                                                             <span>Buy Membership</span>
                                                         </div>
@@ -80,14 +79,13 @@
                                     @endif
                                     <label class="card-radio add-student-btn rurera-hide remove-pending">
                                         <a href="javascript:;" class="subscription-modal add-student-modal" data-type="child_register" data-id="0" >
-                                        <span class="radio-btn"><i class="las la-check"></i>
-                                            <div class="card-icon">
-                                                <img src="/assets/default/svgs/add-con.svg" alt="add-con" height="800" width="800">
-                                                <h3>Student</h3>
-                                        </div>
-                                    </span>
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                <div class="card-icon">
+                                                    <img src="/assets/default/svgs/add-con.svg" alt="add-con" height="800" width="800">
+                                                    <h3>Student</h3>
+                                                </div>
+                                            </span>
                                         </a>
-
                                     </label>
                                     <input type="hidden" class="year_id_field" name="ajax[{{ !empty($quiz) ? $quiz->id : 'new' }}][year_id]" value="0">
                                 </div>
