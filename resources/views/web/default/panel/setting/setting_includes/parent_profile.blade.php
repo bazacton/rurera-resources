@@ -141,12 +141,12 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                     </li>
                                     <li>
                                         <a class="nav-link d-flex align-items-center" id="edit-skills-tab" data-toggle="tab" href="#edit-skills" role="tab" aria-controls="edit-skills" aria-selected="false">
-                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-diamond.svg" height="15" width="15" alt=""></span>Skills &amp; Tools
+                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-diamond.svg" height="15" width="15" alt="edit-menu-diamond"></span>Skills &amp; Tools
                                         </a>
                                     </li>
                                     <li>
                                         <a class="nav-link d-flex align-items-center" id="edit-settings-tab" data-toggle="tab" href="#edit-settings" role="tab" aria-controls="edit-settings" aria-selected="false">
-                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-setting.svg" height="15" width="15" alt=""></span>Settings
+                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-setting.svg" height="15" width="15" alt="edit-menu-setting"></span>Settings
                                         </a>
                                     </li>
                                 </ul>
@@ -174,7 +174,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                         </div>
                                         <div class="profile-image text-center">
                                             <figure class="d-inline-flex position-relative">
-                                                <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" height="96" width="96" alt="">
+                                                <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" height="96" width="96" alt="profile-image">
                                                 <a href="javascript:;" class="profile-image-btn cancel-btn d-inline-flex align-items-center justify-content-center font-16 bg-white"><img src="/assets/default/svgs/edit-2.svg" alt="" style="width:18px; height:18px"></a>
                                             </figure>
                                         </div>
@@ -192,7 +192,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>First Name</label>
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
                                                     <input type="text" name="first_name" class="rurera-req-field" placeholder="First Name" value="{{( $user->first_name != '')? $user->first_name : ''}}">
                                                 </div>
                                             </div>
