@@ -1058,8 +1058,6 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 			});
 			
 			
-			
-
 			/*$(document).on('click', '.cancel-edit-button', function (e) {
 				$(".user-view-profile").removeClass('rurera-hide');
 				$(".user-edit-profile").addClass('rurera-hide');
@@ -1098,6 +1096,4 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 			});
 			refresh_preference_field();
 			resetRureraDatePickers();
-			
-			
 	</script>
