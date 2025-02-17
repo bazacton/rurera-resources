@@ -199,35 +199,35 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>Last Name</label>
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
                                                     <input type="text" name="last_name" class="rurera-req-field" placeholder="Last Name" value="{{( $user->last_name != '')? $user->last_name : ''}}">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>Display Name</label>
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
                                                     <input type="text" name="display_name" class="rurera-req-field" placeholder="Display Name" value="{{( $user->display_name != '')? $user->display_name : $user->first_name.' '.$user->last_name}}">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>Email Address</label>
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
                                                     <input type="text" name="email" class="rurera-req-field" placeholder="Email Address" value="{{( $user->email != '')? $user->email : ''}}">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>Password</label>
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
                                                     <input type="text" name="password" class="" placeholder="Password" value="">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>Contact no</label>
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/mobile.svg" alt=""></span>
+                                                    <span class="icon-box"><img src="/assets/default/svgs/mobile.svg" alt="mobile"></span>
                                                     <input type="text" name="mobile" class="rurera-req-field" placeholder="Contact no" value="{{( $user->mobile != '')? $user->mobile : ''}}">
                                                 </div>
                                             </div>
