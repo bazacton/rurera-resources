@@ -107,29 +107,25 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                     <div class="profile-controls d-inline-flex align-items-center flex-wrap">
                         <a href="/{{panelRoute()}}/switch_user/{{$user->id}}" class="font-weight-500">
                             <span class="icon-box d-inline-block mr-5">
-                                <img src="/assets/default/svgs/switch-user.svg" alt="">
+                                <img src="/assets/default/svgs/switch-user.svg" alt="switch-user">
                             </span>
                             Switch Profile
                         </a>
 						<a href="javascript:;" class="package-payment-btn font-weight-500 unlink-modal" data-type="child_payment" data-id="{{$user->id}}">
                             <span class="icon-box d-inline-block mr-5">
-                                <img src="/assets/default/svgs/unlink.svg" alt="">
+                                <img src="/assets/default/svgs/unlink.svg" alt="unlink">
                             </span>
                             Unlink
                         </a>
                         <a href="/{{panelRoute()}}/students/print-card/{{$user->id}}" target="_blank" class="font-weight-500">	
                             <span class="icon-box d-inline-block mr-5">
-                                <img src="/assets/default/svgs/printer-activity.svg" alt="">
+                                <img src="/assets/default/svgs/printer-activity.svg" alt="printer-activity">
                             </span>
                             Print Login Card
                         </a>
                     </div>
                 </div>
                 <div class="detail-body p-25">
-				
-				
-				
-				
 					@if( $childLinkedParents->count() > 1)
 						<div class="row mb-50">
 							<div class="col-lg-4 col-md-4 col-sm-12 col-12">
