@@ -84,7 +84,7 @@ if( !empty( $emojisArray ) ){
 	$emoji_response .= '<div class="emoji-icons">';
 	foreach( $emojisArray as $emojiCode){
 		if( $emojiCode != ''){
-			$emoji_response .= '<a id="icon1" href="javascript:;" class="emoji-icon"><img src="/assets/default/svgs/emojis/icon'.$emojiCode.'.svg"></a>';
+			$emoji_response .= '<a id="icon1" href="javascript:;" class="emoji-icon"><img src="/assets/default/svgs/emojis/icon'.$emojiCode.'.svg" alt="emoji-icon"></a>';
 		}
 	}
 	$emoji_response .= '</div>';
@@ -97,7 +97,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
         <div class="info-media d-flex align-items-center flex-wrap">
             <span class="media-box">
                 <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between">
-                    <img src="{{$user->getAvatar()}}" alt="">
+                    <img src="{{$user->getAvatar()}}" alt="{{$user->getAvatar()}}">
                 </a>
             </span>
             <h2 class="info-title font-weight-500">
@@ -242,7 +242,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 <div class="form-group">
                                     <span class="fomr-label mb-10 d-block">Student's first name</span>
                                     <div class="input-field">
-                                        <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+                                        <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
                                         <input type="text" class="rurera-req-field" placeholder="First Name" name="first_name" value="{{$user->get_first_name()}}">
                                     </div>
                                 </div>
@@ -448,7 +448,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 <div class="form-group">
                                     <span class="fomr-label mb-10 d-block">Preference 2 Date</span>
                                     <div class="input-field">
-                                        <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+                                        <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
                                         <input type="text" class="preference-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}" placeholder="Preference 2 Date" name="school_preference_2_date" value="{{($user->school_preference_2_date != '')? dateTimeFormatNumeric($user->school_preference_2_date, 'Y-m-d', 'numeric') : ''}}">
                                     </div>
                                 </div>
@@ -468,7 +468,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 <div class="form-group">
                                     <span class="fomr-label mb-10 d-block">Preference 3 Date</span>
                                     <div class="input-field">
-                                        <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+                                        <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
                                         <input type="text" class="preference-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}" placeholder="Preference 3 Date" name="school_preference_3_date" value="{{($user->school_preference_3_date != '')? dateTimeFormatNumeric($user->school_preference_3_date, 'Y-m-d', 'numeric') : ''}}">
                                     </div>
                                 </div>
@@ -869,7 +869,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                     
                     @if(isset( $user->userSubscriptions->subscribe ) && $user->userSubscriptions->is_cancelled == 0 )	
                     <a href="javascript:;" class="reset-btn package-payment-btn cancel-subscription-modal" data-type="child_payment" data-id="{{$user->id}}">
-                        <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>
+                        <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>
                             Cancel Subscription
                         </a>
                     @else
@@ -907,7 +907,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                     </div>
                                     <div class="payment-card-body">
                                         <span class="card-type-icon d-block mb-15">
-                                            <img src="/assets/default/svgs/card-chip.svg" alt="" height="32" width="44">
+                                            <img src="/assets/default/svgs/card-chip.svg" alt="card-chip" height="32" width="44">
                                         </span>
                                         <div class="user-card-info d-flex align-items-center flex-wrap justify-content-between">
                                             <div class="card-info-text">
