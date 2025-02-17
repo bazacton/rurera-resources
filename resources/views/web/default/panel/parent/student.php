@@ -378,18 +378,14 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 												</div>
 											</div>
 										</div>
-										
-										</div>
-										
+									</div>	
 									<div class="edit-profile-controls">
 										<input type="hidden" name="user_id" value="{{$user->id}}">
 										<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
 										<a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
                                     </div>
 									</form>
-										</div>
-								
-								
+								</div>
                             </div>
                         </div>
                     </div>
@@ -411,7 +407,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                 <strong class="d-block font-weight-500">{{$user->hide_timestables == 1 ? 'Yes' : 'No'}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -423,7 +419,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                 <strong class="d-block font-weight-500">{{$user->hide_spellings == 1 ? 'Yes' : 'No'}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -435,7 +431,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                 <strong class="d-block font-weight-500">{{$user->hide_games == 1 ? 'Yes' : 'No'}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -447,7 +443,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                 <strong class="d-block font-weight-500">{{$user->hide_books == 1 ? 'Yes' : 'No'}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -458,16 +454,15 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									{{ csrf_field() }}
 									<div class="row">
 										<div class="col-6 col-sm-12 col-md-6 col-lg-6">
-										
-										<div class="form-group custom-switches-stacked mb-15">
-											<label class="custom-switch pl-0">
-												<input type="checkbox" name="hide_timestables"
-													   id="hide_timestables_field" value="1" class="custom-switch-input"  {{($user->hide_timestables == 1)? 'checked' : ''}}/>
-												<span class="custom-switch-indicator"></span>
-												<label class="custom-switch-description mb-0 cursor-pointer"
-													   for="hide_timestables_field"><span>Hide Timestables</span></label>
-											</label>
-										</div>
+											<div class="form-group custom-switches-stacked mb-15">
+												<label class="custom-switch pl-0">
+													<input type="checkbox" name="hide_timestables"
+														id="hide_timestables_field" value="1" class="custom-switch-input"  {{($user->hide_timestables == 1)? 'checked' : ''}}/>
+													<span class="custom-switch-indicator"></span>
+													<label class="custom-switch-description mb-0 cursor-pointer"
+														for="hide_timestables_field"><span>Hide Timestables</span></label>
+												</label>
+											</div>
 										</div>
 										
 										<div class="col-6 col-sm-12 col-md-6 col-lg-6">
