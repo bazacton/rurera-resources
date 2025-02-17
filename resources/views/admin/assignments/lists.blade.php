@@ -321,21 +321,18 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
-                        <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}
-                        </button>
+                        <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}</button>
                     </div>
                 </form>
             </div>
         </section>
-
         <div class="row">
             <div class="col-12 col-md-12">
                 <div class="card">
                     <div class="card-header">
                         @can('admin_assignments_create')
                         <div class="text-right">
-                            <a href="{{ getAdminPanelUrl() }}/assignments/create" class="btn btn-primary ml-2">Create
-                                Assignment</a>
+                            <a href="{{ getAdminPanelUrl() }}/assignments/create" class="btn btn-primary ml-2">Create Assignment</a>
                         </div>
                         @endcan
                     </div>
@@ -413,7 +410,6 @@
                             </table>
                         </div>
                     </div>
-
                     <div class="card-footer text-center">
                         {{ $assignments->appends(request()->input())->links() }}
                     </div>
