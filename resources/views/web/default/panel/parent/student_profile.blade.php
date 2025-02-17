@@ -947,15 +947,15 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>Username</label>
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
-                                                    <input type="text" name="username" class="" placeholder="Username" value="{{$user->username}}">
+                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+                                                    <input type="text" name="username" placeholder="Username" value="{{$user->username}}">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
 												<label>Password</label>
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
-                                                    <input type="text" name="password" class="" placeholder="Password" value="">
+                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+                                                    <input type="text" name="password" placeholder="Password" value="">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
@@ -994,7 +994,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 				<div class="modal-content">
 
 					<div class="modal-body">
-							<div id="svgAvatars"></div>
+						<div id="svgAvatars"></div>
 					</div>
 				</div>
 			</div>
