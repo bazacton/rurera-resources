@@ -51,22 +51,22 @@
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="students-tab" data-toggle="tab" data-target="#students" type="button" role="tab" aria-controls="students" aria-selected="false">
-                                <span class="icon-box"><img src="/assets/default/svgs/students-colord.svg" alt=""></span> Students
+                                <span class="icon-box"><img src="/assets/default/svgs/students-colord.svg" alt="students-colord"></span> Students
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="parent-tab" data-toggle="tab" data-target="#parent" type="button" role="tab" aria-controls="parent" aria-selected="true">
-                                <span class="icon-box"><img src="/assets/default/svgs/parent-colord.svg" alt=""></span> Parent
+                                <span class="icon-box"><img src="/assets/default/svgs/parent-colord.svg" alt="parent-colord"></span> Parent
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="tutor-tab" data-toggle="tab" data-target="#tutor" type="button" role="tab" aria-controls="tutor" aria-selected="false">
-                                <span class="icon-box"><img src="/assets/default/svgs/teacher-colord.svg" alt=""></span> Tutor
+                                <span class="icon-box"><img src="/assets/default/svgs/teacher-colord.svg" alt="teacher-colord"></span> Tutor
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="teacher-tab" data-toggle="tab" data-target="#teacher" type="button" role="tab" aria-controls="teacher" aria-selected="false">
-                                <span class="icon-box"><img src="/assets/default/svgs/teacher-colord.svg" alt=""></span> Educator
+                                <span class="icon-box"><img src="/assets/default/svgs/teacher-colord.svg" alt="teacher-colord"></span> Educator
                             </button>
                         </li>
                     </ul>
@@ -78,19 +78,19 @@
                                         <h1 class="font-24 font-weight-bold mb-15">Log in to student account</h1>
                                         <div class="login-options">
                                             <a href="javascript:;" class="rurera-login-opt social-login" data-login_type="login-with-smartbadge">
-                                                <img src="/store/1/default_images/qr-code.png" alt="login">
+                                                <img src="/store/1/default_images/qr-code.png" alt="qr-code">
                                                 <span>Login with Smart Badge</span>
                                             </a>
                                             <a href="javascript:;" class="rurera-login-opt social-login" data-login_type="login-with-emoji">
-                                                <img src="/store/1/default_images/emoji.png" alt="login">
+                                                <img src="/store/1/default_images/emoji.png" alt="emoji">
                                                 <span>Login with Emoji</span>
                                             </a>
                                             <a href="javascript:;" class="rurera-login-opt social-login" data-login_type="login-with-pin">
-                                                <img src="/store/1/default_images/password_field.svg" alt="#">
+                                                <img src="/store/1/default_images/password_field.svg" alt="password_field">
                                                 <span>Login with 6 - digit Pin</span>
                                             </a>
                                             <a href="javascript:;" class="rurera-login-opt social-login">
-                                                <img src="/store/1/default_images/Wonde-Logo.svg" alt="#"> <span class="coming-soon">Coming Soon</span>
+                                                <img src="/store/1/default_images/Wonde-Logo.svg" alt="Wonde-Logo"> <span class="coming-soon">Coming Soon</span>
                                             </a>
                                         </div>
                                     </div>
