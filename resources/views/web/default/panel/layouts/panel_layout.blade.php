@@ -334,7 +334,7 @@
                                     <div class="pocket-card panel-shadow panel-border rounded-sm">
                                         <div class="card-header d-flex align-items-center justify-content-between p-0">
                                             <a href="#" class="author-info d-inline-flex align-items-center flex-wrap">
-                                                <img src="/avatar/svgA5311352175689545.png" alt="">
+                                                <img src="/avatar/svgA5311352175689545.png" alt="pocket image">
                                                 <span class="author-text font-19 font-weight-bold">
                                                     Jonh Smith
                                                     <span class="d-block font-16 font-weight-normal">Administrator</span>
@@ -347,10 +347,10 @@
                                             </a>
                                         </div>
                                         <div id="pocket-menu" class="pocket-menu collapse pt-10" aria-labelledby="pocket-menu">
-                                            <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/user-account.svg" alt=""></span>My Account</a>
-                                            <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/user-setting.svg" alt=""></span>Settings</a>
-                                            <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/lock-closed.svg" alt=""></span>Lock Screen</a>
-                                            <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/user-logout.svg" alt=""></span>Logout</a>
+                                            <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/user-account.svg" alt="user-account"></span>My Account</a>
+                                            <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/user-setting.svg" alt="user-setting"></span>Settings</a>
+                                            <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/lock-closed.svg" alt="lock-closed"></span>Lock Screen</a>
+                                            <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/user-logout.svg" alt="user-logout"></span>Logout</a>
                                         </div>
                                     </div>
                                 </div>
