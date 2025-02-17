@@ -6,7 +6,7 @@
 
             <div class="form-group">
                 <label class="input-label">{{ trans('auth.profile_image') }}</label>
-                <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" alt="" id="profileImagePreview" width="150" height="150" class="rounded-circle my-15 d-block ml-5">
+                <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" alt="profileImagePreview" id="profileImagePreview" width="150" height="150" class="rounded-circle my-15 d-block ml-5">
 
                 <button id="selectAvatarBtn" type="button" class="btn btn-sm btn-secondary select-image-cropit" data-ref-image="profileImagePreview" data-ref-input="profile_image">
                     <i data-feather="arrow-up" width="18" height="18" class="text-white mr-10"></i>
@@ -28,7 +28,7 @@
             <div class="form-group">
                 <label class="input-label">{{ trans('auth.profile_cover') }}</label>
 
-                <img src="{{ (!empty($user)) ? $user->getCover() : '' }}" alt="" id="profileCoverPreview" height="150" class="rounded-sm my-15 d-block w-100">
+                <img src="{{ (!empty($user)) ? $user->getCover() : '' }}" alt="profileCoverPreview" id="profileCoverPreview" height="150" class="rounded-sm my-15 d-block w-100">
 
                 <div class="form-group">
                     <div class="input-group">
