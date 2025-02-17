@@ -122,7 +122,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                     <div class="col-lg-3 col-md-4 col-12 rurera-hide">
                         <div class="edit-profile-sidebar">
                             <div class="user-info d-flex align-items-center flex-wrap mb-30">
-                                <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" alt="" height="48" width="48">
+                                <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" alt="edit-profile image" height="48" width="48">
                                 <span class="info-text d-inline-flex flex-column font-weight-500">
                                     {{$user->display_name}}
                                 </span>
@@ -131,12 +131,12 @@ $avatar_color_settings = json_encode($avatar_color_settings);
                                 <ul class="nav flex-column" id="myTab" role="tablist">
                                     <li>
                                         <a class="nav-link active d-flex align-items-center" id="edit-profile-tab" data-toggle="tab" href="#edit-profile" role="tab" aria-controls="edit-profile" aria-selected="true">
-                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-user.svg" height="15" width="15" alt=""></span> General
+                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-user.svg" height="15" width="15" alt="edit-menu-user"></span> General
                                         </a>
                                     </li>
                                     <li>
                                         <a class="nav-link d-flex align-items-center" id="edit-experience-tab" data-toggle="tab" href="#edit-experience" role="tab" aria-controls="edit-experience" aria-selected="false">
-                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-home.svg" height="15" width="15" alt=""></span>Experience
+                                            <span class="icon-box d-inline-block"><img src="/assets/default/svgs/edit-menu-home.svg" height="15" width="15" alt="edit-menu-home"></span>Experience
                                         </a>
                                     </li>
                                     <li>
