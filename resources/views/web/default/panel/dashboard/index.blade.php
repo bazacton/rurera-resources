@@ -762,8 +762,7 @@
                             <li class="count-number-card col-12">
                                 <a href="#" class="count-number-btn">
                                     <div class="count-number-icon">
-                                        <i data-feather="bar-chart" width="20" height="20" class=""
-                                           style="color:#e67035"></i>
+                                        <i data-feather="bar-chart" width="20" height="20" style="color:#e67035"></i>
                                     </div>
                                     <div class="count-number-body">
                                         <h5>Coins</h5>
@@ -775,8 +774,7 @@
                             <li class="count-number-card col-12">
                                 <a href="#" class="count-number-btn">
                                     <div class="count-number-icon">
-                                        <i data-feather="bar-chart" width="20" height="20" class=""
-                                           style="color:#e67035"></i>
+                                        <i data-feather="bar-chart" width="20" height="20" style="color:#e67035"></i>
                                     </div>
                                     <div class="count-number-body">
                                         <h5>Assessments</h5>
@@ -800,7 +798,7 @@
 
             <div class="form-group mt-15">
                 <label>{{ trans('panel.offline_message') }}</label>
-                <textarea name="message" rows="4" class="form-control ">{{ $authUser->offline_message }}</textarea>
+                <textarea name="message" rows="4" class="form-control">{{ $authUser->offline_message }}</textarea>
                 <div class="invalid-feedback"></div>
             </div>
 
