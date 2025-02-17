@@ -97,32 +97,32 @@
                                             <li>
                                                 <a href="/panel/rewards">
                                                     <span class="nav-icon">
-                                                        <img src="/assets/default/svgs/reward-nav2.svg" alt="">
+                                                        <img src="/assets/default/svgs/reward-nav2.svg" alt="reward-nav2">
                                                     </span>
                                                     <span class="menu-text">Reward Points</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/panel/store/purchases">
-                                                    <span class="nav-icon"><img src="/assets/default/svgs/shop-nav.svg" alt=""></span>
+                                                    <span class="nav-icon"><img src="/assets/default/svgs/shop-nav.svg" alt="shop-nav"></span>
                                                     <span class="menu-text">Shop Orders</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/panel/notifications">
-                                                    <span class="nav-icon"><img src="/assets/default/svgs/notifications-nav.svg" alt=""></span>
+                                                    <span class="nav-icon"><img src="/assets/default/svgs/notifications-nav.svg" alt="notifications-nav"></span>
                                                     <span class="menu-text">Notification</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <span class="nav-icon"><img src="/assets/default/svgs/school-nav.svg" alt=""></span>
+                                                    <span class="nav-icon"><img src="/assets/default/svgs/school-nav.svg" alt="school-nav"></span>
                                                     <span class="menu-text">School link</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/panel/support/tickets">
-                                                    <span class="nav-icon"><img src="/assets/default/svgs/support-nav.svg" alt=""></span>
+                                                    <span class="nav-icon"><img src="/assets/default/svgs/support-nav.svg" alt="support-nav"></span>
                                                     <span class="menu-text">Support Desk</span>
                                                 </a>
                                             </li>
