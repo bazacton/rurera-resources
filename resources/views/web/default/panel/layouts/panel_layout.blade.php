@@ -403,7 +403,7 @@
                                                     <li>
                                                         <div class="quests-item">
                                                             <div class="icon-box">
-                                                                <img src="{{$quest_icon}}" alt="">
+                                                                <img src="{{$quest_icon}}" alt="quests image">
                                                             </div>
                                                             <div class="item-text">
                                                                 <h5>{{$questObj->title}}</h5>
@@ -425,14 +425,11 @@
                                         </div>
                                     </div>
                                 @endif	
-                                @endif	
-
-                                
+                            @endif	
+  
                             @if(!request()->is('panel') && !request()->is('panel/setting') && !request()->is('panel/rewards') && !request()->is('panel/marketing/affiliates') && !request()->is('panel/store/purchases') && !request()->is('panel/notifications') && !request()->is('panel/support/tickets'))
                                 
                                 @if(request()->is('shop'))
-
-
                                     <div class="col-12 col-lg-12 mb-30">
                                         <div class="product-card medium panel-border bg-white rounded-sm p-20">
                                             <div class="product-controls nav" id="myTab" role="tablist">
@@ -457,9 +454,7 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 @endif
-
                             @endif
 
                             @if(request()->is('custom_html'))
@@ -473,7 +468,7 @@
                                                     <span> Mobile Application ?</span>
                                                 </h3>
                                                 <div class="py-10 text-center">
-                                                    <img src="/assets/default/svgs/panel-app.svg" class="theme-dark-show w-200px" alt="">
+                                                    <img src="/assets/default/svgs/panel-app.svg" class="theme-dark-show w-200px" alt="panel-app">
                                                 </div>
                                             </div>
                                             <div class="button-controls">
@@ -501,14 +496,10 @@
                                                     </div>
                                                     <div class="separator mb-3 opacity-75"></div>
                                                     <div class="menu-item px-3">
-                                                        <a href="#" class="menu-link px-3">
-                                                            New Ticket
-                                                        </a>
+                                                        <a href="#" class="menu-link px-3">New Ticket</a>
                                                     </div>
                                                     <div class="menu-item px-3">
-                                                        <a href="#" class="menu-link px-3">
-                                                            New Customer
-                                                        </a>
+                                                        <a href="#" class="menu-link px-3">New Customer</a>
                                                     </div>
                                                     <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
                                                         <a href="#" class="menu-link px-3">
