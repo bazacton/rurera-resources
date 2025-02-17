@@ -230,31 +230,11 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .featured-list-sidebar .listing-card .text-holder h3 {font-size: 0.9rem;}
 .author-info .info-text {padding-left: 5px; font-size: 14px;}
 .featured-list-sidebar .author-info .info-text {padding-left: 0;}
-.author-info .info-text span {
-    position: relative;
-    padding: 0 0 0 15px;
-}
-.author-info .info-text span:first-child {
-    padding-left: 0;
-}
-.author-info .info-text span {
-    position: relative;
-    padding: 0 0 0 15px;
-}
-.author-info .info-text span:before {
-    content: "";
-    position: absolute;
-    left: 4px;
-    top: 50%;
-    height: 4px;
-    width: 4px;
-    background-color: #64748b;
-    border-radius: 100%;
-    margin-top: -2px;
-}
-.author-info .info-text span:first-child:before {
-    display: none;
-}
+.author-info .info-text span {position: relative;padding: 0 0 0 15px;}
+.author-info .info-text span:first-child {padding-left: 0;}
+.author-info .info-text span {position: relative; padding: 0 0 0 15px;}
+.author-info .info-text span:before {content: ""; position: absolute; left: 4px; top: 50%; height: 4px; width: 4px; background-color: #64748b; border-radius: 100%; margin-top: -2px;}
+.author-info .info-text span:first-child:before {display: none;}
 .list-options {
     display: flex;
     align-items: center;
