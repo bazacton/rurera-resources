@@ -996,104 +996,104 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 			</div>
 		</div>
 			
-			<script>
-			/*$(document).on('click', '.edit-profile-btn', function (e) {
-				$(".user-view-profile").addClass('rurera-hide');
-				$(".user-edit-profile").removeClass('rurera-hide');
-			});*/
-			
-			$(document).on('click', '.edit-profile-btn', function (e) {
-				$(this).closest('.edit-info-list').find('.profile-view-data').addClass('rurera-hide');
-				$(this).closest('.edit-info-list').find('.edit-profile-block').removeClass('rurera-hide');
-			});
+		<script>
+		/*$(document).on('click', '.edit-profile-btn', function (e) {
+			$(".user-view-profile").addClass('rurera-hide');
+			$(".user-edit-profile").removeClass('rurera-hide');
+		});*/
+		
+		$(document).on('click', '.edit-profile-btn', function (e) {
+			$(this).closest('.edit-info-list').find('.profile-view-data').addClass('rurera-hide');
+			$(this).closest('.edit-info-list').find('.edit-profile-block').removeClass('rurera-hide');
+		});
 
-			$(document).on('click', '.cancel-edit-button', function (e) {
-				$(this).closest('.edit-info-list').find('.profile-view-data').removeClass('rurera-hide');
-				$(this).closest('.edit-info-list').find('.edit-profile-block').addClass('rurera-hide');
-			});
-			
-			var profileSubmission = null;
-			
-			$(document).on('click', '.profile-save-btn', function (e) {
-				var user_id = '{{$user->id}}';
-				var thisObj = $(this);
-				var formData = new FormData($(this).closest('form')[0]);
-				console.log('submission');
-				returnType = rurera_validation_process($(this).closest('form'), 'under_field');
-				if (returnType == false) {
-					return false;
-				}
-				rurera_loader(thisObj, 'div');
-				profileSubmission = $.ajax({
-					type: "POST",
-					url: '/subscribes/edit-child',
-					data: formData,
-					beforeSend: function () {
-						if (profileSubmission != null) {
-							profileSubmission.abort();
-						}
-					},
-					processData: false,
-					contentType: false,
-					success: function (return_data) {
-						$.ajax({
-						type: "GET",
-						url: '/panel/student-profile/'+user_id,
-						data: {"user_id": user_id},
-						success: function (return_data) {
-							rurera_remove_loader(thisObj, 'div');
-							jQuery.growl.notice({
-								title: '',
-								message: 'Updated Successfully',
-							});
-							$(".user-profile-block").html(return_data);
-							rurera_remove_loader($('.user-profile-block'), 'div');
-						}
-					});
-						
-						//location.reload();
-					}
-				});
-				
-			});
-			
-			
-			/*$(document).on('click', '.cancel-edit-button', function (e) {
-				$(".user-view-profile").removeClass('rurera-hide');
-				$(".user-edit-profile").addClass('rurera-hide');
-			});*/
-			
-			var user_avatar_settings = '<?php echo $avatar_settings; ?>';
-			var avatar_color_settings = '<?php echo $avatar_color_settings; ?>';
-
-			user_avatar_settings = JSON.parse(user_avatar_settings);
-			avatar_color_settings = JSON.parse(avatar_color_settings);
-			
-			var imageClicked = false;
-			$(document).on('click', '.profile-image-btn', function (e) {
-				$("#profile-image-modal").modal('show');
-				if( imageClicked == false) {
-					var start_id = '{{$user->user_preference}}';
-					start_id = (start_id == 'female') ? 'girls' : 'boys';
-					$("#svga-start-" + start_id).click();
-					imageClicked = true;
-				}
-			});
-			
-			function refresh_preference_field() {
-				$('.preference_field option').removeAttr('disabled');
-				$('.preference_field').each(function () {
-					var current_value = $(this).val();
-					if( current_value != '') {
-						$('.preference_field option[value="' + current_value + '"]').attr('disabled', 'disabled');
-						$(this).find('option[value="' + current_value + '"]').removeAttr('disabled');
-					}
-				});
+		$(document).on('click', '.cancel-edit-button', function (e) {
+			$(this).closest('.edit-info-list').find('.profile-view-data').removeClass('rurera-hide');
+			$(this).closest('.edit-info-list').find('.edit-profile-block').addClass('rurera-hide');
+		});
+		
+		var profileSubmission = null;
+		
+		$(document).on('click', '.profile-save-btn', function (e) {
+			var user_id = '{{$user->id}}';
+			var thisObj = $(this);
+			var formData = new FormData($(this).closest('form')[0]);
+			console.log('submission');
+			returnType = rurera_validation_process($(this).closest('form'), 'under_field');
+			if (returnType == false) {
+				return false;
 			}
-
-			$(document).on('change', '.preference_field', function (e) {
-				refresh_preference_field();
+			rurera_loader(thisObj, 'div');
+			profileSubmission = $.ajax({
+				type: "POST",
+				url: '/subscribes/edit-child',
+				data: formData,
+				beforeSend: function () {
+					if (profileSubmission != null) {
+						profileSubmission.abort();
+					}
+				},
+				processData: false,
+				contentType: false,
+				success: function (return_data) {
+					$.ajax({
+					type: "GET",
+					url: '/panel/student-profile/'+user_id,
+					data: {"user_id": user_id},
+					success: function (return_data) {
+						rurera_remove_loader(thisObj, 'div');
+						jQuery.growl.notice({
+							title: '',
+							message: 'Updated Successfully',
+						});
+						$(".user-profile-block").html(return_data);
+						rurera_remove_loader($('.user-profile-block'), 'div');
+					}
+				});
+					
+					//location.reload();
+				}
 			});
+			
+		});
+		
+		
+		/*$(document).on('click', '.cancel-edit-button', function (e) {
+			$(".user-view-profile").removeClass('rurera-hide');
+			$(".user-edit-profile").addClass('rurera-hide');
+		});*/
+		
+		var user_avatar_settings = '<?php echo $avatar_settings; ?>';
+		var avatar_color_settings = '<?php echo $avatar_color_settings; ?>';
+
+		user_avatar_settings = JSON.parse(user_avatar_settings);
+		avatar_color_settings = JSON.parse(avatar_color_settings);
+		
+		var imageClicked = false;
+		$(document).on('click', '.profile-image-btn', function (e) {
+			$("#profile-image-modal").modal('show');
+			if( imageClicked == false) {
+				var start_id = '{{$user->user_preference}}';
+				start_id = (start_id == 'female') ? 'girls' : 'boys';
+				$("#svga-start-" + start_id).click();
+				imageClicked = true;
+			}
+		});
+		
+		function refresh_preference_field() {
+			$('.preference_field option').removeAttr('disabled');
+			$('.preference_field').each(function () {
+				var current_value = $(this).val();
+				if( current_value != '') {
+					$('.preference_field option[value="' + current_value + '"]').attr('disabled', 'disabled');
+					$(this).find('option[value="' + current_value + '"]').removeAttr('disabled');
+				}
+			});
+		}
+
+		$(document).on('change', '.preference_field', function (e) {
 			refresh_preference_field();
-			resetRureraDatePickers();
+		});
+		refresh_preference_field();
+		resetRureraDatePickers();
 	</script>
