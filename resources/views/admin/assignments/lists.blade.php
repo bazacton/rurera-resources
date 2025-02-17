@@ -18,7 +18,6 @@
     <section class="card">
         <div class="card-body">
             <form action="/admin/assignments" id="topic_parts_search_form" method="get" class="row mb-0">
-
                 <div class="col-md-3">
                     <div class="form-group">
                         <label class="input-label">{{trans('admin/main.category')}}</label>
@@ -38,11 +37,6 @@
                         </select>
                     </div>
                 </div>
-
-
-
-
-
                 <div class="col-md-3">
                     <div class="form-group">
                         <label>Subjects</label>
@@ -59,22 +53,16 @@
                         @enderror
                     </div>
                 </div>
-
                 <div class="col-md-3">
                     <div class="form-group">
                         <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                         <div class="input-group">
-                            <input type="date" id="lsdate" class="text-center form-control" name="to"
-                                   value="{{ request()->get('to') }}" placeholder="End Date">
+                            <input type="date" id="lsdate" class="text-center form-control" name="to" value="{{ request()->get('to') }}" placeholder="End Date">
                         </div>
                     </div>
                 </div>
-
-
-
                 <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
                     <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}</button>
-
                 </div>
             </form>
         </div>
