@@ -171,7 +171,6 @@
                                                 <img src="/assets/default/img/assignment-logo/independent_exams.png" alt="independent_exams">
                                                 <h3>Mock Test</h3>
                                             </div>
-
                                         </span>
                                     </label>
 
@@ -182,8 +181,7 @@
                                             <div class="card-icon">
                                                 <img src="/assets/default/img/assignment-logo/sats.png">
                                                 <h3>SATs</h3>
-                                        </div>
-
+                                            </div>
                                         </span>
                                     </label>
 
@@ -194,11 +192,9 @@
                                             <div class="card-icon">
                                                 <img src="/assets/default/img/types/books.svg">
                                                 <h3>Books</h3>
-                                        </div>
-
+                                            </div>
                                         </span>
                                     </label>
-
                                 </div>
                                 <div class="invalid-feedback"></div>
                             </div>
@@ -206,9 +202,7 @@
                     </div>
                     
                     <div class="years-group populated-data assignment_topic_type_fields mock_test_fields row">
-
                         <div class="col-12 col-lg-12 col-md-12">
-                        
                             <div class="form-section mb-20 text-left 223">
                                 <h2 class="section-title font-18 font-weight-bold">Select a Topic</h2>
                             </div>
@@ -224,8 +218,6 @@
                             </div>
                             <h4 class="total-tests has-border font-18 font-weight-bold">Select Tests: {{$sats->count()}}</h4>
                         </div>
-
-
                         <div class="col-12 col-lg-12 col-md-12">
                             <div class="sats-listing-card medium mt-30">
                                 <table class="simple-table">
@@ -243,59 +235,39 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div class="years-group populated-data assignment_type_check_fields practice_test_fields">
-
-
                         <div class="form-section assignment_topic_type_fields practice_fields mb-20 text-left 223 ajax-title show-after-ajax">
                             <h2 class="section-title font-18 font-weight-bold">Select a Subject</h2>
                         </div>
-
-
                         <div class="form-section assignment_topic_type_fields 11sats_fields mb-20 text-left 223">
                             <h2 class="section-title font-18 font-weight-bold">Sats</h2>
                         </div>
-
-
                         <div class="form-section assignment_topic_type_fields 11plus_fields mb-20 text-left 223">
                             <h2 class="section-title font-18 font-weight-bold">11 Plus</h2>
                         </div>
-
-
                         <div class="form-section assignment_topic_type_fields independent_exams_fields mb-20 text-left 223">
                             <h2 class="section-title font-18 font-weight-bold">Independent Exams</h2>
                         </div>
-
-
                         <div class="form-section assignment_topic_type_fields iseb_fields mb-20 text-left 223">
                             <h2 class="section-title font-18 font-weight-bold">ISEB</h2>
                         </div>
-
-
                         <div class="form-section assignment_topic_type_fields cat4_fields mb-20 text-left 223">
                             <h2 class="section-title font-18 font-weight-bold">CAT 4</h2>
                         </div>
-
-
                         <div class="form-section assignment_topic_type_fields vocabulary_fields mb-20 text-left 223 ajax-title show-after-ajax">
                             <h2 class="section-title font-18 font-weight-bold">Select List</h2>
                         </div>
-
                         <div class="form-section assignment_topic_type_fields timestables_fields mb-20 text-left 223 ajax-title show-after-ajax">
                             <h2 class="section-title font-18 font-weight-bold">Times Tables</h2>
                         </div>
-
                         <div class="form-section assignment_topic_type_fields assignment_fields mb-20 text-left 223 ajax-title show-after-ajax">
                             <h2 class="section-title font-18 font-weight-bold">Custom Assignment</h2>
                         </div>
-
                         <div class="practice-quiz-ajax-fields setwork-fields"></div>
 
                         @php
                         $tables_no = isset( $assignment->tables_no )? json_decode($assignment->tables_no) : array();
                         @endphp
-
 
                         <div class="form-group assignment_topic_type_fields timestables_fields ajax-title show-after-ajax">
                             <div class="timestables-heatmap"></div>
@@ -334,12 +306,8 @@
                                 </ul>
                             </div>
                         </div>
-
                         <div class="practice-quiz-topics-list assignment_topic_type_fields practice_fields"></div>
-
-
                     </div>
-                    
                     
                     <div class="years-group populated-data">
                         <div class="form-section mb-20 text-left 223">
