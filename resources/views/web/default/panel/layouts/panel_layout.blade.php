@@ -165,7 +165,7 @@
                                     <div class="col-12 col-lg-12">
                                         <div class="getting-start panel-border bg-white rounded-sm p-20 mb-30">
                                             <h3 class="font-19 font-weight-bold">Getting Start</h3>
-                                            <div class="levels-progress horizontal mb-15 mt-5">
+                                            <div class="levels-progress horizontal mb-20 mt-5">
                                                 <span class="progress-count" style="width: 0%;"></span>
                                             </div>
                                             <ul>
