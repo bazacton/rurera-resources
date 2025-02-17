@@ -163,17 +163,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								</div>
 							</div>
 						</div>
-					@endif
-						
-					
-				
-				
-				
-				
-				
-				
-				
-				
+					@endif		
                     <div class="row mb-50">
                         <div class="col-lg-4 col-md-4 col-sm-12 col-12">
 							<div class="info-text">
