@@ -336,7 +336,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								<div class="form-group">
 									<span class="fomr-label">Preference 1 Date</span>
 									<div class="input-field">
-										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
 										<input type="text" class="preference-date rureradatepicker" min="{{date('Y-m-d')}}" placeholder="Preference 1 Date" name="school_preference_1_date" value="{{($user->school_preference_1_date != '')? dateTimeFormatNumeric($user->school_preference_1_date, 'Y-m-d', 'numeric') : ''}}">
 									</div>
 								</div>
@@ -356,7 +356,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								<div class="form-group">
 									<span class="fomr-label">Preference 2 Date</span>
 									<div class="input-field">
-										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
 										<input type="text" class="preference-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}" placeholder="Preference 2 Date" name="school_preference_2_date" value="{{($user->school_preference_2_date != '')? dateTimeFormatNumeric($user->school_preference_2_date, 'Y-m-d', 'numeric') : ''}}">
 									</div>
 								</div>
@@ -376,13 +376,12 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								<div class="form-group">
 									<span class="fomr-label">Preference 3 Date</span>
 									<div class="input-field">
-										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
 										<input type="text" class="preference-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}" placeholder="Preference 3 Date" name="school_preference_3_date" value="{{($user->school_preference_3_date != '')? dateTimeFormatNumeric($user->school_preference_3_date, 'Y-m-d', 'numeric') : ''}}">
 									</div>
 								</div>
-							</div>
-							
-							</div>
+							</div>							
+						</div>
 							
 						<div class="edit-profile-controls">
 							<input type="hidden" name="user_id" value="{{$user->id}}">
@@ -390,9 +389,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 							<a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
 						</div>
 						</form>
-							</div>
-					
-					
+					</div>
 				</div>
 			</div>
 		</div>
@@ -414,7 +411,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<strong class="d-block font-weight-500">{{$user->hide_timestables == 1 ? 'Yes' : 'No'}}</strong>
 								</span>
 								<span class="edit-icon d-inline-flex align-items-center">
-									<img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
@@ -426,7 +423,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<strong class="d-block font-weight-500">{{$user->hide_spellings == 1 ? 'Yes' : 'No'}}</strong>
 								</span>
 								<span class="edit-icon d-inline-flex align-items-center">
-									<img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
@@ -438,7 +435,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<strong class="d-block font-weight-500">{{$user->hide_games == 1 ? 'Yes' : 'No'}}</strong>
 								</span>
 								<span class="edit-icon d-inline-flex align-items-center">
-									<img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
@@ -450,7 +447,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<strong class="d-block font-weight-500">{{$user->hide_books == 1 ? 'Yes' : 'No'}}</strong>
 								</span>
 								<span class="edit-icon d-inline-flex align-items-center">
-									<img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
@@ -529,7 +526,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 					<h2 class="font-16 font-weight-500 mb-5 inner-heading">Login Details
 						<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between">
 							<span class="edit-icon d-inline-flex align-items-center float-right pr-15">
-								<img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+								<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 								<em class="font-weight-500">Edit</em>
 							</span>
 						</a>
@@ -562,11 +559,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 						</div>
 					</div>
 					<a href="javascript:;" class="reset-btn regenerate-emoji" data-user_id="{{$user->id}}">
-						<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>
+						<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>
 						Reset Emoji
 					</a>
 					<a href="javascript:;" class="reset-btn regenerate-pin" data-user_id="{{$user->id}}">
-						<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>
+						<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>
 						Reset Pin
 					</a>			
 				</div>
@@ -577,15 +574,15 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 							<div class="col-6 col-lg-6 col-md-6 form-group">
 								<label>Username</label>
 								<div class="input-field">
-									<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
-									<input type="text" name="username" class="" placeholder="Username" value="{{$user->username}}">
+									<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+									<input type="text" name="username" placeholder="Username" value="{{$user->username}}">
 								</div>
 							</div>
 							<div class="col-6 col-lg-6 col-md-6 form-group">
 								<label>Password</label>
 								<div class="input-field">
-									<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
-									<input type="text" name="password" class="" placeholder="Password" value="">
+									<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+									<input type="text" name="password" placeholder="Password" value="">
 								</div>
 							</div>
 						</div>
