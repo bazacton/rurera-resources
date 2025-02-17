@@ -252,7 +252,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 <div class="form-group">
                                     <span class="fomr-label mb-10 d-block">Student's last name</span>
                                     <div class="input-field">
-                                        <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+                                        <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
                                         <input type="text" class="rurera-req-field" placeholder="Last name" name="last_name" value="{{$user->get_last_name()}}">
                                     </div>
                                 </div>
@@ -263,7 +263,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 <div class="form-group">
                                     <span class="fomr-label mb-10 d-block">Display name</span>
                                     <div class="input-field">
-                                        <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+                                        <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
                                         <input type="text" class="rurera-req-field" placeholder="Display name" name="display_name" value="{{($user->display_name != '')? $user->display_name : $user->get_first_name().' '.$user->get_last_name()}}">
                                     </div>
                                 </div>
@@ -283,7 +283,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                         <input type="radio" name="gender" id="male">
                                         <label for="male" class="d-inline-flex align-items-center flex-wrap mb-0 text-center">
                                             <span class="thumb-box float-left mr-10">
-                                                <img src="/avatar/svgA16395287444009177.png" alt="" height="35" width="35">
+                                                <img src="/avatar/svgA16395287444009177.png" alt="select-option image" height="35" width="35">
                                             </span>
                                             Male
                                         </label>
@@ -292,7 +292,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                         <input type="radio" name="gender" id="female">
                                         <label for="female" class="d-inline-flex align-items-center flex-wrap mb-0 text-center">
                                             <span class="thumb-box float-left mr-10">
-                                                <img src="/avatar/svgA16395287444009177.png" alt="" height="35" width="35">
+                                                <img src="/avatar/svgA16395287444009177.png" alt="select-option image" height="35" width="35">
                                             </span>
                                             Female
                                         </label>
@@ -766,7 +766,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                     <div class="profile-inner mb-10">
                         <div class="profile-header">
                             <h3>{{$user->get_full_name()}}</h3>
-                            <a href="#" class="student-qrCode"><img src="/store/1/default_images/qr-code.png" alt=""></a>
+                            <a href="#" class="student-qrCode"><img src="/store/1/default_images/qr-code.png" alt="qr-code"></a>
                         </div>
                         <div class="student-info">
                             <ul>
@@ -789,22 +789,22 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                         </div>
                     </div>
                     <a href="javascript:;" class="reset-btn regenerate-emoji" data-user_id="{{$user->id}}">
-                        <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>Reset Emoji
+                        <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Reset Emoji
                     </a>
                     <a href="javascript:;" class="reset-btn regenerate-pin" data-user_id="{{$user->id}}">
-                        <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>Reset Pin
+                        <span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt="retry"></span>Reset Pin
                     </a>
                                 
                 </div>
                 <div class="edit-profile edit-profile-block mt-20 rurera-hide bg-white p-25">
-                        <form class="child-edit-form" method="post" action="javascript:;">
+                    <form class="child-edit-form" method="post" action="javascript:;">
                         {{ csrf_field() }}
                         <div class="row">
                             <div class="col-6 col-lg-6 col-md-6">
                                 <div class="form-group">
                                     <label>Username</label>
                                     <div class="input-field">
-                                        <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+                                        <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
                                         <input type="text" name="username" class="" placeholder="Username" value="{{$user->username}}">
                                     </div>
                                 </div>
@@ -813,7 +813,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                 <div class="form-group">
                                     <label>Password</label>
                                     <div class="input-field">
-                                        <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+                                        <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
                                         <input type="text" name="password" class="" placeholder="Password" value="">
                                     </div>
                                 </div>
