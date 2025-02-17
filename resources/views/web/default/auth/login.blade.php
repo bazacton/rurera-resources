@@ -282,7 +282,7 @@
                             </div>
                             <div class="qr-code-box">
                                 <a href="#">
-                                    <img src="/store/1/default_images/permission.png" alt="">
+                                    <img src="/store/1/default_images/permission.png" alt="permission">
                                     <span>Waiting for camera permission...</span>
                                 </a>
                             </div>
