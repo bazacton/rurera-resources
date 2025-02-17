@@ -1152,7 +1152,7 @@ ul.course-info-list li .progress-box .circle_percent:before {
 .getting-start ul {display: flex; flex-direction: column; gap: 12px;}
 .getting-start .start-item h5 {font-weight: 500;}
 .panel-right-sidebar .getting-start .icon-box img {max-width: 20px;}
-.panel-right-sidebar .getting-start .levels-progress.horizontal {border-bottom: 1px solid gray; height: 4px; overflow: hidden; position: relative;}
+.panel-right-sidebar .getting-start .levels-progress.horizontal {border-bottom: 1px solid #ddd; height: 4px; overflow: hidden; position: relative;}
 /*Getting Start Widget Style End*/
 
 /************************
