@@ -19,34 +19,33 @@
                     @if( $quests->count() > 0 )
                     <div class="quests-list panel-border bg-white rounded-sm p-30">
                         <ul>
+                            @foreach( $quests as $questObj)
+                                @php $questUserData = $DailyQuestsController->getQuestUserData($questObj);
 
-                                @foreach( $quests as $questObj)
-                                    @php $questUserData = $DailyQuestsController->getQuestUserData($questObj);
-
-                                    $quest_icon = '/assets/default/img/types/'.$questObj->quest_topic_type.'.svg';
-                                    $quest_icon = ( $questObj->quest_icon != '')? $questObj->quest_icon : $quest_icon;
-                                    @endphp
-                                    <li>
-                                            <div class="quests-item">
-                                                <div class="icon-box">
-                                                    <img src="{{$quest_icon}}" alt="learning image" width="50" height="50">
-                                                </div>
-                                                <div class="item-text">
-                                                    <h5 class="font-18 font-weight-bold">{{$questObj->title}}</h5>
-                                                    <div class="levels-progress horizontal">
-                                                        <span class="progress-box">
-                                                            <span class="progress-count" style="width: {{isset( $questUserData['completion_percentage'] )? $questUserData['completion_percentage'] : 0}}%;"></span>
-                                                        </span>
-                                                        <span class="progress-numbers">{{isset( $questUserData['quest_bar_label'] )? $questUserData['quest_bar_label'] : ''}}</span>
-                                                    </div>
-                                                    <span class="progress-icon font-16">
-                                                        <img src="/assets/default/img/quests-coin.png" alt="quests-coin" width="35" height="35">
-                                                        +{{isset( $questUserData['questScore'] )? $questUserData['questScore'] : 0}}
-                                                    </span>
-                                                </div>
+                                $quest_icon = '/assets/default/img/types/'.$questObj->quest_topic_type.'.svg';
+                                $quest_icon = ( $questObj->quest_icon != '')? $questObj->quest_icon : $quest_icon;
+                                @endphp
+                                <li>
+                                    <div class="quests-item">
+                                        <div class="icon-box">
+                                            <img src="{{$quest_icon}}" alt="learning image" width="50" height="50">
+                                        </div>
+                                        <div class="item-text">
+                                            <h5 class="font-18 font-weight-bold">{{$questObj->title}}</h5>
+                                            <div class="levels-progress horizontal">
+                                                <span class="progress-box">
+                                                    <span class="progress-count" style="width: {{isset( $questUserData['completion_percentage'] )? $questUserData['completion_percentage'] : 0}}%;"></span>
+                                                </span>
+                                                <span class="progress-numbers">{{isset( $questUserData['quest_bar_label'] )? $questUserData['quest_bar_label'] : ''}}</span>
                                             </div>
-                                        </li>
-                                @endforeach
+                                            <span class="progress-icon font-16">
+                                                <img src="/assets/default/img/quests-coin.png" alt="quests-coin" width="35" height="35">
+                                                +{{isset( $questUserData['questScore'] )? $questUserData['questScore'] : 0}}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            @endforeach
                         </ul>
 
                     </div>
