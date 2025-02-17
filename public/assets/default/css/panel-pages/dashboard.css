@@ -658,7 +658,7 @@ Right SideBar Style Start
 .user-profile-icons .dropdown-menu:after, 
 .user-profile-icons .dropdown-menu:before {content: ""; position: absolute; top: -8px; right: 30px; height: 15px; width: 15px; border-top: 1px solid #ddd; border-left: 1px solid#ddd; transform: rotate(45deg);}
 .user-profile-icons .dropdown-menu:before {background-color: #fff; top: -6px; box-shadow: none; border: 0; }
-.user-profile-icons .dropdown-menu {border-radius: 8px; border: 1px solid #ddd; box-shadow: none; right: -15px; transition: none; margin: 0; padding: 20px 15px;}
+.user-profile-icons .dropdown-menu {border-radius: 8px; border: 1px solid #ddd; box-shadow: none; right: -15px; transition: none; margin: 0; padding: 15px; min-width: 300px;}
 .user-profile-icons .dropdown-menu .dropdown-header {
     text-align: left;
     font-weight: 600;
@@ -697,7 +697,7 @@ Right SideBar Style Start
     font-size: 1rem;
     font-weight: normal;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 0;
     gap: 10px;
     flex-wrap: wrap;
