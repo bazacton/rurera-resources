@@ -358,10 +358,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
                         <div class="row assignment_topic_type_fields1 practice_fields vocabulary_fields1 no-of-questions-fields">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-6">
                                 <div class="form-group">
@@ -375,16 +371,12 @@
                                         <input type="range" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][no_of_questions]" value="0"
                                             class="js-ajax-title form-control rurera-req-field no_of_questions range-slider-field" min="0" max="0" placeholder=""/>
                                     </div>
-
-
                                     <div class="invalid-feedback"></div>
-
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-6 assignment_topic_type_fields timestables_fields vocabulary_fields mock_test_fields sats_fields books_fields">
                                 <div class="form-group">
                                     <label class="input-label font-weight-bold mb-0">No of Attempts</label>
-
                                     <div class="invalid-feedback"></div>
                                     <div class="range-slider">
                                         <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
@@ -400,14 +392,9 @@
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="form-group assignment_topic_type_fields timestables_fields">
                             <label class="input-label mb-10 font-weight-bold">Duration Type</label>
-
                             <div class="years-group populated-data input-group">
-
-
                                 <div class="radio-buttons justify-content-left">
                                     <label class="card-radio">
                                         <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][duration_type]"
@@ -415,9 +402,8 @@
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
                                                 <h3>Total Practice</h3>
-                                        </div>
-
-                                    </span>
+                                            </div>
+                                        </span>
                                     </label>
                                     <label class="card-radio">
                                         <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][duration_type]"
@@ -425,67 +411,59 @@
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
                                                 <h3>Per Question</h3>
-                                        </div>
-
-                                    </span>
+                                            </div>
+                                        </span>
                                     </label>
                                 </div>
-
                                 <div class="invalid-feedback"></div>
                             </div>
-
                         </div>
 
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-6">
-                        <div class="form-group">
-                            <label class="input-label font-weight-bold mb-0">Practice Time (<span class="practice_interval_data">Minutes</span>)</label>
-                            <div class="range-slider">
-                                <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
-                                <div class="range-slider_line">
-                                    <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                <div class="form-group">
+                                    <label class="input-label font-weight-bold mb-0">Practice Time (<span class="practice_interval_data">Minutes</span>)</label>
+                                    <div class="range-slider">
+                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                        <div class="range-slider_line">
+                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <input type="range"
+                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][practice_time]"
+                                            value="0"
+                                            class="js-ajax-title form-control practice_interval range-slider-field" step="20" min="0" max="240"
+                                            placeholder=""/>
+                                    </div>
+                                    <div class="invalid-feedback"></div>
                                 </div>
-                                <input type="range"
-                                    name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][practice_time]"
-                                    value="0"
-                                    class="js-ajax-title form-control practice_interval range-slider-field" step="20" min="0" max="240"
-                                    placeholder=""/>
-                            </div>
-                            <div class="invalid-feedback"></div>
-                        </div>
-
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-6">
-                        <div class="form-group duration_type_fields per_question_fields assignment_topic_type_fields timestables_fields">
-                            <label class="input-label font-weight-bold">Questions Time Interval (<span class="time_interval_data">Seconds</span>)</label>
-
-                            <div class="range-slider">
-                                <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
-                                <div class="range-slider_line">
-                                    <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                <div class="form-group duration_type_fields per_question_fields assignment_topic_type_fields timestables_fields">
+                                    <label class="input-label font-weight-bold">Questions Time Interval (<span class="time_interval_data">Seconds</span>)</label>
+                                    <div class="range-slider">
+                                        <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                        <div class="range-slider_line">
+                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                        </div>
+                                        <input type="range"
+                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][time_interval]"
+                                            value="0"
+                                            class="js-ajax-title form-control time_interval range-slider-field" step="10" min="0" max="1200"
+                                            placeholder=""/>
+                                    </div>
+                                    <div class="invalid-feedback"></div>
                                 </div>
-                                <input type="range"
-                                    name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][time_interval]"
-                                    value="0"
-                                    class="js-ajax-title form-control time_interval range-slider-field" step="10" min="0" max="1200"
-                                    placeholder=""/>
-                            </div>
-
-                            <div class="invalid-feedback"></div>
-                        </div>
                             </div>
                         </div>
-
-
-                    <div class="form-group assignment_topic_type_fields practice_fields1">
-                        <label class="input-label font-weight-bold">Practice Method</label>
-                        <div class="plan-switch-option" style="justify-content: left;">
+                        <div class="form-group assignment_topic_type_fields practice_fields1">
+                            <label class="input-label font-weight-bold">Practice Method</label>
+                            <div class="plan-switch-option" style="justify-content: left;">
                                 <span class="switch-label font-18">Completion Target</span> &nbsp;&nbsp;&nbsp;&nbsp;
                                 <div class="plan-switch">
                                     <div class="custom-control custom-switch"><input type="checkbox" name="auto_generate" class="assignment_method_check custom-control-input" id="method_check" value="target_improvements"><label class="custom-control-label" for="method_check"></label></div>
                                 </div>
+                            </div>
                         </div>
-                    </div>
 
                         <div class="row assignment_topic_type_fields practice_fields1">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-6">
