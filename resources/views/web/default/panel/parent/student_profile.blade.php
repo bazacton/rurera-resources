@@ -676,7 +676,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                         </div>
                                         <div class="payment-card-body">
                                             <span class="card-type-icon d-block mb-15">
-                                                <img src="/assets/default/svgs/card-chip.svg" alt="" height="32" width="44">
+                                                <img src="/assets/default/svgs/card-chip.svg" alt="card-chip" height="32" width="44">
                                             </span>
                                             <div class="user-card-info d-flex align-items-center flex-wrap justify-content-between">
                                                 <div class="card-info-text">
@@ -690,7 +690,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                     </div>
                                                 </div>
                                                 <span class="card-info-icon">
-                                                    <img src="/assets/default/svgs/card-info.svg" alt="" height="40" width="40">
+                                                    <img src="/assets/default/svgs/card-info.svg" alt="card-chip" height="40" width="40">
                                                 </span>
                                             </div>
                                         </div>
@@ -732,7 +732,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                         </div>
                                         <div class="profile-image text-center">
                                             <figure class="d-inline-flex position-relative">
-                                                <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" height="96" width="96" alt="">
+                                                <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" height="96" width="96" alt="profile-image">
                                                 <a href="javascript:;" class="profile-image-btn cancel-btn d-inline-flex align-items-center justify-content-center font-16 bg-white"><img src="/assets/default/svgs/edit-2.svg" alt="" style="width:18px; height:18px"></a>
                                             </figure>
                                         </div>
@@ -752,7 +752,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											<div class="form-group">
 												<span class="fomr-label">Student's first name</span>
 												<div class="input-field">
-													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
 													<input type="text" class="rurera-req-field" placeholder="First Name" name="first_name" value="{{$user->get_first_name()}}">
 												</div>
 											</div>
@@ -762,7 +762,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											<div class="form-group">
 												<span class="fomr-label">Student's last name</span>
 												<div class="input-field">
-													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
 													<input type="text" class="rurera-req-field" placeholder="Last name" name="last_name" value="{{$user->get_last_name()}}">
 												</div>
 											</div>
@@ -773,7 +773,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											<div class="form-group">
 												<span class="fomr-label">Display name</span>
 												<div class="input-field">
-													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
 													<input type="text" class="rurera-req-field" placeholder="Display name" name="display_name" value="{{($user->display_name != '')? $user->display_name : $user->get_first_name().' '.$user->get_last_name()}}">
 												</div>
 											</div>
