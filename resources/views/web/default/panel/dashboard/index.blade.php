@@ -411,7 +411,7 @@
 							@if(isset( $resultObj->id))
 								@php $attempted_count++; @endphp
 								<a href="javascript:;" class="locked_nugget rurera-tooltip">
-									<img src="{{$quest_icon}}">
+									<img src="{{$quest_icon}}" alt="{{$quest_icon}}">
 									<div class="lms-tooltip">
 										<div class="tooltip-box">
 											<h5 class="font-18 font-weight-bold text-white mb-5">															
@@ -422,7 +422,6 @@
 											<button class="tooltip-button" onclick="window.location.href='/panel/quizzes/11/check_answers';">Result</button>
 										</div>
 									</div>
-									
 								</a>
 							@endif
 						@endforeach
@@ -438,12 +437,8 @@
     						@php $remaining_attempts--; @endphp
     					@endwhile
 					@endif
-					
-				</div>
-
-							
+				</div>			
 			</li>
-			
 		@endforeach
 		
 	</ul>
