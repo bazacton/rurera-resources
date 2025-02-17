@@ -242,7 +242,7 @@ if( !empty( $emojisArray ) ){
                                     <div class="edit-profile-image mb-30">
                                         <div class="profile-image">
                                             <figure class="d-inline-flex position-relative">
-                                                <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" height="96" width="96" alt="">
+                                                <img src="{{ (!empty($user)) ? $user->getAvatar(150) : '' }}" height="96" width="96" alt="edit-profile-image">
                                                 <a href="javascript:;" class="profile-image-btn cancel-btn d-inline-flex justify-content-center font-14 flex-column">
                                                     <small class="img-type font-14 font-weight-500">JPG, GIF or PNG. Maximum file size 1 MB.</small>    
                                                     <span class="font-weight-bold">Change photo</span>
@@ -256,13 +256,12 @@ if( !empty( $emojisArray ) ){
                                                 <div class="edit-element-title mb-10">
                                                     <h6 class="font-weight-500">
                                                         Profile Info
-                                                        <!-- <span class="d-block pt-5 font-12">Others diserve to know you more</span> -->
                                                     </h6>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-12 col-md-12 form-group">
                                                 <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
                                                     <input type="text" name="display_name" class="rurera-req-field" placeholder="Display Name" value="{{( $user->display_name != '')? $user->display_name : $user->first_name.' '.$user->last_name}}">
                                                 </div>
                                             </div>	
@@ -271,7 +270,6 @@ if( !empty( $emojisArray ) ){
                                                 <div class="edit-element-title mb-10">
                                                     <h6 class="font-weight-500">
                                                         Login Details
-                                                        <!-- <span class="d-block pt-5 font-12">This can help you to set login details</span> -->
                                                     </h6>
                                                 </div>
                                             </div>
