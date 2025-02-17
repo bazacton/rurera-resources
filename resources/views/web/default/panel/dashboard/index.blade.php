@@ -661,7 +661,7 @@
 
             <a href="@if($authUser->isUser()) /panel/webinars/my-comments @else /panel/webinars/comments @endif" class="dashboard-stats rounded-sm panel-shadow p-10 p-md-20 d-flex align-items-center mt-15 mt-md-30">
                 <div class="stat-icon comments">
-                    <img src="/assets/default/img/icons/comment.svg" alt="">
+                    <img src="/assets/default/img/icons/comment.svg" alt="comment">
                 </div>
                 <div class="d-flex flex-column ml-15">
                     <span class="font-30 text-secondary">{{ !empty($commentsCount) ? $commentsCount : 0 }}</span>
@@ -705,8 +705,7 @@
                                     class="js-noticeboard-info btn btn-sm btn-border-white">{{ trans('panel.more_info')
                                 }}
                             </button>
-                            <input type="hidden" class="js-noticeboard-message"
-                                   value="{{ $getUnreadNoticeboard->message }}">
+                            <input type="hidden" class="js-noticeboard-message" value="{{ $getUnreadNoticeboard->message }}">
                         </div>
                     </div>
                 </div>
@@ -739,8 +738,7 @@
                             <li class="count-number-card col-12">
                                 <a href="#" class="count-number-btn">
                                     <div class="count-number-icon">
-                                        <i data-feather="edit-2" width="20" height="20" class=""
-                                           style="color:#8cc811"></i>
+                                        <i data-feather="edit-2" width="20" height="20" style="color:#8cc811"></i>
                                     </div>
                                     <div class="count-number-body">
                                         <h5>Assessments</h5>
@@ -752,8 +750,7 @@
                             <li class="count-number-card col-12">
                                 <a href="#" class="count-number-btn">
                                     <div class="count-number-icon">
-                                        <i data-feather="clock" width="20" height="20" class=""
-                                           style="color:#00aeef"></i>
+                                        <i data-feather="clock" width="20" height="20" style="color:#00aeef"></i>
                                     </div>
                                     <div class="count-number-body">
                                         <h5>Q. Attempt</h5>
