@@ -923,17 +923,10 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-
-
-                                            <div class="form-group quest_topic_type_fields timestables_fields">
-
-                                            </div>
-
+                                            <div class="form-group quest_topic_type_fields timestables_fields"></div>
                                             <div class="form-section">
                                                 <h2 class="section-title">General information</h2>
                                             </div>
-
                                             <div class="form-group">
                                                 <label class="input-label">Quest Title</label>
                                                 <input type="text"
@@ -942,16 +935,14 @@
                                                        class="js-ajax-title form-control rurera-req-field"
                                                        placeholder=""/>
                                             </div>
-
                                             <div class="form-group">
                                                 <label class="input-label">Quest Description</label>
                                                 <textarea
-                                                        name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][description]"
-                                                        class="form-control summernote-editor-mintool"
-                                                        placeholder="" rows="20"></textarea>
+                                                    name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][description]"
+                                                    class="form-control summernote-editor-mintool"
+                                                    placeholder="" rows="20"></textarea>
                                                 <div class="invalid-feedback"></div>
                                             </div>
-
 
                                             <div class="form-group">
                                                 <label class="input-label">Quest Icon</label>
@@ -982,8 +973,6 @@
 											<div class="form-group">
                                                 <label class="input-label">Date Type</label>
                                                 <div class="input-group">
-
-
                                                     <div class="radio-buttons">
                                                         <label class="card-radio">
                                                             <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][date_type]"
@@ -992,8 +981,7 @@
                                                                 <div class="card-icon">
                                                                     <h3>Daily</h3>
                                                                </div>
-
-                                                          </span>
+                                                            </span>
                                                         </label>
                                                         <label class="card-radio">
                                                             <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][date_type]"
@@ -1002,11 +990,9 @@
                                                                 <div class="card-icon">
                                                                     <h3>Weekly</h3>
                                                                </div>
-
-                                                          </span>
+                                                            </span>
                                                         </label>
                                                     </div>
-
                                                     <div class="invalid-feedback"></div>
                                                 </div>
                                             </div>
@@ -1035,47 +1021,39 @@
                                                         </div>
                                                     </div>
 
-											<div class="form-group dates_weekly_fields rurera-hide">
-                                                <label class="input-label">Weeks</label>
-                                                <div class="input-group">
-                                                    <select name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][weeks_dates][]" class="form-control select2 class_condition" multiple>
-														@foreach( $weeks_array as $week_key => $week_value)
-															<option value="{{$week_key}}">{{$week_value}}</option>
-														@endforeach
-                                                    </select>
+                                                    <div class="form-group dates_weekly_fields rurera-hide">
+                                                        <label class="input-label">Weeks</label>
+                                                        <div class="input-group">
+                                                            <select name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][weeks_dates][]" class="form-control select2 class_condition" multiple>
+                                                                @foreach( $weeks_array as $week_key => $week_value)
+                                                                    <option value="{{$week_key}}">{{$week_value}}</option>
+                                                                @endforeach
+                                                            </select>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-
-                                                </div>
-
-                                            </div>
-
-
-
                                             <div class="form-group quests-not-special">
                                                 <label class="input-label">Quest Method</label>
                                                 <div class="input-group">
-
                                                     <div class="radio-buttons">
                                                         <label class="card-radio">
                                                             <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][quest_method]"
                                                                    class="quest_method_check" value="correct_answers" checked>
                                                             <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>Correct answers</h3>
-                                                                       </div>
-
-                                                                  </span>
+                                                                <div class="card-icon">
+                                                                    <h3>Correct answers</h3>
+                                                                </div>
+                                                            </span>
                                                         </label>
                                                         <label class="card-radio">
                                                             <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][quest_method]"
                                                                    class="quest_method_check" value="correct_answers_in_row" checked>
                                                             <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>Correct Answers in Row</h3>
-                                                                       </div>
-
-                                                                  </span>
+                                                                <div class="card-icon">
+                                                                    <h3>Correct Answers in Row</h3>
+                                                                </div>
+                                                            </span>
                                                         </label>
                                                         <label class="card-radio">
                                                             <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][quest_method]"
