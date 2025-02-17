@@ -114,7 +114,7 @@
                         <div class="progress-bar" style="width: 100%;"></div>
                         <div class="plan-inner">
                             <div class="subject-title">
-                                <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="" title="book-bookmark"></span>
+                                <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="book-bookmark" title="book-bookmark"></span>
                                 English
                             </div>
                             <div class="plan-progress text-right">
@@ -129,7 +129,7 @@
                         <div class="progress-bar" style="width: 50%;"></div>
                         <div class="plan-inner">
                             <div class="subject-title">
-                                <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="" title="book-bookmark"></span>
+                                <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="book-bookmark" title="book-bookmark"></span>
                                 VR
                             </div>
                             <div class="plan-progress text-right">
@@ -143,7 +143,7 @@
                         <div class="progress-bar" style="width: 25%;"></div>
                         <div class="plan-inner">
                             <div class="subject-title">
-                                <span class="icon-box"><img src="/assets/default/svgs/mathematical.svg" alt="" title="book-bookmark"></span>
+                                <span class="icon-box"><img src="/assets/default/svgs/mathematical.svg" alt="mathematical" title="book-bookmark"></span>
                                 Maths
                             </div>
                             <div class="plan-progress">
@@ -157,7 +157,7 @@
                         <div class="progress-bar" style="width: 25%;"></div>
                         <div class="plan-inner">
                             <div class="subject-title">
-                                <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="" title="book-bookmark"></span>
+                                <span class="icon-box"><img src="/assets/default/svgs/book-bookmark.svg" alt="book-bookmark" title="book-bookmark"></span>
                                 NVR
                             </div>
                             <div class="plan-progress">
