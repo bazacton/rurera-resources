@@ -469,21 +469,18 @@
                             <div class="col-lg-6 col-md-6 col-sm-12 col-6">
                                 <div class="form-group assignment_method_check_fields target_improvements_fields">
                                     <label class="input-label font-weight-bold">Percentage of Correct Answers</label>
-
                                     <div class="invalid-feedback"></div>
                                     <div class="range-slider">
                                         <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
-                                        <div class="range-slider_line">
-                                            <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
-                                        </div>
-                                        <input type="range"
-                                            name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][target_percentage]"
-                                            value="0" data-label="%"
-                                            class="js-ajax-title form-control correct_answers_percentage range-slider-field" min="0" max="100"
-                                            placeholder=""/>
+                                            <div class="range-slider_line">
+                                                <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                            </div>
+                                            <input type="range"
+                                                name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][target_percentage]"
+                                                value="0" data-label="%"
+                                                class="js-ajax-title form-control correct_answers_percentage range-slider-field" min="0" max="100"
+                                                placeholder=""/>
                                     </div>
-
-
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-6">
@@ -505,8 +502,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="form-group mt-30">
                                 <div class="btn-field">
@@ -516,21 +511,16 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="wizard-steps" data-step_id="2">
-                </div>
-
+                <div class="wizard-steps" data-step_id="2"></div>
                 <div class="wizard-pagination1 rurera-hide">
                     <div class="previous-btn wizard-step disabled-btn" data-next_step="0">Previous</div>
                     <div class="next-btn wizard-step" data-next_step="2">Continue</div>
                 </div>
-
                 <div class="rurera-hide wizard-step clear-all-btn" data-next_step="1">Clear all</div>
             </form>
         </div>
     </div>
 </div>
-
 <div class="modal fade lms-choose-membership" id="assignmentCreateModal" tabindex="-1" aria-labelledby="assignmentCreateModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -558,9 +548,7 @@
             </div>
             <div class="modal-body">
                 <div class="container container-nosidebar">
-                <div class="tab-content subscription-content" id="nav-tabContent">
-
-                </div>
+                    <div class="tab-content subscription-content" id="nav-tabContent"></div>
                 </div>
             </div>
         </div>
