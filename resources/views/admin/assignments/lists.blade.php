@@ -282,14 +282,10 @@
                             </select>
                         </div>
                     </div>
-
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="input-label">{{ trans('admin/main.instructor') }}</label>
-                            <select name="teacher_ids[]" multiple="multiple" data-search-option="just_teacher_role"
-                                    class="form-control search-user-select2"
-                                    data-placeholder="Search teachers">
-
+                            <select name="teacher_ids[]" multiple="multiple" data-search-option="just_teacher_role" class="form-control search-user-select2" data-placeholder="Search teachers">
                                 @if(!empty($teachers) and $teachers->count() > 0)
                                 @foreach($teachers as $teacher)
                                 <option value="{{ $teacher->id }}" selected>{{ $teacher->get_full_name() }}</option>
@@ -298,13 +294,10 @@
                             </select>
                         </div>
                     </div>
-
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="input-label">{{ trans('admin/main.class') }}</label>
-                            <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2"
-                                    data-placeholder="Search classes">
-
+                            <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2" data-placeholder="Search classes">
                                 @if(!empty($webinars) and $webinars->count() > 0)
                                 @foreach($webinars as $webinar)
                                 <option value="{{ $webinar->id }}" selected>{{ $webinar->title }}</option>
@@ -313,12 +306,11 @@
                             </select>
                         </div>
                     </div>
-
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="input-label">{{ trans('admin/main.status') }}</label>
                             <select name="statue" data-plugin-selectTwo class="form-control populate">
-                                <option value="">{{ trans('admin/main.all_status') }}</option>
+                                <option value="{{ trans('admin/main.all_status') }}">{{ trans('admin/main.all_status') }}</option>
                                 <option value="active" @if(request()->get('status') == 'active') selected @endif>{{
                                     trans('admin/main.active') }}
                                 </option>
@@ -328,7 +320,6 @@
                             </select>
                         </div>
                     </div>
-
                     <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
                         <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}
                         </button>
