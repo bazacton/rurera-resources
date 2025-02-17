@@ -75,10 +75,10 @@
             @if( !empty( $saved_templates ) )
                 @foreach( $saved_templates  as $template_name => $template_data)
                     @php $template_array = json_decode($template_data);
-							$url_params = '<span>'.$template_name.'</span>';
-							if( isset( $template_array->url_params )){
-								$url_params = '<a href="'.(string) url("").'/admin/topics_parts/?'.$template_array->url_params.'">'.$template_name.'</a>';
-							}
+                        $url_params = '<span>'.$template_name.'</span>';
+                        if( isset( $template_array->url_params )){
+                            $url_params = '<a href="'.(string) url("").'/admin/topics_parts/?'.$template_array->url_params.'">'.$template_name.'</a>';
+                        }
                     @endphp
                     <span class="apply-template-field" data-form_id="topic_parts_search_form" data-template_type="assignments_search" data-template_data="{{$template_data}}"> {!! $url_params !!} <a href="javascript:;" data-template_name="{{$template_name}}" class="remove-template"><i class="fas fa-times"></i></a></span>
                 @endforeach
@@ -86,9 +86,6 @@
             <button type="button" class="btn btn-success save-template" data-form_id="topic_parts_search_form" data-template_type="assignments_search" ><i class="fas fa-save"></i> Save Template</button>
         </div>
     </section>
-
-
-
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
             <div class="card card-statistic-1">
@@ -105,42 +102,40 @@
                 </div>
             </div>
         </div>
-
-            <div class="col-12 col-md-12">
-                <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="topics-tab" href="/admin/assignments">
-                            <span class="tab-title">All assignments</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="topics-tab" href="/admin/assignments/scheduled" >
-                            <span class="tab-title">Scheduled</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="topics-tab" href="/admin/assignments/running" >
-                            <span class="tab-title">Running</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="topics-tab" href="/admin/assignments/completed" >
-                            <span class="tab-title">Completed</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="topics-tab" href="/admin/assignments/paused" >
-                            <span class="tab-title">Paused</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
+        <div class="col-12 col-md-12">
+            <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="topics-tab" href="/admin/assignments">
+                        <span class="tab-title">All assignments</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="topics-tab" href="/admin/assignments/scheduled" >
+                        <span class="tab-title">Scheduled</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="topics-tab" href="/admin/assignments/running" >
+                        <span class="tab-title">Running</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="topics-tab" href="/admin/assignments/completed" >
+                        <span class="tab-title">Completed</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="topics-tab" href="/admin/assignments/paused" >
+                        <span class="tab-title">Paused</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
         <div class="col-12">
             <div class="assignments-table">
                 <div class="card">
                     <div class="card-header bg-light">
-                        <h6 class="mb-0"><span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt=""></span> Issue in Testing</h6>
+                        <h6 class="mb-0"><span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span> Issue in Testing</h6>
                     </div>
                     <div class="card-body p-0 table-sm">
                         <table class="table mb-0">
