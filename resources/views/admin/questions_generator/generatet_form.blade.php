@@ -31,10 +31,7 @@
 	<div class="row">
 		<div class="col-12 col-md-12">
 			<div class="card">
-				<div class="card-body px-0 pt-0">
-				
-					
-					
+				<div class="card-body px-0 pt-0">		
 					<div class="defined-searches">
 					<span><strong>Save Forms:</strong></span>
 						@if( !empty( $saved_templates_array ) )
