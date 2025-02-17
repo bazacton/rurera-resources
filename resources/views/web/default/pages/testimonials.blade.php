@@ -157,9 +157,7 @@
       <div class="col-12 col-lg-6 mb-30">
         <div class="position-relative">
           <div class="vidio-holder">
-            <img
-              src="/assets/default/img/testimonial-2.jpg"
-              class="find-instructor-section-hero"
+            <img src="/assets/default/img/testimonial-2.jpg" class="find-instructor-section-hero"
               alt="Find the best instructor" title="Find the best instructor" width="100%" height="auto" itemprop="image" loading="eager"
             />
           </div>
@@ -170,7 +168,7 @@
           <div class="find-instructor-circle">
             <span itemprop="number" class="lms-serial-no">#2</span>
           </div>
-            <p itemprop="datePublished" content="2023-06-05">Experienced Teacher / 30 May 2023</p>
+          <p itemprop="datePublished" content="2023-06-05">Experienced Teacher / 30 May 2023</p>
           <h3 itemprop="title" class="font-36 font-weight-bold text-dark">Peter J.</h3>
           <p itemprop="description" class="font-16 font-weight-normal text-gray mt-10">One of the standout features of Rurera is its assessment and analytics capabilities. It provides real-time data on student performance, allowing me to track their progress and identify areas where additional support is needed.</p>
         </div>
@@ -178,8 +176,7 @@
     </div>
   </div>
 </section>
-<section class="lms-column-section lms-text-section container-w mt-50 mb-0 pt-30 pb-30 pr-30 pl-30"
-    style="background-color: #eaf7f0;">
+<section class="lms-column-section lms-text-section container-w mt-50 mb-0 pt-30 pb-30 pr-30 pl-30" style="background-color: #eaf7f0;">
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
