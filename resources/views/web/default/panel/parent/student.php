@@ -492,7 +492,6 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 										</div>
 										
 										<div class="col-6 col-sm-12 col-md-6 col-lg-6">
-											
 											<div class="form-group custom-switches-stacked mb-15">
 												<label class="custom-switch pl-0">
 													<input type="checkbox" name="hide_books"
@@ -503,15 +502,13 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 												</label>
 											</div>
 										</div>
-											
-											
 										</div>
 										
-									<div class="edit-profile-controls">
-										<input type="hidden" name="user_id" value="{{$user->id}}">
-										<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
-										<a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
-                                    </div>
+										<div class="edit-profile-controls">
+											<input type="hidden" name="user_id" value="{{$user->id}}">
+											<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
+											<a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
+										</div>
 									</form>
 								</div>
                             </div>
@@ -529,7 +526,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								<h2 class="font-16 font-weight-500 mb-5 inner-heading">Login Details
 									<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between">
 										<span class="edit-icon d-inline-flex align-items-center float-right pr-15">
-											<img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+											<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 											<em class="font-weight-500">Edit</em>
 										</span>
 									</a>
@@ -539,7 +536,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								<div class="profile-inner">
 									<div class="profile-header">
 										<h3>{{$user->get_full_name()}}</h3>
-										<a href="#" class="student-qrCode"><img src="/store/1/default_images/qr-code.png" alt=""></a>
+										<a href="#" class="student-qrCode"><img src="/store/1/default_images/qr-code.png" alt="qr-code"></a>
 									</div>
 									<div class="student-info">
 										<ul>
@@ -572,14 +569,14 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 										<div class="col-6 col-lg-6 col-md-6 form-group">
 											<label>Username</label>
 											<div class="input-field">
-												<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+												<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
 												<input type="text" name="username" class="" placeholder="Username" value="{{$user->username}}">
 											</div>
 										</div>
 										<div class="col-6 col-lg-6 col-md-6 form-group">
 											<label>Password</label>
 											<div class="input-field">
-												<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+												<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
 												<input type="text" name="password" class="" placeholder="Password" value="">
 											</div>
 										</div>
@@ -590,15 +587,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 										<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
 										<a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
                                     </div>
-									</form>
-                        </div>
+								</form>
+                       		</div>
                         </div>
                     </div>
                     </div>
-					
-					
-					
-					
 					
 					<div class="row mb-50">
                         <div class="col-lg-4 col-md-4 col-sm-12 col-12">
@@ -626,12 +619,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 														
 											</div>
 											<div class="row">
-											<div class="col-lg-6 col-md-6 col-sm-12">
-											</div>
-											<div class="col-lg-6 col-md-6 col-sm-12">
-												<a href="javascript:;" class="package-update-btn btn w-100 subscription-modal" data-type="update_package" data-id="{{$user->id}}">Update Subscription
-												</a>
-											</div>
+												<div class="col-lg-6 col-md-6 col-sm-12"></div>
+												<div class="col-lg-6 col-md-6 col-sm-12">
+													<a href="javascript:;" class="package-update-btn btn w-100 subscription-modal" data-type="update_package" data-id="{{$user->id}}">Update Subscription
+													</a>
+												</div>
 											</div>
 										</div>
 									@endif
