@@ -78,7 +78,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                     <div class="info-media d-flex align-items-center flex-wrap">
                         <span class="media-box">
 							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between">
-								<img src="{{$user->getAvatar()}}" alt="">
+								<img src="{{$user->getAvatar()}}" alt="{{$user->getAvatar()}}">
 							</a>
                         </span>
                         <h2 class="info-title font-weight-500">
@@ -106,7 +106,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                 <strong class="d-block font-weight-500">{{$user->get_first_name()}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -118,7 +118,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                 <strong class="d-block font-weight-500">{{$user->get_last_name()}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -130,7 +130,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                 <strong class="d-block font-weight-500">{{$user->display_name}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -142,7 +142,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                 <strong class="d-block font-weight-500">{{$user->user_preference}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -154,7 +154,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                 <strong class="d-block font-weight-500">{{isset($user->userYear->id )? $user->userYear->getTitleAttribute() : ''}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
