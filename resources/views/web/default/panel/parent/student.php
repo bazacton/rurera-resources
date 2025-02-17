@@ -926,46 +926,45 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 													<input type="checkbox" name="hide_books"
 														id="hide_books_field" value="1" class="custom-switch-input"  {{($user->hide_books == 1)? 'checked' : ''}}/>
 													<span class="custom-switch-indicator"></span>
-													<label class="custom-switch-description mb-0 cursor-pointer"
-														for="hide_books_field"><span>Hide Books</span></label>
+													<label class="custom-switch-description mb-0 cursor-pointer" for="hide_books_field"><span>Hide Books</span></label>
 												</label>
 											</div>
 										</div>
 											
 											
-											<div class="col-12">
-                                                <div class="edit-element-title mb-20">
-                                                    <h6 class="font-weight-500">
-                                                        Login Details
-                                                        <span class="d-block pt-5 font-12">This can help you to set login details</span>
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-lg-6 col-md-6 form-group">
-												<label>Username</label>
-                                                <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
-                                                    <input type="text" name="username" class="" placeholder="Username" value="{{$user->username}}">
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-lg-6 col-md-6 form-group">
-												<label>Password</label>
-                                                <div class="input-field">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
-                                                    <input type="text" name="password" class="" placeholder="Password" value="">
-                                                </div>
-                                            </div>
-                                            <div class="col-6 col-lg-6 col-md-6 form-group">
-												<label>Login Emojis</label>
-												{!! $emoji_response !!}
-												<a class="btn btn-primary d-block mt-15 regenerate-emoji" data-user_id="{{$user->id}}" href="javascript:;">Generate Emoji</a>
-												
-                                            </div>
-                                            <div class="col-6 col-lg-6 col-md-6 form-group">
-												<label>Login Pin</label>
-												<div>{{$user->login_pin}}</div>
-												<a class="btn btn-primary d-block mt-15 regenerate-pin" data-user_id="{{$user->id}}" href="javascript:;">Generate Pin</a>
-                                            </div>
+										<div class="col-12">
+											<div class="edit-element-title mb-20">
+												<h6 class="font-weight-500">
+													Login Details
+													<span class="d-block pt-5 font-12">This can help you to set login details</span>
+												</h6>
+											</div>
+										</div>
+										<div class="col-6 col-lg-6 col-md-6 form-group">
+											<label>Username</label>
+											<div class="input-field">
+												<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+												<input type="text" name="username" class="" placeholder="Username" value="{{$user->username}}">
+											</div>
+										</div>
+										<div class="col-6 col-lg-6 col-md-6 form-group">
+											<label>Password</label>
+											<div class="input-field">
+												<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+												<input type="text" name="password" class="" placeholder="Password" value="">
+											</div>
+										</div>
+										<div class="col-6 col-lg-6 col-md-6 form-group">
+											<label>Login Emojis</label>
+											{!! $emoji_response !!}
+											<a class="btn btn-primary d-block mt-15 regenerate-emoji" data-user_id="{{$user->id}}" href="javascript:;">Generate Emoji</a>
+											
+										</div>
+										<div class="col-6 col-lg-6 col-md-6 form-group">
+											<label>Login Pin</label>
+											<div>{{$user->login_pin}}</div>
+											<a class="btn btn-primary d-block mt-15 regenerate-pin" data-user_id="{{$user->id}}" href="javascript:;">Generate Pin</a>
+										</div>
 											
                                         </div>
                                     </div>
