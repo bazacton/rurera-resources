@@ -74,16 +74,13 @@
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 panel-right-sidebar">
                             <div class="row">
                                 <div class="col-12 col-lg-12">
-
                                     @include(getTemplate(). '.panel.includes.user_top_bar')
-
 
                                     @if(request()->is('custom_html')  || request()->is('panel/billing')  || request()->is('panel/change_password')  || request()->is('panel/setting') || request()->is('panel/rewards') || request()->is('panel/store/purchases') || request()->is('panel/notifications') || request()->is('panel/support/tickets'))
                                     <div class="panel-rightside-menu mb-30" itemscope itemtype="https://schema.org/Article">
                                         <div class="user-info">
                                             <a href="#">
-                                                <img src="{{ $authUser->getAvatar() }}" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image"
-                                                     alt="User Avatar" loading="eager" title="User Avatar">
+                                                <img src="{{ $authUser->getAvatar() }}" alt="{{ $authUser->get_full_name() }}" width="400" height="400" itemprop="image" alt="User Avatar" loading="eager" title="User Avatar">
                                                 <span>
                                                     <strong>{{ $authUser->get_full_name() }}</strong>
                                                     <span>View Your Profile</span>
@@ -93,7 +90,7 @@
                                         <ul>
                                             <li>
                                                 <a href="/panel/setting"><span class="nav-icon">
-                                                    <img src="/assets/default/svgs/account-nav.svg" alt=""></span>
+                                                    <img src="/assets/default/svgs/account-nav.svg" alt="account-nav"></span>
                                                     <span class="menu-text">Account Setting</span>
                                                 </a>
                                             </li>
@@ -580,7 +577,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-12 col-lg-12">
                                 <div class="key-statistics panel-shadow panel-border mb-30">
                                     <div class="key-header">
