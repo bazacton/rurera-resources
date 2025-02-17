@@ -89,7 +89,7 @@ if( !empty( $emojisArray ) ){
                     <div class="info-media d-flex align-items-center flex-wrap">
                         <span class="media-box">
 							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-								<img src="{{$user->getAvatar()}}" alt="">
+								<img src="{{$user->getAvatar()}}" alt="{{$user->getAvatar()}}">
 							</a>
                         </span>
                         <h2 class="info-title font-weight-500">
@@ -116,7 +116,7 @@ if( !empty( $emojisArray ) ){
                                                 <strong class="d-block font-weight-500">{{$user->display_name}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -143,7 +143,7 @@ if( !empty( $emojisArray ) ){
                                                 <strong class="d-block font-weight-500">{{$user->user_preference}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -155,7 +155,7 @@ if( !empty( $emojisArray ) ){
                                                 <strong class="d-block font-weight-500">{{isset($user->userSchoolPreffernce1->title)? $user->userSchoolPreffernce1->title : '-'}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -167,7 +167,7 @@ if( !empty( $emojisArray ) ){
                                                 <strong class="d-block font-weight-500">{{isset( $user->userSchoolPreffernce2->title )? $user->userSchoolPreffernce2->title : '-'}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -179,7 +179,7 @@ if( !empty( $emojisArray ) ){
                                                 <strong class="d-block font-weight-500">{{isset( $user->userSchoolPreffernce3->title )? $user->userSchoolPreffernce3->title : '-'}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
