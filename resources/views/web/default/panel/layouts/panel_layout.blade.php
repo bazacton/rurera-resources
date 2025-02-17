@@ -871,7 +871,7 @@
                                             <li>
                                                 <div class="social-item">
                                                     <div class="item-left">
-                                                        <img src="/assets/default/svgs/dribbble-icon-1.svg" class="me-3 w-30px" alt="">
+                                                        <img src="/assets/default/svgs/dribbble-icon-1.svg" class="me-3 w-30px" alt="dribbble-icon-1">
                                                         <p>
                                                             <a href="#">Dribbble</a>
                                                             <span>Community</span>
@@ -890,7 +890,7 @@
                                             <li>
                                                 <div class="social-item">
                                                     <div class="item-left">
-                                                        <img src="/assets/default/svgs/instagram1.svg" class="me-3 w-30px" alt="">
+                                                        <img src="/assets/default/svgs/instagram1.svg" class="me-3 w-30px" alt="instagram1">
                                                         <p>
                                                             <a href="#">Linked In</a>
                                                             <span>Social Media</span>
