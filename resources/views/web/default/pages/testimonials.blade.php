@@ -229,10 +229,7 @@
   <div class="container">
     <div class="lms-testimonials row">
       <div class="col-12 mb-20">
-        <h2 itemprop="title"
-          class="font-weight-bold text-center w-100 mb-10 font-40 pt-0 text-dark-charcoal"
-          style="text-align:center;padding-top:20px"
-        >
+        <h2 itemprop="title" class="font-weight-bold text-center w-100 mb-10 font-40 pt-0 text-dark-charcoal" style="text-align:center;padding-top:20px">
           Learn Why millions Love us ?
         </h2>
         <p itemprop="description" class="mb-25 text-center">
@@ -251,10 +248,8 @@
         </div>
         <div class="lms-masonry">
           <div class="masonry-grid row">
-
              @foreach($testimonials as $testimonial)
                 <div class="grid-item col-lg-4 col-md-4 col-sm-6 student">
-
                     <div class="testimonial-card">
                         <div class="testimonial-body">
                           <p itemprop="description">{!! nl2br($testimonial->comment) !!}</p>
@@ -262,7 +257,7 @@
                             <span>{{ $testimonial->user_name }}</span><small><em>|</em>{{ $testimonial->testimonial_by }}</small>
                           </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             @endforeach
           </div>
