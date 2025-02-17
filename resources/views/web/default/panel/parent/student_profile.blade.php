@@ -78,7 +78,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 		<div class="info-media d-flex align-items-center flex-wrap">
 			<span class="media-box">
 				<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-					<img src="{{$user->getAvatar()}}" alt="">
+					<img src="{{$user->getAvatar()}}" alt="{{$user->getAvatar()}}">
 				</a>
 			</span>
 			<h2 class="info-title font-weight-500">
@@ -106,7 +106,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<strong class="d-block font-weight-500">{{$user->get_first_name()}}</strong>
 								</span>
 								<span class="edit-icon d-inline-flex align-items-center">
-									<img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
@@ -118,7 +118,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<strong class="d-block font-weight-500">{{$user->get_last_name()}}</strong>
 								</span>
 								<span class="edit-icon d-inline-flex align-items-center">
-									<img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
@@ -130,7 +130,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<strong class="d-block font-weight-500">{{$user->display_name}}</strong>
 								</span>
 								<span class="edit-icon d-inline-flex align-items-center">
-									<img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
@@ -142,7 +142,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<strong class="d-block font-weight-500">{{$user->user_preference}}</strong>
 								</span>
 								<span class="edit-icon d-inline-flex align-items-center">
-									<img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
@@ -154,7 +154,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<strong class="d-block font-weight-500">{{isset($user->userYear->id )? $user->userYear->getTitleAttribute() : ''}}</strong>
 								</span>
 								<span class="edit-icon d-inline-flex align-items-center">
-									<img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
@@ -170,7 +170,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								<div class="form-group">
 									<span class="fomr-label">Student's first name</span>
 									<div class="input-field">
-										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
 										<input type="text" class="rurera-req-field" placeholder="First Name" name="first_name" value="{{$user->get_first_name()}}">
 									</div>
 								</div>
@@ -180,7 +180,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								<div class="form-group">
 									<span class="fomr-label">Student's last name</span>
 									<div class="input-field">
-										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
 										<input type="text" class="rurera-req-field" placeholder="Last name" name="last_name" value="{{$user->get_last_name()}}">
 									</div>
 								</div>
@@ -191,7 +191,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 								<div class="form-group">
 									<span class="fomr-label">Display name</span>
 									<div class="input-field">
-										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
 										<input type="text" class="rurera-req-field" placeholder="Display name" name="display_name" value="{{($user->display_name != '')? $user->display_name : $user->get_first_name().' '.$user->get_last_name()}}">
 									</div>
 								</div>
@@ -262,7 +262,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<strong class="d-block font-weight-500">{{isset($user->userSchoolPreffernce1->title)? $user->userSchoolPreffernce1->title : '-'}}</strong>
 								</span>
 								<span class="edit-icon d-inline-flex align-items-center">
-									<img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
@@ -274,7 +274,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<strong class="d-block font-weight-500">{{isset($user->userSchoolPreffernce1->title)? $user->userSchoolPreffernce1->title : '-'}} {{($user->school_preference_1_date != '')? '( '.dateTimeFormat($user->school_preference_1_date, 'j M Y').' )' : ''}} </strong>
 								</span>
 								<span class="edit-icon d-inline-flex align-items-center">
-									<img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
@@ -287,7 +287,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<strong class="d-block font-weight-500">{{isset( $user->userSchoolPreffernce2->title )? $user->userSchoolPreffernce2->title : '-'}} {{($user->school_preference_2_date != '')? '( '.dateTimeFormat($user->school_preference_2_date, 'j M Y').' )' : ''}} </strong>
 								</span>
 								<span class="edit-icon d-inline-flex align-items-center">
-									<img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
@@ -299,7 +299,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 									<strong class="d-block font-weight-500">{{isset( $user->userSchoolPreffernce3->title )? $user->userSchoolPreffernce3->title : '-'}} {{($user->school_preference_3_date != '')? '( '.dateTimeFormat($user->school_preference_3_date, 'j M Y').' )' : ''}} </strong>
 								</span>
 								<span class="edit-icon d-inline-flex align-items-center">
-									<img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
 									<em class="font-weight-500">Edit</em>
 								</span>
 							</a>
