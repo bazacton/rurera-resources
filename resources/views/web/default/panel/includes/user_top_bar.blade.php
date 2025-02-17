@@ -33,7 +33,7 @@
                             <i class="far fa-user"></i>
                         </div>
                         <div class="dropdown-item-desc">
-                            {{ $unreadNotification->title }}
+                            <span class="notifications-lable">{{ $unreadNotification->title }}</span>
                             <div class="time text-primary">{{ dateTimeFormat($unreadNotification->created_at,'Y M j | H:i') }}</div>
                         </div>
                     </a>
