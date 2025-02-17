@@ -74,576 +74,576 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
     }
 </style>
 <div class="user-detail user-view-profile">
-                <div class="detail-header-profile mb-25 pb-25">
-                    <div class="info-media d-flex align-items-center flex-wrap">
-                        <span class="media-box">
-							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between">
-								<img src="{{$user->getAvatar()}}" alt="{{$user->getAvatar()}}">
+	<div class="detail-header-profile mb-25 pb-25">
+		<div class="info-media d-flex align-items-center flex-wrap">
+			<span class="media-box">
+				<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between">
+					<img src="{{$user->getAvatar()}}" alt="{{$user->getAvatar()}}">
+				</a>
+			</span>
+			<h2 class="info-title font-weight-500">
+				{{$user->get_full_name()}}
+			</h2>
+		</div>
+	</div>
+	<div class="detail-body">
+	
+		<div class="row mb-50">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-12">
+				<div class="info-text">
+					<h3 class="font-18 font-weight-500 mb-5">Account Overview</h3>
+					<span class="font-16">Some basic information that we need to know about student.</span>
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-8 col-sm-12 col-12">
+				<h2 class="font-16 font-weight-500 mb-5 inner-heading">Account Overview</h2>
+				<div class="edit-info-list">
+					<ul class="profile-view-data">
+						<li>
+							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+								<span class="info-list-label font-16">
+									First Name
+									<strong class="d-block font-weight-500">{{$user->get_first_name()}}</strong>
+								</span>
+								<span class="edit-icon d-inline-flex align-items-center">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
+									<em class="font-weight-500">Edit</em>
+								</span>
 							</a>
-                        </span>
-                        <h2 class="info-title font-weight-500">
-                            {{$user->get_full_name()}}
-                        </h2>
-                    </div>
-                </div>
-                <div class="detail-body">
-				
-                    <div class="row mb-50">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-							<div class="info-text">
-								<h3 class="font-18 font-weight-500 mb-5">Account Overview</h3>
-								<span class="font-16">Some basic information that we need to know about student.</span>
-							</div>
-						</div>
-						<div class="col-lg-8 col-md-8 col-sm-12 col-12">
-							<h2 class="font-16 font-weight-500 mb-5 inner-heading">Account Overview</h2>
-                            <div class="edit-info-list">
-                                <ul class="profile-view-data">
-									<li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                First Name
-                                                <strong class="d-block font-weight-500">{{$user->get_first_name()}}</strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
-                                    </li>
-									<li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                Last name
-                                                <strong class="d-block font-weight-500">{{$user->get_last_name()}}</strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                Display name
-                                                <strong class="d-block font-weight-500">{{$user->display_name}}</strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
-                                    </li>
-									 <li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                Preference
-                                                <strong class="d-block font-weight-500">{{$user->user_preference}}</strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
-                                    </li>
-									 <li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                Year Group
-                                                <strong class="d-block font-weight-500">{{isset($user->userYear->id )? $user->userYear->getTitleAttribute() : ''}}</strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-								<div class="edit-profile edit-profile-block mt-10 rurera-hide">
-								 <form class="child-edit-form" method="post" action="javascript:;">
-									{{ csrf_field() }}
-									<div class="row">
-										<div class="col-6 col-lg-6 col-md-6 form-group">
-											<div class="form-group">
-												<span class="fomr-label">Student's first name</span>
-												<div class="input-field">
-													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
-													<input type="text" class="rurera-req-field" placeholder="First Name" name="first_name" value="{{$user->get_first_name()}}">
-												</div>
-											</div>
-										</div>
-										<div class="col-6 col-lg-6 col-md-6 form-group">
-											<div class="form-group">
-												<span class="fomr-label">Student's last name</span>
-												<div class="input-field">
-													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
-													<input type="text" class="rurera-req-field" placeholder="Last name" name="last_name" value="{{$user->get_last_name()}}">
-												</div>
-											</div>
-										</div>
-										
-										
-										<div class="col-6 col-lg-6 col-md-6 form-group">
-											<div class="form-group">
-												<span class="fomr-label">Display name</span>
-												<div class="input-field">
-													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
-													<input type="text" class="rurera-req-field" placeholder="Display name" name="display_name" value="{{($user->display_name != '')? $user->display_name : $user->get_first_name().' '.$user->get_last_name()}}">
-												</div>
-											</div>
-										</div>
-										
-										
-										<div class="col-6 col-lg-6 col-md-6 form-group">
-											<label>Preference</label>
-											<div class="select-field">
-												<select class="form-control rurera-req-field" name="user_preference">
-													<option value="male" {{($user->user_preference == 'male' || $user->user_preference == '')? 'selected' : ''}}>Male</option>
-													<option value="female" {{($user->user_preference == 'female')? 'selected' : ''}}>Female</option>
-												</select>
-											</div>
-										</div>
-										<div class="col-12 col-lg-12 col-md-12 form-group">
-											<label>Year Group</label>
-											<div class="select-field">
-												<select class="rurera-req-field" name="year_id">
-												  <option {{ !empty($trend) ?
-												  '' : 'selected' }} disabled>Choose Year Group</option>
-
-												  @foreach($categories as $category)
-												  @if(!empty($category->subCategories) and count($category->subCategories))
-												  <optgroup label="{{  $category->title }}">
-													  @foreach($category->subCategories as $subCategory)
-													  <option value="{{ $subCategory->id }}" @if(!empty($user) and $user->year_id == $subCategory->id) selected="selected" @endif>{{
-														  $subCategory->title }}
-													  </option>
-													  @endforeach
-												  </optgroup>
-												  @else
-												  <option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($user)
-														  and $user->year_id == $subCategory->id) selected="selected" @endif>{{
-													  $category->title }}
-												  </option>
-												  @endif
-												  @endforeach
-											  </select>
-											</div>
-										</div>
+						</li>
+						<li>
+							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+								<span class="info-list-label font-16">
+									Last name
+									<strong class="d-block font-weight-500">{{$user->get_last_name()}}</strong>
+								</span>
+								<span class="edit-icon d-inline-flex align-items-center">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
+									<em class="font-weight-500">Edit</em>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+								<span class="info-list-label font-16">
+									Display name
+									<strong class="d-block font-weight-500">{{$user->display_name}}</strong>
+								</span>
+								<span class="edit-icon d-inline-flex align-items-center">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
+									<em class="font-weight-500">Edit</em>
+								</span>
+							</a>
+						</li>
+							<li>
+							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+								<span class="info-list-label font-16">
+									Preference
+									<strong class="d-block font-weight-500">{{$user->user_preference}}</strong>
+								</span>
+								<span class="edit-icon d-inline-flex align-items-center">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
+									<em class="font-weight-500">Edit</em>
+								</span>
+							</a>
+						</li>
+							<li>
+							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+								<span class="info-list-label font-16">
+									Year Group
+									<strong class="d-block font-weight-500">{{isset($user->userYear->id )? $user->userYear->getTitleAttribute() : ''}}</strong>
+								</span>
+								<span class="edit-icon d-inline-flex align-items-center">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
+									<em class="font-weight-500">Edit</em>
+								</span>
+							</a>
+						</li>
+					</ul>
+					<div class="edit-profile edit-profile-block mt-10 rurera-hide">
+						<form class="child-edit-form" method="post" action="javascript:;">
+						{{ csrf_field() }}
+						<div class="row">
+							<div class="col-6 col-lg-6 col-md-6 form-group">
+								<div class="form-group">
+									<span class="fomr-label">Student's first name</span>
+									<div class="input-field">
+										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+										<input type="text" class="rurera-req-field" placeholder="First Name" name="first_name" value="{{$user->get_first_name()}}">
 									</div>
-									<div class="edit-profile-controls">
-										<input type="hidden" name="user_id" value="{{$user->id}}">
-										<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
-										<a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
-                                    </div>
-									</form>
 								</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-50">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-							<div class="info-text">
-								<h3 class="font-18 font-weight-500 mb-5">School Preference</h3>
-								<span class="font-16">List the schools with exam date you're applying for in order of preference.</span>
 							</div>
-						</div>
-						<div class="col-lg-8 col-md-8 col-sm-12 col-12">
-							<h2 class="font-16 font-weight-500 mb-5 inner-heading">School Preference</h2>
-                            <div class="edit-info-list">
-                                <ul class="profile-view-data">
-									<li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                Test Prep School Choice
-                                                <strong class="d-block font-weight-500">{{isset($user->userSchoolPreffernce1->title)? $user->userSchoolPreffernce1->title : '-'}}</strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                School Preference 1
-                                                <strong class="d-block font-weight-500">{{isset($user->userSchoolPreffernce1->title)? $user->userSchoolPreffernce1->title : '-'}} {{($user->school_preference_1_date != '')? '( '.dateTimeFormat($user->school_preference_1_date, 'j M Y').' )' : ''}} </strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
-                                    </li>
-									
-                                    <li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                School Preference 2
-                                                <strong class="d-block font-weight-500">{{isset( $user->userSchoolPreffernce2->title )? $user->userSchoolPreffernce2->title : '-'}} {{($user->school_preference_2_date != '')? '( '.dateTimeFormat($user->school_preference_2_date, 'j M Y').' )' : ''}} </strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                School Preference 3
-                                                <strong class="d-block font-weight-500">{{isset( $user->userSchoolPreffernce3->title )? $user->userSchoolPreffernce3->title : '-'}} {{($user->school_preference_3_date != '')? '( '.dateTimeFormat($user->school_preference_3_date, 'j M Y').' )' : ''}} </strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-								
-								<div class="edit-profile edit-profile-block mt-10 rurera-hide">
-								<form class="child-edit-form" method="post" action="javascript:;">
-									{{ csrf_field() }}
-									<div class="row">
-										<div class="col-6 col-lg-6 col-md-6 form-group">
-											<label>Test Prep School Choice</label>
-											<div class="select-field">
-												<select class="form-control rurera-req-field" name="test_prep_school">
-													<option value="Not sure" selected>Not sure</option>
-													<option value="Independent schools">Independent schools</option>
-													<option value="Grammar schools">Grammar schools</option>
-													<option value="Independent & grammar schools">Independent & grammar schools</option>
-												</select>
-											</div>
-										</div>
-										<div class="col-6 col-lg-6 col-md-6 form-group">
-											<label>Preference 1</label>
-											<div class="select-field">
-												<select class="form-control preference_field rurera-req-field" name="school_preference_1">
-													<option value="">Select Preference</option>
-													@foreach( $schools as $schoolObj)
-														<option value="{{$schoolObj->id}}" {{($schoolObj->id == $user->school_preference_1)? 'selected' : ''}}>{{$schoolObj->title}}</option>
-													@endforeach
-												</select>
-											</div>
-										</div>
-										<div class="col-6 col-lg-6 col-md-6 form-group">
-											<div class="form-group">
-												<span class="fomr-label">Preference 1 Date</span>
-												<div class="input-field">
-													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
-													<input type="text" class="preference-date rureradatepicker" min="{{date('Y-m-d')}}" placeholder="Preference 1 Date" name="school_preference_1_date" value="{{($user->school_preference_1_date != '')? dateTimeFormatNumeric($user->school_preference_1_date, 'Y-m-d', 'numeric') : ''}}">
-												</div>
-											</div>
-										</div>
-										<div class="col-6 col-lg-6 col-md-6 form-group">
-											<label>Preference 2</label>
-											<div class="select-field">
-												<select class="form-control preference_field" name="school_preference_2">
-													<option value="">Select Preference</option>
-													@foreach( $schools as $schoolObj)
-														<option value="{{$schoolObj->id}}" {{($schoolObj->id == $user->school_preference_2)? 'selected' : ''}}>{{$schoolObj->title}}</option>
-													@endforeach
-												</select>
-											</div>
-										</div>
-										<div class="col-6 col-lg-6 col-md-6 form-group">
-											<div class="form-group">
-												<span class="fomr-label">Preference 2 Date</span>
-												<div class="input-field">
-													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
-													<input type="text" class="preference-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}" placeholder="Preference 2 Date" name="school_preference_2_date" value="{{($user->school_preference_2_date != '')? dateTimeFormatNumeric($user->school_preference_2_date, 'Y-m-d', 'numeric') : ''}}">
-												</div>
-											</div>
-										</div>
-										<div class="col-6 col-lg-6 col-md-6 form-group">
-											<label>Preference 3</label>
-											<div class="select-field">
-												<select class="form-control preference_field rurera-req-field" name="school_preference_3">
-													<option value="">Select Preference</option>
-													@foreach( $schools as $schoolObj)
-														<option value="{{$schoolObj->id}}" {{($schoolObj->id == $user->school_preference_3)? 'selected' : ''}}>{{$schoolObj->title}}</option>
-													@endforeach
-												</select>
-											</div>
-										</div>
-										<div class="col-6 col-lg-6 col-md-6 form-group">
-											<div class="form-group">
-												<span class="fomr-label">Preference 3 Date</span>
-												<div class="input-field">
-													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
-													<input type="text" class="preference-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}" placeholder="Preference 3 Date" name="school_preference_3_date" value="{{($user->school_preference_3_date != '')? dateTimeFormatNumeric($user->school_preference_3_date, 'Y-m-d', 'numeric') : ''}}">
-												</div>
-											</div>
-										</div>
-									</div>	
-									<div class="edit-profile-controls">
-										<input type="hidden" name="user_id" value="{{$user->id}}">
-										<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
-										<a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
-                                    </div>
-									</form>
+							<div class="col-6 col-lg-6 col-md-6 form-group">
+								<div class="form-group">
+									<span class="fomr-label">Student's last name</span>
+									<div class="input-field">
+										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+										<input type="text" class="rurera-req-field" placeholder="Last name" name="last_name" value="{{$user->get_last_name()}}">
+									</div>
 								</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-50">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-							<div class="info-text">
-								<h3 class="font-18 font-weight-500 mb-5">Display Settings</h3>
-								<span class="font-16">Display settings control the layout and behavior of the student panel. You can toggle the visibility of different elements to customize what students can see.</span>
 							</div>
-						</div>
-						<div class="col-lg-8 col-md-8 col-sm-12 col-12">
-							<h2 class="font-16 font-weight-500 mb-5 inner-heading">Display Settings</h2>
-                            <div class="edit-info-list">
-                                <ul class="profile-view-data">
-                                    <li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                Hide Timestables
-                                                <strong class="d-block font-weight-500">{{$user->hide_timestables == 1 ? 'Yes' : 'No'}}</strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                Hide Spellings
-                                                <strong class="d-block font-weight-500">{{$user->hide_spellings == 1 ? 'Yes' : 'No'}}</strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                Hide Games
-                                                <strong class="d-block font-weight-500">{{$user->hide_games == 1 ? 'Yes' : 'No'}}</strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                Hide Books
-                                                <strong class="d-block font-weight-500">{{$user->hide_books == 1 ? 'Yes' : 'No'}}</strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-								<div class="edit-profile edit-profile-block mt-10 rurera-hide">
-								<form class="child-edit-form" method="post" action="javascript:;">
-									{{ csrf_field() }}
-									<div class="row">
-										<div class="col-6 col-sm-12 col-md-6 col-lg-6">
-											<div class="form-group custom-switches-stacked mb-15">
-												<label class="custom-switch pl-0">
-													<input type="checkbox" name="hide_timestables"
-														id="hide_timestables_field" value="1" class="custom-switch-input"  {{($user->hide_timestables == 1)? 'checked' : ''}}/>
-													<span class="custom-switch-indicator"></span>
-													<label class="custom-switch-description mb-0 cursor-pointer"
-														for="hide_timestables_field"><span>Hide Timestables</span></label>
-												</label>
-											</div>
-										</div>
-										
-										<div class="col-6 col-sm-12 col-md-6 col-lg-6">
-											
-											<div class="form-group custom-switches-stacked mb-15">
-												<label class="custom-switch pl-0">
-													<input type="checkbox" name="hide_spellings"
-														   id="hide_spellings_field" value="1" class="custom-switch-input"  {{($user->hide_spellings == 1)? 'checked' : ''}}/>
-													<span class="custom-switch-indicator"></span>
-													<label class="custom-switch-description mb-0 cursor-pointer"
-														   for="hide_spellings_field"><span>Hide Spellings</span></label>
-												</label>
-											</div>
-										</div>
-										
-										<div class="col-6 col-sm-12 col-md-6 col-lg-6">
-											
-											<div class="form-group custom-switches-stacked mb-15">
-												<label class="custom-switch pl-0">
-													<input type="checkbox" name="hide_games"
-														   id="hide_games_field" value="1" class="custom-switch-input"  {{($user->hide_games == 1)? 'checked' : ''}}/>
-													<span class="custom-switch-indicator"></span>
-													<label class="custom-switch-description mb-0 cursor-pointer"
-														   for="hide_games_field"><span>Hide Games</span></label>
-												</label>
-											</div>
-										</div>
-										
-										<div class="col-6 col-sm-12 col-md-6 col-lg-6">
-											<div class="form-group custom-switches-stacked mb-15">
-												<label class="custom-switch pl-0">
-													<input type="checkbox" name="hide_books"
-														   id="hide_books_field" value="1" class="custom-switch-input"  {{($user->hide_books == 1)? 'checked' : ''}}/>
-													<span class="custom-switch-indicator"></span>
-													<label class="custom-switch-description mb-0 cursor-pointer"
-														   for="hide_books_field"><span>Hide Books</span></label>
-												</label>
-											</div>
-										</div>
-										</div>
-										
-										<div class="edit-profile-controls">
-											<input type="hidden" name="user_id" value="{{$user->id}}">
-											<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
-											<a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
-										</div>
-									</form>
-								</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-0">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-							<div class="info-text">
-								<h3 class="font-18 font-weight-500 mb-5">Login Details</h3>
-								<span class="font-16">login credential can be changed,Set a unique password to protect student account. Don't forget to change it from time to time.</span>
-							</div>
-						</div>
-						<div class="col-lg-8 col-md-8 col-sm-12 col-12">
-							<div class="edit-info-list">
-								<h2 class="font-16 font-weight-500 mb-5 inner-heading">Login Details
-									<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between">
-										<span class="edit-icon d-inline-flex align-items-center float-right pr-15">
-											<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
-											<em class="font-weight-500">Edit</em>
-										</span>
-									</a>
-								</h2>
 							
-								<div class="student-profile-holder profile-view-data">
-								<div class="profile-inner">
-									<div class="profile-header">
-										<h3>{{$user->get_full_name()}}</h3>
-										<a href="#" class="student-qrCode"><img src="/store/1/default_images/qr-code.png" alt="qr-code"></a>
-									</div>
-									<div class="student-info">
-										<ul>
-											<li class="user-name">
-												<span>Username:</span> {{$user->username}}
-											</li>
-											<li>
-												<span>Login Pin:</span>
-												{{$user->login_pin}}
-											</li>
-											<li>
-												<span>Emoji:</span>
-												<div class="emoji-icons"> {!! $emoji_response !!}</div>
-											</li>
-											<li>
-												<span>Website:</span>
-												<a href="https://rurera.com">https://rurera.com</a>
-											</li>
-										</ul>
+							
+							<div class="col-6 col-lg-6 col-md-6 form-group">
+								<div class="form-group">
+									<span class="fomr-label">Display name</span>
+									<div class="input-field">
+										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+										<input type="text" class="rurera-req-field" placeholder="Display name" name="display_name" value="{{($user->display_name != '')? $user->display_name : $user->get_first_name().' '.$user->get_last_name()}}">
 									</div>
 								</div>
-								<a href="javascript:;" class="reset-btn regenerate-emoji" data-user_id="{{$user->id}}"><span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>Reset Emoji</a>
-								<a href="javascript:;" class="reset-btn regenerate-pin" data-user_id="{{$user->id}}"><span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>Reset Pin</a>
-											
 							</div>
-							<div class="edit-profile edit-profile-block mt-10 rurera-hide">
-								 <form class="child-edit-form" method="post" action="javascript:;">
-									{{ csrf_field() }}
-									<div class="row">
-										<div class="col-6 col-lg-6 col-md-6 form-group">
-											<label>Username</label>
-											<div class="input-field">
-												<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
-												<input type="text" name="username" class="" placeholder="Username" value="{{$user->username}}">
-											</div>
-										</div>
-										<div class="col-6 col-lg-6 col-md-6 form-group">
-											<label>Password</label>
-											<div class="input-field">
-												<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
-												<input type="text" name="password" class="" placeholder="Password" value="">
-											</div>
-										</div>
-									</div>
-									
-									<div class="edit-profile-controls">
-										<input type="hidden" name="user_id" value="{{$user->id}}">
-										<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
-										<a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
-                                    </div>
-								</form>
-                       		</div>
-                        </div>
-                    </div>
-                    </div>
-					
-					<div class="row mb-50">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-							<div class="info-text">
-								<h3 class="font-18 font-weight-500 mb-5">Subscription Details</h3>
-								<span class="font-16">Some information we need to know about you, and to process legal matters.</span>
+							
+							
+							<div class="col-6 col-lg-6 col-md-6 form-group">
+								<label>Preference</label>
+								<div class="select-field">
+									<select class="form-control rurera-req-field" name="user_preference">
+										<option value="male" {{($user->user_preference == 'male' || $user->user_preference == '')? 'selected' : ''}}>Male</option>
+										<option value="female" {{($user->user_preference == 'female')? 'selected' : ''}}>Female</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-12 col-lg-12 col-md-12 form-group">
+								<label>Year Group</label>
+								<div class="select-field">
+									<select class="rurera-req-field" name="year_id">
+										<option {{ !empty($trend) ?
+										'' : 'selected' }} disabled>Choose Year Group</option>
+
+										@foreach($categories as $category)
+										@if(!empty($category->subCategories) and count($category->subCategories))
+										<optgroup label="{{  $category->title }}">
+											@foreach($category->subCategories as $subCategory)
+											<option value="{{ $subCategory->id }}" @if(!empty($user) and $user->year_id == $subCategory->id) selected="selected" @endif>{{
+												$subCategory->title }}
+											</option>
+											@endforeach
+										</optgroup>
+										@else
+										<option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($user)
+												and $user->year_id == $subCategory->id) selected="selected" @endif>{{
+											$category->title }}
+										</option>
+										@endif
+										@endforeach
+									</select>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-8 col-md-8 col-sm-12 col-12">
-							<h2 class="font-16 font-weight-500 mb-5 inner-heading">Subscription Details</h2>
-                            <div class="edit-info-list">
-								@if( !isset( $user->userSubscriptions->id))<a href="javascript:;" class="membership-btn font-16 float-right package-payment-btn subscription-modal" data-type="child_payment" data-id="{{$user->id}}">+ Subscription</a>@endif
-								@if( isset( $user->userSubscriptions->id))
-										<div class="subscribe-plan active current-plan position-relative d-flex flex-column rounded-lg p-20 mb-10 mt-10">
-											<div class="package-block">
-												<span class="subscribe-icon"><img src="{{ $subscribe->icon }}" height="auto" width="auto" alt="Box image"/></span>
-												<div class="subscribe-title">
-													<h3 itemprop="title" class="font-24 font-weight-500">{{ $subscribe->title }}</h3>
-												</div>
-											</div>
-											<div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
-												<span itemprop="price" class="font-36 line-height-1 packages-prices" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($subscribe->price) }}</span>
-												<span class="yearly-price">{{ addCurrencyToPrice($subscribe->price) }} / {{(isset( $user->userSubscriptions->subscribe_for ) && $user->userSubscriptions->subscribe_for == 12)? 'Monthly' : 'Monthly'}}</span>
-												<span class="yearly-price">Expiry: {{isset( $user->userSubscriptions->expiry_at )? dateTimeFormat($user->userSubscriptions->expiry_at, 'j M Y') : '-'}}</span>
-														
-											</div>
-											<div class="row">
-												<div class="col-lg-6 col-md-6 col-sm-12"></div>
-												<div class="col-lg-6 col-md-6 col-sm-12">
-													<a href="javascript:;" class="package-update-btn btn w-100 subscription-modal" data-type="update_package" data-id="{{$user->id}}">Update Subscription
-													</a>
-												</div>
-											</div>
-										</div>
-									@endif
-									
-									@if(isset( $user->userSubscriptions->subscribe ) && $user->userSubscriptions->is_cancelled == 0 )	
-									<a href="javascript:;" class="reset-btn package-payment-btn cancel-subscription-modal" data-type="child_payment" data-id="{{$user->id}}">
-										<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>
-												  &nbsp;&nbsp;Cancel Subscription
-											&nbsp;&nbsp;&nbsp;&nbsp;
-										</a>
-									@else
-										@if(isset( $user->userSubscriptions->id))
-										<div class="cancel-message">Subscription has been canceled. You will still be able to use the package till its expiry and wont be charged for the renwal.</div>
-										@endif
-									@endif
-									
-									
+						<div class="edit-profile-controls">
+							<input type="hidden" name="user_id" value="{{$user->id}}">
+							<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
+							<a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mb-50">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-12">
+				<div class="info-text">
+					<h3 class="font-18 font-weight-500 mb-5">School Preference</h3>
+					<span class="font-16">List the schools with exam date you're applying for in order of preference.</span>
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-8 col-sm-12 col-12">
+				<h2 class="font-16 font-weight-500 mb-5 inner-heading">School Preference</h2>
+				<div class="edit-info-list">
+					<ul class="profile-view-data">
+						<li>
+							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+								<span class="info-list-label font-16">
+									Test Prep School Choice
+									<strong class="d-block font-weight-500">{{isset($user->userSchoolPreffernce1->title)? $user->userSchoolPreffernce1->title : '-'}}</strong>
+								</span>
+								<span class="edit-icon d-inline-flex align-items-center">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
+									<em class="font-weight-500">Edit</em>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+								<span class="info-list-label font-16">
+									School Preference 1
+									<strong class="d-block font-weight-500">{{isset($user->userSchoolPreffernce1->title)? $user->userSchoolPreffernce1->title : '-'}} {{($user->school_preference_1_date != '')? '( '.dateTimeFormat($user->school_preference_1_date, 'j M Y').' )' : ''}} </strong>
+								</span>
+								<span class="edit-icon d-inline-flex align-items-center">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
+									<em class="font-weight-500">Edit</em>
+								</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+								<span class="info-list-label font-16">
+									School Preference 2
+									<strong class="d-block font-weight-500">{{isset( $user->userSchoolPreffernce2->title )? $user->userSchoolPreffernce2->title : '-'}} {{($user->school_preference_2_date != '')? '( '.dateTimeFormat($user->school_preference_2_date, 'j M Y').' )' : ''}} </strong>
+								</span>
+								<span class="edit-icon d-inline-flex align-items-center">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
+									<em class="font-weight-500">Edit</em>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+								<span class="info-list-label font-16">
+									School Preference 3
+									<strong class="d-block font-weight-500">{{isset( $user->userSchoolPreffernce3->title )? $user->userSchoolPreffernce3->title : '-'}} {{($user->school_preference_3_date != '')? '( '.dateTimeFormat($user->school_preference_3_date, 'j M Y').' )' : ''}} </strong>
+								</span>
+								<span class="edit-icon d-inline-flex align-items-center">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
+									<em class="font-weight-500">Edit</em>
+								</span>
+							</a>
+						</li>
+					</ul>
+					
+					<div class="edit-profile edit-profile-block mt-10 rurera-hide">
+					<form class="child-edit-form" method="post" action="javascript:;">
+						{{ csrf_field() }}
+						<div class="row">
+							<div class="col-6 col-lg-6 col-md-6 form-group">
+								<label>Test Prep School Choice</label>
+								<div class="select-field">
+									<select class="form-control rurera-req-field" name="test_prep_school">
+										<option value="Not sure" selected>Not sure</option>
+										<option value="Independent schools">Independent schools</option>
+										<option value="Grammar schools">Grammar schools</option>
+										<option value="Independent & grammar schools">Independent & grammar schools</option>
+									</select>
 								</div>
+							</div>
+							<div class="col-6 col-lg-6 col-md-6 form-group">
+								<label>Preference 1</label>
+								<div class="select-field">
+									<select class="form-control preference_field rurera-req-field" name="school_preference_1">
+										<option value="">Select Preference</option>
+										@foreach( $schools as $schoolObj)
+											<option value="{{$schoolObj->id}}" {{($schoolObj->id == $user->school_preference_1)? 'selected' : ''}}>{{$schoolObj->title}}</option>
+										@endforeach
+									</select>
+								</div>
+							</div>
+							<div class="col-6 col-lg-6 col-md-6 form-group">
+								<div class="form-group">
+									<span class="fomr-label">Preference 1 Date</span>
+									<div class="input-field">
+										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+										<input type="text" class="preference-date rureradatepicker" min="{{date('Y-m-d')}}" placeholder="Preference 1 Date" name="school_preference_1_date" value="{{($user->school_preference_1_date != '')? dateTimeFormatNumeric($user->school_preference_1_date, 'Y-m-d', 'numeric') : ''}}">
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-lg-6 col-md-6 form-group">
+								<label>Preference 2</label>
+								<div class="select-field">
+									<select class="form-control preference_field" name="school_preference_2">
+										<option value="">Select Preference</option>
+										@foreach( $schools as $schoolObj)
+											<option value="{{$schoolObj->id}}" {{($schoolObj->id == $user->school_preference_2)? 'selected' : ''}}>{{$schoolObj->title}}</option>
+										@endforeach
+									</select>
+								</div>
+							</div>
+							<div class="col-6 col-lg-6 col-md-6 form-group">
+								<div class="form-group">
+									<span class="fomr-label">Preference 2 Date</span>
+									<div class="input-field">
+										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+										<input type="text" class="preference-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}" placeholder="Preference 2 Date" name="school_preference_2_date" value="{{($user->school_preference_2_date != '')? dateTimeFormatNumeric($user->school_preference_2_date, 'Y-m-d', 'numeric') : ''}}">
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-lg-6 col-md-6 form-group">
+								<label>Preference 3</label>
+								<div class="select-field">
+									<select class="form-control preference_field rurera-req-field" name="school_preference_3">
+										<option value="">Select Preference</option>
+										@foreach( $schools as $schoolObj)
+											<option value="{{$schoolObj->id}}" {{($schoolObj->id == $user->school_preference_3)? 'selected' : ''}}>{{$schoolObj->title}}</option>
+										@endforeach
+									</select>
+								</div>
+							</div>
+							<div class="col-6 col-lg-6 col-md-6 form-group">
+								<div class="form-group">
+									<span class="fomr-label">Preference 3 Date</span>
+									<div class="input-field">
+										<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+										<input type="text" class="preference-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}" placeholder="Preference 3 Date" name="school_preference_3_date" value="{{($user->school_preference_3_date != '')? dateTimeFormatNumeric($user->school_preference_3_date, 'Y-m-d', 'numeric') : ''}}">
+									</div>
+								</div>
+							</div>
+						</div>	
+						<div class="edit-profile-controls">
+							<input type="hidden" name="user_id" value="{{$user->id}}">
+							<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
+							<a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mb-50">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-12">
+				<div class="info-text">
+					<h3 class="font-18 font-weight-500 mb-5">Display Settings</h3>
+					<span class="font-16">Display settings control the layout and behavior of the student panel. You can toggle the visibility of different elements to customize what students can see.</span>
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-8 col-sm-12 col-12">
+				<h2 class="font-16 font-weight-500 mb-5 inner-heading">Display Settings</h2>
+				<div class="edit-info-list">
+					<ul class="profile-view-data">
+						<li>
+							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+								<span class="info-list-label font-16">
+									Hide Timestables
+									<strong class="d-block font-weight-500">{{$user->hide_timestables == 1 ? 'Yes' : 'No'}}</strong>
+								</span>
+								<span class="edit-icon d-inline-flex align-items-center">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
+									<em class="font-weight-500">Edit</em>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+								<span class="info-list-label font-16">
+									Hide Spellings
+									<strong class="d-block font-weight-500">{{$user->hide_spellings == 1 ? 'Yes' : 'No'}}</strong>
+								</span>
+								<span class="edit-icon d-inline-flex align-items-center">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
+									<em class="font-weight-500">Edit</em>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+								<span class="info-list-label font-16">
+									Hide Games
+									<strong class="d-block font-weight-500">{{$user->hide_games == 1 ? 'Yes' : 'No'}}</strong>
+								</span>
+								<span class="edit-icon d-inline-flex align-items-center">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
+									<em class="font-weight-500">Edit</em>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+								<span class="info-list-label font-16">
+									Hide Books
+									<strong class="d-block font-weight-500">{{$user->hide_books == 1 ? 'Yes' : 'No'}}</strong>
+								</span>
+								<span class="edit-icon d-inline-flex align-items-center">
+									<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
+									<em class="font-weight-500">Edit</em>
+								</span>
+							</a>
+						</li>
+					</ul>
+					<div class="edit-profile edit-profile-block mt-10 rurera-hide">
+					<form class="child-edit-form" method="post" action="javascript:;">
+						{{ csrf_field() }}
+						<div class="row">
+							<div class="col-6 col-sm-12 col-md-6 col-lg-6">
+								<div class="form-group custom-switches-stacked mb-15">
+									<label class="custom-switch pl-0">
+										<input type="checkbox" name="hide_timestables"
+											id="hide_timestables_field" value="1" class="custom-switch-input"  {{($user->hide_timestables == 1)? 'checked' : ''}}/>
+										<span class="custom-switch-indicator"></span>
+										<label class="custom-switch-description mb-0 cursor-pointer"
+											for="hide_timestables_field"><span>Hide Timestables</span></label>
+									</label>
+								</div>
+							</div>
+							
+							<div class="col-6 col-sm-12 col-md-6 col-lg-6">
+								
+								<div class="form-group custom-switches-stacked mb-15">
+									<label class="custom-switch pl-0">
+										<input type="checkbox" name="hide_spellings"
+												id="hide_spellings_field" value="1" class="custom-switch-input"  {{($user->hide_spellings == 1)? 'checked' : ''}}/>
+										<span class="custom-switch-indicator"></span>
+										<label class="custom-switch-description mb-0 cursor-pointer"
+												for="hide_spellings_field"><span>Hide Spellings</span></label>
+									</label>
+								</div>
+							</div>
+							
+							<div class="col-6 col-sm-12 col-md-6 col-lg-6">
+								
+								<div class="form-group custom-switches-stacked mb-15">
+									<label class="custom-switch pl-0">
+										<input type="checkbox" name="hide_games"
+												id="hide_games_field" value="1" class="custom-switch-input"  {{($user->hide_games == 1)? 'checked' : ''}}/>
+										<span class="custom-switch-indicator"></span>
+										<label class="custom-switch-description mb-0 cursor-pointer"
+												for="hide_games_field"><span>Hide Games</span></label>
+									</label>
+								</div>
+							</div>
+							
+							<div class="col-6 col-sm-12 col-md-6 col-lg-6">
+								<div class="form-group custom-switches-stacked mb-15">
+									<label class="custom-switch pl-0">
+										<input type="checkbox" name="hide_books"
+												id="hide_books_field" value="1" class="custom-switch-input"  {{($user->hide_books == 1)? 'checked' : ''}}/>
+										<span class="custom-switch-indicator"></span>
+										<label class="custom-switch-description mb-0 cursor-pointer"
+												for="hide_books_field"><span>Hide Books</span></label>
+									</label>
+								</div>
+							</div>
+							</div>
+							
+							<div class="edit-profile-controls">
+								<input type="hidden" name="user_id" value="{{$user->id}}">
+								<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
+								<a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mb-0">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-12">
+				<div class="info-text">
+					<h3 class="font-18 font-weight-500 mb-5">Login Details</h3>
+					<span class="font-16">login credential can be changed,Set a unique password to protect student account. Don't forget to change it from time to time.</span>
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-8 col-sm-12 col-12">
+				<div class="edit-info-list">
+					<h2 class="font-16 font-weight-500 mb-5 inner-heading">Login Details
+						<a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between">
+							<span class="edit-icon d-inline-flex align-items-center float-right pr-15">
+								<img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
+								<em class="font-weight-500">Edit</em>
+							</span>
+						</a>
+					</h2>
+				
+					<div class="student-profile-holder profile-view-data">
+					<div class="profile-inner">
+						<div class="profile-header">
+							<h3>{{$user->get_full_name()}}</h3>
+							<a href="#" class="student-qrCode"><img src="/store/1/default_images/qr-code.png" alt="qr-code"></a>
+						</div>
+						<div class="student-info">
+							<ul>
+								<li class="user-name">
+									<span>Username:</span> {{$user->username}}
+								</li>
+								<li>
+									<span>Login Pin:</span>
+									{{$user->login_pin}}
+								</li>
+								<li>
+									<span>Emoji:</span>
+									<div class="emoji-icons"> {!! $emoji_response !!}</div>
+								</li>
+								<li>
+									<span>Website:</span>
+									<a href="https://rurera.com">https://rurera.com</a>
+								</li>
+							</ul>
 						</div>
 					</div>
+					<a href="javascript:;" class="reset-btn regenerate-emoji" data-user_id="{{$user->id}}"><span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>Reset Emoji</a>
+					<a href="javascript:;" class="reset-btn regenerate-pin" data-user_id="{{$user->id}}"><span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>Reset Pin</a>
+								
+				</div>
+				<div class="edit-profile edit-profile-block mt-10 rurera-hide">
+						<form class="child-edit-form" method="post" action="javascript:;">
+						{{ csrf_field() }}
+						<div class="row">
+							<div class="col-6 col-lg-6 col-md-6 form-group">
+								<label>Username</label>
+								<div class="input-field">
+									<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+									<input type="text" name="username" class="" placeholder="Username" value="{{$user->username}}">
+								</div>
+							</div>
+							<div class="col-6 col-lg-6 col-md-6 form-group">
+								<label>Password</label>
+								<div class="input-field">
+									<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
+									<input type="text" name="password" class="" placeholder="Password" value="">
+								</div>
+							</div>
+						</div>
+						
+						<div class="edit-profile-controls">
+							<input type="hidden" name="user_id" value="{{$user->id}}">
+							<a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
+							<a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		<div class="row mb-50">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-12">
+				<div class="info-text">
+					<h3 class="font-18 font-weight-500 mb-5">Subscription Details</h3>
+					<span class="font-16">Some information we need to know about you, and to process legal matters.</span>
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-8 col-sm-12 col-12">
+				<h2 class="font-16 font-weight-500 mb-5 inner-heading">Subscription Details</h2>
+				<div class="edit-info-list">
+					@if( !isset( $user->userSubscriptions->id))<a href="javascript:;" class="membership-btn font-16 float-right package-payment-btn subscription-modal" data-type="child_payment" data-id="{{$user->id}}">+ Subscription</a>@endif
+					@if( isset( $user->userSubscriptions->id))
+						<div class="subscribe-plan active current-plan position-relative d-flex flex-column rounded-lg p-20 mb-10 mt-10">
+							<div class="package-block">
+								<span class="subscribe-icon"><img src="{{ $subscribe->icon }}" height="auto" width="auto" alt="Box image"/></span>
+								<div class="subscribe-title">
+									<h3 itemprop="title" class="font-24 font-weight-500">{{ $subscribe->title }}</h3>
+								</div>
+							</div>
+							<div class="d-flex align-items-start text-dark-charcoal mb-20 subscribe-price">
+								<span itemprop="price" class="font-36 line-height-1 packages-prices" data-package_price="{{$subscribe->price}}">{{ addCurrencyToPrice($subscribe->price) }}</span>
+								<span class="yearly-price">{{ addCurrencyToPrice($subscribe->price) }} / {{(isset( $user->userSubscriptions->subscribe_for ) && $user->userSubscriptions->subscribe_for == 12)? 'Monthly' : 'Monthly'}}</span>
+								<span class="yearly-price">Expiry: {{isset( $user->userSubscriptions->expiry_at )? dateTimeFormat($user->userSubscriptions->expiry_at, 'j M Y') : '-'}}</span>
+										
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-12"></div>
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<a href="javascript:;" class="package-update-btn btn w-100 subscription-modal" data-type="update_package" data-id="{{$user->id}}">Update Subscription
+									</a>
+								</div>
+							</div>
+						</div>
+					@endif
+					
+					@if(isset( $user->userSubscriptions->subscribe ) && $user->userSubscriptions->is_cancelled == 0 )	
+					<a href="javascript:;" class="reset-btn package-payment-btn cancel-subscription-modal" data-type="child_payment" data-id="{{$user->id}}">
+						<span class="icon-box"><img src="/assets/default/svgs/retry.svg" alt=""></span>
+									&nbsp;&nbsp;Cancel Subscription
+							&nbsp;&nbsp;&nbsp;&nbsp;
+						</a>
+					@else
+						@if(isset( $user->userSubscriptions->id))
+						<div class="cancel-message">Subscription has been canceled. You will still be able to use the package till its expiry and wont be charged for the renwal.</div>
+						@endif
+					@endif
+					
+					
+				</div>
+			</div>
+		</div>
 								
 								
 					
@@ -698,7 +698,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                 </div>
             </div>
 			@endif
-                </div>
+            </div>
             </div>
 			
 			<div class="col-12 user-edit-profile rurera-hide">
