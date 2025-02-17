@@ -99,44 +99,35 @@
                             <div class="form-section mb-20 text-left 223">
                                 <h2 class="section-title font-24">Select Type</h2>
                             </div>
-
-
                             <div class="radio-buttons justify-content-left mb-50">
                                 <label class="card-radio">
                                     <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type_check]"
                                         class="assignment_type_check" value="practice_test" data-tag_title="Set Practice" checked>
                                     <span class="radio-btn"><i class="las la-check"></i>
-                                                <div class="card-icon">
-                                                    <h3>Set Practice</h3>
-                                            </div>
-
-                                        </span>
+                                        <div class="card-icon">
+                                            <h3>Set Practice</h3>
+                                        </div>
+                                    </span>
                                 </label>
                                 <label class="card-radio">
                                     <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type_check]"
                                         class="assignment_type_check" value="mock_test" data-tag_title="Set Mock Test">
                                     <span class="radio-btn"><i class="las la-check"></i>
-                                                <div class="card-icon">
-                                                    <h3>Set Mock Test</h3>
-                                            </div>
-
-                                        </span>
+                                        <div class="card-icon">
+                                            <h3>Set Mock Test</h3>
+                                        </div>
+                                    </span>
                                 </label>
                             </div>
-
                         </div>
                     </div>
-                    
                     
                     <div class="years-group populated-data">
                         <div class="form-section mb-20 text-left 223">
                             <h2 class="section-title font-18 font-weight-bold">Select Type of Practice</h2>
                         </div>
                         <div class="form-group">
-
-
                             <div class="input-group">
-
                                 <div class="radio-buttons justify-content-left">
                                     <label class="card-radio practice-item-active" data-next_step="3">
                                         <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
@@ -149,7 +140,7 @@
                                     </span>
                                     </label>
                                     
-                                    <label class="card-radio  " data-next_step="3">
+                                    <label class="card-radio" data-next_step="3">
                                         <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                             class="assignment_topic_type_check" value="vocabulary" data-tag_title="Vocabulary">
                                         <span class="radio-btn"><i class="las la-check"></i>
@@ -165,9 +156,9 @@
                                         <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                             class="assignment_topic_type_check" value="timestables" data-tag_title="Timestables">
                                         <span class="radio-btn"><i class="las la-check"></i>
-                                            <div class="card-icon">
-                                                <img src="/assets/default/img/assignment-logo/timestables.png" height="65" width="98" alt="timestables">
-                                                <h3>Timestables</h3>
+                                        <div class="card-icon">
+                                            <img src="/assets/default/img/assignment-logo/timestables.png" height="65" width="98" alt="timestables">
+                                            <h3>Timestables</h3>
                                         </div>
 
                                         </span>
@@ -176,14 +167,14 @@
                                     <label class="card-radio " data-next_step="3">
                                     <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                         class="assignment_topic_type_check" value="mock_test" data-tag_title="Mock Test">
-                                    <span class="radio-btn"><i class="las la-check"></i>
-                                        <div class="card-icon">
-                                            <img src="/assets/default/img/assignment-logo/independent_exams.png">
-                                            <h3>Mock Test</h3>
-                                    </div>
+                                        <span class="radio-btn"><i class="las la-check"></i>
+                                            <div class="card-icon">
+                                                <img src="/assets/default/img/assignment-logo/independent_exams.png" alt="independent_exams">
+                                                <h3>Mock Test</h3>
+                                            </div>
 
-                                    </span>
-                                </label>
+                                        </span>
+                                    </label>
 
                                     <label class="card-radio " data-next_step="3">
                                         <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
