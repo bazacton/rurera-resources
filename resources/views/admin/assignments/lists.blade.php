@@ -202,12 +202,12 @@
                                         <div class="dropdown-box">
                                             <div class="dropdown">
                                                 <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
+                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
                                                 </a>
                                                 <div class="dropdown-menu" style="">
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt=""> Delete</a>
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -220,9 +220,7 @@
             </div>
         </div>
     </div>
-
     <div class="section-body">
-
         <section class="card rurera-hide">
             <div class="card-body">
                 <form action="{{ getAdminPanelUrl() }}/quizzes" method="get" class="row mb-0">
@@ -232,23 +230,19 @@
                             <input type="text" class="form-control" name="title" value="{{ request()->get('title') }}">
                         </div>
                     </div>
-
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="input-label">{{ trans('admin/main.start_date') }}</label>
                             <div class="input-group">
-                                <input type="date" id="fsdate" class="text-center form-control" name="from"
-                                       value="{{ request()->get('from') }}" placeholder="Start Date">
+                                <input type="date" id="fsdate" class="text-center form-control" name="from" value="{{ request()->get('from') }}" placeholder="Start Date">
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                             <div class="input-group">
-                                <input type="date" id="lsdate" class="text-center form-control" name="to"
-                                       value="{{ request()->get('to') }}" placeholder="End Date">
+                                <input type="date" id="lsdate" class="text-center form-control" name="to" value="{{ request()->get('to') }}" placeholder="End Date">
                             </div>
                         </div>
                     </div>
