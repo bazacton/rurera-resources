@@ -134,10 +134,10 @@
                                             class="assignment_topic_type_check" value="practice" data-tag_title="Courses" checked>
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
-                                            <img src="/assets/default/img/assignment-logo/practice.png">
+                                                <img src="/assets/default/img/assignment-logo/practice.png" alt="practice">
                                                 <h3>Courses</h3>
-                                        </div>
-                                    </span>
+                                            </div>
+                                        </span>
                                     </label>
                                     
                                     <label class="card-radio" data-next_step="3">
@@ -145,10 +145,9 @@
                                             class="assignment_topic_type_check" value="vocabulary" data-tag_title="Vocabulary">
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
-                                                <img src="/assets/default/img/assignment-logo/vocabulary.png">
+                                                <img src="/assets/default/img/assignment-logo/vocabulary.png" alt="vocabulary">
                                                 <h3>Vocabulary</h3>
-                                        </div>
-
+                                            </div>
                                         </span>
                                     </label>
 
@@ -164,7 +163,7 @@
                                         </span>
                                     </label>
                                     
-                                    <label class="card-radio " data-next_step="3">
+                                    <label class="card-radio" data-next_step="3">
                                     <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                         class="assignment_topic_type_check" value="mock_test" data-tag_title="Mock Test">
                                         <span class="radio-btn"><i class="las la-check"></i>
@@ -176,7 +175,7 @@
                                         </span>
                                     </label>
 
-                                    <label class="card-radio " data-next_step="3">
+                                    <label class="card-radio" data-next_step="3">
                                         <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
                                             class="assignment_topic_type_check" value="sats" data-tag_title="SATs">
                                         <span class="radio-btn"><i class="las la-check"></i>
