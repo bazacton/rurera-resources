@@ -142,21 +142,13 @@
 										<label>Prompt</label>
 										<textarea name="prompt_txt" class="form-control" rows="20"></textarea>
 									</div>
-									
-									
-									
                                 </div>
-								
-
-
+							
 								</div>
 
 								<div class="text-left">
 									<button class="btn btn-primary">Generate Prompt</button>
 								</div>
-
-								
-								
                             </form>
                         </div>
                     </div>
