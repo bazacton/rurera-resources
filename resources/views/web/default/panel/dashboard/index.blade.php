@@ -251,7 +251,7 @@
                         </li>
                         <li class="count-number-card col-12 col-sm-6 col-md-6 col-lg-3">
                             <div class="count-number-icon">
-                                <i data-feather="clock" width="20" height="20" class="" style="color:#00aeef"></i>
+                                <i data-feather="clock" width="20" height="20" style="color:#00aeef"></i>
                             </div>
                             <div class="count-number-body">
                                 <h5>spent</h5>
@@ -261,7 +261,7 @@
                         </li>
                         <li class="count-number-card col-12 col-sm-6 col-md-6 col-lg-3">
                             <div class="count-number-icon">
-                                <i data-feather="bar-chart" width="20" height="20" class="" style="color:#e67035"></i>
+                                <i data-feather="bar-chart" width="20" height="20" style="color:#e67035"></i>
                             </div>
                             <div class="count-number-body">
                                 <h5>Made progress in</h5>
@@ -271,7 +271,7 @@
                         </li>
                         <li class="count-number-card col-12 col-sm-6 col-md-6 col-lg-3">
                             <div class="count-number-icon">
-                                <i data-feather="bar-chart" width="20" height="20" class="" style="color:#e67035"></i>
+                                <i data-feather="bar-chart" width="20" height="20" style="color:#e67035"></i>
                             </div>
                             <div class="count-number-body">
                                 <h5>Made progress in</h5>
@@ -284,8 +284,6 @@
             </div>
         </div>
     </section>
-
-
 </section>
 @if(!auth()->user()->isUser())
 <div class="dashboard-students-holder mt-30">
@@ -360,12 +358,11 @@
 	</div>
 @endif
 
-
 <div class="quests-list quests-learning mt-30">
 	@if( $quests->count() > 0)
-		<div class="section-title text-left mb-30">
-			<h2 class="font-22">Weekly Learning Journeys</h2>
-		</div>
+    <div class="section-title text-left mb-30">
+        <h2 class="font-22">Weekly Learning Journeys</h2>
+    </div>
 	<ul>
 		@foreach( $quests as $questObj)
 		
