@@ -7,7 +7,7 @@
 @endpush
 
 @section('content')
-<section class="">
+<section>
 
     <div class="bg-white dashboard-banner-container position-relative px-15 px-ld-35 py-10 panel-shadow panel-border rounded-sm mb-30">
         <h2 class="font-30 text-primary line-height-1">
@@ -506,14 +506,9 @@
 							</div>
 						</div>
 					</div>
-				@endif
-				
-								
-							
+				@endif			
 			</li>
-			
 		@endforeach
-		
 	</ul>
 	@endif
 </div>
@@ -634,7 +629,7 @@
         <div class="col-12 col-lg-3 mt-35">
             <a href="@if($authUser->isUser()) /panel/webinars/purchases @else /panel/meetings/requests @endif" class="dashboard-stats rounded-sm panel-shadow p-10 p-md-20 d-flex align-items-center">
                 <div class="stat-icon requests">
-                    <img src="/assets/default/img/icons/request.svg" alt="">
+                    <img src="/assets/default/img/icons/request.svg" alt="request">
                 </div>
                 <div class="d-flex flex-column ml-15">
                     <span class="font-30 text-secondary">{{ !empty($pendingAppointments) ? $pendingAppointments : (!empty($webinarsCount) ? $webinarsCount : 0) }}</span>
@@ -644,7 +639,7 @@
 
             <a href="@if($authUser->isUser()) /panel/meetings/reservation @else /panel/financial/sales @endif" class="dashboard-stats rounded-sm panel-shadow p-10 p-md-20 d-flex align-items-center mt-15 mt-md-30">
                 <div class="stat-icon monthly-sales">
-                    <img src="@if($authUser->isUser()) /assets/default/img/icons/meeting.svg @else /assets/default/img/icons/monay.svg @endif" alt="">
+                    <img src="@if($authUser->isUser()) /assets/default/img/icons/meeting.svg @else /assets/default/img/icons/monay.svg @endif" alt="monay">
                 </div>
                 <div class="d-flex flex-column ml-15">
                     <span class="font-30 text-secondary">{{ !empty($monthlySalesCount) ? handlePrice($monthlySalesCount) : (!empty($reserveMeetingsCount) ? $reserveMeetingsCount : 0) }}</span>
@@ -656,7 +651,7 @@
         <div class="col-12 col-lg-3 mt-35">
             <a href="/panel/support" class="dashboard-stats rounded-sm panel-shadow p-10 p-md-20 d-flex align-items-center">
                 <div class="stat-icon support-messages">
-                    <img src="/assets/default/img/icons/support.svg" alt="">
+                    <img src="/assets/default/img/icons/support.svg" alt="support">
                 </div>
                 <div class="d-flex flex-column ml-15">
                     <span class="font-30 text-secondary">{{ !empty($supportsCount) ? $supportsCount : 0 }}</span>
