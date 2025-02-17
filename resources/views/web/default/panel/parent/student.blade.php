@@ -945,9 +945,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
             </div>
             <div class="modal-body">
                 <div class="container container-nosidebar">
-                <div class="tab-content subscription-content" id="nav-tabContent">
-
-                </div>
+                    <div class="tab-content subscription-content" id="nav-tabContent"></div>
                 </div>
             </div>
         </div>
@@ -959,19 +957,18 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
             
 			<div class="modal-header">
                 <strong>Cancel Subscription</strong>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">×</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             </div>
 			
             <div class="modal-body">
                 <div class="container container-nosidebar">
-                <div class="tab-content cancel-membership-block" id="nav-tabContent">
-						<div class="cancel-package-data"></div>
-                        <h3>You will still be able to use the package till its expiry and wont be charged for the renwal.</h3>
-                        <div class="row justify-content-center payment-content">
-                            <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center"><a href="javascript:;" class="nav-link btn-primary rounded-pill mb-25 cancel-subscription-btn modal-btn" data-child_id="0">Cancel Membership</a></div>
-                        </div>
-                </div>
+                    <div class="tab-content cancel-membership-block" id="nav-tabContent">
+                            <div class="cancel-package-data"></div>
+                            <h3>You will still be able to use the package till its expiry and wont be charged for the renwal.</h3>
+                            <div class="row justify-content-center payment-content">
+                                <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center"><a href="javascript:;" class="nav-link btn-primary rounded-pill mb-25 cancel-subscription-btn modal-btn" data-child_id="0">Cancel Membership</a></div>
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>
