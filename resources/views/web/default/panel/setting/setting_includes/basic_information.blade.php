@@ -278,7 +278,7 @@ if( !empty( $emojisArray ) ){
 													<div class="profile-inner">
 														<div class="profile-header">
 															<h3>{{$user->display_name}}</h3>
-															<a href="#" class="student-qrCode"><img src="/store/1/default_images/qr-code.png" alt=""></a>
+															<a href="#" class="student-qrCode"><img src="/store/1/default_images/qr-code.png" alt="qr-code"></a>
 														</div>
 														<div class="student-info">
 															<ul>
