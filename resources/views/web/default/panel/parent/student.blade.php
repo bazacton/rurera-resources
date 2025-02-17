@@ -476,11 +476,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             
                             </div>
                             
-                        <div class="edit-profile-controls">
-                            <input type="hidden" name="user_id" value="{{$user->id}}">
-                            <a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
-                            <a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
-                        </div>
+                            <div class="edit-profile-controls">
+                                <input type="hidden" name="user_id" value="{{$user->id}}">
+                                <a href="javascript:;" class="text-center cancel-edit-button">Reset</a>
+                                <a href="javascript:;" class="btn btn-primary text-center profile-save-btn">Save</a>
+                            </div>
                         </form>
                     </div>
                     
@@ -571,24 +571,24 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                             </a>
                         </li>
                         @if( $courses_list->count() > 0)
-                                @php $hide_subjects = json_decode($user->hide_subjects);
-                                $hide_subjects = is_array( $hide_subjects )? $hide_subjects : array();
-                                @endphp
-                                @foreach( $courses_list as $courseObj)
-                                    <li>
-                                        <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
-                                            <span class="info-list-label font-16">
-                                                {{$courseObj->getTitleAttribute()}}
-                                                <strong class="d-block font-weight-500">{{!in_array($courseObj->id, $hide_subjects)? 'Show' : 'Hide'}}</strong>
-                                            </span>
-                                            <span class="edit-icon d-inline-flex align-items-center">
-                                                <!-- <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18"> -->
-                                                <em class="font-weight-500">Edit</em>
-                                            </span>
-                                        </a>
-                                    </li>
-                                @endforeach
-                            @endif
+                            @php $hide_subjects = json_decode($user->hide_subjects);
+                            $hide_subjects = is_array( $hide_subjects )? $hide_subjects : array();
+                            @endphp
+                            @foreach( $courses_list as $courseObj)
+                                <li>
+                                    <a href="javascript:;" class="d-flex align-items-center edit-profile-btn justify-content-between p-15">
+                                        <span class="info-list-label font-16">
+                                            {{$courseObj->getTitleAttribute()}}
+                                            <strong class="d-block font-weight-500">{{!in_array($courseObj->id, $hide_subjects)? 'Show' : 'Hide'}}</strong>
+                                        </span>
+                                        <span class="edit-icon d-inline-flex align-items-center">
+                                            <!-- <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18"> -->
+                                            <em class="font-weight-500">Edit</em>
+                                        </span>
+                                    </a>
+                                </li>
+                            @endforeach
+                        @endif
                     </ul>
                     <div class="edit-profile edit-profile-block mt-20 rurera-hide bg-white p-25">
                     <form class="child-edit-form" method="post" action="javascript:;">
@@ -606,8 +606,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                             <span class="switch-circle"></span>
                                             <em class="show-text font-style-normal">Show</em>
                                     </span>
-                                    <label class="custom-switch-description mb-0 cursor-pointer mb-0"
-                                            for="show_timestables_field">Timestables</label>
+                                    <label class="custom-switch-description mb-0 cursor-pointer mb-0" for="show_timestables_field">Timestables</label>
                                 </label>
                             </div>
                             </div>
@@ -624,8 +623,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                             <span class="switch-circle"></span>
                                             <em class="show-text">Show</em>
                                         </span>
-                                        <label class="custom-switch-description mb-7 cursor-pointer mb-0"
-                                                for="show_spellings_field">Spellings</label>
+                                        <label class="custom-switch-description mb-7 cursor-pointer mb-0" for="show_spellings_field">Spellings</label>
                                     </label>
                                 </div>
                             </div>
@@ -644,8 +642,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                             <span class="switch-circle"></span>
                                             <em class="show-text">Show</em>
                                         </span>
-                                        <label class="custom-switch-description mb-0 cursor-pointer"
-                                                for="show_games_field"><span>Games</span></label>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="show_games_field"><span>Games</span></label>
                                     </label>
                                 </div>
                             </div>
@@ -665,8 +662,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                             <span class="switch-circle"></span>
                                             <em class="show-text">Show</em>
                                         </span>
-                                        <label class="custom-switch-description mb-0 cursor-pointer"
-                                                for="show_books_field"><span>Books</span></label>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="show_books_field"><span>Books</span></label>
                                     </label>
                                 </div>
                             </div>
@@ -685,8 +681,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                             <span class="switch-circle"></span>
                                             <em class="show-text">Show</em>
                                         </span>
-                                        <label class="custom-switch-description mb-0 cursor-pointer"
-                                                for="show_enterance_exams_field"><span>Enterance Exams</span></label>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="show_enterance_exams_field"><span>Enterance Exams</span></label>
                                     </label>
                                 </div>
                             </div>
@@ -705,8 +700,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                             <span class="switch-circle"></span>
                                             <em class="show-text">Show</em>
                                         </span>
-                                        <label class="custom-switch-description mb-0 cursor-pointer"
-                                                for="show_sats_field"><span>SATs</span></label>
+                                        <label class="custom-switch-description mb-0 cursor-pointer" for="show_sats_field"><span>SATs</span></label>
                                     </label>
                                 </div>
                             </div>
@@ -731,15 +725,14 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                     <span class="switch-circle"></span>
                                                     <em class="show-text">Show</em>
                                                 </span>
-                                                <label class="custom-switch-description mb-7 cursor-pointer"
-                                                        for="hide_{{$courseObj->id}}">{{$courseObj->getTitleAttribute()}}</label>
+                                                <label class="custom-switch-description mb-7 cursor-pointer" for="hide_{{$courseObj->id}}">{{$courseObj->getTitleAttribute()}}</label>
                                             </label>
                                         </div>
                                     </div>
                                 @endforeach
                             @endif
                             
-                            </div>
+                        </div>
                             
                         <div class="edit-profile-controls">
                             <input type="hidden" name="user_id" value="{{$user->id}}">
@@ -890,59 +883,59 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
         </div>
 								
 					
-		    @if( isset( $user->card_last_four ) && $user->card_last_four != '')
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                    <div class="info-text">
-                        <h3 class="font-18 font-weight-500 mb-5">Main Card</h3>
-                        <span class="font-16">This is your company main credit card. You can use it to pay for any type of expenses</span>
-                    </div>
+        @if( isset( $user->card_last_four ) && $user->card_last_four != '')
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class="info-text">
+                    <h3 class="font-18 font-weight-500 mb-5">Main Card</h3>
+                    <span class="font-16">This is your company main credit card. You can use it to pay for any type of expenses</span>
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-12 col-12">
-					<h2 class="font-16 font-weight-500 mb-25 inner-heading pb-15">Main Card</h2>
-                    <div class="edit-info-list">
-                        <ul>
-                            <li>
-                                <div class="payment-card-holder mb-15">
-                                    <div class="payment-card bg-white py-15 px-20 d-inline-block">
-                                        <div class="card-top d-flex align-items-center flex-wrap justify-content-between mb-15">
-                                            <span class="card-type-lebel d-inline-block pl-15">{{$user->card_brand}}</span>
-                                            <div class="card-circle">
-                                                <span class="circle-pink d-inline-block"></span>
-                                                <span class="circle-yellow d-inline-block"></span>
-                                            </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                <h2 class="font-16 font-weight-500 mb-25 inner-heading pb-15">Main Card</h2>
+                <div class="edit-info-list">
+                    <ul>
+                        <li>
+                            <div class="payment-card-holder mb-15">
+                                <div class="payment-card bg-white py-15 px-20 d-inline-block">
+                                    <div class="card-top d-flex align-items-center flex-wrap justify-content-between mb-15">
+                                        <span class="card-type-lebel d-inline-block pl-15">{{$user->card_brand}}</span>
+                                        <div class="card-circle">
+                                            <span class="circle-pink d-inline-block"></span>
+                                            <span class="circle-yellow d-inline-block"></span>
                                         </div>
-                                        <div class="payment-card-body">
-                                            <span class="card-type-icon d-block mb-15">
-                                                <img src="/assets/default/svgs/card-chip.svg" alt="" height="32" width="44">
-                                            </span>
-                                            <div class="user-card-info d-flex align-items-center flex-wrap justify-content-between">
-                                                <div class="card-info-text">
-                                                    <span class="user-name d-block font-16">{{$user->get_full_name()}}</span>
-                                                    <span class="card-number d-block font-16">&#x2022; &#x2022; &#x2022; &#x2022; &#x2022; &#x2022; &#x2022; &#x2022; &#x2022; {{$user->card_last_four}}</span>
-                                                    <div class="card-exp">
-                                                        <span class="d-inline-block font-16">EXP</span>
-                                                        <span class="d-inline-block font-16">&#x2022; &#x2022;/&#x2022; &#x2022;</span>
-                                                        <span class="d-inline-block font-16">CVC</span>
-                                                        <span class="d-inline-block font-16">&#x2022; &#x2022; &#x2022;</span>
-                                                    </div>
+                                    </div>
+                                    <div class="payment-card-body">
+                                        <span class="card-type-icon d-block mb-15">
+                                            <img src="/assets/default/svgs/card-chip.svg" alt="" height="32" width="44">
+                                        </span>
+                                        <div class="user-card-info d-flex align-items-center flex-wrap justify-content-between">
+                                            <div class="card-info-text">
+                                                <span class="user-name d-block font-16">{{$user->get_full_name()}}</span>
+                                                <span class="card-number d-block font-16">&#x2022; &#x2022; &#x2022; &#x2022; &#x2022; &#x2022; &#x2022; &#x2022; &#x2022; {{$user->card_last_four}}</span>
+                                                <div class="card-exp">
+                                                    <span class="d-inline-block font-16">EXP</span>
+                                                    <span class="d-inline-block font-16">&#x2022; &#x2022;/&#x2022; &#x2022;</span>
+                                                    <span class="d-inline-block font-16">CVC</span>
+                                                    <span class="d-inline-block font-16">&#x2022; &#x2022; &#x2022;</span>
                                                 </div>
-                                                <span class="card-info-icon">
-                                                    <img src="/assets/default/svgs/card-info.svg" alt="" height="40" width="40">
-                                                </span>
                                             </div>
+                                            <span class="card-info-icon">
+                                                <img src="/assets/default/svgs/card-info.svg" alt="" height="40" width="40">
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class="edtit-btn d-inline-flex align-items-center font-weight-500 font-16">Manage your cards <span class="font-16">&#8594;</span></a>
-                            </li>
-                        </ul>
-                    </div>
+                            </div>
+                            <a href="#" class="edtit-btn d-inline-flex align-items-center font-weight-500 font-16">Manage your cards <span class="font-16">&#8594;</span></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-			@endif
-                </div>
-            </div>
+        </div>
+        @endif
+    </div>
+</div>
 <div class="modal fade lms-choose-membership" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
