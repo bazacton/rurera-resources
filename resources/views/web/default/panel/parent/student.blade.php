@@ -857,12 +857,12 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                         
                             </div>
                             <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <a href="javascript:;" class="package-update-btn btn w-100 subscription-modal" data-type="update_package" data-id="{{$user->id}}">Update Subscription
-                                </a>
-                            </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <a href="javascript:;" class="package-update-btn btn w-100 subscription-modal" data-type="update_package" data-id="{{$user->id}}">Update Subscription
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     @endif
@@ -921,7 +921,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                 </div>
                                             </div>
                                             <span class="card-info-icon">
-                                                <img src="/assets/default/svgs/card-info.svg" alt="" height="40" width="40">
+                                                <img src="/assets/default/svgs/card-info.svg" alt="card-info" height="40" width="40">
                                             </span>
                                         </div>
                                     </div>
@@ -963,11 +963,11 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
             <div class="modal-body">
                 <div class="container container-nosidebar">
                     <div class="tab-content cancel-membership-block" id="nav-tabContent">
-                            <div class="cancel-package-data"></div>
-                            <h3>You will still be able to use the package till its expiry and wont be charged for the renwal.</h3>
-                            <div class="row justify-content-center payment-content">
-                                <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center"><a href="javascript:;" class="nav-link btn-primary rounded-pill mb-25 cancel-subscription-btn modal-btn" data-child_id="0">Cancel Membership</a></div>
-                            </div>
+                        <div class="cancel-package-data"></div>
+                        <h3>You will still be able to use the package till its expiry and wont be charged for the renwal.</h3>
+                        <div class="row justify-content-center payment-content">
+                            <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center"><a href="javascript:;" class="nav-link btn-primary rounded-pill mb-25 cancel-subscription-btn modal-btn" data-child_id="0">Cancel Membership</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -984,7 +984,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
             </div>
             <div class="modal-body">
                 <div class="container container-nosidebar">
-                <div class="tab-content unlink-block" id="nav-tabContent">
+                    <div class="tab-content unlink-block" id="nav-tabContent">
                         <h3>Data will be removed and may not be retrievable.</h3>
                         <div class="row justify-content-center payment-content">
                             <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center">
