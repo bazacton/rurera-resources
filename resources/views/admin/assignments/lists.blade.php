@@ -422,9 +422,7 @@
 
 @push('scripts_bottom')
     <script type="text/javascript">
-
         $(document).ready(function () {
-
             $(document).on('change', '.ajax-category-courses', function () {
                 var category_id = $(this).val();
                 var course_id = $(this).attr('data-course_id');
@@ -439,9 +437,6 @@
                     }
                 });
             });
-
         });
-
-
     </script>
 @endpush
