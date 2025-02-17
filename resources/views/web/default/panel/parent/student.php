@@ -259,7 +259,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                 <strong class="d-block font-weight-500">{{isset($user->userSchoolPreffernce1->title)? $user->userSchoolPreffernce1->title : '-'}}</strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -271,7 +271,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                 <strong class="d-block font-weight-500">{{isset($user->userSchoolPreffernce1->title)? $user->userSchoolPreffernce1->title : '-'}} {{($user->school_preference_1_date != '')? '( '.dateTimeFormat($user->school_preference_1_date, 'j M Y').' )' : ''}} </strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -284,7 +284,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                 <strong class="d-block font-weight-500">{{isset( $user->userSchoolPreffernce2->title )? $user->userSchoolPreffernce2->title : '-'}} {{($user->school_preference_2_date != '')? '( '.dateTimeFormat($user->school_preference_2_date, 'j M Y').' )' : ''}} </strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -296,7 +296,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
                                                 <strong class="d-block font-weight-500">{{isset( $user->userSchoolPreffernce3->title )? $user->userSchoolPreffernce3->title : '-'}} {{($user->school_preference_3_date != '')? '( '.dateTimeFormat($user->school_preference_3_date, 'j M Y').' )' : ''}} </strong>
                                             </span>
                                             <span class="edit-icon d-inline-flex align-items-center">
-                                                <img src="/assets/default/svgs/edit-2.svg" alt="" height="18" width="18">
+                                                <img src="/assets/default/svgs/edit-2.svg" alt="edit-2" height="18" width="18">
                                                 <em class="font-weight-500">Edit</em>
                                             </span>
                                         </a>
@@ -333,7 +333,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											<div class="form-group">
 												<span class="fomr-label">Preference 1 Date</span>
 												<div class="input-field">
-													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
 													<input type="text" class="preference-date rureradatepicker" min="{{date('Y-m-d')}}" placeholder="Preference 1 Date" name="school_preference_1_date" value="{{($user->school_preference_1_date != '')? dateTimeFormatNumeric($user->school_preference_1_date, 'Y-m-d', 'numeric') : ''}}">
 												</div>
 											</div>
@@ -353,7 +353,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											<div class="form-group">
 												<span class="fomr-label">Preference 2 Date</span>
 												<div class="input-field">
-													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
 													<input type="text" class="preference-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}" placeholder="Preference 2 Date" name="school_preference_2_date" value="{{($user->school_preference_2_date != '')? dateTimeFormatNumeric($user->school_preference_2_date, 'Y-m-d', 'numeric') : ''}}">
 												</div>
 											</div>
@@ -373,7 +373,7 @@ $subscribe = isset( $user->userSubscriptions->subscribe)? $user->userSubscriptio
 											<div class="form-group">
 												<span class="fomr-label">Preference 3 Date</span>
 												<div class="input-field">
-													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt=""></span>
+													<span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
 													<input type="text" class="preference-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}" placeholder="Preference 3 Date" name="school_preference_3_date" value="{{($user->school_preference_3_date != '')? dateTimeFormatNumeric($user->school_preference_3_date, 'Y-m-d', 'numeric') : ''}}">
 												</div>
 											</div>
