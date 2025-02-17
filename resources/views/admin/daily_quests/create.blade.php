@@ -1059,19 +1059,19 @@
                                                             <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][quest_method]"
                                                                    class="quest_method_check" value="lessons_score" checked>
                                                             <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>Lessons / Practices Score</h3>
-                                                                       </div>
-                                                                  </span>
+                                                                <div class="card-icon">
+                                                                    <h3>Lessons / Practices Score</h3>
+                                                                </div>
+                                                            </span>
                                                         </label>
                                                         <label class="card-radio">
                                                             <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][quest_method]"
                                                                    class="quest_method_check" value="screen_time" checked>
                                                             <span class="radio-btn"><i class="las la-check"></i>
-                                                                        <div class="card-icon">
-                                                                            <h3>Screen Time</h3>
-                                                                       </div>
-                                                                  </span>
+                                                                <div class="card-icon">
+                                                                    <h3>Screen Time</h3>
+                                                                </div>
+                                                            </span>
                                                         </label>
                                                     </div>
                                                 </div>
@@ -1160,8 +1160,6 @@
                                             <div class="form-group">
                                                 <label class="input-label">Coins Type</label>
                                                 <div class="input-group">
-
-
                                                     <div class="radio-buttons">
                                                         <label class="card-radio">
                                                             <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][coins_type]"
@@ -1174,17 +1172,14 @@
                                                           </span>
                                                         </label>
                                                         <label class="card-radio">
-                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][coins_type]"
-                                                                   class="coins_type_check" value="percentage">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][coins_type]" class="coins_type_check" value="percentage">
                                                             <span class="radio-btn"><i class="las la-check"></i>
                                                                 <div class="card-icon">
                                                                     <h3>%</h3>
                                                                </div>
-
-                                                          </span>
+                                                            </span>
                                                         </label>
                                                     </div>
-
                                                     <div class="invalid-feedback"></div>
                                                 </div>
                                             </div>
@@ -1193,7 +1188,6 @@
                                                 <div class="col-lg-6 col-md-6 col-sm-12 col-6 coins_type_check_fields custom_fields">
                                                     <div class="form-group">
                                                         <label class="input-label">No of Coins</label>
-
                                                         <div class="invalid-feedback"></div>
                                                         <div class="range-slider">
                                                             <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
@@ -1225,13 +1219,9 @@
                                                                    class="js-ajax-title form-control correct_answers_percentage range-slider-field" min="0" step="100" max="500"
                                                                    placeholder=""/>
                                                         </div>
-
                                                     </div>
                                                 </div>
                                             </div>
-
-
-
                                             <div class="form-section">
                                                 <h2 class="section-title">User Criteria</h2>
                                             </div>
@@ -1239,8 +1229,6 @@
                                             <div class="form-group">
                                                 <label class="input-label">Assignment Assign Type</label>
                                                 <div class="input-group">
-
-
                                                     <div class="radio-buttons">
                                                         <label class="card-radio">
                                                             <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][quest_assign_type]"
@@ -1260,8 +1248,7 @@
                                                                 <div class="card-icon">
                                                                     <h3>Class</h3>
                                                                </div>
-
-                                                          </span>
+                                                            </span>
                                                         </label>
 
                                                         <label class="card-radio">
@@ -1271,10 +1258,8 @@
                                                                 <div class="card-icon">
                                                                     <h3>Individual</h3>
                                                                </div>
-
-                                                          </span>
+                                                            </span>
                                                         </label>
-
                                                     </div>
                                                     <div class="invalid-feedback"></div>
                                                 </div>
@@ -1296,8 +1281,6 @@
                                                     <div class="invalid-feedback"></div>
                                                 </div>
                                             </div>
-
-
                                             <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                                                 @if( !empty( $sections) )
                                                 @foreach( $sections as $sectionObj)
@@ -1334,13 +1317,10 @@
                                                 @endif
 
                                             </div>
-
                                         </div>
                                         @endif
 
                                     </div>
-
-
                                 </div>
 
                                 <div class="mt-20 mb-20">
@@ -1357,8 +1337,6 @@
                                     </button>
                                     @endif
                                 </div>
-
-
                             </form>
                         </div>
                     </div>
@@ -1544,8 +1522,6 @@
                 $('.questions-list li[data-question_id="' + question_id + '"]').remove();
                 $(".questions-list").append('<li data-question_id="' + question_id + '"><input type="hidden" name="ajax[new][question_list_ids][]" value="' + question_id + '">' + question_title + '<a href="javascript:;" class="parent-li-remove"><span class="fas fa-trash"></span></a></li>');
             });
-
-
         }
 
         var currentRequest = null;
@@ -1690,9 +1666,6 @@
             $(".coins_type_check_fields").addClass('rurera-hide');
             $('.coins_type_check_fields.' + current_value + '_fields').removeClass('rurera-hide');
         });
-
-
-
 
         $('body').on('change', '.year_quiz_ajax_select', function (e) {
             var year_id = $(this).val();
