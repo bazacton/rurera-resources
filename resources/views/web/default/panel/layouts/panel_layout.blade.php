@@ -150,13 +150,13 @@
                                     <div class="store-stats panel-border bg-white rounded-sm p-20">
                                         <ul>
                                             <li>
-                                            <div class="store-item">
-                                                <img src="/assets/default/svgs/stats-coins.svg" alt="stats-coins">
-                                                <span class="item-label">
-                                                    Current Balance
-                                                    <span class="iteme-numbers">{{$authUser->getRewardPoints()}}</span>
-                                                </span>
-                                            </div>
+                                                <div class="store-item">
+                                                    <img src="/assets/default/svgs/stats-coins.svg" alt="stats-coins">
+                                                    <span class="item-label">
+                                                        Current Balance
+                                                        <span class="iteme-numbers">{{$authUser->getRewardPoints()}}</span>
+                                                    </span>
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
