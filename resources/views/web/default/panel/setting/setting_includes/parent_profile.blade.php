@@ -327,11 +327,6 @@ $avatar_color_settings = json_encode($avatar_color_settings);
     avatar_color_settings = JSON.parse(avatar_color_settings);
 
 $(document).ready(function () {
-
-
-
-
-
     $(document).on('click', '.regenerate-emoji', function (e) {
         rurera_loader($("#userSettingForm"), 'div');
         var login_emoji = $(".emoji-password-field").val();
@@ -396,10 +391,6 @@ $(document).ready(function () {
     });
     refresh_preference_field();
 
-
-
-
-
     $(document).on('click', '.regenerate-pin', function (e) {
         rurera_loader($("#userSettingForm"), 'div');
         jQuery.ajax({
@@ -424,6 +415,4 @@ $(document).ready(function () {
 
     });
 });
-
-
 </script>
