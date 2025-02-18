@@ -334,23 +334,23 @@
                 <div class="col-12">
                     <ul class="row circle-icon-list">
                         <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative mb-20">
-                            <img alt="check icon" height="35" src="../assets/default/svgs/check-white.svg" width="35" /> Check in with your child regularly to gauge their progress and understanding.
+                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Check in with your child regularly to gauge their progress and understanding.
                         </li>
                         <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative mb-20">
-                            <img alt="check icon" height="35" src="../assets/default/svgs/check-white.svg" width="35" /> Offer guidance and support when needed, and help them manage their time effectively.
+                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Offer guidance and support when needed, and help them manage their time effectively.
                         </li>
                         <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative mb-20">
-                            <img alt="check icon" height="35" src="../assets/default/svgs/check-white.svg" width="35" /> Break down larger tasks into smaller, manageable ones, and help them prioritize their work.
+                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Break down larger tasks into smaller, manageable ones, and help them prioritize their work.
                         </li>
                         <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative mb-20">
-                            <img alt="check icon" height="35" src="../assets/default/svgs/check-white.svg" width="35" /> Stay in regular contact with your child's teachers to understand their expectations, curriculum, and any specific
+                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Stay in regular contact with your child's teachers to understand their expectations, curriculum, and any specific
                             guidelines.
                         </li>
                         <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative">
-                            <img alt="check icon" height="35" src="../assets/default/svgs/check-white.svg" width="35" /> Provide an organized space for your child study. Minimize distractions, such as noise or electronic devices during work.
+                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Provide an organized space for your child study. Minimize distractions, such as noise or electronic devices during work.
                         </li>
                         <li class="text-white font-19 col-lg-6 col-md-6 pl-50 position-relative">
-                            <img alt="check icon" height="35" src="../assets/default/svgs/check-white.svg" width="35" /> Recognize and celebrate your child's efforts and accomplishments to continue practicing good management skills.
+                            <img alt="check icon" height="35" src="/assets/default/svgs/check-white.svg" width="35" /> Recognize and celebrate your child's efforts and accomplishments to continue practicing good management skills.
                         </li>
                     </ul>
                 </div>
