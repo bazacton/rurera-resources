@@ -239,7 +239,9 @@
                 <div class="col-12 col-sm-12 col-lg-6 col-md-6">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon" style="background-color: #3cb46e;"><img alt="Up-to-Date Reports" height="200" src="/assets/default/svgs/features-time-test-white.svg" width="200" /></i>
+                            <i class="svg-icon" style="background-color: #3cb46e;">
+                                <img alt="Up-to-Date Reports" height="200" src="/assets/default/svgs/features-time-test-white.svg" width="200" />
+                            </i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">Frequent Updates &amp; In-Depth Reports</h3>
@@ -253,7 +255,9 @@
                 <div class="col-12 col-sm-12 col-lg-6 col-md-6">
                     <div class="lms-feature-card mt-50">
                         <figure>
-                            <i class="svg-icon" style="background-color: #46b7e9;"><img alt="Dedicated Professional Support" height="200" src="/assets/default/svgs/features-resources-white.svg" width="200" /></i>
+                            <i class="svg-icon" style="background-color: #46b7e9;">
+                                <img alt="Dedicated Professional Support" height="200" src="/assets/default/svgs/features-resources-white.svg" width="200" />
+                            </i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">Dedicated Professional Support</h3>
