@@ -1865,6 +1865,7 @@ Lms FAQS Style Start
 .accordion__icon--is-open:before {transform: translateY(-50%) rotate(180deg);}
 .lms-faqs .card .card-header .btn-link:focus,
 .lms-faqs .card .card-header .btn-link:hover {text-decoration: none;}
+.lms-faqs .card .collapse {-webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out;}
 .lms-faqs .card-body {padding-left: 0; padding-bottom: 10px; padding-top: 10px;}
 .lms-faqs .card-body p {margin: 0 0 5px;}
 .lms-faqs .card-body h5 {font-weight: 700; font-size: 18px; margin: 0 0 5px;}
