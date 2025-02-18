@@ -706,19 +706,19 @@
                         </div>
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
-                                <img src="../assets/default/svgs/flexibility-white.svg" width="50" height="50" alt="#" />
+                                <img src="../assets/default/svgs/flexibility-white.svg" width="50" height="50" alt="flexibility-white" />
                                 <span class="text-white">SATs papers</span>
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
-                                <img src="../assets/default/svgs/logic-white.svg" width="50" height="50" alt="#" />
+                                <img src="../assets/default/svgs/logic-white.svg" width="50" height="50" alt="logic-white" />
                                 <span class="text-white">SATs exam</span>
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
-                                <img src="../assets/default/svgs/support-white.svg" width="50" height="50" alt="#" />
+                                <img src="../assets/default/svgs/support-white.svg" width="50" height="50" alt="support-white" />
                                 <span class="text-white">Friendly support</span>
                             </div>
                         </div>
