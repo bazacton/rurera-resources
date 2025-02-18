@@ -1,17 +1,7 @@
 @extends(getTemplate().'.layouts.app')
 
 @push('styles_top')
-<style>
-    .lms-search-services {
-        background-color: #f27530;
-    }
-    .lms-column-section {
-        background-color: #7679ee;
-    }
-    .choose-sats-section {
-        background-color: #3d358b;
-    }
-</style>
+
 @endpush
 
 @section('content')
@@ -230,7 +220,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-search-services mb-0 mt-0 pt-80 pb-60">
+    <section class="lms-search-services mb-0 mt-0 pt-80 pb-60" style="background-color: #f27530;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -305,7 +295,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-column-section lms-text-section exploring-curriculum mx-w-100 mt-0 mb-80 pt-70 pb-70 pr-30 pl-30">
+    <section class="lms-column-section lms-text-section exploring-curriculum mx-w-100 mt-0 mb-80 pt-70 pb-70 pr-30 pl-30" style="background-color: #7679ee;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
