@@ -118,7 +118,7 @@
                                                             @if(!empty($userAnswers[$question->id]) and (int)$userAnswers[$question->id]["answer"] ===  $answer->id)
                                                                 <span class="selected font-16">{{ trans('quiz.student_answer') }}</span>
                                                             @endif
-                                                            <img src="{{ config('app_url') . $answer->image }}" class="img-cover" alt="">
+                                                            <img src="{{ config('app_url') . $answer->image }}" class="img-cover" alt="answer image">
                                                         </div>
                                                     </label>
                                                 @endif
