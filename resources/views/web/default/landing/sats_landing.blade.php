@@ -356,28 +356,28 @@
                             <div class="lms-key-stage text-center"><strong>2022</strong></div>
                             <div class="lms-key-stage">
                                 <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="#" /></div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="#" /></div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="#" /></div>
+                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
+                                    <div class="lms-img"><img src="../assets/default/img/reading-img3.webp" width="65" height="92" alt="reading-img3" /></div>
+                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
                                 </div>
                             </div>
                             <div class="lms-key-stage">
                                 <div class="lms-img-holder">
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="#" /></div>
-                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="#" /></div>
+                                    <div class="lms-img"><img src="../assets/default/img/reading-img1.webp" width="65" height="92" alt="reading-img1" /></div>
+                                    <div class="lms-img"><img src="../assets/default/img/reading-img2.webp" width="65" height="92" alt="reading-img2" /></div>
                                 </div>
                             </div>
                             <div class="lms-key-stage">
                                 <div class="lms-img-holder">
                                     <div class="lms-img">
-                                        <img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="#" />
+                                        <img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
                                     </div>
                                 </div>
                             </div>
                             <div class="lms-key-stage">
                                 <div class="lms-img-holder">
                                     <div class="lms-img">
-                                        <img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="#" />
+                                        <img src="../assets/default/img/reading-img8.webp" width="65" height="92" alt="reading-img8" />
                                     </div>
                                 </div>
                             </div>
