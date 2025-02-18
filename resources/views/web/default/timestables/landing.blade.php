@@ -1,19 +1,12 @@
 @extends(getTemplate().'.layouts.app')
 
 @push('styles_top')
-<style>
-    .time-tables-sub-header {
-        background-color: #333399; 
-    }
-    .lms-column-section {
-        background-color: #7679ee;
-    }
-</style>
+
 @endpush
 
 @section('content')
 <section class="content-section">
-    <section class="time-tables-sub-header pt-70 pb-80 text-center">
+    <section class="time-tables-sub-header pt-70 pb-80 text-center" style="background-color: #333399;">
         <div class="container">
             <div class="row">
                 <div class="col-11 mx-auto">
@@ -85,7 +78,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-column-section lms-text-section mx-w-100 py-50 pr-30 pl-30">
+    <section class="lms-column-section lms-text-section mx-w-100 py-50 pr-30 pl-30" style="background-color: #7679ee;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
