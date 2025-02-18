@@ -328,62 +328,62 @@
                                             </div>
                                     </div>
                                 </div>
-                            @if(request()->is('custom_html') || request()->is('panel') || request()->is('panel/setting') || request()->is('panel/rewards') || request()->is('panel/store/purchases') || request()->is('panel/notifications') || request()->is('panel/support/tickets'))
-                            <div class="col-12 col-lg-12 mb-30">
-                                <div class="user-pocket">
-                                    <div class="pocket-card panel-shadow panel-border rounded-sm">
-                                        <div class="card-header d-flex align-items-center justify-content-between p-0">
-                                            <a href="#" class="author-info d-inline-flex align-items-center flex-wrap">
-                                                <img src="/avatar/svgA5311352175689545.png" alt="pocket image">
-                                                <span class="author-text font-19 font-weight-bold">
-                                                    Jonh Smith
-                                                    <span class="d-block font-16 font-weight-normal">Administrator</span>
-                                                </span>
-                                            </a>
-                                            <a href="#" class="pocket-btn btn-link collapsed d-inline-flex flex-column justify-content-center align-items-center" data-toggle="collapse" data-target="#pocket-menu" aria-expanded="false" aria-controls="pocket-menu">
-                                                <span class="line-lg"></span>
-                                                <span class="line-md"></span>
-                                                <span class="line-sm"></span>
-                                            </a>
-                                        </div>
-                                        <div id="pocket-menu" class="pocket-menu collapse pt-10" aria-labelledby="pocket-menu">
-                                            <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/user-account.svg" alt="user-account"></span>My Account</a>
-                                            <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/user-setting.svg" alt="user-setting"></span>Settings</a>
-                                            <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/lock-closed.svg" alt="lock-closed"></span>Lock Screen</a>
-                                            <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/user-logout.svg" alt="user-logout"></span>Logout</a>
+                                @if(request()->is('custom_html') || request()->is('panel') || request()->is('panel/setting') || request()->is('panel/rewards') || request()->is('panel/store/purchases') || request()->is('panel/notifications') || request()->is('panel/support/tickets'))
+                                <div class="col-12 col-lg-12 mb-30">
+                                    <div class="user-pocket">
+                                        <div class="pocket-card panel-shadow panel-border rounded-sm">
+                                            <div class="card-header d-flex align-items-center justify-content-between p-0">
+                                                <a href="#" class="author-info d-inline-flex align-items-center flex-wrap">
+                                                    <img src="/avatar/svgA5311352175689545.png" alt="pocket image">
+                                                    <span class="author-text font-19 font-weight-bold">
+                                                        Jonh Smith
+                                                        <span class="d-block font-16 font-weight-normal">Administrator</span>
+                                                    </span>
+                                                </a>
+                                                <a href="#" class="pocket-btn btn-link collapsed d-inline-flex flex-column justify-content-center align-items-center" data-toggle="collapse" data-target="#pocket-menu" aria-expanded="false" aria-controls="pocket-menu">
+                                                    <span class="line-lg"></span>
+                                                    <span class="line-md"></span>
+                                                    <span class="line-sm"></span>
+                                                </a>
+                                            </div>
+                                            <div id="pocket-menu" class="pocket-menu collapse pt-10" aria-labelledby="pocket-menu">
+                                                <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/user-account.svg" alt="user-account"></span>My Account</a>
+                                                <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/user-setting.svg" alt="user-setting"></span>Settings</a>
+                                                <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/lock-closed.svg" alt="lock-closed"></span>Lock Screen</a>
+                                                <a href="#" class="font-16 font-weight-500 d-flex align-items-center mt-15"><span class="nav-icon"><img src="/assets/default/svgs/user-logout.svg" alt="user-logout"></span>Logout</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            @endif
                                 @endif
-                            @if(request()->is('custom_html') || request()->is('panel') || request()->is('panel/setting') || request()->is('panel/rewards') || request()->is('panel/store/purchases') || request()->is('panel/notifications') || request()->is('panel/support/tickets'))
-                            <div class="col-12 col-lg-12 mb-30 rurera-hide">
-                                <div class="bg-white noticeboard rounded-sm panel-shadow panel-border py-10 py-md-20 px-15 px-md-30">
-                                    <h3 class="font-19 font-weight-bold">{{ trans('panel.noticeboard') }}</h3>
+                                    @endif
+                                @if(request()->is('custom_html') || request()->is('panel') || request()->is('panel/setting') || request()->is('panel/rewards') || request()->is('panel/store/purchases') || request()->is('panel/notifications') || request()->is('panel/support/tickets'))
+                                <div class="col-12 col-lg-12 mb-30 rurera-hide">
+                                    <div class="bg-white noticeboard rounded-sm panel-shadow panel-border py-10 py-md-20 px-15 px-md-30">
+                                        <h3 class="font-19 font-weight-bold">{{ trans('panel.noticeboard') }}</h3>
 
-                                    @foreach($authUser->getUnreadNoticeboards() as $getUnreadNoticeboard)
-                                        <div class="noticeboard-item py-15">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <div>
-                                                    <h4 class="js-noticeboard-title font-weight-500">{!! truncate($getUnreadNoticeboard->title,150) !!}</h4>
-                                                    <div class="font-12 text-gray mt-5">
-                                                        <span class="mr-5">{{ trans('public.created_by') }} {{ $getUnreadNoticeboard->sender }}</span>
-                                                        |
-                                                        <span class="js-noticeboard-time ml-5">{{ dateTimeFormat($getUnreadNoticeboard->created_at,'j M Y') }}</span>
+                                        @foreach($authUser->getUnreadNoticeboards() as $getUnreadNoticeboard)
+                                            <div class="noticeboard-item py-15">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <h4 class="js-noticeboard-title font-weight-500">{!! truncate($getUnreadNoticeboard->title,150) !!}</h4>
+                                                        <div class="font-12 text-gray mt-5">
+                                                            <span class="mr-5">{{ trans('public.created_by') }} {{ $getUnreadNoticeboard->sender }}</span>
+                                                            |
+                                                            <span class="js-noticeboard-time ml-5">{{ dateTimeFormat($getUnreadNoticeboard->created_at,'j M Y') }}</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div>
+                                                        <button type="button" data-id="{{ $getUnreadNoticeboard->id }}" class="js-noticeboard-info btn btn-sm btn-border-white">{{ trans('panel.more_info') }}</button>
+                                                        <input type="hidden" class="js-noticeboard-message" value="{{ $getUnreadNoticeboard->message }}">
                                                     </div>
                                                 </div>
-
-                                                <div>
-                                                    <button type="button" data-id="{{ $getUnreadNoticeboard->id }}" class="js-noticeboard-info btn btn-sm btn-border-white">{{ trans('panel.more_info') }}</button>
-                                                    <input type="hidden" class="js-noticeboard-message" value="{{ $getUnreadNoticeboard->message }}">
-                                                </div>
                                             </div>
-                                        </div>
-                                    @endforeach
+                                        @endforeach
 
+                                    </div>
                                 </div>
-                            </div>
                                 @endif
                                 @if(auth()->user()->isUser())
                                 @if( $authUser->getUserQuests(array(), array('learning_journey'), array('daily'))->count() > 0 )
