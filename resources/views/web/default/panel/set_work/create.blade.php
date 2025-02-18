@@ -179,7 +179,7 @@
                                             class="assignment_topic_type_check" value="sats" data-tag_title="SATs">
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
-                                                <img src="/assets/default/img/assignment-logo/sats.png">
+                                                <img src="/assets/default/img/assignment-logo/sats.png" alt="sats">
                                                 <h3>SATs</h3>
                                             </div>
                                         </span>
@@ -190,7 +190,7 @@
                                             class="assignment_topic_type_check" value="books" data-tag_title="Books">
                                         <span class="radio-btn"><i class="las la-check"></i>
                                             <div class="card-icon">
-                                                <img src="/assets/default/img/types/books.svg">
+                                                <img src="/assets/default/img/types/books.svg" alt="books">
                                                 <h3>Books</h3>
                                             </div>
                                         </span>
