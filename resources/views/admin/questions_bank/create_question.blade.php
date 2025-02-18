@@ -877,9 +877,6 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                             @enderror
                                                         </div>
                                                     </div>
-
-                                                    
-													
 													<div class="col-12">
 														<div class="form-group">
 															<label class="input-label">Search Keywords / Tags (Enter Search terms which will be use when looking for your questions)</label>
