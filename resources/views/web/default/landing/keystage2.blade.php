@@ -230,7 +230,7 @@
                                 <div class="categories-card">
                                     <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
                                     <div class="categories-icon" style="background: #2d6a4f;">
-                                        <img src="/assets/default/svgs/categories-science.svg" alt="categories-science">
+                                        <img src="/assets/default/svgs/categories-science.svg" width="300" height="300" alt="categories-science">
                                     </div>
                                     <a href="#"><h3 class="categories-title">Science</h3></a>
                                 </div>
@@ -241,7 +241,7 @@
                                 <div class="categories-card">
                                     <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
                                     <div class="categories-icon" style="background: #66f;">
-                                        <img src="/assets/default/svgs/categories-history.svg" alt="categories-history">
+                                        <img src="/assets/default/svgs/categories-history.svg" width="2560" height="2560" alt="categories-history">
                                     </div>
                                     <a href="#"><h3 class="categories-title">History</h3></a>
                                 </div>
@@ -252,7 +252,7 @@
                                 <div class="categories-card">
                                     <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
                                     <div class="categories-icon" style="background: #f90;">
-                                        <img src="/assets/default/svgs/categories-education.svg" alt="categories-education">
+                                        <img src="/assets/default/svgs/categories-education.svg" width="200" height="200" alt="categories-education">
                                     </div>
                                     <a href="#"><h3 class="categories-title">Religious Education</h3></a>
                                 </div>
@@ -263,7 +263,7 @@
                                 <div class="categories-card">
                                     <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
                                     <div class="categories-icon" style="background: #f60;">
-                                        <img src="/assets/default/svgs/categories-art.svg" alt="categories-art">
+                                        <img src="/assets/default/svgs/categories-art.svg" width="150" height="150" alt="categories-art">
                                     </div>
                                     <a href="#"><h3 class="categories-title">Art</h3></a>
                                 </div>
@@ -274,7 +274,7 @@
                                 <div class="categories-card">
                                     <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
                                     <div class="categories-icon" style="background: #2d6a4f;">
-                                        <img src="/assets/default/svgs/categories-art.svg" alt="categories-science">
+                                        <img src="/assets/default/svgs/categories-art.svg" width="150" height="150" alt="categories-science">
                                     </div>
                                     <a href="#"><h3 class="categories-title">SAT</h3></a>
                                 </div>
@@ -285,7 +285,7 @@
                                 <div class="categories-card">
                                     <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
                                     <div class="categories-icon" style="background: #339;">
-                                        <img src="/assets/default/svgs/categories-math.svg" alt="categories-math">
+                                        <img src="/assets/default/svgs/categories-math.svg" width="800" height="800" alt="categories-math">
                                     </div>
                                     <a href="#"><h3 class="categories-title">Maths</h3></a>
                                 </div>
