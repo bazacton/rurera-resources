@@ -275,7 +275,7 @@
                     <div class="lms-text-holder d-flex justify-content-between">
                         <div class="d-flex flex-column">
                             <h4 class="mb-10 align-items-center d-flex font-24 text-white">
-                                <span class="icon-svg mr-15"><img alt="#" height="35" src="../assets/default/svgs/bulb-white.svg" width="35" /></span>Exploring the National Curriculum in the UK?
+                                <span class="icon-svg mr-15"><img alt="#" height="30" src="/assets/default/svgs/bulb-white.svg" width="30" /></span>Exploring the National Curriculum in the UK?
                             </h4>
                             <p class="mb-0 font-16 text-white">Our resources will help you navigate and provide a comprehensive learning experience for your students.</p>
                         </div>
