@@ -1055,8 +1055,8 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                             <div class="form-group">
                                                 <label class="input-label">Question Example</label>
                                                 <textarea class="note-codable summernote" id="question_example"
-                                                          name="question_example"
-                                                          aria-multiline="true">{{isset( $question_example )? $question_example : ''}}</textarea>
+                                                    name="question_example"
+                                                    aria-multiline="true">{{isset( $question_example )? $question_example : ''}}</textarea>
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-12">
