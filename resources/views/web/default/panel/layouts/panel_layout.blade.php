@@ -200,34 +200,34 @@
 
                                 @if( !empty( $profile_navs ) )
                                 <div class="col-12 col-lg-12">
-                                <div class="sidebar-students-list db-members">
-                                <div class="card p-15">
-                                <h3 class="font-19 font-weight-bold d-flex justify-content-between align-items-center flex-wrap">
-                                    Switch Accounts
-                                    <a href="/panel/students" class="view-all font-weight-bold font-16">View All</a>
-                                </h3>
+                                    <div class="sidebar-students-list db-members">
+                                        <div class="card p-15">
+                                            <h3 class="font-19 font-weight-bold d-flex justify-content-between align-items-center flex-wrap">
+                                                Switch Accounts
+                                                <a href="/panel/students" class="view-all font-weight-bold font-16">View All</a>
+                                            </h3>
                                 
-                                @foreach( $profile_navs as $profile_nav)
-                                    @php $childObj = $profile_nav->user; 
-                                    if( !isset( $childObj->id)){
-                                        continue;
-                                    }@endphp
-                                    @php $full_name = (isset( $navData['is_parent'] ) && $navData['is_parent'] == true)? 'Parent Dashboard' : $childObj->get_full_name(); @endphp
-                                <div class="row align-items-center students-list-item">
-                                    <a href="javascript:;" class="col-auto">
-                                        <img src="{{ $childObj->getAvatar() }}" alt="{{$full_name}}" class="avatar rounded-circle" width="40">
-                                    </a>
+                                            @foreach( $profile_navs as $profile_nav)
+                                                @php $childObj = $profile_nav->user; 
+                                                if( !isset( $childObj->id)){
+                                                    continue;
+                                                }@endphp
+                                                @php $full_name = (isset( $navData['is_parent'] ) && $navData['is_parent'] == true)? 'Parent Dashboard' : $childObj->get_full_name(); @endphp
+                                            <div class="row align-items-center students-list-item">
+                                                <a href="javascript:;" class="col-auto">
+                                                    <img src="{{ $childObj->getAvatar() }}" alt="{{$full_name}}" class="avatar rounded-circle" width="40">
+                                                </a>
 
-                                    <a href="javascript:;" class="col-auto  ms-2">
-                                        <h6 class="font-14 font-weight-500">{{$full_name}}</h6>
-                                    </a>
-                                    <a href="javascript:;" class="col-auto  ms-2">
-                                        <a href="/panel/switch_user/{{$childObj->id}}" class="switch-user-btn"><span class="icon-box"><img src="/assets/default/svgs/switch-btn.svg" alt="" width="40"></span></a>
-                                    </a>
-                                </div>
-                                @endforeach
-                                </div>
-                                </div>
+                                                <a href="javascript:;" class="col-auto  ms-2">
+                                                    <h6 class="font-14 font-weight-500">{{$full_name}}</h6>
+                                                </a>
+                                                <a href="javascript:;" class="col-auto  ms-2">
+                                                    <a href="/panel/switch_user/{{$childObj->id}}" class="switch-user-btn"><span class="icon-box"><img src="/assets/default/svgs/switch-btn.svg" alt="" width="40"></span></a>
+                                                </a>
+                                            </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
                                 </div>
                                 @endif
                     
