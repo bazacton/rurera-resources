@@ -26,7 +26,7 @@
                         <div class="col-12 col-lg-4 col-md-4">
                             <div class="icon-box">
                                 <span class="icon-holder" style="background-color: #f6b801;">
-                                    <img src="../assets/default/svgs/student-user-white.svg" alt="#" height="30" width="30" />
+                                    <img src="/assets/default/svgs/student-user-white.svg" alt="student-user-white" height="30" width="30" />
                                 </span>
                                 <div class="text-holder">
                                     <h2 class="text-white font-18 font-weight-bold mb-10 d-block">Times tables Treasure Hunt</h2>
@@ -37,7 +37,7 @@
                         <div class="col-12 col-lg-4 col-md-4">
                             <div class="icon-box">
                                 <span class="icon-holder" style="background-color: #7679ee;">
-                                    <img src="../assets/default/svgs/student-user-white.svg" alt="#" height="30" width="30" />
+                                    <img src="/assets/default/svgs/student-user-white.svg" alt="student-user-white" height="30" width="30" />
                                 </span>
                                 <div class="text-holder">
                                     <h2 class="text-white font-18 font-weight-bold mb-10 d-block">Division Tables Problems</h2>
@@ -48,7 +48,7 @@
                         <div class="col-12 col-lg-4 col-md-4">
                             <div class="icon-box">
                                 <span class="icon-holder" style="background-color: #f35b05;">
-                                    <img src="../assets/default/svgs/student-user-white.svg" alt="#" height="30" width="30" />
+                                    <img src="/assets/default/svgs/student-user-white.svg" alt="student-user-white" height="30" width="30" />
                                 </span>
                                 <div class="text-holder">
                                     <h2 class="text-white font-18 font-weight-bold mb-10 d-block">Multiplication tables challenges</h2>
@@ -66,7 +66,7 @@
             <div class="row">
                 <div class="col-12 col-lg-6 col-md-6">
                     <div class="position-relative">
-                        <img src="../assets/default/img/time-tables/times-tables.png" height="350" width="390" alt="#" />
+                        <img src="/assets/default/img/time-tables/times-tables.png" height="350" width="390" alt="times-tables" />
                         <img src="/assets/default/img/home/circle-4.png" class="find-instructor-section-circle" alt="circle" width="170" height="170" style="top: -50px; right: 25%;" />
                         <img src="/assets/default/img/home/dot.png" class="find-instructor-section-dots" alt="dots" width="70" height="110" style="left: 0; bottom: 0;" />
                     </div>
