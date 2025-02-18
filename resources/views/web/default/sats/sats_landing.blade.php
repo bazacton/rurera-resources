@@ -1,28 +1,12 @@
 @extends(getTemplate().'.layouts.app')
 
 @push('styles_top')
-<style>
-    .gallery-sub-header {
-        min-height: 850px;
-    }
 
-    .lms-search-services {
-        background-color: #f27530;
-    }
-
-    .lms-column-section {
-        background-color: #7679ee;
-    }
-
-    .choose-sats-section {
-        background-color: #3d358b;
-    }
-</style>
 @endpush
 
 @section('content')
 <section class="content-section">
-    <section class="position-relative job-singup-sub-header gallery-sub-header page-sub-header pb-80 pt-80 mb-0">
+    <section class="position-relative job-singup-sub-header gallery-sub-header page-sub-header pb-80 pt-80 mb-0" style="min-height: 850px;">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 col-md-12 col-lg-6">
@@ -263,7 +247,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-search-services mb-0 mt-0 pt-80 pb-60">
+    <section class="lms-search-services mb-0 mt-0 pt-80 pb-60" style="background-color: #f27530;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -550,7 +534,7 @@
             </div>
         </div>
     </section>
-    <section class="lms-column-section lms-text-section exploring-curriculum mx-w-100 mt-80 mb-80 pt-70 pb-70">
+    <section class="lms-column-section lms-text-section exploring-curriculum mx-w-100 mt-80 mb-80 pt-70 pb-70" style="background-color: #7679ee;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -713,7 +697,7 @@
             </div>
         </div>
     </section>
-    <section class="choose-sats choose-sats-section py-80 mt-80 mt-0-sm">
+    <section class="choose-sats choose-sats-section py-80 mt-80 mt-0-sm" style="background-color: #3d358b;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12">
