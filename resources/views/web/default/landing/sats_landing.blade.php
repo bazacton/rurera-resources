@@ -19,17 +19,17 @@
                     </p>
                     <ul class="mb-0 p-0">
                         <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/mobile.svg" width="25" height="25" alt="#">Top Performance: Engaging Quizzes & Assessments
+                            <img src="../assets/default/svgs/mobile.svg" width="25" height="25" alt="mobile">Top Performance: Engaging Quizzes & Assessments
                         </li>
                         <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/preparation.svg" width="25" height="25" alt="#">Comprehensive Exam Prep: Tools & Strategies
+                            <img src="../assets/default/svgs/preparation.svg" width="25" height="25" alt="preparation">Comprehensive Exam Prep: Tools & Strategies
 
                         </li>
                         <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/graphic-design.svg" width="25" height="25" alt="#">Score Guarantee: Achieve Your Best
+                            <img src="../assets/default/svgs/graphic-design.svg" width="25" height="25" alt="graphic-design">Score Guarantee: Achieve Your Best
                         </li>
                         <li class="font-19">
-                            <img src="../assets/default/svgs/book-opend.svg" width="25" height="25" alt="#">Proven Resources: 100% Success Results
+                            <img src="../assets/default/svgs/book-opend.svg" width="25" height="25" alt="book-opend">Proven Resources: 100% Success Results
                         </li>
                     </ul>
                     <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
@@ -43,7 +43,7 @@
                         <div class="img-holder">
                             <figure>
                                 <a href="{{url('/')}}/register">
-                                    <img src="/store/1/default_images/sats-header/ks1-16.png" width="140" height="45" alt="#" class="rounded">
+                                    <img src="/store/1/default_images/sats-header/ks1-16.png" width="140" height="45" alt="ks1-16" class="rounded">
                                 </a>
                             </figure>
                         </div>
@@ -53,7 +53,7 @@
                         <div class="img-holder">
                             <figure>
                                 <a href="{{url('/')}}/register">
-                                    <img src="/store/1/default_images/sats-header/key-16.png" width="140" height="59" alt="#" class="rounded">
+                                    <img src="/store/1/default_images/sats-header/key-16.png" width="140" height="59" alt="key-16" class="rounded">
                                 </a>
                             </figure>
                         </div>
@@ -63,7 +63,7 @@
                         <div class="img-holder">
                             <figure>
                                 <a href="{{url('/')}}/register">
-                                    <img src="/store/1/default_images/sats-header/ks1-17.png" width="140" height="45" alt="#" class="rounded">
+                                    <img src="/store/1/default_images/sats-header/ks1-17.png" width="140" height="45" alt="ks1-17" class="rounded">
                                 </a>
                             </figure>
                         </div>
@@ -73,7 +73,7 @@
                         <div class="img-holder">
                             <figure>
                                 <a href="{{url('/')}}/register">
-                                    <img src="/store/1/default_images/sats-header/key-17.png" width="140" height="59" alt="#" class="rounded">
+                                    <img src="/store/1/default_images/sats-header/key-17.png" width="140" height="59" alt="key-17" class="rounded">
                                 </a>
                             </figure>
                         </div>
@@ -83,7 +83,7 @@
                         <div class="img-holder">
                             <figure>
                                 <a href="{{url('/')}}/register">
-                                    <img src="/store/1/default_images/sats-header/ks1-18.png" width="140" height="45" alt="#" class="rounded">
+                                    <img src="/store/1/default_images/sats-header/ks1-18.png" width="140" height="45" alt="ks1-18" class="rounded">
                                 </a>
                             </figure>
                         </div>
@@ -93,7 +93,7 @@
                         <div class="img-holder">
                             <figure>
                                 <a href="{{url('/')}}/register">
-                                    <img src="/store/1/default_images/sats-header/ks1-19.png" width="140" height="45" alt="#" class="rounded">
+                                    <img src="/store/1/default_images/sats-header/ks1-19.png" width="140" height="45" alt="ks1-19" class="rounded">
                                 </a>
                             </figure>
                         </div>
@@ -103,7 +103,7 @@
                         <div class="img-holder">
                             <figure>
                                 <a href="{{url('/')}}/register">
-                                    <img src="/store/1/default_images/sats-header/key-18.png" width="140" height="59" alt="#" class="rounded">
+                                    <img src="/store/1/default_images/sats-header/key-18.png" width="140" height="59" alt="key-18" class="rounded">
                                 </a>
                             </figure>
                         </div>
@@ -113,7 +113,7 @@
                         <div class="img-holder">
                             <figure>
                                 <a href="{{url('/')}}/register">
-                                    <img src="/store/1/default_images/sats-header/key-19.png" width="140" height="59" alt="#" class="rounded">
+                                    <img src="/store/1/default_images/sats-header/key-19.png" width="140" height="59" alt="key-19" class="rounded">
                                 </a>
                             </figure>
                         </div>
@@ -123,7 +123,7 @@
                         <div class="img-holder">
                             <figure>
                                 <a href="{{url('/')}}/register">
-                                    <img src="/store/1/default_images/sats-header/ks1-22.png" width="140" height="45" alt="#" class="rounded">
+                                    <img src="/store/1/default_images/sats-header/ks1-22.png" width="140" height="45" alt="ks1-22" class="rounded">
                                 </a>
                             </figure>
                         </div>
@@ -133,7 +133,7 @@
                         <div class="img-holder">
                             <figure>
                                 <a href="{{url('/')}}/register">
-                                    <img src="/store/1/default_images/sats-header/key-22.png" width="140" height="59" alt="#" class="rounded">
+                                    <img src="/store/1/default_images/sats-header/key-22.png" width="140" height="59" alt="key-22" class="rounded">
                                 </a>
                             </figure>
                         </div>
