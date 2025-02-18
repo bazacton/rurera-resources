@@ -429,117 +429,117 @@
   
                             @if(!request()->is('panel') && !request()->is('panel/setting') && !request()->is('panel/rewards') && !request()->is('panel/marketing/affiliates') && !request()->is('panel/store/purchases') && !request()->is('panel/notifications') && !request()->is('panel/support/tickets'))
                                 
-                                @if(request()->is('shop'))
-                                    <div class="col-12 col-lg-12 mb-30">
-                                        <div class="product-card medium panel-border bg-white rounded-sm p-20">
-                                            <div class="product-controls nav" id="myTab" role="tablist">
-                                                <a href="#trending" class="active font-16 font-weight-bold" id="trending-tab" data-toggle="tab" href="#trending" role="tab" aria-controls="trending" aria-selected="true">Trending Toys</a>
-                                                <a href="#shortlisted" class="font-16 font-weight-bold" id="shortlisted-tab" data-toggle="tab" href="#shortlisted" role="tab" aria-controls="shortlisted" aria-selected="false">Shortlisted</a>
-                                            </div>
-                                            <div class="tab-content" id="myTabContent">
-                                                <div class="tab-pane fade show active" id="trending" role="tabpanel" aria-labelledby="trending-tab">
-                                                    @if( isset( $trending_toys ) && $trending_toys->count() > 0)
-                                                        @foreach( $trending_toys as $product)
-                                                            @include('web.default.products.includes.sidebar_card')
-                                                        @endforeach
-                                                    @endif
-                                                </div>
-                                                <div class="tab-pane fade" id="shortlisted" role="tabpanel" aria-labelledby="shortlisted-tab">
-                                                    @if( isset( $shortlisted_toys ) && $shortlisted_toys->count() > 0)
-                                                    @foreach( $shortlisted_toys as $product)
+                            @if(request()->is('shop'))
+                                <div class="col-12 col-lg-12 mb-30">
+                                    <div class="product-card medium panel-border bg-white rounded-sm p-20">
+                                        <div class="product-controls nav" id="myTab" role="tablist">
+                                            <a href="#trending" class="active font-16 font-weight-bold" id="trending-tab" data-toggle="tab" href="#trending" role="tab" aria-controls="trending" aria-selected="true">Trending Toys</a>
+                                            <a href="#shortlisted" class="font-16 font-weight-bold" id="shortlisted-tab" data-toggle="tab" href="#shortlisted" role="tab" aria-controls="shortlisted" aria-selected="false">Shortlisted</a>
+                                        </div>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="trending" role="tabpanel" aria-labelledby="trending-tab">
+                                                @if( isset( $trending_toys ) && $trending_toys->count() > 0)
+                                                    @foreach( $trending_toys as $product)
                                                         @include('web.default.products.includes.sidebar_card')
                                                     @endforeach
                                                 @endif
-                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                @endif
-                            @endif
-
-                            @if(request()->is('custom_html'))
-                            <div class="col-12 col-lg-12">
-                                <div class="mobile-app-card panel-shadow mb-30">
-                                    <div class="card h-md-100" dir="ltr">
-                                        <div class="card-body d-flex flex-column flex-center">
-                                            <div class="mb-2">
-                                                <h3 class="fw-semibold text-center">
-                                                    Have you tried <br> new
-                                                    <span> Mobile Application ?</span>
-                                                </h3>
-                                                <div class="py-10 text-center">
-                                                    <img src="/assets/default/svgs/panel-app.svg" class="theme-dark-show w-200px" alt="panel-app">
-                                                </div>
-                                            </div>
-                                            <div class="button-controls">
-                                                <a class="btn btn-sm btn-primary" data-target="#modal_create_app" data-toggle="modal">Try now</a>
-                                                <a class="btn btn-sm btn-light" href="#">Learn more</a>
+                                            <div class="tab-pane fade" id="shortlisted" role="tabpanel" aria-labelledby="shortlisted-tab">
+                                                @if( isset( $shortlisted_toys ) && $shortlisted_toys->count() > 0)
+                                                @foreach( $shortlisted_toys as $product)
+                                                    @include('web.default.products.includes.sidebar_card')
+                                                @endforeach
+                                            @endif
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            @endif
+                        @endif
 
-                            <div class="col-12 col-lg-12">
-                                <div class="facebook-card mb-30">
-                                    <div class="card card-flush border-0 h-lg-100" data-theme="light" style="background-color: #7239EA">
-                                        <div class="card-header">
-                                            <h3 class="card-title">
-                                                <span class="card-label text-white">Facebook Campaign</span>
-                                                <span class="badge badge-success">Active</span>
+                        @if(request()->is('custom_html'))
+                        <div class="col-12 col-lg-12">
+                            <div class="mobile-app-card panel-shadow mb-30">
+                                <div class="card h-md-100" dir="ltr">
+                                    <div class="card-body d-flex flex-column flex-center">
+                                        <div class="mb-2">
+                                            <h3 class="fw-semibold text-center">
+                                                Have you tried <br> new
+                                                <span> Mobile Application ?</span>
                                             </h3>
-                                            <div class="card-toolbar">
-                                                <button class="btn" id="sidebar-dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#8594;</button>
-                                                <div class="dropdown-menu" aria-labelledby="sidebar-dropdown1">
-                                                    <div class="menu-item px-3">
-                                                        <div class="menu-content fs-6 text-gray-900 fw-bold px-3 py-4">Quick Actions</div>
-                                                    </div>
-                                                    <div class="separator mb-3 opacity-75"></div>
-                                                    <div class="menu-item px-3">
-                                                        <a href="#" class="menu-link px-3">New Ticket</a>
-                                                    </div>
-                                                    <div class="menu-item px-3">
-                                                        <a href="#" class="menu-link px-3">New Customer</a>
-                                                    </div>
-                                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
-                                                        <a href="#" class="menu-link px-3">
-                                                            <span class="menu-title">New Group</span>
-                                                            <span class="menu-arrow"></span>
-                                                        </a>
-                                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                                            <div class="menu-item px-3">
-                                                                <a href="#" class="menu-link px-3">
-                                                                    Admin Group
-                                                                </a>
-                                                            </div>
-                                                            <div class="menu-item px-3">
-                                                                <a href="#" class="menu-link px-3">
-                                                                    Staff Group
-                                                                </a>
-                                                            </div>
-                                                            <div class="menu-item px-3">
-                                                                <a href="#" class="menu-link px-3">
-                                                                    Member Group
-                                                                </a>
-                                                            </div>
+                                            <div class="py-10 text-center">
+                                                <img src="/assets/default/svgs/panel-app.svg" class="theme-dark-show w-200px" alt="panel-app">
+                                            </div>
+                                        </div>
+                                        <div class="button-controls">
+                                            <a class="btn btn-sm btn-primary" data-target="#modal_create_app" data-toggle="modal">Try now</a>
+                                            <a class="btn btn-sm btn-light" href="#">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-12">
+                            <div class="facebook-card mb-30">
+                                <div class="card card-flush border-0 h-lg-100" data-theme="light" style="background-color: #7239EA">
+                                    <div class="card-header">
+                                        <h3 class="card-title">
+                                            <span class="card-label text-white">Facebook Campaign</span>
+                                            <span class="badge badge-success">Active</span>
+                                        </h3>
+                                        <div class="card-toolbar">
+                                            <button class="btn" id="sidebar-dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#8594;</button>
+                                            <div class="dropdown-menu" aria-labelledby="sidebar-dropdown1">
+                                                <div class="menu-item px-3">
+                                                    <div class="menu-content fs-6 text-gray-900 fw-bold px-3 py-4">Quick Actions</div>
+                                                </div>
+                                                <div class="separator mb-3 opacity-75"></div>
+                                                <div class="menu-item px-3">
+                                                    <a href="#" class="menu-link px-3">New Ticket</a>
+                                                </div>
+                                                <div class="menu-item px-3">
+                                                    <a href="#" class="menu-link px-3">New Customer</a>
+                                                </div>
+                                                <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
+                                                    <a href="#" class="menu-link px-3">
+                                                        <span class="menu-title">New Group</span>
+                                                        <span class="menu-arrow"></span>
+                                                    </a>
+                                                    <div class="menu-sub menu-sub-dropdown w-175px py-4">
+                                                        <div class="menu-item px-3">
+                                                            <a href="#" class="menu-link px-3">
+                                                                Admin Group
+                                                            </a>
                                                         </div>
-                                                    </div>
-                                                    <div class="menu-item px-3">
-                                                        <a href="#" class="menu-link px-3">
-                                                            New Contact
-                                                        </a>
-                                                    </div>
-                                                    <div class="separator mt-3 opacity-75"></div>
-                                                    <div class="menu-item px-3">
-                                                        <div class="menu-content px-3 py-3">
-                                                            <a class="btn btn-primary  btn-sm px-4" href="#">
-                                                                Generate Reports
+                                                        <div class="menu-item px-3">
+                                                            <a href="#" class="menu-link px-3">
+                                                                Staff Group
+                                                            </a>
+                                                        </div>
+                                                        <div class="menu-item px-3">
+                                                            <a href="#" class="menu-link px-3">
+                                                                Member Group
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="menu-item px-3">
+                                                    <a href="#" class="menu-link px-3">
+                                                        New Contact
+                                                    </a>
+                                                </div>
+                                                <div class="separator mt-3 opacity-75"></div>
+                                                <div class="menu-item px-3">
+                                                    <div class="menu-content px-3 py-3">
+                                                        <a class="btn btn-primary  btn-sm px-4" href="#">
+                                                            Generate Reports
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+                                    </div>
                                     <div class="card-body">
                                         <div class="d-flex flex-wrap">
                                             <div class="d-flex counted">
@@ -625,7 +625,7 @@
                                                             <span>Avarage <br> Share</span>
                                                         </div>
                                                         <div class="key-progress">
-                                                        <div class="key-date-select">
+                                                            <div class="key-date-select">
                                                                 <a href="#">Jul 22 - Aug 22</a>
                                                                 <button class="btn" id="sidebar-dropdown5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     <span></span>
