@@ -313,7 +313,7 @@
                         <div class="d-flex flex-column">
                             <h4 class="mb-10 font-30 align-items-center d-inline-flex text-white">
                                 <span class="icon-svg mr-15">
-                                    <img src="../assets/default/svgs/bulb-white.svg" height="35" width="35" alt="#">
+                                    <img src="/assets/default/svgs/bulb-white.svg" height="30" width="30" alt="bulb-white">
                                 </span>
                                 Boost Your Spelling and Vocabulary Skills Today!
                             </h4>
