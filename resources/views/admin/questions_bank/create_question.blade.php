@@ -1019,12 +1019,12 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
 															@enderror
 														</div>
 													</div>
-													</div>
-                                                </div>
+												</div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
                             <div class="tab-pane mt-3 fade" id="glossary_solution" role="tabpanel" aria-labelledby="glossary_solution-tab">
 
