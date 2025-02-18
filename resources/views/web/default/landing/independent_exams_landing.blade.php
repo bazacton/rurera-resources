@@ -13,10 +13,10 @@
                     <h2 class="font-30 mb-15">Unlock your Dreams: Master Entrance Exams</h2>
                     <p class="font-19">Prepare for UK independent entrance exams with ease using our comprehensive resources. Our expert support helps you excel effortlessly.</p>
                     <ul class="mb-30 p-0">
-                        <li class="mb-10 font-19"><img alt="#" height="25" src="../assets/default/svgs/mobile.svg" width="25" />Learning Practice: Targeted skill-building sessions.</li>
-                        <li class="mb-10 font-19"><img alt="#" height="25" src="../assets/default/svgs/preparation.svg" width="25" />Test Preparation: Comprehensive exam strategies.</li>
-                        <li class="mb-10 font-19"><img alt="#" height="25" src="../assets/default/svgs/graphic-design.svg" width="25" />Score Guarantee: Commitment to improved performance.</li>
-                        <li class="font-19"><img alt="#" height="25" src="../assets/default/svgs/book-opend.svg" width="25" />100% Proven Approach: Proven approach to success.</li>
+                        <li class="mb-10 font-19"><img alt="#" height="25" src="/assets/default/svgs/mobile.svg" width="25" />Learning Practice: Targeted skill-building sessions.</li>
+                        <li class="mb-10 font-19"><img alt="#" height="25" src="/assets/default/svgs/preparation.svg" width="25" />Test Preparation: Comprehensive exam strategies.</li>
+                        <li class="mb-10 font-19"><img alt="#" height="25" src="/assets/default/svgs/graphic-design.svg" width="25" />Score Guarantee: Commitment to improved performance.</li>
+                        <li class="font-19"><img alt="#" height="25" src="/assets/default/svgs/book-opend.svg" width="25" />100% Proven Approach: Proven approach to success.</li>
                     </ul>
                     <a href="https://rurera.com/pricing" class="py-15 px-30 text-dark-blue register-btn try-rurera-btn  mt-0">Try Rurera for free</a>
                 </div>
@@ -257,7 +257,7 @@
                         <figure>
                             <i class="svg-icon" style="background-color: #46b7e9;">
                                 <img alt="Dedicated Professional Support" height="200" src="/assets/default/svgs/features-resources-white.svg" width="200" />
-                            </i>
+                                </i>
                         </figure>
                         <div class="lms-text-holder">
                             <h3 class="font-30 mb-15 post-title" itemprop="title">Dedicated Professional Support</h3>
