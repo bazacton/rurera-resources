@@ -676,31 +676,31 @@
                     <div class="row">
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
-                                <img src="../assets/default/svgs/exam-multiple-white.svg" width="50" height="50" alt="#" />
+                                <img src="../assets/default/svgs/exam-multiple-white.svg" width="50" height="50" alt="exam-multiple-white" />
                                 <span class="text-white">100+ SATs practices</span>
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
-                                <img src="../assets/default/svgs/lessons-white.svg" width="50" height="50" alt="#" />
+                                <img src="../assets/default/svgs/lessons-white.svg" width="50" height="50" alt="lessons-white" />
                                 <span class="text-white">SATs Resources</span>
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
-                                <img src="../assets/default/svgs/impact-white.svg" width="50" height="50" alt="#" />
+                                <img src="../assets/default/svgs/impact-white.svg" width="50" height="50" alt="impact-white" />
                                 <span class="text-white">SATs Assesments</span>
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
-                                <img src="../assets/default/svgs/sav-time-white.svg" width="50" height="50" alt="#" />
+                                <img src="../assets/default/svgs/sav-time-white.svg" width="50" height="50" alt="sav-time-white" />
                                 <span class="text-white">SATs Quizzes</span>
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 col-md-6">
                             <div class="sats-box border-white has-bg">
-                                <img src="../assets/default/svgs/study-white.svg" width="50" height="50" alt="#" />
+                                <img src="../assets/default/svgs/study-white.svg" width="50" height="50" alt="study-white" />
                                 <span class="text-white">SATs Tests</span>
                             </div>
                         </div>
