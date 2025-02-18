@@ -17,16 +17,16 @@
                     </p>
                     <ul class="mb-0 p-0">
                         <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/mobile.svg" width="25" height="25" alt="#">Curriculum Word Lists: According to Curriculum word sets.
+                            <img src="../assets/default/svgs/mobile.svg" width="25" height="25" alt="mobile">Curriculum Word Lists: According to Curriculum word sets.
                         </li>
                         <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/preparation.svg" width="25" height="25" alt="#">Spelling Quizzes: Fun and interactive quizzes.
+                            <img src="../assets/default/svgs/preparation.svg" width="25" height="25" alt="preparation">Spelling Quizzes: Fun and interactive quizzes.
                         </li>
                         <li class="mb-10 font-19">
-                            <img src="../assets/default/svgs/graphic-design.svg" width="25" height="25" alt="#">Win Rewards: Earn rewards for milestones.
+                            <img src="../assets/default/svgs/graphic-design.svg" width="25" height="25" alt="graphic-design">Win Rewards: Earn rewards for milestones.
                         </li>
                         <li class="font-19">
-                            <img src="../assets/default/svgs/book-opend.svg" width="25" height="25" alt="#">Progress Tracking: Easy monitoring.
+                            <img src="../assets/default/svgs/book-opend.svg" width="25" height="25" alt="book-opend">Progress Tracking: Easy monitoring.
                         </li>
                     </ul>
                     <a href="/pricing" class="try-rurera-btn justify-content-center bg-primary text-white register-btn">Try Rurera for free</a>
