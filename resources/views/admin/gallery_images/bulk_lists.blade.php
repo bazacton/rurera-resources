@@ -416,6 +416,9 @@ ul.crop_sizes {
                                                 @can('admin_gallery_images_reject')
                                                     <a href="javascript:;" data-id="{{ $GalleryBulkListObj->id }}" class="reject-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Reject"><i class="fas fa-ban"></i></a>&nbsp;&nbsp;&nbsp;
                                                 @endcan
+                                                @if($user->id == 1325)
+                                                        <a href="javascript:;" data-id="{{ $GalleryBulkListObj->id }}" class="reject-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Reject"><i class="fas fa-ban"></i></a>&nbsp;&nbsp;&nbsp;
+                                                @endif
                                             @endif
                                         @endif
 @if($GalleryBulkListObj->status == 'Reset')
