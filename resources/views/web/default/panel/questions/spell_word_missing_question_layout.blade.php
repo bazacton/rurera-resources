@@ -103,7 +103,6 @@ shuffle($characters_list);
                 <div class="spells-quiz-from question-layout">
                     <div class="form-field">
 					
-					
 						@php $words_counter = 0; $field_html = ''; @endphp
                         @while($words_counter < $no_of_words)
                             @php $words_counterplus = $words_counter+1;
@@ -140,7 +139,6 @@ shuffle($characters_list);
 						<div class="quiz-input-fields">
 						{!! $field_html !!}
 						</div>
-						
 						
 						<div class="rurera-virtual-keyboard">
 							<button type="button" class="keyboard-btn">Keyboard <span class="icon-box"><img src="/assets/default/svgs/keyboard.svg" alt=""></span> </button>
@@ -184,19 +182,12 @@ shuffle($characters_list);
 								</div>
 						  </div>
 						</div>
-						
 						<input type="text" class="editor-field hide " data-field_id="{{$field_id}}" data-id="{{$field_id}}" id="field-{{$field_id}}">
-					
                     </div>
-
-
-
                     <div class="question-correct-answere rurera-hide">
                         {{$correct_answer}} - {{$question->id}}
                     </div>
 					<div class="question-populated-response"></div>
-
-
                     <div class="form-btn-field">
                         <button type="button" class="question-review-btn" data-id="{{ $question->id }}">Finish</button>
                         <button type="submit" class="question-submit-btn">Enter</button>
