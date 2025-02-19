@@ -382,7 +382,13 @@ ul.crop_sizes {
 											@endforeach
 										@endif
 									</td>
-                                    <td class="text-left" data-id="user">{{ $GalleryBulkListObj->status }}</td>
+                                    <td class="text-left" data-id="user">{{ $GalleryBulkListObj->status }}
+
+                                        @if($GalleryBulkListObj->status == 'Rejected')
+                                            <br><br>{{$GalleryBulkListObj->rejected_comment}}
+                                        @endif
+
+                                    </td>
                                     <td class="text-left" data-id="user">{{ $image_reference_url }}</td>
                                     <td class="text-left" data-id="created_at">
 									@if($GalleryBulkListObj->status == 'Pending')
@@ -403,725 +409,777 @@ ul.crop_sizes {
                                         @if($GalleryBulkListObj->status == 'Pending')
 											<a href="javascript:;" data-id="{{ $GalleryBulkListObj->id }}" class="upload-image-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Upload image"><i class="fas fa-upload"></i></a>&nbsp;&nbsp;&nbsp;
 										@endif
-										@if($GalleryBulkListObj->status == 'Generated')
+										@if($GalleryBulkListObj->status == 'Generated' || $GalleryBulkListObj->status == 'Rejected')
 											<a href="javascript:;" data-id="{{ $GalleryBulkListObj->id }}" class="upload-image-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Re-upload image"><i class="fas fa-sync"></i></a>&nbsp;&nbsp;&nbsp;
 											<a href="/admin/questions-generator/remove_question_image/{{ $GalleryBulkListObj->id }}" data-id="{{ $GalleryBulkListObj->id }}" class="remove-image-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Remove image"><i class="fas fa-times"></i></a>&nbsp;&nbsp;&nbsp;
-										@endif
-										@if($GalleryBulkListObj->status == 'Reset')
-											<a href="javascript:;" data-id="{{ $GalleryBulkListObj->id }}" class="upload-image-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Re-upload image"><i class="fas fa-sync"></i></a>&nbsp;&nbsp;&nbsp;
-										@endif
-                                    </td>
-                                </tr>
-                                @endforeach
+                                            @if($GalleryBulkListObj->status == 'Generated')
+                                                @can('admin_gallery_images_reject')
+                                                    <a href="javascript:;" data-id="{{ $GalleryBulkListObj->id }}" class="reject-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Reject"><i class="fas fa-ban"></i></a>&nbsp;&nbsp;&nbsp;
+                                                @endcan
+                                            @endif
+                                        @endif
+@if($GalleryBulkListObj->status == 'Reset')
+<a href="javascript:;" data-id="{{ $GalleryBulkListObj->id }}" class="upload-image-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Re-upload image"><i class="fas fa-sync"></i></a>&nbsp;&nbsp;&nbsp;
+@endif
 
-                            </table>
-                        </div>
-                    </div>
 
-                    <div class="card-footer text-center">
-                        {{ $GalleryBulkLists->links() }}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+</td>
+</tr>
+@endforeach
+
+</table>
+</div>
+</div>
+
+<div class="card-footer text-center">
+{{ $GalleryBulkLists->links() }}
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 
 <div class="modal fade" id="imagemodal-list" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered">
-		<div class="modal-content">
-			<div class="modal-body">
-				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-				<img src="" class="imagepreview-list" style="max-width: 460px;">
-			</div>
-		</div>
-	</div>
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<img src="" class="imagepreview-list" style="max-width: 460px;">
+</div>
+</div>
+</div>
 </div>
 
 <div id="template_save_modal" class="template_save_modal modal fade" role="dialog" data-backdrop="static">
-    <div class="modal-dialog">
-        <div class="modal-content edit-quest-modal-div">
-            <div class="modal-body">
-			  <div class="modal-box">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h3 class="font-20 font-weight-normal mb-10">Save the Template</h3>
-				<p class="mb-15 font-16">
-					<input type="text" name="template_name" class="template_name form-control">
-				</p>
-				<input type="hidden" name="form_data_encoded" class="form_data_encoded">
-				<input type="hidden" name="template_type" class="template_type">
-				<input type="hidden" name="form_id" class="form_id">
+<div class="modal-dialog">
+<div class="modal-content edit-quest-modal-div">
+<div class="modal-body">
+<div class="modal-box">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h3 class="font-20 font-weight-normal mb-10">Save the Template</h3>
+<p class="mb-15 font-16">
+<input type="text" name="template_name" class="template_name form-control">
+</p>
+<input type="hidden" name="form_data_encoded" class="form_data_encoded">
+<input type="hidden" name="template_type" class="template_type">
+<input type="hidden" name="form_id" class="form_id">
 
-				<div class="inactivity-controls">
-					<a href="javascript:;" class="continue-btn save-template-btn button btn btn-primary">Save Template</a>
-				</div>
-			  </div>
-			</div>
-        </div>
-    </div>
+<div class="inactivity-controls">
+<a href="javascript:;" class="continue-btn save-template-btn button btn btn-primary">Save Template</a>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 
 
 <div id="gallery_bulk_list" class="gallery_bulk_list modal fade" role="dialog" data-backdrop="static">
-    <div class="modal-dialog">
-        <div class="modal-content edit-quest-modal-div">
-            <div class="modal-body">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			  <div class="modal-box">
-			  <form action="/admin/gallery_images/gallery-bulk-list" method="POST" id="gallery-bulk-list-form" class="px-25 gallery-bulk-list-form">
-				@csrf
+<div class="modal-dialog">
+<div class="modal-content edit-quest-modal-div">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+<div class="modal-box">
+<form action="/admin/gallery_images/gallery-bulk-list" method="POST" id="gallery-bulk-list-form" class="px-25 gallery-bulk-list-form">
+@csrf
 
-				<div class="row">
-					<div class="col-md-12 col-lg-12">
-					<div class="row">
-						<div class="col-md-12 col-lg-12">
-							<h2 class="font-20 font-weight-bold mb-15">Generate Bulk Images List</h2>
-						</div>
-						<div class="col-md-12 col-lg-12 conditional-child-fields Course-fields">
-							<div class="form-group">
-								<label class="input-label">{{trans('admin/main.category')}}</label>
-								<select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
-									<option value="">{{trans('admin/main.all_categories')}}</option>
-									@foreach($categories as $category)
-									@if(!empty($category->subCategories) and count($category->subCategories))
-									<optgroup label="{{  $category->title }}">
-										@foreach($category->subCategories as $subCategory)
-										<option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
-										@endforeach
-									</optgroup>
-									@else
-									<option value="{{ $category->id }}">{{ $category->title }}</option>
-									@endif
-									@endforeach
-								</select>
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-12 conditional-child-fields Course-fields">
-							<div class="form-group">
-								<label class="input-label">Subjects</label>
-								<select data-chapter_id="" id="subject_id"
-										class="rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
-										name="subject_id" data-next_index="chapter_id" data-next_value="">
-									<option value="">Please select year, subject</option>
-								</select>
-								@error('subject_id')
-								<div class="invalid-feedback">
-									{{ $message }}
-								</div>
-								@enderror
+<div class="row">
+<div class="col-md-12 col-lg-12">
+<div class="row">
+<div class="col-md-12 col-lg-12">
+<h2 class="font-20 font-weight-bold mb-15">Generate Bulk Images List</h2>
+</div>
+<div class="col-md-12 col-lg-12 conditional-child-fields Course-fields">
+<div class="form-group">
+<label class="input-label">{{trans('admin/main.category')}}</label>
+<select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
+<option value="">{{trans('admin/main.all_categories')}}</option>
+@foreach($categories as $category)
+@if(!empty($category->subCategories) and count($category->subCategories))
+<optgroup label="{{  $category->title }}">
+@foreach($category->subCategories as $subCategory)
+<option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
+@endforeach
+</optgroup>
+@else
+<option value="{{ $category->id }}">{{ $category->title }}</option>
+@endif
+@endforeach
+</select>
+</div>
+</div>
+<div class="col-md-12 col-lg-12 conditional-child-fields Course-fields">
+<div class="form-group">
+<label class="input-label">Subjects</label>
+<select data-chapter_id="" id="subject_id"
+class="rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
+name="subject_id" data-next_index="chapter_id" data-next_value="">
+<option value="">Please select year, subject</option>
+</select>
+@error('subject_id')
+<div class="invalid-feedback">
+{{ $message }}
+</div>
+@enderror
 
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-12 conditional-child-fields course-fields">
-							<div class="form-group">
-								<label class="input-label">Topic</label>
-								<select data-sub_chapter_id="" id="chapter_id"
-										class="rurera-req-field form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
-										name="chapter_id" data-disabled="{{isset($already_created_bulk_lists)? json_encode($already_created_bulk_lists) : ''}}" data-next_index="sub_chapter_id" data-next_value="">
-									<option value="">Please select year, subject</option>
-								</select>
-								@error('chapter_id')
-								<div class="invalid-feedback">
-									{{ $message }}
-								</div>
-								@enderror
+</div>
+</div>
+<div class="col-md-12 col-lg-12 conditional-child-fields course-fields">
+<div class="form-group">
+<label class="input-label">Topic</label>
+<select data-sub_chapter_id="" id="chapter_id"
+class="rurera-req-field form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
+name="chapter_id" data-disabled="{{isset($already_created_bulk_lists)? json_encode($already_created_bulk_lists) : ''}}" data-next_index="sub_chapter_id" data-next_value="">
+<option value="">Please select year, subject</option>
+</select>
+@error('chapter_id')
+<div class="invalid-feedback">
+{{ $message }}
+</div>
+@enderror
 
-							</div>
-						</div>
-						<div class="col-md-12 col-lg-12 conditional-child-fields course-fields">
-							<div class="form-group">
-								<label class="input-label">Sub Topic</label>
-								<select id="sub_chapter_id"
-									class="rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
-									name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
-								<option value="">Please select year, subject, Topic</option>
-							</select>
-							@error('sub_chapter_id')
-							<div class="invalid-feedback">
-								{{ $message }}
-							</div>
-							@enderror
+</div>
+</div>
+<div class="col-md-12 col-lg-12 conditional-child-fields course-fields">
+<div class="form-group">
+<label class="input-label">Sub Topic</label>
+<select id="sub_chapter_id"
+class="rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
+<option value="">Please select year, subject, Topic</option>
+</select>
+@error('sub_chapter_id')
+<div class="invalid-feedback">
+{{ $message }}
+</div>
+@enderror
 
-							</div>
-						</div>
+</div>
+</div>
 
-						</div>
-					</div>
-				</div>
-				<div class="inactivity-controls">
-					<button type="submit" class="submit-btn mt-0">Generate List</button>
-					<!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
-				</div>
-				</form>
-			  </div>
-			</div>
-        </div>
-    </div>
+</div>
+</div>
+</div>
+<div class="inactivity-controls">
+<button type="submit" class="submit-btn mt-0">Generate List</button>
+<!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 
 <div id="upload_image_area" class="upload_image_area modal fade" role="dialog" data-backdrop="static">
-    <div class="modal-dialog modal-lg" style="max-width:100%;">
-        <div class="modal-content edit-quest-modal-div">
-            <div class="modal-body">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			  <div class="modal-box">
-			  <form action="/admin/questions-generator/apply_template" method="POST" id="upload_image_area_form" class="px-25 upload_image_area_form" enctype="multipart/form-data">
-				@csrf
+<div class="modal-dialog modal-lg" style="max-width:100%;">
+<div class="modal-content edit-quest-modal-div">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+<div class="modal-box">
+<form action="/admin/questions-generator/apply_template" method="POST" id="upload_image_area_form" class="px-25 upload_image_area_form" enctype="multipart/form-data">
+@csrf
 
-				<input type="hidden" name="bulk_list_id" class="bulk_list_id" value="0">
+<input type="hidden" name="bulk_list_id" class="bulk_list_id" value="0">
 
-				<div class="image-upload-block">
-				<div class="row">
-					<div class="col-md-12 col-lg-12s">
-						<div class="row">
-							<div class="col-md-12 col-lg-12">
-								<h2 class="font-20 font-weight-bold mb-15">Image Upload</h2>
-							</div>
-							<div class="col-12 col-md-12 col-lg-12">
-                                <input type="hidden" name="crop_size" class="crop_size">
-								<ul class="crop_sizes">
-									@php $sizes_references = sizes_references(); $size_count = 1;@endphp
-									@if(!empty( $sizes_references ))
-										@foreach( $sizes_references as $size_reference_index => $size_reference_data)
-											@php $size_reference_label = isset( $size_reference_data['label'] )? $size_reference_data['label'] : '';
-											$size_reference_width = isset( $size_reference_data['width'] )? $size_reference_data['width'] : '';
-											$size_reference_height = isset( $size_reference_data['height'] )? $size_reference_data['height'] : '';
-											@endphp
-											<li data-size_class="{{$size_reference_index}}" data-crop_size_width="{{$size_reference_width}}" data-crop_size_height="{{$size_reference_height}}" class="{{($size_count == 1)? 'active' : ''}}">{{$size_reference_label}}</li>
-											@php $size_count++ @endphp
-										@endforeach
-									@endif
-								</ul>
-								<div id="upload-container" class="rurera-upload-area">
-									<div id="drag-drop-area">
-									  <p>Drag & Drop your files here or click to upload</p>
-									  <input type="file" id="file-input">
-									</div>
-									<ul id="file-list"></ul>
-								</div>
-							</div>
-							<div class="col-12 col-md-12 col-lg-12 img-contaner w-100 image-crop-area"></div>
-							<div class="col-12 col-md-12 col-lg-12  preview-cropped-img"></div>
+<div class="image-upload-block">
+<div class="row">
+<div class="col-md-12 col-lg-12s">
+<div class="row">
+<div class="col-md-12 col-lg-12">
+<h2 class="font-20 font-weight-bold mb-15">Image Upload</h2>
+</div>
+<div class="col-12 col-md-12 col-lg-12">
+<input type="hidden" name="crop_size" class="crop_size">
+<ul class="crop_sizes">
+@php $sizes_references = sizes_references(); $size_count = 1;@endphp
+@if(!empty( $sizes_references ))
+@foreach( $sizes_references as $size_reference_index => $size_reference_data)
+@php $size_reference_label = isset( $size_reference_data['label'] )? $size_reference_data['label'] : '';
+$size_reference_width = isset( $size_reference_data['width'] )? $size_reference_data['width'] : '';
+$size_reference_height = isset( $size_reference_data['height'] )? $size_reference_data['height'] : '';
+@endphp
+<li data-size_class="{{$size_reference_index}}" data-crop_size_width="{{$size_reference_width}}" data-crop_size_height="{{$size_reference_height}}" class="{{($size_count == 1)? 'active' : ''}}">{{$size_reference_label}}</li>
+@php $size_count++ @endphp
+@endforeach
+@endif
+</ul>
+<div id="upload-container" class="rurera-upload-area">
+<div id="drag-drop-area">
+<p>Drag & Drop your files here or click to upload</p>
+<input type="file" id="file-input">
+</div>
+<ul id="file-list"></ul>
+</div>
+</div>
+<div class="col-12 col-md-12 col-lg-12 img-contaner w-100 image-crop-area"></div>
+<div class="col-12 col-md-12 col-lg-12  preview-cropped-img"></div>
 
-                            <div class="col-12 col-md-12 col-lg-12">
-                            <div class="form-group">
-                                <label class="input-label">Image Reference Text</label>
-                                <input type="text" name="image_reference_url" id="image_reference_url"
-                                        class="rurera-req-field form-control ">
+<div class="col-12 col-md-12 col-lg-12">
+<div class="form-group">
+<label class="input-label">Image Reference Text</label>
+<input type="text" name="image_reference_url" id="image_reference_url"
+class="rurera-req-field form-control ">
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="inactivity-controls">
+<button type="button" class="btn btn-primary crop-it mt-0">Crop</button>
+<button type="submit" class="btn btn-primary crop-image-next-btn rurera-hide mt-0">Next</button>
+<!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
+</div>
+
+</div>
+<div class="template-selection rurera-hide">
+<div class="example-selected-questions"></div>
+<div class="row">
+<div class="col-md-12 col-lg-12">
+<button type="button" class="btn btn-primary crop-image-back-btn mt-0">Back</button>
+</div>
+<div class="col-12">
+<ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="section-tabid-Emerging" data-toggle="tab" href="#section-tab-Emerging" role="tab"
+           aria-controls="section-tab-Emerging" aria-selected="true"><span class="tab-title">Emerging</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="section-tabid-Expected" data-toggle="tab" href="#section-tab-Expected" role="tab"
+           aria-controls="section-tab-Expected" aria-selected="true"><span class="tab-title">Expected</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="section-tabid-Exceeding" data-toggle="tab" href="#section-tab-Exceeding" role="tab"
+           aria-controls="section-tab-Exceeding" aria-selected="true"><span class="tab-title">Exceeding</span></a>
+    </li>
+</ul>
+
+<div class="tab-content" id="myTabContent2">
+    <div class="tab-pane mt-3 fade in active show difficulty_levels" id="section-tab-Emerging" role="tabpanel" aria-labelledby="section-tab-Emerging-tab">
+        <div class="row">
+            @if($emerging_example_questions->count() > 0)
+                @php $counter = 1; @endphp
+                @foreach($emerging_example_questions as $exampleQuestionObj)
+                    @php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
+                    @php $sizes_reference = json_decode($exampleQuestionObj->sizes_reference);
+                    $sizes_reference_classes = is_array($sizes_reference)? implode(' ', $sizes_reference) : '';
+                    @endphp
+                    <div class="col-12 col-lg-4 col-md-6 {{$sizes_reference_classes}} {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
+                        <div class="template-box">
+                            <div class="rating-stars">
+                                <div class="rating-box">
+                                    <input type="checkbox" id="star-one">
+                                    <label for="star-one">
+                                        <i class="fas fa-star"></i>
+                                    </label>
+                                </div>
                             </div>
+                            <div class="card-icon pop">
+                                <img src="{{$exampleQuestionObj->example_thumbnail}}">
                             </div>
+                            <div class="template-controls">
+                                <button type="button" class="preview-template-btn">Preview template (#{{$exampleQuestionObj->id}}) ({{$exampleQuestionObj->question_difficulty_level}})
+                                </button>
+                                <button type="button" class="template-btn" data-template_image="{{$exampleQuestionObj->example_thumbnail}}" data-template_name="{{$exampleQuestionObj->getTitleAttribute()}}" data-template_id="{{$exampleQuestionObj->id}}">Select Template</button>
+                            </div>
+                            <div class="template-data-info">
+                                <span>{{$exampleQuestionObj->search_tags}}</span>
+                            </div>
+                        </div>
+                    </div>
+                @php $counter++; @endphp
+                @endforeach
+            @endif
+        </div>
+    </div>
 
-						</div>
-					</div>
-				</div>
-				<div class="inactivity-controls">
-					<button type="button" class="btn btn-primary crop-it mt-0">Crop</button>
-					<button type="submit" class="btn btn-primary crop-image-next-btn rurera-hide mt-0">Next</button>
-					<!-- <a href="javascript:;" class="close" data-dismiss="modal" aria-label="Continue">Close</a> -->
-				</div>
+    <div class="tab-pane mt-3 fade difficulty_levels" id="section-tab-Expected" role="tabpanel" aria-labelledby="section-tab-Expected-tab">
+       <div class="row">
+            @if($expected_example_questions->count() > 0)
+                @php $counter = 1; @endphp
+                @foreach($expected_example_questions as $exampleQuestionObj)
+                @php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
+                @php $sizes_reference = json_decode($exampleQuestionObj->sizes_reference);
+                    $sizes_reference_classes = is_array($sizes_reference)? implode(' ', $sizes_reference) : '';
+                    @endphp
+                    <div class="col-12 col-lg-4 col-md-6 {{$sizes_reference_classes}} {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
+                        <div class="template-box">
+                            <div class="rating-stars">
+                                <div class="rating-box">
+                                    <input type="checkbox" id="star-one">
+                                    <label for="star-one">
+                                        <i class="fas fa-star"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="card-icon pop">
+                                <img src="{{$exampleQuestionObj->example_thumbnail}}">
+                            </div>
+                            <div class="template-controls">
+                                <button type="button" class="preview-template-btn">Preview template (#{{$exampleQuestionObj->id}}) ({{$exampleQuestionObj->question_difficulty_level}})
+                                </button>
+                                <button type="button" class="template-btn" data-template_image="{{$exampleQuestionObj->example_thumbnail}}" data-template_name="{{$exampleQuestionObj->getTitleAttribute()}}" data-template_id="{{$exampleQuestionObj->id}}">Select Template</button>
+                            </div>
+                            <div class="template-data-info">
+                                <span>{{$exampleQuestionObj->search_tags}}</span>
+                            </div>
+                        </div>
+                    </div>
+                @php $counter++; @endphp
+                @endforeach
+            @endif
+        </div>
+    </div>
 
-				</div>
-				<div class="template-selection rurera-hide">
-				<div class="example-selected-questions"></div>
-				<div class="row">
-										<div class="col-md-12 col-lg-12">
-											<button type="button" class="btn btn-primary crop-image-back-btn mt-0">Back</button>
-										</div>
-											<div class="col-12">
-											<ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                                                <li class="nav-item">
-                                                    <a class="nav-link active" id="section-tabid-Emerging" data-toggle="tab" href="#section-tab-Emerging" role="tab"
-                                                       aria-controls="section-tab-Emerging" aria-selected="true"><span class="tab-title">Emerging</span></a>
-                                                </li>
-												<li class="nav-item">
-                                                    <a class="nav-link" id="section-tabid-Expected" data-toggle="tab" href="#section-tab-Expected" role="tab"
-                                                       aria-controls="section-tab-Expected" aria-selected="true"><span class="tab-title">Expected</span></a>
-                                                </li>
-												<li class="nav-item">
-                                                    <a class="nav-link" id="section-tabid-Exceeding" data-toggle="tab" href="#section-tab-Exceeding" role="tab"
-                                                       aria-controls="section-tab-Exceeding" aria-selected="true"><span class="tab-title">Exceeding</span></a>
-                                                </li>
-                                            </ul>
+    <div class="tab-pane mt-3 fade difficulty_levels" id="section-tab-Exceeding" role="tabpanel" aria-labelledby="section-tab-Exceeding-tab">
+       <div class="row">
+            @if($exceeding_example_questions->count() > 0)
+                @php $counter = 1; @endphp
+                @foreach($exceeding_example_questions as $exampleQuestionObj)
+                @php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
+                @php $sizes_reference = json_decode($exampleQuestionObj->sizes_reference);
+                    $sizes_reference_classes = is_array($sizes_reference)? implode(' ', $sizes_reference) : '';
+                    @endphp
+                    <div class="col-12 col-lg-4 col-md-6 {{$sizes_reference_classes}} {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
+                        <div class="template-box">
+                            <div class="rating-stars">
+                                <div class="rating-box">
+                                    <input type="checkbox" id="star-one">
+                                    <label for="star-one">
+                                        <i class="fas fa-star"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="card-icon pop">
+                                <img src="{{$exampleQuestionObj->example_thumbnail}}">
+                            </div>
+                            <div class="template-controls">
+                                <button type="button" class="preview-template-btn">Preview template (#{{$exampleQuestionObj->id}}) ({{$exampleQuestionObj->question_difficulty_level}})
+                                </button>
+                                <button type="button" class="template-btn" data-template_image="{{$exampleQuestionObj->example_thumbnail}}" data-template_name="{{$exampleQuestionObj->getTitleAttribute()}}" data-template_id="{{$exampleQuestionObj->id}}">Select Template</button>
+                            </div>
+                            <div class="template-data-info">
+                                <span>{{$exampleQuestionObj->search_tags}}</span>
+                            </div>
+                        </div>
+                    </div>
+                @php $counter++; @endphp
+                @endforeach
+            @endif
+        </div>
+    </div>
 
-											<div class="tab-content" id="myTabContent2">
-                                                <div class="tab-pane mt-3 fade in active show difficulty_levels" id="section-tab-Emerging" role="tabpanel" aria-labelledby="section-tab-Emerging-tab">
-													<div class="row">
-														@if($emerging_example_questions->count() > 0)
-															@php $counter = 1; @endphp
-															@foreach($emerging_example_questions as $exampleQuestionObj)
-																@php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
-																@php $sizes_reference = json_decode($exampleQuestionObj->sizes_reference);
-																$sizes_reference_classes = is_array($sizes_reference)? implode(' ', $sizes_reference) : '';
-																@endphp
-																<div class="col-12 col-lg-4 col-md-6 {{$sizes_reference_classes}} {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
-																	<div class="template-box">
-																		<div class="rating-stars">
-																			<div class="rating-box">
-																				<input type="checkbox" id="star-one">
-																				<label for="star-one">
-																					<i class="fas fa-star"></i>
-																				</label>
-																			</div>
-																		</div>
-																		<div class="card-icon pop">
-																			<img src="{{$exampleQuestionObj->example_thumbnail}}">
-																		</div>
-																		<div class="template-controls">
-																			<button type="button" class="preview-template-btn">Preview template (#{{$exampleQuestionObj->id}}) ({{$exampleQuestionObj->question_difficulty_level}})
-																			</button>
-																			<button type="button" class="template-btn" data-template_image="{{$exampleQuestionObj->example_thumbnail}}" data-template_name="{{$exampleQuestionObj->getTitleAttribute()}}" data-template_id="{{$exampleQuestionObj->id}}">Select Template</button>
-																		</div>
-																		<div class="template-data-info">
-																			<span>{{$exampleQuestionObj->search_tags}}</span>
-																		</div>
-																	</div>
-																</div>
-															@php $counter++; @endphp
-															@endforeach
-														@endif
-													</div>
-                                                </div>
-
-												<div class="tab-pane mt-3 fade difficulty_levels" id="section-tab-Expected" role="tabpanel" aria-labelledby="section-tab-Expected-tab">
-                                                   <div class="row">
-														@if($expected_example_questions->count() > 0)
-															@php $counter = 1; @endphp
-															@foreach($expected_example_questions as $exampleQuestionObj)
-															@php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
-															@php $sizes_reference = json_decode($exampleQuestionObj->sizes_reference);
-																$sizes_reference_classes = is_array($sizes_reference)? implode(' ', $sizes_reference) : '';
-																@endphp
-																<div class="col-12 col-lg-4 col-md-6 {{$sizes_reference_classes}} {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
-																	<div class="template-box">
-																		<div class="rating-stars">
-																			<div class="rating-box">
-																				<input type="checkbox" id="star-one">
-																				<label for="star-one">
-																					<i class="fas fa-star"></i>
-																				</label>
-																			</div>
-																		</div>
-																		<div class="card-icon pop">
-																			<img src="{{$exampleQuestionObj->example_thumbnail}}">
-																		</div>
-																		<div class="template-controls">
-																			<button type="button" class="preview-template-btn">Preview template (#{{$exampleQuestionObj->id}}) ({{$exampleQuestionObj->question_difficulty_level}})
-																			</button>
-																			<button type="button" class="template-btn" data-template_image="{{$exampleQuestionObj->example_thumbnail}}" data-template_name="{{$exampleQuestionObj->getTitleAttribute()}}" data-template_id="{{$exampleQuestionObj->id}}">Select Template</button>
-																		</div>
-																		<div class="template-data-info">
-																			<span>{{$exampleQuestionObj->search_tags}}</span>
-																		</div>
-																	</div>
-																</div>
-															@php $counter++; @endphp
-															@endforeach
-														@endif
-													</div>
-                                                </div>
-
-												<div class="tab-pane mt-3 fade difficulty_levels" id="section-tab-Exceeding" role="tabpanel" aria-labelledby="section-tab-Exceeding-tab">
-                                                   <div class="row">
-														@if($exceeding_example_questions->count() > 0)
-															@php $counter = 1; @endphp
-															@foreach($exceeding_example_questions as $exampleQuestionObj)
-															@php $class = ($exampleQuestionObj->is_shortlisted == 1)? 'shortlisted' : ''; @endphp
-															@php $sizes_reference = json_decode($exampleQuestionObj->sizes_reference);
-																$sizes_reference_classes = is_array($sizes_reference)? implode(' ', $sizes_reference) : '';
-																@endphp
-																<div class="col-12 col-lg-4 col-md-6 {{$sizes_reference_classes}} {{$class}} template-item templates-list-{{$exampleQuestionObj->question_type}}">
-																	<div class="template-box">
-																		<div class="rating-stars">
-																			<div class="rating-box">
-																				<input type="checkbox" id="star-one">
-																				<label for="star-one">
-																					<i class="fas fa-star"></i>
-																				</label>
-																			</div>
-																		</div>
-																		<div class="card-icon pop">
-																			<img src="{{$exampleQuestionObj->example_thumbnail}}">
-																		</div>
-																		<div class="template-controls">
-																			<button type="button" class="preview-template-btn">Preview template (#{{$exampleQuestionObj->id}}) ({{$exampleQuestionObj->question_difficulty_level}})
-																			</button>
-																			<button type="button" class="template-btn" data-template_image="{{$exampleQuestionObj->example_thumbnail}}" data-template_name="{{$exampleQuestionObj->getTitleAttribute()}}" data-template_id="{{$exampleQuestionObj->id}}">Select Template</button>
-																		</div>
-																		<div class="template-data-info">
-																			<span>{{$exampleQuestionObj->search_tags}}</span>
-																		</div>
-																	</div>
-																</div>
-															@php $counter++; @endphp
-															@endforeach
-														@endif
-													</div>
-                                                </div>
-
-                                            </div>
-                                            </div>
+</div>
+</div>
 
 
 
-										<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-											<div class="modal-dialog modal-dialog-centered">
-												<div class="modal-content">
-													<div class="modal-body">
-														<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-														<img src="" class="imagepreview">
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-12 col-lg-12">
-											<button type="submit" class="btn btn-primary apply-template-btn1 mt-0">Apply Template</button>
-										</div>
-									</div>
-									</div>
-
-				</form>
-			  </div>
-			</div>
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <img src="" class="imagepreview">
         </div>
     </div>
 </div>
+</div>
+<div class="col-md-12 col-lg-12">
+<button type="submit" class="btn btn-primary apply-template-btn1 mt-0">Apply Template</button>
+</div>
+</div>
+</div>
+
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="modal fade" id="topic-part-details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered">
-		<div class="modal-content">
-			<div class="modal-body">
-				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-				<div class="topic-part-details copyable-text">
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<div class="topic-part-details copyable-text">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade reject-comment-block" id="reject-comment-block" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+<form action="/admin/gallery_images/reject-gallery" method="POST" id="upload_image_area_form" class="px-25 upload_image_area_form" enctype="multipart/form-data">
+@csrf
+
+<input type="hidden" name="bulk_list_id" class="bulk_list_id" value="0">
+
+<div class="image-upload-block">
+<div class="row">
+<div class="col-md-12 col-lg-12s">
+
+<div class="form-group mt-15">
+<label class="input-label">Reject Comment</label>
+<textarea name="reject-comment" rows="10" class="form-control reject-comment" placeholder="Reject Comment"></textarea>
+
+</div>
+
+
+</div>
+<div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
+<button type="submit" class="reject-btn-submit btn btn-primary w-100">Submit</button>
+</div>
+</div>
+</div>
+</form>
+
+
+
+</div>
+</div>
+</div>
 </div>
 @endsection
 
 @push('scripts_bottom')
 
-	<script src="/assets/default/js/admin/cropimage.js?ver={{$random_id}}"></script>
-	<script src="/assets/default/js/admin/crop-script.js?ver={{$random_id}}"></script>
+<script src="/assets/default/js/admin/cropimage.js?ver={{$random_id}}"></script>
+<script src="/assets/default/js/admin/crop-script.js?ver={{$random_id}}"></script>
 
 
 
-	<script type="text/javascript">
+<script type="text/javascript">
 
 
-		$(document).on('click', '.topic_details', function () {
-			var bulk_id = $(this).attr('data-bulk_id');
-			var part_item_details = $('.topic-part-item-details[data-bulk_id="'+bulk_id+'"]').html();
-			$(".topic-part-details").html(part_item_details);
-			$("#topic-part-details").modal('show');
+$(document).on('click', '.topic_details', function () {
+var bulk_id = $(this).attr('data-bulk_id');
+var part_item_details = $('.topic-part-item-details[data-bulk_id="'+bulk_id+'"]').html();
+$(".topic-part-details").html(part_item_details);
+$("#topic-part-details").modal('show');
 
-		});
-		$(document).on('click', '.apply-template-btn', function () {
-			var formData = new FormData($('#upload_image_area_form')[0]);
-			var loaderDiv = $(".submit-btn");
-			//rurera_loader(loaderDiv, 'button');
-			$.ajax({
-				type: "POST",
-				dataType: "json",
-				url: '/admin/questions-generator/apply_template',
-				data: formData,
-				processData: false,
-				contentType: false,
-				success: function (return_data) {
-					console.log(return_data);
-					$("."+return_data.response_class).html(return_data.response_msg);
+});
+$(document).on('click', '.apply-template-btn', function () {
+var formData = new FormData($('#upload_image_area_form')[0]);
+var loaderDiv = $(".submit-btn");
+//rurera_loader(loaderDiv, 'button');
+$.ajax({
+type: "POST",
+dataType: "json",
+url: '/admin/questions-generator/apply_template',
+data: formData,
+processData: false,
+contentType: false,
+success: function (return_data) {
+console.log(return_data);
+$("."+return_data.response_class).html(return_data.response_msg);
 
-				}
-			});
-		});
-		$(document).on('click', '.crop-image-next-btn', function () {
-            if($("#image_reference_url").val() == ''){
-                alert('Please Provide the Reference Text');
-                return false;
-            }
-			if($(".dynaCanvas").length < 1){
-                alert('Please upload image first');
-                return false;
-			}
-		});
-		$(document).on('click', '.crop-image-back-btn', function () {
-			$(".preview-cropped-img").html("");
-			$(".image-upload-block").removeClass('rurera-hide');
-			$(".template-selection").addClass('rurera-hide');
-		});
-
-
-	$(document).on('click', '.template-btn', function () {
-			var template_image = $(this).attr('data-template_image');
-			var template_name = $(this).attr('data-template_name');
-			var template_id = $(this).attr('data-template_id');
-			if($('[name="example_question_id[]"][value="'+template_id+'"]').length > 0){
-				$('[name="example_question_id[]"][value="'+template_id+'"]').remove();
-				$(this).closest('.template-item').removeClass('active');
-			}else{
-				$(this).closest('.difficulty_levels').find('.template-btn').each(function () {
-					var template_id_selected = $(this).attr('data-template_id');
-					if($('[name="example_question_id[]"][value="'+template_id_selected+'"]').length > 0){
-						$('[name="example_question_id[]"][value="'+template_id_selected+'"]').remove();
-						$(this).closest('.template-item').removeClass('active');
-					}
-				});
-				$(".example-selected-questions").append('<input type="hidden" name="example_question_id[]" class="example_question_id" value="'+template_id+'">');
-				$(this).closest('.template-item').addClass('active');
-			}
-		});
+}
+});
+});
+$(document).on('click', '.crop-image-next-btn', function () {
+if($("#image_reference_url").val() == ''){
+alert('Please Provide the Reference Text');
+return false;
+}
+if($(".dynaCanvas").length < 1){
+alert('Please upload image first');
+return false;
+}
+});
+$(document).on('click', '.crop-image-back-btn', function () {
+$(".preview-cropped-img").html("");
+$(".image-upload-block").removeClass('rurera-hide');
+$(".template-selection").addClass('rurera-hide');
+});
 
 
-	$(document).ready(function () {
-  const dragDropArea = $("#drag-drop-area");
-  const fileInput = $("#file-input");
-  const fileList = $("#file-list");
-  const cropBTN = $(".crop-btn");
-
-  // Allowed settings
-  const allowedTypes = ["image/jpeg", "image/png", "application/pdf"];
-  const maxSizeMB = 5; // Maximum size in MB
-  const maxDimensions = { width: 1920, height: 1080 }; // Maximum dimensions in px
-
-  // Files array
-  let uploadedFiles = [];
-
-  // Open file picker on click
-  dragDropArea.on("click", function () {
-    fileInput.click();
-  });
-
-  // Handle file selection
-  fileInput.on("change", function (event) {
-    handleFiles(event.target.files);
-	console.log('cropbtnksdfsdfsdf');
-	$(".crop-btn").click();
-  });
-
-  // Drag events
-  dragDropArea.on("dragover", function (event) {
-    event.preventDefault();
-    event.stopPropagation();
-    dragDropArea.addClass("dragging");
-  });
-
-  dragDropArea.on("dragleave", function (event) {
-    event.preventDefault();
-    event.stopPropagation();
-    dragDropArea.removeClass("dragging");
-  });
-
-  dragDropArea.on("drop", function (event) {
-    event.preventDefault();
-    event.stopPropagation();
-    dragDropArea.removeClass("dragging");
-    const files = event.originalEvent.dataTransfer.files;
-    handleFiles(files);
-	console.log('cropbtnksdfsdfsdf');
-  });
-
-  function handleFiles(files) {
-    for (let i = 0; i < 1; i++) {
-      const file = files[i];
-
-      if (!allowedTypes.includes(file.type)) {
-        alert(`File "${file.name}" is not an allowed type.`);
-        continue;
-      }
-
-      if (file.size > maxSizeMB * 1024 * 1024) {
-        alert(`File "${file.name}" exceeds the size limit of ${maxSizeMB} MB.`);
-        continue;
-      }
-
-      if (file.type.startsWith("image/")) {
-        validateImageDimensions(file, (isValid, error) => {
-          if (isValid) {
-            addFile(file);
-
-          } else {
-            alert(`File "${file.name}" ${error}`);
-          }
-        });
-      } else {
-        addFile(file); // Non-image files are added directly
-
-      }
-    }
-
-  }
-
-  function validateImageDimensions(file, callback) {
-    const img = new Image();
-    const url = URL.createObjectURL(file);
-    img.onload = function () {
-      callback(true);
-      URL.revokeObjectURL(url);
-    };
-    img.onerror = function () {
-      callback(false, "is not a valid image file.");
-      URL.revokeObjectURL(url);
-    };
-    img.src = url;
-  }
-
-  function addFile(file) {
-    if (!uploadedFiles.some((f) => f.name === file.name)) {
-      uploadedFiles.push(file);
-      renderFile(file);
-    } else {
-      alert(`File "${file.name}" is already added.`);
-    }
-  }
-
-  function renderFile(file) {
-	  const li = $('<li></li>');
-
-	  var randomId = Math.floor(Math.random() * (999999 - 999 + 1)) + 999;
-	  // Create an image preview if the file is an image
-	  let  image_orignal_source = '';
-	  if (file.type.startsWith("image/")) {
-		const reader = new FileReader();
-		reader.onload = function (event) {
-			image_orignal_source = event.target.result;
-		  const img = $('<img data-file_name="'+file.name+'" data-original_src="'+event.target.result+'" src="'+event.target.result+'" alt="'+file.name+'" class="preview-img preview-img-'+randomId+'">');
-		  //li.prepend(img); // Add image as the first element
-		  li.prepend('<script>init_crop_function("'+randomId+'", "'+file.name+'", "'+image_orignal_source+'");<\/script>'); // Add image as the first element
-		};
-		reader.readAsDataURL(file);
-	  }
-	  const fileNameSpan = $('<span class="file-name">'+file.name+'</span>');
-	  const removeBtn = $('<button class="remove-btn">Remove</button>');
-	  const cropBTN = $('<button class="crop-btn" data-image_rand_id="'+randomId+'" type="button">CROP</button>');
-
-	  // Create a hidden input element
-	  const hiddenInput = $('<input type="file" name="upload_images[]" class="image_paths_'+randomId+'" hidden>');
-
-	  // Append the hidden input to the file input container (not directly to the list)
-	  const fileClone = new DataTransfer();
-	  fileClone.items.add(file);
-	  hiddenInput[0].files = fileClone.files;
-
-	  // Add remove functionality
-	  removeBtn.on("click", function () {
-		removeFile(file.name);
-		hiddenInput.remove(); // Remove the corresponding hidden input
-		li.remove();
-	  });
-
-	  // Append elements in the desired order
-	  li.append(hiddenInput);
-	  //li.append(fileNameSpan);
-	  //li.append(removeBtn);
-	  //li.append(cropBTN);
-
-	  // Add the list item to the file list
-	  fileList.append(li);
-
-	}
+$(document).on('click', '.template-btn', function () {
+var template_image = $(this).attr('data-template_image');
+var template_name = $(this).attr('data-template_name');
+var template_id = $(this).attr('data-template_id');
+if($('[name="example_question_id[]"][value="'+template_id+'"]').length > 0){
+$('[name="example_question_id[]"][value="'+template_id+'"]').remove();
+$(this).closest('.template-item').removeClass('active');
+}else{
+$(this).closest('.difficulty_levels').find('.template-btn').each(function () {
+var template_id_selected = $(this).attr('data-template_id');
+if($('[name="example_question_id[]"][value="'+template_id_selected+'"]').length > 0){
+$('[name="example_question_id[]"][value="'+template_id_selected+'"]').remove();
+$(this).closest('.template-item').removeClass('active');
+}
+});
+$(".example-selected-questions").append('<input type="hidden" name="example_question_id[]" class="example_question_id" value="'+template_id+'">');
+$(this).closest('.template-item').addClass('active');
+}
+});
 
 
+$(document).ready(function () {
+const dragDropArea = $("#drag-drop-area");
+const fileInput = $("#file-input");
+const fileList = $("#file-list");
+const cropBTN = $(".crop-btn");
 
-  function removeFile(fileName) {
-    uploadedFiles = uploadedFiles.filter((file) => file.name !== fileName);
-  }
+// Allowed settings
+const allowedTypes = ["image/jpeg", "image/png", "application/pdf"];
+const maxSizeMB = 5; // Maximum size in MB
+const maxDimensions = { width: 1920, height: 1080 }; // Maximum dimensions in px
+
+// Files array
+let uploadedFiles = [];
+
+// Open file picker on click
+dragDropArea.on("click", function () {
+fileInput.click();
+});
+
+// Handle file selection
+fileInput.on("change", function (event) {
+handleFiles(event.target.files);
+console.log('cropbtnksdfsdfsdf');
+$(".crop-btn").click();
+});
+
+// Drag events
+dragDropArea.on("dragover", function (event) {
+event.preventDefault();
+event.stopPropagation();
+dragDropArea.addClass("dragging");
+});
+
+dragDropArea.on("dragleave", function (event) {
+event.preventDefault();
+event.stopPropagation();
+dragDropArea.removeClass("dragging");
+});
+
+dragDropArea.on("drop", function (event) {
+event.preventDefault();
+event.stopPropagation();
+dragDropArea.removeClass("dragging");
+const files = event.originalEvent.dataTransfer.files;
+handleFiles(files);
+console.log('cropbtnksdfsdfsdf');
+});
+
+function handleFiles(files) {
+for (let i = 0; i < 1; i++) {
+const file = files[i];
+
+if (!allowedTypes.includes(file.type)) {
+alert(`File "${file.name}" is not an allowed type.`);
+continue;
+}
+
+if (file.size > maxSizeMB * 1024 * 1024) {
+alert(`File "${file.name}" exceeds the size limit of ${maxSizeMB} MB.`);
+continue;
+}
+
+if (file.type.startsWith("image/")) {
+validateImageDimensions(file, (isValid, error) => {
+if (isValid) {
+addFile(file);
+
+} else {
+alert(`File "${file.name}" ${error}`);
+}
+});
+} else {
+addFile(file); // Non-image files are added directly
+
+}
+}
+
+}
+
+function validateImageDimensions(file, callback) {
+const img = new Image();
+const url = URL.createObjectURL(file);
+img.onload = function () {
+callback(true);
+URL.revokeObjectURL(url);
+};
+img.onerror = function () {
+callback(false, "is not a valid image file.");
+URL.revokeObjectURL(url);
+};
+img.src = url;
+}
+
+function addFile(file) {
+if (!uploadedFiles.some((f) => f.name === file.name)) {
+uploadedFiles.push(file);
+renderFile(file);
+} else {
+alert(`File "${file.name}" is already added.`);
+}
+}
+
+function renderFile(file) {
+const li = $('<li></li>');
+
+var randomId = Math.floor(Math.random() * (999999 - 999 + 1)) + 999;
+// Create an image preview if the file is an image
+let  image_orignal_source = '';
+if (file.type.startsWith("image/")) {
+const reader = new FileReader();
+reader.onload = function (event) {
+image_orignal_source = event.target.result;
+const img = $('<img data-file_name="'+file.name+'" data-original_src="'+event.target.result+'" src="'+event.target.result+'" alt="'+file.name+'" class="preview-img preview-img-'+randomId+'">');
+//li.prepend(img); // Add image as the first element
+li.prepend('<script>init_crop_function("'+randomId+'", "'+file.name+'", "'+image_orignal_source+'");<\/script>'); // Add image as the first element
+};
+reader.readAsDataURL(file);
+}
+const fileNameSpan = $('<span class="file-name">'+file.name+'</span>');
+const removeBtn = $('<button class="remove-btn">Remove</button>');
+const cropBTN = $('<button class="crop-btn" data-image_rand_id="'+randomId+'" type="button">CROP</button>');
+
+// Create a hidden input element
+const hiddenInput = $('<input type="file" name="upload_images[]" class="image_paths_'+randomId+'" hidden>');
+
+// Append the hidden input to the file input container (not directly to the list)
+const fileClone = new DataTransfer();
+fileClone.items.add(file);
+hiddenInput[0].files = fileClone.files;
+
+// Add remove functionality
+removeBtn.on("click", function () {
+removeFile(file.name);
+hiddenInput.remove(); // Remove the corresponding hidden input
+li.remove();
+});
+
+// Append elements in the desired order
+li.append(hiddenInput);
+//li.append(fileNameSpan);
+//li.append(removeBtn);
+//li.append(cropBTN);
+
+// Add the list item to the file list
+fileList.append(li);
+
+}
+
+
+
+function removeFile(fileName) {
+uploadedFiles = uploadedFiles.filter((file) => file.name !== fileName);
+}
 });
 
 
 
 
-	</script>
+</script>
 
 
 <script type="text/javascript">
 
-    $(document).ready(function () {
+$(document).ready(function () {
 
-		$(document).on('submit', '.gallery-bulk-list-form', function() {
-			var thisForm = $(this);
-			returnType = rurera_validation_process(thisForm);
-			if (returnType == false) {
-				return false;
-			}
-			return true;
+$(document).on('submit', '.gallery-bulk-list-form', function() {
+var thisForm = $(this);
+returnType = rurera_validation_process(thisForm);
+if (returnType == false) {
+return false;
+}
+return true;
 
-		});
+});
 
-		$(document).on('click', '.create-gallery-bulk-list-btn', function () {
-			$(".gallery_bulk_list").modal('show');
-		});
+$(document).on('click', '.create-gallery-bulk-list-btn', function () {
+$(".gallery_bulk_list").modal('show');
+});
 
-		$(document).on('click', '.upload-image-btn', function () {
-			$(".image-upload-block").removeClass('rurera-hide');
-			$(".template-selection").addClass('rurera-hide');
-			$(".image-crop-area").html('');
-			$(".preview-cropped-img").html('');
-			$(".preview-cropped-img").html('');
-			$('.template-item').removeClass('active');
-			var bulk_list_id = $(this).attr('data-id');
-			$('.bulk_list_id').val(bulk_list_id);
-			$(".rurera-upload-area").removeClass('rurera-hide');
-			$(".upload_image_area").modal('show');
-		});
+$(document).on('click', '.upload-image-btn', function () {
+$(".image-upload-block").removeClass('rurera-hide');
+$(".template-selection").addClass('rurera-hide');
+$(".image-crop-area").html('');
+$(".preview-cropped-img").html('');
+$(".preview-cropped-img").html('');
+$('.template-item').removeClass('active');
+var bulk_list_id = $(this).attr('data-id');
+$('.bulk_list_id').val(bulk_list_id);
+$(".rurera-upload-area").removeClass('rurera-hide');
+$(".upload_image_area").modal('show');
+});
+
+$(document).on('click', '.reject-btn', function () {
+
+var bulk_list_id = $(this).attr('data-id');
+$('.bulk_list_id').val(bulk_list_id);
+$(".reject-comment").val('');
+$(".reject-comment-block").modal('show');
+});
 
 
 
-		$(document).on('change', '.ajax-category-courses', function () {
-			var category_id = $(this).val();
-			var course_id = $(this).attr('data-course_id');
-			$.ajax({
-				type: "GET",
-				url: '/admin/webinars/courses_by_categories',
-				data: {'category_id': category_id, 'course_id': course_id},
-				success: function (return_data) {
-					$(".ajax-courses-dropdown").html(return_data);
-					$(".ajax-chapter-dropdown").html('<option value="">Please select year, subject</option>');
-					$('.ajax-courses-dropdown').change();
-				}
-			});
-		});
+$(document).on('change', '.ajax-category-courses', function () {
+var category_id = $(this).val();
+var course_id = $(this).attr('data-course_id');
+$.ajax({
+type: "GET",
+url: '/admin/webinars/courses_by_categories',
+data: {'category_id': category_id, 'course_id': course_id},
+success: function (return_data) {
+$(".ajax-courses-dropdown").html(return_data);
+$(".ajax-chapter-dropdown").html('<option value="">Please select year, subject</option>');
+$('.ajax-courses-dropdown').change();
+}
+});
+});
 
-		$(document).on('change', '.ajax-courses-dropdown', function () {
-			var course_id = $(this).val();
-			var chapter_id = $(this).attr('data-chapter_id');
+$(document).on('change', '.ajax-courses-dropdown', function () {
+var course_id = $(this).val();
+var chapter_id = $(this).attr('data-chapter_id');
 
-			$.ajax({
-				type: "GET",
-				url: '/admin/webinars/chapters_by_course',
-				data: {'course_id': course_id, 'chapter_id': chapter_id},
-				success: function (return_data) {
-					$(".ajax-chapter-dropdown").html(return_data);
-					$('.ajax-chapter-dropdown').change();
-				}
-			});
-		});
+$.ajax({
+type: "GET",
+url: '/admin/webinars/chapters_by_course',
+data: {'course_id': course_id, 'chapter_id': chapter_id},
+success: function (return_data) {
+$(".ajax-chapter-dropdown").html(return_data);
+$('.ajax-chapter-dropdown').change();
+}
+});
+});
 
-		$(document).on('change', '.ajax-chapter-dropdown', function () {
-			var chapter_id = $(this).val();
-			var sub_chapter_id = $(this).attr('data-sub_chapter_id');
-			$.ajax({
-				type: "GET",
-				url: '/admin/webinars/sub_chapters_by_chapter',
-				data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id},
-				success: function (return_data) {
-					$(".ajax-subchapter-dropdown").html(return_data);
-				}
-			});
-		});
-        $(".ajax-category-courses").change();
+$(document).on('change', '.ajax-chapter-dropdown', function () {
+var chapter_id = $(this).val();
+var sub_chapter_id = $(this).attr('data-sub_chapter_id');
+$.ajax({
+type: "GET",
+url: '/admin/webinars/sub_chapters_by_chapter',
+data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id},
+success: function (return_data) {
+$(".ajax-subchapter-dropdown").html(return_data);
+}
+});
+});
+$(".ajax-category-courses").change();
 
-    });
+});
 
-	$(document).on('click', '.image-preview-modal', function () {
-		$('.imagepreview-list').attr('src', $(this).attr('src'));
-		$('#imagemodal-list').modal('show');
-	});
+$(document).on('click', '.image-preview-modal', function () {
+$('.imagepreview-list').attr('src', $(this).attr('src'));
+$('#imagemodal-list').modal('show');
+});
 
 </script>
 
