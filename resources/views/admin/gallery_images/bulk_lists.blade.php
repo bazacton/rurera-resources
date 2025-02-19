@@ -413,9 +413,7 @@ ul.crop_sizes {
 											<a href="javascript:;" data-id="{{ $GalleryBulkListObj->id }}" class="upload-image-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Re-upload image"><i class="fas fa-sync"></i></a>&nbsp;&nbsp;&nbsp;
 											<a href="/admin/questions-generator/remove_question_image/{{ $GalleryBulkListObj->id }}" data-id="{{ $GalleryBulkListObj->id }}" class="remove-image-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Remove image"><i class="fas fa-times"></i></a>&nbsp;&nbsp;&nbsp;
                                             @if($GalleryBulkListObj->status == 'Generated')
-                                                @can('admin_gallery_images_reject')
-                                                    <a href="javascript:;" data-id="{{ $GalleryBulkListObj->id }}" class="reject-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Reject"><i class="fas fa-ban"></i></a>&nbsp;&nbsp;&nbsp;
-                                                @endcan
+                                                
                                                 @if($user->id == 1325)
                                                         <a href="javascript:;" data-id="{{ $GalleryBulkListObj->id }}" class="reject-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Reject"><i class="fas fa-ban"></i></a>&nbsp;&nbsp;&nbsp;
                                                 @endif
