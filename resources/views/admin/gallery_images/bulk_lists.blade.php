@@ -165,7 +165,7 @@ ul.crop_sizes {
             <div class="card card-statistic-1">
                 <div class="card-wrap">
                     <div class="card-header">
-                        <h4>Danish Today Count</h4>
+                        <h4>Danish Today Count ({{date('Y-m-d')}})</h4>
                     </div>
                     <div class="card-body">
                         {{$danish_today_count}}
