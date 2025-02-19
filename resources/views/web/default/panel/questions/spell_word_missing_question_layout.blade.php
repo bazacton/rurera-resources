@@ -89,11 +89,11 @@ shuffle($characters_list);
 				{!! isset( $layout_data )? $layout_data : ''!!}
                 <div class="spells-quiz-sound">
                     <strong>Word <a href="javascript:;"  id="sound-icon-{{ $question->id }}-word" data-id="audio_file_{{ $question->id }}-word" class="play-btn sound-icon">
-                      <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="" height="20" width="20">
-                      <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="" height="20" width="20">
+                      <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="play-circle" height="20" width="20">
+                      <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="pause-circle" height="20" width="20">
                     </a> Sentence <a href="javascript:;"  id="sound-icon-{{ $question->id }}" data-id="audio_file_{{ $question->id }}" class="play-btn sound-icon play-sentence-sound pause">
-                      <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="" height="20" width="20">
-                      <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="" height="20" width="20">
+                      <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="play-circle" height="20" width="20">
+                      <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="pause-circle" height="20" width="20">
                     </a> </strong>
                 </div>
                 <div class="player-box hide">
