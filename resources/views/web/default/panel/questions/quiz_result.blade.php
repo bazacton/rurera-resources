@@ -80,19 +80,16 @@
                                         <label class="input-label text-secondary">{{ trans('quiz.student_answer') }}</label>
                                         <textarea name="question[{{ $question->id }}][answer]" rows="10" disabled class="form-control">{{ (!empty($userAnswers[$question->id]) and !empty($userAnswers[$question->id]["answer"])) ? $userAnswers[$question->id]["answer"] : '' }}</textarea>
                                     </div>
-
                                     <div class="form-group mt-35">
                                         <label class="input-label text-secondary">{{ trans('quiz.correct_answer') }}</label>
                                         <textarea rows="10" name="question[{{ $question->id }}][correct_answer]" @if(empty($newQuizStart) or $newQuizStart->quiz->creator_id != $authUser->id) disabled @endif class="form-control">{{ $question->correct }}</textarea>
                                     </div>
-
                                     @if(!empty($newQuizStart) and $newQuizStart->quiz->creator_id == $authUser->id)
                                         <div class="form-group mt-35">
                                             <label class="font-16 text-secondary">{{ trans('quiz.grade') }}</label>
                                             <input type="text" name="question[{{ $question->id }}][grade]" value="{{ (!empty($userAnswers[$question->id]) and !empty($userAnswers[$question->id]["grade"])) ? $userAnswers[$question->id]["grade"] : 0 }}" class="form-control">
                                         </div>
                                     @endif
-
                                 @else
                                     <div class="question-multi-answers mt-35">
                                         @foreach($question->quizzesQuestionsAnswers as $key => $answer)
@@ -104,23 +101,23 @@
                                                 <input id="asw-{{ $answer->id }}" type="radio" disabled name="question[{{ $question->id }}][answer]" value="{{ $answer->id }}" {{ (!empty($userAnswers[$question->id]) and (int)$userAnswers[$question->id]["answer"] === $answer->id) ? 'checked' : '' }}>
 
                                                 @if(!$answer->image)
-                                                    <label for="asw-{{ $answer->id }}" class="answer-label font-16 d-flex text-dark-blue align-items-center justify-content-center ">
-                                                        <span class="answer-title">
-                                                            {{ $answer->title }}
-                                                            @if(!empty($userAnswers[$question->id]) and (int)$userAnswers[$question->id]["answer"] ===  $answer->id)
-                                                                <span class="d-block">({{ trans('quiz.student_answer') }})</span>
-                                                            @endif
-                                                        </span>
-                                                    </label>
+                                                <label for="asw-{{ $answer->id }}" class="answer-label font-16 d-flex text-dark-blue align-items-center justify-content-center ">
+                                                    <span class="answer-title">
+                                                        {{ $answer->title }}
+                                                        @if(!empty($userAnswers[$question->id]) and (int)$userAnswers[$question->id]["answer"] ===  $answer->id)
+                                                            <span class="d-block">({{ trans('quiz.student_answer') }})</span>
+                                                        @endif
+                                                    </span>
+                                                </label>
                                                 @else
-                                                    <label for="asw-{{ $answer->id }}" class="answer-label font-16 d-flex align-items-center text-dark-blue justify-content-center ">
-                                                        <div class="image-container">
-                                                            @if(!empty($userAnswers[$question->id]) and (int)$userAnswers[$question->id]["answer"] ===  $answer->id)
-                                                                <span class="selected font-16">{{ trans('quiz.student_answer') }}</span>
-                                                            @endif
-                                                            <img src="{{ config('app_url') . $answer->image }}" class="img-cover" alt="answer image">
-                                                        </div>
-                                                    </label>
+                                                <label for="asw-{{ $answer->id }}" class="answer-label font-16 d-flex align-items-center text-dark-blue justify-content-center ">
+                                                    <div class="image-container">
+                                                        @if(!empty($userAnswers[$question->id]) and (int)$userAnswers[$question->id]["answer"] ===  $answer->id)
+                                                            <span class="selected font-16">{{ trans('quiz.student_answer') }}</span>
+                                                        @endif
+                                                        <img src="{{ config('app_url') . $answer->image }}" class="img-cover" alt="answer image">
+                                                    </div>
+                                                </label>
                                                 @endif
                                             </div>
                                         @endforeach
