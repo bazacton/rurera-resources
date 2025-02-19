@@ -68,91 +68,91 @@ shuffle($correct_characters_list);
 @endphp
 <div class="question-area spell-question-area">
     <div class="correct-appriciate" style="display:none"></div>
-    <div class="question-step question-step-{{ $question->id }}" data-time_counter="{{$timer_counter}}" data-elapsed="0"
-         data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
-         data-start_time="0" data-qresult="{{isset( $newQuestionResult->id )? $newQuestionResult->id : 0}}"
-         data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
-        <div class="question-layout-block">
+        <div class="question-step question-step-{{ $question->id }}" data-time_counter="{{$timer_counter}}" data-elapsed="0"
+            data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
+            data-start_time="0" data-qresult="{{isset( $newQuestionResult->id )? $newQuestionResult->id : 0}}"
+            data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
+            <div class="question-layout-block">
 
-            <form class="question-fields" action="javascript:;" data-defination="{{isset($word_data['audio_defination'])? $word_data['audio_defination'] : ''}}" data-question_id="{{ $question->id }}">
-                <div class="spells-quiz-info">
-                    <ul>
-                        <li class="show-correct-answer">
-                            <span>{{$question_no}}</span> Of {{$total_questions_count}}
-                        </li>
-                        <li>
-                            <span class="nub-of-sec question-time-remaining-{{ $question->id }}" data-remaining="{{($question->question_average_time*60)}}">{{isset( $total_time_consumed )? $total_time_consumed : '-'}}</span>
-                        </li>
-                        <li class="total-points" data-total_points="{{isset( $total_points )? $total_points : 0}}">
-                            <span>{{(isset( $total_points ) && $total_points > 0)? $total_points : '--'}}</span> <img src="/assets/default/img/panel-sidebar/coins.svg" alt="" width="25">
-                        </li>
-                        <li class="play-time" data-play_time="{{isset( $total_play_time )? $total_play_time : 0}}">
-                            <span>{{(isset( $total_play_time ) && $total_play_time > 0)? $total_play_time : '--'}}</span> <img src="/assets/default/img/sidebar/games.svg" alt="" width="25">
-                        </li>
-                    </ul>
-                </div>
-                <div class="left-content has-bg">
-				<div class="question-label"><span>Fill in the Blank(s) to Complete the Hidden Word.</span></div>
-				{!! isset( $layout_data )? $layout_data : ''!!}
-				
-                <div class="spells-quiz-sound">
-                    <strong>Word <a href="javascript:;"  id="sound-icon-{{ $question->id }}-word" data-id="audio_file_{{ $question->id }}-word" class="play-btn sound-icon">
-                      <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="" height="20" width="20">
-                      <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="" height="20" width="20">
-                    </a> Sentence <a href="javascript:;"  id="sound-icon-{{ $question->id }}" data-id="audio_file_{{ $question->id }}" class="play-btn sound-icon play-sentence-sound pause">
-                      <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="" height="20" width="20">
-                      <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="" height="20" width="20">
-                    </a> </strong>
-                </div>
-                <div class="player-box">
-				   <audio  class="player-box-audio" id="audio_file_{{ $question->id }}-word" src="{{isset($word_data['word_audio'])? $word_data['word_audio'] : ''}}"> </audio>
-				   <audio  class="player-box-audio" id="audio_file_{{ $question->id }}" src="{{isset($word_data['audio_file'])? $word_data['audio_file'] : ''}}"> </audio>
-                </div>
-                <div class="spells-quiz-from question-layout">
-                    <div class="form-field">
-						<div class="word-cloud-box" id="word-cloud-{{ $question->id }}"></div>
-					
-						@php $words_counter = 0; @endphp
-                        @while($words_counter < $no_of_words)
-                            @php $words_counterplus = $words_counter+1;
-                            $field_width = ($words_counterplus >= $no_of_words)? '1.5' : '1';
-							$word_character = substr($correct_answer, $words_counter, 1);
-							$word_character = in_array($words_counter, $hidden_indexes)? '' : $word_character;
-							$field_attr = in_array($words_counter, $hidden_indexes)? 'readonly' : 'readonly';
-							$field_class = in_array($words_counter, $hidden_indexes)? 'empty-field' : 'empty-field';
-                            @endphp
-                            <input type="text" value="" maxlength="1" data-counter_id="{{$words_counter}}" class="rurera-req-field editor-field-inputs drop-target{{ $question->id }} {{$field_class}}" style="width: {{$field_width}}ch;
-                                                    background: repeating-linear-gradient(90deg, #747474 0, #747474 1ch, transparent 0, transparent 1.5ch) 0 100%/ 1ch 2px no-repeat;
-                                                    font: 1.2rem 'Ubuntu Mono', monospace;
-                                                    letter-spacing: 0.5ch;" {{$field_attr}}>
-                        @php $words_counter++;@endphp
-                        @endwhile
-						
-						<ul class="spell-characters-list droppable-characters rurera-selectable-options mt-20">
-						@if( !empty( $characters_list ) )
-							@foreach( $characters_list as $character_index => $character_char)
-								<li class="draggable" id="item-1{{ $character_index }}" draggable="true">{{$character_char}}</li>
-							@endforeach
-						@endif	
-						</ul>
-                        <input type="text" data-min="{{$no_of_words}}" class="editor-field rurera-min-char hide" data-field_id="{{$field_id}}" data-id="{{$field_id}}" id="field-{{$field_id}}">
+                <form class="question-fields" action="javascript:;" data-defination="{{isset($word_data['audio_defination'])? $word_data['audio_defination'] : ''}}" data-question_id="{{ $question->id }}">
+                    <div class="spells-quiz-info">
+                        <ul>
+                            <li class="show-correct-answer">
+                                <span>{{$question_no}}</span> Of {{$total_questions_count}}
+                            </li>
+                            <li>
+                                <span class="nub-of-sec question-time-remaining-{{ $question->id }}" data-remaining="{{($question->question_average_time*60)}}">{{isset( $total_time_consumed )? $total_time_consumed : '-'}}</span>
+                            </li>
+                            <li class="total-points" data-total_points="{{isset( $total_points )? $total_points : 0}}">
+                                <span>{{(isset( $total_points ) && $total_points > 0)? $total_points : '--'}}</span> <img src="/assets/default/img/panel-sidebar/coins.svg" alt="" width="25">
+                            </li>
+                            <li class="play-time" data-play_time="{{isset( $total_play_time )? $total_play_time : 0}}">
+                                <span>{{(isset( $total_play_time ) && $total_play_time > 0)? $total_play_time : '--'}}</span> <img src="/assets/default/img/sidebar/games.svg" alt="" width="25">
+                            </li>
+                        </ul>
                     </div>
-                    <div class="question-correct-answere rurera-hide">
-                        {{$correct_answer}} - {{$question->id}}
+                    <div class="left-content has-bg">
+                    <div class="question-label"><span>Fill in the Blank(s) to Complete the Hidden Word.</span></div>
+                    {!! isset( $layout_data )? $layout_data : ''!!}
+                    
+                    <div class="spells-quiz-sound">
+                        <strong>Word <a href="javascript:;"  id="sound-icon-{{ $question->id }}-word" data-id="audio_file_{{ $question->id }}-word" class="play-btn sound-icon">
+                        <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="" height="20" width="20">
+                        <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="" height="20" width="20">
+                        </a> Sentence <a href="javascript:;"  id="sound-icon-{{ $question->id }}" data-id="audio_file_{{ $question->id }}" class="play-btn sound-icon play-sentence-sound pause">
+                        <img class="play-icon" src="/assets/default/svgs/play-circle.svg" alt="" height="20" width="20">
+                        <img class="pause-icon" src="/assets/default/svgs/pause-circle.svg" alt="" height="20" width="20">
+                        </a> </strong>
                     </div>
-					<div class="question-populated-response"></div>
-                    <div class="form-btn-field">
-                        <button type="button" class="question-review-btn" data-id="{{ $question->id }}">
-                            Finish
-                            <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
-						</button>
-                        <button type="submit" class="question-submit-btn">Mark Answer</button>
-                        <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
-                            Next
-                            <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                        </a>
+                    <div class="player-box">
+                    <audio  class="player-box-audio" id="audio_file_{{ $question->id }}-word" src="{{isset($word_data['word_audio'])? $word_data['word_audio'] : ''}}"> </audio>
+                    <audio  class="player-box-audio" id="audio_file_{{ $question->id }}" src="{{isset($word_data['audio_file'])? $word_data['audio_file'] : ''}}"> </audio>
                     </div>
-                </div>
+                    <div class="spells-quiz-from question-layout">
+                        <div class="form-field">
+                            <div class="word-cloud-box" id="word-cloud-{{ $question->id }}"></div>
+                        
+                            @php $words_counter = 0; @endphp
+                            @while($words_counter < $no_of_words)
+                                @php $words_counterplus = $words_counter+1;
+                                $field_width = ($words_counterplus >= $no_of_words)? '1.5' : '1';
+                                $word_character = substr($correct_answer, $words_counter, 1);
+                                $word_character = in_array($words_counter, $hidden_indexes)? '' : $word_character;
+                                $field_attr = in_array($words_counter, $hidden_indexes)? 'readonly' : 'readonly';
+                                $field_class = in_array($words_counter, $hidden_indexes)? 'empty-field' : 'empty-field';
+                                @endphp
+                                <input type="text" value="" maxlength="1" data-counter_id="{{$words_counter}}" class="rurera-req-field editor-field-inputs drop-target{{ $question->id }} {{$field_class}}" style="width: {{$field_width}}ch;
+                                    background: repeating-linear-gradient(90deg, #747474 0, #747474 1ch, transparent 0, transparent 1.5ch) 0 100%/ 1ch 2px no-repeat;
+                                    font: 1.2rem 'Ubuntu Mono', monospace;
+                                    letter-spacing: 0.5ch;" {{$field_attr}}>
+                            @php $words_counter++;@endphp
+                            @endwhile
+                            
+                            <ul class="spell-characters-list droppable-characters rurera-selectable-options mt-20">
+                            @if( !empty( $characters_list ) )
+                                @foreach( $characters_list as $character_index => $character_char)
+                                    <li class="draggable" id="item-1{{ $character_index }}" draggable="true">{{$character_char}}</li>
+                                @endforeach
+                            @endif	
+                            </ul>
+                            <input type="text" data-min="{{$no_of_words}}" class="editor-field rurera-min-char hide" data-field_id="{{$field_id}}" data-id="{{$field_id}}" id="field-{{$field_id}}">
+                        </div>
+                        <div class="question-correct-answere rurera-hide">
+                            {{$correct_answer}} - {{$question->id}}
+                        </div>
+                        <div class="question-populated-response"></div>
+                        <div class="form-btn-field">
+                            <button type="button" class="question-review-btn" data-id="{{ $question->id }}">
+                                Finish
+                                <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
+                            </button>
+                            <button type="submit" class="question-submit-btn">Mark Answer</button>
+                            <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
+                                Next
+                                <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
+                            </a>
+                        </div>
+                    </div>
 
                     <div class="prev-next-controls text-center mb-50 questions-nav-controls  rurera-hide">
                         @if( !isset( $disable_finish ) || $disable_finish == 'false')
