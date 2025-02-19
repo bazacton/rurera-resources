@@ -148,6 +148,32 @@ ul.crop_sizes {
             </div>
         </div>
 
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+            <div class="card card-statistic-1">
+                <div class="card-wrap">
+                    <div class="card-header">
+                        <h4>Mohsin Today Count ({{date('Y-m-d')}})</h4>
+                    </div>
+                    <div class="card-body">
+                        {{$mohsin_today_count}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+            <div class="card card-statistic-1">
+                <div class="card-wrap">
+                    <div class="card-header">
+                        <h4>Danish Today Count</h4>
+                    </div>
+                    <div class="card-body">
+                        {{$danish_today_count}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
@@ -413,7 +439,7 @@ ul.crop_sizes {
 											<a href="javascript:;" data-id="{{ $GalleryBulkListObj->id }}" class="upload-image-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Re-upload image"><i class="fas fa-sync"></i></a>&nbsp;&nbsp;&nbsp;
 											<a href="/admin/questions-generator/remove_question_image/{{ $GalleryBulkListObj->id }}" data-id="{{ $GalleryBulkListObj->id }}" class="remove-image-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Remove image"><i class="fas fa-times"></i></a>&nbsp;&nbsp;&nbsp;
                                             @if($GalleryBulkListObj->status == 'Generated')
-                                                
+
                                                 @if($user->id == 1325)
                                                         <a href="javascript:;" data-id="{{ $GalleryBulkListObj->id }}" class="reject-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Reject"><i class="fas fa-ban"></i></a>&nbsp;&nbsp;&nbsp;
                                                 @endif
