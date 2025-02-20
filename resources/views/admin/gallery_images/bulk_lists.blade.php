@@ -269,6 +269,7 @@ ul.crop_sizes {
 									<option value="Pending">Pending</option>
 									<option value="Generated">Generated</option>
 									<option value="Reset">Removed</option>
+                                <option value="Rejected">Rejected</option>
 							</select>
 						</div>
 					</div>
