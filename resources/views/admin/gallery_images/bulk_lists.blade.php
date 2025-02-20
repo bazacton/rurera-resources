@@ -356,8 +356,9 @@ ul.crop_sizes {
                                 @endphp
 								@php $image_recomendations = isset( $GalleryBulkListObj->image_recomendations )? json_decode($GalleryBulkListObj->image_recomendations, true) : array();
 								$image_recomendations = isset( $image_recomendations['searchable_keywords'] )? array($image_recomendations) : $image_recomendations;
+                                $tr_classes = ($GalleryBulkListObj->status == 'Rejected')? 'bg-danger text-white' : '';
 								@endphp
-                                <tr>
+                                <tr class="{{$tr_classes}}">
 									<td class="text-left" data-id="user">
 										@if( $GalleryBulkListObj->image_path != '')
 											<img class="image-preview-modal" width="50" src="/assets/default/questions_gallery/{{$GalleryBulkListObj->image_path}}">
