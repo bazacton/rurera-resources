@@ -1292,14 +1292,14 @@
                     <div class="modal-header">
                         <div class="img-holder">
                             <figure>
-                                <img src="/assets/default/img/ecommerce-img.webp" alt="">
+                                <img src="/assets/default/img/ecommerce-img.webp" alt="ecommerce-img">
                                 <figcaption>
                                     <div class="upload-box">
                                         <input type="file" id="upload-thumbnail">
-                                        <label for="upload-thumbnail"><img src="/assets/default/svgs/file-image.svg" alt=""> Upload thumbnail</label>
+                                        <label for="upload-thumbnail"><img src="/assets/default/svgs/file-image.svg" alt="file-image"> Upload thumbnail</label>
                                     </div>
                                     <div class="book-btn">
-                                        <button type="button"><img src="/assets/default/svgs/book-saved.svg" alt=""></button>
+                                        <button type="button"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></button>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -1310,7 +1310,7 @@
                             <h2 class="editable" contenteditable="true">General Knowledge & Methodology</h2>
                             <ul>
                                 <li>
-                                    <img src="/assets/default/svgs/title.svg" alt="">
+                                    <img src="/assets/default/svgs/title.svg" alt="title">
                                     <input type="text" placeholder="Title" title="Title">
                                     <div class="dropdown">
                                         <button class="btn-link dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1335,7 +1335,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <img src="/assets/default/svgs/grades.svg" alt="">
+                                    <img src="/assets/default/svgs/grades.svg" alt="grades">
                                     <input type="text" placeholder="Grade" title="Grade">
                                     <em>Empty</em>
                                 </li>
