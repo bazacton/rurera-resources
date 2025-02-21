@@ -11,82 +11,82 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                    <div class="section-title mb-30 text-center"><h2>Select Practice Time </h2></div>
-                </div>
-                <div class="col-12 col-lg-12 mx-auto">
-                    <form action="/timestables-practice/powerup-mode/play" method="post">
-                        {{ csrf_field() }}						
-						<div class="questions-select-option">
-							<h4 class="mb-20">Select Table Group</h4>
-                            <ul class="mb-20 d-flex align-items-center">
-                                <li>
-                                    <input checked type="radio" id="practice_level_1_3" value="1" name="practice_level" />
-                                    <label for="practice_level_1_3" class="d-inline-flex flex-column justify-content-center">
-                                        <strong>1-3</strong>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="practice_level_1_6" value="2" name="practice_level" />
-                                    <label for="practice_level_1_6" class="d-inline-flex flex-column justify-content-center">
-                                        <strong>1-6</strong>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="practice_level_1_9" value="3" name="practice_level" />
-                                    <label for="practice_level_1_9" class="d-inline-flex flex-column justify-content-center">
-                                        <strong>1-9</strong>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="practice_level_1_12" value="3" name="practice_level" />
-                                    <label for="practice_level_1_12" class="d-inline-flex flex-column justify-content-center">
-                                        <strong>1-12</strong>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="practice_level_1_15" value="3" name="practice_level" />
-                                    <label for="practice_level_1_15" class="d-inline-flex flex-column justify-content-center">
-                                        <strong>1-15</strong>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="practice_level_1_18" value="3" name="practice_level" />
-                                    <label for="practice_level_1_18" class="d-inline-flex flex-column justify-content-center">
-                                        <strong>1-18</strong>
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-						
-                        <div class="questions-select-option">
-						    <h4 class="mb-20">Select Practice Duration</h4>
-                            <ul class="mb-20 d-flex align-items-center">
-                                <li>
-                                    <input checked type="radio" id="ten-questions" value="1" name="practice_time" />
-                                    <label for="ten-questions" class="d-inline-flex flex-column justify-content-center">
-                                        <strong>1 Minute</strong>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="twenty-questions" value="3" name="practice_time" />
-                                    <label for="twenty-questions" class="d-inline-flex flex-column justify-content-center">
-                                        <strong>3 Minutes</strong>
-                                    </label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="thirty-questions" value="5" name="practice_time" />
-                                    <label for="thirty-questions" class="d-inline-flex flex-column justify-content-center">
-                                        <strong>5 Minutes</strong>
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="section-title mb-30 text-center"><h2>Select Practice Time </h2></div>
+            </div>
+            <div class="col-12 col-lg-12 mx-auto">
+                <form action="/timestables-practice/powerup-mode/play" method="post">
+                    {{ csrf_field() }}						
+                    <div class="questions-select-option">
+                        <h4 class="mb-20">Select Table Group</h4>
+                        <ul class="mb-20 d-flex align-items-center">
+                            <li>
+                                <input checked type="radio" id="practice_level_1_3" value="1" name="practice_level" />
+                                <label for="practice_level_1_3" class="d-inline-flex flex-column justify-content-center">
+                                    <strong>1-3</strong>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="practice_level_1_6" value="2" name="practice_level" />
+                                <label for="practice_level_1_6" class="d-inline-flex flex-column justify-content-center">
+                                    <strong>1-6</strong>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="practice_level_1_9" value="3" name="practice_level" />
+                                <label for="practice_level_1_9" class="d-inline-flex flex-column justify-content-center">
+                                    <strong>1-9</strong>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="practice_level_1_12" value="3" name="practice_level" />
+                                <label for="practice_level_1_12" class="d-inline-flex flex-column justify-content-center">
+                                    <strong>1-12</strong>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="practice_level_1_15" value="3" name="practice_level" />
+                                <label for="practice_level_1_15" class="d-inline-flex flex-column justify-content-center">
+                                    <strong>1-15</strong>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="practice_level_1_18" value="3" name="practice_level" />
+                                <label for="practice_level_1_18" class="d-inline-flex flex-column justify-content-center">
+                                    <strong>1-18</strong>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="questions-select-option">
+                        <h4 class="mb-20">Select Practice Duration</h4>
+                        <ul class="mb-20 d-flex align-items-center">
+                            <li>
+                                <input checked type="radio" id="ten-questions" value="1" name="practice_time" />
+                                <label for="ten-questions" class="d-inline-flex flex-column justify-content-center">
+                                    <strong>1 Minute</strong>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="twenty-questions" value="3" name="practice_time" />
+                                <label for="twenty-questions" class="d-inline-flex flex-column justify-content-center">
+                                    <strong>3 Minutes</strong>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="thirty-questions" value="5" name="practice_time" />
+                                <label for="thirty-questions" class="d-inline-flex flex-column justify-content-center">
+                                    <strong>5 Minutes</strong>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
 
-                        <div class="form-btn">
-                            <button type="submit" class="questions-submit-btn btn"><span>Play</span></button>
-                        </div>
-                    </form>
-                </div>
+                    <div class="form-btn">
+                        <button type="submit" class="questions-submit-btn btn"><span>Play</span></button>
+                    </div>
+                </form>
+            </div>
     </div>
 </section>
 <section class="p-25 panel-border border-bottom-4 border-radius-10 mb-30" style="background-color: #fff;">
@@ -157,10 +157,7 @@
                         @endif
 
                     </table>
-
-
                 </div>
-
                 <div class="heatmap-heading mb-20">
                     <span>Drag to time travel or click below to focus a table</span>
                 </div>
@@ -172,11 +169,10 @@
                         <span>{{$first_date}}</span>
                     </div>
                 </div>
-
+            </div>
         </div>
-        </div>
-           </div>
-       </section>
+    </div>
+</section>
 
 
 </div>
