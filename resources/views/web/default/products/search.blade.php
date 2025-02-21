@@ -19,7 +19,7 @@
                     <div class="banner-holder d-flex justify-content-end">
                         <ul class="education-icon-box">
                             <li>
-                                <figure><img src="../assets/default/img/book-education.svg" alt="education icon-box" title="education icon-box" width="800" height="800" itemprop="image" loading="eager"></figure>
+                                <figure><img src="/assets/default/img/book-education.svg" alt="education icon-box" title="education icon-box" width="800" height="800" itemprop="image" loading="eager"></figure>
                             </li>
                             <li>
                                 <figure><img src="/assets/default/img/pencil-ruler.svg" alt="education icon-box" title="education icon-box" width="800" height="800" itemprop="image" loading="eager"></figure>
