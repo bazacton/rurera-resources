@@ -1576,54 +1576,14 @@ body:has(.api-questions-form) .container {width: 100%; max-width: 1000px; margin
 .question-general-block {border-bottom: 1px solid #ddd; padding-bottom: 30px; margin-bottom: 30px;}
 .question-explain-block h3 {color: #444;}
 /* Styling for keyword */
-.question-keywors-block h3 {
-    margin-bottom: 10px;
-    color: #000;
-}
-.question-explain-block {
-    background-color: #f9f9f9;
-    padding: 35px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
-    position: relative;
-    border-radius: 8px;
-}
-.keyword-item span {
-    font-weight: bold;
-    margin-top: 0;
-    font-size: 14px;
-    width: auto;
-    max-width: inherit;
-    display: inline-block;
-    outline: none;
-}
-.editable-content {
-    line-height: normal;
-    border-bottom: 1px solid #2196F3;
-    color: #2196F3;
-}
-.keyword-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
+.question-keywors-block h3 {margin-bottom: 10px; color: #000;}
+.question-explain-block {background-color: #f9f9f9; padding: 35px; border-bottom: 1px solid #ddd; margin-bottom: 20px; position: relative; border-radius: 8px;}
+.keyword-item span {font-weight: bold; margin-top: 0; font-size: 14px; width: auto; max-width: inherit; display: inline-block; outline: none;}
+.editable-content {line-height: normal; border-bottom: 1px solid #2196F3; color: #2196F3;}
+.keyword-item {display: flex; align-items: center; gap: 10px; flex-wrap: wrap;}
 /* Styling for keyword buttons */
-.keyword-buttons button {
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    background: none;
-    line-height: 16px;
-    outline: none;
-}
-.question-keywords-block .keyword-buttons {
-    margin-left: auto;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-}
+.keyword-buttons button {border: none; border-radius: 4px; cursor: pointer; font-size: 16px; background: none; line-height: 16px; outline: none;}
+.question-keywords-block .keyword-buttons {margin-left: auto; display: inline-flex; align-items: center; gap: 4px;}
 /* Up button questions-generator/view-api style */
 .move-up-keyword {
     background-color: #4CAF50; /* Green */
