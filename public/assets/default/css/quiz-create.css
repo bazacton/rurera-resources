@@ -1556,37 +1556,11 @@ Admin API Questions Form Page Style Start
 body:has(.api-questions-form) {font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 0; padding: 20px;}
 body:has(.api-questions-form) .container {width: 100%; max-width: 1000px; margin: 0 auto 20px; box-sizing: border-box;}
 .api-questions-form.container {background-color: #fff; padding: 50px 75px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
-.api-questions-form .question-label {
-    margin-bottom: 20px;
-}
-.api-questions-form h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-.api-questions-form .question-number {
-    margin: 0 0 15px;
-}
-.api-questions-form label {
-    margin-top: 10px;
-    display: block;
-    font-weight: 600;
-}
-.api-questions-form textarea, .api-questions-form input[type="text"] {
-    width: 100%;
-    padding: 8px 0 0;
-    margin-top: 5px;
-    border: 0;
-    border-bottom: 1px solid transparent;
-    border-radius: 0;
-    box-sizing: border-box;
-    font-size: 15px;
-    appearance: none;
-    resize: none;
-    outline: none;
-    font-family: Arial, sans-serif;
-    background-color: inherit;
-}
+.api-questions-form .question-label {margin-bottom: 20px;}
+.api-questions-form h2 {margin-bottom: 20px; font-size: 24px; color: #333;}
+.api-questions-form .question-number {margin: 0 0 15px;}
+.api-questions-form label {margin-top: 10px; display: block; font-weight: 600;}
+.api-questions-form textarea, .api-questions-form input[type="text"] {width: 100%; padding: 8px 0 0; margin-top: 5px; border: 0; border-bottom: 1px solid transparent; border-radius: 0; box-sizing: border-box; font-size: 15px; appearance: none; resize: none; outline: none; font-family: Arial, sans-serif; background-color: inherit;}
 .api-questions-form textarea:focus, .api-questions-form input[type="text"]:focus,
 .api-questions-form .question_heading span:focus {
     border-bottom-color: #ccc;
