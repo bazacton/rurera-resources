@@ -22,20 +22,19 @@
                             <li>
                                 <input  type="radio" value="multiplication_division" id="multi-divi" name="question_type" />
                                 <label for="multi-divi" class="d-inline-flex flex-column justify-content-center">
-
-                                <strong>Multiplication and Division</strong>
+                                    <strong>Multiplication and Division</strong>
                                 </label>
                             </li>
                             <li>
                                 <input checked type="radio" value="multiplication" id="multi-only" name="question_type" />
                                 <label for="multi-only" class="d-inline-flex flex-column justify-content-center">
-                                <strong>Multiplication only</strong>
+                                    <strong>Multiplication only</strong>
                                 </label>
                             </li>
                             <li>
                                 <input type="radio" value="division" id="divi-only" name="question_type" />
                                 <label for="divi-only" class="d-inline-flex flex-column justify-content-center">
-                                <strong>Division only</strong>
+                                    <strong>Division only</strong>
                                 </label>
                             </li>
                         </ul>
@@ -45,19 +44,19 @@
                             <li>
                                 <input checked type="radio" id="ten-questions" value="10" name="no_of_questions" />
                                 <label for="ten-questions" class="d-inline-flex flex-column justify-content-center">
-                                <strong>10 questions</strong>
+                                    <strong>10 questions</strong>
                                 </label>
                             </li>
                             <li>
                                 <input type="radio" id="twenty-questions" value="20" name="no_of_questions" />
                                 <label for="twenty-questions" class="d-inline-flex flex-column justify-content-center">
-                                <strong>20 questions</strong>
+                                    <strong>20 questions</strong>
                                 </label>
                             </li>
                             <li>
                                 <input type="radio" id="thirty-questions" value="30" name="no_of_questions" />
                                 <label for="thirty-questions" class="d-inline-flex flex-column justify-content-center">
-                                <strong>30 questions</strong>
+                                    <strong>30 questions</strong>
                                 </label>
                             </li>
                         </ul>
