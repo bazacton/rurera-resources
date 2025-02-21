@@ -400,7 +400,7 @@ $target_score = 90;
            <div class="modal-body">
 			  <div class="modal-box">
 				<span class="icon-box d-block mb-15">
-					<img src="../assets/default/img/clock-modal-img.png" alt="">
+					<img src="../assets/default/img/clock-modal-img.png" alt="clock-modal-img">
 				</span>
 				<h3 class="font-24 font-weight-normal mb-10">Are you sure?</h3>
 				<p class="mb-15 font-16">
@@ -431,7 +431,7 @@ $target_score = 90;
     <div class="modal-body">
       <div class="modal-box">
         <span class="icon-box d-block mb-15">
-            <img src="../assets/default/img/clock-modal-img.png" alt="">
+            <img src="/assets/default/img/clock-modal-img.png" alt="clock-modal-img">
         </span>
         <h3 class="font-24 font-weight-normal mb-10">Are you still there?</h3>
         <p class="mb-15 font-16">
@@ -459,7 +459,7 @@ $target_score = 90;
     <div class="modal-body">
       <div class="modal-box">
         <span class="icon-box d-block mb-15">
-            <img src="../assets/default/img/clock-modal-img.png" alt="">
+            <img src="/assets/default/img/clock-modal-img.png" alt="clock-modal-img">
         </span>
         <h3 class="font-24 font-weight-normal mb-10">Are you sure?</h3>
         <p class="mb-15 font-16">
@@ -546,11 +546,7 @@ $target_score = 90;
 		}
 	}, 5000);
 	
-
     function quiz_default_functions() {
-		
-		
-		
 		window.addEventListener('blur', function () {
             //var attempt_id = $(".question-area .question-step").attr('data-qattempt');
             //inactivity-timer
@@ -572,18 +568,14 @@ $target_score = 90;
 						play_time_data = (play_time != '0')? getTime(play_time) : '--';
 						$(".question_inactivity_modal .modal-body .game-play-time").html(play_time_data);
 						
-						
-						
                         $(".question_inactivity_modal").modal('show');
                         focusIntervalCount = 10;
                         clearInterval(focusInterval);
                         focusInterval = null;
                     }
                 }, 1000);
-
             }
         });
-
 
         window.addEventListener('focus', function () {
             focusIntervalCount = 10;
@@ -755,7 +747,6 @@ $target_score = 90;
 			play_time_data = (play_time_data != '0')? play_time_data : '--';
 			$(".play-time span").html(play_time_data);
 			
-			
 			 const interval = setInterval(() => {
 				
 				$('#next-btn')[0].click();
@@ -794,7 +785,6 @@ $target_score = 90;
 		play_time_data = (play_time != '0')? getTime(play_time) : '--';
 		$(".quiz_reset_modal .modal-body .game-play-time").html(play_time_data);
 		$(".quiz_reset_modal").modal('show');
-		
 		
         //$(".spell-test-quiz-form").submit();
     });	
