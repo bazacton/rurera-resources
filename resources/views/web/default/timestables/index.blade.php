@@ -329,7 +329,7 @@
                                                     <div class="card">
                                                         <div class="card-body">
                                                             <a href="#">
-                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
                                                                 <div class="text">
                                                                     <h6>Emma Thompson</h6>
                                                                     <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 98,321 <span>Whiz</span></p>
@@ -342,7 +342,7 @@
                                                     <div class="card">
                                                         <div class="card-body">
                                                             <a href="#">
-                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
                                                                 <div class="text">
                                                                     <h6>Liam Parker</h6>
                                                                     <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 75,092 <span>Enthusiast</span></p>
@@ -355,7 +355,7 @@
                                                     <div class="card">
                                                         <div class="card-body">
                                                             <a href="#">
-                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
                                                                 <div class="text">
                                                                     <h6>Olivia Turner</h6>
                                                                     <p><img src="/assets/default/svgs/diamond.svg" alt="diamond" height="15" width="15"> 120,876 <span>Rockstar</span></p>
@@ -368,7 +368,7 @@
                                                     <div class="card">
                                                         <div class="card-body">
                                                             <a href="#">
-                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
                                                                 <div class="text">
                                                                     <h6>Lily Johnson</h6>
                                                                     <p><img src="/assets/default/svgs/diamond.svg" alt="diamond" height="15" width="15"> 105,678 <span>Mastermind</span></p>
@@ -381,7 +381,7 @@
                                                     <div class="card">
                                                         <div class="card-body">
                                                             <a href="#">
-                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
                                                                 <div class="text">
                                                                     <h6>Grace Murphy</h6>
                                                                     <p><img src="/assets/default/svgs/diamond.svg" alt="diamond" height="15" width="15"> 80,123 <span>Whiz</span></p>
@@ -394,7 +394,7 @@
                                                     <div class="card">
                                                         <div class="card-body">
                                                             <a href="#">
-                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="#" height="32" width="32">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="#" height="32" width="32">
                                                                 <div class="text">
                                                                     <h6>Aiden Carter</h6>
                                                                     <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 45,678 <span>Rookie</span></p>
@@ -407,7 +407,7 @@
                                                     <div class="card">
                                                         <div class="card-body">
                                                             <a href="#">
-                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
                                                                 <div class="text">
                                                                     <h6>Chloe Adams</h6>
                                                                     <p><img src="/assets/default/svgs/diamond.svg" alt="diamond" height="15" width="15"> 99,876 <span>Prodigy</span></p>
@@ -420,10 +420,10 @@
                                                     <div class="card">
                                                         <div class="card-body">
                                                             <a href="#">
-                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="#" height="32" width="32">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
                                                                 <div class="text">
                                                                     <h6>Lucas Martin</h6>
-                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 60,432 <span>Enthusiast</span></p>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="diamond" height="15" width="15"> 60,432 <span>Enthusiast</span></p>
                                                                 </div>
                                                             </a>
                                                         </div>
@@ -433,10 +433,10 @@
                                                     <div class="card">
                                                         <div class="card-body">
                                                             <a href="#">
-                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="#" height="32" width="32">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
                                                                 <div class="text">
                                                                     <h6>Ella White</h6>
-                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 110,234 <span>Rockstar</span></p>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="diamond" height="15" width="15"> 110,234 <span>Rockstar</span></p>
                                                                 </div>
                                                             </a>
                                                         </div>
@@ -467,10 +467,10 @@
                                                     <div class="card">
                                                         <div class="card-body">
                                                             <a href="#">
-                                                                <img src="https://themesbrand.com/velzon/html/creative/assets/images/users/avatar-1.jpg" alt="#" height="32" width="32">
+                                                                <img src="/assets/images/users/avatar-1.jpg" alt="avatar-1" height="32" width="32">
                                                                 <div class="text">
                                                                     <h6>Mason Taylor</h6>
-                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="#" height="15" width="15"> 95,678 <span>Legend</span></p>
+                                                                    <p><img src="/assets/default/svgs/diamond.svg" alt="diamond" height="15" width="15"> 95,678 <span>Legend</span></p>
                                                                 </div>
                                                             </a>
                                                         </div>
