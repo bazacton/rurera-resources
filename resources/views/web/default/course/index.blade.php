@@ -109,10 +109,10 @@
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-10">
                                         <div class="sorting-filter">
                                             <a href="javascript:;" class="grid-btn active view-change-btn" data-type="chapters-short-view">
-                                                <span><img src="/assets/default/svgs/grid-view.svg" alt=""></span>
+                                                <span><img src="/assets/default/svgs/grid-view.svg" alt="grid-view"></span>
                                             </a>
                                             <a href="javascript:;" class="list-btn view-change-btn" data-type="chapters-detail-view">
-                                                <span><img src="/assets/default/svgs/list-view.svg" alt=""></span>
+                                                <span><img src="/assets/default/svgs/list-view.svg" alt="list-view"></span>
                                         </a>
                                         </div>
                                     </div>
@@ -193,7 +193,7 @@
                                                             @if($challenge_image != '')
                                                             <span class="lms-chapter-icon">
                                                                 <figure>
-                                                                    <img src="{{$challenge_image}}" alt="#" />
+                                                                    <img src="{{$challenge_image}}" alt="{{$challenge_image}}" />
                                                                 </figure>
                                                             </span>
                                                             @endif
@@ -252,12 +252,12 @@
                                                                         $completion_count = isset( $quizUserData['completion_count'] )? $quizUserData['completion_count'] : 0;
                                                                         $topic_percentage = isset( $quizUserData['topic_percentage'] )? $quizUserData['topic_percentage'] : 0;
 
-                                                                        $topic_percentage_flag = ( $topic_percentage >= 95 && $topic_percentage < 100)? '<img src="/assets/default/svgs/completion-flag.svg">' : '';
+                                                                        $topic_percentage_flag = ( $topic_percentage >= 95 && $topic_percentage < 100)? '<img src="/assets/default/svgs/completion-flag.svg" alt="completion-flag">' : '';
                                                                         $topic_percentage_text = ($topic_percentage > 0 && $topic_percentage < 100)? '('.$topic_percentage.')' : '';
 
                                                                         $completion_counter = 1;
                                                                         while($completion_counter <= $completion_count){
-                                                                            $topic_percentage_text .= '<img src="/assets/default/svgs/completion-star.svg">';
+                                                                            $topic_percentage_text .= '<img src="/assets/default/svgs/completion-star.svg" lat="completion-star">';
                                                                             $completion_counter++;
                                                                         }
 
@@ -287,12 +287,12 @@
                                                                             <td data-label="Rersources" class="px-15 py-20">
                                                                                 <a href="#" class="video-btn mr-10">
                                                                                     <span class="icon-box">
-                                                                                        <img src="/assets/default/svgs/play-video.svg" alt="" title="Video">
+                                                                                        <img src="/assets/default/svgs/play-video.svg" alt="play-video" title="Video">
                                                                                     </span>
                                                                                 </a>
                                                                                 <a href="#" class="file-btn">
                                                                                     <span class="icon-box">
-                                                                                        <img src="/assets/default/svgs/filesheet.svg" alt="" title="Helpsheet">
+                                                                                        <img src="/assets/default/svgs/filesheet.svg" alt="filesheet" title="Helpsheet">
                                                                                     </span>
                                                                                 </a>
                                                                             </td>
