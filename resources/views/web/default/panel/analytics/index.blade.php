@@ -102,11 +102,11 @@
                 <div class="card-header collapsed mb-0" data-toggle="collapse" role="button" data-target="#report_{{$date_str}}" aria-expanded="true" aria-controls="report_{{$date_str}}">
                     <span>{{ dateTimeFormat($report_date,'d F Y') }}</span>
                     <span class="analytics-timespend float-right">
-                        <img src="/assets/default/img/panel-sidebar/clock.svg" alt="">
+                        <img src="/assets/default/img/panel-sidebar/clock.svg" alt="clock">
                         <span>{{ isset( $analyticDataArray['practice_time'] )? getTimeWithText($analyticDataArray['practice_time']) : 0 }}</span>
                     </span>
                     <span class="analytics-cions-earned float-right mr-10">
-                        <img src="/assets/default/img/panel-sidebar/coins.svg" alt="">
+                        <img src="/assets/default/img/panel-sidebar/coins.svg" alt="coins">
                         <span>
                             {{ isset( $analyticDataArray['coins_earned'] )? $analyticDataArray['coins_earned'] : 0 }}
                         </span>
