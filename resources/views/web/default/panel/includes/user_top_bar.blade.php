@@ -9,7 +9,7 @@
         @if(auth()->check() && (auth()->user()->isUser()))
         <li class="dropdown dropdown-list-toggle">
             <strong>
-                <img src="/assets/default/img/panel-sidebar/1.png" alt="">
+                <img src="/assets/default/img/panel-sidebar/1.png" alt="1">
                 @if(!empty($unReadNotifications) and count($unReadNotifications))
                 {{ count($unReadNotifications) }}
                 @else
@@ -47,7 +47,7 @@
         <li>
             <div class="assignments">
                 <strong>
-                    <img src="/assets/default/img/sidebar/games.svg" alt="">
+                    <img src="/assets/default/img/sidebar/games.svg" alt="games">
 					@if( $authUser->game_time > 0)
 						{{getTimeWithText($authUser->game_time, false, false, false)}}
 					@else
@@ -59,7 +59,7 @@
 
         <li class="dropdown dropdown-list-toggle">
             <strong>
-                <img src="/assets/default/img/panel-sidebar/coins.svg" alt="">
+                <img src="/assets/default/img/panel-sidebar/coins.svg" alt="coins">
                 {{$authUser->getRewardPoints()}}
             </strong>
             <div class="dropdown-menu user-coins-menu dropdown-list dropdown-menu-right">
