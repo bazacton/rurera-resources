@@ -436,9 +436,9 @@
                                                 </div>
                                             </div>
                                             <ul class="list-options">
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 12 questions</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 6th-8th Grade</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> History</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 12 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 6th-8th Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> History</li>
                                             </ul>
                                         </a>
                                     </div>
@@ -460,9 +460,9 @@
                                                 </div>
                                             </div>
                                             <ul class="list-options">
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 5 questions</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 1st-3rd Grade</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Art</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 5 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 1st-3rd Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Art</li>
                                             </ul>
                                         </a>
                                     </div>
