@@ -1504,37 +1504,19 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .edit-questions-tabs .nav .nav-link.generated {color: #000 !important;}
 .edit-questions-tabs .nav .nav-link.active.generated {border-bottom-color: #000 !important;}
 .edit-questions-tabs .nav .nav-link.waiting {color: #bbb !important;}
-.edit-questions-tabs .nav .nav-link.active {
-    border-bottom-width: 3px;
-    font-weight: bold;
-}
+.edit-questions-tabs .nav .nav-link.active {border-bottom-width: 3px; font-weight: bold;}
 .edit-questions-tabs .nav .nav-link.active.waiting,
-.edit-questions-tabs .nav .nav-link.active.api_pending {
-    border-bottom-color: #bbb !important;
-}
+.edit-questions-tabs .nav .nav-link.active.api_pending {border-bottom-color: #bbb !important;}
 .edit-questions-tabs .nav .nav-link.checkbox_questions.api_pending,
 .edit-questions-tabs .nav .nav-link.inner_dropdown_questions.api_pending,
 .edit-questions-tabs .nav .nav-link.inner_text_questions.api_pending,
-.edit-questions-tabs .nav .nav-link.truefalse_quiz_questions.api_pending {
-    color: #bbb !important;
-}
-.edit-questions-tabs .nav .nav-link.api_pending {
-    color: #bbb !important;
-}
-.edit-questions-tabs .nav .nav-link.inner_text_questions {
-    margin-left: 30px;
-    margin-right: -30px;
-    border-bottom-color: #6c757d;
-    color: #6c757d !important;
-}
+.edit-questions-tabs .nav .nav-link.truefalse_quiz_questions.api_pending {color: #bbb !important;}
+.edit-questions-tabs .nav .nav-link.api_pending {color: #bbb !important;}
+.edit-questions-tabs .nav .nav-link.inner_text_questions {margin-left: 30px; margin-right: -30px; border-bottom-color: #6c757d; color: #6c757d !important;}
 .edit-questions-tabs .nav .nav-link.checkbox_questions,
-.edit-questions-tabs .nav .nav-link.active.checkbox_questions {
-    color: #224189 !important;
-    border-bottom-color: #224189 !important;
-}
+.edit-questions-tabs .nav .nav-link.active.checkbox_questions {color: #224189 !important; border-bottom-color: #224189 !important;}
 .edit-questions-tabs .nav .nav-link.truefalse_quiz_questions,
 .edit-questions-tabs .nav .nav-link.active.truefalse_quiz_questions {border-bottom-color: var(--success) !important; color: var(--success) !important; margin-left: 40px; margin-right: -40px;}
-
 .edit-questions-tabs .nav .nav-link.short-answer {border-bottom-color: var(--info) !important;}
 .edit-questions-tabs .nav .nav-link.open-end {border-bottom-color: var(--warning) !important;}
 .edit-questions-tabs .nav .nav-link.hotspot {border-bottom-color: var(--pink) !important;}
@@ -1543,34 +1525,11 @@ body:has(.edit-questions-tabs) {background-color: #fcfcfc;}
 .inner_dropdown_questions_color {border-bottom-color: var(--orange) !important; color: var(--orange) !important; margin-left: 20px; margin-right: -20px;}
 .inner_dropdown_questions,
 .inner_dropdown_questions.active {border-bottom-color: var(--red) !important; color: var(--red) !important; margin-left: 20px;  margin-right: -20px;}
-.question-types-colors .inner_dropdown_questions_color:before {
-    background-color: var(--orange);
-}
-.question-types-colors .inner_text_questions_color:before {
-    background-color: #6c757d;
-}
-.edit-questions-tabs .move-up-keyword {
-    color: #fff;
-    background-color: #4CAF50;
-    border-radius: 3px;
-    padding: 4px 8px;
-}
-.edit-questions-tabs .move-down-keyword {
-    color: #fff;
-    outline: none;
-    background-color: #2196F3;
-    border-radius: 3px;
-    padding: 4px 8px;
-}
-.edit-questions-tabs .remove-keyword {
-    color: #fff;
-    outline: none;
-    background-color: #f44336;
-    border-radius: 3px;
-    padding: 4px 8px;
-    font-weight: 400;
-    font-size: 12px;
-}
+.question-types-colors .inner_dropdown_questions_color:before {background-color: var(--orange);}
+.question-types-colors .inner_text_questions_color:before {background-color: #6c757d;}
+.edit-questions-tabs .move-up-keyword {color: #fff; background-color: #4CAF50; border-radius: 3px; padding: 4px 8px;}
+.edit-questions-tabs .move-down-keyword {color: #fff; outline: none; background-color: #2196F3; border-radius: 3px; padding: 4px 8px;}
+.edit-questions-tabs .remove-keyword {color: #fff; outline: none; background-color: #f44336; border-radius: 3px; padding: 4px 8px; font-weight: 400; font-size: 12px;}
 .edit-questions-tabs .move-up-keyword:hover,
 .edit-questions-tabs .move-down-keyword:hover {outline: none;}
 .edit-questions-tabs .keywords-section .add-keyword-btn {border: 0; background-color: inherit; height: auto; color: var(--primary); border-bottom: 1px solid var(--primary); line-height: normal; outline: none;}
