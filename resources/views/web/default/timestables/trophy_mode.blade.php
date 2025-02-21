@@ -32,23 +32,18 @@
             <div class="col-12">
                 <div class="section-title mb-30 text-center"><h2>Select Practice Time </h2></div>
             </div>
-
             <div class="col-12 col-lg-12 mx-auto">
                 <form action="/timestables-practice/trophy-mode/play" method="post">
                     {{ csrf_field() }}
                     <h3>It will be one minute, try to answer the maximum questions.</h3>
-
                     <div class="form-btn">
                         <button type="submit" class="questions-submit-btn btn"><span>Play</span></button>
                     </div>
                 </form>
             </div>
-
         </div>
     </div>
 </section>
-
-
 <section class="p-25 panel-border border-bottom-4 border-radius-10 mb-30" style="background-color: #fff;">
     <div class="container">
         <div class="row">
@@ -58,7 +53,7 @@
                         <a href="#">
                             <span class="levels-text">Explorer</span>
                             <span class="icon-box">
-                                <img src="/assets/default/img/trophy-levels-img.png" alt="">
+                                <img src="/assets/default/img/trophy-levels-img.png" alt="trophy-levels-img">
                             </span>
                         </a>
                     </li>
@@ -66,7 +61,7 @@
                         <a href="#">
                             <span class="levels-text">Junior</span>
                             <span class="icon-box">
-                                <img src="/assets/default/img/trophy-levels-img.png" alt="">
+                                <img src="/assets/default/img/trophy-levels-img.png" alt="trophy-levels-img">
                             </span>
                         </a>
                     </li>
@@ -74,7 +69,7 @@
                         <a href="#">
                             <span class="levels-text">Smarty</span>
                             <span class="icon-box">
-                                <img src="/assets/default/img/trophy-levels-img.png" alt="">
+                                <img src="/assets/default/img/trophy-levels-img.png" alt="trophy-levels-img">
                             </span>
                         </a>
                     </li>
@@ -82,7 +77,7 @@
                         <a href="#">
                             <span class="levels-text">Brainy</span>
                             <span class="icon-box">
-                                <img src="/assets/default/img/trophy-levels-img.png" alt="">
+                                <img src="/assets/default/img/trophy-levels-img.png" alt="trophy-levels-img">
                             </span>
                         </a>
                     </li>
@@ -90,7 +85,7 @@
                         <a href="#">
                             <span class="levels-text">Genius</span>
                             <span class="icon-box">
-                                <img src="/assets/default/img/trophy-levels-img.png" alt="">
+                                <img src="/assets/default/img/trophy-levels-img.png" alt="trophy-levels-img">
                             </span>
                         </a>
                     </li>
@@ -98,7 +93,7 @@
                         <a href="#">
                             <span class="levels-text">Creative</span>
                             <span class="icon-box">
-                                <img src="/assets/default/img/trophy-levels-active-img.png" alt="">
+                                <img src="/assets/default/img/trophy-levels-active-img.png" alt="trophy-levels-img">
                             </span>
                         </a>
                     </li>
@@ -106,7 +101,7 @@
                         <a href="#">
                             <span class="levels-text">Champion</span>
                             <span class="icon-box">
-                                <img src="/assets/default/img/trophy-levels-img.png" alt="">
+                                <img src="/assets/default/img/trophy-levels-img.png" alt="trophy-levels-img">
                             </span>
                         </a>
                     </li>
@@ -114,7 +109,7 @@
                         <a href="#">
                             <span class="levels-text">Mastery</span>
                             <span class="icon-box">
-                                <img src="/assets/default/img/trophy-levels-img.png" alt="">
+                                <img src="/assets/default/img/trophy-levels-img.png" alt="trophy-levels-img">
                             </span>
                         </a>
                     </li>
@@ -122,7 +117,7 @@
                         <a href="#">
                             <span class="levels-text">Majesty</span>
                             <span class="icon-box">
-                                <img src="/assets/default/img/trophy-levels-img.png" alt="">
+                                <img src="/assets/default/img/trophy-levels-img.png" alt="trophy-levels-img">
                             </span>
                         </a>
                     </li>
@@ -130,7 +125,7 @@
                         <a href="#">
                             <span class="levels-text">Expert</span>
                             <span class="icon-box">
-                                <img src="/assets/default/img/trophy-levels-img.png" alt="">
+                                <img src="/assets/default/img/trophy-levels-img.png" alt="trophy-levels-img">
                             </span>
                         </a>
                     </li>
@@ -138,7 +133,7 @@
                         <a href="#">
                             <span class="levels-text">Maestro</span>
                             <span class="icon-box">
-                                <img src="/assets/default/img/trophy-levels-img.png" alt="">
+                                <img src="/assets/default/img/trophy-levels-img.png" alt="trophy-levels-img">
                             </span>
                         </a>
                     </li>
