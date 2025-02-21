@@ -32,7 +32,7 @@
                                         </span>
                                         <span class="student-rank font-16 font-weight-normal d-block">
                                             <span>Ranking: {{($studentObj->trophy_badge != '')? $studentObj->trophy_badge : '-'}} <img src="/assets/default/svgs/trophy-rank.svg" alt=""></span>
-                                            <span>Coins: {{$studentObj->getRewardPoints()}} <img src="/assets/default/svgs/stats-coins.svg" alt=""></span>
+                                            <span>Coins: {{$studentObj->getRewardPoints()}} <img src="/assets/default/svgs/stats-coins.svg" alt="stats-coins"></span>
                                         </span>
                                     </span>
                                 </div>
@@ -76,8 +76,8 @@
                                             {{$studentObj->get_full_name()}}
                                         </span>
                                         <span class="student-rank font-16 font-weight-normal d-block">
-                                            <span>Ranking: {{($studentObj->trophy_badge != '')? $studentObj->trophy_badge : '-'}} <img src="/assets/default/svgs/trophy-rank.svg" alt=""></span>
-                                            <span>Coins: {{$studentObj->getRewardPoints()}} <img src="/assets/default/svgs/stats-coins.svg" alt=""></span>
+                                            <span>Ranking: {{($studentObj->trophy_badge != '')? $studentObj->trophy_badge : '-'}} <img src="/assets/default/svgs/trophy-rank.svg" alt="trophy-rank"></span>
+                                            <span>Coins: {{$studentObj->getRewardPoints()}} <img src="/assets/default/svgs/stats-coins.svg" alt="stats-coins"></span>
                                         </span>
                                     </span>
                                 </div>
@@ -102,7 +102,7 @@
                     <div class="referral-withdraw mb-30">
                       <div class="withdraw-card p-15 d-flex align-items-center flex-wrap">
                           <div class="icon-box mr-10">
-                              <img src="/assets/default/svgs/shuttlecock.svg" alt="" height="30" width="30">
+                              <img src="/assets/default/svgs/shuttlecock.svg" alt="shuttlecock" height="30" width="30">
                           </div>
                               <div class="withdraw-text" itemscope itemtype="https://schema.org/Article">
                                   <h3 class="blog-grid-title font-18 font-weight-bold mb-5" itemprop="title">You need to play Timestables Trophy Mode {{(5 - $results_data->count())}} more games to display in leaderboard.</h3>
