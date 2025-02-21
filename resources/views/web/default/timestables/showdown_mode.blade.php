@@ -29,9 +29,6 @@
                    <h4 class="text-center">You have already attempted this week.<br>Please return next week to make another attempt.</h4>
                </div>
             @endif
-
-
-
         </div>
     </div>
 </section>
@@ -77,8 +74,8 @@
                 </ul>
             </div>
         </div>
-            </div>
-        </section>
+    </div>
+</section>
 
 
 </div>
