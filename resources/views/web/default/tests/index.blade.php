@@ -9,28 +9,23 @@
 
 @section('content')
 <section class="content-section">
-
     <section class="pt-10">
         <div class="container">
             <div class="row">
-
                 <div class="col-12">
-
                     @if( !empty( $childs ) )
                         <div class="p-15 mt-20 p-lg-20 db-form-tabs panel-border font-weight-500 text-dark-blue rounded-sm panel-shadow mb-20 switch-user-block">
-
                             <div class="list-group-item">
                                 <div class="row align-items-center">
                                     <div class="col-auto">
                                         <a href="javascript:;" class="avatar"><img src="{{$switchUserObj->getAvatar()}}" alt="{{isset( $switchUserObj->id )? $switchUserObj->get_full_name() : ''}}" class="avatar rounded-circle"></a>
                                     </div>
-
                                     <div class="col-5 ms-2">
                                         <h6 class="font-19 font-weight-bold"><a href="javascript:;">{{isset( $switchUserObj->id )? $switchUserObj->get_full_name() : ''}}</a></h6>
                                     </div>
                                     <div class="col-auto ms-auto mr-md-3 last-activity">
                                         <a href="javascript:;" class="switch-user-btn" data-toggle="modal" data-target="#switch_user_modal">
-                                           <img src="/assets/default/img/default/user-switch.png">
+                                           <img src="/assets/default/img/default/user-switch.png" alt="user-switch">
                                        </a>
                                     </div>
                                 </div>
