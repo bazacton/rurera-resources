@@ -139,7 +139,6 @@
                     </li>
                 </ul>
             </div>
-
         </div>
     </div>
 </section>
@@ -184,8 +183,7 @@
         </div>
         </div>
     </section>
-
-</div>
+    </div>
 </div>
 @endsection
 
@@ -197,31 +195,30 @@
 
 <script>
     $(document).ready(function () {
-            var ctx = document.getElementById('trophy_chart').getContext('2d');
-            var chart_labels = '{{json_encode($attempts_labels)}}';
-            var chart_labelsArray = JSON.parse(chart_labels.replace(/&quot;/g, '"'));
+        var ctx = document.getElementById('trophy_chart').getContext('2d');
+        var chart_labels = '{{json_encode($attempts_labels)}}';
+        var chart_labelsArray = JSON.parse(chart_labels.replace(/&quot;/g, '"'));
 
-           var chart_values = '{{json_encode($attempts_values)}}';
-           var chart_valuesArray = JSON.parse(chart_values.replace(/&quot;/g, '"'));
-            var myChart = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: chart_labelsArray,
-                    datasets: [{
-                        label: 'Questions',
-                        data: chart_valuesArray,
-                        backgroundColor: 'transparent',
-                        borderColor: '#43d477',
-                        borderWidth: 2,
-                        fill: true
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                }
-            });
-
+        var chart_values = '{{json_encode($attempts_values)}}';
+        var chart_valuesArray = JSON.parse(chart_values.replace(/&quot;/g, '"'));
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: chart_labelsArray,
+                datasets: [{
+                    label: 'Questions',
+                    data: chart_valuesArray,
+                    backgroundColor: 'transparent',
+                    borderColor: '#43d477',
+                    borderWidth: 2,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+            }
+        });
     });
 
 </script>
