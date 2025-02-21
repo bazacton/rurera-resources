@@ -1260,7 +1260,7 @@
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 price-plan-image">
-                      <img src="../assets/default/img/price-plan.png" alt="#" height="270" width="166">
+                      <img src="/assets/default/img/price-plan.png" alt="price-plan" height="270" width="166">
                     </div>
                     <div class="col-12 col-lg-12 col-md-12 col-sm-12 text-center bg-dark-green bg-dark-green">
                       <strong>96% of subscribing parents in rurera Family report significant improvement in their child's reading skills.</strong>
@@ -1323,7 +1323,7 @@
                             </div>
                             <div class="secure-server">
                               <figure>
-                                <img src="/assets/default/svgs/server-lock.svg" height="26" width="26" alt="">
+                                <img src="/assets/default/svgs/server-lock.svg" height="26" width="26" alt="server-lock">
                               </figure>
                               <span> Secure Server <br> SSL Encrypted </span>
                             </div>
