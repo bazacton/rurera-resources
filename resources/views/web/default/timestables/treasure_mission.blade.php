@@ -149,15 +149,15 @@
                                                     
                                                     @if($is_acheived == 1)
                                                         <span class="thumb-box dropdown-toggle h-100 w-100 d-flex align-items-center justify-content-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            <img src="/assets/default/img/treasure.png" alt="" title="{{$nuggetObj['treasure_box']}}">
+                                                            <img src="/assets/default/img/treasure.png" alt="treasure" title="{{$nuggetObj['treasure_box']}}">
                                                         </span>
                                                         <div class="lms-tooltip dropdown-menu">
                                                             <div class="tooltip-box">
-                                                                <h5 class="font-18 font-weight-bold text-white mb-5"><img src="/assets/default/img/panel-sidebar/coins.svg" alt="" width="30"> {{$nuggetObj['treasure_box']}}</h5>
+                                                                <h5 class="font-18 font-weight-bold text-white mb-5"><img src="/assets/default/img/panel-sidebar/coins.svg" alt="coins" width="30"> {{$nuggetObj['treasure_box']}}</h5>
                                                             </div>
                                                         </div>
                                                     @else
-                                                        <img src="/assets/default/img/treasure2.png" alt="">
+                                                        <img src="/assets/default/img/treasure2.png" alt="treasure2">
                                                     @endif
                                                     
                                                 </a>
