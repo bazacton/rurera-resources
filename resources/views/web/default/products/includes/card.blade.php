@@ -20,11 +20,11 @@
             </a>
             @if(in_array($product->id, $shortlisted_products))
                 <a href="javascript:;" class="favorite-btn shortlist-btn" data-type="remove" data-product_id="{{ $product->id }}">
-                    <img class="heart-fill" src="/assets/default/svgs/heart-fill.svg" height="30" width="30" alt="">
+                    <img class="heart-fill" src="/assets/default/svgs/heart-fill.svg" height="30" width="30" alt="heart-fill">
                 </a>
             @else
                 <a href="javascript:;" class="favorite-btn shortlist-btn" data-type="add" data-product_id="{{ $product->id }}">
-                    <img class="heart-alt" src="/assets/default/svgs/heart-alt.svg" height="30" width="30" alt="">
+                    <img class="heart-alt" src="/assets/default/svgs/heart-alt.svg" height="30" width="30" alt="heart-alt">
                 </a>
             @endif
         </div>
