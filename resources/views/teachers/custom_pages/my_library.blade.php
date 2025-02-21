@@ -604,9 +604,9 @@
                                                 </div>
                                             </div>
                                             <ul class="list-options">
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 7th-8th  Grade</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Chemistry</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 7th-8th  Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Chemistry</li>
                                             </ul>
                                         </a>
                                     </div>
@@ -627,34 +627,34 @@
                                     </div>
                                 </div>
                                 <ul class="list-options question-list-options mb-15">      
-                                    <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 8 questions</li>
-                                    <li><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt=""></span> 7th-8th  Grade</li>
-                                    <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
+                                    <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
+                                    <li><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt="save"></span> 7th-8th  Grade</li>
+                                    <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
                                 </ul>
                                 <div class="class-controls">
                                     <div class="left-area d-inline-flex align-items-center">
                                         <div class="class-controls-option questions-control-options border-0 mr-0 pr-0 d-inline-flex align-items-center">
-                                            <button type="button"><img src="/assets/default/svgs/edit-simple.svg" alt="">Copy & edit</button>
-                                            <button type="button"><img src="/assets/default/svgs/save.svg" alt="">Save</button>
-                                            <button type="button"><img src="/assets/default/svgs/share.svg" alt="">Share</button>
-                                            <button type="button"><img src="/assets/default/svgs/download.svg" alt="">Worksheet</button>
+                                            <button type="button"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple">Copy & edit</button>
+                                            <button type="button"><img src="/assets/default/svgs/save.svg" alt="save">Save</button>
+                                            <button type="button"><img src="/assets/default/svgs/share.svg" alt="share">Share</button>
+                                            <button type="button"><img src="/assets/default/svgs/download.svg" alt="download">Worksheet</button>
                                             <div class="dropdown-box">
                                                 <div class="dropdown">
                                                     <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
+                                                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
                                                     </a>
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt=""> Delete</a>
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="right-area w-auto">
-                                        <button type="button" class="assignment-btn"><img class="show-img" src="/assets/default/svgs/clock.svg" alt=""> Assign</button>
-                                        <button type="button" class="perview-btn" data-toggle="modal" data-target="#document-modal"><img class="show-img" src="/assets/default/svgs/eye-show.svg" alt=""> Perview</button>
+                                        <button type="button" class="assignment-btn"><img class="show-img" src="/assets/default/svgs/clock.svg" alt="clock"> Assign</button>
+                                        <button type="button" class="perview-btn" data-toggle="modal" data-target="#document-modal"><img class="show-img" src="/assets/default/svgs/eye-show.svg" alt="eye-show"> Perview</button>
                                     </div>
                                 </div>
                             </div>
@@ -668,11 +668,11 @@
                                                 <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
                                                     <div class="question-top-info">
                                                         <div class="question-count">
-                                                            <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt=""></span>
+                                                            <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
                                                             <span class="question-count-lable">Question 1 of 20</span>
                                                         </div>
                                                         <div class="question-info">
-                                                            <span class="q-type"><img src="/assets/default/svgs/multi-choice.svg" alt="">Multiple choice</span>
+                                                            <span class="q-type"><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice">Multiple choice</span>
                                                             <span class="q-time">Avg time</span>
                                                             <span class="q-point">1 point</span>
                                                         </div>
