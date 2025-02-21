@@ -1552,29 +1552,10 @@ Questions Edit Page Fields style End
 /**************************************
 Admin API Questions Form Page Style Start
 **************************************/
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body:has(.api-questions-form) {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 20px;
-}
-body:has(.api-questions-form) .container {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto 20px;
-    box-sizing: border-box;
-}
-.api-questions-form.container {
-    background-color: #fff;
-    padding: 50px 75px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+* {box-sizing: border-box; margin: 0; padding: 0;}
+body:has(.api-questions-form) {font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 0; padding: 20px;}
+body:has(.api-questions-form) .container {width: 100%; max-width: 1000px; margin: 0 auto 20px; box-sizing: border-box;}
+.api-questions-form.container {background-color: #fff; padding: 50px 75px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
 .api-questions-form .question-label {
     margin-bottom: 20px;
 }
