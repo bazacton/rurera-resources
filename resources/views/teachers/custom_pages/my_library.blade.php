@@ -2099,34 +2099,34 @@
                                     </span>
                                     <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
                                         <div class="question-layout row d-flex align-items-start">
-                                        <div class="rureraform-col rureraform-col-12">
-                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                <h4>Read the text and choose the correct answer.</h4>
+                                            <div class="rureraform-col rureraform-col-12">
+                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                    <h4>Read the text and choose the correct answer.</h4>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="rureraform-col rureraform-col-12">
-                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="drop_and_text"> When <select type="inner_dropdown" class="editor-field" id="dropdown-1" data-identifier="49226" name="field-dropdown1_options">
-                                                <option value="Select Option">Select Option</option>
-                                                <option value="lava">lava</option>
-                                                <option value="extrusive">extrusive</option>
-                                                <option value="magma">magma</option>
-                                            </select> cools below the Earth's surface, it forms <select type="inner_dropdown" class="editor-field" id="dropdown-2" data-identifier="49226" name="field-dropdown2_options">
-                                                <option value="Select Option">Select Option</option>
-                                                <option value="water">water</option>
-                                                <option value="extrusive">extrusive</option>
-                                                <option value="sedimentary">sedimentary</option>
-                                                <option value="magma">magma</option>
-                                            </select> igneous rocks with large crystals. <div class="rureraform-element-cover"></div>
+                                            <div class="rureraform-col rureraform-col-12">
+                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="drop_and_text"> When <select type="inner_dropdown" class="editor-field" id="dropdown-1" data-identifier="49226" name="field-dropdown1_options">
+                                                    <option value="Select Option">Select Option</option>
+                                                    <option value="lava">lava</option>
+                                                    <option value="extrusive">extrusive</option>
+                                                    <option value="magma">magma</option>
+                                                </select> cools below the Earth's surface, it forms <select type="inner_dropdown" class="editor-field" id="dropdown-2" data-identifier="49226" name="field-dropdown2_options">
+                                                    <option value="Select Option">Select Option</option>
+                                                    <option value="water">water</option>
+                                                    <option value="extrusive">extrusive</option>
+                                                    <option value="sedimentary">sedimentary</option>
+                                                    <option value="magma">magma</option>
+                                                </select> igneous rocks with large crystals. <div class="rureraform-element-cover"></div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="rureraform-col rureraform-col-12">
-                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
-                                            <p>
-                                                <i>Hint: Think about the Moon’s effect on Earth, especially on tides and sunlight.</i>
-                                            </p>
-                                            <div class="rureraform-element-cover"></div>
+                                            <div class="rureraform-col rureraform-col-12">
+                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
+                                                <p>
+                                                    <i>Hint: Think about the Moon’s effect on Earth, especially on tides and sunlight.</i>
+                                                </p>
+                                                <div class="rureraform-element-cover"></div>
+                                                </div>
                                             </div>
-                                        </div>
                                         </div>
                                     </div>
                                 </div>
