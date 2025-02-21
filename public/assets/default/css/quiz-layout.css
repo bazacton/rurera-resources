@@ -1,16 +1,8 @@
 /************************************ 
  Quiz Top-Bar Style Start
 *************************************/
-html:has(.quiz-topbar) {
-  margin-left: calc(100vw - 100%);
-  margin-right: 0;
-  overflow: hidden;
-}
-body:has(.quiz-topbar) {
-  overflow: hidden;
-  overflow-y: auto;
-  scrollbar-gutter: stable both-edges;
-}
+html:has(.quiz-topbar) {margin-left: calc(100vw - 100%); margin-right: 0; overflow: hidden;}
+body:has(.quiz-topbar) {overflow: hidden; overflow-y: auto;scrollbar-gutter: stable both-edges;}
 html:has(.admin_role, .quiz-topbar) {overflow: visible;}
 .quiz-topbar, .read-quiz-info ~ .read-quiz-content .quiz-topbar {background-color: #4c5387; padding: 15px 0 15px; position: relative; z-index: 1; width: 100%; }
 .quiz-topbar .row {align-items: center;}
@@ -89,10 +81,7 @@ html:has(.admin_role, .quiz-topbar) {overflow: visible;}
 .read-quiz-info ~ .read-quiz-content {max-width: inherit; padding-left: 33.555%; padding-right: 0; width: 100%; margin: 0; border: 0; position: absolute; top: 0;}
 .lms-quiz-section {position: relative; background: url(/assets/default/img/mountain.jpg) no-repeat; background-size: cover; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;}
 .type-sats .lms-quiz-section {height: 100%; background: none; align-items: flex-start; justify-content: flex-start;}
-.lms-quiz-section:has(.question-summary) {
-  height: auto;
-  background: none;
-}
+.lms-quiz-section:has(.question-summary) {height: auto; background: none;}
 .read-text-controls {padding: 20px 20px 20px 0;}
 .read-text-controls a {margin-left: 8px; display: inline-block; vertical-align: middle;}
 .quiz-info-inner {height: calc(100% - 150px); overflow: hidden; overflow-y: auto; padding: 0 20px 0 0;}
@@ -308,16 +297,9 @@ table.table td .input-holder input[type=number]::-webkit-outer-spin-button,
     .input-holder:has(.divide-numbers) {border: 0 !important;}
 }
 .question-result-layout select,
-.question-layout-block select {
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    padding: 4px 8px;
-    height: auto;
-}
+.question-layout-block select {border: 1px solid #ddd; border-radius: 3px; padding: 4px 8px; height: auto;}
 body .question-result-layout ol li {margin-top: 1.5rem; margin-left: 0;}
-.rurera-question-block .rureraform-column-input .rureraform-description {
-    margin: 15px 0 0;
-}
+.rurera-question-block .rureraform-column-input .rureraform-description {margin: 15px 0 0;}
 .lms-quiz-section .rureraform-col-4 .input-holder {width: 90% !important;}
 .input-holder textarea {padding: 10px; border: 0; border-radius: 8px; color: #000; outline: none; width: 100%;}
 .input-holder textarea::-webkit-input-placeholder {color: #000; }
