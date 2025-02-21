@@ -398,19 +398,19 @@
                                 <a href="#" class="time-number"><span class="font-36 d-block text-center">11</span></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt="medal-light"></a>
                             </td>
                         </tr>
                         <tr>
@@ -418,19 +418,19 @@
                                 <a href="#" class="time-number"><span class="font-36 d-block text-center">12</span></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt="medal-light"></a>
                             </td>
                         </tr>
                     </tbody>
@@ -470,16 +470,16 @@
                         <tr>
                             <td>
                                 <div class="cabinet-stars">
-                                    <img src="/assets/default/img/star-leeg.png" alt="">
-                                    <img src="/assets/default/img/star-leeg.png" alt="">
-                                    <img src="/assets/default/img/star-leeg.png" alt="">
-                                    <img src="/assets/default/img/star-leeg.png" alt="">
-                                    <img src="/assets/default/img/star-leeg.png" alt="">
-                                    <img src="/assets/default/img/star-leeg.png" alt="">
-                                    <img src="/assets/default/img/star-leeg.png" alt="">
-                                    <img src="/assets/default/img/star-leeg.png" alt="">
-                                    <img src="/assets/default/img/star-leeg.png" alt="">
-                                    <img src="/assets/default/img/star-leeg.png" alt="">
+                                    <img src="/assets/default/img/star-leeg.png" alt="star-leeg">
+                                    <img src="/assets/default/img/star-leeg.png" alt="star-leeg">
+                                    <img src="/assets/default/img/star-leeg.png" alt="star-leeg">
+                                    <img src="/assets/default/img/star-leeg.png" alt="star-leeg">
+                                    <img src="/assets/default/img/star-leeg.png" alt="star-leeg">
+                                    <img src="/assets/default/img/star-leeg.png" alt="star-leeg">
+                                    <img src="/assets/default/img/star-leeg.png" alt="star-leeg">
+                                    <img src="/assets/default/img/star-leeg.png" alt="star-leeg">
+                                    <img src="/assets/default/img/star-leeg.png" alt="star-leeg">
+                                    <img src="/assets/default/img/star-leeg.png" alt="star-leeg">
                                 </div>
                             </td>
                         </tr>
