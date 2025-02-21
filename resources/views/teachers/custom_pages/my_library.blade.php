@@ -866,37 +866,37 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="rureraform-properties-options-item">
-                                                                    <div class="rureraform-properties-options-table">
-                                                                        <div>
-                                                                        <input class="rureraform-properties-options-label" type="text" value="Chloroplasts" placeholder="Label">
-                                                                        </div>
-                                                                        <div class="rureraform-image-url rurera-image-depend rurera-hide">
-                                                                        <div class="input-group-prepend">
-                                                                            <button type="button" class="input-group-text admin-file-manager" data-input="image-options-1" data-preview="holder">
-                                                                            <i class="fa fa-upload"></i>
-                                                                            </button>
-                                                                        </div>
-                                                                        <input class="rureraform-properties-options-image" type="text" id="image-options-1" value="" placeholder="Upload Image">
-                                                                        <span>
-                                                                            <i class="far fa-image"></i>
-                                                                        </span>
-                                                                        </div>
-                                                                        <div class="rurera-hide">
-                                                                        <input class="rureraform-properties-options-value" type="text" value="Chloroplasts" placeholder="Value">
-                                                                        </div>
-                                                                        <div>
-                                                                        <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
-                                                                            <i class="fas fa-check"></i>
-                                                                        </span>
-                                                                        <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
-                                                                            <i class="far fa-copy"></i>
-                                                                        </span>
-                                                                        <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
-                                                                            <i class="fas fa-trash-alt"></i>
-                                                                        </span>
-                                                                        <span title="Move the option">
-                                                                            <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
-                                                                        </span>
+                                                                        <div class="rureraform-properties-options-table">
+                                                                            <div>
+                                                                                <input class="rureraform-properties-options-label" type="text" value="Chloroplasts" placeholder="Label">
+                                                                            </div>
+                                                                            <div class="rureraform-image-url rurera-image-depend rurera-hide">
+                                                                                <div class="input-group-prepend">
+                                                                                    <button type="button" class="input-group-text admin-file-manager" data-input="image-options-1" data-preview="holder">
+                                                                                    <i class="fa fa-upload"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                                <input class="rureraform-properties-options-image" type="text" id="image-options-1" value="" placeholder="Upload Image">
+                                                                                <span>
+                                                                                    <i class="far fa-image"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="rurera-hide">
+                                                                                <input class="rureraform-properties-options-value" type="text" value="Chloroplasts" placeholder="Value">
+                                                                            </div>
+                                                                            <div>
+                                                                            <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
+                                                                                <i class="fas fa-check"></i>
+                                                                            </span>
+                                                                            <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
+                                                                                <i class="far fa-copy"></i>
+                                                                            </span>
+                                                                            <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
+                                                                                <i class="fas fa-trash-alt"></i>
+                                                                            </span>
+                                                                            <span title="Move the option">
+                                                                                <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
+                                                                            </span>
                                                                         </div>
                                                                     </div>
                                                                     </div>
