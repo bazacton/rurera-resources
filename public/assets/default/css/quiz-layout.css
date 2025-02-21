@@ -502,39 +502,17 @@ body .question-result-layout ol li {margin-top: 1.5rem; margin-left: 0;}
 .correct-appriciate.red{border: 1px solid #ff5b5b;color: #ff5b5b;}
 .correct-appriciate.orange{border: 1px solid orange;color: orange;}
 .correct-appriciate.blue{border: 1px solid blue;color: blue;}
-.correct-appriciate.green{
-  border: 1px solid green;
-color: green;
-}
-.question-step.quiz-complete1{
-pointer-events:none;
-}
-label.lms-question-label.correct {
-  background: #70c17c !important;
-border:none !important;
-}
-label.lms-question-label.wrong {
-  background: #ff4f4f !important;
-border:none !important;
-}
+.correct-appriciate.green{border: 1px solid green; color: green;}
+.question-step.quiz-complete1{pointer-events:none;}
+label.lms-question-label.correct {background: #70c17c !important;border:none !important;}
+label.lms-question-label.wrong {background: #ff4f4f !important;border:none !important;}
 label.lms-question-label.correct span, 
-label.lms-question-label.wrong span {
-  color: #fff !important;
-}
-.image-center {
-  text-align: center;
-}
+label.lms-question-label.wrong span {color: #fff !important;}
+.image-center {text-align: center;}
 
 /*Question Block Style*/
-.question-number-holder ~ .rureraform-elements {
-  padding-left: 60px;
-}
-.question-area-block.quiz-first-question {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+.question-number-holder ~ .rureraform-elements {padding-left: 60px;}
+.question-area-block.quiz-first-question {height: 100vh; display: flex; flex-direction: column; justify-content: center;}
 .spells-quiz-info ul {border: 1px solid #bac3ca; border-left: 0; border-right: 0; border-top: 0; display: flex; gap: 15px; justify-content: space-between;}
 .spells-quiz-info ul li {border-left: 1px solid #bac3ca;text-align: center;width: 32%;padding: 15px 0;font-size: 20px;color: #343434;text-transform: uppercase;display: inline-flex;align-items: center;justify-content: center;gap: 5px;}
 .spells-quiz-info ul li:first-child {border-left: 0;}
@@ -666,15 +644,15 @@ Quiz Front end file all css Start
 	.field-group p.text-field {max-width: 25%; width: 25%; justify-content: flex-start; padding-left: 30px;}
 	.rureraform-element-html h5 .ml-20 {margin: 15px 0 0; display: block;}
 	.rureraform-element-html h5 span {font-size: 15px;}
-    .rureraform-pages-bar-items>li label {font-size: 16px;}
+  .rureraform-pages-bar-items>li label {font-size: 16px;}
 	.field-group p.text-field span {font-size: 14px;}
 }
 @media screen and (max-width: 480px) {
-    .rureraform-element .field-group {margin: 20px 0 0 0;}
+  .rureraform-element .field-group {margin: 20px 0 0 0;}
 	.rureraform-form .rureraform-col-3,
 	.rureraform-form .rureraform-col-2 {width: 100%;}
 	.rureraform-form-2 .rureraform-element-34 div.rureraform-input .rureraform-imageselect+label {width: 48%;}
-    .field-group p.text-field {max-width: 36%; width: 36%; justify-content: flex-start;	padding: 0;}
+  .field-group p.text-field {max-width: 36%; width: 36%; justify-content: flex-start;	padding: 0;}
 }
 /*Green Form Fields Style End*/
 
