@@ -78,188 +78,186 @@ $practice_time = 0;
              data-total_questions="{{$quizQuestions->count()}}">
             @php $top_bar_class = ''; @endphp
 {{--Quiz topbar--}}
-                <section class="quiz-topbar {{$top_bar_class}}">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-6 col-sm-12">
-                                @if( isset( $quiz->quiz_type ))
-                                   <img class="quiz-type-icon" src="/assets/default/img/assignment-logo/{{$quiz->quiz_type}}.png">
-                               @endif
-                                <div class="quiz-top-info"><p>{{$quiz->getTitleAttribute()}}</p>
-                                </div>
-                            </div>
-                            <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
-                                <div class="topbar-right rurera-hide">
-                                       <div class="quiz-pagination rurera-hide">
-                                           <div class="swiper-container">
-                                           <ul class="swiper-wrapper disabled-div">
-                                               @if( !empty( $questions_list ) )
-                                               @php $question_count = 1; @endphp
-                                               @foreach( $questions_list as $question_id)
-                                               @php $is_flagged = false;
-                                               $flagged_questions = ($newQuizStart->flagged_questions != '')? json_decode
-                                               ($newQuizStart->flagged_questions) : array();
-                                               $actual_question_id = isset( $actual_question_ids[$question_id] )? $actual_question_ids[$question_id] : 0;
-                                               @endphp
-                                               @if( is_array( $flagged_questions ) && in_array( $actual_question_id,
-                                               $flagged_questions))
-                                               @php $is_flagged = true;
-                                               @endphp
-                                               @endif
-                                               @php $question_status_class = isset( $questions_status_array[$question_id] )? $questions_status_array[$question_id] : 'waiting'; @endphp
-                                               <li data-question_id="{{$question_id}}" data-actual_question_id="{{$actual_question_id}}" class="swiper-slide {{ ( $is_flagged == true)?
-                                                       'has-flag' : ''}} {{$question_status_class}}"><a
-                                                       href="javascript:;">
-                                                       {{$question_count}}</a></li>
-                                               @php $question_count++; @endphp
-                                               @endforeach
-                                               @endif
-                                           </ul>
-                                           </div>
-                                           <div class="swiper-button-prev"></div>
-                                           <div class="swiper-button-next"></div>
-                                       </div>
-                                    <div class="close-btn-holder">
-                                        <button class="close-btn review-btn pause-quiz" data-toggle="modal" data-target="#pause_quiz">&#x2715;</button>
-                                    </div>
-                                </div>
+            <section class="quiz-topbar {{$top_bar_class}}">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 col-sm-12">
+                            @if( isset( $quiz->quiz_type ))
+                                <img class="quiz-type-icon" src="/assets/default/img/assignment-logo/{{$quiz->quiz_type}}.png" alt="assignment-logo">
+                            @endif
+                            <div class="quiz-top-info"><p>{{$quiz->getTitleAttribute()}}</p>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <div class="justify-content-center">
-                    <div class="col-lg-9 col-md-12 col-sm-12 mt-50 mx-auto">
-                        <div class="quiz-status-bar">
-                            <div class="quiz-questions-bar-holder">
-
-                                @php 
-                                
-                                $topic_accuracy = isset( $topicPerformData['topic_accuracy'] )? $topicPerformData['topic_accuracy'] : 0;
-                                $topic_completion = isset( $topicPerformData['topic_completion'] )? $topicPerformData['topic_completion'] : 0;
-                                @endphp
-                                <div class="quiz-questions-bar">
-                                    @if( $topic_completion > 0)
-                                        @if( $topic_accuracy > $topic_completion)
-                                            <span class="accuracy-progress value-lable" data-title="Accuracy" style="left:{{$topic_accuracy}}%"><span>{{$topic_accuracy}}%</span></span>
-                                            <span class="completion-progress value-lable" data-title="Topic Completion" style="left:{{$topic_completion}}%"><span>{{$topic_completion}}%</span></span>
-                                        @else
-                                            <span class="completion-progress value-lable" data-title="Topic Completion" style="left:{{$topic_completion}}%"><span>{{$topic_completion}}%</span></span>
-                                            <span class="accuracy-progress value-lable" data-title="Accuracy" style="left:{{$topic_accuracy}}%"><span>{{$topic_accuracy}}%</span></span>
-                                        @endif
-                                    @endif
-                                    <span class="bar-fill" title="" style="width: 0%;"></span>
-                                </div>
-                                <span class="coin-numbers">
-                                    <img src="/assets/default/img/quests-coin.png" alt="">
-                                    <span class="total-earned-coins">0</span>
-                                </span>
-                            </div>
-                            <div class="quiz-corrects-incorrects">
-                                <span class="quiz-corrects">0</span>
-                                <span class="quiz-incorrects">0</span>
-                            </div>
-                        </div>
-                        <div class="question-step quiz-complete" style="display:none">
-                            <div class="question-layout-block">
-                                <div class="left-content has-bg">
-                                    <h2>&nbsp;</h2>
-                                    <div id="rureraform-form-1"
-                                         class="rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable"
-                                         _data-parent="1"
-                                         _data-parent-col="0" style="display: block;">
-                                        <div class="question-layout">
-
+                        <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                            <div class="topbar-right rurera-hide">
+                                    <div class="quiz-pagination rurera-hide">
+                                        <div class="swiper-container">
+                                        <ul class="swiper-wrapper disabled-div">
+                                            @if( !empty( $questions_list ) )
+                                            @php $question_count = 1; @endphp
+                                            @foreach( $questions_list as $question_id)
+                                            @php $is_flagged = false;
+                                            $flagged_questions = ($newQuizStart->flagged_questions != '')? json_decode
+                                            ($newQuizStart->flagged_questions) : array();
+                                            $actual_question_id = isset( $actual_question_ids[$question_id] )? $actual_question_ids[$question_id] : 0;
+                                            @endphp
+                                            @if( is_array( $flagged_questions ) && in_array( $actual_question_id,
+                                            $flagged_questions))
+                                            @php $is_flagged = true;
+                                            @endphp
+                                            @endif
+                                            @php $question_status_class = isset( $questions_status_array[$question_id] )? $questions_status_array[$question_id] : 'waiting'; @endphp
+                                            <li data-question_id="{{$question_id}}" data-actual_question_id="{{$actual_question_id}}" class="swiper-slide {{ ( $is_flagged == true)?
+                                                    'has-flag' : ''}} {{$question_status_class}}"><a
+                                                    href="javascript:;">
+                                                    {{$question_count}}</a></li>
+                                            @php $question_count++; @endphp
+                                            @endforeach
+                                            @endif
+                                        </ul>
                                         </div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
                                     </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                      
-
-                        <div class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
-                        @php $total_questions = 10; @endphp
-                        <div class="question-area dis-arrows1" data-total_questions="{{$total_questions}}">
-                            <div class="correct-appriciate" style="display:none"></div>
-                            <div class="question-inner-step-area">
-                                <div class="question-layout-block">
-
-                                        <div class="left-content has-bg">
-
-
-                            @if( is_array( $question ))
-                            @php $question_no = 1; @endphp
-
-                            @foreach( $question as $questionObj)
-                            @include('web.default.panel.questions.question_layout',[
-                            'question'=> $questionObj,
-                            'prev_question' => 0,
-                            'next_question' => 0,
-                            'question_no' => $question_no,
-                            'quizAttempt' => $quizAttempt,
-                            'newQuestionResult' => $newQuestionResult,
-                            'quizResultObj' => $newQuizStart
-                            ])
-                            @php $question_no++; @endphp
-                            @endforeach
-                            @else
-
-
-
-                            @if( !empty( $questions_layout  ) )
-                                @php $question_counter  = 1; @endphp
-                                @foreach( $questions_layout as $result_question_id => $questionLayout)
-                                    @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
-                                    $active_class = ($active_question_id == $active_actual_question_id)? 'active' : '';
-                                    $active_class = ($active_class == '' && $question_counter == 1)? 'active' : '';
-                                    @endphp
-                                    <div class="rurera-question-block question-step question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
-                                    data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
-                                    data-start_time="0" data-qresult="{{isset( $result_question_id )? $result_question_id : 0}}"
-                                    data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
-                                    {!! $questionLayout !!}
-                                    </div>
-
-                                    @php $question_counter++; @endphp
-                                @endforeach
-                            @endif
-
-                            @endif
-                            <div class="show-notifications" data-show_message="yes"></div>
-                                <div class="prev-next-controls text-center mb-50 questions-nav-controls">
-                                    <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
-                                        Finish
-                                        <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
-                                    </a>
-                                    <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
-                                        Next
-                                        <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                    </a>
-                                    <a href="javascript:;" id="prev-btn" class="rurera-hide prev-btn">
-                                        prev
-                                        <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                    </a>
-                                    <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
-                                        mark answer
-                                    </a>
-                                    <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
-                                        Next
-                                        <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
-                                    </a>
+                                <div class="close-btn-holder">
+                                    <button class="close-btn review-btn pause-quiz" data-toggle="modal" data-target="#pause_quiz">&#x2715;</button>
                                 </div>
                             </div>
-							</div>
-							</div>
-						</div>
                         </div>
-                        <div class="question-area-temp hide"></div>
                     </div>
                 </div>
+            </section>
+            <div class="justify-content-center">
+                <div class="col-lg-9 col-md-12 col-sm-12 mt-50 mx-auto">
+                    <div class="quiz-status-bar">
+                        <div class="quiz-questions-bar-holder">
+
+                            @php 
+                            
+                            $topic_accuracy = isset( $topicPerformData['topic_accuracy'] )? $topicPerformData['topic_accuracy'] : 0;
+                            $topic_completion = isset( $topicPerformData['topic_completion'] )? $topicPerformData['topic_completion'] : 0;
+                            @endphp
+                            <div class="quiz-questions-bar">
+                                @if( $topic_completion > 0)
+                                    @if( $topic_accuracy > $topic_completion)
+                                        <span class="accuracy-progress value-lable" data-title="Accuracy" style="left:{{$topic_accuracy}}%"><span>{{$topic_accuracy}}%</span></span>
+                                        <span class="completion-progress value-lable" data-title="Topic Completion" style="left:{{$topic_completion}}%"><span>{{$topic_completion}}%</span></span>
+                                    @else
+                                        <span class="completion-progress value-lable" data-title="Topic Completion" style="left:{{$topic_completion}}%"><span>{{$topic_completion}}%</span></span>
+                                        <span class="accuracy-progress value-lable" data-title="Accuracy" style="left:{{$topic_accuracy}}%"><span>{{$topic_accuracy}}%</span></span>
+                                    @endif
+                                @endif
+                                <span class="bar-fill" title="" style="width: 0%;"></span>
+                            </div>
+                            <span class="coin-numbers">
+                                <img src="/assets/default/img/quests-coin.png" alt="">
+                                <span class="total-earned-coins">0</span>
+                            </span>
+                        </div>
+                        <div class="quiz-corrects-incorrects">
+                            <span class="quiz-corrects">0</span>
+                            <span class="quiz-incorrects">0</span>
+                        </div>
+                    </div>
+                    <div class="question-step quiz-complete" style="display:none">
+                        <div class="question-layout-block">
+                            <div class="left-content has-bg">
+                                <h2>&nbsp;</h2>
+                                <div id="rureraform-form-1"
+                                        class="rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable"
+                                        _data-parent="1"
+                                        _data-parent-col="0" style="display: block;">
+                                    <div class="question-layout">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
+                    @php $total_questions = 10; @endphp
+                    <div class="question-area dis-arrows1" data-total_questions="{{$total_questions}}">
+                        <div class="correct-appriciate" style="display:none"></div>
+                        <div class="question-inner-step-area">
+                            <div class="question-layout-block">
+
+                                    <div class="left-content has-bg">
+
+
+                        @if( is_array( $question ))
+                        @php $question_no = 1; @endphp
+
+                        @foreach( $question as $questionObj)
+                        @include('web.default.panel.questions.question_layout',[
+                        'question'=> $questionObj,
+                        'prev_question' => 0,
+                        'next_question' => 0,
+                        'question_no' => $question_no,
+                        'quizAttempt' => $quizAttempt,
+                        'newQuestionResult' => $newQuestionResult,
+                        'quizResultObj' => $newQuizStart
+                        ])
+                        @php $question_no++; @endphp
+                        @endforeach
+                        @else
+
+
+
+                        @if( !empty( $questions_layout  ) )
+                            @php $question_counter  = 1; @endphp
+                            @foreach( $questions_layout as $result_question_id => $questionLayout)
+                                @php $active_actual_question_id = isset( $actual_question_ids[$result_question_id] )? $actual_question_ids[$result_question_id] : 0;
+                                $active_class = ($active_question_id == $active_actual_question_id)? 'active' : '';
+                                $active_class = ($active_class == '' && $question_counter == 1)? 'active' : '';
+                                @endphp
+                                <div class="rurera-question-block question-step question-step-{{ $active_actual_question_id }} {{$active_class}}" data-elapsed="0"
+                                data-qattempt="{{isset( $quizAttempt->id )? $quizAttempt->id : 0}}"
+                                data-start_time="0" data-qresult="{{isset( $result_question_id )? $result_question_id : 0}}"
+                                data-quiz_result_id="{{isset( $quizAttempt->quiz_result_id )? $quizAttempt->quiz_result_id : 0}}">
+                                {!! $questionLayout !!}
+                                </div>
+
+                                @php $question_counter++; @endphp
+                            @endforeach
+                        @endif
+
+                        @endif
+                        <div class="show-notifications" data-show_message="yes"></div>
+                            <div class="prev-next-controls text-center mb-50 questions-nav-controls">
+                                <a href="javascript:;" data-toggle="modal" class="review-btn rurera-hide1" data-target="#review_submit">
+                                    Finish
+                                    <img src="/assets/default/svgs/review-btn-flag.svg" width="683" height="683" alt="review-btn-flag">
+                                </a>
+                                <a href="javascript:;" id="next-btn" class="rurera-hide next-btn">
+                                    Next
+                                    <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
+                                </a>
+                                <a href="javascript:;" id="prev-btn" class="rurera-hide prev-btn">
+                                    prev
+                                    <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
+                                </a>
+                                <a href="javascript:;" id="question-submit-btn" class="question-submit-btn">
+                                    mark answer
+                                </a>
+                                <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
+                                    Next
+                                    <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="question-area-temp hide"></div>
+                </div>
             </div>
-        </section>
-
-
+        </div>
+    </section>
 </div>
 {{--vocabulary--}}
 @if($quiz->quiz_type == 'vocabulary')
