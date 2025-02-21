@@ -1562,78 +1562,19 @@ body:has(.api-questions-form) .container {width: 100%; max-width: 1000px; margin
 .api-questions-form label {margin-top: 10px; display: block; font-weight: 600;}
 .api-questions-form textarea, .api-questions-form input[type="text"] {width: 100%; padding: 8px 0 0; margin-top: 5px; border: 0; border-bottom: 1px solid transparent; border-radius: 0; box-sizing: border-box; font-size: 15px; appearance: none; resize: none; outline: none; font-family: Arial, sans-serif; background-color: inherit;}
 .api-questions-form textarea:focus, .api-questions-form input[type="text"]:focus,
-.api-questions-form .question_heading span:focus {
-    border-bottom-color: #ccc;
-}
-.api-questions-form .option-group {
-    display: flex;
-    gap: 10px;
-    margin-top: 5px;
-    align-items: center;
-}
-.api-questions-form .numeric-list-style .option-group {
-    padding-left: 50px;
-}
-.api-questions-form .option-group input[type="text"] {
-    flex: 1;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    outline: none;
-}
-.api-questions-form .option-buttons button {
-    cursor: pointer;
-    padding: 5px 8px;
-    font-size: 14px;
-    border: none;
-    border-radius: 4px;
-}
+.api-questions-form .question_heading span:focus {border-bottom-color: #ccc;}
+.api-questions-form .option-group {display: flex; gap: 10px; margin-top: 5px; align-items: center;}
+.api-questions-form .numeric-list-style .option-group {padding-left: 50px;}
+.api-questions-form .option-group input[type="text"] {flex: 1; border: 0; margin: 0; padding: 0; outline: none;}
+.api-questions-form .option-buttons button {cursor: pointer; padding: 5px 8px; font-size: 14px; border: none; border-radius: 4px;}
 .api-questions-form .submit-btn,
-.reject-btn {
-    padding: 15px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-    height: auto;
-    text-transform: capitalize;
-}
-.reject-btn {
-    background-color: #dedede;
-    color: #333;
-}
-.api-questions-form .add-option-btn {
-    cursor: pointer;
-    margin-top: 20px;
-    display: block;
-    width: 100%;
-    border: 0;
-    text-align:left;
-    color: blue;
-    background-color: inherit;
-    text-decoration: underline;
-    padding: 0;
-    font-size: 16px;
-}
-.api-questions-form .remove-option-btn {
-    background-color: #f44336;
-    color: white;
-}
-.api-questions-form .move-up-btn, .api-questions-form .move-down-btn {
-    background-color: #2196F3;
-    color: white;
-}
-.question-general-block {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-}
-.question-explain-block h3 {
-    color: #444;
-}
+.reject-btn {padding: 15px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; margin-top: 20px; height: auto; text-transform: capitalize;}
+.reject-btn {background-color: #dedede; color: #333;}
+.api-questions-form .add-option-btn {cursor: pointer; margin-top: 20px; display: block; width: 100%; border: 0; text-align:left; color: blue; background-color: inherit; text-decoration: underline; padding: 0; font-size: 16px;}
+.api-questions-form .remove-option-btn {background-color: #f44336; color: white;}
+.api-questions-form .move-up-btn, .api-questions-form .move-down-btn {background-color: #2196F3; color: white;}
+.question-general-block {border-bottom: 1px solid #ddd; padding-bottom: 30px; margin-bottom: 30px;}
+.question-explain-block h3 {color: #444;}
 /* Styling for keyword */
 .question-keywors-block h3 {
     margin-bottom: 10px;
