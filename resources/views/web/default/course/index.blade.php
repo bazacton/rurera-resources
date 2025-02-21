@@ -299,12 +299,8 @@
                                                                         </tr>
                                                                         
                                                                     @endif
-                                                                @endforeach
-                                                                
-                                                                
-                                                                
+                                                                @endforeach  
                                                             @endif
-                                                            
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -313,13 +309,13 @@
                                     </div>
                                 </div>
                             </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
-        </div>
+        </section>
+    </div>
+</div>
 </div>
 </section>
     <div id="webinarReportModal" class="d-none">
