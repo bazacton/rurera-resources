@@ -1340,12 +1340,12 @@
                                     <em>Empty</em>
                                 </li>
                                 <li>
-                                    <img src="/assets/default/svgs/book-saved.svg" alt="">
+                                    <img src="/assets/default/svgs/book-saved.svg" alt="book-saved">
                                     <input type="text" placeholder="Subject" title="Subject">
                                     <em>Empty</em>
                                 </li>
                                 <li>
-                                    <img src="/assets/default/svgs/teacher-with-stick.svg" alt="">
+                                    <img src="/assets/default/svgs/teacher-with-stick.svg" alt="teacher-with-stick">
                                     <input type="text" placeholder="Co-teacher" title="Co-teacher">
                                     <div class="dropdown">
                                         <button class="btn-link dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1366,17 +1366,17 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <img src="/assets/default/svgs/calendar-days.svg" alt="">
+                                    <img src="/assets/default/svgs/calendar-days.svg" alt="calendar-days">
                                     <input type="text" placeholder="Start Date" title="Start Date">
                                     <em>Empty</em>
                                 </li>
                                 <li>
-                                    <img src="/assets/default/svgs/deadlines.svg" alt="">
+                                    <img src="/assets/default/svgs/deadlines.svg" alt="deadlines">
                                     <input type="text" placeholder="Deadline :" title="Deadline :">
                                     <em>Empty</em>
                                 </li>
                                 <li>
-                                    <img src="/assets/default/svgs/attempt.svg" alt="">
+                                    <img src="/assets/default/svgs/attempt.svg" alt="attempt">
                                     <input type="text" placeholder="Participant attempts :" title="Participant attempts :">
                                     <em>Empty</em>
                                 </li>
@@ -1599,70 +1599,70 @@
                     <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0">
                         <div class="question-layout-block">
                             <form class="question-fields" action="javascript:;" data-question_id="10180">
-                            <div class="left-content has-bg">
-                                <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
-                                <div class="question-layout row d-flex align-items-start">
-                                    <div class="rureraform-col rureraform-col-12">
-                                        <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
-                                            <div class="question-top-info">
-                                                <div class="question-count">
-                                                    <span class="question-count-lable">Question 1 of 20</span>
+                                <div class="left-content has-bg">
+                                    <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
+                                    <div class="question-layout row d-flex align-items-start">
+                                        <div class="rureraform-col rureraform-col-12">
+                                            <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
+                                                <div class="question-top-info">
+                                                    <div class="question-count">
+                                                        <span class="question-count-lable">Question 1 of 20</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="rureraform-col rureraform-col-12">
+                                        <div class="rureraform-col rureraform-col-12">
+                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                <h4>Read the text, then answer the question.</h4>
+                                            </div>
+                                        </div>
+                                        <div class="rureraform-col rureraform-col-12">
+                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz"> Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm. <div class="rureraform-element-cover"></div>
+                                        </div>
+                                        </div>
+                                        <div class="rureraform-col rureraform-col-12">
                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                            <h4>Read the text, then answer the question.</h4>
-                                        </div>
-                                    </div>
-                                    <div class="rureraform-col rureraform-col-12">
-                                    <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz"> Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm. <div class="rureraform-element-cover"></div>
-                                    </div>
-                                    </div>
-                                    <div class="rureraform-col rureraform-col-12">
-                                    <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                        <div class="question-label question_label">
-                                            <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="rureraform-col rureraform-col-12">
-                                        <div id="rureraform-element-24192" class="quiz-group rureraform-element-24192 rureraform-element ui-sortable-handle" data-type="checkbox">
-                                            <div class="rureraform-column-label">
-                                            <label class="rureraform-label">Mark two answers</label>
+                                            <div class="question-label question_label">
+                                                <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
                                             </div>
-                                            <div class="rureraform-column-input">
-                                            <div class="rureraform-input">
-                                                <div class="form-box  rurera-in-row alphabet-list-style">
-                                                <div class="form-field rureraform-cr-container-medium ">
-                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-00-2424" value="3 hours 45 minutes">
-                                                    <label for="field-24192-00-2424"> 3 hours 45 minutes </label>
+                                        </div>
+                                        </div>
+                                        <div class="rureraform-col rureraform-col-12">
+                                            <div id="rureraform-element-24192" class="quiz-group rureraform-element-24192 rureraform-element ui-sortable-handle" data-type="checkbox">
+                                                <div class="rureraform-column-label">
+                                                <label class="rureraform-label">Mark two answers</label>
                                                 </div>
-                                                <div class="form-field rureraform-cr-container-medium">
-                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-11-2424" value="4 hours 10 minutes">
-                                                    <label for="field-24192-11-2424"> 4 hours 10 minutes </label>
-                                                </div>
-                                                <div class="form-field rureraform-cr-container-medium">
-                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-22-2424" value="3 hours 30 minutes">
-                                                    <label for="field-24192-22-2424"> 3 hours 30 minutes </label>
-                                                </div>
-                                                <div class="form-field rureraform-cr-container-medium">
-                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-33-2424" value="4 hours 35 minutes">
-                                                    <label for="field-24192-33-2424"> 4 hours 35 minutes </label>
-                                                </div>
-                                                <div class="form-field rureraform-cr-container-medium">
-                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-44-2424" value="4 hours">
-                                                    <label for="field-24192-44-2424"> 4 hours </label>
+                                                <div class="rureraform-column-input">
+                                                <div class="rureraform-input">
+                                                    <div class="form-box  rurera-in-row alphabet-list-style">
+                                                    <div class="form-field rureraform-cr-container-medium ">
+                                                        <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-00-2424" value="3 hours 45 minutes">
+                                                        <label for="field-24192-00-2424"> 3 hours 45 minutes </label>
+                                                    </div>
+                                                    <div class="form-field rureraform-cr-container-medium">
+                                                        <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-11-2424" value="4 hours 10 minutes">
+                                                        <label for="field-24192-11-2424"> 4 hours 10 minutes </label>
+                                                    </div>
+                                                    <div class="form-field rureraform-cr-container-medium">
+                                                        <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-22-2424" value="3 hours 30 minutes">
+                                                        <label for="field-24192-22-2424"> 3 hours 30 minutes </label>
+                                                    </div>
+                                                    <div class="form-field rureraform-cr-container-medium">
+                                                        <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-33-2424" value="4 hours 35 minutes">
+                                                        <label for="field-24192-33-2424"> 4 hours 35 minutes </label>
+                                                    </div>
+                                                    <div class="form-field rureraform-cr-container-medium">
+                                                        <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-44-2424" value="4 hours">
+                                                        <label for="field-24192-44-2424"> 4 hours </label>
+                                                    </div>
+                                                    </div>
                                                 </div>
                                                 </div>
                                             </div>
-                                            </div>
                                         </div>
+                                    </div>
                                     </div>
                                 </div>
-                                </div>
-                            </div>
                             </form>
                         </div>
                         <div class="canvas-editable-options-holder">
