@@ -484,9 +484,9 @@
                                                 </div>
                                             </div>
                                             <ul class="list-options">
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 8 questions</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 2nd-5th Grade</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 2nd-5th Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
                                             </ul>
                                         </a>
                                     </div>
