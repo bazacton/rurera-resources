@@ -90,7 +90,7 @@ $target_score = 90;
                     <div class="row">
                         <div class="col-lg-5 col-md-6 col-sm-12">
                             @if( isset( $quiz->quiz_type ))
-                               <img class="quiz-type-icon" src="/assets/default/img/assignment-logo/{{$quiz->quiz_type}}.png">
+                               <img class="quiz-type-icon" src="/assets/default/img/assignment-logo/{{$quiz->quiz_type}}.png" alt="assignment-logo">
                            @endif
                             <div class="quiz-top-info"><p>{{$quiz->getTitleAttribute()}} - start</p>
                             </div>
@@ -103,25 +103,25 @@ $target_score = 90;
                                 <div class="instruction-controls">
                                     <div class="font-setting">
                                         <button class="font-btn">
-                                            <img src="/assets/default/svgs/settings.svg" alt="#">
+                                            <img src="/assets/default/svgs/settings.svg" alt="settings">
                                         </button>
                                         <div class="instruction-dropdown">
                                             <div class="font-controls">
                                                 <a href="#" class="decreasetext">
-                                                    <img src="/assets/default/svgs/small-font.svg" alt="#">
+                                                    <img src="/assets/default/svgs/small-font.svg" alt="small-font">
                                                 </a>
                                                 <a href="#" class="resettext">
-                                                    <img src="/assets/default/svgs/reset-text.svg" alt="#">
+                                                    <img src="/assets/default/svgs/reset-text.svg" alt="reset-text">
                                                 </a>
                                                 <a href="#" class="increasetext">
-                                                    <img src="/assets/default/svgs/big-text.svg" alt="#">
+                                                    <img src="/assets/default/svgs/big-text.svg" alt="big-text">
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="color-setting">
                                         <button class="color-btn">
-                                            <img src="/assets/default/svgs/color-setting.svg" alt="#">
+                                            <img src="/assets/default/svgs/color-setting.svg" alt="color-setting">
                                         </button>
                                         <div class="instruction-dropdown">
                                             <div class="color-controls">
