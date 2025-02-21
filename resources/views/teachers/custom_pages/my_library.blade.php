@@ -84,7 +84,7 @@
                                         <a href="#" class="listing-card-link">
                                             <div class="img-holder">
                                                 <figure>
-                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
+                                                    <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="go-jetters-hero-academy-cc-v2">
                                                 </figure>
                                             </div>
                                             <div class="text-holder">
@@ -98,9 +98,9 @@
                                             </div>
                                             <ul class="list-options">
                                                 
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 8 questions</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 7th-8th  Grade</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 7th-8th  Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
                                             </ul>
                                         </a>
                                     </div>
@@ -122,9 +122,9 @@
                                             </div>
                                             <ul class="list-options">
 
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 10 questions</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt=""></span> 3rd-5th Grade</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/mathematical.svg" alt=""></span> Math</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 3rd-5th Grade</li>
+                                                <li><span class="icon-box"><img src="/assets/default/svgs/mathematical.svg" alt="mathematical"></span> Math</li>
                                             </ul>
                                         </a>
                                     </div>
