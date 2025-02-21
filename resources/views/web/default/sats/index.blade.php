@@ -52,10 +52,10 @@
                             @endphp
                             <tr>
                                 <td class="{{$lock_unlock_class}}">
-                                    <img src="/assets/default/img/{{$lock_image}}">
+                                    <img src="/assets/default/img/{{$lock_image}}" alt="{{$lock_image}}">
                                 </td>
                                 <td>
-                                    <img src="../assets/default/img/sats-list-img1.png" alt="sats listing image" width="512" height="512">
+                                    <img src="/assets/default/img/sats-list-img1.png" alt="sats listing image" width="512" height="512">
                                     <h4><a href="/sats/{{$satObj->quiz_slug}}">{{$satObj->getTitleAttribute()}}</a>
                                         <br> <span class="sub_label">{{count($satObj->quizQuestionsList)}} Question(s)</span>
                                         {{ user_assign_topic_template($satObj->id, 'sats', $childs, $parent_assigned_list)}}
