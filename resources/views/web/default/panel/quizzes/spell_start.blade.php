@@ -139,7 +139,7 @@ $target_score = 90;
                                     {{-- Instruction landing Page --}}
                                     <div class="info-setting">
                                         <button class="info-btn">
-                                            <img src="/assets/default/svgs/info-icon.svg" alt="#">
+                                            <img src="/assets/default/svgs/info-icon.svg" alt="info-icon">
                                         </button>
                                         <div class="instruction-dropdown">
                                             <div class="instruction-text">
@@ -149,11 +149,11 @@ $target_score = 90;
                                                 <ul>
                                                     <li>a coloured overlay (this will change the background colour and may help you read the questions better)</li>
                                                 </ul>
-                                                <img src="/assets/default/img/overlay.png" alt="#">
+                                                <img src="/assets/default/img/overlay.png" alt="overlay">
                                                 <ul>
                                                     <li>the font size</li>
                                                 </ul>
-                                                <img src="/assets/default/img/font-size.png">
+                                                <img src="/assets/default/img/font-size.png" alt="font-size">
                                                 <p>We recommend you setup your page BEFORE the test starts.</p>
                                                 <p>Changing these features during the test will reduce the amount of time you have to answer the questions.</p>
                                                 <hr style="border-color:rgba(130, 80, 232, 0.15)">
@@ -161,7 +161,7 @@ $target_score = 90;
                                                 <p>Read the instructions for each question carefully.</p>
                                                 <p>Choose your answer by clicking on it. If you want to change your mind, click on a different answer.</p>
                                                 <p>Once you are sure of your answer click ‘Submit Answer’. You will not be able to go back to change your answer.</p>
-                                                <img src="/assets/default/img/answer.png" alt="#">
+                                                <img src="/assets/default/img/answer.png" alt="answer">
                                                 <p>You can use a pen/pencil and paper to make notes if you wish. Your working and notes will not be marked.</p>
                                                 <hr style="border-color:rgba(130, 80, 232, 0.15)">
                                                 <h4>About The Test</h4>
