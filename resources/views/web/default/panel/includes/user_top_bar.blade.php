@@ -64,7 +64,7 @@
             </strong>
             <div class="dropdown-menu user-coins-menu dropdown-list dropdown-menu-right">
                 <div class="dropdown-header">
-                    <img src="/assets/default/img/panel-sidebar/coins.svg" alt="">
+                    <img src="/assets/default/img/panel-sidebar/coins.svg" alt="coins">
                     <div class="coins-text">
                         Coins
                         <span>You have {{$authUser->getRewardPoints()}} Coins <a href="/shop">Go to Shop</a></span>
