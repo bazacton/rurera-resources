@@ -342,7 +342,7 @@ $practice_time = 0;
     <div class="modal-body">
       <div class="modal-box">
         <span class="icon-box d-block mb-15">
-            <img src="../assets/default/img/clock-modal-img.png" alt="">
+            <img src="/assets/default/img/clock-modal-img.png" alt="clock-modal-img">
         </span>
         <h3 class="font-24 font-weight-normal mb-10">Are you still there?</h3>
         <p class="mb-15 font-16">
@@ -373,7 +373,6 @@ $practice_time = 0;
     var header = document.getElementById("navbar");
     var headerOffset = (header != null) ? header.offsetHeight : 100;
     var header_height = parseInt(headerOffset) + parseInt(85) + "px";
-
 
     var Quizintervals = null;
 	var InactivityInterval = null;
@@ -421,14 +420,12 @@ $practice_time = 0;
 						$(".question_inactivity_modal .modal-body .correct-questions").html(correct_questions);
 						$(".question_inactivity_modal .modal-body .incorrect-questions").html(incorrect_questions);
 						
-						
                         $(".question_inactivity_modal").modal('show');
                         focusIntervalCount = 180;
                         clearInterval(focusInterval);
                         focusInterval = null;
                     }
                 }, 1000);
-
             }
         });
         window.addEventListener('focus', function () {
@@ -473,30 +470,30 @@ $practice_time = 0;
             }
         })
     }
-		var quiz_result_id = $(".question-area .question-step").attr('data-quiz_result_id');
-		var timeUpdateRequest = null;
-		timeUpdateRequestInterval = setInterval(function () {
-			var time_consumed = $('.quiz-timer-counter').attr('data-time_consumed');
-			
-			timeUpdateRequest = jQuery.ajax({
-				type: "POST",
-				dataType: 'json',
-				url: '/question_attempt/update_time',
-				async: true,
-				beforeSend: function () {
-					if (timeUpdateRequest != null) {
-						timeUpdateRequest.abort();
-					}
-				},
-				headers: {
-					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-				},
-				data: {"time_consumed": time_consumed, "quiz_result_id":quiz_result_id},
-				success: function (return_data) {
-					console.log(return_data);
-				}
-			});
-		}, 5000);
+    var quiz_result_id = $(".question-area .question-step").attr('data-quiz_result_id');
+    var timeUpdateRequest = null;
+    timeUpdateRequestInterval = setInterval(function () {
+        var time_consumed = $('.quiz-timer-counter').attr('data-time_consumed');
+        
+        timeUpdateRequest = jQuery.ajax({
+            type: "POST",
+            dataType: 'json',
+            url: '/question_attempt/update_time',
+            async: true,
+            beforeSend: function () {
+                if (timeUpdateRequest != null) {
+                    timeUpdateRequest.abort();
+                }
+            },
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            data: {"time_consumed": time_consumed, "quiz_result_id":quiz_result_id},
+            success: function (return_data) {
+                console.log(return_data);
+            }
+        });
+    }, 5000);
 		
 		
 
