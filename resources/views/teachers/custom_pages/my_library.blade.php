@@ -1016,10 +1016,10 @@
                                                 </div>
                                                 <div class="rureraform-admin-popup-buttons">
                                                     <a class="rureraform-admin-button duplicate-element btn btn-primary" href="#">
-                                                    <label>Update</label>
+                                                        <label>Update</label>
                                                     </a>
                                                     <a class="rureraform-admin-button generate-question-code rurera-hide" href="#">
-                                                    <label>Apply Changes</label>
+                                                        <label>Apply Changes</label>
                                                     </a>
                                                 </div>
                                                 <div class="rureraform-admin-popup-loading" style="display: none;">
@@ -1044,11 +1044,11 @@
                                                 <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
                                                     <div class="question-top-info">
                                                         <div class="question-count">
-                                                            <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt=""></span>
+                                                            <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
                                                             <span class="question-count-lable">Question 1 of 20</span>
                                                         </div>
                                                         <div class="question-info">
-                                                            <span class="q-type"><img src="/assets/default/svgs/multi-choice.svg" alt="">Multiple choice</span>
+                                                            <span class="q-type"><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice">Multiple choice</span>
                                                             <span class="q-time">Avg time</span>
                                                             <span class="q-point">1 point</span>
                                                         </div>
@@ -1062,37 +1062,37 @@
                                             </div>
                                             <div class="rureraform-col rureraform-col-8">
                                                 <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
+                                                    <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
                                                 </div>
                                                 <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
-                                                <i>Hint:&nbsp;&nbsp;Think about what happens inside cells during respiration and what is released.</i>
-                                                <div class="rureraform-element-cover"></div>
+                                                    <i>Hint:&nbsp;&nbsp;Think about what happens inside cells during respiration and what is released.</i>
+                                                    <div class="rureraform-element-cover"></div>
                                                 </div>
                                             </div>
                                             <div class="rureraform-col rureraform-col-4">
                                                 <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
-                                                <div class="rureraform-column-input">
-                                                    <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
-                                                    <div class="form-box ">
-                                                        <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined active-option">
-                                                            <input class="editor-field" type="radio" name="field-40008" id="field-40008-0" value="True">
-                                                            <label for="field-40008-0">
-                                                            <span class="inner-label">True</span>
-                                                            </label>
+                                                    <div class="rureraform-column-input">
+                                                        <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
+                                                            <div class="form-box ">
+                                                                <div class="lms-radio-select rurera-in-row justify-content-end">
+                                                                    <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined active-option">
+                                                                        <input class="editor-field" type="radio" name="field-40008" id="field-40008-0" value="True">
+                                                                        <label for="field-40008-0">
+                                                                            <span class="inner-label">True</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                                        <input class="editor-field" type="radio" name="field-40008" id="field-40008-1" value="False">
+                                                                        <label for="field-40008-1">
+                                                                            <span class="inner-label">False</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                            <input class="editor-field" type="radio" name="field-40008" id="field-40008-1" value="False">
-                                                            <label for="field-40008-1">
-                                                            <span class="inner-label">False</span>
-                                                            </label>
-                                                        </div>
-                                                        </div>
+                                                        <label class="rureraform-description"></label>
                                                     </div>
-                                                    </div>
-                                                    <label class="rureraform-description"></label>
-                                                </div>
-                                                <div class="rureraform-element-cover"></div>
+                                                    <div class="rureraform-element-cover"></div>
                                                 </div>
                                             </div>
                                             <div class="rureraform-col rureraform-col-8">
