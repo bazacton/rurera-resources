@@ -61,7 +61,7 @@
                 <li class="sidenav-item {{ (request()->is('panel')) ? 'sidenav-item-active' : '' }}">
                     <a href="/{{panelRoute()}}" class="d-flex align-items-center font-16" data-toggle="tooltip" data-placement="left" title="Home">
                         <span class="sidenav-item-icon mr-20">
-                            <img src="/assets/default/img/sidebar/home.svg">
+                            <img src="/assets/default/img/sidebar/home.svg" alt="home">
                         </span>
                         <span class="nav-sub-title font-16">Home</span>
                     </a>
@@ -70,7 +70,7 @@
                 <li class="sidenav-item {{ (request()->is('panel/set-work') or request()->is('panel/set-work/*')) ? 'sidenav-item-active' : '' }}">
                     <a class="d-flex align-items-center" href="/{{panelRoute()}}/set-work" data-toggle="tooltip" data-placement="left" title="Set Work">
                         <span class="sidenav-setting-icon sidenav-item-icon mr-20">
-                            <img src="/assets/default/img/sidebar/set-work.svg">
+                            <img src="/assets/default/img/sidebar/set-work.svg" alt="set-work">
                         </span>
                     </a>
                     <a href="/{{panelRoute()}}/set-work" class="font-16 nav-sub-title">Set Work</a>
