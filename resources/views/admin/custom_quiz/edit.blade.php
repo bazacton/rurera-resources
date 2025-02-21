@@ -73,7 +73,7 @@
                                     </div>
                                     <input class="topic_id_value" type="hidden" name="ajax[{{$assignment->id}}][topic_id]" value="{{$assignment->topic_id}}">
                                     <input class="subtopic_id_value" type="hidden" name="ajax[{{$assignment->id}}][subtopic_id]" value="{{$assignment->subtopic_id}}">
-									 <div class="" id="questions">
+									 <div id="questions">
 										<div class="row col-lg-12 col-md-12 col-sm-12 col-12">
 											<div class="col-lg-4 col-md-4 col-sm-12 col-4 selected-questions-group questions-group-select1"></div>
 											<div class="col-lg-8 col-md-8 col-sm-12 col-8 single-question-preview"></div>
@@ -91,15 +91,15 @@
                                                 <li data-question_id="{{$questionDataObj->id}}">
                                                     <input type="hidden" name="ajax[{{$assignment->id}}][question_list_ids][]" value="{{$questionDataObj->id}}">
                                                     <div class="question-list-item" id="question-list-item">
-                                                    <span class="question-title">{{$questionDataObj->question_title}}</span>
-                                                    <span class="topic-title">{{$assignment->topic->getTitleAttribute()}}</span>
-                                                        {!! $review_required_title !!}
-                                                    <span class="difficulty-level">{{$questionDataObj->question_difficulty_level}}</span>
-                                                    <span class="question-id">ID:# {{$questionDataObj->id}}</span>
-                                                    <span class="question-marks">Marks: {{$questionDataObj->question_score}}</span>
-                                                    <span class="list-buttons">
-                                                        <a href="javascript:;" class="questions-parent-li-remove">Remove</a>
-                                                    </span>
+                                                        <span class="question-title">{{$questionDataObj->question_title}}</span>
+                                                        <span class="topic-title">{{$assignment->topic->getTitleAttribute()}}</span>
+                                                            {!! $review_required_title !!}
+                                                        <span class="difficulty-level">{{$questionDataObj->question_difficulty_level}}</span>
+                                                        <span class="question-id">ID:# {{$questionDataObj->id}}</span>
+                                                        <span class="question-marks">Marks: {{$questionDataObj->question_score}}</span>
+                                                        <span class="list-buttons">
+                                                            <a href="javascript:;" class="questions-parent-li-remove">Remove</a>
+                                                        </span>
                                                     </div>
                                                 </li>
                                                 @endforeach
