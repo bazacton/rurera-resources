@@ -818,7 +818,7 @@
                         </span>
                     </div>
                     <span class="thumb-box">
-                        <img src="/assets/default/img/thumb1.png" alt="">
+                        <img src="/assets/default/img/thumb1.png" alt="thumb1">
                     </span>
                 </a>
                 <div class="spell-tooltip">
@@ -836,7 +836,7 @@
                         </span>
                     </div>
                     <span class="thumb-box">
-                        <img src="/assets/default/img/thumb1.png" alt="">
+                        <img src="/assets/default/img/thumb1.png" alt="thumb1">
                     </span>
                 </a>
                 <div class="spell-tooltip">
@@ -849,7 +849,7 @@
             <li class="treasure">
                 <a href="#">
                     <span class="thumb-box">
-                        <img src="/assets/default/img/treasure.png" alt="">
+                        <img src="/assets/default/img/treasure.png" alt="treasure">
                     </span>
                 </a>
             </li>
@@ -861,7 +861,7 @@
                         </span>
                     </div>
                     <span class="thumb-box">
-                        <img src="/assets/default/img/thumb1.png" alt="">
+                        <img src="/assets/default/img/thumb1.png" alt="thumb1">
                     </span>
                 </a>
                 <div class="spell-tooltip">
@@ -879,7 +879,7 @@
                         </span>
                     </div>
                     <span class="thumb-box">
-                        <img src="/assets/default/img/thumb1.png" alt="">
+                        <img src="/assets/default/img/thumb1.png" alt="thumb1">
                     </span>
                 </a>
                 <div class="spell-tooltip">
@@ -903,7 +903,7 @@
     <div class="panel-stats">
         <div class="stats-user">
             <a href="#">
-                <img src="/assets/default/img/stats-thumb.png" alt="">
+                <img src="/assets/default/img/stats-thumb.png" alt="stats-thumb">
                 <span>Welcome back Mathew Anderson</span>
             </a>
         </div>
@@ -961,7 +961,7 @@
         <div class="spell-levels-top">
             <div class="spell-top-left">
                 <strong>Unit 3 : Grouping and identifying organisms</strong>
-                <a href="#" class="words-count simple"><img src="/assets/default/img/skills-icon.png" alt=""><span>80</span>skills</a>
+                <a href="#" class="words-count simple"><img src="/assets/default/img/skills-icon.png" alt="skills-icon"><span>80</span>skills</a>
                 <div class="levels-progress horizontal">
                     <span class="progress-box">
                         <span class="progress-count" style="width: 40%;"></span>
@@ -971,7 +971,7 @@
             </div>
             <div class="spell-top-right">
                 <span class="spell-top-img">
-                    <img src="/assets/default/img/spell-lelvel-top-img.png" alt="#">
+                    <img src="/assets/default/img/spell-lelvel-top-img.png" alt="spell-lelvel-top-img">
                 </span>
             </div>
         </div>
@@ -982,16 +982,16 @@
                         <span class="progress-count"></span>
                     </span>
                 </div>
-                <a href="#"><img src="/assets/default/img/panel-star.png" alt=""></a>
+                <a href="#"><img src="/assets/default/img/panel-star.png" alt="panel-star"></a>
             </li>
             <li class="intermediate">
-                <a href="#"><img src="/assets/default/img/panel-lock.png" alt=""></a>
+                <a href="#"><img src="/assets/default/img/panel-lock.png" alt="panel-lock"></a>
             </li>
             <li class="treasure">
-                <a href="#"><img src="/assets/default/img/treasure.png" alt=""></a>
+                <a href="#"><img src="/assets/default/img/treasure.png" alt="treasure"></a>
             </li>
             <li class="Hard">
-                <a href="#"><img src="/assets/default/img/panel-lock.png" alt=""></a>
+                <a href="#"><img src="/assets/default/img/panel-lock.png" alt="panel-lock"></a>
                 <div class="spell-tooltip">
                     <div class="spell-tooltip-text">
                         <strong>Atoms, elements and the Periodic Table</strong>
@@ -1001,16 +1001,16 @@
                 </div>
             </li>
             <li class="Hard">
-                <a href="#"><img src="/assets/default/img/panel-lock.png" alt=""></a>
+                <a href="#"><img src="/assets/default/img/panel-lock.png" alt="panel-lock"></a>
             </li>
             <li class="Hard">
-                <a href="#"><img src="/assets/default/img/panel-lock.png" alt=""></a>
+                <a href="#"><img src="/assets/default/img/panel-lock.png" alt="panel-lock"></a>
             </li>
             <li class="treasure">
-                <a href="#"><img src="/assets/default/img/treasure.png" alt=""></a>
+                <a href="#"><img src="/assets/default/img/treasure.png" alt="treasure"></a>
             </li>
             <li class="Hard">
-                <a href="#"><img src="/assets/default/img/panel-lock.png" alt=""></a>
+                <a href="#"><img src="/assets/default/img/panel-lock.png" alt="panel-lock"></a>
                 <div class="spell-tooltip">
                     <div class="spell-tooltip-text">
                         <strong>Atoms, elements and the Periodic Table</strong>
@@ -1020,16 +1020,16 @@
                 </div>
             </li>
             <li class="Hard">
-                <a href="#"><img src="/assets/default/img/panel-lock.png" alt=""></a>
+                <a href="#"><img src="/assets/default/img/panel-lock.png" alt="panel-lock"></a>
             </li>
             <li class="Hard">
-                <a href="#"><img src="/assets/default/img/panel-lock.png" alt=""></a>
+                <a href="#"><img src="/assets/default/img/panel-lock.png" alt="panel-lock"></a>
             </li>
             <li class="Hard">
-                <a href="#"><img src="/assets/default/img/panel-lock.png" alt=""></a>
+                <a href="#"><img src="/assets/default/img/panel-lock.png" alt="panel-lock"></a>
             </li>
             <li class="Hard">
-                <a href="#"><img src="/assets/default/img/treasure4.png" alt=""></a>
+                <a href="#"><img src="/assets/default/img/treasure4.png" alt="treasure4"></a>
             </li>
         </ul>
     </div>
