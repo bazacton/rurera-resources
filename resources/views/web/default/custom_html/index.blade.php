@@ -510,7 +510,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/bag.svg" alt="">
+                                    <img src="/assets/default/svgs/bag.svg" alt="bag">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Make a purchase</h5>
@@ -521,7 +521,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/signup.svg" alt="">
+                                    <img src="/assets/default/svgs/signup.svg" alt="signup">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Create an account</h5>
@@ -532,7 +532,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/birthday.svg" alt="">
+                                    <img src="/assets/default/svgs/birthday.svg" alt="birthday">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Happy Birthday</h5>
@@ -543,7 +543,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/bubble-star.svg" alt="">
+                                    <img src="/assets/default/svgs/bubble-star.svg" alt="bubble-star">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Leave a Review</h5>
@@ -554,7 +554,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/bubble-star.svg" alt="">
+                                    <img src="/assets/default/svgs/bubble-star.svg" alt="bubble-star">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Add a photo in your Review</h5>
@@ -565,7 +565,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/reward-facebook.svg" alt="">
+                                    <img src="/assets/default/svgs/reward-facebook.svg" alt="reward-facebook">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Like us on Facebook</h5>
@@ -576,7 +576,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/newsletter.svg" alt="">
+                                    <img src="/assets/default/svgs/newsletter.svg" alt="newsletter">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Sign up to our mailing list</h5>
@@ -587,7 +587,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/reward-instagram.svg" alt="">
+                                    <img src="/assets/default/svgs/reward-instagram.svg" alt="reward-instagram">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Follow us on Instagram</h5>
@@ -598,7 +598,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/bag.svg" alt="">
+                                    <img src="/assets/default/svgs/bag.svg" alt="bag">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Carbon Neutral Order</h5>
@@ -609,7 +609,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/visit.svg" alt="">
+                                    <img src="/assets/default/svgs/visit.svg" alt="visit">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Read Our Latest Blog</h5>
@@ -629,7 +629,7 @@
                         <div class="col-12">
                             <div class="rewards-item item-left d-flex align-items-center justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/bag.svg" alt="">
+                                    <img src="/assets/default/svgs/bag.svg" alt="bag">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Redeem your points when you checkout</h5>
@@ -640,7 +640,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/birthday.svg" alt="">
+                                    <img src="/assets/default/svgs/birthday.svg" alt="birthday">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">House Plant Invigorator</h5>
@@ -652,7 +652,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/birthday.svg" alt="">
+                                    <img src="/assets/default/svgs/birthday.svg" alt="birthday">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Digital Plant Thermometer 🌡️</h5>
@@ -664,7 +664,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/birthday.svg" alt="">
+                                    <img src="/assets/default/svgs/birthday.svg" alt="birthday">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Pride Plant Magnets</h5>
@@ -676,7 +676,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/birthday.svg" alt="">
+                                    <img src="/assets/default/svgs/birthday.svg" alt="birthday">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Coco Coir Pole</h5>
@@ -688,7 +688,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/birthday.svg" alt="">
+                                    <img src="/assets/default/svgs/birthday.svg" alt="birthday">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Plant Picks For A Purpose</h5>
@@ -700,7 +700,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/birthday.svg" alt="">
+                                    <img src="/assets/default/svgs/birthday.svg" alt="birthday">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Arber Organic Plant Food</h5>
@@ -712,7 +712,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/birthday.svg" alt="">
+                                    <img src="/assets/default/svgs/birthday.svg" alt="birthday">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Arber Organic Bio Insecticide</h5>
@@ -724,7 +724,7 @@
                         <div class="col-auto">
                             <div class="rewards-item d-flex align-items-center flex-column justify-content-center">
                                 <span class="icon-box">
-                                    <img src="/assets/default/svgs/birthday.svg" alt="">
+                                    <img src="/assets/default/svgs/birthday.svg" alt="birthday">
                                 </span>
                                 <div class="item-text">
                                     <h5 class="item-title">Lively Root Icon Dad Hat</h5>
