@@ -258,19 +258,19 @@
                                 <a href="#" class="time-number"><span class="font-36 d-block text-center">4</span></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt="medal-light"></a>
                             </td>
                         </tr>
                         <tr>
@@ -278,19 +278,19 @@
                                 <a href="#" class="time-number"><span class="font-36 d-block text-center">5</span></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt="medal-light"></a>
                             </td>
                         </tr>
                         <tr>
@@ -298,19 +298,19 @@
                                 <a href="#" class="time-number"><span class="font-36 d-block text-center">6</span></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt="medal-light"></a>
                             </td>
                         </tr>
                         <tr>
@@ -318,19 +318,19 @@
                                 <a href="#" class="time-number"><span class="font-36 d-block text-center">7</span></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt="medal-light"></a>
                             </td>
                         </tr>
                         <tr>
@@ -338,19 +338,19 @@
                                 <a href="#" class="time-number"><span class="font-36 d-block text-center">8</span></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt="medal-light"></a>
                             </td>
                         </tr>
                         <tr>
@@ -358,19 +358,19 @@
                                 <a href="#" class="time-number"><span class="font-36 d-block text-center">9</span></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt="medal-light"></a>
                             </td>
                         </tr>
                         <tr>
@@ -378,19 +378,19 @@
                                 <a href="#" class="time-number"><span class="font-36 d-block text-center">10</span></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal.svg" alt="medal"></a>
                             </td>
                             <td>
-                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt=""></a>
+                                <a href="#"><img src="/assets/default/svgs/medal-light.svg" alt="medal-light"></a>
                             </td>
                         </tr>
                         <tr>
