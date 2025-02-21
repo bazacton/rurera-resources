@@ -1673,277 +1673,277 @@
                                     </div>
                                     <div class="rureraform-admin-popup active" id="rureraform-element-properties" style="display: block;" data-element_id="rureraform-element-3">
                                         <div class="rureraform-admin-popup-inner">
-                                        <div class="rureraform-admin-popup-title">
-                                            <a href="#" title="Close">
-                                            <i class="fas fa-times"></i>
-                                            </a>
-                                            <h3>
-                                            <i class="fas fa-cog element-properties-label"></i> Multiple Choice 1
-                                            </h3>
-                                        </div>
-                                        <div class="rureraform-admin-popup-content">
-                                            <div class="rureraform-admin-popup-content-form">
-                                            <div id="rureraform-tab-basic" class="rureraform-tab-content" style="display: block;">
-                                                <input type="hidden" name="rureraform-field_id" id="rureraform-field_id" value="48453" placeholder="">
-                                                <div class="rureraform-properties-item " data-id="label">
-                                                <div class="rureraform-properties-label">
-                                                    <label>Label</label>
-                                                </div>
-                                                <div class="rureraform-properties-content">
-                                                    <input type="text" name="rureraform-label" id="rureraform-label" value="Mark One answer" placeholder="">
-                                                </div>
-                                                </div>
-                                                <div class="rureraform-properties-item d-flex align-items-center justify-content-between" data-id="have_images">
-                                                    <div class="rureraform-properties-label pb-0">
-                                                        <label>Answer with image</label>
+                                            <div class="rureraform-admin-popup-title">
+                                                <a href="#" title="Close">
+                                                    <i class="fas fa-times"></i>
+                                                </a>
+                                                <h3>
+                                                    <i class="fas fa-cog element-properties-label"></i> Multiple Choice 1
+                                                </h3>
+                                            </div>
+                                            <div class="rureraform-admin-popup-content">
+                                                <div class="rureraform-admin-popup-content-form">
+                                                <div id="rureraform-tab-basic" class="rureraform-tab-content" style="display: block;">
+                                                    <input type="hidden" name="rureraform-field_id" id="rureraform-field_id" value="48453" placeholder="">
+                                                    <div class="rureraform-properties-item " data-id="label">
+                                                    <div class="rureraform-properties-label">
+                                                        <label>Label</label>
                                                     </div>
-                                                    <div class="form-group custom-switches-stacked mb-0">
-                                                        <label class="custom-switch pl-0 mb-0">
-                                                            <input type="checkbox" name="answer-with-image" id="answer-with-image" value="1" class="custom-switch-input">
-                                                            <span class="custom-switch-indicator"></span>
-                                                        </label>
+                                                    <div class="rureraform-properties-content">
+                                                        <input type="text" name="rureraform-label" id="rureraform-label" value="Mark One answer" placeholder="">
                                                     </div>
-                                                </div>
-                                                <div class="rureraform-properties-item">
-                                                    <div class="properties-select-boxes">
-                                                        <div class="img-select-box">
-                                                            <input type="radio" name="img-box" id="box1">
-                                                            <label for="box1">
-                                                                <img src="/store/1/tool-images/d5.png" alt="">
-                                                                <span>List</span>
-                                                            </label>
+                                                    </div>
+                                                    <div class="rureraform-properties-item d-flex align-items-center justify-content-between" data-id="have_images">
+                                                        <div class="rureraform-properties-label pb-0">
+                                                            <label>Answer with image</label>
                                                         </div>
-                                                        <div class="img-select-box">
-                                                            <input type="radio" name="img-box" id="box2">
-                                                            <label for="box2">
-                                                                <img src="/store/1/tool-images/d14.png" alt="">
-                                                                <span>Essay</span>
+                                                        <div class="form-group custom-switches-stacked mb-0">
+                                                            <label class="custom-switch pl-0 mb-0">
+                                                                <input type="checkbox" name="answer-with-image" id="answer-with-image" value="1" class="custom-switch-input">
+                                                                <span class="custom-switch-indicator"></span>
                                                             </label>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="rureraform-properties-item rurera-image-depend rurera-hide" data-id="image_position">
-                                                    <div class="rureraform-properties-label">
-                                                        <label>Image Position</label>
-                                                    </div>
-                                                <div class="rureraform-properties-tooltip"></div>
-                                                <div class="rureraform-properties-content">
-                                                    <div class="rureraform-third">
-                                                    <select name="rureraform-image_position" id="rureraform-image_position" class="">
-                                                        <option selected="selected" value="top">Top</option>
-                                                        <option value="left">Left</option>
-                                                        <option value="right">Right</option>
-                                                    </select>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                                <div class="rureraform-properties-item" data-id="options">
-                                                    <div class="rureraform-properties-label">
-                                                        <label>Options</label>
-                                                    </div>
-                                                    <div class="rureraform-properties-content rureraform-properties-image-options-table">
-                                                        <div class="rureraform-properties-options-table-header">
-                                                        <div class="rurera-image-depend rurera-hide">Image</div>
-                                                        <div class="rurera-hide">Value</div>
-                                                        <div></div>
-                                                        </div>
-                                                        <div class="rureraform-properties-options-box ui-resizable">
-                                                        <div class="rureraform-properties-options-container ui-sortable" data-multi="on">
-                                                            <div class="rureraform-properties-options-item rureraform-properties-options-item-default">
-                                                            <div class="rureraform-properties-options-table">
-                                                                <div>
-                                                                <input class="rureraform-properties-options-label" type="text" value="Cells" placeholder="Label">
-                                                                </div>
-                                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
-                                                                <div class="input-group-prepend">
-                                                                    <button type="button" class="input-group-text admin-file-manager" data-input="image-options-0" data-preview="holder">
-                                                                    <i class="fa fa-upload"></i>
-                                                                    </button>
-                                                                </div>
-                                                                <input class="rureraform-properties-options-image" type="text" id="image-options-0" value="" placeholder="Upload Image">
-                                                                <span>
-                                                                    <i class="far fa-image"></i>
-                                                                </span>
-                                                                </div>
-                                                                <div class="rurera-hide">
-                                                                <input class="rureraform-properties-options-value" type="text" value="Cells" placeholder="Value">
-                                                                </div>
-                                                                <div>
-                                                                <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
-                                                                    <i class="fas fa-check"></i>
-                                                                </span>
-                                                                <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
-                                                                    <i class="far fa-copy"></i>
-                                                                </span>
-                                                                <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
-                                                                    <i class="fas fa-trash-alt"></i>
-                                                                </span>
-                                                                <span title="Move the option">
-                                                                    <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
-                                                                </span>
-                                                                </div>
+                                                    <div class="rureraform-properties-item">
+                                                        <div class="properties-select-boxes">
+                                                            <div class="img-select-box">
+                                                                <input type="radio" name="img-box" id="box1">
+                                                                <label for="box1">
+                                                                    <img src="/store/1/tool-images/d5.png" alt="">
+                                                                    <span>List</span>
+                                                                </label>
                                                             </div>
-                                                            </div>
-                                                            <div class="rureraform-properties-options-item">
-                                                            <div class="rureraform-properties-options-table">
-                                                                <div>
-                                                                <input class="rureraform-properties-options-label" type="text" value="Chloroplasts" placeholder="Label">
-                                                                </div>
-                                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
-                                                                <div class="input-group-prepend">
-                                                                    <button type="button" class="input-group-text admin-file-manager" data-input="image-options-1" data-preview="holder">
-                                                                    <i class="fa fa-upload"></i>
-                                                                    </button>
-                                                                </div>
-                                                                <input class="rureraform-properties-options-image" type="text" id="image-options-1" value="" placeholder="Upload Image">
-                                                                <span>
-                                                                    <i class="far fa-image"></i>
-                                                                </span>
-                                                                </div>
-                                                                <div class="rurera-hide">
-                                                                <input class="rureraform-properties-options-value" type="text" value="Chloroplasts" placeholder="Value">
-                                                                </div>
-                                                                <div>
-                                                                <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
-                                                                    <i class="fas fa-check"></i>
-                                                                </span>
-                                                                <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
-                                                                    <i class="far fa-copy"></i>
-                                                                </span>
-                                                                <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
-                                                                    <i class="fas fa-trash-alt"></i>
-                                                                </span>
-                                                                <span title="Move the option">
-                                                                    <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
-                                                                </span>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-                                                            <div class="rureraform-properties-options-item">
-                                                            <div class="rureraform-properties-options-table">
-                                                                <div>
-                                                                <input class="rureraform-properties-options-label" type="text" value="Tissues" placeholder="Label">
-                                                                </div>
-                                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
-                                                                <div class="input-group-prepend">
-                                                                    <button type="button" class="input-group-text admin-file-manager" data-input="image-options-2" data-preview="holder">
-                                                                    <i class="fa fa-upload"></i>
-                                                                    </button>
-                                                                </div>
-                                                                <input class="rureraform-properties-options-image" type="text" id="image-options-2" value="" placeholder="Upload Image">
-                                                                <span>
-                                                                    <i class="far fa-image"></i>
-                                                                </span>
-                                                                </div>
-                                                                <div class="rurera-hide">
-                                                                <input class="rureraform-properties-options-value" type="text" value="Tissues" placeholder="Value">
-                                                                </div>
-                                                                <div>
-                                                                <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
-                                                                    <i class="fas fa-check"></i>
-                                                                </span>
-                                                                <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
-                                                                    <i class="far fa-copy"></i>
-                                                                </span>
-                                                                <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
-                                                                    <i class="fas fa-trash-alt"></i>
-                                                                </span>
-                                                                <span title="Move the option">
-                                                                    <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
-                                                                </span>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-                                                            <div class="rureraform-properties-options-item">
-                                                            <div class="rureraform-properties-options-table">
-                                                                <div>
-                                                                <input class="rureraform-properties-options-label" type="text" value="Nuclei" placeholder="Label">
-                                                                </div>
-                                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
-                                                                <div class="input-group-prepend">
-                                                                    <button type="button" class="input-group-text admin-file-manager" data-input="image-options-3" data-preview="holder">
-                                                                    <i class="fa fa-upload"></i>
-                                                                    </button>
-                                                                </div>
-                                                                <input class="rureraform-properties-options-image" type="text" id="image-options-3" value="" placeholder="Upload Image">
-                                                                <span>
-                                                                    <i class="far fa-image"></i>
-                                                                </span>
-                                                                </div>
-                                                                <div class="rurera-hide">
-                                                                <input class="rureraform-properties-options-value" type="text" value="Nuclei" placeholder="Value">
-                                                                </div>
-                                                                <div>
-                                                                <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
-                                                                    <i class="fas fa-check"></i>
-                                                                </span>
-                                                                <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
-                                                                    <i class="far fa-copy"></i>
-                                                                </span>
-                                                                <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
-                                                                    <i class="fas fa-trash-alt"></i>
-                                                                </span>
-                                                                <span title="Move the option">
-                                                                    <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
-                                                                </span>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
-                                                        </div>
-                                                        <div class="rureraform-properties-options-table-footer">
-                                                            <a class="rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small" data-toggle="collapse" href="#explanation" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                                                <i class="fas fa-plus"></i>
-                                                                <label>Add Explanation..</label>
-                                                            </a>
-                                                            <div class="explanation-box collapse mt-15" id="explanation">
-                                                                <textarea name="explanation" class="form-control"></textarea>
+                                                            <div class="img-select-box">
+                                                                <input type="radio" name="img-box" id="box2">
+                                                                <label for="box2">
+                                                                    <img src="/store/1/tool-images/d14.png" alt="">
+                                                                    <span>Essay</span>
+                                                                </label>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                
-                                                <div class="rureraform-properties-item " data-id="template_style">
+                                                    <div class="rureraform-properties-item rurera-image-depend rurera-hide" data-id="image_position">
+                                                        <div class="rureraform-properties-label">
+                                                            <label>Image Position</label>
+                                                        </div>
                                                     <div class="rureraform-properties-tooltip"></div>
                                                     <div class="rureraform-properties-content">
                                                         <div class="rureraform-third">
-                                                        <select name="rureraform-template_style" id="rureraform-template_style" class="">
-                                                            <option selected="selected" value="rurera-in-row">Row</option>
-                                                            <option value="rurera-in-cols">Columns</option>
+                                                        <select name="rureraform-image_position" id="rureraform-image_position" class="">
+                                                            <option selected="selected" value="top">Top</option>
+                                                            <option value="left">Left</option>
+                                                            <option value="right">Right</option>
                                                         </select>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="rureraform-properties-item " data-id="list_style">
-                                                    <div class="rureraform-properties-label">
-                                                        <label>Bullet list Style</label>
                                                     </div>
-                                                    <div class="rureraform-properties-tooltip"></div>
-                                                    <div class="rureraform-properties-content">
-                                                        <div class="bullet-controls">
-                                                            <button type="button">Enabled</button>
-                                                            <button type="button">Enabled</button>
-                                                            <button type="button" class="active">Selected</button>
+                                                    <div class="rureraform-properties-item" data-id="options">
+                                                        <div class="rureraform-properties-label">
+                                                            <label>Options</label>
+                                                        </div>
+                                                        <div class="rureraform-properties-content rureraform-properties-image-options-table">
+                                                            <div class="rureraform-properties-options-table-header">
+                                                            <div class="rurera-image-depend rurera-hide">Image</div>
+                                                            <div class="rurera-hide">Value</div>
+                                                            <div></div>
+                                                            </div>
+                                                            <div class="rureraform-properties-options-box ui-resizable">
+                                                            <div class="rureraform-properties-options-container ui-sortable" data-multi="on">
+                                                                <div class="rureraform-properties-options-item rureraform-properties-options-item-default">
+                                                                <div class="rureraform-properties-options-table">
+                                                                    <div>
+                                                                    <input class="rureraform-properties-options-label" type="text" value="Cells" placeholder="Label">
+                                                                    </div>
+                                                                    <div class="rureraform-image-url rurera-image-depend rurera-hide">
+                                                                    <div class="input-group-prepend">
+                                                                        <button type="button" class="input-group-text admin-file-manager" data-input="image-options-0" data-preview="holder">
+                                                                        <i class="fa fa-upload"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                    <input class="rureraform-properties-options-image" type="text" id="image-options-0" value="" placeholder="Upload Image">
+                                                                    <span>
+                                                                        <i class="far fa-image"></i>
+                                                                    </span>
+                                                                    </div>
+                                                                    <div class="rurera-hide">
+                                                                    <input class="rureraform-properties-options-value" type="text" value="Cells" placeholder="Value">
+                                                                    </div>
+                                                                    <div>
+                                                                    <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
+                                                                        <i class="fas fa-check"></i>
+                                                                    </span>
+                                                                    <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
+                                                                        <i class="far fa-copy"></i>
+                                                                    </span>
+                                                                    <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </span>
+                                                                    <span title="Move the option">
+                                                                        <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
+                                                                    </span>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                                <div class="rureraform-properties-options-item">
+                                                                <div class="rureraform-properties-options-table">
+                                                                    <div>
+                                                                    <input class="rureraform-properties-options-label" type="text" value="Chloroplasts" placeholder="Label">
+                                                                    </div>
+                                                                    <div class="rureraform-image-url rurera-image-depend rurera-hide">
+                                                                    <div class="input-group-prepend">
+                                                                        <button type="button" class="input-group-text admin-file-manager" data-input="image-options-1" data-preview="holder">
+                                                                        <i class="fa fa-upload"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                    <input class="rureraform-properties-options-image" type="text" id="image-options-1" value="" placeholder="Upload Image">
+                                                                    <span>
+                                                                        <i class="far fa-image"></i>
+                                                                    </span>
+                                                                    </div>
+                                                                    <div class="rurera-hide">
+                                                                    <input class="rureraform-properties-options-value" type="text" value="Chloroplasts" placeholder="Value">
+                                                                    </div>
+                                                                    <div>
+                                                                    <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
+                                                                        <i class="fas fa-check"></i>
+                                                                    </span>
+                                                                    <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
+                                                                        <i class="far fa-copy"></i>
+                                                                    </span>
+                                                                    <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </span>
+                                                                    <span title="Move the option">
+                                                                        <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
+                                                                    </span>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                                <div class="rureraform-properties-options-item">
+                                                                <div class="rureraform-properties-options-table">
+                                                                    <div>
+                                                                    <input class="rureraform-properties-options-label" type="text" value="Tissues" placeholder="Label">
+                                                                    </div>
+                                                                    <div class="rureraform-image-url rurera-image-depend rurera-hide">
+                                                                    <div class="input-group-prepend">
+                                                                        <button type="button" class="input-group-text admin-file-manager" data-input="image-options-2" data-preview="holder">
+                                                                        <i class="fa fa-upload"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                    <input class="rureraform-properties-options-image" type="text" id="image-options-2" value="" placeholder="Upload Image">
+                                                                    <span>
+                                                                        <i class="far fa-image"></i>
+                                                                    </span>
+                                                                    </div>
+                                                                    <div class="rurera-hide">
+                                                                    <input class="rureraform-properties-options-value" type="text" value="Tissues" placeholder="Value">
+                                                                    </div>
+                                                                    <div>
+                                                                    <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
+                                                                        <i class="fas fa-check"></i>
+                                                                    </span>
+                                                                    <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
+                                                                        <i class="far fa-copy"></i>
+                                                                    </span>
+                                                                    <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </span>
+                                                                    <span title="Move the option">
+                                                                        <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
+                                                                    </span>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                                <div class="rureraform-properties-options-item">
+                                                                <div class="rureraform-properties-options-table">
+                                                                    <div>
+                                                                    <input class="rureraform-properties-options-label" type="text" value="Nuclei" placeholder="Label">
+                                                                    </div>
+                                                                    <div class="rureraform-image-url rurera-image-depend rurera-hide">
+                                                                    <div class="input-group-prepend">
+                                                                        <button type="button" class="input-group-text admin-file-manager" data-input="image-options-3" data-preview="holder">
+                                                                        <i class="fa fa-upload"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                    <input class="rureraform-properties-options-image" type="text" id="image-options-3" value="" placeholder="Upload Image">
+                                                                    <span>
+                                                                        <i class="far fa-image"></i>
+                                                                    </span>
+                                                                    </div>
+                                                                    <div class="rurera-hide">
+                                                                    <input class="rureraform-properties-options-value" type="text" value="Nuclei" placeholder="Value">
+                                                                    </div>
+                                                                    <div>
+                                                                    <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
+                                                                        <i class="fas fa-check"></i>
+                                                                    </span>
+                                                                    <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
+                                                                        <i class="far fa-copy"></i>
+                                                                    </span>
+                                                                    <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </span>
+                                                                    <span title="Move the option">
+                                                                        <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
+                                                                    </span>
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
+                                                            </div>
+                                                            <div class="rureraform-properties-options-table-footer">
+                                                                <a class="rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small" data-toggle="collapse" href="#explanation" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                                    <i class="fas fa-plus"></i>
+                                                                    <label>Add Explanation..</label>
+                                                                </a>
+                                                                <div class="explanation-box collapse mt-15" id="explanation">
+                                                                    <textarea name="explanation" class="form-control"></textarea>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                
-                                                <input type="hidden" name="rureraform-elements_data" id="rureraform-elements_data" value="W3t9XQ==" placeholder="">
+                                                    
+                                                    <div class="rureraform-properties-item " data-id="template_style">
+                                                        <div class="rureraform-properties-tooltip"></div>
+                                                        <div class="rureraform-properties-content">
+                                                            <div class="rureraform-third">
+                                                            <select name="rureraform-template_style" id="rureraform-template_style" class="">
+                                                                <option selected="selected" value="rurera-in-row">Row</option>
+                                                                <option value="rurera-in-cols">Columns</option>
+                                                            </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rureraform-properties-item " data-id="list_style">
+                                                        <div class="rureraform-properties-label">
+                                                            <label>Bullet list Style</label>
+                                                        </div>
+                                                        <div class="rureraform-properties-tooltip"></div>
+                                                        <div class="rureraform-properties-content">
+                                                            <div class="bullet-controls">
+                                                                <button type="button">Enabled</button>
+                                                                <button type="button">Enabled</button>
+                                                                <button type="button" class="active">Selected</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <input type="hidden" name="rureraform-elements_data" id="rureraform-elements_data" value="W3t9XQ==" placeholder="">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="rureraform-admin-popup-buttons">
-                                            <a class="rureraform-admin-button duplicate-element btn btn-primary" href="#">
-                                            <label>Update</label>
-                                            </a>
-                                            <a class="rureraform-admin-button generate-question-code rurera-hide" href="#">
-                                            <label>Apply Changes</label>
-                                            </a>
-                                        </div>
-                                        <div class="rureraform-admin-popup-loading" style="display: none;">
-                                            <i class="fas fa-spinner fa-spin"></i>
-                                        </div>
+                                            <div class="rureraform-admin-popup-buttons">
+                                                <a class="rureraform-admin-button duplicate-element btn btn-primary" href="#">
+                                                <label>Update</label>
+                                                </a>
+                                                <a class="rureraform-admin-button generate-question-code rurera-hide" href="#">
+                                                <label>Apply Changes</label>
+                                                </a>
+                                            </div>
+                                            <div class="rureraform-admin-popup-loading" style="display: none;">
+                                                <i class="fas fa-spinner fa-spin"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
