@@ -150,7 +150,7 @@ $practice_time = 0;
                                 <span class="bar-fill" title="" style="width: 0%;"></span>
                             </div>
                             <span class="coin-numbers">
-                                <img src="/assets/default/img/quests-coin.png" alt="">
+                                <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
                                 <span class="total-earned-coins">0</span>
                             </span>
                         </div>
@@ -172,38 +172,31 @@ $practice_time = 0;
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
-                    
-
                     <div class="question-area-block" data-active_question_id="{{$active_question_id}}" data-questions_layout="{{json_encode($questions_layout)}}">
                     @php $total_questions = 10; @endphp
                     <div class="question-area dis-arrows1" data-total_questions="{{$total_questions}}">
                         <div class="correct-appriciate" style="display:none"></div>
                         <div class="question-inner-step-area">
                             <div class="question-layout-block">
+                                <div class="left-content has-bg">
+                            @if( is_array( $question ))
+                            @php $question_no = 1; @endphp
 
-                                    <div class="left-content has-bg">
-
-
-                        @if( is_array( $question ))
-                        @php $question_no = 1; @endphp
-
-                        @foreach( $question as $questionObj)
-                        @include('web.default.panel.questions.question_layout',[
-                        'question'=> $questionObj,
-                        'prev_question' => 0,
-                        'next_question' => 0,
-                        'question_no' => $question_no,
-                        'quizAttempt' => $quizAttempt,
-                        'newQuestionResult' => $newQuestionResult,
-                        'quizResultObj' => $newQuizStart
-                        ])
-                        @php $question_no++; @endphp
-                        @endforeach
-                        @else
+                            @foreach( $question as $questionObj)
+                            @include('web.default.panel.questions.question_layout',[
+                            'question'=> $questionObj,
+                            'prev_question' => 0,
+                            'next_question' => 0,
+                            'question_no' => $question_no,
+                            'quizAttempt' => $quizAttempt,
+                            'newQuestionResult' => $newQuestionResult,
+                            'quizResultObj' => $newQuizStart
+                            ])
+                            @php $question_no++; @endphp
+                            @endforeach
+                            @else
 
 
 
@@ -292,7 +285,7 @@ $practice_time = 0;
            <div class="modal-body">
 			  <div class="modal-box">
 				<span class="icon-box d-block mb-15">
-					<img src="../assets/default/img/clock-modal-img.png" alt="">
+					<img src="/assets/default/img/clock-modal-img.png" alt="clock-modal-img">
 				</span>
 				<h3 class="font-24 font-weight-normal mb-10">Are you sure?</h3>
 				<p class="mb-15 font-16">
