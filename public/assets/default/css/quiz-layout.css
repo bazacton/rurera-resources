@@ -478,33 +478,12 @@ body .question-result-layout ol li {margin-top: 1.5rem; margin-left: 0;}
 .image-center {text-align: center !important;}
 
 /*quiz style from app.css start*/
-.question-number-holder ~ .rureraform-form .question-textarea {
-  min-height: auto;
-  clear: inherit;
-}
-.question-number-holder ~ .rureraform-form .question-textarea p {
-  margin-top: 0;
-}
-.question-layout .rureraform-element-html p {
-  margin-bottom: 0;
-}
-.rureraform-element-html .question-label p {
-  margin-top: 0;
-}
-.question-layout .rureraform-element-html p:empty {
-  display: none;
-}
-.markscoin{
-  position:absolute;
-  width:20px;
-  height:20px;
-  margin-left:15px;
-  border-radius:50%;
-  background: url(../img/quiz/coin-img.jpg) no-repeat center;
-  border:1px dotted #333;
-  -webkit-animation:1s animateOpacity;
-  animation: 1s animateOpacity;
-}
+.question-number-holder ~ .rureraform-form .question-textarea {min-height: auto;clear: inherit;}
+.question-number-holder ~ .rureraform-form .question-textarea p {margin-top: 0;}
+.question-layout .rureraform-element-html p {margin-bottom: 0;}
+.rureraform-element-html .question-label p {margin-top: 0;}
+.question-layout .rureraform-element-html p:empty {display: none;}
+.markscoin{position:absolute; width:20px; height:20px; margin-left:15px; border-radius:50%; background: url(../img/quiz/coin-img.jpg) no-repeat center; border:1px dotted #333; -webkit-animation:1s animateOpacity; animation: 1s animateOpacity;}
 @-webkit-keyframes animateOpacity {
   from {opacity: 0;}
   5% {opacity: 0.6;}
@@ -519,25 +498,10 @@ body .question-result-layout ol li {margin-top: 1.5rem; margin-left: 0;}
   95% {opacity: 0.6;}
   to {opacity: 0;}
 }
-.correct-appriciate{
-font-size: 30px;
-  width: fit-content;
-  padding: 20px;
-  font-weight: bold;
-margin: auto;
-}
-.correct-appriciate.red{
-  border: 1px solid #ff5b5b;
-color: #ff5b5b;
-}
-.correct-appriciate.orange{
-  border: 1px solid orange;
-color: orange;
-}
-.correct-appriciate.blue{
-  border: 1px solid blue;
-color: blue;
-}
+.correct-appriciate{font-size: 30px; width: fit-content; padding: 20px; font-weight: bold;margin: auto;}
+.correct-appriciate.red{border: 1px solid #ff5b5b;color: #ff5b5b;}
+.correct-appriciate.orange{border: 1px solid orange;color: orange;}
+.correct-appriciate.blue{border: 1px solid blue;color: blue;}
 .correct-appriciate.green{
   border: 1px solid green;
 color: green;
