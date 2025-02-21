@@ -75,14 +75,14 @@
                                 $treasure_box_closed = '<li class="treasure">
                                                     <a href="#">
                                                         <span class="thumb-box">
-                                                            <img src="/assets/default/img/treasure2.png" alt="">
+                                                            <img src="/assets/default/img/treasure2.png" alt="treasure2">
                                                         </span>
                                                     </a>
                                                 </li>';
                                 $treasure_box_opened = '<li class="treasure">
                                                             <a href="#">
                                                                 <span class="thumb-box">
-                                                                    <img src="/assets/default/img/treasure.png" alt="">
+                                                                    <img src="/assets/default/img/treasure.png" alt="treasure">
                                                                 </span>
                                                             </a>
                                                         </li>';
@@ -142,58 +142,58 @@
 </section>
 
 <div class="modal fade spell_words_popup lms-choose-membership" id="spell_words_popup" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
-<div class="modal-dialog" role="document">
-  <div class="modal-content">
-	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-    <div class="modal-body spell_words_popup_body">
-      <div class="container container-nosidebar">
-		<div class="row">
-			<div class="col-10 col-lg-10 col-md-12">
-				<h2 class="page-title">Filter Words</h2>
-				<p>From sources across the web</p>
-			</div>
-			<div class="col-2 col-lg-2 col-md-12 spell-words-filters pt-5">
-			<a href="javascript:;" data-href="javascript:;" class="play-again">Play (<span class="selected_questions">All</span>)</a>
-			</div>
-		</div>
-		<h3 class="mt-30">Choose Practice Type</h3>
-		<div class="tests-list-holder spell-type-check mb-25 mt-20">
-			<a href="#." class="filter-mobile-btn">Filters</a>
-			<ul class="tests-list mb-30">
-				<li data-type="word-hunts" class="active">Word Hunts</li>
-				<li data-type="word-search">Word Search</li>
-				<li data-type="word-cloud">Word Cloud</li>
-				<li data-type="word-missing">Practice Test</li>
-			</ul>
-			<input type="text" name="spell_type" class="spell_type_check rurera-hide" value="word-hunts">
-		</div>
-		
-		<div class="spell-words-filters" data-spell_id="0" data-spell_type="">
-		<div class="rurera-error mb-30 rurera-hide">Select atleast 15 words to continue!</div>
-		<div class="row">
-            <div class="col-9 col-lg-9 col-md-12">
-                <h3>Choosen Words (<span class="choosen-words">Default All Selected</span>)</h3>
-            </div>
-            <div class="col-3 col-lg-3 col-md-12">
-                Sort By
-                <div class="form-group">
-                    <select name="sort_by" class="sort_by_filter">
-                        <option value="alphabetically">Alphabetically</option>
-                        <option value="attempts">No of Attempts</option>
-                    </select>
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <div class="modal-body spell_words_popup_body">
+        <div class="container container-nosidebar">
+            <div class="row">
+                <div class="col-10 col-lg-10 col-md-12">
+                    <h2 class="page-title">Filter Words</h2>
+                    <p>From sources across the web</p>
+                </div>
+                <div class="col-2 col-lg-2 col-md-12 spell-words-filters pt-5">
+                <a href="javascript:;" data-href="javascript:;" class="play-again">Play (<span class="selected_questions">All</span>)</a>
                 </div>
             </div>
-		</div>
-		<form class="spell-quiz-form" action="#" method="POST">
-		<input type="hidden" name="is_new" value="yes">
-		{{ csrf_field() }}
-		
-		<div class="spell-words-data" id="accordion"></div>
-		</form>
-      </div>
+            <h3 class="mt-30">Choose Practice Type</h3>
+            <div class="tests-list-holder spell-type-check mb-25 mt-20">
+                <a href="#." class="filter-mobile-btn">Filters</a>
+                <ul class="tests-list mb-30">
+                    <li data-type="word-hunts" class="active">Word Hunts</li>
+                    <li data-type="word-search">Word Search</li>
+                    <li data-type="word-cloud">Word Cloud</li>
+                    <li data-type="word-missing">Practice Test</li>
+                </ul>
+                <input type="text" name="spell_type" class="spell_type_check rurera-hide" value="word-hunts">
+            </div>
+            
+            <div class="spell-words-filters" data-spell_id="0" data-spell_type="">
+            <div class="rurera-error mb-30 rurera-hide">Select atleast 15 words to continue!</div>
+            <div class="row">
+                <div class="col-9 col-lg-9 col-md-12">
+                    <h3>Choosen Words (<span class="choosen-words">Default All Selected</span>)</h3>
+                </div>
+                <div class="col-3 col-lg-3 col-md-12">
+                    Sort By
+                    <div class="form-group">
+                        <select name="sort_by" class="sort_by_filter">
+                            <option value="alphabetically">Alphabetically</option>
+                            <option value="attempts">No of Attempts</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <form class="spell-quiz-form" action="#" method="POST">
+            <input type="hidden" name="is_new" value="yes">
+            {{ csrf_field() }}
+            
+            <div class="spell-words-data" id="accordion"></div>
+            </form>
+        </div>
+        </div>
     </div>
-  </div>
-</div>
+    </div>
 </div>
 </div>
 <form class="spell-test-quiz-form" action="#" method="POST">
