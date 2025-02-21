@@ -22,37 +22,37 @@
                                 <li>
                                     <input checked type="radio" id="practice_level_1_3" value="1" name="practice_level" />
                                     <label for="practice_level_1_3" class="d-inline-flex flex-column justify-content-center">
-                                    <strong>1-3</strong>
+                                        <strong>1-3</strong>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="radio" id="practice_level_1_6" value="2" name="practice_level" />
                                     <label for="practice_level_1_6" class="d-inline-flex flex-column justify-content-center">
-                                    <strong>1-6</strong>
+                                        <strong>1-6</strong>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="radio" id="practice_level_1_9" value="3" name="practice_level" />
                                     <label for="practice_level_1_9" class="d-inline-flex flex-column justify-content-center">
-                                    <strong>1-9</strong>
+                                        <strong>1-9</strong>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="radio" id="practice_level_1_12" value="3" name="practice_level" />
                                     <label for="practice_level_1_12" class="d-inline-flex flex-column justify-content-center">
-                                    <strong>1-12</strong>
+                                        <strong>1-12</strong>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="radio" id="practice_level_1_15" value="3" name="practice_level" />
                                     <label for="practice_level_1_15" class="d-inline-flex flex-column justify-content-center">
-                                    <strong>1-15</strong>
+                                        <strong>1-15</strong>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="radio" id="practice_level_1_18" value="3" name="practice_level" />
                                     <label for="practice_level_1_18" class="d-inline-flex flex-column justify-content-center">
-                                    <strong>1-18</strong>
+                                        <strong>1-18</strong>
                                     </label>
                                 </li>
                             </ul>
@@ -64,19 +64,19 @@
                                 <li>
                                     <input checked type="radio" id="ten-questions" value="1" name="practice_time" />
                                     <label for="ten-questions" class="d-inline-flex flex-column justify-content-center">
-                                    <strong>1 Minute</strong>
+                                        <strong>1 Minute</strong>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="radio" id="twenty-questions" value="3" name="practice_time" />
                                     <label for="twenty-questions" class="d-inline-flex flex-column justify-content-center">
-                                    <strong>3 Minutes</strong>
+                                        <strong>3 Minutes</strong>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="radio" id="thirty-questions" value="5" name="practice_time" />
                                     <label for="thirty-questions" class="d-inline-flex flex-column justify-content-center">
-                                    <strong>5 Minutes</strong>
+                                        <strong>5 Minutes</strong>
                                     </label>
                                 </li>
                             </ul>
