@@ -326,12 +326,6 @@ body .question-result-layout ol li {margin-top: 1.5rem; margin-left: 0;}
 .question-result-layout .input-holder .input-simple {width: 100%; }
 /* Input Text Field Style End */
 /* Question Label Style Start */
-/*question-label question_label
-.question-label span,
-.lms-quiz-section .question-label */
-
-
-
 .spells-quiz-from .question-label {margin-bottom: 20px;padding: 0 15px 10px;}
 .spells-quiz-from .question-label span {text-align: center; line-height: 31px;}
 /* Question Label Style End */
@@ -351,36 +345,27 @@ body .question-result-layout ol li {margin-top: 1.5rem; margin-left: 0;}
 .prev-next-controls .review-btn {position: absolute; left: 0; gap: 10px;}
 .question-layout-block .prev-next-controls {position: fixed; width: 848px; bottom: -50px; background-color: #fff; min-height: 100px; padding: 30px; justify-content: space-between; z-index: 1; margin: 0;}
 .question-layout-block .prev-next-controls .review-btn {position: relative; font-weight: 500;}
-
 .review-btn,
 .prev-btn,
 .next-btn{display: inline-flex; align-items: center; border: 1px solid #eee; min-width: 135px; min-height: 45px; border-radius: 5px; justify-content: center; color: #000; text-transform: uppercase;}
-
 .prev-btn,
 .next-btn {min-width: auto; padding: 0 18px; position: relative;}
-
 .review-btn svg,
 .prev-btn svg,
 .next-btn svg {height: 22px; width: 22px; margin-left: 10px;}
-
 .prev-btn svg,
 .next-btn svg {margin-left: 0;}
-
 .review-btn svg g,
 .prev-btn svg g,
 .next-btn svg g{fill: #929198;}
-
 .next-btn svg {position: absolute; right: 10px;}
 .next-btn {padding-right: 50px;}
-
 .review-btn:hover,
 .prev-btn:hover,
 .next-btn:hover {background-color: #eee; color: #000;}
-
 .review-btn:hover svg g,
 .prev-btn:hover svg g,
 .next-btn:hover svg g {fill: #000;}
-
 .submit-btn,
 .question-submit-btn,
 .question-next-btn {border: 1px solid #8fc963; border-radius: 5px; padding: 0 40px; height: 55px; color: #8fc963; text-transform: uppercase;}
@@ -472,34 +457,25 @@ body .question-result-layout ol li {margin-top: 1.5rem; margin-left: 0;}
 .input-holder:has(.extra-small),
 .select-box:has(.extra-small),
 .select-box:has(.field_extra_small) {width: 10% !important; }
-
 .select-box:has(.small),
 .select-box:has(.field_small),
 .input-holder:has(.field_small),
 .input-holder:has(.small) {width: 15% !important;}
-
 .select-box:has(.medium),
 .select-box:has(.field_medium),
 .input-holder:has(.medium),
 .input-holder:has(.field_medium) {width: 20% !important;}
-
 .select-box:has(.large),
 .select-box:has(.field_large),
 .input-holder:has(.large),
 .input-holder:has(.field_large) {width: 30% !important;}
-
 .select-box:has(.extra-large),
 .select-box:has(.field_extra_large),
 .input-holder:has(.field_extra_large),
 .input-holder:has(.extra-large) {width: 40% !important;}
-
 /*Field Sizes Style End*/
-.image-right {
-  text-align: right !important;
-}
-.image-center {
-  text-align: center !important;
-}
+.image-right {text-align: right !important;}
+.image-center {text-align: center !important;}
 
 /*quiz style from app.css start*/
 .question-number-holder ~ .rureraform-form .question-textarea {
