@@ -57,11 +57,11 @@
                                         <a href="#." class="filter-mobile-btn">Filters</a>
                                         <ul class="tests-list mb-30">
                                             <li data-type="all" class="active">All Tests</li>
-                                            <li data-type="sats"><img src="/assets/default/img/assignment-logo/sats.png" alt=""> SATs</li>
-                                            <li data-type="11plus"><img src="/assets/default/img/assignment-logo/11plus.png" alt=""> 11Plus</li>
-                                            <li data-type="iseb"><img src="/assets/default/img/assignment-logo/iseb.png" alt=""> ISEB</li>
-                                            <li data-type="cat4"><img src="/assets/default/img/assignment-logo/cat4.png" alt=""> CAT 4</li>
-                                            <li data-type="independent_exams"><img src="/assets/default/img/assignment-logo/independent_exams.png" alt=""> Independent Exams</li>
+                                            <li data-type="sats"><img src="/assets/default/img/assignment-logo/sats.png" alt="sats"> SATs</li>
+                                            <li data-type="11plus"><img src="/assets/default/img/assignment-logo/11plus.png" alt="11plus"> 11Plus</li>
+                                            <li data-type="iseb"><img src="/assets/default/img/assignment-logo/iseb.png" alt="iseb"> ISEB</li>
+                                            <li data-type="cat4"><img src="/assets/default/img/assignment-logo/cat4.png" alt="cat4"> CAT 4</li>
+                                            <li data-type="independent_exams"><img src="/assets/default/img/assignment-logo/independent_exams.png" alt="independent_exams"> Independent Exams</li>
                                         </ul>
                                     </div>
                                     <!-- Test List Filters End -->
@@ -120,7 +120,7 @@
                                 </div>
                                 <div class="col-auto ms-auto mr-md-3 last-activity">
                                     <a href="javascript:;" class="switch-user-btn switch-user-btn-event" data-user_id="{{$childObj->id}}">
-                                       <img src="/assets/default/img/default/user-switch.png">
+                                       <img src="/assets/default/img/default/user-switch.png" alt="user-switch">
                                    </a>
                                 </div>
                             </div>
