@@ -37,7 +37,7 @@
 
 
     <form action="/timestables/generate_treasure_mission" method="post" class="treasure_mission_form">
-                        {{ csrf_field() }}
+        {{ csrf_field() }}
         <input type="hidden" name="nugget_id" id="nugget_id" value="0">
     </form>
     @if( !empty( $treasure_mission_data ) )
@@ -47,7 +47,7 @@
             <div class="panel-subheader">
                 <div class="title">
                     <h2 class="font-19 font-weight-bold">{{isset( $levelObj['title'] )? $levelObj['title'] : ''}}</h2>
-                    <span class="info-modal-btn" data-toggle="modal" data-target="#{{$levelObj['id']}}"> <img src="/assets/default/svgs/info-icon2.svg" alt=""></span>
+                    <span class="info-modal-btn" data-toggle="modal" data-target="#{{$levelObj['id']}}"> <img src="/assets/default/svgs/info-icon2.svg" alt="info-icon2"></span>
                 </div>
                 <div class="modal fade {{$levelObj['id']}}" id="{{$levelObj['id']}}" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -58,7 +58,7 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             <span class="icon-box d-block mb-15">
-                                <img src="../assets/default/img/clock-modal-img.png" alt="">
+                                <img src="/assets/default/img/clock-modal-img.png" alt="clock-modal-img">
                             </span>
                             <h3 class="font-24 font-weight-normal mb-10">Modal title</h3>
                             <span class="level-tool-tip">{{isset( $levelObj['description'] )? $levelObj['description'] : ''}}</span>
@@ -112,28 +112,28 @@
                                             <a href="javascript:;" class="{{$treasure_mission_class}} rurera-tooltip dropup" data-id="{{$nuggetObj['id']}}">
                                                 @if($is_acheived == 1 && isset( $timestableResultObj->id) )
                                                     <span class="dropdown-toggle h-100 w-100 d-flex align-items-center justify-content-center" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <img src="/assets/default/img/tick-white.png" alt="">
+                                                        <img src="/assets/default/img/tick-white.png" alt="tick-white">
                                                     </span>
 													<div class="lms-tooltip dropdown-menu">
 														<div class="tooltip-box">
 															<h5 class="font-18 font-weight-bold text-white mb-5">															
 															Active practice: {{isset( $timestableResultObj->total_time_consumed )? getTimeWithText($timestableResultObj->total_time_consumed) : 0}}<br> 
 															Questions answered: {{$timestableResultObj->total_attempted}} <br>
-															<img src="/assets/default/img/panel-sidebar/coins.svg" alt="" width="30">Coins earned:{{$timestableResultObj->total_coins_earned}}
+															<img src="/assets/default/img/panel-sidebar/coins.svg" alt="coins" width="30">Coins earned:{{$timestableResultObj->total_coins_earned}}
 															</h5>
 															<button class="tooltip-button" onclick="window.location.href='/panel/results/{{$timestableResultObj->id}}/timetables';">Result</button>
 														</div>
 													</div>
                                                 @elseif($is_active == 1 )
-                                                    <img src="/assets/default/img/stepon.png" alt="">
+                                                    <img src="/assets/default/img/stepon.png" alt="stepon">
                                                 @else
                                                     @if($last_stage_completed == 1)
-                                                        <img src="/assets/default/img/stepon.png" alt="">
+                                                        <img src="/assets/default/img/stepon.png" alt="stepon">
                                                     @else
                                                         @if( isset( $nuggetObj['is_last_stage'] ) && $nuggetObj['is_last_stage'] == true)
-                                                            <img src="/assets/default/img/flag-grey.png" alt="">
+                                                            <img src="/assets/default/img/flag-grey.png" alt="flag-grey">
                                                         @else
-                                                            <img src="/assets/default/img/panel-lock.png" alt="">
+                                                            <img src="/assets/default/img/panel-lock.png" alt="panel-lock">
                                                         @endif
                                                     @endif
                                                 @endif
