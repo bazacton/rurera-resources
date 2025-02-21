@@ -73,7 +73,7 @@ $timer_counter = $practice_time;
                     <div class="row">
                         <div class="col-lg-5 col-md-6 col-sm-12">
                             @if( isset( $quiz->quiz_type ))
-                               <img class="quiz-type-icon" src="/assets/default/img/assignment-logo/{{$quiz->quiz_type}}.png">
+                               <img class="quiz-type-icon" src="/assets/default/img/assignment-logo/{{$quiz->quiz_type}}.png" alt="assignment-logo">
                            @endif
 						   
                             <div class="quiz-top-info"><p>{{$quiz->getTitleAttribute()}}</p>
@@ -81,35 +81,35 @@ $timer_counter = $practice_time;
                         </div>
                         <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12">
                             <div class="topbar-right">
-                                   <div class="quiz-pagination">
-                                       <div class="swiper-container">
-                                       <ul class="swiper-wrapper">
-                                           @if( !empty( $questions_list ) )
-                                           @php $question_count = 1; @endphp
-                                           @foreach( $questions_list as $question_id)
-                                           @php $is_flagged = false;
-                                           $flagged_questions = ($newQuizStart->flagged_questions != '')? json_decode
-                                           ($newQuizStart->flagged_questions) : array();
-                                           $actual_question_id = isset( $actual_question_ids[$question_id] )? $actual_question_ids[$question_id] : 0;
-                                           @endphp
-                                           @if( is_array( $flagged_questions ) && in_array( $actual_question_id,
-                                           $flagged_questions))
-                                           @php $is_flagged = true;
-                                           @endphp
-                                           @endif
-                                           @php $question_status_class = isset( $questions_status_array[$question_id] )? $questions_status_array[$question_id] : 'waiting'; @endphp
-                                           <li data-question_id="{{$question_id}}" data-actual_question_id="{{$actual_question_id}}" class="swiper-slide {{ ( $is_flagged == true)?
-                                                   'has-flag' : ''}} "><a
-                                                   href="javascript:;">
-                                                   {{$question_count}}</a></li>
-                                           @php $question_count++; @endphp
-                                           @endforeach
-                                           @endif
-                                       </ul>
-                                       </div>
-                                       <div class="swiper-button-prev"></div>
-                                       <div class="swiper-button-next"></div>
-                                   </div>
+                                <div class="quiz-pagination">
+                                    <div class="swiper-container">
+                                    <ul class="swiper-wrapper">
+                                        @if( !empty( $questions_list ) )
+                                        @php $question_count = 1; @endphp
+                                        @foreach( $questions_list as $question_id)
+                                        @php $is_flagged = false;
+                                        $flagged_questions = ($newQuizStart->flagged_questions != '')? json_decode
+                                        ($newQuizStart->flagged_questions) : array();
+                                        $actual_question_id = isset( $actual_question_ids[$question_id] )? $actual_question_ids[$question_id] : 0;
+                                        @endphp
+                                        @if( is_array( $flagged_questions ) && in_array( $actual_question_id,
+                                        $flagged_questions))
+                                        @php $is_flagged = true;
+                                        @endphp
+                                        @endif
+                                        @php $question_status_class = isset( $questions_status_array[$question_id] )? $questions_status_array[$question_id] : 'waiting'; @endphp
+                                        <li data-question_id="{{$question_id}}" data-actual_question_id="{{$actual_question_id}}" class="swiper-slide {{ ( $is_flagged == true)?
+                                                'has-flag' : ''}} "><a
+                                                href="javascript:;">
+                                                {{$question_count}}</a></li>
+                                        @php $question_count++; @endphp
+                                        @endforeach
+                                        @endif
+                                    </ul>
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
                                 <div class="quiz-timer">
                                     <span class="timer-number"><div class="quiz-timer-counter" data-time_counter="{{($practice_time*60)}}">0s</div></span>
                                 </div>
@@ -448,8 +448,4 @@ $timer_counter = $practice_time;
 
         return clonedDiv;
     }
-	
-	
-	
-
 </script>
