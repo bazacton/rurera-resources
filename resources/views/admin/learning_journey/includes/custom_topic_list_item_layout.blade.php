@@ -8,13 +8,12 @@
             </div>
         </div>
         <ul class="list-options question-list-options mb-15">
-            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> 8 questions</li>
-            <li><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt=""></span> 7th-8th  Grade</li>
-            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
+            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
+            <li><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt="save"></span> 7th-8th  Grade</li>
+            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
         </ul>
     </div>
     <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0">
-
         @if($quizObj->quizQuestionsList->count() > 0)
             @foreach($quizObj->quizQuestionsList as $quizQuestionObj)
                 @php $questionObj = $quizQuestionObj->SingleQuestionData; @endphp
@@ -32,4 +31,3 @@
                 </div>
           @endforeach
         @endif
-
