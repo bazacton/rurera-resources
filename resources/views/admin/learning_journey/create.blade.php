@@ -51,83 +51,75 @@
 .flowchart-operator-inputs {
     left: 50%;
 }
+.flowchart-operator{
+    display: inline-table;
+}
+.flowchart-operator-connector-arrow1, .flowchart-operator-connector-small-arrow1 {
+    visibility: hidden;
+}
 
+.flowchart-temporary-link-layer{display:none !important;}
+.field-options {
+    display: none !important;
+}
+.right-in2 .flowchart-operator-outputs {
+    position: absolute;
+    right: 0;
+}
+.right-in2 .flowchart-operator-inputs {
+    position: absolute;
+    left: 0;
+}
+.field-data1 {
+    position: relative;
+}
+.flowchart-operator-inputs1 {
+    position: absolute;
+    top: 2;
+}
+.roadmap-road .roadmap-default {
+    stroke: #000000;
+    stroke-width:15px;
+}
+.roadmap-default .roadmap-default, .roadmap-road .roadmap-road, .roadmap-steps .roadmap-steps{
+    display:block;
+}
+.roadmap-path{
+    display:none;
+}
 
+.spacer-block{width:0px !important;}
+.spacer-block svg {
+    width: 10px !important;
+    height: 10px !important;
+}
+.spacer-svg-controls .flowchart-operator-outputs .flowchart-operator-connector-small-arrow {
+    right: 10px !important;!i;!;
+}
 
+.spacer-svg-controls .flowchart-operator-outputs .flowchart-operator-connector-arrow{
+    right:10px !important;
+}
 
+ul.editor-objects.sets-selection.active {
+    background: #b2b2b2;
+}
 
-    .flowchart-operator{
-        display: inline-table;
-    }
-    .flowchart-operator-connector-arrow1, .flowchart-operator-connector-small-arrow1 {
-        visibility: hidden;
-    }
-
-
-
-    .flowchart-temporary-link-layer{display:none !important;}
-    .field-options {
-        display: none !important;
-    }
-    .right-in2 .flowchart-operator-outputs {
-        position: absolute;
-        right: 0;
-    }
-    .right-in2 .flowchart-operator-inputs {
-        position: absolute;
-        left: 0;
-    }
-
-
-    .field-data1 {
-        position: relative;
-    }.flowchart-operator-inputs1 {
-         position: absolute;
-         top: 2;
-     }
-    .roadmap-road .roadmap-default {
-        stroke: #000000;
-        stroke-width:15px;
-    }
-    .roadmap-default .roadmap-default, .roadmap-road .roadmap-road, .roadmap-steps .roadmap-steps{
-        display:block;
-    }
-    .roadmap-path{
-        display:none;
-    }
-
-    .spacer-block{width:0px !important;}
-    .spacer-block svg {
-        width: 10px !important;
-        height: 10px !important;
-    }
-    .spacer-svg-controls .flowchart-operator-outputs .flowchart-operator-connector-small-arrow {
-        right: 10px !important;!i;!;
-    }
-
-    .spacer-svg-controls .flowchart-operator-outputs .flowchart-operator-connector-arrow{
-        right:10px !important;
-    }
-
-    ul.editor-objects.sets-selection.active {
-        background: #b2b2b2;
-    }
-
-    .right-in .flowchart-operator-connector-arrow {
-        border-right: 10px solid rgb(204, 204, 204);
-        border-left: none;
-    }
-    .right-in .flowchart-operator-inputs, .right-in .flowchart-operator-outputs {
-        display: contents !important;
-    }
-    .flowchart-operator-inputs-outputs.right-in .flowchart-operator-inputs .flowchart-operator-connector-arrow {
-        right: -10px !important;
-        left: auto !important;
-    }
-    .flowchart-operator-inputs-outputs.right-in .flowchart-operator-outputs .flowchart-operator-connector-arrow {
-        left: -10px !important;
-        right: auto !important;
-    }
+.right-in .flowchart-operator-connector-arrow {
+    border-right: 10px solid rgb(204, 204, 204);
+    border-left: none;
+}
+.right-in .flowchart-operator-inputs, .right-in .flowchart-operator-outputs {
+    display: contents !important;
+}
+.flowchart-operator-inputs-outputs.right-in .flowchart-operator-inputs .flowchart-operator-connector-arrow {
+    right: -10px !important;
+    left: auto !important;
+}
+.flowchart-operator-inputs-outputs.right-in .flowchart-operator-outputs .flowchart-operator-connector-arrow {
+    left: -10px !important;
+    right: auto !important;
+}
 
 :root {
   --bg-color: #fff;
