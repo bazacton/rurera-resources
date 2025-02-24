@@ -657,44 +657,13 @@ Quiz Front end file all css Start
 /*Green Form Fields Style End*/
 
 /*Range-Slider Style*/
-.range-price {
-    text-align: center;
-    margin: 0 -7px 20px;
-    font-size: 50px;
-}
-.range-price strong {
-    font-weight: 500;
-    margin: 0 7px;
-}
-.range-price strong em {
-    font-size: 22px;
-    margin: 10px 0 0 2px;
-    line-height: normal;
-    display: inline-block;
-    font-style: normal;
-    vertical-align: middle;
-}
-.range-container {
-    position: relative;
-    max-width: 350px;
-    margin: 150px auto 0;
-}
-.range-container input[type='range'] {
-	background-color: transparent;
-    -webkit-appearance: none;
-    appearance: none;
-	position: relative;
-	width: 350px;
-}
-.range-container input[type='range']:focus {
-    outline: none;
-}
-.range-container input[type='range'] + label {
-    position: absolute;
-	bottom: -20px;
-	left: 0;
-	transform: translateX(-50%);
-}
+.range-price {text-align: center; margin: 0 -7px 20px; font-size: 50px;}
+.range-price strong {font-weight: 500; margin: 0 7px;}
+.range-price strong em {font-size: 22px; margin: 10px 0 0 2px; line-height: normal; display: inline-block; font-style: normal; vertical-align: middle;}
+.range-container {position: relative; max-width: 350px; margin: 150px auto 0; }
+.range-container input[type='range'] { background-color: transparent;  -webkit-appearance: none; appearance: none; position: relative; width: 350px;}
+.range-container input[type='range']:focus {outline: none;}
+.range-container input[type='range'] + label {position: absolute; bottom: -20px; left: 0; transform: translateX(-50%); }
 input[type='range']::-webkit-slider-runnable-track {
     background: transparent;
     border-radius: 4px;
