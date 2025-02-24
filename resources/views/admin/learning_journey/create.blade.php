@@ -2,17 +2,18 @@
 @php $rand_id = rand(0,9999); @endphp
 @push('styles_top')
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
 <link href="/assets/default/vendors/sortable/jquery-ui.min.css"/>
 <link rel="stylesheet" href="/assets/admin/css/jquery.flowchart.css?ver={{$rand_id}}">
 <link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
 <link rel="stylesheet" href="/assets/admin/css/draw-editor.css?ver={{$rand_id}}">
 <link rel="stylesheet" href="/assets/admin/vendor/bootstrap-colorpicker/bootstrap-colorpicker.min.css">
 
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="/assets/default/css/quiz-create.css">
-    <link rel="stylesheet" href="/assets/admin/css/teacher-style.css?ver={{$rand_id}}">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="/assets/default/css/quiz-create.css">
+<link rel="stylesheet" href="/assets/admin/css/teacher-style.css?ver={{$rand_id}}">
 
 <style type="text/css">
     .book-dropzone{height:800px;}
@@ -426,16 +427,7 @@
                                     </div>
                                 </div>
                             </div>
-
 							<input type="hidden" name="posted_data" class="posted-data">
-
-
-
-
-
-
-
-
                             <div class="learning_journey_sets">
                                 <div class="rurera-button-loader" style="display: block;">
                                     <div class="spinner">
@@ -443,7 +435,6 @@
                                         <div class="double-bounce2"></div>
                                     </div>
                                 </div>
-
                                 @php $li_counter = 1; $li_content_respnose = ''; $li_content_data_response = ''; @endphp
                                 @if( !empty( $LearningJourneyObj->learningJourneyLevels ))
                                     @foreach( $LearningJourneyObj->learningJourneyLevels->where('status', 'active') as $itemObj)
@@ -455,7 +446,6 @@
                                         @endphp
                                     @endforeach
                                 @endif
-
                                 <div class="learning-jounrey-tabs accordion-content-wrapper mt-15" id="chapterAccordion" role="tablist"
                                      aria-multiselectable="true">
                                     <ul class="draggable-content-lists  curriculum-set-ul jounry-stages-lis">
@@ -468,11 +458,7 @@
                                 <div class="tabs-data">
                                     {!! $li_content_data_response !!}
                                 </div>
-
-
                             </div>
-
-
                             <div class="text-right mt-4">
                                 <button class="btn btn-primary">{{ trans('admin/main.submit') }}</button>
                             </div>
@@ -483,9 +469,6 @@
         </div>
     </div>
 </section>
-
-
-
 <div id="level_add_modal" class="level_add_modal modal fade" role="dialog" data-backdrop="static">
     <div class="modal-dialog modal-lg" style="max-width:100%;">
         <div class="modal-content edit-quest-modal-div">
@@ -494,11 +477,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-box">
-
                     @include('admin.learning_journey.includes.topic_treasure_selection', ['sub_chapters' => $sub_chapters])
-
-
-
                 </div>
             </div>
         </div>
