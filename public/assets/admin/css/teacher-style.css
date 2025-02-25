@@ -5814,7 +5814,9 @@ button.print-download-btn {
 .skelton-hide input[type="text"],
 .skelton-hide div,
 .skelton-hide figure,
-.skelton-hide li {
+.skelton-hide li,
+.skelton-hide label,
+.skelton-hide select {
     visibility: hidden;
 }
 .search-filters.skelton-hide {
