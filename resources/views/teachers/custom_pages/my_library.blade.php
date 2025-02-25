@@ -26,17 +26,17 @@
                 <div class="staff-picks-tabs">
                     <div class="mb-30 bg-white panel-border rounded-sm p-15">
                         <div class="rureraform-search-field mb-15">
-                            <div class="input-field">
+                            <div class="input-field skelton-hide">
                                 <input type="text" placeholder="Search question..">
                                 <button type="button"><i class="fas fa-search"></i> <span>Search questions</span></button>
                             </div>
-                            <div class="featured-controls">
+                            <div class="featured-controls skelton-hide">
                                 <button type="button" class="active">Featured List</button>
                                 <button type="button">Community</button>
                                 <button type="button">My Collection</button>
                             </div>
                         </div>
-                        <div class="search-filters mb-0">
+                        <div class="search-filters mb-0 skelton-hide">
                             <div class="select-field">
                                 <span>By:</span>
                                 <select>
@@ -66,7 +66,7 @@
                     <div class="row">
                         <div class="col-12 col-lg-4 col-md-4">
                             <div class="featured-list-sidebar">
-                                <div class="featured-filters">
+                                <div class="featured-filters skelton-hide">
                                     <div class="text-box">
                                         <h6>Reported Oprations</h6>
                                     </div>
@@ -82,12 +82,12 @@
                                 <div class="featured-list-sidebar-inner">
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm active">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="go-jetters-hero-academy-cc-v2">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Sciency Science</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -96,8 +96,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
-                                                
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 7th-8th  Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
@@ -106,12 +105,12 @@
                                     </div>
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Maths Magic Adventure</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -120,8 +119,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
-
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 3rd-5th Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/mathematical.svg" alt="mathematical"></span> Math</li>
@@ -131,12 +129,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Grammar Genius Challenge</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -145,7 +143,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 15 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 4th-6th Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> English</li>
@@ -155,12 +153,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>History Trivia Quest</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -169,7 +167,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 12 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 6th-8th Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> History</li>
@@ -179,12 +177,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Artistic Impressions Puzzle</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -193,7 +191,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 5 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 1st-3rd Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Art</li>
@@ -203,12 +201,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Science Exploration Mission</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -217,7 +215,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
 
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 2nd-5th Grade</li>
@@ -228,12 +226,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Geography World Challenges</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -242,7 +240,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
 
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 6 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 5th-7th Grade</li>
@@ -253,12 +251,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Robotics Mind Challenges</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -267,7 +265,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 6th-8th  Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Technology</li>
@@ -277,12 +275,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Animal Kingdom Quiz</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -291,7 +289,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 6th-8th  Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Biology</li>
@@ -301,12 +299,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Physics Wonders Challenges</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -315,7 +313,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 5th-8th  Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Physics</li>
@@ -325,12 +323,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Chemistry Formula Puzzles</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -339,7 +337,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 7th-8th  Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Chemistry</li>
@@ -349,12 +347,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Sciency Science</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -363,7 +361,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 7th-8th  Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
@@ -373,12 +371,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Maths Magic Adventure</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -387,7 +385,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 3rd-5th Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/mathematical.svg" alt="mathematical"></span> Math</li>
@@ -397,12 +395,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Grammar Genius Challenge</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -411,7 +409,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 15 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 4th-6th Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> English</li>
@@ -421,12 +419,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>History Trivia Quest</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -435,7 +433,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 12 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 6th-8th Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> History</li>
@@ -445,12 +443,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Artistic Impressions Puzzle</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -459,7 +457,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 5 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 1st-3rd Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Art</li>
@@ -469,12 +467,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Science Exploration Mission</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -483,7 +481,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 2nd-5th Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
@@ -493,12 +491,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Geography World Challenges</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -507,7 +505,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 6 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 5th-7th Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Geography</li>
@@ -517,12 +515,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Robotics Mind Challenges</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -531,7 +529,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 6th-8th  Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Technology</li>
@@ -541,12 +539,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Animal Kingdom Quiz</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -555,7 +553,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 6th-8th  Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Biology</li>
@@ -565,12 +563,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Physics Wonders Challenges</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -579,7 +577,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 5th-8th  Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Physics</li>
@@ -589,12 +587,12 @@
 
                                     <div class="listing-card mb-15 bg-white panel-border rounded-sm">
                                         <a href="#" class="listing-card-link">
-                                            <div class="img-holder">
+                                            <div class="img-holder skelton-hide">
                                                 <figure>
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder">
+                                            <div class="text-holder skelton-hide">
                                                 <h3>Chemistry Formula Puzzles</h3>
                                                 <div class="author-info">
                                                     <span class="info-text">
@@ -603,7 +601,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options">
+                                            <ul class="list-options skelton-hide">
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 7th-8th  Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Chemistry</li>
@@ -616,7 +614,7 @@
                         </div>
                         <div class="col-12 col-lg-8 col-md-8">
                             <div class="elements-holder bg-white panel-border p-15 border-bottom-0">
-                                <div class="questions-header">
+                                <div class="questions-header skelton-hide">
                                     <div class="questions-header-inner">
                                         <div class="text-holder">
                                             <h5>Exploring Magnetic Matrials and Their Uses<small>(18 questions)</small></h5>
@@ -626,12 +624,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <ul class="list-options question-list-options mb-15">      
+                                <ul class="list-options question-list-options mb-15 skelton-hide">      
                                     <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
                                     <li><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt="save"></span> 7th-8th  Grade</li>
                                     <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
                                 </ul>
-                                <div class="class-controls">
+                                <div class="class-controls skelton-hide">
                                     <div class="left-area d-inline-flex align-items-center">
                                         <div class="class-controls-option questions-control-options border-0 mr-0 pr-0 d-inline-flex align-items-center">
                                             <button type="button"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple">Copy & edit</button>
@@ -664,7 +662,7 @@
                                     <div class="left-content has-bg">
                                         <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
                                         <div class="question-layout row d-flex align-items-start">
-                                            <div class="rureraform-col rureraform-col-12">
+                                            <div class="rureraform-col rureraform-col-12 skelton-hide">
                                                 <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
                                                     <div class="question-top-info">
                                                         <div class="question-count">
@@ -680,23 +678,23 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="rureraform-col rureraform-col-12">
+                                            <div class="rureraform-col rureraform-col-12 skelton-hide">
                                                 <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                                     <h4>Read the text, then answer the question.</h4>
                                                 </div>
                                             </div>
-                                            <div class="rureraform-col rureraform-col-12">
+                                            <div class="rureraform-col rureraform-col-12 skelton-hide">
                                             <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz"> Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm. <div class="rureraform-element-cover"></div>
                                             </div>
                                             </div>
-                                            <div class="rureraform-col rureraform-col-12">
+                                            <div class="rureraform-col rureraform-col-12 skelton-hide">
                                             <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                                 <div class="question-label question_label">
                                                     <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
                                                 </div>
                                             </div>
                                             </div>
-                                            <div class="rureraform-col rureraform-col-12">
+                                            <div class="rureraform-col rureraform-col-12 skelton-hide">
                                             <div id="rureraform-element-24192" class="quiz-group rureraform-element-24192 rureraform-element ui-sortable-handle" data-type="checkbox">
                                                 <div class="rureraform-column-label">
                                                     <label class="rureraform-label">Mark two answers</label>
@@ -734,7 +732,7 @@
                                     </div>
                                     </form>
                                 </div>
-                                <div class="view-explanation">
+                                <div class="view-explanation skelton-hide">
                                     <div class="explanation-controls d-flex align-items-center">
                                         <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list1" aria-expanded="false" aria-controls="explanation-list">
                                             <i class="fas fa-plus"></i> Explanation
@@ -1040,7 +1038,7 @@
                                             </span>
                                             <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
                                                 <div class="question-layout row d-flex align-items-start">
-                                                <div class="rureraform-col rureraform-col-12">
+                                                <div class="rureraform-col rureraform-col-12 skelton-hide">
                                                     <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
                                                         <div class="question-top-info">
                                                             <div class="question-count">
@@ -1055,12 +1053,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="rureraform-col rureraform-col-12">
+                                                <div class="rureraform-col rureraform-col-12 skelton-hide">
                                                     <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                                         <h4>Mark the following true and false:</h4>
                                                     </div>
                                                 </div>
-                                                <div class="rureraform-col rureraform-col-8">
+                                                <div class="rureraform-col rureraform-col-8 skelton-hide">
                                                     <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                                         <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
                                                     </div>
@@ -1075,13 +1073,13 @@
                                                             <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
                                                                 <div class="form-box ">
                                                                     <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined active-option">
+                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined active-option skelton-hide">
                                                                             <input class="editor-field" type="radio" name="field-40008" id="field-40008-0" value="True">
                                                                             <label for="field-40008-0">
                                                                                 <span class="inner-label">True</span>
                                                                             </label>
                                                                         </div>
-                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined skelton-hide">
                                                                             <input class="editor-field" type="radio" name="field-40008" id="field-40008-1" value="False">
                                                                             <label for="field-40008-1">
                                                                                 <span class="inner-label">False</span>
@@ -1095,7 +1093,7 @@
                                                         <div class="rureraform-element-cover"></div>
                                                     </div>
                                                 </div>
-                                                <div class="rureraform-col rureraform-col-8">
+                                                <div class="rureraform-col rureraform-col-8 skelton-hide">
                                                     <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                                         <h6>When balanced forces act on an object, it remains stationary or continues moving at the same speed.</h6>
                                                     </div>
@@ -1110,13 +1108,13 @@
                                                             <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
                                                                 <div class="form-box ">
                                                                     <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined skelton-hide">
                                                                             <input class="editor-field" type="radio" name="field-84793" id="field-84793-0" value="True">
                                                                             <label for="field-84793-0">
                                                                                 <span class="inner-label">True</span>
                                                                             </label>
                                                                         </div>
-                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined skelton-hide">
                                                                             <input class="editor-field" type="radio" name="field-84793" id="field-84793-1" value="False">
                                                                             <label for="field-84793-1">
                                                                             <span class="inner-label">False</span>
@@ -1130,7 +1128,7 @@
                                                         <div class="rureraform-element-cover"></div>
                                                     </div>
                                                 </div>
-                                                <div class="rureraform-col rureraform-col-8">
+                                                <div class="rureraform-col rureraform-col-8 skelton-hide">
                                                     <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                                         <h6>When an endothermic reaction occurs, energy is absorbed, making the surroundings cooler.</h6>
                                                     </div>
@@ -1145,13 +1143,13 @@
                                                             <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
                                                                 <div class="form-box ">
                                                                     <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined skelton-hide">
                                                                             <input class="editor-field" type="radio" name="field-21459" id="field-21459-0" value="True">
                                                                             <label for="field-21459-0">
                                                                                 <span class="inner-label">True</span>
                                                                             </label>
                                                                         </div>
-                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined skelton-hide">
                                                                             <input class="editor-field" type="radio" name="field-21459" id="field-21459-1" value="False">
                                                                             <label for="field-21459-1">
                                                                             <span class="inner-label">False</span>
@@ -1170,7 +1168,7 @@
                                         </div>
                                     </form>
                                 </div>
-                                <div class="view-explanation">
+                                <div class="view-explanation skelton-hide">
                                     <div class="explanation-controls d-flex align-items-center">
                                         <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list2" aria-expanded="false" aria-controls="explanation-list">
                                             <i class="fas fa-plus"></i> Explanation
@@ -1192,12 +1190,12 @@
                                             </span>
                                             <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
                                                 <div class="question-layout row d-flex align-items-start">
-                                                    <div class="rureraform-col rureraform-col-12">
+                                                    <div class="rureraform-col rureraform-col-12 skelton-hide">
                                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                                             <h4>Read the text and choose the correct answer.</h4>
                                                         </div>
                                                     </div>
-                                                    <div class="rureraform-col rureraform-col-12">
+                                                    <div class="rureraform-col rureraform-col-12 skelton-hide">
                                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="drop_and_text"> When <select type="inner_dropdown" class="editor-field" id="dropdown-1" data-identifier="49226" name="field-dropdown1_options">
                                                             <option value="Select Option">Select Option</option>
                                                             <option value="lava">lava</option>
@@ -1212,7 +1210,7 @@
                                                         </select> igneous rocks with large crystals. <div class="rureraform-element-cover"></div>
                                                         </div>
                                                     </div>
-                                                    <div class="rureraform-col rureraform-col-12">
+                                                    <div class="rureraform-col rureraform-col-12 skelton-hide">
                                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
                                                         <p>
                                                             <i>Hint: Think about the Moon’s effect on Earth, especially on tides and sunlight.</i>
@@ -1225,7 +1223,7 @@
                                         </div>
                                     </form>
                                 </div>
-                                <div class="view-explanation">
+                                <div class="view-explanation skelton-hide">
                                     <div class="explanation-controls d-flex align-items-center">
                                         <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list3" aria-expanded="false" aria-controls="explanation-list">
                                             <i class="fas fa-plus"></i> Explanation
