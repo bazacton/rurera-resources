@@ -171,7 +171,7 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .book-dropzone .object-options a.resize-handler .fas {display: none;}
 .book-dropzone .drop-item.spacer-block .field-data .flowchart-operator-inputs-outputs,
 .flowchart-operator-inputs .flowchart-operator-connector-arrow,
-body .flowchart-operator-connector-arrow,
+
 .flowchart-operator-connector-arrow {display: none !important;}
 /* Zoom Header Style Start */
 .zoom-header button {border: 1px solid #ddd; background-color: #f5f5f5; font-size: 16px; font-weight: 600; outline: none; border-radius: 3px; color: #333; text-shadow: 0 1px 1px #fff; padding: 5px 15px; line-height: normal; max-height: 33px;}
