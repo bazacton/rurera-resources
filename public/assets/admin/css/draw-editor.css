@@ -174,7 +174,8 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .zoom-header {display: flex; align-items: center; flex-wrap: wrap; gap: 10px;}
 .zoom-header select {border: 1px solid #ddd; background-color: #f5f5f5; padding: 5px 10px; border-radius: 3px; min-height: 33px; max-height: 33px; outline: none;}
 .flowchart-operator-outputs .flowchart-operator-connector-arrow,
-.flowchart-operator-inputs .flowchart-operator-connector-arrow {visibility: hidden; opacity: 0;}
+.flowchart-operator-inputs .flowchart-operator-connector-arrow,
+.flowchart-operator .flowchart-operator-inputs-outputs {visibility: hidden; opacity: 0;}
 
 /* Zoom Header Style End */
 
