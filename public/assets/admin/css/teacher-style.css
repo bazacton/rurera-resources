@@ -5801,6 +5801,36 @@ button.print-download-btn {
       background-position: 350% 0;
     }
 } */
+
+.skelton-hide {
+    background: #e2e2e2;
+    color: transparent;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.skelton-hide button {
+    visibility: hidden;
+}
+.skelton-hide input[type="text"] {
+    visibility: hidden;
+}
+.search-filters.skelton-hide {
+    display: inline-flex;
+}
+.skelton-hide div {
+    visibility: hidden;
+}
+.skelton-hide figure, .skelton-hide figure img {
+    visibility: hidden;
+    opacity: 0;
+    display: inline-block;
+}
+.skelton-hide li {
+    opacity: 0;
+    visibility: hidden;
+}
 .rurera-skeleton .skelton-hide {
     background: #e2e2e2;
     color: transparent;
