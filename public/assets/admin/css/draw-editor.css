@@ -164,7 +164,7 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
 svg.flowchart-links-layer {bottom: 0; top: auto;}
 body .flowchart-operator-connector-arrow {top: -20px;}
 body .flowchart-operator-connector-small-arrow {top: -15px;}
-.book-dropzone .drop-item.field_settings a.remove {opacity: 0; visibility: hidden; color: #ff0000; margin: 0;}
+.book-dropzone .drop-item.field_settings a.remove {opacity: 0; visibility: hidden; color: #ff0000; margin: 0; position: initial; height: auto; width: auto;}
 .book-dropzone .drop-item.field_settings a.remove span {font-size: 10px;}
 .book-dropzone .drop-item.field_settings.active a.remove {opacity: 1; visibility: visible;}
 .book-dropzone .object-options a.resize-handler {right: -4px; bottom: -4px; background-color: #ddd; background-image: none; height: 12px; width: 12px;}
