@@ -5801,66 +5801,31 @@ button.print-download-btn {
       background-position: 350% 0;
     }
 } */
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 20px;
+.rurera-skeleton .skelton-hide {
+    background: #e2e2e2;
+    color: transparent;
+    position: relative;
+    overflow: hidden;
 }
-
-.loading-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 600px;
-    margin: auto;
-}
-
-.loading-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.loading-image {
+.rurera-skeleton .hide-text::before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 0;
+    height: 100%;
     width: 50px;
-    height: 50px;
-    background: linear-gradient(90deg, #e0e0e0, #f0f0f0, #e0e0e0);
-    background-size: 200% 100%;
-    animation: loadingAnimation 1.5s infinite linear;
-    border-radius: 8px;
+    background: linear-gradient(to right, #e2e2e2 25%, #d5d5d5 50%, #e2e2e2 100%);
+    animation-name: gradient-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    filter: blur(5px);
 }
-
-.loading-text {
-    width: 70%;
-    height: 10px;
-    background: linear-gradient(90deg, #e0e0e0, #f0f0f0, #e0e0e0);
-    background-size: 200% 100%;
-    animation: loadingAnimation 1.5s infinite linear;
-    border-radius: 4px;
-}
-
-.loading-subtext {
-    width: 50%;
-    height: 8px;
-    background: linear-gradient(90deg, #e0e0e0, #f0f0f0, #e0e0e0);
-    background-size: 200% 100%;
-    animation: loadingAnimation 1.5s infinite linear;
-    border-radius: 4px;
-    margin-top: 5px;
-}
-
-@keyframes loadingAnimation {
-    0% {
-        background-position: -200% 0;
+@keyframes gradient-animation {
+    from {
+      left: 0%;
     }
-    100% {
-        background-position: 200% 0;
+    to {
+      left: 100%;
     }
 }
 
