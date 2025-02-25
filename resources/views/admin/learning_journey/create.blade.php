@@ -2,18 +2,17 @@
 @php $rand_id = rand(0,9999); @endphp
 @push('styles_top')
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <link href="/assets/default/vendors/sortable/jquery-ui.min.css"/>
 <link rel="stylesheet" href="/assets/admin/css/jquery.flowchart.css?ver={{$rand_id}}">
 <link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
 <link rel="stylesheet" href="/assets/admin/css/draw-editor.css?ver={{$rand_id}}">
 <link rel="stylesheet" href="/assets/admin/vendor/bootstrap-colorpicker/bootstrap-colorpicker.min.css">
 
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
-<link rel="stylesheet" href="/assets/default/css/quiz-create.css">
-<link rel="stylesheet" href="/assets/admin/css/teacher-style.css?ver={{$rand_id}}">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="/assets/default/css/quiz-create.css">
+    <link rel="stylesheet" href="/assets/admin/css/teacher-style.css?ver={{$rand_id}}">
 
 <style type="text/css">
     .book-dropzone{height:800px;}
@@ -51,75 +50,83 @@
 .flowchart-operator-inputs {
     left: 50%;
 }
-.flowchart-operator{
-    display: inline-table;
-}
-.flowchart-operator-connector-arrow1, .flowchart-operator-connector-small-arrow1 {
-    visibility: hidden;
-}
 
-.flowchart-temporary-link-layer{display:none !important;}
-.field-options {
-    display: none !important;
-}
-.right-in2 .flowchart-operator-outputs {
-    position: absolute;
-    right: 0;
-}
-.right-in2 .flowchart-operator-inputs {
-    position: absolute;
-    left: 0;
-}
-.field-data1 {
-    position: relative;
-}
-.flowchart-operator-inputs1 {
-    position: absolute;
-    top: 2;
-}
-.roadmap-road .roadmap-default {
-    stroke: #000000;
-    stroke-width:15px;
-}
-.roadmap-default .roadmap-default, .roadmap-road .roadmap-road, .roadmap-steps .roadmap-steps{
-    display:block;
-}
-.roadmap-path{
-    display:none;
-}
 
-.spacer-block{width:0px !important;}
-.spacer-block svg {
-    width: 10px !important;
-    height: 10px !important;
-}
-.spacer-svg-controls .flowchart-operator-outputs .flowchart-operator-connector-small-arrow {
-    right: 10px !important;!i;!;
-}
 
-.spacer-svg-controls .flowchart-operator-outputs .flowchart-operator-connector-arrow{
-    right:10px !important;
-}
 
-ul.editor-objects.sets-selection.active {
-    background: #b2b2b2;
-}
 
-.right-in .flowchart-operator-connector-arrow {
-    border-right: 10px solid rgb(204, 204, 204);
-    border-left: none;
-}
-.right-in .flowchart-operator-inputs, .right-in .flowchart-operator-outputs {
-    display: contents !important;
-}
-.flowchart-operator-inputs-outputs.right-in .flowchart-operator-inputs .flowchart-operator-connector-arrow {
-    right: -10px !important;
-    left: auto !important;
-}
-.flowchart-operator-inputs-outputs.right-in .flowchart-operator-outputs .flowchart-operator-connector-arrow {
-    left: -10px !important;
-    right: auto !important;
-}
+    .flowchart-operator{
+        display: inline-table;
+    }
+    .flowchart-operator-connector-arrow1, .flowchart-operator-connector-small-arrow1 {
+        visibility: hidden;
+    }
+
+
+
+    .flowchart-temporary-link-layer{display:none !important;}
+    .field-options {
+        display: none !important;
+    }
+    .right-in2 .flowchart-operator-outputs {
+        position: absolute;
+        right: 0;
+    }
+    .right-in2 .flowchart-operator-inputs {
+        position: absolute;
+        left: 0;
+    }
+
+
+    .field-data1 {
+        position: relative;
+    }.flowchart-operator-inputs1 {
+         position: absolute;
+         top: 2;
+     }
+    .roadmap-road .roadmap-default {
+        stroke: #000000;
+        stroke-width:15px;
+    }
+    .roadmap-default .roadmap-default, .roadmap-road .roadmap-road, .roadmap-steps .roadmap-steps{
+        display:block;
+    }
+    .roadmap-path{
+        display:none;
+    }
+
+    .spacer-block{width:0px !important;}
+    .spacer-block svg {
+        width: 10px !important;
+        height: 10px !important;
+    }
+    .spacer-svg-controls .flowchart-operator-outputs .flowchart-operator-connector-small-arrow {
+        right: 10px !important;!i;!;
+    }
+
+    .spacer-svg-controls .flowchart-operator-outputs .flowchart-operator-connector-arrow{
+        right:10px !important;
+    }
+
+    ul.editor-objects.sets-selection.active {
+        background: #b2b2b2;
+    }
+
+    .right-in .flowchart-operator-connector-arrow {
+        border-right: 10px solid rgb(204, 204, 204);
+        border-left: none;
+    }
+    .right-in1 .flowchart-operator-inputs, .right-in1 .flowchart-operator-outputs {
+        display: contents !important;
+    }
+    .flowchart-operator-inputs-outputs.right-in .flowchart-operator-inputs .flowchart-operator-connector-arrow {
+        right: -10px !important;
+        left: auto !important;
+    }
+    .flowchart-operator-inputs-outputs.right-in .flowchart-operator-outputs .flowchart-operator-connector-arrow {
+        left: -10px !important;
+        right: auto !important;
+    }
 
 :root {
   --bg-color: #fff;
@@ -419,7 +426,16 @@ ul.editor-objects.sets-selection.active {
                                     </div>
                                 </div>
                             </div>
+
 							<input type="hidden" name="posted_data" class="posted-data">
+
+
+
+
+
+
+
+
                             <div class="learning_journey_sets">
                                 <div class="rurera-button-loader" style="display: block;">
                                     <div class="spinner">
@@ -427,6 +443,7 @@ ul.editor-objects.sets-selection.active {
                                         <div class="double-bounce2"></div>
                                     </div>
                                 </div>
+
                                 @php $li_counter = 1; $li_content_respnose = ''; $li_content_data_response = ''; @endphp
                                 @if( !empty( $LearningJourneyObj->learningJourneyLevels ))
                                     @foreach( $LearningJourneyObj->learningJourneyLevels->where('status', 'active') as $itemObj)
@@ -438,6 +455,7 @@ ul.editor-objects.sets-selection.active {
                                         @endphp
                                     @endforeach
                                 @endif
+
                                 <div class="learning-jounrey-tabs accordion-content-wrapper mt-15" id="chapterAccordion" role="tablist"
                                      aria-multiselectable="true">
                                     <ul class="draggable-content-lists  curriculum-set-ul jounry-stages-lis">
@@ -450,7 +468,11 @@ ul.editor-objects.sets-selection.active {
                                 <div class="tabs-data">
                                     {!! $li_content_data_response !!}
                                 </div>
+
+
                             </div>
+
+
                             <div class="text-right mt-4">
                                 <button class="btn btn-primary">{{ trans('admin/main.submit') }}</button>
                             </div>
@@ -461,6 +483,9 @@ ul.editor-objects.sets-selection.active {
         </div>
     </div>
 </section>
+
+
+
 <div id="level_add_modal" class="level_add_modal modal fade" role="dialog" data-backdrop="static">
     <div class="modal-dialog modal-lg" style="max-width:100%;">
         <div class="modal-content edit-quest-modal-div">
@@ -469,7 +494,11 @@ ul.editor-objects.sets-selection.active {
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-box">
+
                     @include('admin.learning_journey.includes.topic_treasure_selection', ['sub_chapters' => $sub_chapters])
+
+
+
                 </div>
             </div>
         </div>
@@ -1457,9 +1486,6 @@ ul.editor-objects.sets-selection.active {
 
 
 
-
-
-
 </script>
 
 
@@ -1851,5 +1877,10 @@ ul.editor-objects.sets-selection.active {
     }
     })
     //*** Book Dropzone Zoom Function End ***//
+
+
+
+
+
 </script>
 @endpush
