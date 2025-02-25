@@ -179,6 +179,12 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
     background-color: #fff;
     padding: 6px 10px;
     border-radius: 15px;
+    opacity: 0;
+    visibility: hidden;
+}
+.book-dropzone .drop-item.active .object-options {
+    opacity: 1;
+    visibility: visible;
 }
 .change-position span {
     font-size: 10px;
