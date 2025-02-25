@@ -5754,14 +5754,14 @@ button.print-download-btn {
     height: 1.25rem;
     margin-bottom: 1rem;
     background-color: #ddd;
-    background-image: linear-gradient(90deg, #eaeaea 0, #eaeaea 6rem, #eaeaea 10rem);
+    background-image: linear-gradient(90deg, #eaeaea 0, #eaeaea 4rem, #eaeaea 8rem);
     background-position: -150% 0;
-    border-radius: 5px;
     background-size: 2rem;
     background-repeat: no-repeat;
     will-change: background-position;
-    -webkit-animation: skeleton 1.75s cubic-bezier(0.57, 0.21, 0.69, 1.25) forwards infinite;
-    animation: skeleton 1.75s cubic-bezier(0.57, 0.21, 0.69, 1.25) forwards infinite;
+    -webkit-animation: skeleton 1.75scubic-bezier(0.57, 0.21, 0.69, 1.25) forwards infinite;
+    animation: skeleton 5.75scubic-bezier(0.57, 0.21, 0.69, 1.25) forwards infinite;
+    border-radius: 5px;
   }
   .skeleton-loading .card__list .list__item .card .card__content .card__desc {
     display: flex;
