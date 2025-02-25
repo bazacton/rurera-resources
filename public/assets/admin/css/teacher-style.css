@@ -5739,8 +5739,8 @@ button.print-download-btn {
     background-size: 2rem;
     background-repeat: no-repeat;
     will-change: background-position;
-    -webkit-animation: skeleton 1.75s cubic-bezier(0.57, 0.21, 0.69, 1.25) forwards infinite;
-    animation: skeleton 1.75s cubic-bezier(0.57, 0.21, 0.69, 1.25) forwards infinite;
+    -webkit-animation: skeleton 5.75s cubic-bezier(0.57, 0.21, 0.69, 1.25) forwards infinite;
+    animation: skeleton 5.75s cubic-bezier(0.57, 0.21, 0.69, 1.25) forwards infinite;
   }
   .skeleton-loading .card__list .list__item .card .card__content {
     display: flex;
@@ -5774,7 +5774,7 @@ button.print-download-btn {
     background-size: 2rem;
     background-repeat: no-repeat;
     will-change: background-position;
-    -webkit-animation: skeleton 1.75s cubic-bezier(0.57, 0.21, 0.69, 1.25) forwards infinite;
+    -webkit-animation: skeleton 5.75s cubic-bezier(0.57, 0.21, 0.69, 1.25) forwards infinite;
     animation: skeleton 5.75s cubic-bezier(0.57, 0.21, 0.69, 1.25) forwards infinite;
     border-radius: 5px;
   }
