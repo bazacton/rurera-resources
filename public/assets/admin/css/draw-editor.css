@@ -175,6 +175,7 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .zoom-header select {border: 1px solid #ddd; background-color: #f5f5f5; padding: 5px 10px; border-radius: 3px; min-height: 33px; max-height: 33px; outline: none;}
 .flowchart-operator-outputs .flowchart-operator-connector-arrow,
 .flowchart-operator-inputs .flowchart-operator-connector-arrow {visibility: hidden; opacity: 0;}
+.book-dropzone .drop-item.ui-draggable.field_settings {display: none !important;}
 /* Zoom Header Style End */
 
 /* Level Add Modal Style Start */
