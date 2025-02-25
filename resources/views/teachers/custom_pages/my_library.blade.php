@@ -2159,11 +2159,11 @@
   </div>
 </div>
 <!-- Skelton Loading HTML Start -->
-<div class="skeleton-loading">
+<!-- <div class="skeleton-loading">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <!-- <ul class="card__list">
+                <ul class="card__list">
                     <li class="list__item">
                         <div class="card">
                             <div class="card__header">
@@ -2203,7 +2203,7 @@
                             </div>
                         </div>
                     </li>
-                </ul> -->
+                </ul>
                 <div class="loading-container">
                     <div class="loading-item">
                         <div class="loading-image"></div>
@@ -2230,7 +2230,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- Skelton Loading HTML End -->
 @endsection
 
