@@ -170,9 +170,10 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .book-dropzone a.resize-handler {right: -4px; bottom: -4px; background-color: #ddd; background-image: none; height: 12px; width: 12px; border-radius: 100%;}
 .book-dropzone .drop-item.active a.resize-handler {opacity: 1; visibility: visible;}
 .book-dropzone a.resize-handler .fas {display: none;}
-.object-options {
+.book-dropzone .object-options {
     position: absolute;
     top: -30px;
+    left: 50%;
     display: inline-flex;
     align-items: center;
     gap: 5px 8px;
@@ -182,6 +183,7 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
     border-radius: 15px;
     opacity: 0;
     visibility: hidden;
+    transform: translateX(-50%);
 }
 .book-dropzone .drop-item.active .object-options {
     opacity: 1;
