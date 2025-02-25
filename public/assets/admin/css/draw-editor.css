@@ -170,7 +170,7 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .book-dropzone .object-options a.resize-handler {right: -4px; bottom: -4px; background-color: #ddd; background-image: none; height: 12px; width: 12px;}
 .book-dropzone .object-options a.resize-handler .fas {display: none;}
 .book-dropzone .drop-item.spacer-block .field-data .flowchart-operator-inputs-outputs,
-.flowchart-operator-inputs .flowchart-operator-connector-arrow,
+
 
 .flowchart-operator-connector-arrow {display: none !important;}
 /* Zoom Header Style Start */
