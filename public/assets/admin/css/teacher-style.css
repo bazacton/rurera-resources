@@ -5704,7 +5704,6 @@ button.print-download-btn {
     display: flex;
     min-width: 25rem;
     flex-direction: column;
-    grid-column-end: span 3;
     width: 100%;
   }
   .skeleton-loading .card__list .list__item .card {
