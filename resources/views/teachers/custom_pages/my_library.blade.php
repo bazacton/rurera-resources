@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="col-12">
-                <div class="staff-picks-tabs">
+                <div class="staff-picks-tabs skeleton">
                     <div class="mb-30 bg-white panel-border rounded-sm p-15">
                         <div class="rureraform-search-field mb-15">
                             <div class="input-field skelton-hide">
@@ -2247,16 +2247,15 @@ $(document).ready(function () {
     $scrollableDiv.getNiceScroll().resize();
   });
 
-  document.addEventListener("DOMContentLoaded", function () {
+    const $el = document.querySelector(".staff-picks-tabs");
+
+    // Loading finished
     setTimeout(() => {
-        document.querySelector(".loading-container").innerHTML = `
-            <div class="content">
-                <h2>Loaded Content</h2>
-                <p>This is the actual content after the loading effect.</p>
-            </div>
-        `;
-    }, 3000); // Simulate a 3-second loading time
-});
+    $el.classList.remove("skeleton");
+    $el
+        .querySelectorAll(".skelton-hide")
+        .forEach((el) => el.classList.remove("skelton-hide"));
+    }, 3000);
 
 
 });
