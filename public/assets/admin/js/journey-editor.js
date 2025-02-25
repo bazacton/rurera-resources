@@ -238,7 +238,8 @@ $(document).on('click', '.prev-page', function () {
 
 
 $(document).on('click', '.book-dropzone', function (e) {
-    var dropZonObj = $(this);
+    //var dropZonObj = $(this);
+    var dropZonObj = $(this).closest('.dropzone-container');
     var drag_type = $('.control-tool-item.active').attr('data-drag_type');
     var drag_object = $('.control-tool-item.active').attr('data-drag_object');
     var shape_type = $('.control-tool-item.active').attr('data-shape_type');
@@ -299,6 +300,8 @@ $(document).on('click', '.book-dropzone', function (e) {
             var parentWidth = parent.width();
             var parentHeight = parent.height();
 
+
+            console.log('parentWIDTHEEEEEEEEEEEEEEEE222-----'+parentWidth);
             // Calculate the percentages
             var leftPercent = (ui.position.left / parentWidth) * 100;
             var topPercent = (ui.position.top / parentHeight) * 100;
@@ -385,6 +388,7 @@ $(document).on('click', '.book-dropzone', function (e) {
 function after_add_render(field_random_number, dropZonObj){
 
     $flowchart = $(".book-dropzone.active");
+    dropZonObj = dropZonObj.closest('.dropzone-container');
 
 
 
@@ -1154,7 +1158,9 @@ jQuery(document).ready(function () {
 
 
     $('.book-dropzone .field_settings').each(function () {
-        var dropZonObj = $(this).closest('.book-dropzone');
+        //var dropZonObj = $(this).closest('.book-dropzone');
+        var dropZonObj = $(this).closest('.dropzone-container');
+        var innerDropZonObj = dropZonObj.find('.book-dropzone');
         var field_id = $(this).attr('data-id');
 
 
@@ -1217,12 +1223,13 @@ jQuery(document).ready(function () {
 
 		$('.draggable_field_' + field_id)
 			.draggable({
-				preventCollision: true,
+				preventCollision: false,
 				containment: dropZonObj,
                 drag: function(event, ui) {
-                    var parent = $(this).parent(); // Assuming dropZonObj is the container
+                    var parent = dropZonObj;//innerDropZonObj;//$(this).parent(); // Assuming dropZonObj is the container
                     var parentWidth = parent.width();
                     var parentHeight = parent.height();
+                    console.log('parentWIDTHEEEEEEEEEEEEEEEE-----'+parentWidth);
 
                     // Calculate the percentages
                     var leftPercent = (ui.position.left / parentWidth) * 100;
@@ -1251,7 +1258,7 @@ jQuery(document).ready(function () {
                     },
 
                     resize: function (event, ui) {
-                        var parent = $(this).parent(); // Assuming dropZonObj is the container
+                        var parent = dropZonObj;//innerDropZonObj;//$(this).parent(); // Assuming dropZonObj is the container
                         var parentWidth = parent.width();
                         var parentHeight = parent.height();
 
