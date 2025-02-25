@@ -5702,7 +5702,6 @@ button.print-download-btn {
   }
   .skeleton-loading .card__list .list__item {
     display: flex;
-    flex: 1;
     min-width: 25rem;
     flex-direction: column;
     grid-column-end: span 3;
