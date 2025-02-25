@@ -1405,6 +1405,8 @@
             link_position = 'left-in';
         }
         $('.editor-objects-list-all li[data-id="'+data_id+'"]').attr('data-link_position', link_position);
+        $('.levels-objects-list li[data-id="'+data_id+'"]').attr('data-link_position', link_position);
+
         levels_sorting_render();
     });
 
