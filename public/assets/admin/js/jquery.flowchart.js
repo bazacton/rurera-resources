@@ -389,7 +389,7 @@ jQuery(function ($) {
             this.maskNum++;
             mask.setAttribute("id", maskId);
 
-            overallGroup.appendChild(mask);
+            //overallGroup.appendChild(mask);
 
             var shape = document.createElementNS("http://www.w3.org/2000/svg", "rect");
             shape.setAttribute("x", "0");
