@@ -15,6 +15,40 @@
     <link rel="stylesheet" href="/assets/admin/css/teacher-style.css?ver={{$rand_id}}">
 
 <style type="text/css">
+
+
+    .dropzone-container{
+        /*padding:20px;*/
+        border: 1px solid #efefef;
+        position: relative;
+    }
+    span.dropzone-placeholder {
+        margin: auto;
+        text-align: center;
+        display: block;
+        padding: 60px 0;
+        font-size: 20px;
+        color: #cbc4c4;
+        text-transform: uppercase;
+        /* position: absolute; */
+        pointer-events: none;
+        user-select: none;
+    }
+    .dropzone-container .book-dropzone{
+        /*margin:130px 0 0 0;*/
+        position: unset !important;
+    }
+    .flowchart-container{position:inherit !important;}
+
+
+
+
+
+
+
+
+
+
     .book-dropzone{height:800px;}
     .rurera-button-loader{background:#fff !important;}
     .ui-icon-gripsmall-diagonal-se{
@@ -886,6 +920,7 @@
 					$(".book-dropzone.active").append($el);
 
                     var dropZonObj = $(".book-dropzone.active");
+                    var parentDropZonObj = dropZonObj.closest('.dropzone-container');
 
 					$('.draggable_field_' + unique_id)
 					.rotatable()
@@ -899,8 +934,10 @@
                             preventCollision: true,
                             containment: dropZonObj,
                             drag: function(event, ui) {
-                                var parent = dropZonObj; // Assuming dropZonObj is the container
+                                var parent = parentDropZonObj;//dropZonObj; // Assuming dropZonObj is the container
+
                                 var parentWidth = parent.width();
+                                console.log('parentWIDTHEEEEEEEEEEEEEEEE333-----'+parentWidth);
                                 var parentHeight = parent.height();
 
                                 // Calculate the percentages
@@ -923,12 +960,13 @@
                     $('.draggable_field_' + unique_id2)
                         .draggable({
                             preventCollision: true,
-                            containment: dropZonObj,
+                            containment: parentDropZonObj,//dropZonObj,
                             drag: function(event, ui) {
                                 var parent = dropZonObj; // Assuming dropZonObj is the container
                                 var parentWidth = parent.width();
                                 var parentHeight = parent.height();
 
+                                console.log('parentWIDTHEEEEEEEEEEEEEEEE444-----'+parentWidth);
                                 // Calculate the percentages
                                 var leftPercent = (ui.position.left / parentWidth) * 100;
                                 var topPercent = (ui.position.top / parentHeight) * 100;
@@ -1317,7 +1355,7 @@
                 }
             });
 
-            $('.draggable_field_' + field_random_number)
+            $('.draggable_field2_' + field_random_number)
                 .draggable({
                     preventCollision: true,
                     containment: $('.book-dropzone.active')
@@ -1385,7 +1423,7 @@
             }
         });
 
-        $('.draggable_field_' + field_random_number)
+        $('.draggable_field2_' + field_random_number)
             .draggable({
                 preventCollision: true,
                 containment: $('.book-dropzone.active')
