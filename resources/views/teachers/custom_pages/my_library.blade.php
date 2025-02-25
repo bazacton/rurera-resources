@@ -2203,19 +2203,6 @@
                             </div>
                         </div>
                     </li>
-                    <li class="list__item">
-                        <div class="card">
-                            <div class="card__header">
-                            <div class="card__avatar"></div>
-                            </div>
-                            <div class="card__content">
-                            <div class="card__title"></div>
-                            <div class="card__desc"></div>
-                            <div class="card__desc"></div>
-                            <div class="card__desc"></div>
-                            </div>
-                        </div>
-                    </li>
                 </ul>
             </div>
         </div>
