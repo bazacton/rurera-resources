@@ -155,7 +155,7 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
 .book-dropzone .drop-item.active .ui-rotatable-handle,
 .book-dropzone .drop-item.active .object-options a {opacity: 1; visibility: visible; pointer-events: unset; display: inline-flex !important;}
 .book-dropzone .drop-item.spacer-block {border: 0; display: inline-flex; flex-direction: column; justify-content: center; width: auto !important; margin: 0; align-items: center;}
-.book-dropzone .drop-item.spacer-block .field-data > svg {margin: -4px 0 0 0; position: absolute; top: 0; cursor: grab; z-index: 1; left: 0;}
+.book-dropzone .drop-item.spacer-block .field-data > svg {margin: 0; position: absolute; top: 0; cursor: grab; z-index: 1; left: 0;}
 .book-dropzone .drop-item.spacer-block .field-data {border: 0; text-align: center; display: inline-flex; justify-content: center; align-items: center; flex-direction: column; position: relative; margin: 0 0 10px; min-height: 20px;}
 .drop-item.spacer-block .remove {margin-bottom: 8px;}
 .drop-item.spacer-block .remove span {margin: 0 !important;}
