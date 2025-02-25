@@ -473,11 +473,12 @@ jQuery(function ($) {
         },
 
         _refreshLinkPositions: function (linkId) {
-            var scaleFactor = this.options.scaleFactor || 1; // Ensure scale is defined
             var linkData = this.data.links[linkId];
-            var link_position = linkData.position !== undefined ? linkData.position : 'left_right';
+            var link_position = (linkData.position != undefined)? linkData.position : 'left_right';
             var previousOpertor = linkData.fromOperator;
-            var prev_link_position = $('.levels-objects-list li[data-id="' + previousOpertor + '"]').attr('data-link_position') || 'left-in';
+            var prev_link_position = $('.levels-objects-list li[data-id="'+previousOpertor+'"]').attr('data-link_position');
+            prev_link_position = (prev_link_position == null || prev_link_position == undefined)? 'left-in' : prev_link_position
+
 
             var subConnectors = this._getSubConnectors(linkData);
             var fromSubConnector = subConnectors[0];
@@ -486,72 +487,122 @@ jQuery(function ($) {
             var fromPosition = this.getConnectorPosition(linkData.fromOperator, linkData.fromConnector, fromSubConnector);
             var toPosition = this.getConnectorPosition(linkData.toOperator, linkData.toConnector, toSubConnector);
 
-            // Scale the coordinates
-            var fromX = fromPosition.x / scaleFactor;
-            var offsetFromX = fromPosition.width / scaleFactor;
-            var fromY = fromPosition.y / scaleFactor;
+            var fromX = fromPosition.x;
+            var offsetFromX = fromPosition.width;
+            var fromY = fromPosition.y;
 
-            var toX = toPosition.x / scaleFactor;
-            var toY = toPosition.y / scaleFactor;
+            var toX = toPosition.x;
+            var toY = toPosition.y;
 
-            fromY += this.options.linkVerticalDecal / scaleFactor;
-            toY += this.options.linkVerticalDecal / scaleFactor;
+            fromY += this.options.linkVerticalDecal;
+            toY += this.options.linkVerticalDecal;
 
-            var distanceFromArrow = this.options.distanceFromArrow / scaleFactor;
+            var distanceFromArrow = this.options.distanceFromArrow;
+
+            linkData.internal.els.mask.setAttribute("points", fromX + ',' + (fromY - offsetFromX - distanceFromArrow) + ' ' + (fromX + offsetFromX + distanceFromArrow) + ',' + fromY + ' ' + fromX + ',' + (fromY + offsetFromX + distanceFromArrow));
 
             var bezierFromX, bezierToX, bezierIntensity;
 
             if (this.options.verticalConnection) {
-                fromY -= 10 / scaleFactor;
-                toY -= 10 / scaleFactor;
-                bezierFromX = (fromX + offsetFromX + distanceFromArrow - 3) / scaleFactor;
-                bezierToX = (toX + offsetFromX + distanceFromArrow - 3) / scaleFactor;
-                bezierIntensity = Math.min(100 / scaleFactor, Math.max(Math.abs(bezierFromX - bezierToX) / 2, Math.abs(fromY - toY)));
+                fromY = fromY - 10;
+                toY = toY - 10;
+                bezierFromX = (fromX + offsetFromX + distanceFromArrow - 3);
+                bezierToX = (toX + offsetFromX + distanceFromArrow - 3);
 
-                linkData.internal.els.path.setAttribute("d", `M${bezierFromX},${fromY} C${bezierFromX},${fromY + bezierIntensity} ${bezierToX},${toY - bezierIntensity} ${bezierToX},${toY}`);
-                linkData.internal.els.path2.setAttribute("d", `M${bezierFromX},${fromY} C${bezierFromX},${fromY + bezierIntensity} ${bezierToX},${toY - bezierIntensity} ${bezierToX},${toY}`);
-                linkData.internal.els.path3.setAttribute("d", `M${bezierFromX},${fromY} C${bezierFromX},${fromY + bezierIntensity} ${bezierToX},${toY - bezierIntensity} ${bezierToX},${toY}`);
-
-                linkData.internal.els.rect.setAttribute("x", (fromX - 1 + this.options.linkWidth / 2) / scaleFactor);
+                bezierIntensity = Math.min(100, Math.max(Math.abs(bezierFromX - bezierToX) / 2, Math.abs(fromY - toY)));
+                linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) + ' C' + bezierFromX + ',' + (fromY + bezierIntensity) + ' ' + bezierToX + ',' + (toY - bezierIntensity) + ' ' + bezierToX + ',' + toY);
+                linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) + ' C' + bezierFromX + ',' + (fromY + bezierIntensity) + ' ' + bezierToX + ',' + (toY - bezierIntensity) + ' ' + bezierToX + ',' + toY);
+                linkData.internal.els.path3.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) + ' C' + bezierFromX + ',' + (fromY + bezierIntensity) + ' ' + bezierToX + ',' + (toY - bezierIntensity) + ' ' + bezierToX + ',' + toY);
+                linkData.internal.els.rect.setAttribute("x", fromX - 1 + this.options.linkWidth / 2);
             } else {
-                if (link_position == 'right_left') {
-                    bezierFromX = fromX - 1;
-                    bezierToX = toX + offsetFromX + distanceFromArrow;
-                    bezierIntensity = Math.min(100 / scaleFactor, Math.max(Math.abs(bezierFromX - bezierToX) / 2, Math.abs(fromY - toY)));
 
-                    if (prev_link_position == 'right-in') {
-                        linkData.internal.els.path.setAttribute("d", `M${bezierFromX},${fromY} C${fromX - bezierIntensity},${fromY} ${(toX + offsetFromX + distanceFromArrow + bezierIntensity)},${toY} ${bezierToX},${toY}`);
-                        linkData.internal.els.path2.setAttribute("d", `M${bezierFromX},${fromY} C${fromX - bezierIntensity},${fromY} ${(toX + offsetFromX + distanceFromArrow + bezierIntensity)},${toY} ${bezierToX},${toY}`);
-                        linkData.internal.els.path3.setAttribute("d", `M${bezierFromX},${fromY} C${fromX - bezierIntensity},${fromY} ${(toX + offsetFromX + distanceFromArrow + bezierIntensity)},${toY} ${bezierToX},${toY}`);
-                    } else {
-                        linkData.internal.els.path.setAttribute("d", `M${bezierFromX},${fromY} C${(fromX + offsetFromX + distanceFromArrow + bezierIntensity)},${fromY} ${(toX + offsetFromX + distanceFromArrow + bezierIntensity)},${toY} ${bezierToX},${toY}`);
-                        linkData.internal.els.path2.setAttribute("d", `M${bezierFromX},${fromY} C${(fromX + offsetFromX + distanceFromArrow + bezierIntensity)},${fromY} ${(toX + offsetFromX + distanceFromArrow + bezierIntensity)},${toY} ${bezierToX},${toY}`);
-                        linkData.internal.els.path3.setAttribute("d", `M${bezierFromX},${fromY} C${(fromX + offsetFromX + distanceFromArrow + bezierIntensity)},${fromY} ${(toX + offsetFromX + distanceFromArrow + bezierIntensity)},${toY} ${bezierToX},${toY}`);
+                if(link_position == 'right_left'){
+                // Left to Right Connection
+                bezierFromX = fromX - 1;
+                bezierToX = toX + offsetFromX + distanceFromArrow;
+
+                bezierIntensity = Math.min(100, Math.max(Math.abs(bezierFromX - bezierToX) / 2, Math.abs(fromY - toY)));
+
+                if(prev_link_position == 'right-in'){
+
+                    linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                        ' C' + (fromX - bezierIntensity) + ',' + fromY +
+                        ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
+                        ' ' + bezierToX + ',' + toY);
+                    linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                        ' C' + (fromX - bezierIntensity) + ',' + fromY +
+                        ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
+                        ' ' + bezierToX + ',' + toY);
+                    linkData.internal.els.path3.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                        ' C' + (fromX - bezierIntensity) + ',' + fromY +
+                        ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
+                        ' ' + bezierToX + ',' + toY);
+                }else {
+                    linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + fromY +
+                        ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
+                        ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
+                        ' ' + bezierToX + ',' + toY);
+                    linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + fromY +
+                        ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
+                        ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
+                        ' ' + bezierToX + ',' + toY);
+                    linkData.internal.els.path3.setAttribute("d", 'M' + bezierFromX + ',' + fromY +
+                        ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
+                        ' ' + (toX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + toY +
+                        ' ' + bezierToX + ',' + toY);
+
+                }
+                /*linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                    ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
+                                      ' ' + (toX - bezierIntensity) + ',' + toY + ' ' + bezierToX + ',' + toY);*/
+
+
+
+                linkData.internal.els.rect.setAttribute("x", fromX);
+                }else{
+                    bezierFromX = (fromX + offsetFromX + distanceFromArrow);
+                    bezierToX = toX + 1;
+                    bezierIntensity = Math.min(100, Math.max(Math.abs(bezierFromX - bezierToX) / 2, Math.abs(fromY - toY)));
+                    console.log('linkIdlinkIdlinkIdlinkId');
+                    console.log(prev_link_position);
+                    if(prev_link_position == 'right-in'){
+
+                        linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                            ' C' + (fromX - bezierIntensity) + ',' + fromY +
+                            ' ' + (bezierToX - bezierIntensity) + ',' + toY +
+                            ' ' + bezierToX + ',' + toY);
+                        linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                            ' C' + (fromX - bezierIntensity) + ',' + fromY +
+                            ' ' + (bezierToX - bezierIntensity) + ',' + toY +
+                            ' ' + bezierToX + ',' + toY);
+                        linkData.internal.els.path3.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                            ' C' + (fromX - bezierIntensity) + ',' + fromY +
+                            ' ' + (bezierToX - bezierIntensity) + ',' + toY +
+                            ' ' + bezierToX + ',' + toY);
+                    }else {
+                        linkData.internal.els.path.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                            ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
+                            ' ' + (toX - bezierIntensity) + ',' + toY + ' ' + bezierToX + ',' + toY);
+                        linkData.internal.els.path2.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                            ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
+                            ' ' + (toX - bezierIntensity) + ',' + toY + ' ' + bezierToX + ',' + toY);
+                        linkData.internal.els.path3.setAttribute("d", 'M' + bezierFromX + ',' + (fromY) +
+                            ' C' + (fromX + offsetFromX + distanceFromArrow + bezierIntensity) + ',' + fromY +
+                            ' ' + (toX - bezierIntensity) + ',' + toY + ' ' + bezierToX + ',' + toY);
                     }
 
-                    linkData.internal.els.rect.setAttribute("x", fromX / scaleFactor);
-                } else {
-                    bezierFromX = (fromX + offsetFromX + distanceFromArrow) / scaleFactor;
-                    bezierToX = toX + 1 / scaleFactor;
-                    bezierIntensity = Math.min(100 / scaleFactor, Math.max(Math.abs(bezierFromX - bezierToX) / 2, Math.abs(fromY - toY)));
 
-                    if (prev_link_position == 'right-in') {
-                        linkData.internal.els.path.setAttribute("d", `M${bezierFromX},${fromY} C${(fromX - bezierIntensity)},${fromY} ${(bezierToX - bezierIntensity)},${toY} ${bezierToX},${toY}`);
-                        linkData.internal.els.path2.setAttribute("d", `M${bezierFromX},${fromY} C${(fromX - bezierIntensity)},${fromY} ${(bezierToX - bezierIntensity)},${toY} ${bezierToX},${toY}`);
-                        linkData.internal.els.path3.setAttribute("d", `M${bezierFromX},${fromY} C${(fromX - bezierIntensity)},${fromY} ${(bezierToX - bezierIntensity)},${toY} ${bezierToX},${toY}`);
-                    } else {
-                        linkData.internal.els.path.setAttribute("d", `M${bezierFromX},${fromY} C${(fromX + offsetFromX + distanceFromArrow + bezierIntensity)},${fromY} ${(toX - bezierIntensity)},${toY} ${bezierToX},${toY}`);
-                    }
-
-                    linkData.internal.els.rect.setAttribute("x", fromX / scaleFactor);
+                    linkData.internal.els.rect.setAttribute("x", fromX);
                 }
             }
 
-            linkData.internal.els.rect.setAttribute("y", (fromY - this.options.linkWidth / 2) / scaleFactor);
-            linkData.internal.els.rect.setAttribute("width", (offsetFromX + distanceFromArrow + 1) / scaleFactor);
-            linkData.internal.els.rect.setAttribute("height", this.options.linkWidth / scaleFactor);
-        },
 
+
+            linkData.internal.els.rect.setAttribute("y", fromY - this.options.linkWidth / 2);
+            linkData.internal.els.rect.setAttribute("width", offsetFromX + distanceFromArrow + 1);
+            linkData.internal.els.rect.setAttribute("height", this.options.linkWidth);
+
+        },
 
         getOperatorCompleteData: function (operatorData) {
             if (typeof operatorData.internal == 'undefined') {
