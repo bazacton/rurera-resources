@@ -5696,7 +5696,8 @@ button.print-download-btn {
     display: flex;
     width: 100%;
     justify-content: center;
-    grid-gap: 2rem;
+    flex-direction: column;
+    grid-gap: 1rem;
     list-style: none;
     flex-wrap: wrap;
   }
