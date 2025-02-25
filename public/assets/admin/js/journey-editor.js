@@ -130,10 +130,10 @@ $(document).on('dblclick', '.flowchart-links-layer g path', function (e) {
             </div>
         </div>
         </li>`;
-    this_element.after(layer_html);
+    //this_element.after(layer_html);
     $('.curriculum-item-data.active .editor-objects-list-all li[data-id="'+data_id+'"]').after(layer_html);
+    $('.curriculum-item-data.active .levels-objects-list li[data-id="'+data_id+'"]').after(layer_html);
 
-    //$(".levels-objects-list").append(layer_html);
 
     $(".book-dropzone.active").append($el);
 
