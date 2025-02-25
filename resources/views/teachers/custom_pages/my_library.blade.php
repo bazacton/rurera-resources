@@ -2163,7 +2163,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <ul class="card__list">
+                <!-- <ul class="card__list">
                     <li class="list__item">
                         <div class="card">
                             <div class="card__header">
@@ -2203,7 +2203,24 @@
                             </div>
                         </div>
                     </li>
-                </ul>
+                </ul> -->
+                <div class="loading-container">
+                    <div class="loading-item">
+                        <div class="loading-image"></div>
+                        <div class="loading-text"></div>
+                        <div class="loading-subtext"></div>
+                    </div>
+                    <div class="loading-item">
+                        <div class="loading-image"></div>
+                        <div class="loading-text"></div>
+                        <div class="loading-subtext"></div>
+                    </div>
+                    <div class="loading-item">
+                        <div class="loading-image"></div>
+                        <div class="loading-text"></div>
+                        <div class="loading-subtext"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -2225,6 +2242,18 @@ $(document).ready(function () {
   $(".document-modal").on("shown.bs.modal", function () {
     $scrollableDiv.getNiceScroll().resize();
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+        document.querySelector(".loading-container").innerHTML = `
+            <div class="content">
+                <h2>Loaded Content</h2>
+                <p>This is the actual content after the loading effect.</p>
+            </div>
+        `;
+    }, 3000); // Simulate a 3-second loading time
+});
+
 
 });
 </script>
