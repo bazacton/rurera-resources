@@ -5822,7 +5822,7 @@ button.print-download-btn {
 .search-filters.skelton-hide {
     display: inline-flex;
 }
-.admin_teacher_role .hide-text::before {
+.admin_teacher_role .skelton-hide::before {
     content: "";
     position: absolute;
     left: 0%;
