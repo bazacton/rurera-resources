@@ -2207,18 +2207,24 @@
                 <div class="loading-container">
                     <div class="loading-item">
                         <div class="loading-image"></div>
-                        <div class="loading-text"></div>
-                        <div class="loading-subtext"></div>
+                        <div class="item-content">
+                            <div class="loading-text"></div>
+                            <div class="loading-subtext"></div>
+                        </div>
                     </div>
                     <div class="loading-item">
                         <div class="loading-image"></div>
-                        <div class="loading-text"></div>
-                        <div class="loading-subtext"></div>
+                        <div class="item-content">
+                            <div class="loading-text"></div>
+                            <div class="loading-subtext"></div>
+                        </div>
                     </div>
                     <div class="loading-item">
                         <div class="loading-image"></div>
-                        <div class="loading-text"></div>
-                        <div class="loading-subtext"></div>
+                        <div class="item-content">
+                            <div class="loading-text"></div>
+                            <div class="loading-subtext"></div>
+                        </div>
                     </div>
                 </div>
             </div>
