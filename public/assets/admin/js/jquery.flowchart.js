@@ -448,7 +448,11 @@ jQuery(function ($) {
 
 
 
-            
+            var shape_rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+            shape_rect.setAttribute("stroke", "none");
+            shape_rect.setAttribute("mask", "url(#" + maskId + ")");
+            group.appendChild(shape_rect);
+            linkData.internal.els.rect = shape_rect;
 
             this._refreshLinkPositions(linkId);
             this.uncolorizeLink(linkId);
