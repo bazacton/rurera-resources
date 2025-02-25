@@ -149,7 +149,7 @@ body .editor-objects-list li label {margin: 0; line-height: normal; outline: non
 .book-dropzone .ui-rotatable-handle:after {content: ""; position: absolute; right: -100%; top: 50%; transform: translateY(-50%); width: 25px; border-top: 3px dotted #ddd; margin-right: -5px;}
 body .flowchart-operator {border: 0;}
 body .ui-rotatable-handle::before {font-size: 10px; content: "\f0e2"; font-family: "Font Awesome 5 Free"; color: #333;}
-.book-dropzone .object-options a {position: absolute; right: -5px; bottom: -5px; height: 20px; width: 20px; text-align: center; display: inline-flex; justify-content: center; align-items: center; border-radius: 100%; font-size: 12px; color: #333; text-decoration: none; pointer-events: none; opacity: 0; visibility: hidden; text-indent: 0;}
+.book-dropzone .object-options a {display: inline-flex; justify-content: center; align-items: center; text-decoration: none; pointer-events: none; opacity: 0; visibility: hidden; text-indent: 0;}
 .book-dropzone .object-options a span {margin: 0 !important; vertical-align: middle; font-size: 12px;}
 body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1px solid #ddd; border-radius: 3px; font-size: 12px; margin: 0 0 0 8px; padding: 8px 10px;}
 .book-dropzone .drop-item.active .ui-rotatable-handle,
@@ -164,14 +164,15 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
 svg.flowchart-links-layer {bottom: 0; top: auto;}
 body .flowchart-operator-connector-arrow {top: -20px;}
 body .flowchart-operator-connector-small-arrow {top: -15px;}
-.book-dropzone .drop-item.field_settings a.remove {opacity: 0; visibility: hidden; color: #ff0000; margin: 0;}
+.book-dropzone .drop-item.field_settings a.remove {opacity: 0; visibility: hidden; color: #ff0000; margin: 0; position: initial; height: auto; width: auto;}
 .book-dropzone .drop-item.field_settings a.remove span {font-size: 10px;}
 .book-dropzone .drop-item.field_settings.active a.remove {opacity: 1; visibility: visible;}
-.book-dropzone .object-options a.resize-handler {right: -4px; bottom: -4px; background-color: #ddd; background-image: none; height: 12px; width: 12px;}
-.book-dropzone .object-options a.resize-handler .fas {display: none;}
+.book-dropzone a.resize-handler {right: -4px; bottom: -4px; background-color: #ddd; background-image: none; height: 12px; width: 12px; border-radius: 100%;}
+.book-dropzone .drop-item.active a.resize-handler {opacity: 1; visibility: visible;}
+.book-dropzone a.resize-handler .fas {display: none;}
 .object-options {
     position: absolute;
-    top: -22px;
+    top: -30px;
     display: inline-flex;
     align-items: center;
     gap: 5px 8px;
@@ -179,6 +180,12 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
     background-color: #fff;
     padding: 6px 10px;
     border-radius: 15px;
+    opacity: 0;
+    visibility: hidden;
+}
+.book-dropzone .drop-item.active .object-options {
+    opacity: 1;
+    visibility: visible;
 }
 .change-position span {
     font-size: 10px;
