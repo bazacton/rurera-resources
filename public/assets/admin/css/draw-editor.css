@@ -367,6 +367,7 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
     font-size: 13px;
     font-weight: 600;
     color: var(--blue);
+    text-decoration: none;
 }
 .settings-controls-block .setting-controls i {
     margin-right: 2px;
