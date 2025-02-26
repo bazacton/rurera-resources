@@ -139,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible alert fade show">
+                <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible alert fade show skelton-hide">
                     <button type="button" class="close" data-dismiss="quiz-ai-tags" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -159,7 +159,7 @@
                 <div class="quiz-setup-listings">
                     <div class="row">
                         <div class="col-12 col-lg-12 col-md-12">
-                            <div class="quiz-layout-edit-options">
+                            <div class="quiz-layout-edit-options skelton-hide">
                                 <div class="edit-options-right">
                                     <div class="edit-options-controls">
                                         <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up" data-trigger="hover"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
@@ -225,7 +225,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="question-layout-holder mb-15 bg-white panel-border rounded-sm p-25">
+                            <div class="question-layout-holder mb-15 bg-white panel-border rounded-sm p-25 skelton-hide">
                                 <div class="question-layout-block">
                                     <form class="question-fields" action="javascript:;" data-question_id="10180">
                                     <div class="left-content has-bg">
@@ -359,12 +359,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="listing-dropdown">
+                            <div class="listing-dropdown skelton-hide">
                                 <div class="btn-holder">
                                     <button class="" data-toggle="modal" data-target="#templatesleModal"><i class="fas fa-plus"></i></button>
                                 </div>
                             </div>
-                            <div class="quiz-layout-edit-options">
+                            <div class="quiz-layout-edit-options skelton-hide">
                                 <div class="edit-options-right">
                                 <div class="edit-options-controls">
                                         <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up" data-trigger="hover"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
@@ -428,7 +428,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mb-35 bg-white panel-border rounded-sm p-25">
+                            <div class="mb-35 bg-white panel-border rounded-sm p-25 skelton-hide">
                                 <div class="question-layout-block">
                                     <form class="question-fields" action="javascript:;" data-question_id="10180">
                                         <div class="left-content has-bg">
@@ -578,7 +578,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="quiz-layout-edit-options">
+                            <div class="quiz-layout-edit-options skelton-hide">
                                 <div class="edit-options-right">
                                 <div class="edit-options-controls">
                                         <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up" data-trigger="hover"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
@@ -642,7 +642,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mb-15 bg-white panel-border rounded-sm p-25">
+                            <div class="mb-15 bg-white panel-border rounded-sm p-25 skelton-hide">
                                 <div class="question-layout-block">
                                     <form class="question-fields" action="javascript:;" data-question_id="10180">
                                         <div class="left-content has-bg">
