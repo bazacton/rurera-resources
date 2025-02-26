@@ -5803,11 +5803,11 @@ button.print-download-btn {
 } */
 
 .admin_teacher_role .skelton-hide {
-    background: #e2e2e2;
+    background: #e2e2e2 !important;
     color: transparent;
     position: relative;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 6px !important;
     margin-bottom: 10px;
 }
 .admin_teacher_role .skelton-hide:has(tr) {
