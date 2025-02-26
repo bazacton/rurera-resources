@@ -103,7 +103,7 @@
             </div>
         </div>
         <div class="col-12 col-md-12">
-            <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+            <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills skelton-hide" id="assignment_tabs" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="topics-tab" href="/admin/assignments">
                         <span class="tab-title">All assignments</span>
@@ -132,7 +132,7 @@
             </ul>
         </div>
         <div class="col-12">
-            <div class="assignments-table">
+            <div class="assignments-table skelton-hide">
                 <div class="card">
                     <div class="card-header bg-light">
                         <h6 class="mb-0"><span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span> Issue in Testing</h6>
