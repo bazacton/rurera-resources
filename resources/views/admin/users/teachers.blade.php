@@ -73,7 +73,7 @@
                             <span class="designation-lable">Year 3</span>
                         </div>
                     </div>
-                    <div class="teacher-list-controls">
+                    <div class="teacher-list-controls skelton-hide">
                         <button type="button" class="edit-btn"><img src="/assets/default/svgs/edit-pencil.svg" alt=""></button>
                     </div>
 
@@ -97,10 +97,10 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                 <div class="card card-statistic-1">
-                    <div class="card-icon bg-primary">
+                    <div class="card-icon bg-primary skelton-hide">
                         <i class="fas fa-users"></i>
                     </div>
-                    <div class="card-wrap">
+                    <div class="card-wrap skelton-hide">
                         <div class="card-header">
                             <h4>Total Teachers</h4>
                         </div>
@@ -116,7 +116,7 @@
             <div class="card-body">
                 <form method="get" class="mb-0">
 
-                    <div class="row">
+                    <div class="row skelton-hide">
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.search') }}</label>
@@ -151,7 +151,7 @@
         <div class="card">
             <div class="card-header">
                 @can('admin_users_create')
-                    <div class="text-right">
+                    <div class="text-right skelton-hide">
                         <a href="/admin/users/create" class="btn btn-primary">New Teacher</a>
                     </div>
                 @endcan
@@ -164,7 +164,7 @@
             <div class="card-body">
                 <div class="table-responsive text-center">
                     <table class="table table-striped font-14">
-                        <tr>
+                        <tr class="skelton-hide">
                             <th>ID</th>
                             <th class="text-left">{{ trans('admin/main.name') }}</th>
                             <th>{{ trans('admin/main.register_date') }}</th>
@@ -175,7 +175,7 @@
                         @if($users->count() > 0)
                         @foreach($users as $user)
 
-                            <tr>
+                            <tr class="skelton-hide">
                                 <td>{{ $user->id }}</td>
                                 <td class="text-left">
                                     <div class="d-flex align-items-center">
@@ -227,9 +227,9 @@
                             </tr>
                         @endforeach
                         @else
-                            <tr>
-                            <td colspan="5">No Records Found</td>
-                        </tr>
+                            <tr class="skelton-hide">
+                                <td colspan="5">No Records Found</td>
+                            </tr>
                         @endif
                     </table>
                 </div>
