@@ -5849,7 +5849,9 @@ button.print-download-btn {
       left: 100%;
     }
 }
-
+.quiz-data-table:has(.skelton-hide) {
+    border-color: transparent !important;
+}
 /* Skeleton Loading Style End */
 
 /* @media screen and (min-width: 1024px) and (max-width: 1800px) {
