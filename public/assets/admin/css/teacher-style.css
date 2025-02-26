@@ -5846,13 +5846,13 @@ button.print-download-btn {
 
 /* Skeleton Loading Style End */
 
-@media screen and (min-width: 1024px) and (max-width: 1800px) {
+/* @media screen and (min-width: 1024px) and (max-width: 1800px) {
     .admin_teacher_role:has(.main-sidebar) .main-content {
         padding-left: 280px;
         max-width: 100%;
         padding-top: 100px;
     }
-}
+} */
 
 @media screen and (max-width: 992px) {
 .table-sm table thead {
