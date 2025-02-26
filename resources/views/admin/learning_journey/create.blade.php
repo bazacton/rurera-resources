@@ -948,19 +948,23 @@
 					$(".jounry-stages-lis").find("li.accordion-row").last().find(".stage-accordion").click();
 
 					layer_html = `<li data-id="${unique_id}" data-field_postition="2" class="stage_start"><label contenteditable="true">Start</label>
-						</li>`;
+						<div class="actions-menu">
+                                    <i class="fa fa-eye show_hide_start_layers show" data-item_type="stage_start"></i>
+                                </div></li>`;
 					layer_html += `<li data-id="${unique_id2}" data-field_postition="2" class="stage_end"><label contenteditable="true">End</label>
-						</li>`;
+						<div class="actions-menu">
+                                    <i class="fa fa-eye show_hide_start_layers show" data-item_type="stage_end"></i>
+                                </div></li>`;
 
 
 
 
 					$el = $('<div></div>');
 
-					$el.append($('<div id="' + unique_id + '" style="width:20%;left:0%; top:0%;" data-item_title="Start" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id + '" data-id="' + unique_id + '" data-item_path="set1/start_stop.svg" data-field_type="stage_start" data-trigger_class="infobox-stage_start-fields" data-item_type="stage_start" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg"> <g transform="translate(26 26) scale(0.5)" stroke="#7c7d7e" stroke-width="3.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"> <circle fill="#FFF" cx="50" cy="50" r="50"/> <circle fill="#7c7d7e" cx="51" cy="50" r="20"/> </g> </svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+					$el.append($('<div id="' + unique_id + '" style="width:20%;left:10%; top:10%;" data-item_title="Start" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id + '" data-id="' + unique_id + '" data-item_path="set1/start_stop.svg" data-field_type="stage_start" data-trigger_class="infobox-stage_start-fields" data-item_type="stage_start" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg"> <g transform="translate(26 26) scale(0.5)" stroke="#7c7d7e" stroke-width="3.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"> <circle fill="#FFF" cx="50" cy="50" r="50"/> <circle fill="#7c7d7e" cx="51" cy="50" r="20"/> </g> </svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
 					$el.append('</div>');
 
-					$el.append($('<div id="' + unique_id2 + '" style="width:20%;left:50%; top:0%;" data-item_title="End" data-unique_id="' + unique_id2 + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id2 + '" data-id="' + unique_id2 + '" data-item_path="set1/start_stop.svg" data-field_type="stage_end" data-trigger_class="infobox-stage_end-fields" data-item_type="stage_end" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg"> <g transform="translate(26 26) scale(0.5)" stroke="#7c7d7e" stroke-width="3.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"> <circle fill="#FFF" cx="50" cy="50" r="50"/> <circle fill="#7c7d7e" cx="51" cy="50" r="20"/> </g> </svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+					$el.append($('<div id="' + unique_id2 + '" style="width:20%;left:20%; top:10%;" data-item_title="End" data-unique_id="' + unique_id2 + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id2 + '" data-id="' + unique_id2 + '" data-item_path="set1/start_stop.svg" data-field_type="stage_end" data-trigger_class="infobox-stage_end-fields" data-item_type="stage_end" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg"> <g transform="translate(26 26) scale(0.5)" stroke="#7c7d7e" stroke-width="3.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"> <circle fill="#FFF" cx="50" cy="50" r="50"/> <circle fill="#7c7d7e" cx="51" cy="50" r="20"/> </g> </svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
 					$el.append('</div>');
 					$(".book-dropzone.active").append($el);
 
@@ -1026,7 +1030,7 @@
                         .off('wheel');
 
 					$(".book-dropzone.active").closest('.editor-zone').find('.levels-objects-list').prepend(layer_html);
-                    $(".book-dropzone.active").closest('.editor-zone').find('.editor-objects-list-all').prepend(layer_html);
+                    //$(".book-dropzone.active").closest('.editor-zone').find('.editor-objects-list-all').prepend(layer_html);
 
 					$(".editor-objects-list-all").sortable({
 						handle: ".fa-sort", // Make sure your icon has this class
@@ -1500,6 +1504,33 @@
 
         var data_target = $(this).attr('data-target');
         $('.nav-link[data-target="'+data_target+'"]').click();
+    });
+
+    $(document).on('click', '.show_hide_start_layers', function () {
+        var is_showing = $(this).hasClass('show');
+        var item_type = $(this).attr('data-item_type');
+
+        var current_value = true;
+        if(is_showing == true){
+            current_value = false;
+            $(this).removeClass('show');
+            $(this).removeClass('fa-eye');
+            $(this).addClass('fa-eye-slash');
+        }else{
+            $(this).addClass('show');
+            $(this).addClass('fa-eye');
+            $(this).removeClass('fa-eye-slash');
+        }
+
+        $(this).closest('.editor-zone').find('.levels-objects-list li.'+item_type).removeClass('disable-link');
+        $(this).closest('.editor-zone').find('.path-initializer[data-item_type="'+item_type+'"]').removeClass('rurera-hide');
+
+        if(current_value == false){
+            $(this).closest('.editor-zone').find('.levels-objects-list li.'+item_type).addClass('disable-link');
+            $(this).closest('.editor-zone').find('.path-initializer[data-item_type="'+item_type+'"]').addClass('rurera-hide');
+
+        }
+        levels_sorting_render();
     });
 
     $(document).on('change', '.start_end_layers', function () {
