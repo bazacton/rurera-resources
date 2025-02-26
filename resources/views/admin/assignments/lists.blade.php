@@ -331,7 +331,7 @@
                 <div class="card">
                     <div class="card-header">
                         @can('admin_assignments_create')
-                        <div class="text-right">
+                        <div class="text-right skelton-hide">
                             <a href="{{ getAdminPanelUrl() }}/assignments/create" class="btn btn-primary ml-2">Create Assignment</a>
                         </div>
                         @endcan
@@ -340,7 +340,7 @@
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
-                                <tr>
+                                <tr class="skelton-hide">
                                     <th class="text-left">{{ trans('admin/main.title') }}</th>
                                     <th class="text-center">Type</th>
                                     <th class="text-center">Tables</th>
@@ -353,7 +353,7 @@
                                 </tr>
 
                                 @foreach($assignments as $assignmentObj)
-                                <tr>
+                                <tr class="skelton-hide">
                                     <td>
                                         <span>{{ $assignmentObj->title }}</span>
                                     </td>
