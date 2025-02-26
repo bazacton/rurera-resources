@@ -5,7 +5,7 @@
 @endpush
 
 @section('content')
-<section class="section">
+<section class="section skeleton">
     <div class="section-header">
         <h1>Classes</h1>
         @can('admin_classes_create')
@@ -433,6 +433,19 @@
 
     });
 </script>
+<script>
+    /*Skelton Loading Fungtion Start*/
+    $(document).ready(function () {
+        const $el = document.querySelector(".section");
 
+        setTimeout(() => {
+        $el.classList.remove("skeleton");
+        $el
+            .querySelectorAll(".skelton-hide")
+            .forEach((el) => el.classList.remove("skelton-hide"));
+        }, 3000);
+    });
+    /*Skelton Loading Fungtion End*/
+</script>
 
 @endpush
