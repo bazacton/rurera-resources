@@ -138,7 +138,6 @@ body .editor-zone:has(.editor-controls-holder) {
     border-radius: 5px;
     /*width: 760px;*/
     height:100%;
-    width:1070px;
     box-sizing: border-box;
     background-size: cover !important;
     overflow: hidden;
@@ -148,14 +147,13 @@ body .editor-zone:has(.editor-controls-holder) {
 }
 body .editor-controls-holder {
     border: 1px solid #ccc;
-    background-color: #fff;
+    background-color: inherit;
     border-radius: 0;
     height: 100%;
     padding: 0;
     overflow: visible;
     min-width: 500px;
     max-width: 500px;
-    position: absolute; z-index: 9999;
 }
 body .editor-parent-nav {
     padding: 15px;
