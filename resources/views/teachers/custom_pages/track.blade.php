@@ -63,7 +63,7 @@
                     </div>
                     <div class="quiz-data-table bg-white panel-border table-sm">
                         <table>
-                            <thead>
+                            <thead class="skelton-hide">
                                 <tr>
                                     <th>
                                         <div class="checkbox-field">
@@ -79,7 +79,7 @@
                                     <th class="text-center">Actions</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="skelton-hide">
                                 <tr>
                                     <td>
                                         <div class="checkbox-field">
