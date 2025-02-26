@@ -73,7 +73,7 @@
                             <span class="designation-lable">Year 3</span>
                         </div>
                     </div>
-                    <div class="teacher-list-controls">
+                    <div class="teacher-list-controls skelton-hide">
                         <button type="button" class="edit-btn"><img src="/assets/default/svgs/edit-pencil.svg" alt=""></button>
                     </div>
 
