@@ -17,6 +17,8 @@
 <style type="text/css">
 
 
+    
+
     span.dropzone-placeholder {
         display: block;
         width: 100%;
@@ -1534,7 +1536,7 @@
                 // Apply the plugin on a standard, empty div...
                 $flowchart.flowchart({
                     data: defaultFlowchartData,
-                    defaultSelectedLinkColor: '#000055',
+                    defaultSelectedLinkColor: 'none',
                     grid: 10,
                     multipleLinksOnInput: true,
                     multipleLinksOnOutput: true
