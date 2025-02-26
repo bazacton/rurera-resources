@@ -12,7 +12,7 @@
 <section class="section">
    
 
-    <div class="section-body">
+    <div class="section-body skeleton">
     <div class="row">
             <div class="col-12 col-md-9 col-lg-9 mx-auto">
 
@@ -3225,5 +3225,19 @@ $(document).ready(function () {
         });
     });
 </script> -->
+<script>
+    /*Skelton Loading Fungtion Start*/
+    $(document).ready(function () {
+        const $el = document.querySelector(".section-body");
+
+        setTimeout(() => {
+        $el.classList.remove("skeleton");
+        $el
+            .querySelectorAll(".skelton-hide")
+            .forEach((el) => el.classList.remove("skelton-hide"));
+        }, 3000);
+    });
+    /*Skelton Loading Fungtion End*/
+</script>
 
 @endpush
