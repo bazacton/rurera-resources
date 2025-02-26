@@ -308,14 +308,14 @@
                     </div>
 
                     <div class="card-body">
-                        <div class="card-title-holder">
+                        <div class="card-title-holder skelton-hide">
                             <h5 class="card-title">Grade 6</h5>
                         </div>
-                        <div class="card-description-holder">
+                        <div class="card-description-holder skelton-hide">
                             <p class="grade-text">A</p>
                             <p class="card-students">26 Students</p>
                         </div>
-                        <div class="progress-holder">
+                        <div class="progress-holder skelton-hide">
                             <p class="mb-1">1 completed activity</p>
                             <div class="progress" style="height: 20px;">
                                 <div
@@ -330,7 +330,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between mt-3 bottom-controls">
+                        <div class="d-flex justify-content-between mt-3 bottom-controls skelton-hide">
                             <button class="btn btn-light btn-sm user-btn">
                                 <img src="/assets/default/img/class-user-icon.png" alt="">
                             </button>
