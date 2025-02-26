@@ -23,7 +23,7 @@
     </div>
     <div class="row">
        <div class="col-12 col-md-12">
-            <div class="nav-area">
+            <div class="nav-area skelton-hide">
                 <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="topics-tab" href="/admin/classes">
