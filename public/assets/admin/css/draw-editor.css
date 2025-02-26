@@ -1,9 +1,3 @@
-.admin_role button {
-    outline: none !important;
-}
-.panel-border {
-    border: 1px solid #ddd;
-}
 .drag-controls {position: absolute; right: -40px; top: 30px; height: calc(100% - 120px); border: 1px solid #cccccc; border-radius: 0 8px 8px 0 / 0 50px 50px 0; padding-top: 15px; background-color: #fff; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
 .open .drag-controls {right: 1px; opacity: 1; visibility: visible;}
 .controls-box {height: 100%; width: 100%;}
@@ -21,7 +15,7 @@
 .open-controls-btn {position: absolute; right: 4px; top: -32px; height: 25px; width: 25px; background-color: #ccc; border-radius: 100%;}
 /* Learning Journey Sets Edit Page Accordions Style Start */
 .learning_journey_sets .curriculum-item-data {height: auto !important;}
-.draggable-content-lists {display: flex; align-items: center; padding-left: 1px; flex-wrap: wrap; margin-right: 2px;}
+.draggable-content-lists {display: flex; align-items: center; padding-left: 1px;}
 .draggable-content-lists li {border: 1px solid #ddd; padding: 12px 15px !important; display: inline-flex; flex-direction: column; border-radius: 0 !important; margin: 0 0 -1px -1px !important; position: relative;}
 .draggable-content-lists li:after {content: ""; position: absolute; left: 0; bottom: 0; height: 2px; width: 100%; background-color: cadetblue; opacity: 0; visibility: hidden;}
 .draggable-content-lists li.active:after {opacity: 1; visibility: visible;}
@@ -37,14 +31,23 @@
 .draggable-content-lists li.active .chapter-icon svg,
 .draggable-content-lists li.active .feather-chevron-up,
 .draggable-content-lists li.active .cursor-pointer {color: cadetblue; stroke: cadetblue;}
-.stage-accordion .cursor-pointer {line-height: normal; font-size: 14px; color: #999; font-weight: 600 !important; width: 10ch; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.stage-accordion .cursor-pointer {
+    line-height: normal;
+    font-size: 14px;
+    color: #999;
+    font-weight: 600 !important;
+    width: 10ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .draggable-content-lists li .btn {padding: 4px; margin: 0; background-color: rgba(0, 0, 0, 0.05); width: 20px; height: 20px;}
 .draggable-content-lists li .btn:hover {background-color: rgba(0, 0, 0, 0.05) !important;}
 .draggable-content-lists li .btn svg {color: #999; height: 12px; width: 12px; margin: 0 !important;}
 .draggable-content-lists li .feather-move,
 .accordion-row .collapse-chevron-icon.feather-chevron-up {margin-right: 0 !important; stroke: #999; background-color: rgba(0, 0, 0, 0.05); padding: 2px 4px; width: 20px; height: 20px; border-radius: 3px; cursor: pointer;}
 .draggable-content-lists li.active .btn,
-.draggable-content-lists li.active .feather-move, 
+.draggable-content-lists li.active .feather-move,
 .draggable-content-lists li.active .feather-chevron-up {background-color: #dce9fd;}
 .draggable-content-lists li > .d-flex .d-flex:has(.btn) {padding-left: 35px; padding-top: 2px; gap: 5px;}
 /* Learning Journey Sets Edit Page Accordions Style End */
@@ -59,11 +62,11 @@
 .book-pages-navs .generate {margin-right: auto;}
 body .editor-zone:has(.editor-controls-holder),
 body .editor-zone:has(.field-options.hide) {padding-left: 0;}
-body .editor-zone:has(.editor-controls-holder) {display: flex; align-items: flex-start; justify-content: center; gap: 25px; padding:0;}
+body .editor-zone:has(.editor-controls-holder) {/*display: flex;*/ align-items: flex-start; justify-content: center; gap: 25px; padding:0;}
 body .editor-zone:has(.field-options) {padding-left:0px;}
-.book-dropzone {position: relative; border: 1px solid #ccc; border-radius: 5px; width: 770px; height:100%; box-sizing: border-box; background-size: cover !important; overflow: hidden; display: inline-block; vertical-align: top;}
+.book-dropzone {position: relative; border: 1px solid #ccc; border-radius: 5px; width: 1070px; height:100%; box-sizing: border-box; background-size: cover !important; overflow: hidden; display: inline-block; vertical-align: top;}
 .book-dropzone img {max-width: 100%;}
-body .editor-controls-holder {border: 1px solid #ccc; background-color: inherit; border-radius: 0; padding: 0; overflow: visible; min-width: 500px; max-width: 500px; height: auto; display: inline-block; vertical-align: top; position: relative;}
+body .editor-controls-holder {border: 1px solid #ccc; background-color: #fff; border-radius: 0; padding: 0; overflow: visible; min-width: 500px; max-width: 500px; height: auto; display: inline-block; vertical-align: top; position: absolute; z-index: 9999;}
 body ul.editor-objects li {width: 23.888%;}
 body .editor-parent-nav {padding: 15px; background-color: #f8f8f8;}
 body .editor-controls-holder .tab-pane .nav {border-bottom: 1px solid #ddd; padding: 0 10px;}
@@ -95,7 +98,9 @@ body .editor-objects-block .nav .nav-item .nav-link {padding: 5px 15px;}
 .book-dropzone .stage-shapes{height:30px; width:140px;}
 .card .card-body:has(.learning-journey-form), .card:has(.learning-journey-form) {box-shadow: none; padding: 0; margin-bottom: 0;}
 .card:has(.learning-journey-form) {overflow: hidden;}
-.main-content:has(.zoom-header) .card:has(.learning-journey-form) {overflow: visible;}
+.main-content:has(.zoom-header) .card:has(.learning-journey-form) {
+    overflow: visible;
+}
 form.learning-journey-form {margin: 0;}
 .book-dropzone .resizeable{resize: both; overflow: hidden;}
 .editor-controls-holder .editor-objects {background-color: inherit; padding: 0;}
@@ -105,12 +110,12 @@ body .editor-controls-holder .editor-objects h6.mt-20 {margin-top: 0 !important;
 body ul.editor-objects.sets-selection li {background-color: #fafafa; border: 1px solid #ccc; border-radius: 3px; display: inline-flex; align-items: center; justify-content: center; margin: 0 5px 5px 0; padding: 10px; height: 50px; width: 50px;}
 body ul.editor-objects.sets-selection li img {width: 100% !important;}
 .hide {display: none;}
-.book-dropzone .drop-item {background: inherit; background-image: none; position: absolute; width: fit-content;}
+.book-dropzone .drop-item {background: inherit; position: absolute; width: fit-content;}
 .drop-item span.field-handle {position: absolute; right: 5px; top: -15px; cursor: move;}
 .book-dropzone .text-highlighter {background: yellow; opacity: 0.7; width: inherit; height: inherit;}
 .drop-item a.remove {color: #ff0000;}
 .editor-zone .field-options {position: relative; left: 0; right: auto; min-width: 340px; max-width: 340px; height: 100%; background-color: #f2f2f2; padding: 30px 30px; border-radius: 5px;}
-.editor-objects-list li {border-radius: 3px; display: flex; align-items: center; flex-wrap: wrap;}
+.editor-objects-list li {border-radius: 3px; display: flex; align-items: center; justify-content: space-between;}
 .editor-objects-list li .dropdown-toggle {padding: 0; border: 0; background-color: rgba(0, 0, 0, 0.1); height: 25px; width: 25px; border-radius: 100%;}
 .editor-objects-list li .dropdown-toggle:hover,
 .editor-objects-list li .dropdown-toggle:focus,
@@ -121,15 +126,14 @@ body ul.editor-objects.sets-selection li img {width: 100% !important;}
 .editor-objects-list li .dropdown-menu i {display: inline-flex; float: right; padding: 8px 9px; color: #333; font-size: 12px; cursor: pointer; background-color: rgba(0, 0, 0, 0.05); margin: 0 5px; border-radius: 3px; border: 1px solid #ddd;}
 .editor-objects-list li .dropdown-menu.show {display: flex !important;}
 ul.editor-objects-list {margin-top: 25px; counter-reset: section;}
-body .editor-objects-list li {background-color: #f8f8f8; border: 1px solid #ccc; padding: 8px 10px; margin-bottom: 10px; position: relative;}
-body .editor-objects-list li:before {counter-increment: section; content: counter(section) ". ";  font-weight: bold; color: #000; margin-right: 8px;}
+body .editor-objects-list li {background-color: #f8f8f8; border: 1px solid #ccc; padding: 8px 10px 8px 25px; margin-bottom: 10px; position: relative;}
+body .editor-objects-list li:before {counter-increment: section; content: counter(section) ". "; position: absolute; top: 50%; transform: translateY(-50%); font-weight: bold; color: #000; left: 10px;}
 body .editor-objects-list li.active {background-color: #efefef; border-color: var(--blue);}
-.editor-objects-list li .actions-menu {margin-left: auto;}
 body .editor-objects-list li label {margin: 0; line-height: normal; outline: none;}
 .learning-stage-btn {display: inline-flex; margin-bottom: 0; margin-left: auto;}
-.learning-stage-btn button {border: 1px solid #ddd; background-color: #fff; margin-left: 0; border-radius: 5px 5px 0 0; border-bottom: 0; font-size: 14px; color: var(--blue); font-weight: 600; outline: none; padding: 10px 15px; white-space: nowrap; height: auto; min-height: 54px;}
+.learning-stage-btn button {height: 100%; border: 1px solid #ddd; background-color: #fff; margin-left: 0; border-radius: 5px 5px 0 0; border-bottom: 0; font-size: 14px; color: var(--blue); font-weight: 600; outline: none; padding: 0 15px;}
 .learning-stage-btn button i {margin-right: 5px;}
-.learning-jounrey-tabs {display: flex; align-items: flex-end;}
+.learning-jounrey-tabs {display: flex;}
 .add-level-form {margin-bottom: 0;}
 .add-level-form .add-level-stage-btn {background-color: var(--primary); border-radius: 3px; color: var(--white); border: 0; padding: 8px 20px; outline: none;}
 .editor-controls-holder ul:has(.path-tool-item),
@@ -138,24 +142,21 @@ body .editor-objects-list li label {margin: 0; line-height: normal; outline: non
 .editor-controls-holder .layout-template-item {background-color: #fafafa; border: 1px solid #ccc; padding: 5px 15px; display: inline-block; line-height: normal; border-radius: 3px; text-decoration: none;}
 .editor-controls-holder .path-tool-item.active,
 .editor-controls-holder .layout-template-item.active {border-color: #9acbff; background-color: #f3f9ff; color: var(--blue);}
-.book-dropzone .drop-item,
-.book-dropzone .drop-item.ui-draggable {background-color: initial; border: 2px dotted transparent; border-radius: 5px;}
-.book-dropzone .drop-item.active {border-color: #ddd;}
-.book-dropzone .drop-item.ui-draggable {padding: 0;margin: 0;cursor: pointer;}
-.book-dropzone .drop-item .field-data {height: 100%;}
-.field_settings.active {z-index: 11 !important;}
+.book-dropzone .drop-item {background: none; background-image: none;}
+.book-dropzone .drop-item > .field-data {border: 2px dotted transparent; border-radius: 5px;}
+.book-dropzone .drop-item.active > .field-data {border-color: #ddd;}
 .book-dropzone .field-data svg {height: 100%; margin-bottom: 0;}
 .book-dropzone .ui-rotatable-handle {background-color: rgba(0, 0, 0, 0.1); top: 50%; left: -48px; pointer-events: none; opacity: 0; visibility: hidden; transform: translateY(-50%);}
 .book-dropzone .ui-rotatable-handle:after {content: ""; position: absolute; right: -100%; top: 50%; transform: translateY(-50%); width: 25px; border-top: 3px dotted #ddd; margin-right: -5px;}
 body .flowchart-operator {border: 0;}
 body .ui-rotatable-handle::before {font-size: 10px; content: "\f0e2"; font-family: "Font Awesome 5 Free"; color: #333;}
-.book-dropzone .object-options a {display: inline-flex; justify-content: center; align-items: center; text-decoration: none; pointer-events: none; opacity: 0; visibility: hidden; text-indent: 0;}
+.book-dropzone .object-options a {position: absolute; right: -5px; bottom: -5px; height: 20px; width: 20px; text-align: center; display: inline-flex; justify-content: center; align-items: center; border-radius: 100%; font-size: 12px; color: #333; text-decoration: none; pointer-events: none; opacity: 0; visibility: hidden; text-indent: 0;}
 .book-dropzone .object-options a span {margin: 0 !important; vertical-align: middle; font-size: 12px;}
 body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1px solid #ddd; border-radius: 3px; font-size: 12px; margin: 0 0 0 8px; padding: 8px 10px;}
 .book-dropzone .drop-item.active .ui-rotatable-handle,
 .book-dropzone .drop-item.active .object-options a {opacity: 1; visibility: visible; pointer-events: unset; display: inline-flex !important;}
 .book-dropzone .drop-item.spacer-block {border: 0; display: inline-flex; flex-direction: column; justify-content: center; width: auto !important; margin: 0; align-items: center;}
-.book-dropzone .drop-item.spacer-block .field-data > svg {margin: 0; position: absolute; top: 0; cursor: grab; z-index: 1; left: 0;}
+.book-dropzone .drop-item.spacer-block .field-data > svg {margin: -3px 0 0 10px; position: absolute; top: 0; cursor: grab; z-index: 1; left: 0;}
 .book-dropzone .drop-item.spacer-block .field-data {border: 0; text-align: center; display: inline-flex; justify-content: center; align-items: center; flex-direction: column; position: relative; margin: 0 0 10px; min-height: 20px;}
 .drop-item.spacer-block .remove {margin-bottom: 8px;}
 .drop-item.spacer-block .remove span {margin: 0 !important;}
@@ -164,125 +165,29 @@ body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1
 svg.flowchart-links-layer {bottom: 0; top: auto;}
 body .flowchart-operator-connector-arrow {top: -20px;}
 body .flowchart-operator-connector-small-arrow {top: -15px;}
-.book-dropzone .drop-item.field_settings a.remove {opacity: 0; visibility: hidden; color: #ff0000; margin: 0; position: initial; height: auto; width: auto;}
+.book-dropzone .drop-item.field_settings a.remove {background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); position: absolute; top: -22px; left: 50%; opacity: 0; visibility: hidden; color: #ff0000; transform: translateX(-50%); border-radius: 15px; height: fit-content; padding: 4px 10px 3px; width: fit-content;}
 .book-dropzone .drop-item.field_settings a.remove span {font-size: 10px;}
-.book-dropzone .drop-item.field_settings a.remove img {filter: invert(17%) sepia(67%) saturate(6007%) hue-rotate(356deg) brightness(99%) contrast(118%);}
 .book-dropzone .drop-item.field_settings.active a.remove {opacity: 1; visibility: visible;}
-.book-dropzone a.resize-handler {right: -4px; bottom: -4px; background-color: #ddd; background-image: none; height: 12px; width: 12px; border-radius: 100%;}
-.book-dropzone .drop-item.active a.resize-handler {opacity: 1; visibility: visible;}
-.book-dropzone a.resize-handler .fas {display: none;}
-.book-dropzone .object-options {
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    display: inline-flex;
-    align-items: center;
-    gap: 5px 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    background-color: #fff;
-    padding: 6px 10px;
-    border-radius: 15px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(-50%);
-}
-.book-dropzone .drop-item.active .object-options {
-    opacity: 1;
-    visibility: visible;
-}
-.change-position span {
-    font-size: 10px;
-    color: blue;
-}
-.book-dropzone .object-options a img {
-    width: 12px;
-    height: 12px;
-    max-width: none;
-}
-.book-dropzone .object-options a.change-position img {
-    filter: invert(17%) sepia(8%) saturate(6822%) hue-rotate(199deg) brightness(93%) contrast(89%);
-}
+.book-dropzone .object-options a.resize-handler {right: -3px; bottom: -6px; background-color: #ddd; background-image: none; height: 12px; width: 12px;}
+.book-dropzone .object-options a.resize-handler .fas {display: none;}
 /* Zoom Header Style Start */
 .zoom-header button {border: 1px solid #ddd; background-color: #f5f5f5; font-size: 16px; font-weight: 600; outline: none; border-radius: 3px; color: #333; text-shadow: 0 1px 1px #fff; padding: 5px 15px; line-height: normal; max-height: 33px;}
-.zoom-header {display: flex; align-items: center; flex-wrap: wrap; gap: 10px;}
-.zoom-header select {border: 1px solid #ddd; background-color: #f5f5f5; padding: 5px 10px; border-radius: 3px; min-height: 33px; max-height: 33px; outline: none;}
-.flowchart-operator-outputs .flowchart-operator-connector-arrow,
-.flowchart-operator-inputs .flowchart-operator-connector-arrow,
-.flowchart-operator .flowchart-operator-inputs-outputs,
-.flowchart-link rect {visibility: hidden; opacity: 0;}
-
+.zoom-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.zoom-header select {
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 3px;
+    min-height: 33px;
+    max-height: 33px;
+    outline: none;
+}
 /* Zoom Header Style End */
-
-/* Level Add Modal Style Start */
-.level_add_modal.modal {background-color: var(--white);}
-.level_add_modal .modal-dialog {margin: 0;}
-.level_add_modal.modal.show .modal-content,
-.level_add_modal.modal .modal-content {box-shadow: none;}
-.level_add_modal .modal-box {padding-top: 30px;}
-/* Rureraform-Search-Field Style Start */
-.rureraform-search-field {display: flex; align-items: center; flex-wrap: wrap; gap: 15px; justify-content: space-between;}
-.rureraform-search-field .input-field {position: relative; width: calc(100% - 380px);}
-.rureraform-search-field input[type="text"] {width: 100%; border: 1px solid #ddd; border-radius: 5px; height: 46px; padding: 0 15px; outline: none;}
-.rureraform-search-field .input-field button {position: absolute; right: 5px; top: 50%; transform: translateY(-50%); border: 1px solid #ddd; padding: 6px 10px; border-radius: 5px; outline: none; font-weight: bold; color: #555; line-height: normal;}
-.rureraform-search-field button i {color: #999; margin: 0 5px 0 0;}
-.search-option-btn .search-or-lable {margin-right: 10px; font-weight: 600; font-size: 16px;}
-.search-option-btn button {border: 1px solid #ddd; padding: 5px 12px; border-radius: 5px; font-weight: bold; color: #555; outline: none; height: 42px;}
-/*featured-controls style start*/
-.featured-controls {background-color: #f2f2f2; border: 1px solid #ddd; border-radius: 5px;}
-.featured-controls button {border: 0; background-color: inherit; padding: 12px 16px; color: #333; font-weight: 600; border-radius: 5px; line-height: normal; outline: none;}
-.featured-controls button.active {color: #fff; box-shadow: 0 0 0 1px #007bff inset; background: rgb(97, 171, 250); background: linear-gradient(0deg, rgba(97, 171, 250, 1) 25%, rgba(0, 123, 255, 1) 100%);}
-/*featured-controls style end*/
-/*search-filters style start*/
-.search-filters {display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 30px;}
-.search-filters .select-field {background-color: #f7f8fa; border: 1px solid #ddd; position: relative; padding: 2px 10px; border-radius: 5px;}
-.search-filters .select-field span {vertical-align: middle;}
-.search-filters .select-field select {border: 0; padding: 0 0; background-color: inherit; cursor: pointer; min-width: 50px; width: auto; display: inline-block; vertical-align: middle;}
-/*search-filters style end*/
-
-/*featured-list-sidebar style start*/
-.featured-list-sidebar {background-color: #f5f5f5; border: 1px solid #ddd; border-radius: 10px; padding: 0; margin-bottom: 30px;}
-.featured-list-sidebar-inner {overflow-y: hidden; max-height: 1390px; padding: 0 15px 15px;}
-/*featured-filters style start*/
-.featured-filters {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; margin: 0 0 15px; padding: 15px 15px 0;}
-.featured-filters h6 {margin: 0;}
-.featured-filters select {border: 1px solid #ddd; border-radius: 5px; padding: 5px 10px; min-width: 120px;}
-/*featured-filters style end*/
-
-/*featured-list-sidebar style end*/
-
-/* Rureraform-Search-Field Style End */
-.listing-card .assignment-btn {background-color: inherit; padding: 2px 8px; border-radius: 3px; outline: none; display: inline-flex; align-items: center; color: var(--blue); border: 1px solid var(--blue); -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; margin-top: 5px; position: absolute; right: 0; top: 0;}
-.add-level-stage-treasure-btn {background-color: inherit; padding: 2px 8px; border-radius: 3px; outline: none; display: inline-flex; align-items: center; color: var(--blue); border: 1px solid var(--blue);}
-/*listing-card style start*/
-.listing-card {position: relative;}
-.featured-list-sidebar .listing-card {align-items: flex-start; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out;}
-.listing-card:after {content: ""; position: absolute; bottom: -5px; height: 4px; width: 95%; background-color: #fff; left: 50%; border: 1px solid #ddd; border-radius: 20px; transform: translateX(-50%);}
-.featured-list-sidebar .listing-card.active, .listing-card.active:after {border-color: var(--blue); background-color: #f6faff !important;}
-.listing-card .listing-card-link {display: flex; align-items: flex-start; gap: 12px; flex-wrap: wrap; text-decoration: none; padding: 10px; width: 100%;}
-.listing-card .img-holder figure {width: 120px; height: 100px; margin-bottom: 0;}
-.featured-list-sidebar .listing-card .img-holder figure {width: 45px; height: 45px;}
-.listing-card .img-holder img {max-width: 100%; max-height: 100%; object-fit: cover;}
-.featured-list-sidebar .listing-card .img-holder img {border-radius: 5px;}
-.listing-card .text-holder {width: calc(100% - 135px); position: relative;}
-.featured-list-sidebar .listing-card .text-holder {width: calc(100% - 60px); padding-right: 60px;}
-.listing-card .text-holder h3 {margin: 0 0 5px; font-size: 1.2rem;}
-.featured-list-sidebar .listing-card .text-holder h3 {font-size: 0.9rem;}
-.author-info .info-text {padding-left: 5px; font-size: 14px;}
-.featured-list-sidebar .author-info .info-text {padding-left: 0;}
-.author-info .info-text span {position: relative;padding: 0 0 0 15px;}
-.author-info .info-text span:first-child {padding-left: 0;}
-.author-info .info-text span {position: relative; padding: 0 0 0 15px;}
-.author-info .info-text span:before {content: ""; position: absolute; left: 4px; top: 50%; height: 4px; width: 4px; background-color: #64748b; border-radius: 100%; margin-top: -2px;}
-.author-info .info-text span:first-child:before {display: none;}
-.list-options {display: flex; align-items: center; gap: 10px 15px; margin: 0 0 10px; flex-wrap: wrap;}
-.featured-list-sidebar .list-options {gap: 5px 5px; flex-wrap: wrap; margin: 0; width: 100%;}
-.list-options li {font-size: 14px; display: inline-flex; align-items: center; line-height: normal; gap: 5px;}
-.featured-list-sidebar .list-options li {font-size: 12px; border-radius: 3px; padding: 0 8px 0 0;}
-.list-options li .icon-box {line-height: 12px; display: inline-block;}
-.list-options li img {height: 12px;width: 12px;filter: invert(17%) sepia(9%) saturate(17%) hue-rotate(347deg) brightness(103%) contrast(94%);}
-/*listing-card style end*/
-
-/* Level Add Modal Style End */
 
 @media (max-width: 992px) {
     body .editor-controls-holder {min-width: 375px; max-width: 375px;}

@@ -10,7 +10,7 @@ $stage_set = ($stage_set == '')? 'set1' : $stage_set;
 $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadmap-default';
  @endphp
 
-<div class="editor-controls-holder">
+<div class="editor-controls-holder rurera-hide">
 	<div class="editor-parent-nav">
 		<ul class="nav" id="myTab" role="tablist">
 

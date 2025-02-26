@@ -8,13 +8,13 @@
             </div>
         </div>
         <ul class="list-options question-list-options mb-15">
-            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> {{$topicPartItemObj->topicPartItemQuestions->count()}} questions</li>
-            <li><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt="save"></span> 7th-8th  Grade</li>
-            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
+            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt=""></span> {{$topicPartItemObj->topicPartItemQuestions->count()}} questions</li>
+            <li><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt=""></span> 7th-8th  Grade</li>
+            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt=""></span> Science</li>
         </ul>
 
     </div>
-    <div class="question-layout-holder mb-0 bg-white panel-border p-25">
+    <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0">
 
         @if($topicPartItemObj->topicPartItemQuestions->count() > 0)
             @foreach($topicPartItemObj->topicPartItemQuestions as $questionObj)
