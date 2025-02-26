@@ -308,9 +308,13 @@
                     </div>
 
                     <div class="card-body">
-                        <h5 class="card-title">Grade 6</h5>
-                        <p class="grade-text">A</p>
-                        <p class="card-students">26 Students</p>
+                        <div class="card-title-holder">
+                            <h5 class="card-title">Grade 6</h5>
+                        </div>
+                        <div class="card-description-holder">
+                            <p class="grade-text">A</p>
+                            <p class="card-students">26 Students</p>
+                        </div>
                         <div class="progress-holder">
                             <p class="mb-1">1 completed activity</p>
                             <div class="progress" style="height: 20px;">
