@@ -43,7 +43,7 @@
             <div class="listing-grid-card">
                 <div class="img-holder skelton-hide">
                     <figure>
-                        <img src="/assets/default/img/video.png" alt="">
+                        <img src="/assets/default/img/video.png" alt="video">
                         <figcaption>
                             <span class="count-lable">Admin</span>
                         </figcaption>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="teacher-list-controls skelton-hide">
-                        <button type="button" class="edit-btn"><img src="/assets/default/svgs/edit-pencil.svg" alt=""></button>
+                        <button type="button" class="edit-btn"><img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil"></button>
                     </div>
 
                     <script>
