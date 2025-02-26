@@ -2247,6 +2247,7 @@ $(document).ready(function () {
     $scrollableDiv.getNiceScroll().resize();
   });
 
+/*Skelton Loading Fungtion Start*/
     const $el = document.querySelector(".staff-picks-tabs");
 
     // Loading finished
@@ -2256,7 +2257,7 @@ $(document).ready(function () {
         .querySelectorAll(".skelton-hide")
         .forEach((el) => el.classList.remove("skelton-hide"));
     }, 3000);
-
+/*Skelton Loading Fungtion End*/
 
 });
 </script>
