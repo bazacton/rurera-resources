@@ -5854,6 +5854,10 @@ button.print-download-btn {
 .quiz-data-table:has(.skelton-hide) {
     border-color: transparent !important;
 }
+.card.card-statistic-1 .card-wrap.skelton-hide {
+    margin-left: 10px;
+    width: calc(100% - 90px);
+}
 /* Skeleton Loading Style End */
 
 /* @media screen and (min-width: 1024px) and (max-width: 1800px) {
