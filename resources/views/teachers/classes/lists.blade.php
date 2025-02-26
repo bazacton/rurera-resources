@@ -351,7 +351,7 @@
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
-                                <tr>
+                                <tr class="skelton-hide">
                                     <th class="text-left">{{ trans('admin/main.title') }}</th>
                                     <th class="text-left">Curriculum</th>
                                     <th class="text-left">Sections</th>
@@ -359,7 +359,7 @@
                                 </tr>
 
                                 @foreach($classes as $classData)
-                                <tr>
+                                <tr class="skelton-hide">
                                     <td>
                                         <span>{{ $classData->title }}</span>
                                     </td>
