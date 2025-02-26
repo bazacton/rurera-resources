@@ -251,36 +251,29 @@ body .editor-objects-block .nav .nav-item .nav-link {
     height:30px;
     width:140px;
 }
-
 .book-dropzone .resizeable{
     resize: both;
     overflow: hidden;
 }
-
 .hide {
     display: none;
 }
-
-
 .book-dropzone .drop-item {
     position: absolute;
     width: fit-content;
 }
-
 .drop-item span.field-handle {
     position: absolute;
     right: 5px;
     top: -15px;
     cursor: move;
 }
-
 .book-dropzone .text-highlighter {
     background: yellow;
     opacity: 0.7;
     width: inherit;
     height: inherit;
 }
-
 .drop-item a.remove {
     color: #ff0000;
 }
@@ -324,4 +317,20 @@ body .editor-objects-block .nav .nav-item .nav-link {
     width: auto;
     left: auto !important;
     right: -100%;
+}
+.settings-controls-block {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.settings-controls-block .setting-controls {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--blue);
+}
+.settings-controls-block .setting-controls i {
+    margin-right: 2px;
+    color: var(--blue);
 }
