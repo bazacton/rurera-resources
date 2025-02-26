@@ -127,36 +127,29 @@ body .editor-objects-block .nav .nav-item .nav-link {
     height:30px;
     width:140px;
 }
-
 .book-dropzone .resizeable{
     resize: both;
     overflow: hidden;
 }
-
 .hide {
     display: none;
 }
-
-
 .book-dropzone .drop-item {
     position: absolute;
     width: fit-content;
 }
-
 .drop-item span.field-handle {
     position: absolute;
     right: 5px;
     top: -15px;
     cursor: move;
 }
-
 .book-dropzone .text-highlighter {
     background: yellow;
     opacity: 0.7;
     width: inherit;
     height: inherit;
 }
-
 .drop-item a.remove {
     color: #ff0000;
 }
@@ -173,6 +166,81 @@ body .editor-objects-block .nav .nav-item .nav-link {
 }
 .editor-objects-list li {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.editor-objects-list li .dropdown-toggle {
+    padding: 0;
+    border: 0;
+    background-color: inherit;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+}
+.editor-objects-list li .dropdown-toggle:hover,
+.editor-objects-list li .dropdown-toggle:focus,
+.editor-objects-list li .show>.btn-secondary.dropdown-toggle {background-color: rgba(0, 0, 0, 0.1);}
+.editor-objects-list li .dropdown-toggle:after {display: none;}
+.editor-objects-list img {height: 18px; width: 18px;}
+.editor-objects-list li .dropdown-menu {width: auto; left: auto !important; right: 0; transform: none !important; top: 100% !important; min-width: 180px; padding: 12px 10px;}
+.editor-objects-list li .dropdown-menu i {display: inline-flex; float: right; padding: 8px 9px; color: #333; font-size: 12px; cursor: pointer; background-color: rgba(0, 0, 0, 0.05); margin: 0 5px; border-radius: 3px; border: 1px solid #ddd;}
+.editor-objects-list li .dropdown-menu.show {display: flex !important;}
+ul.editor-objects-list {margin-top: 25px; counter-reset: section;}
+body .editor-objects-list li {background-color: #f8f8f8; border: 1px solid #ccc; padding: 8px 10px; margin-bottom: 10px; position: relative;}
+body .editor-objects-list li:before {counter-increment: section; content: counter(section) ". ";  font-weight: bold; color: #000; margin-right: 8px;}
+body .editor-objects-list li.active {background-color: #efefef; border-color: var(--blue);}
+.editor-objects-list li .actions-menu {margin-left: auto;}
+body .editor-objects-list li label {margin: 0; line-height: normal; outline: none;}
+.learning-stage-btn {display: inline-flex; margin-bottom: 0; margin-left: auto;}
+.learning-stage-btn button {border: 1px solid #ddd; background-color: #fff; margin-left: 0; border-radius: 5px 5px 0 0; border-bottom: 0; font-size: 14px; color: var(--blue); font-weight: 600; outline: none; padding: 10px 15px; white-space: nowrap; height: auto; min-height: 54px;}
+.learning-stage-btn button i {margin-right: 5px;}
+.learning-jounrey-tabs {display: flex; align-items: flex-end;}
+.add-level-form {margin-bottom: 0;}
+.add-level-form .add-level-stage-btn {background-color: var(--primary); border-radius: 3px; color: var(--white); border: 0; padding: 8px 20px; outline: none;}
+.editor-controls-holder ul:has(.path-tool-item),
+.editor-controls-holder ul:has(.layout-template-item) {display: flex; align-items: center; flex-wrap: wrap; gap: 10px;}
+.editor-controls-holder .path-tool-item,
+.editor-controls-holder .layout-template-item {background-color: #fafafa; border: 1px solid #ccc; padding: 5px 15px; display: inline-block; line-height: normal; border-radius: 3px; text-decoration: none;}
+.editor-controls-holder .path-tool-item.active,
+.editor-controls-holder .layout-template-item.active {border-color: #9acbff; background-color: #f3f9ff; color: var(--blue);}
+.book-dropzone .drop-item,
+.book-dropzone .drop-item.ui-draggable {background-color: initial; border: 2px dotted transparent; border-radius: 5px;}
+.book-dropzone .drop-item.active {border-color: #ddd;}
+.book-dropzone .drop-item.ui-draggable {padding: 0;margin: 0;cursor: pointer;}
+.book-dropzone .drop-item .field-data {height: 100%;}
+.field_settings.active {z-index: 11 !important;}
+.book-dropzone .field-data svg {height: 100%; margin-bottom: 0;}
+.book-dropzone .ui-rotatable-handle {background-color: rgba(0, 0, 0, 0.1); top: 50%; left: -48px; pointer-events: none; opacity: 0; visibility: hidden; transform: translateY(-50%);}
+.book-dropzone .ui-rotatable-handle:after {content: ""; position: absolute; right: -100%; top: 50%; transform: translateY(-50%); width: 25px; border-top: 3px dotted #ddd; margin-right: -5px;}
+body .flowchart-operator {border: 0;}
+body .ui-rotatable-handle::before {font-size: 10px; content: "\f0e2"; font-family: "Font Awesome 5 Free"; color: #333;}
+.book-dropzone .object-options a {display: inline-flex; justify-content: center; align-items: center; text-decoration: none; pointer-events: none; opacity: 0; visibility: hidden; text-indent: 0;}
+.book-dropzone .object-options a span {margin: 0 !important; vertical-align: middle; font-size: 12px;}
+body .editor-objects-list li i {background-color: rgba(0, 0, 0, 0.05); border: 1px solid #ddd; border-radius: 3px; font-size: 12px; margin: 0 0 0 8px; padding: 8px 10px;}
+.book-dropzone .drop-item.active .ui-rotatable-handle,
+.book-dropzone .drop-item.active .object-options a {opacity: 1; visibility: visible; pointer-events: unset; display: inline-flex !important;}
+.book-dropzone .drop-item.spacer-block {border: 0; display: inline-flex; flex-direction: column; justify-content: center; width: auto !important; margin: 0; align-items: center;}
+.book-dropzone .drop-item.spacer-block .field-data > svg {margin: 0; position: absolute; top: 0; cursor: grab; z-index: 1; left: 0;}
+.book-dropzone .drop-item.spacer-block .field-data {border: 0; text-align: center; display: inline-flex; justify-content: center; align-items: center; flex-direction: column; position: relative; margin: 0 0 10px; min-height: 20px;}
+.drop-item.spacer-block .remove {margin-bottom: 8px;}
+.drop-item.spacer-block .remove span {margin: 0 !important;}
+.book-dropzone .drop-item.spacer-block .field-data .flowchart-operator-inputs-outputs {margin-left: 0;margin-right: 0;display: inline-block;}
+.book-dropzone .flowchart-operator-connector {position: relative; padding-top: 0; padding-bottom: 0; height: auto;}
+svg.flowchart-links-layer {bottom: 0; top: auto;}
+body .flowchart-operator-connector-arrow {top: -20px;}
+body .flowchart-operator-connector-small-arrow {top: -15px;}
+.book-dropzone .drop-item.field_settings a.remove {opacity: 0; visibility: hidden; color: #ff0000; margin: 0; position: initial; height: auto; width: auto;}
+.book-dropzone .drop-item.field_settings a.remove span {font-size: 10px;}
+.book-dropzone .drop-item.field_settings a.remove img {filter: invert(17%) sepia(67%) saturate(6007%) hue-rotate(356deg) brightness(99%) contrast(118%);}
+.book-dropzone .drop-item.field_settings.active a.remove {opacity: 1; visibility: visible;}
+.book-dropzone a.resize-handler {right: -4px; bottom: -4px; background-color: #ddd; background-image: none; height: 12px; width: 12px; border-radius: 100%;}
+.book-dropzone .drop-item.active a.resize-handler {opacity: 1; visibility: visible;}
+.book-dropzone a.resize-handler .fas {display: none;}
+.book-dropzone .object-options {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    display: inline-flex;
     align-items: center;
     gap: 5px 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
