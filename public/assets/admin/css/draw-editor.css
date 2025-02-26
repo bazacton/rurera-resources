@@ -346,6 +346,11 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .list-options li .icon-box {line-height: 12px; display: inline-block;}
 .list-options li img {height: 12px;width: 12px;filter: invert(17%) sepia(9%) saturate(17%) hue-rotate(347deg) brightness(103%) contrast(94%);}
 /*listing-card style end*/
+
+/* Level Add Modal Style End */
+.editor-zone:has(.settings-controls-block) .book-dropzone {
+    width: calc(100% - 100px);
+}
 .settings-controls-block {
     position: absolute;
     right: 0;
@@ -362,25 +367,8 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
     margin-right: 2px;
     color: var(--blue);
 }
-/* Level Add Modal Style End */
 
 @media (max-width: 992px) {
     body .editor-controls-holder {min-width: 375px; max-width: 375px;}
     body .editor-zone:has(.field-options) {padding-left: 0;}
-}
-.settings-controls-block {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.settings-controls-block .setting-controls {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--blue);
-}
-.settings-controls-block .setting-controls i {
-    margin-right: 2px;
-    color: var(--blue);
 }
