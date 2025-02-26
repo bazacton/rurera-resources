@@ -1023,6 +1023,7 @@ body.layout-3 .main-footer {padding-left: 0; padding-right: 0;}
 .main-sidebar .sidebar-menu li a i { margin-right: 12px; text-align: center;}
 .main-sidebar .sidebar-menu li a span img {margin-left: 5px; }
 .main-sidebar .sidebar-menu li img {width: 16px; height: 16px; margin-right: 10px;}
+.sidebar-mini .main-sidebar .sidebar-menu li img {margin-right: 0;}
 .main-sidebar .sidebar-menu li a span {margin-top: 3px; width: 100%;}
 .main-sidebar .sidebar-menu li a:hover {background-color: #f8fafb;}
 .main-sidebar .sidebar-menu li.active a {color: var(--primary); font-weight: 600; background-color: #f8fafb;}
