@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="/assets/admin/css/teacher-style.css?ver={{$rand_id}}">
 
 <style type="text/css">
-    svg.flowchart-links-layer path:hover, svg.flowchart-links-layer path:active, svg.flowchart-links-layer path:focus {
+    /*svg.flowchart-links-layer path:hover, svg.flowchart-links-layer path:active, svg.flowchart-links-layer path:focus {
         stroke: none !important;
-    }
+    }*/
 
 
 
