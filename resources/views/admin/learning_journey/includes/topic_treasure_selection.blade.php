@@ -14,6 +14,8 @@
             <div class="search-filters mb-0 conditional-block topics_block">
                 <div class="select-field">
                     <span>Year:</span>
+
+
                     <select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
                         <option value="">{{trans('admin/main.all_categories')}}</option>
                         @foreach($categories as $category)

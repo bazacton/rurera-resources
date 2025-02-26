@@ -21,7 +21,7 @@
 
 
 
-    span.dropzone-placeholder {
+    span.dropzone-placeholder-top {
         display: block;
         width: 100%;
         height: 150px;
@@ -33,6 +33,62 @@
         font-size: 18px;
         border-bottom: 1px solid #ccc;
         color: #bbbbbb;
+        position: absolute;
+        top: 0;
+        left:0;
+        z-index: 1;
+    }
+
+    span.dropzone-placeholder-left {
+        display: block;
+        width: 150px;
+        height: 100%;
+        background: #efefef;
+        text-align: center;
+        user-select: none;
+        padding: 25% 0 0 0;
+        text-transform: uppercase;
+        font-size: 18px;
+        border-right: 1px solid #ccc;
+        color: #bbbbbb;
+        position: absolute;
+        top:0;
+        left: 0;
+    }
+
+    span.dropzone-placeholder-right {
+        display: block;
+        width: 150px;
+        height: 100%;
+        background: #efefef;
+        text-align: center;
+        user-select: none;
+        padding: 25% 0 0 0;
+        text-transform: uppercase;
+        font-size: 18px;
+        border-left: 1px solid #ccc;
+        color: #bbbbbb;
+        position: absolute;
+        top:0;
+        right: 0;
+    }
+
+    span.dropzone-placeholder-bottom {
+        display: block;
+        width: 100%;
+        height: 150px;
+        background: #efefef;
+        text-align: center;
+        user-select: none;
+        padding: 70px 0 0 0;
+        text-transform: uppercase;
+        font-size: 18px;
+        border-top: 1px solid #ccc;
+        color: #bbbbbb;
+        position: absolute;
+        bottom: 0;
+        left:0;
+        z-index: 1;
     }
 
 
@@ -901,10 +957,10 @@
 
 					$el = $('<div></div>');
 
-					$el.append($('<div id="' + unique_id + '" style="width:20%;left:0%; top:0%;" data-item_title="Start" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id + '" data-id="' + unique_id + '" data-item_path="set1/start_stop.svg" data-field_type="stage_start" data-trigger_class="infobox-stage_start-fields" data-item_type="stage_start" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg"><g transform="translate(2 2)" stroke="#7c7d7e" stroke-width="3.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><circle fill="#FFF" cx="50" cy="50" r="50"/><circle fill="#7c7d7e" cx="51" cy="50" r="20"/></g></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+					$el.append($('<div id="' + unique_id + '" style="width:20%;left:0%; top:0%;" data-item_title="Start" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id + '" data-id="' + unique_id + '" data-item_path="set1/start_stop.svg" data-field_type="stage_start" data-trigger_class="infobox-stage_start-fields" data-item_type="stage_start" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg"> <g transform="translate(26 26) scale(0.5)" stroke="#7c7d7e" stroke-width="3.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"> <circle fill="#FFF" cx="50" cy="50" r="50"/> <circle fill="#7c7d7e" cx="51" cy="50" r="20"/> </g> </svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
 					$el.append('</div>');
 
-					$el.append($('<div id="' + unique_id2 + '" style="width:20%;left:50%; top:0%;" data-item_title="End" data-unique_id="' + unique_id2 + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id2 + '" data-id="' + unique_id2 + '" data-item_path="set1/start_stop.svg" data-field_type="stage_end" data-trigger_class="infobox-stage_end-fields" data-item_type="stage_end" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg"><g transform="translate(2 2)" stroke="#7c7d7e" stroke-width="3.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><circle fill="#FFF" cx="50" cy="50" r="50"/><circle fill="#7c7d7e" cx="51" cy="50" r="20"/></g></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+					$el.append($('<div id="' + unique_id2 + '" style="width:20%;left:50%; top:0%;" data-item_title="End" data-unique_id="' + unique_id2 + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id2 + '" data-id="' + unique_id2 + '" data-item_path="set1/start_stop.svg" data-field_type="stage_end" data-trigger_class="infobox-stage_end-fields" data-item_type="stage_end" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg"> <g transform="translate(26 26) scale(0.5)" stroke="#7c7d7e" stroke-width="3.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"> <circle fill="#FFF" cx="50" cy="50" r="50"/> <circle fill="#7c7d7e" cx="51" cy="50" r="20"/> </g> </svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
 					$el.append('</div>');
 					$(".book-dropzone.active").append($el);
 
@@ -1433,6 +1489,18 @@
         levels_sorting_render();
     });
 
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.editor-controls-holder').length && !$(event.target).closest('.settings-controls-block').length) {
+            $('.editor-controls-holder').addClass('rurera-hide');
+        }
+    });
+
+    $(document).on('click', '.setting-controls', function () {
+        $(this).closest('.editor-zone').find('.editor-controls-holder').removeClass('rurera-hide');
+
+        var data_target = $(this).attr('data-target');
+        $('.nav-link[data-target="'+data_target+'"]').click();
+    });
 
     $(document).on('change', '.start_end_layers', function () {
         var current_value = $(this).val();

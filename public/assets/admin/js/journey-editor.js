@@ -1066,14 +1066,13 @@ function trigger_field_change(thisObj) {
             $(".page_settings.active").find(".field_settings").each(function () {
                 $activeElement = $(this);
                 var topPos = parseFloat($activeElement.css('top'));
-                console.log('topPX----'+$activeElement.css('top'));
+                //console.log('topPX----'+$activeElement.css('top'));
+                //console.log('topPXWITHTTT----'+topPos);
                 $activeElement.attr('data-topPx', topPos);
             });
 
-            console.log('page-heightttttt');
 			this_value = this_value+'px';
 		}
-		console.log(field_name);
 		if( field_name == 'graph'){
 			if( this_value == 1){
 				$(".page_settings.active").addClass('graph-background');
@@ -1092,16 +1091,24 @@ function trigger_field_change(thisObj) {
         if( field_name == 'height') {
             $(".page_settings.active").find(".field_settings").each(function () {
 
+                var element_top = parseFloat(this.style.top);
+
+                var element_top_px = (parseFloat(element_top) * current_height) / 100;
+
+                console.log('element_top_px----'+element_top_px);
                 var parentHeight = this_value;
+
+
                 var topPercent = (parseFloat($(this).attr('data-topPx')) / parseFloat(parentHeight)) * 100;
 
-
+                console.log('element_top-----'+element_top);
                 console.log('topPercent-----'+topPercent);
                 console.log('height----'+parentHeight)
                 // Set the CSS of the element with the percentages
                 $(this).css({
-                    top: topPercent+'%'
+                    top: element_top_px+'px'
                 });
+                //percentage * height / 100
             });
         }
 
