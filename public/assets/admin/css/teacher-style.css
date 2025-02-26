@@ -5823,7 +5823,8 @@ button.print-download-btn {
 .skelton-hide select,
 .skelton-hide tr,
 .skelton-hide tr,
-.skelton-hide span {
+.skelton-hide span,
+.skelton-hide img {
     visibility: hidden;
 }
 .search-filters.skelton-hide {
