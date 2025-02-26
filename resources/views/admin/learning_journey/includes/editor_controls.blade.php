@@ -123,6 +123,10 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                                 $li_html .= '<div class="actions-menu">
                                     <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
                                 </div>';
+                            }else{
+                                $li_html .= '<div class="actions-menu">
+                                    <i class="fa fa-eye show_hide_start_layers show" data-item_type="'.$learningJourneyItemObj->item_type.'"></i>
+                                </div>';
                             }
                             $li_html .= '</li>';
                             echo $li_html;
@@ -276,7 +280,7 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                 </li>
             </ul>
 
-            <div class="option-field-item mt-20 mb-20">
+            <div class="option-field-item mt-20 mb-20 rurera-hide">
                 <label class="custom-switch pl-0">
                     <input type="hidden" data-field_attr_type="switch" name="start_end_layers" class="start_end_layers trigger_field" value="1" data-field_id="start_end_layers" data-field_name="start_end_layers" data-field_type="page_style" data-id="">
                     <input type="checkbox" name="start_end_layers_radio" id="start_end_layers" value="1" class="custom-switch-input" checked>
