@@ -6,7 +6,7 @@
 
 @section('content')
     
-    <div class="section-body">
+    <div class="section-body skeleton">
         <section class="section">
             <div class="section-header">
                 <h1>Teachers {{ trans('admin/main.list') }}</h1>
@@ -17,7 +17,7 @@
                 </div>
             </div>
         </section>
-        <div class="nav-area">
+        <div class="nav-area skelton-hide">
             <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link" id="topics-tab" href="/admin/all">
@@ -41,7 +41,7 @@
         </div>
         <div class="teacher-listing">
             <div class="listing-grid-card">
-                <div class="img-holder">
+                <div class="img-holder skelton-hide">
                     <figure>
                         <img src="/assets/default/img/video.png" alt="">
                         <figcaption>
@@ -51,21 +51,27 @@
                 </div>
                 <div class="text-holder">
                     <div class="author-info">
-                        <span class="img-box">
-                            <img src="/assets/default/img/video.png" alt="">
-                            <span class="country-flag"><img src="/assets/default/svgs/uk-flag.svg" alt=""></span>
+                        <span class="img-box skelton-hide">
+                            <img src="/assets/default/img/video.png" alt="video">
+                            <span class="country-flag"><img src="/assets/default/svgs/uk-flag.svg" alt="uk-flag"></span>
                         </span>
-                        <h5>Nolan Herwitz</h5>
-                        <a href="#"><i class="fas fa-envelope"></i> nolan@nerou.com</a>
-                        <span class="phone-number-box">
-                            <i class="fas fa-phone"></i>
-                            <span class="phone-number" onclick="togglePhoneNumber(this)" data-full-number="987-654-3210">
-                                987-XXX-XXXX
+                        <div class="card-title-holder skelton-hide">
+                            <h5>Nolan Herwitz</h5>
+                        </div>
+                        <div class="author-contact-info skelton-hide">
+                            <a href="#"><i class="fas fa-envelope"></i> nolan@nerou.com</a>
+                            <span class="phone-number-box">
+                                <i class="fas fa-phone"></i>
+                                <span class="phone-number" onclick="togglePhoneNumber(this)" data-full-number="987-654-3210">
+                                    987-XXX-XXXX
+                                </span>
                             </span>
-                        </span>
-                        <span class="designation-lable">Year 1</span>
-                        <span class="designation-lable">Year 2</span>
-                        <span class="designation-lable">Year 3</span>
+                        </div>
+                        <div class="author-designation skelton-hide">
+                            <span class="designation-lable">Year 1</span>
+                            <span class="designation-lable">Year 2</span>
+                            <span class="designation-lable">Year 3</span>
+                        </div>
                     </div>
                     <div class="teacher-list-controls">
                         <button type="button" class="edit-btn"><img src="/assets/default/svgs/edit-pencil.svg" alt=""></button>
