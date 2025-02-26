@@ -227,9 +227,9 @@
                             </tr>
                         @endforeach
                         @else
-                            <tr>
-                            <td colspan="5">No Records Found</td>
-                        </tr>
+                            <tr class="skelton-hide">
+                                <td colspan="5">No Records Found</td>
+                            </tr>
                         @endif
                     </table>
                 </div>
