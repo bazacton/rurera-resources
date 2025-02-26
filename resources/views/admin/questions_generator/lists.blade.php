@@ -49,7 +49,7 @@
 
         <section class="card">
             <div class="card-body">
-                <form action="/admin/questions-generator" id="topic_parts_search_form" method="get" class="row mb-0">
+                <form action="/admin/questions-generator" id="topic_parts_search_form" method="get" class="row mb-0 skelton-hide">
 
                     <div class="col-md-4">
                         <div class="form-group">
