@@ -415,7 +415,7 @@
     <div class="section-body">
         <div class="row">
 		<!-- Zoom Header Start -->
-            <div class="col-12 col-md-12 col-lg-12">
+            <div class="col-12 col-md-12 col-lg-12 rurera-hide">
                 <div class="zoom-header">
                     <button class="zoomin">zoom in </button>
                     <select id="sel" class="select" onchange="handleChange()">
