@@ -355,6 +355,11 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 99999;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 90px;
+    padding: 10px 5px 0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 .settings-controls-block .setting-controls {
     display: block;
