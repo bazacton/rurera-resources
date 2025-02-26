@@ -5824,7 +5824,8 @@ button.print-download-btn {
 .skelton-hide tr,
 .skelton-hide tr,
 .skelton-hide span,
-.skelton-hide img, .skelton-hide i, .card .card-header .skelton-hide .btn, .skelton-hide td, .skelton-hide th {
+.skelton-hide img, .skelton-hide i, .card .card-header .skelton-hide .btn, .skelton-hide td, .skelton-hide th,
+.card-title-holder.skelton-hide h5, .author-contact-info.skelton-hide a {
     visibility: hidden;
 }
 .search-filters.skelton-hide {
@@ -5867,6 +5868,12 @@ button.print-download-btn {
 }
 .admin_teacher_role .classes-card:has(.skelton-hide) .bottom-controls {
     margin: 0;
+}
+.listing-grid-card:has(.skelton-hide) {padding: 10px; }
+
+.listing-grid-card:has(.skelton-hide) .author-info {
+    padding-bottom: 0;
+    border: 0;
 }
 /* Skeleton Loading Style End */
 
