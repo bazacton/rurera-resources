@@ -24,10 +24,10 @@
                 </div>
             </div>
             <div class="col-12">
-                <div class="quiz-data-holder mb-30">
+                <div class="quiz-data-holder skeleton mb-30">
                     <div class="quiz-data-filters">
                         <span class="sorting-lable">Filter by:</span>
-                        <div class="select-field">
+                        <div class="select-field skelton-hide">
                             <select>
                                 <option value="All Games">All Games</option>
                                 <option value="Footbal">Footbal</option>
@@ -36,7 +36,7 @@
                                 <option value="Hockey">Hockey</option>
                             </select>
                         </div>
-                        <div class="select-field">
+                        <div class="select-field skelton-hide">
                             <select>
                                 <option value="All Reports">All Reports</option>
                                 <option value="Weekly Reports">Weekly Reports</option>
@@ -44,7 +44,7 @@
                                 <option value="Yearly Reports">Yearly Reports</option>
                             </select>
                         </div>
-                        <div class="select-field">
+                        <div class="select-field skelton-hide">
                             <select>
                                 <option value="All Classes">All Classes</option>
                                 <option value="Grade 1">Grade 1</option>
@@ -52,7 +52,7 @@
                                 <option value="Grade 3">Grade 3</option>
                             </select>
                         </div>
-                        <div class="select-field">
+                        <div class="select-field skelton-hide">
                             <select>
                                 <option value="All Classes">Filter by Date</option>
                                 <option value="04/12/2024">04/12/2024</option>
@@ -386,7 +386,7 @@
 
         /*Skelton Loading Fungtion Start*/
         $(document).ready(function () {
-            const $el = document.querySelector(".staff-picks-tabs");
+            const $el = document.querySelector(".quiz-data-holder");
 
             setTimeout(() => {
             $el.classList.remove("skeleton");
