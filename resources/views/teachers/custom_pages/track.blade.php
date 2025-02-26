@@ -383,5 +383,18 @@
             });
         });
         /*Quiz Data Slide Function End*/
+
+        /*Skelton Loading Fungtion Start*/
+        $(document).ready(function () {
+            const $el = document.querySelector(".staff-picks-tabs");
+
+            setTimeout(() => {
+            $el.classList.remove("skeleton");
+            $el
+                .querySelectorAll(".skelton-hide")
+                .forEach((el) => el.classList.remove("skelton-hide"));
+            }, 3000);
+        });
+        /*Skelton Loading Fungtion End*/
     </script>
 @endpush
