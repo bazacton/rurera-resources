@@ -5862,6 +5862,12 @@ button.print-download-btn {
 .admin_teacher_role .skelton-hide:has(td) {
     display: block;
 }
+.admin_teacher_role .classes-card:has(.skelton-hide) {
+    background-color: #fff;
+}
+.admin_teacher_role .classes-card:has(.skelton-hide) .bottom-controls {
+    margin: 0;
+}
 /* Skeleton Loading Style End */
 
 /* @media screen and (min-width: 1024px) and (max-width: 1800px) {
