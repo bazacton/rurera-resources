@@ -6,7 +6,7 @@
 
 
 @section('content')
-<section class="section">
+<section class="section skeleton">
     <div class="section-header">
         <h1>Assignments</h1>
         <div class="section-header-breadcrumb">
@@ -438,5 +438,19 @@
                 });
             });
         });
+    </script>
+    <script>
+        /*Skelton Loading Fungtion Start*/
+        $(document).ready(function () {
+            const $el = document.querySelector(".section");
+
+            setTimeout(() => {
+            $el.classList.remove("skeleton");
+            $el
+                .querySelectorAll(".skelton-hide")
+                .forEach((el) => el.classList.remove("skelton-hide"));
+            }, 3000);
+        });
+        /*Skelton Loading Fungtion End*/
     </script>
 @endpush
