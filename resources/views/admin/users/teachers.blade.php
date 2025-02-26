@@ -115,7 +115,6 @@
         <section class="card">
             <div class="card-body">
                 <form method="get" class="mb-0">
-
                     <div class="row skelton-hide">
                         <div class="col-md-4">
                             <div class="form-group">
@@ -123,12 +122,11 @@
                                 <input name="full_name" type="text" class="form-control" value="{{ request()->get('full_name') }}">
                             </div>
                         </div>
-
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.status') }}</label>
                                 <select name="status" data-plugin-selectTwo class="form-control populate">
-                                    <option value="">{{ trans('admin/main.all_status') }}</option>
+                                    <option value="{{ trans('admin/main.all_status') }}">{{ trans('admin/main.all_status') }}</option>
                                     <option value="active_verified" @if(request()->get('status') == 'active_verified') selected @endif>{{ trans('admin/main.active_verified') }}</option>
                                     <option value="active_notVerified" @if(request()->get('status') == 'active_notVerified') selected @endif>{{ trans('admin/main.active_not_verified') }}</option>
                                     <option value="inactive" @if(request()->get('status') == 'inactive') selected @endif>{{ trans('admin/main.inactive') }}</option>
@@ -136,8 +134,6 @@
                                 </select>
                             </div>
                         </div>
-
-
                         <div class="col-md-4">
                             <div class="form-group mt-1">
                                 <label class="input-label mb-4"> </label>
@@ -234,14 +230,12 @@
                     </table>
                 </div>
             </div>
-
             <div class="card-footer text-center">
                 {{ $users->appends(request()->input())->links() }}
             </div>
         </div>
     </div>
 
-    
     <div class="modal fade create-class-modal" id="createClassModal" tabindex="-1" role="dialog" aria-labelledby="createClassModalLabel" aria-modal="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
