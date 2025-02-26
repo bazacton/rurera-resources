@@ -89,7 +89,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mb-30 bg-white panel-border rounded-sm p-15 bulk-quiz">
+                <div class="mb-30 bg-white panel-border rounded-sm p-15 bulk-quiz skelton-hide">
                     <div class="bulk-heading">
                         <h6>Bulk Settings</h6>
                     </div>
