@@ -5262,107 +5262,27 @@ button.print-download-btn {
 .hotel-table table tr td:has(.description) {max-width: 290px;}
 .hotel-table .description p {margin: 0; line-height: normal; font-size: 14px; color: #333; font-weight: 500;}
 .hotel-table .description p a {color: var(--blue);}
-.hotel-thum-box strong span {
-    display: block;
-    line-height: normal;
-    font-weight: 500;
-    padding-top: 5px;
-}
-.hotel-table .categories span {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-.hotel-table .categories span em {
-    font-style: normal;
-    color: #333;
-}
-.hotel-table table tr td:has(.categories) {
-    min-width: 185px;
-}
-.hotel-table table tr td:has(.progress) {
-    min-width: 220px;
-}
-.hotel-table .progress-lable {
-    display: block;
-    margin: 0 0 40px;
-    color: #333;
-}
-.hotel-table .progress {
-    border-radius: 0;
-    position: relative;
-    overflow: visible;
-}
-.hotel-table .progress .progress-bar {
-    background-color: #5cc45c;
-    position: relative;
-}
-.hotel-table .progress .progress-bar:before {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    height: 15px;
-    width: 2px;
-    background-color: #5cc45c;
-}
-.hotel-table .progress .progress-bar:after {
-    content: attr(data-value);
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    font-size: 14px;
-    margin: 0 -5px 15px 0;
-    color: #555;
-}
-.days-value {
-    position: absolute;
-    left: 50px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 30px;
-    width: 2px;
-    background-color: rgba(0,0,0,0.3);
-}
-.days-value:before {
-    position: absolute;
-    top: 100%;
-    left: -2px;
-    content: attr(data-value);
-    margin: 5px 0 0 0;
-}
-.hotel-table table tr td:has(.occupancy) {
-    min-width: 110px;
-}
-.hotel-table .progress-box {
-    padding: 0;
-}
-.hotel-table .circle_percent {
-    font-size: 60px;
-}
-.hotel-table .progress-box:before {
-    display: none;
-}
-.hotel-table .occupancy {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-.hotel-table .occupancy .occupancy-lable {
-    color: #333;
-    width: 100%;
-}
-.occupancy-info span {
-    color: #333;
-}
-.occupancy-info > div {
-    margin: 0 0 5px;
-}
-.hotel-table table tr td.available-in {
-    white-space: nowrap;
-}
+.hotel-thum-box strong span {display: block; line-height: normal; font-weight: 500; padding-top: 5px;}
+.hotel-table .categories span {display: flex; align-items: center; flex-wrap: wrap; gap: 5px;}
+.hotel-table .categories span em {font-style: normal; color: #333;}
+.hotel-table table tr td:has(.categories) {min-width: 185px;}
+.hotel-table table tr td:has(.progress) {min-width: 220px;}
+.hotel-table .progress-lable {display: block; margin: 0 0 40px; color: #333;}
+.hotel-table .progress {border-radius: 0; position: relative; overflow: visible;}
+.hotel-table .progress .progress-bar {background-color: #5cc45c; position: relative;}
+.hotel-table .progress .progress-bar:before {content: ""; position: absolute; bottom: 100%; right: 0; height: 15px; width: 2px; background-color: #5cc45c;}
+.hotel-table .progress .progress-bar:after {content: attr(data-value); position: absolute; bottom: 100%; right: 0; font-size: 14px; margin: 0 -5px 15px 0; color: #555;}
+.days-value {position: absolute; left: 50px; top: 50%; transform: translateY(-50%); height: 30px; width: 2px; background-color: rgba(0,0,0,0.3);}
+.days-value:before {position: absolute; top: 100%; left: -2px; content: attr(data-value); margin: 5px 0 0 0;}
+.hotel-table table tr td:has(.occupancy) {min-width: 110px;}
+.hotel-table .progress-box {padding: 0;}
+.hotel-table .circle_percent {font-size: 60px;}
+.hotel-table .progress-box:before {display: none;}
+.hotel-table .occupancy {display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-start;}
+.hotel-table .occupancy .occupancy-lable {color: #333; width: 100%;}
+.occupancy-info span {color: #333;}
+.occupancy-info > div {margin: 0 0 5px;}
+.hotel-table table tr td.available-in {white-space: nowrap;}
 /* Hotel Table Style End */
 
 /* Compliance Programes Style Start */
