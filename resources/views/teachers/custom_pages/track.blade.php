@@ -192,7 +192,7 @@
                                             </div>
                                             <div class="col-12 col-md-4 col-lg-3">
                                                 <div class="sats-summary-icon" style="background-color: #fe3c30;">
-                                                    <img src="/assets/default/svgs/question-circle-white.svg" alt="">
+                                                    <img src="/assets/default/svgs/question-circle-white.svg" alt="question-circle-white">
                                                 </div>
                                                 <div class="summary-text">
                                                     <label>Incorrect / Not Attempted</label>
@@ -337,10 +337,15 @@
                                     </form>
                                     
                                     <div class="lms-radio-lists">
-                                            <span class="list-title">Correct answer:</span>
-                                            <ul class="lms-radio-btn-group lms-user-answer-block"><li><label class="lms-question-label" for="radio2"><span>Cube</span></label></li></ul>
-                                            <span class="list-title">Rumaisa Khan answered:</span>
-                                            <ul class="lms-radio-btn-group lms-user-answer-block"><li><label class="lms-question-label wrong" for="radio2"><span>Cube</span></label></li><li><label class="lms-question-label wrong" for="radio2"><span>Square-based pyramid</span></label></li></ul>
+                                        <span class="list-title">Correct answer:</span>
+                                        <ul class="lms-radio-btn-group lms-user-answer-block">
+                                            <li><label class="lms-question-label" for="radio2"><span>Cube</span></label></li>
+                                        </ul>
+                                        <span class="list-title">Rumaisa Khan answered:</span>
+                                        <ul class="lms-radio-btn-group lms-user-answer-block">
+                                            <li><label class="lms-question-label wrong" for="radio2"><span>Cube</span></label></li>
+                                            <li><label class="lms-question-label wrong" for="radio2"><span>Square-based pyramid</span></label></li>
+                                        </ul>
                                     </div>
                                     <hr>
                                 </div>
