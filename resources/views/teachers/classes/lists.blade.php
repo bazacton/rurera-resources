@@ -14,11 +14,10 @@
             </div>
         @endcan
         <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
+            <div class="breadcrumb-item active">
+                <a href="/admin/">{{trans('admin/main.dashboard')}}</a>
             </div>
-            <div class="breadcrumb-item">Classes
-
-            </div>
+            <div class="breadcrumb-item">Classes</div>
         </div>
     </div>
     <div class="row">
@@ -377,14 +376,12 @@
                                         @include('admin.includes.delete_button',['url' => '/admin/classes/'.$classData->id.'/delete' , 'btnClass' => 'btn-sm'])
                                         @endcan
                                     </td>
-
                                 </tr>
                                 @endforeach
 
                             </table>
                         </div>
                     </div>
-
                     <div class="card-footer text-center">
                         {{ $classes->links() }}
                     </div>
