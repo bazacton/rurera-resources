@@ -38,8 +38,7 @@
                                 <li class="font-weight-bold font-18 pb-10" data-type="expired">Overdue</li>
                             </ul>	
 
-                            <div class="list-group list-group-custom set-work-content list-group-flush totalChilds pt-0"
-                                 data-childs="12">
+                            <div class="list-group list-group-custom set-work-content list-group-flush totalChilds pt-0" data-childs="12">
                                 <div class="rurera-tables-list">
                                 @if( $assignments->count() > 0 )
                                 @foreach($assignments as $assignmentObj)
