@@ -307,29 +307,29 @@
                                                     <div class="form-field rureraform-cr-container-medium correct">
                                                         <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-00-8001" value="Cube">
                                                         <label for="field-19093-00-8001">
-                                                            <img src="/media/topic_parts/121/shape-1.png" alt="">
+                                                            <img src="/media/topic_parts/121/shape-1.png" alt="shape-1">
                                                             Cube
                                                         </label>
                                                     </div>
                                                     <div class="form-field rureraform-cr-container-medium wrong">
                                                         <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-11-8001" value="Square-based pyramid">
                                                         <label for="field-19093-11-8001">
-                                                            <img src="/media/topic_parts/121/shape-2.png" alt="">
+                                                            <img src="/media/topic_parts/121/shape-2.png" alt="shape-2">
                                                             Square-based pyramid
                                                         </label>
                                                     </div>
                                                     <div class="form-field rureraform-cr-container-medium">
                                                                 <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-22-8001" value="Triangular prism"><label for="field-19093-22-8001">
-                                                                <img src="/media/topic_parts/121/shape-3.png" alt="">
+                                                                <img src="/media/topic_parts/121/shape-3.png" alt="shape-3">
                                                                 Triangular prism
                                                                                             </label>
                                                             </div>
                                                                                                                                                                                                             <div class="form-field rureraform-cr-container-medium">
                                                                 <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-33-8001" value="Triangular-based pyramid"><label for="field-19093-33-8001">
-                                                                <img src="/media/topic_parts/121/shape-4.png" alt=""> 							Triangular-based pyramid
+                                                                <img src="/media/topic_parts/121/shape-4.png" alt="shape-4"> 							Triangular-based pyramid
                                                                                             </label>
                                                             </div>
-                                                                                                                                                                </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                         <div class="rureraform-element-cover"></div>
