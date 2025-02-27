@@ -5286,58 +5286,16 @@ button.print-download-btn {
 /* Hotel Table Style End */
 
 /* Compliance Programes Style Start */
-.compliance-programes {
-    background-color: #fff;
-    padding: 25px;
-    margin: 0 0 30px;
-}
-.compliance-programes .section-header {
-    padding: 0;
-    margin: 0 0 10px;
-}
-.compliance-programes .section-header h1 {
-    font-size: 1.5rem;
-    margin: 0;
-    color: #333;
-}
-.compliance-info ul {
-    display: inline-flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0 30px;
-}
-.compliance-info-lable {
-    display: block;
-    line-height: normal;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 600;
-    margin: 0 0 8px;
-}
-.compliance-info-text img {
-    height: 22px;
-    width: 22px;
-    object-fit: contain;
-    margin-right: 5px;
-}
-.compliance-info-text strong {
-    display: inline-flex;
-    align-items: center;
-    color: #333;
-    line-height: normal;
-    font-size: 14px;
-}
-.compliance-info {
-    margin: 0 0 30px;
-}
-.compliance-info-text strong em {
-    font-style: normal;
-    color: #6c757d;
-}
-.compliance-tabs .nav-tabs {
-    gap: 0 25px;
-    margin: 0 0 15px;
-}
+.compliance-programes {background-color: #fff; padding: 25px; margin: 0 0 30px;}
+.compliance-programes .section-header {padding: 0; margin: 0 0 10px;}
+.compliance-programes .section-header h1 {font-size: 1.5rem; margin: 0; color: #333;}
+.compliance-info ul {display: inline-flex; align-items: center; flex-wrap: wrap; gap: 0 30px;}
+.compliance-info-lable {display: block; line-height: normal; text-transform: uppercase; font-size: 12px; font-weight: 600; margin: 0 0 8px;}
+.compliance-info-text img {height: 22px; width: 22px; object-fit: contain; margin-right: 5px;}
+.compliance-info-text strong {display: inline-flex; align-items: center; color: #333; line-height: normal; font-size: 14px;}
+.compliance-info {margin: 0 0 30px;}
+.compliance-info-text strong em {font-style: normal; color: #6c757d;}
+.compliance-tabs .nav-tabs {gap: 0 25px; margin: 0 0 15px;}
 .compliance-tabs .nav-tabs .nav-item .nav-link {
     border: 0;
     border-bottom: 2px solid transparent;
