@@ -37,7 +37,7 @@
     <div class="section-body">
         <section class="card">
             <div class="card-body">
-                <form action="{{ getAdminPanelUrl() }}/quizzes" method="get" class="row mb-0">
+                <form action="{{ getAdminPanelUrl() }}/quizzes" method="get" class="row mb-0 skelton-hide">
                     <div class="col-md-3">
                         <div class="form-group">
                             <label class="input-label">{{ trans('admin/main.search') }}</label>
@@ -160,7 +160,7 @@
                 <div class="card">
                     <div class="card-header">
                         @can('admin_assignments_create')
-                        <div class="text-right">
+                        <div class="text-right skelton-hide">
                             <a href="{{ getAdminPanelUrl() }}/custom_quiz/create" class="btn btn-primary ml-2">Create
                                 Custom Quiz</a>
                         </div>
@@ -170,7 +170,7 @@
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
-                                <tr>
+                                <tr class="skelton-hide">
                                     <th class="text-left">{{ trans('admin/main.title') }}</th>
                                     <th class="text-left">Created By</th>
                                     <th class="text-center">{{ trans('admin/main.question_count') }}</th>
@@ -179,7 +179,7 @@
                                 </tr>
 
                                 @foreach($quizzes as $quiz)
-                                <tr>
+                                <tr class="skelton-hide">
                                     <td>
                                         <span>{{ $quiz->title }}</span>
                                         @if(!empty($quiz->webinar))
