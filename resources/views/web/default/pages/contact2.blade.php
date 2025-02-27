@@ -26,7 +26,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="services-card text-center mb-30 pr-40 pl-40">
                         <div class="services-card-body">
-                            <figure><img src="../assets/default/img/support.jpg" alt="support" title="support"  width="150" height="150" itemprop="image"  loading="eager"></figure>
+                            <figure><img src="/assets/default/img/support.jpg" alt="support" title="support"  width="150" height="150" itemprop="image"  loading="eager"></figure>
                             <div class="services-text mt-0">
                                 <h2 itemprop="title" class="font-20 mb-15 text-dark-charcoal"><a href="{{url('/')}}/pricing">24/7 Support</a></h2>
                                 <p itemprop="description">Experience Uninterrupted 24/7 Support in whole UK</p>
@@ -37,7 +37,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="services-card text-center mb-30 pr-40 pl-40">
                         <div class="services-card-body">
-                            <figure><img src="../assets/default/img/knowledge.jpg" alt="knowledge" title="knowledge"  width="150" height="150" itemprop="image"  loading="eager"></figure>
+                            <figure><img src="/assets/default/img/knowledge.jpg" alt="knowledge" title="knowledge"  width="150" height="150" itemprop="image"  loading="eager"></figure>
                             <div class="services-text mt-0">
                                 <h2 itemprop="title" class="font-20 mb-15 text-dark-charcoal"><a href="{{url('/')}}/pricing">Knowledge Base</a></h2>
                                 <p itemprop="description">your key resource for resolving doubts and getting instant guidance.</p>
@@ -48,7 +48,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="services-card text-center mb-30 pr-40 pl-40">
                         <div class="services-card-body">
-                            <figure><img src="../assets/default/img/technical.jpg" alt="technical" title="technical"  width="150" height="150" itemprop="image"  loading="eager"></figure>
+                            <figure><img src="/assets/default/img/technical.jpg" alt="technical" title="technical"  width="150" height="150" itemprop="image"  loading="eager"></figure>
                             <div class="services-text mt-0">
                                 <h2 itemprop="title" class="font-20 mb-15 text-dark-charcoal"><a href="#jobsform-section">Feedback / Suggestions</a></h2>
                                 <p itemprop="description">Help us to improve rurera with your valuable suggestions</p>
@@ -190,8 +190,9 @@
                                                     </div>
                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                                         <div class="form-group"><label class="input-label w-100 pt-0">Message</label>
-                                                            <div class="input-field w-100"><textarea class="field-textarea"
-                                                                    placeholder="Detail here"></textarea></div>
+                                                            <div class="input-field w-100">
+                                                                <textarea class="field-textarea" placeholder="Detail here"></textarea>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -311,8 +312,7 @@
                         <div class="row align-items-center">
                             <div class="col-12 col-lg-8 col-md-8">
                                 <h2 itemprop="title" class="mb-20 text-white font-40">Ready to start learning?</h2>
-                                <p itemprop="description" class="mb-0 text-white">Discover a growing collection of resources
-                                    delivered through Rurera.</p>
+                                <p itemprop="description" class="mb-0 text-white">Discover a growing collection of resources delivered through Rurera.</p>
                             </div>
                             <div class="col-12 col-lg-4 col-md-4">
                                 <div class="lms-btn-group">
