@@ -14,14 +14,10 @@
             <div class="breadcrumb-item">Joining Requests </div>
         </div>
     </div>
-
-
     <div class="section-body">
-
-
         <div class="row">
             <div class="col-12 col-md-12">
-                <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+                <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills skelton-hide" id="assignment_tabs" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link" id="topics-tab" href="/admin/classes">
                             <span class="tab-title">Classes</span>
@@ -42,7 +38,7 @@
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
-                                <tr>
+                                <tr class="skelton-hide">
                                     <th class="text-left">Student</th>
                                     <th class="text-left">Class</th>
                                     <th class="text-left">Section</th>
@@ -50,7 +46,7 @@
                                 </tr>
 
                                 @foreach($joining_requests as $requestObj)
-                                <tr>
+                                <tr class="skelton-hide">
                                     <td>
                                         <span>{{ $requestObj->student->get_full_name() }}</span>
                                     </td>
@@ -101,5 +97,19 @@
        });
 
     });
+</script>
+<script>
+    /*Skelton Loading Fungtion Start*/
+    $(document).ready(function () {
+        const $el = document.querySelector(".section-body");
+
+        setTimeout(() => {
+        $el.classList.remove("skeleton");
+        $el
+            .querySelectorAll(".skelton-hide")
+            .forEach((el) => el.classList.remove("skelton-hide"));
+        }, 3000);
+    });
+    /*Skelton Loading Fungtion End*/
 </script>
 @endpush
