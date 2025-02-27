@@ -33,7 +33,6 @@
                 </div>
             </div>
         </div>
-
         <div class="section-body">
             <section class="card">
                 <div class="card-body">
@@ -44,7 +43,6 @@
                                 <input type="text" class="form-control" name="title" value="{{ request()->get('title') }}">
                             </div>
                         </div>
-
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.start_date') }}</label>
@@ -54,7 +52,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.end_date') }}</label>
@@ -64,7 +61,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.filters') }}</label>
@@ -100,7 +96,6 @@
                                 </select>
                             </div>
                         </div>
-
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.instructor') }}</label>
@@ -116,7 +111,6 @@
                                 </select>
                             </div>
                         </div>
-
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.class') }}</label>
@@ -131,7 +125,6 @@
                                 </select>
                             </div>
                         </div>
-
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.status') }}</label>
@@ -146,7 +139,6 @@
                                 </select>
                             </div>
                         </div>
-
                         <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
                             <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}
                             </button>
@@ -154,7 +146,6 @@
                     </form>
                 </div>
             </section>
-
             <div class="row">
                 <div class="col-12 col-md-12">
                     <div class="card">
@@ -166,7 +157,6 @@
                             </div>
                             @endcan
                         </div>
-
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-striped font-14">
@@ -230,7 +220,6 @@
                                 </table>
                             </div>
                         </div>
-
                         <div class="card-footer text-center">
                             {{ $quizzes->appends(request()->input())->links() }}
                         </div>
