@@ -221,7 +221,7 @@ $avatar_color_settings = json_encode($avatar_color_settings);
 												<label>Password</label>
                                                 <div class="input-field">
                                                     <span class="icon-box"><img src="/assets/default/svgs/edit-menu-user.svg" alt="edit-menu-user"></span>
-                                                    <input type="text" name="password" class="" placeholder="Password" value="">
+                                                    <input type="text" name="password" placeholder="Password" value="">
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-6 col-md-6 form-group">
