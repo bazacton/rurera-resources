@@ -676,7 +676,7 @@ class="rurera-req-field form-control ">
 <button type="button" class="btn btn-primary crop-image-back-btn mt-0">Back</button>
 </div>
 <div class="col-12">
-<ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+<ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills skelton-hide" id="assignment_tabs" role="tablist">
     <li class="nav-item">
         <a class="nav-link active" id="section-tabid-Emerging" data-toggle="tab" href="#section-tab-Emerging" role="tab"
            aria-controls="section-tab-Emerging" aria-selected="true"><span class="tab-title">Emerging</span></a>
