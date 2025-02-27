@@ -235,7 +235,6 @@ if( !empty( $emojisArray ) ){
                                 <div class="edit-element-title mb-15">
                                     <h6 class="font-weight-500">
                                         Profile picture
-                                        <!-- <span class="d-block pt-5 font-12">This is how others will recognize you</span> -->
                                     </h6>
                                 </div>
                                 <div class="edit-profile-body">
