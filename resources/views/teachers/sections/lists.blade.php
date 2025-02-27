@@ -14,7 +14,7 @@
             <div class="breadcrumb-item">Sections </div>
         </div>
     </div>
-    <div class="section-body">
+    <div class="section-body skeleton">
         <div class="row">
             <div class="col-12 col-md-12">
                 <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills skelton-hide" id="assignment_tabs" role="tablist">
@@ -74,5 +74,18 @@
 @endsection
 
 @push('scripts_bottom')
+<script>
+    /*Skelton Loading Fungtion Start*/
+    $(document).ready(function () {
+        const $el = document.querySelector(".section-body");
 
+        setTimeout(() => {
+        $el.classList.remove("skeleton");
+        $el
+            .querySelectorAll(".skelton-hide")
+            .forEach((el) => el.classList.remove("skelton-hide"));
+        }, 3000);
+    });
+    /*Skelton Loading Fungtion End*/
+</script>
 @endpush
