@@ -913,8 +913,6 @@
             refresh_tags();
         });
 
-
-
         $('body').on('change', '.year_quiz_ajax_select12', function (e) {
             var year_id = $(this).val();
             $(".ajax-title").addClass('show-after-ajax');
@@ -1108,8 +1106,6 @@
 
             }
 
-
-
             var prev_step = parseInt(next_step) - 1;
             var next_step_counter = parseInt(next_step) + 1;
             var prev_step_counter = prev_step;
@@ -1132,10 +1128,6 @@
             //refresh_tags();
         });
 
-                                                               
-        
-
-
         $(".conditional_check").change();
         
         $(".duration_conditional_check:checked").change();
@@ -1147,9 +1139,6 @@
         $(".year_quiz_ajax_select").change();
         $(".year_group_quiz_ajax_select").change();
         $(".assignment_type_check:checked").change();
-
-
-
 
         $('body').on('click', '.add-student-modal-bkk', function (e) {
             var action_type = 'child_register';
@@ -1439,11 +1428,7 @@
 </script>
 @endpush
 
-
 <script type="text/javascript">
-
-
-	
     $(document).on('change', '.subscribed_for-field', function (e) {
         var package_month = 1;
         var package_discount = 0;
