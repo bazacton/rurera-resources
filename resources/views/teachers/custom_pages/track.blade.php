@@ -9,8 +9,6 @@
 
 @section('content')
 <section class="section">
-   
-
     <div class="section-body">
         <div class="row">
             <div class="col-12">
@@ -85,7 +83,7 @@
                                         <div class="checkbox-field">
                                             <input type="checkbox" id="assigned">
                                             <label for="assigned">
-                                                <span><img src="/assets/default/svgs/list-view.svg" alt=""> Assigned</span>
+                                                <span><img src="/assets/default/svgs/list-view.svg" alt="list-view"> Assigned</span>
                                             </label>
                                         </div>
                                     </td>
