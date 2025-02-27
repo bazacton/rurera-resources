@@ -240,7 +240,7 @@
                     <ul class="count-number-boxes row">
                         <li class="count-number-card col-12 col-sm-6 col-md-6 col-lg-3">
                             <div class="count-number-icon">
-                                <i data-feather="edit-2" width="20" height="20" class="" style="color:#8cc811"></i>
+                                <i data-feather="edit-2" width="20" height="20" style="color:#8cc811"></i>
                             </div>
                             <div class="count-number-body">
                                 <h5>answered</h5>
@@ -313,7 +313,7 @@
 									<div class="row align-items-center">
 										<div class="col-12 col-lg-9 mt-10 mt-lg-0 d-flex align-items-start">
 											<span class="notification-badge badge mr-10 mt-5 d-flex align-items-center justify-content-center"></span>
-											<div class="">
+											<div>
 												<h3 class="notification-title font-18 font-weight-bold text-dark-blue mb-5">{{$resultObj->parentQuiz->getTitleAttribute()}} ({{$resultObj->sameParent->count()}})</h3>
 												<span class="notification-time d-block text-gray mt-5">{{dateTimeFormat($resultObj->created_at, 'j M Y')}}</span>
 											</div>
@@ -337,7 +337,7 @@
 								<div class="row align-items-center">
 									<div class="col-12 col-lg-9 mt-10 mt-lg-0 d-flex align-items-start">
 										<span class="notification-badge badge mr-10 mt-5 d-flex align-items-center justify-content-center"></span>
-										<div class="">
+										<div>
 											<h3 class="notification-title font-18 font-weight-bold text-dark-blue mb-5">{{$assignmentTitle}} by {{$assignmentObj->StudentAssignmentData->creator->get_full_name()}} ({{ucfirst($assignmentObj->StudentAssignmentData->assignment_type)}})</h3>
 											<span class="notification-time d-block text-gray mt-5"> {{dateTimeFormat($assignmentObj->deadline_date, 'd F Y')}}</span>
 										</div>
