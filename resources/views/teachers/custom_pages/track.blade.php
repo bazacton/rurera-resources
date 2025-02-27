@@ -303,22 +303,25 @@
                                         <div class="rureraform-column-label"><label class="rureraform-label"></label></div>
                                         <div class="rureraform-column-input">
                                             <div class="rureraform-input">
-                                                <div class="form-box lms-checkbox-img image-left rurera-in-cols   ">
-                                                
-                                                
-                                                                                                                                                                                                                            <div class="form-field rureraform-cr-container-medium correct">
-                                                                <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-00-8001" value="Cube"><label for="field-19093-00-8001">
-                                                                <img src="/media/topic_parts/121/shape-1.png" alt=""> 							Cube
-                                                                                            </label>
-                                                            </div>
-                                                                                                                                                                                                            <div class="form-field rureraform-cr-container-medium wrong">
-                                                                <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-11-8001" value="Square-based pyramid"><label for="field-19093-11-8001">
-                                                                <img src="/media/topic_parts/121/shape-2.png" alt=""> 							Square-based pyramid
-                                                                                            </label>
-                                                            </div>
-                                                                                                                                                                                                            <div class="form-field rureraform-cr-container-medium">
+                                                <div class="form-box lms-checkbox-img image-left rurera-in-cols">
+                                                    <div class="form-field rureraform-cr-container-medium correct">
+                                                        <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-00-8001" value="Cube">
+                                                        <label for="field-19093-00-8001">
+                                                            <img src="/media/topic_parts/121/shape-1.png" alt="">
+                                                            Cube
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-field rureraform-cr-container-medium wrong">
+                                                        <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-11-8001" value="Square-based pyramid">
+                                                        <label for="field-19093-11-8001">
+                                                            <img src="/media/topic_parts/121/shape-2.png" alt="">
+                                                            Square-based pyramid
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-field rureraform-cr-container-medium">
                                                                 <input class="editor-field rureraform-checkbox-medium" data-min="1" type="checkbox" name="field-19093" id="field-19093-22-8001" value="Triangular prism"><label for="field-19093-22-8001">
-                                                                <img src="/media/topic_parts/121/shape-3.png" alt=""> 							Triangular prism
+                                                                <img src="/media/topic_parts/121/shape-3.png" alt="">
+                                                                Triangular prism
                                                                                             </label>
                                                             </div>
                                                                                                                                                                                                             <div class="form-field rureraform-cr-container-medium">
@@ -327,7 +330,7 @@
                                                                                             </label>
                                                             </div>
                                                                                                                                                                 </div>
-                                            </div>
+                                                    </div>
                                                 </div>
                                         <div class="rureraform-element-cover"></div>
                                     </div>
@@ -344,7 +347,10 @@
                                             <ul class="lms-radio-btn-group lms-user-answer-block"><li><label class="lms-question-label" for="radio2"><span>Cube</span></label></li></ul>
                                             <span class="list-title">Rumaisa Khan answered:</span>
                                             <ul class="lms-radio-btn-group lms-user-answer-block"><li><label class="lms-question-label wrong" for="radio2"><span>Cube</span></label></li><li><label class="lms-question-label wrong" for="radio2"><span>Square-based pyramid</span></label></li></ul>
-                                    </div><hr></div></div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
                                 </div>
                             </div>
                         </div>
