@@ -116,12 +116,12 @@
                                             <div class="dropdown-box">
                                                 <div class="dropdown">
                                                     <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt=""></span>
+                                                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
                                                     </a>
-                                                    <div class="dropdown-menu" style="">
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt=""> Print</a>
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt=""> Delete</a>
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt=""> Email To Prent</a>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -137,8 +137,8 @@
                                         <span>×</span>
                                     </button>
                                     <div class="prev-next-controls">
-                                        <button type="button" class="prev-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-left.svg" alt=""></span> Prev</button>
-                                        <button type="button" class="next-btn"><span class="icon-box">Next <img src="/assets/default/svgs/arrow-right.svg" alt=""></span></button>
+                                        <button type="button" class="prev-btn"><span class="icon-box"><img src="/assets/default/svgs/arrow-left.svg" alt="arrow-left"></span> Prev</button>
+                                        <button type="button" class="next-btn"><span class="icon-box">Next <img src="/assets/default/svgs/arrow-right.svg" alt="arrow-right"></span></button>
                                     </div>
                                 </div>
 
@@ -146,9 +146,8 @@
                                     <div class="edit-questions-difficulty-data">
                                         <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills mt-20" id="assignment_tabs" role="tablist">
                                             <li class="nav-item"><a data-bulk_list_id="20" data-part_item_id="1374" class="nav-link difficulty-level-btn active" data-difficulty_level="Emerging" id="section-tabid-Emerging" data-toggle="tab" href="#section-tab-Emerging" role="tab" aria-controls="section-tab-Emerging" aria-selected="true"><span class="tab-title">Emerging</span></a></li>
-                                            <li class="nav-item"><a data-bulk_list_id="20" data-part_item_id="1374" class="nav-link difficulty-level-btn " data-difficulty_level="Expected" id="section-tabid-Expected" data-toggle="tab" href="#section-tab-Expected" role="tab" aria-controls="section-tab-Expected" aria-selected="true"><span class="tab-title">Expected</span></a></li>
-                                            <li class="nav-item"><a data-bulk_list_id="20" data-part_item_id="1374" class="nav-link difficulty-level-btn " data-difficulty_level="Exceeding" id="section-tabid-Exceeding" data-toggle="tab" href="#section-tab-Exceeding" role="tab" aria-controls="section-tab-Exceeding" aria-selected="true"><span class="tab-title">Exceeding</span></a>
-                                            </li>
+                                            <li class="nav-item"><a data-bulk_list_id="20" data-part_item_id="1374" class="nav-link difficulty-level-btn" data-difficulty_level="Expected" id="section-tabid-Expected" data-toggle="tab" href="#section-tab-Expected" role="tab" aria-controls="section-tab-Expected" aria-selected="true"><span class="tab-title">Expected</span></a></li>
+                                            <li class="nav-item"><a data-bulk_list_id="20" data-part_item_id="1374" class="nav-link difficulty-level-btn" data-difficulty_level="Exceeding" id="section-tabid-Exceeding" data-toggle="tab" href="#section-tab-Exceeding" role="tab" aria-controls="section-tab-Exceeding" aria-selected="true"><span class="tab-title">Exceeding</span></a></li>
                                         </ul>
                                     </div>
                                     <div class="edit-questions-tabs">
