@@ -38,7 +38,7 @@
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
-                                <tr>
+                                <tr class="skelton-hide">
                                     <th class="text-left">{{ trans('admin/main.title') }}</th>
                                     <th class="text-left">Curriculum</th>
                                     <th class="text-left">No of Students</th>
@@ -46,7 +46,7 @@
                                 </tr>
 
                                 @foreach($sections as $sectionData)
-                                <tr>
+                                <tr class="skelton-hide">
                                     <td>
                                         <span>{{ $sectionData->title }} {{ isset( $sectionData->sectionClass->title )? '('.$sectionData->sectionClass->title.')' : '' }}</span>
                                     </td>
