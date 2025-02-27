@@ -32,11 +32,9 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="section-body">
-
         <section class="card">
             <div class="card-body">
                 <form action="{{ getAdminPanelUrl() }}/quizzes" method="get" class="row mb-0">
@@ -244,5 +242,18 @@
 @endsection
 
 @push('scripts_bottom')
+<script>
+    /*Skelton Loading Fungtion Start*/
+    $(document).ready(function () {
+        const $el = document.querySelector(".section-body");
 
+        setTimeout(() => {
+        $el.classList.remove("skeleton");
+        $el
+            .querySelectorAll(".skelton-hide")
+            .forEach((el) => el.classList.remove("skelton-hide"));
+        }, 3000);
+    });
+    /*Skelton Loading Fungtion End*/
+</script>
 @endpush
