@@ -1141,8 +1141,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">3</div> How to export a pictu...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span>
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1152,8 +1152,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">4</div> What does UI <br > stand fo...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span> 
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span> 
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1163,8 +1163,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">5</div> Which aspect of UI de...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span>
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1174,8 +1174,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">6</div> How to export a pictu...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span>
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1185,8 +1185,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">7</div> What does UI <br > stand fo...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span> 
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span> 
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1196,8 +1196,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">8</div> Which aspect of UI de...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span>
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1207,8 +1207,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">9</div> How to export a pictu...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span>
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1218,8 +1218,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">10</div> What does UI <br > stand fo...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span> 
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span> 
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1229,8 +1229,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">11</div> Which aspect of UI de...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span>
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1240,8 +1240,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">12</div> How to export a pictu...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span>
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1251,8 +1251,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">13</div> What does UI <br > stand fo...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span> 
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span> 
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
