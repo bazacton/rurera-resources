@@ -2297,30 +2297,30 @@
                                                                         <label>Bullet list Style</label>
                                                                     </div>
                                                                     <div class="rureraform-properties-tooltip"></div>
-                                                                    <div class="rureraform-properties-content">
-                                                                        <div class="bullet-controls">
-                                                                            <button type="button">Enabled</button>
-                                                                            <button type="button">Enabled</button>
-                                                                            <button type="button" class="active">Selected</button>
+                                                                        <div class="rureraform-properties-content">
+                                                                            <div class="bullet-controls">
+                                                                                <button type="button">Enabled</button>
+                                                                                <button type="button">Enabled</button>
+                                                                                <button type="button" class="active">Selected</button>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                                
-                                                                <input type="hidden" name="rureraform-elements_data" id="rureraform-elements_data" value="W3t9XQ==" placeholder="">
+                                                                    
+                                                                    <input type="hidden" name="rureraform-elements_data" id="rureraform-elements_data" value="W3t9XQ==" placeholder="">
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="rureraform-admin-popup-buttons">
-                                                            <a class="rureraform-admin-button duplicate-element btn btn-primary" href="#">
-                                                            <label>Update</label>
-                                                            </a>
-                                                            <a class="rureraform-admin-button generate-question-code rurera-hide" href="#">
-                                                            <label>Apply Changes</label>
-                                                            </a>
-                                                        </div>
-                                                        <div class="rureraform-admin-popup-loading" style="display: none;">
-                                                            <i class="fas fa-spinner fa-spin"></i>
-                                                        </div>
+                                                            <div class="rureraform-admin-popup-buttons">
+                                                                <a class="rureraform-admin-button duplicate-element btn btn-primary" href="#">
+                                                                    <label>Update</label>
+                                                                </a>
+                                                                <a class="rureraform-admin-button generate-question-code rurera-hide" href="#">
+                                                                    <label>Apply Changes</label>
+                                                                </a>
+                                                            </div>
+                                                            <div class="rureraform-admin-popup-loading" style="display: none;">
+                                                                <i class="fas fa-spinner fa-spin"></i>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2354,11 +2354,11 @@
                                             </div>
                                             <div class="rureraform-col rureraform-col-8">
                                                 <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
+                                                    <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
                                                 </div>
                                                 <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
-                                                <i>Hint:&nbsp;&nbsp;Think about what happens inside cells during respiration and what is released.</i>
-                                                <div class="rureraform-element-cover"></div>
+                                                    <i>Hint:&nbsp;&nbsp;Think about what happens inside cells during respiration and what is released.</i>
+                                                    <div class="rureraform-element-cover"></div>
                                                 </div>
                                             </div>
                                             <div class="rureraform-col rureraform-col-4">
