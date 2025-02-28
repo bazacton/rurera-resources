@@ -1262,8 +1262,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">14</div> Which aspect of UI de...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span>
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1273,8 +1273,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">15</div> How to export a pictu...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span>
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1285,7 +1285,7 @@
                                     <div class="question-text"><div class="q-number">16</div> What does UI <br > stand fo...</div>
                                     <div class="question-type">
                                         <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span> 
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1295,8 +1295,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">17</div> Which aspect of UI de...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span>
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1306,8 +1306,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">18</div> How to export a pictu...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span>
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1360,15 +1360,15 @@
                         </button>
                         <h6 class="search-lable">Enhance this quiz using AI</h6>
                         <ul>
-                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add similar questions</a></li>
-                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Fix grammatical and spelling errors</a></li>
-                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Translate questions</a></li>
-                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Simplify questions</a></li>
-                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add questions on particular topic</a></li>
-                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Reduce/increase Options From MCQs</a></li>
-                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add learner’s name in the questions</a></li>
-                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add answer's explanation</a></li>
-                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Write custom prompt</a></li>
+                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add similar questions</a></li>
+                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Fix grammatical and spelling errors</a></li>
+                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Translate questions</a></li>
+                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Simplify questions</a></li>
+                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add questions on particular topic</a></li>
+                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Reduce/increase Options From MCQs</a></li>
+                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add learner’s name in the questions</a></li>
+                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add answer's explanation</a></li>
+                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Write custom prompt</a></li>
                         </ul>
                     </div>
                     <div class="question-layout-holder mb-15 bg-white panel-border rounded-sm p-25">
