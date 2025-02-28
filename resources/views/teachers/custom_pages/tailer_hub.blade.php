@@ -1834,7 +1834,7 @@
                         <label for="upload-thumbnail"><img src="/assets/default/svgs/file-image.svg" alt=""> Upload thumbnail</label>
                     </div>
                     <div class="book-btn">
-                        <button type="button"><img src="/assets/default/svgs/book-saved.svg" alt=""></button>
+                        <button type="button"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></button>
                     </div>
                 </figcaption>
             </figure>
@@ -1845,7 +1845,7 @@
             <h2 class="editable" contenteditable="true">General Knowledge &amp; Methodology</h2>
             <ul>
                 <li>
-                    <img src="/assets/default/svgs/title.svg" alt="">
+                    <img src="/assets/default/svgs/title.svg" alt="title">
                     <input type="text" placeholder="Title" title="Title">
                     <div class="dropdown">
                         <button class="btn-link dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1870,17 +1870,17 @@
                     </div>
                 </li>
                 <li>
-                    <img src="/assets/default/svgs/grades.svg" alt="">
+                    <img src="/assets/default/svgs/grades.svg" alt="grades">
                     <input type="text" placeholder="Grade" title="Grade">
                     <em>Empty</em>
                 </li>
                 <li>
-                    <img src="/assets/default/svgs/book-saved.svg" alt="">
+                    <img src="/assets/default/svgs/book-saved.svg" alt="book-saved">
                     <input type="text" placeholder="Subject" title="Subject">
                     <em>Empty</em>
                 </li>
                 <li>
-                    <img src="/assets/default/svgs/teacher-with-stick.svg" alt="">
+                    <img src="/assets/default/svgs/teacher-with-stick.svg" alt="teacher-with-stick">
                     <input type="text" placeholder="Co-teacher" title="Co-teacher">
                     <div class="dropdown">
                         <button class="btn-link dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1901,17 +1901,17 @@
                     </div>
                 </li>
                 <li>
-                    <img src="/assets/default/svgs/calendar-days.svg" alt="">
+                    <img src="/assets/default/svgs/calendar-days.svg" alt="calendar-days">
                     <input type="text" placeholder="Start Date" title="Start Date">
                     <em>Empty</em>
                 </li>
                 <li>
-                    <img src="/assets/default/svgs/deadlines.svg" alt="">
+                    <img src="/assets/default/svgs/deadlines.svg" alt="deadlines">
                     <input type="text" placeholder="Deadline :" title="Deadline :">
                     <em>Empty</em>
                 </li>
                 <li>
-                    <img src="/assets/default/svgs/attempt.svg" alt="">
+                    <img src="/assets/default/svgs/attempt.svg" alt="attempt">
                     <input type="text" placeholder="Participant attempts :" title="Participant attempts :">
                     <em>Empty</em>
                 </li>
