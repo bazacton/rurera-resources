@@ -1381,11 +1381,11 @@
                                         <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
                                             <div class="question-top-info">
                                                 <div class="question-count">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt=""></span>
+                                                    <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
                                                     <span class="question-count-lable">Question 1 of 20</span>
                                                 </div>
                                                 <div class="question-info">
-                                                    <span class="q-type"><img src="/assets/default/svgs/multi-choice.svg" alt="">Multiple choice</span>
+                                                    <span class="q-type"><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice">Multiple choice</span>
                                                     <span class="q-time">Avg time</span>
                                                     <span class="q-point">1 point</span>
                                                     <div class="edit-options-controls">
@@ -1396,7 +1396,7 @@
                                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                                                 <ul>
                                                                     <li>
-                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Add a similar question</a>
+                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt="ai"> Add a similar question</a>
                                                                         <ul class="sub-dropdown">
                                                                             <li><a href="#">1</a></li>
                                                                             <li><a href="#">3</a></li>
@@ -1405,7 +1405,7 @@
                                                                         </ul>
                                                                     </li>
                                                                     <li>
-                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Turn into</a>
+                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt="ai"> Turn into</a>
                                                                         <ul class="sub-dropdown">
                                                                             <li><a href="#">Drag Drop</a></li>
                                                                             <li><a href="#">Dropdown</a></li>
@@ -1413,16 +1413,16 @@
                                                                         </ul>
                                                                     </li>
                                                                     <li>
-                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Add explanation</a>
+                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt="ai"> Add explanation</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Fix grammatical and spelling</a>
+                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt="ai"> Fix grammatical and spelling</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Replace with a similar question</a>
+                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt="ai"> Replace with a similar question</a>
                                                                     </li>
                                                                     <li>
-                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Reduce options</a>
+                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt="ai"> Reduce options</a>
                                                                         <ul class="sub-dropdown">
                                                                             <li><a href="#">4</a></li>
                                                                             <li><a href="#">3</a></li>
@@ -1431,7 +1431,7 @@
                                                                         </ul>
                                                                     </li>
                                                                     <li>
-                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt=""> Write&nbsp;custom&nbsp;prompt</a>
+                                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/ai.svg" alt="ai"> Write&nbsp;custom&nbsp;prompt</a>
                                                                     </li>
                                                                 </ul>
                                                             </div>
@@ -1447,10 +1447,10 @@
                                         </div>
                                         <div class="elements-tooltip">
                                             <div class="elements-controls">
-                                                <button type="button"><img src="/assets/default/svgs/speech-bubble.svg" alt=""></button>
-                                                <button type="button"><img src="/assets/default/svgs/lock-open.svg" alt=""></button>
-                                                <button type="button"><img src="/assets/default/svgs/add-btn.svg" alt=""></button>
-                                                <button type="button"><img src="/assets/default/svgs/trash-bin.svg" alt=""></button>
+                                                <button type="button"><img src="/assets/default/svgs/speech-bubble.svg" alt="speech-bubble"></button>
+                                                <button type="button"><img src="/assets/default/svgs/lock-open.svg" alt="lock-open"></button>
+                                                <button type="button"><img src="/assets/default/svgs/add-btn.svg" alt="add-btn"></button>
+                                                <button type="button"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"></button>
                                                 <div class="edit-options-controls">
                                                     <div class="dropdown">
                                                         <button class="btn btn-link text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1483,7 +1483,7 @@
                                         </div>
                                         <div class="rureraform-column-input">
                                         <div class="rureraform-input">
-                                            <div class="form-box  rurera-in-row alphabet-list-style  ">
+                                            <div class="form-box  rurera-in-row alphabet-list-style">
                                             <div class="form-field rureraform-cr-container-medium">
                                                 <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-00-2424" value="3 hours 45 minutes">
                                                 <label for="field-24192-00-2424"> 3 hours 45 minutes </label>
@@ -1568,14 +1568,14 @@
                                                         <div class="img-select-box">
                                                             <input type="radio" name="img-box" id="box1">
                                                             <label for="box1">
-                                                                <img src="/store/1/tool-images/d5.png" alt="">
+                                                                <img src="/store/1/tool-images/d5.png" alt="d5">
                                                                 <span>List</span>
                                                             </label>
                                                         </div>
                                                         <div class="img-select-box">
                                                             <input type="radio" name="img-box" id="box2">
                                                             <label for="box2">
-                                                                <img src="/store/1/tool-images/d14.png" alt="">
+                                                                <img src="/store/1/tool-images/d14.png" alt="d14">
                                                                 <span>Essay</span>
                                                             </label>
                                                         </div>
