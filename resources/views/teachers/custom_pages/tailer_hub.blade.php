@@ -2596,23 +2596,23 @@
                                                                 <div class="rureraform-admin-popup-inner">
                                                                 <div class="rureraform-admin-popup-title">
                                                                     <a href="#" title="Close">
-                                                                    <i class="fas fa-times"></i>
+                                                                        <i class="fas fa-times"></i>
                                                                     </a>
                                                                     <h3>
-                                                                    <i class="fas fa-cog element-properties-label"></i> Multiple Choice 1
+                                                                        <i class="fas fa-cog element-properties-label"></i> Multiple Choice 1
                                                                     </h3>
                                                                 </div>
                                                                 <div class="rureraform-admin-popup-content">
                                                                     <div class="rureraform-admin-popup-content-form">
-                                                                    <div id="rureraform-tab-basic" class="rureraform-tab-content" style="display: block;">
-                                                                        <input type="hidden" name="rureraform-field_id" id="rureraform-field_id" value="48453" placeholder="">
-                                                                        <div class="rureraform-properties-item " data-id="label">
-                                                                        <div class="rureraform-properties-label">
-                                                                            <label>Label</label>
-                                                                        </div>
-                                                                        <div class="rureraform-properties-content">
-                                                                            <input type="text" name="rureraform-label" id="rureraform-label" value="Mark One answer" placeholder="">
-                                                                        </div>
+                                                                        <div id="rureraform-tab-basic" class="rureraform-tab-content" style="display: block;">
+                                                                            <input type="hidden" name="rureraform-field_id" id="rureraform-field_id" value="48453" placeholder="">
+                                                                            <div class="rureraform-properties-item " data-id="label">
+                                                                                <div class="rureraform-properties-label">
+                                                                                    <label>Label</label>
+                                                                                </div>
+                                                                                <div class="rureraform-properties-content">
+                                                                                    <input type="text" name="rureraform-label" id="rureraform-label" value="Mark One answer" placeholder="">
+                                                                                </div>
                                                                         </div>
                                                                         <div class="rureraform-properties-item d-flex align-items-center justify-content-between" data-id="have_images">
                                                                             <div class="rureraform-properties-label pb-0">
