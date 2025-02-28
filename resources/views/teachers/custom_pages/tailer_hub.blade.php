@@ -2907,26 +2907,26 @@
                                             </div>
                                             <div class="rureraform-col rureraform-col-4">
                                                 <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
-                                                <div class="rureraform-column-input">
-                                                    <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
-                                                    <div class="form-box ">
-                                                        <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                            <input class="editor-field" type="radio" name="field-40008" id="field-40008-0" value="True">
-                                                            <label for="field-40008-0">
-                                                                <span class="label-box"></span>
-                                                                <span class="inner-label">True</span>
-                                                            </label>
+                                                    <div class="rureraform-column-input">
+                                                        <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
+                                                        <div class="form-box ">
+                                                            <div class="lms-radio-select rurera-in-row justify-content-end">
+                                                            <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                                <input class="editor-field" type="radio" name="field-40008" id="field-40008-0" value="True">
+                                                                <label for="field-40008-0">
+                                                                    <span class="label-box"></span>
+                                                                    <span class="inner-label">True</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                                <input class="editor-field" type="radio" name="field-40008" id="field-40008-1" value="False">
+                                                                <label for="field-40008-1">
+                                                                    <span class="label-box"></span>
+                                                                    <span class="inner-label">False</span>
+                                                                </label>
+                                                            </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                            <input class="editor-field" type="radio" name="field-40008" id="field-40008-1" value="False">
-                                                            <label for="field-40008-1">
-                                                                <span class="label-box"></span>
-                                                                <span class="inner-label">False</span>
-                                                            </label>
-                                                        </div>
-                                                        </div>
-                                                    </div>
                                                     </div>
                                                     <label class="rureraform-description"></label>
                                                 </div>
