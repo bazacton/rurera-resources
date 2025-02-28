@@ -2972,35 +2972,35 @@
                                             </div>
                                             <div class="rureraform-col rureraform-col-8">
                                                 <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                <h6>When an endothermic reaction occurs, energy is absorbed, making the surroundings cooler.</h6>
+                                                    <h6>When an endothermic reaction occurs, energy is absorbed, making the surroundings cooler.</h6>
                                                 </div>
                                                 <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
-                                                <i>Hint:&nbsp;&nbsp;Endothermic reactions pull in heat from the surroundings.</i>
-                                                <div class="rureraform-element-cover"></div>
+                                                    <i>Hint:&nbsp;&nbsp;Endothermic reactions pull in heat from the surroundings.</i>
+                                                    <div class="rureraform-element-cover"></div>
                                                 </div>
                                             </div>
                                             <div class="rureraform-col rureraform-col-4">
                                                 <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
                                                 <div class="rureraform-column-input">
                                                     <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
-                                                    <div class="form-box ">
-                                                        <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                            <input class="editor-field" type="radio" name="field-21459" id="field-21459-0" value="True">
-                                                            <label for="field-21459-0">
-                                                                <span class="label-box"></span>
-                                                                <span class="inner-label">True</span>
-                                                            </label>
+                                                        <div class="form-box ">
+                                                            <div class="lms-radio-select rurera-in-row justify-content-end">
+                                                            <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                                <input class="editor-field" type="radio" name="field-21459" id="field-21459-0" value="True">
+                                                                <label for="field-21459-0">
+                                                                    <span class="label-box"></span>
+                                                                    <span class="inner-label">True</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
+                                                                <input class="editor-field" type="radio" name="field-21459" id="field-21459-1" value="False">
+                                                                <label for="field-21459-1">
+                                                                    <span class="label-box"></span>
+                                                                    <span class="inner-label">False</span>
+                                                                </label>
+                                                            </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                            <input class="editor-field" type="radio" name="field-21459" id="field-21459-1" value="False">
-                                                            <label for="field-21459-1">
-                                                                <span class="label-box"></span>
-                                                                <span class="inner-label">False</span>
-                                                            </label>
-                                                        </div>
-                                                        </div>
-                                                    </div>
                                                     </div>
                                                     <label class="rureraform-description"></label>
                                                 </div>
