@@ -2538,15 +2538,16 @@
                                                                 </div>
                                                             </div>
                                                             <div class="rureraform-col rureraform-col-12">
-                                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz"> Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm. <div class="rureraform-element-cover"></div>
-                                                            </div>
-                                                            </div>
-                                                            <div class="rureraform-col rureraform-col-12">
-                                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                <div class="question-label question_label">
-                                                                    <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
+                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz"> Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm. 
+                                                                    <div class="rureraform-element-cover"></div>
                                                                 </div>
                                                             </div>
+                                                            <div class="rureraform-col rureraform-col-12">
+                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                                    <div class="question-label question_label">
+                                                                        <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                             <div class="rureraform-col rureraform-col-12">
                                                                 <div id="rureraform-element-24192" class="quiz-group rureraform-element-24192 rureraform-element ui-sortable-handle" data-type="checkbox">
