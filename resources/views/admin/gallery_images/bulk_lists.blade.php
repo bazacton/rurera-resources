@@ -152,7 +152,7 @@ ul.crop_sizes {
             <div class="card card-statistic-1">
                 <div class="card-wrap">
                     <div class="card-header">
-                        <h4>Mohsin Today Count ({{date('Y-m-d')}})</h4>
+                        <h4>Mohsin Today Count ({{$date_text}})</h4>
                     </div>
                     <div class="card-body">
                         {{$mohsin_today_count}}
@@ -165,7 +165,7 @@ ul.crop_sizes {
             <div class="card card-statistic-1">
                 <div class="card-wrap">
                     <div class="card-header">
-                        <h4>Danish Today Count ({{date('Y-m-d')}})</h4>
+                        <h4>Danish Today Count ({{$date_text}})</h4>
                     </div>
                     <div class="card-body">
                         {{$danish_today_count}}
@@ -289,6 +289,26 @@ ul.crop_sizes {
 							</select>
 						</div>
 					</div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label class="input-label">{{ trans('admin/main.start_date') }}</label>
+                            <div class="input-group">
+                                <input type="date" id="fsdate" class="text-center form-control" name="from"
+                                       value="{{ get_filter_request('from', 'gallery_images_search') }}" placeholder="Start Date">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label class="input-label">{{ trans('admin/main.end_date') }}</label>
+                            <div class="input-group">
+                                <input type="date" id="lsdate" class="text-center form-control" name="to"
+                                       value="{{ get_filter_request('to', 'gallery_images_search') }}" placeholder="End Date">
+                            </div>
+                        </div>
+                    </div>
 
 
                     <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
