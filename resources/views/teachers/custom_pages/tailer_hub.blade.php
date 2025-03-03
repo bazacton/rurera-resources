@@ -10,12 +10,9 @@
 
 @section('content')
 <section class="section">
-   
-
     <div class="section-body skeleton">
-    <div class="row">
+        <div class="row">
             <div class="col-12 col-md-9 col-lg-9 mx-auto">
-
                 <!-- Modal -->
                 <div class="modal fade" id="dragModal" tabindex="-1" role="dialog" aria-labelledby="dragModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
@@ -47,7 +44,7 @@
                     <a href="#home" class="active skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-question.svg" alt="add-question"> Add Question</a>
                     <a href="#q-collections" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-collection.svg" alt="add-collection"> Add question from Collection</a>
                     <a href="#generate-ai" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/ai.svg" alt="ai"> Generate quiz using AI</a>
-                    <a href="#import-q" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/import-worksheet.svg" alt=""> Import Worksheets</a>
+                    <a href="#import-q" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/import-worksheet.svg" alt="import-worksheet"> Import Worksheets</a>
                 </div>
                 <div class="mb-30 bg-white panel-border rounded-sm p-15" style="display: none;">
                     <h6 class="search-lable">Search question from library</h6>
@@ -351,7 +348,7 @@
                                 <div class="view-explanation">
                                     <div class="explanation-controls d-flex align-items-center">
                                         <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
-                                           <i class="fas fa-plus"></i> Add Explanation
+                                        <i class="fas fa-plus"></i> Add Explanation
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list">
@@ -570,7 +567,7 @@
                                 <div class="view-explanation">
                                     <div class="explanation-controls d-flex align-items-center">
                                         <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
-                                           <i class="fas fa-plus"></i> Add Explanation
+                                        <i class="fas fa-plus"></i> Add Explanation
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list2" style="">
@@ -702,7 +699,7 @@
                                 <div class="view-explanation">
                                     <div class="explanation-controls d-flex align-items-center">
                                         <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
-                                           <i class="fas fa-plus"></i> Add Explanation
+                                        <i class="fas fa-plus"></i> Add Explanation
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list3" style="">
