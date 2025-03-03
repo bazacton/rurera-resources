@@ -769,7 +769,7 @@
                                             </div>
                                         </a>
                                         <a href="#" data-title="Questions Templates">
-                                            <img src="/store/1/tool-images/d2.png" alt=""> Multiple Response
+                                            <img src="/store/1/tool-images/d2.png" alt="d2"> Multiple Response
                                             <div class="templete-hover-element">
                                                 <div class="hover-box">
                                                     <div class="img-holder"></div>
