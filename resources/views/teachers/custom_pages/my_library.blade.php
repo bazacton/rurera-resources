@@ -994,35 +994,35 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="rureraform-properties-item " data-id="list_style">
-                                                            <div class="rureraform-properties-label">
-                                                                <label>Bullet list Style</label>
-                                                            </div>
-                                                            <div class="rureraform-properties-tooltip"></div>
-                                                            <div class="rureraform-properties-content">
-                                                                <div class="bullet-controls">
-                                                                    <button type="button">Enabled</button>
-                                                                    <button type="button">Enabled</button>
-                                                                    <button type="button" class="active">Selected</button>
+                                                            <div class="rureraform-properties-item " data-id="list_style">
+                                                                <div class="rureraform-properties-label">
+                                                                    <label>Bullet list Style</label>
+                                                                </div>
+                                                                <div class="rureraform-properties-tooltip"></div>
+                                                                <div class="rureraform-properties-content">
+                                                                    <div class="bullet-controls">
+                                                                        <button type="button">Enabled</button>
+                                                                        <button type="button">Enabled</button>
+                                                                        <button type="button" class="active">Selected</button>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        
-                                                        <input type="hidden" name="rureraform-elements_data" id="rureraform-elements_data" value="W3t9XQ==" placeholder="">
+                                                            
+                                                            <input type="hidden" name="rureraform-elements_data" id="rureraform-elements_data" value="W3t9XQ==" placeholder="">
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="rureraform-admin-popup-buttons">
-                                                    <a class="rureraform-admin-button duplicate-element btn btn-primary" href="#">
-                                                        <label>Update</label>
-                                                    </a>
-                                                    <a class="rureraform-admin-button generate-question-code rurera-hide" href="#">
-                                                        <label>Apply Changes</label>
-                                                    </a>
-                                                </div>
-                                                <div class="rureraform-admin-popup-loading" style="display: none;">
-                                                    <i class="fas fa-spinner fa-spin"></i>
-                                                </div>
+                                                    <div class="rureraform-admin-popup-buttons">
+                                                        <a class="rureraform-admin-button duplicate-element btn btn-primary" href="#">
+                                                            <label>Update</label>
+                                                        </a>
+                                                        <a class="rureraform-admin-button generate-question-code rurera-hide" href="#">
+                                                            <label>Apply Changes</label>
+                                                        </a>
+                                                    </div>
+                                                    <div class="rureraform-admin-popup-loading" style="display: none;">
+                                                        <i class="fas fa-spinner fa-spin"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1117,7 +1117,7 @@
                                                                         <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined skelton-hide">
                                                                             <input class="editor-field" type="radio" name="field-84793" id="field-84793-1" value="False">
                                                                             <label for="field-84793-1">
-                                                                            <span class="inner-label">False</span>
+                                                                                <span class="inner-label">False</span>
                                                                             </label>
                                                                         </div>
                                                                     </div>
