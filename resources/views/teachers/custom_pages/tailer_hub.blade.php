@@ -796,11 +796,11 @@
                                     <li data-type="question_templates" data-option="matching_template" data-elements="question_label_matching_template,match_quiz">
                                         <span class="templates-lable">Multiple Templates</span>    
                                         <a href="#" data-title="Questions Templates">
-                                        <img src="/store/1/tool-images/d7.png" alt=""> Matching </a>
+                                        <img src="/store/1/tool-images/d7.png" alt="d7"> Matching </a>
                                         <a href="#" data-title="Questions Templates">
-                                        <img src="/store/1/tool-images/d8.png" alt=""> Fill in the Blanks </a>
+                                        <img src="/store/1/tool-images/d8.png" alt="d8"> Fill in the Blanks </a>
                                         <a href="#" data-title="Questions Templates">
-                                        <img src="/store/1/tool-images/d9.png" alt=""> Select from Lists </a>
+                                        <img src="/store/1/tool-images/d9.png" alt="d9"> Select from Lists </a>
                                         <a href="#" data-title="Questions Templates">
                                         <img src="/store/1/tool-images/d10.png" alt="d10"> Drag the Words </a>
                                         <a href="#" data-title="Questions Templates">
