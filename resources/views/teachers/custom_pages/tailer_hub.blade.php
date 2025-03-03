@@ -785,13 +785,13 @@
                                     <li data-type="question_templates" data-option="true_false_template" data-elements="question_label_true_false,question_label_paragraph,truefalse_quiz">
                                         <span class="templates-lable">Multiple Templates</span>    
                                         <a href="#" data-title="Questions Templates">
-                                        <img src="/store/1/tool-images/d3.png" alt=""> True/False </a>
+                                        <img src="/store/1/tool-images/d3.png" alt="d3"> True/False </a>
                                         <a href="#" data-title="Questions Templates">
-                                        <img src="/store/1/tool-images/d4.png" alt=""> Short Answer </a>
+                                        <img src="/store/1/tool-images/d4.png" alt="d4"> Short Answer </a>
                                         <a href="#" data-title="Questions Templates">
-                                        <img src="/store/1/tool-images/d5.png" alt=""> Numeric </a>
+                                        <img src="/store/1/tool-images/d5.png" alt="d5"> Numeric </a>
                                         <a href="#" data-title="Questions Templates">
-                                        <img src="/store/1/tool-images/d6.png" alt=""> Sequence </a>
+                                        <img src="/store/1/tool-images/d6.png" alt="d6"> Sequence </a>
                                     </li>
                                     <li data-type="question_templates" data-option="matching_template" data-elements="question_label_matching_template,match_quiz">
                                         <span class="templates-lable">Multiple Templates</span>    
