@@ -1,9 +1,5 @@
-.admin_role button {
-    outline: none !important;
-}
-.panel-border {
-    border: 1px solid #ddd;
-}
+.admin_role button {outline: none !important;}
+.panel-border {border: 1px solid #ddd;}
 .drag-controls {position: absolute; right: -40px; top: 30px; height: calc(100% - 120px); border: 1px solid #cccccc; border-radius: 0 8px 8px 0 / 0 50px 50px 0; padding-top: 15px; background-color: #fff; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;}
 .open .drag-controls {right: 1px; opacity: 1; visibility: visible;}
 .controls-box {height: 100%; width: 100%;}
@@ -176,7 +172,6 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .flowchart-operator-inputs .flowchart-operator-connector-arrow,
 .flowchart-operator .flowchart-operator-inputs-outputs,
 .flowchart-link rect {visibility: hidden; opacity: 0;}
-
 /* Zoom Header Style End */
 
 /* Level Add Modal Style Start */
@@ -249,31 +244,10 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 /*listing-card style end*/
 
 /* Level Add Modal Style End */
-.editor-zone:has(.settings-controls-block) .book-dropzone {
-    width: calc(100% - 100px);
-}
-.settings-controls-block {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 99999;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 90px;
-    padding: 10px 5px 0;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-}
-.settings-controls-block .setting-controls {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--blue);
-    text-decoration: none;
-}
-.settings-controls-block .setting-controls i {
-    margin-right: 2px;
-    color: var(--blue);
-}
+.editor-zone:has(.settings-controls-block) .book-dropzone {width: calc(100% - 100px);}
+.settings-controls-block {position: absolute; right: 0; top: 0; z-index: 99999; background-color: rgba(255, 255, 255, 0.5); width: 90px; padding: 10px 5px 0; box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);}
+.settings-controls-block .setting-controls {display: block; margin-bottom: 8px; font-size: 13px; font-weight: 600; color: var(--blue); text-decoration: none;}
+.settings-controls-block .setting-controls i {margin-right: 2px; color: var(--blue);}
 
 @media (max-width: 992px) {
     body .editor-controls-holder {min-width: 375px; max-width: 375px;}
