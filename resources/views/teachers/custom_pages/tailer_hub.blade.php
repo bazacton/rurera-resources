@@ -833,7 +833,7 @@
                                         <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add questions on particular topic</a></li>
                                         <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Reduce/increase Options From MCQs</a></li>
                                         <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add learner’s name in the questions</a></li>
-                                        <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add answer's explanation</a></li>
+                                        <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add answer's explanation</a></li>
                                         <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Write custom prompt</a></li>
                                     </ul>
                                 </div>
