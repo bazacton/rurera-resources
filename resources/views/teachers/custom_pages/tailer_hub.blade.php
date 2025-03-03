@@ -1034,7 +1034,7 @@
                                                 <div class="field-box">
                                                     <input type="file" id="drag-drop">
                                                     <label for="drag-drop">
-                                                        <img src="/assets/default/svgs/spreadsheet.svg" alt="">
+                                                        <img src="/assets/default/svgs/spreadsheet.svg" alt="spreadsheet">
                                                         <span>Drag and drop your spreadsheet</span>
                                                     </label>
                                                 </div>
@@ -1119,8 +1119,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">1</div> What does UI <br > stand fo...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span> 
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span> 
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1130,8 +1130,8 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">2</div> Which aspect of UI de...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span>
+                                        <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
                             </a>
@@ -1284,7 +1284,7 @@
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">16</div> What does UI <br > stand fo...</div>
                                     <div class="question-type">
-                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span> 
+                                        <span><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice"> Multiple choice</span> 
                                         <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt="drag"></span>
                                     </div>
                                 </div>
