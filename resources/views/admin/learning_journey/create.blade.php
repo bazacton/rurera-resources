@@ -41,7 +41,7 @@
 
     span.dropzone-placeholder-left {
         display: block;
-        width: 150px;
+        width: 235px;
         height: 100%;
         background: #efefef;
         text-align: center;
@@ -58,7 +58,7 @@
 
     span.dropzone-placeholder-right {
         display: block;
-        width: 150px;
+        width: 235px;
         height: 100%;
         background: #efefef;
         text-align: center;
