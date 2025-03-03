@@ -18,9 +18,6 @@
     /*svg.flowchart-links-layer path:hover, svg.flowchart-links-layer path:active, svg.flowchart-links-layer path:focus {
         stroke: none !important;
     }*/
-
-
-
     span.dropzone-placeholder-top {
         display: block;
         width: 100%;
