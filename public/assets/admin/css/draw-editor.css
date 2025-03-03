@@ -130,6 +130,10 @@ body .editor-objects-block .nav .nav-item .nav-link {padding: 5px 15px;}
     width: 20px;
     border-radius: 100%;
 }
+.editor-zone span.dropzone-placeholder-left,
+.editor-zone span.dropzone-placeholder-right {
+    width: 235px;
+}
 .editor-objects-list li .dropdown-toggle:hover,
 .editor-objects-list li .dropdown-toggle:focus,
 .editor-objects-list li .show>.btn-secondary.dropdown-toggle {background-color: rgba(0, 0, 0, 0.1);}
