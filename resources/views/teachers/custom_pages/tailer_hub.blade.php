@@ -802,19 +802,19 @@
                                         <a href="#" data-title="Questions Templates">
                                         <img src="/store/1/tool-images/d9.png" alt=""> Select from Lists </a>
                                         <a href="#" data-title="Questions Templates">
-                                        <img src="/store/1/tool-images/d10.png" alt=""> Drag the Words </a>
+                                        <img src="/store/1/tool-images/d10.png" alt="d10"> Drag the Words </a>
                                         <a href="#" data-title="Questions Templates">
-                                        <img src="/store/1/tool-images/d11.png" alt=""> Hotspot </a>
+                                        <img src="/store/1/tool-images/d11.png" alt="d11"> Hotspot </a>
                                         <a href="#" data-title="Questions Templates">
-                                        <img src="/store/1/tool-images/d12.png" alt=""> Drag and Drop </a>
+                                        <img src="/store/1/tool-images/d12.png" alt="d12"> Drag and Drop </a>
                                     </li>
                                 
                                     <li data-type="question_templates" data-option="likert_template" data-elements="question_label">
                                         <span class="templates-lable">Multiple Templates</span>
                                         <a href="#" data-title="Questions Templates">
-                                        <img src="/store/1/tool-images/d13.png" alt=""> Likert Scale </a>
+                                        <img src="/store/1/tool-images/d13.png" alt="d13"> Likert Scale </a>
                                         <a href="#" data-title="Questions Templates">
-                                        <img src="/store/1/tool-images/d14.png" alt=""> Essay </a>
+                                        <img src="/store/1/tool-images/d14.png" alt="d14"> Essay </a>
                                     </li>
                                 </ul>
                             </div>
