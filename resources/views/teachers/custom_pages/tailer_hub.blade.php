@@ -829,15 +829,15 @@
                                 </button>
                                 <h6 class="search-lable">Enhance this quiz using AI</h6>
                                 <ul>
-                                    <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add similar questions</a></li>
-                                    <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Fix grammatical and spelling errors</a></li>
-                                    <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Translate questions</a></li>
-                                    <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Simplify questions</a></li>
-                                    <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add questions on particular topic</a></li>
-                                    <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Reduce/increase Options From MCQs</a></li>
-                                    <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add learner’s name in the questions</a></li>
+                                    <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add similar questions</a></li>
+                                    <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Fix grammatical and spelling errors</a></li>
+                                    <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Translate questions</a></li>
+                                    <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Simplify questions</a></li>
+                                    <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add questions on particular topic</a></li>
+                                    <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Reduce/increase Options From MCQs</a></li>
+                                    <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add learner’s name in the questions</a></li>
                                     <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add answer's explanation</a></li>
-                                    <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Write custom prompt</a></li>
+                                    <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Write custom prompt</a></li>
                                 </ul>
                             </div>
                             <div class="questions-inner-tabs">
