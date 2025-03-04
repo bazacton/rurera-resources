@@ -481,7 +481,7 @@ ul.crop_sizes {
 </div>
 
 <div class="card-footer text-center">
-{{ $GalleryBulkLists->links() }}
+{{ $GalleryBulkLists->appends(request()->query())->links(); }}
 </div>
 </div>
 </div>
