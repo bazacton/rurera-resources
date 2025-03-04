@@ -5296,44 +5296,12 @@ button.print-download-btn {
 .compliance-info {margin: 0 0 30px;}
 .compliance-info-text strong em {font-style: normal; color: #6c757d;}
 .compliance-tabs .nav-tabs {gap: 0 25px; margin: 0 0 15px;}
-.compliance-tabs .nav-tabs .nav-item .nav-link {
-    border: 0;
-    border-bottom: 2px solid transparent;
-    background-color: inherit;
-    color: #6c757d;
-    padding: 0 0 15px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    line-height: normal;
-    font-size: 16px;
-    font-weight: 600;
-}
-.compliance-tabs .nav-tabs button img {
-    height: 15px;
-    width: 15px;
-    filter: invert(48%) sepia(8%) saturate(448%) hue-rotate(167deg) brightness(92%) contrast(92%);
-    object-fit: contain;
-}
-.compliance-tabs .nav-tabs button.active img {
-    filter: invert(42%) sepia(53%) saturate(7487%) hue-rotate(200deg) brightness(103%) contrast(105%);
-}
-.compliance-tabs .nav-tabs .nav-item .nav-link.active {
-    border-bottom-color: var(--blue);
-    color: var(--blue);
-}
-.compliance-tabs .elements-title {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 0 15px;
-}
-.compliance-tabs .elements-title h2 {
-    font-size: 1.2rem;
-    color: #333;
-    margin: 0;
-}
+.compliance-tabs .nav-tabs .nav-item .nav-link {border: 0; border-bottom: 2px solid transparent; background-color: inherit; color: #6c757d; padding: 0 0 15px; display: inline-flex; align-items: center; gap: 8px; line-height: normal; font-size: 16px; font-weight: 600;}
+.compliance-tabs .nav-tabs button img {height: 15px; width: 15px; filter: invert(48%) sepia(8%) saturate(448%) hue-rotate(167deg) brightness(92%) contrast(92%); object-fit: contain;}
+.compliance-tabs .nav-tabs button.active img {filter: invert(42%) sepia(53%) saturate(7487%) hue-rotate(200deg) brightness(103%) contrast(105%);}
+.compliance-tabs .nav-tabs .nav-item .nav-link.active {border-bottom-color: var(--blue); color: var(--blue);}
+.compliance-tabs .elements-title {display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; margin: 0 0 15px;}
+.compliance-tabs .elements-title h2 {font-size: 1.2rem; color: #333; margin: 0;}
 .framework-controls button {
     border: 1px solid #ddd;
     border-radius: 8px;
