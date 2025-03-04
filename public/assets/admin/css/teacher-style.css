@@ -5302,132 +5302,32 @@ button.print-download-btn {
 .compliance-tabs .nav-tabs .nav-item .nav-link.active {border-bottom-color: var(--blue); color: var(--blue);}
 .compliance-tabs .elements-title {display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; margin: 0 0 15px;}
 .compliance-tabs .elements-title h2 {font-size: 1.2rem; color: #333; margin: 0;}
-.framework-controls button {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: inherit;
-    height: 38px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 15px;
-    min-width: 120px;
-}
-.framework-controls button img {
-    height: 30px;
-    width: 30px;
-}
-.framework-controls .logos-btn img {
-    height: 30px;
-    object-fit: contain;
-    width: auto;
-}
-.framework-controls {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-}
-.framework-listings .row {
-    margin: 0;
-}
-.framework-listings [class*="col-"] {
-    padding: 20px 25px;
-    border-left: 2px solid rgba(0,0,0,0.1);
-}
-.framework-listings {
-    border: 2px solid rgba(0,0,0,0.1);
-    border-radius: 8px;
-}
-.compliance-tabs .card-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 0 10px;
-}
-.compliance-tabs .card-heading h3 {
-    font-size: 1rem;
-    color: #333;
-    margin: 0;
-}
-.framework-listings [class*="col-"]:first-child {
-    border-left: 0;
-}
-.framework-card .card-heading a {
-    color: var(--blue);
-    text-decoration: underline;
-    display: inline-block;
-    line-height: normal;
-}
-.progress-list li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.logo-box img {
-    height: 25px;
-    width: 25px;
-    object-fit: contain;
-}
-.logo-box {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    width: 41%;
-}
-.logo-box span {
-    line-height: normal;
-    color: #333;
-    font-weight: bold;
-}
+.framework-controls button {border: 1px solid #ddd; border-radius: 8px; background-color: inherit; height: 38px; display: inline-flex; align-items: center; justify-content: flex-start; padding: 0 15px; min-width: 120px;}
+.framework-controls button img {height: 30px; width: 30px;}
+.framework-controls .logos-btn img {height: 30px; object-fit: contain; width: auto;}
+.framework-controls {display: inline-flex; align-items: center; gap: 10px;}
+.framework-listings .row {margin: 0;}
+.framework-listings [class*="col-"] {padding: 20px 25px; border-left: 2px solid rgba(0,0,0,0.1);}
+.framework-listings {border: 2px solid rgba(0,0,0,0.1); border-radius: 8px;}
+.compliance-tabs .card-heading {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; margin: 0 0 10px;}
+.compliance-tabs .card-heading h3 {font-size: 1rem; color: #333; margin: 0;}
+.framework-listings [class*="col-"]:first-child {border-left: 0;}
+.framework-card .card-heading a {color: var(--blue); text-decoration: underline; display: inline-block; line-height: normal;}
+.progress-list li {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;}
+.logo-box img {height: 25px; width: 25px; object-fit: contain;}
+.logo-box {display: inline-flex; align-items: center; gap: 10px; width: 41%;}
+.logo-box span {line-height: normal; color: #333; font-weight: bold;}
 .value-box {width: 25%;text-align: center;}
-.value-box span {
-    font-weight: bold;
-    color: #333;
-    line-height: normal;
-    display: inline-block;
-    text-align: right;
-    min-width: 35px;
-}
-.value-box span em {
-    font-style: normal;
-    color: #6c757d;
-}
-.progress-list li .progress-box {
-    padding: 0;
-    gap: 5px;
-    justify-content: flex-end;
-    width: 33%;
-}
-.progress-list li .progress-box:before {
-    display: none;
-}
+.value-box span {font-weight: bold; color: #333; line-height: normal; display: inline-block; text-align: right; min-width: 35px;}
+.value-box span em {font-style: normal; color: #6c757d;}
+.progress-list li .progress-box {padding: 0; gap: 5px; justify-content: flex-end; width: 33%;}
+.progress-list li .progress-box:before {display: none;}
 .progress-list li .progress-box img {height: 25px;width: 25px;object-fit: contain;}
-.progress-list li .progress-box span {
-    font-weight: bold;
-    color: #333;
-    line-height: normal;
-    text-align: right;
-}
-.progress-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.framework-card .chart-box img {
-    max-width: 100%;
-    object-fit: contain;
-}
-.chart-box.circle-chart img {
-    max-width: 90%;
-}
-.categories-listing-card {
-    border: 2px solid rgba(0,0,0,0.1);
-    height: 100%;
-    border-radius: 8px;
-    padding: 20px 25px;
-}
+.progress-list li .progress-box span {font-weight: bold; color: #333; line-height: normal; text-align: right;}
+.progress-list {display: flex; flex-direction: column; gap: 10px;}
+.framework-card .chart-box img {max-width: 100%; object-fit: contain;}
+.chart-box.circle-chart img {max-width: 90%;}
+.categories-listing-card {border: 2px solid rgba(0,0,0,0.1); height: 100%; border-radius: 8px; padding: 20px 25px;}
 .compliance-tabs .card-heading img {
     height: 20px;
     width: 20px;
