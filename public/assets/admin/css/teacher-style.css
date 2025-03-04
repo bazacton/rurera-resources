@@ -5328,43 +5328,14 @@ button.print-download-btn {
 .framework-card .chart-box img {max-width: 100%; object-fit: contain;}
 .chart-box.circle-chart img {max-width: 90%;}
 .categories-listing-card {border: 2px solid rgba(0,0,0,0.1); height: 100%; border-radius: 8px; padding: 20px 25px;}
-.compliance-tabs .card-heading img {
-    height: 20px;
-    width: 20px;
-    vertical-align: middle;
-    filter: invert(42%) sepia(53%) saturate(7487%) hue-rotate(200deg) brightness(103%) contrast(105%);
-    margin: 0 5px 0 0;
-}
-.compliance-tabs .user-attempt-status {
-    padding-left: 30px;
-}
-.user-attempt-status .no-attempt span {
-    box-shadow: 0px 0px 0 1px rgba(0,0,0,0.1);
-}
-.compliance-tabs .user-attempt-status ul {
-    gap: 5px 8px;
-    margin: 0 0 5px;
-}
-.compliance-tabs .attempt-info {
-    justify-content: space-between;
-    width: 100%;
-}
-.compliance-tabs .attempt-info span {
-    line-height: normal;
-    font-weight: bold;
-    color: #333;
-    font-size: 14px;
-    border: 0;
-    padding: 0;
-    gap: 0;
-}
-.compliance-tabs .attempt-info span em {
-    font-size: 14px;
-    color: #6c757d;
-}
-.compliance-tabs .dropdown-box .dropdown-toggle img {
-    margin: 0;
-}
+.compliance-tabs .card-heading img {height: 20px; width: 20px; vertical-align: middle; filter: invert(42%) sepia(53%) saturate(7487%) hue-rotate(200deg) brightness(103%) contrast(105%); margin: 0 5px 0 0;}
+.compliance-tabs .user-attempt-status {padding-left: 30px;}
+.user-attempt-status .no-attempt span {box-shadow: 0px 0px 0 1px rgba(0,0,0,0.1);}
+.compliance-tabs .user-attempt-status ul {gap: 5px 8px; margin: 0 0 5px;}
+.compliance-tabs .attempt-info {justify-content: space-between; width: 100%;}
+.compliance-tabs .attempt-info span {line-height: normal; font-weight: bold; color: #333; font-size: 14px; border: 0; padding: 0; gap: 0;}
+.compliance-tabs .attempt-info span em {font-size: 14px; color: #6c757d;}
+.compliance-tabs .dropdown-box .dropdown-toggle img {margin: 0;}
 /* Compliance Programes Style End */
 
 /* Skeleton Loading Style Start */
