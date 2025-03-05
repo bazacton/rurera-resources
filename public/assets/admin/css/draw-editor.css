@@ -252,9 +252,6 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .flowchart-links-layer .roadmap-default .roadmap-default {
     stroke: #3366ff;
 }
-.flowchart-links-layer .roadmap-default .roadmap-default:hover {
-    stroke: #1f3d99;
-}
 
 @media (max-width: 992px) {
     body .editor-controls-holder {min-width: 375px; max-width: 375px;}
