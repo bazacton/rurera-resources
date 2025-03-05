@@ -249,6 +249,12 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .settings-controls-block {position: absolute; right: 0; top: 0; z-index: 99999; background-color: rgba(255, 255, 255, 0.5); width: 90px; padding: 10px 5px 0; box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);}
 .settings-controls-block .setting-controls {display: block; margin-bottom: 8px; font-size: 13px; font-weight: 600; color: var(--blue); text-decoration: none;}
 .settings-controls-block .setting-controls i {margin-right: 2px; color: var(--blue);}
+.flowchart-links-layer .roadmap-default .roadmap-default {
+    stroke: #3366ff;
+}
+.flowchart-links-layer .roadmap-default .roadmap-default:hover {
+    stroke: #1f3d99;
+}
 
 @media (max-width: 992px) {
     body .editor-controls-holder {min-width: 375px; max-width: 375px;}
