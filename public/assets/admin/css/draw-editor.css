@@ -250,7 +250,7 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .settings-controls-block .setting-controls {display: block; margin-bottom: 8px; font-size: 13px; font-weight: 600; color: var(--blue); text-decoration: none;}
 .settings-controls-block .setting-controls i {margin-right: 2px; color: var(--blue);}
 .flowchart-links-layer .roadmap-default .roadmap-default {
-    stroke: #3366ff;
+    stroke: #3366ff !important;
 }
 
 @media (max-width: 992px) {
