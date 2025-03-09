@@ -1,3 +1,5 @@
+@php $page_no = isset($page_no)? $page_no : 1; @endphp
+<input type="hidden" name="page_no" class="page_no" value="{{$page_no}}">
 @if(isset($subChapterObj))
     @if($subChapterObj->TopicPartsItems->count() > 0)
     @foreach($subChapterObj->TopicPartsItems as $topicPartItemObj)

@@ -18,6 +18,9 @@
     /*svg.flowchart-links-layer path:hover, svg.flowchart-links-layer path:active, svg.flowchart-links-layer path:focus {
         stroke: none !important;
     }*/
+
+
+
     span.dropzone-placeholder-top {
         display: block;
         width: 100%;
@@ -33,12 +36,12 @@
         position: absolute;
         top: 0;
         left:0;
-        z-index: 3;
+        z-index: 1;
     }
 
     span.dropzone-placeholder-left {
         display: block;
-        width: 235px;
+        width: 150px;
         height: 100%;
         background: #efefef;
         text-align: center;
@@ -55,7 +58,7 @@
 
     span.dropzone-placeholder-right {
         display: block;
-        width: 235px;
+        width: 150px;
         height: 100%;
         background: #efefef;
         text-align: center;
@@ -262,7 +265,7 @@
             right: -10px;
         }
 
-	.field-data svg{height:auto; width: 100%;}
+	.field-data svg{height:auto; width: 50%;}
 
 
 	/* .editor-controls {
@@ -958,12 +961,14 @@
 
 					$el = $('<div></div>');
 
-					$el.append($('<div id="' + unique_id + '" style="width:20%;left:10%; top:10%;" data-item_title="Start" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id + '" data-id="' + unique_id + '" data-item_path="set1/start_stop.svg" data-field_type="stage_start" data-trigger_class="infobox-stage_start-fields" data-item_type="stage_start" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg"> <g transform="translate(26 26) scale(0.5)" stroke="#7c7d7e" stroke-width="3.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"> <circle fill="#FFF" cx="50" cy="50" r="50"/> <circle fill="#7c7d7e" cx="51" cy="50" r="20"/> </g> </svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+					$el.append($('<div id="' + unique_id + '" style="width:20%;left:10%; top:10%;" data-item_title="Start" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id + '" data-id="' + unique_id + '" data-item_path="set1/start_stop.svg" data-field_type="stage_start" data-trigger_class="infobox-stage_start-fields" data-item_type="stage_start" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg"> <g stroke="#7c7d7e" stroke-width="3.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"> <circle fill="#FFF" cx="50" cy="50" r="50"/> <circle fill="#7c7d7e" cx="51" cy="50" r="20"/> </g> </svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
 					$el.append('</div>');
 
-					$el.append($('<div id="' + unique_id2 + '" style="width:20%;left:20%; top:10%;" data-item_title="End" data-unique_id="' + unique_id2 + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id2 + '" data-id="' + unique_id2 + '" data-item_path="set1/start_stop.svg" data-field_type="stage_end" data-trigger_class="infobox-stage_end-fields" data-item_type="stage_end" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg"> <g transform="translate(26 26) scale(0.5)" stroke="#7c7d7e" stroke-width="3.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"> <circle fill="#FFF" cx="50" cy="50" r="50"/> <circle fill="#7c7d7e" cx="51" cy="50" r="20"/> </g> </svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+					$el.append($('<div id="' + unique_id2 + '" style="width:20%;left:20%; top:10%;" data-item_title="End" data-unique_id="' + unique_id2 + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + unique_id2 + '" data-id="' + unique_id2 + '" data-item_path="set1/start_stop.svg" data-field_type="stage_end" data-trigger_class="infobox-stage_end-fields" data-item_type="stage_end" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg"> <g  stroke="#7c7d7e" stroke-width="3.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"> <circle fill="#FFF" cx="50" cy="50" r="50"/> <circle fill="#7c7d7e" cx="51" cy="50" r="20"/> </g> </svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
 					$el.append('</div>');
 					$(".book-dropzone.active").append($el);
+
+
 
                     var dropZonObj = $(".book-dropzone.active");
 
@@ -1211,6 +1216,9 @@
 
 
             $(".book-dropzone.active").append($el);
+
+            $(".book-dropzone.active").closest('.editor-zone').find('.layout-template-item.active').click();
+
             $(".level_add_modal").modal('hide');
 
 
@@ -1282,7 +1290,7 @@
                 var unique_id = Math.floor((Math.random() * 99999) + 1);
                 var field_random_number = 'rand_' + unique_id;
                 // Perform an action with each topic_part_item_id
-                $el.append($('<div id="' + field_random_number + '" data-topic_part_item_id="' + topic_part_item_id + '" style="width:20%;left:0%; top:0%;" data-item_title="' + topic_title + '" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="topic" data-trigger_class="infobox-topic_numbers-fields" data-item_type="topic_numbers" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 258 264" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="257.641" width="263.774" height="257.64" rx="49.0743" transform="rotate(90 257.641 0)" fill="#8F5C57" ></rect></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
+                $el.append($('<div id="' + field_random_number + '" data-topic_part_item_id="' + topic_part_item_id + '" style="width:20%;left:0%; top:0%;" data-item_title="' + topic_title + '" data-unique_id="' + unique_id + '" data-is_new="yes" class="path-initializer flowchart-operator flowchart-default-operator drop-item form-group draggablecl field_settings draggable_field_' + field_random_number + '" data-id="' + field_random_number + '" data-item_path="default/topic_numbers.svg" data-field_type="topic" data-trigger_class="infobox-topic_numbers-fields" data-item_type="topic_numbers" data-paragraph_value="Test text here..."><div class="field-data"><svg width="100%" height="100%" viewBox="0 0 258 264" fill="none" xmlns="http://www.w3.org/2000/svg"><g ><rect x="257.641" width="263.774" height="257.64" rx="49.0743" transform="rotate(90 257.641 0)" fill="#8F5C57"></rect></g></svg><div class="flowchart-operator-inputs-outputs"><div class="flowchart-operator-inputs"></div><div class="flowchart-operator-outputs"></div></div>'));
                 $el.append('</div>');
                 layer_html += `<li data-id="${field_random_number}" data-field_postition="2">${topic_title}
                <div class="actions-menu">
@@ -1296,6 +1304,7 @@
 
 
                 $(".book-dropzone.active").append($el);
+                $(".book-dropzone.active").closest('.editor-zone').find('.layout-template-item.active').click();
                 //$(".level_add_modal").modal('hide');
 
 
@@ -2000,6 +2009,15 @@
     //*** Book Dropzone Zoom Function End ***//
 
 
+    document.addEventListener("DOMContentLoaded", function () {
+        const inputField = document.querySelector("input[name='page_height']");
+
+        inputField.addEventListener("input", function () {
+            if (this.value < 800) {
+                this.value = 800;
+            }
+        });
+    });
 
 
 

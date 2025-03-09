@@ -68,8 +68,10 @@
                         </div>
                     </div>
                     <div class="featured-list-sidebar-inner sub-chapters-list-data">
+                        <div class="topic-list-items-block">
                         @include('admin.learning_journey.includes.topic_list_items_list_layout', ['topicPartsItems' => $topicPartsItems])
 
+                        </div>
                         <button class="load-more-btn load-more-topic-items"><i class="fas fa-plus"></i> Load More</button>
                     </div>
                 </div>
@@ -364,6 +366,40 @@
                 }
             });
         });
+
+        var loadMoreRequest = null;
+        $(document).on('click', '.load-more-topic-items', function () {
+
+            var loadMorebtn = $('.load-more-topic-items');
+
+
+            rurera_loader(loadMorebtn, 'div');
+            var category_id = $(".search-filters .ajax-category-courses").val();
+            var subject_id = $(".search-filters .ajax-courses-dropdown").val();
+            var chapter_id = $(".search-filters .ajax-chapter-dropdown").val();
+            var sub_chapter_id = $(".search-filters .ajax-subchapter-dropdown").val();
+            var page_no = $(".page_no").val();
+            loadMoreRequest = $.ajax({
+                type: "GET",
+                url: '/admin/learning_journey/get_load_more_topic_part_items_list',
+                beforeSend: function () {
+                    if (loadMoreRequest != null) {
+                        loadMoreRequest.abort();
+                    }
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {'page_no': page_no, 'category_id': category_id, 'subject_id': subject_id, 'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id},
+                success: function (response) {
+                    rurera_remove_loader(loadMorebtn, 'button');
+                    $(".topic-list-items-block .page_no").remove();
+                    $(".topic-list-items-block").append(response);
+                }
+            });
+        });
+
+
 
 
     </script>

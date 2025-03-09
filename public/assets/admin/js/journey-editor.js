@@ -2,87 +2,112 @@ var stage_created = false;
 var template_layout = {
     layout1: {
         1: {
-            top: '78',
-            left: '0'
+            top: '66',
+            left: '12'
         },
         2: {
-            top: '78',
-            left: '49'
+            top: '66',
+            left: '42'
         },
         3: {
-            top: '59',
-            left: '79'
+            top: '66',
+            left: '68'
         },
+
+
         4: {
-            top: '60',
-            left: '23'
+            top: '50',
+            left: '68'
         },
         5: {
-            top: '39',
-            left: '3'
+            top: '50',
+            left: '42'
         },
         6: {
-            top: '35',
-            left: '50'
+            top: '50',
+            left: '12'
         },
+
+
         7: {
-            top: '20',
-            left: '78'
+            top: '35',
+            left: '12'
         },
         8: {
-            top: '13',
-            left: '5'
+            top: '35',
+            left: '42'
         },
         9: {
-            top: '0',
-            left: '38'
+            top: '35',
+            left: '68'
         },
+
         10: {
-            top: '0',
-            left: '78'
-        }
+            top: '20',
+            left: '68'
+        },
+        11: {
+            top: '20',
+            left: '42'
+        },
+        12: {
+            top: '20',
+            left: '12'
+        },
     },
     layout2: {
         1: {
-            top: '81',
-            left: '3'
+            top: '66',
+            left: '12'
         },
         2: {
-            top: '81',
-            left: '44'
+            top: '50',
+            left: '12'
         },
         3: {
-            top: '81',
-            left: '77'
+            top: '35',
+            left: '12'
         },
+
+
         4: {
-            top: '55',
-            left: '77'
+            top: '35',
+            left: '42'
         },
         5: {
-            top: '55',
-            left: '44'
+            top: '50',
+            left: '42'
         },
         6: {
-            top: '55',
-            left: '6'
+            top: '66',
+            left: '42'
         },
+
         7: {
-            top: '28',
-            left: '6'
+            top: '66',
+            left: '68'
         },
         8: {
-            top: '28',
-            left: '40'
+            top: '50',
+            left: '68'
         },
         9: {
-            top: '28',
+            top: '35',
+            left: '68'
+        },
+
+        10: {
+            top: '35',
             left: '75'
         },
-        10: {
-            top: '0',
-            left: '78'
-        }
+        11: {
+            top: '50',
+            left: '75'
+        },
+        12: {
+            top: '66',
+            left: '75'
+        },
     }
 };
 
@@ -1068,6 +1093,11 @@ function trigger_field_change(thisObj) {
                 var topPos = parseFloat($activeElement.css('top'));
                 //console.log('topPX----'+$activeElement.css('top'));
                 //console.log('topPXWITHTTT----'+topPos);
+
+                var element_top = parseFloat(this.style.top);
+
+                var topPos = (parseFloat(element_top) * current_height) / 100;
+
                 $activeElement.attr('data-topPx', topPos);
             });
 
@@ -1095,6 +1125,7 @@ function trigger_field_change(thisObj) {
 
                 var element_top_px = (parseFloat(element_top) * current_height) / 100;
 
+
                 console.log('element_top_px----'+element_top_px);
                 var parentHeight = this_value;
 
@@ -1106,7 +1137,7 @@ function trigger_field_change(thisObj) {
                 console.log('height----'+parentHeight)
                 // Set the CSS of the element with the percentages
                 $(this).css({
-                    top: element_top_px+'px'
+                    top: topPercent+'%'
                 });
                 //percentage * height / 100
             });
