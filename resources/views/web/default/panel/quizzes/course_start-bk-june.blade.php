@@ -231,7 +231,7 @@ $timer_counter = $practice_time;
 
                     <div class="quiz-status-bar">
                         <div class="correct-in-row"></div>
-                        <div class="quiz-questions-bar-holder">
+                        <div class="quiz-questions-bar-holder pl-0">
                             <div class="quiz-questions-bar">
                                 <span class="bar-fill" style="width: 0%;"></span>
                             </div>
