@@ -1104,7 +1104,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                             <form class="question-fields" action="javascript:;" data-question_id="0">
                                                 <div class="left-content has-bg">
                                                     <div class="quiz-status-bar">
-                                                        <div class="quiz-questions-bar-holder pl-0">
+                                                        <div class="quiz-questions-bar-holder">
                                                             <div class="quiz-questions-bar">
                                                                 <span class="value-lable" data-title="Target" style="left:90%"><span>90%</span></span>
                                                                 <span class="bar-fill" title="0%" style="width: 0%;"></span>
