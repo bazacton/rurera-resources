@@ -1698,6 +1698,7 @@ Inline-Style From Php Files Style Start
 .field-holder.wrong, .form-field.wrong, .form-field.wrong label {background: #ff4a4a; color: #fff; border-color: #c23131; border-radius: 10px;}
 .rurera-question-block{display:none;}
 .rurera-question-block.active{display:block;}
+.question-layout-block .left-content .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {padding-left:0;}
 
 /****************************************** 
 Inline-Style From Php Files Style End
