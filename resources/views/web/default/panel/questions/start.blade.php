@@ -21,7 +21,7 @@ $rand_id = rand(99,9999);
         <div class="container questions-data-block read-quiz-content" data-total_questions="0">
             <div class="justify-content-center">
                 <div class="col-lg-9 col-md-12 col-sm-12 mt-80 mx-auto">
-					<div class="quiz-status-bar">
+					<div class="quiz-status-bar pl-0">
 						<div class="quiz-questions-bar-holder">
 							<div class="quiz-questions-bar">
 								<span class="value-lable" data-title="Target" style="left:80%"><span>80%</span></span>
