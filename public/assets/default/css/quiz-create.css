@@ -1699,6 +1699,9 @@ Inline-Style From Php Files Style Start
 .rurera-question-block{display:none;}
 .rurera-question-block.active{display:block;}
 .question-layout-block .left-content .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {padding-left:0;}
+.question-layout-block .left-content .rureraform-col-6 .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {
+    padding-top: 10px;
+}
 
 /****************************************** 
 Inline-Style From Php Files Style End
