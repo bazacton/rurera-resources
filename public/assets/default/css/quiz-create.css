@@ -203,7 +203,7 @@ div.rureraform-element-checkbox-container div.rureraform-element-cover {display:
 
 /* True False Without Column Style Start, https://rurera.com/admin/questions_bank/34359/edit */
 .rureraform-element:has(.truefalse_quiz) {display: flex !important; align-items: center; flex-wrap: wrap;}
-.rureraform-element:has(span.truefalse_question_label) .truefalse_question_label {font-size: 1rem; font-weight: 700; width: 66.66666666%; padding-right: 15px; line-height: 24px;}
+.rureraform-element:has(span.truefalse_question_label) .truefalse_question_label {font-size: 1rem; font-weight: 700; width: 58%; padding-right: 15px; line-height: 24px;}
 .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {padding: 0 0 0 20px;}
 .question-result-layout .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {padding-left: 0;}
 .rureraform-builder .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {padding: 10px 0 0 0;}
@@ -1698,7 +1698,7 @@ Inline-Style From Php Files Style Start
 .field-holder.wrong, .form-field.wrong, .form-field.wrong label {background: #ff4a4a; color: #fff; border-color: #c23131; border-radius: 10px;}
 .rurera-question-block{display:none;}
 .rurera-question-block.active{display:block;}
-.question-layout-block .left-content .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {padding-left:0; width: calc(100% - 67%);}
+.question-layout-block .left-content .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {padding-left:0; width: calc(100% - 58%);}
 .question-layout-block .left-content .rureraform-col-6 .rureraform-element:has(span.truefalse_question_label) > .truefalse_quiz {
     padding-top: 10px;
 }
