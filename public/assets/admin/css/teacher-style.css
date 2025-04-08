@@ -194,13 +194,15 @@
     flex-wrap: wrap;
     gap: 10px 15px;
 }
-.inactivity-controls .continue-btn {
-    background-color: var(--blue);
+.inactivity-controls a {
     color: #fff;
     padding: 5px 15px;
     line-height: normal;
     display: block;
     border-radius: 3px;
+}
+.inactivity-controls .continue-btn {
+    background-color: var(--blue);
 }
 /* Rurera-Confirm-Modal Style End */
 
