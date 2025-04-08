@@ -284,13 +284,16 @@
     position: relative;
 }
 .admin_teacher_role .create-class-modal .draggable-lists .input-group:has(.select2) .input-group-append .btn {
-    border-radius: 0;
+    border-radius: 0 5px 5px 0;
     padding: 12px 12px;
     box-shadow: none;
 }
 .admin_teacher_role .create-class-modal .draggable-lists .input-group:has(.select2) .input-group-append {
     position: absolute;
     right: 0;
+}
+.admin_teacher_role .create-class-modal input[name="section_code"] {
+    border-radius: 0 5px 5px 0;
 }
 .admin_teacher_role .create-class-modal .dropdown-menu {
     min-width: auto;
