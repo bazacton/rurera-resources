@@ -208,6 +208,11 @@
     background-color: #ffdada;
     color: #b42525;
 }
+.rurera-confirm-modal .confirm-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
 /* Rurera-Confirm-Modal Style End */
 
 /* Admin Classes Style End */
