@@ -200,6 +200,7 @@
     line-height: normal;
     display: block;
     border-radius: 3px;
+    text-decoration: none;
 }
 .inactivity-controls .continue-btn {
     background-color: var(--blue);
@@ -294,6 +295,7 @@
 }
 .admin_teacher_role .create-class-modal input[name="section_code"] {
     border-radius: 0 5px 5px 0;
+    border-left: 0;
 }
 .admin_teacher_role .create-class-modal .dropdown-menu {
     min-width: auto;
