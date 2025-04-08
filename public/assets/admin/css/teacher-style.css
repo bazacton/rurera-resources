@@ -5518,44 +5518,17 @@ button.print-download-btn {
     .admin_teacher_role .main-wrapper nav.navbar.navbar-expand-lg.main-navbar {z-index: 10;}
 }
 @media screen and (max-width: 576px) {
-    .rureraform-search-field .input-field button {
-        width: 30px;
-        height: 30px;
-        padding: 0;
-    }
-    .rureraform-search-field button span {
-        display: none;
-    }
-    .rureraform-search-field button i {
-        margin: 0;
-        font-size: 14px;
-    }
-    .featured-filters select {
-        min-width: 100px;
-    }
-    .featured-filters {
-        gap: 5px;
-    }
-    .questions-header-inner h5 {
-        font-size: 16px;
-        margin-bottom: 15px;
-    }
-    .class-controls-option {
-        gap: 5px 0;
-    }
-    .question-count {
-        margin: 0 0 10px;
-    }
-    .question-layout .rureraform-element h6 {
-        font-size: 14px;
-        padding-right: 10px;
-    }
-    .admin_teacher_role .rurera-in-row {
-        justify-content: flex-start !important;
-    }
+    .rureraform-search-field .input-field button {width: 30px; height: 30px; padding: 0;}
+    .rureraform-search-field button span {display: none;}
+    .rureraform-search-field button i {margin: 0; font-size: 14px;}
+    .featured-filters select {min-width: 100px;}
+    .featured-filters {gap: 5px;}
+    .questions-header-inner h5 {font-size: 16px; margin-bottom: 15px;}
+    .class-controls-option {gap: 5px 0;}
+    .question-count {margin: 0 0 10px;}
+    .question-layout .rureraform-element h6 {font-size: 14px; padding-right: 10px;}
+    .admin_teacher_role .rurera-in-row {justify-content: flex-start !important;}
     .admin_teacher_role .alphabet-list-style .field-holder:has(input), 
     .admin_teacher_role .alphabet-list-style .form-field:has(input),
-    .admin_teacher_role .lms-radio-select .form-field {
-        width: 100%;
-    }
+    .admin_teacher_role .lms-radio-select .form-field {width: 100%;}
 }
