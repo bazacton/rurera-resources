@@ -333,7 +333,7 @@
 .admin_teacher_role .create-class-modal .input-group-append .btn {border-radius: 3px;}
 .admin_teacher_role .create-class-modal .select2-container .select2-selection {
     padding: 0;
-    margin: 10px 0 0;
+    margin: 10px 0;
     border-color: #e4e6fc;
 }
 .admin_teacher_role .create-class-modal .draggable-lists .input-group:has(select):before {
