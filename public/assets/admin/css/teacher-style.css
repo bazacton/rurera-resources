@@ -354,11 +354,19 @@
     content: "";
     background-color: #fff;
     border: #e4e6fc solid 1px;
+    border-radius: 2px;
     height: 18px;
     width: 16px;
-    display: inline-block;
-    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 6px 0 0;
+}
+.questions-select-number input[type=checkbox]:checked ~ label::before {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: #fff;
+    content: "\2713";
 }
 .questions-select-number input[type=checkbox], 
 .questions-select-number input[type=radio] {
