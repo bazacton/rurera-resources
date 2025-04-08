@@ -7,49 +7,17 @@
 .admin_teacher_role .ui-sortable-handle,
 .admin_teacher_role .sort-handler {cursor: auto;}
 /* Admin Left Menue Style Start */
-.admin_teacher_role .main-sidebar {
-    background-color: #fff;
-    border-right: 1px solid #f2f2f2;
-    z-index: 6;
-}
-.admin_teacher_role .main-sidebar .sidebar-brand {
-    padding: 0 15px;
-}
-.admin_teacher_role .main-sidebar .sidebar-menu {
-    border-top: 1px solid #f2f2f2;
-    padding-top: 10px;
-    margin-top: 10px;
-}
-.main-sidebar .sidebar-menu li.menu-header {
-    border-top: 1px solid #ddd;
-    padding-top: 15px;
-}
+.admin_teacher_role .main-sidebar {background-color: #fff; border-right: 1px solid #f2f2f2; z-index: 6;}
+.admin_teacher_role .main-sidebar .sidebar-brand {padding: 0 15px;}
+.admin_teacher_role .main-sidebar .sidebar-menu {border-top: 1px solid #f2f2f2; padding-top: 10px; margin-top: 10px;}
+.main-sidebar .sidebar-menu li.menu-header {border-top: 1px solid #ddd; padding-top: 15px;}
 /* Admin Left Menue Style End */
 
 /* Admin Classes Style Start */
-.admin_teacher_role .nav-area {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #f6f6f6;
-}
-.admin_teacher_role .teacher-controls {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-bottom: 10px;
-}
-.admin_teacher_role .admin-rurera-tabs {
-    width: auto;
-    max-width: none;
-    margin-bottom: 0;
-    flex: 0 0 auto;
-    border: 0;
-}
-.admin_teacher_role .nav-area:has(.teacher-controls) .admin-rurera-tabs {
-    margin-bottom: -8px;
-}
+.admin_teacher_role .nav-area {display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px; border-bottom: 1px solid #f6f6f6;}
+.admin_teacher_role .teacher-controls {display: flex; align-items: center; gap: 10px; padding-bottom: 10px;}
+.admin_teacher_role .admin-rurera-tabs {width: auto; max-width: none; margin-bottom: 0; flex: 0 0 auto; border: 0;}
+.admin_teacher_role .nav-area:has(.teacher-controls) .admin-rurera-tabs {margin-bottom: -8px;}
 .admin_teacher_role .classes-card {
     background-color: #009788;
     border-radius: 8px;
