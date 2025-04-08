@@ -339,6 +339,27 @@
 .admin_teacher_role .create-class-modal .draggable-lists .input-group:has(select):before {
     opacity: 0;
 }
+.questions-select-number label {
+    position: relative;
+}
+.questions-select-number label::before {
+    position: absolute;
+    top: .25rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    background-color: #fff;
+    border: #adb5bd solid 1px;
+}
+.questions-select-number input[type=checkbox], 
+.questions-select-number input[type=radio] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
 /* Admin Create-Class-Modal Style End */
 
 /* Admin Create-Google-Class-Modal Style Start */
