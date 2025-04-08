@@ -284,11 +284,13 @@
     position: relative;
 }
 .admin_teacher_role .create-class-modal .draggable-lists .input-group:has(.select2) .input-group-append .btn {
-    border-radius: 3px;
+    border-radius: 0;
+    padding: 12px 12px;
+    box-shadow: none;
 }
 .admin_teacher_role .create-class-modal .draggable-lists .input-group:has(.select2) .input-group-append {
-    width: 100%;
-    justify-content: flex-end;
+    position: absolute;
+    right: 0;
 }
 .admin_teacher_role .create-class-modal .dropdown-menu {
     min-width: auto;
@@ -350,7 +352,7 @@
 }
 .admin_teacher_role .create-class-modal .select2-container .select2-selection {
     padding: 0;
-    margin: 10px 0;
+    margin: 10px 0 0;
     border-color: #e4e6fc;
 }
 .admin_teacher_role .create-class-modal .draggable-lists .input-group:has(select):before {
