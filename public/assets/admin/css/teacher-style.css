@@ -272,6 +272,9 @@
 .admin_teacher_role .create-class-modal .input-group-append {
     position: relative;
 }
+.admin_teacher_role .create-class-modal .draggable-lists:has(.select2) .input-group-append .btn {
+    border-radius: 3px;
+}
 .admin_teacher_role .create-class-modal .dropdown-menu {
     min-width: auto;
     border: 1px solid #ddd;
