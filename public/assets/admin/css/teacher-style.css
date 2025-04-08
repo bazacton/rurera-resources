@@ -326,6 +326,14 @@
     line-height: normal;
 }
 .create-class-modal .add-btn i {font-size: 14px;margin-right: 3px;}
+#subCategories strong {
+    color: #cbcbcb;
+}
+.admin_teacher_role .create-class-modal .input-group-append .btn {border-radius: 3px;}
+
+.admin_teacher_role .create-class-modal .select2-container {
+    margin-top: 10px;
+}
 /* Admin Create-Class-Modal Style End */
 
 /* Admin Create-Google-Class-Modal Style Start */
