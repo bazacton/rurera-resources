@@ -330,19 +330,13 @@
     color: #cbcbcb;
 }
 .admin_teacher_role .create-class-modal .input-group-append .btn {border-radius: 3px;}
-
-.admin_teacher_role .create-class-modal .select2-container {
-    margin-top: 0;
-    position: absolute;
-    right: 12px;
-}
 .admin_teacher_role .create-class-modal .select2-container .select2-selection {
     padding: 0;
     border: 0;
     background-color: inherit;
 }
 .admin_teacher_role .create-class-modal .draggable-lists .input-group:has(select):before {
-    margin-top: -22px;
+    margin-top: -30px;
 }
 /* Admin Create-Class-Modal Style End */
 
