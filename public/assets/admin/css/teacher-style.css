@@ -333,10 +333,9 @@
 .admin_teacher_role .create-class-modal .select2-container .select2-selection {
     padding: 0;
     border: 0;
-    background-color: inherit;
 }
 .admin_teacher_role .create-class-modal .draggable-lists .input-group:has(select):before {
-    margin-top: -30px;
+    margin-top: -34px;
 }
 /* Admin Create-Class-Modal Style End */
 
