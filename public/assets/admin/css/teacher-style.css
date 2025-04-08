@@ -185,6 +185,25 @@
     align-items: center;
     gap: 10px;
 }
+
+/* Rurera-Confirm-Modal Style Start */
+.inactivity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+}
+.inactivity-controls .continue-btn {
+    background-color: var(--blue);
+    color: #fff;
+    padding: 5px 15px;
+    line-height: normal;
+    display: block;
+    border-radius: 3px;
+}
+/* Rurera-Confirm-Modal Style End */
+
 /* Admin Classes Style End */
 
 /* Admin Create-Class-Modal Style Start */
