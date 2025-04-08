@@ -322,14 +322,15 @@
 .create-class-modal .add-btn {
     background-color: #47c363;
     border-color: #47c363;
-    font-size: 16px;
+    box-shadow: none;
+    font-size: 14px;
     padding: 5px 10px;
     width: auto;
     border-radius: 3px;
     height: auto;
     line-height: normal;
 }
-.create-class-modal .add-btn i {font-size: 14px;margin-right: 3px;}
+.create-class-modal .add-btn i {font-size: 12px;margin-right: 3px;}
 #subCategories strong {
     color: #cbcbcb;
 }
