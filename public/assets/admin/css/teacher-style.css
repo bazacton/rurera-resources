@@ -342,12 +342,18 @@
 .admin_teacher_role .create-class-modal .draggable-lists .input-group:has(select):before {
     opacity: 0;
 }
+.questions-select-number ul {
+    line-height: normal;
+    align-items: flex-end;
+    gap: 8px 0;
+}
 .questions-select-number label {
     position: relative;
     padding-left: 0;
     margin: 0 12px 0 0;
     display: inline-flex;
     align-items: center;
+    cursor: pointer;
 }
 .questions-select-number label::before {
     pointer-events: none;
@@ -355,7 +361,7 @@
     background-color: #fff;
     border: #e4e6fc solid 1px;
     border-radius: 2px;
-    height: 18px;
+    height: 16px;
     width: 16px;
     display: inline-flex;
     align-items: center;
