@@ -204,6 +204,10 @@
 .inactivity-controls .continue-btn {
     background-color: var(--blue);
 }
+.inactivity-controls .confirm-approve-btn {
+    background-color: #ffdada;
+    color: #b42525;
+}
 /* Rurera-Confirm-Modal Style End */
 
 /* Admin Classes Style End */
