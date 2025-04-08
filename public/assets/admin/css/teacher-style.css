@@ -315,6 +315,17 @@
     background-color: #6bd700;
     border-color: #6bd700;
 }
+.create-class-modal .add-btn {
+    background-color: #47c363;
+    border-color: #47c363;
+    font-size: 16px;
+    padding: 5px 10px;
+    width: auto;
+    border-radius: 3px;
+    height: auto;
+    line-height: normal;
+}
+.create-class-modal .add-btn i {font-size: 14px;margin-right: 3px;}
 /* Admin Create-Class-Modal Style End */
 
 /* Admin Create-Google-Class-Modal Style Start */
