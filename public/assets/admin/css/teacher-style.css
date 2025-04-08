@@ -218,6 +218,9 @@
 /* Admin Classes Style End */
 
 /* Admin Create-Class-Modal Style Start */
+.create-class-modal .modal-footer {
+    padding-top: 0;
+}
 .admin_teacher_role .create-class-modal .form-control {
     background-color: inherit;
 }
