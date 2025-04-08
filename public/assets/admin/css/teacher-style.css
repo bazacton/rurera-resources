@@ -5506,37 +5506,16 @@ button.print-download-btn {
 @media screen and (max-width: 767px) {
     .document-left-sidebar,
     .document-content,
-    .document-right-sidebar {
-        width: 100%;
-    }
-    .document-right-sidebar {
-        height: auto;
-        padding-top: 15px;
-        position: relative;
-    }
-    .document-modal:has(.document-right-sidebar.active) .document-content {
-        padding-right: 15px;
-    }
-    .document-pdf {
-        height: auto;
-        width: 100%;
-    }
-    .rureraform-search-field .input-field {
-        width: 100%;
-    }
-    .document-content {
-        padding: 25px 10px 0;
-    }
-    .student-other-info span {
-        width: 47%;
-    }
+    .document-right-sidebar {width: 100%;}
+    .document-right-sidebar {height: auto; padding-top: 15px; position: relative;}
+    .document-modal:has(.document-right-sidebar.active) .document-content {padding-right: 15px;}
+    .document-pdf {height: auto; width: 100%;}
+    .rureraform-search-field .input-field {width: 100%;}
+    .document-content {padding: 25px 10px 0;}
+    .student-other-info span {width: 47%;}
     .question-content-header {padding-left: 15px;}
-    .admin_teacher_role .main-sidebar {
-        z-index: 891;
-    }
-    .admin_teacher_role .main-wrapper nav.navbar.navbar-expand-lg.main-navbar {
-        z-index: 10;
-    }
+    .admin_teacher_role .main-sidebar {z-index: 891;}
+    .admin_teacher_role .main-wrapper nav.navbar.navbar-expand-lg.main-navbar {z-index: 10;}
 }
 @media screen and (max-width: 576px) {
     .rureraform-search-field .input-field button {
