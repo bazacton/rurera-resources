@@ -283,8 +283,12 @@
 .admin_teacher_role .create-class-modal .input-group-append {
     position: relative;
 }
-.admin_teacher_role .create-class-modal .draggable-lists:has(.select2) .input-group-append .btn {
+.admin_teacher_role .create-class-modal .draggable-lists .input-group:has(.select2) .input-group-append .btn {
     border-radius: 3px;
+}
+.admin_teacher_role .create-class-modal .draggable-lists .input-group:has(.select2) .input-group-append {
+    width: 100%;
+    justify-content: flex-end;
 }
 .admin_teacher_role .create-class-modal .dropdown-menu {
     min-width: auto;
