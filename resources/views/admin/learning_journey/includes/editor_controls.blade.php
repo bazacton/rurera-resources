@@ -117,15 +117,19 @@ $item_path = isset( $data_values->item_path )? $data_values->item_path : 'roadma
                             $li_class = ($learningJourneyItemObj->item_type == 'stage_start')? 'stage_start' : '';
                             $li_class = ($learningJourneyItemObj->item_type == 'stage_end')? 'stage_end' : $li_class;
 
-                            $li_html = '<li class="'.$li_class.'" data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2" data-link_position="left-in">'.$learningJourneyItemObj->item_title;
+                            $li_class .= ($learningJourneyItemObj->item_visibility == 'no')? ' disable-link' : $li_class;
+
+                            $li_html = '<li class="'.$li_class.'" data-id="rand_'.$learningJourneyItemObj->id.'" data-field_postition="2" data-link_position="left-in">('.$learningJourneyItemObj->id.')'.$learningJourneyItemObj->item_title;
 
                             if( $learningJourneyItemObj->item_type != 'stage_start' && $learningJourneyItemObj->item_type != 'stage_end' ){
                                 $li_html .= '<div class="actions-menu">
                                     <i class="fa fa-trash"></i><i class="lock-layer fa fa-unlock"></i><i class="fa fa-sort"></i>
                                 </div>';
                             }else{
+                                $eye_class = ($learningJourneyItemObj->item_visibility == 'no')? ' fa-eye-slash' : 'fa-eye';
+
                                 $li_html .= '<div class="actions-menu">
-                                    <i class="fa fa-eye show_hide_start_layers show" data-item_type="'.$learningJourneyItemObj->item_type.'"></i>
+                                    <i class="fa '.$eye_class.' show_hide_start_layers show" data-item_type="'.$learningJourneyItemObj->item_type.'"></i>
                                 </div>';
                             }
                             $li_html .= '</li>';

@@ -1000,6 +1000,8 @@ $(document).on('click', '.editor-objects-list-all li .fa-trash', function (e) {
     var element_type = $('.field_settings[data-id="'+data_id+'"]').attr('data-field_type');
 	$('.field_settings[data-id="'+data_id+'"]').remove();
 	$(this).closest('li').remove();
+    $('.levels-objects-list li[data-id="'+data_id+'"]').remove();
+
 	sorting_render();
     levels_sorting_render();
     if(element_type == 'topic' || element_type == 'treasure' || element_type == 'spacer'){
@@ -1019,7 +1021,7 @@ $(document).on('click', '.editor-objects-list-all li .fa-trash', function (e) {
 
 });
 
-$(document).on('click', '.editor-objects-list-all li .fa-unlock', function (e) {
+$(document).on('click', '.editor-objects-list-all li .fa-unlock, .levels-objects-list li .fa-unlock', function (e) {
 	$(this).removeClass('fa-unlock');
 	$(this).addClass('fa-lock');
 	$(this).closest('li').addClass('locked-object');
@@ -1030,7 +1032,7 @@ $(document).on('click', '.editor-objects-list-all li .fa-unlock', function (e) {
 	$('.draggable_field_' + data_id).rotatable("disable");
 });
 
-$(document).on('click', '.editor-objects-list-all li .fa-lock', function (e) {
+$(document).on('click', '.editor-objects-list-all li .fa-lock, .levels-objects-list li .fa-lock', function (e) {
 	$(this).removeClass('fa-lock');
 	$(this).addClass('fa-unlock');
 	$(this).closest('li').removeClass('locked-object');
@@ -1597,6 +1599,7 @@ function generate_stage_area(){
 			var item_title = fieldObj.attr('data-item_title');
             var field_postition = fieldObj.attr('data-field_postition');
             var topic_part_item_id = fieldObj.attr('data-topic_part_item_id');
+            var item_visibility = fieldObj.attr('data-visibility');
 
 
 
@@ -1637,6 +1640,7 @@ function generate_stage_area(){
 			posted_data[field_id]['is_new'] = is_new;
             posted_data[field_id]['field_postition'] = field_postition;
             posted_data[field_id]['topic_part_item_id'] = topic_part_item_id;
+            posted_data[field_id]['item_visibility'] = item_visibility;
 
 
 		});
