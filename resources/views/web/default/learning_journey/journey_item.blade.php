@@ -8,9 +8,11 @@ if( $item_type == 'stage'){
 	//$style_parameter = 'margin: 18px 15px;';
 }
 $item_path_folder = '';
+$item_path_folder = ($item_type == 'stage_start' )? 'sets' : $item_path_folder;
+$item_path_folder = ($item_type == 'stage_end' )? 'sets' : $item_path_folder;
 $item_path_folder = ($item_type == 'stage' )? 'stages' : $item_path_folder;
 $item_path_folder = ($item_type == 'stage_objects' )? 'objects' : $item_path_folder;
-$item_path_folder = ($item_type == 'path' )? 'paths' : $item_path_folder;
+$item_path_folder = ($item_type == 'path' )? 'sets' : $item_path_folder;
 $item_path_folder = ($item_type == 'topic' )? 'sets' : $item_path_folder;
 $field_style = isset( $itemObj->field_style ) ?  $itemObj->field_style : '';
 $item_path = isset( $itemObj->item_path ) ?  $itemObj->item_path : '';
