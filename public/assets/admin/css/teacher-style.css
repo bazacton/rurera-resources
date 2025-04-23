@@ -93,7 +93,8 @@
 .admin_teacher_role .create-class-modal .form-control {
     background-color: inherit;
 }
-.admin_teacher_role .create-class-modal .form-group {
+.admin_teacher_role .create-class-modal .form-group,
+.admin_teacher_role .class-edit-modal .form-group {
     margin-bottom: 15px;
     padding-left: 0;
 }
