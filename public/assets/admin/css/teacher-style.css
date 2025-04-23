@@ -131,7 +131,14 @@
     margin-bottom: 10px;
     color: #555;
 }
-.admin_teacher_role .create-class-modal .dropdown-menu .dropdown-item {
+.admin_teacher_role .create-class-modal .dropdown-menu .class_color,
+.admin_teacher_role .class-edit-modal .dropdown-menu .class_color {
+    width: 100%;
+    margin: 0 0 10px;
+    border: 1px solid #ddd;
+}
+.admin_teacher_role .create-class-modal .dropdown-menu .dropdown-item,
+.admin_teacher_role .class-edit-modal .dropdown-menu .dropdown-item {
     margin: 0;
     height: 20px;
     width: 20px;
