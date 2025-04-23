@@ -110,7 +110,8 @@
     background-color: inherit !important;
     border-color: #e4e6fc !important;
 }
-.admin_teacher_role .create-class-modal .input-group-append .color-indicator {
+.admin_teacher_role .create-class-modal .input-group-append .color-indicator,
+.admin_teacher_role .class-edit-modal .input-group-append .color-indicator {
     height: 18px;
     width: 18px;
     border-radius: 100%;
