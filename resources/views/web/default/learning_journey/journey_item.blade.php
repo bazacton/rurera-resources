@@ -15,7 +15,6 @@ $item_path_folder = ($item_type == 'topic' )? 'topics' : $item_path_folder;
 $field_style = isset( $itemObj->field_style ) ?  $itemObj->field_style : '';
 $item_path = isset( $itemObj->item_path ) ?  $itemObj->item_path : '';
 $item_path = 'assets/editor/'.$item_path_folder.'/'.$item_path;
-pre($item_path, false);
 $svgCode = getFileContent($item_path);
 $svgCode = updateSvgDimensions($svgCode, '100%', '100%');
 $topic_quiz = isset( $data_values->topic )? $data_values->topic : 0;
