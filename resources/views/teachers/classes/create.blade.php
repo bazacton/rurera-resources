@@ -359,7 +359,7 @@
                                                                    class="form-control"
                                                                    value="{{ $sectionObj->class_code }}" readonly disabled/>
 
-                                                            <select class="form-control select2" name="sections[{{ $sectionObj->id }}][class_teachers][]" multiple="multiple">
+                                                            <select class="form-control select2 select2-hidden-accessible" name="sections[{{ $sectionObj->id }}][class_teachers][]" multiple="multiple">
                                                                 @if( $teachers->count() > 0)
                                                                     @foreach( $teachers as $teacherObj)
                                                                         @php $selected = in_array($teacherObj->id, $section_teachers)? 'selected' : ''; @endphp
