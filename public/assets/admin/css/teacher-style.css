@@ -233,9 +233,11 @@
     margin:0 2px;
     cursor: pointer;
     border: 1px solid #ddd;
-    padding: 4px 5px;
+    padding: 4px 4px;
     line-height: normal;
     border-radius: 3px;
+    min-width: 25px;
+    text-align: center;
 }
 .questions-select-number label::before {
     pointer-events: none;
