@@ -171,7 +171,7 @@
     position: relative;
     padding-left: 30px;
 }
-.admin_teacher_role .form-check input[type=checkbox] {
+.admin_teacher_role .form-check input[type="checkbox"] {
     position: absolute;
     width: 0;
     height: 0;
@@ -192,7 +192,7 @@
     font-size: 12px;
     line-height: 20px;
 }
-.admin_teacher_role input[type=checkbox]:checked ~ .custom-checkbox-label:before {
+.admin_teacher_role input[type="checkbox"]:checked ~ .custom-checkbox-label:before {
     background-color: #00a269;
     content: "\2713";
 }
