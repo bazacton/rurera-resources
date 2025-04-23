@@ -250,9 +250,9 @@
         <input
             type="checkbox"
             class="form-check-input"
-            id="requireGuardianEmail"
+            id="requireGuardianEmail2"
         />
-        <label class="form-check-label custom-checkbox-label" for="requireGuardianEmail">
+        <label class="form-check-label custom-checkbox-label" for="requireGuardianEmail2">
             Require students to enter a guardian's email address
         </label>
     </div>
@@ -260,9 +260,9 @@
         <input
             type="checkbox"
             class="form-check-input"
-            id="requireClassCode"
+            id="requireClassCode2"
         />
-        <label class="form-check-label custom-checkbox-label" for="requireClassCode">
+        <label class="form-check-label custom-checkbox-label" for="requireClassCode2">
             Require students to enter a class code
         </label>
     </div>
