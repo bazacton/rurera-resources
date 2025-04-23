@@ -1484,7 +1484,6 @@ New Quiz Page Style Start
     position: relative;
     padding-left: 30px;
 }
-
 .quiz-data-table th {
     font-size: 14px;
     color: #787d84;
@@ -1492,18 +1491,15 @@ New Quiz Page Style Start
     text-align: left;
     padding: 12px 15px;
 }
-
 .quiz-data-table tbody {
     background-color: #fff;
 }
-
 .quiz-data-table .checkbox-field input[type="checkbox"] {
     position: absolute;
     height: 0;
     width: 0;
     opacity: 0;
 }
-
 .quiz-data-table .checkbox-field label:before {
     content: "";
     position: absolute;
@@ -1516,13 +1512,11 @@ New Quiz Page Style Start
     border: 1px solid #ccc;
     border-radius: 3px;
 }
-
 .quiz-data-table td {
     padding: 10px 15px;
     font-size: 14px;
     text-align: left;
 }
-
 .quiz-data-table td label span {
     display: inline-flex;
     align-items: center;
@@ -1535,20 +1529,17 @@ New Quiz Page Style Start
     border-left: 3px solid #079207;
     cursor: pointer;
 }
-
 .quiz-data-table td label span img {
     height: 12px;
     width: 12px;
     filter: invert(31%) sepia(95%) saturate(953%) hue-rotate(88deg) brightness(101%) contrast(98%);
 }
-
 .quiz-data-table td small {
     display: block;
     font-size: 85%;
     line-height: normal;
     padding-top: 2px;
 }
-
 .quiz-data-table td small em {
     font-style: normal;
     color: #f23b69;
