@@ -199,35 +199,35 @@
         <div class="questions-select-number">
             <ul class="d-flex justify-content-center flex-wrap mb-30">
                 <li><input type="checkbox" value="10" name="tables_no[]" {{in_array(10,$tables_no)?
-                                            'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
+                                            'checked' : ''}} id="tables_ten10" /> <label for="tables_ten10">10</label></li>
                 <li><input type="checkbox" value="2" name="tables_no[]" {{in_array(2,$tables_no)?
-                                            'checked' : ''}} id="tables_two222" /> <label for="tables_two">2</label></li>
+                                            'checked' : ''}} id="tables_two2" /> <label for="tables_two2">2</label></li>
                 <li><input type="checkbox" value="5" name="tables_no[]" {{in_array(5,$tables_no)?
-                                            'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
+                                            'checked' : ''}} id="tables_five5" /> <label for="tables_five5">5</label></li>
                 <li><input type="checkbox" value="3" name="tables_no[]" {{in_array(3,$tables_no)?
-                                            'checked' : ''}} id="tables_three" /> <label for="tables_three">3</label></li>
+                                            'checked' : ''}} id="tables_three3" /> <label for="tables_three3">3</label></li>
                 <li><input type="checkbox" value="4" name="tables_no[]" {{in_array(4,$tables_no)?
-                                            'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
+                                            'checked' : ''}} id="tables_four4" /> <label for="tables_four4">4</label></li>
                 <li><input type="checkbox" value="8" name="tables_no[]" {{in_array(8,$tables_no)?
-                                            'checked' : ''}} id="tables_eight" /> <label for="tables_eight">8</label></li>
+                                            'checked' : ''}} id="tables_eight8" /> <label for="tables_eight8">8</label></li>
                 <li><input type="checkbox" value="6" name="tables_no[]" {{in_array(6,$tables_no)?
-                                            'checked' : ''}} id="tables_six" /> <label for="tables_six">6</label></li>
+                                            'checked' : ''}} id="tables_six6" /> <label for="tables_six6">6</label></li>
                 <li><input type="checkbox" value="7" name="tables_no[]" {{in_array(7,$tables_no)?
-                                            'checked' : ''}} id="tables_seven" /> <label for="tables_seven">7</label></li>
+                                            'checked' : ''}} id="tables_seven7" /> <label for="tables_seven7">7</label></li>
                 <li><input type="checkbox" value="9" name="tables_no[]" {{in_array(9,$tables_no)?
-                                            'checked' : ''}} id="tables_nine" /> <label for="tables_nine">9</label></li>
+                                            'checked' : ''}} id="tables_nine9" /> <label for="tables_nine9">9</label></li>
                 <li><input type="checkbox" value="11" name="tables_no[]" {{in_array(11,$tables_no)?
-                                            'checked' : ''}} id="tables_eleven" /> <label for="tables_eleven">11</label></li>
+                                            'checked' : ''}} id="tables_eleven11" /> <label for="tables_eleven11">11</label></li>
                 <li><input type="checkbox" value="12" name="tables_no[]" {{in_array(12,$tables_no)?
-                                            'checked' : ''}} id="tables_twelve" /> <label for="tables_twelve">12</label></li>
+                                            'checked' : ''}} id="tables_twelve12" /> <label for="tables_twelve12">12</label></li>
                 <li><input type="checkbox" value="13" name="tables_no[]" {{in_array(13,$tables_no)?
-                                            'checked' : ''}} id="tables_thirteen" /> <label for="tables_thirteen">13</label></li>
+                                            'checked' : ''}} id="tables_thirteen13" /> <label for="tables_thirteen13">13</label></li>
                 <li><input type="checkbox" value="14" name="tables_no[]" {{in_array(14,$tables_no)?
-                                            'checked' : ''}} id="tables_fourteen" /> <label for="tables_fourteen">14</label></li>
+                                            'checked' : ''}} id="tables_fourteen14" /> <label for="tables_fourteen14">14</label></li>
                 <li><input type="checkbox" value="15" name="tables_no[]" {{in_array(15,$tables_no)?
-                                            'checked' : ''}} id="tables_fifteen" /> <label for="tables_fifteen">15</label></li>
+                                            'checked' : ''}} id="tables_fifteen15" /> <label for="tables_fifteen15">15</label></li>
                 <li><input type="checkbox" value="16" name="tables_no[]" {{in_array(16,$tables_no)?
-                                            'checked' : ''}} id="tables_sixteen" /> <label for="tables_sixteen">16</label></li>
+                                            'checked' : ''}} id="tables_sixteen16" /> <label for="tables_sixteen16">16</label></li>
             </ul>
         </div>
     </div>
