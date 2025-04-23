@@ -18,7 +18,7 @@
 .admin_teacher_role .teacher-controls {display: flex; align-items: center; gap: 10px; padding-bottom: 10px;}
 .admin_teacher_role .admin-rurera-tabs {width: auto; max-width: none; margin-bottom: 0; flex: 0 0 auto; border: 0;}
 .admin_teacher_role .nav-area:has(.teacher-controls) .admin-rurera-tabs {margin-bottom: -8px;}
-.admin_teacher_role .classes-card {background-color: #009788; border-radius: 8px; overflow: hidden; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out;}
+.admin_teacher_role .classes-card {background-color: #009788; border-radius: 8px; overflow: hidden; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; min-width: 285px;}
 .admin_teacher_role .classes-card:hover {box-shadow: 0 0 10px rgba(0,0,0,0.5);}
 .admin_teacher_role .teacher-controls button {background-color: inherit; border: 0; padding: 6px 10px; border-radius: 5px; font-size: 14px; margin: 0 0 0 5px; display: inline-flex; align-items: center; border: 1px solid #ddd; outline: none;}
 .admin_teacher_role .teacher-controls button:focus {outline: none;}
