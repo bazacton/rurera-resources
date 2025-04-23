@@ -79,18 +79,22 @@
 /* Admin Classes Style End */
 
 /* Admin Create-Class-Modal Style Start */
-.create-class-modal .modal-footer {
+.create-class-modal .modal-footer,
+.class-edit-modal .modal-footer {
     padding-top: 0;
 }
-.create-class-modal .modal-footer button[type="button"] {
+.create-class-modal .modal-footer button[type="button"],
+.class-edit-modal .modal-footer button[type="button"] {
     background-color: #fedfdf;
     border-color: #b43939;
     color: #d21b1b;
 }
-.create-class-modal .modal-footer button {
+.create-class-modal .modal-footer button,
+.class-edit-modal .modal-footer button {
     box-shadow: none;
 }
-.admin_teacher_role .create-class-modal .form-control {
+.admin_teacher_role .create-class-modal .form-control,
+.admin_teacher_role .class-edit-modal .form-control  {
     background-color: inherit;
 }
 .admin_teacher_role .create-class-modal .form-group,
