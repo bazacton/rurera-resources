@@ -200,7 +200,8 @@
     background-color: #6bd700;
     border-color: #6bd700;
 }
-.create-class-modal .add-btn {
+.create-class-modal .add-btn,
+.class-edit-modal .add-btn {
     background-color: #47c363;
     border-color: #47c363;
     box-shadow: none;
