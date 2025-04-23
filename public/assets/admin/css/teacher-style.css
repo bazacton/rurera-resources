@@ -3690,7 +3690,6 @@ span.field-separated span:after {
     top: 0;
     right: -50px;
     border: 1px solid var(--blue);
-    background-color: inherit;
     color: var(--blue);
     padding: 5px 15px;
     border-radius: 3px;
