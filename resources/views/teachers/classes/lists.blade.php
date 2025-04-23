@@ -404,7 +404,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-12 d-flex align-items-center flex-wrap">
+            <div class="col-12 col-md-12 d-flex align-items-center flex-wrap px-1">
                 @foreach($classes as $classData)
                     @php $class_color = ($classData->class_color != '')? $classData->class_color : '#009788';
  @endphp
