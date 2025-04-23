@@ -268,12 +268,12 @@
     align-items: center;
     justify-content: center;
 }
-.questions-select-number input[type=checkbox]:checked ~ label {
+.questions-select-number input[type="checkbox"]:checked ~ label {
     background-color: var(--blue);
     border-color: var(--blue);
     color: #fff;
 }
-.questions-select-number input[type=checkbox], 
+.questions-select-number input[type="checkbox"], 
 .questions-select-number input[type=radio] {
     position: absolute;
     z-index: -1;
