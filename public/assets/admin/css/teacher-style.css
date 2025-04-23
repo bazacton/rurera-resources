@@ -3685,6 +3685,7 @@ span.field-separated span:after {
     background-color: #f2f2f2;
 }
 .question-add-btn {
+    background-color: #fff;
     position: absolute;
     top: 0;
     right: -50px;
