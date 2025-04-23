@@ -404,11 +404,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-12 d-flex align-items-center">
+            <div class="col-12 col-md-12 d-flex align-items-center flex-wrap">
                 @foreach($classes as $classData)
                     @php $class_color = ($classData->class_color != '')? $classData->class_color : '#009788';
  @endphp
-                    <div class="card text-white classes-card bg-teal mb-3" style="max-width: 18rem; position: relative; background-color:{{$class_color}}">
+                    <div class="card text-white classes-card bg-teal mb-3 mx-10" style="max-width: 18rem; min-width: 18rem; position: relative; background-color:{{$class_color}}">
                         <!-- Dropdown Menu -->
                         <div class="card-options dropdown">
                             <button
