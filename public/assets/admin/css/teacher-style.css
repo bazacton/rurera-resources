@@ -250,11 +250,10 @@
     align-items: center;
     justify-content: center;
 }
-.questions-select-number input[type=checkbox]:checked ~ label::before {
+.questions-select-number input[type=checkbox]:checked ~ label {
     background-color: var(--blue);
     border-color: var(--blue);
     color: #fff;
-    content: "\2713";
 }
 .questions-select-number input[type=checkbox], 
 .questions-select-number input[type=radio] {
