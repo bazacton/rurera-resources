@@ -408,62 +408,66 @@
                 @foreach($classes as $classData)
                     @php $class_color = ($classData->class_color != '')? $classData->class_color : '#009788';
  @endphp
-                    <div class="card text-white classes-card bg-teal mb-3" style="max-width: 18rem; position: relative; background-color:{{$class_color}}">
-                        <!-- Dropdown Menu -->
-                        <div class="card-options dropdown">
-                            <button
-                                class="btn btn-link text-white dropdown-toggle"
-                                type="button"
-                                id="dropdownMenuButton"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                            >
-                                <i class="fas fa-ellipsis-v"></i>
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                <a data-class_id="{{$classData->id}}" class="dropdown-item co-teacher-modal-btn" href="javascript:;"><i class="fas fa-user"></i> Add a co-teacher <i class="fas fa-lock"></i></a>
-                                <a data-class_id="{{$classData->id}}" class="dropdown-item edit-class-modal-btn" href="javascript:;"><i class="fas fa-edit"></i> Edit class details</a>
-                                <a data-class_id="{{$classData->id}}" class="dropdown-item " href="#"><i class="fas fa-lock"></i> Refresh Class Roster</a>
-                                <a data-class_id="{{$classData->id}}" class="dropdown-item archive-class" href="#"><i class="fa fa-archive"></i> Archive Class</a>
-                                <a data-class_id="{{$classData->id}}" class="dropdown-item text-danger delete-class" href="#"><i class="fa fa-trash"></i> Delete Class</a>
-                            </div>
-                        </div>
-
-                        <div class="card-body">
-                            <div class="card-title-holder skelton-hide">
-                                <h5 class="card-title">{{ $classData->title }}</h5>
-                            </div>
-                            <div class="card-description-holder skelton-hide">
-                                <p class="grade-text">{{ $classData->category->getTitleAttribute() }}</p>
-                                <p class="card-students">{{$classData->students->count()}} Students</p>
-                            </div>
-                            <div class="progress-holder skelton-hide">
-                                <p class="mb-1">1 completed activity</p>
-                                <div class="progress" style="height: 20px;">
-                                    <div
-                                        class="progress-bar progress-bar-custom"
-                                        role="progressbar"
-                                        style="width: 75%;"
-                                        aria-valuenow="75"
-                                        aria-valuemin="0"
-                                        aria-valuemax="100"
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                            <div class="card text-white classes-card bg-teal mb-3" style="max-width: 18rem; position: relative; background-color:{{$class_color}}">
+                                <!-- Dropdown Menu -->
+                                <div class="card-options dropdown">
+                                    <button
+                                        class="btn btn-link text-white dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
                                     >
-                                        75%
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a data-class_id="{{$classData->id}}" class="dropdown-item co-teacher-modal-btn" href="javascript:;"><i class="fas fa-user"></i> Add a co-teacher <i class="fas fa-lock"></i></a>
+                                        <a data-class_id="{{$classData->id}}" class="dropdown-item edit-class-modal-btn" href="javascript:;"><i class="fas fa-edit"></i> Edit class details</a>
+                                        <a data-class_id="{{$classData->id}}" class="dropdown-item " href="#"><i class="fas fa-lock"></i> Refresh Class Roster</a>
+                                        <a data-class_id="{{$classData->id}}" class="dropdown-item archive-class" href="#"><i class="fa fa-archive"></i> Archive Class</a>
+                                        <a data-class_id="{{$classData->id}}" class="dropdown-item text-danger delete-class" href="#"><i class="fa fa-trash"></i> Delete Class</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-3 bottom-controls skelton-hide">
-                                <button class="btn btn-light btn-sm user-btn">
-                                    <img src="/assets/default/img/class-user-icon.png" alt="">
-                                </button>
-                                <div class="right-area">
-                                    <button class="btn btn-light btn-sm">
-                                        <i class="fas fa-chart-line"></i>
-                                    </button>
-                                    <button class="btn btn-light btn-sm" title="Open folder for 'Grade 6 A' in Google Drive">
-                                        <i class="fas fa-folder-open"></i>
-                                    </button>
+
+                                <div class="card-body">
+                                    <div class="card-title-holder skelton-hide">
+                                        <h5 class="card-title">{{ $classData->title }}</h5>
+                                    </div>
+                                    <div class="card-description-holder skelton-hide">
+                                        <p class="grade-text">{{ $classData->category->getTitleAttribute() }}</p>
+                                        <p class="card-students">{{$classData->students->count()}} Students</p>
+                                    </div>
+                                    <div class="progress-holder skelton-hide">
+                                        <p class="mb-1">1 completed activity</p>
+                                        <div class="progress" style="height: 20px;">
+                                            <div
+                                                class="progress-bar progress-bar-custom"
+                                                role="progressbar"
+                                                style="width: 75%;"
+                                                aria-valuenow="75"
+                                                aria-valuemin="0"
+                                                aria-valuemax="100"
+                                            >
+                                                75%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-3 bottom-controls skelton-hide">
+                                        <button class="btn btn-light btn-sm user-btn">
+                                            <img src="/assets/default/img/class-user-icon.png" alt="">
+                                        </button>
+                                        <div class="right-area">
+                                            <button class="btn btn-light btn-sm">
+                                                <i class="fas fa-chart-line"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-sm" title="Open folder for 'Grade 6 A' in Google Drive">
+                                                <i class="fas fa-folder-open"></i>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
