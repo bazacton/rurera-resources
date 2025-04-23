@@ -246,6 +246,9 @@
     position: absolute;
     left: 0;
     top: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .questions-select-number input[type=checkbox]:checked ~ label::before {
     background-color: var(--blue);
