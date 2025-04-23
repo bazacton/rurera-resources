@@ -168,7 +168,7 @@
                                        class="form-control"
                                        value="{{$sectionObj->class_code}}" readonly disabled/>
 
-                                <select class="form-control select2" name="sections[section_code][class_teachers][]" multiple="multiple">
+                                <select class="form-control select2 select2-hidden-accessible" name="sections[section_code][class_teachers][]" multiple="multiple">
 
                                 </select>
 
