@@ -225,7 +225,7 @@
                                         <li><input type="checkbox" value="10" name="tables_no[]" {{in_array(10,$tables_no)?
                                             'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
                                         <li><input type="checkbox" value="2" name="tables_no[]" {{in_array(2,$tables_no)?
-                                            'checked' : ''}} id="tables_two" /> <label for="tables_two">2</label></li>
+                                            'checked' : ''}} id="tables_two22" /> <label for="tables_two">2</label></li>
                                         <li><input type="checkbox" value="5" name="tables_no[]" {{in_array(5,$tables_no)?
                                             'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
                                         <li><input type="checkbox" value="3" name="tables_no[]" {{in_array(3,$tables_no)?
