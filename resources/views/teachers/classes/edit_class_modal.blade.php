@@ -1,5 +1,5 @@
 <form action="{{ getAdminPanelUrl() }}/classes/{{$class->id}}/store"
-      method="POST">
+      method="POST" class="mb-0">
     @csrf
 
     <div class="form-group">
@@ -267,7 +267,7 @@
         </label>
     </div>
     </div>
-    <div class="modal-footer px-0">
+    <div class="modal-footer px-0 pb-0">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
         <button type="submit" class="btn btn-primary">Update class</button>
     </div>
