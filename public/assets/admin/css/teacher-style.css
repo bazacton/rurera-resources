@@ -560,108 +560,23 @@ Set Up Quiz Page Style End
 .listing-card .img-holder img {max-width: 100%; max-height: 100%; object-fit: cover;}
 .listing-card .text-holder {width: calc(100% - 135px); position: relative;}
 .listing-card .author-info img {width: 20px; height: 20px; border-radius: 100%; object-fit: cover;}
-.listing-lable {
-    color: #999;
-    font-size: 12px;
-    border: 1px solid #ddd;
-    border-radius: 30px;
-    display: inline-block;
-    line-height: normal;
-    padding: 2px 10px;
-    margin: 0 0 5px;
-    text-transform: uppercase;
-}
-.listing-card .text-holder h3 {
-    margin: 0 0 5px;
-    font-size: 1.2rem;
-}
-.list-options {
-    display: flex;
-    align-items: center;
-    gap: 10px 15px;
-    margin: 0 0 10px;
-    flex-wrap: wrap;
-}
-.list-options li {
-    font-size: 14px;
-    display: inline-flex;
-    align-items: center;
-    line-height: normal;
-    gap: 5px;
-}
-.list-options li img {
-    height: 12px;
-    width: 12px;
-    filter: invert(17%) sepia(9%) saturate(17%) hue-rotate(347deg) brightness(103%) contrast(94%);
-}
-.list-options li .icon-box {
-    line-height: 12px;
-    display: inline-block;
-}
-.question-list-options.list-options li img {
-    height: 15px;
-    width: 15px;
-}
-.author-info .info-text {
-    padding-left: 5px;
-    font-size: 14px;
-}
-.author-info .info-text span {
-    position: relative;
-    padding: 0 0 0 15px;
-}
-.author-info .info-text span:before {
-    content: "";
-    position: absolute;
-    left: 4px;
-    top: 50%;
-    height: 4px;
-    width: 4px;
-    background-color: #64748b;
-    border-radius: 100%;
-    margin-top: -2px;
-}
-.author-info .info-text span:first-child {
-    padding-left: 0;
-}
-.author-info .info-text span:first-child:before {
-    display: none;
-}
-.listing-controls {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-}
-.listing-controls button {
-    border: 0;
-    background-color: #f3f1f4;
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 3px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
-.listing-controls button img {
-    height: 12px;
-    width: 12px;
-}
-.listing-controls .dropdown-toggle {
-    background-color: var(--blue);
-    color: #fff !important;
-    height: 28px;
-    display: inline-flex;
-    align-items: center;
-    padding: 0 10px;
-    border-radius: 3px;
-    cursor: pointer;
-}
-.listing-controls .dropdown-toggle:hover {
-    color: #fff;
-}
+.listing-lable {color: #999; font-size: 12px; border: 1px solid #ddd; border-radius: 30px; display: inline-block; line-height: normal; padding: 2px 10px; margin: 0 0 5px; text-transform: uppercase;}
+.listing-card .text-holder h3 {margin: 0 0 5px; font-size: 1.2rem;}
+.list-options {display: flex; align-items: center; gap: 10px 15px; margin: 0 0 10px; flex-wrap: wrap;}
+.list-options li {font-size: 14px; display: inline-flex; align-items: center; line-height: normal; gap: 5px;}
+.list-options li img {height: 12px; width: 12px; filter: invert(17%) sepia(9%) saturate(17%) hue-rotate(347deg) brightness(103%) contrast(94%);}
+.list-options li .icon-box {line-height: 12px; display: inline-block;}
+.question-list-options.list-options li img {height: 15px; width: 15px;}
+.author-info .info-text {padding-left: 5px; font-size: 14px;}
+.author-info .info-text span {position: relative; padding: 0 0 0 15px;}
+.author-info .info-text span:before {content: ""; position: absolute; left: 4px; top: 50%; height: 4px; width: 4px; background-color: #64748b; border-radius: 100%; margin-top: -2px;}
+.author-info .info-text span:first-child {padding-left: 0;}
+.author-info .info-text span:first-child:before {display: none;}
+.listing-controls {position: absolute; right: 0; bottom: 0; display: inline-flex; align-items: center; gap: 10px;}
+.listing-controls button {border: 0; background-color: #f3f1f4; font-size: 14px; padding: 5px 10px; border-radius: 3px; display: inline-flex; align-items: center; gap: 8px;}
+.listing-controls button img {height: 12px; width: 12px;}
+.listing-controls .dropdown-toggle {background-color: var(--blue); color: #fff !important; height: 28px; display: inline-flex; align-items: center; padding: 0 10px; border-radius: 3px; cursor: pointer;}
+.listing-controls .dropdown-toggle:hover {color: #fff;}
 .listing-controls .dropdown-menu {
     left: auto !important;
     right: 0;
