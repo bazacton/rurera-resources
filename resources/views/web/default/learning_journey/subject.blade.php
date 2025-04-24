@@ -27,7 +27,7 @@
 	position:absolute;
 	margin: 0px 15px
 }
-.level-stage{position:relative;}
+.level-stage{position:relative; overflow: hidden;}
 
 
 
