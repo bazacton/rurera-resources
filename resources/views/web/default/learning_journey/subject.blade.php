@@ -168,7 +168,7 @@
 			$page_graph = ( $page_graph == 1)? 'graph-background' : '';
 			$subject_slug = isset($course->slug)? $course->slug : '';
 			$year_slug = isset($course->categories()->first()->slug)? $course->categories()->first()->slug : '';
-            pre($levelObj, false);
+            //pre($levelObj, false);
 
 			@endphp
 
