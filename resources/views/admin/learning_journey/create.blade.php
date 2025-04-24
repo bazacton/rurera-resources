@@ -1160,7 +1160,7 @@
             $(".posted-data").val(JSON.stringify(posted_data));
 
 
-            return false;
+            //return false;
 
         });
 
