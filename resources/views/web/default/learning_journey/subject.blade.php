@@ -1,8 +1,8 @@
 @extends('web.default.panel.layouts.panel_layout')
 @php use App\Models\Webinar; @endphp
-
+@php $rand_id = rand(0,9999); @endphp
 @push('styles_top')
-
+    <link rel="stylesheet" href="/assets/admin/css/jquery.flowchart.css?ver={{$rand_id}}">
 @endpush
 
 @section('content')
@@ -122,6 +122,7 @@
 @endsection
 
 @push('scripts_bottom')
+    <script src="/assets/admin/js/jquery.flowchart.js?ver={{$rand_id}}"></script>
 @if (!auth()->subscription('courses'))
     <script>
         if( $(".subscription-modal").length > 0){
