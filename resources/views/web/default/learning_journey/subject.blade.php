@@ -103,7 +103,10 @@
         position: absolute;
         left: 0;
     }
-
+    .field-data svg {
+        height: auto;
+        width: 50%;
+    }
 
     .field-data1 {
         position: relative;
