@@ -143,6 +143,10 @@
     width: 100%;
     margin: 0 0 10px;
     border: 1px solid #ddd;
+    padding: 2px 5px;
+    font-size: 14px;
+    border-radius: 3px;
+    outline: none;
 }
 .admin_teacher_role .create-class-modal .dropdown-menu .dropdown-item,
 .admin_teacher_role .class-edit-modal .dropdown-menu .dropdown-item {
