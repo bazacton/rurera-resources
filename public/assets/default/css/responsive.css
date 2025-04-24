@@ -89,7 +89,7 @@ Lms Responsive Style Start
     .panel-content .education-icon-box li:nth-child(1) {left: -38px; top: 15px;}
 }
 @media screen and (min-width: 992px) and (max-width: 1300px) {
-    .stats-list ul li {border-left: 0;width: 100%;padding: 0 0 15px;margin: 0 0 15px;text-align: left;border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
+    /* .stats-list ul li {border-left: 0;width: 100%;padding: 0 0 15px;margin: 0 0 15px;text-align: left;border-bottom: 1px solid rgba(0, 0, 0, 0.1);} */
     .listing-card .btn-holder {right: 15px;}
     .school-zone-students [class*="col-"] {flex: 0 0 50%;max-width: 50%;}
     .quiz-topbar [class*="col-"] {width: 100%; flex: 0 0 100%;max-width: 100%;}
