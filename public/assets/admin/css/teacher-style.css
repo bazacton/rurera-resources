@@ -544,86 +544,22 @@ Set Up Quiz Page Style End
 /* Quiz Set Up Listings style Start */
 
 /* Sidebar Nav Style Start */
-.quiz-setup-sidenav li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    color: #6d6d6d;
-    margin-bottom: 18px;
-    line-height: normal;
-    font-size: 14px;
-}
-.quiz-setup-sidenav li a {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    color: #6d6d6d;
-    font-weight: 600;
-}
-.quiz-setup-sidenav li a i {
-    margin: 0 !important;
-    color: #6d6d6d;
-}
+.quiz-setup-sidenav li {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; color: #6d6d6d; margin-bottom: 18px; line-height: normal; font-size: 14px;}
+.quiz-setup-sidenav li a {display: inline-flex; align-items: center; gap: 10px; color: #6d6d6d; font-weight: 600;}
+.quiz-setup-sidenav li a i {margin: 0 !important; color: #6d6d6d;}
 /* Sidebar Nav Style End */
 
-.listing-filters {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin: 0 0 25px;
-}
-.listing-filters select {
-    border: 0;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: #999;
-}
-.filter-box {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    position: relative;
-}
-.filter-box i {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.filter-box .fa-filter {
-    font-size: 10px;
-}
-.listing-filters i ~ select {
-    padding-left: 22px;
-}
-.listing-card {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-.listing-card .img-holder figure {
-    width: 120px;
-    height: 100px;
-    margin-bottom:0;
-}
-.listing-card .img-holder img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-}
-.listing-card .text-holder {
-    width: calc(100% - 135px);
-    position: relative;
-}
-.listing-card .author-info img {
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    object-fit: cover;
-}
+.listing-filters {display: flex; align-items: center; justify-content: flex-end; gap: 10px; flex-wrap: wrap; margin: 0 0 25px;}
+.listing-filters select {border: 0; border-radius: 5px; padding: 5px 10px; color: #999;}
+.filter-box {border: 1px solid #ddd; border-radius: 5px; position: relative;}
+.filter-box i {position: absolute; left: 10px; top: 50%; transform: translateY(-50%);}
+.filter-box .fa-filter {font-size: 10px;}
+.listing-filters i ~ select {padding-left: 22px;}
+.listing-card {display: flex; align-items: center; flex-wrap: wrap; gap: 15px;}
+.listing-card .img-holder figure {width: 120px; height: 100px; margin-bottom:0;}
+.listing-card .img-holder img {max-width: 100%; max-height: 100%; object-fit: cover;}
+.listing-card .text-holder {width: calc(100% - 135px); position: relative;}
+.listing-card .author-info img {width: 20px; height: 20px; border-radius: 100%; object-fit: cover;}
 .listing-lable {
     color: #999;
     font-size: 12px;
