@@ -61,7 +61,7 @@
 			$year_slug = isset($course->categories()->first()->slug)? $course->categories()->first()->slug : '';
 
 			@endphp
-        {!! $level_data_values->svgs_code !!}
+
 			<div class="learning-journey-levels border-0" data-mission_id="mission_1">
 				<div class="panel-subheader">
 					<div class="title">
@@ -93,6 +93,7 @@
 				</div>
 				@if(!empty( $itemsRow ) )
 				<div class="level-stage {{$page_graph}}" style="height:{{$level_height}}px; background:{{$level_background}}">
+                    {!! $level_data_values->svgs_code !!}
 					@php $item_counter = 0; $topic_counter = 0; $total_count = 0; $ul_class = 'ul-rtl'; $already_active = false; $is_active = false; @endphp
 					@foreach($itemsRow as $itemObj)
 						@php $item_counter++;  $total_count++; $is_completed = isset( $itemObj->is_completed )? $itemObj->is_completed : false;
