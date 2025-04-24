@@ -128,10 +128,10 @@
 
     <div class="form-group">
         <div class="custom-control custom-checkbox">
-            <input id="hasSubCategory" type="checkbox" name="has_sub"
+            <input id="hasSubCategory2" type="checkbox" name="has_sub"
                    class="custom-control-input" checked>
             <label class="custom-control-label"
-                   for="hasSubCategory">Sections</label>
+                   for="hasSubCategory2">Sections</label>
         </div>
     </div>
 
