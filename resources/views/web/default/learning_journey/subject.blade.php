@@ -28,7 +28,19 @@
 	margin: 0px 15px
 }
 .level-stage{position:relative;}
-
+.level-stage.frontend-dispaly {
+    margin: 0 auto;
+    z-index: 1;
+}
+.panel-content:has(.level-stage.frontend-dispaly) {
+    overflow: hidden;
+}
+.level-stage.frontend-dispaly svg.flowchart-links-layer {
+    object-fit: contain;
+    overflow: hidden;
+    overflow-x: auto;
+    min-width: 1070px;
+}
 
 
 
@@ -152,13 +164,6 @@
     .flowchart-operator-inputs-outputs.right-in .flowchart-operator-outputs .flowchart-operator-connector-arrow {
         left: -10px !important;
         right: auto !important;
-    }
-    .level-stage.frontend-dispaly {
-        margin: 0 auto;
-        z-index: 1;
-    }
-    .panel-content:has(.level-stage.frontend-dispaly) {
-        overflow: hidden;
     }
 </style>
 <section class="p-0 mt-30 treasure-mission-layout">
