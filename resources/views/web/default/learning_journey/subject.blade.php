@@ -27,16 +27,11 @@
 	position:absolute;
 	margin: 0px 15px
 }
-.panel-content:has(.level-stage.frontend-dispaly) {
-    overflow: hidden;
-}
-
 .level-stage{position:relative;}
 
 .level-stage.frontend-dispaly {
     width: 760px;
     overflow: hidden;
-    margin: 0 auto;
 }
 .level-stage.frontend-dispaly .level-stage-inner {
     width: 700px;
