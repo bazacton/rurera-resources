@@ -238,7 +238,6 @@ $practice_time = 0;
                                 </a>
                                 <a href="javascript:;" id="question-next-btn" class="question-next-btn rurera-hide">
                                     Next
-                                    <img src="/assets/default/svgs/next-btn.svg" width="683" height="683" alt="next-btn">
                                 </a>
                             </div>
                         </div>
