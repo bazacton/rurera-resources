@@ -31,6 +31,8 @@
 .level-stage.frontend-dispaly {
     margin: 0 auto;
     z-index: 1;
+    overflow: hidden;
+    overflow-x: auto;
 }
 .panel-content:has(.level-stage.frontend-dispaly) {
     overflow: hidden;
