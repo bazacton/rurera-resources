@@ -32,17 +32,12 @@
 .level-stage.frontend-dispaly {
     margin: 0 auto 30px;
     z-index: 1;
-    overflow: hidden;
-    overflow-x: auto;
 }
 .panel-content:has(.level-stage.frontend-dispaly) {
     overflow: hidden;
 }
 .level-stage.frontend-dispaly svg.flowchart-links-layer {
     object-fit: contain;
-    overflow: hidden;
-    overflow-x: auto;
-    min-width: 970px;
 }
 
 
