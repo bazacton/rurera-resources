@@ -28,8 +28,9 @@
 	margin: 0px 15px
 }
 .level-stage{position:relative;}
+
 .level-stage.frontend-dispaly {
-    margin: 0 auto;
+    margin: 0 auto 30px;
     z-index: 1;
     overflow: hidden;
     overflow-x: auto;
