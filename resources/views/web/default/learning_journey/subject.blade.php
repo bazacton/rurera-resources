@@ -41,7 +41,7 @@
     object-fit: contain;
     overflow: hidden;
     overflow-x: auto;
-    min-width: 1070px;
+    min-width: 970px;
 }
 
 
