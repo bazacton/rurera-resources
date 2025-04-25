@@ -205,7 +205,7 @@
 					</div>
 				</div>
 				@if(!empty( $itemsRow ) )
-				<div class="level-stage {{$page_graph}}" style="height:{{$level_height}}px; background:{{$level_background}}">
+				<div class="level-stage frontend-dispaly {{$page_graph}}" style="height:{{$level_height}}px; background:{{$level_background}}">
                     {!! $level_data_values->svgs_code !!}
 					@php $item_counter = 0; $topic_counter = 0; $total_count = 0; $ul_class = 'ul-rtl'; $already_active = false; $is_active = false; @endphp
 					@foreach($itemsRow as $itemObj)
