@@ -39,10 +39,8 @@
     margin: 0 auto;
 }
 .level-stage.frontend-dispaly .level-stage-inner {
-    width: 1070px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 700px;
+    margin: 0 auto;
 }
 
 
