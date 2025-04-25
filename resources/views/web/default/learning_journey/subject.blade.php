@@ -28,6 +28,9 @@
 .panel-content:has(.level-stage.frontend-dispaly) {
     overflow: hidden;
 }
+.level-stage {
+    position: relative;
+}
 .graph-background {
 	background-color: var(--bg-color);
 	background-image: linear-gradient(var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(90deg, var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(var(--line-color-2) 1px, transparent 1px), linear-gradient(90deg, var(--line-color-2) 1px, transparent 1px) !important;
