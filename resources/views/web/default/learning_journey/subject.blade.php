@@ -36,8 +36,14 @@
 .level-stage.frontend-dispaly .level-stage-inner {
     width: 700px;
     margin: 0 auto;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
-
+.frontend-dispaly svg.flowchart-links-layer {
+    position: relative;
+}
 
 
 .graph-background {
