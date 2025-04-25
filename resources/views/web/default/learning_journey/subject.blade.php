@@ -36,6 +36,7 @@
 .level-stage.frontend-dispaly {
     width: 760px;
     overflow: hidden;
+    margin: 0 auto;
 }
 .level-stage.frontend-dispaly .level-stage-inner {
     width: 1200px;
