@@ -27,7 +27,7 @@
 	position:absolute;
 	margin: 0px 15px
 }
-.level-stage{position:relative; overflow: hidden;}
+.level-stage{position:relative;}
 
 
 
@@ -77,10 +77,6 @@
     .flowchart-operator-inputs {
         left: 50%;
     }
-
-
-
-
 
     .flowchart-operator{
         display: inline-table;
@@ -156,6 +152,13 @@
     .flowchart-operator-inputs-outputs.right-in .flowchart-operator-outputs .flowchart-operator-connector-arrow {
         left: -10px !important;
         right: auto !important;
+    }
+    .level-stage.frontend-dispaly {
+        margin: 0 auto;
+        z-index: 1;
+    }
+    .panel-content:has(.level-stage.frontend-dispaly) {
+        overflow: hidden;
     }
 </style>
 <section class="p-0 mt-30 treasure-mission-layout">
