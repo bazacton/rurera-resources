@@ -25,17 +25,8 @@
 	position:absolute;
 	margin: 0px 15px
 }
-.level-stage{position:relative;}
-
-.level-stage.frontend-dispaly {
-    width: 760px;
+.panel-content:has(.level-stage.frontend-dispaly) {
     overflow: hidden;
-}
-.level-stage.frontend-dispaly .level-stage-inner {
-    height: 100%;
-}
-.frontend-dispaly svg.flowchart-links-layer {
-    position: relative;
 }
 .graph-background {
 	background-color: var(--bg-color);
