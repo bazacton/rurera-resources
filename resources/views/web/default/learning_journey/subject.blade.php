@@ -39,7 +39,7 @@
     margin: 0 auto;
 }
 .level-stage.frontend-dispaly .level-stage-inner {
-    width: 1200px;
+    width: 1070px;
 }
 
 
