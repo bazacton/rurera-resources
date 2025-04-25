@@ -27,15 +27,20 @@
 	position:absolute;
 	margin: 0px 15px
 }
-.level-stage{position:relative;}
-
-.level-stage.frontend-dispaly {
-    margin: 0 auto 30px;
-    z-index: 1;
-}
 .panel-content:has(.level-stage.frontend-dispaly) {
     overflow: hidden;
 }
+
+.level-stage{position:relative;}
+
+.level-stage.frontend-dispaly {
+    width: 760px;
+    overflow: hidden;
+}
+.level-stage.frontend-dispaly .level-stage-inner {
+    width: 1200px;
+}
+
 .level-stage.frontend-dispaly svg.flowchart-links-layer {
     object-fit: contain;
 }
