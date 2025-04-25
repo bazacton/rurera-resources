@@ -45,6 +45,8 @@
 .level-stage.frontend-dispaly svg.flowchart-links-layer {
     object-fit: contain;
     position: relative;
+    width: auto;
+    height: auto;
 }
 
 
