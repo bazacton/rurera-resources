@@ -21,8 +21,6 @@
   box-sizing: border-box;
 }
 
-
-
 .learning-journey-item{
 	position:absolute;
 	margin: 0px 15px
@@ -44,16 +42,12 @@
 .frontend-dispaly svg.flowchart-links-layer {
     position: relative;
 }
-
-
 .graph-background {
 	background-color: var(--bg-color);
 	background-image: linear-gradient(var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(90deg, var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(var(--line-color-2) 1px, transparent 1px), linear-gradient(90deg, var(--line-color-2) 1px, transparent 1px) !important;
 	background-position: -1.5px -1.5px, -1.5px -1.5px, -1px -1px, -1px -1px !important;
 	background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px !important;
 }
-
-
 .field-data svg {
     height: auto;
     width: 100%;
@@ -66,41 +60,29 @@
         top:50%;
         z-index:-1;
     }
-
     .field-data.ui-rotatable {
         position: relative;
     }
-
-
     .flowchart-operator-outputs {
         position: absolute;
         left: 0%;
     }
-
     .flowchart-operator-inputs {
         position: absolute;
         left: 50%;
     }
-
-
-
     .flowchart-operator-outputs {
         left: 0%;
     }
-
     .flowchart-operator-inputs {
         left: 50%;
     }
-
     .flowchart-operator{
         display: inline-table;
     }
     .flowchart-operator-connector-arrow1, .flowchart-operator-connector-small-arrow1 {
         visibility: hidden;
     }
-
-
-
     .flowchart-temporary-link-layer{display:none !important;}
     .field-options {
         display: none !important;
@@ -117,7 +99,6 @@
         height: auto;
         width: 50%;
     }
-
     .field-data1 {
         position: relative;
     }.flowchart-operator-inputs1 {
@@ -134,24 +115,20 @@
     .roadmap-path{
         display:none;
     }
-
     .spacer-block{width:0px !important;}
     .spacer-block svg {
         width: 10px !important;
         height: 10px !important;
     }
     .spacer-svg-controls .flowchart-operator-outputs .flowchart-operator-connector-small-arrow {
-        right: 10px !important;!i;!;
+        right: 10px !important;
     }
-
     .spacer-svg-controls .flowchart-operator-outputs .flowchart-operator-connector-arrow{
         right:10px !important;
     }
-
     ul.editor-objects.sets-selection.active {
         background: #b2b2b2;
     }
-
     .right-in .flowchart-operator-connector-arrow {
         border-right: 10px solid rgb(204, 204, 204);
         border-left: none;
