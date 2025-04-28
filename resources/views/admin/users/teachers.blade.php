@@ -39,7 +39,7 @@
                 <button type="button" class="create-class-btn" data-toggle="modal" data-target="#createClassModal"><i class="fas fa-plus-circle"></i> Create a Class</button>
             </div>
         </div>
-        <div class="teacher-listing">
+        <div class="teacher-listing d-flex align-items-center flex-wrap">
             <div class="listing-grid-card">
                 <div class="img-holder skelton-hide">
                     <figure>
