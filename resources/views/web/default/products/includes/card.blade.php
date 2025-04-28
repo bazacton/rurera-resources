@@ -37,6 +37,6 @@
                 <span class="real" itemprop="price"><i data-feather="zap" width="20" height="20" class=""></i> {{ $product->point }} Coins</span>
             </div>
         </figcaption>
-        <a class="bt-button cart-button" href="{{ $product->getUrl() }}" itemprop="url">BUY</a>
+        <a class="bt-button cart-button" href="{{ $product->getUrl() }}" itemprop="url"><span>BUY</span></a>
     </figure>
 </div>
