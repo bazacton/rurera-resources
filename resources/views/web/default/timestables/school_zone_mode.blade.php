@@ -105,7 +105,7 @@
                               <img src="/assets/default/svgs/shuttlecock.svg" alt="shuttlecock" height="30" width="30">
                           </div>
                               <div class="withdraw-text" itemscope itemtype="https://schema.org/Article">
-                                  <h3 class="blog-grid-title font-18 font-weight-bold mb-5" itemprop="title">You need to play Timestables Trophy Mode {{(5 - $results_data->count())}} more games to display in leaderboard.</h3>
+                                  <h3 class="blog-grid-title font-18 font-weight-bold mb-0" itemprop="title">You need to play Timestables Trophy Mode {{(5 - $results_data->count())}} more games to display in leaderboard.</h3>
                               </div>
                       </div>
                     </div>
