@@ -73,7 +73,7 @@
                             <img src="/assets/default/img/withdraw-icon.png" alt="" height="30" width="30">
                         </div>
                         <div class="withdraw-text" itemscope itemtype="https://schema.org/Program">
-                            <h3 class="blog-grid-title font-18 font-weight-bold mb-5" itemprop="name">Withdraw Your Money to a Bank Account</h3>
+                            <h3 class="blog-grid-title font-18 font-weight-bold mb-0" itemprop="name">Withdraw Your Money to a Bank Account</h3>
                             <p class="font-16">Withdraw money securily to your bank account. Commision is $25 per transaction under $50,000</p>
                         </div>
                         <div class="withdraw-btn-holder">
