@@ -43,70 +43,70 @@
         <div class="teacher-listing d-flex align-items-center flex-wrap">
             @if($users->count() > 0)
                 @foreach($users as $user)
-            <div class="listing-grid-card">
-                <div class="img-holder skelton-hide">
-                    <figure>
-                        <img src="{{ $user->getAvatar() }}" alt="{{ $user->get_full_name() }}">
-                        <figcaption>
-                            <span class="count-lable">Admin</span>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="text-holder">
-                    <div class="author-info">
-                        <span class="img-box skelton-hide">
+                <div class="listing-grid-card">
+                    <div class="img-holder skelton-hide">
+                        <figure>
                             <img src="{{ $user->getAvatar() }}" alt="{{ $user->get_full_name() }}">
-                            <span class="country-flag">
+                            <figcaption>
+                                <span class="count-lable">Admin</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="text-holder">
+                        <div class="author-info">
+                            <span class="img-box skelton-hide">
                                 <img src="{{ $user->getAvatar() }}" alt="{{ $user->get_full_name() }}">
-                                </span>
-                        </span>
-                        <div class="card-title-holder skelton-hide">
-                            <h5>{{ $user->get_full_name() }}</h5>
-                        </div>
-                        <div class="author-contact-info skelton-hide">
-                            <a href="#"><i class="fas fa-envelope"></i> {{ $user->email }}</a>
-                            @if($user->mobile != '')
-                            <span class="phone-number-box">
-                                <i class="fas fa-phone"></i>
-                                <span class="phone-number" onclick="togglePhoneNumber(this)" data-full-number="987-654-3210">
-                                    {{ $user->mobile }}
-                                </span>
+                                <span class="country-flag">
+                                    <img src="{{ $user->getAvatar() }}" alt="{{ $user->get_full_name() }}">
+                                    </span>
                             </span>
-                            @endif
+                            <div class="card-title-holder skelton-hide">
+                                <h5>{{ $user->get_full_name() }}</h5>
+                            </div>
+                            <div class="author-contact-info skelton-hide">
+                                <a href="#"><i class="fas fa-envelope"></i> {{ $user->email }}</a>
+                                @if($user->mobile != '')
+                                <span class="phone-number-box">
+                                    <i class="fas fa-phone"></i>
+                                    <span class="phone-number" onclick="togglePhoneNumber(this)" data-full-number="987-654-3210">
+                                        {{ $user->mobile }}
+                                    </span>
+                                </span>
+                                @endif
+                            </div>
+                            <div class="author-designation skelton-hide">
+                                @if($user->getTeacherClasses->count() > 0)
+                                    @foreach($user->getTeacherClasses as $classTeacherObj)
+                                        @php
+                                            $teacherClass = $classTeacherObj->teacherClass;
+                                        @endphp
+                                        <span class="designation-lable">{{isset($teacherClass->category->title)? $teacherClass->category->title : ''}}</span>
+                                    @endforeach
+                                @endif
+                            </div>
                         </div>
-                        <div class="author-designation skelton-hide">
-                            @if($user->getTeacherClasses->count() > 0)
-                                @foreach($user->getTeacherClasses as $classTeacherObj)
-                                    @php
-                                        $teacherClass = $classTeacherObj->teacherClass;
-                                    @endphp
-                                    <span class="designation-lable">{{isset($teacherClass->category->title)? $teacherClass->category->title : ''}}</span>
-                                @endforeach
-                            @endif
+                        <div class="teacher-list-controls skelton-hide">
+                            <button type="button" class="edit-btn"><img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil"></button>
                         </div>
-                    </div>
-                    <div class="teacher-list-controls skelton-hide">
-                        <button type="button" class="edit-btn"><img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil"></button>
-                    </div>
 
-                    <script>
-                        function togglePhoneNumber(element) {
-                            const fullNumber = element.getAttribute('data-full-number');
-                            const isHidden = element.textContent.includes('XXX');
+                        <script>
+                            function togglePhoneNumber(element) {
+                                const fullNumber = element.getAttribute('data-full-number');
+                                const isHidden = element.textContent.includes('XXX');
 
-                            if (isHidden) {
-                                element.textContent = fullNumber;
-                            } else {
-                                const hiddenNumber = `${fullNumber.slice(0, 3)}-XXX-XXXX`;
-                                element.textContent = hiddenNumber;
+                                if (isHidden) {
+                                    element.textContent = fullNumber;
+                                } else {
+                                    const hiddenNumber = `${fullNumber.slice(0, 3)}-XXX-XXXX`;
+                                    element.textContent = hiddenNumber;
+                                }
                             }
-                        }
-                    </script>
+                        </script>
 
+                    </div>
                 </div>
-            </div>
                 @endforeach
-                @endif
+            @endif
         </div>
 
 
