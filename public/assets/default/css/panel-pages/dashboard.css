@@ -559,7 +559,7 @@ body:has(.edit-profile) {background-color: #f9fafe;}
 .question-result-layout .prev-next-controls {display: none;}
 .question-result-layout .left-content {min-height: auto;}
 .question-result-layout .question-layout-block form.question-fields .questions-total-holder {margin: 0 !important; padding: 0 0 20px; font-size: 16px; color: #333;}
-.question-result-layout .rureraform-element {padding: 0; margin: 0;}
+.question-result-layout .rureraform-element { margin: 0;}
 .question-result-layout .lms-radio-btn-group {align-items: flex-start; justify-content: flex-start; margin-bottom: 15px;}
 .question-result-layout .lms-radio-btn-group .lms-question-label {background-color: #ededed; height: auto; border-color: #92aec4; border-width: 1px; border-radius: 0; padding: 8px 10px;}
 .question-result-layout .lms-radio-btn-group li {min-width: auto;}
