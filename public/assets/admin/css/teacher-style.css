@@ -3623,7 +3623,9 @@ span.field-separated span:after {
 /*************************************
 Qustions AI Tabs Style End
 **************************************/
-
+.teacher-listing.d-flex {
+    gap: 0 25px;
+}
 .listing-grid-card {
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
