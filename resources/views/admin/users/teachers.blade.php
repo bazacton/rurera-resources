@@ -39,8 +39,8 @@
                 <button type="button" class="create-class-btn" data-toggle="modal" data-target="#createTeacherModal"><i class="fas fa-plus-circle"></i> Create Teacher</button>
             </div>
         </div>
-        <div class="teacher-listing d-flex align-items-center flex-wrap">
         <div class="teacher-listing">
+        <div class="teacher-listing d-flex align-items-center flex-wrap">
             @if($users->count() > 0)
                 @foreach($users as $user)
             <div class="listing-grid-card">
