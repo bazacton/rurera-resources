@@ -95,6 +95,13 @@ Sub Pages Style
 .panel-content .school-zone-data.leaderboard-data .leaderboard>li.lms-performace-head div:first-child,
 .panel-content .school-zone-data.leaderboard-data .leaderboard>li.lms-performace-des .sr-no { width: 25%; }
 .panel-content .school-zone-data.leaderboard-data .leaderboard>li.lms-performace-des .sr-no span { font-size: 16px; font-weight: 400; }
+.withdraw-card {background-color: #e9f3ff; border: 1px dashed #3472bb; border-radius: 5px; gap: 20px;}
+.withdraw-card .icon-box {flex: 0 0 32px;}
+.withdraw-btn-holder {flex: 0 0 155px; margin-left: auto;}
+.withdraw-text {flex: 0 0 68%;}
+.withdraw-text p {color: #656776;}
+.withdraw-card .withdraw-btn {background-color: #1c84ff; border-radius: 3px; display: block; text-align: center; padding: 12px 10px; color: #fff;}
+.withdraw-text h3 {margin-bottom: 2px;}
 /* Leaderboard Style End */
 /********************
 School Zone Page | Student Panel Style End
