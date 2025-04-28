@@ -235,6 +235,7 @@ Lms Product Card Style Start
 .product-card .cart-button:after {background-color: var(--primary); content: ""; display: block; height: 100%; left: 0; position: absolute; top: 0; transition-duration: .3s; transition-property: width; transition-timing-function: ease-in-out; width: 0; z-index: 1;}
 .product-card .cart-button:hover {color: #fff;}
 .product-card .cart-button:hover:after {width: 100%; }
+.product-card .cart-button span {position: relative; z-index: 2;}
 .lazyImageWaiting {position: relative; overflow: hidden; background-color: #dddbdd;}
 .product-card .favorite-btn {position: absolute; opacity: 0; right: -5px; top: -5px; transform: scale(0); height: 30px; width: 30px; }
 .product-card .favorite-btn img {border-radius: 0; position: absolute; left: 0; top: 0;}
