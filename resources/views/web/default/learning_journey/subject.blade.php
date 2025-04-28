@@ -133,6 +133,36 @@
         left: -10px !important;
         right: auto !important;
     }
+
+
+
+    .right-filler{
+        width: 150px;
+        background: #fff;
+        display: block;
+        height: 100%;
+        left: 76%;
+        position: absolute;
+        z-index: 99999;
+    }
+    .left-filler{
+        width: 187px;
+        background: #fff;
+        display: block;
+        height: 100%;
+        left: 0%;
+        position: absolute;
+        z-index: 99999;
+    }
+    .top-filler {
+        width: 100%;
+        background: #fff;
+        display: block;
+        height: 149px;
+        top: 0%;
+        position: absolute;
+        z-index: 99999;
+    }
 </style>
 <section class="p-0 mt-30 treasure-mission-layout">
 
@@ -181,8 +211,11 @@
 					</div>
 				</div>
 				@if(!empty( $itemsRow ) )
-				<div class="level-stage frontend-dispaly {{$page_graph}}" style="height:{{$level_height}}px; background:{{$level_background}}">
-                    <div class="level-stage-inner">    
+				<div class="level-stage frontend-dispaly {{$page_graph}}" style="width: 1015px;left: -100px;height:{{$level_height}}px; background:{{$level_background}}">
+                    <div class="top-filler"></div>
+                    <div class="left-filler"></div>
+                    <div class="right-filler"></div>
+                    <div class="level-stage-inner">
                     {!! $level_data_values->svgs_code !!}
                         @php $item_counter = 0; $topic_counter = 0; $total_count = 0; $ul_class = 'ul-rtl'; $already_active = false; $is_active = false; @endphp
                         @foreach($itemsRow as $itemObj)

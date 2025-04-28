@@ -855,6 +855,7 @@ jQuery(function ($) {
                         var parent = $(this).parent(); // Assuming dropZonObj is the container
                         var parentWidth = parent.width();
                         var parentHeight = parent.height();
+                        parentWidth = 760;
 
                         // Calculate the percentages
                         var leftPercent = (ui.position.left / parentWidth) * 100;

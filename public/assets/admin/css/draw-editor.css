@@ -57,7 +57,7 @@ body .editor-zone:has(.editor-controls-holder),
 body .editor-zone:has(.field-options.hide) {padding-left: 0;}
 body .editor-zone:has(.editor-controls-holder) {/*display: flex; */align-items: flex-start; justify-content: center; gap: 25px; padding:0; overflow: visible;}
 body .editor-zone:has(.field-options) {padding-left:0px;}
-.book-dropzone {position: relative; border: 1px solid #ccc; border-radius: 5px; width: 1070px; height:100%; box-sizing: border-box; background-size: cover !important; overflow: hidden; display: inline-block; vertical-align: top;}
+.book-dropzone {position: relative; border: 1px solid #ccc; border-radius: 5px; width: 1015px; height:100%; box-sizing: border-box; background-size: cover !important; overflow: hidden; display: inline-block; vertical-align: top;}
 .book-dropzone img {max-width: 100%;}
 body .editor-controls-holder {border: 1px solid #ccc; background-color: #fff; border-radius: 0; padding: 0; overflow: visible; min-width: 500px; max-width: 500px; height: auto; display: inline-block; vertical-align: top; position: absolute; z-index: 9999;}
 body ul.editor-objects li {width: 23.888%;}
@@ -245,7 +245,7 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 /*listing-card style end*/
 
 /* Level Add Modal Style End */
-.editor-zone:has(.settings-controls-block) .book-dropzone {width: calc(100% - 100px);}
+/*.editor-zone:has(.settings-controls-block) .book-dropzone {width: calc(100% - 100px);}*/
 .settings-controls-block {position: absolute; right: 0; top: 0; background-color: rgba(255, 255, 255, 0.5); width: 90px; padding: 10px 5px 0; box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);}
 .settings-controls-block .setting-controls {display: block; margin-bottom: 8px; font-size: 13px; font-weight: 600; color: var(--blue); text-decoration: none;}
 .settings-controls-block .setting-controls i {margin-right: 2px; color: var(--blue);}
