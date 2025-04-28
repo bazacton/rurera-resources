@@ -232,9 +232,10 @@ Lms Product Card Style Start
 .product-card .cart-button {display: flex; width: 100%; align-items: center; justify-content: center; border: 3px solid var(--primary); padding: .5rem 2rem; color: var(--primary); font-size: 16px; line-height: 1.5; background-color: #fff; position: relative;}
 .product-card .cart-button .bt-button {display: block; position: relative; width: 100%; z-index: 2; color: var(--primary); font-weight: 500;}
 .product-card .cart-button:hover .bt-button {color: #fff; }
-.product-card .cart-button:after {background-color: var(--primary); content: ""; display: block; height: 100%; left: 0; position: absolute; top: 0; transition-duration: .3s; transition-property: width; transition-timing-function: ease-in-out; width: 0; z-index: 1;}
+.product-card .cart-button:after {background-color: var(--primary); content: ""; display: block; height: 100%; left: 0; position: absolute; top: 0; transition-duration: .3s; transition-property: width; transition-timing-function: ease-in-out; width: 0; z-index: 1; pointer-events: none;}
 .product-card .cart-button:hover {color: #fff;}
 .product-card .cart-button:hover:after {width: 100%; }
+.product-card .cart-button span {position: relative; z-index: 2;}
 .lazyImageWaiting {position: relative; overflow: hidden; background-color: #dddbdd;}
 .product-card .favorite-btn {position: absolute; opacity: 0; right: -5px; top: -5px; transform: scale(0); height: 30px; width: 30px; }
 .product-card .favorite-btn img {border-radius: 0; position: absolute; left: 0; top: 0;}
