@@ -1652,3 +1652,10 @@ School Plan Page Style End
 .table-actions .dropdown-toggle:after {
     display: none;
 }
+
+/* Learning Journey Front-end Display Style Start */
+.panel-content:has(.level-stage.frontend-dispaly),
+.treasure-mission-layout:has(.level-stage.frontend-dispaly) {
+    overflow: hidden;
+}
+/* Learning Journey Front-end Display Style End */
