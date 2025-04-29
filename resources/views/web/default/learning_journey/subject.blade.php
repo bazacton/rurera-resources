@@ -39,10 +39,6 @@
 	background-position: -1.5px -1.5px, -1.5px -1.5px, -1px -1px, -1px -1px !important;
 	background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px !important;
 }
-.field-data svg {
-    height: auto;
-    width: 100%;
-}
 
 </style>
 <style>
