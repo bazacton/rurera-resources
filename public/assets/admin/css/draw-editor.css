@@ -165,7 +165,7 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .change-position span {font-size: 10px; color: blue;}
 .book-dropzone .object-options a img {width: 12px; height: 12px; max-width: none;}
 .book-dropzone .object-options a.change-position img {filter: invert(17%) sepia(8%) saturate(6822%) hue-rotate(199deg) brightness(93%) contrast(89%);}
-/* Learning-Journey Style From Subject.blade.php File  */
+/* Learning-Journey Style From Subject.blade.php File */
 .learning-journey-item{position:absolute; margin: 0px 15px}
 .level-stage {position: relative;}
 .graph-background {background-color: var(--bg-color); background-image: linear-gradient(var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(90deg, var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(var(--line-color-2) 1px, transparent 1px), linear-gradient(90deg, var(--line-color-2) 1px, transparent 1px) !important; background-position: -1.5px -1.5px, -1.5px -1.5px, -1px -1px, -1px -1px !important; background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px !important;}
