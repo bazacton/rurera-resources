@@ -25,11 +25,6 @@
 	position:absolute;
 	margin: 0px 15px
 }
-.panel-content:has(.level-stage.frontend-dispaly),
-.treasure-mission-layout:has(.level-stage.frontend-dispaly) {
-    overflow: hidden;
-}
-
 .level-stage {
     position: relative;
 }
