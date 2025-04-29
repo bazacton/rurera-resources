@@ -1451,75 +1451,19 @@ School Plan Page Style Start
   position: relative;
 }
 /* School Invoice page Style Start */
-.individual-plan .section-title h2 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0 0 10px;
-}
-.individual-plan .section-title img {
-    height: 25px;
-    width: 25px;
-}
-.individual-plan p {
-    font-size: 14px;
-    color: #777;
-    margin: 0 0 15px;
-}
-.individual-plan {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-.individual-plan .individual-plan-card {
-    flex-basis: 33%;
-    border-right: 1px solid #ddd;
-    padding-right: 30px;
-}
-.individual-plan ul {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px 15px;
-}
-.individual-plan li {
-    font-size: 14px;
-    color: #333;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.individual-plan li img {
-    height: 10px;
-    width: 10px;
-}
-.individual-plan-controls {
-    text-align: center;
-    flex-basis: 28%;
-}
-.individual-plan-controls button {
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 10px 25px 13px;
-    font-size: 14px;
-    border-radius: 5px;
-    box-shadow: 0px -3px 0 rgba(0, 0, 0, 0.1) inset;
-    min-width: 200px;
-}
-.individual-plan .individual-plan-card:nth-child(2) {
-    border-right: 0;
-    padding-right: 0;
-}
-.school-plan-invoice button img {
-    height: 12px;
-    width: 12px;
-}
-.invoice-list li {
-    position: relative;
-    margin: 0;
-    padding: 0 0 30px 35px;
-}
+.individual-plan .section-title h2 {display: flex; align-items: center; gap: 10px; margin: 0 0 10px;}
+.individual-plan .section-title img {height: 25px; width: 25px;}
+.individual-plan p {font-size: 14px; color: #777; margin: 0 0 15px;}
+.individual-plan {display: flex; align-items: center; flex-wrap: wrap; gap: 30px;}
+.individual-plan .individual-plan-card {flex-basis: 33%; border-right: 1px solid #ddd; padding-right: 30px;}
+.individual-plan ul {display: flex; align-items: center; flex-wrap: wrap; gap: 10px 15px;}
+.individual-plan li {font-size: 14px; color: #333; display: flex; align-items: center; gap: 5px;}
+.individual-plan li img {height: 10px; width: 10px;}
+.individual-plan-controls {text-align: center; flex-basis: 28%;}
+.individual-plan-controls button {background-color: #fff; border: 1px solid rgba(0, 0, 0, 0.1); padding: 10px 25px 13px; font-size: 14px; border-radius: 5px; box-shadow: 0px -3px 0 rgba(0, 0, 0, 0.1) inset; min-width: 200px;}
+.individual-plan .individual-plan-card:nth-child(2) {border-right: 0; padding-right: 0;}
+.school-plan-invoice button img {height: 12px; width: 12px;}
+.invoice-list li {position: relative; margin: 0; padding: 0 0 30px 35px;}
 .invoice-list li:before {
     content: "\2713";
     position: absolute;
