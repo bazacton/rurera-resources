@@ -165,79 +165,28 @@ body .flowchart-operator-connector-small-arrow {top: -15px;}
 .change-position span {font-size: 10px; color: blue;}
 .book-dropzone .object-options a img {width: 12px; height: 12px; max-width: none;}
 .book-dropzone .object-options a.change-position img {filter: invert(17%) sepia(8%) saturate(6822%) hue-rotate(199deg) brightness(93%) contrast(89%);}
-.learning-journey-item{
-	position:absolute;
-	margin: 0px 15px
-}
-.level-stage {
-    position: relative;
-}
-.graph-background {
-	background-color: var(--bg-color);
-	background-image: linear-gradient(var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(90deg, var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(var(--line-color-2) 1px, transparent 1px), linear-gradient(90deg, var(--line-color-2) 1px, transparent 1px) !important;
-	background-position: -1.5px -1.5px, -1.5px -1.5px, -1px -1px, -1px -1px !important;
-	background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px !important;
-}
-.flowchart-operator-inputs-outputs {
-    position: absolute;
-    top:50%;
-    z-index:-1;
-}
-.field-data.ui-rotatable {
-    position: relative;
-}
-.flowchart-operator-outputs {
-    position: absolute;
-    left: 0%;
-}
-.flowchart-operator-inputs {
-    position: absolute;
-    left: 50%;
-}
-.flowchart-operator-outputs {
-    left: 0%;
-}
-.flowchart-operator-inputs {
-    left: 50%;
-}
-.flowchart-operator{
-    display: inline-table;
-}
-.flowchart-operator-connector-arrow1, .flowchart-operator-connector-small-arrow1 {
-    visibility: hidden;
-}
+/* Learning-Journey Style From Subject.blade.php File  */
+.learning-journey-item{position:absolute; margin: 0px 15px}
+.level-stage {position: relative;}
+.graph-background {background-color: var(--bg-color); background-image: linear-gradient(var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(90deg, var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(var(--line-color-2) 1px, transparent 1px), linear-gradient(90deg, var(--line-color-2) 1px, transparent 1px) !important; background-position: -1.5px -1.5px, -1.5px -1.5px, -1px -1px, -1px -1px !important; background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px !important;}
+.flowchart-operator-inputs-outputs {position: absolute; top:50%; z-index:-1;}
+.field-data.ui-rotatable {position: relative;}
+.flowchart-operator-outputs {position: absolute; left: 0%;}
+.flowchart-operator-inputs {position: absolute; left: 50%;}
+.flowchart-operator-outputs {left: 0%;}
+.flowchart-operator-inputs {left: 50%;}
+.flowchart-operator{display: inline-table;}
+.flowchart-operator-connector-arrow1, .flowchart-operator-connector-small-arrow1 {visibility: hidden;}
 .flowchart-temporary-link-layer{display:none !important;}
-.field-options {
-    display: none !important;
-}
-.right-in2 .flowchart-operator-outputs {
-    position: absolute;
-    right: 0;
-}
-.right-in2 .flowchart-operator-inputs {
-    position: absolute;
-    left: 0;
-}
-.field-data svg {
-    height: auto;
-    width: 50%;
-}
-.field-data1 {
-    position: relative;
-}.flowchart-operator-inputs1 {
-     position: absolute;
-     top: 2;
- }
-.roadmap-road .roadmap-default {
-    stroke: #000000;
-    stroke-width:15px;
-}
-.roadmap-default .roadmap-default, .roadmap-road .roadmap-road, .roadmap-steps .roadmap-steps{
-    display:block;
-}
-.roadmap-path{
-    display:none;
-}
+.field-options {display: none !important;}
+.right-in2 .flowchart-operator-outputs {position: absolute; right: 0;}
+.right-in2 .flowchart-operator-inputs {position: absolute; left: 0;}
+.field-data svg {height: auto; width: 50%;}
+.field-data1 {position: relative;}
+.flowchart-operator-inputs1 {position: absolute; top: 2;}
+.roadmap-road .roadmap-default {stroke: #000000; stroke-width:15px;}
+.roadmap-default .roadmap-default, .roadmap-road .roadmap-road, .roadmap-steps .roadmap-steps{display:block;}
+.roadmap-path{display:none;}
 .spacer-block{width:0px !important;}
 .spacer-block svg {
     width: 10px !important;
@@ -294,6 +243,7 @@ ul.editor-objects.sets-selection.active {
     position: absolute;
     z-index: 99999;
 }
+/* Learning-Journey Style From Subject.blade.php File End */
 /* Zoom Header Style Start */
 .zoom-header button {border: 1px solid #ddd; background-color: #f5f5f5; font-size: 16px; font-weight: 600; outline: none; border-radius: 3px; color: #333; text-shadow: 0 1px 1px #fff; padding: 5px 15px; line-height: normal; max-height: 33px;}
 .zoom-header {display: flex; align-items: center; flex-wrap: wrap; gap: 10px;}
