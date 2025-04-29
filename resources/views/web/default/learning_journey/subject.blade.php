@@ -21,20 +21,6 @@
   box-sizing: border-box;
 }
 
-.learning-journey-item{
-	position:absolute;
-	margin: 0px 15px
-}
-.level-stage {
-    position: relative;
-}
-.graph-background {
-	background-color: var(--bg-color);
-	background-image: linear-gradient(var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(90deg, var(--line-color-1) 1.5px, transparent 1.5px), linear-gradient(var(--line-color-2) 1px, transparent 1px), linear-gradient(90deg, var(--line-color-2) 1px, transparent 1px) !important;
-	background-position: -1.5px -1.5px, -1.5px -1.5px, -1px -1px, -1px -1px !important;
-	background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px !important;
-}
-
 </style>
 <style>
     .flowchart-operator-inputs-outputs {
