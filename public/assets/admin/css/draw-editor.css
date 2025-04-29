@@ -196,33 +196,9 @@ ul.editor-objects.sets-selection.active {background: #b2b2b2;}
 .right-in1 .flowchart-operator-inputs, .right-in1 .flowchart-operator-outputs {display: contents !important;}
 .flowchart-operator-inputs-outputs.right-in .flowchart-operator-inputs .flowchart-operator-connector-arrow {right: -10px !important; left: auto !important;}
 .flowchart-operator-inputs-outputs.right-in .flowchart-operator-outputs .flowchart-operator-connector-arrow {left: -10px !important; right: auto !important;}
-.right-filler{
-    width: 150px;
-    background: #fff;
-    display: block;
-    height: 100%;
-    left: 76%;
-    position: absolute;
-    z-index: 99999;
-}
-.left-filler{
-    width: 187px;
-    background: #fff;
-    display: block;
-    height: 100%;
-    left: 0%;
-    position: absolute;
-    z-index: 99999;
-}
-.top-filler {
-    width: 100%;
-    background: #fff;
-    display: block;
-    height: 149px;
-    top: 0%;
-    position: absolute;
-    z-index: 99999;
-}
+.right-filler{width: 150px; background: #fff; display: block; height: 100%; left: 76%; position: absolute; z-index: 99999;}
+.left-filler{width: 187px; background: #fff; display: block; height: 100%; left: 0%; position: absolute; z-index: 99999;}
+.top-filler {width: 100%; background: #fff; display: block; height: 149px; top: 0%; position: absolute; z-index: 99999;}
 /* Learning-Journey Style From Subject.blade.php File End */
 /* Zoom Header Style Start */
 .zoom-header button {border: 1px solid #ddd; background-color: #f5f5f5; font-size: 16px; font-weight: 600; outline: none; border-radius: 3px; color: #333; text-shadow: 0 1px 1px #fff; padding: 5px 15px; line-height: normal; max-height: 33px;}
