@@ -1464,55 +1464,14 @@ School Plan Page Style Start
 .individual-plan .individual-plan-card:nth-child(2) {border-right: 0; padding-right: 0;}
 .school-plan-invoice button img {height: 12px; width: 12px;}
 .invoice-list li {position: relative; margin: 0; padding: 0 0 30px 35px;}
-.invoice-list li:before {
-    content: "\2713";
-    position: absolute;
-    left: 2px;
-    top: 5px;
-    height: 18px;
-    width: 18px;
-    background-color: #fff;
-    border-radius: 100%;
-    font-size: 10px;
-    font-weight: 700;
-    color: #fff;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-}
-.invoice-list li:after {
-    content: "";
-    position: absolute;
-    left: 8px;
-    top: 28px;
-    height: calc(100% - 28px);
-    background-color: rgba(0,0,0,0.1);
-    width: 4px;
-}
-.invoice-list li.success:before {
-    background-color: #28a745;
-}
-.invoice-list li.success:after {
-    background-color: #28a745;
-}
-.invoice-list li.improved:before {
-    background-color: #28a745;
-}
-.invoice-list li.pending:before {
-    content: "";
-    box-shadow: 0 0 0 6px #999 inset;
-}
-.invoice-list li:last-child:after {
-    display: none;
-}
-.invoice-list p {
-    font-size: 13px;
-    color: #777;
-    padding-top: 5px;
-    margin: 0;
-    font-weight: 500;
-}
+.invoice-list li:before {content: "\2713"; position: absolute; left: 2px; top: 5px; height: 18px; width: 18px; background-color: #fff; border-radius: 100%; font-size: 10px; font-weight: 700; color: #fff; display: inline-flex;  align-items: center; justify-content: center; z-index: 1;}
+.invoice-list li:after {content: ""; position: absolute; left: 8px; top: 28px; height: calc(100% - 28px); background-color: rgba(0,0,0,0.1); width: 4px;}
+.invoice-list li.success:before {background-color: #28a745;}
+.invoice-list li.success:after {background-color: #28a745;}
+.invoice-list li.improved:before {background-color: #28a745;}
+.invoice-list li.pending:before {content: "";  box-shadow: 0 0 0 6px #999 inset;}
+.invoice-list li:last-child:after {display: none;}
+.invoice-list p {font-size: 13px; color: #777; padding-top: 5px; margin: 0; font-weight: 500;}
 .invoice-list li:last-child {
     padding-bottom: 0;
 }
