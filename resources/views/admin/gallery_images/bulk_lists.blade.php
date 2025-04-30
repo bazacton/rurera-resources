@@ -366,6 +366,7 @@ ul.crop_sizes {
                                     <th class="text-left">Status</th>
                                     <th class="text-left">Reference</th>
                                     <th class="text-left">Added Date</th>
+                                    <th class="text-left">Updated Date</th>
                                     <th class="text-left">User</th>
                                     <th>{{ trans('admin/main.actions') }}</th>
                                 </tr>
@@ -438,6 +439,9 @@ ul.crop_sizes {
 
                                     </td>
                                     <td class="text-left" data-id="user">{{ $image_reference_url }}</td>
+                                    <td class="text-left" data-id="added_at">
+                                        {{dateTimeFormat($GalleryBulkListObj->created_at, 'j M y | H:i')}}
+                                    </td>
                                     <td class="text-left" data-id="created_at">
 									@if($GalleryBulkListObj->status == 'Pending')
 										-
