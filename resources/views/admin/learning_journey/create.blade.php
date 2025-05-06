@@ -988,6 +988,7 @@
                                     var leftPercent = (ui.position.left / parentWidth) * 100;
                                     var topPercent = (ui.position.top / parentHeight) * 100;
 
+
                                     // Set the CSS of the element with the percentages
                                     $(this).css({
                                         left: leftPercent + '%',
