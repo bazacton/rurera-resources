@@ -1472,32 +1472,12 @@ School Plan Page Style Start
 .invoice-list li.pending:before {content: "";  box-shadow: 0 0 0 6px #999 inset;}
 .invoice-list li:last-child:after {display: none;}
 .invoice-list p {font-size: 13px; color: #777; padding-top: 5px; margin: 0; font-weight: 500;}
-.invoice-list li:last-child {
-    padding-bottom: 0;
-}
-.invoice-controls {
-    margin-top: 15px;
-}
-.invoice-controls button {
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    font-size: 14px;
-    display: inline-flex;
-    align-items: center;
-    padding: 5px 10px;
-    gap: 5px;
-}
-.invoice-controls .share-btn {
-    color: #fff;
-    background-color: #27aeff;
-    border-color: var(--blue);
-}
-.invoice-controls .share-btn img {
-    filter: invert(95%) sepia(100%) saturate(0%) hue-rotate(174deg) brightness(105%) contrast(105%);
-}
-.invoice-controls .copy-btn {
-    color: var(--blue);
-}
+.invoice-list li:last-child {padding-bottom: 0;}
+.invoice-controls {margin-top: 15px;}
+.invoice-controls button {border: 1px solid #ddd; border-radius: 3px; font-size: 14px; display: inline-flex; align-items: center; padding: 5px 10px;gap: 5px;}
+.invoice-controls .share-btn {color: #fff; background-color: #27aeff; border-color: var(--blue);}
+.invoice-controls .share-btn img {filter: invert(95%) sepia(100%) saturate(0%) hue-rotate(174deg) brightness(105%) contrast(105%);}
+.invoice-controls .copy-btn {color: var(--blue);}
 .invoice-controls .copy-btn img {
     filter: invert(70%) sepia(48%) saturate(5658%) hue-rotate(177deg) brightness(101%) contrast(103%);
 }
