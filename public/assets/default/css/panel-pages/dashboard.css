@@ -1478,57 +1478,17 @@ School Plan Page Style Start
 .invoice-controls .share-btn {color: #fff; background-color: #27aeff; border-color: var(--blue);}
 .invoice-controls .share-btn img {filter: invert(95%) sepia(100%) saturate(0%) hue-rotate(174deg) brightness(105%) contrast(105%);}
 .invoice-controls .copy-btn {color: var(--blue);}
-.invoice-controls .copy-btn img {
-    filter: invert(70%) sepia(48%) saturate(5658%) hue-rotate(177deg) brightness(101%) contrast(103%);
-}
-.school-plan-invoice .school-price-box {
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.school-price-box em {
-    font-weight: 500;
-    font-style: normal;
-    margin: 0 0 10px;
-}
-.school-plan-invoice .price-description {
-    margin-bottom: 0;
-}
-.invoice-download-top {
-    background-color: #f2f2f2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 10px;
-}
-.invoice-download {
-    overflow: hidden;
-}
-.invoice-download-top h4 {
-    font-weight: 600;
-}
-.invoice-download-top button {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    padding: 5px 10px;
-    font-size: 14px;
-}
-.invoice-download-img {
-    min-height: 400px;
-    padding: 20px;
-}
-.need-help {
-    border-top: 1px solid #ddd;
-    padding: 8px 0 0;
-    margin-top: 15px;
-}
-.need-help p a {
-    color: var(--blue);
-    text-decoration: underline;
-}
+.invoice-controls .copy-btn img {filter: invert(70%) sepia(48%) saturate(5658%) hue-rotate(177deg) brightness(101%) contrast(103%);}
+.school-plan-invoice .school-price-box {justify-content: flex-start; align-items: flex-start;}
+.school-price-box em {font-weight: 500; font-style: normal; margin: 0 0 10px;}
+.school-plan-invoice .price-description {margin-bottom: 0;}
+.invoice-download-top {background-color: #f2f2f2; display: flex; align-items: center; justify-content: space-between;padding: 8px 10px;}
+.invoice-download {overflow: hidden;}
+.invoice-download-top h4 {font-weight: 600;}
+.invoice-download-top button {background-color: #fff; border: 1px solid #ddd; border-radius: 3px; display: inline-flex; align-items: center; gap: 4px;padding: 5px 10px; font-size: 14px;}
+.invoice-download-img {min-height: 400px; padding: 20px;}
+.need-help {border-top: 1px solid #ddd; padding: 8px 0 0; margin-top: 15px;}
+.need-help p a {color: var(--blue); text-decoration: underline;}
 /*****************************
 School Plan Page Style End
 *****************************/
