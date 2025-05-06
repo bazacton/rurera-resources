@@ -1110,7 +1110,7 @@ $sizes_reference = is_array( $sizes_reference)? $sizes_reference : array($sizes_
                                                                 <span class="bar-fill" title="0%" style="width: 0%;"></span>
                                                             </div>
                                                             <span class="coin-numbers">
-                                                                <img src="/assets/default/img/quests-coin.png" alt="">
+                                                                <img src="/assets/default/img/quests-coin.png" alt="quests-coin">
                                                                 <span class="total-earned-coins">0</span>
                                                             </span>
                                                         </div>
