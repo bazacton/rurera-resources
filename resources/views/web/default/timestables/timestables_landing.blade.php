@@ -108,25 +108,25 @@
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
                     <div class="sats-box d-inline-flex border-solid border-transparent">
-                        <img class="mb-15" src="../assets/default/svgs/exam-multiple.svg" alt="#" height="50" width="50" /> <span class="font-18">Register / login</span>
+                        <img class="mb-15" src="../assets/default/svgs/exam-multiple.svg" alt="exam-multiple" height="50" width="50" /> <span class="font-18">Register / login</span>
                         <p class="pt-10 font-16 text-dark">Register today via the website and access to learn times tables.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
                     <div class="sats-box d-inline-flex border-solid border-transparent">
-                        <img class="mb-15" src="../assets/default/svgs/lessons.svg" alt="#" height="50" width="50" /> <span class="font-18">Create Accounts</span>
+                        <img class="mb-15" src="../assets/default/svgs/lessons.svg" alt="lessons" height="50" width="50" /> <span class="font-18">Create Accounts</span>
                         <p class="pt-10 font-16 text-dark">Easily setup accounts for parents, students and teachers to get benefit from.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
                     <div class="sats-box d-inline-flex border-solid border-transparent">
-                        <img class="mb-15" src="../assets/default/svgs/impact.svg" alt="#" height="50" width="50" /> <span class="font-18">Learn &amp; Play</span>
+                        <img class="mb-15" src="../assets/default/svgs/impact.svg" alt="impact" height="50" width="50" /> <span class="font-18">Learn &amp; Play</span>
                         <p class="pt-10 font-16 text-dark">Student will have access to both single and multi player games interfaces.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 col-md-6">
                     <div class="sats-box d-inline-flex border-solid border-transparent">
-                        <img class="mb-15" src="../assets/default/svgs/sav-time.svg" alt="#" height="50" width="50" /> <span class="font-18">Progress Tracking</span>
+                        <img class="mb-15" src="../assets/default/svgs/sav-time.svg" alt="sav-time" height="50" width="50" /> <span class="font-18">Progress Tracking</span>
                         <p class="pt-10 font-16 text-dark">Use the stats to keep track of your child's progress and celebrate their success.</p>
                     </div>
                 </div>
