@@ -1664,6 +1664,18 @@ Admin Questions Generator Page Style End
 .draggable-lists-chapter li {border: 1px solid #ddd;}
 /* Webinars Page style End */
 
+/* Admin Books Style Start */
+.editor-objects-block .editor-objects-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.editor-objects-block .editor-objects-list li i {
+    padding: 5px 5px 5px;
+    font-size: 14px;
+}
+/* Admin Books Style End */
+
 @media (min-width: 993px) {
     .edit-questions-tabs .similarity-content-block .nav {display: none;}
     .edit-questions-tabs .similarity-content-block .tab-content {padding: 0; display: flex; align-items: flex-start; flex-wrap: wrap;}
