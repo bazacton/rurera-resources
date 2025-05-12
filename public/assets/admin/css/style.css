@@ -1674,6 +1674,11 @@ Admin Questions Generator Page Style End
     padding: 5px 5px 5px;
     font-size: 14px;
 }
+.editor-controls-holder .tab-content > .tab-pane:has(.editor-objects) {
+    overflow: hidden;
+    overflow-y: auto;
+    height: 430px;
+}
 /* Admin Books Style End */
 
 @media (min-width: 993px) {
