@@ -397,6 +397,8 @@ function rureraform_builder_save(_object, question_status) {
         "form-elements": post_elements,
         "question_layout": question_layout,
     };
+
+    console.log(post_data);
     var form_submit_url = $(".form-class").attr('data-question_save_type');
     jQuery.ajax({
         type: "POST",
@@ -411,6 +413,111 @@ function rureraform_builder_save(_object, question_status) {
 				showConfirmButton: !1
 			});
 			window.location.href = '/admin/questions-generator/view-api-response/'+return_data.questions_bulk_list_id+'/'+return_data.topic_part_id+'/'+return_data.question_id;
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            jQuery(_object).find("i").attr("class", "far fa-save");
+            rureraform_global_message_show("danger", rureraform_esc_html__("Something went wrong. We got unexpected server response."));
+            rureraform_sending = false;
+        }
+    });
+    return false;
+}
+
+
+function rureraform_question_save(_object, question_status) {
+    if (rureraform_sending)
+        return false;
+    rureraform_sending = true;
+    //jQuery(_object).find("i").attr("class", "fas fa-spinner fa-spin");
+    var post_pages = new Array();
+    jQuery(".rureraform-pages-bar-item, .rureraform-pages-bar-item-confirmation").each(function () {
+        var page_id = jQuery(this).attr("data-id");
+        for (var i = 0; i < rureraform_form_pages.length; i++) {
+            if (rureraform_form_pages[i] != null && rureraform_form_pages[i]['id'] == page_id) {
+                post_pages.push(rureraform_encode64(JSON.stringify(rureraform_form_pages[i])));
+                break;
+            }
+        }
+    });
+    var post_elements = new Array();
+    for (var i = 0; i < rureraform_form_elements.length; i++) {
+        if (jQuery("#rureraform-element-" + i).length && rureraform_form_elements[i] != null) {
+            post_elements.push(rureraform_encode64(JSON.stringify(rureraform_form_elements[i])));
+        }
+    }
+
+    var question_title = $("[name=question_title]").val();
+    var question_id = $("[name=question_id]").val();
+
+
+
+    var question_layout = $(".rureraform-form");
+    var keywordsArray = [];
+
+    var keywordsArray = {}; // Initialize the object to store keyword data
+    $('[name^="keywords["]').each(function() {
+        var matches = $(this).attr('name').match(/keywords\[(\d+)\]\[(\w+)\]/);
+        pre(matches, 'matchesmatchesmatchesmatches');
+        if (matches) {
+            var id = matches[1];
+            var field = matches[2];
+            if (!keywordsArray[id]) {
+                keywordsArray[id] = {}; // Initialize each id in the array if it doesn't exist
+            }
+
+            keywordsArray[id][field] = $(this).val(); // Store the value
+        }
+    });
+    keywordsArray = JSON.stringify(keywordsArray);
+
+    question_layout.find('.editor-field').each(function () {
+        $.each($(this).data(), function (i) {
+            if (i != 'style') {
+                question_layout.find('.editor-field').removeAttr("data-" + i);
+            }
+        });
+
+
+    });
+    //var question_solve = $('#question_solve').summernote('code');
+    //var question_solve = $('#question_solve').val();
+    var question_solve = $('#question_solve').summernote('code');
+
+    question_layout.find('.editor-field').removeAttr("correct_answere");
+    var question_layout = rureraform_encode64(JSON.stringify(question_layout.html()));
+
+    var post_data = {
+        "question_solve": question_solve,
+        "question_title": question_title,
+        "question_id": question_id,
+        "action": "rureraform-form-save",
+        "keywords": keywordsArray,
+        "form-id": jQuery("#rureraform-id").val(),
+        "form-options": rureraform_encode64(JSON.stringify(rureraform_form_options)),
+        "form-pages": post_pages,
+        "form-elements": post_elements,
+        "question_layout": question_layout,
+    };
+
+    console.log('6666666');
+    console.log(post_data);
+    var form_submit_url = $(".form-class").attr('data-question_save_type');
+    jQuery.ajax({
+        type: "POST",
+        url: '/admin/questions-generator/view-api-response/update_question_assignment',//'update_builder_question',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        data: post_data,
+
+        success: function (return_data) {
+            return_data = jQuery.parseJSON(return_data);
+            rureraform_sending = false;
+            Swal.fire({
+                icon: "success",
+                html: '<h3 class="font-20 text-center text-dark-blue">Updated Successfully!</h3>',
+                showConfirmButton: !1
+            });
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             jQuery(_object).find("i").attr("class", "far fa-save");
@@ -8018,6 +8125,7 @@ function rureraform_form_ready() {
 
     jQuery(".rureraform-toolbar-list li a").on("click", function (e) {
         e.preventDefault();
+        console.log('rureraform-toolbar-list li a    -click')
 
         var image_styles = [];
 
@@ -8103,6 +8211,7 @@ function rureraform_form_ready() {
                     }
                 }
             }
+
             rureraform_form_elements.push(element);
             rureraform_form_changed = true;
             rureraform_build(image_styles);
@@ -10532,6 +10641,14 @@ $(document).on('click', '.quiz-stage-builder-generate', function () {
     var question_status = $(this).attr('data-status');
 
 	rureraform_builder_save(this, question_status);
+
+});
+
+$(document).on('click', '.question-stage-builder-generate', function () {
+
+    var question_status = $(this).attr('data-status');
+
+    rureraform_question_save(this, question_status);
 
 });
 
