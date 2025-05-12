@@ -306,6 +306,8 @@
             padding: 5px 10px;
             background: #efefef;
             margin: 0 0 3px 0;
+            display: flex;
+            align-items: center;
         }
         .editor-controls-holder {
             position: absolute;
