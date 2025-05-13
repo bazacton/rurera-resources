@@ -356,7 +356,7 @@
                         <div class="book-btn">
                             <div class="upload-box">
                                 <input type="file" id="upload-thumbnail">
-                                <label for="upload-thumbnail"><img src="/assets/default/svgs/file-image.svg" alt="file-image"></label>
+                                <label for="upload-thumbnail"><img src="/assets/default/svgs/edit-simple.svg" alt="file-image"></label>
                             </div>
                             <button type="button"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></button>
                         </div>
