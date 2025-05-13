@@ -2412,7 +2412,7 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     margin: 0;
     height: 200px;
 }
-.general-knowledge-modal .img-holder figure img {
+.general-knowledge-modal .book-btn img {
     max-width: 100%;
     width: 100%;
     object-fit: cover;
@@ -2443,7 +2443,9 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     padding: 20px;
 }
 .general-knowledge-modal .upload-box {
-    position: relative;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .general-knowledge-modal .upload-box input[type="file"] {
     position: absolute;
@@ -2469,14 +2471,12 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     object-fit: contain;
 }
 .general-knowledge-modal .book-btn {
-    position: absolute;
-    left: 20px;
-    bottom: -35px;
-    z-index: 1;
+    position: relative;
+    display: inline-block;
 }
 .general-knowledge-modal .book-btn button {
     background-color: var(--purple);
-    border: 4px solid #fff;
+    border: 4px solid #000;
     border-radius: 5px;
     padding: 12px;
     height: 75px;
@@ -2486,9 +2486,9 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     filter: invert(100%) sepia(1%) saturate(1%) hue-rotate(127deg) brightness(105%) contrast(100%);
 }
 .general-knowledge-modal .modal-body {
-    padding-top: 55px;
+    padding-top: 0;
 }
-.general-knowledge-modal .text-holder h2 {
+.general-knowledge-modal .modal-header h2 {
     color: #333;
     font-size: 1.8rem;
     margin-bottom: 20px;
