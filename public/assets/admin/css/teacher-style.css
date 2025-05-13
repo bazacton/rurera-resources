@@ -5211,6 +5211,7 @@ button.print-download-btn {
 .admin_teacher_role .classes-card:has(.skelton-hide) .bottom-controls {margin: 0;}
 .listing-grid-card:has(.skelton-hide) {padding: 10px; }
 .listing-grid-card:has(.skelton-hide) .author-info {padding-bottom: 0; border: 0;}
+.admin_teacher_role .quiz-ai-tags .skelton-hide a {background-color: inherit; visibility: hidden;}
 /* Skeleton Loading Style End */
 
 @media screen and (max-width: 992px) {
