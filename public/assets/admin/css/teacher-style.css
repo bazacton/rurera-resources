@@ -2058,7 +2058,10 @@ Tailer Hub Style Start
     align-items: flex-start;
 }
 .grammer-modal-canvas-block .custom-switch-indicator {
-    width: 80px;
+    width: 40px;
+}
+.grammer-modal-canvas-block .custom-switch-description{ 
+    width: calc(100% - 40px);
 }
 /* Blank-Canvas-Modal Style End */
 
