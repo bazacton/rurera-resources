@@ -5214,9 +5214,6 @@ button.print-download-btn {
 .admin_teacher_role .quiz-ai-tags .skelton-hide a {background-color: inherit; visibility: hidden;}
 .admin_teacher_role .search-lable.skelton-hide,
 .admin_teacher_role .bulk-heading.skelton-hide {display: inline-block;}
-.admin_teacher_role .skeleton .bg-white.panel-border:has(.skelton-hide) {
-    min-height: 180px;
-}
 /* Skeleton Loading Style End */
 
 @media screen and (max-width: 992px) {
