@@ -181,14 +181,14 @@
                         <div class="questions-header">
                             <div class="questions-header-inner">
                                 <div class="text-holder skelton-hide">
-                                    <h5 class="font-16 font-weight-bold">Exploring Magnetic Matrials and Their Uses<small>(18 questions)</small></h5>
+                                    <h5 class="font-16 font-weight-bold"><span contenteditable="true">Exploring Magnetic Matrials and Their Uses</span><small>(18 questions)</small></h5>
                                 </div>
                                 <div class="questions-header-controls skelton-hide">
                                     <button type="button"><i class="fas fa-plus"></i> Add All</button>
                                 </div>
                             </div>
                         </div>
-                        <ul class="list-options question-list-options mb-15">      
+                        <ul class="list-options question-list-options mb-15">
                             <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
                             <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt="save"></span> 7th-8th  Grade</li>
                             <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
@@ -225,7 +225,7 @@
                         <a href="#q-collections" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-collection.svg" alt=""> Add question from Collection</a>
                         <a href="#generate-ai" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/ai.svg" alt=""> Generate quiz using AI</a>
                         <a href="#import-q" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/import-worksheet.svg" alt=""> Import Worksheets</a>
-						<a href="javascript:;" class="assignment-save-button skelton-hide">Create Assignment</a>
+                        <a href="javascript:;" class="assignment-save-button skelton-hide">Create Assignment</a>
                     </div>
                     <div class="mb-30 bg-white panel-border rounded-sm p-15" style="display: none;">
                         <h6 class="search-lable">Search question from library</h6>
