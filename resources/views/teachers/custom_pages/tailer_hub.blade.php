@@ -1819,27 +1819,21 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">×</span>
-            </button>
-            <div class="img-holder">
-                <figure>
-                    <img src="/assets/default/img/ecommerce-img.webp" alt="ecommerce-img">
-                    <figcaption>
-                        <div class="upload-box">
-                            <input type="file" id="upload-thumbnail">
-                            <label for="upload-thumbnail"><img src="/assets/default/svgs/file-image.svg" alt="file-image"> Upload thumbnail</label>
-                        </div>
-                        <div class="book-btn">
-                            <button type="button"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></button>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
+                <h2 class="editable" contenteditable="true">General Knowledge &amp; Methodology</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="book-btn">
+                    <div class="upload-box">
+                        <input type="file" id="upload-thumbnail">
+                        <label for="upload-thumbnail"><img src="/assets/default/svgs/file-image.svg" alt="file-image"></label>
+                    </div>
+                    <button type="button"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></button>
+                </div>
             </div>
             <div class="modal-body">
             <div class="text-holder">
-                <h2 class="editable" contenteditable="true">General Knowledge &amp; Methodology</h2>
+                
                 <ul>
                     <li>
                         <img src="/assets/default/svgs/title.svg" alt="title">
