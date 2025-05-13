@@ -2090,6 +2090,12 @@ Tailer Hub Style Start
     line-height: normal;
     outline: none;
 }
+.grammer-modal-canvas-block .keyword-buttons .move-up-keyword {
+    background-color: #4CAF50;
+}
+.grammer-modal-canvas-block .keyword-buttons .move-down-keyword {
+    background-color: #2196F3;
+}
 /* Blank-Canvas-Modal Style End */
 
 /* Section-Controls Style Start */
