@@ -2580,6 +2580,13 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     padding: 5px 15px;
     border-radius: 5px;
 }
+.general-knowledge-modal .select-option-box {
+    padding: 0 0 0 25px;
+}
+.general-knowledge-modal .select-option-box select {
+    border: 0;
+    color: #6c757d;
+}
 .selected-category {
     border-bottom: 1px solid #ddd;
     padding: 8px 10px;
