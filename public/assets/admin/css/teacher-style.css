@@ -5240,6 +5240,7 @@ button.print-download-btn {
 }
 .skelton-hide.skelton-height-lg {
     max-height: 30px;
+    min-height: 30px;
 }
 .featured-controls.skelton-hide,
 .input-field.skelton-hide {
