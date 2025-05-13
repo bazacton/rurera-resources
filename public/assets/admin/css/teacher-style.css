@@ -5238,7 +5238,7 @@ button.print-download-btn {
     min-height: 20px;
     margin-bottom: 0;
 }
-.skelton-height-lg {
+.skelton-hide.skelton-height-lg {
     max-height: 30px;
 }
 .featured-controls.skelton-hide,
