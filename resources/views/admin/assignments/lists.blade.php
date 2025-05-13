@@ -17,7 +17,7 @@
     </div>
     <section class="card">
         <div class="card-body">
-            <form action="/admin/assignments" id="topic_parts_search_form" method="get" class="row mb-0 skelton-hide">
+            <form action="/admin/assignments" id="topic_parts_search_form" method="get" class="row mb-0 skelton-hide 22">
                 <div class="col-md-3">
                     <div class="form-group">
                         <label class="input-label">{{trans('admin/main.category')}}</label>
