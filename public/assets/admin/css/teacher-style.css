@@ -2036,79 +2036,23 @@ Tailer Hub Style Start
 }
 
 /* Blank-Canvas-Modal Style Start */
-.blank-canvas-modal {
-    background-color: #f7f7f7;
-}
-.blank-canvas-modal .modal-dialog {
-    max-width: 100%;
-    margin: 0;
-    height: 100%;
-}
-.blank-canvas-modal .modal-content {
-    height: 100%;
-    background-color: inherit;
-    box-shadow: none;
-}
-.blank-canvas-modal.modal.show .modal-content {
-    box-shadow: none;
-}
-.blank-canvas-modal .modal-header {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    z-index: 1;
-    padding: 0;
-}
-.blank-canvas-modal .modal-body {
-    padding: 0 0 0 300px;
-}
-.blank-canvas-modal .modal-body.grammer-modal-canvas-block {
-    padding: 15px;
-}
-.blank-canvas-modal .question-content-header {
-    padding-left: 15px;
-    padding-right: 50px;
-}
-.canvas-modal-container {
-    max-width: 960px;
-    margin: 50px auto;
-}
-.grammer-modal-canvas-block .question-explain-block {
-    background-color: inherit;
-    border: 0;
-    padding: 0;
-}
-.grammer-modal-canvas-block .create-question-fields-block {
-    justify-content: space-between;
-}
-.grammer-modal-canvas-block .add-keyword-btn {
-    border: 0;
-    background-color: inherit;
-    height: auto;
-    color: var(--primary);
-    border-bottom: 1px solid var(--primary);
-    line-height: normal;
-    outline: none;
-}
-.grammer-modal-canvas-block .keyword-buttons .move-up-keyword {
-    background-color: #4CAF50;
-}
-.grammer-modal-canvas-block .keyword-buttons .move-down-keyword {
-    background-color: #2196F3;
-}
-.grammer-modal-canvas-block .rureraform-toolbar-list .question_templates {
-    max-width: 500px;
-    min-width: 500px;
-    padding: 15px;
-    gap: 10px;
-}
-.grammer-modal-canvas-block .rureraform-toolbar-list .question_templates li {
-    flex: 0 0 23%;
-    max-width: 23%;
-}
-.grammer-modal-canvas-block .rureraform-toolbars {
-    z-index: 2;
-}
+.blank-canvas-modal {background-color: #f7f7f7;}
+.blank-canvas-modal .modal-dialog {max-width: 100%; margin: 0; height: 100%;}
+.blank-canvas-modal .modal-content {height: 100%; background-color: inherit; box-shadow: none;}
+.blank-canvas-modal.modal.show .modal-content {box-shadow: none;}
+.blank-canvas-modal .modal-header {position: absolute; right: 15px; top: 15px; z-index: 1; padding: 0;}
+.blank-canvas-modal .modal-body {padding: 0 0 0 300px;}
+.blank-canvas-modal .modal-body.grammer-modal-canvas-block {padding: 15px;}
+.blank-canvas-modal .question-content-header {padding-left: 15px; padding-right: 50px;}
+.canvas-modal-container {max-width: 960px; margin: 50px auto;}
+.grammer-modal-canvas-block .question-explain-block {background-color: inherit; border: 0; padding: 0;}
+.grammer-modal-canvas-block .create-question-fields-block {justify-content: space-between;}
+.grammer-modal-canvas-block .add-keyword-btn {border: 0; background-color: inherit; height: auto; color: var(--primary); border-bottom: 1px solid var(--primary); line-height: normal; outline: none;}
+.grammer-modal-canvas-block .keyword-buttons .move-up-keyword {background-color: #4CAF50;}
+.grammer-modal-canvas-block .keyword-buttons .move-down-keyword {background-color: #2196F3;}
+.grammer-modal-canvas-block .rureraform-toolbar-list .question_templates {max-width: 500px; min-width: 500px; padding: 15px; gap: 10px;}
+.grammer-modal-canvas-block .rureraform-toolbar-list .question_templates li {flex: 0 0 23%; max-width: 23%;}
+.grammer-modal-canvas-block .rureraform-toolbars {z-index: 2;}
 /* Blank-Canvas-Modal Style End */
 
 /* Section-Controls Style Start */
