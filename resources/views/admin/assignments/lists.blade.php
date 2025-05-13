@@ -17,9 +17,9 @@
     </div>
     <section class="card">
         <div class="card-body">
-            <form action="/admin/assignments" id="topic_parts_search_form" method="get" class="row mb-0 skelton-hide 22">
+            <form action="/admin/assignments" id="topic_parts_search_form" method="get" class="row mb-0">
                 <div class="col-md-3">
-                    <div class="form-group">
+                    <div class="form-group skelton-hide">
                         <label class="input-label">{{trans('admin/main.category')}}</label>
                         <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control" data-course_id="{{get_filter_request('subject_id', 'assignments_search')}}">
                             <option value="">{{trans('admin/main.all_categories')}}</option>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="form-group">
+                    <div class="form-group skelton-hide">
                         <label>Subjects</label>
                         <select data-return_type="option"
                                 data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'assignments_search')}}"
@@ -54,14 +54,14 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="form-group">
+                    <div class="form-group skelton-hide">
                         <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                         <div class="input-group">
                             <input type="date" id="lsdate" class="text-center form-control" name="to" value="{{ request()->get('to') }}" placeholder="End Date">
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
+                <div class="col-12 col-md-3 d-flex align-items-center justify-content-end skelton-hide">
                     <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}</button>
                 </div>
             </form>
