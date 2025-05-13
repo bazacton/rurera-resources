@@ -612,12 +612,12 @@
                         </div>
                         <div class="col-12 col-lg-8 col-md-8">
                             <div class="elements-holder bg-white panel-border p-15 border-bottom-0">
-                                <div class="questions-header skelton-hide">
+                                <div class="questions-header">
                                     <div class="questions-header-inner">
-                                        <div class="text-holder">
+                                        <div class="text-holder skelton-hide skelton-height-lg">
                                             <h5>Exploring Magnetic Matrials and Their Uses<small>(18 questions)</small></h5>
                                         </div>
-                                        <div class="questions-header-controls">
+                                        <div class="questions-header-controls skelton-hide skelton-height-lg">
                                             <button type="button"><i class="fas fa-plus"></i> Add All</button>
                                         </div>
                                     </div>
