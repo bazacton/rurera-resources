@@ -146,7 +146,7 @@
     <section class="section">
 
         <form action="/admin/custom_quiz/{{ !empty($assignment) ? $assignment->id.'/store' : 'store' }}"
-              method="Post" class="custom_quiz_form">
+              method="Post" class="custom_quiz_form" enctype="multipart/form-data">
             {{ csrf_field() }}
         <div class="section-body skeleton">
             <div class="row">
@@ -366,10 +366,10 @@
                         </button>
                         <div class="book-btn">
                             <div class="upload-box">
-                                <input type="file" id="upload-thumbnail">
+                                <input type="file" id="upload-thumbnail" name="quiz_image" class="assignment-img-upload">
                                 <label for="upload-thumbnail"><img src="/assets/default/svgs/edit-simple.svg" alt="file-image"></label>
                             </div>
-                            <button type="button"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></button>
+                            <button type="button"><img src="/assets/default/svgs/book-saved.svg" class="assignment_img" alt="book-saved"></button>
                         </div>
                     </div>
                     <div class="modal-body">
@@ -1755,6 +1755,17 @@
 
         $(document).on('click', '.apply-assignment-btn', function () {
             $(".custom_quiz_form").submit();
+        });
+
+        $(document).on('change', '#upload-thumbnail', function () {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    $(".assignment_img").attr("src", e.target.result);
+                };
+                reader.readAsDataURL(file);
+            }
         });
 
 
