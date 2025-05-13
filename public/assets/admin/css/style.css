@@ -1688,8 +1688,8 @@ Admin Questions Generator Page Style End
     .similarity-content-block .tab-content .similarity-tab-data {width: 30%; max-width: 30%; display: inline-flex; flex-direction: column; opacity: 1;}
     .similarity-content-block:has(.rureraform-admin-popup[style*="display: block"]) .similarity-tab-data {display: none;}
     .similarity-content-block:has(.rureraform-admin-popup[style*="display: block"]) .question-details-tab-data {width: 100%; max-width: 100%; flex-direction: row;}
-    .similarity-content-block:has(.rureraform-admin-popup[style*="display: block"]) .question-details-tab-data > .col-12 {max-width: 70%; width: 70%;}
-    .similarity-content-block:has(.rureraform-admin-popup[style*="display: block"]) .question-details-tab-data .lms-element-properties {width: 30%; max-width: 30%;}
+    .similarity-content-block:has(.rureraform-admin-popup[style*="display: block"]) .question-details-tab-data > .col-12 {max-width: 65%; width: 65%;}
+    .similarity-content-block:has(.rureraform-admin-popup[style*="display: block"]) .question-details-tab-data .lms-element-properties {width: 35%; max-width: 35%;}
 }
 @media (max-width: 992px) {
     .api-question-status,
