@@ -5238,9 +5238,12 @@ button.print-download-btn {
     min-height: 20px;
     margin-bottom: 0;
 }
-.skelton-hide.skelton-height-lg {
+.admin_teacher_role .skelton-hide.skelton-height-lg {
     max-height: 30px;
     min-height: 30px;
+}
+.admin_teacher_role .skelton-hide.skelton-mb-0 {
+    margin-bottom: 0;
 }
 .featured-controls.skelton-hide,
 .input-field.skelton-hide {
