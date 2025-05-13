@@ -2583,6 +2583,13 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 .general-knowledge-modal .select-option-box {
     padding: 0 0 0 25px;
 }
+.general-knowledge-modal .text-holder .cancel-btn {
+    background-color: #f69898;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
 .general-knowledge-modal .select-option-box select {
     border: 0;
     color: #6c757d;
