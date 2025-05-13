@@ -2427,8 +2427,9 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 }
 .general-knowledge-modal .modal-header {
     position: relative;
-    padding: 0;
+    padding: 25px;
     width: 100%;
+    display: inline-block;
 }
 .general-knowledge-modal .img-holder figure figcaption {
     position: absolute;

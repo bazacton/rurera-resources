@@ -1870,42 +1870,6 @@
                         <input type="text" placeholder="Subject" title="Subject">
                         <em>Empty</em>
                     </li>
-                    <li>
-                        <img src="/assets/default/svgs/teacher-with-stick.svg" alt="teacher-with-stick">
-                        <input type="text" placeholder="Co-teacher" title="Co-teacher">
-                        <div class="dropdown">
-                            <button class="btn-link dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Select Language
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="generalMenu" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(30px, 30px, 0px);">
-                            <div class="select-languages-holder">
-                                    <div class="languages">
-                                        <span>Select Languages</span>
-                                        <a href="#" class="active">English</a>
-                                        <a href="#">Deutsch</a>
-                                        <a href="#">Espanol</a>
-                                        <a href="#">Francais</a>
-                                        <a href="#">Italian</a>
-                                    </div>
-                            </div> 
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="/assets/default/svgs/calendar-days.svg" alt="calendar-days">
-                        <input type="text" placeholder="Start Date" title="Start Date">
-                        <em>Empty</em>
-                    </li>
-                    <li>
-                        <img src="/assets/default/svgs/deadlines.svg" alt="deadlines">
-                        <input type="text" placeholder="Deadline :" title="Deadline :">
-                        <em>Empty</em>
-                    </li>
-                    <li>
-                        <img src="/assets/default/svgs/attempt.svg" alt="attempt">
-                        <input type="text" placeholder="Participant attempts :" title="Participant attempts :">
-                        <em>Empty</em>
-                    </li>
                 </ul>
                 <div class="description-field">
                     <textarea name="description" placeholder="Type description here..."></textarea>
