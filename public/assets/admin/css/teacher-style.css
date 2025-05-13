@@ -5238,6 +5238,13 @@ button.print-download-btn {
     min-height: 20px;
     margin-bottom: 0;
 }
+.skelton-height-lg {
+    max-height: 30px;
+}
+.featured-controls.skelton-hide,
+.input-field.skelton-hide {
+    margin-bottom: 0;
+}
 /* Skeleton Loading Style End */
 
 @media screen and (max-width: 992px) {
