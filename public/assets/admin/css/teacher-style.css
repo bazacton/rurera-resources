@@ -2053,6 +2053,13 @@ Tailer Hub Style Start
 .grammer-modal-canvas-block .rureraform-toolbar-list .question_templates {max-width: 500px; min-width: 500px; padding: 15px; gap: 10px;}
 .grammer-modal-canvas-block .rureraform-toolbar-list .question_templates li {flex: 0 0 23%; max-width: 23%;}
 .grammer-modal-canvas-block .rureraform-toolbars {z-index: 2;}
+.grammer-modal-canvas-block .switches-holder .custom-switches-stacked .custom-switch {
+    display: inline-flex;
+    align-items: flex-start;
+}
+.grammer-modal-canvas-block .custom-switch-indicator {
+    width: 80px;
+}
 /* Blank-Canvas-Modal Style End */
 
 /* Section-Controls Style Start */
