@@ -2105,6 +2105,9 @@ Tailer Hub Style Start
     flex: 0 0 21%;
     max-width: 21%;
 }
+.grammer-modal-canvas-block .rureraform-toolbars {
+    z-index: 2;
+}
 /* Blank-Canvas-Modal Style End */
 
 /* Section-Controls Style Start */
