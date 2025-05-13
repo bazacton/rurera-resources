@@ -225,7 +225,7 @@
                         <a href="#q-collections" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-collection.svg" alt=""> Add question from Collection</a>
                         <a href="#generate-ai" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/ai.svg" alt=""> Generate quiz using AI</a>
                         <a href="#import-q" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/import-worksheet.svg" alt=""> Import Worksheets</a>
-                        <a href="javascript:;" class="assignment-save-button skelton-hide">Create Assignment</a>
+                        <a href="javascript:;" class="assignment-save-button skelton-hide" data-toggle="modal" data-target="#general-knowledge-modal">Create Assignment</a>
                     </div>
                     <div class="mb-30 bg-white panel-border rounded-sm p-15 create-element-box" style="display: none;">
                         <h6 class="search-lable">Search question from library</h6>
@@ -345,6 +345,89 @@
         </div>
 
         <!-- Modal -->
+        <div class="modal fade general-knowledge-modal" id="general-knowledge-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="editable" contenteditable="true">General Knowledge &amp; Methodology</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <div class="book-btn">
+                            <div class="upload-box">
+                                <input type="file" id="upload-thumbnail">
+                                <label for="upload-thumbnail"><img src="/assets/default/svgs/file-image.svg" alt="file-image"></label>
+                            </div>
+                            <button type="button"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                    <div class="text-holder">
+                        
+                        <ul>
+                            <li>
+                                <img src="/assets/default/svgs/title.svg" alt="title">
+                                <input type="text" placeholder="Title" title="Title">
+                                <div class="dropdown">
+                                    <button class="btn-link dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Choose Category
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="generalMenu" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(30px, 30px, 0px);">
+                                    <div class="select-categories-holder">
+                                            <div class="selected-category">
+                                                <a href="#">Prototyping</a>
+                                            </div>
+                                            <div class="categories">
+                                                <span>Select category or create one</span>
+                                                <a href="#" class="active">Prototyping</a>
+                                                <a href="#">UI/UX</a>
+                                                <a href="#">Design</a>
+                                                <a href="#">Card</a>
+                                                <a href="#">Not Urgent</a>
+                                                <a href="#">Line</a>
+                                            </div>
+                                    </div> 
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="/assets/default/svgs/grades.svg" alt="grades">
+                                <div class="select-option-box">
+                                    <select>
+                                        <option value="Grade">Grade</option>
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                    </select>
+                                </div>
+                                <em>Empty</em>
+                            </li>
+                            <li>
+                                <img src="/assets/default/svgs/book-saved.svg" alt="book-saved">
+                                <div class="select-option-box">
+                                    <select>
+                                        <option value="Subject">Subject</option>
+                                        <option value="Science">Science</option>
+                                        <option value="Math">Math</option>
+                                        <option value="English">English</option>
+                                    </select>
+                                </div>
+                                <em>Empty</em>
+                            </li>
+                        </ul>
+                        <div class="description-field">
+                            <textarea name="description" placeholder="Type description here..."></textarea>
+                            <span class="description-count">0/400</span>
+                        </div>
+                        <div class="general-knowledge-footer">
+                            <p>Let your learner know a title about the learning path</p>
+                            <button type="button" class="apply-btn">Apply</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
         <div class="modal fade question_templates_modal" id="templatesleModal" tabindex="-1" aria-labelledby="templatesleModalLabel" style="display: none;" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
