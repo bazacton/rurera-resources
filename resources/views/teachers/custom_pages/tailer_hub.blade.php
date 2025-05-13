@@ -1875,7 +1875,10 @@
                     <textarea name="description" placeholder="Type description here..."></textarea>
                     <span class="description-count">0/400</span>
                 </div>
-                <p>Let your learner know a title about the learning path</p>
+                <div class="general-knowledge-footer">
+                    <p>Let your learner know a title about the learning path</p>
+                    <button type="button">Apply</button>
+                </div>
             </div>
             </div>
         </div>
