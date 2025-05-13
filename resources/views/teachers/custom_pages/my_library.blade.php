@@ -518,9 +518,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Robotics Mind Challenges</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Robotics Mind Challenges</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>David H</span>
                                                         <span>8 hours ago</span>
@@ -542,9 +542,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Animal Kingdom Quiz</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Animal Kingdom Quiz</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Ella S</span>
                                                         <span>2 hours ago</span>
@@ -566,9 +566,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Physics Wonders Challenges</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Physics Wonders Challenges</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Nina F</span>
                                                         <span>6 hours ago</span>
@@ -590,9 +590,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Chemistry Formula Puzzles</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Chemistry Formula Puzzles</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Oliver K</span>
                                                         <span>3 hours ago</span>
