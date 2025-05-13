@@ -187,27 +187,27 @@
                     <div class="elements-holder bg-white panel-border rounded-sm p-15 mb-30">
                         <div class="questions-header">
                             <div class="questions-header-inner">
-                                <div class="text-holder">
+                                <div class="text-holder skelton-hide">
                                     <h5>Exploring Magnetic Matrials and Their Uses<small>(18 questions)</small></h5>
                                 </div>
-                                <div class="questions-header-controls">
+                                <div class="questions-header-controls skelton-hide">
                                     <button type="button"><i class="fas fa-plus"></i> Add All</button>
                                 </div>
                             </div>
                         </div>
                         <ul class="list-options question-list-options mb-15">      
-                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
-                            <li><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt="save"></span> 7th-8th  Grade</li>
-                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
+                            <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
+                            <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt="save"></span> 7th-8th  Grade</li>
+                            <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
                         </ul>
                         <div class="class-controls">
                             <div class="left-area d-inline-flex align-items-center">
                                 <div class="class-controls-option questions-control-options border-0 mr-0 pr-0 d-inline-flex align-items-center">
-                                    <button type="button"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple">Copy &amp; edit</button>
-                                    <button type="button"><img src="/assets/default/svgs/save.svg" alt="save">Save</button>
-                                    <button type="button"><img src="/assets/default/svgs/share.svg" alt="share">Share</button>
-                                    <button type="button"><img src="/assets/default/svgs/download.svg" alt="download">Worksheet</button>
-                                    <div class="dropdown-box">
+                                    <button class="skelton-hide" type="button"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple">Copy &amp; edit</button>
+                                    <button class="skelton-hide" type="button"><img src="/assets/default/svgs/save.svg" alt="save">Save</button>
+                                    <button class="skelton-hide" type="button"><img src="/assets/default/svgs/share.svg" alt="share">Share</button>
+                                    <button class="skelton-hide" type="button"><img src="/assets/default/svgs/download.svg" alt="download">Worksheet</button>
+                                    <div class="dropdown-box skelton-hide">
                                         <div class="dropdown">
                                             <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
                                                 <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
@@ -222,8 +222,8 @@
                                 </div>
                             </div>
                             <div class="right-area w-auto">
-                                <button type="button" class="assignment-btn"><img class="show-img" src="/assets/default/svgs/clock.svg" alt="clock"> Assign</button>
-                                <button type="button" class="perview-btn" data-toggle="modal" data-target="#document-modal"><img class="show-img" src="/assets/default/svgs/eye-show.svg" alt="eye-show"> Perview</button>
+                                <button type="button" class="assignment-btn skelton-hide"><img class="show-img" src="/assets/default/svgs/clock.svg" alt="clock"> Assign</button>
+                                <button type="button" class="perview-btn skelton-hide" data-toggle="modal" data-target="#document-modal"><img class="show-img" src="/assets/default/svgs/eye-show.svg" alt="eye-show"> Perview</button>
                             </div>
                         </div>
                     </div>
