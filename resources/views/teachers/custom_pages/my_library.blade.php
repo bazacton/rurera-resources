@@ -26,11 +26,11 @@
                 <div class="staff-picks-tabs skeleton">
                     <div class="mb-30 bg-white panel-border rounded-sm p-15">
                         <div class="rureraform-search-field mb-15">
-                            <div class="input-field skelton-hide">
+                            <div class="input-field skelton-hide skelton-height-lg">
                                 <input type="text" placeholder="Search question..">
                                 <button type="button"><i class="fas fa-search"></i> <span>Search questions</span></button>
                             </div>
-                            <div class="featured-controls skelton-hide">
+                            <div class="featured-controls skelton-hide skelton-height-lg">
                                 <button type="button" class="active">Featured List</button>
                                 <button type="button">Community</button>
                                 <button type="button">My Collection</button>
