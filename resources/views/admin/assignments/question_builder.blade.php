@@ -416,7 +416,7 @@ $rand_id = rand(999,99999);
 
 													<div class="question-keywords-block">
 														<!-- Keywords Section -->
-														<h3>Keywords</h3>
+														<h3 class="font-20 font-weight-bold">Keywords</h3>
 														<div class="keywords-section">
 															<div class="keyword-block" data-keyword-index="1">
 																	@if(!empty( $keywords ) )
