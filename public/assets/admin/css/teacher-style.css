@@ -5223,6 +5223,21 @@ button.print-download-btn {
 }
 .admin_teacher_role .create-element-box .search-lable.skelton-hide,
 .admin_teacher_role .create-element-box .bulk-heading.skelton-hide {display: inline-block; margin-bottom: 15px;}
+.listing-card .text-holder .skelton-hide {
+    max-height: 20px;
+    height: 20px;
+    min-height: 20px;
+}
+.listing-card .text-holder .author-info.skelton-hide {
+    margin-bottom: 0;
+}
+.admin_teacher_role .img-holder.skelton-hide {
+    margin-bottom: 0;
+}
+.admin_teacher_role .list-options.skelton-hide {
+    min-height: 20px;
+    margin-bottom: 0;
+}
 /* Skeleton Loading Style End */
 
 @media screen and (max-width: 992px) {
