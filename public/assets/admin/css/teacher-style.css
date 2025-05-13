@@ -2062,6 +2062,9 @@ Tailer Hub Style Start
 .blank-canvas-modal .modal-body {
     padding: 0 0 0 300px;
 }
+.blank-canvas-modal .modal-body.grammer-modal-canvas-block {
+    padding: 15px;
+}
 .blank-canvas-modal .question-content-header {
     padding-left: 15px;
     padding-right: 50px;
