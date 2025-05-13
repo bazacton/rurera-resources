@@ -421,7 +421,10 @@
                         </div>
                         <div class="general-knowledge-footer">
                             <p>Let your learner know a title about the learning path</p>
-                            <button type="button" class="apply-btn">Apply</button>
+                            <div class="footer-controls">
+                                <button type="button" class="apply-btn">Apply</button>
+                                <button type="button" class="cancel-btn">Cancel</button>
+                            </div>
                         </div>
                     </div>
                     </div>
