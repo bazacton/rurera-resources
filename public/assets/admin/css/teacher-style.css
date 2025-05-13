@@ -2096,6 +2096,15 @@ Tailer Hub Style Start
 .grammer-modal-canvas-block .keyword-buttons .move-down-keyword {
     background-color: #2196F3;
 }
+.grammer-modal-canvas-block .rureraform-toolbar-list .question_templates {
+    max-width: 500px;
+    min-width: 500px;
+    padding: 15px 0;
+}
+.grammer-modal-canvas-block .rureraform-toolbar-list .question_templates li {
+    flex: 0 0 21%;
+    max-width: 21%;
+}
 /* Blank-Canvas-Modal Style End */
 
 /* Section-Controls Style Start */
