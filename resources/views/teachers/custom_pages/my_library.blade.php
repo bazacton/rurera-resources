@@ -87,9 +87,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="go-jetters-hero-academy-cc-v2">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Sciency Science</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Sciency Science</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Kaiser K</span>
                                                         <span>2 hours ago</span>
