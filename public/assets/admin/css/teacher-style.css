@@ -2568,6 +2568,16 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     transform: none !important;
     top: 100% !important;
 }
+.general-knowledge-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.apply-btn {
+	background-color: var(--purple);
+	border: 0;
+	color: #fff;
+}
 .selected-category {
     border-bottom: 1px solid #ddd;
     padding: 8px 10px;
