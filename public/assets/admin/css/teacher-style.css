@@ -1869,6 +1869,9 @@ Tailer Hub Style Start
     margin-right: 10px;
 }
 /* Questions AI Nav Controls Style End */
+.create-element-box {
+    min-height: 150px;
+}
 .bulk-ai-box .select-field {
     background-color: #f6f6f6;
     border-radius: 5px;
