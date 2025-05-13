@@ -188,7 +188,7 @@
                         <div class="questions-header">
                             <div class="questions-header-inner">
                                 <div class="text-holder skelton-hide">
-                                    <h5>Exploring Magnetic Matrials and Their Uses<small>(18 questions)</small></h5>
+                                    <h5 class="font-16 font-weight-bold">Exploring Magnetic Matrials and Their Uses<small>(18 questions)</small></h5>
                                 </div>
                                 <div class="questions-header-controls skelton-hide">
                                     <button type="button"><i class="fas fa-plus"></i> Add All</button>
