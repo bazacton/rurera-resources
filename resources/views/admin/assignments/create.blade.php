@@ -184,7 +184,7 @@
                         <a href="#import-q" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/import-worksheet.svg" alt=""> Import Worksheets</a>
 						<a href="javascript:;" class="assignment-save-button">Create Assignment</a>
                     </div>
-                    <div class="elements-holder bg-white panel-border p-15 mb-30">
+                    <div class="elements-holder bg-white panel-border rounded-sm p-15 mb-30">
                         <div class="questions-header">
                             <div class="questions-header-inner">
                                 <div class="text-holder">
