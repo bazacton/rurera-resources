@@ -1685,6 +1685,10 @@ Admin Questions Generator Page Style End
     .edit-questions-tabs .similarity-content-block .nav {display: none;}
     .edit-questions-tabs .similarity-content-block .tab-content {padding: 0; display: flex; align-items: flex-start; flex-wrap: wrap;}
     .similarity-content-block .tab-content .question-details-tab-data {width: 70%; max-width: 70%; display: inline-flex; flex-direction: column; opacity: 1;}
+    .grammer-modal-canvas-block .similarity-content-block .tab-content .question-details-tab-data {
+        width: 100%;
+        max-width: 100%;
+    }
     .similarity-content-block .tab-content .similarity-tab-data {width: 30%; max-width: 30%; display: inline-flex; flex-direction: column; opacity: 1;}
     .similarity-content-block:has(.rureraform-admin-popup[style*="display: block"]) .similarity-tab-data {display: none;}
     .similarity-content-block:has(.rureraform-admin-popup[style*="display: block"]) .question-details-tab-data {width: 100%; max-width: 100%; flex-direction: row;}
