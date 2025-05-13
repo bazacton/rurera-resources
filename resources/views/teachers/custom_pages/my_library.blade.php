@@ -110,7 +110,7 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
+                                            <div class="text-holder">
                                                 <h3 class="skelton-hide">Maths Magic Adventure</h3>
                                                 <div class="author-info skelton-hide">
                                                     <span class="info-text">
