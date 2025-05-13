@@ -1877,7 +1877,7 @@
                 </div>
                 <div class="general-knowledge-footer">
                     <p>Let your learner know a title about the learning path</p>
-                    <button type="button">Apply</button>
+                    <button type="button" class="apply-btn">Apply</button>
                 </div>
             </div>
             </div>
