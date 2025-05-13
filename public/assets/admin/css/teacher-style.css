@@ -2574,9 +2574,11 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 	justify-content: space-between;
 }
 .general-knowledge-modal .text-holder .apply-btn {
-	background-color: var(--purple);
-	border: 0;
-	color: #fff;
+    background-color: var(--purple);
+    border: 0;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
 }
 .selected-category {
     border-bottom: 1px solid #ddd;
