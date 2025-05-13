@@ -227,8 +227,8 @@
                         <div class="bulk-heading skelton-hide">
                             <h6>Bulk Settings</h6>
                         </div>
-                        <div class="bulk-ai skelton-hide">
-                            <div class="bulk-ai-box">
+                        <div class="bulk-ai">
+                            <div class="bulk-ai-box skelton-hide">
                                 <span class="bulk-lable">Rendomize</span>
                                 <div class="btn-field">
                                     <a href="#">Question order</a>
