@@ -36,8 +36,8 @@
                                 <button type="button">My Collection</button>
                             </div>
                         </div>
-                        <div class="search-filters mb-0 skelton-hide">
-                            <div class="select-field">
+                        <div class="search-filters mb-0">
+                            <div class="select-field skelton-hide">
                                 <span>By:</span>
                                 <select>
                                     <option value="All providers">All providers</option>
@@ -45,7 +45,7 @@
                                     <option value="All providers">All providers</option>
                                 </select>
                             </div>
-                            <div class="select-field">
+                            <div class="select-field skelton-hide">
                                 <span>Capability:</span>
                                 <select>
                                     <option value="All providers">Embeddings</option>
@@ -53,7 +53,7 @@
                                     <option value="All providers">Embeddings</option>
                                 </select>
                             </div>
-                            <div class="select-field">
+                            <div class="select-field skelton-hide">
                                 <span>Tag:</span>
                                 <select>
                                     <option value="All">All</option>
