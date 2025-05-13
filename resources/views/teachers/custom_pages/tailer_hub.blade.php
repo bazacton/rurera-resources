@@ -1862,12 +1862,26 @@
                     </li>
                     <li>
                         <img src="/assets/default/svgs/grades.svg" alt="grades">
-                        <input type="text" placeholder="Grade" title="Grade">
+                        <div class="select-option-box">
+                            <select>
+                                <option value="Grade">Grade</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select>
+                        </div>
                         <em>Empty</em>
                     </li>
                     <li>
                         <img src="/assets/default/svgs/book-saved.svg" alt="book-saved">
-                        <input type="text" placeholder="Subject" title="Subject">
+                        <div class="select-option-box">
+                            <select>
+                                <option value="Subject">Subject</option>
+                                <option value="Science">Science</option>
+                                <option value="Math">Math</option>
+                                <option value="English">English</option>
+                            </select>
+                        </div>
                         <em>Empty</em>
                     </li>
                 </ul>
