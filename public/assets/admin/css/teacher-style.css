@@ -2074,6 +2074,8 @@ Tailer Hub Style Start
     margin: 50px auto;
 }
 .grammer-modal-canvas-block .question-explain-block {
+    background-color: inherit;
+    border: 0;
     padding: 0;
 }
 .grammer-modal-canvas-block .create-question-fields-block {
