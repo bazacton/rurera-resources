@@ -111,8 +111,8 @@
                                                 </figure>
                                             </div>
                                             <div class="text-holder skelton-hide">
-                                                <h3>Maths Magic Adventure</h3>
-                                                <div class="author-info">
+                                                <h3 class="skelton-hide">Maths Magic Adventure</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Jane D</span>
                                                         <span>5 hours ago</span>
@@ -134,9 +134,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Grammar Genius Challenge</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Grammar Genius Challenge</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Mark T</span>
                                                         <span>1 day ago</span>
@@ -158,9 +158,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>History Trivia Quest</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">History Trivia Quest</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Lucy W</span>
                                                         <span>2 days ago</span>
@@ -182,9 +182,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Artistic Impressions Puzzle</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Artistic Impressions Puzzle</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Sara L</span>
                                                         <span>3 days ago</span>
@@ -206,9 +206,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Science Exploration Mission</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Science Exploration Mission</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Alex P</span>
                                                         <span>5 hours ago</span>
@@ -216,7 +216,6 @@
                                                 </div>
                                             </div>
                                             <ul class="list-options skelton-hide">
-
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 2nd-5th Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
@@ -231,9 +230,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Geography World Challenges</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Geography World Challenges</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Chris B</span>
                                                         <span>4 hours ago</span>
@@ -241,7 +240,6 @@
                                                 </div>
                                             </div>
                                             <ul class="list-options skelton-hide">
-
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 6 questions</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 5th-7th Grade</li>
                                                 <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Geography</li>
@@ -256,9 +254,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Robotics Mind Challenges</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Robotics Mind Challenges</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>David H</span>
                                                         <span>8 hours ago</span>
@@ -280,9 +278,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Animal Kingdom Quiz</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Animal Kingdom Quiz</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Ella S</span>
                                                         <span>2 hours ago</span>
@@ -304,9 +302,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Physics Wonders Challenges</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Physics Wonders Challenges</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Nina F</span>
                                                         <span>6 hours ago</span>
@@ -328,9 +326,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Chemistry Formula Puzzles</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Chemistry Formula Puzzles</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Oliver K</span>
                                                         <span>3 hours ago</span>
@@ -352,9 +350,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Sciency Science</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Sciency Science</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Kaiser K</span>
                                                         <span>2 hours ago</span>
@@ -376,9 +374,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Maths Magic Adventure</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Maths Magic Adventure</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Jane D</span>
                                                         <span>5 hours ago</span>
@@ -400,9 +398,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Grammar Genius Challenge</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Grammar Genius Challenge</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Mark T</span>
                                                         <span>1 day ago</span>
@@ -424,9 +422,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>History Trivia Quest</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">History Trivia Quest</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Lucy W</span>
                                                         <span>2 days ago</span>
@@ -448,9 +446,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Artistic Impressions Puzzle</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Artistic Impressions Puzzle</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Sara L</span>
                                                         <span>3 days ago</span>
@@ -472,9 +470,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Science Exploration Mission</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Science Exploration Mission</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Alex P</span>
                                                         <span>5 hours ago</span>
@@ -496,9 +494,9 @@
                                                     <img src="/assets/default/img/games/go-jetters-hero-academy-cc-v2.jpg" height="270" width="480" alt="">
                                                 </figure>
                                             </div>
-                                            <div class="text-holder skelton-hide">
-                                                <h3>Geography World Challenges</h3>
-                                                <div class="author-info">
+                                            <div class="text-holder">
+                                                <h3 class="skelton-hide">Geography World Challenges</h3>
+                                                <div class="author-info skelton-hide">
                                                     <span class="info-text">
                                                         <span>Chris B</span>
                                                         <span>4 hours ago</span>
