@@ -5213,7 +5213,7 @@ button.print-download-btn {
 .listing-grid-card:has(.skelton-hide) .author-info {padding-bottom: 0; border: 0;}
 .admin_teacher_role .quiz-ai-tags .skelton-hide a {background-color: inherit; visibility: hidden;}
 .admin_teacher_role .search-lable.skelton-hide,
-.admin_teacher_role .bulk-heading.skelton-hide {display: inline-block;}
+.admin_teacher_role .bulk-heading.skelton-hide {display: inline-block; margin-bottom: 15px;}
 .admin_teacher_role .create-element-box .skelton-hide {
     min-height: 35px;
     max-height: 35px;
