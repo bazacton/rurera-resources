@@ -1,2543 +1,1054 @@
 @extends('admin.layouts.app')
 
-@push('libraries_top')
-
-@endpush
-@php $rand_id = rand(999,99999); @endphp
 @push('styles_top')
+<link href="/assets/default/vendors/sortable/jquery-ui.min.css"/>
+<link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
+<link rel="stylesheet" href="/assets/default/css/quiz-layout.css">
+<link rel="stylesheet" href="/assets/default/css/quiz-frontend.css">
+<link rel="stylesheet" href="/assets/default/css/quiz-create-frontend.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
-    <link rel="stylesheet" href="/assets/admin/css/teacher-style.css">
-    <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
-    <link rel="stylesheet" href="/assets/default/css/quiz-create.css?ver={{$rand_id}}">
-
-    <link href="/assets/default/css/jquery-ui/jquery-ui.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
-    <link rel="stylesheet" href="/assets/default/css/responsive.css?ver={{$rand_id}}">
-    <script src="/assets/default/js/admin/jquery.min.js"></script>
-    <script src="/assets/default/js/admin/sticky-sidebar.js?ver={{$rand_id}}"></script>
-    <link rel="stylesheet" href="/assets/default/vendors/bootstrap-tagsinput/bootstrap-tagsinput.min.css">
-    <style>
-        .droppable_area {
-            width: 150px;
-            height: 50px;
-            border: 1px solid #efefef;
-            display: inline-block;
-        }
-        .image-field, .image-field-box {
-            width: fit-content;
-        }
-        .image-field img, .containment-wrapper {
-            position: relative !important;
-        }
-        .image-field-box {
-            position: absolute !important;
-        }
-        /*.draggable3 {
-            width: 150px;
-        }*/
-        .spreadsheet-area {
-            border: 1px solid #efefef;
-            padding: 10px;
-            background: #fff;
-            height: 200px;
-        }
-        .question-layout-data .rureraform-element{
-            outline: none !important;
-        }
-        .navbar-bg {
-            display: none;
-        }
-        /* nav.navbar.navbar-expand-lg.main-navbar {
-            display: none;
-        } */
-        .modal-open .modal{
-            z-index: 99999;
-        }
-        .rureraform-element-helper{
-            width:100% !important;
-        }
-
-        .rureraform-element-helpers {
-            width: fit-content !important;
-        }
-        .hide{display:none;}
-
-        .section-block {
-            background: #f5f5f5;
-            padding: 5px 10px !important;
-            margin: 5px 0px;
-            border:1px solid #ccc;
-        }
-        .similiarity-status {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            padding: 5px;
-            border-radius: 50%;
-            box-shadow: 0 0 0 5px white;
-        }
-        .rurera-danger{background-color:#fd2929 !important;}
-        .rurera-warning{background-color:#ff973f !important;}
-        .similiarity-status.danger{
-            background-color:#fd2929;
-        }
-        .similiarity-status.warning{
-            background-color:#ff973f;
-        }
-        .similiarity-item span{
-            padding: 5px;
-        }
-        .similiarity-question-index {
-            background: #27325e;
-            margin-right: 10px;
-            color: #fff;
-        }
-        .similiarity-item {
-            margin-bottom: 5px;
-        }
-
-        .true_false_questions {
-            color: #224189 !important;
-            border-bottom-color: #224189 !important;
-        }
-        .checkbox_questions {
-            color: #224189 !important;
-            border-bottom-color: #224189 !important;
-        }
-
-        .question-types-colors {
-            display: flex;
-            align-items: center;
-            gap: 10px 30px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-        .question-types-colors span {
-            font-size: 16px;
-            position: relative;
-            display: inline-flex;
-            align-items: center;
-            margin-left: 0;
-        }
-        .question-types-colors span:before {
-            content: "";
-            display: inline-block;
-            vertical-align: middle;
-            height: 18px;
-            width: 18px;
-            margin-right: 8px;
-            box-shadow: 0 0 4px rgba(0,0,0,0.4) inset;
-        }
-        .question-types-colors .checkbox_questions_color:before {
-            background-color: #224189;
-        }
-        .question-types-colors .true_false_questions_color:before {
-            background-color: #c8d022;
-        }
+<style>
+    .year-group-select, .subject-group-select, .subchapter-group-select li {
+        cursor: pointer;
+    }
 
 
+    .questions-list li {
+        background: #efefef;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+    }
+
+    .questions-list li a.parent-li-remove {
+        float: right;
+        margin: 8px 0 0 0;
+        color: #ff0000;
+    }
+
+    .question-area {
+        border-bottom: 2px solid #efefef;
+        margin-bottom: 30px;
+    }
 
 
-    </style>
+    /**********************************************
+    Questions Select, Questions Block style Start
+    **********************************************/
+    .questions-select-option ul {
+        overflow: hidden;
+    }
 
+    .questions-select-option li {
+        position: relative;
+        flex: 1 1 0px;
+    }
+
+    .questions-select-option label {
+        background-color: #e8e8e8;
+        padding: 6px 20px;
+        margin: 0;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        width: 100%;
+        text-align: center;
+        height: 100%;
+        cursor: pointer;
+        min-height: 55px;
+    }
+
+    .questions-select-option input,
+    .questions-select-number input {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .questions-select-option li:first-child label {
+        border-radius: 5px 0 0 5px;
+    }
+
+    .questions-select-option li:last-child label {
+        border-radius: 0 5px 5px 0;
+    }
+
+    .questions-select-option input:checked ~ label {
+        background-color: var(--primary);
+        color: #fff;
+    }
+
+    .questions-select-option label strong {
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .questions-select-option label span {
+        font-size: 14px;
+    }
+
+    .questions-select-number li {
+        flex-basis: 33%;
+        padding: 0 0 10px 10px;
+    }
+
+    .questions-select-number label {
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        border-radius: 5px;
+        min-height: 70px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .questions-select-number label.disabled {
+        background-color: inherit;
+    }
+
+    .questions-select-number label.selectable {
+        background-color: #fff;
+    }
+
+    .questions-select-number input:checked ~ label {
+        background-color: var(--primary);
+        color: #fff;
+    }
+
+    .questions-select-number ul {
+        margin: 0 0 0 -10px;
+        flex-wrap: wrap;
+    }
+
+    .questions-submit-btn {
+        background-color: var(--primary);
+        display: block;
+        width: 92%;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        border-radius: 0;
+        position: relative;
+        z-index: 0;
+        margin: 0 auto;
+        height: 55px;
+    }
+
+    .questions-submit-btn:hover {
+        color: #fff;
+    }
+
+    .questions-submit-btn:before,
+    .questions-submit-btn:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 105%;
+        top: -1px;
+        left: -1px;
+        z-index: -1;
+        pointer-events: none;
+        background: var(--primary);
+        transform-origin: top left;
+        -ms-transform: skew(-30deg, 0deg);
+        -webkit-transform: skew(-30deg, 0deg);
+        transform: skew(-30deg, 0deg);
+    }
+
+    .questions-submit-btn:after {
+        left: auto;
+        right: -1px;
+        transform-origin: top right;
+        -ms-transform: skew(30deg, 0deg);
+        -webkit-transform: skew(30deg, 0deg);
+        transform: skew(30deg, 0deg);
+    }
+</style>
 @endpush
+
 
 @section('content')
-    <section class="section">
 
-
-        <div class="section-body skeleton">
+<section class="section">
+    <div class="section-header">
+        <h1>{{!empty($assignment) ?trans('/admin/main.edit'): trans('admin/main.new') }} Assignment</h1>
+        <div class="section-header-breadcrumb">
+            <div class="breadcrumb-item active"><a href="/admin/">{{ trans('admin/main.dashboard') }}</a>
+            </div>
+            <div class="breadcrumb-item active"><a href="/admin/assignments">Assignment</a>
+            </div>
+            <div class="breadcrumb-item">{{!empty($assignment) ?trans('/admin/main.edit'): trans('admin/main.new')
+                }}
+            </div>
+        </div>
+    </div>
+    <div class="section-body">
+        <div class="container">
             <div class="row">
-                <div class="col-12 col-md-9 col-lg-9 mx-auto">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="dragModal" tabindex="-1" role="dialog" aria-labelledby="dragModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="dragModalLabel">Draggable Grid</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
+                            <form action="/admin/assignments/{{ !empty($assignment) ? $assignment->id.'/update' : 'store' }}"
+                                  method="Post" class="rurera-form-validation">
+                                {{ csrf_field() }}
+
+                                <div class="row col-lg-12 col-md-12 col-sm-4 col-12">
+                                    <div class="populated-content-area col-lg-12 col-md-12 col-sm-12 col-12">
+
+
+                                        @if( !empty($categories ))
+
+                                        <div class="years-group populated-data">
+                                            <div class="form-group">
+                                                <label class="input-label">Practice Type</label>
+                                                <div class="input-group">
+
+                                                    <div class="radio-buttons">
+                                                        <label class="card-radio">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                   class="assignment_topic_type_check" value="practice" checked>
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                 <img src="/assets/default/img/assignment-logo/practice.png">
+                                                                    <h3>Courses</h3>
+                                                               </div>
+                                                          </span>
+                                                        </label>
+                                                        <label class="card-radio">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                   class="assignment_topic_type_check" value="sats">
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                    <img src="/assets/default/img/assignment-logo/sats.png">
+                                                                    <h3>SATs</h3>
+                                                               </div>
+                                                          </span>
+                                                        </label>
+                                                        <label class="card-radio">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                   class="assignment_topic_type_check" value="11plus">
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                    <img src="/assets/default/img/assignment-logo/11plus.png">
+                                                                    <h3>11 Plus</h3>
+                                                               </div>
+
+                                                          </span>
+                                                        </label>
+
+                                                        <label class="card-radio">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                   class="assignment_topic_type_check" value="independent_exams">
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                    <img src="/assets/default/img/assignment-logo/independent-exams.png">
+                                                                    <h3>Independent Exams</h3>
+                                                               </div>
+
+                                                              </span>
+                                                        </label>
+
+                                                        <label class="card-radio">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                   class="assignment_topic_type_check" value="iseb">
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                    <img src="/assets/default/img/assignment-logo/iseb.png">
+                                                                    <h3>ISEB</h3>
+                                                               </div>
+
+                                                              </span>
+                                                        </label>
+
+                                                        <label class="card-radio">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                   class="assignment_topic_type_check" value="cat4">
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                    <img src="/assets/default/img/assignment-logo/cat4.png">
+                                                                    <h3>CAT 4</h3>
+                                                               </div>
+
+                                                              </span>
+                                                        </label>
+
+                                                        <label class="card-radio">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                   class="assignment_topic_type_check" value="vocabulary">
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                    <img src="/assets/default/img/assignment-logo/vocabulary.png">
+                                                                    <h3>Vocabulary</h3>
+                                                               </div>
+
+                                                              </span>
+                                                        </label>
+
+                                                        <label class="card-radio">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                   class="assignment_topic_type_check" value="timestables">
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                    <img src="/assets/default/img/assignment-logo/timestables.png">
+                                                                    <h3>Timestables</h3>
+                                                               </div>
+
+                                                              </span>
+                                                        </label>
+                                                        <label class="card-radio">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_topic_type]"
+                                                                   class="assignment_topic_type_check" value="assignment">
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                    <img src="/assets/default/img/assignment-logo/practice.png">
+                                                                    <h3>Custom Assignment</h3>
+                                                               </div>
+                                                          </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="invalid-feedback"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-section assignment_topic_type_fields practice_fields">
+                                                <h2 class="section-title">Courses</h2>
+                                            </div>
+
+
+                                            <div class="form-section assignment_topic_type_fields sats_fields">
+                                                <h2 class="section-title">Sats</h2>
+                                            </div>
+
+
+                                            <div class="form-section assignment_topic_type_fields 11plus_fields">
+                                                <h2 class="section-title">11 Plus</h2>
+                                            </div>
+
+
+                                            <div class="form-section assignment_topic_type_fields independent_exams_fields">
+                                                <h2 class="section-title">Independent Exams</h2>
+                                            </div>
+
+
+                                            <div class="form-section assignment_topic_type_fields iseb_fields">
+                                                <h2 class="section-title">ISEB</h2>
+                                            </div>
+
+
+                                            <div class="form-section assignment_topic_type_fields cat4_fields">
+                                                <h2 class="section-title">CAT 4</h2>
+                                            </div>
+
+
+                                            <div class="form-section assignment_topic_type_fields vocabulary_fields">
+                                                <h2 class="section-title">Vocabulary</h2>
+                                            </div>
+
+                                            <div class="form-section assignment_topic_type_fields timestables_fields">
+                                                <h2 class="section-title">Times Tables</h2>
+                                            </div>
+
+                                            <div class="form-section assignment_topic_type_fields assignment_fields">
+                                                <h2 class="section-title">Custom Assignment</h2>
+                                            </div>
+
+
+                                            <div class="assignment_topic_type_fields vocabulary_fields sats_fields practice_fields assignment_fields">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                                                        <div class="form-group">
+                                                            <label class="input-label">Year Group</label>
+                                                            <select data-default_id="{{isset( $quiz->id)? $quiz->year_id : 0}}"
+                                                                    class="form-control year_quiz_ajax_select select2 @error('year_id') is-invalid @enderror"
+                                                                    name="ajax[{{ !empty($quiz) ? $quiz->id : 'new' }}][year_id]">
+                                                                <option value="0">Select Year Group</option>
+
+                                                                @foreach($categories as $category)
+                                                                @if(!empty($category->subCategories) and
+                                                                count($category->subCategories))
+                                                                @foreach($category->subCategories as $subCategory)
+                                                                <option value="{{ $subCategory->id }}" @if(!empty($quiz) and $quiz->year_id == $subCategory->id) selected="selected" @endif>
+                                                                    {{$subCategory->title}}
+                                                                </option>
+                                                                @endforeach
+                                                                @endif
+                                                                @endforeach
+                                                            </select>
+                                                            @error('year_id')
+                                                            <div class="invalid-feedback">
+                                                                {{ $message }}
+                                                            </div>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                                                        <div class="quiz-ajax-fields"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="practice-quiz-ajax-fields assignment_topic_type_fields practice_fields"></div>
+
+
+                                            <div class="assignment_topic_type_fields 11plus_fields independent_exams_fields iseb_fields cat4_fields">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <div class="form-group">
+                                                            <label class="input-label d-block">Year Group</label>
+                                                            <select name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][year_group]"
+                                                                    class="form-control select2 " data-placeholder="Select Year Group">
+                                                                <option value="">Select Year Group</option>
+                                                                <option value="All">All</option>
+                                                                <option value="Year 3" selected>Year 3</option>
+                                                                <option value="Year 4">Year 4</option>
+                                                                <option value="Year 5">Year 5</option>
+                                                                <option value="Year 6">Year 6</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <div class="form-group">
+                                                            <label class="input-label">Test Type</label>
+                                                            <div class="input-group">
+                                                                <div class="radio-buttons">
+
+                                                                    <label class="card-radio">
+                                                                        <input type="radio" name="ajax[new][subject]" value="English">
+                                                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                                            <div class="card-icon">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="96.000000pt" height="152.000000pt" viewBox="0 0 96.000000 152.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,152.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none"><path d="M64 1491 c-17 -11 -36 -34 -43 -52 -8 -22 -11 -190 -11 -546 0 -581 -1 -571 72 -602 l37 -16 3 -133 3 -134 66 61 67 61 63 -57 64 -57 5 130 5 129 278 3 277 2 0 510 0 510 -420 0 -420 0 -32 29 c-43 38 -45 92 -4 127 l27 24 365 0 c317 0 364 2 364 15 0 13 -47 15 -367 15 -344 0 -370 -1 -399 -19z m326 -416 l0 -195 -170 0 -170 0 0 25 c0 14 5 25 12 25 9 0 9 3 0 12 -7 7 -12 18 -12 26 0 11 8 9 36 -7 26 -15 52 -21 97 -21 l62 0 -85 50 c-47 27 -91 52 -98 57 -8 5 -12 21 -10 39 l3 32 130 -74 c72 -40 133 -73 138 -74 4 0 7 68 7 150 l0 150 30 0 30 0 0 -195z m220 45 c0 -82 3 -150 8 -150 4 0 70 36 147 80 107 61 141 76 143 64 5 -19 20 -9 -138 -98 l-135 -76 60 0 c53 0 69 6 138 44 l77 45 0 -40 c0 -24 -5 -39 -12 -40 -10 0 -10 -2 0 -6 6 -2 12 -18 12 -34 l0 -29 -180 0 -180 0 0 188 c0 104 3 192 7 195 3 4 17 7 30 7 l23 0 0 -150z m-222 -607 l2 -203 -30 0 -30 0 -2 159 -3 159 -125 -70 c-149 -84 -150 -84 -150 -66 0 8 58 48 129 89 l130 74 -55 3 c-48 3 -63 -2 -129 -38 l-75 -41 0 35 c0 22 5 36 13 37 9 0 9 2 0 6 -7 2 -13 15 -13 28 0 29 23 32 210 31 l125 -1 3 -202z m522 176 c0 -21 -5 -29 -17 -29 -17 -1 -17 -1 0 -14 9 -7 17 -21 17 -30 0 -13 -10 -11 -54 14 -45 26 -64 31 -108 28 l-53 -3 107 -60 c106 -59 107 -61 108 -97 l0 -36 -147 83 -148 84 -3 -160 -3 -160 -27 3 -27 3 -3 190 c-1 104 0 195 3 203 4 10 43 12 180 12 l175 -2 0 -29z m-557 -491 c-3 -46 -7 -85 -9 -87 -2 -2 -22 13 -44 33 l-41 37 -40 -35 c-21 -20 -44 -36 -49 -36 -6 0 -10 35 -10 85 l0 85 100 0 99 0 -6 -82z"></path><path d="M120 1425 c0 -13 44 -15 335 -15 291 0 335 2 335 15 0 13 -44 15 -335 15 -291 0 -335 -2 -335 -15z"></path><path d="M140 1355 c0 -13 45 -15 345 -15 300 0 345 2 345 15 0 13 -45 15 -345 15 -300 0 -345 -2 -345 -15z"></path></g></svg>
+                                                                                <h3>English</h3>
+                                                                            </div>
+
+                                                                        </span>
+                                                                    </label>
+                                                                    <label class="card-radio">
+                                                                        <input type="radio" name="ajax[new][subject]" value="Math">
+                                                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                                            <div class="card-icon">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" height="800px" width="800px" version="1.1" id="Capa_1" viewBox="0 0 191.836 191.836" xml:space="preserve" style=""><path d="M70.806,0.975H17.313C7.767,0.975,0,8.741,0,18.288V71.78c0,9.547,7.767,17.314,17.313,17.314h53.492  c9.547,0,17.313-7.767,17.313-17.314V18.288C88.119,8.741,80.353,0.975,70.806,0.975z M61.365,50.034H49.06v12.305  c0,2.761-2.239,5-5,5s-5-2.239-5-5V50.034H26.754c-2.761,0-5-2.239-5-5s2.239-5,5-5H39.06V27.729c0-2.761,2.239-5,5-5s5,2.239,5,5  v12.305h12.305c2.761,0,5,2.239,5,5S64.126,50.034,61.365,50.034z M70.806,102.742H17.313C7.767,102.742,0,110.509,0,120.056v53.492  c0,9.547,7.767,17.314,17.313,17.314h53.492c9.547,0,17.313-7.767,17.313-17.314v-53.492  C88.119,110.509,80.353,102.742,70.806,102.742z M61.365,151.802h-34.61c-2.761,0-5-2.239-5-5s2.239-5,5-5h34.61  c2.761,0,5,2.239,5,5S64.126,151.802,61.365,151.802z M174.523,0.975H121.03c-9.547,0-17.313,7.767-17.313,17.313V71.78  c0,9.547,7.767,17.314,17.313,17.314h53.492c9.547,0,17.313-7.767,17.313-17.314V18.288C191.836,8.741,184.069,0.975,174.523,0.975z   M163.548,53.735c1.953,1.953,1.953,5.119,0,7.071c-0.977,0.976-2.256,1.464-3.536,1.464s-2.559-0.488-3.536-1.464l-8.701-8.701  l-8.701,8.701c-0.977,0.976-2.256,1.464-3.536,1.464s-2.559-0.488-3.536-1.464c-1.953-1.953-1.953-5.119,0-7.071l8.701-8.701  l-8.701-8.701c-1.953-1.953-1.953-5.119,0-7.071c1.953-1.952,5.118-1.952,7.071,0l8.701,8.701l8.701-8.701  c1.953-1.952,5.118-1.952,7.071,0c1.953,1.953,1.953,5.119,0,7.071l-8.701,8.701L163.548,53.735z M174.523,102.742H121.03  c-9.547,0-17.313,7.767-17.313,17.314v53.492c0,9.547,7.767,17.314,17.313,17.314h53.492c9.547,0,17.313-7.767,17.313-17.314  v-53.492C191.836,110.509,184.069,102.742,174.523,102.742z M147.776,123.906c2.807,0,5.083,2.276,5.083,5.083  c0,2.808-2.276,5.083-5.083,5.083c-2.807,0-5.083-2.276-5.083-5.083C142.693,126.182,144.969,123.906,147.776,123.906z   M147.776,169.697c-2.807,0-5.083-2.276-5.083-5.083c0-2.807,2.276-5.083,5.083-5.083c2.807,0,5.083,2.276,5.083,5.083  C152.86,167.422,150.584,169.697,147.776,169.697z M165.082,151.802h-34.61c-2.761,0-5-2.239-5-5s2.239-5,5-5h34.61  c2.761,0,5,2.239,5,5S167.843,151.802,165.082,151.802z"></path></svg>
+                                                                                <h3>Math</h3>
+                                                                            </div>
+
+                                                                        </span>
+                                                                    </label>
+                                                                    <label class="card-radio">
+                                                                        <input type="radio" name="ajax[new][subject]" value="Non-Verbal Reasoning">
+                                                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                                            <div class="card-icon">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="96.000000pt" height="152.000000pt" viewBox="0 0 96.000000 152.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,152.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none"><path d="M64 1491 c-17 -11 -36 -34 -43 -52 -8 -22 -11 -190 -11 -546 0 -581 -1 -571 72 -602 l37 -16 3 -133 3 -134 66 61 67 61 63 -57 64 -57 5 130 5 129 278 3 277 2 0 510 0 510 -420 0 -420 0 -32 29 c-43 38 -45 92 -4 127 l27 24 365 0 c317 0 364 2 364 15 0 13 -47 15 -367 15 -344 0 -370 -1 -399 -19z m326 -416 l0 -195 -170 0 -170 0 0 25 c0 14 5 25 12 25 9 0 9 3 0 12 -7 7 -12 18 -12 26 0 11 8 9 36 -7 26 -15 52 -21 97 -21 l62 0 -85 50 c-47 27 -91 52 -98 57 -8 5 -12 21 -10 39 l3 32 130 -74 c72 -40 133 -73 138 -74 4 0 7 68 7 150 l0 150 30 0 30 0 0 -195z m220 45 c0 -82 3 -150 8 -150 4 0 70 36 147 80 107 61 141 76 143 64 5 -19 20 -9 -138 -98 l-135 -76 60 0 c53 0 69 6 138 44 l77 45 0 -40 c0 -24 -5 -39 -12 -40 -10 0 -10 -2 0 -6 6 -2 12 -18 12 -34 l0 -29 -180 0 -180 0 0 188 c0 104 3 192 7 195 3 4 17 7 30 7 l23 0 0 -150z m-222 -607 l2 -203 -30 0 -30 0 -2 159 -3 159 -125 -70 c-149 -84 -150 -84 -150 -66 0 8 58 48 129 89 l130 74 -55 3 c-48 3 -63 -2 -129 -38 l-75 -41 0 35 c0 22 5 36 13 37 9 0 9 2 0 6 -7 2 -13 15 -13 28 0 29 23 32 210 31 l125 -1 3 -202z m522 176 c0 -21 -5 -29 -17 -29 -17 -1 -17 -1 0 -14 9 -7 17 -21 17 -30 0 -13 -10 -11 -54 14 -45 26 -64 31 -108 28 l-53 -3 107 -60 c106 -59 107 -61 108 -97 l0 -36 -147 83 -148 84 -3 -160 -3 -160 -27 3 -27 3 -3 190 c-1 104 0 195 3 203 4 10 43 12 180 12 l175 -2 0 -29z m-557 -491 c-3 -46 -7 -85 -9 -87 -2 -2 -22 13 -44 33 l-41 37 -40 -35 c-21 -20 -44 -36 -49 -36 -6 0 -10 35 -10 85 l0 85 100 0 99 0 -6 -82z"></path><path d="M120 1425 c0 -13 44 -15 335 -15 291 0 335 2 335 15 0 13 -44 15 -335 15 -291 0 -335 -2 -335 -15z"></path><path d="M140 1355 c0 -13 45 -15 345 -15 300 0 345 2 345 15 0 13 -45 15 -345 15 -300 0 -345 -2 -345 -15z"></path></g></svg>
+                                                                                <h3>Non-Verbal Reasoning</h3>
+                                                                            </div>
+
+                                                                        </span>
+                                                                    </label>
+                                                                    <label class="card-radio">
+                                                                        <input type="radio" name="ajax[new][subject]" value="Verbal Reasoning">
+                                                                        <span class="radio-btn"><i class="las la-check"></i>
+                                                                            <div class="card-icon">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="96.000000pt" height="152.000000pt" viewBox="0 0 96.000000 152.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,152.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none"><path d="M64 1491 c-17 -11 -36 -34 -43 -52 -8 -22 -11 -190 -11 -546 0 -581 -1 -571 72 -602 l37 -16 3 -133 3 -134 66 61 67 61 63 -57 64 -57 5 130 5 129 278 3 277 2 0 510 0 510 -420 0 -420 0 -32 29 c-43 38 -45 92 -4 127 l27 24 365 0 c317 0 364 2 364 15 0 13 -47 15 -367 15 -344 0 -370 -1 -399 -19z m326 -416 l0 -195 -170 0 -170 0 0 25 c0 14 5 25 12 25 9 0 9 3 0 12 -7 7 -12 18 -12 26 0 11 8 9 36 -7 26 -15 52 -21 97 -21 l62 0 -85 50 c-47 27 -91 52 -98 57 -8 5 -12 21 -10 39 l3 32 130 -74 c72 -40 133 -73 138 -74 4 0 7 68 7 150 l0 150 30 0 30 0 0 -195z m220 45 c0 -82 3 -150 8 -150 4 0 70 36 147 80 107 61 141 76 143 64 5 -19 20 -9 -138 -98 l-135 -76 60 0 c53 0 69 6 138 44 l77 45 0 -40 c0 -24 -5 -39 -12 -40 -10 0 -10 -2 0 -6 6 -2 12 -18 12 -34 l0 -29 -180 0 -180 0 0 188 c0 104 3 192 7 195 3 4 17 7 30 7 l23 0 0 -150z m-222 -607 l2 -203 -30 0 -30 0 -2 159 -3 159 -125 -70 c-149 -84 -150 -84 -150 -66 0 8 58 48 129 89 l130 74 -55 3 c-48 3 -63 -2 -129 -38 l-75 -41 0 35 c0 22 5 36 13 37 9 0 9 2 0 6 -7 2 -13 15 -13 28 0 29 23 32 210 31 l125 -1 3 -202z m522 176 c0 -21 -5 -29 -17 -29 -17 -1 -17 -1 0 -14 9 -7 17 -21 17 -30 0 -13 -10 -11 -54 14 -45 26 -64 31 -108 28 l-53 -3 107 -60 c106 -59 107 -61 108 -97 l0 -36 -147 83 -148 84 -3 -160 -3 -160 -27 3 -27 3 -3 190 c-1 104 0 195 3 203 4 10 43 12 180 12 l175 -2 0 -29z m-557 -491 c-3 -46 -7 -85 -9 -87 -2 -2 -22 13 -44 33 l-41 37 -40 -35 c-21 -20 -44 -36 -49 -36 -6 0 -10 35 -10 85 l0 85 100 0 99 0 -6 -82z"></path><path d="M120 1425 c0 -13 44 -15 335 -15 291 0 335 2 335 15 0 13 -44 15 -335 15 -291 0 -335 -2 -335 -15z"></path><path d="M140 1355 c0 -13 45 -15 345 -15 300 0 345 2 345 15 0 13 -45 15 -345 15 -300 0 -345 -2 -345 -15z"></path></g></svg>
+                                                                                <h3>Verbal Reasoning</h3>
+                                                                            </div>
+
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="practice-quiz-topics-list assignment_topic_type_fields practice_fields"></div>
+
+                                            @php
+                                            $tables_no = isset( $assignment->tables_no )? json_decode($assignment->tables_no) : array();
+                                            @endphp
+
+
+                                            <div class="form-group assignment_topic_type_fields timestables_fields">
+                                                <div class="questions-select-number">
+                                                    <ul class="d-flex justify-content-center flex-wrap mb-30">
+                                                        <li><input type="checkbox" value="10" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(10,$tables_no)?
+                                                            'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
+                                                        <li><input type="checkbox" value="2" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(2,$tables_no)?
+                                                            'checked' : 'checked'}} id="tables_two" /> <label for="tables_two">2</label></li>
+                                                        <li><input type="checkbox" value="5" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(5,$tables_no)?
+                                                            'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
+                                                        <li><input type="checkbox" value="3" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(3,$tables_no)?
+                                                            'checked' : 'checked'}} id="tables_three" /> <label for="tables_three">3</label></li>
+                                                        <li><input type="checkbox" value="4" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(4,$tables_no)?
+                                                            'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
+                                                        <li><input type="checkbox" value="8" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(8,$tables_no)?
+                                                            'checked' : ''}} id="tables_eight" /> <label for="tables_eight">8</label></li>
+                                                        <li><input type="checkbox" value="6" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(6,$tables_no)?
+                                                            'checked' : ''}} id="tables_six" /> <label for="tables_six">6</label></li>
+                                                        <li><input type="checkbox" value="7" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(7,$tables_no)?
+                                                            'checked' : ''}} id="tables_seven" /> <label for="tables_seven">7</label></li>
+                                                        <li><input type="checkbox" value="9" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(9,$tables_no)?
+                                                            'checked' : ''}} id="tables_nine" /> <label for="tables_nine">9</label></li>
+                                                        <li><input type="checkbox" value="11" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(11,$tables_no)?
+                                                            'checked' : ''}} id="tables_eleven" /> <label for="tables_eleven">11</label></li>
+                                                        <li><input type="checkbox" value="12" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(12,$tables_no)?
+                                                            'checked' : ''}} id="tables_twelve" /> <label for="tables_twelve">12</label></li>
+                                                        <li><input type="checkbox" value="13" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(13,$tables_no)?
+                                                            'checked' : ''}} id="tables_thirteen" /> <label for="tables_thirteen">13</label></li>
+                                                        <li><input type="checkbox" value="14" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(14,$tables_no)?
+                                                            'checked' : ''}} id="tables_fourteen" /> <label for="tables_fourteen">14</label></li>
+                                                        <li><input type="checkbox" value="15" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(15,$tables_no)?
+                                                            'checked' : ''}} id="tables_fifteen" /> <label for="tables_fifteen">15</label></li>
+                                                        <li><input type="checkbox" value="16" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][tables_no][]" {{in_array(16,$tables_no)?
+                                                            'checked' : ''}} id="tables_sixteen" /> <label for="tables_sixteen">16</label></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-section">
+                                                <h2 class="section-title">General information</h2>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="input-label">Practice Title</label>
+                                                <input type="text"
+                                                       name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][title]"
+                                                       value="{{ !empty($assignment) ? $assignment->title : old('title') }}"
+                                                       class="js-ajax-title form-control rurera-req-field"
+                                                       placeholder=""/>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="input-label">Practice Description</label>
+                                                <textarea
+                                                        name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][description]"
+                                                        class="form-control summernote-editor-mintool"
+                                                        placeholder="" rows="20"></textarea>
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+
+                                            <div class="form-section">
+                                                <h2 class="section-title">Schedule</h2>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-12 col-4">
+                                                    <div class="form-group">
+                                                        <label class="input-label">Practice Start Date</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <button type="button" class="input-group-text admin-file-manager" data-input="logo" data-preview="holder">
+                                                                    <i class="fa fa-calendar-week"></i>
+                                                                </button>
+                                                            </div>
+                                                            <input type="text" autocomplete="off"
+                                                                   name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_start_date]"
+                                                                   value="{{ !empty($assignment) ? dateTimeFormat($assignment->assignment_start_date, 'Y-m-d', false) : old('assignment_start_date') }}"
+                                                                   class="form-control practice-start-date rureradatepicker rurera-req-field @error('assignment_start_date') is-invalid @enderror"
+                                                                   min="{{date('Y-m-d')}}"
+                                                                   placeholder=""/>
+                                                            @error('assignment_start_date')
+                                                            <div class="invalid-feedback">
+                                                                {{ $message }}
+                                                            </div>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12 col-4">
+                                                    <div class="form-group conditional_fields Daily_field Weekly_field Monthly_field">
+                                                        <label class="input-label">Practice Due Date</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <button type="button" class="input-group-text admin-file-manager" data-input="logo" data-preview="holder">
+                                                                    <i class="fa fa-calendar-week"></i>
+                                                                </button>
+                                                            </div>
+                                                            <input type="text" autocomplete="off"
+                                                                   name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_end_date]"
+                                                                   value="{{ !empty($assignment) ? dateTimeFormat($assignment->assignment_end_date, 'Y-m-d', false) : old('assignment_end_date') }}"
+                                                                   class="form-control practice-due-date rureradatepicker rurera-req-field" min="{{date('Y-m-d')}}"
+                                                                   placeholder=""/>
+                                                            <div class="invalid-feedback"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12 col-4">
+                                                    <div class="form-group">
+                                                        <label class="input-label">Review Due Date</label>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <button type="button" class="input-group-text admin-file-manager" data-input="logo" data-preview="holder">
+                                                                    <i class="fa fa-calendar-week"></i>
+                                                                </button>
+                                                            </div>
+                                                            <input type="text" autocomplete="off"
+                                                                   name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_review_due_date]"
+                                                                   value="{{ !empty($assignment) ? dateTimeFormat($assignment->assignment_review_due_date, 'Y-m-d', false) : old('assignment_review_due_date') }}"
+                                                                   class="form-control reviewer-date rureradatepicker" min="{{date('Y-m-d')}}"
+                                                                   placeholder=""/>
+                                                            <div class="invalid-feedback"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="input-label">Practice Method</label>
+                                                <div class="input-group">
+
+                                                    <div class="radio-buttons">
+                                                        <label class="card-radio">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_method]"
+                                                                   class="assignment_method_check" value="practice" checked>
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>Practice</h3>
+                                                                       </div>
+
+                                                                  </span>
+                                                        </label>
+                                                        <label class="card-radio assignment_topic_type_fields practice_fields vocabulary_fields timestables_fields assignment_fields">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_method]"
+                                                                   class="assignment_method_check" value="target_improvements">
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>Target / Improvements</h3>
+                                                                       </div>
+
+                                                                  </span>
+                                                        </label>
+                                                        <label class="card-radio assignment_topic_type_fields 11plus_fields independent_exams_fields iseb_fields cat4_fields">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_method]"
+                                                                   class="assignment_method_check" value="mock_exam">
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                        <div class="card-icon">
+                                                                            <h3>Mock Exam</h3>
+                                                                       </div>
+
+                                                                  </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                                                    <div class="form-group assignment_method_check_fields target_improvements_fields">
+                                                        <label class="input-label">Percentage of Correct Answers</label>
+
+                                                        <div class="invalid-feedback"></div>
+                                                        <div class="range-slider">
+                                                            <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                                            <div class="range-slider_line">
+                                                                <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                                            </div>
+                                                            <input type="range"
+                                                                   name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][target_percentage]"
+                                                                   value="0" data-label="%"
+                                                                   class="js-ajax-title form-control correct_answers_percentage range-slider-field" min="0" max="100"
+                                                                   placeholder=""/>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                                                    <div class="form-group assignment_method_check_fields target_improvements_fields">
+                                                        <label class="input-label">Average Time of Correct Answers (Seconds)</label>
+
+                                                        <div class="range-slider">
+                                                            <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                                            <div class="range-slider_line">
+                                                                <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                                            </div>
+                                                            <input type="range"
+                                                                   name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][target_average_time]"
+                                                                   value="0"
+                                                                   class="js-ajax-title form-control average_time range-slider-field" min="0" max="60"
+                                                                   placeholder=""/>
+                                                        </div>
+                                                        <div class="invalid-feedback"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-6 assignment_method_check_fields practice_fields target_improvements_fields">
+                                                    <div class="form-group">
+                                                        <label class="input-label">Show No of Questions <span class="max_questions"></span></label>
+
+                                                        <div class="range-slider">
+                                                            <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                                            <div class="range-slider_line">
+                                                                <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                                            </div>
+                                                            <input type="range" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][no_of_questions]" value="0"
+                                                                   class="js-ajax-title form-control rurera-req-field no_of_questions range-slider-field" min="0" max="0" placeholder=""/>
+                                                        </div>
+
+
+                                                        <div class="invalid-feedback"></div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-6 assignment_topic_type_fields practice_fields vocabulary_fields timestables_fields assignment_fields">
+                                                    <div class="form-group">
+                                                        <label class="input-label">No of Attempts</label>
+
+                                                        <div class="invalid-feedback"></div>
+                                                        <div class="range-slider">
+                                                            <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                                            <div class="range-slider_line">
+                                                                <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                                            </div>
+                                                            <input type="range"
+                                                                   name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][no_of_attempts]"
+                                                                   value="0"
+                                                                   class="js-ajax-title form-control no_of_attempts range-slider-field"
+                                                                   placeholder="" min="1" max="10"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="form-group assignment_method_check_fields practice_fields target_improvements_fields">
+                                                <label class="input-label">Duration Type</label>
+                                                <div class="input-group">
+
+
+                                                    <div class="radio-buttons">
+                                                        <label class="card-radio">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][duration_type]"
+                                                                   class="duration_conditional_check" value="no_time_limit" checked>
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                    <h3>No Time Limit</h3>
+                                                               </div>
+
+                                                          </span>
+                                                        </label>
+                                                        <label class="card-radio">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][duration_type]"
+                                                                   class="duration_conditional_check" value="total_practice">
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                    <h3>Total Practice</h3>
+                                                               </div>
+
+                                                          </span>
+                                                        </label>
+                                                        <label class="card-radio">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][duration_type]"
+                                                                   class="duration_conditional_check" value="per_question">
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                    <h3>Per Question</h3>
+                                                               </div>
+
+                                                         </span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="invalid-feedback"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group duration_type_fields total_practice_fields">
+                                                <label class="input-label">Practice Time (<span class="practice_interval_data">Minutes</span>)</label>
+                                                <div class="range-slider">
+                                                    <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                                    <div class="range-slider_line">
+                                                        <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                                    </div>
+                                                    <input type="range"
+                                                           name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][practice_time]"
+                                                           value="0"
+                                                           class="js-ajax-title form-control practice_interval range-slider-field" step="20" min="0" max="240"
+                                                           placeholder=""/>
+                                                </div>
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+
+                                            <div class="form-group duration_type_fields per_question_fields">
+                                                <label class="input-label">Questions Time Interval (<span class="time_interval_data">Seconds</span>)</label>
+
+                                                <div class="range-slider">
+                                                    <div id="slider_thumb" class="range-slider_thumb" style="left: 0px;">0</div>
+                                                    <div class="range-slider_line">
+                                                        <div id="slider_line" class="range-slider_line-fill" style="width: 0%;"></div>
+                                                    </div>
+                                                    <input type="range"
+                                                           name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][time_interval]"
+                                                           value="0"
+                                                           class="js-ajax-title form-control time_interval range-slider-field" step="10" min="0" max="1200"
+                                                           placeholder=""/>
+                                                </div>
+
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label class="input-label">Assignment Reviewer</label>
+                                                <div class="input-group">
+                                                    <select name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_reviewer][]"
+                                                            class="form-control select2" multiple="multiple">
+                                                        @if( !empty( $teachers ) )
+                                                        @foreach( $teachers as $teacherObj)
+                                                        <option value="{{$teacherObj->id}}">{{$teacherObj->get_full_name()}}</option>
+                                                        @endforeach
+                                                        @endif
+                                                    </select>
+                                                    <div class="invalid-feedback"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-section">
+                                                <h2 class="section-title">User Criteria</h2>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="input-label">Assignment Assign Type</label>
+                                                <div class="input-group">
+
+
+                                                    <div class="radio-buttons">
+                                                        <label class="card-radio">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type]"
+                                                                   class="duration_conditional_check" value="Individual">
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                    <h3>Individual</h3>
+                                                               </div>
+
+                                                          </span>
+                                                        </label>
+
+                                                        <label class="card-radio">
+                                                            <input type="radio" name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type]"
+                                                                   class="duration_conditional_check" value="Class" checked>
+                                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                                <div class="card-icon">
+                                                                    <h3>Class</h3>
+                                                               </div>
+
+                                                          </span>
+                                                        </label>
+
+                                                    </div>
+                                                    <div class="invalid-feedback"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="input-label">Class</label>
+                                                <div class="input-group">
+                                                    <select name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_type]" class="form-control select2 class_condition">
+                                                        <option value="">Select</option>
+                                                        @if( !empty( $classes) )
+                                                        @foreach( $classes as $classObj)
+                                                        <option value="{{$classObj->id}}" @if(!empty($assignment) && $assignment->assignment_type == 'Individual') selected @endif>
+                                                            {{$classObj->title}}
+                                                        </option>
+                                                        @endforeach
+                                                        @endif
+                                                    </select>
+                                                    <div class="invalid-feedback"></div>
+                                                </div>
+                                            </div>
+
+
+                                            <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+                                                @if( !empty( $sections) )
+                                                @foreach( $sections as $sectionObj)
+                                                <li class="nav-item conditional_sections rurera-hide class_sections_{{$sectionObj->parent_id}}">
+                                                    <a class="nav-link" id="section-tabid-{{$sectionObj->id}}" data-toggle="tab" href="#section-tab-{{$sectionObj->id}}" role="tab"
+                                                       aria-controls="section-tab-{{$sectionObj->id}}" aria-selected="true"><span class="tab-title">{{$sectionObj->title}}</span></a>
+                                                </li>
+                                                @endforeach
+                                                @endif
+                                            </ul>
+
+                                            <div class="tab-content" id="myTabContent2">
+                                                @if( !empty( $sections) )
+                                                @foreach( $sections as $sectionObj)
+                                                <div class="tab-pane mt-3 fade" id="section-tab-{{$sectionObj->id}}" role="tabpanel" aria-labelledby="section-tab-{{$sectionObj->id}}-tab">
+                                                    @if( !empty( $sectionObj->users) )
+                                                    <div class="users_list_block">
+                                                        <span><input type="checkbox" class="select_all" id="select_all_{{$sectionObj->id}}" value="{{$sectionObj->id}}"
+                                                                     name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][class_ids][]"><label for="select_all_{{$sectionObj->id}}">Select All</label></span>
+                                                        <ul class="users-list">
+                                                            @foreach( $sectionObj->users as $userObj)
+                                                            <li data-user_id="{{$userObj->id}}">
+                                                                <span><input type="checkbox" id="select_user{{$userObj->id}}" value="{{$userObj->id}}"
+                                                                             name="ajax[{{ !empty($assignment) ? $assignment->id : 'new' }}][assignment_users][]"><label
+                                                                            for="select_user{{$userObj->id}}">{{$userObj->get_full_name()}}</label></span>
+                                                            </li>
+                                                            @endforeach
+                                                        </ul>
+                                                    </div>
+                                                    @endif
+                                                </div>
+                                                @endforeach
+                                                @endif
+
+                                            </div>
+
+                                        </div>
+                                        @endif
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="mt-20 mb-20">
+                                    <button type="submit"
+                                            class="js-submit-quiz-form btn btn-sm btn-primary">{{
+                                        !empty($assignment) ?
+                                        trans('public.save_change') : trans('public.create') }}
                                     </button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="grid-container" id="gridContainer">
-                                        <!-- Grid Items -->
-                                        <div class="grid-item" draggable="true">1</div>
-                                        <div class="grid-item" draggable="true">2</div>
-                                        <div class="grid-item" draggable="true">3</div>
-                                        <div class="grid-item" draggable="true">4</div>
-                                        <div class="grid-item" draggable="true">5</div>
-                                        <div class="grid-item" draggable="true">6</div>
-                                        <div class="grid-item" draggable="true">7</div>
-                                        <div class="grid-item" draggable="true">8</div>
-                                        <div class="grid-item" draggable="true">9</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="elements-holder bg-white panel-border rounded-sm p-15 mb-30 create-element-box">
-                        <div class="questions-header">
-                            <div class="questions-header-inner">
-                                <div class="text-holder skelton-hide">
-                                    <h5 class="font-16 font-weight-bold"><span contenteditable="true">Exploring Magnetic Matrials and Their Uses</span><small>(18 questions)</small></h5>
-                                </div>
-                                <div class="questions-header-controls skelton-hide">
-                                    <button type="button"><i class="fas fa-plus"></i> Add All</button>
-                                </div>
-                            </div>
-                        </div>
-                        <ul class="list-options question-list-options mb-15">
-                            <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
-                            <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt="save"></span> 7th-8th  Grade</li>
-                            <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
-                        </ul>
-                        <div class="class-controls">
-                            <div class="left-area d-inline-flex align-items-center">
-                                <div class="class-controls-option questions-control-options border-0 mr-0 pr-0 d-inline-flex align-items-center">
-                                    <button class="skelton-hide" type="button"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple">Copy &amp; edit</button>
-                                    <button class="skelton-hide" type="button"><img src="/assets/default/svgs/save.svg" alt="save">Save</button>
-                                    <button class="skelton-hide" type="button"><img src="/assets/default/svgs/share.svg" alt="share">Share</button>
-                                    <button class="skelton-hide" type="button"><img src="/assets/default/svgs/download.svg" alt="download">Worksheet</button>
-                                    <div class="dropdown-box skelton-hide">
-                                        <div class="dropdown">
-                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
-                                            </a>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
-                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-area w-auto">
-                                <button type="button" class="assignment-btn skelton-hide"><img class="show-img" src="/assets/default/svgs/clock.svg" alt="clock"> Assign</button>
-                                <button type="button" class="perview-btn skelton-hide" data-toggle="modal" data-target="#document-modal"><img class="show-img" src="/assets/default/svgs/eye-show.svg" alt="eye-show"> Perview</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="q-ai-nav-controls">
-                        <a href="#home" class="active skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-question.svg" alt=""> Add Question</a>
-                        <a href="#q-collections" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-collection.svg" alt=""> Add question from Collection</a>
-                        <a href="#generate-ai" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/ai.svg" alt=""> Generate quiz using AI</a>
-                        <a href="#import-q" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/import-worksheet.svg" alt=""> Import Worksheets</a>
-                        <a href="javascript:;" class="assignment-save-button skelton-hide" data-toggle="modal" data-target="#general-knowledge-modal">Create Assignment</a>
-                    </div>
-                    <div class="mb-30 bg-white panel-border rounded-sm p-15 create-element-box" style="display: none;">
-                        <h6 class="search-lable">Search question from library</h6>
-                        <div class="rureraform-search-field mb-15">
-                            <div class="input-field">
-                                <input type="text" placeholder="Search question..">
-                                <button type="button"><i class="fas fa-search"></i> <span>Search questions</span></button>
-                            </div>
-                            <div class="featured-controls">
-                                <button type="button" class="active">Featured List</button>
-                                <button type="button">Community</button>
-                                <button type="button">My Collection</button>
-                            </div>
-                        </div>
-                        <div class="search-filters mb-0">
-                            <div class="select-field">
-                                <span>By:</span>
-                                <select>
-                                    <option value="All providers">All providers</option>
-                                    <option value="All providers">All providers</option>
-                                    <option value="All providers">All providers</option>
-                                </select>
-                            </div>
-                            <div class="select-field">
-                                <span>Capability:</span>
-                                <select>
-                                    <option value="All providers">Embeddings</option>
-                                    <option value="All providers">Embeddings</option>
-                                    <option value="All providers">Embeddings</option>
-                                </select>
-                            </div>
-                            <div class="select-field">
-                                <span>Tag:</span>
-                                <select>
-                                    <option value="All">All</option>
-                                    <option value="All">All</option>
-                                    <option value="All">All</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-30 bg-white panel-border rounded-sm p-15 bulk-quiz create-element-box">
-                        <div class="bulk-heading skelton-hide">
-                            <h6>Bulk Settings</h6>
-                        </div>
-                        <div class="bulk-ai">
-                            <div class="bulk-ai-box skelton-hide">
-                                <span class="bulk-lable">Rendomize</span>
-                                <div class="btn-field">
-                                    <a href="#">Question order</a>
-                                    <a href="#">Options order</a>
-                                </div>
-                            </div>
-                            <div class="bulk-ai-box skelton-hide">
-                                <span class="bulk-lable">Estimation time</span>
-                                <div class="select-field">
-                                    <select>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
-                                    <span class="bulk-text">Mins <i class="fas fa-clock"></i></span>
-                                </div>
-                            </div>
-                            <div class="bulk-ai-box skelton-hide">
-                                <span class="bulk-lable">Mark as point</span>
-                                <div class="select-field">
-                                    <select>
-                                        <option value="1">1</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
-                                    <span class="bulk-text">Points <i class="fas fa-circle"></i></span>
-                                </div>
-                            </div>
-                            <div class="bulk-ai-box skelton-hide">
-                                <span class="bulk-lable">Questions Order</span>
-                                <div class="btn-field">
-                                    <a href="#" class="delete-btn" data-toggle="modal" data-target="#dragModal">Rearrange</a>
-                                </div>
-                            </div>
-                            <div class="bulk-ai-box skelton-hide">
-                                <span class="bulk-lable">Bulk Delete</span>
-                                <div class="btn-field">
-                                    <a href="#" class="delete-btn">Delete All Questions</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible alert fade show create-element-box">
-                        <button type="button" class="close" data-dismiss="quiz-ai-tags" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h6 class="search-lable skelton-hide">Enhance this quiz using AI</h6>
-                        <ul>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add similar questions</a></li>
-                            <li class="skelton-hide"><a href="#" data-toggle="modal" data-target="#document-modal"><img src="/assets/default/svgs/ai.svg" alt="">Fix grammatical and spelling errors</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Translate questions</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Simplify questions</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add questions on particular topic</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Reduce/increase Options From MCQs</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add learner’s name in the questions</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add answer's explanation</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Write custom prompt</a></li>
-                        </ul>
-                    </div>
-                    <div class="quiz-setup-listings">
-                        <div class="row">
-                            <div class="col-12 col-lg-12 col-md-12 questions-holder-area">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Modal -->
-        <div class="modal fade general-knowledge-modal" id="general-knowledge-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" style="display: none;" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="editable" contenteditable="true">General Knowledge &amp; Methodology</h2>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                        <div class="book-btn">
-                            <div class="upload-box">
-                                <input type="file" id="upload-thumbnail">
-                                <label for="upload-thumbnail"><img src="/assets/default/svgs/edit-simple.svg" alt="file-image"></label>
-                            </div>
-                            <button type="button"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></button>
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                    <div class="text-holder">
-                        
-                        <ul>
-                            <li>
-                                <img src="/assets/default/svgs/title.svg" alt="title">
-                                <input type="text" placeholder="Title" title="Title">
-                                <div class="dropdown">
-                                    <button class="btn-link dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Choose Category
+                                    @if(empty($assignment) and !empty($inWebinarPage))
+                                    <button type="button"
+                                            class="btn btn-sm btn-danger ml-10 cancel-accordion">{{
+                                        trans('public.close') }}
                                     </button>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="generalMenu" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(30px, 30px, 0px);">
-                                    <div class="select-categories-holder">
-                                            <div class="selected-category">
-                                                <a href="#">Prototyping</a>
-                                            </div>
-                                            <div class="categories">
-                                                <span>Select category or create one</span>
-                                                <a href="#" class="active">Prototyping</a>
-                                                <a href="#">UI/UX</a>
-                                                <a href="#">Design</a>
-                                                <a href="#">Card</a>
-                                                <a href="#">Not Urgent</a>
-                                                <a href="#">Line</a>
-                                            </div>
-                                    </div> 
-                                    </div>
+                                    @endif
                                 </div>
-                            </li>
-                            <li>
-                                <img src="/assets/default/svgs/grades.svg" alt="grades">
-                                <div class="select-option-box">
-                                    <select>
-                                        <option value="Grade">Grade</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                    </select>
-                                </div>
-                                <em>Empty</em>
-                            </li>
-                            <li>
-                                <img src="/assets/default/svgs/book-saved.svg" alt="book-saved">
-                                <div class="select-option-box">
-                                    <select>
-                                        <option value="Subject">Subject</option>
-                                        <option value="Science">Science</option>
-                                        <option value="Math">Math</option>
-                                        <option value="English">English</option>
-                                    </select>
-                                </div>
-                                <em>Empty</em>
-                            </li>
-                        </ul>
-                        <div class="description-field">
-                            <textarea name="description" placeholder="Type description here..."></textarea>
-                            <span class="description-count">0/400</span>
-                        </div>
-                        <div class="general-knowledge-footer">
-                            <p>Let your learner know a title about the learning path</p>
-                            <div class="footer-controls">
-                                <button type="button" class="apply-btn">Apply</button>
-                                <button type="button" class="cancel-btn">Cancel</button>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        <div class="modal fade question_templates_modal" id="templatesleModal" tabindex="-1" aria-labelledby="templatesleModalLabel" style="display: none;" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="question-ai-tabs">
-                            <div class="nav-tabs-holder">
-                                <h1>The <span>Ultimate</span> No-Code Quiz Maker</h1>
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a href="#home" class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="false">Blank Canvas</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a href="#q-collections" class="nav-link" id="q-collections-tab" data-toggle="tab" data-target="#q-collections" type="button" role="tab" aria-controls="q-collections" aria-selected="true">Collections</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a href="#generate-ai" class="nav-link" id="generate-ai-tab" data-toggle="tab" data-target="#generate-ai" type="button" role="tab" aria-controls="generate-ai" aria-selected="false">Generate with AI</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a href="#import-q" class="nav-link" id="import-tab" data-toggle="tab" data-target="#import-q" type="button" role="tab" aria-controls="import-q" aria-selected="false">Import Questions</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a href="#collection" class="nav-link" id="collection-tab" data-toggle="tab" data-target="#collection" type="button" role="tab" aria-controls="collection" aria-selected="false">My Collection</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                    <h6>Or select a question type to add question</h6>
-                                    <div class="question_templates-holder">
-                                        <ul class="question_templates">
-                                            <li data-type="question_templates" data-option="multichoice_template" data-elements="question_label_multichoice_template,paragraph_multichoice_template,radio">
-                                                <span class="templates-lable">Multiple Templates</span>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d1.png" alt=""> Multiple Choice
-                                                    <div class="templete-hover-element">
-                                                        <div class="hover-box">
-                                                            <div class="img-holder"></div>
-                                                            <div class="text-holder">
-                                                                <h6>Multiple Choice</h6>
-                                                                <p>Check for retention by asking students to pick one or more correct answers. Use text, images, or math questions to spice things up!</p>
-                                                                <span class="text-lable"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d2.png" alt=""> Multiple Response
-                                                    <div class="templete-hover-element">
-                                                        <div class="hover-box">
-                                                            <div class="img-holder"></div>
-                                                            <div class="text-holder">
-                                                                <h6>Multiple Response</h6>
-                                                                <p>Check for retention by asking students to pick one or more correct answers. Use text, images, or math questions to spice things up!</p>
-                                                                <span class="text-lable">Auto-graded</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li data-type="question_templates" data-option="true_false_template" data-elements="question_label_true_false,question_label_paragraph,truefalse_quiz">
-                                                <span class="templates-lable">Multiple Templates</span>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d3.png" alt=""> True/False </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d4.png" alt=""> Short Answer </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d5.png" alt=""> Numeric </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d6.png" alt=""> Sequence </a>
-                                            </li>
-                                            <li data-type="question_templates" data-option="matching_template" data-elements="question_label_matching_template,match_quiz">
-                                                <span class="templates-lable">Multiple Templates</span>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d7.png" alt=""> Matching </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d8.png" alt=""> Fill in the Blanks </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d9.png" alt=""> Select from Lists </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d10.png" alt=""> Drag the Words </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d11.png" alt=""> Hotspot </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d12.png" alt=""> Drag and Drop </a>
-                                            </li>
-
-                                            <li data-type="question_templates" data-option="likert_template" data-elements="question_label">
-                                                <span class="templates-lable">Multiple Templates</span>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d13.png" alt=""> Likert Scale </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d14.png" alt=""> Essay </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade populated-content-area" id="q-collections" role="tabpanel" aria-labelledby="q-collections-tab">
-
-                                    <div class="topics-subtopics-content-area row">
-                                        {!! $topics_subtopics_layout !!}
 
 
-                                    </div>
-                                    <div class="selected-questions-group 2222">
-
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="generate-ai" role="tabpanel" aria-labelledby="generate-ai-tab">
-                                    <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible alert fade show">
-                                        <button type="button" class="close" data-dismiss="quiz-ai-tags" aria-label="Close">
-                                            <span aria-hidden="true">×</span>
-                                        </button>
-                                        <h6 class="search-lable">Enhance this quiz using AI</h6>
-                                        <ul>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add similar questions</a></li>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Fix grammatical and spelling errors</a></li>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Translate questions</a></li>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Simplify questions</a></li>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add questions on particular topic</a></li>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Reduce/increase Options From MCQs</a></li>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add learner’s name in the questions</a></li>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add answer's explanation</a></li>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Write custom prompt</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="questions-inner-tabs">
-                                        <ul class="nav nav-tabs" id="myTab2" role="tablist">
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link active" id="document-tab" data-toggle="tab" data-target="#document" type="button" role="tab" aria-controls="document" aria-selected="true">Document</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="prompt-tab" data-toggle="tab" data-target="#prompt" type="button" role="tab" aria-controls="prompt" aria-selected="false">Text/Prompt</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="website-tab" data-toggle="tab" data-target="#website" type="button" role="tab" aria-controls="website" aria-selected="false">Website</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="utube-tab" data-toggle="tab" data-target="#utube" type="button" role="tab" aria-controls="utube" aria-selected="false">YouTube</button>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content" id="myTabContent2">
-                                            <div class="tab-pane fade show active" id="document" role="tabpanel" aria-labelledby="document-tab">
-                                                <h6>Generate question from study materials (presentations/documents)</h6>
-                                                <div class="staff-picks-holder">
-                                                    <div class="upload-options">
-                                                        <div class="field-box">
-                                                            <input type="file" id="drag-drop">
-                                                            <label for="drag-drop">
-                                                                <i class="fas fa-cloud-download-alt"></i>
-                                                                <span>Drag and drop a study material</span>
-                                                            </label>
-                                                        </div>
-                                                        <span class="field-separated">
-                                                    <span>Or</span>
-                                                </span>
-                                                        <div class="upload-controls">
-                                                            <div class="field-box">
-                                                                <input type="file" id="drag-drop">
-                                                                <label for="drag-drop"><i class="fas fa-desktop"></i> Upload from device</label>
-                                                            </div>
-                                                            <div class="field-box">
-                                                                <input type="file" id="drag-drop">
-                                                                <label for="drag-drop"><i class="fas fa-desktop"></i> Import from device</label>
-                                                            </div>
-                                                            <div class="field-box">
-                                                                <input type="file" id="drag-drop">
-                                                                <label for="drag-drop"><i class="fas fa-camera"></i> Take a picture</label>
-                                                            </div>
-                                                        </div>
-                                                        <p>Supported formates: PDF, PPT, PPTX, DOC</p>
-                                                    </div>
-                                                </div>
-                                                <div class="question-hints">
-                                                    <h6>Hints</h6>
-                                                    <div class="question-hints-holder">
-                                                        <div class="hints-box">
-                                                            <strong>Total Referred Users</strong>
-                                                            <span>Users that registerd on the plateform using the referral code.</span>
-                                                        </div>
-                                                        <div class="hints-box">
-                                                            <strong>Total Referred Users</strong>
-                                                            <span>Users that registerd on the plateform using the referral code.</span>
-                                                        </div>
-                                                        <div class="hints-box">
-                                                            <strong>Total Referred Users</strong>
-                                                            <span>Users that registerd on the plateform using the referral code.</span>
-                                                        </div>
-                                                        <div class="hints-box">
-                                                            <strong>Total Referred Users</strong>
-                                                            <span>Users that registerd on the plateform using the referral code.</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="prompt" role="tabpanel" aria-labelledby="prompt-tab">
-                                                <h6>Copy and paste questions text from anywhere to create a quiz from it</h6>
-                                                <div class="copy-paste-questions">
-                                                    <span class="text-lable">Paste your content</span>
-                                                    <div class="pasted-question">
-                                                        <ul>
-                                                            <li>
-                                                                Question 1
-                                                                <ul>
-                                                                    <li>Option 1</li>
-                                                                    <li>Option 2</li>
-                                                                    <li>Option 3</li>
-                                                                    <li>Option 4 (Correct)</li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                        <ul>
-                                                            <li>
-                                                                Question 2
-                                                                <ul>
-                                                                    <li>Option 1</li>
-                                                                    <li>Option 2</li>
-                                                                    <li>Option 3</li>
-                                                                    <li>Option 4 (Correct)</li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="website" role="tabpanel" aria-labelledby="website-tab">
-                                                <h6>Generate questions from websites/online articles</h6>
-                                                <div class="rureraform-search-field">
-                                                    <div class="input-field web-input-field">
-                                                        <i class="fas fa-link"></i>
-                                                        <input type="text" placeholder="Enter any website URL (eg https://rurera.com/) ">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="utube" role="tabpanel" aria-labelledby="utube-tab">
-                                                <h6 class="search-lable">Find or create an Interactive Video from YouTube <span class="beta-lable">Beta</span></h6>
-                                                <div class="bg-white panel-border rounded-sm p-15">
-                                                    <div class="rureraform-search-field">
-                                                        <div class="input-field youtube-input-field w-100">
-                                                            <img src="/assets/default/svgs/youtube.svg" alt="">
-                                                            <input type="text" placeholder="Search question..">
-                                                            <button type="button"><i class="fas fa-search"></i> Browse YouTube</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="import-q" role="tabpanel" aria-labelledby="import-tab">
-                                    <div class="questions-inner-tabs">
-                                        <ul class="nav nav-tabs" id="myTab3" role="tablist">
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link active" id="paste-q-tab" data-toggle="tab" data-target="#paste-q" type="button" role="tab" aria-controls="paste-q" aria-selected="true">Paste Questions</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="google-form-tab" data-toggle="tab" data-target="#google-form" type="button" role="tab" aria-controls="google-form" aria-selected="false">Google Form</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="spreadsheet-tab" data-toggle="tab" data-target="#spreadsheet" type="button" role="tab" aria-controls="spreadsheet" aria-selected="false">Spreadsheet/CSV</button>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content" id="myTabContent3">
-                                            <div class="tab-pane fade show active" id="paste-q" role="tabpanel" aria-labelledby="paste-q-tab">
-                                                <h6>Copy and paste questions text from anywhere to create a quiz from it</h6>
-                                                <div class="copy-paste-questions">
-                                                    <span class="text-lable">Paste your content</span>
-                                                    <div class="pasted-question">
-                                                        <ul>
-                                                            <li>
-                                                                Question 1
-                                                                <ul>
-                                                                    <li>Option 1</li>
-                                                                    <li>Option 2</li>
-                                                                    <li>Option 3</li>
-                                                                    <li>Option 4 (Correct)</li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                        <ul>
-                                                            <li>
-                                                                Question 2
-                                                                <ul>
-                                                                    <li>Option 1</li>
-                                                                    <li>Option 2</li>
-                                                                    <li>Option 3</li>
-                                                                    <li>Option 4 (Correct)</li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="google-form" role="tabpanel" aria-labelledby="google-form-tab">
-                                                <h6>Import Google Form as a quiz</h6>
-                                                <div class="staff-picks-holder">
-                                                    <div class="upload-options">
-                                                        <div class="field-box">
-                                                            <input type="file" id="drag-drop">
-                                                            <label for="drag-drop">
-                                                                <i class="fas fa-file-alt"></i>
-                                                                <span>Select a google form</span>
-                                                            </label>
-                                                        </div>
-                                                        <div class="upload-controls">
-                                                            <div class="field-box">
-                                                                <input type="file" id="drag-drop">
-                                                                <label for="drag-drop"><i class="fas fa-desktop"></i> Import from drive</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="spreadsheet" role="tabpanel" aria-labelledby="spreadsheet-tab">
-                                                <h6>Bulk import questions using spreadsheet</h6>
-                                                <div class="staff-picks-holder">
-                                                    <div class="upload-options">
-                                                        <div class="field-box">
-                                                            <input type="file" id="drag-drop">
-                                                            <label for="drag-drop">
-                                                                <img src="/assets/default/svgs/spreadsheet.svg" alt="">
-                                                                <span>Drag and drop your spreadsheet</span>
-                                                            </label>
-                                                        </div>
-                                                        <span class="field-separated">
-                                                    <span>Or</span>
-                                                </span>
-                                                        <div class="upload-controls">
-                                                            <div class="field-box">
-                                                                <input type="file" id="drag-drop">
-                                                                <label for="drag-drop"><i class="fas fa-desktop"></i> Upload from device</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="collection" role="tabpanel" aria-labelledby="collection-tab">
-                                    <div class="staff-picks-tabs">
-                                        <div class="mb-30 bg-white panel-border rounded-sm p-15">
-                                            <div class="rureraform-search-field mb-15">
-                                                <div class="input-field">
-                                                    <input type="text" placeholder="Search question..">
-                                                    <button type="button"><i class="fas fa-search"></i> <span>Search questions</span></button>
-                                                </div>
-                                                <div class="featured-controls">
-                                                    <button type="button" class="active">Featured List</button>
-                                                    <button type="button">Community</button>
-                                                    <button type="button">My Collection</button>
-                                                </div>
-                                            </div>
-                                            <div class="search-filters mb-0">
-                                                <div class="select-field">
-                                                    <span>By:</span>
-                                                    <select>
-                                                        <option value="All providers">All providers</option>
-                                                        <option value="All providers">All providers</option>
-                                                        <option value="All providers">All providers</option>
-                                                    </select>
-                                                </div>
-                                                <div class="select-field">
-                                                    <span>Capability:</span>
-                                                    <select>
-                                                        <option value="All providers">Embeddings</option>
-                                                        <option value="All providers">Embeddings</option>
-                                                        <option value="All providers">Embeddings</option>
-                                                    </select>
-                                                </div>
-                                                <div class="select-field">
-                                                    <span>Tag:</span>
-                                                    <select>
-                                                        <option value="All">All</option>
-                                                        <option value="All">All</option>
-                                                        <option value="All">All</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade blank-canvas-modal" id="blank-canvas-modal" tabindex="-1" aria-labelledby="blank-canvas-modalLabel" aria-modal="true" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="blank-canvas-sidebar">
-                            <h3 class="title">QUESTION <span>(5)</span> <button class="add-btn" data-toggle="modal" data-target="#general-knowledge-modal">+</button></h3>
-                            <div id="sortable">
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">1</div> What does UI <br > stand fo...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">2</div> Which aspect of UI de...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">3</div> How to export a pictu...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">4</div> What does UI <br > stand fo...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">5</div> Which aspect of UI de...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">6</div> How to export a pictu...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">7</div> What does UI <br > stand fo...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">8</div> Which aspect of UI de...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">9</div> How to export a pictu...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">10</div> What does UI <br > stand fo...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">11</div> Which aspect of UI de...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">12</div> How to export a pictu...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">13</div> What does UI <br > stand fo...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">14</div> Which aspect of UI de...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">15</div> How to export a pictu...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">16</div> What does UI <br > stand fo...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">17</div> Which aspect of UI de...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="question-card">
-                                    <a href="#" class="question-card-link">
-                                        <div class="question-content">
-                                            <div class="question-text"><div class="q-number">18</div> How to export a pictu...</div>
-                                            <div class="question-type">
-                                                <span><img src="/assets/default/svgs/multi-choice.svg" alt=""> Multiple choice</span>
-                                                <span class="drag-btn"><img src="/assets/default/svgs/drag.svg" alt=""></span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="canvas-modal-container">
-                            <div class="mb-30 bg-white panel-border rounded-sm p-15 bulk-quiz">
-                                <div class="bulk-heading">
-                                    <h6>Bulk Settings</h6>
-                                </div>
-                                <div class="bulk-ai">
-                                    <div class="bulk-ai-box">
-                                        <span class="bulk-lable">Rendomize</span>
-                                        <div class="btn-field">
-                                            <a href="#">Question order</a>
-                                            <a href="#">Options order</a>
-                                        </div>
-                                    </div>
-                                    <div class="bulk-ai-box">
-                                        <span class="bulk-lable">Estimation time</span>
-                                        <div class="select-field">
-                                            <select>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select>
-                                            <span class="bulk-text">Mins <i class="fas fa-clock"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="bulk-ai-box">
-                                        <span class="bulk-lable">Mark as point</span>
-                                        <div class="select-field">
-                                            <select>
-                                                <option value="1">1</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select>
-                                            <span class="bulk-text">Points <i class="fas fa-circle"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade questions-modal-canvas blank-canvas-modal" id="questions-modal-canvas" tabindex="-1" aria-labelledby="questions-modal-canvasLabel" aria-modal="true" role="dialog">
-            <div class="modal-dialog questions-modal-canvas-block11">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body questions-modal-canvas-block">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade grammer-modal-canvas blank-canvas-modal" id="questions-modal-canvas" tabindex="-1" aria-labelledby="questions-modal-canvasLabel" aria-modal="true" role="dialog">
-            <div class="modal-dialog questions-modal-canvas-block11">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body grammer-modal-canvas-block">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade general-knowledge-modal" id="general-knowledge-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" style="display: none;" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                        <div class="img-holder">
-                            <figure>
-                                <img src="/assets/default/img/ecommerce-img.webp" alt="">
-                                <figcaption>
-                                    <div class="upload-box">
-                                        <input type="file" id="upload-thumbnail">
-                                        <label for="upload-thumbnail"><img src="/assets/default/svgs/file-image.svg" alt=""> Upload thumbnail</label>
-                                    </div>
-                                    <div class="book-btn">
-                                        <button type="button"><img src="/assets/default/svgs/book-saved.svg" alt=""></button>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="text-holder">
-                            <h2 class="editable" contenteditable="true">General Knowledge &amp; Methodology</h2>
-                            <ul>
-                                <li>
-                                    <img src="/assets/default/svgs/title.svg" alt="">
-                                    <input type="text" placeholder="Title" title="Title">
-                                    <div class="dropdown">
-                                        <button class="btn-link dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Choose Category
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="generalMenu" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(30px, 30px, 0px);">
-                                            <div class="select-categories-holder">
-                                                <div class="selected-category">
-                                                    <a href="#">Prototyping</a>
-                                                </div>
-                                                <div class="categories">
-                                                    <span>Select category or create one</span>
-                                                    <a href="#" class="active">Prototyping</a>
-                                                    <a href="#">UI/UX</a>
-                                                    <a href="#">Design</a>
-                                                    <a href="#">Card</a>
-                                                    <a href="#">Not Urgent</a>
-                                                    <a href="#">Line</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="/assets/default/svgs/grades.svg" alt="">
-                                    <input type="text" placeholder="Grade" title="Grade">
-                                    <em>Empty</em>
-                                </li>
-                                <li>
-                                    <img src="/assets/default/svgs/book-saved.svg" alt="">
-                                    <input type="text" placeholder="Subject" title="Subject">
-                                    <em>Empty</em>
-                                </li>
-                                <li>
-                                    <img src="/assets/default/svgs/teacher-with-stick.svg" alt="">
-                                    <input type="text" placeholder="Co-teacher" title="Co-teacher">
-                                    <div class="dropdown">
-                                        <button class="btn-link dropdown-toggle" type="button" id="generalMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Select Language
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="generalMenu" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(30px, 30px, 0px);">
-                                            <div class="select-languages-holder">
-                                                <div class="languages">
-                                                    <span>Select Languages</span>
-                                                    <a href="#" class="active">English</a>
-                                                    <a href="#">Deutsch</a>
-                                                    <a href="#">Espanol</a>
-                                                    <a href="#">Francais</a>
-                                                    <a href="#">Italian</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="/assets/default/svgs/calendar-days.svg" alt="">
-                                    <input type="text" placeholder="Start Date" title="Start Date">
-                                    <em>Empty</em>
-                                </li>
-                                <li>
-                                    <img src="/assets/default/svgs/deadlines.svg" alt="">
-                                    <input type="text" placeholder="Deadline :" title="Deadline :">
-                                    <em>Empty</em>
-                                </li>
-                                <li>
-                                    <img src="/assets/default/svgs/attempt.svg" alt="">
-                                    <input type="text" placeholder="Participant attempts :" title="Participant attempts :">
-                                    <em>Empty</em>
-                                </li>
-                            </ul>
-                            <div class="description-field">
-                                <textarea name="description" placeholder="Type description here..."></textarea>
-                                <span class="description-count">0/400</span>
-                            </div>
-                            <p>Let your learner know a title about the learning path</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal document-modal enhance-questions-modal fade" id="document-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="document-viewer">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <div class="document-content" style="padding-right: 15px;">
-                                <div class="document-pdf" id="pdf-fonts" style="font-size: medium;">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="questions-heading d-flex align-items-center justify-content-between flex-wrap mb-15">
-                                                <h3 class="font-20 font-weight-bold mb-0">Enhance Questions</h3>
-                                                <div class="search-filters mb-0">
-                                                    <div class="select-field">
-                                                        <span>By:</span>
-                                                        <select>
-                                                            <option value="All providers">All providers</option>
-                                                            <option value="All providers">All providers</option>
-                                                            <option value="All providers">All providers</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="select-field">
-                                                        <span>Capability:</span>
-                                                        <select>
-                                                            <option value="All providers">Embeddings</option>
-                                                            <option value="All providers">Embeddings</option>
-                                                            <option value="All providers">Embeddings</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="select-field">
-                                                        <span>Tag:</span>
-                                                        <select>
-                                                            <option value="All">All</option>
-                                                            <option value="All">All</option>
-                                                            <option value="All">All</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
-                                            <div class="question-layout-holder mb-0 bg-white panel-border rounded-sm p-25 mb-25">
-                                                <span class="quiz-element-icon"><i class="fas fa-chevron-right"></i></span>
-                                                <div class="question-check-option">
-                                                    <input type="checkbox" id="q-check1">
-                                                    <label for="q-check1" class="question-check-box">
-                                                        <div class="question-layout-block">
-                                                            <form class="question-fields" action="javascript:;" data-question_id="10180">
-                                                                <div class="left-content has-bg">
-                                                                    <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
-                                                                        <div class="question-layout row d-flex align-items-start">
-                                                                            <div class="rureraform-col rureraform-col-12">
-                                                                                <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
-                                                                                    <div class="question-top-info">
-                                                                                        <div class="question-count">
-                                                                                            <span class="question-count-lable">Question 1 of 20</span>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="rureraform-col rureraform-col-12">
-                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                                    <h4>Read the text, then answer the question.</h4>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="rureraform-col rureraform-col-12">
-                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz"> Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm. <div class="rureraform-element-cover"></div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="rureraform-col rureraform-col-12">
-                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                                    <div class="question-label question_label">
-                                                                                        <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="rureraform-col rureraform-col-12">
-                                                                                <div id="rureraform-element-24192" class="quiz-group rureraform-element-24192 rureraform-element ui-sortable-handle" data-type="checkbox">
-                                                                                    <div class="rureraform-column-label">
-                                                                                        <label class="rureraform-label">Mark two answers</label>
-                                                                                    </div>
-                                                                                    <div class="rureraform-column-input">
-                                                                                        <div class="rureraform-input">
-                                                                                            <div class="form-box  rurera-in-row alphabet-list-style">
-                                                                                                <div class="form-field rureraform-cr-container-medium ">
-                                                                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-00-2424" value="3 hours 45 minutes">
-                                                                                                    <label for="field-24192-00-2424"> 3 hours 45 minutes </label>
-                                                                                                </div>
-                                                                                                <div class="form-field rureraform-cr-container-medium">
-                                                                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-11-2424" value="4 hours 10 minutes">
-                                                                                                    <label for="field-24192-11-2424"> 4 hours 10 minutes </label>
-                                                                                                </div>
-                                                                                                <div class="form-field rureraform-cr-container-medium">
-                                                                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-22-2424" value="3 hours 30 minutes">
-                                                                                                    <label for="field-24192-22-2424"> 3 hours 30 minutes </label>
-                                                                                                </div>
-                                                                                                <div class="form-field rureraform-cr-container-medium">
-                                                                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-33-2424" value="4 hours 35 minutes">
-                                                                                                    <label for="field-24192-33-2424"> 4 hours 35 minutes </label>
-                                                                                                </div>
-                                                                                                <div class="form-field rureraform-cr-container-medium">
-                                                                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-44-2424" value="4 hours">
-                                                                                                    <label for="field-24192-44-2424"> 4 hours </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                        <div class="canvas-editable-options-holder">
-                                                            <div class="canvas-editable-options lms-quiz-create">
-                                                                <div class="lms-element-properties">
-                                                                    <div class="row">
-                                                                        <div class="topic-parts-block rurera-hide" style="display:contents;"></div>
-                                                                    </div>
-                                                                    <div class="rureraform-admin-popup active" id="rureraform-element-properties" style="display: block;" data-element_id="rureraform-element-3">
-                                                                        <div class="rureraform-admin-popup-inner">
-                                                                            <div class="rureraform-admin-popup-title">
-                                                                                <a href="#" title="Close">
-                                                                                    <i class="fas fa-times"></i>
-                                                                                </a>
-                                                                                <h3>
-                                                                                    <i class="fas fa-cog element-properties-label"></i> Multiple Choice 1
-                                                                                </h3>
-                                                                            </div>
-                                                                            <div class="rureraform-admin-popup-content">
-                                                                                <div class="rureraform-admin-popup-content-form">
-                                                                                    <div id="rureraform-tab-basic" class="rureraform-tab-content" style="display: block;">
-                                                                                        <input type="hidden" name="rureraform-field_id" id="rureraform-field_id" value="48453" placeholder="">
-                                                                                        <div class="rureraform-properties-item " data-id="label">
-                                                                                            <div class="rureraform-properties-label">
-                                                                                                <label>Label</label>
-                                                                                            </div>
-                                                                                            <div class="rureraform-properties-content">
-                                                                                                <input type="text" name="rureraform-label" id="rureraform-label" value="Mark One answer" placeholder="">
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="rureraform-properties-item d-flex align-items-center justify-content-between" data-id="have_images">
-                                                                                            <div class="rureraform-properties-label pb-0">
-                                                                                                <label>Answer with image</label>
-                                                                                            </div>
-                                                                                            <div class="form-group custom-switches-stacked mb-0">
-                                                                                                <label class="custom-switch pl-0 mb-0">
-                                                                                                    <input type="checkbox" name="answer-with-image" id="answer-with-image" value="1" class="custom-switch-input">
-                                                                                                    <span class="custom-switch-indicator"></span>
-                                                                                                </label>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="rureraform-properties-item">
-                                                                                            <div class="properties-select-boxes">
-                                                                                                <div class="img-select-box">
-                                                                                                    <input type="radio" name="img-box" id="box1">
-                                                                                                    <label for="box1">
-                                                                                                        <img src="/store/1/tool-images/d5.png" alt="">
-                                                                                                        <span>List</span>
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                                <div class="img-select-box">
-                                                                                                    <input type="radio" name="img-box" id="box2">
-                                                                                                    <label for="box2">
-                                                                                                        <img src="/store/1/tool-images/d14.png" alt="">
-                                                                                                        <span>Essay</span>
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="rureraform-properties-item rurera-image-depend rurera-hide" data-id="image_position">
-                                                                                            <div class="rureraform-properties-label">
-                                                                                                <label>Image Position</label>
-                                                                                            </div>
-                                                                                            <div class="rureraform-properties-tooltip"></div>
-                                                                                            <div class="rureraform-properties-content">
-                                                                                                <div class="rureraform-third">
-                                                                                                    <select name="rureraform-image_position" id="rureraform-image_position" class="">
-                                                                                                        <option selected="selected" value="top">Top</option>
-                                                                                                        <option value="left">Left</option>
-                                                                                                        <option value="right">Right</option>
-                                                                                                    </select>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="rureraform-properties-item" data-id="options">
-                                                                                            <div class="rureraform-properties-label">
-                                                                                                <label>Options</label>
-                                                                                            </div>
-                                                                                            <div class="rureraform-properties-content rureraform-properties-image-options-table">
-                                                                                                <div class="rureraform-properties-options-table-header">
-                                                                                                    <div class="rurera-image-depend rurera-hide">Image</div>
-                                                                                                    <div class="rurera-hide">Value</div>
-                                                                                                    <div></div>
-                                                                                                </div>
-                                                                                                <div class="rureraform-properties-options-box ui-resizable">
-                                                                                                    <div class="rureraform-properties-options-container ui-sortable" data-multi="on">
-                                                                                                        <div class="rureraform-properties-options-item rureraform-properties-options-item-default">
-                                                                                                            <div class="rureraform-properties-options-table">
-                                                                                                                <div>
-                                                                                                                    <input class="rureraform-properties-options-label" type="text" value="Cells" placeholder="Label">
-                                                                                                                </div>
-                                                                                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
-                                                                                                                    <div class="input-group-prepend">
-                                                                                                                        <button type="button" class="input-group-text admin-file-manager" data-input="image-options-0" data-preview="holder">
-                                                                                                                            <i class="fa fa-upload"></i>
-                                                                                                                        </button>
-                                                                                                                    </div>
-                                                                                                                    <input class="rureraform-properties-options-image" type="text" id="image-options-0" value="" placeholder="Upload Image">
-                                                                                                                    <span>
-                                                                                    <i class="far fa-image"></i>
-                                                                                </span>
-                                                                                                                </div>
-                                                                                                                <div class="rurera-hide">
-                                                                                                                    <input class="rureraform-properties-options-value" type="text" value="Cells" placeholder="Value">
-                                                                                                                </div>
-                                                                                                                <div>
-                                                                                <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
-                                                                                    <i class="fas fa-check"></i>
-                                                                                </span>
-                                                                                                                    <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
-                                                                                    <i class="far fa-copy"></i>
-                                                                                </span>
-                                                                                                                    <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
-                                                                                    <i class="fas fa-trash-alt"></i>
-                                                                                </span>
-                                                                                                                    <span title="Move the option">
-                                                                                    <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
-                                                                                </span>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="rureraform-properties-options-item">
-                                                                                                            <div class="rureraform-properties-options-table">
-                                                                                                                <div>
-                                                                                                                    <input class="rureraform-properties-options-label" type="text" value="Chloroplasts" placeholder="Label">
-                                                                                                                </div>
-                                                                                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
-                                                                                                                    <div class="input-group-prepend">
-                                                                                                                        <button type="button" class="input-group-text admin-file-manager" data-input="image-options-1" data-preview="holder">
-                                                                                                                            <i class="fa fa-upload"></i>
-                                                                                                                        </button>
-                                                                                                                    </div>
-                                                                                                                    <input class="rureraform-properties-options-image" type="text" id="image-options-1" value="" placeholder="Upload Image">
-                                                                                                                    <span>
-                                                                                    <i class="far fa-image"></i>
-                                                                                </span>
-                                                                                                                </div>
-                                                                                                                <div class="rurera-hide">
-                                                                                                                    <input class="rureraform-properties-options-value" type="text" value="Chloroplasts" placeholder="Value">
-                                                                                                                </div>
-                                                                                                                <div>
-                                                                                <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
-                                                                                    <i class="fas fa-check"></i>
-                                                                                </span>
-                                                                                                                    <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
-                                                                                    <i class="far fa-copy"></i>
-                                                                                </span>
-                                                                                                                    <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
-                                                                                    <i class="fas fa-trash-alt"></i>
-                                                                                </span>
-                                                                                                                    <span title="Move the option">
-                                                                                    <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
-                                                                                </span>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="rureraform-properties-options-item">
-                                                                                                            <div class="rureraform-properties-options-table">
-                                                                                                                <div>
-                                                                                                                    <input class="rureraform-properties-options-label" type="text" value="Tissues" placeholder="Label">
-                                                                                                                </div>
-                                                                                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
-                                                                                                                    <div class="input-group-prepend">
-                                                                                                                        <button type="button" class="input-group-text admin-file-manager" data-input="image-options-2" data-preview="holder">
-                                                                                                                            <i class="fa fa-upload"></i>
-                                                                                                                        </button>
-                                                                                                                    </div>
-                                                                                                                    <input class="rureraform-properties-options-image" type="text" id="image-options-2" value="" placeholder="Upload Image">
-                                                                                                                    <span>
-                                                                                    <i class="far fa-image"></i>
-                                                                                </span>
-                                                                                                                </div>
-                                                                                                                <div class="rurera-hide">
-                                                                                                                    <input class="rureraform-properties-options-value" type="text" value="Tissues" placeholder="Value">
-                                                                                                                </div>
-                                                                                                                <div>
-                                                                                <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
-                                                                                    <i class="fas fa-check"></i>
-                                                                                </span>
-                                                                                                                    <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
-                                                                                    <i class="far fa-copy"></i>
-                                                                                </span>
-                                                                                                                    <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
-                                                                                    <i class="fas fa-trash-alt"></i>
-                                                                                </span>
-                                                                                                                    <span title="Move the option">
-                                                                                    <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
-                                                                                </span>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="rureraform-properties-options-item">
-                                                                                                            <div class="rureraform-properties-options-table">
-                                                                                                                <div>
-                                                                                                                    <input class="rureraform-properties-options-label" type="text" value="Nuclei" placeholder="Label">
-                                                                                                                </div>
-                                                                                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
-                                                                                                                    <div class="input-group-prepend">
-                                                                                                                        <button type="button" class="input-group-text admin-file-manager" data-input="image-options-3" data-preview="holder">
-                                                                                                                            <i class="fa fa-upload"></i>
-                                                                                                                        </button>
-                                                                                                                    </div>
-                                                                                                                    <input class="rureraform-properties-options-image" type="text" id="image-options-3" value="" placeholder="Upload Image">
-                                                                                                                    <span>
-                                                                                    <i class="far fa-image"></i>
-                                                                                </span>
-                                                                                                                </div>
-                                                                                                                <div class="rurera-hide">
-                                                                                                                    <input class="rureraform-properties-options-value" type="text" value="Nuclei" placeholder="Value">
-                                                                                                                </div>
-                                                                                                                <div>
-                                                                                <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
-                                                                                    <i class="fas fa-check"></i>
-                                                                                </span>
-                                                                                                                    <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
-                                                                                    <i class="far fa-copy"></i>
-                                                                                </span>
-                                                                                                                    <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
-                                                                                    <i class="fas fa-trash-alt"></i>
-                                                                                </span>
-                                                                                                                    <span title="Move the option">
-                                                                                    <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
-                                                                                </span>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                    <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
-                                                                                                </div>
-                                                                                                <div class="rureraform-properties-options-table-footer">
-                                                                                                    <a class="rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small" data-toggle="collapse" href="#explanation" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                                                                                        <i class="fas fa-plus"></i>
-                                                                                                        <label>Add Explanation..</label>
-                                                                                                    </a>
-                                                                                                    <div class="explanation-box collapse mt-15" id="explanation">
-                                                                                                        <textarea name="explanation" class="form-control"></textarea>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-
-                                                                                        <div class="rureraform-properties-item " data-id="template_style">
-                                                                                            <div class="rureraform-properties-tooltip"></div>
-                                                                                            <div class="rureraform-properties-content">
-                                                                                                <div class="rureraform-third">
-                                                                                                    <select name="rureraform-template_style" id="rureraform-template_style" class="">
-                                                                                                        <option selected="selected" value="rurera-in-row">Row</option>
-                                                                                                        <option value="rurera-in-cols">Columns</option>
-                                                                                                    </select>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="rureraform-properties-item " data-id="list_style">
-                                                                                            <div class="rureraform-properties-label">
-                                                                                                <label>Bullet list Style</label>
-                                                                                            </div>
-                                                                                            <div class="rureraform-properties-tooltip"></div>
-                                                                                            <div class="rureraform-properties-content">
-                                                                                                <div class="bullet-controls">
-                                                                                                    <button type="button">Enabled</button>
-                                                                                                    <button type="button">Enabled</button>
-                                                                                                    <button type="button" class="active">Selected</button>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-
-                                                                                        <input type="hidden" name="rureraform-elements_data" id="rureraform-elements_data" value="W3t9XQ==" placeholder="">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="rureraform-admin-popup-buttons">
-                                                                                <a class="rureraform-admin-button duplicate-element btn btn-primary" href="#">
-                                                                                    <label>Update</label>
-                                                                                </a>
-                                                                                <a class="rureraform-admin-button generate-question-code rurera-hide" href="#">
-                                                                                    <label>Apply Changes</label>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="rureraform-admin-popup-loading" style="display: none;">
-                                                                                <i class="fas fa-spinner fa-spin"></i>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="mb-0 bg-white panel-border rounded-sm p-25 mb-25">
-                                                <div class="question-layout-block">
-                                                    <form class="question-fields" action="javascript:;" data-question_id="10180">
-                                                        <div class="left-content has-bg">
-                                        <span class="question-number-holder" style="z-index: 999999999;">
-                                            <span class="question-number">1</span>
-                                        </span>
-                                                            <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
-                                                                <div class="question-layout row d-flex align-items-start">
-                                                                    <div class="rureraform-col rureraform-col-12">
-                                                                        <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
-                                                                            <div class="question-top-info">
-                                                                                <div class="question-count">
-                                                                                    <span class="question-count-lable">Question 3 of 20</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-12">
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                            <h4>Mark the following true and false:</h4>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-8">
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                            <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
-                                                                        </div>
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
-                                                                            <i>Hint:&nbsp;&nbsp;Think about what happens inside cells during respiration and what is released.</i>
-                                                                            <div class="rureraform-element-cover"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-4">
-                                                                        <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
-                                                                            <div class="rureraform-column-input">
-                                                                                <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
-                                                                                    <div class="form-box ">
-                                                                                        <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                                                            <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                                                                <input class="editor-field" type="radio" name="field-40008" id="field-40008-0" value="True">
-                                                                                                <label for="field-40008-0">
-                                                                                                    <span class="label-box"></span>
-                                                                                                    <span class="inner-label">True</span>
-                                                                                                </label>
-                                                                                            </div>
-                                                                                            <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                                                                <input class="editor-field" type="radio" name="field-40008" id="field-40008-1" value="False">
-                                                                                                <label for="field-40008-1">
-                                                                                                    <span class="label-box"></span>
-                                                                                                    <span class="inner-label">False</span>
-                                                                                                </label>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <label class="rureraform-description"></label>
-                                                                            </div>
-                                                                            <div class="rureraform-element-cover"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-8">
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                            <h6>When balanced forces act on an object, it remains stationary or continues moving at the same speed.</h6>
-                                                                        </div>
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
-                                                                            <i>Hint:&nbsp;&nbsp;Balanced forces cancel each other out, meaning no change in motion happens.</i>
-                                                                            <div class="rureraform-element-cover"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-4">
-                                                                        <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
-                                                                            <div class="rureraform-column-input">
-                                                                                <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
-                                                                                    <div class="form-box ">
-                                                                                        <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                                                            <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                                                                <input class="editor-field" type="radio" name="field-84793" id="field-84793-0" value="True">
-                                                                                                <label for="field-84793-0">
-                                                                                                    <span class="label-box"></span>
-                                                                                                    <span class="inner-label">True</span>
-                                                                                                </label>
-                                                                                            </div>
-                                                                                            <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                                                                <input class="editor-field" type="radio" name="field-84793" id="field-84793-1" value="False">
-                                                                                                <label for="field-84793-1">
-                                                                                                    <span class="label-box"></span>
-                                                                                                    <span class="inner-label">False</span>
-                                                                                                </label>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <label class="rureraform-description"></label>
-                                                                            </div>
-                                                                            <div class="rureraform-element-cover"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-8">
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                            <h6>When an endothermic reaction occurs, energy is absorbed, making the surroundings cooler.</h6>
-                                                                        </div>
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
-                                                                            <i>Hint:&nbsp;&nbsp;Endothermic reactions pull in heat from the surroundings.</i>
-                                                                            <div class="rureraform-element-cover"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-4">
-                                                                        <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
-                                                                            <div class="rureraform-column-input">
-                                                                                <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
-                                                                                    <div class="form-box ">
-                                                                                        <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                                                            <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                                                                <input class="editor-field" type="radio" name="field-21459" id="field-21459-0" value="True">
-                                                                                                <label for="field-21459-0">
-                                                                                                    <span class="label-box"></span>
-                                                                                                    <span class="inner-label">True</span>
-                                                                                                </label>
-                                                                                            </div>
-                                                                                            <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                                                                <input class="editor-field" type="radio" name="field-21459" id="field-21459-1" value="False">
-                                                                                                <label for="field-21459-1">
-                                                                                                    <span class="label-box"></span>
-                                                                                                    <span class="inner-label">False</span>
-                                                                                                </label>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <label class="rureraform-description"></label>
-                                                                            </div>
-                                                                            <div class="rureraform-element-cover"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="bg-white panel-border rounded-sm p-25">
-                                                <div class="question-layout-block">
-                                                    <form class="question-fields" action="javascript:;" data-question_id="10180">
-                                                        <div class="left-content has-bg">
-                                        <span class="question-number-holder" style="z-index: 999999999;">
-                                            <span class="question-number">1</span>
-                                        </span>
-                                                            <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
-                                                                <div class="question-layout row d-flex align-items-start">
-                                                                    <div class="rureraform-col rureraform-col-12">
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                            <h4>Read the text and choose the correct answer.</h4>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-12">
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="drop_and_text"> When <select type="inner_dropdown" class="editor-field" id="dropdown-1" data-identifier="49226" name="field-dropdown1_options">
-                                                                                <option value="Select Option">Select Option</option>
-                                                                                <option value="lava">lava</option>
-                                                                                <option value="extrusive">extrusive</option>
-                                                                                <option value="magma">magma</option>
-                                                                            </select> cools below the Earth's surface, it forms <select type="inner_dropdown" class="editor-field" id="dropdown-2" data-identifier="49226" name="field-dropdown2_options">
-                                                                                <option value="Select Option">Select Option</option>
-                                                                                <option value="water">water</option>
-                                                                                <option value="extrusive">extrusive</option>
-                                                                                <option value="sedimentary">sedimentary</option>
-                                                                                <option value="magma">magma</option>
-                                                                            </select> igneous rocks with large crystals. <div class="rureraform-element-cover"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-12">
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
-                                                                            <p>
-                                                                                <i>Hint: Think about the Moon’s effect on Earth, especially on tides and sunlight.</i>
-                                                                            </p>
-                                                                            <div class="rureraform-element-cover"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
-                                            <div class="question-layout-holder mb-0 bg-white panel-border rounded-sm p-25 mb-25">
-                                                <div class="question-check-option">
-                                                    <input type="checkbox" id="q-check2">
-                                                    <label for="q-check2" class="question-check-box">
-                                                        <div class="question-layout-block">
-                                                            <form class="question-fields" action="javascript:;" data-question_id="10180">
-                                                                <div class="left-content has-bg">
-                                                                    <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
-                                                                        <div class="question-layout row d-flex align-items-start">
-                                                                            <div class="rureraform-col rureraform-col-12">
-                                                                                <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
-                                                                                    <div class="question-top-info">
-                                                                                        <div class="question-count">
-                                                                                            <span class="question-count-lable">Question 5 of 20</span>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="rureraform-col rureraform-col-12">
-                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                                    <h4>Read the text, then answer the question.</h4>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="rureraform-col rureraform-col-12">
-                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz"> Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm.
-                                                                                    <div class="rureraform-element-cover"></div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="rureraform-col rureraform-col-12">
-                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                                    <div class="question-label question_label">
-                                                                                        <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="rureraform-col rureraform-col-12">
-                                                                                <div id="rureraform-element-24192" class="quiz-group rureraform-element-24192 rureraform-element ui-sortable-handle" data-type="checkbox">
-                                                                                    <div class="rureraform-column-label">
-                                                                                        <label class="rureraform-label">Mark two answers</label>
-                                                                                    </div>
-                                                                                    <div class="rureraform-column-input">
-                                                                                        <div class="rureraform-input">
-                                                                                            <div class="form-box  rurera-in-row alphabet-list-style">
-                                                                                                <div class="form-field rureraform-cr-container-medium ">
-                                                                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-00-2424" value="3 hours 45 minutes">
-                                                                                                    <label for="field-24192-00-2424"> 3 hours 45 minutes </label>
-                                                                                                </div>
-                                                                                                <div class="form-field rureraform-cr-container-medium">
-                                                                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-11-2424" value="4 hours 10 minutes">
-                                                                                                    <label for="field-24192-11-2424"> 4 hours 10 minutes </label>
-                                                                                                </div>
-                                                                                                <div class="form-field rureraform-cr-container-medium">
-                                                                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-22-2424" value="3 hours 30 minutes">
-                                                                                                    <label for="field-24192-22-2424"> 3 hours 30 minutes </label>
-                                                                                                </div>
-                                                                                                <div class="form-field rureraform-cr-container-medium">
-                                                                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-33-2424" value="4 hours 35 minutes">
-                                                                                                    <label for="field-24192-33-2424"> 4 hours 35 minutes </label>
-                                                                                                </div>
-                                                                                                <div class="form-field rureraform-cr-container-medium">
-                                                                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-44-2424" value="4 hours">
-                                                                                                    <label for="field-24192-44-2424"> 4 hours </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                        <div class="canvas-editable-options-holder">
-                                                            <div class="canvas-editable-options lms-quiz-create">
-                                                                <div class="lms-element-properties">
-                                                                    <div class="row">
-                                                                        <div class="topic-parts-block rurera-hide" style="display:contents;"></div>
-                                                                    </div>
-                                                                    <div class="rureraform-admin-popup active" id="rureraform-element-properties" style="display: block;" data-element_id="rureraform-element-3">
-                                                                        <div class="rureraform-admin-popup-inner">
-                                                                            <div class="rureraform-admin-popup-title">
-                                                                                <a href="#" title="Close">
-                                                                                    <i class="fas fa-times"></i>
-                                                                                </a>
-                                                                                <h3>
-                                                                                    <i class="fas fa-cog element-properties-label"></i> Multiple Choice 1
-                                                                                </h3>
-                                                                            </div>
-                                                                            <div class="rureraform-admin-popup-content">
-                                                                                <div class="rureraform-admin-popup-content-form">
-                                                                                    <div id="rureraform-tab-basic" class="rureraform-tab-content" style="display: block;">
-                                                                                        <input type="hidden" name="rureraform-field_id" id="rureraform-field_id" value="48453" placeholder="">
-                                                                                        <div class="rureraform-properties-item " data-id="label">
-                                                                                            <div class="rureraform-properties-label">
-                                                                                                <label>Label</label>
-                                                                                            </div>
-                                                                                            <div class="rureraform-properties-content">
-                                                                                                <input type="text" name="rureraform-label" id="rureraform-label" value="Mark One answer" placeholder="">
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="rureraform-properties-item d-flex align-items-center justify-content-between" data-id="have_images">
-                                                                                            <div class="rureraform-properties-label pb-0">
-                                                                                                <label>Answer with image</label>
-                                                                                            </div>
-                                                                                            <div class="form-group custom-switches-stacked mb-0">
-                                                                                                <label class="custom-switch pl-0 mb-0">
-                                                                                                    <input type="checkbox" name="answer-with-image" id="answer-with-image" value="1" class="custom-switch-input">
-                                                                                                    <span class="custom-switch-indicator"></span>
-                                                                                                </label>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="rureraform-properties-item">
-                                                                                            <div class="properties-select-boxes">
-                                                                                                <div class="img-select-box">
-                                                                                                    <input type="radio" name="img-box" id="box1">
-                                                                                                    <label for="box1">
-                                                                                                        <img src="/store/1/tool-images/d5.png" alt="d5">
-                                                                                                        <span>List</span>
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                                <div class="img-select-box">
-                                                                                                    <input type="radio" name="img-box" id="box2">
-                                                                                                    <label for="box2">
-                                                                                                        <img src="/store/1/tool-images/d14.png" alt="d14">
-                                                                                                        <span>Essay</span>
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="rureraform-properties-item rurera-image-depend rurera-hide" data-id="image_position">
-                                                                                            <div class="rureraform-properties-label">
-                                                                                                <label>Image Position</label>
-                                                                                            </div>
-                                                                                            <div class="rureraform-properties-tooltip"></div>
-                                                                                            <div class="rureraform-properties-content">
-                                                                                                <div class="rureraform-third">
-                                                                                                    <select name="rureraform-image_position" id="rureraform-image_position" class="">
-                                                                                                        <option selected="selected" value="top">Top</option>
-                                                                                                        <option value="left">Left</option>
-                                                                                                        <option value="right">Right</option>
-                                                                                                    </select>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="rureraform-properties-item" data-id="options">
-                                                                                            <div class="rureraform-properties-label">
-                                                                                                <label>Options</label>
-                                                                                            </div>
-                                                                                            <div class="rureraform-properties-content rureraform-properties-image-options-table">
-                                                                                                <div class="rureraform-properties-options-table-header">
-                                                                                                    <div class="rurera-image-depend rurera-hide">Image</div>
-                                                                                                    <div class="rurera-hide">Value</div>
-                                                                                                    <div></div>
-                                                                                                </div>
-                                                                                                <div class="rureraform-properties-options-box ui-resizable">
-                                                                                                    <div class="rureraform-properties-options-container ui-sortable" data-multi="on">
-                                                                                                        <div class="rureraform-properties-options-item rureraform-properties-options-item-default">
-                                                                                                            <div class="rureraform-properties-options-table">
-                                                                                                                <div>
-                                                                                                                    <input class="rureraform-properties-options-label" type="text" value="Cells" placeholder="Label">
-                                                                                                                </div>
-                                                                                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
-                                                                                                                    <div class="input-group-prepend">
-                                                                                                                        <button type="button" class="input-group-text admin-file-manager" data-input="image-options-0" data-preview="holder">
-                                                                                                                            <i class="fa fa-upload"></i>
-                                                                                                                        </button>
-                                                                                                                    </div>
-                                                                                                                    <input class="rureraform-properties-options-image" type="text" id="image-options-0" value="" placeholder="Upload Image">
-                                                                                                                    <span>
-                                                                                            <i class="far fa-image"></i>
-                                                                                        </span>
-                                                                                                                </div>
-                                                                                                                <div class="rurera-hide">
-                                                                                                                    <input class="rureraform-properties-options-value" type="text" value="Cells" placeholder="Value">
-                                                                                                                </div>
-                                                                                                                <div>
-                                                                                        <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
-                                                                                            <i class="fas fa-check"></i>
-                                                                                        </span>
-                                                                                                                    <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
-                                                                                            <i class="far fa-copy"></i>
-                                                                                        </span>
-                                                                                                                    <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
-                                                                                            <i class="fas fa-trash-alt"></i>
-                                                                                        </span>
-                                                                                                                    <span title="Move the option">
-                                                                                            <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
-                                                                                        </span>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="rureraform-properties-options-item">
-                                                                                                            <div class="rureraform-properties-options-table">
-                                                                                                                <div>
-                                                                                                                    <input class="rureraform-properties-options-label" type="text" value="Chloroplasts" placeholder="Label">
-                                                                                                                </div>
-                                                                                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
-                                                                                                                    <div class="input-group-prepend">
-                                                                                                                        <button type="button" class="input-group-text admin-file-manager" data-input="image-options-1" data-preview="holder">
-                                                                                                                            <i class="fa fa-upload"></i>
-                                                                                                                        </button>
-                                                                                                                    </div>
-                                                                                                                    <input class="rureraform-properties-options-image" type="text" id="image-options-1" value="" placeholder="Upload Image">
-                                                                                                                    <span>
-                                                                                            <i class="far fa-image"></i>
-                                                                                        </span>
-                                                                                                                </div>
-                                                                                                                <div class="rurera-hide">
-                                                                                                                    <input class="rureraform-properties-options-value" type="text" value="Chloroplasts" placeholder="Value">
-                                                                                                                </div>
-                                                                                                                <div>
-                                                                                        <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
-                                                                                            <i class="fas fa-check"></i>
-                                                                                        </span>
-                                                                                                                    <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
-                                                                                            <i class="far fa-copy"></i>
-                                                                                        </span>
-                                                                                                                    <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
-                                                                                            <i class="fas fa-trash-alt"></i>
-                                                                                        </span>
-                                                                                                                    <span title="Move the option">
-                                                                                            <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
-                                                                                        </span>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="rureraform-properties-options-item">
-                                                                                                            <div class="rureraform-properties-options-table">
-                                                                                                                <div>
-                                                                                                                    <input class="rureraform-properties-options-label" type="text" value="Tissues" placeholder="Label">
-                                                                                                                </div>
-                                                                                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
-                                                                                                                    <div class="input-group-prepend">
-                                                                                                                        <button type="button" class="input-group-text admin-file-manager" data-input="image-options-2" data-preview="holder">
-                                                                                                                            <i class="fa fa-upload"></i>
-                                                                                                                        </button>
-                                                                                                                    </div>
-                                                                                                                    <input class="rureraform-properties-options-image" type="text" id="image-options-2" value="" placeholder="Upload Image">
-                                                                                                                    <span>
-                                                                                            <i class="far fa-image"></i>
-                                                                                        </span>
-                                                                                                                </div>
-                                                                                                                <div class="rurera-hide">
-                                                                                                                    <input class="rureraform-properties-options-value" type="text" value="Tissues" placeholder="Value">
-                                                                                                                </div>
-                                                                                                                <div>
-                                                                                        <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
-                                                                                            <i class="fas fa-check"></i>
-                                                                                        </span>
-                                                                                                                    <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
-                                                                                            <i class="far fa-copy"></i>
-                                                                                        </span>
-                                                                                                                    <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
-                                                                                            <i class="fas fa-trash-alt"></i>
-                                                                                        </span>
-                                                                                                                    <span title="Move the option">
-                                                                                            <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
-                                                                                        </span>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="rureraform-properties-options-item">
-                                                                                                            <div class="rureraform-properties-options-table">
-                                                                                                                <div>
-                                                                                                                    <input class="rureraform-properties-options-label" type="text" value="Nuclei" placeholder="Label">
-                                                                                                                </div>
-                                                                                                                <div class="rureraform-image-url rurera-image-depend rurera-hide">
-                                                                                                                    <div class="input-group-prepend">
-                                                                                                                        <button type="button" class="input-group-text admin-file-manager" data-input="image-options-3" data-preview="holder">
-                                                                                                                            <i class="fa fa-upload"></i>
-                                                                                                                        </button>
-                                                                                                                    </div>
-                                                                                                                    <input class="rureraform-properties-options-image" type="text" id="image-options-3" value="" placeholder="Upload Image">
-                                                                                                                    <span>
-                                                                                            <i class="far fa-image"></i>
-                                                                                        </span>
-                                                                                                                </div>
-                                                                                                                <div class="rurera-hide">
-                                                                                                                    <input class="rureraform-properties-options-value" type="text" value="Nuclei" placeholder="Value">
-                                                                                                                </div>
-                                                                                                                <div>
-                                                                                        <span onclick="return rureraform_properties_options_default(this);" title="Set the option as correct value">
-                                                                                            <i class="fas fa-check"></i>
-                                                                                        </span>
-                                                                                                                    <span onclick="return rureraform_properties_options_copy(this);" title="Duplicate the option">
-                                                                                            <i class="far fa-copy"></i>
-                                                                                        </span>
-                                                                                                                    <span onclick="return rureraform_properties_options_delete(this);" title="Delete the option">
-                                                                                            <i class="fas fa-trash-alt"></i>
-                                                                                        </span>
-                                                                                                                    <span title="Move the option">
-                                                                                            <i class="fas fa-arrows-alt rureraform-properties-options-item-handler ui-sortable-handle"></i>
-                                                                                        </span>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                    <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
-                                                                                                </div>
-                                                                                                <div class="rureraform-properties-options-table-footer">
-                                                                                                    <a class="rureraform-admin-button rureraform-admin-button-gray rureraform-admin-button-small" data-toggle="collapse" href="#explanation" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                                                                                        <i class="fas fa-plus"></i>
-                                                                                                        <label>Add Explanation..</label>
-                                                                                                    </a>
-                                                                                                    <div class="explanation-box collapse mt-15" id="explanation">
-                                                                                                        <textarea name="explanation" class="form-control"></textarea>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-
-                                                                                        <div class="rureraform-properties-item " data-id="template_style">
-                                                                                            <div class="rureraform-properties-tooltip"></div>
-                                                                                            <div class="rureraform-properties-content">
-                                                                                                <div class="rureraform-third">
-                                                                                                    <select name="rureraform-template_style" id="rureraform-template_style" class="">
-                                                                                                        <option selected="selected" value="rurera-in-row">Row</option>
-                                                                                                        <option value="rurera-in-cols">Columns</option>
-                                                                                                    </select>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="rureraform-properties-item " data-id="list_style">
-                                                                                            <div class="rureraform-properties-label">
-                                                                                                <label>Bullet list Style</label>
-                                                                                            </div>
-                                                                                            <div class="rureraform-properties-tooltip"></div>
-                                                                                            <div class="rureraform-properties-content">
-                                                                                                <div class="bullet-controls">
-                                                                                                    <button type="button">Enabled</button>
-                                                                                                    <button type="button">Enabled</button>
-                                                                                                    <button type="button" class="active">Selected</button>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-
-                                                                                        <input type="hidden" name="rureraform-elements_data" id="rureraform-elements_data" value="W3t9XQ==" placeholder="">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="rureraform-admin-popup-buttons">
-                                                                                <a class="rureraform-admin-button duplicate-element btn btn-primary" href="#">
-                                                                                    <label>Update</label>
-                                                                                </a>
-                                                                                <a class="rureraform-admin-button generate-question-code rurera-hide" href="#">
-                                                                                    <label>Apply Changes</label>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="rureraform-admin-popup-loading" style="display: none;">
-                                                                                <i class="fas fa-spinner fa-spin"></i>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="mb-0 bg-white panel-border rounded-sm p-25 mb-25">
-                                                <div class="question-layout-block">
-                                                    <form class="question-fields" action="javascript:;" data-question_id="10180">
-                                                        <div class="left-content has-bg">
-                                        <span class="question-number-holder" style="z-index: 999999999;">
-                                            <span class="question-number">1</span>
-                                        </span>
-                                                            <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
-                                                                <div class="question-layout row d-flex align-items-start">
-                                                                    <div class="rureraform-col rureraform-col-12">
-                                                                        <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
-                                                                            <div class="question-top-info">
-                                                                                <div class="question-count">
-                                                                                    <span class="question-count-lable">Question 2 of 20</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-12">
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                            <h4>Mark the following true and false:</h4>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-8">
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                            <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
-                                                                        </div>
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
-                                                                            <i>Hint:&nbsp;&nbsp;Think about what happens inside cells during respiration and what is released.</i>
-                                                                            <div class="rureraform-element-cover"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-4">
-                                                                        <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
-                                                                            <div class="rureraform-column-input">
-                                                                                <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
-                                                                                    <div class="form-box ">
-                                                                                        <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                                                            <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                                                                <input class="editor-field" type="radio" name="field-40008" id="field-40008-0" value="True">
-                                                                                                <label for="field-40008-0">
-                                                                                                    <span class="label-box"></span>
-                                                                                                    <span class="inner-label">True</span>
-                                                                                                </label>
-                                                                                            </div>
-                                                                                            <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                                                                <input class="editor-field" type="radio" name="field-40008" id="field-40008-1" value="False">
-                                                                                                <label for="field-40008-1">
-                                                                                                    <span class="label-box"></span>
-                                                                                                    <span class="inner-label">False</span>
-                                                                                                </label>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <label class="rureraform-description"></label>
-                                                                            </div>
-                                                                            <div class="rureraform-element-cover"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-8">
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                            <h6>When balanced forces act on an object, it remains stationary or continues moving at the same speed.</h6>
-                                                                        </div>
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
-                                                                            <i>Hint:&nbsp;&nbsp;Balanced forces cancel each other out, meaning no change in motion happens.</i>
-                                                                            <div class="rureraform-element-cover"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-4">
-                                                                        <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
-                                                                            <div class="rureraform-column-input">
-                                                                                <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
-                                                                                    <div class="form-box ">
-                                                                                        <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                                                            <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                                                                <input class="editor-field" type="radio" name="field-84793" id="field-84793-0" value="True">
-                                                                                                <label for="field-84793-0">
-                                                                                                    <span class="label-box"></span>
-                                                                                                    <span class="inner-label">True</span>
-                                                                                                </label>
-                                                                                            </div>
-                                                                                            <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                                                                <input class="editor-field" type="radio" name="field-84793" id="field-84793-1" value="False">
-                                                                                                <label for="field-84793-1">
-                                                                                                    <span class="label-box"></span>
-                                                                                                    <span class="inner-label">False</span>
-                                                                                                </label>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <label class="rureraform-description"></label>
-                                                                            </div>
-                                                                            <div class="rureraform-element-cover"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-8">
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                            <h6>When an endothermic reaction occurs, energy is absorbed, making the surroundings cooler.</h6>
-                                                                        </div>
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
-                                                                            <i>Hint:&nbsp;&nbsp;Endothermic reactions pull in heat from the surroundings.</i>
-                                                                            <div class="rureraform-element-cover"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-4">
-                                                                        <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
-                                                                            <div class="rureraform-column-input">
-                                                                                <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
-                                                                                    <div class="form-box ">
-                                                                                        <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                                                            <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                                                                <input class="editor-field" type="radio" name="field-21459" id="field-21459-0" value="True">
-                                                                                                <label for="field-21459-0">
-                                                                                                    <span class="label-box"></span>
-                                                                                                    <span class="inner-label">True</span>
-                                                                                                </label>
-                                                                                            </div>
-                                                                                            <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined">
-                                                                                                <input class="editor-field" type="radio" name="field-21459" id="field-21459-1" value="False">
-                                                                                                <label for="field-21459-1">
-                                                                                                    <span class="label-box"></span>
-                                                                                                    <span class="inner-label">False</span>
-                                                                                                </label>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <label class="rureraform-description"></label>
-                                                                            </div>
-                                                                            <div class="rureraform-element-cover"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="bg-white panel-border rounded-sm p-25">
-                                                <div class="question-layout-block">
-                                                    <form class="question-fields" action="javascript:;" data-question_id="10180">
-                                                        <div class="left-content has-bg">
-                                        <span class="question-number-holder" style="z-index: 999999999;">
-                                            <span class="question-number">1</span>
-                                        </span>
-                                                            <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
-                                                                <div class="question-layout row d-flex align-items-start">
-                                                                    <div class="rureraform-col rureraform-col-12">
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                                            <h4>Read the text and choose the correct answer.</h4>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-12">
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="drop_and_text"> When <select type="inner_dropdown" class="editor-field" id="dropdown-1" data-identifier="49226" name="field-dropdown1_options">
-                                                                                <option value="Select Option">Select Option</option>
-                                                                                <option value="lava">lava</option>
-                                                                                <option value="extrusive">extrusive</option>
-                                                                                <option value="magma">magma</option>
-                                                                            </select> cools below the Earth's surface, it forms <select type="inner_dropdown" class="editor-field" id="dropdown-2" data-identifier="49226" name="field-dropdown2_options">
-                                                                                <option value="Select Option">Select Option</option>
-                                                                                <option value="water">water</option>
-                                                                                <option value="extrusive">extrusive</option>
-                                                                                <option value="sedimentary">sedimentary</option>
-                                                                                <option value="magma">magma</option>
-                                                                            </select> igneous rocks with large crystals. <div class="rureraform-element-cover"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rureraform-col rureraform-col-12">
-                                                                        <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
-                                                                            <p>
-                                                                                <i>Hint: Think about the Moon’s effect on Earth, especially on tides and sunlight.</i>
-                                                                            </p>
-                                                                            <div class="rureraform-element-cover"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+</section>
 @endsection
 
 @push('scripts_bottom')
-    <script>
+<script src="/assets/default/vendors/sortable/jquery-ui.min.js"></script>
+<script src="/assets/default/js/admin/filters.min.js"></script>
+<script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
+<script type="text/javascript">
 
-        $(document).ready(function () {
-            const $scrollableDiv = $(".enhance-questions-modal");
-            $scrollableDiv.niceScroll({
-                cursorcolor: "red",
-                cursorwidth: "8px",
-                autohidemode: true
-            });
+    $(document).ready(function () {
 
-            $(".document-modal").on("shown.bs.modal", function () {
-                $scrollableDiv.getNiceScroll().resize();
-            });
+        if ($('.summernote-editor-mintool').length) {
 
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-            $(".blank-canvas-modal .rureraform-element, .lms-quiz-create .rureraform-admin-popup-title a").click(function(e) {
-                e.stopPropagation();
-                $(".canvas-editable-options-holder").toggleClass("active");
-            });
-
-            $(document).mouseup(function(e) {
-                var container = $(".canvas-editable-options-holder");
-                if (!container.is(e.target) && container.has(e.target).length === 0) {
-                    container.removeClass("active");
+            $('.summernote-editor-mintool').summernote({
+                toolbar: [
+                    ['font', ['bold', 'underline']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                ],
+                callbacks: {
+                    onChange: function (contents, $editable) {
+                        $('.summernote-editor_' + parent_field_id).val(EditorValueEnocde(contents));
+                        trigger_field_change($('.summernote-editor_' + parent_field_id));
+                    }
                 }
             });
-        });
-    </script>
-
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-            const $scrollableDiv = $(".blank-canvas-sidebar, .canvas-editable-options");
-
-            // Initialize NiceScroll with auto-hide enabled
-            $scrollableDiv.niceScroll({
-                cursorcolor: "red",
-                cursorwidth: "8px",
-                autohidemode: true // Auto-hide enabled initially
-            });
-
-
-            // Reinitialize NiceScroll when the modal is shown
-            $(".blank-canvas-modal").on("shown.bs.modal", function () {
-                $scrollableDiv.getNiceScroll().resize();
-            });
-
-        });
-    </script>
-    <script>
-        document.querySelectorAll('.editable').forEach(element => {
-            element.addEventListener('focus', () => {
-                // Save the initial text if needed
-                element.dataset.oldText = element.textContent;
-            });
-
-            element.addEventListener('blur', () => {
-                // Handle the change if needed
-                if (element.textContent !== element.dataset.oldText) {
-                    console.log("Text changed to:", element.textContent);
-                }
-            });
-        });
-    </script>
-
-    <script src="/assets/default/js/jquery-ui.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip({
-                container: '.admin_teacher_role'
-            });
-
-            $('.show-btn').on('click',function () {
-                $('.show-btn').toggleClass('show');
-            });
-        });
-    </script>
-
-    <!-- JavaScript for Drag and Drop -->
-    <!-- Enable Sortable Functionality -->
-    <script>
-        $(document).ready(function () {
-            // Make the sidebar list sortable
-            $("#sortable").sortable();
-            $("#sortable").disableSelection();
-        });
-    </script>
-    <script>
-        const gridContainer = document.getElementById("gridContainer");
-        let draggedItem = null;
-
-        // Event listeners for drag and drop
-        document.querySelectorAll(".grid-item").forEach(item => {
-            item.addEventListener("dragstart", (e) => {
-                draggedItem = item;
-                setTimeout(() => item.classList.add("dragging"), 0);
-            });
-
-            item.addEventListener("dragend", () => {
-                draggedItem.classList.remove("dragging");
-                draggedItem = null;
-            });
-        });
-
-        gridContainer.addEventListener("dragover", (e) => {
-            e.preventDefault();
-            const afterElement = getDragAfterElement(gridContainer, e.clientY);
-            if (afterElement == null) {
-                gridContainer.appendChild(draggedItem);
-            } else {
-                gridContainer.insertBefore(draggedItem, afterElement);
-            }
-        });
-
-        // Helper function to determine position
-        function getDragAfterElement(container, y) {
-            const draggableElements = [...container.querySelectorAll(".grid-item:not(.dragging)")];
-
-            return draggableElements.reduce((closest, child) => {
-                const box = child.getBoundingClientRect();
-                const offset = y - box.top - box.height / 2;
-                if (offset < 0 && offset > closest.offset) {
-                    return { offset: offset, element: child };
-                } else {
-                    return closest;
-                }
-            }, { offset: Number.NEGATIVE_INFINITY }).element;
         }
-    </script>
-    <!-- <script>
-        // Open modal and activate tab based on URL fragment
-        $(document).ready(function() {
-            // Check if the URL contains a fragment
-            var hash = window.location.hash;
-            if (hash) {
-                // Open the modal
-                $('#templatesleModal').modal('show');
 
-                // Activate the corresponding tab
-                $('a[href="' + hash + '"]').tab('show');
+
+        $('body').on('change', '.select_all', function (e) {
+            if ($(this).is(':checked')) {
+                $(this).closest('.users_list_block').find('.users-list').find('input').prop('checked', true);
+                console.log('checked');
+            } else {
+                $(this).closest('.users_list_block').find('.users-list').find('input').prop('checked', false);
+                console.log('unchecked');
             }
+            ;
+        });
 
-            // Listen for tab change to update URL fragment
-            $('#templatesleModal').on('shown.bs.modal', function () {
-                var activeTab = $('#myTab .nav-link.active').attr('href');
-                window.location.hash = activeTab;
-            });
-            // When the modal is closed, remove the hash from the URL
-            $('#templatesleModal').on('hidden.bs.modal', function () {
-                history.pushState("", document.title, window.location.pathname + window.location.search);
+        $('body').on('click', '.year-group-select', function (e) {
+            var thisObj = $('.populated-content-area');
+            var year_id = $(this).attr('data-year_id');
+            $(".year_id_field").val(year_id);
+            rurera_loader(thisObj, 'div');
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/custom_quiz/subjects_by_year',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"year_id": year_id},
+                success: function (return_data) {
+                    $(".populated-data").addClass('rurera-hide');
+                    rurera_remove_loader(thisObj, 'button');
+                    if (return_data != '') {
+                        $(".populated-content-area").append(return_data);
+                        subjects_callback();
+                    }
+                }
             });
         });
-    </script> -->
-    <script>
-        /*Skelton Loading Fungtion Start*/
-        $(document).ready(function () {
-            const $el = document.querySelector(".section-body");
 
-            setTimeout(() => {
-                $el.classList.remove("skeleton");
-                $el
-                    .querySelectorAll(".skelton-hide")
-                    .forEach((el) => el.classList.remove("skelton-hide"));
-            }, 3000);
-        });
-        /*Skelton Loading Fungtion End*/
-    </script>
+        var subjects_callback_bk = function () {
+            $('body').on('click', '.subject-group-selects', function (e) {
+                var thisObj = $('.populated-content-area');
+                var subject_id = $(this).attr('data-subject_id');
+                $(".subject_id_field").val(subject_id);
+                rurera_loader(thisObj, 'div');
+                jQuery.ajax({
+                    type: "GET",
+                    url: '/admin/custom_quiz/topics_subtopics_by_subject',
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: {"subject_id": subject_id},
+                    success: function (return_data) {
+                        $(".populated-data").addClass('rurera-hide');
+                        rurera_remove_loader(thisObj, 'button');
+                        if (return_data != '') {
+                            //$(".populated-content-area").append(return_data);
+                            $(".topics-subtopics-content-area").append(return_data);
+                            questions_callback();
+                        }
+                    }
+                });
+            });
+        }
+
+        var subjects_callback = function () {
+            $('body').on('change', '.subject_ajax_select', function (e) {
+                var thisObj = $('.populated-content-area');
+                var subject_id = $(this).val();
+                $(".subject_id_field").val(subject_id);
+                rurera_loader(thisObj, 'div');
+                jQuery.ajax({
+                    type: "GET",
+                    url: '/admin/custom_quiz/topics_subtopics_by_subject',
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: {"subject_id": subject_id},
+                    success: function (return_data) {
+                        //$(".populated-data").addClass('rurera-hide');
+                        rurera_remove_loader(thisObj, 'button');
+                        if (return_data != '') {
+                            //$(".populated-content-area").append(return_data);
+                            $(".topics-subtopics-content-area").append(return_data);
+                            $("#questions-tab").click();
+                            questions_callback();
+                        }
+                    }
+                });
+            });
+        }
+        subjects_callback();
 
 
-
-    <script>
         var questions_callback = function () {
             $('body').on('click', '.subchapter-group-select li', function (e) {
                 var thisObj = $('.populated-content-area');
@@ -2555,320 +1066,309 @@
                         rurera_remove_loader(thisObj, 'button');
                         //$(".questions-populate-area").html(return_data);
                         $(".selected-questions-group").append(return_data);
-                        //questions_select_callback();
+                        questions_select_callback();
 
                     }
                 });
             });
         }
 
-        questions_callback();
+        var questions_select_callback = function () {
+            $('body').on('click', '.questions-group-select li', function (e) {
+                var thisObj = $('.populated-content-area');
+                var question_id = $(this).attr('data-question_id');
+                var question_title = $(this).find('a').html();
+                $('.questions-list li[data-question_id="' + question_id + '"]').remove();
+                $(".questions-list").append('<li data-question_id="' + question_id + '"><input type="hidden" name="ajax[new][question_list_ids][]" value="' + question_id + '">' + question_title + '<a href="javascript:;" class="parent-li-remove"><span class="fas fa-trash"></span></a></li>');
+            });
 
 
-        $('body').on('click', '.questions-group-select li .add-to-list-btn', function (e) {
-            var question_id = $(this).closest('li').attr('data-question_id');
-            var thisObj = $(this);
-            jQuery.ajax({
-                type: "GET",
-                url: '/admin/custom_quiz/question_layout_by_id',
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                data: {"question_id": question_id},
-                success: function (return_data) {
-                    if($(".listing-dropdown.active").length > 0){
-                        $(".listing-dropdown.active").after(return_data);
-                    }else {
-                        $(".questions-holder-area").append(return_data);
+        }
+
+        var currentRequest = null;
+        var question_search = function () {
+            $('body').on('keyup', '.search-questions', function (e) {
+                var input, filter, ul, li, a, i, txtValue;
+                var search_question_bank = $('.search_question_bank').is(":checked");
+                if (search_question_bank == false) {
+                    input = document.getElementById("search-questions");
+                    filter = input.value.toUpperCase();
+                    ul = document.getElementById("questions-group-select");
+                    li = ul.getElementsByTagName("li");
+                    for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("a")[0];
+                        txtValue = a.textContent || a.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1 || li[i].className.indexOf("alwaysshow") > -1) {
+                            li[i].style.display = "";
+                        } else {
+                            li[i].style.display = "none";
+                        }
                     }
-                    thisObj.addClass('active');
-                    thisObj.html('Added');
+                } else {
+                    var input = $(this).val();
+                    var thisObj = $('.questions-populate-area');
+                    var year_id = $(".year_id_field").val();
+                    var subject_id = $(".subject_id_field").val();
+                    rurera_loader(thisObj, 'div');
 
-
+                    currentRequest = jQuery.ajax({
+                        type: "GET",
+                        url: '/admin/custom_quiz/questions_by_keyword',
+                        beforeSend: function () {
+                            if (currentRequest != null) {
+                                currentRequest.abort();
+                            }
+                        },
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        },
+                        data: {"keyword": input, "year_id": year_id, "subject_id": subject_id},
+                        success: function (return_data) {
+                            rurera_remove_loader(thisObj, 'button');
+                            $(".questions-group-select").html(return_data);
+                        }
+                    });
                 }
             });
-        });
-
-        $('body').on('click', '.listing-dropdown', function (e) {
-            $(".listing-dropdown").removeClass('active');
-            $(this).addClass('active');
-        });
-
-        $('body').on('click', '.delete-btn', function (e) {
-            var question_id = $(this).attr('data-id');
-            $(this).closest('.question-layout-block-holder').remove();
-
-        });
-
-        $('body').on('click', '.add-similar-question', function (e) {
-            var question_id = $(this).attr('data-id');
-            var questions_count = $(this).attr('data-questions_count');
-            $(".questions-modal-canvas").modal('show');
-
-            var thisObj = $(this);
-            jQuery.ajax({
-                type: "GET",
-                url: '/admin/custom_quiz/add_similar_question',
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                data: {"question_id": question_id, "questions_count":questions_count},
-                success: function (return_data) {
-                    $(".questions-modal-canvas-block").html(return_data);
-
-                }
-            });
-
-        });
-
-        $('body').on('click', '.fix-question-grammer', function (e) {
-            var question_id = $(this).attr('data-id');
-            $(".grammer-modal-canvas").modal('show');
-
-            var thisObj = $(this);
-            jQuery.ajax({
-                type: "GET",
-                url: '/admin/custom_quiz/fix_question_grammer',
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                data: {"question_id": question_id},
-                success: function (return_data) {
-                    $(".grammer-modal-canvas-block").html(return_data);
-
-                }
-            });
-
-        });
-
-
-
-
-
-
-
-
-
-
-    </script>
-
-
-
-
-
-
-
-
-
-    <script src="/assets/default/vendors/feather-icons/dist/feather.min.js"></script>
-    <script src="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
-    <script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
-    <script src="/assets/vendors/summernote/summernote-table-headers.js"></script>
-    <script src="/assets/default/vendors/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
-    <script src="/assets/default/js/admin/jquery.ui.touch-punch.min.js"></script>
-
-
-
-    <script>
-        // Function to generate a random alphanumeric ID (6 characters: mix of letters and numbers)
-        function generateUniqueID() {
-            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-            let result = '';
-            for (let i = 0; i < 6; i++) {
-                result += chars.charAt(Math.floor(Math.random() * chars.length));
-            }
-            return result;
         }
 
-        // Function to add a new row to the table
-        function addNewRow(part = '') {
-            const uniqueID = generateUniqueID();
-            const tableBody = document.getElementById('sortableTableBody');
-            const row = document.createElement('tr');
-
-            row.innerHTML = `
-            <td>${uniqueID}</td>
-            <td><textarea name="topic_part[${uniqueID}]">${part}</textarea></td>
-            <td><button class="remove-btn" onclick="removeRow(this)">Remove</button></td>
-        `;
-            tableBody.appendChild(row);
-        }
-
-        // Function to remove a row
-        function removeRow(button) {
-            const row = button.parentElement.parentElement;
-            row.remove();
-        }
-
-        // Event listener to split the input text into parts
-        document.getElementById('splitTextBtn').addEventListener('click', function() {
-            const inputText = document.getElementById('inputText').value;
-
-            // Split the text into sentences using basic sentence boundary detection
-            const parts = inputText.split(/(?<=[.?!])\s+/);
-
-            const outputTableBody = document.getElementById('sortableTableBody');
-            outputTableBody.innerHTML = '';  // Clear previous output
-
-            // Loop through each part and add it as a new row
-            parts.forEach(part => {
-                addNewRow(part);
-            });
-        });
-
-        // Event listener to add more parts dynamically
-        document.getElementById('addMoreBtn').addEventListener('click', function() {
-            addNewRow(); // Add an empty new row
-        });
-
-        // Initialize sortable functionality on the table body
-        new Sortable(document.getElementById('sortableTableBody'), {
-            animation: 150,
-            handle: 'td', // Make the table row (td) the handle for sorting
-            ghostClass: 'sortable-ghost'
-        });
-    </script>
+        question_search();
 
 
-    <script type="text/javascript">
-        let isProcessing = false;
-        $(document).off('click', 'body').on('click', 'body', function (event) {
-            // Check if the click is not inside .rureraform-properties-content
-            if (!$(event.target).closest('.rureraform-properties-content').length && !$(event.target).closest('.rureraform-admin-editor').length) {
-                if (!isProcessing) {
-                    isProcessing = true; // Set the flag to true
-                    // Check if .rureraform-admin-popup:visible contains .generate-question-code
-                    if ($('.rureraform-admin-popup:visible').find('.generate-question-code').length > 0) {
-                        $('.rureraform-admin-popup:visible').find('.generate-question-code').click();
-                    }
-                    // Reset the flag after a timeout or after the operation completes
-                    setTimeout(function() {
-                        isProcessing = false; // Reset the flag after a delay
-                    }, 100); // Adjust the timeout duration as needed
-                }
+        $(".questions-list").sortable();
+
+
+        $('body').on('click', '.rurera-back-btn', function (e) {
+            $(this).closest('.populated-data').prev('.populated-data').removeClass('rurera-hide');
+            $(this).closest('.populated-data').addClass('rurera-hide');
+            $(this).closest('.populated-data').remove();
+            if ($(this).hasClass('questions-list-btn')) {
+                console.log('questions-btn');
             }
         });
 
-
-        $("body").on("change", ".part_item_selection", function (t) {
-            var part_item_id = $(this).val();
-            var bulk_list_id = $(this).attr('data-bulk_list_id');
-            var default_question_id = $(this).attr('data-default_question_id');
-            var loaderDiv = $('.edit-questions-difficulty-tabs');
-            rurera_loader(loaderDiv, 'button');
-            $.ajax({
-                type: "POST",
-                url: '/admin/questions-generator/generate_question_builder_difficulty_layout',
-                data: {'part_item_id': part_item_id, 'bulk_list_id': bulk_list_id, 'default_question_id': default_question_id},
-                success: function (return_data) {
-                    rurera_remove_loader(loaderDiv, 'button');
-                    $(".edit-questions-difficulty-data").html(return_data);
-                    $(".difficulty-level-btn.active").click();
-                    //$(".question-builder-layout.active").click();
-                }
-            });
+        $('body').on('change', '.conditional_check', function (e) {
+            var current_value = $(this).val();
+            $(".conditional_fields").addClass('rurera-hide');
+            $('.' + current_value + '_field').removeClass('rurera-hide');
         });
-        $(".part_item_selection").change();
-        function decodeHtml(html) {
-            var txt = document.createElement("textarea");
-            txt.innerHTML = html;
-            return txt.value;
-        }
 
-        $("body").on("click", ".difficulty-level-btn", function (t) {
-            var thisObj = $(this);
-            var difficulty_level = $(this).attr('data-difficulty_level');
-            var bulk_list_id = $(this).attr('data-bulk_list_id');
-            var part_item_id = $(this).attr('data-part_item_id');
-            var default_question_id = $('.part_item_selection').attr('data-default_question_id');
-            var loaderDiv = $('.tab-content');
-            rurera_loader(loaderDiv, 'button');
-            $.ajax({
+        $('body').on('change', '.class_condition', function (e) {
+            var current_value = $(this).val();
+            $(".conditional_sections").addClass('rurera-hide');
+            $('.class_sections_' + current_value).removeClass('rurera-hide');
+        });
+
+        $('body').on('change', '.duration_conditional_check', function (e) {
+            var current_value = $(this).val();
+            $(".duration_type_fields").addClass('rurera-hide');
+            $('.' + current_value + '_fields').removeClass('rurera-hide');
+        });
+
+        $('body').on('change', '.assignment_topic_type_check', function (e) {
+            var current_value = $(this).val();
+            $(".assignment_topic_type_fields").addClass('rurera-hide');
+            $('.' + current_value + '_fields').removeClass('rurera-hide');
+            var total_questions = 0;
+            var current_questions = 0;
+            if (current_value == 'timestables') {
+                total_questions = 200;
+            }
+            if( current_value == '11plus' || current_value == 'independent_exams' || current_value == 'iseb' || current_value == 'cat4'){
+                total_questions = 50;
+                current_questions = 50;
+            }
+
+            $(".max_questions").html('Max: ' + total_questions);
+            $(".no_of_questions").attr('max', total_questions);
+            $(".no_of_questions").val(current_questions);
+            slider_fields_refresh();
+        });
+
+        $('body').on('change', '.assignment_method_check', function (e) {
+            var current_value = $(this).val();
+            $(".assignment_method_check_fields").addClass('rurera-hide');
+            $('.assignment_method_check_fields.' + current_value + '_fields').removeClass('rurera-hide');
+        });
+
+
+        $('body').on('change', '.year_quiz_ajax_select', function (e) {
+            var year_id = $(this).val();
+            var quiz_type = $(".assignment_topic_type_check:checked").val();
+            var thisObj = $(this);//$(".quiz-ajax-fields");
+            $(".yeargroup-ajax-fields").html('');
+            rurera_loader(thisObj, 'button');
+            jQuery.ajax({
                 type: "GET",
+                url: '/admin/common/types_quiz_by_year',
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
-                url: '/admin/questions-generator/get_questions_list_layout',
-                data: {'difficulty_level': difficulty_level, 'default_question_id': default_question_id, 'bulk_list_id': bulk_list_id, 'part_item_id': part_item_id},
+                data: {"quiz_type": quiz_type, "year_id": year_id},
                 success: function (return_data) {
-                    $(".edit-questions-tabs").html(return_data);
-                    $(".question-builder-layout.active").click();
+                    if (quiz_type == 'practice') {
+                        $(".practice-quiz-ajax-fields").html(return_data);
+                    } else {
+                        $(".quiz-ajax-fields").html(return_data);
+                    }
+                    rurera_remove_loader(thisObj, 'button');
                 }
             });
         });
 
-        $("body").on("click", ".question-builder-layout", function (t) {
+        $('body').on('change', '.year_group_quiz_ajax_select', function (e) {
+            var year_group = $(this).val();
+            var quiz_type = $(".assignment_topic_type_check:checked").val();
+            var thisObj = $(this);//$(".yeargroup-ajax-fields");
+            $(".practice-quiz-ajax-fields").html('');
+            $(".quiz-ajax-fields").html('');
+            rurera_loader(thisObj, 'button');
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/common/types_quiz_by_year_group',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"quiz_type": quiz_type, "year_group": year_group},
+                success: function (return_data) {
+                    $(".yeargroup-ajax-fields").html(return_data);
+                    rurera_remove_loader(thisObj, 'button');
+                }
+            });
+        });
+
+        $('body').on('change', '.assignment_subject_check', function (e) {
+            var subject_id = $(this).val();
             var thisObj = $(this);
-            var question_id = $(this).attr('data-question_id');
-            var question_index = $(this).attr('data-question_index');
-            var is_deleted = $(this).attr('data-is_deleted');
-            var similiarity_responses1 = $('.questions-nav-bar').attr('data-similiarity_responses');
-            var similiarity_responses = $('.questions-nav-bar').attr('data-similiarity_responses');
-            $('.question-builder-area').html('');
-            var loaderDiv = $('.tab-content');
-            if(is_deleted == 'yes'){
-                var return_data = '<div class="col-12 col-md-12 api-question-status"><div class="alert alert-danger" role="alert"><strong>Question Deleted</strong><p>Question was initially imported but has since been removed from the question bank.</p></div></div>';
-                $('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
-            }else{
-                rurera_loader(loaderDiv, 'button');
-                $.ajax({
-                    type: "POST",
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    },
-                    url: '/admin/questions-generator/generate_question_builder_layout',
-                    data: {'question_id': question_id, 'similiarity_responses': similiarity_responses, 'question_index': question_index},
-                    success: function (return_data) {
-                        rurera_remove_loader(loaderDiv, 'button');
-                        $('.question-builder-area').html('');
-                        $('.question-builder-area[data-question_id="'+question_id+'"]').html(return_data);
-                    }
+            rurera_loader($(".practice-quiz-topics-list"), 'div');
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/common/topics_subtopics_by_subject',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"subject_id": subject_id},
+                success: function (return_data) {
+                    rurera_remove_loader($(".practice-quiz-topics-list"), 'button');
+                    $(".practice-quiz-topics-list").html(return_data);
+                }
+            });
+        });
+
+        var slider_fields_refresh = function () {
+            $('.range-slider-field').each(function () {
+                var thisObj = $(this);
+                //var sliderStructure = $('<div class="range-slider"><div id="slider_thumb" class="range-slider_thumb" style="left: 425.5px;">0</div><div class="range-slider_line"><div id="slider_line" class="range-slider_line-fill" style="width: 46%;"></div></div>'+thisObj.clone().wrap('<div>').parent().html() +'</div>');
+                //thisObj.replaceWith(sliderStructure);
+                var sliderInput = thisObj;
+                var sliderThumb = thisObj.closest('.range-slider').find('.range-slider_thumb');
+                var sliderLine = thisObj.closest('.range-slider').find('.range-slider_line-fill');
+                showSliderValue(sliderInput, sliderThumb, sliderLine);
+                $(window).on("resize", function () {
+                    showSliderValue(sliderInput, sliderThumb, sliderLine);
                 });
+                sliderInput.on('input', function () {
+                    showSliderValue(sliderInput, sliderThumb, sliderLine);
+                });
+            });
+        }
+        slider_fields_refresh();
+
+
+        function showSliderValue(sliderInput, sliderThumb, sliderLine) {
+            var label_value = sliderInput.attr('data-label');
+            label_value = (label_value != undefined && label_value != 'undefined') ? label_value : '';
+            sliderThumb.html(sliderInput.val() + label_value);
+            var max_value = sliderInput.attr('max');
+            var current_percentage = (sliderInput.val() * 100 / max_value);
+            var bulletPosition = sliderInput.val() / sliderInput.attr('max');
+            var space = sliderInput.width() - sliderThumb.width();
+            space = parseInt(space) + parseInt(20);
+            var text_to_display = sliderInput.val();
+            if (sliderInput.hasClass('time_interval')) {
+                $(".time_interval_data").html(sliderInput.val() + ' Seconds, ' + formatTime(sliderInput.val(), 'm', 's'));
             }
-        });
-
-        $(".difficulty-level-btn.active").click();
-        //$(".question-builder-layout.active").click();
-
-        $(document).on('click', '.move-up-keyword', function () {
-            var $block = $(this).closest('.keyword-item');
-            var $prev = $block.prev('.keyword-item'); // Ensures you are moving only within keyword items
-            if ($prev.length) {
-                $block.insertBefore($prev);
+            if (sliderInput.hasClass('practice_interval')) {
+                $(".practice_interval_data").html(sliderInput.val() + ' Minutes, ' + formatTime(sliderInput.val(), 'h', 'm'));
             }
-        });
 
-        $(document).on('click', '.move-down-keyword', function () {
-            var $block = $(this).closest('.keyword-item');
-            var $next = $block.next('.keyword-item'); // Ensures you are moving only within keyword items
-            if ($next.length) {
-                $block.insertAfter($next);
+            sliderThumb.css('left', (bulletPosition * space) + 'px');
+            sliderLine.css('width', current_percentage + '%');
+        }
+
+        function formatTime(seconds, label_1, label_2) {
+            var minutes = Math.floor(seconds / 60);
+            var remainingSeconds = seconds % 60;
+
+            var formattedTime = "";
+
+            if (minutes > 0) {
+                formattedTime += minutes + label_1 + " ";
             }
+
+            formattedTime += remainingSeconds + label_2;
+
+            return formattedTime;
+        }
+
+        $('body').on('change', '.topic_selection', function (e) {
+            var current_value = $(this).val();
+            var total_questions = $(this).find('option[value="' + current_value + '"]').attr('data-total_questions');
+            $(".max_questions").html('Max: ' + total_questions);
+            $(".no_of_questions").attr('max', total_questions);
+            //$( ".no_of_questions" ).val( $( "#slider-range-max" ).slider( "value" ) );
+            $(".no_of_questions").val(0);
         });
 
-        $(document).on('click', '.remove-keyword', function () {
-            $(this).closest('.keyword-item').remove();
+        $('body').on('change', '.topics_multi_selection', function (e) {
+
+            var total_questions = 0;
+            $('.topics_multi_selection:checked').each(function () {
+                total_questions = parseInt(total_questions) + parseInt($(this).attr('data-total_questions'));
+            });
+
+            $(".max_questions").html('Max: ' + total_questions);
+            $(".no_of_questions").attr('max', total_questions);
+            //$( ".no_of_questions" ).val( $( "#slider-range-max" ).slider( "value" ) );
+            $(".no_of_questions").val(0);
         });
 
-        $(document).on('click', '.add-keyword-btn', function () {
-            // Define the new keyword item HTML structure
-            var newKeywordItem = `
-        <div class="keyword-item">
-            <span class="editable-content keyword-title-field" data-edit_field="keywords[001][title]" contenteditable="true">New Keyword</span>
-            <input type="text" class="rurera-hide" name="keywords[001][title]" value="New Keyword">
-            <div class="keyword-buttons">
-                <button type="button" class="move-up-keyword">↑</button>
-                <button type="button" class="move-down-keyword">↓</button>
-                <button type="button" class="remove-keyword">✖</button>
-            </div>
-			<textarea cols="100" name="keywords[001][description]" rows="5"></textarea>
-        </div>
-    `;
 
-            // Append the new keyword item to the keyword block
-            $('.keyword-block').append(newKeywordItem);
+        $(".conditional_check").change();
+        $(".duration_conditional_check:checked").change();
+        $(".assignment_topic_type_check:checked").change();
+        $(".assignment_method_check:checked").change();
+        $(".year_quiz_ajax_select").change();
+        $(".year_group_quiz_ajax_select").change();
+
+
+        $('body').on('change', '.topic-section-parent', function (e) {
+            let $this = $(this);
+            let parent = $this.parent().closest('.section-box');
+            let isChecked = e.target.checked;
+
+            if (isChecked) {
+                parent.find('input[type="checkbox"].section-child').prop('checked', true);
+            } else {
+                parent.find('input[type="checkbox"].section-child').prop('checked', false);
+            }
+
+            $(".topics_multi_selection").change();
+
         });
 
-    </script>
+        $('body').on('apply.daterangepicker', '.practice-start-date', function (ev, picker) {
+            $(".practice-due-date").attr('min', picker.startDate.format('YYYY-MM-DD'));
+            $(".reviewer-date").attr('min', picker.startDate.format('YYYY-MM-DD'));
+            resetRureraDatePickers();
+        });
 
+        $('body').on('apply.daterangepicker', '.practice-due-date', function (ev, picker) {
+            $(".reviewer-date").attr('min', picker.startDate.format('YYYY-MM-DD'));
+            resetRureraDatePickers();
+        });
+
+    });
+
+</script>
 @endpush

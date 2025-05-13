@@ -7,7 +7,6 @@ $rand_id = rand(999,99999);
 @endphp
 
 <script src="/assets/default/js/admin/question-create.js?ver={{$rand_id}}"></script>
-<link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
 <link rel="stylesheet" href="/assets/vendors/summernote/summernote-bs4.min.css">
 <section class="section form-class upload-path-rurera" data-question_save_type="update_builder_question" data-location="{{isset( $questionObj->id )? $questionObj->id : 0}}">
     <div class="section-body lms-quiz-create">
@@ -401,21 +400,96 @@ $rand_id = rand(999,99999);
 																  name="question_solve"
 																  aria-multiline="true">{{ isset( $questionObj->question_solve )? $questionObj->question_solve : '' }}</textarea>
 
+													<div class="question-keywords-block">
+														<!-- Keywords Section -->
+														<h3>Keywords</h3>
+														<div class="keywords-section">
+															<div class="keyword-block" data-keyword-index="1">
+																	@if(!empty( $keywords ) )
+																		@foreach($keywords as $keywordObj)
+																			<div class="keyword-item">
+																				<span class="editable-content keyword-title-field" data-edit_field="keywords[{{$keywordObj->id}}][title]" contenteditable="true">{{$keywordObj->title}}</span>
+																				<input type="text" class="rurera-hide" name="keywords[{{$keywordObj->id}}][title]" value="{{$keywordObj->title}}">
+																				<div class="keyword-buttons">
+																					<button type="button" class="move-up-keyword" >↑</button>
+																					<button type="button" class="move-down-keyword" >↓</button>
+																					<button type="button" class="remove-keyword" >✖</button>
+																				</div>
+																				<textarea cols="100" name="keywords[{{$keywordObj->id}}][description]" rows="5">{{$keywordObj->description}}</textarea>
+																			</div>
+																		@endforeach
+																	@endif
+																</div>
+																<button type="button" class="add-keyword-btn"><i class="fas fa-plus"></i> Add keyword</button>
+														</div>
+													</div>
 												</div>
 												</div>
+												<div class="col-12">
+													<div class="switches-holder">
+														<div class="row">
+														<div class="col-lg-4 col-md-4 col-12">
+															<div class="form-group custom-switches-stacked">
+																<label class="custom-switch pl-0">
+																	<input type="hidden" name="review_required_field" value="disable">
+																	<input type="checkbox"
+																			name="review_required"
+																			id="review_required" value="1" {{ (isset( $questionObj->review_required ) && $questionObj->review_required
+																		== '1') ?
+																		'checked="checked"' : ''
+																		}} class="custom-switch-input"/>
+																		<span class="custom-switch-indicator"></span>
+																		<label class="custom-switch-description mb-0 cursor-pointer" for="review_required"><span>Teacher Review Required</span></label>
+																</label>
+															</div>
+														</div>
 
+														<div class="col-lg-4 col-md-4 col-12">
+															<div class="form-group custom-switches-stacked">
+																<label class="custom-switch pl-0">
+																	<input type="hidden" name="developer_review_required_field" value="disable">
+																	<input type="checkbox"
+																			name="developer_review_required"
+																			id="developer_review_required" value="1" {{ (isset( $questionObj->developer_review_required ) && $questionObj->developer_review_required
+																		== '1') ?
+																		'checked="checked"' : ''
+																		}} class="custom-switch-input"/>
+																		<span class="custom-switch-indicator"></span>
+																		<label class="custom-switch-description mb-0 cursor-pointer" for="developer_review_required"><span>Developer Review Required</span></label>
+																</label>
+															</div>
+														</div>
+
+														<div class="col-lg-4 col-md-4 col-12">
+															<div class="form-group custom-switches-stacked">
+																<label class="custom-switch pl-0">
+																	<input type="hidden" name="hide_question_field" value="disable">
+																	<input type="checkbox"
+																			name="hide_question"
+																			id="hide_question" value="1" {{ (isset( $questionObj->hide_question ) && $questionObj->hide_question
+																		== '1') ?
+																		'checked="checked"' : ''
+																		}} class="custom-switch-input"/>
+																		<span class="custom-switch-indicator"></span>
+																		<label class="custom-switch-description mb-0 cursor-pointer" for="hide_question"><span>Hide Question</span></label>
+																</label>
+															</div>
+														</div>
+														</div>
+													</div>
+												</div>
 
 												<div class="col-12 col-md-12">
 													<div class="create-question-fields-block d-flex align-items-center mb-30">
 														<button type="button" data-status="Submit for review" class="question-stage-builder-generate btn btn-primary font-16">
 														@if($questionObj->status == 'api_pending')
-															Apply Changes
+															Approve
 														@else
-															Apply Changes
+															Update
 														@endif
 														</button>
 														<button type="button" data-status="" data-question_id="{{isset( $questionObj->id )? $questionObj->id : 0 }}" class="reject-api-question-single btn btn-danger font-16">
-															Discard
+															Delete
 														</button>
 													</div>
 												</div>
@@ -466,7 +540,6 @@ $rand_id = rand(999,99999);
 
 <script src="/assets/vendors/summernote/summernote-bs4.min.js"></script>
 <script src="/assets/vendors/summernote/summernote-table-headers.js"></script>
-<script src="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
 <script>
 $(".summernote").summernote({
 			dialogsInBody: true,

@@ -17,9 +17,9 @@
     </div>
     <section class="card">
         <div class="card-body">
-            <form action="/admin/assignments" id="topic_parts_search_form" method="get" class="row mb-0">
+            <form action="/admin/assignments" id="topic_parts_search_form" method="get" class="row mb-0 skelton-hide">
                 <div class="col-md-3">
-                    <div class="form-group skelton-hide">
+                    <div class="form-group">
                         <label class="input-label">{{trans('admin/main.category')}}</label>
                         <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control" data-course_id="{{get_filter_request('subject_id', 'assignments_search')}}">
                             <option value="">{{trans('admin/main.all_categories')}}</option>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="form-group skelton-hide">
+                    <div class="form-group">
                         <label>Subjects</label>
                         <select data-return_type="option"
                                 data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'assignments_search')}}"
@@ -54,14 +54,14 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="form-group skelton-hide">
+                    <div class="form-group">
                         <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                         <div class="input-group">
                             <input type="date" id="lsdate" class="text-center form-control" name="to" value="{{ request()->get('to') }}" placeholder="End Date">
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 d-flex align-items-center justify-content-end skelton-hide">
+                <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
                     <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}</button>
                 </div>
             </form>
@@ -103,28 +103,28 @@
             </div>
         </div>
         <div class="col-12 col-md-12">
-            <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                <li class="nav-item skelton-hide">
+            <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills skelton-hide" id="assignment_tabs" role="tablist">
+                <li class="nav-item">
                     <a class="nav-link active" id="topics-tab" href="/admin/assignments">
                         <span class="tab-title">All assignments</span>
                     </a>
                 </li>
-                <li class="nav-item skelton-hide">
+                <li class="nav-item">
                     <a class="nav-link" id="topics-tab" href="/admin/assignments/scheduled" >
                         <span class="tab-title">Scheduled</span>
                     </a>
                 </li>
-                <li class="nav-item skelton-hide">
+                <li class="nav-item">
                     <a class="nav-link" id="topics-tab" href="/admin/assignments/running" >
                         <span class="tab-title">Running</span>
                     </a>
                 </li>
-                <li class="nav-item skelton-hide">
+                <li class="nav-item">
                     <a class="nav-link" id="topics-tab" href="/admin/assignments/completed" >
                         <span class="tab-title">Completed</span>
                     </a>
                 </li>
-                <li class="nav-item skelton-hide">
+                <li class="nav-item">
                     <a class="nav-link" id="topics-tab" href="/admin/assignments/paused" >
                         <span class="tab-title">Paused</span>
                     </a>
@@ -132,14 +132,14 @@
             </ul>
         </div>
         <div class="col-12">
-            <div class="assignments-table">
+            <div class="assignments-table skelton-hide">
                 <div class="card">
-                    <div class="card-header bg-light skelton-hide">
+                    <div class="card-header bg-light">
                         <h6 class="mb-0"><span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span> Issue in Testing</h6>
                     </div>
                     <div class="card-body p-0 table-sm">
                         <table class="table mb-0">
-                            <thead class="thead-light skelton-hide">
+                            <thead class="thead-light">
                                 <tr>
                                     <th>Type</th>
                                     <th>Questions</th>
@@ -151,7 +151,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="skelton-hide">
+                                <tr>
                                     <td data-th="Type">Vocabulary</td>
                                     <td data-th="Questions">0</td>
                                     <td data-th="Participations">50</td>
@@ -182,7 +182,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="skelton-hide">
+                                <tr>
                                     <td data-th="Type">Vocabulary</td>
                                     <td data-th="Questions">0</td>
                                     <td data-th="Participations">50</td>
