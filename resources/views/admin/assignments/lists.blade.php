@@ -134,7 +134,7 @@
         <div class="col-12">
             <div class="assignments-table">
                 <div class="card">
-                    <div class="card-header bg-light">
+                    <div class="card-header bg-light skelton-hide">
                         <h6 class="mb-0"><span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span> Issue in Testing</h6>
                     </div>
                     <div class="card-body p-0 table-sm">
