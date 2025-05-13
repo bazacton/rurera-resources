@@ -5192,6 +5192,7 @@ button.print-download-btn {
 .admin_teacher_role .classes-card:has(.skelton-hide) .card-options.dropdown,
 .admin_teacher_role .skelton-hide h6 {visibility: hidden;}
 .search-filters.skelton-hide {display: inline-flex;}
+.admin-rurera-tabs.nav-pills li.skelton-hide .nav-link.active {border-bottom: 0;}
 .admin_teacher_role .skelton-hide::before {content: ""; position: absolute; left: 0%; top: 0; height: 100%; width: 50px; background: linear-gradient(to right, #e2e2e2 25%, #d5d5d5 50%, #e2e2e2 100%); animation-name: gradient-animation; animation-duration: 2s; animation-iteration-count: infinite; filter: blur(5px);}
 @keyframes gradient-animation {
     from {
