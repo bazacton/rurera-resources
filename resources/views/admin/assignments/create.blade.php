@@ -177,7 +177,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elements-holder bg-white panel-border rounded-sm p-15 mb-30">
+                    <div class="elements-holder bg-white panel-border rounded-sm p-15 mb-30 create-element-box">
                         <div class="questions-header">
                             <div class="questions-header-inner">
                                 <div class="text-holder skelton-hide">
@@ -227,7 +227,7 @@
                         <a href="#import-q" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/import-worksheet.svg" alt=""> Import Worksheets</a>
                         <a href="javascript:;" class="assignment-save-button skelton-hide">Create Assignment</a>
                     </div>
-                    <div class="mb-30 bg-white panel-border rounded-sm p-15" style="display: none;">
+                    <div class="mb-30 bg-white panel-border rounded-sm p-15 create-element-box" style="display: none;">
                         <h6 class="search-lable">Search question from library</h6>
                         <div class="rureraform-search-field mb-15">
                             <div class="input-field">
@@ -267,7 +267,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mb-30 bg-white panel-border rounded-sm p-15 bulk-quiz">
+                    <div class="mb-30 bg-white panel-border rounded-sm p-15 bulk-quiz create-element-box">
                         <div class="bulk-heading skelton-hide">
                             <h6>Bulk Settings</h6>
                         </div>
@@ -317,7 +317,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible alert fade show">
+                    <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible alert fade show create-element-box">
                         <button type="button" class="close" data-dismiss="quiz-ai-tags" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
