@@ -2073,6 +2073,9 @@ Tailer Hub Style Start
     max-width: 960px;
     margin: 50px auto;
 }
+.grammer-modal-canvas-block .question-explain-block {
+    padding: 0;
+}
 /* Blank-Canvas-Modal Style End */
 
 /* Section-Controls Style Start */
