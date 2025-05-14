@@ -577,7 +577,7 @@
                             </div>
                             <div class="quiz-layout-edit-options">
                                 <div class="edit-options-right">
-                                <div class="edit-options-controls skelton-hide skelton-height-lg skelton-mb-0">
+                                <div class="edit-options-controls skelton-hide skelton-height-lg">
                                         <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up" data-trigger="hover"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
                                         <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="Move down" data-trigger="hover"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
 
@@ -639,7 +639,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mb-15 bg-white panel-border rounded-sm p-25 skelton-hide">
+                            <div class="mb-15 bg-white panel-border rounded-sm p-25">
                                 <div class="question-layout-block">
                                     <form class="question-fields" action="javascript:;" data-question_id="10180">
                                         <div class="left-content has-bg">
