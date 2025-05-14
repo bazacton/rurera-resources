@@ -695,28 +695,28 @@
                                             <div class="rureraform-col rureraform-col-12">
                                             <div id="rureraform-element-24192" class="quiz-group rureraform-element-24192 rureraform-element ui-sortable-handle" data-type="checkbox">
                                                 <div class="rureraform-column-label">
-                                                    <label class="rureraform-label">Mark two answers</label>
+                                                    <label class="rureraform-label skelton-hide skelton-height-lg skelton-mb-0">Mark two answers</label>
                                                 </div>
                                                 <div class="rureraform-column-input">
                                                 <div class="rureraform-input">
                                                     <div class="form-box  rurera-in-row alphabet-list-style">
-                                                    <div class="form-field rureraform-cr-container-medium ">
+                                                    <div class="form-field rureraform-cr-container-medium skelton-hide skelton-height-lg skelton-mb-0">
                                                         <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-00-2424" value="3 hours 45 minutes">
                                                         <label for="field-24192-00-2424"> 3 hours 45 minutes </label>
                                                     </div>
-                                                    <div class="form-field rureraform-cr-container-medium">
+                                                    <div class="form-field rureraform-cr-container-medium skelton-hide skelton-height-lg skelton-mb-0">
                                                         <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-11-2424" value="4 hours 10 minutes">
                                                         <label for="field-24192-11-2424"> 4 hours 10 minutes </label>
                                                     </div>
-                                                    <div class="form-field rureraform-cr-container-medium">
+                                                    <div class="form-field rureraform-cr-container-medium skelton-hide skelton-height-lg skelton-mb-0">
                                                         <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-22-2424" value="3 hours 30 minutes">
                                                         <label for="field-24192-22-2424"> 3 hours 30 minutes </label>
                                                     </div>
-                                                    <div class="form-field rureraform-cr-container-medium active-option">
+                                                    <div class="form-field rureraform-cr-container-medium active-option skelton-hide skelton-height-lg skelton-mb-0">
                                                         <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-33-2424" value="4 hours 35 minutes">
                                                         <label for="field-24192-33-2424"> 4 hours 35 minutes </label>
                                                     </div>
-                                                    <div class="form-field rureraform-cr-container-medium">
+                                                    <div class="form-field rureraform-cr-container-medium skelton-hide skelton-height-lg skelton-mb-0">
                                                         <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-44-2424" value="4 hours">
                                                         <label for="field-24192-44-2424"> 4 hours </label>
                                                     </div>
