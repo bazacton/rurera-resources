@@ -5388,8 +5388,12 @@ button.print-download-btn {
     height: 12px !important;
     min-height: 12px;
 }
-.listing-grid-card .img-box.skelton-hide {
+.listing-grid-card .img-box.skelton-hide,
+.teacher-list-controls .edit-btn.skelton-hide {
     border-radius: 100% !important;
+}
+.teacher-list-controls .edit-btn.skelton-hide {
+    max-height: 40px;
 }
 /* Skeleton Loading Style End */
 
