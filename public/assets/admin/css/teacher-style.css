@@ -1575,6 +1575,9 @@ body:has(.quiz-data-slide.active) {
 .rounded-sm {
     border-radius: .625rem !important;
 }
+.rounded-sm-tr {
+    border-radius: .625rem .625rem 0 0 !important;
+}
 /*************************************
 New Quiz Page Style End
 **************************************/
