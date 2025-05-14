@@ -112,17 +112,17 @@
                                             </div>
                                             <div class="text-holder">
                                                 <h3 class="skelton-hide">Maths Magic Adventure</h3>
-                                                <div class="author-info skelton-hide">
+                                                <div class="author-info">
                                                     <span class="info-text">
-                                                        <span>Jane D</span>
-                                                        <span>5 hours ago</span>
+                                                        <span class="skelton-hide">Jane D</span>
+                                                        <span class="skelton-hide">5 hours ago</span>
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options skelton-hide">
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 3rd-5th Grade</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/mathematical.svg" alt="mathematical"></span> Math</li>
+                                            <ul class="list-options">
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 3rd-5th Grade</li>
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/mathematical.svg" alt="mathematical"></span> Math</li>
                                             </ul>
                                         </a>
                                     </div>
@@ -136,17 +136,17 @@
                                             </div>
                                             <div class="text-holder">
                                                 <h3 class="skelton-hide">Grammar Genius Challenge</h3>
-                                                <div class="author-info skelton-hide">
+                                                <div class="author-info">
                                                     <span class="info-text">
-                                                        <span>Mark T</span>
-                                                        <span>1 day ago</span>
+                                                        <span class="skelton-hide">Mark T</span>
+                                                        <span class="skelton-hide">1 day ago</span>
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options skelton-hide">
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 15 questions</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 4th-6th Grade</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> English</li>
+                                            <ul class="list-options">
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 15 questions</li>
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 4th-6th Grade</li>
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> English</li>
                                             </ul>
                                         </a>
                                     </div>
@@ -160,17 +160,17 @@
                                             </div>
                                             <div class="text-holder">
                                                 <h3 class="skelton-hide">History Trivia Quest</h3>
-                                                <div class="author-info skelton-hide">
+                                                <div class="author-info">
                                                     <span class="info-text">
-                                                        <span>Lucy W</span>
-                                                        <span>2 days ago</span>
+                                                        <span class="skelton-hide">Lucy W</span>
+                                                        <span class="skelton-hide">2 days ago</span>
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options skelton-hide">
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 12 questions</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 6th-8th Grade</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> History</li>
+                                            <ul class="list-options">
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 12 questions</li>
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 6th-8th Grade</li>
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> History</li>
                                             </ul>
                                         </a>
                                     </div>
@@ -184,17 +184,17 @@
                                             </div>
                                             <div class="text-holder">
                                                 <h3 class="skelton-hide">Artistic Impressions Puzzle</h3>
-                                                <div class="author-info skelton-hide">
+                                                <div class="author-info">
                                                     <span class="info-text">
-                                                        <span>Sara L</span>
-                                                        <span>3 days ago</span>
+                                                        <span class="skelton-hide">Sara L</span>
+                                                        <span class="skelton-hide">3 days ago</span>
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options skelton-hide">
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 5 questions</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 1st-3rd Grade</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Art</li>
+                                            <ul class="list-options">
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 5 questions</li>
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 1st-3rd Grade</li>
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Art</li>
                                             </ul>
                                         </a>
                                     </div>
@@ -208,17 +208,17 @@
                                             </div>
                                             <div class="text-holder">
                                                 <h3 class="skelton-hide">Science Exploration Mission</h3>
-                                                <div class="author-info skelton-hide">
+                                                <div class="author-info">
                                                     <span class="info-text">
-                                                        <span>Alex P</span>
-                                                        <span>5 hours ago</span>
+                                                        <span class="skelton-hide">Alex P</span>
+                                                        <span class="skelton-hide">5 hours ago</span>
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options skelton-hide">
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 2nd-5th Grade</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
+                                            <ul class="list-options">
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 2nd-5th Grade</li>
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
                                             </ul>
                                         </a>
                                     </div>
@@ -232,17 +232,17 @@
                                             </div>
                                             <div class="text-holder">
                                                 <h3 class="skelton-hide">Geography World Challenges</h3>
-                                                <div class="author-info skelton-hide">
+                                                <div class="author-info">
                                                     <span class="info-text">
-                                                        <span>Chris B</span>
-                                                        <span>4 hours ago</span>
+                                                        <span class="skelton-hide">Chris B</span>
+                                                        <span class="skelton-hide">4 hours ago</span>
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options skelton-hide">
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 6 questions</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 5th-7th Grade</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Geography</li>
+                                            <ul class="list-options">
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 6 questions</li>
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 5th-7th Grade</li>
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Geography</li>
                                             </ul>
                                         </a>
                                     </div>
@@ -256,17 +256,17 @@
                                             </div>
                                             <div class="text-holder">
                                                 <h3 class="skelton-hide">Robotics Mind Challenges</h3>
-                                                <div class="author-info skelton-hide">
+                                                <div class="author-info">
                                                     <span class="info-text">
-                                                        <span>David H</span>
-                                                        <span>8 hours ago</span>
+                                                        <span class="skelton-hide">David H</span>
+                                                        <span class="skelton-hide">8 hours ago</span>
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options skelton-hide">
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 6th-8th  Grade</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Technology</li>
+                                            <ul class="list-options">
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 6th-8th  Grade</li>
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Technology</li>
                                             </ul>
                                         </a>
                                     </div>
@@ -280,10 +280,10 @@
                                             </div>
                                             <div class="text-holder">
                                                 <h3 class="skelton-hide">Animal Kingdom Quiz</h3>
-                                                <div class="author-info skelton-hide">
+                                                <div class="author-info">
                                                     <span class="info-text">
-                                                        <span>Ella S</span>
-                                                        <span>2 hours ago</span>
+                                                        <span class="skelton-hide">Ella S</span>
+                                                        <span class="skelton-hide">2 hours ago</span>
                                                     </span>
                                                 </div>
                                             </div>
