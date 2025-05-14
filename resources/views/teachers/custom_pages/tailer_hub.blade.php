@@ -41,10 +41,10 @@
                     </div>
                 </div>
                 <div class="q-ai-nav-controls">
-                    <a href="#home" class="active skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-question.svg" alt="add-question"> Add Question</a>
-                    <a href="#q-collections" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-collection.svg" alt="add-collection"> Add question from Collection</a>
-                    <a href="#generate-ai" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/ai.svg" alt="ai"> Generate quiz using AI</a>
-                    <a href="#import-q" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/import-worksheet.svg" alt="import-worksheet"> Import Worksheets</a>
+                    <a href="#home" class="active skelton-hide skelton-height-lg skelton-mb-0" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-question.svg" alt="add-question"> Add Question</a>
+                    <a href="#q-collections" class="skelton-hide skelton-height-lg skelton-mb-0" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-collection.svg" alt="add-collection"> Add question from Collection</a>
+                    <a href="#generate-ai" class="skelton-hide skelton-height-lg skelton-mb-0" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/ai.svg" alt="ai"> Generate quiz using AI</a>
+                    <a href="#import-q" class="skelton-hide skelton-height-lg skelton-mb-0" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/import-worksheet.svg" alt="import-worksheet"> Import Worksheets</a>
                 </div>
                 <div class="mb-30 bg-white panel-border rounded-sm p-15" style="display: none;">
                     <h6 class="search-lable">Search question from library</h6>
@@ -87,18 +87,18 @@
                     </div>
                 </div>
                 <div class="mb-30 bg-white panel-border rounded-sm p-15 bulk-quiz">
-                    <div class="bulk-heading skelton-hide">
-                        <h6>Bulk Settings</h6>
+                    <div class="bulk-heading">
+                        <h6 class="skelton-hide skelton-height-lg skelton-mb-0">Bulk Settings</h6>
                     </div>
                     <div class="bulk-ai">
-                        <div class="bulk-ai-box skelton-hide">
+                        <div class="bulk-ai-box skelton-hide skelton-height-lg skelton-mb-0">
                             <span class="bulk-lable">Rendomize</span>
                             <div class="btn-field">
                                 <a href="#">Question order</a>
                                 <a href="#">Options order</a>
                             </div>
                         </div>
-                        <div class="bulk-ai-box skelton-hide">
+                        <div class="bulk-ai-box skelton-hide skelton-height-lg skelton-mb-0">
                             <span class="bulk-lable">Estimation time</span>
                             <div class="select-field">
                                 <select>
@@ -110,7 +110,7 @@
                                 <span class="bulk-text">Mins <i class="fas fa-clock"></i></span>
                             </div>
                         </div>
-                        <div class="bulk-ai-box skelton-hide">
+                        <div class="bulk-ai-box skelton-hide skelton-height-lg skelton-mb-0">
                             <span class="bulk-lable">Mark as point</span>
                             <div class="select-field">
                                 <select>
@@ -122,13 +122,13 @@
                                 <span class="bulk-text">Points <i class="fas fa-circle"></i></span>
                             </div>
                         </div>
-                        <div class="bulk-ai-box skelton-hide">
+                        <div class="bulk-ai-box skelton-hide skelton-height-lg skelton-mb-0">
                             <span class="bulk-lable">Questions Order</span>
                             <div class="btn-field">
                                 <a href="#" class="delete-btn" data-toggle="modal" data-target="#dragModal">Rearrange</a>
                             </div>
                         </div>
-                        <div class="bulk-ai-box skelton-hide">
+                        <div class="bulk-ai-box skelton-hide skelton-height-lg skelton-mb-0">
                             <span class="bulk-lable">Bulk Delete</span>
                             <div class="btn-field">
                                 <a href="#" class="delete-btn">Delete All Questions</a>
