@@ -611,7 +611,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-8 col-md-8">
-                            <div class="elements-holder bg-white panel-border p-15 border-bottom-0">
+                            <div class="elements-holder bg-white panel-border p-15 border-bottom-0 rounded-sm-tr">
                                 <div class="questions-header">
                                     <div class="questions-header-inner">
                                         <div class="text-holder skelton-hide skelton-height-lg skelton-mb-0">
@@ -654,7 +654,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0 rounded-sm-tr">
+                            <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0">
                                 <div class="question-layout-block">
                                     <form class="question-fields" action="javascript:;" data-question_id="10180">
                                     <div class="left-content has-bg">
