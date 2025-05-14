@@ -5349,6 +5349,9 @@ button.print-download-btn {
 .input-field.skelton-hide {
     margin-bottom: 0;
 }
+.bulk-heading .skelton-hide {
+    display: inline-block;
+}
 /* Skeleton Loading Style End */
 
 @media screen and (max-width: 992px) {
