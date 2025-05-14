@@ -5367,6 +5367,10 @@ button.print-download-btn {
 .search-lable.skelton-hide {
     display: inline-block;
 }
+.rureraform-table td:has(.progress.skelton-hide) {
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
 /* Skeleton Loading Style End */
 
 @media screen and (max-width: 992px) {
