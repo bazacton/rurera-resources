@@ -2497,6 +2497,8 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     font-size: 1.8rem;
     margin-bottom: 20px;
     outline: none;
+    border-color: #ddd;
+    padding-bottom: 10px;
 }
 .general-knowledge-modal .text-holder > ul {
     max-width: 50%;
