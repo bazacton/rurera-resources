@@ -1191,7 +1191,7 @@
                                                             <h4 class="skelton-hide skelton-height-lg skelton-mb-0">Read the text and choose the correct answer.</h4>
                                                         </div>
                                                     </div>
-                                                    <div class="rureraform-col rureraform-col-12 skelton-hide skelton-height-lg skelton-mb-0">
+                                                    <div class="rureraform-col rureraform-col-12 skelton-hide skelton-height-lg">
                                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="drop_and_text"> When <select type="inner_dropdown" class="editor-field" id="dropdown-1" data-identifier="49226" name="field-dropdown1_options">
                                                             <option value="Select Option">Select Option</option>
                                                             <option value="lava">lava</option>
@@ -1206,7 +1206,7 @@
                                                         </select> igneous rocks with large crystals. <div class="rureraform-element-cover"></div>
                                                         </div>
                                                     </div>
-                                                    <div class="rureraform-col rureraform-col-12 skelton-hide skelton-height-lg skelton-mb-0">
+                                                    <div class="rureraform-col rureraform-col-12 skelton-hide skelton-height-lg">
                                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
                                                         <p>
                                                             <i>Hint: Think about the Moon’s effect on Earth, especially on tides and sunlight.</i>
