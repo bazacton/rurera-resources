@@ -3289,6 +3289,18 @@ span.field-separated span:after {
     width: calc(100% - 60px);
     padding-right: 60px;
 }
+.featured-list-sidebar .listing-card .add-level-stage-topic-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid var(--blue);
+    line-height: normal;
+    padding: 2px 8px;
+    background-color: transparent;
+    color: var(--blue);
+    border-radius: 3px;
+    font-weight: 600;
+}
 .featured-list-sidebar .listing-card {
     align-items: flex-start;
     -webkit-transition: all 0.3s ease-out;
