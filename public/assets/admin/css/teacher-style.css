@@ -3443,6 +3443,7 @@ span.field-separated span:after {
 .admin_teacher_role .edit-control img {
     width: 15px;
     height: 15px;
+    filter: invert(80%) sepia(1%) saturate(193%) hue-rotate(8deg) brightness(101%) contrast(97%);
 }
 .questions-header .text-holder .icon-box {
     height: 28px;
