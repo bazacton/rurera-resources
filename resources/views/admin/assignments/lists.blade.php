@@ -20,8 +20,8 @@
             <form action="/admin/assignments" id="topic_parts_search_form" method="get" class="row mb-0">
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label class="input-label">{{trans('admin/main.category')}}</label>
-                        <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control" data-course_id="{{get_filter_request('subject_id', 'assignments_search')}}">
+                        <label class="input-label skelton-hide skelton-height-lg">{{trans('admin/main.category')}}</label>
+                        <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control skelton-hide skelton-height-lg skelton-mb-0" data-course_id="{{get_filter_request('subject_id', 'assignments_search')}}">
                             <option value="">{{trans('admin/main.all_categories')}}</option>
                             @foreach($categories as $category)
                                 @if(!empty($category->subCategories) and count($category->subCategories))
@@ -39,10 +39,10 @@
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label>Subjects</label>
+                        <label class="skelton-hide skelton-height-lg">Subjects</label>
                         <select data-return_type="option"
                                 data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'assignments_search')}}"
-                                class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
+                                class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror skelton-hide skelton-height-lg skelton-mb-0"
                                 id="subject_id" name="subject_id">
                             <option disabled selected>Subject</option>
                         </select>
@@ -55,14 +55,14 @@
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label class="input-label">{{ trans('admin/main.end_date') }}</label>
-                        <div class="input-group">
+                        <label class="input-label skelton-hide skelton-height-lg">{{ trans('admin/main.end_date') }}</label>
+                        <div class="input-group skelton-hide skelton-height-lg skelton-mb-0">
                             <input type="date" id="lsdate" class="text-center form-control" name="to" value="{{ request()->get('to') }}" placeholder="End Date">
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
-                    <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}</button>
+                    <button type="submit" class="btn btn-primary w-100 skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.show_results') }}</button>
                 </div>
             </form>
         </div>
