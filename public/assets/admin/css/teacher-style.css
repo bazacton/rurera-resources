@@ -5323,7 +5323,12 @@ button.print-download-btn {
 .admin_teacher_role .skelton-hide:has(th), 
 .admin_teacher_role .skelton-hide:has(td) {display: block;}
 .admin_teacher_role .classes-card:has(.skelton-hide) {background-color: #fff;}
-.admin_teacher_role .classes-card:has(.skelton-hide) .bottom-controls {margin: 0;}
+.admin_teacher_role .classes-card:has(.skelton-hide) .bottom-controls {   
+    margin: 0;
+    padding: 0;
+    background-color: inherit;
+    border: 0;
+}
 .listing-grid-card:has(.skelton-hide) {padding: 10px; }
 .listing-grid-card:has(.skelton-hide) .author-info {padding-bottom: 0; border: 0;}
 .admin_teacher_role .quiz-ai-tags .skelton-hide a {background-color: inherit; visibility: hidden;}
