@@ -66,11 +66,11 @@
                     <div class="row">
                         <div class="col-12 col-lg-4 col-md-4">
                             <div class="featured-list-sidebar">
-                                <div class="featured-filters skelton-hide">
-                                    <div class="text-box">
+                                <div class="featured-filters">
+                                    <div class="text-box skelton-hide">
                                         <h6>Reported Oprations</h6>
                                     </div>
-                                    <div class="select-field">
+                                    <div class="select-field skelton-hide">
                                         <select>
                                             <option value="Critical">Critical</option>
                                             <option value="Critical">Critical</option>
