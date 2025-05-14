@@ -543,6 +543,473 @@
                                 </div>
                                 <div class="tab-pane fade populated-content-area" id="q-collections" role="tabpanel" aria-labelledby="q-collections-tab">
 
+
+
+                                    <div class="col-12">
+                                        <div class="staff-picks-tabs">
+                                            <div class="mb-30 bg-white panel-border rounded-sm p-15">
+                                                <div class="rureraform-search-field mb-15">
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Search question..">
+                                                        <button type="button"><i class="fas fa-search"></i> <span>Search questions</span></button>
+                                                    </div>
+                                                    <div class="featured-controls">
+                                                        <button type="button" class="active">Featured List</button>
+                                                        <button type="button">Community</button>
+                                                        <button type="button">My Collection</button>
+                                                    </div>
+                                                </div>
+                                                <div class="search-filters mb-0 conditional-block topics_block">
+                                                    <div class="select-field">
+                                                        <span>Year:</span>
+
+
+                                                        <select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
+                                                            <option value="">{{trans('admin/main.all_categories')}}</option>
+                                                            @foreach($categories as $category)
+                                                                @if(!empty($category->subCategories) and count($category->subCategories))
+                                                                    <optgroup label="{{  $category->title }}">
+                                                                        @foreach($category->subCategories as $subCategory)
+                                                                            <option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
+                                                                        @endforeach
+                                                                    </optgroup>
+                                                                @else
+                                                                    <option value="{{ $category->id }}">{{ $category->title }}</option>
+                                                                @endif
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                    <div class="select-field">
+                                                        <span>Subject:</span>
+                                                        <select data-chapter_id="" id="subject_id"
+                                                                class="rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
+                                                                name="subject_id" data-next_index="chapter_id" data-next_value="">
+                                                            <option value="">Please select year, subject</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="select-field">
+                                                        <span>Topic:</span>
+                                                        <select data-sub_chapter_id="" id="chapter_id"
+                                                                class="rurera-req-field form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
+                                                                name="chapter_id" data-disabled="{{isset($already_created_bulk_lists)? json_encode($already_created_bulk_lists) : ''}}" data-next_index="sub_chapter_id" data-next_value="">
+                                                            <option value="">Please select year, subject</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="select-field">
+                                                        <span>Sub Topic:</span>
+                                                        <select id="sub_chapter_id"
+                                                                class="sub-chapters-list rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
+                                                                name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
+                                                            <option value="">Please select year, subject, Topic</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-lg-4 col-md-4">
+                                                    <div class="featured-list-sidebar sub-chapters-list-data">
+                                                        <div class="featured-list-sidebar-inner">
+
+
+
+
+
+                                                            @if($subChapters->count() > 0)
+                                                                @foreach($subChapters as $subChapterObj)
+
+                                                                    @include('admin.learning_journey.includes.topic_list_items_list_layout', ['subChapterObj' => $subChapterObj])
+
+                                                                @endforeach
+                                                            @endif
+                                                            <button class="load-more-btn"><i class="fas fa-plus"></i> Load More</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-8 col-md-8 topic-part-item-data questions-group-select">
+                                                    <div class="elements-holder bg-white panel-border p-15 border-bottom-0">
+                                                        <div class="questions-header ">
+                                                            <div class="questions-header-inner">
+                                                                <div class="text-holder">
+                                                                    <h5>Exploring Magnetic Matrials and Their Uses<small>(18 questions)</small></h5>
+                                                                </div>
+                                                                <div class="questions-header-controls">
+                                                                    <button type="button"><i class="fas fa-plus"></i> Add All</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="list-options question-list-options mb-15 ">
+                                                            <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
+                                                            <li><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt="save"></span> 7th-8th  Grade</li>
+                                                            <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
+                                                        </ul>
+                                                        <div class="class-controls ">
+                                                            <div class="left-area d-inline-flex align-items-center">
+                                                                <div class="class-controls-option questions-control-options border-0 mr-0 pr-0 d-inline-flex align-items-center">
+                                                                    <button type="button"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple">Copy & edit</button>
+                                                                    <button type="button"><img src="/assets/default/svgs/save.svg" alt="save">Save</button>
+                                                                    <button type="button"><img src="/assets/default/svgs/share.svg" alt="share">Share</button>
+                                                                    <button type="button"><img src="/assets/default/svgs/download.svg" alt="download">Worksheet</button>
+                                                                    <div class="dropdown-box">
+                                                                        <div class="dropdown">
+                                                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                                                <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
+                                                                            </a>
+                                                                            <div class="dropdown-menu">
+                                                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="right-area w-auto">
+                                                                <button type="button" class="assignment-btn"><img class="show-img" src="/assets/default/svgs/clock.svg" alt="clock"> Assign</button>
+                                                                <button type="button" class="perview-btn" data-toggle="modal" data-target="#document-modal"><img class="show-img" src="/assets/default/svgs/eye-show.svg" alt="eye-show"> Perview</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0">
+                                                        <div class="question-layout-block">
+                                                            <form class="question-fields" action="javascript:;" data-question_id="10180">
+                                                                <div class="left-content has-bg">
+                                                                    <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
+                                                                        <div class="question-layout row d-flex align-items-start">
+                                                                            <div class="rureraform-col rureraform-col-12 ">
+                                                                                <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
+                                                                                    <div class="question-top-info">
+                                                                                        <div class="question-count">
+                                                                                            <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
+                                                                                            <span class="question-count-lable">Question 1 of 20</span>
+                                                                                        </div>
+                                                                                        <div class="question-info">
+                                                                                            <span class="q-type"><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice">Multiple choice</span>
+                                                                                            <span class="q-time">Avg time</span>
+                                                                                            <span class="q-point">1 point</span>
+                                                                                        </div>
+                                                                                        <button type="button" class="question-add-btn" data-toggle="modal" data-target="#general-knowledge-modal"><i class="fas fa-plus"></i> Add</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rureraform-col rureraform-col-12 ">
+                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                                                    <h4>Read the text, then answer the question.</h4>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rureraform-col rureraform-col-12 ">
+                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz"> Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm. <div class="rureraform-element-cover"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rureraform-col rureraform-col-12 ">
+                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                                                    <div class="question-label question_label">
+                                                                                        <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rureraform-col rureraform-col-12 ">
+                                                                                <div id="rureraform-element-24192" class="quiz-group rureraform-element-24192 rureraform-element ui-sortable-handle" data-type="checkbox">
+                                                                                    <div class="rureraform-column-label">
+                                                                                        <label class="rureraform-label">Mark two answers</label>
+                                                                                    </div>
+                                                                                    <div class="rureraform-column-input">
+                                                                                        <div class="rureraform-input">
+                                                                                            <div class="form-box  rurera-in-row alphabet-list-style">
+                                                                                                <div class="form-field rureraform-cr-container-medium ">
+                                                                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-00-2424" value="3 hours 45 minutes">
+                                                                                                    <label for="field-24192-00-2424"> 3 hours 45 minutes </label>
+                                                                                                </div>
+                                                                                                <div class="form-field rureraform-cr-container-medium">
+                                                                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-11-2424" value="4 hours 10 minutes">
+                                                                                                    <label for="field-24192-11-2424"> 4 hours 10 minutes </label>
+                                                                                                </div>
+                                                                                                <div class="form-field rureraform-cr-container-medium">
+                                                                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-22-2424" value="3 hours 30 minutes">
+                                                                                                    <label for="field-24192-22-2424"> 3 hours 30 minutes </label>
+                                                                                                </div>
+                                                                                                <div class="form-field rureraform-cr-container-medium active-option">
+                                                                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-33-2424" value="4 hours 35 minutes">
+                                                                                                    <label for="field-24192-33-2424"> 4 hours 35 minutes </label>
+                                                                                                </div>
+                                                                                                <div class="form-field rureraform-cr-container-medium">
+                                                                                                    <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-44-2424" value="4 hours">
+                                                                                                    <label for="field-24192-44-2424"> 4 hours </label>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="view-explanation ">
+                                                            <div class="explanation-controls d-flex align-items-center">
+                                                                <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list1" aria-expanded="false" aria-controls="explanation-list">
+                                                                    <i class="fas fa-plus"></i> Explanation
+                                                                </button>
+                                                            </div>
+                                                            <div class="collapse" id="explanation-list1">
+                                                                <div class="explanation-text-holder">
+                                                                    <p>Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-0 bg-white panel-border p-25 border-bottom-0">
+                                                        <div class="question-layout-block">
+                                                            <form class="question-fields" action="javascript:;" data-question_id="10180">
+                                                                <div class="left-content has-bg">
+                                            <span class="question-number-holder" style="z-index: 999999999;">
+                                                <span class="question-number">1</span>
+                                            </span>
+                                                                    <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
+                                                                        <div class="question-layout row d-flex align-items-start">
+                                                                            <div class="rureraform-col rureraform-col-12 ">
+                                                                                <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
+                                                                                    <div class="question-top-info">
+                                                                                        <div class="question-count">
+                                                                                            <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
+                                                                                            <span class="question-count-lable">Question 11 of 20</span>
+                                                                                        </div>
+                                                                                        <div class="question-info">
+                                                                                            <span class="q-type"><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice">Multiple choice</span>
+                                                                                            <span class="q-time">Avg time</span>
+                                                                                            <span class="q-point">1 point</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rureraform-col rureraform-col-12 ">
+                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                                                    <h4>Mark the following true and false:</h4>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rureraform-col rureraform-col-8 ">
+                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                                                    <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
+                                                                                </div>
+                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
+                                                                                    <i>Hint:&nbsp;&nbsp;Think about what happens inside cells during respiration and what is released.</i>
+                                                                                    <div class="rureraform-element-cover"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rureraform-col rureraform-col-4">
+                                                                                <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
+                                                                                    <div class="rureraform-column-input">
+                                                                                        <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
+                                                                                            <div class="form-box ">
+                                                                                                <div class="lms-radio-select rurera-in-row justify-content-end">
+                                                                                                    <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined active-option ">
+                                                                                                        <input class="editor-field" type="radio" name="field-40008" id="field-40008-0" value="True">
+                                                                                                        <label for="field-40008-0">
+                                                                                                            <span class="inner-label">True</span>
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                    <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined ">
+                                                                                                        <input class="editor-field" type="radio" name="field-40008" id="field-40008-1" value="False">
+                                                                                                        <label for="field-40008-1">
+                                                                                                            <span class="inner-label">False</span>
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <label class="rureraform-description"></label>
+                                                                                    </div>
+                                                                                    <div class="rureraform-element-cover"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rureraform-col rureraform-col-8 ">
+                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                                                    <h6>When balanced forces act on an object, it remains stationary or continues moving at the same speed.</h6>
+                                                                                </div>
+                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
+                                                                                    <i>Hint:&nbsp;&nbsp;Balanced forces cancel each other out, meaning no change in motion happens.</i>
+                                                                                    <div class="rureraform-element-cover"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rureraform-col rureraform-col-4">
+                                                                                <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
+                                                                                    <div class="rureraform-column-input">
+                                                                                        <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
+                                                                                            <div class="form-box ">
+                                                                                                <div class="lms-radio-select rurera-in-row justify-content-end">
+                                                                                                    <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined ">
+                                                                                                        <input class="editor-field" type="radio" name="field-84793" id="field-84793-0" value="True">
+                                                                                                        <label for="field-84793-0">
+                                                                                                            <span class="inner-label">True</span>
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                    <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined ">
+                                                                                                        <input class="editor-field" type="radio" name="field-84793" id="field-84793-1" value="False">
+                                                                                                        <label for="field-84793-1">
+                                                                                                            <span class="inner-label">False</span>
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <label class="rureraform-description"></label>
+                                                                                    </div>
+                                                                                    <div class="rureraform-element-cover"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rureraform-col rureraform-col-8 ">
+                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                                                    <h6>When an endothermic reaction occurs, energy is absorbed, making the surroundings cooler.</h6>
+                                                                                </div>
+                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
+                                                                                    <i>Hint:&nbsp;&nbsp;Endothermic reactions pull in heat from the surroundings.</i>
+                                                                                    <div class="rureraform-element-cover"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rureraform-col rureraform-col-4">
+                                                                                <div id="rureraform-element-1" class="quiz-group draggable3 rureraform-element-1 rureraform-element rureraform-element-label-undefined rureraform-element-description-undefined ui-sortable-handle" data-type="checkbox">
+                                                                                    <div class="rureraform-column-input">
+                                                                                        <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
+                                                                                            <div class="form-box ">
+                                                                                                <div class="lms-radio-select rurera-in-row justify-content-end">
+                                                                                                    <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined ">
+                                                                                                        <input class="editor-field" type="radio" name="field-21459" id="field-21459-0" value="True">
+                                                                                                        <label for="field-21459-0">
+                                                                                                            <span class="inner-label">True</span>
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                    <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined ">
+                                                                                                        <input class="editor-field" type="radio" name="field-21459" id="field-21459-1" value="False">
+                                                                                                        <label for="field-21459-1">
+                                                                                                            <span class="inner-label">False</span>
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <label class="rureraform-description"></label>
+                                                                                    </div>
+                                                                                    <div class="rureraform-element-cover"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="view-explanation ">
+                                                            <div class="explanation-controls d-flex align-items-center">
+                                                                <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list2" aria-expanded="false" aria-controls="explanation-list">
+                                                                    <i class="fas fa-plus"></i> Explanation
+                                                                </button>
+                                                            </div>
+                                                            <div class="collapse" id="explanation-list2">
+                                                                <div class="explanation-text-holder">
+                                                                    <p>Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-15 bg-white panel-border p-25">
+                                                        <div class="question-layout-block">
+                                                            <form class="question-fields" action="javascript:;" data-question_id="10180">
+                                                                <div class="left-content has-bg">
+                                            <span class="question-number-holder" style="z-index: 999999999;">
+                                                <span class="question-number">1</span>
+                                            </span>
+                                                                    <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
+                                                                        <div class="question-layout row d-flex align-items-start">
+                                                                            <div class="rureraform-col rureraform-col-12 ">
+                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                                                    <h4>Read the text and choose the correct answer.</h4>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rureraform-col rureraform-col-12 ">
+                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="drop_and_text"> When <select type="inner_dropdown" class="editor-field" id="dropdown-1" data-identifier="49226" name="field-dropdown1_options">
+                                                                                        <option value="Select Option">Select Option</option>
+                                                                                        <option value="lava">lava</option>
+                                                                                        <option value="extrusive">extrusive</option>
+                                                                                        <option value="magma">magma</option>
+                                                                                    </select> cools below the Earth's surface, it forms <select type="inner_dropdown" class="editor-field" id="dropdown-2" data-identifier="49226" name="field-dropdown2_options">
+                                                                                        <option value="Select Option">Select Option</option>
+                                                                                        <option value="water">water</option>
+                                                                                        <option value="extrusive">extrusive</option>
+                                                                                        <option value="sedimentary">sedimentary</option>
+                                                                                        <option value="magma">magma</option>
+                                                                                    </select> igneous rocks with large crystals. <div class="rureraform-element-cover"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rureraform-col rureraform-col-12 ">
+                                                                                <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
+                                                                                    <p>
+                                                                                        <i>Hint: Think about the Moon’s effect on Earth, especially on tides and sunlight.</i>
+                                                                                    </p>
+                                                                                    <div class="rureraform-element-cover"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="view-explanation ">
+                                                            <div class="explanation-controls d-flex align-items-center">
+                                                                <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list3" aria-expanded="false" aria-controls="explanation-list">
+                                                                    <i class="fas fa-plus"></i> Explanation
+                                                                </button>
+                                                            </div>
+                                                            <div class="collapse" id="explanation-list3">
+                                                                <div class="explanation-text-holder">
+                                                                    <p>Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                     <div class="topics-subtopics-content-area row">
                                         {!! $topics_subtopics_layout !!}
 
@@ -1104,20 +1571,20 @@
             </div>
         </div>
 
-        <div class="modal fade grammer-modal-canvas blank-canvas-modal" id="questions-modal-canvas" tabindex="-1" aria-labelledby="questions-modal-canvasLabel" aria-modal="true" role="dialog">
-            <div class="modal-dialog questions-modal-canvas-block11">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body grammer-modal-canvas-block">
+            <div class="modal fade ai-questions-modal-canvas blank-canvas-modal" id="questions-modal-canvas" tabindex="-1" aria-labelledby="questions-modal-canvasLabel" aria-modal="true" role="dialog">
+                <div class="modal-dialog questions-modal-canvas-block11">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body ai-questions-modal-canvas-block">
 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         <div class="modal fade general-knowledge-modal" id="general-knowledge-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" style="display: none;" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -1229,7 +1696,7 @@
 
 @push('scripts_bottom')
     <script>
-
+        var alreadyAddedTopics = [];
         $(document).ready(function () {
             const $scrollableDiv = $(".enhance-questions-modal");
             $scrollableDiv.niceScroll({
@@ -1244,6 +1711,64 @@
 
         });
     </script>
+
+    <script>
+
+        var ItemloaderDivMain = $(".topic-part-item-data");
+        var CustomItemloaderDivMain = $(".custom-topic-part-item-data");
+        var topicPartItemDataRequest = null;
+        $(document).on('click', '.topic-part-item-list', function () {
+            //$(".topic-part-item-list").removeClass('active');
+            //$(this).addClass('active');
+            rurera_loader(ItemloaderDivMain, 'div');
+            var topic_part_item_id = $(this).attr('data-id');
+            topicPartItemDataRequest = $.ajax({
+                type: "GET",
+                url: '/admin/learning_journey/get_topic_part_item_layout',
+                beforeSend: function () {
+                    if (topicPartItemDataRequest != null) {
+                        topicPartItemDataRequest.abort();
+                    }
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {'topic_part_item_id': topic_part_item_id},
+                success: function (response) {
+                    rurera_remove_loader(ItemloaderDivMain, 'button');
+                    $(".topic-part-item-data").html(response);
+                }
+            });
+        });
+
+        $(document).on('click', '.custom-topic-part-item-list', function () {
+            $(".topic-part-item-list").removeClass('active');
+            $(this).addClass('active');
+            rurera_loader(CustomItemloaderDivMain, 'div');
+            var quiz_id = $(this).attr('data-id');
+            topicPartItemDataRequest = $.ajax({
+                type: "GET",
+                url: '/admin/learning_journey/get_custom_topic_part_item_layout',
+                beforeSend: function () {
+                    if (topicPartItemDataRequest != null) {
+                        topicPartItemDataRequest.abort();
+                    }
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {'quiz_id': quiz_id},
+                success: function (response) {
+                    rurera_remove_loader(CustomItemloaderDivMain, 'button');
+                    $(".custom-topic-part-item-data").html(response);
+                }
+            });
+        });
+    </script>
+
+
+
+
     <script>
         $(document).ready(function() {
             $(".blank-canvas-modal .rureraform-element, .lms-quiz-create .rureraform-admin-popup-title a").click(function(e) {
@@ -1429,8 +1954,8 @@
         questions_callback();
 
 
-        $('body').on('click', '.questions-group-select li .add-to-list-btn', function (e) {
-            var question_id = $(this).closest('li').attr('data-question_id');
+        $('body').on('click', '.question-layout-holder .add-to-list-btn', function (e) {
+            var question_id = $(this).closest('.question-layout-holder').attr('data-question_id');
             var thisObj = $(this);
             jQuery.ajax({
                 type: "GET",
@@ -1487,7 +2012,7 @@
 
         $('body').on('click', '.fix-question-grammer', function (e) {
             var question_id = $(this).attr('data-id');
-            $(".grammer-modal-canvas").modal('show');
+            $(".ai-questions-modal-canvas").modal('show');
 
             var thisObj = $(this);
             jQuery.ajax({
@@ -1498,7 +2023,31 @@
                 },
                 data: {"question_id": question_id},
                 success: function (return_data) {
-                    $(".grammer-modal-canvas-block").html(return_data);
+                    $(".ai-questions-modal-canvas-block").html(return_data);
+
+                }
+            });
+
+        });
+
+        $('body').on('click', '.question-template-change', function (e) {
+            var question_id = $(this).attr('data-id');
+            var template_type = $(this).attr('data-type');
+            $(".ai-questions-modal-canvas").modal('show');
+            var loaderDiv = $('.ai-questions-modal-canvas-block');
+            rurera_loader(loaderDiv, 'button');
+
+            var thisObj = $(this);
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/custom_quiz/question_template_change',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"question_id": question_id, "template_type": template_type},
+                success: function (return_data) {
+                    rurera_remove_loader(loaderDiv, 'button');
+                    $(".ai-questions-modal-canvas-block").html(return_data);
 
                 }
             });
@@ -1748,6 +2297,147 @@
                 }
             });
         });
+
+        var chaptersRequest = null;
+        $(document).on('change', '.ajax-courses-dropdown', function () {
+            var course_id = $(this).val();
+            var chapter_id = $(this).attr('data-chapter_id');
+
+            chaptersRequest = $.ajax({
+                type: "GET",
+                url: '/admin/webinars/chapters_by_course',
+                beforeSend: function () {
+                    if (chaptersRequest != null) {
+                        chaptersRequest.abort();
+                    }
+                },
+                data: {'course_id': course_id, 'chapter_id': chapter_id},
+                success: function (return_data) {
+
+                    console.log(return_data);
+                    $(".ajax-chapter-dropdown").html(return_data);
+                    $('.ajax-chapter-dropdown').change();
+                }
+            });
+        });
+        var subChapter2Request = null;
+        $(document).on('change', '.ajax-chapter-dropdown', function () {
+            var chapter_id = $(this).val();
+            var sub_chapter_id = $(this).attr('data-sub_chapter_id');
+            var disabled_items = $(this).attr('data-disabled');
+            subChapter2Request = $.ajax({
+                type: "GET",
+                url: '/admin/webinars/sub_chapters_by_chapter',
+                beforeSend: function () {
+                    if (subChapter2Request != null) {
+                        subChapter2Request.abort();
+                    }
+                },
+                data: {'chapter_id': chapter_id, 'sub_chapter_id': sub_chapter_id,  'disabled_items': disabled_items},
+                success: function (return_data) {
+                    $(".ajax-subchapter-dropdown").html(return_data);
+                }
+            });
+        });
+
+        var subChapterRequest = null;
+        $(document).on('change', '.ajax-subchapter-dropdown', function () {
+            var sub_chapter_id = $(this).val();
+            var topic_part = $(this).attr('data-next_value');
+            var level_type = $(".level_type").val();
+
+            if(level_type == 'topic'){
+                subChapterRequest = $.ajax({
+                    type: "GET",
+                    url: '/admin/webinars/topic_part_item_by_sub_chapter',
+                    beforeSend: function () {
+                        if (subChapterRequest != null) {
+                            subChapterRequest.abort();
+                        }
+                    },
+                    data: {'subchapter_id': sub_chapter_id, 'show_all': 'yes', 'topic_part': topic_part},
+                    success: function (return_data) {
+                        $(".topic-parts-data").html(return_data);
+                    }
+                });
+            }
+            if(level_type == 'custom_topic'){
+                subChapterRequest = $.ajax({
+                    type: "GET",
+                    url: '/admin/webinars/custom_topic_by_sub_chapter',
+                    beforeSend: function () {
+                        if (subChapterRequest != null) {
+                            subChapterRequest.abort();
+                        }
+                    },
+                    data: {'subchapter_id': sub_chapter_id, 'show_all': 'yes', 'topic_part': topic_part},
+                    success: function (return_data) {
+                        $(".topic-parts-data").html(return_data);
+                    }
+                });
+            }
+        });
+
+        var subChapterDataRequest = null;
+        var subChapterDivMain = $(".sub-chapters-list-data");
+        $(document).on('change', '.sub-chapters-list', function () {
+            rurera_loader(subChapterDivMain, 'div');
+            var level_id = $(".book-dropzone.active").attr('data-level_id');
+            if (!Array.isArray(alreadyAddedTopics[level_id])) {
+                alreadyAddedTopics[level_id] = [];
+            }
+            console.log('loader------');
+            var sub_chapter_id = $(this).val();
+            subChapterDataRequest = $.ajax({
+                type: "GET",
+                url: '/admin/learning_journey/get_topic_part_items_list',
+                beforeSend: function () {
+                    if (subChapterDataRequest != null) {
+                        subChapterDataRequest.abort();
+                    }
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {'sub_chapter_id': sub_chapter_id},
+                success: function (response) {
+                    rurera_remove_loader(subChapterDivMain, 'button');
+                    $(".sub-chapters-list-data").html(response);
+
+                    $.each(alreadyAddedTopics[level_id], function(index, selected_topic_id) {
+                        $('.add-level-stage-topic-btn[data-id="'+selected_topic_id+'"]').addClass('topic-added');
+                        $('.add-level-stage-topic-btn[data-id="'+selected_topic_id+'"]').closest('.topic-part-item-list').addClass('active');
+
+                    });
+
+
+                }
+            });
+        });
+
+        var customSubChapterDivMain = $(".custom-sub-chapters-list-data");
+        $(document).on('change', '.custom-sub-chapters-list', function () {
+            rurera_loader(customSubChapterDivMain, 'div');
+            var sub_chapter_id = $(this).val();
+            subChapterDataRequest = $.ajax({
+                type: "GET",
+                url: '/admin/learning_journey/get_topic_part_items_list',
+                beforeSend: function () {
+                    if (subChapterDataRequest != null) {
+                        subChapterDataRequest.abort();
+                    }
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {'sub_chapter_id': sub_chapter_id},
+                success: function (response) {
+                    rurera_remove_loader(customSubChapterDivMain, 'button');
+                    $(".custom-sub-chapters-list-data").html(response);
+                }
+            });
+        });
+
         $(".ajax-category-courses").change();
 
         $(document).on('click change keyup keydown keypress', '.editable-content', function () {
