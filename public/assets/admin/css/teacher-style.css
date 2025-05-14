@@ -5395,6 +5395,9 @@ button.print-download-btn {
 .teacher-list-controls .edit-btn.skelton-hide {
     max-height: 40px;
 }
+.admin-rurera-tabs .skelton-hide.nav-item, .admin-rurera-tabs.nav-pills .skelton-hide.nav-item {
+    min-width: 60px;
+}
 /* Skeleton Loading Style End */
 
 @media screen and (max-width: 992px) {
