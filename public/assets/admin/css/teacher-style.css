@@ -5305,7 +5305,8 @@ button.print-download-btn {
 .card-title-holder.skelton-hide h5, .author-contact-info.skelton-hide a, 
 .admin_teacher_role .classes-card:has(.skelton-hide) .card-options.dropdown,
 .admin_teacher_role .skelton-hide h6, .admin_teacher_role .skelton-hide strong,
-.rureraform-table td .skelton-hide .progress-bar.bg-success:after {visibility: hidden;}
+.rureraform-table td .skelton-hide .progress-bar.bg-success:after,
+.admin_teacher_role .skelton-hide .form-control {visibility: hidden;}
 .search-filters.skelton-hide {display: inline-flex;}
 .admin-rurera-tabs.nav-pills li.skelton-hide .nav-link.active {border-bottom: 0;}
 .assignments-table .card:has(.skelton-hide) {border: 0; box-shadow: none;}
