@@ -60,10 +60,10 @@
                                     </span>
                             </span>
                             <div class="card-title-holder">
-                                <h5 class="skelton-hide skelton-height-lg">{{ $user->get_full_name() }}</h5>
+                                <h5 class="skelton-hide">{{ $user->get_full_name() }}</h5>
                             </div>
                             <div class="author-contact-info">
-                                <a href="#" class="skelton-hide skelton-height-lg"><i class="fas fa-envelope"></i> {{ $user->email }}</a>
+                                <a href="#" class="skelton-hide"><i class="fas fa-envelope"></i> {{ $user->email }}</a>
                                 @if($user->mobile != '')
                                 <span class="phone-number-box">
                                     <i class="fas fa-phone"></i>
