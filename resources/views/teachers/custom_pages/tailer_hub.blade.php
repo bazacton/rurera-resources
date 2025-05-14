@@ -302,41 +302,41 @@
                                         <table class="table">
                                             <tbody>
                                                 <tr>
-                                                    <td>a shadow</td>
-                                                    <td class="respondents">1 respondent</td>
-                                                    <td class="percent-value">20%</td>
+                                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">a shadow</td>
+                                                    <td class="respondents skelton-hide skelton-height-lg skelton-mb-0">1 respondent</td>
+                                                    <td class="percent-value skelton-hide skelton-height-lg skelton-mb-0">20%</td>
                                                     <td>
-                                                        <div class="progress">
+                                                        <div class="progress skelton-hide skelton-height-lg skelton-mb-0">
                                                             <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>a text</td>
-                                                    <td class="respondents">0 respondents</td>
-                                                    <td class="percent-value">0%</td>
+                                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">a text</td>
+                                                    <td class="respondents skelton-hide skelton-height-lg skelton-mb-0">0 respondents</td>
+                                                    <td class="percent-value skelton-hide skelton-height-lg skelton-mb-0">0%</td>
                                                     <td>
-                                                        <div class="progress">
+                                                        <div class="progress skelton-hide skelton-height-lg skelton-mb-0">
                                                             <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>a pop-up</td>
-                                                    <td class="respondents">1 respondent</td>
-                                                    <td class="percent-value">20%</td>
+                                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">a pop-up</td>
+                                                    <td class="respondents skelton-hide skelton-height-lg skelton-mb-0">1 respondent</td>
+                                                    <td class="percent-value skelton-hide skelton-height-lg skelton-mb-0">20%</td>
                                                     <td>
-                                                        <div class="progress">
+                                                        <div class="progress skelton-hide skelton-height-lg skelton-mb-0">
                                                             <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr class="success-status">
-                                                    <td><strong>An action by the user that creates an effect</strong></td>
-                                                    <td class="respondents">3 respondents</td>
-                                                    <td class="percent-value">60%</td>
+                                                    <td class="skelton-hide skelton-height-lg skelton-mb-0"><strong>An action by the user that creates an effect</strong></td>
+                                                    <td class="respondents skelton-hide skelton-height-lg skelton-mb-0">3 respondents</td>
+                                                    <td class="percent-value skelton-hide skelton-height-lg skelton-mb-0">60%</td>
                                                     <td>
-                                                        <div class="progress">
+                                                        <div class="progress skelton-hide skelton-height-lg skelton-mb-0">
                                                             <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
                                                     </td>
