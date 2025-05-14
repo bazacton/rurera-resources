@@ -678,17 +678,17 @@
                                             </div>
                                             <div class="rureraform-col rureraform-col-12">
                                                 <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                    <h4>Read the text, then answer the question.</h4>
+                                                    <h4 class="skelton-hide skelton-height-lg skelton-mb-0">Read the text, then answer the question.</h4>
                                                 </div>
                                             </div>
                                             <div class="rureraform-col rureraform-col-12">
-                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz"> Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm. <div class="rureraform-element-cover"></div>
+                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle skelton-hide skelton-height-lg skelton-mb-0" data-type="paragraph_quiz"> Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm. <div class="rureraform-element-cover"></div>
                                             </div>
                                             </div>
                                             <div class="rureraform-col rureraform-col-12">
                                             <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                                 <div class="question-label question_label">
-                                                    <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
+                                                    <h6 class="skelton-hide skelton-height-lg skelton-mb-0">When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
                                                 </div>
                                             </div>
                                             </div>
