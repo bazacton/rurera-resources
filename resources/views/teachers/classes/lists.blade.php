@@ -426,16 +426,16 @@
                         </div>
 
                         <div class="card-body">
-                            <div class="card-title-holder skelton-hide">
-                                <h5 class="card-title">{{ $classData->title }}</h5>
+                            <div class="card-title-holder">
+                                <h5 class="card-title skelton-hide skelton-height-lg">{{ $classData->title }}</h5>
                             </div>
                             <div class="card-description-holder skelton-hide">
-                                <p class="grade-text">{{ $classData->category->getTitleAttribute() }}</p>
-                                <p class="card-students">{{$classData->students->count()}} Students</p>
+                                <p class="grade-text skelton-hide skelton-height-lg">{{ $classData->category->getTitleAttribute() }}</p>
+                                <p class="card-students skelton-hide skelton-height-lg">{{$classData->students->count()}} Students</p>
                             </div>
                             <div class="progress-holder skelton-hide">
-                                <p class="mb-1">1 completed activity</p>
-                                <div class="progress" style="height: 20px;">
+                                <p class="mb-1 skelton-hide skelton-height-lg">1 completed activity</p>
+                                <div class="progress skelton-hide skelton-height-lg" style="height: 20px;">
                                     <div
                                         class="progress-bar progress-bar-custom"
                                         role="progressbar"
@@ -448,15 +448,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between mt-3 bottom-controls skelton-hide">
-                                <button class="btn btn-light btn-sm user-btn">
+                            <div class="d-flex justify-content-between mt-3 bottom-controls">
+                                <button class="btn btn-light btn-sm user-btn skelton-hide skelton-height-lg skelton-mb-0">
                                     <img src="/assets/default/img/class-user-icon.png" alt="">
                                 </button>
                                 <div class="right-area">
-                                    <button class="btn btn-light btn-sm">
+                                    <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0">
                                         <i class="fas fa-chart-line"></i>
                                     </button>
-                                    <button class="btn btn-light btn-sm" title="Open folder for 'Grade 6 A' in Google Drive">
+                                    <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0" title="Open folder for 'Grade 6 A' in Google Drive">
                                         <i class="fas fa-folder-open"></i>
                                     </button>
                                 </div>
