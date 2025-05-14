@@ -347,8 +347,8 @@
                                 </div>
                                 <div class="view-explanation">
                                     <div class="explanation-controls d-flex align-items-center">
-                                        <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
-                                        <i class="fas fa-plus"></i> Add Explanation
+                                        <button class="collapsed skelton-hide skelton-height-lg skelton-mb-0" type="button" data-toggle="collapse" data-target="#explanation-list" aria-expanded="false" aria-controls="explanation-list">
+                                            <i class="fas fa-plus"></i> Add Explanation
                                         </button>
                                     </div>
                                     <div class="collapse" id="explanation-list">
