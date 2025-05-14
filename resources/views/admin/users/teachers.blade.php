@@ -17,26 +17,26 @@
                 </div>
             </div>
         </section>
-        <div class="nav-area skelton-hide">
+        <div class="nav-area">
             <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                <li class="nav-item">
+                <li class="nav-item skelton-hide skelton-height-lg skelton-mb-0">
                     <a class="nav-link" id="topics-tab" href="/admin/all">
                         <span class="tab-title">All</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item skelton-hide skelton-height-lg skelton-mb-0">
                     <a class="nav-link" id="topics-tab" href="/admin/sections/admin">
                         <span class="tab-title">Admin</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item skelton-hide skelton-height-lg skelton-mb-0">
                     <a class="nav-link active" id="topics-tab" href="/admin/teachers">
                         <span class="tab-title">Teachers</span>
                     </a>
                 </li>
             </ul>
             <div class="teacher-controls">
-                <button type="button" class="create-class-btn" data-toggle="modal" data-target="#createTeacherModal"><i class="fas fa-plus-circle"></i> Create Teacher</button>
+                <button type="button" class="create-class-btn skelton-hide skelton-height-lg skelton-mb-0" data-toggle="modal" data-target="#createTeacherModal"><i class="fas fa-plus-circle"></i> Create Teacher</button>
             </div>
         </div>
         <div class="teacher-listing d-flex align-items-center flex-wrap">
