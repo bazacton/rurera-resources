@@ -3285,6 +3285,9 @@ span.field-separated span:after {
 .featured-list-sidebar .author-info .info-text {
     padding-left: 0;
 }
+.featured-list-sidebar.sub-chapters-list-data {
+    padding-top: 15px;
+}
 .featured-list-sidebar .listing-card .text-holder {
     width: calc(100% - 60px);
     padding-right: 60px;
