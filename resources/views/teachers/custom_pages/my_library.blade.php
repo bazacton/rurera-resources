@@ -1034,29 +1034,29 @@
                                             </span>
                                             <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
                                                 <div class="question-layout row d-flex align-items-start">
-                                                <div class="rureraform-col rureraform-col-12 skelton-hide">
+                                                <div class="rureraform-col rureraform-col-12">
                                                     <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
                                                         <div class="question-top-info">
-                                                            <div class="question-count">
+                                                            <div class="question-count skelton-hide skelton-height-lg">
                                                                 <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
                                                                 <span class="question-count-lable">Question 1 of 20</span>
                                                             </div>
                                                             <div class="question-info">
-                                                                <span class="q-type"><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice">Multiple choice</span>
-                                                                <span class="q-time">Avg time</span>
-                                                                <span class="q-point">1 point</span>
+                                                                <span class="q-type skelton-hide skelton-height-lg skelton-mb-0"><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice">Multiple choice</span>
+                                                                <span class="q-time skelton-hide skelton-height-lg skelton-mb-0">Avg time</span>
+                                                                <span class="q-point skelton-hide skelton-height-lg skelton-mb-0">1 point</span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="rureraform-col rureraform-col-12 skelton-hide">
+                                                <div class="rureraform-col rureraform-col-12">
                                                     <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                        <h4>Mark the following true and false:</h4>
+                                                        <h4 class="skelton-hide skelton-height-lg skelton-mb-0">Mark the following true and false:</h4>
                                                     </div>
                                                 </div>
-                                                <div class="rureraform-col rureraform-col-8 skelton-hide">
+                                                <div class="rureraform-col rureraform-col-8">
                                                     <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                        <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
+                                                        <h6 class="skelton-hide skelton-height-lg skelton-mb-0">When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
                                                     </div>
                                                     <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
                                                         <i>Hint:&nbsp;&nbsp;Think about what happens inside cells during respiration and what is released.</i>
@@ -1069,13 +1069,13 @@
                                                             <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
                                                                 <div class="form-box ">
                                                                     <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined active-option skelton-hide">
+                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined active-option skelton-hide skelton-height-lg skelton-mb-0">
                                                                             <input class="editor-field" type="radio" name="field-40008" id="field-40008-0" value="True">
                                                                             <label for="field-40008-0">
                                                                                 <span class="inner-label">True</span>
                                                                             </label>
                                                                         </div>
-                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined skelton-hide">
+                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined skelton-hide skelton-height-lg skelton-mb-0">
                                                                             <input class="editor-field" type="radio" name="field-40008" id="field-40008-1" value="False">
                                                                             <label for="field-40008-1">
                                                                                 <span class="inner-label">False</span>
@@ -1089,11 +1089,11 @@
                                                         <div class="rureraform-element-cover"></div>
                                                     </div>
                                                 </div>
-                                                <div class="rureraform-col rureraform-col-8 skelton-hide">
+                                                <div class="rureraform-col rureraform-col-8">
                                                     <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                        <h6>When balanced forces act on an object, it remains stationary or continues moving at the same speed.</h6>
+                                                        <h6 class="skelton-hide skelton-height-lg skelton-mb-0">When balanced forces act on an object, it remains stationary or continues moving at the same speed.</h6>
                                                     </div>
-                                                    <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
+                                                    <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle skelton-hide skelton-height-lg skelton-mb-0" data-type="paragraph_quiz">
                                                         <i>Hint:&nbsp;&nbsp;Balanced forces cancel each other out, meaning no change in motion happens.</i>
                                                         <div class="rureraform-element-cover"></div>
                                                     </div>
@@ -1104,13 +1104,13 @@
                                                             <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
                                                                 <div class="form-box ">
                                                                     <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined skelton-hide">
+                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined skelton-hide skelton-height-lg skelton-mb-0">
                                                                             <input class="editor-field" type="radio" name="field-84793" id="field-84793-0" value="True">
                                                                             <label for="field-84793-0">
                                                                                 <span class="inner-label">True</span>
                                                                             </label>
                                                                         </div>
-                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined skelton-hide">
+                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined skelton-hide skelton-height-lg skelton-mb-0">
                                                                             <input class="editor-field" type="radio" name="field-84793" id="field-84793-1" value="False">
                                                                             <label for="field-84793-1">
                                                                                 <span class="inner-label">False</span>
@@ -1124,11 +1124,11 @@
                                                         <div class="rureraform-element-cover"></div>
                                                     </div>
                                                 </div>
-                                                <div class="rureraform-col rureraform-col-8 skelton-hide">
+                                                <div class="rureraform-col rureraform-col-8">
                                                     <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                        <h6>When an endothermic reaction occurs, energy is absorbed, making the surroundings cooler.</h6>
+                                                        <h6 class="skelton-hide skelton-height-lg skelton-mb-0">When an endothermic reaction occurs, energy is absorbed, making the surroundings cooler.</h6>
                                                     </div>
-                                                    <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
+                                                    <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle skelton-hide skelton-height-lg skelton-mb-0" data-type="paragraph_quiz">
                                                         <i>Hint:&nbsp;&nbsp;Endothermic reactions pull in heat from the surroundings.</i>
                                                         <div class="rureraform-element-cover"></div>
                                                     </div>
@@ -1139,13 +1139,13 @@
                                                             <div class="rureraform-input rureraform-cr-layout rureraform-cr-layout">
                                                                 <div class="form-box ">
                                                                     <div class="lms-radio-select rurera-in-row justify-content-end">
-                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined skelton-hide">
+                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined skelton-hide skelton-height-lg skelton-mb-0">
                                                                             <input class="editor-field" type="radio" name="field-21459" id="field-21459-0" value="True">
                                                                             <label for="field-21459-0">
                                                                                 <span class="inner-label">True</span>
                                                                             </label>
                                                                         </div>
-                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined skelton-hide">
+                                                                        <div class="form-field rureraform-cr-container-medium rureraform-cr-container-undefined skelton-hide skelton-height-lg skelton-mb-0">
                                                                             <input class="editor-field" type="radio" name="field-21459" id="field-21459-1" value="False">
                                                                             <label for="field-21459-1">
                                                                             <span class="inner-label">False</span>
@@ -1164,9 +1164,9 @@
                                         </div>
                                     </form>
                                 </div>
-                                <div class="view-explanation skelton-hide">
+                                <div class="view-explanation">
                                     <div class="explanation-controls d-flex align-items-center">
-                                        <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list2" aria-expanded="false" aria-controls="explanation-list">
+                                        <button class="collapsed skelton-hide skelton-height-lg skelton-mb-0" type="button" data-toggle="collapse" data-target="#explanation-list2" aria-expanded="false" aria-controls="explanation-list">
                                             <i class="fas fa-plus"></i> Explanation
                                         </button>
                                     </div>
@@ -1186,12 +1186,12 @@
                                             </span>
                                             <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
                                                 <div class="question-layout row d-flex align-items-start">
-                                                    <div class="rureraform-col rureraform-col-12 skelton-hide">
+                                                    <div class="rureraform-col rureraform-col-12">
                                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                            <h4>Read the text and choose the correct answer.</h4>
+                                                            <h4 class="skelton-hide skelton-height-lg skelton-mb-0">Read the text and choose the correct answer.</h4>
                                                         </div>
                                                     </div>
-                                                    <div class="rureraform-col rureraform-col-12 skelton-hide">
+                                                    <div class="rureraform-col rureraform-col-12 skelton-hide skelton-height-lg skelton-mb-0">
                                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="drop_and_text"> When <select type="inner_dropdown" class="editor-field" id="dropdown-1" data-identifier="49226" name="field-dropdown1_options">
                                                             <option value="Select Option">Select Option</option>
                                                             <option value="lava">lava</option>
@@ -1206,7 +1206,7 @@
                                                         </select> igneous rocks with large crystals. <div class="rureraform-element-cover"></div>
                                                         </div>
                                                     </div>
-                                                    <div class="rureraform-col rureraform-col-12 skelton-hide">
+                                                    <div class="rureraform-col rureraform-col-12 skelton-hide skelton-height-lg skelton-mb-0">
                                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
                                                         <p>
                                                             <i>Hint: Think about the Moon’s effect on Earth, especially on tides and sunlight.</i>
@@ -1219,9 +1219,9 @@
                                         </div>
                                     </form>
                                 </div>
-                                <div class="view-explanation skelton-hide">
+                                <div class="view-explanation">
                                     <div class="explanation-controls d-flex align-items-center">
-                                        <button class="collapsed" type="button" data-toggle="collapse" data-target="#explanation-list3" aria-expanded="false" aria-controls="explanation-list">
+                                        <button class="collapsed skelton-hide skelton-height-lg skelton-mb-0" type="button" data-toggle="collapse" data-target="#explanation-list3" aria-expanded="false" aria-controls="explanation-list">
                                             <i class="fas fa-plus"></i> Explanation
                                         </button>
                                     </div>
