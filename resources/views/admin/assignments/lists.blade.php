@@ -21,31 +21,35 @@
                 <div class="col-md-3">
                     <div class="form-group">
                         <label class="input-label skelton-hide skelton-height-lg">{{trans('admin/main.category')}}</label>
-                        <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control skelton-hide skelton-height-lg skelton-mb-0" data-course_id="{{get_filter_request('subject_id', 'assignments_search')}}">
-                            <option value="">{{trans('admin/main.all_categories')}}</option>
-                            @foreach($categories as $category)
-                                @if(!empty($category->subCategories) and count($category->subCategories))
-                                    <optgroup label="{{  $category->title }}">
-                                        @foreach($category->subCategories as $subCategory)
-                                            <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'assignments_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
-                                        @endforeach
-                                    </optgroup>
-                                @else
-                                    <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'assignments_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
-                                @endif
-                            @endforeach
-                        </select>
+                        <div class="select-box skelton-hide skelton-height-lg skelton-mb-0">
+                            <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses form-control" data-course_id="{{get_filter_request('subject_id', 'assignments_search')}}">
+                                <option value="">{{trans('admin/main.all_categories')}}</option>
+                                @foreach($categories as $category)
+                                    @if(!empty($category->subCategories) and count($category->subCategories))
+                                        <optgroup label="{{  $category->title }}">
+                                            @foreach($category->subCategories as $subCategory)
+                                                <option value="{{ $subCategory->id }}" @if(get_filter_request('category_id', 'assignments_search') == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                            @endforeach
+                                        </optgroup>
+                                    @else
+                                        <option value="{{ $category->id }}" @if(get_filter_request('category_id', 'assignments_search') == $category->id) selected="selected" @endif>{{ $category->title }}</option>
+                                    @endif
+                                @endforeach
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
                         <label class="skelton-hide skelton-height-lg">Subjects</label>
-                        <select data-return_type="option"
-                                data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'assignments_search')}}"
-                                class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror skelton-hide skelton-height-lg skelton-mb-0"
-                                id="subject_id" name="subject_id">
-                            <option disabled selected>Subject</option>
-                        </select>
+                        <div class="select-box skelton-hide skelton-height-lg skelton-mb-0">
+                            <select data-return_type="option"
+                                    data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'assignments_search')}}"
+                                    class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
+                                    id="subject_id" name="subject_id">
+                                <option disabled selected>Subject</option>
+                            </select>
+                        </div>
                         @error('subject_id')
                         <div class="invalid-feedback">
                             {{ $message }}
