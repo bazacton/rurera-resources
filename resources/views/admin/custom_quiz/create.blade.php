@@ -184,8 +184,8 @@
                             <div class="questions-header-inner">
                                 <div class="text-holder skelton-hide">
                                     <h5 class="font-16 font-weight-bold">
-                                        <span contenteditable="true">Exploring Magnetic Matrials and Their Uses</span>
-                                        <button type="button" class="edit-control"><img src="/assets/default/svgs/edit-simple.svg" alt="file-image"></button>
+                                        <span>{!! $assignment->getTitleAttribute(); !!}</span>
+                                        <button type="button" data-toggle="modal" data-target="#general-knowledge-modal" class="edit-control"><img src="/assets/default/svgs/edit-simple.svg" alt="file-image"></button>
                                     </h5>
                                 </div>
                                 <div class="questions-header-controls skelton-hide">
@@ -195,8 +195,8 @@
                         </div>
                         <ul class="list-options question-list-options mb-15">
                             <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
-                            <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt="save"></span> 7th-8th  Grade</li>
-                            <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
+                            <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt="save"></span> {{$assignment->quizYear->getTitleAttribute()}}</li>
+                            <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> {{$assignment->webinar->getTitleAttribute()}}</li>
                         </ul>
                         <div class="class-controls">
                             <div class="left-area d-inline-flex align-items-center">
@@ -362,7 +362,7 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2 class="editable-content editable" data-edit_field="quiz_title" contenteditable="true">{{$assignment->getTitleAttribute()}}</h2>
+                        <h2 class="editable-content editable" data-edit_field="quiz_title" contenteditable="true">{!! $assignment->getTitleAttribute(); !!}</h2>
                         <input type="hidden" name="quiz_title" class="editable-content" value="{{$assignment->getTitleAttribute()}}">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
@@ -372,7 +372,7 @@
                                 <input type="file" id="upload-thumbnail" name="quiz_image" class="assignment-img-upload">
                                 <label for="upload-thumbnail"><img src="/assets/default/svgs/edit-simple.svg" alt="file-image"></label>
                             </div>
-                            <button type="button"><img src="/assets/default/svgs/book-saved.svg" class="assignment_img" alt="book-saved"></button>
+                            <button type="button"><img src="{{(isset($assignment->quiz_image) && $assignment->quiz_image != ''? '/quizzes/'.$assignment->quiz_image : '/assets/default/svgs/book-saved.svg')}}" class="assignment_img" alt="book-saved"></button>
                         </div>
                     </div>
                     <div class="modal-body">
@@ -425,7 +425,7 @@
                                 </li>
                             </ul>
                             <div class="description-field">
-                                <textarea name="quiz_instructions" placeholder="Type description here...">{{$assignment->quiz_instructions}}</textarea>
+                                <textarea name="quiz_instructions" class="quiz_instructions" placeholder="Type description here...">{{$assignment->quiz_instructions}}</textarea>
                                 <span class="description-count">0/400</span>
                             </div>
                             <div class="general-knowledge-footer">
@@ -2124,7 +2124,48 @@
         });
 
 
+        $(document).ready(function () {
+            const textarea = $('.quiz_instructions');
+            const countDisplay = $('.description-count');
+            const maxLength = parseInt(textarea.attr('maxlength')) || 400;
 
+            // Set initial count
+            countDisplay.text(`${textarea.val().length}/${maxLength}`);
+
+            // Update count on input
+            textarea.on('input', function () {
+                let content = $(this).val();
+
+                // Prevent exceeding the max length
+                if (content.length > maxLength) {
+                    content = content.substring(0, maxLength);
+                    $(this).val(content);
+                }
+
+                // Update the count display
+                countDisplay.text(`${content.length}/${maxLength}`);
+            });
+        });
+
+
+        $('body').on('click', '.move-question-up', function (e) {
+            var current = $(this).closest('.question-layout-block-holder');
+            var prev = current.prevAll('.question-layout-block-holder').first();
+            if (prev.length) {
+                current.insertBefore(prev);
+            }
+            //rearrange_question();
+        });
+
+        // Move Down
+        $('body').on('click', '.move-question-down', function (e) {
+            var current = $(this).closest('.question-layout-block-holder');
+            var next = current.nextAll('.question-layout-block-holder').first();
+            if (next.length) {
+                current.insertAfter(next);
+            }
+            //rearrange_question();
+        });
     </script>
 
 @endpush
