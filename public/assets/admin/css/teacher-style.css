@@ -5372,6 +5372,9 @@ button.print-download-btn {
     border-left: 2px solid rgba(255, 255, 255, 0.5);
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
+.admin_teacher_role .teacher-controls .create-class-btn.skelton-hide {
+    color: transparent;
+}
 /* Skeleton Loading Style End */
 
 @media screen and (max-width: 992px) {
