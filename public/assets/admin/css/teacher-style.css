@@ -5330,7 +5330,6 @@ button.print-download-btn {
     border: 0;
 }
 .listing-grid-card:has(.skelton-hide) {padding: 10px; }
-.listing-grid-card:has(.skelton-hide) .author-info {padding-bottom: 0; border: 0;}
 .admin_teacher_role .quiz-ai-tags .skelton-hide a {background-color: inherit; visibility: hidden;}
 .admin_teacher_role .create-element-box .skelton-hide {
     min-height: 35px;
