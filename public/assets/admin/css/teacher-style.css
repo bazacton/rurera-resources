@@ -3685,6 +3685,8 @@ span.field-separated span:after {
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    line-height: normal;
+    z-index: 1;
 }
 .question-add-btn:hover {
     background-color: var(--blue);
