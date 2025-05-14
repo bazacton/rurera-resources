@@ -654,11 +654,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0">
+                            <div class="question-layout-holder mb-0 bg-white panel-border p-25 border-bottom-0 rounded-sm-tr">
                                 <div class="question-layout-block">
                                     <form class="question-fields" action="javascript:;" data-question_id="10180">
                                     <div class="left-content has-bg">
-                                        <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
+                                        <div id="rureraform-form-1" class="rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
                                         <div class="question-layout row d-flex align-items-start">
                                             <div class="rureraform-col rureraform-col-12">
                                                 <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
