@@ -660,7 +660,7 @@
                                     <div class="left-content has-bg">
                                         <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
                                         <div class="question-layout row d-flex align-items-start">
-                                            <div class="rureraform-col rureraform-col-12 skelton-hide">
+                                            <div class="rureraform-col rureraform-col-12">
                                                 <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
                                                     <div class="question-top-info">
                                                         <div class="question-count">
@@ -676,23 +676,23 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="rureraform-col rureraform-col-12 skelton-hide">
+                                            <div class="rureraform-col rureraform-col-12">
                                                 <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                                     <h4>Read the text, then answer the question.</h4>
                                                 </div>
                                             </div>
-                                            <div class="rureraform-col rureraform-col-12 skelton-hide">
+                                            <div class="rureraform-col rureraform-col-12">
                                             <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz"> Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm. <div class="rureraform-element-cover"></div>
                                             </div>
                                             </div>
-                                            <div class="rureraform-col rureraform-col-12 skelton-hide">
+                                            <div class="rureraform-col rureraform-col-12">
                                             <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                                 <div class="question-label question_label">
                                                     <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
                                                 </div>
                                             </div>
                                             </div>
-                                            <div class="rureraform-col rureraform-col-12 skelton-hide">
+                                            <div class="rureraform-col rureraform-col-12">
                                             <div id="rureraform-element-24192" class="quiz-group rureraform-element-24192 rureraform-element ui-sortable-handle" data-type="checkbox">
                                                 <div class="rureraform-column-label">
                                                     <label class="rureraform-label">Mark two answers</label>
