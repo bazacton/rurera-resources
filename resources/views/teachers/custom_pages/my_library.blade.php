@@ -1058,7 +1058,7 @@
                                                     <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
                                                         <h6 class="skelton-hide skelton-height-lg skelton-mb-0">When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
                                                     </div>
-                                                    <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz">
+                                                    <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle skelton-hide skelton-height-lg skelton-mb-0" data-type="paragraph_quiz">
                                                         <i>Hint:&nbsp;&nbsp;Think about what happens inside cells during respiration and what is released.</i>
                                                         <div class="rureraform-element-cover"></div>
                                                     </div>
