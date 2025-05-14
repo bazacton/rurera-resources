@@ -156,9 +156,9 @@
                 <div class="quiz-setup-listings">
                     <div class="row">
                         <div class="col-12 col-lg-12 col-md-12">
-                            <div class="quiz-layout-edit-options skelton-hide">
+                            <div class="quiz-layout-edit-options">
                                 <div class="edit-options-right">
-                                    <div class="edit-options-controls">
+                                    <div class="edit-options-controls skelton-hide skelton-height-lg">
                                         <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up" data-trigger="hover"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
                                         <button type="button" class="arrow-down-btn" data-toggle="tooltip" data-placement="top" title="Move down" data-trigger="hover"><img src="/assets/default/svgs/arrow-down-btn.svg" alt=""></button>
 
@@ -222,70 +222,72 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="question-layout-holder mb-15 bg-white panel-border rounded-sm p-25 skelton-hide">
+                            <div class="question-layout-holder mb-15 bg-white panel-border rounded-sm p-25">
                                 <div class="question-layout-block">
                                     <form class="question-fields" action="javascript:;" data-question_id="10180">
-                                    <div class="left-content has-bg">
-                                        <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
-                                        <div class="question-layout row d-flex align-items-start">
-                                            <div class="rureraform-col rureraform-col-12">
-                                                <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
-                                                    <div class="question-top-info">
-                                                        <div class="question-count">
-                                                            <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt=""></span>
-                                                            <span class="question-count-lable">Question 1 of 20</span>
-                                                        </div>
-                                                        <div class="question-info">
-                                                            <span class="q-type"><img src="/assets/default/svgs/multi-choice.svg" alt="">Multiple choice</span>
-                                                            <span class="q-time">Avg time</span>
-                                                            <span class="q-point">1 point</span>
+                                        <div class="left-content has-bg">
+                                            <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
+                                            <div class="question-layout row d-flex align-items-start">
+                                                <div class="rureraform-col rureraform-col-12">
+                                                    <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
+                                                        <div class="question-top-info">
+                                                            <div class="question-count skelton-hide skelton-height-lg skelton-mb-0">
+                                                                <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt=""></span>
+                                                                <span class="question-count-lable">Question 1 of 20</span>
+                                                            </div>
+                                                            <div class="question-info">
+                                                                <span class="q-type skelton-hide skelton-height-lg skelton-mb-0"><img src="/assets/default/svgs/multi-choice.svg" alt="">Multiple choice</span>
+                                                                <span class="q-time skelton-hide skelton-height-lg skelton-mb-0">Avg time</span>
+                                                                <span class="q-point skelton-hide skelton-height-lg skelton-mb-0">1 point</span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="rureraform-col rureraform-col-12">
+                                                <div class="rureraform-col rureraform-col-12">
+                                                    <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
+                                                        <h4 class="skelton-hide skelton-height-lg skelton-mb-0">Read the text, then answer the question.</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="rureraform-col rureraform-col-12">
+                                                    <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle skelton-hide skelton-height-lg skelton-mb-0" data-type="paragraph_quiz"> Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm. <div class="rureraform-element-cover"></div>
+                                                </div>
+                                                </div>
+                                                <div class="rureraform-col rureraform-col-12">
                                                 <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                    <h4>Read the text, then answer the question.</h4>
+                                                    <div class="question-label question_label">
+                                                        <h6 class="skelton-hide skelton-height-lg skelton-mb-0">When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="rureraform-col rureraform-col-12">
-                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="paragraph_quiz"> Each day, a school has a break from 10:15 am to 10:30 am and lunchtime from 12:40 pm to 1:30 pm. <div class="rureraform-element-cover"></div>
-                                            </div>
-                                            </div>
-                                            <div class="rureraform-col rureraform-col-12">
-                                            <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle" data-type="question_label">
-                                                <div class="question-label question_label">
-                                                    <h6>When oxygen combines with glucose during respiration, energy and carbon dioxide are produced.</h6>
                                                 </div>
-                                            </div>
-                                            </div>
-                                            <div class="rureraform-col rureraform-col-12">
-                                            <div id="rureraform-element-24192" class="quiz-group rureraform-element-24192 rureraform-element ui-sortable-handle" data-type="checkbox">
-                                                <div class="rureraform-column-label">
-                                                <label class="rureraform-label">Mark two answers</label>
-                                                </div>
-                                                <div class="rureraform-column-input">
-                                                <div class="rureraform-input">
-                                                    <div class="form-box  rurera-in-row alphabet-list-style  ">
-                                                    <div class="form-field rureraform-cr-container-medium">
-                                                        <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-00-2424" value="3 hours 45 minutes">
-                                                        <label for="field-24192-00-2424"> 3 hours 45 minutes </label>
+                                                <div class="rureraform-col rureraform-col-12">
+                                                <div id="rureraform-element-24192" class="quiz-group rureraform-element-24192 rureraform-element ui-sortable-handle" data-type="checkbox">
+                                                    <div class="rureraform-column-label">
+                                                        <label class="rureraform-label skelton-hide skelton-height-lg">Mark two answers</label>
                                                     </div>
-                                                    <div class="form-field rureraform-cr-container-medium">
-                                                        <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-11-2424" value="4 hours 10 minutes">
-                                                        <label for="field-24192-11-2424"> 4 hours 10 minutes </label>
-                                                    </div>
-                                                    <div class="form-field rureraform-cr-container-medium">
-                                                        <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-22-2424" value="3 hours 30 minutes">
-                                                        <label for="field-24192-22-2424"> 3 hours 30 minutes </label>
-                                                    </div>
-                                                    <div class="form-field rureraform-cr-container-medium">
-                                                        <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-33-2424" value="4 hours 35 minutes">
-                                                        <label for="field-24192-33-2424"> 4 hours 35 minutes </label>
-                                                    </div>
-                                                    <div class="form-field rureraform-cr-container-medium">
-                                                        <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-44-2424" value="4 hours">
-                                                        <label for="field-24192-44-2424"> 4 hours </label>
+                                                    <div class="rureraform-column-input">
+                                                    <div class="rureraform-input">
+                                                        <div class="form-box  rurera-in-row alphabet-list-style">
+                                                        <div class="form-field rureraform-cr-container-medium skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-00-2424" value="3 hours 45 minutes">
+                                                            <label for="field-24192-00-2424"> 3 hours 45 minutes </label>
+                                                        </div>
+                                                        <div class="form-field rureraform-cr-container-medium skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-11-2424" value="4 hours 10 minutes">
+                                                            <label for="field-24192-11-2424"> 4 hours 10 minutes </label>
+                                                        </div>
+                                                        <div class="form-field rureraform-cr-container-medium skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-22-2424" value="3 hours 30 minutes">
+                                                            <label for="field-24192-22-2424"> 3 hours 30 minutes </label>
+                                                        </div>
+                                                        <div class="form-field rureraform-cr-container-medium skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-33-2424" value="4 hours 35 minutes">
+                                                            <label for="field-24192-33-2424"> 4 hours 35 minutes </label>
+                                                        </div>
+                                                        <div class="form-field rureraform-cr-container-medium skelton-hide skelton-height-lg skelton-mb-0">
+                                                            <input class="editor-field rureraform-checkbox-medium" data-min="2" type="checkbox" name="field-24192" id="field-24192-44-2424" value="4 hours">
+                                                            <label for="field-24192-44-2424"> 4 hours </label>
+                                                        </div>
+                                                        </div>
                                                     </div>
                                                     </div>
                                                 </div>
@@ -293,8 +295,6 @@
                                             </div>
                                             </div>
                                         </div>
-                                        </div>
-                                    </div>
                                     </form>
                                 </div>
                                 <div class="rureraform-col rureraform-col-12">
@@ -356,12 +356,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="listing-dropdown skelton-hide">
+                            <div class="listing-dropdown">
                                 <div class="btn-holder">
                                     <button class="" data-toggle="modal" data-target="#templatesleModal"><i class="fas fa-plus"></i></button>
                                 </div>
                             </div>
-                            <div class="quiz-layout-edit-options skelton-hide">
+                            <div class="quiz-layout-edit-options">
                                 <div class="edit-options-right">
                                 <div class="edit-options-controls">
                                         <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up" data-trigger="hover"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
@@ -425,7 +425,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mb-35 bg-white panel-border rounded-sm p-25 skelton-hide">
+                            <div class="mb-35 bg-white panel-border rounded-sm p-25">
                                 <div class="question-layout-block">
                                     <form class="question-fields" action="javascript:;" data-question_id="10180">
                                         <div class="left-content has-bg">
@@ -575,7 +575,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="quiz-layout-edit-options skelton-hide">
+                            <div class="quiz-layout-edit-options">
                                 <div class="edit-options-right">
                                 <div class="edit-options-controls">
                                         <button type="button" class="arrow-up-btn" data-toggle="tooltip" data-placement="top" title="Move up" data-trigger="hover"><img src="/assets/default/svgs/arrow-up-btn.svg" alt=""></button>
