@@ -194,7 +194,7 @@
                             </div>
                         </div>
                         <ul class="list-options question-list-options mb-15">
-                            <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
+                            <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> {{$assignment->quizQuestionsList->count()}} questions</li>
                             <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt="save"></span> {{$assignment->quizYear->getTitleAttribute()}}</li>
                             <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> {{$assignment->webinar->getTitleAttribute()}}</li>
                         </ul>
