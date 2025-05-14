@@ -89,17 +89,17 @@
                                             </div>
                                             <div class="text-holder">
                                                 <h3 class="skelton-hide">Sciency Science</h3>
-                                                <div class="author-info skelton-hide">
+                                                <div class="author-info">
                                                     <span class="info-text">
-                                                        <span>Kaiser K</span>
-                                                        <span>2 hours ago</span>
+                                                        <span class="skelton-hide">Kaiser K</span>
+                                                        <span class="skelton-hide">2 hours ago</span>
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options skelton-hide">
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 7th-8th  Grade</li>
-                                                <li><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
+                                            <ul class="list-options">
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 8 questions</li>
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 7th-8th  Grade</li>
+                                                <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Science</li>
                                             </ul>
                                         </a>
                                     </div>
