@@ -183,7 +183,10 @@
                         <div class="questions-header">
                             <div class="questions-header-inner">
                                 <div class="text-holder skelton-hide">
-                                    <h5 class="font-16 font-weight-bold"><span contenteditable="true">Exploring Magnetic Matrials and Their Uses</span><small>(18 questions)</small></h5>
+                                    <h5 class="font-16 font-weight-bold">
+                                        <span contenteditable="true">Exploring Magnetic Matrials and Their Uses</span>
+                                        <button type="button" class="edit-control"><img src="/assets/default/svgs/edit-simple.svg" alt="file-image"></button>
+                                    </h5>
                                 </div>
                                 <div class="questions-header-controls skelton-hide">
                                     <button type="button"><i class="fas fa-plus"></i> Add All</button>
