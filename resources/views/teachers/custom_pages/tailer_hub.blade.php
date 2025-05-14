@@ -88,7 +88,7 @@
                 </div>
                 <div class="mb-30 bg-white panel-border rounded-sm p-15 bulk-quiz">
                     <div class="bulk-heading">
-                        <h6 class="skelton-hide skelton-height-lg skelton-mb-0">Bulk Settings</h6>
+                        <h6 class="skelton-hide skelton-height-lg">Bulk Settings</h6>
                     </div>
                     <div class="bulk-ai">
                         <div class="bulk-ai-box skelton-hide skelton-height-lg skelton-mb-0">
