@@ -3434,6 +3434,16 @@ span.field-separated span:after {
     font-weight: 500;
     font-size: 14px;
 }
+.admin_teacher_role .edit-control {
+    border: 0;
+    background-color: inherit;
+    padding: 0;
+    margin-left: 5px;
+}
+.admin_teacher_role .edit-control img {
+    width: 15px;
+    height: 15px;
+}
 .questions-header .text-holder .icon-box {
     height: 28px;
     width: 28px;
