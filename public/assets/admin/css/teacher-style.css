@@ -5306,7 +5306,7 @@ button.print-download-btn {
 .admin_teacher_role .classes-card:has(.skelton-hide) .card-options.dropdown,
 .admin_teacher_role .skelton-hide h6, .admin_teacher_role .skelton-hide strong,
 .rureraform-table td .skelton-hide .progress-bar.bg-success:after,
-.admin_teacher_role .skelton-hide .form-control {visibility: hidden;}
+.admin_teacher_role .skelton-hide .form-control, .card.card-statistic-1 .card-header.skelton-hide h4 {visibility: hidden;}
 .search-filters.skelton-hide {display: inline-flex;}
 .admin-rurera-tabs.nav-pills li.skelton-hide .nav-link.active {border-bottom: 0;}
 .assignments-table .card:has(.skelton-hide) {border: 0; box-shadow: none;}
@@ -5403,6 +5403,15 @@ button.print-download-btn {
     border-color: transparent;
     box-shadow: none;
     margin-top: 10px;
+}
+.card.card-statistic-1 .card-header.skelton-hide {
+    min-height: 20px;
+}
+.card.card-statistic-1 .card-body.skelton-hide {
+    flex: auto;
+    min-height: 20px;
+    color: transparent;
+    max-height: 20px;
 }
 /* Skeleton Loading Style End */
 
