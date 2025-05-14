@@ -59,11 +59,11 @@
                                     <img src="{{ $user->getAvatar() }}" alt="{{ $user->get_full_name() }}">
                                     </span>
                             </span>
-                            <div class="card-title-holder skelton-hide">
-                                <h5>{{ $user->get_full_name() }}</h5>
+                            <div class="card-title-holder">
+                                <h5 class="skelton-hide skelton-height-lg">{{ $user->get_full_name() }}</h5>
                             </div>
-                            <div class="author-contact-info skelton-hide">
-                                <a href="#"><i class="fas fa-envelope"></i> {{ $user->email }}</a>
+                            <div class="author-contact-info">
+                                <a href="#" class="skelton-hide skelton-height-lg"><i class="fas fa-envelope"></i> {{ $user->email }}</a>
                                 @if($user->mobile != '')
                                 <span class="phone-number-box">
                                     <i class="fas fa-phone"></i>
@@ -73,7 +73,7 @@
                                 </span>
                                 @endif
                             </div>
-                            <div class="author-designation skelton-hide">
+                            <div class="author-designation">
                                 @if($user->getTeacherClasses->count() > 0)
                                     @foreach($user->getTeacherClasses as $classTeacherObj)
                                         @php
@@ -84,8 +84,8 @@
                                 @endif
                             </div>
                         </div>
-                        <div class="teacher-list-controls skelton-hide">
-                            <button type="button" class="edit-btn"><img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil"></button>
+                        <div class="teacher-list-controls">
+                            <button type="button" class="edit-btn skelton-hide skelton-height-lg skelton-mb-0"><img src="/assets/default/svgs/edit-pencil.svg" alt="edit-pencil"></button>
                         </div>
 
                         <script>
