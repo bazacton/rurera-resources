@@ -2568,6 +2568,7 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
 }
 .admin_teacher_role .select2-container .select2-dropdown {
     border-color: #ddd;
+    width: auto !important;
 }
 .admin_teacher_role .select2-container .select2-dropdown input.select2-search__field {
     border-color: #ddd;
