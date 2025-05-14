@@ -3423,6 +3423,9 @@ span.field-separated span:after {
     margin-bottom: 0;
     flex-wrap: wrap;
 }
+.questions-header-inner h5 span {
+    outline: none;
+}
 .document-pdf .questions-header-inner h5,
 .document-pdf .rureraform-element h4 {
     font-size: inherit;
