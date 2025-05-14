@@ -5365,7 +5365,9 @@ button.print-download-btn {
     margin-bottom: 0;
 }
 .bulk-heading .skelton-hide,
-.search-lable.skelton-hide {
+.search-lable.skelton-hide,
+.admin_teacher_role .classes-card .card-body p.skelton-hide,
+.admin_teacher_role .skelton-hide.card-title {
     display: inline-block;
 }
 .rureraform-table td:has(.progress.skelton-hide) {
@@ -5374,6 +5376,13 @@ button.print-download-btn {
 }
 .admin_teacher_role .teacher-controls .create-class-btn.skelton-hide {
     color: transparent;
+}
+.admin_teacher_role .skelton-hide.card-title {
+    margin-bottom: 10px;
+}
+.admin_teacher_role .skelton-hide.progress {
+    height: 12px !important;
+    min-height: 12px;
 }
 /* Skeleton Loading Style End */
 
