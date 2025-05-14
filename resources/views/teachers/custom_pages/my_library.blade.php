@@ -695,7 +695,7 @@
                                             <div class="rureraform-col rureraform-col-12">
                                             <div id="rureraform-element-24192" class="quiz-group rureraform-element-24192 rureraform-element ui-sortable-handle" data-type="checkbox">
                                                 <div class="rureraform-column-label">
-                                                    <label class="rureraform-label skelton-hide skelton-height-lg skelton-mb-0">Mark two answers</label>
+                                                    <label class="rureraform-label skelton-hide skelton-height-lg">Mark two answers</label>
                                                 </div>
                                                 <div class="rureraform-column-input">
                                                 <div class="rureraform-input">
