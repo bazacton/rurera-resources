@@ -1208,7 +1208,7 @@
                                                     </div>
                                                     <div class="rureraform-col rureraform-col-12 skelton-hide skelton-height-lg">
                                                         <div id="rureraform-element-0" class="rureraform-element-0 rureraform-element quiz-group rureraform-element-html ui-sortable-handle skelton-hide skelton-height-lg skelton-mb-0" data-type="paragraph_quiz">
-                                                        <p>
+                                                        <p class="skelton-hide skelton-height-lg skelton-mb-0">
                                                             <i>Hint: Think about the Moon’s effect on Earth, especially on tides and sunlight.</i>
                                                         </p>
                                                         <div class="rureraform-element-cover"></div>
