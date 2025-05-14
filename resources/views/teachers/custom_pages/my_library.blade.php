@@ -663,16 +663,16 @@
                                             <div class="rureraform-col rureraform-col-12">
                                                 <div class="rureraform-element quiz-group rureraform-element-html ui-sortable-handle">
                                                     <div class="question-top-info">
-                                                        <div class="question-count">
+                                                        <div class="question-count skelton-hide skelton-height-lg skelton-mb-0">
                                                             <span class="icon-box"><img src="/assets/default/svgs/question-simple.svg" alt="question-simple"></span>
                                                             <span class="question-count-lable">Question 1 of 20</span>
                                                         </div>
                                                         <div class="question-info">
-                                                            <span class="q-type"><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice">Multiple choice</span>
-                                                            <span class="q-time">Avg time</span>
-                                                            <span class="q-point">1 point</span>
+                                                            <span class="q-type skelton-hide skelton-height-lg skelton-mb-0"><img src="/assets/default/svgs/multi-choice.svg" alt="multi-choice">Multiple choice</span>
+                                                            <span class="q-time skelton-hide skelton-height-lg skelton-mb-0">Avg time</span>
+                                                            <span class="q-point skelton-hide skelton-height-lg skelton-mb-0">1 point</span>
                                                         </div>
-                                                        <button type="button" class="question-add-btn" data-toggle="modal" data-target="#general-knowledge-modal"><i class="fas fa-plus"></i> Add</button>
+                                                        <button type="button" class="question-add-btn skelton-hide skelton-height-lg skelton-mb-0" data-toggle="modal" data-target="#general-knowledge-modal"><i class="fas fa-plus"></i> Add</button>
                                                     </div>
                                                 </div>
                                             </div>
