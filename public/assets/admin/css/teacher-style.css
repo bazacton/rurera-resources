@@ -2563,6 +2563,20 @@ body:has(.canvas-editable-options-holder.active) .blank-canvas-sidebar{
     transform: rotate(45deg);
     margin-top: 0;
 }
+.admin_teacher_role .select2-container {
+    z-index: 99999 !important;
+}
+.admin_teacher_role .select2-container .select2-dropdown {
+    border-color: #ddd;
+}
+.admin_teacher_role .select2-container .select2-dropdown input.select2-search__field {
+    border-color: #ddd;
+    height: 25px;
+    min-height: auto;
+}
+.admin_teacher_role .select2-container .select2-dropdown li {
+    line-height: normal;
+}
 .general-knowledge-modal input[type="text"] {
     padding: 0 0 0 25px;
     border: 0;
