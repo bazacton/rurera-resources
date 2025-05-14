@@ -5399,6 +5399,11 @@ button.print-download-btn {
 .admin-rurera-tabs .skelton-hide.nav-item, .admin-rurera-tabs.nav-pills .skelton-hide.nav-item {
     min-width: 60px;
 }
+.admin_teacher_role button.skelton-hide.btn {
+    border-color: transparent;
+    box-shadow: none;
+    margin-top: 10px;
+}
 /* Skeleton Loading Style End */
 
 @media screen and (max-width: 992px) {
