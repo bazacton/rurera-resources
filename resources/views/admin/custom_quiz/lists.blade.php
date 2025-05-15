@@ -35,11 +35,7 @@
         </div>
         <div class="section-body">
             <div class="rureraform-search-field mb-15">
-                <div class="input-field skelton-hide skelton-height-lg">
-                    <input type="text" placeholder="Search question..">
-                    <button type="button"><i class="fas fa-search"></i> <span>Search questions</span></button>
-                </div>
-                <div class="search-filters mb-0">
+                <div class="search-filters mb-0 ml-auto">
                     <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
                         <span>Sort by:</span>
                         <select>
