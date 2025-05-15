@@ -1405,6 +1405,9 @@
                 $scrollableDiv.getNiceScroll().resize();
             });
 
+            $(".topic-part-item-list:first").click();
+
+
         });
     </script>
 
@@ -1414,8 +1417,8 @@
         var CustomItemloaderDivMain = $(".custom-topic-part-item-data");
         var topicPartItemDataRequest = null;
         $(document).on('click', '.topic-part-item-list', function () {
-            //$(".topic-part-item-list").removeClass('active');
-            //$(this).addClass('active');
+            $(".topic-part-item-list").removeClass('active');
+            $(this).addClass('active');
 
             var questions_sort_by = $(".questions_sort_by").val();
             rurera_loader(ItemloaderDivMain, 'div');
@@ -2254,6 +2257,20 @@
                     $(".topic-part-item-data").html(response);
                 }
             });
+
+        });
+
+        $('body').on('change', '.questions_sort_by', function (e) {
+            var question_search = $(".question_search").val();
+
+            if(question_search != ''){
+                $(".question-search-btn").click();
+            }else{
+                if($(".topic-part-item-list.active").length > 0){
+                    $(".topic-part-item-list.active").click();
+                }
+
+            }
 
         });
 
