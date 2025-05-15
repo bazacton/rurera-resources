@@ -335,7 +335,7 @@
                 <div class="card">
                     <div class="card-header">
                         @can('admin_assignments_create')
-                        <div class="text-right skelton-hide">
+                        <div class="text-right skelton-hide skelton-height-lg skelton-mb-0">
                             <a href="{{ getAdminPanelUrl() }}/assignments/create" class="btn btn-primary ml-2">Create Assignment</a>
                         </div>
                         @endcan
