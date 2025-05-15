@@ -344,43 +344,43 @@
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
-                                <tr class="skelton-hide">
-                                    <th class="text-left">{{ trans('admin/main.title') }}</th>
-                                    <th class="text-center">Type</th>
-                                    <th class="text-center">Tables</th>
-                                    <th class="text-center">Total Questions</th>
-                                    <th class="text-left">Start Date</th>
-                                    <th class="text-left">End Date</th>
-                                    <th class="text-left">Recurring</th>
-                                    <th class="text-center">{{ trans('admin/main.status') }}</th>
-                                    <th>{{ trans('admin/main.actions') }}</th>
+                                <tr>
+                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.title') }}</th>
+                                    <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">Type</th>
+                                    <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">Tables</th>
+                                    <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">Total Questions</th>
+                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Start Date</th>
+                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">End Date</th>
+                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Recurring</th>
+                                    <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.status') }}</th>
+                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.actions') }}</th>
                                 </tr>
 
                                 @foreach($assignments as $assignmentObj)
-                                <tr class="skelton-hide">
-                                    <td>
+                                <tr>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <span>{{ $assignmentObj->title }}</span>
                                     </td>
-                                    <td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <span>{{ $assignmentObj->assignment_type }}</span>
                                     </td>
-                                    <td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <span>{{ implode(', ', json_decode($assignmentObj->tables_no)) }}</span>
                                     </td>
-                                    <td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <span>{{ $assignmentObj->no_of_questions }}</span>
                                     </td>
-                                    <td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <span>{{ dateTimeFormat($assignmentObj->assignment_start_date, 'j M Y H:i') }}</span>
                                     </td>
-                                    <td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <span>{{ dateTimeFormat($assignmentObj->assignment_end_date, 'j M Y H:i') }}</span>
                                     </td>
-                                    <td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <span>{{ $assignmentObj->recurring_type }}</span>
                                     </td>
 
-                                    <td class="text-center">
+                                    <td class="text-center skelton-hide skelton-height-lg skelton-mb-0">
                                         @if($assignmentObj->status != 'inactive')
                                         <span class="text-success">{{ trans('admin/main.active') }}</span>
                                         @else
@@ -388,7 +388,7 @@
                                         @endif
                                     </td>
 
-                                    <td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
 
                                         @can('admin_assignments_edit')
                                         <a href="{{ getAdminPanelUrl() }}/assignments/{{ $assignmentObj->id }}/edit"
