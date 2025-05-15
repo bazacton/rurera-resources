@@ -5,7 +5,7 @@
           <div class="question-layout-block">
               <form class="question-fields" action="javascript:;" data-question_id="{{$questionObj->id}}">
                   <div class="left-content has-bg">
-                      <div id="rureraform-form-1" class=" rureraform-form rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
+                      <div id="rureraform-form-11" class=" rureraform-form1 rureraform-elements rureraform-form-input-medium rureraform-form-icon-inside rureraform-form-description-bottom ui-sortable" _data-parent="1" _data-parent-col="0" style="display: block;">
                           <div class="question-layout row d-flex align-items-start">
                               <button type="button" class="question-add-btn add-to-list-btn"><i class="fas fa-plus"></i> Add</button>
                               @php $question_layout = $QuestionsAttemptController->get_question_layout($questionObj); @endphp
