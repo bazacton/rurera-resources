@@ -30,11 +30,11 @@
                                 <input type="text" placeholder="Search question..">
                                 <button type="button"><i class="fas fa-search"></i> <span>Search questions</span></button>
                             </div>
-                            <div class="featured-controls skelton-hide skelton-height-lg">
+                            <!-- <div class="featured-controls skelton-hide skelton-height-lg">
                                 <button type="button" class="active">Featured List</button>
                                 <button type="button">Community</button>
                                 <button type="button">My Collection</button>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="search-filters mb-0">
                             <div class="select-field skelton-hide">
