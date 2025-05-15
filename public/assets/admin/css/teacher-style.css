@@ -5419,7 +5419,7 @@ button.print-download-btn {
     border: 5px solid transparent;
     padding: 0 !important;
     border-left: 0;
-    color: transparent;
+    color: transparent !important;
     min-height: 20px;
     max-height: 20px;
     line-height: normal;
