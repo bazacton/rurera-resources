@@ -3414,6 +3414,12 @@ span.field-separated span:after {
     display: inline-block;
     vertical-align: middle;
 }
+.rureraform-search-field:has(.search-filters) .input-field {
+    width: calc(100% - 735px);
+}
+.rureraform-search-field .search-filters .select-field {
+    padding: 11px 10px;
+}
 .questions-header .icon-box img {
     height: 15px;
     width: 15px;
