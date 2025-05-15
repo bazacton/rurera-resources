@@ -252,7 +252,7 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="card-footer text-center skelton-hide skelton-height-lg skelton-mb-0">
+                        <div class="card-footer text-center">
                             {{ $quizzes->appends(request()->input())->links() }}
                         </div>
                     </div>
