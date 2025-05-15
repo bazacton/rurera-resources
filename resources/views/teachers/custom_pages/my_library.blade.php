@@ -35,6 +35,36 @@
                                 <button type="button">Community</button>
                                 <button type="button">My Collection</button>
                             </div> -->
+                            <div class="search-filters mb-0">
+                                <div class="select-field">
+                                    <span>Sort by:</span>
+                                    <select>
+                                        <option value="Most relevant">Most relevant</option>
+                                        <option value="Most recent">Most recent</option>
+                                    </select>
+                                </div>
+                                <div class="select-field">
+                                    <span>Grade:</span>
+                                    <select>
+                                        <option value="year 01">year 01</option>
+                                        <option value="year 02">year 02</option>
+                                    </select>
+                                </div>
+                                <div class="select-field">
+                                    <span>Subject:</span>
+                                    <select>
+                                        <option value="English">English</option>
+                                        <option value="Science">Science</option>
+                                    </select>
+                                </div>
+                                <div class="select-field">
+                                    <span>No. of questions:</span>
+                                    <select>
+                                        <option value="question 01">question 01</option>
+                                        <option value="question 02">question 02</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                         <div class="search-filters mb-0">
                             <div class="select-field skelton-hide">
