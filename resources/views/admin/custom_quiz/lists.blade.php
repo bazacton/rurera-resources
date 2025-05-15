@@ -192,17 +192,17 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-striped font-14">
-                                    <tr class="skelton-hide">
-                                        <th class="text-left">{{ trans('admin/main.title') }}</th>
-                                        <th class="text-left">Created By</th>
-                                        <th class="text-center">{{ trans('admin/main.question_count') }}</th>
-                                        <th class="text-center">{{ trans('admin/main.status') }}</th>
-                                        <th>{{ trans('admin/main.actions') }}</th>
+                                    <tr>
+                                        <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.title') }}</th>
+                                        <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Created By</th>
+                                        <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.question_count') }}</th>
+                                        <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.status') }}</th>
+                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.actions') }}</th>
                                     </tr>
 
                                     @foreach($quizzes as $quiz)
-                                    <tr class="skelton-hide">
-                                        <td>
+                                    <tr>
+                                        <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                             <span>{{ $quiz->title }}</span>
                                             @if(!empty($quiz->webinar))
                                             <small class="d-block text-left text-primary">{{ $quiz->webinar->title
@@ -210,13 +210,13 @@
                                             @endif
                                         </td>
 
-                                        <td class="text-left">{{ $quiz->creator->get_full_name() }}</td>
+                                        <td class="text-left skelton-hide skelton-height-lg skelton-mb-0">{{ $quiz->creator->get_full_name() }}</td>
 
-                                        <td class="text-center">
+                                        <td class="text-center skelton-hide skelton-height-lg skelton-mb-0">
                                             {{ $quiz->quizQuestionsList->count() }}
                                         </td>
 
-                                        <td class="text-center">
+                                        <td class="text-center skelton-hide skelton-height-lg skelton-mb-0">
                                             @if($quiz->status === \App\Models\Quiz::ACTIVE)
                                             <span class="text-success">{{ trans('admin/main.active') }}</span>
                                             @else
@@ -224,7 +224,7 @@
                                             @endif
                                         </td>
 
-                                        <td>
+                                        <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                             @can('admin_quizzes_results')
                                             <a href="{{ getAdminPanelUrl() }}/quizzes/{{ $quiz->id }}/results"
                                             class="btn-transparent btn-sm text-primary" data-toggle="tooltip"
@@ -252,7 +252,7 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="card-footer text-center">
+                        <div class="card-footer text-center skelton-hide skelton-height-lg skelton-mb-0">
                             {{ $quizzes->appends(request()->input())->links() }}
                         </div>
                     </div>
