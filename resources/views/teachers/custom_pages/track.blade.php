@@ -23,7 +23,7 @@
             </div>
             <div class="col-12">
                 <div class="quiz-data-holder skeleton mb-30">
-                    <div class="quiz-data-filters skelton-hide">
+                    <div class="quiz-data-filters">
                         <span class="sorting-lable">Filter by:</span>
                         <div class="select-field">
                             <select>
@@ -61,7 +61,7 @@
                     </div>
                     <div class="quiz-data-table bg-white panel-border table-sm">
                         <table>
-                            <thead class="skelton-hide">
+                            <thead>
                                 <tr>
                                     <th>
                                         <div class="checkbox-field">
@@ -77,7 +77,7 @@
                                     <th class="text-center">Actions</th>
                                 </tr>
                             </thead>
-                            <tbody class="skelton-hide">
+                            <tbody>
                                 <tr>
                                     <td>
                                         <div class="checkbox-field">
