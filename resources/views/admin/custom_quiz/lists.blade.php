@@ -22,11 +22,11 @@
                     <div class="card-icon bg-primary skelton-hide">
                         <i class="fas fa-file-alt"></i>
                     </div>
-                    <div class="card-wrap">
-                        <div class="card-header skelton-hide skelton-height-lg skelton-mb-0">
+                    <div class="card-wrap skelton-hide">
+                        <div class="card-header">
                             <h4>Total Quizzes</h4>
                         </div>
-                        <div class="card-body skelton-hide skelton-height-lg skelton-mb-0">
+                        <div class="card-body">
                             {{ $totalAssignments }}
                         </div>
                     </div>
@@ -34,49 +34,17 @@
             </div>
         </div>
         <div class="section-body">
-            <div class="rureraform-search-field mb-15">
-                <div class="search-filters mb-0 ml-auto">
-                    <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
-                        <span>Sort by:</span>
-                        <select>
-                            <option value="Most relevant">Most relevant</option>
-                            <option value="Most recent">Most recent</option>
-                        </select>
-                    </div>
-                    <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
-                        <span>Grade:</span>
-                        <select>
-                            <option value="year 01">year 01</option>
-                            <option value="year 02">year 02</option>
-                        </select>
-                    </div>
-                    <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
-                        <span>Subject:</span>
-                        <select>
-                            <option value="English">English</option>
-                            <option value="Science">Science</option>
-                        </select>
-                    </div>
-                    <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
-                        <span>No. of questions:</span>
-                        <select>
-                            <option value="question 01">question 01</option>
-                            <option value="question 02">question 02</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
             <section class="card">
                 <div class="card-body">
-                    <form action="{{ getAdminPanelUrl() }}/quizzes" method="get" class="row mb-0">
+                    <form action="{{ getAdminPanelUrl() }}/quizzes" method="get" class="row mb-0 skelton-hide">
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg">
+                            <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.search') }}</label>
                                 <input type="text" class="form-control" name="title" value="{{ request()->get('title') }}">
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg">
+                            <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.start_date') }}</label>
                                 <div class="input-group">
                                     <input type="date" id="fsdate" class="text-left form-control" name="from"
@@ -85,7 +53,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg">
+                            <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                                 <div class="input-group">
                                     <input type="date" id="lsdate" class="text-left form-control" name="to"
@@ -94,7 +62,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg">
+                            <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.filters') }}</label>
                                 <select name="sort" data-plugin-selectTwo class="form-control populate">
                                     <option value="">{{ trans('admin/main.filter_type') }}</option>
@@ -129,7 +97,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
+                            <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.instructor') }}</label>
                                 <select name="teacher_ids[]" multiple="multiple" data-search-option="just_teacher_role"
                                         class="form-control search-user-select2"
@@ -144,7 +112,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
+                            <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.class') }}</label>
                                 <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2"
                                         data-placeholder="Search classes">
@@ -158,7 +126,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
+                            <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.status') }}</label>
                                 <select name="statue" data-plugin-selectTwo class="form-control populate">
                                     <option value="">{{ trans('admin/main.all_status') }}</option>
@@ -172,7 +140,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
-                            <button type="submit" class="btn btn-primary w-100 skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.show_results') }}
+                            <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}
                             </button>
                         </div>
                     </form>
@@ -192,17 +160,17 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-striped font-14">
-                                    <tr>
-                                        <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.title') }}</th>
-                                        <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Created By</th>
-                                        <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.question_count') }}</th>
-                                        <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.status') }}</th>
-                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.actions') }}</th>
+                                    <tr class="skelton-hide">
+                                        <th class="text-left">{{ trans('admin/main.title') }}</th>
+                                        <th class="text-left">Created By</th>
+                                        <th class="text-center">{{ trans('admin/main.question_count') }}</th>
+                                        <th class="text-center">{{ trans('admin/main.status') }}</th>
+                                        <th>{{ trans('admin/main.actions') }}</th>
                                     </tr>
 
                                     @foreach($quizzes as $quiz)
-                                    <tr>
-                                        <td class="skelton-hide skelton-height-lg skelton-mb-0">
+                                    <tr class="skelton-hide">
+                                        <td>
                                             <span>{{ $quiz->title }}</span>
                                             @if(!empty($quiz->webinar))
                                             <small class="d-block text-left text-primary">{{ $quiz->webinar->title
@@ -210,13 +178,13 @@
                                             @endif
                                         </td>
 
-                                        <td class="text-left skelton-hide skelton-height-lg skelton-mb-0">{{ $quiz->creator->get_full_name() }}</td>
+                                        <td class="text-left">{{ $quiz->creator->get_full_name() }}</td>
 
-                                        <td class="text-center skelton-hide skelton-height-lg skelton-mb-0">
+                                        <td class="text-center">
                                             {{ $quiz->quizQuestionsList->count() }}
                                         </td>
 
-                                        <td class="text-center skelton-hide skelton-height-lg skelton-mb-0">
+                                        <td class="text-center">
                                             @if($quiz->status === \App\Models\Quiz::ACTIVE)
                                             <span class="text-success">{{ trans('admin/main.active') }}</span>
                                             @else
@@ -224,7 +192,7 @@
                                             @endif
                                         </td>
 
-                                        <td class="skelton-hide skelton-height-lg skelton-mb-0">
+                                        <td>
                                             @can('admin_quizzes_results')
                                             <a href="{{ getAdminPanelUrl() }}/quizzes/{{ $quiz->id }}/results"
                                             class="btn-transparent btn-sm text-primary" data-toggle="tooltip"

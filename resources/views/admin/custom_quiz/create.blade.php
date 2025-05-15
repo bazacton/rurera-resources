@@ -196,7 +196,7 @@
                         <ul class="list-options question-list-options mb-15">
                             <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> {{$assignment->quizQuestionsList->count()}} questions</li>
                             <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/save.svg" alt="save"></span> {{$assignment->quizYear->getTitleAttribute()}}</li>
-                            <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> {{$assignment->webinar->getTitleAttribute()}}</li>
+                            <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> {{isset($assignment->webinar->id)? $assignment->webinar->getTitleAttribute() : '-'}}</li>
                         </ul>
                         <div class="class-controls">
                             <div class="left-area d-inline-flex align-items-center">
@@ -235,14 +235,44 @@
                     <div class="mb-30 bg-white panel-border rounded-sm p-15 create-element-box" style="display: none;">
                         <h6 class="search-lable">Search question from library</h6>
                         <div class="rureraform-search-field mb-15">
-                            <div class="input-field">
+                            <div class="input-field skelton-hide skelton-height-lg">
                                 <input type="text" placeholder="Search question..">
                                 <button type="button"><i class="fas fa-search"></i> <span>Search questions</span></button>
                             </div>
-                            <div class="featured-controls">
+                            <!-- <div class="featured-controls skelton-hide skelton-height-lg">
                                 <button type="button" class="active">Featured List</button>
                                 <button type="button">Community</button>
                                 <button type="button">My Collection</button>
+                            </div> -->
+                            <div class="search-filters mb-0">
+                                <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
+                                    <span>Sort by:</span>
+                                    <select>
+                                        <option value="Most relevant">Most relevant</option>
+                                        <option value="Most recent">Most recent</option>
+                                    </select>
+                                </div>
+                                <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
+                                    <span>Grade:</span>
+                                    <select>
+                                        <option value="year 01">year 01</option>
+                                        <option value="year 02">year 02</option>
+                                    </select>
+                                </div>
+                                <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
+                                    <span>Subject:</span>
+                                    <select>
+                                        <option value="English">English</option>
+                                        <option value="Science">Science</option>
+                                    </select>
+                                </div>
+                                <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
+                                    <span>No. of questions:</span>
+                                    <select>
+                                        <option value="question 01">question 01</option>
+                                        <option value="question 02">question 02</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="search-filters mb-0">
@@ -549,14 +579,18 @@
                                         <div class="staff-picks-tabs">
                                             <div class="mb-30 bg-white panel-border rounded-sm p-15">
                                                 <div class="rureraform-search-field mb-15">
-                                                    <div class="input-field">
-                                                        <input type="text" placeholder="Search question..">
-                                                        <button type="button"><i class="fas fa-search"></i> <span>Search questions</span></button>
+                                                    <div class="input-field skelton-height-lg">
+                                                        <input type="text" class="question_search" placeholder="Search question..">
+                                                        <button type="button" class="question-search-btn"><i class="fas fa-search"></i> <span>Search questions</span></button>
                                                     </div>
-                                                    <div class="featured-controls">
-                                                        <button type="button" class="active">Featured List</button>
-                                                        <button type="button">Community</button>
-                                                        <button type="button">My Collection</button>
+                                                    <div class="search-filters mb-0">
+                                                        <div class="select-field skelton-height-lg skelton-mb-0">
+                                                            <span>Sort by:</span>
+                                                            <select name="questions_sort_by" class="questions_sort_by">
+                                                                <option value="most_relevant">Most relevant</option>
+                                                                <option value="most_recent">Most recent</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="search-filters mb-0 conditional-block topics_block">
@@ -1382,6 +1416,8 @@
         $(document).on('click', '.topic-part-item-list', function () {
             //$(".topic-part-item-list").removeClass('active');
             //$(this).addClass('active');
+
+            var questions_sort_by = $(".questions_sort_by").val();
             rurera_loader(ItemloaderDivMain, 'div');
             var topic_part_item_id = $(this).attr('data-id');
             topicPartItemDataRequest = $.ajax({
@@ -1395,7 +1431,7 @@
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
-                data: {'topic_part_item_id': topic_part_item_id},
+                data: {'topic_part_item_id': topic_part_item_id, 'questions_sort_by': questions_sort_by},
                 success: function (response) {
                     rurera_remove_loader(ItemloaderDivMain, 'button');
                     $(".topic-part-item-data").html(response);
@@ -1715,6 +1751,30 @@
             });
 
         });
+
+        $('body').on('click', '.question-edit-btn', function (e) {
+            var question_id = $(this).attr('data-id');
+            $(".ai-questions-modal-canvas").modal('show');
+            var loaderDiv = $('.ai-questions-modal-canvas-block');
+            rurera_loader(loaderDiv, 'button');
+
+            var thisObj = $(this);
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/custom_quiz/question_edit',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"question_id": question_id},
+                success: function (return_data) {
+                    rurera_remove_loader(loaderDiv, 'button');
+                    $(".ai-questions-modal-canvas-block").html(return_data);
+                }
+            });
+
+        });
+
+
 
 
 
@@ -2166,6 +2226,38 @@
             }
             //rearrange_question();
         });
+        var questionSearchRequest = null;
+        $('body').on('click', '.question-search-btn', function (e) {
+            var question_search = $(".question_search").val();
+            var questions_sort_by = $(".questions_sort_by").val();
+
+
+            rurera_loader($(".topic-part-item-data"), 'div');
+            rurera_loader($(".question-search-btn"), 'div');
+
+            var sub_chapter_id = $(this).val();
+            questionSearchRequest = $.ajax({
+                type: "GET",
+                url: '/admin/custom_quiz/question_search',
+                beforeSend: function () {
+                    if (questionSearchRequest != null) {
+                        questionSearchRequest.abort();
+                    }
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {'question_search': question_search, 'questions_sort_by': questions_sort_by},
+                success: function (response) {
+                    rurera_remove_loader($(".topic-part-item-data"), 'button');
+                    rurera_remove_loader($(".question-search-btn"), 'button');
+                    $(".topic-part-item-data").html(response);
+                }
+            });
+
+        });
+
+
     </script>
 
 @endpush
