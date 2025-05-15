@@ -24,8 +24,8 @@
             <div class="col-12">
                 <div class="quiz-data-holder skeleton mb-30">
                     <div class="quiz-data-filters">
-                        <span class="sorting-lable">Filter by:</span>
-                        <div class="select-field">
+                        <span class="sorting-lable skelton-hide skelton-height-lg skelton-mb-0">Filter by:</span>
+                        <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
                             <select>
                                 <option value="All Games">All Games</option>
                                 <option value="Footbal">Footbal</option>
@@ -34,7 +34,7 @@
                                 <option value="Hockey">Hockey</option>
                             </select>
                         </div>
-                        <div class="select-field">
+                        <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
                             <select>
                                 <option value="All Reports">All Reports</option>
                                 <option value="Weekly Reports">Weekly Reports</option>
@@ -42,7 +42,7 @@
                                 <option value="Yearly Reports">Yearly Reports</option>
                             </select>
                         </div>
-                        <div class="select-field">
+                        <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
                             <select>
                                 <option value="All Classes">All Classes</option>
                                 <option value="Grade 1">Grade 1</option>
@@ -50,7 +50,7 @@
                                 <option value="Grade 3">Grade 3</option>
                             </select>
                         </div>
-                        <div class="select-field">
+                        <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
                             <select>
                                 <option value="All Classes">Filter by Date</option>
                                 <option value="04/12/2024">04/12/2024</option>
@@ -63,23 +63,23 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th>
+                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <div class="checkbox-field">
                                             <input type="checkbox" id="q-type">
                                             <label for="q-type">Type</label>
                                         </div>
                                     </th>
-                                    <th>Quiz Name</th>
-                                    <th class="text-center">Total <br> Participants</th>
-                                    <th>Accuracy</th>
-                                    <th>Code</th>
-                                    <th>Class</th>
-                                    <th class="text-center">Actions</th>
+                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Quiz Name</th>
+                                    <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">Total <br> Participants</th>
+                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Accuracy</th>
+                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Code</th>
+                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Class</th>
+                                    <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <div class="checkbox-field">
                                             <input type="checkbox" id="assigned">
                                             <label for="assigned">
@@ -87,12 +87,12 @@
                                             </label>
                                         </div>
                                     </td>
-                                    <td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         Science
                                         <small>Dec 3 - <em>Runing</em></small>
                                     </td>
-                                    <td class="text-center">2</td>
-                                    <td>
+                                    <td class="text-center skelton-hide skelton-height-lg skelton-mb-0">2</td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <div class="progress-holder">
                                             <div class="progress-box">
                                                 <div class="circle_percent" data-percent="50">
@@ -107,10 +107,10 @@
                                         </div>
                                     </td>
                                     <td></td>
-                                    <td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <span class="c-grade">Grade 6</span>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="text-center skelton-hide skelton-height-lg skelton-mb-0">
                                         <div class="quiz-data-controls">
                                             <button type="button">Edit Questions</button>
                                             <div class="dropdown-box">
