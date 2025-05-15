@@ -442,7 +442,7 @@
                                         <label>Subjects</label>
                                         <select data-return_type="option"
                                                 data-default_id="{{isset( $assignment->subject_id)? $assignment->subject_id : 0}}" data-chapter_id="{{isset( $assignment->chapter_id )? $assignment->chapter_id : 0}}"
-                                                class="ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
+                                                class=" ajax-courses-dropdown year_subjects form-control select2 @error('subject_id') is-invalid @enderror"
                                                 id="subject_id" name="subject_id">
                                             <option disabled selected>Subject</option>
                                         </select>
@@ -616,29 +616,12 @@
                                                     <div class="select-field">
                                                         <span>Subject:</span>
                                                         <select data-chapter_id="" id="subject_id"
-                                                                class="rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
+                                                                class="sub-chapters-list-subject rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
                                                                 name="subject_id" data-next_index="chapter_id" data-next_value="">
                                                             <option value="">Please select year, subject</option>
                                                         </select>
                                                     </div>
 
-                                                    <div class="select-field">
-                                                        <span>Topic:</span>
-                                                        <select data-sub_chapter_id="" id="chapter_id"
-                                                                class="rurera-req-field form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
-                                                                name="chapter_id" data-disabled="{{isset($already_created_bulk_lists)? json_encode($already_created_bulk_lists) : ''}}" data-next_index="sub_chapter_id" data-next_value="">
-                                                            <option value="">Please select year, subject</option>
-                                                        </select>
-                                                    </div>
-
-                                                    <div class="select-field">
-                                                        <span>Sub Topic:</span>
-                                                        <select id="sub_chapter_id"
-                                                                class="sub-chapters-list rurera-req-field form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
-                                                                name="sub_chapter_id" data-next_index="topic_part" data-next_value="">
-                                                            <option value="">Please select year, subject, Topic</option>
-                                                        </select>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -2138,6 +2121,42 @@
                 }
             });
         });
+
+
+        $(document).on('change', '.sub-chapters-list-subject', function () {
+            rurera_loader(subChapterDivMain, 'div');
+            var level_id = $(".book-dropzone.active").attr('data-level_id');
+            if (!Array.isArray(alreadyAddedTopics[level_id])) {
+                alreadyAddedTopics[level_id] = [];
+            }
+            var subject_id = $(this).val();
+            subChapterDataRequest = $.ajax({
+                type: "GET",
+                url: '/admin/learning_journey/get_topic_part_items_by_subject_list',
+                beforeSend: function () {
+                    if (subChapterDataRequest != null) {
+                        subChapterDataRequest.abort();
+                    }
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {'subject_id': subject_id},
+                success: function (response) {
+                    rurera_remove_loader(subChapterDivMain, 'button');
+                    $(".sub-chapters-list-data").html(response);
+
+                    $.each(alreadyAddedTopics[level_id], function(index, selected_topic_id) {
+                        $('.add-level-stage-topic-btn[data-id="'+selected_topic_id+'"]').addClass('topic-added');
+                        $('.add-level-stage-topic-btn[data-id="'+selected_topic_id+'"]').closest('.topic-part-item-list').addClass('active');
+
+                    });
+
+
+                }
+            });
+        });
+
 
         var customSubChapterDivMain = $(".custom-sub-chapters-list-data");
         $(document).on('change', '.custom-sub-chapters-list', function () {
