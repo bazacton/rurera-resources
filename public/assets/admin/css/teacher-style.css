@@ -5407,15 +5407,18 @@ button.print-download-btn {
     background-color: inherit !important;
     padding: 0 0 15px;
 }
-.admin_teacher_role table th.skelton-hide {
-    color: transparent;
+.admin_teacher_role table th.skelton-hide,
+.admin_teacher_role .assignments-table table.table thead tr th.skelton-hide {
+    color: transparent !important;
     max-height: 25px;
     min-height: 25px;
     padding: 5px 0 !important;
+    height: auto !important;
     border-bottom: 5px solid transparent;
     border-right: 5px solid transparent;
 }
-.admin_teacher_role table td.skelton-hide {
+.admin_teacher_role table td.skelton-hide,
+.admin_teacher_role .assignments-table table.table thead tr td.skelton-hide {
     border: 5px solid transparent;
     padding: 0 !important;
     border-left: 0;
@@ -5423,6 +5426,7 @@ button.print-download-btn {
     min-height: 20px;
     max-height: 20px;
     line-height: normal;
+    height: auto !important;
 }
 /* Skeleton Loading Style End */
 
