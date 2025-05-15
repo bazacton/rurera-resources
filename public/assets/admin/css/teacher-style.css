@@ -5361,37 +5361,19 @@ button.print-download-btn {
 .admin_teacher_role .skelton-hide.skelton-height-lg {max-height: 30px; min-height: 30px;}
 .admin_teacher_role .skelton-hide.skelton-mb-0 {margin-bottom: 0;}
 .featured-controls.skelton-hide,
-.input-field.skelton-hide {
-    margin-bottom: 0;
-}
+.input-field.skelton-hide {margin-bottom: 0;}
 .bulk-heading .skelton-hide,
 .search-lable.skelton-hide,
 .admin_teacher_role .classes-card .card-body p.skelton-hide,
-.admin_teacher_role .skelton-hide.card-title, .listing-grid-card .author-info h5.skelton-hide {
-    display: inline-block;
-}
-.rureraform-table td:has(.progress.skelton-hide) {
-    border-left: 2px solid rgba(255, 255, 255, 0.5);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-}
+.admin_teacher_role .skelton-hide.card-title, .listing-grid-card .author-info h5.skelton-hide {display: inline-block;}
+.rureraform-table td:has(.progress.skelton-hide) {border-left: 2px solid rgba(255, 255, 255, 0.5); border-bottom: 2px solid rgba(255, 255, 255, 0.5);}
 .admin_teacher_role .teacher-controls .create-class-btn.skelton-hide,
-.assignments-table .card-header h6.skelton-hide {
-    color: transparent;
-}
-.admin_teacher_role .skelton-hide.card-title {
-    margin-bottom: 10px;
-}
-.admin_teacher_role .skelton-hide.progress {
-    height: 12px !important;
-    min-height: 12px;
-}
+.assignments-table .card-header h6.skelton-hide {color: transparent;}
+.admin_teacher_role .skelton-hide.card-title {margin-bottom: 10px;}
+.admin_teacher_role .skelton-hide.progress {height: 12px !important; min-height: 12px;}
 .listing-grid-card .img-box.skelton-hide,
-.teacher-list-controls .edit-btn.skelton-hide {
-    border-radius: 100% !important;
-}
-.teacher-list-controls .edit-btn.skelton-hide {
-    max-height: 40px;
-}
+.teacher-list-controls .edit-btn.skelton-hide {border-radius: 100% !important;}
+.teacher-list-controls .edit-btn.skelton-hide {max-height: 40px;}
 .admin-rurera-tabs .skelton-hide.nav-item, .admin-rurera-tabs.nav-pills .skelton-hide.nav-item {
     min-width: 60px;
 }
