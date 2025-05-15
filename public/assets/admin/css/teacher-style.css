@@ -5330,7 +5330,7 @@ button.print-download-btn {
 .admin_teacher_role .skelton-hide h6, .admin_teacher_role .skelton-hide strong,
 .rureraform-table td .skelton-hide .progress-bar.bg-success:after,
 .admin_teacher_role .skelton-hide .form-control, .card.card-statistic-1 .card-header.skelton-hide h4,
-.admin_teacher_role table td.skelton-hide .text-primary {visibility: hidden;}
+.admin_teacher_role table td.skelton-hide small.text-primary {visibility: hidden;}
 .search-filters.skelton-hide {display: inline-flex;}
 .admin-rurera-tabs.nav-pills li.skelton-hide .nav-link.active {border-bottom: 0;}
 .assignments-table .card:has(.skelton-hide) {border: 0; box-shadow: none;}
