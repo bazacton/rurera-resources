@@ -707,7 +707,6 @@
 
 
                                     <div class="topics-subtopics-content-area row">
-                                        {!! $topics_subtopics_layout !!}
 
 
                                     </div>
