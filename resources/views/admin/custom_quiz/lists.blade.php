@@ -34,6 +34,42 @@
             </div>
         </div>
         <div class="section-body">
+            <div class="rureraform-search-field mb-15">
+                <div class="input-field skelton-hide skelton-height-lg">
+                    <input type="text" placeholder="Search question..">
+                    <button type="button"><i class="fas fa-search"></i> <span>Search questions</span></button>
+                </div>
+                <div class="search-filters mb-0">
+                    <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
+                        <span>Sort by:</span>
+                        <select>
+                            <option value="Most relevant">Most relevant</option>
+                            <option value="Most recent">Most recent</option>
+                        </select>
+                    </div>
+                    <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
+                        <span>Grade:</span>
+                        <select>
+                            <option value="year 01">year 01</option>
+                            <option value="year 02">year 02</option>
+                        </select>
+                    </div>
+                    <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
+                        <span>Subject:</span>
+                        <select>
+                            <option value="English">English</option>
+                            <option value="Science">Science</option>
+                        </select>
+                    </div>
+                    <div class="select-field skelton-hide skelton-height-lg skelton-mb-0">
+                        <span>No. of questions:</span>
+                        <select>
+                            <option value="question 01">question 01</option>
+                            <option value="question 02">question 02</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
             <section class="card">
                 <div class="card-body">
                     <form action="{{ getAdminPanelUrl() }}/quizzes" method="get" class="row mb-0 skelton-hide">
