@@ -106,7 +106,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0"></td>
                                     <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <span class="c-grade">Grade 6</span>
                                     </td>
