@@ -5406,6 +5406,7 @@ button.print-download-btn {
     height: auto !important;
     border-bottom: 5px solid transparent;
     border-right: 5px solid transparent;
+    line-height: 10px;
 }
 .admin_teacher_role table td.skelton-hide,
 .admin_teacher_role .assignments-table table.table tr td.skelton-hide {
@@ -5417,6 +5418,7 @@ button.print-download-btn {
     max-height: 20px;
     line-height: normal;
     height: auto !important;
+    line-height: 10px;
 }
 /* Skeleton Loading Style End */
 
