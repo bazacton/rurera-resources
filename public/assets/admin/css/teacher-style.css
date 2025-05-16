@@ -5411,13 +5411,10 @@ button.print-download-btn {
 .admin_teacher_role table th.skelton-hide,
 .admin_teacher_role .assignments-table table.table thead tr th.skelton-hide {
     color: transparent !important;
-    max-height: 25px;
-    min-height: 25px;
     padding: 5px 0 !important;
-    height: auto !important;
     border-bottom: 5px solid transparent;
     border-right: 5px solid transparent;
-    line-height: 10px;
+    line-height: 10px !important;
 }
 .admin_teacher_role table td.skelton-hide,
 .admin_teacher_role .assignments-table table.table tr td.skelton-hide {
@@ -5425,11 +5422,9 @@ button.print-download-btn {
     padding: 0 !important;
     border-left: 0;
     color: transparent !important;
-    min-height: 20px;
-    max-height: 20px;
     line-height: normal;
     height: auto !important;
-    line-height: 10px;
+    line-height: 20px;
 }
 .featured-list-sidebar .list-options li.skelton-hide {
     height: 12px;
