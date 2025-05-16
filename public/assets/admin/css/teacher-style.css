@@ -3420,6 +3420,11 @@ span.field-separated span:after {
 .rureraform-search-field:has(.search-filters) {
     flex-wrap: nowrap;
 }
+.rureraform-search-field .search-filters {
+    width: 100%;
+    flex-wrap: nowrap;
+    flex: 0;
+}
 .rureraform-search-field .search-filters .select-field {
     padding: 11px 10px;
     line-height: normal;
