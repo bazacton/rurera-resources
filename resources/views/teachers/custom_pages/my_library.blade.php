@@ -341,7 +341,7 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <ul class="list-options skelton-hide">
+                                            <ul class="list-options">
                                                 <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/question-circle.svg" alt="question-circle"></span> 10 questions</li>
                                                 <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/grades.svg" alt="grades"></span> 5th-8th  Grade</li>
                                                 <li class="skelton-hide"><span class="icon-box"><img src="/assets/default/svgs/book-saved.svg" alt="book-saved"></span> Physics</li>
