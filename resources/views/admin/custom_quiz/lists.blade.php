@@ -165,7 +165,7 @@
                                         <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Created By</th>
                                         <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.question_count') }}</th>
                                         <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.status') }}</th>
-                                        <th>{{ trans('admin/main.actions') }}</th>
+                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.actions') }}</th>
                                     </tr>
 
                                     @foreach($quizzes as $quiz)
