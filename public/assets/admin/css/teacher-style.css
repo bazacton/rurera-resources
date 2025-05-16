@@ -5353,7 +5353,7 @@ button.print-download-btn {
       left: 100%;
     }
 }
-.quiz-data-table:has(.skelton-hide) {border-color: transparent !important;}
+.quiz-data-table:has(.skelton-hide) {border-color: transparent !important; background-color: inherit !important;}
 .card.card-statistic-1 .card-wrap.skelton-hide {margin-left: 10px; width: calc(100% - 90px);}
 .admin_teacher_role .skelton-hide:has(th), 
 .admin_teacher_role .skelton-hide:has(td) {display: block;}
