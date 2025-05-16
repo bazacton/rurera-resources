@@ -5414,6 +5414,7 @@ button.print-download-btn {
     border-bottom: 5px solid transparent;
     border-right: 5px solid transparent;
     line-height: 10px !important;
+    height: auto !important;
 }
 .admin_teacher_role table td.skelton-hide,
 .admin_teacher_role .assignments-table table.table tr td.skelton-hide {
