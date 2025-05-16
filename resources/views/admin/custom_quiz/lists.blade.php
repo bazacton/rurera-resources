@@ -38,13 +38,13 @@
                 <div class="card-body">
                     <form action="{{ getAdminPanelUrl() }}/quizzes" method="get" class="row mb-0">
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
+                            <div class="form-group skelton-hide skelton-height-lg">
                                 <label class="input-label">{{ trans('admin/main.search') }}</label>
                                 <input type="text" class="form-control" name="title" value="{{ request()->get('title') }}">
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
+                            <div class="form-group skelton-hide skelton-height-lg">
                                 <label class="input-label">{{ trans('admin/main.start_date') }}</label>
                                 <div class="input-group">
                                     <input type="date" id="fsdate" class="text-left form-control" name="from"
@@ -53,7 +53,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
+                            <div class="form-group skelton-hide skelton-height-lg">
                                 <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                                 <div class="input-group">
                                     <input type="date" id="lsdate" class="text-left form-control" name="to"
@@ -62,7 +62,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
+                            <div class="form-group skelton-hide skelton-height-lg">
                                 <label class="input-label">{{ trans('admin/main.filters') }}</label>
                                 <select name="sort" data-plugin-selectTwo class="form-control populate">
                                     <option value="">{{ trans('admin/main.filter_type') }}</option>
