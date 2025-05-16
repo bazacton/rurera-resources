@@ -5430,6 +5430,10 @@ button.print-download-btn {
     height: auto !important;
     line-height: 10px;
 }
+.featured-list-sidebar .list-options li.skelton-hide {
+    height: 12px;
+    margin-bottom: 0;
+}
 /* Skeleton Loading Style End */
 
 @media screen and (max-width: 992px) {
