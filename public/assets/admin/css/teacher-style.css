@@ -5369,7 +5369,8 @@ button.print-download-btn {
 .admin_teacher_role .skelton-hide.card-title, .listing-grid-card .author-info h5.skelton-hide {display: inline-block;}
 .rureraform-table td:has(.progress.skelton-hide) {border-left: 2px solid rgba(255, 255, 255, 0.5); border-bottom: 2px solid rgba(255, 255, 255, 0.5);}
 .admin_teacher_role .teacher-controls .create-class-btn.skelton-hide,
-.assignments-table .card-header h6.skelton-hide {color: transparent;}
+.assignments-table .card-header h6.skelton-hide,
+.admin_teacher_role table td.skelton-hide small em {color: transparent;}
 .admin_teacher_role .skelton-hide.card-title {margin-bottom: 10px;}
 .admin_teacher_role .skelton-hide.progress {height: 12px !important; min-height: 12px;}
 .listing-grid-card .img-box.skelton-hide,
