@@ -3415,10 +3415,15 @@ span.field-separated span:after {
     vertical-align: middle;
 }
 .rureraform-search-field:has(.search-filters) .input-field {
-    width: calc(100% - 735px);
+    width: 100%;
+}
+.rureraform-search-field:has(.search-filters) {
+    flex-wrap: nowrap;
 }
 .rureraform-search-field .search-filters .select-field {
     padding: 11px 10px;
+    line-height: normal;
+    min-width: 185px;
 }
 .questions-header .icon-box img {
     height: 15px;
