@@ -22,11 +22,11 @@
                     <div class="card-icon bg-primary skelton-hide">
                         <i class="fas fa-file-alt"></i>
                     </div>
-                    <div class="card-wrap skelton-hide">
-                        <div class="card-header">
+                    <div class="card-wrap">
+                        <div class="card-header skelton-hide skelton-height-lg skelton-mb-0">
                             <h4>Total Quizzes</h4>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body skelton-hide skelton-height-lg skelton-mb-0">
                             {{ $totalAssignments }}
                         </div>
                     </div>
