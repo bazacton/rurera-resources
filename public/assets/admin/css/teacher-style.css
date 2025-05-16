@@ -5426,6 +5426,9 @@ button.print-download-btn {
     height: auto !important;
     line-height: 20px;
 }
+.admin_teacher_role .assignments-table table.table tr td.skelton-hide {
+    line-height: 10px;
+}
 .featured-list-sidebar .list-options li.skelton-hide {
     height: 12px;
     margin-bottom: 0;
