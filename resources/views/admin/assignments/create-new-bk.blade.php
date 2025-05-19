@@ -134,18 +134,12 @@
         .question-types-colors .true_false_questions_color:before {
             background-color: #c8d022;
         }
-
-
-
-
     </style>
 
 @endpush
 
 @section('content')
     <section class="section">
-
-
         <div class="section-body skeleton">
             <div class="row">
                 <div class="col-12 col-md-9 col-lg-9 mx-auto">
