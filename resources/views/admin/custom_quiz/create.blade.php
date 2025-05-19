@@ -1695,7 +1695,8 @@
             var question_id = $(this).attr('data-id');
             $('.question-card').removeClass('active');
             $(this).closest('.question-card').addClass('active');
-            var thisObj = $(this);
+            var thisObj = $(this).closest('.question-card')
+            rurera_loader(thisObj, 'div');
             jQuery.ajax({
                 type: "GET",
                 url: '/admin/custom_quiz/question_load_canvas',
@@ -1704,6 +1705,7 @@
                 },
                 data: {"question_id": question_id},
                 success: function (return_data) {
+                    rurera_remove_loader(loaderDiv, 'button');
                     $(".question-loader-div").html(return_data);
 
                 }
