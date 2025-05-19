@@ -1705,7 +1705,7 @@
                 },
                 data: {"question_id": question_id},
                 success: function (return_data) {
-                    rurera_remove_loader(loaderDiv, 'button');
+                    rurera_remove_loader(thisObj, 'button');
                     $(".question-loader-div").html(return_data);
 
                 }
