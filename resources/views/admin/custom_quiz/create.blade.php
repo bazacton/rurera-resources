@@ -134,10 +134,6 @@
         .question-types-colors .true_false_questions_color:before {
             background-color: #c8d022;
         }
-
-
-
-
     </style>
 
 @endpush
