@@ -11,9 +11,10 @@
                 @if($questions_data->count() > 0)
                     @php $question_count = 1; @endphp
                     @foreach($questions_data as $questionObj)
+                        @php $activeClass = ($question_count == 1)? 'active' : ''; @endphp
 
-                        <div class="question-card">
-                            <a href="#" class="question-card-link">
+                        <div class="question-card {{$activeClass}}">
+                            <a href="javascript:;" class="question-card-link question-load-canvas" data-id="{{$questionObj->id}}">
                                 <div class="question-content">
                                     <div class="question-text"><div class="q-number">{{$question_count}}</div> {{$questionObj->question_title}}</div>
                                     <div class="question-type">
@@ -30,7 +31,7 @@
             </div>
 
         </div>
-        <div class="canvas-modal-container">
+        <div class="canvas-modal-container question-loader-div">
 
 
             {!! $builder_layout !!}

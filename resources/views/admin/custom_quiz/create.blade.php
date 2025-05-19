@@ -134,6 +134,10 @@
         .question-types-colors .true_false_questions_color:before {
             background-color: #c8d022;
         }
+
+
+
+
     </style>
 
 @endpush
@@ -222,10 +226,10 @@
                         </div>
                     </div>
                     <div class="q-ai-nav-controls">
-                        <a href="#home" class="active skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-question.svg" alt="add-question"> Add Question</a>
-                        <a href="#q-collections" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-collection.svg" alt="add-question"> Add question from Collection</a>
-                        <a href="#generate-ai" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/ai.svg" alt="ai"> Generate quiz using AI</a>
-                        <a href="#import-q" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/import-worksheet.svg" alt="import-worksheet"> Import Worksheets</a>
+                        <a href="#home" class="active skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-question.svg" alt=""> Add Question</a>
+                        <a href="#q-collections" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/add-collection.svg" alt=""> Add question from Collection</a>
+                        <a href="#generate-ai" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/ai.svg" alt=""> Generate quiz using AI</a>
+                        <a href="#import-q" class="skelton-hide" data-toggle="modal" data-target="#templatesleModal"><img src="/assets/default/svgs/import-worksheet.svg" alt=""> Import Worksheets</a>
                         <a href="javascript:;" class="assignment-save-button skelton-hide" data-toggle="modal" data-target="#general-knowledge-modal">Create Assignment</a>
                     </div>
                     <div class="mb-30 bg-white panel-border rounded-sm p-15 create-element-box" style="display: none;">
@@ -354,15 +358,15 @@
                         </button>
                         <h6 class="search-lable skelton-hide">Enhance this quiz using AI</h6>
                         <ul>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add similar questions</a></li>
-                            <li class="skelton-hide"><a href="#" data-toggle="modal" data-target="#document-modal"><img src="/assets/default/svgs/ai.svg" alt="ai">Fix grammatical and spelling errors</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Translate questions</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Simplify questions</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add questions on particular topic</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Reduce/increase Options From MCQs</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add learner’s name in the questions</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add answer's explanation</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Write custom prompt</a></li>
+                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add similar questions</a></li>
+                            <li class="skelton-hide"><a href="#" data-toggle="modal" data-target="#document-modal"><img src="/assets/default/svgs/ai.svg" alt="">Fix grammatical and spelling errors</a></li>
+                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Translate questions</a></li>
+                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Simplify questions</a></li>
+                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add questions on particular topic</a></li>
+                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Reduce/increase Options From MCQs</a></li>
+                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add learner’s name in the questions</a></li>
+                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add answer's explanation</a></li>
+                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Write custom prompt</a></li>
                         </ul>
                     </div>
                     <div class="quiz-setup-listings">
@@ -532,7 +536,7 @@
                                             </li>
                                             <li data-type="question_templates" data-option="true_false_template" data-elements="question_label_true_false,question_label_paragraph,truefalse_quiz">
                                                 <span class="templates-lable">Multiple Templates</span>
-                                                <a href="#" data-title="Questions Templates">
+                                                <a href="javascript:;" class="blank_canvas_apply" data-template_name="truefalse_quiz" data-title="Questions Templates">
                                                     <img src="/store/1/tool-images/d3.png" alt=""> True/False </a>
                                                 <a href="#" data-title="Questions Templates">
                                                     <img src="/store/1/tool-images/d4.png" alt=""> Short Answer </a>
@@ -783,31 +787,8 @@
                                             <div class="tab-pane fade" id="prompt" role="tabpanel" aria-labelledby="prompt-tab">
                                                 <h6>Copy and paste questions text from anywhere to create a quiz from it</h6>
                                                 <div class="copy-paste-questions">
-                                                    <span class="text-lable">Paste your content</span>
-                                                    <div class="pasted-question">
-                                                        <ul>
-                                                            <li>
-                                                                Question 1
-                                                                <ul>
-                                                                    <li>Option 1</li>
-                                                                    <li>Option 2</li>
-                                                                    <li>Option 3</li>
-                                                                    <li>Option 4 (Correct)</li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                        <ul>
-                                                            <li>
-                                                                Question 2
-                                                                <ul>
-                                                                    <li>Option 1</li>
-                                                                    <li>Option 2</li>
-                                                                    <li>Option 3</li>
-                                                                    <li>Option 4 (Correct)</li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                    <textarea name="text_prompt" class="text_prompt"></textarea>
+                                                    <button type="button" class="text-prompt-submit-btn">Generate</button>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="website" role="tabpanel" aria-labelledby="website-tab">
@@ -1689,6 +1670,48 @@
 
         });
 
+        $('body').on('click', '.text-prompt-submit-btn', function (e) {
+            var text_prompt = $('.text_prompt').val();
+            $(".question_templates_modal").modal('hide');
+            $(".ai-questions-modal-canvas").modal('show');
+            console.log(text_prompt);
+            var thisObj = $(this);
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/custom_quiz/prompt_questions',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"text_prompt": text_prompt},
+                success: function (return_data) {
+                    $(".ai-questions-modal-canvas-block").html(return_data);
+
+                }
+            });
+
+        });
+
+        $('body').on('click', '.question-load-canvas', function (e) {
+            var question_id = $(this).attr('data-id');
+            $('.question-card').removeClass('active');
+            $(this).closest('.question-card').addClass('active');
+            var thisObj = $(this);
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/custom_quiz/question_load_canvas',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"question_id": question_id},
+                success: function (return_data) {
+                    $(".question-loader-div").html(return_data);
+
+                }
+            });
+
+        });
+
+
         $('body').on('click', '.fix-question-grammer', function (e) {
             var question_id = $(this).attr('data-id');
             $(".ai-questions-modal-canvas").modal('show');
@@ -1708,6 +1731,8 @@
             });
 
         });
+
+
 
         $('body').on('click', '.question-template-change', function (e) {
             var question_id = $(this).attr('data-id');
@@ -2287,6 +2312,43 @@
             }
 
         });
+
+        var blankCanvasRequest = null;
+        $('body').on('click', '.blank_canvas_apply', function (e) {
+            var thisObj = $(this);
+            var template_name = $(this).attr("data-template_name");
+
+
+
+            rurera_loader(thisObj, 'div');
+
+            blankCanvasRequest = $.ajax({
+                type: "GET",
+                url: '/admin/custom_quiz/blank_canvas_apply',
+                beforeSend: function () {
+                    if (blankCanvasRequest != null) {
+                        blankCanvasRequest.abort();
+                    }
+                },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                dataType: 'json',
+                data: {'template_name': template_name},
+                success: function (return_data) {
+                    console.log('testing');
+                    console.log(return_data);
+                    rurera_remove_loader(thisObj, 'button');
+                    $(".questions-holder-area").append(return_data.question_data);
+                    $(".question_templates_modal").modal('hide');
+                    var new_question_id = return_data.question_id;
+                    $('.question-edit-btn[data-id="'+new_question_id+'"]').click();
+
+                }
+            });
+
+        });
+
 
 
     </script>
