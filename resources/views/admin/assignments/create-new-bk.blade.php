@@ -323,15 +323,15 @@
                         </button>
                         <h6 class="search-lable skelton-hide">Enhance this quiz using AI</h6>
                         <ul>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add similar questions</a></li>
+                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add similar questions</a></li>
                             <li class="skelton-hide"><a href="#" data-toggle="modal" data-target="#document-modal"><img src="/assets/default/svgs/ai.svg" alt="">Fix grammatical and spelling errors</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Translate questions</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Simplify questions</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add questions on particular topic</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Reduce/increase Options From MCQs</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add learner’s name in the questions</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add answer's explanation</a></li>
-                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Write custom prompt</a></li>
+                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Translate questions</a></li>
+                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Simplify questions</a></li>
+                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add questions on particular topic</a></li>
+                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Reduce/increase Options From MCQs</a></li>
+                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add learner’s name in the questions</a></li>
+                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add answer's explanation</a></li>
+                            <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Write custom prompt</a></li>
                         </ul>
                     </div>
                     <div class="quiz-setup-listings">
