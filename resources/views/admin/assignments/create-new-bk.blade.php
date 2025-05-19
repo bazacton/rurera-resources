@@ -417,25 +417,25 @@
                                             <li data-type="question_templates" data-option="matching_template" data-elements="question_label_matching_template,match_quiz">
                                                 <span class="templates-lable">Multiple Templates</span>
                                                 <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d7.png" alt=""> Matching </a>
+                                                    <img src="/store/1/tool-images/d7.png" alt="d7"> Matching </a>
                                                 <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d8.png" alt=""> Fill in the Blanks </a>
+                                                    <img src="/store/1/tool-images/d8.png" alt="d8"> Fill in the Blanks </a>
                                                 <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d9.png" alt=""> Select from Lists </a>
+                                                    <img src="/store/1/tool-images/d9.png" alt="d9"> Select from Lists </a>
                                                 <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d10.png" alt=""> Drag the Words </a>
+                                                    <img src="/store/1/tool-images/d10.png" alt="10"> Drag the Words </a>
                                                 <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d11.png" alt=""> Hotspot </a>
+                                                    <img src="/store/1/tool-images/d11.png" alt="11"> Hotspot </a>
                                                 <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d12.png" alt=""> Drag and Drop </a>
+                                                    <img src="/store/1/tool-images/d12.png" alt="12"> Drag and Drop </a>
                                             </li>
 
                                             <li data-type="question_templates" data-option="likert_template" data-elements="question_label">
                                                 <span class="templates-lable">Multiple Templates</span>
                                                 <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d13.png" alt=""> Likert Scale </a>
+                                                    <img src="/store/1/tool-images/d13.png" alt="13"> Likert Scale </a>
                                                 <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d14.png" alt=""> Essay </a>
+                                                    <img src="/store/1/tool-images/d14.png" alt="14"> Essay </a>
                                             </li>
                                         </ul>
                                     </div>
@@ -444,12 +444,8 @@
 
                                     <div class="topics-subtopics-content-area row">
                                         {!! $topics_subtopics_layout !!}
-
-
                                     </div>
-                                    <div class="selected-questions-group 2222">
-
-                                    </div>
+                                    <div class="selected-questions-group 2222"></div>
                                 </div>
                                 <div class="tab-pane fade" id="generate-ai" role="tabpanel" aria-labelledby="generate-ai-tab">
                                     <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible alert fade show">
