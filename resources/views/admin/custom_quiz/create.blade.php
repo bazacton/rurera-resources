@@ -359,7 +359,7 @@
                         <h6 class="search-lable skelton-hide">Enhance this quiz using AI</h6>
                         <ul>
                             <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add similar questions</a></li>
-                            <li class="skelton-hide"><a href="#" data-toggle="modal" data-target="#document-modal"><img src="/assets/default/svgs/ai.svg" alt="">Fix grammatical and spelling errors</a></li>
+                            <li class="skelton-hide"><a href="#" data-toggle="modal" data-target="#document-modal"><img src="/assets/default/svgs/ai.svg" alt="ai">Fix grammatical and spelling errors</a></li>
                             <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Translate questions</a></li>
                             <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Simplify questions</a></li>
                             <li class="skelton-hide"><a href="#"><img src="/assets/default/svgs/ai.svg" alt="ai">Add questions on particular topic</a></li>
