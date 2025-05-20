@@ -3032,27 +3032,10 @@ span.field-separated span:after {
     content: counter(listStyle, lower-alpha) ")";
 }
 
-
-.questions-inner-tabs .tab-content {
-    padding-bottom: 25px;
-}
-.questions-inner-tabs .nav-tabs {
-    border: 1px solid #ddd;
-    flex-wrap: nowrap;
-    padding: 10px;
-    border-radius: 15px;
-}
-.question-ai-tabs .questions-inner-tabs .nav-tabs .nav-link {
-    background-color: inherit;
-    border: 0;
-    width: 100%;
-    text-align: center;
-    padding: 8px 20px;
-    line-height: normal;
-    border-radius: 10px;
-    min-width: 160px;
-    outline: none;
-}
+/* Question_Templates_Modal Questions-Inner-Tabs Style */
+.questions-inner-tabs .tab-content {padding-bottom: 25px;}
+.questions-inner-tabs .nav-tabs {border: 1px solid #ddd; flex-wrap: nowrap; padding: 10px; border-radius: 15px;}
+.question-ai-tabs .questions-inner-tabs .nav-tabs .nav-link {background-color: inherit; border: 0; width: 100%; text-align: center; padding: 8px 20px; line-height: normal; border-radius: 10px; min-width: 160px; outline: none;}
 .question-ai-tabs .questions-inner-tabs .nav-tabs .nav-link.active {
     background-color: var(--blue);
     color: #fff;
