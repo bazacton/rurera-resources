@@ -3064,6 +3064,24 @@ span.field-separated span:after {
     border: 1px solid #ddd;
     padding: 25px 25px 0 25px;
 }
+.copy-paste-questions textarea {
+    border: 1px solid #ddd;
+    resize: none;
+    border-radius: 5px;
+    min-width: 500px;
+    display: block;
+    margin: 0 0 15px;
+    min-height: 150px;
+    width: 100%;
+}
+.copy-paste-questions .text-prompt-submit-btn {
+    background-color: var(--blue);
+    border: 0;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 0 0 15px;
+}
 .web-input-field i {
     position: absolute;
     left: 15px;
