@@ -3431,6 +3431,7 @@ span.field-separated span:after {
     width: auto;
     display: inline-block;
     vertical-align: middle;
+    line-height: normal;
 }
 .rureraform-search-field:has(.search-filters) .input-field {
     width: 100%;
