@@ -3179,6 +3179,9 @@ span.field-separated span:after {
     border-radius: 3px;
 }
 /* Updated Question Modal Style Start */
+.admin_teacher_role .question-update-modal .rureraform-toolbars {
+    z-index: 2;
+}
 .admin_teacher_role .question-update-modal .question_templates {
     gap: 0;
 }
