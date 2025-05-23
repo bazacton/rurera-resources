@@ -1694,6 +1694,7 @@ Admin Questions Generator Page Style End
     .similarity-content-block:has(.rureraform-admin-popup[style*="display: block"]) .question-details-tab-data {width: 100%; max-width: 100%; flex-direction: row;}
     .similarity-content-block:has(.rureraform-admin-popup[style*="display: block"]) .question-details-tab-data > .col-12 {max-width: 65%; width: 65%;}
     .similarity-content-block:has(.rureraform-admin-popup[style*="display: block"]) .question-details-tab-data .lms-element-properties {width: 35%; max-width: 35%;}
+    .question-update-modal .similarity-content-block .tab-content .question-details-tab-data {width: 100%; max-width: 100%;}
 }
 @media (max-width: 992px) {
     .api-question-status,
