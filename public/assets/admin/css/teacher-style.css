@@ -3149,16 +3149,6 @@ span.field-separated span:after {
 .admin_teacher_role .question_templates li a:hover .templete-hover-element {
     margin-top: -5px;
 }
-.admin_teacher_role .question-update-modal .question_templates {
-    gap: 0;
-}
-.admin_teacher_role .question-update-modal .question_templates li a {
-    background-color: inherit;
-    border: 0;
-}
-.admin_teacher_role .question-update-modal .question_templates li a:hover {
-    background-color: #f5f5f5;
-}
 .templete-hover-element .img-holder {
     height: 100px;
     width: 100%;
@@ -3188,6 +3178,18 @@ span.field-separated span:after {
     color: #fff;
     border-radius: 3px;
 }
+/* Updated Question Modal Style Start */
+.admin_teacher_role .question-update-modal .question_templates {
+    gap: 0;
+}
+.admin_teacher_role .question-update-modal .question_templates li a {
+    background-color: inherit;
+    border: 0;
+}
+.admin_teacher_role .question-update-modal .question_templates li a:hover {
+    background-color: #f5f5f5;
+}
+/* Updated Question Modal Style End */
 
 .question-hints {
     padding-top: 30px;
