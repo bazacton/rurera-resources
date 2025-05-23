@@ -2046,6 +2046,7 @@ Tailer Hub Style Start
 .blank-canvas-modal .modal-header {position: absolute; right: 15px; top: 15px; z-index: 1; padding: 0;}
 .blank-canvas-modal .modal-body {padding: 0 0 0 300px;}
 .blank-canvas-modal .modal-body.grammer-modal-canvas-block {padding: 15px;}
+.blank-canvas-modal .modal-body:has(.question-update-modal) {padding-left: 0;}
 .blank-canvas-modal .question-content-header {padding-left: 15px; padding-right: 50px;}
 .canvas-modal-container {max-width: 960px; margin: 50px auto;}
 .grammer-modal-canvas-block .question-explain-block {background-color: inherit; border: 0; padding: 0;}
