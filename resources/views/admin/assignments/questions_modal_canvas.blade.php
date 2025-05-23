@@ -36,7 +36,7 @@
             {!! $builder_layout !!}
 
 
-            <div class="section-controls">
+            <div class="section-controls mb-30">
                 <button type="button" class="save-btn">Save</button>
                 <button type="button" class="cancel-btn">Cancel</button>
             </div>
