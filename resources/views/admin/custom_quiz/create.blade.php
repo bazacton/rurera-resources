@@ -651,51 +651,8 @@
                                         </div>
                                     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    <div class="topics-subtopics-content-area row">
-
-
-                                    </div>
-                                    <div class="selected-questions-group 2222">
-
-                                    </div>
+                                    <div class="topics-subtopics-content-area row"></div>
+                                    <div class="selected-questions-group"></div>
                                 </div>
                                 <div class="tab-pane fade" id="generate-ai" role="tabpanel" aria-labelledby="generate-ai-tab">
                                     <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible alert fade show">
