@@ -470,447 +470,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade question_templates_modal" id="templatesleModal" tabindex="-1" aria-labelledby="templatesleModalLabel" style="display: none;" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="question-ai-tabs">
-                            <div class="nav-tabs-holder">
-                                <h1>The <span>Ultimate</span> No-Code Quiz Maker</h1>
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a href="#home" class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="false">Blank Canvas</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a href="#q-collections" class="nav-link" id="q-collections-tab" data-toggle="tab" data-target="#q-collections" type="button" role="tab" aria-controls="q-collections" aria-selected="true">Collections</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a href="#generate-ai" class="nav-link" id="generate-ai-tab" data-toggle="tab" data-target="#generate-ai" type="button" role="tab" aria-controls="generate-ai" aria-selected="false">Generate with AI</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a href="#import-q" class="nav-link" id="import-tab" data-toggle="tab" data-target="#import-q" type="button" role="tab" aria-controls="import-q" aria-selected="false">Import Questions</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a href="#collection" class="nav-link" id="collection-tab" data-toggle="tab" data-target="#collection" type="button" role="tab" aria-controls="collection" aria-selected="false">My Collection</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                    <h6>Or select a question type to add question</h6>
-                                    <div class="question_templates-holder">
-                                        <ul class="question_templates">
-                                            <li data-type="question_templates" data-option="multichoice_template" data-elements="question_label_multichoice_template,paragraph_multichoice_template,radio">
-                                                <span class="templates-lable">Multiple Templates</span>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d1.png" alt=""> Multiple Choice
-                                                    <div class="templete-hover-element">
-                                                        <div class="hover-box">
-                                                            <div class="img-holder"></div>
-                                                            <div class="text-holder">
-                                                                <h6>Multiple Choice</h6>
-                                                                <p>Check for retention by asking students to pick one or more correct answers. Use text, images, or math questions to spice things up!</p>
-                                                                <span class="text-lable"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d2.png" alt=""> Multiple Response
-                                                    <div class="templete-hover-element">
-                                                        <div class="hover-box">
-                                                            <div class="img-holder"></div>
-                                                            <div class="text-holder">
-                                                                <h6>Multiple Response</h6>
-                                                                <p>Check for retention by asking students to pick one or more correct answers. Use text, images, or math questions to spice things up!</p>
-                                                                <span class="text-lable">Auto-graded</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li data-type="question_templates" data-option="true_false_template" data-elements="question_label_true_false,question_label_paragraph,truefalse_quiz">
-                                                <span class="templates-lable">Multiple Templates</span>
-                                                <a href="javascript:;" class="blank_canvas_apply" data-template_name="truefalse_quiz" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d3.png" alt=""> True/False </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d4.png" alt=""> Short Answer </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d5.png" alt=""> Numeric </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d6.png" alt=""> Sequence </a>
-                                            </li>
-                                            <li data-type="question_templates" data-option="matching_template" data-elements="question_label_matching_template,match_quiz">
-                                                <span class="templates-lable">Multiple Templates</span>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d7.png" alt=""> Matching </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d8.png" alt=""> Fill in the Blanks </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d9.png" alt=""> Select from Lists </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d10.png" alt=""> Drag the Words </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d11.png" alt=""> Hotspot </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d12.png" alt=""> Drag and Drop </a>
-                                            </li>
 
-                                            <li data-type="question_templates" data-option="likert_template" data-elements="question_label">
-                                                <span class="templates-lable">Multiple Templates</span>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d13.png" alt=""> Likert Scale </a>
-                                                <a href="#" data-title="Questions Templates">
-                                                    <img src="/store/1/tool-images/d14.png" alt=""> Essay </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade populated-content-area" id="q-collections" role="tabpanel" aria-labelledby="q-collections-tab">
-
-
-
-                                    <div class="col-12">
-                                        <div class="staff-picks-tabs">
-                                            <div class="mb-30 bg-white panel-border rounded-sm p-15">
-                                                <div class="rureraform-search-field mb-15">
-                                                    <div class="input-field skelton-height-lg">
-                                                        <input type="text" class="question_search" placeholder="Search question..">
-                                                        <button type="button" class="question-search-btn"><i class="fas fa-search"></i> <span>Search questions</span></button>
-                                                    </div>
-                                                    <div class="search-filters mb-0">
-                                                        <div class="select-field skelton-height-lg skelton-mb-0">
-                                                            <span>Sort by:</span>
-                                                            <select name="questions_sort_by" class="questions_sort_by">
-                                                                <option value="most_relevant">Most relevant</option>
-                                                                <option value="most_recent">Most recent</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="search-filters mb-0 conditional-block topics_block">
-                                                    <div class="select-field">
-                                                        <span>Year:</span>
-
-
-                                                        <select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
-                                                            <option value="">{{trans('admin/main.all_categories')}}</option>
-                                                            @foreach($categories as $category)
-                                                                @if(!empty($category->subCategories) and count($category->subCategories))
-                                                                    <optgroup label="{{  $category->title }}">
-                                                                        @foreach($category->subCategories as $subCategory)
-                                                                            <option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
-                                                                        @endforeach
-                                                                    </optgroup>
-                                                                @else
-                                                                    <option value="{{ $category->id }}">{{ $category->title }}</option>
-                                                                @endif
-                                                            @endforeach
-                                                        </select>
-                                                    </div>
-                                                    <div class="select-field">
-                                                        <span>Subject:</span>
-                                                        <select data-chapter_id="" id="subject_id"
-                                                                class="sub-chapters-list-subject rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
-                                                                name="subject_id" data-next_index="chapter_id" data-next_value="">
-                                                            <option value="">Please select year, subject</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12 col-lg-4 col-md-4">
-                                                    <div class="featured-list-sidebar sub-chapters-list-data px-15">
-                                                        <div class="featured-list-sidebar-inner px-0">
-
-
-
-
-
-                                                            @if($subChapters->count() > 0)
-                                                                @foreach($subChapters as $subChapterObj)
-
-                                                                    @include('admin.learning_journey.includes.topic_list_items_list_layout', ['subChapterObj' => $subChapterObj])
-
-                                                                @endforeach
-                                                            @endif
-                                                            <button class="load-more-btn"><i class="fas fa-plus"></i> Load More</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-lg-8 col-md-8 topic-part-item-data questions-group-select">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="topics-subtopics-content-area row"></div>
-                                    <div class="selected-questions-group"></div>
-                                </div>
-                                <div class="tab-pane fade" id="generate-ai" role="tabpanel" aria-labelledby="generate-ai-tab">
-                                    <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible alert fade show">
-                                        <button type="button" class="close" data-dismiss="quiz-ai-tags" aria-label="Close">
-                                            <span aria-hidden="true">×</span>
-                                        </button>
-                                        <h6 class="search-lable">Enhance this quiz using AI</h6>
-                                        <ul>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add similar questions</a></li>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Fix grammatical and spelling errors</a></li>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Translate questions</a></li>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Simplify questions</a></li>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add questions on particular topic</a></li>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Reduce/increase Options From MCQs</a></li>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add learner’s name in the questions</a></li>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add answer's explanation</a></li>
-                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Write custom prompt</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="questions-inner-tabs">
-                                        <ul class="nav nav-tabs" id="myTab2" role="tablist">
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link active" id="document-tab" data-toggle="tab" data-target="#document" type="button" role="tab" aria-controls="document" aria-selected="true">Document</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="prompt-tab" data-toggle="tab" data-target="#prompt" type="button" role="tab" aria-controls="prompt" aria-selected="false">Text/Prompt</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="website-tab" data-toggle="tab" data-target="#website" type="button" role="tab" aria-controls="website" aria-selected="false">Website</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="utube-tab" data-toggle="tab" data-target="#utube" type="button" role="tab" aria-controls="utube" aria-selected="false">YouTube</button>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content" id="myTabContent2">
-                                            <div class="tab-pane fade show active" id="document" role="tabpanel" aria-labelledby="document-tab">
-                                                <h6>Generate question from study materials (presentations/documents)</h6>
-                                                <div class="staff-picks-holder">
-                                                    <div class="upload-options">
-                                                        <div class="field-box">
-                                                            <input type="file" id="drag-drop">
-                                                            <label for="drag-drop">
-                                                                <i class="fas fa-cloud-download-alt"></i>
-                                                                <span>Drag and drop a study material</span>
-                                                            </label>
-                                                        </div>
-                                                        <span class="field-separated">
-                                                    <span>Or</span>
-                                                </span>
-                                                        <div class="upload-controls">
-                                                            <div class="field-box">
-                                                                <input type="file" id="drag-drop">
-                                                                <label for="drag-drop"><i class="fas fa-desktop"></i> Upload from device</label>
-                                                            </div>
-                                                            <div class="field-box">
-                                                                <input type="file" id="drag-drop">
-                                                                <label for="drag-drop"><i class="fas fa-desktop"></i> Import from device</label>
-                                                            </div>
-                                                            <div class="field-box">
-                                                                <input type="file" id="drag-drop">
-                                                                <label for="drag-drop"><i class="fas fa-camera"></i> Take a picture</label>
-                                                            </div>
-                                                        </div>
-                                                        <p>Supported formates: PDF, PPT, PPTX, DOC</p>
-                                                    </div>
-                                                </div>
-                                                <div class="question-hints">
-                                                    <h6>Hints</h6>
-                                                    <div class="question-hints-holder">
-                                                        <div class="hints-box">
-                                                            <strong>Total Referred Users</strong>
-                                                            <span>Users that registerd on the plateform using the referral code.</span>
-                                                        </div>
-                                                        <div class="hints-box">
-                                                            <strong>Total Referred Users</strong>
-                                                            <span>Users that registerd on the plateform using the referral code.</span>
-                                                        </div>
-                                                        <div class="hints-box">
-                                                            <strong>Total Referred Users</strong>
-                                                            <span>Users that registerd on the plateform using the referral code.</span>
-                                                        </div>
-                                                        <div class="hints-box">
-                                                            <strong>Total Referred Users</strong>
-                                                            <span>Users that registerd on the plateform using the referral code.</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="prompt" role="tabpanel" aria-labelledby="prompt-tab">
-                                                <h6>Copy and paste questions text from anywhere to create a quiz from it</h6>
-                                                <div class="copy-paste-questions">
-                                                    <textarea name="text_prompt" class="text_prompt"></textarea>
-                                                    <button type="button" class="text-prompt-submit-btn">Generate</button>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="website" role="tabpanel" aria-labelledby="website-tab">
-                                                <h6>Generate questions from websites/online articles</h6>
-                                                <div class="rureraform-search-field">
-                                                    <div class="input-field web-input-field">
-                                                        <i class="fas fa-link"></i>
-                                                        <input type="text" placeholder="Enter any website URL (eg https://rurera.com/) ">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="utube" role="tabpanel" aria-labelledby="utube-tab">
-                                                <h6 class="search-lable">Find or create an Interactive Video from YouTube <span class="beta-lable">Beta</span></h6>
-                                                <div class="bg-white panel-border rounded-sm p-15">
-                                                    <div class="rureraform-search-field">
-                                                        <div class="input-field youtube-input-field w-100">
-                                                            <img src="/assets/default/svgs/youtube.svg" alt="">
-                                                            <input type="text" placeholder="Search question..">
-                                                            <button type="button"><i class="fas fa-search"></i> Browse YouTube</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="import-q" role="tabpanel" aria-labelledby="import-tab">
-                                    <div class="questions-inner-tabs">
-                                        <ul class="nav nav-tabs" id="myTab3" role="tablist">
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link active" id="paste-q-tab" data-toggle="tab" data-target="#paste-q" type="button" role="tab" aria-controls="paste-q" aria-selected="true">Paste Questions</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="google-form-tab" data-toggle="tab" data-target="#google-form" type="button" role="tab" aria-controls="google-form" aria-selected="false">Google Form</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="spreadsheet-tab" data-toggle="tab" data-target="#spreadsheet" type="button" role="tab" aria-controls="spreadsheet" aria-selected="false">Spreadsheet/CSV</button>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content" id="myTabContent3">
-                                            <div class="tab-pane fade show active" id="paste-q" role="tabpanel" aria-labelledby="paste-q-tab">
-                                                <h6>Copy and paste questions text from anywhere to create a quiz from it</h6>
-                                                <div class="copy-paste-questions">
-                                                    <span class="text-lable">Paste your content</span>
-                                                    <div class="pasted-question">
-                                                        <ul>
-                                                            <li>
-                                                                Question 1
-                                                                <ul>
-                                                                    <li>Option 1</li>
-                                                                    <li>Option 2</li>
-                                                                    <li>Option 3</li>
-                                                                    <li>Option 4 (Correct)</li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                        <ul>
-                                                            <li>
-                                                                Question 2
-                                                                <ul>
-                                                                    <li>Option 1</li>
-                                                                    <li>Option 2</li>
-                                                                    <li>Option 3</li>
-                                                                    <li>Option 4 (Correct)</li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="google-form" role="tabpanel" aria-labelledby="google-form-tab">
-                                                <h6>Import Google Form as a quiz</h6>
-                                                <div class="staff-picks-holder">
-                                                    <div class="upload-options">
-                                                        <div class="field-box">
-                                                            <input type="file" id="drag-drop">
-                                                            <label for="drag-drop">
-                                                                <i class="fas fa-file-alt"></i>
-                                                                <span>Select a google form</span>
-                                                            </label>
-                                                        </div>
-                                                        <div class="upload-controls">
-                                                            <div class="field-box">
-                                                                <input type="file" id="drag-drop">
-                                                                <label for="drag-drop"><i class="fas fa-desktop"></i> Import from drive</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="spreadsheet" role="tabpanel" aria-labelledby="spreadsheet-tab">
-                                                <h6>Bulk import questions using spreadsheet</h6>
-                                                <div class="staff-picks-holder">
-                                                    <div class="upload-options">
-                                                        <div class="field-box">
-                                                            <input type="file" id="drag-drop">
-                                                            <label for="drag-drop">
-                                                                <img src="/assets/default/svgs/spreadsheet.svg" alt="">
-                                                                <span>Drag and drop your spreadsheet</span>
-                                                            </label>
-                                                        </div>
-                                                        <span class="field-separated">
-                                                    <span>Or</span>
-                                                </span>
-                                                        <div class="upload-controls">
-                                                            <div class="field-box">
-                                                                <input type="file" id="drag-drop">
-                                                                <label for="drag-drop"><i class="fas fa-desktop"></i> Upload from device</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="collection" role="tabpanel" aria-labelledby="collection-tab">
-                                    <div class="staff-picks-tabs">
-                                        <div class="mb-30 bg-white panel-border rounded-sm p-15">
-                                            <div class="rureraform-search-field mb-15">
-                                                <div class="input-field">
-                                                    <input type="text" placeholder="Search question..">
-                                                    <button type="button"><i class="fas fa-search"></i> <span>Search questions</span></button>
-                                                </div>
-                                                <div class="featured-controls">
-                                                    <button type="button" class="active">Featured List</button>
-                                                    <button type="button">Community</button>
-                                                    <button type="button">My Collection</button>
-                                                </div>
-                                            </div>
-                                            <div class="search-filters mb-0">
-                                                <div class="select-field">
-                                                    <span>By:</span>
-                                                    <select>
-                                                        <option value="All providers">All providers</option>
-                                                        <option value="All providers">All providers</option>
-                                                        <option value="All providers">All providers</option>
-                                                    </select>
-                                                </div>
-                                                <div class="select-field">
-                                                    <span>Capability:</span>
-                                                    <select>
-                                                        <option value="All providers">Embeddings</option>
-                                                        <option value="All providers">Embeddings</option>
-                                                        <option value="All providers">Embeddings</option>
-                                                    </select>
-                                                </div>
-                                                <div class="select-field">
-                                                    <span>Tag:</span>
-                                                    <select>
-                                                        <option value="All">All</option>
-                                                        <option value="All">All</option>
-                                                        <option value="All">All</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="modal fade blank-canvas-modal" id="blank-canvas-modal" tabindex="-1" aria-labelledby="blank-canvas-modalLabel" aria-modal="true" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -1302,6 +862,474 @@
             </div>
         </div>
         </form>
+
+
+        <div class="modal fade question_templates_modal" id="templatesleModal" tabindex="-1" aria-labelledby="templatesleModalLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="question-ai-tabs">
+                            <div class="nav-tabs-holder">
+                                <h1>The <span>Ultimate</span> No-Code Quiz Maker</h1>
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a href="#home" class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="false">Blank Canvas</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a href="#q-collections" class="nav-link" id="q-collections-tab" data-toggle="tab" data-target="#q-collections" type="button" role="tab" aria-controls="q-collections" aria-selected="true">Collections</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a href="#generate-ai" class="nav-link" id="generate-ai-tab" data-toggle="tab" data-target="#generate-ai" type="button" role="tab" aria-controls="generate-ai" aria-selected="false">Generate with AI</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a href="#import-q" class="nav-link" id="import-tab" data-toggle="tab" data-target="#import-q" type="button" role="tab" aria-controls="import-q" aria-selected="false">Import Questions</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a href="#collection" class="nav-link" id="collection-tab" data-toggle="tab" data-target="#collection" type="button" role="tab" aria-controls="collection" aria-selected="false">My Collection</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <h6>Or select a question type to add question</h6>
+                                    <div class="question_templates-holder">
+                                        <ul class="question_templates">
+                                            <li data-type="question_templates" data-option="multichoice_template" data-elements="question_label_multichoice_template,paragraph_multichoice_template,radio">
+                                                <span class="templates-lable">Multiple Templates</span>
+                                                <a href="#" data-title="Questions Templates">
+                                                    <img src="/store/1/tool-images/d1.png" alt=""> Multiple Choice
+                                                    <div class="templete-hover-element">
+                                                        <div class="hover-box">
+                                                            <div class="img-holder"></div>
+                                                            <div class="text-holder">
+                                                                <h6>Multiple Choice</h6>
+                                                                <p>Check for retention by asking students to pick one or more correct answers. Use text, images, or math questions to spice things up!</p>
+                                                                <span class="text-lable"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#" data-title="Questions Templates">
+                                                    <img src="/store/1/tool-images/d2.png" alt=""> Multiple Response
+                                                    <div class="templete-hover-element">
+                                                        <div class="hover-box">
+                                                            <div class="img-holder"></div>
+                                                            <div class="text-holder">
+                                                                <h6>Multiple Response</h6>
+                                                                <p>Check for retention by asking students to pick one or more correct answers. Use text, images, or math questions to spice things up!</p>
+                                                                <span class="text-lable">Auto-graded</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li data-type="question_templates" data-option="true_false_template" data-elements="question_label_true_false,question_label_paragraph,truefalse_quiz">
+                                                <span class="templates-lable">Multiple Templates</span>
+                                                <a href="javascript:;" class="blank_canvas_apply" data-template_name="truefalse_quiz" data-title="Questions Templates">
+                                                    <img src="/store/1/tool-images/d3.png" alt=""> True/False </a>
+                                                <a href="#" data-title="Questions Templates">
+                                                    <img src="/store/1/tool-images/d4.png" alt=""> Short Answer </a>
+                                                <a href="#" data-title="Questions Templates">
+                                                    <img src="/store/1/tool-images/d5.png" alt=""> Numeric </a>
+                                                <a href="#" data-title="Questions Templates">
+                                                    <img src="/store/1/tool-images/d6.png" alt=""> Sequence </a>
+                                            </li>
+                                            <li data-type="question_templates" data-option="matching_template" data-elements="question_label_matching_template,match_quiz">
+                                                <span class="templates-lable">Multiple Templates</span>
+                                                <a href="#" data-title="Questions Templates">
+                                                    <img src="/store/1/tool-images/d7.png" alt=""> Matching </a>
+                                                <a href="#" data-title="Questions Templates">
+                                                    <img src="/store/1/tool-images/d8.png" alt=""> Fill in the Blanks </a>
+                                                <a href="#" data-title="Questions Templates">
+                                                    <img src="/store/1/tool-images/d9.png" alt=""> Select from Lists </a>
+                                                <a href="#" data-title="Questions Templates">
+                                                    <img src="/store/1/tool-images/d10.png" alt=""> Drag the Words </a>
+                                                <a href="#" data-title="Questions Templates">
+                                                    <img src="/store/1/tool-images/d11.png" alt=""> Hotspot </a>
+                                                <a href="#" data-title="Questions Templates">
+                                                    <img src="/store/1/tool-images/d12.png" alt=""> Drag and Drop </a>
+                                            </li>
+
+                                            <li data-type="question_templates" data-option="likert_template" data-elements="question_label">
+                                                <span class="templates-lable">Multiple Templates</span>
+                                                <a href="#" data-title="Questions Templates">
+                                                    <img src="/store/1/tool-images/d13.png" alt=""> Likert Scale </a>
+                                                <a href="#" data-title="Questions Templates">
+                                                    <img src="/store/1/tool-images/d14.png" alt=""> Essay </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade populated-content-area" id="q-collections" role="tabpanel" aria-labelledby="q-collections-tab">
+
+
+
+                                    <div class="col-12">
+                                        <div class="staff-picks-tabs">
+                                            <div class="mb-30 bg-white panel-border rounded-sm p-15">
+                                                <div class="rureraform-search-field mb-15">
+                                                    <div class="input-field skelton-height-lg">
+                                                        <input type="text" class="question_search" placeholder="Search question..">
+                                                        <button type="button" class="question-search-btn"><i class="fas fa-search"></i> <span>Search questions</span></button>
+                                                    </div>
+                                                    <div class="search-filters mb-0">
+                                                        <div class="select-field skelton-height-lg skelton-mb-0">
+                                                            <span>Sort by:</span>
+                                                            <select name="questions_sort_by" class="questions_sort_by">
+                                                                <option value="most_relevant">Most relevant</option>
+                                                                <option value="most_recent">Most recent</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-filters mb-0 conditional-block topics_block">
+                                                    <div class="select-field">
+                                                        <span>Year:</span>
+
+
+                                                        <select name="category_id" data-plugin-selectTwo class="rurera-req-field form-control populate ajax-category-courses" data-course_id="" data-next_index="subject_id" data-next_value="">
+                                                            <option value="">{{trans('admin/main.all_categories')}}</option>
+                                                            @foreach($categories as $category)
+                                                                @if(!empty($category->subCategories) and count($category->subCategories))
+                                                                    <optgroup label="{{  $category->title }}">
+                                                                        @foreach($category->subCategories as $subCategory)
+                                                                            <option value="{{ $subCategory->id }}">{{ $subCategory->title }}</option>
+                                                                        @endforeach
+                                                                    </optgroup>
+                                                                @else
+                                                                    <option value="{{ $category->id }}">{{ $category->title }}</option>
+                                                                @endif
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                    <div class="select-field">
+                                                        <span>Subject:</span>
+                                                        <select data-chapter_id="" id="subject_id"
+                                                                class="sub-chapters-list-subject rurera-req-field form-control populate ajax-courses-dropdown year_subjects @error('subject_id') is-invalid @enderror"
+                                                                name="subject_id" data-next_index="chapter_id" data-next_value="">
+                                                            <option value="">Please select year, subject</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-lg-4 col-md-4">
+                                                    <div class="featured-list-sidebar sub-chapters-list-data">
+                                                        <div class="featured-list-sidebar-inner">
+
+
+
+
+
+                                                            @if($subChapters->count() > 0)
+                                                                @foreach($subChapters as $subChapterObj)
+
+                                                                    @include('admin.learning_journey.includes.topic_list_items_list_layout', ['subChapterObj' => $subChapterObj])
+
+                                                                @endforeach
+                                                            @endif
+                                                            <button class="load-more-btn"><i class="fas fa-plus"></i> Load More</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-8 col-md-8 topic-part-item-data questions-group-select">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <div class="topics-subtopics-content-area row">
+
+
+                                    </div>
+                                    <div class="selected-questions-group 2222">
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="generate-ai" role="tabpanel" aria-labelledby="generate-ai-tab">
+                                    <div class="quiz-ai-tags mb-30 bg-white panel-border rounded-sm p-15 alert-dismissible alert fade show">
+                                        <button type="button" class="close" data-dismiss="quiz-ai-tags" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                        <h6 class="search-lable">Enhance this quiz using AI</h6>
+                                        <ul>
+                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add similar questions</a></li>
+                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Fix grammatical and spelling errors</a></li>
+                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Translate questions</a></li>
+                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Simplify questions</a></li>
+                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add questions on particular topic</a></li>
+                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Reduce/increase Options From MCQs</a></li>
+                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add learner’s name in the questions</a></li>
+                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Add answer's explanation</a></li>
+                                            <li><a href="#"><img src="/assets/default/svgs/ai.svg" alt="">Write custom prompt</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="questions-inner-tabs">
+                                        <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="document-tab" data-toggle="tab" data-target="#document" type="button" role="tab" aria-controls="document" aria-selected="true">Document</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="prompt-tab" data-toggle="tab" data-target="#prompt" type="button" role="tab" aria-controls="prompt" aria-selected="false">Text/Prompt</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="website-tab" data-toggle="tab" data-target="#website" type="button" role="tab" aria-controls="website" aria-selected="false">Website</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="utube-tab" data-toggle="tab" data-target="#utube" type="button" role="tab" aria-controls="utube" aria-selected="false">YouTube</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent2">
+                                            <div class="tab-pane fade show active" id="document" role="tabpanel" aria-labelledby="document-tab">
+                                                <h6>Generate question from study materials (presentations/documents)</h6>
+                                                <div class="staff-picks-holder">
+                                                    <div class="upload-options">
+                                                        <div class="field-box">
+                                                            <input type="file" id="drag-drop">
+                                                            <label for="drag-drop">
+                                                                <i class="fas fa-cloud-download-alt"></i>
+                                                                <span>Drag and drop a study material</span>
+                                                            </label>
+                                                        </div>
+                                                        <span class="field-separated">
+                                                    <span>Or</span>
+                                                </span>
+                                                        <div class="upload-controls">
+                                                            <div class="field-box">
+                                                                <input type="file" id="drag-drop">
+                                                                <label for="drag-drop"><i class="fas fa-desktop"></i> Upload from device</label>
+                                                            </div>
+                                                            <div class="field-box">
+                                                                <input type="file" id="drag-drop">
+                                                                <label for="drag-drop"><i class="fas fa-desktop"></i> Import from device</label>
+                                                            </div>
+                                                            <div class="field-box">
+                                                                <input type="file" id="drag-drop">
+                                                                <label for="drag-drop"><i class="fas fa-camera"></i> Take a picture</label>
+                                                            </div>
+                                                        </div>
+                                                        <p>Supported formates: PDF, PPT, PPTX, DOC</p>
+                                                    </div>
+                                                </div>
+                                                <div class="question-hints">
+                                                    <h6>Hints</h6>
+                                                    <div class="question-hints-holder">
+                                                        <div class="hints-box">
+                                                            <strong>Total Referred Users</strong>
+                                                            <span>Users that registerd on the plateform using the referral code.</span>
+                                                        </div>
+                                                        <div class="hints-box">
+                                                            <strong>Total Referred Users</strong>
+                                                            <span>Users that registerd on the plateform using the referral code.</span>
+                                                        </div>
+                                                        <div class="hints-box">
+                                                            <strong>Total Referred Users</strong>
+                                                            <span>Users that registerd on the plateform using the referral code.</span>
+                                                        </div>
+                                                        <div class="hints-box">
+                                                            <strong>Total Referred Users</strong>
+                                                            <span>Users that registerd on the plateform using the referral code.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="prompt" role="tabpanel" aria-labelledby="prompt-tab">
+                                                <h6>Copy and paste questions text from anywhere to create a quiz from it</h6>
+                                                <div class="copy-paste-questions">
+                                                    <textarea name="text_prompt" class="text_prompt"></textarea>
+                                                    <button type="button" class="text-prompt-submit-btn">Generate</button>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="website" role="tabpanel" aria-labelledby="website-tab">
+                                                <h6>Generate questions from websites/online articles</h6>
+                                                <div class="rureraform-search-field">
+                                                    <div class="input-field web-input-field">
+                                                        <i class="fas fa-link"></i>
+                                                        <input type="text" class="website_url" name="website_url" placeholder="Enter any website URL (eg https://rurera.com/) ">
+                                                        <button type="button" class="url-prompt-submit-btn">Generate</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="utube" role="tabpanel" aria-labelledby="utube-tab">
+                                                <h6 class="search-lable">Find or create an Interactive Video from YouTube <span class="beta-lable">Beta</span></h6>
+                                                <div class="bg-white panel-border rounded-sm p-15">
+                                                    <div class="rureraform-search-field">
+                                                        <div class="input-field youtube-input-field w-100">
+                                                            <img src="/assets/default/svgs/youtube.svg" alt="">
+                                                            <input type="text" name="video_url" class="video_url" placeholder="Search question..">
+                                                            <button type="button" class="video-prompt-submit-btn"><i class="fas fa-search"></i> Generate</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="import-q" role="tabpanel" aria-labelledby="import-tab">
+                                    <div class="questions-inner-tabs">
+                                        <ul class="nav nav-tabs" id="myTab3" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="paste-q-tab" data-toggle="tab" data-target="#paste-q" type="button" role="tab" aria-controls="paste-q" aria-selected="true">Paste Questions</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="google-form-tab" data-toggle="tab" data-target="#google-form" type="button" role="tab" aria-controls="google-form" aria-selected="false">Google Form</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="spreadsheet-tab" data-toggle="tab" data-target="#spreadsheet" type="button" role="tab" aria-controls="spreadsheet" aria-selected="false">Spreadsheet/CSV</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent3">
+                                            <div class="tab-pane fade show active" id="paste-q" role="tabpanel" aria-labelledby="paste-q-tab">
+                                                <h6>Copy and paste questions text from anywhere to create a quiz from it</h6>
+                                                <div class="copy-paste-questions">
+                                                    <textarea name="text_prompt_2" class="text_prompt_2"></textarea>
+                                                    <button type="button" class="text-prompt-submit-btn-2">Generate</button>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="google-form" role="tabpanel" aria-labelledby="google-form-tab">
+                                                <h6>Import Google Form as a quiz</h6>
+                                                <div class="staff-picks-holder">
+                                                    <div class="upload-options">
+                                                        <div class="field-box">
+                                                            <input type="file" id="drag-drop">
+                                                            <label for="drag-drop">
+                                                                <i class="fas fa-file-alt"></i>
+                                                                <span>Select a google form</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="upload-controls">
+                                                            <div class="field-box">
+                                                                <input type="file" id="drag-drop">
+                                                                <label for="drag-drop"><i class="fas fa-desktop"></i> Import from drive</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="spreadsheet" role="tabpanel" aria-labelledby="spreadsheet-tab">
+                                                <h6>Bulk import questions using spreadsheet</h6>
+                                                <div class="staff-picks-holder">
+                                                    <div class="upload-options">
+                                                        <div class="field-box">
+                                                            <input type="file" id="drag-drop">
+                                                            <label for="drag-drop">
+                                                                <img src="/assets/default/svgs/spreadsheet.svg" alt="">
+                                                                <span>Drag and drop your spreadsheet</span>
+                                                            </label>
+                                                        </div>
+                                                        <span class="field-separated">
+                                                    <span>Or</span>
+                                                </span>
+                                                        <form name="questions-spreadsheet" id="questions-spreadsheet" action="javascript:;" method="POST" class="questions-spreadsheet" enctype="multipart/form-data">
+                                                            {{csrf_field()}}
+                                                            <div class="upload-controls">
+                                                                <div class="field-box">
+                                                                    <input type="file" id="drag-drop1" class="spreadsheet-file" name="spreadsheet_file">
+                                                                    <label for="drag-drop1"><i class="fas fa-desktop"></i> Upload from device</label>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="collection" role="tabpanel" aria-labelledby="collection-tab">
+                                    <div class="staff-picks-tabs">
+                                        <div class="mb-30 bg-white panel-border rounded-sm p-15">
+                                            <div class="rureraform-search-field mb-15">
+                                                <div class="input-field">
+                                                    <input type="text" placeholder="Search question..">
+                                                    <button type="button"><i class="fas fa-search"></i> <span>Search questions</span></button>
+                                                </div>
+                                                <div class="featured-controls">
+                                                    <button type="button" class="active">Featured List</button>
+                                                    <button type="button">Community</button>
+                                                    <button type="button">My Collection</button>
+                                                </div>
+                                            </div>
+                                            <div class="search-filters mb-0">
+                                                <div class="select-field">
+                                                    <span>By:</span>
+                                                    <select>
+                                                        <option value="All providers">All providers</option>
+                                                        <option value="All providers">All providers</option>
+                                                        <option value="All providers">All providers</option>
+                                                    </select>
+                                                </div>
+                                                <div class="select-field">
+                                                    <span>Capability:</span>
+                                                    <select>
+                                                        <option value="All providers">Embeddings</option>
+                                                        <option value="All providers">Embeddings</option>
+                                                        <option value="All providers">Embeddings</option>
+                                                    </select>
+                                                </div>
+                                                <div class="select-field">
+                                                    <span>Tag:</span>
+                                                    <select>
+                                                        <option value="All">All</option>
+                                                        <option value="All">All</option>
+                                                        <option value="All">All</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
 @endsection
@@ -1627,6 +1655,28 @@
 
         });
 
+
+        $('body').on('click', '.text-prompt-submit-btn-2', function (e) {
+            var text_prompt = $('.text_prompt-2').val();
+            $(".question_templates_modal").modal('hide');
+            $(".ai-questions-modal-canvas").modal('show');
+            console.log(text_prompt);
+            var thisObj = $(this);
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/custom_quiz/prompt_questions',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"text_prompt": text_prompt},
+                success: function (return_data) {
+                    $(".ai-questions-modal-canvas-block").html(return_data);
+
+                }
+            });
+
+        });
+
         $('body').on('click', '.text-prompt-submit-btn', function (e) {
             var text_prompt = $('.text_prompt').val();
             $(".question_templates_modal").modal('hide');
@@ -1647,6 +1697,52 @@
             });
 
         });
+
+        $('body').on('click', '.url-prompt-submit-btn', function (e) {
+            var website_url = $('.website_url').val();
+            $(".question_templates_modal").modal('hide');
+            $(".ai-questions-modal-canvas").modal('show');
+            console.log(website_url);
+            var thisObj = $(this);
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/custom_quiz/url_prompt_questions',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"website_url": website_url},
+                success: function (return_data) {
+                    $(".ai-questions-modal-canvas-block").html(return_data);
+
+                }
+            });
+
+        });
+
+        $('body').on('click', '.video-prompt-submit-btn', function (e) {
+            var video_url = $('.video_url').val();
+            $(".question_templates_modal").modal('hide');
+            $(".ai-questions-modal-canvas").modal('show');
+            console.log(video_url);
+            var thisObj = $(this);
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/custom_quiz/video_prompt_questions',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"video_url": video_url},
+                success: function (return_data) {
+                    $(".ai-questions-modal-canvas-block").html(return_data);
+
+                }
+            });
+
+        });
+
+
+
+
 
         $('body').on('click', '.question-load-canvas', function (e) {
             var question_id = $(this).attr('data-id');
@@ -1683,6 +1779,28 @@
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
                 data: {"question_id": question_id},
+                success: function (return_data) {
+                    $(".ai-questions-modal-canvas-block").html(return_data);
+
+                }
+            });
+
+        });
+
+
+        $('body').on('click', '.reduce-question-options', function (e) {
+            var question_id = $(this).attr('data-id');
+            var option_value = $(this).attr('data-option_value');
+            $(".ai-questions-modal-canvas").modal('show');
+
+            var thisObj = $(this);
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/custom_quiz/reduce_question_options',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {"question_id": question_id, "option_value": option_value},
                 success: function (return_data) {
                     $(".ai-questions-modal-canvas-block").html(return_data);
 
@@ -2309,6 +2427,27 @@
         });
 
 
+        $('body').on('change', '.spreadsheet-file', function (e) {
+            var thisObj = $(this);
+            var formData = new FormData($('.questions-spreadsheet')[0]);
+            $.ajax({
+                type: "POST",
+                url: '/admin/custom_quiz/generated_by_spreadsheet',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (return_data) {
+                    if(return_data == 'error'){
+                        alert('File type not Supported!')
+                    }else {
+                        $(".question_templates_modal").modal('hide');
+                        $(".ai-questions-modal-canvas").modal('show');
+                        $(".ai-questions-modal-canvas-block").html(return_data);
+                    }
+                }
+            });
+
+        });
 
     </script>
 
