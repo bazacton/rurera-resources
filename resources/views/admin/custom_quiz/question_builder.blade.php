@@ -406,7 +406,7 @@ $rand_id = rand(999,99999);
 
 
 												<div class="col-12 col-md-12">
-													<div class="create-question-fields-block d-flex align-items-center mb-30">
+													<div class="create-question-fields-block d-flex align-items-center mb-30 justify-content-between">
 														<button type="button" data-status="Submit for review" class="question-stage-builder-generate btn btn-primary font-16">
 														@if($questionObj->status == 'api_pending')
 															Apply Changes
