@@ -58,6 +58,7 @@ html.wp-toolbar.rureraform-toolbars-fixed .rureraform-toolbar-tooltipster {margi
 .rureraform-elements {min-height: 60px;}
 .rureraform-element {width: 100%;outline: 1px dashed #f3f1f1 !important;height: auto !important;margin-top: 10px;margin-bottom: 10px;padding: 10px;display: block !important;visibility: visible !important;opacity: 1 !important;}
 .rureraform-element:hover {outline: 2px solid #26B99A !important;}
+.quiz-setup-listings .rureraform-element:hover {outline: none !important;}
 .rureraform-element::before {display: table;content: ' ';}
 .rureraform-element::after {clear: both;display: table;	content: ' ';}
 .rureraform-element-placeholder {background: transparent;border-radius: 3px;border: 1px dashed #26B99A;background-color: #26B99A;	opacity: 0.2;height: 40px;}
