@@ -138,10 +138,10 @@ ul.crop_sizes {
         <div class="col-lg-3 col-md-3 col-sm-6 col-12">
             <div class="card card-statistic-1">
                 <div class="card-wrap">
-                    <div class="card-header">
+                    <div class="card-header skelton-hide skelton-height-lg skelton-mb-0">
                         <h4>Total Images Added</h4>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body skelton-hide skelton-height-lg skelton-mb-0">
                         {{$total_added_images}}
                     </div>
                 </div>
@@ -151,10 +151,10 @@ ul.crop_sizes {
         <div class="col-lg-3 col-md-3 col-sm-6 col-12">
             <div class="card card-statistic-1">
                 <div class="card-wrap">
-                    <div class="card-header">
+                    <div class="card-header skelton-hide skelton-height-lg skelton-mb-0">
                         <h4>Mohsin Today Count ({{$date_text}})</h4>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body skelton-hide skelton-height-lg skelton-mb-0">
                         {{$mohsin_today_count}}
                     </div>
                 </div>
@@ -164,10 +164,10 @@ ul.crop_sizes {
         <div class="col-lg-3 col-md-3 col-sm-6 col-12">
             <div class="card card-statistic-1">
                 <div class="card-wrap">
-                    <div class="card-header">
+                    <div class="card-header skelton-hide skelton-height-lg skelton-mb-0">
                         <h4>Danish Today Count ({{$date_text}})</h4>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body skelton-hide skelton-height-lg skelton-mb-0">
                         {{$danish_today_count}}
                     </div>
                 </div>
@@ -184,7 +184,7 @@ ul.crop_sizes {
                 <form action="/admin/gallery_images" id="gallery_images_search_form" method="get" class="row mb-0">
 
                     <div class="col-md-4">
-                        <div class="form-group">
+                        <div class="form-group skelton-hide skelton-height-lg">
                             <label class="input-label">{{trans('admin/main.category')}}</label>
                             <select name="category_id" data-plugin-selectTwo class="form-control populate ajax-category-courses" data-course_id="{{get_filter_request('subject_id', 'gallery_images_search')}}">
                                 <option value="">{{trans('admin/main.all_categories')}}</option>
@@ -203,12 +203,8 @@ ul.crop_sizes {
                         </div>
                     </div>
 
-
-
-
-
 					<div class="col-md-4">
-					<div class="form-group">
+					<div class="form-group skelton-hide skelton-height-lg">
 						<label>Subjects</label>
 						<select data-return_type="option"
 								data-default_id="{{request()->get('subject_id')}}" data-chapter_id="{{get_filter_request('chapter_id', 'gallery_images_search')}}"
@@ -226,7 +222,7 @@ ul.crop_sizes {
 
 
 					<div class="col-md-4">
-					<div class="form-group">
+					<div class="form-group skelton-hide skelton-height-lg">
 						<label class="input-label">Topic</label>
 						<select data-sub_chapter_id="{{get_filter_request('sub_chapter_id', 'gallery_images_search')}}" id="chapter_id"
 								class="form-control populate ajax-chapter-dropdown @error('chapter_id') is-invalid @enderror"
@@ -244,7 +240,7 @@ ul.crop_sizes {
 
 
 					<div class="col-md-3">
-					<div class="form-group">
+					<div class="form-group skelton-hide skelton-height-lg">
 						<label class="input-label">Sub Topic</label>
 						<select id="chapter_id"
 							class="form-control populate ajax-subchapter-dropdown @error('sub_chapter_id') is-invalid @enderror"
@@ -261,7 +257,7 @@ ul.crop_sizes {
 					</div>
 					</div>
 					<div class="col-md-3">
-						<div class="form-group">
+						<div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
 							<label class="input-label">Status</label>
 							<select name="status" data-search-option="status" class="form-control "
 									data-placeholder="Search Status">
@@ -274,7 +270,7 @@ ul.crop_sizes {
 						</div>
 					</div>
 					<div class="col-md-3">
-						<div class="form-group">
+						<div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
 							<label class="input-label">Author</label>
 							<select name="user_id" data-search-option="display_name" class="form-control "
 									data-placeholder="Search author">
@@ -291,7 +287,7 @@ ul.crop_sizes {
 					</div>
 
                     <div class="col-md-3">
-                        <div class="form-group">
+                        <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
                             <label class="input-label">{{ trans('admin/main.start_date') }}</label>
                             <div class="input-group">
                                 <input type="date" id="fsdate" class="text-center form-control" name="from"
@@ -301,7 +297,7 @@ ul.crop_sizes {
                     </div>
 
                     <div class="col-md-3">
-                        <div class="form-group">
+                        <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
                             <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                             <div class="input-group">
                                 <input type="date" id="lsdate" class="text-center form-control" name="to"
@@ -312,7 +308,7 @@ ul.crop_sizes {
 
 
                     <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
-                        <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}</button>
+                        <button type="submit" class="btn btn-primary w-100 skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.show_results') }}</button>
 
                     </div>
                 </form>
@@ -359,16 +355,16 @@ ul.crop_sizes {
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
                                 <tr>
-									<th class="text-left">&nbsp;</th>
-									<th class="text-left">Category</th>
-									<th class="text-left">Image Recomendations</th>
-									<th class="text-left">Questions</th>
-                                    <th class="text-left">Status</th>
-                                    <th class="text-left">Reference</th>
-                                    <th class="text-left">Added Date</th>
-                                    <th class="text-left">Updated Date</th>
-                                    <th class="text-left">User</th>
-                                    <th>{{ trans('admin/main.actions') }}</th>
+									<th class="text-left skelton-hide skelton-height-lg skelton-mb-0">&nbsp;</th>
+									<th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Category</th>
+									<th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Image Recomendations</th>
+									<th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Questions</th>
+                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Status</th>
+                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Reference</th>
+                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Added Date</th>
+                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Updated Date</th>
+                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">User</th>
+                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.actions') }}</th>
                                 </tr>
 
                                 @foreach($GalleryBulkLists as $GalleryBulkListObj)
@@ -381,7 +377,7 @@ ul.crop_sizes {
                                 $tr_classes = ($GalleryBulkListObj->status == 'Rejected')? 'bg-danger text-white' : '';
 								@endphp
                                 <tr class="{{$tr_classes}}">
-									<td class="text-left" data-id="user">
+									<td class="text-left skelton-hide skelton-height-lg skelton-mb-0" data-id="user">
 										@if( $GalleryBulkListObj->image_path != '')
 											<img class="image-preview-modal" width="50" src="/assets/default/questions_gallery/{{$GalleryBulkListObj->image_path}}">
                                             {{$galleryImageObj->image_width}} X {{$galleryImageObj->image_height}}
@@ -389,7 +385,7 @@ ul.crop_sizes {
 											-
 										@endif
 									</td>
-									<td data-id="category" class="text-left">{{ (isset($GalleryBulkListObj->category->id))? $GalleryBulkListObj->category->getTitleAttribute() : '-' }}
+									<td data-id="category" class="text-left skelton-hide skelton-height-lg skelton-mb-0">{{ (isset($GalleryBulkListObj->category->id))? $GalleryBulkListObj->category->getTitleAttribute() : '-' }}
 									<br>
 										<small>
 										{{ (isset($GalleryBulkListObj->subject->id))? $GalleryBulkListObj->subject->getTitleAttribute() : '-' }} /
@@ -397,7 +393,7 @@ ul.crop_sizes {
 										{{ (isset($GalleryBulkListObj->subChapter->id))? $GalleryBulkListObj->subChapter->sub_chapter_title : '-' }}
 										</small>
 									</td>
-									<td class="text-left" data-id="user">
+									<td class="text-left skelton-hide skelton-height-lg skelton-mb-0" data-id="user">
 										@if(!empty($image_recomendations))
 											@foreach($image_recomendations as $image_recomendation_data)
 												@php $searchable_keywords = isset( $image_recomendation_data['searchable_keywords'] )? $image_recomendation_data['searchable_keywords'] : '';
@@ -424,39 +420,39 @@ ul.crop_sizes {
 										@endif
 										</span>
 									</td>
-                                    <td class="text-left" data-id="user">
+                                    <td class="text-left skelton-hide skelton-height-lg skelton-mb-0" data-id="user">
 										@if(!empty($questions_ids))
 											@foreach($questions_ids as $question_id)
 												<a href="/panel/questions/{{$question_id}}/start" target="_blank">{{$question_id}}</a><br>
 											@endforeach
 										@endif
 									</td>
-                                    <td class="text-left" data-id="user">{{ $GalleryBulkListObj->status }}
+                                    <td class="text-left skelton-hide skelton-height-lg skelton-mb-0" data-id="user">{{ $GalleryBulkListObj->status }}
 
                                         @if($GalleryBulkListObj->status == 'Rejected')
                                             <br><br>{{$GalleryBulkListObj->rejected_comment}}
                                         @endif
 
                                     </td>
-                                    <td class="text-left" data-id="user">{{ $image_reference_url }}</td>
-                                    <td class="text-left" data-id="added_at">
+                                    <td class="text-left skelton-hide skelton-height-lg skelton-mb-0" data-id="user">{{ $image_reference_url }}</td>
+                                    <td class="text-left skelton-hide skelton-height-lg skelton-mb-0" data-id="added_at">
                                         {{dateTimeFormat($GalleryBulkListObj->created_at, 'j M y | H:i')}}
                                     </td>
-                                    <td class="text-left" data-id="created_at">
+                                    <td class="text-left skelton-hide skelton-height-lg skelton-mb-0" data-id="created_at">
 									@if($GalleryBulkListObj->status == 'Pending')
 										-
 									@else
 										{{dateTimeFormat($GalleryBulkListObj->updated_at, 'j M y | H:i')}}
 									@endif
 									</td>
-									<td class="text-left" data-id="created_at">
+									<td class="text-left skelton-hide skelton-height-lg skelton-mb-0" data-id="created_at">
 									@if($GalleryBulkListObj->status == 'Pending')
 										-
 									@else
 										{{$GalleryBulkListObj->updatedUser->get_full_name()}}
 									@endif
 									</td>
-                                    <td data-id="action">
+                                    <td data-id="action" class="skelton-hide skelton-height-lg skelton-mb-0">
 
                                         @if($GalleryBulkListObj->status == 'Pending')
 											<a href="javascript:;" data-id="{{ $GalleryBulkListObj->id }}" class="upload-image-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Upload image"><i class="fas fa-upload"></i></a>&nbsp;&nbsp;&nbsp;
@@ -472,7 +468,7 @@ ul.crop_sizes {
                                             @endif
                                         @endif
 @if($GalleryBulkListObj->status == 'Reset')
-<a href="javascript:;" data-id="{{ $GalleryBulkListObj->id }}" class="upload-image-btn btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="Re-upload image"><i class="fas fa-sync"></i></a>&nbsp;&nbsp;&nbsp;
+<a href="javascript:;" data-id="{{ $GalleryBulkListObj->id }}" class="upload-image-btn btn-transparent btn-sm text-primary skelton-hide skelton-height-lg skelton-mb-0" data-toggle="tooltip" data-placement="top" title="Re-upload image"><i class="fas fa-sync"></i></a>&nbsp;&nbsp;&nbsp;
 @endif
 
 
