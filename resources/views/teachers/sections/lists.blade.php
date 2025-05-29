@@ -38,21 +38,21 @@
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
-                                <tr class="skelton-hide">
-                                    <th class="text-left">{{ trans('admin/main.title') }}</th>
-                                    <th class="text-left">Curriculum</th>
-                                    <th class="text-left">No of Students</th>
-                                    <th>Class Code</th>
+                                <tr>
+                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.title') }}</th>
+                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Curriculum</th>
+                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">No of Students</th>
+                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Class Code</th>
                                 </tr>
 
                                 @foreach($sections as $sectionData)
-                                <tr class="skelton-hide">
-                                    <td>
+                                <tr>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <span>{{ $sectionData->title }} {{ isset( $sectionData->sectionClass->title )? '('.$sectionData->sectionClass->title.')' : '' }}</span>
                                     </td>
-                                    <td class="text-left">{{ $sectionData->category->getTitleAttribute() }}</td>
-                                    <td class="text-left"><a href="/admin/sections/users?section={{$sectionData->id}}">{{ $sectionData->users->count() }}</a></td>
-                                    <td>
+                                    <td class="text-left skelton-hide skelton-height-lg skelton-mb-0">{{ $sectionData->category->getTitleAttribute() }}</td>
+                                    <td class="text-left skelton-hide skelton-height-lg skelton-mb-0"><a href="/admin/sections/users?section={{$sectionData->id}}">{{ $sectionData->users->count() }}</a></td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         {{ $sectionData->class_code }}
                                     </td>
 
