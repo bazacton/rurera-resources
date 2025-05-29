@@ -502,14 +502,14 @@
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
             <div class="card card-statistic-1">
-                <div class="card-icon bg-primary">
+                <div class="card-icon bg-primary skelton-hide skelton-height-lg skelton-mb-0">
                     <i class="fas fa-file-alt"></i>
                 </div>
                 <div class="card-wrap">
-                    <div class="card-header">
+                    <div class="card-header skelton-hide skelton-height-lg skelton-mb-0">
                         <h4>Total Quests</h4>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body skelton-hide skelton-height-lg skelton-mb-0">
                         {{ $totalQuests }}
                     </div>
                 </div>
@@ -524,14 +524,14 @@
             <div class="card-body">
                 <form action="{{ getAdminPanelUrl() }}/quizzes" method="get" class="row mb-0">
                     <div class="col-md-3">
-                        <div class="form-group">
+                        <div class="form-group skelton-hide skelton-height-lg">
                             <label class="input-label">{{ trans('admin/main.search') }}</label>
                             <input type="text" class="form-control" name="title" value="{{ request()->get('title') }}">
                         </div>
                     </div>
 
                     <div class="col-md-3">
-                        <div class="form-group">
+                        <div class="form-group skelton-hide skelton-height-lg">
                             <label class="input-label">{{ trans('admin/main.start_date') }}</label>
                             <div class="input-group">
                                 <input type="date" id="fsdate" class="text-center form-control" name="from"
@@ -541,7 +541,7 @@
                     </div>
 
                     <div class="col-md-3">
-                        <div class="form-group">
+                        <div class="form-group skelton-hide skelton-height-lg">
                             <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                             <div class="input-group">
                                 <input type="date" id="lsdate" class="text-center form-control" name="to"
@@ -551,7 +551,7 @@
                     </div>
 
                     <div class="col-md-3">
-                        <div class="form-group">
+                        <div class="form-group skelton-hide skelton-height-lg">
                             <label class="input-label">{{ trans('admin/main.filters') }}</label>
                             <select name="sort" data-plugin-selectTwo class="form-control populate">
                                 <option value="">{{ trans('admin/main.filter_type') }}</option>
@@ -587,7 +587,7 @@
                     </div>
 
                     <div class="col-md-3">
-                        <div class="form-group">
+                        <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
                             <label class="input-label">{{ trans('admin/main.instructor') }}</label>
                             <select name="teacher_ids[]" multiple="multiple" data-search-option="just_teacher_role"
                                     class="form-control search-user-select2"
@@ -603,7 +603,7 @@
                     </div>
 
                     <div class="col-md-3">
-                        <div class="form-group">
+                        <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
                             <label class="input-label">{{ trans('admin/main.class') }}</label>
                             <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2"
                                     data-placeholder="Search classes">
@@ -618,7 +618,7 @@
                     </div>
 
                     <div class="col-md-3">
-                        <div class="form-group">
+                        <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
                             <label class="input-label">{{ trans('admin/main.status') }}</label>
                             <select name="statue" data-plugin-selectTwo class="form-control populate">
                                 <option value="">{{ trans('admin/main.all_status') }}</option>
@@ -633,7 +633,7 @@
                     </div>
 
                     <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
-                        <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}
+                        <button type="submit" class="btn btn-primary w-100 skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.show_results') }}
                         </button>
                     </div>
                 </form>
@@ -646,8 +646,7 @@
                     <div class="card-header">
                         @can('admin_assignments_create')
                         <div class="text-right">
-                            <a href="{{ getAdminPanelUrl() }}/daily_quests/create" class="btn btn-primary ml-2">Create
-                                Quest</a>
+                            <a href="{{ getAdminPanelUrl() }}/daily_quests/create" class="btn btn-primary ml-2 skelton-hide skelton-height-lg skelton-mb-0">Create Quest</a>
                         </div>
                         @endcan
                     </div>
@@ -656,12 +655,12 @@
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
                                 <tr>
-                                    <th class="text-left">{{ trans('admin/main.title') }}</th>
-                                    <th class="text-center">Type</th>
-                                    <th class="text-center">Quest Created</th>
-                                    <th class="text-center">Recurring</th>
-                                    <th class="text-center">{{ trans('admin/main.status') }}</th>
-                                    <th>{{ trans('admin/main.actions') }}</th>
+                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.title') }}</th>
+                                    <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">Type</th>
+                                    <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">Quest Created</th>
+                                    <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">Recurring</th>
+                                    <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.status') }}</th>
+                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.actions') }}</th>
                                 </tr>
 
 
@@ -677,20 +676,20 @@
                                 }
                                 @endphp
                                 <tr>
-                                    <td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <span>{{$questObj->title}}</span>
                                     </td>
-                                    <td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <span>{{$questObj->quest_topic_type}}</span>
                                     </td>
-                                    <td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <span>{{ dateTimeFormat($questObj->created_at, 'j M Y H:i') }}</span>
                                     </td>
-                                    <td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <span>{{$questObj->recurring_type}}</span>
                                     </td>
 
-                                    <td class="text-center">
+                                    <td class="text-center skelton-hide skelton-height-lg skelton-mb-0">
                                         @if($questObj->status != 'inactive')
                                         <span class="text-success">{{ trans('admin/main.active') }}</span>
                                         @else
@@ -698,7 +697,7 @@
                                         @endif
                                     </td>
 
-                                    <td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <a href="javascript:;" data-dates="{{$dates_string}}"
                                            class="btn-transparent btn-sm text-primary edit-quest-btn" data-quest_id="{{$questObj->id}}" data-toggle="tooltip"
                                            data-placement="top" title="{{ trans('admin/main.edit') }}">
