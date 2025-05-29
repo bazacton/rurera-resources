@@ -38,21 +38,21 @@
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
-                                <tr class="skelton-hide">
-                                    <th class="text-left">Student</th>
-                                    <th class="text-left">Class</th>
-                                    <th class="text-left">Section</th>
-                                    <th>Action</th>
+                                <tr>
+                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Student</th>
+                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Class</th>
+                                    <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Section</th>
+                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Action</th>
                                 </tr>
 
                                 @foreach($joining_requests as $requestObj)
-                                <tr class="skelton-hide">
-                                    <td>
+                                <tr>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <span>{{ $requestObj->student->get_full_name() }}</span>
                                     </td>
-                                    <td class="text-left">{{ isset( $requestObj->section->sectionClass->title)? $requestObj->section->sectionClass->title : '' }}</td>
-                                    <td class="text-left">{{ $requestObj->section->title }}</td>
-                                    <td>
+                                    <td class="text-left skelton-hide skelton-height-lg skelton-mb-0">{{ isset( $requestObj->section->sectionClass->title)? $requestObj->section->sectionClass->title : '' }}</td>
+                                    <td class="text-left skelton-hide skelton-height-lg skelton-mb-0">{{ $requestObj->section->title }}</td>
+                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="approved" data-request_id="{{$requestObj->id}}">
                                             <i class="fa fa-check"></i>
                                         </a>
