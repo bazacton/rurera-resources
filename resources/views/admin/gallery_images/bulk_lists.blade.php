@@ -176,9 +176,7 @@ ul.crop_sizes {
 
     </div>
 
-
     <div class="section-body">
-
         <section class="card">
             <div class="card-body">
                 <form action="/admin/gallery_images" id="gallery_images_search_form" method="get" class="row mb-0">
@@ -337,7 +335,6 @@ ul.crop_sizes {
         <div class="row">
             <div class="col-12 col-md-12">
                 <div class="card">
-
                     <div class="card-header rurera-hide">
 						@can('admin_gallery_images_create')
 							<div class="text-right">
@@ -348,8 +345,6 @@ ul.crop_sizes {
 							</div>
 						@endcan
                     </div>
-
-
 
                     <div class="card-body">
                         <div class="table-responsive">
