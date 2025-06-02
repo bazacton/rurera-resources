@@ -1145,6 +1145,9 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 .edit-questions-difficulty-tabs .admin-rurera-tabs .nav-link.active {border-bottom-color: var(--primary);}
 .edit-questions-difficulty-tabs .edit-questions-tabs {margin-top: 0; border: 1px solid #ddd; padding: 25px 25px;}
 .edit-questions-difficulty-tabs .edit-questions-tabs:has(.tab-content) {border: 0; padding: 0;}
+.rurera-form-validation .users_list_block label {margin: 0; line-height: normal;}
+.rurera-form-validation .users_list_block > span, .users_list_block li > span {display: inline-flex; align-items: center; gap: 5px;}
+.rurera-form-validation .users_list_block > span {margin: 0 0 10px;}
 /* Admin Rurera Tabs Style End */
 .search-field-box {background-color: #f1f1f1; border-bottom: 1px solid #eeeeee; padding: 20px;}
 .questions-group.populated-data,
