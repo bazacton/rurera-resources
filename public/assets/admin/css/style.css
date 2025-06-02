@@ -1216,9 +1216,7 @@ body:has(.single-question-preview) .assignment-preview {margin-top: 15px;}
 .single-question-preview .prev-next-controls .review-btn {left: 0;}
 .single-question-preview .prev-next-controls,
 .assignment-questions-preview .prev-next-controls {margin-top: auto; border-top: 1px solid #eee; padding-top: 30px;}
-.questions-group-select {
-    height: 650px;
-}
+.questions-group-select {height: 650px;}
 #glossary_solution .select2-container {z-index: auto !important;}
 .lms-quiz-create ol li {list-style: auto;}
 .lms-quiz-create .add-glossary-modal {margin-top: 10px; display: inline-block;}
@@ -1507,9 +1505,7 @@ output {font-weight: bold; color: #333;}
 .note-dropdown-menu h3,
 .note-dropdown-menu h4,
 .note-dropdown-menu h5,
-.note-dropdown-menu h6 {
-    font-size: 14px;
-}
+.note-dropdown-menu h6 {font-size: 14px;}
 /* Note-Dropdown-Menu Style End */
 .example-question-block {border-left: 1px solid #e4e6fc; padding-left: 30px; height: 100%;}
 /* Questions Defined Searches style Start */
