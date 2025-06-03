@@ -3928,8 +3928,7 @@ Qustions AI Tabs Style End
     font-size: 24px;
     font-weight: bold;
     cursor: grab;
-    
-    transition: all 0.5s ease;
+    user-select: none;
 }
 .grid-item.dragging {
     opacity: 0.5;
