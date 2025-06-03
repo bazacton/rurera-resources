@@ -163,7 +163,7 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="grid-container abc" id="gridContainer">
+                                    <div class="grid-container" id="gridContainer">
                                         <!-- Grid Items -->
                                         <div class="grid-item" draggable="true">1</div>
                                         <div class="grid-item" draggable="true">2</div>
@@ -1489,45 +1489,45 @@
         });
     </script>
     <script>
-        const gridContainer = document.getElementById("gridContainer");
+        const container = document.getElementById('gridContainer');
         let draggedItem = null;
 
-        // Event listeners for drag and drop
-        document.querySelectorAll(".grid-item").forEach(item => {
-            item.addEventListener("dragstart", (e) => {
-                draggedItem = item;
-                setTimeout(() => item.classList.add("dragging"), 0);
-            });
-
-            item.addEventListener("dragend", () => {
-                draggedItem.classList.remove("dragging");
-                draggedItem = null;
-            });
+        container.addEventListener('dragstart', e => {
+        if (e.target.classList.contains('grid-item')) {
+            draggedItem = e.target;
+            setTimeout(() => e.target.style.display = 'none', 0);
+        }
         });
 
-        gridContainer.addEventListener("dragover", (e) => {
-            e.preventDefault();
-            const afterElement = getDragAfterElement(gridContainer, e.clientY);
-            if (afterElement == null) {
-                gridContainer.appendChild(draggedItem);
+        container.addEventListener('dragend', e => {
+        if (draggedItem) {
+            draggedItem.style.display = 'block';
+            draggedItem = null;
+        }
+        });
+
+        container.addEventListener('dragover', e => {
+        e.preventDefault();
+        const afterElement = getDragAfterElement(container, e.clientX);
+        if (afterElement == null) {
+            container.appendChild(draggedItem);
+        } else {
+            container.insertBefore(draggedItem, afterElement);
+        }
+        });
+
+        function getDragAfterElement(container, x) {
+        const draggableElements = [...container.querySelectorAll('.grid-item:not(.dragging)')];
+
+        return draggableElements.reduce((closest, child) => {
+            const box = child.getBoundingClientRect();
+            const offset = x - box.left - box.width / 2;
+            if (offset < 0 && offset > closest.offset) {
+            return { offset: offset, element: child };
             } else {
-                gridContainer.insertBefore(draggedItem, afterElement);
+            return closest;
             }
-        });
-
-        // Helper function to determine position
-        function getDragAfterElement(container, y) {
-            const draggableElements = [...container.querySelectorAll(".grid-item:not(.dragging)")];
-
-            return draggableElements.reduce((closest, child) => {
-                const box = child.getBoundingClientRect();
-                const offset = y - box.top - box.height / 2;
-                if (offset < 0 && offset > closest.offset) {
-                    return { offset: offset, element: child };
-                } else {
-                    return closest;
-                }
-            }, { offset: Number.NEGATIVE_INFINITY }).element;
+        }, { offset: Number.NEGATIVE_INFINITY }).element;
         }
     </script>
     <!-- <script>
