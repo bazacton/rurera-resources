@@ -2362,41 +2362,39 @@
         const gridContainer = document.getElementById("gridContainer");
         let draggedItem = null;
 
-        // Event listeners for drag and drop
         document.querySelectorAll(".grid-item").forEach(item => {
             item.addEventListener("dragstart", (e) => {
-                draggedItem = item;
-                setTimeout(() => item.classList.add("dragging"), 0);
+            draggedItem = item;
+            setTimeout(() => item.classList.add("dragging"), 0);
             });
 
             item.addEventListener("dragend", () => {
-                draggedItem.classList.remove("dragging");
-                draggedItem = null;
+            draggedItem.classList.remove("dragging");
+            draggedItem = null;
             });
         });
 
         gridContainer.addEventListener("dragover", (e) => {
             e.preventDefault();
-            const afterElement = getDragAfterElement(gridContainer, e.clientY);
-            if (afterElement == null) {
-                gridContainer.appendChild(draggedItem);
+            const afterElement = getDragAfterElement(gridContainer, e.clientX);
+            if (!afterElement) {
+            gridContainer.appendChild(draggedItem);
             } else {
-                gridContainer.insertBefore(draggedItem, afterElement);
+            gridContainer.insertBefore(draggedItem, afterElement);
             }
         });
 
-        // Helper function to determine position
-        function getDragAfterElement(container, y) {
-            const draggableElements = [...container.querySelectorAll(".grid-item:not(.dragging)")];
+        function getDragAfterElement(container, x) {
+            const draggableElements = [...container.querySelectorAll('.grid-item:not(.dragging)')];
 
             return draggableElements.reduce((closest, child) => {
-                const box = child.getBoundingClientRect();
-                const offset = y - box.top - box.height / 2;
-                if (offset < 0 && offset > closest.offset) {
-                    return { offset: offset, element: child };
-                } else {
-                    return closest;
-                }
+            const box = child.getBoundingClientRect();
+            const offset = x - box.left - box.width / 2;
+            if (offset < 0 && offset > closest.offset) {
+                return { offset: offset, element: child };
+            } else {
+                return closest;
+            }
             }, { offset: Number.NEGATIVE_INFINITY }).element;
         }
     </script>
