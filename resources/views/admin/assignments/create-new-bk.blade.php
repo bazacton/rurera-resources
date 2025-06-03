@@ -155,7 +155,7 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="grid-container 2222" id="gridContainer">
+                                    <div class="grid-container" id="gridContainer">
                                         <!-- Grid Items -->
                                         <div class="grid-item" draggable="true">1</div>
                                         <div class="grid-item" draggable="true">2</div>
