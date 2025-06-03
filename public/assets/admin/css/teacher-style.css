@@ -3929,6 +3929,8 @@ Qustions AI Tabs Style End
     font-weight: bold;
     cursor: grab;
     user-select: none;
+    line-height: 65px;
+    text-align: center;
 }
 .grid-item.dragging {
     opacity: 0.5;
