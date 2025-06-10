@@ -279,7 +279,7 @@
                                 <div class="d-flex align-items-center justify-content-between mb-4">
                                     <strong class="d-block">Sections</strong>
 
-                                    <button type="button" class="btn btn-success add-btn"><i class="fa fa-plus"></i></button>
+                                    <button type="button" class="btn btn-success add-btn"><i class="fa fa-plus"></i> Add</button>
                                 </div>
 
                                 <ul class="draggable-lists list-group">
