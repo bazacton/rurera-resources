@@ -233,7 +233,13 @@
     height: auto;
     line-height: normal;
 }
-.create-class-modal .add-btn i {font-size: 12px;margin-right: 3px;}
+.create-class-modal .add-btn {
+    padding: 0;
+    box-shadow: 0 2px 6px #81d694;
+    width: 24px;
+    height: 24px;
+}
+.create-class-modal .add-btn i {font-size: 12px;margin-right: 0;}
 #subCategories strong {
     color: #cbcbcb;
 }
