@@ -607,7 +607,32 @@
     $(document).on('click', '.google_classroom_btn', function (e) {
         //create-google-class-modal
 
-        var class_id = $(this).attr('data-class_id');
+
+        const authWindow = window.open(
+            'https://rurera.com/google/login',
+            'GoogleLogin',
+            'width=500,height=600'
+        );
+
+        const checkAuthComplete = setInterval(() => {
+            try {
+                if (authWindow.closed) {
+                    clearInterval(checkAuthComplete);
+                    // Optionally: show error if not authenticated
+                    return;
+                }
+
+                const result = authWindow.resultData;
+                if (result && result.authenticated) {
+                    clearInterval(checkAuthComplete);
+                    fetchClassroomData(result.token);
+                }
+            } catch (err) {
+                // Avoid cross-origin access errors
+            }
+        }, 500);
+
+        /*var class_id = $(this).attr('data-class_id');
         $(".class_id").val(class_id);
         $(".class-edit-modal").modal('show');
         jQuery.ajax({
@@ -618,13 +643,33 @@
             },
             data: {'class_id':0},
             success: function (return_data) {
-                //$(".class-edit-content").html(return_data);
-                //$("#class-edit-modal").modal('show');
                 console.log(return_data);
             }
-        });
+        });*/
 
     });
+
+    function fetchClassroomData(token) {
+        console.log(token);
+        /*$.ajax({
+            url: '/api/google/classroom/classes',
+            method: 'GET',
+            headers: {
+                Authorization: `Bearer ${token}`
+            },
+            success: function (data) {
+                let list = '';
+                data.classes.forEach(cls => {
+                    list += `<li>${cls.name}</li>`;
+                });
+                $('#classroomList').html(list);
+                $('#googleClassroomModal').show(); // Or use Bootstrap's `modal('show')`
+            },
+            error: function (err) {
+                alert('Failed to fetch Google Classroom data.');
+            }
+        });*/
+    }
 
 
 
