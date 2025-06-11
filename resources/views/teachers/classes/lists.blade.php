@@ -625,6 +625,7 @@
                 const result = authWindow.resultData;
                 if (result && result.authenticated) {
                     clearInterval(checkAuthComplete);
+                    console.log('sdfsdfsdfds');
                     fetchClassroomData(result.token);
                 }
             } catch (err) {
