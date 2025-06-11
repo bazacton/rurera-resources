@@ -614,14 +614,15 @@
             'width=500,height=600'
         );
 
-        const checkAuthComplete = setInterval(() => {
-            try {
+
                 if (authWindow.closed) {
                     clearInterval(checkAuthComplete);
                     // Optionally: show error if not authenticated
                     return;
                 }
-
+                const checkAuthComplete = setInterval(() => {
+                    try {
+                        cosnole.log('trying lll');
                 const result = authWindow.resultData;
                 if (result && result.authenticated) {
                     clearInterval(checkAuthComplete);
