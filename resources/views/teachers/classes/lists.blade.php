@@ -8,6 +8,7 @@
 <section class="section skeleton">
     <div class="section-header">
         <h1>Classes</h1>
+
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active">
                 <a href="/admin/">{{trans('admin/main.dashboard')}}</a>
@@ -17,33 +18,37 @@
     </div>
     <div class="row">
        <div class="col-12 col-md-12">
-            <div class="nav-area">
+            <div class="nav-area skelton-hide">
                 <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                    <li class="nav-item skelton-hide skelton-height-lg skelton-mb-0">
+                    <li class="nav-item">
                         <a class="nav-link active" id="topics-tab" href="/admin/classes">
                             <span class="tab-title">Classes</span>
                         </a>
                     </li>
-                    <li class="nav-item skelton-hide skelton-height-lg skelton-mb-0">
+                    <li class="nav-item">
                         <a class="nav-link" id="topics-tab" href="/admin/sections" >
                             <span class="tab-title">Sections</span>
                         </a>
                     </li>
-                    <li class="nav-item skelton-hide skelton-height-lg skelton-mb-0">
+                    <li class="nav-item">
                         <a class="nav-link" id="topics-tab" href="/admin/sections/joining-requests" >
                             <span class="tab-title">Joining Requests</span>
                         </a>
                     </li>
-                    <li class="nav-item skelton-hide skelton-height-lg skelton-mb-0">
+                    <li class="nav-item">
                         <a class="nav-link" id="topics-tab" href="#" >
                             <span class="tab-title">Archived Classes</span>
                         </a>
                     </li>
+
+
+
+
                 </ul>
                 <div class="teacher-controls">
-                    <button type="button" class="skelton-hide skelton-height-lg skelton-mb-0" data-toggle="modal" data-target="#createGoogleClassModal"><span class="icon-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span> Google Classrom</button>
+                    <button type="button" class="google_classroom_btn" data-toggle="modal" data-target="#createGoogleClassModal"><span class="icon-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span> Google Classrom</button>
                     @can('admin_classes_create')
-                    <button type="button" class="create-class-btn skelton-hide skelton-height-lg skelton-mb-0" data-toggle="modal" data-target="#createClassModal"><i class="fas fa-plus-circle"></i> Create a Class</button>
+                    <button type="button" class="create-class-btn" data-toggle="modal" data-target="#createClassModal"><i class="fas fa-plus-circle"></i> Create a Class</button>
                     @endcan
                 </div>
             </div>
@@ -171,7 +176,8 @@
                                         <div class="d-flex align-items-center justify-content-between mb-4">
                                             <strong class="d-block">Sections</strong>
 
-                                            <button type="button" class="btn btn-success add-btn"><i class="fa fa-plus"></i></button>
+                                            <button type="button" class="btn btn-success add-btn"><i class="fa fa-plus"></i> Add
+                                            </button>
                                         </div>
 
                                         <ul class="draggable-lists list-group">
@@ -425,16 +431,16 @@
                         </div>
 
                         <div class="card-body">
-                            <div class="card-title-holder">
-                                <h5 class="card-title skelton-hide skelton-height-lg">{{ $classData->title }}</h5>
+                            <div class="card-title-holder skelton-hide">
+                                <h5 class="card-title">{{ $classData->title }}</h5>
                             </div>
-                            <div class="card-description-holder">
-                                <p class="grade-text skelton-hide skelton-height-lg">{{ $classData->category->getTitleAttribute() }}</p>
-                                <p class="card-students skelton-hide skelton-height-lg">{{$classData->students->count()}} Students</p>
+                            <div class="card-description-holder skelton-hide">
+                                <p class="grade-text">{{ $classData->category->getTitleAttribute() }}</p>
+                                <p class="card-students">{{$classData->students->count()}} Students</p>
                             </div>
-                            <div class="progress-holder">
-                                <p class="mb-1 skelton-hide skelton-height-lg">1 completed activity</p>
-                                <div class="progress skelton-hide skelton-height-lg" style="height: 20px;">
+                            <div class="progress-holder skelton-hide">
+                                <p class="mb-1">1 completed activity</p>
+                                <div class="progress" style="height: 20px;">
                                     <div
                                         class="progress-bar progress-bar-custom"
                                         role="progressbar"
@@ -447,15 +453,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between mt-3 bottom-controls">
-                                <button class="btn btn-light btn-sm user-btn skelton-hide skelton-height-lg skelton-mb-0">
+                            <div class="d-flex justify-content-between mt-3 bottom-controls skelton-hide">
+                                <button class="btn btn-light btn-sm user-btn">
                                     <img src="/assets/default/img/class-user-icon.png" alt="">
                                 </button>
                                 <div class="right-area">
-                                    <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0">
+                                    <button class="btn btn-light btn-sm">
                                         <i class="fas fa-chart-line"></i>
                                     </button>
-                                    <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0" title="Open folder for 'Grade 6 A' in Google Drive">
+                                    <button class="btn btn-light btn-sm" title="Open folder for 'Grade 6 A' in Google Drive">
                                         <i class="fas fa-folder-open"></i>
                                     </button>
                                 </div>
@@ -597,6 +603,30 @@
         });
 
     });
+
+    $(document).on('click', '.google_classroom_btn', function (e) {
+        //create-google-class-modal
+
+        var class_id = $(this).attr('data-class_id');
+        $(".class_id").val(class_id);
+        $(".class-edit-modal").modal('show');
+        jQuery.ajax({
+            type: "GET",
+            url: '/google/login',
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            data: {'class_id':0},
+            success: function (return_data) {
+                //$(".class-edit-content").html(return_data);
+                //$("#class-edit-modal").modal('show');
+                console.log(return_data);
+            }
+        });
+
+    });
+
+
 
     $(document).on('click', '.archive-class', function (e) {
         var class_id = $(this).attr('data-class_id');
