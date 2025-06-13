@@ -90,31 +90,6 @@
             </div>
         </div>
     </section>
-    <section class="parent-account-section" style="background-color: #0065ff;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-7 col-md-7" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
-                    <div class="section-title mb-50">
-                        <h2 class="font-40 text-white">Parent account</h2>
-                        <p class="font-16 font-weight-500 text-white">We make it easy to be involved in your child’s learning Ability to assign activities</p>
-                    </div>
-                    <ul>
-                        <li><span class="font-18">Real-Time diagnostics</span></li>
-                        <li><span class="font-18">Track Child’s Learning</span></li>
-                        <li><span class="font-18">Assign Goals for your Child</span></li>
-                        <li><span class="font-18">Regular Notifications on Activities.</span></li>
-                        <li><span class="font-18">learning controls</span></li>
-                        <li><span class="font-18">Easy to Manage Sibling Accounts</span></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-lg-5 col-md-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
-                    <div class="imb-box">
-                        <img src="/assets/default/img/banner-home.webp" width="548" height="570" alt="banner-home image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="home-sections home-sections-swiper container position-relative mt-90 overflow-hidden pb-sm-0 mt-sm-50">
         <div class="row">
             <div class="col-12">
@@ -144,6 +119,31 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="parent-account-section" style="background-color: #0065ff;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-7 col-md-7" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+                    <div class="section-title mb-50">
+                        <h2 class="font-40 text-white">Parent account</h2>
+                        <p class="font-16 font-weight-500 text-white">We make it easy to be involved in your child’s learning Ability to assign activities</p>
+                    </div>
+                    <ul>
+                        <li><span class="font-18">Real-Time diagnostics</span></li>
+                        <li><span class="font-18">Track Child’s Learning</span></li>
+                        <li><span class="font-18">Assign Goals for your Child</span></li>
+                        <li><span class="font-18">Regular Notifications on Activities.</span></li>
+                        <li><span class="font-18">learning controls</span></li>
+                        <li><span class="font-18">Easy to Manage Sibling Accounts</span></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-5 col-md-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+                    <div class="imb-box">
+                        <img src="/assets/default/img/banner-home.webp" width="548" height="570" alt="banner-home image">
                     </div>
                 </div>
             </div>
