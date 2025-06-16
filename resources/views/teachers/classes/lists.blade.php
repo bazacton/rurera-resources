@@ -126,30 +126,38 @@
                                                 >
                                                     <span
                                                         class="color-indicator"
-                                                        style="background-color: yellow;"
+                                                        style="background-color: #bcdad7;"
                                                     ></span>
                                                 </button>
                                                 <div class="dropdown-menu">
                                                     <h5>Class Color Code</h5>
                                                     <input type="text" name="class_color" class="class_color">
                                                     <div class="class-color-box">
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#ff0000" style="background-color: red;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#0000ff" style="background-color: blue;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#008000" style="background-color: green;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#efefef" style="background-color: red;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#efefef" style="background-color: blue;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#efefef" style="background-color: green;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#efefef" style="background-color: red;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#efefef" style="background-color: blue;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#efefef" style="background-color: green;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#efefef" style="background-color: red;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#efefef" style="background-color: blue;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#efefef" style="background-color: green;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#efefef" style="background-color: red;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#efefef" style="background-color: red;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#efefef" style="background-color: blue;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#efefef" style="background-color: green;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#efefef" style="background-color: red;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#bcdad7" style="background-color: #bcdad7;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#fbcdb3" style="background-color: #fbcdb3;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#f7efe3" style="background-color: #f7efe3;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#f1d276" style="background-color: #f1d276;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#ef8b8a" style="background-color: #ef8b8a;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#e5d7bb" style="background-color: #e5d7bb;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#bd7967" style="background-color: #bd7967;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#f870b3" style="background-color: #f870b3;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#acd5cd" style="background-color: #acd5cd;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#733a4d" style="background-color: #733a4d;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#4f408e" style="background-color: #4f408e;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#3eb9bd" style="background-color: #3eb9bd;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#e2cd82" style="background-color: #e2cd82;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#f6e9c3" style="background-color: #f6e9c3;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#efebe4" style="background-color: #efebe4;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#cda4ad" style="background-color: #cda4ad;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#edc9a7" style="background-color: #edc9a7;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#dad3c5" style="background-color: #dad3c5;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#a96eb0" style="background-color: #a96eb0;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#deb9ae" style="background-color: #deb9ae;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#7d9897" style="background-color: #7d9897;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#6d4e88" style="background-color: #6d4e88;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#a46f82" style="background-color: #a46f82;" ></button>
+                                                        <button type="button" class="dropdown-item color-set" data-color_code="#465c60" style="background-color: #465c60;" ></button>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -158,7 +166,7 @@
 
 
 
-                                    <div class="form-group">
+                                    <div class="form-group rurera-hide">
                                         <div class="custom-control custom-checkbox">
                                             <input id="hasSubCategory" type="checkbox" name="has_sub"
                                                    class="custom-control-input" checked>
@@ -168,7 +176,7 @@
                                     </div>
 
                                     <div id="subCategories"
-                                         class="ml-0  ">
+                                         class="ml-0  rurera-hide">
                                         <div class="d-flex align-items-center justify-content-between mb-4">
                                             <strong class="d-block">Sections</strong>
 
