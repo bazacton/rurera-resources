@@ -9,7 +9,8 @@
     <div class="section-header">
         <h1>Sections</h1>
         <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="/admin/">{{trans('admin/main.dashboard')}}</a>
+            <div class="breadcrumb-item active">
+                <a href="/admin/">{{trans('admin/main.dashboard')}}</a>
             </div>
             <div class="breadcrumb-item">Sections </div>
         </div>
@@ -55,7 +56,6 @@
                                     <td class="skelton-hide skelton-height-lg skelton-mb-0">
                                         {{ $sectionData->class_code }}
                                     </td>
-
                                 </tr>
                                 @endforeach
 
