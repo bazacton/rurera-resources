@@ -18,17 +18,17 @@
         <div class="row">
             <div class="col-12 col-md-12">
                 <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                    <li class="nav-item skelton-hide skelton-height-lg skelton-mb-0">
+                    <li class="nav-item skelton-hide skelton-height-lg">
                         <a class="nav-link" id="topics-tab" href="/admin/classes">
                             <span class="tab-title">Classes</span>
                         </a>
                     </li>
-                    <li class="nav-item skelton-hide skelton-height-lg skelton-mb-0">
+                    <li class="nav-item skelton-hide skelton-height-lg">
                         <a class="nav-link " id="topics-tab" href="/admin/sections" >
                             <span class="tab-title">Sections</span>
                         </a>
                     </li>
-                    <li class="nav-item skelton-hide skelton-height-lg skelton-mb-0">
+                    <li class="nav-item skelton-hide skelton-height-lg">
                         <a class="nav-link active" id="topics-tab" href="/admin/sections/joining-requests" >
                             <span class="tab-title">Joining Requests</span>
                         </a>
