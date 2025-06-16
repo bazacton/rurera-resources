@@ -20,35 +20,31 @@
        <div class="col-12 col-md-12">
             <div class="nav-area">
                 <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                    <li class="nav-item">
+                    <li class="nav-item skelton-hide skelton-height-lg skelton-mb-0">
                         <a class="nav-link active" id="topics-tab" href="/admin/classes">
                             <span class="tab-title">Classes</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item skelton-hide skelton-height-lg skelton-mb-0">
                         <a class="nav-link" id="topics-tab" href="/admin/sections" >
                             <span class="tab-title">Sections</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item skelton-hide skelton-height-lg skelton-mb-0">
                         <a class="nav-link" id="topics-tab" href="/admin/sections/joining-requests" >
                             <span class="tab-title">Joining Requests</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item skelton-hide skelton-height-lg skelton-mb-0">
                         <a class="nav-link" id="topics-tab" href="#" >
                             <span class="tab-title">Archived Classes</span>
                         </a>
                     </li>
-
-
-
-
                 </ul>
                 <div class="teacher-controls">
-                    <button type="button" class="google_classroom_btn" data-toggle="modal" data-target="#createGoogleClassModal"><span class="icon-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span> Google Classrom</button>
+                    <button type="button" class="google_classroom_btn skelton-hide skelton-height-lg skelton-mb-0" data-toggle="modal" data-target="#createGoogleClassModal"><span class="icon-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span> Google Classrom</button>
                     @can('admin_classes_create')
-                    <button type="button" class="create-class-btn" data-toggle="modal" data-target="#createClassModal"><i class="fas fa-plus-circle"></i> Create a Class</button>
+                    <button type="button" class="create-class-btn skelton-hide skelton-height-lg skelton-mb-0" data-toggle="modal" data-target="#createClassModal"><i class="fas fa-plus-circle"></i> Create a Class</button>
                     @endcan
                 </div>
             </div>
