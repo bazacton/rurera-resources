@@ -240,6 +240,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 2px); fo
 .card .card-header, .card .card-body, .card .card-footer {background-color: transparent; padding: 20px 25px; }
 .card .navbar {position: static;}
 .card .card-body {padding-top: 20px; padding-bottom: 20px;}
+.card .card-body:has(.skelton-hide) {padding-bottom: 0;}
 .card .card-body .section-title {margin: 30px 0 10px 0; font-size: 16px;}
 .card .card-body .section-title + .section-lead {margin-top: -5px;}
 .card .card-body p {font-weight: 500;}
