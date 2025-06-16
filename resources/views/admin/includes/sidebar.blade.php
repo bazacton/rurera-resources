@@ -12,7 +12,7 @@
         </div>
 		@if(auth()->user()->isTeacher() || auth()->user()->isAdminTeacher())
         <div class="create-modal-btn">
-            <button type="button" data-toggle="modal" data-target="#templatesleModal">Create</button>
+            <button type="button" data-toggle="modal" data-target="#templatesleModal"><span class="text-btn">Create</span> <span class="icon-box"></span></button>
         </div>
         @endif
         @if(!auth()->user()->isTeacher() && !auth()->user()->isAdminTeacher())
