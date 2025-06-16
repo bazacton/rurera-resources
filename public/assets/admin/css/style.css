@@ -947,8 +947,8 @@ body.sidebar-mini .main-sidebar .sidebar-brand-sm {
     justify-content: center;
 }
 .sidebar-brand.sidebar-brand-sm img {
-    width: 100%;
-    height: auto;
+    width: 35px;
+    height: 35px;
 }
 body.sidebar-mini .main-sidebar .sidebar-menu > li {padding: 10px;}
 body.sidebar-mini .main-sidebar .sidebar-menu > li.menu-header {padding: 0; font-size: 0; height: 2px;}
