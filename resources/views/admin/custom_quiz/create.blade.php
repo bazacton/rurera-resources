@@ -1020,8 +1020,8 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-12 col-lg-4 col-md-4">
-                                                    <div class="featured-list-sidebar sub-chapters-list-data">
-                                                        <div class="featured-list-sidebar-inner">
+                                                    <div class="featured-list-sidebar sub-chapters-list-data px-15">
+                                                        <div class="featured-list-sidebar-inner px-0">
                                                             @if($subChapters->count() > 0)
                                                                 @foreach($subChapters as $subChapterObj)
 
