@@ -128,19 +128,11 @@
                         <input type="hidden" name="role_id" value="11">
                         <div class="form-group">
                             <label>First Name</label>
-                            <input type="text" name="first_name" class="form-control  " value="" placeholder="First Name">
-                        </div>
-                        <div class="form-group">
-                            <label>Last Name</label>
-                            <input type="text" name="last_name" class="form-control  " value="" placeholder="First Name">
+                            <input type="text" name="full_name" class="form-control  " value="" placeholder="Full Name">
                         </div>
                         <div class="form-group">
                             <label>Display Name</label>
                             <input type="text" name="display_name" class="form-control  " value="" placeholder="Display Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="username">Username:</label>
-                            <input name="username" type="text" class="form-control " id="username" value="" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
