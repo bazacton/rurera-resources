@@ -164,7 +164,16 @@
                                         </div>
                                     </div>
 
-
+                                    <div class="form-group">
+                                        <label for="ClassNickName">Class Nick Name (Required)</label>
+                                        <input
+                                            name="class_nick_name"
+                                            type="text"
+                                            class="form-control"
+                                            id="ClassNickName"
+                                            placeholder="Class Nick Name" required
+                                        />
+                                    </div>
 
                                     <div class="form-group rurera-hide">
                                         <div class="custom-control custom-checkbox">
@@ -295,6 +304,14 @@
                                         />
                                         <label class="form-check-label custom-checkbox-label" for="requireClassCode">
                                             Require students to enter a class code
+                                        </label>
+                                    </div>
+                                    <div class="option-field-item mt-20 mb-20">
+                                        <label class="custom-switch pl-0">
+
+                                            <input type="checkbox" name="class_status" id="class_status" value="1" class="custom-switch-input">
+                                            <span class="custom-switch-indicator"></span>
+                                            <label class="custom-switch-description mb-0 cursor-pointer" for="class_status">Active / Paused</label>
                                         </label>
                                     </div>
                                 </div>

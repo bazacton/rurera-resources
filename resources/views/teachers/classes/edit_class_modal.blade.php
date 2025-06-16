@@ -134,6 +134,18 @@
         </div>
     </div>
 
+    <div class="form-group">
+        <label for="ClassNickName">Class Nick Name (Required)</label>
+        <input
+            name="class_nick_name"
+            type="text"
+            class="form-control"
+            id="ClassNickName"
+            value="{{$class->class_nick_name}}"
+            placeholder="Class Nick Name" required
+        />
+    </div>
+
 
 
     <div class="form-group rurera-hide">
@@ -273,6 +285,15 @@
         />
         <label class="form-check-label custom-checkbox-label" for="requireClassCode2">
             Require students to enter a class code
+        </label>
+    </div>
+    <div class="option-field-item mt-20 mb-20">
+        <label class="custom-switch pl-0">
+            @php $is_checked = ($class->status == 'active')? 'checked' : ''; @endphp
+
+            <input type="checkbox" name="class_status" id="class_status_{{$class->id}}" value="1" class="custom-switch-input" {{$is_checked}}>
+            <span class="custom-switch-indicator"></span>
+            <label class="custom-switch-description mb-0 cursor-pointer" for="class_status_{{$class->id}}">Active / Paused</label>
         </label>
     </div>
     </div>
