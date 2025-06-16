@@ -435,9 +435,9 @@
                             </div>
                             <div class="progress-holder">
                                 <p class="mb-1 skelton-hide skelton-height-lg">1 completed activity</p>
-                                <div class="progress" style="height: 20px;">
+                                <div class="progress skelton-hide skelton-height-lg skelton-mb-0" style="height: 20px;">
                                     <div
-                                        class="progress-bar progress-bar-custom skelton-hide skelton-height-lg skelton-mb-0"
+                                        class="progress-bar progress-bar-custom"
                                         role="progressbar"
                                         style="width: 75%;"
                                         aria-valuenow="75"
