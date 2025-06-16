@@ -450,7 +450,7 @@
                             </div>
                             <div class="d-flex justify-content-between mt-3 bottom-controls">
                                 <button class="btn btn-light btn-sm user-btn">
-                                    <img src="/assets/default/img/class-user-icon.png" alt="">
+                                    <img src="/assets/default/img/class-user-icon.png" alt="class-user-icon">
                                 </button>
                                 <div class="right-area">
                                     <button class="btn btn-light btn-sm">
