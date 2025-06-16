@@ -461,10 +461,10 @@
                                         <img src="/assets/default/img/class-user-icon.png" alt="class-user-icon">
                                     </button>
                                     <div class="right-area">
-                                        <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0">
+                                        <button class="btn btn-light btn-sm skelton-hide skelton-height-lg">
                                             <i class="fas fa-chart-line"></i>
                                         </button>
-                                        <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0" title="Open folder for 'Grade 6 A' in Google Drive">
+                                        <button class="btn btn-light btn-sm skelton-hide skelton-height-lg" title="Open folder for 'Grade 6 A' in Google Drive">
                                             <i class="fas fa-folder-open"></i>
                                         </button>
                                     </div>
