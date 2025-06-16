@@ -67,7 +67,7 @@
                         </div>
                     </div>
 
-                    <div class="card-footer text-center skelton-hide">
+                    <div class="card-footer text-center">
                         {{ $joining_requests->links() }}
                     </div>
                 </div>
