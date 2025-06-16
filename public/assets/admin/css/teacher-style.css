@@ -2,6 +2,7 @@
 .admin_teacher_role button:focus,
 .admin_teacher_role select,
 .admin_teacher_role select:focus {outline: none;}
+html {scrollbar-gutter: stable;}
 .admin_teacher_role:has(.modal.show) {overflow: hidden; padding-right: var(--scrollbar-width);}
 .admin_teacher_role .modal.show {overflow: hidden; overflow-y: auto; scrollbar-gutter: stable; padding-right: 0 !important;}
 .admin_teacher_role .ui-sortable-handle,
