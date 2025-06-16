@@ -426,14 +426,14 @@
                         </div>
 
                         <div class="card-body">
-                            <div class="card-title-holder skelton-hide">
+                            <div class="card-title-holder">
                                 <h5 class="card-title">{{ $classData->title }}</h5>
                             </div>
-                            <div class="card-description-holder skelton-hide">
+                            <div class="card-description-holder">
                                 <p class="grade-text">{{ $classData->category->getTitleAttribute() }}</p>
                                 <p class="card-students">{{$classData->students->count()}} Students</p>
                             </div>
-                            <div class="progress-holder skelton-hide">
+                            <div class="progress-holder">
                                 <p class="mb-1">1 completed activity</p>
                                 <div class="progress" style="height: 20px;">
                                     <div
@@ -448,7 +448,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between mt-3 bottom-controls skelton-hide">
+                            <div class="d-flex justify-content-between mt-3 bottom-controls">
                                 <button class="btn btn-light btn-sm user-btn">
                                     <img src="/assets/default/img/class-user-icon.png" alt="">
                                 </button>
