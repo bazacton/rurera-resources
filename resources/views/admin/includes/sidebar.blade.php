@@ -26,6 +26,7 @@
                 @if(!empty($generalSettings['site_name']))
                     {{ strtoupper(substr($generalSettings['site_name'],0,2)) }}
                 @endif
+                <img src="/assets/default/img/sidebar/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="68" height="67" itemprop="image" loading="eager">
             </a>
         </div>
 
