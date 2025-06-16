@@ -5377,7 +5377,15 @@ button.print-download-btn {
 .teacher-list-controls .edit-btn.skelton-hide {border-radius: 100% !important;}
 .teacher-list-controls .edit-btn.skelton-hide {max-height: 40px;}
 .admin-rurera-tabs .skelton-hide.nav-item, .admin-rurera-tabs.nav-pills .skelton-hide.nav-item {min-width: 60px;}
-.admin_teacher_role button.skelton-hide.btn {border-color: transparent; box-shadow: none; margin-top: 10px;}
+.admin_teacher_role button.skelton-hide.btn {
+    border-color: transparent;
+    box-shadow: none;
+    margin-top: 10px;
+    border-radius: 50% !important;
+    height: 30px;
+    width: 30px;
+    max-height: 30px;
+}
 .card.card-statistic-1 .card-header.skelton-hide {min-height: 20px;}
 .card.card-statistic-1 .card-body.skelton-hide {flex: auto; min-height: 20px; color: transparent; max-height: 20px;}
 .assignments-table .card-header.bg-light:has(.skelton-hide) {background-color: inherit !important; padding: 0 0 15px;}
