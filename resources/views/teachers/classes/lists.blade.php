@@ -732,19 +732,6 @@
             }, 3000);
         
         /*Skelton Loading Fungtion End*/
-
-        function openModal() {
-        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-        document.body.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
-        document.body.classList.add('modal-open');
-        // Show your modal
-        }
-
-        function closeModal() {
-        document.body.classList.remove('modal-open');
-        document.body.style.removeProperty('--scrollbar-width');
-        // Hide your modal
-        }
     });
 </script>
 
