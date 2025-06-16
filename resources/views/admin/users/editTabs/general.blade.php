@@ -468,15 +468,13 @@
                     </div>
                     <div class="form-group">
                         <label>Organization / School Name</label>
-                        <input type="text" name="orgin_id"
-                               class="form-control  @error('orgin_id') is-invalid @enderror"
-                               value="{{ !empty($user) ? $user->orgin_id : old('orgin_id') }}"
-                               placeholder="Organization / School Name"/>
-                        @error('orgin_id')
-                        <div class="invalid-feedback">
-                            {{ $message }}
-                        </div>
-                        @enderror
+                        <select name="school_id" class="form-control">
+                            <option value="">Select School</option>
+                            @foreach($schools as $schoolObj)
+                                <option value="{{ $schoolObj->id }}" {{($schoolObj->id == $user->school_id)? 'selected' : ''}}>{{ $schoolObj->title }}
+                                </option>
+                            @endforeach
+                        </select>
                     </div>
                     <div class="form-group">
                         <label>Full Mailing Address</label>
