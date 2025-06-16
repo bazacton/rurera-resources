@@ -289,182 +289,182 @@
                                             Require students to enter a class code
                                         </label>
                                     </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary">Create class</button>
-                            </div>
-                            </form>
-                            <li class="form-group main-row list-group d-none">
-                                <div class="p-2 border rounded-sm">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text cursor-pointer move-icon">
-                                                <i class="fa fa-arrows-alt"></i>
-                                            </div>
-                                        </div>
-
-                                        <input type="text" name="sections[record][title]"
-                                               class="form-control w-auto flex-grow-1"
-                                               placeholder="{{ trans('admin/main.choose_title') }}"/>
-
-                                        <div class="input-group-append">
-                                            <button type="button" class="btn remove-btn btn-danger"><i
-                                                    class="fa fa-times"></i></button>
-                                        </div>
-                                    </div>
                                 </div>
-                            </li>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade create-google-class-modal" id="createGoogleClassModal" tabindex="-1" role="dialog" aria-labelledby="createGoogleClassModal" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="createClassModalLabel">Select Classes to Import</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="user-info">
-                                        <span class="img-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span>
-                                        <div class="text-holder">
-                                            <h5>Kaiser K</h5>
-                                            <a href="#">kaiser.can@gamil.com</a>
-                                        </div>
-                                        <button class="user-btn" type="button">Switch account</button>
-                                    </div>
-                                    <div class="form-group">
-                                        <i class="fas fa-search"></i>
-                                        <input type="text" class="form-control" id="sectionName" placeholder="Search for a course">
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="user-list-options">
-                                            <ul>
-                                                <li>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" id="all-classes">
-                                                        <label class="form-check-label custom-checkbox-label" for="all-classes">
-                                                            Select all classes
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" id="grade7">
-                                                        <label class="form-check-label custom-checkbox-label" for="grade7">
-                                                            Grade 7
-                                                            <em>0 students</em>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" id="grade6">
-                                                        <label class="form-check-label custom-checkbox-label" for="grade6">
-                                                            Grade 6
-                                                            <em>0 students</em>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" id="grade6-6">
-                                                        <label class="form-check-label custom-checkbox-label" for="grade6-6">
-                                                            Grade 6
-                                                            <em>0 students</em>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="require">
-                                                <label class="form-check-label custom-checkbox-label" for="require">
-                                                    Require a parent to guardian's email address
-                                                    <small>Instandly share student progress report</small>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Create class</button>
+                                </div>
                                 </form>
+                                <li class="form-group main-row list-group d-none">
+                                    <div class="p-2 border rounded-sm">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text cursor-pointer move-icon">
+                                                    <i class="fa fa-arrows-alt"></i>
+                                                </div>
+                                            </div>
+
+                                            <input type="text" name="sections[record][title]"
+                                                class="form-control w-auto flex-grow-1"
+                                                placeholder="{{ trans('admin/main.choose_title') }}"/>
+
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn remove-btn btn-danger"><i
+                                                        class="fa fa-times"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-primary">Next</button>
+                        </div>
+                    </div>
+                    <div class="modal fade create-google-class-modal" id="createGoogleClassModal" tabindex="-1" role="dialog" aria-labelledby="createGoogleClassModal" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="createClassModalLabel">Select Classes to Import</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="user-info">
+                                            <span class="img-box"><img src="/assets/default/img/class-user-icon.png" alt=""></span>
+                                            <div class="text-holder">
+                                                <h5>Kaiser K</h5>
+                                                <a href="#">kaiser.can@gamil.com</a>
+                                            </div>
+                                            <button class="user-btn" type="button">Switch account</button>
+                                        </div>
+                                        <div class="form-group">
+                                            <i class="fas fa-search"></i>
+                                            <input type="text" class="form-control" id="sectionName" placeholder="Search for a course">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="user-list-options">
+                                                <ul>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="all-classes">
+                                                            <label class="form-check-label custom-checkbox-label" for="all-classes">
+                                                                Select all classes
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="grade7">
+                                                            <label class="form-check-label custom-checkbox-label" for="grade7">
+                                                                Grade 7
+                                                                <em>0 students</em>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="grade6">
+                                                            <label class="form-check-label custom-checkbox-label" for="grade6">
+                                                                Grade 6
+                                                                <em>0 students</em>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="grade6-6">
+                                                            <label class="form-check-label custom-checkbox-label" for="grade6-6">
+                                                                Grade 6
+                                                                <em>0 students</em>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="require">
+                                                    <label class="form-check-label custom-checkbox-label" for="require">
+                                                        Require a parent to guardian's email address
+                                                        <small>Instandly share student progress report</small>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary">Next</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-12 d-flex align-items-center flex-wrap px-1">
-                @foreach($classes as $classData)
-                    @php $class_color = ($classData->class_color != '')? $classData->class_color : '#009788';
- @endphp
-                    <div class="card text-white classes-card bg-teal mb-3 mx-10" style="position: relative; background-color:{{$class_color}}">
-                        <!-- Dropdown Menu -->
-                        <div class="card-options dropdown">
-                            <button
-                                class="btn btn-link text-white dropdown-toggle"
-                                type="button"
-                                id="dropdownMenuButton"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                            >
-                                <i class="fas fa-ellipsis-v"></i>
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                <a data-class_id="{{$classData->id}}" class="dropdown-item co-teacher-modal-btn" href="javascript:;"><i class="fas fa-user"></i> Add a co-teacher <i class="fas fa-lock"></i></a>
-                                <a data-class_id="{{$classData->id}}" class="dropdown-item edit-class-modal-btn" href="javascript:;"><i class="fas fa-edit"></i> Edit class details</a>
-                                <a data-class_id="{{$classData->id}}" class="dropdown-item " href="#"><i class="fas fa-lock"></i> Refresh Class Roster</a>
-                                <a data-class_id="{{$classData->id}}" class="dropdown-item archive-class" href="#"><i class="fa fa-archive"></i> Archive Class</a>
-                                <a data-class_id="{{$classData->id}}" class="dropdown-item text-danger delete-class" href="#"><i class="fa fa-trash"></i> Delete Class</a>
+                <div class="col-12 col-md-12 d-flex align-items-center flex-wrap px-1">
+                    @foreach($classes as $classData)
+                        @php $class_color = ($classData->class_color != '')? $classData->class_color : '#009788';
+    @endphp
+                        <div class="card text-white classes-card bg-teal mb-3 mx-10" style="position: relative; background-color:{{$class_color}}">
+                            <!-- Dropdown Menu -->
+                            <div class="card-options dropdown">
+                                <button
+                                    class="btn btn-link text-white dropdown-toggle"
+                                    type="button"
+                                    id="dropdownMenuButton"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                >
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                    <a data-class_id="{{$classData->id}}" class="dropdown-item co-teacher-modal-btn" href="javascript:;"><i class="fas fa-user"></i> Add a co-teacher <i class="fas fa-lock"></i></a>
+                                    <a data-class_id="{{$classData->id}}" class="dropdown-item edit-class-modal-btn" href="javascript:;"><i class="fas fa-edit"></i> Edit class details</a>
+                                    <a data-class_id="{{$classData->id}}" class="dropdown-item " href="#"><i class="fas fa-lock"></i> Refresh Class Roster</a>
+                                    <a data-class_id="{{$classData->id}}" class="dropdown-item archive-class" href="#"><i class="fa fa-archive"></i> Archive Class</a>
+                                    <a data-class_id="{{$classData->id}}" class="dropdown-item text-danger delete-class" href="#"><i class="fa fa-trash"></i> Delete Class</a>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="card-body">
-                            <div class="card-title-holder">
-                                <h5 class="card-title skelton-hide skelton-height-lg skelton-mb-0">{{ $classData->title }}</h5>
-                            </div>
-                            <div class="card-description-holder">
-                                <p class="grade-text skelton-hide skelton-height-lg">{{ $classData->category->getTitleAttribute() }}</p>
-                                <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->students->count()}} Students</p>
-                            </div>
-                            <div class="progress-holder">
-                                <p class="mb-1 skelton-hide skelton-height-lg">1 completed activity</p>
-                                <div class="progress skelton-hide skelton-height-lg skelton-mb-0" style="height: 20px;">
-                                    <div
-                                        class="progress-bar progress-bar-custom"
-                                        role="progressbar"
-                                        style="width: 75%;"
-                                        aria-valuenow="75"
-                                        aria-valuemin="0"
-                                        aria-valuemax="100"
-                                    >
-                                        75%
+                            <div class="card-body">
+                                <div class="card-title-holder">
+                                    <h5 class="card-title skelton-hide skelton-height-lg skelton-mb-0">{{ $classData->title }}</h5>
+                                </div>
+                                <div class="card-description-holder">
+                                    <p class="grade-text skelton-hide skelton-height-lg">{{ $classData->category->getTitleAttribute() }}</p>
+                                    <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->students->count()}} Students</p>
+                                </div>
+                                <div class="progress-holder">
+                                    <p class="mb-1 skelton-hide skelton-height-lg">1 completed activity</p>
+                                    <div class="progress skelton-hide skelton-height-lg skelton-mb-0" style="height: 20px;">
+                                        <div
+                                            class="progress-bar progress-bar-custom"
+                                            role="progressbar"
+                                            style="width: 75%;"
+                                            aria-valuenow="75"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100"
+                                        >
+                                            75%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3 bottom-controls">
+                                    <button class="btn btn-light btn-sm user-btn skelton-hide skelton-height-lg skelton-mb-0">
+                                        <img src="/assets/default/img/class-user-icon.png" alt="class-user-icon">
+                                    </button>
+                                    <div class="right-area">
+                                        <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0">
+                                            <i class="fas fa-chart-line"></i>
+                                        </button>
+                                        <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0" title="Open folder for 'Grade 6 A' in Google Drive">
+                                            <i class="fas fa-folder-open"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between mt-3 bottom-controls">
-                                <button class="btn btn-light btn-sm user-btn skelton-hide skelton-height-lg skelton-mb-0">
-                                    <img src="/assets/default/img/class-user-icon.png" alt="class-user-icon">
-                                </button>
-                                <div class="right-area">
-                                    <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0">
-                                        <i class="fas fa-chart-line"></i>
-                                    </button>
-                                    <button class="btn btn-light btn-sm skelton-hide skelton-height-lg skelton-mb-0" title="Open folder for 'Grade 6 A' in Google Drive">
-                                        <i class="fas fa-folder-open"></i>
-                                    </button>
-                                </div>
-                            </div>
                         </div>
-                    </div>
-                @endforeach
-            </div>
+                    @endforeach
+                </div>
             </div>
         </div>
     </div>
