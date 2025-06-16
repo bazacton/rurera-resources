@@ -720,18 +720,32 @@
 
 </script>
 <script>
-    /*Skelton Loading Fungtion Start*/
     $(document).ready(function () {
-        const $el = document.querySelector(".section");
+        /*Skelton Loading Fungtion Start*/
+            const $el = document.querySelector(".section");
 
-        setTimeout(() => {
-        $el.classList.remove("skeleton");
-        $el
-            .querySelectorAll(".skelton-hide")
-            .forEach((el) => el.classList.remove("skelton-hide"));
-        }, 3000);
+            setTimeout(() => {
+            $el.classList.remove("skeleton");
+            $el
+                .querySelectorAll(".skelton-hide")
+                .forEach((el) => el.classList.remove("skelton-hide"));
+            }, 3000);
+        
+        /*Skelton Loading Fungtion End*/
+
+        function openModal() {
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+        document.body.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+        document.body.classList.add('modal-open');
+        // Show your modal
+        }
+
+        function closeModal() {
+        document.body.classList.remove('modal-open');
+        document.body.style.removeProperty('--scrollbar-width');
+        // Hide your modal
+        }
     });
-    /*Skelton Loading Fungtion End*/
 </script>
 
 @endpush
