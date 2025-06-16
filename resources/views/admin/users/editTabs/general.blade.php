@@ -181,8 +181,6 @@
                     </div>
                     @enderror
                 </div>
-                @if(auth()->user()->isAdminRole())
-
                 <div class="form-group">
                     <label>Display Name</label>
                     <input type="text" name="display_name"
@@ -195,125 +193,6 @@
                     </div>
                     @enderror
                 </div>
-
-                <div class="form-group">
-                    <label>Year</label>
-                    <select data-default_id="{{isset( $user->id)? $user->year_id : 0}}"
-                            class="form-control year_class_ajax_select @error('year_id') is-invalid @enderror"
-                            name="year_id">
-                        <option {{ !empty($trend) ?
-                        '' : 'selected' }} disabled>Select Year</option>
-
-                        @foreach($categories as $category)
-                        @if(!empty($category->subCategories) and count($category->subCategories))
-                        <optgroup label="{{  $category->title }}">
-                            @foreach($category->subCategories as $subCategory)
-                                <option value="{{ $subCategory->id }}" @if(!empty($user) and $user->year_id == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
-                            @endforeach
-                        </optgroup>
-                        @else
-                        <option value="{{ $category->id }}" class="font-weight-bold">{{
-                            $category->title }}
-                        </option>
-                        @endif
-                        @endforeach
-                    </select>
-                    @error('year_id')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                    @enderror
-                </div>
-
-                <div class="form-group">
-                    <label>Student Class</label>
-                    <select data-default_id="{{isset( $user->id)? $user->class_id : 0}}"
-                            class="class_section_ajax_select student_section form-control select2 @error('class_id') is-invalid @enderror"
-                            id="class_id" name="class_id">
-                        <option disabled selected>Class</option>
-                    </select>
-                    @error('class_id')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                    @enderror
-                </div>
-
-                <div class="form-group assignment_topic_type_fields timestables_fields ">
-                    <label>Timestables</label>
-                    <div class="questions-select-number">
-                        <ul class="d-flex justify-content-center flex-wrap mb-30">
-                            <li><input type="checkbox" value="10" name="tables_no[]" {{in_array(10,$tables_no)?
-                                'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
-                            <li><input type="checkbox" value="2" name="tables_no[]" {{in_array(2,$tables_no)?
-                                'checked' : ''}} id="tables_two" /> <label for="tables_two">2</label></li>
-                            <li><input type="checkbox" value="5" name="tables_no[]" {{in_array(5,$tables_no)?
-                                'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
-                            <li><input type="checkbox" value="3" name="tables_no[]" {{in_array(3,$tables_no)?
-                                'checked' : ''}} id="tables_three" /> <label for="tables_three">3</label></li>
-                            <li><input type="checkbox" value="4" name="tables_no[]" {{in_array(4,$tables_no)?
-                                'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
-                            <li><input type="checkbox" value="8" name="tables_no[]" {{in_array(8,$tables_no)?
-                                'checked' : ''}} id="tables_eight" /> <label for="tables_eight">8</label></li>
-                            <li><input type="checkbox" value="6" name="tables_no[]" {{in_array(6,$tables_no)?
-                                'checked' : ''}} id="tables_six" /> <label for="tables_six">6</label></li>
-                            <li><input type="checkbox" value="7" name="tables_no[]" {{in_array(7,$tables_no)?
-                                'checked' : ''}} id="tables_seven" /> <label for="tables_seven">7</label></li>
-                            <li><input type="checkbox" value="9" name="tables_no[]" {{in_array(9,$tables_no)?
-                                'checked' : ''}} id="tables_nine" /> <label for="tables_nine">9</label></li>
-                            <li><input type="checkbox" value="11" name="tables_no[]" {{in_array(11,$tables_no)?
-                                'checked' : ''}} id="tables_eleven" /> <label for="tables_eleven">11</label></li>
-                            <li><input type="checkbox" value="12" name="tables_no[]" {{in_array(12,$tables_no)?
-                                'checked' : ''}} id="tables_twelve" /> <label for="tables_twelve">12</label></li>
-                            <li><input type="checkbox" value="13" name="tables_no[]" {{in_array(13,$tables_no)?
-                                'checked' : ''}} id="tables_thirteen" /> <label for="tables_thirteen">13</label></li>
-                            <li><input type="checkbox" value="14" name="tables_no[]" {{in_array(14,$tables_no)?
-                                'checked' : ''}} id="tables_fourteen" /> <label for="tables_fourteen">14</label></li>
-                            <li><input type="checkbox" value="15" name="tables_no[]" {{in_array(15,$tables_no)?
-                                'checked' : ''}} id="tables_fifteen" /> <label for="tables_fifteen">15</label></li>
-                            <li><input type="checkbox" value="16" name="tables_no[]" {{in_array(16,$tables_no)?
-                                'checked' : ''}} id="tables_sixteen" /> <label for="tables_sixteen">16</label></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label>Class Section</label>
-                    <select data-default_id="{{isset( $user->id)? $user->section_id : 0}}"
-                            class="section_ajax_select student_section form-control select2 @error('section_id') is-invalid @enderror"
-                            id="section_id" name="section_id">
-                        <option disabled selected>Section</option>
-                    </select>
-                    @error('section_id')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                    @enderror
-                </div>
-
-                @if(auth()->user()->isTeacher())
-                <input type="hidden" id="roleId" name="role_id" value="1">
-                @else
-
-                <div class="form-group">
-                    <label>{{ trans('/admin/main.role_name') }}</label>
-                    <select class="form-control @error('role_id') is-invalid @enderror" id="roleId" name="role_id">
-                        <option disabled {{ empty($user) ?
-                        'selected' : '' }}>{{ trans('admin/main.select_role') }}</option>
-                        @foreach ($roles as $role)
-                        <option value="{{ $role->id }}" {{ (!empty($user) and $user->role_id == $role->id) ? 'selected'
-                            :''}}>{{ $role->caption }}
-                        </option>
-                        @endforeach
-                    </select>
-                    @error('role_id')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                    @enderror
-                </div>
-                @endif
-
                 <div class="form-group">
                     <label class="input-label">{{ trans('update.timezone') }}</label>
                     <select name="timezone" class="form-control select2" data-allow-clear="false">
@@ -321,9 +200,9 @@
                             trans('public.select') }}
                         </option>
                         @foreach(getListOfTimezones() as $timezone)
-                        <option value="{{ $timezone }}" @if(!empty($user) and $user->timezone == $timezone) selected
-                            @endif>{{ $timezone }}
-                        </option>
+                            <option value="{{ $timezone }}" @if(!empty($user) and $user->timezone == $timezone) selected
+                                @endif>{{ $timezone }}
+                            </option>
                         @endforeach
                     </select>
                     @error('timezone')
@@ -332,36 +211,10 @@
                     </div>
                     @enderror
                 </div>
-
-                @if(!empty($currencies) and count($currencies))
-                @php
-                $userCurrency = currency($user);
-                @endphp
-
-                <div class="form-group">
-                    <label class="input-label">{{ trans('update.currency') }}</label>
-                    <select name="currency" class="form-control select2" data-allow-clear="false">
-                        @foreach($currencies as $currencyItem)
-                        <option value="{{ $currencyItem->currency }}" {{ ($userCurrency== $currencyItem->currency) ?
-                            'selected' : '' }}>{{ currenciesLists($currencyItem->currency) }} ({{
-                            currencySign($currencyItem->currency) }})
-                        </option>
-                        @endforeach
-                    </select>
-                    @error('currency')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                    @enderror
-                </div>
-                @endif
-
-
-
                 <div class="form-group">
                     <label for="username">{{ trans('admin/main.email') }}:</label>
                     <input name="email" type="text" id="username" value="{{ $user->email }}"
-                           class="form-control @error('email') is-invalid @enderror">
+                           class="form-control @error('email') is-invalid @enderror" readonly>
                     @error('email')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -379,58 +232,207 @@
                     </div>
                     @enderror
                 </div>
+                @if(auth()->user()->isAdminRole())
 
 
+                    <div class="form-group">
+                        <label>Year</label>
+                        <select data-default_id="{{isset( $user->id)? $user->year_id : 0}}"
+                                class="form-control year_class_ajax_select @error('year_id') is-invalid @enderror"
+                                name="year_id">
+                            <option {{ !empty($trend) ?
+                        '' : 'selected' }} disabled>Select Year</option>
 
-                <div class="form-group">
-                    <label>{{ trans('admin/main.bio') }}</label>
-                    <textarea name="bio" rows="3" class="form-control @error('bio') is-invalid @enderror">{{ $user->bio }}</textarea>
-                    @error('bio')
-                    <div class="invalid-feedback">
-                        {{ $message }}
+                            @foreach($categories as $category)
+                                @if(!empty($category->subCategories) and count($category->subCategories))
+                                    <optgroup label="{{  $category->title }}">
+                                        @foreach($category->subCategories as $subCategory)
+                                            <option value="{{ $subCategory->id }}" @if(!empty($user) and $user->year_id == $subCategory->id) selected="selected" @endif>{{ $subCategory->title }}</option>
+                                        @endforeach
+                                    </optgroup>
+                                @else
+                                    <option value="{{ $category->id }}" class="font-weight-bold">{{
+                            $category->title }}
+                                    </option>
+                                @endif
+                            @endforeach
+                        </select>
+                        @error('year_id')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
                     </div>
-                    @enderror
-                </div>
 
-                <div class="form-group">
-                    <label>{{ trans('site.about') }}</label>
-                    <textarea name="about" rows="6" class="form-control @error('about') is-invalid @enderror">{{ $user->about }}</textarea>
-                    @error('about')
-                    <div class="invalid-feedback">
-                        {{ $message }}
+                    <div class="form-group">
+                        <label>Student Class</label>
+                        <select data-default_id="{{isset( $user->id)? $user->class_id : 0}}"
+                                class="class_section_ajax_select student_section form-control select2 @error('class_id') is-invalid @enderror"
+                                id="class_id" name="class_id">
+                            <option disabled selected>Class</option>
+                        </select>
+                        @error('class_id')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
                     </div>
-                    @enderror
-                </div>
 
-                <div class="form-group">
-                    <label>{{ trans('update.certificate_additional') }}</label>
-                    <input name="certificate_additional" value="{{ $user->certificate_additional }}"
-                           class="form-control @error('certificate_additional') is-invalid @enderror"/>
-                    @error('certificate_additional')
-                    <div class="invalid-feedback">
-                        {{ $message }}
+                    <div class="form-group assignment_topic_type_fields timestables_fields ">
+                        <label>Timestables</label>
+                        <div class="questions-select-number">
+                            <ul class="d-flex justify-content-center flex-wrap mb-30">
+                                <li><input type="checkbox" value="10" name="tables_no[]" {{in_array(10,$tables_no)?
+                                'checked' : ''}} id="tables_ten" /> <label for="tables_ten">10</label></li>
+                                <li><input type="checkbox" value="2" name="tables_no[]" {{in_array(2,$tables_no)?
+                                'checked' : ''}} id="tables_two" /> <label for="tables_two">2</label></li>
+                                <li><input type="checkbox" value="5" name="tables_no[]" {{in_array(5,$tables_no)?
+                                'checked' : ''}} id="tables_five" /> <label for="tables_five">5</label></li>
+                                <li><input type="checkbox" value="3" name="tables_no[]" {{in_array(3,$tables_no)?
+                                'checked' : ''}} id="tables_three" /> <label for="tables_three">3</label></li>
+                                <li><input type="checkbox" value="4" name="tables_no[]" {{in_array(4,$tables_no)?
+                                'checked' : ''}} id="tables_four" /> <label for="tables_four">4</label></li>
+                                <li><input type="checkbox" value="8" name="tables_no[]" {{in_array(8,$tables_no)?
+                                'checked' : ''}} id="tables_eight" /> <label for="tables_eight">8</label></li>
+                                <li><input type="checkbox" value="6" name="tables_no[]" {{in_array(6,$tables_no)?
+                                'checked' : ''}} id="tables_six" /> <label for="tables_six">6</label></li>
+                                <li><input type="checkbox" value="7" name="tables_no[]" {{in_array(7,$tables_no)?
+                                'checked' : ''}} id="tables_seven" /> <label for="tables_seven">7</label></li>
+                                <li><input type="checkbox" value="9" name="tables_no[]" {{in_array(9,$tables_no)?
+                                'checked' : ''}} id="tables_nine" /> <label for="tables_nine">9</label></li>
+                                <li><input type="checkbox" value="11" name="tables_no[]" {{in_array(11,$tables_no)?
+                                'checked' : ''}} id="tables_eleven" /> <label for="tables_eleven">11</label></li>
+                                <li><input type="checkbox" value="12" name="tables_no[]" {{in_array(12,$tables_no)?
+                                'checked' : ''}} id="tables_twelve" /> <label for="tables_twelve">12</label></li>
+                                <li><input type="checkbox" value="13" name="tables_no[]" {{in_array(13,$tables_no)?
+                                'checked' : ''}} id="tables_thirteen" /> <label for="tables_thirteen">13</label></li>
+                                <li><input type="checkbox" value="14" name="tables_no[]" {{in_array(14,$tables_no)?
+                                'checked' : ''}} id="tables_fourteen" /> <label for="tables_fourteen">14</label></li>
+                                <li><input type="checkbox" value="15" name="tables_no[]" {{in_array(15,$tables_no)?
+                                'checked' : ''}} id="tables_fifteen" /> <label for="tables_fifteen">15</label></li>
+                                <li><input type="checkbox" value="16" name="tables_no[]" {{in_array(16,$tables_no)?
+                                'checked' : ''}} id="tables_sixteen" /> <label for="tables_sixteen">16</label></li>
+                            </ul>
+                        </div>
                     </div>
-                    @enderror
-                </div>
 
-                <div class="form-group">
-                    <label>{{ trans('/admin/main.status') }}</label>
-                    <select class="form-control @error('status') is-invalid @enderror" id="status" name="status">
-                        <option disabled {{ empty($user) ?
+                    <div class="form-group">
+                        <label>Class Section</label>
+                        <select data-default_id="{{isset( $user->id)? $user->section_id : 0}}"
+                                class="section_ajax_select student_section form-control select2 @error('section_id') is-invalid @enderror"
+                                id="section_id" name="section_id">
+                            <option disabled selected>Section</option>
+                        </select>
+                        @error('section_id')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                    </div>
+
+                    @if(auth()->user()->isTeacher())
+                        <input type="hidden" id="roleId" name="role_id" value="1">
+                    @else
+
+                        <div class="form-group">
+                            <label>{{ trans('/admin/main.role_name') }}</label>
+                            <select class="form-control @error('role_id') is-invalid @enderror" id="roleId" name="role_id">
+                                <option disabled {{ empty($user) ?
+                        'selected' : '' }}>{{ trans('admin/main.select_role') }}</option>
+                                @foreach ($roles as $role)
+                                    <option value="{{ $role->id }}" {{ (!empty($user) and $user->role_id == $role->id) ? 'selected'
+                            :''}}>{{ $role->caption }}
+                                    </option>
+                                @endforeach
+                            </select>
+                            @error('role_id')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
+                    @endif
+
+
+
+                    @if(!empty($currencies) and count($currencies))
+                        @php
+                            $userCurrency = currency($user);
+                        @endphp
+
+                        <div class="form-group">
+                            <label class="input-label">{{ trans('update.currency') }}</label>
+                            <select name="currency" class="form-control select2" data-allow-clear="false">
+                                @foreach($currencies as $currencyItem)
+                                    <option value="{{ $currencyItem->currency }}" {{ ($userCurrency== $currencyItem->currency) ?
+                            'selected' : '' }}>{{ currenciesLists($currencyItem->currency) }} ({{
+                            currencySign($currencyItem->currency) }})
+                                    </option>
+                                @endforeach
+                            </select>
+                            @error('currency')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
+                        </div>
+                    @endif
+
+
+
+
+
+
+
+                    <div class="form-group">
+                        <label>{{ trans('admin/main.bio') }}</label>
+                        <textarea name="bio" rows="3" class="form-control @error('bio') is-invalid @enderror">{{ $user->bio }}</textarea>
+                        @error('bio')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>{{ trans('site.about') }}</label>
+                        <textarea name="about" rows="6" class="form-control @error('about') is-invalid @enderror">{{ $user->about }}</textarea>
+                        @error('about')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>{{ trans('update.certificate_additional') }}</label>
+                        <input name="certificate_additional" value="{{ $user->certificate_additional }}"
+                               class="form-control @error('certificate_additional') is-invalid @enderror"/>
+                        @error('certificate_additional')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>{{ trans('/admin/main.status') }}</label>
+                        <select class="form-control @error('status') is-invalid @enderror" id="status" name="status">
+                            <option disabled {{ empty($user) ?
                         'selected' : '' }}>{{ trans('admin/main.select_status') }}</option>
 
-                        @foreach (\App\User::$statuses as $status)
-                        <option value="{{ $status }}" {{ !empty($user) && $user->status === $status ? 'selected'
+                            @foreach (\App\User::$statuses as $status)
+                                <option value="{{ $status }}" {{ !empty($user) && $user->status === $status ? 'selected'
                             :''}}>{{ $status }}
-                        </option>
-                        @endforeach
-                    </select>
-                    @error('status')
-                    <div class="invalid-feedback">
-                        {{ $message }}
+                                </option>
+                            @endforeach
+                        </select>
+                        @error('status')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
                     </div>
-                    @enderror
-                </div>
                 @endif
 
                 <div class="form-group">
@@ -438,9 +440,9 @@
                     <select name="language" class="form-control">
                         <option value="">{{ trans('auth.language') }}</option>
                         @foreach($userLanguages as $lang => $language)
-                        <option value="{{ $lang }}" @if(!empty($user) and mb_strtolower($user->language) ==
+                            <option value="{{ $lang }}" @if(!empty($user) and mb_strtolower($user->language) ==
                             mb_strtolower($lang)) selected @endif>{{ $language }}
-                        </option>
+                            </option>
                         @endforeach
                     </select>
                     @error('language')
@@ -449,6 +451,58 @@
                     </div>
                     @enderror
                 </div>
+
+                @if(auth()->user()->isAdminTeacher())
+
+                    <div class="form-group rurera-hide">
+                        <label class="input-label">{{ trans('admin/main.organization') }}</label>
+                        <select name="organ_id" data-search-option="just_organization_role"
+                                class="form-control search-user-select2"
+                                data-placeholder="{{ trans('admin/main.search') }} {{ trans('admin/main.organization') }}">
+
+                            @if(!empty($user) and !empty($user->organization))
+                                <option value="{{ $user->organization->id }}" selected>{{ $user->organization->get_full_name() }}
+                                </option>
+                            @endif
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Organization / School Name</label>
+                        <input type="text" name="orgin_id"
+                               class="form-control  @error('orgin_id') is-invalid @enderror"
+                               value="{{ !empty($user) ? $user->orgin_id : old('orgin_id') }}"
+                               placeholder="Organization / School Name"/>
+                        @error('orgin_id')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                    </div>
+                    <div class="form-group">
+                        <label>Full Mailing Address</label>
+                        <input type="text" name="full_mailing_address"
+                               class="form-control  @error('full_mailing_address') is-invalid @enderror"
+                               value="{{ !empty($user) ? $user->full_mailing_address : old('full_mailing_address') }}"
+                               placeholder="Full Mailing Address"/>
+                        @error('full_mailing_address')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                    </div>
+                    <div class="form-group">
+                        <label>Country</label>
+                        <select name="country_id" class="form-control">
+                            <option value="">Country</option>
+                            @foreach($countries as $countryObj)
+                                <option value="{{ $countryObj->id }}" {{($countryObj->id == $user->country_id)? 'selected' : ''}}>{{ $countryObj->title }}
+                                </option>
+                            @endforeach
+                        </select>
+                    </div>
+
+
+                @endif
 
 
 
