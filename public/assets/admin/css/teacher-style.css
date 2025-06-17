@@ -3986,7 +3986,7 @@ Qustions AI Tabs Style End
     border-bottom: 1px solid #ddd;
     padding: 15px 15px;
     gap: 10px;
-    justify-content: space-between;
+    justify-content: end;
 }
 .sorting-filters img {
     height: 15px;
@@ -3997,6 +3997,7 @@ Qustions AI Tabs Style End
     padding: 0 5px 0 28px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    margin-right: auto;
 }
 .sorting-filters .icon-box {
     position: absolute;
