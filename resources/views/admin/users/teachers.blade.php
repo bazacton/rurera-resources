@@ -122,7 +122,7 @@
                     </ul>
                 </div>
                 <div class="col-12">
-                    <div class="assignments-table">
+                    <div class="teacher-table">
                         <div class="card">
                             <div class="teacher-search-filter">
                                 <div class="sorting-filters">
