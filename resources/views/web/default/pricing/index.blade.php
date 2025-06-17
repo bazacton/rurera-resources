@@ -472,9 +472,11 @@
 @push('scripts_bottom')
 <script src="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
 <script>
+$(document).ready(function () {
     $(".stay-btn").click(function() {
         $("body").addClass("modal-open");
     });
+});
 </script>
 @endpush
 
