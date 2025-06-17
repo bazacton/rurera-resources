@@ -357,7 +357,7 @@
                                         <label class="input-label w-100 p-0">Last name *</label>
                                         <div class="input-field w-100 p-0">
                                             <span class="icon-box">
-                                                <img src="/assets/default/img/hand.jpg" alt="hand">
+                                                <img src="/assets/default/img/file.jpg" alt="file">
                                             </span>
                                             <input type="text" placeholder="Your family/last name, please" />
                                         </div>
