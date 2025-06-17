@@ -4049,6 +4049,8 @@ Qustions AI Tabs Style End
     align-items: center;
     gap: 5px;
     margin-left: 10px;
+    text-decoration: none;
+    outline: none;
 }
 .export-btn img {
     height: 12px;
