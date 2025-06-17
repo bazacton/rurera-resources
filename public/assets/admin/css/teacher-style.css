@@ -4115,7 +4115,7 @@ Qustions AI Tabs Style End
     width: 15px;
 }
 .pending-invites-controls button {
-    background-color: inherit;
+    background-color: #fff;
     border: 1px solid #007bff;
     padding: 6px 10px;
     border-radius: 5px;
