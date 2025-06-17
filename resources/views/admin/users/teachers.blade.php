@@ -126,6 +126,9 @@
                         <div class="card">
                             <div class="teacher-search-filter">
                                 <div class="sorting-filters">
+                                    <span class="icon-box">
+                                        <img src="/assets/default/svgs/filters.svg" alt="filters">
+                                    </span>
                                     <select>
                                         <option value="Filter">Filter</option>
                                         <option value="Filter 2">Filter 2</option>
