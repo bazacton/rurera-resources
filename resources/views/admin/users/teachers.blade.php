@@ -206,6 +206,66 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12">
+                    <div class="teacher-table">
+                        <div class="card">
+                            <div class="card-header bg-light">
+                                <div class="bulk-actions">
+                                    <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
+                                    <div class="dropdown-box">
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 table-sm">
+                                <table class="table mb-0">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Teacher/Admin</th>
+                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Role</th>
+                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Date Invited</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-th="Teacher/Admin" class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                <strong>
+                                                    <span class="user-lable">
+                                                        mehnaz khan
+                                                        <span class="user-email">mehnaz.can@gmail.com</span>
+                                                    </span> 
+                                                </strong>
+                                            </td>
+                                            <td data-th="Role" class="skelton-hide skelton-height-lg skelton-mb-0">Teacher</td>
+                                            <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">a year ago</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-th="Teacher/Admin" class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                <strong>
+                                                    <span class="user-lable">
+                                                        Qaiser khan
+                                                        <span class="user-email">apple@apple.com</span>
+                                                    </span> 
+                                                </strong>
+                                            </td>
+                                            <td data-th="Role" class="skelton-hide skelton-height-lg skelton-mb-0">Teacher</td>
+                                            <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">a year ago</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
