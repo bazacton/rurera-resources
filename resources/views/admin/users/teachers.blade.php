@@ -236,7 +236,12 @@
                                 <table class="table mb-0">
                                     <thead class="thead-light">
                                         <tr>
-                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Teacher/Admin</th>
+                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                <div class="check-box">
+                                                    <input type="checkbox" name="check-two">
+                                                </div>
+                                                Teacher/Admin
+                                            </th>
                                             <th class="skelton-hide skelton-height-lg skelton-mb-0">Role</th>
                                             <th class="skelton-hide skelton-height-lg skelton-mb-0">Date Invited</th>
                                         </tr>
