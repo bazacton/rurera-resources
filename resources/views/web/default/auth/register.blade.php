@@ -40,8 +40,8 @@
                                 <input name="email" type="text" class="form-control" autocomplete="off" placeholder="Where can we reach you? (e.g., you@domain.com)">
                             </div>
                         </div>
-                        @if($registerMethod == 'mobile')
-                            <!-- @include('web.default.auth.register_includes.mobile_field') --> 
+                        <!-- @if($registerMethod == 'mobile')
+                            @include('web.default.auth.register_includes.mobile_field') 
 
                             @if($showOtherRegisterMethod)
                                 @include('web.default.auth.register_includes.email_field',['optional' => true])
@@ -52,7 +52,7 @@
                             @if($showOtherRegisterMethod)
                                 @include('web.default.auth.register_includes.mobile_field',['optional' => true])
                             @endif
-                        @endif
+                        @endif -->
 
                         <div class="form-group">
                             <label class="input-label" for="full_name">{{ trans('auth.full_name') }}:</label>
