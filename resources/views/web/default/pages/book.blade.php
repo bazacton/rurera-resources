@@ -580,9 +580,10 @@
 
 </script>
 <script>
+
 $(document).ready(function () {
-    $(".stay-btn").click(function() {
-        $("body").addClass("modal-open");
+    $('#leave-option-modal').on('shown.bs.modal', function () {
+        $("body").addClass("custom-modal-open"); // your custom logic
     });
 });
 </script>
