@@ -16723,6 +16723,18 @@ body{overflow-x: hidden;}
 .lms-contact-form-tabs .nav-tabs {border: 0;margin: 0 0 30px;}
 .lms-contact-form-tabs .nav-tabs .nav-link {position: relative;background-color: inherit;border: 0;border-radius: 0;padding: 0;margin-right: 30px;font-size: 22px;font-weight: 500;}
 .listing-search.lms-jobs-form {box-shadow: 0 0 5px rgba(0,0,0,0.2); border: 0; border-radius: 0;max-width: 100%;}
+.lms-jobs-form .input-field .icon-box {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+.lms-jobs-form .input-field .icon-box img {
+    height: 15px;
+    width: 15px;
+    object-fit: contain;
+    border-radius: 0;
+}
 /************************************
  Lms Jobs Form Style End
 *************************************/
