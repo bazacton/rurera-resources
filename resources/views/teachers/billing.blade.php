@@ -93,6 +93,12 @@
                             </div>
                         </div>
 
+                        <div class="col-md-3 faq-sidebar">
+                            <a href="#" class="active">Subscription details</a>
+                            <a href="#">Billing and payments</a>
+                            <a href="#">Other</a>
+                        </div>
+
                         <div class="col-md-9 faq-content">
                             <h4>FAQ</h4>
                             <div id="faqAccordion">
