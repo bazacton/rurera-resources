@@ -4091,6 +4091,11 @@ Qustions AI Tabs Style End
     line-height: normal;
     display: block;
 }
+.teacher-table table th {
+    height: auto !important;
+    font-size: 14px;
+    text-transform: uppercase;
+}
 
 /* Teacher Search Style End */
 
