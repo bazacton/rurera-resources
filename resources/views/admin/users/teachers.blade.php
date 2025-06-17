@@ -264,21 +264,15 @@
                                             <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">a year ago</td>
                                             <td>
                                                 <div class="pending-invites-controls">
-                                                    <button type="button">
-                                                        <span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Link">
-                                                            <img src="/assets/default/svgs/link-file.svg" alt="link-file">
-                                                        </span>
+                                                    <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Link">
+                                                        <img src="/assets/default/svgs/link-file.svg" alt="link-file">
                                                     </button>
-                                                    <button type="button">
-                                                        <span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete">
-                                                            <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu">
-                                                        </span>
+                                                    <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete">
+                                                        <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu">
                                                     </button>
-                                                    <button type="button">
-                                                        <span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Re-send Invite">
-                                                            <img src="/assets/default/svgs/envelope-mail-svgrepo-com.svg" alt="envelope-mail-svgrepo-com">
-                                                            Re-send Invite
-                                                        </span>
+                                                    <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Re-send Invite">
+                                                        <img src="/assets/default/svgs/envelope-mail-svgrepo-com.svg" alt="envelope-mail-svgrepo-com">
+                                                        Re-send Invite
                                                     </button>
                                                 </div>
                                             </td>
@@ -299,21 +293,15 @@
                                             <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">a year ago</td>
                                             <td>
                                                 <div class="pending-invites-controls">
-                                                <button type="button">
-                                                        <span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Link">
-                                                            <img src="/assets/default/svgs/link-file.svg" alt="link-file">
-                                                        </span>
+                                                    <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Link">
+                                                        <img src="/assets/default/svgs/link-file.svg" alt="link-file">
                                                     </button>
-                                                    <button type="button">
-                                                        <span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete">
-                                                            <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu">
-                                                        </span>
+                                                    <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete">
+                                                        <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu">
                                                     </button>
-                                                    <button type="button">
-                                                        <span data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Re-send Invite">
-                                                            <img src="/assets/default/svgs/envelope-mail-svgrepo-com.svg" alt="envelope-mail-svgrepo-com">
-                                                            Re-send Invite
-                                                        </span>
+                                                    <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Re-send Invite">
+                                                        <img src="/assets/default/svgs/envelope-mail-svgrepo-com.svg" alt="envelope-mail-svgrepo-com">
+                                                        Re-send Invite
                                                     </button>
                                                 </div>
                                             </td>
