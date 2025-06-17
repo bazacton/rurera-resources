@@ -4059,6 +4059,10 @@ Qustions AI Tabs Style End
     height: 16px;
     margin-left: 5px;
 }
+.teacher-table .invite-faculty .dropdown-box .dropdown-toggle {
+    background-color: var(--blue);
+    color: var(--white);
+}
 .teacher-table .invite-faculty .dropdown-box .dropdown-toggle img {
     filter: invert(99%) sepia(12%) saturate(35%) hue-rotate(289deg) brightness(113%) contrast(95%);
 }
