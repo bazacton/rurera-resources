@@ -166,7 +166,7 @@
                                             </a>
                                             <div class="dropdown-menu">
                                                 <a class="dropdown-item" href="#"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
-                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
                                             </div>
                                         </div>
                                     </div>
@@ -311,10 +311,31 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="invite-teacher-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"><img src="/assets/default/svgs/user-account.svg" alt="user-account"> Invite New Teachers to Khan School</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="invite-text-field">
+                        <h6>Invite Teacher by Email</h6>
+                        <div class="textarea-field">
+                            <textarea placeholder="Enter your teachers work email address."></textarea>
+                            <p>List one teacher work email per line. You can also copy/paste from Word Exel</p>
+                        </div>
+                        <button type="button">Review Invites</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade create-class-modal" id="createTeacherModal" tabindex="-1" role="dialog" aria-labelledby="createTeacherModalLabel" aria-modal="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
