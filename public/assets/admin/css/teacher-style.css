@@ -4097,6 +4097,11 @@ Qustions AI Tabs Style End
     text-transform: uppercase;
     font-weight: 600;
 }
+.teacher-table table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.04);
+    border-top: 1px solid #ddd;
+}
+.teacher-table table tr:nth-child(odd) {}
 
 /* Teacher Search Style End */
 
