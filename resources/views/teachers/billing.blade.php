@@ -38,6 +38,16 @@
             <div class="row">
                 <div class="col-12">
 
+                    <div class="section-header">
+                        <h1>Billing</h1>
+                        <div class="section-header-breadcrumb">
+                            <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{ trans('admin/main.dashboard')
+                    }}</a>
+                            </div>
+                            <div class="breadcrumb-item">Billing</div>
+                        </div>
+                    </div>
+
                     <ul data-target_class="admin-rurera-tabs-billing" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                         <li class="nav-item skelton-height-lg">
                             <a class="nav-link active" id="membership-tab" href="javascript:;">
@@ -91,6 +101,12 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="col-md-3 faq-sidebar">
+                            <a href="#" class="active">Subscription details</a>
+                            <a href="#">Billing and payments</a>
+                            <a href="#">Other</a>
                         </div>
 
                         <div class="col-md-9 faq-content">
