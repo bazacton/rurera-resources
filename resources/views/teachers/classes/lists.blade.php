@@ -457,7 +457,6 @@
                                     <h5 class="card-title skelton-hide skelton-height-lg skelton-mb-0">{{ $classData->title }}</h5>
                                 </div>
                                 <div class="card-description-holder">
-                                    <p class="grade-text skelton-hide skelton-height-lg">{{ $classData->category->getTitleAttribute() }}</p>
                                     <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->students->count()}} Students</p>
                                 </div>
                                 <div class="progress-holder">
