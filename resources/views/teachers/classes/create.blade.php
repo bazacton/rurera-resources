@@ -224,6 +224,9 @@
                                 <div class="admin-rurera-tabs-page-edit reports-tab-page-edit">
                                     Reports
                                 </div>
+                                <div class="admin-rurera-tabs-page-edit students-tab-page-edit">
+                                    students
+                                </div>
 
                                 <div class="admin-rurera-tabs-page-edit curriculum-tab-page-edit">
 
