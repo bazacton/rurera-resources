@@ -143,16 +143,23 @@
                                 </div>
                             </div>
                             <div class="card-header bg-light">
-                                <h6 class="mb-0 skelton-hide skelton-height-lg skelton-mb-0">
+                                <div class="bulk-actions">
                                     <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
-                                </h6>
-                                <div class="select-holder">
-                                    <select>
-                                        <option value="Bulk Actions">Bulk Actions</option>
-                                        <option value="Bulk Actions">Bulk Actions2</option>
-                                        <option value="Bulk Actions">Bulk Actions3</option>
-                                        <option value="Bulk Actions">Bulk Actions4</option>
-                                    </select>
+                                    <div class="select-holder">
+                                        <select>
+                                            <option value="Bulk Actions">Bulk Actions</option>
+                                            <option value="Bulk Actions">Bulk Actions2</option>
+                                            <option value="Bulk Actions">Bulk Actions3</option>
+                                            <option value="Bulk Actions">Bulk Actions4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="invite-faculty">
+                                    <div class="select-holder">
+                                        <select>
+                                            <option value="Invite Faculty">Invite Faculty</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="card-body p-0 table-sm">
