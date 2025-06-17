@@ -124,6 +124,15 @@
                 <div class="col-12">
                     <div class="assignments-table">
                         <div class="card">
+                            <div class="teacher-search-filter">
+                                <div class="sorting-filters">
+                                    <select>
+                                        <option value="Filter">Filter</option>
+                                        <option value="Filter 2">Filter 2</option>
+                                        <option value="Filter 3">Filter 3</option>
+                                    </select>
+                                </div>
+                            </div>
                             <div class="card-header bg-light">
                                 <h6 class="mb-0 skelton-hide skelton-height-lg skelton-mb-0">
                                     <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
