@@ -4102,6 +4102,17 @@ Qustions AI Tabs Style End
     border-top: 1px solid #ddd;
 }
 .teacher-table table tr:nth-child(odd) {}
+.teacher-table .check-box {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.teacher-table .check-box input[type="checkbox"] {
+    border: 1px solid #ddd;
+    outline: none;
+    height: 15px;
+    width: 15px;
+}
 
 /* Teacher Search Style End */
 
