@@ -313,6 +313,9 @@ Front-end Login Style Start
   width: 15px;
   object-fit: contain;
 }
+.login-card .form-field .icon-box ~ .form-control {
+  padding-left: 35px;
+}
 /********************************
 Front-end Login Style End
 *********************************/
