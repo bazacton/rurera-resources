@@ -148,8 +148,7 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h1>{{$class->title}}</h1>
-            <a href="javascript:;" class="edit-class-btn" data-class_id="{{$class->id}}"><i class="fa fa-cog"></i></a>
+            <h1>{{$class->title}} <a href="javascript:;" class="edit-class-btn ml-2" data-class_id="{{$class->id}}"><i class="fa fa-cog"></i></a></h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{ trans('admin/main.dashboard')
                     }}</a>
