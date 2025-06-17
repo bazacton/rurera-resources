@@ -264,10 +264,10 @@
                                             <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">a year ago</td>
                                             <td>
                                                 <div class="pending-invites-controls">
-                                                    <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Link">
+                                                    <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Copy invite link">
                                                         <img src="/assets/default/svgs/link-file.svg" alt="link-file">
                                                     </button>
-                                                    <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete">
+                                                    <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete invite">
                                                         <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu">
                                                     </button>
                                                     <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Re-send Invite">
@@ -293,10 +293,10 @@
                                             <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">a year ago</td>
                                             <td>
                                                 <div class="pending-invites-controls">
-                                                    <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Link">
+                                                    <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Copy invite link">
                                                         <img src="/assets/default/svgs/link-file.svg" alt="link-file">
                                                     </button>
-                                                    <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete">
+                                                    <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete invite">
                                                         <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu">
                                                     </button>
                                                     <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Re-send Invite">
