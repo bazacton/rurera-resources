@@ -141,6 +141,7 @@
                                     </span>
                                     <input type="text" placeholder="Search Teachers and Admins">
                                 </div>
+                                <a href="#" class="export-btn"><img src="/assets/default/svgs/edit-simple.svg" alt="edit-simple"> Export All</a>
                             </div>
                             <div class="card-header">
                                 <div class="bulk-actions">
