@@ -165,8 +165,8 @@
                                                 Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                             </a>
                                             <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
-                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
+                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
                                             </div>
                                         </div>
                                     </div>
