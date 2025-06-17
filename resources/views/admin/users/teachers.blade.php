@@ -135,6 +135,12 @@
                                         <option value="Filter 3">Filter 3</option>
                                     </select>
                                 </div>
+                                <div class="search-field">
+                                    <span class="icon-box">
+                                        <img src="/assets/default/svgs/search.svg" alt="search">
+                                    </span>
+                                    <input type="text" placeholder="Search Teachers and Admins">
+                                </div>
                             </div>
                             <div class="card-header bg-light">
                                 <h6 class="mb-0 skelton-hide skelton-height-lg skelton-mb-0">
