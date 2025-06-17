@@ -271,6 +271,18 @@
                                             </td>
                                             <td data-th="Role" class="skelton-hide skelton-height-lg skelton-mb-0">Teacher</td>
                                             <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">a year ago</td>
+                                            <div class="teacher-controls">
+                                                <button type="button">
+                                                    <img src="/assets/default/svgs/link-file.svg" alt="link-file">
+                                                </button>
+                                                <button type="button">
+                                                    <img src="/assets/default/svgs/delete.svg" alt="delete">
+                                                </button>
+                                                <button type="button">
+                                                    <img src="/assets/default/svgs/envelope-mail-svgrepo-com.svg" alt="envelope-mail-svgrepo-com">
+                                                    Re-send Invite
+                                                </button>
+                                            </div>
                                         </tr>
                                     </tbody>
                                 </table>
