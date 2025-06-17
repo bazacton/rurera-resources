@@ -187,6 +187,9 @@
                                     <tbody>
                                         <tr>
                                             <td data-th="Teacher/Admin" class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                <div class="check-box">
+                                                    <input type="checkbox" name="check-three">
+                                                </div>
                                                 <strong>
                                                     <span class="user-lable">
                                                         K, Kaiser
@@ -241,6 +244,9 @@
                                     <tbody>
                                         <tr>
                                             <td data-th="Teacher/Admin" class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                <div class="check-box">
+                                                    <input type="checkbox" name="check-one">
+                                                </div>
                                                 <strong>
                                                     <span class="user-lable">
                                                         mehnaz khan
@@ -253,6 +259,9 @@
                                         </tr>
                                         <tr>
                                             <td data-th="Teacher/Admin" class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                <div class="check-box">
+                                                    <input type="checkbox" name="check-two">
+                                                </div>
                                                 <strong>
                                                     <span class="user-lable">
                                                         Qaiser khan
