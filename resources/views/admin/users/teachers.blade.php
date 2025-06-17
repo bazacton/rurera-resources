@@ -271,7 +271,7 @@
                                             </td>
                                             <td data-th="Role" class="skelton-hide skelton-height-lg skelton-mb-0">Teacher</td>
                                             <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">a year ago</td>
-                                            <div class="teacher-controls">
+                                            <div class="pending-invites-controls">
                                                 <button type="button">
                                                     <img src="/assets/default/svgs/link-file.svg" alt="link-file">
                                                 </button>
