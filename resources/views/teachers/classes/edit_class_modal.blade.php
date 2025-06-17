@@ -1,40 +1,40 @@
 <form action="{{ getAdminPanelUrl() }}/classes/{{$class->id}}/store"
       method="POST" class="mb-0">
     @csrf
+    <ul data-target_class="admin-rurera-tabs-details-edit" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+        <li class="nav-item skelton-height-lg">
+            <a class="nav-link active" id="details-tab-edit" href="javascript:;">
+                <span class="tab-title">Details</span>
+            </a>
+        </li>
+        <li class="nav-item skelton-height-lg">
+            <a class="nav-link" id="curriculum-tab-edit" href="javascript:;">
+                <span class="tab-title">Curriculum</span>
+            </a>
+        </li>
+        <li class="nav-item skelton-height-lg">
+            <a class="nav-link" id="games-tab-edit" href="javascript:;">
+                <span class="tab-title">Games</span>
+            </a>
+        </li>
+        <li class="nav-item skelton-height-lg">
+            <a class="nav-link" id="teachers-tab-edit" href="javascript:;">
+                <span class="tab-title">Teachers</span>
+            </a>
+        </li>
+        <li class="nav-item skelton-height-lg">
+            <a class="nav-link" id="announcement-tab-edit" href="javascript:;">
+                <span class="tab-title">Announcement</span>
+            </a>
+        </li>
+        <li class="nav-item skelton-height-lg">
+            <a class="nav-link" id="advance-tab-edit" href="javascript:;">
+                <span class="tab-title">Advanced Options</span>
+            </a>
+        </li>
+    </ul>
+    <div class="admin-rurera-tabs-details-edit curriculum-tab-edit">
 
-    <div class="form-group">
-        <label>Curriculum</label>
-        <div class="select-box">
-            <select class="form-control @error('category_id') is-invalid @enderror"
-                    name="category_id">
-                <option {{ !empty($trend) ?
-                                        '' : 'selected' }} disabled>{{ trans('admin/main.choose_category') }}</option>
-
-                @foreach($categories as $category)
-                    @if(!empty($category->subCategories) and count($category->subCategories))
-                        <optgroup label="{{  $category->title }}">
-                            @foreach($category->subCategories as $subCategory)
-                                <option value="{{ $subCategory->id }}" @if(!empty($class) and $class->
-                                                category_id == $subCategory->id) selected="selected" @endif>{{
-                                                $subCategory->title }}
-                                </option>
-                            @endforeach
-                        </optgroup>
-                    @else
-                        <option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($class)
-                                                and $class->category_id == $category->id) selected="selected" @endif>{{
-                                            $category->title }}
-                        </option>
-                    @endif
-                @endforeach
-            </select>
-        </div>
-        @error('category_id')
-        <div class="invalid-feedback">
-            {{ $message }}
-        </div>
-        @enderror
-    </div>
 
     <div class="form-group assignment_topic_type_fields timestables_fields ">
         <label>Learn</label>
@@ -69,6 +69,8 @@
         </div>
     </div>
 
+    </div>
+    <div class="admin-rurera-tabs-details-edit details-tab-edit">
 
     <!-- Class Name with Color -->
     <div class="form-group">
@@ -214,45 +216,6 @@
         </ul>
     </div>
 
-    @php $tables_no = isset( $class->timestables_no)? json_decode($class->timestables_no) : array(); @endphp
-    <div class="form-group assignment_topic_type_fields timestables_fields ">
-        <label>Timestables</label>
-        <div class="questions-select-number">
-            <ul class="d-flex justify-content-center flex-wrap mb-30">
-                <li><input type="checkbox" value="10" name="tables_no[]" {{in_array(10,$tables_no)?
-                                            'checked' : ''}} id="tables_ten10" /> <label for="tables_ten10">10</label></li>
-                <li><input type="checkbox" value="2" name="tables_no[]" {{in_array(2,$tables_no)?
-                                            'checked' : ''}} id="tables_two2" /> <label for="tables_two2">2</label></li>
-                <li><input type="checkbox" value="5" name="tables_no[]" {{in_array(5,$tables_no)?
-                                            'checked' : ''}} id="tables_five5" /> <label for="tables_five5">5</label></li>
-                <li><input type="checkbox" value="3" name="tables_no[]" {{in_array(3,$tables_no)?
-                                            'checked' : ''}} id="tables_three3" /> <label for="tables_three3">3</label></li>
-                <li><input type="checkbox" value="4" name="tables_no[]" {{in_array(4,$tables_no)?
-                                            'checked' : ''}} id="tables_four4" /> <label for="tables_four4">4</label></li>
-                <li><input type="checkbox" value="8" name="tables_no[]" {{in_array(8,$tables_no)?
-                                            'checked' : ''}} id="tables_eight8" /> <label for="tables_eight8">8</label></li>
-                <li><input type="checkbox" value="6" name="tables_no[]" {{in_array(6,$tables_no)?
-                                            'checked' : ''}} id="tables_six6" /> <label for="tables_six6">6</label></li>
-                <li><input type="checkbox" value="7" name="tables_no[]" {{in_array(7,$tables_no)?
-                                            'checked' : ''}} id="tables_seven7" /> <label for="tables_seven7">7</label></li>
-                <li><input type="checkbox" value="9" name="tables_no[]" {{in_array(9,$tables_no)?
-                                            'checked' : ''}} id="tables_nine9" /> <label for="tables_nine9">9</label></li>
-                <li><input type="checkbox" value="11" name="tables_no[]" {{in_array(11,$tables_no)?
-                                            'checked' : ''}} id="tables_eleven11" /> <label for="tables_eleven11">11</label></li>
-                <li><input type="checkbox" value="12" name="tables_no[]" {{in_array(12,$tables_no)?
-                                            'checked' : ''}} id="tables_twelve12" /> <label for="tables_twelve12">12</label></li>
-                <li><input type="checkbox" value="13" name="tables_no[]" {{in_array(13,$tables_no)?
-                                            'checked' : ''}} id="tables_thirteen13" /> <label for="tables_thirteen13">13</label></li>
-                <li><input type="checkbox" value="14" name="tables_no[]" {{in_array(14,$tables_no)?
-                                            'checked' : ''}} id="tables_fourteen14" /> <label for="tables_fourteen14">14</label></li>
-                <li><input type="checkbox" value="15" name="tables_no[]" {{in_array(15,$tables_no)?
-                                            'checked' : ''}} id="tables_fifteen15" /> <label for="tables_fifteen15">15</label></li>
-                <li><input type="checkbox" value="16" name="tables_no[]" {{in_array(16,$tables_no)?
-                                            'checked' : ''}} id="tables_sixteen16" /> <label for="tables_sixteen16">16</label></li>
-            </ul>
-        </div>
-    </div>
-
     <!-- Room -->
     <div class="form-group">
         <label for="roomName">Room</label>
@@ -295,6 +258,120 @@
             <span class="custom-switch-indicator"></span>
             <label class="custom-switch-description mb-0 cursor-pointer" for="class_status_{{$class->id}}">Active / Paused</label>
         </label>
+    </div>
+    </div>
+
+    <div class="admin-rurera-tabs-details-edit teachers-tab-edit">
+        <div class="teacher-listing d-flex align-items-center flex-wrap">
+
+            @if($class->teachers->where('status','active')->count() > 0)
+                @foreach($class->teachers->where('status','active') as $teacherObj)
+                    <div class="listing-grid-card">
+                        <div class="img-holder">
+                            <figure>
+                                <img src="{{ $teacherObj->user->getAvatar() }}" alt="{{ $teacherObj->user->get_full_name() }}">
+                            </figure>
+                        </div>
+                        <div class="text-holder">
+                            <div class="author-info">
+                            <span class="img-box ">
+                                <img src="{{ $teacherObj->user->getAvatar() }}" alt="{{ $teacherObj->user->get_full_name() }}">
+                                <span class="country-flag">
+                                    <img src="{{ $teacherObj->user->getAvatar() }}" alt="{{ $teacherObj->user->get_full_name() }}">
+                                    </span>
+                            </span>
+                                <div class="card-title-holder">
+                                    <h5 class="">{{ $teacherObj->user->get_full_name() }}</h5>
+                                </div>
+                                <div class="author-contact-info">
+                                    <a href="#" class=""><i class="fas fa-envelope"></i> {{ $teacherObj->user->email }}</a>
+                                    @if($teacherObj->user->mobile != '')
+                                        <span class="phone-number-box">
+                                    <i class="fas fa-phone"></i>
+                                    <span class="phone-number" onclick="togglePhoneNumber(this)" data-full-number="987-654-3210">
+                                        {{ $teacherObj->user->mobile }}
+                                    </span>
+                                </span>
+                                    @endif
+                                </div>
+                                <div class="author-designation">
+                                    @if($teacherObj->user->getTeacherClasses->count() > 0)
+                                        @foreach($teacherObj->user->getTeacherClasses as $classTeacherObj)
+                                            @php
+                                                $teacherClass = $classTeacherObj->teacherClass;
+                                            @endphp
+                                            <span class="designation-lable">{{isset($teacherClass->category->title)? $teacherClass->category->title : ''}}</span>
+                                        @endforeach
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="teacher-list-controls">
+                                <button type="button" class="edit-btn  skelton-height-lg skelton-mb-0 unlink-class-teacher" data-id="{{$teacherObj->id}}">Unlink Teacher</button>
+                            </div>
+
+                            <script>
+                                function togglePhoneNumber(element) {
+                                    const fullNumber = element.getAttribute('data-full-number');
+                                    const isHidden = element.textContent.includes('XXX');
+
+                                    if (isHidden) {
+                                        element.textContent = fullNumber;
+                                    } else {
+                                        const hiddenNumber = `${fullNumber.slice(0, 3)}-XXX-XXXX`;
+                                        element.textContent = hiddenNumber;
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                @endforeach
+            @endif
+
+        </div>
+    </div>
+
+    <div class="admin-rurera-tabs-details-edit advance-tab-edit">
+
+
+
+        @php $tables_no = isset( $class->timestables_no)? json_decode($class->timestables_no) : array(); @endphp
+        <div class="form-group assignment_topic_type_fields timestables_fields ">
+            <label>Timestables</label>
+            <div class="questions-select-number">
+                <ul class="d-flex justify-content-center flex-wrap mb-30">
+                    <li><input type="checkbox" value="10" name="tables_no[]" {{in_array(10,$tables_no)?
+                                            'checked' : ''}} id="tables_ten10" /> <label for="tables_ten10">10</label></li>
+                    <li><input type="checkbox" value="2" name="tables_no[]" {{in_array(2,$tables_no)?
+                                            'checked' : ''}} id="tables_two2" /> <label for="tables_two2">2</label></li>
+                    <li><input type="checkbox" value="5" name="tables_no[]" {{in_array(5,$tables_no)?
+                                            'checked' : ''}} id="tables_five5" /> <label for="tables_five5">5</label></li>
+                    <li><input type="checkbox" value="3" name="tables_no[]" {{in_array(3,$tables_no)?
+                                            'checked' : ''}} id="tables_three3" /> <label for="tables_three3">3</label></li>
+                    <li><input type="checkbox" value="4" name="tables_no[]" {{in_array(4,$tables_no)?
+                                            'checked' : ''}} id="tables_four4" /> <label for="tables_four4">4</label></li>
+                    <li><input type="checkbox" value="8" name="tables_no[]" {{in_array(8,$tables_no)?
+                                            'checked' : ''}} id="tables_eight8" /> <label for="tables_eight8">8</label></li>
+                    <li><input type="checkbox" value="6" name="tables_no[]" {{in_array(6,$tables_no)?
+                                            'checked' : ''}} id="tables_six6" /> <label for="tables_six6">6</label></li>
+                    <li><input type="checkbox" value="7" name="tables_no[]" {{in_array(7,$tables_no)?
+                                            'checked' : ''}} id="tables_seven7" /> <label for="tables_seven7">7</label></li>
+                    <li><input type="checkbox" value="9" name="tables_no[]" {{in_array(9,$tables_no)?
+                                            'checked' : ''}} id="tables_nine9" /> <label for="tables_nine9">9</label></li>
+                    <li><input type="checkbox" value="11" name="tables_no[]" {{in_array(11,$tables_no)?
+                                            'checked' : ''}} id="tables_eleven11" /> <label for="tables_eleven11">11</label></li>
+                    <li><input type="checkbox" value="12" name="tables_no[]" {{in_array(12,$tables_no)?
+                                            'checked' : ''}} id="tables_twelve12" /> <label for="tables_twelve12">12</label></li>
+                    <li><input type="checkbox" value="13" name="tables_no[]" {{in_array(13,$tables_no)?
+                                            'checked' : ''}} id="tables_thirteen13" /> <label for="tables_thirteen13">13</label></li>
+                    <li><input type="checkbox" value="14" name="tables_no[]" {{in_array(14,$tables_no)?
+                                            'checked' : ''}} id="tables_fourteen14" /> <label for="tables_fourteen14">14</label></li>
+                    <li><input type="checkbox" value="15" name="tables_no[]" {{in_array(15,$tables_no)?
+                                            'checked' : ''}} id="tables_fifteen15" /> <label for="tables_fifteen15">15</label></li>
+                    <li><input type="checkbox" value="16" name="tables_no[]" {{in_array(16,$tables_no)?
+                                            'checked' : ''}} id="tables_sixteen16" /> <label for="tables_sixteen16">16</label></li>
+                </ul>
+            </div>
+        </div>
     </div>
     </div>
     <div class="modal-footer px-0 pb-0">
