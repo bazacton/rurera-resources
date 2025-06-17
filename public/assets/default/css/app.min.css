@@ -299,6 +299,20 @@ Front-end Login Style Start
 .welcome-login-box h2 {margin: 0 0 15px; font-size: 30px;}
 .welcome-login-box span {display: block; line-height: normal; margin-bottom: 30px;}
 .welcome-login-box .signup-btn {border: 1px solid rgba(255,255,255,0.5); padding: 8px 30px; display: inline-block; border-radius: 20px; color: #fff;}
+.login-card .form-field {
+  position: relative;
+}
+.login-card .form-field .icon-box {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.login-card .form-field .icon-box img {
+  height: 15px;
+  width: 15px;
+  object-fit: contain;
+}
 /********************************
 Front-end Login Style End
 *********************************/
