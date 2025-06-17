@@ -4232,6 +4232,22 @@ Qustions AI Tabs Style End
     padding: 5px 15px;
     font-weight: 600;
 }
+.review-btn {
+    background: linear-gradient(to bottom, #6bb9f0, #4a90e2);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+    line-height: normal;
+}
+.review-btn:hover {
+    background: linear-gradient(to bottom, #5fa8e1, #3d7fcc);
+}
 
 /* Teacher Search Style End */
 
