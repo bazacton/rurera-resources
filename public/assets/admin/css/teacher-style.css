@@ -3877,6 +3877,18 @@ Qustions AI Tabs Style End
     height: 18px;
     object-fit: contain;
 }
+.teachers-tab-page-edit .teacher-list-controls .edit-btn {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    width: auto;
+    height: auto;
+    border-radius: 3px;
+    padding: 5px 10px;
+    line-height: normal;
+}
+.teachers-tab-page-edit .teacher-list-controls .edit-btn:hover {
+    border-color: #ccc;
+}
 .listing-grid-card h5 {
     color: #333;
     margin: 0 0 5px;
