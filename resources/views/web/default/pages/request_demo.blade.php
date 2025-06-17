@@ -344,13 +344,23 @@
                                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                                     <div class="form-group d-flex flex-column">
                                         <label class="input-label w-100 p-0">First name *</label>
-                                        <div class="input-field w-100"><input type="text" placeholder="" /></div>
+                                        <div class="input-field w-100">
+                                            <span class="icon-box">
+                                                <img src="/assets/default/img/hand.jpg" alt="hand">
+                                            </span>
+                                            <input type="text" placeholder="What should we call you?" autocomplete="off" />
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                                     <div class="form-group d-flex flex-column">
                                         <label class="input-label w-100 p-0">Last name *</label>
-                                        <div class="input-field w-100 p-0"><input type="text" placeholder="" /></div>
+                                        <div class="input-field w-100 p-0">
+                                            <span class="icon-box">
+                                                <img src="/assets/default/img/hand.jpg" alt="hand">
+                                            </span>
+                                            <input type="text" placeholder="Your family/last name, please" />
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
