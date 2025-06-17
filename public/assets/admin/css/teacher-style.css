@@ -4226,6 +4226,8 @@ Qustions AI Tabs Style End
     padding: 15px 15px 0;
     outline: none;
 }
+body textarea:focus::-moz-placeholder {color: transparent;}
+body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .invite-text-field .textarea-field p {
     background-color: aliceblue;
     margin: 0;
