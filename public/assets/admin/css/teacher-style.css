@@ -4043,9 +4043,16 @@ Qustions AI Tabs Style End
     height: 20px;
     width: 20px;
 }
+.export-btn {
+    color: var(--blue);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 10px;
+}
 .export-btn img {
-    height: 15px;
-    width: 15px;
+    height: 12px;
+    width: 12px;
     object-fit: contain;
     filter: invert(37%) sepia(84%) saturate(4462%) hue-rotate(200deg) brightness(103%) contrast(106%);
 }
