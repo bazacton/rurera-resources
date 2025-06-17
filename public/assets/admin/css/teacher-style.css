@@ -4070,9 +4070,26 @@ Qustions AI Tabs Style End
 .teacher-table .user-email {
     display: block;
     font-size: 14px;
+    font-weight: 400;
 }
 .teacher-table table td {
     color: var(--blue);
+}
+.teacher-table table td strong {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.teacher-table table td em {
+    font-size: 12px;
+    font-style: normal;
+    color: #fff;
+    background-color: #26cd26;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 20px;
+    line-height: normal;
+    display: block;
 }
 
 /* Teacher Search Style End */
