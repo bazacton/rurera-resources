@@ -142,7 +142,7 @@
                                     <input type="text" placeholder="Search Teachers and Admins">
                                 </div>
                             </div>
-                            <div class="card-header bg-light">
+                            <div class="card-header">
                                 <div class="bulk-actions">
                                     <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
                                     <div class="dropdown-box">
