@@ -3889,6 +3889,9 @@ Qustions AI Tabs Style End
 .teachers-tab-page-edit .teacher-list-controls .edit-btn:hover {
     border-color: #ccc;
 }
+.designation-lable:empty {
+    display: none;
+}
 .listing-grid-card h5 {
     color: #333;
     margin: 0 0 5px;
