@@ -84,7 +84,7 @@
                                                 <span class="tab-title">Games</span>
                                             </a>
                                         </li>
-                                        <li class="nav-item skelton-height-lg">
+                                        <li class="nav-item skelton-height-lg rurera-hide">
                                             <a class="nav-link" id="teachers-tab" href="javascript:;">
                                                 <span class="tab-title">Teachers</span>
                                             </a>
@@ -454,7 +454,7 @@
 
                             <div class="card-body">
                                 <div class="card-title-holder">
-                                    <h5 class="card-title skelton-hide skelton-height-lg skelton-mb-0">{{ $classData->title }}</h5>
+                                    <h5 class="card-title skelton-hide skelton-height-lg skelton-mb-0"><a href="/admin/classes/{{$classData->id}}/edit">{{ $classData->title }}</a></h5>
                                 </div>
                                 <div class="card-description-holder">
                                     <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->students->count()}} Students</p>
