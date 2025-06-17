@@ -4048,7 +4048,8 @@ Qustions AI Tabs Style End
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 .teacher-search-filter a {
     text-decoration: none;
