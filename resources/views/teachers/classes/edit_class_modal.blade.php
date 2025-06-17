@@ -22,7 +22,7 @@
                 <span class="tab-title">Teachers</span>
             </a>
         </li>
-        <li class="nav-item skelton-height-lg">
+        <li class="nav-item skelton-height-lg ">
             <a class="nav-link" id="announcement-tab-edit" href="javascript:;">
                 <span class="tab-title">Announcement</span>
             </a>

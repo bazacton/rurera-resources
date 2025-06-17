@@ -148,7 +148,8 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h1>{{!empty($class) ?trans('/admin/main.edit'): trans('admin/main.new') }} Class</h1>
+            <h1>{{!empty($class) ?trans('/admin/main.edit'): trans('admin/main.new') }} {{$class->title}}</h1>
+            <a href="javascript:;" class="edit-class-btn" data-class_id="{{$class->id}}"><i class="fa fa-cog"></i></a>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{ trans('admin/main.dashboard')
                     }}</a>
@@ -159,6 +160,48 @@
                 <div class="breadcrumb-item">{{!empty($class) ?trans('/admin/main.edit'): trans('admin/main.new') }}</div>
             </div>
         </div>
+        <div id="class-edit-modal" class="class-edit-modal modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="createClassModalLabel">Edit Class</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body class-edit-content">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul data-target_class="admin-rurera-tabs-page-edit" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+            <li class="nav-item skelton-height-lg">
+                <a class="nav-link active" id="dashboard-tab-page-edit" href="javascript:;">
+                    <span class="tab-title">Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item skelton-height-lg">
+                <a class="nav-link" id="students-tab-page-edit" href="javascript:;">
+                    <span class="tab-title">Students</span>
+                </a>
+            </li>
+            <li class="nav-item skelton-height-lg">
+                <a class="nav-link" id="teachers-tab-page-edit" href="javascript:;">
+                    <span class="tab-title">Teachers</span>
+                </a>
+            </li>
+            <li class="nav-item skelton-height-lg">
+                <a class="nav-link" id="assignments-tab-page-edit" href="javascript:;">
+                    <span class="tab-title">Assignments</span>
+                </a>
+            </li>
+            <li class="nav-item skelton-height-lg">
+                <a class="nav-link" id="reports-tab-page-edit" href="javascript:;">
+                    <span class="tab-title">Reports</span>
+                </a>
+            </li>
+        </ul>
 
         <div class="section-body populated-data">
 
@@ -169,40 +212,20 @@
                             <form action="{{ getAdminPanelUrl() }}/classes/{{ !empty($class) ? $class->id.'/store' : 'store' }}"
                                   method="Post">
                                 {{ csrf_field() }}
-                            <ul data-target_class="admin-rurera-tabs-details-edit" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                                <li class="nav-item skelton-height-lg">
-                                    <a class="nav-link active" id="details-tab-edit" href="javascript:;">
-                                        <span class="tab-title">Details</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item skelton-height-lg">
-                                    <a class="nav-link" id="curriculum-tab-edit" href="javascript:;">
-                                        <span class="tab-title">Curriculum</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item skelton-height-lg">
-                                    <a class="nav-link" id="games-tab-edit" href="javascript:;">
-                                        <span class="tab-title">Games</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item skelton-height-lg">
-                                    <a class="nav-link" id="teachers-tab-edit" href="javascript:;">
-                                        <span class="tab-title">Teachers</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item skelton-height-lg">
-                                    <a class="nav-link" id="announcement-tab-edit" href="javascript:;">
-                                        <span class="tab-title">Announcement</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item skelton-height-lg">
-                                    <a class="nav-link" id="advance-tab-edit" href="javascript:;">
-                                        <span class="tab-title">Advanced Options</span>
-                                    </a>
-                                </li>
-                            </ul>
 
-                                <div class="admin-rurera-tabs-details-edit curriculum-tab-edit">
+                                <div class="admin-rurera-tabs-page-edit dashboard-tab-page-edit">
+                                    Dashboard
+                                </div>
+
+                                <div class="admin-rurera-tabs-page-edit assignments-tab-page-edit">
+                                    Assignments
+                                </div>
+
+                                <div class="admin-rurera-tabs-page-edit reports-tab-page-edit">
+                                    Reports
+                                </div>
+
+                                <div class="admin-rurera-tabs-page-edit curriculum-tab-page-edit">
 
 
                                     <div class="form-group assignment_topic_type_fields timestables_fields ">
@@ -239,7 +262,7 @@
                                     </div>
 
                                 </div>
-                                <div class="admin-rurera-tabs-details-edit details-tab-edit">
+                                <div class="admin-rurera-tabs-page-edit details-tab-page-edit">
 
                                     <!-- Class Name with Color -->
                                     <div class="form-group">
@@ -430,7 +453,7 @@
                                     </div>
                                 </div>
 
-                                <div class="admin-rurera-tabs-details-edit teachers-tab-edit">
+                                <div class="admin-rurera-tabs-page-edit teachers-tab-page-edit">
                                     <div class="teacher-listing d-flex align-items-center flex-wrap">
 
                                         @if($class->teachers->where('status','active')->count() > 0)
@@ -499,7 +522,7 @@
                                     </div>
                                 </div>
 
-                                <div class="admin-rurera-tabs-details-edit advance-tab-edit">
+                                <div class="admin-rurera-tabs-page-edit advance-tab-page-edit">
 
 
 
@@ -576,6 +599,24 @@
 
             render_rurera_tabs();
 
+            $(document).on('click', '.edit-class-btn', function (e) {
+                //rurera_loader($("#userSettingForm"), 'div');
+                var class_id = $(this).attr('data-class_id');
+                jQuery.ajax({
+                    type: "GET",
+                    url: '/admin/classes/edit_modal',
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: {'class_id':class_id},
+                    success: function (return_data) {
+                        $(".class-edit-content").html(return_data);
+                        $("#class-edit-modal").modal('show');
+                        console.log(return_data);
+                    }
+                });
+
+            });
         });
         function render_rurera_tabs(){
             if($(".admin-rurera-tabs li a.active").length > 0){
