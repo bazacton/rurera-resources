@@ -579,4 +579,11 @@
 
 
 </script>
+<script>
+$(document).ready(function () {
+    $(".stay-btn").click(function() {
+        $("body").addClass("modal-open");
+    });
+});
+</script>
 <img src="/assets/default/img/icons/sidebar/dashboard.svg" onload="startTimer()" onbeforeunload="stopTimer()" style="display:none;">
