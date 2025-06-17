@@ -80,9 +80,14 @@
 
                         <div class="form-group ">
                             <label class="input-label" for="confirm_password">{{ trans('auth.retype_password') }}:</label>
-                            <input name="password_confirmation" type="password"
+                            <div class="form-field">
+                                <span class="icon-box">
+                                    <img src="/assets/default/img/refresh.jpg" alt="hand">
+                                </span>
+                                <input name="password_confirmation" type="password"
                                    class="form-control @error('password_confirmation') is-invalid @enderror" id="confirm_password"
-                                   aria-describedby="confirmPasswordHelp">
+                                   aria-describedby="confirmPasswordHelp" autocomplete="off" placeholder="Re-enter your password">
+                            </div>
                             @error('password_confirmation')
                             <div class="invalid-feedback">
                                 {{ $message }}
