@@ -292,6 +292,22 @@
     z-index: -1;
     opacity: 0;
 }
+.class-edit-modal .admin-rurera-tabs li {
+    margin-right: 15px;
+}
+.class-edit-modal .admin-rurera-tabs li:last-child {
+    margin-right: 0;
+}
+.class-edit-modal .modal-dialog {
+    max-width: 600px;
+}
+.class-edit-modal .admin-rurera-tabs.nav-pills li a {
+    padding-bottom: 5px;
+}
+.class-edit-modal .admin-rurera-tabs {
+    padding: 0;
+    margin: 0 0 15px;
+}
 /* Admin Create-Class-Modal Style End */
 
 /* Admin Create-Google-Class-Modal Style Start */
