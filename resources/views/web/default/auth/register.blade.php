@@ -31,19 +31,17 @@
 
                     <form method="post" action="/register" class="mt-35">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-
+                        <div class="form-group">
+                            <label class="input-label" for="email">Email:</label>
+                            <div class="form-field">
+                                <span class="icon-box">
+                                    <img src="/assets/default/img/envelope.jpg" alt="envelope">
+                                </span>
+                                <input name="email" type="text" class="form-control" autocomplete="off" placeholder="Where can we reach you? (e.g., you@domain.com)">
+                            </div>
+                        </div>
                         @if($registerMethod == 'mobile')
-                            <!-- @include('web.default.auth.register_includes.mobile_field') -->
-                             <div class="form-group">
-                                <label class="input-label" for="email">Email:</label>
-                                <div class="form-field">
-                                    <span class="icon-box">
-                                        <img src="/assets/default/img/envelope.jpg" alt="envelope">
-                                    </span>
-                                    <input name="email" type="text" class="form-control" autocomplete="off" placeholder="Where can we reach you? (e.g., you@domain.com)">
-                                </div>
-                             </div>
-                            
+                            <!-- @include('web.default.auth.register_includes.mobile_field') --> 
 
                             @if($showOtherRegisterMethod)
                                 @include('web.default.auth.register_includes.email_field',['optional' => true])
