@@ -4043,6 +4043,12 @@ Qustions AI Tabs Style End
     height: 20px;
     width: 20px;
 }
+.export-btn img {
+    height: 15px;
+    width: 15px;
+    object-fit: contain;
+    filter: invert(37%) sepia(84%) saturate(4462%) hue-rotate(200deg) brightness(103%) contrast(106%);
+}
 .teacher-table .card .card-header {
     display: flex;
     align-items: center;
