@@ -359,20 +359,30 @@
                                             <span class="icon-box">
                                                 <img src="/assets/default/img/file.jpg" alt="file">
                                             </span>
-                                            <input type="text" placeholder="Your family/last name, please" />
+                                            <input type="text" placeholder="Your family/last name, please" autocomplete="off" />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                     <div class="form-group d-flex flex-column">
                                         <label class="input-label w-100 p-0">Your email address *</label>
-                                        <div class="input-field w-100"><input type="text" placeholder="" /></div>
+                                        <div class="input-field w-100">
+                                            <span class="icon-box">
+                                                <img src="/assets/default/img/envelope.jpg" alt="envelope">
+                                            </span>
+                                            <input type="text" placeholder="Where can we reach you? (e.g., you@domain.com)" autocomplete="off" />
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                     <div class="form-group d-flex flex-column">
                                         <label class="input-label w-100 p-0">Company name *</label>
-                                        <div class="input-field w-100"><input type="text" placeholder="" /></div>
+                                        <div class="input-field w-100">
+                                            <span class="icon-box">
+                                                <img src="/assets/default/img/company.jpg" alt="company">
+                                            </span>
+                                            <input type="text" placeholder="" autocomplete="off" />
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
