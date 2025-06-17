@@ -4037,7 +4037,7 @@ Qustions AI Tabs Style End
     transition: all 0.3s ease-out;
 }
 .search-field input[type="text"]:focus {
-    min-width: 500px;
+    min-width: 350px;
 }
 .search-field .icon-box img {
     height: 20px;
