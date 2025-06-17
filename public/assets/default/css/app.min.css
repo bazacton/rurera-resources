@@ -305,7 +305,7 @@ Front-end Login Style Start
 .login-card .form-field .icon-box {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 12px;
   transform: translateY(-50%);
 }
 .login-card .form-field .icon-box img {
