@@ -338,7 +338,7 @@
         <div class="form-group assignment_topic_type_fields timestables_fields ">
             <label>Timestables</label>
             <div class="questions-select-number">
-                <ul class="d-flex justify-content-center flex-wrap mb-30">
+                <ul class="d-flex flex-wrap mb-30">
                     <li><input type="checkbox" value="10" name="tables_no[]" {{in_array(10,$tables_no)?
                                             'checked' : ''}} id="tables_ten10" /> <label for="tables_ten10">10</label></li>
                     <li><input type="checkbox" value="2" name="tables_no[]" {{in_array(2,$tables_no)?
