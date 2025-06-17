@@ -209,7 +209,7 @@
                 <div class="col-12">
                     <div class="teacher-table">
                         <div class="card">
-                            <div class="card-header bg-light">
+                            <div class="card-header">
                                 <div class="bulk-actions">
                                     <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
                                     <div class="dropdown-box">
