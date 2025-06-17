@@ -33,7 +33,17 @@
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                         @if($registerMethod == 'mobile')
-                            @include('web.default.auth.register_includes.mobile_field')
+                            <!-- @include('web.default.auth.register_includes.mobile_field') -->
+                             <div class="form-group">
+                                <label class="input-label" for="email">Email:</label>
+                                <div class="form-field">
+                                    <span class="icon-box">
+                                        <img src="/assets/default/img/envelope.jpg" alt="envelope">
+                                    </span>
+                                    <input name="email" type="text" class="form-control" autocomplete="off" placeholder="Where can we reach you? (e.g., you@domain.com)">
+                                </div>
+                             </div>
+                            
 
                             @if($showOtherRegisterMethod)
                                 @include('web.default.auth.register_includes.email_field',['optional' => true])
@@ -65,7 +75,7 @@
                             <label class="input-label" for="password">{{ trans('auth.password') }}:</label>
                             <div class="form-field">
                                 <span class="icon-box">
-                                    <img src="/assets/default/img/key-lock.jpg" alt="hand">
+                                    <img src="/assets/default/img/key-lock.jpg" alt="key-lock">
                                 </span>
                                 <input name="password" type="password"
                                    class="form-control @error('password') is-invalid @enderror" id="password"
@@ -82,7 +92,7 @@
                             <label class="input-label" for="confirm_password">{{ trans('auth.retype_password') }}:</label>
                             <div class="form-field">
                                 <span class="icon-box">
-                                    <img src="/assets/default/img/refresh.jpg" alt="hand">
+                                    <img src="/assets/default/img/refresh.jpg" alt="refresh">
                                 </span>
                                 <input name="password_confirmation" type="password"
                                    class="form-control @error('password_confirmation') is-invalid @enderror" id="confirm_password"
