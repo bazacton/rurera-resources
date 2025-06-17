@@ -125,7 +125,17 @@
                     <div class="assignments-table">
                         <div class="card">
                             <div class="card-header bg-light">
-                                <h6 class="mb-0 skelton-hide skelton-height-lg skelton-mb-0"><span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span> Issue in Testing</h6>
+                                <h6 class="mb-0 skelton-hide skelton-height-lg skelton-mb-0">
+                                    <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
+                                </h6>
+                                <div class="select-holder">
+                                    <select>
+                                        <option value="Bulk Actions">Bulk Actions</option>
+                                        <option value="Bulk Actions">Bulk Actions</option>
+                                        <option value="Bulk Actions">Bulk Actions</option>
+                                        <option value="Bulk Actions">Bulk Actions</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="card-body p-0 table-sm">
                                 <table class="table mb-0">
