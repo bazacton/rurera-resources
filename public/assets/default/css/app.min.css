@@ -1677,6 +1677,8 @@ Lms Books Listing Style End
 .lms-choose-membership .form-separator span:after {content: "";position: absolute;right: 100%;width: 999px;height: 1px;background: #b5b8bf;top: 50%; margin-top: 1px;}
 .lms-choose-membership .social-login {border-radius: 5px; border: 1px solid var(--primary); font-size: 20px; font-weight: bold; color: var(--primary); background-color: #fff; gap: 10px; text-align: left; margin-bottom: 10px; min-height: 52px;}
 .lms-choose-membership .form-login-reading .input-field input[type="text"] {height: 48px;border: 1px solid #ddd;}
+.lms-choose-membership .form-login-reading .input-field .icon-box ~ input[type="text"], 
+.lms-choose-membership .form-login-reading .input-field .icon-box ~ input[type="password"] {padding-left: 35px;}
 body:has(.modal.lms-choose-membership.show) {overflow: hidden;}
 .lms-choose-membership .social-login img {width: 18px; height: 18px;}
 .lms-choose-membership .subscription-content {height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
