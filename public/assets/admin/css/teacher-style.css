@@ -4130,6 +4130,21 @@ Qustions AI Tabs Style End
     width: 15px;
     filter: invert(37%) sepia(84%) saturate(4462%) hue-rotate(200deg) brightness(103%) contrast(106%);
 }
+.teacher-table table tr {
+    position: relative;
+}
+.pending-invites-controls {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+    opacity: 0;
+}
+.teacher-table table tr:hover .pending-invites-controls {
+    visibility: visible;
+    opacity: 1;
+}
 
 /* Teacher Search Style End */
 
