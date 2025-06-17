@@ -1708,6 +1708,18 @@ body:has(.modal.lms-choose-membership.show) {overflow: hidden;}
 .lms-choose-membership .emoji-icons .emoji-icon {padding: 0 5px;}
 .lms-choose-membership .pin-list {min-height: 28px; display: flex; align-items: center; color: #666; font-weight: 500;}
 .modal.spell_words_popup {padding-right: 25px !important; margin-left: -18px; width: 103%;}
+.lms-choose-membership .input-field .icon-box {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+.lms-choose-membership .input-field .icon-box img {
+  height: 15px;
+  width: 15px;
+  object-fit: contain;
+  border-radius: 0;
+}
 
 /* Recent Reviews Style */
 .recent-reviews-section .grid-item {width: 100%; padding: 0 0 0 14px; margin-bottom: 14px;}
