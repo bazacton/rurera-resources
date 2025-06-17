@@ -1,7 +1,7 @@
 @extends('admin.layouts.app')
 
 @push('libraries_top')
-
+    <link rel="stylesheet" href="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.css">
 @endpush
 
 @section('content')
@@ -68,102 +68,102 @@
                                       method="POST">
                                     @csrf
 
-                                    <div class="form-group">
-                                        <label>Curriculum</label>
-                                        <select class="form-control @error('category_id') is-invalid @enderror"
-                                                name="category_id">
-                                            <option {{ !empty($trend) ?
-                                    '' : 'selected' }} disabled>{{ trans('admin/main.choose_category') }}</option>
-
-                                            @foreach($categories as $category)
-                                                @if(!empty($category->subCategories) and count($category->subCategories))
-                                                    <optgroup label="{{  $category->title }}">
-                                                        @foreach($category->subCategories as $subCategory)
-                                                            <option value="{{ $subCategory->id }}" @if(!empty($class) and $class->
-                                            category_id == $subCategory->id) selected="selected" @endif>{{
-                                            $subCategory->title }}
-                                                            </option>
-                                                        @endforeach
-                                                    </optgroup>
-                                                @else
-                                                    <option value="{{ $category->id }}" class="font-weight-bold" @if(!empty($class)
-                                            and $class->category_id == $category->id) selected="selected" @endif>{{
-                                        $category->title }}
-                                                    </option>
-                                                @endif
-                                            @endforeach
-                                        </select>
-                                        @error('category_id')
-                                        <div class="invalid-feedback">
-                                            {{ $message }}
-                                        </div>
-                                        @enderror
-                                    </div>
-
-
+                                    <ul data-target_class="admin-rurera-tabs-details" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+                                        <li class="nav-item skelton-height-lg">
+                                            <a class="nav-link active" id="details-tab" href="javascript:;">
+                                                <span class="tab-title">Details</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item skelton-height-lg">
+                                            <a class="nav-link" id="curriculum-tab" href="javascript:;">
+                                                <span class="tab-title">Curriculum</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item skelton-height-lg">
+                                            <a class="nav-link" id="games-tab" href="javascript:;">
+                                                <span class="tab-title">Games</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item skelton-height-lg">
+                                            <a class="nav-link" id="teachers-tab" href="javascript:;">
+                                                <span class="tab-title">Teachers</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item skelton-height-lg">
+                                            <a class="nav-link" id="announcement-tab" href="javascript:;">
+                                                <span class="tab-title">Announcement</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item skelton-height-lg">
+                                            <a class="nav-link" id="advance-tab" href="javascript:;">
+                                                <span class="tab-title">Advanced Options</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                     <!-- Class Name with Color -->
-                                    <div class="form-group">
-                                        <label for="className">Enter class name (Required)</label>
-                                        <div class="input-group">
-                                            <input
-                                                type="text"
-                                                class="form-control"
-                                                id="className"
-                                                name="title"
-                                                placeholder="E.g., Math Club"
-                                                required
-                                            />
-                                            <div class="input-group-append">
-                                                <button
-                                                    class="btn btn-light dropdown-toggle"
-                                                    type="button"
-                                                    name="class_color"
-                                                    id="colorPickerDropdown"
-                                                    data-toggle="dropdown"
-                                                    aria-haspopup="true"
-                                                    aria-expanded="false"
-                                                    style="border: 1px solid #ccc;"
-                                                >
-                                                    <span
-                                                        class="color-indicator"
-                                                        style="background-color: #bcdad7;"
-                                                    ></span>
-                                                </button>
-                                                <div class="dropdown-menu">
-                                                    <h5>Class Color Code</h5>
-                                                    <input type="text" name="class_color" class="class_color">
-                                                    <div class="class-color-box">
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#bcdad7" style="background-color: #bcdad7;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#fbcdb3" style="background-color: #fbcdb3;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#f7efe3" style="background-color: #f7efe3;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#f1d276" style="background-color: #f1d276;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#ef8b8a" style="background-color: #ef8b8a;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#e5d7bb" style="background-color: #e5d7bb;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#bd7967" style="background-color: #bd7967;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#f870b3" style="background-color: #f870b3;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#acd5cd" style="background-color: #acd5cd;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#733a4d" style="background-color: #733a4d;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#4f408e" style="background-color: #4f408e;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#3eb9bd" style="background-color: #3eb9bd;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#e2cd82" style="background-color: #e2cd82;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#f6e9c3" style="background-color: #f6e9c3;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#efebe4" style="background-color: #efebe4;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#cda4ad" style="background-color: #cda4ad;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#edc9a7" style="background-color: #edc9a7;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#dad3c5" style="background-color: #dad3c5;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#a96eb0" style="background-color: #a96eb0;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#deb9ae" style="background-color: #deb9ae;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#7d9897" style="background-color: #7d9897;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#6d4e88" style="background-color: #6d4e88;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#a46f82" style="background-color: #a46f82;" ></button>
-                                                        <button type="button" class="dropdown-item color-set" data-color_code="#465c60" style="background-color: #465c60;" ></button>
 
+                                    <div class="admin-rurera-tabs-details details-tab">
+                                        <div class="form-group">
+                                            <label for="className">Enter class name (Required)</label>
+                                            <div class="input-group">
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="className"
+                                                    name="title"
+                                                    placeholder="E.g., Math Club"
+                                                    required
+                                                />
+                                                <div class="input-group-append">
+                                                    <button
+                                                        class="btn btn-light dropdown-toggle"
+                                                        type="button"
+                                                        name="class_color"
+                                                        id="colorPickerDropdown"
+                                                        data-toggle="dropdown"
+                                                        aria-haspopup="true"
+                                                        aria-expanded="false"
+                                                        style="border: 1px solid #ccc;"
+                                                    >
+                                                        <span
+                                                            class="color-indicator"
+                                                            style="background-color: #bcdad7;"
+                                                        ></span>
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <h5>Class Color Code</h5>
+                                                        <input type="text" name="class_color" class="class_color">
+                                                        <div class="class-color-box">
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#bcdad7" style="background-color: #bcdad7;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#fbcdb3" style="background-color: #fbcdb3;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#f7efe3" style="background-color: #f7efe3;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#f1d276" style="background-color: #f1d276;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#ef8b8a" style="background-color: #ef8b8a;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#e5d7bb" style="background-color: #e5d7bb;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#bd7967" style="background-color: #bd7967;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#f870b3" style="background-color: #f870b3;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#acd5cd" style="background-color: #acd5cd;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#733a4d" style="background-color: #733a4d;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#4f408e" style="background-color: #4f408e;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#3eb9bd" style="background-color: #3eb9bd;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#e2cd82" style="background-color: #e2cd82;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#f6e9c3" style="background-color: #f6e9c3;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#efebe4" style="background-color: #efebe4;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#cda4ad" style="background-color: #cda4ad;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#edc9a7" style="background-color: #edc9a7;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#dad3c5" style="background-color: #dad3c5;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#a96eb0" style="background-color: #a96eb0;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#deb9ae" style="background-color: #deb9ae;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#7d9897" style="background-color: #7d9897;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#6d4e88" style="background-color: #6d4e88;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#a46f82" style="background-color: #a46f82;" ></button>
+                                                            <button type="button" class="dropdown-item color-set" data-color_code="#465c60" style="background-color: #465c60;" ></button>
+
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-
                                     <div class="form-group">
                                         <label for="ClassNickName">Class Nick Name (Required)</label>
                                         <input
@@ -340,6 +340,8 @@
                                         </div>
                                     </div>
                                 </li>
+
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -455,7 +457,6 @@
                                     <h5 class="card-title skelton-hide skelton-height-lg skelton-mb-0">{{ $classData->title }}</h5>
                                 </div>
                                 <div class="card-description-holder">
-                                    <p class="grade-text skelton-hide skelton-height-lg">{{ $classData->category->getTitleAttribute() }}</p>
                                     <p class="card-students skelton-hide skelton-height-lg skelton-mb-0">{{$classData->students->count()}} Students</p>
                                 </div>
                                 <div class="progress-holder">
@@ -575,6 +576,7 @@
 
 @push('scripts_bottom')
     <script src="/assets/default/js/admin/categories.min.js"></script>
+    <script src="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
 <script>
 
 
@@ -624,7 +626,7 @@
             success: function (return_data) {
                 $(".class-edit-content").html(return_data);
                 $("#class-edit-modal").modal('show');
-                console.log(return_data);
+                render_rurera_tabs();
             }
         });
 
@@ -730,8 +732,53 @@
                 .querySelectorAll(".skelton-hide")
                 .forEach((el) => el.classList.remove("skelton-hide"));
             }, 3000);
-        
+
         /*Skelton Loading Fungtion End*/
+    });
+
+    function render_rurera_tabs(){
+        if($(".admin-rurera-tabs li a.active").length > 0){
+            $(".admin-rurera-tabs li a.active").click();
+        }
+    }
+    $(document).ready(function () {
+
+        render_rurera_tabs();
+        $(document).on('click', '.admin-rurera-tabs li a', function (e) {
+            var target_class = $(this).closest('.admin-rurera-tabs').attr('data-target_class');
+            var target_div = $(this).attr('id');
+            $("."+target_class).addClass('rurera-hide');
+            $("."+target_div).removeClass('rurera-hide');
+            $(this).closest('.admin-rurera-tabs').find('li').find('a').removeClass('active');
+            $(this).addClass('active');
+
+        });
+
+        $(document).on('click', '.unlink-class-teacher', function (e) {
+            var id = $(this).attr('data-id');
+            var parentDiv = $(this).closest('.teacher-listing');
+            jQuery.ajax({
+                type: "GET",
+                url: '/admin/classes/unlink_teacher',
+                dataType: 'json',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {'id':id},
+                success: function (return_data) {
+                    Swal.fire({
+                        icon: return_data.status,
+                        html: '<h3 class="font-20 text-center text-dark-blue py-25">'+return_data.msg+'</h3>',
+                        showConfirmButton: false,
+                        width: '25rem'
+                    });
+                    parentDiv.remove();
+                }
+            });
+
+        });
+
+
     });
 </script>
 
