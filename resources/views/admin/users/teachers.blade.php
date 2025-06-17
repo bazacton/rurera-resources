@@ -106,119 +106,121 @@
                 </div>
                 @endforeach
             @endif
-            <div class="col-12 col-md-12">
-                <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
-                    <li class="nav-item skelton-hide skelton-height-lg">
-                        <a class="nav-link active" id="topics-tab" href="/admin/assignments">
-                            <span class="tab-title">All assignments</span>
-                        </a>
-                    </li>
-                    <li class="nav-item skelton-hide skelton-height-lg">
-                        <a class="nav-link" id="topics-tab" href="/admin/assignments/scheduled" >
-                            <span class="tab-title">Scheduled</span>
-                        </a>
-                    </li>
-                    <li class="nav-item skelton-hide skelton-height-lg">
-                        <a class="nav-link" id="topics-tab" href="/admin/assignments/running" >
-                            <span class="tab-title">Running</span>
-                        </a>
-                    </li>
-                    <li class="nav-item skelton-hide skelton-height-lg">
-                        <a class="nav-link" id="topics-tab" href="/admin/assignments/completed" >
-                            <span class="tab-title">Completed</span>
-                        </a>
-                    </li>
-                    <li class="nav-item skelton-hide skelton-height-lg">
-                        <a class="nav-link" id="topics-tab" href="/admin/assignments/paused" >
-                            <span class="tab-title">Paused</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-12">
-                <div class="assignments-table">
-                    <div class="card">
-                        <div class="card-header bg-light">
-                            <h6 class="mb-0 skelton-hide skelton-height-lg skelton-mb-0"><span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span> Issue in Testing</h6>
-                        </div>
-                        <div class="card-body p-0 table-sm">
-                            <table class="table mb-0">
-                                <thead class="thead-light">
-                                    <tr>
-                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">Type</th>
-                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">Questions</th>
-                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">Participations</th>
-                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">Start & End Date</th>
-                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">Accuracy</th>
-                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">Status</th>
-                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td data-th="Type" class="skelton-hide skelton-height-lg skelton-mb-0">Vocabulary</td>
-                                        <td data-th="Questions" class="skelton-hide skelton-height-lg skelton-mb-0">0</td>
-                                        <td data-th="Participations" class="skelton-hide skelton-height-lg skelton-mb-0">50</td>
-                                        <td data-th="Start & End Date" class="skelton-hide skelton-height-lg skelton-mb-0">11 Sep 05:00 / 16 Sep 05:00</td>
-                                        <td data-th="Accuracy" class="skelton-hide skelton-height-lg skelton-mb-0">
-                                            <div class="circle_percent circle-green" data-percent="50">
-                                                <div class="circle_inner">
-                                                    <div class="round_per" style="transform: rotate(360deg);"></div>
-                                                </div>
-                                                <div class="circle_inbox">
-                                                    <span class="percent_text">50%</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td data-th="Status" class="text-success font-weight-bold skelton-hide skelton-height-lg skelton-mb-0">Activ e</td>
-                                        <td data-th="Actions" class="skelton-hide skelton-height-lg skelton-mb-0">
-                                            <div class="dropdown-box">
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
-                                                    </a>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+                        <li class="nav-item skelton-hide skelton-height-lg">
+                            <a class="nav-link active" id="topics-tab" href="/admin/assignments">
+                                <span class="tab-title">All assignments</span>
+                            </a>
+                        </li>
+                        <li class="nav-item skelton-hide skelton-height-lg">
+                            <a class="nav-link" id="topics-tab" href="/admin/assignments/scheduled" >
+                                <span class="tab-title">Scheduled</span>
+                            </a>
+                        </li>
+                        <li class="nav-item skelton-hide skelton-height-lg">
+                            <a class="nav-link" id="topics-tab" href="/admin/assignments/running" >
+                                <span class="tab-title">Running</span>
+                            </a>
+                        </li>
+                        <li class="nav-item skelton-hide skelton-height-lg">
+                            <a class="nav-link" id="topics-tab" href="/admin/assignments/completed" >
+                                <span class="tab-title">Completed</span>
+                            </a>
+                        </li>
+                        <li class="nav-item skelton-hide skelton-height-lg">
+                            <a class="nav-link" id="topics-tab" href="/admin/assignments/paused" >
+                                <span class="tab-title">Paused</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <div class="assignments-table">
+                        <div class="card">
+                            <div class="card-header bg-light">
+                                <h6 class="mb-0 skelton-hide skelton-height-lg skelton-mb-0"><span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span> Issue in Testing</h6>
+                            </div>
+                            <div class="card-body p-0 table-sm">
+                                <table class="table mb-0">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Type</th>
+                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Questions</th>
+                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Participations</th>
+                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Start & End Date</th>
+                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Accuracy</th>
+                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Status</th>
+                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-th="Type" class="skelton-hide skelton-height-lg skelton-mb-0">Vocabulary</td>
+                                            <td data-th="Questions" class="skelton-hide skelton-height-lg skelton-mb-0">0</td>
+                                            <td data-th="Participations" class="skelton-hide skelton-height-lg skelton-mb-0">50</td>
+                                            <td data-th="Start & End Date" class="skelton-hide skelton-height-lg skelton-mb-0">11 Sep 05:00 / 16 Sep 05:00</td>
+                                            <td data-th="Accuracy" class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                <div class="circle_percent circle-green" data-percent="50">
+                                                    <div class="circle_inner">
+                                                        <div class="round_per" style="transform: rotate(360deg);"></div>
+                                                    </div>
+                                                    <div class="circle_inbox">
+                                                        <span class="percent_text">50%</span>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td data-th="Type" class="skelton-hide skelton-height-lg skelton-mb-0" >Vocabulary</td>
-                                        <td data-th="Questions" class="skelton-hide skelton-height-lg skelton-mb-0">0</td>
-                                        <td data-th="Participations" class="skelton-hide skelton-height-lg skelton-mb-0">50</td>
-                                        <td data-th="Start & End Date" class="skelton-hide skelton-height-lg skelton-mb-0">11 Sep 05:00 / 16 Sep 05:00</td>
-                                        <td data-th="Accuracy" class="skelton-hide skelton-height-lg skelton-mb-0">
-                                            <div class="circle_percent circle-green" data-percent="50">
-                                                <div class="circle_inner">
-                                                    <div class="round_per" style="transform: rotate(360deg);"></div>
-                                                </div>
-                                                <div class="circle_inbox">
-                                                    <span class="percent_text">50%</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td data-th="Status" class="text-success font-weight-bold skelton-hide skelton-height-lg skelton-mb-0">Active</td>
-                                        <td data-th="Actions" class="skelton-hide skelton-height-lg skelton-mb-0">
-                                            <div class="dropdown-box">
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
-                                                    </a>
-                                                    <div class="dropdown-menu" style="">
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                            </td>
+                                            <td data-th="Status" class="text-success font-weight-bold skelton-hide skelton-height-lg skelton-mb-0">Activ e</td>
+                                            <td data-th="Actions" class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                <div class="dropdown-box">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                            <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
+                                                        </a>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-th="Type" class="skelton-hide skelton-height-lg skelton-mb-0" >Vocabulary</td>
+                                            <td data-th="Questions" class="skelton-hide skelton-height-lg skelton-mb-0">0</td>
+                                            <td data-th="Participations" class="skelton-hide skelton-height-lg skelton-mb-0">50</td>
+                                            <td data-th="Start & End Date" class="skelton-hide skelton-height-lg skelton-mb-0">11 Sep 05:00 / 16 Sep 05:00</td>
+                                            <td data-th="Accuracy" class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                <div class="circle_percent circle-green" data-percent="50">
+                                                    <div class="circle_inner">
+                                                        <div class="round_per" style="transform: rotate(360deg);"></div>
+                                                    </div>
+                                                    <div class="circle_inbox">
+                                                        <span class="percent_text">50%</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-th="Status" class="text-success font-weight-bold skelton-hide skelton-height-lg skelton-mb-0">Active</td>
+                                            <td data-th="Actions" class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                <div class="dropdown-box">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                            <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
+                                                        </a>
+                                                        <div class="dropdown-menu" style="">
+                                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
