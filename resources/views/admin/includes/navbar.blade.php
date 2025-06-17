@@ -59,8 +59,14 @@
                     <i class="fas fa-globe"></i> {{ trans('admin/main.show_website') }}
                 </a>
 
+                @if(auth()->user()->isAdminTeacher())
+                    <a href="{{ getAdminPanelUrl() }}/users/billing" class="dropdown-item has-icon">
+                        <i class="fas fa-cog"></i> Billing
+                    </a>
+                @endif
+
                 <a href="{{ getAdminPanelUrl() }}/users/{{ $authUser->id }}/edit" class="dropdown-item has-icon">
-                    <i class="fas fa-cog"></i> {{ trans('admin/main.change_password') }}
+                    <i class="fas fa-cog"></i> Account
                 </a>
 
                 <div class="dropdown-divider"></div>
