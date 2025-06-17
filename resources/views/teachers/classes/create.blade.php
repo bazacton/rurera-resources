@@ -185,7 +185,7 @@
                                         <span class="tab-title">Games</span>
                                     </a>
                                 </li>
-                                <li class="nav-item skelton-height-lg rurera-hide">
+                                <li class="nav-item skelton-height-lg">
                                     <a class="nav-link" id="teachers-tab-edit" href="javascript:;">
                                         <span class="tab-title">Teachers</span>
                                     </a>
