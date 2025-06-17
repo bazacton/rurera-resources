@@ -22,12 +22,12 @@
                 <span class="tab-title">Teachers</span>
             </a>
         </li>
-        <li class="nav-item skelton-height-lg">
+        <li class="nav-item skelton-height-lg ">
             <a class="nav-link" id="announcement-tab-edit" href="javascript:;">
                 <span class="tab-title">Announcement</span>
             </a>
         </li>
-        <li class="nav-item skelton-height-lg">
+        <li class="nav-item skelton-height-lg rurera-hide">
             <a class="nav-link" id="advance-tab-edit" href="javascript:;">
                 <span class="tab-title">Advanced Options</span>
             </a>
