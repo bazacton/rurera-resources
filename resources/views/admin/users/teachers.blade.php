@@ -330,7 +330,9 @@
                             <textarea placeholder="Enter your teachers work email address."></textarea>
                             <p>List one teacher work email per line. You can also copy/paste from Word Exel</p>
                         </div>
-                        <button type="button">Review Invites</button>
+                        <div class="review-btn-holder d-flex align-items-center justify-content-end">
+                            <button class="review-btn" type="button">Review Invites</button>
+                        </div>
                     </div>
                 </div>
             </div>
