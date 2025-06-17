@@ -243,7 +243,7 @@
                                     <span class="icon-box">
                                         <img src="/assets/default/svgs/search.svg" alt="search">
                                     </span>
-                                                        <input type="text" placeholder="Search Students">
+                                                        <input type="text" class="search-students" placeholder="Search Students">
                                                     </div>
                                                 </div>
                                                 <div class="card-header">
@@ -255,8 +255,8 @@
                                                                     Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                                                 </a>
                                                                 <div class="dropdown-menu">
-                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                                    <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                                    <a data-class_id="{{$class->id}}" class="dropdown-item unlink-students" href="javascript:;" data-type_class="sections-users"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
                                                                     <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
                                                                 </div>
                                                             </div>
@@ -269,8 +269,8 @@
                                                                     Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                                                 </a>
                                                                 <div class="dropdown-menu">
-                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                                    <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                                    <a data-class_id="{{$class->id}}" class="dropdown-item unlink-students" href="javascript:;"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
                                                                     <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
                                                                 </div>
                                                             </div>
@@ -288,14 +288,14 @@
                                                             <th class="skelton-hide1 skelton-height-lg skelton-mb-0">School</th>
                                                         </tr>
                                                         </thead>
-                                                        <tbody>
+                                                        <tbody class="students-list">
 
                                                         @if($class->students->where('status','active')->count() > 0)
                                                             @foreach($class->students->where('status','active') as $studentObj)
                                                                 <tr>
                                                                     <td data-th="Teacher/Admin" class="skelton-hide1 skelton-height-lg skelton-mb-0">
                                                                         <div class="check-box">
-                                                                            <input type="checkbox" name="check-three">
+                                                                            <input type="checkbox" class="sections-users" value="{{ $studentObj->id }}">
                                                                         </div>
                                                                         <strong>
                                                     <span class="user-lable">
@@ -671,6 +671,23 @@
             </div>
         </div>
     </section>
+
+    <div class="modal fade rurera-confirm-modal" id="rurera-confirm-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-box">
+                        <h3 class="font-24 font-weight-normal mb-10 confirm-title"></h3>
+                        <p class="mb-15 font-16 confirm-detail"></p>
+                        <div class="inactivity-controls">
+                            <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">No</a>
+                            <a href="javascript:;" class="confirm-approve-btn">Yes to Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @push('scripts_bottom')
@@ -711,6 +728,41 @@
                     }
                 });
 
+            });
+
+            $('body').on('click', '.print-users-logins', function (e) {
+                var type_class = $(this).attr('data-type_class');
+                var student_ids = [];
+                $('input.' + type_class + ':checked').each(function() {
+                    student_ids.push($(this).val());
+                });
+                var url = '/admin/students/print_details?users='+student_ids;
+                window.open(url, '_blank');
+
+            });
+
+            $('body').on('click', '.unlink-students', function (e) {
+                var type_class = $(this).attr('data-type_class');
+                var class_id = $(this).attr('data-class_id');
+                var student_ids = [];
+                $('input.' + type_class + ':checked').each(function() {
+                    student_ids.push($(this).val());
+                });
+
+                var class_id = $(this).attr('data-class_id');
+                $(".confirm-title").html('Are you sure you want to remove?');
+                $(".confirm-approve-btn").attr('href', '/admin/classes/unlink_students?class_id='+class_id+'&student_ids='+student_ids);
+                $(".rurera-confirm-modal").modal('show');
+
+            });
+
+
+            $(document).on('input keyup keydown paste', '.search-students', function () {
+                var value = $(this).val().toLowerCase();
+                $('tbody.students-list tr').each(function () {
+                    var rowText = $(this).text().toLowerCase();
+                    $(this).toggle(rowText.includes(value));
+                });
             });
         });
         function render_rurera_tabs(){
