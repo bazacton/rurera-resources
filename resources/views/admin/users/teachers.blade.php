@@ -110,28 +110,13 @@
                 <div class="col-12 col-md-12">
                     <ul class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
                         <li class="nav-item skelton-hide skelton-height-lg">
-                            <a class="nav-link active" id="topics-tab" href="/admin/assignments">
-                                <span class="tab-title">All assignments</span>
+                            <a class="nav-link active" id="topics-tab" href="#">
+                                <span class="tab-title">Teachers / Admins</span>
                             </a>
                         </li>
                         <li class="nav-item skelton-hide skelton-height-lg">
-                            <a class="nav-link" id="topics-tab" href="/admin/assignments/scheduled" >
-                                <span class="tab-title">Scheduled</span>
-                            </a>
-                        </li>
-                        <li class="nav-item skelton-hide skelton-height-lg">
-                            <a class="nav-link" id="topics-tab" href="/admin/assignments/running" >
-                                <span class="tab-title">Running</span>
-                            </a>
-                        </li>
-                        <li class="nav-item skelton-hide skelton-height-lg">
-                            <a class="nav-link" id="topics-tab" href="/admin/assignments/completed" >
-                                <span class="tab-title">Completed</span>
-                            </a>
-                        </li>
-                        <li class="nav-item skelton-hide skelton-height-lg">
-                            <a class="nav-link" id="topics-tab" href="/admin/assignments/paused" >
-                                <span class="tab-title">Paused</span>
+                            <a class="nav-link" id="topics-tab" href="#" >
+                                <span class="tab-title">Pending invites</span>
                             </a>
                         </li>
                     </ul>
