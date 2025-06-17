@@ -4113,6 +4113,23 @@ Qustions AI Tabs Style End
     height: 15px;
     width: 15px;
 }
+.pending-invites-controls button {
+    background-color: inherit;
+    border: 1px solid #007bff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    height: 30px;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--blue);
+}
+.pending-invites-controls img {
+    height: 15px;
+    width: 15px;
+    filter: invert(37%) sepia(84%) saturate(4462%) hue-rotate(200deg) brightness(103%) contrast(106%);
+}
 
 /* Teacher Search Style End */
 
