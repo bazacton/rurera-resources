@@ -4054,6 +4054,10 @@ Qustions AI Tabs Style End
     border-radius: 5px;
     text-decoration: none;
 }
+.teacher-table .dropdown-box .dropdown-toggle img {
+    filter: invert(41%) sepia(0%) saturate(1908%) hue-rotate(176deg) brightness(96%) contrast(88%);
+}
+
 /* Teacher Search Style End */
 
 /*************************************
