@@ -208,6 +208,9 @@
                 </div>
                 <div class="col-12">
                     <div class="teacher-table">
+                        <div class="element-heading">
+                            <h2 class="font-22">Pending Invites</h2>
+                        </div>
                         <div class="card">
                             <div class="card-header">
                                 <div class="bulk-actions">
