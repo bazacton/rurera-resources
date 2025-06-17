@@ -460,7 +460,7 @@
                     <p class="mb-30">Leaving now means losing your complimentary access . Are you sure you want to continue?</p>
                     <div class="leave-option-control d-flex align-items-center justify-content-center">
                         <button type="button" data-toggle="modal" data-target="#subscriptionModal" data-dismiss="modal">Leave Anyway</button>
-                        <button type="button" class="stay-btn" data-target="#leave-option-modal">Keep My Free Access</button>
+                        <button type="button" class="stay-btn" data-target="#leave-option-modal" data-toggle="modal" data-dismiss="modal">Keep My Free Access</button>
                     </div>
                 </div>
             </div>
