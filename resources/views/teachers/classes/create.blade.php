@@ -148,7 +148,7 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h1>{{!empty($class) ?trans('/admin/main.edit'): trans('admin/main.new') }} {{$class->title}}</h1>
+            <h1>{{$class->title}}</h1>
             <a href="javascript:;" class="edit-class-btn" data-class_id="{{$class->id}}"><i class="fa fa-cog"></i></a>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="{{ getAdminPanelUrl() }}">{{ trans('admin/main.dashboard')
