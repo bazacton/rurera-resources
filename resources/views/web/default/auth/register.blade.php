@@ -50,7 +50,7 @@
                             <label class="input-label" for="full_name">{{ trans('auth.full_name') }}:</label>
                             <div class="form-field">
                                 <span class="icon-box"></span>
-                                <input name="full_name" type="text" value="{{ old('full_name') }}" class="form-control @error('full_name') is-invalid @enderror">
+                                <input name="full_name" type="text" value="{{ old('full_name') }}" class="form-control @error('full_name') is-invalid @enderror" autocomplete="off">
                             </div>
                             @error('full_name')
                             <div class="invalid-feedback">
