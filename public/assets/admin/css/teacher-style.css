@@ -34,6 +34,7 @@
 .admin_teacher_role .classes-card .dropdown-item i {margin-right: 5px;}
 .admin_teacher_role .classes-card .card-title,
 .admin_teacher_role .classes-card .card-body p {margin-bottom: 0;}
+.admin_teacher_role .classes-card .card-title a {color: #fff; margin: 0 0 5px; display: block;}
 .admin_teacher_role .classes-card .grade-text {font-weight: bold;}
 .admin_teacher_role .classes-card .card-students {line-height: normal; font-weight: bold;}
 .admin_teacher_role .classes-card .progress {margin-top: 10px; border-radius: 30px;}
