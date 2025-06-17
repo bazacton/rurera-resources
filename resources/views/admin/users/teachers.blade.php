@@ -186,14 +186,19 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td data-th="Type" class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                K, Kaiser
-                                                <span class="user-email">kaizer.can@gmail.com</span>
+                                            <td data-th="Teacher/Admin" class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                <strong>
+                                                    <span class="user-lable">
+                                                        K, Kaiser
+                                                        <span class="user-email">kaizer.can@gmail.com</span>
+                                                    </span> 
+                                                    <em>You</em>
+                                                </strong>
                                             </td>
-                                            <td data-th="Questions" class="skelton-hide skelton-height-lg skelton-mb-0">School Admin</td>
-                                            <td data-th="Participations" class="skelton-hide skelton-height-lg skelton-mb-0">20 minutes ago</td>
-                                            <td data-th="Start & End Date" class="skelton-hide skelton-height-lg skelton-mb-0">3</td>
-                                            <td data-th="Actions" class="skelton-hide skelton-height-lg skelton-mb-0">Khan School</td>
+                                            <td data-th="Role" class="skelton-hide skelton-height-lg skelton-mb-0">School Admin</td>
+                                            <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">20 minutes ago</td>
+                                            <td data-th="Classes" class="skelton-hide skelton-height-lg skelton-mb-0">3</td>
+                                            <td data-th="School" class="skelton-hide skelton-height-lg skelton-mb-0">Khan School</td>
                                         </tr>
                                     </tbody>
                                 </table>
