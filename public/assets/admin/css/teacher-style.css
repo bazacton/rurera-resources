@@ -4067,6 +4067,13 @@ Qustions AI Tabs Style End
 .teacher-table .invite-faculty .dropdown-box .dropdown-toggle img {
     filter: invert(99%) sepia(12%) saturate(35%) hue-rotate(289deg) brightness(113%) contrast(95%);
 }
+.teacher-table .user-email {
+    display: block;
+    font-size: 14px;
+}
+.teacher-table table td {
+    color: var(--blue);
+}
 
 /* Teacher Search Style End */
 
