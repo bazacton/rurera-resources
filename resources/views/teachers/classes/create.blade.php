@@ -225,7 +225,99 @@
                                     Reports
                                 </div>
                                 <div class="admin-rurera-tabs-page-edit students-tab-page-edit">
-                                    students
+                                    <div class="col-12">
+                                        <div class="teacher-table">
+                                            <div class="card">
+                                                <div class="teacher-search-filter">
+                                                    <div class="sorting-filters">
+                                    <span class="icon-box">
+                                        <img src="/assets/default/svgs/filters.svg" alt="filters">
+                                    </span>
+                                                        <select>
+                                                            <option value="Filter">Filter</option>
+                                                            <option value="Filter 2">Filter 2</option>
+                                                            <option value="Filter 3">Filter 3</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="search-field">
+                                    <span class="icon-box">
+                                        <img src="/assets/default/svgs/search.svg" alt="search">
+                                    </span>
+                                                        <input type="text" placeholder="Search Students">
+                                                    </div>
+                                                </div>
+                                                <div class="card-header">
+                                                    <div class="bulk-actions">
+                                                        <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
+                                                        <div class="dropdown-box">
+                                                            <div class="dropdown">
+                                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                                    Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                                                                </a>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="invite-faculty">
+                                                        <div class="dropdown-box">
+                                                            <div class="dropdown">
+                                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                                    Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                                                                </a>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-0 table-sm">
+                                                    <table class="table mb-0">
+                                                        <thead class="thead-light">
+                                                        <tr>
+                                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Student</th>
+                                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Role</th>
+                                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Last Login</th>
+                                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Classes</th>
+                                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">School</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                        @if($class->students->where('status','active')->count() > 0)
+                                                            @foreach($class->students->where('status','active') as $studentObj)
+                                                                <tr>
+                                                                    <td data-th="Teacher/Admin" class="skelton-hide1 skelton-height-lg skelton-mb-0">
+                                                                        <div class="check-box">
+                                                                            <input type="checkbox" name="check-three">
+                                                                        </div>
+                                                                        <strong>
+                                                    <span class="user-lable">
+                                                        {{ $studentObj->get_full_name() }}
+                                                        <span class="user-email">{{ $studentObj->email }}</span>
+                                                    </span>
+                                                                        </strong>
+                                                                    </td>
+                                                                    <td data-th="Role" class="skelton-hide1 skelton-height-lg skelton-mb-0">Student</td>
+                                                                    <td data-th="Last Login" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{($studentObj->last_login > 0)? dateTimeFormat($studentObj->last_login, 'j M y | H:i') : '-'}}</td>
+                                                                    <td data-th="Classes" class="skelton-hide1 skelton-height-lg skelton-mb-0">3</td>
+                                                                    <td data-th="School" class="skelton-hide1 skelton-height-lg skelton-mb-0">Khan School</td>
+                                                                </tr>
+                                                            @endforeach
+                                                        @endif
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="admin-rurera-tabs-page-edit curriculum-tab-page-edit">
