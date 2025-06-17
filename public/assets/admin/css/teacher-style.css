@@ -4024,54 +4024,18 @@ Qustions AI Tabs Style End
     align-items: center;
     gap: 10px;
 }
-
-.bulk-actions .icon-box img {
-    background-color: var(--blue);
-    max-width: 100%;
-    max-height: 100%;
-    filter: invert(100%) sepia(23%) saturate(290%) hue-rotate(203deg) brightness(112%) contrast(100%);
-}
-
-.bulk-actions .icon-box {
-    padding: 2px;
-    height: 20px;
-    width: 20px;
-    background-color: rgba(0, 0, 0, 0.1);
-    text-align: center;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
-}
-
-.bulk-actions select {
-    background-color: inherit;
-    color: #666;
-    border: 0;
+.bulk-actions .dropdown-box {
     padding: 0;
-    height: 30px;
 }
-
-.bulk-actions .select-holder {
+.teacher-table .dropdown-box .dropdown-toggle {
+    width: auto;
+    height: auto;
     background-color: #ddd;
     color: #666;
     border: 1px solid #ccc;
-    padding: 1px 5px;
+    padding: 0 10px;
     border-radius: 5px;
-}
-.invite-faculty .select-holder {
-    background-color: var(--blue);
-    border-radius: 5px;
-    overflow: hidden;
-    padding: 0 8px 0 5px;
-}
-
-.invite-faculty .select-holder select {
-    border: 0;
-    background-color: inherit;
-    height: 30px;
-    color: #fff;
-    padding: 0 5px;
+    text-decoration: none;
 }
 /* Teacher Search Style End */
 
