@@ -63,9 +63,14 @@
 
                         <div class="form-group">
                             <label class="input-label" for="password">{{ trans('auth.password') }}:</label>
-                            <input name="password" type="password"
+                            <div class="form-field">
+                                <span class="icon-box">
+                                    <img src="/assets/default/img/key-lock.jpg" alt="hand">
+                                </span>
+                                <input name="password" type="password"
                                    class="form-control @error('password') is-invalid @enderror" id="password"
-                                   aria-describedby="passwordHelp">
+                                   aria-describedby="passwordHelp" autocomplete="off" placeholder="Make a strong password">
+                            </div>
                             @error('password')
                             <div class="invalid-feedback">
                                 {{ $message }}
