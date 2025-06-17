@@ -4079,6 +4079,7 @@ Qustions AI Tabs Style End
     display: inline-flex;
     align-items: center;
     gap: 10px;
+    vertical-align: middle;
 }
 .teacher-table table td em {
     font-size: 12px;
