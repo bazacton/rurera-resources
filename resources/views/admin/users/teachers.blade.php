@@ -269,8 +269,8 @@
                                                     </span> 
                                                 </strong>
                                             </td>
-                                            <td data-th="Role" class="skelton-hide skelton-height-lg skelton-mb-0">Teacher</td>
-                                            <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">a year ago</td>
+                                            <td data-th="Role" class="skelton-hide skelton-height-lg skelton-mb-0"></td>
+                                            <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0"></td>
                                             <td>
                                                 <div class="pending-invites-controls">
                                                     <button type="button">
