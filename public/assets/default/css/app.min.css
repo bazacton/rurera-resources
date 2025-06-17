@@ -2748,6 +2748,10 @@ Lms FAQS New Elements Style Start
 
 body input[type="text"]:focus::-moz-placeholder {color: transparent;}
 body input[type="text"]:focus::-webkit-input-placeholder {color: transparent;}
+
+body input[type="password"]:focus::-moz-placeholder {color: transparent;}
+body input[type="password"]:focus::-webkit-input-placeholder {color: transparent;}
+
 .lms-call-to-action button {min-width: 200px; height: 55px; max-width: 200px; border: 0; background-color:var(--primary); color: #fff; border-radius: 0 8px 8px 0; font-weight: 500;}
 
 .lms-call-to-action .field-holder {position: relative;}
