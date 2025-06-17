@@ -3950,6 +3950,68 @@ Qustions AI Tabs Style End
     background-color: #f0f8ff;
 }
 
+/* Teacher Search Style Start */
+.teacher-search-filter {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 15px;
+    gap: 10px;
+}
+
+.sorting-filters img {
+    height: 15px;
+    width: 15px;
+}
+
+.sorting-filters {
+    position: relative;
+    padding: 0 5px 0 28px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.sorting-filters .icon-box {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sorting-filters select {
+    border: 0;
+    background-color: inherit;
+    height: 30px;
+}
+
+.search-field {
+    position: relative;
+    padding: 0 0 0 35px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-field .icon-box {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-field input[type="text"] {
+    border: 0;
+    outline: none;
+    width: 100%;
+    height: 30px;
+}
+
+.search-field .icon-box img {
+    height: 20px;
+    width: 20px;
+}
+/* Teacher Search Style End */
+
 /*************************************
 Overview Questions Style Start
 **************************************/
