@@ -95,13 +95,13 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 faq-sidebar">
+                        <div class="col-md-4 faq-sidebar mb-0">
                             <a href="#" class="active">Subscription details</a>
                             <a href="#">Billing and payments</a>
                             <a href="#">Other</a>
                         </div>
 
-                        <div class="col-md-9 faq-content">
+                        <div class="col-md-8 faq-content">
                             <h4>FAQ</h4>
                             <div id="faqAccordion">
                                 <div class="card">
