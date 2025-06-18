@@ -245,7 +245,7 @@
                             <td>#92903</td>
                             <td>18/07/2022</td>
                             <td>Gabriella May</td>
-                            <td><span class="status-paid">Paid</span></td>
+                            <td><span class="status-pending" style="background-color:#F7CB73;">Pending</span></td>
                             <td>
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="payment-logo">
                                 ••••@gmail.com
