@@ -16,7 +16,8 @@
                         <p class="font-19 text-white mb-0 pt-15">Schedule a demo with our team today!</p>
                     </div>
                     <div class="lms-btn-group custom-btn">
-                        <a href="#" class="get-started-btn bg-white text-primary font-14 font-weight-500">Get started<small>for</small>free</a><a href="#" class="demo-btn text-white font-14 font-weight-500 btn-outline">Book a demo</a>
+                        <a href="#" class="get-started-btn bg-white text-primary font-14 font-weight-500">Get started<small>for</small>free</a>
+                        <a href="#contact-form" class="demo-btn text-white font-14 font-weight-500 btn-outline">Book a demo</a>
                     </div>
                 </div>
             </div>
@@ -333,7 +334,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-5 col-md-5">
-                    <div class="lms-jobs-form lms-contact-form mx-auto mb-40 pb-20">
+                    <div class="lms-jobs-form lms-contact-form mx-auto mb-40 pb-20" id="contact-form">
                         <div class="lms-jobs-form-body">
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
