@@ -10,6 +10,15 @@
 				<img src="/store/1/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="150" height="38" itemprop="image" loading="eager">
             </a>
         </div>
+        <div class="sidebar-brand sidebar-brand-sm">
+            <a href="/">
+				
+                @if(!empty($generalSettings['site_name']))
+                    {{ strtoupper(substr($generalSettings['site_name'],0,2)) }}
+                @endif
+                <img src="/assets/default/img/sidebar/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="68" height="67" itemprop="image" loading="eager">
+            </a>
+        </div>
 		@if(auth()->user()->isTeacher() || auth()->user()->isAdminTeacher())
         <div class="create-modal-btn">
             <button type="button" data-toggle="modal" data-target="#templatesleModal"><span class="text-btn">Create</span> <span class="icon-box"><i class="fas fa-plus"></i></span></button>
@@ -20,16 +29,7 @@
             <input class="search-dashboard form-control">
         </div>
         @endif
-        <div class="sidebar-brand sidebar-brand-sm">
-            <a href="/">
-				
-                @if(!empty($generalSettings['site_name']))
-                    {{ strtoupper(substr($generalSettings['site_name'],0,2)) }}
-                @endif
-                <img src="/assets/default/img/sidebar/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="68" height="67" itemprop="image" loading="eager">
-            </a>
-        </div>
-
+        
         @if(auth()->user()->isTeacher())
             <div class="sidebar-brand rurera-hide">
                 <b>Total Points: {{ $authUser->author_points }}</b>
