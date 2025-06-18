@@ -69,18 +69,20 @@
                         <h2 class="mb-1 font-weight-bold">Membership Details</h2>
                         <p class="text-muted">A demo Message regarding the memberships and a welcoming message</p>
 
-                        <div class="row align-items-start">
-                            <div class="card mb-4">
-                                <div class="card-header font-weight-bold justify-content-between">
-                                    <h6 class="mb-0">Membership Information</h6>
-                                    <span class="badge badge-success">Active</span>
-                                </div>
-                                <div class="card-body d-flex justify-content-between align-items-center">
-                                    <span>Your current active plan is "<strong>Gold Membership</strong>"</span>
-                                </div>
-                                <div class="card-footer d-flex justify-content-between align-items-center pt-0">
-                                    <button class="btn btn-danger mb-0">Cancel Membership</button>
-                                    <a href="#" class="btn btn-link p-0">Update Membership Plan</a>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-4">
+                                    <div class="card-header font-weight-bold justify-content-between">
+                                        <h6 class="mb-0">Membership Information</h6>
+                                        <span class="badge badge-success">Active</span>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-between align-items-center">
+                                        <span>Your current active plan is "<strong>Gold Membership</strong>"</span>
+                                    </div>
+                                    <div class="card-footer d-flex justify-content-between align-items-center pt-0">
+                                        <button class="btn btn-danger mb-0">Cancel Membership</button>
+                                        <a href="#" class="btn btn-link p-0">Update Membership Plan</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-8">
