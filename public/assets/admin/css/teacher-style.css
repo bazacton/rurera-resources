@@ -4305,7 +4305,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 }
 .faq-content .card .btn-link {
     background: none;
-    padding: 0;
+    padding: 0 0 0 35px;
     font-size: 18px;
     font-weight: 700;
     margin: 0;
@@ -4313,6 +4313,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     width: 100%;
     text-align: left;
     color: #333;
+    position: relative;
 }
 .faq-content .card .btn-link:before, .faq-content .card .btn-link:after {
     background-color: #2d3d4d;
@@ -4342,7 +4343,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .faq-content .card .card-body {
     background-color: inherit;
     border-top: 0;
-    padding: 10px 0 0;
+    padding: 10px 0 0 35px;
     line-height: 22px;
 }
 .faq-sidebar {
