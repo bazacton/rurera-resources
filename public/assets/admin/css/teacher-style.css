@@ -4390,7 +4390,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .class-join {
     position: relative;
 }
-.class-join-modal .modal-header {
+.teacher-header {
     flex-wrap: wrap;
     position: relative;
     border-bottom: 1px solid #ddd;
@@ -4399,7 +4399,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     background: url(/assets/default/img/modal-head-img.png) no-repeat 95% 1px;
     background-size: contain;
 }
-.class-join-modal .modal-header .close {
+.teacher-header .close {
     position: absolute;
     right: 5px;
     top: 0;
@@ -4411,7 +4411,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .class-join-modal .modal-body {
     padding: 20px 0 0;
 }
-.class-join-modal  .modal-header .modal-title {
+.teacher-header h2 {
     margin: 0;
     font-size: 24px;
 }
