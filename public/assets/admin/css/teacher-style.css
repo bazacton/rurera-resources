@@ -4312,6 +4312,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     border: 0;
     width: 100%;
     text-align: left;
+    color: #333;
 }
 .faq-content .card .card-header .btn:hover,
 .faq-content .card .card-header .btn:focus {
