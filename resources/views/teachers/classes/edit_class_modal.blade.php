@@ -33,7 +33,7 @@
             </a>
         </li>
     </ul>
-    <div class="admin-rurera-tabs-details-edit curriculum-tab-edit">
+    <div class="admin-rurera-tabs-details-edit rurera-hide curriculum-tab-edit">
 
 
     <div class="form-group assignment_topic_type_fields timestables_fields ">
@@ -261,7 +261,7 @@
     </div>
     </div>
 
-    <div class="admin-rurera-tabs-details-edit teachers-tab-edit">
+    <div class="admin-rurera-tabs-details-edit rurera-hide teachers-tab-edit">
         <div class="teacher-listing d-flex align-items-center flex-wrap">
 
             @if($class->teachers->where('status','active')->count() > 0)
@@ -330,7 +330,7 @@
         </div>
     </div>
 
-    <div class="admin-rurera-tabs-details-edit advance-tab-edit">
+    <div class="admin-rurera-tabs-details-edit rurera-hide advance-tab-edit">
 
 
 

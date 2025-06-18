@@ -216,28 +216,19 @@
                                     Dashboard
                                 </div>
 
-                                <div class="admin-rurera-tabs-page-edit assignments-tab-page-edit">
+                                <div class="admin-rurera-tabs-page-edit rurera-hide assignments-tab-page-edit ">
                                     Assignments
                                 </div>
 
-                                <div class="admin-rurera-tabs-page-edit reports-tab-page-edit">
+                                <div class="admin-rurera-tabs-page-edit rurera-hide reports-tab-page-edit">
                                     Reports
                                 </div>
-                                <div class="admin-rurera-tabs-page-edit students-tab-page-edit">
+                                <div class="admin-rurera-tabs-page-edit rurera-hide students-tab-page-edit">
                                     <div class="col-12">
                                         <div class="teacher-table">
                                             <div class="card">
                                                 <div class="teacher-search-filter">
-                                                    <div class="sorting-filters">
-                                    <span class="icon-box">
-                                        <img src="/assets/default/svgs/filters.svg" alt="filters">
-                                    </span>
-                                                        <select>
-                                                            <option value="Filter">Filter</option>
-                                                            <option value="Filter 2">Filter 2</option>
-                                                            <option value="Filter 3">Filter 3</option>
-                                                        </select>
-                                                    </div>
+
                                                     <div class="search-field">
                                     <span class="icon-box">
                                         <img src="/assets/default/svgs/search.svg" alt="search">
@@ -281,9 +272,7 @@
                                                         <thead class="thead-light">
                                                         <tr>
                                                             <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Student</th>
-                                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Role</th>
                                                             <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Last Login</th>
-                                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Classes</th>
                                                             <th class="skelton-hide1 skelton-height-lg skelton-mb-0">School</th>
                                                         </tr>
                                                         </thead>
@@ -303,23 +292,22 @@
                                                     </span>
                                                                         </strong>
                                                                     </td>
-                                                                    <td data-th="Role" class="skelton-hide1 skelton-height-lg skelton-mb-0">Student</td>
                                                                     <td data-th="Last Login" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{($studentObj->last_login > 0)? dateTimeFormat($studentObj->last_login, 'j M y | H:i') : '-'}}</td>
-                                                                    <td data-th="Classes" class="skelton-hide1 skelton-height-lg skelton-mb-0">3</td>
-                                                                    <td data-th="School" class="skelton-hide1 skelton-height-lg skelton-mb-0">Khan School</td>
+                                                                    <td data-th="School" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{$studentObj->userSchool->title}}</td>
                                                                 </tr>
                                                             @endforeach
                                                         @endif
 
                                                         </tbody>
                                                     </table>
+                                                    {{$class->students->where('status','active')->count()}} Students
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="admin-rurera-tabs-page-edit curriculum-tab-page-edit">
+                                <div class="admin-rurera-tabs-page-edit rurera-hide curriculum-tab-page-edit">
 
 
                                     <div class="form-group assignment_topic_type_fields timestables_fields ">
@@ -356,7 +344,7 @@
                                     </div>
 
                                 </div>
-                                <div class="admin-rurera-tabs-page-edit details-tab-page-edit">
+                                <div class="admin-rurera-tabs-page-edit rurera-hide details-tab-page-edit">
 
                                     <!-- Class Name with Color -->
                                     <div class="form-group">
@@ -547,76 +535,102 @@
                                     </div>
                                 </div>
 
-                                <div class="admin-rurera-tabs-page-edit teachers-tab-page-edit">
-                                    <div class="teacher-listing d-flex align-items-center flex-wrap">
+                                <div class="admin-rurera-tabs-page-edit rurera-hide teachers-tab-page-edit">
 
-                                        @if($class->teachers->where('status','active')->count() > 0)
-                                            @foreach($class->teachers->where('status','active') as $teacherObj)
-                                                <div class="listing-grid-card">
-                                                    <div class="img-holder">
-                                                        <figure>
-                                                            <img src="{{ $teacherObj->user->getAvatar() }}" alt="{{ $teacherObj->user->get_full_name() }}">
-                                                        </figure>
-                                                    </div>
-                                                    <div class="text-holder">
-                                                        <div class="author-info">
-                            <span class="img-box ">
-                                <img src="{{ $teacherObj->user->getAvatar() }}" alt="{{ $teacherObj->user->get_full_name() }}">
-                                <span class="country-flag">
-                                    <img src="{{ $teacherObj->user->getAvatar() }}" alt="{{ $teacherObj->user->get_full_name() }}">
+                                    <div class="col-12">
+                                        <div class="teacher-table">
+                                            <div class="card">
+                                                <div class="teacher-search-filter">
+
+                                                    <div class="search-field">
+                                    <span class="icon-box">
+                                        <img src="/assets/default/svgs/search.svg" alt="search">
                                     </span>
-                            </span>
-                                                            <div class="card-title-holder">
-                                                                <h5 class="">{{ $teacherObj->user->get_full_name() }}</h5>
-                                                            </div>
-                                                            <div class="author-contact-info">
-                                                                <a href="#" class=""><i class="fas fa-envelope"></i> {{ $teacherObj->user->email }}</a>
-                                                                @if($teacherObj->user->mobile != '')
-                                                                    <span class="phone-number-box">
-                                    <i class="fas fa-phone"></i>
-                                    <span class="phone-number" onclick="togglePhoneNumber(this)" data-full-number="987-654-3210">
-                                        {{ $teacherObj->user->mobile }}
-                                    </span>
-                                </span>
-                                                                @endif
-                                                            </div>
-                                                            <div class="author-designation">
-                                                                @if($teacherObj->user->getTeacherClasses->count() > 0)
-                                                                    @foreach($teacherObj->user->getTeacherClasses as $classTeacherObj)
-                                                                        @php
-                                                                            $teacherClass = $classTeacherObj->teacherClass;
-                                                                        @endphp
-                                                                        <span class="designation-lable">{{isset($teacherClass->category->title)? $teacherClass->category->title : ''}}</span>
-                                                                    @endforeach
-                                                                @endif
-                                                            </div>
-                                                        </div>
-                                                        <div class="teacher-list-controls">
-                                                            <button type="button" class="edit-btn  skelton-height-lg skelton-mb-0 unlink-class-teacher" data-id="{{$teacherObj->id}}">Unlink Teacher</button>
-                                                        </div>
-
-                                                        <script>
-                                                            function togglePhoneNumber(element) {
-                                                                const fullNumber = element.getAttribute('data-full-number');
-                                                                const isHidden = element.textContent.includes('XXX');
-
-                                                                if (isHidden) {
-                                                                    element.textContent = fullNumber;
-                                                                } else {
-                                                                    const hiddenNumber = `${fullNumber.slice(0, 3)}-XXX-XXXX`;
-                                                                    element.textContent = hiddenNumber;
-                                                                }
-                                                            }
-                                                        </script>
+                                                        <input type="text" class="search-teachers" placeholder="Search Teachers">
                                                     </div>
                                                 </div>
-                                            @endforeach
-                                        @endif
+                                                <div class="card-header">
+                                                    <div class="bulk-actions">
+                                                        <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
+                                                        <div class="dropdown-box">
+                                                            <div class="dropdown">
+                                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                                    Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                                                                </a>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                                    <a data-class_id="{{$class->id}}" class="dropdown-item unlink-students" href="javascript:;" data-type_class="sections-users"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="invite-faculty">
+                                                        <div class="dropdown-box">
+                                                            <div class="dropdown">
+                                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                                    Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                                                                </a>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                                    <a data-class_id="{{$class->id}}" class="dropdown-item unlink-students" href="javascript:;"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-0 table-sm">
+                                                    <table class="table mb-0">
+                                                        <thead class="thead-light">
+                                                        <tr>
+                                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Teacher</th>
+                                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Role</th>
+                                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Last Login</th>
+                                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Classes</th>
+                                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">School</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody class="teachers-list">
 
+                                                        @if($class->teachers->where('status','active')->count() > 0)
+                                                            @foreach($class->teachers->where('status','active') as $teacherObj)
+                                                                <tr>
+                                                                    <td data-th="Teacher/Admin" class="skelton-hide1 skelton-height-lg skelton-mb-0">
+                                                                        <div class="check-box">
+                                                                            <input type="checkbox" class="sections-users" value="{{ $teacherObj->user->id }}">
+                                                                        </div>
+                                                                        <strong>
+                                                    <span class="user-lable">
+                                                        {{ $teacherObj->user->get_full_name() }}
+                                                        <span class="user-email">{{ $teacherObj->user->email }}</span>
+                                                    </span>
+                                                                        </strong>
+                                                                    </td>
+                                                                    <td data-th="Role" class="skelton-hide1 skelton-height-lg skelton-mb-0">Teacher</td>
+                                                                    <td data-th="Last Login" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{($teacherObj->user->last_login > 0)? dateTimeFormat($teacherObj->user->last_login, 'j M y | H:i') : '-'}}</td>
+                                                                    <td data-th="Classes" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{$teacherObj->user->getTeacherClasses->count()}}</td>
+                                                                    <td data-th="School" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{isset($teacherObj->user->userSchool->id)? $teacherObj->user->userSchool->title : '-'}}</td>
+
+                                                                </tr>
+                                                            @endforeach
+                                                        @endif
+
+
+
+                                                        </tbody>
+                                                    </table>
+                                                    {{$class->teachers->where('status','active')->count()}} Teachers
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+
+
+
                                 </div>
 
-                                <div class="admin-rurera-tabs-page-edit advance-tab-page-edit">
+                                <div class="admin-rurera-tabs-page-edit rurera-hide advance-tab-page-edit">
 
 
 
@@ -658,10 +672,6 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="modal-footer px-0 pb-0">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                    <button type="submit" class="btn btn-primary">Update class</button>
                                 </div>
                             </form>
                         </div>
@@ -712,6 +722,7 @@
 
             $(document).on('click', '.edit-class-btn', function (e) {
                 //rurera_loader($("#userSettingForm"), 'div');
+                rurera_loader($(this), 'page');
                 var class_id = $(this).attr('data-class_id');
                 jQuery.ajax({
                     type: "GET",
@@ -724,6 +735,7 @@
                         $(".class-edit-content").html(return_data);
                         $("#class-edit-modal").modal('show');
                         console.log(return_data);
+                        rurera_remove_loader($(this), 'page');
                     }
                 });
 
@@ -763,6 +775,14 @@
                     $(this).toggle(rowText.includes(value));
                 });
             });
+            $(document).on('input keyup keydown paste', '.search-teachers', function () {
+                var value = $(this).val().toLowerCase();
+                $('tbody.teachers-list tr').each(function () {
+                    var rowText = $(this).text().toLowerCase();
+                    $(this).toggle(rowText.includes(value));
+                });
+            });
+
         });
         function render_rurera_tabs(){
             if($(".admin-rurera-tabs li a.active").length > 0){
