@@ -64,7 +64,7 @@
                                 <span class="icon-box">
                                     <img src="/assets/default/img/envelope.jpg" alt="envelope">
                                 </span>
-                                <input type="text" autocomplete="off" name="email" class="rurera-req-field rurera-email-field" placeholder="Where can we reach you? (e.g., you@domain.com)"/>
+                                <input type="text" autocomplete="off" name="email" class="rurera-req-field rurera-email-field" placeholder="Where can we reach you? (e.g., you@gmail.com)"/>
                             </div>
                         </div>
                     </div>
