@@ -78,7 +78,7 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="card mb-4">
+                                <div class="card mb-4 pb-30">
                                     <div class="card-header font-weight-bold">
                                         <h6 class="mb-0">Payment Information</h6>
                                     </div>
