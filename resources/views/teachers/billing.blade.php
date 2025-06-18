@@ -16,6 +16,7 @@
             font-size: 0.875rem;
         }
         .status-pending {
+            background-color: #f8e6e6;
             color: #555;
         }
         .icon-eye {
@@ -248,7 +249,7 @@
                             <td>#92903</td>
                             <td>18/07/2022</td>
                             <td>Gabriella May</td>
-                            <td><span class="status-pending" style="background-color:#F7CB73;">Pending</span></td>
+                            <td><span class="status-pending">Pending</span></td>
                             <td>
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="payment-logo">
                                 ••••@gmail.com
