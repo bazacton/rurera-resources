@@ -404,7 +404,7 @@
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                     <div class="form-group d-flex flex-column">
                                         <label class="input-label w-100 p-0">Phone number *</label>
-                                        <div class="input-field w-100"><input type="text" placeholder="Where can we call you (e.g., +1 555..)" /></div>
+                                        <div class="input-field w-100"><input type="text" placeholder="Where can we call you (e.g., +1 555..)" autocomplete="off" /></div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
