@@ -73,7 +73,7 @@
             </div>
         </div>
     </section>
-    <section class="custom-form-section py-70" style="background-color: #edeafd;">
+    <!-- <section class="custom-form-section py-70" style="background-color: #edeafd;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 col-md-6">
@@ -160,7 +160,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="team-section">
         <div class="container">
             <div class="row">
