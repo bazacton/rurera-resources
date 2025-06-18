@@ -519,15 +519,15 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-body">
-                    <div class="row align-items-center">
-                        <div class="col-md-5">
+                    <div class="row align-items-center mt-auto mb-30 pt-50 px-30">
+                        <div class="col-md-4">
                             <div class="img-holder">
                                 <figure>
                                     <img src="/assets/default/img/sucsess-img.png" alt="sucsess-img">
                                 </figure>
                             </div>
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-8">
                             <div class="text-holder">
                                 <h2>You’ve successfully added <strong>4 new students</strong></h2>
                                 <p>
