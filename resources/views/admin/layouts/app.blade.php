@@ -26,7 +26,7 @@
     @endif
     <link rel="stylesheet" href="/assets/admin/vendor/daterangepicker/daterangepicker.min.css">
     <link rel="stylesheet" href="/assets/default/vendors/select2/select2.min.css">
-	
+
 	@if(auth()->user()->isAdminTeacher())
 		<link rel="stylesheet" href="/assets/admin/css/teacher-style.css?ver={{$rand_no}}">
 	@endif
@@ -40,7 +40,9 @@
         {!! getThemeColorsSettings(true) !!}
     </style>
 </head>
-@php $user_role = isset( auth()->user()->role_name )? auth()->user()->role_name : ''; @endphp
+@php $user_role = isset( auth()->user()->role_name )? auth()->user()->role_name : '';
+ $user_role = ($user_role == 'teachers')? 'admin_teacher' : $user_role;
+ @endphp
 <body class="@if($isRtl) rtl @endif {{$user_role}}_role">
     <div id="app">
         <div class="main-wrapper">
@@ -63,7 +65,7 @@
                     </div>
                 @endif
             @endif
-            
+
             <div class="main-content">
 
                 @yield('content')
@@ -311,6 +313,22 @@
                 icon: '{{ session()->get('toast')['status'] }}'
             });
             @endif
+            @if(session()->has('toasts'))
+            @foreach(session('toasts') as $toast)
+            $.toast({
+                heading: '{{ $toast['title'] ?? '' }}',
+                text: '{{ $toast['msg'] ?? '' }}',
+                bgColor: @if($toast['status'] == 'success') '#43d477'
+                @elseif($toast['status'] == 'warning') '#f0ad4e'
+                @elseif($toast['status'] == 'error') '#f63c3c'
+                @else '#5bc0de' @endif,
+                textColor: 'white',
+                hideAfter: 10000,
+                position: 'bottom-right',
+                icon: '{{ $toast['status'] }}'
+            });
+            @endforeach
+            @endif
         })(jQuery);
     </script>
 
@@ -345,17 +363,17 @@
         /*Quiz Data Slide Function Start*/
         $(document).ready(function () {
             $(".page-controls button.setting-btn, .slide-controls .close-btn").click(function (e) {
-                e.stopPropagation(); 
+                e.stopPropagation();
                 $(".quiz-data-slide").toggleClass("active");
             });
 
             $(".quiz-data-slide").click(function (e) {
                 const $element = $(this);
                 const offset = $element.offset();
-                const pseudoAreaWidth = 20; 
+                const pseudoAreaWidth = 20;
                 if (
-                    e.pageX < offset.left + pseudoAreaWidth || 
-                    e.pageY < offset.top + pseudoAreaWidth 
+                    e.pageX < offset.left + pseudoAreaWidth ||
+                    e.pageY < offset.top + pseudoAreaWidth
                 ) {
                     $element.removeClass("active");
                 }

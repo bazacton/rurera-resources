@@ -643,12 +643,15 @@
                     </a>
                 </li>
 
-                    <li class="nav-item {{ (request()->is('admin/schools')) ? 'active' : '' }}">
-                        <a href="{{ getAdminPanelUrl('/schools') }}" class="nav-link">
-                            <i class="fas fa-chalkboard-teacher"></i>
-                            <span>Schools</span>
-                        </a>
-                    </li>
+                    @if(auth()->user()->isDistrictTeacher())
+
+                        <li class="nav-item {{ (request()->is('admin/schools')) ? 'active' : '' }}">
+                            <a href="{{ getAdminPanelUrl('/schools') }}" class="nav-link">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Schools</span>
+                            </a>
+                        </li>
+                    @endif
 
                     <li class="nav-item {{ (request()->is('admin/students')) ? 'active' : '' }}">
                         <a href="{{ getAdminPanelUrl('/students') }}" class="nav-link">
@@ -1860,13 +1863,13 @@
 
 
             @if(auth()->user()->isTeacher())
-                            <li class="nav-item {{ (request()->is('admin/author_permissions/authors')) ? 'active' : '' }}">
-                                <a href="{{ getAdminPanelUrl('/author_points') }}/{{$authUser->id}}" class="nav-link">
-                                    <i class="fas fa-pen"></i>
-                                    <span>Points Breakdown</span>
-                                </a>
-                            </li>
-                        @endif
+                <li class="nav-item {{ (request()->is('admin/author_permissions/authors')) ? 'active' : '' }}">
+                    <a href="{{ getAdminPanelUrl('/author_points') }}/{{$authUser->id}}" class="nav-link">
+                        <i class="fas fa-pen"></i>
+                        <span>Points Breakdown</span>
+                    </a>
+                </li>
+            @endif
             <li>
                 <a class="nav-link" href="{{ getAdminPanelUrl() }}/logout">
                     <i class="fas fa-sign-out-alt"></i>
