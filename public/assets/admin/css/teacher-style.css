@@ -4283,12 +4283,15 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     color: #999;
 }
 .faq-content .card {
-    margin: 0 0 5px;
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 0 1px rgba(0, 0, 0, 0.08);
+    margin: 0 0 20px;
+    padding-bottom: 20px;
+    background-color: inherit;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 2px solid #ddd;
 }
 .faq-content .card .card-header {
+    background-color: inherit;
     min-height: auto;
     padding: 0;
     border: 0;
@@ -4297,7 +4300,8 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     width: 100%;
 }
 .faq-content .card .btn-link {
-    padding: 15px 25px;
+    background: none;
+    padding: 0;
     font-size: 18px;
     font-weight: 700;
     margin: 0;
@@ -4312,9 +4316,10 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     text-decoration: none;
 }
 .faq-content .card .card-body {
-    background-color: #fff;
+    background-color: inherit;
     border-top: 0;
-    padding-top: 0;
+    padding: 10px 0 0;
+    line-height: 22px;
 }
 .faq-sidebar {
     display: flex;
