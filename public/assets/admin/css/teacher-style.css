@@ -4285,6 +4285,11 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .faq-content .card .card-header {
     min-height: auto;
 }
+.faq-content .card .card-header .btn:hover {
+    background-color: inherit;
+    border-radius: 0;
+    text-decoration: none;
+}
 
 /*************************************
 Overview Questions Style Start
