@@ -29,7 +29,7 @@
             vertical-align: middle;
         }
         .payment-logo {
-            width: 30px;
+            width: 50px;
             margin-right: 8px;
         }
     </style>
