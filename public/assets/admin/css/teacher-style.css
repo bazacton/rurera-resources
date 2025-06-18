@@ -4354,6 +4354,9 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     align-items: center;
     flex-direction: column;
 }
+.faq-content .tab-content > .tab-pane {
+    padding-top: 0;
+}
 .faq-sidebar .nav-tabs {
     border: 0;
 }
