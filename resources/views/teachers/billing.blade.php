@@ -91,13 +91,15 @@
                                         <h6 class="mb-0">Payment Information</h6>
                                     </div>
                                     <div class="card-body pt-0">
-                                        <p><strong>Plan Name:</strong> Gold (Yearly)</p>
-                                        <p><strong>Plan Price:</strong> $ 35,000.00</p>
-                                        <p><strong>Start Date:</strong> 2024-06-10</p>
-                                        <p><strong>End Date:</strong> 2025-06-10</p>
-                                        <p><strong>Date of Next Payment:</strong> 2025-06-10 00:00:00</p>
-                                        <p><strong>Auto Renewal:</strong> No</p>
-                                        <p><strong>Trial Period:</strong> N.A.</p>
+                                        <div class="payment-list">
+                                            <p><strong>Plan Name:</strong> Gold (Yearly)</p>
+                                            <p><strong>Plan Price:</strong> $ 35,000.00</p>
+                                            <p><strong>Start Date:</strong> 2024-06-10</p>
+                                            <p><strong>End Date:</strong> 2025-06-10</p>
+                                            <p><strong>Date of Next Payment:</strong> 2025-06-10 00:00:00</p>
+                                            <p><strong>Auto Renewal:</strong> No</p>
+                                            <p><strong>Trial Period:</strong> N.A.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
