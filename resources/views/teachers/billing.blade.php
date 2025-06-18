@@ -228,14 +228,28 @@
                                             <div class="card">
                                                 <div class="card-header" id="heading2">
                                                     <h2 class="mb-0">
-                                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2">
+                                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2">
                                                             Can I view my payment history or invoices?
                                                         </button>
                                                     </h2>
                                                 </div>
-                                                <div id="collapse2" class="collapse show" data-parent="#faqAccordion">
+                                                <div id="collapse2" class="collapse" data-parent="#faqAccordion">
                                                     <div class="card-body">
                                                         Yes, you can access your billing history and download invoices through your account’s billing section.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="heading3">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3">
+                                                            How do I update my payment method?
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                                <div id="collapse3" class="collapse" data-parent="#faqAccordion">
+                                                    <div class="card-body">
+                                                        To update your payment details, go to your account settings and select the billing section to manage your payment methods.
                                                     </div>
                                                 </div>
                                             </div>
