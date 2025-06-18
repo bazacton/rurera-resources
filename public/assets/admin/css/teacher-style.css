@@ -4526,6 +4526,81 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     text-align: left !important;
 }
 
+/* Student-Successfull-Modal Style Start */
+.student-successfull-modal .modal-dialog {
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 25px;
+}
+.student-successfull-modal .modal-content, .student-successfull-modal.show .modal-content {
+    box-shadow: none;
+}
+.student-successfull-modal .close {
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    padding: 0;
+}
+.student-successfull-modal .modal-body {
+    padding: 0;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.teacher-buttons {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.student-successfull-modal h2 strong {
+    display: block;
+}
+.student-successfull-modal h2 {
+    font-weight: 400;
+    color: #666;
+}
+.student-successfull-modal p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.student-successfull-modal p a {
+    color: var(--blue);
+    text-decoration: underline;
+}
+.teacher-buttons .btn-outline {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #666;
+    font-size: 16px;
+    padding: 9px 20px;
+    line-height: normal;
+}
+.teacher-buttons .btn-primary {
+    background: linear-gradient(to bottom, #6bb9f0, #4a90e2);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+    line-height: normal;
+}
+.student-successfull-modal .teacher-buttons .btn-outline:hover {
+    border: 1px solid #ccc !important;
+}
+/* Student-Successfull-Modal Style End */
+
 /*************************************
 Overview Questions Style Start
 **************************************/
