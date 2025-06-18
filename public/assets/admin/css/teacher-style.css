@@ -4252,6 +4252,10 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 }
 
 /* Teacher Search Style End */
+
+.admin-rurera-tabs-billing .card .card-header {
+    min-height: auto;
+}
 .admin-rurera-tabs-billing .card .card-body p {
     align-items: center;
     justify-content: space-between;
