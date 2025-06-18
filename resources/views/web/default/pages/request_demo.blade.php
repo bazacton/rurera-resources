@@ -391,7 +391,7 @@
                                         <label class="input-label w-100 p-0">Job title *</label>
                                         <div class="input-field w-100">
                                             <span class="icon-box">
-                                                <img src="/assets/default/img/hand.jpg" alt="hand">
+                                                <img src="/assets/default/img/job.jpg" alt="job">
                                             </span>
                                             <input type="text" placeholder="What's your role at work?" autocomplete="off" />
                                         </div>
