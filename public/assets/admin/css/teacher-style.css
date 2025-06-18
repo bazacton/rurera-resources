@@ -4256,6 +4256,12 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .admin-rurera-tabs-billing .card .card-header {
     min-height: auto;
 }
+.payment-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 15px;
+    box-sizing: border-box;
+}
 .admin-rurera-tabs-billing .card .card-body p {
     align-items: center;
     justify-content: space-between;
@@ -4263,10 +4269,10 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     padding: 12px 0;
     font-weight: 700;
     color: #333;
-    width: 47%;
+    width: 48%;
     display: inline-flex;
     box-sizing: border-box;
-    margin: 0 10px;
+    margin: 0;
 }
 .admin-rurera-tabs-billing .card .card-body p:last-child {
     border-bottom: 0;
