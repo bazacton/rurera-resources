@@ -4322,6 +4322,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     padding: 12px 15px;
     line-height: normal;
     position: relative;
+    width: 100%;
 }
 .faq-sidebar a.active {
     border-bottom-color: var(--primary);
