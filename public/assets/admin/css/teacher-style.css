@@ -4291,6 +4291,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .faq-content .card .card-header {
     min-height: auto;
     padding: 0;
+    border: 0;
 }
 .faq-content .card .card-header h2 {
     width: 100%;
@@ -4312,11 +4313,8 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 }
 .faq-content .card .card-body {
     background-color: #fff;
-    border-top: 1px solid #ddd;
-}
-.faq-content .card .card-body {
-    background-color: #fff;
-    border-top: 1px solid #ddd;
+    border-top: 0;
+    padding-top: 0;
 }
 .faq-sidebar {
     display: flex;
