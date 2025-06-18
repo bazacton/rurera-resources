@@ -80,7 +80,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card mb-4">
-                                    <div class="card-header font-weight-bold">Payment Information</div>
+                                    <div class="card-header font-weight-bold"><h6>Payment Information</h6></div>
                                     <div class="card-body">
                                         <p><strong>Plan Name:</strong> Gold (Yearly)</p>
                                         <p><strong>Plan Price:</strong> $ 35,000.00</p>
