@@ -90,7 +90,7 @@
                                     <div class="card-header font-weight-bold px-15">
                                         <h6 class="mb-0">Payment Information</h6>
                                     </div>
-                                    <div class="card-body pt-0">
+                                    <div class="card-body pt-0 px-15">
                                         <div class="payment-list">
                                             <p><strong>Plan Name:</strong> Gold (Yearly)</p>
                                             <p><strong>Plan Price:</strong> $ 35,000.00</p>
