@@ -4269,6 +4269,22 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .admin-rurera-tabs-billing .card .card-body p strong {
     color: #999;
 }
+.faq-content .card {
+    margin: 0 0 5px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 0 1px rgba(0, 0, 0, 0.08);
+}
+.faq-content .card .btn-link {
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    border: 0;
+}
+.faq-content .card .card-header {
+    min-height: auto;
+}
 
 /*************************************
 Overview Questions Style Start
