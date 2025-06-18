@@ -77,7 +77,7 @@
                                         <span class="badge badge-success">Active</span>
                                     </div>
                                     <div class="card-body d-flex justify-content-between align-items-start px-15">
-                                        <span>Your current active plan is "<strong>Gold Membership</strong>"</span>
+                                        <span>Your current active plan is "<strong>Home learning and exam revision</strong>"</span>
                                     </div>
                                     <div class="card-footer d-flex justify-content-between align-items-center pt-0 flex-wrap px-15">
                                         <button class="btn btn-danger mb-0">Cancel Membership</button>
@@ -92,8 +92,8 @@
                                     </div>
                                     <div class="card-body pt-0 px-15">
                                         <div class="payment-list">
-                                            <p><strong>Plan Name:</strong> Gold (Yearly)</p>
-                                            <p><strong>Plan Price:</strong> $ 35,000.00</p>
+                                            <p><strong>Plan Name:</strong> Home learning and exam revision (Monthly)</p>
+                                            <p><strong>Plan Price:</strong> £39.99</p>
                                             <p><strong>Start Date:</strong> 2024-06-10</p>
                                             <p><strong>End Date:</strong> 2025-06-10</p>
                                             <p><strong>Date of Next Payment:</strong> 2025-06-10 00:00:00</p>
