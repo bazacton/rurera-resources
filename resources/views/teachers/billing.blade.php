@@ -67,6 +67,9 @@
 
                         <div class="row align-items-start">
                             <div class="card mb-4">
+                                <div class="card-header font-weight-bold">
+                                    <h6 class="mb-0">Membership Information</h6>
+                                </div>
                                 <div class="card-body d-flex justify-content-between align-items-center">
                                     <span>Your current active plan is "<strong>Gold Membership</strong>"</span>
                                     <span class="badge badge-success">Active</span>
