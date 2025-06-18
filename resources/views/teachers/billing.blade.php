@@ -80,7 +80,7 @@
                                         <span>Your current active plan is "<strong>Home learning and exam revision</strong>"</span>
                                     </div>
                                     <div class="card-footer d-flex justify-content-between align-items-center pt-0 flex-wrap px-15">
-                                        <button class="btn btn-danger mb-0">Cancel Membership</button>
+                                        <button class="btn btn-danger mb-0" data-toggle="modal" data-target="#class-join-modal">Cancel Membership</button>
                                         <a href="#" class="btn btn-link p-0">Update Membership Plan</a>
                                     </div>
                                 </div>
@@ -373,6 +373,36 @@
             </div>
         </div>
     </section>
+    <div class="modal fade class-join-modal" id="class-join-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Class Join Link</h5>
+                <p class="subheading">Apple - 5th Grade</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="class-join">
+                <p class="instruction">
+                    Share the link below with your students and they can either join your class by logging into their existing account or by creating a new account.
+                </p>
+                <div class="link-box">
+                    <div class="link">
+                    <span class="link-icon">📋</span>
+                    <a href="https://typing.com/join#64907A2E31D12" target="_blank">
+                        https://typing.com/join#64907A2E31D12
+                    </a>
+                    </div>
+                    <button class="copy-btn" type="button">Copy Link</button>
+                </div>
+                <button class="back-btn">← Back</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
 
 
 
