@@ -105,101 +105,103 @@
                             </div>
                         </div>
 
-                        <div class="col-md-12 faq-sidebar mb-30">
-                            <a href="#" class="active">Subscription details</a>
-                            <a href="#">Billing and payments</a>
-                            <a href="#">Other</a>
-                        </div>
+                        <div class="row">
+                            <div class="col-md-3 faq-sidebar mb-0">
+                                <a href="#" class="active">Subscription details</a>
+                                <a href="#">Billing and payments</a>
+                                <a href="#">Other</a>
+                            </div>
 
-                        <div class="col-md-9 faq-content">
-                            <h4>FAQ</h4>
-                            <div id="faqAccordion">
-                                <div class="card">
-                                    <div class="card-header" id="headingOne">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">
-                                                How do I sign up for a subscription?
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseOne" class="collapse show" data-parent="#faqAccordion">
-                                        <div class="card-body">
-                                            Select the plan above with your preferred subscription plan, and follow the on-screen instructions to create an account and enter your payment details.
+                            <div class="col-md-9 faq-content">
+                                <h4>FAQ</h4>
+                                <div id="faqAccordion">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">
+                                                    How do I sign up for a subscription?
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" data-parent="#faqAccordion">
+                                            <div class="card-body">
+                                                Select the plan above with your preferred subscription plan, and follow the on-screen instructions to create an account and enter your payment details.
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="card">
-                                    <div class="card-header" id="headingTwo">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo">
-                                                Can I cancel my subscription?
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" data-parent="#faqAccordion">
-                                        <div class="card-body">
-                                            Yes, you can cancel your subscription anytime from your account settings.
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo">
+                                                    Can I cancel my subscription?
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" data-parent="#faqAccordion">
+                                            <div class="card-body">
+                                                Yes, you can cancel your subscription anytime from your account settings.
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="card">
-                                    <div class="card-header" id="headingThree">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree">
-                                                Can I switch my subscription plan?
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" data-parent="#faqAccordion">
-                                        <div class="card-body">
-                                            Yes, switching plans is available through the membership settings page.
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree">
+                                                    Can I switch my subscription plan?
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" data-parent="#faqAccordion">
+                                            <div class="card-body">
+                                                Yes, switching plans is available through the membership settings page.
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="card">
-                                    <div class="card-header" id="headingFour">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour">
-                                                Do you offer a free trial?
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseFour" class="collapse" data-parent="#faqAccordion">
-                                        <div class="card-body">
-                                            Free trials may be offered during promotional periods; please check our pricing page.
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour">
+                                                    Do you offer a free trial?
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" data-parent="#faqAccordion">
+                                            <div class="card-body">
+                                                Free trials may be offered during promotional periods; please check our pricing page.
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="card">
-                                    <div class="card-header" id="headingFive">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive">
-                                                How do I know when my subscription is about to renew?
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseFive" class="collapse" data-parent="#faqAccordion">
-                                        <div class="card-body">
-                                            You’ll receive a reminder email and see renewal details in your account before the renewal date.
+                                    <div class="card">
+                                        <div class="card-header" id="headingFive">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive">
+                                                    How do I know when my subscription is about to renew?
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseFive" class="collapse" data-parent="#faqAccordion">
+                                            <div class="card-body">
+                                                You’ll receive a reminder email and see renewal details in your account before the renewal date.
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="card">
-                                    <div class="card-header" id="headingSix">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix">
-                                                Are there any discounts for students or non-profits?
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseSix" class="collapse" data-parent="#faqAccordion">
-                                        <div class="card-body">
-                                            Yes, we offer special discounts. Please contact support for eligibility verification.
+                                    <div class="card">
+                                        <div class="card-header" id="headingSix">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix">
+                                                    Are there any discounts for students or non-profits?
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseSix" class="collapse" data-parent="#faqAccordion">
+                                            <div class="card-body">
+                                                Yes, we offer special discounts. Please contact support for eligibility verification.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
