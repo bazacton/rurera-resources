@@ -139,3 +139,10 @@ window.addEventListener('message', function(event) {
     }
 });
 </script>
+<script>
+    $(document).ready(function () {
+        $('.stay-btn').on('click', function () {
+            $('body').addClass('modal-open');
+        });
+    });
+</script>
