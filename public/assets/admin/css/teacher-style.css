@@ -4314,6 +4314,25 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     text-align: left;
     color: #333;
 }
+.faq-content .card .btn-link:before, .faq-content .card .btn-link:after {
+    background-color: #2d3d4d;
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    height: 2px;
+    width: 15px;
+    border-radius: 5px;
+    transform: translateY(-50%) rotate(90deg);
+    transition: transform .3s ease;
+}
+.faq-content .card .card-header .btn-link:after {
+    transform: translateY(-50%) rotate(180deg);
+}
+.faq-content .card .card-header.active .btn-link:after {
+    transform: translateY(-50%) rotate(0deg);
+}
 .faq-content .card .card-header .btn:hover,
 .faq-content .card .card-header .btn:focus {
     background-color: inherit;
