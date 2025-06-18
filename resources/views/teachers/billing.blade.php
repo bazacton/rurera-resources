@@ -207,9 +207,9 @@
                     <table class="table table-bordered table-hover">
                         <thead class="thead-light">
                         <tr>
-                            <th>ORDER</th>
+                            <th>Transaction ID</th>
                             <th>DATE</th>
-                            <th>CUSTOMER</th>
+                            <th>Account Holder</th>
                             <th>STATUS</th>
                             <th>PAYMENT METHOD</th>
                             <th>TOTAL</th>
