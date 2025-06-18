@@ -4261,6 +4261,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     flex-wrap: wrap;
     gap: 0 15px;
     box-sizing: border-box;
+    align-items: flex-start;
 }
 .admin-rurera-tabs-billing .card .card-body p {
     justify-content: space-between;
