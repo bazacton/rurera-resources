@@ -4265,7 +4265,6 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     align-items: flex-start;
 }
 .admin-rurera-tabs-billing .card .card-body p {
-    justify-content: space-between;
     border-bottom: 1px solid rgba(0, 0, 0, .0300);
     padding: 12px 0;
     font-weight: 700;
@@ -4283,6 +4282,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .admin-rurera-tabs-billing .card .card-body p strong {
     color: #999;
     min-width: 160px;
+    margin-right: 10px;
 }
 .faq-content .card {
     margin: 0 0 20px;
