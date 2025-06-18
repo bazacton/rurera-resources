@@ -4316,6 +4316,9 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     align-items: center;
     flex-direction: column;
 }
+.faq-sidebar .nav-tabs {
+    border: 0;
+}
 .faq-sidebar a {
     border-bottom: 0;
     font-weight: 700;
