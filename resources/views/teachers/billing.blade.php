@@ -210,7 +210,36 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                            <div class="card">
+                                                <div class="card-header" id="heading1">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1">
+                                                            When will I be charged next?
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                                <div id="collapse1" class="collapse show" data-parent="#faqAccordion">
+                                                    <div class="card-body">
+                                                        The exact date and time of your next payment (if applicable) is listed as “Date of Next Payment.”
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="heading2">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2">
+                                                            Can I view my payment history or invoices?
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                                <div id="collapse2" class="collapse show" data-parent="#faqAccordion">
+                                                    <div class="card-body">
+                                                        Yes, you can access your billing history and download invoices through your account’s billing section.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
                                     </div>
                                 </div>
