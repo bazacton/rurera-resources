@@ -80,7 +80,7 @@
                                         <span>Your current active plan is "<strong>Home learning and exam revision</strong>"</span>
                                     </div>
                                     <div class="card-footer d-flex justify-content-between align-items-center pt-0 flex-wrap px-15">
-                                        <button class="btn btn-danger mb-0">Cancel Membership</button>
+                                        <button class="btn btn-danger mb-0 mr-10">Cancel Membership</button>
                                         <a href="#" class="btn btn-link p-0">Update Membership Plan</a>
                                     </div>
                                 </div>
