@@ -4383,7 +4383,9 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .class-join-modal .modal-dialog {
     max-width: 800px;
     border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 25px;
 }
 .class-join {
     position: relative;
@@ -4394,7 +4396,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     border-bottom: 1px solid #ddd;
     padding: 0 0 10px;
     box-sizing: border-box;
-    background: url(/assets/default/img/modal-head-img.png) no-repeat 95%;
+    background: url(/assets/default/img/modal-head-img.png) no-repeat 95% 1px;
     background-size: contain;
 }
 .class-join-modal .modal-header .close {
