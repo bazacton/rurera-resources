@@ -4323,6 +4323,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     line-height: normal;
     position: relative;
     width: 100%;
+    text-decoration: none;
 }
 .faq-sidebar a.active {
     border-bottom-color: var(--primary);
