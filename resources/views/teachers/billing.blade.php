@@ -72,14 +72,14 @@
                         <div class="row mb-30">
                             <div class="col-md-4">
                                 <div class="card mb-0 h-100">
-                                    <div class="card-header font-weight-bold justify-content-between">
+                                    <div class="card-header font-weight-bold justify-content-between px-15">
                                         <h6 class="mb-0">Membership Information</h6>
                                         <span class="badge badge-success">Active</span>
                                     </div>
-                                    <div class="card-body d-flex justify-content-between align-items-start">
+                                    <div class="card-body d-flex justify-content-between align-items-start px-15">
                                         <span>Your current active plan is "<strong>Gold Membership</strong>"</span>
                                     </div>
-                                    <div class="card-footer d-flex justify-content-between align-items-center pt-0 flex-wrap">
+                                    <div class="card-footer d-flex justify-content-between align-items-center pt-0 flex-wrap px-15">
                                         <button class="btn btn-danger mb-0">Cancel Membership</button>
                                         <a href="#" class="btn btn-link p-0">Update Membership Plan</a>
                                     </div>
@@ -87,7 +87,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card mb-0 h-100">
-                                    <div class="card-header font-weight-bold">
+                                    <div class="card-header font-weight-bold px-15">
                                         <h6 class="mb-0">Payment Information</h6>
                                     </div>
                                     <div class="card-body pt-0">
