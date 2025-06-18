@@ -289,28 +289,28 @@
                             <h5 class="text-white mb-30">Top companies trust Maze for product discovery &amp; research:</h5>
                             <ul>
                                 <li>
-                                    <a href="#"><img src="/assets/default/img/mckinsey_logo_white.avif" alt="" /></a>
+                                    <a href="#"><img src="/assets/default/img/mckinsey_logo_white.avif" alt="mckinsey_logo_white" /></a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="/assets/default/img/inditex_logo_white.avif" alt="" /></a>
+                                    <a href="#"><img src="/assets/default/img/inditex_logo_white.avif" alt="inditex_logo_white" /></a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="/assets/default/img/bupa_logo_white.avif" alt="" /></a>
+                                    <a href="#"><img src="/assets/default/img/bupa_logo_white.avif" alt="bupa_logo_white" /></a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="/assets/default/img/nubank_logo_white.avif" alt="" /></a>
+                                    <a href="#"><img src="/assets/default/img/nubank_logo_white.avif" alt="nubank_logo_white" /></a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="/assets/default/img/cisco_logo_white.avif" alt="" /></a>
+                                    <a href="#"><img src="/assets/default/img/cisco_logo_white.avif" alt="cisco_logo_white" /></a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="/assets/default/img/walmart_logo_white.avif" alt="" /></a>
+                                    <a href="#"><img src="/assets/default/img/walmart_logo_white.avif" alt="walmart_logo_white" /></a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="/assets/default/img/ngs_logo_white.avif" alt="" /></a>
+                                    <a href="#"><img src="/assets/default/img/ngs_logo_white.avif" alt="ngs_logo_white" /></a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="/assets/default/img/revolut_logo_white.avif" alt="" /></a>
+                                    <a href="#"><img src="/assets/default/img/revolut_logo_white.avif" alt="revolut_logo_white" /></a>
                                 </li>
                             </ul>
                         </div>
