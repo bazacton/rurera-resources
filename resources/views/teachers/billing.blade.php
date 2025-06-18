@@ -80,7 +80,7 @@
                                         <span>Your current active plan is "<strong>Home learning and exam revision</strong>"</span>
                                     </div>
                                     <div class="card-footer d-flex justify-content-between align-items-center pt-0 flex-wrap px-15">
-                                        <button class="btn btn-danger mb-0" data-toggle="modal" data-target="#add-student-modal">Cancel Membership</button>
+                                        <button class="btn btn-danger mb-0" data-toggle="modal" data-target="#student-successfull-modal">Cancel Membership</button>
                                         <a href="#" class="btn btn-link p-0">Update Membership Plan</a>
                                     </div>
                                 </div>
@@ -479,6 +479,32 @@
                         </tr>
                         </tbody>
                     </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- student-successfull-modal -->
+    <div class="modal fade student-successfull-modal" id="student-successfull-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="teacher-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2>You’ve successfully added <strong>4 new students</strong></h2>
+                    <p>
+                    We’ve generated <strong>usernames</strong> and <strong>passwords</strong> for all new students.
+                    You can view or edit them in the
+                    <a href="#">Login Cards</a>
+                    or within student settings.
+                    </p>
+                    <div class="teacher-buttons">
+                    <button class="btn btn-outline">Done</button>
+                    <button class="btn btn-primary">Print Login Cards</button>
                     </div>
                 </div>
             </div>
