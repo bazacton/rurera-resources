@@ -4253,6 +4253,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 
 /* Teacher Search Style End */
 
+/* Admin-Rurera-Tabs-Billing Style Start */
 .admin-rurera-tabs-billing .card .card-header {
     min-height: auto;
 }
@@ -4287,15 +4288,21 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     border: 1px solid #ddd;
     box-shadow: 0 2px 0 1px rgba(0, 0, 0, 0.08);
 }
-.faq-content .card .btn-link {
+.faq-content .card .card-header {
+    min-height: auto;
     padding: 0;
+}
+.faq-content .card .card-header h2 {
+    width: 100%;
+}
+.faq-content .card .btn-link {
+    padding: 15px 25px;
     font-size: 18px;
     font-weight: 700;
     margin: 0;
     border: 0;
-}
-.faq-content .card .card-header {
-    min-height: auto;
+    width: 100%;
+    text-align: left;
 }
 .faq-content .card .card-header .btn:hover,
 .faq-content .card .card-header .btn:focus {
@@ -4348,6 +4355,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     visibility: visible;
     opacity: 1;
 }
+/* Admin-Rurera-Tabs-Billing Style End */
 
 /*************************************
 Overview Questions Style Start
