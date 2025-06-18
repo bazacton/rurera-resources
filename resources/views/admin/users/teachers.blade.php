@@ -181,6 +181,7 @@
                                             <th class="skelton-hide skelton-height-lg skelton-mb-0">Last Login</th>
                                             <th class="skelton-hide skelton-height-lg skelton-mb-0">Classes</th>
                                             <th class="skelton-hide skelton-height-lg skelton-mb-0">School</th>
+                                            <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -201,6 +202,16 @@
                                             <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">20 minutes ago</td>
                                             <td data-th="Classes" class="skelton-hide skelton-height-lg skelton-mb-0">3</td>
                                             <td data-th="School" class="skelton-hide skelton-height-lg skelton-mb-0">Khan School</td>
+                                            <td>
+                                                <div class="pending-invites-controls">
+                                                    <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Copy invite link">
+                                                        <img src="/assets/default/svgs/link-file.svg" alt="link-file">
+                                                    </button>
+                                                    <button type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete invite">
+                                                        <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu">
+                                                    </button>
+                                                </div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
