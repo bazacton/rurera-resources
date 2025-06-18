@@ -4374,6 +4374,9 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .faq-sidebar a.active {
     color: var(--blue);
 }
+.admin-rurera-tabs-billing .card .card-footer:has(.btn-danger) {
+    gap: 10px;
+}
 /* Admin-Rurera-Tabs-Billing Style End */
 
 /*************************************
