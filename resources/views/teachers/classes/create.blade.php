@@ -602,7 +602,7 @@
                                                                         </div>
                                                                         <strong>
                                                     <span class="user-lable">
-                                                        {{ $teacherObj->user->get_full_name() }}
+                                                        <a href="javascript:;" data-class_id="{{$class->id}}" class="edit-teacher-btn" data-id="{{$teacherObj->user->id}}">{{ $teacherObj->user->get_full_name() }}</a>
                                                         <span class="user-email">{{ $teacherObj->user->email }}</span>
                                                     </span>
                                                                         </strong>
@@ -697,6 +697,22 @@
             </div>
         </div>
     </div>
+
+    <div id="teacher-edit-modal" class="teacher-edit-modal modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createClassModalLabel">Edit Teacher</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body teacher-edit-content">
+
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @push('scripts_bottom')
@@ -720,6 +736,28 @@
 
             render_rurera_tabs();
 
+            $(document).on('click', '.edit-teacher-btn', function (e) {
+                //rurera_loader($("#userSettingForm"), 'div');
+                //rurera_loader($(this), 'page');
+                var class_id = $(this).attr('data-class_id');
+                var teacher_id = $(this).attr('data-id');
+                jQuery.ajax({
+                    type: "GET",
+                    url: '/admin/users/edit_teacher',
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    data: {'teacher_id':teacher_id, 'class_id' : class_id},
+                    success: function (return_data) {
+                        $(".teacher-edit-content").html(return_data);
+                        $("#teacher-edit-modal").modal('show');
+                        console.log(return_data);
+                        //rurera_remove_loader($(this), 'page');
+                    }
+                });
+
+            });
+
             $(document).on('click', '.edit-class-btn', function (e) {
                 //rurera_loader($("#userSettingForm"), 'div');
                 rurera_loader($(this), 'page');
@@ -740,6 +778,7 @@
                 });
 
             });
+
 
             $('body').on('click', '.print-users-logins', function (e) {
                 var type_class = $(this).attr('data-type_class');
