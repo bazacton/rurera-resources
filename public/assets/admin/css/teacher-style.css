@@ -4290,6 +4290,10 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     border-radius: 0;
     border-bottom: 2px solid #ddd;
 }
+.faq-content .card:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
 .faq-content .card .card-header {
     background-color: inherit;
     min-height: auto;
