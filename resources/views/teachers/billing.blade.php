@@ -318,6 +318,7 @@
                             <th>STATUS</th>
                             <th>PAYMENT METHOD</th>
                             <th>TOTAL</th>
+                            <th>PACKAGE TYPE</th>
                             <th></th>
                         </tr>
                         </thead>
@@ -332,6 +333,7 @@
                                 •••• 6165
                             </td>
                             <td>$168.00</td>
+                            <td>Test Prep Plus</td>
                             <td><span class="icon-eye"></span></td>
                         </tr>
                         <tr>
@@ -344,6 +346,7 @@
                                 •••• 7128
                             </td>
                             <td>$523.00</td>
+                            <td>Home learning and exam revision</td>
                             <td><span class="icon-eye"></span></td>
                         </tr>
                         <tr>
@@ -356,6 +359,7 @@
                                 ••••@gmail.com
                             </td>
                             <td>$81.00</td>
+                            <td>Home learning</td>
                             <td><span class="icon-eye"></span></td>
                         </tr>
                         </tbody>
