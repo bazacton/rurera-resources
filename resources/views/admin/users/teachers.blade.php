@@ -180,7 +180,7 @@
                                                     </span>
                                                         </strong>
                                                     </td>
-                                                    <td data-th="Role" class="skelton-hide skelton-height-lg skelton-mb-0">Teacher</td>
+                                                    <td data-th="Role" class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($invitationObj->role->caption)? $invitationObj->role->caption : '-'}}</td>
                                                     <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">{{($invitationObj->created_at > 0)? dateTimeFormat($invitationObj->created_at, 'j M y | H:i') : '-'}}</td>
                                                     <td>
                                                         <div class="pending-invites-controls">
@@ -228,20 +228,19 @@
                         <h6>Invite Teacher by Email</h6>
 
                             <div class="form-group">
-                                <label class="input-label">Subject</label>
+                                <label class="input-label">Role</label>
                                 <div class="input-group">
                                     <div class="radio-buttons">
-                                        <label class="card-radio">
-                                            <input type="radio" name="ajax[new][subject]"
-                                                   class="assignment_subject_check" value="">
-                                            <span class="radio-btn"><i class="las la-check"></i>
-                                                        <div class="card-icon">
-
-                                                            <h3>sss</h3>
-                                                       </div>
-
-                                                  </span>
-                                        </label>
+                                            <input type="radio" id="teacher_role" name="role_id"
+                                                   class="assignment_subject_check" value="7">
+                                        <label for="teacher_role">Teacher</label>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="radio-buttons">
+                                        <input type="radio" id="district_teacher_role" name="role_id"
+                                               class="assignment_subject_check" value="11">
+                                        <label for="district_teacher_role">District Teacher</label>
                                     </div>
                                 </div>
                             </div>
