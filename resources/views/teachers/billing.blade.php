@@ -94,7 +94,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row align-items-start">
                             <div class="col-md-4 faq-sidebar mb-0">
                                 <a href="#" class="active">Subscription details</a>
                                 <a href="#">Billing and payments</a>
