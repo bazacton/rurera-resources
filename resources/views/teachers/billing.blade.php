@@ -80,7 +80,7 @@
                                         <span>Your current active plan is "<strong>Home learning and exam revision</strong>"</span>
                                     </div>
                                     <div class="card-footer d-flex justify-content-between align-items-center pt-0 flex-wrap px-15">
-                                        <button class="btn btn-danger mb-0" data-toggle="modal" data-target="#class-join-modal">Cancel Membership</button>
+                                        <button class="btn btn-danger mb-0" data-toggle="modal" data-target="#add-student-modal">Cancel Membership</button>
                                         <a href="#" class="btn btn-link p-0">Update Membership Plan</a>
                                     </div>
                                 </div>
@@ -373,6 +373,7 @@
             </div>
         </div>
     </section>
+    <!-- Class Join Modal -->
     <div class="modal fade class-join-modal" id="class-join-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -400,6 +401,86 @@
                 <button class="back-btn">← Back</button>
                 </div>
             </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Student Modal -->
+    <div class="modal fade add-student-modal" id="add-student-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="teacher-header">
+                    <h2 class="modal-title">Class Join Link</h2>
+                    <p class="subheading">Apple – 5th Grade</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="error-alert">
+                    Errors have occurred with 4 students imported.
+                    <a href="#">Go back and fix errors.</a>
+                    </div>
+                    <div class="table-sm">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Student Username</th>
+                            <th>Password</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>billy.173</td>
+                            <td>bluegem</td>
+                            <td>Billy</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>billymadison.26</td>
+                            <td>yellowflower</td>
+                            <td>Billy</td>
+                            <td>Madison</td>
+                            <td></td>
+                        </tr>
+                        <tr class="error-row">
+                            <td>
+                            <span class="error-highlight">billymadison.26</span>
+                            <div class="error-message">This is duplicated within the file</div>
+                            </td>
+                            <td>bluebubble</td>
+                            <td>Billy</td>
+                            <td>Madison</td>
+                            <td>
+                            <span class="error-highlight">billym@school.edu</span>
+                            <div class="error-message">This email is already in use by another account.</div>
+                            </td>
+                        </tr>
+                        <tr class="error-row">
+                            <td>
+                            <span class="error-highlight">billym@school.edu</span>
+                            <div class="error-message">
+                                This username is already in use. Usernames must be unique across all of Typing.com.
+                            </div>
+                            </td>
+                            <td>purpleflower</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                            <span class="error-highlight">billym@school.edu</span>
+                            <div class="error-message">
+                                This email is already in use by another account.<br>
+                                This is duplicated within the file.
+                            </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
