@@ -10,15 +10,6 @@
 				<img src="/store/1/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="150" height="38" itemprop="image" loading="eager">
             </a>
         </div>
-        <div class="sidebar-brand sidebar-brand-sm">
-            <a href="/">
-				
-                @if(!empty($generalSettings['site_name']))
-                    {{ strtoupper(substr($generalSettings['site_name'],0,2)) }}
-                @endif
-                <img src="/assets/default/img/sidebar/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="68" height="67" itemprop="image" loading="eager">
-            </a>
-        </div>
 		@if(auth()->user()->isTeacher() || auth()->user()->isAdminTeacher())
         <div class="create-modal-btn">
             <button type="button" data-toggle="modal" data-target="#templatesleModal"><span class="text-btn">Create</span> <span class="icon-box"><i class="fas fa-plus"></i></span></button>
@@ -29,7 +20,16 @@
             <input class="search-dashboard form-control">
         </div>
         @endif
-        
+        <div class="sidebar-brand sidebar-brand-sm">
+            <a href="/">
+
+                @if(!empty($generalSettings['site_name']))
+                    {{ strtoupper(substr($generalSettings['site_name'],0,2)) }}
+                @endif
+                <img src="/assets/default/img/sidebar/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="68" height="67" itemprop="image" loading="eager">
+            </a>
+        </div>
+
         @if(auth()->user()->isTeacher())
             <div class="sidebar-brand rurera-hide">
                 <b>Total Points: {{ $authUser->author_points }}</b>
@@ -65,7 +65,7 @@
                 </a>
             </li>
 			@endcan
-			
+
             @if($authUser->can('admin_webinars') or
                 $authUser->can('admin_bundles') or
                 $authUser->can('admin_categories') or
@@ -192,7 +192,7 @@
 				<li class="menu-header">QUESTION BANK</li>
 			@endif
 
-			
+
 			@can('admin_question_ai')
 
                 <li class="nav-item{{ (request()->is('admin/questions-generator')) ? 'active' : '' }}">
@@ -202,7 +202,7 @@
                     </a>
                 </li>
             @endcan()
-			
+
             @can('admin_questions_bank')
 
                 <li class="nav-item{{ (request()->is('admin/questions_bank')) ? 'active' : '' }}">
@@ -221,7 +221,7 @@
                    </a>
                </li>
            @endcan()
-		   
+
 			@can('admin_topic_parts')
 			<li class="{{ (request()->is('admin/topics_parts*')) ? 'active' : '' }}">
 				<a class="nav-link " href="{{ getAdminPanelUrl('/topics_parts') }}">
@@ -230,7 +230,7 @@
 				</a>
 			</li>
            @endcan()
-			
+
             @can('admin_assignments')
             <li class="nav-item {{ (request()->is('admin/custom_quiz')) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/custom_quiz') }}" class="nav-link">
@@ -238,21 +238,21 @@
                     <span>Custom Quiz</span>
                 </a>
             </li>
-			
+
 			<li class="nav-item {{ (request()->is('admin/custom_page/my_library')) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/custom_page/my_library') }}" class="nav-link">
                     <i class="fas fa-th"></i>
                     <span>Collections</span>
                 </a>
             </li>
-			
+
 			<li class="nav-item {{ (request()->is('admin/custom_page/track')) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/custom_page/track') }}" class="nav-link">
                     <img src="/assets/default/svgs/bar-chart-trend.svg" alt="">
                     <span>Track</span>
                 </a>
             </li>
-			
+
 			@if(!auth()->user()->isTeacher() && !auth()->user()->isAdminTeacher())
 			<li class="nav-item {{ (request()->is('admin/custom_page/report')) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/custom_page/report') }}" class="nav-link">
@@ -261,7 +261,7 @@
                 </a>
             </li>
 			@endif
-			
+
 			<li class="nav-item {{ (request()->is('admin/custom_page/tailer_hub')) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/custom_page/tailer_hub') }}" class="nav-link">
                     <img src="/assets/default/svgs/Tailor-Hub.svg" alt="">
@@ -277,7 +277,7 @@
             </li>
 			@endif
 			@endcan()
-			
+
 			@can('admin_gallery_images')
             <li class="nav-item {{ (request()->is('admin/gallery_images')) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/gallery_images') }}" class="nav-link">
@@ -308,7 +308,7 @@
                     </a>
                 </li>
             @endcan()
-			
+
 			@can('admin_certificate')
                 <li class="nav-item {{ (request()->is('admin/learning_journey')) ? 'active' : '' }}">
                     <a href="{{ getAdminPanelUrl('/learning_journey') }}" class="nav-link">
@@ -319,7 +319,7 @@
             @endcan()
 
             @can('admin_assignments')
-                
+
                 <li class="nav-item {{ (request()->is('admin/assignments')) ? 'active' : '' }}">
                     <a href="{{ getAdminPanelUrl('/assignments') }}" class="nav-link">
                         <img src="/assets/default/svgs/assignments.svg" alt="">
@@ -589,12 +589,12 @@
                     </a>
                 </li>
             @endcan
-			
+
 			@can('admin_reports')
 			@if(!auth()->user()->isTeacher() && !auth()->user()->isAdminTeacher())
 				<li class="menu-header">Reports</li>
 			@endif
-			
+
 			 <li class="nav-item dropdown {{ (request()->is(getAdminPanelUrl('/reports*', false))) ? 'active' : '' }}">
 				<a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
 					<i class="fas fa-user-circle"></i> <span>Reports</span>
@@ -605,19 +605,19 @@
 							<a class="nav-link active" href="{{ getAdminPanelUrl() }}/reports/topics_questions">Topics Questions</a>
 						</li>
 					@endcan()
-					
+
 					@can('admin_reports_topics_parts_questions')
 						<li class="{{ (request()->is(getAdminPanelUrl('/reports/topics_sub_parts_questions', false))) ? 'active' : '' }}">
 							<a class="nav-link active" href="{{ getAdminPanelUrl() }}/reports/topics_sub_parts_questions">Topics Parts Questions</a>
 						</li>
 					@endcan()
-					
+
 					@can('topics_sub_parts_word_count')
 						<li class="{{ (request()->is(getAdminPanelUrl('/reports/topics_sub_parts_word_count', false))) ? 'active' : '' }}">
 							<a class="nav-link active" href="{{ getAdminPanelUrl() }}/reports/topics_sub_parts_word_count">Topics Parts Words Counts</a>
 						</li>
 					@endcan()
-					
+
 				</ul>
 			</li>
 			@endcan()
@@ -642,6 +642,20 @@
                         <span>Classes</span>
                     </a>
                 </li>
+
+                    <li class="nav-item {{ (request()->is('admin/schools')) ? 'active' : '' }}">
+                        <a href="{{ getAdminPanelUrl('/schools') }}" class="nav-link">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>Schools</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item {{ (request()->is('admin/students')) ? 'active' : '' }}">
+                        <a href="{{ getAdminPanelUrl('/students') }}" class="nav-link">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>Students</span>
+                        </a>
+                    </li>
             @endif
 
             @can('admin_teachers_list')
@@ -1791,7 +1805,7 @@
                     </a>
                 </li>
             @endcan
-            
+
             @can('admin_testimonials')
                             <li class="nav-item dropdown {{ (request()->is(getAdminPanelUrl('/testimonials*', false))) ? 'active' : '' }}">
                                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
@@ -1804,7 +1818,7 @@
                                             <a class="nav-link" href="{{ getAdminPanelUrl() }}/testimonials">{{ trans('admin/main.lists') }}</a>
                                         </li>
                                     @endcan()
-            
+
                                     @can('admin_testimonials_create')
                                         <li class="{{ (request()->is(getAdminPanelUrl('/testimonials/create', false))) ? 'active' : '' }}">
                                             <a class="nav-link" href="{{ getAdminPanelUrl() }}/testimonials/create">{{ trans('admin/main.new') }}</a>
@@ -1842,7 +1856,7 @@
                 </li>
             @endcan()
 
-            
+
 
 
             @if(auth()->user()->isTeacher())
