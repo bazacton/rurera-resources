@@ -324,43 +324,43 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td>#95954</td>
-                            <td>10/08/2022</td>
-                            <td>Ron Vargas</td>
-                            <td><span class="status-paid">Paid</span></td>
-                            <td>Test Prep Plus</td>
-                            <td>
+                            <td data-th="Transaction ID">#95954</td>
+                            <td data-th="Date">10/08/2022</td>
+                            <td data-th="Account Holder">Ron Vargas</td>
+                            <td data-th="Status"><span class="status-paid">Paid</span></td>
+                            <td data-th="Package Type">Test Prep Plus</td>
+                            <td data-th="Payment Method">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo">
                                 •••• 6165
                             </td>
-                            <td>$168.00</td>
-                            <td><span class="icon-eye"></span></td>
+                            <td data-th="Total">$168.00</td>
+                            <td data-th="Eye"><span class="icon-eye"></span></td>
                         </tr>
                         <tr>
-                            <td>#95423</td>
-                            <td>30/07/2022</td>
-                            <td>Carolyn Hanso</td>
-                            <td><span class="status-paid">Paid</span></td>
-                            <td>Home learning and exam revision</td>
-                            <td>
+                            <td data-th="Transaction ID">#95423</td>
+                            <td data-th="Date">30/07/2022</td>
+                            <td data-th="Account Holder">Carolyn Hanso</td>
+                            <td data-th="Status"><span class="status-paid">Paid</span></td>
+                            <td data-th="Package Type">Home learning and exam revision</td>
+                            <td data-th="Payment Method">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo">
                                 •••• 7128
                             </td>
-                            <td>$523.00</td>
-                            <td><span class="icon-eye"></span></td>
+                            <td data-th="Total">$523.00</td>
+                            <td data-th="Eye"><span class="icon-eye"></span></td>
                         </tr>
                         <tr>
-                            <td>#92903</td>
-                            <td>18/07/2022</td>
-                            <td>Gabriella May</td>
-                            <td><span class="status-pending">Pending</span></td>
-                            <td>Home learning</td>
-                            <td>
+                            <td data-th="">#92903</td>
+                            <td data-th="">18/07/2022</td>
+                            <td data-th="">Gabriella May</td>
+                            <td data-th=""><span class="status-pending">Pending</span></td>
+                            <td data-th="">Home learning</td>
+                            <td data-th="">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="payment-logo">
                                 ••••@gmail.com
                             </td>
-                            <td>$81.00</td>
-                            <td><span class="icon-eye"></span></td>
+                            <td data-th="">$81.00</td>
+                            <td data-th=""><span class="icon-eye"></span></td>
                         </tr>
                         </tbody>
                     </table>
