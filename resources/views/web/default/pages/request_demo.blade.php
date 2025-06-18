@@ -382,14 +382,14 @@
                                             <span class="icon-box">
                                                 <img src="/assets/default/img/company.jpg" alt="company">
                                             </span>
-                                            <input type="text" placeholder="" autocomplete="off" />
+                                            <input type="text" placeholder="What's your company name?" autocomplete="off" />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                     <div class="form-group d-flex flex-column">
                                         <label class="input-label w-100 p-0">Job title *</label>
-                                        <div class="input-field w-100"><input type="text" placeholder="" /></div>
+                                        <div class="input-field w-100"><input type="text" placeholder="What's your role at work?" autocomplete="off" /></div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
