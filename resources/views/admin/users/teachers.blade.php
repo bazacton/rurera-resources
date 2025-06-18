@@ -73,8 +73,10 @@
                                                 Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                             </a>
                                             <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
-                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
+                                                <a class="dropdown-item" href="javascript:;" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
+
+
+                                                <a class="dropdown-item create-class-btn" href="javascript:;" data-toggle="modal" data-target="#createTeacherModal"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
                                             </div>
                                         </div>
                                     </div>
@@ -107,7 +109,7 @@
                                                     </span>
                                                     </strong>
                                                 </td>
-                                                <td data-th="Role" class="skelton-hide1 skelton-height-lg skelton-mb-0">Teacher</td>
+                                                <td data-th="Role" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{isset($user->role->caption)? $user->role->caption : '-'}}</td>
                                                 <td data-th="Last Login" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{($user->last_login > 0)? dateTimeFormat($user->last_login, 'j M y | H:i') : '-'}}</td>
                                                 <td data-th="Classes" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{$user->getTeacherClasses->count()}}</td>
                                                 <td data-th="School" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{isset($user->userSchool->id)? $user->userSchool->title : '-'}}</td>
@@ -240,7 +242,14 @@
                                     <div class="radio-buttons">
                                         <input type="radio" id="district_teacher_role" name="role_id"
                                                class="assignment_subject_check" value="11">
-                                        <label for="district_teacher_role">District Teacher</label>
+                                        <label for="district_teacher_role">District Admin</label>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="radio-buttons">
+                                        <input type="radio" id="school_admin_role" name="role_id"
+                                               class="assignment_subject_check" value="14">
+                                        <label for="school_admin_role">School Admin</label>
                                     </div>
                                 </div>
                             </div>
@@ -271,18 +280,39 @@
                         {{ csrf_field() }}
                         <input type="hidden" name="status" value="active">
                         <input type="hidden" name="page_type" value="teachers">
-                        <input type="hidden" name="role_id" value="11">
+                        <input type="hidden" name="school_id" value="{{$userObj->school_id}}">
+
                         <div class="form-group">
-                            <label>First Name</label>
-                            <input type="text" name="full_name" class="form-control  " value="" placeholder="Full Name">
+                            <label class="input-label">Role</label>
+                            <div class="input-group">
+                                <div class="radio-buttons">
+                                    <input type="radio" id="teacher_role-add" name="role_id"
+                                           class="assignment_subject_check" value="7" checked>
+                                    <label for="teacher_role-add">Teacher</label>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="radio-buttons">
+                                    <input type="radio" id="district_teacher_role-add" name="role_id"
+                                           class="assignment_subject_check" value="11">
+                                    <label for="district_teacher_role-add">District Admin</label>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="radio-buttons">
+                                    <input type="radio" id="school_admin_role-add" name="role_id"
+                                           class="assignment_subject_check" value="14">
+                                    <label for="school_admin_role-add">School Admin</label>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label>Display Name</label>
-                            <input type="text" name="display_name" class="form-control  " value="" placeholder="Display Name">
+                            <label>Full Name</label>
+                            <input type="text" name="full_name" class="form-control  " value="" placeholder="Full Name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input name="email" type="text" class="form-control " id="email" value="">
+                            <input name="email" type="text" class="form-control " id="email" value="" required>
                         </div>
                         <div class="form-group">
                             <label class="input-label">Password</label>

@@ -42,6 +42,7 @@
 </head>
 @php $user_role = isset( auth()->user()->role_name )? auth()->user()->role_name : '';
  $user_role = ($user_role == 'teachers')? 'admin_teacher' : $user_role;
+ $user_role = ($user_role == 'school_admin')? 'admin_teacher' : $user_role;
  @endphp
 <body class="@if($isRtl) rtl @endif {{$user_role}}_role">
     <div id="app">
