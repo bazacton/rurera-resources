@@ -70,10 +70,10 @@
                                 <span>Your current active plan is "<strong>Gold Membership</strong>"</span>
                                 <span class="badge badge-success">Active</span>
                             </div>
-                            <div class="card-footer text-right">
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <button class="btn btn-danger mb-0">Cancel Membership</button>
                                 <a href="#" class="btn btn-link p-0">Update Membership Plan</a>
                             </div>
-                            <button class="btn btn-danger mb-0">Cancel Membership</button>
                         </div>
 
                         <div class="row">
