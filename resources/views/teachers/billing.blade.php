@@ -308,62 +308,63 @@
 
                     <div class="admin-rurera-tabs-billing rurera-hide transactions-tab ">
                         <h2 class="mb-1 font-weight-bold">Transactions</h2>
-
-                    <table class="table table-bordered table-hover">
-                        <thead class="thead-light">
-                        <tr>
-                            <th>Transaction ID</th>
-                            <th>Date</th>
-                            <th>Account Holder</th>
-                            <th>Status</th>
-                            <th>Package Type</th>
-                            <th>Payment Method</th>
-                            <th>Total</th>
-                            <th></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td data-th="Transaction ID">#95954</td>
-                            <td data-th="Date">10/08/2022</td>
-                            <td data-th="Account Holder">Ron Vargas</td>
-                            <td data-th="Status"><span class="status-paid">Paid</span></td>
-                            <td data-th="Package Type">Test Prep Plus</td>
-                            <td data-th="Payment Method">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo">
-                                •••• 6165
-                            </td>
-                            <td data-th="Total">$168.00</td>
-                            <td data-th="Eye"><span class="icon-eye"></span></td>
-                        </tr>
-                        <tr>
-                            <td data-th="Transaction ID">#95423</td>
-                            <td data-th="Date">30/07/2022</td>
-                            <td data-th="Account Holder">Carolyn Hanso</td>
-                            <td data-th="Status"><span class="status-paid">Paid</span></td>
-                            <td data-th="Package Type">Home learning and exam revision</td>
-                            <td data-th="Payment Method">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo">
-                                •••• 7128
-                            </td>
-                            <td data-th="Total">$523.00</td>
-                            <td data-th="Eye"><span class="icon-eye"></span></td>
-                        </tr>
-                        <tr>
-                            <td data-th="Transaction ID">#92903</td>
-                            <td data-th="Date">18/07/2022</td>
-                            <td data-th="Account Holder">Gabriella May</td>
-                            <td data-th="Status"><span class="status-pending">Pending</span></td>
-                            <td data-th="Package Type">Home learning</td>
-                            <td data-th="Payment Method">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="payment-logo">
-                                ••••@gmail.com
-                            </td>
-                            <td data-th="Total">$81.00</td>
-                            <td data-th="Eye"><span class="icon-eye"></span></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                        <div class="table-sm">
+                            <table class="table table-bordered table-hover">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>Transaction ID</th>
+                                        <th>Date</th>
+                                        <th>Account Holder</th>
+                                        <th>Status</th>
+                                        <th>Package Type</th>
+                                        <th>Payment Method</th>
+                                        <th>Total</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-th="Transaction ID">#95954</td>
+                                        <td data-th="Date">10/08/2022</td>
+                                        <td data-th="Account Holder">Ron Vargas</td>
+                                        <td data-th="Status"><span class="status-paid">Paid</span></td>
+                                        <td data-th="Package Type">Test Prep Plus</td>
+                                        <td data-th="Payment Method">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo">
+                                            •••• 6165
+                                        </td>
+                                        <td data-th="Total">$168.00</td>
+                                        <td data-th="Eye"><span class="icon-eye"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-th="Transaction ID">#95423</td>
+                                        <td data-th="Date">30/07/2022</td>
+                                        <td data-th="Account Holder">Carolyn Hanso</td>
+                                        <td data-th="Status"><span class="status-paid">Paid</span></td>
+                                        <td data-th="Package Type">Home learning and exam revision</td>
+                                        <td data-th="Payment Method">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="payment-logo">
+                                            •••• 7128
+                                        </td>
+                                        <td data-th="Total">$523.00</td>
+                                        <td data-th="Eye"><span class="icon-eye"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-th="Transaction ID">#92903</td>
+                                        <td data-th="Date">18/07/2022</td>
+                                        <td data-th="Account Holder">Gabriella May</td>
+                                        <td data-th="Status"><span class="status-pending">Pending</span></td>
+                                        <td data-th="Package Type">Home learning</td>
+                                        <td data-th="Payment Method">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="payment-logo">
+                                            ••••@gmail.com
+                                        </td>
+                                        <td data-th="Total">$81.00</td>
+                                        <td data-th="Eye"><span class="icon-eye"></span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
 
