@@ -3019,6 +3019,32 @@ Choose Plan Style End
 .lms-jobs-form .input-field input[type="email"]::placeholder,
 .lms-jobs-form .input-field input[type="password"]::placeholder { color:#cbd5e1; opacity: 1; }
 
+/* focus */
+.lms-jobs-form .input-field input[type="text"]:focus:-webkit-input-placeholder, 
+.lms-jobs-form .input-field textarea:focus::-webkit-input-placeholder,
+.lms-jobs-form .input-field input[type="email"]:focus::-webkit-input-placeholder,
+.lms-jobs-form .input-field input[type="password"]:focus::-webkit-input-placeholder { color:transparent; }
+
+.lms-jobs-form .input-field input[type="text"]:focus::-moz-placeholder, 
+.lms-jobs-form .input-field textarea::-moz-placeholder,
+.lms-jobs-form .input-field input[type="email"]:focus::-moz-placeholder,
+.lms-jobs-form .input-field input[type="password"]:focus::-moz-placeholder { color:transparent; }
+
+.lms-jobs-form .input-field input[type="text"]:focus:-ms-input-placeholder, 
+.lms-jobs-form .input-field textarea:focus:-ms-input-placeholder,
+.lms-jobs-form .input-field input[type="email"]:focus:-ms-input-placeholder,
+.lms-jobs-form .input-field input[type="password"]:focus:-ms-input-placeholder { color:transparent; }
+
+.lms-jobs-form .input-field input[type="text"]:focus::-ms-input-placeholder, 
+.lms-jobs-form .input-field textarea:focus::-ms-input-placeholder,
+.lms-jobs-form .input-field input[type="email"]:focus::-ms-input-placeholder,
+.lms-jobs-form .input-field input[type="password"]:focus::-ms-input-placeholder { color:transparent; }
+
+.lms-jobs-form .input-field input[type="text"]:focus::placeholder,
+.lms-jobs-form .input-field textarea:focus::placeholder,
+.lms-jobs-form .input-field input[type="email"]:focus::placeholder,
+.lms-jobs-form .input-field input[type="password"]:focus::placeholder { color:transparent; }
+
 .lms-jobs-form .input-field input[type="text"],
 .lms-jobs-form .input-field input[type="email"],
 .lms-jobs-form .input-field input[type="password"], 
