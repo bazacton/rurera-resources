@@ -5846,6 +5846,7 @@ button.print-download-btn {
     .question-content-header {padding-left: 15px;}
     .admin_teacher_role .main-sidebar {z-index: 891;}
     .admin_teacher_role .main-wrapper nav.navbar.navbar-expand-lg.main-navbar {z-index: 10;}
+    .admin-rurera-tabs-billing .card .card-body p {width: 100%;}
 }
 @media screen and (max-width: 576px) {
     .rureraform-search-field .input-field button {width: 30px; height: 30px; padding: 0;}

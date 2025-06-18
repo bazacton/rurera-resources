@@ -71,7 +71,7 @@
 
                         <div class="row mb-30">
                             <div class="col-md-4">
-                                <div class="card mb-0 h-100">
+                                <div class="card mb-20 h-100">
                                     <div class="card-header font-weight-bold justify-content-between px-15">
                                         <h6 class="mb-0">Membership Information</h6>
                                         <span class="badge badge-success">Active</span>
@@ -86,7 +86,7 @@
                                 </div>
                             </div>
                             <div class="col-md-8">
-                                <div class="card mb-0 h-100">
+                                <div class="card mb-20 h-100">
                                     <div class="card-header font-weight-bold px-15">
                                         <h6 class="mb-0">Payment Information</h6>
                                     </div>
