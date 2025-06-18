@@ -4311,18 +4311,37 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     background-color: #fff;
     border-top: 1px solid #ddd;
 }
-.faq-sidebar a {
-    border-bottom: 3px solid transparent;
-    font-weight: 700;
-    padding: 0 0 5px;
-}
 .faq-sidebar {
     display: flex;
     align-items: center;
     gap: 25px;
 }
+.faq-sidebar a {
+    border-bottom: 0;
+    font-weight: 700;
+    padding: 12px 15px;
+    line-height: normal;
+    position: relative;
+}
 .faq-sidebar a.active {
     border-bottom-color: var(--primary);
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--blue);
+}
+.faq-sidebar a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--blue);
+    width: 3px;
+    opacity: 0;
+    visibility: hidden;
+}
+.faq-sidebar a.active:before {
+    visibility: visible;
+    opacity: 1;
 }
 
 /*************************************
