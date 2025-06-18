@@ -474,7 +474,7 @@
 <script>
 $(document).ready(function () {
     $('#leave-option-modal').on('shown.bs.modal', function () {
-        $("body").addClass("custom-modal-open"); // your custom logic
+        $("body").addClass("modal-open"); // your custom logic
     });
 });
 </script>
