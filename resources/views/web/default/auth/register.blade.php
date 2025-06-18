@@ -66,7 +66,7 @@
                                 <span class="icon-box">
                                     <img src="/assets/default/img/envelope.jpg" alt="envelope">
                                 </span>
-                                <input name="email" type="text" class="form-control" autocomplete="off" placeholder="Where can we reach you? (e.g., you@gmail.com)">
+                                <input name="email" type="text" class="form-control" readonly="" autocomplete="off" placeholder="Where can we reach you? (e.g., you@gmail.com)">
                             </div>
                         </div>
 
