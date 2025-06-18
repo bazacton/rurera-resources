@@ -473,7 +473,7 @@
 <script src="/assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
 <script>
 $(document).ready(function () {
-    $('#leave-option-modal').on('shown.bs.modal', function () {
+    $('.stay-btn').on('shown.bs.modal', function () {
         $("body").addClass("modal-open"); // your custom logic
     });
 });
