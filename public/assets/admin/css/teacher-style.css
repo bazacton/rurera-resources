@@ -4363,7 +4363,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .faq-sidebar a {
     border-bottom: 0;
     font-weight: 700;
-    padding: 0 0 10px;
+    padding: 0 0 15px;
     line-height: normal;
     position: relative;
     width: 100%;
