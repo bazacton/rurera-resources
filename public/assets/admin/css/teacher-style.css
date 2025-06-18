@@ -4388,7 +4388,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .class-join {
     position: relative;
 }
-.class-join-modal  .modal-header h2 {
+.class-join-modal  .modal-header .modal-title {
     margin: 0;
     font-size: 24px;
 }
