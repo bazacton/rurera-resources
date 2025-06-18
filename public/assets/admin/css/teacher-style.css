@@ -4314,7 +4314,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .faq-sidebar {
     display: flex;
     align-items: center;
-    gap: 25px;
+    flex-direction: column;
 }
 .faq-sidebar a {
     border-bottom: 0;
