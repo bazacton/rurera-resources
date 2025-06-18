@@ -4265,10 +4265,15 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     border-bottom: 1px solid #ddd;
     margin: 0;
     padding: 12px 0;
+    font-weight: 700;
+    color: #333;
 }
 .admin-rurera-tabs-billing .card .card-body p:last-child {
     border-bottom: 0;
     padding-bottom: 0;
+}
+.admin-rurera-tabs-billing .card .card-body p strong {
+    color: #999;
 }
 
 /*************************************
