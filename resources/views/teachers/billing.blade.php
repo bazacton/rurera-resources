@@ -493,13 +493,15 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-body">
-                    <h2>You’ve successfully added <strong>4 new students</strong></h2>
-                    <p>
-                    We’ve generated <strong>usernames</strong> and <strong>passwords</strong> for all new students.
-                    You can view or edit them in the
-                    <a href="#">Login Cards</a>
-                    or within student settings.
-                    </p>
+                    <div class="text-holder">
+                        <h2>You’ve successfully added <strong>4 new students</strong></h2>
+                        <p>
+                        We’ve generated <strong>usernames</strong> and <strong>passwords</strong> for all new students.
+                        You can view or edit them in the
+                        <a href="#">Login Cards</a>
+                        or within student settings.
+                        </p>
+                    </div>
                     <div class="teacher-buttons">
                         <button class="btn btn-outline">Done</button>
                         <button class="btn btn-primary">Print Login Cards</button>
