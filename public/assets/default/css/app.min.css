@@ -317,6 +317,9 @@ Front-end Login Style Start
 .login-card .form-field .icon-box ~ .form-control {
   padding-left: 35px;
 }
+.login-card .form-field .form-control[readonly] {
+  background: #f9f9f9;
+}
 /********************************
 Front-end Login Style End
 *********************************/
