@@ -62,7 +62,7 @@
                                 <span class="icon-box">
                                     <img src="/assets/default/img/hand.jpg" alt="hand">
                                 </span>
-                                <input name="full_name" type="text" value="{{ old('full_name') }}" class="form-control @error('full_name') is-invalid @enderror" autocomplete="off" placeholder="What should we call you?">
+                                <input name="full_name" type="text" value="{{ session('full_name') }}" class="form-control @error('full_name') is-invalid @enderror" autocomplete="off" placeholder="What should we call you?">
                             </div>
                             @error('full_name')
                             <div class="invalid-feedback">
@@ -77,7 +77,7 @@
                                 <span class="icon-box">
                                     <img src="/assets/default/img/key-lock.jpg" alt="key-lock">
                                 </span>
-                                <input name="password" type="password"
+                                <input name="password" value="{{ session('password') }}" type="password"
                                    class="form-control @error('password') is-invalid @enderror" id="password"
                                    aria-describedby="passwordHelp" autocomplete="off" placeholder="Make a strong password">
                             </div>
@@ -94,7 +94,7 @@
                                 <span class="icon-box">
                                     <img src="/assets/default/img/refresh.jpg" alt="refresh">
                                 </span>
-                                <input name="password_confirmation" type="password"
+                                <input name="password_confirmation" value="{{ session('confirm_password') }}" type="password"
                                    class="form-control @error('password_confirmation') is-invalid @enderror" id="confirm_password"
                                    aria-describedby="confirmPasswordHelp" autocomplete="off" placeholder="Re-enter your password">
                             </div>
