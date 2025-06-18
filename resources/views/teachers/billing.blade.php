@@ -69,9 +69,9 @@
                         <h2 class="mb-1 font-weight-bold">Membership Details</h2>
                         <p class="text-muted">A demo Message regarding the memberships and a welcoming message</p>
 
-                        <div class="row">
+                        <div class="row mb-30">
                             <div class="col-md-4">
-                                <div class="card mb-4">
+                                <div class="card mb-0 h-100">
                                     <div class="card-header font-weight-bold justify-content-between">
                                         <h6 class="mb-0">Membership Information</h6>
                                         <span class="badge badge-success">Active</span>
@@ -86,7 +86,7 @@
                                 </div>
                             </div>
                             <div class="col-md-8">
-                                <div class="card mb-4">
+                                <div class="card mb-0 h-100">
                                     <div class="card-header font-weight-bold">
                                         <h6 class="mb-0">Payment Information</h6>
                                     </div>
