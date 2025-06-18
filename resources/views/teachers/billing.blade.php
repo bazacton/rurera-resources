@@ -93,15 +93,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-md-6">
-                                <div class="card mb-4">
-                                    <div class="card-header font-weight-bold">Payment Information</div>
-                                    <div class="card-body">
-                                        <p><strong>Date of Next Payment:</strong> 2025-06-10 00:00:00</p>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
                         <div class="col-md-3 faq-sidebar">
