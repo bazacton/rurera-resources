@@ -350,17 +350,17 @@
                             <td data-th="Eye"><span class="icon-eye"></span></td>
                         </tr>
                         <tr>
-                            <td data-th="">#92903</td>
-                            <td data-th="">18/07/2022</td>
-                            <td data-th="">Gabriella May</td>
-                            <td data-th=""><span class="status-pending">Pending</span></td>
-                            <td data-th="">Home learning</td>
-                            <td data-th="">
+                            <td data-th="Transaction ID">#92903</td>
+                            <td data-th="Date">18/07/2022</td>
+                            <td data-th="Account Holder">Gabriella May</td>
+                            <td data-th="Status"><span class="status-pending">Pending</span></td>
+                            <td data-th="Package Type">Home learning</td>
+                            <td data-th="Payment Method">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="payment-logo">
                                 ••••@gmail.com
                             </td>
-                            <td data-th="">$81.00</td>
-                            <td data-th=""><span class="icon-eye"></span></td>
+                            <td data-th="Total">$81.00</td>
+                            <td data-th="Eye"><span class="icon-eye"></span></td>
                         </tr>
                         </tbody>
                     </table>
