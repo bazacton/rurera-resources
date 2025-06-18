@@ -4602,6 +4602,13 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .student-successfull-modal .teacher-buttons .btn-outline:hover {
     border: 1px solid #ccc !important;
 }
+.student-successfull-modal .img-holder img {
+    max-width: 100%;
+    object-fit:contain;
+}
+.student-successfull-modal:has(.img-holder) .modal-dialog {
+    max-width: 800px;
+}
 /* Student-Successfull-Modal Style End */
 
 /*************************************
