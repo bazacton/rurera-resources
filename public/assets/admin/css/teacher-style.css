@@ -4253,6 +4253,12 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 
 /* Teacher Search Style End */
 
+.admin-rurera-tabs-billing .btn.btn-danger {
+    max-width: 150px;
+    margin: 0 25px 20px;
+    display: block;
+}
+
 /*************************************
 Overview Questions Style Start
 **************************************/
