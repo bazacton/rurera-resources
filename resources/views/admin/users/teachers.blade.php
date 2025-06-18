@@ -186,7 +186,7 @@
                                                         <div class="pending-invites-controls">
                                                             <button class="copy-to-text" data-copy_to="invitation-link-{{$invitationObj->id}}" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Copy invite link">
                                                                 <img src="/assets/default/svgs/link-file.svg" alt="link-file">
-                                                                <span class="rurera-hide invitation-link-{{$invitationObj->id}}">{{url('signup-teacher?token='.$invitationObj->token.'&email='.$invitationObj->email)}}</span>
+                                                                <span class="rurera-hide invitation-link-{{$invitationObj->id}}">{{url('signup-teacher?token='.$invitationObj->invitation_token.'&email='.$invitationObj->email)}}</span>
                                                             </button>
                                                             <button data-id="{{$invitationObj->id}}" class="delete-invitation" type="button" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Delete invite">
                                                                 <img src="/assets/default/svgs/delete-menu.svg" alt="delete-menu">
@@ -226,6 +226,25 @@
                         <form action="/admin/users/teachers_invitation" method="POST" class="mb-0">
                             {{ csrf_field() }}
                         <h6>Invite Teacher by Email</h6>
+
+                            <div class="form-group">
+                                <label class="input-label">Subject</label>
+                                <div class="input-group">
+                                    <div class="radio-buttons">
+                                        <label class="card-radio">
+                                            <input type="radio" name="ajax[new][subject]"
+                                                   class="assignment_subject_check" value="">
+                                            <span class="radio-btn"><i class="las la-check"></i>
+                                                        <div class="card-icon">
+
+                                                            <h3>sss</h3>
+                                                       </div>
+
+                                                  </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         <div class="textarea-field">
                             <textarea name="teachers_email" placeholder="Enter your teachers work email address."></textarea>
                             <p>List one teacher work email per line. You can also copy/paste from Word Exel</p>
