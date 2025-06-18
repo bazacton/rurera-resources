@@ -489,11 +489,9 @@
     <div class="modal fade student-successfull-modal" id="student-successfull-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="teacher-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
+                </button>
                 <div class="modal-body">
                     <h2>You’ve successfully added <strong>4 new students</strong></h2>
                     <p>
@@ -503,8 +501,8 @@
                     or within student settings.
                     </p>
                     <div class="teacher-buttons">
-                    <button class="btn btn-outline">Done</button>
-                    <button class="btn btn-primary">Print Login Cards</button>
+                        <button class="btn btn-outline">Done</button>
+                        <button class="btn btn-primary">Print Login Cards</button>
                     </div>
                 </div>
             </div>
