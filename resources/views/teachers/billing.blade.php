@@ -65,13 +65,12 @@
                         <h2 class="mb-1 font-weight-bold">Membership Details</h2>
                         <p class="text-muted">A demo Message regarding the memberships and a welcoming message</p>
 
-                        <button class="btn btn-danger mb-4">Cancel Membership</button>
-
                         <div class="card mb-4">
                             <div class="card-body d-flex justify-content-between align-items-center">
                                 <span>Your current active plan is "<strong>Gold Membership</strong>"</span>
                                 <span class="badge badge-success">Active</span>
                             </div>
+                            <button class="btn btn-danger mb-4">Cancel Membership</button>
                             <div class="card-footer text-right">
                                 <a href="#" class="btn btn-link p-0">Update Membership Plan</a>
                             </div>
@@ -80,7 +79,9 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card mb-4">
-                                    <div class="card-header font-weight-bold"><h6>Payment Information</h6></div>
+                                    <div class="card-header font-weight-bold">
+                                        <h6 class="mb-0">Payment Information</h6>
+                                    </div>
                                     <div class="card-body">
                                         <p><strong>Plan Name:</strong> Gold (Yearly)</p>
                                         <p><strong>Plan Price:</strong> $ 35,000.00</p>
