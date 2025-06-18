@@ -4274,6 +4274,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     display: inline-flex;
     box-sizing: border-box;
     margin: 0;
+    line-height: normal;
 }
 .admin-rurera-tabs-billing .card .card-body p:last-child {
     border-bottom: 0;
@@ -4289,6 +4290,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     box-shadow: none;
     border-radius: 0;
     border-bottom: 2px solid #ddd;
+    min-width: 160px;
 }
 .faq-content .card:last-child {
     border-bottom: 0;
