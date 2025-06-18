@@ -371,7 +371,7 @@
                                             <span class="icon-box">
                                                 <img src="/assets/default/img/envelope.jpg" alt="envelope">
                                             </span>
-                                            <input type="text" placeholder="Where can we reach you? (e.g., you@domain.com)" autocomplete="off" />
+                                            <input type="text" placeholder="Where can we reach you? (e.g., you@gmail.com)" autocomplete="off" />
                                         </div>
                                     </div>
                                 </div>
@@ -389,7 +389,12 @@
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                     <div class="form-group d-flex flex-column">
                                         <label class="input-label w-100 p-0">Job title *</label>
-                                        <div class="input-field w-100"><input type="text" placeholder="What's your role at work?" autocomplete="off" /></div>
+                                        <div class="input-field w-100">
+                                            <span class="icon-box">
+                                                <img src="/assets/default/img/hand.jpg" alt="hand">
+                                            </span>
+                                            <input type="text" placeholder="What's your role at work?" autocomplete="off" />
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -404,7 +409,12 @@
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                     <div class="form-group d-flex flex-column">
                                         <label class="input-label w-100 p-0">Phone number *</label>
-                                        <div class="input-field w-100"><input type="text" placeholder="Where can we call you (e.g., +1 555..)" autocomplete="off" /></div>
+                                        <div class="input-field w-100">
+                                            <span class="icon-box">
+                                                <img src="/assets/default/img/phone.jpg" alt="phone">
+                                            </span>
+                                            <input type="text" placeholder="Where can we call you (e.g., +1 555..)" autocomplete="off" />
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
