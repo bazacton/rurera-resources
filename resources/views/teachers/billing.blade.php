@@ -7,13 +7,16 @@
 @push('styles_top')
     <link rel="stylesheet" href="/assets/default/css/quiz-create.css">
     <style>
-        .status-paid {
+        .status-paid, .status-pending {
             background-color: #e6f7ec;
             color: #34a853;
             font-weight: 500;
             padding: 4px 10px;
             border-radius: 12px;
             font-size: 0.875rem;
+        }
+        .status-pending {
+            color: #555;
         }
         .icon-eye {
             cursor: pointer;
