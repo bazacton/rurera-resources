@@ -4258,6 +4258,18 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     margin: 0 25px 20px;
     display: block;
 }
+.admin-rurera-tabs-billing .card .card-body p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    padding: 12px 0;
+}
+.admin-rurera-tabs-billing .card .card-body p:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
 
 /*************************************
 Overview Questions Style Start
