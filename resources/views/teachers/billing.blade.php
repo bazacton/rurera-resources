@@ -79,7 +79,7 @@
                                     <div class="card-body d-flex justify-content-between align-items-start">
                                         <span>Your current active plan is "<strong>Gold Membership</strong>"</span>
                                     </div>
-                                    <div class="card-footer d-flex justify-content-between align-items-center pt-0">
+                                    <div class="card-footer d-flex justify-content-between align-items-center pt-0 flex-wrap">
                                         <button class="btn btn-danger mb-0">Cancel Membership</button>
                                         <a href="#" class="btn btn-link p-0">Update Membership Plan</a>
                                     </div>
