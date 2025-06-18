@@ -4294,6 +4294,23 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     background-color: #fff;
     border-top: 1px solid #ddd;
 }
+.faq-content .card .card-body {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+.faq-sidebar a {
+    border-bottom: 3px solid transparent;
+    font-weight: 700;
+    padding: 0 0 5px;
+}
+.faq-sidebar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.faq-sidebar a.active {
+    border-bottom-color: var(--primary);
+}
 
 /*************************************
 Overview Questions Style Start
