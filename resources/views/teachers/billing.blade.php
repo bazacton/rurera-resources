@@ -78,14 +78,15 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="card mb-4">
-                                    <div class="card-header font-weight-bold">Plan Information</div>
+                                    <div class="card-header font-weight-bold">Payment Information</div>
                                     <div class="card-body">
                                         <p><strong>Plan Name:</strong> Gold (Yearly)</p>
                                         <p><strong>Plan Price:</strong> $ 35,000.00</p>
                                         <p><strong>Start Date:</strong> 2024-06-10</p>
                                         <p><strong>End Date:</strong> 2025-06-10</p>
+                                        <p><strong>Date of Next Payment:</strong> 2025-06-10 00:00:00</p>
                                         <p><strong>Auto Renewal:</strong> No</p>
                                         <p><strong>Trial Period:</strong> N.A.</p>
                                     </div>
@@ -97,7 +98,6 @@
                                     <div class="card-header font-weight-bold">Payment Information</div>
                                     <div class="card-body">
                                         <p><strong>Date of Next Payment:</strong> 2025-06-10 00:00:00</p>
-                                        <p><strong>No. of Billing Cycles:</strong> 1</p>
                                     </div>
                                 </div>
                             </div>
