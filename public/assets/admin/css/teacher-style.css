@@ -4263,7 +4263,6 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     box-sizing: border-box;
 }
 .admin-rurera-tabs-billing .card .card-body p {
-    align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgba(0, 0, 0, .0300);
     padding: 12px 0;
