@@ -4334,6 +4334,9 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .faq-content .card .card-header.active .btn-link:after {
     transform: translateY(-50%) rotate(0deg);
 }
+.faq-content .card .card-header.active .btn-link:before {
+    display: none;
+}
 .faq-content .card .card-header .btn:hover,
 .faq-content .card .card-header .btn:focus {
     background-color: inherit;
