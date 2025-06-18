@@ -4315,7 +4315,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     color: #333;
     position: relative;
 }
-.faq-content .card .btn-link:before, .faq-content .card .btn-link:after {
+.faq-content .card .btn-link.collapsed:before, .faq-content .card .btn-link:after {
     background-color: #2d3d4d;
     content: " ";
     display: block;
