@@ -4297,7 +4297,8 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .faq-content .card .card-header {
     min-height: auto;
 }
-.faq-content .card .card-header .btn:hover {
+.faq-content .card .card-header .btn:hover,
+.faq-content .card .card-header .btn:focus {
     background-color: inherit;
     border-radius: 0;
     text-decoration: none;
