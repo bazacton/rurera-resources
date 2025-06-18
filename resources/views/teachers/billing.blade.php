@@ -215,13 +215,13 @@
                                                 <div class="card-header" id="heading1">
                                                     <h2 class="mb-0">
                                                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1">
-                                                            When will I be charged next?
+                                                            How long is my subscription valid?
                                                         </button>
                                                     </h2>
                                                 </div>
                                                 <div id="collapse1" class="collapse show" data-parent="#faqAccordion">
                                                     <div class="card-body">
-                                                        The exact date and time of your next payment (if applicable) is listed as “Date of Next Payment.”
+                                                        Your subscription is valid from the start date to the end date mentioned under “Payment Information.”
                                                     </div>
                                                 </div>
                                             </div>
@@ -229,13 +229,13 @@
                                                 <div class="card-header" id="heading2">
                                                     <h2 class="mb-0">
                                                         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2">
-                                                            Can I view my payment history or invoices?
+                                                            Can I upgrade or change my subscription plan?
                                                         </button>
                                                     </h2>
                                                 </div>
                                                 <div id="collapse2" class="collapse" data-parent="#faqAccordion">
                                                     <div class="card-body">
-                                                        Yes, you can access your billing history and download invoices through your account’s billing section.
+                                                        Your subscription is valid from the start date to the end date mentioned under Payment Information.
                                                     </div>
                                                 </div>
                                             </div>
@@ -243,18 +243,61 @@
                                                 <div class="card-header" id="heading3">
                                                     <h2 class="mb-0">
                                                         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3">
-                                                            How do I update my payment method?
+                                                            Is auto-renewal enabled on my subscription?
                                                         </button>
                                                     </h2>
                                                 </div>
                                                 <div id="collapse3" class="collapse" data-parent="#faqAccordion">
+                                                    <div class="card-body">
+                                                        The auto-renewal status is displayed in the Payment Information section. If it’s set to No,”your plan will not renew automatically.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                            <div class="card">
+                                                <div class="card-header" id="heading4">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4">
+                                                            When will I be charged next?
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                                <div id="collapse4" class="collapse show" data-parent="#faqAccordion">
+                                                    <div class="card-body">
+                                                        The exact date and time of your next payment (if applicable) is listed as “Date of Next Payment.”
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="heading5">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5">
+                                                            Can I view my payment history or invoices?
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                                <div id="collapse5" class="collapse" data-parent="#faqAccordion">
+                                                    <div class="card-body">
+                                                        Yes, you can access your billing history and download invoices through your account’s billing section.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="heading6">
+                                                    <h2 class="mb-0">
+                                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6">
+                                                            How do I update my payment method?
+                                                        </button>
+                                                    </h2>
+                                                </div>
+                                                <div id="collapse6" class="collapse" data-parent="#faqAccordion">
                                                     <div class="card-body">
                                                         To update your payment details, go to your account settings and select the billing section to manage your payment methods.
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
                                     </div>
                                 </div>
                             </div>
