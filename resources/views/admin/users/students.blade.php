@@ -277,14 +277,14 @@
     <div class="modal fade add-student-modal" id="add-student-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
                 <div class="modal-body">
                     <div id="modalNav" class="modal-section active">
                         <div class="teacher-header">
                             <h2 class="modal-title">Add Student</h2>
                             <p class="subheading">Roots International – 5th Grade</p>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
                         <div class="select-holder">
                             <h5>Select a Class</h5>
