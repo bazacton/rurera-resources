@@ -652,13 +652,14 @@
                             </a>
                         </li>
                     @endif
-
+                    @can('admin_users_list')
                     <li class="nav-item {{ (request()->is('admin/students')) ? 'active' : '' }}">
                         <a href="{{ getAdminPanelUrl('/students') }}" class="nav-link">
                             <i class="fas fa-chalkboard-teacher"></i>
                             <span>Students</span>
                         </a>
                     </li>
+                    @endif
             @endif
 
             @can('admin_teachers_list')
