@@ -416,6 +416,10 @@
                         
                     </div>
                     <div id="section2" class="modal-section">
+                        <div class="teacher-header">
+                            <h2 class="modal-title">Add Students</h2>
+                            <p class="subheading">Roots International – 5th Grade</p>
+                        </div>
                         <div class="student-form">
                             <div class="textarea-heading">
                                 <h5>Student names and optional Emails</h5>
