@@ -706,12 +706,12 @@
                 <div class="modal-body">
                     <div class="student-form">
                         <div class="textarea-heading">
-                        <h5>Student names and optional Emails</h5>
-                        <span>4 Students</span>
+                            <h5>Student names and optional Emails</h5>
+                            <span>4 Students</span>
                         </div>
                         <div class="textarea-field">
-                        <textarea name="teachers_email" placeholder="Enter your teachers work email address."></textarea>
-                        <p>List one teacher work email per line. You can also copy/paste from Word Exel</p>
+                            <textarea name="teachers_email" placeholder="Enter your teachers work email address."></textarea>
+                            <p>List one student per line. You can also copy/paste your student list from Word or Excel.</p>
                         </div>
                     </div>
                     <div class="teacher-buttons">
