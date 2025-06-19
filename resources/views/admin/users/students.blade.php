@@ -591,5 +591,26 @@
     /*Skelton Loading Fungtion End*/
 </script>
 
+<script>
+    let sectionHistory = [];
 
+    function goToSection(sectionId) {
+        $('.modal-section').removeClass('active');
+        $('#' + sectionId).addClass('active');
+        sectionHistory.push(sectionId);
+    }
+
+    function goBack() {
+        sectionHistory.pop(); // current section
+        const lastSection = sectionHistory.length ? sectionHistory[sectionHistory.length - 1] : 'modalNav';
+        $('.modal-section').removeClass('active');
+        $('#' + lastSection).addClass('active');
+    }
+
+    $('#sectionModal').on('hidden.bs.modal', function () {
+        $('.modal-section').removeClass('active');
+        $('#modalNav').addClass('active');
+        sectionHistory = [];
+    });
+</script>
 @endpush
