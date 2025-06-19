@@ -308,7 +308,7 @@
                                         </div>
                                         <div class="text-holder">
                                             <h4>Add a Student</h4>
-                                            <p>Add a single student to the class</p>
+                                            <p>Quickly enroll one student into your class.</p>
                                         </div>
                                     </a>
                                 </div>
@@ -321,7 +321,7 @@
                                     </div>
                                     <div class="text-holder">
                                         <h4>Add Students</h4>
-                                        <p>Add a single student to the class</p>
+                                        <p>Manually add one or Multiple students to the classroom.</p>
                                     </div>
                                 </a>
                             </div>
@@ -333,8 +333,8 @@
                                             <img src="/assets/default/img/user-icon.png" alt="user-icon">
                                         </div>
                                         <div class="text-holder">
-                                            <h4>Add a Student</h4>
-                                            <p>Add a single student to the class</p>
+                                            <h4>Import Student List</h4>
+                                            <p>Upload a student list using a file import.</p>
                                         </div>
                                     </a>
                                 </div>
@@ -346,8 +346,8 @@
                                             <img src="/assets/default/img/user-icon.png" alt="user-icon">
                                         </div>
                                         <div class="text-holder">
-                                            <h4>Add a Student</h4>
-                                            <p>Add a single student to the class</p>
+                                            <h4>Students Self-Join</h4>
+                                            <p>Share a unique class link so students can join themselves.</p>
                                         </div>
                                     </a>
                                 </div>
@@ -359,7 +359,7 @@
                                             <img src="/assets/default/img/user-icon.png" alt="user-icon">
                                         </div>
                                         <div class="text-holder">
-                                            <h4>Import Student</h4>
+                                            <h4>Import Student List</h4>
                                             <p>Add a single student to the class</p>
                                         </div>
                                     </a>
