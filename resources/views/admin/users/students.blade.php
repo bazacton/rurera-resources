@@ -554,6 +554,34 @@
                             <button class="btn btn-outline back-btn" type="button">Back</button>
                         </div>
                     </div>
+                    <div class="step-modal d-none" data-step="6">
+                        <div class="student-successfull-modal">
+                            <div class="row align-items-center mt-auto mb-30 pt-50 px-30">
+                                <div class="col-md-4">
+                                    <div class="img-holder">
+                                        <figure>
+                                            <img src="/assets/default/img/sucsess-img.png" alt="sucsess-img">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="text-holder">
+                                        <h2>You’ve successfully added <strong>4 new students</strong></h2>
+                                        <p>
+                                        We’ve generated <strong>usernames</strong> and <strong>passwords</strong> for all new students.
+                                        You can view or edit them in the
+                                        <a href="#">Login Cards</a>
+                                        or within student settings.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teacher-buttons mt-30">
+                                <button class="btn btn-outline back-btn">Back</button>
+                                <button class="btn btn-primary next-btn">Next</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -686,7 +714,7 @@
             </div>
         </div>
     </div>
-    <!-- Add Student Table Modal -->
+    <!-- Add Student Table Modal done -->
     <div class="modal fade add-student-modal" id="student-table-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
