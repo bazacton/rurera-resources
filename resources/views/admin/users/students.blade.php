@@ -392,7 +392,7 @@
                                     <p>List one student per line. You can also copy/paste your student list from&nbsp;Word&nbsp;or&nbsp;Excel.</p>
                                 </div>
                             </div>
-                            <div class="teacher-buttons">
+                            <div class="teacher-buttons mt-30">
                                 <button class="btn btn-outline back-btn" type="button">Back</button>
                                 <button class="btn btn-primary next-btn">Review Student</button>
                             </div>
@@ -468,12 +468,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="teacher-buttons">
+                        <div class="teacher-buttons mt-30">
                             <button class="btn btn-outline back-btn" type="button">Back</button>
                             <button class="btn btn-primary next-btn">Next</button>
                         </div>
                     </div>
-                    <div class="step-modal d-none" data-step="4">
+                    <div class="step-modal d-none class-join-modal" data-step="4">
                         <div class="teacher-header">
                             <h2 class="modal-title">Class Join Link</h2>
                             <p class="subheading">Roots International – 5th&nbsp;Grade</p>
@@ -492,13 +492,13 @@
                                 <button class="copy-btn" type="button">Copy Link</button>
                             </div>
                         </div>
-                        <div class="teacher-buttons">
+                        <div class="teacher-buttons mt-30">
                             <button class="btn btn-outline back-btn" type="button">Back</button>
                             <button class="btn btn-primary next-btn">Next</button>
                         </div>
                     </div>
                     <div class="step-modal d-none" data-step="5">
-                        
+
                     </div>
                 </div>
             </div>
