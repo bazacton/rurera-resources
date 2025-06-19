@@ -548,6 +548,80 @@
         </div>
     </div>
 
+    <!-- Add Student Listing Modal -->
+    <div class="modal fade add-student-modal" id="class-join-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="teacher-header">
+                    <h2 class="modal-title">Add Student</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="select-holder">
+                    <h5>Select a Class</h5>
+                    <div class="select-box">
+                        <select>
+                        <option value="Orange - 5th Grade">Orange - 5th Grade</option>
+                        <option value="Orange - 5th Grade">Orange - 6th Grade</option>
+                        <option value="Orange - 5th Grade">Orange - 7th Grade</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="student-icon-box-holder">
+                    <div class="row">
+                        <div class="col-md-3">
+                        <div class="student-icon-box">
+                            <div class="img-holder">
+                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                            </div>
+                            <div class="text-holder">
+                            <h4>Add a Student</h4>
+                            <p>Add a single student to the class</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-md-3">
+                        <div class="student-icon-box">
+                            <div class="img-holder">
+                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                            </div>
+                            <div class="text-holder">
+                            <h4>Add a Student</h4>
+                            <p>Add a single student to the class</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-md-3">
+                        <div class="student-icon-box">
+                            <div class="img-holder">
+                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                            </div>
+                            <div class="text-holder">
+                            <h4>Add a Student</h4>
+                            <p>Add a single student to the class</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-md-3">
+                        <div class="student-icon-box">
+                            <div class="img-holder">
+                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                            </div>
+                            <div class="text-holder">
+                            <h4>Add a Student</h4>
+                            <p>Add a single student to the class</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 @endsection
