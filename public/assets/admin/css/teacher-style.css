@@ -4564,13 +4564,6 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .student-icon-box .img-holder {
     margin: 0 0 10px;
 }
-.student-icon-box {
-    border: 1px solid #ddd;
-    box-shadow: 0 0 5px rgba(0,0,0,0.050);
-    border-radius: 5px;
-    text-align: center;
-    padding: 30px;
-}
 .student-icon-box .img-holder img {
     height: 80px;
     width: 80px;
