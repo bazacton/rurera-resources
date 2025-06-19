@@ -430,7 +430,7 @@
                     @foreach($classes as $classData)
                         @php $class_color = ($classData->class_color != '')? $classData->class_color : '#009788';
     @endphp
-                        <div class="card text-white classes-card bg-teal mb-3 mx-10" style="position: relative; background-color:{{$class_color}}">
+                        <div class="card text-white classes-card bg-teal mb-3 mx-10 disabled" style="position: relative; background-color:{{$class_color}}">
                             <!-- Dropdown Menu -->
                             <div class="card-options dropdown">
                                 <button
