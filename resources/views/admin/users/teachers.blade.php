@@ -12,8 +12,6 @@
                 <h1>Teachers {{ trans('admin/main.list') }}</h1>
                 <div class="section-header-breadcrumb">
                     <div class="breadcrumb-item active"><a>Teachers</a></div>
-                    <div class="breadcrumb-item"><a href="#">{{ trans('admin/main.users_list') }}</a></div>
-                    <div class="breadcrumb-item"><a href="/admin/students/print_details">Print Details</a></div>
                 </div>
             </div>
         </section>
@@ -59,10 +57,8 @@
                                                 Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                             </a>
                                             <div class="dropdown-menu">
-                                                <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                <a  class="dropdown-item unlink-students" href="javascript:;" data-type_class="sections-users"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
-                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
-                                            </div>
+                                                <a  class="dropdown-item unlink-teachers" href="javascript:;" data-type_class="sections-teachers"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
@@ -86,7 +82,11 @@
                                 <table class="table mb-0">
                                     <thead class="thead-light">
                                     <tr>
-                                        <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Teacher</th>
+                                        <th class="skelton-hide1 skelton-height-lg skelton-mb-0">
+                                            <div class="check-box">
+                                                <input type="checkbox" class="check-uncheck-all" data-target_class="sections-teachers" name="check-two">
+                                            </div>
+                                            Teacher</th>
                                         <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Role</th>
                                         <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Last Login</th>
                                         <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Classes</th>
@@ -100,7 +100,7 @@
                                             <tr>
                                                 <td data-th="Teacher/Admin" class="skelton-hide1 skelton-height-lg skelton-mb-0">
                                                     <div class="check-box">
-                                                        <input type="checkbox" class="sections-users" value="{{ $user->id }}">
+                                                        <input type="checkbox" class="sections-teachers" value="{{ $user->id }}">
                                                     </div>
                                                     <strong>
                                                     <span class="user-lable">
@@ -146,7 +146,7 @@
                                                 Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                             </a>
                                             <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                <a class="dropdown-item delete-invitations" data-type_class="invitations_list" href="javascript:;"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
                                             </div>
                                         </div>
                                     </div>
@@ -158,7 +158,7 @@
                                         <tr>
                                             <th class="skelton-hide skelton-height-lg skelton-mb-0">
                                                 <div class="check-box">
-                                                    <input type="checkbox" name="check-two">
+                                                    <input type="checkbox" class="check-uncheck-all" data-target_class="invitations_list" name="check-two">
                                                 </div>
                                                 Teacher/Admin
                                             </th>
@@ -174,7 +174,7 @@
                                                 <tr>
                                                     <td data-th="Teacher/Admin" class="skelton-hide skelton-height-lg skelton-mb-0">
                                                         <div class="check-box">
-                                                            <input type="checkbox" name="check-one">
+                                                            <input type="checkbox" name="check-one" class="invitations_list" value="{{$invitationObj->id}}">
                                                         </div>
                                                         <strong>
                                                     <span class="user-lable">
@@ -234,7 +234,7 @@
                                 <div class="input-group">
                                     <div class="radio-buttons">
                                             <input type="radio" id="teacher_role" name="role_id"
-                                                   class="assignment_subject_check" value="7">
+                                                   class="assignment_subject_check" value="7" checked>
                                         <label for="teacher_role">Teacher</label>
                                     </div>
                                 </div>
@@ -365,6 +365,18 @@
             .forEach((el) => el.classList.remove("skelton-hide"));
         }, 3000);
 
+        $('body').on('click', '.unlink-teachers', function (e) {
+            var type_class = $(this).attr('data-type_class');
+            var teachers_ids = [];
+            $('input.' + type_class + ':checked').each(function() {
+                teachers_ids.push($(this).val());
+            });
+
+            $(".confirm-title").html('Are you sure you want to remove?');
+            $(".confirm-approve-btn").attr('href', '/admin/users/unlink_teachers?teachers_ids='+teachers_ids);
+            $(".rurera-confirm-modal").modal('show');
+        });
+
 
         $(document).on('click', '.admin-rurera-tabs li a', function (e) {
             var target_class = $(this).closest('.admin-rurera-tabs').attr('data-target_class');
@@ -382,6 +394,34 @@
             $(".confirm-approve-btn").attr('href', '/admin/users/delete_invitation?invitation_id='+invitation_id);
             $(".rurera-confirm-modal").modal('show');
         });
+
+        $(document).on('click', '.delete-invitations', function (e) {
+            var type_class = $(this).attr('data-type_class');
+            var invitation_ids = [];
+            $('input.' + type_class + ':checked').each(function() {
+                invitation_ids.push($(this).val());
+            });
+
+            $(".confirm-title").html('Are you sure you want to remove?');
+            $(".confirm-approve-btn").attr('href', '/admin/users/delete_invitations?invitation_ids='+invitation_ids);
+            $(".rurera-confirm-modal").modal('show');
+        });
+
+        $(document).on('change', '.check-uncheck-all', function (e) {
+            var target_class = $(this).attr('data-target_class');
+            var isChecked = $(this).is(':checked');
+            $('.' + target_class).prop('checked', isChecked);
+        });
+
+        $(document).on('input keyup keydown paste', '.search-teachers', function () {
+            var value = $(this).val().toLowerCase();
+            $('tbody.teachers-list tr').each(function () {
+                var rowText = $(this).text().toLowerCase();
+                $(this).toggle(rowText.includes(value));
+            });
+        });
+
+
 
 
     });
