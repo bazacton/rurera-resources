@@ -570,52 +570,55 @@
                     </div>
                     </div>
                     <div class="student-icon-box-holder">
-                    <div class="row">
-                        <div class="col-md-3">
-                        <div class="student-icon-box">
-                            <div class="img-holder">
-                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Choose a way to add Students:</h3>
                             </div>
-                            <div class="text-holder">
-                            <h4>Add a Student</h4>
-                            <p>Add a single student to the class</p>
+                            <div class="col-md-3">
+                                <div class="student-icon-box">
+                                    <div class="img-holder">
+                                    <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                                    </div>
+                                    <div class="text-holder">
+                                        <h4>Add a Student</h4>
+                                        <p>Add a single student to the class</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            <div class="student-icon-box">
+                                <div class="img-holder">
+                                <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                                </div>
+                                <div class="text-holder">
+                                <h4>Add a Student</h4>
+                                <p>Add a single student to the class</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-md-3">
+                            <div class="student-icon-box">
+                                <div class="img-holder">
+                                <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                                </div>
+                                <div class="text-holder">
+                                <h4>Add a Student</h4>
+                                <p>Add a single student to the class</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-md-3">
+                            <div class="student-icon-box">
+                                <div class="img-holder">
+                                <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                                </div>
+                                <div class="text-holder">
+                                <h4>Add a Student</h4>
+                                <p>Add a single student to the class</p>
+                                </div>
+                            </div>
                             </div>
                         </div>
-                        </div>
-                        <div class="col-md-3">
-                        <div class="student-icon-box">
-                            <div class="img-holder">
-                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
-                            </div>
-                            <div class="text-holder">
-                            <h4>Add a Student</h4>
-                            <p>Add a single student to the class</p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-md-3">
-                        <div class="student-icon-box">
-                            <div class="img-holder">
-                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
-                            </div>
-                            <div class="text-holder">
-                            <h4>Add a Student</h4>
-                            <p>Add a single student to the class</p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-md-3">
-                        <div class="student-icon-box">
-                            <div class="img-holder">
-                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
-                            </div>
-                            <div class="text-holder">
-                            <h4>Add a Student</h4>
-                            <p>Add a single student to the class</p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>
