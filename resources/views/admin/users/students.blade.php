@@ -328,7 +328,7 @@
                                 <img src="/assets/default/img/user-icon.png" alt="user-icon">
                                 </div>
                                 <div class="text-holder">
-                                <h4>Add a Student</h4>
+                                <h4> <a href="#" data-toggle="modal" data-target="#add-student-modal2">Add a Student</a></h4>
                                 <p>Add a single student to the class</p>
                                 </div>
                             </div>
@@ -345,6 +345,73 @@
                             </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Student Listing Form Modal -->
+    <div class="modal fade add-student-modal" id="add-student-modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="teacher-header">
+                    <h2 class="modal-title">Add Student</h2>
+                    <p>Apple - 5th Grade</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="student-form">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Student Detail</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="field-lable">
+                                    Username <em>*</em>
+                                </span>
+                                <div class="field-holder">
+                                    <input type="text" placeholder="billym@school.edu" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="field-lable">
+                                    Password <em>*</em>
+                                </span>
+                                <div class="field-holder">
+                                    <input type="password" placeholder="1234" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="field-lable">
+                                    First Name <em>*</em>
+                                </span>
+                                <div class="field-holder">
+                                    <input type="text" placeholder="Kaiser" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="field-lable">
+                                    Last Name <em>*</em>
+                                </span>
+                                <div class="field-holder">
+                                    <input type="text" placeholder="khan" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <span class="field-lable">
+                                    Email <em>*</em>
+                                </span>
+                                <div class="field-holder">
+                                    <input type="text" placeholder="billym@school.edu" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher-buttons">
+                        <button class="btn btn-outline">Back</button>
+                        <button class="btn btn-primary">Add Single Student</button>
                     </div>
                 </div>
             </div>
