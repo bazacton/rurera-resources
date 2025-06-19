@@ -4626,7 +4626,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     text-align: center;
 }
 .student-icon-box > a {
-    padding: 25px;
+    padding: 25px 15px;
     text-decoration: none;
     display: block;
 }

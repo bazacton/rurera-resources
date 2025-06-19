@@ -393,7 +393,7 @@
                                     Username <em>*</em>
                                 </span>
                                 <div class="field-holder">
-                                    <input type="text" placeholder="billym@school.edu" autocomplete="off">
+                                    <input type="text" placeholder="Create a unique username (e.g Daniel_243)" autocomplete="off">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -401,7 +401,7 @@
                                     Password <em>*</em>
                                 </span>
                                 <div class="field-holder">
-                                    <input type="password" placeholder="1234" autocomplete="off">
+                                    <input type="password" placeholder="Create a secure password" autocomplete="off">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -409,7 +409,7 @@
                                     First Name <em>*</em>
                                 </span>
                                 <div class="field-holder">
-                                    <input type="text" placeholder="Kaiser" autocomplete="off">
+                                    <input type="text" placeholder="Enter student first name (e.g. Daniel)" autocomplete="off">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -417,7 +417,7 @@
                                     Last Name <em>*</em>
                                 </span>
                                 <div class="field-holder">
-                                    <input type="text" placeholder="khan" autocomplete="off">
+                                    <input type="text" placeholder="Enter student last name? (e.g. Wilson)" autocomplete="off">
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -425,7 +425,7 @@
                                     Email <em>*</em>
                                 </span>
                                 <div class="field-holder">
-                                    <input type="text" placeholder="billym@school.edu" autocomplete="off">
+                                    <input type="text" placeholder="Student Valid email address" autocomplete="off">
                                 </div>
                             </div>
                         </div>
@@ -613,85 +613,85 @@
 
     <!-- Import CSV Modal -->
     <div class="modal fade import-csv-modal" id="import-csv-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="teacher-header">
-            <h2 class="modal-title">Import CSV</h2>
-            <p class="subheading">Class 1 - period 4</p>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <div class="import-csv">
-              <div class="import-csv-list">
-                <h3>Upload a .csv file:</h3>
-                <ul>
-                  <li>File format must be in Comma Separated Values (.csv) format.</li>
-                  <li>
-                    The header row must match the 
-                    <a href="#" class="link">Sample CSV File</a> exactly.
-                  </li>
-                </ul>
-              </div>
-              <div class="import-heading">
-                <h4>Spreadsheet Example:</h4>
-                <a href="#" class="download-link"><img src="/assets/default/svgs/download.svg" alt="download"> Download Sample CSV File</a>
-              </div>
-              <div class="table-sm">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>STUDENT_USERNAME*</th>
-                      <th>PASSWORD*</th>
-                      <th>FIRST_NAME*</th>
-                      <th>LAST_NAME*</th>
-                      <th>EMAIL</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>jonnysmith</td>
-                      <td>mypass123</td>
-                      <td>Maxx</td>
-                      <td>Butler</td>
-                      <td>jonny@myschool.edu</td>
-                    </tr>
-                    <tr>
-                      <td>student123</td>
-                      <td>h@ll0</td>
-                      <td>Jenny</td>
-                      <td>Jones</td>
-                      <td>j.jones@myschool.edu</td>
-                    </tr>
-                    <tr>
-                      <td>kelly-jones</td>
-                      <td>Str0Ngp@$$w0Rdd</td>
-                      <td>Kelly</td>
-                      <td>Jones</td>
-                      <td>k.jones@myschool.edu</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="import-drag">
-                <div class="drag-box">
-                  <div class="img-holder">
-                    <img src="/assets/default/img/drag-file-img.png" alt="drag-file-img">
-                  </div>
-                  <div class="text-holder">
-                    <strong>Drag your CSV file here or...</strong>
-                    <input type="file" id="csv-file">
-                    <label for="csv-file">Choose file</label>
-                    <span>no file choosen</span>
-                  </div>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="teacher-header">
+                    <h2 class="modal-title">Import CSV</h2>
+                    <p class="subheading">Class 1 - period 4</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-              </div>
+                <div class="modal-body">
+                    <div class="import-csv">
+                    <div class="import-csv-list">
+                        <h3>Upload a .csv file:</h3>
+                        <ul>
+                        <li>File format must be in Comma Separated Values (.csv) format.</li>
+                        <li>
+                            The header row must match the 
+                            <a href="#" class="link">Sample CSV File</a> exactly.
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="import-heading">
+                        <h4>Spreadsheet Example:</h4>
+                        <a href="#" class="download-link"><img src="/assets/default/svgs/download.svg" alt="download"> Download Sample CSV File</a>
+                    </div>
+                    <div class="table-sm">
+                        <table>
+                        <thead>
+                            <tr>
+                            <th>STUDENT_USERNAME*</th>
+                            <th>PASSWORD*</th>
+                            <th>FIRST_NAME*</th>
+                            <th>LAST_NAME*</th>
+                            <th>EMAIL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>jonnysmith</td>
+                            <td>mypass123</td>
+                            <td>Maxx</td>
+                            <td>Butler</td>
+                            <td>jonny@myschool.edu</td>
+                            </tr>
+                            <tr>
+                            <td>student123</td>
+                            <td>h@ll0</td>
+                            <td>Jenny</td>
+                            <td>Jones</td>
+                            <td>j.jones@myschool.edu</td>
+                            </tr>
+                            <tr>
+                            <td>kelly-jones</td>
+                            <td>Str0Ngp@$$w0Rdd</td>
+                            <td>Kelly</td>
+                            <td>Jones</td>
+                            <td>k.jones@myschool.edu</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                    <div class="import-drag">
+                        <div class="drag-box">
+                        <div class="img-holder">
+                            <img src="/assets/default/img/drag-file-img.png" alt="drag-file-img">
+                        </div>
+                        <div class="text-holder">
+                            <strong>Drag your CSV file here or...</strong>
+                            <input type="file" id="csv-file">
+                            <label for="csv-file">Choose file</label>
+                            <span>no file choosen</span>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
-  </div>
-</div>
+    </div>
 @endsection
 
 @push('scripts_bottom')
