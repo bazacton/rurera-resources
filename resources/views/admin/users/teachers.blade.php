@@ -256,6 +256,7 @@
                         <div class="textarea-field">
                             <textarea name="teachers_email" placeholder="Enter your teachers work email address."></textarea>
                             <p>List one teacher work email per line. You can also copy/paste from Word Exel</p>
+                            <p>Maximum no of emails allowed is 20</p>
                         </div>
                         <div class="review-btn-holder d-flex align-items-center justify-content-end">
                             <button type="submit" class="review-btn" type="button">Review Invites</button>
