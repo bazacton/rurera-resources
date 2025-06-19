@@ -4564,6 +4564,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .student-icon-box h4 a {
     color: #666;
     text-decoration: none;
+    font-weight: 600;
 }
 .student-icon-box p {
     margin: 0;
