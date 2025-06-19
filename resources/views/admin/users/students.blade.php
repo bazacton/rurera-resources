@@ -368,8 +368,8 @@
                                 </div>
                             </div>
                             <div class="teacher-buttons">
-                                <button class="btn btn-outline" type="button">Back</button>
-                                <button class="btn btn-primary">Add Student</button>
+                                <button class="btn btn-outline back-btn" type="button">Back</button>
+                                <button class="btn btn-primary next-btn">Add Student</button>
                             </div>
                         </div>
                     </div>
