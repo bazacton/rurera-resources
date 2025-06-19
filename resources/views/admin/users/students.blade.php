@@ -383,7 +383,7 @@
                             </div>
                         </div>
                     </div>
-                    </div>
+                    
                      <div class="tab-pane fade" id="import-csv">
                         <div class="teacher-header">
                             <h2 class="modal-title">Import CSV</h2>
@@ -458,6 +458,7 @@
                             <button class="btn btn-outline back-btn" type="button">Back</button>
                             <button class="btn btn-primary next-btn">Next</button>
                         </div>
+                    </div>
                     </div>
                     <!--<div class="step-modal d-none class-join-modal" data-step="4">
                         <div class="teacher-header">
