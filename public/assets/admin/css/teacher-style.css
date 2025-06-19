@@ -50,6 +50,7 @@
 .admin_teacher_role .classes-card.disabled:last-child {
     background-color: #efefef !important;
     position: relative;
+    opacity: 0.8;
 }
 .admin_teacher_role .classes-card.disabled:last-child .bottom-controls {
     background-color: #efefef;
