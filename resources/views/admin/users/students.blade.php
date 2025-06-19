@@ -315,7 +315,7 @@
                             </div>
                             <div class="col-md-3">
                             <div class="student-icon-box">
-                                <a href="#" data-toggle="modal" data-target="#student-successfull-modal">
+                                <a href="#" data-toggle="modal" data-target="#student-textarea-modal">
                                     <div class="img-holder">
                                         <img src="/assets/default/img/user-icon.png" alt="user-icon">
                                     </div>
