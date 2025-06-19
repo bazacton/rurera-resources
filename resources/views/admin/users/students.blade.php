@@ -409,7 +409,7 @@
                             </div>
                         </div>
                         
-                        <div class="teacher-buttons mt-30">
+                        <div class="teacher-buttons">
                             <button class="btn btn-outline" type="button" onclick="goBack()">Back</button>
                             <button class="btn btn-primary">Add Single Student</button>
                         </div>
