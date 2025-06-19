@@ -50,10 +50,21 @@
 .admin_teacher_role .classes-card.disabled:last-child {
     background-color: #efefef !important;
     pointer-events: none;
-    opacity: 0.5;
+    position: relative;
 }
 .admin_teacher_role .classes-card.disabled:last-child .bottom-controls {
     background-color: #efefef;
+}
+.admin_teacher_role .classes-card.disabled:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    content: "";
+    z-index: 1;
+    border-radius: 8px;
 }
 
 /* Rurera-Confirm-Modal Style Start */
@@ -4789,24 +4800,19 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     background-color: #fff;
     padding: 25px;
 }
-
 .import-csv-modal .modal-dialog .modal-content {
     box-shadow: none;
 }
-
 .import-csv-modal .modal-body {
     padding: 0;
 }
-
 .import-csv-list h3 {
     font-size: 16px;
     margin: 20px 0 5px;
 }
-
 .import-csv-list ul {
     padding: 0 0 0 15px;
 }
-
 .import-csv-list li {
     list-style: auto;
     color: #333;
@@ -4829,7 +4835,17 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     justify-content: space-between;
     margin: 0 0 10px;
 }
-
+.import-heading .download-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--blue);
+    text-decoration: none;
+}
+.import-heading .download-link img {
+    height: 15px;
+    filter: invert(32%) sepia(34%) saturate(4572%) hue-rotate(199deg) brightness(100%) contrast(110%);
+}
 .import-csv .table-sm {
     border: 1px solid #ccc;
     overflow: hidden;
