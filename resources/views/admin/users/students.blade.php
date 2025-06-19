@@ -583,6 +583,23 @@
                             </div>
                         </div>
                     </div>
+                    <div class="step-modal d-none" data-step="7">
+                        <div class="student-successfull-modal">
+                            <div class="text-holder">
+                                <h2>You’ve successfully added <strong>4 new students</strong></h2>
+                                <p>
+                                We’ve generated <strong>usernames</strong> and <strong>passwords</strong> for all new students.
+                                You can view or edit them in the
+                                <a href="#">Login Cards</a>
+                                or within student settings.
+                                </p>
+                            </div>
+                            <div class="teacher-buttons">
+                                <button class="btn btn-outline back-btn">Back</button>
+                                <button class="btn btn-primary next-btn">Next</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -654,7 +671,7 @@
             </div>
         </div>
     </div>
-    <!-- student-successfull-modal with image -->
+    <!-- student-successfull-modal with image done -->
     <div class="modal fade student-successfull-modal" id="student-successfull-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
