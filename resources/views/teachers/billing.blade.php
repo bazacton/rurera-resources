@@ -404,7 +404,7 @@
             </div>
         </div>
     </div>
-    <!-- Add Student Modal -->
+    <!-- Add Student Table Modal -->
     <div class="modal fade add-student-modal" id="add-student-modal22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
