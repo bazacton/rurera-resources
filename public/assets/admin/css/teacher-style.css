@@ -4565,7 +4565,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     color: #333;
     appearance: none;
 }
-.add-student-moda .select-holder {
+.add-student-modal .select-holder {
     margin: 0 0 30px;
 }
 .add-student-modal .select-box {
