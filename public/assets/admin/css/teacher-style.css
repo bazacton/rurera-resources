@@ -4570,8 +4570,11 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .student-icon-box-holder .row {
     margin: 0 -8px;
 }
-
-.student-icon-box-holder .col-md-3 {
+.student-icon-box-holder h3 {
+    font-size: 22px;
+}
+.student-icon-box-holder .col-md-3,
+.student-icon-box-holder .col-md-12 {
     padding: 0 8px;
 }
 
