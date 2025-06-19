@@ -585,6 +585,10 @@
                     </div>
                     <div class="step-modal d-none" data-step="7">
                         <div class="student-successfull-modal">
+                            <div class="teacher-header">
+                                <h2 class="modal-title">Add Student</h2>
+                                <p class="subheading">Roots International – 5th&nbsp;Grade</p>
+                            </div>
                             <div class="text-holder">
                                 <h2>You’ve successfully added <strong>4 new students</strong></h2>
                                 <p>
@@ -707,7 +711,7 @@
             </div>
         </div>
     </div>
-    <!-- student-successfull-modal 2 -->
+    <!-- student-successfull-modal 2 done -->
     <div class="modal fade student-successfull-modal" id="student-successfull-modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
