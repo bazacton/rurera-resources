@@ -561,7 +561,7 @@
                                 <div class="col-md-4">
                                     <div class="img-holder">
                                         <figure>
-                                            <img src="/assets/default/img/sucsess-img.png" alt="sucsess-img">
+                                            <img src="/assets/default/img/sucsess-img.jpg" alt="sucsess-img">
                                         </figure>
                                     </div>
                                 </div>
@@ -687,7 +687,7 @@
                         <div class="col-md-4">
                             <div class="img-holder">
                                 <figure>
-                                    <img src="/assets/default/img/sucsess-img.png" alt="sucsess-img">
+                                    <img src="/assets/default/img/sucsess-img.jpg" alt="sucsess-img">
                                 </figure>
                             </div>
                         </div>
