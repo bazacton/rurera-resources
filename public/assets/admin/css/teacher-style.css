@@ -4498,7 +4498,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     box-shadow: none;
 }
 .add-student-modal .modal-body {
-    padding: 15px 0 0;
+    padding: 0;
 }
 .add-student-modal .error-alert {
     background-color: #fbedeb;
