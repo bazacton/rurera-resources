@@ -552,6 +552,7 @@
                         </div>
                         <div class="teacher-buttons mt-30">
                             <button class="btn btn-outline back-btn" type="button">Back</button>
+                            <button class="btn btn-primary next-btn">Next</button>
                         </div>
                     </div>
                     <div class="step-modal d-none" data-step="6">
