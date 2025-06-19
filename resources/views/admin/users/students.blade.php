@@ -306,7 +306,7 @@
                                     <img src="/assets/default/img/user-icon.png" alt="user-icon">
                                     </div>
                                     <div class="text-holder">
-                                        <h4>Add a Student</h4>
+                                        <h4><a href="#" data-toggle="modal" data-target="#add-student-modal2">Add a Student</a></h4>
                                         <p>Add a single student to the class</p>
                                     </div>
                                 </div>
@@ -317,7 +317,7 @@
                                 <img src="/assets/default/img/user-icon.png" alt="user-icon">
                                 </div>
                                 <div class="text-holder">
-                                <h4>Add a Student</h4>
+                                <h4><a href="#" data-toggle="modal" data-target="#student-successfull-modal">Add Students</a></h4>
                                 <p>Add a single student to the class</p>
                                 </div>
                             </div>
@@ -328,7 +328,7 @@
                                         <img src="/assets/default/img/user-icon.png" alt="user-icon">
                                     </div>
                                     <div class="text-holder">
-                                        <h4> <a href="#" data-toggle="modal" data-target="#add-student-modal2">Add a Student</a></h4>
+                                        <h4> <a href="#" data-toggle="modal" data-target="#student-successfull-modal2">Add a Student</a></h4>
                                         <p>Add a single student to the class</p>
                                     </div>
                                 </div>
@@ -339,7 +339,7 @@
                                         <img src="/assets/default/img/user-icon.png" alt="user-icon">
                                     </div>
                                     <div class="text-holder">
-                                        <h4>Add a Student</h4>
+                                        <h4><a href="#" data-toggle="modal" data-target="#student-table-modal">Add a Student</a></h4>
                                         <p>Add a single student to the class</p>
                                     </div>
                                 </div>
@@ -412,6 +412,147 @@
                     <div class="teacher-buttons">
                         <button class="btn btn-outline">Back</button>
                         <button class="btn btn-primary">Add Single Student</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- student-successfull-modal with image -->
+    <div class="modal fade student-successfull-modal" id="student-successfull-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class="row align-items-center mt-auto mb-30 pt-50 px-30">
+                        <div class="col-md-4">
+                            <div class="img-holder">
+                                <figure>
+                                    <img src="/assets/default/img/sucsess-img.png" alt="sucsess-img">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="text-holder">
+                                <h2>You’ve successfully added <strong>4 new students</strong></h2>
+                                <p>
+                                We’ve generated <strong>usernames</strong> and <strong>passwords</strong> for all new students.
+                                You can view or edit them in the
+                                <a href="#">Login Cards</a>
+                                or within student settings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher-buttons">
+                        <button class="btn btn-outline">Done</button>
+                        <button class="btn btn-primary">Print Login Cards</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- student-successfull-modal 2 -->
+    <div class="modal fade student-successfull-modal" id="student-successfull-modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class="text-holder">
+                        <h2>You’ve successfully added <strong>4 new students</strong></h2>
+                        <p>
+                        We’ve generated <strong>usernames</strong> and <strong>passwords</strong> for all new students.
+                        You can view or edit them in the
+                        <a href="#">Login Cards</a>
+                        or within student settings.
+                        </p>
+                    </div>
+                    <div class="teacher-buttons">
+                        <button class="btn btn-outline">Done</button>
+                        <button class="btn btn-primary">Print Login Cards</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Student Table Modal -->
+    <div class="modal fade add-student-modal" id="student-table-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="teacher-header">
+                    <h2 class="modal-title">Class Join Link</h2>
+                    <p class="subheading">Apple – 5th Grade</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="error-alert">
+                    Errors have occurred with 4 students imported.
+                    <a href="#">Go back and fix errors.</a>
+                    </div>
+                    <div class="table-sm">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Student Username</th>
+                            <th>Password</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>billy.173</td>
+                            <td>bluegem</td>
+                            <td>Billy</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>billymadison.26</td>
+                            <td>yellowflower</td>
+                            <td>Billy</td>
+                            <td>Madison</td>
+                            <td></td>
+                        </tr>
+                        <tr class="error-row">
+                            <td>
+                            <span class="error-highlight">billymadison.26</span>
+                            <div class="error-message">This is duplicated within the file</div>
+                            </td>
+                            <td>bluebubble</td>
+                            <td>Billy</td>
+                            <td>Madison</td>
+                            <td>
+                            <span class="error-highlight">billym@school.edu</span>
+                            <div class="error-message">This email is already in use by another account.</div>
+                            </td>
+                        </tr>
+                        <tr class="error-row">
+                            <td>
+                            <span class="error-highlight">billym@school.edu</span>
+                            <div class="error-message">
+                                This username is already in use. Usernames must be unique across all of Typing.com.
+                            </div>
+                            </td>
+                            <td>purpleflower</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                            <span class="error-highlight">billym@school.edu</span>
+                            <div class="error-message">
+                                This email is already in use by another account.<br>
+                                This is duplicated within the file.
+                            </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                     </div>
                 </div>
             </div>
