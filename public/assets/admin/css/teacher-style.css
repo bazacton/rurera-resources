@@ -4657,6 +4657,27 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     font-size: 24px;
     margin: 10px 0 20px;
 }
+.add-student-btn {
+    background: linear-gradient(to bottom, #6bb9f0, #4a90e2);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+    line-height: normal;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.add-student-btn img {
+    height: 15px;
+    width: 15px;
+    filter: invert(97%) sepia(4%) saturate(9%) hue-rotate(356deg) brightness(105%) contrast(100%);
+}
 
 /* Student-Successfull-Modal Style Start */
 .student-successfull-modal .modal-dialog {
