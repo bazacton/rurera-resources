@@ -328,7 +328,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="student-icon-box">
-                                    <a href="#" data-toggle="modal" data-target="#student-successfull-modal2">
+                                    <a href="#" data-toggle="modal" data-target="#import-csv-modal">
                                         <div class="img-holder">
                                             <img src="/assets/default/img/user-icon.png" alt="user-icon">
                                         </div>
@@ -341,7 +341,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="student-icon-box">
-                                    <a href="#" data-toggle="modal" data-target="#student-table-modal">
+                                    <a href="#" data-toggle="modal" data-target="#class-join-modal">
                                         <div class="img-holder">
                                             <img src="/assets/default/img/user-icon.png" alt="user-icon">
                                         </div>
@@ -432,7 +432,7 @@
                     </div>
                     <div class="teacher-buttons">
                         <button class="btn btn-outline" type="button">Back</button>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#class-join-modal">Add Single Student</button>
+                        <button class="btn btn-primary">Add Single Student</button>
                     </div>
                 </div>
             </div>
