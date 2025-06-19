@@ -4485,9 +4485,6 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .class-join-modal .copy-btn:hover, .class-join-modal .back-btn:hover {
     background-color: #f0f0f0;
 }
-.class-join-modal .back-btn {
-    margin-top: 25px;
-}
 /* Class Join Link Modal Style End */
 
 /* Add Student Modal Style Start */
