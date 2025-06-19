@@ -48,9 +48,8 @@
 .admin_teacher_role .bottom-controls .btn i {font-size: 16px;}
 .admin_teacher_role .right-area {display: inline-flex; align-items: center; gap: 10px;}
 .admin_teacher_role .classes-card.disabled:last-child {
-    background-color: #efefef !important;
     position: relative;
-    opacity: 0.8;
+    opacity: 0.4;
     cursor: no-drop;
 }
 .admin_teacher_role .classes-card.disabled:last-child .bottom-controls {
@@ -68,7 +67,7 @@
     border-radius: 8px;
 }
 .admin_teacher_role .classes-card.disabled:last-child .progress-bar.progress-bar-custom {
-    background-color: #e7e5e5;
+    background-color: #e7e7e7;
 }
 .admin_teacher_role .classes-card.disabled:last-child:hover {
     box-shadow: none;
@@ -4620,7 +4619,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     text-align: center;
 }
 .student-icon-box > a {
-    padding: 30px;
+    padding: 25px;
     text-decoration: none;
     display: block;
 }
