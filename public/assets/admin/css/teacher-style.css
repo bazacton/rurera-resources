@@ -4897,6 +4897,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .import-csv .table-sm table {
     border-collapse: collapse;
     width: 100%;
+    margin-bottom: 0;
 }
 
 .import-csv .table-sm table th {
