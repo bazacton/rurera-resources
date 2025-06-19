@@ -23,10 +23,22 @@
             <div class="row w-100">
                 <div class="col-12 col-md-12">
 
-
+                    <ul data-target_class="admin-rurera-tabs-students" class="col-10 col-md-10 col-lg-10 admin-rurera-tabs nav nav-pills" id="assignment_tabs" role="tablist">
+                        <li class="nav-item skelton-height-lg">
+                            <a class="nav-link active" id="students-tab-students" href="javascript:;">
+                                <span class="tab-title">Students</span>
+                            </a>
+                        </li>
+                        <li class="nav-item skelton-height-lg">
+                            <a class="nav-link" id="joining-tab-students" href="javascript:;">
+                                <span class="tab-title">Joining Requests</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="col-12">
+                    <div class="admin-rurera-tabs-students students-tab-students">
                     <div class="teacher-table">
                         <div class="card">
                             <div class="teacher-search-filter">
@@ -106,6 +118,82 @@
                             </div>
                         </div>
                     </div>
+                    </div>
+
+                    <div class="admin-rurera-tabs-students joining-tab-students">
+                        <div class="teacher-table">
+                            <div class="card">
+
+                                <div class="card-header">
+                                    <div class="bulk-actions">
+                                        <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
+                                        <div class="dropdown-box">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                    Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item print-users-logins1" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Accept</a>
+                                                    <a data-class_id="{{$userObj->class_id}}" class="dropdown-item unlink-students" href="javascript:;" data-type_class="sections-users"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-body p-0 table-sm">
+                                    <table class="table mb-0">
+                                        <thead class="thead-light">
+                                        <tr>
+                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Student</th>
+                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Last Login</th>
+                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Action</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="students-list">
+
+                                        @if($joining_requests->count() > 0)
+                                            @foreach($joining_requests as $joiningRequestObj)
+                                                <tr>
+                                                    <td data-th="Teacher/Admin" class="skelton-hide1 skelton-height-lg skelton-mb-0">
+                                                        <div class="check-box">
+                                                            <input type="checkbox" class="sections-users" value="{{ $joiningRequestObj->id }}">
+                                                        </div>
+                                                        <strong>
+                                                    <span class="user-lable">
+                                                        {{ $joiningRequestObj->student->get_full_name() }}
+                                                        <span class="user-email">{{ isset( $joiningRequestObj->section->sectionClass->title)? $joiningRequestObj->section->sectionClass->title : '' }}</span>
+                                                    </span>
+                                                        </strong>
+                                                    </td>
+                                                    <td data-th="Last Login" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{($joiningRequestObj->student->last_login > 0)? dateTimeFormat($joiningRequestObj->student->last_login, 'j M y | H:i') : '-'}}</td>
+                                                    <td>
+                                                        <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="approved" data-request_id="{{$joiningRequestObj->id}}">
+                                                            <i class="fa fa-check"></i>
+                                                        </a>
+                                                        <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="cancelled" data-request_id="{{$joiningRequestObj->id}}">
+                                                            <i class="fa fa-times"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            @endforeach
+                                        @endif
+
+                                        </tbody>
+                                    </table>
+                                    {{$joining_requests->count()}} Requests
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
                 </div>
         </div>
     </div>
@@ -218,6 +306,24 @@
             });
             var url = '/admin/students/print_details?users='+student_ids;
             window.open(url, '_blank');
+
+        });
+
+        $(document).on('click', '.request-action', function (e) {
+            rurera_loader($("#userSettingForm"), 'div');
+            var action_type = $(this).attr('data-action_type');
+            var request_id = $(this).attr('data-request_id');
+            jQuery.ajax({
+                type: "POST",
+                url: '/admin/sections/join-request-action',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                data: {'action_type':action_type,'request_id':request_id},
+                success: function (return_data) {
+                    window.location.href = '/admin/sections/joining-requests';
+                }
+            });
 
         });
     });
