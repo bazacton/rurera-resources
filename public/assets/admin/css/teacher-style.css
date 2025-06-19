@@ -4613,7 +4613,11 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     box-shadow: 0 0 5px rgba(0,0,0,0.050);
     border-radius: 5px;
     text-align: center;
+}
+.student-icon-box > a {
     padding: 30px;
+    text-decoration: none;
+    display: block;
 }
 .student-icon-box .img-holder img {
     height: 80px;
