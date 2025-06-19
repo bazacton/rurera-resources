@@ -4529,24 +4529,22 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     font-size: 16px;
     color: #666;
 }
-
 .add-student-modal select {
     width: 100%;
     border: 1px solid #ddd;
     border-radius: 5px;
     height: 40px;
     padding: 0 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.050);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.050);
+    font-weight: 600;
+    color: #333;
 }
-
 .select-holder {
     margin: 0 0 30px;
 }
-
 .student-icon-box .img-holder {
     margin: 0 0 10px;
 }
-
 .student-icon-box {
     border: 1px solid #ddd;
     box-shadow: 0 0 5px rgba(0,0,0,0.050);
