@@ -4743,6 +4743,8 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     padding: 5px 15px;
     font-weight: 600;
 }
+.modal-section { display: none; }
+.modal-section.active { display: block; }
 
 /* Student-Successfull-Modal Style Start */
 .student-successfull-modal .modal-dialog {
