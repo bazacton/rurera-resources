@@ -510,7 +510,7 @@
                             <button class="btn btn-primary">Begin Import</button>
                         </div>
                     </div>
-                    <div id="section4" class="modal-section">
+                    <div id="section4" class="modal-section class-join-modal">
                         <div class="class-join">
                             <p class="instruction">
                                 Share the link below with your students and they can either join your class by logging into their existing account or by creating a new account.
