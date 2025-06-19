@@ -70,6 +70,9 @@
 .admin_teacher_role .classes-card.disabled:last-child .progress-bar.progress-bar-custom {
     background-color: #e7e5e5;
 }
+.admin_teacher_role .classes-card.disabled:last-child:hover {
+    box-shadow: none;
+}
 
 /* Rurera-Confirm-Modal Style Start */
 .inactivity-controls {
