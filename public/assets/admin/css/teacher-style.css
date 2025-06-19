@@ -4561,6 +4561,10 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .student-icon-box h4 {
     font-size: 16px;
 }
+.student-icon-box h4 a {
+    color: #666;
+    text-decoration: none;
+}
 .student-icon-box p {
     margin: 0;
     line-height: normal;
