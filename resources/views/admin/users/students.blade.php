@@ -692,6 +692,36 @@
             </div>
         </div>
     </div>
+    <!-- Add Student Textarea Form Modal -->
+    <div class="modal fade add-student-modal" id="student-textarea-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="teacher-header">
+                    <h2 class="modal-title">Add Student</h2>
+                    <p class="subheading">Roots International – 5th Grade</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="student-form">
+                        <div class="textarea-heading">
+                        <h5>Student names and optional Emails</h5>
+                        <span>4 Students</span>
+                        </div>
+                        <div class="textarea-field">
+                        <textarea name="teachers_email" placeholder="Enter your teachers work email address."></textarea>
+                        <p>List one teacher work email per line. You can also copy/paste from Word Exel</p>
+                        </div>
+                    </div>
+                    <div class="teacher-buttons">
+                        <button class="btn btn-outline" type="button">Back</button>
+                        <button class="btn btn-primary">Review Student</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @push('scripts_bottom')
