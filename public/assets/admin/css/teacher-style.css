@@ -49,7 +49,7 @@
 .admin_teacher_role .right-area {display: inline-flex; align-items: center; gap: 10px;}
 .admin_teacher_role .classes-card.disabled:last-child {
     position: relative;
-    opacity: 0.4;
+    opacity: 0.2;
     cursor: no-drop;
 }
 .admin_teacher_role .classes-card.disabled:last-child .bottom-controls {
