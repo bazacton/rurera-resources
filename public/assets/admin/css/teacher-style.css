@@ -65,6 +65,9 @@
     z-index: 1;
     border-radius: 8px;
 }
+.admin_teacher_role .classes-card.disabled:last-child .progress-bar.progress-bar-custom {
+    background-color: #e7e5e5;
+}
 
 /* Rurera-Confirm-Modal Style Start */
 .inactivity-controls {
