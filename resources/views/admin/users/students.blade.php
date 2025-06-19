@@ -378,9 +378,6 @@
                             <div class="teacher-header">
                                 <h2 class="modal-title">Add Student</h2>
                                 <p class="subheading">Roots International – 5th&nbsp;Grade</p>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" fdprocessedid="51t9ga">
-                                    <span aria-hidden="true">×</span>
-                                </button>
                             </div>
                             <div class="student-form">
                                 <div class="textarea-heading">
