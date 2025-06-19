@@ -49,7 +49,6 @@
 .admin_teacher_role .right-area {display: inline-flex; align-items: center; gap: 10px;}
 .admin_teacher_role .classes-card.disabled:last-child {
     background-color: #efefef !important;
-    pointer-events: none;
     position: relative;
 }
 .admin_teacher_role .classes-card.disabled:last-child .bottom-controls {
@@ -4605,22 +4604,6 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .add-student-modal .select-holder h5 {
     font-size: 16px;
     color: #666;
-}
-.add-student-modal select {
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    height: 40px;
-    padding: 0 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.050);
-    font-weight: 600;
-    color: #333;
-}
-.add-student-modal .select-holder {
-    margin: 0 0 30px;
-}
-.student-icon-box .img-holder {
-    margin: 0 0 10px;
 }
 .student-icon-box {
     border: 1px solid #ddd;
