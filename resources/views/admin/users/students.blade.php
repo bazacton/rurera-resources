@@ -352,6 +352,19 @@
                                     </a>
                                 </div>
                             </div>
+                            <div class="col-md-3 mt-10">
+                                <div class="student-icon-box">
+                                    <a href="#" data-toggle="modal" data-target="#import-csv-modal">
+                                        <div class="img-holder">
+                                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                                        </div>
+                                        <div class="text-holder">
+                                            <h4>Import Student</h4>
+                                            <p>Add a single student to the class</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -597,6 +610,87 @@
             </div>
         </div>
     </div>
+
+    <!-- Import CSV Modal -->
+    <div class="modal fade import-csv-modal" id="import-csv-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="teacher-header">
+            <h2 class="modal-title">Import CSV</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="import-csv">
+              <div class="import-csv-list">
+                <h3>Upload a .csv file:</h3>
+                <ul>
+                  <li>File format must be in Comma Separated Values (.csv) format.</li>
+                  <li>
+                    The header row must match the 
+                    <a href="#" class="link">Sample CSV File</a> exactly.
+                  </li>
+                </ul>
+              </div>
+              <div class="import-heading">
+                <h4>Spreadsheet Example:</h4>
+                <a href="#" class="download-link"><img src="/assets/default/svgs/download.svg" alt="download"> Download Sample CSV File</a>
+              </div>
+              <div class="table-sm">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>STUDENT_USERNAME*</th>
+                      <th>PASSWORD*</th>
+                      <th>FIRST_NAME*</th>
+                      <th>LAST_NAME*</th>
+                      <th>EMAIL</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>jonnysmith</td>
+                      <td>mypass123</td>
+                      <td>Maxx</td>
+                      <td>Butler</td>
+                      <td>jonny@myschool.edu</td>
+                    </tr>
+                    <tr>
+                      <td>student123</td>
+                      <td>h@ll0</td>
+                      <td>Jenny</td>
+                      <td>Jones</td>
+                      <td>j.jones@myschool.edu</td>
+                    </tr>
+                    <tr>
+                      <td>kelly-jones</td>
+                      <td>Str0Ngp@$$w0Rdd</td>
+                      <td>Kelly</td>
+                      <td>Jones</td>
+                      <td>k.jones@myschool.edu</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="import-drag">
+                <div class="drag-box">
+                  <div class="img-holder">
+                    <img src="/assets/default/img/drag-file-img.png" alt="drag-file-img">
+                  </div>
+                  <div class="text-holder">
+                    <strong>Drag your CSV file here or...</strong>
+                    <input type="file" id="csv-file">
+                    <label for="csv-file">Choose file</label>
+                    <span>no file choosen</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
 @endsection
 
 @push('scripts_bottom')
