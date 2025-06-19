@@ -279,6 +279,7 @@
             <div class="modal-content">
                 <div class="teacher-header">
                     <h2 class="modal-title">Add Student</h2>
+                    <p class="subheading">Apple – 5th Grade</p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
