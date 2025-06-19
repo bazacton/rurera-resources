@@ -302,46 +302,54 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="student-icon-box">
-                                    <div class="img-holder">
-                                    <img src="/assets/default/img/user-icon.png" alt="user-icon">
-                                    </div>
-                                    <div class="text-holder">
-                                        <h4><a href="#" data-toggle="modal" data-target="#add-student-modal2">Add a Student</a></h4>
-                                        <p>Add a single student to the class</p>
-                                    </div>
+                                    <a href="#" data-toggle="modal" data-target="#add-student-modal2">
+                                        <div class="img-holder">
+                                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                                        </div>
+                                        <div class="text-holder">
+                                            <h4>Add a Student</h4>
+                                            <p>Add a single student to the class</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-md-3">
                             <div class="student-icon-box">
-                                <div class="img-holder">
-                                <img src="/assets/default/img/user-icon.png" alt="user-icon">
-                                </div>
-                                <div class="text-holder">
-                                <h4><a href="#" data-toggle="modal" data-target="#student-successfull-modal">Add Students</a></h4>
-                                <p>Add a single student to the class</p>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="student-icon-box">
+                                <a href="#" data-toggle="modal" data-target="#student-successfull-modal">
                                     <div class="img-holder">
                                         <img src="/assets/default/img/user-icon.png" alt="user-icon">
                                     </div>
                                     <div class="text-holder">
-                                        <h4> <a href="#" data-toggle="modal" data-target="#student-successfull-modal2">Add a Student</a></h4>
+                                        <h4>Add Students</h4>
                                         <p>Add a single student to the class</p>
                                     </div>
+                                </a>
+                            </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="student-icon-box">
+                                    <a href="#" data-toggle="modal" data-target="#student-successfull-modal2">
+                                        <div class="img-holder">
+                                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                                        </div>
+                                        <div class="text-holder">
+                                            <h4>Add a Student</h4>
+                                            <p>Add a single student to the class</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="student-icon-box">
-                                    <div class="img-holder">
-                                        <img src="/assets/default/img/user-icon.png" alt="user-icon">
-                                    </div>
-                                    <div class="text-holder">
-                                        <h4><a href="#" data-toggle="modal" data-target="#student-table-modal">Add a Student</a></h4>
-                                        <p>Add a single student to the class</p>
-                                    </div>
+                                    <a href="#" data-toggle="modal" data-target="#student-table-modal">
+                                        <div class="img-holder">
+                                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                                        </div>
+                                        <div class="text-holder">
+                                            <h4>Add a Student</h4>
+                                            <p>Add a single student to the class</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
