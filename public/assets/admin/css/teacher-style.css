@@ -4525,6 +4525,55 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .add-student-modal table td:has(.error-message) {
     text-align: left !important;
 }
+.add-student-modal .select-holder h5 {
+    font-size: 16px;
+    color: #666;
+}
+
+.add-student-modal select {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.050);
+}
+
+.select-holder {
+    margin: 0 0 30px;
+}
+
+.student-icon-box .img-holder {
+    margin: 0 0 10px;
+}
+
+.student-icon-box {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0,0,0,0.050);
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px;
+}
+.student-icon-box .img-holder img {
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    object-fit: contain;
+}
+.student-icon-box h4 {
+    font-size: 16px;
+}
+.student-icon-box p {
+    margin: 0;
+    line-height: normal;
+}
+.student-icon-box-holder .row {
+    margin: 0 -8px;
+}
+
+.student-icon-box-holder .col-md-3 {
+    padding: 0 8px;
+}
 
 /* Student-Successfull-Modal Style Start */
 .student-successfull-modal .modal-dialog {
