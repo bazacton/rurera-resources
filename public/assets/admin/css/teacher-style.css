@@ -4258,6 +4258,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     margin: 0;
     padding: 5px 15px;
     font-weight: 600;
+    line-height: normal;
 }
 .review-btn {
     background: linear-gradient(to bottom, #6bb9f0, #4a90e2);
