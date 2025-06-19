@@ -285,85 +285,116 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="select-holder">
-                    <h5>Select a Class</h5>
-                    <div class="select-box">
-                        <select>
-                        <option value="Roots International – 5th Grade">Roots International – 5th Grade</option>
-                        <option value="Roots International – 6th Grade">Roots International – 6th Grade</option>
-                        <option value="Roots International – 7th Grade">Roots International – 7th Grade</option>
-                        </select>
-                    </div>
-                    </div>
-                    <div class="student-icon-box-holder">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3>Choose a way to add Students:</h3>
+                    <div class="step-modal" data-step="1">
+                        <div class="select-holder">
+                            <h5>Select a Class</h5>
+                            <div class="select-box">
+                                <select>
+                                <option value="Roots International – 5th Grade">Roots International – 5th Grade</option>
+                                <option value="Roots International – 6th Grade">Roots International – 6th Grade</option>
+                                <option value="Roots International – 7th Grade">Roots International – 7th Grade</option>
+                                </select>
                             </div>
-                            <div class="col-md-3">
-                                <div class="student-icon-box">
-                                    <a href="#" data-toggle="modal" data-target="#add-student-modal2">
-                                        <div class="img-holder">
-                                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
-                                        </div>
-                                        <div class="text-holder">
-                                            <h4>Add a Student</h4>
-                                            <p>Quickly enroll one student into your class.</p>
-                                        </div>
-                                    </a>
+                        </div>
+                        <div class="student-icon-box-holder">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Choose a way to add Students:</h3>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                            <div class="student-icon-box">
-                                <a href="#" data-toggle="modal" data-target="#student-textarea-modal">
-                                    <div class="img-holder">
-                                        <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                                <div class="col-md-3">
+                                    <div class="student-icon-box">
+                                        <a href="#" data-toggle="modal" data-target="#add-student-modal2">
+                                            <div class="img-holder">
+                                                <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                                            </div>
+                                            <div class="text-holder">
+                                                <h4>Add a Student</h4>
+                                                <p>Quickly enroll one student into your class.</p>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <div class="text-holder">
-                                        <h4>Add Students</h4>
-                                        <p>Manually add one or Multiple students to the classroom.</p>
+                                </div>
+                                <div class="col-md-3">
+                                <div class="student-icon-box">
+                                    <a href="#" data-toggle="modal" data-target="#student-textarea-modal">
+                                        <div class="img-holder">
+                                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                                        </div>
+                                        <div class="text-holder">
+                                            <h4>Add Students</h4>
+                                            <p>Manually add one or Multiple students to the classroom.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="student-icon-box">
+                                        <a href="#" data-toggle="modal" data-target="#import-csv-modal">
+                                            <div class="img-holder">
+                                                <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                                            </div>
+                                            <div class="text-holder">
+                                                <h4>Import Student List</h4>
+                                                <p>Upload a student list using a file import.</p>
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
-                            </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="student-icon-box">
-                                    <a href="#" data-toggle="modal" data-target="#import-csv-modal">
-                                        <div class="img-holder">
-                                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
-                                        </div>
-                                        <div class="text-holder">
-                                            <h4>Import Student List</h4>
-                                            <p>Upload a student list using a file import.</p>
-                                        </div>
-                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="student-icon-box">
+                                        <a href="#" data-toggle="modal" data-target="#class-join-modal">
+                                            <div class="img-holder">
+                                                <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                                            </div>
+                                            <div class="text-holder">
+                                                <h4>Students Self-Join</h4>
+                                                <p>Share a unique class link so students can join themselves.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mt-10">
+                                    <div class="student-icon-box">
+                                        <a href="#" data-toggle="modal" data-target="#import-csv-modal">
+                                            <div class="img-holder">
+                                                <img src="/assets/default/img/user-icon.png" alt="user-icon">
+                                            </div>
+                                            <div class="text-holder">
+                                                <h4>Import Student List</h4>
+                                                <p>Add a single student to the class</p>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="student-icon-box">
-                                    <a href="#" data-toggle="modal" data-target="#class-join-modal">
-                                        <div class="img-holder">
-                                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
-                                        </div>
-                                        <div class="text-holder">
-                                            <h4>Students Self-Join</h4>
-                                            <p>Share a unique class link so students can join themselves.</p>
-                                        </div>
-                                    </a>
+                            <div class="teacher-buttons">
+                                <button class="btn btn-outline" type="button">Back</button>
+                                <button class="btn btn-primary">Add Student</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-modal d-none" data-step="2">
+                        <div class="add-student-modal">
+                            <div class="teacher-header">
+                                <h2 class="modal-title">Add Student</h2>
+                                <p class="subheading">Roots International – 5th&nbsp;Grade</p>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" fdprocessedid="51t9ga">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="student-form">
+                                <div class="textarea-heading">
+                                    <h5>Student names and optional Emails</h5>
+                                    <span>4 Students</span>
+                                </div>
+                                <div class="textarea-field">
+                                    <textarea name="teachers_email" placeholder="Enter your Student work email address."></textarea>
+                                    <p>List one student per line. You can also copy/paste your student list from&nbsp;Word&nbsp;or&nbsp;Excel.</p>
                                 </div>
                             </div>
-                            <div class="col-md-3 mt-10">
-                                <div class="student-icon-box">
-                                    <a href="#" data-toggle="modal" data-target="#import-csv-modal">
-                                        <div class="img-holder">
-                                            <img src="/assets/default/img/user-icon.png" alt="user-icon">
-                                        </div>
-                                        <div class="text-holder">
-                                            <h4>Import Student List</h4>
-                                            <p>Add a single student to the class</p>
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="teacher-buttons">
+                                <button class="btn btn-outline back-btn" type="button">Back</button>
+                                <button class="btn btn-primary next-btn">Review Student</button>
                             </div>
                         </div>
                     </div>
