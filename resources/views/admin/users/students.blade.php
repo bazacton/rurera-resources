@@ -508,7 +508,7 @@
                     </div>
                     <div id="section4" class="modal-section class-join-modal">
                         <div class="teacher-header">
-                            <h2 class="modal-title">Add Student</h2>
+                            <h2 class="modal-title">Class Join Link</h2>
                             <p class="subheading">Roots International – 5th Grade</p>
                         </div>
                         <div class="class-join">
