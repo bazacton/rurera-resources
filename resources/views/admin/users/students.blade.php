@@ -710,7 +710,7 @@
                             <span>4 Students</span>
                         </div>
                         <div class="textarea-field">
-                            <textarea name="teachers_email" placeholder="Enter your teachers work email address."></textarea>
+                            <textarea name="teachers_email" placeholder="Enter your Student work email address."></textarea>
                             <p>List one student per line. You can also copy/paste your student list from Word or Excel.</p>
                         </div>
                     </div>
