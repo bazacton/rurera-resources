@@ -810,5 +810,42 @@
     });
     /*Skelton Loading Fungtion End*/
 </script>
+<script>
+$(document).ready(function () {
+  let currentStep = 1;
+  const totalSteps = $(".step-modal").length;
+
+  function showStep(step) {
+    $(".step-modal").addClass("d-none");
+    $(`.step-modal[data-step="${step}"]`).removeClass("d-none");
+  }
+
+  $(".next-btn").on("click", function () {
+    if (currentStep < totalSteps) {
+      currentStep++;
+      showStep(currentStep);
+    }
+  });
+
+  $(".back-btn").on("click", function () {
+    if (currentStep > 1) {
+      currentStep--;
+      showStep(currentStep);
+    }
+  });
+
+  $(".finish-btn").on("click", function () {
+    // Handle final action here
+    $('#add-student-modal').modal('hide');
+    alert('Finished!');
+  });
+
+  // Reset to step 1 on modal open
+  $('#add-student-modal').on('show.bs.modal', function () {
+    currentStep = 1;
+    showStep(currentStep);
+  });
+});
+</script>
 
 @endpush
