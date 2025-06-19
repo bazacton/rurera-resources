@@ -66,7 +66,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="invite-faculty">
+                                <!-- <div class="invite-faculty">
                                     <div class="dropdown-box">
                                         <div class="dropdown">
                                             <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
@@ -79,7 +79,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
+                                <button type="button" class="add-student-btn"><span class="icon-box"><img src="/assets/default/svgs/plus-circle.svg" alt="plus-circle"></span> Add Student</button>
                             </div>
                             <div class="card-body p-0 table-sm">
                                 <table class="table mb-0">
