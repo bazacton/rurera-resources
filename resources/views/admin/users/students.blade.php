@@ -354,10 +354,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="teacher-buttons mt-30">
-                                <button class="btn btn-outline" type="button" onclick="goBack()">Back</button>
-                                <button class="btn btn-primary">Add Student</button>
-                            </div>
                         </div>
                     </div>
                     <div id="section1" class="modal-section">
