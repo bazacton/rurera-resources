@@ -4424,6 +4424,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     box-sizing: border-box;
     background: url(/assets/default/img/modal-head-img.png) no-repeat 95% 1px;
     background-size: contain;
+    margin: 0 0 30px;
 }
 .teacher-header .close {
     position: absolute;
@@ -4706,6 +4707,11 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     height: 18px;
     width: 18px;
     filter: invert(97%) sepia(4%) saturate(9%) hue-rotate(356deg) brightness(105%) contrast(100%);
+}
+.add-student-modal .close {
+    position: absolute;
+    right: -12px;
+    top: -18px;
 }
 .textarea-heading h5 {
     font-size: 14px;
