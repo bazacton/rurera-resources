@@ -356,11 +356,12 @@
                             </div>
                             <div class="teacher-buttons mt-30">
                                 <button class="btn btn-outline back-btn" type="button">Back</button>
-                                <button class="btn btn-primary next-btn" id="student-form">Add Student</button>
+                                <button class="btn btn-primary next-btn" data-target="#student-form" id="home-tab" data-toggle="tab">Add Student</button>
                             </div>
                         </div>
                     </div>
-                    <div class="step-modal d-none" id="student-form">
+                    <div class="tab-content">
+                    <div class="tab-pane fade" id="student-form" >
                         <div class="add-student-modal">
                             <div class="teacher-header">
                                 <h2 class="modal-title">Add Student</h2>
@@ -378,11 +379,12 @@
                             </div>
                             <div class="teacher-buttons mt-30">
                                 <button class="btn btn-outline back-btn" type="button">Back</button>
-                                <button class="btn btn-primary next-btn">Review Student</button>
+                                <button class="btn btn-primary next-btn" data-target="#import-csv" id="import-csv-tab" data-toggle="tab">Review Student</button>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="step-modal d-none" data-step="3">
+                    </div>
+                     <div class="tab-pane fade" id="import-csv">
                         <div class="teacher-header">
                             <h2 class="modal-title">Import CSV</h2>
                             <p class="subheading">Roots International – 5th Grade</p>
@@ -457,7 +459,7 @@
                             <button class="btn btn-primary next-btn">Next</button>
                         </div>
                     </div>
-                    <div class="step-modal d-none class-join-modal" data-step="4">
+                    <!--<div class="step-modal d-none class-join-modal" data-step="4">
                         <div class="teacher-header">
                             <h2 class="modal-title">Class Join Link</h2>
                             <p class="subheading">Roots International – 5th&nbsp;Grade</p>
