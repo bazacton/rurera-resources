@@ -279,7 +279,7 @@
             <div class="modal-content">
                 <div class="teacher-header">
                     <h2 class="modal-title">Add Student</h2>
-                    <p class="subheading">Apple – 5th Grade</p>
+                    <p class="subheading">Roots International – 5th Grade</p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -289,9 +289,9 @@
                     <h5>Select a Class</h5>
                     <div class="select-box">
                         <select>
-                        <option value="Orange - 5th Grade">Orange - 5th Grade</option>
-                        <option value="Orange - 5th Grade">Orange - 6th Grade</option>
-                        <option value="Orange - 5th Grade">Orange - 7th Grade</option>
+                        <option value="Roots International – 5th Grade">Roots International – 5th Grade</option>
+                        <option value="Roots International – 6th Grade">Roots International – 6th Grade</option>
+                        <option value="Roots International – 7th Grade">Roots International – 7th Grade</option>
                         </select>
                     </div>
                     </div>
