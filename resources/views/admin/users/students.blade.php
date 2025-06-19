@@ -1016,44 +1016,6 @@
     });
     /*Skelton Loading Fungtion End*/
 </script>
-<script>
-$(document).ready(function () {
-  const ids = ["student-form", "two", "three"];
-  let currentIndex = 0;
-
-  function showById(id) {
-    $(".step-modal").addClass("d-none");
-    $("#" + id).removeClass("d-none");
-  }
-
-  $(".next-btn").on("click", function () {
-    const currentId = this.id;
-    const index = ids.indexOf(currentId);
-    if (index !== -1 && index < ids.length - 1) {
-      currentIndex = index + 1;
-      showById(ids[currentIndex]);
-    }
-  });
-
-  $(".back-btn").on("click", function () {
-    if (currentIndex > 0) {
-      currentIndex--;
-      showById(ids[currentIndex]);
-    }
-  });
-
-  $(".finish-btn").on("click", function () {
-    $('#add-student-modal').modal('hide');
-    alert('Finished!');
-  });
-
-  $('#add-student-modal').on('show.bs.modal', function () {
-    currentIndex = 0;
-    showById(ids[currentIndex]);
-  });
-});
-
-</script>
 
 
 @endpush
