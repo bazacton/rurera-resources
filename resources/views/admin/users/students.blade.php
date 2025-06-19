@@ -278,14 +278,16 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="teacher-header">
-                    <h2 class="modal-title">Add Student</h2>
-                    <p class="subheading">Roots International – 5th Grade</p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="step-modal" data-step="1">
+                        <div class="teacher-header">
+                            <h2 class="modal-title">Add Student</h2>
+                            <p class="subheading">Roots International – 5th Grade</p>
+                        </div>
                         <div class="select-holder">
                             <h5>Select a Class</h5>
                             <div class="select-box">
