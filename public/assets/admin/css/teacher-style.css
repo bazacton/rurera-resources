@@ -4682,7 +4682,7 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 }
 .student-form h3 {
     font-size: 24px;
-    margin: 10px 0 20px;
+    margin: 0 0 12px;
 }
 .add-student-btn {
     background: linear-gradient(to bottom, #6bb9f0, #4a90e2);
