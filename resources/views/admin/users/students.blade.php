@@ -360,7 +360,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="step-modal d-none" id="student-form" data-step="2">
+                    <div class="step-modal d-none" id="student-form">
                         <div class="add-student-modal">
                             <div class="teacher-header">
                                 <h2 class="modal-title">Add Student</h2>
