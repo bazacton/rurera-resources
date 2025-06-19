@@ -356,11 +356,11 @@
                             </div>
                             <div class="teacher-buttons mt-30">
                                 <button class="btn btn-outline back-btn" type="button">Back</button>
-                                <button class="btn btn-primary next-btn" id="student-form">Add Student</button>
+                                <button class="btn btn-primary next-btn" >Add Student</button>
                             </div>
                         </div>
                     </div>
-                    <div class="step-modal d-none" id="student-form" data-step="2">
+                    <div class="step-modal d-none"  data-step="2">
                         <div class="add-student-modal">
                             <div class="teacher-header">
                                 <h2 class="modal-title">Add Student</h2>
