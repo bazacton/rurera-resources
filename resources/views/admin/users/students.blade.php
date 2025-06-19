@@ -353,19 +353,6 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-md-3 mt-10">
-                                    <div class="student-icon-box">
-                                        <a href="#" data-toggle="modal" data-target="#import-csv-modal">
-                                            <div class="img-holder">
-                                                <img src="/assets/default/img/user-icon.png" alt="user-icon">
-                                            </div>
-                                            <div class="text-holder">
-                                                <h4>Import Student List</h4>
-                                                <p>Add a single student to the class</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
                             </div>
                             <div class="teacher-buttons mt-30">
                                 <button class="btn btn-outline back-btn" type="button">Back</button>
