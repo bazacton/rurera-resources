@@ -4575,6 +4575,88 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
 .student-icon-box-holder .col-md-12 {
     padding: 0 8px;
 }
+.add-student-modal .select-holder h5 {
+    font-size: 16px;
+    color: #666;
+}
+.add-student-modal select {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.050);
+    font-weight: 600;
+    color: #333;
+}
+.add-student-modal .select-holder {
+    margin: 0 0 30px;
+}
+.student-icon-box .img-holder {
+    margin: 0 0 10px;
+}
+.student-icon-box {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0,0,0,0.050);
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px;
+}
+.student-icon-box .img-holder img {
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    object-fit: contain;
+}
+.student-icon-box h4 {
+    font-size: 16px;
+}
+.student-icon-box p {
+    margin: 0;
+    line-height: normal;
+}
+.student-icon-box-holder .row {
+    margin: 0 -8px;
+}
+.student-icon-box-holder .col-md-3 {
+    padding: 0 8px;
+}
+.student-icon-box-holder h3 {
+    font-size: 22px;
+}
+.student-form input[type="text"], .student-form input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    line-height: normal;
+}
+.student-form .field-lable {
+    display: block;
+    line-height: normal;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+.student-form .field-lable em {
+    font-style: normal;
+    vertical-align: middle;
+    line-height: normal;
+    color: #cb4f4f;
+}
+.student-form .field-holder {
+    margin: 0 0 25px;
+}
+.student-form .row {
+    margin: 0 -10px;
+}
+.student-form [class*="col-"] {
+    padding: 0 10px;
+}
+.student-form h3 {
+    font-size: 24px;
+    margin: 10px 0 20px;
+}
 
 /* Student-Successfull-Modal Style Start */
 .student-successfull-modal .modal-dialog {
