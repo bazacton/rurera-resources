@@ -473,6 +473,33 @@
                             <button class="btn btn-primary next-btn">Next</button>
                         </div>
                     </div>
+                    <div class="step-modal d-none" data-step="4">
+                        <div class="teacher-header">
+                            <h2 class="modal-title">Class Join Link</h2>
+                            <p class="subheading">Roots International – 5th&nbsp;Grade</p>
+                        </div>
+                        <div class="class-join">
+                            <p class="instruction">
+                                Share the link below with your students and they can either join your class by logging into their existing account or by creating a new account.
+                            </p>
+                            <div class="link-box">
+                                <div class="link">
+                                    <span class="link-icon">📋</span>
+                                    <a href="https://rurera.com/join#64907A2E31D12" target="_blank">
+                                        https://rurera.com/join#64907A2E31D12
+                                    </a>
+                                </div>
+                                <button class="copy-btn" type="button">Copy Link</button>
+                            </div>
+                        </div>
+                        <div class="teacher-buttons">
+                            <button class="btn btn-outline back-btn" type="button">Back</button>
+                            <button class="btn btn-primary next-btn">Next</button>
+                        </div>
+                    </div>
+                    <div class="step-modal d-none" data-step="5">
+                        
+                    </div>
                 </div>
             </div>
         </div>
