@@ -54,7 +54,7 @@
 .admin_teacher_role .classes-card.disabled:last-child .bottom-controls {
     background-color: #efefef;
 }
-.admin_teacher_role .classes-card.disabled:before {
+.admin_teacher_role .classes-card.disabled:last-child:before {
     position: absolute;
     left: 0;
     top: 0;
