@@ -367,7 +367,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="teacher-buttons">
+                            <div class="teacher-buttons mt-30">
                                 <button class="btn btn-outline back-btn" type="button">Back</button>
                                 <button class="btn btn-primary next-btn">Add Student</button>
                             </div>
@@ -396,6 +396,81 @@
                                 <button class="btn btn-outline back-btn" type="button">Back</button>
                                 <button class="btn btn-primary next-btn">Review Student</button>
                             </div>
+                        </div>
+                    </div>
+                    <div class="step-modal d-none" data-step="3">
+                        <div class="teacher-header">
+                            <h2 class="modal-title">Import CSV</h2>
+                            <p class="subheading">Roots International – 5th Grade</p>
+                        </div>
+                        <div class="import-csv">
+                            <div class="import-csv-list">
+                                <h3>Upload a .csv file:</h3>
+                                <ul>
+                                <li>File format must be in Comma Separated Values (.csv) format.</li>
+                                <li>
+                                    The header row must match the 
+                                    <a href="#" class="link">Sample CSV File</a> exactly.
+                                </li>
+                                </ul>
+                            </div>
+                            <div class="import-heading">
+                                <h4>Spreadsheet Example:</h4>
+                                <a href="#" class="download-link"><img src="/assets/default/svgs/download.svg" alt="download"> Download Sample CSV File</a>
+                            </div>
+                            <div class="table-sm">
+                                <table>
+                                <thead>
+                                    <tr>
+                                    <th>STUDENT_USERNAME*</th>
+                                    <th>PASSWORD*</th>
+                                    <th>FIRST_NAME*</th>
+                                    <th>LAST_NAME*</th>
+                                    <th>EMAIL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td>jonnysmith</td>
+                                    <td>mypass123</td>
+                                    <td>Maxx</td>
+                                    <td>Butler</td>
+                                    <td>jonny@myschool.edu</td>
+                                    </tr>
+                                    <tr>
+                                    <td>student123</td>
+                                    <td>h@ll0</td>
+                                    <td>Jenny</td>
+                                    <td>Jones</td>
+                                    <td>j.jones@myschool.edu</td>
+                                    </tr>
+                                    <tr>
+                                    <td>kelly-jones</td>
+                                    <td>Str0Ngp@$$w0Rdd</td>
+                                    <td>Kelly</td>
+                                    <td>Jones</td>
+                                    <td>k.jones@myschool.edu</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                            <div class="import-drag">
+                                <div class="drag-box">
+                                <div class="img-holder">
+                                    <img src="/assets/default/img/drag-file-img.png" alt="drag-file-img">
+                                </div>
+                                <div class="text-holder">
+                                    <strong>Drag your CSV file here or...</strong>
+                                    <input type="file" id="csv-file">
+                                    <label for="csv-file">Choose file</label>
+                                    <span>no file choosen</span>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teacher-buttons">
+                            <button class="btn btn-outline back-btn" type="button">Back</button>
+                            <button class="btn btn-primary next-btn">Next</button>
                         </div>
                     </div>
                 </div>
