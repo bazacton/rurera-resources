@@ -356,11 +356,11 @@
                             </div>
                             <div class="teacher-buttons mt-30">
                                 <button class="btn btn-outline back-btn" type="button">Back</button>
-                                <button class="btn btn-primary next-btn" >Add Student</button>
+                                <button class="btn btn-primary next-btn" id="student-form">Add Student</button>
                             </div>
                         </div>
                     </div>
-                    <div class="step-modal d-none"  data-step="2">
+                    <div class="step-modal d-none" id="student-form" data-step="2">
                         <div class="add-student-modal">
                             <div class="teacher-header">
                                 <h2 class="modal-title">Add Student</h2>
@@ -1018,40 +1018,41 @@
 </script>
 <script>
 $(document).ready(function () {
-  let currentStep = 1;
-  const totalSteps = $(".step-modal").length;
+  const ids = ["student-form", "two", "three"];
+  let currentIndex = 0;
 
-  function showStep(step) {
+  function showById(id) {
     $(".step-modal").addClass("d-none");
-    $(`.step-modal[data-step="${step}"]`).removeClass("d-none");
+    $("#" + id).removeClass("d-none");
   }
 
   $(".next-btn").on("click", function () {
-    if (currentStep < totalSteps) {
-      currentStep++;
-      showStep(currentStep);
+    const currentId = this.id;
+    const index = ids.indexOf(currentId);
+    if (index !== -1 && index < ids.length - 1) {
+      currentIndex = index + 1;
+      showById(ids[currentIndex]);
     }
   });
 
   $(".back-btn").on("click", function () {
-    if (currentStep > 1) {
-      currentStep--;
-      showStep(currentStep);
+    if (currentIndex > 0) {
+      currentIndex--;
+      showById(ids[currentIndex]);
     }
   });
 
   $(".finish-btn").on("click", function () {
-    // Handle final action here
     $('#add-student-modal').modal('hide');
     alert('Finished!');
   });
 
-  // Reset to step 1 on modal open
   $('#add-student-modal').on('show.bs.modal', function () {
-    currentStep = 1;
-    showStep(currentStep);
+    currentIndex = 0;
+    showById(ids[currentIndex]);
   });
 });
+
 </script>
 
 
