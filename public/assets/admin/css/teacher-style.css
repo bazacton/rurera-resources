@@ -4557,9 +4557,19 @@ body textarea:focus::-webkit-input-placeholder {color: transparent;}
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.050);
     font-weight: 600;
     color: #333;
+    appearance: none;
 }
-.select-holder {
+.add-student-moda .select-holder {
     margin: 0 0 30px;
+}
+.add-student-modal .select-box {
+    position: relative;
+}
+.add-student-modal .select-box:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
 }
 .student-icon-box .img-holder {
     margin: 0 0 10px;
