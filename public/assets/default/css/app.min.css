@@ -3511,7 +3511,9 @@ School Packges Style Start
 .payment-card input[type=radio]:checked ~ label img {
   filter: invert(67%) sepia(35%) saturate(6151%) hue-rotate(175deg) brightness(100%) contrast(102%);
 }
-
+.payment-card label .icon-box {
+  margin: 0 0 15px;
+}
 .choose-subjects label strong span,
 .payment-card label strong span {
   font-weight: 400;
