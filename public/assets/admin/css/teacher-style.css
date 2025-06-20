@@ -4253,8 +4253,10 @@ Qustions AI Tabs Style End
 }
 body textarea:focus::-moz-placeholder {color: transparent;}
 body textarea:focus::-webkit-input-placeholder {color: transparent;}
-body input[type="text"]:focus::-moz-placeholder {color: transparent;}
-body input[type="text"]:focus::-webkit-input-placeholder {color: transparent;}
+body input[type="text"]:focus::-moz-placeholder,
+body input[type="password"]:focus::-moz-placeholder {color: transparent;}
+body input[type="text"]:focus::-webkit-input-placeholder,
+body input[type="password"]:focus::-webkit-input-placeholder {color: transparent;}
 .invite-text-field .textarea-field p {
     background-color: aliceblue;
     margin: 0;
