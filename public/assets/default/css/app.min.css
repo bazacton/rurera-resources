@@ -3603,6 +3603,8 @@ School Packges Style Start
   background-color: #fcfcfc;
   padding: 25px;
   border-radius: 5px;
+  position: sticky;
+  top: 0;
 }
 .purchase-sidebar .sidebar-icon {
   text-align: center;
