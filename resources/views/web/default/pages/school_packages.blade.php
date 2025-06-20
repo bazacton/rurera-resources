@@ -124,6 +124,35 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-md-4">
+                                            <div class="times-card">
+                                                <span class="icon-box">💰</span>
+                                                <div class="text-box">
+                                                    <strong>Treasure Hunter</strong>
+                                                    <p>Collect rewards and have fun while learning</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="times-card">
+                                                <span class="icon-box">🏆</span>
+                                                <div class="text-box">
+                                                    <strong>Challenges</strong>
+                                                    <p>Take on exciting mathematical challenges</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="times-card">
+                                                <span class="icon-box">✅</span>
+                                                <div class="text-box">
+                                                    <strong>Real Test</strong>
+                                                    <p>Practice with authentic test conditions</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
                                     </div>
                                 </div>
                                 <div class="num-students">
