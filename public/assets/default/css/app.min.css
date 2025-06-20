@@ -3477,7 +3477,9 @@ School Packges Style Start
   margin: 0 0 10px;
 }
 .choose-subjects input[type=checkbox],
-.payment-card input[type=checkbox] {
+.payment-card input[type=checkbox],
+.choose-subjects input[type=radio],
+.payment-card input[type=radio] {
   position: absolute;
   width: 0;
   height: 0;
@@ -3497,7 +3499,9 @@ School Packges Style Start
   background-color: #fcfcfc;
 }
 .payment-card input[type=checkbox]:checked ~ label,
-.choose-subjects input[type=checkbox]:checked ~ label {
+.choose-subjects input[type=checkbox]:checked ~ label,
+.payment-card input[type=radio]:checked ~ label,
+.choose-subjects input[type=radio]:checked ~ label {
   border-color: var(--blue);
 }
 .choose-subjects label strong span,
