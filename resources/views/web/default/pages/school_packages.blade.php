@@ -204,7 +204,9 @@
                                         <strong>£299 <em>per year</em></strong>
                                     </div>
                                     <div class="contact-info">
-                                        <span class="icon-box"></span>
+                                        <span class="icon-box">
+                                            <img src="/assets/default/svgs/phone-class.svg" alt="phone-class">
+                                        </span>
                                         <strong>Questions?</strong>
                                         <a href="#">orders@edulicence.com</a>
                                         <a href="#">Subscription FAQ</a>
