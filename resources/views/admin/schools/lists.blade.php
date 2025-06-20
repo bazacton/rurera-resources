@@ -18,7 +18,7 @@
 
     <div class="section-body">
 
-        <section class="card">
+        <section class="card rurera-hide">
             <div class="card-body">
                 <form action="/admin/schools" method="get" class="row mb-0">
                     <div class="col-md-4">
