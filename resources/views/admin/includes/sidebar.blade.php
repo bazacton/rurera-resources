@@ -643,7 +643,7 @@
                     </a>
                 </li>
 
-                    @if(auth()->user()->isDistrictTeacher())
+                    @if(auth()->user()->isDistricAdmin())
 
                         <li class="nav-item {{ (request()->is('admin/schools')) ? 'active' : '' }}">
                             <a href="{{ getAdminPanelUrl('/schools') }}" class="nav-link">
