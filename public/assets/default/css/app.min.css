@@ -3547,7 +3547,9 @@ School Packges Style Start
   width: 20px;
 }
 .num-students {
-  margin: 0 0 30px;
+  margin: 0 0 25px;
+  padding: 0 0 25px;
+  border-bottom: 1px solid #ddd;
 }
 .increase-decrease-box button {
   height: 35px;
@@ -3614,7 +3616,9 @@ School Packges Style Start
   line-height: normal;
 }
 .times-table {
-  margin: 0 0 30px;
+  margin: 0 0 25px;
+  border-bottom: 1px solid #ddd;
+  padding: 0 0 25px;
 }
 .payment-method .btn-holder {
   text-align: center;
