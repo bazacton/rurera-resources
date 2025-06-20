@@ -6,7 +6,7 @@
     <section class="mb-0 pt-70 pb-60">
         <div class="container">
             <div class="row">
-                <div class="purchase-classroom">
+                <!-- <div class="purchase-classroom">
                     <div class="row">
                         <div class="col-md-8">
                             <div class="classroom-content-box">
@@ -256,31 +256,145 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
 
 </section>
-
+<div class="modal fade student-packages" id="student-packages-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="purchase-classroom">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="classroom-content-box">
+                                    <div class="purchase-heading mb-30">
+                                        <h2>Purchase a Classroom Licence</h2>
+                                        <p>Get full access to 10,000+ interactive learning resources with real-time performance&nbsp;tracking.</p>
+                                    </div>
+                                    <div class="num-students">
+                                        <h3>Specify total # of students</h3>
+                                        <div class="increase-decrease-box">
+                                            <button class="decrease-students">
+                                                <img src="/assets/default/svgs/minus.svg" alt="minus">
+                                            </button>
+                                            <p>Up to <span class="student-val">12</span> students</p>
+                                            <button class="increase-students"><img src="/assets/default/svgs/plus.svg" alt="plus"></button>
+                                        </div>
+                                        <p class="detail-text">Have more than 100 students? Request a quote for pricing info.</p>
+                                    </div>
+                                    <div class="payment-method">
+                                        <h3>Select payment method</h3>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="payment-card">
+                                                    <input type="radio" id="credit" name="payment">
+                                                    <label for="credit">
+                                                        <div class="icon-box">
+                                                            <img src="/assets/default/svgs/credit.svg" alt="credit">
+                                                        </div>
+                                                        <strong>Credit card</strong>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="payment-card">
+                                                    <input type="radio" id="purchase" name="payment">
+                                                    <label for="purchase">
+                                                        <div class="icon-box">
+                                                            <img src="/assets/default/svgs/purchase.svg" alt="purchase">
+                                                        </div>
+                                                        <strong>Purchase order</strong>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="payment-card">
+                                                    <input type="radio" id="cheque" name="payment">
+                                                    <label for="cheque">
+                                                        <div class="icon-box">
+                                                            <img src="/assets/default/svgs/cheque.svg" alt="cheque">
+                                                        </div>
+                                                        <strong>Cheque</strong>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="btn-holder">
+                                                    <button type="button" class="continue-btn">Continue</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="purchase-sidebar">
+                                    <div class="sidebar-content">
+                                        <div class="sidebar-icon">
+                                            <img src="/assets/default/svgs/gift.svg" alt="gift">
+                                        </div>
+                                        <h3>Licences include</h3>
+                                        <ul>
+                                            <li><span class="icon-box">📚</span> Full Curriculum Access</li>
+                                            <li><span class="icon-box">🧠</span> SATs &amp; 11+ Practice</li>
+                                            <li><span class="icon-box">🔢</span> Times Tables &amp; Spelling</li>
+                                            <li><span class="icon-box">❓</span> 10,000+ Questions</li>
+                                            <li><span class="icon-box">📖</span> Online Bookshelf</li>
+                                            <li><span class="icon-box">✍️</span> Spelling Exercises</li>
+                                            <li><span class="icon-box">🏅</span> Rewards &amp; Badges</li>
+                                            <li><span class="icon-box">📊</span> Progress Reports</li>
+                                        </ul>
+                                        <div class="purchase-price">
+                                            <span>Starting at</span>
+                                            <strong>£299 <em>per year</em></strong>
+                                        </div>
+                                        <div class="contact-info">
+                                            <span class="icon-box">
+                                                <img src="/assets/default/svgs/phone-class.svg" alt="phone-class">
+                                            </span>
+                                            <strong>Questions?</strong>
+                                            <a href="#">orders@rurera.com</a>
+                                            <a href="#">Subscription FAQ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
 @endsection
 
 @push('scripts_bottom')
 <script src="/assets/default/vendors/masonry/masonry.pkgd.min.js"></script>
 <script src="/assets/default/vendors/parallax/parallax.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function() {
-    $(".increase-students").click(function() {
-        let value = parseInt($(".student-val").text());
-        $(".student-val").text(value + 1);
-    });
+    $(document).ready(function() {
+        $(".increase-students").click(function() {
+            let value = parseInt($(".student-val").text());
+            $(".student-val").text(value + 1);
+        });
 
-    $(".decrease-students").click(function() {
-        let value = parseInt($(".student-val").text());
-        if (value > 0) {
-            $(".student-val").text(value - 1);
-        }
+        $(".decrease-students").click(function() {
+            let value = parseInt($(".student-val").text());
+            if (value > 0) {
+                $(".student-val").text(value - 1);
+            }
+        });
     });
-});
 </script>
 @endpush
