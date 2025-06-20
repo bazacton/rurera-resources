@@ -3497,6 +3497,7 @@ School Packges Style Start
   border-radius: 5px;
   width: 100%;
   background-color: #fcfcfc;
+  cursor: pointer;
 }
 .payment-card input[type=checkbox]:checked ~ label,
 .choose-subjects input[type=checkbox]:checked ~ label,
