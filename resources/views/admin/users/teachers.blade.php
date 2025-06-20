@@ -69,7 +69,7 @@
                                                 Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
                                             </a>
                                             <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="javascript:;" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
+                                                <a class="dropdown-item teachers-invitation-modal-btn" href="javascript:;" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
 
 
                                                 <a class="dropdown-item create-class-btn" href="javascript:;" data-toggle="modal" data-target="#createTeacherModal"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
@@ -214,7 +214,7 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade invite-teacher-modal" id="invite-teacher-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade invite-teacher-modal add-student-modal" id="invite-teacher-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -254,7 +254,7 @@
                                 </div>
                             </div>
                         <div class="textarea-field">
-                            <textarea name="teachers_email" placeholder="Enter your teachers work email address."></textarea>
+                            <textarea name="teachers_email" class="teachers_email_input" placeholder="Enter your teachers work email address."></textarea>
                             <p>List one teacher work email per line. You can also copy/paste from Word Exel</p>
                             <p>Maximum no of emails allowed is 20</p>
                         </div>
@@ -264,9 +264,7 @@
                         </form>
                     </div>
                     <div class="invitation-response-area rurera-hide">
-                        <button type="button" class="invitation-back-btn">Back</button>
                         <div class="invitation-response-block"></div>
-
                     </div>
                 </div>
             </div>
@@ -448,6 +446,15 @@
             $(".invitation-form-area").removeClass('rurera-hide');
             $(".invitation-response-area").addClass('rurera-hide');
         });
+
+
+
+        $(document).on('click', '.teachers-invitation-modal-btn', function () {
+            $(".invitation-form-area").removeClass('rurera-hide');
+            $(".invitation-response-area").addClass('rurera-hide');
+            $(".teachers_email_input").val('');
+        });
+
 
 
 
