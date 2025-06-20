@@ -4216,6 +4216,9 @@ Qustions AI Tabs Style End
     transform: translateY(-50%);
     visibility: hidden;
     opacity: 0;
+    background-color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
 }
 .teacher-table table tr:hover .pending-invites-controls {
     visibility: visible;
