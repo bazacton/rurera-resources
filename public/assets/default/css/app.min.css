@@ -3604,7 +3604,7 @@ School Packges Style Start
   padding: 25px;
   border-radius: 5px;
   position: sticky;
-  top: 0;
+  top: 20px;
 }
 .purchase-sidebar .sidebar-icon {
   text-align: center;
@@ -3705,6 +3705,9 @@ School Packges Style Start
 }
 .purchase-sidebar .contact-info .icon-box img {
   filter: invert(54%) sepia(44%) saturate(3346%) hue-rotate(181deg) brightness(107%) contrast(101%);
+}
+.choose-subjects .categories-card:hover {
+  transform: none;
 }
 /*********************************
 School Packges Style End
