@@ -10,7 +10,7 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="classroom-content-box">
-                                <div class="purchase-heading">
+                                <div class="purchase-heading mb-30">
                                     <h2>Purchade a Classroom Licence</h2>
                                     <p>Get full access to 10,000+ interactive learning resources with real-time performance tracking.</p>
                                 </div>
