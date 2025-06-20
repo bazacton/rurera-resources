@@ -239,20 +239,6 @@
                 </a>
             </li>
 
-			<li class="nav-item {{ (request()->is('admin/custom_page/my_library')) ? 'active' : '' }}">
-                <a href="{{ getAdminPanelUrl('/custom_page/my_library') }}" class="nav-link">
-                    <i class="fas fa-th"></i>
-                    <span>Collections</span>
-                </a>
-            </li>
-
-			<li class="nav-item {{ (request()->is('admin/custom_page/track')) ? 'active' : '' }}">
-                <a href="{{ getAdminPanelUrl('/custom_page/track') }}" class="nav-link">
-                    <img src="/assets/default/svgs/bar-chart-trend.svg" alt="">
-                    <span>Track</span>
-                </a>
-            </li>
-
 			@if(!auth()->user()->isTeacher() && !auth()->user()->isAdminTeacher())
 			<li class="nav-item {{ (request()->is('admin/custom_page/report')) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/custom_page/report') }}" class="nav-link">
@@ -262,12 +248,7 @@
             </li>
 			@endif
 
-			<li class="nav-item {{ (request()->is('admin/custom_page/tailer_hub')) ? 'active' : '' }}">
-                <a href="{{ getAdminPanelUrl('/custom_page/tailer_hub') }}" class="nav-link">
-                    <img src="/assets/default/svgs/Tailor-Hub.svg" alt="">
-                    <span>Tailor Hub</span>
-                </a>
-            </li>
+
 			@if(!auth()->user()->isTeacher() && !auth()->user()->isAdminTeacher())
 			<li class="nav-item {{ (request()->is('admin/custom_page/settings')) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/custom_page/settings') }}" class="nav-link">

@@ -65,6 +65,16 @@
                     </a>
                 @endif
 
+                <a href="{{ getAdminPanelUrl() }}/custom_page/my_library" class="dropdown-item has-icon">
+                    <i class="fas fa-cog"></i> Collections
+                </a>
+                <a href="{{ getAdminPanelUrl() }}/custom_page/track" class="dropdown-item has-icon">
+                    <i class="fas fa-cog"></i> Track
+                </a>
+                <a href="{{ getAdminPanelUrl() }}/custom_page/tailer_hub" class="dropdown-item has-icon">
+                    <i class="fas fa-cog"></i> Tailor Hub
+                </a>
+
                 <a href="{{ getAdminPanelUrl() }}/users/{{ $authUser->id }}/edit" class="dropdown-item has-icon">
                     <i class="fas fa-cog"></i> Account
                 </a>
