@@ -12,7 +12,6 @@
                             <div class="classroom-content-box">
                                 <div class="purchase-heading">
                                     <h2>Purchade a Classroom Licence</h2>
-                                    <p>Get immediate access to thousands of interactive skills and real-time analytics. Interested in IXL for your entire school? <a href="#">Request a quote</a> for site licence pricing.</p>
                                 </div>
                                 <div class="choose-subjects">
                                     <div class="row">
