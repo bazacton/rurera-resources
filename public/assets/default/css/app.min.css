@@ -3651,7 +3651,7 @@ School Packges Style Start
   font-weight: 400;
   color: #666;
   font-style: normal;
-  font-size: 20px;
+  font-size: 18px;
 }
 .sats .tests-list {
   width: 100%;
@@ -3682,6 +3682,22 @@ School Packges Style Start
   width: 30px;
   height: 30px;
   object-fit: contain;
+}
+.purchase-sidebar .contact-info {
+  text-align: center;
+}
+.purchase-sidebar .contact-info strong {
+  display: block;
+  font-size: 20px;
+  line-height: normal;
+  margin: 0 0 15px;
+}
+.purchase-sidebar .contact-info a {
+  display: block;
+  line-height: normal;
+  font-size: 18px;
+  margin: 0 0 5px;
+  color: var(--blue);
 }
 /*********************************
 School Packges Style End
