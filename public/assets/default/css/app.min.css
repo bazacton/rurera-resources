@@ -3461,6 +3461,7 @@ School Packges Style Start
   border: 1px solid #ddd;
   padding: 25px;
   border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 .purchase-heading {
   margin: 0 0 15px;
@@ -3605,6 +3606,7 @@ School Packges Style Start
   border-radius: 5px;
 }
 .purchase-sidebar {
+  border: 2px solid #e7e5e4;
   background-color: #fcfcfc;
   padding: 25px;
   border-radius: 5px;
