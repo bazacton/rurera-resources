@@ -16,7 +16,7 @@
                                 </div>
                                 <div class="choose-subjects">
                                     <div class="row">
-                                        <div class="col-12 col-lg-3 mt-20">
+                                        <div class="col-12 col-lg-3">
                                             <div class="categories-boxes">
                                                 <div class="categories-card">
                                                     <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
@@ -27,7 +27,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-lg-3 mt-20">
+                                        <div class="col-12 col-lg-3">
                                             <div class="categories-boxes">
                                                 <div class="categories-card">
                                                     <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
@@ -38,7 +38,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-lg-3 mt-20">
+                                        <div class="col-12 col-lg-3">
                                             <div class="categories-boxes">
                                                 <div class="categories-card">
                                                     <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
@@ -49,7 +49,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-lg-3 mt-20">
+                                        <div class="col-12 col-lg-3">
                                             <div class="categories-boxes">
                                                 <div class="categories-card">
                                                     <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
@@ -60,7 +60,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-lg-3 mt-20">
+                                        <div class="col-12 col-lg-3">
                                             <div class="categories-boxes">
                                                 <div class="categories-card">
                                                     <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
@@ -71,7 +71,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-lg-3 mt-20">
+                                        <div class="col-12 col-lg-3">
                                             <div class="categories-boxes">
                                                 <div class="categories-card">
                                                     <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
