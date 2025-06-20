@@ -93,7 +93,7 @@
                                     <h3>Select payment method</h3>
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <div class="subject-card">
+                                            <div class="payment-card">
                                                 <input type="checkbox" id="credit">
                                                 <label for="credit">
                                                     <div class="icon-box"></div>
@@ -102,7 +102,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="subject-card">
+                                            <div class="payment-card">
                                                 <input type="checkbox" id="purchase">
                                                 <label for="purchase">
                                                     <div class="icon-box"></div>
@@ -111,7 +111,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="subject-card">
+                                            <div class="payment-card">
                                                 <input type="checkbox" id="cheque">
                                                 <label for="cheque">
                                                     <div class="icon-box"></div>
