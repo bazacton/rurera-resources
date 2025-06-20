@@ -3474,7 +3474,7 @@ School Packges Style Start
 }
 .purchase-classroom h3 {
   font-size: 20px;
-  color: var(--blue);
+  color: #333;
   margin: 0 0 10px;
 }
 .choose-subjects input[type=checkbox],
