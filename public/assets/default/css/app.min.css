@@ -3504,6 +3504,13 @@ School Packges Style Start
 .choose-subjects input[type=radio]:checked ~ label {
   border-color: var(--blue);
 }
+.payment-card input[type=radio]:checked ~ label {
+  background-color: #fff;
+}
+.payment-card input[type=radio]:checked ~ label img {
+  filter: invert(67%) sepia(35%) saturate(6151%) hue-rotate(175deg) brightness(100%) contrast(102%);
+}
+
 .choose-subjects label strong span,
 .payment-card label strong span {
   font-weight: 400;
@@ -3576,6 +3583,17 @@ School Packges Style Start
 }
 .times-table {
   margin: 0 0 30px;
+}
+.payment-method .btn-holder {
+  text-align: center;
+  margin-top: 30px;
+}
+.payment-method .continue-btn {
+  border: 0;
+  background-color: var(--blue);
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 5px;
 }
 /*********************************
 School Packges Style End
