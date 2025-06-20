@@ -3516,6 +3516,8 @@ School Packges Style Start
   margin: 0 0 10px;
 }
 .payment-card label .icon-box img {
+  width: 30px;
+  height: 30px;
   filter: invert(92%) sepia(10%) saturate(28%) hue-rotate(12deg) brightness(100%) contrast(91%);
 }
 .payment-card input[type=radio]:checked ~ label img {
