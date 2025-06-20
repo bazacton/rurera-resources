@@ -3527,6 +3527,44 @@ School Packges Style Start
   background-color: #fff;
   border-radius: 100%;
 }
+.increase-decrease-box p {
+  font-weight: 600;
+}
+
+.increase-decrease-box p span {
+  color: var(--blue);
+}
+
+.num-students .detail-text {
+  font-size: 14px;
+  color: var(--blue);
+}
+
+.times-card {
+  background-color: #fcfcfc;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.times-card .icon-box {
+  width: 25px;
+  font-size: 20px;
+}
+.times-card strong {
+  display: block;
+  line-height: normal;
+  padding-bottom: 5px;
+}
+.times-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: normal;
+}
+.times-table {
+  margin: 0 0 30px;
+}
 /*********************************
 School Packges Style End
 **********************************/
