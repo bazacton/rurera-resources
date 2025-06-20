@@ -69,8 +69,10 @@
                                             <label for="q-type">Type</label>
                                         </div>
                                     </th>
-                                    <th><span class="skelton-hide skelton-height-lg skelton-mb-0">Quiz Name</span></th>
-                                    <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">Total <br> Participants</th>
+                                    <th><span class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Quiz Name</span></th>
+                                    <th>
+                                        <span class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Total <br> Participants</span>
+                                    </th>
                                     <th class="skelton-hide skelton-height-lg skelton-mb-0">Accuracy</th>
                                     <th class="skelton-hide skelton-height-lg skelton-mb-0">Code</th>
                                     <th class="skelton-hide skelton-height-lg skelton-mb-0">Class</th>
