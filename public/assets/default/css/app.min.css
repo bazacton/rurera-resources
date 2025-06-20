@@ -3582,10 +3582,16 @@ School Packges Style Start
   align-items: flex-start;
   gap: 15px;
   margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
 }
 .times-card .icon-box {
   width: 25px;
   font-size: 20px;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  transform: rotate(-20deg);
 }
 .times-card strong {
   display: block;
