@@ -3503,6 +3503,30 @@ School Packges Style Start
 .choose-subjects {
   margin: 0 0 30px;
 }
+.increase-decrease-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fcfcfc;
+  padding: 15px 15px;
+  border-radius: 5px;
+  margin: 0 0 10px;
+  min-width: 400px;
+}
+.increase-decrease-box img {
+  height: 20px;
+  width: 20px;
+}
+.num-students {
+  margin: 0 0 30px;
+}
+.increase-decrease-box button {
+  height: 35px;
+  width: 35px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 100%;
+}
 /*********************************
 School Packges Style End
 **********************************/
