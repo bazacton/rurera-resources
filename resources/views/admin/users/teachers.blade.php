@@ -122,7 +122,7 @@
 
                                     </tbody>
                                 </table>
-                                {{$users->count()}} Teachers
+                               <span class="teacher-counts">{{$users->count()}} Teachers</span>
                             </div>
                         </div>
                     </div>
