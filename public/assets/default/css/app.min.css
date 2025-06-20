@@ -3539,8 +3539,11 @@ School Packges Style Start
   background-color: #fcfcfc;
   padding: 15px 15px;
   border-radius: 5px;
-  margin: 0 0 10px;
-  min-width: 400px;
+  margin: 0;
+  min-width: 300px;
+}
+.num-students h3 {
+  margin: 0;
 }
 .increase-decrease-box img {
   height: 20px;
@@ -3550,6 +3553,9 @@ School Packges Style Start
   margin: 0 0 25px;
   padding: 0 0 25px;
   border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 .increase-decrease-box button {
   height: 35px;
