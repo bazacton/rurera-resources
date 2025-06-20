@@ -3550,8 +3550,8 @@ School Packges Style Start
   width: 20px;
 }
 .num-students {
-  margin: 0 0 25px;
-  padding: 0 0 25px;
+  margin: 0 0 30px;
+  padding: 0 0 30px;
   border-bottom: 1px solid #ddd;
   display: flex;
   align-items: center;
@@ -3622,9 +3622,9 @@ School Packges Style Start
   line-height: normal;
 }
 .times-table {
-  margin: 0 0 25px;
+  margin: 0 0 30px;
   border-bottom: 1px solid #ddd;
-  padding: 0 0 25px;
+  padding: 0 0 30px;
 }
 .payment-method .btn-holder {
   text-align: center;
