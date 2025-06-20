@@ -3496,6 +3496,10 @@ School Packges Style Start
   width: 100%;
   background-color: #fcfcfc;
 }
+.payment-card input[type=checkbox]:checked ~ label,
+.choose-subjects input[type=checkbox]:checked ~ label {
+  border-color: var(--blue);
+}
 .choose-subjects label strong span,
 .payment-card label strong span {
   font-weight: 400;
