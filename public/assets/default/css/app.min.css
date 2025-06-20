@@ -3610,7 +3610,7 @@ School Packges Style Start
 .purchase-sidebar .sidebar-icon img {
   height: 45px;
   width: 45px;
-  filter: invert(44%) sepia(99%) saturate(293%) hue-rotate(124deg) brightness(97%) contrast(92%);
+  filter: invert(54%) sepia(44%) saturate(3346%) hue-rotate(181deg) brightness(107%) contrast(101%);
 }
 .purchase-sidebar h3 {
   text-align: center;
@@ -3626,6 +3626,9 @@ School Packges Style Start
   align-items: center;
   gap: 5px;
   margin: 0 0 20px;
+}
+.purchase-sidebar ul li .icon-box {
+  font-size: 14px;
 }
 .purchase-price {
   margin: 30px 0 25px;
