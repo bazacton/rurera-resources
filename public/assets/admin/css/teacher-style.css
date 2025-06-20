@@ -4662,6 +4662,7 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
     border-radius: 6px;
     width: 100%;
     line-height: normal;
+    outline: none;
 }
 .student-form .field-lable {
     display: block;
