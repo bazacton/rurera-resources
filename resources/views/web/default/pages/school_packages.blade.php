@@ -17,7 +17,7 @@
                                 <div class="choose-subjects">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h3>Sats <span>(pick up to 3)</span></h3>
+                                            <h3>Subjects</h3>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="subject-card">
