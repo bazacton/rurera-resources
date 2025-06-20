@@ -3505,6 +3505,10 @@ School Packges Style Start
 .choose-subjects input[type=radio]:checked ~ label {
   border-color: var(--blue);
 }
+.choose-subjects input[type=checkbox]:checked ~ label,
+.choose-subjects input[type=radio]:checked ~ label {
+  background-color: #f1faff;
+}
 .payment-card input[type=radio]:checked ~ label {
   background-color: #fff;
 }
