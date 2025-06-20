@@ -73,10 +73,18 @@
                                     <th>
                                         <span class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Total <br> Participants</span>
                                     </th>
-                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Accuracy</th>
-                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Code</th>
-                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Class</th>
-                                    <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">Actions</th>
+                                    <th>
+                                        <span class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Accuracy</span>
+                                    </th>
+                                    <th>
+                                        <span class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Code</span>
+                                    </th>
+                                    <th>
+                                       <span class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Class</span> 
+                                    </th>
+                                    <th>
+                                        <span class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Actions</span>
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
