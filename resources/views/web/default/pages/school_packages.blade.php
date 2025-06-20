@@ -48,6 +48,15 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="sats mb-30">
+                                    <ul class="tests-list mb-30">
+                                        <li data-type="sats"><img src="/assets/default/img/assignment-logo/sats.png" alt="sats"> SATs</li>
+                                        <li data-type="11plus"><img src="/assets/default/img/assignment-logo/11plus.png" alt="11plus"> 11Plus</li>
+                                        <li data-type="iseb"><img src="/assets/default/img/assignment-logo/iseb.png" alt="iseb"> ISEB</li>
+                                        <li data-type="cat4"><img src="/assets/default/img/assignment-logo/cat4.png" alt="cat4"> CAT 4</li>
+                                        <li data-type="independent_exams"><img src="/assets/default/img/assignment-logo/independent_exams.png" alt="independent_exams"> Independent Exams</li>
+                                    </ul>
+                                </div>
                                 <div class="num-students">
                                     <h3>Specify total # of students</h3>
                                     <div class="increase-decrease-box">
