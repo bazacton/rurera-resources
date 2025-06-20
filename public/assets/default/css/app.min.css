@@ -3586,13 +3586,18 @@ School Packges Style Start
   overflow: hidden;
 }
 .times-card .icon-box {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   font-size: 20px;
   position: absolute;
   right: -10px;
   bottom: -10px;
   transform: rotate(-20deg);
+}
+.times-card .icon-box img[src*="shuttlecock.svg"] {
+  transform: scale(-1) rotate(110deg);
+  position: relative;
+  bottom: -5px;
 }
 .times-card strong {
   display: block;
