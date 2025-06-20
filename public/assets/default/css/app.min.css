@@ -3568,7 +3568,12 @@ School Packges Style Start
   font-size: 14px;
   color: var(--blue);
 }
-
+.times-table .row {
+  margin: 0 -5px;
+}
+.times-table [class*="col-"] {
+  padding: 0 5px;
+}
 .times-card {
   background-color: #fcfcfc;
   padding: 15px;
@@ -3576,6 +3581,7 @@ School Packges Style Start
   display: flex;
   align-items: flex-start;
   gap: 15px;
+  margin-bottom: 10px;
 }
 .times-card .icon-box {
   width: 25px;
