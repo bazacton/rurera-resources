@@ -67,10 +67,14 @@
                 @endif
             @endif
 
-            <div class="main-content 2222">
-
-                @yield('content')
-
+            <div class="main-content">
+                <div class="container mx-0">
+                    <div class="row">
+                        <div class="col-12">
+                            @yield('content')
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
