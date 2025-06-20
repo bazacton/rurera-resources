@@ -3599,6 +3599,7 @@ School Packges Style Start
   position: relative;
   bottom: -5px;
 }
+.times-card .icon-box img[src*="showdown.png"] {}
 .times-card strong {
   display: block;
   line-height: normal;
