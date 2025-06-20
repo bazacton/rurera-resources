@@ -3699,6 +3699,13 @@ School Packges Style Start
   margin: 0 0 5px;
   color: var(--blue);
 }
+.purchase-sidebar .contact-info .icon-box {
+    display: block;
+    margin: 0 0 15px;
+}
+.purchase-sidebar .contact-info .icon-box img {
+  filter: invert(54%) sepia(44%) saturate(3346%) hue-rotate(181deg) brightness(107%) contrast(101%);
+}
 /*********************************
 School Packges Style End
 **********************************/
