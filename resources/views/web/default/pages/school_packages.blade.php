@@ -269,8 +269,18 @@
 <script src="/assets/default/vendors/masonry/masonry.pkgd.min.js"></script>
 <script src="/assets/default/vendors/parallax/parallax.min.js"></script>
 <script type="text/javascript">
+$(document).ready(function() {
+    $(".increase-students").click(function() {
+        let value = parseInt($(".increase-decrease-box p span").text());
+        $(".increase-decrease-box p span").text(value + 1);
+    });
 
-
-
+    $(".decrease-students").click(function() {
+        let value = parseInt($(".increase-decrease-box p span").text());
+        if (value > 0) {
+            $(".increase-decrease-box p span").text(value - 1);
+        }
+    });
+});
 </script>
 @endpush
