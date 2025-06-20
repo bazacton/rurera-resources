@@ -142,7 +142,7 @@
     <section class="section">
         <div class="section-body skeleton">
             <div class="row">
-                <div class="col-12 col-md-9 col-lg-9 mx-auto">
+                <div class="col-12 col-md-9 col-lg-9">
 
                     <!-- Modal -->
                     <div class="modal fade" id="dragModal" tabindex="-1" role="dialog" aria-labelledby="dragModalLabel" aria-hidden="true">
