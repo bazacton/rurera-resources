@@ -3598,6 +3598,55 @@ School Packges Style Start
   padding: 10px 25px;
   border-radius: 5px;
 }
+.purchase-sidebar {
+  background-color: #fcfcfc;
+  padding: 25px;
+  border-radius: 5px;
+}
+.purchase-sidebar .sidebar-icon {
+  text-align: center;
+  margin: 0 0 10px;
+}
+.purchase-sidebar .sidebar-icon img {
+  height: 45px;
+  width: 45px;
+  filter: invert(44%) sepia(99%) saturate(293%) hue-rotate(124deg) brightness(97%) contrast(92%);
+}
+.purchase-sidebar h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+.purchase-sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+.purchase-sidebar ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 0 20px;
+}
+.purchase-price {
+  margin: 30px 0 25px;
+  text-align: center;
+}
+.purchase-price span {
+  display: block;
+  line-height: normal;
+  padding: 0 0 10px;
+  color: #666;
+}
+.purchase-price strong {
+  font-size: 28px;
+  color: #333;
+}
+.purchase-price strong em {
+  font-weight: 400;
+  color: #666;
+  font-style: normal;
+  font-size: 20px;
+}
 /*********************************
 School Packges Style End
 **********************************/
