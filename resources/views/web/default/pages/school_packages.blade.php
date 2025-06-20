@@ -99,7 +99,9 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="times-card">
-                                                <span class="icon-box">▶️</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/eagle.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                                                </span>
                                                 <div class="text-box">
                                                     <strong>Practice mode</strong>
                                                     <p>Build confidence at your own pace</p>
@@ -108,7 +110,9 @@
                                         </div>
                                         <div class="col-md-4">
                                             <div class="times-card">
-                                                <span class="icon-box">📄</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/battery-level.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                                                </span>
                                                 <div class="text-box">
                                                     <strong>Paper-up knowledge</strong>
                                                     <p>Comprehensive times tables practice</p>
@@ -117,7 +121,9 @@
                                         </div>
                                         <div class="col-md-4">
                                             <div class="times-card">
-                                                <span class="icon-box">⏰</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/shuttlecock.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                                                </span>
                                                 <div class="text-box">
                                                     <strong>Timed Tests</strong>
                                                     <p>Test your times tables against the clock</p>
@@ -126,7 +132,9 @@
                                         </div>
                                         <div class="col-md-4">
                                             <div class="times-card">
-                                                <span class="icon-box">💰</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/img/treasure.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
+                                                </span>
                                                 <div class="text-box">
                                                     <strong>Treasure Hunter</strong>
                                                     <p>Collect rewards and have fun while learning</p>
@@ -135,7 +143,9 @@
                                         </div>
                                         <div class="col-md-4">
                                             <div class="times-card">
-                                                <span class="icon-box">🏆</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/img/showdown.png" class="img-cover" alt="How Online Courses Benefit KS1 and KS2 Students" title="How Online Courses Benefit KS1 and KS2 Students" itemprop="image" loading="eager">
+                                                </span>
                                                 <div class="text-box">
                                                     <strong>Challenges</strong>
                                                     <p>Take on exciting mathematical challenges</p>
@@ -144,7 +154,9 @@
                                         </div>
                                         <div class="col-md-4">
                                             <div class="times-card">
-                                                <span class="icon-box">✅</span>
+                                                <span class="icon-box">
+                                                    <img src="/assets/default/svgs/fire.svg" class="img-cover" alt="Engaging Students through Interactive Technologies" title="Engaging Students through Interactive Technologies" itemprop="image" loading="eager">
+                                                </span>
                                                 <div class="text-box">
                                                     <strong>Real Test</strong>
                                                     <p>Practice with authentic test conditions</p>
