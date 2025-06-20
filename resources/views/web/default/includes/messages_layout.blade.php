@@ -1,7 +1,9 @@
-<div class="error-alert">
+@if($total_errors > 0)
+    <div class="error-alert">
     Errors have occurred with {{$total_errors}} teachers imported.
     <a href="javascript:;" class="invitation-back-btn">Go back and fix errors.</a>
 </div>
+@endif
 <div class="table-sm">
     <form action="/admin/users/teachers_invitation_submit" method="POST" class="mb-0">
         {{ csrf_field() }}

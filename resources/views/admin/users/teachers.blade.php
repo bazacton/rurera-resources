@@ -238,6 +238,7 @@
                                         <label for="teacher_role">Teacher</label>
                                     </div>
                                 </div>
+                                @if(auth()->user()->isDistricAdmin())
                                 <div class="input-group">
                                     <div class="radio-buttons">
                                         <input type="radio" id="district_teacher_role" name="role_id"
@@ -245,6 +246,7 @@
                                         <label for="district_teacher_role">District Admin</label>
                                     </div>
                                 </div>
+                                @endif
                                 <div class="input-group">
                                     <div class="radio-buttons">
                                         <input type="radio" id="school_admin_role" name="role_id"
@@ -295,6 +297,7 @@
                                     <label for="teacher_role-add">Teacher</label>
                                 </div>
                             </div>
+                            @if(auth()->user()->isDistricAdmin())
                             <div class="input-group">
                                 <div class="radio-buttons">
                                     <input type="radio" id="district_teacher_role-add" name="role_id"
@@ -302,6 +305,7 @@
                                     <label for="district_teacher_role-add">District Admin</label>
                                 </div>
                             </div>
+                            @endif
                             <div class="input-group">
                                 <div class="radio-buttons">
                                     <input type="radio" id="school_admin_role-add" name="role_id"
