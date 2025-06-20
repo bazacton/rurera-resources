@@ -96,7 +96,7 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="payment-card">
-                                                <input type="radio" id="credit">
+                                                <input type="radio" id="credit" name="payment">
                                                 <label for="credit">
                                                     <div class="icon-box">
                                                         <img src="/assets/default/svgs/credit.svg" alt="credit">
@@ -107,7 +107,7 @@
                                         </div>
                                         <div class="col-md-4">
                                             <div class="payment-card">
-                                                <input type="radio" id="purchase">
+                                                <input type="radio" id="purchase" name="payment">
                                                 <label for="purchase">
                                                     <div class="icon-box">
                                                         <img src="/assets/default/svgs/purchase.svg" alt="purchase">
@@ -118,7 +118,7 @@
                                         </div>
                                         <div class="col-md-4">
                                             <div class="payment-card">
-                                                <input type="radio" id="cheque">
+                                                <input type="radio" id="cheque" name="payment">
                                                 <label for="cheque">
                                                     <div class="icon-box">
                                                         <img src="/assets/default/svgs/cheque.svg" alt="cheque">
