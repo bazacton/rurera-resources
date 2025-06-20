@@ -4280,6 +4280,14 @@ body input[type="password"]:focus::-webkit-input-placeholder {color: transparent
 .review-btn:hover {
     background: linear-gradient(to bottom, #5fa8e1, #3d7fcc);
 }
+.teacher-counts {
+    display: inline-block;
+    line-height: normal;
+    padding: 15px 15px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--primary);
+}
 
 /* Teacher Search Style End */
 
