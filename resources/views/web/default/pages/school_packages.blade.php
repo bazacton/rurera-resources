@@ -208,7 +208,7 @@
                                             <img src="/assets/default/svgs/phone-class.svg" alt="phone-class">
                                         </span>
                                         <strong>Questions?</strong>
-                                        <a href="#">orders@edulicence.com</a>
+                                        <a href="#">orders@rurera.com</a>
                                         <a href="#">Subscription FAQ</a>
                                     </div>
                                 </div>
