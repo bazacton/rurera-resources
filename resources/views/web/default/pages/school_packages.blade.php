@@ -16,34 +16,70 @@
                                 </div>
                                 <div class="choose-subjects">
                                     <div class="row">
-                                        <div class="col-md-12">
-                                            <h3>Subjects</h3>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="subject-card">
-                                                <input type="checkbox" id="subject1">
-                                                <label for="subject1">
-                                                    <div class="icon-box"></div>
-                                                    <strong>English <span>Reception-Year 13</span></strong>
-                                                </label>
+                                        <div class="col-12 col-lg-2 mt-20">
+                                            <div class="categories-boxes">
+                                                <div class="categories-card">
+                                                    <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
+                                                    <div class="categories-icon" style="background: #2d6a4f;">
+                                                        <img src="/assets/default/svgs/categories-science.svg" width="300" height="300" alt="categories-science">
+                                                    </div>
+                                                    <a href="#"><h3 class="categories-title">Science</h3></a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
-                                            <div class="subject-card">
-                                                <input type="checkbox" id="subject2">
-                                                <label for="subject2">
-                                                    <div class="icon-box"></div>
-                                                    <strong>Maths <span>Reception-Year 13</span></strong>
-                                                </label>
+                                        <div class="col-12 col-lg-2 mt-20">
+                                            <div class="categories-boxes">
+                                                <div class="categories-card">
+                                                    <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
+                                                    <div class="categories-icon" style="background: #66f;">
+                                                        <img src="/assets/default/svgs/categories-history.svg" width="2560" height="2560" alt="categories-history">
+                                                    </div>
+                                                    <a href="#"><h3 class="categories-title">History</h3></a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
-                                            <div class="subject-card">
-                                                <input type="checkbox" id="subject3">
-                                                <label for="subject3">
-                                                    <div class="icon-box"></div>
-                                                    <strong>Science <span>Years 1-9</span></strong>
-                                                </label>
+                                        <div class="col-12 col-lg-2 mt-20">
+                                            <div class="categories-boxes">
+                                                <div class="categories-card">
+                                                    <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
+                                                    <div class="categories-icon" style="background: #f90;">
+                                                        <img src="/assets/default/svgs/categories-education.svg" width="200" height="200" alt="categories-education">
+                                                    </div>
+                                                    <a href="#"><h3 class="categories-title">Religious Education</h3></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-2 mt-20">
+                                            <div class="categories-boxes">
+                                                <div class="categories-card">
+                                                    <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
+                                                    <div class="categories-icon" style="background: #f60;">
+                                                        <img src="/assets/default/svgs/categories-art.svg" width="150" height="150" alt="categories-art">
+                                                    </div>
+                                                    <a href="#"><h3 class="categories-title">Art</h3></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-2 mt-20">
+                                            <div class="categories-boxes">
+                                                <div class="categories-card">
+                                                    <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
+                                                    <div class="categories-icon" style="background: #2d6a4f;">
+                                                        <img src="/assets/default/svgs/categories-art.svg" width="150" height="150" alt="categories-science">
+                                                    </div>
+                                                    <a href="#"><h3 class="categories-title">SAT</h3></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-2 mt-20">
+                                            <div class="categories-boxes">
+                                                <div class="categories-card">
+                                                    <span class="topic-numbers" style="background-color: #fff; color: #27325e;">Course</span>
+                                                    <div class="categories-icon" style="background: #339;">
+                                                        <img src="/assets/default/svgs/categories-math.svg" width="800" height="800" alt="categories-math">
+                                                    </div>
+                                                    <a href="#"><h3 class="categories-title">Maths</h3></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
