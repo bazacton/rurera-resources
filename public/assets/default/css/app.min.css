@@ -3455,6 +3455,59 @@ Page Elements Style End
 **********************************/
 
 /*********************************
+School Packges Style Start
+**********************************/
+.classroom-content-box {
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 5px;
+}
+.purchase-heading {
+  margin: 0 0 15px;
+}
+.purchase-heading h2 {
+  margin: 0 0 5px;
+}
+.purchase-heading p {
+  line-height: normal;
+}
+.purchase-classroom h3 {
+  font-size: 20px;
+  color: var(--blue);
+  margin: 0 0 10px;
+}
+.choose-subjects input[type=checkbox] {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.subject-card {
+  position: relative;
+}
+.choose-subjects label {
+  margin: 0;
+  border: 2px solid #ddd;
+  padding: 25px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #fcfcfc;
+}
+.choose-subjects label strong span {
+  font-weight: 400;
+  color: #999;
+  display: block;
+  line-height: normal;
+  padding-top: 5px;
+}
+.choose-subjects {
+  margin: 0 0 30px;
+}
+/*********************************
+School Packges Style End
+**********************************/
+
+/*********************************
 Lms Footer Style Start
 **********************************/
 .footer {position: relative; padding-top: 30px;}
