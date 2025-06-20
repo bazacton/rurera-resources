@@ -63,8 +63,8 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">
-                                        <div class="checkbox-field">
+                                    <th>
+                                        <div class="checkbox-field skelton-hide skelton-height-lg skelton-mb-0">
                                             <input type="checkbox" id="q-type">
                                             <label for="q-type">Type</label>
                                         </div>
