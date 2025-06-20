@@ -173,7 +173,7 @@
                                         <button class="decrease-students">
                                             <img src="/assets/default/svgs/minus.svg" alt="minus">
                                         </button>
-                                        <p>Up to <span>35</span> students</p>
+                                        <p>Up to <span class="student-val">35</span> students</p>
                                         <button class="increase-students"><img src="/assets/default/svgs/plus.svg" alt="plus"></button>
                                     </div>
                                     <p class="detail-text">Have more than 100 students? Request a quote for pricing info.</p>
@@ -271,14 +271,14 @@
 <script type="text/javascript">
 $(document).ready(function() {
     $(".increase-students").click(function() {
-        let value = parseInt($(".increase-decrease-box p span").text());
-        $(".increase-decrease-box p span").text(value + 1);
+        let value = parseInt($(".student-val").text());
+        $(".student-val").text(value + 1);
     });
 
     $(".decrease-students").click(function() {
-        let value = parseInt($(".increase-decrease-box p span").text());
+        let value = parseInt($(".student-val").text());
         if (value > 0) {
-            $(".increase-decrease-box p span").text(value - 1);
+            $(".student-val").text(value - 1);
         }
     });
 });
