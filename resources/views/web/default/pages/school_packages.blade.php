@@ -94,27 +94,33 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="payment-card">
-                                                <input type="checkbox" id="credit">
+                                                <input type="radio" id="credit">
                                                 <label for="credit">
-                                                    <div class="icon-box"></div>
+                                                    <div class="icon-box">
+                                                        <img src="/assets/default/svgs/credit.svg" alt="credit">
+                                                    </div>
                                                     <strong>Credit card</strong>
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="payment-card">
-                                                <input type="checkbox" id="purchase">
+                                                <input type="radio" id="purchase">
                                                 <label for="purchase">
-                                                    <div class="icon-box"></div>
+                                                    <div class="icon-box">
+                                                        <img src="/assets/default/svgs/purchase.svg" alt="purchase">
+                                                    </div>
                                                     <strong>Purchase order</strong>
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="payment-card">
-                                                <input type="checkbox" id="cheque">
+                                                <input type="radio" id="cheque">
                                                 <label for="cheque">
-                                                    <div class="icon-box"></div>
+                                                    <div class="icon-box">
+                                                        <img src="/assets/default/svgs/cheque.svg" alt="cheque">
+                                                    </div>
                                                     <strong>Cheque</strong>
                                                 </label>
                                             </div>
