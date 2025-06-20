@@ -224,8 +224,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="invite-text-field">
-                        <form action="/admin/users/teachers_invitation" method="POST" class="mb-0">
+                    <div class="invite-text-field invitation-form-area">
+                        <form action="javascript:;" method="POST" class="mb-0 teachers-invites-form">
                             {{ csrf_field() }}
                         <h6>Invite Teacher by Email</h6>
 
@@ -259,9 +259,14 @@
                             <p>Maximum no of emails allowed is 20</p>
                         </div>
                         <div class="review-btn-holder d-flex align-items-center justify-content-end">
-                            <button type="submit" class="review-btn" type="button">Review Invites</button>
+                            <button type="button" class="review-btn teacher-invites-btn" type="button">Review Invites</button>
                         </div>
                         </form>
+                    </div>
+                    <div class="invitation-response-area rurera-hide">
+                        <button type="button" class="invitation-back-btn">Back</button>
+                        <div class="invitation-response-block"></div>
+
                     </div>
                 </div>
             </div>
@@ -421,7 +426,28 @@
                 $(this).toggle(rowText.includes(value));
             });
         });
+        $(document).on('click', '.teacher-invites-btn', function (e) {
+            //
+            var formData = new FormData($(this).closest('form')[0]);
+            $.ajax({
+                type: "POST",
+                url: '/admin/users/teachers_invitation',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (return_data) {
+                    $(".invitation-form-area").addClass('rurera-hide');
+                    $(".invitation-response-area").removeClass('rurera-hide');
+                    $(".invitation-response-block").html(return_data);
+                    console.log(return_data);
+                }
+            });
+        });
 
+        $(document).on('click', '.invitation-back-btn', function () {
+            $(".invitation-form-area").removeClass('rurera-hide');
+            $(".invitation-response-area").addClass('rurera-hide');
+        });
 
 
 
