@@ -3476,15 +3476,18 @@ School Packges Style Start
   color: var(--blue);
   margin: 0 0 10px;
 }
-.choose-subjects input[type=checkbox] {
+.choose-subjects input[type=checkbox],
+.payment-card input[type=checkbox] {
   position: absolute;
   width: 0;
   height: 0;
 }
-.subject-card {
+.subject-card,
+.payment-card {
   position: relative;
 }
-.choose-subjects label {
+.choose-subjects label,
+.payment-card label {
   margin: 0;
   border: 2px solid #ddd;
   padding: 25px;
@@ -3493,7 +3496,8 @@ School Packges Style Start
   width: 100%;
   background-color: #fcfcfc;
 }
-.choose-subjects label strong span {
+.choose-subjects label strong span,
+.payment-card label strong span {
   font-weight: 400;
   color: #999;
   display: block;
