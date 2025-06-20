@@ -69,7 +69,7 @@
                                             <label for="q-type">Type</label>
                                         </div>
                                     </th>
-                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Quiz Name</th>
+                                    <th class="skelton-hide skelton-height-lg skelton-mb-0"><span class="skelton-hide skelton-height-lg skelton-mb-0">Quiz Name</span></th>
                                     <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">Total <br> Participants</th>
                                     <th class="skelton-hide skelton-height-lg skelton-mb-0">Accuracy</th>
                                     <th class="skelton-hide skelton-height-lg skelton-mb-0">Code</th>
