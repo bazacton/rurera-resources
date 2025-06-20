@@ -57,17 +57,6 @@
                                         <li data-type="independent_exams"><img src="/assets/default/img/assignment-logo/independent_exams.png" alt="independent_exams"> Independent Exams</li>
                                     </ul>
                                 </div>
-                                <div class="num-students">
-                                    <h3>Specify total # of students</h3>
-                                    <div class="increase-decrease-box">
-                                        <button class="decrease-students">
-                                            <img src="/assets/default/svgs/minus.svg" alt="minus">
-                                        </button>
-                                        <p>Up to <span>35</span> students</p>
-                                        <button class="increase-students"><img src="/assets/default/svgs/plus.svg" alt="plus"></button>
-                                    </div>
-                                    <p class="detail-text">Have more than 100 students? Request a quote for pricing info.</p>
-                                </div>
                                 <div class="times-table">
                                     <h3>Times Tables</h3>
                                     <div class="row">
@@ -99,6 +88,17 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="num-students">
+                                    <h3>Specify total # of students</h3>
+                                    <div class="increase-decrease-box">
+                                        <button class="decrease-students">
+                                            <img src="/assets/default/svgs/minus.svg" alt="minus">
+                                        </button>
+                                        <p>Up to <span>35</span> students</p>
+                                        <button class="increase-students"><img src="/assets/default/svgs/plus.svg" alt="plus"></button>
+                                    </div>
+                                    <p class="detail-text">Have more than 100 students? Request a quote for pricing info.</p>
                                 </div>
                                 <div class="payment-method">
                                     <h3>Select payment method</h3>
