@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
-                    <button type="submit" class="btn btn-primary w-100 skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.show_results') }}</button>
+                    <button type="submit" class="btn btn-primary w-100 skelton-hide skelton-height-lg skelton-mb-0 br-radius-sm">{{ trans('admin/main.show_results') }}</button>
                 </div>
             </form>
         </div>
