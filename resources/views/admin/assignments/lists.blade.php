@@ -425,8 +425,9 @@
                                 @foreach($assignments as $assignmentObj)
                                 <tr>
                                     <td>
-                                        <span>{{ $assignmentObj->title }}</span>
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0"></div>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <span>{{ $assignmentObj->title }}</span>
+                                        </div>
                                     </td>
                                     <td>
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
