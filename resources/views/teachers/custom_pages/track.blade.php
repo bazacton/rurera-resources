@@ -99,7 +99,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
+                                    <td>
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                             Science
                                             <small>Dec 3 - <em>Runing</em></small>
