@@ -5,7 +5,7 @@
 @endpush
 
 @section('content')
-<section class="section">
+<section class="section skeleton">
     <div class="section-header">
         <h1>Schools</h1>
         <div class="section-header-breadcrumb">
@@ -52,7 +52,7 @@
                     @can('admin_schools_create')
                     <div class="card-header">
                         <div class="text-right">
-                            <a href="/admin/schools/create" class="btn btn-primary">New School</a>
+                            <a href="/admin/schools/create" class="btn btn-primary skelton-hide skelton-height-lg skelton-mb-0">New School</a>
                         </div>
                     </div>
                     @endcan
@@ -61,29 +61,51 @@
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
                                 <tr>
-                                    <th class="text-left">{{ trans('admin/main.title') }}</th>
-                                    <th class="text-left">Added by</th>
-                                    <th class="text-left">Added Date</th>
-                                    <th>{{ trans('admin/main.actions') }}</th>
+                                    <th class="text-left">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.title') }}</div>
+                                    </th>
+                                    <th class="text-left">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Added by</div>
+                                    </th>
+                                    <th class="text-left">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Added Date</div>
+                                    </th>
+                                    <th>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            {{ trans('admin/main.actions') }}
+                                        </div>
+                                    </th>
                                 </tr>
 
                                 @foreach($schools as $schoolData)
                                 <tr>
                                     <td>
-                                        <span>{{ $schoolData->title }}</span>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <span>{{ $schoolData->title }}</span>
+                                        </div>
                                     </td>
-                                    <td class="text-left">{{ $schoolData->user->get_full_name() }}</td>
-                                    <td class="text-left">{{ dateTimeFormat($schoolData->created_at, 'j M y | H:i') }}</td>
+                                    <td class="text-left">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            {{ $schoolData->user->get_full_name() }}
+                                        </div>
+                                    </td>
+                                    <td class="text-left">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            {{ dateTimeFormat($schoolData->created_at, 'j M y | H:i') }}
+                                        </div>
+                                    </td>
                                     <td>
-                                        @can('admin_schools_edit')
-                                        <a href="/admin/schools/{{ $schoolData->id }}/edit" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
-                                            <i class="fa fa-edit"></i>
-                                        </a>
-                                        @endcan
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            @can('admin_schools_edit')
+                                            <a href="/admin/schools/{{ $schoolData->id }}/edit" class="btn-transparent btn-sm text-primary" data-toggle="tooltip" data-placement="top" title="{{ trans('admin/main.edit') }}">
+                                                <i class="fa fa-edit"></i>
+                                            </a>
+                                            @endcan
 
-                                        @can('admin_schools_delete')
-                                        @include('admin.includes.delete_button',['url' => '/admin/schools/'.$schoolData->id.'/delete' , 'btnClass' => 'btn-sm'])
-                                        @endcan
+                                            @can('admin_schools_delete')
+                                            @include('admin.includes.delete_button',['url' => '/admin/schools/'.$schoolData->id.'/delete' , 'btnClass' => 'btn-sm'])
+                                            @endcan
+                                        </div>
                                     </td>
 
                                 </tr>
