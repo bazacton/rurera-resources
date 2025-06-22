@@ -86,9 +86,9 @@
                                 <table class="table mb-0">
                                     <thead class="thead-light">
                                     <tr>
-                                        <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Student</th>
-                                        <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Last Login</th>
-                                        <th class="skelton-hide1 skelton-height-lg skelton-mb-0">School</th>
+                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">Student</th>
+                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">Last Login</th>
+                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">School</th>
                                     </tr>
                                     </thead>
                                     <tbody class="students-list">
@@ -96,7 +96,7 @@
                                     @if($school->students->count() > 0)
                                         @foreach($school->students as $studentObj)
                                             <tr>
-                                                <td data-th="Teacher/Admin" class="skelton-hide1 skelton-height-lg skelton-mb-0">
+                                                <td data-th="Teacher/Admin" class="skelton-hide skelton-height-lg skelton-mb-0">
                                                     <div class="check-box">
                                                         <input type="checkbox" class="sections-users" value="{{ $studentObj->id }}">
                                                     </div>
@@ -107,8 +107,8 @@
                                                     </span>
                                                     </strong>
                                                 </td>
-                                                <td data-th="Last Login" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{($studentObj->last_login > 0)? dateTimeFormat($studentObj->last_login, 'j M y | H:i') : '-'}}</td>
-                                                <td data-th="School" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{$studentObj->userSchool->title}}</td>
+                                                <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">{{($studentObj->last_login > 0)? dateTimeFormat($studentObj->last_login, 'j M y | H:i') : '-'}}</td>
+                                                <td data-th="School" class="skelton-hide skelton-height-lg skelton-mb-0">{{$studentObj->userSchool->title}}</td>
                                             </tr>
                                         @endforeach
                                     @endif
@@ -146,9 +146,9 @@
                                     <table class="table mb-0">
                                         <thead class="thead-light">
                                         <tr>
-                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Student</th>
-                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Last Login</th>
-                                            <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Action</th>
+                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Student</th>
+                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Last Login</th>
+                                            <th class="skelton-hide skelton-height-lg skelton-mb-0">Action</th>
                                         </tr>
                                         </thead>
                                         <tbody class="students-list">
@@ -156,7 +156,7 @@
                                         @if($joining_requests->count() > 0)
                                             @foreach($joining_requests as $joiningRequestObj)
                                                 <tr>
-                                                    <td data-th="Teacher/Admin" class="skelton-hide1 skelton-height-lg skelton-mb-0">
+                                                    <td data-th="Teacher/Admin" class="skelton-hide skelton-height-lg skelton-mb-0">
                                                         <div class="check-box">
                                                             <input type="checkbox" class="sections-users" value="{{ $joiningRequestObj->id }}">
                                                         </div>
@@ -167,7 +167,7 @@
                                                     </span>
                                                         </strong>
                                                     </td>
-                                                    <td data-th="Last Login" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{($joiningRequestObj->student->last_login > 0)? dateTimeFormat($joiningRequestObj->student->last_login, 'j M y | H:i') : '-'}}</td>
+                                                    <td data-th="Last Login" class="skelton-hide skelton-height-lg skelton-mb-0">{{($joiningRequestObj->student->last_login > 0)? dateTimeFormat($joiningRequestObj->student->last_login, 'j M y | H:i') : '-'}}</td>
                                                     <td>
                                                         <a href="javascript:;" class="btn-transparent btn-sm text-primary request-action" data-action_type="approved" data-request_id="{{$joiningRequestObj->id}}">
                                                             <i class="fa fa-check"></i>
