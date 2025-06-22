@@ -1,7 +1,6 @@
 @extends('admin.layouts.app')
 
 @push('libraries_top')
-
 @endpush
 
 @section('content')
@@ -121,7 +120,7 @@
                     </div>
                     </div>
 
-                    <div class="admin-rurera-tabs-students joining-tab-students">
+                    <div class="admin-rurera-tabs-students joining-tab-students rurera-hide">
                         <div class="teacher-table">
                             <div class="card">
 
@@ -277,11 +276,10 @@
     <div class="modal fade add-student-modal" id="add-student-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-body">
+                <div class="modal-body student-modal-box">
                     <div id="modalNav" class="modal-section active">
                         <div class="teacher-header">
                             <h2 class="modal-title">Add Student</h2>
-                            <p class="subheading">Roots International – 5th Grade</p>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -289,10 +287,15 @@
                         <div class="select-holder">
                             <h5>Select a Class</h5>
                             <div class="select-box">
-                                <select>
-                                    <option value="Roots International – 5th Grade">Roots International – 5th Grade</option>
-                                    <option value="Roots International – 6th Grade">Roots International – 6th Grade</option>
-                                    <option value="Roots International – 7th Grade">Roots International – 7th Grade</option>
+                                <select class="student-class-change">
+                                    @if($classes->count() > 0)
+                                        @php $row_no = 0; @endphp
+                                        @foreach($classes as $classObj)
+                                            @php $is_checked = ($row_no == 0)? 'checked' : ''; @endphp
+                                            <option data-class_code="{{$classObj->class_code}}" value="{{$classObj->id}}" data-class_title="{{$classObj->school->title}} - {{$classObj->title}}" {{$is_checked}}>{{$classObj->school->title}} - {{$classObj->title}}</option>
+                                            @php $row_no++; @endphp
+                                        @endforeach
+                                    @endif
                                 </select>
                             </div>
                         </div>
@@ -303,7 +306,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="student-icon-box">
-                                        <a href="#" onclick="goToSection('section1')">
+                                        <a href="javascript:;" onclick="goToSection('section1')">
                                             <div class="img-holder">
                                                 <img src="/assets/default/img/user-icon.png" alt="user-icon">
                                             </div>
@@ -316,7 +319,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="student-icon-box">
-                                        <a href="#" onclick="goToSection('section2')">
+                                        <a href="javascript:;" onclick="goToSection('section2')">
                                             <div class="img-holder">
                                                 <img src="/assets/default/img/user-icon.png" alt="user-icon">
                                             </div>
@@ -329,7 +332,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="student-icon-box">
-                                        <a href="#" onclick="goToSection('section3')">
+                                        <a href="javascript:;" onclick="goToSection('section3')">
                                             <div class="img-holder">
                                                 <img src="/assets/default/img/user-icon.png" alt="user-icon">
                                             </div>
@@ -342,7 +345,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="student-icon-box">
-                                        <a href="#" onclick="goToSection('section4')">
+                                        <a href="javascript:;" onclick="goToSection('section4')">
                                             <div class="img-holder">
                                                 <img src="/assets/default/img/user-icon.png" alt="user-icon">
                                             </div>
@@ -356,22 +359,26 @@
                             </div>
                         </div>
                     </div>
-                    <div id="section1" class="modal-section">
+                    <div id="section1" class="modal-section add-student-single-block">
+                        <form action="javascript:;" method="POST" class="mb-0 add-student-single">
+                            {{ csrf_field() }}
+                            <input type="hidden" name="class_id" class="student_class_id" value="0">
                         <div class="teacher-header">
                             <h2 class="modal-title">Add Student</h2>
-                            <p class="subheading">Roots International – 5th Grade</p>
+                            <p class="subheading class-name-full">Roots International – 5th Grade</p>
                         </div>
                         <div class="student-form">
+
                             <div class="row">
                                 <div class="col-md-12">
                                     <h3>Student Detail</h3>
                                 </div>
                                 <div class="col-md-6">
                                     <span class="field-lable">
-                                        Username <em>*</em>
+                                        Username<em>*</em>
                                     </span>
                                     <div class="field-holder">
-                                        <input type="text" placeholder="Create a unique username (e.g Daniel_243)" autocomplete="off">
+                                        <input type="text" name="username" placeholder="Create a unique username (e.g Daniel_243)" autocomplete="off" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -379,7 +386,7 @@
                                         Password <em>*</em>
                                     </span>
                                     <div class="field-holder">
-                                        <input type="password" placeholder="Create a secure password" autocomplete="off">
+                                        <input type="password" name="password" placeholder="Create a secure password" autocomplete="off" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -387,7 +394,7 @@
                                         First Name <em>*</em>
                                     </span>
                                     <div class="field-holder">
-                                        <input type="text" placeholder="Enter student first name (e.g. Daniel)" autocomplete="off">
+                                        <input type="text" name="first_name" placeholder="Enter student first name (e.g. Daniel)" autocomplete="off" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -395,47 +402,55 @@
                                         Last Name <em>*</em>
                                     </span>
                                     <div class="field-holder">
-                                        <input type="text" placeholder="Enter student last name? (e.g. Wilson)" autocomplete="off">
+                                        <input type="text" name="last_name" placeholder="Enter student last name? (e.g. Wilson)" autocomplete="off" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <span class="field-lable">
-                                        Email <em>*</em>
+                                        Email
                                     </span>
                                     <div class="field-holder">
-                                        <input type="text" placeholder="Student Valid email address" autocomplete="off">
+                                        <input type="text" name="email" placeholder="Student Valid email address" autocomplete="off">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="teacher-buttons">
                             <button class="btn btn-outline" type="button" onclick="goBack()">Back</button>
-                            <button class="btn btn-primary">Add Single Student</button>
+                            <button type="submit" class="btn btn-primary add-single-student-btn">Add Single Student</button>
                         </div>
-                        
+
+                        </form>
                     </div>
-                    <div id="section2" class="modal-section">
+                    <div class="messages-layout-block rurera-hide"></div>
+                    <div id="section2" class="modal-section import-students-list-block">
+                        <form action="javascript:;" method="POST" class="mb-0 import-students-list">
+                            {{ csrf_field() }}
+                            <input type="hidden" name="class_id" class="student_class_id" value="0">
                         <div class="teacher-header">
                             <h2 class="modal-title">Add Students</h2>
-                            <p class="subheading">Roots International – 5th Grade</p>
+                            <p class="subheading class-name-full">Roots International – 5th Grade</p>
                         </div>
                         <div class="student-form">
                             <div class="textarea-heading">
-                                <h5>Student names and optional Emails</h5>
-                                <span>4 Students</span>
+                                <h5>Student Full Names</h5>
                             </div>
                             <div class="textarea-field">
-                                <textarea name="teachers_email" placeholder="Enter your Student work email address."></textarea>
+                                <textarea name="students_full_name" placeholder="Enter Student Full name per line."></textarea>
                                 <p>List one student per line. You can also copy/paste your student list from&nbsp;Word&nbsp;or&nbsp;Excel.</p>
                             </div>
                         </div>
                         <div class="teacher-buttons">
                             <button class="btn btn-outline" type="button" onclick="goBack()">Back</button>
-                            <button class="btn btn-primary">Review Student</button>
+                            <button type="submit" class="btn btn-primary import-students-list-btn">Review Student</button>
                         </div>
+                        </form>
                     </div>
-                    <div id="section3" class="modal-section">
+                    <div id="section3" class="modal-section import-students-file-block">
+                        <form action="javascript:;" method="POST" class="mb-0 import-students-file">
+                            {{ csrf_field() }}
+                            <input type="hidden" name="class_id" class="student_class_id" value="0">
                         <div class="teacher-header">
                             <h2 class="modal-title">Import CSV</h2>
                             <p class="subheading">Roots International – 5th Grade</p>
@@ -446,7 +461,7 @@
                                 <ul>
                                 <li>File format must be in Comma Separated Values (.csv) format.</li>
                                 <li>
-                                    The header row must match the 
+                                    The header row must match the
                                     <a href="#" class="link">Sample CSV File</a> exactly.
                                 </li>
                                 </ul>
@@ -461,8 +476,7 @@
                                     <tr>
                                     <th>STUDENT_USERNAME*</th>
                                     <th>PASSWORD*</th>
-                                    <th>FIRST_NAME*</th>
-                                    <th>LAST_NAME*</th>
+                                    <th>FULL_NAME*</th>
                                     <th>EMAIL</th>
                                     </tr>
                                 </thead>
@@ -470,7 +484,6 @@
                                     <tr>
                                     <td>jonnysmith</td>
                                     <td>mypass123</td>
-                                    <td>Maxx</td>
                                     <td>Butler</td>
                                     <td>jonny@myschool.edu</td>
                                     </tr>
@@ -478,14 +491,12 @@
                                     <td>student123</td>
                                     <td>h@ll0</td>
                                     <td>Jenny</td>
-                                    <td>Jones</td>
                                     <td>j.jones@myschool.edu</td>
                                     </tr>
                                     <tr>
                                     <td>kelly-jones</td>
                                     <td>Str0Ngp@$$w0Rdd</td>
                                     <td>Kelly</td>
-                                    <td>Jones</td>
                                     <td>k.jones@myschool.edu</td>
                                     </tr>
                                 </tbody>
@@ -498,7 +509,7 @@
                                 </div>
                                 <div class="text-holder">
                                     <strong>Drag your CSV file here or...</strong>
-                                    <input type="file" id="csv-file">
+                                    <input type="file" id="csv-file" name="import-spreadsheet">
                                     <label for="csv-file">Choose file</label>
                                     <span>no file choosen</span>
                                 </div>
@@ -507,8 +518,9 @@
                         </div>
                         <div class="teacher-buttons mt-30">
                             <button class="btn btn-outline" type="button" onclick="goBack()">Back</button>
-                            <button class="btn btn-primary">Begin Import</button>
+                            <button type="submit" class="btn btn-primary import-students-file-btn">Begin Import</button>
                         </div>
+                        </form>
                     </div>
                     <div id="section4" class="modal-section class-join-modal">
                         <div class="teacher-header">
@@ -522,11 +534,11 @@
                             <div class="link-box">
                                 <div class="link">
                                 <span class="link-icon">📋</span>
-                                <a href="https://rurera.com/join#64907A2E31D12" target="_blank">
+                                <a href="https://rurera.com/join#64907A2E31D12" class="class-join-link" target="_blank">
                                     https://rurera.com/join#64907A2E31D12
                                 </a>
                                 </div>
-                                <button class="copy-btn" type="button">Copy Link</button>
+                                <button class="copy-btn copy-to-text" data-copy_to="class-join-link" type="button">Copy Link</button>
                             </div>
                         </div>
                         <div class="teacher-buttons mt-30">
@@ -591,6 +603,113 @@
             });
 
         });
+
+        $(document).on('submit', '.add-student-single', function (e) {
+            //rurera_loader($(".student-modal-box"), 'div');
+            var formData = new FormData($('.add-student-single')[0]);
+
+            $.ajax({
+                type: "POST",
+                url: '/admin/users/add_student_single',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (return_data) {
+                    $(".messages-layout-block").html(return_data);
+                    $(".messages-layout-block").removeClass('rurera-hide');
+                    $(".add-student-single-block").addClass('rurera-hide');
+
+                }
+            });
+            return false;
+        });
+
+        $(document).on('submit', '.import-students-list', function (e) {
+            //rurera_loader($(".student-modal-box"), 'div');
+            var formData = new FormData($('.import-students-list')[0]);
+            $.ajax({
+                type: "POST",
+                url: '/admin/users/import_students_list_review',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (return_data) {
+                    $(".messages-layout-block").html(return_data);
+                    $(".messages-layout-block").removeClass('rurera-hide');
+                    $(".import-students-list-block").addClass('rurera-hide');
+
+                }
+            });
+            return false;
+
+        });
+
+        $(document).on('submit', '.import-students-file', function (e) {
+            //rurera_loader($(".student-modal-box"), 'div');
+            var formData = new FormData($('.import-students-file')[0]);
+            $.ajax({
+                type: "POST",
+                url: '/admin/users/import_students_file_review',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (return_data) {
+                    $(".messages-layout-block").html(return_data);
+                    $(".messages-layout-block").removeClass('rurera-hide');
+                    $(".import-students-file-block").addClass('rurera-hide');
+
+                }
+            });
+            return false;
+
+        });
+
+
+
+
+
+        $(document).on('click', '.messages-back-btn', function (e) {
+            var target_class = $(this).attr('data-target_class');
+            var base_class = $(this).attr('data-base_class');
+            $("."+base_class).addClass('rurera-hide');
+            $("."+target_class).removeClass('rurera-hide');
+        });
+
+        $(document).on('click', '.reset-form', function (e) {
+            var form_class = $(this).attr('data-form_class');
+            $("."+form_class)[0].reset();
+        });
+
+
+
+        $(document).on('change', '.student-class-change', function (e) {
+            var class_title = $(this).find('option:selected').attr('data-class_title');
+            var class_code = $(this).find('option:selected').attr('data-class_code');
+            $(".class-join-link").html("{{ url('/join#') }}"+class_code);
+            $(".class-join-link").attr('href', "{{ url('/join#') }}"+class_code);
+            $(".student_class_id").val($(this).val());
+            $(".class-name-full").html(class_title);
+        });
+
+        $(document).on('input keyup keydown paste', '.search-students', function () {
+            var value = $(this).val().toLowerCase();
+            $('tbody.students-list tr').each(function () {
+                var rowText = $(this).text().toLowerCase();
+                $(this).toggle(rowText.includes(value));
+            });
+        });
+
+        $(".student-class-change").change();
+
+        /*Swal.fire({
+            title: 'tetitle',
+            text: 'textherer',
+            showConfirmButton: false,
+            icon: 'success',
+        });*/
+
+
+
     });
     /*Skelton Loading Fungtion End*/
 </script>
