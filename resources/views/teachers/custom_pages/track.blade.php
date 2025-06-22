@@ -69,69 +69,81 @@
                                             <label for="q-type">Type</label>
                                         </div>
                                     </th>
-                                    <th><span class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Quiz Name</span></th>
+                                    <th><div class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Quiz Name</div></th>
                                     <th>
-                                        <span class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Total <br> Participants</span>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Total <br> Participants</div>
                                     </th>
                                     <th>
-                                        <span class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Accuracy</span>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Accuracy</div>
                                     </th>
                                     <th>
-                                        <span class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Code</span>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Code</div>
                                     </th>
                                     <th>
-                                       <span class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Class</span> 
+                                       <div class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Class</div> 
                                     </th>
                                     <th>
-                                        <span class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Actions</span>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0 d-inline-block">Actions</div>
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
-                                        <div class="checkbox-field">
-                                            <input type="checkbox" id="assigned">
-                                            <label for="assigned">
-                                                <span><img src="/assets/default/svgs/list-view.svg" alt="list-view"> Assigned</span>
-                                            </label>
+                                    <td>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <div class="checkbox-field">
+                                                <input type="checkbox" id="assigned">
+                                                <label for="assigned">
+                                                    <span><img src="/assets/default/svgs/list-view.svg" alt="list-view"> Assigned</span>
+                                                </label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td class="skelton-hide skelton-height-lg skelton-mb-0">
-                                        Science
-                                        <small>Dec 3 - <em>Runing</em></small>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            Science
+                                            <small>Dec 3 - <em>Runing</em></small>
+                                        </div>
                                     </td>
-                                    <td class="text-center skelton-hide skelton-height-lg skelton-mb-0">2</td>
-                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
-                                        <div class="progress-holder">
-                                            <div class="progress-box">
-                                                <div class="circle_percent" data-percent="50">
-                                                    <div class="circle_inner">
-                                                        <div class="round_per" style="transform: rotate(360deg);"></div>
-                                                    </div>
-                                                    <div class="circle_inbox">
-                                                        <span class="percent_text">50%</span>
+                                    <td class="text-center"><div class="skelton-hide skelton-height-lg skelton-mb-0">2</div></td>
+                                    <td>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <div class="progress-holder">
+                                                <div class="progress-box">
+                                                    <div class="circle_percent" data-percent="50">
+                                                        <div class="circle_inner">
+                                                            <div class="round_per" style="transform: rotate(360deg);"></div>
+                                                        </div>
+                                                        <div class="circle_inbox">
+                                                            <span class="percent_text">50%</span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="skelton-hide skelton-height-lg skelton-mb-0"></td>
-                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
-                                        <span class="c-grade">Grade 6</span>
+                                    <td>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0"></div>
                                     </td>
-                                    <td class="text-center skelton-hide skelton-height-lg skelton-mb-0">
-                                        <div class="quiz-data-controls">
-                                            <button type="button">Edit Questions</button>
-                                            <div class="dropdown-box">
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
-                                                    </a>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
-                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                    <td>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <span class="c-grade">Grade 6</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <div class="quiz-data-controls">
+                                                <button type="button">Edit Questions</button>
+                                                <div class="dropdown-box">
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                            <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
+                                                        </a>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                            <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
