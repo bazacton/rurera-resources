@@ -277,7 +277,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body student-modal-box">
-                    <div id="modalNav" class="modal-section active">
+                    <div id="modalNav" class="modal-section student-modal-main active">
                         <div class="teacher-header">
                             <h2 class="modal-title">Add Student</h2>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -690,6 +690,16 @@
             $(".student_class_id").val($(this).val());
             $(".class-name-full").html(class_title);
         });
+
+        $(document).on('click', '.add-student-btn', function (e) {
+            $(".add-student-single")[0].reset();
+            $(".import-students-list")[0].reset();
+            $(".import-students-file")[0].reset();
+            $(".student-modal-box .modal-section").removeClass('active');
+            $(".student-modal-main").addClass('active');
+        });
+
+
 
         $(document).on('input keyup keydown paste', '.search-students', function () {
             var value = $(this).val().toLowerCase();
