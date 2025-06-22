@@ -145,73 +145,119 @@
                         <table class="table mb-0">
                             <thead class="thead-light">
                                 <tr>
-                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Type</th>
-                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Questions</th>
-                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Participations</th>
-                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Start & End Date</th>
-                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Accuracy</th>
-                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Status</th>
-                                    <th class="skelton-hide skelton-height-lg skelton-mb-0">Actions</th>
+                                    <th>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Type</div>
+                                    </th>
+                                    <th>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Questions</div>
+                                    </th>
+                                    <th>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Participations</div>
+                                    </th>
+                                    <th>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Start & End Date</div>
+                                    </th>
+                                    <th>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Accuracy</div>
+                                    </th>
+                                    <th>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Status</div>
+                                    </th>
+                                    <th>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Actions</div>
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td data-th="Type" class="skelton-hide skelton-height-lg skelton-mb-0">Vocabulary</td>
-                                    <td data-th="Questions" class="skelton-hide skelton-height-lg skelton-mb-0">0</td>
-                                    <td data-th="Participations" class="skelton-hide skelton-height-lg skelton-mb-0">50</td>
-                                    <td data-th="Start & End Date" class="skelton-hide skelton-height-lg skelton-mb-0">11 Sep 05:00 / 16 Sep 05:00</td>
-                                    <td data-th="Accuracy" class="skelton-hide skelton-height-lg skelton-mb-0">
-                                        <div class="circle_percent circle-green" data-percent="50">
-                                            <div class="circle_inner">
-                                                <div class="round_per" style="transform: rotate(360deg);"></div>
-                                            </div>
-                                            <div class="circle_inbox">
-                                                <span class="percent_text">50%</span>
+                                    <td data-th="Type">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Vocabulary</div>
+                                    </td>
+                                    <td data-th="Questions">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">0</div>
+                                    </td>
+                                    <td data-th="Participations">                                        
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">50</div>
+                                    </td>
+                                    <td data-th="Start & End Date">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">11 Sep 05:00 / 16 Sep 05:00</div>
+                                    </td>
+                                    <td data-th="Accuracy">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <div class="circle_percent circle-green" data-percent="50">
+                                                <div class="circle_inner">
+                                                    <div class="round_per" style="transform: rotate(360deg);"></div>
+                                                </div>
+                                                <div class="circle_inbox">
+                                                    <span class="percent_text">50%</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
-                                    <td data-th="Status" class="text-success font-weight-bold skelton-hide skelton-height-lg skelton-mb-0">Activ e</td>
-                                    <td data-th="Actions" class="skelton-hide skelton-height-lg skelton-mb-0">
-                                        <div class="dropdown-box">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
-                                                </a>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                    <td data-th="Status" class="text-success font-weight-bold">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Activ e</div>
+                                    </td>
+                                    <td data-th="Actions">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <div class="dropdown-box">
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
+                                                    </a>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td data-th="Type" class="skelton-hide skelton-height-lg skelton-mb-0" >Vocabulary</td>
-                                    <td data-th="Questions" class="skelton-hide skelton-height-lg skelton-mb-0">0</td>
-                                    <td data-th="Participations" class="skelton-hide skelton-height-lg skelton-mb-0">50</td>
-                                    <td data-th="Start & End Date" class="skelton-hide skelton-height-lg skelton-mb-0">11 Sep 05:00 / 16 Sep 05:00</td>
-                                    <td data-th="Accuracy" class="skelton-hide skelton-height-lg skelton-mb-0">
-                                        <div class="circle_percent circle-green" data-percent="50">
-                                            <div class="circle_inner">
-                                                <div class="round_per" style="transform: rotate(360deg);"></div>
-                                            </div>
-                                            <div class="circle_inbox">
-                                                <span class="percent_text">50%</span>
+                                    <td data-th="Type">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Vocabulary</div>
+                                    </td>
+                                    <td data-th="Questions">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">0</div>
+                                    </td>
+                                    <td data-th="Participations">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">50</div>
+                                    </td>
+                                    <td data-th="Start & End Date">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            11 Sep 05:00 / 16 Sep 05:00
+                                        </div>
+                                    </td>
+                                    <td data-th="Accuracy">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <div class="circle_percent circle-green" data-percent="50">
+                                                <div class="circle_inner">
+                                                    <div class="round_per" style="transform: rotate(360deg);"></div>
+                                                </div>
+                                                <div class="circle_inbox">
+                                                    <span class="percent_text">50%</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
-                                    <td data-th="Status" class="text-success font-weight-bold skelton-hide skelton-height-lg skelton-mb-0">Active</td>
-                                    <td data-th="Actions" class="skelton-hide skelton-height-lg skelton-mb-0">
-                                        <div class="dropdown-box">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                    <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
-                                                </a>
-                                                <div class="dropdown-menu" style="">
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                    <td data-th="Status" class="text-success font-weight-bold">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            Active
+                                        </div>
+                                    </td>
+                                    <td data-th="Actions">
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <div class="dropdown-box">
+                                                <div class="dropdown">
+                                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                        <span class="icon-box"><img src="/assets/default/svgs/dots-three.svg" alt="dots-three"></span>
+                                                    </a>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                        <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
