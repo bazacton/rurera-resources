@@ -428,7 +428,7 @@
                                         <span>{{ $assignmentObj->title }}</span>
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0"></div>
                                     </td>
-                                    <td class="skelton-hide skelton-height-lg skelton-mb-0">
+                                    <td>
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                             <span>{{ $assignmentObj->assignment_type }}</span>
                                         </div>
