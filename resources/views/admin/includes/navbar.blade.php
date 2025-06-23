@@ -69,7 +69,7 @@
                     <img src="/assets/default/svgs/collectioin-menu.svg" alt="collectioin-menu"> Collections
                 </a>
                 <a href="{{ getAdminPanelUrl() }}/custom_page/track" class="dropdown-item has-icon">
-                    <img src="/assets/default/svgs/progress-report.svg" alt="progress-report"> Track
+                    <img src="/assets/default/svgs/report-menu.svg" alt="report-menu"> Track
                 </a>
                 <a href="{{ getAdminPanelUrl() }}/custom_page/tailer_hub" class="dropdown-item has-icon">
                     <i class="fas fa-cog"></i> Tailor Hub
