@@ -140,7 +140,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
-                            <button type="submit" class="btn btn-primary w-100 skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.show_results') }}
+                            <button type="submit" class="btn btn-primary w-100 skelton-hide skelton-height-lg skelton-mb-0 br-radius-sm">{{ trans('admin/main.show_results') }}
                             </button>
                         </div>
                     </form>
@@ -161,11 +161,27 @@
                             <div class="table-responsive">
                                 <table class="table table-striped font-14">
                                     <tr>
-                                        <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.title') }}</th>
-                                        <th class="text-left skelton-hide skelton-height-lg skelton-mb-0">Created By</th>
-                                        <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.question_count') }}</th>
-                                        <th class="text-center skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.status') }}</th>
-                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.actions') }}</th>
+                                        <th class="text-left">
+                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                {{ trans('admin/main.title') }}
+                                            </div>
+                                        </th>
+                                        <th class="text-left">Created By</th>
+                                        <th class="text-center">
+                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                {{ trans('admin/main.question_count') }}
+                                            </div>
+                                        </th>
+                                        <th class="text-center">
+                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                {{ trans('admin/main.status') }}
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                {{ trans('admin/main.actions') }}
+                                            </div>
+                                        </th>
                                     </tr>
 
                                     @foreach($quizzes as $quiz)
