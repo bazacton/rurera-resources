@@ -38,13 +38,13 @@
                 <div class="card-body">
                     <form action="{{ getAdminPanelUrl() }}/quizzes" method="get" class="row mb-0">
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg">
+                            <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.search') }}</label>
                                 <input type="text" class="form-control" name="title" value="{{ request()->get('title') }}">
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg">
+                            <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.start_date') }}</label>
                                 <div class="input-group">
                                     <input type="date" id="fsdate" class="text-left form-control" name="from"
@@ -53,7 +53,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg">
+                            <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.end_date') }}</label>
                                 <div class="input-group">
                                     <input type="date" id="lsdate" class="text-left form-control" name="to"
@@ -62,7 +62,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg">
+                            <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.filters') }}</label>
                                 <select name="sort" data-plugin-selectTwo class="form-control populate">
                                     <option value="">{{ trans('admin/main.filter_type') }}</option>
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
+                            <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.instructor') }}</label>
                                 <select name="teacher_ids[]" multiple="multiple" data-search-option="just_teacher_role"
                                         class="form-control search-user-select2"
@@ -112,7 +112,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
+                            <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.class') }}</label>
                                 <select name="webinar_ids[]" multiple="multiple" class="form-control search-webinar-select2"
                                         data-placeholder="Search classes">
@@ -126,7 +126,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
+                            <div class="form-group">
                                 <label class="input-label">{{ trans('admin/main.status') }}</label>
                                 <select name="statue" data-plugin-selectTwo class="form-control populate">
                                     <option value="">{{ trans('admin/main.all_status') }}</option>
@@ -140,7 +140,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
-                            <button type="submit" class="btn btn-primary w-100 skelton-hide skelton-height-lg skelton-mb-0 br-radius-sm">{{ trans('admin/main.show_results') }}
+                            <button type="submit" class="btn btn-primary w-100">{{ trans('admin/main.show_results') }}
                             </button>
                         </div>
                     </form>
@@ -162,25 +162,17 @@
                                 <table class="table table-striped font-14">
                                     <tr>
                                         <th class="text-left">
-                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                {{ trans('admin/main.title') }}
-                                            </div>
+                                        {{ trans('admin/main.title') }}
                                         </th>
                                         <th class="text-left">Created By</th>
                                         <th class="text-center">
-                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                {{ trans('admin/main.question_count') }}
-                                            </div>
+                                        {{ trans('admin/main.question_count') }}
                                         </th>
                                         <th class="text-center">
-                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                {{ trans('admin/main.status') }}
-                                            </div>
+                                        {{ trans('admin/main.status') }}
                                         </th>
                                         <th>
-                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                                {{ trans('admin/main.actions') }}
-                                            </div>
+                                        {{ trans('admin/main.actions') }}
                                         </th>
                                     </tr>
 
