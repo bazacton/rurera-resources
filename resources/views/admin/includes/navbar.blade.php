@@ -66,7 +66,7 @@
                 @endif
 
                 <a href="{{ getAdminPanelUrl() }}/custom_page/my_library" class="dropdown-item has-icon">
-                    <i class="fas fa-cog"></i> Collections
+                    <img src="/assets/default/svgs/collections.svg" alt="collections"> Collections
                 </a>
                 <a href="{{ getAdminPanelUrl() }}/custom_page/track" class="dropdown-item has-icon">
                     <i class="fas fa-cog"></i> Track
