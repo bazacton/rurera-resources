@@ -628,7 +628,7 @@
 
                         <li class="nav-item {{ (request()->is('admin/schools')) ? 'active' : '' }}">
                             <a href="{{ getAdminPanelUrl('/schools') }}" class="nav-link">
-                                <img src="/assets/default/svgs/school2.svg" alt="school2">
+                                <img src="/assets/default/svgs/school-2.svg" alt="school-2">
                                 <span>Schools</span>
                             </a>
                         </li>
