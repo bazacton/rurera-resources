@@ -59,8 +59,7 @@
                                                 </a>
                                                 <div class="dropdown-menu">
                                                     <a class="dropdown-item print-users-logins" data-type_class="sections-users" href="javascript:;"><img src="/assets/default/svgs/print.svg" alt="print"> Print</a>
-                                                    <a data-class_id="{{$userObj->class_id}}" class="dropdown-item unlink-students" href="javascript:;" data-type_class="sections-users"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
-                                                    <a class="dropdown-item" href="#"><img src="/assets/default/svgs/envelope.svg" alt="envelope"> Email To Prent</a>
+                                                    <a data-class_id="{{$userObj->class_id}}" class="dropdown-item delete-students" href="javascript:;" data-type_class="sections-users"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -88,7 +87,10 @@
                                 <table class="table mb-0">
                                     <thead class="thead-light">
                                     <tr>
-                                        <th><div class="skelton-hide skelton-height-lg skelton-mb-0">Student</div></th>
+                                        <th><div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                            <div class="check-box">
+                                                <input type="checkbox" class="check-uncheck-all" data-target_class="sections-users" name="check-two">
+                                            </div> Student</div></th>
                                         <th><div class="skelton-hide skelton-height-lg skelton-mb-0">Last Login</div></th>
                                         <th><div class="skelton-hide skelton-height-lg skelton-mb-0">School</div></th>
                                     </tr>
@@ -158,7 +160,9 @@
                                     <table class="table mb-0">
                                         <thead class="thead-light">
                                         <tr>
-                                            <th><div class="skelton-hide skelton-height-lg skelton-mb-0"></div> Student</th>
+                                            <th><div class="skelton-hide skelton-height-lg skelton-mb-0"></div>
+                                                 Student
+                                            </th>
                                             <th><div class="skelton-hide skelton-height-lg skelton-mb-0"></div> Last Login</th>
                                             <th><div class="skelton-hide skelton-height-lg skelton-mb-0"></div> Action</th>
                                         </tr>
@@ -562,6 +566,23 @@
             </div>
         </div>
     </div>
+
+        <div class="modal fade rurera-confirm-modal" id="rurera-confirm-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal-box">
+                            <h3 class="font-24 font-weight-normal mb-10 confirm-title"></h3>
+                            <p class="mb-15 font-16 confirm-detail"></p>
+                            <div class="inactivity-controls">
+                                <a href="javascript:;" class="continue-btn" data-dismiss="modal" aria-label="Continue">No</a>
+                                <a href="javascript:;" class="confirm-approve-btn">Yes to Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 @endsection
 
 @push('scripts_bottom')
@@ -723,6 +744,18 @@
                 var rowText = $(this).text().toLowerCase();
                 $(this).toggle(rowText.includes(value));
             });
+        });
+
+        $('body').on('click', '.delete-students', function (e) {
+            var type_class = $(this).attr('data-type_class');
+            var students_ids = [];
+            $('input.' + type_class + ':checked').each(function() {
+                students_ids.push($(this).val());
+            });
+
+            $(".confirm-title").html('Are you sure you want to remove?');
+            $(".confirm-approve-btn").attr('href', '/admin/users/delete_students?students_ids='+students_ids);
+            $(".rurera-confirm-modal").modal('show');
         });
 
         $(".student-class-change").change();

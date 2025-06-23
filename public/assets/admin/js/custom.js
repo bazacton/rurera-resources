@@ -41,10 +41,10 @@
 			success: function (return_data) {
 				thisObj.filemanager('file', {prefix: '/laravel-filemanager'});
 				thisObj.trigger('click');  // Manually trigger click after initialization
-				
+
 			}
 		});*/
-        
+
     });
 
     $('body').on('click', '.admin-file-view', function (e) {
@@ -563,7 +563,7 @@
     };
 
     if (jQuery().summernote) {
-		
+
 		$(".summernote-editor").summernote({
     dialogsInBody: true,
     tabsize: 2,
@@ -611,8 +611,8 @@
     }
 });
 
-		
-		
+
+
 		$(".summernote").summernote({
 			dialogsInBody: true,
 			tabsize: 2,
@@ -1169,9 +1169,9 @@ function rurera_check_field_type(thisObj, alert_messages, has_empty) {
 $(document).on('click', '.pin-search', function () {
 	var form_id = $(this).attr('data-form_id');
 	var search_type = $(this).attr('data-search_type');
-	
+
 	var formFields = $('#'+form_id).find('input, select, textarea');
-	
+
 	var formData = {};
 	// Iterate over each form field
 	formFields.each(function() {
@@ -1179,11 +1179,11 @@ $(document).on('click', '.pin-search', function () {
 		var value = $(this).val();
 
 		if (name) {
-			formData[name] = value;	
+			formData[name] = value;
 		}
 	});
 	var jsonFormData = JSON.stringify(formData);
-	
+
 	var form_data_encoded  = jsonFormData;
 	$.ajax({
 		type: "POST",
@@ -1211,7 +1211,7 @@ $(document).on('click', '.unpin-search', function () {
 $(document).on('click', '.save-template', function () {
 	// Select all form fields inside the div with id "question_properties"
 	$(".template_save_modal").modal('show');
-	
+
 	var form_id = $(this).attr('data-form_id');
 	var template_type = $(this).attr('data-template_type');
 	var form_data = new FormData($('#' + form_id)[0]);
@@ -1221,7 +1221,7 @@ $(document).on('click', '.save-template', function () {
 	form_data.forEach((value, key) => {
 		jsonFormData[key] = value;
 	});
-	
+
 	jsonFormData['url_params'] = Object.entries(jsonFormData)
     .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
     .join('&');
@@ -1231,8 +1231,8 @@ $(document).on('click', '.save-template', function () {
 	$(".form_data_encoded").val(jsonFormData);
 	$(".template_type").val(template_type);
 	$(".form_id").val(form_id);
-	
-	
+
+
 });
 
 $(document).on('click', '.save-template-btn', function () {
@@ -1259,35 +1259,35 @@ $(document).on('click', '.apply-template-field span', function () {
 	var formDataObj = JSON.parse(formDatajson);
 	var form_id = $(this).closest('.apply-template-field').attr('data-form_id');
 	var template_type = $(this).closest('.apply-template-field').attr('data-template_type');
-	
+
 	is_template_active = true;
 	var formFields = $('#'+form_id).find('input, select, textarea');
 	var parentForm = $('#'+form_id);
-	
-	
+
+
 	var form_data = new FormData($('#' + form_id)[0]);
 	$('#' + form_id).find('input[type="checkbox"]:not(:checked)').each(function() {
 		form_data.append($(this).attr('name'), ''); // Set value as empty or 'false' as needed
 	});
 	var jsonFormData = {};
-	pre(formDataObj['num_correct_answers'], 'formDataObj');	
+	pre(formDataObj['num_correct_answers'], 'formDataObj');
 
 	form_data.forEach((value, key) => {
     var name = key;
 	if(name == '_token'){
 		return true;
 	}
-	
+
     var selected_value = formDataObj[name];
-	
+
     // Handle radio and checkbox inputs
     if (parentForm.find('[name="'+name+'"]').attr('type') == 'radio' || parentForm.find('[name="'+name+'"]').attr('type') == 'checkbox') {
-		
+
 		if (name.endsWith('[]')) {
 			// Remove the "[]" from the field name for consistency
 			key_name = name.slice(0, -2);
 			var selected_value = formDataObj[key_name];
-		}			
+		}
         if (Array.isArray(selected_value)) {
             // For checkboxes with multiple values
 			parentForm.find('[name="'+name+'"]').prop('checked', false);
@@ -1302,14 +1302,14 @@ $(document).on('click', '.apply-template-field span', function () {
     } else if (name.endsWith('[]')) {
 		key_name = name.slice(0, -2);
 		var selected_value = formDataObj[key_name];
-		pre(name, 'name');	
+		pre(name, 'name');
 		pre(selected_value, 'selected_value');
         // Remove the "[]" from the field name for consistency
         name = name.slice(0, -2);
 		var selected_value = formDataObj[name];
         if (Array.isArray(selected_value)) {
             // Handle array of values for inputs with the same base name
-			
+
             selected_value.forEach((val, idx) => {
                 // Find and set values for inputs with the modified name
                 parentForm.find('[name="'+name+'[]"]').eq(idx).val(val);
@@ -1367,24 +1367,24 @@ function pre(output_var, output_label = ''){
 
 $(document).on('click', '.copyable-text', function () {
 	// Get the content inside the <pre> tag
-	
+
 	const promptText = $(this).text();
 
 	// Create a temporary <textarea> element to copy text from
 	const tempTextarea = document.createElement('textarea');
 	tempTextarea.value = promptText;
 	document.body.appendChild(tempTextarea);
-	
+
 	// Select the text and copy it
 	tempTextarea.select();
 	tempTextarea.setSelectionRange(0, 99999); // For mobile devices
 
 	try {
 		document.execCommand('copy');
-		
+
 	} catch (error) {
 	}
-	
+
 	$.toast({
             heading: 'Success!',
             text: 'Text Copied',
@@ -1408,17 +1408,17 @@ $(document).on('click', '.copy-to-text', function () {
 	const tempTextarea = document.createElement('textarea');
 	tempTextarea.value = promptText;
 	document.body.appendChild(tempTextarea);
-	
+
 	// Select the text and copy it
 	tempTextarea.select();
 	tempTextarea.setSelectionRange(0, 99999); // For mobile devices
 
 	try {
 		document.execCommand('copy');
-		
+
 	} catch (error) {
 	}
-	
+
 	$.toast({
             heading: 'Success!',
             text: 'Text Copied',
@@ -1484,3 +1484,8 @@ function rureraform_decode64(input) {
     output = rureraform_utf8decode(output);
     return output;
 }
+$(document).on('change', '.check-uncheck-all', function (e) {
+    var target_class = $(this).attr('data-target_class');
+    var isChecked = $(this).is(':checked');
+    $('.' + target_class).prop('checked', isChecked);
+});
