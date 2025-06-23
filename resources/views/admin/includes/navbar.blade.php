@@ -61,12 +61,12 @@
 
                 @if(auth()->user()->isAdminTeacher())
                     <a href="{{ getAdminPanelUrl() }}/users/billing" class="dropdown-item has-icon">
-                        <i class="fas fa-cog"></i> Billing
+                        <img src="/assets/default/svgs/billing-menu.svg" alt="billing-menu"> Billing
                     </a>
                 @endif
 
                 <a href="{{ getAdminPanelUrl() }}/custom_page/my_library" class="dropdown-item has-icon">
-                    <img src="/assets/default/svgs/collections.svg" alt="collections"> Collections
+                    <img src="/assets/default/svgs/collectioin-menu.svg" alt="collectioin-menu"> Collections
                 </a>
                 <a href="{{ getAdminPanelUrl() }}/custom_page/track" class="dropdown-item has-icon">
                     <img src="/assets/default/svgs/progress-report.svg" alt="progress-report"> Track
