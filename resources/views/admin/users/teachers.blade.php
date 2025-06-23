@@ -71,8 +71,6 @@
                                             </a>
                                             <div class="dropdown-menu">
                                                 <a class="dropdown-item teachers-invitation-modal-btn" href="javascript:;" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
-
-
                                                 <a class="dropdown-item create-class-btn" href="javascript:;" data-toggle="modal" data-target="#createTeacherModal"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
                                             </div>
                                         </div>
@@ -90,9 +88,9 @@
                                             Teacher
                                         </th>
                                         <th>Role</th>
-                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">Last Login</th>
-                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">Classes</th>
-                                        <th class="skelton-hide skelton-height-lg skelton-mb-0">School</th>
+                                        <th>Last Login</th>
+                                        <th>Classes</th>
+                                        <th>School</th>
                                     </tr>
                                     </thead>
                                     <tbody class="teachers-list">
