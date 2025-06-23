@@ -41,7 +41,7 @@
                 @can('admin_general_dashboard_show')
                     <li class="{{ (request()->is(getAdminPanelUrl('/'))) ? 'active' : '' }}">
                         <a href="/admin" class="nav-link">
-                            <i class="fas fa-fire"></i>
+                            <img src="/assets/default/img/dashboard.jpg" alt="dashboard">
                             <span>{{ trans('admin/main.dashboard') }}</span>
                         </a>
                     </li>
@@ -51,7 +51,7 @@
             @can('admin_marketing_dashboard')
                 <li class="nav-item {{ (request()->is(getAdminPanelUrl('/marketing', false))) ? 'active' : '' }}">
                     <a href="{{ getAdminPanelUrl('/marketing') }}" class="nav-link">
-                        <i class="fas fa-chart-pie"></i>
+                        <img src="/assets/default/img/custom-quiz.jpg" alt="custom-quiz">
                         <span>{{ trans('admin/main.marketing_dashboard') }}</span>
                     </a>
                 </li>
@@ -60,7 +60,7 @@
 			 @can('admin_webinars')
             <li class="nav-item {{ (request()->is(getAdminPanelUrl('/schools', false))) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/schools') }}" class="nav-link">
-                    <i class="fas fa-chart-pie"></i>
+                    <img src="/assets/default/img/School.jpg" alt="School-quiz">
                     <span>Schools</span>
                 </a>
             </li>
