@@ -1854,7 +1854,7 @@
             @endif
             <li>
                 <a class="nav-link" href="{{ getAdminPanelUrl() }}/logout">
-                    <i class="fas fa-sign-out-alt"></i>
+                    <img src="/assets/default/img/sidebar/log-out-color.svg" alt="log-out-color">
                     <span>{{ trans('admin/main.logout') }}</span>
                 </a>
             </li>
