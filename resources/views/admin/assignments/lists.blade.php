@@ -391,25 +391,13 @@
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
                                 <tr>
+                                    <th class="text-left">{{ trans('admin/main.title') }}</th>
+                                    <th class="text-center">Type</th>
+                                    <th class="text-center">Tables</th>
+                                    <th class="text-center">Total Questions</th>
+                                    <th class="text-left">Start Date</th>
                                     <th class="text-left">
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                            {{ trans('admin/main.title') }}
-                                        </div>
-                                    </th>
-                                    <th class="text-center">
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Type</div>
-                                    </th>
-                                    <th class="text-center">
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Tables</div>
-                                    </th>
-                                    <th class="text-center">
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Total Questions</div>
-                                    </th>
-                                    <th class="text-left">
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Start Date</div>
-                                    </th>
-                                    <th class="text-left">
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">End Date</div>
+                                        <div class="skelton-hide skelton-height-lg skelton-mb-0"></div>
                                     </th>
                                     <th class="text-left">
                                         <div class="skelton-hide skelton-height-lg skelton-mb-0">Recurring</div>
