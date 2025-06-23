@@ -1078,6 +1078,10 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu > li.active > a {padding-
 body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu > li.active > a:before {content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); height: 25px; width: 4px; background-color: var(--primary);}
 body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-menu li a {padding-left: 61px; background-color: #fff;}
 .admin_teacher_role .main-sidebar .sidebar-menu li a {font-size: 16px; font-weight: 600; color: #343434;}
+.admin_teacher_role .main-sidebar .sidebar-menu li a {
+    height: auto;
+    padding: 12px 20px;
+}
 @media (max-width: 1024px) {
     body.layout-2 .main-wrapper,
     body.layout-3 .main-wrapper {width: 100%; padding: 0; display: block;}
