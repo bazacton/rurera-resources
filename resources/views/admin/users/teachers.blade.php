@@ -49,30 +49,35 @@
                                 </div>
                             </div>
                             <div class="card-header">
-                                <div class="bulk-actions">
-                                    <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
-                                    <div class="dropdown-box">
-                                        <div class="dropdown">
-                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
-                                            </a>
-                                            <div class="dropdown-menu">
-                                                <a  class="dropdown-item unlink-teachers" href="javascript:;" data-type_class="sections-teachers"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
-                                                </div>
+                                <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                    <div class="bulk-actions">
+                                        <span class="icon-box"><img src="/assets/default/svgs/grid.svg" alt="grid"></span>
+                                        <div class="dropdown-box">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                    Bulk Actions <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a  class="dropdown-item unlink-teachers" href="javascript:;" data-type_class="sections-teachers"><img src="/assets/default/svgs/trash-bin.svg" alt="trash-bin"> Delete</a>
+                                                    </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="invite-faculty">
-                                    <div class="dropdown-box">
-                                        <div class="dropdown">
-                                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                                                Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
-                                            </a>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item teachers-invitation-modal-btn" href="javascript:;" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
+                                
+                                <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                    <div class="invite-faculty">
+                                        <div class="dropdown-box">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                    Invite Faculty <img src="/assets/default/svgs/arrow-down-btn.svg" alt="arrow-down-btn.svg">
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item teachers-invitation-modal-btn" href="javascript:;" data-toggle="modal" data-target="#invite-teacher-modal"><img src="/assets/default/svgs/link-svgrepo-com.svg" alt="link-svgrepo-com"> Invite faculty</a>
 
 
-                                                <a class="dropdown-item create-class-btn" href="javascript:;" data-toggle="modal" data-target="#createTeacherModal"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
+                                                    <a class="dropdown-item create-class-btn" href="javascript:;" data-toggle="modal" data-target="#createTeacherModal"><img src="/assets/default/svgs/plus+.svg" alt="plus+"> Add faculty</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -82,15 +87,22 @@
                                 <table class="table mb-0">
                                     <thead class="thead-light">
                                     <tr>
-                                        <th class="skelton-hide1 skelton-height-lg skelton-mb-0">
-                                            <div class="check-box">
-                                                <input type="checkbox" class="check-uncheck-all" data-target_class="sections-teachers" name="check-two">
+                                        <th>
+                                            
+                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                <div class="check-box">
+                                                    <input type="checkbox" class="check-uncheck-all" data-target_class="sections-teachers" name="check-two">
+                                                </div>
+                                                Teacher
                                             </div>
-                                            Teacher</th>
-                                        <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Role</th>
-                                        <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Last Login</th>
-                                        <th class="skelton-hide1 skelton-height-lg skelton-mb-0">Classes</th>
-                                        <th class="skelton-hide1 skelton-height-lg skelton-mb-0">School</th>
+                                        </th>
+                                        <th>
+                                            Role
+                                            <div class="skelton-hide skelton-height-lg skelton-mb-0"></div>
+                                        </th>
+                                        <th class="skelton-hide skelton-height-lg skelton-mb-0"><div class="skelton-hide skelton-height-lg skelton-mb-0"></div>Last Login</th>
+                                        <th class="skelton-hide skelton-height-lg skelton-mb-0"><div class="skelton-hide skelton-height-lg skelton-mb-0"></div>Classes</th>
+                                        <th class="skelton-hide skelton-height-lg skelton-mb-0"><div class="skelton-hide skelton-height-lg skelton-mb-0"></div>School</th>
                                     </tr>
                                     </thead>
                                     <tbody class="teachers-list">
@@ -98,21 +110,38 @@
                                     @if($users->count() > 0)
                                         @foreach($users as $user)
                                             <tr>
-                                                <td data-th="Teacher/Admin" class="skelton-hide1 skelton-height-lg skelton-mb-0">
-                                                    <div class="check-box">
-                                                        <input type="checkbox" class="sections-teachers" value="{{ $user->id }}">
+                                                <td data-th="Teacher/Admin" class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                    
+                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                        <div class="check-box">
+                                                            <input type="checkbox" class="sections-teachers" value="{{ $user->id }}">
+                                                        </div>
+                                                        <strong>
+                                                        <span class="user-lable">
+                                                            <a href="javascript:;" class="edit-teacher-btn" data-id="{{$user->id}}">{{ $user->get_full_name() }}</a>
+                                                            <span class="user-email">{{ $user->email }}</span>
+                                                        </span>
+                                                        </strong>
                                                     </div>
-                                                    <strong>
-                                                    <span class="user-lable">
-                                                        <a href="javascript:;" class="edit-teacher-btn" data-id="{{$user->id}}">{{ $user->get_full_name() }}</a>
-                                                        <span class="user-email">{{ $user->email }}</span>
-                                                    </span>
-                                                    </strong>
                                                 </td>
-                                                <td data-th="Role" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{isset($user->role->caption)? $user->role->caption : '-'}}</td>
-                                                <td data-th="Last Login" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{($user->last_login > 0)? dateTimeFormat($user->last_login, 'j M y | H:i') : '-'}}</td>
-                                                <td data-th="Classes" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{$user->getTeacherClasses->count()}}</td>
-                                                <td data-th="School" class="skelton-hide1 skelton-height-lg skelton-mb-0">{{isset($user->userSchool->id)? $user->userSchool->title : '-'}}</td>
+                                                <td data-th="Role">
+                                                    
+                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($user->role->caption)? $user->role->caption : '-'}}</div>
+                                                </td>
+                                                <td data-th="Last Login">
+                                                    
+                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                        {{($user->last_login > 0)? dateTimeFormat($user->last_login, 'j M y | H:i') : '-'}}
+                                                    </div>
+                                                </td>
+                                                <td data-th="Classes">
+                                                    
+                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">{{$user->getTeacherClasses->count()}}</div>
+                                                </td>
+                                                <td data-th="School">
+                                                    
+                                                    <div class="skelton-hide skelton-height-lg skelton-mb-0">{{isset($user->userSchool->id)? $user->userSchool->title : '-'}}</div>
+                                                </td>
 
                                             </tr>
                                         @endforeach
