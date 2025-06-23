@@ -52,7 +52,7 @@
                     @can('admin_schools_create')
                     <div class="card-header">
                         <div class="text-right">
-                            <a href="/admin/schools/create" class="btn btn-primary skelton-hide skelton-height-lg skelton-mb-0">New School</a>
+                            <a href="/admin/schools/create" class="btn btn-primary">New School</a>
                         </div>
                     </div>
                     @endcan
@@ -61,20 +61,10 @@
                         <div class="table-responsive">
                             <table class="table table-striped font-14">
                                 <tr>
-                                    <th class="text-left">
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.title') }}</div>
-                                    </th>
-                                    <th class="text-left">
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Added by</div>
-                                    </th>
-                                    <th class="text-left">
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">Added Date</div>
-                                    </th>
-                                    <th>
-                                        <div class="skelton-hide skelton-height-lg skelton-mb-0">
-                                            {{ trans('admin/main.actions') }}
-                                        </div>
-                                    </th>
+                                    <th class="text-left">{{ trans('admin/main.title') }}</th>
+                                    <th class="text-left">Added by</th>
+                                    <th class="text-left">Added Date</th>
+                                    <th>{{ trans('admin/main.actions') }}</th>
                                 </tr>
 
                                 @foreach($schools as $schoolData)
