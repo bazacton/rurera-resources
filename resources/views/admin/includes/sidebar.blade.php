@@ -619,7 +619,7 @@
             @can('admin_classes')
                 <li class="nav-item {{ (request()->is('admin/classes')) ? 'active' : '' }}">
                     <a href="{{ getAdminPanelUrl('/classes') }}" class="nav-link">
-                        <i class="fas fa-chalkboard-teacher"></i>
+                        <img src="/assets/default/img/sidebar/classes.jpg" alt="">
                         <span>Classes</span>
                     </a>
                 </li>
@@ -628,7 +628,7 @@
 
                         <li class="nav-item {{ (request()->is('admin/schools')) ? 'active' : '' }}">
                             <a href="{{ getAdminPanelUrl('/schools') }}" class="nav-link">
-                                <i class="fas fa-chalkboard-teacher"></i>
+                                <img src="/assets/default/img/sidebar/School.jpg" alt="School">
                                 <span>Schools</span>
                             </a>
                         </li>
@@ -646,7 +646,7 @@
             @can('admin_teachers_list')
                 <li class="nav-item {{ (request()->is('admin/teachers')) ? 'active' : '' }}">
                     <a href="{{ getAdminPanelUrl('/teachers') }}" class="nav-link">
-                        <i class="fas fa-users"></i>
+                        <img src="/assets/default/img/sidebar/School.jpg" alt="School">
                         <span>Teachers</span>
                     </a>
                 </li>
