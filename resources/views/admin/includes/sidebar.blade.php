@@ -354,28 +354,19 @@
             @endcan()
 
             @if($authUser->role_name == 'reviewer')
-                    <li class="nav-item {{ (request()->is('admin/author_permissions')) ? 'active' : '' }}">
-                        <a href="{{ getAdminPanelUrl('/author_permissions') }}" class="nav-link">
-                            <i class="fas fa-pen"></i>
-                            <span>Author Permissions</span>
-                        </a>
-                    </li>
-                    <li class="nav-item {{ (request()->is('admin/author_permissions/authors')) ? 'active' : '' }}">
-                        <a href="{{ getAdminPanelUrl('/author_permissions/authors') }}" class="nav-link">
-                            <i class="fas fa-pen"></i>
-                            <span>Authors</span>
-                        </a>
-                    </li>
-                @endif
-
-
-
-
-
-
-
-
-
+                <li class="nav-item {{ (request()->is('admin/author_permissions')) ? 'active' : '' }}">
+                    <a href="{{ getAdminPanelUrl('/author_permissions') }}" class="nav-link">
+                        <i class="fas fa-pen"></i>
+                        <span>Author Permissions</span>
+                    </a>
+                </li>
+                <li class="nav-item {{ (request()->is('admin/author_permissions/authors')) ? 'active' : '' }}">
+                    <a href="{{ getAdminPanelUrl('/author_permissions/authors') }}" class="nav-link">
+                        <i class="fas fa-pen"></i>
+                        <span>Authors</span>
+                    </a>
+                </li>
+            @endif
 
             @can('admin_certificate')
                 <li class="nav-item dropdown {{ (request()->is(getAdminPanelUrl('/certificates*', false))) ? 'active' : '' }}">
@@ -539,11 +530,6 @@
                     </a>
                 </li>
             @endcan
-
-
-
-
-
 
             @if($authUser->can('admin_consultants_lists') or
                 $authUser->can('admin_appointments_lists')
