@@ -97,12 +97,12 @@
                                             </div>
                                         </th>
                                         <th>
-                                            Role
-                                            <div class="skelton-hide skelton-height-lg skelton-mb-0"></div>
+                                            
+                                            <div class="skelton-hide skelton-height-lg skelton-mb-0">Role</div>
                                         </th>
-                                        <th class="skelton-hide skelton-height-lg skelton-mb-0"><div class="skelton-hide skelton-height-lg skelton-mb-0"></div>Last Login</th>
-                                        <th class="skelton-hide skelton-height-lg skelton-mb-0"><div class="skelton-hide skelton-height-lg skelton-mb-0"></div>Classes</th>
-                                        <th class="skelton-hide skelton-height-lg skelton-mb-0"><div class="skelton-hide skelton-height-lg skelton-mb-0"></div>School</th>
+                                        <th class="skelton-hide skelton-height-lg skelton-mb-0"><div class="skelton-hide skelton-height-lg skelton-mb-0">Last Login</div></th>
+                                        <th class="skelton-hide skelton-height-lg skelton-mb-0"><div class="skelton-hide skelton-height-lg skelton-mb-0">Classes</div></th>
+                                        <th class="skelton-hide skelton-height-lg skelton-mb-0"><div class="skelton-hide skelton-height-lg skelton-mb-0">School</div></th>
                                     </tr>
                                     </thead>
                                     <tbody class="teachers-list">
@@ -110,7 +110,7 @@
                                     @if($users->count() > 0)
                                         @foreach($users as $user)
                                             <tr>
-                                                <td data-th="Teacher/Admin" class="skelton-hide skelton-height-lg skelton-mb-0">
+                                                <td data-th="Teacher/Admin">
                                                     
                                                     <div class="skelton-hide skelton-height-lg skelton-mb-0">
                                                         <div class="check-box">
