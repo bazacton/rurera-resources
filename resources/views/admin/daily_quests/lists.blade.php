@@ -618,7 +618,7 @@
                     </div>
 
                     <div class="col-md-3">
-                        <div class="form-group skelton-hide skelton-height-lg skelton-mb-0">
+                        <div class="form-group">
                             <label class="input-label">{{ trans('admin/main.status') }}</label>
                             <select name="statue" data-plugin-selectTwo class="form-control populate">
                                 <option value="">{{ trans('admin/main.all_status') }}</option>
@@ -633,7 +633,7 @@
                     </div>
 
                     <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
-                        <button type="submit" class="btn btn-primary w-100 skelton-hide skelton-height-lg skelton-mb-0">{{ trans('admin/main.show_results') }}
+                        <button type="submit" class="btn btn-primary w-100 skelton-hide skelton-height-lg">{{ trans('admin/main.show_results') }}
                         </button>
                     </div>
                 </form>
