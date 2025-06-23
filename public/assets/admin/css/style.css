@@ -1082,6 +1082,7 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
     height: auto;
     padding: 12px 20px;
 }
+.admin_teacher_role .main-sidebar .sidebar-menu li a span {margin-top: 0;}
 @media (max-width: 1024px) {
     body.layout-2 .main-wrapper,
     body.layout-3 .main-wrapper {width: 100%; padding: 0; display: block;}
