@@ -1778,26 +1778,26 @@
             @endcan
 
             @can('admin_testimonials')
-                            <li class="nav-item dropdown {{ (request()->is(getAdminPanelUrl('/testimonials*', false))) ? 'active' : '' }}">
-                                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
-                                    <i class="fas fa-address-card"></i>
-                                    <span>{{ trans('admin/main.testimonials') }}</span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    @can('admin_testimonials_list')
-                                        <li class="{{ (request()->is(getAdminPanelUrl('/testimonials', false))) ? 'active' : '' }}">
-                                            <a class="nav-link" href="{{ getAdminPanelUrl() }}/testimonials">{{ trans('admin/main.lists') }}</a>
-                                        </li>
-                                    @endcan()
-
-                                    @can('admin_testimonials_create')
-                                        <li class="{{ (request()->is(getAdminPanelUrl('/testimonials/create', false))) ? 'active' : '' }}">
-                                            <a class="nav-link" href="{{ getAdminPanelUrl() }}/testimonials/create">{{ trans('admin/main.new') }}</a>
-                                        </li>
-                                    @endcan()
-                                </ul>
+                <li class="nav-item dropdown {{ (request()->is(getAdminPanelUrl('/testimonials*', false))) ? 'active' : '' }}">
+                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
+                        <i class="fas fa-address-card"></i>
+                        <span>{{ trans('admin/main.testimonials') }}</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        @can('admin_testimonials_list')
+                            <li class="{{ (request()->is(getAdminPanelUrl('/testimonials', false))) ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ getAdminPanelUrl() }}/testimonials">{{ trans('admin/main.lists') }}</a>
                             </li>
-                        @endcan
+                        @endcan()
+
+                        @can('admin_testimonials_create')
+                            <li class="{{ (request()->is(getAdminPanelUrl('/testimonials/create', false))) ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ getAdminPanelUrl() }}/testimonials/create">{{ trans('admin/main.new') }}</a>
+                            </li>
+                        @endcan()
+                    </ul>
+                </li>
+            @endcan
 
 			@if(!auth()->user()->isTeacher() && !auth()->user()->isAdminTeacher())
 				<li class="menu-header">{{ trans('admin/main.settings') }}</li>
