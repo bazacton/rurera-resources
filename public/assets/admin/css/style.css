@@ -686,7 +686,7 @@ a.dropdown-item img {
 }
 .dropdown-menu {box-shadow: 0 10px 40px 0 rgba(51, 73, 94, 0.15); border: none; width: 200px;}
 .dropdown-menu.show {display: block !important;}
-.dropdown-menu a {font-size: 13px; }
+.dropdown-menu a {font-size: 14px; }
 .dropdown-menu .dropdown-title {text-transform: uppercase; font-size: 10px; letter-spacing: 1.5px; font-weight: 700; color: #191d21 !important; padding: 10px 20px; line-height: 20px; color: #98a6ad;}
 .dropdown-menu.dropdown-menu-sm a {font-size: 14px; letter-spacing: normal; padding: 10px 20px; color: #6c757d;}
 a.dropdown-item {padding: 10px 20px; font-weight: 500; line-height: 1.2;}
