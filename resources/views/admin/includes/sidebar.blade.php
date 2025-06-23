@@ -234,7 +234,7 @@
             @can('admin_assignments')
             <li class="nav-item {{ (request()->is('admin/custom_quiz')) ? 'active' : '' }}">
                 <a href="{{ getAdminPanelUrl('/custom_quiz') }}" class="nav-link">
-                    <img src="/assets/default/img/sidebar/custom-quiz.jpg" alt="custom-quiz">
+                    <img src="/assets/default/svgs/custom-Quiz.svg" alt="custom-quiz">
                     <span>Custom Quiz</span>
                 </a>
             </li>
@@ -303,7 +303,7 @@
 
                 <li class="nav-item {{ (request()->is('admin/assignments')) ? 'active' : '' }}">
                     <a href="{{ getAdminPanelUrl('/assignments') }}" class="nav-link">
-                        <img src="/assets/default/img/sidebar/assignment.jpg" alt="">
+                        <img src="/assets/default/svgs/assessment.svg" alt="assessment">
                         <span>Assignments</span>
                     </a>
                 </li>
@@ -619,7 +619,7 @@
             @can('admin_classes')
                 <li class="nav-item {{ (request()->is('admin/classes')) ? 'active' : '' }}">
                     <a href="{{ getAdminPanelUrl('/classes') }}" class="nav-link">
-                        <img src="/assets/default/img/sidebar/classroom.jpg" alt="">
+                        <img src="/assets/default/svgs/classes.svg" alt="">
                         <span>Classes</span>
                     </a>
                 </li>
