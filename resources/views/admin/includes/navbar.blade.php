@@ -17,7 +17,7 @@
         @can('admin_notifications_list')
             <li class="dropdown dropdown-list-toggle">
                 <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg @if(!empty($unreadNotifications) and count($unreadNotifications)) beep @else disabled @endif">
-                    <i class="far fa-bell"></i>
+                    <img src="/assets/default/svgs/billing-menu.svg" alt="billing-menu">
                 </a>
 
                 <div class="dropdown-menu dropdown-list dropdown-menu-right">
@@ -56,7 +56,7 @@
             <div class="dropdown-menu dropdown-menu-right">
 
                  <a href="/" class="dropdown-item has-icon">
-                    <i class="fas fa-globe"></i> {{ trans('admin/main.show_website') }}
+                    <img src="/assets/default/svgs/website-menu.svg" alt="website-menu"> {{ trans('admin/main.show_website') }}
                 </a>
 
                 @if(auth()->user()->isAdminTeacher())
