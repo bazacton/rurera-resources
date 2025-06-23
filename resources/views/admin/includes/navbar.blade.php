@@ -17,7 +17,7 @@
         @can('admin_notifications_list')
             <li class="dropdown dropdown-list-toggle">
                 <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg @if(!empty($unreadNotifications) and count($unreadNotifications)) beep @else disabled @endif">
-                    <img src="/assets/default/svgs/billing-menu.svg" alt="billing-menu">
+                    <img src="/assets/default/img/default/avatar-1.png" alt="avatar-1">
                 </a>
 
                 <div class="dropdown-menu dropdown-list dropdown-menu-right">
