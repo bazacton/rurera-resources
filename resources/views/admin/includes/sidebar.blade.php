@@ -6,8 +6,8 @@
 <div class="main-sidebar">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand mt-10">
-            <a href="/">
-				<img src="/store/1/logo.svg" class="img-cover" alt="Rurera Logo" title="Rurera Logo" width="150" height="38" itemprop="image" loading="eager">
+            <a class="sidebar-logo" href="/" itemscope="" itemprop="url">
+                <img src="/assets/default/img/sidebar/logo.svg" alt="Rurera Logo" width="150" height="38"><span class="sidebar-logo-text">Rurera</span>
             </a>
         </div>
 		@if(auth()->user()->isTeacher() || auth()->user()->isAdminTeacher())
