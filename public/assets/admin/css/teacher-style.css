@@ -6419,6 +6419,7 @@ button.print-download-btn {
 .featured-list-sidebar .list-options li.skelton-hide {height: 12px; margin-bottom: 0;}
 .admin_teacher_role .classes-card .progress-holder:has(.skelton-hide) {margin-top: 15px;}
 .skeleton table tr .skelton-hide {min-width: 20px; display: inline-block;}
+.admin_teacher_role .skeleton table tr .skelton-hide.skelton-height-lg {min-height: 15px; max-height: 15px;}
 /* Skeleton Loading Style End */
 
 @media screen and (max-width: 992px) {
